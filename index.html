@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,500;1,700&display=swap" rel="stylesheet">
-<meta name="description" content="Two views of India's news: how world events from six outlets on five continents reach India, and the developments inside India from The Hindu and Mint, sorted by sector with what each could mean.">
+<meta name="description" content="Two views of India's news: how world events from thirteen outlets on six continents reach India, and the developments inside India from The Hindu and Mint, sorted by sector with what each could mean.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛰️</text></svg>">
 <style>
 :root{
@@ -371,8 +371,8 @@ var VIEWS={
 };
 var view = location.hash==="#inside" ? "domestic" : "global";
 var docs={}, rejectedByView={}, lastUpdatedByView={}, threadsByView={}, archiveByView={};
-var OUTLET={bbc:"BBC News",guardian:"The Guardian",npr:"NPR",aljazeera:"Al Jazeera",mercopress:"MercoPress",abc:"ABC News",thehindu:"The Hindu",mint:"Mint"};
-var REGION={bbc:"Europe",guardian:"Europe",npr:"North America",aljazeera:"Asia",mercopress:"South America",abc:"Australia",thehindu:"India",mint:"India"};
+var OUTLET={bbc:"BBC News",guardian:"The Guardian",npr:"NPR",aljazeera:"Al Jazeera",mercopress:"MercoPress",abc:"ABC News",nyt:"The New York Times",cnbc:"CNBC",cbs:"CBS News",dw:"DW",france24:"France 24",africanews:"Africanews",scmp:"South China Morning Post",thehindu:"The Hindu",mint:"Mint"};
+var REGION={bbc:"Europe",guardian:"Europe",npr:"North America",aljazeera:"Asia",mercopress:"South America",abc:"Australia",nyt:"North America",cnbc:"North America",cbs:"North America",dw:"Europe",france24:"Europe",africanews:"Africa",scmp:"Asia",thehindu:"India",mint:"India"};
 function learnSources(doc){ (doc.sources||[]).forEach(function(x){ OUTLET[x.id]=x.name; if(x.region) REGION[x.id]=x.region; }); }
 function regionsOf(it){ var r=[]; outletsOf(it).forEach(function(o){ var g=REGION[o]; if(g && r.indexOf(g)<0) r.push(g); }); return r; }
 var $=function(id){return document.getElementById(id);};
