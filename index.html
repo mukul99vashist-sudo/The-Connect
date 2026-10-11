@@ -16,6 +16,7 @@
   --accent:#D9480F; --ok:#1A7F5A; --shadow:0 1px 2px rgba(0,0,0,.04),0 6px 18px rgba(0,0,0,.06);
   --s-energy:#C2410C; --s-logistics:#0E7490; --s-economy:#4338CA; --s-technology:#7C3AED;
   --s-manufacturing:#B45309; --s-environment:#15803D; --s-agriculture:#65A30D; --s-governance:#BE123C;
+  --k-hard:#475569; --k-breaking:#DC2626; --k-investigative:#7E22CE; --k-soft:#DB2777; --k-feature:#0F766E; --k-opinion:#A16207;
   --sans:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text","Helvetica Neue",Helvetica,Arial,sans-serif;
   box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px); color-scheme:light;
 }
@@ -24,6 +25,7 @@
   --accent:#FF6A2B; --ok:#34C77B; --shadow:none;
   --s-energy:#FB923C; --s-logistics:#22D3EE; --s-economy:#A5B4FC; --s-technology:#C4B5FD;
   --s-manufacturing:#FBBF24; --s-environment:#4ADE80; --s-agriculture:#A3E635; --s-governance:#FB7185; color-scheme:dark;
+  --k-hard:#CBD5E1; --k-breaking:#F87171; --k-investigative:#D8B4FE; --k-soft:#F9A8D4; --k-feature:#5EEAD4; --k-opinion:#FDE047;
 }
 html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px)}
 *,*::before,*::after{box-sizing:inherit}
@@ -208,6 +210,13 @@ h1{font:800 clamp(34px,5vw,46px)/1 var(--sans);letter-spacing:-.025em;margin:0}
 .outlet{font-weight:700;letter-spacing:.05em;text-transform:uppercase;font-size:11.5px;color:var(--ink-2)}
 .corr{display:inline-flex;align-items:center;gap:4px;font-weight:600;color:var(--ok)}
 .rel{font-weight:600;color:var(--accent)}
+/* Kind of report (Layer 1): colour plus the word, so it never relies on colour alone */
+.kind{display:inline-flex;align-items:center;font-weight:600;font-size:11.5px;line-height:1.5;padding:0 8px;border-radius:999px;color:var(--k);background:color-mix(in srgb,var(--k) 14%,transparent);white-space:nowrap}
+.k-hard{--k:var(--k-hard)} .k-breaking{--k:var(--k-breaking)} .k-investigative{--k:var(--k-investigative)} .k-soft{--k:var(--k-soft)} .k-feature{--k:var(--k-feature)} .k-opinion{--k:var(--k-opinion)}
+.kinds-key{display:flex;flex-wrap:wrap;align-items:center;gap:4px 6px;margin:-4px 0 14px}
+.kinds-key .lbl{font-size:12px;color:var(--ink-3);margin-right:2px}
+.read .kind{margin-left:6px;vertical-align:1px}
+.context-note{font-size:14px;color:var(--ink-3);margin:0}
 
 .top{margin-bottom:28px}
 .top .card{padding:26px 26px 22px;border-radius:8px;background:linear-gradient(180deg,color-mix(in srgb,var(--sc) 9%,var(--card)) 0%,var(--card) 70%)}
@@ -335,6 +344,7 @@ footer{margin-top:28px;font-size:12.5px;color:var(--ink-3);line-height:1.6;width
           </select>
         </label>
       </div>
+      <div class="kinds-key" id="kindsKey" aria-label="Colours used for the kind of report"></div>
       <main id="main" aria-live="polite"><div class="state">Loading today's stories…</div></main>
     </div>
   </div>
@@ -415,9 +425,7 @@ function byline(it, withRel){
   var b=el("div","byline");
   var outs=outletsOf(it), names=outs.map(function(o){return OUTLET[o]||o;});
   b.appendChild(el("span","outlet", names.length>2 ? names.slice(0,2).join(" · ")+" +"+(names.length-2) : names.join(" · ")));
-  if(view==="global" && outs.length===1 && REGION[outs[0]]) b.appendChild(el("span","region",REGION[outs[0]]));
-  if(isDeveloping(it)) b.appendChild(el("span","dev","Developing · "+reportsOf(it).length+" reports"));
-  if(outs.length>1){ var rg=regionsOf(it).length; b.appendChild(el("span","corr","✓ "+outs.length+" outlets"+(view==="global"&&rg>1?" · "+rg+" continents":""))); }
+  var k=kindOf(it); if(k) b.appendChild(kindChip(k));
   if(withRel && it.relevance==="high") b.appendChild(el("span","rel","High impact"));
   var w=when(latestDate(it)); if(w) b.appendChild(el("span",null,w));
   return b;
@@ -447,6 +455,17 @@ function imageCredit(it){
 }
 /* The publisher's own summary of the article, with a link to the full story */
 /* The report whose headline is shown: brief, photo and button all come from this same article */
+var KIND_LABEL={hard:"Hard news",breaking:"Breaking",investigative:"Investigative",soft:"Soft news",feature:"Feature",opinion:"Opinion"};
+/* The kind shown for a story: any investigation wins; otherwise the lead report's kind.
+   "Breaking" is a state, not a permanent type: it shows only for a single-outlet story in its first 24 hours. */
+function kindOf(it){
+  var reps=reportsOf(it); if(reps.some(function(r){return r.kind==="investigative";})) return "investigative";
+  var k=leadReport(it).kind; if(!KIND_LABEL[k]) return null;
+  if(k==="breaking"){ var t=reps.map(function(r){return Date.parse(r.date);}).filter(function(x){return !isNaN(x);});
+    var first=t.length?Math.min.apply(null,t):NaN; if(outletsOf(it).length>1 || isNaN(first) || Date.now()-first>864e5) return "hard"; }
+  return k;
+}
+function kindChip(k){ var c=el("span","kind k-"+k,KIND_LABEL[k]); return c; }
 function leadReport(it){ var reps=reportsOf(it); return reps.filter(function(r){return r.url===it.url;})[0] || reps[0]; }
 /* The publisher's own feed text for that article (subtitle + opening paragraph), then a link to continue */
 function brief(it){
@@ -541,6 +560,8 @@ function renderStatus(doc){
   line.title=src.map(function(x){return x.name+(x.region?" ("+x.region+")":"");}).join(", ");
   s.appendChild(line);
 }
+(function(){ var key=$("kindsKey"); if(!key) return; key.appendChild(el("span","lbl","Kind of report"));
+  ["hard","breaking","investigative","soft","feature"].forEach(function(k){ key.appendChild(kindChip(k)); }); })();
 
 var ICONS={
   all:'<polygon points="12 3 14.8 8.9 21 9.7 16.5 14 17.6 20.2 12 17.3 6.4 20.2 7.5 14 3 9.7 9.2 8.9"/>',
@@ -632,6 +653,10 @@ function openSheet(e){
     if(it.why) im.appendChild(el("p","lead",it.why));
     if((it.implications||[]).length){ var ul=el("ul"); it.implications.forEach(function(t){ul.appendChild(el("li",null,t));}); im.appendChild(ul); }
     left.appendChild(im);
+  } else if(kindOf(it)==="soft" || kindOf(it)==="feature"){
+    var cx=el("div","block"); cx.appendChild(el("h3",null,"Background piece"));
+    cx.appendChild(el("p","context-note","Soft news and features are kept as context for the story, without implications."));
+    left.appendChild(cx);
   }
   body.appendChild(left);
 
@@ -641,7 +666,7 @@ function openSheet(e){
   var rd=el("div","reads");
   reps.forEach(function(r,i){ var a=el("a","read"); a.href=r.url; a.target="_blank"; a.rel="noopener";
     if(dev && i===0) a.appendChild(el("span","latest","Latest"));
-    a.appendChild(el("span","o",(OUTLET[r.source]||r.source)+(view==="global"&&REGION[r.source]?" · "+REGION[r.source]:"")+(r.date?" · "+when(r.date):""))); a.appendChild(el("span","t",r.headline)); a.appendChild(el("span","go","Open story →")); rd.appendChild(a); });
+    a.appendChild(el("span","o",(OUTLET[r.source]||r.source)+(view==="global"&&REGION[r.source]?" · "+REGION[r.source]:"")+(r.date?" · "+when(r.date):""))); var tl=el("span","t",r.headline); if(KIND_LABEL[r.kind]) tl.appendChild(kindChip(r.kind)); a.appendChild(tl); a.appendChild(el("span","go","Open story →")); rd.appendChild(a); });
   rb.appendChild(rd); right.appendChild(rb); body.appendChild(right);
   var so=storySoFar(it); if(so) body.appendChild(so);
 
