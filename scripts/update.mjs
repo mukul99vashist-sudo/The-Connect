@@ -70,7 +70,6 @@ const GLOBAL_FEEDS = [
   { src: "france24", url: "https://www.france24.com/en/europe/rss" },
   { src: "france24", url: "https://www.france24.com/en/business-tech/rss" },
   { src: "africanews", url: "https://www.africanews.com/feed/rss" },
-  { src: "africanews", url: "https://www.africanews.com/business/feed/rss" },
   { src: "scmp", url: "https://www.scmp.com/rss/91/feed" },
   { src: "scmp", url: "https://www.scmp.com/rss/4/feed" },
   { src: "scmp", url: "https://www.scmp.com/rss/92/feed" }
@@ -115,6 +114,16 @@ const BATCH = 25;              // headlines per filter request (kept new stories
 const MAX_NEW_PER_RUN = { global: 300, domestic: 150 };   // the rest wait for the next run
 const MATCH_WINDOW_DAYS = 4;   // how far back to look for the same event
 const RECENT_DAYS = 60;        // the site's main file holds the last 60 days; everything is kept in monthly archive files
+const CLASSIFY_BATCH = 40;     // reports per request when labelling older reports with their kind
+const CLASSIFY_LIMIT = 800;    // older reports labelled per desk per run (the rest wait for the next run)
+const KINDS = ["hard", "breaking", "investigative", "soft", "feature", "opinion"];
+const KIND_RULE = `"kind" is what sort of piece it is:
+- "hard": straight reporting of events, decisions, data or policy
+- "breaking": first reports of something that has just happened, details still emerging
+- "investigative": the outlet's own investigation or exclusive findings
+- "soft": human-interest, lifestyle or personal stories
+- "feature": long-form background, explainers, analysis pieces and profiles
+- "opinion": columns, editorials, op-eds, letters and commentary`;
 const THREAD_BATCH = 20;       // stories per thread-assignment request
 const THREAD_ACTIVE_DAYS = 120;// threads offered for new stories to join
 const SUMMARY_LIMIT = 25;      // "How we got here" summaries refreshed per desk per run
@@ -417,6 +426,9 @@ Rules:
 1. ${RELEVANCE_RULES[mode === "domestic" ? "domestic" : "global"]}
 2. Use only the headline and summary given. Do not invent facts.
 3. ${SAME_EVENT_RULE}
+4. ${KIND_RULE}
+Give "kind" for EVERY item, kept or not. For kept items also give "sector", the ONE sector it fits best:
+${SECTORS.map(s => `- ${s.id}: ${s.name}`).join("\n")}
 
 KNOWN EVENTS:
 ${JSON.stringify(known)}
@@ -425,14 +437,42 @@ Items:
 ${JSON.stringify(items)}
 
 Return ONLY a JSON array, one object per item:
-[{"id":0,"relevant":true,"sameAs":null}]
-For relevant=false return {"id":N,"relevant":false,"reason":"${mode === "domestic" ? "why it is not of national significance" : `why it does not reach ${REGION}`}, under 15 words","sameAs":null}.`;
+[{"id":0,"kind":"hard","relevant":true,"sector":"energy","sameAs":null}]
+For relevant=false return {"id":N,"kind":"...","relevant":false,"reason":"${mode === "domestic" ? "why it is not of national significance" : `why it does not reach ${REGION}`}, under 15 words","sameAs":null}.`;
+}
+
+// One-off labelling of older reports with their kind (no change to their analysis).
+function classifyPrompt(items) {
+  return `Label each news report with what sort of piece it is.
+
+${KIND_RULE}
+
+Judge from the outlet, headline, summary and web address. Use only what is given.
+
+Reports:
+${JSON.stringify(items)}
+
+Return ONLY a JSON array, one object per report: [{"id":0,"kind":"hard"}]`;
+}
+async function classifyOlder(data) {
+  const pending = data.sectors.flatMap(sec => sec.items.flatMap(ev => (ev.reports || []).filter(r => !KINDS.includes(r.kind)))).slice(0, CLASSIFY_LIMIT);
+  let labelled = 0, failed = 0;
+  for (let k = 0; k < pending.length; k += CLASSIFY_BATCH) {
+    const batch = pending.slice(k, k + CLASSIFY_BATCH);
+    const items = batch.map((r, i) => { let path = ""; try { path = new URL(r.url).pathname; } catch {} return { id: i, outlet: OUTLETS[r.source] || r.source, headline: r.headline, summary: r.summary || "", path }; });
+    try {
+      for (const v of await callClaude(classifyPrompt(items), "filter")) {
+        const r = batch[+v?.id]; if (r && KINDS.includes(v.kind)) { r.kind = v.kind; labelled++; }
+      }
+    } catch (e) { console.error(`Kind labelling batch failed: ${e.message}`); failed++; }
+  }
+  return { labelled, waiting: Math.max(0, pending.length - labelled), failedBatches: failed };
 }
 
 // Step 2 (Opus): write the analysis for kept stories that are new to the desk.
 function analysisPrompt(batch, mode) {
   const sectors = SECTORS.map(s => `- ${s.id}: ${s.name}`).join("\n");
-  const items = batch.map(({ i, s }) => ({ id: i, outlet: OUTLETS[s.src], headline: s.headline, summary: s.summary, ...(s.lede ? { opening: s.lede } : {}) }));
+  const items = batch.map(({ i, s, kind }) => ({ id: i, kind, outlet: OUTLETS[s.src], headline: s.headline, summary: s.summary, ...(s.lede ? { opening: s.lede } : {}) }));
   const shape = `[{"id":0,"relevant":true,"sector":"energy","relevance":"high","why":"...","implications":["...","..."]}]`;
   const lens = mode === "domestic"
     ? { role: `explains what developments INSIDE ${REGION} mean for people and businesses in ${REGION}`,
@@ -455,7 +495,9 @@ Rules:
 4. Never discuss securities: no stocks, share prices, market moves, companies that benefit, or investment actions.
 5. Use cautious wording ("may", "could", "likely") for anything uncertain.
 6. relevance: "high" = direct, material effect on many people or a whole sector within weeks; "medium" = clear but modest, narrower or indirect.
-7. If, on a careful reading, an item is not ${lens.check}, return {"id":N,"relevant":false,"reason":"under 15 words"} instead.
+7. Items with kind "breaking" are early reports: say what is reported so far and keep every effect conditional, because details may change.
+8. Items with kind "investigative" are one outlet's own findings: attribute them to that outlet in "why" (for example "The Guardian reports that…") and do not state them as established fact.
+9. If, on a careful reading, an item is not ${lens.check}, return {"id":N,"relevant":false,"reason":"under 15 words"} instead.
 
 Items:
 ${JSON.stringify(items)}
@@ -584,20 +626,24 @@ async function runDesk(desk) {
       return !!findEvent(v.sameAs);
     };
     // Step 2: Opus writes the analysis for kept stories that are new to the desk, in one request per batch.
-    const toAnalyse = [...byId.entries()].filter(([i, v]) => v.relevant && !isFollowUp(i, v)).map(([i]) => ({ i, s: batch[i] }));
+    // Layer 1 routing: opinion stays out; soft news and features are kept as context without analysis.
+    const kindOf = v => KINDS.includes(v.kind) ? v.kind : "hard";
+    for (const v of byId.values()) if (v.relevant && kindOf(v) === "opinion") { v.relevant = false; v.reason = "Opinion piece: kept out of the analysis"; }
+    const needsAnalysis = v => !["soft", "feature"].includes(kindOf(v));
+    const toAnalyse = [...byId.entries()].filter(([i, v]) => v.relevant && !isFollowUp(i, v) && needsAnalysis(v)).map(([i, v]) => ({ i, s: batch[i], kind: kindOf(v) }));
     const analysis = new Map();
     if (toAnalyse.length) {
       try { for (const r of await callClaude(analysisPrompt(toAnalyse, desk.mode), "analysis")) if (r && Number.isInteger(+r.id)) analysis.set(+r.id, r); }
       catch (e) { console.error(`Analysis batch failed: ${e.message}`); failures++; continue; } // whole batch retried next run
     }
-    const reject = (s, reason) => rejected.unshift({ source: s.src, headline: s.headline, url: s.url, date: s.date,
+    const reject = (s, reason, kind) => rejected.unshift({ source: s.src, headline: s.headline, url: s.url, date: s.date, ...(kind ? { kind } : {}),
       reason: typeof reason === "string" ? reason.slice(0, 160) : "", checkedAt: new Date().toISOString() });
     const placed = {}, dropped = new Set();                 // batch index -> event it went into / items rejected at step 2
     for (let i = 0; i < batch.length; i++) {
       const s = batch[i], v = byId.get(i);
       if (!v) continue;
-      if (!v.relevant) { reject(s, v.reason); continue; }
-      const report = { source: s.src, headline: s.headline, url: s.url, date: s.date, ...(s.summary && s.summary.length >= 40 ? { summary: s.summary, summaryV: SUMMARY_V } : {}), ...(s.lede ? { lede: s.lede } : {}), ...(s.image ? { image: s.image } : {}), ...(s.imageLarge ? { imageLarge: s.imageLarge } : {}) };
+      if (!v.relevant) { reject(s, v.reason, KINDS.includes(v.kind) ? v.kind : undefined); continue; }
+      const report = { source: s.src, headline: s.headline, url: s.url, date: s.date, kind: kindOf(v), ...(s.summary && s.summary.length >= 40 ? { summary: s.summary, summaryV: SUMMARY_V } : {}), ...(s.lede ? { lede: s.lede } : {}), ...(s.image ? { image: s.image } : {}), ...(s.imageLarge ? { imageLarge: s.imageLarge } : {}) };
       if (isFollowUp(i, v)) {
         const k = v.sameAs.startsWith("item:") ? +v.sameAs.slice(5) : null;
         const target = k === null ? findEvent(v.sameAs) : placed[k];
@@ -607,10 +653,10 @@ async function runDesk(desk) {
         placed[i] = target; merged++;
         continue;
       }
-      const r = analysis.get(i);
+      const r = needsAnalysis(v) ? analysis.get(i) : { relevant: true, sector: v.sector, relevance: "medium", why: "", implications: [] };  // context only
       if (!r) continue;
-      if (r.relevant === false) { reject(s, r.reason); dropped.add(i); continue; }
-      const sector = data.sectors.find(x => x.id === r.sector);
+      if (r.relevant === false) { reject(s, r.reason, kindOf(v)); dropped.add(i); continue; }
+      const sector = data.sectors.find(x => x.id === r.sector) || data.sectors.find(x => x.id === v.sector);
       if (!sector) continue;
       const ev = {
         id: idFor(s.url), headline: s.headline, url: s.url, source: s.src, date: s.date,
@@ -625,6 +671,8 @@ async function runDesk(desk) {
     batch.forEach(s => seen.add(s.url));
   }
 
+  const kinds = await classifyOlder(data);
+  if (kinds.labelled || kinds.waiting) console.log(`Report kinds: ${kinds.labelled} older reports labelled, ${kinds.waiting} waiting`);
   const og = await fillShareImages(data);
   if (og.tried) console.log(`Article pages checked: ${og.tried} (photos found ${og.found}, summaries found ${og.summaries})`);
 
@@ -663,7 +711,7 @@ async function runDesk(desk) {
   for (const s of data.sectors) s.items = s.items.filter(i => { const t = Date.parse(latest(i)); return isNaN(t) || t >= recentCut; }).map(({ sector, ...rest }) => rest);
   data.recentDays = RECENT_DAYS;
   data.updatedAt = new Date().toISOString();
-  data.lastRun = { analysed: fresh.length, added, merged, rejected: fresh.length && !failures ? fresh.length - added - merged : undefined, failedBatches: failures, feeds: feedHealth, shareImages: og, threads: th, summaries: sm, models: usage };
+  data.lastRun = { analysed: fresh.length, added, merged, rejected: fresh.length && !failures ? fresh.length - added - merged : undefined, failedBatches: failures, feeds: feedHealth, shareImages: og, threads: th, summaries: sm, kinds, models: usage };
 
   await fs.writeFile(desk.data, JSON.stringify(data, null, 2) + "\n");
   await fs.writeFile(desk.seen, JSON.stringify([...seen].slice(-MAX_SEEN)) + "\n");
