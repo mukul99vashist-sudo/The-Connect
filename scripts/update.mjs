@@ -727,10 +727,11 @@ async function reframeRecent(data, mode) {
 }
 
 // ---------- Statistics layer: official figures behind the story, each one checked against its source ----------
-// Sonnet searches ONLY official domains. It must answer in a line format; every data point keeps the citation
-// the search attached to it, and code keeps a point only if its number appears in the cited source text
-// from an allowed domain. A series needs at least 3 verified points to be shown.
-const STATS_V = 1;
+// Sonnet searches ONLY official domains and then fetches the official page that holds the figures. The fetched
+// page text comes back to us, so code can check every figure against it. A figure is kept only if the same number
+// appears on an official page fetched (or quoted by a citation) in this answer; short numbers must also sit near
+// their year. A series needs at least 3 checked figures to be shown.
+const STATS_V = 2;              // v2: verify against fetched page text, not only the short citation snippets
 const STATS_LIMIT = 6;          // stories per desk per run that get a statistics search
 const STATS_MIN_POINTS = 3;
 const OFFICIAL_DOMAINS = [
@@ -747,7 +748,6 @@ const OFFICIAL_DOMAINS = [
 ];
 function domainOf(u) { try { return new URL(u).hostname.replace(/^www\./, ""); } catch { return ""; } }
 function isOfficial(u) { const h = domainOf(u); return !!h && OFFICIAL_DOMAINS.some(d => h === d || h.endsWith("." + d)); }
-const digitsOnly = s => String(s).replace(/(\d),(?=\d)/g, "$1");
 
 function statsPrompt(ev, mode) {
   const reps = (ev.reports || []).slice(-4).map(r => `- ${OUTLETS[r.source] || r.source}: ${r.headline}${r.summary ? " — " + r.summary : ""}`).join("\n");
@@ -760,14 +760,21 @@ Reports:
 ${reps}
 
 TASK
-Find one or two OFFICIAL statistical series that directly measure what this story is about, so a reader can see the history behind it. Good examples: "US imports of crude oil from Russia, by year" for a story about the US resuming Russian oil purchases; "India's crude imports from Saudi Arabia, by year" for a Gulf supply story; "RBI repo rate at each policy meeting" for a rate decision; "India's exports of steel to the EU, by year" for a carbon-border-tax story.
+Find one or two OFFICIAL statistical series that directly measure what this story is about, so a reader can see the history behind it. Good examples: "US imports of crude oil from Russia, by year" for a story about the US resuming Russian oil purchases; "India's crude imports, by month" for a Gulf supply story; "RBI repo rate at each policy meeting" for a rate decision; "India's exports of steel to the EU, by year" for a carbon-border-tax story.
 Prefer yearly values from 2019 to the latest year, or the latest 8 to 12 monthly or quarterly values. Use only government statistics agencies, central banks, ministries and international organisations.
 
-ANSWER FORMAT (nothing else, one item per line, every SERIES and POINT line must be supported by a search result):
+HOW
+1. Search for the series.
+2. FETCH the official page that shows the table or figures (an HTML page is best; skip PDFs and spreadsheets if an HTML page exists).
+3. Copy every number exactly as it is written on the fetched page. Each figure is checked automatically against that page, and figures not found there are thrown away.
+4. Every figure in one series must be the same measure in the same unit (never mix barrels per day with million barrels per day, or a total with a share). Prefer a data table over figures scattered through an article.
+
+ANSWER FORMAT (nothing else, one item per line):
 SERIES|<short title, ≤10 words>|<unit, e.g. thousand barrels per day, % , US$ billion>|<publisher, e.g. U.S. Energy Information Administration>
-POINT|<period, e.g. 2021 or Mar 2026>|<the number exactly as written on the source page>
+SOURCE|<URL of the fetched page the numbers are on>
+POINT|<period, e.g. 2021 or Mar 2026>|<the number exactly as written on the page>
 WHY|<one sentence without numbers on how this series relates to the story>
-Repeat the block for a second series if useful. Copy numbers exactly; never estimate, convert, round or calculate. If you cannot find a suitable official series, answer only: NONE`;
+Repeat the block for a second series if useful. Never estimate, convert, round or calculate. If no official series fits this story (for example a protest or a court case with no measurable series), answer only: NONE`;
 }
 
 async function callStats(prompt) {
@@ -779,14 +786,17 @@ async function callStats(prompt) {
       res = await fetch("https://api.anthropic.com/v1/messages", {
         method: "POST",
         headers: { "x-api-key": process.env.ANTHROPIC_API_KEY, "anthropic-version": "2023-06-01", "content-type": "application/json" },
-        body: JSON.stringify({ model, max_tokens: 3000, messages,
-          tools: [{ type: "web_search_20250305", name: "web_search", max_uses: 5, allowed_domains: OFFICIAL_DOMAINS }] })
+        body: JSON.stringify({ model, max_tokens: 3000, messages, tools: [
+          { type: "web_search_20250305", name: "web_search", max_uses: 4, allowed_domains: OFFICIAL_DOMAINS },
+          { type: "web_fetch_20250910", name: "web_fetch", max_uses: 3, allowed_domains: OFFICIAL_DOMAINS, max_content_tokens: 15000 }
+        ] })
       });
       body = await res.json().catch(() => ({}));
       if (!res.ok) break;
-      const u = usage.stats ||= { model, calls: 0, inputTokens: 0, outputTokens: 0, searches: 0 };
+      const u = usage.stats ||= { model, calls: 0, inputTokens: 0, outputTokens: 0, searches: 0, fetches: 0 };
       u.model = model; u.calls++; u.inputTokens += body.usage?.input_tokens || 0; u.outputTokens += body.usage?.output_tokens || 0;
       u.searches += body.usage?.server_tool_use?.web_search_requests || 0;
+      u.fetches = (u.fetches || 0) + (body.usage?.server_tool_use?.web_fetch_requests || 0);
       out.push(...(body.content || []));
       if (body.stop_reason !== "pause_turn") break;
       messages.push({ role: "assistant", content: body.content });
@@ -807,51 +817,94 @@ function linesWithCitations(content) {
     parts.forEach((p, idx) => {
       if (idx > 0) { lines.push(cur); cur = { text: "", cites: [] }; }
       cur.text += p;
-      if (p.trim()) for (const c of b.citations || []) if (c.type === "web_search_result_location") cur.cites.push(c);
+      if (p.trim()) for (const c of b.citations || []) if (c.url && c.cited_text) cur.cites.push(c);
     });
   }
   lines.push(cur);
   return lines.map(l => ({ text: l.text.trim(), cites: l.cites })).filter(l => l.text);
 }
+// Official pages fetched during the answer, with their full text.
+function fetchedPages(content) {
+  const pages = [];
+  for (const b of content) {
+    if (b.type !== "web_fetch_tool_result" || b.content?.type !== "web_fetch_result") continue;
+    const url = b.content.url, doc = b.content.content;
+    if (isOfficial(url) && doc?.source?.type === "text" && doc.source.data) pages.push({ url, title: doc.title || domainOf(url), text: String(doc.source.data) });
+  }
+  return pages;
+}
+// A number as a pattern: thousands separators optional (1,234 / 1234 / 1,23,456), no other digits around it.
+function numberPattern(s) {
+  const m = /-?\d[\d,]*(\.\d+)?/.exec(String(s)); if (!m) return null;
+  const [int, dec = ""] = m[0].replace(/,/g, "").split(".");
+  const intPat = int.replace(/^-/, "").split("").join(",?");
+  return { value: +m[0].replace(/,/g, ""), digits: int.replace(/^-/, "").length + dec.length,
+    re: new RegExp("(^|[^\\d.,])-?" + intPat + (dec ? "\\." + dec : "") + "(?![\\d]|[.,]\\d)", "g") };
+}
+const MONTHS = /\b(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*/i;
+// Short numbers (one or two digits) are easy to find by chance, so they must also sit near their year or month.
+function foundIn(text, pat, period) {
+  pat.re.lastIndex = 0; let m;
+  const year = (/(19|20)\d{2}/.exec(period) || [])[0], mon = (MONTHS.exec(period) || [])[1];
+  while ((m = pat.re.exec(text))) {
+    if (pat.digits >= 3) return true;
+    const near = text.slice(Math.max(0, m.index - 2000), m.index + 300).toLowerCase();
+    if ((!year || near.includes(year)) && (!mon || near.includes(mon.toLowerCase())) && (year || mon)) return true;
+  }
+  return false;
+}
 function parseStats(content) {
+  const pages = fetchedPages(content);
   const series = []; let s = null;
+  const diag = { said: "nothing", proposed: 0, kept: 0, notFound: 0, pagesFetched: pages.length };
   for (const { text, cites } of linesWithCitations(content)) {
     const f = text.split("|").map(x => x.trim());
-    if (f[0] === "SERIES" && f[1]) { s = { title: str(f[1], 90), unit: str(f[2] || "", 40), publisher: str(f[3] || "", 80), why: "", points: [], dropped: 0 }; series.push(s); continue; }
+    if (/^NONE\b/.test(text) && !series.length) { diag.said = "none"; continue; }
+    if (f[0] === "SERIES" && f[1]) { diag.said = "series"; s = { title: str(f[1], 90), unit: str(f[2] || "", 40), publisher: str(f[3] || "", 80), why: "", source: "", points: [], dropped: 0 }; series.push(s); continue; }
+    if (f[0] === "SOURCE" && s) { s.source = f.slice(1).join("|"); continue; }
     if (f[0] === "WHY" && s) { const w = f.slice(1).join(" "); if (noAdvice(w) && !/\d{2,}/.test(w)) s.why = str(w, 200); continue; }
     if (f[0] === "POINT" && s && f[1] && f[2]) {
-      const raw = digitsOnly(f[2]); const m = /-?\d+(\.\d+)?/.exec(raw); if (!m) { s.dropped++; continue; }
-      const value = +m[0];
-      // Verified only if the same number appears in the quoted source text of an official-domain citation.
-      const exact = new RegExp("(^|[^\\d.])" + m[0].replace(/[.-]/g, "\\$&") + "(?![\\d]|\\.\\d)");
-      const ok = cites.find(c => isOfficial(c.url) && exact.test(digitsOnly(c.cited_text || "")));
-      if (!ok) { s.dropped++; continue; }
-      s.points.push({ period: str(f[1], 20), value, url: ok.url, source: str(ok.title || domainOf(ok.url), 120) });
+      diag.proposed++;
+      if (!/\d/.test(f[1])) { s.dropped++; diag.notFound++; continue; }   // a period must name a year, month-year or quarter
+      const pat = numberPattern(f[2]); if (!pat) { s.dropped++; diag.notFound++; continue; }
+      // 1) the fetched page the model named; 2) any other official page it fetched; 3) an official citation quoting the number
+      const ordered = [...pages.filter(p => p.url === s.source), ...pages.filter(p => p.url !== s.source)];
+      let hit = ordered.find(p => foundIn(p.text, pat, f[1]));
+      if (!hit) { const c = cites.find(c => isOfficial(c.url) && foundIn(c.cited_text, pat, f[1])); if (c) hit = { url: c.url, title: c.title || domainOf(c.url) }; }
+      if (!hit) { s.dropped++; diag.notFound++; continue; }
+      diag.kept++;
+      s.points.push({ period: str(f[1], 20), value: pat.value, url: hit.url, source: str(hit.title || domainOf(hit.url), 120) });
     }
   }
-  return series.map(x => ({ ...x, points: x.points.slice(0, 16) })).filter(x => x.points.length >= STATS_MIN_POINTS).slice(0, 2)
-    .map(x => { const doms = {}; x.points.forEach(p => { const d = domainOf(p.url); doms[d] = (doms[d] || 0) + 1; });
+  // Every figure can be on the page and the series still be wrong if it mixes units (e.g. 50,000 barrels a day next to
+  // 1.7 million). Values more than 100 times apart within one series are treated as mixed units and the series is dropped.
+  const sameUnits = x => { const v = x.points.map(p => Math.abs(p.value)).filter(Boolean); return v.length < 2 || Math.max(...v) / Math.min(...v) <= 100; };
+  let mixed = 0;
+  const kept = series.map(x => ({ ...x, points: x.points.slice(0, 16) })).filter(x => x.points.length >= STATS_MIN_POINTS)
+    .filter(x => sameUnits(x) || (mixed++, false)).slice(0, 2)
+    .map(({ source, ...x }) => { const doms = {}; x.points.forEach(p => { const d = domainOf(p.url); doms[d] = (doms[d] || 0) + 1; });
       return { ...x, sources: [...new Map(x.points.map(p => [p.url, { url: p.url, title: p.source, domain: domainOf(p.url) }])).values()].slice(0, 4), domains: Object.keys(doms) }; });
+  if (diag.said === "series" && !kept.length) diag.said = mixed ? "units did not match" : diag.kept ? "too few checked figures" : "no figure found on an official page";
+  return { series: kept, diag };
 }
 // In-depth stories (and standard stories with high exposure) get one statistics search, newest first. Results are kept.
 async function addStatistics(data, mode) {
   const want = ev => ev.analysis?.v === 2 && (ev.analysis.tier === "deep" || (ev.analysis.tier === "standard" && ev.analysis.exposure?.level === "high"));
   const due = data.sectors.flatMap(sec => sec.items).filter(ev => want(ev) && ev.stats?.v !== STATS_V)
     .sort((a, b) => latest(b).localeCompare(latest(a))).slice(0, STATS_LIMIT);
-  let found = 0, none = 0, failed = 0, droppedPoints = 0;
+  let found = 0, none = 0, failed = 0, droppedPoints = 0, proposed = 0, pagesFetched = 0; const samples = [];
   for (const ev of due) {
     if (failed >= 2 && !found && !none) break;   // search unavailable (e.g. disabled for the organisation): stop, retry next run
     try {
-      const content = await callStats(statsPrompt(ev, mode));
-      const series = parseStats(content);
+      const { series, diag } = parseStats(await callStats(statsPrompt(ev, mode)));
       ev.stats = { v: STATS_V, at: new Date().toISOString(), series };
       if (series.length) found++; else none++;
-      droppedPoints += series.reduce((n, x) => n + x.dropped, 0);
+      droppedPoints += diag.notFound; proposed += diag.proposed; pagesFetched += diag.pagesFetched;
+      samples.push({ headline: str(ev.headline, 80), result: series.length ? "chart" : diag.said, proposed: diag.proposed, checked: diag.kept, pagesFetched: diag.pagesFetched });
     } catch (e) { console.error(`Statistics for "${ev.headline}" failed: ${e.message}`); failed++; }
   }
-  return { searched: due.length, found, none, failed, droppedPoints };
+  return { searched: due.length, found, none, failed, proposed, droppedPoints, pagesFetched, samples };
 }
-
 
 async function callClaude(prompt, job) {
   let lastErr;
@@ -1024,7 +1077,8 @@ async function runDesk(desk) {
   const kinds = await classifyOlder(data);
   const frames = await reframeRecent(data, desk.mode);
   const stats = await addStatistics(data, desk.mode);
-  if (stats.searched) console.log(`Statistics: ${stats.searched} stories searched, ${stats.found} with verified figures, ${stats.none} none, ${stats.failed} failed, ${stats.droppedPoints} unverified points dropped`);
+  if (stats.searched) console.log(`Statistics: ${stats.searched} stories searched, ${stats.found} with charts, ${stats.none} without, ${stats.failed} failed; ${stats.proposed} figures proposed, ${stats.droppedPoints} not found on an official page, ${stats.pagesFetched} official pages fetched`);
+  for (const x of stats.samples || []) console.log(`  · ${x.result}: ${x.headline} (${x.checked}/${x.proposed} figures checked, ${x.pagesFetched} pages)`);
   if (frames.done || frames.failedBatches) console.log(`Framework analysis: ${frames.done} existing stories re-analysed, ${frames.waiting} still waiting`);
   if (kinds.labelled || kinds.waiting) console.log(`Report kinds: ${kinds.labelled} older reports labelled, ${kinds.waiting} waiting`);
   const og = await fillShareImages(data);
