@@ -2,7 +2,7 @@
   "schema": 4,
   "region": "India",
   "since": "2026-10-02",
-  "updatedAt": "2026-10-13T20:29:28.554Z",
+  "updatedAt": "2026-10-13T21:17:00.675Z",
   "sectors": [
     {
       "id": "energy",
@@ -407,6 +407,11 @@
                 ]
               }
             }
+          },
+          "stats": {
+            "v": 1,
+            "at": "2026-10-13T21:16:04.969Z",
+            "series": []
           }
         },
         {
@@ -417,11 +422,11 @@
           "date": "2026-10-12T18:25:07.000Z",
           "relevance": "medium",
           "image": "https://www.livemint.com/lm-img/img/2026/10/12/1600x900/logo/Doval-IRAN_1791829041628_5xon_1791829046121_UZTM_1c703650-7899-42bb-93d6-3c867279f4c3_0UAq.png",
-          "why": "Talks between Iran's Mohsen Rezaei and Ajit Doval come amid Gulf shipping attacks and Strait of Hormuz tensions, a route critical to India's energy imports and trade.",
+          "why": "Attacks on two ships in Hormuz have left two Indians missing, prompting talks between Ajit Doval and Iran's Mohsen Rezaei amid wider Gulf shipping risks.",
           "implications": [
-            "Continued Gulf shipping tensions could raise freight and insurance costs for India's oil, gas and cargo imports.",
-            "Any disruption around the Strait of Hormuz may pressure fuel and LPG costs, which could eventually reach households and transport operators.",
-            "Diplomatic engagement may help India protect its shipping and supply interests, though no specific outcomes have been reported."
+            "Two Indians remain missing after Sunday's attack on two ships, raising concerns over seafarer safety.",
+            "IRGC Navy warnings against vessels switching off AIS could add risk for merchant shipping in the strait.",
+            "Doval's talks with Iran signal that India is engaging diplomatically as tensions continue."
           ],
           "reports": [
             {
@@ -445,7 +450,102 @@
               "image": "https://th-i.thgim.com/public/incoming/eql40u/article71576856.ece/alternates/LANDSCAPE_1200/PTI11_20_2025_000613B.jpg"
             }
           ],
-          "thread": "t8nzveu"
+          "thread": "t8nzveu",
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-13T21:11:38.156Z",
+            "tier": "standard",
+            "primary": "disruption_map",
+            "complement": null,
+            "features": [
+              "disruption",
+              "armed_conflict",
+              "fast_moving",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "high",
+              "reason": "Safety of Indians at sea and a key shipping route are involved."
+            },
+            "horizon": {
+              "value": "now",
+              "reason": "Indians missing; attacks and warnings are ongoing."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "Two outlets and an Iranian Embassy post; still a breaking story."
+            },
+            "affected": [
+              {
+                "group": "Gulf & overseas workers and families",
+                "direction": "down",
+                "what": "safety at sea",
+                "basis": "reported"
+              },
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "shipping risk through Hormuz",
+                "basis": "inferred"
+              },
+              {
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "possible supply disruption risk",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Updates on the two missing Indians",
+                "when": "",
+                "where": "Ministry of External Affairs"
+              },
+              {
+                "what": "Further IRGC Navy action against vessels switching off AIS",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "Further India–Iran security talks on Hormuz developments",
+                "when": "",
+                "where": "Iranian Embassy in India"
+              }
+            ],
+            "frameworks": {
+              "disruption_map": {
+                "node": {
+                  "name": "Strait of Hormuz",
+                  "type": "strait",
+                  "status": "unknown",
+                  "as_of": "2026-10-12"
+                },
+                "cause": {
+                  "text": "Attack on two ships on Sunday; attacker not named in reports.",
+                  "status": "confirmed"
+                },
+                "flows": [
+                  {
+                    "flow": "workers",
+                    "india_link": "Two Indians missing after the attack on two ships.",
+                    "basis": "reported"
+                  },
+                  {
+                    "flow": "cargo",
+                    "india_link": "IRGC Navy warns merchant vessels against switching off AIS.",
+                    "basis": "reported"
+                  }
+                ],
+                "alternatives": [],
+                "duration": "not reported"
+              }
+            }
+          },
+          "stats": {
+            "v": 1,
+            "at": "2026-10-13T21:16:50.904Z",
+            "series": []
+          }
         },
         {
           "id": "s1bwxd3q",
@@ -455,11 +555,11 @@
           "date": "2026-10-12T18:03:47.000Z",
           "relevance": "medium",
           "image": "https://th-i.thgim.com/public/news/national/dmke7e/article71575027.ece/alternates/LANDSCAPE_1200/Nasser_Al-Muhairi_026-1-1%202.jpg",
-          "why": "ADNOC, which supplies almost one in ten barrels of India's crude imports, is open to more long-term LPG deals and is exploring expanded strategic storage with ISPRL, which could strengthen India's fuel supply security.",
+          "why": "ADNOC says it is open to more long-term LPG deals with India and to expanding Indian strategic storage, which could shape LPG and crude supply security.",
           "implications": [
-            "More long-term LPG contracts could help stabilise cooking gas supply for households and reduce exposure to sudden spot-market price spikes.",
-            "Expanded crude, LNG and LPG storage, including strategic reserves, may give India a larger buffer during supply disruptions.",
-            "These are statements of interest so far, so any effect on fuel availability or prices is likely to come only over time."
+            "ADNOC supplied more than 500,000 barrels of crude a day to India in 2025.",
+            "Further long-term LPG contracts could add supply stability for Indian households.",
+            "Storage talks with ISPRL cover crude, LNG and LPG, including strategic reserves."
           ],
           "reports": [
             {
@@ -473,7 +573,83 @@
               "image": "https://th-i.thgim.com/public/news/national/dmke7e/article71575027.ece/alternates/LANDSCAPE_1200/Nasser_Al-Muhairi_026-1-1%202.jpg"
             }
           ],
-          "thread": "t1nrkamg"
+          "thread": "t1nrkamg",
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-13T21:12:51.292Z",
+            "tier": "quick",
+            "primary": "trade_flow",
+            "complement": null,
+            "features": [
+              "trade_flow",
+              "allocation"
+            ],
+            "exposure": {
+              "level": "high",
+              "reason": "Concerns LPG and crude, both household essentials and top imports."
+            },
+            "horizon": {
+              "value": "years",
+              "reason": "Long-term deals and storage expansion are only being explored."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "Single outlet; on-record ADNOC acting marketing CEO."
+            },
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "LPG supply security",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "New long-term ADNOC LPG supply deal with India",
+                "when": "",
+                "where": "ADNOC"
+              },
+              {
+                "what": "ADNOC-ISPRL storage agreement announcement",
+                "when": "",
+                "where": "ISPRL"
+              }
+            ],
+            "frameworks": {
+              "trade_flow": {
+                "good": "LPG and crude oil",
+                "actors": [
+                  {
+                    "country": "United Arab Emirates",
+                    "role": "exporter",
+                    "is_india": false
+                  },
+                  {
+                    "country": "India",
+                    "role": "importer",
+                    "is_india": true
+                  }
+                ],
+                "change": {
+                  "type": "deal",
+                  "effective": ""
+                },
+                "india_position": {
+                  "role": "competing_buyer",
+                  "note": "Major buyer; ADNOC calls India among its most important energy markets."
+                },
+                "volumes": [
+                  {
+                    "value": 500000,
+                    "unit": "barrels of crude per day (more",
+                    "period": "2025",
+                    "from": "The Hindu"
+                  }
+                ]
+              }
+            }
+          }
         },
         {
           "id": "s1jm33t2",
@@ -1435,6 +1611,100 @@
               }
             }
           }
+        },
+        {
+          "id": "s1kddcdu",
+          "headline": "6.14% growth registered in freight loading in September 2026 over September 2025: Indian Railways",
+          "url": "https://www.thehindu.com/business/Economy/614-growth-registered-in-freight-loading-in-september-2026-over-september-2025-indian-railways/article71579378.ece",
+          "source": "thehindu",
+          "date": "2026-10-13T12:47:52.000Z",
+          "relevance": "medium",
+          "image": "https://th-i.thgim.com/public/incoming/3a4ams/article71579453.ece/alternates/LANDSCAPE_1200/23_Rail_Budget_26_02_Del.jpg",
+          "why": "The Railway Board reports freight loading grew 6.14% and freight revenue 9.3% in September 2026, a sign of rising goods movement across India.",
+          "implications": [
+            "Freight revenue rose by ₹1,266 crore over September 2025, according to the Railway Board.",
+            "Higher loading could point to stronger demand for moving industrial and bulk goods by rail."
+          ],
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-13T21:10:33.786Z",
+            "tier": "quick",
+            "primary": "decoder",
+            "complement": null,
+            "features": [
+              "scheduled"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "Affects railway finances and freight users, with no direct household mechanism reported."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Monthly data; the trend shows over coming releases."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "Single outlet quoting an official Railway Board statement."
+            },
+            "affected": [
+              {
+                "group": "Government finances",
+                "direction": "up",
+                "what": "railway freight revenue",
+                "basis": "reported"
+              }
+            ],
+            "watch": [
+              {
+                "what": "October 2026 freight loading and revenue figures",
+                "when": "",
+                "where": "Railway Board"
+              }
+            ],
+            "frameworks": {
+              "decoder": {
+                "kind": "release",
+                "headline": {
+                  "label": "Freight loading growth",
+                  "value": 6.14,
+                  "unit": "%",
+                  "period": "September 2026",
+                  "previous": null,
+                  "previousLabel": "versus September 2025",
+                  "from": "The Hindu"
+                },
+                "comparisons": [
+                  {
+                    "label": "Freight revenue growth, year on year",
+                    "value": 9.3,
+                    "unit": "%",
+                    "from": "The Hindu"
+                  },
+                  {
+                    "label": "Freight revenue increase over September 2025",
+                    "value": 1266,
+                    "unit": "₹ crore",
+                    "from": "The Hindu"
+                  }
+                ],
+                "drivers": [],
+                "decision": null
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "thehindu",
+              "headline": "6.14% growth registered in freight loading in September 2026 over September 2025: Indian Railways",
+              "url": "https://www.thehindu.com/business/Economy/614-growth-registered-in-freight-loading-in-september-2026-over-september-2025-indian-railways/article71579378.ece",
+              "date": "2026-10-13T12:47:52.000Z",
+              "kind": "hard",
+              "summary": "\"Freight revenue during September 2026 increased by ₹1,266 crore over September 2025, registering a 9.3% growth,\" the Railway Board said",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/incoming/3a4ams/article71579453.ece/alternates/LANDSCAPE_1200/23_Rail_Budget_26_02_Del.jpg"
+            }
+          ],
+          "thread": "ti9k0xi"
         },
         {
           "id": "syvkmg9",
@@ -2566,6 +2836,11 @@
                 "duration": "not reported"
               }
             }
+          },
+          "stats": {
+            "v": 1,
+            "at": "2026-10-13T21:15:06.765Z",
+            "series": []
           }
         },
         {
@@ -2746,6 +3021,11 @@
                 ]
               }
             }
+          },
+          "stats": {
+            "v": 1,
+            "at": "2026-10-13T21:15:45.017Z",
+            "series": []
           }
         },
         {
@@ -3597,6 +3877,11 @@
                 }
               }
             }
+          },
+          "stats": {
+            "v": 1,
+            "at": "2026-10-13T21:16:43.027Z",
+            "series": []
           }
         },
         {
@@ -3631,11 +3916,10 @@
           "date": "2026-10-13T00:30:34.000Z",
           "relevance": "medium",
           "image": "https://www.livemint.com/lm-img/img/2026/10/12/1600x900/logo/3-0-124941485-iStock-1130669886-0_1679836608949_1791824910432_3CmP_949bfb0e-b017-42a7-9e5e-f4514b7be908_w3ZO.jpg",
-          "why": "The Centre's review with states of GST Council-recommended reforms ahead of an April 2027 rollout could change how millions of businesses deal with tax compliance and enforcement.",
+          "why": "The Centre will review GST reforms with states before an April 2027 rollout, including a proposal to remove GST officers' arrest powers.",
           "implications": [
-            "Businesses may face less fear of coercive action if GST officers' arrest powers are removed as proposed.",
-            "Simplified procedures could reduce paperwork and compliance costs, particularly for small traders and firms.",
-            "Gaps flagged in the review could lead to changes in rules or timelines before the April 2027 rollout."
+            "The review checks whether GST Council reforms are delivering intended benefits to businesses.",
+            "Removing officers' arrest powers and simplifying procedures could ease compliance for businesses."
           ],
           "reports": [
             {
@@ -3649,7 +3933,84 @@
               "image": "https://www.livemint.com/lm-img/img/2026/10/12/1600x900/logo/3-0-124941485-iStock-1130669886-0_1679836608949_1791824910432_3CmP_949bfb0e-b017-42a7-9e5e-f4514b7be908_w3ZO.jpg"
             }
           ],
-          "thread": "t11tvf36"
+          "thread": "t11tvf36",
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-13T21:11:38.156Z",
+            "tier": "quick",
+            "primary": "policy_tracker",
+            "complement": null,
+            "features": [
+              "policy_stage",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "Changes tax compliance obligations for businesses."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Rollout targeted for April 2027."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "Single outlet, no named official source."
+            },
+            "affected": [
+              {
+                "group": "Importers & traders",
+                "direction": "down",
+                "what": "GST compliance burden",
+                "basis": "inferred"
+              },
+              {
+                "group": "MSME exporters",
+                "direction": "down",
+                "what": "procedural complexity",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Outcome of Centre-states review of GST reform implementation",
+                "when": "",
+                "where": "GST Council"
+              },
+              {
+                "what": "Decision on removing GST officers' arrest powers",
+                "when": "",
+                "where": "GST Council"
+              }
+            ],
+            "frameworks": {
+              "policy_tracker": {
+                "instrument": {
+                  "name": "GST reforms",
+                  "issuer": "GST Council",
+                  "jurisdiction": "India"
+                },
+                "stages": [
+                  {
+                    "stage": "announced",
+                    "date": "",
+                    "status": "done"
+                  },
+                  {
+                    "stage": "under_review",
+                    "date": "",
+                    "status": "current"
+                  },
+                  {
+                    "stage": "in_force",
+                    "date": "April 2027",
+                    "status": "next"
+                  }
+                ],
+                "obligations": [],
+                "applies_to_india": "yes"
+              }
+            }
+          }
         },
         {
           "id": "s1aetfs7",
@@ -3687,11 +4048,10 @@
           "date": "2026-10-12T15:51:31.000Z",
           "relevance": "medium",
           "image": "https://www.livemint.com/lm-img/img/2026/10/12/1600x900/logo/trade_pact_1752584133819_1752584134056_1791820109861_bc6l_309776fe-0660-4e43-8977-e7d0d7b7e81c_P4IO.jpg",
-          "why": "An annual India-UK exchange of tariff usage data from July 2027 is meant to help small businesses actually use the lower import duties under the trade pact and fix early operational problems.",
+          "why": "India and the UK will exchange tariff usage data every year from July 2027 to help small businesses use the trade pact's lower import duties.",
           "implications": [
-            "Small exporters and importers may find it easier to claim lower duties if gaps in usage are identified and addressed.",
-            "Customs and paperwork hurdles under the pact could be resolved faster once both governments share usage data.",
-            "Businesses not yet using the pact's tariff benefits may get more government outreach or guidance on how to qualify."
+            "Yearly data could show which businesses are and are not claiming the pact's lower duties.",
+            "Early operational hurdles after implementation may be found and resolved faster."
           ],
           "reports": [
             {
@@ -3705,7 +4065,64 @@
               "image": "https://www.livemint.com/lm-img/img/2026/10/12/1600x900/logo/trade_pact_1752584133819_1752584134056_1791820109861_bc6l_309776fe-0660-4e43-8977-e7d0d7b7e81c_P4IO.jpg"
             }
           ],
-          "thread": "tjh4avw"
+          "thread": "tjh4avw",
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-13T21:13:57.243Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "medium",
+              "reason": "Concerns one bilateral trade relationship and small businesses trading under it."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Data exchange starts July 2027."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "Single outlet; no named official source."
+            },
+            "affected": [
+              {
+                "group": "MSME exporters",
+                "direction": "up",
+                "what": "access to lower duties",
+                "basis": "reported"
+              }
+            ],
+            "watch": [
+              {
+                "what": "First India-UK annual tariff usage data exchange",
+                "when": "July 2027",
+                "where": ""
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Annual tariff data exchange",
+                    "detail": "India and UK share tariff usage data yearly from July 2027.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Operational hurdles identified",
+                    "detail": "Exchange aims to resolve early hurdles after the pact's implementation.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Wider use of lower duties",
+                    "detail": "Small businesses may claim preferential duties more often.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The data exchange is delayed or hurdles are not acted on."
+              }
+            }
+          }
         },
         {
           "id": "s1hnovhj",
@@ -3715,11 +4132,10 @@
           "date": "2026-10-12T15:43:07.000Z",
           "relevance": "medium",
           "image": "https://www.livemint.com/lm-img/img/2026/10/12/1600x900/gst_1791816692811_0FZA_1791816692992_Xp78_80a7f7bc-0e7a-45ea-b46f-d43928119285_Mxi0.png",
-          "why": "The GST Council's proposal to extend e-invoicing to imported services and reverse-charge purchases would raise compliance requirements for many mid-sized and large businesses.",
+          "why": "A GST Council proposal would add e-invoicing for businesses with ₹5 crore+ turnover that import services or buy from unregistered suppliers under reverse charge.",
           "implications": [
-            "Businesses with turnover of ₹5 crore or more may need to issue e-invoices for overseas software, cloud and consulting payments.",
-            "Firms buying from unregistered suppliers under reverse charge could face extra paperwork and may need accounting system upgrades.",
-            "A proposed return correction mechanism from April 2027 may make it easier for businesses to fix errors in filed GST returns."
+            "Firms paying for overseas software, cloud and consulting services could face extra invoicing requirements.",
+            "A return correction mechanism is proposed from April 2027."
           ],
           "reports": [
             {
@@ -3733,7 +4149,71 @@
               "image": "https://www.livemint.com/lm-img/img/2026/10/12/1600x900/gst_1791816692811_0FZA_1791816692992_Xp78_80a7f7bc-0e7a-45ea-b46f-d43928119285_Mxi0.png"
             }
           ],
-          "thread": "t11tvf36"
+          "thread": "t11tvf36",
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-13T21:13:57.244Z",
+            "tier": "quick",
+            "primary": "decoder",
+            "complement": null,
+            "features": [
+              "scheduled",
+              "policy_stage"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "Proposed compliance obligation for businesses above ₹5 crore turnover."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Proposal pending; return correction mechanism proposed from April 2027."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "Single outlet reporting a GST Council proposal."
+            },
+            "affected": [
+              {
+                "group": "Importers & traders",
+                "direction": "up",
+                "what": "e-invoicing compliance",
+                "basis": "reported"
+              }
+            ],
+            "watch": [
+              {
+                "what": "GST Council final decision on e-invoicing for imported services",
+                "when": "",
+                "where": "GST Council"
+              },
+              {
+                "what": "Launch of the GST return correction mechanism",
+                "when": "April 2027",
+                "where": "GST Council"
+              }
+            ],
+            "frameworks": {
+              "decoder": {
+                "kind": "decision",
+                "headline": {
+                  "label": "Proposed e-invoicing turnover threshold",
+                  "value": 5,
+                  "unit": "₹ crore annual turno",
+                  "period": "proposal",
+                  "previous": null,
+                  "previousLabel": "",
+                  "from": "Mint"
+                },
+                "comparisons": [],
+                "drivers": [],
+                "decision": {
+                  "action": "other",
+                  "size": "e-invoicing extended to import",
+                  "stance": "Proposed; return correction mechanism also proposed from April 2027"
+                }
+              }
+            }
+          }
         },
         {
           "id": "slrq9c2",
@@ -3743,11 +4223,11 @@
           "date": "2026-10-12T14:10:03.000Z",
           "relevance": "medium",
           "image": "https://www.livemint.com/lm-img/img/2026/10/12/1600x900/logo/ga170b423b715ed6263184a4c5f868b5d8c0733dfe61a3bf8e_1692109346602_1791814039819_mtNQ_1f90ffe3-a680-4719-a082-368a6daa1ac2_4Kor.jpg",
-          "why": "A Bloomberg Economics estimate suggests India's free trade agreements could add $140 billion to GDP by 2035, and possibly about $170 billion if pending deals with the US, EAEU, GCC and Israel are concluded.",
+          "why": "Bloomberg Economics estimates India's free trade agreements could add $140 billion to GDP and lift exports 6.2% by 2035.",
           "implications": [
-            "Exporting businesses may gain wider market access over the coming years, which could support orders and factory jobs.",
-            "Consumers could eventually see more imported goods at lower prices as tariffs under trade agreements fall.",
-            "Domestic producers facing new import competition may need to improve costs or quality to hold market share."
+            "Gains could reach about $170 billion, or 2.1% of GDP, with more deals concluded.",
+            "These deals include a US interim agreement and talks with the EAEU, GCC and Israel.",
+            "Mint links the push to US tariffs reshaping global supply chains."
           ],
           "reports": [
             {
@@ -3771,7 +4251,104 @@
               "image": "https://www.livemint.com/lm-img/img/2026/10/12/1600x900/logo/2-0-1382223513-trade--9--0_1679774191416_1791814683419_Reaq_e8a05247-9fd4-4935-8cd0-1fd39c617e90_LvOG.jpg"
             }
           ],
-          "thread": "tvli5g1"
+          "thread": "tvli5g1",
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-13T21:13:57.244Z",
+            "tier": "quick",
+            "primary": "trade_flow",
+            "complement": null,
+            "features": [
+              "trade_flow",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "Long-run trade projection; no immediate change for households."
+            },
+            "horizon": {
+              "value": "years",
+              "reason": "Estimates run to 2035."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "Single outlet reporting one modelling estimate."
+            },
+            "affected": [
+              {
+                "group": "Large exporters",
+                "direction": "up",
+                "what": "export growth",
+                "basis": "reported"
+              },
+              {
+                "group": "MSME exporters",
+                "direction": "up",
+                "what": "market access",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Conclusion of an India-US interim trade agreement",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "Progress in India's trade talks with the EAEU, GCC and Israel",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "frameworks": {
+              "trade_flow": {
+                "good": "Goods and services traded under FTAs",
+                "actors": [
+                  {
+                    "country": "India",
+                    "role": "exporter",
+                    "is_india": true
+                  },
+                  {
+                    "country": "United States",
+                    "role": "third_party",
+                    "is_india": false
+                  },
+                  {
+                    "country": "Gulf Cooperation Council",
+                    "role": "third_party",
+                    "is_india": false
+                  },
+                  {
+                    "country": "Eurasian Economic Union",
+                    "role": "third_party",
+                    "is_india": false
+                  },
+                  {
+                    "country": "Israel",
+                    "role": "third_party",
+                    "is_india": false
+                  }
+                ],
+                "change": {
+                  "type": "deal",
+                  "effective": ""
+                },
+                "india_position": {
+                  "role": "supplier",
+                  "note": "Exports projected to rise; larger gains depend on deals still under negotiation."
+                },
+                "volumes": [
+                  {
+                    "value": 6.2,
+                    "unit": "% boost to exports",
+                    "period": "by 2035",
+                    "from": "Mint"
+                  }
+                ]
+              }
+            }
+          }
         },
         {
           "id": "sp1n74a",
@@ -5867,40 +6444,6 @@
           }
         },
         {
-          "id": "s17sbazg",
-          "headline": "Starlink vs Jio: Can Elon Musk make satellite internet affordable in India’s cheap data market?",
-          "url": "https://www.livemint.com/technology/starlink-vs-jio-can-elon-musk-make-satellite-internet-affordable-in-india-s-cheap-data-market-11791776817938.html",
-          "source": "mint",
-          "date": "2026-10-12T04:32:08.000Z",
-          "relevance": "medium",
-          "image": "https://www.livemint.com/lm-img/img/2026/10/12/1600x900/logo/jioo_1791777257166_lKwu_1791777263098_wVQB_7f2ff965-495d-4a62-a954-b5c812085611_iE5Q.png",
-          "why": "",
-          "implications": [],
-          "reports": [
-            {
-              "source": "mint",
-              "headline": "Starlink vs Jio: Can Elon Musk make satellite internet affordable in India’s cheap data market?",
-              "url": "https://www.livemint.com/technology/starlink-vs-jio-can-elon-musk-make-satellite-internet-affordable-in-india-s-cheap-data-market-11791776817938.html",
-              "date": "2026-10-12T04:32:08.000Z",
-              "kind": "feature",
-              "summary": "Elon Musk says he will bring affordable Starlink satellite internet in India, challenging Reliance Jio’s dominance in the country’s low-cost data market ahead of its proposed IPO.&nbsp;",
-              "summaryV": 3,
-              "image": "https://www.livemint.com/lm-img/img/2026/10/12/1600x900/logo/jioo_1791777257166_lKwu_1791777263098_wVQB_7f2ff965-495d-4a62-a954-b5c812085611_iE5Q.png"
-            },
-            {
-              "source": "thehindu",
-              "headline": "Elon Musk and Mukesh Ambani’s feud over Starlink | Explained",
-              "url": "https://www.thehindu.com/sci-tech/technology/elon-musk-and-mukesh-ambanis-feud-over-starlink-explained/article71577979.ece",
-              "date": "2026-10-13T05:35:06.000Z",
-              "kind": "feature",
-              "summary": "Elon Musk believes that India’s mobile internet market is skewed to favour the Ambani family and that his Starlink service deserves a fair chance in the country. However, critics have pointed to sovereignty and security concerns",
-              "summaryV": 3,
-              "image": "https://th-i.thgim.com/public/incoming/wzwh3t/article71578006.ece/alternates/LANDSCAPE_1200/Film_-_Musk_14315.jpg"
-            }
-          ],
-          "thread": "t1ad3bzi"
-        },
-        {
           "id": "sih0ryg",
           "headline": "Zoho cancels salary hike- Sridhar Vembu cites rising AI costs, says ‘please pray for us'",
           "url": "https://www.livemint.com/companies/no-appraisal-for-zoho-staffers-sridhar-vembu-cites-rising-ai-costs-says-usual-pay-increase-unlikely-this-year-11791863592011.html",
@@ -5923,6 +6466,16 @@
               "summary": "Zoho co-founder Sridhar Vembu said employees would not get their usual pay hike this year amid rising AI costs and geopolitical challenges. He pledged efforts to avoid mass layoffs and warned of a grim outlook for software jobs as Indian IT firms rethink hiring and workforce skills.",
               "summaryV": 3,
               "image": "https://www.livemint.com/lm-img/img/2026/10/13/1600x900/logo/Sridhar_Vembu_AI_1791864044900_gV9Y_1791864045032_7pBw_49c508d2-f629-4179-8212-c12434254cbb_FG8J.jpg"
+            },
+            {
+              "source": "mint",
+              "headline": "Zoho founder Sridhar Vembu’s ‘no appraisal this year’ decision draws backlash: ‘Why urge NRIs to return then?’",
+              "url": "https://www.livemint.com/companies/zoho-founder-sridhar-vembu-s-no-appraisal-this-year-decision-draws-backlash-why-urge-nris-to-return-then-11791896046127.html",
+              "date": "2026-10-13T13:21:40.000Z",
+              "kind": "hard",
+              "summary": "His remarks have drawn criticism from social media users, who questioned the job prospects for Indians returning from overseas amid challenges facing the domestic technology industry.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/10/13/1600x900/logo/2-0-436956914-DSC-1348-0_1680884174369_1791897318053_s24S_18bc25d1-2054-486d-aaf9-a6a3d28ba64c_v7Jq.JPG"
             }
           ],
           "thread": "t1ehfi7c",
@@ -5978,6 +6531,131 @@
           }
         },
         {
+          "id": "s9xiya8",
+          "headline": "AI to reshape India’s workforce? 197 million workers face automation risk; 46 million may benefit: Study",
+          "url": "https://www.livemint.com/news/india/ai-to-reshape-india-s-workforce-197-million-workers-face-automation-risk-46-million-may-benefit-study-11791892413423.html",
+          "source": "mint",
+          "date": "2026-10-13T12:52:07.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2026/10/13/1600x900/logo/AI_1779589905303_1779589905473_c0aa205c-a462-4a97-a598-c196b7965e0c_1791894445444_0Adl_20e1749f-a218-4868-84ff-51cac7010e72_8Kfq.png",
+          "why": "A study cited by Mint says 197 million Indian workers hold jobs highly exposed to automation, while 46 million could gain from AI productivity.",
+          "implications": [
+            "Mint reports the study sees Kerala, Haryana, Maharashtra and Tamil Nadu as better positioned to gain from AI.",
+            "Uttar Pradesh, Bihar, Jharkhand and Madhya Pradesh face greater challenges, the study finds.",
+            "Regional gaps in jobs and incomes may widen if exposure turns into job displacement."
+          ],
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-13T21:10:33.786Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "medium",
+              "reason": "Long-term labour market risk; no immediate effect on prices or incomes reported."
+            },
+            "horizon": {
+              "value": "years",
+              "reason": "Automation effects unfold gradually across the workforce."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "Single outlet reporting an unnamed study."
+            },
+            "affected": [
+              {
+                "group": "Salaried workers",
+                "direction": "mixed",
+                "what": "job exposure to automation",
+                "basis": "reported"
+              },
+              {
+                "group": "A named state or region",
+                "direction": "down",
+                "what": "UP, Bihar, Jharkhand, MP face challenges",
+                "basis": "reported"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Release of the full study and its state-level findings",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Study flags automation exposure",
+                    "detail": "197 million Indian workers are in jobs highly exposed to automation.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Some workers gain",
+                    "detail": "46 million workers could benefit from AI-driven productivity gains.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "State gaps could widen",
+                    "detail": "Lagging states like UP and Bihar may see slower gains than southern and western states.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "AI adoption in Indian workplaces proves slower or narrower than the study assumes."
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "AI to reshape India’s workforce? 197 million workers face automation risk; 46 million may benefit: Study",
+              "url": "https://www.livemint.com/news/india/ai-to-reshape-india-s-workforce-197-million-workers-face-automation-risk-46-million-may-benefit-study-11791892413423.html",
+              "date": "2026-10-13T12:52:07.000Z",
+              "kind": "hard",
+              "summary": "A new study finds 197 million Indian workers are in jobs highly exposed to automation, while 46 million could benefit from AI-driven productivity gains. Kerala, Haryana, Maharashtra and Tamil Nadu are better positioned to gain, while UP, Bihar, Jharkhand and MP face greater challenges.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/10/13/1600x900/logo/AI_1779589905303_1779589905473_c0aa205c-a462-4a97-a598-c196b7965e0c_1791894445444_0Adl_20e1749f-a218-4868-84ff-51cac7010e72_8Kfq.png"
+            }
+          ],
+          "thread": "t1t7i3qv"
+        },
+        {
+          "id": "s17sbazg",
+          "headline": "Starlink vs Jio: Can Elon Musk make satellite internet affordable in India’s cheap data market?",
+          "url": "https://www.livemint.com/technology/starlink-vs-jio-can-elon-musk-make-satellite-internet-affordable-in-india-s-cheap-data-market-11791776817938.html",
+          "source": "mint",
+          "date": "2026-10-12T04:32:08.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2026/10/12/1600x900/logo/jioo_1791777257166_lKwu_1791777263098_wVQB_7f2ff965-495d-4a62-a954-b5c812085611_iE5Q.png",
+          "why": "",
+          "implications": [],
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "Starlink vs Jio: Can Elon Musk make satellite internet affordable in India’s cheap data market?",
+              "url": "https://www.livemint.com/technology/starlink-vs-jio-can-elon-musk-make-satellite-internet-affordable-in-india-s-cheap-data-market-11791776817938.html",
+              "date": "2026-10-12T04:32:08.000Z",
+              "kind": "feature",
+              "summary": "Elon Musk says he will bring affordable Starlink satellite internet in India, challenging Reliance Jio’s dominance in the country’s low-cost data market ahead of its proposed IPO.&nbsp;",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/10/12/1600x900/logo/jioo_1791777257166_lKwu_1791777263098_wVQB_7f2ff965-495d-4a62-a954-b5c812085611_iE5Q.png"
+            },
+            {
+              "source": "thehindu",
+              "headline": "Elon Musk and Mukesh Ambani’s feud over Starlink | Explained",
+              "url": "https://www.thehindu.com/sci-tech/technology/elon-musk-and-mukesh-ambanis-feud-over-starlink-explained/article71577979.ece",
+              "date": "2026-10-13T05:35:06.000Z",
+              "kind": "feature",
+              "summary": "Elon Musk believes that India’s mobile internet market is skewed to favour the Ambani family and that his Starlink service deserves a fair chance in the country. However, critics have pointed to sovereignty and security concerns",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/incoming/wzwh3t/article71578006.ece/alternates/LANDSCAPE_1200/Film_-_Musk_14315.jpg"
+            }
+          ],
+          "thread": "t1ad3bzi"
+        },
+        {
           "id": "suilzal",
           "headline": "Google defends $15 billion Vizag AI hub as water fears, land disputes and protests put project under scrutiny",
           "url": "https://www.livemint.com/news/us-news/google-defends-15-billion-vizag-ai-hub-as-water-fears-land-disputes-and-protests-put-project-under-scrutiny-11791836532888.html",
@@ -5985,11 +6663,10 @@
           "date": "2026-10-12T21:00:04.000Z",
           "relevance": "medium",
           "image": "https://www.livemint.com/lm-img/img/2026/10/12/1600x900/logo/google_defends_AI_hub_in_vizag_1791838698553_EVm3_1791838698746_jUID_24565197-9b32-475b-94eb-395a8cf67adc_sYYN.png",
-          "why": "Google's $15 billion Visakhapatnam AI hub, due to become operational in 2028, is a major test of whether large data centre projects in India can address local concerns over water, land and jobs.",
+          "why": "Google's $15 billion Visakhapatnam AI hub is a major tech investment for India, but land, water and jobs protests are testing it ahead of a 2028 start.",
           "implications": [
-            "Local residents may press for clearer guarantees on water use, despite Google's stated plan to use air cooling.",
-            "Ongoing land acquisition disputes and protests could slow parts of the project or prompt revised compensation terms.",
-            "Job seekers in Andhra Pradesh are likely to watch whether the hub creates meaningful local employment, a key protest demand."
+            "Google says air cooling will limit the hub's water use, but local environmental concerns persist.",
+            "Protests over land acquisition and employment could shape how similar large data projects are received in India."
           ],
           "reports": [
             {
@@ -6003,7 +6680,74 @@
               "image": "https://www.livemint.com/lm-img/img/2026/10/12/1600x900/logo/google_defends_AI_hub_in_vizag_1791838698553_EVm3_1791838698746_jUID_24565197-9b32-475b-94eb-395a8cf67adc_sYYN.png"
             }
           ],
-          "thread": "taitr3s"
+          "thread": "taitr3s",
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-13T21:11:38.156Z",
+            "tier": "quick",
+            "primary": "winners_losers",
+            "complement": null,
+            "features": [
+              "allocation"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "One industry and one state; no household essential is affected."
+            },
+            "horizon": {
+              "value": "years",
+              "reason": "Facility expected to become operational in 2028."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "Single outlet; water claims come from Google, a party."
+            },
+            "affected": [
+              {
+                "group": "A named state or region",
+                "direction": "mixed",
+                "what": "Andhra Pradesh investment, land, water",
+                "basis": "reported"
+              },
+              {
+                "group": "IT & services workers",
+                "direction": "unclear",
+                "what": "local employment prospects",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Resolution of land acquisition protests around the Visakhapatnam hub",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "Progress toward the hub becoming operational",
+                "when": "2028",
+                "where": ""
+              }
+            ],
+            "frameworks": {
+              "winners_losers": {
+                "groups": [
+                  {
+                    "group": "A named state or region",
+                    "direction": "mixed",
+                    "directness": "direct",
+                    "mechanism": "Andhra Pradesh gains a $15 billion hub but faces land and environment disputes"
+                  },
+                  {
+                    "group": "IT & services workers",
+                    "direction": "unclear",
+                    "directness": "indirect",
+                    "mechanism": "Hub could bring jobs, but protesters say employment concerns persist"
+                  }
+                ],
+                "not_affected": ""
+              }
+            }
+          }
         },
         {
           "id": "s13v0vyq",
@@ -6013,11 +6757,11 @@
           "date": "2026-10-09T06:30:33.000Z",
           "relevance": "medium",
           "image": "https://th-i.thgim.com/public/incoming/r9zb4c/article71562872.ece/alternates/LANDSCAPE_1200/Home-DepartmentGCSGJPK05.4.jpg.jpg",
-          "why": "Tighter US Green Card conditions could push more high-value technology work and research mandates to Indian global capability centres.",
+          "why": "The US suspension of PERM green-card applications could complicate some H-1B extensions for Indians, while Karnataka's IT minister expects more high-value tech work to shift to India.",
           "implications": [
-            "Global capability centres in Indian cities may expand and hire more engineers and researchers.",
-            "Demand for senior technology professionals in India could rise, possibly lifting salaries.",
-            "Fewer Indian workers may move to the US, though the effect remains uncertain."
+            "Mint reports analysts see little significant impact on Indian IT firms, though the suspension could complicate some H-1B extensions.",
+            "HCLTech expects limited workforce impact, citing limited recent use of PERM and increased recruitment of local talent.",
+            "Karnataka's Priyank Kharge anticipates faster GCC expansion, more global R&D mandates and higher demand for senior tech professionals in India."
           ],
           "reports": [
             {
@@ -6051,7 +6795,107 @@
               "image": "https://www.livemint.com/lm-img/img/2026/10/12/1600x900/logo/hclt_1791825129858_iNtL_1791825133755_SLqE_28d49cbf-b267-4ffc-b47a-43cee410a430_KMzC.png"
             }
           ],
-          "thread": "t116za04"
+          "thread": "t116za04",
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-13T21:12:51.292Z",
+            "tier": "deep",
+            "primary": "policy_tracker",
+            "complement": "winners_losers",
+            "features": [
+              "policy_stage"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "Touches Indian H-1B holders and one industry; firms expect limited impact."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Visa extensions and GCC shifts play out over months."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "Two outlets with on-record sources, but effects are projections."
+            },
+            "affected": [
+              {
+                "group": "Gulf & overseas workers and families",
+                "direction": "down",
+                "what": "H-1B extensions, green-card path",
+                "basis": "reported"
+              },
+              {
+                "group": "IT & services workers",
+                "direction": "up",
+                "what": "demand for senior tech roles",
+                "basis": "reported"
+              }
+            ],
+            "watch": [
+              {
+                "what": "US decision to lift or extend the PERM suspension",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "New GCC or global R&D mandates announced for Indian cities",
+                "when": "",
+                "where": "Karnataka IT-BT Department"
+              },
+              {
+                "what": "Reports of H-1B extension difficulties for Indian workers",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "frameworks": {
+              "policy_tracker": {
+                "instrument": {
+                  "name": "Suspension of PERM applications",
+                  "issuer": "United States government",
+                  "jurisdiction": "United States"
+                },
+                "stages": [
+                  {
+                    "stage": "in_force",
+                    "date": "",
+                    "status": "current"
+                  }
+                ],
+                "obligations": [
+                  {
+                    "who": "US employers sponsoring green cards",
+                    "what": "PERM applications suspended while the measure lasts",
+                    "from": ""
+                  }
+                ],
+                "applies_to_india": "partly"
+              },
+              "winners_losers": {
+                "groups": [
+                  {
+                    "group": "Gulf & overseas workers and families",
+                    "direction": "lose",
+                    "directness": "direct",
+                    "mechanism": "Analysts say suspension could complicate some H-1B extensions for Indians."
+                  },
+                  {
+                    "group": "IT & services workers",
+                    "direction": "gain",
+                    "directness": "indirect",
+                    "mechanism": "Kharge anticipates higher domestic demand for senior technology professionals."
+                  },
+                  {
+                    "group": "Karnataka",
+                    "direction": "gain",
+                    "directness": "indirect",
+                    "mechanism": "Kharge expects faster GCC expansion and more global R&D mandates to Indian cities."
+                  }
+                ],
+                "not_affected": "Indian IT firms' workforce plans: analysts and HCLTech expect limited impact."
+              }
+            }
+          }
         },
         {
           "id": "s103an9n",
@@ -7290,11 +8134,11 @@
           "date": "2026-10-12T17:54:26.000Z",
           "relevance": "medium",
           "image": "https://www.livemint.com/lm-img/img/2026/10/12/1600x900/logo/Untitled_design_-_2026-10-12T224652.946_1791825425518_qfwC_1791825434192_5kmR_13a12fe7-5ea6-4fbb-8603-5dfca9fc95b6_WpGZ.png",
-          "why": "India has offered quota-based tariff cuts on car imports under its trade deals with the UK and EU, and the government is presenting this as a route to making India a global car manufacturing hub.",
+          "why": "India has offered quota-based tariff concessions on UK and EU car imports under its FTAs, as Piyush Goyal says European carmakers will follow into India.",
           "implications": [
-            "Car buyers may see somewhat lower prices on a limited number of imported European and British models covered by the quotas.",
-            "Domestic carmakers and component suppliers could face more competition in premium segments, though quotas likely limit the impact.",
-            "If European firms expand local production as the minister expects, auto-sector jobs and supplier orders could gradually increase."
+            "Car imports from the UK and EU will get tariff concessions within set quotas.",
+            "Goyal says India will become a global car manufacturing hub.",
+            "European firms setting up locally could affect domestic auto manufacturing jobs."
           ],
           "reports": [
             {
@@ -7308,7 +8152,86 @@
               "image": "https://www.livemint.com/lm-img/img/2026/10/12/1600x900/logo/Untitled_design_-_2026-10-12T224652.946_1791825425518_qfwC_1791825434192_5kmR_13a12fe7-5ea6-4fbb-8603-5dfca9fc95b6_WpGZ.png"
             }
           ],
-          "thread": "tjh4avw"
+          "thread": "tjh4avw",
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-13T21:12:51.292Z",
+            "tier": "quick",
+            "primary": "trade_flow",
+            "complement": null,
+            "features": [
+              "trade_flow"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "Affects one industry under two trade agreements."
+            },
+            "horizon": {
+              "value": "years",
+              "reason": "Manufacturing hub ambitions play out over the long term."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "Single outlet; minister on record; hub claim is aspirational."
+            },
+            "affected": [
+              {
+                "group": "Importers & traders",
+                "direction": "down",
+                "what": "car import tariffs within quotas",
+                "basis": "reported"
+              },
+              {
+                "group": "Manufacturing workers",
+                "direction": "unclear",
+                "what": "auto sector investment",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "European carmakers announcing Indian manufacturing plans",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "Notification of car import quotas under UK and EU FTAs",
+                "when": "",
+                "where": "Ministry of Commerce and Industry"
+              }
+            ],
+            "frameworks": {
+              "trade_flow": {
+                "good": "Cars",
+                "actors": [
+                  {
+                    "country": "United Kingdom",
+                    "role": "exporter",
+                    "is_india": false
+                  },
+                  {
+                    "country": "European Union",
+                    "role": "exporter",
+                    "is_india": false
+                  },
+                  {
+                    "country": "India",
+                    "role": "importer",
+                    "is_india": true
+                  }
+                ],
+                "change": {
+                  "type": "tariff",
+                  "effective": ""
+                },
+                "india_position": {
+                  "role": "rival_exporter",
+                  "note": "Importer under quota concessions; minister says India aims to be a global car manufacturing hub."
+                },
+                "volumes": []
+              }
+            }
+          }
         },
         {
           "id": "s1rgius0",
@@ -7318,11 +8241,11 @@
           "date": "2026-10-12T16:57:34.000Z",
           "relevance": "medium",
           "image": "https://www.livemint.com/lm-img/img/2026/10/12/1600x900/logo/Sitharaman_1791823845888_Abym_1791823846509_CPIo_63ab1ac2-5319-4ce3-af5f-2921ebc7fbcb_Q3xr.jpg",
-          "why": "The Finance Minister argued that carbon tariffs like the EU's CBAM will not fix global steel overproduction, a stance that bears on Indian steel exporters and domestic producers.",
+          "why": "The Finance Minister publicly criticised the EU's CBAM carbon tariff and invited Worldsteel to set up in India, signalling India's position on global steel trade.",
           "implications": [
-            "Indian steel exporters to Europe may continue to face carbon-related costs under CBAM, which could squeeze their margins.",
-            "Excess global steel redirected away from Europe could reach India, which may pressure domestic steelmakers and their workers.",
-            "Rising domestic steel demand and a possible World Steel Association office in India could give the industry more voice in global policy."
+            "India's Finance Minister argues carbon tariffs like CBAM redirect excess steel capacity instead of fixing overproduction.",
+            "Inviting Worldsteel to open an India office reflects rising domestic steel demand.",
+            "India's stance could shape how its steel industry engages with EU carbon rules."
           ],
           "reports": [
             {
@@ -7336,7 +8259,64 @@
               "image": "https://www.livemint.com/lm-img/img/2026/10/12/1600x900/logo/Sitharaman_1791823845888_Abym_1791823846509_CPIo_63ab1ac2-5319-4ce3-af5f-2921ebc7fbcb_Q3xr.jpg"
             }
           ],
-          "thread": "ttfk7c0"
+          "thread": "ttfk7c0",
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-13T21:13:57.243Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "medium",
+              "reason": "Concerns one industry, steel, and India's response to an EU trade measure."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Statement of position; no immediate measure reported."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "Single outlet, but on-record remarks by the Finance Minister."
+            },
+            "affected": [
+              {
+                "group": "Large exporters",
+                "direction": "unclear",
+                "what": "EU carbon tariff exposure",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "World Steel Association decision on opening an India office",
+                "when": "",
+                "where": "World Steel Association"
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "FM invites Worldsteel to India",
+                    "detail": "Sitharaman urged the World Steel Association to set up a local base.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "FM criticises EU CBAM",
+                    "detail": "Says unilateral tools only redirect excess global capacity, not fix overproduction.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "India's steel trade stance",
+                    "detail": "India may press this view in steel trade discussions with the EU.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "Worldsteel declines the invitation and India takes no further position on CBAM."
+              }
+            }
+          }
         },
         {
           "id": "s1ur2hva",
@@ -8244,11 +9224,11 @@
           "source": "thehindu",
           "date": "2026-10-12T15:18:01.000Z",
           "relevance": "medium",
-          "why": "The Coffee Board's plan to build India-specific harvesting machines with IIT Dharwad and IIT Roorkee targets labour shortages and low farm productivity in a key plantation crop.",
+          "why": "The Coffee Board proposes AI-led mechanisation with IIT Dharwad and IIT Roorkee, which could ease labour shortages and raise productivity on Indian coffee farms.",
           "implications": [
-            "Coffee planters facing labour shortages could eventually get harvesting equipment designed for Indian estates rather than imported machines.",
-            "Better mechanisation may raise farm productivity, which could help growers keep production costs in check.",
-            "Plantation workers may see fewer manual harvesting roles over time as AI-led machinery is adopted."
+            "The Coffee Board and planters' bodies plan to develop India-specific harvesting equipment.",
+            "The stated aims are better farm productivity and managing labour shortages.",
+            "This is a proposal; the equipment does not yet exist."
           ],
           "reports": [
             {
@@ -8265,7 +9245,57 @@
             }
           ],
           "image": "https://www.thehindu.com/theme/images/og-image.png",
-          "thread": "tfr98b"
+          "thread": "tfr98b",
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-13T21:14:56.109Z",
+            "tier": "quick",
+            "primary": "winners_losers",
+            "complement": null,
+            "features": [
+              "allocation"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "Affects one industry, coffee growing."
+            },
+            "horizon": {
+              "value": "years",
+              "reason": "Equipment is still to be developed."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "Single outlet with an official Coffee Board source."
+            },
+            "affected": [
+              {
+                "group": "Farmers",
+                "direction": "up",
+                "what": "harvest productivity, labour dependence",
+                "basis": "reported"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Formal launch of the Coffee Board–IIT mechanisation project",
+                "when": "",
+                "where": "Coffee Board"
+              }
+            ],
+            "frameworks": {
+              "winners_losers": {
+                "groups": [
+                  {
+                    "group": "Farmers",
+                    "direction": "gain",
+                    "directness": "direct",
+                    "mechanism": "India-specific harvesting equipment aimed at productivity and labour shortage"
+                  }
+                ],
+                "not_affected": ""
+              }
+            }
+          }
         },
         {
           "id": "s1il9tkk",
@@ -8303,11 +9333,11 @@
           "source": "thehindu",
           "date": "2026-10-12T14:59:32.000Z",
           "relevance": "medium",
-          "why": "Farm scientists are calling for a crop holiday for paddy because El Nino could persist into early next year without any clear rainfall signal, which raises questions about rice output and how farmers plan the season.",
+          "why": "Farm scientists urge a crop holiday for paddy because of El Nino, which could cut rice planting if farmers follow the call.",
           "implications": [
-            "Paddy farmers may skip or cut rice sowing, which would reduce their seasonal income unless they shift to less water-intensive crops.",
-            "Lower paddy acreage could tighten rice supply and may push up rice prices for households if the advice spreads.",
-            "Farm workers who rely on paddy transplanting and harvesting could see fewer days of work."
+            "El Nino severity until early next year gives no indication of rainfall, according to the report.",
+            "If farmers skip paddy, rice output and farm incomes could change.",
+            "This is a recommendation from scientists, not a government decision."
           ],
           "reports": [
             {
@@ -8324,7 +9354,75 @@
             }
           ],
           "image": "https://www.thehindu.com/theme/images/og-image.png",
-          "thread": "t25dibr"
+          "thread": "t25dibr",
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-13T21:14:56.109Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "high",
+              "reason": "Rice is a food staple; paddy planting choices are at stake."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "El Nino effects run until early next year."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "Single outlet reporting scientists' recommendation; no official position."
+            },
+            "affected": [
+              {
+                "group": "Farmers",
+                "direction": "mixed",
+                "what": "paddy planting decisions",
+                "basis": "inferred"
+              },
+              {
+                "group": "Food shoppers",
+                "direction": "unclear",
+                "what": "rice supply",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Official El Nino and rainfall outlook updates",
+                "when": "",
+                "where": "India Meteorological Department"
+              },
+              {
+                "what": "Any government response to the crop holiday call",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Scientists call paddy crop holiday",
+                    "detail": "Farm scientists cite El Nino impact as the reason.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Rainfall outlook unclear",
+                    "detail": "El Nino severity until early next year gives no rainfall indication.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Paddy area could shrink",
+                    "detail": "If farmers follow the call, rice sowing may fall.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "Rainfall proves adequate or farmers do not adopt the crop holiday."
+              }
+            }
+          }
         },
         {
           "id": "s24c96",
@@ -8862,11 +9960,11 @@
           "date": "2026-10-13T15:36:27.000Z",
           "relevance": "medium",
           "image": "https://th-i.thgim.com/public/incoming/g8i4ah/article71579855.ece/alternates/LANDSCAPE_1200/20260721148L.jpg",
-          "why": "L. Murugan's resignation adds to several vacancies in the Council of Ministers, fuelling talk of a pre-Deepavali Cabinet reshuffle.",
+          "why": "L. Murugan's resignation adds to several vacancies in the Union Council of Ministers, prompting talk of a pre-Deepavali Cabinet reset that could change who runs key ministries.",
           "implications": [
-            "Murugan has resigned from the Ministry and his Rajya Sabha seat.",
-            "Dharmendra Pradhan was forced to quit, and four other ministers' Rajya Sabha terms ended this year.",
-            "A reshuffle could change who leads several ministries."
+            "Several Council of Ministers posts are now vacant after resignations and ended Rajya Sabha terms.",
+            "A Cabinet reset could change ministers in charge of departments that affect businesses and households.",
+            "Murugan says he will focus on strengthening the BJP in Tamil Nadu."
           ],
           "reports": [
             {
@@ -8878,61 +9976,180 @@
               "summary": "Four other Ministers ended their Rajya Sabha terms this year: George Kurian, Ravneet Singh Bittu, Hardeep Puri, and B.L. Verma; Dharmendra Pradhan was forced to quit, leaving a slew of vacancies in the Council of Ministers",
               "summaryV": 3,
               "image": "https://th-i.thgim.com/public/incoming/g8i4ah/article71579855.ece/alternates/LANDSCAPE_1200/20260721148L.jpg"
+            },
+            {
+              "source": "mint",
+              "headline": "L Murugan resigns as Union minister, Rajya Sabha MP to focus on ‘strengthening BJP in Tamil Nadu’",
+              "url": "https://www.livemint.com/news/india/l-murugan-resigns-as-union-minister-rajya-sabha-mp-to-focus-on-strengthening-bjp-in-tamil-nadu-11791896126981.html",
+              "date": "2026-10-13T13:03:26.000Z",
+              "kind": "hard",
+              "summary": "Union Minister of State L Murugan has resigned from the Union Council of Ministers and the Rajya Sabha, saying he wants to focus on strengthening the BJP in Tamil Nadu. In a post on X, he described serving under Prime Minister Narendra Modi as a great honour.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/10/13/1600x900/PTI08-07-2026-000034B-0_1791896363695_vVF7_1791896379566_rYsl_85d39995-17aa-48f8-9695-af8913c553e8_QejM.jpg"
             }
           ],
           "thread": "t1o40lka",
           "analysis": {
             "v": 2,
-            "at": "2026-10-13T20:25:16.042Z",
-            "tier": "quick",
+            "at": "2026-10-13T21:11:38.156Z",
+            "tier": "standard",
             "primary": "impact_chain",
             "complement": null,
-            "features": [
-              "pending_outcome"
-            ],
+            "features": [],
             "exposure": {
               "level": "low",
-              "reason": "No policy or cost mechanism is reported."
+              "reason": "Reports describe no direct mechanism affecting prices, incomes or services."
             },
             "horizon": {
               "value": "weeks",
-              "reason": "Reshuffle buzz points to before Deepavali."
+              "reason": "Reset buzz centres on the pre-Deepavali period."
             },
             "confidence": {
-              "level": "low",
-              "reason": "Single outlet; the reshuffle is speculation."
+              "level": "medium",
+              "reason": "Two outlets confirm the resignation; the reshuffle is only buzz."
             },
-            "affected": [],
+            "affected": [
+              {
+                "group": "Government finances",
+                "direction": "unclear",
+                "what": "",
+                "basis": "inferred"
+              }
+            ],
             "watch": [
               {
-                "what": "Cabinet reshuffle and swearing-in of new ministers",
-                "when": "before Deepavali",
+                "what": "Announcement of a Union Cabinet reshuffle or new minister swearing-in",
+                "when": "",
                 "where": "Rashtrapati Bhavan"
+              },
+              {
+                "what": "Allocation of portfolios held by departing ministers",
+                "when": "",
+                "where": "Cabinet Secretariat"
               }
             ],
             "frameworks": {
               "impact_chain": {
                 "chain": [
                   {
-                    "step": "Murugan resigns ministry, seat",
-                    "detail": "L. Murugan quits the Ministry and his Rajya Sabha seat.",
+                    "step": "Murugan resigns ministry, Rajya Sabha",
+                    "detail": "He quit to focus on strengthening the BJP in Tamil Nadu.",
                     "basis": "reported"
                   },
                   {
                     "step": "Council of Ministers vacancies grow",
-                    "detail": "Pradhan's exit and ended Rajya Sabha terms leave a slew of vacancies.",
+                    "detail": "Ended Rajya Sabha terms and Pradhan's exit leave several posts empty.",
                     "basis": "reported"
                   },
                   {
-                    "step": "Ministry leadership may change",
-                    "detail": "A reshuffle could reassign portfolios before Deepavali.",
+                    "step": "Pre-Deepavali Cabinet reset possible",
+                    "detail": "Vacancies may prompt a reshuffle, as reported buzz suggests.",
+                    "basis": "inferred"
+                  },
+                  {
+                    "step": "Ministry leadership could change",
+                    "detail": "New ministers could shift priorities in departments they take over.",
                     "basis": "inferred"
                   }
                 ],
-                "breaks_if": "No reshuffle happens and vacancies are handled through additional charge."
+                "breaks_if": ""
               }
             }
           }
+        },
+        {
+          "id": "s1bxz34h",
+          "headline": "ICICI Life defends credit cover as Irdai weighs steep commission cut",
+          "url": "https://www.livemint.com/companies/news/icici-life-defends-credit-cover-as-irdai-weighs-steep-commission-cut-11791897611703.html",
+          "source": "mint",
+          "date": "2026-10-13T14:56:16.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2026/10/13/1600x900/logo/pexels-photo-5849552_1782624877909_1782624887986_0cd5069c-4bfc-4ccf-9d02-e94cdf9dd442_1791902991707_M1Cs_1947f5b3-05bb-4267-9e4d-6d90ee897584_mnvw.jpeg",
+          "why": "Irdai is weighing a 2% cap on commissions lenders earn for selling loan-linked insurance, which could change how credit cover reaches borrowers.",
+          "implications": [
+            "ICICI Life defends loan-linked cover as a safety net for low-income borrowers while it awaits final rules.",
+            "A steep cut in lender commissions could change how actively banks offer credit cover with loans."
+          ],
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-13T21:10:33.786Z",
+            "tier": "quick",
+            "primary": "policy_tracker",
+            "complement": null,
+            "features": [
+              "policy_stage",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "Compliance change for insurers and lenders in one industry."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Final rules on the proposal are still awaited."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "Single outlet; mainly the insurer's management view on a proposal."
+            },
+            "affected": [
+              {
+                "group": "Borrowers",
+                "direction": "unclear",
+                "what": "how loan-linked cover is offered",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Irdai's final rules on lender commission caps",
+                "when": "",
+                "where": "IRDAI"
+              }
+            ],
+            "frameworks": {
+              "policy_tracker": {
+                "instrument": {
+                  "name": "Proposed 2% cap on lender commissions for credit-linked insurance",
+                  "issuer": "IRDAI",
+                  "jurisdiction": "India"
+                },
+                "stages": [
+                  {
+                    "stage": "draft",
+                    "date": "",
+                    "status": "current"
+                  },
+                  {
+                    "stage": "notified",
+                    "date": "",
+                    "status": "next"
+                  }
+                ],
+                "obligations": [
+                  {
+                    "who": "Insurers paying lenders",
+                    "what": "Commission paid to lenders capped at 2%, if finalised",
+                    "from": ""
+                  }
+                ],
+                "applies_to_india": "yes"
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "ICICI Life defends credit cover as Irdai weighs steep commission cut",
+              "url": "https://www.livemint.com/companies/news/icici-life-defends-credit-cover-as-irdai-weighs-steep-commission-cut-11791897611703.html",
+              "date": "2026-10-13T14:56:16.000Z",
+              "kind": "hard",
+              "summary": "Management highlighted loan-linked protection as a vital safety net for low-income borrowers as the insurer awaits final rules on Irdai’s proposal to cap lender commissions at 2%.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/10/13/1600x900/logo/pexels-photo-5849552_1782624877909_1782624887986_0cd5069c-4bfc-4ccf-9d02-e94cdf9dd442_1791902991707_M1Cs_1947f5b3-05bb-4267-9e4d-6d90ee897584_mnvw.jpeg"
+            }
+          ],
+          "thread": "t74rvp3"
         },
         {
           "id": "st3pvxh",
@@ -9585,6 +10802,11 @@
                 ]
               }
             }
+          },
+          "stats": {
+            "v": 1,
+            "at": "2026-10-13T21:16:16.190Z",
+            "series": []
           }
         },
         {
@@ -9719,11 +10941,10 @@
           "date": "2026-10-13T00:30:57.000Z",
           "relevance": "medium",
           "image": "https://www.livemint.com/lm-img/img/2026/10/12/1600x900/logo/2-0-468544524-financeministry-0_1680767058454_1791827706357_xF35_9f8b9345-a498-41ee-af82-71eff1479436_zGJ0.jpg",
-          "why": "The Centre has begun early FY28 budget planning, which will shape how it balances new welfare and development spending against its fiscal consolidation goals.",
+          "why": "The Centre has begun FY28 budget planning, seeking new scheme proposals while balancing spending priorities with fiscal consolidation.",
           "implications": [
-            "Ministries flagging new schemes early may shape which welfare, infrastructure or subsidy programmes get funded next year.",
-            "A focus on fiscal consolidation could limit room for large new spending, so some proposed schemes may be scaled back or delayed.",
-            "Contractors, states and beneficiaries of central schemes may get earlier signals about likely funding priorities."
+            "Ministries must flag new schemes early through the activated budget-code system.",
+            "Fiscal consolidation could limit room for new spending."
           ],
           "reports": [
             {
@@ -9737,7 +10958,57 @@
               "image": "https://www.livemint.com/lm-img/img/2026/10/12/1600x900/logo/2-0-468544524-financeministry-0_1680767058454_1791827706357_xF35_9f8b9345-a498-41ee-af82-71eff1479436_zGJ0.jpg"
             }
           ],
-          "thread": "t16cfdnx"
+          "thread": "t16cfdnx",
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-13T21:11:38.156Z",
+            "tier": "quick",
+            "primary": "decoder",
+            "complement": null,
+            "features": [
+              "scheduled"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "Shapes government spending plans; no household mechanism reported yet."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "FY28 budget preparation has only just begun."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "Single outlet, no named official source."
+            },
+            "affected": [
+              {
+                "group": "Government finances",
+                "direction": "mixed",
+                "what": "spending priorities versus consolidation",
+                "basis": "reported"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Ministries' new scheme proposals submitted for FY28",
+                "when": "",
+                "where": "Department of Expenditure"
+              }
+            ],
+            "frameworks": {
+              "decoder": {
+                "kind": "decision",
+                "headline": null,
+                "comparisons": [],
+                "drivers": [],
+                "decision": {
+                  "action": "other",
+                  "size": "",
+                  "stance": "Balance spending priorities with fiscal consolidation."
+                }
+              }
+            }
+          }
         },
         {
           "id": "s1g9x9t9",
@@ -9747,11 +11018,10 @@
           "date": "2026-10-12T20:32:53.000Z",
           "relevance": "medium",
           "image": "https://th-i.thgim.com/public/incoming/91vhj/article71574694.ece/alternates/LANDSCAPE_1200/JANTAR%20MANTAR%20SECURITY%204.JPG",
-          "why": "The government's move to de-notify Jantar Mantar, Delhi's best-known protest site, follows a Supreme Court suggestion to find a spacious, open alternative, which could reshape where citizens can demonstrate in the national capital.",
+          "why": "The government's move to de-notify Jantar Mantar could change where protests take place in the national capital, following a Supreme Court suggestion.",
           "implications": [
-            "Groups planning protests in Delhi may need to move to a new designated site once one is identified.",
-            "Until an alternative site is confirmed, protesters could face uncertainty over where demonstrations will be permitted.",
-            "Residents and commuters near Jantar Mantar may see fewer gatherings and related traffic restrictions in the area."
+            "The Supreme Court urged the government to find a spacious, open alternative protest site in Delhi.",
+            "Protest groups may need to move to a new site once Jantar Mantar is de-notified."
           ],
           "reports": [
             {
@@ -9765,7 +11035,66 @@
               "image": "https://th-i.thgim.com/public/incoming/91vhj/article71574694.ece/alternates/LANDSCAPE_1200/JANTAR%20MANTAR%20SECURITY%204.JPG"
             }
           ],
-          "thread": "t7lr4am"
+          "thread": "t7lr4am",
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-13T21:11:38.156Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "Affects protest access in Delhi; no economic mechanism is reported."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "An alternative site must first be identified."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "Single outlet, citing a recorded Supreme Court order."
+            },
+            "affected": [
+              {
+                "group": "A named state or region",
+                "direction": "unclear",
+                "what": "Delhi protest site location",
+                "basis": "reported"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Government names an alternative protest site in Delhi",
+                "when": "",
+                "where": "Supreme Court of India"
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "SC urges alternative site",
+                    "detail": "October 9 order asks the government to find a spacious, open protest site.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Government moves to de-notify",
+                    "detail": "Jantar Mantar is to be de-notified as a protest venue.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Protests may relocate",
+                    "detail": "Demonstrations could shift to a new open site in Delhi.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "No suitable alternative site is found or the de-notification is halted."
+              }
+            }
+          }
         },
         {
           "id": "s1gnjru7",
@@ -9774,11 +11103,11 @@
           "source": "thehindu",
           "date": "2026-10-12T18:36:44.000Z",
           "relevance": "medium",
-          "why": "At the 57th GST Council meeting, Keralam argued against fully scrapping tax officers' arrest powers, citing the need to deter large-scale organised tax evasion. The Council's choice will shape GST enforcement for businesses nationwide.",
+          "why": "Keralam told the 57th GST Council meet that tax officers' arrest powers should not be fully scrapped, which bears on how GST evasion is policed nationwide.",
           "implications": [
-            "If arrest powers are fully removed, businesses may face less fear of coercive action, but states worry evasion could rise.",
-            "Retaining some arrest powers for large, organised fraud could keep a strong deterrent while easing pressure on ordinary taxpayers.",
-            "The outcome may affect state GST revenues, which fund public services, depending on how well evasion is controlled."
+            "The Council appears to be weighing whether to curb officers' arrest powers under GST.",
+            "Keralam argues strong deterrence is needed against large-scale, organised tax evasion.",
+            "Any change could alter enforcement risk and compliance pressure for GST-registered businesses."
           ],
           "reports": [
             {
@@ -9795,7 +11124,65 @@
             }
           ],
           "image": "https://www.thehindu.com/theme/images/og-image.png",
-          "thread": "t1rn5wwj"
+          "thread": "t1rn5wwj",
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-13T21:12:51.292Z",
+            "tier": "quick",
+            "primary": "decoder",
+            "complement": null,
+            "features": [
+              "scheduled",
+              "policy_stage",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "Affects the GST compliance and enforcement regime for businesses."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "No Council decision on arrest powers reported yet."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "Single outlet; Chief Minister's stated position on record."
+            },
+            "affected": [
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "GST enforcement exposure",
+                "basis": "inferred"
+              },
+              {
+                "group": "Government finances",
+                "direction": "unclear",
+                "what": "tax evasion deterrence",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "GST Council decision on tax officers' arrest powers",
+                "when": "",
+                "where": "GST Council"
+              }
+            ],
+            "frameworks": {
+              "decoder": {
+                "kind": "decision",
+                "headline": null,
+                "comparisons": [],
+                "drivers": [],
+                "decision": {
+                  "action": "other",
+                  "size": "",
+                  "stance": "Strong deterrence needed for large-scale, organised tax evasion"
+                }
+              }
+            }
+          }
         },
         {
           "id": "siyfc49",
@@ -9863,11 +11250,11 @@
           "date": "2026-10-12T16:11:44.000Z",
           "relevance": "medium",
           "image": "https://th-i.thgim.com/public/incoming/3tlmud/article71576479.ece/alternates/LANDSCAPE_1200/iStock-1220522816.jpg",
-          "why": "The government has proposed a 30% trade-margin cap on cancer medicines. The Supreme Court is pressing for such caps on all medicines and medical products, which could reshape how drug prices reach patients nationwide.",
+          "why": "The Supreme Court is pressing the government to widen a proposed 30% trade-margin cap on cancer medicines to all essential medicines and medical products.",
           "implications": [
-            "Cancer patients may pay less for both patented and non-patented medicines if the proposed 30% margin cap is implemented.",
-            "Households could see lower costs on other medicines and medical products if the government extends margin caps as the court suggests.",
-            "Pharmacies, distributors and stockists may face tighter margins and stricter checks that price-regulated medicines actually reach patients."
+            "The government proposes a 30% trade-margin cap on patented and non-patented cancer medicines.",
+            "The Supreme Court asked why the cap cannot cover all medicines and medical products.",
+            "The court says the government must ensure price-regulated DPCO medicines reach patients."
           ],
           "reports": [
             {
@@ -9881,7 +11268,84 @@
               "image": "https://th-i.thgim.com/public/incoming/3tlmud/article71576479.ece/alternates/LANDSCAPE_1200/iStock-1220522816.jpg"
             }
           ],
-          "thread": "t1jobkuw"
+          "thread": "t1jobkuw",
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-13T21:13:57.243Z",
+            "tier": "quick",
+            "primary": "policy_tracker",
+            "complement": null,
+            "features": [
+              "policy_stage",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "Concerns the medicine trade channel; the measure is still a proposal."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Proposal under court scrutiny; not yet adopted."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "Single outlet reporting official court proceedings."
+            },
+            "affected": [
+              {
+                "group": "Importers & traders",
+                "direction": "down",
+                "what": "trade margins on medicines",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Government response on extending the margin cap to all medicines",
+                "when": "",
+                "where": "Supreme Court of India"
+              },
+              {
+                "what": "Adoption of the 30% cap on cancer medicines",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "frameworks": {
+              "policy_tracker": {
+                "instrument": {
+                  "name": "Trade-margin cap on cancer medicines",
+                  "issuer": "Government of India",
+                  "jurisdiction": "India"
+                },
+                "stages": [
+                  {
+                    "stage": "draft",
+                    "date": "2026-10-12",
+                    "status": "current"
+                  },
+                  {
+                    "stage": "adopted",
+                    "date": "",
+                    "status": "next"
+                  }
+                ],
+                "obligations": [
+                  {
+                    "who": "Sellers of cancer medicines",
+                    "what": "Trade margin would be capped at 30% if adopted",
+                    "from": ""
+                  },
+                  {
+                    "who": "Government of India",
+                    "what": "Ensure DPCO-approved medicines reach patients, per the Supreme Court",
+                    "from": ""
+                  }
+                ],
+                "applies_to_india": "yes"
+              }
+            }
+          }
         },
         {
           "id": "sx01fva",
@@ -9891,11 +11355,10 @@
           "date": "2026-10-12T15:22:40.000Z",
           "relevance": "medium",
           "image": "https://th-i.thgim.com/public/incoming/pbi1ap/article71574914.ece/alternates/LANDSCAPE_1200/WhatsApp%20Image%202026-10-12%20at%2017.10.33.jpeg",
-          "why": "Rahul Gandhi and other Opposition leaders have asked the Supreme Court for an independent panel to probe the Election Commission's SIR process, which raises questions about how electoral decisions are made and checked.",
+          "why": "Opposition leaders have asked the Supreme Court to order an independent probe of the Election Commission's SIR process, which could affect how electoral rolls are revised.",
           "implications": [
-            "If the Supreme Court acts, the Election Commission may have to produce records and official notings on the SIR process.",
-            "The court's response could shape how much public scrutiny and transparency apply to Election Commission procedures.",
-            "Voters may see continued legal and political uncertainty around the SIR process while the petition is pending."
+            "The petition asks the Supreme Court to call for SIR records and official notings from the Election Commission of India.",
+            "If the court admits the plea, the SIR process could face judicial scrutiny."
           ],
           "reports": [
             {
@@ -9909,7 +11372,59 @@
               "image": "https://th-i.thgim.com/public/incoming/pbi1ap/article71574914.ece/alternates/LANDSCAPE_1200/WhatsApp%20Image%202026-10-12%20at%2017.10.33.jpeg"
             }
           ],
-          "thread": "t1iy3j15"
+          "thread": "t1iy3j15",
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-13T21:14:56.109Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "Reports show no mechanism affecting household costs or businesses."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Court proceedings on such petitions may take time."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "Single outlet; the claims are made by a party in a petition."
+            },
+            "affected": [],
+            "watch": [
+              {
+                "what": "Whether the Supreme Court admits the plea and seeks Election Commission records",
+                "when": "",
+                "where": "Supreme Court of India"
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Opposition petitions Supreme Court",
+                    "detail": "Seeks an independent panel to probe the SIR and its decision-making.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Records sought from ECI",
+                    "detail": "Petition asks the court to call for SIR records and official notings.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "SIR process may face scrutiny",
+                    "detail": "Court action could delay or alter the electoral roll revision.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The Supreme Court declines to entertain the petition."
+              }
+            }
+          }
         },
         {
           "id": "s2ub1e2",
@@ -9919,11 +11434,11 @@
           "date": "2026-10-12T15:04:45.000Z",
           "relevance": "medium",
           "image": "https://th-i.thgim.com/public/incoming/zic4hx/article71576091.ece/alternates/LANDSCAPE_1200/IMG_BG_HIGH_COURT_2020_1_1_JEGKFSDP.jpg",
-          "why": "The Karnataka High Court has struck down a law that raised SC/ST reservation and held that the 50% ceiling on total reservation is a binding constitutional principle, which strengthens a limit other states also face.",
+          "why": "The Karnataka High Court struck down the state's law raising SC/ST reservation, holding that the 50% ceiling on total reservation is binding.",
           "implications": [
-            "Admissions and government recruitment in Karnataka that relied on the higher quota may need to be revised or could be put on hold.",
-            "Other states with reservation laws above 50% could face fresh legal challenges based on this reasoning.",
-            "The state may appeal, which would prolong uncertainty for job and seat applicants."
+            "Karnataka's increased SC/ST quota law is declared unconstitutional.",
+            "The court ruled that reservation cannot be proportionate to caste population.",
+            "Reservation in Karnataka may revert to within the 50% ceiling."
           ],
           "reports": [
             {
@@ -9947,7 +11462,78 @@
               "image": "https://th-i.thgim.com/public/incoming/sea6y7/article71576165.ece/alternates/LANDSCAPE_1200/High-Court-ordeG0DGJG63F.1.jpg.jpg"
             }
           ],
-          "thread": "t182geb6"
+          "thread": "t182geb6",
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-13T21:14:56.109Z",
+            "tier": "quick",
+            "primary": "policy_tracker",
+            "complement": null,
+            "features": [
+              "policy_stage"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "One state's reservation policy is affected."
+            },
+            "horizon": {
+              "value": "now",
+              "reason": "The ruling was reported on 2026-10-12."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "One outlet reporting a court ruling."
+            },
+            "affected": [
+              {
+                "group": "A named state or region",
+                "direction": "mixed",
+                "what": "Karnataka reservation quotas",
+                "basis": "reported"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Any Karnataka government appeal against the ruling",
+                "when": "",
+                "where": "Supreme Court of India"
+              }
+            ],
+            "frameworks": {
+              "policy_tracker": {
+                "instrument": {
+                  "name": "Karnataka law increasing reservation for SCs/STs",
+                  "issuer": "Government of Karnataka",
+                  "jurisdiction": "Karnataka"
+                },
+                "stages": [
+                  {
+                    "stage": "adopted",
+                    "date": "",
+                    "status": "done"
+                  },
+                  {
+                    "stage": "under_review",
+                    "date": "",
+                    "status": "done"
+                  },
+                  {
+                    "stage": "amended_or_repealed",
+                    "date": "2026-10-12",
+                    "status": "current"
+                  }
+                ],
+                "obligations": [
+                  {
+                    "who": "Government of Karnataka",
+                    "what": "Keep total reservation within the 50% ceiling",
+                    "from": ""
+                  }
+                ],
+                "applies_to_india": "partly"
+              }
+            }
+          }
         },
         {
           "id": "stp5ukg",
@@ -9957,10 +11543,10 @@
           "date": "2026-10-12T15:08:45.000Z",
           "relevance": "medium",
           "image": "https://th-i.thgim.com/public/incoming/xn72dm/article71576124.ece/alternates/LANDSCAPE_1200/PTI10_12_2026_000377B.jpg",
-          "why": "Punjab's final electoral rolls after the Special Intensive Revision dropped 13.60 lakh names, even as the electorate grew 3.64% from the draft roll to the final roll, which shows the scale of changes voter-roll revisions can bring.",
+          "why": "Punjab's final electoral roll after the SIR drops 13.60 lakh names, which may affect who can vote in the state.",
           "implications": [
-            "Voters in Punjab should check that their names appear on the final rolls and seek correction if they were wrongly removed.",
-            "The large number of deletions may draw scrutiny of how similar revisions are run in other states."
+            "Punjab's final roll lists 2,01,00,727 electors, a net increase of 3.64% over the draft roll.",
+            "Voters whose names were dropped may need to check their status before the next election."
           ],
           "reports": [
             {
@@ -9974,7 +11560,64 @@
               "image": "https://th-i.thgim.com/public/incoming/xn72dm/article71576124.ece/alternates/LANDSCAPE_1200/PTI10_12_2026_000377B.jpg"
             }
           ],
-          "thread": "t1iy3j15"
+          "thread": "t1iy3j15",
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-13T21:14:56.109Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "low",
+              "reason": "Concerns voter rolls in one state; no economic mechanism is reported."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Matters at the next polls; no date reported."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "Single outlet citing the state Chief Electoral Officer."
+            },
+            "affected": [
+              {
+                "group": "A named state or region",
+                "direction": "mixed",
+                "what": "Punjab voter roll changes",
+                "basis": "reported"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Further updates or corrections to Punjab's final electoral roll",
+                "when": "",
+                "where": "Chief Electoral Officer, Punjab"
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "SIR final roll published",
+                    "detail": "CEO reports Punjab electorate rose from 1,93,94,435 to 2,01,00,727.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "13.60 lakh names dropped",
+                    "detail": "Names removed from the final electoral rolls after the SIR.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Some voters may lose access",
+                    "detail": "Dropped voters could be unable to vote unless re-enrolled.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "Wrongly dropped names are restored before polling."
+              }
+            }
+          }
         },
         {
           "id": "s11pm78i",
@@ -11257,10 +12900,11 @@
   ],
   "source": "BBC News & The Guardian & NPR & Al Jazeera & MercoPress & ABC News & The New York Times & CNBC & CBS News & DW & France 24 & Africanews & South China Morning Post & The Hindu & Mint",
   "lastRun": {
-    "analysed": 44,
-    "added": 1,
-    "merged": 0,
-    "failedBatches": 1,
+    "analysed": 25,
+    "added": 3,
+    "merged": 2,
+    "rejected": 20,
+    "failedBatches": 0,
     "feeds": {
       "thehindu": {
         "feedsOk": 6,
@@ -11279,13 +12923,13 @@
       "summaries": 0
     },
     "threads": {
-      "assigned": 1,
+      "assigned": 3,
       "created": 0,
       "failedBatches": 0
     },
     "summaries": {
-      "written": 1,
-      "due": 1
+      "written": 3,
+      "due": 3
     },
     "kinds": {
       "labelled": 0,
@@ -11293,28 +12937,42 @@
       "failedBatches": 0
     },
     "frames": {
-      "done": 24,
-      "waiting": 176,
+      "done": 20,
+      "waiting": 157,
       "failedBatches": 0
+    },
+    "stats": {
+      "searched": 6,
+      "found": 0,
+      "none": 6,
+      "failed": 0,
+      "droppedPoints": 0
     },
     "models": {
       "filter": {
         "model": "claude-haiku-5-5",
-        "calls": 7,
-        "inputTokens": 26663,
-        "outputTokens": 14036
+        "calls": 6,
+        "inputTokens": 16988,
+        "outputTokens": 10786
       },
       "analysis": {
         "model": "claude-opus-5-5",
         "calls": 9,
-        "inputTokens": 24313,
-        "outputTokens": 37741
+        "inputTokens": 21459,
+        "outputTokens": 29944
+      },
+      "stats": {
+        "model": "claude-sonnet-5-5",
+        "calls": 6,
+        "inputTokens": 285267,
+        "outputTokens": 6927,
+        "searches": 19
       },
       "threads": {
         "model": "claude-sonnet-5-5",
-        "calls": 2,
-        "inputTokens": 10936,
-        "outputTokens": 354
+        "calls": 4,
+        "inputTokens": 11087,
+        "outputTokens": 730
       }
     }
   },
