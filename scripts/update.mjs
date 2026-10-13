@@ -469,41 +469,260 @@ async function classifyOlder(data) {
   return { labelled, waiting: Math.max(0, pending.length - labelled), failedBatches: failed };
 }
 
-// Step 2 (Opus): write the analysis for kept stories that are new to the desk.
+// ---------- Layer 2: the analysis framework library ----------
+// 1) A fast model answers yes/no feature questions about each story.
+// 2) Plain code picks the primary framework from a fixed priority order and sets the depth tier.
+// 3) Opus fills the chosen framework(s) plus the universal block, using only the reports.
+// 4) Validators drop any figure that is not in the reports and any sentence that reads like advice.
+const ANALYSIS_V = 2;
+const ANALYSIS_CHUNK = 3;      // stories per Opus request (each analysis is long)
+const FEATURE_BATCH = 12;      // stories per feature-question request
+const REFRAME_LIMIT = 24;      // existing stories (re)analysed per desk per run, newest first
+
+const FRAMEWORKS = {
+  impact_chain:   "Impact chain",
+  disruption_map: "Disruption map",
+  trade_flow:     "Trade flow shift",
+  policy_tracker: "Policy & compliance tracker",
+  decoder:        "Release & decision decoder",
+  pass_through:   "Price pass-through ladder",
+  winners_losers: "Winners & losers",
+  conflicting:    "Conflicting accounts",
+  timeline:       "Timeline & attribution",
+  escalation:     "Conflict escalation ladder",
+  scenarios:      "Scenarios & signposts"
+};
+// Fixed priority: the first feature that is true picks the primary framework.
+const PRIORITY = [
+  ["conflict", "conflicting"], ["scheduled", "decoder"], ["disruption", "disruption_map"], ["armed_conflict", "escalation"],
+  ["trade_flow", "trade_flow"], ["policy_stage", "policy_tracker"], ["price_move", "pass_through"],
+  ["allocation", "winners_losers"], ["fast_moving", "timeline"]
+];
+const FEATURE_KEYS = ["conflict", "scheduled", "disruption", "armed_conflict", "trade_flow", "policy_stage", "price_move", "allocation", "fast_moving", "pending_outcome"];
+function pickPrimary(f) { for (const [k, fw] of PRIORITY) if (f && f[k]) return fw; return "impact_chain"; }
+// Deep-dive pairing, evaluated in order. Never pairs a framework with itself.
+function pickComplement(primary, f) {
+  const order = {
+    impact_chain:   [f.pending_outcome && "scenarios", "winners_losers"],
+    disruption_map: [f.armed_conflict && "escalation", f.price_move && "pass_through", f.pending_outcome && "scenarios", "winners_losers"],
+    trade_flow:     [f.price_move && "pass_through", f.pending_outcome && "scenarios", "winners_losers"],
+    policy_tracker: [f.pending_outcome && "scenarios", "winners_losers"],
+    decoder:        ["pass_through", "winners_losers"],
+    pass_through:   ["winners_losers"],
+    winners_losers: [f.pending_outcome && "scenarios", "impact_chain"],
+    conflicting:    ["impact_chain"],
+    timeline:       [f.armed_conflict && "escalation", "scenarios"],
+    escalation:     ["scenarios"]
+  }[primary] || ["winners_losers"];
+  return order.find(x => x && x !== primary) || null;
+}
+// Depth tier from the story's own reports.
+function tierOf(ev) {
+  const reps = ev.reports || [];
+  const outlets = new Set(reps.map(r => r.source)).size;
+  const ts = reps.map(r => Date.parse(r.date)).filter(t => !isNaN(t));
+  const spanDays = ts.length ? (Math.max(...ts) - Math.min(...ts)) / 864e5 : 0;
+  if (outlets < 2) return "quick";
+  if (spanDays >= 3 || reps.length >= 5 || (ev.relevance === "high" && outlets >= 3)) return "deep";
+  return "standard";
+}
+const TIER_RANK = { quick: 0, standard: 1, deep: 2 };
+
+function featurePrompt(items) {
+  return `For each news story below (one or more reports on the same event), answer yes/no questions about what the story IS. Judge the main subject of the reports, not possible consequences.
+
+Questions (true or false):
+- "conflict": two or more reports give incompatible values or claims on the SAME headline fact (e.g. different casualty numbers, who did it, whether it happened). A later update from the same source is not a conflict.
+- "scheduled": the story is a scheduled official data release or decision (GDP, CPI, WPI, IIP, trade data, jobs data, RBI/Fed/ECB rate decisions, OPEC+ meetings, budgets, GST Council).
+- "disruption": a NAMED facility or route (port, airport, strait, canal, pipeline, refinery, power plant, factory, rail or road link) is reported closed, damaged, attacked, blocked or disrupted.
+- "armed_conflict": military action, an attack by an armed group, strikes, troop movements, or ceasefire/war talks.
+- "trade_flow": a NAMED good and a NAMED partner with a change in buying or selling, or a tariff, sanction, ban, quota or trade deal that changes such a flow.
+- "policy_stage": a NAMED law, regulation, rule or scheme reported at a stage (proposed, draft, passed, notified, takes effect, delayed, struck down) with a further stage still pending.
+- "price_move": the headline is a change in a price, exchange rate or interest rate, or an immediate one-off tax or duty change.
+- "allocation": an action by a named company or industry (merger, investment, plant opening or closure, layoffs, large contract) or an allocation decision (budget, MSP, subsidy, quota).
+- "fast_moving": three or more developments in sequence across the reports, or responsibility for an act is disputed.
+- "pending_outcome": the reports name an unresolved next outcome (talks, vote, ruling, deadline, retaliation, reopening).
+
+Stories:
+${JSON.stringify(items)}
+
+Return ONLY a JSON array: [{"id":0,"conflict":false,"scheduled":false,"disruption":true,"armed_conflict":true,"trade_flow":false,"policy_stage":false,"price_move":false,"allocation":false,"fast_moving":false,"pending_outcome":true}]`;
+}
+
+const GROUPS = ["Fuel & LPG users", "Food shoppers", "Borrowers", "Depositors & savers", "Salaried workers", "Farmers", "Fishers", "MSME exporters", "Large exporters", "Importers & traders", "Students abroad", "Gulf & overseas workers and families", "Travellers & pilgrims", "IT & services workers", "Manufacturing workers", "Power consumers", "Government finances", "A named state or region"];
+const FW_SPEC = {
+  impact_chain: `"impact_chain": {"chain":[{"step":"≤6 words","detail":"≤15 words","basis":"reported|inferred"}], "breaks_if":"the condition that would stop the effect, ≤15 words"}. 3 steps at Quick read, up to 4 otherwise. The first step must be reported. At most 1 inferred step at Quick read, 2 otherwise.`,
+  disruption_map: `"disruption_map": {"node":{"name":"...","type":"port|airport|strait|canal|pipeline|refinery|power plant|factory|rail|road|other","status":"closed|partial|open|unknown","as_of":"date/time as reported"},"cause":{"text":"≤15 words","status":"confirmed|claimed|alleged"},"flows":[{"flow":"crude|LNG|containers|air passengers|workers|pilgrims|cargo|other","india_link":"≤15 words","basis":"reported|inferred"}],"alternatives":["as reported"],"duration":"as reported, or 'not reported'"}. Only flows named in the reports.`,
+  trade_flow: `"trade_flow": {"good":"...","actors":[{"country":"...","role":"exporter|importer|third_party","is_india":false}],"change":{"type":"start|stop|increase|cut|tariff|sanction|ban|deal|other","effective":"date if reported"},"india_position":{"role":"competing_buyer|supplier|rival_exporter|transit|not_involved","note":"≤20 words, cautious"},"volumes":[{"value":0,"unit":"...","period":"...","from":"<outlet>"}]}. Volumes only if stated in the reports.`,
+  policy_tracker: `"policy_tracker": {"instrument":{"name":"...","issuer":"...","jurisdiction":"..."},"stages":[{"stage":"announced|draft|adopted|notified|transition|in_force|under_review|amended_or_repealed","date":"if reported","status":"done|current|next"}],"obligations":[{"who":"...","what":"≤15 words","from":"date if reported"}],"applies_to_india":"yes|no|partly"}. Assign stages only from the reports' wording; a proposal is never "in_force".`,
+  decoder: `"decoder": {"kind":"release|decision","headline":{"label":"...","value":0,"unit":"...","period":"...","previous":null,"previousLabel":"...","from":"<outlet>"},"comparisons":[{"label":"e.g. RBI target, year ago","value":0,"unit":"...","from":"<outlet>"}],"drivers":[{"name":"≤6 words","direction":"up|down|mixed"}],"decision":{"action":"hike|cut|hold|other","size":"as reported","stance":"≤15 words as stated"}}. Drivers only as stated by the issuer or quoted in reports. No consensus figure unless a report attributes one.`,
+  pass_through: `"pass_through": {"driver":{"variable":"...","direction":"up|down","size":"as reported or empty"},"product":"petrol & diesel|LPG|edible oils|fertiliser|food staples|electronics|loan EMIs|deposit rates|other","rungs":[{"stage":"≤6 words, e.g. Global crude price → Refiners' cost → Pump price","pass":"likely|partial|blocked|unclear","damper":"what slows or blocks it, ≤12 words (taxes, administered prices, subsidies, contracts, inventory)","lag":"days|weeks|months"}],"end_user":{"group":"one of the affected groups","effect":"≤20 words, cautious"}}. 3 to 5 rungs from the global price to what Indians pay. Never give a percentage.`,
+  winners_losers: `"winners_losers": {"groups":[{"group":"one of the affected groups","direction":"gain|lose|mixed|unclear","directness":"direct|indirect","mechanism":"≤15 words"}],"not_affected":"a group readers might assume is affected but is not, ≤15 words, or empty"}. Max 6 groups; each needs a mechanism from the reports. Never name companies as winners in a market sense.`,
+  conflicting: `"conflicting": {"disputed":{"item":"what is disputed","unit":"..."},"accounts":[{"outlet":"...","value":"as reported","origin":"who the figure or claim comes from","time":"as reported"}],"agreed":["facts all reports agree on"],"explanations":[{"type":"different time|different source|different definition|unexplained","note":"≤15 words"}],"status":"unresolved|converging|resolved"}. Never average or pick a side; use neutral verbs.`,
+  timeline: `"timeline": {"entries":[{"when":"as reported","what":"≤15 words","actor":"...","outlet":"...","type":"action|claim|denial|confirmation","verification":"confirmed|claimed|contested"}],"current_status":"≤20 words","open_questions":["≤15 words"]}. Oldest first, up to 6 entries. Keep both sides of any contested claim.`,
+  escalation: `"escalation": {"current_rung":1,"evidence":"the reported action that places it there, ≤20 words","previous_rung":null,"next_signals":[{"rung":5,"signal":"observable event that would show a move to that rung, ≤15 words"}],"india_channels":["oil|shipping|remittances|diaspora safety|flights|trade"]}. Rungs: 1 Rhetoric and threats; 2 Sanctions and diplomatic measures; 3 Mobilisation and posturing; 4 Limited strikes or attacks; 5 Sustained strikes; 6 Strikes on critical infrastructure or third countries; 7 Full-scale war. The rung must match actions actually reported; never predict.`,
+  scenarios: `"scenarios": {"question":"the unresolved thing, ≤15 words","scenarios":[{"name":"≤4 words","what":"≤20 words","signal":"observable signal, ≤15 words","india_effect":"≤15 words, cautious"}]}. 2 or 3 scenarios, each tied to an outcome named in the reports or an official position. No probabilities, no ranking.`
+};
+
 function analysisPrompt(batch, mode) {
   const sectors = SECTORS.map(s => `- ${s.id}: ${s.name}`).join("\n");
-  const items = batch.map(({ i, s, kind }) => ({ id: i, kind, outlet: OUTLETS[s.src], headline: s.headline, summary: s.summary, ...(s.lede ? { opening: s.lede } : {}) }));
-  const shape = `[{"id":0,"relevant":true,"sector":"energy","relevance":"high","why":"...","implications":["...","..."]}]`;
-  const lens = mode === "domestic"
-    ? { role: `explains what developments INSIDE ${REGION} mean for people and businesses in ${REGION}`,
-        why: `"why" is one sentence on why this matters for ${REGION} as a whole.`,
-        impl: `Implications are concrete near-term effects on households, workers, farmers, businesses, prices, jobs, loans, taxes, supply or public services.`,
-        check: `of national significance for ${REGION}` }
-    : { role: `explains how world news affects ${REGION}`,
-        why: `"why" is one sentence on how this reaches ${REGION}.`,
-        impl: `Implications are near-term effects on ${REGION}: prices, supply, trade, jobs, travel, citizens abroad, policy or security.`,
-        check: `something that plausibly affects ${REGION}` };
-  return `You are the senior analysis desk of an intelligence product that ${lens.role}. A filter has already kept these items; write the analysis for each.
+  const lens = mode === "domestic" ? `explains what developments INSIDE ${REGION} mean for people and businesses in ${REGION}` : `explains how world news affects ${REGION}`;
+  const check = mode === "domestic" ? `of national significance for ${REGION}` : `something that plausibly affects ${REGION}`;
+  const used = [...new Set(batch.flatMap(x => [x.primary, x.complement]).filter(Boolean))];
+  const items = batch.map(x => ({ id: x.i, kind: x.kind, tier: x.tier, frameworks: [x.primary, x.complement].filter(Boolean), reports: x.reports }));
+  return `You are the senior analysis desk of an intelligence product that ${lens}. For each story, write the universal block and fill the framework(s) listed for it, using ONLY the reports given.
+
+UNIVERSAL BLOCK (every story):
+- "sector": ONE of the sectors below. "relevance": "high" (direct, material effect on many people or a whole sector within weeks) or "medium".
+- "why": the bottom line in one sentence, ≤30 words: how this reaches ${REGION}.
+- "implications": 2 or 3 plain sentences, each ≤25 words.
+- "exposure": {"level":"high|medium|low","reason":"≤20 words"}. High = touches a household essential (fuel, LPG, food staples, loan EMIs, deposit rates), a top Indian import or export, or the safety or travel of Indians. Medium = one industry, one bilateral relationship or a compliance obligation. Low = indirect or no mechanism in the reports.
+- "horizon": {"value":"now|weeks|months|years","reason":"≤12 words"}. now = under a week.
+- "confidence": {"level":"high|medium|low","reason":"≤15 words"}. High = 3+ outlets agree and an on-record official source; medium = 2 outlets, or 1 with an official source; low = single outlet, anonymous sourcing, claims by a party, or an unresolved conflict.
+- "affected": 1 to 4 of [{"group":"exactly one of: ${GROUPS.join(", ")}","direction":"up|down|mixed|unclear","what":"what changes for them, ≤6 words (e.g. fuel prices, flight availability, compliance costs)","basis":"reported|inferred"}].
+- "watch": 1 to 3 of [{"what":"observable event, ≤15 words","when":"date if reported, else empty","where":"named official source to check, or empty"}].
+
+FRAMEWORKS (fill only those listed for each story, under these keys):
+${used.map(k => "- " + FW_SPEC[k]).join("\n")}
+
+DEPTH: "quick" = keep every field short and minimal. "standard" = complete. "deep" = complete, using every report.
+
+RULES:
+1. Facts only from the reports. Never invent numbers, names, dates, causes or events. Every number you write must appear in the reports. If a field cannot be filled, leave it out.
+2. Mark anything not stated in the reports as "inferred" and word it with "may" or "could".
+3. Never give advice of any kind: no stocks, investments, trades, buying, selling, locking in rates, stocking up or timing decisions. Explain mechanisms only.
+4. Kind "breaking": early report; keep effects conditional and confidence at most medium. Kind "investigative": attribute findings to the outlet ("The Guardian reports that…").
+5. If, on a careful reading, a story is not ${check}, return {"id":N,"relevant":false,"reason":"≤15 words"}.
 
 Sectors:
 ${sectors}
 
-Rules:
-1. Use only the headline, summary and opening text given as facts. Do not invent numbers, names, events or causes.
-2. Choose the ONE sector the item affects most.
-3. ${lens.why} ${lens.impl} Give 2 or 3 implications, one plain sentence each, under 25 words.
-4. Never discuss securities: no stocks, share prices, market moves, companies that benefit, or investment actions.
-5. Use cautious wording ("may", "could", "likely") for anything uncertain.
-6. relevance: "high" = direct, material effect on many people or a whole sector within weeks; "medium" = clear but modest, narrower or indirect.
-7. Items with kind "breaking" are early reports: say what is reported so far and keep every effect conditional, because details may change.
-8. Items with kind "investigative" are one outlet's own findings: attribute them to that outlet in "why" (for example "The Guardian reports that…") and do not state them as established fact.
-9. If, on a careful reading, an item is not ${lens.check}, return {"id":N,"relevant":false,"reason":"under 15 words"} instead.
-
-Items:
+Stories:
 ${JSON.stringify(items)}
 
-Return ONLY a JSON array, one object per item:
-${shape}`;
+Return ONLY a JSON array, one object per story: [{"id":0,"relevant":true,"sector":"...","relevance":"...","why":"...","implications":[],"exposure":{},"horizon":{},"confidence":{},"affected":[],"watch":[], "<framework key>":{...}}]`;
+}
+
+// ----- validators -----
+const ADVICE = /\b(you should|readers should|consider (buying|selling|investing|locking|hedging|stocking)|good (time|window|moment) to|lock(ing)? in (a |the )?(rate|fd|deposit|price)|stock up|bulk (buy|buying|purchases?)|buy (now|before|more)|sell (now|before)|(buy|sell|hold) (rating|call|recommendation)|target price|multibagger|outperform|portfolio|invest in|investors? should)\b/i;
+function noAdvice(s) { return typeof s === "string" && !ADVICE.test(s); }
+function numbersIn(text) { return new Set((String(text).replace(/(\d),(?=\d{2,3}\b)/g, "$1").match(/\d+(\.\d+)?/g) || []).map(Number)); }
+function str(x, n = 240) { return typeof x === "string" ? x.trim().slice(0, n) : ""; }
+function numOrNull(x) { if (typeof x === "number" && isFinite(x)) return x; if (typeof x === "string" && /^-?[\d,]+(\.\d+)?$/.test(x.trim())) return +x.replace(/,/g, ""); return null; }
+const pick = (x, list, d) => list.includes(x) ? x : d;
+const arr = (x, n) => (Array.isArray(x) ? x : []).slice(0, n);
+// A figure is kept only if its value appears in the reports' text.
+const inReports = (v, nums) => v === null || nums.has(v) || nums.has(Math.abs(v));
+
+function cleanFramework(key, f, nums) {
+  if (!f || typeof f !== "object") return null;
+  const s = (x, n) => noAdvice(str(x, n)) ? str(x, n) : "";
+  switch (key) {
+    case "impact_chain": { const chain = arr(f.chain, 4).map(x => ({ step: s(x?.step, 60), detail: s(x?.detail, 140), basis: pick(x?.basis, ["reported", "inferred"], "inferred") })).filter(x => x.step); return chain.length ? { chain, breaks_if: s(f.breaks_if, 140) } : null; }
+    case "disruption_map": { const n = f.node || {}; if (!str(n.name)) return null;
+      return { node: { name: str(n.name, 80), type: str(n.type, 20), status: pick(n.status, ["closed", "partial", "open", "unknown"], "unknown"), as_of: str(n.as_of, 40) },
+        cause: f.cause ? { text: s(f.cause.text, 140), status: pick(f.cause.status, ["confirmed", "claimed", "alleged"], "claimed") } : null,
+        flows: arr(f.flows, 5).map(x => ({ flow: str(x?.flow, 30), india_link: s(x?.india_link, 140), basis: pick(x?.basis, ["reported", "inferred"], "inferred") })).filter(x => x.flow),
+        alternatives: arr(f.alternatives, 3).map(x => s(x, 100)).filter(Boolean), duration: str(f.duration, 60) || "not reported" }; }
+    case "trade_flow": { if (!str(f.good)) return null;
+      return { good: str(f.good, 60), actors: arr(f.actors, 5).map(x => ({ country: str(x?.country, 40), role: pick(x?.role, ["exporter", "importer", "third_party"], "third_party"), is_india: !!x?.is_india })).filter(x => x.country),
+        change: { type: str(f.change?.type, 20), effective: str(f.change?.effective, 40) },
+        india_position: f.india_position ? { role: pick(f.india_position.role, ["competing_buyer", "supplier", "rival_exporter", "transit", "not_involved"], "not_involved"), note: s(f.india_position.note, 160) } : null,
+        volumes: arr(f.volumes, 3).map(x => ({ value: numOrNull(x?.value), unit: str(x?.unit, 30), period: str(x?.period, 30), from: str(x?.from, 40) })).filter(x => x.value !== null && inReports(x.value, nums)) }; }
+    case "policy_tracker": { if (!str(f.instrument?.name)) return null;
+      return { instrument: { name: str(f.instrument.name, 100), issuer: str(f.instrument.issuer, 60), jurisdiction: str(f.instrument.jurisdiction, 40) },
+        stages: arr(f.stages, 8).map(x => ({ stage: pick(x?.stage, ["announced", "draft", "adopted", "notified", "transition", "in_force", "under_review", "amended_or_repealed"], null), date: str(x?.date, 30), status: pick(x?.status, ["done", "current", "next"], "next") })).filter(x => x.stage),
+        obligations: arr(f.obligations, 4).map(x => ({ who: str(x?.who, 50), what: s(x?.what, 120), from: str(x?.from, 30) })).filter(x => x.who && x.what),
+        applies_to_india: pick(f.applies_to_india, ["yes", "no", "partly"], "partly") }; }
+    case "decoder": { const h = f.headline || {}; const v = numOrNull(h.value), p = numOrNull(h.previous);
+      return { kind: pick(f.kind, ["release", "decision"], "release"),
+        headline: str(h.label) ? { label: str(h.label, 60), value: inReports(v, nums) ? v : null, unit: str(h.unit, 20), period: str(h.period, 30), previous: inReports(p, nums) ? p : null, previousLabel: str(h.previousLabel, 30), from: str(h.from, 40) } : null,
+        comparisons: arr(f.comparisons, 3).map(x => ({ label: str(x?.label, 50), value: numOrNull(x?.value), unit: str(x?.unit, 20), from: str(x?.from, 40) })).filter(x => x.label && x.value !== null && inReports(x.value, nums)),
+        drivers: arr(f.drivers, 4).map(x => ({ name: s(x?.name, 50), direction: pick(x?.direction, ["up", "down", "mixed"], "mixed") })).filter(x => x.name),
+        decision: f.decision ? { action: pick(f.decision.action, ["hike", "cut", "hold", "other"], "other"), size: str(f.decision.size, 30), stance: s(f.decision.stance, 120) } : null }; }
+    case "pass_through": { const rungs = arr(f.rungs, 5).map(x => ({ stage: s(x?.stage, 60), pass: pick(x?.pass, ["likely", "partial", "blocked", "unclear"], "unclear"), damper: s(x?.damper, 100), lag: pick(x?.lag, ["days", "weeks", "months"], "weeks") })).filter(x => x.stage);
+      return rungs.length ? { driver: { variable: str(f.driver?.variable, 50), direction: pick(f.driver?.direction, ["up", "down"], "up"), size: str(f.driver?.size, 30) }, product: str(f.product, 30), rungs,
+        end_user: f.end_user ? { group: pick(f.end_user.group, GROUPS, ""), effect: s(f.end_user.effect, 160) } : null } : null; }
+    case "winners_losers": { const groups = arr(f.groups, 6).map(x => ({ group: pick(x?.group, GROUPS, str(x?.group, 40)), direction: pick(x?.direction, ["gain", "lose", "mixed", "unclear"], "unclear"), directness: pick(x?.directness, ["direct", "indirect"], "indirect"), mechanism: s(x?.mechanism, 140) })).filter(x => x.group && x.mechanism);
+      return groups.length ? { groups, not_affected: s(f.not_affected, 140) } : null; }
+    case "conflicting": { const accounts = arr(f.accounts, 6).map(x => ({ outlet: str(x?.outlet, 40), value: str(String(x?.value ?? ""), 80), origin: str(x?.origin, 80), time: str(x?.time, 40) })).filter(x => x.outlet && x.value);
+      return accounts.length >= 2 ? { disputed: { item: str(f.disputed?.item, 80), unit: str(f.disputed?.unit, 20) }, accounts, agreed: arr(f.agreed, 4).map(x => s(x, 140)).filter(Boolean),
+        explanations: arr(f.explanations, 3).map(x => ({ type: str(x?.type, 30), note: s(x?.note, 120) })).filter(x => x.type), status: pick(f.status, ["unresolved", "converging", "resolved"], "unresolved") } : null; }
+    case "timeline": { const entries = arr(f.entries, 6).map(x => ({ when: str(x?.when, 30), what: s(x?.what, 140), actor: str(x?.actor, 50), outlet: str(x?.outlet, 40), type: pick(x?.type, ["action", "claim", "denial", "confirmation"], "action"), verification: pick(x?.verification, ["confirmed", "claimed", "contested"], "claimed") })).filter(x => x.what);
+      return entries.length ? { entries, current_status: s(f.current_status, 160), open_questions: arr(f.open_questions, 3).map(x => s(x, 120)).filter(Boolean) } : null; }
+    case "escalation": { const r = Math.round(+f.current_rung); if (!(r >= 1 && r <= 7)) return null; const pr = Math.round(+f.previous_rung);
+      return { current_rung: r, evidence: s(f.evidence, 160), previous_rung: pr >= 1 && pr <= 7 ? pr : null,
+        next_signals: arr(f.next_signals, 3).map(x => ({ rung: Math.round(+x?.rung), signal: s(x?.signal, 120) })).filter(x => x.rung >= 1 && x.rung <= 7 && x.signal),
+        india_channels: arr(f.india_channels, 6).map(x => str(x, 30)).filter(Boolean) }; }
+    case "scenarios": { const sc = arr(f.scenarios, 3).map(x => ({ name: s(x?.name, 40), what: s(x?.what, 160), signal: s(x?.signal, 120), india_effect: s(x?.india_effect, 120) })).filter(x => x.name && x.what);
+      return sc.length >= 2 ? { question: s(f.question, 120), scenarios: sc } : null; }
+  }
+  return null;
+}
+function cleanAnalysis(r, plan, reportText) {
+  const nums = numbersIn(reportText);
+  const s = (x, n) => noAdvice(str(x, n)) ? str(x, n) : "";
+  const a = { v: ANALYSIS_V, at: new Date().toISOString(), tier: plan.tier, primary: plan.primary, complement: plan.complement || null, features: plan.features,
+    exposure: r.exposure ? { level: pick(r.exposure.level, ["high", "medium", "low"], "medium"), reason: s(r.exposure.reason, 140) } : null,
+    horizon: r.horizon ? { value: pick(r.horizon.value, ["now", "weeks", "months", "years"], "weeks"), reason: s(r.horizon.reason, 100) } : null,
+    confidence: r.confidence ? { level: pick(r.confidence.level, ["high", "medium", "low"], "medium"), reason: s(r.confidence.reason, 120) } : null,
+    affected: arr(r.affected, 4).map(x => ({ group: pick(x?.group, GROUPS, ""), direction: pick(x?.direction, ["up", "down", "mixed", "unclear"], "unclear"), what: s(x?.what, 60), basis: pick(x?.basis, ["reported", "inferred"], "inferred") })).filter(x => x.group),
+    watch: arr(r.watch, 3).map(x => ({ what: s(x?.what, 140), when: str(x?.when, 40), where: str(x?.where, 60) })).filter(x => x.what),
+    frameworks: {} };
+  for (const k of [plan.primary, plan.complement].filter(Boolean)) { const f = cleanFramework(k, r[k], nums); if (f) a.frameworks[k] = f; }
+  if (!a.frameworks[plan.primary]) a.frameworksMissing = true;
+  return a;
+}
+function reportsForPrompt(reports) {
+  return reports.slice(-8).map(r => ({ outlet: OUTLETS[r.source] || r.source, date: (r.date || "").slice(0, 16), kind: r.kind || "", headline: r.headline, summary: r.summary || "", ...(r.lede ? { opening: r.lede } : {}) }));
+}
+const reportTextOf = reports => reports.map(r => [r.headline, r.summary, r.lede].filter(Boolean).join(" ")).join(" ");
+
+// Plan and analyse a list of stories: [{ i, kind, reports, relevance, prev }] → Map(i → { r, plan })
+async function analyseStories(list, mode) {
+  const feats = new Map();
+  for (let k = 0; k < list.length; k += FEATURE_BATCH) {
+    const chunk = list.slice(k, k + FEATURE_BATCH);
+    const res = await callClaude(featurePrompt(chunk.map(x => ({ id: x.i, reports: reportsForPrompt(x.reports).map(({ outlet, date, headline, summary }) => ({ outlet, date, headline, summary })) }))), "filter");
+    for (const f of res || []) if (f && Number.isInteger(+f.id)) feats.set(+f.id, Object.fromEntries(FEATURE_KEYS.map(key => [key, f[key] === true])));
+  }
+  const planned = list.map(x => {
+    const f = feats.get(x.i) || {};
+    const tier = tierOf({ reports: x.reports, relevance: x.relevance });
+    // Sticky primary: once a story has reached Standard, keep its lens unless it is a conflict of accounts.
+    const primary = (x.prev?.primary && x.prev.tier !== "quick" && !f.conflict) ? x.prev.primary : pickPrimary(f);
+    const complement = tier === "deep" ? pickComplement(primary, f) : null;
+    return { ...x, primary, complement, tier, features: Object.keys(f).filter(k => f[k]) };
+  });
+  const out = new Map();
+  for (let k = 0; k < planned.length; k += ANALYSIS_CHUNK) {
+    const chunk = planned.slice(k, k + ANALYSIS_CHUNK);
+    const res = await callClaude(analysisPrompt(chunk.map(x => ({ i: x.i, kind: x.kind, tier: x.tier, primary: x.primary, complement: x.complement, reports: reportsForPrompt(x.reports) })), mode), "analysis");
+    for (const r of res || []) { const x = chunk.find(c => c.i === +r?.id); if (x) out.set(x.i, { r, plan: x }); }
+  }
+  return out;
+}
+function applyAnalysis(ev, r, plan) {
+  ev.analysis = cleanAnalysis(r, plan, reportTextOf(ev.reports || []));
+  if (noAdvice(r.why) && str(r.why)) ev.why = str(r.why, 300);
+  const imp = arr(r.implications, 3).filter(x => typeof x === "string" && noAdvice(x)); if (imp.length) ev.implications = imp;
+}
+// Existing stories: analyse those with no current analysis, or whose depth tier has risen since. Newest first.
+async function reframeRecent(data, mode) {
+  const kindOfEv = ev => (ev.reports || [])[0]?.kind || "hard";
+  const eligible = ev => !["soft", "feature", "opinion"].includes(kindOfEv(ev));
+  const stale = ev => ev.analysis?.v !== ANALYSIS_V || TIER_RANK[tierOf(ev)] > TIER_RANK[ev.analysis.tier];
+  const all = data.sectors.flatMap(sec => sec.items).filter(ev => eligible(ev) && stale(ev)).sort((a, b) => latest(b).localeCompare(latest(a)));
+  const due = all.slice(0, REFRAME_LIMIT);
+  let done = 0, failed = 0;
+  for (let k = 0; k < due.length; k += ANALYSIS_CHUNK * 2) {
+    const chunk = due.slice(k, k + ANALYSIS_CHUNK * 2);
+    try {
+      const res = await analyseStories(chunk.map((ev, i) => ({ i, kind: kindOfEv(ev), reports: ev.reports || [], relevance: ev.relevance, prev: ev.analysis })), mode);
+      chunk.forEach((ev, i) => { const o = res.get(i); if (!o || o.r.relevant === false) return; applyAnalysis(ev, o.r, o.plan); done++; });
+    } catch (e) { console.error(`Framework batch failed: ${e.message}`); failed++; }
+  }
+  return { done, waiting: Math.max(0, all.length - done), failedBatches: failed };
 }
 
 async function callClaude(prompt, job) {
@@ -516,7 +735,7 @@ async function callClaude(prompt, job) {
         "anthropic-version": "2023-06-01",
         "content-type": "application/json"
       },
-      body: JSON.stringify({ model, max_tokens: 4000, messages: [{ role: "user", content: prompt }] })
+      body: JSON.stringify({ model, max_tokens: job === "analysis" ? 8000 : 4000, messages: [{ role: "user", content: prompt }] })
     });
     const body = await res.json().catch(() => ({}));
     if (res.ok) {
@@ -630,10 +849,11 @@ async function runDesk(desk) {
     const kindOf = v => KINDS.includes(v.kind) ? v.kind : "hard";
     for (const v of byId.values()) if (v.relevant && kindOf(v) === "opinion") { v.relevant = false; v.reason = "Opinion piece: kept out of the analysis"; }
     const needsAnalysis = v => !["soft", "feature"].includes(kindOf(v));
-    const toAnalyse = [...byId.entries()].filter(([i, v]) => v.relevant && !isFollowUp(i, v) && needsAnalysis(v)).map(([i, v]) => ({ i, s: batch[i], kind: kindOf(v) }));
+    const toAnalyse = [...byId.entries()].filter(([i, v]) => v.relevant && !isFollowUp(i, v) && needsAnalysis(v))
+      .map(([i, v]) => ({ i, kind: kindOf(v), relevance: "medium", reports: [{ source: batch[i].src, headline: batch[i].headline, summary: batch[i].summary, lede: batch[i].lede, date: batch[i].date, kind: kindOf(v) }] }));
     const analysis = new Map();
     if (toAnalyse.length) {
-      try { for (const r of await callClaude(analysisPrompt(toAnalyse, desk.mode), "analysis")) if (r && Number.isInteger(+r.id)) analysis.set(+r.id, r); }
+      try { for (const [id, o] of await analyseStories(toAnalyse, desk.mode)) analysis.set(id, o); }
       catch (e) { console.error(`Analysis batch failed: ${e.message}`); failures++; continue; } // whole batch retried next run
     }
     const reject = (s, reason, kind) => rejected.unshift({ source: s.src, headline: s.headline, url: s.url, date: s.date, ...(kind ? { kind } : {}),
@@ -653,7 +873,8 @@ async function runDesk(desk) {
         placed[i] = target; merged++;
         continue;
       }
-      const r = needsAnalysis(v) ? analysis.get(i) : { relevant: true, sector: v.sector, relevance: "medium", why: "", implications: [] };  // context only
+      const o = needsAnalysis(v) ? analysis.get(i) : null;
+      const r = needsAnalysis(v) ? o?.r : { relevant: true, sector: v.sector, relevance: "medium", why: "", implications: [] };  // context only
       if (!r) continue;
       if (r.relevant === false) { reject(s, r.reason, kindOf(v)); dropped.add(i); continue; }
       const sector = data.sectors.find(x => x.id === r.sector) || data.sectors.find(x => x.id === v.sector);
@@ -662,8 +883,9 @@ async function runDesk(desk) {
         id: idFor(s.url), headline: s.headline, url: s.url, source: s.src, date: s.date,
         relevance: r.relevance === "high" ? "high" : "medium",
         ...(s.image ? { image: s.image } : {}), ...(s.imageLarge ? { imageLarge: s.imageLarge } : {}),
-        why: typeof r.why === "string" ? r.why : "",
-        implications: (r.implications || []).filter(x => typeof x === "string").slice(0, 3),
+        why: typeof r.why === "string" && noAdvice(r.why) ? r.why : "",
+        implications: (r.implications || []).filter(x => typeof x === "string" && noAdvice(x)).slice(0, 3),
+        ...(o ? { analysis: cleanAnalysis(r, o.plan, reportTextOf([report])) } : {}),
         reports: [report]
       };
       sector.items.push(ev); placed[i] = ev; added++;
@@ -672,6 +894,8 @@ async function runDesk(desk) {
   }
 
   const kinds = await classifyOlder(data);
+  const frames = await reframeRecent(data, desk.mode);
+  if (frames.done || frames.failedBatches) console.log(`Framework analysis: ${frames.done} existing stories re-analysed, ${frames.waiting} still waiting`);
   if (kinds.labelled || kinds.waiting) console.log(`Report kinds: ${kinds.labelled} older reports labelled, ${kinds.waiting} waiting`);
   const og = await fillShareImages(data);
   if (og.tried) console.log(`Article pages checked: ${og.tried} (photos found ${og.found}, summaries found ${og.summaries})`);
@@ -711,7 +935,7 @@ async function runDesk(desk) {
   for (const s of data.sectors) s.items = s.items.filter(i => { const t = Date.parse(latest(i)); return isNaN(t) || t >= recentCut; }).map(({ sector, ...rest }) => rest);
   data.recentDays = RECENT_DAYS;
   data.updatedAt = new Date().toISOString();
-  data.lastRun = { analysed: fresh.length, added, merged, rejected: fresh.length && !failures ? fresh.length - added - merged : undefined, failedBatches: failures, feeds: feedHealth, shareImages: og, threads: th, summaries: sm, kinds, models: usage };
+  data.lastRun = { analysed: fresh.length, added, merged, rejected: fresh.length && !failures ? fresh.length - added - merged : undefined, failedBatches: failures, feeds: feedHealth, shareImages: og, threads: th, summaries: sm, kinds, frames, models: usage };
 
   await fs.writeFile(desk.data, JSON.stringify(data, null, 2) + "\n");
   await fs.writeFile(desk.seen, JSON.stringify([...seen].slice(-MAX_SEEN)) + "\n");
