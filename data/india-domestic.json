@@ -2,7 +2,7 @@
   "schema": 4,
   "region": "India",
   "since": "2026-10-02",
-  "updatedAt": "2026-10-13T18:32:40.738Z",
+  "updatedAt": "2026-10-13T20:29:28.554Z",
   "sectors": [
     {
       "id": "energy",
@@ -16,11 +16,10 @@
           "date": "2026-10-13T16:05:22.000Z",
           "relevance": "medium",
           "image": "https://th-i.thgim.com/public/incoming/8onbj9/article71580715.ece/alternates/LANDSCAPE_1200/2026-10-04T073421Z_1966077471_RC27WNARY2ZS_RTRMADP_3_OIL-OPEC.JPG",
-          "why": "OPEC has cut its forecast for India's 2026 oil demand growth to 40,000 barrels per day, which matters for a country that relies on imported crude for fuel.",
+          "why": "OPEC cut its forecast for India's 2026 oil demand growth to 40,000 barrels per day, signalling a softer outlook for fuel consumption.",
           "implications": [
-            "Petrol and diesel are still expected to drive fuel consumption, supported by strong vehicle sales, manufacturing and farm activity.",
-            "Slower growth in oil demand could ease pressure on India's crude import needs, though fuel prices depend on many other factors.",
-            "Refiners and fuel retailers may adjust supply plans if demand grows more slowly than earlier expected."
+            "OPEC expects gasoline and diesel to drive India's consumption.",
+            "OPEC cites vehicle sales, manufacturing and agricultural activity as demand drivers."
           ],
           "reports": [
             {
@@ -34,7 +33,78 @@
               "image": "https://th-i.thgim.com/public/incoming/8onbj9/article71580715.ece/alternates/LANDSCAPE_1200/2026-10-04T073421Z_1966077471_RC27WNARY2ZS_RTRMADP_3_OIL-OPEC.JPG"
             }
           ],
-          "thread": "t4khkm"
+          "thread": "t4khkm",
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-13T20:25:16.042Z",
+            "tier": "quick",
+            "primary": "decoder",
+            "complement": null,
+            "features": [
+              "scheduled"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "A forecast revision; reports show no direct price mechanism."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Forecast covers the 2026 demand outlook."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "Single outlet citing an OPEC forecast."
+            },
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "fuel demand outlook",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Further OPEC revisions to India's demand forecast",
+                "when": "",
+                "where": "OPEC"
+              }
+            ],
+            "frameworks": {
+              "decoder": {
+                "kind": "release",
+                "headline": {
+                  "label": "India 2026 oil demand growth forecast",
+                  "value": 40000,
+                  "unit": "barrels per day",
+                  "period": "2026",
+                  "previous": null,
+                  "previousLabel": "previous forecast (not reporte",
+                  "from": "The Hindu"
+                },
+                "comparisons": [],
+                "drivers": [
+                  {
+                    "name": "Gasoline and diesel demand",
+                    "direction": "up"
+                  },
+                  {
+                    "name": "Strong vehicle sales",
+                    "direction": "up"
+                  },
+                  {
+                    "name": "Manufacturing activity",
+                    "direction": "up"
+                  },
+                  {
+                    "name": "Agricultural activity",
+                    "direction": "up"
+                  }
+                ],
+                "decision": null
+              }
+            }
+          }
         },
         {
           "id": "s2288ob",
@@ -44,11 +114,11 @@
           "date": "2026-10-13T13:18:22.000Z",
           "relevance": "high",
           "image": "https://www.livemint.com/lm-img/img/2026/10/13/1600x900/Saudi_Aramco_1791897470853_nH7r_1791897476650_kdsn_d9bf4b7b-2916-4666-83cf-49d8b51c6c0e_9UR1.png",
-          "why": "Houthi rebels have reportedly warned people to evacuate all Saudi Aramco oil facilities, and any resulting disruption could affect India's crude supplies and fuel costs.",
+          "why": "Houthi warnings to evacuate Saudi Aramco facilities raise the risk of attacks on a key oil supplier. This could reach India through crude prices and Gulf workers' safety.",
           "implications": [
-            "If attacks follow and disrupt Saudi output, global crude prices could rise and raise India's oil import bill.",
-            "Higher crude costs, if sustained, may add pressure on petrol, diesel and LPG prices for households and transporters.",
-            "Indian refiners may need to seek alternative crude sources if Saudi supplies are interrupted, though details remain unclear."
+            "Houthis told civilians and employees to evacuate all Saudi Aramco oil facilities.",
+            "Any attack could disrupt Saudi oil supply and may affect India's fuel import costs.",
+            "Indians working in Saudi Arabia could face safety risks if threats are acted on."
           ],
           "reports": [
             {
@@ -62,7 +132,78 @@
               "image": "https://www.livemint.com/lm-img/img/2026/10/13/1600x900/Saudi_Aramco_1791897470853_nH7r_1791897476650_kdsn_d9bf4b7b-2916-4666-83cf-49d8b51c6c0e_9UR1.png"
             }
           ],
-          "thread": "tlbdei3"
+          "thread": "tlbdei3",
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-13T20:26:15.088Z",
+            "tier": "quick",
+            "primary": "escalation",
+            "complement": null,
+            "features": [
+              "armed_conflict",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "high",
+              "reason": "Crude oil is a top import; many Indians work in Saudi Arabia."
+            },
+            "horizon": {
+              "value": "now",
+              "reason": "The threat was issued today and is developing."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "Single outlet reporting a party's claim in an early breaking report."
+            },
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "fuel price risk",
+                "basis": "inferred"
+              },
+              {
+                "group": "Gulf & overseas workers and families",
+                "direction": "unclear",
+                "what": "safety near oil sites",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Saudi Aramco statement on facility operations",
+                "when": "",
+                "where": "Saudi Aramco"
+              },
+              {
+                "what": "Advisory for Indians in Saudi Arabia",
+                "when": "",
+                "where": "Embassy of India, Riyadh"
+              }
+            ],
+            "frameworks": {
+              "escalation": {
+                "current_rung": 1,
+                "evidence": "Houthis warned civilians and employees to evacuate all Saudi Aramco oil facilities.",
+                "previous_rung": null,
+                "next_signals": [
+                  {
+                    "rung": 4,
+                    "signal": "Houthi missile or drone attack reported on Saudi territory"
+                  },
+                  {
+                    "rung": 6,
+                    "signal": "Attack reported damaging Saudi Aramco oil facilities"
+                  }
+                ],
+                "india_channels": [
+                  "oil",
+                  "diaspora safety",
+                  "remittances"
+                ]
+              }
+            }
+          }
         },
         {
           "id": "s1ymsnoo",
@@ -72,11 +213,11 @@
           "date": "2026-10-09T20:07:53.000Z",
           "relevance": "medium",
           "image": "https://th-i.thgim.com/public/incoming/15wv3c/article71565836.ece/alternates/LANDSCAPE_1200/2025-01-13T131227Z_1184706461_RC2EYS9RHM0Z_RTRMADP_3_INDIA-RUSSIA-OIL.JPG",
-          "why": "Easing of US sanctions on Russian diesel could widen global diesel supply, which matters for India's fuel import costs and pricing.",
+          "why": "A US-Russia diesel deal and an announced energy ceasefire could shift global diesel supply and Russian fuel trade rules that matter for India's energy imports.",
           "implications": [
-            "Wider global diesel supply may ease fuel cost pressure for transporters and farmers over coming weeks.",
-            "Cheaper diesel could modestly reduce freight costs and help moderate food and goods prices.",
-            "Refiners and fuel importers may gain more sourcing options, though the effect is uncertain."
+            "Trump says Russia will supply more than 300,000 metric tons of diesel immediately as the US temporarily eases sanctions.",
+            "Trump also announced an 'energy ceasefire' between Russia and Ukraine, which The Hindu examines for its impact on India.",
+            "Weeks earlier, Trump signed a law allowing tariffs on major buyers of Russian oil and gas, so trade rules remain unsettled."
           ],
           "reports": [
             {
@@ -170,7 +311,103 @@
               "image": "https://th-i.thgim.com/public/incoming/712jvm/article71578359.ece/alternates/LANDSCAPE_1200/2299886758.jpg"
             }
           ],
-          "thread": "tmyg5jt"
+          "thread": "tmyg5jt",
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-13T20:27:35.417Z",
+            "tier": "deep",
+            "primary": "escalation",
+            "complement": "scenarios",
+            "features": [
+              "armed_conflict",
+              "trade_flow",
+              "fast_moving",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "Shifts global diesel supply; India-specific effects not detailed in reports"
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Shipments, a peace proposal and US midterms are due within weeks"
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "Two outlets; claims rest largely on Trump; deliverability questioned"
+            },
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "global diesel price pressure",
+                "basis": "inferred"
+              },
+              {
+                "group": "Importers & traders",
+                "direction": "mixed",
+                "what": "Russian fuel trade rules",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Russian delivery of the promised 300,000 metric tons of diesel",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "Peace proposal presented to Russia before winter",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "US midterm elections amid diesel price concerns",
+                "when": "November 3",
+                "where": ""
+              }
+            ],
+            "frameworks": {
+              "escalation": {
+                "current_rung": 6,
+                "evidence": "Trump warned Zelensky to stop Ukrainian strikes on Russian oil refineries.",
+                "previous_rung": null,
+                "next_signals": [
+                  {
+                    "rung": 5,
+                    "signal": "Both sides confirm a halt to strikes on energy infrastructure"
+                  }
+                ],
+                "india_channels": [
+                  "oil",
+                  "trade"
+                ]
+              },
+              "scenarios": {
+                "question": "Will the diesel deal and energy ceasefire hold and deliver supply?",
+                "scenarios": [
+                  {
+                    "name": "Deal delivers",
+                    "what": "Russia ships the promised diesel, with further shipments toward 4.8 million tonnes as Trump says.",
+                    "signal": "Confirmed delivery of 300,000 metric tons of Russian diesel",
+                    "india_effect": "Could ease global diesel prices, possibly affecting India's fuel import costs"
+                  },
+                  {
+                    "name": "Deal stalls",
+                    "what": "Bipartisan backlash or falling Russian exports leave deliveries short of promises.",
+                    "signal": "US lawmakers move against the deal, or shipments lag",
+                    "india_effect": "Global diesel price pressure may persist"
+                  },
+                  {
+                    "name": "Peace proposal advances",
+                    "what": "US, Ukrainian and European negotiators agree a proposal to present to Russia before winter.",
+                    "signal": "Agreed proposal from the Miami talks presented to Moscow",
+                    "india_effect": "Could reduce volatility in energy markets India relies on"
+                  }
+                ]
+              }
+            }
+          }
         },
         {
           "id": "s1qf7auq",
@@ -1094,11 +1331,10 @@
           "date": "2026-10-13T13:11:55.000Z",
           "relevance": "medium",
           "image": "https://www.livemint.com/lm-img/img/2026/10/13/1600x900/logo/g51dbb88fe79e82a5778f74cd231f8776d745cb3e8597a8604_1791894583742_B7H7_1791894583880_RptK_8b629fc8-15fc-4be5-98e9-b138885498bc_4vAL.jpg",
-          "why": "Rising rail freight loading and revenue, led by coal, food grain and clinker, signals steady movement of core goods across India's supply chains.",
+          "why": "Railways' September freight loading rose 6.1% and revenue 9.3%, driven by coal, food grain and clinker movement.",
           "implications": [
-            "Steady coal movement by rail may help power plants keep fuel supplies stable through the coming months.",
-            "Higher food grain loading could support smoother distribution of grain to consuming states.",
-            "More clinker movement suggests cement makers are seeing ongoing demand, which may sustain construction-linked jobs."
+            "Higher coal movement may support fuel supply to power plants.",
+            "Rising freight revenue could help Railways' finances as it targets 1,765 million tonnes in FY27."
           ],
           "reports": [
             {
@@ -1112,7 +1348,93 @@
               "image": "https://www.livemint.com/lm-img/img/2026/10/13/1600x900/logo/g51dbb88fe79e82a5778f74cd231f8776d745cb3e8597a8604_1791894583742_B7H7_1791894583880_RptK_8b629fc8-15fc-4be5-98e9-b138885498bc_4vAL.jpg"
             }
           ],
-          "thread": "ti9k0xi"
+          "thread": "ti9k0xi",
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-13T20:26:15.088Z",
+            "tier": "quick",
+            "primary": "decoder",
+            "complement": null,
+            "features": [
+              "scheduled"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "Affects rail freight and bulk-commodity logistics rather than households directly."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Monthly data tracked against the FY27 loading target."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "Single outlet; no named official source in the summary."
+            },
+            "affected": [
+              {
+                "group": "Government finances",
+                "direction": "up",
+                "what": "railway freight revenue",
+                "basis": "reported"
+              },
+              {
+                "group": "Power consumers",
+                "direction": "unclear",
+                "what": "coal delivery reliability",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "October freight loading figures",
+                "when": "",
+                "where": "Ministry of Railways"
+              }
+            ],
+            "frameworks": {
+              "decoder": {
+                "kind": "release",
+                "headline": {
+                  "label": "Freight loading growth",
+                  "value": 6.1,
+                  "unit": "%",
+                  "period": "September",
+                  "previous": null,
+                  "previousLabel": "",
+                  "from": "Mint"
+                },
+                "comparisons": [
+                  {
+                    "label": "Freight revenue growth",
+                    "value": 9.3,
+                    "unit": "%",
+                    "from": "Mint"
+                  },
+                  {
+                    "label": "FY27 loading target",
+                    "value": 1765,
+                    "unit": "million tonnes",
+                    "from": "Mint"
+                  }
+                ],
+                "drivers": [
+                  {
+                    "name": "Coal movement",
+                    "direction": "up"
+                  },
+                  {
+                    "name": "Food grain movement",
+                    "direction": "up"
+                  },
+                  {
+                    "name": "Clinker movement",
+                    "direction": "up"
+                  }
+                ],
+                "decision": null
+              }
+            }
+          }
         },
         {
           "id": "syvkmg9",
@@ -2047,11 +2369,10 @@
           "date": "2026-10-13T18:09:18.000Z",
           "relevance": "medium",
           "image": "https://www.livemint.com/lm-img/img/2026/10/13/1600x900/logo/INDIA-NEF-88_1791914919812_4Bt1_1791914932028_qMTk_583d9f13-5b7e-4a2c-b12b-cbc7b37c939e_lhBy.jpg",
-          "why": "External Affairs Minister S Jaishankar says India-US trade talks are moving in the right direction, though changing US tariff policies and unresolved issues still complicate a final deal with a major trading partner.",
+          "why": "Jaishankar says India-US trade talks are moving in the right direction, but shifting US tariff policies still complicate finalising a deal.",
           "implications": [
-            "Indian exporters to the US may continue facing tariff uncertainty until a deal is finalised, which could complicate pricing and order planning.",
-            "If a deal is concluded, export-oriented manufacturers could see steadier demand, which may support jobs in those sectors.",
-            "Importers and consumers could see price changes on some US goods, depending on the tariff terms finally agreed."
+            "A deal is being worked out, but no finalisation date has been reported.",
+            "Changing US tariff policies could keep terms for Indian exporters uncertain until a deal is signed."
           ],
           "reports": [
             {
@@ -2065,7 +2386,66 @@
               "image": "https://www.livemint.com/lm-img/img/2026/10/13/1600x900/logo/INDIA-NEF-88_1791914919812_4Bt1_1791914932028_qMTk_583d9f13-5b7e-4a2c-b12b-cbc7b37c939e_lhBy.jpg"
             }
           ],
-          "thread": "t1ka6u13"
+          "thread": "t1ka6u13",
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-13T20:25:16.041Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "One bilateral trade relationship; the reports give no tariff details."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Deal still being worked out; no date reported."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "Single outlet with an on-record minister."
+            },
+            "affected": [
+              {
+                "group": "Large exporters",
+                "direction": "unclear",
+                "what": "US tariff terms",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Announcement of a finalised India-US trade deal",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Talks moving in right direction",
+                    "detail": "Jaishankar says a deal is being worked out with the US.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "US tariff shifts complicate deal",
+                    "detail": "Changing US tariff policies and unresolved issues delay finalisation.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Exporter tariff clarity could follow",
+                    "detail": "A signed deal may give Indian exporters clearer US market terms.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "Unresolved trade issues or new US tariff changes stall finalisation."
+              }
+            }
+          }
         },
         {
           "id": "sa56xad",
@@ -2075,11 +2455,11 @@
           "date": "2026-10-13T17:08:58.000Z",
           "relevance": "medium",
           "image": "https://th-i.thgim.com/public/incoming/q7sfb0/article71580970.ece/alternates/LANDSCAPE_1200/2026-09-19T111356Z_210063619_RC28MNAXZ2HR_RTRMADP_3_IRAN-CRISIS-SAUDI-YEMEN.JPG",
-          "why": "India's advisory to its nationals in Saudi Arabia signals concern for Indians working there, whose safety and earnings matter to many families back home.",
+          "why": "An attack on Riyadh's airport killed an Indian and injured four, prompting India to urge its nationals in Saudi Arabia to stay indoors and vigilant.",
           "implications": [
-            "Families in India with relatives working in Saudi Arabia may face uncertainty and could seek updates through Indian missions.",
-            "If attacks on civilian infrastructure continue, work and money sent home by Indian workers could be disrupted.",
-            "Prolonged instability in the Gulf could raise fuel price concerns for Indian households and businesses, though no supply effect is reported."
+            "One Indian citizen was killed and four injured Indians remain in intensive care after the attack on King Khalid International Airport.",
+            "India's advisory asks nationals to stay indoors, remain calm and not share videos.",
+            "Continuing flight suspensions could disrupt travel between India and Saudi Arabia."
           ],
           "reports": [
             {
@@ -2103,7 +2483,90 @@
               "image": "https://www.livemint.com/lm-img/img/2026/10/13/1600x900/logo/IRAN-CRISIS-SAUDI-_1791910479517_F8WB_1791910479635_KyEa_2550b404-9071-4151-b66f-3097b94a32be_dRzS.JPG"
             }
           ],
-          "thread": "tlbdei3"
+          "thread": "tlbdei3",
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-13T20:25:16.041Z",
+            "tier": "standard",
+            "primary": "disruption_map",
+            "complement": null,
+            "features": [
+              "disruption",
+              "armed_conflict",
+              "fast_moving"
+            ],
+            "exposure": {
+              "level": "high",
+              "reason": "Directly concerns the safety and travel of Indians in Saudi Arabia."
+            },
+            "horizon": {
+              "value": "now",
+              "reason": "Advisory issued; flight disruptions are ongoing."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "Two outlets agree and the official advisory is reported."
+            },
+            "affected": [
+              {
+                "group": "Gulf & overseas workers and families",
+                "direction": "up",
+                "what": "personal safety risk",
+                "basis": "reported"
+              },
+              {
+                "group": "Travellers & pilgrims",
+                "direction": "down",
+                "what": "flight availability",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Further Indian government advisories for nationals in Saudi Arabia",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "Condition of the four injured Indians in intensive care",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "Resumption of flights at King Khalid International Airport, Riyadh",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "frameworks": {
+              "disruption_map": {
+                "node": {
+                  "name": "King Khalid International Airport, Riyadh",
+                  "type": "airport",
+                  "status": "unknown",
+                  "as_of": "2026-10-13"
+                },
+                "cause": {
+                  "text": "Drone and missile attacks on Saudi civilian infrastructure by Yemen's Houthi rebels",
+                  "status": "confirmed"
+                },
+                "flows": [
+                  {
+                    "flow": "workers",
+                    "india_link": "Indian nationals in Saudi Arabia told to stay indoors and vigilant.",
+                    "basis": "reported"
+                  },
+                  {
+                    "flow": "air passengers",
+                    "india_link": "Flight suspensions may affect Indians travelling to or from Riyadh.",
+                    "basis": "inferred"
+                  }
+                ],
+                "alternatives": [],
+                "duration": "not reported"
+              }
+            }
+          }
         },
         {
           "id": "solbr1t",
@@ -2113,10 +2576,11 @@
           "date": "2026-10-10T18:36:26.000Z",
           "relevance": "medium",
           "image": "https://www.livemint.com/lm-img/img/2026/10/10/1600x900/logo/Gemini_Generated_Image_ghum8kghum8kghum_1784258639_1791657298128_uMSp_1791657298547_csrB_e088e675-eca5-4bb7-864c-3521a4dbc09c_zsxp.png",
-          "why": "A proposed 0.4% fee on larger UPI merchant payments could change the cost of digital payments across small businesses.",
+          "why": "A 0.4% fee on UPI merchant payments above ₹2,000, now pushed to just after Diwali, could raise costs for merchants and change how India pays.",
           "implications": [
-            "Merchants may pass the fee on, which could raise prices for consumers on larger purchases.",
-            "Small businesses may face thinner margins or shift some payments to cash."
+            "NPCI moved the rollout from October 15 to immediately after Diwali after traders' bodies warned it would dampen festive sales.",
+            "The finance ministry says merchants cannot pass the fee to customers, but Mint asks who would enforce this.",
+            "GTRI warns the fee could raise prices, squeeze small businesses and weaken demand, and urged the government to withdraw it."
           ],
           "reports": [
             {
@@ -2170,7 +2634,119 @@
               "image": "https://www.livemint.com/lm-img/img/2026/10/13/1600x900/logo/INDIA-PAYMENTS-UPI-1_1791909542995_QNjg_1791909555762_qrVk_10700744-b352-45a8-88b3-2d09c81ffed9_Tblz.JPG"
             }
           ],
-          "thread": "t1m3ppj6"
+          "thread": "t1m3ppj6",
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-13T20:25:16.041Z",
+            "tier": "deep",
+            "primary": "policy_tracker",
+            "complement": "scenarios",
+            "features": [
+              "policy_stage",
+              "fast_moving",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "A cost and compliance change for medium and large merchants on UPI."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Rollout deferred to immediately after Diwali."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "Two outlets; finance ministry and NPCI positions reported."
+            },
+            "affected": [
+              {
+                "group": "Importers & traders",
+                "direction": "up",
+                "what": "UPI payment acceptance costs",
+                "basis": "reported"
+              },
+              {
+                "group": "Food shoppers",
+                "direction": "up",
+                "what": "possible price increases",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "NPCI confirmation of the UPI MDR effective date",
+                "when": "immediately after Diwali",
+                "where": "NPCI"
+              },
+              {
+                "what": "Whether Keralam hotels stop accepting UPI payments above ₹2,000",
+                "when": "October 15",
+                "where": ""
+              },
+              {
+                "what": "Government response to GTRI's call to withdraw the fee",
+                "when": "",
+                "where": "Finance ministry"
+              }
+            ],
+            "frameworks": {
+              "policy_tracker": {
+                "instrument": {
+                  "name": "0.4% merchant discount rate (MDR) on UPI transactions above ₹2,000",
+                  "issuer": "NPCI / Government of India (finance ministry)",
+                  "jurisdiction": "India"
+                },
+                "stages": [
+                  {
+                    "stage": "announced",
+                    "date": "",
+                    "status": "current"
+                  },
+                  {
+                    "stage": "in_force",
+                    "date": "immediately after Diwali (defe",
+                    "status": "next"
+                  }
+                ],
+                "obligations": [
+                  {
+                    "who": "Medium and large merchants",
+                    "what": "Pay 0.4% MDR on UPI transactions above ₹2,000",
+                    "from": "immediately after Diwali"
+                  },
+                  {
+                    "who": "Merchants",
+                    "what": "Must not pass the MDR charge on to customers, per finance ministry",
+                    "from": ""
+                  }
+                ],
+                "applies_to_india": "yes"
+              },
+              "scenarios": {
+                "question": "Will the UPI MDR take effect after Diwali, be withdrawn, or face wider merchant pushback?",
+                "scenarios": [
+                  {
+                    "name": "Rollout after Diwali",
+                    "what": "NPCI implements the 0.4% MDR on UPI payments above ₹2,000 at medium and large merchants.",
+                    "signal": "NPCI notice confirming the post-Diwali effective date",
+                    "india_effect": "Merchant costs could rise; 25% of surveyed merchants expect over ₹5,000 monthly."
+                  },
+                  {
+                    "name": "Fee withdrawn",
+                    "what": "The government withdraws the proposed fee, as GTRI recommended.",
+                    "signal": "Finance ministry or NPCI announces withdrawal",
+                    "india_effect": "Merchant UPI costs may stay unchanged."
+                  },
+                  {
+                    "name": "Merchant pushback spreads",
+                    "what": "More businesses follow the Keralam hotels association in refusing UPI payments above ₹2,000.",
+                    "signal": "Other trade associations announce limits on UPI acceptance",
+                    "india_effect": "Customers could find fewer UPI options for larger bills."
+                  }
+                ]
+              }
+            }
+          }
         },
         {
           "id": "sthno9v",
@@ -2180,11 +2756,11 @@
           "date": "2026-10-13T13:49:14.000Z",
           "relevance": "medium",
           "image": "https://th-i.thgim.com/public/incoming/32ghab/article71579852.ece/alternates/LANDSCAPE_1200/IMG_CIBIL_score_2_1_1UD60T63.jpg",
-          "why": "A 49% rise in car loans, with larger average loan sizes spreading beyond metros, points to growing household borrowing for vehicles across India.",
+          "why": "TransUnion CIBIL data shows car loans rising 49% as premium vehicle buying spreads beyond metros. This signals growing household vehicle borrowing across India.",
           "implications": [
-            "Households outside big cities are likely taking on larger vehicle loans, which raises their monthly repayment commitments.",
-            "NBFCs leading vehicle financing may mean wider credit access but potentially higher interest costs for some borrowers.",
-            "Expanding two-wheeler credit could support jobs at dealerships and in vehicle servicing in smaller towns."
+            "The average passenger vehicle loan has risen to ₹8.2 lakh, according to TransUnion CIBIL.",
+            "NBFCs lead vehicle financing, and two-wheeler credit is also expanding.",
+            "Larger loans could mean higher EMI commitments for households outside metros."
           ],
           "reports": [
             {
@@ -2198,7 +2774,70 @@
               "image": "https://th-i.thgim.com/public/incoming/32ghab/article71579852.ece/alternates/LANDSCAPE_1200/IMG_CIBIL_score_2_1_1UD60T63.jpg"
             }
           ],
-          "thread": "t152lzre"
+          "thread": "t152lzre",
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-13T20:26:15.088Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "medium",
+              "reason": "Affects vehicle borrowers and lenders, not a broad change in rates."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Reflects an ongoing credit trend."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "One outlet citing on-record credit bureau data."
+            },
+            "affected": [
+              {
+                "group": "Borrowers",
+                "direction": "up",
+                "what": "vehicle loan sizes",
+                "basis": "reported"
+              },
+              {
+                "group": "Manufacturing workers",
+                "direction": "up",
+                "what": "auto demand",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Next TransUnion CIBIL report on vehicle credit trends",
+                "when": "",
+                "where": "TransUnion CIBIL"
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Car loans rise 49%",
+                    "detail": "Premiumisation spreads beyond metros; average loan reaches ₹8.2 lakh.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "NBFCs lead financing",
+                    "detail": "NBFCs lead vehicle lending as two-wheeler credit also expands.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Auto demand may stay supported",
+                    "detail": "Easier credit could sustain vehicle sales outside major cities.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "Lenders tighten vehicle credit or borrowing costs rise."
+              }
+            }
+          }
         },
         {
           "id": "sa0yaxd",
@@ -2232,11 +2871,11 @@
           "date": "2026-10-13T11:28:58.000Z",
           "relevance": "high",
           "image": "https://th-i.thgim.com/public/incoming/6jma6t/article71579127.ece/alternates/LANDSCAPE_1200/PTI09_11_2026_000210A.jpg",
-          "why": "The Finance Minister blames global uncertainty for the rupee's slide to a low against the dollar and says the RBI will keep acting to curb volatility, which matters for prices of imported goods nationwide.",
+          "why": "The rupee has hit a low against the dollar on global uncertainty, the Finance Minister says. This could raise India's import costs.",
           "implications": [
-            "A weak rupee could raise costs of imported fuel, edible oils and electronics, adding to household inflation.",
-            "Businesses relying on imported inputs or foreign-currency loans may face higher costs despite RBI efforts to smooth swings.",
-            "Students abroad and outbound travellers likely pay more in rupee terms, while exporters may earn more per dollar."
+            "Sitharaman said the RBI will keep working to curb rupee volatility.",
+            "A weaker rupee could make imported fuel and goods costlier.",
+            "Strong forex reserves were cited as a buffer."
           ],
           "reports": [
             {
@@ -2250,7 +2889,84 @@
               "image": "https://th-i.thgim.com/public/incoming/6jma6t/article71579127.ece/alternates/LANDSCAPE_1200/PTI09_11_2026_000210A.jpg"
             }
           ],
-          "thread": "t5sqh80"
+          "thread": "t5sqh80",
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-13T20:26:15.088Z",
+            "tier": "quick",
+            "primary": "pass_through",
+            "complement": null,
+            "features": [
+              "price_move"
+            ],
+            "exposure": {
+              "level": "high",
+              "reason": "Currency weakness may raise the cost of crude, India's top import."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Import cost effects could build over weeks."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "Single outlet quoting the Finance Minister on record."
+            },
+            "affected": [
+              {
+                "group": "Importers & traders",
+                "direction": "up",
+                "what": "dollar import costs",
+                "basis": "inferred"
+              },
+              {
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "fuel prices",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "RBI intervention or statements on rupee volatility",
+                "when": "",
+                "where": "Reserve Bank of India"
+              }
+            ],
+            "frameworks": {
+              "pass_through": {
+                "driver": {
+                  "variable": "Rupee against US dollar",
+                  "direction": "down",
+                  "size": ""
+                },
+                "product": "petrol & diesel",
+                "rungs": [
+                  {
+                    "stage": "Weaker rupee → Refiners' crude cost",
+                    "pass": "likely",
+                    "damper": "RBI action to curb volatility",
+                    "lag": "days"
+                  },
+                  {
+                    "stage": "Refiners' cost → Pump price",
+                    "pass": "partial",
+                    "damper": "Taxes, oil company pricing decisions, inventory",
+                    "lag": "weeks"
+                  },
+                  {
+                    "stage": "Pump price → Household spending",
+                    "pass": "unclear",
+                    "damper": "Government tax changes",
+                    "lag": "weeks"
+                  }
+                ],
+                "end_user": {
+                  "group": "Fuel & LPG users",
+                  "effect": "Fuel costs could face upward pressure if rupee weakness persists."
+                }
+              }
+            }
+          }
         },
         {
           "id": "sy02sjs",
@@ -2260,11 +2976,10 @@
           "date": "2026-10-13T11:07:46.000Z",
           "relevance": "medium",
           "image": "https://th-i.thgim.com/public/incoming/mywqxx/article71579076.ece/alternates/LANDSCAPE_1200/2026-10-13T041544Z_2064203482_RC26SMAZP5HR_RTRMADP_3_INDIA-CENBANK-RUPEE.JPG",
-          "why": "A 40-paise rupee recovery to 95.38 per dollar offers slight relief, but the currency remains at a weak level that shapes import costs across India.",
+          "why": "The rupee rose 40 paise to close at 95.38 per dollar, slightly easing import-cost pressure for now.",
           "implications": [
-            "If the gain holds, importers of fuel, electronics and raw materials may see marginally lower rupee costs.",
-            "Families paying overseas tuition or travel bills could find dollar payments slightly cheaper than in recent days.",
-            "Exporters and households receiving remittances may get somewhat fewer rupees per dollar than before the rebound."
+            "A one-day gain may not change import prices much.",
+            "Intraday swings between 94.96 and 95.53 show continued volatility."
           ],
           "reports": [
             {
@@ -2278,7 +2993,78 @@
               "image": "https://th-i.thgim.com/public/incoming/mywqxx/article71579076.ece/alternates/LANDSCAPE_1200/2026-10-13T041544Z_2064203482_RC26SMAZP5HR_RTRMADP_3_INDIA-CENBANK-RUPEE.JPG"
             }
           ],
-          "thread": "t5sqh80"
+          "thread": "t5sqh80",
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-13T20:26:15.088Z",
+            "tier": "quick",
+            "primary": "pass_through",
+            "complement": null,
+            "features": [
+              "price_move"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "Currency moves affect importers' costs; a single-day move is limited."
+            },
+            "horizon": {
+              "value": "now",
+              "reason": "Single-session currency move."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "Single outlet; market data without an official source."
+            },
+            "affected": [
+              {
+                "group": "Importers & traders",
+                "direction": "down",
+                "what": "dollar import costs",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Whether the rupee holds near 95.38",
+                "when": "",
+                "where": "Reserve Bank of India reference rate"
+              }
+            ],
+            "frameworks": {
+              "pass_through": {
+                "driver": {
+                  "variable": "Rupee against US dollar",
+                  "direction": "up",
+                  "size": "40 paise"
+                },
+                "product": "electronics",
+                "rungs": [
+                  {
+                    "stage": "Stronger rupee → Importers' landed cost",
+                    "pass": "partial",
+                    "damper": "Hedging contracts, short duration of move",
+                    "lag": "days"
+                  },
+                  {
+                    "stage": "Landed cost → Distributor prices",
+                    "pass": "blocked",
+                    "damper": "Existing inventory bought at older rates",
+                    "lag": "months"
+                  },
+                  {
+                    "stage": "Distributor prices → Retail price",
+                    "pass": "unclear",
+                    "damper": "Retailer margins, sticky pricing",
+                    "lag": "months"
+                  }
+                ],
+                "end_user": {
+                  "group": "Importers & traders",
+                  "effect": "May see slight cost relief; retail prices are unlikely to shift from one session."
+                }
+              }
+            }
+          }
         },
         {
           "id": "srdkz1n",
@@ -2288,11 +3074,10 @@
           "date": "2026-10-13T10:53:57.000Z",
           "relevance": "medium",
           "image": "https://www.livemint.com/lm-img/img/2026/10/13/1600x900/logo/INDIA-NEF-18_1791883097031_OgfO_1791883145209_jt0g_76c8f73d-f943-4219-89cd-48e684571363_HQzm_1791888632509_yBak_763ce89e-0152-4e81-9198-409ccf53eec6_mWo8.jpg",
-          "why": "The finance minister's assessment that private investment is picking up as firms clean their balance sheets signals a possible broadening of growth beyond government spending.",
+          "why": "The finance minister says cleaner corporate balance sheets are lifting private investment in India, a signal for industrial activity and jobs.",
           "implications": [
-            "If corporate investment rises, hiring in construction, manufacturing and related services could gradually improve.",
-            "Banks may see stronger demand for business loans as companies with cleaner balance sheets expand.",
-            "Firms investing outside their core areas could create new supplier opportunities for smaller businesses."
+            "Sitharaman says Indian firms are investing both inside and outside their core business areas.",
+            "Broader private investment could support hiring and demand, though the report gives no figures."
           ],
           "reports": [
             {
@@ -2306,7 +3091,64 @@
               "image": "https://www.livemint.com/lm-img/img/2026/10/13/1600x900/logo/INDIA-NEF-18_1791883097031_OgfO_1791883145209_jt0g_76c8f73d-f943-4219-89cd-48e684571363_HQzm_1791888632509_yBak_763ce89e-0152-4e81-9198-409ccf53eec6_mWo8.jpg"
             }
           ],
-          "thread": "t1sxe7lh"
+          "thread": "t1sxe7lh",
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-13T20:27:35.417Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "low",
+              "reason": "Official assessment; no direct mechanism or figures reported"
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Investment cycles take months to show results"
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "Single outlet, on-record finance minister"
+            },
+            "affected": [
+              {
+                "group": "Manufacturing workers",
+                "direction": "up",
+                "what": "possible new job openings",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Official data on private capital expenditure",
+                "when": "",
+                "where": "Ministry of Finance"
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Firms clean balance sheets",
+                    "detail": "Sitharaman says Indian companies have strengthened their balance sheets.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Private investment picks up",
+                    "detail": "Firms are investing within and beyond their core areas.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Jobs may follow",
+                    "detail": "New projects could add industrial employment and demand.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "Announced investment plans fail to turn into actual projects"
+              }
+            }
+          }
         },
         {
           "id": "silpg4g",
@@ -2384,11 +3226,11 @@
           "date": "2026-10-13T02:47:13.000Z",
           "relevance": "medium",
           "image": "https://www.livemint.com/lm-img/img/2026/10/13/1600x900/maxresdefault_1791862404133_eUg3_1791862409930_knCb_b9f04e4f-d696-4703-b969-bf933866aea1_EyYX.jpg",
-          "why": "The IMF's upgrade of India's growth outlook for FY27 and FY28, credited to strong domestic demand, signals greater international confidence in the economy's near-term momentum.",
+          "why": "The IMF raised India's FY27 growth forecast by 60 bps to 7%, citing strong domestic demand, though higher energy prices remain a risk.",
           "implications": [
-            "Stronger expected growth could support hiring and income prospects across consumer-facing and service sectors.",
-            "A better outlook may make lenders and businesses more willing to expand credit and investment plans.",
-            "Higher growth estimates could ease pressure on government finances by supporting tax collections, though this depends on actual outcomes."
+            "The IMF joins the RBI, World Bank and OECD in upgrading India's growth outlook, and also upgraded FY28.",
+            "Strong domestic demand is the main driver cited for India's upgrade.",
+            "Higher energy prices and global uncertainty could weaken the outlook, amid what the IMF calls a 'split' global picture."
           ],
           "reports": [
             {
@@ -2422,7 +3264,74 @@
               "image": "https://th-i.thgim.com/public/incoming/v6pnjs/article71577839.ece/alternates/LANDSCAPE_1200/2026-10-13T025543Z_2140086123_RC222OAXN7M9_RTRMADP_3_IMF-WORLDBANK.JPG"
             }
           ],
-          "thread": "twx930a"
+          "thread": "twx930a",
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-13T20:27:35.417Z",
+            "tier": "standard",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "low",
+              "reason": "Forecast revision; reports give no direct household or trade mechanism."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Forecast covers FY27 and FY28 growth."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "Two outlets citing the IMF World Economic Outlook report."
+            },
+            "affected": [
+              {
+                "group": "Government finances",
+                "direction": "up",
+                "what": "revenue outlook",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Next IMF World Economic Outlook revision to India's forecast",
+                "when": "",
+                "where": "IMF"
+              },
+              {
+                "what": "RBI's next growth forecast update",
+                "when": "",
+                "where": "Reserve Bank of India"
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "IMF lifts FY27 forecast",
+                    "detail": "India's FY27 growth forecast raised by 60 bps to 7%.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Domestic demand drives upgrade",
+                    "detail": "Strong domestic demand cited; RBI, World Bank and OECD also upgraded.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Planning assumptions may shift",
+                    "detail": "Consistent upgrades could support business and government revenue expectations.",
+                    "basis": "inferred"
+                  },
+                  {
+                    "step": "Energy prices pose risk",
+                    "detail": "Higher energy prices and global uncertainty remain risks to the outlook.",
+                    "basis": "reported"
+                  }
+                ],
+                "breaks_if": "Higher energy prices or global uncertainty weaken domestic demand."
+              }
+            }
+          }
         },
         {
           "id": "sql4056",
@@ -2432,11 +3341,10 @@
           "date": "2026-10-13T05:41:53.000Z",
           "relevance": "medium",
           "image": "https://www.livemint.com/lm-img/img/2026/10/13/1600x900/logo/anc_1791869902396_Tq88_1791869902534_s0st_259b1745-129c-482c-88a0-63545ad79828_SA47.png",
-          "why": "The pension regulator wants voluntary NPS contributions exempted from UPI payment processing fees due to take effect on 15 October, a move meant to protect retirement saving.",
+          "why": "UPI processing fees starting 15 October could add costs to voluntary NPS contributions unless the finance ministry grants the exemption the pension regulator requested.",
           "implications": [
-            "If the request is not accepted, NPS subscribers paying voluntary contributions through UPI could face extra charges from 15 October.",
-            "An exemption would keep small, frequent pension top-ups free, which may encourage more people to save for retirement.",
-            "The finance ministry's decision could set a precedent for exempting other savings payments from UPI fees."
+            "PFRDA has asked the finance ministry to exempt NPS voluntary contributions from the fees.",
+            "Without an exemption, NPS contributions made by UPI could carry processing fees."
           ],
           "reports": [
             {
@@ -2450,7 +3358,74 @@
               "image": "https://www.livemint.com/lm-img/img/2026/10/13/1600x900/logo/anc_1791869902396_Tq88_1791869902534_s0st_259b1745-129c-482c-88a0-63545ad79828_SA47.png"
             }
           ],
-          "thread": "t1m3ppj6"
+          "thread": "t1m3ppj6",
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-13T20:27:35.417Z",
+            "tier": "quick",
+            "primary": "policy_tracker",
+            "complement": null,
+            "features": [
+              "policy_stage",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "Payment fees affecting NPS pension contributors."
+            },
+            "horizon": {
+              "value": "now",
+              "reason": "Fees take effect on 15 October."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "Single outlet reporting a regulator's request."
+            },
+            "affected": [
+              {
+                "group": "Depositors & savers",
+                "direction": "unclear",
+                "what": "fees on NPS contributions",
+                "basis": "reported"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Finance ministry decision on the NPS UPI fee exemption",
+                "when": "15 October",
+                "where": "Finance ministry"
+              }
+            ],
+            "frameworks": {
+              "policy_tracker": {
+                "instrument": {
+                  "name": "Payment processing fees on UPI",
+                  "issuer": "",
+                  "jurisdiction": "India"
+                },
+                "stages": [
+                  {
+                    "stage": "announced",
+                    "date": "",
+                    "status": "done"
+                  },
+                  {
+                    "stage": "in_force",
+                    "date": "15 October",
+                    "status": "next"
+                  }
+                ],
+                "obligations": [
+                  {
+                    "who": "UPI payers, including NPS voluntary contributors u",
+                    "what": "Payment processing fees apply",
+                    "from": "15 October"
+                  }
+                ],
+                "applies_to_india": "yes"
+              }
+            }
+          }
         },
         {
           "id": "sfmr8cd",
@@ -2484,11 +3459,11 @@
           "date": "2026-10-10T05:28:49.000Z",
           "relevance": "high",
           "image": "https://th-i.thgim.com/public/news/national/7wfg7c/article71567168.ece/alternates/LANDSCAPE_1200/iStock-586946352.jpg",
-          "why": "RBI is supplying dollars directly to state-run oil firms to reduce rupee pressure as oil prices rise, a notable step in currency management.",
+          "why": "RBI is supplying dollars directly to three state-run oil firms to ease rupee pressure as oil prices rise, touching India's oil import bill and fuel costs.",
           "implications": [
-            "Easing dollar demand from oil importers may reduce rupee volatility in coming weeks.",
-            "A steadier rupee could limit further pressure on fuel and imported goods prices.",
-            "Support is open-ended, so it may signal continued strain from high crude prices."
+            "Oil firms' dollar purchases move off the open market, which traders expect to reduce dollar demand and volatility.",
+            "The rupee jumped 82 paise to 94.96 against the dollar in early trade on October 13.",
+            "Higher costs for certain hedging transactions could raise expenses for businesses that hedge currency risk."
           ],
           "reports": [
             {
@@ -2522,7 +3497,107 @@
               "image": "https://th-i.thgim.com/public/news/international/agrub4/article71577950.ece/alternates/LANDSCAPE_1200/Rupee.jpg"
             }
           ],
-          "thread": "t8nzveu"
+          "thread": "t8nzveu",
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-13T20:29:23.827Z",
+            "tier": "standard",
+            "primary": "pass_through",
+            "complement": null,
+            "features": [
+              "price_move",
+              "allocation"
+            ],
+            "exposure": {
+              "level": "high",
+              "reason": "Crude oil is a top import; rupee and fuel costs affect households."
+            },
+            "horizon": {
+              "value": "now",
+              "reason": "Window live from October 12; rupee moved October 13."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "Two outlets report an official RBI announcement."
+            },
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "fuel cost pressure",
+                "basis": "inferred"
+              },
+              {
+                "group": "Importers & traders",
+                "direction": "up",
+                "what": "currency hedging costs",
+                "basis": "reported"
+              },
+              {
+                "group": "Large exporters",
+                "direction": "mixed",
+                "what": "hedging costs, rupee value",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Rupee movement against the US dollar after the window opens",
+                "when": "",
+                "where": "Reserve Bank of India"
+              },
+              {
+                "what": "RBI notice changing or ending the oil-company dollar window",
+                "when": "",
+                "where": "Reserve Bank of India"
+              },
+              {
+                "what": "Fuel price revisions by state-run oil companies",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "frameworks": {
+              "pass_through": {
+                "driver": {
+                  "variable": "Global oil prices and dollar demand",
+                  "direction": "up",
+                  "size": ""
+                },
+                "product": "petrol & diesel",
+                "rungs": [
+                  {
+                    "stage": "Global crude price → Oil firms' dollar bill",
+                    "pass": "likely",
+                    "damper": "Inventory and purchase contracts could delay impact",
+                    "lag": "weeks"
+                  },
+                  {
+                    "stage": "Dollar demand → Rupee weakness",
+                    "pass": "partial",
+                    "damper": "RBI dollar window and costlier hedging curb market demand",
+                    "lag": "days"
+                  },
+                  {
+                    "stage": "Weaker rupee → Oil firms' rupee costs",
+                    "pass": "partial",
+                    "damper": "Direct RBI dollar supply may cushion currency volatility",
+                    "lag": "weeks"
+                  },
+                  {
+                    "stage": "Oil firms' costs → Pump price",
+                    "pass": "unclear",
+                    "damper": "No pump price change reported; taxes could absorb some",
+                    "lag": "months"
+                  }
+                ],
+                "end_user": {
+                  "group": "Fuel & LPG users",
+                  "effect": "Fuel prices could face pressure if oil stays high; RBI steps may ease rupee-linked costs."
+                }
+              }
+            }
+          }
         },
         {
           "id": "sl0hkae",
@@ -4712,11 +5787,11 @@
           "date": "2026-10-13T15:31:10.000Z",
           "relevance": "medium",
           "image": "https://th-i.thgim.com/public/incoming/ut35x5/article71580580.ece/alternates/LANDSCAPE_1200/2026-10-09T112738Z_1201529500_RC2SRLA8EZ39_RTRMADP_3_RUSSIA-SPACE-STARLINK.JPG",
-          "why": "Swadeshi Jagran Manch's call to deny Starlink a licence adds pressure on how India regulates satellite internet and balances security with connectivity.",
+          "why": "An RSS-affiliated body is lobbying the Centre to deny Starlink a licence on security grounds. This adds pressure to India's satellite internet licensing debate.",
           "implications": [
-            "If the Centre heeds the demand, satellite broadband options for remote and rural users could be delayed.",
-            "Any licensing for satellite internet providers may come with stricter conditions to allow service curbs during law-and-order situations.",
-            "Continued policy uncertainty could slow planning by businesses that depend on connectivity in underserved areas."
+            "Swadeshi Jagran Manch wants the Centre to deny Starlink a licence, citing security concerns.",
+            "It backs the state's ability to curtail internet services during riots, terrorism and law-and-order situations.",
+            "This could add political pressure on how satellite internet licences are decided."
           ],
           "reports": [
             {
@@ -4730,7 +5805,66 @@
               "image": "https://th-i.thgim.com/public/incoming/ut35x5/article71580580.ece/alternates/LANDSCAPE_1200/2026-10-09T112738Z_1201529500_RC2SRLA8EZ39_RTRMADP_3_RUSSIA-SPACE-STARLINK.JPG"
             }
           ],
-          "thread": "t1ad3bzi"
+          "thread": "t1ad3bzi",
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-13T20:26:15.088Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "Concerns one industry's licensing; no household mechanism is reported."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "A licensing decision has no reported timeline."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "Single outlet reporting an advocacy group's demand."
+            },
+            "affected": [
+              {
+                "group": "IT & services workers",
+                "direction": "unclear",
+                "what": "satellite internet access options",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Centre's decision on Starlink's licence",
+                "when": "",
+                "where": "Department of Telecommunications"
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "SJM urges licence denial",
+                    "detail": "RSS economic wing asks the Centre to deny Starlink a licence over security.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Cites internet shutdown control",
+                    "detail": "Backs curtailing internet during riots, terrorism and law-and-order situations.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Licensing scrutiny may intensify",
+                    "detail": "Security conditions on satellite internet licences could face closer debate.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The Centre's licensing decision is not influenced by the group's demand."
+              }
+            }
+          }
         },
         {
           "id": "s17sbazg",
@@ -4774,11 +5908,10 @@
           "date": "2026-10-13T04:06:29.000Z",
           "relevance": "medium",
           "image": "https://www.livemint.com/lm-img/img/2026/10/13/1600x900/logo/Sridhar_Vembu_AI_1791864044900_gV9Y_1791864045032_7pBw_49c508d2-f629-4179-8212-c12434254cbb_FG8J.jpg",
-          "why": "Zoho, a major Indian software employer, is skipping its usual pay hike over rising AI costs, and its co-founder warns of a grim outlook for software jobs as Indian IT firms rethink hiring and skills.",
+          "why": "Zoho's cancellation of annual pay hikes, citing AI costs, signals pressure on wages and hiring across India's software workforce.",
           "implications": [
-            "Zoho employees will not get their usual pay hike this year, which may squeeze household budgets.",
-            "Other IT employers could also hold back raises or slow hiring, making software job searches harder for graduates.",
-            "Tech workers may face growing pressure to retrain in AI-related skills to stay employable."
+            "Zoho employees get no usual pay hike this year.",
+            "Vembu warns of a grim outlook for software jobs as Indian IT firms rethink hiring."
           ],
           "reports": [
             {
@@ -4792,7 +5925,57 @@
               "image": "https://www.livemint.com/lm-img/img/2026/10/13/1600x900/logo/Sridhar_Vembu_AI_1791864044900_gV9Y_1791864045032_7pBw_49c508d2-f629-4179-8212-c12434254cbb_FG8J.jpg"
             }
           ],
-          "thread": "t1ehfi7c"
+          "thread": "t1ehfi7c",
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-13T20:29:23.827Z",
+            "tier": "quick",
+            "primary": "winners_losers",
+            "complement": null,
+            "features": [
+              "allocation"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "One industry: IT pay and hiring."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Pay freeze this year; hiring rethink unfolds gradually."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "Single outlet, on-record company co-founder."
+            },
+            "affected": [
+              {
+                "group": "IT & services workers",
+                "direction": "down",
+                "what": "pay hikes, hiring prospects",
+                "basis": "reported"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Other Indian IT firms' pay hike and hiring announcements",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "frameworks": {
+              "winners_losers": {
+                "groups": [
+                  {
+                    "group": "IT & services workers",
+                    "direction": "lose",
+                    "directness": "direct",
+                    "mechanism": "No usual pay hike at Zoho; IT firms rethinking hiring amid AI costs."
+                  }
+                ],
+                "not_affected": ""
+              }
+            }
+          }
         },
         {
           "id": "suilzal",
@@ -5934,11 +7117,10 @@
           "date": "2026-10-13T09:46:23.000Z",
           "relevance": "medium",
           "image": "https://www.livemint.com/lm-img/img/2026/10/13/1600x900/logo/MSME-ministry-to-launch-Champions-2-0-portal-and-a_1687607284019_1791884484955_KrJT_1003d61e-3832-4402-a0e5-4f6a0600eebb_9ozE.jpg",
-          "why": "The MSME ministry's top official is publicly pressing large businesses to share technology and integrate smaller firms into their supply chains, as MSMEs face global disruptions and rising costs.",
+          "why": "India's MSME secretary is urging large firms to transfer technology and integrate smaller suppliers as MSMEs face global disruptions and rising costs.",
           "implications": [
-            "Small manufacturers may see more vendor development and technology-sharing offers from large buyers if this push gains traction.",
-            "MSMEs struggling with rising costs could gain steadier orders through closer supply chain ties with bigger firms.",
-            "Government may follow with schemes or guidance encouraging large firms to support MSME suppliers, though nothing specific is announced yet."
+            "MSME secretary Bharat Khera wants more technology transfer, vendor development and supply chain integration.",
+            "This is a call, not a policy; smaller firms could gain if large businesses respond."
           ],
           "reports": [
             {
@@ -5952,7 +7134,64 @@
               "image": "https://www.livemint.com/lm-img/img/2026/10/13/1600x900/logo/MSME-ministry-to-launch-Champions-2-0-portal-and-a_1687607284019_1791884484955_KrJT_1003d61e-3832-4402-a0e5-4f6a0600eebb_9ozE.jpg"
             }
           ],
-          "thread": "t1n37tcq"
+          "thread": "t1n37tcq",
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-13T20:27:35.417Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "low",
+              "reason": "Official appeal; no binding measure reported"
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Supplier upgrades and integration take time"
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "Single outlet, on-record ministry secretary"
+            },
+            "affected": [
+              {
+                "group": "MSME exporters",
+                "direction": "unclear",
+                "what": "competitiveness and costs",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Any MSME ministry scheme on vendor development",
+                "when": "",
+                "where": "Ministry of MSME"
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "MSMEs face rising costs",
+                    "detail": "Smaller firms face global disruptions and higher costs.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Secretary urges large-firm support",
+                    "detail": "Khera calls for technology transfer and supply chain integration.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Supplier links may deepen",
+                    "detail": "Large firms could develop more MSME vendors if they respond.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "Large businesses do not act on the ministry's call"
+              }
+            }
+          }
         },
         {
           "id": "s1nmcw36",
@@ -5962,11 +7201,10 @@
           "date": "2026-10-13T01:05:26.000Z",
           "relevance": "medium",
           "image": "https://www.livemint.com/lm-img/img/2026/10/13/1600x900/logo/INDIA-VINFAST-27_1755574721143_1755574729413_1791853039849_b5Or_2b4ee5b7-360a-4d44-b260-a5b81b39c022_8bwE.jpg",
-          "why": "Indian auto and component makers setting up bases in China to secure rare-earth inputs and cut procurement costs show how rising raw material costs and trade barriers are pressuring domestic manufacturing supply chains.",
+          "why": "Mint reports that Indian auto firms are setting up China bases to cut procurement costs and secure rare-earth inputs amid trade barriers.",
           "implications": [
-            "Easier access to rare-earth and other inputs may help ease supply disruptions for electric two-wheeler and auto component production in India.",
-            "Lower procurement costs could help contain vehicle and tyre price increases for consumers, though this is not assured.",
-            "Shifting some sourcing and functions offshore may raise questions about local supplier orders and the domestic manufacturing push."
+            "Auto firms are hiring Chinese executives and setting up offshore units for procurement.",
+            "Securing rare-earth inputs could steady supply for Indian auto production."
           ],
           "reports": [
             {
@@ -5980,7 +7218,69 @@
               "image": "https://www.livemint.com/lm-img/img/2026/10/13/1600x900/logo/INDIA-VINFAST-27_1755574721143_1755574729413_1791853039849_b5Or_2b4ee5b7-360a-4d44-b260-a5b81b39c022_8bwE.jpg"
             }
           ],
-          "thread": "tnng90q"
+          "thread": "tnng90q",
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-13T20:29:23.827Z",
+            "tier": "quick",
+            "primary": "winners_losers",
+            "complement": null,
+            "features": [
+              "allocation"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "Affects one industry's input sourcing."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Offices and units are being set up."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "Single outlet."
+            },
+            "affected": [
+              {
+                "group": "Importers & traders",
+                "direction": "down",
+                "what": "procurement costs",
+                "basis": "reported"
+              },
+              {
+                "group": "Manufacturing workers",
+                "direction": "unclear",
+                "what": "input supply stability",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Further Indian auto firms opening China procurement units",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "frameworks": {
+              "winners_losers": {
+                "groups": [
+                  {
+                    "group": "Importers & traders",
+                    "direction": "gain",
+                    "directness": "direct",
+                    "mechanism": "China units aim to optimise procurement costs and bypass trade bottlenecks."
+                  },
+                  {
+                    "group": "Manufacturing workers",
+                    "direction": "unclear",
+                    "directness": "indirect",
+                    "mechanism": "Secured rare-earth inputs could steady domestic auto production."
+                  }
+                ],
+                "not_affected": ""
+              }
+            }
+          }
         },
         {
           "id": "s1dve26d",
@@ -6743,11 +8043,10 @@
           "date": "2026-10-13T04:57:36.000Z",
           "relevance": "medium",
           "image": "https://www.livemint.com/lm-img/img/2026/10/13/1600x900/logo/New-Delhi--In-this-Tuesday--March-31--2020-file-ph_1732251850962_1791867413190_Rxg1_b1c1e8dd-a5aa-4999-ba76-5a6def8c3423_DaZ3.jpg",
-          "why": "FSSAI is preparing tighter food safety rules for quick-commerce platforms such as Blinkit, Instamart and Amazon Now, as enforcement over violations rises.",
+          "why": "FSSAI is preparing tighter food-safety rules for quick-commerce platforms such as Blinkit, Instamart and Amazon Now, aiming to make them accountable.",
           "implications": [
-            "Consumers ordering groceries and food online may get stronger safety safeguards and clearer accountability when problems arise.",
-            "Quick-commerce platforms and their dark stores could face stricter storage, handling and compliance checks, possibly raising operating costs.",
-            "Small suppliers selling through these apps may need to meet tougher food safety documentation requirements."
+            "Quick-commerce platforms face rising enforcement over food safety violations.",
+            "Tighter rules could raise compliance obligations for platforms and their sellers."
           ],
           "reports": [
             {
@@ -6761,7 +8060,66 @@
               "image": "https://www.livemint.com/lm-img/img/2026/10/13/1600x900/logo/New-Delhi--In-this-Tuesday--March-31--2020-file-ph_1732251850962_1791867413190_Rxg1_b1c1e8dd-a5aa-4999-ba76-5a6def8c3423_DaZ3.jpg"
             }
           ],
-          "thread": "tsdtw0k"
+          "thread": "tsdtw0k",
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-13T20:27:35.417Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "Compliance obligations for one industry."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Rules are still being prepared."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "Single outlet quoting FSSAI."
+            },
+            "affected": [
+              {
+                "group": "Food shoppers",
+                "direction": "up",
+                "what": "food safety accountability",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "FSSAI releases tighter rules for quick-commerce platforms",
+                "when": "",
+                "where": "FSSAI"
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "FSSAI prepares tighter rules",
+                    "detail": "Rules target Blinkit, Instamart and Amazon Now.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Platforms made accountable",
+                    "detail": "FSSAI says it is 'trying to tighten, make accountable'.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Compliance burden may rise",
+                    "detail": "Platforms could face more food-safety checks and compliance costs.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "FSSAI does not finalise the tighter rules."
+              }
+            }
+          }
         },
         {
           "id": "s1krxmxc",
@@ -6771,11 +8129,11 @@
           "date": "2026-10-12T16:19:04.000Z",
           "relevance": "medium",
           "image": "https://th-i.thgim.com/public/incoming/m3pdnq/article71575617.ece/alternates/LANDSCAPE_1200/9712_30_9_2026_18_54_34_1__DSC8775.JPG",
-          "why": "The Northeast monsoon is expected over the south peninsula within days, and it is a key rain source for southern farming and water supply.",
+          "why": "The IMD expects the northeast monsoon to set in over the south peninsula within two to three days, bringing heavy rain to Tamil Nadu, Kerala and Karnataka this week.",
           "implications": [
-            "Farmers in southern states may be able to start sowing that depends on Northeast monsoon rains.",
-            "Reservoir and groundwater levels in the south could improve, which may ease drinking water and irrigation supply.",
-            "Residents and local authorities in the south may need to prepare for heavy rain spells and possible disruption."
+            "Southern states may see heavy rain spells this week as the northeast monsoon begins.",
+            "The onset coincides with the southwest monsoon withdrawing from the remaining parts of the country.",
+            "Heavy rain could disrupt local travel, fishing and farm work in the affected states."
           ],
           "reports": [
             {
@@ -6799,7 +8157,85 @@
               "image": "https://www.livemint.com/lm-img/img/2026/10/13/1600x900/logo/Rain_1791858690158_r7Vy_1791858695234_eLpN_b4bbf9f4-0733-4b45-ae30-081c0665b111_y6Yy.jpg"
             }
           ],
-          "thread": "t25dibr"
+          "thread": "t25dibr",
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-13T20:29:23.827Z",
+            "tier": "standard",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "medium",
+              "reason": "Regional heavy rain; the reports describe no price or supply effect."
+            },
+            "horizon": {
+              "value": "now",
+              "reason": "Onset expected within two to three days."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "Two outlets citing IMD and the Regional Meteorological Centre."
+            },
+            "affected": [
+              {
+                "group": "Farmers",
+                "direction": "mixed",
+                "what": "field work, water availability",
+                "basis": "inferred"
+              },
+              {
+                "group": "Fishers",
+                "direction": "down",
+                "what": "days at sea",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Official declaration of northeast monsoon onset over the south peninsula",
+                "when": "",
+                "where": "India Meteorological Department"
+              },
+              {
+                "what": "Southwest monsoon withdrawal from the remaining parts of the country",
+                "when": "",
+                "where": "India Meteorological Department"
+              },
+              {
+                "what": "Heavy rain warnings for Tamil Nadu, Kerala, Karnataka",
+                "when": "",
+                "where": "Regional Meteorological Centre"
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Northeast monsoon onset expected",
+                    "detail": "Likely to set in over the south peninsula in two to three days.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Southwest monsoon withdraws",
+                    "detail": "The onset coincides with withdrawal from the remaining parts of the country.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Heavy rain in southern states",
+                    "detail": "IMD predicts heavy rain in Tamil Nadu, Kerala and Karnataka this week.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Local disruption possible",
+                    "detail": "Heavy spells could disrupt travel, fishing and farm operations locally.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "Onset is delayed beyond the forecast window or rainfall stays light."
+              }
+            }
+          }
         },
         {
           "id": "s2mwtz0",
@@ -7201,6 +8637,89 @@
       "name": "Policy & Governance",
       "items": [
         {
+          "id": "sga8dmo",
+          "headline": "Muslims disproportionately flagged in Delhi SIR",
+          "url": "https://www.thehindu.com/data/muslims-disproportionately-flagged-in-delhi-sir/article71580772.ece",
+          "source": "thehindu",
+          "date": "2026-10-13T19:22:11.000Z",
+          "relevance": "medium",
+          "image": "https://th-i.thgim.com/public/incoming/zruy1/article71581147.ece/alternates/LANDSCAPE_1200/Election15.jpg",
+          "why": "The Hindu reports that Election Commission software flagged Muslim electors disproportionately during Delhi's SIR, raising questions over whether some voters could face extra scrutiny before the final roll.",
+          "implications": [
+            "The Hindu reports that Muslims are 13.6% of Delhi's draft electors but 20.3% of those flagged for logical discrepancies.",
+            "The Hindu reports that Muslims made up 30% of those flagged under five reasons indicative of family size.",
+            "Flagged electors could face added verification, which may affect their inclusion in the final roll."
+          ],
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-13T20:23:41.137Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "medium",
+              "reason": "Verification burden on flagged Delhi electors; no household-cost mechanism reported."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Draft roll is under revision; flags may affect the final roll."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "Single-outlet investigation; no official response reported."
+            },
+            "affected": [],
+            "watch": [
+              {
+                "what": "Election Commission response to The Hindu's findings",
+                "when": "",
+                "where": "Election Commission of India"
+              },
+              {
+                "what": "Publication of Delhi's final electoral roll",
+                "when": "",
+                "where": "Chief Electoral Officer, Delhi"
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "ERONET flags Delhi electors",
+                    "detail": "The Hindu reports the software flagged electors for logical discrepancies on the draft roll.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Muslims over-represented among flagged",
+                    "detail": "20.3% of those flagged versus 13.6% of electors, per The Hindu.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Flagged voters may face scrutiny",
+                    "detail": "Flagged electors could need extra verification before the final roll.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "Flags are cleared without deletions or the Election Commission revises its checks."
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "thehindu",
+              "headline": "Muslims disproportionately flagged in Delhi SIR",
+              "url": "https://www.thehindu.com/data/muslims-disproportionately-flagged-in-delhi-sir/article71580772.ece",
+              "date": "2026-10-13T19:22:11.000Z",
+              "kind": "investigative",
+              "summary": "Muslims, who form 13.6% of electors on Delhi’s draft roll, made up 20.3% of those flagged for ‘logical discrepancies’ and 30% of those flagged under five reasons indicative of family size by the Election Commission’s ERONET software; in Bihar, which didn’t have ‘logical discrepancy’ checks, Muslims accounted for 18.4%…",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/incoming/zruy1/article71581147.ece/alternates/LANDSCAPE_1200/Election15.jpg"
+            }
+          ],
+          "thread": "t1iy3j15"
+        },
+        {
           "id": "s108oc0e",
           "headline": "Rahul Gandhi vs Gyanesh Kumar: PIL challenges SIR in Supreme Court as thousands join INDIA bloc's protest",
           "url": "https://www.livemint.com/news/india/rahul-gandhi-vs-gyanesh-kumar-pil-challenges-sir-in-supreme-court-as-thousands-join-india-blocs-protest-11791809717316.html",
@@ -7208,11 +8727,11 @@
           "date": "2026-10-12T13:15:26.000Z",
           "relevance": "medium",
           "image": "https://www.livemint.com/lm-img/img/2026/10/12/1600x900/maxresdefault_1791812902739_BbpE_1791812909983_8RcS_8c6381bc-cbbf-4dc0-ba8d-c4babf7d656d_c9kA.jpg",
-          "why": "A PIL in the Supreme Court is challenging the SIR voter roll revision amid Opposition allegations of irregularities, which raises questions about how electoral rolls are being updated.",
+          "why": "A Supreme Court challenge to the Election Commission's voter-roll revision (SIR) could shape how electoral rolls are compiled and scrutinised nationwide.",
           "implications": [
-            "Voters may want to check that their names appear correctly on the electoral roll.",
-            "A Supreme Court ruling could change or pause how the voter roll revision is carried out.",
-            "Continued protests could keep the Election Commission's processes under close public scrutiny."
+            "The Supreme Court Registry has cleared and numbered Rahul Gandhi's plea against the SIR within 24 hours.",
+            "The petition seeks full disclosure of Election Commission records and an independent probe into the Chief Election Commissioner's alleged unilateral use of power.",
+            "Opposition protests and resignation demands may keep the Election Commission's conduct under public and judicial scrutiny."
           ],
           "reports": [
             {
@@ -7246,7 +8765,94 @@
               "image": "https://th-i.thgim.com/public/incoming/rr9u44/article71577874.ece/alternates/LANDSCAPE_1200/PTI10_12_2026_000402B.jpg"
             }
           ],
-          "thread": "t1iy3j15"
+          "thread": "t1iy3j15",
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-13T20:25:16.042Z",
+            "tier": "standard",
+            "primary": "timeline",
+            "complement": null,
+            "features": [
+              "fast_moving",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "Concerns electoral roll procedures and institutional oversight, not household costs."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Plea numbered; hearing date not yet reported."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "Two outlets agree; irregularity allegations are Opposition claims."
+            },
+            "affected": [],
+            "watch": [
+              {
+                "what": "Supreme Court lists the SIR plea for hearing",
+                "when": "",
+                "where": "Supreme Court of India"
+              },
+              {
+                "what": "Election Commission responds to irregularity allegations and disclosure demand",
+                "when": "",
+                "where": "Election Commission of India"
+              }
+            ],
+            "frameworks": {
+              "timeline": {
+                "entries": [
+                  {
+                    "when": "February 2025",
+                    "what": "Gyanesh Kumar becomes Chief Election Commissioner",
+                    "actor": "Gyanesh Kumar",
+                    "outlet": "Mint",
+                    "type": "action",
+                    "verification": "confirmed"
+                  },
+                  {
+                    "when": "2026-10-12",
+                    "what": "Opposition protests alleging irregularities in voter roll revision, seeks CEC's resignation",
+                    "actor": "Congress-led INDIA bloc",
+                    "outlet": "Mint",
+                    "type": "claim",
+                    "verification": "claimed"
+                  },
+                  {
+                    "when": "2026-10-12",
+                    "what": "PIL filed in Supreme Court challenging the SIR exercise",
+                    "actor": "Rahul Gandhi",
+                    "outlet": "Mint",
+                    "type": "action",
+                    "verification": "confirmed"
+                  },
+                  {
+                    "when": "2026-10-13",
+                    "what": "Petition seeks full EC records disclosure and independent probe of CEC",
+                    "actor": "Rahul Gandhi",
+                    "outlet": "The Hindu",
+                    "type": "claim",
+                    "verification": "claimed"
+                  },
+                  {
+                    "when": "2026-10-13",
+                    "what": "Supreme Court Registry clears and numbers the plea within 24 hours",
+                    "actor": "Supreme Court Registry",
+                    "outlet": "The Hindu",
+                    "type": "action",
+                    "verification": "confirmed"
+                  }
+                ],
+                "current_status": "Plea cleared and numbered by the Supreme Court Registry; protests continue; no hearing date reported.",
+                "open_questions": [
+                  "When will the Supreme Court hear the plea?",
+                  "How will the Election Commission respond to the allegations?"
+                ]
+              }
+            }
+          }
         },
         {
           "id": "s1f4fgu7",
@@ -7256,11 +8862,11 @@
           "date": "2026-10-13T15:36:27.000Z",
           "relevance": "medium",
           "image": "https://th-i.thgim.com/public/incoming/g8i4ah/article71579855.ece/alternates/LANDSCAPE_1200/20260721148L.jpg",
-          "why": "L. Murugan's resignation, together with Rajya Sabha term-ends for four other Ministers and Dharmendra Pradhan's exit, leaves several vacancies in the Council of Ministers and points to a possible Cabinet reset.",
+          "why": "L. Murugan's resignation adds to several vacancies in the Council of Ministers, fuelling talk of a pre-Deepavali Cabinet reshuffle.",
           "implications": [
-            "Ministries left without ministers may see slower decisions on pending files until new appointments are made.",
-            "A pre-Deepavali reshuffle could bring new ministers, which may shift priorities in the affected portfolios.",
-            "Businesses and state governments dealing with these ministries may face short-term uncertainty over approvals and policy direction."
+            "Murugan has resigned from the Ministry and his Rajya Sabha seat.",
+            "Dharmendra Pradhan was forced to quit, and four other ministers' Rajya Sabha terms ended this year.",
+            "A reshuffle could change who leads several ministries."
           ],
           "reports": [
             {
@@ -7274,7 +8880,59 @@
               "image": "https://th-i.thgim.com/public/incoming/g8i4ah/article71579855.ece/alternates/LANDSCAPE_1200/20260721148L.jpg"
             }
           ],
-          "thread": "t1o40lka"
+          "thread": "t1o40lka",
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-13T20:25:16.042Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "No policy or cost mechanism is reported."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Reshuffle buzz points to before Deepavali."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "Single outlet; the reshuffle is speculation."
+            },
+            "affected": [],
+            "watch": [
+              {
+                "what": "Cabinet reshuffle and swearing-in of new ministers",
+                "when": "before Deepavali",
+                "where": "Rashtrapati Bhavan"
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Murugan resigns ministry, seat",
+                    "detail": "L. Murugan quits the Ministry and his Rajya Sabha seat.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Council of Ministers vacancies grow",
+                    "detail": "Pradhan's exit and ended Rajya Sabha terms leave a slew of vacancies.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Ministry leadership may change",
+                    "detail": "A reshuffle could reassign portfolios before Deepavali.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "No reshuffle happens and vacancies are handled through additional charge."
+              }
+            }
+          }
         },
         {
           "id": "st3pvxh",
@@ -7284,11 +8942,11 @@
           "date": "2026-10-09T17:33:39.000Z",
           "relevance": "high",
           "image": "https://th-i.thgim.com/public/incoming/746otl/article71565651.ece/alternates/LANDSCAPE_1200/SECURITY%20AHEAD%20CJP%20PROTEST%20NEW%20DELHI%2010.JPG",
-          "why": "A major protest against the Chief Election Commissioner has led to internet curbs, train cancellations and closures in the capital, raising civil-liberty and election-governance concerns.",
+          "why": "Protests against the Chief Election Commissioner, mass detentions and Jantar Mantar's de-notification test protest rights and are disrupting public life in Delhi and Mumbai.",
           "implications": [
-            "Commuters and travellers to Delhi may face cancelled trains, shut Metro stations and disrupted internet.",
-            "Delhi businesses could see markets closed and lost sales for the day.",
-            "Tensions over election-body credibility and protest rights may continue."
+            "Delhi braces for fresh curbs on gatherings as the protest focus shifts from Jantar Mantar to Connaught Place.",
+            "Congress leader Rahul Gandhi has called an INDIA bloc march to the Supreme Court, widening the dispute beyond CJP.",
+            "The Supreme Court cautioned against illegal detention, yet The Hindu reports journalists were detained despite its order."
           ],
           "reports": [
             {
@@ -7803,7 +9461,131 @@
               "image": "https://www.livemint.com/lm-img/img/2026/10/13/1600x900/maxresdefault_1791880427446_mcaV_1791880432301_c4KP_4a92fdc8-d0a4-4b28-98e7-e15be2ef2acb_07Te.jpg"
             }
           ],
-          "thread": "t1iy3j15"
+          "thread": "t1iy3j15",
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-13T20:29:23.827Z",
+            "tier": "deep",
+            "primary": "timeline",
+            "complement": "scenarios",
+            "features": [
+              "fast_moving",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "Curbs on gatherings and detentions in Delhi and Mumbai; no economic mechanism reported."
+            },
+            "horizon": {
+              "value": "now",
+              "reason": "Detentions and restrictions are ongoing this week."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "Two outlets agree on detentions; several key claims come from protest organisers."
+            },
+            "affected": [],
+            "watch": [
+              {
+                "what": "Delhi Police response to CJP request for a Jantar Mantar protest date",
+                "when": "2026-10-12",
+                "where": "Delhi Police"
+              },
+              {
+                "what": "INDIA bloc march to the Supreme Court",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "Further Supreme Court orders on protest detentions",
+                "when": "",
+                "where": "Supreme Court of India"
+              }
+            ],
+            "frameworks": {
+              "timeline": {
+                "entries": [
+                  {
+                    "when": "Saturday (reported 2026-10-11)",
+                    "what": "CJP says police took leaders off their flight and denied lawyer access",
+                    "actor": "CJP leaders",
+                    "outlet": "The Hindu",
+                    "type": "claim",
+                    "verification": "claimed"
+                  },
+                  {
+                    "when": "2026-10-11",
+                    "what": "Many detained near Shivaji Park as Mumbai Police prevent anti-CEC protest",
+                    "actor": "Mumbai Police",
+                    "outlet": "The Hindu",
+                    "type": "action",
+                    "verification": "confirmed"
+                  },
+                  {
+                    "when": "2026-10-11",
+                    "what": "Around 200 detained in Delhi; Supreme Court cautions against illegal detention",
+                    "actor": "Police; Supreme Court",
+                    "outlet": "Mint",
+                    "type": "action",
+                    "verification": "confirmed"
+                  },
+                  {
+                    "when": "2026-10-11",
+                    "what": "Rahul Gandhi announces INDIA bloc march to the Supreme Court",
+                    "actor": "Rahul Gandhi",
+                    "outlet": "The Hindu",
+                    "type": "action",
+                    "verification": "confirmed"
+                  },
+                  {
+                    "when": "2026-10-12",
+                    "what": "Jantar Mantar de-notified as protest site; Opposition and CJP condemn move",
+                    "actor": "Authorities; Jairam Ramesh; Abhijeet Dipke",
+                    "outlet": "The Hindu",
+                    "type": "action",
+                    "verification": "confirmed"
+                  },
+                  {
+                    "when": "2026-10-13",
+                    "what": "Dipke says Ranka, Das, Ajinkya and others detained at Jantar Mantar",
+                    "actor": "Abhijeet Dipke",
+                    "outlet": "Mint",
+                    "type": "claim",
+                    "verification": "claimed"
+                  }
+                ],
+                "current_status": "Protests continue under Delhi restrictions; Jantar Mantar de-notified; fresh detentions alleged; CJP vows nationwide protests.",
+                "open_questions": [
+                  "Will Delhi Police grant CJP a protest date?",
+                  "Will the Supreme Court act further on detentions?",
+                  "On what legal basis was Jantar Mantar de-notified?"
+                ]
+              },
+              "scenarios": {
+                "question": "Will anti-CEC protests be permitted or further restricted?",
+                "scenarios": [
+                  {
+                    "name": "Permission granted",
+                    "what": "Police give CJP a date for a peaceful protest, as the group requested.",
+                    "signal": "Delhi Police announces an approved protest date and venue",
+                    "india_effect": "Could ease curbs on gatherings in central Delhi."
+                  },
+                  {
+                    "name": "Escalation",
+                    "what": "No date given; CJP issues its own protest call and INDIA bloc marches.",
+                    "signal": "Fresh restrictions or detentions around Connaught Place or Supreme Court",
+                    "india_effect": "May further disrupt movement and footfall in central Delhi."
+                  },
+                  {
+                    "name": "Court intervention",
+                    "what": "Supreme Court acts further on illegal detention complaints.",
+                    "signal": "Supreme Court order or hearing on protest detentions",
+                    "india_effect": "Could clarify limits on detaining protesters and journalists."
+                  }
+                ]
+              }
+            }
+          }
         },
         {
           "id": "s2ru38g",
@@ -7837,11 +9619,11 @@
           "date": "2026-10-12T11:28:48.000Z",
           "relevance": "medium",
           "image": "https://www.livemint.com/lm-img/img/2026/10/12/1600x900/logo/Hospital_1791804228835_pwhm_1791804229040_cGF9_8d631e6c-2bdc-4b7a-b861-0eb42f4e7843_cNHM.jpeg",
-          "why": "The Centre is pushing states to enforce hospital price display rules, which could make healthcare costs more transparent for patients across India.",
+          "why": "The Centre has asked states to make hospitals prominently display service rates, potentially changing how patients see costs before treatment.",
           "implications": [
-            "Patients may find it easier to compare treatment and service costs before choosing a hospital.",
-            "Hospitals that do not comply could face closer scrutiny from state authorities during the compliance review.",
-            "Clearer displayed prices could reduce billing disputes between patients and hospitals."
+            "The Union health secretary has called for a comprehensive review of compliance with applicable statutory provisions.",
+            "The Health Ministry says visible rates will enable informed decisions and prevent billing disputes.",
+            "Clinical establishments are urged to display package rates for international patients on medical and Ayush visas."
           ],
           "reports": [
             {
@@ -7865,7 +9647,69 @@
               "image": "https://th-i.thgim.com/public/incoming/oqnpm6/article71574712.ece/alternates/LANDSCAPE_1200/BL13_Think_Rupee_Stethoscope.jpg"
             }
           ],
-          "thread": "t1tznfex"
+          "thread": "t1tznfex",
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-13T20:29:23.827Z",
+            "tier": "standard",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "medium",
+              "reason": "Compliance obligation for hospitals, enforced through states."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Depends on state compliance reviews and enforcement."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "Two outlets; on-record Union health secretary."
+            },
+            "affected": [
+              {
+                "group": "Travellers & pilgrims",
+                "direction": "up",
+                "what": "package rate visibility",
+                "basis": "reported"
+              }
+            ],
+            "watch": [
+              {
+                "what": "State orders or reviews on hospital price display compliance",
+                "when": "",
+                "where": "Union Health Ministry"
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Centre writes to states",
+                    "detail": "Health secretary asks states to ensure hospitals prominently display prices.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "States review compliance",
+                    "detail": "A comprehensive review of compliance with applicable statutory provisions is sought.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Hospitals display rates",
+                    "detail": "Includes package rates for international patients on medical and Ayush visas.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Fewer billing disputes possible",
+                    "detail": "Visible rates could help patients compare costs and reduce billing disputes.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "States do not enforce the existing statutory provisions on hospitals."
+              }
+            }
+          }
         },
         {
           "id": "s3cwten",
@@ -9448,24 +11292,29 @@
       "waiting": 0,
       "failedBatches": 0
     },
+    "frames": {
+      "done": 24,
+      "waiting": 176,
+      "failedBatches": 0
+    },
     "models": {
       "filter": {
         "model": "claude-haiku-5-5",
-        "calls": 2,
-        "inputTokens": 15329,
-        "outputTokens": 6124
+        "calls": 7,
+        "inputTokens": 26663,
+        "outputTokens": 14036
       },
       "analysis": {
         "model": "claude-opus-5-5",
-        "calls": 1,
-        "inputTokens": 807,
-        "outputTokens": 225
+        "calls": 9,
+        "inputTokens": 24313,
+        "outputTokens": 37741
       },
       "threads": {
         "model": "claude-sonnet-5-5",
         "calls": 2,
-        "inputTokens": 10251,
-        "outputTokens": 399
+        "inputTokens": 10936,
+        "outputTokens": 354
       }
     }
   },
