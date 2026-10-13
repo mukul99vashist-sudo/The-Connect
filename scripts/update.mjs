@@ -96,7 +96,8 @@ const DESKS = [
 const MODELS = {
   filter:   [process.env.FILTER_MODEL   || "claude-haiku-5-5",  "claude-sonnet-5-5"],  // keep/reject + same-story matching (high volume)
   analysis: [process.env.ANALYSIS_MODEL || "claude-opus-5-5",   "claude-sonnet-5-5"],  // why it matters + implications for kept stories
-  threads:  [process.env.THREAD_MODEL   || "claude-sonnet-5-5", "claude-haiku-5-5"]    // story threads and "How we got here"
+  threads:  [process.env.THREAD_MODEL   || "claude-sonnet-5-5", "claude-haiku-5-5"],   // story threads and "How we got here"
+  stats:    [process.env.STATS_MODEL    || "claude-sonnet-5-5", "claude-opus-5-5"]     // official statistics via web search
 };
 let usage = {};   // job -> { model, calls, inputTokens, outputTokens }
 const SECTORS = [
@@ -725,6 +726,133 @@ async function reframeRecent(data, mode) {
   return { done, waiting: Math.max(0, all.length - done), failedBatches: failed };
 }
 
+// ---------- Statistics layer: official figures behind the story, each one checked against its source ----------
+// Sonnet searches ONLY official domains. It must answer in a line format; every data point keeps the citation
+// the search attached to it, and code keeps a point only if its number appears in the cited source text
+// from an allowed domain. A series needs at least 3 verified points to be shown.
+const STATS_V = 1;
+const STATS_LIMIT = 6;          // stories per desk per run that get a statistics search
+const STATS_MIN_POINTS = 3;
+const OFFICIAL_DOMAINS = [
+  // India
+  "rbi.org.in", "mospi.gov.in", "commerce.gov.in", "dgciskol.gov.in", "ppac.gov.in", "pib.gov.in", "data.gov.in", "mea.gov.in",
+  "dgca.gov.in", "cea.nic.in", "agriwelfare.gov.in", "imd.gov.in", "indiabudget.gov.in", "eaindustry.nic.in", "tradestat.commerce.gov.in",
+  // United States
+  "eia.gov", "fred.stlouisfed.org", "federalreserve.gov", "bls.gov", "census.gov", "bea.gov", "usda.gov", "treasury.gov",
+  // International organisations
+  "worldbank.org", "imf.org", "wto.org", "unctad.org", "comtradeplus.un.org", "un.org", "fao.org", "oecd.org", "adb.org", "bis.org",
+  "opec.org", "iea.org", "ilo.org", "wmo.int", "unhcr.org",
+  // Europe, UK and others
+  "ec.europa.eu", "europa.eu", "ecb.europa.eu", "ons.gov.uk", "bankofengland.co.uk", "abs.gov.au", "stats.gov.cn", "boj.or.jp"
+];
+function domainOf(u) { try { return new URL(u).hostname.replace(/^www\./, ""); } catch { return ""; } }
+function isOfficial(u) { const h = domainOf(u); return !!h && OFFICIAL_DOMAINS.some(d => h === d || h.endsWith("." + d)); }
+const digitsOnly = s => String(s).replace(/(\d),(?=\d)/g, "$1");
+
+function statsPrompt(ev, mode) {
+  const reps = (ev.reports || []).slice(-4).map(r => `- ${OUTLETS[r.source] || r.source}: ${r.headline}${r.summary ? " — " + r.summary : ""}`).join("\n");
+  return `You are the statistics desk of a news product that explains ${mode === "domestic" ? "developments inside India" : "how world news affects India"}.
+
+STORY
+Headline: ${ev.headline}
+Bottom line: ${ev.why || ""}
+Reports:
+${reps}
+
+TASK
+Find one or two OFFICIAL statistical series that directly measure what this story is about, so a reader can see the history behind it. Good examples: "US imports of crude oil from Russia, by year" for a story about the US resuming Russian oil purchases; "India's crude imports from Saudi Arabia, by year" for a Gulf supply story; "RBI repo rate at each policy meeting" for a rate decision; "India's exports of steel to the EU, by year" for a carbon-border-tax story.
+Prefer yearly values from 2019 to the latest year, or the latest 8 to 12 monthly or quarterly values. Use only government statistics agencies, central banks, ministries and international organisations.
+
+ANSWER FORMAT (nothing else, one item per line, every SERIES and POINT line must be supported by a search result):
+SERIES|<short title, ≤10 words>|<unit, e.g. thousand barrels per day, % , US$ billion>|<publisher, e.g. U.S. Energy Information Administration>
+POINT|<period, e.g. 2021 or Mar 2026>|<the number exactly as written on the source page>
+WHY|<one sentence without numbers on how this series relates to the story>
+Repeat the block for a second series if useful. Copy numbers exactly; never estimate, convert, round or calculate. If you cannot find a suitable official series, answer only: NONE`;
+}
+
+async function callStats(prompt) {
+  let lastErr;
+  for (const model of MODELS.stats) {
+    const messages = [{ role: "user", content: prompt }]; const out = []; let res, body;
+    // A long search turn can come back as "pause_turn"; send it back so the model can finish (at most twice).
+    for (let turn = 0; turn < 3; turn++) {
+      res = await fetch("https://api.anthropic.com/v1/messages", {
+        method: "POST",
+        headers: { "x-api-key": process.env.ANTHROPIC_API_KEY, "anthropic-version": "2023-06-01", "content-type": "application/json" },
+        body: JSON.stringify({ model, max_tokens: 3000, messages,
+          tools: [{ type: "web_search_20250305", name: "web_search", max_uses: 5, allowed_domains: OFFICIAL_DOMAINS }] })
+      });
+      body = await res.json().catch(() => ({}));
+      if (!res.ok) break;
+      const u = usage.stats ||= { model, calls: 0, inputTokens: 0, outputTokens: 0, searches: 0 };
+      u.model = model; u.calls++; u.inputTokens += body.usage?.input_tokens || 0; u.outputTokens += body.usage?.output_tokens || 0;
+      u.searches += body.usage?.server_tool_use?.web_search_requests || 0;
+      out.push(...(body.content || []));
+      if (body.stop_reason !== "pause_turn") break;
+      messages.push({ role: "assistant", content: body.content });
+    }
+    if (res.ok) return out;
+    lastErr = new Error(`Claude API ${res.status} (${model}, stats): ${body?.error?.message || "unknown error"}`);
+    if (!(res.status === 404 || (res.status === 400 && /model/i.test(body?.error?.message || "")))) break;
+  }
+  throw lastErr;
+}
+
+// Turn the answer into lines, each carrying the citations of the text it came from.
+function linesWithCitations(content) {
+  const lines = []; let cur = { text: "", cites: [] };
+  for (const b of content) {
+    if (b.type !== "text") continue;
+    const parts = String(b.text || "").split("\n");
+    parts.forEach((p, idx) => {
+      if (idx > 0) { lines.push(cur); cur = { text: "", cites: [] }; }
+      cur.text += p;
+      if (p.trim()) for (const c of b.citations || []) if (c.type === "web_search_result_location") cur.cites.push(c);
+    });
+  }
+  lines.push(cur);
+  return lines.map(l => ({ text: l.text.trim(), cites: l.cites })).filter(l => l.text);
+}
+function parseStats(content) {
+  const series = []; let s = null;
+  for (const { text, cites } of linesWithCitations(content)) {
+    const f = text.split("|").map(x => x.trim());
+    if (f[0] === "SERIES" && f[1]) { s = { title: str(f[1], 90), unit: str(f[2] || "", 40), publisher: str(f[3] || "", 80), why: "", points: [], dropped: 0 }; series.push(s); continue; }
+    if (f[0] === "WHY" && s) { const w = f.slice(1).join(" "); if (noAdvice(w) && !/\d{2,}/.test(w)) s.why = str(w, 200); continue; }
+    if (f[0] === "POINT" && s && f[1] && f[2]) {
+      const raw = digitsOnly(f[2]); const m = /-?\d+(\.\d+)?/.exec(raw); if (!m) { s.dropped++; continue; }
+      const value = +m[0];
+      // Verified only if the same number appears in the quoted source text of an official-domain citation.
+      const exact = new RegExp("(^|[^\\d.])" + m[0].replace(/[.-]/g, "\\$&") + "(?![\\d]|\\.\\d)");
+      const ok = cites.find(c => isOfficial(c.url) && exact.test(digitsOnly(c.cited_text || "")));
+      if (!ok) { s.dropped++; continue; }
+      s.points.push({ period: str(f[1], 20), value, url: ok.url, source: str(ok.title || domainOf(ok.url), 120) });
+    }
+  }
+  return series.map(x => ({ ...x, points: x.points.slice(0, 16) })).filter(x => x.points.length >= STATS_MIN_POINTS).slice(0, 2)
+    .map(x => { const doms = {}; x.points.forEach(p => { const d = domainOf(p.url); doms[d] = (doms[d] || 0) + 1; });
+      return { ...x, sources: [...new Map(x.points.map(p => [p.url, { url: p.url, title: p.source, domain: domainOf(p.url) }])).values()].slice(0, 4), domains: Object.keys(doms) }; });
+}
+// In-depth stories (and standard stories with high exposure) get one statistics search, newest first. Results are kept.
+async function addStatistics(data, mode) {
+  const want = ev => ev.analysis?.v === 2 && (ev.analysis.tier === "deep" || (ev.analysis.tier === "standard" && ev.analysis.exposure?.level === "high"));
+  const due = data.sectors.flatMap(sec => sec.items).filter(ev => want(ev) && ev.stats?.v !== STATS_V)
+    .sort((a, b) => latest(b).localeCompare(latest(a))).slice(0, STATS_LIMIT);
+  let found = 0, none = 0, failed = 0, droppedPoints = 0;
+  for (const ev of due) {
+    if (failed >= 2 && !found && !none) break;   // search unavailable (e.g. disabled for the organisation): stop, retry next run
+    try {
+      const content = await callStats(statsPrompt(ev, mode));
+      const series = parseStats(content);
+      ev.stats = { v: STATS_V, at: new Date().toISOString(), series };
+      if (series.length) found++; else none++;
+      droppedPoints += series.reduce((n, x) => n + x.dropped, 0);
+    } catch (e) { console.error(`Statistics for "${ev.headline}" failed: ${e.message}`); failed++; }
+  }
+  return { searched: due.length, found, none, failed, droppedPoints };
+}
+
+
 async function callClaude(prompt, job) {
   let lastErr;
   for (const model of MODELS[job]) {
@@ -895,6 +1023,8 @@ async function runDesk(desk) {
 
   const kinds = await classifyOlder(data);
   const frames = await reframeRecent(data, desk.mode);
+  const stats = await addStatistics(data, desk.mode);
+  if (stats.searched) console.log(`Statistics: ${stats.searched} stories searched, ${stats.found} with verified figures, ${stats.none} none, ${stats.failed} failed, ${stats.droppedPoints} unverified points dropped`);
   if (frames.done || frames.failedBatches) console.log(`Framework analysis: ${frames.done} existing stories re-analysed, ${frames.waiting} still waiting`);
   if (kinds.labelled || kinds.waiting) console.log(`Report kinds: ${kinds.labelled} older reports labelled, ${kinds.waiting} waiting`);
   const og = await fillShareImages(data);
@@ -935,7 +1065,7 @@ async function runDesk(desk) {
   for (const s of data.sectors) s.items = s.items.filter(i => { const t = Date.parse(latest(i)); return isNaN(t) || t >= recentCut; }).map(({ sector, ...rest }) => rest);
   data.recentDays = RECENT_DAYS;
   data.updatedAt = new Date().toISOString();
-  data.lastRun = { analysed: fresh.length, added, merged, rejected: fresh.length && !failures ? fresh.length - added - merged : undefined, failedBatches: failures, feeds: feedHealth, shareImages: og, threads: th, summaries: sm, kinds, frames, models: usage };
+  data.lastRun = { analysed: fresh.length, added, merged, rejected: fresh.length && !failures ? fresh.length - added - merged : undefined, failedBatches: failures, feeds: feedHealth, shareImages: og, threads: th, summaries: sm, kinds, frames, stats, models: usage };
 
   await fs.writeFile(desk.data, JSON.stringify(data, null, 2) + "\n");
   await fs.writeFile(desk.seen, JSON.stringify([...seen].slice(-MAX_SEEN)) + "\n");
