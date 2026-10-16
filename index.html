@@ -263,6 +263,21 @@ h1{font:800 clamp(34px,5vw,46px)/1 var(--sans);letter-spacing:-.025em;margin:0}
 .dial .k{font:700 10.5px/1 var(--sans);letter-spacing:.07em;text-transform:uppercase;color:var(--ink-3)}
 .dial .v{font-weight:700;font-size:14px;margin:6px 0}
 .dial .note{font-size:12.5px;color:var(--ink-3);line-height:1.4}
+.dial{position:relative}
+.dial .k{display:flex;align-items:center;gap:6px}
+.dial .how{all:unset;cursor:help;display:inline-flex;align-items:center;justify-content:center;width:16px;height:16px;border-radius:50%;border:1px solid var(--ink-3);color:var(--ink-3);font:700 10px/1 var(--sans);text-transform:none;letter-spacing:0}
+.dial .how:hover,.dial .how:focus-visible,.dial.open .how{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+.dial .how:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.dial .explain{display:none;position:absolute;z-index:20;left:-1px;right:-1px;top:calc(100% + 6px);background:var(--card);border:1px solid var(--rule);border-radius:12px;box-shadow:0 14px 40px rgba(0,0,0,.18);padding:12px 14px;text-transform:none;letter-spacing:0}
+.dial.open .explain{display:block}
+@media (hover:hover){.dial:hover .explain{display:block}}
+.dial .explain .q{font:600 13px/1.4 var(--sans);color:var(--ink);margin:0 0 8px}
+.explain ol{list-style:none;margin:0;padding:0;display:grid;gap:4px}
+.dial .explain li{display:grid;grid-template-columns:68px minmax(0,1fr);gap:8px;margin:0;font-size:12.5px;line-height:1.4;color:var(--ink-3);padding:5px 6px;border-radius:7px}
+.explain li b{color:var(--ink-2);font-weight:700}
+.explain li.cur{background:color-mix(in srgb,var(--accent) 12%,transparent);color:var(--ink)}
+.explain li.cur b{color:var(--accent)}
+.dial .explain .src{font-size:11.5px;color:var(--ink-3);margin:8px 0 0;line-height:1.4}
 .segs{display:flex;gap:3px}
 .segs i{flex:1;height:6px;border-radius:3px;background:var(--rule)}
 .segs i.on{background:var(--accent)}
@@ -720,6 +735,36 @@ var FW_RENDER={
   scenarios:function(f,s){ if(f.question) s.appendChild(el("p","fw-inst",f.question)); var g=el("div","fw-scen"); f.scenarios.forEach(function(x){ var d=el("div","scen"); d.appendChild(el("b",null,x.name)); d.appendChild(document.createTextNode(tidyText(x.what))); if(x.india_effect) d.appendChild(el("span","sig","For India: "+x.india_effect)); if(x.signal) d.appendChild(el("span","sig","Signal to watch: "+x.signal)); g.appendChild(d); }); s.appendChild(g);
     s.appendChild(el("p","fw-foot","Scenarios are not ranked and carry no probabilities.")); }
 };
+/* What each gauge measures and the fixed rules it is judged by (the same rules the analysis desk is given). */
+var GAUGE_RULES={
+  exposure:{q:"How directly this reaches people and businesses in India.",levels:[
+    ["high","High","Touches a household essential (fuel, LPG, food staples, loan EMIs, deposit rates), one of India's top imports or exports, or the safety or travel of Indians."],
+    ["medium","Medium","Affects one industry, one bilateral relationship, or a compliance obligation for Indian firms."],
+    ["low","Low","An indirect link, or no clear way it reaches India in the reports."]],
+    src:"Judged by AI against these rules, from the reports only. The line under the bar is the reason for this story."},
+  horizon:{q:"When people in India are likely to feel the effect.",levels:[
+    ["now","Now","Within a week."],["weeks","Weeks","In one to six weeks."],["months","Months","In two to twelve months."],["years","Years","Beyond a year: structural or long-term change."]],
+    src:"Judged by AI from the reports. Timing is the likeliest window, not a forecast date."},
+  confidence:{q:"How solid the reporting is, not how big the effect is.",levels:[
+    ["high","High","Three or more outlets agree and an official is on record."],
+    ["medium","Medium","Two outlets, or one outlet quoting an official source."],
+    ["low","Low","A single outlet, anonymous sources, claims by one side, or reports that conflict."]],
+    src:"Judged by AI against these rules; the code never shows High for a story fewer than three outlets have reported."}
+};
+function gaugeHelp(d,key,current,extra){
+  var g=GAUGE_RULES[key]; if(!g) return d;
+  var b=el("button","how","i"); b.type="button"; b.setAttribute("aria-label","How this is judged"); b.setAttribute("aria-expanded","false");
+  d.querySelector(".k").appendChild(b);
+  var box=el("div","explain"); box.setAttribute("role","note"); box.appendChild(el("p","q",g.q));
+  var ol=el("ol"); g.levels.forEach(function(l){ var li=el("li",l[0]===current?"cur":null); li.appendChild(el("b",null,l[1])); li.appendChild(el("span",null,l[2])); ol.appendChild(li); }); box.appendChild(ol);
+  box.appendChild(el("p","src",g.src+(extra?" "+extra:""))); d.appendChild(box);
+  b.addEventListener("click",function(ev){ ev.stopPropagation(); var open=!d.classList.contains("open");
+    document.querySelectorAll(".dial.open").forEach(function(x){ x.classList.remove("open"); var y=x.querySelector(".how"); if(y) y.setAttribute("aria-expanded","false"); });
+    d.classList.toggle("open",open); b.setAttribute("aria-expanded",String(open)); });
+  return d;
+}
+document.addEventListener("click",function(ev){ if(!ev.target.closest || !ev.target.closest(".dial")) document.querySelectorAll(".dial.open").forEach(function(x){ x.classList.remove("open"); }); });
+document.addEventListener("keydown",function(ev){ if(ev.key==="Escape") document.querySelectorAll(".dial.open").forEach(function(x){ x.classList.remove("open"); }); });
 function renderFramework(it){
   var a=it.analysis, b=el("div","block fw");
   var h=el("div","fw-head"); h.appendChild(el("h3",null,VIEWS[view].means+" · analysis")); if(TIER_WORD[a.tier]) h.appendChild(chip(TIER_WORD[a.tier],"tier t-"+a.tier)); b.appendChild(h);
@@ -727,9 +772,10 @@ function renderFramework(it){
   if(names.length) b.appendChild(el("p","fw-with","Analysed with: "+names.join(" + ")));
   if(it.why) b.appendChild(el("p","lead",it.why));
   var dials=el("div","fw-dials");
-  if(a.exposure) dials.appendChild(dial("Exposure for India",cap(a.exposure.level),segs(LEVEL_N[a.exposure.level]||0,3),a.exposure.reason));
-  if(a.horizon){ var hz=el("div","segs cool"), hi=HORIZON_LIST.indexOf(a.horizon.value); HORIZON_LIST.forEach(function(x,i){ hz.appendChild(el("i",i===hi?"on":null)); }); dials.appendChild(dial("When it is felt",HORIZON_WORD[a.horizon.value],hz,a.horizon.reason||"Now · weeks · months · years")); }
-  if(a.confidence) dials.appendChild(dial("Confidence",cap(a.confidence.level),segs(LEVEL_N[a.confidence.level]||0,3,true),a.confidence.reason));
+  if(a.exposure) dials.appendChild(gaugeHelp(dial("Exposure for India",cap(a.exposure.level),segs(LEVEL_N[a.exposure.level]||0,3),a.exposure.reason),"exposure",a.exposure.level));
+  if(a.horizon){ var hz=el("div","segs cool"), hi=HORIZON_LIST.indexOf(a.horizon.value); HORIZON_LIST.forEach(function(x,i){ hz.appendChild(el("i",i===hi?"on":null)); }); dials.appendChild(gaugeHelp(dial("When it is felt",HORIZON_WORD[a.horizon.value],hz,a.horizon.reason||"Now · weeks · months · years"),"horizon",a.horizon.value)); }
+  if(a.confidence){ var no=outletsOf(it).length, cl=(a.confidence.level==="high" && no<3) ? "medium" : a.confidence.level;   // same rule as the engine, also for older analyses
+    dials.appendChild(gaugeHelp(dial("Confidence",cap(cl),segs(LEVEL_N[cl]||0,3,true),a.confidence.reason),"confidence",cl,"This story: "+no+" outlet"+(no===1?"":"s")+".")); }
   if(dials.children.length) b.appendChild(dials);
   [a.primary,a.complement].forEach(function(k){ var f=k && a.frameworks[k]; if(!f || !FW_RENDER[k]) return; var s=sec(FW_NAME[k], k===a.complement?"Deep-dive complement":null); s.classList.add("fw-"+k); try{ FW_RENDER[k](f,s); }catch(e){ return; } b.appendChild(s); });
   if(a.affected&&a.affected.length){ var af=sec("Who in India feels it"), ag=el("div","fw-aff");
@@ -764,7 +810,8 @@ function renderStats(it){
   var dropped=0;
   series.forEach(function(x){ var w=el("div","st-series"); dropped+=x.dropped||0;
     w.appendChild(el("p","st-title",x.title));
-    w.appendChild(el("p","st-meta",[x.unit,x.publisher].filter(Boolean).join(" · ")));
+    var chk=x.reused && x.checkedAt ? "figures checked "+new Date(x.checkedAt).toLocaleDateString("en-IN",{day:"numeric",month:"short"}) : "";
+    w.appendChild(el("p","st-meta",[x.unit,x.publisher,chk].filter(Boolean).join(" · ")));
     if(x.why) w.appendChild(el("p","st-why",x.why));
     w.appendChild(statChart(x));
     var ul=el("ul","st-src"); (x.sources||[]).forEach(function(s){ var li=el("li"), a=el("a"); a.href=s.url; a.target="_blank"; a.rel="noopener"; a.appendChild(el("b",null,"✓")); a.appendChild(el("span",null,s.domain+(s.title&&s.title!==s.domain?" — "+s.title:""))); li.appendChild(a); ul.appendChild(li); });
