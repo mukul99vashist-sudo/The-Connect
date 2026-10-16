@@ -2,12 +2,123 @@
   "schema": 4,
   "region": "India",
   "since": "2026-10-02",
-  "updatedAt": "2026-10-13T23:11:16.055Z",
+  "updatedAt": "2026-10-16T21:17:08.189Z",
   "sectors": [
     {
       "id": "energy",
       "name": "Energy",
       "items": [
+        {
+          "id": "s11qtill",
+          "headline": "Brent oil touches $110 as Iran escalates Hormuz attacks, Ukraine vows to hit Russian refineries",
+          "url": "https://www.cnbc.com/2026/10/16/oil-price-today-iran-strait-hormuz-ukraine-russia.html",
+          "source": "cnbc",
+          "date": "2026-10-16T20:02:21.000Z",
+          "relevance": "high",
+          "why": "CNBC reports Brent touched $110 as Iran escalated Hormuz attacks, which could raise India's crude import bill and, in time, fuel costs.",
+          "implications": [
+            "CNBC reports Brent touched $110 after Iran escalated attacks in the Strait of Hormuz this week.",
+            "Higher crude prices could raise India's oil import costs and may feed into fuel prices.",
+            "CNBC's headline also says Ukraine vowed to hit Russian refineries, which could add to supply worries."
+          ],
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-16T21:14:57.339Z",
+            "tier": "quick",
+            "primary": "disruption_map",
+            "complement": null,
+            "features": [
+              "disruption",
+              "armed_conflict",
+              "price_move",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "high",
+              "reason": "Crude is a top Indian import and feeds fuel prices, a household essential."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Crude price moves may pass into fuel costs over weeks."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "Single outlet, brief summary, no official source cited."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "up",
+                "what": "fuel prices",
+                "basis": "inferred"
+              },
+              {
+                "group": "Importers & traders",
+                "direction": "up",
+                "what": "crude import costs",
+                "basis": "inferred"
+              },
+              {
+                "group": "Government finances",
+                "direction": "unclear",
+                "what": "oil import bill pressure",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Whether Brent stays near $110 after Friday's rise",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "Further Iranian attacks in the Strait of Hormuz",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "frameworks": {
+              "disruption_map": {
+                "node": {
+                  "name": "Strait of Hormuz",
+                  "type": "strait",
+                  "status": "unknown",
+                  "as_of": "2026-10-16, attacks escalated 'this week"
+                },
+                "cause": {
+                  "text": "CNBC reports Iran escalated attacks in the Strait this week",
+                  "status": "alleged"
+                },
+                "flows": [
+                  {
+                    "flow": "crude",
+                    "india_link": "Brent at $110 could raise India's crude import costs",
+                    "basis": "inferred"
+                  }
+                ],
+                "alternatives": [],
+                "duration": "not reported"
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "cnbc",
+              "headline": "Brent oil touches $110 as Iran escalates Hormuz attacks, Ukraine vows to hit Russian refineries",
+              "url": "https://www.cnbc.com/2026/10/16/oil-price-today-iran-strait-hormuz-ukraine-russia.html",
+              "date": "2026-10-16T20:02:21.000Z",
+              "kind": "hard",
+              "summary": "U.S. crude oil prices rose sharply Friday as Iran escalated attacks in the Strait of Hormuz this week.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://image.cnbcfm.com/api/v1/image/108409918-1792001666276-2026-10-13T175311Z_748127171_RC2F2OACIXEA_RTRMADP_3_IRAN-CRISIS-HORMUZ.JPG?v=1792001733&w=1920&h=1080"
+            }
+          ],
+          "image": "https://image.cnbcfm.com/api/v1/image/108409918-1792001666276-2026-10-13T175311Z_748127171_RC2F2OACIXEA_RTRMADP_3_IRAN-CRISIS-HORMUZ.JPG?v=1792001733&w=1920&h=1080",
+          "thread": "t2ogxay"
+        },
         {
           "id": "s1yrjg15",
           "headline": "Ukraine and the US: What's next after Trump's diesel deal with Russia?",
@@ -50,10 +161,678 @@
               "summary": "The president’s proposed fuel deal with Russia and a one-sided cease-fire plan are putting Kyiv in a tough spot as winter approaches.",
               "summaryV": 3,
               "image": "https://static01.nyt.com/images/2026/10/14/multimedia/14int-theworld-usa-russia-energy-01-cbfz-promo/14int-theworld-usa-russia-energy-01-cbfz-promo-mediumSquareAt3X.jpg"
+            },
+            {
+              "source": "aljazeera",
+              "headline": "Ukraine advances in occupied Donetsk as Trump hands Putin diesel deal",
+              "url": "https://www.aljazeera.com/news/2026/10/16/ukraine-repels-russian-forces-as-us-support-wavers-energy-strikes-escalate",
+              "date": "2026-10-16T17:28:41.000Z",
+              "kind": "hard",
+              "summary": "Ukraine’s 'Operation Vivaldi' reclaimed more occupied territory in Donetsk during a week when Trump sided with Russia.",
+              "summaryV": 3
             }
           ],
           "image": "https://static.dw.com/image/79626408_6.jpg",
           "thread": "t1uohici"
+        },
+        {
+          "id": "s1kfehhl",
+          "headline": "Zelensky Says Ukraine Will Resume Russian Refinery Strikes, Defying Trump",
+          "url": "https://www.nytimes.com/2026/10/15/world/europe/ukraine-russia-oil-strikes-zelensky-us-intelligence.html",
+          "source": "nyt",
+          "date": "2026-10-16T16:07:37.000Z",
+          "relevance": "medium",
+          "image": "https://static01.nyt.com/images/2026/10/15/multimedia/15xp-zelensky-fbcz/15xp-zelensky-fbcz-mediumSquareAt3X.jpg",
+          "why": "Renewed Ukrainian strikes on Russian refineries could disturb Russian fuel output and, through global energy markets, may eventually touch India's fuel costs.",
+          "implications": [
+            "The reports give no oil-price or India-specific effect, so any fuel-market impact is inferred and could be small.",
+            "If strikes resume and hit output, global fuel supply could tighten, which may affect India's import costs."
+          ],
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-16T21:13:27.670Z",
+            "tier": "quick",
+            "primary": "escalation",
+            "complement": null,
+            "features": [
+              "armed_conflict",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "The reports describe only a stated intent to resume strikes, with no reported effect on oil flows."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Strikes are only announced; any market effect would follow actual attacks."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "One outlet reporting Zelensky's on-record interview; no confirmation of strikes."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "fuel prices",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Reports of new Ukrainian strikes on Russian refineries",
+                "when": "",
+                "where": "Office of the President of Ukraine"
+              }
+            ],
+            "frameworks": {
+              "escalation": {
+                "current_rung": 1,
+                "evidence": "Zelensky said in a Financial Times interview that Ukraine will resume refinery strikes, which it had paused at US demand.",
+                "previous_rung": null,
+                "next_signals": [
+                  {
+                    "rung": 4,
+                    "signal": "A confirmed Ukrainian attack on a Russian refinery"
+                  },
+                  {
+                    "rung": 5,
+                    "signal": "Repeated refinery strikes over consecutive weeks"
+                  }
+                ],
+                "india_channels": [
+                  "oil"
+                ]
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "nyt",
+              "headline": "Zelensky Says Ukraine Will Resume Russian Refinery Strikes, Defying Trump",
+              "url": "https://www.nytimes.com/2026/10/15/world/europe/ukraine-russia-oil-strikes-zelensky-us-intelligence.html",
+              "date": "2026-10-16T16:07:37.000Z",
+              "kind": "hard",
+              "summary": "President Volodymyr Zelensky expressed overt frustration with the United States in an interview with The Financial Times. He had paused the strikes to comply with a demand from the United States.",
+              "summaryV": 3,
+              "image": "https://static01.nyt.com/images/2026/10/15/multimedia/15xp-zelensky-fbcz/15xp-zelensky-fbcz-mediumSquareAt3X.jpg"
+            }
+          ],
+          "thread": "t1ibmsov"
+        },
+        {
+          "id": "s1f3twwg",
+          "headline": "Houthi attacks on strategic Saudi assets threaten Riyadh's regional leadership and economic ambitions",
+          "url": "https://www.dw.com/en/houthi-attacks-on-strategic-saudi-assets-threaten-riyadh-s-regional-leadership-and-economic-ambitions/a-79680200",
+          "source": "dw",
+          "date": "2026-10-16T14:03:00.000Z",
+          "relevance": "medium",
+          "why": "",
+          "implications": [],
+          "reports": [
+            {
+              "source": "dw",
+              "headline": "Houthi attacks on strategic Saudi assets threaten Riyadh's regional leadership and economic ambitions",
+              "url": "https://www.dw.com/en/houthi-attacks-on-strategic-saudi-assets-threaten-riyadh-s-regional-leadership-and-economic-ambitions/a-79680200",
+              "date": "2026-10-16T14:03:00.000Z",
+              "kind": "feature",
+              "summary": "As Yemen's Iran-backed Houthis continue to target Saudi Arabia, Riyadh's vulnerability threatens its claim on regional and religious leadership — as well as its standing as an economic powerhouse.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://static.dw.com/image/79676332_6.jpg"
+            }
+          ],
+          "image": "https://static.dw.com/image/79676332_6.jpg",
+          "thread": "t1j5n1me"
+        },
+        {
+          "id": "s15fa6gm",
+          "headline": "Ship attack reports near Hormuz reach record high as oil exports slow",
+          "url": "https://www.bbc.co.uk/news/articles/cmde8dpg8g0no",
+          "source": "bbc",
+          "date": "2026-10-16T05:00:17.000Z",
+          "relevance": "high",
+          "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/139a/live/0f24b0c0-c8b3-11f1-bc2e-018d645d8d21.png",
+          "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/139a/live/0f24b0c0-c8b3-11f1-bc2e-018d645d8d21.png",
+          "why": "Record attacks on ships near Hormuz are slowing oil exports, which could tighten crude supply and raise shipping costs for import-dependent India.",
+          "implications": [
+            "BBC Verify reports 12 vessels were struck in a week near Hormuz, a record high, as oil exports slow.",
+            "Slower Gulf oil exports could push up crude costs for India, which may feed into fuel and LPG prices.",
+            "Attacks on container ships could raise freight and insurance costs for Indian traders using Gulf routes."
+          ],
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-16T21:16:06.554Z",
+            "tier": "deep",
+            "primary": "disruption_map",
+            "complement": "escalation",
+            "features": [
+              "disruption",
+              "armed_conflict",
+              "fast_moving"
+            ],
+            "exposure": {
+              "level": "high",
+              "reason": "Crude is a top Indian import; Hormuz disruption touches fuel and LPG costs."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Crude and freight cost changes typically pass through within weeks."
+            },
+            "confidence": {
+              "level": "high",
+              "reason": "Three outlets agree; attack count is based on UK maritime agency data."
+            },
+            "outlets": 3,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "up",
+                "what": "fuel and LPG prices",
+                "basis": "inferred"
+              },
+              {
+                "group": "Importers & traders",
+                "direction": "up",
+                "what": "freight and insurance costs",
+                "basis": "inferred"
+              },
+              {
+                "group": "Government finances",
+                "direction": "mixed",
+                "what": "oil import bill",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Weekly count of vessels struck near Hormuz",
+                "when": "",
+                "where": "UK maritime agency data"
+              },
+              {
+                "what": "Whether Singapore-flagged ships keep transiting the strait",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "Further slowdown or recovery in Gulf oil export volumes",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "frameworks": {
+              "disruption_map": {
+                "node": {
+                  "name": "Strait of Hormuz",
+                  "type": "strait",
+                  "status": "partial",
+                  "as_of": "2026-10-16"
+                },
+                "cause": {
+                  "text": "Attacks on vessels; 12 struck in a week, one Singapore ship sunk",
+                  "status": "confirmed"
+                },
+                "flows": [
+                  {
+                    "flow": "crude",
+                    "india_link": "India imports crude through Gulf routes; slower exports could tighten supply",
+                    "basis": "inferred"
+                  },
+                  {
+                    "flow": "containers",
+                    "india_link": "Container ship attacks could raise freight costs on India-Gulf trade",
+                    "basis": "inferred"
+                  }
+                ],
+                "alternatives": [],
+                "duration": "not reported"
+              },
+              "escalation": {
+                "current_rung": 6,
+                "evidence": "12 vessels struck in a week near Hormuz, including a sunk Singapore ship, a third-country vessel.",
+                "previous_rung": null,
+                "next_signals": [
+                  {
+                    "rung": 7,
+                    "signal": "Open, declared military conflict between states across the Gulf region"
+                  }
+                ],
+                "india_channels": [
+                  "oil",
+                  "shipping",
+                  "trade"
+                ]
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "bbc",
+              "headline": "Ship attack reports near Hormuz reach record high as oil exports slow",
+              "url": "https://www.bbc.co.uk/news/articles/cmde8dpg8g0no",
+              "date": "2026-10-16T05:00:17.000Z",
+              "kind": "hard",
+              "summary": "BBC Verify analysis of data from a UK maritime agency shows 12 vessels were struck in a week.",
+              "summaryV": 3,
+              "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/139a/live/0f24b0c0-c8b3-11f1-bc2e-018d645d8d21.png",
+              "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/139a/live/0f24b0c0-c8b3-11f1-bc2e-018d645d8d21.png"
+            },
+            {
+              "source": "cnbc",
+              "headline": "One Singapore ship was sunk, but here's why others are still transiting the Strait of Hormuz",
+              "url": "https://www.cnbc.com/2026/10/16/strait-hormuz-singapore-ships-attacked.html",
+              "date": "2026-10-16T05:56:28.000Z",
+              "kind": "hard",
+              "summary": "Singapore vessels are set to continue navigating the perilous Strait of Hormuz despite attacks on two container ships, said maritime experts.",
+              "summaryV": 3
+            },
+            {
+              "source": "cbs",
+              "headline": "Strait of Hormuz still unsafe for ships, maritime group warns",
+              "url": "https://www.cbsnews.com/live-updates/iran-war-us-houthi-saudi-arabia-trump/",
+              "date": "2026-10-16T10:31:00.000Z",
+              "kind": "hard",
+              "summary": "Vessels in the Strait of Hormuz still face \"indiscriminate attacks\" even if they switch off tracking systems, a maritime risk firm warns.",
+              "summaryV": 3
+            }
+          ],
+          "thread": "t2ogxay"
+        },
+        {
+          "id": "s1kdhj49",
+          "headline": "Trump rebukes Zelensky, calls Ukraine’s strikes on Russian refineries a ‘disgrace’",
+          "url": "https://www.scmp.com/news/world/europe/article/3371106/trump-rebukes-zelensky-calls-ukraines-strikes-russian-refineries-disgrace",
+          "source": "scmp",
+          "date": "2026-10-16T04:56:59.000Z",
+          "relevance": "medium",
+          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/16/0c4df27a-9f36-407b-82b0-8d18145414c4_457352fe.jpg?itok=Md5HeDlA&v=1792126608",
+          "why": "A US–Ukraine rift over Ukrainian strikes on Russian refineries, which Trump says keep global energy prices elevated, could affect oil costs for India.",
+          "implications": [
+            "Trump told Newsmax that Ukraine's resumed strikes on Russian refineries keep global energy prices elevated.",
+            "Continued refinery strikes could keep oil prices high, which may raise India's fuel import costs.",
+            "European leaders rallied around Zelensky, signalling a widening split with Washington over Russia policy."
+          ],
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-16T21:16:06.554Z",
+            "tier": "standard",
+            "primary": "escalation",
+            "complement": null,
+            "features": [
+              "armed_conflict"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The link to India runs indirectly through global energy prices, not a direct supply channel."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Price effects depend on whether the strikes continue."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "One outlet reports on-record Trump remarks; NPR adds analysis."
+            },
+            "outlets": 2,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "up",
+                "what": "fuel prices",
+                "basis": "inferred"
+              },
+              {
+                "group": "Government finances",
+                "direction": "unclear",
+                "what": "oil import bill",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Further Ukrainian strikes on Russian refineries",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "Changes in US support or policy toward Ukraine",
+                "when": "",
+                "where": "White House"
+              },
+              {
+                "what": "New EU support measures for Ukraine",
+                "when": "",
+                "where": "European Council"
+              }
+            ],
+            "frameworks": {
+              "escalation": {
+                "current_rung": 6,
+                "evidence": "Ukraine resumed strikes on Russian refineries, which are critical energy infrastructure.",
+                "previous_rung": null,
+                "next_signals": [
+                  {
+                    "rung": 7,
+                    "signal": "Additional states directly join the fighting or new fronts open"
+                  }
+                ],
+                "india_channels": [
+                  "oil",
+                  "trade"
+                ]
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "scmp",
+              "headline": "Trump rebukes Zelensky, calls Ukraine’s strikes on Russian refineries a ‘disgrace’",
+              "url": "https://www.scmp.com/news/world/europe/article/3371106/trump-rebukes-zelensky-calls-ukraines-strikes-russian-refineries-disgrace",
+              "date": "2026-10-16T04:56:59.000Z",
+              "kind": "hard",
+              "summary": "Ukraine’s resumption of strikes on Russian refineries is ⁠a “disgrace” that keeps ⁠global energy prices elevated, US President ⁠Donald Trump told the Newsmax news outlet in an interview aired on Thursday.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/16/0c4df27a-9f36-407b-82b0-8d18145414c4_457352fe.jpg?itok=Md5HeDlA&v=1792126608"
+            },
+            {
+              "source": "npr",
+              "headline": "How Putin may react to the rift between the U.S. and Ukraine",
+              "url": "https://www.npr.org/2026/10/16/nx-s1-6003665/how-putin-may-react-to-the-rift-between-the-u-s-and-ukraine",
+              "date": "2026-10-16T08:50:29.000Z",
+              "kind": "feature",
+              "summary": "Journalist and Russia analyst Julia Ioffe lays out how Vladimir Putin might be trying to exploit the current divide between the U.S. and Ukraine over striking Russian oil refineries.",
+              "summaryV": 3
+            },
+            {
+              "source": "scmp",
+              "headline": "EU rallies around Zelensky as rift widens with Trump over Russia energy strikes",
+              "url": "https://www.scmp.com/news/world/europe/article/3371174/european-leaders-back-zelensky-ukraine-us-ties-fray-over-trumps-russia-sanctions-lift",
+              "date": "2026-10-16T10:14:29.000Z",
+              "kind": "hard",
+              "summary": "European leaders on Friday rallied around Ukraine’s Volodymyr Zelensky as Kyiv’s ties with US President Donald Trump have nosedived and worries grow that US leader is increasingly siding with Russia.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/16/70182c6c-3fa5-4e53-942a-a49f3cb0b113_4a478eb1.jpg?itok=lXqVytJB&v=1792145658"
+            }
+          ],
+          "thread": "t1ibmsov"
+        },
+        {
+          "id": "s6mfbh1",
+          "headline": "Trump says he won't use nuclear weapons or send ground troops to Iran",
+          "url": "https://www.cnbc.com/2026/10/16/us-iran-war-trump-hormuz.html",
+          "source": "cnbc",
+          "date": "2026-10-16T09:46:54.000Z",
+          "relevance": "medium",
+          "why": "US-Iran tensions could reach India through oil prices and Gulf shipping if the reported US strike options are acted on.",
+          "implications": [
+            "Trump has ruled out nuclear weapons and ground troops, but the US is reportedly weighing new strike options.",
+            "Any strike could unsettle oil and Gulf shipping, which may matter for India's fuel costs and for Indians in the region."
+          ],
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-16T21:11:38.384Z",
+            "tier": "quick",
+            "primary": "escalation",
+            "complement": null,
+            "features": [
+              "armed_conflict",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "Reports give no India-specific mechanism; oil and Gulf links are indirect."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Depends on whether strikes are ordered; no timeline reported."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "One outlet; Trump on record, but the strike options are only reported."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "fuel prices",
+                "basis": "inferred"
+              },
+              {
+                "group": "Gulf & overseas workers and families",
+                "direction": "unclear",
+                "what": "regional safety, remittances",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Any confirmed US strike on Iranian targets",
+                "when": "",
+                "where": "US government statements"
+              }
+            ],
+            "frameworks": {
+              "escalation": {
+                "current_rung": 1,
+                "evidence": "Trump publicly ruled out nuclear weapons and ground troops while new strike options were reportedly weighed.",
+                "previous_rung": null,
+                "next_signals": [
+                  {
+                    "rung": 4,
+                    "signal": "A confirmed US strike on an Iranian target"
+                  }
+                ],
+                "india_channels": [
+                  "oil",
+                  "shipping",
+                  "diaspora safety"
+                ]
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "cnbc",
+              "headline": "Trump says he won't use nuclear weapons or send ground troops to Iran",
+              "url": "https://www.cnbc.com/2026/10/16/us-iran-war-trump-hormuz.html",
+              "date": "2026-10-16T09:46:54.000Z",
+              "kind": "hard",
+              "summary": "Trump said he would not use nuclear weapons against Iran or send ground troops as the U.S. reportedly weighs new strike options.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://image.cnbcfm.com/api/v1/image/108415215-1792084537191-gettyimages-2300369122-kbd10436_agfkj24e.jpeg?v=1792084636&w=1920&h=1080"
+            }
+          ],
+          "image": "https://image.cnbcfm.com/api/v1/image/108415215-1792084537191-gettyimages-2300369122-kbd10436_agfkj24e.jpeg?v=1792084636&w=1920&h=1080",
+          "thread": "t2ogxay"
+        },
+        {
+          "id": "s1hdvc84",
+          "headline": "Russia's view amid Ukraine's strikes and Zelenskyy's growing rift with the U.S.",
+          "url": "https://www.npr.org/2026/10/16/nx-s1-6004281/russias-view-amid-ukraines-strikes-and-zelenskyys-growing-rift-with-the-u-s",
+          "source": "npr",
+          "date": "2026-10-16T08:51:17.000Z",
+          "relevance": "medium",
+          "why": "A claimed Ukrainian strike on a major Russian refinery could tighten oil product supply and, through global prices, may reach Indian fuel costs.",
+          "implications": [
+            "NPR reports that Russian authorities say Ukraine hit a major refinery southeast of Moscow on Thursday.",
+            "Strikes on energy sites are described as retaliation for Russian attacks on Ukrainian energy infrastructure.",
+            "If such strikes continue, global oil prices could be affected, which may matter for India's fuel import bill."
+          ],
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-16T21:10:45.391Z",
+            "tier": "quick",
+            "primary": "disruption_map",
+            "complement": null,
+            "features": [
+              "disruption",
+              "armed_conflict"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "Only an indirect, inferred link to India; no supply loss reported."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Any price effect would depend on how long strikes continue."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "Single outlet; strike claimed by Russian authorities."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "fuel prices",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Further Ukrainian strikes on Russian energy sites or Russian strikes on Ukrainian ones",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "frameworks": {
+              "disruption_map": {
+                "node": {
+                  "name": "Major oil refinery southeast of Moscow",
+                  "type": "refinery",
+                  "status": "unknown",
+                  "as_of": "Thursday, per report of 2026-10-16"
+                },
+                "cause": {
+                  "text": "Ukrainian strike, per Russian authorities, answering Russian attacks on Ukrainian energy",
+                  "status": "claimed"
+                },
+                "flows": [
+                  {
+                    "flow": "other",
+                    "india_link": "Lower Russian refinery output could tighten global oil supply and affect prices India pays.",
+                    "basis": "inferred"
+                  }
+                ],
+                "alternatives": [],
+                "duration": "not reported"
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "npr",
+              "headline": "Russia's view amid Ukraine's strikes and Zelenskyy's growing rift with the U.S.",
+              "url": "https://www.npr.org/2026/10/16/nx-s1-6004281/russias-view-amid-ukraines-strikes-and-zelenskyys-growing-rift-with-the-u-s",
+              "date": "2026-10-16T08:51:17.000Z",
+              "kind": "hard",
+              "summary": "Russian authorities say Ukraine struck a major oil refinery southeast of Moscow Thursday. The strike was in response to Russia's attacks on Ukrainian energy infrastructure.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true
+            }
+          ],
+          "thread": "t1ibmsov"
+        },
+        {
+          "id": "sxk6ju5",
+          "headline": "Marco Rubio to visit Indian billionaire Ambani's refinery in Gujarat as U.S. diesel prices surge",
+          "url": "https://www.cnbc.com/2026/10/16/marco-rubio-reliance-jamnagar-refinery.html",
+          "source": "cnbc",
+          "date": "2026-10-16T06:45:02.000Z",
+          "relevance": "medium",
+          "why": "US Secretary of State Rubio's visit to Reliance's Jamnagar refinery, amid surging US diesel prices, highlights India's diesel supply strength and may deepen India-US energy ties.",
+          "implications": [
+            "Reliance's ability to supply diesel has put Jamnagar in focus during the visit.",
+            "Reliance is also investing in a US refinery and buying Venezuelan oil, which could tie its business to US policy."
+          ],
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-16T21:10:04.177Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "medium",
+              "reason": "Centres on one company and the India-US relationship, with no household price effect reported."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "A visit; any trade or investment effects would take time."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "Single outlet, no on-record official statement in the report."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Large exporters",
+                "direction": "unclear",
+                "what": "diesel export prospects",
+                "basis": "inferred"
+              },
+              {
+                "group": "A named state or region",
+                "direction": "up",
+                "what": "Gujarat refinery attention",
+                "basis": "reported"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Any announcement from Rubio's Jamnagar visit on energy cooperation or diesel supply",
+                "when": "",
+                "where": "US State Department"
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "US diesel prices surge",
+                    "detail": "Prices in the US are rising, per CNBC.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Rubio visits Jamnagar",
+                    "detail": "He visits Ambani's Reliance refinery in Gujarat, known for strong diesel supply.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "US interest in Indian diesel",
+                    "detail": "Reliance's diesel could draw US interest in India-US energy dealings.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The visit produces no supply or investment arrangements involving Reliance's diesel."
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "cnbc",
+              "headline": "Marco Rubio to visit Indian billionaire Ambani's refinery in Gujarat as U.S. diesel prices surge",
+              "url": "https://www.cnbc.com/2026/10/16/marco-rubio-reliance-jamnagar-refinery.html",
+              "date": "2026-10-16T06:45:02.000Z",
+              "kind": "hard",
+              "summary": "Not only is Ambani's Reliance investing in a U.S. refinery and buying Venezuelan oil, but its strong ability to supply diesel has put Jamnagar on the map during Rubio's visit.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://image.cnbcfm.com/api/v1/image/108417954-1792127878490-gettyimages-2282056322-090a1234_zl7lu5pm.jpeg?v=1792127948&w=1920&h=1080"
+            }
+          ],
+          "image": "https://image.cnbcfm.com/api/v1/image/108417954-1792127878490-gettyimages-2282056322-090a1234_zl7lu5pm.jpeg?v=1792127948&w=1920&h=1080",
+          "thread": "t1q27ee0"
         },
         {
           "id": "s4wk2ue",
@@ -2268,6 +3047,69 @@
                 ]
               }
             }
+          },
+          "stats": {
+            "v": 2,
+            "at": "2026-10-16T21:15:13.184Z",
+            "series": [
+              {
+                "title": "U.S. net imports of crude oil and products from Russia",
+                "unit": "thousand barrels per day",
+                "publisher": "U.S. Energy Information Administration",
+                "points": [
+                  {
+                    "period": "2020",
+                    "value": 540,
+                    "url": "https://www.eia.gov/dnav/pet/pet_move_neti_dc_nus-nrs_mbblpd_a.htm",
+                    "source": "Russia Net Imports of Crude Oil and Petroleum Products into the U.S."
+                  },
+                  {
+                    "period": "2021",
+                    "value": 673,
+                    "url": "https://www.eia.gov/dnav/pet/pet_move_neti_dc_nus-nrs_mbblpd_a.htm",
+                    "source": "Russia Net Imports of Crude Oil and Petroleum Products into the U.S."
+                  },
+                  {
+                    "period": "2022",
+                    "value": 147,
+                    "url": "https://www.eia.gov/dnav/pet/pet_move_neti_dc_nus-nrs_mbblpd_a.htm",
+                    "source": "Russia Net Imports of Crude Oil and Petroleum Products into the U.S."
+                  },
+                  {
+                    "period": "2023",
+                    "value": 0,
+                    "url": "https://www.eia.gov/dnav/pet/pet_move_neti_dc_nus-nrs_mbblpd_a.htm",
+                    "source": "Russia Net Imports of Crude Oil and Petroleum Products into the U.S."
+                  },
+                  {
+                    "period": "2024",
+                    "value": 0,
+                    "url": "https://www.eia.gov/dnav/pet/pet_move_neti_dc_nus-nrs_mbblpd_a.htm",
+                    "source": "Russia Net Imports of Crude Oil and Petroleum Products into the U.S."
+                  },
+                  {
+                    "period": "2025",
+                    "value": 0,
+                    "url": "https://www.eia.gov/dnav/pet/pet_move_neti_dc_nus-nrs_mbblpd_a.htm",
+                    "source": "Russia Net Imports of Crude Oil and Petroleum Products into the U.S."
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.eia.gov/dnav/pet/pet_move_neti_dc_nus-nrs_mbblpd_a.htm",
+                    "title": "Russia Net Imports of Crude Oil and Petroleum Products into the U.S.",
+                    "domain": "eia.gov"
+                  }
+                ],
+                "domains": [
+                  "eia.gov"
+                ],
+                "dropped": 0,
+                "why": "This series tracks U.S. imports of Russian crude oil and petroleum products, the same country-to-U.S. fuel flow that Trump's proposed purchase of Russian diesel would change.",
+                "reused": true,
+                "checkedAt": "2026-10-13T23:10:06.410Z"
+              }
+            ]
           }
         },
         {
@@ -4306,6 +5148,93 @@
       "name": "Logistics & Shipping",
       "items": [
         {
+          "id": "sr4ahkh",
+          "headline": "Envoy says China could ‘easily win’ conflict as Manila claims it is ‘thinly veiled threat’",
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3371121/envoy-says-china-could-easily-win-conflict-manila-claims-it-thinly-veiled-threat",
+          "source": "scmp",
+          "date": "2026-10-16T06:58:59.000Z",
+          "relevance": "medium",
+          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/16/f43c2b2e-15a2-4cbe-84be-de620910b430_74a7121c.jpg?itok=U9iNkQBa&v=1792133306",
+          "why": "Rising China–Philippines tension in the South China Sea could, if it escalated, affect shipping lanes and trade routes that Indian commerce may use.",
+          "implications": [
+            "The reports describe only rhetoric: China's ambassador said Beijing could 'easily win' a conflict, and Manila called for diplomatic restraint.",
+            "Any effect on India would be indirect and could arise only if tension over Scarborough Shoal moved beyond words.",
+            "The reports mention no disruption to shipping, trade or Indian interests at present."
+          ],
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-16T21:10:04.178Z",
+            "tier": "quick",
+            "primary": "escalation",
+            "complement": null,
+            "features": [
+              "armed_conflict"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "Only verbal threats reported; no mechanism affecting India is described."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "No disruption reported; any effect depends on escalation."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "One outlet, but on-record statements from the Chinese ambassador and Manila."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "South China Sea shipping risk",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Further statements or incidents involving China and the Philippines at Scarborough Shoal",
+                "when": "",
+                "where": "Philippine Department of Foreign Affairs"
+              }
+            ],
+            "frameworks": {
+              "escalation": {
+                "current_rung": 1,
+                "evidence": "Chinese ambassador said Beijing could 'easily win' a conflict; Manila called it a 'thinly veiled threat' and urged restraint.",
+                "previous_rung": null,
+                "next_signals": [
+                  {
+                    "rung": 2,
+                    "signal": "Formal sanctions or diplomatic measures announced by either side"
+                  },
+                  {
+                    "rung": 3,
+                    "signal": "Reported naval or military deployments near Scarborough Shoal"
+                  }
+                ],
+                "india_channels": [
+                  "shipping",
+                  "trade"
+                ]
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "scmp",
+              "headline": "Envoy says China could ‘easily win’ conflict as Manila claims it is ‘thinly veiled threat’",
+              "url": "https://www.scmp.com/news/china/diplomacy/article/3371121/envoy-says-china-could-easily-win-conflict-manila-claims-it-thinly-veiled-threat",
+              "date": "2026-10-16T06:58:59.000Z",
+              "kind": "hard",
+              "summary": "Manila has called for diplomatic restraint in response to suggestions from the Chinese ambassador to the Philippines that Beijing could “easily win” a military showdown in the region but had instead chosen peace. The war of words comes amid rising tension over the Scarborough Shoal in the South China Sea.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/16/f43c2b2e-15a2-4cbe-84be-de620910b430_74a7121c.jpg?itok=U9iNkQBa&v=1792133306"
+            }
+          ],
+          "thread": "t10mau1h"
+        },
+        {
           "id": "s8giusq",
           "headline": "Airport attacks put aviation in crosshairs of geopolitical conflicts",
           "url": "https://www.cnbc.com/2026/10/13/riyadh-airport-attacks-aviation.html",
@@ -5441,6 +6370,11 @@
                 ]
               }
             }
+          },
+          "stats": {
+            "v": 2,
+            "at": "2026-10-16T21:15:08.767Z",
+            "series": []
           }
         },
         {
@@ -6227,6 +7161,638 @@
       "id": "economy",
       "name": "Economy & Trade",
       "items": [
+        {
+          "id": "s6p42cy",
+          "headline": "U.S. Starlink curbs embolden Russia to intensify attacks on Ukraine, minister tells CNBC",
+          "url": "https://www.cnbc.com/2026/10/16/zelenskyy-trump-eu-summit-russia-ukraine.html",
+          "source": "cnbc",
+          "date": "2026-10-16T10:25:46.000Z",
+          "relevance": "medium",
+          "why": "CNBC reports that Russian strikes on Ukraine are intensifying; India feels this only indirectly, through possible spillover to global energy and commodity markets.",
+          "implications": [
+            "The report describes a battlefield and military-support issue. It gives no direct link to Indian prices, trade or citizens.",
+            "If intensified strikes and winter energy needs in Ukraine persist, global energy and commodity markets could be affected. That could reach India's import costs.",
+            "Indian effects remain speculative on this reporting alone."
+          ],
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-16T21:11:38.385Z",
+            "tier": "quick",
+            "primary": "escalation",
+            "complement": null,
+            "features": [
+              "armed_conflict"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "Reports describe no mechanism reaching Indian households, trade or citizens; any effect would be indirect."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Any spillover would be indirect and gradual, not immediate."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "Single outlet (CNBC), but the source is an on-record Ukrainian minister."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "commodity and energy price spillover",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Any change to Starlink access limits for Ukrainian military use",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "Reports of Russian strikes on Ukrainian energy infrastructure or new air-defense pledges",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "frameworks": {
+              "escalation": {
+                "current_rung": 5,
+                "evidence": "CNBC reports Russian strikes on Ukraine are intensifying, with Starlink limits disrupting Ukrainian military operations.",
+                "previous_rung": null,
+                "next_signals": [
+                  {
+                    "rung": 6,
+                    "signal": "Confirmed strikes on Ukrainian energy infrastructure or on a third country"
+                  }
+                ],
+                "india_channels": [
+                  "oil",
+                  "trade"
+                ]
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "cnbc",
+              "headline": "U.S. Starlink curbs embolden Russia to intensify attacks on Ukraine, minister tells CNBC",
+              "url": "https://www.cnbc.com/2026/10/16/zelenskyy-trump-eu-summit-russia-ukraine.html",
+              "date": "2026-10-16T10:25:46.000Z",
+              "kind": "hard",
+              "summary": "Ukraine is seeking winter energy and air-defense support as Russian strikes intensify and Starlink limits disrupt military operations.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://image.cnbcfm.com/api/v1/image/108372369-1791184306989-gettyimages-2297669360-AFP_D23K3WE.jpeg?v=1791184494&w=1920&h=1080"
+            },
+            {
+              "source": "bbc",
+              "headline": "Trump denies limiting Ukraine access to Starlink network",
+              "url": "https://www.bbc.co.uk/news/articles/ckz65g34wyd8o",
+              "date": "2026-10-16T19:33:48.000Z",
+              "kind": "hard",
+              "summary": "Speed curbs limited Ukraine's defences against deadly Russian attacks on Tuesday night.",
+              "summaryV": 3,
+              "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8a95/live/08a3c460-c990-11f1-adc3-01d8629f0470.jpg",
+              "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/8a95/live/08a3c460-c990-11f1-adc3-01d8629f0470.jpg"
+            },
+            {
+              "source": "cnbc",
+              "headline": "Trump says White House didn't order Starlink restrictions in Ukraine",
+              "url": "https://www.cnbc.com/2026/10/16/trump-denies-musk-claim-he-ordered-starlink-restrictions-in-ukraine.html",
+              "date": "2026-10-16T20:28:10.000Z",
+              "kind": "hard",
+              "summary": "Ukrainian officials complained this week that SpaceX had limited internet connectivity without advance notice.",
+              "summaryV": 3
+            }
+          ],
+          "image": "https://image.cnbcfm.com/api/v1/image/108372369-1791184306989-gettyimages-2297669360-AFP_D23K3WE.jpeg?v=1791184494&w=1920&h=1080",
+          "thread": "tq9ru94"
+        },
+        {
+          "id": "sqw8muo",
+          "headline": "Zelensky turns to Europe for backing as ties with Trump deteriorate",
+          "url": "https://www.france24.com/en/europe/20261016-zelensky-turns-to-europe-for-backing-as-ties-with-trump-deteriorate",
+          "source": "france24",
+          "date": "2026-10-16T20:25:46.000Z",
+          "relevance": "medium",
+          "image": "https://s.france24.com/media/display/c6338998-c99a-11f1-9ea4-6313a763b466/w:1024/p:16x9/000-D3GY8H7.jpg",
+          "why": "France 24 reports the US eased sanctions on Moscow in a diesel-supply deal, which could shift energy trade terms India deals with.",
+          "implications": [
+            "France 24 reports the US eased sanctions on Moscow as part of a diesel-supply deal, straining Zelensky's ties with Trump.",
+            "Zelensky asked Brussels for an additional €70 billion to fund the war next year.",
+            "Eased sanctions could alter fuel trade conditions, and a longer war could prolong global energy uncertainty."
+          ],
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-16T21:14:57.339Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "Indirect link through possible energy market effects; the report names no India mechanism."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "The funding request covers next year; effects are indirect."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "Single outlet; the sanctions deal details are not elaborated."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "diesel and energy trade terms",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Brussels' response to Zelensky's €70 billion request",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "US eases Russia sanctions",
+                    "detail": "Eased as part of a diesel-supply deal, per France 24.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Ukraine-US ties deteriorate",
+                    "detail": "Zelensky turns to Europe, asking for €70 billion more.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Energy trade terms may shift",
+                    "detail": "Looser sanctions could alter fuel supply conditions relevant to India.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The sanctions easing is limited to the diesel deal and does not alter wider energy trade."
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "france24",
+              "headline": "Zelensky turns to Europe for backing as ties with Trump deteriorate",
+              "url": "https://www.france24.com/en/europe/20261016-zelensky-turns-to-europe-for-backing-as-ties-with-trump-deteriorate",
+              "date": "2026-10-16T20:25:46.000Z",
+              "kind": "hard",
+              "summary": "Ukrainian President Volodymyr Zelensky turned to his European allies on Friday, asking Brussels for an additional €70 billion to fund the war against Russia next year. Zelensky's relationship with US President Donald Trump deteriorated after the US eased sanctions on Moscow as part of a diesel-supply deal.",
+              "summaryV": 3,
+              "image": "https://s.france24.com/media/display/c6338998-c99a-11f1-9ea4-6313a763b466/w:1024/p:16x9/000-D3GY8H7.jpg"
+            }
+          ],
+          "thread": "t1uohici"
+        },
+        {
+          "id": "satjp3g",
+          "headline": "Analysis: Everyone expects the Fed to hold rates in October. Kevin Warsh could surprise us all",
+          "url": "https://www.cnbc.com/2026/10/16/kevin-warsh-fed-october-rate-hike-interest-rates-markets.html",
+          "source": "cnbc",
+          "date": "2026-10-16T16:27:31.000Z",
+          "relevance": "medium",
+          "why": "",
+          "implications": [],
+          "reports": [
+            {
+              "source": "cnbc",
+              "headline": "Analysis: Everyone expects the Fed to hold rates in October. Kevin Warsh could surprise us all",
+              "url": "https://www.cnbc.com/2026/10/16/kevin-warsh-fed-october-rate-hike-interest-rates-markets.html",
+              "date": "2026-10-16T16:27:31.000Z",
+              "kind": "feature",
+              "summary": "Investors expect the Fed to pause rate hikes in October, but Kevin Warsh's rejection of traditional communications practices and continued concern about inflation leave the decision uncertain.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://image.cnbcfm.com/api/v1/image/108363914-1789584457539-108363914-17895839902026-09-16t183652z_1716047873_rc2iknar714p_rtrmadp_0_usa-fed.jpeg?v=1789584478&w=1920&h=1080"
+            }
+          ],
+          "image": "https://image.cnbcfm.com/api/v1/image/108363914-1789584457539-108363914-17895839902026-09-16t183652z_1716047873_rc2iknar714p_rtrmadp_0_usa-fed.jpeg?v=1789584478&w=1920&h=1080",
+          "thread": "tpnacn3"
+        },
+        {
+          "id": "smmgdl7",
+          "headline": "CNBC Daily Open: Warsh holds cards close on Fed policy, but inflation numbers may tip his hand",
+          "url": "https://www.cnbc.com/2026/10/16/cnbc-daily-open-warsh-holds-cards-close-on-fed-policy-but-inflation-numbers-may-tip-his-hand.html",
+          "source": "cnbc",
+          "date": "2026-10-16T08:31:55.000Z",
+          "relevance": "medium",
+          "why": "The Fed's next move, still unsignalled, can shift global capital flows and the dollar, which may in turn affect the rupee and Indian markets.",
+          "implications": [
+            "Warsh gave markets few clues before the October meeting, so the policy path stays uncertain.",
+            "US inflation numbers may tip his hand, according to CNBC.",
+            "Any resulting dollar or yield moves could reach India through capital flows and the rupee."
+          ],
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-16T21:10:45.390Z",
+            "tier": "quick",
+            "primary": "decoder",
+            "complement": null,
+            "features": [
+              "scheduled",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "Indirect: the reports describe no mechanism that reaches India directly."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Fed's October meeting is the next decision point."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "Single outlet, short summary, no stated policy decision."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "rupee and dollar costs",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "US inflation numbers ahead of the Fed's October meeting",
+                "when": "",
+                "where": "US Bureau of Labor Statistics"
+              },
+              {
+                "what": "Fed's October policy decision and Warsh's remarks",
+                "when": "",
+                "where": "Federal Reserve"
+              }
+            ],
+            "frameworks": {
+              "decoder": {
+                "kind": "decision",
+                "headline": null,
+                "comparisons": [],
+                "drivers": [
+                  {
+                    "name": "Upcoming inflation numbers",
+                    "direction": "mixed"
+                  }
+                ],
+                "decision": {
+                  "action": "other",
+                  "size": "not reported",
+                  "stance": "Warsh offered few clues before the October meeting"
+                }
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "cnbc",
+              "headline": "CNBC Daily Open: Warsh holds cards close on Fed policy, but inflation numbers may tip his hand",
+              "url": "https://www.cnbc.com/2026/10/16/cnbc-daily-open-warsh-holds-cards-close-on-fed-policy-but-inflation-numbers-may-tip-his-hand.html",
+              "date": "2026-10-16T08:31:55.000Z",
+              "kind": "hard",
+              "summary": "Kevin Warsh offered markets few clues in his final public appearance before the central bank's October meeting.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://image.cnbcfm.com/api/v1/image/108363997-1789587698127-108363997-1789586467261-gettyimages-2295047002-WARSH_FOMC_NYSE.jpeg?v=1789587776&w=1920&h=1080"
+            },
+            {
+              "source": "cnbc",
+              "headline": "Fed's Warsh withholds rate signal, praises recent global tightening",
+              "url": "https://www.cnbc.com/2026/10/16/feds-warsh-says-ai-development-path-will-be-very-bumpy-.html",
+              "date": "2026-10-16T12:36:00.000Z",
+              "kind": "hard",
+              "summary": "Warsh refrained from signaling another interest rate hike this month, pointed to a \"synchronous tightening\" by central banks in the fight against inflation.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://image.cnbcfm.com/api/v1/image/108419543-1792154224580-108419543-1792154011425-gettyimages-2299896164-AA_16102026_2996197.jpg?v=1792154235&w=1920&h=1080"
+            }
+          ],
+          "image": "https://image.cnbcfm.com/api/v1/image/108363997-1789587698127-108363997-1789586467261-gettyimages-2295047002-WARSH_FOMC_NYSE.jpeg?v=1789587776&w=1920&h=1080",
+          "thread": "tpnacn3"
+        },
+        {
+          "id": "sz88zl8",
+          "headline": "When Will the Fed Move on Rates?",
+          "url": "https://www.nytimes.com/2026/10/16/business/dealbook/fed-rates-warsh-inflation.html",
+          "source": "nyt",
+          "date": "2026-10-16T12:00:34.000Z",
+          "relevance": "medium",
+          "image": "https://static01.nyt.com/images/2026/10/16/multimedia/16db-warsh-phjg/16db-warsh-phjg-mediumSquareAt3X.jpg",
+          "why": "",
+          "implications": [],
+          "reports": [
+            {
+              "source": "nyt",
+              "headline": "When Will the Fed Move on Rates?",
+              "url": "https://www.nytimes.com/2026/10/16/business/dealbook/fed-rates-warsh-inflation.html",
+              "date": "2026-10-16T12:00:34.000Z",
+              "kind": "feature",
+              "summary": "Kevin Warsh, the central bank’s chairman, suggested he wouldn’t push to raise borrowing rates this month. But persistent inflation may force the Fed’s hand.",
+              "summaryV": 3,
+              "image": "https://static01.nyt.com/images/2026/10/16/multimedia/16db-warsh-phjg/16db-warsh-phjg-mediumSquareAt3X.jpg"
+            }
+          ],
+          "thread": "tpnacn3"
+        },
+        {
+          "id": "smq2nh4",
+          "headline": "US issues new Iran-related sanctions against 16 individuals, 11 entities",
+          "url": "http://www.africanews.com/2026/10/16/us-issues-new-iran-related-sanctions-against-16-individuals-11-entities/",
+          "source": "africanews",
+          "date": "2026-10-16T10:05:15.000Z",
+          "relevance": "medium",
+          "why": "New US sanctions on Iran-linked banks, exchange houses and energy and trading firms could raise compliance risks for Indian firms dealing with Iran.",
+          "implications": [
+            "The US sanctioned 16 individuals and 11 entities, including financial institutions, currency exchange firms and energy and trading companies.",
+            "Indian traders with Iran links may face closer compliance checks, though the report names no Indian entity."
+          ],
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-16T21:11:38.384Z",
+            "tier": "quick",
+            "primary": "trade_flow",
+            "complement": null,
+            "features": [
+              "trade_flow"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "Compliance obligations for firms dealing with Iran-linked energy and trade; no Indian entity named."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Sanctions issued already; compliance effects would build gradually."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "Single outlet reporting an official US action."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "compliance costs",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Whether any Indian entities or banks are named in later sanctions rounds",
+                "when": "",
+                "where": "US Treasury sanctions announcements"
+              }
+            ],
+            "frameworks": {
+              "trade_flow": {
+                "good": "Iran-linked energy and trading transactions",
+                "actors": [
+                  {
+                    "country": "United States",
+                    "role": "third_party",
+                    "is_india": false
+                  },
+                  {
+                    "country": "Iran",
+                    "role": "exporter",
+                    "is_india": false
+                  }
+                ],
+                "change": {
+                  "type": "sanction",
+                  "effective": "Thursday"
+                },
+                "india_position": {
+                  "role": "not_involved",
+                  "note": "No Indian party named in the report; Indian firms dealing with Iran could face compliance questions."
+                },
+                "volumes": []
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "africanews",
+              "headline": "US issues new Iran-related sanctions against 16 individuals, 11 entities",
+              "url": "http://www.africanews.com/2026/10/16/us-issues-new-iran-related-sanctions-against-16-individuals-11-entities/",
+              "date": "2026-10-16T10:05:15.000Z",
+              "kind": "hard",
+              "summary": "The United States on Thursday issued a new round of Iran-related sanctions, targeting 16 individuals and 11 entities, including financial institutions, currency exchange firms and energy and trading companies.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://images.euronews.com/articles/stories/09/95/41/77/1024x538_cmsv2_7b9bad66-ae98-52c5-b337-86e9b17dfc84-9954177.jpg"
+            }
+          ],
+          "image": "https://images.euronews.com/articles/stories/09/95/41/77/1024x538_cmsv2_7b9bad66-ae98-52c5-b337-86e9b17dfc84-9954177.jpg",
+          "thread": "t2ogxay"
+        },
+        {
+          "id": "soctp7a",
+          "headline": "EU backs trade ‘kill switch’, China exports surge, third-quarter GDP",
+          "url": "https://www.scmp.com/plus/economy/china-economy/article/3371152/eu-backs-trade-kill-switch-china-exports-surge-third-quarter-gdp",
+          "source": "scmp",
+          "date": "2026-10-16T09:00:10.000Z",
+          "relevance": "medium",
+          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/16/46674cf9-a47a-446f-b443-153b1be5f9b2_4be7381e.jpg?itok=ilhmKm-I&v=1792140167",
+          "why": "EU backing for a tool to shut out Chinese goods could divert China's surging low-cost exports toward other markets, including India.",
+          "implications": [
+            "EU leaders backed a tool to potentially shut out Chinese goods as low-cost imports pushed the EU-China trade deficit to a record, SCMP reports.",
+            "Goods blocked from Europe could be redirected to other markets, which may raise import competition for Indian producers.",
+            "Indian exporters may also face changed competition in the EU market."
+          ],
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-16T21:10:45.391Z",
+            "tier": "quick",
+            "primary": "decoder",
+            "complement": null,
+            "features": [
+              "scheduled",
+              "trade_flow",
+              "policy_stage",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "Affects trade flows with China and the EU, but no India-specific impact reported."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "The tool is only backed so far, not yet in force."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "Single outlet, but EU leaders' support is the reported basis."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "MSME exporters",
+                "direction": "mixed",
+                "what": "competition in EU markets",
+                "basis": "inferred"
+              },
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "Chinese import flows",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "EU details on how the trade tool would work and when",
+                "when": "",
+                "where": "European Commission"
+              },
+              {
+                "what": "China's trade data on exports",
+                "when": "",
+                "where": "China customs data"
+              }
+            ],
+            "frameworks": {
+              "decoder": {
+                "kind": "decision",
+                "headline": null,
+                "comparisons": [],
+                "drivers": [
+                  {
+                    "name": "Surge in low-cost Chinese imports",
+                    "direction": "up"
+                  },
+                  {
+                    "name": "Record EU-China trade deficit",
+                    "direction": "up"
+                  }
+                ],
+                "decision": {
+                  "action": "other",
+                  "size": "not reported",
+                  "stance": "EU leaders backed a tool to potentially shut out Chinese goods"
+                }
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "scmp",
+              "headline": "EU backs trade ‘kill switch’, China exports surge, third-quarter GDP",
+              "url": "https://www.scmp.com/plus/economy/china-economy/article/3371152/eu-backs-trade-kill-switch-china-exports-surge-third-quarter-gdp",
+              "date": "2026-10-16T09:00:10.000Z",
+              "kind": "hard",
+              "summary": "European Union leaders supported creating a tool to potentially shut out Chinese goods as a growing flood of low-cost imports pushed the bilateral trade deficit to a record.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/16/46674cf9-a47a-446f-b443-153b1be5f9b2_4be7381e.jpg?itok=ilhmKm-I&v=1792140167"
+            }
+          ],
+          "thread": "t1vem20c"
+        },
+        {
+          "id": "s1mv2u3m",
+          "headline": "China says only joint action, not exchange rates alone, can address global imbalances",
+          "url": "https://www.scmp.com/economy/global-economy/article/3371116/china-says-only-joint-action-not-exchange-rates-alone-can-address-global-imbalances",
+          "source": "scmp",
+          "date": "2026-10-16T06:13:13.000Z",
+          "relevance": "medium",
+          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/16/ca5543e0-4ab6-43de-843a-e1b6e1ee6b4a_528a2eab.jpg?itok=3hYDZXml&v=1792131192",
+          "why": "China's central bank chief rejects currency moves alone as a fix for global imbalances and promotes yuan bonds as collateral, which could shape trade and currency debates India faces.",
+          "implications": [
+            "Beijing is pushing shared responsibility between surplus and deficit economies, which could bring pressure on deficit economies in global talks.",
+            "Wider acceptance of yuan bonds as collateral may gradually change how global finance treats the yuan."
+          ],
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-16T21:10:04.177Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "low",
+              "reason": "No direct mechanism for India in the report; effects would be indirect."
+            },
+            "horizon": {
+              "value": "years",
+              "reason": "Statement of intent; no concrete measures or dates reported."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "Single outlet, but quotes China's central bank chief."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Large exporters",
+                "direction": "unclear",
+                "what": "currency and trade terms",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Concrete steps to make yuan bonds eligible collateral globally",
+                "when": "",
+                "where": "People's Bank of China"
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "China's central bank chief speaks",
+                    "detail": "Says exchange rates alone cannot resolve global imbalances; surplus and deficit economies must share responsibility.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Yuan bond collateral pledge",
+                    "detail": "He pledged to promote yuan bonds as globally recognised eligible collateral.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Indirect effect on India",
+                    "detail": "Currency and trade debates, and yuan use, could shift conditions for Indian trade.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "Pledges stay rhetorical and no joint action or collateral changes follow."
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "scmp",
+              "headline": "China says only joint action, not exchange rates alone, can address global imbalances",
+              "url": "https://www.scmp.com/economy/global-economy/article/3371116/china-says-only-joint-action-not-exchange-rates-alone-can-address-global-imbalances",
+              "date": "2026-10-16T06:13:13.000Z",
+              "kind": "hard",
+              "summary": "China’s central bank chief has said exchange-rate adjustments alone cannot resolve global economic imbalances, urging surplus and deficit economies to share responsibility for addressing them. He also pledged to promote yuan-denominated bonds as “eligible collateral widely recognised and accepted globally”.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/16/ca5543e0-4ab6-43de-843a-e1b6e1ee6b4a_528a2eab.jpg?itok=3hYDZXml&v=1792131192"
+            }
+          ],
+          "thread": "t1aiqdnc"
+        },
         {
           "id": "spli7hm",
           "headline": "PBOC adds most gold in three years amid China pivot from US dollar",
@@ -8400,6 +9966,32 @@
       "name": "Technology",
       "items": [
         {
+          "id": "s1pym1w3",
+          "headline": "India's young workers have a new colleague: AI",
+          "url": "https://www.dw.com/en/india-s-young-workers-have-a-new-colleague-ai/a-79678342",
+          "source": "dw",
+          "date": "2026-10-16T11:22:00.000Z",
+          "relevance": "medium",
+          "why": "",
+          "implications": [],
+          "reports": [
+            {
+              "source": "dw",
+              "headline": "India's young workers have a new colleague: AI",
+              "url": "https://www.dw.com/en/india-s-young-workers-have-a-new-colleague-ai/a-79678342",
+              "date": "2026-10-16T11:22:00.000Z",
+              "kind": "feature",
+              "summary": "Artificial intelligence is changing the way Indian workplaces operate — raising questions about productivity, skills and entry-level jobs.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://static.dw.com/image/70122237_6.jpg"
+            }
+          ],
+          "image": "https://static.dw.com/image/70122237_6.jpg",
+          "thread": "t2qi8ln"
+        },
+        {
           "id": "s15ezfmu",
           "headline": "Iran threatens Gulf data centres: How exposed is the region’s internet?",
           "url": "https://www.aljazeera.com/news/2026/10/13/iran-threatens-gulf-data-centres-how-exposed-is-the-regions-internet",
@@ -9713,6 +11305,98 @@
       "name": "Agriculture & Food",
       "items": [
         {
+          "id": "s1mrlr1i",
+          "headline": "El Niño Threatens Global Sugar Supply",
+          "url": "https://www.nytimes.com/2026/10/16/climate/india-sugarcane-production-sugar-prices.html",
+          "source": "nyt",
+          "date": "2026-10-16T14:41:01.000Z",
+          "relevance": "high",
+          "image": "https://static01.nyt.com/images/2026/10/05/multimedia/05-INT-INDIA-SUGAR-01-jbfv/05-INT-INDIA-SUGAR-01-jbfv-mediumSquareAt3X.jpg",
+          "why": "El Niño has withered India's sugarcane crop, which The New York Times says is hurting consumers and farmers and undermining energy security goals.",
+          "implications": [
+            "A smaller cane crop could tighten domestic sugar supply and may raise costs for households.",
+            "Cane farmers are reported to be hurt by the withered crop.",
+            "India is the world's second-largest producer, so the shortfall could also affect global sugar supply."
+          ],
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-16T21:12:40.826Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "high",
+              "reason": "Sugar is a food staple, and the crop damage is reported to hurt consumers."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Crop already damaged; price and policy effects may follow."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "Single outlet and no on-record official source in the report."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Food shoppers",
+                "direction": "up",
+                "what": "sugar costs may rise",
+                "basis": "inferred"
+              },
+              {
+                "group": "Farmers",
+                "direction": "down",
+                "what": "sugarcane crop losses",
+                "basis": "reported"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Official estimates of the sugarcane crop shortfall and any sugar supply measures",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "El Niño withers Indian sugarcane",
+                    "detail": "The crop in the world's second-largest producer is reported withered.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Lower supply may lift prices",
+                    "detail": "A smaller cane crop could tighten sugar supply for consumers.",
+                    "basis": "inferred"
+                  },
+                  {
+                    "step": "Farmers and energy goals hit",
+                    "detail": "NYT says farmers are hurt and energy security goals undermined.",
+                    "basis": "reported"
+                  }
+                ],
+                "breaks_if": "Crop losses prove limited or other supply offsets the shortfall."
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "nyt",
+              "headline": "El Niño Threatens Global Sugar Supply",
+              "url": "https://www.nytimes.com/2026/10/16/climate/india-sugarcane-production-sugar-prices.html",
+              "date": "2026-10-16T14:41:01.000Z",
+              "kind": "hard",
+              "summary": "A sugarcane crop withered by El Niño in India, the world’s second-largest producer, is hurting consumers and farmers — plus undermining the country’s energy security goals.",
+              "summaryV": 3,
+              "image": "https://static01.nyt.com/images/2026/10/05/multimedia/05-INT-INDIA-SUGAR-01-jbfv/05-INT-INDIA-SUGAR-01-jbfv-mediumSquareAt3X.jpg"
+            }
+          ],
+          "thread": "t1inkdsd"
+        },
+        {
           "id": "sx3b876",
           "headline": "El Nino breaks Pacific temperature record as weather pattern intensifies",
           "url": "https://www.france24.com/en/environment/20261012-el-nino-pacific-temperature-record-weather",
@@ -9940,104 +11624,94 @@
       "name": "Policy & Governance",
       "items": [
         {
-          "id": "szgo2nb",
-          "headline": "Public comments flood US government websites over proposed H-1B, OPT fee hikes",
-          "url": "https://www.scmp.com/news/us/article/3370790/public-comments-flood-us-government-websites-over-proposed-h-1b-opt-fee-hikes",
-          "source": "scmp",
-          "date": "2026-10-13T22:17:08.000Z",
+          "id": "s12sl0v",
+          "headline": "Iran's president denies nuclear ambitions, says he's ready for talks",
+          "url": "https://www.cbsnews.com/live-updates/iran-war-us-trump-strait-of-hormuz-yemen-houthis-saudi-arabia/",
+          "source": "cbs",
+          "date": "2026-10-16T20:12:46.000Z",
           "relevance": "medium",
-          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/14/e68a75b5-fdf6-4391-af46-71f9e5ba27fc_31850602.jpg?itok=HqVi4oFb&v=1791929819",
-          "why": "The US has proposed higher H-1B and OPT fees, now drawing public comments; if adopted, this could raise costs for Indian students and workers using these routes.",
+          "why": "Iran's president says he is ready for talks, but earlier overtures failed, so any effect on Gulf stability and India remains uncertain.",
           "implications": [
-            "The fee hikes are only proposed, and public comments are flooding US government websites.",
-            "Indian graduates on OPT and professionals on H-1B may face higher costs if the proposal is adopted."
+            "CBS News reports Iran's president denied nuclear ambitions and said he is ready for talks.",
+            "Earlier signals of openness did not come to fruition, so talks are not assured.",
+            "Any diplomatic outcome could shape Gulf stability, which matters for Indians living and working in the region."
           ],
           "analysis": {
             "v": 2,
-            "at": "2026-10-13T23:04:16.236Z",
+            "at": "2026-10-16T21:14:57.339Z",
             "tier": "quick",
-            "primary": "policy_tracker",
+            "primary": "impact_chain",
             "complement": null,
             "features": [
-              "policy_stage",
               "pending_outcome"
             ],
             "exposure": {
-              "level": "medium",
-              "reason": "Proposed visa fee changes could affect Indians working or studying in the US."
+              "level": "low",
+              "reason": "No direct mechanism for India in the report; effects are indirect."
             },
             "horizon": {
               "value": "months",
-              "reason": "Proposal is still at the public comment stage."
+              "reason": "No talks are reported as scheduled."
             },
             "confidence": {
-              "level": "low",
-              "reason": "Single outlet report; no fee details or official source quoted."
+              "level": "medium",
+              "reason": "One outlet, but the president's remarks are on record."
             },
+            "outlets": 1,
             "affected": [
               {
-                "group": "Students abroad",
-                "direction": "up",
-                "what": "OPT fee costs",
-                "basis": "inferred"
-              },
-              {
-                "group": "IT & services workers",
-                "direction": "up",
-                "what": "H-1B fee costs",
+                "group": "Gulf & overseas workers and families",
+                "direction": "unclear",
+                "what": "regional stability outlook",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "US government finalises or revises proposed H-1B and OPT fee hikes",
+                "what": "Whether formal talks involving Iran are scheduled",
                 "when": "",
                 "where": ""
               }
             ],
             "frameworks": {
-              "policy_tracker": {
-                "instrument": {
-                  "name": "Proposed H-1B and OPT fee hikes",
-                  "issuer": "US government",
-                  "jurisdiction": "United States"
-                },
-                "stages": [
+              "impact_chain": {
+                "chain": [
                   {
-                    "stage": "draft",
-                    "date": "",
-                    "status": "current"
+                    "step": "Iran signals openness to talks",
+                    "detail": "President denies nuclear ambitions and says he is ready for talks.",
+                    "basis": "reported"
                   },
                   {
-                    "stage": "adopted",
-                    "date": "",
-                    "status": "next"
-                  }
-                ],
-                "obligations": [
+                    "step": "Past overtures stalled",
+                    "detail": "Earlier signals of openness did not come to fruition.",
+                    "basis": "reported"
+                  },
                   {
-                    "who": "H-1B and OPT applicants",
-                    "what": "Could pay higher fees if the proposal is adopted",
-                    "from": ""
+                    "step": "Gulf stability outlook may shift",
+                    "detail": "Whether talks happen could shape regional conditions that matter to India.",
+                    "basis": "inferred"
                   }
                 ],
-                "applies_to_india": "partly"
+                "breaks_if": "No talks are actually held, as with earlier overtures."
               }
             }
           },
           "reports": [
             {
-              "source": "scmp",
-              "headline": "Public comments flood US government websites over proposed H-1B, OPT fee hikes",
-              "url": "https://www.scmp.com/news/us/article/3370790/public-comments-flood-us-government-websites-over-proposed-h-1b-opt-fee-hikes",
-              "date": "2026-10-13T22:17:08.000Z",
+              "source": "cbs",
+              "headline": "Iran's president denies nuclear ambitions, says he's ready for talks",
+              "url": "https://www.cbsnews.com/live-updates/iran-war-us-trump-strait-of-hormuz-yemen-houthis-saudi-arabia/",
+              "date": "2026-10-16T20:12:46.000Z",
               "kind": "hard",
-              "summary": "Kana Liu, a Chinese Canadian living in the US on a work visa, felt compelled to speak up.",
+              "summary": "Iran has signaled an openness to talks in the past, but they did not come to fruition.",
               "summaryV": 3,
-              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/14/e68a75b5-fdf6-4391-af46-71f9e5ba27fc_31850602.jpg?itok=HqVi4oFb&v=1791929819"
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://assets1.cbsnewsstatic.com/hub/i/r/2026/10/16/17d3f66e-fa34-4d8e-8c04-688c2a07f7ed/thumbnail/1200x630/e787586bfc991bf9e50b4506501eb3f1/gettyimages-2298704597.jpg"
             }
           ],
-          "thread": "t1glzf0p"
+          "image": "https://assets1.cbsnewsstatic.com/hub/i/r/2026/10/16/17d3f66e-fa34-4d8e-8c04-688c2a07f7ed/thumbnail/1200x630/e787586bfc991bf9e50b4506501eb3f1/gettyimages-2298704597.jpg",
+          "thread": "t2ogxay"
         },
         {
           "id": "st90stv",
@@ -10083,6 +11757,49 @@
               "summaryV": 3,
               "lede": "India’s youth-led Cockroach movement kicked off more nationwide protests on Friday as thousands of people gathered in Mumbai, amid mounting concerns that millions of citizens are being unfairly stripped of their vote.",
               "image": "https://i.guim.co.uk/img/media/a9cdad812c46c9f9fb10b69225ba538602220d32/1095_0_6880_5504/master/6880.jpg?width=700&quality=85&auto=format&fit=max&s=68ee47ff062d4e3651537a150a9a1c90"
+            },
+            {
+              "source": "bbc",
+              "headline": "India's 'cockroach' party founder detained ahead of protest",
+              "url": "https://www.bbc.co.uk/news/articles/cmx237n1y9lzo",
+              "date": "2026-10-16T11:44:31.000Z",
+              "kind": "breaking",
+              "summary": "The youth-led movement had called for a Delhi protest after mass detentions last week and the jailing of two leaders.",
+              "summaryV": 3,
+              "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/dc0b/live/9877b0a0-c955-11f1-8879-9d9deeb686e1.jpg",
+              "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/dc0b/live/9877b0a0-c955-11f1-8879-9d9deeb686e1.jpg"
+            },
+            {
+              "source": "scmp",
+              "headline": "Indian police detain ‘cockroach’ movement leader ahead of New Delhi protest",
+              "url": "https://www.scmp.com/news/asia/south-asia/article/3371196/indian-police-detain-cockroach-movement-leader-ahead-new-delhi-protest",
+              "date": "2026-10-16T12:06:11.000Z",
+              "kind": "hard",
+              "summary": "Police detained India’s ‘cockroach’ movement founder Abhijeet Dipke on Friday, lstudent leaders and supporters on Friday as hundreds poured into central Delhi, waving the national flag and demanding the resignation of India’s election chief.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/16/f1c868af-1028-434a-b891-afd8cfa001be_0e0fe21e.jpg?itok=W0MFbkMy&v=1792152363"
+            },
+            {
+              "source": "guardian",
+              "headline": "India’s Cockroach Janta party leader detained amid crackdown on protests",
+              "url": "https://www.theguardian.com/world/2026/oct/16/india-cockroach-janta-party-leader-detained-amid-crackdown-protests",
+              "date": "2026-10-16T16:22:32.000Z",
+              "kind": "hard",
+              "summary": "Abhijeet Dipke was arrested before planned anti-government demonstrations in Delhi",
+              "summaryV": 3,
+              "lede": "The leader of the Cockroach Janta party (CJP) youth movement, Abhijeet Dipke, was detained by police on Friday as authorities cracked down on fresh anti-government protests in the Indian capital.",
+              "image": "https://i.guim.co.uk/img/media/317eada2fa4d459e2638640a946dbd65a639d7e0/346_0_3809_3047/master/3809.jpg?width=700&quality=85&auto=format&fit=max&s=5e2c8c3a1986b5a67cd9a91998ba5819"
+            },
+            {
+              "source": "france24",
+              "headline": "Trump Vs Zelensky, From the Screen to the Streets, Gen Z protests from Paris to Dehli",
+              "url": "https://www.france24.com/en/tv-shows/the-world-this-week/20261016-trump-vs-zelensky-from-the-screen-to-the-streets-gen-z-protests-from-paris-to-dehli",
+              "date": "2026-10-16T19:21:33.000Z",
+              "kind": "hard",
+              "summary": "In India, the Cockroach movement felt the crushing boot of the state this week. Thousands of Gen Z protesters were rounded up and detained in sports stadiums and community halls turned into makeshift detention centres, while the movement’s founder, Abhijeet Dipke, was arrested on arrival.",
+              "summaryV": 3,
+              "lede": "It’s been a week of blame games and accusations of betrayal in Ukraine with President Zelensky speaking of his personal hurt at President Trump’s decision to make a diesel deal with the Kremlin ahead of the US Mid term elections calling it “weak”, suggesting Trump had chosen, “the other side”. Trump meanwhile made clear he wants Zelensky replaced, and warned him against striking Russian refineries",
+              "image": "https://s.france24.com/media/display/8b4918a4-c993-11f1-979e-638c1c1f5fd6/w:1024/p:16x9/Anglais-2026-10-16T17-17-51-019Z.jpg"
             }
           ],
           "thread": "t1ya4ss",
@@ -10233,6 +11950,215 @@
               }
             ]
           }
+        },
+        {
+          "id": "s1mct7qx",
+          "headline": "Crowds throng New Delhi and wave Indian flags amid escalating protests",
+          "url": "https://www.npr.org/2026/10/16/g-s1-148383/crowds-throng-new-delhi-and-wave-indian-flags-amid-escalating-protests",
+          "source": "npr",
+          "date": "2026-10-16T13:26:43.000Z",
+          "relevance": "medium",
+          "image": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3707x2471+0+0/resize/3707x2471!/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Ff3%2F22%2F24a18ad34ab9afaeee9c49b78d39%2Fap26289462666677.jpg",
+          "why": "Escalating protests in New Delhi over a voter-list review, which critics call politically motivated, put electoral trust and political stability in focus.",
+          "implications": [
+            "NPR reports critics say the review could disenfranchise voters, while the Election Commission and Modi's administration deny this.",
+            "Continued protests could deepen the political dispute over how voter rolls are maintained."
+          ],
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-16T21:12:40.826Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "low",
+              "reason": "Reports describe no direct link to prices, trade, jobs or travel."
+            },
+            "horizon": {
+              "value": "now",
+              "reason": "Protests are already under way and escalating."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "Single outlet; claims by critics and government conflict."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "A named state or region",
+                "direction": "unclear",
+                "what": "Delhi protests, voter list review",
+                "basis": "reported"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Election Commission statements or changes to the voter list review",
+                "when": "",
+                "where": "Election Commission of India"
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Voter list review sparks protests",
+                    "detail": "Crowds in New Delhi wave Indian flags as protests intensify.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Critics allege disenfranchisement",
+                    "detail": "The Election Commission and Modi's administration deny the allegations.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Political contest may sharpen",
+                    "detail": "The dispute could harden positions over electoral processes.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The review is clarified or changed in ways that ease critics' concerns."
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "npr",
+              "headline": "Crowds throng New Delhi and wave Indian flags amid escalating protests",
+              "url": "https://www.npr.org/2026/10/16/g-s1-148383/crowds-throng-new-delhi-and-wave-indian-flags-amid-escalating-protests",
+              "date": "2026-10-16T13:26:43.000Z",
+              "kind": "hard",
+              "summary": "Protests have intensified over a review of voter lists that critics say is politically motivated and threatens to disenfranchise voters. The Election Commission and Modi's administration deny these allegations.",
+              "summaryV": 3,
+              "image": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3707x2471+0+0/resize/3707x2471!/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Ff3%2F22%2F24a18ad34ab9afaeee9c49b78d39%2Fap26289462666677.jpg"
+            }
+          ],
+          "thread": "t1kqejni"
+        },
+        {
+          "id": "s117bnsd",
+          "headline": "India’s proposed social media ban for under-18s wins parents’ backing",
+          "url": "https://www.scmp.com/week-asia/lifestyle-culture/article/3371153/indias-proposed-social-media-ban-under-18s-wins-parents-backing",
+          "source": "scmp",
+          "date": "2026-10-16T10:00:13.000Z",
+          "relevance": "medium",
+          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/16/ec574ff5-4135-47ed-8194-bb6409b95e2a_bdbfdeb8.jpg?itok=z47lTenv&v=1792140286",
+          "why": "",
+          "implications": [],
+          "reports": [
+            {
+              "source": "scmp",
+              "headline": "India’s proposed social media ban for under-18s wins parents’ backing",
+              "url": "https://www.scmp.com/week-asia/lifestyle-culture/article/3371153/indias-proposed-social-media-ban-under-18s-wins-parents-backing",
+              "date": "2026-10-16T10:00:13.000Z",
+              "kind": "soft",
+              "summary": "Digangana Mukherjee, a mother of a six-year-old girl and a 10-year-old boy, has banned television at her home in the Indian city of Mysore because she does not want her children to become addicted to watching content on screen.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/16/ec574ff5-4135-47ed-8194-bb6409b95e2a_bdbfdeb8.jpg?itok=z47lTenv&v=1792140286"
+            }
+          ],
+          "thread": "t1ln0ukk"
+        },
+        {
+          "id": "szgo2nb",
+          "headline": "Public comments flood US government websites over proposed H-1B, OPT fee hikes",
+          "url": "https://www.scmp.com/news/us/article/3370790/public-comments-flood-us-government-websites-over-proposed-h-1b-opt-fee-hikes",
+          "source": "scmp",
+          "date": "2026-10-13T22:17:08.000Z",
+          "relevance": "medium",
+          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/14/e68a75b5-fdf6-4391-af46-71f9e5ba27fc_31850602.jpg?itok=HqVi4oFb&v=1791929819",
+          "why": "The US has proposed higher H-1B and OPT fees, now drawing public comments; if adopted, this could raise costs for Indian students and workers using these routes.",
+          "implications": [
+            "The fee hikes are only proposed, and public comments are flooding US government websites.",
+            "Indian graduates on OPT and professionals on H-1B may face higher costs if the proposal is adopted."
+          ],
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-13T23:04:16.236Z",
+            "tier": "quick",
+            "primary": "policy_tracker",
+            "complement": null,
+            "features": [
+              "policy_stage",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "Proposed visa fee changes could affect Indians working or studying in the US."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Proposal is still at the public comment stage."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "Single outlet report; no fee details or official source quoted."
+            },
+            "affected": [
+              {
+                "group": "Students abroad",
+                "direction": "up",
+                "what": "OPT fee costs",
+                "basis": "inferred"
+              },
+              {
+                "group": "IT & services workers",
+                "direction": "up",
+                "what": "H-1B fee costs",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "US government finalises or revises proposed H-1B and OPT fee hikes",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "frameworks": {
+              "policy_tracker": {
+                "instrument": {
+                  "name": "Proposed H-1B and OPT fee hikes",
+                  "issuer": "US government",
+                  "jurisdiction": "United States"
+                },
+                "stages": [
+                  {
+                    "stage": "draft",
+                    "date": "",
+                    "status": "current"
+                  },
+                  {
+                    "stage": "adopted",
+                    "date": "",
+                    "status": "next"
+                  }
+                ],
+                "obligations": [
+                  {
+                    "who": "H-1B and OPT applicants",
+                    "what": "Could pay higher fees if the proposal is adopted",
+                    "from": ""
+                  }
+                ],
+                "applies_to_india": "partly"
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "scmp",
+              "headline": "Public comments flood US government websites over proposed H-1B, OPT fee hikes",
+              "url": "https://www.scmp.com/news/us/article/3370790/public-comments-flood-us-government-websites-over-proposed-h-1b-opt-fee-hikes",
+              "date": "2026-10-13T22:17:08.000Z",
+              "kind": "hard",
+              "summary": "Kana Liu, a Chinese Canadian living in the US on a work visa, felt compelled to speak up.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/14/e68a75b5-fdf6-4391-af46-71f9e5ba27fc_31850602.jpg?itok=HqVi4oFb&v=1791929819"
+            }
+          ],
+          "thread": "t1glzf0p"
         },
         {
           "id": "s1dpaqz3",
@@ -10456,9 +12382,49 @@
             }
           },
           "stats": {
-            "v": 1,
-            "at": "2026-10-13T21:09:38.581Z",
-            "series": []
+            "v": 2,
+            "at": "2026-10-16T21:14:59.518Z",
+            "series": [
+              {
+                "title": "Bihar electoral roll size through SIR stages",
+                "unit": "crore electors",
+                "publisher": "Election Commission of India (via PIB)",
+                "points": [
+                  {
+                    "period": "24 Jun 2025",
+                    "value": 7.89,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2173316&reg=48&lang=2",
+                    "source": "Special Intensive Revision (SIR) of Electoral Rolls in Bihar Successfully Completed"
+                  },
+                  {
+                    "period": "1 Aug 2025 (draft li",
+                    "value": 7.24,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2173316&reg=48&lang=2",
+                    "source": "Special Intensive Revision (SIR) of Electoral Rolls in Bihar Successfully Completed"
+                  },
+                  {
+                    "period": "30 Sep 2025 (final l",
+                    "value": 7.42,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2173316&reg=48&lang=2",
+                    "source": "Special Intensive Revision (SIR) of Electoral Rolls in Bihar Successfully Completed"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2173316&reg=48&lang=2",
+                    "title": "Special Intensive Revision (SIR) of Electoral Rolls in Bihar Successfully Completed",
+                    "domain": "pib.gov.in"
+                  }
+                ],
+                "domains": [
+                  "pib.gov.in"
+                ],
+                "dropped": 0,
+                "why": "This series tracks how India's electoral roll size changed through the Special Intensive Revision process, which is the same voter-roll removal mechanism at the center of the story's protests against ",
+                "reused": true,
+                "checkedAt": "2026-10-13T23:10:58.417Z"
+              }
+            ]
           }
         },
         {
@@ -10913,6 +12879,51 @@
                 ]
               }
             }
+          },
+          "stats": {
+            "v": 2,
+            "at": "2026-10-16T21:15:10.853Z",
+            "series": [
+              {
+                "title": "Bihar electoral roll size through SIR stages",
+                "unit": "crore electors",
+                "publisher": "Election Commission of India (via PIB)",
+                "points": [
+                  {
+                    "period": "24 Jun 2025",
+                    "value": 7.89,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2173316&reg=48&lang=2",
+                    "source": "Special Intensive Revision (SIR) of Electoral Rolls in Bihar Successfully Completed"
+                  },
+                  {
+                    "period": "1 Aug 2025 (draft li",
+                    "value": 7.24,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2173316&reg=48&lang=2",
+                    "source": "Special Intensive Revision (SIR) of Electoral Rolls in Bihar Successfully Completed"
+                  },
+                  {
+                    "period": "30 Sep 2025 (final l",
+                    "value": 7.42,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2173316&reg=48&lang=2",
+                    "source": "Special Intensive Revision (SIR) of Electoral Rolls in Bihar Successfully Completed"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2173316&reg=48&lang=2",
+                    "title": "Special Intensive Revision (SIR) of Electoral Rolls in Bihar Successfully Completed",
+                    "domain": "pib.gov.in"
+                  }
+                ],
+                "domains": [
+                  "pib.gov.in"
+                ],
+                "dropped": 0,
+                "why": "The series tracks how India's electoral roll changed during the Special Intensive Revision, the same voter-roll process whose alleged manipulation is driving the protests in the story.",
+                "reused": true,
+                "checkedAt": "2026-10-13T23:10:58.417Z"
+              }
+            ]
           }
         },
         {
@@ -12000,31 +14011,30 @@
   ],
   "source": "BBC News & The Guardian & NPR & Al Jazeera & MercoPress & ABC News & The New York Times & CNBC & CBS News & DW & France 24 & Africanews & South China Morning Post & The Hindu & Mint",
   "lastRun": {
-    "analysed": 41,
-    "added": 2,
-    "merged": 1,
-    "rejected": 38,
-    "failedBatches": 0,
+    "analysed": 300,
+    "added": 22,
+    "merged": 12,
+    "failedBatches": 1,
     "feeds": {
       "bbc": {
         "feedsOk": 6,
         "feedsFailed": 0,
-        "items": 146
+        "items": 155
       },
       "guardian": {
         "feedsOk": 7,
         "feedsFailed": 0,
-        "items": 194
+        "items": 193
       },
       "npr": {
         "feedsOk": 4,
         "feedsFailed": 0,
-        "items": 40
+        "items": 39
       },
       "aljazeera": {
         "feedsOk": 1,
         "feedsFailed": 0,
-        "items": 11
+        "items": 13
       },
       "mercopress": {
         "feedsOk": 3,
@@ -12039,27 +14049,27 @@
       "nyt": {
         "feedsOk": 5,
         "feedsFailed": 0,
-        "items": 169
+        "items": 173
       },
       "cnbc": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 90
+        "items": 89
       },
       "cbs": {
         "feedsOk": 2,
         "feedsFailed": 0,
-        "items": 46
+        "items": 43
       },
       "dw": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 33
+        "items": 31
       },
       "france24": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 80
+        "items": 74
       },
       "africanews": {
         "feedsOk": 1,
@@ -12069,22 +14079,22 @@
       "scmp": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 144
+        "items": 145
       }
     },
     "shareImages": {
-      "tried": 0,
-      "found": 0,
+      "tried": 12,
+      "found": 11,
       "summaries": 0
     },
     "threads": {
-      "assigned": 2,
-      "created": 1,
+      "assigned": 22,
+      "created": 3,
       "failedBatches": 0
     },
     "summaries": {
-      "written": 0,
-      "due": 0
+      "written": 11,
+      "due": 11
     },
     "kinds": {
       "labelled": 0,
@@ -12092,90 +14102,84 @@
       "failedBatches": 0
     },
     "frames": {
-      "done": 20,
-      "waiting": 39,
+      "done": 2,
+      "waiting": 3,
       "failedBatches": 0
     },
     "stats": {
-      "searched": 6,
-      "found": 3,
-      "none": 3,
+      "searched": 4,
+      "found": 0,
+      "reused": 3,
+      "none": 1,
       "failed": 0,
-      "proposed": 24,
-      "droppedPoints": 7,
-      "pagesFetched": 6,
+      "proposed": 0,
+      "droppedPoints": 0,
+      "pagesFetched": 1,
       "samples": [
         {
-          "headline": "Saudi Arabia strikes strategic oil depots near Yemen capital",
-          "result": "no figure found on an official page",
-          "proposed": 7,
-          "checked": 0,
-          "pagesFetched": 0
+          "headline": "India's opposition leader marches with thousands against election chief",
+          "result": "reused saved series"
         },
         {
-          "headline": "Trump announces Russian diesel deal amid soaring US fuel prices",
-          "result": "chart",
-          "proposed": 6,
-          "checked": 6,
-          "pagesFetched": 2
-        },
-        {
-          "headline": "Trump says he is 'going to look at' joining Saudi Arabia in the fight against Ir",
+          "headline": "Attack on airport in Saudi capital, Riyadh, leaves several injured",
           "result": "none",
           "proposed": 0,
           "checked": 0,
           "pagesFetched": 1
         },
         {
-          "headline": "India’s youth-led Cockroach movement defies protest ban",
-          "result": "chart",
-          "proposed": 5,
-          "checked": 5,
-          "pagesFetched": 2
+          "headline": "India Cancels Trains, Floods Capital with Police to Block Protests",
+          "result": "reused saved series"
         },
         {
-          "headline": "Oil prices fall as traders assess Russian diesel supply prospects and Saudi-Hout",
-          "result": "chart",
-          "proposed": 6,
-          "checked": 6,
-          "pagesFetched": 1
-        },
-        {
-          "headline": "Trump claims Russia and Ukraine agreed to 'energy ceasefire'",
-          "result": "nothing",
-          "proposed": 0,
-          "checked": 0,
-          "pagesFetched": 0
+          "headline": "Trump demands Ukraine get new president, lashes out at Zelensky",
+          "result": "reused saved series"
         }
       ]
     },
     "models": {
       "filter": {
         "model": "claude-haiku-5-5",
-        "calls": 8,
-        "inputTokens": 24344,
-        "outputTokens": 13621
+        "calls": 25,
+        "inputTokens": 84128,
+        "outputTokens": 49353,
+        "cost": 0.0329
       },
-      "analysis": {
-        "model": "claude-opus-5-5",
-        "calls": 10,
-        "inputTokens": 25008,
-        "outputTokens": 34573
+      "analysis_quick": {
+        "model": "claude-sonnet-5-5",
+        "calls": 12,
+        "inputTokens": 24225,
+        "outputTokens": 25140,
+        "cost": 0.2998
       },
       "stats": {
         "model": "claude-sonnet-5-5",
-        "calls": 6,
-        "inputTokens": 514377,
-        "outputTokens": 6725,
-        "searches": 14,
-        "fetches": 11
+        "calls": 1,
+        "inputTokens": 50262,
+        "outputTokens": 804,
+        "searches": 2,
+        "fetches": 2,
+        "cost": 0.1286
+      },
+      "analysis": {
+        "model": "claude-opus-5-5",
+        "calls": 1,
+        "inputTokens": 3203,
+        "outputTokens": 3822,
+        "cost": 0.0893
       },
       "threads": {
         "model": "claude-sonnet-5-5",
-        "calls": 1,
-        "inputTokens": 4022,
-        "outputTokens": 64
+        "calls": 13,
+        "inputTokens": 23434,
+        "outputTokens": 5502,
+        "cost": 0.1018
       }
+    },
+    "spend": {
+      "thisDesk": 0.6526,
+      "today": 0.6526,
+      "cap": 6
     }
   },
   "recentDays": 60

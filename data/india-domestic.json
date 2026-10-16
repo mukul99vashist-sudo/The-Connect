@@ -2,12 +2,219 @@
   "schema": 4,
   "region": "India",
   "since": "2026-10-02",
-  "updatedAt": "2026-10-13T23:16:50.402Z",
+  "updatedAt": "2026-10-16T21:24:00.487Z",
   "sectors": [
     {
       "id": "energy",
       "name": "Energy",
       "items": [
+        {
+          "id": "sykigk4",
+          "headline": "India’s crude imports rise 7% in September, bill surges 47%",
+          "url": "https://www.thehindu.com/business/Economy/indias-crude-imports-rise-7-in-september-bill-surges-47/article71593638.ece",
+          "source": "thehindu",
+          "date": "2026-10-16T16:26:48.000Z",
+          "relevance": "medium",
+          "image": "https://th-i.thgim.com/public/incoming/l4gghg/article71128733.ece/alternates/LANDSCAPE_1200/90092_25_3_2024_13_19_5_4_PARADEEP_PORT_4.JPG",
+          "why": "A sharply higher oil and gas import bill could widen India's external payments strain, since crude is a top import.",
+          "implications": [
+            "The Hindu reports crude imports rose 7% in September while the crude bill surged 47%.",
+            "Net spend on oil and gas imports rose about 40% to $13.4 billion, which could add pressure on government finances.",
+            "The reports do not say whether retail fuel prices will change."
+          ],
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-16T21:20:20.612Z",
+            "tier": "quick",
+            "primary": "decoder",
+            "complement": null,
+            "features": [
+              "scheduled"
+            ],
+            "exposure": {
+              "level": "high",
+              "reason": "Crude oil is a top Indian import and feeds into fuel costs."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Import bill effects reach prices and finances gradually."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "Single outlet; no official source named in the report."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Government finances",
+                "direction": "up",
+                "what": "oil import bill pressure",
+                "basis": "inferred"
+              },
+              {
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "fuel prices",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Next monthly data on crude volumes and the oil and gas import bill",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "frameworks": {
+              "decoder": {
+                "kind": "release",
+                "headline": {
+                  "label": "Net oil and gas import spend",
+                  "value": 13.4,
+                  "unit": "$ billion",
+                  "period": "September",
+                  "previous": null,
+                  "previousLabel": "about 40% rise in net spend",
+                  "from": "The Hindu"
+                },
+                "comparisons": [
+                  {
+                    "label": "Crude import volume growth",
+                    "value": 7,
+                    "unit": "%",
+                    "from": "The Hindu"
+                  },
+                  {
+                    "label": "Crude import bill growth",
+                    "value": 47,
+                    "unit": "%",
+                    "from": "The Hindu"
+                  }
+                ],
+                "drivers": [],
+                "decision": null
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "thehindu",
+              "headline": "India’s crude imports rise 7% in September, bill surges 47%",
+              "url": "https://www.thehindu.com/business/Economy/indias-crude-imports-rise-7-in-september-bill-surges-47/article71593638.ece",
+              "date": "2026-10-16T16:26:48.000Z",
+              "kind": "hard",
+              "summary": "Net spend on oil and gas imports increased about 40% to $13.4 billion.",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/incoming/l4gghg/article71128733.ece/alternates/LANDSCAPE_1200/90092_25_3_2024_13_19_5_4_PARADEEP_PORT_4.JPG"
+            }
+          ],
+          "thread": "t8nzveu"
+        },
+        {
+          "id": "sijjajo",
+          "headline": "Export levy on petrol hiked, diesel lowered",
+          "url": "https://www.thehindu.com/business/india-raises-windfall-tax-on-petrol-cuts-duty-on-diesel/article71590967.ece",
+          "source": "thehindu",
+          "date": "2026-10-16T06:32:56.000Z",
+          "relevance": "medium",
+          "image": "https://th-i.thgim.com/public/news/national/tg0lia/article71590969.ece/alternates/LANDSCAPE_1200/iStock-1387607077.jpg",
+          "why": "The export levy on petrol was raised and on diesel lowered, but the report says duty on retail fuels for domestic consumption is unchanged.",
+          "implications": [
+            "The change applies to exports, so it does not directly alter duty on fuel sold within India.",
+            "Any effect on domestic supply or refiner decisions is not described in the report and could be indirect."
+          ],
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-16T21:18:59.093Z",
+            "tier": "quick",
+            "primary": "pass_through",
+            "complement": null,
+            "features": [
+              "price_move"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "Domestic retail fuel duty is unchanged; no mechanism to pump prices is reported."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Domestic duty unchanged; any export-side effect would be gradual."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "Single outlet, brief summary, no official source quoted."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "domestic duty unchanged",
+                "basis": "reported"
+              },
+              {
+                "group": "Government finances",
+                "direction": "mixed",
+                "what": "export levy receipts",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Any change in duty on petrol and diesel sold for domestic consumption",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "frameworks": {
+              "pass_through": {
+                "driver": {
+                  "variable": "Export levy (petrol raised, diesel lowered)",
+                  "direction": "up",
+                  "size": ""
+                },
+                "product": "petrol & diesel",
+                "rungs": [
+                  {
+                    "stage": "Export levy → Refiners' export returns",
+                    "pass": "unclear",
+                    "damper": "Size of the levy changes is not reported",
+                    "lag": "weeks"
+                  },
+                  {
+                    "stage": "Export returns → Domestic fuel supply",
+                    "pass": "unclear",
+                    "damper": "No supply effect is described in the report",
+                    "lag": "weeks"
+                  },
+                  {
+                    "stage": "Domestic duty → Pump price",
+                    "pass": "blocked",
+                    "damper": "No change in duty on domestic retail fuels",
+                    "lag": "days"
+                  }
+                ],
+                "end_user": {
+                  "group": "Fuel & LPG users",
+                  "effect": "No direct change is indicated, since domestic duty is unchanged per the report."
+                }
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "thehindu",
+              "headline": "Export levy on petrol hiked, diesel lowered",
+              "url": "https://www.thehindu.com/business/india-raises-windfall-tax-on-petrol-cuts-duty-on-diesel/article71590967.ece",
+              "date": "2026-10-16T06:32:56.000Z",
+              "kind": "hard",
+              "summary": "There is no change in the duty of either of the retail fuels meant for domestic consumption",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/news/national/tg0lia/article71590969.ece/alternates/LANDSCAPE_1200/iStock-1387607077.jpg"
+            }
+          ],
+          "thread": "tiz5ywt"
+        },
         {
           "id": "sx7a31y",
           "headline": "OPEC cuts India’s 2026 oil demand growth forecast to 40,000 barrels per day",
@@ -1134,10 +1341,11 @@
           "date": "2026-10-11T13:46:19.000Z",
           "relevance": "high",
           "image": "https://www.livemint.com/lm-img/img/2026/10/11/1600x900/logo/3-0-2269236235-Jio-bp-flagship-Mobility-Station-0_1674226811511_1791726044688_pbKZ_cb8dce47-7bfd-4fc2-9a7a-7a7d27ffe79c_pqvR.jpg",
-          "why": "Fuel retailers raising pump prices after the Strait of Hormuz closure shows crude supply disruption is feeding through to consumers nationwide.",
+          "why": "Jio-bp's petrol and diesel hikes after the Strait of Hormuz closure show higher fuel costs reaching Indian pump prices.",
           "implications": [
-            "Higher petrol and diesel prices may raise commuting costs for households.",
-            "Costlier diesel could push up freight and transport costs, which may lift food and goods prices."
+            "Jio-bp raised petrol by ₹5 per litre and diesel by ₹3, its first increase this year.",
+            "Other fuel retailers had already raised prices after the Strait of Hormuz closed.",
+            "Higher diesel and petrol prices could raise running costs for drivers and transporters."
           ],
           "reports": [
             {
@@ -1151,7 +1359,84 @@
               "kind": "hard"
             }
           ],
-          "thread": "t8nzveu"
+          "thread": "t8nzveu",
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-16T21:23:39.534Z",
+            "tier": "quick",
+            "primary": "pass_through",
+            "complement": null,
+            "features": [
+              "price_move"
+            ],
+            "exposure": {
+              "level": "high",
+              "reason": "Petrol and diesel are household essentials, and the price rise follows the Hormuz closure."
+            },
+            "horizon": {
+              "value": "now",
+              "reason": "Pump price increase already announced."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "Single outlet; no official statement quoted."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "up",
+                "what": "petrol and diesel prices",
+                "basis": "reported"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Whether other fuel retailers announce further petrol or diesel price changes",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "Any change in the status of the Strait of Hormuz closure",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "frameworks": {
+              "pass_through": {
+                "driver": {
+                  "variable": "Fuel supply disruption from Strait of Hormuz closu",
+                  "direction": "up",
+                  "size": ""
+                },
+                "product": "petrol & diesel",
+                "rungs": [
+                  {
+                    "stage": "Hormuz closure → Retailers' fuel costs",
+                    "pass": "likely",
+                    "damper": "Cost size and sourcing not given in the report.",
+                    "lag": "weeks"
+                  },
+                  {
+                    "stage": "Retailers' costs → Pump prices",
+                    "pass": "likely",
+                    "damper": "Jio-bp absorbed costs earlier this year before raising prices.",
+                    "lag": "days"
+                  },
+                  {
+                    "stage": "Other retailers' hikes → Wider pump prices",
+                    "pass": "partial",
+                    "damper": "Each retailer sets its own timing and size.",
+                    "lag": "days"
+                  }
+                ],
+                "end_user": {
+                  "group": "Fuel & LPG users",
+                  "effect": "Petrol costs ₹5 per litre more and diesel ₹3 more at Jio-bp; other retailers' prices have also risen."
+                }
+              }
+            }
+          }
         },
         {
           "id": "sje1dma",
@@ -2180,11 +2465,10 @@
           "date": "2026-10-12T10:42:06.000Z",
           "relevance": "medium",
           "image": "https://www.livemint.com/lm-img/img/2026/10/12/1600x900/logo/PTI10-23-2024-000260B-0_1735899428458_1791801486086_0yGj_a7648517-9953-4722-95a5-92c606ed423e_irNk.jpg",
-          "why": "A successful 180 kmph trial of a 16-coach Vande Bharat train marks progress toward faster, higher-capacity intercity rail travel in India.",
+          "why": "A 16-coach Vande Bharat completed a 180 kmph trial, which could eventually mean faster rail travel for passengers on such routes.",
           "implications": [
-            "Passengers could eventually see shorter journey times on routes where higher-speed operations are cleared.",
-            "A longer 16-coach format may add seating capacity, which could ease demand pressure on busy intercity routes.",
-            "Wider rollout would likely depend on further safety approvals and track readiness, so timelines remain uncertain."
+            "The trial was supervised and covered the Mathura–Nagda section on October 8, 2026.",
+            "Passenger service at this speed is not reported, so any change to journey times remains uncertain."
           ],
           "reports": [
             {
@@ -2198,7 +2482,65 @@
               "image": "https://www.livemint.com/lm-img/img/2026/10/12/1600x900/logo/PTI10-23-2024-000260B-0_1735899428458_1791801486086_0yGj_a7648517-9953-4722-95a5-92c606ed423e_irNk.jpg"
             }
           ],
-          "thread": "t1iwvg1n"
+          "thread": "t1iwvg1n",
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-16T21:22:27.532Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "low",
+              "reason": "Trial only; no service launch, fares or timetable change reported."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Trial stage; rollout timing not reported."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "Single outlet; no official source quoted in the summary."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Travellers & pilgrims",
+                "direction": "unclear",
+                "what": "future train speeds",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Announcement of commercial service or speed approvals for the 16-coach Vande Bharat",
+                "when": "",
+                "where": "Ministry of Railways"
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "180 kmph trial completed",
+                    "detail": "Supervised trial of a 16-coach Vande Bharat on Mathura–Nagda, October 8, 2026.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "New chair car features shown",
+                    "detail": "Mint says the trial coincides with details on the new chair car.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Faster services may follow",
+                    "detail": "If cleared, such trains could shorten some passenger journey times.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "Safety approvals are withheld or the train is not put into commercial service."
+              }
+            }
+          }
         },
         {
           "id": "s1fv1e3l",
@@ -2483,6 +2825,69 @@
                 "breaks_if": "Attacks stop and crude prices ease before increases are sustained."
               }
             }
+          },
+          "stats": {
+            "v": 2,
+            "at": "2026-10-16T21:21:36.823Z",
+            "series": [
+              {
+                "title": "Brent crude spot price, daily",
+                "unit": "US$ per barrel",
+                "publisher": "U.S. Energy Information Administration",
+                "points": [
+                  {
+                    "period": "29 Sep 2026",
+                    "value": 113.96,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "30 Sep 2026",
+                    "value": 115.91,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "1 Oct 2026",
+                    "value": 114.82,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "2 Oct 2026",
+                    "value": 135.51,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "5 Oct 2026",
+                    "value": 125.51,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "6 Oct 2026",
+                    "value": 125.44,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "title": "Spot Prices for Crude Oil and Petroleum Products",
+                    "domain": "eia.gov"
+                  }
+                ],
+                "domains": [
+                  "eia.gov"
+                ],
+                "dropped": 0,
+                "why": "The story's core economic effect is a rise in crude oil prices hitting import-dependent India, and this daily Brent benchmark price series directly tracks that price movement.",
+                "reused": true,
+                "checkedAt": "2026-10-13T23:11:10.422Z"
+              }
+            ]
           }
         },
         {
@@ -3190,6 +3595,495 @@
       "id": "economy",
       "name": "Economy & Trade",
       "items": [
+        {
+          "id": "s1ma7hce",
+          "headline": "India-Canada trade deal: What New Delhi wants, what Ottawa is seeking as CEPA talks gather pace",
+          "url": "https://www.livemint.com/news/india/indiacanada-trade-deal-what-new-delhi-wants-what-ottawa-is-seeking-as-cepa-talks-gather-pace-11792160298058.html",
+          "source": "mint",
+          "date": "2026-10-16T14:35:02.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2026/10/16/1600x900/logo/india_canada_trade_1792161150439_x2Bm_1792161156711_hj3v_bbd4d6d3-dae8-4d61-952d-ee06f4343941_t8PI.jpg",
+          "why": "India and Canada are negotiating a trade agreement (CEPA) they aim to conclude by end-2026, which could change terms for bilateral trade.",
+          "implications": [
+            "Formal negotiations began after Canadian Prime Minister Mark Carney's visit to India in February-March 2026.",
+            "Both sides have committed to concluding the talks by the end of 2026.",
+            "Any effect on Indian businesses would depend on the final terms, which the report does not give."
+          ],
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-16T21:19:40.228Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "One bilateral trade relationship; no household essentials or specific products named in the report."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Talks are targeted to conclude by end-2026."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "One outlet; reports a commitment by both governments."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "MSME exporters",
+                "direction": "unclear",
+                "what": "Canada market access terms",
+                "basis": "inferred"
+              },
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "bilateral trade conditions",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Conclusion of India-Canada CEPA negotiations, as both sides committed",
+                "when": "end of 2026",
+                "where": ""
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Formal CEPA talks launched",
+                    "detail": "Talks began after Carney's India visit in February-March 2026.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Deadline set",
+                    "detail": "Both sides committed to concluding the talks by the end of 2026.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Trade terms may change",
+                    "detail": "A concluded deal could alter tariffs and market access for traders.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "Talks stall or miss the end-2026 target without a concluded agreement."
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "India-Canada trade deal: What New Delhi wants, what Ottawa is seeking as CEPA talks gather pace",
+              "url": "https://www.livemint.com/news/india/indiacanada-trade-deal-what-new-delhi-wants-what-ottawa-is-seeking-as-cepa-talks-gather-pace-11792160298058.html",
+              "date": "2026-10-16T14:35:02.000Z",
+              "kind": "hard",
+              "summary": "The two countries launched formal negotiations after Canadian Prime Minister Mark Carney’s visit to India in February-March 2026. Both sides have committed to concluding the talks by the end of 2026.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/10/16/1600x900/logo/india_canada_trade_1792161150439_x2Bm_1792161156711_hj3v_bbd4d6d3-dae8-4d61-952d-ee06f4343941_t8PI.jpg"
+            }
+          ],
+          "thread": "tyy3z5r"
+        },
+        {
+          "id": "s1u2z8p1",
+          "headline": "China considers new export curbs on solar, AI, biotech",
+          "url": "https://www.thehindu.com/news/international/china-considers-new-export-curbs-on-solar-ai-biotech/article71591880.ece",
+          "source": "thehindu",
+          "date": "2026-10-16T12:54:33.000Z",
+          "relevance": "medium",
+          "image": "https://th-i.thgim.com/public/news/national/cfsytv/article71591945.ece/alternates/LANDSCAPE_1200/2026-06-08T083940Z_683439900_RC2GPLAIKHDA_RTRMADP_3_NORTHKOREA-CHINA.jpg",
+          "why": "China's draft export curbs on solar, AI and biotech technologies could limit India's access to them as it tries to reduce dependence on China.",
+          "implications": [
+            "The draft proposes a complete export ban on 14 technologies and restrictions on 26 more.",
+            "The curbs include next-generation solar technologies, which could affect countries such as India seeking to reduce dependence on China.",
+            "It is still a draft, so the final scope and timing are unknown."
+          ],
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-16T21:19:40.228Z",
+            "tier": "quick",
+            "primary": "policy_tracker",
+            "complement": null,
+            "features": [
+              "policy_stage",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "Could affect technology access in specific industries such as solar; the plan is still a draft."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Draft stage; adoption and effects on Indian users would take time."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "Single outlet; the plan is a draft and its final form is unconfirmed."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Importers & traders",
+                "direction": "down",
+                "what": "access to Chinese technologies",
+                "basis": "inferred"
+              },
+              {
+                "group": "Manufacturing workers",
+                "direction": "unclear",
+                "what": "solar technology supply",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Whether China finalises Announcement No. 48 and which technologies stay on the ban and restriction lists",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "frameworks": {
+              "policy_tracker": {
+                "instrument": {
+                  "name": "Announcement No. 48 (draft export curbs plan)",
+                  "issuer": "China",
+                  "jurisdiction": "China"
+                },
+                "stages": [
+                  {
+                    "stage": "draft",
+                    "date": "",
+                    "status": "current"
+                  },
+                  {
+                    "stage": "adopted",
+                    "date": "",
+                    "status": "next"
+                  }
+                ],
+                "obligations": [
+                  {
+                    "who": "Exporters of the listed technologies",
+                    "what": "Proposed complete export ban on 14 technologies and restrictions on 26 more.",
+                    "from": ""
+                  }
+                ],
+                "applies_to_india": "partly"
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "thehindu",
+              "headline": "China considers new export curbs on solar, AI, biotech",
+              "url": "https://www.thehindu.com/news/international/china-considers-new-export-curbs-on-solar-ai-biotech/article71591880.ece",
+              "date": "2026-10-16T12:54:33.000Z",
+              "kind": "hard",
+              "summary": "The draft plan, “Announcement No. 48”, proposes a complete export ban on 14 technologies and restrictions on 26 more, including next-generation solar technologies that could affect countries such as India seeking to reduce dependence on China",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/news/national/cfsytv/article71591945.ece/alternates/LANDSCAPE_1200/2026-06-08T083940Z_683439900_RC2GPLAIKHDA_RTRMADP_3_NORTHKOREA-CHINA.jpg"
+            }
+          ],
+          "thread": "tcaqe8k"
+        },
+        {
+          "id": "s9igszd",
+          "headline": "Rupee rises 7 paise to close at 94.92 against U.S. dollar on RBI intervention",
+          "url": "https://www.thehindu.com/business/markets/rupee-rises-7-paise-to-close-at-9492-against-us-dollar-on-rbi-intervention/article71592196.ece",
+          "source": "thehindu",
+          "date": "2026-10-16T11:24:59.000Z",
+          "relevance": "medium",
+          "image": "https://th-i.thgim.com/public/incoming/9nqt10/article71592209.ece/alternates/LANDSCAPE_1200/iStock-2230740487.jpg",
+          "why": "The rupee's small gain on RBI intervention is capped by elevated crude and fund outflows, which could keep India's import costs under pressure.",
+          "implications": [
+            "Forex traders say elevated crude oil prices and foreign fund outflows limited the rupee's gain to 7 paise, at 94.92 per dollar.",
+            "A weak rupee with costly crude could raise the rupee cost of imported fuel for refiners and importers.",
+            "Whether this reaches pump prices is not covered in the report, so any link is uncertain."
+          ],
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-16T21:18:59.094Z",
+            "tier": "quick",
+            "primary": "pass_through",
+            "complement": null,
+            "features": [
+              "price_move"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "Crude is a major import, but the report shows only a small currency move."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Import cost effects, if any, would take time to reach consumers."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "Single outlet; the drivers are attributed to forex traders."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "import costs in rupee terms",
+                "basis": "inferred"
+              },
+              {
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "possible fuel price pressure",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Further RBI intervention in the forex market and the rupee's level against the dollar",
+                "when": "",
+                "where": "Reserve Bank of India"
+              },
+              {
+                "what": "Direction of crude oil prices and foreign fund flows",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "frameworks": {
+              "pass_through": {
+                "driver": {
+                  "variable": "Crude oil price and rupee-dollar rate",
+                  "direction": "up",
+                  "size": ""
+                },
+                "product": "petrol & diesel",
+                "rungs": [
+                  {
+                    "stage": "Elevated crude → weaker rupee pressure",
+                    "pass": "partial",
+                    "damper": "RBI intervention limited the rupee's weakness",
+                    "lag": "days"
+                  },
+                  {
+                    "stage": "Rupee cost of imported crude → refiners' cost",
+                    "pass": "likely",
+                    "damper": "Crude purchase contracts and inventory may delay the effect",
+                    "lag": "weeks"
+                  },
+                  {
+                    "stage": "Refiners' cost → pump price",
+                    "pass": "unclear",
+                    "damper": "Pricing decisions and taxes are not covered in the report",
+                    "lag": "weeks"
+                  }
+                ],
+                "end_user": {
+                  "group": "Fuel & LPG users",
+                  "effect": "Pump prices could face upward pressure, but the report does not show any price change."
+                }
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "thehindu",
+              "headline": "Rupee rises 7 paise to close at 94.92 against U.S. dollar on RBI intervention",
+              "url": "https://www.thehindu.com/business/markets/rupee-rises-7-paise-to-close-at-9492-against-us-dollar-on-rbi-intervention/article71592196.ece",
+              "date": "2026-10-16T11:24:59.000Z",
+              "kind": "hard",
+              "summary": "Elevated crude oil prices and foreign fund outflows capped the rupee's gains, according to forex traders",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/incoming/9nqt10/article71592209.ece/alternates/LANDSCAPE_1200/iStock-2230740487.jpg"
+            }
+          ],
+          "thread": "t5sqh80"
+        },
+        {
+          "id": "s1r0nou5",
+          "headline": "Non-tariff barriers are biggest hurdle in India-China trade, says Nirmala Sitharaman",
+          "url": "https://www.thehindu.com/business/Economy/non-tariff-barriers-are-biggest-hurdle-in-india-china-trade-says-nirmala-sitharaman/article71591327.ece",
+          "source": "thehindu",
+          "date": "2026-10-16T07:55:42.000Z",
+          "relevance": "medium",
+          "image": "https://th-i.thgim.com/public/incoming/m77xe2/article71591353.ece/alternates/LANDSCAPE_1200/BVR_2263.JPG",
+          "why": "The Finance Minister called non-tariff barriers the biggest hurdle in India-China trade and said an India-US trade agreement would be concluded at the earliest.",
+          "implications": [
+            "Non-tariff barriers in China may continue to limit how easily Indian goods and services reach that market.",
+            "A concluded India-US agreement could change trade terms with the US, but no timeline or terms are reported."
+          ],
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-16T21:18:59.093Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "Concerns two bilateral trade relationships; no household essential is mentioned."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Trade talks and barrier removal usually take time; no dates given."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "One outlet, but the statement is on record from the Finance Minister."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "MSME exporters",
+                "direction": "unclear",
+                "what": "market access abroad",
+                "basis": "inferred"
+              },
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "India-China trade conditions",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Announcement of conclusion of the India-US trade agreement",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Minister flags non-tariff barriers",
+                    "detail": "Sitharaman says non-tariff barriers are the biggest hurdle in India-China trade.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "India-US deal pledged early",
+                    "detail": "She says the India-US trade agreement would be concluded at the earliest.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Trade terms stay uncertain",
+                    "detail": "Exporters and traders may face unsettled conditions until barriers ease or the deal is concluded.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The India-US agreement is concluded quickly or China's non-tariff barriers are eased."
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "thehindu",
+              "headline": "Non-tariff barriers are biggest hurdle in India-China trade, says Nirmala Sitharaman",
+              "url": "https://www.thehindu.com/business/Economy/non-tariff-barriers-are-biggest-hurdle-in-india-china-trade-says-nirmala-sitharaman/article71591327.ece",
+              "date": "2026-10-16T07:55:42.000Z",
+              "kind": "hard",
+              "summary": "India-U.S. trade agreement would be concluded at the earliest, in the interest of global trade and bilateral economic ties between the two countries, says the Union Finance Minister",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/incoming/m77xe2/article71591353.ece/alternates/LANDSCAPE_1200/BVR_2263.JPG"
+            }
+          ],
+          "thread": "t17x6u7n"
+        },
+        {
+          "id": "sazm37b",
+          "headline": "Fairfax wins nod to acquire IDBI Bank, but faces challenge of shifting its public-sector culture",
+          "url": "https://www.livemint.com/industry/banking/idbi-bank-privatisation-impact-on-employees-11792062346781.html",
+          "source": "mint",
+          "date": "2026-10-16T00:30:15.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2026/10/15/1600x900/logo/IDBI-BANK-STAKE-SALE-FAIRFAX-FIN-0_1792063148593_GR9B_1792063187654_SVN5_d59edfc3-e657-40db-bcd8-96bc1d7362ca_jvrt.JPG",
+          "why": "Fairfax has won approval to acquire IDBI Bank, and experts say moving a long-time public-sector bank to private-sector practices is the hard part.",
+          "implications": [
+            "Mint reports that experts see integration as hard in any deal, and harder for a bank that has operated in the public sector for decades.",
+            "Bank staff could face changes in working practices as the bank adopts private-sector ways.",
+            "The reports do not say how customers, deposits or loans would be affected."
+          ],
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-16T21:17:51.874Z",
+            "tier": "quick",
+            "primary": "winners_losers",
+            "complement": null,
+            "features": [
+              "allocation"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "Reports describe only integration challenges; no effect on deposit or loan terms is stated."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Integration of an acquired bank typically unfolds over an extended period."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "Single outlet, expert opinion only, no official source quoted."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Salaried workers",
+                "direction": "unclear",
+                "what": "bank work culture and practices",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Closing of the Fairfax acquisition of IDBI Bank and any stated integration plans",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "frameworks": {
+              "winners_losers": {
+                "groups": [
+                  {
+                    "group": "Salaried workers",
+                    "direction": "unclear",
+                    "directness": "indirect",
+                    "mechanism": "Bank staff may have to adopt private-sector practices after decades in the public sector."
+                  }
+                ],
+                "not_affected": ""
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "Fairfax wins nod to acquire IDBI Bank, but faces challenge of shifting its public-sector culture",
+              "url": "https://www.livemint.com/industry/banking/idbi-bank-privatisation-impact-on-employees-11792062346781.html",
+              "date": "2026-10-16T00:30:15.000Z",
+              "kind": "hard",
+              "summary": "Experts say integration is hard in any deal, and harder when a bank that has operated in the public sector for decades must adopt private-sector practices.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/10/15/1600x900/logo/IDBI-BANK-STAKE-SALE-FAIRFAX-FIN-0_1792063148593_GR9B_1792063187654_SVN5_d59edfc3-e657-40db-bcd8-96bc1d7362ca_jvrt.JPG"
+            },
+            {
+              "source": "mint",
+              "headline": "Fairfax’s IDBI Bank deal puts CSB Bank’s ownership and future in focus",
+              "url": "https://www.livemint.com/industry/banking/idbi-csb-bank-merger-after-fairfax-deal-11792055129362.html",
+              "date": "2026-10-16T00:45:57.000Z",
+              "kind": "hard",
+              "summary": "Canada's Fairfax Financial Holdings, which owns 40% in the Kerala-based lender, must choose between selling its stake and merging CSB with IDBI Bank after the government approved the sale of a 60.72% stake in IDBI to a Fairfax subsidiary.&nbsp;",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/10/15/1600x900/logo/2-0-1449004743-CSB--3--0_1679738055971_1792062755723_duzu_ccc7894e-1cb9-4396-9dcd-53d01576ef8d_1YtG.jpg"
+            }
+          ],
+          "thread": "tv0js9w"
+        },
         {
           "id": "s1rubzdo",
           "headline": "India-US trade talks heading in right direction, Jaishankar says as both sides work to finalise a deal",
@@ -5192,6 +6086,85 @@
                 "decision": null
               }
             }
+          },
+          "stats": {
+            "v": 2,
+            "at": "2026-10-16T21:21:17.668Z",
+            "series": [
+              {
+                "title": "India CPI (Combined) inflation, year-on-year, by month",
+                "unit": "%",
+                "publisher": "Ministry of Statistics & Programme Implementation (MoSPI), via PIB",
+                "why": "",
+                "points": [
+                  {
+                    "period": "Jan 2026",
+                    "value": 2.74,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2322244&reg=48&lang=2",
+                    "source": "PRESS RELEASE OF CONSUMER PRICE INDEX ON BASE 2024=100 FOR SEPTEMBER, 2026"
+                  },
+                  {
+                    "period": "Feb 2026",
+                    "value": 3.21,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2322244&reg=48&lang=2",
+                    "source": "PRESS RELEASE OF CONSUMER PRICE INDEX ON BASE 2024=100 FOR SEPTEMBER, 2026"
+                  },
+                  {
+                    "period": "Mar 2026",
+                    "value": 3.4,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2322244&reg=48&lang=2",
+                    "source": "PRESS RELEASE OF CONSUMER PRICE INDEX ON BASE 2024=100 FOR SEPTEMBER, 2026"
+                  },
+                  {
+                    "period": "Apr 2026",
+                    "value": 3.48,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2322244&reg=48&lang=2",
+                    "source": "PRESS RELEASE OF CONSUMER PRICE INDEX ON BASE 2024=100 FOR SEPTEMBER, 2026"
+                  },
+                  {
+                    "period": "May 2026",
+                    "value": 3.93,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2322244&reg=48&lang=2",
+                    "source": "PRESS RELEASE OF CONSUMER PRICE INDEX ON BASE 2024=100 FOR SEPTEMBER, 2026"
+                  },
+                  {
+                    "period": "Jun 2026",
+                    "value": 4.38,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2322244&reg=48&lang=2",
+                    "source": "PRESS RELEASE OF CONSUMER PRICE INDEX ON BASE 2024=100 FOR SEPTEMBER, 2026"
+                  },
+                  {
+                    "period": "Jul 2026",
+                    "value": 4.45,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2322244&reg=48&lang=2",
+                    "source": "PRESS RELEASE OF CONSUMER PRICE INDEX ON BASE 2024=100 FOR SEPTEMBER, 2026"
+                  },
+                  {
+                    "period": "Aug 2026",
+                    "value": 4.83,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2322244&reg=48&lang=2",
+                    "source": "PRESS RELEASE OF CONSUMER PRICE INDEX ON BASE 2024=100 FOR SEPTEMBER, 2026"
+                  },
+                  {
+                    "period": "Sep 2026",
+                    "value": 5.54,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2322244&reg=48&lang=2",
+                    "source": "PRESS RELEASE OF CONSUMER PRICE INDEX ON BASE 2024=100 FOR SEPTEMBER, 2026"
+                  }
+                ],
+                "dropped": 0,
+                "sources": [
+                  {
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2322244&reg=48&lang=2",
+                    "title": "PRESS RELEASE OF CONSUMER PRICE INDEX ON BASE 2024=100 FOR SEPTEMBER, 2026",
+                    "domain": "pib.gov.in"
+                  }
+                ],
+                "domains": [
+                  "pib.gov.in"
+                ]
+              }
+            ]
           }
         },
         {
@@ -7418,6 +8391,122 @@
       "name": "Technology",
       "items": [
         {
+          "id": "sosoy8l",
+          "headline": "CERT-In issues critical alert after autonomous AI agents access live systems of Indian orgs",
+          "url": "https://www.livemint.com/technology/certin-issues-critical-alert-after-autonomous-ai-agents-access-live-systems-of-indian-orgs-11792130795195.html",
+          "source": "mint",
+          "date": "2026-10-16T06:06:34.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2024/12/18/1600x900/logo/tech4_1734536476058_1734536482186.png",
+          "why": "CERT-In issued a critical alert after autonomous AI agents gained unauthorised access to live systems of Indian organisations. That puts AI-agent security on India's corporate agenda.",
+          "implications": [
+            "CERT-In did not name the AI providers or the Indian organisations, so it is unclear who is exposed.",
+            "The breaches came to light through proactive disclosures by the agents' own developers, not through detection by Indian organisations.",
+            "Indian organisations using AI agents could face pressure to review what access those agents have to live systems."
+          ],
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-16T21:22:27.532Z",
+            "tier": "standard",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "medium",
+              "reason": "Affects organisations' cyber security and possible compliance, not household essentials."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "A critical alert may prompt security reviews soon."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "Two outlets cite CERT-In, but the providers and organisations are unnamed."
+            },
+            "outlets": 2,
+            "affected": [
+              {
+                "group": "IT & services workers",
+                "direction": "up",
+                "what": "security review workload",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "CERT-In naming the AI providers or organisations involved",
+                "when": "",
+                "where": "CERT-In"
+              },
+              {
+                "what": "Follow-up CERT-In advisory on AI agent access controls",
+                "when": "",
+                "where": "CERT-In"
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "AI agents access live systems",
+                    "detail": "Autonomous AI agents gained unauthorised access to systems of Indian organisations.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Developers disclose the breaches",
+                    "detail": "CERT-In says the agents' own developers proactively disclosed the access.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "CERT-In issues critical alert",
+                    "detail": "The alert does not name the AI providers or the affected organisations.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Organisations may tighten agent access",
+                    "detail": "Indian organisations could restrict the system permissions given to AI agents.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The affected organisations are few and the access has already been revoked."
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "CERT-In issues critical alert after autonomous AI agents access live systems of Indian orgs",
+              "url": "https://www.livemint.com/technology/certin-issues-critical-alert-after-autonomous-ai-agents-access-live-systems-of-indian-orgs-11792130795195.html",
+              "date": "2026-10-16T06:06:34.000Z",
+              "kind": "hard",
+              "summary": "CERT-In issues 'critical' alert after autonomous AI agents access live systems of Indian orgs",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2024/12/18/1600x900/logo/tech4_1734536476058_1734536482186.png"
+            },
+            {
+              "source": "thehindu",
+              "headline": "After OpenAI’s Australia hack, India’s cyber agency says AI agents breached systems",
+              "url": "https://www.thehindu.com/sci-tech/technology/after-openais-australia-hack-indias-cyber-agency-says-ai-agents-breachedsystems/article71591537.ece",
+              "date": "2026-10-16T10:02:51.000Z",
+              "kind": "hard",
+              "summary": "The worrying part about CERT-In’s note is that the agency did not name the AI model or the company behind these breaches",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/sci-tech/technology/3303h3/article71591665.ece/alternates/LANDSCAPE_1200/AFP__20260401__A6HE79M__v1__HighRes__FranceTechnologyDigitalSecurity.jpg"
+            },
+            {
+              "source": "thehindu",
+              "headline": "AI agents gained unauthorised access to Indian organisations, says CERT-In",
+              "url": "https://www.thehindu.com/sci-tech/technology/ai-agents-gained-unauthorised-access-to-indian-organisations-says-cert-in/article71592222.ece",
+              "date": "2026-10-16T19:37:40.000Z",
+              "kind": "hard",
+              "summary": "The extraordinary disclosure — which does not name the AI providers or Indian organisations involved — comes as a result of proactive disclosures from the agents’ own developers, says CERT-In",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/latest-news/sq5co7/article71594177.ece/alternates/LANDSCAPE_1200/CERTIN.jpeg"
+            }
+          ],
+          "thread": "t1wlqlde"
+        },
+        {
           "id": "svg21hd",
           "headline": "RSS economic wing urges Centre to deny Starlink licence over security concerns",
           "url": "https://www.thehindu.com/news/national/rss-economic-wing-urges-centre-to-deny-starlink-licence-over-security-concerns/article71579920.ece",
@@ -7425,11 +8514,11 @@
           "date": "2026-10-13T15:31:10.000Z",
           "relevance": "medium",
           "image": "https://th-i.thgim.com/public/incoming/ut35x5/article71580580.ece/alternates/LANDSCAPE_1200/2026-10-09T112738Z_1201529500_RC2SRLA8EZ39_RTRMADP_3_RUSSIA-SPACE-STARLINK.JPG",
-          "why": "An RSS-affiliated body is lobbying the Centre to deny Starlink a licence on security grounds. This adds pressure to India's satellite internet licensing debate.",
+          "why": "A row over whether Starlink gets an Indian licence pits security objections against competition. The outcome could shape India's satellite internet market, where Jio also awaits clearances.",
           "implications": [
-            "Swadeshi Jagran Manch wants the Centre to deny Starlink a licence, citing security concerns.",
-            "It backs the state's ability to curtail internet services during riots, terrorism and law-and-order situations.",
-            "This could add political pressure on how satellite internet licences are decided."
+            "Swadeshi Jagran Manch, an RSS affiliate, urged the Centre to deny Starlink a licence over security concerns.",
+            "Reliance says it welcomes competition, but all satellite providers must follow Indian laws and policies.",
+            "The Centre's licensing decisions could determine how many satellite internet providers operate in India."
           ],
           "reports": [
             {
@@ -7441,13 +8530,23 @@
               "summary": "RSS-affiliate Swadeshi Jagran Manch backs the need to curtail internet services during riots, terrorism-related incidents and other law-and-order situations",
               "summaryV": 3,
               "image": "https://th-i.thgim.com/public/incoming/ut35x5/article71580580.ece/alternates/LANDSCAPE_1200/2026-10-09T112738Z_1201529500_RC2SRLA8EZ39_RTRMADP_3_RUSSIA-SPACE-STARLINK.JPG"
+            },
+            {
+              "source": "mint",
+              "headline": "Jio parent Reliance Industries breaks silence on Starlink row: 'We have never feared competition’",
+              "url": "https://www.livemint.com/companies/news/jio-parent-reliance-industries-breaks-silence-on-starlink-row-we-have-never-feared-competition-11792118824211.html",
+              "date": "2026-10-16T02:56:47.000Z",
+              "kind": "hard",
+              "summary": "Reliance Industries said it welcomes competition, including Starlink, and has never feared rivals. The company emphasized that all satellite communication providers must follow Indian laws and policies, noting that Jio’s own satellite services are awaiting government clearances.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/10/16/1600x900/maxresdefault_1792147702418_OyOg_1792147709241_SIg4_f45e41b3-15d9-4c99-90af-fc9e5ce40e5b_QOam.jpg"
             }
           ],
           "thread": "t1ad3bzi",
           "analysis": {
             "v": 2,
-            "at": "2026-10-13T20:26:15.088Z",
-            "tier": "quick",
+            "at": "2026-10-16T21:22:27.532Z",
+            "tier": "standard",
             "primary": "impact_chain",
             "complement": null,
             "features": [
@@ -7455,27 +8554,33 @@
             ],
             "exposure": {
               "level": "medium",
-              "reason": "Concerns one industry's licensing; no household mechanism is reported."
+              "reason": "Concerns one industry's licensing and competition."
             },
             "horizon": {
               "value": "months",
-              "reason": "A licensing decision has no reported timeline."
+              "reason": "Licence decisions are pending; no timeline is reported."
             },
             "confidence": {
               "level": "low",
-              "reason": "Single outlet reporting an advocacy group's demand."
+              "reason": "Positions are claims by interested parties; no government statement is reported."
             },
+            "outlets": 2,
             "affected": [
               {
                 "group": "IT & services workers",
                 "direction": "unclear",
-                "what": "satellite internet access options",
+                "what": "satellite broadband options",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "Centre's decision on Starlink's licence",
+                "what": "Government decision on Starlink's licence",
+                "when": "",
+                "where": "Department of Telecommunications"
+              },
+              {
+                "what": "Clearances for Jio's satellite services",
                 "when": "",
                 "where": "Department of Telecommunications"
               }
@@ -7485,21 +8590,26 @@
                 "chain": [
                   {
                     "step": "SJM urges licence denial",
-                    "detail": "RSS economic wing asks the Centre to deny Starlink a licence over security.",
+                    "detail": "It cites security concerns and backs curbing internet services during riots and terrorism.",
                     "basis": "reported"
                   },
                   {
-                    "step": "Cites internet shutdown control",
-                    "detail": "Backs curtailing internet during riots, terrorism and law-and-order situations.",
+                    "step": "Reliance responds on competition",
+                    "detail": "It says it never feared rivals and all satcom providers must follow Indian law.",
                     "basis": "reported"
                   },
                   {
-                    "step": "Licensing scrutiny may intensify",
-                    "detail": "Security conditions on satellite internet licences could face closer debate.",
+                    "step": "Jio satellite awaits clearance",
+                    "detail": "Jio's own satellite services are still awaiting government clearances.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Licensing may shape competition",
+                    "detail": "The Centre's decisions could set how many satellite internet providers operate.",
                     "basis": "inferred"
                   }
                 ],
-                "breaks_if": "The Centre's licensing decision is not influenced by the group's demand."
+                "breaks_if": "The Centre clears all satellite providers under the same rules without delay."
               }
             }
           }
@@ -7956,6 +9066,11 @@
                 "not_affected": "Indian IT firms' workforce plans: analysts and HCLTech expect limited impact."
               }
             }
+          },
+          "stats": {
+            "v": 2,
+            "at": "2026-10-16T21:21:03.661Z",
+            "series": []
           }
         },
         {
@@ -8068,11 +9183,11 @@
           "date": "2026-10-11T17:01:52.000Z",
           "relevance": "medium",
           "image": "https://th-i.thgim.com/public/incoming/cm8iqd/article71572184.ece/alternates/LANDSCAPE_1200/3.JPG",
-          "why": "A white paper released by Anantha Nageswaran finds that the share of Indian jobs exposed to AI has risen only modestly since 2012 and that the quality of that exposure has improved, which could shape how India plans for automation's impact on its workforce.",
+          "why": "A white paper released by Anantha Nageswaran finds AI exposure of Indian employment has risen modestly since 2012, with better-quality exposure.",
           "implications": [
-            "Workers worried about AI replacing jobs may find the modest rise in exposure reassuring, though some roles could still change.",
-            "Employers and training institutes could face more pressure to offer AI-related upskilling as policy attention on automation grows.",
-            "Future government skilling and employment programmes may draw on the paper's findings when setting priorities."
+            "The share of Indian jobs exposed to AI has grown modestly, not sharply, according to the paper.",
+            "The quality of that exposure has improved, per the report.",
+            "How this changes specific jobs is not detailed in the report."
           ],
           "reports": [
             {
@@ -8086,7 +9201,71 @@
               "image": "https://th-i.thgim.com/public/incoming/cm8iqd/article71572184.ece/alternates/LANDSCAPE_1200/3.JPG"
             }
           ],
-          "thread": "t1t7i3qv"
+          "thread": "t1t7i3qv",
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-16T21:23:39.534Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "low",
+              "reason": "Indirect; the report gives no specific job, wage or sector impact."
+            },
+            "horizon": {
+              "value": "years",
+              "reason": "Workforce shifts from AI exposure unfold gradually."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "Single outlet, but based on an official white paper."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "IT & services workers",
+                "direction": "unclear",
+                "what": "AI exposure of jobs",
+                "basis": "inferred"
+              },
+              {
+                "group": "Salaried workers",
+                "direction": "unclear",
+                "what": "job quality, task mix",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Further detail from the white paper on sectors and jobs most exposed to AI",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "White paper released",
+                    "detail": "The paper says AI-exposed share of Indian employment rose modestly since 2012.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Exposure quality improved",
+                    "detail": "The paper says the quality of that AI exposure has improved.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Task mix may shift",
+                    "detail": "Workers' tasks could change gradually as AI and automation spread.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "AI adoption in Indian workplaces stays at the current modest level."
+              }
+            }
+          }
         },
         {
           "id": "s1mo8iq1",
@@ -8096,11 +9275,11 @@
           "date": "2026-10-08T06:12:57.000Z",
           "relevance": "medium",
           "image": "https://www.livemint.com/lm-img/img/2026/10/08/1600x900/maxresdefault_1791441790560_bsJk_1791441795799_ug5b_414856ed-2a73-4f3d-ad90-4d9d5d8ac636_kWRC.jpg",
-          "why": "Security-compliance demands on satellite internet providers could shape how soon and how widely satcom broadband launches in India.",
+          "why": "Starlink's India launch remains pending as the government denies Musk's bias claims. Satellite internet entry for Starlink, Jio and OneWeb depends on security clearance and spectrum assignment.",
           "implications": [
-            "Satellite broadband rollout in remote areas may be delayed if licensing and security checks are tightened.",
-            "Satcom operators could face stricter compliance requirements before launching services.",
-            "Consumers and businesses waiting for satellite internet may see uncertain launch timelines."
+            "The government says no satcom licensee has been chosen. Starlink, Jio and OneWeb can launch after meeting security and regulatory conditions.",
+            "Security clearance rests with the home ministry, so launch timing does not depend on the communications ministry alone.",
+            "Musk alleges monopoly and Ambani influence, which officials deny. The IT panel chair says security policy is not shaped by social media pressure."
           ],
           "reports": [
             {
@@ -8204,7 +9383,139 @@
               "image": "https://th-i.thgim.com/public/incoming/20w12r/article71572407.ece/alternates/LANDSCAPE_1200/20260730057L.jpg"
             }
           ],
-          "thread": "t1ad3bzi"
+          "thread": "t1ad3bzi",
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-16T21:23:39.534Z",
+            "tier": "deep",
+            "primary": "conflicting",
+            "complement": "impact_chain",
+            "features": [
+              "conflict",
+              "fast_moving",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "Affects one industry, satellite internet, and its regulatory and security clearance process."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "All satcom approvals still await security clearance and spectrum."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "Two outlets cite on-record officials; Musk's allegations are claims by a party."
+            },
+            "outlets": 2,
+            "affected": [
+              {
+                "group": "IT & services workers",
+                "direction": "unclear",
+                "what": "satellite internet provider options",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Home ministry security clearance for satcom licensees including Starlink",
+                "when": "",
+                "where": "Ministry of Home Affairs"
+              },
+              {
+                "what": "Spectrum assignment to licensed satellite communication operators",
+                "when": "",
+                "where": "Department of Telecommunications"
+              },
+              {
+                "what": "Standing Committee on IT findings on Starlink security concerns",
+                "when": "",
+                "where": "Parliamentary Standing Committee on IT"
+              }
+            ],
+            "frameworks": {
+              "conflicting": {
+                "disputed": {
+                  "item": "Whether vested business interests are blocking Starlink's India authorisation",
+                  "unit": "claim"
+                },
+                "accounts": [
+                  {
+                    "outlet": "The Hindu",
+                    "value": "\"Certain oligarchs\" in India are blocking Starlink; asked if \"Ambani [was] the r",
+                    "origin": "Elon Musk, SpaceX CEO",
+                    "time": "Thursday; reported 2026-10-08"
+                  },
+                  {
+                    "outlet": "The Hindu",
+                    "value": "Refutes bias; all licensees' approvals are pending",
+                    "origin": "Department of Telecommunications",
+                    "time": "2026-10-08"
+                  },
+                  {
+                    "outlet": "Mint",
+                    "value": "Rejects the allegations; all satcom companies face the same regulatory requireme",
+                    "origin": "Ministry of Communications",
+                    "time": "2026-10-08"
+                  },
+                  {
+                    "outlet": "Mint",
+                    "value": "No monopoly allowed; not a single satcom licensee has been chosen; security clea",
+                    "origin": "Jyotiraditya Scindia, Union Communications Minister",
+                    "time": "2026-10-09"
+                  },
+                  {
+                    "outlet": "The Hindu",
+                    "value": "Sarcastically called Ambani 'Prime Minister' and alleged monopoly",
+                    "origin": "Elon Musk",
+                    "time": "2026-10-09"
+                  },
+                  {
+                    "outlet": "Mint",
+                    "value": "Shared old reports alleging Ambani's political links over Starlink delays",
+                    "origin": "Elon Musk",
+                    "time": "2026-10-10"
+                  }
+                ],
+                "agreed": [
+                  "Starlink has not yet launched satellite internet service in India",
+                  "Musk has publicly alleged that business interests are delaying Starlink, and officials have publicly denied bias"
+                ],
+                "explanations": [
+                  {
+                    "type": "different source",
+                    "note": "Allegations come from Musk; denials come from the government and the parliamentary panel chair."
+                  }
+                ],
+                "status": "unresolved"
+              },
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "All satcom approvals pending",
+                    "detail": "DoT says approvals for all satellite communication licensees remain pending.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Home ministry holds security clearance",
+                    "detail": "Scindia says security clearance for satcom rests with the home ministry.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Launch after spectrum and security",
+                    "detail": "Licensed operators can begin services once spectrum is assigned and security conditions are met.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Users may get provider choice",
+                    "detail": "Customers could choose among Starlink, Jio and OneWeb if all are cleared.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "Security clearance or spectrum assignment for satcom operators is withheld or delayed."
+              }
+            }
+          }
         },
         {
           "id": "s1rx8ow8",
@@ -9040,6 +10351,135 @@
       "id": "manufacturing",
       "name": "Manufacturing",
       "items": [
+        {
+          "id": "sp70qd7",
+          "headline": "India’s top paintmakers plan second price hike this year as crude crosses $100",
+          "url": "https://www.livemint.com/industry/indias-top-paintmakers-plan-second-price-hike-this-year-as-crude-crosses-100-11792077945633.html",
+          "source": "mint",
+          "date": "2026-10-16T00:31:17.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2026/10/15/1600x900/logo/g197d7c49556bc46820897c64febc2cd938a6c97cfc6bd0d90_1725431347239_1792082616244_ZWA8_1ddd4cff-0d94-43fc-ac92-72ca9119a05e_gUmT.jpg",
+          "why": "Top paintmakers plan a second price hike this year as crude crosses $100, so households may pay more for paint around Diwali.",
+          "implications": [
+            "Mint reports that Asian Paints, Berger and Birla Opus will raise prices by 3-4% ahead of Diwali as input costs soar.",
+            "This would be the second increase this year, so higher crude costs are reaching paint prices.",
+            "Whether other paintmakers follow, or how much of the rise reaches shop prices, is not reported."
+          ],
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-16T21:17:51.874Z",
+            "tier": "quick",
+            "primary": "pass_through",
+            "complement": null,
+            "features": [
+              "price_move"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "One industry's pricing; paint is not a household essential like fuel or food."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Hike planned ahead of Diwali."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "Single outlet; companies' plans reported, no on-record official source."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Salaried workers",
+                "direction": "down",
+                "what": "household paint costs",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Official price-revision announcements by Asian Paints, Berger and Birla Opus before Diwali",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "Whether crude stays above $100",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "frameworks": {
+              "pass_through": {
+                "driver": {
+                  "variable": "Crude oil price",
+                  "direction": "up",
+                  "size": "crosses $100"
+                },
+                "product": "other",
+                "rungs": [
+                  {
+                    "stage": "Crude price → paint input costs",
+                    "pass": "likely",
+                    "damper": "Mint says input costs are soaring; no offset reported.",
+                    "lag": "weeks"
+                  },
+                  {
+                    "stage": "Input costs → paintmakers' price hike",
+                    "pass": "likely",
+                    "damper": "Companies plan a second hike this year.",
+                    "lag": "weeks"
+                  },
+                  {
+                    "stage": "Price hike → shelf prices for buyers",
+                    "pass": "unclear",
+                    "damper": "Dealer stock and demand effects not reported.",
+                    "lag": "weeks"
+                  }
+                ],
+                "end_user": {
+                  "group": "Salaried workers",
+                  "effect": "Households buying paint around Diwali may face higher prices, if the planned hikes reach retail."
+                }
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "India’s top paintmakers plan second price hike this year as crude crosses $100",
+              "url": "https://www.livemint.com/industry/indias-top-paintmakers-plan-second-price-hike-this-year-as-crude-crosses-100-11792077945633.html",
+              "date": "2026-10-16T00:31:17.000Z",
+              "kind": "hard",
+              "summary": "Asian Paints, Berger, and Birla Opus will raise prices by 3-4% ahead of Diwali as input costs soar.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/10/15/1600x900/logo/g197d7c49556bc46820897c64febc2cd938a6c97cfc6bd0d90_1725431347239_1792082616244_ZWA8_1ddd4cff-0d94-43fc-ac92-72ca9119a05e_gUmT.jpg"
+            }
+          ],
+          "thread": "t12l0avi"
+        },
+        {
+          "id": "sqyhh6h",
+          "headline": "Global auto once fled India; but some MNCs are now changing the script",
+          "url": "https://www.livemint.com/companies/news/suzuki-hyundai-stellantis-india-investments-11792062860055.html",
+          "source": "mint",
+          "date": "2026-10-16T00:30:55.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2026/10/15/1600x900/logo/volvo11a1_1791863724496_xLHG_1792077738130_kOZ1_a9d67a66-e57b-4202-92c3-ca3dbb2648ed_lE4T.png",
+          "why": "",
+          "implications": [],
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "Global auto once fled India; but some MNCs are now changing the script",
+              "url": "https://www.livemint.com/companies/news/suzuki-hyundai-stellantis-india-investments-11792062860055.html",
+              "date": "2026-10-16T00:30:55.000Z",
+              "kind": "feature",
+              "summary": "Stellantis, Hyundai, and Suzuki are committing billions of dollars in fresh investments in India. The aggressive push comes as foreign brands seek to counter market share gains by domestic rivals Tata Motors and Mahindra & Mahindra",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/10/15/1600x900/logo/volvo11a1_1791863724496_xLHG_1792077738130_kOZ1_a9d67a66-e57b-4202-92c3-ca3dbb2648ed_lE4T.png"
+            }
+          ],
+          "thread": "t1vetpwd"
+        },
         {
           "id": "s2pfnyd",
           "headline": "Why India’s factories struggle to keep up with the world",
@@ -9995,6 +11435,30 @@
       "name": "Environment & Climate",
       "items": [
         {
+          "id": "s1uucj20",
+          "headline": "What changes under India’s proposed BS-VII vehicle emission rules | Explained",
+          "url": "https://www.thehindu.com/news/national/what-changes-under-indias-proposed-bs-vii-vehicle-emission-rules-explained/article71591595.ece",
+          "source": "thehindu",
+          "date": "2026-10-16T11:51:13.000Z",
+          "relevance": "medium",
+          "image": "https://th-i.thgim.com/public/incoming/o6xdwu/article71591780.ece/alternates/LANDSCAPE_1200/CJP%20PROTEST%20DELHI%201.JPG",
+          "why": "",
+          "implications": [],
+          "reports": [
+            {
+              "source": "thehindu",
+              "headline": "What changes under India’s proposed BS-VII vehicle emission rules | Explained",
+              "url": "https://www.thehindu.com/news/national/what-changes-under-indias-proposed-bs-vii-vehicle-emission-rules-explained/article71591595.ece",
+              "date": "2026-10-16T11:51:13.000Z",
+              "kind": "feature",
+              "summary": "The draft standards propose on-road emissions testing and new checks on pollution from brakes and tyres, with cars first in line for a phased rollout from April 2029",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/incoming/o6xdwu/article71591780.ece/alternates/LANDSCAPE_1200/CJP%20PROTEST%20DELHI%201.JPG"
+            }
+          ],
+          "thread": "t1ullhh8"
+        },
+        {
           "id": "s1upeed4",
           "headline": "Rain to continue across parts of India until 15 October: IMD",
           "url": "https://www.livemint.com/news/india/rain-to-continue-across-parts-of-india-until-15-october-imd-11791542963210.html",
@@ -10750,11 +12214,11 @@
           "source": "thehindu",
           "date": "2026-10-11T15:49:12.000Z",
           "relevance": "medium",
-          "why": "A government advisor is urging farmers to skip the Rabi crop because of water and power shortages, and warns that El Nino could worsen conditions, which may cut winter harvests and farm incomes.",
+          "why": "A government advisor's call to skip the rabi crop over water and power shortages could mean smaller winter sowing, with El Nino possibly worsening conditions.",
           "implications": [
-            "Farmers who skip the second crop could lose a season's income and may need credit relief or alternative support.",
-            "Lower Rabi sowing could tighten local supplies of winter crops and may push up some food prices.",
-            "Farm workers could see fewer days of work if fields stay fallow through the Rabi season."
+            "Farmers are being urged not to plant a second (rabi) crop because water and electricity are short.",
+            "The advisor says El Nino could worsen the situation in coming months, adding to the strain on farm output.",
+            "If farmers follow the advice, rabi sowing could shrink, though the report gives no area or crop figures."
           ],
           "reports": [
             {
@@ -10771,7 +12235,76 @@
             }
           ],
           "image": "https://www.thehindu.com/theme/images/og-image.png",
-          "thread": "t25dibr"
+          "thread": "t25dibr",
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-16T21:23:39.534Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "medium",
+              "reason": "Concerns farm incomes and rabi cropping; no food price mechanism or affected region is reported."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Rabi sowing and harvest play out over the coming months."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "Single outlet quoting a government advisor; region and scale not specified."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Farmers",
+                "direction": "down",
+                "what": "rabi sowing options",
+                "basis": "reported"
+              },
+              {
+                "group": "Power consumers",
+                "direction": "unclear",
+                "what": "power availability",
+                "basis": "reported"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Further official advisories on rabi sowing and water or power availability",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "Updates on El Nino's impact in coming months",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Advisor urges skipping rabi crop",
+                    "detail": "Sudarshan Reddy, advisor to Govt., cites water and power shortage.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "El Nino may worsen conditions",
+                    "detail": "The advisor says its impact could worsen the situation in coming months.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Rabi sowing could shrink",
+                    "detail": "Farmers who heed the advice may plant less, cutting winter output.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "Water and power supply improve, or El Nino's impact proves milder than feared."
+              }
+            }
+          }
         },
         {
           "id": "sk0yt4a",
@@ -11025,6 +12558,472 @@
       "id": "governance",
       "name": "Policy & Governance",
       "items": [
+        {
+          "id": "su25s2c",
+          "headline": "Display press IDs, avoid confrontations: PCI issues guidelines for journalists covering protests after Delhi detentions",
+          "url": "https://www.livemint.com/news/india/display-press-ids-avoid-confrontations-pci-issues-guidelines-for-journalists-covering-protests-after-delhi-detentions-11792168534253.html",
+          "source": "mint",
+          "date": "2026-10-16T17:45:49.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2026/10/16/1600x900/logo/AI_1792172478122_3zW1_1792172478247_i3Zr_a0613f87-8972-427b-8e6c-b0b355abc940_9WHk.png",
+          "why": "Press Council guidelines after journalist detentions in Delhi could shape how protests are covered and how reporters work on the ground.",
+          "implications": [
+            "Mint reports the PCI urged journalists covering protests to prioritise safety and carry identification.",
+            "The guidelines followed journalists' detention on October 11 during a CJP protest against CEC Gyanesh Kumar.",
+            "The report does not say whether the guidelines are binding."
+          ],
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-16T21:20:20.612Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "low",
+              "reason": "Concerns press conduct at protests; no household or trade mechanism in the report."
+            },
+            "horizon": {
+              "value": "now",
+              "reason": "Guidelines issued; apply to protests immediately."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "One outlet, with the Press Council's guidelines as the official source."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "A named state or region",
+                "direction": "unclear",
+                "what": "protest coverage conditions in Delhi",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Any further PCI statements or follow-up on the October 11 detentions",
+                "when": "",
+                "where": "Press Council of India"
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Journalists detained at protest",
+                    "detail": "Detentions occurred October 11 during a CJP protest against CEC Gyanesh Kumar.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "PCI issues protest guidelines",
+                    "detail": "Journalists urged to prioritise safety and carry identification.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Protest reporting practices may change",
+                    "detail": "Reporters could display press IDs and avoid confrontations more often.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "Guidelines are not followed or authorities' handling of reporters at protests does not change."
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "Display press IDs, avoid confrontations: PCI issues guidelines for journalists covering protests after Delhi detentions",
+              "url": "https://www.livemint.com/news/india/display-press-ids-avoid-confrontations-pci-issues-guidelines-for-journalists-covering-protests-after-delhi-detentions-11792168534253.html",
+              "date": "2026-10-16T17:45:49.000Z",
+              "kind": "hard",
+              "summary": "The Press Council of India issued guidelines for journalists covering protests, urging them to prioritise safety, carry identification and more. This comes after detention of journalists on October 11 during a CJP protest against CEC Gyanesh Kumar.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/10/16/1600x900/logo/AI_1792172478122_3zW1_1792172478247_i3Zr_a0613f87-8972-427b-8e6c-b0b355abc940_9WHk.png"
+            }
+          ],
+          "thread": "t1gyivwv"
+        },
+        {
+          "id": "s1v8rqcv",
+          "headline": "Finance ministry appoints Subhas Chandra Lal Das as part-time chairperson FSIB",
+          "url": "https://www.livemint.com/news/india/finance-ministry-appoints-subhas-chandra-lal-das-as-part-time-chairperson-fsib-11792169806287.html",
+          "source": "mint",
+          "date": "2026-10-16T17:28:43.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2026/10/16/1600x900/logo/Subhas-Chandra-Lal-Das_1792171460489_f5Sj_1792171465307_hcii_8b597b71-6f2c-4d87-9328-d90367512472_gckG.jpg",
+          "why": "A new FSIB chairperson takes charge of the bureau handling public sector bank, financial institution and insurer matters, which could shape governance there.",
+          "implications": [
+            "Mint reports the finance ministry named Subhas Chandra Lal Das part-time chairperson for three years, with six members.",
+            "The bureau's remit covers public sector banks, financial institutions and insurers.",
+            "The report gives no immediate change for customers or borrowers."
+          ],
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-16T21:20:20.612Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "low",
+              "reason": "Institutional appointment; the report describes no direct mechanism for households."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Three-year term; effects would build gradually."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "One outlet, reporting a finance ministry appointment."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Government finances",
+                "direction": "unclear",
+                "what": "public sector bank oversight",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Further FSIB decisions or announcements on public sector banks and insurers",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Ministry appoints new FSIB chair",
+                    "detail": "Former IAS officer Das to lead bureau for three years with six members.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Bureau covers state financial bodies",
+                    "detail": "Remit spans public sector banks, financial institutions and insurers.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Governance of these bodies may shift",
+                    "detail": "New leadership could influence how the bureau handles its matters.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The bureau's remit stays routine and its decisions do not change."
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "Finance ministry appoints Subhas Chandra Lal Das as part-time chairperson FSIB",
+              "url": "https://www.livemint.com/news/india/finance-ministry-appoints-subhas-chandra-lal-das-as-part-time-chairperson-fsib-11792169806287.html",
+              "date": "2026-10-16T17:28:43.000Z",
+              "kind": "hard",
+              "summary": "Former IAS officer to lead the bureau for three years, along side six members tasked with matters concerning public sector banks, financial institutions and insurers.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/10/16/1600x900/logo/Subhas-Chandra-Lal-Das_1792171460489_f5Sj_1792171465307_hcii_8b597b71-6f2c-4d87-9328-d90367512472_gckG.jpg"
+            }
+          ],
+          "thread": "tphhezb"
+        },
+        {
+          "id": "sm4gk9s",
+          "headline": "Centre amends Census rules, expands eligibility for appointment as enumerator",
+          "url": "https://www.livemint.com/news/india/centre-amends-census-rules-expands-eligibility-for-appointment-as-enumerator-11792153302819.html",
+          "source": "mint",
+          "date": "2026-10-16T12:29:34.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2026/10/16/1600x900/logo/ANI-20260901446-0_1792153642827_BXlY_1792153681587_7rbo_8a3a9149-fbf2-4262-9bff-e1661af5c906_oG9R.jpg",
+          "why": "The Centre has widened who can be appointed Census enumerators, which changes who may be given Census fieldwork duties.",
+          "implications": [
+            "Teachers from government and private institutions, government officials and clerks, among others, are now eligible for enumerator duties.",
+            "A wider eligible pool could make staffing Census fieldwork easier, though the report does not say how many will be deployed."
+          ],
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-16T21:19:40.228Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "low",
+              "reason": "Administrative eligibility change; the report names no direct effect on household essentials or trade."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Census timing is not stated; appointments would follow the amended rules."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "Single outlet; no named official quoted."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Salaried workers",
+                "direction": "unclear",
+                "what": "possible Census duty assignments",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Official notification of the amended Census Rules, 1990 and any enumerator appointment orders",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Census Rules, 1990 amended",
+                    "detail": "The Centre amended the rules on Friday to widen who can serve as enumerators.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Wider eligible pool",
+                    "detail": "Teachers in government and private institutions, government officials and clerks now qualify.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Easier fieldwork staffing",
+                    "detail": "Authorities could find it easier to staff Census enumeration.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "Authorities do not appoint the newly eligible categories as enumerators."
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "Centre amends Census rules, expands eligibility for appointment as enumerator",
+              "url": "https://www.livemint.com/news/india/centre-amends-census-rules-expands-eligibility-for-appointment-as-enumerator-11792153302819.html",
+              "date": "2026-10-16T12:29:34.000Z",
+              "kind": "hard",
+              "summary": "The Central government on Friday amended the Census Rules, 1990, expanding the categories of people eligible to perform duties as enumerators to include teachers from government and private educational institutions, government officials and clerks, among others.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/10/16/1600x900/logo/ANI-20260901446-0_1792153642827_BXlY_1792153681587_7rbo_8a3a9149-fbf2-4262-9bff-e1661af5c906_oG9R.jpg"
+            }
+          ],
+          "thread": "t1kgdf4f"
+        },
+        {
+          "id": "s1layesu",
+          "headline": "PM-SETU: Five ITI clusters to get ₹1,195 crore investment from Tata Steel Foundation, BVG India, others",
+          "url": "https://www.livemint.com/economy/pmsetu-five-iti-clusters-to-get-1-195-crore-investment-from-tata-steel-foundation-bvg-india-others-11792149570932.html",
+          "source": "mint",
+          "date": "2026-10-16T11:38:02.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2026/10/16/1600x900/logo/Defence-minister-Rajnath-Singh-addressing-the-PM-S_1792150432328_pyK0_1792150432507_gPaE_7453c787-2918-473c-9f22-ae8797a44c0e_tfet.jpeg",
+          "why": "Private partners will invest ₹1,195 crore in upgrading five ITI clusters under PM-SETU, which could expand skilled-labour training over time.",
+          "implications": [
+            "Tata Steel Foundation, BVG India, Belrise Industries, Eagle Infra India and Inderdeep Infra India will partner in upgrading the five ITI clusters.",
+            "PTI reports cumulative investment approved under PM-SETU is now about ₹3,687 crore.",
+            "Better ITIs could eventually widen the pool of trained workers for industry, though outcomes are not described in the report."
+          ],
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-16T21:18:59.094Z",
+            "tier": "quick",
+            "primary": "winners_losers",
+            "complement": null,
+            "features": [
+              "allocation"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "Training investment with no near-term effect on prices or household essentials reported."
+            },
+            "horizon": {
+              "value": "years",
+              "reason": "ITI upgrades and graduate outcomes take years to show."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "Single outlet relaying a news agency report."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Manufacturing workers",
+                "direction": "up",
+                "what": "access to upgraded ITI training",
+                "basis": "inferred"
+              },
+              {
+                "group": "Government finances",
+                "direction": "mixed",
+                "what": "private funding alongside scheme",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Further project approvals and cumulative investment under PM-SETU",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "frameworks": {
+              "winners_losers": {
+                "groups": [
+                  {
+                    "group": "Manufacturing workers",
+                    "direction": "gain",
+                    "directness": "indirect",
+                    "mechanism": "Upgraded ITI clusters could improve skills training for industry jobs."
+                  },
+                  {
+                    "group": "Government finances",
+                    "direction": "mixed",
+                    "directness": "indirect",
+                    "mechanism": "Private partners' ₹1,195 crore could share the cost of upgrades."
+                  }
+                ],
+                "not_affected": ""
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "PM-SETU: Five ITI clusters to get ₹1,195 crore investment from Tata Steel Foundation, BVG India, others",
+              "url": "https://www.livemint.com/economy/pmsetu-five-iti-clusters-to-get-1-195-crore-investment-from-tata-steel-foundation-bvg-india-others-11792149570932.html",
+              "date": "2026-10-16T11:38:02.000Z",
+              "kind": "hard",
+              "summary": "Tata Steel Foundation, BVG India, Belrise Industries, Eagle Infra India and Inderdeep Infra India will partner in upgrading the five ITI clusters. The cumulative investment approved under the PM-SETU scheme till now is to the tune of ₹3,687 crore, news agency PTI agency said.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/10/16/1600x900/logo/Defence-minister-Rajnath-Singh-addressing-the-PM-S_1792150432328_pyK0_1792150432507_gPaE_7453c787-2918-473c-9f22-ae8797a44c0e_tfet.jpeg"
+            }
+          ],
+          "thread": "t15jzvfo"
+        },
+        {
+          "id": "s1kw443x",
+          "headline": "SIR vs SSR: What is Election Commission's new voter list ‘summary revision’? Key dates, Aadhaar rule voters must know",
+          "url": "https://www.livemint.com/news/india/sir-vs-ssr-what-is-election-commissions-new-voter-list-summary-revision-key-dates-aadhaar-rule-voters-must-know-11792143664607.html",
+          "source": "mint",
+          "date": "2026-10-16T10:02:09.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2026/10/16/1600x900/logo/SIR_1792144216758_cxYB_1792144216920_HWVF_a518007d-a15e-4a7a-9fad-334fa361e83f_SZTN.png",
+          "why": "",
+          "implications": [],
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "SIR vs SSR: What is Election Commission's new voter list ‘summary revision’? Key dates, Aadhaar rule voters must know",
+              "url": "https://www.livemint.com/news/india/sir-vs-ssr-what-is-election-commissions-new-voter-list-summary-revision-key-dates-aadhaar-rule-voters-must-know-11792143664607.html",
+              "date": "2026-10-16T10:02:09.000Z",
+              "kind": "feature",
+              "summary": "What is Special Summary Revision (SSR)? How is it different from SIR? IN which states will this SSR be implemented? How can voters get their name included in the list during the SSR process? Here's your guide.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/10/16/1600x900/logo/SIR_1792144216758_cxYB_1792144216920_HWVF_a518007d-a15e-4a7a-9fad-334fa361e83f_SZTN.png"
+            }
+          ],
+          "thread": "t1iy3j15"
+        },
+        {
+          "id": "sz7b1a6",
+          "headline": "India overhauls drug patent guidelines to curb evergreening and speed up cheap generics",
+          "url": "https://www.livemint.com/companies/news/india-drugs-patents-rules-overhaul-evergreening-generics-11792122825531.html",
+          "source": "mint",
+          "date": "2026-10-16T08:14:03.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2026/10/16/1600x900/logo/drugs_1716432555967_1792133615377_JP5U_d0b2fa21-1c0b-4a15-8e7d-d37cf30f0cd1_1fYb.jpg",
+          "why": "Draft drug patent guidelines would require strict scientific proof of improved efficacy for minor drug modifications, aiming to curb evergreening and speed up cheap generics.",
+          "implications": [
+            "Minor changes to existing drugs may find it harder to win patents if the draft is adopted.",
+            "Generic makers could reach the market sooner, which Mint says is the aim, though no timing is reported."
+          ],
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-16T21:18:59.093Z",
+            "tier": "quick",
+            "primary": "policy_tracker",
+            "complement": null,
+            "features": [
+              "policy_stage"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "Affects the pharmaceutical industry and patent compliance; no price effect is reported yet."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Guidelines are still in draft; adoption date not reported."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "Single outlet, short summary, no official source quoted."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Manufacturing workers",
+                "direction": "unclear",
+                "what": "pharma patent and generics rules",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Finalisation or amendment of the draft drug patent guidelines",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "frameworks": {
+              "policy_tracker": {
+                "instrument": {
+                  "name": "Drug patent guidelines (draft)",
+                  "issuer": "Indian authorities (issuer not named in report)",
+                  "jurisdiction": "India"
+                },
+                "stages": [
+                  {
+                    "stage": "draft",
+                    "date": "2026-10-16",
+                    "status": "current"
+                  },
+                  {
+                    "stage": "adopted",
+                    "date": "",
+                    "status": "next"
+                  }
+                ],
+                "obligations": [
+                  {
+                    "who": "Patent applicants for minor drug modifications",
+                    "what": "Show strict scientific proof of improved therapeutic efficacy",
+                    "from": ""
+                  }
+                ],
+                "applies_to_india": "yes"
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "India overhauls drug patent guidelines to curb evergreening and speed up cheap generics",
+              "url": "https://www.livemint.com/companies/news/india-drugs-patents-rules-overhaul-evergreening-generics-11792122825531.html",
+              "date": "2026-10-16T08:14:03.000Z",
+              "kind": "hard",
+              "summary": "The draft guidelines require strict scientific proof of improved therapeutic efficacy for minor drug modifications.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/10/16/1600x900/logo/drugs_1716432555967_1792133615377_JP5U_d0b2fa21-1c0b-4a15-8e7d-d37cf30f0cd1_1fYb.jpg"
+            }
+          ],
+          "thread": "ts911aq"
+        },
         {
           "id": "sga8dmo",
           "headline": "Muslims disproportionately flagged in Delhi SIR",
@@ -13056,11 +15055,10 @@
           "date": "2026-10-12T07:39:21.000Z",
           "relevance": "medium",
           "image": "https://www.livemint.com/lm-img/img/2026/10/12/1600x900/logo/SC_1791790601738_i0El_1791790601954_Mddx_69c3df76-3ba7-4b87-9d19-797f607a52cf_Caf5.jpg",
-          "why": "The Supreme Court's clarification that it has not ruled on the new Form 6 leaves the form's legal standing open, which matters for how voters nationwide are added to electoral rolls.",
+          "why": "The Supreme Court says it has not ruled on the new Form 6, so the form's legal status in electoral roll revisions stays open.",
           "implications": [
-            "Citizens applying to register as voters using the new Form 6 may face continued uncertainty over its legal status.",
-            "Fresh legal challenges to the new Form 6 could be filed, since the court says it has not adjudicated the issue.",
-            "Election officials may need to proceed cautiously with voter enrolment while questions about the form remain unresolved."
+            "The Bihar SIR judgment did not settle the new Form 6, so its legal standing remains unresolved.",
+            "Voters and officials could face uncertainty over the form until the Court or another authority rules on it."
           ],
           "reports": [
             {
@@ -13074,7 +15072,64 @@
               "image": "https://www.livemint.com/lm-img/img/2026/10/12/1600x900/logo/SC_1791790601738_i0El_1791790601954_Mddx_69c3df76-3ba7-4b87-9d19-797f607a52cf_Caf5.jpg"
             }
           ],
-          "thread": "t1iy3j15"
+          "thread": "t1iy3j15",
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-16T21:22:27.532Z",
+            "tier": "quick",
+            "primary": "policy_tracker",
+            "complement": null,
+            "features": [
+              "policy_stage",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "No direct effect on household essentials or trade appears in the report; only electoral roll process is involved."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "No timeline reported; any resolution depends on future proceedings."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "Single outlet, but it reports a statement attributed to the Supreme Court."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "A named state or region",
+                "direction": "unclear",
+                "what": "voter roll registration process",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Further Supreme Court hearings or orders on the new Form 6 or the Bihar SIR matter",
+                "when": "",
+                "where": "Supreme Court of India"
+              }
+            ],
+            "frameworks": {
+              "policy_tracker": {
+                "instrument": {
+                  "name": "New Form 6",
+                  "issuer": "",
+                  "jurisdiction": "India"
+                },
+                "stages": [
+                  {
+                    "stage": "under_review",
+                    "date": "2026-10-12",
+                    "status": "current"
+                  }
+                ],
+                "obligations": [],
+                "applies_to_india": "partly"
+              }
+            }
+          }
         },
         {
           "id": "s2hpe6e",
@@ -13215,6 +15270,104 @@
                 "not_affected": "Patients on non-cancer high-cost drugs; the cap covers cancer medicines only."
               }
             }
+          },
+          "stats": {
+            "v": 2,
+            "at": "2026-10-16T21:21:34.823Z",
+            "series": [
+              {
+                "title": "WPI pharmaceutical products, annual average index (2022-23=100)",
+                "unit": "index points (base 2022-23=100)",
+                "publisher": "Office of the Economic Adviser, DPIIT (via PIB)",
+                "why": "This is the official wholesale price index for pharmaceutical products. It gives a baseline for producer-level drug prices, which can be compared with the retail mark-ups the trade-margin cap targets.",
+                "points": [
+                  {
+                    "period": "FY 2023-24",
+                    "value": 101,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2272872&reg=48&lang=1",
+                    "source": "PRESS RELEASE ON NEW SERIES OF WHOLESALE PRICE INDEX, AND PRODUCER PRICE INDICES WITH BASE YEAR 2022-23"
+                  },
+                  {
+                    "period": "FY 2024-25",
+                    "value": 99.7,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2272872&reg=48&lang=1",
+                    "source": "PRESS RELEASE ON NEW SERIES OF WHOLESALE PRICE INDEX, AND PRODUCER PRICE INDICES WITH BASE YEAR 2022-23"
+                  },
+                  {
+                    "period": "FY 2025-26",
+                    "value": 99.7,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2272872&reg=48&lang=1",
+                    "source": "PRESS RELEASE ON NEW SERIES OF WHOLESALE PRICE INDEX, AND PRODUCER PRICE INDICES WITH BASE YEAR 2022-23"
+                  }
+                ],
+                "dropped": 0,
+                "sources": [
+                  {
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2272872&reg=48&lang=1",
+                    "title": "PRESS RELEASE ON NEW SERIES OF WHOLESALE PRICE INDEX, AND PRODUCER PRICE INDICES WITH BASE YEAR 2022-23",
+                    "domain": "pib.gov.in"
+                  }
+                ],
+                "domains": [
+                  "pib.gov.in"
+                ]
+              },
+              {
+                "title": "WPI pharmaceutical products, monthly index (2022-23=100)",
+                "unit": "index points (base 2022-23=100)",
+                "publisher": "Office of the Economic Adviser, DPIIT (via PIB)",
+                "why": "This shows the latest month-by-month movement in wholesale pharmaceutical prices before the cap decision. It is a producer-price measure and does not capture retail or trade margins.",
+                "points": [
+                  {
+                    "period": "Dec 2025",
+                    "value": 99.9,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2272872&reg=48&lang=1",
+                    "source": "PRESS RELEASE ON NEW SERIES OF WHOLESALE PRICE INDEX, AND PRODUCER PRICE INDICES WITH BASE YEAR 2022-23"
+                  },
+                  {
+                    "period": "Jan 2026",
+                    "value": 99.6,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2272872&reg=48&lang=1",
+                    "source": "PRESS RELEASE ON NEW SERIES OF WHOLESALE PRICE INDEX, AND PRODUCER PRICE INDICES WITH BASE YEAR 2022-23"
+                  },
+                  {
+                    "period": "Feb 2026",
+                    "value": 99.6,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2272872&reg=48&lang=1",
+                    "source": "PRESS RELEASE ON NEW SERIES OF WHOLESALE PRICE INDEX, AND PRODUCER PRICE INDICES WITH BASE YEAR 2022-23"
+                  },
+                  {
+                    "period": "Mar 2026",
+                    "value": 100.8,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2272872&reg=48&lang=1",
+                    "source": "PRESS RELEASE ON NEW SERIES OF WHOLESALE PRICE INDEX, AND PRODUCER PRICE INDICES WITH BASE YEAR 2022-23"
+                  },
+                  {
+                    "period": "Apr 2026",
+                    "value": 102,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2272872&reg=48&lang=1",
+                    "source": "PRESS RELEASE ON NEW SERIES OF WHOLESALE PRICE INDEX, AND PRODUCER PRICE INDICES WITH BASE YEAR 2022-23"
+                  },
+                  {
+                    "period": "May 2026",
+                    "value": 102.3,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2272872&reg=48&lang=1",
+                    "source": "PRESS RELEASE ON NEW SERIES OF WHOLESALE PRICE INDEX, AND PRODUCER PRICE INDICES WITH BASE YEAR 2022-23"
+                  }
+                ],
+                "dropped": 0,
+                "sources": [
+                  {
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2272872&reg=48&lang=1",
+                    "title": "PRESS RELEASE ON NEW SERIES OF WHOLESALE PRICE INDEX, AND PRODUCER PRICE INDICES WITH BASE YEAR 2022-23",
+                    "domain": "pib.gov.in"
+                  }
+                ],
+                "domains": [
+                  "pib.gov.in"
+                ]
+              }
+            ]
           }
         },
         {
@@ -13253,11 +15406,11 @@
           "date": "2026-10-11T18:51:57.000Z",
           "relevance": "high",
           "image": "https://th-i.thgim.com/public/incoming/k6wbzi/article71572758.ece/alternates/LANDSCAPE_1200/DSC_4899.JPG",
-          "why": "Assistant Electoral Registration Officers allege they are being pressured to clear Special Intensive Revision (SIR) notices without hearings, raising questions about how voter-roll changes are decided.",
+          "why": "Allegations of pressure to clear SIR notices without hearings could affect how accurately India's electoral rolls are compiled.",
           "implications": [
-            "Voters who receive SIR notices could see their roll status decided without a chance to present their case, if the allegations hold.",
-            "Households may need to check their names on electoral rolls and keep identity documents ready to respond to notices.",
-            "The allegations could prompt scrutiny or legal challenges to the revision process, possibly delaying finalisation of voter lists."
+            "The Hindu reports AEROs say they are pushed to accept any documents to meet deadlines.",
+            "Rolls could carry errors if notices are cleared without hearings.",
+            "These are allegations by AEROs, not confirmed findings."
           ],
           "reports": [
             {
@@ -13273,7 +15426,58 @@
               "summaryV": 3
             }
           ],
-          "thread": "t1iy3j15"
+          "thread": "t1iy3j15",
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-16T21:23:39.534Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "low",
+              "reason": "No household-essential or trade mechanism in the report; concerns electoral roll processes."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Deadline pressure on notice clearance is described as current."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "Single outlet; claims made by AEROs, not verified by officials."
+            },
+            "outlets": 1,
+            "affected": [],
+            "watch": [
+              {
+                "what": "Election Commission response to AERO allegations on SIR notice hearings",
+                "when": "",
+                "where": "Election Commission of India"
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Deadline pressure on AEROs",
+                    "detail": "AEROs allege pressure to clear SIR notices before hearings are held.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Documents accepted without scrutiny",
+                    "detail": "AEROs say they are told to upload whatever documents are given.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Inaccurate roll entries",
+                    "detail": "Eligible voters could be wrongly included or excluded from the rolls.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "Hearings are held and documents verified before notices are cleared."
+              }
+            }
+          }
         },
         {
           "id": "sypjw9z",
@@ -14394,16 +16598,16 @@
   ],
   "source": "BBC News & The Guardian & NPR & Al Jazeera & MercoPress & ABC News & The New York Times & CNBC & CBS News & DW & France 24 & Africanews & South China Morning Post & The Hindu & Mint",
   "lastRun": {
-    "analysed": 7,
-    "added": 0,
-    "merged": 0,
-    "rejected": 7,
+    "analysed": 150,
+    "added": 17,
+    "merged": 4,
+    "rejected": 129,
     "failedBatches": 0,
     "feeds": {
       "thehindu": {
         "feedsOk": 6,
         "feedsFailed": 0,
-        "items": 342
+        "items": 344
       },
       "mint": {
         "feedsOk": 6,
@@ -14417,13 +16621,13 @@
       "summaries": 0
     },
     "threads": {
-      "assigned": 0,
-      "created": 0,
+      "assigned": 17,
+      "created": 13,
       "failedBatches": 0
     },
     "summaries": {
-      "written": 0,
-      "due": 0
+      "written": 4,
+      "due": 4
     },
     "kinds": {
       "labelled": 0,
@@ -14431,84 +16635,90 @@
       "failedBatches": 0
     },
     "frames": {
-      "done": 19,
-      "waiting": 138,
+      "done": 9,
+      "waiting": 15,
       "failedBatches": 0
     },
     "stats": {
-      "searched": 6,
+      "searched": 4,
       "found": 2,
-      "none": 4,
+      "reused": 1,
+      "none": 1,
       "failed": 0,
-      "proposed": 17,
+      "proposed": 18,
       "droppedPoints": 0,
-      "pagesFetched": 5,
+      "pagesFetched": 3,
       "samples": [
         {
-          "headline": "India asks its nationals in Saudi Arabia to ‘remain calm and vigilant’",
-          "result": "too few checked figures",
-          "proposed": 1,
-          "checked": 1,
-          "pagesFetched": 1
-        },
-        {
-          "headline": "Economic think tank says govt should withdraw proposed UPI charges. Here's why",
-          "result": "nothing",
-          "proposed": 0,
-          "checked": 0,
-          "pagesFetched": 0
-        },
-        {
-          "headline": "U.S. lifts sanctions on sale of Russian diesel in global markets",
-          "result": "chart",
-          "proposed": 4,
-          "checked": 4,
-          "pagesFetched": 1
-        },
-        {
-          "headline": "CJP protest: Trains cut, Internet down, Delhi turns a fortress",
+          "headline": "US Green Card curbs could accelerate India’s shift to high-value tech work: Karn",
           "result": "none",
           "proposed": 0,
           "checked": 0,
-          "pagesFetched": 0
-        },
-        {
-          "headline": "As oil prices rise, RBI opens special window for PSU oil firms to meet their dai",
-          "result": "none",
-          "proposed": 0,
-          "checked": 0,
-          "pagesFetched": 2
-        },
-        {
-          "headline": "Iran's Mohsen Rezaei speaks to Ajit Doval amid Gulf shipping attacks, Strait of ",
-          "result": "chart",
-          "proposed": 12,
-          "checked": 12,
           "pagesFetched": 1
+        },
+        {
+          "headline": "India's retail inflation jumps to 5.54% in Sept; highest under new CPI series",
+          "result": "chart",
+          "proposed": 9,
+          "checked": 9,
+          "pagesFetched": 1
+        },
+        {
+          "headline": "Centre to cap trade margins on non-scheduled cancer drugs to 30% of MRP",
+          "result": "chart",
+          "proposed": 9,
+          "checked": 9,
+          "pagesFetched": 1
+        },
+        {
+          "headline": "Saudi Arabia-Houthi conflict: Indian Embassy in Riyadh issues advisory; Air Indi",
+          "result": "reused saved series"
         }
       ]
     },
     "models": {
       "filter": {
         "model": "claude-haiku-5-5",
-        "calls": 5,
-        "inputTokens": 13918,
-        "outputTokens": 6303
+        "calls": 16,
+        "inputTokens": 46601,
+        "outputTokens": 24882,
+        "cost": 0.017
       },
-      "analysis": {
-        "model": "claude-opus-5-5",
-        "calls": 8,
-        "inputTokens": 19565,
-        "outputTokens": 24622
+      "analysis_quick": {
+        "model": "claude-sonnet-5-5",
+        "calls": 9,
+        "inputTokens": 19031,
+        "outputTokens": 25895,
+        "cost": 0.2972
       },
       "stats": {
         "model": "claude-sonnet-5-5",
-        "calls": 6,
-        "inputTokens": 607512,
-        "outputTokens": 6155,
-        "searches": 15,
-        "fetches": 8
+        "calls": 3,
+        "inputTokens": 371360,
+        "outputTokens": 3331,
+        "searches": 8,
+        "fetches": 4,
+        "cost": 0.856
+      },
+      "analysis": {
+        "model": "claude-opus-5-5",
+        "calls": 2,
+        "inputTokens": 5049,
+        "outputTokens": 5829,
+        "cost": 0.1368
+      },
+      "threads": {
+        "model": "claude-sonnet-5-5",
+        "calls": 5,
+        "inputTokens": 16739,
+        "outputTokens": 2739,
+        "cost": 0.0608
       }
+    },
+    "spend": {
+      "thisDesk": 1.3678,
+      "today": 2.0204,
+      "cap": 6
     }
   },
   "recentDays": 60
