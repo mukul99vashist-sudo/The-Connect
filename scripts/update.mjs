@@ -97,8 +97,41 @@ const MODELS = {
   filter:   [process.env.FILTER_MODEL   || "claude-haiku-5-5",  "claude-sonnet-5-5"],  // keep/reject + same-story matching (high volume)
   analysis: [process.env.ANALYSIS_MODEL || "claude-opus-5-5",   "claude-sonnet-5-5"],  // why it matters + implications for kept stories
   threads:  [process.env.THREAD_MODEL   || "claude-sonnet-5-5", "claude-haiku-5-5"],   // story threads and "How we got here"
-  stats:    [process.env.STATS_MODEL    || "claude-sonnet-5-5", "claude-opus-5-5"]     // official statistics via web search
+  stats:    [process.env.STATS_MODEL    || "claude-sonnet-5-5", "claude-opus-5-5"],    // official statistics via web search
+  analysis_quick: [process.env.QUICK_MODEL || "claude-sonnet-5-5", "claude-haiku-5-5"] // short "quick read" analyses: half Opus's price
 };
+
+// ---------- Spending control ----------
+// Every API reply reports its own token use; the engine prices it and keeps a running total per day (India time) in
+// data/budget.json. Work is cut in priority order as the day's spend rises: new stories may use the whole budget,
+// statistics up to 90%, catch-up work (re-analysing older stories, labelling, storyline summaries) up to 60%.
+const DAILY_BUDGET = +(process.env.DAILY_BUDGET_USD || 6);
+const BUDGET_FILE = "data/budget.json";
+const BUDGET_SHARE = { core: 1.0, stats: 0.9, extra: 0.6 };
+const PRICES = { "claude-opus-5-5": [4, 20], "claude-sonnet-5-5": [2, 10], "claude-haiku-5-5": [0.10, 0.50], "claude-haiku-5-5@long": [0.50, 2.50] }; // US$ per million tokens: input, output
+const SEARCH_PRICE = 0.01;      // US$ per web search
+const EST = { filter: 0.02, analysis: 0.15, analysis_quick: 0.06, threads: 0.03, stats: 0.30 };   // most one request is likely to cost
+class BudgetError extends Error { constructor(level) { super(`daily budget reached for ${level} work`); this.level = level; } }
+let budget = null;
+const indiaDay = () => new Date(Date.now() + 5.5 * 36e5).toISOString().slice(0, 10);
+async function loadBudget() {
+  const b = await readJson(BUDGET_FILE, {}), day = indiaDay();
+  budget = b.day === day ? b : { day, spent: 0, runs: 0, byJob: {}, history: [...(b.day ? [{ day: b.day, spent: b.spent, runs: b.runs, byJob: b.byJob }] : []), ...(b.history || [])].slice(0, 30) };
+  budget.cap = DAILY_BUDGET; budget.runs = (budget.runs || 0) + 1; budget.byJob ||= {};
+}
+async function saveBudget() { budget.spent = Math.round(budget.spent * 1e4) / 1e4; for (const k in budget.byJob) budget.byJob[k] = Math.round(budget.byJob[k] * 1e4) / 1e4; budget.updatedAt = new Date().toISOString(); await fs.writeFile(BUDGET_FILE, JSON.stringify(budget, null, 1) + "\n"); }
+function costOf(model, inTok, outTok, searches = 0) {
+  const p = (/haiku/.test(model) && inTok > 100000 ? PRICES[model + "@long"] : PRICES[model]) || [4, 20];   // unknown model: priced as Opus
+  return inTok / 1e6 * p[0] + outTok / 1e6 * p[1] + searches * SEARCH_PRICE;
+}
+function charge(job, model, u = {}) {
+  const c = costOf(model, (u.input_tokens || 0) + (u.cache_creation_input_tokens || 0) + (u.cache_read_input_tokens || 0) * 0.1, u.output_tokens || 0, u.server_tool_use?.web_search_requests || 0);
+  if (budget) { budget.spent += c; budget.byJob[job] = (budget.byJob[job] || 0) + c; }
+  if (usage[job]) usage[job].cost = Math.round(((usage[job].cost || 0) + c) * 1e4) / 1e4;
+  return c;
+}
+const budgetLeft = level => budget ? DAILY_BUDGET * BUDGET_SHARE[level] - budget.spent : Infinity;
+function needBudget(level, est = 0) { if (budgetLeft(level) < est) throw new BudgetError(level); }
 let usage = {};   // job -> { model, calls, inputTokens, outputTokens }
 const SECTORS = [
   { id: "energy",        name: "Energy" },
@@ -114,6 +147,7 @@ const MAX_REJECTED = 150;                      // audit trail of what the filter
 const BATCH = 25;              // headlines per filter request (kept new stories from a batch go to one analysis request)
 const MAX_NEW_PER_RUN = { global: 300, domestic: 150 };   // the rest wait for the next run
 const MATCH_WINDOW_DAYS = 4;   // how far back to look for the same event
+const FRESH_HOURS = 24;        // headlines older than this are skipped, never analysed (no catch-up after a pause)
 const RECENT_DAYS = 60;        // the site's main file holds the last 60 days; everything is kept in monthly archive files
 const CLASSIFY_BATCH = 40;     // reports per request when labelling older reports with their kind
 const CLASSIFY_LIMIT = 800;    // older reports labelled per desk per run (the rest wait for the next run)
@@ -331,7 +365,7 @@ async function assignThreads(events, threads, desk) {
     const stories = batch.map(e => ({ id: e.id, headline: e.headline, summary: (e.reports || []).map(r => r.summary).find(Boolean) || e.why || "", sector: e.sector, date: (e.date || "").slice(0, 10) }));
     let res;
     try { res = await callClaude(threadPrompt(stories, active, desk.mode), "threads"); }
-    catch (err) { console.error(`Thread batch failed: ${err.message}`); failed++; continue; }
+    catch (err) { if (err instanceof BudgetError) break; console.error(`Thread batch failed: ${err.message}`); failed++; continue; }
     const byName = new Map(Object.values(threads).map(t => [t.name.toLowerCase(), t]));
     for (const r of res || []) {
       const ev = batch.find(e => e.id === r?.id); if (!ev) continue;
@@ -361,10 +395,10 @@ async function refreshSummaries(events, threads, desk) {
       summary: (e.reports || []).map(r => r.summary).find(Boolean) || ""
     }));
     try {
-      const res = await callClaude(summaryPrompt(t, items, desk.mode), "threads");
+      const res = await callClaude(summaryPrompt(t, items, desk.mode), "threads", "extra");
       const text = res && res[0] && typeof res[0].summary === "string" ? res[0].summary.trim() : "";
       if (text) { t.summary = text.slice(0, 900); t.summaryCount = evs.length; t.summaryAt = new Date().toISOString(); written++; }
-    } catch (err) { console.error(`Summary for "${t.name}" failed: ${err.message}`); }
+    } catch (err) { if (err instanceof BudgetError) break; console.error(`Summary for "${t.name}" failed: ${err.message}`); }
   }
   return { written, due: due.length };
 }
@@ -462,10 +496,10 @@ async function classifyOlder(data) {
     const batch = pending.slice(k, k + CLASSIFY_BATCH);
     const items = batch.map((r, i) => { let path = ""; try { path = new URL(r.url).pathname; } catch {} return { id: i, outlet: OUTLETS[r.source] || r.source, headline: r.headline, summary: r.summary || "", path }; });
     try {
-      for (const v of await callClaude(classifyPrompt(items), "filter")) {
+      for (const v of await callClaude(classifyPrompt(items), "filter", "extra")) {
         const r = batch[+v?.id]; if (r && KINDS.includes(v.kind)) { r.kind = v.kind; labelled++; }
       }
-    } catch (e) { console.error(`Kind labelling batch failed: ${e.message}`); failed++; }
+    } catch (e) { if (e instanceof BudgetError) break; console.error(`Kind labelling batch failed: ${e.message}`); failed++; }
   }
   return { labelled, waiting: Math.max(0, pending.length - labelled), failedBatches: failed };
 }
@@ -478,7 +512,8 @@ async function classifyOlder(data) {
 const ANALYSIS_V = 2;
 const ANALYSIS_CHUNK = 3;      // stories per Opus request (each analysis is long)
 const FEATURE_BATCH = 12;      // stories per feature-question request
-const REFRAME_LIMIT = 24;      // existing stories (re)analysed per desk per run, newest first
+const REFRAME_LIMIT = 12;      // existing stories (re)analysed per desk per run, newest first
+const REFRAME_DAYS = 7;        // older stories keep the analysis they have
 
 const FRAMEWORKS = {
   impact_chain:   "Impact chain",
@@ -578,7 +613,7 @@ UNIVERSAL BLOCK (every story):
 - "why": the bottom line in one sentence, ≤30 words: how this reaches ${REGION}.
 - "implications": 2 or 3 plain sentences, each ≤25 words.
 - "exposure": {"level":"high|medium|low","reason":"≤20 words"}. High = touches a household essential (fuel, LPG, food staples, loan EMIs, deposit rates), a top Indian import or export, or the safety or travel of Indians. Medium = one industry, one bilateral relationship or a compliance obligation. Low = indirect or no mechanism in the reports.
-- "horizon": {"value":"now|weeks|months|years","reason":"≤12 words"}. now = under a week.
+- "horizon": {"value":"now|weeks|months|years","reason":"≤12 words"}. When people in ${REGION} are likely to feel the effect: now = within a week; weeks = one to six weeks; months = two to twelve months; years = beyond a year.
 - "confidence": {"level":"high|medium|low","reason":"≤15 words"}. High = 3+ outlets agree and an on-record official source; medium = 2 outlets, or 1 with an official source; low = single outlet, anonymous sourcing, claims by a party, or an unresolved conflict.
 - "affected": 1 to 4 of [{"group":"exactly one of: ${GROUPS.join(", ")}","direction":"up|down|mixed|unclear","what":"what changes for them, ≤6 words (e.g. fuel prices, flight availability, compliance costs)","basis":"reported|inferred"}].
 - "watch": 1 to 3 of [{"what":"observable event, ≤15 words","when":"date if reported, else empty","where":"named official source to check, or empty"}].
@@ -667,11 +702,14 @@ function cleanAnalysis(r, plan, reportText) {
     exposure: r.exposure ? { level: pick(r.exposure.level, ["high", "medium", "low"], "medium"), reason: s(r.exposure.reason, 140) } : null,
     horizon: r.horizon ? { value: pick(r.horizon.value, ["now", "weeks", "months", "years"], "weeks"), reason: s(r.horizon.reason, 100) } : null,
     confidence: r.confidence ? { level: pick(r.confidence.level, ["high", "medium", "low"], "medium"), reason: s(r.confidence.reason, 120) } : null,
+    outlets: new Set((plan.reports || []).map(x => x.source)).size || undefined,
     affected: arr(r.affected, 4).map(x => ({ group: pick(x?.group, GROUPS, ""), direction: pick(x?.direction, ["up", "down", "mixed", "unclear"], "unclear"), what: s(x?.what, 60), basis: pick(x?.basis, ["reported", "inferred"], "inferred") })).filter(x => x.group),
     watch: arr(r.watch, 3).map(x => ({ what: s(x?.what, 140), when: str(x?.when, 40), where: str(x?.where, 60) })).filter(x => x.what),
     frameworks: {} };
   for (const k of [plan.primary, plan.complement].filter(Boolean)) { const f = cleanFramework(k, r[k], nums); if (f) a.frameworks[k] = f; }
   if (!a.frameworks[plan.primary]) a.frameworksMissing = true;
+  // Rule check: High confidence needs three or more outlets (the rubric's own threshold), whatever the model said.
+  if (a.confidence?.level === "high" && (a.outlets || 0) < 3) { a.confidence.level = "medium"; a.confidence.capped = true; }
   return a;
 }
 function reportsForPrompt(reports) {
@@ -680,11 +718,11 @@ function reportsForPrompt(reports) {
 const reportTextOf = reports => reports.map(r => [r.headline, r.summary, r.lede].filter(Boolean).join(" ")).join(" ");
 
 // Plan and analyse a list of stories: [{ i, kind, reports, relevance, prev }] → Map(i → { r, plan })
-async function analyseStories(list, mode) {
+async function analyseStories(list, mode, level = "core") {
   const feats = new Map();
   for (let k = 0; k < list.length; k += FEATURE_BATCH) {
     const chunk = list.slice(k, k + FEATURE_BATCH);
-    const res = await callClaude(featurePrompt(chunk.map(x => ({ id: x.i, reports: reportsForPrompt(x.reports).map(({ outlet, date, headline, summary }) => ({ outlet, date, headline, summary })) }))), "filter");
+    const res = await callClaude(featurePrompt(chunk.map(x => ({ id: x.i, reports: reportsForPrompt(x.reports).map(({ outlet, date, headline, summary }) => ({ outlet, date, headline, summary })) }))), "filter", level);
     for (const f of res || []) if (f && Number.isInteger(+f.id)) feats.set(+f.id, Object.fromEntries(FEATURE_KEYS.map(key => [key, f[key] === true])));
   }
   const planned = list.map(x => {
@@ -696,11 +734,13 @@ async function analyseStories(list, mode) {
     return { ...x, primary, complement, tier, features: Object.keys(f).filter(k => f[k]) };
   });
   const out = new Map();
-  for (let k = 0; k < planned.length; k += ANALYSIS_CHUNK) {
-    const chunk = planned.slice(k, k + ANALYSIS_CHUNK);
-    const res = await callClaude(analysisPrompt(chunk.map(x => ({ i: x.i, kind: x.kind, tier: x.tier, primary: x.primary, complement: x.complement, reports: reportsForPrompt(x.reports) })), mode), "analysis");
-    for (const r of res || []) { const x = chunk.find(c => c.i === +r?.id); if (x) out.set(x.i, { r, plan: x }); }
-  }
+  // Quick reads go to the cheaper model; standard and in-depth stories to Opus.
+  for (const [job, group] of [["analysis", planned.filter(x => x.tier !== "quick")], ["analysis_quick", planned.filter(x => x.tier === "quick")]])
+    for (let k = 0; k < group.length; k += ANALYSIS_CHUNK) {
+      const chunk = group.slice(k, k + ANALYSIS_CHUNK);
+      const res = await callClaude(analysisPrompt(chunk.map(x => ({ i: x.i, kind: x.kind, tier: x.tier, primary: x.primary, complement: x.complement, reports: reportsForPrompt(x.reports) })), mode), job, level);
+      for (const r of res || []) { const x = chunk.find(c => c.i === +r?.id); if (x) out.set(x.i, { r, plan: x }); }
+    }
   return out;
 }
 function applyAnalysis(ev, r, plan) {
@@ -713,17 +753,18 @@ async function reframeRecent(data, mode) {
   const kindOfEv = ev => (ev.reports || [])[0]?.kind || "hard";
   const eligible = ev => !["soft", "feature", "opinion"].includes(kindOfEv(ev));
   const stale = ev => ev.analysis?.v !== ANALYSIS_V || TIER_RANK[tierOf(ev)] > TIER_RANK[ev.analysis.tier];
-  const all = data.sectors.flatMap(sec => sec.items).filter(ev => eligible(ev) && stale(ev)).sort((a, b) => latest(b).localeCompare(latest(a)));
+  const cut = new Date(Date.now() - REFRAME_DAYS * 864e5).toISOString();
+  const all = data.sectors.flatMap(sec => sec.items).filter(ev => eligible(ev) && stale(ev) && latest(ev) >= cut).sort((a, b) => latest(b).localeCompare(latest(a)));
   const due = all.slice(0, REFRAME_LIMIT);
-  let done = 0, failed = 0;
+  let done = 0, failed = 0, stopped = false;
   for (let k = 0; k < due.length; k += ANALYSIS_CHUNK * 2) {
     const chunk = due.slice(k, k + ANALYSIS_CHUNK * 2);
     try {
-      const res = await analyseStories(chunk.map((ev, i) => ({ i, kind: kindOfEv(ev), reports: ev.reports || [], relevance: ev.relevance, prev: ev.analysis })), mode);
+      const res = await analyseStories(chunk.map((ev, i) => ({ i, kind: kindOfEv(ev), reports: ev.reports || [], relevance: ev.relevance, prev: ev.analysis })), mode, "extra");
       chunk.forEach((ev, i) => { const o = res.get(i); if (!o || o.r.relevant === false) return; applyAnalysis(ev, o.r, o.plan); done++; });
-    } catch (e) { console.error(`Framework batch failed: ${e.message}`); failed++; }
+    } catch (e) { if (e instanceof BudgetError) { stopped = true; break; } console.error(`Framework batch failed: ${e.message}`); failed++; }
   }
-  return { done, waiting: Math.max(0, all.length - done), failedBatches: failed };
+  return { done, waiting: Math.max(0, all.length - done), failedBatches: failed, ...(stopped ? { budgetStopped: true } : {}) };
 }
 
 // ---------- Statistics layer: official figures behind the story, each one checked against its source ----------
@@ -732,7 +773,9 @@ async function reframeRecent(data, mode) {
 // appears on an official page fetched (or quoted by a citation) in this answer; short numbers must also sit near
 // their year. A series needs at least 3 checked figures to be shown.
 const STATS_V = 2;              // v2: verify against fetched page text, not only the short citation snippets
-const STATS_LIMIT = 6;          // stories per desk per run that get a statistics search
+const STATS_LIMIT = 4;          // stories per desk per run that get statistics (searched or reused)
+const STATS_LIBRARY = "data/stats-library.json";   // every checked series found so far, shared by both desks
+const LIBRARY_MAX = 300, LIBRARY_FRESH_DAYS = 45;  // reused only while recent enough
 const STATS_MIN_POINTS = 3;
 const OFFICIAL_DOMAINS = [
   // India
@@ -783,12 +826,13 @@ async function callStats(prompt) {
     const messages = [{ role: "user", content: prompt }]; const out = []; let res, body;
     // A long search turn can come back as "pause_turn"; send it back so the model can finish (at most twice).
     for (let turn = 0; turn < 3; turn++) {
+      needBudget("stats", turn ? EST.stats / 2 : EST.stats);
       res = await fetch("https://api.anthropic.com/v1/messages", {
         method: "POST",
         headers: { "x-api-key": process.env.ANTHROPIC_API_KEY, "anthropic-version": "2023-06-01", "content-type": "application/json" },
         body: JSON.stringify({ model, max_tokens: 3000, messages, tools: [
-          { type: "web_search_20250305", name: "web_search", max_uses: 4, allowed_domains: OFFICIAL_DOMAINS },
-          { type: "web_fetch_20250910", name: "web_fetch", max_uses: 3, allowed_domains: OFFICIAL_DOMAINS, max_content_tokens: 15000 }
+          { type: "web_search_20250305", name: "web_search", max_uses: 3, allowed_domains: OFFICIAL_DOMAINS },
+          { type: "web_fetch_20250910", name: "web_fetch", max_uses: 2, allowed_domains: OFFICIAL_DOMAINS, max_content_tokens: 10000 }
         ] })
       });
       body = await res.json().catch(() => ({}));
@@ -797,6 +841,7 @@ async function callStats(prompt) {
       u.model = model; u.calls++; u.inputTokens += body.usage?.input_tokens || 0; u.outputTokens += body.usage?.output_tokens || 0;
       u.searches += body.usage?.server_tool_use?.web_search_requests || 0;
       u.fetches = (u.fetches || 0) + (body.usage?.server_tool_use?.web_fetch_requests || 0);
+      charge("stats", model, body.usage);
       out.push(...(body.content || []));
       if (body.stop_reason !== "pause_turn") break;
       messages.push({ role: "assistant", content: body.content });
@@ -887,26 +932,69 @@ function parseStats(content) {
   if (diag.said === "series" && !kept.length) diag.said = mixed ? "units did not match" : diag.kept ? "too few checked figures" : "no figure found on an official page";
   return { series: kept, diag };
 }
-// In-depth stories (and standard stories with high exposure) get one statistics search, newest first. Results are kept.
+// ---- Series library: a checked series found for one story is saved and offered to later stories on the same subject.
+// A cheap model decides whether a saved series directly measures the new story; only if none fits do we search.
+const seriesKey = x => (x.title + "|" + x.unit).toLowerCase().replace(/\s+/g, " ");
+async function loadLibrary() { return (await readJson(STATS_LIBRARY, { series: [] })).series || []; }
+async function saveLibrary(lib) { await fs.writeFile(STATS_LIBRARY, JSON.stringify({ updatedAt: new Date().toISOString(), series: lib.slice(0, LIBRARY_MAX) }, null, 1) + "\n"); }
+function addToLibrary(lib, series, ev, at = new Date().toISOString()) {
+  for (const x of series) {
+    const key = seriesKey(x), i = lib.findIndex(y => y.key === key);
+    const entry = { key, title: x.title, unit: x.unit, publisher: x.publisher, points: x.points, sources: x.sources, domains: x.domains, dropped: x.dropped || 0, at, firstFor: str(ev.headline, 100) };
+    if (i >= 0) lib.splice(i, 1);
+    lib.unshift(entry);
+  }
+}
+function reusePrompt(ev, options) {
+  return `A news story and a list of official statistical series already on file. Pick a series ONLY if it directly measures what this story is about (same country or flow, same subject); a loosely related series is not enough.
+
+STORY
+Headline: ${ev.headline}
+Bottom line: ${ev.why || ""}
+
+SERIES ON FILE
+${options.map((x, i) => `${i}. ${x.title} (${x.unit}; ${x.publisher})`).join("\n")}
+
+Return ONLY a JSON array with one object: [{"use":[<up to 2 numbers from the list>],"why":"one sentence without numbers on how the series relates to this story"}] or [{"use":[]}] if none fits.`;
+}
+async function reuseFromLibrary(ev, lib) {
+  const cut = new Date(Date.now() - LIBRARY_FRESH_DAYS * 864e5).toISOString();
+  const options = lib.filter(x => x.at >= cut).slice(0, 80);
+  if (!options.length) return null;
+  const res = await callClaude(reusePrompt(ev, options), "filter", "stats");
+  const pick = res?.[0]; const ids = arr(pick?.use, 2).map(Number).filter(i => Number.isInteger(i) && options[i]);
+  if (!ids.length) return null;
+  const why = typeof pick.why === "string" && noAdvice(pick.why) && !/\d{2,}/.test(pick.why) ? str(pick.why, 200) : "";
+  return ids.map(i => { const { key, at, firstFor, ...x } = options[i]; return { ...x, why, reused: true, checkedAt: at }; });
+}
+// In-depth stories (and standard stories with high exposure) get statistics once, newest first: a saved series if one
+// fits, otherwise a search. Results are kept with the story.
 async function addStatistics(data, mode) {
   const want = ev => ev.analysis?.v === 2 && (ev.analysis.tier === "deep" || (ev.analysis.tier === "standard" && ev.analysis.exposure?.level === "high"));
   const due = data.sectors.flatMap(sec => sec.items).filter(ev => want(ev) && ev.stats?.v !== STATS_V)
     .sort((a, b) => latest(b).localeCompare(latest(a))).slice(0, STATS_LIMIT);
-  let found = 0, none = 0, failed = 0, droppedPoints = 0, proposed = 0, pagesFetched = 0; const samples = [];
+  const lib = await loadLibrary(); let changed = false;
+  // First run with the library: seed it with the charts already on the desk.
+  for (const ev of data.sectors.flatMap(sec => sec.items)) if (ev.stats?.series?.length && !ev.stats.series.some(x => x.reused) && !ev.stats.series.every(x => lib.some(y => y.key === seriesKey(x)))) { addToLibrary(lib, ev.stats.series, ev, ev.stats.at); changed = true; }
+  let found = 0, reused = 0, none = 0, failed = 0, droppedPoints = 0, proposed = 0, pagesFetched = 0, stopped = false; const samples = [];
   for (const ev of due) {
-    if (failed >= 2 && !found && !none) break;   // search unavailable (e.g. disabled for the organisation): stop, retry next run
+    if (failed >= 2 && !found && !none && !reused) break;   // search unavailable (e.g. disabled for the organisation): stop, retry next run
     try {
+      const again = await reuseFromLibrary(ev, lib);
+      if (again) { ev.stats = { v: STATS_V, at: new Date().toISOString(), series: again }; reused++; samples.push({ headline: str(ev.headline, 80), result: "reused saved series" }); continue; }
       const { series, diag } = parseStats(await callStats(statsPrompt(ev, mode)));
       ev.stats = { v: STATS_V, at: new Date().toISOString(), series };
-      if (series.length) found++; else none++;
+      if (series.length) { found++; addToLibrary(lib, series, ev); } else none++;
       droppedPoints += diag.notFound; proposed += diag.proposed; pagesFetched += diag.pagesFetched;
       samples.push({ headline: str(ev.headline, 80), result: series.length ? "chart" : diag.said, proposed: diag.proposed, checked: diag.kept, pagesFetched: diag.pagesFetched });
-    } catch (e) { console.error(`Statistics for "${ev.headline}" failed: ${e.message}`); failed++; }
+    } catch (e) { if (e instanceof BudgetError) { stopped = true; break; } console.error(`Statistics for "${ev.headline}" failed: ${e.message}`); failed++; }
   }
-  return { searched: due.length, found, none, failed, proposed, droppedPoints, pagesFetched, samples };
+  if (found || changed) await saveLibrary(lib);
+  return { searched: due.length, found, reused, none, failed, proposed, droppedPoints, pagesFetched, samples, ...(stopped ? { budgetStopped: true } : {}) };
 }
 
-async function callClaude(prompt, job) {
+async function callClaude(prompt, job, level = "core") {
+  needBudget(level, EST[job] || 0.1);
   let lastErr;
   for (const model of MODELS[job]) {
     const res = await fetch("https://api.anthropic.com/v1/messages", {
@@ -916,12 +1004,13 @@ async function callClaude(prompt, job) {
         "anthropic-version": "2023-06-01",
         "content-type": "application/json"
       },
-      body: JSON.stringify({ model, max_tokens: job === "analysis" ? 8000 : 4000, messages: [{ role: "user", content: prompt }] })
+      body: JSON.stringify({ model, max_tokens: job.startsWith("analysis") ? 8000 : 4000, messages: [{ role: "user", content: prompt }] })
     });
     const body = await res.json().catch(() => ({}));
     if (res.ok) {
       const u = usage[job] ||= { model, calls: 0, inputTokens: 0, outputTokens: 0 };
       u.model = model; u.calls++; u.inputTokens += body.usage?.input_tokens || 0; u.outputTokens += body.usage?.output_tokens || 0;
+      charge(job, model, body.usage);
       const text = (body.content || []).filter(b => b.type === "text").map(b => b.text).join("");
       const i = text.indexOf("["), j = text.lastIndexOf("]");
       if (i < 0 || j < i) throw new Error("Claude reply had no JSON array");
@@ -939,12 +1028,17 @@ async function callClaude(prompt, job) {
 export async function main() {
   if (!process.env.ANTHROPIC_API_KEY) { console.error("ANTHROPIC_API_KEY secret is missing."); process.exit(1); }
   await fs.mkdir("data", { recursive: true });
+  await loadBudget();
+  console.log(`Budget: $${budget.spent.toFixed(2)} of $${DAILY_BUDGET} used today (${budget.day}, India time)`);
   let deskFailed = false;
-  for (const desk of DESKS) {
-    console.log(`\n=== ${desk.id} desk ===`);
-    const r = await runDesk(desk);
-    if (r.failures && !r.added && !r.merged && r.analysed) deskFailed = true;
-  }
+  try {
+    for (const desk of DESKS) {
+      console.log(`\n=== ${desk.id} desk ===`);
+      const r = await runDesk(desk);
+      if (r.failures && !r.added && !r.merged && r.analysed) deskFailed = true;
+      await saveBudget();
+    }
+  } finally { await saveBudget(); }
   if (deskFailed) process.exit(1); // surface a desk whose analysis failed entirely in the Actions tab
 }
 
@@ -999,8 +1093,12 @@ async function runDesk(desk) {
     if (!ev.image) { const r = (ev.reports || []).find(x => x.image); if (r) { ev.image = r.image; if (r.imageLarge) ev.imageLarge = r.imageLarge; backfilled++; } }
   }
   if (backfilled) console.log(`Added images to ${backfilled} existing stories`);
+  const freshCut = Date.now() - FRESH_HOURS * 36e5;
+  const stale = fetched.filter(it => it.date && Date.parse(it.date) < freshCut && !seen.has(it.url)).length;
+  if (stale) console.log(`${stale} headlines older than ${FRESH_HOURS} hours skipped`);
   const fresh = fetched
     .filter(it => !it.date || Date.parse(it.date) >= sinceMs)
+    .filter(it => !it.date || Date.parse(it.date) >= freshCut)
     .filter(it => !seen.has(it.url))
     .sort((a, b) => (b.date || "").localeCompare(a.date || ""))   // take the newest headlines first...
     .slice(0, MAX_NEW_PER_RUN[desk.id] || 150)
@@ -1009,15 +1107,17 @@ async function runDesk(desk) {
   console.log("Feed health: " + JSON.stringify(feedHealth));
 
   const rejected = data.schema === SCHEMA && seen.size ? await readJson(desk.rejected, []) : [];
-  let added = 0, merged = 0, failures = 0;
+  let added = 0, merged = 0, failures = 0, budgetStopped = false;
+  const runStart = budget ? budget.spent : 0;
   for (let k = 0; k < fresh.length; k += BATCH) {
     const batch = fresh.slice(k, k + BATCH);
+    if (budgetLeft("core") < 0.25) { budgetStopped = true; break; }   // left unseen: picked up by a later run if still fresh
     const cutoff = Date.now() - MATCH_WINDOW_DAYS * 864e5;
     const recent = allEvents().filter(e => !e.date || Date.parse(e.date) >= cutoff).slice(0, 80);
     // Step 1: the fast model keeps or rejects each headline and spots follow-ups to known stories.
     let verdicts;
     try { verdicts = await callClaude(filterPrompt(batch, recent, desk.mode), "filter"); }
-    catch (e) { console.error(`Filter batch failed: ${e.message}`); failures++; continue; } // not marked seen: retried next run
+    catch (e) { if (e instanceof BudgetError) { budgetStopped = true; break; } console.error(`Filter batch failed: ${e.message}`); failures++; continue; } // not marked seen: retried next run
     const byId = new Map();
     for (const v of verdicts || []) if (v && Number.isInteger(+v.id) && batch[+v.id]) byId.set(+v.id, v);
     const isFollowUp = (i, v) => {
@@ -1035,7 +1135,7 @@ async function runDesk(desk) {
     const analysis = new Map();
     if (toAnalyse.length) {
       try { for (const [id, o] of await analyseStories(toAnalyse, desk.mode)) analysis.set(id, o); }
-      catch (e) { console.error(`Analysis batch failed: ${e.message}`); failures++; continue; } // whole batch retried next run
+      catch (e) { if (e instanceof BudgetError) { budgetStopped = true; break; } console.error(`Analysis batch failed: ${e.message}`); failures++; continue; } // whole batch retried next run
     }
     const reject = (s, reason, kind) => rejected.unshift({ source: s.src, headline: s.headline, url: s.url, date: s.date, ...(kind ? { kind } : {}),
       reason: typeof reason === "string" ? reason.slice(0, 160) : "", checkedAt: new Date().toISOString() });
@@ -1074,11 +1174,11 @@ async function runDesk(desk) {
     batch.forEach(s => seen.add(s.url));
   }
 
+  const stats = await addStatistics(data, desk.mode);     // statistics come before catch-up work
   const kinds = await classifyOlder(data);
   const frames = await reframeRecent(data, desk.mode);
-  const stats = await addStatistics(data, desk.mode);
-  if (stats.searched) console.log(`Statistics: ${stats.searched} stories searched, ${stats.found} with charts, ${stats.none} without, ${stats.failed} failed; ${stats.proposed} figures proposed, ${stats.droppedPoints} not found on an official page, ${stats.pagesFetched} official pages fetched`);
-  for (const x of stats.samples || []) console.log(`  · ${x.result}: ${x.headline} (${x.checked}/${x.proposed} figures checked, ${x.pagesFetched} pages)`);
+  if (stats.searched) console.log(`Statistics: ${stats.searched} stories due, ${stats.found} new charts, ${stats.reused} reused saved series, ${stats.none} without, ${stats.failed} failed; ${stats.proposed} figures proposed, ${stats.droppedPoints} not found on an official page, ${stats.pagesFetched} official pages fetched`);
+  for (const x of stats.samples || []) console.log(`  · ${x.result}: ${x.headline}` + (x.proposed !== undefined ? ` (${x.checked}/${x.proposed} figures checked, ${x.pagesFetched} pages)` : ""));
   if (frames.done || frames.failedBatches) console.log(`Framework analysis: ${frames.done} existing stories re-analysed, ${frames.waiting} still waiting`);
   if (kinds.labelled || kinds.waiting) console.log(`Report kinds: ${kinds.labelled} older reports labelled, ${kinds.waiting} waiting`);
   const og = await fillShareImages(data);
@@ -1119,12 +1219,14 @@ async function runDesk(desk) {
   for (const s of data.sectors) s.items = s.items.filter(i => { const t = Date.parse(latest(i)); return isNaN(t) || t >= recentCut; }).map(({ sector, ...rest }) => rest);
   data.recentDays = RECENT_DAYS;
   data.updatedAt = new Date().toISOString();
-  data.lastRun = { analysed: fresh.length, added, merged, rejected: fresh.length && !failures ? fresh.length - added - merged : undefined, failedBatches: failures, feeds: feedHealth, shareImages: og, threads: th, summaries: sm, kinds, frames, stats, models: usage };
+  data.lastRun = { analysed: fresh.length, added, merged, rejected: fresh.length && !failures && !budgetStopped ? fresh.length - added - merged : undefined, failedBatches: failures, feeds: feedHealth, shareImages: og, threads: th, summaries: sm, kinds, frames, stats, models: usage,
+    spend: budget ? { thisDesk: Math.round((budget.spent - runStart) * 1e4) / 1e4, today: Math.round(budget.spent * 1e4) / 1e4, cap: DAILY_BUDGET, ...(budgetStopped ? { stopped: true } : {}) } : undefined };
 
   await fs.writeFile(desk.data, JSON.stringify(data, null, 2) + "\n");
   await fs.writeFile(desk.seen, JSON.stringify([...seen].slice(-MAX_SEEN)) + "\n");
   await fs.writeFile(desk.rejected, JSON.stringify(rejected.slice(0, MAX_REJECTED), null, 2) + "\n");
   console.log(`Added ${added} new events, merged ${merged} reports into existing events. Failed batches: ${failures}.`);
+  if (budget) console.log(`Spend: this desk $${(budget.spent - runStart).toFixed(2)}; today $${budget.spent.toFixed(2)} of $${DAILY_BUDGET}${budgetStopped ? " — daily budget reached, remaining headlines wait for a later run" : ""}`);
   return { added, merged, failures, analysed: fresh.length };
 }
 function latest(e) { return (e.reports || []).map(r => r.date || "").sort().pop() || e.date || ""; }
