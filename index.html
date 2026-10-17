@@ -7,7 +7,9 @@
 <title>The Continent Connect</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,500;1,700&display=swap" rel="stylesheet">
+<!-- Masthead font loads without holding up the page; the page shows in Georgia until it arrives -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,500;1,700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,500;1,700&display=swap" rel="stylesheet"></noscript>
 <meta name="description" content="Two views of India's news: how world events from thirteen outlets on six continents reach India, and the developments inside India from The Hindu and Mint, sorted by sector with what each could mean.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛰️</text></svg>">
 <script>
@@ -1127,10 +1129,18 @@ function renderAudit(list){
   box.hidden=!(list&&list.length);
 }
 
+/* Each source gets a time limit: if GitHub's raw-file server is slow or blocked on the reader's network, the page
+   switches to the site's own published copy after a few seconds instead of waiting forever. */
+var LOAD_LIMITS=[5000,20000];
+function fetchJson(u,ms){
+  var ctl=window.AbortController ? new AbortController() : null, timer;
+  var timeout=new Promise(function(_,no){ timer=setTimeout(function(){ if(ctl) ctl.abort(); no(new Error("timeout")); }, ms); });
+  var get=fetch(u+"?t="+Date.now(),{cache:"no-store",signal:ctl?ctl.signal:undefined}).then(function(r){ if(!r.ok) throw new Error(String(r.status)); return r.json(); });
+  return Promise.race([get,timeout]).then(function(j){ clearTimeout(timer); return j; },function(e){ clearTimeout(timer); throw e; });
+}
 function loadFrom(urls,i){
   i=i||0; if(i>=urls.length) return Promise.reject(new Error("unavailable"));
-  return fetch(urls[i]+"?t="+Date.now(),{cache:"no-store"}).then(function(r){ if(!r.ok) throw new Error(String(r.status)); return r.json(); })
-    .catch(function(){ return loadFrom(urls,i+1); });
+  return fetchJson(urls[i], LOAD_LIMITS[Math.min(i,LOAD_LIMITS.length-1)]).catch(function(){ return loadFrom(urls,i+1); });
 }
 function mergeArchive(doc, events){
   var out=JSON.parse(JSON.stringify(doc)), have={};
