@@ -20,7 +20,7 @@
 </script>
 <style>
 :root{
-  --bg:#FFFFFF; --bg-2:#F5F5F7; --card:#FFFFFF; --ink:#1D1D1F; --ink-2:#424245; --ink-3:#6E6E73; --rule:#E3E3E8;
+  --bg:#F5F2EB; --bg-2:#ECE8DF; --card:#FFFFFF; --ink:#1D1D1F; --ink-2:#424245; --ink-3:#6E6E73; --rule:#E3E3E8;
   --accent:#D9480F; --ok:#1A7F5A; --shadow:0 1px 2px rgba(0,0,0,.04),0 6px 18px rgba(0,0,0,.06);
   --s-energy:#C2410C; --s-logistics:#0E7490; --s-economy:#4338CA; --s-technology:#7C3AED;
   --s-manufacturing:#B45309; --s-environment:#15803D; --s-agriculture:#65A30D; --s-governance:#BE123C;
@@ -243,15 +243,6 @@ h1{font:800 clamp(34px,5vw,46px)/1 var(--sans);letter-spacing:-.025em;margin:0}
 .disc::before{content:"* ";font-weight:700}
 footer .disc{display:block;margin:0 0 4px}
 /* Kind of report filter */
-.kinds-key .kf{all:unset;cursor:pointer;display:inline-flex;align-items:center;gap:6px;border-radius:999px;padding:2px;transition:opacity .15s}
-.kinds-key .kf .ct{font:600 11.5px/1 var(--sans);color:var(--ink-3)}
-.kinds-key .kf:hover .kind{filter:brightness(1.08)}
-.kinds-key .kf:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
-.kinds-key .kf[aria-pressed="true"] .kind{box-shadow:0 0 0 2px var(--bg),0 0 0 4px var(--k)}
-.kinds-key.filtering .kf[aria-pressed="false"]{opacity:.45}
-.kinds-key .kclear{all:unset;cursor:pointer;font:600 12px/1 var(--sans);color:var(--accent);margin-left:4px}
-.kinds-key .kclear:hover{text-decoration:underline}
-.kinds-key .kclear:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
 .kinds-key{display:flex;flex-wrap:wrap;align-items:center;gap:4px 6px;margin:-4px 0 14px}
 .kinds-key .lbl{font-size:12px;color:var(--ink-3);margin-right:2px}
 .read .kind{margin-left:6px;vertical-align:1px}
@@ -538,31 +529,80 @@ dialog::backdrop{background:rgba(15,15,20,.28);backdrop-filter:blur(10px) satura
 .audit a:hover{text-decoration:underline}
 .audit .why{display:block;margin-top:2px;color:var(--ink-3)}
 footer{margin-top:28px;font-size:12.5px;color:var(--ink-3);line-height:1.6;width:100%}
+/* ---------- Masthead and controls (v32) ---------- */
+.mh{text-align:center;padding:10px 0 16px;border-bottom:3px solid var(--ink-2);margin:0}
+.mh-kicker{margin:0 0 6px;font:700 12px/1 var(--sans);letter-spacing:.24em;text-transform:uppercase;color:var(--ink-3)}
+.mh-brand{margin:0;font:800 clamp(38px,5.6vw,72px)/1.04 "Playfair Display",Georgia,"Times New Roman",serif;letter-spacing:-.01em;color:var(--ink)}
+.mh-brand a{color:inherit;text-decoration:none;border-radius:8px}
+.mh-brand a:hover{opacity:.88}
+.mh-brand em{font-style:italic;font-weight:700;color:var(--accent)}
+.mh-meta{margin:12px 0 0;font-size:14px;color:var(--ink-3);display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+.mh-meta .sep{opacity:.6}
+.mh-meta #status.stale{color:var(--warn)}
+.ctl{border-bottom:1px solid var(--rule);margin:0 0 22px}
+.ctl-row{display:flex;align-items:center;gap:12px;padding:14px 0 0}
+.ctl-row #themeBtn{margin-left:auto}
+.ctl-filters{justify-content:space-between;flex-wrap:wrap;padding:14px 0 16px;gap:12px 20px}
+.seg{display:inline-flex;border:1px solid var(--rule);border-radius:999px;background:var(--card);padding:0;overflow:hidden}
+.seg button{all:unset;cursor:pointer;font:600 14px/1 var(--sans);padding:10px 16px;color:var(--ink-2);border-radius:999px}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.seg button:focus-visible,.pill:focus-visible,.pillbtn:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.pillbtn{all:unset;cursor:pointer;font:600 14px/1 var(--sans);padding:10px 16px;border:1px solid var(--rule);border-radius:999px;background:var(--card);color:var(--ink)}
+.pillbtn:hover{border-color:var(--ink-3)}
+.pill{all:unset;cursor:pointer;font:500 14px/1 var(--sans);padding:9px 15px;border:1px solid var(--rule);border-radius:999px;background:var(--card);color:var(--ink-2);white-space:nowrap}
+.pill:hover{border-color:var(--ink-3);color:var(--ink)}
+.pill[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--bg);font-weight:600}
+.kinds-key{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:0}
+.kinds-key .lbl{font:700 12px/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);margin-right:6px}
+.ranges{display:flex;gap:8px;flex-wrap:wrap}
+.toolbar{margin:0 0 16px}
+#menuBtn{display:none}
+@media (max-width:900px){ #menuBtn{display:inline-flex;width:40px;height:40px} }
+.seg button,.pillbtn,.pill{white-space:nowrap}
+@media (max-width:600px){
+  .ctl-row{gap:8px} .seg button,.pillbtn{padding:9px 11px;font-size:13px}
+  .pill{padding:7px 11px;font-size:13px}
+  .ctl-filters{flex-direction:column;align-items:stretch;gap:10px}
+  .kinds-key{gap:6px}
+  .kinds-key .lbl{flex-basis:100%;margin:0 0 2px}
+}
+@media (max-width:380px){ .seg button,.pillbtn{padding:8px 9px;font-size:12.5px} }
+/* v33: view switch and theme button sit in the masthead, above the rule */
+.mh{display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"left right" "center center";align-items:center;gap:6px 20px}
+.mh-left{grid-area:left;justify-self:start;display:flex;align-items:center;gap:10px}
+.mh-right{grid-area:right;justify-self:end}
+.mh-center{grid-area:center;text-align:center;min-width:0}
+@media (max-width:600px){ .mh-left{gap:8px} }
 </style>
 </head>
 <body data-rail="left">
 <div class="wrap">
-  <header class="mast">
-    <div class="mast-left">
+  <header class="mh">
+    <div class="mh-left">
       <button class="iconbtn" id="menuBtn" type="button" aria-label="Open sectors menu" aria-controls="side" aria-expanded="false">☰</button>
-      <div class="picker">
-        <button class="iconbtn" id="viewBtn" type="button" aria-haspopup="menu" aria-expanded="false" aria-controls="viewMenu"><span id="viewLabel">🌍 Global impact</span><span class="chev">▾</span></button>
-        <ul class="menu" id="viewMenu" role="menu" hidden>
-          <li role="none"><button role="menuitemradio" data-view="global" type="button"><span class="mt">🌍 Global impact</span><span class="md">How world news reaches India</span></button></li>
-          <li role="none"><button role="menuitemradio" data-view="domestic" type="button"><span class="mt">🇮🇳 Inside India</span><span class="md">Developments shaping India</span></button></li>
-        </ul>
+      <div class="seg" role="group" aria-label="View">
+        <button type="button" data-view="global" aria-pressed="true">Global impact</button>
+        <button type="button" data-view="domestic" aria-pressed="false">Inside India</button>
       </div>
     </div>
-    <div class="mast-center">
-      <p class="date" id="today"></p>
-      <h1 class="brand"><a href="./" id="brandLink" title="Refresh The Continent Connect"><span class="the">The</span> Continent <em>Connect</em></a></h1>
-      <p class="sub" id="sub">How today's world news reaches India.</p>
+    <div class="mh-center">
+      <p class="mh-kicker" id="sub">News that reaches India</p>
+      <h1 class="mh-brand"><a href="./" id="brandLink" title="Refresh The Continent Connect">The Continent <em>Connect</em></a></h1>
+      <p class="mh-meta"><span id="today"></span><span class="sep" aria-hidden="true">·</span><span id="status" aria-live="polite"></span></p>
     </div>
-    <div class="mast-right">
-      <button class="iconbtn themebtn" id="themeBtn" type="button" aria-label="Switch to dark theme" title="Switch to dark theme"></button>
-      <div class="status" id="status" aria-live="polite"></div>
-    </div>
+    <div class="mh-right"><button class="pillbtn" id="themeBtn" type="button">Dark mode</button></div>
   </header>
+  <div class="ctl">
+    <div class="ctl-row ctl-filters">
+      <div class="kinds-key" id="kindsKey" role="group" aria-label="Kind of report"></div>
+      <div class="ranges" id="rangeBtns" role="group" aria-label="How recent">
+        <button type="button" data-range="1" class="pill">24h</button><button type="button" data-range="3" class="pill">3 days</button><button type="button" data-range="7" class="pill">7 days</button><button type="button" data-range="0" class="pill">All</button>
+      </div>
+      <select id="range" aria-hidden="true" tabindex="-1" hidden>
+        <option value="1">Last 24 hours</option><option value="3">Last 3 days</option><option value="7">Last 7 days</option><option value="0">All stories</option>
+      </select>
+    </div>
+  </div>
 
   <div class="layout" id="layout">
     <aside class="side" id="side" aria-label="Sectors">
@@ -575,16 +615,7 @@ footer{margin-top:28px;font-size:12.5px;color:var(--ink-3);line-height:1.6;width
     <div>
       <div class="toolbar">
         <h2 id="sectionTitle">Top Stories</h2>
-        <label class="range">Show
-          <select id="range" aria-label="How recent">
-            <option value="1">Last 24 hours</option>
-            <option value="3">Last 3 days</option>
-            <option value="7">Last 7 days</option>
-            <option value="0">All stories</option>
-          </select>
-        </label>
       </div>
-      <div class="kinds-key" id="kindsKey" aria-label="Colours used for the kind of report"></div>
       <main id="main" aria-live="polite"><div class="state">Loading today's stories…</div></main>
     </div>
   </div>
@@ -622,8 +653,8 @@ var SHOW_IMAGES=true;
 // Sector artwork for stories without a photo. Off: such stories show the text-only card instead.
 var SECTOR_ART=false;
 var VIEWS={
-  global:  {data:"india.json",          rejected:"rejected.json",          threads:"threads-global.json",   archive:"archive/global/",          sub:"How today's world news reaches India.",   why:"Why it reaches India", means:"What it means for India", seen:"ie.seen.v1"},
-  domestic:{data:"india-domestic.json", rejected:"rejected-domestic.json", threads:"threads-domestic.json", archive:"archive/domestic/", sub:"The developments shaping India today.",    why:"Why it matters",       means:"What it means",           seen:"ie.seen.domestic.v1"}
+  global:  {data:"india.json",          rejected:"rejected.json",          threads:"threads-global.json",   archive:"archive/global/",          sub:"News that reaches India",   why:"Why it reaches India", means:"What it means for India", seen:"ie.seen.v1"},
+  domestic:{data:"india-domestic.json", rejected:"rejected-domestic.json", threads:"threads-domestic.json", archive:"archive/domestic/", sub:"The developments shaping India",    why:"Why it matters",       means:"What it means",           seen:"ie.seen.domestic.v1"}
 };
 var view = location.hash==="#inside" ? "domestic" : "global";
 var docs={}, rejectedByView={}, lastUpdatedByView={}, threadsByView={}, archiveByView={};
@@ -645,7 +676,7 @@ function reportsOf(it){ return (it.reports&&it.reports.length)?it.reports:[{sour
 function outletsOf(it){ var o=[]; reportsOf(it).forEach(function(r){ if(o.indexOf(r.source)<0) o.push(r.source); }); return o; }
 function latestDate(it){ var ds=reportsOf(it).map(function(r){return r.date||"";}).concat([it.date||""]).sort(); return ds[ds.length-1]||""; }
 
-$("today").textContent=new Date().toLocaleDateString([], {weekday:"long", day:"numeric", month:"long"});
+(function(){ var d=new Date(); $("today").textContent=d.toLocaleDateString("en-GB",{weekday:"long"})+", "+d.getDate()+" "+d.toLocaleDateString("en-GB",{month:"long"})+" "+d.getFullYear(); })();
 
 var seenBefore={}, firstVisit=true, current=null, tab="all", showAll=false, events=[];
 function loadSeen(){ seenBefore={}; firstVisit=true; try{ var raw=localStorage.getItem(VIEWS[view].seen); if(raw){ seenBefore=JSON.parse(raw)||{}; firstVisit=false; } }catch(e){} }
@@ -953,13 +984,10 @@ function card(e, big){
 }
 
 function renderStatus(doc){
-  var s=$("status"); s.textContent="";
-  var fresh=Date.now()-Date.parse(doc.updatedAt) < 3*36e5;
-  var a=el("div"); a.appendChild(el("span","dot"+(fresh?"":" stale"))); a.appendChild(document.createTextNode("Updated ")); a.appendChild(el("b",null,ago(doc.updatedAt)||"recently")); s.appendChild(a);
+  var s=$("status"); s.textContent="Updated "+(ago(doc.updatedAt)||"recently");
   var src=doc.sources||[], regs=[]; src.forEach(function(x){ if(x.region && regs.indexOf(x.region)<0) regs.push(x.region); });
-  var line=el("div",null, !src.length ? (doc.source||"") : view==="global" ? src.length+" outlets across "+regs.length+" continents" : src.map(function(x){return x.name;}).join(" & "));
-  line.title=src.map(function(x){return x.name+(x.region?" ("+x.region+")":"");}).join(", ");
-  s.appendChild(line);
+  s.title=(view==="global" && src.length ? src.length+" outlets across "+regs.length+" continents: " : "")+src.map(function(x){return x.name;}).join(", ");
+  s.classList.toggle("stale", Date.now()-Date.parse(doc.updatedAt) >= 6*36e5);
 }
 /* Theme toggle: moon in light mode, sun in dark mode; remembered per visitor. */
 (function(){
@@ -967,7 +995,7 @@ function renderStatus(doc){
   var MOON='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>';
   var SUN='<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>';
   function paint(){ var dark=document.documentElement.getAttribute("data-theme")==="dark", next=dark?"light":"dark";
-    b.innerHTML=dark?SUN:MOON; b.setAttribute("aria-label","Switch to "+next+" theme"); b.title="Switch to "+next+" theme"; }
+    b.textContent=dark?"Light mode":"Dark mode"; b.setAttribute("aria-label","Switch to "+next+" theme"); b.title="Switch to "+next+" theme"; }
   b.addEventListener("click",function(){ var t=document.documentElement.getAttribute("data-theme")==="dark"?"light":"dark";
     document.documentElement.setAttribute("data-theme",t); try{ localStorage.setItem("tcc.theme",t); }catch(e){} paint(); });
   // Follow the device setting until the visitor picks a theme.
@@ -979,17 +1007,15 @@ function renderStatus(doc){
 /* Kind of report: each chip filters the page to that kind; click it again (or "Show all") to clear. */
 var kindFilter=null, KIND_ORDER=["hard","breaking","investigative","soft","feature"];
 function renderKindsKey(){
-  var key=$("kindsKey"); if(!key) return; key.textContent=""; key.classList.toggle("filtering",!!kindFilter);
+  var key=$("kindsKey"); if(!key) return; key.textContent="";
   key.appendChild(el("span","lbl","Kind of report"));
   var counts={}; allEvents.filter(function(e){ return inRange(e.it); }).forEach(function(e){ var k=kindOf(e.it); if(k) counts[k]=(counts[k]||0)+1; });
-  KIND_ORDER.forEach(function(k){
-    var b=el("button","kf"); b.type="button"; b.setAttribute("aria-pressed",String(kindFilter===k));
-    b.title=kindFilter===k ? "Show all kinds" : "Show only "+KIND_LABEL[k].toLowerCase();
-    b.appendChild(kindChip(k)); b.appendChild(el("span","ct",String(counts[k]||0)));
-    b.addEventListener("click",function(){ kindFilter = kindFilter===k ? null : k; showAll=false; render(current); });
+  [null].concat(KIND_ORDER).forEach(function(k){
+    var b=el("button","pill kf",k?KIND_LABEL[k]:"All kinds"); b.type="button"; b.setAttribute("aria-pressed",String(kindFilter===k));
+    if(k){ b.title=(counts[k]||0)+" "+KIND_LABEL[k].toLowerCase()+" "+((counts[k]||0)===1?"story":"stories"); b.style.setProperty("--k","var(--k-"+k+")"); }
+    b.addEventListener("click",function(){ if(kindFilter===k) return; kindFilter=k; showAll=false; render(current); });
     key.appendChild(b);
   });
-  if(kindFilter){ var c=el("button","kclear","Show all"); c.type="button"; c.addEventListener("click",function(){ kindFilter=null; render(current); }); key.appendChild(c); }
 }
 
 var ICONS={
@@ -1035,7 +1061,7 @@ function render(doc){
   }
   if(allEvents.length && !events.length){
     var st=el("div","state"); st.appendChild(document.createTextNode("No stories in "+(RANGE_TEXT[range]||"this range")+". "));
-    var all=el("button","more","Show all stories"); all.type="button"; all.style.marginTop="12px"; all.addEventListener("click",function(){ range=0; $("range").value="0"; try{localStorage.setItem(RANGE_KEY,"0");}catch(e){} loadArchive(view).then(function(){ show(view); }).catch(function(){ show(view); }); });
+    var all=el("button","more","Show all stories"); all.type="button"; all.style.marginTop="12px"; all.addEventListener("click",function(){ range=0; $("range").value="0"; try{localStorage.setItem(RANGE_KEY,"0");}catch(e){} paintRange(); loadArchive(view).then(function(){ show(view); }).catch(function(){ show(view); }); });
     st.appendChild(el("br")); st.appendChild(all); main.appendChild(st); return;
   }
   if(!allEvents.length){ main.appendChild(el("div","state", view==="global" ? "No India-relevant stories yet. The desk checks its outlets throughout the day, and new stories will appear here automatically." : "No stories of national significance yet. The desk checks The Hindu and Mint throughout the day, and new stories will appear here automatically.")); return; }
@@ -1160,8 +1186,7 @@ function docFor(v){
 function show(v){ var d=docFor(v); if(d){ render(d); remember(); } }
 function setView(v, push){
   view=v; tab="all"; showAll=false;
-  $("viewLabel").textContent = v==="global" ? "🌍 Global impact" : "🇮🇳 Inside India";
-  Array.prototype.forEach.call($("viewMenu").querySelectorAll("button"),function(b){ b.setAttribute("aria-checked", b.getAttribute("data-view")===v?"true":"false"); });
+  Array.prototype.forEach.call(document.querySelectorAll(".seg [data-view]"),function(b){ b.setAttribute("aria-pressed", b.getAttribute("data-view")===v?"true":"false"); });
   $("sub").textContent=VIEWS[v].sub;
   document.title=(v==="global"?"Global impact":"Inside India")+" · The Continent Connect";
   if(push) history.replaceState(null,"", v==="domestic" ? "#inside" : location.pathname+location.search);
@@ -1178,22 +1203,11 @@ $("brandLink").addEventListener("click",function(ev){
 });
 $("brandLink").setAttribute("href", location.pathname + location.search + (view==="domestic" ? "#inside" : ""));
 
-/* View picker menu */
-var vb=$("viewBtn"), vm=$("viewMenu"), vItems=vm.querySelectorAll("button");
-function closeMenu(){ vm.hidden=true; vb.setAttribute("aria-expanded","false"); }
-vb.addEventListener("click",function(ev){
-  ev.stopPropagation(); var opening=vm.hidden; vm.hidden=!opening; vb.setAttribute("aria-expanded",opening?"true":"false");
-  if(opening){ (vm.querySelector('[aria-checked="true"]')||vItems[0]).focus(); }
+/* View switch (Global impact / Inside India) */
+Array.prototype.forEach.call(document.querySelectorAll(".seg [data-view]"),function(b){
+  b.addEventListener("click",function(){ var v=b.getAttribute("data-view"); if(view!==v) setView(v,true); });
 });
-Array.prototype.forEach.call(vItems,function(b,i){
-  b.addEventListener("click",function(){ closeMenu(); vb.focus(); var v=b.getAttribute("data-view"); if(view!==v) setView(v,true); });
-  b.addEventListener("keydown",function(ev){
-    if(ev.key==="ArrowDown"){ ev.preventDefault(); vItems[(i+1)%vItems.length].focus(); }
-    if(ev.key==="ArrowUp"){ ev.preventDefault(); vItems[(i-1+vItems.length)%vItems.length].focus(); }
-  });
-});
-document.addEventListener("click",function(ev){ if(!vm.hidden && !vm.contains(ev.target) && !vb.contains(ev.target)) closeMenu(); });
-document.addEventListener("keydown",function(ev){ if(ev.key==="Escape"){ if(!vm.hidden){ closeMenu(); vb.focus(); } if($("side").classList.contains("open")){ closeDrawer(); $("menuBtn").focus(); } } });
+document.addEventListener("keydown",function(ev){ if(ev.key==="Escape" && $("side").classList.contains("open")){ closeDrawer(); $("menuBtn").focus(); } });
 
 /* Sidebar: collapsible on desktop, drawer on phones */
 var COLL_KEY="tcc.sideCollapsed";
@@ -1212,9 +1226,15 @@ $("menuBtn").addEventListener("click",function(){ $("side").classList.contains("
 $("scrim").addEventListener("click",closeDrawer);
 window.addEventListener("resize",function(){ if(!isPhone()) closeDrawer(); });
 
+/* How-recent filter: pill buttons drive the (hidden) select */
+function paintRange(){ Array.prototype.forEach.call(document.querySelectorAll("#rangeBtns [data-range]"),function(b){ b.setAttribute("aria-pressed", String(+b.getAttribute("data-range")===range)); }); }
+Array.prototype.forEach.call(document.querySelectorAll("#rangeBtns [data-range]"),function(b){
+  b.addEventListener("click",function(){ var r=b.getAttribute("data-range"); if(+r===range) return; $("range").value=r; $("range").dispatchEvent(new Event("change")); });
+});
+paintRange();
 /* How-recent filter */
 $("range").addEventListener("change",function(){
-  range=+this.value; try{ localStorage.setItem(RANGE_KEY,String(range)); }catch(e){} showAll=false;
+  range=+this.value; try{ localStorage.setItem(RANGE_KEY,String(range)); }catch(e){} showAll=false; paintRange();
   if(range===0){ loadArchive(view).then(function(){ show(view); }).catch(function(){ show(view); }); } else show(view);
 });
 function refresh(){
