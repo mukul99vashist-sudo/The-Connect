@@ -1044,7 +1044,9 @@ function render(doc){
 
   var lead=null;
   if(tab==="all"){
-    lead=events.slice().sort(function(a,b){ return score(b)-score(a) || String(latestDate(b.it)).localeCompare(String(latestDate(a.it))); })[0];
+    // The top story must be recent: only stories with a report in the last 48 hours compete (all stories if none are that fresh).
+    var recent=events.filter(function(e){ var t=Date.parse(latestDate(e.it)); return !isNaN(t) && Date.now()-t <= 48*36e5; });
+    lead=(recent.length?recent:events).slice().sort(function(a,b){ return score(b)-score(a) || String(latestDate(b.it)).localeCompare(String(latestDate(a.it))); })[0];
     var top=el("section","top"); top.setAttribute("aria-label","Top story"); top.appendChild(card(lead,true)); main.appendChild(top);
     list=list.filter(function(e){return e!==lead;});
   }
