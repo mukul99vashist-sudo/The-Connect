@@ -737,6 +737,50 @@ footer{margin-top:28px;font-size:12.5px;color:var(--ink-3);line-height:1.6;width
 @media (max-width:640px){ .mz>.nc .thumb{flex:none!important;aspect-ratio:16/9!important} }
 .fw-basis{margin:8px 0 0;font-size:12.5px;color:var(--ink-3);line-height:1.45}
 .fw-basis b{color:var(--ink-2);font-weight:600}
+/* v42: saved stories */
+.mz>.nc{position:relative}
+.savebtn{all:unset;box-sizing:border-box;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:6px}
+.savebtn svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;stroke-linejoin:round}
+.savebtn.on svg{fill:currentColor}
+.mz>.nc>.savebtn{position:absolute;top:10px;right:10px;z-index:3;width:34px;height:34px;border-radius:50%;background:color-mix(in srgb,var(--card) 88%,transparent);color:var(--ink);box-shadow:0 1px 4px rgba(0,0,0,.18);opacity:.92}
+.mz>.nc>.savebtn:hover{opacity:1}
+.mz>.nc>.savebtn.on{color:var(--accent);opacity:1}
+.savebtn:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sheet-actions{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.savebtn.withtext{padding:8px 14px;border:1px solid var(--rule);border-radius:999px;font:600 14px/1 var(--sans);color:var(--ink);background:var(--card)}
+.savebtn.withtext.on{color:var(--accent);border-color:var(--accent)}
+/* v43: dates to watch */
+.cal-row{display:flex;gap:14px;padding:14px 0;border-top:1px solid var(--rule)}
+.cal-block .cal-row:first-of-type{border-top:0;padding-top:4px}
+.cal-date{flex:none;width:58px;border:1px solid var(--tile-line);border-radius:10px;text-align:center;padding:6px 0 7px;background:var(--card);display:flex;flex-direction:column;align-self:flex-start}
+.cal-date .cd-mon{font:700 10.5px/1 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.cal-date .cd-day{font:700 24px/1.1 var(--serif,Georgia),serif;color:var(--ink);margin-top:3px}
+.cal-date .cd-wd{font:600 11px/1 var(--sans);color:var(--ink-3);margin-top:2px}
+.cal-main{min-width:0;flex:1}
+.cal-title{display:block;font:700 16px/1.3 var(--sans);color:var(--ink)}
+.cal-meta{margin:3px 0 0;font-size:12.5px;color:var(--ink-3)}
+.cal-meta a{color:var(--ink-3);text-decoration:underline;text-underline-offset:2px}
+.cal-why{margin:6px 0 0;font-size:14px;line-height:1.45;color:var(--ink-2)}
+.cal-because{margin:4px 0 0;font-size:12px;color:var(--ink-3);font-style:italic}
+.cal-stories{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-top:8px;font-size:12px;color:var(--ink-3)}
+.cal-story{all:unset;cursor:pointer;font:600 12.5px/1.3 var(--sans);color:var(--ink);background:var(--bg-2);border-radius:8px;padding:5px 9px;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.cal-story:hover{text-decoration:underline}
+.cal-add{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.cal-btn{all:unset;box-sizing:border-box;cursor:pointer;display:inline-flex;align-items:center;gap:6px;padding:7px 12px;border:1px solid var(--rule);border-radius:999px;font:600 12.5px/1 var(--sans);color:var(--ink);background:var(--card)}
+.cal-btn:hover{border-color:var(--ink-3)}
+.cal-btn:focus-visible,.cal-story:focus-visible,.cal-more:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.cal-btn svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
+.cal-btn.primary{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.cal-more{all:unset;cursor:pointer;display:inline-block;margin-top:10px;font:600 13.5px/1.2 var(--sans);color:var(--accent)}
+.cal-sub{border:1px solid var(--tile-line);border-radius:14px;padding:18px 20px;background:var(--card);display:grid;gap:12px;margin-bottom:8px}
+.cal-sub-txt b{font:700 17px/1.3 var(--sans);color:var(--ink)}
+.cal-sub-txt p{margin:4px 0 0;font-size:14px;color:var(--ink-2)}
+.cal-sub-ctl{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.cal-sel{font:600 13px/1 var(--sans);padding:8px 10px;border:1px solid var(--rule);border-radius:10px;background:var(--card);color:var(--ink)}
+.cal-sub .disc{margin:0}
+.cal-month{font:700 13px/1 var(--sans);letter-spacing:.07em;text-transform:uppercase;color:var(--ink-3);margin:26px 0 4px}
+.cal-list .cal-row:first-child{border-top:0}
+@media (max-width:600px){ .cal-row{gap:10px} .cal-date{width:50px} .cal-sub{padding:14px} }
 </style>
 </head>
 <body data-rail="left">
@@ -1153,13 +1197,36 @@ var MOSAIC=[
 ];
 var MOSAIC_END={1:["full"],2:["half","half"],3:["sm","sm","sm"],4:["tall","wide","sm","sm"],5:["wide","sm","sm","sm","sm"]};
 var SIZE_RANK={xl:5,full:4,tall:3,wide:3,half:2,sm:1};
+/* ---------- Saved stories (bookmarks): kept in this browser, per view ---------- */
+var SAVED_KEY="tcc.saved.v1", saved=[];
+try{ saved=JSON.parse(localStorage.getItem(SAVED_KEY)||"[]")||[]; if(!Array.isArray(saved)) saved=[]; }catch(err){ saved=[]; }
+function persistSaved(){ try{ localStorage.setItem(SAVED_KEY, JSON.stringify(saved.slice(0,300))); }catch(err){} }
+function isSaved(id){ for(var i=0;i<saved.length;i++) if(saved[i].id===id) return true; return false; }
+function savedForView(v){ return saved.filter(function(x){ return x.view===v; }); }
+function toggleSaved(e){
+  var id=e.it.id;
+  if(isSaved(id)) saved=saved.filter(function(x){ return x.id!==id; });
+  else saved.unshift({id:id, view:view, sector:{id:e.sector.id, name:e.sector.name}, it:e.it, savedAt:new Date().toISOString()});
+  persistSaved(); return isSaved(id);
+}
+var BOOKMARK='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 3.5h11v17l-5.5-3.8-5.5 3.8z"/></svg>';
+function saveButton(e, withText){
+  var b=el("button","savebtn"+(withText?" withtext":"")); b.type="button";
+  function paint(){ var on=isSaved(e.it.id); b.classList.toggle("on",on); b.setAttribute("aria-pressed",String(on));
+    b.setAttribute("aria-label", on?"Remove from saved":"Save this story"); b.title=on?"Saved · tap to remove":"Save this story";
+    b.innerHTML=BOOKMARK+(withText?'<span>'+(on?"Saved":"Save")+'</span>':''); }
+  b.addEventListener("click",function(ev){ ev.stopPropagation(); toggleSaved(e); paint();
+    document.querySelectorAll('.savebtn[data-id="'+e.it.id+'"]').forEach(function(x){ if(x!==b && x._paint) x._paint(); });
+    if(current){ renderSide(current); if(tab==="saved" && !withText) render(current); } });
+  b.setAttribute("data-id",e.it.id); b._paint=paint; paint(); return b;
+}
 /* ---------- Story cell (mosaic tile) ---------- */
 function gauge(label,word,n,total){
   var gw=el("div","gg"); gw.appendChild(el("span","gl",label+" · "+word));
   var bars=el("span","gb"); for(var i=1;i<=total;i++) bars.appendChild(el("i",i<=n?"on":null)); gw.appendChild(bars); return gw;
 }
 function cell(e, size){
-  size=size||"sm"; var it=e.it, lead=size==="xl", c=el("button","nc s-"+size); c.type="button";
+  size=size||"sm"; var it=e.it, lead=size==="xl", c=el("div","nc s-"+size); c.setAttribute("role","button"); c.tabIndex=0;
   c.style.setProperty("--sc","var(--s-"+e.sector.id+")");
   var t=thumb(it, e.sector.id) || art(e.sector.id);   // every tile carries its photo (sector panel if none)
   var box=el("div","nc-txt");
@@ -1182,8 +1249,10 @@ function cell(e, size){
   if(gs.children.length) box.appendChild(gs);
   foot.appendChild(src); if(conf) foot.appendChild(el("span","nc-conf",conf)); if(w) foot.appendChild(el("span","nc-when",w)); box.appendChild(foot);
   if(t && (size==="wide"||size==="half"||size==="full")){ c.appendChild(box); c.appendChild(t); } else { if(t) c.appendChild(t); c.appendChild(box); }
-  c.setAttribute("aria-haspopup","dialog");
+  c.setAttribute("aria-haspopup","dialog"); c.setAttribute("aria-label",it.headline);
   c.addEventListener("click",function(){ openSheet(e); });
+  c.addEventListener("keydown",function(ev){ if(ev.target===c && (ev.key==="Enter"||ev.key===" ")){ ev.preventDefault(); openSheet(e); } });
+  c.appendChild(saveButton(e,false));
   return c;
 }
 function card(e, big){
@@ -1245,6 +1314,8 @@ function renderKindsKey(){
 }
 
 var ICONS={
+  upcoming:'<rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/>',
+  saved:'<path d="M6.5 3.5h11v17l-5.5-3.8-5.5 3.8z"/>',
   all:'<polygon points="12 3 14.8 8.9 21 9.7 16.5 14 17.6 20.2 12 17.3 6.4 20.2 7.5 14 3 9.7 9.2 8.9"/>',
   energy:'<path d="M13 2 4 14h7l-1 8 9-12h-7l1-8z"/>',
   logistics:'<path d="M2 6h12v10H2z"/><path d="M14 9h4l4 4v3h-8"/><circle cx="6" cy="18" r="2"/><circle cx="18" cy="18" r="2"/>',
@@ -1260,8 +1331,9 @@ function renderSide(doc){
   var ul=$("sideList"); ul.textContent="";
   var counts={}; events.forEach(function(e){ counts[e.sector.id]=(counts[e.sector.id]||0)+1; });
   var withItems=(doc.sectors||[]).filter(function(s){return counts[s.id];});
-  if(tab!=="all" && !counts[tab]) tab="all";
-  [{id:"all",name:"Top Stories",n:events.length}].concat(withItems.map(function(s){return {id:s.id,name:s.name,n:counts[s.id]};})).forEach(function(t){
+  var upN=upcoming().length;
+  if(tab!=="all" && tab!=="saved" && !(tab==="upcoming" && upN) && !counts[tab]) tab="all";
+  [{id:"all",name:"Top Stories",n:events.length},{id:"saved",name:"Saved",n:savedForView(view).length}].concat(upN?[{id:"upcoming",name:"Upcoming dates",n:upN}]:[]).concat(withItems.map(function(s){return {id:s.id,name:s.name,n:counts[s.id]};})).forEach(function(t){
     var li=el("li"), b=el("button","si"); b.type="button"; b.title=t.name+" ("+t.n+")";
     if(t.id!=="all") b.style.setProperty("--sc","var(--s-"+t.id+")");
     b.appendChild(icon(t.id)); b.setAttribute("aria-label",t.name+", "+t.n+" stories");
@@ -1271,15 +1343,31 @@ function renderSide(doc){
     li.appendChild(b); ul.appendChild(li);
   });
   var cur=(doc.sectors||[]).filter(function(s){return s.id===tab;})[0];
-  $("sectionTitle").textContent = tab==="all" ? "Top Stories" : (cur?cur.name:"Top Stories");
+  $("sectionTitle").textContent = tab==="all" ? "Top Stories" : tab==="saved" ? "Saved stories" : tab==="upcoming" ? "Dates to watch" : (cur?cur.name:"Top Stories");
 }
 
+function renderSaved(doc, main){
+  var byId={}; allEvents.forEach(function(x){ byId[x.it.id]=x; });
+  var secs={}; (doc.sectors||[]).forEach(function(x){ secs[x.id]=x; });
+  var list=savedForView(view).map(function(x){ return byId[x.id] || {it:x.it, sector:secs[x.sector.id]||x.sector}; })
+    .filter(function(x){ return !kindFilter || kindOf(x.it)===kindFilter; });
+  var other=savedForView(view==="global"?"domestic":"global").length;
+  if(!list.length){
+    var st=el("div","state"); st.appendChild(document.createTextNode("No saved stories in "+(view==="global"?"Global impact":"Inside India")+" yet. Tap the bookmark on any story to keep it here."));
+    main.appendChild(st);
+  } else mosaicInto(main, list);
+  main.appendChild(el("p","quiet","Saved stories stay in this browser on this device"+(other?" · "+other+" more saved in "+(view==="global"?"Inside India":"Global impact"):"")+"."));
+}
 function render(doc){
   current=doc; learnSources(doc); renderStatus(doc);
   allEvents=[]; (doc.sectors||[]).forEach(function(s){ (s.items||[]).forEach(function(it){ allEvents.push({it:it, sector:s}); }); });
   events=allEvents.filter(function(e){ return inRange(e.it) && (!kindFilter || kindOf(e.it)===kindFilter); });
   renderSide(doc); renderKindsKey();
   var main=$("main"); main.textContent="";
+  var rb=$("rangeBtns"); if(rb) rb.style.visibility = tab==="saved"||tab==="upcoming" ? "hidden" : "";
+  var fr=document.querySelector(".ctl-filters"); if(fr) fr.style.display = tab==="upcoming" ? "none" : "";
+  if(tab==="upcoming"){ renderUpcoming(doc, main); return; }
+  if(tab==="saved"){ renderSaved(doc, main); return; }
   if(allEvents.length && !events.length && kindFilter){
     var sk=el("div","state"); sk.appendChild(document.createTextNode("No "+KIND_LABEL[kindFilter].toLowerCase()+" stories in "+(RANGE_TEXT[range]||"this range")+". "));
     var ck=el("button","more","Show all kinds"); ck.type="button"; ck.style.marginTop="12px"; ck.addEventListener("click",function(){ kindFilter=null; render(current); });
@@ -1295,6 +1383,14 @@ function render(doc){
   var list = tab==="all" ? events.slice() : events.filter(function(e){return e.sector.id===tab;});
   list.sort(function(a,b){ return String(latestDate(b.it)).localeCompare(String(latestDate(a.it))); });
 
+  mosaicInto(main, list);
+  if(tab==="all"){
+    var empty=(doc.sectors||[]).filter(function(s){return !(s.items||[]).length;});
+    if(empty.length){ var q=el("p","quiet"); q.appendChild(el("b",null, view==="global" ? "No India-relevant stories yet in: " : "No national stories yet in: ")); q.appendChild(document.createTextNode(empty.map(function(s){return s.name;}).join(" · "))); main.appendChild(q); }
+  }
+}
+
+function mosaicInto(main, list){
   // Mosaic: blocks of different-sized tiles that always fill the full width, so there are no gaps.
   // The lead must be recent: only stories with a report in the last 48 hours compete (all stories if none are that fresh).
   var recent=list.filter(function(e){ var t=Date.parse(latestDate(e.it)); return !isNaN(t) && Date.now()-t <= 48*36e5; });
@@ -1314,12 +1410,173 @@ function render(doc){
   }
   main.appendChild(g); schedulePack();
   if(queue.length>GRID_SHOW+1){ var m=el("button","more",showAll?"Show fewer":"Show all "+queue.length+" stories"); m.type="button"; m.addEventListener("click",function(){showAll=!showAll; render(current);}); main.appendChild(m); }
-  if(tab==="all"){
-    var empty=(doc.sectors||[]).filter(function(s){return !(s.items||[]).length;});
-    if(empty.length){ var q=el("p","quiet"); q.appendChild(el("b",null, view==="global" ? "No India-relevant stories yet in: " : "No national stories yet in: ")); q.appendChild(document.createTextNode(empty.map(function(s){return s.name;}).join(" · "))); main.appendChild(q); }
-  }
+}
+/* ---------- Dates to watch: official calendar (data/calendar.json) linked to stories, with calendar buttons ---------- */
+var calendar=null, calUpdated=null, calSector="all";
+var CAL_LINK_DAYS=120;
+function localIso(d){ d=d||new Date(); return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0"); }
+function isoPlus(iso,n){ var d=new Date(iso+"T12:00:00"); d.setDate(d.getDate()+n); return localIso(d); }
+function calDate(iso,opts){ return new Date(iso+"T12:00:00").toLocaleDateString("en-GB",opts||{weekday:"short",day:"numeric",month:"short"}); }
+function siteHome(){ return "https://"+OWNER+".github.io/"+REPO+"/"; }
+function feedUrl(sec){ var f=(sec && sec!=="all" && calendar && calendar.sectorFeeds && calendar.sectorFeeds[sec]) || "data/calendar.ics"; return siteHome()+f; }
+function upcoming(){ if(!calendar) return []; var t=localIso(); return (calendar.events||[]).filter(function(x){ return (x.end||x.date)>=t; }); }
+
+/* A story is linked to a scheduled date when it names the organisation or subject (e.g. "RBI", "repo rate" for the
+   RBI's policy meeting; "semiconductor", "chips" for Nvidia's results). Short names that are also ordinary words
+   ("Fed", "Apple", "Amazon", "Meta", "COP", "AI") only count when written with their capitals. */
+var CASED={fed:"Fed",cop:"COP",meta:"Meta",apple:"Apple",amazon:"Amazon",hcl:"HCL",boe:"BoE",boj:"BoJ",ril:"RIL",mpc:"MPC",eia:"EIA",iea:"IEA",cpi:"CPI",ai:"AI",gst:"GST",rbi:"RBI",tcs:"TCS",imf:"IMF",wto:"WTO",ecb:"ECB",amd:"AMD",gpu:"GPU",gpus:"GPUs",aws:"AWS",jio:"Jio",pli:"PLI",g20:"G20",lng:"LNG",emi:"EMI",emis:"EMIs",fomc:"FOMC",asml:"ASML",tsmc:"TSMC",opec:"OPEC","opec+":"OPEC+",cop31:"COP31"};
+function reEsc(s){ return s.replace(/[.*+?^${}()|[\]\\]/g,"\\$&"); }
+var tagRe={};
+function hasTag(raw, lower, tag){
+  var k=tag in CASED ? "C:"+tag : tag;
+  if(!tagRe[k]) tagRe[k]= tag in CASED ? new RegExp("(^|[^A-Za-z0-9])"+reEsc(CASED[tag])+"(?![A-Za-z0-9])") : new RegExp("(^|[^a-z0-9])"+reEsc(tag)+"(?![a-z0-9])");
+  return tagRe[k].test(tag in CASED ? raw : lower);
+}
+function storyText(it){
+  var a=it.analysis||{}, parts=[it.headline, it.why].concat(it.implications||[]);
+  (a.affected||[]).forEach(function(x){ parts.push(x.what); }); (a.watch||[]).forEach(function(x){ parts.push(x.what); });
+  reportsOf(it).forEach(function(r){ parts.push(r.headline, r.summary); });
+  return parts.filter(Boolean).join(" \n ");
+}
+var linkCache={};
+/* "crude oil" and "crude", or "interest rates" and "interest rate", are one mention, not two */
+function uniq(tags){ return tags.filter(function(t,i){ return !tags.some(function(u,j){ return j!==i && u.length>t.length && u.indexOf(t)>=0; }); }); }
+function linksFor(it, sectorId){
+  var key=it.id+"|"+(calUpdated||"")+"|"+localIso();
+  if(linkCache[key]) return linkCache[key];
+  var raw=storyText(it), lower=raw.toLowerCase(), until=isoPlus(localIso(),CAL_LINK_DAYS), out=[];
+  upcoming().forEach(function(ev){
+    if(ev.date>until) return;
+    var keys=uniq((ev.key||[]).filter(function(t){ return hasTag(raw,lower,t); })), topics=uniq((ev.topic||[]).filter(function(t){ return hasTag(raw,lower,t); }));
+    var secOk=(ev.sectors||[]).indexOf(sectorId)>=0;
+    if((keys.length && (secOk || keys.length>=2)) || (secOk && topics.length>=2)) out.push({ev:ev, score:keys.length*3+topics.length, why:keys.concat(topics).slice(0,3)});
+  });
+  // one date per series (the next one), strongest links first
+  var bySeries={}; out.sort(function(a,b){ return b.score-a.score || a.ev.date.localeCompare(b.ev.date); })
+    .forEach(function(x){ if(!bySeries[x.ev.series] || x.ev.date<bySeries[x.ev.series].ev.date && x.score>=bySeries[x.ev.series].score) bySeries[x.ev.series]=x; });
+  var res=Object.keys(bySeries).map(function(k){ return bySeries[k]; }).sort(function(a,b){ return b.score-a.score || a.ev.date.localeCompare(b.ev.date); }).slice(0,3)
+    .sort(function(a,b){ return a.ev.date.localeCompare(b.ev.date); });
+  linkCache[key]=res; return res;
 }
 
+/* Exact dates that a story's own reports give ("2026-11-03", "3 November", "Oct. 23") */
+var MON3=["jan","feb","mar","apr","may","jun","jul","aug","sep","oct","nov","dec"];
+function parseWhen(when, refIso){
+  var s=String(when||"").trim(); if(!s) return null; var m;
+  if((m=/^(\d{4})-(\d{2})-(\d{2})/.exec(s))) return m[1]+"-"+m[2]+"-"+m[3];
+  if(/\b(early|mid|late|end|by|before|after|around|week|month|quarter|next)\b/i.test(s)) return null;
+  var y=null, mo=-1, d=null;
+  if((m=/\b(\d{1,2})(?:st|nd|rd|th)?\s+(?:of\s+)?([A-Za-z]{3,9})\.?(?:,?\s+(\d{4}))?\b/.exec(s))){ d=+m[1]; mo=MON3.indexOf(m[2].slice(0,3).toLowerCase()); y=m[3]?+m[3]:null; }
+  else if((m=/\b([A-Za-z]{3,9})\.?\s+(\d{1,2})(?:st|nd|rd|th)?(?:,?\s+(\d{4}))?\b/.exec(s))){ mo=MON3.indexOf(m[1].slice(0,3).toLowerCase()); d=+m[2]; y=m[3]?+m[3]:null; }
+  if(mo<0 || !d || d>31) return null;
+  var ref=new Date((refIso||localIso())+"T12:00:00");
+  if(!y){ y=ref.getFullYear(); var c=new Date(y,mo,d,12); if(c < new Date(ref.getTime()-7*864e5)) y++; }
+  var out=new Date(y,mo,d,12); if(out.getMonth()!==mo) return null;
+  return localIso(out);
+}
+
+/* Calendar buttons */
+function gcalUrl(ev){
+  var end=isoPlus(ev.end||ev.date,1).replace(/-/g,""), details=[ev.why, ev.time?"Time: "+ev.time:"", ev.source&&ev.source.url?"Source: "+ev.source.url:"", "The Continent Connect: "+siteHome()].filter(Boolean).join("\n\n");
+  return "https://calendar.google.com/calendar/render?action=TEMPLATE&text="+encodeURIComponent(ev.title)+"&dates="+ev.date.replace(/-/g,"")+"/"+end+"&details="+encodeURIComponent(details);
+}
+function icsEsc(s){ return String(s||"").replace(/\\/g,"\\\\").replace(/;/g,"\\;").replace(/,/g,"\\,").replace(/\r?\n/g,"\\n"); }
+function icsFold(l){ var out=[], cur=""; for(var i=0;i<l.length;i++){ if(cur.length>=73){ out.push(cur); cur=" "; } cur+=l[i]; } out.push(cur); return out.join("\r\n"); }
+function icsText(ev){
+  var stamp=new Date().toISOString().replace(/[-:]/g,"").replace(/\.\d+/,"");
+  var desc=[ev.why, ev.time?"Time: "+ev.time:"", ev.source&&ev.source.url?"Source: "+ev.source.url:"", "The Continent Connect: "+siteHome()].filter(Boolean).join("\n\n");
+  return ["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//The Continent Connect//Dates to watch//EN","METHOD:PUBLISH","BEGIN:VEVENT","UID:"+ev.id+"@continent-connect","DTSTAMP:"+stamp,
+    "DTSTART;VALUE=DATE:"+ev.date.replace(/-/g,""),"DTEND;VALUE=DATE:"+isoPlus(ev.end||ev.date,1).replace(/-/g,""),"SUMMARY:"+icsEsc(ev.title),"DESCRIPTION:"+icsEsc(desc),
+    "BEGIN:VALARM","ACTION:DISPLAY","DESCRIPTION:"+icsEsc(ev.title),"TRIGGER:-PT15H","END:VALARM","END:VEVENT","END:VCALENDAR"].map(icsFold).join("\r\n")+"\r\n";
+}
+var CAL_ICON='<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>';
+function addCalButtons(ev){
+  var w=el("div","cal-add");
+  var g=el("a","cal-btn"); g.href=gcalUrl(ev); g.target="_blank"; g.rel="noopener"; g.innerHTML=CAL_ICON+"<span>Google Calendar</span>"; g.title="Add this date to Google Calendar";
+  g.addEventListener("click",function(x){ x.stopPropagation(); });
+  var i=el("button","cal-btn"); i.type="button"; i.innerHTML="<span>Apple / Outlook</span>"; i.title="Download an .ics file for Apple Calendar, Outlook and others";
+  i.addEventListener("click",function(x){ x.stopPropagation();
+    try{ var blob=new Blob([icsText(ev)],{type:"text/calendar"}), a=document.createElement("a"); a.href=URL.createObjectURL(blob); a.download=ev.id.replace(/[^a-z0-9-]/gi,"-")+".ics"; document.body.appendChild(a); a.click(); setTimeout(function(){ URL.revokeObjectURL(a.href); a.remove(); },1000); }catch(err){} });
+  w.appendChild(g); w.appendChild(i); return w;
+}
+function dateBadge(ev){
+  var b=el("div","cal-date"), d=new Date(ev.date+"T12:00:00");
+  b.appendChild(el("span","cd-mon",d.toLocaleDateString("en-GB",{month:"short"})));
+  b.appendChild(el("span","cd-day",String(d.getDate())));
+  b.appendChild(el("span","cd-wd",d.toLocaleDateString("en-GB",{weekday:"short"})));
+  return b;
+}
+function calRow(ev, opts){
+  opts=opts||{}; var r=el("div","cal-row"); r.appendChild(dateBadge(ev));
+  var m=el("div","cal-main"); m.appendChild(el("b","cal-title",ev.title));
+  var meta=el("p","cal-meta"); var parts=[];
+  if(ev.end) parts.push("until "+calDate(ev.end,{day:"numeric",month:"short"}));
+  if(ev.time) parts.push(ev.time);
+  if(parts.length) meta.appendChild(document.createTextNode(parts.join(" · ")+" · "));
+  if(ev.source && ev.source.url){ var a=el("a",null,"Official date: "+(ev.source.domain||ev.publisher||"source")); a.href=ev.source.url; a.target="_blank"; a.rel="noopener"; a.addEventListener("click",function(x){ x.stopPropagation(); }); meta.appendChild(a); }
+  else if(opts.fromStory) meta.appendChild(document.createTextNode("Date given in the reports"));
+  m.appendChild(meta);
+  if(ev.why) m.appendChild(el("p","cal-why",ev.why));
+  if(opts.because && opts.because.length) m.appendChild(el("p","cal-because","Linked because the story mentions "+opts.because.map(function(t){ return CASED[t]||t; }).join(", ")));
+  if(opts.stories && opts.stories.length){ var s=el("div","cal-stories"); s.appendChild(el("span",null,"In the news:"));
+    opts.stories.forEach(function(x){ var b=el("button","cal-story",x.it.headline); b.type="button"; b.addEventListener("click",function(){ openSheet(x); }); s.appendChild(b); }); m.appendChild(s); }
+  m.appendChild(addCalButtons(ev)); r.appendChild(m); return r;
+}
+
+/* In the story window */
+function renderDates(e){
+  var it=e.it, links=calendar?linksFor(it, e.sector.id):[], today=localIso(), own=[];
+  var ref=((reportsOf(it).map(function(r){ return r.date||""; }).sort().pop())||it.date||"").slice(0,10);
+  ((it.analysis||{}).watch||[]).forEach(function(w,i){ var d=parseWhen(w.when, ref||today); if(d && d>=today) own.push({id:"w-"+it.id+"-"+i, title:w.what, date:d, why:"From the story: "+it.headline+(w.where?" · Check: "+w.where:"")}); });
+  if(!links.length && !own.length) return null;
+  var b=el("div","block cal-block"); b.appendChild(el("h3",null,"Dates to watch"));
+  links.forEach(function(x){ b.appendChild(calRow(x.ev,{because:x.why})); });
+  own.forEach(function(ev){ b.appendChild(calRow(ev,{fromStory:true})); });
+  if(calendar && upcoming().length){ var more=el("button","cal-more","See every upcoming date and subscribe →"); more.type="button";
+    more.addEventListener("click",function(){ $("sheet").close(); tab="upcoming"; showAll=false; render(current); window.scrollTo(0,$("main").getBoundingClientRect().top+window.scrollY-120); }); b.appendChild(more); }
+  b.appendChild(el("p","fw-foot disc","Scheduled dates are copied from each organisation's own website and checked against it; dates can move."));
+  return b;
+}
+
+/* The Upcoming view */
+function renderUpcoming(doc, main){
+  var all=upcoming(), list=all.filter(function(x){ return calSector==="all" || (x.sectors||[]).indexOf(calSector)>=0; });
+  var sub=el("div","cal-sub");
+  var txt=el("div","cal-sub-txt"); txt.appendChild(el("b",null,"Put these dates in your calendar"));
+  txt.appendChild(el("p",null,"Subscribe once: new dates appear and moved dates update on their own. Each date carries a short note on why it matters."));
+  sub.appendChild(txt);
+  var ctl=el("div","cal-sub-ctl"), sel=el("select","cal-sel"); sel.setAttribute("aria-label","Which dates");
+  var opt=el("option",null,"All sectors"); opt.value="all"; sel.appendChild(opt);
+  (doc.sectors||[]).forEach(function(s){ if(!all.some(function(x){ return (x.sectors||[]).indexOf(s.id)>=0; })) return; var o=el("option",null,s.name); o.value=s.id; sel.appendChild(o); });
+  sel.value=calSector; sel.addEventListener("change",function(){ calSector=sel.value; render(current); });
+  var url=feedUrl(calSector), webcal=url.replace(/^https?:/,"webcal:");
+  var g=el("a","cal-btn primary"); g.href="https://calendar.google.com/calendar/render?cid="+encodeURIComponent(webcal); g.target="_blank"; g.rel="noopener"; g.innerHTML=CAL_ICON+"<span>Subscribe in Google Calendar</span>";
+  var ap=el("a","cal-btn"); ap.href=webcal; ap.innerHTML="<span>Apple / Outlook</span>";
+  var cp=el("button","cal-btn"); cp.type="button"; cp.innerHTML="<span>Copy link</span>";
+  cp.addEventListener("click",function(){ var done=function(){ cp.innerHTML="<span>Link copied</span>"; setTimeout(function(){ cp.innerHTML="<span>Copy link</span>"; },1800); };
+    if(navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(url).then(done,function(){ prompt("Calendar link",url); }); else prompt("Calendar link",url); });
+  ctl.appendChild(sel); ctl.appendChild(g); ctl.appendChild(ap); ctl.appendChild(cp); sub.appendChild(ctl);
+  sub.appendChild(el("p","disc","Google checks subscribed calendars every few hours, so a change can take up to a day to show. Calendar alerts follow your calendar's own notification settings."));
+  main.appendChild(sub);
+  if(!list.length){ main.appendChild(el("div","state", all.length ? "No upcoming dates for this sector yet." : "No dates on file yet. The calendar fills in over the next few updates.")); return; }
+  // stories in this view linked to each date
+  var linked={}; allEvents.forEach(function(x){ linksFor(x.it, x.sector.id).forEach(function(l){ (linked[l.ev.id]=linked[l.ev.id]||[]).push({x:x, s:l.score}); }); });
+  var month="", wrap=null;
+  list.forEach(function(ev){
+    var mo=calDate(ev.date,{month:"long",year:"numeric"});
+    if(mo!==month){ month=mo; main.appendChild(el("h3","cal-month",mo)); wrap=el("div","cal-list"); main.appendChild(wrap); }
+    var st=(linked[ev.id]||[]).sort(function(a,b){ return b.s-a.s || latestDate(b.x.it).localeCompare(latestDate(a.x.it)); }).slice(0,2).map(function(y){ return y.x; });
+    wrap.appendChild(calRow(ev,{stories:st}));
+  });
+  main.appendChild(el("p","quiet","Dates are copied from each organisation's own website (central banks, statistics offices, company investor pages, summit hosts) and checked against that page. Organisations sometimes move dates; subscribed calendars follow."));
+}
+function loadCalendar(){
+  loadFrom(sourcesFor("calendar.json")).then(function(c){
+    if(!c || !c.events) return;
+    var changed=c.updatedAt!==calUpdated || !calendar; calendar=c; calUpdated=c.updatedAt||String(Date.now());
+    if(changed && current){ renderSide(current); if(tab==="upcoming") render(current); }
+  }).catch(function(){});
+}
 /* Story sheet with the analysis and links to each outlet's report. */
 function openSheet(e){
   var it=e.it, d=$("sheet"), body=$("sheetBody"); body.textContent=""; body.scrollTop=0;
@@ -1338,7 +1595,7 @@ function openSheet(e){
   var kd=kindOf(it), kt=el("div","ktop"); if(kd) kt.appendChild(kindChip(kd)); kt.appendChild(k); head.appendChild(kt);
   var sh=body.closest(".sheet")||d; sh.classList.remove("has-kind","k-hard","k-breaking","k-investigative","k-soft","k-feature","k-opinion"); if(kd) sh.classList.add("has-kind","k-"+kd);
   var h=el("h2",null,it.headline); h.id="sheetTitle"; head.appendChild(h);
-  head.appendChild(byline(it,true));
+  var brow=el("div","sheet-actions"); brow.appendChild(byline(it,true)); brow.appendChild(saveButton(e,true)); head.appendChild(brow);
   body.appendChild(head);
 
   var hasFw=!!(it.analysis && it.analysis.v===2 && it.analysis.frameworks);
@@ -1356,6 +1613,7 @@ function openSheet(e){
     cx.appendChild(el("p","context-note disc","Soft news and features are kept as context for the story, without implications."));
     left.appendChild(cx);
   }
+  var dts=renderDates(e); if(dts) left.appendChild(dts);
   body.appendChild(left);
 
   var dev=isDeveloping(it), reps=reportsOf(it).slice().sort(function(a,b){return String(b.date||"").localeCompare(String(a.date||""));});
@@ -1468,7 +1726,7 @@ $("range").addEventListener("change",function(){
   if(range===0){ loadArchive(view).then(function(){ show(view); }).catch(function(){ show(view); }); } else show(view);
 });
 function refresh(){
-  var v=view;
+  var v=view; loadCalendar();
   loadFrom(sourcesFor(VIEWS[v].rejected)).then(function(list){ rejectedByView[v]=list; if(v===view) renderAudit(list); }).catch(function(){ if(v===view) renderAudit([]); });
   loadFrom(sourcesFor(VIEWS[v].threads)).then(function(t){ threadsByView[v]=t; }).catch(function(){});
   if(range===0) loadArchive(v).then(function(){ if(v===view && docs[v]) show(v); }).catch(function(){});
