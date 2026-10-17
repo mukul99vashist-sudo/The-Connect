@@ -20,8 +20,8 @@
 </script>
 <style>
 :root{
-  --bg:#F1E8D2; --bg-2:#E8DDC3; --card:#F8F2E4; --ink:#1D1D1F; --ink-2:#3F3D39; --ink-3:#6B665C; --rule:#D9CDB1;
-  --tile:#F8F2E4; --tile-line:#C2B48F;
+  --bg:#FFFFFF; --bg-2:#F5F5F7; --card:#FFFFFF; --ink:#1D1D1F; --ink-2:#424245; --ink-3:#6E6E73; --rule:#E3E3E8;
+  --tile:#FFFFFF; --tile-line:#D2D2D7;
   --accent:#D9480F; --ok:#1A7F5A; --shadow:0 1px 2px rgba(0,0,0,.04),0 6px 18px rgba(0,0,0,.06);
   --s-energy:#C2410C; --s-logistics:#0E7490; --s-economy:#4338CA; --s-technology:#7C3AED;
   --s-manufacturing:#B45309; --s-environment:#15803D; --s-agriculture:#65A30D; --s-governance:#BE123C;
@@ -671,6 +671,19 @@ footer{margin-top:28px;font-size:12.5px;color:var(--ink-3);line-height:1.6;width
 .mz>.nc{border:1px solid var(--tile-line);border-radius:6px;overflow:hidden}
 .mz>.ng-fill{border:0;background:transparent}
 @media (max-width:640px){ .mz{gap:10px} }
+/* v38: photos on every tile; small and tall tiles have the photo on top */
+.s-sm{flex-direction:column}
+.s-sm .thumb,.s-tall .thumb{flex:none;aspect-ratio:16/9;min-height:0}
+.s-sm .nc-head{font-size:19px}
+.mz>.nc .nc-txt{gap:12px}
+/* v38b: photo on top for big, tall and small tiles; the photo grows to fill any spare height, text sits at the bottom */
+.mz>.s-xl{flex-direction:column}
+.mz>.s-xl .thumb,.mz>.s-tall .thumb,.mz>.s-sm .thumb{flex:1 1 auto;aspect-ratio:auto;min-height:190px}
+.mz>.s-xl .thumb{min-height:320px}
+.mz>.s-xl .nc-txt,.mz>.s-tall .nc-txt,.mz>.s-sm .nc-txt{flex:0 0 auto}
+.mz .thumb img{width:100%;height:100%;object-fit:cover;display:block}
+@media (max-width:1100px){ .mz>.s-xl .thumb{min-height:260px} .mz>.s-tall{flex-direction:column} .mz>.s-tall .thumb{order:0;flex:1 1 auto;min-height:220px} }
+@media (max-width:640px){ .mz>.nc .thumb{flex:none!important;aspect-ratio:16/9!important;min-height:0!important} }
 </style>
 </head>
 <body data-rail="left">
@@ -1088,7 +1101,7 @@ function gauge(label,word,n,total){
 function cell(e, size){
   size=size||"sm"; var it=e.it, lead=size==="xl", c=el("button","nc s-"+size); c.type="button";
   c.style.setProperty("--sc","var(--s-"+e.sector.id+")");
-  var t=size==="sm" ? null : (thumb(it, e.sector.id) || art(e.sector.id));   // small tiles are text-only
+  var t=thumb(it, e.sector.id) || art(e.sector.id);   // every tile carries its photo (sector panel if none)
   var box=el("div","nc-txt");
   var meta=el("div","nc-meta"), kd=kindOf(it);
   if(kd) meta.appendChild(kindChip(kd));
@@ -1097,7 +1110,7 @@ function cell(e, size){
   if(!firstVisit && !seenBefore[it.id]) meta.appendChild(el("span","nc-new","New"));
   box.appendChild(meta);
   box.appendChild(el(lead?"h2":"h3","nc-head",it.headline));
-  var why=it.why || ((leadReport(it)||{}).summary) || ""; if(why) box.appendChild(el("p","nc-why",why));
+  // Home screen keeps it short: photo, kind and sector, headline, gauges, outlets. The summary is inside the story.
   var a=it.analysis, gs=el("div","nc-gauges");
   if(a && a.exposure && a.horizon){
     gs.appendChild(gauge(lead?"Exposure":"Exposure",cap(a.exposure.level),LEVEL_N[a.exposure.level]||0,3));
@@ -1108,7 +1121,7 @@ function cell(e, size){
   var w=when(latestDate(it)), conf=outs.length>1 ? outs.length+" outlets confirm" : "";
   if(gs.children.length) box.appendChild(gs);
   foot.appendChild(src); if(conf) foot.appendChild(el("span","nc-conf",conf)); if(w) foot.appendChild(el("span","nc-when",w)); box.appendChild(foot);
-  if(t && (size==="xl"||size==="wide"||size==="half"||size==="full")){ c.appendChild(box); c.appendChild(t); } else { if(t) c.appendChild(t); c.appendChild(box); }
+  if(t && (size==="wide"||size==="half"||size==="full")){ c.appendChild(box); c.appendChild(t); } else { if(t) c.appendChild(t); c.appendChild(box); }
   c.setAttribute("aria-haspopup","dialog");
   c.addEventListener("click",function(){ openSheet(e); });
   return c;
