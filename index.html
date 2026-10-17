@@ -16,6 +16,7 @@
   --accent:#D9480F; --ok:#1A7F5A; --shadow:0 1px 2px rgba(0,0,0,.04),0 6px 18px rgba(0,0,0,.06);
   --s-energy:#C2410C; --s-logistics:#0E7490; --s-economy:#4338CA; --s-technology:#7C3AED;
   --s-manufacturing:#B45309; --s-environment:#15803D; --s-agriculture:#65A30D; --s-governance:#BE123C;
+  --warn:#C8102E;
   --k-on:#FFFFFF; --k-hard:#475569; --k-breaking:#DC2626; --k-investigative:#7E22CE; --k-soft:#DB2777; --k-feature:#0F766E; --k-opinion:#A16207;
   --sans:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text","Helvetica Neue",Helvetica,Arial,sans-serif;
   box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px); color-scheme:light;
@@ -25,6 +26,7 @@
   --accent:#FF6A2B; --ok:#34C77B; --shadow:none;
   --s-energy:#FB923C; --s-logistics:#22D3EE; --s-economy:#A5B4FC; --s-technology:#C4B5FD;
   --s-manufacturing:#FBBF24; --s-environment:#4ADE80; --s-agriculture:#A3E635; --s-governance:#FB7185; color-scheme:dark;
+  --warn:#FF6B6B;
   --k-on:#0B0B0C; --k-hard:#CBD5E1; --k-breaking:#F87171; --k-investigative:#D8B4FE; --k-soft:#F9A8D4; --k-feature:#5EEAD4; --k-opinion:#FDE047;
 }
 html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px)}
@@ -217,6 +219,20 @@ h1{font:800 clamp(34px,5vw,46px)/1 var(--sans);letter-spacing:-.025em;margin:0}
 .top .card.has-kind::before{background:var(--k)}
 .sheet.has-kind::before{background:var(--k)}
 .k-hard{--k:var(--k-hard)} .k-breaking{--k:var(--k-breaking)} .k-investigative{--k:var(--k-investigative)} .k-soft{--k:var(--k-soft)} .k-feature{--k:var(--k-feature)} .k-opinion{--k:var(--k-opinion)}
+/* Disclaimers: always red and starred */
+.disc{color:var(--warn)!important}
+.disc::before{content:"* ";font-weight:700}
+footer .disc{display:block;margin:0 0 4px}
+/* Kind of report filter */
+.kinds-key .kf{all:unset;cursor:pointer;display:inline-flex;align-items:center;gap:6px;border-radius:999px;padding:2px;transition:opacity .15s}
+.kinds-key .kf .ct{font:600 11.5px/1 var(--sans);color:var(--ink-3)}
+.kinds-key .kf:hover .kind{filter:brightness(1.08)}
+.kinds-key .kf:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.kinds-key .kf[aria-pressed="true"] .kind{box-shadow:0 0 0 2px var(--bg),0 0 0 4px var(--k)}
+.kinds-key.filtering .kf[aria-pressed="false"]{opacity:.45}
+.kinds-key .kclear{all:unset;cursor:pointer;font:600 12px/1 var(--sans);color:var(--accent);margin-left:4px}
+.kinds-key .kclear:hover{text-decoration:underline}
+.kinds-key .kclear:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
 .kinds-key{display:flex;flex-wrap:wrap;align-items:center;gap:4px 6px;margin:-4px 0 14px}
 .kinds-key .lbl{font-size:12px;color:var(--ink-3);margin-right:2px}
 .read .kind{margin-left:6px;vertical-align:1px}
@@ -453,7 +469,7 @@ h1{font:800 clamp(34px,5vw,46px)/1 var(--sans);letter-spacing:-.025em;margin:0}
 
 /* Story window: frosted glass, 85% of the screen, scrollable */
 body:has(dialog[open]){overflow:hidden}
-dialog{border:1px solid rgba(255,255,255,.65);padding:0;border-radius:28px;width:85vw;height:85vh;max-width:none;max-height:none;color:var(--ink);overflow:hidden;
+dialog{border:1px solid rgba(255,255,255,.65);padding:0;border-radius:28px;width:90vw;height:90vh;max-width:none;max-height:none;color:var(--ink);overflow:hidden;
   background:color-mix(in srgb,var(--card) 60%,transparent);backdrop-filter:blur(30px) saturate(190%);-webkit-backdrop-filter:blur(30px) saturate(190%);
   box-shadow:0 40px 100px rgba(0,0,0,.28),inset 0 1px 0 rgba(255,255,255,.8),inset 0 0 0 1px rgba(255,255,255,.25)}
 dialog[open]{animation:pop .22s ease-out}
@@ -554,7 +570,10 @@ footer{margin-top:28px;font-size:12.5px;color:var(--ink-3);line-height:1.6;width
   </details>
 
   <footer>
-    For intelligence purposes only. Nothing here is financial or investment advice. Headlines and images are those published by the originating outlet (Global impact: BBC News, The Guardian, NPR, Al Jazeera, MercoPress, ABC News; Inside India: The Hindu, Mint) and link to the full story; images are shown from the outlet's own servers and credited to it. The "why" lines and implications are AI-generated analysis, not reported fact, and may be wrong. The desk checks its outlets automatically throughout the day; the time at the top shows the latest check.
+    <span class="disc">For intelligence purposes only. Nothing here is financial or investment advice.</span>
+    <span class="disc">The analysis, gauges and implications are AI-generated, not reported fact, and may be wrong.</span>
+    <span class="disc">Headlines and images are those published by the originating outlet and link to the full story; images are shown from the outlet's own servers and credited to it.</span>
+    The desk checks its outlets automatically throughout the day; the time at the top shows the latest check.
   </footer>
 </div>
 
@@ -725,7 +744,7 @@ var FW_RENDER={
     f.accounts.forEach(function(a){ var tr=el("tr"); tr.appendChild(el("td",null,a.value)); tr.appendChild(el("td",null,a.outlet)); tr.appendChild(el("td",null,a.origin||"Not stated")); tr.appendChild(el("td",null,a.time||"—")); t.appendChild(tr); });
     s.appendChild(el("p","fw-inst","Disputed: "+(f.disputed.item||"a key fact")+" ")); s.lastChild.appendChild(chip(cap(f.status),"st-"+(f.status==="resolved"?"confirmed":f.status==="converging"?"claimed":"alleged"))); s.appendChild(t);
     (f.explanations||[]).forEach(function(x){ s.appendChild(el("p","fw-next",cap(x.type)+(x.note?": "+x.note:""))); });
-    s.appendChild(el("p","fw-foot","We never average conflicting figures or pick a side.")); },
+    s.appendChild(el("p","fw-foot disc","We never average conflicting figures or pick a side.")); },
   timeline:function(f,s){ var ol=el("ol","fw-tl"); f.entries.forEach(function(x){ var li=el("li","v-"+x.verification); li.appendChild(el("span","when",x.when||"")); var b=el("div"); b.appendChild(el("b",null,x.what)); b.appendChild(el("span",null,[x.actor,x.outlet].filter(Boolean).join(" · ")+" · ")); b.lastChild.appendChild(chip(cap(x.verification),"st-"+(x.verification==="confirmed"?"confirmed":x.verification==="claimed"?"claimed":"alleged"))); li.appendChild(b); ol.appendChild(li); }); s.appendChild(ol);
     if(f.current_status) s.appendChild(el("p","fw-next","Now: "+f.current_status)); (f.open_questions||[]).forEach(function(q){ s.appendChild(el("p","fw-next","Open question: "+q)); }); },
   escalation:function(f,s){ var wrap=el("div","fw-esc"), ol=el("ol","esc"); var sig={}; (f.next_signals||[]).forEach(function(x){ sig[x.rung]=x.signal; });
@@ -733,7 +752,7 @@ var FW_RENDER={
     wrap.appendChild(ol); s.appendChild(wrap);
     if(f.india_channels&&f.india_channels.length){ var c=el("div","fw-chips"); c.appendChild(el("span","k","How it reaches India")); f.india_channels.forEach(function(x){ c.appendChild(chip(cap(x))); }); s.appendChild(c); } },
   scenarios:function(f,s){ if(f.question) s.appendChild(el("p","fw-inst",f.question)); var g=el("div","fw-scen"); f.scenarios.forEach(function(x){ var d=el("div","scen"); d.appendChild(el("b",null,x.name)); d.appendChild(document.createTextNode(tidyText(x.what))); if(x.india_effect) d.appendChild(el("span","sig","For India: "+x.india_effect)); if(x.signal) d.appendChild(el("span","sig","Signal to watch: "+x.signal)); g.appendChild(d); }); s.appendChild(g);
-    s.appendChild(el("p","fw-foot","Scenarios are not ranked and carry no probabilities.")); }
+    s.appendChild(el("p","fw-foot disc","Scenarios are not ranked and carry no probabilities.")); }
 };
 /* What each gauge measures and the fixed rules it is judged by (the same rules the analysis desk is given). */
 var GAUGE_RULES={
@@ -757,7 +776,7 @@ function gaugeHelp(d,key,current,extra){
   d.querySelector(".k").appendChild(b);
   var box=el("div","explain"); box.setAttribute("role","note"); box.appendChild(el("p","q",g.q));
   var ol=el("ol"); g.levels.forEach(function(l){ var li=el("li",l[0]===current?"cur":null); li.appendChild(el("b",null,l[1])); li.appendChild(el("span",null,l[2])); ol.appendChild(li); }); box.appendChild(ol);
-  box.appendChild(el("p","src",g.src+(extra?" "+extra:""))); d.appendChild(box);
+  box.appendChild(el("p","src disc",g.src)); if(extra) box.appendChild(el("p","src",extra)); d.appendChild(box);
   b.addEventListener("click",function(ev){ ev.stopPropagation(); var open=!d.classList.contains("open");
     document.querySelectorAll(".dial.open").forEach(function(x){ x.classList.remove("open"); var y=x.querySelector(".how"); if(y) y.setAttribute("aria-expanded","false"); });
     d.classList.toggle("open",open); b.setAttribute("aria-expanded",String(open)); });
@@ -783,7 +802,8 @@ function renderFramework(it){
     af.appendChild(ag); b.appendChild(af); }
   if((it.implications||[]).length){ var im=sec("Implications"), ul=el("ul","fw-list"); it.implications.forEach(function(x){ ul.appendChild(el("li",null,x)); }); im.appendChild(ul); b.appendChild(im); }
   if(a.watch&&a.watch.length){ var w=sec("What to watch"), wl=el("ul","fw-watch"); a.watch.forEach(function(x){ var li=el("li"); li.appendChild(el("span","when",x.when||"Next")); var t=el("span",null,x.what); if(x.where) t.appendChild(el("em",null," · check: "+x.where)); li.appendChild(t); wl.appendChild(li); }); w.appendChild(wl); b.appendChild(w); }
-  b.appendChild(el("p","fw-foot","Written by AI from the reports listed below. Figures are shown only when they appear in those reports; nothing here is financial advice."));
+  b.appendChild(el("p","fw-foot disc","Written by AI from the reports listed below. Figures are shown only when they appear in those reports."));
+  b.appendChild(el("p","fw-foot disc","Nothing here is financial or investment advice."));
   return b;
 }
 /* ---------- Statistics layer: official figures, each linked to the page it was matched against ---------- */
@@ -816,8 +836,10 @@ function renderStats(it){
     w.appendChild(statChart(x));
     var ul=el("ul","st-src"); (x.sources||[]).forEach(function(s){ var li=el("li"), a=el("a"); a.href=s.url; a.target="_blank"; a.rel="noopener"; a.appendChild(el("b",null,"✓")); a.appendChild(el("span",null,s.domain+(s.title&&s.title!==s.domain?" — "+s.title:""))); li.appendChild(a); ul.appendChild(li); });
     w.appendChild(ul); b.appendChild(w); });
-  var note=el("p","st-note"); note.appendChild(el("b",null,"✓ ")); note.appendChild(document.createTextNode("Every figure shown was found by AI search on an official statistics site and matched to the exact text of the page it links to. Tap a bar to open its source."+(dropped?" "+dropped+" figure"+(dropped>1?"s":"")+" that could not be matched "+(dropped>1?"were":"was")+" left out, so some years may be missing.":"")+" Not financial advice."));
+  var note=el("p","st-note"); note.appendChild(el("b",null,"✓ ")); note.appendChild(document.createTextNode("Every figure shown was matched to the exact text of the official page it links to. Tap a bar to open its source."));
   b.appendChild(note);
+  b.appendChild(el("p","st-note disc","The series were chosen by AI search; the figures are the publisher's own."+(dropped?" "+dropped+" figure"+(dropped>1?"s":"")+" that could not be matched "+(dropped>1?"were":"was")+" left out, so some periods may be missing.":"")));
+  b.appendChild(el("p","st-note disc","Not financial or investment advice."));
   return b;
 }
 function leadReport(it){ var reps=reportsOf(it); return reps.filter(function(r){return r.url===it.url;})[0] || reps[0]; }
@@ -915,8 +937,21 @@ function renderStatus(doc){
   line.title=src.map(function(x){return x.name+(x.region?" ("+x.region+")":"");}).join(", ");
   s.appendChild(line);
 }
-(function(){ var key=$("kindsKey"); if(!key) return; key.appendChild(el("span","lbl","Kind of report"));
-  ["hard","breaking","investigative","soft","feature"].forEach(function(k){ key.appendChild(kindChip(k)); }); })();
+/* Kind of report: each chip filters the page to that kind; click it again (or "Show all") to clear. */
+var kindFilter=null, KIND_ORDER=["hard","breaking","investigative","soft","feature"];
+function renderKindsKey(){
+  var key=$("kindsKey"); if(!key) return; key.textContent=""; key.classList.toggle("filtering",!!kindFilter);
+  key.appendChild(el("span","lbl","Kind of report"));
+  var counts={}; allEvents.filter(function(e){ return inRange(e.it); }).forEach(function(e){ var k=kindOf(e.it); if(k) counts[k]=(counts[k]||0)+1; });
+  KIND_ORDER.forEach(function(k){
+    var b=el("button","kf"); b.type="button"; b.setAttribute("aria-pressed",String(kindFilter===k));
+    b.title=kindFilter===k ? "Show all kinds" : "Show only "+KIND_LABEL[k].toLowerCase();
+    b.appendChild(kindChip(k)); b.appendChild(el("span","ct",String(counts[k]||0)));
+    b.addEventListener("click",function(){ kindFilter = kindFilter===k ? null : k; showAll=false; render(current); });
+    key.appendChild(b);
+  });
+  if(kindFilter){ var c=el("button","kclear","Show all"); c.type="button"; c.addEventListener("click",function(){ kindFilter=null; render(current); }); key.appendChild(c); }
+}
 
 var ICONS={
   all:'<polygon points="12 3 14.8 8.9 21 9.7 16.5 14 17.6 20.2 12 17.3 6.4 20.2 7.5 14 3 9.7 9.2 8.9"/>',
@@ -951,9 +986,14 @@ function renderSide(doc){
 function render(doc){
   current=doc; learnSources(doc); renderStatus(doc);
   allEvents=[]; (doc.sectors||[]).forEach(function(s){ (s.items||[]).forEach(function(it){ allEvents.push({it:it, sector:s}); }); });
-  events=allEvents.filter(function(e){ return inRange(e.it); });
-  renderSide(doc);
+  events=allEvents.filter(function(e){ return inRange(e.it) && (!kindFilter || kindOf(e.it)===kindFilter); });
+  renderSide(doc); renderKindsKey();
   var main=$("main"); main.textContent="";
+  if(allEvents.length && !events.length && kindFilter){
+    var sk=el("div","state"); sk.appendChild(document.createTextNode("No "+KIND_LABEL[kindFilter].toLowerCase()+" stories in "+(RANGE_TEXT[range]||"this range")+". "));
+    var ck=el("button","more","Show all kinds"); ck.type="button"; ck.style.marginTop="12px"; ck.addEventListener("click",function(){ kindFilter=null; render(current); });
+    sk.appendChild(el("br")); sk.appendChild(ck); main.appendChild(sk); return;
+  }
   if(allEvents.length && !events.length){
     var st=el("div","state"); st.appendChild(document.createTextNode("No stories in "+(RANGE_TEXT[range]||"this range")+". "));
     var all=el("button","more","Show all stories"); all.type="button"; all.style.marginTop="12px"; all.addEventListener("click",function(){ range=0; $("range").value="0"; try{localStorage.setItem(RANGE_KEY,"0");}catch(e){} loadArchive(view).then(function(){ show(view); }).catch(function(){ show(view); }); });
@@ -1016,7 +1056,7 @@ function openSheet(e){
     left.appendChild(im);
   } else if(kindOf(it)==="soft" || kindOf(it)==="feature"){
     var cx=el("div","block"); cx.appendChild(el("h3",null,"Background piece"));
-    cx.appendChild(el("p","context-note","Soft news and features are kept as context for the story, without implications."));
+    cx.appendChild(el("p","context-note disc","Soft news and features are kept as context for the story, without implications."));
     left.appendChild(cx);
   }
   body.appendChild(left);
