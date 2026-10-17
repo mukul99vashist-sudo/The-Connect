@@ -110,7 +110,7 @@ const BUDGET_FILE = "data/budget.json";
 const BUDGET_SHARE = { core: 1.0, stats: 0.9, extra: 0.6 };
 const PRICES = { "claude-opus-5-5": [4, 20], "claude-sonnet-5-5": [2, 10], "claude-haiku-5-5": [0.10, 0.50], "claude-haiku-5-5@long": [0.50, 2.50] }; // US$ per million tokens: input, output
 const SEARCH_PRICE = 0.01;      // US$ per web search
-const EST = { filter: 0.02, analysis: 0.15, analysis_quick: 0.06, threads: 0.03, stats: 0.30 };   // most one request is likely to cost
+const EST = { filter: 0.02, analysis: 0.15, analysis_quick: 0.06, threads: 0.03, stats: 0.30, calendar: 0.40 };   // most one request is likely to cost
 class BudgetError extends Error { constructor(level) { super(`daily budget reached for ${level} work`); this.level = level; } }
 let budget = null;
 const indiaDay = () => new Date(Date.now() + 5.5 * 36e5).toISOString().slice(0, 10);
@@ -616,7 +616,7 @@ UNIVERSAL BLOCK (every story):
 - "horizon": {"value":"now|weeks|months|years","reason":"≤12 words"}. When people in ${REGION} are likely to feel the effect: now = within a week; weeks = one to six weeks; months = two to twelve months; years = beyond a year.
 - "confidence": {"level":"high|medium|low","reason":"≤15 words"}. High = 3+ outlets agree and an on-record official source; medium = 2 outlets, or 1 with an official source; low = single outlet, anonymous sourcing, claims by a party, or an unresolved conflict.
 - "affected": 1 to 4 of [{"group":"exactly one of: ${GROUPS.join(", ")}","direction":"up|down|mixed|unclear","what":"what changes for them, ≤6 words (e.g. fuel prices, flight availability, compliance costs)","basis":"reported|inferred"}].
-- "watch": 1 to 3 of [{"what":"observable event, ≤15 words","when":"date if reported, else empty","where":"named official source to check, or empty"}].
+- "watch": 1 to 3 of [{"what":"observable event, ≤15 words","when":"the date as YYYY-MM-DD if the reports give the exact day (work out the year from the report date); otherwise the reported wording such as 'November 2026' or 'next week'; empty if no timing is reported","where":"named official source to check, or empty"}].
 
 FRAMEWORKS (fill only those listed for each story, under these keys):
 ${used.map(k => "- " + FW_SPEC[k]).join("\n")}
@@ -993,6 +993,304 @@ async function addStatistics(data, mode) {
   return { searched: due.length, found, reused, none, failed, proposed, droppedPoints, pagesFetched, samples, ...(stopped ? { budgetStopped: true } : {}) };
 }
 
+// ---------- Calendar: officially scheduled dates (rate decisions, data releases, earnings, summits) ----------
+// Sonnet searches only each organisation's own site, fetches the page that lists its dates, and copies them. Code
+// keeps a date only if it appears on a fetched official page (or an official citation), so no date is guessed.
+// Each group of organisations is refreshed once a week (a few groups per run, so the cost is spread out). The site
+// links events to stories by the keywords below, and data/calendar.ics is a feed people can subscribe to in Google,
+// Apple or Outlook calendars; it updates itself as the engine adds or moves dates.
+const CALENDAR_FILE = "data/calendar.json";
+const CAL_REFRESH_DAYS = 7;       // each group is re-checked weekly
+const CAL_GROUPS_PER_RUN = 2;     // groups refreshed per run (8 groups → the first full calendar after 4 runs, ~12 hours)
+const CAL_AHEAD_DAYS = 150;       // dates kept up to five months ahead
+const CAL_KEEP_PAST_DAYS = 2;     // a date stays on the site for two days after it passes
+const CAL_GROUPS = [
+  { id: "india-macro", name: "India: RBI, data and budget", domains: ["rbi.org.in", "mospi.gov.in", "pib.gov.in", "gstcouncil.gov.in", "indiabudget.gov.in"], series: [
+    { id: "rbi-mpc", ask: "Reserve Bank of India Monetary Policy Committee meetings: the day each policy decision is announced", title: "RBI monetary policy decision", publisher: "Reserve Bank of India", sectors: ["economy"],
+      key: ["rbi", "reserve bank", "repo rate", "repo", "monetary policy", "mpc"], topic: ["interest rate", "interest rates", "rate cut", "rate hike", "inflation", "emi", "emis", "home loan", "loans", "deposit rates", "rupee", "liquidity"],
+      why: "The RBI's rate decision feeds into loan EMIs, deposit rates and the rupee." },
+    { id: "in-cpi", ask: "India Consumer Price Index (CPI) monthly inflation release dates from MoSPI / NSO", title: "India retail inflation (CPI) data", publisher: "Ministry of Statistics (MoSPI)", sectors: ["economy", "agriculture"],
+      key: ["retail inflation", "consumer price index", "cpi"], topic: ["inflation", "food prices", "food inflation", "vegetable prices"],
+      why: "Shows how fast everyday prices are rising; the RBI watches it when setting rates." },
+    { id: "in-gdp", ask: "India quarterly GDP estimate release dates from MoSPI / NSO", title: "India GDP growth estimate", publisher: "Ministry of Statistics (MoSPI)", sectors: ["economy"],
+      key: ["gdp", "gross domestic product", "economic growth"], topic: ["growth rate", "slowdown", "recession"],
+      why: "The official read on how fast India's economy is growing." },
+    { id: "gst-council", ask: "GST Council meetings that have been officially announced", title: "GST Council meeting", publisher: "GST Council", sectors: ["governance", "economy"],
+      key: ["gst", "goods and services tax", "gst council"], topic: ["tax rates", "indirect tax"],
+      why: "The Council sets GST rates, which change the prices of goods and services." },
+    { id: "in-budget", ask: "The date of the next Union Budget presentation in Parliament, if officially announced", title: "Union Budget presented", publisher: "Ministry of Finance", sectors: ["governance", "economy"],
+      key: ["union budget", "budget"], topic: ["fiscal deficit", "income tax", "subsidy", "subsidies", "public spending"],
+      why: "Sets taxes, subsidies and public spending for the coming year." }
+  ] },
+  { id: "us-macro", name: "United States: Federal Reserve and data", domains: ["federalreserve.gov", "bls.gov", "bea.gov"], series: [
+    { id: "fomc", ask: "Federal Reserve FOMC meetings: the day each rate decision is announced", title: "US Federal Reserve rate decision", publisher: "Federal Reserve", sectors: ["economy"],
+      key: ["federal reserve", "fed", "fomc", "powell", "us interest rates"], topic: ["interest rate", "interest rates", "dollar", "treasury yields", "bond yields", "rupee", "capital flows", "foreign investors"],
+      why: "US rates move the dollar and global money flows, which reach the rupee and Indian markets." },
+    { id: "us-cpi", ask: "US Consumer Price Index (CPI) release dates from the Bureau of Labor Statistics", title: "US inflation (CPI) data", publisher: "US Bureau of Labor Statistics", sectors: ["economy"],
+      key: ["us inflation", "american inflation", "consumer price index"], topic: ["inflation", "federal reserve", "fed", "dollar"],
+      why: "US inflation shapes the Fed's next move and so the dollar." },
+    { id: "us-jobs", ask: "US Employment Situation (monthly jobs report) release dates from the Bureau of Labor Statistics", title: "US jobs report", publisher: "US Bureau of Labor Statistics", sectors: ["economy"],
+      key: ["jobs report", "payrolls", "us employment", "us unemployment", "us labour market", "us labor market"], topic: ["federal reserve", "fed", "us economy", "recession"],
+      why: "A key test of the US economy that markets and the Fed react to." }
+  ] },
+  { id: "central-banks", name: "Other central banks", domains: ["ecb.europa.eu", "bankofengland.co.uk", "boj.or.jp", "pbc.gov.cn"], series: [
+    { id: "ecb", ask: "European Central Bank monetary policy meetings: the day each decision is announced", title: "European Central Bank rate decision", publisher: "European Central Bank", sectors: ["economy"],
+      key: ["european central bank", "ecb", "eurozone", "euro area"], topic: ["euro", "europe", "eu economy", "interest rates"],
+      why: "Euro-area rates affect demand for Indian exports to Europe and the euro–rupee rate." },
+    { id: "boe", ask: "Bank of England Monetary Policy Committee announcement dates", title: "Bank of England rate decision", publisher: "Bank of England", sectors: ["economy"],
+      key: ["bank of england", "boe"], topic: ["pound", "sterling", "uk economy", "britain", "interest rates"],
+      why: "UK rates affect the pound and trade with one of India's larger partners." },
+    { id: "boj", ask: "Bank of Japan monetary policy meetings: the day each decision is announced", title: "Bank of Japan rate decision", publisher: "Bank of Japan", sectors: ["economy"],
+      key: ["bank of japan", "boj"], topic: ["yen", "japan", "carry trade", "interest rates"],
+      why: "Japanese rates move the yen and global money flows into emerging markets like India." }
+  ] },
+  { id: "energy", name: "Oil and energy", domains: ["opec.org", "iea.org", "eia.gov"], series: [
+    { id: "opec", ask: "OPEC and OPEC+ ministerial meetings and Joint Ministerial Monitoring Committee (JMMC) meetings", title: "OPEC+ meeting on oil output", publisher: "OPEC", sectors: ["energy"],
+      key: ["opec", "opec+", "oil output", "oil production", "crude oil", "crude"], topic: ["oil", "oil prices", "fuel prices", "petrol", "diesel", "saudi arabia", "brent"],
+      why: "OPEC+ output decisions move crude prices, which feed into India's fuel prices and import bill." },
+    { id: "iea-omr", ask: "IEA Oil Market Report publication dates", title: "IEA Oil Market Report", publisher: "International Energy Agency", sectors: ["energy"],
+      key: ["iea", "international energy agency", "oil demand", "oil supply"], topic: ["oil", "crude", "oil prices"],
+      why: "The IEA's monthly view of world oil supply and demand." },
+    { id: "eia-steo", ask: "EIA Short-Term Energy Outlook release dates", title: "US EIA Short-Term Energy Outlook", publisher: "US Energy Information Administration", sectors: ["energy"],
+      key: ["eia", "energy information administration", "oil price forecast"], topic: ["oil", "crude", "natural gas", "lng", "oil prices"],
+      why: "The US government's forecast for oil and gas prices." }
+  ] },
+  { id: "chip-earnings", name: "Chips and AI: results dates", domains: ["nvidia.com", "tsmc.com", "amd.com", "asml.com"], series: [
+    { id: "nvidia", ask: "NVIDIA's next quarterly financial results date (investor relations announcement)", title: "Nvidia quarterly results", publisher: "NVIDIA", sectors: ["technology"],
+      key: ["nvidia", "gpu", "gpus", "ai chips", "ai chip"], topic: ["semiconductor", "semiconductors", "chip", "chips", "artificial intelligence", "ai", "data centre", "data centres", "data center", "data centers"],
+      why: "Nvidia's results are read as a gauge of worldwide AI and chip demand." },
+    { id: "tsmc", ask: "TSMC's next quarterly earnings conference date (investor relations)", title: "TSMC quarterly results", publisher: "TSMC", sectors: ["technology", "manufacturing"],
+      key: ["tsmc", "taiwan semiconductor"], topic: ["semiconductor", "semiconductors", "chip", "chips", "foundry", "taiwan", "electronics"],
+      why: "TSMC makes most of the world's advanced chips; its outlook signals chip supply and demand." },
+    { id: "amd", ask: "AMD's next quarterly financial results date (investor relations)", title: "AMD quarterly results", publisher: "AMD", sectors: ["technology"],
+      key: ["amd", "advanced micro devices"], topic: ["semiconductor", "semiconductors", "chip", "chips", "ai", "data centre", "data center"],
+      why: "A second read on AI and computer-chip demand." },
+    { id: "asml", ask: "ASML's next quarterly results date (investor relations)", title: "ASML quarterly results", publisher: "ASML", sectors: ["technology", "manufacturing"],
+      key: ["asml", "chipmaking equipment", "lithography"], topic: ["semiconductor", "semiconductors", "chip", "chips", "fab", "export controls"],
+      why: "ASML supplies the machines every chip factory needs; its orders show where chipmaking is heading." }
+  ] },
+  { id: "bigtech-earnings", name: "Big Tech: results dates", domains: ["microsoft.com", "abc.xyz", "apple.com", "aboutamazon.com", "atmeta.com"], series: [
+    { id: "microsoft", ask: "Microsoft's next quarterly earnings release date (investor relations)", title: "Microsoft quarterly results", publisher: "Microsoft", sectors: ["technology"],
+      key: ["microsoft", "azure", "openai"], topic: ["cloud", "ai", "artificial intelligence", "software", "it services", "data centre", "data center"],
+      why: "Shows how much companies are spending on cloud and AI, which drives demand for IT services." },
+    { id: "alphabet", ask: "Alphabet (Google) next quarterly earnings date (investor relations)", title: "Alphabet (Google) quarterly results", publisher: "Alphabet", sectors: ["technology"],
+      key: ["alphabet", "google", "youtube", "gemini"], topic: ["ai", "artificial intelligence", "cloud", "digital advertising", "search engine"],
+      why: "A read on digital advertising and AI spending." },
+    { id: "apple", ask: "Apple's next quarterly results date (investor relations)", title: "Apple quarterly results", publisher: "Apple", sectors: ["technology", "manufacturing"],
+      key: ["apple", "iphone", "iphones"], topic: ["smartphone", "smartphones", "foxconn", "electronics manufacturing", "electronics exports", "pli"],
+      why: "Apple's iPhone production in India makes its results relevant to Indian electronics exports." },
+    { id: "amazon", ask: "Amazon's next quarterly results date (investor relations)", title: "Amazon quarterly results", publisher: "Amazon", sectors: ["technology"],
+      key: ["amazon", "aws"], topic: ["e-commerce", "ecommerce", "cloud", "online retail"],
+      why: "A read on online shopping and cloud spending." },
+    { id: "meta", ask: "Meta Platforms' next quarterly results date (investor relations)", title: "Meta quarterly results", publisher: "Meta", sectors: ["technology"],
+      key: ["meta", "facebook", "instagram", "whatsapp"], topic: ["social media", "ai", "artificial intelligence", "digital advertising"],
+      why: "A read on digital advertising and AI spending; India is among Meta's biggest user bases." }
+  ] },
+  { id: "india-earnings", name: "Indian companies: results dates", domains: ["ril.com", "tcs.com", "infosys.com", "hdfcbank.com", "wipro.com", "hcltech.com", "bseindia.com"], series: [
+    { id: "reliance", ask: "Reliance Industries' next board meeting to approve quarterly results", title: "Reliance Industries quarterly results", publisher: "Reliance Industries", sectors: ["energy", "economy"],
+      key: ["reliance industries", "reliance", "jio", "ril"], topic: ["refining", "telecom", "petrochemicals"],
+      why: "India's largest company by market value; its results span fuel, telecom and retail." },
+    { id: "tcs", ask: "TCS (Tata Consultancy Services) next quarterly results date", title: "TCS quarterly results", publisher: "Tata Consultancy Services", sectors: ["technology"],
+      key: ["tcs", "tata consultancy"], topic: ["it services", "outsourcing", "h-1b", "it jobs", "hiring"],
+      why: "The first read each quarter on demand for Indian IT services and hiring." },
+    { id: "infosys", ask: "Infosys next quarterly results date", title: "Infosys quarterly results", publisher: "Infosys", sectors: ["technology"],
+      key: ["infosys"], topic: ["it services", "outsourcing", "h-1b", "it jobs", "hiring"],
+      why: "A bellwether for Indian IT services demand and hiring." },
+    { id: "hdfcbank", ask: "HDFC Bank next quarterly results date", title: "HDFC Bank quarterly results", publisher: "HDFC Bank", sectors: ["economy"],
+      key: ["hdfc bank", "hdfc"], topic: ["banks", "lending", "loans", "deposits", "credit growth"],
+      why: "India's largest private bank; a read on lending, deposits and loan quality." },
+    { id: "wipro", ask: "Wipro next quarterly results date", title: "Wipro quarterly results", publisher: "Wipro", sectors: ["technology"],
+      key: ["wipro"], topic: ["it services", "outsourcing", "it jobs"], why: "Another read on Indian IT services demand." },
+    { id: "hcltech", ask: "HCLTech next quarterly results date", title: "HCLTech quarterly results", publisher: "HCLTech", sectors: ["technology"],
+      key: ["hcltech", "hcl technologies", "hcl"], topic: ["it services", "outsourcing", "it jobs"], why: "Another read on Indian IT services demand." }
+  ] },
+  { id: "global-meetings", name: "Summits and global meetings", domains: ["unfccc.int", "imf.org", "worldbank.org", "wto.org", "un.org", "g20.org", "brics.br"], series: [
+    { id: "cop", ask: "The next UN Climate Change Conference (COP) dates", title: "UN climate summit (COP)", publisher: "UNFCCC", sectors: ["environment"],
+      key: ["cop31", "cop 31", "cop", "climate summit", "unfccc", "climate talks"], topic: ["climate", "emissions", "carbon", "climate finance", "net zero", "coal"],
+      why: "Climate deals shape India's emission commitments, carbon border taxes and climate finance." },
+    { id: "g20", ask: "The next G20 Leaders' Summit dates", title: "G20 leaders' summit", publisher: "G20", sectors: ["governance", "economy"],
+      key: ["g20", "g-20"], topic: ["global economy", "debt", "world leaders"],
+      why: "Where the largest economies, India included, negotiate trade, debt and finance." },
+    { id: "imf-wb", ask: "IMF and World Bank Annual or Spring Meetings dates, and the next IMF World Economic Outlook release", title: "IMF / World Bank meetings", publisher: "IMF", sectors: ["economy"],
+      key: ["imf", "international monetary fund", "world bank", "world economic outlook"], topic: ["global growth", "debt", "global economy", "recession"],
+      why: "Global growth forecasts and lending decisions that frame India's outlook." },
+    { id: "wto", ask: "WTO General Council or Ministerial Conference dates", title: "WTO meeting", publisher: "World Trade Organization", sectors: ["economy", "governance"],
+      key: ["wto", "world trade organization"], topic: ["tariff", "tariffs", "trade rules", "trade dispute", "fisheries subsidies"],
+      why: "Global trade rules that cover India's exports and farm subsidies." }
+  ] }
+];
+const CAL_SERIES = Object.fromEntries(CAL_GROUPS.flatMap(g => g.series.map(s => [s.id, { ...s, group: g.id }])));
+
+const isoDay = d => new Date(d).toISOString().slice(0, 10);
+const addDays = (iso, n) => isoDay(Date.parse(iso + "T00:00:00Z") + n * 864e5);
+const MONTH_NAMES = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"];
+
+// Is this date written on the page? Accepts "November 19, 2026", "Nov. 19", "19 November", "18–19 November",
+// "November 18-19", "2026-11-19", "19/11/2026", "11/19/2026", "19.11.2026". A date written without its year must have
+// the year close by (a schedule page usually has the year as a heading above the list).
+function dateOnPage(text, iso) {
+  const [y, m, d] = iso.split("-").map(Number); const t = String(text);
+  const mon = MONTH_NAMES[m - 1], ab = mon.slice(0, 3) + (m === 9 ? "t?" : "");
+  const monPat = `(?:${mon}|${ab}\\.?)`, day = `0?${d}(?:st|nd|rd|th)?`;
+  const numeric = [new RegExp(`\\b${y}-0?${m}-0?${d}\\b`), new RegExp(`\\b0?${d}[/.]0?${m}[/.]${y}\\b`), new RegExp(`\\b0?${m}/0?${d}/${y}\\b`)];
+  if (numeric.some(r => r.test(t))) return true;
+  const worded = [
+    new RegExp(`\\b${monPat}\\s+(?:\\d{1,2}(?:st|nd|rd|th)?\\s*(?:-|–|—|to|and|&)\\s*)?${day}\\b`, "gi"),
+    new RegExp(`\\b${day}(?:\\s*(?:-|–|—|to|and|&)\\s*\\d{1,2}(?:st|nd|rd|th)?)?\\s+(?:of\\s+)?${monPat}(?![a-z])`, "gi")
+  ];
+  for (const r of worded) { let x; while ((x = r.exec(t))) { const near = t.slice(Math.max(0, x.index - 4000), x.index + 400); if (near.includes(String(y))) return true; } }
+  return false;
+}
+function pagesFrom(content, domains) {
+  const ok = u => { const h = domainOf(u); return !!h && domains.some(d => h === d || h.endsWith("." + d)); };
+  const pages = [];
+  for (const b of content) {
+    if (b.type !== "web_fetch_tool_result" || b.content?.type !== "web_fetch_result") continue;
+    const doc = b.content.content;
+    if (ok(b.content.url) && doc?.source?.type === "text" && doc.source.data) pages.push({ url: b.content.url, title: doc.title || domainOf(b.content.url), text: String(doc.source.data) });
+  }
+  return { pages, ok };
+}
+
+function calendarPrompt(group, today, until) {
+  return `You keep the calendar of dates to watch for a news product whose readers are in India. Today is ${today}.
+
+TASK
+Find the officially scheduled dates between ${today} and ${until} for each item below. Search only the organisations' own websites.
+${group.series.map(s => `- ${s.id}: ${s.ask}`).join("\n")}
+
+HOW
+1. Search for the organisation's own schedule, calendar or investor-events page.
+2. FETCH the page that lists the dates (an HTML page is best).
+3. Copy each date from that page. Every date is checked automatically against the fetched page, and dates not found there are thrown away.
+Only dates the organisation itself has announced. Never estimate a date from a past pattern ("usually mid-month") and never use news reports. If an item has no announced date in the period, leave it out.
+For a policy meeting that runs several days, give the day the decision is announced. For a summit or conference, give its first day and its last day.
+
+ANSWER FORMAT (one line per date, nothing else):
+EVENT|<id from the list>|<start date YYYY-MM-DD>|<last day YYYY-MM-DD for a multi-day summit, else empty>|<time with time zone as written on the page, or empty>|<URL of the fetched page the date is on>|<short label from the page if useful, e.g. "Q3 FY2027", or empty>
+If nothing is announced for any item, answer only: NONE`;
+}
+async function callCalendar(group, prompt) {
+  let lastErr;
+  for (const model of MODELS.stats) {
+    const messages = [{ role: "user", content: prompt }]; const out = []; let res, body;
+    for (let turn = 0; turn < 3; turn++) {
+      needBudget("stats", turn ? EST.calendar / 2 : EST.calendar);
+      res = await fetch("https://api.anthropic.com/v1/messages", {
+        method: "POST",
+        headers: { "x-api-key": process.env.ANTHROPIC_API_KEY, "anthropic-version": "2023-06-01", "content-type": "application/json" },
+        body: JSON.stringify({ model, max_tokens: 2500, messages, tools: [
+          { type: "web_search_20250305", name: "web_search", max_uses: Math.min(6, group.series.length + 2), allowed_domains: group.domains },
+          { type: "web_fetch_20250910", name: "web_fetch", max_uses: Math.min(6, group.series.length + 1), allowed_domains: group.domains, max_content_tokens: 8000 }
+        ] })
+      });
+      body = await res.json().catch(() => ({}));
+      if (!res.ok) break;
+      const u = usage.calendar ||= { model, calls: 0, inputTokens: 0, outputTokens: 0, searches: 0, fetches: 0 };
+      u.model = model; u.calls++; u.inputTokens += body.usage?.input_tokens || 0; u.outputTokens += body.usage?.output_tokens || 0;
+      u.searches += body.usage?.server_tool_use?.web_search_requests || 0; u.fetches += body.usage?.server_tool_use?.web_fetch_requests || 0;
+      charge("calendar", model, body.usage);
+      out.push(...(body.content || []));
+      if (body.stop_reason !== "pause_turn") break;
+      messages.push({ role: "assistant", content: body.content });
+    }
+    if (res.ok) return out;
+    lastErr = new Error(`Claude API ${res.status} (${model}, calendar): ${body?.error?.message || "unknown error"}`);
+    if (!(res.status === 404 || (res.status === 400 && /model/i.test(body?.error?.message || "")))) break;
+  }
+  throw lastErr;
+}
+function parseCalendar(group, content, today, until) {
+  const { pages, ok } = pagesFrom(content, group.domains);
+  const ids = new Set(group.series.map(s => s.id)); const events = []; const diag = { proposed: 0, kept: 0, notFound: 0, outOfRange: 0, pagesFetched: pages.length };
+  for (const { text, cites } of linesWithCitations(content)) {
+    const f = text.split("|").map(x => x.trim());
+    if (f[0] !== "EVENT") continue;
+    diag.proposed++;
+    const sid = f[1], date = f[2], end = /^\d{4}-\d{2}-\d{2}$/.test(f[3] || "") ? f[3] : "", url = f[5] || "";
+    if (!ids.has(sid) || !/^\d{4}-\d{2}-\d{2}$/.test(date) || isNaN(Date.parse(date))) { diag.notFound++; continue; }
+    if (date < addDays(today, -CAL_KEEP_PAST_DAYS) || date > until) { diag.outOfRange++; continue; }
+    const ordered = [...pages.filter(p => p.url === url), ...pages.filter(p => p.url !== url)];
+    let hit = ordered.find(p => dateOnPage(p.text, date));
+    if (!hit) { const c = cites.find(c => ok(c.url) && dateOnPage(c.cited_text, date)); if (c) hit = { url: c.url, title: c.title || domainOf(c.url) }; }
+    if (!hit) { diag.notFound++; continue; }
+    const s = CAL_SERIES[sid], endOk = end && end > date && end <= addDays(date, 21) && ordered.some(p => dateOnPage(p.text, end)) ? end : "";
+    const label = str(f[6] || "", 30).replace(/[|<>]/g, "");
+    diag.kept++;
+    events.push({ id: `${sid}-${date}`, series: sid, group: group.id, title: s.title + (label && !/^(empty|none|n\/a)$/i.test(label) ? ` (${label})` : ""), date, ...(endOk ? { end: endOk } : {}),
+      ...(f[4] && !/^(empty|none|n\/a)$/i.test(f[4]) ? { time: str(f[4], 40) } : {}), publisher: s.publisher, sectors: s.sectors, key: s.key, topic: s.topic, why: s.why,
+      source: { url: hit.url, title: str(hit.title || domainOf(hit.url), 100), domain: domainOf(hit.url) }, checkedAt: new Date().toISOString() });
+  }
+  const seen = new Set();
+  return { events: events.filter(e => !seen.has(e.id) && seen.add(e.id)).sort((a, b) => a.date.localeCompare(b.date)), diag };
+}
+
+// ---- iCalendar feed (RFC 5545): one for everything and one per sector
+function icsEscape(s) { return String(s || "").replace(/\\/g, "\\\\").replace(/;/g, "\\;").replace(/,/g, "\\,").replace(/\r?\n/g, "\\n"); }
+function icsFold(line) { const out = []; let cur = ""; for (const ch of line) { if (Buffer.byteLength(cur + ch) > 74) { out.push(cur); cur = " " + ch; } else cur += ch; } out.push(cur); return out.join("\r\n"); }
+function siteUrl() { const [o, r] = String(process.env.GITHUB_REPOSITORY || "mukul99vashist-sudo/intelligence-engine").split("/"); return `https://${o}.github.io/${r}/`; }
+function buildIcs(events, name) {
+  const stamp = new Date().toISOString().replace(/[-:]/g, "").replace(/\.\d+/, "");
+  const lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//The Continent Connect//Dates to watch//EN", "CALSCALE:GREGORIAN", "METHOD:PUBLISH",
+    `X-WR-CALNAME:${icsEscape(name)}`, "X-WR-CALDESC:Officially scheduled dates behind the news: rate decisions\\, data releases\\, results and summits.",
+    "REFRESH-INTERVAL;VALUE=DURATION:PT12H", "X-PUBLISHED-TTL:PT12H"];
+  for (const e of events) {
+    const endEx = addDays(e.end || e.date, 1).replace(/-/g, "");
+    const desc = [e.why, e.time ? `Time: ${e.time}` : "", `Official source: ${e.source.url}`, `Stories and analysis: ${siteUrl()}`].filter(Boolean).join("\n\n");
+    lines.push("BEGIN:VEVENT", `UID:${e.id}@continent-connect`, `DTSTAMP:${stamp}`, `DTSTART;VALUE=DATE:${e.date.replace(/-/g, "")}`, `DTEND;VALUE=DATE:${endEx}`,
+      `SUMMARY:${icsEscape(e.title)}`, `DESCRIPTION:${icsEscape(desc)}`, `URL:${e.source.url}`, "TRANSP:TRANSPARENT",
+      "BEGIN:VALARM", "ACTION:DISPLAY", `DESCRIPTION:${icsEscape(e.title)}`, "TRIGGER:-PT15H", "END:VALARM", "END:VEVENT");
+  }
+  lines.push("END:VCALENDAR");
+  return lines.map(icsFold).join("\r\n") + "\r\n";
+}
+async function writeIfChanged(path, text) { let old = null; try { old = await fs.readFile(path, "utf8"); } catch {} if (old !== text) { await fs.writeFile(path, text); return true; } return false; }
+
+async function refreshCalendar() {
+  const cal = await readJson(CALENDAR_FILE, { groups: {}, events: [] });
+  cal.groups ||= {}; cal.events ||= [];
+  const today = indiaDay(), until = addDays(today, CAL_AHEAD_DAYS), staleBefore = new Date(Date.now() - CAL_REFRESH_DAYS * 864e5).toISOString();
+  const due = CAL_GROUPS.filter(g => !(cal.groups[g.id]?.checkedAt > staleBefore))
+    .sort((a, b) => String(cal.groups[a.id]?.checkedAt || "").localeCompare(String(cal.groups[b.id]?.checkedAt || ""))).slice(0, CAL_GROUPS_PER_RUN);
+  const run = { at: new Date().toISOString(), groups: [] }; usage = {};
+  for (const g of due) {
+    try {
+      const { events, diag } = parseCalendar(g, await callCalendar(g, calendarPrompt(g, today, until)), today, until);
+      // Replace a series' dates only when this check found dates for it; otherwise keep what we had.
+      const found = new Set(events.map(e => e.series));
+      cal.events = [...cal.events.filter(e => !found.has(e.series)), ...events];
+      cal.groups[g.id] = { name: g.name, checkedAt: new Date().toISOString(), ...diag };
+      run.groups.push({ id: g.id, ...diag });
+    } catch (e) {
+      if (e instanceof BudgetError) { run.budgetStopped = true; break; }
+      console.error(`Calendar ${g.id} failed: ${e.message}`); run.groups.push({ id: g.id, error: str(e.message, 160) });
+      cal.groups[g.id] = { ...(cal.groups[g.id] || {}), name: g.name, failedAt: new Date().toISOString() };
+    }
+  }
+  // Drop past dates and dates for series no longer on the list; refresh the static fields from the definitions.
+  const keepFrom = addDays(today, -CAL_KEEP_PAST_DAYS);
+  cal.events = cal.events.filter(e => CAL_SERIES[e.series] && (e.end || e.date) >= keepFrom)
+    .map(e => { const s = CAL_SERIES[e.series]; return { ...e, publisher: s.publisher, sectors: s.sectors, key: s.key, topic: s.topic, why: s.why }; })
+    .sort((a, b) => a.date.localeCompare(b.date) || a.id.localeCompare(b.id));
+  cal.schema = 1; cal.feed = "data/calendar.ics";
+  cal.sectorFeeds = Object.fromEntries(SECTORS.filter(s => cal.events.some(e => e.sectors.includes(s.id))).map(s => [s.id, `data/calendar-${s.id}.ics`]));
+  if (due.length) { cal.lastRun = { ...run, spend: usage.calendar?.cost || 0, models: usage }; cal.updatedAt = new Date().toISOString(); }
+  const json = JSON.stringify(cal, null, 1) + "\n";
+  let old = null; try { old = await fs.readFile(CALENDAR_FILE, "utf8"); } catch {}
+  const sameEvents = old && JSON.stringify(JSON.parse(old).events) === JSON.stringify(cal.events);
+  if (!old || due.length || !sameEvents) {
+    await fs.writeFile(CALENDAR_FILE, json);
+    await writeIfChanged("data/calendar.ics", buildIcs(cal.events, "The Continent Connect: dates to watch"));
+    for (const s of SECTORS) {
+      const evs = cal.events.filter(e => e.sectors.includes(s.id)), path = `data/calendar-${s.id}.ics`;
+      if (evs.length) await writeIfChanged(path, buildIcs(evs, `The Continent Connect: ${s.name} dates`));
+      else await fs.rm(path, { force: true });
+    }
+  }
+  console.log(`Calendar: ${due.length ? due.map(g => g.id).join(", ") + " checked; " : "nothing due; "}${cal.events.length} upcoming dates on file.`);
+  return run;
+}
+
 async function callClaude(prompt, job, level = "core") {
   needBudget(level, EST[job] || 0.1);
   let lastErr;
@@ -1032,6 +1330,8 @@ export async function main() {
   console.log(`Budget: $${budget.spent.toFixed(2)} of $${DAILY_BUDGET} used today (${budget.day}, India time)`);
   let deskFailed = false;
   try {
+    // Dates to watch: a couple of organisations' official calendars are re-checked each run (each one weekly).
+    try { await refreshCalendar(); await saveBudget(); } catch (e) { console.error(`Calendar update failed: ${e.message}`); }
     for (const desk of DESKS) {
       console.log(`\n=== ${desk.id} desk ===`);
       const r = await runDesk(desk);
