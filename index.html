@@ -20,7 +20,8 @@
 </script>
 <style>
 :root{
-  --bg:#F4F0E8; --bg-2:#EAE5DA; --card:#F9F6EF; --ink:#1D1D1F; --ink-2:#424245; --ink-3:#6E6E73; --rule:#E3E3E8;
+  --bg:#F1E8D2; --bg-2:#E8DDC3; --card:#F8F2E4; --ink:#1D1D1F; --ink-2:#3F3D39; --ink-3:#6B665C; --rule:#D9CDB1;
+  --tile:#F8F2E4; --tile-line:#C2B48F;
   --accent:#D9480F; --ok:#1A7F5A; --shadow:0 1px 2px rgba(0,0,0,.04),0 6px 18px rgba(0,0,0,.06);
   --s-energy:#C2410C; --s-logistics:#0E7490; --s-economy:#4338CA; --s-technology:#7C3AED;
   --s-manufacturing:#B45309; --s-environment:#15803D; --s-agriculture:#65A30D; --s-governance:#BE123C;
@@ -31,6 +32,7 @@
 }
 :root[data-theme="dark"]{
   --bg:#000000; --bg-2:#1C1C1E; --card:#1C1C1E; --ink:#F5F5F7; --ink-2:#D1D1D6; --ink-3:#98989D; --rule:#2C2C2E;
+  --tile:#121214; --tile-line:#3A3A3E;
   --accent:#FF6A2B; --ok:#34C77B; --shadow:none;
   --s-energy:#FB923C; --s-logistics:#22D3EE; --s-economy:#A5B4FC; --s-technology:#C4B5FD;
   --s-manufacturing:#FBBF24; --s-environment:#4ADE80; --s-agriculture:#A3E635; --s-governance:#FB7185; color-scheme:dark;
@@ -656,6 +658,19 @@ footer{margin-top:28px;font-size:12.5px;color:var(--ink-3);line-height:1.6;width
   .mz>.nc .thumb{flex:none;aspect-ratio:16/9;min-height:0;order:-1}
   .s-xl .nc-head{font-size:28px} .nc-head{font-size:20px}
 }
+/* v36: clear boundaries between stories: each tile is its own lighter panel with a visible rule; still no gaps */
+.mz{border-top:1px solid var(--tile-line);border-left:1px solid var(--tile-line)}
+.mz>.nc,.mz>.ng-fill{border-right:1px solid var(--tile-line);border-bottom:1px solid var(--tile-line);background:var(--tile)}
+.mz>.nc:hover{background:color-mix(in srgb,var(--tile) 70%,var(--bg-2))}
+.mz>.nc .nc-txt{padding:18px 20px}
+.mz>.s-xl .nc-txt{padding:26px 26px 22px}
+.mz .thumb{box-shadow:inset 0 0 0 1px rgba(0,0,0,.04)}
+.mz>.nc .nc-foot{border-top:1px dashed color-mix(in srgb,var(--tile-line) 55%,transparent);padding-top:10px}
+/* v37: an even, narrow gutter between stories; each story is its own bordered panel */
+.mz{gap:12px;border:0}
+.mz>.nc{border:1px solid var(--tile-line);border-radius:6px;overflow:hidden}
+.mz>.ng-fill{border:0;background:transparent}
+@media (max-width:640px){ .mz{gap:10px} }
 </style>
 </head>
 <body data-rail="left">
