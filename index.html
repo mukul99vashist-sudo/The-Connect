@@ -735,6 +735,8 @@ footer{margin-top:28px;font-size:12.5px;color:var(--ink-3);line-height:1.6;width
   .mz>.s-wide .thumb,.mz>.s-half .thumb,.mz>.s-full .thumb{flex:0 0 42%!important;aspect-ratio:auto!important}
 }
 @media (max-width:640px){ .mz>.nc .thumb{flex:none!important;aspect-ratio:16/9!important} }
+.fw-basis{margin:8px 0 0;font-size:12.5px;color:var(--ink-3);line-height:1.45}
+.fw-basis b{color:var(--ink-2);font-weight:600}
 </style>
 </head>
 <body data-rail="left">
@@ -1018,7 +1020,14 @@ function renderFramework(it){
   if(a.horizon){ var hz=el("div","segs cool"), hi=HORIZON_LIST.indexOf(a.horizon.value); HORIZON_LIST.forEach(function(x,i){ hz.appendChild(el("i",i===hi?"on":null)); }); dials.appendChild(gaugeHelp(dial("When it is felt",HORIZON_WORD[a.horizon.value],hz,a.horizon.reason||"Now · weeks · months · years"),"horizon",a.horizon.value)); }
   if(a.confidence){ var no=outletsOf(it).length, cl=(a.confidence.level==="high" && no<3) ? "medium" : a.confidence.level;   // same rule as the engine, also for older analyses
     dials.appendChild(gaugeHelp(dial("Confidence",cap(cl),segs(LEVEL_N[cl]||0,3,true),a.confidence.reason),"confidence",cl,"This story: "+no+" outlet"+(no===1?"":"s")+".")); }
-  if(dials.children.length) b.appendChild(dials);
+  if(dials.children.length){ b.appendChild(dials);
+    // Which coverage these verdicts rest on: each desk judges only from its own outlets.
+    var outs=outletsOf(it), names=outs.map(function(o){return OUTLET[o]||o;});
+    var basis=el("p","fw-basis");
+    basis.appendChild(el("b",null,"Based on "+(view==="domestic"?"Indian":"international")+" coverage"));
+    basis.appendChild(document.createTextNode(" · "+outs.length+" outlet"+(outs.length===1?"":"s")+": "+names.join(", ")));
+    basis.title="Global impact and Inside India judge each story only from their own outlets, so the same event can get different verdicts on the two views.";
+    b.appendChild(basis); }
   [a.primary,a.complement].forEach(function(k){ var f=k && a.frameworks[k]; if(!f || !FW_RENDER[k]) return; var s=sec(FW_NAME[k], k===a.complement?"Deep-dive complement":null); s.classList.add("fw-"+k); try{ FW_RENDER[k](f,s); }catch(e){ return; } b.appendChild(s); });
   if(a.affected&&a.affected.length){ var af=sec("Who in India feels it"), ag=el("div","fw-aff");
     a.affected.forEach(function(x){ var d=el("div","aff"+(x.basis==="inferred"?" inf":"")); d.appendChild(el("span","arrow",ARROW[x.direction]||"?")); var t=el("b",null,x.group); d.appendChild(t); d.appendChild(el("span",null,(x.what?cap(x.what)+" "+(DIR_WORD[x.direction]||""):"")+(x.basis==="inferred"?" · inferred":""))); ag.appendChild(d); });
