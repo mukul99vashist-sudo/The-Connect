@@ -10,6 +10,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,500;1,700&display=swap" rel="stylesheet">
 <meta name="description" content="Two views of India's news: how world events from thirteen outlets on six continents reach India, and the developments inside India from The Hindu and Mint, sorted by sector with what each could mean.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛰️</text></svg>">
+<script>
+/* Theme: the visitor's saved choice, otherwise the device setting. Set before the page paints. */
+(function(){ var t=null; try{ t=localStorage.getItem("tcc.theme"); }catch(e){}
+  if(t!=="light" && t!=="dark") t=(window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches) ? "dark" : "light";
+  document.documentElement.setAttribute("data-theme",t); })();
+</script>
 <style>
 :root{
   --bg:#FFFFFF; --bg-2:#F5F5F7; --card:#FFFFFF; --ink:#1D1D1F; --ink-2:#424245; --ink-3:#6E6E73; --rule:#E3E3E8;
@@ -117,6 +123,15 @@ body.rail-collapsed .si .nm,body.rail-collapsed .si .ct{display:none}
 .range{display:flex;align-items:center;gap:8px;font-size:13.5px;color:var(--ink-3)}
 .range select{font:600 14px var(--sans);color:var(--ink);background:var(--card);border:1px solid var(--rule);border-radius:999px;padding:8px 32px 8px 14px;appearance:none;-webkit-appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--ink-3) 50%),linear-gradient(135deg,var(--ink-3) 50%,transparent 50%);background-position:calc(100% - 17px) 55%,calc(100% - 12px) 55%;background-size:5px 5px,5px 5px;background-repeat:no-repeat;cursor:pointer}
 
+/* Light / dark theme toggle (top right) */
+.mast{position:relative}
+.mast-right{display:flex;flex-direction:column;align-items:flex-end;gap:10px;justify-self:end}
+.themebtn{width:40px;padding:0}
+.themebtn svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+@media (max-width:820px){
+  .mast-right{order:3;justify-self:center;align-items:center}
+  .themebtn{position:absolute;top:10px;right:0}
+}
 /* Masthead (legacy) */
 .mast{display:flex;justify-content:space-between;align-items:flex-end;gap:12px 24px;flex-wrap:wrap;padding:8px 0 14px}
 .date{font:700 13px/1 var(--sans);letter-spacing:.06em;text-transform:uppercase;color:var(--accent);margin:0 0 6px}
@@ -183,7 +198,7 @@ h1{font:800 clamp(34px,5vw,46px)/1 var(--sans);letter-spacing:-.025em;margin:0}
 .brief .pub{border-left:3px solid var(--sc,var(--accent));padding-left:14px;display:flex;flex-direction:column;gap:10px}
 .brief .stand{margin:0;font-size:18px;line-height:1.45;font-weight:700;color:var(--ink)}
 .brief .lede{margin:0;font-size:16.5px;line-height:1.6;color:var(--ink-2)}
-.brief .cta{align-self:flex-start;display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:700;font-size:15px;color:#fff;background:var(--ink);border-radius:999px;padding:11px 18px}
+.brief .cta{align-self:flex-start;display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:700;font-size:15px;color:var(--bg);background:var(--ink);border-radius:999px;padding:11px 18px}
 .brief .cta:hover{opacity:.9}
 @media (max-width:900px){.hero-row{grid-template-columns:minmax(0,1fr)}}
 /* The story so far */
@@ -418,8 +433,8 @@ footer .disc{display:block;margin:0 0 4px}
 .esc{list-style:none;margin:0;padding:0;display:grid;gap:3px}
 .esc li{display:grid;grid-template-columns:30px minmax(0,1fr);gap:10px;align-items:center;padding:7px 10px;border-radius:8px;background:var(--bg-2);font-size:13px;color:var(--ink-3)}
 .esc li.below{background:color-mix(in srgb,var(--k-breaking) 10%,var(--bg-2));color:var(--ink-2)}
-.esc li.now{background:var(--k-breaking);color:#fff}
-.esc li.now span{color:#fff}
+.esc li.now{background:var(--k-breaking);color:var(--k-on)}
+.esc li.now span{color:var(--k-on)}
 .esc li.prev{outline:1px dashed var(--k-breaking)}
 .esc .n{font-weight:800;text-align:center}
 .esc b{display:block;font-size:13px}
@@ -536,7 +551,10 @@ footer{margin-top:28px;font-size:12.5px;color:var(--ink-3);line-height:1.6;width
       <h1 class="brand"><a href="./" id="brandLink" title="Refresh The Continent Connect"><span class="the">The</span> Continent <em>Connect</em></a></h1>
       <p class="sub" id="sub">How today's world news reaches India.</p>
     </div>
-    <div class="status" id="status" aria-live="polite"></div>
+    <div class="mast-right">
+      <button class="iconbtn themebtn" id="themeBtn" type="button" aria-label="Switch to dark theme" title="Switch to dark theme"></button>
+      <div class="status" id="status" aria-live="polite"></div>
+    </div>
   </header>
 
   <div class="layout" id="layout">
@@ -942,6 +960,21 @@ function renderStatus(doc){
   line.title=src.map(function(x){return x.name+(x.region?" ("+x.region+")":"");}).join(", ");
   s.appendChild(line);
 }
+/* Theme toggle: moon in light mode, sun in dark mode; remembered per visitor. */
+(function(){
+  var b=$("themeBtn"); if(!b) return;
+  var MOON='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>';
+  var SUN='<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>';
+  function paint(){ var dark=document.documentElement.getAttribute("data-theme")==="dark", next=dark?"light":"dark";
+    b.innerHTML=dark?SUN:MOON; b.setAttribute("aria-label","Switch to "+next+" theme"); b.title="Switch to "+next+" theme"; }
+  b.addEventListener("click",function(){ var t=document.documentElement.getAttribute("data-theme")==="dark"?"light":"dark";
+    document.documentElement.setAttribute("data-theme",t); try{ localStorage.setItem("tcc.theme",t); }catch(e){} paint(); });
+  // Follow the device setting until the visitor picks a theme.
+  if(window.matchMedia){ var mq=matchMedia("(prefers-color-scheme: dark)"), on=function(e){ var saved=null; try{ saved=localStorage.getItem("tcc.theme"); }catch(x){}
+    if(saved!=="light" && saved!=="dark"){ document.documentElement.setAttribute("data-theme",e.matches?"dark":"light"); paint(); } };
+    if(mq.addEventListener) mq.addEventListener("change",on); else if(mq.addListener) mq.addListener(on); }
+  paint();
+})();
 /* Kind of report: each chip filters the page to that kind; click it again (or "Show all") to clear. */
 var kindFilter=null, KIND_ORDER=["hard","breaking","investigative","soft","feature"];
 function renderKindsKey(){
