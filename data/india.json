@@ -2,12 +2,102 @@
   "schema": 4,
   "region": "India",
   "since": "2026-10-02",
-  "updatedAt": "2026-10-17T15:45:31.701Z",
+  "updatedAt": "2026-10-17T20:47:01.495Z",
   "sectors": [
     {
       "id": "energy",
       "name": "Energy",
       "items": [
+        {
+          "id": "s1r2qmg9",
+          "headline": "U.S. Floats Lifeline to Russia: Allowing More Gas Sales to Europe",
+          "url": "https://www.nytimes.com/2026/10/17/us/politics/russia-gas-trump.html",
+          "source": "nyt",
+          "date": "2026-10-17T18:00:45.000Z",
+          "relevance": "medium",
+          "image": "https://static01.nyt.com/images/2026/10/17/multimedia/00dc-trump-russia-gas-gtph/00dc-trump-russia-gas-gtph-mediumSquareAt3X.jpg",
+          "why": "A US proposal to allow more Russian gas sales to Europe could reshape global energy flows and Russia's revenues, with only indirect effects on India.",
+          "implications": [
+            "More Russian gas reaching Europe could ease European demand for other suppliers, which may affect global gas prices.",
+            "Critics say Russia would be strengthened, which could affect how the Ukraine conflict and related energy trade develop.",
+            "The idea is only floated and Europe is wary, so any effect on India remains uncertain."
+          ],
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-17T20:45:13.845Z",
+            "tier": "quick",
+            "primary": "escalation",
+            "complement": null,
+            "features": [
+              "armed_conflict",
+              "trade_flow",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "Only a proposal; reports show no direct mechanism reaching Indian fuel or trade."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Idea is tied to a peace deal not yet agreed."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "Single outlet; proposal only, with Europe wary and critics opposed."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "global energy price conditions",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Whether European governments accept or reject the proposal on Russian gas sales",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "Whether the US formally changes any measures on Russian gas as part of a peace deal",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "frameworks": {
+              "escalation": {
+                "current_rung": 1,
+                "evidence": "The Trump administration is floating the idea as part of a Ukraine peace deal; no measure is reported as enacted.",
+                "previous_rung": null,
+                "next_signals": [
+                  {
+                    "rung": 2,
+                    "signal": "US or Europe formally announces a change to measures on Russian gas sales"
+                  }
+                ],
+                "india_channels": [
+                  "oil",
+                  "trade"
+                ]
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "nyt",
+              "headline": "U.S. Floats Lifeline to Russia: Allowing More Gas Sales to Europe",
+              "url": "https://www.nytimes.com/2026/10/17/us/politics/russia-gas-trump.html",
+              "date": "2026-10-17T18:00:45.000Z",
+              "kind": "hard",
+              "summary": "The Trump administration is pitching the idea as part of a peace deal with Ukraine, but Europe is wary and critics say Russia would be strengthened.",
+              "summaryV": 3,
+              "image": "https://static01.nyt.com/images/2026/10/17/multimedia/00dc-trump-russia-gas-gtph/00dc-trump-russia-gas-gtph-mediumSquareAt3X.jpg"
+            }
+          ],
+          "thread": "t1hzeedz"
+        },
         {
           "id": "s1jxzxim",
           "headline": "Egypt’s Sisi seeks authorisation for defence assistance to Saudi Arabia",
@@ -443,37 +533,36 @@
           "source": "cnbc",
           "date": "2026-10-16T20:02:21.000Z",
           "relevance": "high",
-          "why": "CNBC reports Brent touched $110 as Iran escalated Hormuz attacks, which could raise India's crude import bill and, in time, fuel costs.",
+          "why": "Brent touched $110, its highest since May, on Iran's Hormuz attacks and Russian diesel doubts. That could raise India's crude import costs and pressure fuel prices.",
           "implications": [
-            "CNBC reports Brent touched $110 after Iran escalated attacks in the Strait of Hormuz this week.",
-            "Higher crude prices could raise India's oil import costs and may feed into fuel prices.",
-            "CNBC's headline also says Ukraine vowed to hit Russian refineries, which could add to supply worries."
+            "Brent reached $110 a barrel for the first time since May as Iran escalated attacks in the Strait of Hormuz.",
+            "Fears of tighter Middle East supply and doubts over Russian diesel supply are driving prices, CNBC and MercoPress report.",
+            "As a large crude importer, India may face a higher oil import bill and pressure on domestic fuel prices."
           ],
           "analysis": {
             "v": 2,
-            "at": "2026-10-16T21:14:57.339Z",
-            "tier": "quick",
+            "at": "2026-10-17T20:46:50.667Z",
+            "tier": "standard",
             "primary": "disruption_map",
             "complement": null,
             "features": [
               "disruption",
               "armed_conflict",
-              "price_move",
-              "pending_outcome"
+              "price_move"
             ],
             "exposure": {
               "level": "high",
-              "reason": "Crude is a top Indian import and feeds fuel prices, a household essential."
+              "reason": "Crude oil is a top Indian import and drives fuel prices."
             },
             "horizon": {
               "value": "weeks",
-              "reason": "Crude price moves may pass into fuel costs over weeks."
+              "reason": "Crude price moves typically pass to fuel costs with lag."
             },
             "confidence": {
-              "level": "low",
-              "reason": "Single outlet, brief summary, no official source cited."
+              "level": "medium",
+              "reason": "Two outlets agree on the price; no on-record official source."
             },
-            "outlets": 1,
+            "outlets": 2,
             "affected": [
               {
                 "group": "Fuel & LPG users",
@@ -490,18 +579,23 @@
               {
                 "group": "Government finances",
                 "direction": "unclear",
-                "what": "oil import bill pressure",
+                "what": "oil import bill",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "Whether Brent stays near $110 after Friday's rise",
+                "what": "Whether Brent holds above $110 a barrel",
                 "when": "",
                 "where": ""
               },
               {
                 "what": "Further Iranian attacks in the Strait of Hormuz",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "Ukrainian strikes on Russian refineries affecting diesel supply",
                 "when": "",
                 "where": ""
               }
@@ -512,16 +606,21 @@
                   "name": "Strait of Hormuz",
                   "type": "strait",
                   "status": "unknown",
-                  "as_of": "2026-10-16, attacks escalated 'this week"
+                  "as_of": "2026-10-16 (attacks escalated this week)"
                 },
                 "cause": {
-                  "text": "CNBC reports Iran escalated attacks in the Strait this week",
-                  "status": "alleged"
+                  "text": "Iran escalated attacks in the Strait of Hormuz",
+                  "status": "confirmed"
                 },
                 "flows": [
                   {
                     "flow": "crude",
-                    "india_link": "Brent at $110 could raise India's crude import costs",
+                    "india_link": "Higher crude prices could raise India's oil import costs",
+                    "basis": "inferred"
+                  },
+                  {
+                    "flow": "other",
+                    "india_link": "Doubts over Russian diesel supply may tighten global fuel markets",
                     "basis": "inferred"
                   }
                 ],
@@ -8111,70 +8210,121 @@
           "relevance": "medium",
           "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c147/live/f608c860-c9cf-11f1-84c1-fd3c3266bb86.jpg",
           "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/c147/live/f608c860-c9cf-11f1-84c1-fd3c3266bb86.jpg",
-          "why": "BBC reports Trump has waived several Russia sanctions under a new US law. Any effect on India's Russia-linked trade is not stated and would depend on which measures are waived.",
+          "why": "Trump has waived new US sanctions and tariffs on Russia. That could ease pressure on global oil trade involving Russia and affect fuel costs for importers like India.",
           "implications": [
-            "The BBC says Trump called parts of the law against US national interests. Which sanctions are waived is not detailed in the report.",
-            "Indian firms trading with Russia may face a different compliance picture if the waivers are broad. This is not reported."
+            "Al Jazeera analysts say Russia will benefit most from the waiver, which could keep Russian oil flowing with fewer US barriers.",
+            "The New York Times links the waiver to US fears of high energy prices, a pressure that may also matter for oil importers.",
+            "Bipartisan backlash in Congress means the relief could be challenged, so the risk to Russian trade remains uncertain."
           ],
           "analysis": {
             "v": 2,
-            "at": "2026-10-17T04:42:32.737Z",
-            "tier": "quick",
-            "primary": "policy_tracker",
-            "complement": null,
+            "at": "2026-10-17T20:46:50.666Z",
+            "tier": "deep",
+            "primary": "trade_flow",
+            "complement": "scenarios",
             "features": [
-              "policy_stage"
+              "trade_flow",
+              "policy_stage",
+              "fast_moving",
+              "pending_outcome"
             ],
             "exposure": {
-              "level": "low",
-              "reason": "Report has no India mechanism; effects on Russia-linked trade are indirect and unclear."
+              "level": "medium",
+              "reason": "Reports do not name India; the link to crude buyers and fuel costs is inferred."
             },
             "horizon": {
-              "value": "months",
-              "reason": "Scope of waivers unknown; any trade effect would take time."
+              "value": "weeks",
+              "reason": "Waiver took effect just before the sanctions deadline."
             },
             "confidence": {
-              "level": "low",
-              "reason": "Single outlet; relies on Trump's own statement; waiver details missing."
+              "level": "high",
+              "reason": "Several outlets agree; Trump formally notified Congress of the pause."
             },
-            "outlets": 1,
+            "outlets": 6,
             "affected": [
               {
                 "group": "Importers & traders",
+                "direction": "down",
+                "what": "sanction risk on Russian trade",
+                "basis": "inferred"
+              },
+              {
+                "group": "Fuel & LPG users",
                 "direction": "unclear",
-                "what": "Russia-linked trade compliance",
+                "what": "fuel prices",
+                "basis": "inferred"
+              },
+              {
+                "group": "Government finances",
+                "direction": "unclear",
+                "what": "oil import bill",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "Official list and scope of the sanctions Trump has waived",
+                "what": "Congressional move to override or restore the waived Graham Act sanctions",
                 "when": "",
-                "where": ""
+                "where": "US Congress"
+              },
+              {
+                "what": "Progress or expansion of the US-Russia diesel deal",
+                "when": "",
+                "where": "White House"
+              },
+              {
+                "what": "Russian response to the US economic relief",
+                "when": "",
+                "where": "Kremlin"
               }
             ],
             "frameworks": {
-              "policy_tracker": {
-                "instrument": {
-                  "name": "New US law punishing Moscow for its war against Ukraine",
-                  "issuer": "United States",
-                  "jurisdiction": "United States"
+              "trade_flow": {
+                "good": "Russian oil and diesel",
+                "actors": [
+                  {
+                    "country": "Russia",
+                    "role": "exporter",
+                    "is_india": false
+                  },
+                  {
+                    "country": "United States",
+                    "role": "third_party",
+                    "is_india": false
+                  }
+                ],
+                "change": {
+                  "type": "other",
+                  "effective": ""
                 },
-                "stages": [
+                "india_position": {
+                  "role": "competing_buyer",
+                  "note": "Reports do not name India; any Indian purchases of Russian oil could face less US pressure."
+                },
+                "volumes": []
+              },
+              "scenarios": {
+                "question": "Will Trump's waiver of the Graham Act sanctions survive congressional backlash?",
+                "scenarios": [
                   {
-                    "stage": "in_force",
-                    "date": "",
-                    "status": "current"
-                  }
-                ],
-                "obligations": [
+                    "name": "Waiver holds",
+                    "what": "Sanctions and tariffs stay suspended on national interest grounds, as Trump told Congress.",
+                    "signal": "No congressional action to reinstate sanctions",
+                    "india_effect": "Russian oil trade may face fewer US barriers."
+                  },
                   {
-                    "who": "US administration",
-                    "what": "Several sanctions under the law waived by Trump as against US national interests",
-                    "from": ""
+                    "name": "Congress pushes back",
+                    "what": "Bipartisan critics try to restore the sanctions Congress passed.",
+                    "signal": "Congressional vote or bill to reverse the waiver",
+                    "india_effect": "Sanction and tariff risk on Russian trade could return."
+                  },
+                  {
+                    "name": "Russia reciprocates",
+                    "what": "Russia returns the favour the administration hopes for, building on the diesel deal.",
+                    "signal": "Announced Russian concessions or wider diesel supply",
+                    "india_effect": "Easier energy supply could soften global fuel prices."
                   }
-                ],
-                "applies_to_india": "partly"
+                ]
               }
             }
           },
@@ -8248,6 +8398,35 @@
               "summaryV": 3,
               "lede": "Power plant attacks reflect Russian blueprint to make Ukrainian cities unlivable",
               "image": "https://i.guim.co.uk/img/media/66d7fc900581121c0e7d134eb1ebcd4cda702d73/153_0_5000_4000/master/5000.jpg?width=700&quality=85&auto=format&fit=max&s=3059451b60d02883bac9c9c670b320c8"
+            },
+            {
+              "source": "nyt",
+              "headline": "Trump Signs Order Waiving New Russia Sanctions",
+              "url": "https://www.nytimes.com/2026/10/16/us/politics/trump-order-russia-sanctions.html",
+              "date": "2026-10-17T13:30:38.000Z",
+              "kind": "hard",
+              "summary": "The sanctions were part of a measure that was named after Senator Lindsey Graham, the South Carolina Republican who died in July.",
+              "summaryV": 3,
+              "image": "https://static01.nyt.com/images/2025/08/16/multimedia/16dc-russia-sanctions/16dc-russia-sanctions-mediumSquareAt3X-v2.jpg"
+            },
+            {
+              "source": "aljazeera",
+              "headline": "Trump faces bipartisan backlash over Russia sanctions waiver",
+              "url": "https://www.aljazeera.com/news/2026/10/17/trump-faces-bipartisan-backlash-over-russia-sanctions-waiver",
+              "date": "2026-10-17T17:24:07.000Z",
+              "kind": "hard",
+              "summary": "Republicans and Democrats condemn Trump’s decision to suspend sanctions, saying it undermines support for Ukraine.",
+              "summaryV": 3
+            },
+            {
+              "source": "nyt",
+              "headline": "Trump Offers Putin Economic Relief in Hopes That Russia Will Return the Favor",
+              "url": "https://www.nytimes.com/2026/10/17/business/trump-russia-sanctions-congress.html",
+              "date": "2026-10-17T20:05:51.000Z",
+              "kind": "hard",
+              "summary": "The Trump administration is ignoring the will of Congress and waiving new Russia sanctions amid fears that high energy prices will cost Republicans in next month’s elections.",
+              "summaryV": 3,
+              "image": "https://static01.nyt.com/images/2026/10/17/multimedia/17DC-RUSSIA-SANX-qczf/17DC-RUSSIA-SANX-qczf-mediumSquareAt3X.jpg"
             }
           ],
           "thread": "t1nate9f"
@@ -11542,6 +11721,100 @@
       "name": "Technology",
       "items": [
         {
+          "id": "sin9vgt",
+          "headline": "Semiconductor market to remain solid ‘at least through next year,’ South Korea finance minister says",
+          "url": "https://www.cnbc.com/2026/10/17/south-korea-semiconductor-outlook-lee-hyoung-il.html",
+          "source": "cnbc",
+          "date": "2026-10-17T16:45:15.000Z",
+          "relevance": "medium",
+          "why": "South Korea expects tight chip supply to last through 2027, which could keep component supply and costs under pressure for Indian electronics makers and importers.",
+          "implications": [
+            "Tight supply could keep chip availability constrained for Indian firms that import components.",
+            "Costs of electronics that use imported chips may stay firm, though the reports give no price data.",
+            "The reports do not mention India, so the effect depends on how the global chip sell-off plays out."
+          ],
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-17T20:45:13.844Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "low",
+              "reason": "Reports give no direct India mechanism; effect on electronics importers is indirect."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Outlook runs through 2027; pass-through to Indian buyers is gradual."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "One outlet, but quotes an on-record official, South Korea's finance minister."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "chip and component costs",
+                "basis": "inferred"
+              },
+              {
+                "group": "Manufacturing workers",
+                "direction": "unclear",
+                "what": "electronics input availability",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Whether the global chip sell-off deepens or eases against the stated tight-supply outlook",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Korea expects strong chip market",
+                    "detail": "Finance minister says semiconductor growth can last at least through 2027.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Supply stays tight",
+                    "detail": "Supply remains tight despite a global chip sell-off.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Indian buyers may feel it",
+                    "detail": "Indian electronics makers and importers could face limited supply or firmer component costs.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "Chip supply loosens or the sell-off cuts demand enough to ease component shortages."
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "cnbc",
+              "headline": "Semiconductor market to remain solid ‘at least through next year,’ South Korea finance minister says",
+              "url": "https://www.cnbc.com/2026/10/17/south-korea-semiconductor-outlook-lee-hyoung-il.html",
+              "date": "2026-10-17T16:45:15.000Z",
+              "kind": "hard",
+              "summary": "South Korea's finance minister said semiconductor growth can last at least through 2027 as supply remains tight despite a global chip sell-off.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://image.cnbcfm.com/api/v1/image/108425005-17922519932026-09-15t041703z_540430742_rc2djnamnvdo_rtrmadp_0_southkorea-politics-finance.jpeg?v=1792252039&w=1920&h=1080"
+            }
+          ],
+          "image": "https://image.cnbcfm.com/api/v1/image/108425005-17922519932026-09-15t041703z_540430742_rc2djnamnvdo_rtrmadp_0_southkorea-politics-finance.jpeg?v=1792252039&w=1920&h=1080",
+          "thread": "t11itt3q"
+        },
+        {
           "id": "s1pym1w3",
           "headline": "India's young workers have a new colleague: AI",
           "url": "https://www.dw.com/en/india-s-young-workers-have-a-new-colleague-ai/a-79678342",
@@ -13295,6 +13568,222 @@
       "name": "Policy & Governance",
       "items": [
         {
+          "id": "s1oi57k8",
+          "headline": "At least 17 dead in crush at Hindu festival event in India",
+          "url": "https://www.bbc.co.uk/news/articles/c820vwq7qg2ko",
+          "source": "bbc",
+          "date": "2026-10-17T19:19:16.000Z",
+          "relevance": "medium",
+          "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/60d0/live/caaed220-ca5d-11f1-852c-2b93a8fc4799.jpg",
+          "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/60d0/live/caaed220-ca5d-11f1-852c-2b93a8fc4799.jpg",
+          "why": "At least 17 people died in a crush at a Hindu festival in north Kolkata. The disaster raises immediate safety concerns at crowded religious gatherings.",
+          "implications": [
+            "Police said big crowds and rainfall surrounded the incident, and many more people were injured.",
+            "Authorities in West Bengal may face pressure to review crowd management at festival events.",
+            "Festival-goers elsewhere could see tighter crowd controls if officials respond with new measures."
+          ],
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-17T20:46:50.666Z",
+            "tier": "standard",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "high",
+              "reason": "Directly affects the safety of Indian festival-goers."
+            },
+            "horizon": {
+              "value": "now",
+              "reason": "Deaths and injuries already occurred; response is immediate."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "Two outlets agree, citing police; this is an early report."
+            },
+            "outlets": 2,
+            "affected": [
+              {
+                "group": "Travellers & pilgrims",
+                "direction": "up",
+                "what": "crowd safety risk",
+                "basis": "reported"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Updated death and injury toll",
+                "when": "",
+                "where": "West Bengal police"
+              },
+              {
+                "what": "Official inquiry into the cause of the crush",
+                "when": "",
+                "where": "West Bengal government"
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Crush at Kolkata festival",
+                    "detail": "At least 17 killed and many injured at a Hindu festival event.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Crowds and rain cited",
+                    "detail": "Police said big crowds and rainfall surrounded the incident.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Crowd controls may be reviewed",
+                    "detail": "Authorities may examine crowd management at festival venues.",
+                    "basis": "inferred"
+                  },
+                  {
+                    "step": "Gatherings could face restrictions",
+                    "detail": "Upcoming festival events could see tighter crowd limits.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "Officials find a one-off cause requiring no wider changes."
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "bbc",
+              "headline": "At least 17 dead in crush at Hindu festival event in India",
+              "url": "https://www.bbc.co.uk/news/articles/c820vwq7qg2ko",
+              "date": "2026-10-17T19:19:16.000Z",
+              "kind": "breaking",
+              "summary": "Many more have been injured at an event in the Indian city of Kolkata to mark a Hindu festival.",
+              "summaryV": 3,
+              "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/60d0/live/caaed220-ca5d-11f1-852c-2b93a8fc4799.jpg",
+              "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/60d0/live/caaed220-ca5d-11f1-852c-2b93a8fc4799.jpg"
+            },
+            {
+              "source": "aljazeera",
+              "headline": "At least 17 killed in stampede at religious gathering in India",
+              "url": "https://www.aljazeera.com/news/2026/10/17/at-least-17-killed-in-stampede-at-religious-gathering-in-india",
+              "date": "2026-10-17T19:48:54.000Z",
+              "kind": "hard",
+              "summary": "Incident took place at festival in north Kolkata, in India's West Bengal state, amid big crowds and rainfall, police said.",
+              "summaryV": 3
+            }
+          ],
+          "thread": "t1obhifg"
+        },
+        {
+          "id": "s1au5sz9",
+          "headline": "Police detain 'cockroach' movement founder ahead of protests in Delhi",
+          "url": "https://www.abc.net.au/news/2026-10-17/police-detain-cockroach-party-leader-delhi-protest/107278878",
+          "source": "abc",
+          "date": "2026-10-17T00:28:23.000Z",
+          "relevance": "medium",
+          "image": "https://live-production.wcms.abc-cdn.net.au/6b01b9c49ea183e84e80501a22af789f?impolicy=wcms_crop_resize&cropH=2813&cropW=5000&xPos=0&yPos=255&width=862&height=485",
+          "why": "Police briefly detained the founder of a youth-led party protesting against India's top election official. The episode signals rising tension over the election authority.",
+          "implications": [
+            "Abhijeet Dipke was detained on his way to a protest demanding the election official's resignation, then released on bail.",
+            "Two party leaders were also arrested, pointing to a wider police crackdown on the protests.",
+            "Continued youth protests could bring more disruption in Delhi and further scrutiny of the election authority."
+          ],
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-17T20:46:50.666Z",
+            "tier": "standard",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "low",
+              "reason": "Political dispute with no direct economic mechanism in the reports."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Protests against the election authority may continue."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "Three outlets agree; no on-record official source; early report."
+            },
+            "outlets": 3,
+            "affected": [],
+            "watch": [
+              {
+                "what": "Further protests by the Cockroach Janta Party against the election official",
+                "when": "",
+                "where": "Delhi Police"
+              },
+              {
+                "what": "Response from the election authority to the resignation demand",
+                "when": "",
+                "where": "Election Commission of India"
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Founder detained before protest",
+                    "detail": "Dipke was detained heading to a Delhi protest against the election official.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Released on bail Saturday",
+                    "detail": "He was freed a day after arrest amid a police crackdown.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Youth protests may continue",
+                    "detail": "The movement could keep pressing its demand for the official's resignation.",
+                    "basis": "inferred"
+                  },
+                  {
+                    "step": "Election authority could face scrutiny",
+                    "detail": "Sustained protests could increase public pressure on the election authority.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "Protests fade or the election authority addresses the demands."
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "abc",
+              "headline": "Police detain 'cockroach' movement founder ahead of protests in Delhi",
+              "url": "https://www.abc.net.au/news/2026-10-17/police-detain-cockroach-party-leader-delhi-protest/107278878",
+              "date": "2026-10-17T00:28:23.000Z",
+              "kind": "breaking",
+              "summary": "India's 'cockroach' movement founder Abhijeet Dipke was picked up after two party leaders were arrested.",
+              "summaryV": 3,
+              "image": "https://live-production.wcms.abc-cdn.net.au/6b01b9c49ea183e84e80501a22af789f?impolicy=wcms_crop_resize&cropH=2813&cropW=5000&xPos=0&yPos=255&width=862&height=485"
+            },
+            {
+              "source": "nyt",
+              "headline": "Indian Gen Z Protest Leader Is Released on Bail After Arrest",
+              "url": "https://www.nytimes.com/2026/10/17/world/asia/india-abhijeet-dipke-cockroach-janta-party.html",
+              "date": "2026-10-17T15:50:19.000Z",
+              "kind": "hard",
+              "summary": "Abhijeet Dipke, the founder of the Cockroach Janta Party, was detained on his way to a protest called to demand the resignation of India’s top election official.",
+              "summaryV": 3,
+              "image": "https://static01.nyt.com/images/2026/10/17/multimedia/17int-india-cockroach-twhc/17int-india-cockroach-twhc-mediumSquareAt3X.jpg"
+            },
+            {
+              "source": "scmp",
+              "headline": "‘Cockroach’ party founder released by Indian police",
+              "url": "https://www.scmp.com/news/asia/south-asia/article/3371274/cockroach-party-founder-released-indian-police",
+              "date": "2026-10-17T17:48:50.000Z",
+              "kind": "hard",
+              "summary": "India’s youth-led Cockroach Janata Party founder Abhijeet Dipke was released from detention on Saturday, a day after his arrest during a police crackdown on protests against the election authority.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/18/f86f7190-cd32-4a42-9a3f-51d3a3a15834_1e24734a.jpg?itok=zUIwawF1&v=1792259318"
+            }
+          ],
+          "thread": "t1ya4ss"
+        },
+        {
           "id": "st90stv",
           "headline": "India’s youth-led Cockroach movement defies protest ban",
           "url": "https://www.france24.com/en/india-s-youth-led-cockroach-movement-defies-protest-ban",
@@ -13640,96 +14129,6 @@
               "summaryV": 3,
               "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/ae0a/live/7e914b00-c96f-11f1-80fc-ab418b149008.jpg",
               "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/ae0a/live/7e914b00-c96f-11f1-80fc-ab418b149008.jpg"
-            }
-          ],
-          "thread": "t1ya4ss"
-        },
-        {
-          "id": "s1au5sz9",
-          "headline": "Police detain 'cockroach' movement founder ahead of protests in Delhi",
-          "url": "https://www.abc.net.au/news/2026-10-17/police-detain-cockroach-party-leader-delhi-protest/107278878",
-          "source": "abc",
-          "date": "2026-10-17T00:28:23.000Z",
-          "relevance": "medium",
-          "image": "https://live-production.wcms.abc-cdn.net.au/6b01b9c49ea183e84e80501a22af789f?impolicy=wcms_crop_resize&cropH=2813&cropW=5000&xPos=0&yPos=255&width=862&height=485",
-          "why": "Detention of a protest movement's founder before Delhi demonstrations raises questions about policing and protest space in the capital.",
-          "implications": [
-            "ABC News reports that Abhijeet Dipke was picked up after two party leaders were arrested.",
-            "Protests planned in Delhi could face policing restrictions or disruption, depending on how events unfold."
-          ],
-          "analysis": {
-            "v": 2,
-            "at": "2026-10-17T04:42:06.976Z",
-            "tier": "quick",
-            "primary": "impact_chain",
-            "complement": null,
-            "features": [],
-            "exposure": {
-              "level": "low",
-              "reason": "Domestic political event; no reported link to household essentials, trade or Indians' safety."
-            },
-            "horizon": {
-              "value": "now",
-              "reason": "Protests are described as imminent in Delhi."
-            },
-            "confidence": {
-              "level": "low",
-              "reason": "Single early outlet report; details of the arrests are limited."
-            },
-            "outlets": 1,
-            "affected": [
-              {
-                "group": "A named state or region",
-                "direction": "unclear",
-                "what": "Delhi protest policing",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "Whether the planned Delhi protests go ahead and how police respond",
-                "when": "",
-                "where": ""
-              },
-              {
-                "what": "Whether Abhijeet Dipke is released or formally charged",
-                "when": "",
-                "where": ""
-              }
-            ],
-            "frameworks": {
-              "impact_chain": {
-                "chain": [
-                  {
-                    "step": "Founder detained",
-                    "detail": "Abhijeet Dipke was picked up after two party leaders were arrested.",
-                    "basis": "reported"
-                  },
-                  {
-                    "step": "Protests due in Delhi",
-                    "detail": "The detention came ahead of planned demonstrations in the capital.",
-                    "basis": "reported"
-                  },
-                  {
-                    "step": "Possible protest disruption",
-                    "detail": "Policing and detentions could limit or reshape the Delhi demonstrations.",
-                    "basis": "inferred"
-                  }
-                ],
-                "breaks_if": "Protests are held or called off without further detentions or restrictions."
-              }
-            }
-          },
-          "reports": [
-            {
-              "source": "abc",
-              "headline": "Police detain 'cockroach' movement founder ahead of protests in Delhi",
-              "url": "https://www.abc.net.au/news/2026-10-17/police-detain-cockroach-party-leader-delhi-protest/107278878",
-              "date": "2026-10-17T00:28:23.000Z",
-              "kind": "breaking",
-              "summary": "India's 'cockroach' movement founder Abhijeet Dipke was picked up after two party leaders were arrested.",
-              "summaryV": 3,
-              "image": "https://live-production.wcms.abc-cdn.net.au/6b01b9c49ea183e84e80501a22af789f?impolicy=wcms_crop_resize&cropH=2813&cropW=5000&xPos=0&yPos=255&width=862&height=485"
             }
           ],
           "thread": "t1ya4ss"
@@ -15934,21 +16333,21 @@
   ],
   "source": "BBC News & The Guardian & NPR & Al Jazeera & MercoPress & ABC News & The New York Times & CNBC & CBS News & DW & France 24 & Africanews & South China Morning Post & The Hindu & Mint",
   "lastRun": {
-    "analysed": 67,
+    "analysed": 57,
     "added": 3,
-    "merged": 5,
-    "rejected": 59,
+    "merged": 6,
+    "rejected": 48,
     "failedBatches": 0,
     "feeds": {
       "bbc": {
         "feedsOk": 6,
         "feedsFailed": 0,
-        "items": 145
+        "items": 146
       },
       "guardian": {
         "feedsOk": 7,
         "feedsFailed": 0,
-        "items": 182
+        "items": 190
       },
       "npr": {
         "feedsOk": 4,
@@ -15958,7 +16357,7 @@
       "aljazeera": {
         "feedsOk": 1,
         "feedsFailed": 0,
-        "items": 17
+        "items": 13
       },
       "mercopress": {
         "feedsOk": 3,
@@ -15968,12 +16367,12 @@
       "abc": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 33
+        "items": 29
       },
       "nyt": {
         "feedsOk": 5,
         "feedsFailed": 0,
-        "items": 171
+        "items": 172
       },
       "cnbc": {
         "feedsOk": 3,
@@ -15983,7 +16382,7 @@
       "cbs": {
         "feedsOk": 2,
         "feedsFailed": 0,
-        "items": 43
+        "items": 41
       },
       "dw": {
         "feedsOk": 3,
@@ -15993,7 +16392,7 @@
       "france24": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 70
+        "items": 67
       },
       "africanews": {
         "feedsOk": 1,
@@ -16013,12 +16412,12 @@
     },
     "threads": {
       "assigned": 3,
-      "created": 1,
+      "created": 2,
       "failedBatches": 0
     },
     "summaries": {
-      "written": 0,
-      "due": 2
+      "written": 3,
+      "due": 3
     },
     "kinds": {
       "labelled": 0,
@@ -16026,10 +16425,9 @@
       "failedBatches": 0
     },
     "frames": {
-      "done": 0,
-      "waiting": 3,
-      "failedBatches": 0,
-      "budgetStopped": true
+      "done": 4,
+      "waiting": 1,
+      "failedBatches": 0
     },
     "stats": {
       "searched": 0,
@@ -16045,29 +16443,36 @@
     "models": {
       "filter": {
         "model": "claude-haiku-5-5",
-        "calls": 5,
-        "inputTokens": 17332,
-        "outputTokens": 9424,
-        "cost": 0.0064
+        "calls": 6,
+        "inputTokens": 18859,
+        "outputTokens": 9473,
+        "cost": 0.0066
       },
       "analysis_quick": {
         "model": "claude-sonnet-5-5",
         "calls": 2,
-        "inputTokens": 3918,
-        "outputTokens": 4463,
-        "cost": 0.0524
+        "inputTokens": 3622,
+        "outputTokens": 3885,
+        "cost": 0.0461
+      },
+      "analysis": {
+        "model": "claude-opus-5-5",
+        "calls": 2,
+        "inputTokens": 5924,
+        "outputTokens": 6799,
+        "cost": 0.1597
       },
       "threads": {
         "model": "claude-sonnet-5-5",
-        "calls": 1,
-        "inputTokens": 4760,
-        "outputTokens": 89,
-        "cost": 0.0104
+        "calls": 4,
+        "inputTokens": 7952,
+        "outputTokens": 1097,
+        "cost": 0.0269
       }
     },
     "spend": {
-      "thisDesk": 0.0693,
-      "today": 4.5882,
+      "thisDesk": 0.2393,
+      "today": 0.2393,
       "cap": 6
     }
   },
