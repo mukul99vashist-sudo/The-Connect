@@ -1475,16 +1475,25 @@ function parseWhen(when, refIso){
   return localIso(out);
 }
 
+/* The report a story date came from: the newest report that mentions that day; otherwise the lead report */
+function reportForDate(it, iso, when){
+  var d=new Date(iso+"T12:00:00"), day=d.getDate(), mon=d.toLocaleDateString("en-GB",{month:"long"}).toLowerCase(), ab=mon.slice(0,3);
+  var pats=[new RegExp("\\b(?:"+mon+"|"+ab+"\\.?)\\s+0?"+day+"(?!\\d)","i"), new RegExp("\\b0?"+day+"(?:st|nd|rd|th)?\\s+(?:of\\s+)?(?:"+mon+"|"+ab+")\\b","i"), new RegExp(iso)];
+  var reps=reportsOf(it).slice().sort(function(a,b){ return String(b.date||"").localeCompare(String(a.date||"")); });
+  for(var i=0;i<reps.length;i++){ var r=reps[i], t=[r.headline,r.summary,r.lede].filter(Boolean).join(" "); if(r.url && pats.some(function(p){ return p.test(t); })) return r; }
+  return leadReport(it);
+}
+function sourceLine(ev){ return ev.source&&ev.source.url ? (ev.source.fromReport ? "Reported by "+ev.source.outlet+": " : "Official source: ")+ev.source.url : ""; }
 /* Calendar buttons */
 function gcalUrl(ev){
-  var end=isoPlus(ev.end||ev.date,1).replace(/-/g,""), details=[ev.why, ev.time?"Time: "+ev.time:"", ev.source&&ev.source.url?"Source: "+ev.source.url:"", "The Continent Connect: "+siteHome()].filter(Boolean).join("\n\n");
+  var end=isoPlus(ev.end||ev.date,1).replace(/-/g,""), details=[ev.why, ev.time?"Time: "+ev.time:"", sourceLine(ev), "The Continent Connect: "+siteHome()].filter(Boolean).join("\n\n");
   return "https://calendar.google.com/calendar/render?action=TEMPLATE&text="+encodeURIComponent(ev.title)+"&dates="+ev.date.replace(/-/g,"")+"/"+end+"&details="+encodeURIComponent(details);
 }
 function icsEsc(s){ return String(s||"").replace(/\\/g,"\\\\").replace(/;/g,"\\;").replace(/,/g,"\\,").replace(/\r?\n/g,"\\n"); }
 function icsFold(l){ var out=[], cur=""; for(var i=0;i<l.length;i++){ if(cur.length>=73){ out.push(cur); cur=" "; } cur+=l[i]; } out.push(cur); return out.join("\r\n"); }
 function icsText(ev){
   var stamp=new Date().toISOString().replace(/[-:]/g,"").replace(/\.\d+/,"");
-  var desc=[ev.why, ev.time?"Time: "+ev.time:"", ev.source&&ev.source.url?"Source: "+ev.source.url:"", "The Continent Connect: "+siteHome()].filter(Boolean).join("\n\n");
+  var desc=[ev.why, ev.time?"Time: "+ev.time:"", sourceLine(ev), "The Continent Connect: "+siteHome()].filter(Boolean).join("\n\n");
   return ["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//The Continent Connect//Dates to watch//EN","METHOD:PUBLISH","BEGIN:VEVENT","UID:"+ev.id+"@continent-connect","DTSTAMP:"+stamp,
     "DTSTART;VALUE=DATE:"+ev.date.replace(/-/g,""),"DTEND;VALUE=DATE:"+isoPlus(ev.end||ev.date,1).replace(/-/g,""),"SUMMARY:"+icsEsc(ev.title),"DESCRIPTION:"+icsEsc(desc),
     "BEGIN:VALARM","ACTION:DISPLAY","DESCRIPTION:"+icsEsc(ev.title),"TRIGGER:-PT15H","END:VALARM","END:VEVENT","END:VCALENDAR"].map(icsFold).join("\r\n")+"\r\n";
@@ -1513,7 +1522,7 @@ function calRow(ev, opts){
   if(ev.end) parts.push("until "+calDate(ev.end,{day:"numeric",month:"short"}));
   if(ev.time) parts.push(ev.time);
   if(parts.length) meta.appendChild(document.createTextNode(parts.join(" · ")+" · "));
-  if(ev.source && ev.source.url){ var a=el("a",null,"Official date: "+(ev.source.domain||ev.publisher||"source")); a.href=ev.source.url; a.target="_blank"; a.rel="noopener"; a.addEventListener("click",function(x){ x.stopPropagation(); }); meta.appendChild(a); }
+  if(ev.source && ev.source.url){ var a=el("a",null,ev.source.fromReport ? "Date reported by "+ev.source.outlet+" ↗" : "Official date: "+(ev.source.domain||ev.publisher||"source")); a.href=ev.source.url; a.target="_blank"; a.rel="noopener"; a.addEventListener("click",function(x){ x.stopPropagation(); }); meta.appendChild(a); }
   else if(opts.fromStory) meta.appendChild(document.createTextNode("Date given in the reports"));
   m.appendChild(meta);
   if(ev.why) m.appendChild(el("p","cal-why",ev.why));
@@ -1527,7 +1536,9 @@ function calRow(ev, opts){
 function renderDates(e){
   var it=e.it, links=calendar?linksFor(it, e.sector.id):[], today=localIso(), own=[];
   var ref=((reportsOf(it).map(function(r){ return r.date||""; }).sort().pop())||it.date||"").slice(0,10);
-  ((it.analysis||{}).watch||[]).forEach(function(w,i){ var d=parseWhen(w.when, ref||today); if(d && d>=today) own.push({id:"w-"+it.id+"-"+i, title:w.what, date:d, why:"From the story: "+it.headline+(w.where?" · Check: "+w.where:"")}); });
+  ((it.analysis||{}).watch||[]).forEach(function(w,i){ var d=parseWhen(w.when, ref||today); if(d && d>=today){ var rp=reportForDate(it, d, w.when);
+    own.push({id:"w-"+it.id+"-"+i, title:w.what, date:d, why:"From the story: "+it.headline+(w.where?" · Check: "+w.where:""),
+      source:rp && rp.url ? {url:rp.url, outlet:OUTLET[rp.source]||rp.source, fromReport:true} : null}); } });
   if(!links.length && !own.length) return null;
   var b=el("div","block cal-block"); b.appendChild(el("h3",null,"Dates to watch"));
   links.forEach(function(x){ b.appendChild(calRow(x.ev,{because:x.why})); });
