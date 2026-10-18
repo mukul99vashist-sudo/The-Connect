@@ -2,46 +2,147 @@
   "schema": 4,
   "region": "India",
   "since": "2026-10-02",
-  "updatedAt": "2026-10-18T16:01:01.922Z",
+  "updatedAt": "2026-10-18T21:25:37.783Z",
   "sectors": [
     {
       "id": "energy",
       "name": "Energy",
       "items": [
         {
-          "id": "scgkxx2",
-          "headline": "Ukrainian drone attack on Russia’s St Petersburg kills 1, hits energy sites",
-          "url": "https://www.aljazeera.com/news/2026/10/18/ukrainian-drone-attack-on-russias-st-petersburg-kills-1-hits-energy-sites",
-          "source": "aljazeera",
-          "date": "2026-10-18T10:34:09.000Z",
+          "id": "sood0sb",
+          "headline": "Live: ASX set to edge lower as oil keeps rising after Wall St slides on AI anxiety",
+          "url": "https://www.abc.net.au/news/2026-10-19/asx-markets-business-live-news/107280976",
+          "source": "abc",
+          "date": "2026-10-18T19:58:43.000Z",
           "relevance": "medium",
-          "why": "Strikes on energy sites in Russia and Ukraine could, if they spread, disturb oil supply and prices, which India feels through its fuel import bill.",
+          "image": "https://live-production.wcms.abc-cdn.net.au/2bcc5de27112144035164dd51dacf77e?impolicy=wcms_crop_resize&cropH=530&cropW=942&xPos=0&yPos=14&width=862&height=485",
+          "why": "ABC News reports oil is still rising; if sustained, higher crude could raise India's import bill and fuel costs, though no size or cause is given.",
           "implications": [
-            "The report says a Ukrainian drone attack on St Petersburg killed 1 person and hit energy sites.",
-            "Zelenskyy says Moscow keeps breaking the energy ceasefire. Continued attacks on energy sites could add uncertainty to global energy markets.",
-            "Any effect on Indian fuel prices may be indirect and would depend on whether supply is actually disrupted."
+            "The report says oil keeps rising but gives no price level, size or cause.",
+            "If crude stays higher, India's import costs may rise, though pump prices could respond only slowly."
           ],
           "analysis": {
             "v": 2,
-            "at": "2026-10-18T11:25:52.199Z",
+            "at": "2026-10-18T21:23:42.296Z",
+            "tier": "quick",
+            "primary": "pass_through",
+            "complement": null,
+            "features": [
+              "price_move"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "Crude is a major import, but the reported rise is unquantified and its cause unstated."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Crude moves usually reach Indian fuel costs with a lag."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "Single outlet, brief markets-blog summary with no figures or official source."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "up",
+                "what": "possible fuel price pressure",
+                "basis": "inferred"
+              },
+              {
+                "group": "Importers & traders",
+                "direction": "up",
+                "what": "possible higher crude import costs",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Whether the oil price rise continues in coming trading sessions",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "frameworks": {
+              "pass_through": {
+                "driver": {
+                  "variable": "Crude oil price",
+                  "direction": "up",
+                  "size": ""
+                },
+                "product": "petrol & diesel",
+                "rungs": [
+                  {
+                    "stage": "Global crude → Refiners' import cost",
+                    "pass": "likely",
+                    "damper": "Existing purchase contracts and inventory may delay the effect",
+                    "lag": "weeks"
+                  },
+                  {
+                    "stage": "Refiners' cost → Pump price",
+                    "pass": "partial",
+                    "damper": "Taxes and administered pricing may soften the pass-through",
+                    "lag": "weeks"
+                  }
+                ],
+                "end_user": {
+                  "group": "Fuel & LPG users",
+                  "effect": "Pump prices could come under upward pressure if the crude rise is sustained, though the size is unknown."
+                }
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "abc",
+              "headline": "Live: ASX set to edge lower as oil keeps rising after Wall St slides on AI anxiety",
+              "url": "https://www.abc.net.au/news/2026-10-19/asx-markets-business-live-news/107280976",
+              "date": "2026-10-18T19:58:43.000Z",
+              "kind": "hard",
+              "summary": "Wall Street's key indices closed lower as investors bailed out of AI stocks, but the flow on to the ASX looks limited. Follow the day's events and insights from our business reporters on the ABC News live markets blog.",
+              "summaryV": 3,
+              "image": "https://live-production.wcms.abc-cdn.net.au/2bcc5de27112144035164dd51dacf77e?impolicy=wcms_crop_resize&cropH=530&cropW=942&xPos=0&yPos=14&width=862&height=485"
+            }
+          ],
+          "thread": "t1dbdiwl"
+        },
+        {
+          "id": "s1hh1qud",
+          "headline": "US-Russia deal, Trump-Zelensky clash could leave Ukraine out in the cold",
+          "url": "https://www.scmp.com/news/world/russia-central-asia/article/3371280/us-russia-deal-trump-zelensky-clash-could-leave-ukraine-out-cold",
+          "source": "scmp",
+          "date": "2026-10-18T01:14:48.000Z",
+          "relevance": "medium",
+          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/18/be98d5af-96c0-4086-a8b4-15f3b47eb5e2_731fb1bd.jpg?itok=KXFYemN9&v=1792286078",
+          "why": "A US-Russia diesel deal and tariff waiver on Russian exports could change Russia's revenue and energy trade, with only indirect links to India.",
+          "implications": [
+            "SCMP reports US threats to cut intelligence support for Ukraine, a tariff waiver on Russian exports and a diesel deal.",
+            "The diesel deal could help Russia fund its war, which may alter energy trade patterns that India watches."
+          ],
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-18T04:48:25.207Z",
             "tier": "quick",
             "primary": "escalation",
             "complement": null,
             "features": [
               "armed_conflict",
+              "trade_flow",
+              "fast_moving",
               "pending_outcome"
             ],
             "exposure": {
               "level": "low",
-              "reason": "The report names no oil export, shipping or price impact; any link to India is indirect."
+              "reason": "No stated mechanism reaching India; link through energy markets is indirect."
             },
             "horizon": {
               "value": "months",
-              "reason": "No direct mechanism reported; any effect would be indirect and slow."
+              "reason": "Effects on energy trade would take time to appear."
             },
             "confidence": {
               "level": "low",
-              "reason": "Single outlet; the ceasefire-violation claim comes from one party, Zelenskyy."
+              "reason": "Single outlet; no named official source in the summary."
             },
             "outlets": 1,
             "affected": [
@@ -50,34 +151,198 @@
                 "direction": "unclear",
                 "what": "fuel prices",
                 "basis": "inferred"
+              },
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "energy trade conditions",
+                "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "Whether further strikes on energy sites are reported on either side",
-                "when": "",
-                "where": ""
-              },
-              {
-                "what": "Whether the energy ceasefire is confirmed as broken or restored",
+                "what": "Whether the US follows through on cutting intelligence support to Ukraine",
                 "when": "",
                 "where": ""
               }
             ],
             "frameworks": {
               "escalation": {
-                "current_rung": 6,
-                "evidence": "Ukrainian drones hit energy sites in St Petersburg; Zelenskyy says Moscow keeps breaking the energy ceasefire.",
-                "previous_rung": null,
+                "current_rung": 2,
+                "evidence": "A tariff waiver on Russian exports and a diesel deal, alongside US threats to cut intelligence support for Ukraine.",
+                "previous_rung": 1,
                 "next_signals": [
                   {
-                    "rung": 7,
-                    "signal": "Official declaration or description of full-scale war beyond current strikes"
+                    "rung": 3,
+                    "signal": "Reported mobilisation or force posturing linked to the dispute"
                   }
                 ],
                 "india_channels": [
-                  "oil"
+                  "oil",
+                  "trade"
                 ]
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "scmp",
+              "headline": "US-Russia deal, Trump-Zelensky clash could leave Ukraine out in the cold",
+              "url": "https://www.scmp.com/news/world/russia-central-asia/article/3371280/us-russia-deal-trump-zelensky-clash-could-leave-ukraine-out-cold",
+              "date": "2026-10-18T01:14:48.000Z",
+              "kind": "hard",
+              "summary": "From US threats to cut off intelligence support for Ukraine to a waiver of tariffs on Russian ⁠exports and a diesel deal that could help Russia fund its war, it has been a damaging week for ties between Kyiv and its most important ally, Washington.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/18/be98d5af-96c0-4086-a8b4-15f3b47eb5e2_731fb1bd.jpg?itok=KXFYemN9&v=1792286078"
+            },
+            {
+              "source": "scmp",
+              "headline": "Zelensky speaks to US envoys amid Trump spat after warning US not to side with Russia",
+              "url": "https://www.scmp.com/news/world/russia-central-asia/article/3371329/zelensky-speaks-us-envoys-amid-trump-spat-after-warning-us-not-side-russia",
+              "date": "2026-10-18T19:31:04.000Z",
+              "kind": "hard",
+              "summary": "Ukraine’s Volodymyr Zelensky spoke to US envoys Steve Witkoff and Jared Kushner in the midst of his spat with US President Donald Trump on Sunday, saying “a lot depends on America” as he earlier warned Washington not to side with Moscow in Europe’s worst conflict since World War II.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/19/3200bade-1d21-4644-8845-2610a13429c0_d64b25cd.jpg?itok=ksED2Ayw&v=1792351709"
+            }
+          ],
+          "thread": "t1uohici"
+        },
+        {
+          "id": "s1f3twwg",
+          "headline": "Houthi attacks on strategic Saudi assets threaten Riyadh's regional leadership and economic ambitions",
+          "url": "https://www.dw.com/en/houthi-attacks-on-strategic-saudi-assets-threaten-riyadh-s-regional-leadership-and-economic-ambitions/a-79680200",
+          "source": "dw",
+          "date": "2026-10-16T14:03:00.000Z",
+          "relevance": "medium",
+          "why": "",
+          "implications": [],
+          "reports": [
+            {
+              "source": "dw",
+              "headline": "Houthi attacks on strategic Saudi assets threaten Riyadh's regional leadership and economic ambitions",
+              "url": "https://www.dw.com/en/houthi-attacks-on-strategic-saudi-assets-threaten-riyadh-s-regional-leadership-and-economic-ambitions/a-79680200",
+              "date": "2026-10-16T14:03:00.000Z",
+              "kind": "feature",
+              "summary": "As Yemen's Iran-backed Houthis continue to target Saudi Arabia, Riyadh's vulnerability threatens its claim on regional and religious leadership — as well as its standing as an economic powerhouse.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://static.dw.com/image/79676332_6.jpg"
+            },
+            {
+              "source": "africanews",
+              "headline": "Iran denies being behind Houthi attacks as Aden airport hit",
+              "url": "http://www.africanews.com/2026/10/17/iran-denies-being-behind-houthi-attacks-as-aden-airport-hit/",
+              "date": "2026-10-17T08:51:59.000Z",
+              "kind": "hard",
+              "summary": "Iran has denied any involvement in an escalation of attacks by Houthi rebels on Saudi targets. The international airport in Yemen’s interim capital Aden was struck by two missiles late on Friday, the second such incident in less than two weeks.",
+              "summaryV": 3
+            },
+            {
+              "source": "aljazeera",
+              "headline": "Houthis strike Yemen’s Aden: What that means",
+              "url": "https://www.aljazeera.com/news/2026/10/17/iran-backed-houthis-strike-yemens-aden-what-that-means",
+              "date": "2026-10-17T09:16:48.000Z",
+              "kind": "feature",
+              "summary": "What we know about the Houthi strikes on Aden’s presidential palace and airport, and why they matter.",
+              "summaryV": 3
+            },
+            {
+              "source": "aljazeera",
+              "headline": "GCC condemns Houthi attacks on Saudi Arabia as Yemen fighting intensifies",
+              "url": "https://www.aljazeera.com/news/2026/10/18/gcc-condemns-houthi-attacks-on-saudi-arabia-as-yemen-fighting-intensifies",
+              "date": "2026-10-18T18:44:30.000Z",
+              "kind": "hard",
+              "summary": "Gulf ministers urge action against Houthis as fighting displaces more than 233,000 people across Yemen.",
+              "summaryV": 3
+            }
+          ],
+          "image": "https://static.dw.com/image/79676332_6.jpg",
+          "thread": "t1j5n1me"
+        },
+        {
+          "id": "scgkxx2",
+          "headline": "Ukrainian drone attack on Russia’s St Petersburg kills 1, hits energy sites",
+          "url": "https://www.aljazeera.com/news/2026/10/18/ukrainian-drone-attack-on-russias-st-petersburg-kills-1-hits-energy-sites",
+          "source": "aljazeera",
+          "date": "2026-10-18T10:34:09.000Z",
+          "relevance": "medium",
+          "why": "A Ukrainian drone attack set a St Petersburg oil refinery and depot ablaze, which could add to uncertainty over Russian oil supply that India's markets watch.",
+          "implications": [
+            "Ukraine struck oil facilities in Russia's second-largest city, killing at least one person and hospitalising five.",
+            "Kyiv accuses Russia of breaking Washington's energy ceasefire dozens of times, so the truce looks fragile.",
+            "If refinery damage is lasting, Russian fuel exports could tighten, though reports give no outage estimate."
+          ],
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-18T21:25:22.825Z",
+            "tier": "standard",
+            "primary": "disruption_map",
+            "complement": null,
+            "features": [
+              "disruption",
+              "armed_conflict"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "Indirect; reports name no disruption to Russian oil exports or India-bound flows."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Any market effect depends on the extent of refinery outages."
+            },
+            "confidence": {
+              "level": "high",
+              "reason": "Four outlets agree; Russian officials on record about interceptions."
+            },
+            "outlets": 4,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "fuel price sentiment",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Russian statements on refinery damage and restart",
+                "when": "",
+                "where": "Russian officials"
+              },
+              {
+                "what": "Further strikes on energy sites by either side",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "Status of Washington's energy ceasefire between Russia and Ukraine",
+                "when": "",
+                "where": "White House"
+              }
+            ],
+            "frameworks": {
+              "disruption_map": {
+                "node": {
+                  "name": "St Petersburg oil refinery and depot",
+                  "type": "refinery",
+                  "status": "unknown",
+                  "as_of": "Sunday, 18 October"
+                },
+                "cause": {
+                  "text": "Large-scale Ukrainian drone attack; Russia says 126 drones intercepted",
+                  "status": "confirmed"
+                },
+                "flows": [
+                  {
+                    "flow": "other",
+                    "india_link": "Refined oil output could fall; India link not reported",
+                    "basis": "inferred"
+                  }
+                ],
+                "alternatives": [],
+                "duration": "not reported"
               }
             }
           },
@@ -135,15 +400,16 @@
           "source": "aljazeera",
           "date": "2026-10-17T14:00:24.000Z",
           "relevance": "medium",
-          "why": "Egypt's pledge to help defend Saudi Arabia, if asked, signals Gulf security risk that could affect oil supply and Indians living in the region.",
+          "why": "Egypt's pledge to help defend Saudi Arabia against Houthi attacks signals a widening Gulf conflict that could touch India's crude supplies and workers in the kingdom.",
           "implications": [
-            "Al Jazeera reports Egypt's president pledged 'any measure' to defend Saudi Arabia 'if it is requested of us'; the report does not describe the underlying threat.",
-            "If Gulf tensions widened, Indian workers and families in Saudi Arabia and oil supplies from the region could be affected."
+            "Houthi attacks on Saudi Arabia have drawn Egypt into pledging defensive military support.",
+            "Wider conflict around Saudi resources could unsettle crude supplies that matter to India.",
+            "Indian workers in Saudi Arabia may face greater safety risk if attacks continue."
           ],
           "analysis": {
             "v": 2,
-            "at": "2026-10-17T15:45:20.389Z",
-            "tier": "quick",
+            "at": "2026-10-18T21:25:22.825Z",
+            "tier": "standard",
             "primary": "escalation",
             "complement": null,
             "features": [
@@ -151,63 +417,69 @@
               "pending_outcome"
             ],
             "exposure": {
-              "level": "low",
-              "reason": "Only a conditional pledge is reported; no direct mechanism for India is described."
+              "level": "high",
+              "reason": "Could touch crude supply and safety of Indians in Saudi; link inferred."
             },
             "horizon": {
-              "value": "months",
-              "reason": "No concrete effect reported; depends on any later escalation."
+              "value": "weeks",
+              "reason": "Depends on Egyptian authorisation and further Houthi attacks."
             },
             "confidence": {
               "level": "medium",
-              "reason": "Single outlet, but it quotes the Egyptian president on record."
+              "reason": "Two outlets with official Egyptian statements."
             },
-            "outlets": 1,
+            "outlets": 2,
             "affected": [
               {
                 "group": "Gulf & overseas workers and families",
                 "direction": "unclear",
-                "what": "safety and remittance conditions",
+                "what": "safety risk",
                 "basis": "inferred"
               },
               {
                 "group": "Fuel & LPG users",
                 "direction": "unclear",
-                "what": "Gulf oil supply risk",
+                "what": "crude price risk",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "Whether Saudi Arabia formally requests Egyptian defence assistance",
+                "what": "Egyptian lawmakers vote on authorising military assistance to Saudi Arabia",
                 "when": "",
-                "where": ""
+                "where": "Egyptian parliament"
               },
               {
-                "what": "Whether Egypt's requested authorisation for defence assistance is granted",
+                "what": "Saudi Arabia formally requests Egyptian defence support",
+                "when": "",
+                "where": "Egyptian presidency"
+              },
+              {
+                "what": "Further Houthi attacks on Saudi territory or resources",
                 "when": "",
                 "where": ""
               }
             ],
             "frameworks": {
               "escalation": {
-                "current_rung": 1,
-                "evidence": "Sisi seeks authorisation and pledges 'any measure' to help defend Saudi Arabia 'if it is requested'.",
+                "current_rung": 4,
+                "evidence": "Houthi attacks on Saudi Arabia prompted Egypt's pledge of defensive support to protect Saudi resources.",
                 "previous_rung": null,
                 "next_signals": [
                   {
-                    "rung": 3,
-                    "signal": "Reported deployment of Egyptian forces to Saudi Arabia"
+                    "rung": 5,
+                    "signal": "Repeated Houthi strikes on Saudi Arabia over consecutive days"
                   },
                   {
-                    "rung": 4,
-                    "signal": "Reported attack on Saudi Arabia or an Egyptian military response"
+                    "rung": 6,
+                    "signal": "Strikes hit Saudi oil infrastructure or Egyptian forces deployed there"
                   }
                 ],
                 "india_channels": [
                   "oil",
                   "diaspora safety",
-                  "remittances"
+                  "remittances",
+                  "shipping"
                 ]
               }
             }
@@ -726,72 +998,90 @@
           "source": "cnbc",
           "date": "2026-10-16T06:45:02.000Z",
           "relevance": "medium",
-          "why": "US Secretary of State Rubio's visit to Reliance's Jamnagar refinery, amid surging US diesel prices, highlights India's diesel supply strength and may deepen India-US energy ties.",
+          "why": "Surging U.S. diesel prices put Reliance's Jamnagar refinery in focus during Rubio's visit, while his skipping New Delhi has drawn domestic political criticism.",
           "implications": [
-            "Reliance's ability to supply diesel has put Jamnagar in focus during the visit.",
-            "Reliance is also investing in a US refinery and buying Venezuelan oil, which could tie its business to US policy."
+            "Reliance's strong diesel supply ability is drawing U.S. attention as U.S. diesel prices surge.",
+            "Reliance is also investing in a U.S. refinery and buying Venezuelan oil, CNBC reports.",
+            "Opposition leaders call Rubio's arrangements humiliating as he skips New Delhi, which could strain diplomatic optics."
           ],
           "analysis": {
             "v": 2,
-            "at": "2026-10-16T21:10:04.177Z",
-            "tier": "quick",
-            "primary": "impact_chain",
+            "at": "2026-10-18T21:25:22.825Z",
+            "tier": "standard",
+            "primary": "conflicting",
             "complement": null,
-            "features": [],
+            "features": [
+              "conflict"
+            ],
             "exposure": {
               "level": "medium",
-              "reason": "Centres on one company and the India-US relationship, with no household price effect reported."
+              "reason": "Concerns one refiner's diesel exports and the India-U.S. relationship."
             },
             "horizon": {
               "value": "months",
-              "reason": "A visit; any trade or investment effects would take time."
+              "reason": "Any shift in diesel trade would take time to develop."
             },
             "confidence": {
               "level": "low",
-              "reason": "Single outlet, no on-record official statement in the report."
+              "reason": "Two outlets give differing visit focus; no official source quoted."
             },
-            "outlets": 1,
+            "outlets": 2,
             "affected": [
               {
                 "group": "Large exporters",
-                "direction": "unclear",
-                "what": "diesel export prospects",
+                "direction": "up",
+                "what": "U.S. demand for diesel",
                 "basis": "inferred"
               },
               {
-                "group": "A named state or region",
-                "direction": "up",
-                "what": "Gujarat refinery attention",
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "Venezuelan oil purchases",
                 "basis": "reported"
               }
             ],
             "watch": [
               {
-                "what": "Any announcement from Rubio's Jamnagar visit on energy cooperation or diesel supply",
+                "what": "Rubio's confirmed itinerary covering Jamnagar, Gujarat and Mumbai",
                 "when": "",
-                "where": "US State Department"
+                "where": "U.S. State Department"
+              },
+              {
+                "what": "Opposition criticism of Rubio skipping New Delhi",
+                "when": "",
+                "where": ""
               }
             ],
             "frameworks": {
-              "impact_chain": {
-                "chain": [
+              "conflicting": {
+                "disputed": {
+                  "item": "Main location of Rubio's India visit",
+                  "unit": "place"
+                },
+                "accounts": [
                   {
-                    "step": "US diesel prices surge",
-                    "detail": "Prices in the US are rising, per CNBC.",
-                    "basis": "reported"
+                    "outlet": "CNBC",
+                    "value": "Visit to Ambani's refinery in Gujarat (Jamnagar)",
+                    "origin": "CNBC reporting",
+                    "time": "2026-10-16"
                   },
                   {
-                    "step": "Rubio visits Jamnagar",
-                    "detail": "He visits Ambani's Reliance refinery in Gujarat, known for strong diesel supply.",
-                    "basis": "reported"
-                  },
-                  {
-                    "step": "US interest in Indian diesel",
-                    "detail": "Reliance's diesel could draw US interest in India-US energy dealings.",
-                    "basis": "inferred"
+                    "outlet": "Al Jazeera",
+                    "value": "Visit to Mumbai, skipping New Delhi",
+                    "origin": "Al Jazeera reporting; opposition leaders' complaints",
+                    "time": "2026-10-18"
                   }
                 ],
-                "breaks_if": "The visit produces no supply or investment arrangements involving Reliance's diesel."
+                "agreed": [
+                  "Marco Rubio is visiting India."
+                ],
+                "explanations": [
+                  {
+                    "type": "unexplained",
+                    "note": "Reports may describe different stops of a multi-city trip."
+                  }
+                ],
+                "status": "unresolved"
               }
             }
           },
@@ -923,97 +1213,6 @@
           ],
           "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/reuters_6ad4135d-1792283485.jpg?resize=1920%2C1440",
           "thread": "t2ogxay"
-        },
-        {
-          "id": "s1hh1qud",
-          "headline": "US-Russia deal, Trump-Zelensky clash could leave Ukraine out in the cold",
-          "url": "https://www.scmp.com/news/world/russia-central-asia/article/3371280/us-russia-deal-trump-zelensky-clash-could-leave-ukraine-out-cold",
-          "source": "scmp",
-          "date": "2026-10-18T01:14:48.000Z",
-          "relevance": "medium",
-          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/18/be98d5af-96c0-4086-a8b4-15f3b47eb5e2_731fb1bd.jpg?itok=KXFYemN9&v=1792286078",
-          "why": "A US-Russia diesel deal and tariff waiver on Russian exports could change Russia's revenue and energy trade, with only indirect links to India.",
-          "implications": [
-            "SCMP reports US threats to cut intelligence support for Ukraine, a tariff waiver on Russian exports and a diesel deal.",
-            "The diesel deal could help Russia fund its war, which may alter energy trade patterns that India watches."
-          ],
-          "analysis": {
-            "v": 2,
-            "at": "2026-10-18T04:48:25.207Z",
-            "tier": "quick",
-            "primary": "escalation",
-            "complement": null,
-            "features": [
-              "armed_conflict",
-              "trade_flow",
-              "fast_moving",
-              "pending_outcome"
-            ],
-            "exposure": {
-              "level": "low",
-              "reason": "No stated mechanism reaching India; link through energy markets is indirect."
-            },
-            "horizon": {
-              "value": "months",
-              "reason": "Effects on energy trade would take time to appear."
-            },
-            "confidence": {
-              "level": "low",
-              "reason": "Single outlet; no named official source in the summary."
-            },
-            "outlets": 1,
-            "affected": [
-              {
-                "group": "Fuel & LPG users",
-                "direction": "unclear",
-                "what": "fuel prices",
-                "basis": "inferred"
-              },
-              {
-                "group": "Importers & traders",
-                "direction": "unclear",
-                "what": "energy trade conditions",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "Whether the US follows through on cutting intelligence support to Ukraine",
-                "when": "",
-                "where": ""
-              }
-            ],
-            "frameworks": {
-              "escalation": {
-                "current_rung": 2,
-                "evidence": "A tariff waiver on Russian exports and a diesel deal, alongside US threats to cut intelligence support for Ukraine.",
-                "previous_rung": 1,
-                "next_signals": [
-                  {
-                    "rung": 3,
-                    "signal": "Reported mobilisation or force posturing linked to the dispute"
-                  }
-                ],
-                "india_channels": [
-                  "oil",
-                  "trade"
-                ]
-              }
-            }
-          },
-          "reports": [
-            {
-              "source": "scmp",
-              "headline": "US-Russia deal, Trump-Zelensky clash could leave Ukraine out in the cold",
-              "url": "https://www.scmp.com/news/world/russia-central-asia/article/3371280/us-russia-deal-trump-zelensky-clash-could-leave-ukraine-out-cold",
-              "date": "2026-10-18T01:14:48.000Z",
-              "kind": "hard",
-              "summary": "From US threats to cut off intelligence support for Ukraine to a waiver of tariffs on Russian ⁠exports and a diesel deal that could help Russia fund its war, it has been a damaging week for ties between Kyiv and its most important ally, Washington.",
-              "summaryV": 3,
-              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/18/be98d5af-96c0-4086-a8b4-15f3b47eb5e2_731fb1bd.jpg?itok=KXFYemN9&v=1792286078"
-            }
-          ],
-          "thread": "t1uohici"
         },
         {
           "id": "sf2as6a",
@@ -1201,50 +1400,6 @@
             }
           ],
           "thread": "t1hzeedz"
-        },
-        {
-          "id": "s1f3twwg",
-          "headline": "Houthi attacks on strategic Saudi assets threaten Riyadh's regional leadership and economic ambitions",
-          "url": "https://www.dw.com/en/houthi-attacks-on-strategic-saudi-assets-threaten-riyadh-s-regional-leadership-and-economic-ambitions/a-79680200",
-          "source": "dw",
-          "date": "2026-10-16T14:03:00.000Z",
-          "relevance": "medium",
-          "why": "",
-          "implications": [],
-          "reports": [
-            {
-              "source": "dw",
-              "headline": "Houthi attacks on strategic Saudi assets threaten Riyadh's regional leadership and economic ambitions",
-              "url": "https://www.dw.com/en/houthi-attacks-on-strategic-saudi-assets-threaten-riyadh-s-regional-leadership-and-economic-ambitions/a-79680200",
-              "date": "2026-10-16T14:03:00.000Z",
-              "kind": "feature",
-              "summary": "As Yemen's Iran-backed Houthis continue to target Saudi Arabia, Riyadh's vulnerability threatens its claim on regional and religious leadership — as well as its standing as an economic powerhouse.",
-              "summaryV": 3,
-              "ogTried": true,
-              "descTried": true,
-              "image": "https://static.dw.com/image/79676332_6.jpg"
-            },
-            {
-              "source": "africanews",
-              "headline": "Iran denies being behind Houthi attacks as Aden airport hit",
-              "url": "http://www.africanews.com/2026/10/17/iran-denies-being-behind-houthi-attacks-as-aden-airport-hit/",
-              "date": "2026-10-17T08:51:59.000Z",
-              "kind": "hard",
-              "summary": "Iran has denied any involvement in an escalation of attacks by Houthi rebels on Saudi targets. The international airport in Yemen’s interim capital Aden was struck by two missiles late on Friday, the second such incident in less than two weeks.",
-              "summaryV": 3
-            },
-            {
-              "source": "aljazeera",
-              "headline": "Houthis strike Yemen’s Aden: What that means",
-              "url": "https://www.aljazeera.com/news/2026/10/17/iran-backed-houthis-strike-yemens-aden-what-that-means",
-              "date": "2026-10-17T09:16:48.000Z",
-              "kind": "feature",
-              "summary": "What we know about the Houthi strikes on Aden’s presidential palace and airport, and why they matter.",
-              "summaryV": 3
-            }
-          ],
-          "image": "https://static.dw.com/image/79676332_6.jpg",
-          "thread": "t1j5n1me"
         },
         {
           "id": "s11qtill",
@@ -8949,6 +9104,386 @@
       "name": "Economy & Trade",
       "items": [
         {
+          "id": "syiiucs",
+          "headline": "Trump says he's \"negotiating Peace\" as Russia, Ukraine trade strikes",
+          "url": "https://www.cbsnews.com/news/ukraine-russia-drone-st-petersburg-oil-facilites/",
+          "source": "cbs",
+          "date": "2026-10-18T21:14:54.000Z",
+          "relevance": "medium",
+          "why": "Continued Russia-Ukraine strikes alongside uncertain US peace efforts could keep global energy and trade conditions unsettled, which may indirectly reach India.",
+          "implications": [
+            "The report gives no direct India link, so any effect is inferred and indirect.",
+            "Continued strikes could keep oil and trade routes uncertain, which may affect fuel costs and import bills.",
+            "Deeper Ukraine-Washington tensions could make a peace outcome harder to read, leaving India's trade planning uncertain."
+          ],
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-18T21:24:03.203Z",
+            "tier": "quick",
+            "primary": "escalation",
+            "complement": null,
+            "features": [
+              "armed_conflict",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "The report describes no mechanism reaching Indian households, imports, exports or citizens."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "No direct channel reported; any effect would likely build gradually."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "Single outlet; summary is brief and gives no official detail."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "fuel prices",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Any announced US-led negotiation steps between Russia and Ukraine",
+                "when": "",
+                "where": "White House"
+              },
+              {
+                "what": "Further reported Russian or Ukrainian strikes",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "frameworks": {
+              "escalation": {
+                "current_rung": 4,
+                "evidence": "CBS News reports Russia and Ukraine are trading strikes while Trump says he is negotiating peace.",
+                "previous_rung": null,
+                "next_signals": [
+                  {
+                    "rung": 5,
+                    "signal": "Reports of sustained, repeated strike campaigns by either side"
+                  },
+                  {
+                    "rung": 6,
+                    "signal": "Strikes on critical infrastructure or on third countries"
+                  }
+                ],
+                "india_channels": [
+                  "oil",
+                  "trade"
+                ]
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "cbs",
+              "headline": "Trump says he's \"negotiating Peace\" as Russia, Ukraine trade strikes",
+              "url": "https://www.cbsnews.com/news/ukraine-russia-drone-st-petersburg-oil-facilites/",
+              "date": "2026-10-18T21:14:54.000Z",
+              "kind": "hard",
+              "summary": "The strikes came as tensions between Ukraine and Washington deepened.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://assets1.cbsnewsstatic.com/hub/i/r/2026/10/18/5d7f6e2f-973f-491f-aaef-1e9e441ac32a/thumbnail/1200x630/ba1f86980a64fba7f6dedec0d2ce8274/gettyimages-2300263219.jpg"
+            }
+          ],
+          "image": "https://assets1.cbsnewsstatic.com/hub/i/r/2026/10/18/5d7f6e2f-973f-491f-aaef-1e9e441ac32a/thumbnail/1200x630/ba1f86980a64fba7f6dedec0d2ce8274/gettyimages-2300263219.jpg",
+          "thread": "tq9ru94"
+        },
+        {
+          "id": "s6p42cy",
+          "headline": "U.S. Starlink curbs embolden Russia to intensify attacks on Ukraine, minister tells CNBC",
+          "url": "https://www.cnbc.com/2026/10/16/zelenskyy-trump-eu-summit-russia-ukraine.html",
+          "source": "cnbc",
+          "date": "2026-10-16T10:25:46.000Z",
+          "relevance": "medium",
+          "why": "A dispute over who curbed Ukraine's Starlink access coincides with Trump pausing some Russian sanctions, which could indirectly affect India's Russia-linked trade.",
+          "implications": [
+            "The episode shows how much militaries depend on one private satellite provider whose access can change without notice.",
+            "Trump pausing some Russian sanctions could change the compliance picture for trade with Russia, though reports draw no India link.",
+            "Intensifying Russian strikes keep the war's direction uncertain, and that uncertainty may weigh on energy markets."
+          ],
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-18T21:25:22.825Z",
+            "tier": "deep",
+            "primary": "conflicting",
+            "complement": "impact_chain",
+            "features": [
+              "conflict",
+              "armed_conflict",
+              "fast_moving",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "No direct India mechanism reported; links run through sanctions and war intensity."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Any sanctions or energy effects would build over time."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "Who ordered the restrictions remains disputed between Kyiv and Washington."
+            },
+            "outlets": 5,
+            "affected": [
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "Russia sanctions compliance",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Restoration of normal Starlink access for Ukraine's military",
+                "when": "",
+                "where": "SpaceX"
+              },
+              {
+                "what": "Further changes to the pause on some Russian sanctions",
+                "when": "",
+                "where": "White House"
+              },
+              {
+                "what": "Western winter energy and air-defence support for Ukraine",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "frameworks": {
+              "conflicting": {
+                "disputed": {
+                  "item": "Who is responsible for restricting Ukraine's Starlink access",
+                  "unit": "attribution"
+                },
+                "accounts": [
+                  {
+                    "outlet": "CNBC",
+                    "value": "SpaceX limited internet connectivity without advance notice",
+                    "origin": "Ukrainian officials",
+                    "time": "this week, reported 2026-10-16"
+                  },
+                  {
+                    "outlet": "BBC News",
+                    "value": "Trump denies limiting Ukraine access to Starlink",
+                    "origin": "Donald Trump",
+                    "time": "2026-10-16"
+                  },
+                  {
+                    "outlet": "CNBC",
+                    "value": "White House didn't order Starlink restrictions in Ukraine",
+                    "origin": "Donald Trump",
+                    "time": "2026-10-16"
+                  },
+                  {
+                    "outlet": "NPR",
+                    "value": "U.S. government is behind the military's loss of normal access",
+                    "origin": "Volodymyr Zelenskyy",
+                    "time": "2026-10-18"
+                  }
+                ],
+                "agreed": [
+                  "Ukraine's military lost normal access to Starlink/Starshield satellite communications.",
+                  "Speed restrictions hampered Ukraine's defences, including interceptors, during intensified Russian strikes."
+                ],
+                "explanations": [
+                  {
+                    "type": "different source",
+                    "note": "Ukrainian leaders attribute curbs to Washington; Trump denies the White House ordered them."
+                  }
+                ],
+                "status": "unresolved"
+              },
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Starlink speed curbs hit Ukraine",
+                    "detail": "Restrictions grounded interceptors as Russian strikes intensified, reports say.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Trump pauses some Russian sanctions",
+                    "detail": "ABC News reports the pause alongside the Starlink restrictions.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Russia trade rules may shift",
+                    "detail": "Eased sanctions could change compliance conditions for trade with Russia.",
+                    "basis": "inferred"
+                  },
+                  {
+                    "step": "Indian traders could feel effects",
+                    "detail": "Indian firms dealing with Russia may see altered compliance requirements.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "Sanctions pause is reversed or found not to cover India-relevant trade."
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "cnbc",
+              "headline": "U.S. Starlink curbs embolden Russia to intensify attacks on Ukraine, minister tells CNBC",
+              "url": "https://www.cnbc.com/2026/10/16/zelenskyy-trump-eu-summit-russia-ukraine.html",
+              "date": "2026-10-16T10:25:46.000Z",
+              "kind": "hard",
+              "summary": "Ukraine is seeking winter energy and air-defense support as Russian strikes intensify and Starlink limits disrupt military operations.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://image.cnbcfm.com/api/v1/image/108372369-1791184306989-gettyimages-2297669360-AFP_D23K3WE.jpeg?v=1791184494&w=1920&h=1080"
+            },
+            {
+              "source": "bbc",
+              "headline": "Trump denies limiting Ukraine access to Starlink network",
+              "url": "https://www.bbc.co.uk/news/articles/ckz65g34wyd8o",
+              "date": "2026-10-16T19:33:48.000Z",
+              "kind": "hard",
+              "summary": "Speed curbs limited Ukraine's defences against deadly Russian attacks on Tuesday night.",
+              "summaryV": 3,
+              "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8a95/live/08a3c460-c990-11f1-adc3-01d8629f0470.jpg",
+              "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/8a95/live/08a3c460-c990-11f1-adc3-01d8629f0470.jpg"
+            },
+            {
+              "source": "cnbc",
+              "headline": "Trump says White House didn't order Starlink restrictions in Ukraine",
+              "url": "https://www.cnbc.com/2026/10/16/trump-denies-musk-claim-he-ordered-starlink-restrictions-in-ukraine.html",
+              "date": "2026-10-16T20:28:10.000Z",
+              "kind": "hard",
+              "summary": "Ukrainian officials complained this week that SpaceX had limited internet connectivity without advance notice.",
+              "summaryV": 3
+            },
+            {
+              "source": "abc",
+              "headline": "Starlink speed restrictions ground interceptors as Russian strikes batter Ukraine",
+              "url": "https://www.abc.net.au/news/2026-10-18/ukraine-grapples-with-starlink-restrictions/107279672",
+              "date": "2026-10-17T13:48:35.000Z",
+              "kind": "hard",
+              "summary": "Ukraine is grappling with Starlink restrictions vital to operating its interceptors as Trump pauses some Russian sanctions.",
+              "summaryV": 3,
+              "image": "https://live-production.wcms.abc-cdn.net.au/d82f3844343222adc0f0d61cd957d6d5?impolicy=wcms_crop_resize&cropH=1999&cropW=3554&xPos=0&yPos=5&width=862&height=485"
+            },
+            {
+              "source": "npr",
+              "headline": "Ukraine and the U.S. are at odds over Starshield. Here's what to know",
+              "url": "https://www.npr.org/2026/10/18/nx-s1-6007382/ukraine-us-starshield-starlink-what-to-know-trump",
+              "date": "2026-10-18T18:38:49.000Z",
+              "kind": "hard",
+              "summary": "Ukrainian President Volodymyr Zelenskyy has said he believes the U.S. government is behind his military's loss of normal access to the key satellite communications service used by the Ukrainian military.",
+              "summaryV": 3,
+              "image": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/5101x3401+0+0/resize/5101x3401!/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Ff5%2F9f%2F6ee4e955401a8491a881a8f28365%2Fap26289442815625.jpg"
+            },
+            {
+              "source": "nyt",
+              "headline": "What Is Starshield, SpaceX’s Military-Grade Satellite Internet Service Ukraine Relies On?",
+              "url": "https://www.nytimes.com/2026/10/14/business/starshield-spacex-ukraine-starlink-satellites-musk.html",
+              "date": "2026-10-18T19:36:51.000Z",
+              "kind": "feature",
+              "summary": "For years, Ukraine’s armed forces have relied on satellite communication services developed by Elon Musk’s SpaceX. Recent restrictions have hampered its war effort.",
+              "summaryV": 3,
+              "image": "https://static01.nyt.com/images/2026/10/14/multimedia/14Biz-Starshield-Explainer-gchj/14Biz-Starshield-Explainer-gchj-mediumSquareAt3X.jpg"
+            }
+          ],
+          "image": "https://image.cnbcfm.com/api/v1/image/108372369-1791184306989-gettyimages-2297669360-AFP_D23K3WE.jpeg?v=1791184494&w=1920&h=1080",
+          "thread": "tq9ru94"
+        },
+        {
+          "id": "stl9kmu",
+          "headline": "‘Hybrid warfare’: Taiwan drives away 16 Chinese ships",
+          "url": "https://www.aljazeera.com/news/2026/10/18/taiwan-drives-away-16-chinese-ships-accused-of-maritime-harassment",
+          "source": "aljazeera",
+          "date": "2026-10-18T16:25:52.000Z",
+          "relevance": "medium",
+          "why": "A growing Chinese ship presence around Taiwan could, if it disrupted shipping or trade around the island, indirectly affect India's trade and supply chains.",
+          "implications": [
+            "The report describes only a naval and coast-guard-style presence, with no disruption to trade or shipping reported so far.",
+            "If tensions rose further, shipping routes and trade linked to Taiwan could be affected, and Indian importers and traders may feel it."
+          ],
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-18T21:23:06.383Z",
+            "tier": "quick",
+            "primary": "escalation",
+            "complement": null,
+            "features": [
+              "armed_conflict"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "The report names no direct mechanism affecting India; any effect would be indirect."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "No India effect reported; spillover would need further escalation."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "Single outlet; the 'alter the status quo' claim is Taipei's own."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "possible trade route disruption",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Further Chinese ship deployments around Taiwan or Taiwan's statements on them",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "frameworks": {
+              "escalation": {
+                "current_rung": 3,
+                "evidence": "China is increasing its presence around Taiwan; Taiwan drove away 16 Chinese ships.",
+                "previous_rung": null,
+                "next_signals": [
+                  {
+                    "rung": 4,
+                    "signal": "Reported attack or exchange of fire involving Chinese and Taiwanese forces"
+                  }
+                ],
+                "india_channels": [
+                  "trade",
+                  "shipping"
+                ]
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "aljazeera",
+              "headline": "‘Hybrid warfare’: Taiwan drives away 16 Chinese ships",
+              "url": "https://www.aljazeera.com/news/2026/10/18/taiwan-drives-away-16-chinese-ships-accused-of-maritime-harassment",
+              "date": "2026-10-18T16:25:52.000Z",
+              "kind": "hard",
+              "summary": "China is ramping up its presence around Taiwan, in a pattern that Taipei said is designed to 'alter the status quo'.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/afp_6ad4d4ad6b6c-1792332973.jpg?resize=1920%2C1440"
+            }
+          ],
+          "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/afp_6ad4d4ad6b6c-1792332973.jpg?resize=1920%2C1440",
+          "thread": "tny4upw"
+        },
+        {
           "id": "s17zt6wo",
           "headline": "Saudi closes Riyadh skyscraper as chopper pilots killed near Yemen",
           "url": "https://www.scmp.com/news/world/middle-east/article/3371307/saudi-closes-riyadh-skyscraper-chopper-pilots-killed-near-yemen",
@@ -9480,163 +10015,6 @@
             }
           ],
           "thread": "topaoh5"
-        },
-        {
-          "id": "s6p42cy",
-          "headline": "U.S. Starlink curbs embolden Russia to intensify attacks on Ukraine, minister tells CNBC",
-          "url": "https://www.cnbc.com/2026/10/16/zelenskyy-trump-eu-summit-russia-ukraine.html",
-          "source": "cnbc",
-          "date": "2026-10-16T10:25:46.000Z",
-          "relevance": "medium",
-          "why": "India's link is indirect. Trump's reported pause of some Russian sanctions could shift conditions for Russian oil trade as the war escalates over Starlink curbs.",
-          "implications": [
-            "ABC News reports Trump is pausing some Russian sanctions, which could alter conditions for buyers of Russian crude.",
-            "Intensifying Russian strikes and Ukraine's push for winter energy support may keep energy markets sensitive to war developments.",
-            "Disputed control over Starlink access shows how a private satellite network can affect a country's critical operations."
-          ],
-          "analysis": {
-            "v": 2,
-            "at": "2026-10-17T23:14:29.524Z",
-            "tier": "standard",
-            "primary": "conflicting",
-            "complement": null,
-            "features": [
-              "conflict",
-              "armed_conflict",
-              "fast_moving",
-              "pending_outcome"
-            ],
-            "exposure": {
-              "level": "low",
-              "reason": "No India mechanism reported; only an indirect link via the paused Russian sanctions."
-            },
-            "horizon": {
-              "value": "months",
-              "reason": "Any sanctions or energy effect would build gradually."
-            },
-            "confidence": {
-              "level": "low",
-              "reason": "Who ordered the Starlink curbs remains disputed between officials."
-            },
-            "outlets": 3,
-            "affected": [
-              {
-                "group": "Fuel & LPG users",
-                "direction": "unclear",
-                "what": "fuel prices",
-                "basis": "inferred"
-              },
-              {
-                "group": "Importers & traders",
-                "direction": "unclear",
-                "what": "Russian crude trade conditions",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "Details of which Russian sanctions the US has paused",
-                "when": "",
-                "where": "White House"
-              },
-              {
-                "what": "Whether SpaceX lifts Starlink speed restrictions in Ukraine",
-                "when": "",
-                "where": "SpaceX"
-              }
-            ],
-            "frameworks": {
-              "conflicting": {
-                "disputed": {
-                  "item": "Whether the US government ordered Starlink restrictions in Ukraine",
-                  "unit": "attribution of respo"
-                },
-                "accounts": [
-                  {
-                    "outlet": "CNBC",
-                    "value": "U.S. Starlink curbs embolden Russia to intensify attacks",
-                    "origin": "Ukrainian minister",
-                    "time": "2026-10-16T10:25"
-                  },
-                  {
-                    "outlet": "BBC News",
-                    "value": "Trump denies limiting Ukraine access to Starlink network",
-                    "origin": "Trump",
-                    "time": "2026-10-16T19:33"
-                  },
-                  {
-                    "outlet": "CNBC",
-                    "value": "White House didn't order Starlink restrictions; Ukrainian officials say SpaceX l",
-                    "origin": "Trump; Ukrainian officials",
-                    "time": "2026-10-16T20:28"
-                  },
-                  {
-                    "outlet": "ABC News",
-                    "value": "Starlink speed restrictions ground interceptors",
-                    "origin": "ABC News reporting",
-                    "time": "2026-10-17T13:48"
-                  }
-                ],
-                "agreed": [
-                  "Starlink speed restrictions are affecting Ukraine's military operations",
-                  "Russian strikes on Ukraine are intensifying"
-                ],
-                "explanations": [
-                  {
-                    "type": "different source",
-                    "note": "Ukrainian officials describe US curbs; Trump says the White House did not order them."
-                  }
-                ],
-                "status": "unresolved"
-              }
-            }
-          },
-          "reports": [
-            {
-              "source": "cnbc",
-              "headline": "U.S. Starlink curbs embolden Russia to intensify attacks on Ukraine, minister tells CNBC",
-              "url": "https://www.cnbc.com/2026/10/16/zelenskyy-trump-eu-summit-russia-ukraine.html",
-              "date": "2026-10-16T10:25:46.000Z",
-              "kind": "hard",
-              "summary": "Ukraine is seeking winter energy and air-defense support as Russian strikes intensify and Starlink limits disrupt military operations.",
-              "summaryV": 3,
-              "ogTried": true,
-              "descTried": true,
-              "image": "https://image.cnbcfm.com/api/v1/image/108372369-1791184306989-gettyimages-2297669360-AFP_D23K3WE.jpeg?v=1791184494&w=1920&h=1080"
-            },
-            {
-              "source": "bbc",
-              "headline": "Trump denies limiting Ukraine access to Starlink network",
-              "url": "https://www.bbc.co.uk/news/articles/ckz65g34wyd8o",
-              "date": "2026-10-16T19:33:48.000Z",
-              "kind": "hard",
-              "summary": "Speed curbs limited Ukraine's defences against deadly Russian attacks on Tuesday night.",
-              "summaryV": 3,
-              "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8a95/live/08a3c460-c990-11f1-adc3-01d8629f0470.jpg",
-              "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/8a95/live/08a3c460-c990-11f1-adc3-01d8629f0470.jpg"
-            },
-            {
-              "source": "cnbc",
-              "headline": "Trump says White House didn't order Starlink restrictions in Ukraine",
-              "url": "https://www.cnbc.com/2026/10/16/trump-denies-musk-claim-he-ordered-starlink-restrictions-in-ukraine.html",
-              "date": "2026-10-16T20:28:10.000Z",
-              "kind": "hard",
-              "summary": "Ukrainian officials complained this week that SpaceX had limited internet connectivity without advance notice.",
-              "summaryV": 3
-            },
-            {
-              "source": "abc",
-              "headline": "Starlink speed restrictions ground interceptors as Russian strikes batter Ukraine",
-              "url": "https://www.abc.net.au/news/2026-10-18/ukraine-grapples-with-starlink-restrictions/107279672",
-              "date": "2026-10-17T13:48:35.000Z",
-              "kind": "hard",
-              "summary": "Ukraine is grappling with Starlink restrictions vital to operating its interceptors as Trump pauses some Russian sanctions.",
-              "summaryV": 3,
-              "image": "https://live-production.wcms.abc-cdn.net.au/d82f3844343222adc0f0d61cd957d6d5?impolicy=wcms_crop_resize&cropH=1999&cropW=3554&xPos=0&yPos=5&width=862&height=485"
-            }
-          ],
-          "image": "https://image.cnbcfm.com/api/v1/image/108372369-1791184306989-gettyimages-2297669360-AFP_D23K3WE.jpeg?v=1791184494&w=1920&h=1080",
-          "thread": "tq9ru94"
         },
         {
           "id": "s1hdp6y6",
@@ -14751,6 +15129,91 @@
       "name": "Policy & Governance",
       "items": [
         {
+          "id": "s5l9pm3",
+          "headline": "Russia’s war on Ukraine ‘must be brought to an end’, Zelenskyy says",
+          "url": "https://www.aljazeera.com/news/2026/10/18/russias-war-on-ukraine-must-be-brought-to-an-end-zelenskyy-says",
+          "source": "aljazeera",
+          "date": "2026-10-18T19:11:27.000Z",
+          "relevance": "medium",
+          "why": "Zelenskyy's call to end the war, with US-Kyiv contact reported as near-constant, is rhetoric only; any effect on India would come indirectly through trade.",
+          "implications": [
+            "The report describes statements and diplomatic contact only, with no new sanctions, strikes or trade measures.",
+            "India's exposure to the war could arise through energy and commodity trade, but the report names no such mechanism."
+          ],
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-18T21:23:42.295Z",
+            "tier": "quick",
+            "primary": "escalation",
+            "complement": null,
+            "features": [
+              "armed_conflict",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "Statements only; the report gives no direct mechanism reaching Indian households or trade."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "No concrete measure reported; any effect would depend on later events."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "One outlet, with an on-record statement from Ukraine's president."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "trade exposure to war outcome",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Further US-Ukraine talks or a public rift between Washington and Kyiv",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "frameworks": {
+              "escalation": {
+                "current_rung": 1,
+                "evidence": "Zelenskyy says the war must end and reports near-nonstop US-Kyiv contact despite a spat with Trump.",
+                "previous_rung": null,
+                "next_signals": [
+                  {
+                    "rung": 2,
+                    "signal": "New sanctions or formal diplomatic measures announced over the war"
+                  }
+                ],
+                "india_channels": [
+                  "oil",
+                  "trade"
+                ]
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "aljazeera",
+              "headline": "Russia’s war on Ukraine ‘must be brought to an end’, Zelenskyy says",
+              "url": "https://www.aljazeera.com/news/2026/10/18/russias-war-on-ukraine-must-be-brought-to-an-end-zelenskyy-says",
+              "date": "2026-10-18T19:11:27.000Z",
+              "kind": "hard",
+              "summary": "Ukraine's president says communication between Washington and Kyiv 'virtually nonstop', despite a spat with Trump.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/reuters_6ad51255-1792348757.jpg?resize=1920%2C1440"
+            }
+          ],
+          "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/reuters_6ad51255-1792348757.jpg?resize=1920%2C1440",
+          "thread": "tq9ru94"
+        },
+        {
           "id": "s1au5sz9",
           "headline": "Police detain 'cockroach' movement founder ahead of protests in Delhi",
           "url": "https://www.abc.net.au/news/2026-10-17/police-detain-cockroach-party-leader-delhi-protest/107278878",
@@ -14877,66 +15340,77 @@
           "date": "2026-10-16T13:26:43.000Z",
           "relevance": "medium",
           "image": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3707x2471+0+0/resize/3707x2471!/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Ff3%2F22%2F24a18ad34ab9afaeee9c49b78d39%2Fap26289462666677.jpg",
-          "why": "Escalating protests in New Delhi over a voter-list review, which critics call politically motivated, put electoral trust and political stability in focus.",
+          "why": "Escalating New Delhi protests over a contested voter-list review raise questions about voter access, with detentions of protesters reported in the capital.",
           "implications": [
-            "NPR reports critics say the review could disenfranchise voters, while the Election Commission and Modi's administration deny this.",
-            "Continued protests could deepen the political dispute over how voter rolls are maintained."
+            "Critics say the voter-list review threatens to disenfranchise voters; the Election Commission and Modi's administration deny this.",
+            "Protesters have reportedly been detained and dropped off at distant locations, raising safety concerns in Delhi.",
+            "Continued protests could disrupt movement and daily routines in the capital."
           ],
           "analysis": {
             "v": 2,
-            "at": "2026-10-16T21:12:40.826Z",
-            "tier": "quick",
+            "at": "2026-10-18T21:25:22.825Z",
+            "tier": "standard",
             "primary": "impact_chain",
             "complement": null,
             "features": [],
             "exposure": {
-              "level": "low",
-              "reason": "Reports describe no direct link to prices, trade, jobs or travel."
+              "level": "medium",
+              "reason": "Affects protesters' safety and voter rights; no economic mechanism is reported."
             },
             "horizon": {
               "value": "now",
-              "reason": "Protests are already under way and escalating."
+              "reason": "Protests and detentions are already under way in Delhi."
             },
             "confidence": {
-              "level": "low",
-              "reason": "Single outlet; claims by critics and government conflict."
+              "level": "medium",
+              "reason": "Two outlets; official denial on record; core allegations disputed."
             },
-            "outlets": 1,
+            "outlets": 2,
             "affected": [
               {
                 "group": "A named state or region",
                 "direction": "unclear",
-                "what": "Delhi protests, voter list review",
+                "what": "Delhi protests and detentions",
                 "basis": "reported"
               }
             ],
             "watch": [
               {
-                "what": "Election Commission statements or changes to the voter list review",
+                "what": "Election Commission response to disenfranchisement allegations over the voter-list review",
                 "when": "",
                 "where": "Election Commission of India"
+              },
+              {
+                "what": "Whether protests in New Delhi grow or ease",
+                "when": "",
+                "where": ""
               }
             ],
             "frameworks": {
               "impact_chain": {
                 "chain": [
                   {
-                    "step": "Voter list review sparks protests",
-                    "detail": "Crowds in New Delhi wave Indian flags as protests intensify.",
+                    "step": "Voter-list review contested",
+                    "detail": "Critics call it politically motivated; the Election Commission and government deny this.",
                     "basis": "reported"
                   },
                   {
-                    "step": "Critics allege disenfranchisement",
-                    "detail": "The Election Commission and Modi's administration deny the allegations.",
+                    "step": "Protests intensify in Delhi",
+                    "detail": "Crowds throng New Delhi waving Indian flags as protests escalate.",
                     "basis": "reported"
                   },
                   {
-                    "step": "Political contest may sharpen",
-                    "detail": "The dispute could harden positions over electoral processes.",
+                    "step": "Protesters detained, dropped far",
+                    "detail": "Volunteers and an AI tool help detained people return home safely.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Political dispute could deepen",
+                    "detail": "Trust in voter rolls may become a wider electoral flashpoint.",
                     "basis": "inferred"
                   }
                 ],
-                "breaks_if": "The review is clarified or changed in ways that ease critics' concerns."
+                "breaks_if": "The voter-list concerns are addressed and protests subside."
               }
             }
           },
@@ -17655,21 +18129,21 @@
   ],
   "source": "BBC News & The Guardian & NPR & Al Jazeera & MercoPress & ABC News & The New York Times & CNBC & CBS News & DW & France 24 & Africanews & South China Morning Post & The Hindu & Mint",
   "lastRun": {
-    "analysed": 67,
-    "added": 1,
-    "merged": 6,
+    "analysed": 68,
+    "added": 4,
+    "merged": 4,
     "rejected": 60,
     "failedBatches": 0,
     "feeds": {
       "bbc": {
         "feedsOk": 6,
         "feedsFailed": 0,
-        "items": 157
+        "items": 158
       },
       "guardian": {
         "feedsOk": 7,
         "feedsFailed": 0,
-        "items": 187
+        "items": 191
       },
       "npr": {
         "feedsOk": 4,
@@ -17679,7 +18153,7 @@
       "aljazeera": {
         "feedsOk": 1,
         "feedsFailed": 0,
-        "items": 12
+        "items": 8
       },
       "mercopress": {
         "feedsOk": 3,
@@ -17694,7 +18168,7 @@
       "nyt": {
         "feedsOk": 5,
         "feedsFailed": 0,
-        "items": 169
+        "items": 172
       },
       "cnbc": {
         "feedsOk": 3,
@@ -17704,7 +18178,7 @@
       "cbs": {
         "feedsOk": 2,
         "feedsFailed": 0,
-        "items": 37
+        "items": 38
       },
       "dw": {
         "feedsOk": 3,
@@ -17728,18 +18202,18 @@
       }
     },
     "shareImages": {
-      "tried": 0,
-      "found": 0,
+      "tried": 3,
+      "found": 3,
       "summaries": 0
     },
     "threads": {
-      "assigned": 1,
-      "created": 0,
+      "assigned": 4,
+      "created": 1,
       "failedBatches": 0
     },
     "summaries": {
-      "written": 0,
-      "due": 3
+      "written": 5,
+      "due": 5
     },
     "kinds": {
       "labelled": 0,
@@ -17747,10 +18221,9 @@
       "failedBatches": 0
     },
     "frames": {
-      "done": 0,
-      "waiting": 4,
-      "failedBatches": 0,
-      "budgetStopped": true
+      "done": 5,
+      "waiting": 0,
+      "failedBatches": 0
     },
     "stats": {
       "searched": 0,
@@ -17766,29 +18239,36 @@
     "models": {
       "filter": {
         "model": "claude-haiku-5-5",
-        "calls": 4,
-        "inputTokens": 18036,
-        "outputTokens": 8942,
-        "cost": 0.0063
+        "calls": 7,
+        "inputTokens": 23112,
+        "outputTokens": 11645,
+        "cost": 0.0082
       },
       "analysis_quick": {
         "model": "claude-sonnet-5-5",
-        "calls": 1,
-        "inputTokens": 1868,
-        "outputTokens": 1330,
-        "cost": 0.017
+        "calls": 3,
+        "inputTokens": 5793,
+        "outputTokens": 4789,
+        "cost": 0.0595
+      },
+      "analysis": {
+        "model": "claude-opus-5-5",
+        "calls": 2,
+        "inputTokens": 6313,
+        "outputTokens": 8382,
+        "cost": 0.1929
       },
       "threads": {
         "model": "claude-sonnet-5-5",
-        "calls": 1,
-        "inputTokens": 4734,
-        "outputTokens": 145,
-        "cost": 0.0109
+        "calls": 6,
+        "inputTokens": 10867,
+        "outputTokens": 1576,
+        "cost": 0.0374
       }
     },
     "spend": {
-      "thisDesk": 0.0342,
-      "today": 5.4462,
+      "thisDesk": 0.298,
+      "today": 0.298,
       "cap": 6
     }
   },
