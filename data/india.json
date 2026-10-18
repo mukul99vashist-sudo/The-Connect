@@ -2,12 +2,271 @@
   "schema": 4,
   "region": "India",
   "since": "2026-10-02",
-  "updatedAt": "2026-10-18T21:25:37.783Z",
+  "updatedAt": "2026-10-18T23:24:00.988Z",
   "sectors": [
     {
       "id": "energy",
       "name": "Energy",
       "items": [
+        {
+          "id": "s11qtill",
+          "headline": "Brent oil touches $110 as Iran escalates Hormuz attacks, Ukraine vows to hit Russian refineries",
+          "url": "https://www.cnbc.com/2026/10/16/oil-price-today-iran-strait-hormuz-ukraine-russia.html",
+          "source": "cnbc",
+          "date": "2026-10-16T20:02:21.000Z",
+          "relevance": "high",
+          "why": "Brent touched $110, its highest since May, on Iran's Hormuz attacks and Russian diesel doubts. That could raise India's crude import costs and pressure fuel prices.",
+          "implications": [
+            "Brent reached $110 a barrel for the first time since May as Iran escalated attacks in the Strait of Hormuz.",
+            "Fears of tighter Middle East supply and doubts over Russian diesel supply are driving prices, CNBC and MercoPress report.",
+            "As a large crude importer, India may face a higher oil import bill and pressure on domestic fuel prices."
+          ],
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-17T20:46:50.667Z",
+            "tier": "standard",
+            "primary": "disruption_map",
+            "complement": null,
+            "features": [
+              "disruption",
+              "armed_conflict",
+              "price_move"
+            ],
+            "exposure": {
+              "level": "high",
+              "reason": "Crude oil is a top Indian import and drives fuel prices."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Crude price moves typically pass to fuel costs with lag."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "Two outlets agree on the price; no on-record official source."
+            },
+            "outlets": 2,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "up",
+                "what": "fuel prices",
+                "basis": "inferred"
+              },
+              {
+                "group": "Importers & traders",
+                "direction": "up",
+                "what": "crude import costs",
+                "basis": "inferred"
+              },
+              {
+                "group": "Government finances",
+                "direction": "unclear",
+                "what": "oil import bill",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Whether Brent holds above $110 a barrel",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "Further Iranian attacks in the Strait of Hormuz",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "Ukrainian strikes on Russian refineries affecting diesel supply",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "frameworks": {
+              "disruption_map": {
+                "node": {
+                  "name": "Strait of Hormuz",
+                  "type": "strait",
+                  "status": "unknown",
+                  "as_of": "2026-10-16 (attacks escalated this week)"
+                },
+                "cause": {
+                  "text": "Iran escalated attacks in the Strait of Hormuz",
+                  "status": "confirmed"
+                },
+                "flows": [
+                  {
+                    "flow": "crude",
+                    "india_link": "Higher crude prices could raise India's oil import costs",
+                    "basis": "inferred"
+                  },
+                  {
+                    "flow": "other",
+                    "india_link": "Doubts over Russian diesel supply may tighten global fuel markets",
+                    "basis": "inferred"
+                  }
+                ],
+                "alternatives": [],
+                "duration": "not reported"
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "cnbc",
+              "headline": "Brent oil touches $110 as Iran escalates Hormuz attacks, Ukraine vows to hit Russian refineries",
+              "url": "https://www.cnbc.com/2026/10/16/oil-price-today-iran-strait-hormuz-ukraine-russia.html",
+              "date": "2026-10-16T20:02:21.000Z",
+              "kind": "hard",
+              "summary": "U.S. crude oil prices rose sharply Friday as Iran escalated attacks in the Strait of Hormuz this week.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://image.cnbcfm.com/api/v1/image/108409918-1792001666276-2026-10-13T175311Z_748127171_RC2F2OACIXEA_RTRMADP_3_IRAN-CRISIS-HORMUZ.JPG?v=1792001733&w=1920&h=1080"
+            },
+            {
+              "source": "mercopress",
+              "headline": "Brent touches US$110 for the first time since May on Middle East tensions",
+              "url": "https://en.mercopress.com/2026/10/17/brent-touches-us-110-for-the-first-time-since-may-on-middle-east-tensions",
+              "date": "2026-10-17T06:17:00.000Z",
+              "kind": "hard",
+              "summary": "Brent crude reached US$110 a barrel on Friday for the first time since May, driven by fears that escalation in the Middle East could further tighten supplies and by doubts over how much diesel Russia can supply to the market.",
+              "summaryV": 3,
+              "image": "https://en.mercopress.com/data/cache/noticias/111798/100x80/oil.jpg"
+            },
+            {
+              "source": "cnbc",
+              "headline": "Brent crude hovers near $109 a barrel as Ukraine resumes energy strikes, tankers attacked in Middle East",
+              "url": "https://www.cnbc.com/2026/10/18/oil-price-today-ukraine-russia-iran-strait-hormuz.html",
+              "date": "2026-10-18T23:10:45.000Z",
+              "kind": "breaking",
+              "summary": "Fires broke out at an oil terminal and depot in St. Petersburg after Ukraine launched a massive wave of drone strikes on Sunday.",
+              "summaryV": 3
+            }
+          ],
+          "image": "https://image.cnbcfm.com/api/v1/image/108409918-1792001666276-2026-10-13T175311Z_748127171_RC2F2OACIXEA_RTRMADP_3_IRAN-CRISIS-HORMUZ.JPG?v=1792001733&w=1920&h=1080",
+          "thread": "t2ogxay",
+          "stats": {
+            "v": 2,
+            "at": "2026-10-17T23:14:06.784Z",
+            "series": [
+              {
+                "title": "Brent crude spot price, daily",
+                "unit": "US$ per barrel",
+                "publisher": "U.S. Energy Information Administration",
+                "points": [
+                  {
+                    "period": "29 Sep 2026",
+                    "value": 113.96,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "30 Sep 2026",
+                    "value": 115.91,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "1 Oct 2026",
+                    "value": 114.82,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "2 Oct 2026",
+                    "value": 135.51,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "5 Oct 2026",
+                    "value": 125.51,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "6 Oct 2026",
+                    "value": 125.44,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "title": "Spot Prices for Crude Oil and Petroleum Products",
+                    "domain": "eia.gov"
+                  }
+                ],
+                "domains": [
+                  "eia.gov"
+                ],
+                "dropped": 0,
+                "why": "",
+                "reused": true,
+                "checkedAt": "2026-10-13T23:11:10.422Z"
+              },
+              {
+                "title": "Crude oil and condensate through the Strait of Hormuz",
+                "unit": "million barrels per day",
+                "publisher": "U.S. Energy Information Administration",
+                "points": [
+                  {
+                    "period": "2020",
+                    "value": 14.4,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2021",
+                    "value": 14.7,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2022",
+                    "value": 16.2,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2023",
+                    "value": 15.8,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2024",
+                    "value": 14.6,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "1H25",
+                    "value": 14.7,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "title": "eia.gov",
+                    "domain": "eia.gov"
+                  }
+                ],
+                "domains": [
+                  "eia.gov"
+                ],
+                "dropped": 0,
+                "why": "",
+                "reused": true,
+                "checkedAt": "2026-10-13T23:16:50.395Z"
+              }
+            ]
+          }
+        },
         {
           "id": "sood0sb",
           "headline": "Live: ASX set to edge lower as oil keeps rising after Wall St slides on AI anxiety",
@@ -527,7 +786,127 @@
             }
           ],
           "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/2026-09-15T133315Z_1739277875_RC2PJNAUTU8V_RTRMADP_3_IRAN-CRISIS-EGYPT-SAUDI-1792241573.jpg?resize=1920%2C1440",
-          "thread": "t1j5n1me"
+          "thread": "t1j5n1me",
+          "stats": {
+            "v": 2,
+            "at": "2026-10-18T23:23:57.864Z",
+            "series": [
+              {
+                "title": "Crude oil and condensate through the Strait of Hormuz",
+                "unit": "million barrels per day",
+                "publisher": "U.S. Energy Information Administration",
+                "points": [
+                  {
+                    "period": "2020",
+                    "value": 14.4,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2021",
+                    "value": 14.7,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2022",
+                    "value": 16.2,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2023",
+                    "value": 15.8,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2024",
+                    "value": 14.6,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "1H25",
+                    "value": 14.7,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "title": "eia.gov",
+                    "domain": "eia.gov"
+                  }
+                ],
+                "domains": [
+                  "eia.gov"
+                ],
+                "dropped": 0,
+                "why": "Both series track oil moving through the Strait of Hormuz, the Gulf chokepoint whose disruption by a widening regional conflict would threaten India's crude supplies described in the story.",
+                "reused": true,
+                "checkedAt": "2026-10-13T23:16:50.395Z"
+              },
+              {
+                "title": "Oil flows through the Strait of Hormuz, total",
+                "unit": "million barrels per day",
+                "publisher": "U.S. Energy Information Administration",
+                "points": [
+                  {
+                    "period": "2020",
+                    "value": 19.2,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2021",
+                    "value": 19.7,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2022",
+                    "value": 21.9,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2023",
+                    "value": 21.8,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2024",
+                    "value": 20.7,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "1H25",
+                    "value": 20.9,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "title": "eia.gov",
+                    "domain": "eia.gov"
+                  }
+                ],
+                "domains": [
+                  "eia.gov"
+                ],
+                "dropped": 0,
+                "why": "Both series track oil moving through the Strait of Hormuz, the Gulf chokepoint whose disruption by a widening regional conflict would threaten India's crude supplies described in the story.",
+                "reused": true,
+                "checkedAt": "2026-10-13T23:16:50.395Z"
+              }
+            ]
+          }
         },
         {
           "id": "s15oyup4",
@@ -1400,256 +1779,6 @@
             }
           ],
           "thread": "t1hzeedz"
-        },
-        {
-          "id": "s11qtill",
-          "headline": "Brent oil touches $110 as Iran escalates Hormuz attacks, Ukraine vows to hit Russian refineries",
-          "url": "https://www.cnbc.com/2026/10/16/oil-price-today-iran-strait-hormuz-ukraine-russia.html",
-          "source": "cnbc",
-          "date": "2026-10-16T20:02:21.000Z",
-          "relevance": "high",
-          "why": "Brent touched $110, its highest since May, on Iran's Hormuz attacks and Russian diesel doubts. That could raise India's crude import costs and pressure fuel prices.",
-          "implications": [
-            "Brent reached $110 a barrel for the first time since May as Iran escalated attacks in the Strait of Hormuz.",
-            "Fears of tighter Middle East supply and doubts over Russian diesel supply are driving prices, CNBC and MercoPress report.",
-            "As a large crude importer, India may face a higher oil import bill and pressure on domestic fuel prices."
-          ],
-          "analysis": {
-            "v": 2,
-            "at": "2026-10-17T20:46:50.667Z",
-            "tier": "standard",
-            "primary": "disruption_map",
-            "complement": null,
-            "features": [
-              "disruption",
-              "armed_conflict",
-              "price_move"
-            ],
-            "exposure": {
-              "level": "high",
-              "reason": "Crude oil is a top Indian import and drives fuel prices."
-            },
-            "horizon": {
-              "value": "weeks",
-              "reason": "Crude price moves typically pass to fuel costs with lag."
-            },
-            "confidence": {
-              "level": "medium",
-              "reason": "Two outlets agree on the price; no on-record official source."
-            },
-            "outlets": 2,
-            "affected": [
-              {
-                "group": "Fuel & LPG users",
-                "direction": "up",
-                "what": "fuel prices",
-                "basis": "inferred"
-              },
-              {
-                "group": "Importers & traders",
-                "direction": "up",
-                "what": "crude import costs",
-                "basis": "inferred"
-              },
-              {
-                "group": "Government finances",
-                "direction": "unclear",
-                "what": "oil import bill",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "Whether Brent holds above $110 a barrel",
-                "when": "",
-                "where": ""
-              },
-              {
-                "what": "Further Iranian attacks in the Strait of Hormuz",
-                "when": "",
-                "where": ""
-              },
-              {
-                "what": "Ukrainian strikes on Russian refineries affecting diesel supply",
-                "when": "",
-                "where": ""
-              }
-            ],
-            "frameworks": {
-              "disruption_map": {
-                "node": {
-                  "name": "Strait of Hormuz",
-                  "type": "strait",
-                  "status": "unknown",
-                  "as_of": "2026-10-16 (attacks escalated this week)"
-                },
-                "cause": {
-                  "text": "Iran escalated attacks in the Strait of Hormuz",
-                  "status": "confirmed"
-                },
-                "flows": [
-                  {
-                    "flow": "crude",
-                    "india_link": "Higher crude prices could raise India's oil import costs",
-                    "basis": "inferred"
-                  },
-                  {
-                    "flow": "other",
-                    "india_link": "Doubts over Russian diesel supply may tighten global fuel markets",
-                    "basis": "inferred"
-                  }
-                ],
-                "alternatives": [],
-                "duration": "not reported"
-              }
-            }
-          },
-          "reports": [
-            {
-              "source": "cnbc",
-              "headline": "Brent oil touches $110 as Iran escalates Hormuz attacks, Ukraine vows to hit Russian refineries",
-              "url": "https://www.cnbc.com/2026/10/16/oil-price-today-iran-strait-hormuz-ukraine-russia.html",
-              "date": "2026-10-16T20:02:21.000Z",
-              "kind": "hard",
-              "summary": "U.S. crude oil prices rose sharply Friday as Iran escalated attacks in the Strait of Hormuz this week.",
-              "summaryV": 3,
-              "ogTried": true,
-              "descTried": true,
-              "image": "https://image.cnbcfm.com/api/v1/image/108409918-1792001666276-2026-10-13T175311Z_748127171_RC2F2OACIXEA_RTRMADP_3_IRAN-CRISIS-HORMUZ.JPG?v=1792001733&w=1920&h=1080"
-            },
-            {
-              "source": "mercopress",
-              "headline": "Brent touches US$110 for the first time since May on Middle East tensions",
-              "url": "https://en.mercopress.com/2026/10/17/brent-touches-us-110-for-the-first-time-since-may-on-middle-east-tensions",
-              "date": "2026-10-17T06:17:00.000Z",
-              "kind": "hard",
-              "summary": "Brent crude reached US$110 a barrel on Friday for the first time since May, driven by fears that escalation in the Middle East could further tighten supplies and by doubts over how much diesel Russia can supply to the market.",
-              "summaryV": 3,
-              "image": "https://en.mercopress.com/data/cache/noticias/111798/100x80/oil.jpg"
-            }
-          ],
-          "image": "https://image.cnbcfm.com/api/v1/image/108409918-1792001666276-2026-10-13T175311Z_748127171_RC2F2OACIXEA_RTRMADP_3_IRAN-CRISIS-HORMUZ.JPG?v=1792001733&w=1920&h=1080",
-          "thread": "t2ogxay",
-          "stats": {
-            "v": 2,
-            "at": "2026-10-17T23:14:06.784Z",
-            "series": [
-              {
-                "title": "Brent crude spot price, daily",
-                "unit": "US$ per barrel",
-                "publisher": "U.S. Energy Information Administration",
-                "points": [
-                  {
-                    "period": "29 Sep 2026",
-                    "value": 113.96,
-                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
-                    "source": "Spot Prices for Crude Oil and Petroleum Products"
-                  },
-                  {
-                    "period": "30 Sep 2026",
-                    "value": 115.91,
-                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
-                    "source": "Spot Prices for Crude Oil and Petroleum Products"
-                  },
-                  {
-                    "period": "1 Oct 2026",
-                    "value": 114.82,
-                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
-                    "source": "Spot Prices for Crude Oil and Petroleum Products"
-                  },
-                  {
-                    "period": "2 Oct 2026",
-                    "value": 135.51,
-                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
-                    "source": "Spot Prices for Crude Oil and Petroleum Products"
-                  },
-                  {
-                    "period": "5 Oct 2026",
-                    "value": 125.51,
-                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
-                    "source": "Spot Prices for Crude Oil and Petroleum Products"
-                  },
-                  {
-                    "period": "6 Oct 2026",
-                    "value": 125.44,
-                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
-                    "source": "Spot Prices for Crude Oil and Petroleum Products"
-                  }
-                ],
-                "sources": [
-                  {
-                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
-                    "title": "Spot Prices for Crude Oil and Petroleum Products",
-                    "domain": "eia.gov"
-                  }
-                ],
-                "domains": [
-                  "eia.gov"
-                ],
-                "dropped": 0,
-                "why": "",
-                "reused": true,
-                "checkedAt": "2026-10-13T23:11:10.422Z"
-              },
-              {
-                "title": "Crude oil and condensate through the Strait of Hormuz",
-                "unit": "million barrels per day",
-                "publisher": "U.S. Energy Information Administration",
-                "points": [
-                  {
-                    "period": "2020",
-                    "value": 14.4,
-                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-                    "source": "eia.gov"
-                  },
-                  {
-                    "period": "2021",
-                    "value": 14.7,
-                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-                    "source": "eia.gov"
-                  },
-                  {
-                    "period": "2022",
-                    "value": 16.2,
-                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-                    "source": "eia.gov"
-                  },
-                  {
-                    "period": "2023",
-                    "value": 15.8,
-                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-                    "source": "eia.gov"
-                  },
-                  {
-                    "period": "2024",
-                    "value": 14.6,
-                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-                    "source": "eia.gov"
-                  },
-                  {
-                    "period": "1H25",
-                    "value": 14.7,
-                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-                    "source": "eia.gov"
-                  }
-                ],
-                "sources": [
-                  {
-                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-                    "title": "eia.gov",
-                    "domain": "eia.gov"
-                  }
-                ],
-                "domains": [
-                  "eia.gov"
-                ],
-                "dropped": 0,
-                "why": "",
-                "reused": true,
-                "checkedAt": "2026-10-13T23:16:50.395Z"
-              }
-            ]
-          }
         },
         {
           "id": "s1yrjg15",
@@ -9104,6 +9233,477 @@
       "name": "Economy & Trade",
       "items": [
         {
+          "id": "sq79fz9",
+          "headline": "Trump waives several Russia sanctions as new US law takes effect",
+          "url": "https://www.bbc.co.uk/news/articles/cxr5yvzv7rp0o",
+          "source": "bbc",
+          "date": "2026-10-17T02:48:36.000Z",
+          "relevance": "medium",
+          "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c147/live/f608c860-c9cf-11f1-84c1-fd3c3266bb86.jpg",
+          "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/c147/live/f608c860-c9cf-11f1-84c1-fd3c3266bb86.jpg",
+          "why": "Trump has waived new US sanctions and tariffs on Russia. That could ease pressure on global oil trade involving Russia and affect fuel costs for importers like India.",
+          "implications": [
+            "Al Jazeera analysts say Russia will benefit most from the waiver, which could keep Russian oil flowing with fewer US barriers.",
+            "The New York Times links the waiver to US fears of high energy prices, a pressure that may also matter for oil importers.",
+            "Bipartisan backlash in Congress means the relief could be challenged, so the risk to Russian trade remains uncertain."
+          ],
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-17T20:46:50.666Z",
+            "tier": "deep",
+            "primary": "trade_flow",
+            "complement": "scenarios",
+            "features": [
+              "trade_flow",
+              "policy_stage",
+              "fast_moving",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "Reports do not name India; the link to crude buyers and fuel costs is inferred."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Waiver took effect just before the sanctions deadline."
+            },
+            "confidence": {
+              "level": "high",
+              "reason": "Several outlets agree; Trump formally notified Congress of the pause."
+            },
+            "outlets": 6,
+            "affected": [
+              {
+                "group": "Importers & traders",
+                "direction": "down",
+                "what": "sanction risk on Russian trade",
+                "basis": "inferred"
+              },
+              {
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "fuel prices",
+                "basis": "inferred"
+              },
+              {
+                "group": "Government finances",
+                "direction": "unclear",
+                "what": "oil import bill",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Congressional move to override or restore the waived Graham Act sanctions",
+                "when": "",
+                "where": "US Congress"
+              },
+              {
+                "what": "Progress or expansion of the US-Russia diesel deal",
+                "when": "",
+                "where": "White House"
+              },
+              {
+                "what": "Russian response to the US economic relief",
+                "when": "",
+                "where": "Kremlin"
+              }
+            ],
+            "frameworks": {
+              "trade_flow": {
+                "good": "Russian oil and diesel",
+                "actors": [
+                  {
+                    "country": "Russia",
+                    "role": "exporter",
+                    "is_india": false
+                  },
+                  {
+                    "country": "United States",
+                    "role": "third_party",
+                    "is_india": false
+                  }
+                ],
+                "change": {
+                  "type": "other",
+                  "effective": ""
+                },
+                "india_position": {
+                  "role": "competing_buyer",
+                  "note": "Reports do not name India; any Indian purchases of Russian oil could face less US pressure."
+                },
+                "volumes": []
+              },
+              "scenarios": {
+                "question": "Will Trump's waiver of the Graham Act sanctions survive congressional backlash?",
+                "scenarios": [
+                  {
+                    "name": "Waiver holds",
+                    "what": "Sanctions and tariffs stay suspended on national interest grounds, as Trump told Congress.",
+                    "signal": "No congressional action to reinstate sanctions",
+                    "india_effect": "Russian oil trade may face fewer US barriers."
+                  },
+                  {
+                    "name": "Congress pushes back",
+                    "what": "Bipartisan critics try to restore the sanctions Congress passed.",
+                    "signal": "Congressional vote or bill to reverse the waiver",
+                    "india_effect": "Sanction and tariff risk on Russian trade could return."
+                  },
+                  {
+                    "name": "Russia reciprocates",
+                    "what": "Russia returns the favour the administration hopes for, building on the diesel deal.",
+                    "signal": "Announced Russian concessions or wider diesel supply",
+                    "india_effect": "Easier energy supply could soften global fuel prices."
+                  }
+                ]
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "bbc",
+              "headline": "Trump waives several Russia sanctions as new US law takes effect",
+              "url": "https://www.bbc.co.uk/news/articles/cxr5yvzv7rp0o",
+              "date": "2026-10-17T02:48:36.000Z",
+              "kind": "hard",
+              "summary": "Trump says parts of a new law that aims to punish Moscow for its war against Ukraine are against US national interests.",
+              "summaryV": 3,
+              "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c147/live/f608c860-c9cf-11f1-84c1-fd3c3266bb86.jpg",
+              "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/c147/live/f608c860-c9cf-11f1-84c1-fd3c3266bb86.jpg"
+            },
+            {
+              "source": "guardian",
+              "headline": "Trump pauses new Russia sanctions passed by Congress amid deepening row with Ukraine",
+              "url": "https://www.theguardian.com/us-news/2026/oct/17/trump-puts-new-russia-sanctions-passed-by-congress-on-hold-amid-deepening-row-with-ukraine",
+              "date": "2026-10-17T02:53:38.000Z",
+              "kind": "hard",
+              "summary": "President signed the legislation championed by late senator Lindsey Graham last month but has waived the restrictions as they were due to come into effect",
+              "summaryV": 3,
+              "lede": "Donald Trump has put on hold a sweeping new sanctions package targeting the Russian economy, telling Congress the pause on the legislation passed by both chambers was in the national interest.",
+              "image": "https://i.guim.co.uk/img/media/63bbfb9d93afbe44cae6b938cc6633e49026dfb0/445_0_3091_2473/master/3091.jpg?width=700&quality=85&auto=format&fit=max&s=42d58ff5a191e1aac9d12dbd15d3993b"
+            },
+            {
+              "source": "aljazeera",
+              "headline": "Trump puts on hold new Russia sanctions he signed into law",
+              "url": "https://www.aljazeera.com/news/2026/10/17/trump-puts-on-hold-new-russia-sanctions-he-signed-into-law",
+              "date": "2026-10-17T04:45:03.000Z",
+              "kind": "hard",
+              "summary": "US president's executive order comes two days before sanctions deadline and a week after diesel deal with Putin.",
+              "summaryV": 3
+            },
+            {
+              "source": "cnbc",
+              "headline": "Trump waives broad new Russia sanctions and tariffs under Graham Act, citing national interest",
+              "url": "https://www.cnbc.com/2026/10/17/trump-waives-russia-related-sanctions-tariffs-before-they-take-effect-.html",
+              "date": "2026-10-17T10:20:44.000Z",
+              "kind": "hard",
+              "summary": "Trump signed the Graham Bill, which targeted Russia over its invasion of Ukraine, into law in September.",
+              "summaryV": 3
+            },
+            {
+              "source": "aljazeera",
+              "headline": "Trump eases Russia oil sanctions, but is Europe still buying Moscow’s gas?",
+              "url": "https://www.aljazeera.com/news/2026/10/17/trump-eases-russia-oil-sanctions-but-is-europe-still-buying-moscows-gas",
+              "date": "2026-10-17T11:10:22.000Z",
+              "kind": "hard",
+              "summary": "Analysts say Russia will benefit most from US sanctions waiver.",
+              "summaryV": 3
+            },
+            {
+              "source": "npr",
+              "headline": "Zelenskyy urges support for new US sanctions on Russia after Trump puts them on hold",
+              "url": "https://www.npr.org/2026/10/17/nx-s1-6006745/us-sanctions-russia",
+              "date": "2026-10-17T14:25:10.000Z",
+              "kind": "hard",
+              "summary": "Zelenskyy described the move as unfortunate, adding it would encourage Russia to continue its assault. Trump told Congress that the pause was in the national interest but gave no further details.",
+              "summaryV": 3,
+              "image": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/6000x4000+0+0/resize/6000x4000!/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F4b%2F96%2Fd6b29b774dbcbbb820e6e569974b%2Fap26290438386008.jpg"
+            },
+            {
+              "source": "guardian",
+              "headline": "Trump’s pause on Russia sanctions is ‘reward’ for Putin, Zelenskyy says",
+              "url": "https://www.theguardian.com/world/2026/oct/17/volodymyr-zelenskyy-donald-trump-lift-sanctions-russia-intensify-war-ukraine",
+              "date": "2026-10-17T14:46:05.000Z",
+              "kind": "hard",
+              "summary": "Ukrainian president warns it will embolden Russian leader and intensify war as Moscow hits country’s power plants",
+              "summaryV": 3,
+              "lede": "Power plant attacks reflect Russian blueprint to make Ukrainian cities unlivable",
+              "image": "https://i.guim.co.uk/img/media/66d7fc900581121c0e7d134eb1ebcd4cda702d73/153_0_5000_4000/master/5000.jpg?width=700&quality=85&auto=format&fit=max&s=3059451b60d02883bac9c9c670b320c8"
+            },
+            {
+              "source": "nyt",
+              "headline": "Trump Signs Order Waiving New Russia Sanctions",
+              "url": "https://www.nytimes.com/2026/10/16/us/politics/trump-order-russia-sanctions.html",
+              "date": "2026-10-17T13:30:38.000Z",
+              "kind": "hard",
+              "summary": "The sanctions were part of a measure that was named after Senator Lindsey Graham, the South Carolina Republican who died in July.",
+              "summaryV": 3,
+              "image": "https://static01.nyt.com/images/2025/08/16/multimedia/16dc-russia-sanctions/16dc-russia-sanctions-mediumSquareAt3X-v2.jpg"
+            },
+            {
+              "source": "aljazeera",
+              "headline": "Trump faces bipartisan backlash over Russia sanctions waiver",
+              "url": "https://www.aljazeera.com/news/2026/10/17/trump-faces-bipartisan-backlash-over-russia-sanctions-waiver",
+              "date": "2026-10-17T17:24:07.000Z",
+              "kind": "hard",
+              "summary": "Republicans and Democrats condemn Trump’s decision to suspend sanctions, saying it undermines support for Ukraine.",
+              "summaryV": 3
+            },
+            {
+              "source": "nyt",
+              "headline": "Trump Offers Putin Economic Relief in Hopes That Russia Will Return the Favor",
+              "url": "https://www.nytimes.com/2026/10/17/business/trump-russia-sanctions-congress.html",
+              "date": "2026-10-17T20:05:51.000Z",
+              "kind": "hard",
+              "summary": "The Trump administration is ignoring the will of Congress and waiving new Russia sanctions amid fears that high energy prices will cost Republicans in next month’s elections.",
+              "summaryV": 3,
+              "image": "https://static01.nyt.com/images/2026/10/17/multimedia/17DC-RUSSIA-SANX-qczf/17DC-RUSSIA-SANX-qczf-mediumSquareAt3X.jpg"
+            },
+            {
+              "source": "france24",
+              "headline": "Rubio says Trump to 'analyze' global impact of Russia sanctions during pause",
+              "url": "https://www.france24.com/en/americas/20261018-rubio-says-trump-russia-sanctions-waiver-designed-to-analyze-global-impact",
+              "date": "2026-10-18T02:39:29.000Z",
+              "kind": "hard",
+              "summary": "US Secretary of State Marco Rubio said Saturday that President Donald Trump’s decision to waive sanctions and tariffs on Russia would last 60 days, as the move drew bipartisan criticism and raised fears in Ukraine that Washington could ease further restrictions on Moscow.",
+              "summaryV": 3,
+              "image": "https://s.france24.com/media/display/1b46d8a0-c7e7-11f1-819e-4dd8ac2cf3bf/w:1024/p:16x9/dcd8c89867be21a42771dcc4bb966f7a0278e690.jpg"
+            },
+            {
+              "source": "france24",
+              "headline": "Trump defends Russia sanctions relief, blasts Zelensky on peace",
+              "url": "https://www.france24.com/en/europe/20261018-ukraine-zelensky-war-trump-peace-russia-sanctions",
+              "date": "2026-10-18T21:59:34.000Z",
+              "kind": "hard",
+              "summary": "US President Donald Trump on Sunday accused Ukrainian President Volodymyr Zelensky of prolonging the war with Russia, claiming Kyiv had little interest in peace.",
+              "summaryV": 3,
+              "image": "https://s.france24.com/media/display/c4a57392-8d19-11f1-9ad5-005056bfb2b6/w:1024/p:16x9/000-C3EB39E-1.jpg"
+            },
+            {
+              "source": "bbc",
+              "headline": "Trump says suspension of Russia sanctions is to keep peace negotiations going",
+              "url": "https://www.bbc.co.uk/news/articles/c9p8gz7zx4peo",
+              "date": "2026-10-18T23:20:15.000Z",
+              "kind": "hard",
+              "summary": "The US president blocked numerous sanctions on Russia two days before they were due to take effect.",
+              "summaryV": 3,
+              "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/4644/live/461bcc30-cb38-11f1-8a27-2de4c72fadc2.jpg",
+              "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/4644/live/461bcc30-cb38-11f1-8a27-2de4c72fadc2.jpg"
+            }
+          ],
+          "thread": "t1nate9f",
+          "stats": {
+            "v": 2,
+            "at": "2026-10-17T23:14:04.802Z",
+            "series": [
+              {
+                "title": "U.S. net imports of crude oil and products from Russia",
+                "unit": "thousand barrels per day",
+                "publisher": "U.S. Energy Information Administration",
+                "points": [
+                  {
+                    "period": "2020",
+                    "value": 540,
+                    "url": "https://www.eia.gov/dnav/pet/pet_move_neti_dc_nus-nrs_mbblpd_a.htm",
+                    "source": "Russia Net Imports of Crude Oil and Petroleum Products into the U.S."
+                  },
+                  {
+                    "period": "2021",
+                    "value": 673,
+                    "url": "https://www.eia.gov/dnav/pet/pet_move_neti_dc_nus-nrs_mbblpd_a.htm",
+                    "source": "Russia Net Imports of Crude Oil and Petroleum Products into the U.S."
+                  },
+                  {
+                    "period": "2022",
+                    "value": 147,
+                    "url": "https://www.eia.gov/dnav/pet/pet_move_neti_dc_nus-nrs_mbblpd_a.htm",
+                    "source": "Russia Net Imports of Crude Oil and Petroleum Products into the U.S."
+                  },
+                  {
+                    "period": "2023",
+                    "value": 0,
+                    "url": "https://www.eia.gov/dnav/pet/pet_move_neti_dc_nus-nrs_mbblpd_a.htm",
+                    "source": "Russia Net Imports of Crude Oil and Petroleum Products into the U.S."
+                  },
+                  {
+                    "period": "2024",
+                    "value": 0,
+                    "url": "https://www.eia.gov/dnav/pet/pet_move_neti_dc_nus-nrs_mbblpd_a.htm",
+                    "source": "Russia Net Imports of Crude Oil and Petroleum Products into the U.S."
+                  },
+                  {
+                    "period": "2025",
+                    "value": 0,
+                    "url": "https://www.eia.gov/dnav/pet/pet_move_neti_dc_nus-nrs_mbblpd_a.htm",
+                    "source": "Russia Net Imports of Crude Oil and Petroleum Products into the U.S."
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.eia.gov/dnav/pet/pet_move_neti_dc_nus-nrs_mbblpd_a.htm",
+                    "title": "Russia Net Imports of Crude Oil and Petroleum Products into the U.S.",
+                    "domain": "eia.gov"
+                  }
+                ],
+                "domains": [
+                  "eia.gov"
+                ],
+                "dropped": 0,
+                "why": "Both series track petroleum flows from Russia into the United States, the trade channel that the sanctions waiver would affect, with series 8 covering total crude and product imports and series 5 cove",
+                "reused": true,
+                "checkedAt": "2026-10-13T23:10:06.410Z"
+              },
+              {
+                "title": "U.S. imports of distillate fuel oil (diesel) from Russia, annual",
+                "unit": "thousand barrels",
+                "publisher": "U.S. Energy Information Administration",
+                "points": [
+                  {
+                    "period": "2019",
+                    "value": 2436,
+                    "url": "https://www.eia.gov/dnav/pet/PET_MOVE_IMPCUS_A1_NRS_EPD0_IM0_MBBL_A.htm",
+                    "source": "Distillate Fuel Oil Imports from Russia"
+                  },
+                  {
+                    "period": "2020",
+                    "value": 3207,
+                    "url": "https://www.eia.gov/dnav/pet/PET_MOVE_IMPCUS_A1_NRS_EPD0_IM0_MBBL_A.htm",
+                    "source": "Distillate Fuel Oil Imports from Russia"
+                  },
+                  {
+                    "period": "2021",
+                    "value": 8809,
+                    "url": "https://www.eia.gov/dnav/pet/PET_MOVE_IMPCUS_A1_NRS_EPD0_IM0_MBBL_A.htm",
+                    "source": "Distillate Fuel Oil Imports from Russia"
+                  },
+                  {
+                    "period": "2022",
+                    "value": 2267,
+                    "url": "https://www.eia.gov/dnav/pet/PET_MOVE_IMPCUS_A1_NRS_EPD0_IM0_MBBL_A.htm",
+                    "source": "Distillate Fuel Oil Imports from Russia"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.eia.gov/dnav/pet/PET_MOVE_IMPCUS_A1_NRS_EPD0_IM0_MBBL_A.htm",
+                    "title": "Distillate Fuel Oil Imports from Russia",
+                    "domain": "eia.gov"
+                  }
+                ],
+                "domains": [
+                  "eia.gov"
+                ],
+                "dropped": 0,
+                "why": "Both series track petroleum flows from Russia into the United States, the trade channel that the sanctions waiver would affect, with series 8 covering total crude and product imports and series 5 cove",
+                "reused": true,
+                "checkedAt": "2026-10-13T23:16:06.829Z"
+              }
+            ]
+          }
+        },
+        {
+          "id": "s1wdkvmz",
+          "headline": "India’s Finance Minister blames easy exits and excess liquidity for equity market's underperformance",
+          "url": "https://www.cnbc.com/2026/10/18/india-ai-nifty50-sensex-investors.html",
+          "source": "cnbc",
+          "date": "2026-10-18T23:00:01.000Z",
+          "relevance": "medium",
+          "why": "India's finance minister flags continued capital outflows as one of the biggest risks for 2027, which could weigh on Indian equity markets and market-linked savings.",
+          "implications": [
+            "CNBC reports the finance minister blamed easy exits and excess liquidity for the equity market's underperformance.",
+            "If outflows continue, Indian equity markets could stay under pressure, which may affect people with market-linked savings.",
+            "The report gives no figures or price effects, so any link to household costs is not shown."
+          ],
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-18T23:23:26.319Z",
+            "tier": "quick",
+            "primary": "pass_through",
+            "complement": null,
+            "features": [
+              "price_move"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "Only an indirect link to households; the report names no price, rate or trade mechanism."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Risk is framed for 2027; no immediate effect is reported."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "Single outlet, but it quotes the finance minister on record."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Depositors & savers",
+                "direction": "unclear",
+                "what": "value of market-linked savings",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Further finance minister statements on capital outflows and equity market conditions",
+                "when": "",
+                "where": "Ministry of Finance"
+              }
+            ],
+            "frameworks": {
+              "pass_through": {
+                "driver": {
+                  "variable": "Capital outflows from India",
+                  "direction": "up",
+                  "size": ""
+                },
+                "product": "other",
+                "rungs": [
+                  {
+                    "stage": "Capital outflows → Equity market weakness",
+                    "pass": "unclear",
+                    "damper": "Report gives no size or channel for the outflows.",
+                    "lag": "weeks"
+                  },
+                  {
+                    "stage": "Weak equities → Market-linked savings value",
+                    "pass": "partial",
+                    "damper": "Only households holding market-linked savings are exposed.",
+                    "lag": "months"
+                  },
+                  {
+                    "stage": "Savings value → Household finances",
+                    "pass": "unclear",
+                    "damper": "Reports show no link to prices, rates or incomes.",
+                    "lag": "months"
+                  }
+                ],
+                "end_user": {
+                  "group": "Depositors & savers",
+                  "effect": "Households with market-linked savings could see their value affected; bank deposits are not shown to be touched."
+                }
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "cnbc",
+              "headline": "India’s Finance Minister blames easy exits and excess liquidity for equity market's underperformance",
+              "url": "https://www.cnbc.com/2026/10/18/india-ai-nifty50-sensex-investors.html",
+              "date": "2026-10-18T23:00:01.000Z",
+              "kind": "hard",
+              "summary": "India's finance minister said that continued capital outflows are one of the biggest risks for the country in 2027.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://image.cnbcfm.com/api/v1/image/108419553-1792155192930-gettyimages-2299704856-THAILAND_IMF_WORLD_BANK.jpeg?v=1792155212&w=1920&h=1080"
+            }
+          ],
+          "image": "https://image.cnbcfm.com/api/v1/image/108419553-1792155192930-gettyimages-2299704856-THAILAND_IMF_WORLD_BANK.jpeg?v=1792155212&w=1920&h=1080",
+          "thread": "t1jm9880"
+        },
+        {
           "id": "syiiucs",
           "headline": "Trump says he's \"negotiating Peace\" as Russia, Ukraine trade strikes",
           "url": "https://www.cbsnews.com/news/ukraine-russia-drone-st-petersburg-oil-facilites/",
@@ -9397,7 +9997,12 @@
             }
           ],
           "image": "https://image.cnbcfm.com/api/v1/image/108372369-1791184306989-gettyimages-2297669360-AFP_D23K3WE.jpeg?v=1791184494&w=1920&h=1080",
-          "thread": "tq9ru94"
+          "thread": "tq9ru94",
+          "stats": {
+            "v": 2,
+            "at": "2026-10-18T23:23:54.853Z",
+            "series": []
+          }
         },
         {
           "id": "stl9kmu",
@@ -9580,354 +10185,6 @@
             }
           ],
           "thread": "t1j5n1me"
-        },
-        {
-          "id": "sq79fz9",
-          "headline": "Trump waives several Russia sanctions as new US law takes effect",
-          "url": "https://www.bbc.co.uk/news/articles/cxr5yvzv7rp0o",
-          "source": "bbc",
-          "date": "2026-10-17T02:48:36.000Z",
-          "relevance": "medium",
-          "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c147/live/f608c860-c9cf-11f1-84c1-fd3c3266bb86.jpg",
-          "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/c147/live/f608c860-c9cf-11f1-84c1-fd3c3266bb86.jpg",
-          "why": "Trump has waived new US sanctions and tariffs on Russia. That could ease pressure on global oil trade involving Russia and affect fuel costs for importers like India.",
-          "implications": [
-            "Al Jazeera analysts say Russia will benefit most from the waiver, which could keep Russian oil flowing with fewer US barriers.",
-            "The New York Times links the waiver to US fears of high energy prices, a pressure that may also matter for oil importers.",
-            "Bipartisan backlash in Congress means the relief could be challenged, so the risk to Russian trade remains uncertain."
-          ],
-          "analysis": {
-            "v": 2,
-            "at": "2026-10-17T20:46:50.666Z",
-            "tier": "deep",
-            "primary": "trade_flow",
-            "complement": "scenarios",
-            "features": [
-              "trade_flow",
-              "policy_stage",
-              "fast_moving",
-              "pending_outcome"
-            ],
-            "exposure": {
-              "level": "medium",
-              "reason": "Reports do not name India; the link to crude buyers and fuel costs is inferred."
-            },
-            "horizon": {
-              "value": "weeks",
-              "reason": "Waiver took effect just before the sanctions deadline."
-            },
-            "confidence": {
-              "level": "high",
-              "reason": "Several outlets agree; Trump formally notified Congress of the pause."
-            },
-            "outlets": 6,
-            "affected": [
-              {
-                "group": "Importers & traders",
-                "direction": "down",
-                "what": "sanction risk on Russian trade",
-                "basis": "inferred"
-              },
-              {
-                "group": "Fuel & LPG users",
-                "direction": "unclear",
-                "what": "fuel prices",
-                "basis": "inferred"
-              },
-              {
-                "group": "Government finances",
-                "direction": "unclear",
-                "what": "oil import bill",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "Congressional move to override or restore the waived Graham Act sanctions",
-                "when": "",
-                "where": "US Congress"
-              },
-              {
-                "what": "Progress or expansion of the US-Russia diesel deal",
-                "when": "",
-                "where": "White House"
-              },
-              {
-                "what": "Russian response to the US economic relief",
-                "when": "",
-                "where": "Kremlin"
-              }
-            ],
-            "frameworks": {
-              "trade_flow": {
-                "good": "Russian oil and diesel",
-                "actors": [
-                  {
-                    "country": "Russia",
-                    "role": "exporter",
-                    "is_india": false
-                  },
-                  {
-                    "country": "United States",
-                    "role": "third_party",
-                    "is_india": false
-                  }
-                ],
-                "change": {
-                  "type": "other",
-                  "effective": ""
-                },
-                "india_position": {
-                  "role": "competing_buyer",
-                  "note": "Reports do not name India; any Indian purchases of Russian oil could face less US pressure."
-                },
-                "volumes": []
-              },
-              "scenarios": {
-                "question": "Will Trump's waiver of the Graham Act sanctions survive congressional backlash?",
-                "scenarios": [
-                  {
-                    "name": "Waiver holds",
-                    "what": "Sanctions and tariffs stay suspended on national interest grounds, as Trump told Congress.",
-                    "signal": "No congressional action to reinstate sanctions",
-                    "india_effect": "Russian oil trade may face fewer US barriers."
-                  },
-                  {
-                    "name": "Congress pushes back",
-                    "what": "Bipartisan critics try to restore the sanctions Congress passed.",
-                    "signal": "Congressional vote or bill to reverse the waiver",
-                    "india_effect": "Sanction and tariff risk on Russian trade could return."
-                  },
-                  {
-                    "name": "Russia reciprocates",
-                    "what": "Russia returns the favour the administration hopes for, building on the diesel deal.",
-                    "signal": "Announced Russian concessions or wider diesel supply",
-                    "india_effect": "Easier energy supply could soften global fuel prices."
-                  }
-                ]
-              }
-            }
-          },
-          "reports": [
-            {
-              "source": "bbc",
-              "headline": "Trump waives several Russia sanctions as new US law takes effect",
-              "url": "https://www.bbc.co.uk/news/articles/cxr5yvzv7rp0o",
-              "date": "2026-10-17T02:48:36.000Z",
-              "kind": "hard",
-              "summary": "Trump says parts of a new law that aims to punish Moscow for its war against Ukraine are against US national interests.",
-              "summaryV": 3,
-              "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c147/live/f608c860-c9cf-11f1-84c1-fd3c3266bb86.jpg",
-              "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/c147/live/f608c860-c9cf-11f1-84c1-fd3c3266bb86.jpg"
-            },
-            {
-              "source": "guardian",
-              "headline": "Trump pauses new Russia sanctions passed by Congress amid deepening row with Ukraine",
-              "url": "https://www.theguardian.com/us-news/2026/oct/17/trump-puts-new-russia-sanctions-passed-by-congress-on-hold-amid-deepening-row-with-ukraine",
-              "date": "2026-10-17T02:53:38.000Z",
-              "kind": "hard",
-              "summary": "President signed the legislation championed by late senator Lindsey Graham last month but has waived the restrictions as they were due to come into effect",
-              "summaryV": 3,
-              "lede": "Donald Trump has put on hold a sweeping new sanctions package targeting the Russian economy, telling Congress the pause on the legislation passed by both chambers was in the national interest.",
-              "image": "https://i.guim.co.uk/img/media/63bbfb9d93afbe44cae6b938cc6633e49026dfb0/445_0_3091_2473/master/3091.jpg?width=700&quality=85&auto=format&fit=max&s=42d58ff5a191e1aac9d12dbd15d3993b"
-            },
-            {
-              "source": "aljazeera",
-              "headline": "Trump puts on hold new Russia sanctions he signed into law",
-              "url": "https://www.aljazeera.com/news/2026/10/17/trump-puts-on-hold-new-russia-sanctions-he-signed-into-law",
-              "date": "2026-10-17T04:45:03.000Z",
-              "kind": "hard",
-              "summary": "US president's executive order comes two days before sanctions deadline and a week after diesel deal with Putin.",
-              "summaryV": 3
-            },
-            {
-              "source": "cnbc",
-              "headline": "Trump waives broad new Russia sanctions and tariffs under Graham Act, citing national interest",
-              "url": "https://www.cnbc.com/2026/10/17/trump-waives-russia-related-sanctions-tariffs-before-they-take-effect-.html",
-              "date": "2026-10-17T10:20:44.000Z",
-              "kind": "hard",
-              "summary": "Trump signed the Graham Bill, which targeted Russia over its invasion of Ukraine, into law in September.",
-              "summaryV": 3
-            },
-            {
-              "source": "aljazeera",
-              "headline": "Trump eases Russia oil sanctions, but is Europe still buying Moscow’s gas?",
-              "url": "https://www.aljazeera.com/news/2026/10/17/trump-eases-russia-oil-sanctions-but-is-europe-still-buying-moscows-gas",
-              "date": "2026-10-17T11:10:22.000Z",
-              "kind": "hard",
-              "summary": "Analysts say Russia will benefit most from US sanctions waiver.",
-              "summaryV": 3
-            },
-            {
-              "source": "npr",
-              "headline": "Zelenskyy urges support for new US sanctions on Russia after Trump puts them on hold",
-              "url": "https://www.npr.org/2026/10/17/nx-s1-6006745/us-sanctions-russia",
-              "date": "2026-10-17T14:25:10.000Z",
-              "kind": "hard",
-              "summary": "Zelenskyy described the move as unfortunate, adding it would encourage Russia to continue its assault. Trump told Congress that the pause was in the national interest but gave no further details.",
-              "summaryV": 3,
-              "image": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/6000x4000+0+0/resize/6000x4000!/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F4b%2F96%2Fd6b29b774dbcbbb820e6e569974b%2Fap26290438386008.jpg"
-            },
-            {
-              "source": "guardian",
-              "headline": "Trump’s pause on Russia sanctions is ‘reward’ for Putin, Zelenskyy says",
-              "url": "https://www.theguardian.com/world/2026/oct/17/volodymyr-zelenskyy-donald-trump-lift-sanctions-russia-intensify-war-ukraine",
-              "date": "2026-10-17T14:46:05.000Z",
-              "kind": "hard",
-              "summary": "Ukrainian president warns it will embolden Russian leader and intensify war as Moscow hits country’s power plants",
-              "summaryV": 3,
-              "lede": "Power plant attacks reflect Russian blueprint to make Ukrainian cities unlivable",
-              "image": "https://i.guim.co.uk/img/media/66d7fc900581121c0e7d134eb1ebcd4cda702d73/153_0_5000_4000/master/5000.jpg?width=700&quality=85&auto=format&fit=max&s=3059451b60d02883bac9c9c670b320c8"
-            },
-            {
-              "source": "nyt",
-              "headline": "Trump Signs Order Waiving New Russia Sanctions",
-              "url": "https://www.nytimes.com/2026/10/16/us/politics/trump-order-russia-sanctions.html",
-              "date": "2026-10-17T13:30:38.000Z",
-              "kind": "hard",
-              "summary": "The sanctions were part of a measure that was named after Senator Lindsey Graham, the South Carolina Republican who died in July.",
-              "summaryV": 3,
-              "image": "https://static01.nyt.com/images/2025/08/16/multimedia/16dc-russia-sanctions/16dc-russia-sanctions-mediumSquareAt3X-v2.jpg"
-            },
-            {
-              "source": "aljazeera",
-              "headline": "Trump faces bipartisan backlash over Russia sanctions waiver",
-              "url": "https://www.aljazeera.com/news/2026/10/17/trump-faces-bipartisan-backlash-over-russia-sanctions-waiver",
-              "date": "2026-10-17T17:24:07.000Z",
-              "kind": "hard",
-              "summary": "Republicans and Democrats condemn Trump’s decision to suspend sanctions, saying it undermines support for Ukraine.",
-              "summaryV": 3
-            },
-            {
-              "source": "nyt",
-              "headline": "Trump Offers Putin Economic Relief in Hopes That Russia Will Return the Favor",
-              "url": "https://www.nytimes.com/2026/10/17/business/trump-russia-sanctions-congress.html",
-              "date": "2026-10-17T20:05:51.000Z",
-              "kind": "hard",
-              "summary": "The Trump administration is ignoring the will of Congress and waiving new Russia sanctions amid fears that high energy prices will cost Republicans in next month’s elections.",
-              "summaryV": 3,
-              "image": "https://static01.nyt.com/images/2026/10/17/multimedia/17DC-RUSSIA-SANX-qczf/17DC-RUSSIA-SANX-qczf-mediumSquareAt3X.jpg"
-            },
-            {
-              "source": "france24",
-              "headline": "Rubio says Trump to 'analyze' global impact of Russia sanctions during pause",
-              "url": "https://www.france24.com/en/americas/20261018-rubio-says-trump-russia-sanctions-waiver-designed-to-analyze-global-impact",
-              "date": "2026-10-18T02:39:29.000Z",
-              "kind": "hard",
-              "summary": "US Secretary of State Marco Rubio said Saturday that President Donald Trump’s decision to waive sanctions and tariffs on Russia would last 60 days, as the move drew bipartisan criticism and raised fears in Ukraine that Washington could ease further restrictions on Moscow.",
-              "summaryV": 3,
-              "image": "https://s.france24.com/media/display/1b46d8a0-c7e7-11f1-819e-4dd8ac2cf3bf/w:1024/p:16x9/dcd8c89867be21a42771dcc4bb966f7a0278e690.jpg"
-            }
-          ],
-          "thread": "t1nate9f",
-          "stats": {
-            "v": 2,
-            "at": "2026-10-17T23:14:04.802Z",
-            "series": [
-              {
-                "title": "U.S. net imports of crude oil and products from Russia",
-                "unit": "thousand barrels per day",
-                "publisher": "U.S. Energy Information Administration",
-                "points": [
-                  {
-                    "period": "2020",
-                    "value": 540,
-                    "url": "https://www.eia.gov/dnav/pet/pet_move_neti_dc_nus-nrs_mbblpd_a.htm",
-                    "source": "Russia Net Imports of Crude Oil and Petroleum Products into the U.S."
-                  },
-                  {
-                    "period": "2021",
-                    "value": 673,
-                    "url": "https://www.eia.gov/dnav/pet/pet_move_neti_dc_nus-nrs_mbblpd_a.htm",
-                    "source": "Russia Net Imports of Crude Oil and Petroleum Products into the U.S."
-                  },
-                  {
-                    "period": "2022",
-                    "value": 147,
-                    "url": "https://www.eia.gov/dnav/pet/pet_move_neti_dc_nus-nrs_mbblpd_a.htm",
-                    "source": "Russia Net Imports of Crude Oil and Petroleum Products into the U.S."
-                  },
-                  {
-                    "period": "2023",
-                    "value": 0,
-                    "url": "https://www.eia.gov/dnav/pet/pet_move_neti_dc_nus-nrs_mbblpd_a.htm",
-                    "source": "Russia Net Imports of Crude Oil and Petroleum Products into the U.S."
-                  },
-                  {
-                    "period": "2024",
-                    "value": 0,
-                    "url": "https://www.eia.gov/dnav/pet/pet_move_neti_dc_nus-nrs_mbblpd_a.htm",
-                    "source": "Russia Net Imports of Crude Oil and Petroleum Products into the U.S."
-                  },
-                  {
-                    "period": "2025",
-                    "value": 0,
-                    "url": "https://www.eia.gov/dnav/pet/pet_move_neti_dc_nus-nrs_mbblpd_a.htm",
-                    "source": "Russia Net Imports of Crude Oil and Petroleum Products into the U.S."
-                  }
-                ],
-                "sources": [
-                  {
-                    "url": "https://www.eia.gov/dnav/pet/pet_move_neti_dc_nus-nrs_mbblpd_a.htm",
-                    "title": "Russia Net Imports of Crude Oil and Petroleum Products into the U.S.",
-                    "domain": "eia.gov"
-                  }
-                ],
-                "domains": [
-                  "eia.gov"
-                ],
-                "dropped": 0,
-                "why": "Both series track petroleum flows from Russia into the United States, the trade channel that the sanctions waiver would affect, with series 8 covering total crude and product imports and series 5 cove",
-                "reused": true,
-                "checkedAt": "2026-10-13T23:10:06.410Z"
-              },
-              {
-                "title": "U.S. imports of distillate fuel oil (diesel) from Russia, annual",
-                "unit": "thousand barrels",
-                "publisher": "U.S. Energy Information Administration",
-                "points": [
-                  {
-                    "period": "2019",
-                    "value": 2436,
-                    "url": "https://www.eia.gov/dnav/pet/PET_MOVE_IMPCUS_A1_NRS_EPD0_IM0_MBBL_A.htm",
-                    "source": "Distillate Fuel Oil Imports from Russia"
-                  },
-                  {
-                    "period": "2020",
-                    "value": 3207,
-                    "url": "https://www.eia.gov/dnav/pet/PET_MOVE_IMPCUS_A1_NRS_EPD0_IM0_MBBL_A.htm",
-                    "source": "Distillate Fuel Oil Imports from Russia"
-                  },
-                  {
-                    "period": "2021",
-                    "value": 8809,
-                    "url": "https://www.eia.gov/dnav/pet/PET_MOVE_IMPCUS_A1_NRS_EPD0_IM0_MBBL_A.htm",
-                    "source": "Distillate Fuel Oil Imports from Russia"
-                  },
-                  {
-                    "period": "2022",
-                    "value": 2267,
-                    "url": "https://www.eia.gov/dnav/pet/PET_MOVE_IMPCUS_A1_NRS_EPD0_IM0_MBBL_A.htm",
-                    "source": "Distillate Fuel Oil Imports from Russia"
-                  }
-                ],
-                "sources": [
-                  {
-                    "url": "https://www.eia.gov/dnav/pet/PET_MOVE_IMPCUS_A1_NRS_EPD0_IM0_MBBL_A.htm",
-                    "title": "Distillate Fuel Oil Imports from Russia",
-                    "domain": "eia.gov"
-                  }
-                ],
-                "domains": [
-                  "eia.gov"
-                ],
-                "dropped": 0,
-                "why": "Both series track petroleum flows from Russia into the United States, the trade channel that the sanctions waiver would affect, with series 8 covering total crude and product imports and series 5 cove",
-                "reused": true,
-                "checkedAt": "2026-10-13T23:16:06.829Z"
-              }
-            ]
-          }
         },
         {
           "id": "s1cib3os",
@@ -18129,21 +18386,21 @@
   ],
   "source": "BBC News & The Guardian & NPR & Al Jazeera & MercoPress & ABC News & The New York Times & CNBC & CBS News & DW & France 24 & Africanews & South China Morning Post & The Hindu & Mint",
   "lastRun": {
-    "analysed": 68,
-    "added": 4,
-    "merged": 4,
-    "rejected": 60,
+    "analysed": 25,
+    "added": 1,
+    "merged": 3,
+    "rejected": 21,
     "failedBatches": 0,
     "feeds": {
       "bbc": {
         "feedsOk": 6,
         "feedsFailed": 0,
-        "items": 158
+        "items": 155
       },
       "guardian": {
         "feedsOk": 7,
         "feedsFailed": 0,
-        "items": 191
+        "items": 192
       },
       "npr": {
         "feedsOk": 4,
@@ -18153,7 +18410,7 @@
       "aljazeera": {
         "feedsOk": 1,
         "feedsFailed": 0,
-        "items": 8
+        "items": 9
       },
       "mercopress": {
         "feedsOk": 3,
@@ -18188,7 +18445,7 @@
       "france24": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 72
+        "items": 74
       },
       "africanews": {
         "feedsOk": 1,
@@ -18202,18 +18459,18 @@
       }
     },
     "shareImages": {
-      "tried": 3,
-      "found": 3,
+      "tried": 1,
+      "found": 1,
       "summaries": 0
     },
     "threads": {
-      "assigned": 4,
-      "created": 1,
+      "assigned": 1,
+      "created": 0,
       "failedBatches": 0
     },
     "summaries": {
-      "written": 5,
-      "due": 5
+      "written": 1,
+      "due": 1
     },
     "kinds": {
       "labelled": 0,
@@ -18221,54 +18478,68 @@
       "failedBatches": 0
     },
     "frames": {
-      "done": 5,
+      "done": 0,
       "waiting": 0,
       "failedBatches": 0
     },
     "stats": {
-      "searched": 0,
+      "searched": 2,
       "found": 0,
-      "reused": 0,
-      "none": 0,
+      "reused": 1,
+      "none": 1,
       "failed": 0,
-      "proposed": 0,
-      "droppedPoints": 0,
+      "proposed": 5,
+      "droppedPoints": 5,
       "pagesFetched": 0,
-      "samples": []
+      "samples": [
+        {
+          "headline": "U.S. Starlink curbs embolden Russia to intensify attacks on Ukraine, minister te",
+          "result": "no figure found on an official page",
+          "proposed": 5,
+          "checked": 0,
+          "pagesFetched": 0
+        },
+        {
+          "headline": "Egypt’s Sisi seeks authorisation for defence assistance to Saudi Arabia",
+          "result": "reused saved series"
+        }
+      ]
     },
     "models": {
       "filter": {
         "model": "claude-haiku-5-5",
-        "calls": 7,
-        "inputTokens": 23112,
-        "outputTokens": 11645,
-        "cost": 0.0082
+        "calls": 4,
+        "inputTokens": 8239,
+        "outputTokens": 4778,
+        "cost": 0.0032
       },
       "analysis_quick": {
         "model": "claude-sonnet-5-5",
-        "calls": 3,
-        "inputTokens": 5793,
-        "outputTokens": 4789,
-        "cost": 0.0595
+        "calls": 1,
+        "inputTokens": 1804,
+        "outputTokens": 1501,
+        "cost": 0.0186
       },
-      "analysis": {
-        "model": "claude-opus-5-5",
-        "calls": 2,
-        "inputTokens": 6313,
-        "outputTokens": 8382,
-        "cost": 0.1929
+      "stats": {
+        "model": "claude-sonnet-5-5",
+        "calls": 1,
+        "inputTokens": 71931,
+        "outputTokens": 1514,
+        "searches": 1,
+        "fetches": 3,
+        "cost": 0.169
       },
       "threads": {
         "model": "claude-sonnet-5-5",
-        "calls": 6,
-        "inputTokens": 10867,
-        "outputTokens": 1576,
-        "cost": 0.0374
+        "calls": 2,
+        "inputTokens": 5155,
+        "outputTokens": 158,
+        "cost": 0.0119
       }
     },
     "spend": {
-      "thisDesk": 0.298,
-      "today": 0.298,
+      "thisDesk": 0.2027,
+      "today": 0.8164,
       "cap": 6
     }
   },
