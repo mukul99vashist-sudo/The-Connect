@@ -1412,6 +1412,8 @@ function mosaicInto(main, list){
   if(queue.length>GRID_SHOW+1){ var m=el("button","more",showAll?"Show fewer":"Show all "+queue.length+" stories"); m.type="button"; m.addEventListener("click",function(){showAll=!showAll; render(current);}); main.appendChild(m); }
 }
 /* ---------- Dates to watch: official calendar (data/calendar.json) linked to stories, with calendar buttons ---------- */
+/* Switched off for now: set to true to bring back "Dates to watch" in stories and the Upcoming dates view. */
+var SHOW_CALENDAR=false;
 var calendar=null, calUpdated=null, calSector="all";
 var CAL_LINK_DAYS=120;
 function localIso(d){ d=d||new Date(); return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0"); }
@@ -1534,6 +1536,7 @@ function calRow(ev, opts){
 
 /* In the story window */
 function renderDates(e){
+  if(!SHOW_CALENDAR) return null;
   var it=e.it, links=calendar?linksFor(it, e.sector.id):[], today=localIso(), own=[];
   var ref=((reportsOf(it).map(function(r){ return r.date||""; }).sort().pop())||it.date||"").slice(0,10);
   ((it.analysis||{}).watch||[]).forEach(function(w,i){ var d=parseWhen(w.when, ref||today); if(d && d>=today){ var rp=reportForDate(it, d, w.when);
@@ -1582,6 +1585,7 @@ function renderUpcoming(doc, main){
   main.appendChild(el("p","quiet","Dates are copied from each organisation's own website (central banks, statistics offices, company investor pages, summit hosts) and checked against that page. Organisations sometimes move dates; subscribed calendars follow."));
 }
 function loadCalendar(){
+  if(!SHOW_CALENDAR) return;
   loadFrom(sourcesFor("calendar.json")).then(function(c){
     if(!c || !c.events) return;
     var changed=c.updatedAt!==calUpdated || !calendar; calendar=c; calUpdated=c.updatedAt||String(Date.now());
