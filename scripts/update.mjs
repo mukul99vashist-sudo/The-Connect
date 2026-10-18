@@ -110,7 +110,7 @@ const BUDGET_FILE = "data/budget.json";
 const BUDGET_SHARE = { core: 1.0, stats: 0.9, extra: 0.6 };
 const PRICES = { "claude-opus-5-5": [4, 20], "claude-sonnet-5-5": [2, 10], "claude-haiku-5-5": [0.10, 0.50], "claude-haiku-5-5@long": [0.50, 2.50] }; // US$ per million tokens: input, output
 const SEARCH_PRICE = 0.01;      // US$ per web search
-const EST = { filter: 0.02, analysis: 0.15, analysis_quick: 0.06, threads: 0.03, stats: 0.30, calendar: 0.40 };   // most one request is likely to cost
+const EST = { filter: 0.02, analysis: 0.15, analysis_quick: 0.06, threads: 0.03, stats: 0.30, calendar: 0.60 };   // most one request is likely to cost
 class BudgetError extends Error { constructor(level) { super(`daily budget reached for ${level} work`); this.level = level; } }
 let budget = null;
 const indiaDay = () => new Date(Date.now() + 5.5 * 36e5).toISOString().slice(0, 10);
@@ -1001,7 +1001,8 @@ async function addStatistics(data, mode) {
 // Apple or Outlook calendars; it updates itself as the engine adds or moves dates.
 const CALENDAR_FILE = "data/calendar.json";
 const CAL_REFRESH_DAYS = 7;       // each group is re-checked weekly
-const CAL_GROUPS_PER_RUN = 2;     // groups refreshed per run (8 groups → the first full calendar after 4 runs, ~12 hours)
+const CAL_GROUPS_PER_RUN = 1;     // one group per run: the eight groups are spread over about a day, never all at once
+const CAL_MAX_SHARE = 0.4;        // the calendar runs only while less than 40% of the day's budget is spent, so news always comes first
 const CAL_AHEAD_DAYS = 150;       // dates kept up to five months ahead
 const CAL_KEEP_PAST_DAYS = 2;     // a date stays on the site for two days after it passes
 const CAL_GROUPS = [
@@ -1161,8 +1162,8 @@ ${group.series.map(s => `- ${s.id}: ${s.ask}`).join("\n")}
 
 HOW
 1. Search for the organisation's own schedule, calendar or investor-events page.
-2. FETCH the page that lists the dates (an HTML page is best).
-3. Copy each date from that page. Every date is checked automatically against the fetched page, and dates not found there are thrown away.
+2. FETCH the page that lists the dates. Use an HTML page; open a PDF only if no web page lists the dates, and never a long report.
+3. Copy each date from that page, and quote the line of the page that shows it. Every date is checked automatically against the fetched page, and dates not found there are thrown away.
 Only dates the organisation itself has announced. Never estimate a date from a past pattern ("usually mid-month") and never use news reports. If an item has no announced date in the period, leave it out.
 For a policy meeting that runs several days, give the day the decision is announced. For a summit or conference, give its first day and its last day.
 
@@ -1170,18 +1171,21 @@ ANSWER FORMAT (one line per date, nothing else):
 EVENT|<id from the list>|<start date YYYY-MM-DD>|<last day YYYY-MM-DD for a multi-day summit, else empty>|<time with time zone as written on the page, or empty>|<URL of the fetched page the date is on>|<short label from the page if useful, e.g. "Q3 FY2027", or empty>
 If nothing is announced for any item, answer only: NONE`;
 }
+let lastCalCost = 0, lastCalIn = 0;
 async function callCalendar(group, prompt) {
   let lastErr;
   for (const model of MODELS.stats) {
     const messages = [{ role: "user", content: prompt }]; const out = []; let res, body;
-    for (let turn = 0; turn < 3; turn++) {
-      needBudget("stats", turn ? EST.calendar / 2 : EST.calendar);
+    for (let turn = 0; turn < 2; turn++) {
+      needBudget("extra", turn ? EST.calendar / 2 : EST.calendar);
       res = await fetch("https://api.anthropic.com/v1/messages", {
         method: "POST",
         headers: { "x-api-key": process.env.ANTHROPIC_API_KEY, "anthropic-version": "2023-06-01", "content-type": "application/json" },
         body: JSON.stringify({ model, max_tokens: 2500, messages, tools: [
-          { type: "web_search_20250305", name: "web_search", max_uses: Math.min(6, group.series.length + 2), allowed_domains: group.domains },
-          { type: "web_fetch_20250910", name: "web_fetch", max_uses: Math.min(6, group.series.length + 1), allowed_domains: group.domains, max_content_tokens: 8000 }
+          { type: "web_search_20250305", name: "web_search", max_uses: 4, allowed_domains: group.domains },
+          // PDFs come back whole (the token limit only trims web pages), so fetches are capped at three. Citations are on so that a
+          // date the model quotes from a PDF can still be checked against the quoted text.
+          { type: "web_fetch_20250910", name: "web_fetch", max_uses: 3, allowed_domains: group.domains, max_content_tokens: 5000, citations: { enabled: true } }
         ] })
       });
       body = await res.json().catch(() => ({}));
@@ -1189,7 +1193,7 @@ async function callCalendar(group, prompt) {
       const u = usage.calendar ||= { model, calls: 0, inputTokens: 0, outputTokens: 0, searches: 0, fetches: 0 };
       u.model = model; u.calls++; u.inputTokens += body.usage?.input_tokens || 0; u.outputTokens += body.usage?.output_tokens || 0;
       u.searches += body.usage?.server_tool_use?.web_search_requests || 0; u.fetches += body.usage?.server_tool_use?.web_fetch_requests || 0;
-      charge("calendar", model, body.usage);
+      lastCalCost += charge("calendar", model, body.usage); lastCalIn += body.usage?.input_tokens || 0;
       out.push(...(body.content || []));
       if (body.stop_reason !== "pause_turn") break;
       messages.push({ role: "assistant", content: body.content });
@@ -1200,10 +1204,17 @@ async function callCalendar(group, prompt) {
   }
   throw lastErr;
 }
+// Lines of the answer with their citations. Web-search citations carry a url; web-fetch citations (char_location) point to
+// the fetched document by its position, so they are mapped back to that fetch's url.
+function calendarLines(content) {
+  const fetched = content.filter(b => b.type === "web_fetch_tool_result").map(b => b.content?.url || "");
+  return linesWithCitations(content.map(b => b.type !== "text" ? b : { ...b, citations: (b.citations || []).map(c => c.url ? c : { ...c, url: fetched[c.document_index] || "", title: c.document_title || "" }) }));
+}
 function parseCalendar(group, content, today, until) {
   const { pages, ok } = pagesFrom(content, group.domains);
+  const rejected = [];
   const ids = new Set(group.series.map(s => s.id)); const events = []; const diag = { proposed: 0, kept: 0, notFound: 0, outOfRange: 0, pagesFetched: pages.length };
-  for (const { text, cites } of linesWithCitations(content)) {
+  for (const { text, cites } of calendarLines(content)) {
     const f = text.split("|").map(x => x.trim());
     if (f[0] !== "EVENT") continue;
     diag.proposed++;
@@ -1213,7 +1224,7 @@ function parseCalendar(group, content, today, until) {
     const ordered = [...pages.filter(p => p.url === url), ...pages.filter(p => p.url !== url)];
     let hit = ordered.find(p => dateOnPage(p.text, date));
     if (!hit) { const c = cites.find(c => ok(c.url) && dateOnPage(c.cited_text, date)); if (c) hit = { url: c.url, title: c.title || domainOf(c.url) }; }
-    if (!hit) { diag.notFound++; continue; }
+    if (!hit) { diag.notFound++; if (rejected.length < 4) rejected.push(str(text, 160)); continue; }
     const s = CAL_SERIES[sid], endOk = end && end > date && end <= addDays(date, 21) && ordered.some(p => dateOnPage(p.text, end)) ? end : "";
     const label = str(f[6] || "", 30).replace(/[|<>]/g, "");
     diag.kept++;
@@ -1222,7 +1233,8 @@ function parseCalendar(group, content, today, until) {
       source: { url: hit.url, title: str(hit.title || domainOf(hit.url), 100), domain: domainOf(hit.url) }, checkedAt: new Date().toISOString() });
   }
   const seen = new Set();
-  return { events: events.filter(e => !seen.has(e.id) && seen.add(e.id)).sort((a, b) => a.date.localeCompare(b.date)), diag };
+  const pdfs = content.filter(b => b.type === "web_fetch_tool_result" && b.content?.content?.source?.type === "base64").length;
+  return { events: events.filter(e => !seen.has(e.id) && seen.add(e.id)).sort((a, b) => a.date.localeCompare(b.date)), diag: { ...diag, pdfsFetched: pdfs, ...(rejected.length ? { rejectedSamples: rejected } : {}) } };
 }
 
 // ---- iCalendar feed (RFC 5545): one for everything and one per sector
@@ -1253,9 +1265,12 @@ async function refreshCalendar() {
   const due = CAL_GROUPS.filter(g => !(cal.groups[g.id]?.checkedAt > staleBefore))
     .sort((a, b) => String(cal.groups[a.id]?.checkedAt || "").localeCompare(String(cal.groups[b.id]?.checkedAt || ""))).slice(0, CAL_GROUPS_PER_RUN);
   const run = { at: new Date().toISOString(), groups: [] }; usage = {};
+  if (due.length && budget && budget.spent > DAILY_BUDGET * CAL_MAX_SHARE) { run.skipped = "over 40% of today's budget already spent; checked in a later run"; due.length = 0; }
   for (const g of due) {
     try {
-      const { events, diag } = parseCalendar(g, await callCalendar(g, calendarPrompt(g, today, until)), today, until);
+      lastCalCost = 0; lastCalIn = 0;
+      const { events, diag: d0 } = parseCalendar(g, await callCalendar(g, calendarPrompt(g, today, until)), today, until);
+      const diag = { ...d0, cost: Math.round(lastCalCost * 1e4) / 1e4, inputTokens: lastCalIn };
       // Replace a series' dates only when this check found dates for it; otherwise keep what we had.
       const found = new Set(events.map(e => e.series));
       cal.events = [...cal.events.filter(e => !found.has(e.series)), ...events];
@@ -1287,7 +1302,7 @@ async function refreshCalendar() {
       else await fs.rm(path, { force: true });
     }
   }
-  console.log(`Calendar: ${due.length ? due.map(g => g.id).join(", ") + " checked; " : "nothing due; "}${cal.events.length} upcoming dates on file.`);
+  console.log(`Calendar: ${run.skipped ? "skipped (" + run.skipped + "); " : due.length ? due.map(g => g.id).join(", ") + " checked; " : "nothing due; "}${cal.events.length} upcoming dates on file.`);
   return run;
 }
 
