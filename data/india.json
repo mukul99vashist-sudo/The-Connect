@@ -2,12 +2,303 @@
   "schema": 4,
   "region": "India",
   "since": "2026-10-02",
-  "updatedAt": "2026-10-17T23:14:29.535Z",
+  "updatedAt": "2026-10-18T04:49:28.725Z",
   "sectors": [
     {
       "id": "energy",
       "name": "Energy",
       "items": [
+        {
+          "id": "s1q23roo",
+          "headline": "Iran says two tankers catch fire after hitting mines in Strait of Hormuz",
+          "url": "https://www.aljazeera.com/news/2026/10/18/iran-says-two-tankers-catch-fire-after-hitting-mines-in-strait-of-hormuz",
+          "source": "aljazeera",
+          "date": "2026-10-18T01:54:18.000Z",
+          "relevance": "high",
+          "why": "If Hormuz shipping is disrupted, crude flows to India could be affected, which may push up fuel-linked costs; the report is early and single-sourced.",
+          "implications": [
+            "Two tankers, each carrying about two million barrels of crude, reportedly caught fire after hitting mines in the Strait of Hormuz.",
+            "If the strait becomes harder to transit, crude deliveries to India could be delayed or cost more.",
+            "The reports give no data on India-bound cargoes, so the effect on Indian supply remains uncertain."
+          ],
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-18T04:48:25.207Z",
+            "tier": "quick",
+            "primary": "disruption_map",
+            "complement": null,
+            "features": [
+              "disruption",
+              "armed_conflict"
+            ],
+            "exposure": {
+              "level": "high",
+              "reason": "Crude is a top Indian import and feeds fuel prices; the report names Hormuz as the incident location."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Early report; any supply or price effect would take time to show."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "Single outlet, early report, and the claim comes from the IRGC."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "fuel prices",
+                "basis": "inferred"
+              },
+              {
+                "group": "Importers & traders",
+                "direction": "up",
+                "what": "crude shipping and import costs",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Official confirmation of the incident and any change in Hormuz tanker transit status",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "Whether Indian-bound crude cargoes are delayed or rerouted",
+                "when": "",
+                "where": "Ministry of Petroleum and Natural Gas"
+              }
+            ],
+            "frameworks": {
+              "disruption_map": {
+                "node": {
+                  "name": "Strait of Hormuz",
+                  "type": "strait",
+                  "status": "unknown",
+                  "as_of": "2026-10-18T01:54"
+                },
+                "cause": {
+                  "text": "Two tankers hit mines on an unauthorised route, according to the IRGC.",
+                  "status": "claimed"
+                },
+                "flows": [
+                  {
+                    "flow": "crude",
+                    "india_link": "Each tanker carried about two million barrels of crude; India destination not stated.",
+                    "basis": "inferred"
+                  }
+                ],
+                "alternatives": [],
+                "duration": "not reported"
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "aljazeera",
+              "headline": "Iran says two tankers catch fire after hitting mines in Strait of Hormuz",
+              "url": "https://www.aljazeera.com/news/2026/10/18/iran-says-two-tankers-catch-fire-after-hitting-mines-in-strait-of-hormuz",
+              "date": "2026-10-18T01:54:18.000Z",
+              "kind": "breaking",
+              "summary": "The vessels, each carrying about two million barrels of crude oil, used an unauthorised route, the IRGC says.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/reuters_6ad4135d-1792283485.jpg?resize=1920%2C1440"
+            }
+          ],
+          "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/reuters_6ad4135d-1792283485.jpg?resize=1920%2C1440",
+          "thread": "t2ogxay"
+        },
+        {
+          "id": "s1hh1qud",
+          "headline": "US-Russia deal, Trump-Zelensky clash could leave Ukraine out in the cold",
+          "url": "https://www.scmp.com/news/world/russia-central-asia/article/3371280/us-russia-deal-trump-zelensky-clash-could-leave-ukraine-out-cold",
+          "source": "scmp",
+          "date": "2026-10-18T01:14:48.000Z",
+          "relevance": "medium",
+          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/18/be98d5af-96c0-4086-a8b4-15f3b47eb5e2_731fb1bd.jpg?itok=KXFYemN9&v=1792286078",
+          "why": "A US-Russia diesel deal and tariff waiver on Russian exports could change Russia's revenue and energy trade, with only indirect links to India.",
+          "implications": [
+            "SCMP reports US threats to cut intelligence support for Ukraine, a tariff waiver on Russian exports and a diesel deal.",
+            "The diesel deal could help Russia fund its war, which may alter energy trade patterns that India watches."
+          ],
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-18T04:48:25.207Z",
+            "tier": "quick",
+            "primary": "escalation",
+            "complement": null,
+            "features": [
+              "armed_conflict",
+              "trade_flow",
+              "fast_moving",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "No stated mechanism reaching India; link through energy markets is indirect."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Effects on energy trade would take time to appear."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "Single outlet; no named official source in the summary."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "fuel prices",
+                "basis": "inferred"
+              },
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "energy trade conditions",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Whether the US follows through on cutting intelligence support to Ukraine",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "frameworks": {
+              "escalation": {
+                "current_rung": 2,
+                "evidence": "A tariff waiver on Russian exports and a diesel deal, alongside US threats to cut intelligence support for Ukraine.",
+                "previous_rung": 1,
+                "next_signals": [
+                  {
+                    "rung": 3,
+                    "signal": "Reported mobilisation or force posturing linked to the dispute"
+                  }
+                ],
+                "india_channels": [
+                  "oil",
+                  "trade"
+                ]
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "scmp",
+              "headline": "US-Russia deal, Trump-Zelensky clash could leave Ukraine out in the cold",
+              "url": "https://www.scmp.com/news/world/russia-central-asia/article/3371280/us-russia-deal-trump-zelensky-clash-could-leave-ukraine-out-cold",
+              "date": "2026-10-18T01:14:48.000Z",
+              "kind": "hard",
+              "summary": "From US threats to cut off intelligence support for Ukraine to a waiver of tariffs on Russian ⁠exports and a diesel deal that could help Russia fund its war, it has been a damaging week for ties between Kyiv and its most important ally, Washington.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/18/be98d5af-96c0-4086-a8b4-15f3b47eb5e2_731fb1bd.jpg?itok=KXFYemN9&v=1792286078"
+            }
+          ],
+          "thread": "t1uohici"
+        },
+        {
+          "id": "sf2as6a",
+          "headline": "Saudi-led coalition intercepts drones as Egypt weighs sending help",
+          "url": "https://www.aljazeera.com/news/2026/10/17/saudi-led-coalition-intercepts-drones-as-egypt-weighs-sending-help",
+          "source": "aljazeera",
+          "date": "2026-10-17T23:21:57.000Z",
+          "relevance": "medium",
+          "why": "Drone attacks over Saudi Arabia, including the Eastern Province, could raise risks for Gulf energy supply and Indians in the kingdom if they continue.",
+          "implications": [
+            "Al Jazeera reports four drones were intercepted over Riyadh, the Eastern Province and the southern region, with Egypt weighing help.",
+            "If attacks continue, Gulf oil supply and the safety of Indians in Saudi Arabia could become concerns, though the report mentions neither."
+          ],
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-18T04:48:25.206Z",
+            "tier": "quick",
+            "primary": "escalation",
+            "complement": null,
+            "features": [
+              "armed_conflict",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "Single early report of intercepted drones; no mention of oil, Indians or travel disruption."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Early report; any effect depends on further attacks."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "Single outlet, early breaking report."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Gulf & overseas workers and families",
+                "direction": "unclear",
+                "what": "safety and work conditions",
+                "basis": "inferred"
+              },
+              {
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "fuel prices",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Whether Egypt decides to send help to the Saudi-led coalition",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "Further drone attacks reported over Saudi Arabia",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "frameworks": {
+              "escalation": {
+                "current_rung": 4,
+                "evidence": "Saudi-led forces intercepted and destroyed four drones over Riyadh, the Eastern Province and the southern region.",
+                "previous_rung": null,
+                "next_signals": [
+                  {
+                    "rung": 5,
+                    "signal": "Repeated drone attacks on Saudi territory over several days"
+                  }
+                ],
+                "india_channels": [
+                  "oil",
+                  "diaspora safety",
+                  "flights"
+                ]
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "aljazeera",
+              "headline": "Saudi-led coalition intercepts drones as Egypt weighs sending help",
+              "url": "https://www.aljazeera.com/news/2026/10/17/saudi-led-coalition-intercepts-drones-as-egypt-weighs-sending-help",
+              "date": "2026-10-17T23:21:57.000Z",
+              "kind": "breaking",
+              "summary": "Forces intercepted and destroyed four drones over Saudi Arabia's Riyadh, Eastern Province and southern region.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/afp_6ad0f89f0355-1792080031.jpg?resize=1920%2C1440"
+            }
+          ],
+          "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/afp_6ad0f89f0355-1792080031.jpg?resize=1920%2C1440",
+          "thread": "t1j5n1me"
+        },
         {
           "id": "s1r2qmg9",
           "headline": "U.S. Floats Lifeline to Russia: Allowing More Gas Sales to Europe",
@@ -8547,6 +8838,16 @@
               "summary": "The Trump administration is ignoring the will of Congress and waiving new Russia sanctions amid fears that high energy prices will cost Republicans in next month’s elections.",
               "summaryV": 3,
               "image": "https://static01.nyt.com/images/2026/10/17/multimedia/17DC-RUSSIA-SANX-qczf/17DC-RUSSIA-SANX-qczf-mediumSquareAt3X.jpg"
+            },
+            {
+              "source": "france24",
+              "headline": "Rubio says Trump to 'analyze' global impact of Russia sanctions during pause",
+              "url": "https://www.france24.com/en/americas/20261018-rubio-says-trump-russia-sanctions-waiver-designed-to-analyze-global-impact",
+              "date": "2026-10-18T02:39:29.000Z",
+              "kind": "hard",
+              "summary": "US Secretary of State Marco Rubio said Saturday that President Donald Trump’s decision to waive sanctions and tariffs on Russia would last 60 days, as the move drew bipartisan criticism and raised fears in Ukraine that Washington could ease further restrictions on Moscow.",
+              "summaryV": 3,
+              "image": "https://s.france24.com/media/display/1b46d8a0-c7e7-11f1-819e-4dd8ac2cf3bf/w:1024/p:16x9/dcd8c89867be21a42771dcc4bb966f7a0278e690.jpg"
             }
           ],
           "thread": "t1nate9f",
@@ -8658,6 +8959,93 @@
               }
             ]
           }
+        },
+        {
+          "id": "s1cib3os",
+          "headline": "Trump’s second Asean summit presence comes at a price for region",
+          "url": "https://www.scmp.com/week-asia/economics/article/3371132/trumps-second-asean-summit-presence-comes-price-region",
+          "source": "scmp",
+          "date": "2026-10-18T00:00:08.000Z",
+          "relevance": "medium",
+          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/16/efd2f097-26fc-40dd-b540-a3e6a51dead6_d602a822.jpg?itok=RLCE65Kc&v=1792135755",
+          "why": "US tariff and critical-minerals demands on Asean could reshape Asian trade terms, which may indirectly affect Indian exporters.",
+          "implications": [
+            "SCMP reports Trump is expected to bargain hard on tariffs and critical minerals at the Asean summit in Manila next month.",
+            "Washington is also seeking strategic concessions while staying hawkish on China, which could shift regional trade alignments."
+          ],
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-18T04:48:25.207Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "Report is about Asean; no direct mechanism for India is stated."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Summit is next month; trade effects would follow later."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "Single outlet; describes expectations, not agreed outcomes."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "MSME exporters",
+                "direction": "unclear",
+                "what": "competitiveness in US market",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Outcomes on tariffs and critical minerals at the Asean summit in Manila",
+                "when": "November 2026",
+                "where": ""
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Trump seeks Asean concessions",
+                    "detail": "He is expected to drive hard bargains on tariffs and critical minerals.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "US stays hawkish on China",
+                    "detail": "Washington wants economic and strategic concessions while keeping its China stance.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Asian trade terms may shift",
+                    "detail": "Indian exporters competing with Asean could face changed conditions.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The summit ends without new tariff or critical-minerals terms."
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "scmp",
+              "headline": "Trump’s second Asean summit presence comes at a price for region",
+              "url": "https://www.scmp.com/week-asia/economics/article/3371132/trumps-second-asean-summit-presence-comes-price-region",
+              "date": "2026-10-18T00:00:08.000Z",
+              "kind": "hard",
+              "summary": "US President Donald Trump is expected to drive hard bargains on tariffs and critical minerals in his return to the Asean summit in Manila next month, with Washington seeking greater economic and strategic concessions while remaining hawkish on China.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/16/efd2f097-26fc-40dd-b540-a3e6a51dead6_d602a822.jpg?itok=RLCE65Kc&v=1792135755"
+            }
+          ],
+          "thread": "topaoh5"
         },
         {
           "id": "s6p42cy",
@@ -13833,6 +14221,30 @@
       "name": "Policy & Governance",
       "items": [
         {
+          "id": "spg7xo5",
+          "headline": "In India, the Scion of a Political Dynasty Tries to Seize His Moment",
+          "url": "https://www.nytimes.com/2026/10/18/world/asia/india-gandhi-political-dynasty.html",
+          "source": "nyt",
+          "date": "2026-10-18T04:01:17.000Z",
+          "relevance": "medium",
+          "image": "https://static01.nyt.com/images/2026/10/15/multimedia/xxint-india-gandhi-01-mhvf/xxint-india-gandhi-01-mhvf-mediumSquareAt3X.jpg",
+          "why": "",
+          "implications": [],
+          "reports": [
+            {
+              "source": "nyt",
+              "headline": "In India, the Scion of a Political Dynasty Tries to Seize His Moment",
+              "url": "https://www.nytimes.com/2026/10/18/world/asia/india-gandhi-political-dynasty.html",
+              "date": "2026-10-18T04:01:17.000Z",
+              "kind": "feature",
+              "summary": "Rahul Gandhi is the descendant of three prime ministers. A surge of protests could give him a springboard to take on the nation’s current leader.",
+              "summaryV": 3,
+              "image": "https://static01.nyt.com/images/2026/10/15/multimedia/xxint-india-gandhi-01-mhvf/xxint-india-gandhi-01-mhvf-mediumSquareAt3X.jpg"
+            }
+          ],
+          "thread": "t1kqejni"
+        },
+        {
           "id": "s1oi57k8",
           "headline": "At least 17 dead in crush at Hindu festival event in India",
           "url": "https://www.bbc.co.uk/news/articles/c820vwq7qg2ko",
@@ -13841,77 +14253,138 @@
           "relevance": "medium",
           "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/60d0/live/caaed220-ca5d-11f1-852c-2b93a8fc4799.jpg",
           "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/60d0/live/caaed220-ca5d-11f1-852c-2b93a8fc4799.jpg",
-          "why": "At least 17 people died in a crush at a Hindu festival in north Kolkata. The disaster raises immediate safety concerns at crowded religious gatherings.",
+          "why": "A deadly crush at a Hindu festival event in Kolkata killed at least 17 people, raising questions about crowd safety at India's religious gatherings during festival season.",
           "implications": [
-            "Police said big crowds and rainfall surrounded the incident, and many more people were injured.",
-            "Authorities in West Bengal may face pressure to review crowd management at festival events.",
-            "Festival-goers elsewhere could see tighter crowd controls if officials respond with new measures."
+            "At least 17 people died and dozens were injured when a crowd rushed forward during sudden rainfall at a festival pavilion in north Kolkata.",
+            "Authorities detained the event's organizer and others involved, so the case may focus on how organizers manage crowds.",
+            "Festival events in West Bengal and elsewhere could face closer scrutiny of crowd control, though the reports do not mention any new rules."
           ],
           "analysis": {
             "v": 2,
-            "at": "2026-10-17T20:46:50.666Z",
-            "tier": "standard",
-            "primary": "impact_chain",
-            "complement": null,
-            "features": [],
+            "at": "2026-10-18T04:49:05.034Z",
+            "tier": "deep",
+            "primary": "conflicting",
+            "complement": "impact_chain",
+            "features": [
+              "conflict"
+            ],
             "exposure": {
               "level": "high",
-              "reason": "Directly affects the safety of Indian festival-goers."
+              "reason": "Directly concerns the physical safety of Indians attending religious festival gatherings."
             },
             "horizon": {
               "value": "now",
-              "reason": "Deaths and injuries already occurred; response is immediate."
+              "reason": "Deaths, injuries and detentions have already occurred."
             },
             "confidence": {
               "level": "medium",
-              "reason": "Two outlets agree, citing police; this is an early report."
+              "reason": "Five outlets agree on the core event, but death toll accounts differ. Early reports."
             },
-            "outlets": 2,
+            "outlets": 5,
             "affected": [
               {
                 "group": "Travellers & pilgrims",
-                "direction": "up",
-                "what": "crowd safety risk",
+                "direction": "down",
+                "what": "safety at festival gatherings",
                 "basis": "reported"
               }
             ],
             "watch": [
               {
-                "what": "Updated death and injury toll",
+                "what": "Official final death and injury toll from the Kolkata stampede",
                 "when": "",
                 "where": "West Bengal police"
               },
               {
-                "what": "Official inquiry into the cause of the crush",
+                "what": "Outcome of action against the detained event organizer",
                 "when": "",
-                "where": "West Bengal government"
+                "where": "West Bengal police"
+              },
+              {
+                "what": "Any official statement on what caused the crowd rush",
+                "when": "",
+                "where": "West Bengal police"
               }
             ],
             "frameworks": {
+              "conflicting": {
+                "disputed": {
+                  "item": "Number of people killed in the stampede",
+                  "unit": "people killed"
+                },
+                "accounts": [
+                  {
+                    "outlet": "BBC News",
+                    "value": "at least 17 dead",
+                    "origin": "not specified in report",
+                    "time": "2026-10-17T19:19"
+                  },
+                  {
+                    "outlet": "Al Jazeera",
+                    "value": "at least 17 killed",
+                    "origin": "not specified in report; police cited on location and rainfall",
+                    "time": "2026-10-17T19:48"
+                  },
+                  {
+                    "outlet": "The New York Times",
+                    "value": "17 dead, dozens injured",
+                    "origin": "not specified in report",
+                    "time": "2026-10-17T21:39"
+                  },
+                  {
+                    "outlet": "South China Morning Post",
+                    "value": "at least 19 killed, 25 hurt",
+                    "origin": "officials and Indian media",
+                    "time": "2026-10-17T23:31"
+                  },
+                  {
+                    "outlet": "ABC News",
+                    "value": "at least 17 killed",
+                    "origin": "not specified in report; police official cited on cause",
+                    "time": "2026-10-17T23:43"
+                  }
+                ],
+                "agreed": [
+                  "A deadly stampede or crush occurred at a Hindu religious festival event in India",
+                  "At least 17 people were killed",
+                  "Others were injured"
+                ],
+                "explanations": [
+                  {
+                    "type": "different time",
+                    "note": "The higher figure of 19 appeared in a later report"
+                  },
+                  {
+                    "type": "different source",
+                    "note": "South China Morning Post cites officials and Indian media for 19"
+                  }
+                ],
+                "status": "unresolved"
+              },
               "impact_chain": {
                 "chain": [
                   {
-                    "step": "Crush at Kolkata festival",
-                    "detail": "At least 17 killed and many injured at a Hindu festival event.",
+                    "step": "Rain prompts announcement at pavilion",
+                    "detail": "A police official says an announcement made after rain started led the crowd to rush forward.",
                     "basis": "reported"
                   },
                   {
-                    "step": "Crowds and rain cited",
-                    "detail": "Police said big crowds and rainfall surrounded the incident.",
+                    "step": "Crowd rush causes deaths",
+                    "detail": "People fell to the ground; at least 17 were killed and dozens injured.",
                     "basis": "reported"
                   },
                   {
-                    "step": "Crowd controls may be reviewed",
-                    "detail": "Authorities may examine crowd management at festival venues.",
-                    "basis": "inferred"
+                    "step": "Organizer and others detained",
+                    "detail": "Authorities detained the event's organizer and others involved.",
+                    "basis": "reported"
                   },
                   {
-                    "step": "Gatherings could face restrictions",
-                    "detail": "Upcoming festival events could see tighter crowd limits.",
+                    "step": "Crowd-safety scrutiny may tighten",
+                    "detail": "Festival events could face stricter crowd management checks from authorities.",
                     "basis": "inferred"
                   }
                 ],
-                "breaks_if": "Officials find a one-off cause requiring no wider changes."
+                "breaks_if": "Authorities treat it as an isolated incident and no review of crowd management follows."
               }
             }
           },
@@ -13945,6 +14418,26 @@
               "summary": "Such deadly crowd events are relatively common in India, and it was unclear what caused this one. Authorities detained the event’s organizer and others involved.",
               "summaryV": 3,
               "image": "https://static01.nyt.com/images/2026/10/17/multimedia/17int-india-stampede-qcjh/17int-india-stampede-qcjh-mediumSquareAt3X.jpg"
+            },
+            {
+              "source": "scmp",
+              "headline": "19 dead, 25 hurt in stampede at India religious festival",
+              "url": "https://www.scmp.com/news/asia/south-asia/article/3371278/19-dead-25-hurt-stampede-india-religious-festival",
+              "date": "2026-10-17T23:31:57.000Z",
+              "kind": "breaking",
+              "summary": "At least 19 people were killed and two dozen more injured on Saturday in eastern India after a stampede that occurred during sudden rainfall at a Hindu religious gathering, officials and Indian media said.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/18/64fba989-a5c5-4fce-81d2-02a048cfa72b_3fa00724.jpg?itok=QzHzJAPu&v=1792279908"
+            },
+            {
+              "source": "abc",
+              "headline": "Stampede kills at least 17 people at religious festival in India",
+              "url": "https://www.abc.net.au/news/2026-10-18/india-stampede-kolkata-hindu-festival/107280156",
+              "date": "2026-10-17T23:43:20.000Z",
+              "kind": "breaking",
+              "summary": "A police official says an announcement outside a pavilion after it started raining resulted in the crowd \"rushing forward\" and people falling on the ground.",
+              "summaryV": 3,
+              "image": "https://live-production.wcms.abc-cdn.net.au/134f735b4ead2627f4227442a5883d62?impolicy=wcms_crop_resize&cropH=629&cropW=1118&xPos=29&yPos=0&width=862&height=485"
             }
           ],
           "thread": "t1obhifg",
@@ -16613,21 +17106,21 @@
   ],
   "source": "BBC News & The Guardian & NPR & Al Jazeera & MercoPress & ABC News & The New York Times & CNBC & CBS News & DW & France 24 & Africanews & South China Morning Post & The Hindu & Mint",
   "lastRun": {
-    "analysed": 20,
-    "added": 0,
-    "merged": 1,
-    "rejected": 19,
+    "analysed": 53,
+    "added": 5,
+    "merged": 3,
+    "rejected": 45,
     "failedBatches": 0,
     "feeds": {
       "bbc": {
         "feedsOk": 6,
         "feedsFailed": 0,
-        "items": 151
+        "items": 152
       },
       "guardian": {
         "feedsOk": 7,
         "feedsFailed": 0,
-        "items": 189
+        "items": 188
       },
       "npr": {
         "feedsOk": 4,
@@ -16652,7 +17145,7 @@
       "nyt": {
         "feedsOk": 5,
         "feedsFailed": 0,
-        "items": 172
+        "items": 171
       },
       "cnbc": {
         "feedsOk": 3,
@@ -16662,7 +17155,7 @@
       "cbs": {
         "feedsOk": 2,
         "feedsFailed": 0,
-        "items": 41
+        "items": 40
       },
       "dw": {
         "feedsOk": 3,
@@ -16672,7 +17165,7 @@
       "france24": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 67
+        "items": 69
       },
       "africanews": {
         "feedsOk": 1,
@@ -16682,22 +17175,22 @@
       "scmp": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 143
+        "items": 142
       }
     },
     "shareImages": {
-      "tried": 0,
-      "found": 0,
+      "tried": 2,
+      "found": 2,
       "summaries": 0
     },
     "threads": {
-      "assigned": 0,
+      "assigned": 5,
       "created": 0,
       "failedBatches": 0
     },
     "summaries": {
-      "written": 0,
-      "due": 0
+      "written": 5,
+      "due": 5
     },
     "kinds": {
       "labelled": 0,
@@ -16710,60 +17203,49 @@
       "failedBatches": 0
     },
     "stats": {
-      "searched": 3,
+      "searched": 0,
       "found": 0,
-      "reused": 2,
-      "none": 1,
+      "reused": 0,
+      "none": 0,
       "failed": 0,
       "proposed": 0,
       "droppedPoints": 0,
       "pagesFetched": 0,
-      "samples": [
-        {
-          "headline": "At least 17 dead in crush at Hindu festival event in India",
-          "result": "nothing",
-          "proposed": 0,
-          "checked": 0,
-          "pagesFetched": 0
-        },
-        {
-          "headline": "Trump waives several Russia sanctions as new US law takes effect",
-          "result": "reused saved series"
-        },
-        {
-          "headline": "Brent oil touches $110 as Iran escalates Hormuz attacks, Ukraine vows to hit Rus",
-          "result": "reused saved series"
-        }
-      ]
+      "samples": []
     },
     "models": {
       "filter": {
         "model": "claude-haiku-5-5",
         "calls": 5,
-        "inputTokens": 7912,
-        "outputTokens": 3651,
-        "cost": 0.0026
+        "inputTokens": 17199,
+        "outputTokens": 8528,
+        "cost": 0.006
       },
-      "stats": {
+      "analysis_quick": {
         "model": "claude-sonnet-5-5",
-        "calls": 1,
-        "inputTokens": 99829,
-        "outputTokens": 785,
-        "searches": 3,
-        "fetches": 3,
-        "cost": 0.2375
+        "calls": 2,
+        "inputTokens": 4063,
+        "outputTokens": 4299,
+        "cost": 0.0511
       },
       "analysis": {
         "model": "claude-opus-5-5",
         "calls": 1,
-        "inputTokens": 2034,
-        "outputTokens": 2110,
-        "cost": 0.0503
+        "inputTokens": 2293,
+        "outputTokens": 2246,
+        "cost": 0.0541
+      },
+      "threads": {
+        "model": "claude-sonnet-5-5",
+        "calls": 6,
+        "inputTokens": 12890,
+        "outputTokens": 2496,
+        "cost": 0.0509
       }
     },
     "spend": {
-      "thisDesk": 0.2905,
-      "today": 1.7104,
+      "thisDesk": 0.1619,
+      "today": 3.0564,
       "cap": 6
     }
   },

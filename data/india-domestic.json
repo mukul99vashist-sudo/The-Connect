@@ -2,12 +2,262 @@
   "schema": 4,
   "region": "India",
   "since": "2026-10-02",
-  "updatedAt": "2026-10-17T23:16:57.131Z",
+  "updatedAt": "2026-10-18T04:51:59.152Z",
   "sectors": [
     {
       "id": "energy",
       "name": "Energy",
       "items": [
+        {
+          "id": "s10hmaa7",
+          "headline": "Petrol and diesel prices today, October 18: How much does fuel cost in Delhi, Mumbai, Bengaluru",
+          "url": "https://www.livemint.com/news/india/petrol-and-diesel-prices-today-october-18-how-much-does-fuel-cost-in-delhi-mumbai-bengaluru-11792292112754.html",
+          "source": "mint",
+          "date": "2026-10-18T03:28:11.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2026/10/18/1600x900/logo/INDIA-DIESEL-SALES-0_1792293990998_uD6L_1792294006455_Xc9Y_d7aca5e8-10cd-4865-b93d-d87c9a092026_O6LM.JPG",
+          "why": "Mint reports that retail petrol and diesel prices are unchanged despite fluctuating global crude amid Middle East tensions, so pump prices are steady for now.",
+          "implications": [
+            "Mint reports that domestic retail fuel prices have stayed unchanged even as global crude has fluctuated.",
+            "If crude stays volatile, pressure on fuel costs could build, but the report gives no sign of a pump-price change."
+          ],
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-18T04:50:54.061Z",
+            "tier": "quick",
+            "primary": "pass_through",
+            "complement": null,
+            "features": [
+              "price_move"
+            ],
+            "exposure": {
+              "level": "high",
+              "reason": "Petrol and diesel are household essentials, and crude price swings could eventually affect them."
+            },
+            "horizon": {
+              "value": "now",
+              "reason": "Prices are unchanged today; any change would show at pumps."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "Single outlet, no official source quoted, and no explanation of why prices are steady."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "pump prices unchanged for now",
+                "basis": "reported"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Any change in daily petrol and diesel prices in Delhi, Mumbai and Bengaluru",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "frameworks": {
+              "pass_through": {
+                "driver": {
+                  "variable": "Global crude oil prices (fluctuating amid Middle E",
+                  "direction": "up",
+                  "size": ""
+                },
+                "product": "petrol & diesel",
+                "rungs": [
+                  {
+                    "stage": "Global crude price → Refiners' cost",
+                    "pass": "likely",
+                    "damper": "Report does not describe import or contract arrangements.",
+                    "lag": "weeks"
+                  },
+                  {
+                    "stage": "Refiners' cost → Pump price",
+                    "pass": "unclear",
+                    "damper": "Retail prices unchanged; the report does not say why.",
+                    "lag": "weeks"
+                  },
+                  {
+                    "stage": "Pump price → Household and transport costs",
+                    "pass": "unclear",
+                    "damper": "No pump-price change reported, so no knock-on yet.",
+                    "lag": "weeks"
+                  }
+                ],
+                "end_user": {
+                  "group": "Fuel & LPG users",
+                  "effect": "Pump prices are steady for now; future crude moves may or may not reach them."
+                }
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "Petrol and diesel prices today, October 18: How much does fuel cost in Delhi, Mumbai, Bengaluru",
+              "url": "https://www.livemint.com/news/india/petrol-and-diesel-prices-today-october-18-how-much-does-fuel-cost-in-delhi-mumbai-bengaluru-11792292112754.html",
+              "date": "2026-10-18T03:28:11.000Z",
+              "kind": "hard",
+              "summary": "While global crude oil prices have fluctuated amid escalating geopolitical tensions in the Middle East, domestic retail prices have remained unchanged.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/10/18/1600x900/logo/INDIA-DIESEL-SALES-0_1792293990998_uD6L_1792294006455_Xc9Y_d7aca5e8-10cd-4865-b93d-d87c9a092026_O6LM.JPG"
+            }
+          ],
+          "thread": "to54n4o"
+        },
+        {
+          "id": "s8v4x8k",
+          "headline": "Trump waives key sanctions on Russian oil, invokes Section 115 of the Graham Act: Here's what it means for India",
+          "url": "https://www.livemint.com/news/us-news/trump-waives-key-sanctions-on-russian-oil-invokes-section-115-of-the-graham-act-heres-what-it-means-for-india-11792210114695.html",
+          "source": "mint",
+          "date": "2026-10-17T04:18:14.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2026/10/17/1600x900/Trump_Putin_1792210561580_hVz4_1792210561720_eXEB_a7ea67b1-a64c-4a94-8ead-0880d98d8c6b_FmFN.jpg",
+          "why": "Trump's waiver of Graham Act sanctions and tariffs removes a threat of up to 100% US tariffs on India, letting Russian crude imports continue.",
+          "implications": [
+            "The law authorised tariffs of up to 100% on goods from the five largest importers of Russian crude and gas.",
+            "The Hindu reports India's Russian crude buying will continue, with crude above $100 a barrel pressuring the import bill and inflation.",
+            "Mint says the move eases pressure as India and the US push to finalise a trade deal."
+          ],
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-17T20:50:31.233Z",
+            "tier": "standard",
+            "primary": "trade_flow",
+            "complement": null,
+            "features": [
+              "trade_flow",
+              "policy_stage",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "high",
+              "reason": "Crude oil is a top import; affects fuel costs and exports to the US."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Waiver is signed; effects on import flows follow."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "Two outlets; executive order is official; India-specific effects are analysis."
+            },
+            "outlets": 2,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "fuel price pressure",
+                "basis": "inferred"
+              },
+              {
+                "group": "Large exporters",
+                "direction": "down",
+                "what": "US tariff threat",
+                "basis": "reported"
+              },
+              {
+                "group": "Government finances",
+                "direction": "mixed",
+                "what": "oil import bill",
+                "basis": "reported"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Finalisation of the India-US trade deal",
+                "when": "",
+                "where": "Ministry of Commerce and Industry"
+              },
+              {
+                "what": "India's monthly Russian crude import volumes",
+                "when": "",
+                "where": "Ministry of Petroleum and Natural Gas"
+              }
+            ],
+            "frameworks": {
+              "trade_flow": {
+                "good": "Russian crude oil",
+                "actors": [
+                  {
+                    "country": "Russia",
+                    "role": "exporter",
+                    "is_india": false
+                  },
+                  {
+                    "country": "India",
+                    "role": "importer",
+                    "is_india": true
+                  },
+                  {
+                    "country": "United States",
+                    "role": "third_party",
+                    "is_india": false
+                  }
+                ],
+                "change": {
+                  "type": "other",
+                  "effective": ""
+                },
+                "india_position": {
+                  "role": "competing_buyer",
+                  "note": "Major Russian crude buyer; waiver lifts threatened tariffs, so purchases may continue."
+                },
+                "volumes": []
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "Trump waives key sanctions on Russian oil, invokes Section 115 of the Graham Act: Here's what it means for India",
+              "url": "https://www.livemint.com/news/us-news/trump-waives-key-sanctions-on-russian-oil-invokes-section-115-of-the-graham-act-heres-what-it-means-for-india-11792210114695.html",
+              "date": "2026-10-17T04:18:14.000Z",
+              "kind": "hard",
+              "summary": "US President Donald Trump on Friday (local time) signed an executive order waiving key Russia-related sanctions and tariffs under the Graham Act, telling Congress that the decision was in the national interest.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/10/17/1600x900/Trump_Putin_1792210561580_hVz4_1792210561720_eXEB_a7ea67b1-a64c-4a94-8ead-0880d98d8c6b_FmFN.jpg"
+            },
+            {
+              "source": "mint",
+              "headline": "Trump waives some Russia oil sanctions, easing pressure on India",
+              "url": "https://www.livemint.com/news/india/trump-waives-some-russia-oil-sanctions-easing-pressure-on-india-11792217783425.html",
+              "date": "2026-10-17T07:43:16.000Z",
+              "kind": "hard",
+              "summary": "The move offers relief to major Russian oil buyers as India and the US push to finalize a trade deal, with crude prices above $100 a barrel adding to pressure on New Delhi’s import bill and inflation.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/10/17/1600x900/maxresdefault_1792226001943_hWCc_1792226007221_phCL_7b348ba6-bca0-4585-8010-67e9b3767259_6sqy.jpg"
+            },
+            {
+              "source": "thehindu",
+              "headline": "India’s Russian crude binge to continue after Trump waives new sanctions law",
+              "url": "https://www.thehindu.com/business/Economy/indias-russian-crude-binge-to-continue-after-trump-waives-new-sanctions-law/article71595889.ece",
+              "date": "2026-10-17T08:59:54.000Z",
+              "kind": "hard",
+              "summary": "The law authorised tariffs of up to 100% on goods from the five largest importers of Russian crude and gas, and sanctions on Russia's shadow fleet of tankers",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/sport/cricket/scepn2/article71595898.ece/alternates/LANDSCAPE_1200/Russiancrude.jpg"
+            },
+            {
+              "source": "mint",
+              "headline": "Russia sanctions waiver: Rubio calls India 'important ally' says it is hard to pivot energy portfolio in one day",
+              "url": "https://www.livemint.com/news/india/russia-sanctions-waiver-rubio-calls-india-important-ally-says-it-is-hard-to-pivot-energy-portfolio-in-one-day-11792292816506.html",
+              "date": "2026-10-18T03:15:15.000Z",
+              "kind": "hard",
+              "summary": "A day after US President Donald Trump announced he would waive key sanctions related to Russia under the Graham Act, Marco Rubio explained why the US waived some energy tariffs.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/10/18/1600x900/logo/Jaishankar_Marco_Rubio_US_India_1792293199518_J1eO_1792293199744_AMXs_ccf82f57-ade0-4814-a45c-57c2bdeebeb4_ggK2.jpg"
+            }
+          ],
+          "thread": "tmyg5jt",
+          "stats": {
+            "v": 2,
+            "at": "2026-10-17T23:16:01.590Z",
+            "series": []
+          }
+        },
         {
           "id": "sosbqon",
           "headline": "Govt. to roll out National Electricity Data Sharing framework in October: Power Secretary",
@@ -235,147 +485,6 @@
             }
           ],
           "thread": "t5diw6y"
-        },
-        {
-          "id": "s8v4x8k",
-          "headline": "Trump waives key sanctions on Russian oil, invokes Section 115 of the Graham Act: Here's what it means for India",
-          "url": "https://www.livemint.com/news/us-news/trump-waives-key-sanctions-on-russian-oil-invokes-section-115-of-the-graham-act-heres-what-it-means-for-india-11792210114695.html",
-          "source": "mint",
-          "date": "2026-10-17T04:18:14.000Z",
-          "relevance": "medium",
-          "image": "https://www.livemint.com/lm-img/img/2026/10/17/1600x900/Trump_Putin_1792210561580_hVz4_1792210561720_eXEB_a7ea67b1-a64c-4a94-8ead-0880d98d8c6b_FmFN.jpg",
-          "why": "Trump's waiver of Graham Act sanctions and tariffs removes a threat of up to 100% US tariffs on India, letting Russian crude imports continue.",
-          "implications": [
-            "The law authorised tariffs of up to 100% on goods from the five largest importers of Russian crude and gas.",
-            "The Hindu reports India's Russian crude buying will continue, with crude above $100 a barrel pressuring the import bill and inflation.",
-            "Mint says the move eases pressure as India and the US push to finalise a trade deal."
-          ],
-          "analysis": {
-            "v": 2,
-            "at": "2026-10-17T20:50:31.233Z",
-            "tier": "standard",
-            "primary": "trade_flow",
-            "complement": null,
-            "features": [
-              "trade_flow",
-              "policy_stage",
-              "pending_outcome"
-            ],
-            "exposure": {
-              "level": "high",
-              "reason": "Crude oil is a top import; affects fuel costs and exports to the US."
-            },
-            "horizon": {
-              "value": "weeks",
-              "reason": "Waiver is signed; effects on import flows follow."
-            },
-            "confidence": {
-              "level": "medium",
-              "reason": "Two outlets; executive order is official; India-specific effects are analysis."
-            },
-            "outlets": 2,
-            "affected": [
-              {
-                "group": "Fuel & LPG users",
-                "direction": "unclear",
-                "what": "fuel price pressure",
-                "basis": "inferred"
-              },
-              {
-                "group": "Large exporters",
-                "direction": "down",
-                "what": "US tariff threat",
-                "basis": "reported"
-              },
-              {
-                "group": "Government finances",
-                "direction": "mixed",
-                "what": "oil import bill",
-                "basis": "reported"
-              }
-            ],
-            "watch": [
-              {
-                "what": "Finalisation of the India-US trade deal",
-                "when": "",
-                "where": "Ministry of Commerce and Industry"
-              },
-              {
-                "what": "India's monthly Russian crude import volumes",
-                "when": "",
-                "where": "Ministry of Petroleum and Natural Gas"
-              }
-            ],
-            "frameworks": {
-              "trade_flow": {
-                "good": "Russian crude oil",
-                "actors": [
-                  {
-                    "country": "Russia",
-                    "role": "exporter",
-                    "is_india": false
-                  },
-                  {
-                    "country": "India",
-                    "role": "importer",
-                    "is_india": true
-                  },
-                  {
-                    "country": "United States",
-                    "role": "third_party",
-                    "is_india": false
-                  }
-                ],
-                "change": {
-                  "type": "other",
-                  "effective": ""
-                },
-                "india_position": {
-                  "role": "competing_buyer",
-                  "note": "Major Russian crude buyer; waiver lifts threatened tariffs, so purchases may continue."
-                },
-                "volumes": []
-              }
-            }
-          },
-          "reports": [
-            {
-              "source": "mint",
-              "headline": "Trump waives key sanctions on Russian oil, invokes Section 115 of the Graham Act: Here's what it means for India",
-              "url": "https://www.livemint.com/news/us-news/trump-waives-key-sanctions-on-russian-oil-invokes-section-115-of-the-graham-act-heres-what-it-means-for-india-11792210114695.html",
-              "date": "2026-10-17T04:18:14.000Z",
-              "kind": "hard",
-              "summary": "US President Donald Trump on Friday (local time) signed an executive order waiving key Russia-related sanctions and tariffs under the Graham Act, telling Congress that the decision was in the national interest.",
-              "summaryV": 3,
-              "image": "https://www.livemint.com/lm-img/img/2026/10/17/1600x900/Trump_Putin_1792210561580_hVz4_1792210561720_eXEB_a7ea67b1-a64c-4a94-8ead-0880d98d8c6b_FmFN.jpg"
-            },
-            {
-              "source": "mint",
-              "headline": "Trump waives some Russia oil sanctions, easing pressure on India",
-              "url": "https://www.livemint.com/news/india/trump-waives-some-russia-oil-sanctions-easing-pressure-on-india-11792217783425.html",
-              "date": "2026-10-17T07:43:16.000Z",
-              "kind": "hard",
-              "summary": "The move offers relief to major Russian oil buyers as India and the US push to finalize a trade deal, with crude prices above $100 a barrel adding to pressure on New Delhi’s import bill and inflation.",
-              "summaryV": 3,
-              "image": "https://www.livemint.com/lm-img/img/2026/10/17/1600x900/maxresdefault_1792226001943_hWCc_1792226007221_phCL_7b348ba6-bca0-4585-8010-67e9b3767259_6sqy.jpg"
-            },
-            {
-              "source": "thehindu",
-              "headline": "India’s Russian crude binge to continue after Trump waives new sanctions law",
-              "url": "https://www.thehindu.com/business/Economy/indias-russian-crude-binge-to-continue-after-trump-waives-new-sanctions-law/article71595889.ece",
-              "date": "2026-10-17T08:59:54.000Z",
-              "kind": "hard",
-              "summary": "The law authorised tariffs of up to 100% on goods from the five largest importers of Russian crude and gas, and sanctions on Russia's shadow fleet of tankers",
-              "summaryV": 3,
-              "image": "https://th-i.thgim.com/public/sport/cricket/scepn2/article71595898.ece/alternates/LANDSCAPE_1200/Russiancrude.jpg"
-            }
-          ],
-          "thread": "tmyg5jt",
-          "stats": {
-            "v": 2,
-            "at": "2026-10-17T23:16:01.590Z",
-            "series": []
-          }
         },
         {
           "id": "sykigk4",
@@ -4221,22 +4330,22 @@
       "name": "Economy & Trade",
       "items": [
         {
-          "id": "s1ma7hce",
-          "headline": "India-Canada trade deal: What New Delhi wants, what Ottawa is seeking as CEPA talks gather pace",
-          "url": "https://www.livemint.com/news/india/indiacanada-trade-deal-what-new-delhi-wants-what-ottawa-is-seeking-as-cepa-talks-gather-pace-11792160298058.html",
+          "id": "s1mnspo3",
+          "headline": "Jaishankar ‘summoned’ by Marco Rubio? MEA clarifies Mumbai meet amid Congress criticism; says energy, trade on agenda",
+          "url": "https://www.livemint.com/news/india/jaishankar-summoned-by-marco-rubio-mea-clarifies-mumbai-meet-amid-congress-criticism-says-energy-trade-on-agenda-11792205501440.html",
           "source": "mint",
-          "date": "2026-10-16T14:35:02.000Z",
+          "date": "2026-10-17T03:11:00.000Z",
           "relevance": "medium",
-          "image": "https://www.livemint.com/lm-img/img/2026/10/16/1600x900/logo/india_canada_trade_1792161150439_x2Bm_1792161156711_hj3v_bbd4d6d3-dae8-4d61-952d-ee06f4343941_t8PI.jpg",
-          "why": "India and Canada aim to conclude a trade deal (CEPA) by end-2026, which could reshape market access for Indian exporters and importers.",
+          "image": "https://www.livemint.com/lm-img/img/2026/10/17/1600x900/logo/MEA_1792205664297_Rp3I_1792205668466_SEoq_cfd11351-2c73-46d2-ab44-86e09599bb94_pnp8.jpg",
+          "why": "Back-to-back Mumbai talks with US Secretary of State Rubio and the UAE foreign minister put energy and trade on the agenda amid strained India-US ties.",
           "implications": [
-            "Formal CEPA negotiations began after Canadian PM Mark Carney's visit to India in February-March 2026.",
-            "Canada's Foreign Minister Anita Anand and Trade Minister Maninder Sidhu met Jaishankar and Goyal in India.",
-            "Anand indicated PM Modi would visit Canada later in December, a possible milestone for the talks."
+            "MEA says energy and trade are on the agenda, so any outcomes could shape India's energy and trade relations with the US and UAE.",
+            "Mint reports that Rubio's visit to Reliance's Jamnagar refinery highlights a business, energy and trade focus amid strained ties under Trump.",
+            "Congress criticised Jaishankar being 'summoned' to Mumbai, while MEA says hosting leaders outside the national capital is normal practice."
           ],
           "analysis": {
             "v": 2,
-            "at": "2026-10-17T20:50:31.233Z",
+            "at": "2026-10-18T04:51:53.794Z",
             "tier": "standard",
             "primary": "impact_chain",
             "complement": null,
@@ -4245,100 +4354,601 @@
             ],
             "exposure": {
               "level": "medium",
-              "reason": "One bilateral trade relationship; effects depend on deal terms not yet reported."
+              "reason": "Bilateral diplomacy with energy and trade on the agenda; no concrete measures reported yet."
             },
             "horizon": {
               "value": "months",
-              "reason": "Talks are targeted to conclude by end of 2026."
+              "reason": "Any agreements would take time to affect trade flows."
             },
             "confidence": {
               "level": "medium",
-              "reason": "Two outlets; on-record Canadian minister; deal terms not disclosed."
+              "reason": "Two outlets and on-record MEA spokesperson; no outcomes reported yet."
             },
             "outlets": 2,
             "affected": [
               {
-                "group": "MSME exporters",
+                "group": "Large exporters",
                 "direction": "unclear",
-                "what": "market access to Canada",
+                "what": "US trade terms",
                 "basis": "inferred"
               },
               {
-                "group": "Large exporters",
+                "group": "Fuel & LPG users",
                 "direction": "unclear",
-                "what": "market access to Canada",
+                "what": "energy supply arrangements",
                 "basis": "inferred"
               },
               {
                 "group": "Importers & traders",
                 "direction": "unclear",
-                "what": "tariffs on Canadian goods",
+                "what": "trade conditions with US, UAE",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "PM Modi's visit to Canada",
-                "when": "December",
+                "what": "Jaishankar hosts UAE Foreign Minister Sheikh Abdullah bin Zayed in Mumbai",
+                "when": "2026-10-19",
                 "where": "Ministry of External Affairs"
               },
               {
-                "what": "Conclusion of India-Canada CEPA negotiations",
-                "when": "end of 2026",
-                "where": "Ministry of Commerce and Industry"
+                "what": "Jaishankar-Rubio talks in Mumbai and Rubio's Jamnagar refinery visit",
+                "when": "next week",
+                "where": "Ministry of External Affairs"
+              },
+              {
+                "what": "Any announced energy or trade outcomes from the meetings",
+                "when": "",
+                "where": "Ministry of External Affairs"
               }
             ],
             "frameworks": {
               "impact_chain": {
                 "chain": [
                   {
-                    "step": "Formal CEPA talks launched",
-                    "detail": "Began after Carney's February-March 2026 visit to India.",
+                    "step": "Mumbai talks with Rubio, UAE FM",
+                    "detail": "Jaishankar hosts back-to-back separate visits in Mumbai, per MEA.",
                     "basis": "reported"
                   },
                   {
-                    "step": "Ministerial engagements in India",
-                    "detail": "Anand and Sidhu met Jaishankar and Goyal.",
+                    "step": "Energy and trade on agenda",
+                    "detail": "MEA says energy and trade feature; Rubio to visit Jamnagar refinery.",
                     "basis": "reported"
                   },
                   {
-                    "step": "End-2026 conclusion target",
-                    "detail": "Both sides committed to concluding talks by end of 2026.",
-                    "basis": "reported"
+                    "step": "Possible energy, trade understandings",
+                    "detail": "Talks could produce arrangements on energy supply or trade terms.",
+                    "basis": "inferred"
                   },
                   {
-                    "step": "Trade terms could change",
-                    "detail": "A signed deal may alter tariffs and access for Indian businesses.",
+                    "step": "Effects on refiners, exporters",
+                    "detail": "Any deals may affect Indian refiners, exporters and energy supply conditions.",
                     "basis": "inferred"
                   }
                 ],
-                "breaks_if": "Negotiations stall or miss the end-2026 target."
+                "breaks_if": "Talks end without energy or trade outcomes, or India-US ties strain further."
               }
             }
           },
           "reports": [
             {
               "source": "mint",
-              "headline": "India-Canada trade deal: What New Delhi wants, what Ottawa is seeking as CEPA talks gather pace",
-              "url": "https://www.livemint.com/news/india/indiacanada-trade-deal-what-new-delhi-wants-what-ottawa-is-seeking-as-cepa-talks-gather-pace-11792160298058.html",
-              "date": "2026-10-16T14:35:02.000Z",
+              "headline": "Jaishankar ‘summoned’ by Marco Rubio? MEA clarifies Mumbai meet amid Congress criticism; says energy, trade on agenda",
+              "url": "https://www.livemint.com/news/india/jaishankar-summoned-by-marco-rubio-mea-clarifies-mumbai-meet-amid-congress-criticism-says-energy-trade-on-agenda-11792205501440.html",
+              "date": "2026-10-17T03:11:00.000Z",
               "kind": "hard",
-              "summary": "The two countries launched formal negotiations after Canadian Prime Minister Mark Carney’s visit to India in February-March 2026. Both sides have committed to concluding the talks by the end of 2026.",
+              "summary": "MEA spokesperson Randhir Jaiswal said that External Affairs Minister Jaishankar will host the Deputy Prime Minister and Foreign Minister of the UAE Sheikh Abdullah bin Zayed Al Nahyan, in Mumbai on October 19 and 20, 2026.",
               "summaryV": 3,
-              "image": "https://www.livemint.com/lm-img/img/2026/10/16/1600x900/logo/india_canada_trade_1792161150439_x2Bm_1792161156711_hj3v_bbd4d6d3-dae8-4d61-952d-ee06f4343941_t8PI.jpg"
+              "image": "https://www.livemint.com/lm-img/img/2026/10/17/1600x900/logo/MEA_1792205664297_Rp3I_1792205668466_SEoq_cfd11351-2c73-46d2-ab44-86e09599bb94_pnp8.jpg"
+            },
+            {
+              "source": "mint",
+              "headline": "Why is Marco Rubio skipping Delhi for Mumbai and Reliance hub Jamnagar? What it signals about India-US ties under Trump",
+              "url": "https://www.livemint.com/news/india/why-is-marco-rubio-skipping-delhi-for-mumbai-and-reliance-hub-jamnagar-what-it-signals-about-india-us-ties-under-trump-11792256624695.html",
+              "date": "2026-10-17T18:25:00.000Z",
+              "kind": "feature",
+              "summary": "US Secretary of State Marco Rubio’s decision to hold talks in Mumbai and visit Reliance Industries’ Jamnagar refinery highlights the business, energy and trade focus of his India trip. The itinerary has sparked a diplomatic debate amid strained India-US ties under President Donald Trump.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/10/17/1600x900/logo/MEA_1792205664297_1792260123983_ZSXO_1792260124197_82s9_29c275f5-a295-4e79-86af-766e565e63a5_GNLm.jpg"
             },
             {
               "source": "thehindu",
-              "headline": "‘Enormous potential’ for India-Canada ties amidst global uncertainty: Canadian Foreign Minister",
-              "url": "https://www.thehindu.com/news/national/pm-modi-meets-canadian-minister-anita-anand-discussions/article71584510.ece",
-              "date": "2026-10-17T19:43:07.000Z",
+              "headline": "Jaishankar to meet Rubio, UAE Foreign Minister, in back-to-back separate visits in Mumbai next week",
+              "url": "https://www.thehindu.com/news/national/jaishankar-rubio-to-hold-meeting-in-mumbai-on-oct-20-mea/article71592380.ece",
+              "date": "2026-10-18T04:23:41.000Z",
               "kind": "hard",
-              "summary": "Minister Anita Anand is in India along with Minister of International Trade Maninder Sidhu for engagements with External Affairs Minister S. Jaishankar and Commerce Minister Piyush Goyal; the Canadian Minister indicated that PM Modi would visit Canada later in December",
+              "summary": "MEA dismisses criticism from Opposition over External Affairs Minister being ‘summoned’ to Mumbai, says it is normal practice to host leaders in other cities besides national capital; the announcement of the visit of UAE Foreign Minister Sheikh Abdullah was unexpected and previously unannounced",
               "summaryV": 3,
-              "image": "https://th-i.thgim.com/public/incoming/5l6glq/article71584546.ece/alternates/LANDSCAPE_1200/HUl8po4a8AAV-kE.jpg"
+              "image": "https://th-i.thgim.com/public/incoming/277m34/article71592434.ece/alternates/LANDSCAPE_1200/PTI10_14_2026_000235B.jpg"
             }
           ],
-          "thread": "tyy3z5r"
+          "thread": "td7f25t"
+        },
+        {
+          "id": "s17vvwst",
+          "headline": "Unemployment rate in country stands at 5% in September, stable compared to August: NSO",
+          "url": "https://www.thehindu.com/business/Economy/unemployment-rate-in-country-stands-at-5-in-september-stable-compared-to-august-nso/article71589002.ece",
+          "source": "thehindu",
+          "date": "2026-10-17T23:38:32.000Z",
+          "relevance": "medium",
+          "image": "https://th-i.thgim.com/public/news/national/osdi93/article71589791.ece/alternates/LANDSCAPE_1200/iStock-696741894.jpg",
+          "why": "The NSO puts September unemployment at 5%, stable on August, with rural at 4.2% and urban at 6.9%.",
+          "implications": [
+            "The Hindu reports the rural rate as broadly stable, at 4.2% against 4.1% in August.",
+            "The urban rate edged up from 6.8% to 6.9%, a marginal rise."
+          ],
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-18T04:50:29.150Z",
+            "tier": "quick",
+            "primary": "decoder",
+            "complement": null,
+            "features": [
+              "scheduled"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "A labour-market indicator; the report describes no direct mechanism for households or businesses."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Stable readings suggest no near-term change for workers."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "Single outlet, but it cites official NSO data."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Salaried workers",
+                "direction": "unclear",
+                "what": "job market conditions",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Next NSO monthly unemployment estimate, especially the urban rate",
+                "when": "",
+                "where": "National Statistical Office (MoSPI)"
+              }
+            ],
+            "frameworks": {
+              "decoder": {
+                "kind": "release",
+                "headline": {
+                  "label": "Unemployment rate",
+                  "value": 5,
+                  "unit": "%",
+                  "period": "September 2026",
+                  "previous": null,
+                  "previousLabel": "August (reported as stable)",
+                  "from": "The Hindu"
+                },
+                "comparisons": [
+                  {
+                    "label": "Rural rate, September",
+                    "value": 4.2,
+                    "unit": "%",
+                    "from": "The Hindu"
+                  },
+                  {
+                    "label": "Rural rate, August",
+                    "value": 4.1,
+                    "unit": "%",
+                    "from": "The Hindu"
+                  },
+                  {
+                    "label": "Urban rate, September",
+                    "value": 6.9,
+                    "unit": "%",
+                    "from": "The Hindu"
+                  }
+                ],
+                "drivers": [],
+                "decision": null
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "thehindu",
+              "headline": "Unemployment rate in country stands at 5% in September, stable compared to August: NSO",
+              "url": "https://www.thehindu.com/business/Economy/unemployment-rate-in-country-stands-at-5-in-september-stable-compared-to-august-nso/article71589002.ece",
+              "date": "2026-10-17T23:38:32.000Z",
+              "kind": "hard",
+              "summary": "The rural unemployment rate remains “broadly stable” at 4.2% against 4.1% in August, while urban rate marginally rises from 6.8% in August to 6.9% in this month",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/news/national/osdi93/article71589791.ece/alternates/LANDSCAPE_1200/iStock-696741894.jpg"
+            }
+          ],
+          "thread": "tl6ip4k"
+        },
+        {
+          "id": "s1d44y6d",
+          "headline": "India’s exports jump 23% in September; trade deficit narrows to $30.21 billion",
+          "url": "https://www.thehindu.com/business/Economy/indias-exports-jump-23-in-september-trade-deficit-narrows-to-3021-billion/article71588471.ece",
+          "source": "thehindu",
+          "date": "2026-10-17T20:52:18.000Z",
+          "relevance": "high",
+          "image": "https://th-i.thgim.com/public/incoming/sesi1/article71588868.ece/alternates/LANDSCAPE_1200/2025-07-11T075220Z_952810480_RC26KFABPFM0_RTRMADP_3_INDIA-PETROCHEMICALS.JPG",
+          "why": "September exports rose 23% and the trade deficit narrowed to $30.21 billion, helped by higher petroleum product export earnings amid high crude prices.",
+          "implications": [
+            "The Hindu reports that high crude prices amid the West Asia crisis improved realisations on petroleum product exports.",
+            "A narrower deficit could ease external pressures, but the report gives no further detail."
+          ],
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-18T04:50:29.150Z",
+            "tier": "quick",
+            "primary": "decoder",
+            "complement": null,
+            "features": [
+              "scheduled"
+            ],
+            "exposure": {
+              "level": "high",
+              "reason": "Petroleum products are a major export, and crude prices affect fuel."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Trade data is out; wider effects would show over coming weeks."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "Single outlet; the report names no official source."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Large exporters",
+                "direction": "up",
+                "what": "petroleum export earnings",
+                "basis": "reported"
+              },
+              {
+                "group": "Government finances",
+                "direction": "unclear",
+                "what": "external balance",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Next monthly trade data and whether crude-driven export realisations persist",
+                "when": "",
+                "where": "Ministry of Commerce and Industry"
+              }
+            ],
+            "frameworks": {
+              "decoder": {
+                "kind": "release",
+                "headline": {
+                  "label": "Merchandise exports growth",
+                  "value": 23,
+                  "unit": "%",
+                  "period": "September 2026",
+                  "previous": null,
+                  "previousLabel": "",
+                  "from": "The Hindu"
+                },
+                "comparisons": [
+                  {
+                    "label": "Trade deficit, September",
+                    "value": 30.21,
+                    "unit": "$ billion",
+                    "from": "The Hindu"
+                  }
+                ],
+                "drivers": [
+                  {
+                    "name": "High crude oil prices",
+                    "direction": "up"
+                  },
+                  {
+                    "name": "Better petroleum export realisations",
+                    "direction": "up"
+                  }
+                ],
+                "decision": null
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "thehindu",
+              "headline": "India’s exports jump 23% in September; trade deficit narrows to $30.21 billion",
+              "url": "https://www.thehindu.com/business/Economy/indias-exports-jump-23-in-september-trade-deficit-narrows-to-3021-billion/article71588471.ece",
+              "date": "2026-10-17T20:52:18.000Z",
+              "kind": "hard",
+              "summary": "High crude oil prices amid the West Asia crisis have helped India earn better realisations from petroleum product exports",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/incoming/sesi1/article71588868.ece/alternates/LANDSCAPE_1200/2025-07-11T075220Z_952810480_RC26KFABPFM0_RTRMADP_3_INDIA-PETROCHEMICALS.JPG"
+            }
+          ],
+          "thread": "t1hu7fbc"
+        },
+        {
+          "id": "sk2apyy",
+          "headline": "India-U.S. deal ‘finalised’, implementation after clarity on India’s competitive advantage, says Goyal",
+          "url": "https://www.thehindu.com/business/Economy/india-us-trade-pact-to-be-operationalised-once-india-gets-competitive-advantage-goyal/article71587473.ece",
+          "source": "thehindu",
+          "date": "2026-10-17T20:23:25.000Z",
+          "relevance": "medium",
+          "image": "https://th-i.thgim.com/public/incoming/5wiaer/article71587484.ece/alternates/LANDSCAPE_1200/PTI10_14_2026_000576B.jpg",
+          "why": "Goyal says the India-U.S. trade deal is in legal drafting, but implementation awaits clarity on India's competitive advantage, so timing and terms remain uncertain.",
+          "implications": [
+            "The Hindu reports Goyal saying the deal is in its final contours and legal drafting.",
+            "Ministers on both sides had recently signalled blocks, so finalisation could still be some time away."
+          ],
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-18T04:50:29.150Z",
+            "tier": "quick",
+            "primary": "trade_flow",
+            "complement": null,
+            "features": [
+              "trade_flow",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "One bilateral trade relationship; the reports give no goods or tariff details."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Implementation depends on legal drafting and further clarity."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "Single outlet; Goyal's account conflicts with recent ministerial signals of blocks."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Large exporters",
+                "direction": "unclear",
+                "what": "future U.S. trade terms",
+                "basis": "inferred"
+              },
+              {
+                "group": "MSME exporters",
+                "direction": "unclear",
+                "what": "future U.S. trade terms",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Completion of legal drafting and any announcement on implementation of the India-U.S. deal",
+                "when": "",
+                "where": "Ministry of Commerce and Industry"
+              }
+            ],
+            "frameworks": {
+              "trade_flow": {
+                "good": "Goods covered by the India-U.S. deal (not specified in the r",
+                "actors": [
+                  {
+                    "country": "India",
+                    "role": "exporter",
+                    "is_india": true
+                  },
+                  {
+                    "country": "United States",
+                    "role": "importer",
+                    "is_india": false
+                  }
+                ],
+                "change": {
+                  "type": "deal",
+                  "effective": ""
+                },
+                "india_position": {
+                  "role": "supplier",
+                  "note": "India is a party to the deal; the report does not give the scope or direction of trade."
+                },
+                "volumes": []
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "thehindu",
+              "headline": "India-U.S. deal ‘finalised’, implementation after clarity on India’s competitive advantage, says Goyal",
+              "url": "https://www.thehindu.com/business/Economy/india-us-trade-pact-to-be-operationalised-once-india-gets-competitive-advantage-goyal/article71587473.ece",
+              "date": "2026-10-17T20:23:25.000Z",
+              "kind": "hard",
+              "summary": "Commerce Minister Piyush Goyal said that the deal was going through its final contours and the legal drafting. His comments come soon after Ministers on both sides indicated that talks were hitting blocks and that finalisation might be some time away",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/incoming/5wiaer/article71587484.ece/alternates/LANDSCAPE_1200/PTI10_14_2026_000576B.jpg"
+            }
+          ],
+          "thread": "t1ka6u13"
+        },
+        {
+          "id": "s1smc98",
+          "headline": "FMCG earnings to stay stable in Q2, but rising input costs may squeeze margins",
+          "url": "https://www.thehindu.com/business/Industry/fmcg-earnings-to-stay-stable-in-q2-but-rising-input-costs-may-squeeze-margins/article71587299.ece",
+          "source": "thehindu",
+          "date": "2026-10-17T20:20:07.000Z",
+          "relevance": "medium",
+          "image": "https://th-i.thgim.com/public/incoming/gesqlw/article71587619.ece/alternates/LANDSCAPE_1200/2026-07-22T014725Z_1491927235_RC2BMLASSN0N_RTRMADP_3_INDIA-FMCG-RESULTS-PREVIEW.JPG",
+          "why": "FMCG earnings are expected to hold steady in Q2, but persistent commodity inflation could squeeze margins and affect packaged goods prices.",
+          "implications": [
+            "Companies must balance pricing, volumes and margins as input costs stay high.",
+            "Pricing choices could eventually show up in what shoppers pay for packaged goods."
+          ],
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-18T04:50:29.150Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "medium",
+              "reason": "Affects one industry, FMCG, through input costs and pricing."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Report refers to margin pressure over the coming quarters."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "Single outlet, no official source named in the report."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Food shoppers",
+                "direction": "unclear",
+                "what": "packaged goods prices",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "FMCG Q2 earnings releases and commentary on margins and pricing",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Commodity inflation persists",
+                    "detail": "Input costs for FMCG companies remain elevated.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Margins may be squeezed",
+                    "detail": "Rising input costs could pressure margins despite stable Q2 earnings.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Prices or volumes may shift",
+                    "detail": "Firms could raise prices or see weaker volumes.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "Commodity costs ease or firms absorb them without price or volume changes."
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "thehindu",
+              "headline": "FMCG earnings to stay stable in Q2, but rising input costs may squeeze margins",
+              "url": "https://www.thehindu.com/business/Industry/fmcg-earnings-to-stay-stable-in-q2-but-rising-input-costs-may-squeeze-margins/article71587299.ece",
+              "date": "2026-10-17T20:20:07.000Z",
+              "kind": "hard",
+              "summary": "With commodity inflation persisting, the balance between pricing, volumes and margins will remain critical to FMCG earnings in the coming quarters.",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/incoming/gesqlw/article71587619.ece/alternates/LANDSCAPE_1200/2026-07-22T014725Z_1491927235_RC2BMLASSN0N_RTRMADP_3_INDIA-FMCG-RESULTS-PREVIEW.JPG"
+            }
+          ],
+          "thread": "td3lwbt"
+        },
+        {
+          "id": "scuz38p",
+          "headline": "Net direct tax collection grows 13% to ₹13.38 lakh crore till October 14",
+          "url": "https://www.thehindu.com/business/Economy/net-direct-tax-collection-grows-13-to-1338-lakh-crore-till-october-14/article71587570.ece",
+          "source": "thehindu",
+          "date": "2026-10-17T20:09:48.000Z",
+          "relevance": "medium",
+          "image": "https://th-i.thgim.com/public/business/pj8hjv/article29225159.ece/alternates/LANDSCAPE_1200/Direct-tax",
+          "why": "Net direct tax collection rose 13.21% to ₹13.38 lakh crore by October 14, a sign of government revenue strength.",
+          "implications": [
+            "Corporate tax growth was strong, which supports central government receipts.",
+            "Higher STT refunds were also cited as a factor in the net figure."
+          ],
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-18T04:50:29.149Z",
+            "tier": "quick",
+            "primary": "decoder",
+            "complement": null,
+            "features": [
+              "scheduled"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "Tax receipts bear on government finances, with no direct household-essential link."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Revenue trends shape fiscal position over the coming year."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "Single outlet, no official source named in the report."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Government finances",
+                "direction": "up",
+                "what": "direct tax receipts",
+                "basis": "reported"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Next update on net direct tax collection",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "frameworks": {
+              "decoder": {
+                "kind": "release",
+                "headline": {
+                  "label": "Net direct tax collection",
+                  "value": 13.38,
+                  "unit": "₹ lakh crore",
+                  "period": "April to October 14",
+                  "previous": null,
+                  "previousLabel": "Year-ago period",
+                  "from": "The Hindu"
+                },
+                "comparisons": [
+                  {
+                    "label": "Growth over year-ago period",
+                    "value": 13.21,
+                    "unit": "%",
+                    "from": "The Hindu"
+                  }
+                ],
+                "drivers": [
+                  {
+                    "name": "Strong corporate tax growth",
+                    "direction": "up"
+                  },
+                  {
+                    "name": "Higher STT refunds",
+                    "direction": "up"
+                  }
+                ],
+                "decision": null
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "thehindu",
+              "headline": "Net direct tax collection grows 13% to ₹13.38 lakh crore till October 14",
+              "url": "https://www.thehindu.com/business/Economy/net-direct-tax-collection-grows-13-to-1338-lakh-crore-till-october-14/article71587570.ece",
+              "date": "2026-10-17T20:09:48.000Z",
+              "kind": "hard",
+              "summary": "Direct tax collection up 13.21% to ₹13.38 lakh crore till Oct 14, driven by strong corporate tax growth and higher STT refunds",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/business/pj8hjv/article29225159.ece/alternates/LANDSCAPE_1200/Direct-tax"
+            }
+          ],
+          "thread": "t126658i"
         },
         {
           "id": "sazm37b",
@@ -4508,6 +5118,16 @@
               "summary": "With the sale, the government’s stake in the bank will fall to 15% and Life Insurance Corporation’s (LIC) stake will come down to 19%",
               "summaryV": 3,
               "image": "https://th-i.thgim.com/public/incoming/vxm66b/article71583494.ece/alternates/LANDSCAPE_1200/BIZ-IDBI-BANK-SGO3GJ2Q2S.3.jpg.jpg"
+            },
+            {
+              "source": "thehindu",
+              "headline": "What are the details of the government’s sale of IDBI | Explained",
+              "url": "https://www.thehindu.com/business/Industry/what-are-the-details-of-the-governments-sale-of-idbi-explained/article71586803.ece",
+              "date": "2026-10-17T20:01:50.000Z",
+              "kind": "feature",
+              "summary": "According to sources in the Ministry of Finance, the strategic restructuring does not change anything for the regulation of IDBI Bank or its customer-facing duties. IDBI will continue to provide government financial inclusion, social security and pension schemes",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/incoming/gx8cd7/article71586830.ece/alternates/LANDSCAPE_1200/2026-10-15T051452Z_973697633_RC20H0AEICDL_RTRMADP_3_IDBI-BANK-STOCKS.JPG"
             }
           ],
           "thread": "tv0js9w",
@@ -4516,6 +5136,235 @@
             "at": "2026-10-17T23:15:45.793Z",
             "series": []
           }
+        },
+        {
+          "id": "s1cffmdu",
+          "headline": "Food and fuel push wholesale inflation to series-high of 11.4% in September 2026",
+          "url": "https://www.thehindu.com/business/Economy/september-wpi-inflation-rises-to-1139-as-food-fuel-and-manufactured-goods-prices-increase/article71582698.ece",
+          "source": "thehindu",
+          "date": "2026-10-17T18:23:01.000Z",
+          "relevance": "medium",
+          "image": "https://th-i.thgim.com/public/incoming/f6hf2m/article71582725.ece/alternates/LANDSCAPE_1200/iStock-2278633399.jpg",
+          "why": "Wholesale inflation at a series-high 11.4% driven by food and fuel could feed into retail prices of household essentials.",
+          "implications": [
+            "The Hindu reports that food and fuel pushed September 2026 wholesale inflation to 11.4%, the highest in the new WPI series.",
+            "Higher wholesale food and fuel costs may gradually reach retail prices, though the report does not say how quickly.",
+            "On the old series, September is the highest since August 2022, which indicates how unusual the reading is."
+          ],
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-17T20:48:18.296Z",
+            "tier": "quick",
+            "primary": "decoder",
+            "complement": null,
+            "features": [
+              "scheduled",
+              "price_move"
+            ],
+            "exposure": {
+              "level": "high",
+              "reason": "Food and fuel are household essentials and are the stated drivers of the increase."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Wholesale price changes may reach retail prices over several weeks (inferred)."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "Single outlet reporting an official WPI release; no official quoted."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Food shoppers",
+                "direction": "up",
+                "what": "food prices",
+                "basis": "inferred"
+              },
+              {
+                "group": "Fuel & LPG users",
+                "direction": "up",
+                "what": "fuel prices",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Next monthly WPI release, to see whether food and fuel pressure persists",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "frameworks": {
+              "decoder": {
+                "kind": "release",
+                "headline": {
+                  "label": "WPI inflation",
+                  "value": 11.4,
+                  "unit": "%",
+                  "period": "September 2026",
+                  "previous": null,
+                  "previousLabel": "Previous reading not given in ",
+                  "from": "The Hindu"
+                },
+                "comparisons": [],
+                "drivers": [
+                  {
+                    "name": "Food prices",
+                    "direction": "up"
+                  },
+                  {
+                    "name": "Fuel prices",
+                    "direction": "up"
+                  }
+                ],
+                "decision": null
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "thehindu",
+              "headline": "Food and fuel push wholesale inflation to series-high of 11.4% in September 2026",
+              "url": "https://www.thehindu.com/business/Economy/september-wpi-inflation-rises-to-1139-as-food-fuel-and-manufactured-goods-prices-increase/article71582698.ece",
+              "date": "2026-10-17T18:23:01.000Z",
+              "kind": "hard",
+              "summary": "This is the highest inflation as per the new series of the WPI, which has data since April 2024. According to the old series, September’s inflation is the highest since August 2022",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/incoming/f6hf2m/article71582725.ece/alternates/LANDSCAPE_1200/iStock-2278633399.jpg"
+            },
+            {
+              "source": "thehindu",
+              "headline": "Rupee rises 31 paise to 94.86 against U.S. dollar in early trade",
+              "url": "https://www.thehindu.com/business/markets/rupee-rises-31-paise-to-9486-against-us-dollar-in-early-trade/article71586838.ece",
+              "date": "2026-10-17T19:53:16.000Z",
+              "kind": "hard",
+              "summary": "Meanwhile, India's WPI inflation accelerated to 11.39% from 9.92%, with food inflation reaching 8.66%. Combined with CPI inflation of 5.54%, dual inflation pressure makes it very difficult for the RBI to turn dovish",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/incoming/29i8fx/article71586866.ece/alternates/LANDSCAPE_1200/2026-10-12T032331Z_845910808_RC2UCLAVY32E_RTRMADP_3_INDIA-RUPEE-CORPORATE-CURBS.JPG"
+            }
+          ],
+          "thread": "twx930a"
+        },
+        {
+          "id": "s1ma7hce",
+          "headline": "India-Canada trade deal: What New Delhi wants, what Ottawa is seeking as CEPA talks gather pace",
+          "url": "https://www.livemint.com/news/india/indiacanada-trade-deal-what-new-delhi-wants-what-ottawa-is-seeking-as-cepa-talks-gather-pace-11792160298058.html",
+          "source": "mint",
+          "date": "2026-10-16T14:35:02.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2026/10/16/1600x900/logo/india_canada_trade_1792161150439_x2Bm_1792161156711_hj3v_bbd4d6d3-dae8-4d61-952d-ee06f4343941_t8PI.jpg",
+          "why": "India and Canada aim to conclude a trade deal (CEPA) by end-2026, which could reshape market access for Indian exporters and importers.",
+          "implications": [
+            "Formal CEPA negotiations began after Canadian PM Mark Carney's visit to India in February-March 2026.",
+            "Canada's Foreign Minister Anita Anand and Trade Minister Maninder Sidhu met Jaishankar and Goyal in India.",
+            "Anand indicated PM Modi would visit Canada later in December, a possible milestone for the talks."
+          ],
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-17T20:50:31.233Z",
+            "tier": "standard",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "One bilateral trade relationship; effects depend on deal terms not yet reported."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Talks are targeted to conclude by end of 2026."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "Two outlets; on-record Canadian minister; deal terms not disclosed."
+            },
+            "outlets": 2,
+            "affected": [
+              {
+                "group": "MSME exporters",
+                "direction": "unclear",
+                "what": "market access to Canada",
+                "basis": "inferred"
+              },
+              {
+                "group": "Large exporters",
+                "direction": "unclear",
+                "what": "market access to Canada",
+                "basis": "inferred"
+              },
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "tariffs on Canadian goods",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "PM Modi's visit to Canada",
+                "when": "December",
+                "where": "Ministry of External Affairs"
+              },
+              {
+                "what": "Conclusion of India-Canada CEPA negotiations",
+                "when": "end of 2026",
+                "where": "Ministry of Commerce and Industry"
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Formal CEPA talks launched",
+                    "detail": "Began after Carney's February-March 2026 visit to India.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Ministerial engagements in India",
+                    "detail": "Anand and Sidhu met Jaishankar and Goyal.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "End-2026 conclusion target",
+                    "detail": "Both sides committed to concluding talks by end of 2026.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Trade terms could change",
+                    "detail": "A signed deal may alter tariffs and access for Indian businesses.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "Negotiations stall or miss the end-2026 target."
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "India-Canada trade deal: What New Delhi wants, what Ottawa is seeking as CEPA talks gather pace",
+              "url": "https://www.livemint.com/news/india/indiacanada-trade-deal-what-new-delhi-wants-what-ottawa-is-seeking-as-cepa-talks-gather-pace-11792160298058.html",
+              "date": "2026-10-16T14:35:02.000Z",
+              "kind": "hard",
+              "summary": "The two countries launched formal negotiations after Canadian Prime Minister Mark Carney’s visit to India in February-March 2026. Both sides have committed to concluding the talks by the end of 2026.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/10/16/1600x900/logo/india_canada_trade_1792161150439_x2Bm_1792161156711_hj3v_bbd4d6d3-dae8-4d61-952d-ee06f4343941_t8PI.jpg"
+            },
+            {
+              "source": "thehindu",
+              "headline": "‘Enormous potential’ for India-Canada ties amidst global uncertainty: Canadian Foreign Minister",
+              "url": "https://www.thehindu.com/news/national/pm-modi-meets-canadian-minister-anita-anand-discussions/article71584510.ece",
+              "date": "2026-10-17T19:43:07.000Z",
+              "kind": "hard",
+              "summary": "Minister Anita Anand is in India along with Minister of International Trade Maninder Sidhu for engagements with External Affairs Minister S. Jaishankar and Commerce Minister Piyush Goyal; the Canadian Minister indicated that PM Modi would visit Canada later in December",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/incoming/5l6glq/article71584546.ece/alternates/LANDSCAPE_1200/HUl8po4a8AAV-kE.jpg"
+            }
+          ],
+          "thread": "tyy3z5r"
         },
         {
           "id": "sp0b60k",
@@ -4621,209 +5470,6 @@
             }
           ],
           "thread": "t5sqh80"
-        },
-        {
-          "id": "s1mnspo3",
-          "headline": "Jaishankar ‘summoned’ by Marco Rubio? MEA clarifies Mumbai meet amid Congress criticism; says energy, trade on agenda",
-          "url": "https://www.livemint.com/news/india/jaishankar-summoned-by-marco-rubio-mea-clarifies-mumbai-meet-amid-congress-criticism-says-energy-trade-on-agenda-11792205501440.html",
-          "source": "mint",
-          "date": "2026-10-17T03:11:00.000Z",
-          "relevance": "medium",
-          "image": "https://www.livemint.com/lm-img/img/2026/10/17/1600x900/logo/MEA_1792205664297_Rp3I_1792205668466_SEoq_cfd11351-2c73-46d2-ab44-86e09599bb94_pnp8.jpg",
-          "why": "A Mumbai meeting with the UAE foreign minister, with energy and trade on the agenda, could shape India's ties with a key Gulf partner.",
-          "implications": [
-            "Mint reports that the MEA says energy and trade are on the agenda for the October 19–20 talks.",
-            "Any outcomes could touch energy supply or trade terms with the UAE, but the reports give no details.",
-            "Political criticism from Congress surrounds the meeting, though the reports do not say it affects the agenda."
-          ],
-          "analysis": {
-            "v": 2,
-            "at": "2026-10-17T04:43:59.329Z",
-            "tier": "quick",
-            "primary": "impact_chain",
-            "complement": null,
-            "features": [
-              "pending_outcome"
-            ],
-            "exposure": {
-              "level": "medium",
-              "reason": "One bilateral relationship; energy and trade are on the agenda, but no outcomes are reported."
-            },
-            "horizon": {
-              "value": "months",
-              "reason": "Talks occur within days; any practical effects would likely follow later."
-            },
-            "confidence": {
-              "level": "medium",
-              "reason": "Single outlet, but it cites an MEA spokesperson on the record."
-            },
-            "outlets": 1,
-            "affected": [
-              {
-                "group": "Importers & traders",
-                "direction": "unclear",
-                "what": "UAE trade terms",
-                "basis": "inferred"
-              },
-              {
-                "group": "Fuel & LPG users",
-                "direction": "unclear",
-                "what": "energy supply arrangements",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "Outcomes of Jaishankar's talks with UAE Deputy PM Sheikh Abdullah bin Zayed in Mumbai",
-                "when": "2026-10-19 to 2026-10-20",
-                "where": "MEA (Ministry of External Affairs)"
-              }
-            ],
-            "frameworks": {
-              "impact_chain": {
-                "chain": [
-                  {
-                    "step": "MEA confirms UAE minister's visit",
-                    "detail": "Jaishankar will host the UAE Deputy PM and Foreign Minister in Mumbai on October 19–20.",
-                    "basis": "reported"
-                  },
-                  {
-                    "step": "Energy and trade on agenda",
-                    "detail": "Mint's headline says energy and trade are on the agenda for the talks.",
-                    "basis": "reported"
-                  },
-                  {
-                    "step": "Talks may shape UAE energy-trade ties",
-                    "detail": "Agreements could affect energy and trade arrangements with the UAE.",
-                    "basis": "inferred"
-                  }
-                ],
-                "breaks_if": "The meeting is postponed or produces no energy or trade outcomes."
-              }
-            }
-          },
-          "reports": [
-            {
-              "source": "mint",
-              "headline": "Jaishankar ‘summoned’ by Marco Rubio? MEA clarifies Mumbai meet amid Congress criticism; says energy, trade on agenda",
-              "url": "https://www.livemint.com/news/india/jaishankar-summoned-by-marco-rubio-mea-clarifies-mumbai-meet-amid-congress-criticism-says-energy-trade-on-agenda-11792205501440.html",
-              "date": "2026-10-17T03:11:00.000Z",
-              "kind": "hard",
-              "summary": "MEA spokesperson Randhir Jaiswal said that External Affairs Minister Jaishankar will host the Deputy Prime Minister and Foreign Minister of the UAE Sheikh Abdullah bin Zayed Al Nahyan, in Mumbai on October 19 and 20, 2026.",
-              "summaryV": 3,
-              "image": "https://www.livemint.com/lm-img/img/2026/10/17/1600x900/logo/MEA_1792205664297_Rp3I_1792205668466_SEoq_cfd11351-2c73-46d2-ab44-86e09599bb94_pnp8.jpg"
-            },
-            {
-              "source": "mint",
-              "headline": "Why is Marco Rubio skipping Delhi for Mumbai and Reliance hub Jamnagar? What it signals about India-US ties under Trump",
-              "url": "https://www.livemint.com/news/india/why-is-marco-rubio-skipping-delhi-for-mumbai-and-reliance-hub-jamnagar-what-it-signals-about-india-us-ties-under-trump-11792256624695.html",
-              "date": "2026-10-17T18:25:00.000Z",
-              "kind": "feature",
-              "summary": "US Secretary of State Marco Rubio’s decision to hold talks in Mumbai and visit Reliance Industries’ Jamnagar refinery highlights the business, energy and trade focus of his India trip. The itinerary has sparked a diplomatic debate amid strained India-US ties under President Donald Trump.",
-              "summaryV": 3,
-              "image": "https://www.livemint.com/lm-img/img/2026/10/17/1600x900/logo/MEA_1792205664297_1792260123983_ZSXO_1792260124197_82s9_29c275f5-a295-4e79-86af-766e565e63a5_GNLm.jpg"
-            }
-          ],
-          "thread": "td7f25t"
-        },
-        {
-          "id": "s1cffmdu",
-          "headline": "Food and fuel push wholesale inflation to series-high of 11.4% in September 2026",
-          "url": "https://www.thehindu.com/business/Economy/september-wpi-inflation-rises-to-1139-as-food-fuel-and-manufactured-goods-prices-increase/article71582698.ece",
-          "source": "thehindu",
-          "date": "2026-10-17T18:23:01.000Z",
-          "relevance": "medium",
-          "image": "https://th-i.thgim.com/public/incoming/f6hf2m/article71582725.ece/alternates/LANDSCAPE_1200/iStock-2278633399.jpg",
-          "why": "Wholesale inflation at a series-high 11.4% driven by food and fuel could feed into retail prices of household essentials.",
-          "implications": [
-            "The Hindu reports that food and fuel pushed September 2026 wholesale inflation to 11.4%, the highest in the new WPI series.",
-            "Higher wholesale food and fuel costs may gradually reach retail prices, though the report does not say how quickly.",
-            "On the old series, September is the highest since August 2022, which indicates how unusual the reading is."
-          ],
-          "analysis": {
-            "v": 2,
-            "at": "2026-10-17T20:48:18.296Z",
-            "tier": "quick",
-            "primary": "decoder",
-            "complement": null,
-            "features": [
-              "scheduled",
-              "price_move"
-            ],
-            "exposure": {
-              "level": "high",
-              "reason": "Food and fuel are household essentials and are the stated drivers of the increase."
-            },
-            "horizon": {
-              "value": "weeks",
-              "reason": "Wholesale price changes may reach retail prices over several weeks (inferred)."
-            },
-            "confidence": {
-              "level": "medium",
-              "reason": "Single outlet reporting an official WPI release; no official quoted."
-            },
-            "outlets": 1,
-            "affected": [
-              {
-                "group": "Food shoppers",
-                "direction": "up",
-                "what": "food prices",
-                "basis": "inferred"
-              },
-              {
-                "group": "Fuel & LPG users",
-                "direction": "up",
-                "what": "fuel prices",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "Next monthly WPI release, to see whether food and fuel pressure persists",
-                "when": "",
-                "where": ""
-              }
-            ],
-            "frameworks": {
-              "decoder": {
-                "kind": "release",
-                "headline": {
-                  "label": "WPI inflation",
-                  "value": 11.4,
-                  "unit": "%",
-                  "period": "September 2026",
-                  "previous": null,
-                  "previousLabel": "Previous reading not given in ",
-                  "from": "The Hindu"
-                },
-                "comparisons": [],
-                "drivers": [
-                  {
-                    "name": "Food prices",
-                    "direction": "up"
-                  },
-                  {
-                    "name": "Fuel prices",
-                    "direction": "up"
-                  }
-                ],
-                "decision": null
-              }
-            }
-          },
-          "reports": [
-            {
-              "source": "thehindu",
-              "headline": "Food and fuel push wholesale inflation to series-high of 11.4% in September 2026",
-              "url": "https://www.thehindu.com/business/Economy/september-wpi-inflation-rises-to-1139-as-food-fuel-and-manufactured-goods-prices-increase/article71582698.ece",
-              "date": "2026-10-17T18:23:01.000Z",
-              "kind": "hard",
-              "summary": "This is the highest inflation as per the new series of the WPI, which has data since April 2024. According to the old series, September’s inflation is the highest since August 2022",
-              "summaryV": 3,
-              "image": "https://th-i.thgim.com/public/incoming/f6hf2m/article71582725.ece/alternates/LANDSCAPE_1200/iStock-2278633399.jpg"
-            }
-          ],
-          "thread": "twx930a"
         },
         {
           "id": "sdfdpb3",
@@ -9761,6 +10407,89 @@
       "name": "Technology",
       "items": [
         {
+          "id": "s1sbxcnd",
+          "headline": "Gaganyaan: ISRO completes key test ahead of first uncrewed mission",
+          "url": "https://www.thehindu.com/sci-tech/science/gaganyaan-isro-completes-key-test-ahead-of-first-uncrewed-mission/article71592436.ece",
+          "source": "thehindu",
+          "date": "2026-10-18T03:41:37.000Z",
+          "relevance": "medium",
+          "image": "https://th-i.thgim.com/public/incoming/avg627/article71593144.ece/alternates/LANDSCAPE_1200/IMG_Edit_second-lea_G1JG_2_1_RTGGVV4M.jpg",
+          "why": "ISRO has completed a key test before Gaganyaan's first uncrewed mission, a step in India's human spaceflight programme. The report gives no direct effect on households or businesses.",
+          "implications": [
+            "The headline says the test comes before the first uncrewed mission, so the programme appears to be moving toward flight.",
+            "Test details, results and the mission date are not in the report, so effects on industry or jobs cannot be judged.",
+            "Any wider effect on the space supply chain or on public spending could be indirect and may take time."
+          ],
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-18T04:51:17.411Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "No mechanism reaches households, trade or travel in the report; it is a programme milestone."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Mission date not reported; any effects on people are indirect."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "Single outlet, headline only, with no official source or test details."
+            },
+            "outlets": 1,
+            "affected": [],
+            "watch": [
+              {
+                "what": "Announcement of the date for Gaganyaan's first uncrewed mission",
+                "when": "",
+                "where": "ISRO"
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "ISRO completes key test",
+                    "detail": "The Hindu reports the test was completed ahead of the first uncrewed mission.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Uncrewed mission comes next",
+                    "detail": "The test is described as preceding Gaganyaan's first uncrewed flight.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Programme readiness may improve",
+                    "detail": "A completed test could support progress toward later crewed flight, though results are not reported.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "Later tests or reviews find problems that delay the uncrewed mission."
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "thehindu",
+              "headline": "Gaganyaan: ISRO completes key test ahead of first uncrewed mission",
+              "url": "https://www.thehindu.com/sci-tech/science/gaganyaan-isro-completes-key-test-ahead-of-first-uncrewed-mission/article71592436.ece",
+              "date": "2026-10-18T03:41:37.000Z",
+              "kind": "hard",
+              "image": "https://th-i.thgim.com/public/incoming/avg627/article71593144.ece/alternates/LANDSCAPE_1200/IMG_Edit_second-lea_G1JG_2_1_RTGGVV4M.jpg",
+              "ogTried": true,
+              "descTried": true,
+              "summary": "ISRO completes key CM-SM separation tests for Gaganyaan’s first uncrewed mission, validating system robustness and mission readiness.",
+              "summaryV": 3
+            }
+          ],
+          "thread": "t1aqrlp"
+        },
+        {
           "id": "sfo9xf9",
           "headline": "India’s IT exports: Deliver the code, chase the cash",
           "url": "https://www.thehindu.com/business/Industry/indias-it-exports-deliver-the-code-chase-the-cash/article71523892.ece",
@@ -12079,6 +12808,91 @@
             }
           ],
           "thread": "toy5iit"
+        },
+        {
+          "id": "s1i9rll1",
+          "headline": "Auto wholesales: Passenger Vehicle segment clocks 30% growth in Q2",
+          "url": "https://www.thehindu.com/business/Industry/auto-wholesales-pv-segment-clocks-30-growth-in-q2/article71586920.ece",
+          "source": "thehindu",
+          "date": "2026-10-17T20:02:01.000Z",
+          "relevance": "medium",
+          "image": "https://th-i.thgim.com/public/news/national/ix1jyc/article71587205.ece/alternates/LANDSCAPE_1200/iStock-1330341767.jpg",
+          "why": "Passenger vehicle wholesales rose 30.7% in Q2 2026-27, pointing to stronger factory dispatches that could support auto manufacturing activity.",
+          "implications": [
+            "Manufacturers dispatched 1.36 million passenger vehicles to dealers in the quarter, well above the same quarter last year.",
+            "Strong dispatches could support production and employment across the auto sector."
+          ],
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-18T04:50:29.149Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "medium",
+              "reason": "Affects one industry, automobiles, with no household-essential mechanism in the report."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Wholesale data is historical; production effects build over coming quarters."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "Single outlet, no official source named in the report."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Manufacturing workers",
+                "direction": "up",
+                "what": "auto production demand",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Next monthly and quarterly auto wholesale figures",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Wholesales reach 1.36 million units",
+                    "detail": "Passenger vehicle sales in Q2 of 2026-27.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Growth of 30.7% year on year",
+                    "detail": "Compared with Q2 of 2025-26.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Auto factory activity may rise",
+                    "detail": "Higher dispatches could support output and jobs in manufacturing.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "Dealer stock does not convert into retail sales and dispatches slow."
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "thehindu",
+              "headline": "Auto wholesales: Passenger Vehicle segment clocks 30% growth in Q2",
+              "url": "https://www.thehindu.com/business/Industry/auto-wholesales-pv-segment-clocks-30-growth-in-q2/article71586920.ece",
+              "date": "2026-10-17T20:02:01.000Z",
+              "kind": "hard",
+              "summary": "Passenger Vehicle sales stood at 1.36 million units in Q2 of 2026-27, registering a growth of 30.7% compared to Q2 of 2025-26",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/news/national/ix1jyc/article71587205.ece/alternates/LANDSCAPE_1200/iStock-1330341767.jpg"
+            }
+          ],
+          "thread": "t6s9g63"
         },
         {
           "id": "sp70qd7",
@@ -14722,6 +15536,105 @@
       "name": "Policy & Governance",
       "items": [
         {
+          "id": "smxsb0x",
+          "headline": "Ministry of Home Affairs directs States to prevent CJP supporters from mobilising towards Delhi",
+          "url": "https://www.thehindu.com/news/national/ministry-of-home-affairs-directs-states-to-prevent-cjp-supporters-from-mobilising-towards-delhi/article71564987.ece",
+          "source": "thehindu",
+          "date": "2026-10-17T04:31:02.000Z",
+          "relevance": "medium",
+          "image": "https://th-i.thgim.com/public/incoming/4yl2ws/article71564997.ece/alternates/LANDSCAPE_1200/20260922113L.jpg",
+          "why": "The Union Home Ministry has told all States to stop CJP supporters from moving towards Delhi, citing law and order concerns, which could affect Delhi-bound movement.",
+          "implications": [
+            "The Home Secretary has flagged grave law and order and public order implications of the proposed protest, according to The Hindu.",
+            "States may have to act on the directive, which could mean added policing or restrictions on movement toward Delhi.",
+            "The report gives no protest date or details of measures, so any effect on daily life remains uncertain."
+          ],
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-17T04:44:50.174Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "The report describes no mechanism reaching household essentials, trade or travel; effects are conditional."
+            },
+            "horizon": null,
+            "confidence": {
+              "level": "medium",
+              "reason": "Single outlet, but it cites an official communication from the Union Home Secretary."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "A named state or region",
+                "direction": "unclear",
+                "what": "Delhi-bound movement and security posture",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Further Home Ministry or State government orders on the proposed protest",
+                "when": "",
+                "where": "Ministry of Home Affairs"
+              },
+              {
+                "what": "Any announced date or details of the CJP protest towards Delhi",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "MHA issues directive",
+                    "detail": "Home Secretary Govind Mohan wrote to Chief Secretaries and DGPs about the proposed protest.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Law and order concerns flagged",
+                    "detail": "The communication cites grave law and order and public order implications.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "States may restrict mobilisation",
+                    "detail": "States could use policing measures to stop supporters heading to Delhi.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The protest is called off or States find no mobilisation toward Delhi."
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "thehindu",
+              "headline": "Ministry of Home Affairs directs States to prevent CJP supporters from mobilising towards Delhi",
+              "url": "https://www.thehindu.com/news/national/ministry-of-home-affairs-directs-states-to-prevent-cjp-supporters-from-mobilising-towards-delhi/article71564987.ece",
+              "date": "2026-10-17T04:31:02.000Z",
+              "kind": "hard",
+              "summary": "In a communication to Chief Secretaries and Directors General of Police (DGPs), Union Home Secretary Govind Mohan flagged the grave law and order and public order implications of the proposed protest",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/incoming/4yl2ws/article71564997.ece/alternates/LANDSCAPE_1200/20260922113L.jpg"
+            },
+            {
+              "source": "thehindu",
+              "headline": "Anti-CEC protest LIVE | CJP leader Abhijeet Dipke released by Delhi court after signing peace bond",
+              "url": "https://www.thehindu.com/news/national/cec-gyanesh-kumar-protests-oct-18-live-updates-cjp/article71598964.ece",
+              "date": "2026-10-18T04:10:14.000Z",
+              "kind": "breaking",
+              "summary": "The Delhi Police has granted permission to the Congress to hold a rally at Ramlila Maidan on November 1 and issued a no-objection certificate (NOC) for the event, a senior police officer said on October 17, 2026.",
+              "summaryV": 3
+            }
+          ],
+          "thread": "t17g74t4"
+        },
+        {
           "id": "s165o8a4",
           "headline": "Fresh talks between MHA, Ladakh groups remain ‘inconclusive’; next round in Delhi on October 22",
           "url": "https://www.thehindu.com/news/national/ladakh/fresh-talks-between-mha-ladakh-groups-remain-inconclusive-next-round-in-delhi-on-october-22/article71589227.ece",
@@ -15067,96 +15980,6 @@
             }
           ],
           "thread": "th5yp8v"
-        },
-        {
-          "id": "smxsb0x",
-          "headline": "Ministry of Home Affairs directs States to prevent CJP supporters from mobilising towards Delhi",
-          "url": "https://www.thehindu.com/news/national/ministry-of-home-affairs-directs-states-to-prevent-cjp-supporters-from-mobilising-towards-delhi/article71564987.ece",
-          "source": "thehindu",
-          "date": "2026-10-17T04:31:02.000Z",
-          "relevance": "medium",
-          "image": "https://th-i.thgim.com/public/incoming/4yl2ws/article71564997.ece/alternates/LANDSCAPE_1200/20260922113L.jpg",
-          "why": "The Union Home Ministry has told all States to stop CJP supporters from moving towards Delhi, citing law and order concerns, which could affect Delhi-bound movement.",
-          "implications": [
-            "The Home Secretary has flagged grave law and order and public order implications of the proposed protest, according to The Hindu.",
-            "States may have to act on the directive, which could mean added policing or restrictions on movement toward Delhi.",
-            "The report gives no protest date or details of measures, so any effect on daily life remains uncertain."
-          ],
-          "analysis": {
-            "v": 2,
-            "at": "2026-10-17T04:44:50.174Z",
-            "tier": "quick",
-            "primary": "impact_chain",
-            "complement": null,
-            "features": [
-              "pending_outcome"
-            ],
-            "exposure": {
-              "level": "low",
-              "reason": "The report describes no mechanism reaching household essentials, trade or travel; effects are conditional."
-            },
-            "horizon": null,
-            "confidence": {
-              "level": "medium",
-              "reason": "Single outlet, but it cites an official communication from the Union Home Secretary."
-            },
-            "outlets": 1,
-            "affected": [
-              {
-                "group": "A named state or region",
-                "direction": "unclear",
-                "what": "Delhi-bound movement and security posture",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "Further Home Ministry or State government orders on the proposed protest",
-                "when": "",
-                "where": "Ministry of Home Affairs"
-              },
-              {
-                "what": "Any announced date or details of the CJP protest towards Delhi",
-                "when": "",
-                "where": ""
-              }
-            ],
-            "frameworks": {
-              "impact_chain": {
-                "chain": [
-                  {
-                    "step": "MHA issues directive",
-                    "detail": "Home Secretary Govind Mohan wrote to Chief Secretaries and DGPs about the proposed protest.",
-                    "basis": "reported"
-                  },
-                  {
-                    "step": "Law and order concerns flagged",
-                    "detail": "The communication cites grave law and order and public order implications.",
-                    "basis": "reported"
-                  },
-                  {
-                    "step": "States may restrict mobilisation",
-                    "detail": "States could use policing measures to stop supporters heading to Delhi.",
-                    "basis": "inferred"
-                  }
-                ],
-                "breaks_if": "The protest is called off or States find no mobilisation toward Delhi."
-              }
-            }
-          },
-          "reports": [
-            {
-              "source": "thehindu",
-              "headline": "Ministry of Home Affairs directs States to prevent CJP supporters from mobilising towards Delhi",
-              "url": "https://www.thehindu.com/news/national/ministry-of-home-affairs-directs-states-to-prevent-cjp-supporters-from-mobilising-towards-delhi/article71564987.ece",
-              "date": "2026-10-17T04:31:02.000Z",
-              "kind": "hard",
-              "summary": "In a communication to Chief Secretaries and Directors General of Police (DGPs), Union Home Secretary Govind Mohan flagged the grave law and order and public order implications of the proposed protest",
-              "summaryV": 3,
-              "image": "https://th-i.thgim.com/public/incoming/4yl2ws/article71564997.ece/alternates/LANDSCAPE_1200/20260922113L.jpg"
-            }
-          ],
-          "thread": "t17g74t4"
         },
         {
           "id": "sm4gk9s",
@@ -19509,16 +20332,16 @@
   ],
   "source": "BBC News & The Guardian & NPR & Al Jazeera & MercoPress & ABC News & The New York Times & CNBC & CBS News & DW & France 24 & Africanews & South China Morning Post & The Hindu & Mint",
   "lastRun": {
-    "analysed": 62,
-    "added": 3,
-    "merged": 2,
-    "rejected": 57,
+    "analysed": 93,
+    "added": 8,
+    "merged": 5,
+    "rejected": 80,
     "failedBatches": 0,
     "feeds": {
       "thehindu": {
         "feedsOk": 6,
         "feedsFailed": 0,
-        "items": 344
+        "items": 346
       },
       "mint": {
         "feedsOk": 6,
@@ -19527,18 +20350,18 @@
       }
     },
     "shareImages": {
-      "tried": 0,
+      "tried": 1,
       "found": 0,
-      "summaries": 0
+      "summaries": 1
     },
     "threads": {
-      "assigned": 3,
-      "created": 3,
+      "assigned": 8,
+      "created": 7,
       "failedBatches": 0
     },
     "summaries": {
-      "written": 0,
-      "due": 0
+      "written": 1,
+      "due": 1
     },
     "kinds": {
       "labelled": 0,
@@ -19551,73 +20374,49 @@
       "failedBatches": 0
     },
     "stats": {
-      "searched": 3,
+      "searched": 0,
       "found": 0,
       "reused": 0,
-      "none": 3,
+      "none": 0,
       "failed": 0,
-      "proposed": 16,
-      "droppedPoints": 12,
-      "pagesFetched": 3,
-      "samples": [
-        {
-          "headline": "Fairfax wins nod to acquire IDBI Bank, but faces challenge of shifting its publi",
-          "result": "none",
-          "proposed": 0,
-          "checked": 0,
-          "pagesFetched": 1
-        },
-        {
-          "headline": "Trump waives key sanctions on Russian oil, invokes Section 115 of the Graham Act",
-          "result": "too few checked figures",
-          "proposed": 4,
-          "checked": 4,
-          "pagesFetched": 1
-        },
-        {
-          "headline": "RSS economic wing urges Centre to deny Starlink licence over security concerns",
-          "result": "no figure found on an official page",
-          "proposed": 12,
-          "checked": 0,
-          "pagesFetched": 1
-        }
-      ]
+      "proposed": 0,
+      "droppedPoints": 0,
+      "pagesFetched": 0,
+      "samples": []
     },
     "models": {
       "filter": {
         "model": "claude-haiku-5-5",
-        "calls": 9,
-        "inputTokens": 20123,
-        "outputTokens": 9123,
-        "cost": 0.0066
+        "calls": 8,
+        "inputTokens": 27469,
+        "outputTokens": 14086,
+        "cost": 0.0099
       },
       "analysis_quick": {
         "model": "claude-sonnet-5-5",
-        "calls": 3,
-        "inputTokens": 5877,
-        "outputTokens": 5407,
-        "cost": 0.0658
+        "calls": 5,
+        "inputTokens": 9982,
+        "outputTokens": 9272,
+        "cost": 0.1127
       },
-      "stats": {
-        "model": "claude-sonnet-5-5",
-        "calls": 3,
-        "inputTokens": 229629,
-        "outputTokens": 6063,
-        "searches": 7,
-        "fetches": 6,
-        "cost": 0.5899
+      "analysis": {
+        "model": "claude-opus-5-5",
+        "calls": 1,
+        "inputTokens": 2157,
+        "outputTokens": 2088,
+        "cost": 0.0504
       },
       "threads": {
         "model": "claude-sonnet-5-5",
-        "calls": 1,
-        "inputTokens": 9583,
-        "outputTokens": 96,
-        "cost": 0.0201
+        "calls": 2,
+        "inputTokens": 11341,
+        "outputTokens": 528,
+        "cost": 0.028
       }
     },
     "spend": {
-      "thisDesk": 0.6824,
-      "today": 2.3928,
+      "thisDesk": 0.2008,
+      "today": 3.2572,
       "cap": 6
     }
   },
