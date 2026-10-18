@@ -53,6 +53,24 @@
    "notFound": 0,
    "outOfRange": 0,
    "pagesFetched": 5
+  },
+  "india-earnings": {
+   "name": "Indian companies: results dates",
+   "checkedAt": "2026-10-18T15:59:43.840Z",
+   "proposed": 1,
+   "kept": 0,
+   "notFound": 1,
+   "outOfRange": 0,
+   "pagesFetched": 5
+  },
+  "global-meetings": {
+   "name": "Summits and global meetings",
+   "checkedAt": "2026-10-18T16:00:00.750Z",
+   "proposed": 3,
+   "kept": 2,
+   "notFound": 1,
+   "outOfRange": 0,
+   "pagesFetched": 3
   }
  },
  "events": [
@@ -248,6 +266,41 @@
     "domain": "ir.amd.com"
    },
    "checkedAt": "2026-10-18T11:24:11.713Z"
+  },
+  {
+   "id": "cop-2026-11-09",
+   "series": "cop",
+   "group": "global-meetings",
+   "title": "UN climate summit (COP) (COP31 Antalya)",
+   "date": "2026-11-09",
+   "end": "2026-11-20",
+   "publisher": "UNFCCC",
+   "sectors": [
+    "environment"
+   ],
+   "key": [
+    "cop31",
+    "cop 31",
+    "cop",
+    "climate summit",
+    "unfccc",
+    "climate talks"
+   ],
+   "topic": [
+    "climate",
+    "emissions",
+    "carbon",
+    "climate finance",
+    "net zero",
+    "coal"
+   ],
+   "why": "Climate deals shape India's emission commitments, carbon border taxes and climate finance.",
+   "source": {
+    "url": "https://unfccc.int/cop31",
+    "title": "UN Climate Change Conference - Antalya, November 2026 | UNFCCC",
+    "domain": "unfccc.int"
+   },
+   "checkedAt": "2026-10-18T16:00:00.750Z"
   },
   {
    "id": "eia-steo-2026-11-10",
@@ -467,6 +520,35 @@
    "checkedAt": "2026-10-18T04:47:32.392Z"
   },
   {
+   "id": "g20-2026-12-14",
+   "series": "g20",
+   "group": "global-meetings",
+   "title": "G20 leaders' summit (Leaders' Summit, Miami)",
+   "date": "2026-12-14",
+   "end": "2026-12-15",
+   "publisher": "G20",
+   "sectors": [
+    "governance",
+    "economy"
+   ],
+   "key": [
+    "g20",
+    "g-20"
+   ],
+   "topic": [
+    "global economy",
+    "debt",
+    "world leaders"
+   ],
+   "why": "Where the largest economies, India included, negotiate trade, debt and finance.",
+   "source": {
+    "url": "https://g20.org/events",
+    "title": "Events | G20 Miami 2026",
+    "domain": "g20.org"
+   },
+   "checkedAt": "2026-10-18T16:00:00.750Z"
+  },
+  {
    "id": "eia-steo-2027-01-12",
    "series": "eia-steo",
    "group": "energy",
@@ -655,40 +737,42 @@
  "sectorFeeds": {
   "energy": "data/calendar-energy.ics",
   "economy": "data/calendar-economy.ics",
-  "technology": "data/calendar-technology.ics"
+  "technology": "data/calendar-technology.ics",
+  "environment": "data/calendar-environment.ics",
+  "governance": "data/calendar-governance.ics"
  },
  "lastRun": {
-  "at": "2026-10-18T11:23:46.575Z",
+  "at": "2026-10-18T15:59:26.048Z",
   "groups": [
    {
-    "id": "chip-earnings",
-    "proposed": 2,
-    "kept": 1,
+    "id": "india-earnings",
+    "proposed": 1,
+    "kept": 0,
     "notFound": 1,
     "outOfRange": 0,
-    "pagesFetched": 2
+    "pagesFetched": 5
    },
    {
-    "id": "bigtech-earnings",
-    "proposed": 4,
-    "kept": 4,
-    "notFound": 0,
+    "id": "global-meetings",
+    "proposed": 3,
+    "kept": 2,
+    "notFound": 1,
     "outOfRange": 0,
-    "pagesFetched": 5
+    "pagesFetched": 3
    }
   ],
-  "spend": 1.0428,
+  "spend": 0.8905,
   "models": {
    "calendar": {
     "model": "claude-sonnet-5-5",
     "calls": 2,
-    "inputTokens": 446153,
-    "outputTokens": 4045,
-    "searches": 11,
-    "fetches": 13,
-    "cost": 1.0428
+    "inputTokens": 366224,
+    "outputTokens": 3809,
+    "searches": 12,
+    "fetches": 15,
+    "cost": 0.8905
    }
   }
  },
- "updatedAt": "2026-10-18T11:24:29.727Z"
+ "updatedAt": "2026-10-18T16:00:00.750Z"
 }

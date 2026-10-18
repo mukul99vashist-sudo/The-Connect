@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//The Continent Connect//Dates to watch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:The Continent Connect: Policy & Governance dates
+X-WR-CALDESC:Officially scheduled dates behind the news: rate decisions\, 
+ data releases\, results and summits.
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:g20-2026-12-14@continent-connect
+DTSTAMP:20261018T160000Z
+DTSTART;VALUE=DATE:20261214
+DTEND;VALUE=DATE:20261216
+SUMMARY:G20 leaders' summit (Leaders' Summit\, Miami)
+DESCRIPTION:Where the largest economies\, India included\, negotiate trade
+ \, debt and finance.\n\nOfficial source: https://g20.org/events\n\nStorie
+ s and analysis: https://mukul99vashist-sudo.github.io/The-Continent-Conne
+ ct/
+URL:https://g20.org/events
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:G20 leaders' summit (Leaders' Summit\, Miami)
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR
