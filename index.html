@@ -959,6 +959,79 @@ html[data-text="large"] #sheet .sheet{zoom:1.12}
 .fw-drivers.long{flex-direction:column;gap:8px}
 .fw-drivers.long li{border:0;border-radius:0;padding:0;align-items:flex-start;font-size:14px;line-height:1.5}
 .fw-drivers.long li b{margin-right:4px}
+/* v53: Ripple story layout (trial) */
+.lay-sw{display:inline-flex;margin-left:auto;border:1px solid var(--rule);border-radius:999px;overflow:hidden}
+.lay-sw button{all:unset;cursor:pointer;padding:5px 11px;font:600 11.5px/1 var(--sans);color:var(--ink-3)}
+.lay-sw button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.lay-sw button:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+.ktop{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.sheet.rp{display:block;padding:40px 24px 48px}
+.rp-col{max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:26px}
+.rp-meta{display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding-right:44px}
+.rp-kind{font:700 11px/1 var(--sans);letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3)}
+.rp-h2{font:700 clamp(30px,3.4vw,46px)/1.08 "Newsreader",Georgia,serif;letter-spacing:-.015em;margin:12px 0 14px;color:var(--ink)}
+.rp-dateline{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:12px 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);font:500 13.5px/1.3 var(--sans);color:var(--ink-3)}
+.rp-hero{margin:0}
+.rp-hero img,.rp-hero .thumb{width:100%;aspect-ratio:16/8;height:auto;object-fit:cover;border-radius:14px;display:block}
+.rp-hero figcaption{margin-top:6px;font-size:12px;color:var(--ink-3)} .rp-hero figcaption a{color:inherit}
+.rp-lede{margin:0;font:400 21px/1.55 "Newsreader",Georgia,serif;color:var(--ink)}
+.rp-lede::first-letter{font-weight:700}
+.rp-h{font:700 12px/1 var(--sans);letter-spacing:.09em;text-transform:uppercase;color:var(--accent);margin:0 0 10px}
+.rp-sub{margin:-4px 0 14px;font-size:13.5px;color:var(--ink-3)}
+.fy{background:var(--ink);color:var(--bg);border-radius:18px;padding:22px 24px}
+.fy .rp-h{color:color-mix(in srgb,var(--bg) 70%,var(--accent))}
+.fy-ask{margin:0 0 10px;font:600 14px/1.3 var(--sans);opacity:.75}
+.fy-chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
+.fy .pill{background:transparent;color:var(--bg);border-color:color-mix(in srgb,var(--bg) 35%,transparent)}
+.fy .pill[aria-pressed="true"]{background:var(--bg);color:var(--ink);border-color:var(--bg)}
+.fy-text{margin:0;font:500 19px/1.5 "Newsreader",Georgia,serif}
+.fy-more{display:block;margin-top:8px;font:400 15.5px/1.5 var(--sans);opacity:.85}
+.fy-dir{display:block;margin-bottom:6px;font:700 11.5px/1 var(--sans);letter-spacing:.08em;text-transform:uppercase;opacity:.7}
+.rp-wrap{border:1px solid var(--tile-line);border-radius:18px;padding:22px 20px 18px;background:var(--card)}
+.rp-row{list-style:none;margin:0;padding:0;display:grid;grid-auto-flow:column;grid-auto-columns:minmax(0,1fr);position:relative}
+.rp-row::before{content:"";position:absolute;left:8%;right:8%;top:22px;height:2px;background:linear-gradient(90deg,var(--rule),var(--accent))}
+.rp-stop{position:relative;display:flex;justify-content:center}
+.rp-btn{all:unset;box-sizing:border-box;cursor:pointer;display:flex;flex-direction:column;align-items:center;text-align:center;gap:6px;padding:0 6px;max-width:170px}
+.rp-btn:focus-visible{outline:2px solid var(--accent);outline-offset:4px;border-radius:8px}
+.rp-dot{position:relative;width:calc(16px + var(--r)*6px);height:calc(16px + var(--r)*6px);margin:calc(14px - var(--r)*3px) 0;border-radius:50%;background:var(--card);border:2.5px solid var(--ink-2);box-shadow:0 0 0 calc(2px + var(--r)*2px) color-mix(in srgb,var(--accent) calc(8% + var(--r)*6%),transparent)}
+.rp-stop.likely .rp-dot{border-style:dashed}
+.rp-stop.you .rp-dot{background:var(--accent);border-color:var(--accent)}
+.rp-stop.on .rp-dot{border-color:var(--accent);transform:scale(1.08)}
+.rp-k{font:700 10.5px/1 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3)}
+.rp-l{font:600 14px/1.3 var(--sans);color:var(--ink-2)}
+.rp-stop.on .rp-l{color:var(--ink)}
+.rp-detail{margin-top:16px;padding-top:14px;border-top:1px solid var(--rule);min-height:70px}
+.rp-detail b{font:700 16px/1.3 var(--sans);color:var(--ink)}
+.rp-detail p{margin:6px 0 8px;font-size:15.5px;line-height:1.55;color:var(--ink-2)}
+.rp-basis{font:600 11.5px/1 var(--sans);color:var(--ink-3)}
+.vd{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;padding:18px 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.vd-k{display:block;font:700 11px/1.2 var(--sans);letter-spacing:.07em;text-transform:uppercase;color:var(--ink-3);margin-bottom:6px}
+.vd-c b{display:flex;align-items:center;gap:10px;font:700 17px/1.2 var(--sans);color:var(--ink)}
+.vd-m{display:inline-flex;gap:3px} .vd-m i{width:14px;height:5px;border-radius:3px;background:var(--rule)} .vd-m i.on{background:var(--accent)}
+.vd-c p{margin:6px 0 0;font-size:13.5px;line-height:1.5;color:var(--ink-2)}
+.pq{margin:0;padding:6px 0 6px 22px;border-left:4px solid var(--sc,var(--accent))}
+.pq blockquote{margin:0;font:italic 500 22px/1.45 "Newsreader",Georgia,serif;color:var(--ink)}
+.pq figcaption{margin-top:10px;font:600 13.5px/1.3 var(--sans);color:var(--ink-3)} .pq figcaption a{color:var(--accent);text-decoration:none;margin-left:6px}
+.rp-deep{border:1px solid var(--tile-line);border-radius:16px;padding:0 20px;background:var(--card)}
+.rp-deep>summary{cursor:pointer;list-style:none;padding:18px 0;font:700 15.5px/1.3 var(--sans);color:var(--ink);display:flex;justify-content:space-between;gap:12px}
+.rp-deep>summary::after{content:"+";font-size:22px;line-height:1;color:var(--accent)} .rp-deep[open]>summary::after{content:"−"}
+.rp-deep>summary::-webkit-details-marker{display:none}
+.rp-deep[open]{padding-bottom:20px}
+.rp-deep .fw-head,.rp-deep .fw-with,.rp-deep .fw-dials,.rp-deep .fw-basis,.rp-deep>.block>.lead,.rp-deep .fw-chip.inf{display:none}
+.rp-deep .block.fw{border-top:0;margin-top:0;padding-top:0}
+.sheet.rp .block{border-top:1px solid var(--rule)}
+.sheet.rp .sofar{margin:0}
+@media (max-width:700px){
+  .sheet.rp{padding:30px 18px 36px} .rp-col{gap:22px}
+  .rp-lede{font-size:19px} .fy-text{font-size:17.5px} .pq blockquote{font-size:19px}
+  .vd{grid-template-columns:minmax(0,1fr);gap:14px}
+  .rp-row{grid-auto-flow:row;grid-auto-columns:auto;gap:4px}
+  .rp-row::before{left:21px;right:auto;top:10px;bottom:10px;width:2px;height:auto;background:linear-gradient(180deg,var(--rule),var(--accent))}
+  .rp-stop{justify-content:flex-start}
+  .rp-btn{flex-direction:row;align-items:center;text-align:left;max-width:none;gap:12px;padding:4px 0}
+  .rp-dot{flex:none;margin:0 calc(14px - var(--r)*3px)}
+  .rp-k{min-width:76px}
+}
 </style>
 </head>
 <body data-rail="left">
@@ -2130,6 +2203,7 @@ function acctSaved(body){
 function acctSettings(body){
   var ap=el("section","acct-sec"); ap.appendChild(el("h3",null,"Appearance"));
   ap.appendChild(setRow("Theme",null, radioGroup("theme",[["light","Light"],["dark","Dark"],["device","Match device"]], themeNow(), setThemePref)));
+  ap.appendChild(setRow("Story layout","Ripple is a trial layout: the story first, the full analysis one tap away.", radioGroup("layout",[["classic","Classic"],["ripple","Ripple (trial)"]], storyLayout(), function(v){ prefs.layout=v; savePrefs(); })));
   ap.appendChild(toggleRow("Larger text in stories","Makes the story window easier to read.", prefs.largeText, function(v){ prefs.largeText=v; savePrefs(); applyReadingPrefs(); }));
   body.appendChild(ap);
   var rd=el("section","acct-sec"); rd.appendChild(el("h3",null,"Reading"));
@@ -2172,12 +2246,144 @@ function acctHelp(body){
     var d=el("details","acct-faq"); d.appendChild(el("summary",null,q[0])); d.appendChild(el("p",null,q[1])); body.appendChild(d); });
   body.appendChild(el("p","disc","The analysis, gauges and implications are AI-generated, not reported fact, and may be wrong."));
 }
+/* ---------- "Ripple" story layout (trial): an edited story, not a stack of AI boxes ----------
+   Order: headline and dateline → photo → the lede → "For you" → the ripple (from the event to you) → how sure we are →
+   the outlet's own words → numbers → "Go deeper" (full analysis, background, terms, what to watch) → every report.
+   The machinery (framework names, depth tiers, "inferred" chips) is not shown; uncertainty is said once, in words. */
+function storyLayout(){ return prefs.layout==="ripple" ? "ripple" : "classic"; }
+(function(){ try{ var m=/[?&]layout=(ripple|classic)\b/.exec(location.search); if(m){ prefs.layout=m[1]; savePrefs(); } }catch(err){} })();
+function shortLabel(t, n){ t=tidyText(String(t||"")).replace(/\s+/g," ").trim(); n=n||48; return t.length>n ? t.slice(0,n).replace(/\s+\S*$/,"")+"…" : t; }
+/* The stops of the ripple, taken from whichever lens analysed the story */
+function rippleStops(it, e){
+  var a=it.analysis||{}, fw=a.frameworks||{}, stops=[];
+  function add(label, detail, sure){ label=shortLabel(label); if(label) stops.push({label:label, detail:detail||"", sure:sure!==false}); }
+  if(fw.impact_chain && fw.impact_chain.chain){ fw.impact_chain.chain.forEach(function(c){ add(c.step, c.detail, c.basis!=="inferred"); }); }
+  else if(fw.pass_through && fw.pass_through.rungs){ var pt=fw.pass_through;
+    add((pt.driver.variable||"Price")+" "+(pt.driver.direction==="down"?"falls":"rises"), pt.driver.size?("Reported change: "+pt.driver.size+"."):"", true);
+    pt.rungs.forEach(function(r){ var parts=String(r.stage||"").split(/→|->/); add(parts[parts.length-1], r.damper?("What could slow it: "+r.damper):"", r.pass==="likely"); }); }
+  else if(fw.disruption_map && fw.disruption_map.node){ var dm=fw.disruption_map;
+    if(dm.cause) add(dm.cause.text, dm.cause.text, dm.cause.status==="confirmed");
+    add(dm.node.name+" "+({closed:"closed",partial:"partly disrupted",open:"open",unknown:"status unclear"}[dm.node.status]||""), dm.duration&&dm.duration!=="not reported"?"Expected duration: "+dm.duration+".":"", true);
+    (dm.flows||[]).slice(0,2).forEach(function(f){ add(cap(f.flow)+" to India", f.india_link, f.basis!=="inferred"); }); }
+  else if(fw.trade_flow){ var tf=fw.trade_flow;
+    add(cap((tf.change&&tf.change.type)||"change")+": "+(tf.good||"trade"), (tf.actors||[]).map(function(x){ return x.country; }).join(", "), true);
+    if(tf.india_position) add("India as "+tf.india_position.role.replace(/_/g," "), tf.india_position.note, false); }
+  else if(fw.escalation){ var es=fw.escalation; add("Escalation: rung "+es.current_rung+" of 7", es.evidence, true);
+    (es.india_channels||[]).slice(0,2).forEach(function(c){ add(cap(c), "", false); }); }
+  else if(fw.policy_tracker){ var pc=fw.policy_tracker; add(pc.instrument.name, [pc.instrument.issuer, pc.instrument.jurisdiction].filter(Boolean).join(", "), true);
+    (pc.obligations||[]).slice(0,2).forEach(function(o){ add(o.who, o.what, true); }); }
+  else if(fw.decoder && fw.decoder.headline){ var dc=fw.decoder; add(dc.headline.label+(dc.headline.value!=null?": "+fmtNum(dc.headline.value)+(dc.headline.unit?" "+dc.headline.unit:""):""), dc.decision&&dc.decision.stance||"", true);
+    (dc.drivers||[]).slice(0,2).forEach(function(d){ add(d.name, d.how||"", true); }); }
+  if(!stops.length){ add(it.headline, it.why, true); add(e.sector.name, (it.implications||[])[0]||"", false); }
+  stops=stops.slice(0,4);
+  var aff=(a.affected||[])[0];
+  stops.push({label: aff ? aff.group : "People in India", detail: aff ? (aff.effect || (cap(aff.what)+" "+(DIR_WORD[aff.direction]||"")).trim()) : (it.implications||[])[0]||"", sure: aff ? aff.basis==="reported" : false, you:true});
+  return stops;
+}
+function rippleGraphic(stops){
+  var w=el("div","rp-wrap"), row=el("ol","rp-row"), det=el("div","rp-detail"); det.setAttribute("aria-live","polite");
+  function show(i){ Array.prototype.forEach.call(row.children,function(li,j){ li.classList.toggle("on",i===j); li.querySelector("button").setAttribute("aria-pressed",String(i===j)); });
+    var s=stops[i]; det.textContent=""; det.appendChild(el("b",null,s.label)); if(s.detail) det.appendChild(el("p",null,s.detail));
+    det.appendChild(el("span","rp-basis", s.sure ? "Reported" : "Our reading of where this leads")); }
+  stops.forEach(function(s,i){ var li=el("li","rp-stop"+(s.sure?"":" likely")+(s.you?" you":"")); li.style.setProperty("--r", String(i));
+    var b=el("button","rp-btn"); b.type="button"; b.setAttribute("aria-label",(s.you?"Reaches: ":"Step "+(i+1)+": ")+s.label);
+    var dot=el("span","rp-dot"); b.appendChild(dot);
+    b.appendChild(el("span","rp-k", s.you ? "Reaches" : i===0 ? "Starts with" : "Then"));
+    b.appendChild(el("span","rp-l", s.label));
+    b.addEventListener("click",function(){ show(i); }); li.appendChild(b); row.appendChild(li); });
+  w.appendChild(row); w.appendChild(det); show(0); return w;
+}
+function forYou(it){
+  var a=it.analysis||{}, groups=(a.affected||[]).filter(function(x){ return x.group; });
+  if(!groups.length && !(it.implications||[]).length) return null;
+  var box=el("section","fy"); box.appendChild(el("h3","rp-h","For you"));
+  if(!groups.length){ box.appendChild(el("p","fy-text",it.implications[0])); return box; }
+  var chips=el("div","fy-chips"), text=el("p","fy-text");
+  function pick(i){ var g=groups[i]; Array.prototype.forEach.call(chips.children,function(c,j){ c.setAttribute("aria-pressed",String(i===j)); });
+    text.textContent=""; var arrow=el("span","fy-dir "+(g.direction||"unclear"),{up:"Rising for you",down:"Falling for you",mixed:"Mixed",unclear:"Still unclear"}[g.direction]||"");
+    text.appendChild(arrow);
+    if(g.effect) text.appendChild(document.createTextNode(g.effect));
+    else { text.appendChild(document.createTextNode("What changes: "+(g.what||"not yet clear")+".")); if((it.implications||[])[0]){ text.appendChild(el("span","fy-more",it.implications[0])); } } }
+  if(groups.length>1){ box.appendChild(el("p","fy-ask","Which of these are you?"));
+    groups.forEach(function(g,i){ var c=el("button","pill",g.group); c.type="button"; c.addEventListener("click",function(){ pick(i); }); chips.appendChild(c); }); box.appendChild(chips); }
+  else box.appendChild(el("p","fy-ask","If you're among: "+groups[0].group));
+  box.appendChild(text); pick(0); return box;
+}
+function verdictLine(it){
+  var a=it.analysis||{}; if(!a.exposure && !a.horizon && !a.confidence) return null;
+  var v=el("section","vd"), no=outletsOf(it).length;
+  function col(k, word, n, total, reason){ var c=el("div","vd-c"); c.appendChild(el("span","vd-k",k)); var w=el("b",null,word); var m=el("span","vd-m"); for(var i=1;i<=total;i++) m.appendChild(el("i",i<=n?"on":null)); w.appendChild(m); c.appendChild(w); if(reason) c.appendChild(el("p",null,reason)); v.appendChild(c); }
+  if(a.exposure) col("How much it touches India", cap(a.exposure.level), LEVEL_N[a.exposure.level]||0, 3, a.exposure.reason);
+  if(a.horizon) col("When you'd feel it", {now:"This week",weeks:"In the coming weeks",months:"Over the coming months",years:"Over years"}[a.horizon.value]||a.horizon.value, HORIZON_LIST.indexOf(a.horizon.value)+1, 4, a.horizon.reason);
+  if(a.confidence){ var cl=(a.confidence.level==="high"&&no<3)?"medium":a.confidence.level; col("How sure we are", cap(cl)+" · "+no+" outlet"+(no===1?"":"s"), LEVEL_N[cl]||0, 3, a.confidence.reason); }
+  return v;
+}
+function pullQuote(it){
+  var r=leadReport(it), q=r.summary||r.lede; if(!q) return null;
+  var f=el("figure","pq"), bq=el("blockquote",null,q); f.appendChild(bq);
+  var cap2=el("figcaption"); cap2.appendChild(document.createTextNode("— "+(OUTLET[r.source]||r.source)+" ")); var a=el("a",null,"Read the full report →"); a.href=r.url; a.target="_blank"; a.rel="noopener"; cap2.appendChild(a); f.appendChild(cap2);
+  return f;
+}
+function layoutSwitch(e){
+  var g=el("div","lay-sw"); g.setAttribute("role","group"); g.setAttribute("aria-label","Story layout");
+  [["ripple","Ripple"],["classic","Classic"]].forEach(function(o){ var b=el("button",null,o[1]); b.type="button"; b.setAttribute("aria-pressed",String(storyLayout()===o[0]));
+    b.addEventListener("click",function(){ if(storyLayout()===o[0]) return; prefs.layout=o[0]; savePrefs(); openSheet(e); }); g.appendChild(b); });
+  return g;
+}
+function readsBlock(it){
+  var dev=isDeveloping(it), reps=reportsOf(it).slice().sort(function(a,b){return String(b.date||"").localeCompare(String(a.date||""));});
+  var rb=el("div","block"); rb.appendChild(el("h3",null,dev?"How the story developed · newest first":reps.length>1?"Read each outlet's report":"Read the full story"));
+  var rd=el("div","reads");
+  reps.forEach(function(r,i){ var a=el("a","read"); a.href=r.url; a.target="_blank"; a.rel="noopener";
+    if(dev && i===0) a.appendChild(el("span","latest","Latest"));
+    a.appendChild(el("span","o",(OUTLET[r.source]||r.source)+(sheetView==="global"&&REGION[r.source]?" · "+REGION[r.source]:"")+(r.date?" · "+when(r.date):""))); var tl=el("span","t",r.headline); if(KIND_LABEL[r.kind]) tl.appendChild(kindChip(r.kind)); a.appendChild(tl); a.appendChild(el("span","go","Open story →")); rd.appendChild(a); });
+  rb.appendChild(rd); return rb;
+}
+function openRipple(e, d, body){
+  var it=e.it, a=it.analysis||{}, kd=kindOf(it);
+  body.classList.add("rp");
+  var sh=body.closest(".sheet")||d; sh.classList.remove("has-kind","k-hard","k-breaking","k-investigative","k-soft","k-feature","k-opinion");
+  var col=el("article","rp-col");
+  // headline and dateline
+  var top=el("header","rp-top"), meta=el("div","rp-meta");
+  var k=el("span","kicker",e.sector.name); k.style.setProperty("--sc","var(--s-"+e.sector.id+")"); meta.appendChild(k);
+  if(kd && kd!=="hard") meta.appendChild(el("span","rp-kind",KIND_LABEL[kd]));
+  meta.appendChild(layoutSwitch(e)); top.appendChild(meta);
+  var h=el("h2","rp-h2",it.headline); h.id="sheetTitle"; top.appendChild(h);
+  var dl=el("div","rp-dateline"), outs=outletsOf(it).map(function(o){ return OUTLET[o]||o; });
+  dl.appendChild(el("span",null,(sheetView==="domestic"?"Inside India":"Global impact")+" desk · from "+(outs.length>2?outs.slice(0,2).join(", ")+" and "+(outs.length-2)+" more":outs.join(" and "))+" · "+when(latestDate(it))));
+  var sv=saveButton(e,true); dl.appendChild(sv); top.appendChild(dl); col.appendChild(top);
+  // photo
+  var lr=leadReport(it), picSrc=(lr.image ? lr : it), ht=thumb(picSrc, e.sector.id);
+  if(ht && !ht.classList.contains("art")){ var fig=el("figure","rp-hero"); fig.appendChild(ht); var cr=imageCredit(it), cp=el("figcaption"); cp.appendChild(document.createTextNode("Image via ")); var ca=el("a",null,OUTLET[cr.source]||cr.source); ca.href=cr.url; ca.target="_blank"; ca.rel="noopener"; cp.appendChild(ca); fig.appendChild(cp); col.appendChild(fig); }
+  // lede
+  if(it.why) col.appendChild(el("p","rp-lede",it.why));
+  else if(lr.summary) col.appendChild(el("p","rp-lede",lr.summary));
+  var fy=forYou(it); if(fy) col.appendChild(fy);
+  if(a.v>=2 && a.frameworks){ var rs=el("section","rp-ripple"); rs.appendChild(el("h3","rp-h","The ripple")); rs.appendChild(el("p","rp-sub","How this travels from where it happened to people in India. Tap a step.")); rs.appendChild(rippleGraphic(rippleStops(it,e))); col.appendChild(rs); }
+  var vd=verdictLine(it); if(vd) col.appendChild(vd);
+  var pq=pullQuote(it); if(pq) col.appendChild(pq);
+  var stb=renderStats(it); if(stb) col.appendChild(stb);
+  // go deeper: the full analysis, without the machinery
+  if(a.v>=2 && a.frameworks){ var dp=el("details","rp-deep"); dp.appendChild(el("summary",null,"Go deeper: the full analysis, background, terms and what to watch")); dp.appendChild(renderFramework(it)); col.appendChild(dp); }
+  else if((it.implications||[]).length){ var ul=el("ul","fw-list"); it.implications.forEach(function(t){ ul.appendChild(el("li",null,t)); }); var im=el("section","rp-plain"); im.appendChild(el("h3","rp-h","What it means")); im.appendChild(ul); col.appendChild(im); }
+  var dts=renderDates(e); if(dts) col.appendChild(dts);
+  col.appendChild(readsBlock(it));
+  var so=storySoFar(it); if(so) col.appendChild(so);
+  col.appendChild(el("p","fw-foot disc","Written by AI from the reports above; the analysis may be wrong. Nothing here is financial or investment advice."));
+  body.appendChild(col);
+  if(typeof d.showModal==="function"){ if(!d.open) d.showModal(); } else d.setAttribute("open","");
+  body.scrollTop=0; requestAnimationFrame(function(){ body.scrollTop=0; });
+  try{ $("sheetClose").focus({preventScroll:true}); }catch(err){ $("sheetClose").focus(); }
+}
 /* Story sheet with the analysis and links to each outlet's report. */
 var sheetView="global";
 function openSheet(e){
   sheetView=e.view||view;
   var it=e.it, d=$("sheet"), body=$("sheetBody"); body.textContent=""; body.scrollTop=0;
   body.style.setProperty("--sc","var(--s-"+e.sector.id+")");
+  if(storyLayout()==="ripple"){ openRipple(e, d, body); return; }
+  body.classList.remove("rp");
   var lr=leadReport(it), picSrc=(lr.image ? lr : it);
   var ht=thumb(picSrc, e.sector.id), fig=el("figure","hero"), row=el("div","hero-row"+(ht?"":" solo"));
   if(ht) fig.appendChild(ht);
@@ -2193,6 +2399,7 @@ function openSheet(e){
   var k=el("span","kicker",e.sector.name); k.style.setProperty("--sc","var(--s-"+e.sector.id+")");
   var kd=kindOf(it), kt=el("div","ktop"); if(kd) kt.appendChild(kindChip(kd)); kt.appendChild(k); head.appendChild(kt);
   var sh=body.closest(".sheet")||d; sh.classList.remove("has-kind","k-hard","k-breaking","k-investigative","k-soft","k-feature","k-opinion"); if(kd) sh.classList.add("has-kind","k-"+kd);
+  kt.appendChild(layoutSwitch(e));
   var h=el("h2",null,it.headline); h.id="sheetTitle"; head.appendChild(h);
   head.appendChild(byline(it,true));
   body.appendChild(head);
@@ -2225,7 +2432,7 @@ function openSheet(e){
   rb.appendChild(rd); right.appendChild(rb); body.appendChild(right);
   var so=storySoFar(it); if(so) body.appendChild(so);
 
-  if(typeof d.showModal==="function") d.showModal(); else d.setAttribute("open","");
+  if(typeof d.showModal==="function"){ if(!d.open) d.showModal(); } else d.setAttribute("open","");
   // Every story opens at its top, even if the last one was closed half-way down.
   body.scrollTop=0; requestAnimationFrame(function(){ body.scrollTop=0; });
   try{ $("sheetClose").focus({preventScroll:true}); }catch(err){ $("sheetClose").focus(); }
