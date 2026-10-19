@@ -1032,6 +1032,13 @@ html[data-text="large"] #sheet .sheet{zoom:1.12}
   .rp-dot{flex:none;margin:0 calc(14px - var(--r)*3px)}
   .rp-k{min-width:76px}
 }
+/* v54: Ripple uses the same width and spacing as Classic */
+.sheet.rp{padding:44px 48px 40px}
+.rp-col{max-width:none}
+.rp-hero img,.rp-hero .thumb{aspect-ratio:16/7;max-height:460px}
+.rp-meta{padding-right:48px}
+.rp-lede{font-size:22px}
+@media (max-width:900px){ .sheet.rp{padding:34px 20px 24px} }
 </style>
 </head>
 <body data-rail="left">
@@ -2203,7 +2210,7 @@ function acctSaved(body){
 function acctSettings(body){
   var ap=el("section","acct-sec"); ap.appendChild(el("h3",null,"Appearance"));
   ap.appendChild(setRow("Theme",null, radioGroup("theme",[["light","Light"],["dark","Dark"],["device","Match device"]], themeNow(), setThemePref)));
-  ap.appendChild(setRow("Story layout","Ripple is a trial layout: the story first, the full analysis one tap away.", radioGroup("layout",[["classic","Classic"],["ripple","Ripple (trial)"]], storyLayout(), function(v){ prefs.layout=v; savePrefs(); })));
+  ap.appendChild(setRow("Story layout","Classic shows the full analysis at once. Ripple reads like an article: the story and what it means for you first, the full analysis one tap away.", radioGroup("layout",[["classic","Classic"],["ripple","Ripple"]], storyLayout(), function(v){ prefs.layout=v; savePrefs(); })));
   ap.appendChild(toggleRow("Larger text in stories","Makes the story window easier to read.", prefs.largeText, function(v){ prefs.largeText=v; savePrefs(); applyReadingPrefs(); }));
   body.appendChild(ap);
   var rd=el("section","acct-sec"); rd.appendChild(el("h3",null,"Reading"));
@@ -2348,7 +2355,7 @@ function openRipple(e, d, body){
   var top=el("header","rp-top"), meta=el("div","rp-meta");
   var k=el("span","kicker",e.sector.name); k.style.setProperty("--sc","var(--s-"+e.sector.id+")"); meta.appendChild(k);
   if(kd && kd!=="hard") meta.appendChild(el("span","rp-kind",KIND_LABEL[kd]));
-  meta.appendChild(layoutSwitch(e)); top.appendChild(meta);
+  top.appendChild(meta);
   var h=el("h2","rp-h2",it.headline); h.id="sheetTitle"; top.appendChild(h);
   var dl=el("div","rp-dateline"), outs=outletsOf(it).map(function(o){ return OUTLET[o]||o; });
   dl.appendChild(el("span",null,(sheetView==="domestic"?"Inside India":"Global impact")+" desk · from "+(outs.length>2?outs.slice(0,2).join(", ")+" and "+(outs.length-2)+" more":outs.join(" and "))+" · "+when(latestDate(it))));
@@ -2399,7 +2406,6 @@ function openSheet(e){
   var k=el("span","kicker",e.sector.name); k.style.setProperty("--sc","var(--s-"+e.sector.id+")");
   var kd=kindOf(it), kt=el("div","ktop"); if(kd) kt.appendChild(kindChip(kd)); kt.appendChild(k); head.appendChild(kt);
   var sh=body.closest(".sheet")||d; sh.classList.remove("has-kind","k-hard","k-breaking","k-investigative","k-soft","k-feature","k-opinion"); if(kd) sh.classList.add("has-kind","k-"+kd);
-  kt.appendChild(layoutSwitch(e));
   var h=el("h2",null,it.headline); h.id="sheetTitle"; head.appendChild(h);
   head.appendChild(byline(it,true));
   body.appendChild(head);
