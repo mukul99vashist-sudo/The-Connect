@@ -509,7 +509,7 @@ async function classifyOlder(data) {
 // 2) Plain code picks the primary framework from a fixed priority order and sets the depth tier.
 // 3) Opus fills the chosen framework(s) plus the universal block, using only the reports.
 // 4) Validators drop any figure that is not in the reports and any sentence that reads like advice.
-const ANALYSIS_V = 2;
+const ANALYSIS_V = 3;           // v3: complete sentences throughout, background and terms explained (v2: frameworks)
 const ANALYSIS_CHUNK = 3;      // stories per Opus request (each analysis is long)
 const FEATURE_BATCH = 12;      // stories per feature-question request
 const REFRAME_LIMIT = 12;      // existing stories (re)analysed per desk per run, newest first
@@ -587,17 +587,17 @@ Return ONLY a JSON array: [{"id":0,"conflict":false,"scheduled":false,"disruptio
 
 const GROUPS = ["Fuel & LPG users", "Food shoppers", "Borrowers", "Depositors & savers", "Salaried workers", "Farmers", "Fishers", "MSME exporters", "Large exporters", "Importers & traders", "Students abroad", "Gulf & overseas workers and families", "Travellers & pilgrims", "IT & services workers", "Manufacturing workers", "Power consumers", "Government finances", "A named state or region"];
 const FW_SPEC = {
-  impact_chain: `"impact_chain": {"chain":[{"step":"≤6 words","detail":"≤15 words","basis":"reported|inferred"}], "breaks_if":"the condition that would stop the effect, ≤15 words"}. 3 steps at Quick read, up to 4 otherwise. The first step must be reported. At most 1 inferred step at Quick read, 2 otherwise.`,
-  disruption_map: `"disruption_map": {"node":{"name":"...","type":"port|airport|strait|canal|pipeline|refinery|power plant|factory|rail|road|other","status":"closed|partial|open|unknown","as_of":"date/time as reported"},"cause":{"text":"≤15 words","status":"confirmed|claimed|alleged"},"flows":[{"flow":"crude|LNG|containers|air passengers|workers|pilgrims|cargo|other","india_link":"≤15 words","basis":"reported|inferred"}],"alternatives":["as reported"],"duration":"as reported, or 'not reported'"}. Only flows named in the reports.`,
-  trade_flow: `"trade_flow": {"good":"...","actors":[{"country":"...","role":"exporter|importer|third_party","is_india":false}],"change":{"type":"start|stop|increase|cut|tariff|sanction|ban|deal|other","effective":"date if reported"},"india_position":{"role":"competing_buyer|supplier|rival_exporter|transit|not_involved","note":"≤20 words, cautious"},"volumes":[{"value":0,"unit":"...","period":"...","from":"<outlet>"}]}. Volumes only if stated in the reports.`,
-  policy_tracker: `"policy_tracker": {"instrument":{"name":"...","issuer":"...","jurisdiction":"..."},"stages":[{"stage":"announced|draft|adopted|notified|transition|in_force|under_review|amended_or_repealed","date":"if reported","status":"done|current|next"}],"obligations":[{"who":"...","what":"≤15 words","from":"date if reported"}],"applies_to_india":"yes|no|partly"}. Assign stages only from the reports' wording; a proposal is never "in_force".`,
-  decoder: `"decoder": {"kind":"release|decision","headline":{"label":"...","value":0,"unit":"...","period":"...","previous":null,"previousLabel":"...","from":"<outlet>"},"comparisons":[{"label":"e.g. RBI target, year ago","value":0,"unit":"...","from":"<outlet>"}],"drivers":[{"name":"≤6 words","direction":"up|down|mixed"}],"decision":{"action":"hike|cut|hold|other","size":"as reported","stance":"≤15 words as stated"}}. Drivers only as stated by the issuer or quoted in reports. No consensus figure unless a report attributes one.`,
-  pass_through: `"pass_through": {"driver":{"variable":"...","direction":"up|down","size":"as reported or empty"},"product":"petrol & diesel|LPG|edible oils|fertiliser|food staples|electronics|loan EMIs|deposit rates|other","rungs":[{"stage":"≤6 words, e.g. Global crude price → Refiners' cost → Pump price","pass":"likely|partial|blocked|unclear","damper":"what slows or blocks it, ≤12 words (taxes, administered prices, subsidies, contracts, inventory)","lag":"days|weeks|months"}],"end_user":{"group":"one of the affected groups","effect":"≤20 words, cautious"}}. 3 to 5 rungs from the global price to what Indians pay. Never give a percentage.`,
-  winners_losers: `"winners_losers": {"groups":[{"group":"one of the affected groups","direction":"gain|lose|mixed|unclear","directness":"direct|indirect","mechanism":"≤15 words"}],"not_affected":"a group readers might assume is affected but is not, ≤15 words, or empty"}. Max 6 groups; each needs a mechanism from the reports. Never name companies as winners in a market sense.`,
-  conflicting: `"conflicting": {"disputed":{"item":"what is disputed","unit":"..."},"accounts":[{"outlet":"...","value":"as reported","origin":"who the figure or claim comes from","time":"as reported"}],"agreed":["facts all reports agree on"],"explanations":[{"type":"different time|different source|different definition|unexplained","note":"≤15 words"}],"status":"unresolved|converging|resolved"}. Never average or pick a side; use neutral verbs.`,
-  timeline: `"timeline": {"entries":[{"when":"as reported","what":"≤15 words","actor":"...","outlet":"...","type":"action|claim|denial|confirmation","verification":"confirmed|claimed|contested"}],"current_status":"≤20 words","open_questions":["≤15 words"]}. Oldest first, up to 6 entries. Keep both sides of any contested claim.`,
-  escalation: `"escalation": {"current_rung":1,"evidence":"the reported action that places it there, ≤20 words","previous_rung":null,"next_signals":[{"rung":5,"signal":"observable event that would show a move to that rung, ≤15 words"}],"india_channels":["oil|shipping|remittances|diaspora safety|flights|trade"]}. Rungs: 1 Rhetoric and threats; 2 Sanctions and diplomatic measures; 3 Mobilisation and posturing; 4 Limited strikes or attacks; 5 Sustained strikes; 6 Strikes on critical infrastructure or third countries; 7 Full-scale war. The rung must match actions actually reported; never predict.`,
-  scenarios: `"scenarios": {"question":"the unresolved thing, ≤15 words","scenarios":[{"name":"≤4 words","what":"≤20 words","signal":"observable signal, ≤15 words","india_effect":"≤15 words, cautious"}]}. 2 or 3 scenarios, each tied to an outcome named in the reports or an official position. No probabilities, no ranking.`
+  impact_chain: `"impact_chain": {"chain":[{"step":"short label for the step, ≤8 words","detail":"one or two complete sentences, ≤40 words, explaining what happens at this step and how it leads to the next","basis":"reported|inferred"}], "breaks_if":"one complete sentence, ≤35 words, on the condition that would stop the effect reaching India"}. 3 steps at Quick read, up to 4 otherwise. The first step must be reported. At most 1 inferred step at Quick read, 2 otherwise.`,
+  disruption_map: `"disruption_map": {"node":{"name":"...","type":"port|airport|strait|canal|pipeline|refinery|power plant|factory|rail|road|other","status":"closed|partial|open|unknown","as_of":"date/time as reported"},"cause":{"text":"one complete sentence, ≤35 words","status":"confirmed|claimed|alleged"},"flows":[{"flow":"crude|LNG|containers|air passengers|workers|pilgrims|cargo|other","india_link":"one or two complete sentences, ≤40 words, on how this flow reaches India and who depends on it","basis":"reported|inferred"}],"alternatives":["each a short phrase as reported"],"duration":"as reported, or 'not reported'"}. Only flows named in the reports.`,
+  trade_flow: `"trade_flow": {"good":"...","actors":[{"country":"...","role":"exporter|importer|third_party","is_india":false}],"change":{"type":"start|stop|increase|cut|tariff|sanction|ban|deal|other","effective":"date if reported"},"india_position":{"role":"competing_buyer|supplier|rival_exporter|transit|not_involved","note":"two complete sentences, ≤50 words, cautious: where India sits in this trade and what the change could mean for Indian buyers or sellers"},"volumes":[{"value":0,"unit":"...","period":"...","from":"<outlet>"}]}. Volumes only if stated in the reports.`,
+  policy_tracker: `"policy_tracker": {"instrument":{"name":"...","issuer":"...","jurisdiction":"..."},"stages":[{"stage":"announced|draft|adopted|notified|transition|in_force|under_review|amended_or_repealed","date":"if reported","status":"done|current|next"}],"obligations":[{"who":"...","what":"one complete sentence, ≤35 words, on what they must do","from":"date if reported"}],"applies_to_india":"yes|no|partly","india_note":"one or two complete sentences, ≤45 words, on what the measure means for Indian people, firms or the government"}. Assign stages only from the reports' wording; a proposal is never "in_force".`,
+  decoder: `"decoder": {"kind":"release|decision","headline":{"label":"...","value":0,"unit":"...","period":"...","previous":null,"previousLabel":"...","from":"<outlet>"},"comparisons":[{"label":"e.g. RBI target, year ago","value":0,"unit":"...","from":"<outlet>"}],"drivers":[{"name":"short label, ≤6 words","direction":"up|down|mixed","how":"one complete sentence, ≤30 words, on how this factor moved the figure, as stated by the issuer or quoted in reports"}],"decision":{"action":"hike|cut|hold|other","size":"as reported","stance":"one or two complete sentences, ≤40 words, on the stated reasoning"}}. Drivers only as stated by the issuer or quoted in reports. No consensus figure unless a report attributes one.`,
+  pass_through: `"pass_through": {"driver":{"variable":"...","direction":"up|down","size":"as reported or empty"},"product":"petrol & diesel|LPG|edible oils|fertiliser|food staples|electronics|loan EMIs|deposit rates|other","rungs":[{"stage":"short label, ≤10 words, e.g. Global crude price → Refiners' cost","pass":"likely|partial|blocked|unclear","damper":"one complete sentence, ≤30 words, on what slows or blocks the pass-through at this stage (taxes, administered prices, subsidies, contracts, inventory)","lag":"days|weeks|months"}],"end_user":{"group":"one of the affected groups","effect":"one or two complete sentences, ≤40 words, cautious, on what this group may notice and when"}}. 3 to 5 rungs from the global price to what Indians pay. Never give a percentage.`,
+  winners_losers: `"winners_losers": {"groups":[{"group":"one of the affected groups","direction":"gain|lose|mixed|unclear","directness":"direct|indirect","mechanism":"one or two complete sentences, ≤40 words, on how the change reaches this group"}],"not_affected":"one complete sentence, ≤35 words, on a group readers might assume is affected but is not, and why; or empty"}. Max 6 groups; each needs a mechanism from the reports. Never name companies as winners in a market sense.`,
+  conflicting: `"conflicting": {"disputed":{"item":"what is disputed, as a short phrase","unit":"..."},"accounts":[{"outlet":"...","value":"as reported","origin":"who the figure or claim comes from","time":"as reported"}],"agreed":["complete sentences: facts all reports agree on"],"explanations":[{"type":"different time|different source|different definition|unexplained","note":"one complete sentence, ≤35 words, on why the accounts may differ"}],"status":"unresolved|converging|resolved"}. Never average or pick a side; use neutral verbs.`,
+  timeline: `"timeline": {"entries":[{"when":"as reported","what":"one complete sentence, ≤35 words","actor":"...","outlet":"...","type":"action|claim|denial|confirmation","verification":"confirmed|claimed|contested"}],"current_status":"one or two complete sentences, ≤45 words","open_questions":["each a complete question, ≤25 words"]}. Oldest first, up to 6 entries. Keep both sides of any contested claim.`,
+  escalation: `"escalation": {"current_rung":1,"evidence":"one or two complete sentences, ≤40 words, on the reported action that places it there","previous_rung":null,"next_signals":[{"rung":5,"signal":"one complete sentence, ≤30 words, describing the observable event that would show a move to that rung"}],"india_channels":["oil|shipping|remittances|diaspora safety|flights|trade"]}. Rungs: 1 Rhetoric and threats; 2 Sanctions and diplomatic measures; 3 Mobilisation and posturing; 4 Limited strikes or attacks; 5 Sustained strikes; 6 Strikes on critical infrastructure or third countries; 7 Full-scale war. The rung must match actions actually reported; never predict.`,
+  scenarios: `"scenarios": {"question":"the unresolved thing, as a complete question, ≤25 words","scenarios":[{"name":"short label, ≤5 words","what":"one or two complete sentences, ≤40 words, on what would happen","signal":"one complete sentence, ≤30 words, on the observable sign that this path is unfolding","india_effect":"one or two complete sentences, ≤40 words, cautious, on what it would mean for India"}]}. 2 or 3 scenarios, each tied to an outcome named in the reports or an official position. No probabilities, no ranking.`
 };
 
 function analysisPrompt(batch, mode) {
@@ -610,18 +610,27 @@ function analysisPrompt(batch, mode) {
 
 UNIVERSAL BLOCK (every story):
 - "sector": ONE of the sectors below. "relevance": "high" (direct, material effect on many people or a whole sector within weeks) or "medium".
-- "why": the bottom line in one sentence, ≤30 words: how this reaches ${REGION}.
-- "implications": 2 or 3 plain sentences, each ≤25 words.
-- "exposure": {"level":"high|medium|low","reason":"≤20 words"}. High = touches a household essential (fuel, LPG, food staples, loan EMIs, deposit rates), a top Indian import or export, or the safety or travel of Indians. Medium = one industry, one bilateral relationship or a compliance obligation. Low = indirect or no mechanism in the reports.
-- "horizon": {"value":"now|weeks|months|years","reason":"≤12 words"}. When people in ${REGION} are likely to feel the effect: now = within a week; weeks = one to six weeks; months = two to twelve months; years = beyond a year.
-- "confidence": {"level":"high|medium|low","reason":"≤15 words"}. High = 3+ outlets agree and an on-record official source; medium = 2 outlets, or 1 with an official source; low = single outlet, anonymous sourcing, claims by a party, or an unresolved conflict.
-- "affected": 1 to 4 of [{"group":"exactly one of: ${GROUPS.join(", ")}","direction":"up|down|mixed|unclear","what":"what changes for them, ≤6 words (e.g. fuel prices, flight availability, compliance costs)","basis":"reported|inferred"}].
-- "watch": 1 to 3 of [{"what":"observable event, ≤15 words","when":"the date as YYYY-MM-DD if the reports give the exact day (work out the year from the report date); otherwise the reported wording such as 'November 2026' or 'next week'; empty if no timing is reported","where":"named official source to check, or empty"}].
+- "why": the bottom line in one or two sentences, ≤45 words: what happened and how it reaches ${REGION}.
+- "implications": 2 to 4 complete sentences (2 at Quick read), each ≤35 words. Each one must add something the bottom line does not say: a mechanism, a group affected, a condition, or a knock-on effect. Do not restate the headline.
+- "context": 1 to 3 complete sentences (1 or 2 at Quick read), each ≤40 words, of BACKGROUND the reports do not spell out but a reader needs: how this kind of event usually works, the general structure of ${REGION}'s exposure (for example, that ${REGION} imports most of its crude oil, or that Indian IT firms earn much of their revenue in the US), or the policy background. Use only well-established general knowledge you are confident is still true. No numbers, dates, names of people or new claims about this specific event unless they are in the reports. Never guess what happens next here.
+- "terms": 0 to 3 of [{"term":"as written in the story","meaning":"one plain sentence, ≤30 words"}] for technical terms, acronyms or programme names a general reader may not know (for example H-1B cap, MDR, repo rate, JMMC). Skip everyday words. 0 or 1 at Quick read.
+- "exposure": {"level":"high|medium|low","reason":"one or two complete sentences, ≤40 words, naming the channel through which this reaches ${REGION} and why that makes the level high, medium or low"}. High = touches a household essential (fuel, LPG, food staples, loan EMIs, deposit rates), a top Indian import or export, or the safety or travel of Indians. Medium = one industry, one bilateral relationship or a compliance obligation. Low = indirect or no mechanism in the reports.
+- "horizon": {"value":"now|weeks|months|years","reason":"one complete sentence, ≤30 words, on what sets the timing"}. When people in ${REGION} are likely to feel the effect: now = within a week; weeks = one to six weeks; months = two to twelve months; years = beyond a year.
+- "confidence": {"level":"high|medium|low","reason":"one complete sentence, ≤30 words, on which outlets and sources this rests on and what is still unconfirmed"}. High = 3+ outlets agree and an on-record official source; medium = 2 outlets, or 1 with an official source; low = single outlet, anonymous sourcing, claims by a party, or an unresolved conflict.
+- "affected": 1 to 4 of [{"group":"exactly one of: ${GROUPS.join(", ")}","direction":"up|down|mixed|unclear","what":"short label of what changes, ≤6 words (e.g. fuel prices, flight availability)","effect":"one complete sentence, ≤30 words, saying what changes for this group and through which channel","basis":"reported|inferred"}].
+- "watch": 1 to 3 of [{"what":"the observable event, as a complete phrase, ≤20 words","why":"one complete sentence, ≤25 words, on what it would tell the reader","when":"the date as YYYY-MM-DD if the reports give the exact day (work out the year from the report date); otherwise the reported wording such as 'November 2026' or 'next week'; empty if no timing is reported","where":"named official source to check, or empty"}].
 
 FRAMEWORKS (fill only those listed for each story, under these keys):
 ${used.map(k => "- " + FW_SPEC[k]).join("\n")}
 
-DEPTH: "quick" = keep every field short and minimal. "standard" = complete. "deep" = complete, using every report.
+DEPTH: "quick" = fewer items in each list, but every sentence still complete and self-explanatory. "standard" = complete. "deep" = complete, using every report.
+
+WRITING STYLE (every text field):
+- Formal, plain English in the register of a quality newspaper explainer: complete sentences with a subject and a verb. No headline fragments, no arrows inside sentences, no note-style shorthand.
+- Every sentence must make sense to someone who has not read the story: name who acted, what changes, and who in ${REGION} it reaches.
+- Explain mechanisms, not labels: write "Higher crude prices raise refiners' costs, which can feed through to petrol and diesel prices", not "fuel prices".
+- Spell out abbreviations on first use, for example "merchant discount rate (MDR)".
+- Short labels are allowed only in fields described as a label or name.
 
 RULES:
 1. Facts only from the reports. Never invent numbers, names, dates, causes or events. Every number you write must appear in the reports. If a field cannot be filled, leave it out.
@@ -636,7 +645,7 @@ ${sectors}
 Stories:
 ${JSON.stringify(items)}
 
-Return ONLY a JSON array, one object per story: [{"id":0,"relevant":true,"sector":"...","relevance":"...","why":"...","implications":[],"exposure":{},"horizon":{},"confidence":{},"affected":[],"watch":[], "<framework key>":{...}}]`;
+Return ONLY a JSON array, one object per story: [{"id":0,"relevant":true,"sector":"...","relevance":"...","why":"...","implications":[],"context":[],"terms":[],"exposure":{},"horizon":{},"confidence":{},"affected":[],"watch":[], "<framework key>":{...}}]`;
 }
 
 // ----- validators -----
@@ -652,59 +661,69 @@ const inReports = (v, nums) => v === null || nums.has(v) || nums.has(Math.abs(v)
 
 function cleanFramework(key, f, nums) {
   if (!f || typeof f !== "object") return null;
-  const s = (x, n) => noAdvice(str(x, n)) ? str(x, n) : "";
+  const s = (x, n) => noAdvice(str(x, n)) ? sentence(x, n) : "";
   switch (key) {
-    case "impact_chain": { const chain = arr(f.chain, 4).map(x => ({ step: s(x?.step, 60), detail: s(x?.detail, 140), basis: pick(x?.basis, ["reported", "inferred"], "inferred") })).filter(x => x.step); return chain.length ? { chain, breaks_if: s(f.breaks_if, 140) } : null; }
+    case "impact_chain": { const chain = arr(f.chain, 4).map(x => ({ step: s(x?.step, 80), detail: s(x?.detail, 350), basis: pick(x?.basis, ["reported", "inferred"], "inferred") })).filter(x => x.step); return chain.length ? { chain, breaks_if: s(f.breaks_if, 350) } : null; }
     case "disruption_map": { const n = f.node || {}; if (!str(n.name)) return null;
       return { node: { name: str(n.name, 80), type: str(n.type, 20), status: pick(n.status, ["closed", "partial", "open", "unknown"], "unknown"), as_of: str(n.as_of, 40) },
-        cause: f.cause ? { text: s(f.cause.text, 140), status: pick(f.cause.status, ["confirmed", "claimed", "alleged"], "claimed") } : null,
-        flows: arr(f.flows, 5).map(x => ({ flow: str(x?.flow, 30), india_link: s(x?.india_link, 140), basis: pick(x?.basis, ["reported", "inferred"], "inferred") })).filter(x => x.flow),
-        alternatives: arr(f.alternatives, 3).map(x => s(x, 100)).filter(Boolean), duration: str(f.duration, 60) || "not reported" }; }
+        cause: f.cause ? { text: s(f.cause.text, 350), status: pick(f.cause.status, ["confirmed", "claimed", "alleged"], "claimed") } : null,
+        flows: arr(f.flows, 5).map(x => ({ flow: str(x?.flow, 30), india_link: s(x?.india_link, 350), basis: pick(x?.basis, ["reported", "inferred"], "inferred") })).filter(x => x.flow),
+        alternatives: arr(f.alternatives, 3).map(x => s(x, 250)).filter(Boolean), duration: str(f.duration, 60) || "not reported" }; }
     case "trade_flow": { if (!str(f.good)) return null;
       return { good: str(f.good, 60), actors: arr(f.actors, 5).map(x => ({ country: str(x?.country, 40), role: pick(x?.role, ["exporter", "importer", "third_party"], "third_party"), is_india: !!x?.is_india })).filter(x => x.country),
         change: { type: str(f.change?.type, 20), effective: str(f.change?.effective, 40) },
-        india_position: f.india_position ? { role: pick(f.india_position.role, ["competing_buyer", "supplier", "rival_exporter", "transit", "not_involved"], "not_involved"), note: s(f.india_position.note, 160) } : null,
+        india_position: f.india_position ? { role: pick(f.india_position.role, ["competing_buyer", "supplier", "rival_exporter", "transit", "not_involved"], "not_involved"), note: s(f.india_position.note, 400) } : null,
         volumes: arr(f.volumes, 3).map(x => ({ value: numOrNull(x?.value), unit: str(x?.unit, 30), period: str(x?.period, 30), from: str(x?.from, 40) })).filter(x => x.value !== null && inReports(x.value, nums)) }; }
     case "policy_tracker": { if (!str(f.instrument?.name)) return null;
       return { instrument: { name: str(f.instrument.name, 100), issuer: str(f.instrument.issuer, 60), jurisdiction: str(f.instrument.jurisdiction, 40) },
         stages: arr(f.stages, 8).map(x => ({ stage: pick(x?.stage, ["announced", "draft", "adopted", "notified", "transition", "in_force", "under_review", "amended_or_repealed"], null), date: str(x?.date, 30), status: pick(x?.status, ["done", "current", "next"], "next") })).filter(x => x.stage),
-        obligations: arr(f.obligations, 4).map(x => ({ who: str(x?.who, 50), what: s(x?.what, 120), from: str(x?.from, 30) })).filter(x => x.who && x.what),
-        applies_to_india: pick(f.applies_to_india, ["yes", "no", "partly"], "partly") }; }
+        obligations: arr(f.obligations, 4).map(x => ({ who: str(x?.who, 50), what: s(x?.what, 300), from: str(x?.from, 30) })).filter(x => x.who && x.what),
+        applies_to_india: pick(f.applies_to_india, ["yes", "no", "partly"], "partly"), india_note: s(f.india_note, 360) }; }
     case "decoder": { const h = f.headline || {}; const v = numOrNull(h.value), p = numOrNull(h.previous);
       return { kind: pick(f.kind, ["release", "decision"], "release"),
         headline: str(h.label) ? { label: str(h.label, 60), value: inReports(v, nums) ? v : null, unit: str(h.unit, 20), period: str(h.period, 30), previous: inReports(p, nums) ? p : null, previousLabel: str(h.previousLabel, 30), from: str(h.from, 40) } : null,
         comparisons: arr(f.comparisons, 3).map(x => ({ label: str(x?.label, 50), value: numOrNull(x?.value), unit: str(x?.unit, 20), from: str(x?.from, 40) })).filter(x => x.label && x.value !== null && inReports(x.value, nums)),
-        drivers: arr(f.drivers, 4).map(x => ({ name: s(x?.name, 50), direction: pick(x?.direction, ["up", "down", "mixed"], "mixed") })).filter(x => x.name),
-        decision: f.decision ? { action: pick(f.decision.action, ["hike", "cut", "hold", "other"], "other"), size: str(f.decision.size, 30), stance: s(f.decision.stance, 120) } : null }; }
-    case "pass_through": { const rungs = arr(f.rungs, 5).map(x => ({ stage: s(x?.stage, 60), pass: pick(x?.pass, ["likely", "partial", "blocked", "unclear"], "unclear"), damper: s(x?.damper, 100), lag: pick(x?.lag, ["days", "weeks", "months"], "weeks") })).filter(x => x.stage);
+        drivers: arr(f.drivers, 4).map(x => ({ name: s(x?.name, 50), direction: pick(x?.direction, ["up", "down", "mixed"], "mixed"), how: s(x?.how, 260) })).filter(x => x.name),
+        decision: f.decision ? { action: pick(f.decision.action, ["hike", "cut", "hold", "other"], "other"), size: str(f.decision.size, 30), stance: s(f.decision.stance, 300) } : null }; }
+    case "pass_through": { const rungs = arr(f.rungs, 5).map(x => ({ stage: s(x?.stage, 90), pass: pick(x?.pass, ["likely", "partial", "blocked", "unclear"], "unclear"), damper: s(x?.damper, 250), lag: pick(x?.lag, ["days", "weeks", "months"], "weeks") })).filter(x => x.stage);
       return rungs.length ? { driver: { variable: str(f.driver?.variable, 50), direction: pick(f.driver?.direction, ["up", "down"], "up"), size: str(f.driver?.size, 30) }, product: str(f.product, 30), rungs,
-        end_user: f.end_user ? { group: pick(f.end_user.group, GROUPS, ""), effect: s(f.end_user.effect, 160) } : null } : null; }
-    case "winners_losers": { const groups = arr(f.groups, 6).map(x => ({ group: pick(x?.group, GROUPS, str(x?.group, 40)), direction: pick(x?.direction, ["gain", "lose", "mixed", "unclear"], "unclear"), directness: pick(x?.directness, ["direct", "indirect"], "indirect"), mechanism: s(x?.mechanism, 140) })).filter(x => x.group && x.mechanism);
-      return groups.length ? { groups, not_affected: s(f.not_affected, 140) } : null; }
+        end_user: f.end_user ? { group: pick(f.end_user.group, GROUPS, ""), effect: s(f.end_user.effect, 400) } : null } : null; }
+    case "winners_losers": { const groups = arr(f.groups, 6).map(x => ({ group: pick(x?.group, GROUPS, str(x?.group, 40)), direction: pick(x?.direction, ["gain", "lose", "mixed", "unclear"], "unclear"), directness: pick(x?.directness, ["direct", "indirect"], "indirect"), mechanism: s(x?.mechanism, 350) })).filter(x => x.group && x.mechanism);
+      return groups.length ? { groups, not_affected: s(f.not_affected, 350) } : null; }
     case "conflicting": { const accounts = arr(f.accounts, 6).map(x => ({ outlet: str(x?.outlet, 40), value: str(String(x?.value ?? ""), 80), origin: str(x?.origin, 80), time: str(x?.time, 40) })).filter(x => x.outlet && x.value);
-      return accounts.length >= 2 ? { disputed: { item: str(f.disputed?.item, 80), unit: str(f.disputed?.unit, 20) }, accounts, agreed: arr(f.agreed, 4).map(x => s(x, 140)).filter(Boolean),
-        explanations: arr(f.explanations, 3).map(x => ({ type: str(x?.type, 30), note: s(x?.note, 120) })).filter(x => x.type), status: pick(f.status, ["unresolved", "converging", "resolved"], "unresolved") } : null; }
-    case "timeline": { const entries = arr(f.entries, 6).map(x => ({ when: str(x?.when, 30), what: s(x?.what, 140), actor: str(x?.actor, 50), outlet: str(x?.outlet, 40), type: pick(x?.type, ["action", "claim", "denial", "confirmation"], "action"), verification: pick(x?.verification, ["confirmed", "claimed", "contested"], "claimed") })).filter(x => x.what);
-      return entries.length ? { entries, current_status: s(f.current_status, 160), open_questions: arr(f.open_questions, 3).map(x => s(x, 120)).filter(Boolean) } : null; }
+      return accounts.length >= 2 ? { disputed: { item: str(f.disputed?.item, 80), unit: str(f.disputed?.unit, 20) }, accounts, agreed: arr(f.agreed, 4).map(x => s(x, 350)).filter(Boolean),
+        explanations: arr(f.explanations, 3).map(x => ({ type: str(x?.type, 30), note: s(x?.note, 300) })).filter(x => x.type), status: pick(f.status, ["unresolved", "converging", "resolved"], "unresolved") } : null; }
+    case "timeline": { const entries = arr(f.entries, 6).map(x => ({ when: str(x?.when, 30), what: s(x?.what, 350), actor: str(x?.actor, 50), outlet: str(x?.outlet, 40), type: pick(x?.type, ["action", "claim", "denial", "confirmation"], "action"), verification: pick(x?.verification, ["confirmed", "claimed", "contested"], "claimed") })).filter(x => x.what);
+      return entries.length ? { entries, current_status: s(f.current_status, 400), open_questions: arr(f.open_questions, 3).map(x => s(x, 300)).filter(Boolean) } : null; }
     case "escalation": { const r = Math.round(+f.current_rung); if (!(r >= 1 && r <= 7)) return null; const pr = Math.round(+f.previous_rung);
-      return { current_rung: r, evidence: s(f.evidence, 160), previous_rung: pr >= 1 && pr <= 7 ? pr : null,
-        next_signals: arr(f.next_signals, 3).map(x => ({ rung: Math.round(+x?.rung), signal: s(x?.signal, 120) })).filter(x => x.rung >= 1 && x.rung <= 7 && x.signal),
+      return { current_rung: r, evidence: s(f.evidence, 400), previous_rung: pr >= 1 && pr <= 7 ? pr : null,
+        next_signals: arr(f.next_signals, 3).map(x => ({ rung: Math.round(+x?.rung), signal: s(x?.signal, 300) })).filter(x => x.rung >= 1 && x.rung <= 7 && x.signal),
         india_channels: arr(f.india_channels, 6).map(x => str(x, 30)).filter(Boolean) }; }
-    case "scenarios": { const sc = arr(f.scenarios, 3).map(x => ({ name: s(x?.name, 40), what: s(x?.what, 160), signal: s(x?.signal, 120), india_effect: s(x?.india_effect, 120) })).filter(x => x.name && x.what);
-      return sc.length >= 2 ? { question: s(f.question, 120), scenarios: sc } : null; }
+    case "scenarios": { const sc = arr(f.scenarios, 3).map(x => ({ name: s(x?.name, 60), what: s(x?.what, 400), signal: s(x?.signal, 300), india_effect: s(x?.india_effect, 300) })).filter(x => x.name && x.what);
+      return sc.length >= 2 ? { question: s(f.question, 300), scenarios: sc } : null; }
   }
   return null;
 }
+// Text is never cut mid-sentence: an over-long field is trimmed back to its last complete sentence (or word).
+function sentence(x, n) {
+  const t = typeof x === "string" ? x.trim().replace(/\s+/g, " ") : ""; if (t.length <= n) return t;
+  const cut = t.slice(0, n), end = Math.max(cut.lastIndexOf(". "), cut.lastIndexOf("? "));
+  return end > n * 0.5 ? cut.slice(0, end + 1) : cut.replace(/\s+\S*$/, "") + "…";
+}
+// Background must not bring in figures the reports do not contain: any sentence with such a number is dropped.
+function noNewNumbers(text, nums) { return [...String(text).replace(/(\d),(?=\d{2,3}\b)/g, "$1").matchAll(/\d+(\.\d+)?/g)].every(m => nums.has(+m[0])); }
 function cleanAnalysis(r, plan, reportText) {
   const nums = numbersIn(reportText);
-  const s = (x, n) => noAdvice(str(x, n)) ? str(x, n) : "";
+  const s = (x, n) => noAdvice(str(x, n)) ? sentence(x, n) : "";
   const a = { v: ANALYSIS_V, at: new Date().toISOString(), tier: plan.tier, primary: plan.primary, complement: plan.complement || null, features: plan.features,
-    exposure: r.exposure ? { level: pick(r.exposure.level, ["high", "medium", "low"], "medium"), reason: s(r.exposure.reason, 140) } : null,
-    horizon: r.horizon ? { value: pick(r.horizon.value, ["now", "weeks", "months", "years"], "weeks"), reason: s(r.horizon.reason, 100) } : null,
-    confidence: r.confidence ? { level: pick(r.confidence.level, ["high", "medium", "low"], "medium"), reason: s(r.confidence.reason, 120) } : null,
+    exposure: r.exposure ? { level: pick(r.exposure.level, ["high", "medium", "low"], "medium"), reason: s(r.exposure.reason, 320) } : null,
+    horizon: r.horizon ? { value: pick(r.horizon.value, ["now", "weeks", "months", "years"], "weeks"), reason: s(r.horizon.reason, 240) } : null,
+    confidence: r.confidence ? { level: pick(r.confidence.level, ["high", "medium", "low"], "medium"), reason: s(r.confidence.reason, 240) } : null,
     outlets: new Set((plan.reports || []).map(x => x.source)).size || undefined,
-    affected: arr(r.affected, 4).map(x => ({ group: pick(x?.group, GROUPS, ""), direction: pick(x?.direction, ["up", "down", "mixed", "unclear"], "unclear"), what: s(x?.what, 60), basis: pick(x?.basis, ["reported", "inferred"], "inferred") })).filter(x => x.group),
-    watch: arr(r.watch, 3).map(x => ({ what: s(x?.what, 140), when: str(x?.when, 40), where: str(x?.where, 60) })).filter(x => x.what),
+    affected: arr(r.affected, 4).map(x => ({ group: pick(x?.group, GROUPS, ""), direction: pick(x?.direction, ["up", "down", "mixed", "unclear"], "unclear"), what: s(x?.what, 60), effect: s(x?.effect, 240), basis: pick(x?.basis, ["reported", "inferred"], "inferred") })).filter(x => x.group),
+    watch: arr(r.watch, 3).map(x => ({ what: s(x?.what, 180), why: s(x?.why, 220), when: str(x?.when, 40), where: str(x?.where, 80) })).filter(x => x.what),
+    context: arr(r.context, 3).map(x => s(x, 320)).filter(x => x && noNewNumbers(x, nums)),
+    terms: arr(r.terms, 3).map(x => ({ term: str(x?.term, 60), meaning: s(x?.meaning, 240) })).filter(x => x.term && x.meaning),
     frameworks: {} };
   for (const k of [plan.primary, plan.complement].filter(Boolean)) { const f = cleanFramework(k, r[k], nums); if (f) a.frameworks[k] = f; }
   if (!a.frameworks[plan.primary]) a.frameworksMissing = true;
@@ -745,8 +764,8 @@ async function analyseStories(list, mode, level = "core") {
 }
 function applyAnalysis(ev, r, plan) {
   ev.analysis = cleanAnalysis(r, plan, reportTextOf(ev.reports || []));
-  if (noAdvice(r.why) && str(r.why)) ev.why = str(r.why, 300);
-  const imp = arr(r.implications, 3).filter(x => typeof x === "string" && noAdvice(x)); if (imp.length) ev.implications = imp;
+  if (noAdvice(r.why) && str(r.why)) ev.why = sentence(r.why, 400);
+  const imp = arr(r.implications, 4).filter(x => typeof x === "string" && noAdvice(x)).map(x => sentence(x, 320)); if (imp.length) ev.implications = imp;
 }
 // Existing stories: analyse those with no current analysis, or whose depth tier has risen since. Newest first.
 async function reframeRecent(data, mode) {
@@ -970,7 +989,7 @@ async function reuseFromLibrary(ev, lib) {
 // In-depth stories (and standard stories with high exposure) get statistics once, newest first: a saved series if one
 // fits, otherwise a search. Results are kept with the story.
 async function addStatistics(data, mode) {
-  const want = ev => ev.analysis?.v === 2 && (ev.analysis.tier === "deep" || (ev.analysis.tier === "standard" && ev.analysis.exposure?.level === "high"));
+  const want = ev => ev.analysis?.v >= 2 && (ev.analysis.tier === "deep" || (ev.analysis.tier === "standard" && ev.analysis.exposure?.level === "high"));
   const due = data.sectors.flatMap(sec => sec.items).filter(ev => want(ev) && ev.stats?.v !== STATS_V)
     .sort((a, b) => latest(b).localeCompare(latest(a))).slice(0, STATS_LIMIT);
   const lib = await loadLibrary(); let changed = false;
@@ -1317,7 +1336,7 @@ async function callClaude(prompt, job, level = "core") {
         "anthropic-version": "2023-06-01",
         "content-type": "application/json"
       },
-      body: JSON.stringify({ model, max_tokens: job.startsWith("analysis") ? 8000 : 4000, messages: [{ role: "user", content: prompt }] })
+      body: JSON.stringify({ model, max_tokens: job.startsWith("analysis") ? 16000 : 4000, messages: [{ role: "user", content: prompt }] })
     });
     const body = await res.json().catch(() => ({}));
     if (res.ok) {
