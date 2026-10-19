@@ -990,7 +990,7 @@ async function reuseFromLibrary(ev, lib) {
 // fits, otherwise a search. Results are kept with the story.
 async function addStatistics(data, mode) {
   const want = ev => ev.analysis?.v >= 2 && (ev.analysis.tier === "deep" || (ev.analysis.tier === "standard" && ev.analysis.exposure?.level === "high"));
-  const due = data.sectors.flatMap(sec => sec.items).filter(ev => want(ev) && ev.stats?.v !== STATS_V)
+  const due = data.sectors.flatMap(sec => sec.items).filter(ev => want(ev) && (ev.stats?.v !== STATS_V || (ev.stats.reuseOnly && ev.analysis.tier === "deep")))
     .sort((a, b) => latest(b).localeCompare(latest(a))).slice(0, STATS_LIMIT);
   const lib = await loadLibrary(); let changed = false;
   // First run with the library: seed it with the charts already on the desk.
@@ -1001,6 +1001,9 @@ async function addStatistics(data, mode) {
     try {
       const again = await reuseFromLibrary(ev, lib);
       if (again) { ev.stats = { v: STATS_V, at: new Date().toISOString(), series: again }; reused++; samples.push({ headline: str(ev.headline, 80), result: "reused saved series" }); continue; }
+      // New web searches cost the most, so they are kept for in-depth stories (decision 20 Oct). A standard story with
+      // nothing suitable on file is marked done without a search; it gets a fresh look if it later turns in-depth.
+      if (ev.analysis.tier !== "deep") { ev.stats = { v: STATS_V, at: new Date().toISOString(), series: [], reuseOnly: true }; none++; samples.push({ headline: str(ev.headline, 80), result: "no saved series; search kept for in-depth stories" }); continue; }
       const { series, diag } = parseStats(await callStats(statsPrompt(ev, mode)));
       ev.stats = { v: STATS_V, at: new Date().toISOString(), series };
       if (series.length) { found++; addToLibrary(lib, series, ev); } else none++;
@@ -1018,6 +1021,7 @@ async function addStatistics(data, mode) {
 // Each group of organisations is refreshed once a week (a few groups per run, so the cost is spread out). The site
 // links events to stories by the keywords below, and data/calendar.ics is a feed people can subscribe to in Google,
 // Apple or Outlook calendars; it updates itself as the engine adds or moves dates.
+const CALENDAR_JOB = (process.env.CALENDAR_JOB || "off").toLowerCase() === "on";   // off while the calendar is hidden on the site (20 Oct)
 const CALENDAR_FILE = "data/calendar.json";
 const CAL_REFRESH_DAYS = 7;       // each group is re-checked weekly
 const CAL_GROUPS_PER_RUN = 1;     // one group per run: the eight groups are spread over about a day, never all at once
@@ -1365,7 +1369,8 @@ export async function main() {
   let deskFailed = false;
   try {
     // Dates to watch: a couple of organisations' official calendars are re-checked each run (each one weekly).
-    try { await refreshCalendar(); await saveBudget(); } catch (e) { console.error(`Calendar update failed: ${e.message}`); }
+    if (CALENDAR_JOB) { try { await refreshCalendar(); await saveBudget(); } catch (e) { console.error(`Calendar update failed: ${e.message}`); } }
+    else console.log("Calendar: switched off (CALENDAR_JOB in update.yml).");
     for (const desk of DESKS) {
       console.log(`\n=== ${desk.id} desk ===`);
       const r = await runDesk(desk);
