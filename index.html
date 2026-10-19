@@ -940,6 +940,12 @@ html[data-text="large"] #sheet .sheet{zoom:1.12}
 .brief-top{display:flex;align-items:center;justify-content:space-between;gap:12px}
 .brief-save{flex:none}
 @media (max-width:600px){ .ctl-filters{flex-direction:row;flex-wrap:wrap;align-items:center} .tl-pick{max-width:100%} }
+/* v51: masthead on top, controls under it; timeline filter on the right */
+.mh{grid-template-areas:"center center" "left right";row-gap:14px}
+.mh-center{padding-top:4px}
+#rangeBtns{margin-left:auto}
+@media (max-width:600px){ #rangeBtns{margin-left:0} }
+@media (max-width:700px){ .sbox.open,.sbox.has,.sbox:focus-within{top:auto;bottom:0} }
 </style>
 </head>
 <body data-rail="left">
@@ -961,7 +967,6 @@ html[data-text="large"] #sheet .sheet{zoom:1.12}
       <form class="sbox" id="searchBox" role="search" autocomplete="off">
         <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg>
         <input id="searchInput" type="search" placeholder="Search stories" aria-label="Search stories" enterkeyhint="search" spellcheck="false">
-        <kbd aria-hidden="true">/</kbd>
         <button type="button" id="searchClear" aria-label="Clear search">×</button>
       </form>
       <button class="pillbtn" id="themeBtn" type="button">Dark mode</button>
