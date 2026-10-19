@@ -849,6 +849,91 @@ footer{margin-top:28px;font-size:12.5px;color:var(--ink-3);line-height:1.6;width
 .sr-row>.savebtn{position:absolute;top:14px;right:4px;width:34px;height:34px;border-radius:50%;color:var(--ink-3)}
 .sr-row>.savebtn.on{color:var(--accent)}
 @media (max-width:600px){ .sr-trow .sr-thread:nth-child(n+3){display:none} .sr-ts{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden} .sr-row{gap:12px;padding-right:40px} .sr-row .sr-thumb{width:92px;height:72px} .sr-head{font-size:16px} .sr-snip{-webkit-line-clamp:3;font-size:13.5px} .sr-bars{height:64px;gap:2px} }
+/* v48: account window, timeline dropdown */
+.side{display:flex;flex-direction:column}
+.side ul{flex:0 0 auto}
+.side-foot{margin-top:auto;padding-top:12px;border-top:1px solid var(--rule)}
+.acct-btn{height:56px;gap:12px}
+.acct-btn .nm{display:flex;flex-direction:column;gap:2px;line-height:1.15}
+.acct-btn .nm b{font:600 14px/1.2 var(--sans);color:var(--ink);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.acct-btn .nm small{font-size:12px;color:var(--ink-3)}
+body.rail-collapsed .acct-btn{height:56px}
+.avatar{flex:none;display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:var(--ink);color:var(--bg);font:700 13px/1 var(--sans)}
+.avatar svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round}
+.avatar.lg{width:56px;height:56px;font-size:20px} .avatar.lg svg{width:28px;height:28px}
+dialog.acct{width:min(920px,94vw);height:min(680px,90vh)}
+.acct-wrap{display:grid;grid-template-columns:220px minmax(0,1fr);height:100%}
+.acct-nav{display:flex;flex-direction:column;gap:2px;padding:28px 12px;border-right:1px solid var(--rule);background:var(--bg-2)}
+.acct-tab{all:unset;box-sizing:border-box;cursor:pointer;display:flex;align-items:center;gap:12px;height:42px;padding:0 14px;border-radius:999px;font:500 14.5px/1 var(--sans);color:var(--ink-2)}
+.acct-tab svg{flex:none;width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.acct-tab .ct{margin-left:auto;font-size:12px;font-weight:600;color:var(--ink-3)}
+.acct-tab:hover{background:var(--card);color:var(--ink)}
+.acct-tab[aria-selected="true"]{background:var(--card);color:var(--ink);font-weight:600;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.acct-tab:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.acct-body{overflow:auto;padding:30px 40px 36px;background:var(--card)}
+.acct-h{font:700 26px/1.2 "Newsreader",Georgia,serif;margin:0 0 18px;color:var(--ink)}
+.acct-card{display:flex;gap:16px;align-items:center;padding:18px;border:1px solid var(--tile-line);border-radius:14px;margin-bottom:8px}
+.acct-card b{font:700 17px/1.3 var(--sans);color:var(--ink)} .acct-card p{margin:4px 0 0;font-size:14px;color:var(--ink-2)}
+.acct-sec{padding:20px 0;border-bottom:1px solid var(--rule)} .acct-sec:last-child{border-bottom:0}
+.acct-sec h3{font:700 12px/1 var(--sans);letter-spacing:.07em;text-transform:uppercase;color:var(--ink-3);margin:0 0 10px}
+.muted{margin:0 0 12px;font-size:14px;line-height:1.5;color:var(--ink-2)}
+.acct-btns{display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.pillbtn:disabled{opacity:.5;cursor:not-allowed}
+.pillbtn.primary{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.soon{display:inline-block;margin-left:8px;font:700 10.5px/1 var(--sans);letter-spacing:.05em;text-transform:uppercase;padding:4px 7px;border-radius:4px;background:var(--bg-2);color:var(--ink-3);vertical-align:middle}
+.set-row{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 0}
+.set-txt{display:flex;flex-direction:column;gap:3px;min-width:0}
+.set-txt b{font:600 14.5px/1.3 var(--sans);color:var(--ink)} .set-txt small{font-size:13px;line-height:1.4;color:var(--ink-3)}
+.field{font:500 14px/1.2 var(--sans);padding:9px 12px;border:1px solid var(--rule);border-radius:10px;background:var(--card);color:var(--ink);min-width:200px;max-width:100%}
+.field:focus{outline:2px solid var(--accent);outline-offset:1px}
+.seg-opt{display:inline-flex;flex-wrap:wrap;border:1px solid var(--rule);border-radius:999px;overflow:hidden;flex:none}
+.seg-opt button{all:unset;cursor:pointer;padding:8px 14px;font:600 13px/1 var(--sans);color:var(--ink-2)}
+.seg-opt button[aria-checked="true"]{background:var(--ink);color:var(--bg)}
+.seg-opt button:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+.switch{appearance:none;-webkit-appearance:none;flex:none;width:44px;height:26px;border-radius:999px;background:var(--rule);position:relative;cursor:pointer;transition:background .15s;margin:0}
+.switch::after{content:"";position:absolute;top:3px;left:3px;width:20px;height:20px;border-radius:50%;background:#fff;box-shadow:0 1px 2px rgba(0,0,0,.25);transition:left .15s}
+.switch:checked{background:var(--ok)} .switch:checked::after{left:21px}
+.switch:disabled{opacity:.45;cursor:not-allowed}
+.switch:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.acct-list{display:grid;margin-top:14px;border-top:1px solid var(--rule)}
+.acct-item{display:flex;align-items:center;gap:12px;border-bottom:1px solid var(--rule)}
+.acct-open{all:unset;box-sizing:border-box;cursor:pointer;flex:1;min-width:0;display:flex;flex-direction:column;gap:5px;padding:14px 0}
+.acct-open b{font:700 16px/1.3 "Newsreader",Georgia,serif;color:var(--ink)} .acct-open:hover b{text-decoration:underline}
+.acct-open small{font-size:12.5px;color:var(--ink-3)}
+.acct-open:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.acct-rm{all:unset;cursor:pointer;flex:none;font:600 13px/1 var(--sans);color:var(--ink-3);padding:8px 10px;border-radius:8px} .acct-rm:hover{color:var(--warn,#c00);background:var(--bg-2)}
+.plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin-bottom:6px}
+.plan{display:flex;flex-direction:column;gap:6px;padding:20px;border:1px solid var(--tile-line);border-radius:16px}
+.plan.cur{border-color:var(--ink)}
+.plan-top{display:flex;align-items:center;justify-content:space-between;gap:8px} .plan-top b{font:700 18px/1.2 var(--sans);color:var(--ink)}
+.plan-badge{font:700 10.5px/1 var(--sans);letter-spacing:.05em;text-transform:uppercase;padding:5px 8px;border-radius:999px;background:var(--ink);color:var(--bg)}
+.plan-price{margin:6px 0 0;font:700 26px/1.1 "Newsreader",Georgia,serif;color:var(--ink)}
+.plan .muted{margin:0}
+.plan ul{margin:8px 0 14px;padding-left:18px;font-size:14px;line-height:1.55;color:var(--ink-2);flex:1}
+.plan .pillbtn{align-self:flex-start}
+.acct-faq{border-bottom:1px solid var(--rule);padding:14px 0}
+.acct-faq summary{cursor:pointer;font:600 15px/1.35 var(--sans);color:var(--ink)}
+.acct-faq p{margin:8px 0 0;font-size:14px;line-height:1.55;color:var(--ink-2)}
+.acct-body>.disc{margin-top:16px}
+.acct-close{position:absolute;top:16px;right:16px;z-index:2}
+html[data-text="large"] #sheet .sheet{zoom:1.12}
+@media (max-width:700px){
+  dialog.acct{width:100vw;height:100dvh;max-height:none;border-radius:0}
+  .acct-wrap{grid-template-columns:minmax(0,1fr);grid-template-rows:auto minmax(0,1fr)}
+  .acct-nav{flex-direction:row;overflow-x:auto;padding:14px 56px 10px 12px;border-right:0;border-bottom:1px solid var(--rule);gap:4px}
+  .acct-tab{flex:none;height:38px;padding:0 12px;font-size:13.5px} .acct-tab svg{display:none}
+  .acct-body{padding:20px 18px 28px}
+  .acct-close{top:12px;right:10px}
+  .set-row{flex-wrap:wrap} label.set-row{flex-wrap:nowrap} .field{min-width:0;width:100%}
+}
+.tl-pick{position:relative;display:inline-flex;align-items:center;gap:8px;height:38px;box-sizing:border-box;padding:0 34px 0 16px;border:1px solid var(--rule);border-radius:999px;background:var(--card);cursor:pointer}
+.tl-pick:hover{border-color:var(--ink-3)}
+.tl-pick:focus-within{outline:2px solid var(--accent);outline-offset:2px}
+.tl-lbl{font:700 11.5px/1 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
+.tl-pick select{all:unset;cursor:pointer;font:600 14px/1 var(--sans);color:var(--ink);padding:10px 0}
+.tl-pick select option{color:#1D1D1F;background:#fff}
+.tl-pick svg{position:absolute;right:12px;width:15px;height:15px;fill:none;stroke:var(--ink-2);stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;pointer-events:none}
+@media (max-width:600px){ .ranges{justify-content:flex-start} }
 </style>
 </head>
 <body data-rail="left">
@@ -879,12 +964,14 @@ footer{margin-top:28px;font-size:12.5px;color:var(--ink-3);line-height:1.6;width
   <div class="ctl">
     <div class="ctl-row ctl-filters">
       <div class="kinds-key" id="kindsKey" role="group" aria-label="Kind of report"></div>
-      <div class="ranges" id="rangeBtns" role="group" aria-label="How recent">
-        <button type="button" data-range="1" class="pill">24h</button><button type="button" data-range="3" class="pill">3 days</button><button type="button" data-range="7" class="pill">7 days</button><button type="button" data-range="0" class="pill">All</button>
+      <div class="ranges" id="rangeBtns">
+        <label class="tl-pick"><span class="tl-lbl">Timeline</span>
+          <select id="range" aria-label="Timeline: how far back to show stories">
+            <option value="1">Last 24 hours</option><option value="3">Last 3 days</option><option value="7">Last 7 days</option><option value="0">All stories</option>
+          </select>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </label>
       </div>
-      <select id="range" aria-hidden="true" tabindex="-1" hidden>
-        <option value="1">Last 24 hours</option><option value="3">Last 3 days</option><option value="7">Last 7 days</option><option value="0">All stories</option>
-      </select>
     </div>
   </div>
 
@@ -895,6 +982,7 @@ footer{margin-top:28px;font-size:12.5px;color:var(--ink-3);line-height:1.6;width
         <button class="railbtn" id="railBtn" type="button" aria-label="Collapse sectors" aria-expanded="true" aria-controls="side">☰</button>
       </div>
       <ul id="sideList"></ul>
+      <div class="side-foot"><button class="si acct-btn" id="acctBtn" type="button" aria-haspopup="dialog">Account</button></div>
     </aside>
     <div>
       <div class="toolbar">
@@ -919,6 +1007,13 @@ footer{margin-top:28px;font-size:12.5px;color:var(--ink-3);line-height:1.6;width
   </footer>
 </div>
 
+<dialog id="acct" class="acct" aria-labelledby="acctTitle">
+  <div class="acct-wrap">
+    <nav class="acct-nav" id="acctNav" role="tablist" aria-label="Account sections"></nav>
+    <div class="acct-body" id="acctBody"></div>
+  </div>
+  <button class="close acct-close" id="acctClose" type="button" aria-label="Close">✕</button>
+</dialog>
 <dialog id="sheet" aria-labelledby="sheetTitle">
   <button class="close" id="sheetClose" type="button" aria-label="Close">✕</button>
   <div class="sheet" id="sheetBody"></div>
@@ -941,6 +1036,7 @@ var VIEWS={
   domestic:{data:"india-domestic.json", rejected:"rejected-domestic.json", threads:"threads-domestic.json", archive:"archive/domestic/", sub:"The developments shaping India",    why:"Why it matters",       means:"What it means",           seen:"ie.seen.domestic.v1"}
 };
 var view = location.hash==="#inside" ? "domestic" : "global";
+try{ if(!location.hash){ var pv=(JSON.parse(localStorage.getItem("tcc.prefs")||"{}")||{}).view; if(pv==="domestic") view="domestic"; } }catch(e){}
 var docs={}, rejectedByView={}, lastUpdatedByView={}, threadsByView={}, archiveByView={};
 var OUTLET={bbc:"BBC News",guardian:"The Guardian",npr:"NPR",aljazeera:"Al Jazeera",mercopress:"MercoPress",abc:"ABC News",nyt:"The New York Times",cnbc:"CNBC",cbs:"CBS News",dw:"DW",france24:"France 24",africanews:"Africanews",scmp:"South China Morning Post",thehindu:"The Hindu",mint:"Mint"};
 var REGION={bbc:"Europe",guardian:"Europe",npr:"North America",aljazeera:"Asia",mercopress:"South America",abc:"Australia",nyt:"North America",cnbc:"North America",cbs:"North America",dw:"Europe",france24:"Europe",africanews:"Africa",scmp:"Asia",thehindu:"India",mint:"India"};
@@ -1409,7 +1505,8 @@ function renderSide(doc){
   var withItems=(doc.sectors||[]).filter(function(s){return counts[s.id];});
   var upN=upcoming().length;
   if(tab!=="all" && tab!=="saved" && tab!=="search" && !(tab==="upcoming" && upN) && !counts[tab]) tab="all";
-  [{id:"all",name:"Top Stories",n:events.length},{id:"saved",name:"Saved",n:savedForView(view).length}].concat(upN?[{id:"upcoming",name:"Upcoming dates",n:upN}]:[]).concat(withItems.map(function(s){return {id:s.id,name:s.name,n:counts[s.id]};})).forEach(function(t){
+  var fol=(prefs.follow||[]); withItems.sort(function(a,b){ return (fol.indexOf(a.id)<0) - (fol.indexOf(b.id)<0); });
+  [{id:"all",name:"Top Stories",n:events.length}].concat(upN?[{id:"upcoming",name:"Upcoming dates",n:upN}]:[]).concat(withItems.map(function(s){return {id:s.id,name:s.name,n:counts[s.id]};})).forEach(function(t){
     var li=el("li"), b=el("button","si"); b.type="button"; b.title=t.name+" ("+t.n+")";
     if(t.id!=="all") b.style.setProperty("--sc","var(--s-"+t.id+")");
     b.appendChild(icon(t.id)); b.setAttribute("aria-label",t.name+", "+t.n+" stories");
@@ -1889,6 +1986,159 @@ function startSearch(q){
   var m=$("main"); if(m && m.getBoundingClientRect().top<0) window.scrollTo(0, m.getBoundingClientRect().top+window.scrollY-90);
 }
 function syncSearchHash(){ try{ var base=(view==="domestic"?"#inside":""); history.replaceState(null,"", tab==="search"&&searchQ ? "#search="+encodeURIComponent(searchQ) : (base||location.pathname+location.search)); }catch(err){} }
+/* ---------- Account window: Account, Saved, Settings, Plan & payment, Help. Kept in this browser until sign-in exists. ---------- */
+var PREFS_KEY="tcc.prefs", prefs={};
+try{ prefs=JSON.parse(localStorage.getItem(PREFS_KEY)||"{}")||{}; }catch(err){ prefs={}; }
+function savePrefs(){ try{ localStorage.setItem(PREFS_KEY, JSON.stringify(prefs)); }catch(err){} }
+var REGIONS=[["IN","India",true],["GB","United Kingdom",false],["US","United States",false],["AE","United Arab Emirates",false],["SG","Singapore",false],["AU","Australia",false]];
+var acctTab="account";
+var USER_ICON='<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8.5" r="4"/><path d="M4.5 20.5c1.2-3.8 4.2-5.8 7.5-5.8s6.3 2 7.5 5.8"/></svg>';
+function initials(){ var n=String(prefs.name||"").trim(); if(!n) return ""; var p=n.split(/\s+/); return (p[0][0]+(p.length>1?p[p.length-1][0]:"")).toUpperCase(); }
+function avatar(cls){ var a=el("span","avatar"+(cls?" "+cls:"")); var i=initials(); if(i) a.textContent=i; else a.innerHTML=USER_ICON; return a; }
+function paintAcctButton(){
+  var b=$("acctBtn"); if(!b) return; b.textContent="";
+  b.appendChild(avatar());
+  var t=el("span","nm"); t.appendChild(el("b",null,prefs.name?String(prefs.name).trim():"Guest")); t.appendChild(el("small",null,"Account & settings")); b.appendChild(t);
+  b.title="Account & settings";
+}
+function themeNow(){ var t=null; try{ t=localStorage.getItem("tcc.theme"); }catch(e){} return t==="light"||t==="dark" ? t : "device"; }
+function setThemePref(t){
+  try{ if(t==="device") localStorage.removeItem("tcc.theme"); else localStorage.setItem("tcc.theme",t); }catch(e){}
+  var dark = t==="dark" || (t==="device" && window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches);
+  document.documentElement.setAttribute("data-theme", dark?"dark":"light");
+  var b=$("themeBtn"); if(b){ b.textContent=dark?"Light mode":"Dark mode"; b.setAttribute("aria-label","Switch to "+(dark?"light":"dark")+" theme"); }
+}
+function applyReadingPrefs(){
+  SHOW_IMAGES = prefs.photos!==false;
+  document.documentElement.setAttribute("data-text", prefs.largeText ? "large" : "normal");
+}
+function radioGroup(name, opts, value, onChange){
+  var g=el("div","seg-opt"); g.setAttribute("role","radiogroup");
+  opts.forEach(function(o){ var b=el("button",null,o[1]); b.type="button"; b.setAttribute("role","radio"); b.setAttribute("aria-checked",String(o[0]===value));
+    b.addEventListener("click",function(){ Array.prototype.forEach.call(g.children,function(x){ x.setAttribute("aria-checked","false"); }); b.setAttribute("aria-checked","true"); onChange(o[0]); }); g.appendChild(b); });
+  return g;
+}
+function toggleRow(label, help, on, onChange){
+  var r=el("label","set-row"), t=el("span","set-txt"); t.appendChild(el("b",null,label)); if(help) t.appendChild(el("small",null,help)); r.appendChild(t);
+  var sw=el("input","switch"); sw.type="checkbox"; sw.checked=!!on; sw.setAttribute("role","switch"); sw.addEventListener("change",function(){ onChange(sw.checked); }); r.appendChild(sw); return r;
+}
+function setRow(label, help, control){ var r=el("div","set-row"), t=el("span","set-txt"); t.appendChild(el("b",null,label)); if(help) t.appendChild(el("small",null,help)); r.appendChild(t); r.appendChild(control); return r; }
+function soon(){ return el("span","soon","Coming soon"); }
+
+var ACCT_TABS=[["account","Account"],["saved","Saved"],["settings","Settings"],["plan","Plan & payment"],["help","Help & about"]];
+var ACCT_ICONS={
+  account:'<circle cx="12" cy="8.5" r="4"/><path d="M4.5 20.5c1.2-3.8 4.2-5.8 7.5-5.8s6.3 2 7.5 5.8"/>',
+  saved:'<path d="M6.5 3.5h11v17l-5.5-3.8-5.5 3.8z"/>',
+  settings:'<circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/>',
+  plan:'<rect x="2.5" y="5.5" width="19" height="13" rx="2.5"/><path d="M2.5 10h19M6.5 15h4"/>',
+  help:'<circle cx="12" cy="12" r="9"/><path d="M9.5 9.2a2.6 2.6 0 0 1 5 .9c0 1.7-2.5 2.3-2.5 3.9M12 17.2v.1"/>'
+};
+function openAccount(t){
+  acctTab=t||acctTab||"account"; renderAccount();
+  var d=$("acct"); if(!d.open){ if(typeof d.showModal==="function") d.showModal(); else d.setAttribute("open",""); }
+  if(isPhone()) closeDrawer();
+}
+function renderAccount(){
+  var nav=$("acctNav"), body=$("acctBody"); nav.textContent=""; body.textContent=""; body.scrollTop=0;
+  ACCT_TABS.forEach(function(x){ var b=el("button","acct-tab"); b.type="button"; b.setAttribute("role","tab"); b.setAttribute("aria-selected",String(x[0]===acctTab));
+    b.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true">'+ACCT_ICONS[x[0]]+'</svg>'; b.appendChild(el("span",null,x[1]));
+    if(x[0]==="saved" && saved.length) b.appendChild(el("span","ct",String(saved.length)));
+    b.addEventListener("click",function(){ acctTab=x[0]; renderAccount(); }); nav.appendChild(b); });
+  var h=el("h2","acct-h",(ACCT_TABS.filter(function(x){ return x[0]===acctTab; })[0]||[])[1]); h.id="acctTitle"; body.appendChild(h);
+  ({account:acctAccount, saved:acctSaved, settings:acctSettings, plan:acctPlan, help:acctHelp})[acctTab](body);
+}
+function acctAccount(body){
+  var card=el("div","acct-card who"); card.appendChild(avatar("lg"));
+  var w=el("div"); w.appendChild(el("b",null,prefs.name?String(prefs.name).trim():"Guest reader"));
+  w.appendChild(el("p",null,"You're reading as a guest. Your saved stories and settings are kept in this browser on this device.")); card.appendChild(w); body.appendChild(card);
+  var si=el("section","acct-sec"); si.appendChild(el("h3",null,"Sign in"));
+  si.appendChild(el("p","muted","Sign in will keep your saved stories and settings across your phone and computer, and unlock alerts for the topics you follow."));
+  var row=el("div","acct-btns");
+  ["Continue with Google","Continue with email"].forEach(function(t){ var b=el("button","pillbtn",t); b.type="button"; b.disabled=true; row.appendChild(b); });
+  row.appendChild(soon()); si.appendChild(row); body.appendChild(si);
+  var pr=el("section","acct-sec"); pr.appendChild(el("h3",null,"Profile"));
+  var nm=el("input","field"); nm.type="text"; nm.maxLength=40; nm.placeholder="Your name (optional)"; nm.value=prefs.name||"";
+  nm.addEventListener("input",function(){ prefs.name=nm.value.slice(0,40); savePrefs(); paintAcctButton(); var a=body.querySelector(".who .avatar"); if(a){ var n=avatar("lg"); a.replaceWith(n); } var b=body.querySelector(".who b"); if(b) b.textContent=prefs.name&&prefs.name.trim()?prefs.name.trim():"Guest reader"; });
+  pr.appendChild(setRow("Name","Shown on this device only.",nm));
+  var rg=el("select","field"); REGIONS.forEach(function(r){ var o=el("option",null,r[1]+(r[2]?"":" · coming soon")); o.value=r[0]; o.disabled=!r[2]; rg.appendChild(o); }); rg.value=prefs.region||"IN";
+  rg.addEventListener("change",function(){ prefs.region=rg.value; savePrefs(); });
+  pr.appendChild(setRow("Your location","Sets whose news comes first: local stories, then the world news that reaches you. India is live; more countries are on the way.",rg));
+  body.appendChild(pr);
+  var it=el("section","acct-sec"); it.appendChild(el("h3",null,"Sectors you follow"));
+  it.appendChild(el("p","muted","Followed sectors appear first in the side panel."));
+  var chips=el("div","sr-chips"), fol=prefs.follow||[];
+  ((current&&current.sectors)||[]).forEach(function(s){ var on=fol.indexOf(s.id)>=0, b=el("button","pill",s.name); b.type="button"; b.setAttribute("aria-pressed",String(on));
+    b.addEventListener("click",function(){ var f=prefs.follow||[], i=f.indexOf(s.id); if(i>=0) f.splice(i,1); else f.push(s.id); prefs.follow=f; savePrefs(); b.setAttribute("aria-pressed",String(i<0)); if(current) renderSide(current); });
+    chips.appendChild(b); });
+  it.appendChild(chips); body.appendChild(it);
+}
+function acctSaved(body){
+  var filt=acctSaved.f||"all", bar=el("div","sr-chips");
+  [["all","All",saved.length],["global","Global impact",savedForView("global").length],["domestic","Inside India",savedForView("domestic").length]].forEach(function(o){
+    bar.appendChild(chipBtn(o[1], filt===o[0], function(){ acctSaved.f=o[0]; renderAccount(); }, o[2])); });
+  body.appendChild(bar);
+  var list=saved.filter(function(x){ return filt==="all" || x.view===filt; });
+  if(!list.length){ body.appendChild(el("div","state", saved.length ? "Nothing saved in this view yet." : "No saved stories yet. Tap the bookmark on any story and it will be kept here.")); }
+  var ul=el("div","acct-list");
+  list.forEach(function(x){
+    var live=null; ["global","domestic"].forEach(function(v){ if(live||!docs[v]) return; (docs[v].sectors||[]).forEach(function(s){ (s.items||[]).forEach(function(it){ if(it.id===x.id) live={it:it, sector:s, view:v}; }); }); });
+    var e=live || {it:x.it, sector:x.sector, view:x.view};
+    var r=el("div","acct-item"), main=el("button","acct-open"); main.type="button";
+    var meta=el("span","nc-meta"); meta.appendChild(el("span","sr-view",VIEW_NAME[x.view]||"")); var sc=el("span","nc-sec"); sc.style.setProperty("--sc","var(--s-"+e.sector.id+")"); sc.appendChild(el("i","nc-dot")); sc.appendChild(document.createTextNode(e.sector.name)); meta.appendChild(sc);
+    main.appendChild(meta); main.appendChild(el("b",null,e.it.headline));
+    main.appendChild(el("small",null,"Saved "+new Date(x.savedAt).toLocaleDateString("en-GB",{day:"numeric",month:"short"})+(live?"":" · no longer in the live feed, kept as saved")));
+    main.addEventListener("click",function(){ $("acct").close(); openSheet(e); });
+    var rm=el("button","acct-rm","Remove"); rm.type="button"; rm.addEventListener("click",function(){ saved=saved.filter(function(y){ return y.id!==x.id; }); persistSaved(); renderAccount(); if(current) render(current); });
+    r.appendChild(main); r.appendChild(rm); ul.appendChild(r);
+  });
+  body.appendChild(ul);
+  body.appendChild(el("p","quiet","Saved stories stay in this browser on this device until sign-in is available."));
+}
+function acctSettings(body){
+  var ap=el("section","acct-sec"); ap.appendChild(el("h3",null,"Appearance"));
+  ap.appendChild(setRow("Theme",null, radioGroup("theme",[["light","Light"],["dark","Dark"],["device","Match device"]], themeNow(), setThemePref)));
+  ap.appendChild(toggleRow("Larger text in stories","Makes the story window easier to read.", prefs.largeText, function(v){ prefs.largeText=v; savePrefs(); applyReadingPrefs(); }));
+  body.appendChild(ap);
+  var rd=el("section","acct-sec"); rd.appendChild(el("h3",null,"Reading"));
+  rd.appendChild(setRow("Open the site on",null, radioGroup("view",[["global","Global impact"],["domestic","Inside India"]], prefs.view||"global", function(v){ prefs.view=v; savePrefs(); })));
+  var tl=el("select","field"); [["1","Last 24 hours"],["3","Last 3 days"],["7","Last 7 days"],["0","All stories"]].forEach(function(o){ var op=el("option",null,o[1]); op.value=o[0]; tl.appendChild(op); }); tl.value=String(range);
+  tl.addEventListener("change",function(){ $("range").value=tl.value; $("range").dispatchEvent(new Event("change")); });
+  rd.appendChild(setRow("Timeline","How far back the front page goes.", tl));
+  rd.appendChild(toggleRow("Show photos","Turn off to save mobile data; stories show a sector panel instead.", prefs.photos!==false, function(v){ prefs.photos=v; savePrefs(); applyReadingPrefs(); if(current) render(current); }));
+  body.appendChild(rd);
+  var nt=el("section","acct-sec"); nt.appendChild(el("h3",null,"Alerts"));
+  var a1=toggleRow("Daily briefing by email","The day's biggest stories for your location, each morning.", false, function(){}); a1.querySelector("input").disabled=true; a1.querySelector(".set-txt b").appendChild(soon()); nt.appendChild(a1);
+  var a2=toggleRow("Alerts for sectors you follow","A notice when a high-exposure story breaks.", false, function(){}); a2.querySelector("input").disabled=true; a2.querySelector(".set-txt b").appendChild(soon()); nt.appendChild(a2);
+  body.appendChild(nt);
+  var dt=el("section","acct-sec"); dt.appendChild(el("h3",null,"Data on this device"));
+  var row=el("div","acct-btns");
+  var c1=el("button","pillbtn","Clear saved stories"); c1.type="button"; c1.addEventListener("click",function(){ if(!saved.length) return; if(c1.dataset.sure){ saved=[]; persistSaved(); c1.textContent="Cleared"; if(current) render(current); } else { c1.dataset.sure="1"; c1.textContent="Tap again to clear "+saved.length; } });
+  var c2=el("button","pillbtn","Reset settings"); c2.type="button"; c2.addEventListener("click",function(){ prefs={}; savePrefs(); setThemePref("device"); applyReadingPrefs(); paintAcctButton(); if(current) render(current); renderAccount(); });
+  row.appendChild(c1); row.appendChild(c2); dt.appendChild(row); body.appendChild(dt);
+}
+function acctPlan(body){
+  var grid=el("div","plans");
+  function plan(name, price, sub, feats, current, cta){
+    var c=el("div","plan"+(current?" cur":"")); var top=el("div","plan-top"); top.appendChild(el("b",null,name)); if(current) top.appendChild(el("span","plan-badge","Your plan")); c.appendChild(top);
+    c.appendChild(el("p","plan-price",price)); c.appendChild(el("p","muted",sub));
+    var ul=el("ul"); feats.forEach(function(f){ ul.appendChild(el("li",null,f)); }); c.appendChild(ul);
+    var b=el("button","pillbtn"+(current?"":" primary"),cta); b.type="button"; b.disabled=true; c.appendChild(b); return c; }
+  grid.appendChild(plan("Free","₹0","During the beta",["Every story on Global impact and Inside India","Impact analysis, gauges and official statistics","Search across all stories","Save stories on this device"],true,"Current plan"));
+  grid.appendChild(plan("Pro","Price to be announced","Planned",["Your location and sectors first","Daily briefing and alerts","Dates to watch, in your calendar","Saved stories on all your devices","Full archive and deeper statistics"],false,"Coming soon"));
+  body.appendChild(grid);
+  var pm=el("section","acct-sec"); pm.appendChild(el("h3",null,"Payment method"));
+  pm.appendChild(el("p","muted","No payment method needed on the free plan. UPI, cards and net banking will be accepted when Pro launches."));
+  body.appendChild(pm);
+  var bh=el("section","acct-sec"); bh.appendChild(el("h3",null,"Billing history")); bh.appendChild(el("p","muted","No payments yet.")); body.appendChild(bh);
+}
+function acctHelp(body){
+  [["What is The Continent Connect?","News that reaches India, explained: each story comes with what it means for people and businesses here, how exposed India is, when the effect is likely to be felt, and official figures behind it."],
+   ["Where do the stories come from?","Global impact reads 13 international outlets on six continents; Inside India reads Indian outlets. Each story links to every outlet's own report."],
+   ["How are the gauges decided?","Exposure, timing and confidence follow fixed rules shown under the ⓘ next to each gauge. High confidence needs at least three outlets."],
+   ["Is this financial advice?","No. The analysis explains how events reach people; it never recommends buying, selling or timing anything."]].forEach(function(q){
+    var d=el("details","acct-faq"); d.appendChild(el("summary",null,q[0])); d.appendChild(el("p",null,q[1])); body.appendChild(d); });
+  body.appendChild(el("p","disc","The analysis, gauges and implications are AI-generated, not reported fact, and may be wrong."));
+}
 /* Story sheet with the analysis and links to each outlet's report. */
 var sheetView="global";
 function openSheet(e){
@@ -2051,7 +2301,13 @@ function refresh(){
     if(v===view && !docs[v]){ $("main").textContent=""; $("main").appendChild(el("div","state", v==="domestic" ? "The Inside India desk hasn't published yet. Its stories will appear here automatically after the next update." : "The desk hasn't published any stories yet. They will appear here automatically after its first update.")); }
   });
 }
+applyReadingPrefs();
 setView(view,false);
+paintAcctButton();
+$("acctBtn").addEventListener("click",function(){ openAccount(); });
+$("acctClose").addEventListener("click",function(){ $("acct").close(); });
+$("acct").addEventListener("click",function(ev){ if(ev.target===this) this.close(); });
+$("acct").addEventListener("close",function(){ paintAcctButton(); });
 /* Search box: results update as you type; "/" jumps to it; the address keeps the search so it can be shared */
 (function(){
   var inp=$("searchInput"), box=$("searchBox"), timer=null;
