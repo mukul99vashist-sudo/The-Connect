@@ -946,6 +946,19 @@ html[data-text="large"] #sheet .sheet{zoom:1.12}
 #rangeBtns{margin-left:auto}
 @media (max-width:600px){ #rangeBtns{margin-left:0} }
 @media (max-width:700px){ .sbox.open,.sbox.has,.sbox:focus-within{top:auto;bottom:0} }
+/* v52: fuller analysis text (v3): affected groups as sentences, background, terms explained */
+.fw-aff{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.aff.long span{font-size:13.5px;line-height:1.5;color:var(--ink-2)}
+.fw-bg{border-left:3px solid var(--rule);padding-left:14px}
+.fw-bg p{margin:0 0 8px;font-size:15px;line-height:1.6;color:var(--ink-2)}
+.fw-bg .fw-sub{margin-left:8px;font:500 11px/1 var(--sans);letter-spacing:0;text-transform:none;color:var(--ink-3)}
+.fw-terms{display:grid;grid-template-columns:minmax(120px,max-content) minmax(0,1fr);gap:8px 18px;margin:0;font-size:14.5px;line-height:1.5}
+.fw-terms dt{font-weight:700;color:var(--ink)} .fw-terms dd{margin:0;color:var(--ink-2)}
+@media (max-width:600px){ .fw-terms{grid-template-columns:minmax(0,1fr);gap:2px} .fw-terms dd{margin-bottom:10px} }
+.fw-watch .why{display:block;margin-top:2px;font-size:13.5px;color:var(--ink-2)}
+.fw-drivers.long{flex-direction:column;gap:8px}
+.fw-drivers.long li{border:0;border-radius:0;padding:0;align-items:flex-start;font-size:14px;line-height:1.5}
+.fw-drivers.long li b{margin-right:4px}
 </style>
 </head>
 <body data-rail="left">
@@ -1171,7 +1184,7 @@ var FW_RENDER={
     var ol=el("ol","fw-stage"); f.stages.forEach(function(x){ var li=el("li",x.status==="done"?"done":x.status==="current"?"now":null); li.appendChild(el("b",null,STAGE_WORD[x.stage]||x.stage)); if(x.date) li.appendChild(el("span",null,x.date)); ol.appendChild(li); }); s.appendChild(ol);
     if(f.obligations&&f.obligations.length){ var t=el("table","fw-table"), hd=el("tr"); ["Who","Must do","From"].forEach(function(h){ hd.appendChild(el("th",null,h)); }); t.appendChild(hd);
       f.obligations.forEach(function(o){ var tr=el("tr"); tr.appendChild(el("td",null,o.who)); tr.appendChild(el("td",null,o.what)); tr.appendChild(el("td",null,o.from||"—")); t.appendChild(tr); }); s.appendChild(t); }
-    s.appendChild(el("p","fw-next","Applies to Indian entities: "+cap(f.applies_to_india))); },
+    s.appendChild(el("p","fw-next","Applies to Indian entities: "+cap(f.applies_to_india)+(f.india_note?". "+f.india_note:""))); },
   decoder:function(f,s){ var g=el("div","fw-figs");
     if(f.headline){ var h=f.headline, fig=el("div","fig big"); fig.appendChild(el("div","lbl",h.label+(h.period?" · "+h.period:""))); var v=el("div","val",h.value!==null?fmtNum(h.value):"Not stated"); if(h.value!==null&&h.unit) v.appendChild(el("small",null,h.unit)); fig.appendChild(v);
       if(f.decision) fig.appendChild(chip(cap(f.decision.action)+(f.decision.size?" · "+f.decision.size:""),"accent"));
@@ -1180,7 +1193,9 @@ var FW_RENDER={
     (f.comparisons||[]).forEach(function(c){ var fig=el("div","fig"); fig.appendChild(el("div","lbl",c.label)); var v=el("div","val",fmtNum(c.value)); if(c.unit) v.appendChild(el("small",null,c.unit)); fig.appendChild(v); if(c.from) fig.appendChild(el("div","src","Source: "+c.from)); g.appendChild(fig); });
     if(g.children.length) s.appendChild(g);
     if(f.decision&&f.decision.stance) s.appendChild(el("p","fw-next","Stance: "+f.decision.stance));
-    if(f.drivers&&f.drivers.length){ var ul=el("ul","fw-drivers"); f.drivers.forEach(function(d){ var li=el("li"); li.appendChild(el("span","arrow",ARROW[d.direction]||"↕")); li.appendChild(document.createTextNode(tidyText(d.name))); ul.appendChild(li); }); s.appendChild(el("div","k","What drove it, as stated")); s.appendChild(ul); } },
+    if(f.drivers&&f.drivers.length){ var withHow=f.drivers.some(function(d){ return d.how; }), ul=el("ul","fw-drivers"+(withHow?" long":""));
+      f.drivers.forEach(function(d){ var li=el("li"); li.appendChild(el("span","arrow",ARROW[d.direction]||"↕")); var t=el("span"); t.appendChild(el("b",null,d.name)); if(d.how) t.appendChild(document.createTextNode(" "+tidyText(d.how))); li.appendChild(t); ul.appendChild(li); });
+      s.appendChild(el("div","k","What drove it, as stated")); s.appendChild(ul); } },
   pass_through:function(f,s){ s.appendChild(el("p","fw-inst",(f.driver.variable||"Price")+" "+(f.driver.direction==="down"?"falls":"rises")+(f.driver.size?" ("+f.driver.size+")":"")+" → "+(f.product||"what you pay")));
     var ol=el("ol","fw-ladder"); f.rungs.forEach(function(r){ var li=el("li","p-"+r.pass); var top=el("div","rt"); top.appendChild(el("b",null,r.stage)); top.appendChild(el("span","lag",cap(r.lag))); li.appendChild(top); var tr=el("div","rtrack"); tr.appendChild(el("div","rfill")); li.appendChild(tr);
       var meta=el("div","rmeta"); meta.appendChild(chip({likely:"Passes through",partial:"Partly passes",blocked:"Blocked",unclear:"Unclear"}[r.pass],"p-"+r.pass)); if(r.damper) meta.appendChild(el("span",null,r.damper)); li.appendChild(meta); ol.appendChild(li); });
@@ -1257,11 +1272,15 @@ function renderFramework(it){
     b.appendChild(basis); }
   [a.primary,a.complement].forEach(function(k){ var f=k && a.frameworks[k]; if(!f || !FW_RENDER[k]) return; var s=sec(FW_NAME[k], k===a.complement?"Deep-dive complement":null); s.classList.add("fw-"+k); try{ FW_RENDER[k](f,s); }catch(e){ return; } b.appendChild(s); });
   if(a.affected&&a.affected.length){ var af=sec("Who in India feels it"), ag=el("div","fw-aff");
-    a.affected.forEach(function(x){ var d=el("div","aff"+(x.basis==="inferred"?" inf":"")); d.appendChild(el("span","arrow",ARROW[x.direction]||"?")); var t=el("b",null,x.group); d.appendChild(t); d.appendChild(el("span",null,(x.what?cap(x.what)+" "+(DIR_WORD[x.direction]||""):"")+(x.basis==="inferred"?" · inferred":""))); ag.appendChild(d); });
+    a.affected.forEach(function(x){ var d=el("div","aff"+(x.basis==="inferred"?" inf":"")+(x.effect?" long":"")); d.appendChild(el("span","arrow",ARROW[x.direction]||"?")); var t=el("b",null,x.group); d.appendChild(t);
+      // v3 analyses carry a full sentence; older ones a short label
+      d.appendChild(el("span",null, x.effect ? x.effect+(x.basis==="inferred"?" (inferred)":"") : (x.what?cap(x.what)+" "+(DIR_WORD[x.direction]||""):"")+(x.basis==="inferred"?" · inferred":""))); ag.appendChild(d); });
     af.appendChild(ag); b.appendChild(af); }
   if((it.implications||[]).length){ var im=sec("Implications"), ul=el("ul","fw-list"); it.implications.forEach(function(x){ ul.appendChild(el("li",null,x)); }); im.appendChild(ul); b.appendChild(im); }
-  if(a.watch&&a.watch.length){ var w=sec("What to watch"), wl=el("ul","fw-watch"); a.watch.forEach(function(x){ var li=el("li"); li.appendChild(el("span","when",x.when||"Next")); var t=el("span",null,x.what); if(x.where) t.appendChild(el("em",null," · check: "+x.where)); li.appendChild(t); wl.appendChild(li); }); w.appendChild(wl); b.appendChild(w); }
-  b.appendChild(el("p","fw-foot disc","Written by AI from the reports listed below. Figures are shown only when they appear in those reports."));
+  if(a.context&&a.context.length){ var bg=sec("Background","General context, not taken from the reports"); bg.classList.add("fw-bg"); a.context.forEach(function(x){ bg.appendChild(el("p",null,x)); }); b.appendChild(bg); }
+  if(a.terms&&a.terms.length){ var tm=sec("Terms explained"), dl=el("dl","fw-terms"); a.terms.forEach(function(x){ dl.appendChild(el("dt",null,x.term)); dl.appendChild(el("dd",null,x.meaning)); }); tm.appendChild(dl); b.appendChild(tm); }
+  if(a.watch&&a.watch.length){ var w=sec("What to watch"), wl=el("ul","fw-watch"); a.watch.forEach(function(x){ var li=el("li"); li.appendChild(el("span","when",x.when||"Next")); var t=el("span",null,x.what); if(x.why) t.appendChild(el("span","why",x.why)); if(x.where) t.appendChild(el("em",null," · Check: "+x.where)); li.appendChild(t); wl.appendChild(li); }); w.appendChild(wl); b.appendChild(w); }
+  b.appendChild(el("p","fw-foot disc","Written by AI from the reports listed below. Figures are shown only when they appear in those reports"+(a.context&&a.context.length?"; Background is general context and adds no figures":"")+"."));
   b.appendChild(el("p","fw-foot disc","Nothing here is financial or investment advice."));
   return b;
 }
@@ -2178,7 +2197,7 @@ function openSheet(e){
   head.appendChild(byline(it,true));
   body.appendChild(head);
 
-  var hasFw=!!(it.analysis && it.analysis.v===2 && it.analysis.frameworks);
+  var hasFw=!!(it.analysis && it.analysis.v>=2 && it.analysis.frameworks);
   var left=el("div","panel"+(hasFw?" full":""));
   if(hasFw){
     left.appendChild(renderFramework(it));
