@@ -2,12 +2,145 @@
   "schema": 4,
   "region": "India",
   "since": "2026-10-02",
-  "updatedAt": "2026-10-18T23:24:33.606Z",
+  "updatedAt": "2026-10-19T04:58:14.295Z",
   "sectors": [
     {
       "id": "energy",
       "name": "Energy",
       "items": [
+        {
+          "id": "s10hmaa7",
+          "headline": "Petrol and diesel prices today, October 18: How much does fuel cost in Delhi, Mumbai, Bengaluru",
+          "url": "https://www.livemint.com/news/india/petrol-and-diesel-prices-today-october-18-how-much-does-fuel-cost-in-delhi-mumbai-bengaluru-11792292112754.html",
+          "source": "mint",
+          "date": "2026-10-18T03:28:11.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2026/10/18/1600x900/logo/INDIA-DIESEL-SALES-0_1792293990998_uD6L_1792294006455_Xc9Y_d7aca5e8-10cd-4865-b93d-d87c9a092026_O6LM.JPG",
+          "why": "Mint reports that retail petrol and diesel prices are unchanged despite fluctuating global crude amid Middle East tensions, so pump prices are steady for now.",
+          "implications": [
+            "Mint reports that domestic retail fuel prices have stayed unchanged even as global crude has fluctuated.",
+            "If crude stays volatile, pressure on fuel costs could build, but the report gives no sign of a pump-price change."
+          ],
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-18T04:50:54.061Z",
+            "tier": "quick",
+            "primary": "pass_through",
+            "complement": null,
+            "features": [
+              "price_move"
+            ],
+            "exposure": {
+              "level": "high",
+              "reason": "Petrol and diesel are household essentials, and crude price swings could eventually affect them."
+            },
+            "horizon": {
+              "value": "now",
+              "reason": "Prices are unchanged today; any change would show at pumps."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "Single outlet, no official source quoted, and no explanation of why prices are steady."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "pump prices unchanged for now",
+                "basis": "reported"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Any change in daily petrol and diesel prices in Delhi, Mumbai and Bengaluru",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "frameworks": {
+              "pass_through": {
+                "driver": {
+                  "variable": "Global crude oil prices (fluctuating amid Middle E",
+                  "direction": "up",
+                  "size": ""
+                },
+                "product": "petrol & diesel",
+                "rungs": [
+                  {
+                    "stage": "Global crude price → Refiners' cost",
+                    "pass": "likely",
+                    "damper": "Report does not describe import or contract arrangements.",
+                    "lag": "weeks"
+                  },
+                  {
+                    "stage": "Refiners' cost → Pump price",
+                    "pass": "unclear",
+                    "damper": "Retail prices unchanged; the report does not say why.",
+                    "lag": "weeks"
+                  },
+                  {
+                    "stage": "Pump price → Household and transport costs",
+                    "pass": "unclear",
+                    "damper": "No pump-price change reported, so no knock-on yet.",
+                    "lag": "weeks"
+                  }
+                ],
+                "end_user": {
+                  "group": "Fuel & LPG users",
+                  "effect": "Pump prices are steady for now; future crude moves may or may not reach them."
+                }
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "Petrol and diesel prices today, October 18: How much does fuel cost in Delhi, Mumbai, Bengaluru",
+              "url": "https://www.livemint.com/news/india/petrol-and-diesel-prices-today-october-18-how-much-does-fuel-cost-in-delhi-mumbai-bengaluru-11792292112754.html",
+              "date": "2026-10-18T03:28:11.000Z",
+              "kind": "hard",
+              "summary": "While global crude oil prices have fluctuated amid escalating geopolitical tensions in the Middle East, domestic retail prices have remained unchanged.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/10/18/1600x900/logo/INDIA-DIESEL-SALES-0_1792293990998_uD6L_1792294006455_Xc9Y_d7aca5e8-10cd-4865-b93d-d87c9a092026_O6LM.JPG"
+            },
+            {
+              "source": "mint",
+              "headline": "Petrol and diesel prices today, October 19: Check fuel cost in Delhi, Mumbai, Bengaluru",
+              "url": "https://www.livemint.com/news/india/petrol-and-diesel-prices-today-october-19-check-fuel-cost-in-delhi-mumbai-bengaluru-11792371715733.html",
+              "date": "2026-10-19T01:30:04.000Z",
+              "kind": "hard",
+              "summary": "At ₹102.12 per litre, petrol is relatively cheaper in Delhi than in other major metros.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/10/19/1600x900/logo/UGANDA-HIKES--9_1792371869995_bMID_1792371884031_NyWC_0291ab6b-b9cd-40f9-9f27-39fb7e3d6380_ZSPj.JPG"
+            }
+          ],
+          "thread": "to54n4o"
+        },
+        {
+          "id": "s1f0doqq",
+          "headline": "What lies beyond India’s E20 push",
+          "url": "https://www.thehindu.com/business/Economy/what-lies-beyond-indias-e20-push/article71472275.ece",
+          "source": "thehindu",
+          "date": "2026-10-18T16:18:14.000Z",
+          "relevance": "medium",
+          "image": "https://th-i.thgim.com/public/news/national/8cvikn/article71474011.ece/alternates/LANDSCAPE_1200/iStock-2265290727.jpg",
+          "why": "",
+          "implications": [],
+          "reports": [
+            {
+              "source": "thehindu",
+              "headline": "What lies beyond India’s E20 push",
+              "url": "https://www.thehindu.com/business/Economy/what-lies-beyond-indias-e20-push/article71472275.ece",
+              "date": "2026-10-18T16:18:14.000Z",
+              "kind": "feature",
+              "summary": "The E20 blend’s promised savings were offset by lower mileage, with consumers spending an estimated ₹88,234 cr.",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/news/national/8cvikn/article71474011.ece/alternates/LANDSCAPE_1200/iStock-2265290727.jpg"
+            }
+          ],
+          "thread": "t192cven"
+        },
         {
           "id": "s1ezggts",
           "headline": "Why Brent crude could hit $120 amid Iran war? What it means for India as analysts warn oil prices to remain volatile",
@@ -146,105 +279,6 @@
             }
           ],
           "thread": "t91kd5w"
-        },
-        {
-          "id": "s10hmaa7",
-          "headline": "Petrol and diesel prices today, October 18: How much does fuel cost in Delhi, Mumbai, Bengaluru",
-          "url": "https://www.livemint.com/news/india/petrol-and-diesel-prices-today-october-18-how-much-does-fuel-cost-in-delhi-mumbai-bengaluru-11792292112754.html",
-          "source": "mint",
-          "date": "2026-10-18T03:28:11.000Z",
-          "relevance": "medium",
-          "image": "https://www.livemint.com/lm-img/img/2026/10/18/1600x900/logo/INDIA-DIESEL-SALES-0_1792293990998_uD6L_1792294006455_Xc9Y_d7aca5e8-10cd-4865-b93d-d87c9a092026_O6LM.JPG",
-          "why": "Mint reports that retail petrol and diesel prices are unchanged despite fluctuating global crude amid Middle East tensions, so pump prices are steady for now.",
-          "implications": [
-            "Mint reports that domestic retail fuel prices have stayed unchanged even as global crude has fluctuated.",
-            "If crude stays volatile, pressure on fuel costs could build, but the report gives no sign of a pump-price change."
-          ],
-          "analysis": {
-            "v": 2,
-            "at": "2026-10-18T04:50:54.061Z",
-            "tier": "quick",
-            "primary": "pass_through",
-            "complement": null,
-            "features": [
-              "price_move"
-            ],
-            "exposure": {
-              "level": "high",
-              "reason": "Petrol and diesel are household essentials, and crude price swings could eventually affect them."
-            },
-            "horizon": {
-              "value": "now",
-              "reason": "Prices are unchanged today; any change would show at pumps."
-            },
-            "confidence": {
-              "level": "low",
-              "reason": "Single outlet, no official source quoted, and no explanation of why prices are steady."
-            },
-            "outlets": 1,
-            "affected": [
-              {
-                "group": "Fuel & LPG users",
-                "direction": "unclear",
-                "what": "pump prices unchanged for now",
-                "basis": "reported"
-              }
-            ],
-            "watch": [
-              {
-                "what": "Any change in daily petrol and diesel prices in Delhi, Mumbai and Bengaluru",
-                "when": "",
-                "where": ""
-              }
-            ],
-            "frameworks": {
-              "pass_through": {
-                "driver": {
-                  "variable": "Global crude oil prices (fluctuating amid Middle E",
-                  "direction": "up",
-                  "size": ""
-                },
-                "product": "petrol & diesel",
-                "rungs": [
-                  {
-                    "stage": "Global crude price → Refiners' cost",
-                    "pass": "likely",
-                    "damper": "Report does not describe import or contract arrangements.",
-                    "lag": "weeks"
-                  },
-                  {
-                    "stage": "Refiners' cost → Pump price",
-                    "pass": "unclear",
-                    "damper": "Retail prices unchanged; the report does not say why.",
-                    "lag": "weeks"
-                  },
-                  {
-                    "stage": "Pump price → Household and transport costs",
-                    "pass": "unclear",
-                    "damper": "No pump-price change reported, so no knock-on yet.",
-                    "lag": "weeks"
-                  }
-                ],
-                "end_user": {
-                  "group": "Fuel & LPG users",
-                  "effect": "Pump prices are steady for now; future crude moves may or may not reach them."
-                }
-              }
-            }
-          },
-          "reports": [
-            {
-              "source": "mint",
-              "headline": "Petrol and diesel prices today, October 18: How much does fuel cost in Delhi, Mumbai, Bengaluru",
-              "url": "https://www.livemint.com/news/india/petrol-and-diesel-prices-today-october-18-how-much-does-fuel-cost-in-delhi-mumbai-bengaluru-11792292112754.html",
-              "date": "2026-10-18T03:28:11.000Z",
-              "kind": "hard",
-              "summary": "While global crude oil prices have fluctuated amid escalating geopolitical tensions in the Middle East, domestic retail prices have remained unchanged.",
-              "summaryV": 3,
-              "image": "https://www.livemint.com/lm-img/img/2026/10/18/1600x900/logo/INDIA-DIESEL-SALES-0_1792293990998_uD6L_1792294006455_Xc9Y_d7aca5e8-10cd-4865-b93d-d87c9a092026_O6LM.JPG"
-            }
-          ],
-          "thread": "to54n4o"
         },
         {
           "id": "s8v4x8k",
@@ -4669,6 +4703,237 @@
       "name": "Economy & Trade",
       "items": [
         {
+          "id": "s1mnspo3",
+          "headline": "Jaishankar ‘summoned’ by Marco Rubio? MEA clarifies Mumbai meet amid Congress criticism; says energy, trade on agenda",
+          "url": "https://www.livemint.com/news/india/jaishankar-summoned-by-marco-rubio-mea-clarifies-mumbai-meet-amid-congress-criticism-says-energy-trade-on-agenda-11792205501440.html",
+          "source": "mint",
+          "date": "2026-10-17T03:11:00.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2026/10/17/1600x900/logo/MEA_1792205664297_Rp3I_1792205668466_SEoq_cfd11351-2c73-46d2-ab44-86e09599bb94_pnp8.jpg",
+          "why": "Back-to-back Mumbai talks with US Secretary of State Rubio and the UAE foreign minister put energy and trade on the agenda amid strained India-US ties.",
+          "implications": [
+            "MEA says energy and trade are on the agenda, so any outcomes could shape India's energy and trade relations with the US and UAE.",
+            "Mint reports that Rubio's visit to Reliance's Jamnagar refinery highlights a business, energy and trade focus amid strained ties under Trump.",
+            "Congress criticised Jaishankar being 'summoned' to Mumbai, while MEA says hosting leaders outside the national capital is normal practice."
+          ],
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-18T04:51:53.794Z",
+            "tier": "standard",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "Bilateral diplomacy with energy and trade on the agenda; no concrete measures reported yet."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Any agreements would take time to affect trade flows."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "Two outlets and on-record MEA spokesperson; no outcomes reported yet."
+            },
+            "outlets": 2,
+            "affected": [
+              {
+                "group": "Large exporters",
+                "direction": "unclear",
+                "what": "US trade terms",
+                "basis": "inferred"
+              },
+              {
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "energy supply arrangements",
+                "basis": "inferred"
+              },
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "trade conditions with US, UAE",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Jaishankar hosts UAE Foreign Minister Sheikh Abdullah bin Zayed in Mumbai",
+                "when": "2026-10-19",
+                "where": "Ministry of External Affairs"
+              },
+              {
+                "what": "Jaishankar-Rubio talks in Mumbai and Rubio's Jamnagar refinery visit",
+                "when": "next week",
+                "where": "Ministry of External Affairs"
+              },
+              {
+                "what": "Any announced energy or trade outcomes from the meetings",
+                "when": "",
+                "where": "Ministry of External Affairs"
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Mumbai talks with Rubio, UAE FM",
+                    "detail": "Jaishankar hosts back-to-back separate visits in Mumbai, per MEA.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Energy and trade on agenda",
+                    "detail": "MEA says energy and trade feature; Rubio to visit Jamnagar refinery.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Possible energy, trade understandings",
+                    "detail": "Talks could produce arrangements on energy supply or trade terms.",
+                    "basis": "inferred"
+                  },
+                  {
+                    "step": "Effects on refiners, exporters",
+                    "detail": "Any deals may affect Indian refiners, exporters and energy supply conditions.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "Talks end without energy or trade outcomes, or India-US ties strain further."
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "Jaishankar ‘summoned’ by Marco Rubio? MEA clarifies Mumbai meet amid Congress criticism; says energy, trade on agenda",
+              "url": "https://www.livemint.com/news/india/jaishankar-summoned-by-marco-rubio-mea-clarifies-mumbai-meet-amid-congress-criticism-says-energy-trade-on-agenda-11792205501440.html",
+              "date": "2026-10-17T03:11:00.000Z",
+              "kind": "hard",
+              "summary": "MEA spokesperson Randhir Jaiswal said that External Affairs Minister Jaishankar will host the Deputy Prime Minister and Foreign Minister of the UAE Sheikh Abdullah bin Zayed Al Nahyan, in Mumbai on October 19 and 20, 2026.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/10/17/1600x900/logo/MEA_1792205664297_Rp3I_1792205668466_SEoq_cfd11351-2c73-46d2-ab44-86e09599bb94_pnp8.jpg"
+            },
+            {
+              "source": "mint",
+              "headline": "Why is Marco Rubio skipping Delhi for Mumbai and Reliance hub Jamnagar? What it signals about India-US ties under Trump",
+              "url": "https://www.livemint.com/news/india/why-is-marco-rubio-skipping-delhi-for-mumbai-and-reliance-hub-jamnagar-what-it-signals-about-india-us-ties-under-trump-11792256624695.html",
+              "date": "2026-10-17T18:25:00.000Z",
+              "kind": "feature",
+              "summary": "US Secretary of State Marco Rubio’s decision to hold talks in Mumbai and visit Reliance Industries’ Jamnagar refinery highlights the business, energy and trade focus of his India trip. The itinerary has sparked a diplomatic debate amid strained India-US ties under President Donald Trump.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/10/17/1600x900/logo/MEA_1792205664297_1792260123983_ZSXO_1792260124197_82s9_29c275f5-a295-4e79-86af-766e565e63a5_GNLm.jpg"
+            },
+            {
+              "source": "thehindu",
+              "headline": "Jaishankar to meet Rubio, UAE Foreign Minister, in back-to-back separate visits in Mumbai next week",
+              "url": "https://www.thehindu.com/news/national/jaishankar-rubio-to-hold-meeting-in-mumbai-on-oct-20-mea/article71592380.ece",
+              "date": "2026-10-18T04:23:41.000Z",
+              "kind": "hard",
+              "summary": "MEA dismisses criticism from Opposition over External Affairs Minister being ‘summoned’ to Mumbai, says it is normal practice to host leaders in other cities besides national capital; the announcement of the visit of UAE Foreign Minister Sheikh Abdullah was unexpected and previously unannounced",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/incoming/277m34/article71592434.ece/alternates/LANDSCAPE_1200/PTI10_14_2026_000235B.jpg"
+            },
+            {
+              "source": "mint",
+              "headline": "S Jaishankar, Marco Rubio to hold talks in Mumbai tomorrow amid India-US trade deal push: What is on the agenda?",
+              "url": "https://www.livemint.com/news/india/s-jaishankar-marco-rubio-to-hold-talks-in-mumbai-tomorrow-amid-india-us-trade-deal-push-what-is-on-the-agenda-11792379832648.html",
+              "date": "2026-10-19T03:57:53.000Z",
+              "kind": "hard",
+              "summary": "Secretary Rubio's visit will provide an opportunity for both sides to review India-US relations and discuss ways to further strengthen our Comprehensive Global Strategic Partnership that we have with the United States, &nbsp;the MEA spokesperson said.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/10/19/1600x900/logo/Rubio-Central-Asia-12_1792381953449_4Tqf_1792381966108_yEwU_7dc42a83-aa5b-4b9a-9e9f-617c642808a6_0zwH.jpg"
+            }
+          ],
+          "thread": "td7f25t"
+        },
+        {
+          "id": "swyh0zu",
+          "headline": "FCNR inflows ease liquidity constraints but weigh on private banks’ margins",
+          "url": "https://www.livemint.com/industry/banking/impact-of-fcnr-dollar-inflows-on-bank-financials-11792235414533.html",
+          "source": "mint",
+          "date": "2026-10-19T00:30:29.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2026/10/18/1600x900/logo/PTI02-03-2025-000495B-0_1742901146529_1792328564043_6zNl_007ece68-c09a-4c55-b5f9-72b1f1a5160c_xtNP.jpg",
+          "why": "Mint reports that FCNR(B) deposit inflows ease bank liquidity but compress private banks' margins, since deposits are raised faster than they can be lent.",
+          "implications": [
+            "Banks have mobilised FCNR(B) deposits faster than they can lend them at normal spreads.",
+            "Liquidity constraints ease, but private banks' margins are under pressure.",
+            "Banks' loan pricing could be affected if margin pressure persists."
+          ],
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-19T04:57:39.628Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "medium",
+              "reason": "Affects private bank margins; no direct household rate effect is reported."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Margin compression is already reported; pricing effects could follow."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "Single outlet; no official source cited."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Borrowers",
+                "direction": "unclear",
+                "what": "loan pricing",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Private banks' reported net interest margins in upcoming results",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "FCNR(B) deposits surge",
+                    "detail": "Banks mobilised these deposits faster than they can lend them at normal spreads.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Liquidity constraints ease",
+                    "detail": "Inflows ease liquidity for banks.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Private bank margins compress",
+                    "detail": "Deposits that cannot be lent at normal spreads weigh on margins.",
+                    "basis": "reported"
+                  }
+                ],
+                "breaks_if": "Banks deploy FCNR(B) funds into loans at normal lending spreads."
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "FCNR inflows ease liquidity constraints but weigh on private banks’ margins",
+              "url": "https://www.livemint.com/industry/banking/impact-of-fcnr-dollar-inflows-on-bank-financials-11792235414533.html",
+              "date": "2026-10-19T00:30:29.000Z",
+              "kind": "hard",
+              "summary": "The margin compression reflects the impact of foreign-currency non-resident (bank) or FCNR(B) deposits, which banks have mobilized faster than they can deploy into loans at normal lending spreads",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/10/18/1600x900/logo/PTI02-03-2025-000495B-0_1742901146529_1792328564043_6zNl_007ece68-c09a-4c55-b5f9-72b1f1a5160c_xtNP.jpg"
+            }
+          ],
+          "thread": "tlvhr2n"
+        },
+        {
           "id": "s10pw0lb",
           "headline": "'Why should the US bear the burden?': Treasury chief Bessent says Europe refused tariffs on India, China over Russia",
           "url": "https://www.livemint.com/news/world/why-should-the-us-bear-the-burden-treasury-chief-bessent-says-europe-refused-tariffs-on-india-china-over-russia-11792346367852.html",
@@ -4886,6 +5151,54 @@
             }
           ],
           "thread": "t82kyvt"
+        },
+        {
+          "id": "snpa0mi",
+          "headline": "What drives corporate investment?",
+          "url": "https://www.thehindu.com/business/Economy/what-drives-corporate-investment/article71360385.ece",
+          "source": "thehindu",
+          "date": "2026-10-18T16:18:38.000Z",
+          "relevance": "medium",
+          "image": "https://th-i.thgim.com/public/news/national/eneed6/article71362064.ece/alternates/LANDSCAPE_1200/iStock-1405176819.jpg",
+          "why": "",
+          "implications": [],
+          "reports": [
+            {
+              "source": "thehindu",
+              "headline": "What drives corporate investment?",
+              "url": "https://www.thehindu.com/business/Economy/what-drives-corporate-investment/article71360385.ece",
+              "date": "2026-10-18T16:18:38.000Z",
+              "kind": "feature",
+              "summary": "Corporate investment as a share of GDP in India has declined sharply since demonetisation, with the fall persisting despite tax cuts and a low-interest-rate regime; smaller firms face higher interest costs, while larger firms are more constrained by demand; reviving investment requires government expenditure to push…",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/news/national/eneed6/article71362064.ece/alternates/LANDSCAPE_1200/iStock-1405176819.jpg"
+            }
+          ],
+          "thread": "t1sxe7lh"
+        },
+        {
+          "id": "s9bj24i",
+          "headline": "Does ‘inflation targeting’ work in India?",
+          "url": "https://www.thehindu.com/business/Economy/does-inflation-targeting-work-in-india/article71435164.ece",
+          "source": "thehindu",
+          "date": "2026-10-18T16:18:26.000Z",
+          "relevance": "medium",
+          "image": "https://th-i.thgim.com/public/news/national/700mky/article71436304.ece/alternates/LANDSCAPE_1200/iStock-2149589805.jpg",
+          "why": "",
+          "implications": [],
+          "reports": [
+            {
+              "source": "thehindu",
+              "headline": "Does ‘inflation targeting’ work in India?",
+              "url": "https://www.thehindu.com/business/Economy/does-inflation-targeting-work-in-india/article71435164.ece",
+              "date": "2026-10-18T16:18:26.000Z",
+              "kind": "feature",
+              "summary": "India’s Phillips curve is found to be flat, while households’ inflation expectations remain consistently higher than the RBI’s projections; this suggests that inflation targeting can lower output and employment without a commensurate reduction in inflation",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/news/national/700mky/article71436304.ece/alternates/LANDSCAPE_1200/iStock-2149589805.jpg"
+            }
+          ],
+          "thread": "tm0umae"
         },
         {
           "id": "sgthgvb",
@@ -5113,141 +5426,6 @@
             }
           ],
           "thread": "td3lwbt"
-        },
-        {
-          "id": "s1mnspo3",
-          "headline": "Jaishankar ‘summoned’ by Marco Rubio? MEA clarifies Mumbai meet amid Congress criticism; says energy, trade on agenda",
-          "url": "https://www.livemint.com/news/india/jaishankar-summoned-by-marco-rubio-mea-clarifies-mumbai-meet-amid-congress-criticism-says-energy-trade-on-agenda-11792205501440.html",
-          "source": "mint",
-          "date": "2026-10-17T03:11:00.000Z",
-          "relevance": "medium",
-          "image": "https://www.livemint.com/lm-img/img/2026/10/17/1600x900/logo/MEA_1792205664297_Rp3I_1792205668466_SEoq_cfd11351-2c73-46d2-ab44-86e09599bb94_pnp8.jpg",
-          "why": "Back-to-back Mumbai talks with US Secretary of State Rubio and the UAE foreign minister put energy and trade on the agenda amid strained India-US ties.",
-          "implications": [
-            "MEA says energy and trade are on the agenda, so any outcomes could shape India's energy and trade relations with the US and UAE.",
-            "Mint reports that Rubio's visit to Reliance's Jamnagar refinery highlights a business, energy and trade focus amid strained ties under Trump.",
-            "Congress criticised Jaishankar being 'summoned' to Mumbai, while MEA says hosting leaders outside the national capital is normal practice."
-          ],
-          "analysis": {
-            "v": 2,
-            "at": "2026-10-18T04:51:53.794Z",
-            "tier": "standard",
-            "primary": "impact_chain",
-            "complement": null,
-            "features": [
-              "pending_outcome"
-            ],
-            "exposure": {
-              "level": "medium",
-              "reason": "Bilateral diplomacy with energy and trade on the agenda; no concrete measures reported yet."
-            },
-            "horizon": {
-              "value": "months",
-              "reason": "Any agreements would take time to affect trade flows."
-            },
-            "confidence": {
-              "level": "medium",
-              "reason": "Two outlets and on-record MEA spokesperson; no outcomes reported yet."
-            },
-            "outlets": 2,
-            "affected": [
-              {
-                "group": "Large exporters",
-                "direction": "unclear",
-                "what": "US trade terms",
-                "basis": "inferred"
-              },
-              {
-                "group": "Fuel & LPG users",
-                "direction": "unclear",
-                "what": "energy supply arrangements",
-                "basis": "inferred"
-              },
-              {
-                "group": "Importers & traders",
-                "direction": "unclear",
-                "what": "trade conditions with US, UAE",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "Jaishankar hosts UAE Foreign Minister Sheikh Abdullah bin Zayed in Mumbai",
-                "when": "2026-10-19",
-                "where": "Ministry of External Affairs"
-              },
-              {
-                "what": "Jaishankar-Rubio talks in Mumbai and Rubio's Jamnagar refinery visit",
-                "when": "next week",
-                "where": "Ministry of External Affairs"
-              },
-              {
-                "what": "Any announced energy or trade outcomes from the meetings",
-                "when": "",
-                "where": "Ministry of External Affairs"
-              }
-            ],
-            "frameworks": {
-              "impact_chain": {
-                "chain": [
-                  {
-                    "step": "Mumbai talks with Rubio, UAE FM",
-                    "detail": "Jaishankar hosts back-to-back separate visits in Mumbai, per MEA.",
-                    "basis": "reported"
-                  },
-                  {
-                    "step": "Energy and trade on agenda",
-                    "detail": "MEA says energy and trade feature; Rubio to visit Jamnagar refinery.",
-                    "basis": "reported"
-                  },
-                  {
-                    "step": "Possible energy, trade understandings",
-                    "detail": "Talks could produce arrangements on energy supply or trade terms.",
-                    "basis": "inferred"
-                  },
-                  {
-                    "step": "Effects on refiners, exporters",
-                    "detail": "Any deals may affect Indian refiners, exporters and energy supply conditions.",
-                    "basis": "inferred"
-                  }
-                ],
-                "breaks_if": "Talks end without energy or trade outcomes, or India-US ties strain further."
-              }
-            }
-          },
-          "reports": [
-            {
-              "source": "mint",
-              "headline": "Jaishankar ‘summoned’ by Marco Rubio? MEA clarifies Mumbai meet amid Congress criticism; says energy, trade on agenda",
-              "url": "https://www.livemint.com/news/india/jaishankar-summoned-by-marco-rubio-mea-clarifies-mumbai-meet-amid-congress-criticism-says-energy-trade-on-agenda-11792205501440.html",
-              "date": "2026-10-17T03:11:00.000Z",
-              "kind": "hard",
-              "summary": "MEA spokesperson Randhir Jaiswal said that External Affairs Minister Jaishankar will host the Deputy Prime Minister and Foreign Minister of the UAE Sheikh Abdullah bin Zayed Al Nahyan, in Mumbai on October 19 and 20, 2026.",
-              "summaryV": 3,
-              "image": "https://www.livemint.com/lm-img/img/2026/10/17/1600x900/logo/MEA_1792205664297_Rp3I_1792205668466_SEoq_cfd11351-2c73-46d2-ab44-86e09599bb94_pnp8.jpg"
-            },
-            {
-              "source": "mint",
-              "headline": "Why is Marco Rubio skipping Delhi for Mumbai and Reliance hub Jamnagar? What it signals about India-US ties under Trump",
-              "url": "https://www.livemint.com/news/india/why-is-marco-rubio-skipping-delhi-for-mumbai-and-reliance-hub-jamnagar-what-it-signals-about-india-us-ties-under-trump-11792256624695.html",
-              "date": "2026-10-17T18:25:00.000Z",
-              "kind": "feature",
-              "summary": "US Secretary of State Marco Rubio’s decision to hold talks in Mumbai and visit Reliance Industries’ Jamnagar refinery highlights the business, energy and trade focus of his India trip. The itinerary has sparked a diplomatic debate amid strained India-US ties under President Donald Trump.",
-              "summaryV": 3,
-              "image": "https://www.livemint.com/lm-img/img/2026/10/17/1600x900/logo/MEA_1792205664297_1792260123983_ZSXO_1792260124197_82s9_29c275f5-a295-4e79-86af-766e565e63a5_GNLm.jpg"
-            },
-            {
-              "source": "thehindu",
-              "headline": "Jaishankar to meet Rubio, UAE Foreign Minister, in back-to-back separate visits in Mumbai next week",
-              "url": "https://www.thehindu.com/news/national/jaishankar-rubio-to-hold-meeting-in-mumbai-on-oct-20-mea/article71592380.ece",
-              "date": "2026-10-18T04:23:41.000Z",
-              "kind": "hard",
-              "summary": "MEA dismisses criticism from Opposition over External Affairs Minister being ‘summoned’ to Mumbai, says it is normal practice to host leaders in other cities besides national capital; the announcement of the visit of UAE Foreign Minister Sheikh Abdullah was unexpected and previously unannounced",
-              "summaryV": 3,
-              "image": "https://th-i.thgim.com/public/incoming/277m34/article71592434.ece/alternates/LANDSCAPE_1200/PTI10_14_2026_000235B.jpg"
-            }
-          ],
-          "thread": "td7f25t"
         },
         {
           "id": "s17vvwst",
@@ -13780,6 +13958,97 @@
       "name": "Manufacturing",
       "items": [
         {
+          "id": "s130i6ab",
+          "headline": "Govt plans ₹25,000-crore skilling push to sharpen textile export edge",
+          "url": "https://www.livemint.com/economy/india-plans-25000-crore-skilling-push-to-sharpen-textile-export-edge-samarth-20-11792303307150.html",
+          "source": "mint",
+          "date": "2026-10-19T00:10:46.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2026/10/18/1600x900/logo/3-0-32949110-RTX175UZ-0_1679818835772_1792323994257_jy9W_800a3d3c-5a11-4e1f-9b6c-145d615450ae_mGgY.jpg",
+          "why": "Mint reports a ₹25,000-crore Samarth 2.0 skilling push meant to sharpen textile export competitiveness by preparing workers for changing technology.",
+          "implications": [
+            "Samarth 2.0 would modernise the existing skilling framework through closer industry and academic collaboration.",
+            "Textile workers could gain skills matched to changing technology and industry requirements.",
+            "Any export benefit would depend on how the scheme is rolled out."
+          ],
+          "analysis": {
+            "v": 2,
+            "at": "2026-10-19T04:57:39.628Z",
+            "tier": "quick",
+            "primary": "winners_losers",
+            "complement": null,
+            "features": [
+              "allocation"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "Targets one industry's workforce and export competitiveness; no household essential is touched in the report."
+            },
+            "horizon": {
+              "value": "years",
+              "reason": "Skilling programmes take time to change workforce capability."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "Single outlet; no named official source quoted."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Manufacturing workers",
+                "direction": "up",
+                "what": "access to skilling",
+                "basis": "reported"
+              },
+              {
+                "group": "MSME exporters",
+                "direction": "unclear",
+                "what": "export competitiveness",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Rollout details and guidelines for Samarth 2.0",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "frameworks": {
+              "winners_losers": {
+                "groups": [
+                  {
+                    "group": "Manufacturing workers",
+                    "direction": "gain",
+                    "directness": "direct",
+                    "mechanism": "Skilling aligned to changing technology and industry requirements."
+                  },
+                  {
+                    "group": "Large exporters",
+                    "direction": "unclear",
+                    "directness": "indirect",
+                    "mechanism": "Better-skilled workforce could support textile export competitiveness, as the headline suggests."
+                  }
+                ],
+                "not_affected": ""
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "Govt plans ₹25,000-crore skilling push to sharpen textile export edge",
+              "url": "https://www.livemint.com/economy/india-plans-25000-crore-skilling-push-to-sharpen-textile-export-edge-samarth-20-11792303307150.html",
+              "date": "2026-10-19T00:10:46.000Z",
+              "kind": "hard",
+              "summary": "The Samarth 2.0, announced in the budget for 2026–27, aims to modernise the existing skilling framework through closer collaboration between industry and academic institutions, with a focus on preparing workers for the changing technology and industry requirements.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/10/18/1600x900/logo/3-0-32949110-RTX175UZ-0_1679818835772_1792323994257_jy9W_800a3d3c-5a11-4e1f-9b6c-145d615450ae_mGgY.jpg"
+            }
+          ],
+          "thread": "t1ff626d"
+        },
+        {
           "id": "s131jyfd",
           "headline": "FMCG companies face margin squeeze in H2 as input costs rise, price hikes likely after Diwali",
           "url": "https://www.livemint.com/industry/retail/fmcg-companies-face-margin-squeeze-in-h2-as-input-costs-rise-price-hikes-likely-after-diwali-11792320486859.html",
@@ -17138,6 +17407,16 @@
               "summary": "The Court says that children do not cease to use the internet merely because the law prohibits them from doing so; they only move to other platforms that unregulated and even less safe",
               "summaryV": 3,
               "image": "https://th-i.thgim.com/public/incoming/gftj0/article71597828.ece/alternates/LANDSCAPE_1200/TH31-KDR-After-GMIGFK0PK.4.jpg.jpg"
+            },
+            {
+              "source": "thehindu",
+              "headline": "Supreme Court address a parental anxiety: How to keep the Internet safe for children | Explained",
+              "url": "https://www.thehindu.com/news/national/supreme-court-address-a-parental-anxiety-how-to-keep-the-internet-safe-for-children-explained/article71599410.ece",
+              "date": "2026-10-19T02:37:41.000Z",
+              "kind": "feature",
+              "summary": "Children cannot be blamed for CSEAM material online, the wrongdoer is the person who creates the content and the intermediary who slept on the watch",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/news/national/7rfkgj/article71599421.ece/alternates/LANDSCAPE_1200/Children.jpg"
             }
           ],
           "thread": "th5yp8v"
@@ -22365,15 +22644,16 @@
   ],
   "source": "BBC News & The Guardian & NPR & Al Jazeera & MercoPress & ABC News & The New York Times & CNBC & CBS News & DW & France 24 & Africanews & South China Morning Post & The Hindu & Mint",
   "lastRun": {
-    "analysed": 0,
-    "added": 0,
-    "merged": 0,
+    "analysed": 60,
+    "added": 5,
+    "merged": 3,
+    "rejected": 52,
     "failedBatches": 0,
     "feeds": {
       "thehindu": {
         "feedsOk": 6,
         "feedsFailed": 0,
-        "items": 344
+        "items": 346
       },
       "mint": {
         "feedsOk": 6,
@@ -22387,13 +22667,13 @@
       "summaries": 0
     },
     "threads": {
-      "assigned": 0,
-      "created": 0,
+      "assigned": 5,
+      "created": 4,
       "failedBatches": 0
     },
     "summaries": {
-      "written": 0,
-      "due": 0
+      "written": 1,
+      "due": 1
     },
     "kinds": {
       "labelled": 0,
@@ -22406,59 +22686,42 @@
       "failedBatches": 0
     },
     "stats": {
-      "searched": 2,
-      "found": 1,
+      "searched": 0,
+      "found": 0,
       "reused": 0,
-      "none": 1,
+      "none": 0,
       "failed": 0,
-      "proposed": 11,
+      "proposed": 0,
       "droppedPoints": 0,
-      "pagesFetched": 3,
-      "samples": [
-        {
-          "headline": "India bars sugar-based ethanol in 2026-27 tender, cuts maize incentive",
-          "result": "chart",
-          "proposed": 11,
-          "checked": 11,
-          "pagesFetched": 1
-        },
-        {
-          "headline": "Indian refiners’ fuel exports to West surge 43% amid Russian crude imports",
-          "result": "none",
-          "proposed": 0,
-          "checked": 0,
-          "pagesFetched": 2
-        }
-      ]
+      "pagesFetched": 0,
+      "samples": []
     },
     "models": {
       "filter": {
         "model": "claude-haiku-5-5",
-        "calls": 3,
-        "inputTokens": 2437,
-        "outputTokens": 565,
-        "cost": 0.0005
-      },
-      "stats": {
-        "model": "claude-sonnet-5-5",
-        "calls": 2,
-        "inputTokens": 187716,
-        "outputTokens": 2306,
-        "searches": 4,
-        "fetches": 3,
-        "cost": 0.4385
+        "calls": 5,
+        "inputTokens": 22427,
+        "outputTokens": 8747,
+        "cost": 0.0067
       },
       "analysis_quick": {
         "model": "claude-sonnet-5-5",
-        "calls": 1,
-        "inputTokens": 1721,
-        "outputTokens": 349,
-        "cost": 0.0069
+        "calls": 2,
+        "inputTokens": 3753,
+        "outputTokens": 2976,
+        "cost": 0.0373
+      },
+      "threads": {
+        "model": "claude-sonnet-5-5",
+        "calls": 2,
+        "inputTokens": 10366,
+        "outputTokens": 939,
+        "cost": 0.0301
       }
     },
     "spend": {
-      "thisDesk": 0.446,
-      "today": 1.2624,
+      "thisDesk": 0.074,
+      "today": 1.4686,
       "cap": 6
     }
   },
