@@ -17,9 +17,9 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 45            # Opus analysis and 13 outlets take longer than before
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v6
         with:
           node-version: 22
 
@@ -28,6 +28,7 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           DAILY_BUDGET_USD: "6"        # hard daily spending cap in US$ (India day); change here
+          CALENDAR_JOB: "off"          # "on" to collect dates for the calendar again
 
       - name: Save results
         run: |
