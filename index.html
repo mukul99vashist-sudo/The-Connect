@@ -2044,6 +2044,7 @@ var ACCT_ICONS={
 function openAccount(t){
   acctTab=t||acctTab||"account"; renderAccount();
   var d=$("acct"); if(!d.open){ if(typeof d.showModal==="function") d.showModal(); else d.setAttribute("open",""); }
+  $("acctBody").scrollTop=0;
   if(isPhone()) closeDrawer();
 }
 function renderAccount(){
@@ -2201,8 +2202,11 @@ function openSheet(e){
   var so=storySoFar(it); if(so) body.appendChild(so);
 
   if(typeof d.showModal==="function") d.showModal(); else d.setAttribute("open","");
-  $("sheetClose").focus();
+  // Every story opens at its top, even if the last one was closed half-way down.
+  body.scrollTop=0; requestAnimationFrame(function(){ body.scrollTop=0; });
+  try{ $("sheetClose").focus({preventScroll:true}); }catch(err){ $("sheetClose").focus(); }
 }
+$("sheet").addEventListener("close",function(){ $("sheetBody").scrollTop=0; });
 $("sheetClose").addEventListener("click",function(){ $("sheet").close(); });
 $("sheet").addEventListener("click",function(ev){ if(ev.target===this) this.close(); });
 
