@@ -934,6 +934,12 @@ html[data-text="large"] #sheet .sheet{zoom:1.12}
 .tl-pick select option{color:#1D1D1F;background:#fff}
 .tl-pick svg{position:absolute;right:12px;width:15px;height:15px;fill:none;stroke:var(--ink-2);stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;pointer-events:none}
 @media (max-width:600px){ .ranges{justify-content:flex-start} }
+/* v49: kind-of-report dropdown; Save sits at the top right of the source panel */
+.ctl-filters{justify-content:flex-start;gap:12px}
+.kinds-key{flex-wrap:nowrap}
+.brief-top{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brief-save{flex:none}
+@media (max-width:600px){ .ctl-filters{flex-direction:row;flex-wrap:wrap;align-items:center} .tl-pick{max-width:100%} }
 </style>
 </head>
 <body data-rail="left">
@@ -1475,14 +1481,16 @@ function renderStatus(doc){
 var kindFilter=null, KIND_ORDER=["hard","breaking","investigative","soft","feature"];
 function renderKindsKey(){
   var key=$("kindsKey"); if(!key) return; key.textContent="";
-  key.appendChild(el("span","lbl","Kind of report"));
-  var counts={}; allEvents.filter(function(e){ return inRange(e.it); }).forEach(function(e){ var k=kindOf(e.it); if(k) counts[k]=(counts[k]||0)+1; });
-  [null].concat(KIND_ORDER).forEach(function(k){
-    var b=el("button","pill kf",k?KIND_LABEL[k]:"All kinds"); b.type="button"; b.setAttribute("aria-pressed",String(kindFilter===k));
-    if(k){ b.title=(counts[k]||0)+" "+KIND_LABEL[k].toLowerCase()+" "+((counts[k]||0)===1?"story":"stories"); b.style.setProperty("--k","var(--k-"+k+")"); }
-    b.addEventListener("click",function(){ if(kindFilter===k) return; kindFilter=k; showAll=false; render(current); });
-    key.appendChild(b);
-  });
+  var counts={}, total=0; allEvents.filter(function(e){ return inRange(e.it); }).forEach(function(e){ var k=kindOf(e.it); total++; if(k) counts[k]=(counts[k]||0)+1; });
+  var lab=el("label","tl-pick"); lab.appendChild(el("span","tl-lbl","Kind of report"));
+  var sel=el("select"); sel.id="kindSel"; sel.setAttribute("aria-label","Kind of report");
+  var o0=el("option",null,"All kinds ("+total+")"); o0.value=""; sel.appendChild(o0);
+  KIND_ORDER.forEach(function(k){ var n=counts[k]||0, o=el("option",null,KIND_LABEL[k]+" ("+n+")"); o.value=k; if(!n && kindFilter!==k) o.disabled=true; sel.appendChild(o); });
+  sel.value=kindFilter||"";
+  sel.addEventListener("change",function(){ kindFilter=sel.value||null; showAll=false; render(current); });
+  lab.appendChild(sel);
+  lab.insertAdjacentHTML("beforeend",'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>');
+  key.appendChild(lab);
 }
 
 var ICONS={
@@ -2152,14 +2160,16 @@ function openSheet(e){
     cap.appendChild(document.createTextNode("Image via ")); var ca=el("a",null,OUTLET[cr.source]||cr.source); ca.href=cr.url; ca.target="_blank"; ca.rel="noopener"; cap.appendChild(ca);
     fig.appendChild(cap); }
   if(ht) row.appendChild(fig);
-  row.appendChild(brief(it));
+  var bf=brief(it), sv=saveButton(e,true), fr=bf.querySelector(".from"), top=el("div","brief-top"); sv.classList.add("brief-save");
+  fr.parentNode.insertBefore(top, fr); top.appendChild(fr); top.appendChild(sv);
+  row.appendChild(bf);
   body.appendChild(row);
   var head=el("div","head-area");
   var k=el("span","kicker",e.sector.name); k.style.setProperty("--sc","var(--s-"+e.sector.id+")");
   var kd=kindOf(it), kt=el("div","ktop"); if(kd) kt.appendChild(kindChip(kd)); kt.appendChild(k); head.appendChild(kt);
   var sh=body.closest(".sheet")||d; sh.classList.remove("has-kind","k-hard","k-breaking","k-investigative","k-soft","k-feature","k-opinion"); if(kd) sh.classList.add("has-kind","k-"+kd);
   var h=el("h2",null,it.headline); h.id="sheetTitle"; head.appendChild(h);
-  var brow=el("div","sheet-actions"); brow.appendChild(byline(it,true)); brow.appendChild(saveButton(e,true)); head.appendChild(brow);
+  head.appendChild(byline(it,true));
   body.appendChild(head);
 
   var hasFw=!!(it.analysis && it.analysis.v===2 && it.analysis.frameworks);
