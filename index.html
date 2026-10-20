@@ -1044,6 +1044,10 @@ html[data-text="large"] #sheet .sheet{zoom:1.12}
 .mnum{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:var(--ink);color:var(--bg);font:700 11.5px/1 var(--sans);letter-spacing:0}
 .mlist{margin:0;padding-left:18px;font-size:14px;line-height:1.55;color:var(--ink-2)} .mlist li{margin:6px 0} .mlist b{color:var(--ink)}
 .fw-how{display:inline-block;margin-top:10px;font-size:13px}
+/* v59: chart labels centred under their bars; long labels wrap onto two lines */
+.st-cols{padding:0 2px}
+.st-cols .col:first-child .p,.st-cols .col.last .p{align-self:center}
+.st-cols .p{align-self:center;white-space:normal;text-align:center;line-height:1.2;max-width:100%;overflow-wrap:anywhere;min-height:2.4em}
 </style>
 </head>
 <body data-rail="left">
@@ -1384,10 +1388,12 @@ function statChart(x){
     var up=el("div","up"), dn=el("div","dn"), bar=el("i"), v=el("span","v",statNum(p.value,dom));
     var h=(Math.abs(p.value)/(p.value>=0?(mx||1):(-mn||1))*100); bar.style.height=Math.max(p.value?2:0,h)+"%";
     if(p.value>=0){ up.appendChild(v); up.appendChild(bar); } else { dn.appendChild(bar); dn.appendChild(v); }
-    a.appendChild(up); a.appendChild(dn); a.appendChild(el("span","p",p.period)); c.appendChild(a);
+    a.appendChild(up); a.appendChild(dn); a.appendChild(el("span","p",periodLabel(p.period))); c.appendChild(a);
   });
   return c;
 }
+// Older saved labels were cut at 20 characters ("ESY 2025-26 (provisi"): drop an unfinished bracket.
+function periodLabel(t){ t=String(t||""); return (t.indexOf("(")>=0 && t.indexOf(")")<0) ? t.replace(/\s*\([^)]*$/,"") : t; }
 function renderStats(it){
   var series=(it.stats&&it.stats.series||[]).filter(function(x){return x.points&&x.points.length>=3;}); if(!series.length) return null;
   var b=el("div","block st"); b.appendChild(el("h3",null,"The numbers behind the story"));
@@ -2217,7 +2223,7 @@ function acctSaved(body){
 function acctSettings(body){
   var ap=el("section","acct-sec"); ap.appendChild(el("h3",null,"Appearance"));
   ap.appendChild(setRow("Theme",null, radioGroup("theme",[["light","Light"],["dark","Dark"],["device","Match device"]], themeNow(), setThemePref)));
-  ap.appendChild(setRow("Story layout","Classic shows the full analysis at once. Ripple reads like an article: the story and what it means for you first, the full analysis one tap away.", radioGroup("layout",[["classic","Classic"],["ripple","Ripple"]], storyLayout(), function(v){ prefs.layout=v; savePrefs(); })));
+  ap.appendChild(setRow("Story layout","Ripple (default) reads like an article: the story and what it means for you first, the full analysis one tap away under Go deeper. Classic shows the full analysis at once.", radioGroup("layout",[["ripple","Ripple"],["classic","Classic"]], storyLayout(), function(v){ prefs.layout=v; savePrefs(); })));
   ap.appendChild(toggleRow("Larger text in stories","Makes the story window easier to read.", prefs.largeText, function(v){ prefs.largeText=v; savePrefs(); applyReadingPrefs(); }));
   body.appendChild(ap);
   var rd=el("section","acct-sec"); rd.appendChild(el("h3",null,"Reading"));
@@ -2265,7 +2271,7 @@ function acctHelp(body){
    Order: headline and dateline → photo → the lede → "For you" → the ripple (from the event to you) → how sure we are →
    the outlet's own words → numbers → "Go deeper" (full analysis, background, terms, what to watch) → every report.
    The machinery (framework names, depth tiers, "inferred" chips) is not shown; uncertainty is said once, in words. */
-function storyLayout(){ return prefs.layout==="ripple" ? "ripple" : "classic"; }
+function storyLayout(){ return prefs.layout==="classic" ? "classic" : "ripple"; }
 (function(){ try{ var m=/[?&]layout=(ripple|classic)\b/.exec(location.search); if(m){ prefs.layout=m[1]; savePrefs(); } }catch(err){} })();
 function shortLabel(t, n){ t=tidyText(String(t||"")).replace(/\s+/g," ").trim(); n=n||48; return t.length>n ? t.slice(0,n).replace(/\s+\S*$/,"")+"…" : t; }
 /* The stops of the ripple, taken from whichever lens analysed the story */
