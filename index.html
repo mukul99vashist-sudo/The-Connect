@@ -1048,6 +1048,8 @@ html[data-text="large"] #sheet .sheet{zoom:1.12}
 .st-cols{padding:0 2px}
 .st-cols .col:first-child .p,.st-cols .col.last .p{align-self:center}
 .st-cols .p{align-self:center;white-space:normal;text-align:center;line-height:1.2;max-width:100%;overflow-wrap:anywhere;min-height:2.4em}
+/* v60: ripple detail label on its own line */
+.rp-basis{display:block;margin-top:6px}
 </style>
 </head>
 <body data-rail="left">
@@ -1394,8 +1396,12 @@ function statChart(x){
 }
 // Older saved labels were cut at 20 characters ("ESY 2025-26 (provisi"): drop an unfinished bracket.
 function periodLabel(t){ t=String(t||""); return (t.indexOf("(")>=0 && t.indexOf(")")<0) ? t.replace(/\s*\([^)]*$/,"") : t; }
+/* A daily price series that jumps more than 15% from one day to the next has almost always mixed two columns of a table
+   (each figure is on the official page, but not all for the same measure). Such a chart is not shown. */
+function dailyJump(x){ var pts=x.points||[]; if(!pts.every(function(p){ return /^\d{1,2} [A-Z][a-z]{2} \d{4}$/.test(String(p.period)); })) return false;
+  for(var i=1;i<pts.length;i++){ var a=+pts[i-1].value, b=+pts[i].value; if(a>0 && b>0 && (b/a>1.15 || a/b>1.15)) return true; } return false; }
 function renderStats(it){
-  var series=(it.stats&&it.stats.series||[]).filter(function(x){return x.points&&x.points.length>=3;}); if(!series.length) return null;
+  var series=(it.stats&&it.stats.series||[]).filter(function(x){return x.points&&x.points.length>=3 && !dailyJump(x);}); if(!series.length) return null;
   var b=el("div","block st"); b.appendChild(el("h3",null,"The numbers behind the story"));
   var dropped=0;
   series.forEach(function(x){ var w=el("div","st-series"); dropped+=x.dropped||0;
@@ -2277,7 +2283,7 @@ function shortLabel(t, n){ t=tidyText(String(t||"")).replace(/\s+/g," ").trim();
 /* The stops of the ripple, taken from whichever lens analysed the story */
 function rippleStops(it, e){
   var a=it.analysis||{}, fw=a.frameworks||{}, stops=[];
-  function add(label, detail, sure){ label=shortLabel(label); if(label) stops.push({label:label, detail:detail||"", sure:sure!==false}); }
+  function add(label, detail, sure){ var full=tidyText(String(label||"")).trim(); if(full) stops.push({label:shortLabel(full,60), full:full, detail:(detail && detail!==full)?detail:"", sure:sure!==false}); }
   if(fw.impact_chain && fw.impact_chain.chain){ fw.impact_chain.chain.forEach(function(c){ add(c.step, c.detail, c.basis!=="inferred"); }); }
   else if(fw.pass_through && fw.pass_through.rungs){ var pt=fw.pass_through;
     add((pt.driver.variable||"Price")+" "+(pt.driver.direction==="down"?"falls":"rises"), pt.driver.size?("Reported change: "+pt.driver.size+"."):"", true);
@@ -2304,7 +2310,7 @@ function rippleStops(it, e){
 function rippleGraphic(stops){
   var w=el("div","rp-wrap"), row=el("ol","rp-row"), det=el("div","rp-detail"); det.setAttribute("aria-live","polite");
   function show(i){ Array.prototype.forEach.call(row.children,function(li,j){ li.classList.toggle("on",i===j); li.querySelector("button").setAttribute("aria-pressed",String(i===j)); });
-    var s=stops[i]; det.textContent=""; det.appendChild(el("b",null,s.label)); if(s.detail) det.appendChild(el("p",null,s.detail));
+    var s=stops[i]; det.textContent=""; det.appendChild(el("b",null,s.full||s.label)); if(s.detail) det.appendChild(el("p",null,s.detail));
     det.appendChild(el("span","rp-basis", s.sure ? "Reported" : "Our reading of where this leads")); }
   stops.forEach(function(s,i){ var li=el("li","rp-stop"+(s.sure?"":" likely")+(s.you?" you":"")); li.style.setProperty("--r", String(i));
     var b=el("button","rp-btn"); b.type="button"; b.setAttribute("aria-label",(s.you?"Reaches: ":"Step "+(i+1)+": ")+s.label);
