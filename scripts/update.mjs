@@ -942,7 +942,7 @@ function parseStats(content) {
       if (!hit) { const c = cites.find(c => isOfficial(c.url) && foundIn(c.cited_text, pat, f[1])); if (c) hit = { url: c.url, title: c.title || domainOf(c.url) }; }
       if (!hit) { s.dropped++; diag.notFound++; continue; }
       diag.kept++;
-      s.points.push({ period: str(f[1], 20), value: pat.value, url: hit.url, source: str(hit.title || domainOf(hit.url), 120) });
+      s.points.push({ period: sentence(f[1], 40), value: pat.value, url: hit.url, source: str(hit.title || domainOf(hit.url), 120) });
     }
   }
   // Every figure can be on the page and the series still be wrong if it mixes units (e.g. 50,000 barrels a day next to
