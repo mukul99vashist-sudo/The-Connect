@@ -2,7 +2,7 @@
   "schema": 4,
   "region": "India",
   "since": "2026-10-02",
-  "updatedAt": "2026-10-20T00:32:30.482Z",
+  "updatedAt": "2026-10-20T08:49:20.694Z",
   "sectors": [
     {
       "id": "energy",
@@ -16,82 +16,137 @@
           "date": "2026-10-18T01:14:48.000Z",
           "relevance": "medium",
           "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/18/be98d5af-96c0-4086-a8b4-15f3b47eb5e2_731fb1bd.jpg?itok=KXFYemN9&v=1792286078",
-          "why": "SCMP reports a damaging week for US-Ukraine ties, with a US tariff waiver on Russian exports and a diesel deal that could help fund Russia's war. This could change Russian energy trade flows that India buys into.",
+          "why": "Washington has waived tariffs on Russian exports, agreed a diesel deal with Moscow and clashed openly with Kyiv over talks and arms. A US shift towards Russia could reshape the oil and fuel trade that Indian refiners depend on.",
           "implications": [
-            "A tariff waiver and a diesel deal could ease Russia's export earnings and sanctions pressure, which may alter how Russian fuel and crude are priced and sold to buyers such as India.",
-            "If the US reduces support for Kyiv, the war could last longer or end on different terms, prolonging uncertainty for global energy and commodity markets that India depends on."
+            "A US diesel deal with Russia could put more Russian fuel on world markets, which may affect the prices Indian refiners receive when they export diesel.",
+            "If the US eases trade pressure on Russian exports, Indian buyers of Russian crude could face less risk from Western penalties on payments and shipping.",
+            "President Trump's call for someone other than President Zelensky to negotiate suggests Washington may press Kyiv to accept terms shaped largely by US-Russia talks.",
+            "Ukraine's report of delayed US arms shipments, alongside US threats to cut intelligence support, could weaken Kyiv's position on the battlefield and in any negotiations."
           ],
           "analysis": {
             "v": 3,
-            "at": "2026-10-20T00:30:16.701Z",
-            "tier": "quick",
+            "at": "2026-10-20T08:47:31.551Z",
+            "tier": "deep",
             "primary": "escalation",
-            "complement": null,
+            "complement": "scenarios",
             "features": [
               "armed_conflict",
+              "trade_flow",
               "fast_moving",
               "pending_outcome"
             ],
             "exposure": {
               "level": "medium",
-              "reason": "The channel is Russian energy and trade terms, which affect India's crude and fuel import choices. The reports describe no direct measure on India, so the level is medium rather than high."
+              "reason": "The war reaches India mainly through the trade in Russian crude and refined fuels. A US shift towards Moscow changes the rules around that trade rather than directly touching Indian household prices."
             },
             "horizon": {
               "value": "months",
-              "reason": "Any change to trade terms, sanctions or negotiations would take months to reach Indian import costs, since the reports describe diplomatic moves rather than immediate supply changes."
+              "reason": "Any change in Russian fuel flows depends on how the tariff waiver and diesel deal are implemented and on peace talks, which take months to work through."
             },
             "confidence": {
-              "level": "medium",
-              "reason": "All three reports come from the South China Morning Post, though they include on-record statements by Trump and Zelensky; the details of the diesel deal and tariff waiver are not spelled out."
+              "level": "high",
+              "reason": "Three outlets report the on-record Trump-Zelensky clash; details of the tariff waiver and diesel deal rest on a single South China Morning Post summary."
             },
-            "outlets": 1,
+            "outlets": 3,
             "affected": [
               {
                 "group": "Importers & traders",
                 "direction": "unclear",
-                "what": "Russian energy trade terms",
-                "effect": "A US tariff waiver and diesel deal could change how Russian fuel is priced and sold, which may alter the options open to Indian buyers.",
+                "what": "Russian crude purchase conditions",
+                "effect": "Indian refiners buying Russian crude could face fewer Western trade barriers if Washington keeps easing pressure on Russian exports.",
                 "basis": "inferred"
               },
               {
-                "group": "Government finances",
+                "group": "Large exporters",
+                "direction": "mixed",
+                "what": "diesel export competition",
+                "effect": "More Russian diesel reaching world markets under a US deal could change prices and demand for diesel exported by Indian refiners.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Fuel & LPG users",
                 "direction": "unclear",
-                "what": "import bill pressure",
-                "effect": "If Russian energy flows or global fuel prices shift, India's import bill and fuel subsidy or tax decisions could be affected.",
+                "what": "fuel price pressure",
+                "effect": "Changes in global diesel supply from a US-Russia deal could feed through to fuel costs in India, but the direction is not yet clear.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "Whether the US formally cuts intelligence support for Ukraine or names a different negotiator in place of Zelensky",
-                "why": "It would show whether the reported threats are becoming policy that changes the course of the war and sanctions.",
+                "what": "Whether the United States actually cuts off intelligence support to Ukraine",
+                "why": "A cut-off would show that Washington is willing to use material pressure, not only rhetoric, to push Kyiv towards a deal.",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "Whether delayed US arms shipments to Ukraine resume",
+                "why": "Resumed deliveries would suggest the rift is being contained, while continued delays would point to a deeper break.",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "Published terms of the US tariff waiver on Russian exports and the diesel deal",
+                "why": "The details would show how much Russian fuel could reach world markets and on what conditions.",
                 "when": "",
                 "where": ""
               }
             ],
             "context": [
-              "India imports most of its crude oil and has bought Russian crude in recent years, so changes in Western policy towards Russian energy can affect India's supply options and trade terms."
+              "India has become one of the largest buyers of Russian crude oil, which is often sold at a discount, and Western sanctions on Russia have shaped how Indian refiners pay for and ship it.",
+              "Indian refiners process large volumes of imported crude into diesel and other fuels, part of which they export, including to European markets.",
+              "India has avoided taking sides in the Russia-Ukraine war, calling for dialogue and diplomacy while keeping close trade and defence ties with Moscow."
             ],
             "terms": [
               {
                 "term": "tariff waiver",
-                "meaning": "A decision to exempt certain imports from tariffs that would otherwise apply, making those goods cheaper and easier to sell in the waiving country's market."
+                "meaning": "A government decision to suspend the import taxes it would normally charge on certain goods from a particular country."
+              },
+              {
+                "term": "intelligence support",
+                "meaning": "Information such as satellite imagery and surveillance data that one country shares with another to help its military operations."
               }
             ],
             "frameworks": {
               "escalation": {
-                "current_rung": 2,
-                "evidence": "The reports describe US threats to cut intelligence support, a waiver of tariffs on Russian exports and a diesel deal, which are diplomatic and economic measures rather than new military action.",
+                "current_rung": 7,
+                "evidence": "Reports describe the Russia-Ukraine war as Europe's worst conflict since World War II and say Kyiv is seeking to end it. The current week's developments are diplomatic, with US-Ukraine relations souring.",
                 "previous_rung": null,
                 "next_signals": [
                   {
                     "rung": 5,
-                    "signal": "Reports that Russian strikes on Ukraine have become sustained and heavier after the US withdraws intelligence support would show a move to this rung."
+                    "signal": "A negotiated arrangement that halts ground fighting while some long-range strikes continue would show the war moving down from full-scale combat."
+                  },
+                  {
+                    "rung": 2,
+                    "signal": "A ceasefire agreed by Russia and Ukraine, leaving sanctions and diplomatic pressure as the main tools, would show a shift away from active fighting."
                   }
                 ],
                 "india_channels": [
                   "oil",
                   "trade"
+                ]
+              },
+              "scenarios": {
+                "question": "Will Washington's push to normalise ties with Moscow produce a settlement that sidelines Ukraine's leadership?",
+                "scenarios": [
+                  {
+                    "name": "US-Russia normalisation advances",
+                    "what": "Washington continues easing trade pressure on Russia and presses for someone other than President Zelensky to negotiate for Kyiv.",
+                    "signal": "Further US measures favouring Russian exports, or Kyiv naming a different negotiator, would show this path unfolding.",
+                    "india_effect": "Easier conditions for Russian oil trade could lower risks for Indian refiners, though more Russian diesel on world markets may squeeze Indian fuel exporters."
+                  },
+                  {
+                    "name": "Kyiv-Washington ties repaired",
+                    "what": "President Zelensky's talks with US envoys Steve Witkoff and Jared Kushner ease the dispute, and US support for Ukraine continues.",
+                    "signal": "Resumed arms deliveries and joint US-Ukraine statements on negotiating terms would show relations stabilising.",
+                    "india_effect": "The trade environment for Russian oil may stay broadly as it is, leaving Indian refiners' current supply arrangements largely unchanged."
+                  },
+                  {
+                    "name": "US support curtailed",
+                    "what": "Washington carries out its threat to cut intelligence support and keeps arms shipments delayed, weakening Ukraine militarily.",
+                    "signal": "Confirmation that intelligence sharing has stopped would show Washington turning threats into action.",
+                    "india_effect": "A shift in battlefield balance could unsettle energy markets and make the outlook for Russian oil flows to India harder to predict."
+                  }
                 ]
               }
             }
@@ -126,9 +181,173 @@
               "summary": "US ⁠President Donald Trump on Monday said he thought someone other than Ukrainian President Volodymyr Zelensky ‌should negotiate on Kyiv’s behalf as it seeks to end the war with Russia.",
               "summaryV": 3,
               "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/20/ac46290f-caba-4d2b-98db-6d98c10ba731_1beb4852.jpg?itok=nv8enggT&v=1792446581"
+            },
+            {
+              "source": "aljazeera",
+              "headline": "US-Ukraine relations sour as Trump, Zelenskyy clash over talks, arms",
+              "url": "https://www.aljazeera.com/news/2026/10/20/us-ukraine-relations-sour-as-trump-zelenskyy-clash-over-talks-arms",
+              "date": "2026-10-20T06:23:44.000Z",
+              "kind": "hard",
+              "summary": "Trump calls for Zelenskyy to be replaced as negotiator, while Ukraine's president says arms shipments delayed.",
+              "summaryV": 3
+            },
+            {
+              "source": "nyt",
+              "headline": "Trump’s Push for Deals With Russia Powers His Frustration With Ukraine",
+              "url": "https://www.nytimes.com/2026/10/19/us/politics/trump-russia-deals.html",
+              "date": "2026-10-20T07:19:14.000Z",
+              "kind": "feature",
+              "summary": "The series of recent steps by the president that seem to favor Vladimir Putin reflect his intensifying desire to normalize the relationship with Moscow even if it means further undercutting Ukraine.",
+              "summaryV": 3,
+              "image": "https://static01.nyt.com/images/2026/10/19/multimedia/1dc-prexy-gfmw/1dc-prexy-gfmw-mediumSquareAt3X-v2.jpg"
             }
           ],
           "thread": "t1uohici"
+        },
+        {
+          "id": "stchozp",
+          "headline": "Trump backs Netanyahu: Is the US planning a new Iran attack with Israel?",
+          "url": "https://www.aljazeera.com/news/2026/10/19/trump-backs-netanyahu-is-the-us-planning-a-new-iran-attack-with-israel",
+          "source": "aljazeera",
+          "date": "2026-10-19T17:16:22.000Z",
+          "relevance": "medium",
+          "why": "President Trump has endorsed Prime Minister Netanyahu before Israel's election and floated restarting the war with Iran, while his defence secretary visited Israel. Renewed fighting could threaten Gulf oil supplies and the large Indian workforce in the region.",
+          "implications": [
+            "If US-Israeli strikes on Iran resume, insurers and shipowners could charge more to move cargo through Gulf waters, which may raise India's costs for imported crude.",
+            "Defense Secretary Pete Hegseth's unannounced visit, just over a week before the election, signals close US-Israeli coordination as Washington publicly weighs renewed military action.",
+            "Indian workers and their families in Gulf countries could face safety risks and travel disruption if renewed conflict leads to airspace closures across the region.",
+            "The timing ties the decision to Israeli domestic politics, so the election outcome could shape whether Washington moves from talk to action."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-20T08:47:31.551Z",
+            "tier": "standard",
+            "primary": "escalation",
+            "complement": null,
+            "features": [
+              "armed_conflict",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "high",
+              "reason": "A renewed Iran war would touch India's crude oil imports and the safety and travel of Indians in the Gulf, both of which affect households directly."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Israel's election is just over a week away, and any decision on renewed strikes could follow within weeks."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "Al Jazeera and CBS News report the endorsement and Hegseth's visit; no decision to restart the war has been confirmed."
+            },
+            "outlets": 2,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "up",
+                "what": "fuel price risk",
+                "effect": "Renewed conflict near Gulf shipping routes could raise crude prices and refiners' costs, which may feed through to petrol, diesel and LPG prices.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Gulf & overseas workers and families",
+                "direction": "unclear",
+                "what": "safety and job security",
+                "effect": "Indians working in Gulf states could face safety risks and job disruption if fighting spreads, affecting remittances to families at home.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Travellers & pilgrims",
+                "direction": "down",
+                "what": "flight availability",
+                "effect": "Airspace closures during renewed strikes could force cancellations or longer routes on flights between India, the Gulf and Europe.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Result of Israel's general election, in which Prime Minister Netanyahu is standing",
+                "why": "The outcome could shape whether Washington and Israel's government move towards renewed military action against Iran.",
+                "when": "just over a week after 20 October 2026",
+                "where": ""
+              },
+              {
+                "what": "Any formal US announcement on resuming military operations against Iran",
+                "why": "An announcement would mark a shift from President Trump floating the idea to an actual decision.",
+                "when": "",
+                "where": "The White House"
+              },
+              {
+                "what": "Deployment of additional US naval or air forces to the Middle East",
+                "why": "New deployments would indicate practical preparations for renewed strikes rather than political signalling.",
+                "when": "",
+                "where": "US Department of Defense"
+              }
+            ],
+            "context": [
+              "India imports most of its crude oil, and a large share comes from the Gulf, often shipped near Iran through the Strait of Hormuz.",
+              "Gulf countries host a very large Indian workforce whose remittances support many households, particularly in states such as Kerala."
+            ],
+            "terms": [
+              {
+                "term": "Strait of Hormuz",
+                "meaning": "A narrow sea passage between Iran and Oman through which a large share of the world's seaborne oil passes."
+              }
+            ],
+            "frameworks": {
+              "escalation": {
+                "current_rung": 1,
+                "evidence": "President Trump has floated restarting the Iran war and endorsed Netanyahu, and Defense Secretary Hegseth visited Israel. No new military action has been reported.",
+                "previous_rung": null,
+                "next_signals": [
+                  {
+                    "rung": 3,
+                    "signal": "The United States or Israel moving warships, aircraft or air-defence systems towards Iran would show mobilisation beyond statements."
+                  },
+                  {
+                    "rung": 4,
+                    "signal": "US or Israeli strikes on Iranian military or nuclear sites would show a move to limited attacks."
+                  },
+                  {
+                    "rung": 6,
+                    "signal": "Attacks on Gulf oil facilities, tankers or shipping lanes would show the conflict reaching critical infrastructure and third countries."
+                  }
+                ],
+                "india_channels": [
+                  "oil",
+                  "shipping",
+                  "remittances",
+                  "diaspora safety",
+                  "flights"
+                ]
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "aljazeera",
+              "headline": "Trump backs Netanyahu: Is the US planning a new Iran attack with Israel?",
+              "url": "https://www.aljazeera.com/news/2026/10/19/trump-backs-netanyahu-is-the-us-planning-a-new-iran-attack-with-israel",
+              "date": "2026-10-19T17:16:22.000Z",
+              "kind": "hard",
+              "summary": "Trump’s endorsement comes after he previously shied away from fully backing Netanyahu’s election campaign.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/afp_6ad6002b1963-1792409643.jpg?resize=1920%2C1440"
+            },
+            {
+              "source": "cbs",
+              "headline": "Hegseth meets Netanyahu ahead of elections, possible Iran war restart",
+              "url": "https://www.cbsnews.com/news/hegseth-visits-israel-elections-iran-war-netanyahu/",
+              "date": "2026-10-20T04:50:45.000Z",
+              "kind": "hard",
+              "summary": "Defense Secretary Pete Hegseth made an unannounced visit to Israel just over a week before Prime Minister Benjamin Netanyahu stands for elections, and as President Trump floats restarting the Iran war.",
+              "summaryV": 3
+            }
+          ],
+          "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/afp_6ad6002b1963-1792409643.jpg?resize=1920%2C1440",
+          "thread": "t2ogxay"
         },
         {
           "id": "s1jxzxim",
@@ -446,109 +665,6 @@
               }
             ]
           }
-        },
-        {
-          "id": "stchozp",
-          "headline": "Trump backs Netanyahu: Is the US planning a new Iran attack with Israel?",
-          "url": "https://www.aljazeera.com/news/2026/10/19/trump-backs-netanyahu-is-the-us-planning-a-new-iran-attack-with-israel",
-          "source": "aljazeera",
-          "date": "2026-10-19T17:16:22.000Z",
-          "relevance": "medium",
-          "why": "Al Jazeera reports that US President Donald Trump has endorsed Israeli Prime Minister Benjamin Netanyahu, raising the question of whether Washington plans a new attack on Iran with Israel. No attack is reported, so any effect on India is conditional.",
-          "implications": [
-            "Renewed US or Israeli military action against Iran could disturb Gulf oil supplies and shipping routes, which could raise crude import costs for India and put pressure on fuel prices.",
-            "The report describes a political endorsement and poses a question about an attack. It reports no military movement, so any effect on India depends on later decisions in Washington and Jerusalem."
-          ],
-          "analysis": {
-            "v": 3,
-            "at": "2026-10-19T20:40:24.606Z",
-            "tier": "quick",
-            "primary": "escalation",
-            "complement": null,
-            "features": [
-              "armed_conflict",
-              "pending_outcome"
-            ],
-            "exposure": {
-              "level": "low",
-              "reason": "The only channel is a possible future conflict involving Iran that could affect oil and Gulf shipping. The report describes rhetoric and an endorsement, not any action, so the link to India remains indirect."
-            },
-            "horizon": {
-              "value": "months",
-              "reason": "No military step is reported, so any effect on India would depend on later decisions and is unlikely to be felt within weeks."
-            },
-            "confidence": {
-              "level": "low",
-              "reason": "This rests on a single outlet, Al Jazeera, whose headline poses a question, and no official source on the record is cited about any plan to attack Iran."
-            },
-            "outlets": 1,
-            "affected": [
-              {
-                "group": "Fuel & LPG users",
-                "direction": "unclear",
-                "what": "possible fuel price pressure",
-                "effect": "If tensions with Iran turned into conflict that disrupted Gulf oil flows, higher crude costs could feed through to petrol, diesel and cooking gas prices in India.",
-                "basis": "inferred"
-              },
-              {
-                "group": "Gulf & overseas workers and families",
-                "direction": "unclear",
-                "what": "possible safety concerns",
-                "effect": "A wider confrontation involving Iran could raise safety and employment concerns for Indians working in Gulf countries and for the families who depend on their remittances.",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "Official US or Israeli statements that move from political backing to threats or plans for action against Iran",
-                "why": "Such statements would show whether the endorsement is only political or is linked to military preparations.",
-                "when": "",
-                "where": "White House and Israeli Prime Minister's Office statements"
-              }
-            ],
-            "context": [
-              "India imports most of the crude oil it uses, and a large share of its supply and of its sea trade passes through the Gulf region.",
-              "Public endorsements between allied leaders are political signals and do not by themselves show that military action is being prepared."
-            ],
-            "terms": [],
-            "frameworks": {
-              "escalation": {
-                "current_rung": 1,
-                "evidence": "The report describes only a public endorsement of Netanyahu by Trump and a question about a possible attack on Iran. No sanctions, deployments or strikes are reported.",
-                "previous_rung": null,
-                "next_signals": [
-                  {
-                    "rung": 2,
-                    "signal": "The United States or Israel announces new sanctions or formal diplomatic measures aimed at Iran."
-                  },
-                  {
-                    "rung": 4,
-                    "signal": "A limited US or Israeli strike on an Iranian target is reported by several outlets and confirmed by officials."
-                  }
-                ],
-                "india_channels": [
-                  "oil",
-                  "shipping"
-                ]
-              }
-            }
-          },
-          "reports": [
-            {
-              "source": "aljazeera",
-              "headline": "Trump backs Netanyahu: Is the US planning a new Iran attack with Israel?",
-              "url": "https://www.aljazeera.com/news/2026/10/19/trump-backs-netanyahu-is-the-us-planning-a-new-iran-attack-with-israel",
-              "date": "2026-10-19T17:16:22.000Z",
-              "kind": "hard",
-              "summary": "Trump’s endorsement comes after he previously shied away from fully backing Netanyahu’s election campaign.",
-              "summaryV": 3,
-              "ogTried": true,
-              "descTried": true,
-              "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/afp_6ad6002b1963-1792409643.jpg?resize=1920%2C1440"
-            }
-          ],
-          "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/afp_6ad6002b1963-1792409643.jpg?resize=1920%2C1440",
-          "thread": "t2ogxay"
         },
         {
           "id": "s15fa6gm",
@@ -2147,14 +2263,14 @@
           "date": "2026-10-18T19:58:43.000Z",
           "relevance": "medium",
           "image": "https://live-production.wcms.abc-cdn.net.au/2bcc5de27112144035164dd51dacf77e?impolicy=wcms_crop_resize&cropH=530&cropW=942&xPos=0&yPos=14&width=862&height=485",
-          "why": "ABC News reports oil is still rising; if sustained, higher crude could raise India's import bill and fuel costs, though no size or cause is given.",
+          "why": "ABC News reports that oil prices keep rising as Wall Street fell on anxiety about artificial intelligence stocks. For India, which imports most of its crude oil, higher oil prices could eventually raise fuel and transport costs.",
           "implications": [
-            "The report says oil keeps rising but gives no price level, size or cause.",
-            "If crude stays higher, India's import costs may rise, though pump prices could respond only slowly."
+            "Higher crude prices raise the import bill and the cost of crude for refiners, which can later feed into petrol and diesel prices if retailers pass them on.",
+            "The report gives no size for the oil rise, so the effect on Indian consumers depends on whether the increase is sustained and how large it becomes."
           ],
           "analysis": {
-            "v": 2,
-            "at": "2026-10-18T21:23:42.296Z",
+            "v": 3,
+            "at": "2026-10-20T08:47:31.552Z",
             "tier": "quick",
             "primary": "pass_through",
             "complement": null,
@@ -2163,63 +2279,81 @@
             ],
             "exposure": {
               "level": "medium",
-              "reason": "Crude is a major import, but the reported rise is unquantified and its cause unstated."
+              "reason": "Fuel is a household essential and India depends on imported crude, but the report gives no size for the oil rise. Any pass-through to pump prices would also be slowed by taxes and pricing practices."
             },
             "horizon": {
               "value": "weeks",
-              "reason": "Crude moves usually reach Indian fuel costs with a lag."
+              "reason": "Changes in global crude prices usually take weeks to affect refiners' costs and, if at all, retail fuel prices in India."
             },
             "confidence": {
               "level": "low",
-              "reason": "Single outlet, brief markets-blog summary with no figures or official source."
+              "reason": "This rests on one live markets blog from ABC News, with no official source and no stated size or cause for the oil price rise."
             },
             "outlets": 1,
             "affected": [
               {
                 "group": "Fuel & LPG users",
                 "direction": "up",
-                "what": "possible fuel price pressure",
+                "what": "possible petrol and diesel prices",
+                "effect": "If higher crude prices persist, refiners' costs could rise and may eventually be passed on to pump prices, although timing and size are not reported.",
                 "basis": "inferred"
               },
               {
-                "group": "Importers & traders",
-                "direction": "up",
-                "what": "possible higher crude import costs",
+                "group": "Government finances",
+                "direction": "unclear",
+                "what": "oil import bill",
+                "effect": "A sustained rise in crude prices could increase India's import bill and affect fuel tax decisions, though the reports do not discuss this.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "Whether the oil price rise continues in coming trading sessions",
+                "what": "Whether global crude oil prices keep rising over the coming trading days",
+                "why": "A sustained rise would be needed before refiners' costs and Indian fuel prices come under pressure.",
                 "when": "",
                 "where": ""
+              }
+            ],
+            "context": [
+              "India imports most of the crude oil it uses, so global price moves reach its economy through the import bill and refiners' costs. Retail fuel prices also depend on taxes and on pricing decisions by oil marketing companies."
+            ],
+            "terms": [
+              {
+                "term": "ASX",
+                "meaning": "The Australian Securities Exchange, Australia's main share market, which the report uses as its focus for the day's market movements."
               }
             ],
             "frameworks": {
               "pass_through": {
                 "driver": {
-                  "variable": "Crude oil price",
+                  "variable": "Global crude oil price",
                   "direction": "up",
                   "size": ""
                 },
                 "product": "petrol & diesel",
                 "rungs": [
                   {
-                    "stage": "Global crude → Refiners' import cost",
+                    "stage": "Global crude price to refiners' cost",
                     "pass": "likely",
-                    "damper": "Existing purchase contracts and inventory may delay the effect",
+                    "damper": "India imports most of its crude, so refiners face higher costs quickly, although purchase contracts and inventories already held can delay the full effect.",
                     "lag": "weeks"
                   },
                   {
-                    "stage": "Refiners' cost → Pump price",
+                    "stage": "Refiners' cost to retail pump prices",
                     "pass": "partial",
-                    "damper": "Taxes and administered pricing may soften the pass-through",
+                    "damper": "Taxes form a large part of pump prices, and oil marketing companies do not always change retail prices in step with crude costs.",
                     "lag": "weeks"
+                  },
+                  {
+                    "stage": "Pump prices to freight and household costs",
+                    "pass": "unclear",
+                    "damper": "Transporters may absorb small increases for a time, and the reports do not say whether the rise in oil prices will last.",
+                    "lag": "months"
                   }
                 ],
                 "end_user": {
                   "group": "Fuel & LPG users",
-                  "effect": "Pump prices could come under upward pressure if the crude rise is sustained, though the size is unknown."
+                  "effect": "Motorists and households may notice higher petrol or diesel prices only if the oil rise is sustained and retailers pass it on, and any change would probably take weeks to appear."
                 }
               }
             }
@@ -7967,6 +8101,30 @@
       "name": "Logistics & Shipping",
       "items": [
         {
+          "id": "s1icoz9b",
+          "headline": "Dire straits: why Filipino sailors continue to brave troubled Middle East waters",
+          "url": "https://www.scmp.com/week-asia/economics/article/3371457/dire-straits-why-filipino-sailors-continue-brave-troubled-middle-east-waters",
+          "source": "scmp",
+          "date": "2026-10-20T05:00:05.000Z",
+          "relevance": "medium",
+          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/20/0cb77593-99a9-4e84-9d9f-3c8a27450902_ccb98547.jpg?itok=rIl_nhFO&v=1792472404",
+          "why": "",
+          "implications": [],
+          "reports": [
+            {
+              "source": "scmp",
+              "headline": "Dire straits: why Filipino sailors continue to brave troubled Middle East waters",
+              "url": "https://www.scmp.com/week-asia/economics/article/3371457/dire-straits-why-filipino-sailors-continue-brave-troubled-middle-east-waters",
+              "date": "2026-10-20T05:00:05.000Z",
+              "kind": "feature",
+              "summary": "Filipino seafarer Jay was on lookout duty aboard a vessel passing through the Strait of Hormuz one evening in August when drones swarmed overhead, darting past his ship and two others it was following. Within seconds, an explosion rang out from the tanker ahead.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/20/0cb77593-99a9-4e84-9d9f-3c8a27450902_ccb98547.jpg?itok=rIl_nhFO&v=1792472404"
+            }
+          ],
+          "thread": "t2ogxay"
+        },
+        {
           "id": "sa8iroa",
           "headline": "Houthi attack kills 53 at Yemen government training camp",
           "url": "https://www.scmp.com/news/world/middle-east/article/3371416/houthi-attack-kills-53-yemen-government-training-camp",
@@ -10424,109 +10582,102 @@
       "name": "Economy & Trade",
       "items": [
         {
-          "id": "s3j6mc7",
-          "headline": "US-China negotiators race to nail down concrete deals as Shenzhen Apec looms",
-          "url": "https://www.scmp.com/news/china/diplomacy/article/3371413/us-china-negotiators-race-nail-down-concrete-deals-shenzhen-apec-looms",
-          "source": "scmp",
-          "date": "2026-10-19T22:00:06.000Z",
+          "id": "sgys1we",
+          "headline": "BlackRock, GIC among investors chasing Indian telecom major Jio's IPO as anchor bids top $26 billion",
+          "url": "https://www.cnbc.com/2026/10/20/jio-ipo-gic-blackrock-.html",
+          "source": "cnbc",
+          "date": "2026-10-20T02:44:35.000Z",
           "relevance": "medium",
-          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/19/7b91cfc0-d8e3-4b7e-8a57-a9c5d75d384e_180badbd.jpg?itok=3gGnfE2w&v=1792418095",
-          "why": "The United States and China are racing to settle concrete investment deals before their leaders meet in Shenzhen next month. The outcome could shape global trade conditions that Indian exporters and importers operate in.",
+          "why": "CNBC reports that anchor investors, including BlackRock and GIC, have placed bids above $26 billion for the Jio Platforms IPO, which seeks up to $3.2 billion. This shows strong global appetite for Indian equities and a very large listing.",
           "implications": [
-            "Any extension of the broad US-China trade agreement could change tariff conditions for Chinese goods, which in turn may alter how competitive Indian exporters are in the American market.",
-            "A calmer US-China relationship could reduce the pressure on global buyers to shift sourcing away from China, which may weaken one reason they have turned to India."
+            "Heavy demand from large foreign and institutional investors may encourage other Indian companies to raise money through share sales, since a well-received large issue can signal that capital is available.",
+            "The offer ranks first in rupee terms but second in dollar terms, which shows that the exchange rate between the rupee and the dollar affects how the size of an issue is compared."
           ],
           "analysis": {
             "v": 3,
-            "at": "2026-10-20T00:27:50.478Z",
+            "at": "2026-10-20T08:43:38.691Z",
             "tier": "quick",
-            "primary": "impact_chain",
+            "primary": "winners_losers",
             "complement": null,
             "features": [
+              "allocation",
               "pending_outcome"
             ],
             "exposure": {
               "level": "low",
-              "reason": "The reports describe only a US-China negotiation and name no direct channel to India. Any effect would arrive indirectly through tariffs, sourcing decisions and export competition."
+              "reason": "The reach is through capital markets and investor sentiment. The report describes a share sale, not any change to mobile tariffs, fuel, food or loan costs, so it has no direct channel to household essentials."
             },
             "horizon": {
-              "value": "months",
-              "reason": "The leaders' meeting is next month, and any change in tariffs or sourcing patterns would take longer to reach Indian firms."
+              "value": "weeks",
+              "reason": "Anchor allocation comes before the public offer, and the public subscription and listing normally follow within a few weeks, which is when the wider market effect would show."
             },
             "confidence": {
               "level": "low",
-              "reason": "This rests on a single outlet, the South China Morning Post, with no named official source, and the content of the deals and the extension remains unconfirmed."
+              "reason": "This rests on a single CNBC report with no named company or regulator source in the summary, and the final issue size, pricing and allocation are unconfirmed."
             },
             "outlets": 1,
             "affected": [
               {
-                "group": "Large exporters",
+                "group": "Depositors & savers",
                 "direction": "unclear",
-                "what": "US market competitiveness",
-                "effect": "If US-China trade terms are extended or eased, Indian exporters may face more or less competition from Chinese goods in the American market.",
-                "basis": "inferred"
-              },
-              {
-                "group": "Importers & traders",
-                "direction": "unclear",
-                "what": "supply chain conditions",
-                "effect": "Changes in US-China trade terms could alter global prices and availability of inputs that Indian importers buy from Chinese suppliers.",
+                "what": "household investment options",
+                "effect": "",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "The Shenzhen Apec meeting between the US and Chinese leaders and any announced investment deals or trade agreement extension",
-                "why": "It would show whether the two sides have settled their contest over leverage and what trade terms will apply.",
-                "when": "November 2026",
-                "where": ""
+                "what": "The dates on which the public subscription opens and the Jio Platforms shares list on the stock exchanges",
+                "why": "These dates would show when the offer reaches ordinary investors and how the market receives the shares after the strong anchor demand.",
+                "when": "",
+                "where": "Securities and Exchange Board of India (SEBI) filings and stock exchange notices"
+              },
+              {
+                "what": "The final size and price of the offer compared with the reported ceiling of $3.2 billion",
+                "why": "This would confirm whether the strong anchor demand translates into a full raise at the planned scale.",
+                "when": "",
+                "where": "Company offer documents filed with SEBI"
               }
             ],
             "context": [
-              "India competes with China for export orders in the United States and also depends on Chinese inputs such as electronic components and chemicals. Shifts in US-China trade terms therefore reach India indirectly."
+              "In Indian IPOs, anchor investors are large institutions allocated shares just before the public offer opens, and their demand often shapes the mood for the wider sale."
             ],
             "terms": [
               {
-                "term": "Apec",
-                "meaning": "The Asia-Pacific Economic Cooperation forum, an annual gathering of Pacific Rim economies that discusses trade and investment and often hosts bilateral meetings between leaders."
+                "term": "anchor bids",
+                "meaning": "Orders placed by large institutional investors before an IPO opens to the public, which help establish a base of demand for the shares."
               }
             ],
             "frameworks": {
-              "impact_chain": {
-                "chain": [
+              "winners_losers": {
+                "groups": [
                   {
-                    "step": "Deal race before leaders' meeting",
-                    "detail": "US and Chinese negotiators are trying to secure concrete investment deals before their leaders meet in Shenzhen next month.",
-                    "basis": "reported"
-                  },
-                  {
-                    "step": "Contest over trade agreement extension",
-                    "detail": "Both sides are competing for leverage as they try to extend their broad trade agreement, so the final terms remain uncertain.",
-                    "basis": "reported"
-                  },
-                  {
-                    "step": "Shift in global trade conditions",
-                    "detail": "The terms of any extension could change tariffs and sourcing choices, which may alter Indian exporters' competitiveness against Chinese goods and the cost of Chinese inputs.",
-                    "basis": "inferred"
+                    "group": "Depositors & savers",
+                    "direction": "unclear",
+                    "directness": "indirect",
+                    "mechanism": "Savers who invest through shares or funds may get access to a large new listing. Whether this helps or hurts them depends on pricing and performance, which the reports do not describe."
                   }
                 ],
-                "breaks_if": "The talks leave existing tariff arrangements largely unchanged, or the goods Indian firms export and import are not affected by the US-China terms."
+                "not_affected": "Mobile subscribers are not directly affected, because the report describes a share sale by the company and does not mention any change in tariffs or services."
               }
             }
           },
           "reports": [
             {
-              "source": "scmp",
-              "headline": "US-China negotiators race to nail down concrete deals as Shenzhen Apec looms",
-              "url": "https://www.scmp.com/news/china/diplomacy/article/3371413/us-china-negotiators-race-nail-down-concrete-deals-shenzhen-apec-looms",
-              "date": "2026-10-19T22:00:06.000Z",
+              "source": "cnbc",
+              "headline": "BlackRock, GIC among investors chasing Indian telecom major Jio's IPO as anchor bids top $26 billion",
+              "url": "https://www.cnbc.com/2026/10/20/jio-ipo-gic-blackrock-.html",
+              "date": "2026-10-20T02:44:35.000Z",
               "kind": "hard",
-              "summary": "The US and China are racing to secure concrete investment deals ahead of their leaders’ meeting in Shenzhen next month, even as both sides engage in a contest over leverage in extending their broad trade agreement.",
+              "summary": "Jio Platforms plans to raise up to $3.2 billion through an IPO, which is India's largest ever in rupee terms, but the second largest in dollar terms.",
               "summaryV": 3,
-              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/19/7b91cfc0-d8e3-4b7e-8a57-a9c5d75d384e_180badbd.jpg?itok=3gGnfE2w&v=1792418095"
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://image.cnbcfm.com/api/v1/image/108435073-1792458285539-gettyimages-2299757574-INDIA_JIO_IPO.jpeg?v=1792458317&w=1920&h=1080"
             }
           ],
-          "thread": "t1tc0guw"
+          "image": "https://image.cnbcfm.com/api/v1/image/108435073-1792458285539-gettyimages-2299757574-INDIA_JIO_IPO.jpeg?v=1792458317&w=1920&h=1080",
+          "thread": "taxfz9d"
         },
         {
           "id": "sgis117",
@@ -10666,6 +10817,25 @@
               "kind": "hard",
               "summary": "Iran-backed Houthi militants have launched repeated volleys of missiles and drones at Saudi Arabia since a deadly airport attack earlier this month.",
               "summaryV": 3
+            },
+            {
+              "source": "aljazeera",
+              "headline": "Saudi Arabia cancels 2026 ‘Davos in the Desert’ amid Houthi attacks",
+              "url": "https://www.aljazeera.com/news/2026/10/20/saudi-arabia-cancels-2026-davos-in-the-desert-amid-houthi-attacks",
+              "date": "2026-10-20T01:05:31.000Z",
+              "kind": "hard",
+              "summary": "Riyadh postpones flagship investment conference until 2027, orders government staff to work from home.",
+              "summaryV": 3
+            },
+            {
+              "source": "scmp",
+              "headline": "Saudi Arabia postpones ‘Davos in the Desert’ summit to 2027 after deadly attacks",
+              "url": "https://www.scmp.com/news/world/middle-east/article/3371441/saudi-arabia-postpones-davos-desert-summit-2027-after-deadly-attacks",
+              "date": "2026-10-20T01:57:11.000Z",
+              "kind": "hard",
+              "summary": "Saudi Arabia has decided to postpone its flagship investment conference until next year, organisers confirmed in a statement on Monday, following deadly attacks which rocked ‌the kingdom in recent weeks as the Middle East conflict widens, disrupting business.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/20/aca6961f-937a-494c-80fb-57451a5b6706_de3d41f8.jpg?itok=vqZ8m6eY&v=1792461421"
             }
           ],
           "thread": "t1j5n1me",
@@ -10675,6 +10845,111 @@
             "series": [],
             "reuseOnly": true
           }
+        },
+        {
+          "id": "s3j6mc7",
+          "headline": "US-China negotiators race to nail down concrete deals as Shenzhen Apec looms",
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3371413/us-china-negotiators-race-nail-down-concrete-deals-shenzhen-apec-looms",
+          "source": "scmp",
+          "date": "2026-10-19T22:00:06.000Z",
+          "relevance": "medium",
+          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/19/7b91cfc0-d8e3-4b7e-8a57-a9c5d75d384e_180badbd.jpg?itok=3gGnfE2w&v=1792418095",
+          "why": "The United States and China are racing to settle concrete investment deals before their leaders meet in Shenzhen next month. The outcome could shape global trade conditions that Indian exporters and importers operate in.",
+          "implications": [
+            "Any extension of the broad US-China trade agreement could change tariff conditions for Chinese goods, which in turn may alter how competitive Indian exporters are in the American market.",
+            "A calmer US-China relationship could reduce the pressure on global buyers to shift sourcing away from China, which may weaken one reason they have turned to India."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-20T00:27:50.478Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "The reports describe only a US-China negotiation and name no direct channel to India. Any effect would arrive indirectly through tariffs, sourcing decisions and export competition."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "The leaders' meeting is next month, and any change in tariffs or sourcing patterns would take longer to reach Indian firms."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single outlet, the South China Morning Post, with no named official source, and the content of the deals and the extension remains unconfirmed."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Large exporters",
+                "direction": "unclear",
+                "what": "US market competitiveness",
+                "effect": "If US-China trade terms are extended or eased, Indian exporters may face more or less competition from Chinese goods in the American market.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "supply chain conditions",
+                "effect": "Changes in US-China trade terms could alter global prices and availability of inputs that Indian importers buy from Chinese suppliers.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "The Shenzhen Apec meeting between the US and Chinese leaders and any announced investment deals or trade agreement extension",
+                "why": "It would show whether the two sides have settled their contest over leverage and what trade terms will apply.",
+                "when": "November 2026",
+                "where": ""
+              }
+            ],
+            "context": [
+              "India competes with China for export orders in the United States and also depends on Chinese inputs such as electronic components and chemicals. Shifts in US-China trade terms therefore reach India indirectly."
+            ],
+            "terms": [
+              {
+                "term": "Apec",
+                "meaning": "The Asia-Pacific Economic Cooperation forum, an annual gathering of Pacific Rim economies that discusses trade and investment and often hosts bilateral meetings between leaders."
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Deal race before leaders' meeting",
+                    "detail": "US and Chinese negotiators are trying to secure concrete investment deals before their leaders meet in Shenzhen next month.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Contest over trade agreement extension",
+                    "detail": "Both sides are competing for leverage as they try to extend their broad trade agreement, so the final terms remain uncertain.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Shift in global trade conditions",
+                    "detail": "The terms of any extension could change tariffs and sourcing choices, which may alter Indian exporters' competitiveness against Chinese goods and the cost of Chinese inputs.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The talks leave existing tariff arrangements largely unchanged, or the goods Indian firms export and import are not affected by the US-China terms."
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "scmp",
+              "headline": "US-China negotiators race to nail down concrete deals as Shenzhen Apec looms",
+              "url": "https://www.scmp.com/news/china/diplomacy/article/3371413/us-china-negotiators-race-nail-down-concrete-deals-shenzhen-apec-looms",
+              "date": "2026-10-19T22:00:06.000Z",
+              "kind": "hard",
+              "summary": "The US and China are racing to secure concrete investment deals ahead of their leaders’ meeting in Shenzhen next month, even as both sides engage in a contest over leverage in extending their broad trade agreement.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/19/7b91cfc0-d8e3-4b7e-8a57-a9c5d75d384e_180badbd.jpg?itok=3gGnfE2w&v=1792418095"
+            }
+          ],
+          "thread": "t1tc0guw"
         },
         {
           "id": "splf9hv",
@@ -11864,32 +12139,29 @@
           "source": "cnbc",
           "date": "2026-10-18T23:00:01.000Z",
           "relevance": "medium",
-          "why": "India's finance minister flags continued capital outflows as one of the biggest risks for 2027, which could weigh on Indian equity markets and market-linked savings.",
+          "why": "CNBC reports that India's Finance Minister blames easy exits and excess liquidity for the equity market's underperformance. She also said continued capital outflows are among the biggest risks facing India in 2027.",
           "implications": [
-            "CNBC reports the finance minister blamed easy exits and excess liquidity for the equity market's underperformance.",
-            "If outflows continue, Indian equity markets could stay under pressure, which may affect people with market-linked savings.",
-            "The report gives no figures or price effects, so any link to household costs is not shown."
+            "The reference to easy exits suggests that investors can leave Indian markets quickly, so sustained foreign selling could weigh on share prices and put pressure on the rupee.",
+            "Because the warning comes from the finance minister, it may show that the government treats the stability of foreign investment flows as a policy concern for 2027."
           ],
           "analysis": {
-            "v": 2,
-            "at": "2026-10-18T23:23:26.319Z",
+            "v": 3,
+            "at": "2026-10-20T08:47:31.551Z",
             "tier": "quick",
-            "primary": "pass_through",
+            "primary": "impact_chain",
             "complement": null,
-            "features": [
-              "price_move"
-            ],
+            "features": [],
             "exposure": {
               "level": "low",
-              "reason": "Only an indirect link to households; the report names no price, rate or trade mechanism."
+              "reason": "The reports describe a risk to equity markets and capital flows, not a direct change in household prices. The channel to Indians is indirect, through market-linked savings and financing conditions."
             },
             "horizon": {
               "value": "months",
-              "reason": "Risk is framed for 2027; no immediate effect is reported."
+              "reason": "The minister framed capital outflows as a risk for 2027, so any effect would build gradually rather than appear within weeks."
             },
             "confidence": {
               "level": "medium",
-              "reason": "Single outlet, but it quotes the finance minister on record."
+              "reason": "This rests on a single outlet, CNBC, but it attributes the remarks to India's Finance Minister; no second outlet or detailed data is provided."
             },
             "outlets": 1,
             "affected": [
@@ -11897,48 +12169,52 @@
                 "group": "Depositors & savers",
                 "direction": "unclear",
                 "what": "value of market-linked savings",
+                "effect": "Savings held in shares or equity funds could lose value if outflows weaken the market, although the reports do not say how large any effect would be.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Government finances",
+                "direction": "unclear",
+                "what": "reliance on foreign capital",
+                "effect": "Persistent outflows could make it harder to attract the foreign money that supports India's external financing, though the reports do not describe any such effect.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "Further finance minister statements on capital outflows and equity market conditions",
+                "what": "Further official comments or data on foreign investor outflows from Indian equity markets",
+                "why": "It would show whether the minister's concern is reflected in actual selling by foreign investors.",
                 "when": "",
                 "where": "Ministry of Finance"
               }
             ],
+            "context": [],
+            "terms": [
+              {
+                "term": "capital outflows",
+                "meaning": "Money leaving a country when investors sell local assets, such as shares and bonds, and move the proceeds abroad."
+              }
+            ],
             "frameworks": {
-              "pass_through": {
-                "driver": {
-                  "variable": "Capital outflows from India",
-                  "direction": "up",
-                  "size": ""
-                },
-                "product": "other",
-                "rungs": [
+              "impact_chain": {
+                "chain": [
                   {
-                    "stage": "Capital outflows → Equity market weakness",
-                    "pass": "unclear",
-                    "damper": "Report gives no size or channel for the outflows.",
-                    "lag": "weeks"
+                    "step": "Minister warns about capital outflows",
+                    "detail": "India's Finance Minister said continued capital outflows are one of the biggest risks for the country in 2027, according to CNBC.",
+                    "basis": "reported"
                   },
                   {
-                    "stage": "Weak equities → Market-linked savings value",
-                    "pass": "partial",
-                    "damper": "Only households holding market-linked savings are exposed.",
-                    "lag": "months"
+                    "step": "Easy exits and excess liquidity blamed",
+                    "detail": "She attributed the equity market's underperformance to easy exits and excess liquidity, which suggests investors can withdraw quickly and weaken market sentiment.",
+                    "basis": "reported"
                   },
                   {
-                    "stage": "Savings value → Household finances",
-                    "pass": "unclear",
-                    "damper": "Reports show no link to prices, rates or incomes.",
-                    "lag": "months"
+                    "step": "Savings and financing could be affected",
+                    "detail": "Weaker equity markets could reduce the value of market-linked savings and may make it more expensive for Indian companies to raise money.",
+                    "basis": "inferred"
                   }
                 ],
-                "end_user": {
-                  "group": "Depositors & savers",
-                  "effect": "Households with market-linked savings could see their value affected; bank deposits are not shown to be touched."
-                }
+                "breaks_if": "The effect would not reach households if domestic investors absorb any foreign selling and outflows slow, leaving market prices and financing conditions broadly stable."
               }
             }
           },
@@ -11966,15 +12242,14 @@
           "source": "cbs",
           "date": "2026-10-18T21:14:54.000Z",
           "relevance": "medium",
-          "why": "Continued Russia-Ukraine strikes alongside uncertain US peace efforts could keep global energy and trade conditions unsettled, which may indirectly reach India.",
+          "why": "CBS News reports that Trump says he is negotiating peace while Russia and Ukraine trade strikes, and tensions between Ukraine and Washington have deepened. Any effect on India would come mainly through energy, commodity markets and diplomacy.",
           "implications": [
-            "The report gives no direct India link, so any effect is inferred and indirect.",
-            "Continued strikes could keep oil and trade routes uncertain, which may affect fuel costs and import bills.",
-            "Deeper Ukraine-Washington tensions could make a peace outcome harder to read, leaving India's trade planning uncertain."
+            "Strikes continuing during talks mean a settlement is not yet visible, so uncertainty over energy and commodity supplies linked to the region may persist.",
+            "Deepening tension between Ukraine and Washington could complicate any peace effort, which may in turn affect how India balances its relations with the parties involved."
           ],
           "analysis": {
-            "v": 2,
-            "at": "2026-10-18T21:24:03.203Z",
+            "v": 3,
+            "at": "2026-10-20T08:47:31.552Z",
             "tier": "quick",
             "primary": "escalation",
             "complement": null,
@@ -11984,50 +12259,47 @@
             ],
             "exposure": {
               "level": "low",
-              "reason": "The report describes no mechanism reaching Indian households, imports, exports or citizens."
+              "reason": "The report describes strikes and diplomacy but gives no reported link to oil, shipping or trade. Any channel to India, such as energy prices, would be indirect and unconfirmed."
             },
             "horizon": {
               "value": "months",
-              "reason": "No direct channel reported; any effect would likely build gradually."
+              "reason": "Peace talks and strikes are ongoing with no reported outcome, so any effect on India would depend on how the conflict and negotiations develop over time."
             },
             "confidence": {
               "level": "low",
-              "reason": "Single outlet; summary is brief and gives no official detail."
+              "reason": "This rests on a single outlet, CBS News, and on Trump's own description of his negotiating efforts; the scale of the strikes is not detailed."
             },
             "outlets": 1,
             "affected": [
               {
-                "group": "Fuel & LPG users",
+                "group": "Importers & traders",
                 "direction": "unclear",
-                "what": "fuel prices",
+                "what": "energy and commodity trade costs",
+                "effect": "Continued fighting could affect the cost and availability of energy and commodities that Indian traders import, though the reports describe no such effect directly.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "Any announced US-led negotiation steps between Russia and Ukraine",
-                "when": "",
-                "where": "White House"
-              },
-              {
-                "what": "Further reported Russian or Ukrainian strikes",
+                "what": "Any announced ceasefire, peace framework or formal talks between Russia, Ukraine and the United States",
+                "why": "It would show whether the negotiation Trump describes is turning into concrete steps that reduce fighting.",
                 "when": "",
                 "where": ""
               }
             ],
+            "context": [
+              "Wars often involve military exchanges and diplomatic efforts at the same time, so talks and attacks can continue together. India maintains ties with both Russia and Western countries, and conflicts involving Russia can move global energy and commodity prices."
+            ],
+            "terms": [],
             "frameworks": {
               "escalation": {
                 "current_rung": 4,
-                "evidence": "CBS News reports Russia and Ukraine are trading strikes while Trump says he is negotiating peace.",
+                "evidence": "CBS News reports that Russia and Ukraine traded strikes, which places the conflict at limited strikes or attacks. The report does not describe the scale or targets of those strikes.",
                 "previous_rung": null,
                 "next_signals": [
                   {
                     "rung": 5,
-                    "signal": "Reports of sustained, repeated strike campaigns by either side"
-                  },
-                  {
-                    "rung": 6,
-                    "signal": "Strikes on critical infrastructure or on third countries"
+                    "signal": "Reports of repeated, large-scale strikes by either side over several consecutive days, rather than isolated exchanges."
                   }
                 ],
                 "india_channels": [
@@ -12061,102 +12333,120 @@
           "source": "cnbc",
           "date": "2026-10-16T10:25:46.000Z",
           "relevance": "medium",
-          "why": "A dispute over who curbed Ukraine's Starlink access coincides with Trump pausing some Russian sanctions, which could indirectly affect India's Russia-linked trade.",
+          "why": "Speed limits on SpaceX's Starlink service grounded Ukrainian interceptors during Russian strikes, and Kyiv and Washington dispute who ordered them. The episode shows how a foreign-controlled satellite network can be curtailed, a concern for India's satellite communication policy.",
           "implications": [
-            "The episode shows how much militaries depend on one private satellite provider whose access can change without notice.",
-            "Trump pausing some Russian sanctions could change the compliance picture for trade with Russia, though reports draw no India link.",
-            "Intensifying Russian strikes keep the war's direction uncertain, and that uncertainty may weigh on energy markets."
+            "ABC News reports that Ukraine relies on Starlink to operate its interceptors, so the curbs weakened its defences while Russian strikes intensified.",
+            "Ukrainian officials say SpaceX limited connectivity without advance notice, showing that users may have little warning when a private provider changes service.",
+            "Indian regulators and defence planners could see the episode as a reason to weigh security conditions on foreign satellite internet providers more carefully.",
+            "ABC News also reports that President Trump has paused some Russian sanctions, adding to Ukraine's concerns about the reliability of US support."
           ],
           "analysis": {
-            "v": 2,
-            "at": "2026-10-18T21:25:22.825Z",
+            "v": 3,
+            "at": "2026-10-20T08:47:31.552Z",
             "tier": "deep",
             "primary": "conflicting",
             "complement": "impact_chain",
             "features": [
               "conflict",
               "armed_conflict",
-              "fast_moving",
-              "pending_outcome"
+              "fast_moving"
             ],
             "exposure": {
               "level": "low",
-              "reason": "No direct India mechanism reported; links run through sanctions and war intensity."
+              "reason": "The reports describe no direct effect on India. The link is indirect, through lessons for how India regulates and relies on foreign-controlled satellite networks."
             },
             "horizon": {
-              "value": "months",
-              "reason": "Any sanctions or energy effects would build over time."
+              "value": "years",
+              "reason": "Any effect on India would come through slow-moving satellite and defence communication policy rather than immediate changes for consumers."
             },
             "confidence": {
-              "level": "low",
-              "reason": "Who ordered the restrictions remains disputed between Kyiv and Washington."
+              "level": "high",
+              "reason": "Five outlets confirm the restrictions, with on-record statements from Trump and Zelensky; who ordered the curbs remains unconfirmed."
             },
             "outlets": 5,
             "affected": [
               {
-                "group": "Importers & traders",
+                "group": "IT & services workers",
                 "direction": "unclear",
-                "what": "Russia sanctions compliance",
+                "what": "satellite communication policy",
+                "effect": "Indian firms in satellite communications could be affected if policymakers respond by tightening rules on foreign providers or favouring domestic capacity.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "Restoration of normal Starlink access for Ukraine's military",
-                "when": "",
-                "where": "SpaceX"
-              },
-              {
-                "what": "Further changes to the pause on some Russian sanctions",
-                "when": "",
-                "where": "White House"
-              },
-              {
-                "what": "Western winter energy and air-defence support for Ukraine",
+                "what": "An official explanation from SpaceX or the US government on why Starlink speeds were limited",
+                "why": "It would clarify whether the restrictions came from a government decision or from the company itself.",
                 "when": "",
                 "where": ""
+              },
+              {
+                "what": "Restoration of normal Starlink and Starshield access for Ukraine's armed forces",
+                "why": "Restored access would show the dispute easing and Ukraine's air defences regaining full capability.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "Satellite internet networks such as Starlink are controlled by the companies that operate them, which can change coverage or speeds remotely for particular areas or users.",
+              "In India, satellite communication services require government licensing and must meet security conditions, and Starlink has sought to offer services in the Indian market.",
+              "Militaries increasingly rely on commercial satellite links to control drones and coordinate units, which makes access to such networks a strategic issue."
+            ],
+            "terms": [
+              {
+                "term": "Starshield",
+                "meaning": "A military-grade version of SpaceX's satellite internet service, designed for government and defence users."
+              },
+              {
+                "term": "interceptors",
+                "meaning": "Missiles or drones launched to destroy incoming enemy missiles or drones before they reach their targets."
               }
             ],
             "frameworks": {
               "conflicting": {
                 "disputed": {
-                  "item": "Who is responsible for restricting Ukraine's Starlink access",
-                  "unit": "attribution"
+                  "item": "who is responsible for the Starlink restrictions in Ukraine",
+                  "unit": "attribution of respo"
                 },
                 "accounts": [
                   {
-                    "outlet": "CNBC",
-                    "value": "SpaceX limited internet connectivity without advance notice",
-                    "origin": "Ukrainian officials",
-                    "time": "this week, reported 2026-10-16"
+                    "outlet": "NPR",
+                    "value": "The US government is behind the Ukrainian military's loss of normal access to th",
+                    "origin": "Ukrainian President Volodymyr Zelenskyy",
+                    "time": "2026-10-18"
                   },
                   {
                     "outlet": "BBC News",
-                    "value": "Trump denies limiting Ukraine access to Starlink",
-                    "origin": "Donald Trump",
+                    "value": "Trump denies limiting Ukraine's access to the Starlink network.",
+                    "origin": "US President Donald Trump",
                     "time": "2026-10-16"
                   },
                   {
                     "outlet": "CNBC",
-                    "value": "White House didn't order Starlink restrictions in Ukraine",
-                    "origin": "Donald Trump",
+                    "value": "The White House did not order the Starlink restrictions in Ukraine.",
+                    "origin": "US President Donald Trump",
                     "time": "2026-10-16"
                   },
                   {
-                    "outlet": "NPR",
-                    "value": "U.S. government is behind the military's loss of normal access",
-                    "origin": "Volodymyr Zelenskyy",
-                    "time": "2026-10-18"
+                    "outlet": "CNBC",
+                    "value": "SpaceX limited internet connectivity without advance notice.",
+                    "origin": "Ukrainian officials",
+                    "time": "2026-10-16"
                   }
                 ],
                 "agreed": [
-                  "Ukraine's military lost normal access to Starlink/Starshield satellite communications.",
-                  "Speed restrictions hampered Ukraine's defences, including interceptors, during intensified Russian strikes."
+                  "Ukraine's armed forces lost normal access to Starlink satellite internet because speed restrictions were imposed.",
+                  "The restrictions hampered Ukraine's defences during intensifying Russian strikes.",
+                  "Ukraine's military relies on SpaceX satellite communication services for its operations."
                 ],
                 "explanations": [
                   {
                     "type": "different source",
-                    "note": "Ukrainian leaders attribute curbs to Washington; Trump denies the White House ordered them."
+                    "note": "The Ukrainian accounts come from Kyiv's leadership and officials, while the denials come from President Trump, and each side has a political interest in how responsibility is assigned."
+                  },
+                  {
+                    "type": "unexplained",
+                    "note": "None of the reports includes a public explanation from SpaceX that could show whether the curbs were a company decision or followed government instructions."
                   }
                 ],
                 "status": "unresolved"
@@ -12164,27 +12454,27 @@
               "impact_chain": {
                 "chain": [
                   {
-                    "step": "Starlink speed curbs hit Ukraine",
-                    "detail": "Restrictions grounded interceptors as Russian strikes intensified, reports say.",
+                    "step": "SpaceX restricts Starlink speeds in Ukraine",
+                    "detail": "Ukrainian officials report that SpaceX limited the connectivity its military relies on without advance notice, causing a loss of normal access to the service.",
                     "basis": "reported"
                   },
                   {
-                    "step": "Trump pauses some Russian sanctions",
-                    "detail": "ABC News reports the pause alongside the Starlink restrictions.",
+                    "step": "Ukrainian air defences are weakened",
+                    "detail": "ABC News reports that the restrictions grounded interceptors as Russian strikes battered Ukraine, and the BBC reports that they limited defences against deadly attacks.",
                     "basis": "reported"
                   },
                   {
-                    "step": "Russia trade rules may shift",
-                    "detail": "Eased sanctions could change compliance conditions for trade with Russia.",
-                    "basis": "inferred"
+                    "step": "Dispute over government or company control",
+                    "detail": "President Zelensky blames the US government, while President Trump says the White House did not order the curbs, which raises the question of who controls access.",
+                    "basis": "reported"
                   },
                   {
-                    "step": "Indian traders could feel effects",
-                    "detail": "Indian firms dealing with Russia may see altered compliance requirements.",
+                    "step": "India may reassess satellite dependence",
+                    "detail": "Indian regulators and defence planners could treat the episode as evidence that foreign-controlled satellite services can be curtailed, which may shape licensing and security conditions.",
                     "basis": "inferred"
                   }
                 ],
-                "breaks_if": "Sanctions pause is reversed or found not to cover India-relevant trade."
+                "breaks_if": "The effect would not reach India if Indian authorities judge the episode to be specific to the Ukraine war and see no need to change their approach to foreign satellite providers."
               }
             }
           },
@@ -15624,6 +15914,15 @@
               "summary": "Citing national security concerns, the US government has ordered federal civilian agencies to remove DeepSeek products and any third-party services developed using the Chinese artificial intelligence model from their information systems.",
               "summaryV": 3,
               "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/20/6513b765-5b61-4b3d-af79-d10ac317498c_7646083a.jpg?itok=pmq3zR4P&v=1792446539"
+            },
+            {
+              "source": "cnbc",
+              "headline": "U.S. bans DeepSeek from government agency systems amid AI rift with China",
+              "url": "https://www.cnbc.com/2026/10/20/us-deepseek-federal-agency-ban.html",
+              "date": "2026-10-20T08:17:14.000Z",
+              "kind": "hard",
+              "summary": "U.S. Department of Homeland Security has banned DeepSeek-related technology from federal civilian agency IT systems.",
+              "summaryV": 3
             }
           ],
           "thread": "txuq70u"
@@ -16375,6 +16674,233 @@
       "id": "manufacturing",
       "name": "Manufacturing",
       "items": [
+        {
+          "id": "so7npdd",
+          "headline": "Chinese carmakers gear up European production to sidestep tariffs, import quota",
+          "url": "https://www.scmp.com/business/china-evs/article/3371460/chinese-carmakers-gear-european-production-sidestep-tariffs-import-quota",
+          "source": "scmp",
+          "date": "2026-10-20T08:00:06.000Z",
+          "relevance": "medium",
+          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/20/16746b1b-ab55-4d41-a40a-75c868887ed3_511fd6f4.jpg?itok=r0fqh9KD&v=1792473469",
+          "why": "The South China Morning Post reports that Chinese carmakers are expanding production in Europe to avoid European Union tariffs and an import quota on their hybrid vehicles. India is affected only indirectly, through car and component trade and competition with China.",
+          "implications": [
+            "Building cars inside Europe lets Chinese firms sell there without paying import duties, so they could compete more directly with European and other foreign brands, including those that Indian-linked firms supply.",
+            "Chinese makers that face limits in Europe may look harder at other markets, which could increase competition for carmakers and component suppliers in countries such as India."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-20T08:45:04.950Z",
+            "tier": "quick",
+            "primary": "trade_flow",
+            "complement": null,
+            "features": [
+              "trade_flow",
+              "allocation"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "The report describes a China and European Union matter with no direct Indian channel. Any effect would come indirectly, through Indian vehicle and component exports to Europe or competition from Chinese makers."
+            },
+            "horizon": {
+              "value": "years",
+              "reason": "New car factories take a long time to plan, build and bring into production, so any change in competition would appear gradually."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single outlet, the South China Morning Post, and the summary names no official source or specific company plans."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Large exporters",
+                "direction": "unclear",
+                "what": "car and component competition",
+                "effect": "Indian vehicle and component makers that sell to Europe may face stronger competition from Chinese-owned European production, though the reports do not say how large any effect would be.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Announcements of specific Chinese carmaker factories or the detailed rules of the European Union hybrid vehicle quota",
+                "why": "These would show how quickly Chinese production in Europe grows and how far the quota actually restricts imports.",
+                "when": "",
+                "where": "European Commission"
+              }
+            ],
+            "context": [
+              "Countries often use tariffs and quotas to protect local carmakers, and foreign firms commonly respond by building factories inside the protected market, which turns exports into local production."
+            ],
+            "terms": [
+              {
+                "term": "import quota",
+                "meaning": "A limit on how many units of a product may be brought into a market, beyond which imports are restricted or taxed more heavily."
+              }
+            ],
+            "frameworks": {
+              "trade_flow": {
+                "good": "Hybrid electric passenger vehicles",
+                "actors": [
+                  {
+                    "country": "China",
+                    "role": "exporter",
+                    "is_india": false
+                  },
+                  {
+                    "country": "European Union",
+                    "role": "importer",
+                    "is_india": false
+                  },
+                  {
+                    "country": "India",
+                    "role": "third_party",
+                    "is_india": true
+                  }
+                ],
+                "change": {
+                  "type": "other",
+                  "effective": ""
+                },
+                "india_position": {
+                  "role": "not_involved",
+                  "note": "India is not named in the report and is not a party to this trade. Indian carmakers and component suppliers that sell in Europe could face more competition, but the reports give no evidence of this."
+                },
+                "volumes": []
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "scmp",
+              "headline": "Chinese carmakers gear up European production to sidestep tariffs, import quota",
+              "url": "https://www.scmp.com/business/china-evs/article/3371460/chinese-carmakers-gear-european-production-sidestep-tariffs-import-quota",
+              "date": "2026-10-20T08:00:06.000Z",
+              "kind": "hard",
+              "summary": "Chinese carmakers, facing a European Union import quota targeting their hybrid electric vehicles (EVs), are gearing up for more local production to reinforce their go-global drive.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/20/16746b1b-ab55-4d41-a40a-75c868887ed3_511fd6f4.jpg?itok=r0fqh9KD&v=1792473469"
+            }
+          ],
+          "thread": "tm6po12"
+        },
+        {
+          "id": "s3jbp4n",
+          "headline": "Copper is outshining gold this year. Investors say the rally can survive an AI correction",
+          "url": "https://www.cnbc.com/2026/10/20/copper-prices-ai-spending-demand.html",
+          "source": "cnbc",
+          "date": "2026-10-20T05:57:34.000Z",
+          "relevance": "medium",
+          "why": "CNBC reports that copper has risen 15.8% in 2026, driven by demand from AI, power grids and national security, tight supply and tariff-driven US stockpiling. India's cable, wiring and electrical makers could face higher input costs.",
+          "implications": [
+            "Higher global copper prices raise the rupee cost of imported copper, which could squeeze margins at Indian firms that make wires, cables, motors and electrical equipment.",
+            "If tight supply and US stockpiling persist, Indian buyers may find it harder to secure cheaper copper, because global demand is competing for the same metal."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-20T08:44:19.115Z",
+            "tier": "quick",
+            "primary": "pass_through",
+            "complement": null,
+            "features": [
+              "price_move"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The effect reaches India through the import cost of copper for one group of industries, namely electrical goods, cables and power equipment. It is not a household essential."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Import contracts, existing inventories and fixed-price orders mean higher metal costs usually reach Indian product prices only after several months."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single CNBC report that relies on investor views, and it does not say how the rally will unfold or how India is affected."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Importers & traders",
+                "direction": "up",
+                "what": "copper import costs",
+                "effect": "Firms that import copper pay more if global prices stay high, because import contracts are usually priced off international benchmarks.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Manufacturing workers",
+                "direction": "unclear",
+                "what": "factory input costs",
+                "effect": "Makers of cables and electrical goods may face margin pressure from dearer copper, which could affect output and hiring if costs cannot be passed on.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Whether copper prices hold their 2026 gains if AI-linked demand weakens",
+                "why": "It would show whether the rally that CNBC describes can persist, which determines how long Indian input costs stay elevated.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "India depends significantly on imported copper and copper ore, so global benchmark prices, the rupee exchange rate and import duties largely decide what Indian manufacturers pay for the metal."
+            ],
+            "terms": [
+              {
+                "term": "AI correction",
+                "meaning": "A significant fall in the prices of artificial intelligence-linked assets, which investors fear could reduce the demand that has been supporting copper."
+              }
+            ],
+            "frameworks": {
+              "pass_through": {
+                "driver": {
+                  "variable": "Global copper price",
+                  "direction": "up",
+                  "size": ""
+                },
+                "product": "other",
+                "rungs": [
+                  {
+                    "stage": "Global copper price → Indian importers' landed cost",
+                    "pass": "likely",
+                    "damper": "Import contracts follow international benchmarks, though the rupee exchange rate and import duties can soften or add to the change.",
+                    "lag": "weeks"
+                  },
+                  {
+                    "stage": "Importers' cost → cable and electrical makers' input cost",
+                    "pass": "partial",
+                    "damper": "Metal bought earlier and fixed-price supply orders delay the effect until older stock is used up.",
+                    "lag": "months"
+                  },
+                  {
+                    "stage": "Makers' cost → prices of wiring and electrical goods",
+                    "pass": "partial",
+                    "damper": "Competition among producers and weak demand can limit how much of the higher cost firms can pass on to buyers.",
+                    "lag": "months"
+                  }
+                ],
+                "end_user": {
+                  "group": "Importers & traders",
+                  "effect": "Firms and traders that buy copper or copper-based goods may notice higher quotes over the coming months if the rally persists, though the size and timing are uncertain."
+                }
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "cnbc",
+              "headline": "Copper is outshining gold this year. Investors say the rally can survive an AI correction",
+              "url": "https://www.cnbc.com/2026/10/20/copper-prices-ai-spending-demand.html",
+              "date": "2026-10-20T05:57:34.000Z",
+              "kind": "hard",
+              "summary": "Copper is up 15.8% in 2026 as investors point to AI, grid and national security demand, tight supply and tariff-driven U.S. stockpiles.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://image.cnbcfm.com/api/v1/image/108346259-1786046336117-gettyimages-2228106041-US_COPPER.jpeg?v=1786046387&w=1920&h=1080"
+            }
+          ],
+          "image": "https://image.cnbcfm.com/api/v1/image/108346259-1786046336117-gettyimages-2228106041-US_COPPER.jpeg?v=1786046387&w=1920&h=1080",
+          "thread": "t1380bcz"
+        },
         {
           "id": "s1d44dfc",
           "headline": "India needs more fighter jets. It cannot build them fast enough",
@@ -21197,21 +21723,21 @@
   ],
   "source": "BBC News & The Guardian & NPR & Al Jazeera & MercoPress & ABC News & The New York Times & CNBC & CBS News & DW & France 24 & Africanews & South China Morning Post & The Hindu & Mint",
   "lastRun": {
-    "analysed": 70,
-    "added": 2,
-    "merged": 3,
-    "rejected": 65,
+    "analysed": 129,
+    "added": 4,
+    "merged": 6,
+    "rejected": 119,
     "failedBatches": 0,
     "feeds": {
       "bbc": {
         "feedsOk": 6,
         "feedsFailed": 0,
-        "items": 150
+        "items": 156
       },
       "guardian": {
         "feedsOk": 7,
         "feedsFailed": 0,
-        "items": 192
+        "items": 190
       },
       "npr": {
         "feedsOk": 4,
@@ -21221,7 +21747,7 @@
       "aljazeera": {
         "feedsOk": 1,
         "feedsFailed": 0,
-        "items": 16
+        "items": 13
       },
       "mercopress": {
         "feedsOk": 3,
@@ -21236,27 +21762,27 @@
       "nyt": {
         "feedsOk": 5,
         "feedsFailed": 0,
-        "items": 169
+        "items": 171
       },
       "cnbc": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 87
+        "items": 88
       },
       "cbs": {
         "feedsOk": 2,
         "feedsFailed": 0,
-        "items": 40
+        "items": 42
       },
       "dw": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 33
+        "items": 32
       },
       "france24": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 75
+        "items": 79
       },
       "africanews": {
         "feedsOk": 1,
@@ -21266,22 +21792,22 @@
       "scmp": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 144
+        "items": 143
       }
     },
     "shareImages": {
-      "tried": 0,
-      "found": 0,
+      "tried": 2,
+      "found": 2,
       "summaries": 0
     },
     "threads": {
-      "assigned": 2,
-      "created": 1,
+      "assigned": 4,
+      "created": 2,
       "failedBatches": 0
     },
     "summaries": {
-      "written": 1,
-      "due": 1
+      "written": 2,
+      "due": 2
     },
     "kinds": {
       "labelled": 0,
@@ -21289,75 +21815,54 @@
       "failedBatches": 0
     },
     "frames": {
-      "done": 12,
-      "waiting": 62,
-      "failedBatches": 0
+      "done": 6,
+      "waiting": 49,
+      "failedBatches": 1
     },
     "stats": {
-      "searched": 2,
+      "searched": 0,
       "found": 0,
       "reused": 0,
-      "none": 2,
+      "none": 0,
       "failed": 0,
       "proposed": 0,
       "droppedPoints": 0,
       "pagesFetched": 0,
-      "samples": [
-        {
-          "headline": "Saudi Arabia Postpones Its FII Investment Event After Houthi Attacks",
-          "result": "no saved series; search kept for in-depth stories"
-        },
-        {
-          "headline": "Police detain 'cockroach' movement founder ahead of protests in Delhi",
-          "result": "none",
-          "proposed": 0,
-          "checked": 0,
-          "pagesFetched": 0
-        }
-      ]
+      "samples": []
     },
     "models": {
       "filter": {
         "model": "claude-haiku-5-5",
-        "calls": 8,
-        "inputTokens": 29284,
-        "outputTokens": 13203,
-        "cost": 0.0094
+        "calls": 11,
+        "inputTokens": 47024,
+        "outputTokens": 20902,
+        "cost": 0.0151
       },
       "analysis_quick": {
         "model": "claude-sonnet-5-5",
-        "calls": 3,
-        "inputTokens": 9212,
-        "outputTokens": 12474,
-        "cost": 0.1432
-      },
-      "stats": {
-        "model": "claude-sonnet-5-5",
-        "calls": 1,
-        "inputTokens": 56160,
-        "outputTokens": 791,
-        "searches": 3,
-        "fetches": 0,
-        "cost": 0.1502
+        "calls": 6,
+        "inputTokens": 17663,
+        "outputTokens": 21863,
+        "cost": 0.2539
       },
       "analysis": {
         "model": "claude-opus-5-5",
         "calls": 2,
-        "inputTokens": 9536,
-        "outputTokens": 17084,
-        "cost": 0.3798
+        "inputTokens": 7860,
+        "outputTokens": 12099,
+        "cost": 0.2734
       },
       "threads": {
         "model": "claude-sonnet-5-5",
-        "calls": 2,
-        "inputTokens": 5813,
-        "outputTokens": 268,
-        "cost": 0.0144
+        "calls": 3,
+        "inputTokens": 9126,
+        "outputTokens": 1218,
+        "cost": 0.0305
       }
     },
     "spend": {
-      "thisDesk": 0.6971,
-      "today": 2.2347,
+      "thisDesk": 0.573,
+      "today": 3.1914,
       "cap": 6
     }
   },
