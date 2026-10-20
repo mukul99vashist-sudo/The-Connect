@@ -616,7 +616,7 @@ UNIVERSAL BLOCK (every story):
 - "terms": 0 to 3 of [{"term":"as written in the story","meaning":"one plain sentence, ≤30 words"}] for technical terms, acronyms or programme names a general reader may not know (for example H-1B cap, MDR, repo rate, JMMC). Skip everyday words. 0 or 1 at Quick read.
 - "exposure": {"level":"high|medium|low","reason":"one or two complete sentences, ≤40 words, naming the channel through which this reaches ${REGION} and why that makes the level high, medium or low"}. High = touches a household essential (fuel, LPG, food staples, loan EMIs, deposit rates), a top Indian import or export, or the safety or travel of Indians. Medium = one industry, one bilateral relationship or a compliance obligation. Low = indirect or no mechanism in the reports.
 - "horizon": {"value":"now|weeks|months|years","reason":"one complete sentence, ≤30 words, on what sets the timing"}. When people in ${REGION} are likely to feel the effect: now = within a week; weeks = one to six weeks; months = two to twelve months; years = beyond a year.
-- "confidence": {"level":"high|medium|low","reason":"one complete sentence, ≤30 words, on which outlets and sources this rests on and what is still unconfirmed"}. High = 3+ outlets agree and an on-record official source; medium = 2 outlets, or 1 with an official source; low = single outlet, anonymous sourcing, claims by a party, or an unresolved conflict.
+- "confidence": {"level":"high|medium|low","reason":"one complete sentence, ≤30 words, on which outlets and sources this rests on and what is still unconfirmed"}. If your reason says a central claim rests on one outlet or is unconfirmed, the level cannot be high. High = 3+ outlets agree and an on-record official source; medium = 2 outlets, or 1 with an official source; low = single outlet, anonymous sourcing, claims by a party, or an unresolved conflict.
 - "affected": 1 to 4 of [{"group":"exactly one of: ${GROUPS.join(", ")}","direction":"up|down|mixed|unclear","what":"short label of what changes, ≤6 words (e.g. fuel prices, flight availability)","effect":"one complete sentence, ≤30 words, saying what changes for this group and through which channel","basis":"reported|inferred"}].
 - "watch": 1 to 3 of [{"what":"the observable event, as a complete phrase, ≤20 words","why":"one complete sentence, ≤25 words, on what it would tell the reader","when":"the date as YYYY-MM-DD if the reports give the exact day (work out the year from the report date); otherwise the reported wording such as 'November 2026' or 'next week'; empty if no timing is reported","where":"named official source to check, or empty"}].
 
@@ -633,7 +633,7 @@ WRITING STYLE (every text field):
 - Short labels are allowed only in fields described as a label or name.
 
 RULES:
-1. Facts only from the reports. Never invent numbers, names, dates, causes or events. Every number you write must appear in the reports. If a field cannot be filled, leave it out.
+1. Facts only from the reports. Never invent numbers, names, dates, causes or events, and do not add descriptions the reports do not make (for example calling a visit "unannounced" when the reports only say its announcement was unexpected). Every number you write must appear in the reports. If a field cannot be filled, leave it out.
 2. Mark anything not stated in the reports as "inferred" and word it with "may" or "could".
 3. Never give advice of any kind: no stocks, investments, trades, buying, selling, locking in rates, stocking up or timing decisions. Explain mechanisms only.
 4. Kind "breaking": early report; keep effects conditional and confidence at most medium. Kind "investigative": attribute findings to the outlet ("The Guardian reports that…").
@@ -661,44 +661,46 @@ const inReports = (v, nums) => v === null || nums.has(v) || nums.has(Math.abs(v)
 
 function cleanFramework(key, f, nums) {
   if (!f || typeof f !== "object") return null;
-  const s = (x, n) => noAdvice(str(x, n)) ? sentence(x, n) : "";
+  // Labels and short fields get twice their nominal room and are trimmed at a word or sentence end, never mid-word.
+  const clip = (x, n = 240) => sentence(typeof x === "string" ? x : "", Math.max(n * 2, 60));
+  const s = (x, n) => noAdvice(clip(x, n)) ? sentence(x, n) : "";
   switch (key) {
     case "impact_chain": { const chain = arr(f.chain, 4).map(x => ({ step: s(x?.step, 80), detail: s(x?.detail, 350), basis: pick(x?.basis, ["reported", "inferred"], "inferred") })).filter(x => x.step); return chain.length ? { chain, breaks_if: s(f.breaks_if, 350) } : null; }
-    case "disruption_map": { const n = f.node || {}; if (!str(n.name)) return null;
-      return { node: { name: str(n.name, 80), type: str(n.type, 20), status: pick(n.status, ["closed", "partial", "open", "unknown"], "unknown"), as_of: str(n.as_of, 40) },
+    case "disruption_map": { const n = f.node || {}; if (!clip(n.name)) return null;
+      return { node: { name: clip(n.name, 80), type: clip(n.type, 20), status: pick(n.status, ["closed", "partial", "open", "unknown"], "unknown"), as_of: clip(n.as_of, 40) },
         cause: f.cause ? { text: s(f.cause.text, 350), status: pick(f.cause.status, ["confirmed", "claimed", "alleged"], "claimed") } : null,
-        flows: arr(f.flows, 5).map(x => ({ flow: str(x?.flow, 30), india_link: s(x?.india_link, 350), basis: pick(x?.basis, ["reported", "inferred"], "inferred") })).filter(x => x.flow),
-        alternatives: arr(f.alternatives, 3).map(x => s(x, 250)).filter(Boolean), duration: str(f.duration, 60) || "not reported" }; }
-    case "trade_flow": { if (!str(f.good)) return null;
-      return { good: str(f.good, 60), actors: arr(f.actors, 5).map(x => ({ country: str(x?.country, 40), role: pick(x?.role, ["exporter", "importer", "third_party"], "third_party"), is_india: !!x?.is_india })).filter(x => x.country),
-        change: { type: str(f.change?.type, 20), effective: str(f.change?.effective, 40) },
+        flows: arr(f.flows, 5).map(x => ({ flow: clip(x?.flow, 30), india_link: s(x?.india_link, 350), basis: pick(x?.basis, ["reported", "inferred"], "inferred") })).filter(x => x.flow),
+        alternatives: arr(f.alternatives, 3).map(x => s(x, 250)).filter(Boolean), duration: clip(f.duration, 60) || "not reported" }; }
+    case "trade_flow": { if (!clip(f.good)) return null;
+      return { good: clip(f.good, 60), actors: arr(f.actors, 5).map(x => ({ country: clip(x?.country, 40), role: pick(x?.role, ["exporter", "importer", "third_party"], "third_party"), is_india: !!x?.is_india })).filter(x => x.country),
+        change: { type: clip(f.change?.type, 20), effective: clip(f.change?.effective, 40) },
         india_position: f.india_position ? { role: pick(f.india_position.role, ["competing_buyer", "supplier", "rival_exporter", "transit", "not_involved"], "not_involved"), note: s(f.india_position.note, 400) } : null,
-        volumes: arr(f.volumes, 3).map(x => ({ value: numOrNull(x?.value), unit: str(x?.unit, 30), period: str(x?.period, 30), from: str(x?.from, 40) })).filter(x => x.value !== null && inReports(x.value, nums)) }; }
-    case "policy_tracker": { if (!str(f.instrument?.name)) return null;
-      return { instrument: { name: str(f.instrument.name, 100), issuer: str(f.instrument.issuer, 60), jurisdiction: str(f.instrument.jurisdiction, 40) },
-        stages: arr(f.stages, 8).map(x => ({ stage: pick(x?.stage, ["announced", "draft", "adopted", "notified", "transition", "in_force", "under_review", "amended_or_repealed"], null), date: str(x?.date, 30), status: pick(x?.status, ["done", "current", "next"], "next") })).filter(x => x.stage),
-        obligations: arr(f.obligations, 4).map(x => ({ who: str(x?.who, 50), what: s(x?.what, 300), from: str(x?.from, 30) })).filter(x => x.who && x.what),
+        volumes: arr(f.volumes, 3).map(x => ({ value: numOrNull(x?.value), unit: clip(x?.unit, 30), period: clip(x?.period, 30), from: clip(x?.from, 40) })).filter(x => x.value !== null && inReports(x.value, nums)) }; }
+    case "policy_tracker": { if (!clip(f.instrument?.name)) return null;
+      return { instrument: { name: clip(f.instrument.name, 100), issuer: clip(f.instrument.issuer, 60), jurisdiction: clip(f.instrument.jurisdiction, 40) },
+        stages: arr(f.stages, 8).map(x => ({ stage: pick(x?.stage, ["announced", "draft", "adopted", "notified", "transition", "in_force", "under_review", "amended_or_repealed"], null), date: clip(x?.date, 30), status: pick(x?.status, ["done", "current", "next"], "next") })).filter(x => x.stage),
+        obligations: arr(f.obligations, 4).map(x => ({ who: clip(x?.who, 50), what: s(x?.what, 300), from: clip(x?.from, 30) })).filter(x => x.who && x.what),
         applies_to_india: pick(f.applies_to_india, ["yes", "no", "partly"], "partly"), india_note: s(f.india_note, 360) }; }
     case "decoder": { const h = f.headline || {}; const v = numOrNull(h.value), p = numOrNull(h.previous);
       return { kind: pick(f.kind, ["release", "decision"], "release"),
-        headline: str(h.label) ? { label: str(h.label, 60), value: inReports(v, nums) ? v : null, unit: str(h.unit, 20), period: str(h.period, 30), previous: inReports(p, nums) ? p : null, previousLabel: str(h.previousLabel, 30), from: str(h.from, 40) } : null,
-        comparisons: arr(f.comparisons, 3).map(x => ({ label: str(x?.label, 50), value: numOrNull(x?.value), unit: str(x?.unit, 20), from: str(x?.from, 40) })).filter(x => x.label && x.value !== null && inReports(x.value, nums)),
+        headline: clip(h.label) ? { label: clip(h.label, 60), value: inReports(v, nums) ? v : null, unit: clip(h.unit, 20), period: clip(h.period, 30), previous: inReports(p, nums) ? p : null, previousLabel: clip(h.previousLabel, 30), from: clip(h.from, 40) } : null,
+        comparisons: arr(f.comparisons, 3).map(x => ({ label: clip(x?.label, 50), value: numOrNull(x?.value), unit: clip(x?.unit, 20), from: clip(x?.from, 40) })).filter(x => x.label && x.value !== null && inReports(x.value, nums)),
         drivers: arr(f.drivers, 4).map(x => ({ name: s(x?.name, 50), direction: pick(x?.direction, ["up", "down", "mixed"], "mixed"), how: s(x?.how, 260) })).filter(x => x.name),
-        decision: f.decision ? { action: pick(f.decision.action, ["hike", "cut", "hold", "other"], "other"), size: str(f.decision.size, 30), stance: s(f.decision.stance, 300) } : null }; }
+        decision: f.decision ? { action: pick(f.decision.action, ["hike", "cut", "hold", "other"], "other"), size: clip(f.decision.size, 30), stance: s(f.decision.stance, 300) } : null }; }
     case "pass_through": { const rungs = arr(f.rungs, 5).map(x => ({ stage: s(x?.stage, 90), pass: pick(x?.pass, ["likely", "partial", "blocked", "unclear"], "unclear"), damper: s(x?.damper, 250), lag: pick(x?.lag, ["days", "weeks", "months"], "weeks") })).filter(x => x.stage);
-      return rungs.length ? { driver: { variable: str(f.driver?.variable, 50), direction: pick(f.driver?.direction, ["up", "down"], "up"), size: str(f.driver?.size, 30) }, product: str(f.product, 30), rungs,
+      return rungs.length ? { driver: { variable: clip(f.driver?.variable, 50), direction: pick(f.driver?.direction, ["up", "down"], "up"), size: clip(f.driver?.size, 30) }, product: clip(f.product, 30), rungs,
         end_user: f.end_user ? { group: pick(f.end_user.group, GROUPS, ""), effect: s(f.end_user.effect, 400) } : null } : null; }
-    case "winners_losers": { const groups = arr(f.groups, 6).map(x => ({ group: pick(x?.group, GROUPS, str(x?.group, 40)), direction: pick(x?.direction, ["gain", "lose", "mixed", "unclear"], "unclear"), directness: pick(x?.directness, ["direct", "indirect"], "indirect"), mechanism: s(x?.mechanism, 350) })).filter(x => x.group && x.mechanism);
+    case "winners_losers": { const groups = arr(f.groups, 6).map(x => ({ group: pick(x?.group, GROUPS, clip(x?.group, 40)), direction: pick(x?.direction, ["gain", "lose", "mixed", "unclear"], "unclear"), directness: pick(x?.directness, ["direct", "indirect"], "indirect"), mechanism: s(x?.mechanism, 350) })).filter(x => x.group && x.mechanism);
       return groups.length ? { groups, not_affected: s(f.not_affected, 350) } : null; }
-    case "conflicting": { const accounts = arr(f.accounts, 6).map(x => ({ outlet: str(x?.outlet, 40), value: str(String(x?.value ?? ""), 80), origin: str(x?.origin, 80), time: str(x?.time, 40) })).filter(x => x.outlet && x.value);
-      return accounts.length >= 2 ? { disputed: { item: str(f.disputed?.item, 80), unit: str(f.disputed?.unit, 20) }, accounts, agreed: arr(f.agreed, 4).map(x => s(x, 350)).filter(Boolean),
-        explanations: arr(f.explanations, 3).map(x => ({ type: str(x?.type, 30), note: s(x?.note, 300) })).filter(x => x.type), status: pick(f.status, ["unresolved", "converging", "resolved"], "unresolved") } : null; }
-    case "timeline": { const entries = arr(f.entries, 6).map(x => ({ when: str(x?.when, 30), what: s(x?.what, 350), actor: str(x?.actor, 50), outlet: str(x?.outlet, 40), type: pick(x?.type, ["action", "claim", "denial", "confirmation"], "action"), verification: pick(x?.verification, ["confirmed", "claimed", "contested"], "claimed") })).filter(x => x.what);
+    case "conflicting": { const accounts = arr(f.accounts, 6).map(x => ({ outlet: clip(x?.outlet, 40), value: clip(String(x?.value ?? ""), 80), origin: clip(x?.origin, 80), time: clip(x?.time, 40) })).filter(x => x.outlet && x.value);
+      return accounts.length >= 2 ? { disputed: { item: clip(f.disputed?.item, 80), unit: clip(f.disputed?.unit, 20) }, accounts, agreed: arr(f.agreed, 4).map(x => s(x, 350)).filter(Boolean),
+        explanations: arr(f.explanations, 3).map(x => ({ type: clip(x?.type, 30), note: s(x?.note, 300) })).filter(x => x.type), status: pick(f.status, ["unresolved", "converging", "resolved"], "unresolved") } : null; }
+    case "timeline": { const entries = arr(f.entries, 6).map(x => ({ when: clip(x?.when, 30), what: s(x?.what, 350), actor: clip(x?.actor, 50), outlet: clip(x?.outlet, 40), type: pick(x?.type, ["action", "claim", "denial", "confirmation"], "action"), verification: pick(x?.verification, ["confirmed", "claimed", "contested"], "claimed") })).filter(x => x.what);
       return entries.length ? { entries, current_status: s(f.current_status, 400), open_questions: arr(f.open_questions, 3).map(x => s(x, 300)).filter(Boolean) } : null; }
     case "escalation": { const r = Math.round(+f.current_rung); if (!(r >= 1 && r <= 7)) return null; const pr = Math.round(+f.previous_rung);
       return { current_rung: r, evidence: s(f.evidence, 400), previous_rung: pr >= 1 && pr <= 7 ? pr : null,
         next_signals: arr(f.next_signals, 3).map(x => ({ rung: Math.round(+x?.rung), signal: s(x?.signal, 300) })).filter(x => x.rung >= 1 && x.rung <= 7 && x.signal),
-        india_channels: arr(f.india_channels, 6).map(x => str(x, 30)).filter(Boolean) }; }
+        india_channels: arr(f.india_channels, 6).map(x => clip(x, 30)).filter(Boolean) }; }
     case "scenarios": { const sc = arr(f.scenarios, 3).map(x => ({ name: s(x?.name, 60), what: s(x?.what, 400), signal: s(x?.signal, 300), india_effect: s(x?.india_effect, 300) })).filter(x => x.name && x.what);
       return sc.length >= 2 ? { question: s(f.question, 300), scenarios: sc } : null; }
   }
@@ -771,7 +773,10 @@ function applyAnalysis(ev, r, plan) {
 async function reframeRecent(data, mode) {
   const kindOfEv = ev => (ev.reports || [])[0]?.kind || "hard";
   const eligible = ev => !["soft", "feature", "opinion"].includes(kindOfEv(ev));
-  const stale = ev => ev.analysis?.v !== ANALYSIS_V || TIER_RANK[tierOf(ev)] > TIER_RANK[ev.analysis.tier];
+  // Also re-analyse when the story has grown: two or more reports published after the analysis was written
+  // (e.g. a trade deal first reported as import duties, later as zero-duty access for Indian exports and new visas).
+  const grown = ev => !!ev.analysis?.at && (ev.reports || []).filter(r => (r.date || "") > ev.analysis.at).length >= 2;
+  const stale = ev => ev.analysis?.v !== ANALYSIS_V || TIER_RANK[tierOf(ev)] > TIER_RANK[ev.analysis.tier] || grown(ev);
   const cut = new Date(Date.now() - REFRAME_DAYS * 864e5).toISOString();
   const all = data.sectors.flatMap(sec => sec.items).filter(ev => eligible(ev) && stale(ev) && latest(ev) >= cut).sort((a, b) => latest(b).localeCompare(latest(a)));
   const due = all.slice(0, REFRAME_LIMIT);
