@@ -948,9 +948,11 @@ function parseStats(content) {
   // Every figure can be on the page and the series still be wrong if it mixes units (e.g. 50,000 barrels a day next to
   // 1.7 million). Values more than 100 times apart within one series are treated as mixed units and the series is dropped.
   const sameUnits = x => { const v = x.points.map(p => Math.abs(p.value)).filter(Boolean); return v.length < 2 || Math.max(...v) / Math.min(...v) <= 100; };
+  // A daily series that moves more than 15% in one day has almost always mixed two columns of a table: drop it too.
+  const steady = x => !dailyJump(x);
   let mixed = 0;
   const kept = series.map(x => ({ ...x, points: x.points.slice(0, 16) })).filter(x => x.points.length >= STATS_MIN_POINTS)
-    .filter(x => sameUnits(x) || (mixed++, false)).slice(0, 2)
+    .filter(x => (sameUnits(x) && steady(x)) || (mixed++, false)).slice(0, 2)
     .map(({ source, ...x }) => { const doms = {}; x.points.forEach(p => { const d = domainOf(p.url); doms[d] = (doms[d] || 0) + 1; });
       return { ...x, sources: [...new Map(x.points.map(p => [p.url, { url: p.url, title: p.source, domain: domainOf(p.url) }])).values()].slice(0, 4), domains: Object.keys(doms) }; });
   if (diag.said === "series" && !kept.length) diag.said = mixed ? "units did not match" : diag.kept ? "too few checked figures" : "no figure found on an official page";
@@ -959,7 +961,9 @@ function parseStats(content) {
 // ---- Series library: a checked series found for one story is saved and offered to later stories on the same subject.
 // A cheap model decides whether a saved series directly measures the new story; only if none fits do we search.
 const seriesKey = x => (x.title + "|" + x.unit).toLowerCase().replace(/\s+/g, " ");
-async function loadLibrary() { return (await readJson(STATS_LIBRARY, { series: [] })).series || []; }
+function dailyJump(x) { const pts = x.points || []; if (!pts.length || !pts.every(p => /^\d{1,2} [A-Z][a-z]{2} \d{4}$/.test(String(p.period)))) return false;
+  for (let i = 1; i < pts.length; i++) { const a = +pts[i - 1].value, b = +pts[i].value; if (a > 0 && b > 0 && (b / a > 1.15 || a / b > 1.15)) return true; } return false; }
+async function loadLibrary() { return ((await readJson(STATS_LIBRARY, { series: [] })).series || []).filter(x => !dailyJump(x)); }
 async function saveLibrary(lib) { await fs.writeFile(STATS_LIBRARY, JSON.stringify({ updatedAt: new Date().toISOString(), series: lib.slice(0, LIBRARY_MAX) }, null, 1) + "\n"); }
 function addToLibrary(lib, series, ev, at = new Date().toISOString()) {
   for (const x of series) {
