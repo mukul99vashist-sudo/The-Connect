@@ -2,7 +2,7 @@
   "schema": 4,
   "region": "India",
   "since": "2026-10-02",
-  "updatedAt": "2026-10-20T14:29:29.251Z",
+  "updatedAt": "2026-10-20T19:41:20.293Z",
   "sectors": [
     {
       "id": "energy",
@@ -456,15 +456,15 @@
           "date": "2026-10-17T04:18:14.000Z",
           "relevance": "medium",
           "image": "https://www.livemint.com/lm-img/img/2026/10/17/1600x900/Trump_Putin_1792210561580_hVz4_1792210561720_eXEB_a7ea67b1-a64c-4a94-8ead-0880d98d8c6b_FmFN.jpg",
-          "why": "Trump's waiver of Graham Act sanctions and tariffs removes a threat of up to 100% US tariffs on India, letting Russian crude imports continue.",
+          "why": "US President Donald Trump has signed an order waiving key Russia-related sanctions and tariffs under the Graham Act. This removes the threat of US penalties on India for buying Russian oil while crude above $100 a barrel strains India's import bill.",
           "implications": [
-            "The law authorised tariffs of up to 100% on goods from the five largest importers of Russian crude and gas.",
-            "The Hindu reports India's Russian crude buying will continue, with crude above $100 a barrel pressuring the import bill and inflation.",
-            "Mint says the move eases pressure as India and the US push to finalise a trade deal."
+            "The Graham Act allowed tariffs of up to 100% on goods from the five largest importers of Russian crude and gas, so the waiver removes, for now, a threat to Indian exports to the US.",
+            "The Hindu reports that India's heavy buying of Russian crude is set to continue, which keeps a large supply source open to Indian refiners while crude trades above $100 a barrel.",
+            "The waiver comes as India and the US push to finalise a trade deal, so removing the sanctions threat could ease one source of friction in those negotiations."
           ],
           "analysis": {
-            "v": 2,
-            "at": "2026-10-17T20:50:31.233Z",
+            "v": 3,
+            "at": "2026-10-20T19:40:58.372Z",
             "tier": "standard",
             "primary": "trade_flow",
             "complement": null,
@@ -475,52 +475,78 @@
             ],
             "exposure": {
               "level": "high",
-              "reason": "Crude oil is a top import; affects fuel costs and exports to the US."
+              "reason": "The waiver directly affects crude oil, India's largest import, and removes the threat of tariffs on Indian exports to the US. Both channels feed into fuel costs, inflation and trade."
             },
             "horizon": {
               "value": "weeks",
-              "reason": "Waiver is signed; effects on import flows follow."
+              "reason": "Refiners contract crude cargoes weeks ahead, and the trade talks are ongoing, so effects on supply and negotiations are likely to appear over the coming weeks."
             },
             "confidence": {
               "level": "medium",
-              "reason": "Two outlets; executive order is official; India-specific effects are analysis."
+              "reason": "This rests on Mint and The Hindu, citing Trump's signed order and Rubio's on-record remarks. The reports do not detail the waiver's full scope or duration."
             },
             "outlets": 2,
             "affected": [
               {
                 "group": "Fuel & LPG users",
-                "direction": "unclear",
+                "direction": "mixed",
                 "what": "fuel price pressure",
+                "effect": "Continued access to Russian crude may help refiners contain costs, but crude above $100 a barrel could still push petrol and diesel prices upward.",
                 "basis": "inferred"
               },
               {
                 "group": "Large exporters",
-                "direction": "down",
-                "what": "US tariff threat",
-                "basis": "reported"
+                "direction": "up",
+                "what": "US tariff threat lifted",
+                "effect": "Exporters selling to the US could avoid the tariffs of up to 100% that the Graham Act authorised against major importers of Russian crude.",
+                "basis": "inferred"
               },
               {
                 "group": "Government finances",
                 "direction": "mixed",
                 "what": "oil import bill",
+                "effect": "Crude prices above $100 a barrel are adding to India's import bill and inflation, although continued Russian supply may soften part of that pressure.",
                 "basis": "reported"
               }
             ],
             "watch": [
               {
-                "what": "Finalisation of the India-US trade deal",
+                "what": "India and the United States finalising their bilateral trade deal",
+                "why": "A concluded deal would show whether the waiver has removed Russian oil as an obstacle in trade relations.",
                 "when": "",
                 "where": "Ministry of Commerce and Industry"
               },
               {
-                "what": "India's monthly Russian crude import volumes",
+                "what": "The US Congress responding to Trump's national-interest waiver of Graham Act measures",
+                "why": "Congressional pushback could signal whether the waiver might be challenged or reversed.",
                 "when": "",
-                "where": "Ministry of Petroleum and Natural Gas"
+                "where": "US Congress"
+              },
+              {
+                "what": "Monthly data on India's crude imports from Russia",
+                "why": "The figures would confirm whether Indian refiners keep buying Russian crude at high volumes after the waiver.",
+                "when": "",
+                "where": "Petroleum Planning and Analysis Cell"
+              }
+            ],
+            "context": [
+              "India imports most of the crude oil it uses, so the price and availability of crude shape its import bill, the value of the rupee and, eventually, domestic fuel prices.",
+              "Since Western sanctions on Russia over the war in Ukraine, India has become one of the largest buyers of Russian seaborne crude, often at prices below international benchmarks.",
+              "US sanctions laws commonly let the president waive penalties on national-interest grounds after notifying Congress, which keeps the underlying law in force even while its measures are suspended."
+            ],
+            "terms": [
+              {
+                "term": "Graham Act",
+                "meaning": "A US law that authorised tariffs of up to 100% on goods from the largest importers of Russian crude and gas, plus sanctions on Russia's shadow-fleet tankers."
+              },
+              {
+                "term": "shadow fleet",
+                "meaning": "Tankers that carry Russian oil outside mainstream Western shipping, insurance and ownership channels, often to avoid sanctions and price restrictions."
               }
             ],
             "frameworks": {
               "trade_flow": {
-                "good": "Russian crude oil",
+                "good": "Crude oil",
                 "actors": [
                   {
                     "country": "Russia",
@@ -540,11 +566,11 @@
                 ],
                 "change": {
                   "type": "other",
-                  "effective": ""
+                  "effective": "Order signed 2026-10-16 (US local time)"
                 },
                 "india_position": {
                   "role": "competing_buyer",
-                  "note": "Major Russian crude buyer; waiver lifts threatened tariffs, so purchases may continue."
+                  "note": "India is one of the largest buyers of Russian crude, and the waiver lifts the threat of US tariffs and tanker sanctions tied to that trade. Indian refiners may continue purchases, though high global prices could still weigh on costs."
                 },
                 "volumes": []
               }
@@ -3025,6 +3051,205 @@
       "name": "Logistics & Shipping",
       "items": [
         {
+          "id": "sslymif",
+          "headline": "10 years of UDAN: Scheme facilitates 1.72 crore passengers; government spends ₹5,091 crore",
+          "url": "https://www.livemint.com/news/india/10-years-of-udan-scheme-facilitates-1-72-crore-passengers-government-spends-5-091-crore-11792511337377.html",
+          "source": "mint",
+          "date": "2026-10-20T16:14:04.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2026/10/20/1600x900/logo/Untitled_design_-_2026-10-20T212724.436_1792511960513_wEDr_1792511966619_XBS9_d76d5a18-3a8d-4caf-be31-9e2d809f4d04_Qjsy.png",
+          "why": "Mint reports that after 10 years the UDAN scheme has facilitated 1.72 crore passengers, with the government spending ₹5,091 crore to encourage airlines to fly routes that may not be commercially viable at first.",
+          "implications": [
+            "Passengers in smaller cities could gain air connections that airlines would not have offered on commercial terms alone, which can widen access to flying beyond the main metros.",
+            "Government spending on such support comes from public funds, so the scheme's cost is weighed against the number of passengers it has carried."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-20T19:35:02.256Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "medium",
+              "reason": "The effect reaches one industry, regional aviation, and the passengers and public finances tied to it. It is not a household essential, and the report describes past results rather than a new change."
+            },
+            "horizon": {
+              "value": "years",
+              "reason": "The report reviews a decade of the scheme, and route viability and public spending play out over long periods, not within weeks."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single Mint report; the figures are not attributed to a named official source in the summary and are not independently confirmed."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Travellers & pilgrims",
+                "direction": "up",
+                "what": "regional flight access",
+                "effect": "Passengers on regional routes supported by the scheme gain air travel options that airlines might not otherwise have run.",
+                "basis": "reported"
+              },
+              {
+                "group": "Government finances",
+                "direction": "down",
+                "what": "public spending on aviation",
+                "effect": "The government has spent ₹5,091 crore on the scheme, which is a continuing call on public funds.",
+                "basis": "reported"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Any official statement on the future funding or extension of the UDAN scheme",
+                "why": "It would show whether the government plans to keep supporting regional routes at the current level.",
+                "when": "",
+                "where": "Ministry of Civil Aviation"
+              }
+            ],
+            "context": [
+              "Regional air connectivity schemes usually work by supporting airlines financially while new routes build up passenger demand. Routes can lose money in their early years, which is why airlines may avoid them without support."
+            ],
+            "terms": [
+              {
+                "term": "UDAN",
+                "meaning": "UDAN is a government scheme that encourages airlines to operate regional routes that may not initially be commercially viable, so that air travel becomes accessible to more people."
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Scheme marks ten years",
+                    "detail": "Mint reports that the scheme has facilitated 1.72 crore passengers over 10 years, at a government cost of ₹5,091 crore.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Airlines are encouraged onto thin routes",
+                    "detail": "The scheme aims to make air travel more accessible by encouraging airlines to operate routes that may not initially be commercially viable.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Smaller-city flying may expand",
+                    "detail": "Passengers outside the busiest routes could gain flight options, while the cost of that access is met from public funds rather than fares alone.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The benefit would not last if airlines drop these routes once government support ends and passenger demand proves too weak to sustain them commercially."
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "10 years of UDAN: Scheme facilitates 1.72 crore passengers; government spends ₹5,091 crore",
+              "url": "https://www.livemint.com/news/india/10-years-of-udan-scheme-facilitates-1-72-crore-passengers-government-spends-5-091-crore-11792511337377.html",
+              "date": "2026-10-20T16:14:04.000Z",
+              "kind": "hard",
+              "summary": "The scheme aims to make air travel more accessible by encouraging airlines to operate routes that may not initially be commercially viable.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/10/20/1600x900/logo/Untitled_design_-_2026-10-20T212724.436_1792511960513_wEDr_1792511966619_XBS9_d76d5a18-3a8d-4caf-be31-9e2d809f4d04_Qjsy.png"
+            }
+          ],
+          "thread": "t1evsnfj"
+        },
+        {
+          "id": "s1x5sb9y",
+          "headline": "Delhi to Varanasi, Mumbai to Pune: These 7 new bullet train routes might cut your travel time",
+          "url": "https://www.livemint.com/industry/infrastructure/delhi-to-varanasi-mumbai-to-pune-these-7-new-bullet-train-routes-might-cut-your-travel-time-11792507536499.html",
+          "source": "mint",
+          "date": "2026-10-20T15:04:12.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2026/10/20/1600x900/logo/bullet_train_1791864085513_R3D3_1791864108494_o8eD_446b74ac-3f7c-4274-9ac7-12ed6fae018c_5KPe_1792507885522_UUMj_2e7cf57b-d662-42f6-9a87-68e77c4d0874_WdKt.jpg",
+          "why": "Mint reports that seven new bullet train routes, including Delhi to Varanasi and Mumbai to Pune, are planned to link major cities and could shorten travel times for passengers.",
+          "implications": [
+            "Faster intercity rail could give travellers on these corridors an alternative to road and air travel, if the routes are built and priced so that passengers use them.",
+            "Cities on the routes may see more business and commuter movement, but this depends on the projects being completed and on stations being well connected to local transport."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-20T19:35:02.256Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "medium",
+              "reason": "The effect reaches one sector, intercity passenger transport, and travellers on the named corridors. It is not a household essential, and the report gives no timeline or cost."
+            },
+            "horizon": {
+              "value": "years",
+              "reason": "Bullet train corridors are large construction projects, so passengers are unlikely to feel any change in travel time for a long period."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single Mint report with a short summary; it names no official source, and the report does not say whether the routes are approved or funded."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Travellers & pilgrims",
+                "direction": "down",
+                "what": "intercity travel time",
+                "effect": "Passengers travelling between the listed city pairs could spend less time in transit if the bullet train routes are built and operated.",
+                "basis": "reported"
+              }
+            ],
+            "watch": [
+              {
+                "what": "An official announcement of approvals, funding or construction timelines for the seven proposed bullet train routes",
+                "why": "It would show whether the routes are moving from proposal to execution.",
+                "when": "",
+                "where": "Ministry of Railways"
+              }
+            ],
+            "context": [
+              "High-speed rail needs dedicated tracks, large capital outlays and extensive land acquisition, so projects of this kind usually take many years to move from announcement to operation."
+            ],
+            "terms": [
+              {
+                "term": "bullet train",
+                "meaning": "A bullet train is a very high-speed passenger train that runs on dedicated tracks and is much faster than conventional express trains."
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Seven new routes are proposed",
+                    "detail": "Mint reports seven new bullet train routes, including Delhi to Varanasi and Mumbai to Pune, meant to improve connectivity between major cities.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Passengers get faster options",
+                    "detail": "The projects are intended to offer passengers faster travel options, so journeys between the linked cities might take less time than they do now.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Wider economic activity may follow",
+                    "detail": "Better links between large cities could support business travel and local economic growth along the corridors, although the size of any effect is not reported.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The effect would not reach travellers if the routes stall at the approval, funding or land acquisition stage and are never built or opened."
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "Delhi to Varanasi, Mumbai to Pune: These 7 new bullet train routes might cut your travel time",
+              "url": "https://www.livemint.com/industry/infrastructure/delhi-to-varanasi-mumbai-to-pune-these-7-new-bullet-train-routes-might-cut-your-travel-time-11792507536499.html",
+              "date": "2026-10-20T15:04:12.000Z",
+              "kind": "hard",
+              "summary": "The projects are intended to improve connectivity between major cities, support economic growth and offer passengers faster travel options.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/10/20/1600x900/logo/bullet_train_1791864085513_R3D3_1791864108494_o8eD_446b74ac-3f7c-4274-9ac7-12ed6fae018c_5KPe_1792507885522_UUMj_2e7cf57b-d662-42f6-9a87-68e77c4d0874_WdKt.jpg"
+            }
+          ],
+          "thread": "t1qe1cz2"
+        },
+        {
           "id": "s9k1qms",
           "headline": "Bengaluru to Vijayawada in 6 hours? What to know about the 342-km stretch built at a cost of ₹19,000 crore",
           "url": "https://www.livemint.com/industry/infrastructure/bengaluru-to-vijayawada-in-6-hours-what-to-know-about-the-342-km-stretch-built-at-a-cost-of-rs-19-000-crore-11792493640604.html",
@@ -3351,84 +3576,89 @@
           "date": "2026-10-17T11:22:00.000Z",
           "relevance": "high",
           "image": "https://www.livemint.com/lm-img/img/2026/10/17/1600x900/logo/images_1792235373617_szhT_1792235377060_eRtE_dd8597b9-45c6-4b69-b013-ee065d254a02_mQhM.jpg",
-          "why": "Air India, Air India Express and IndiGo have suspended Saudi flights until October 24, which cuts India–Saudi air connectivity amid West Asia security concerns.",
+          "why": "Air India, Air India Express and IndiGo have extended their suspension of flights to Saudi Arabia, including Jeddah, Riyadh and Dammam, until 24 October, citing security concerns in West Asia after Houthi strikes.",
           "implications": [
-            "Passengers booked to Jeddah, Riyadh or Dammam on these three airlines may face cancellations or need to rebook.",
-            "Indians travelling to or from Saudi Arabia, including workers and pilgrims, could have fewer direct flight options while the suspension lasts.",
-            "If security concerns persist, the suspension could be extended again beyond October 24."
+            "Passengers booked on these routes may need rebooking, refunds or other arrangements, because three major Indian carriers have suspended flights to the same destinations for the same period.",
+            "The extension suggests the airlines still see the security risk as unresolved, so travel plans to Saudi Arabia could remain uncertain beyond 24 October."
           ],
           "analysis": {
-            "v": 2,
-            "at": "2026-10-17T15:46:00.313Z",
+            "v": 3,
+            "at": "2026-10-20T19:40:58.371Z",
             "tier": "quick",
             "primary": "disruption_map",
             "complement": null,
             "features": [
               "disruption",
               "armed_conflict",
-              "allocation",
               "pending_outcome"
             ],
             "exposure": {
               "level": "high",
-              "reason": "Three major Indian carriers have halted Saudi flights, which affects the travel of Indians."
+              "reason": "The suspension directly affects the travel of Indians, because three major carriers have stopped flights to Jeddah, Riyadh and Dammam. Passengers on these routes lose their usual direct options."
             },
             "horizon": {
               "value": "now",
-              "reason": "Suspension is already in force through October 24."
+              "reason": "The suspension is already in force and runs until 24 October, so affected passengers feel it immediately."
             },
             "confidence": {
               "level": "medium",
-              "reason": "Single outlet (Mint), reporting airline announcements; no second outlet in reports."
+              "reason": "Both reports are from Mint and rest on the airlines' announcements, so no second outlet confirms them, and the Houthi strikes are described only briefly."
             },
             "outlets": 1,
             "affected": [
               {
                 "group": "Travellers & pilgrims",
                 "direction": "down",
-                "what": "flight availability to Saudi Arabia",
+                "what": "flights to Saudi Arabia",
+                "effect": "Passengers cannot use Air India, Air India Express or IndiGo flights to Jeddah, Riyadh and Dammam until 24 October, so they must rebook or travel by other means.",
                 "basis": "reported"
               },
               {
                 "group": "Gulf & overseas workers and families",
                 "direction": "down",
-                "what": "travel options to Saudi Arabia",
+                "what": "direct travel to Saudi Arabia",
+                "effect": "Indian workers and families who travel to Saudi cities could lose direct flight options, which may complicate trips for work or family visits.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "Whether airlines extend the Saudi flight suspension beyond October 24",
+                "what": "Whether the airlines extend the suspension of Saudi Arabia flights again or announce a restart date after 24 October",
+                "why": "It would show whether the security concerns behind the suspension have eased for Indian carriers.",
                 "when": "2026-10-24",
-                "where": "Air India, Air India Express and IndiGo official advisories"
-              },
+                "where": "Air India, Air India Express and IndiGo official announcements"
+              }
+            ],
+            "context": [
+              "Saudi Arabia is a major destination for Indians travelling for work, family visits and religious pilgrimage, and much of that traffic uses direct flights. Airlines usually suspend routes when they cannot manage the risk to aircraft and crew."
+            ],
+            "terms": [
               {
-                "what": "Further Houthi strikes or West Asia security developments affecting flight operations",
-                "when": "",
-                "where": ""
+                "term": "Houthi",
+                "meaning": "An armed group in Yemen whose strikes have raised security concerns across West Asia."
               }
             ],
             "frameworks": {
               "disruption_map": {
                 "node": {
-                  "name": "Saudi Arabia flights (Jeddah, Riyadh, Dammam)",
+                  "name": "Flights to Jeddah, Riyadh and Dammam",
                   "type": "airport",
                   "status": "unknown",
-                  "as_of": "2026-10-17"
+                  "as_of": "17–18 October 2026, as reported by Mint"
                 },
                 "cause": {
-                  "text": "Security concerns in West Asia following Houthi strikes",
+                  "text": "The airlines cite security concerns in West Asia following Houthi strikes, as reported by Mint, although the strikes themselves are not detailed in the reports.",
                   "status": "claimed"
                 },
                 "flows": [
                   {
                     "flow": "air passengers",
-                    "india_link": "Air India, Air India Express and IndiGo flights to Saudi destinations suspended until October 24",
+                    "india_link": "Passengers flying between India and the Saudi cities of Jeddah, Riyadh and Dammam lose Air India, Air India Express and IndiGo services until 24 October.",
                     "basis": "reported"
                   }
                 ],
                 "alternatives": [],
-                "duration": "Suspension until October 24; further extension not reported"
+                "duration": "Suspended until 24 October 2026, after earlier extensions"
               }
             }
           },
@@ -5000,6 +5230,380 @@
       "name": "Economy & Trade",
       "items": [
         {
+          "id": "s1mnspo3",
+          "headline": "Jaishankar ‘summoned’ by Marco Rubio? MEA clarifies Mumbai meet amid Congress criticism; says energy, trade on agenda",
+          "url": "https://www.livemint.com/news/india/jaishankar-summoned-by-marco-rubio-mea-clarifies-mumbai-meet-amid-congress-criticism-says-energy-trade-on-agenda-11792205501440.html",
+          "source": "mint",
+          "date": "2026-10-17T03:11:00.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2026/10/17/1600x900/logo/MEA_1792205664297_Rp3I_1792205668466_SEoq_cfd11351-2c73-46d2-ab44-86e09599bb94_pnp8.jpg",
+          "why": "US Secretary of State Marco Rubio, visiting Mumbai and Reliance's Jamnagar refinery, said Washington will discuss refining more Venezuelan crude with Reliance and called a trade deal 'very very close'. Both matter for India's oil sourcing and its exporters.",
+          "implications": [
+            "Rubio's Jamnagar visit is due a day after President Donald Trump is expected to decide on sanctions on Russian oil imports, so the energy talks may be shaped by US pressure over India's Russian crude purchases.",
+            "If Reliance processes more Venezuelan crude, Indian refining could gain another supply source, which Rubio linked to what he called India's 'substantial progress' in diversifying energy supplies.",
+            "Rubio said the talks with External Affairs Minister S Jaishankar also covered defence cooperation and energy security, suggesting Washington is pairing trade negotiations with wider strategic issues.",
+            "Holding the talks in Mumbai rather than Delhi drew Opposition criticism that the minister had been 'summoned', which the Ministry of External Affairs (MEA) rejected as normal diplomatic practice."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-20T19:38:45.391Z",
+            "tier": "deep",
+            "primary": "impact_chain",
+            "complement": "scenarios",
+            "features": [
+              "trade_flow",
+              "fast_moving",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "high",
+              "reason": "Crude oil is India's largest import, and any change in access to Venezuelan or Russian crude, or in US tariffs under a trade deal, reaches refiners, fuel costs and exporters."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Effects depend on whether the Reliance talks and the trade deal produce agreements, which usually take months to turn into cargoes and tariff changes."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "This rests on Mint and The Hindu quoting Rubio and the MEA on record; any Venezuelan crude arrangement and the trade deal's terms remain unconfirmed."
+            },
+            "outlets": 2,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "crude sourcing costs",
+                "effect": "Shifts in Venezuelan or Russian crude supply could change refiners' input costs, which may eventually feed through to petrol and diesel prices.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Large exporters",
+                "direction": "unclear",
+                "what": "US market access terms",
+                "effect": "A finalised trade deal could change the tariffs Indian exporters face in the US, an issue Mint links to strained ties under President Trump.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Rubio's meeting with Mukesh Ambani at Reliance's Jamnagar refinery",
+                "why": "It would show whether talk of refining more Venezuelan crude moves towards a concrete supply arrangement.",
+                "when": "2026-10-21",
+                "where": ""
+              },
+              {
+                "what": "President Trump's decision on sanctions on Russian oil imports",
+                "why": "It would indicate how much pressure Indian refiners face to change their crude sourcing.",
+                "when": "the day before Rubio's Jamnagar visit",
+                "where": "The White House"
+              },
+              {
+                "what": "Official announcement that the India-US trade deal has been finalised",
+                "why": "It would confirm whether Rubio's 'very very close' assessment has turned into agreed terms for Indian exporters.",
+                "when": "",
+                "where": "Ministry of Commerce and Industry"
+              }
+            ],
+            "context": [
+              "India imports most of the crude oil it refines, so changes in which countries it can buy from, and on what terms, affect refiners' costs and, over time, domestic fuel pricing.",
+              "Reliance's Jamnagar complex is among the world's largest refining sites and is built to process heavier, lower-grade crudes, such as those Venezuela produces, while exporting a large share of its refined products.",
+              "US sanctions can make buying crude from targeted countries riskier for refiners, shippers and banks, which is why American decisions on Russian or Venezuelan oil matter to Indian refiners."
+            ],
+            "terms": [
+              {
+                "term": "Comprehensive Global Strategic Partnership",
+                "meaning": "The formal label India and the United States use for their bilateral relationship, covering trade, defence, energy and technology cooperation."
+              },
+              {
+                "term": "sanctions on Russian oil imports",
+                "meaning": "US penalties that can target countries, companies or banks dealing in Russian crude, making such purchases costlier or riskier."
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Rubio raises Venezuelan crude refining",
+                    "detail": "On arriving in Mumbai, Rubio called India a 'refining superpower' and said Washington would discuss refining more Venezuelan crude with Reliance Industries, setting the agenda for his Jamnagar stop.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Jamnagar meeting follows sanctions decision",
+                    "detail": "Rubio is expected to meet Mukesh Ambani at Jamnagar on Wednesday, a day after President Trump is expected to decide on sanctions on Russian oil imports.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "India's crude mix could shift",
+                    "detail": "If an arrangement follows, Reliance could take more Venezuelan barrels. This may change the mix of crude India imports and reduce its reliance on Russian oil.",
+                    "basis": "inferred"
+                  },
+                  {
+                    "step": "Costs and trade terms adjust",
+                    "detail": "A changed crude mix, alongside any trade deal, could alter refiners' input costs and export margins. These changes may eventually reach fuel prices and India-US trade flows.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The effect would not reach India if the Reliance discussions produce no supply arrangement and US decisions on Russian oil leave Indian refiners' existing sourcing unchanged."
+              },
+              "scenarios": {
+                "question": "Will Rubio's visit produce a finalised trade deal and new energy arrangements, and how will the US decision on Russian oil sanctions shape them?",
+                "scenarios": [
+                  {
+                    "name": "Deal and energy accord",
+                    "what": "India and the US finalise the trade deal Rubio called 'very very close', and Reliance agrees to refine more Venezuelan crude.",
+                    "signal": "A joint announcement on the trade deal, or a Reliance statement on Venezuelan crude, follows the Jamnagar visit.",
+                    "india_effect": "Indian exporters could gain clearer terms in the US market, and refiners could gain an additional crude source, though the scale would depend on terms not yet disclosed."
+                  },
+                  {
+                    "name": "Russian oil sanctions imposed",
+                    "what": "President Trump decides to impose sanctions on Russian oil imports, raising pressure on buyers, including India.",
+                    "signal": "The White House announces Russian oil sanctions around the time of Rubio's Jamnagar visit.",
+                    "india_effect": "Indian refiners could face pressure to cut Russian purchases and seek alternatives such as Venezuelan crude, which may raise their sourcing costs."
+                  },
+                  {
+                    "name": "Talks continue without closure",
+                    "what": "Outstanding differences keep the trade deal unsigned after the visit, and the Venezuelan crude discussions remain at an exploratory stage.",
+                    "signal": "No deal announcement follows in the weeks after the visit, and officials describe the negotiations as continuing.",
+                    "india_effect": "Current US tariff conditions for Indian exporters would continue, and the tensions over tariffs and Russian oil that Mint describes could persist."
+                  }
+                ]
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "Jaishankar ‘summoned’ by Marco Rubio? MEA clarifies Mumbai meet amid Congress criticism; says energy, trade on agenda",
+              "url": "https://www.livemint.com/news/india/jaishankar-summoned-by-marco-rubio-mea-clarifies-mumbai-meet-amid-congress-criticism-says-energy-trade-on-agenda-11792205501440.html",
+              "date": "2026-10-17T03:11:00.000Z",
+              "kind": "hard",
+              "summary": "MEA spokesperson Randhir Jaiswal said that External Affairs Minister Jaishankar will host the Deputy Prime Minister and Foreign Minister of the UAE Sheikh Abdullah bin Zayed Al Nahyan, in Mumbai on October 19 and 20, 2026.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/10/17/1600x900/logo/MEA_1792205664297_Rp3I_1792205668466_SEoq_cfd11351-2c73-46d2-ab44-86e09599bb94_pnp8.jpg"
+            },
+            {
+              "source": "mint",
+              "headline": "Why is Marco Rubio skipping Delhi for Mumbai and Reliance hub Jamnagar? What it signals about India-US ties under Trump",
+              "url": "https://www.livemint.com/news/india/why-is-marco-rubio-skipping-delhi-for-mumbai-and-reliance-hub-jamnagar-what-it-signals-about-india-us-ties-under-trump-11792256624695.html",
+              "date": "2026-10-17T18:25:00.000Z",
+              "kind": "feature",
+              "summary": "US Secretary of State Marco Rubio’s decision to hold talks in Mumbai and visit Reliance Industries’ Jamnagar refinery highlights the business, energy and trade focus of his India trip. The itinerary has sparked a diplomatic debate amid strained India-US ties under President Donald Trump.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/10/17/1600x900/logo/MEA_1792205664297_1792260123983_ZSXO_1792260124197_82s9_29c275f5-a295-4e79-86af-766e565e63a5_GNLm.jpg"
+            },
+            {
+              "source": "thehindu",
+              "headline": "Jaishankar to meet Rubio, UAE Foreign Minister, in back-to-back separate visits in Mumbai next week",
+              "url": "https://www.thehindu.com/news/national/jaishankar-rubio-to-hold-meeting-in-mumbai-on-oct-20-mea/article71592380.ece",
+              "date": "2026-10-18T04:23:41.000Z",
+              "kind": "hard",
+              "summary": "MEA dismisses criticism from Opposition over External Affairs Minister being ‘summoned’ to Mumbai, says it is normal practice to host leaders in other cities besides national capital; the announcement of the visit of UAE Foreign Minister Sheikh Abdullah was unexpected and previously unannounced",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/incoming/277m34/article71592434.ece/alternates/LANDSCAPE_1200/PTI10_14_2026_000235B.jpg"
+            },
+            {
+              "source": "mint",
+              "headline": "S Jaishankar, Marco Rubio to hold talks in Mumbai tomorrow amid India-US trade deal push: What is on the agenda?",
+              "url": "https://www.livemint.com/news/india/s-jaishankar-marco-rubio-to-hold-talks-in-mumbai-tomorrow-amid-india-us-trade-deal-push-what-is-on-the-agenda-11792379832648.html",
+              "date": "2026-10-19T03:57:53.000Z",
+              "kind": "hard",
+              "summary": "Secretary Rubio's visit will provide an opportunity for both sides to review India-US relations and discuss ways to further strengthen our Comprehensive Global Strategic Partnership that we have with the United States, &nbsp;the MEA spokesperson said.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/10/19/1600x900/logo/Rubio-Central-Asia-12_1792381953449_4Tqf_1792381966108_yEwU_7dc42a83-aa5b-4b9a-9e9f-617c642808a6_0zwH.jpg"
+            },
+            {
+              "source": "mint",
+              "headline": "India a ‘refining superpower’: Marco Rubio lands in Mumbai, says US to discuss processing Venezuelan crude with Reliance",
+              "url": "https://www.livemint.com/news/india-a-refining-superpower-marco-rubio-lands-in-india-says-us-to-discuss-processing-venezuelan-crude-with-reliance-11792492629496.html",
+              "date": "2026-10-20T11:02:51.000Z",
+              "kind": "hard",
+              "summary": "US Secretary of State Marco Rubio called India a “refining superpower”, saying Washington will discuss refining more Venezuelan crude with Reliance Industries. Rubio, on a three-day India visit, is expected to meet Mukesh Ambani in Jamnagar on Wednesday, with energy and trade ties in focus.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/10/20/1600x900/maxresdefault_1792501407245_3Tqm_1792501411069_1bys_7de2c763-242c-4812-aeda-0e690189e854_j8UX.jpg"
+            },
+            {
+              "source": "thehindu",
+              "headline": "Rubio says U.S. to discuss refining Venezuelan crude with Reliance, adds India made ‘substantial progress’ in diversifying energy supplies",
+              "url": "https://www.thehindu.com/business/Economy/marco-rubio-oil-purchases-india-mumbai-october-20-2026/article71604269.ece",
+              "date": "2026-10-20T11:27:10.000Z",
+              "kind": "hard",
+              "summary": "The ​U.S. ‌Secretary of ​State also said that India and U.S. are ‘very very close’ to finalising the trade deal",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/incoming/vx5qot/article71604274.ece/alternates/LANDSCAPE_1200/2026-10-20T101555Z_837607218_RC2Y6OAT2HJR_RTRMADP_3_USA-RUBIO-INDIA.JPG"
+            },
+            {
+              "source": "thehindu",
+              "headline": "Rubio, Jaishankar meet in Mumbai as U.S. and India aim to finalise trade deal",
+              "url": "https://www.thehindu.com/news/national/marco-rubio-mumbai-visit-october-20-2026/article71603994.ece",
+              "date": "2026-10-20T13:20:17.000Z",
+              "kind": "hard",
+              "summary": "The two sides discussed energy security, defence cooperation and strengthening bilateral ties, Mr. Rubio said",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/incoming/4h8al1/article71604445.ece/alternates/LANDSCAPE_1200/rubio.jpg"
+            },
+            {
+              "source": "thehindu",
+              "headline": "Marco Rubio to skip Delhi, visit Mumbai and Jamnagar next week",
+              "url": "https://www.thehindu.com/news/national/marco-rubio-to-skip-delhi-visit-mumbai-and-jamnagar-next-week/article71585393.ece",
+              "date": "2026-10-20T13:21:04.000Z",
+              "kind": "hard",
+              "summary": "His Jamnagar Reliance refinery visit will come a day after U.S. President is expected to take a decision on sanctions on Russian oil imports",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/incoming/kbdrm/article71585468.ece/alternates/LANDSCAPE_1200/2026-10-09T135232Z_1409201437_RC2PZNA2T3KD_RTRMADP_3_USA-VENEZUELA.JPG"
+            },
+            {
+              "source": "mint",
+              "headline": "Marco Rubio in India: Can US biz diplomacy ease Trump tensions over tariffs, Russian oil and bring trade deal closer?",
+              "url": "https://www.livemint.com/news/india/marco-rubio-in-india-can-us-biz-diplomacy-ease-trump-tensions-over-tariffs-russian-oil-and-bring-trade-deal-closer-11792515633636.html",
+              "date": "2026-10-20T17:59:00.000Z",
+              "kind": "feature",
+              "summary": "US Secretary of State Marco Rubio’s India visit puts trade and energy diplomacy in focus as Washington signals progress on a bilateral trade deal.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/10/20/1600x900/maxresdefault_1792519406455_YruJ_1792519412981_jvR9_58fc7959-ea0e-4773-b773-86cadeb6ce07_Wvk0.jpg"
+            }
+          ],
+          "thread": "td7f25t"
+        },
+        {
+          "id": "sk2apyy",
+          "headline": "India-U.S. deal ‘finalised’, implementation after clarity on India’s competitive advantage, says Goyal",
+          "url": "https://www.thehindu.com/business/Economy/india-us-trade-pact-to-be-operationalised-once-india-gets-competitive-advantage-goyal/article71587473.ece",
+          "source": "thehindu",
+          "date": "2026-10-17T20:23:25.000Z",
+          "relevance": "medium",
+          "image": "https://th-i.thgim.com/public/incoming/5wiaer/article71587484.ece/alternates/LANDSCAPE_1200/PTI10_14_2026_000576B.jpg",
+          "why": "Commerce Minister Piyush Goyal said the India-US trade deal is 'finalised' and in legal drafting. US Secretary of State Marco Rubio said the two sides are 'very, very close', with a few issues remaining. Indian exporters still await new terms.",
+          "implications": [
+            "Goyal said implementation awaits clarity on India's competitive advantage, which suggests that India's tariff terms relative to rival exporting countries are still being settled before Indian firms see any change.",
+            "The Hindu notes that ministers on both sides had recently indicated the talks were hitting blocks, so 'finalised' may describe the deal's broad contours rather than a signed agreement.",
+            "Until the deal is signed and implemented, Indian exporters to the US cannot plan around new tariff rates, which may hold back pricing and contract decisions."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-20T19:38:45.391Z",
+            "tier": "standard",
+            "primary": "conflicting",
+            "complement": null,
+            "features": [
+              "conflict",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "high",
+              "reason": "The US is a top destination for Indian exports, so once implemented the deal's tariff terms would directly reach exporters and the workers they employ."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Legal drafting and the clarity Goyal said is still needed must both be completed before any tariff change reaches Indian businesses."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "Mint and The Hindu quote Goyal and Rubio on record, but their descriptions of the deal's status differ and the remaining issues are not named."
+            },
+            "outlets": 2,
+            "affected": [
+              {
+                "group": "Large exporters",
+                "direction": "unclear",
+                "what": "US tariff terms",
+                "effect": "Once implemented, the deal could change the duties large Indian exporters pay in the US, but the terms and timing remain unclear.",
+                "basis": "inferred"
+              },
+              {
+                "group": "MSME exporters",
+                "direction": "unclear",
+                "what": "US market access",
+                "effect": "Smaller exporters selling to the US could see their tariff costs change under the deal, but cannot assess the effect until terms are published.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Formal signing or official announcement that the India-US trade deal is complete",
+                "why": "It would show which account of the deal's status proves accurate, and when tariff changes could begin.",
+                "when": "",
+                "where": "Ministry of Commerce and Industry"
+              },
+              {
+                "what": "Official clarification of how India's competitive advantage will be protected at implementation",
+                "why": "Goyal tied implementation to this point, so clarity on it would signal that the deal is moving towards taking effect.",
+                "when": "",
+                "where": "Ministry of Commerce and Industry"
+              }
+            ],
+            "context": [
+              "Trade agreements usually move through negotiation, legal drafting and review, formal signature, and then domestic approval and notification before tariff changes take effect for businesses.",
+              "The United States is one of India's largest export markets, particularly for engineering goods, pharmaceuticals, textiles, gems and jewellery, and IT services."
+            ],
+            "terms": [
+              {
+                "term": "legal drafting",
+                "meaning": "The stage in which negotiators turn agreed points into binding treaty text, which lawyers check before the agreement is signed."
+              }
+            ],
+            "frameworks": {
+              "conflicting": {
+                "disputed": {
+                  "item": "Stage reached in the India-US trade deal",
+                  "unit": "negotiation status"
+                },
+                "accounts": [
+                  {
+                    "outlet": "The Hindu",
+                    "value": "'finalised', going through its final contours and legal drafting, with implementation after clarity on India's competitive advantage",
+                    "origin": "Commerce Minister Piyush Goyal",
+                    "time": "2026-10-17"
+                  },
+                  {
+                    "outlet": "Mint",
+                    "value": "'very, very close' to a trade agreement, with only a few issues remaining",
+                    "origin": "US Secretary of State Marco Rubio",
+                    "time": "2026-10-20"
+                  }
+                ],
+                "agreed": [
+                  "Both accounts describe the India-US trade deal as being at an advanced stage.",
+                  "Neither account says the deal has been signed or implemented."
+                ],
+                "explanations": [
+                  {
+                    "type": "different definition",
+                    "note": "Goyal's 'finalised' may refer to agreed contours now under legal drafting, while Rubio's 'few issues remaining' may count open points such as the implementation conditions Goyal mentioned."
+                  },
+                  {
+                    "type": "different source",
+                    "note": "The statements come from ministers of two different governments, who may describe the same stage of the negotiations in different terms."
+                  }
+                ],
+                "status": "unresolved"
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "thehindu",
+              "headline": "India-U.S. deal ‘finalised’, implementation after clarity on India’s competitive advantage, says Goyal",
+              "url": "https://www.thehindu.com/business/Economy/india-us-trade-pact-to-be-operationalised-once-india-gets-competitive-advantage-goyal/article71587473.ece",
+              "date": "2026-10-17T20:23:25.000Z",
+              "kind": "hard",
+              "summary": "Commerce Minister Piyush Goyal said that the deal was going through its final contours and the legal drafting. His comments come soon after Ministers on both sides indicated that talks were hitting blocks and that finalisation might be some time away",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/incoming/5wiaer/article71587484.ece/alternates/LANDSCAPE_1200/PTI10_14_2026_000576B.jpg"
+            },
+            {
+              "source": "mint",
+              "headline": "US, India ‘very, very close’ to trade deal, says Rubio",
+              "url": "https://www.livemint.com/news/us-india-trade-deal-energy-ril-rubio-11792513086422.html",
+              "date": "2026-10-20T17:10:45.000Z",
+              "kind": "hard",
+              "summary": "US secretary of state Marco Rubio said the US and India are close to a trade agreement, with only a few issues remaining. During his visit, he highlighted India’s strategic partnership with the US and discussed energy cooperation.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/10/20/1600x900/maxresdefault_1792519398691_5scO_1792519405609_M0yI_33d0afda-0509-41fa-a6d4-596ed12e0aae_pCyS.jpg"
+            }
+          ],
+          "thread": "t1ka6u13"
+        },
+        {
           "id": "svyt5ag",
           "headline": "Garment exports have the potential to grow 25% next year: ITF",
           "url": "https://www.thehindu.com/news/cities/Coimbatore/garment-exports-have-the-potential-to-grow-25-next-year-itf/article71604867.ece",
@@ -5098,213 +5702,6 @@
           ],
           "image": "https://www.thehindu.com/theme/images/og-image.png",
           "thread": "t1ff7qh2"
-        },
-        {
-          "id": "s1mnspo3",
-          "headline": "Jaishankar ‘summoned’ by Marco Rubio? MEA clarifies Mumbai meet amid Congress criticism; says energy, trade on agenda",
-          "url": "https://www.livemint.com/news/india/jaishankar-summoned-by-marco-rubio-mea-clarifies-mumbai-meet-amid-congress-criticism-says-energy-trade-on-agenda-11792205501440.html",
-          "source": "mint",
-          "date": "2026-10-17T03:11:00.000Z",
-          "relevance": "medium",
-          "image": "https://www.livemint.com/lm-img/img/2026/10/17/1600x900/logo/MEA_1792205664297_Rp3I_1792205668466_SEoq_cfd11351-2c73-46d2-ab44-86e09599bb94_pnp8.jpg",
-          "why": "External Affairs Minister S Jaishankar will hold back-to-back talks in Mumbai with US Secretary of State Marco Rubio and the UAE Foreign Minister. Energy and trade are on the agenda, and India and the US are pushing for a trade deal.",
-          "implications": [
-            "Rubio's planned visit to Reliance Industries' Jamnagar refinery suggests energy trade could be central to the talks, which may matter for how India sources and processes crude oil.",
-            "Mint reports that the talks come amid strained India-US ties under President Donald Trump, so any progress on a trade deal could ease uncertainty for Indian exporters selling to America.",
-            "The unannounced visit of UAE Foreign Minister Sheikh Abdullah bin Zayed Al Nahyan on October 19 and 20 adds a second energy and trade partner to the same week of diplomacy.",
-            "The opposition Congress criticised Jaishankar for being 'summoned' to Mumbai, and the Ministry of External Affairs replied that hosting foreign leaders outside Delhi is normal practice."
-          ],
-          "analysis": {
-            "v": 3,
-            "at": "2026-10-19T20:53:14.421Z",
-            "tier": "standard",
-            "primary": "impact_chain",
-            "complement": null,
-            "features": [
-              "pending_outcome"
-            ],
-            "exposure": {
-              "level": "medium",
-              "reason": "This reaches India through bilateral diplomacy on energy and trade with the US and the UAE. The talks themselves change no prices or rules, so the effect depends on whether agreements follow."
-            },
-            "horizon": {
-              "value": "months",
-              "reason": "Any trade deal or energy arrangement discussed in Mumbai would need further negotiation and approval before it changes conditions for Indian businesses or consumers."
-            },
-            "confidence": {
-              "level": "medium",
-              "reason": "This rests on Mint and The Hindu, with on-record statements from MEA spokesperson Randhir Jaiswal; the specific outcomes of the talks are not yet known."
-            },
-            "outlets": 2,
-            "affected": [
-              {
-                "group": "Large exporters",
-                "direction": "unclear",
-                "what": "US market access",
-                "effect": "Progress towards an India-US trade deal could change the terms on which large Indian exporters sell to the United States, but no agreement has been reported.",
-                "basis": "inferred"
-              },
-              {
-                "group": "MSME exporters",
-                "direction": "unclear",
-                "what": "trade deal terms",
-                "effect": "Smaller exporters could gain or lose depending on any tariff or market-access terms that emerge from the India-US trade talks.",
-                "basis": "inferred"
-              },
-              {
-                "group": "Fuel & LPG users",
-                "direction": "unclear",
-                "what": "energy supply arrangements",
-                "effect": "Energy talks with the US and the UAE may influence where India sources crude oil and gas, which could affect supply security for fuel and cooking gas.",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "Jaishankar and Rubio hold talks in Mumbai on energy, trade and the bilateral partnership",
-                "why": "Any announcement on the trade deal or energy cooperation would show whether the visit produces concrete commitments.",
-                "when": "2026-10-20",
-                "where": "Ministry of External Affairs"
-              },
-              {
-                "what": "Jaishankar hosts UAE Foreign Minister Sheikh Abdullah bin Zayed Al Nahyan in Mumbai",
-                "why": "Outcomes would show whether India is pursuing new energy or trade arrangements with the UAE alongside the US talks.",
-                "when": "2026-10-19",
-                "where": "Ministry of External Affairs"
-              },
-              {
-                "what": "Rubio visits Reliance Industries' Jamnagar refinery during his India trip",
-                "why": "Statements made during the visit could signal the role of energy trade in India-US relations.",
-                "when": "",
-                "where": ""
-              }
-            ],
-            "context": [
-              "India imports most of the crude oil it refines, so its relationships with major oil and gas suppliers and with large energy-trading partners shape fuel costs and supply security at home.",
-              "The United States is one of India's largest export markets, and the UAE is both a major supplier of crude oil and liquefied petroleum gas (LPG) and home to a large Indian workforce.",
-              "Reliance Industries' Jamnagar complex in Gujarat is one of the world's largest oil refining sites and exports a substantial share of its refined fuels."
-            ],
-            "terms": [
-              {
-                "term": "Comprehensive Global Strategic Partnership",
-                "meaning": "The formal label India and the United States use for their bilateral relationship, which covers defence, trade, technology and energy cooperation."
-              },
-              {
-                "term": "MEA",
-                "meaning": "The Ministry of External Affairs, the Indian government department responsible for foreign relations and diplomacy."
-              }
-            ],
-            "frameworks": {
-              "impact_chain": {
-                "chain": [
-                  {
-                    "step": "Rubio and UAE minister visit Mumbai",
-                    "detail": "Jaishankar is hosting the US Secretary of State and the UAE Foreign Minister in Mumbai in separate visits. The MEA says energy and trade are on the agenda.",
-                    "basis": "reported"
-                  },
-                  {
-                    "step": "Energy focus through Jamnagar visit",
-                    "detail": "Rubio's itinerary includes Reliance Industries' Jamnagar refinery. Mint reports that this highlights the business, energy and trade focus of the trip.",
-                    "basis": "reported"
-                  },
-                  {
-                    "step": "Talks feed trade deal push",
-                    "detail": "The meeting takes place amid efforts towards an India-US trade deal and strained ties under Trump. The talks give both sides a chance to review the partnership.",
-                    "basis": "reported"
-                  },
-                  {
-                    "step": "Possible change for exporters and energy",
-                    "detail": "If the talks advance a trade deal or energy arrangements, Indian exporters and fuel supply chains could face changed terms in the months ahead.",
-                    "basis": "inferred"
-                  }
-                ],
-                "breaks_if": "The effect would not reach India if the Mumbai talks end without concrete progress on the trade deal or any new energy arrangement."
-              }
-            }
-          },
-          "reports": [
-            {
-              "source": "mint",
-              "headline": "Jaishankar ‘summoned’ by Marco Rubio? MEA clarifies Mumbai meet amid Congress criticism; says energy, trade on agenda",
-              "url": "https://www.livemint.com/news/india/jaishankar-summoned-by-marco-rubio-mea-clarifies-mumbai-meet-amid-congress-criticism-says-energy-trade-on-agenda-11792205501440.html",
-              "date": "2026-10-17T03:11:00.000Z",
-              "kind": "hard",
-              "summary": "MEA spokesperson Randhir Jaiswal said that External Affairs Minister Jaishankar will host the Deputy Prime Minister and Foreign Minister of the UAE Sheikh Abdullah bin Zayed Al Nahyan, in Mumbai on October 19 and 20, 2026.",
-              "summaryV": 3,
-              "image": "https://www.livemint.com/lm-img/img/2026/10/17/1600x900/logo/MEA_1792205664297_Rp3I_1792205668466_SEoq_cfd11351-2c73-46d2-ab44-86e09599bb94_pnp8.jpg"
-            },
-            {
-              "source": "mint",
-              "headline": "Why is Marco Rubio skipping Delhi for Mumbai and Reliance hub Jamnagar? What it signals about India-US ties under Trump",
-              "url": "https://www.livemint.com/news/india/why-is-marco-rubio-skipping-delhi-for-mumbai-and-reliance-hub-jamnagar-what-it-signals-about-india-us-ties-under-trump-11792256624695.html",
-              "date": "2026-10-17T18:25:00.000Z",
-              "kind": "feature",
-              "summary": "US Secretary of State Marco Rubio’s decision to hold talks in Mumbai and visit Reliance Industries’ Jamnagar refinery highlights the business, energy and trade focus of his India trip. The itinerary has sparked a diplomatic debate amid strained India-US ties under President Donald Trump.",
-              "summaryV": 3,
-              "image": "https://www.livemint.com/lm-img/img/2026/10/17/1600x900/logo/MEA_1792205664297_1792260123983_ZSXO_1792260124197_82s9_29c275f5-a295-4e79-86af-766e565e63a5_GNLm.jpg"
-            },
-            {
-              "source": "thehindu",
-              "headline": "Jaishankar to meet Rubio, UAE Foreign Minister, in back-to-back separate visits in Mumbai next week",
-              "url": "https://www.thehindu.com/news/national/jaishankar-rubio-to-hold-meeting-in-mumbai-on-oct-20-mea/article71592380.ece",
-              "date": "2026-10-18T04:23:41.000Z",
-              "kind": "hard",
-              "summary": "MEA dismisses criticism from Opposition over External Affairs Minister being ‘summoned’ to Mumbai, says it is normal practice to host leaders in other cities besides national capital; the announcement of the visit of UAE Foreign Minister Sheikh Abdullah was unexpected and previously unannounced",
-              "summaryV": 3,
-              "image": "https://th-i.thgim.com/public/incoming/277m34/article71592434.ece/alternates/LANDSCAPE_1200/PTI10_14_2026_000235B.jpg"
-            },
-            {
-              "source": "mint",
-              "headline": "S Jaishankar, Marco Rubio to hold talks in Mumbai tomorrow amid India-US trade deal push: What is on the agenda?",
-              "url": "https://www.livemint.com/news/india/s-jaishankar-marco-rubio-to-hold-talks-in-mumbai-tomorrow-amid-india-us-trade-deal-push-what-is-on-the-agenda-11792379832648.html",
-              "date": "2026-10-19T03:57:53.000Z",
-              "kind": "hard",
-              "summary": "Secretary Rubio's visit will provide an opportunity for both sides to review India-US relations and discuss ways to further strengthen our Comprehensive Global Strategic Partnership that we have with the United States, &nbsp;the MEA spokesperson said.",
-              "summaryV": 3,
-              "image": "https://www.livemint.com/lm-img/img/2026/10/19/1600x900/logo/Rubio-Central-Asia-12_1792381953449_4Tqf_1792381966108_yEwU_7dc42a83-aa5b-4b9a-9e9f-617c642808a6_0zwH.jpg"
-            },
-            {
-              "source": "mint",
-              "headline": "India a ‘refining superpower’: Marco Rubio lands in Mumbai, says US to discuss processing Venezuelan crude with Reliance",
-              "url": "https://www.livemint.com/news/india-a-refining-superpower-marco-rubio-lands-in-india-says-us-to-discuss-processing-venezuelan-crude-with-reliance-11792492629496.html",
-              "date": "2026-10-20T11:02:51.000Z",
-              "kind": "hard",
-              "summary": "US Secretary of State Marco Rubio called India a “refining superpower”, saying Washington will discuss refining more Venezuelan crude with Reliance Industries. Rubio, on a three-day India visit, is expected to meet Mukesh Ambani in Jamnagar on Wednesday, with energy and trade ties in focus.",
-              "summaryV": 3,
-              "image": "https://www.livemint.com/lm-img/img/2026/10/20/1600x900/maxresdefault_1792501407245_3Tqm_1792501411069_1bys_7de2c763-242c-4812-aeda-0e690189e854_j8UX.jpg"
-            },
-            {
-              "source": "thehindu",
-              "headline": "Rubio says U.S. to discuss refining Venezuelan crude with Reliance, adds India made ‘substantial progress’ in diversifying energy supplies",
-              "url": "https://www.thehindu.com/business/Economy/marco-rubio-oil-purchases-india-mumbai-october-20-2026/article71604269.ece",
-              "date": "2026-10-20T11:27:10.000Z",
-              "kind": "hard",
-              "summary": "The ​U.S. ‌Secretary of ​State also said that India and U.S. are ‘very very close’ to finalising the trade deal",
-              "summaryV": 3,
-              "image": "https://th-i.thgim.com/public/incoming/vx5qot/article71604274.ece/alternates/LANDSCAPE_1200/2026-10-20T101555Z_837607218_RC2Y6OAT2HJR_RTRMADP_3_USA-RUBIO-INDIA.JPG"
-            },
-            {
-              "source": "thehindu",
-              "headline": "Rubio, Jaishankar meet in Mumbai as U.S. and India aim to finalise trade deal",
-              "url": "https://www.thehindu.com/news/national/marco-rubio-mumbai-visit-october-20-2026/article71603994.ece",
-              "date": "2026-10-20T13:20:17.000Z",
-              "kind": "hard",
-              "summary": "The two sides discussed energy security, defence cooperation and strengthening bilateral ties, Mr. Rubio said",
-              "summaryV": 3,
-              "image": "https://th-i.thgim.com/public/incoming/4h8al1/article71604445.ece/alternates/LANDSCAPE_1200/rubio.jpg"
-            },
-            {
-              "source": "thehindu",
-              "headline": "Marco Rubio to skip Delhi, visit Mumbai and Jamnagar next week",
-              "url": "https://www.thehindu.com/news/national/marco-rubio-to-skip-delhi-visit-mumbai-and-jamnagar-next-week/article71585393.ece",
-              "date": "2026-10-20T13:21:04.000Z",
-              "kind": "hard",
-              "summary": "His Jamnagar Reliance refinery visit will come a day after U.S. President is expected to take a decision on sanctions on Russian oil imports",
-              "summaryV": 3,
-              "image": "https://th-i.thgim.com/public/incoming/kbdrm/article71585468.ece/alternates/LANDSCAPE_1200/2026-10-09T135232Z_1409201437_RC2PZNA2T3KD_RTRMADP_3_USA-VENEZUELA.JPG"
-            }
-          ],
-          "thread": "td7f25t"
         },
         {
           "id": "s1ar4o23",
@@ -5422,96 +5819,176 @@
           "date": "2026-10-17T15:48:21.000Z",
           "relevance": "medium",
           "image": "https://www.livemint.com/lm-img/img/2026/10/17/1600x900/logo/FTA_1792252047438_sWgD_1792252047638_S5dl_0ba7b039-4da1-485f-8b1a-bc0597523897_LEzc.png",
-          "why": "India has notified its first customs duty concessions for imports from New Zealand under their free trade agreement. Preferential rates, including zero duty on sheep meat and 15% on kiwi fruit, take effect on 20 October.",
+          "why": "India's free trade agreement with New Zealand took effect on October 20. It removes tariffs on all Indian exports to New Zealand, cuts Indian duties on some New Zealand goods such as sheep meat and kiwi fruit, and creates new work visa routes for Indians.",
           "implications": [
-            "Lower duties reduce the landed cost of New Zealand sheep meat and kiwi fruit for Indian importers, which could eventually show up in prices paid by retailers and restaurants.",
-            "This is only the first set of concessions to be notified, so tariff changes on other goods under the agreement may follow."
+            "Mint reports that textiles, leather, pharmaceuticals and agriculture are expected to gain, because duty-free entry makes Indian goods cheaper for New Zealand buyers than before.",
+            "India's notified concessions set zero duty on New Zealand sheep meat and 15% on kiwi fruit, which could lower importers' costs and increase competition for some domestic producers.",
+            "Two new Temporary Employment Entry visa categories open routes for Indian nationals to work in New Zealand, extending the deal's reach beyond goods trade to jobs.",
+            "The pact targets bilateral trade of about ₹35,000 crore by 2030, and Mint describes it as part of India's push for bilateral deals as global supply chains realign."
           ],
           "analysis": {
             "v": 3,
-            "at": "2026-10-19T20:51:18.866Z",
-            "tier": "quick",
+            "at": "2026-10-20T19:38:45.391Z",
+            "tier": "deep",
             "primary": "trade_flow",
-            "complement": null,
+            "complement": "winners_losers",
             "features": [
               "trade_flow"
             ],
             "exposure": {
               "level": "medium",
-              "reason": "The channel is import duty on specific food products from one trading partner. It touches one bilateral relationship and a few products rather than a household staple."
+              "reason": "The deal reaches India through one bilateral relationship, affecting specific export sectors, a few food imports and visa access, rather than a household essential or a top trading partner."
             },
             "horizon": {
-              "value": "weeks",
-              "reason": "The lower duties apply from 20 October, but shipments need time to arrive and reach importers and shops."
+              "value": "months",
+              "reason": "The tariff cuts apply from October 20, but changes in orders, import volumes and visa use typically build up over months as contracts and procedures adjust."
             },
             "confidence": {
               "level": "medium",
-              "reason": "Two Mint reports agree on the 20 October date, one quoting Piyush Goyal; no other outlet is included and the full list of concessions is not given."
+              "reason": "This rests on Mint and The Hindu, with on-record statements from Piyush Goyal and Christopher Luxon and India's customs notification; the expected sector gains are projections."
             },
-            "outlets": 1,
+            "outlets": 2,
             "affected": [
               {
-                "group": "Importers & traders",
-                "direction": "down",
-                "what": "import duty costs",
-                "effect": "Indian importers of New Zealand sheep meat and kiwi fruit pay lower customs duty from 20 October, which reduces their cost of bringing these goods into India.",
+                "group": "MSME exporters",
+                "direction": "up",
+                "what": "duty-free New Zealand access",
+                "effect": "Small textile and leather exporters now face no tariffs in New Zealand, which makes their goods more price-competitive there.",
+                "basis": "reported"
+              },
+              {
+                "group": "Gulf & overseas workers and families",
+                "direction": "up",
+                "what": "new work visa categories",
+                "effect": "Two new Temporary Employment Entry visa categories create additional legal routes for Indians to take up temporary work in New Zealand.",
                 "basis": "reported"
               },
               {
                 "group": "Food shoppers",
-                "direction": "down",
-                "what": "imported food prices",
-                "effect": "If importers pass on the lower duty, consumers could pay less for imported sheep meat and kiwi fruit, although the reports do not say whether this will happen.",
+                "direction": "unclear",
+                "what": "imported sheep meat, kiwi prices",
+                "effect": "Lower duties on New Zealand sheep meat and kiwi fruit could reduce import costs, though shelf prices depend on whether importers pass on the savings.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Farmers",
+                "direction": "mixed",
+                "what": "export access, import competition",
+                "effect": "Farm exporters may gain duty-free access, while growers and meat producers competing with cheaper New Zealand imports could face pressure on prices.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "The agreement formally coming into force and the preferential duty rates starting to apply to New Zealand goods",
-                "why": "It would confirm that the notified concessions are being applied at the border from the stated date.",
-                "when": "2026-10-20",
-                "where": "Ministry of Commerce and Industry"
+                "what": "Notification of further customs duty concessions under the India-New Zealand FTA",
+                "why": "Mint calls the October 20 notification the first set, so further notifications would show which other products gain lower duties.",
+                "when": "",
+                "where": "Central Board of Indirect Taxes and Customs"
               },
               {
-                "what": "Any further customs notifications beyond the first set of concessions for New Zealand imports",
-                "why": "They would show which other goods get lower duties under the agreement.",
+                "what": "Operational rules for the two new Temporary Employment Entry visa categories",
+                "why": "The rules would show how many Indians could use the new routes, and in which occupations.",
                 "when": "",
-                "where": ""
+                "where": "Immigration New Zealand"
+              },
+              {
+                "what": "Bilateral trade figures showing progress towards the ₹35,000 crore target",
+                "why": "These figures would show whether the tariff cuts are actually increasing trade between the two countries.",
+                "when": "by 2030",
+                "where": "Ministry of Commerce and Industry"
               }
             ],
             "context": [
-              "Free trade agreements lower or remove customs duties on agreed goods between the partner countries, usually in stages, in return for access to the partner's market. India has been pursuing such deals to widen its export markets."
+              "A free trade agreement lets partner countries cut or remove customs duties on each other's goods, often in phases, and India puts its concessions into effect through customs notifications.",
+              "New Zealand is a small market compared with India's main trading partners, so the agreement matters more for particular sectors than for India's overall trade balance.",
+              "India has traditionally been cautious about opening sensitive farm sectors, such as dairy, in trade agreements in order to protect small farmers."
             ],
             "terms": [
               {
+                "term": "FTA",
+                "meaning": "Free trade agreement: a treaty under which two countries cut or remove customs duties on each other's goods."
+              },
+              {
+                "term": "Temporary Employment Entry (TEE)",
+                "meaning": "New visa categories under the agreement that allow eligible Indian nationals to enter New Zealand temporarily for work."
+              },
+              {
                 "term": "preferential rates",
-                "meaning": "Preferential rates are customs duties set lower for goods from a trade partner than the duties charged on the same goods from other countries."
+                "meaning": "Lower customs duties that apply only to goods from a trade-agreement partner, rather than the standard rates charged on imports from other countries."
               }
             ],
             "frameworks": {
               "trade_flow": {
-                "good": "Sheep meat and kiwi fruit",
+                "good": "Goods traded between India and New Zealand, including Indian textiles, leather and pharmaceuticals, and New Zealand…",
                 "actors": [
                   {
-                    "country": "New Zealand",
+                    "country": "India",
                     "role": "exporter",
-                    "is_india": false
+                    "is_india": true
                   },
                   {
-                    "country": "India",
+                    "country": "New Zealand",
                     "role": "importer",
-                    "is_india": true
+                    "is_india": false
                   }
                 ],
                 "change": {
-                  "type": "tariff",
+                  "type": "deal",
                   "effective": "2026-10-20"
                 },
                 "india_position": {
-                  "role": "competing_buyer",
-                  "note": "India is the buyer of these New Zealand goods, so lower duties could reduce costs for Indian importers. The reports do not say how domestic producers of competing products would be affected."
+                  "role": "supplier",
+                  "note": "India supplies goods such as textiles, leather and pharmaceuticals to New Zealand, and these now enter duty-free, which could help Indian sellers. India also cuts its own duties on some New Zealand goods, which could increase competition for some domestic producers."
                 },
-                "volumes": []
+                "volumes": [
+                  {
+                    "value": 35000,
+                    "unit": "₹ crore (bilateral trade target)",
+                    "period": "by 2030",
+                    "from": "Mint"
+                  }
+                ]
+              },
+              "winners_losers": {
+                "groups": [
+                  {
+                    "group": "MSME exporters",
+                    "direction": "gain",
+                    "directness": "direct",
+                    "mechanism": "Zero tariffs on all Indian exports to New Zealand from October 20 make textiles and leather goods, sectors with many small firms, more price-competitive in that market."
+                  },
+                  {
+                    "group": "Large exporters",
+                    "direction": "gain",
+                    "directness": "direct",
+                    "mechanism": "Pharmaceutical exports, which Mint names among the likely gainers, now enter New Zealand duty-free. This could improve their competitiveness against suppliers from other countries."
+                  },
+                  {
+                    "group": "Gulf & overseas workers and families",
+                    "direction": "gain",
+                    "directness": "direct",
+                    "mechanism": "The Hindu reports two new Temporary Employment Entry visa categories for Indian nationals, which could widen legal opportunities to work in New Zealand."
+                  },
+                  {
+                    "group": "Farmers",
+                    "direction": "mixed",
+                    "directness": "indirect",
+                    "mechanism": "Agricultural exports are expected to gain duty-free access, but India's zero duty on sheep meat and 15% duty on kiwi fruit could expose some domestic producers to more import competition."
+                  },
+                  {
+                    "group": "Food shoppers",
+                    "direction": "unclear",
+                    "directness": "indirect",
+                    "mechanism": "Lower Indian duties on New Zealand sheep meat and kiwi fruit could reduce import costs, but whether retail prices fall depends on importers passing the savings on."
+                  },
+                  {
+                    "group": "Government finances",
+                    "direction": "lose",
+                    "directness": "indirect",
+                    "mechanism": "Duty concessions on New Zealand imports could reduce customs revenue collected on those goods, although the reports give no estimate of the amount."
+                  }
+                ],
+                "not_affected": "Fuel and LPG users are not affected, because the reports describe no concessions on energy products under the agreement."
               }
             }
           },
@@ -6094,67 +6571,77 @@
           "date": "2026-10-18T11:25:28.000Z",
           "relevance": "medium",
           "image": "https://www.livemint.com/lm-img/img/2026/10/18/1600x900/logo/YES-BANK-FUNDRAISE--0_1755941895958_1755941913436_1792322591557_eB7a_5524a370-0883-48c7-8e26-d58158247105_NwOa.JPG",
-          "why": "The Supreme Court's refusal to allow Yes Bank's ₹8,415 crore AT-1 write-off could hit the bank's earnings, while direct household reach looks limited.",
+          "why": "The Supreme Court upheld the setting aside of Yes Bank's 2020 write-off of ₹8,415 crore of AT-1 bonds. The bank says it would have reported a ₹5,217 crore net loss for the September quarter had it recognised the impact.",
           "implications": [
-            "The bank says it would have reported a ₹5,217 crore net loss for the September quarter had it recognised the impact.",
-            "Yes Bank's reported earnings could come under pressure as the ruling is accounted for.",
-            "The reports give no sign of a direct effect on depositors or borrowers."
+            "If the write-off cannot stand, the bank may have to recognise its obligation to the affected bondholders, which would reduce its reported profit and could weigh on shareholders.",
+            "Investors in other perpetual bank bonds may watch how the ruling treats a write-off, because it could influence how the risks of such bonds are judged."
           ],
           "analysis": {
-            "v": 2,
-            "at": "2026-10-18T16:02:03.756Z",
+            "v": 3,
+            "at": "2026-10-20T19:38:45.392Z",
             "tier": "quick",
             "primary": "impact_chain",
             "complement": null,
             "features": [],
             "exposure": {
               "level": "medium",
-              "reason": "Affects one bank's earnings; no household essential is directly reported."
+              "reason": "The effect reaches one bank's earnings, its shareholders and holders of its AT-1 bonds. The reports describe no direct channel to household essentials, so the exposure is limited to one institution."
             },
             "horizon": {
               "value": "weeks",
-              "reason": "Bank has already quantified the September-quarter impact."
+              "reason": "The earnings effect relates to the September quarter, so the timing depends on when the bank reports its results and how it settles the claims."
             },
             "confidence": {
-              "level": "low",
-              "reason": "Single outlet; the figures come from the bank's own statement."
+              "level": "medium",
+              "reason": "This rests on one Mint report that relies on the bank's own statement; how the bank will account for the ruling is not confirmed by other outlets."
             },
             "outlets": 1,
             "affected": [
               {
                 "group": "Depositors & savers",
-                "direction": "unclear",
-                "what": "bank's earnings and balance sheet",
+                "direction": "up",
+                "what": "bondholder recoveries",
+                "effect": "Savers who held the written-off AT-1 bonds could see their claims revived, since the court upheld the decision setting aside the write-off.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "How Yes Bank accounts for the AT-1 ruling in its reported results",
+                "what": "Yes Bank's disclosure on how it will account for the ruling in its September quarter results",
+                "why": "It would show whether the ₹5,217 crore loss the bank describes is actually reported.",
                 "when": "",
-                "where": "Yes Bank stock exchange filings"
+                "where": "Yes Bank filings on the stock exchanges"
+              }
+            ],
+            "context": [
+              "Banks issue AT-1 bonds to meet capital requirements. The bonds pay higher interest than ordinary bonds in return for the risk that they can be written down under conditions set when they are issued."
+            ],
+            "terms": [
+              {
+                "term": "AT-1 bonds",
+                "meaning": "Additional Tier 1 bonds are perpetual bonds issued by banks to count as capital, and they can be written down if specified conditions are triggered."
               }
             ],
             "frameworks": {
               "impact_chain": {
                 "chain": [
                   {
-                    "step": "Supreme Court upholds squashing",
-                    "detail": "The 2020 write-off of ₹8,415 crore in AT-1 bonds was overturned.",
+                    "step": "Supreme Court upholds ruling",
+                    "detail": "The Supreme Court upheld the squashing of Yes Bank's 2020 write-off of ₹8,415 crore of AT-1 bonds, so the write-off is overturned.",
                     "basis": "reported"
                   },
                   {
-                    "step": "Bank flags quarterly loss",
-                    "detail": "It says it would have posted a ₹5,217 crore net loss for September quarter.",
+                    "step": "Bank states earnings impact",
+                    "detail": "Yes Bank says it would have reported a net loss of ₹5,217 crore for the September quarter had it recognised the impact of the ruling.",
                     "basis": "reported"
                   },
                   {
-                    "step": "Earnings pressure may follow",
-                    "detail": "Yes Bank's reported earnings could be hit by up to ₹5,200 crore.",
+                    "step": "Investors and holders affected",
+                    "detail": "Shareholders could face weaker reported earnings, while bondholders could regain claims on the bank, depending on how the bank settles them.",
                     "basis": "inferred"
                   }
                 ],
-                "breaks_if": "The bank's recognition of the impact is limited, deferred or revised."
+                "breaks_if": "The effect would be limited if the bank does not have to recognise the full amount in its accounts, or if the claims are settled in a way that spreads the cost."
               }
             }
           },
@@ -6180,15 +6667,16 @@
           "date": "2026-10-18T06:59:46.000Z",
           "relevance": "medium",
           "image": "https://th-i.thgim.com/public/news/national/bkontk/article71599332.ece/alternates/LANDSCAPE_1200/iStock-471824724.jpg",
-          "why": "Indian refiners' fuel exports to Russia-sanctioning nations jumped 43% in September, with Jamnagar cargoes reaching EU ports despite the EU ban on Russian-crude fuel.",
+          "why": "Indian refiners' fuel shipments to countries that sanction Russia rose 43% in September from August, and Reliance's Jamnagar refinery supplied six of seven cargoes unloaded at EU ports despite the bloc's ban on fuel made from Russian crude.",
           "implications": [
-            "Refined fuel, a major Indian export, is flowing in larger volumes to Western markets that sanction Moscow.",
-            "Six of seven cargoes unloaded at EU ports came from Jamnagar, despite the EU ban on Russian crude-derived fuel.",
-            "This could draw EU scrutiny of Indian fuel shipments made while India imports Russian crude."
+            "Both outlets frame the surge against India's continued Russian crude imports, which places Indian refined fuel exports under scrutiny over whether Russian-origin oil is reaching Western markets.",
+            "Reliance's Jamnagar refinery accounts for nearly all of the cargoes unloaded at EU ports, so any questions about compliance with the European ban fall mainly on one company and one Gujarat site.",
+            "If European buyers or authorities demand stricter proof of crude origin, Indian refiners could face extra paperwork, separate handling of crude streams, or narrower access to the European fuel market.",
+            "Higher fuel sales to Western markets can raise refiners' export earnings, but those earnings may depend on how firmly sanctioning countries enforce their rules on fuel refined from Russian crude."
           ],
           "analysis": {
-            "v": 2,
-            "at": "2026-10-18T21:28:20.265Z",
+            "v": 3,
+            "at": "2026-10-20T19:38:45.392Z",
             "tier": "standard",
             "primary": "trade_flow",
             "complement": null,
@@ -6197,40 +6685,61 @@
             ],
             "exposure": {
               "level": "high",
-              "reason": "Refined fuel exports are a top Indian export."
+              "reason": "Refined fuel is among India's top exports and Russian crude is a major Indian import, so scrutiny of this trade reaches a central channel of India's energy trade."
             },
             "horizon": {
               "value": "months",
-              "reason": "Any EU enforcement response may take months."
+              "reason": "Any effect depends on how European buyers and regulators respond to monthly cargo flows, which typically plays out over several months rather than days."
             },
             "confidence": {
               "level": "medium",
-              "reason": "Two outlets agree; no official source is cited."
+              "reason": "Two outlets, The Hindu and Mint, report the same figures, but neither cites an on-record official source, and the origin of the crude in these cargoes is not confirmed."
             },
             "outlets": 2,
             "affected": [
               {
                 "group": "Large exporters",
                 "direction": "mixed",
-                "what": "Western fuel sales, EU scrutiny",
+                "what": "fuel export sales and scrutiny",
+                "effect": "Indian refiners, led by Reliance, shipped more fuel to sanctioning nations in September, but they face questions over the European Union's ban on fuel made from Russian crude.",
+                "basis": "reported"
+              },
+              {
+                "group": "Government finances",
+                "direction": "unclear",
+                "what": "export earnings and diplomacy",
+                "effect": "Fuel exports could add to India's foreign exchange earnings, but disputes with Western partners over crude origin may complicate trade relations.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "EU response to fuel cargoes from Indian refineries",
+                "what": "Statements by European Union authorities on fuel cargoes arriving from Indian refineries",
+                "why": "This would show whether the ban on fuel made from Russian crude is being applied to Indian shipments.",
                 "when": "",
-                "where": "European Union"
+                "where": "European Commission"
               },
               {
-                "what": "Next monthly data on Indian fuel exports to sanctioning nations",
+                "what": "Indian refiners' fuel export figures to sanctioning nations for October",
+                "why": "These figures would show whether the September rise was a one-month spike or a lasting shift in trade.",
                 "when": "",
                 "where": ""
               }
             ],
+            "context": [
+              "Since Western sanctions followed Russia's invasion of Ukraine, India has become one of the largest buyers of Russian crude, which has been sold at a discount to other grades.",
+              "Refined petroleum products such as diesel and jet fuel are among India's largest exports, and the Jamnagar complex in Gujarat is one of the biggest refining sites in the world.",
+              "The European Union has moved from banning direct imports of Russian oil to also restricting fuel refined from Russian crude in third countries, which puts the origin of the crude under closer examination."
+            ],
+            "terms": [
+              {
+                "term": "ban on fuel made from Russian crude",
+                "meaning": "A European Union rule that bars imports of refined fuels produced from Russian crude oil, even when the refining takes place in another country such as India."
+              }
+            ],
             "frameworks": {
               "trade_flow": {
-                "good": "Refined oil products",
+                "good": "Refined petroleum products (fuel)",
                 "actors": [
                   {
                     "country": "India",
@@ -6254,9 +6763,16 @@
                 },
                 "india_position": {
                   "role": "supplier",
-                  "note": "Indian refiners importing Russian crude supply fuel to sanctioning nations; EU bans Russian crude-derived fuel."
+                  "note": "India refines crude, including Russian crude, and exports fuel to Western nations that sanction Moscow. The rise could support refiners' sales, but it may expose them to European enforcement of the ban on fuel made from Russian crude."
                 },
-                "volumes": []
+                "volumes": [
+                  {
+                    "value": 43,
+                    "unit": "per cent rise in fuel exports to sanctioning nations",
+                    "period": "September 2026 versus August 2026",
+                    "from": "Mint"
+                  }
+                ]
               }
             }
           },
@@ -6517,104 +7033,6 @@
             }
           ],
           "thread": "t1hu7fbc"
-        },
-        {
-          "id": "sk2apyy",
-          "headline": "India-U.S. deal ‘finalised’, implementation after clarity on India’s competitive advantage, says Goyal",
-          "url": "https://www.thehindu.com/business/Economy/india-us-trade-pact-to-be-operationalised-once-india-gets-competitive-advantage-goyal/article71587473.ece",
-          "source": "thehindu",
-          "date": "2026-10-17T20:23:25.000Z",
-          "relevance": "medium",
-          "image": "https://th-i.thgim.com/public/incoming/5wiaer/article71587484.ece/alternates/LANDSCAPE_1200/PTI10_14_2026_000576B.jpg",
-          "why": "Goyal says the India-U.S. trade deal is in legal drafting, but implementation awaits clarity on India's competitive advantage, so timing and terms remain uncertain.",
-          "implications": [
-            "The Hindu reports Goyal saying the deal is in its final contours and legal drafting.",
-            "Ministers on both sides had recently signalled blocks, so finalisation could still be some time away."
-          ],
-          "analysis": {
-            "v": 2,
-            "at": "2026-10-18T04:50:29.150Z",
-            "tier": "quick",
-            "primary": "trade_flow",
-            "complement": null,
-            "features": [
-              "trade_flow",
-              "pending_outcome"
-            ],
-            "exposure": {
-              "level": "medium",
-              "reason": "One bilateral trade relationship; the reports give no goods or tariff details."
-            },
-            "horizon": {
-              "value": "months",
-              "reason": "Implementation depends on legal drafting and further clarity."
-            },
-            "confidence": {
-              "level": "low",
-              "reason": "Single outlet; Goyal's account conflicts with recent ministerial signals of blocks."
-            },
-            "outlets": 1,
-            "affected": [
-              {
-                "group": "Large exporters",
-                "direction": "unclear",
-                "what": "future U.S. trade terms",
-                "basis": "inferred"
-              },
-              {
-                "group": "MSME exporters",
-                "direction": "unclear",
-                "what": "future U.S. trade terms",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "Completion of legal drafting and any announcement on implementation of the India-U.S. deal",
-                "when": "",
-                "where": "Ministry of Commerce and Industry"
-              }
-            ],
-            "frameworks": {
-              "trade_flow": {
-                "good": "Goods covered by the India-U.S. deal (not specified in the r",
-                "actors": [
-                  {
-                    "country": "India",
-                    "role": "exporter",
-                    "is_india": true
-                  },
-                  {
-                    "country": "United States",
-                    "role": "importer",
-                    "is_india": false
-                  }
-                ],
-                "change": {
-                  "type": "deal",
-                  "effective": ""
-                },
-                "india_position": {
-                  "role": "supplier",
-                  "note": "India is a party to the deal; the report does not give the scope or direction of trade."
-                },
-                "volumes": []
-              }
-            }
-          },
-          "reports": [
-            {
-              "source": "thehindu",
-              "headline": "India-U.S. deal ‘finalised’, implementation after clarity on India’s competitive advantage, says Goyal",
-              "url": "https://www.thehindu.com/business/Economy/india-us-trade-pact-to-be-operationalised-once-india-gets-competitive-advantage-goyal/article71587473.ece",
-              "date": "2026-10-17T20:23:25.000Z",
-              "kind": "hard",
-              "summary": "Commerce Minister Piyush Goyal said that the deal was going through its final contours and the legal drafting. His comments come soon after Ministers on both sides indicated that talks were hitting blocks and that finalisation might be some time away",
-              "summaryV": 3,
-              "image": "https://th-i.thgim.com/public/incoming/5wiaer/article71587484.ece/alternates/LANDSCAPE_1200/PTI10_14_2026_000576B.jpg"
-            }
-          ],
-          "thread": "t1ka6u13"
         },
         {
           "id": "s1smc98",
@@ -12639,62 +13057,69 @@
           "date": "2026-10-18T03:41:37.000Z",
           "relevance": "medium",
           "image": "https://th-i.thgim.com/public/incoming/avg627/article71593144.ece/alternates/LANDSCAPE_1200/IMG_Edit_second-lea_G1JG_2_1_RTGGVV4M.jpg",
-          "why": "ISRO has completed a key test before Gaganyaan's first uncrewed mission, a step in India's human spaceflight programme. The report gives no direct effect on households or businesses.",
+          "why": "ISRO has completed key crew module and service module separation tests for Gaganyaan, India's human spaceflight programme. The Hindu reports that the tests validate system robustness and mission readiness ahead of the first uncrewed mission.",
           "implications": [
-            "The headline says the test comes before the first uncrewed mission, so the programme appears to be moving toward flight.",
-            "Test details, results and the mission date are not in the report, so effects on industry or jobs cannot be judged.",
-            "Any wider effect on the space supply chain or on public spending could be indirect and may take time."
+            "Successful separation tests lower technical risk before the uncrewed flight, although the reports do not give a launch date or say what further checks remain.",
+            "Progress on Gaganyaan mainly bears on India's space capability and public space spending, not on household costs in the near term."
           ],
           "analysis": {
-            "v": 2,
-            "at": "2026-10-18T04:51:17.411Z",
+            "v": 3,
+            "at": "2026-10-20T19:40:58.372Z",
             "tier": "quick",
             "primary": "impact_chain",
             "complement": null,
-            "features": [
-              "pending_outcome"
-            ],
+            "features": [],
             "exposure": {
               "level": "low",
-              "reason": "No mechanism reaches households, trade or travel in the report; it is a programme milestone."
+              "reason": "The report describes a technical test milestone with no stated link to prices, jobs, trade or travel, so any effect on households or businesses is indirect."
             },
             "horizon": {
               "value": "months",
-              "reason": "Mission date not reported; any effects on people are indirect."
+              "reason": "The reports give no launch date for the first uncrewed mission, so the next visible milestone is likely to come over the coming months."
             },
             "confidence": {
-              "level": "low",
-              "reason": "Single outlet, headline only, with no official source or test details."
+              "level": "medium",
+              "reason": "This rests on a single report from The Hindu describing ISRO's test results, and the report supplies no details on test conditions or the launch schedule."
             },
             "outlets": 1,
             "affected": [],
             "watch": [
               {
-                "what": "Announcement of the date for Gaganyaan's first uncrewed mission",
+                "what": "An announcement of the launch date for Gaganyaan's first uncrewed mission",
+                "why": "It would show whether the programme's schedule is holding after the separation tests.",
                 "when": "",
                 "where": "ISRO"
+              }
+            ],
+            "context": [
+              "Gaganyaan is ISRO's programme to fly Indian astronauts into space, and uncrewed test flights normally come before any crewed mission so that safety systems can be proven first."
+            ],
+            "terms": [
+              {
+                "term": "CM-SM separation",
+                "meaning": "The detaching of the crew module, where astronauts would sit, from the service module that supports it in flight, a step needed for the crew module to return."
               }
             ],
             "frameworks": {
               "impact_chain": {
                 "chain": [
                   {
-                    "step": "ISRO completes key test",
-                    "detail": "The Hindu reports the test was completed ahead of the first uncrewed mission.",
+                    "step": "ISRO completes separation tests",
+                    "detail": "The Hindu reports that ISRO completed key tests of the separation between the crew module and the service module for Gaganyaan's first uncrewed mission.",
                     "basis": "reported"
                   },
                   {
-                    "step": "Uncrewed mission comes next",
-                    "detail": "The test is described as preceding Gaganyaan's first uncrewed flight.",
+                    "step": "Readiness is validated",
+                    "detail": "The report says the tests validated system robustness and mission readiness, which shows the separation system performed as designed before the uncrewed flight.",
                     "basis": "reported"
                   },
                   {
-                    "step": "Programme readiness may improve",
-                    "detail": "A completed test could support progress toward later crewed flight, though results are not reported.",
+                    "step": "Uncrewed flight can move forward",
+                    "detail": "With this step cleared, the first uncrewed mission could proceed, and its results may then shape decisions on later crewed flights.",
                     "basis": "inferred"
                   }
                 ],
-                "breaks_if": "Later tests or reviews find problems that delay the uncrewed mission."
+                "breaks_if": "Later tests or the uncrewed flight reveal faults that force redesign or delay, in which case the programme's timeline could slip."
               }
             }
           },
@@ -18951,6 +19376,216 @@
       "name": "Policy & Governance",
       "items": [
         {
+          "id": "sb1wl0f",
+          "headline": "Why is Centre reviewing National Mineral Policy, 2019? Critical minerals, recycling on agenda",
+          "url": "https://www.livemint.com/news/india/why-is-centre-reviewing-national-mineral-policy-2019-critical-minerals-recycling-on-agenda-11792513290252.html",
+          "source": "mint",
+          "date": "2026-10-20T16:56:38.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2026/10/20/1600x900/logo/pexels-photo-15071423_1783926574754_1783926586550_2c3f5fb9-7b7c-48ff-be07-719bd61c4d2a_1792515144563_sawm_c438ded6-2ca9-4a39-83ce-6acface9446f_37iE.jpeg",
+          "why": "India's Ministry of Mines has decided to set up a nine-member committee to review the National Mineral Policy, 2019. Mint reports that critical minerals and recycling are on the agenda, given recent developments and changing needs in the sector.",
+          "implications": [
+            "A revised policy could change how the government approaches critical minerals and recycling, which would matter to mining companies and to manufacturers that depend on these materials.",
+            "The review is at an early stage, so it signals the direction of thinking rather than any change in rules for miners or users of minerals."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-20T19:35:02.256Z",
+            "tier": "quick",
+            "primary": "policy_tracker",
+            "complement": null,
+            "features": [
+              "policy_stage",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The channel is policy for one industry: mining and the manufacturers that use minerals. The reports describe only a review committee, not any change in rules, so household effects are indirect."
+            },
+            "horizon": {
+              "value": "years",
+              "reason": "The committee must first examine the policy, and any revised policy would follow only after that, so effects on industry are unlikely to appear soon."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single Mint report that does not name an official source, and the committee's members, mandate details and timeline are not given."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Manufacturing workers",
+                "direction": "unclear",
+                "what": "mineral supply policy",
+                "effect": "If the review changes policy on critical minerals and recycling, it could affect the supply of inputs for manufacturers, and through them jobs and costs in those industries.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "mineral import dependence",
+                "effect": "A policy that gives more weight to critical minerals and recycling could change how much India relies on imported minerals, which would affect traders in these materials.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Official notification of the committee's members, terms of reference and deadline for its report",
+                "why": "It would show how wide the review is and how quickly a revised policy could follow.",
+                "when": "",
+                "where": "Ministry of Mines"
+              }
+            ],
+            "context": [
+              "A national mineral policy sets the government's broad approach to exploring, mining and using minerals. Critical minerals, used in products such as batteries and electronics, matter because India imports many of them."
+            ],
+            "terms": [
+              {
+                "term": "critical minerals",
+                "meaning": "Minerals considered essential for the economy or strategic uses, such as batteries and electronics, and whose supply could be at risk."
+              }
+            ],
+            "frameworks": {
+              "policy_tracker": {
+                "instrument": {
+                  "name": "National Mineral Policy, 2019",
+                  "issuer": "Ministry of Mines",
+                  "jurisdiction": "India"
+                },
+                "stages": [
+                  {
+                    "stage": "in_force",
+                    "date": "2019",
+                    "status": "done"
+                  },
+                  {
+                    "stage": "under_review",
+                    "date": "",
+                    "status": "current"
+                  }
+                ],
+                "obligations": [
+                  {
+                    "who": "Nine-member committee to be constituted by the Ministry of Mines",
+                    "what": "The committee is to examine the existing policy in view of recent developments and the changing needs of the mineral sector.",
+                    "from": ""
+                  }
+                ],
+                "applies_to_india": "yes",
+                "india_note": "The policy guides mineral exploration and mining across India. A review that covers critical minerals and recycling could shape future rules for mining firms and for industries that use these minerals."
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "Why is Centre reviewing National Mineral Policy, 2019? Critical minerals, recycling on agenda",
+              "url": "https://www.livemint.com/news/india/why-is-centre-reviewing-national-mineral-policy-2019-critical-minerals-recycling-on-agenda-11792513290252.html",
+              "date": "2026-10-20T16:56:38.000Z",
+              "kind": "hard",
+              "summary": "The Ministry of Mines has decided to constitute a nine-member committee to examine the existing policy in view of recent developments and changing needs in the sector.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/10/20/1600x900/logo/pexels-photo-15071423_1783926574754_1783926586550_2c3f5fb9-7b7c-48ff-be07-719bd61c4d2a_1792515144563_sawm_c438ded6-2ca9-4a39-83ce-6acface9446f_37iE.jpeg"
+            }
+          ],
+          "thread": "t1yk5dtq"
+        },
+        {
+          "id": "s1vxfs3i",
+          "headline": "On ECINet platform, access for States can be switched off and on centrally: report",
+          "url": "https://www.thehindu.com/news/national/on-ecinet-platform-access-for-states-can-be-switched-off-and-on-centrally-report/article71605004.ece",
+          "source": "thehindu",
+          "date": "2026-10-20T16:26:02.000Z",
+          "relevance": "medium",
+          "image": "https://th-i.thgim.com/public/incoming/iv8b8f/article71605252.ece/alternates/LANDSCAPE_1200/20260122239L.jpg",
+          "why": "The Hindu reports that States' access to the Election Commission's ECINet platform can be switched off and on centrally, amid objections from Election Commissioners Sukhbir Singh Sandhu and Vivek Joshi to centralising the platform and the electoral roll database.",
+          "implications": [
+            "If the central authority can restrict States' access, State election officials who work on voter lists could depend on central permission to use the system.",
+            "The objections from two of the Election Commissioners suggest an internal disagreement over how much control over electoral data should sit at the centre."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-20T19:35:02.256Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "low",
+              "reason": "The report describes control over election data systems, with no direct channel to household costs, jobs or travel. Any effect would reach voters indirectly, through how electoral rolls are managed."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "The report gives no deadline, and any effect on electoral roll management would depend on how the dispute is resolved and on upcoming election work."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single report carried by The Hindu; the central claim about switching access off and on is unconfirmed by an on-record Election Commission statement."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "A named state or region",
+                "direction": "unclear",
+                "what": "State access to election data",
+                "effect": "State election machinery could find its access to the platform and roll database controlled centrally, though the report does not say whether access has actually been restricted.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Any Election Commission statement on who controls State access to ECINet and the electoral roll database",
+                "why": "It would clarify whether central switch-off powers exist and how the objections from the two Commissioners are addressed.",
+                "when": "",
+                "where": "Election Commission of India"
+              }
+            ],
+            "context": [
+              "Electoral rolls are the lists of registered voters on which elections are conducted. Questions about who controls and can alter such data matter for public trust in how elections are run."
+            ],
+            "terms": [
+              {
+                "term": "ECINet",
+                "meaning": "ECINet is an Election Commission platform that, according to the report, is being used to centralise the electoral roll database and gives States access."
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Central switch-off reported",
+                    "detail": "The Hindu reports that State access to ECINet can be switched off and on centrally, which places control of the platform with the central authority.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Commissioners object to centralisation",
+                    "detail": "Election Commissioners Sukhbir Singh Sandhu and Vivek Joshi have objected to the centralisation of ECINet and the electoral roll database, which gives the report its significance.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "State role in roll work may be affected",
+                    "detail": "State election officials could depend on central permission to work with voter data, which may raise questions about independence and oversight of electoral rolls.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The concern would not reach States if the Election Commission clarifies that central switch-off powers will not be used or adds safeguards guaranteeing State access."
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "thehindu",
+              "headline": "On ECINet platform, access for States can be switched off and on centrally: report",
+              "url": "https://www.thehindu.com/news/national/on-ecinet-platform-access-for-states-can-be-switched-off-and-on-centrally-report/article71605004.ece",
+              "date": "2026-10-20T16:26:02.000Z",
+              "kind": "hard",
+              "summary": "The report assumes significance in view of objections raised by Election Commissioners Sukhbir Singh Sandhu and Vivek Joshi over the centralisation of ECINet and the electoral roll database",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/incoming/iv8b8f/article71605252.ece/alternates/LANDSCAPE_1200/20260122239L.jpg"
+            }
+          ],
+          "thread": "t14fyeji"
+        },
+        {
           "id": "svktz9g",
           "headline": "CPI(M) seeks President’s intervention to ensure withdrawal of Census Rule amendments",
           "url": "https://www.thehindu.com/news/national/cpim-seeks-presidents-intervention-to-ensure-withdrawal-of-census-rule-amendments/article71604439.ece",
@@ -20301,75 +20936,84 @@
           "date": "2026-10-18T10:47:48.000Z",
           "relevance": "medium",
           "image": "https://th-i.thgim.com/public/incoming/mt9cvl/article71593975.ece/alternates/LANDSCAPE_1200/ALL%20INDIA%20KISAN%20SABHA%2012.JPG",
-          "why": "SKM plans a Delhi march on October 23 and simultaneous local protests, which could raise farmer-led pressure on authorities over its anti-CEC demand.",
+          "why": "Samyukta Kisan Morcha (SKM) leader Ashok Dhawale says farmers will march to Delhi on October 23 in an anti-CEC protest. Protests will be held at the same time at district, taluk and block headquarters.",
           "implications": [
-            "Farmer groups plan protests at district, taluk and block headquarters, so action could be seen well beyond Delhi.",
-            "The report does not detail the demand or any official response, so the outcome is unclear.",
-            "Movement around Delhi on the march day could be affected, though the report does not say so."
+            "Protests at district, taluk and block headquarters at the same time mean the action is planned across many regions, not only in Delhi.",
+            "A march to the capital could require traffic and security arrangements around Delhi, and it adds public pressure on authorities over the demand."
           ],
           "analysis": {
-            "v": 2,
-            "at": "2026-10-18T11:28:15.963Z",
+            "v": 3,
+            "at": "2026-10-20T19:38:45.392Z",
             "tier": "quick",
             "primary": "impact_chain",
             "complement": null,
-            "features": [
-              "pending_outcome"
-            ],
+            "features": [],
             "exposure": {
               "level": "low",
-              "reason": "Report describes a protest plan only; no mechanism affecting prices, trade or travel is stated."
+              "reason": "The report describes a planned protest and does not set out any direct channel to prices, incomes or services. Any local travel disruption around Delhi is possible but not reported."
             },
             "horizon": {
               "value": "now",
-              "reason": "March is planned for October 23, five days after the report."
+              "reason": "The march is set for October 23, within a week of the report dated October 18."
             },
             "confidence": {
               "level": "low",
-              "reason": "Single outlet; plan announced by a party leader, with no official response."
+              "reason": "This rests on a single The Hindu report quoting an organiser's announcement, and the report does not spell out the demand, so what the protest seeks is unconfirmed."
             },
             "outlets": 1,
             "affected": [
               {
                 "group": "Farmers",
                 "direction": "unclear",
-                "what": "protest mobilisation over anti-CEC demand",
+                "what": "protest mobilisation",
+                "effect": "Farmers affiliated with SKM are being called to march to Delhi and to protest at local headquarters, in support of a demand the report does not detail.",
                 "basis": "reported"
               },
               {
                 "group": "A named state or region",
                 "direction": "unclear",
-                "what": "Delhi local movement on march day",
+                "what": "Delhi traffic and security",
+                "effect": "Delhi could see road disruption and added security arrangements on the day of the march if large numbers arrive.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "Farmers' march to Delhi and simultaneous protests at district, taluk and block headquarters",
+                "what": "Whether the farmers' march to Delhi goes ahead on the announced day",
+                "why": "It would show how large the mobilisation is and how authorities respond.",
                 "when": "2026-10-23",
-                "where": "SKM"
+                "where": ""
+              }
+            ],
+            "context": [
+              "Farmer unions in India have often combined a march to Delhi with protests at local administrative offices, to press demands on the central government and to show support across regions."
+            ],
+            "terms": [
+              {
+                "term": "SKM",
+                "meaning": "Samyukta Kisan Morcha is an umbrella group of farmers' organisations that coordinates protests and demands on farm and related policy."
               }
             ],
             "frameworks": {
               "impact_chain": {
                 "chain": [
                   {
-                    "step": "SKM announces Delhi march",
-                    "detail": "SKM leader Ashok Dhawale says farmers will march to Delhi on October 23.",
+                    "step": "SKM announces the march",
+                    "detail": "SKM leader Ashok Dhawale says farmers will march to Delhi on October 23 in an anti-CEC protest.",
                     "basis": "reported"
                   },
                   {
-                    "step": "Local protests held simultaneously",
-                    "detail": "Protests planned at all district, taluk and block headquarters in support of the demand.",
+                    "step": "Protests planned at local offices",
+                    "detail": "Farmers will hold protests at the same time at all district, taluk and block headquarters in support of the demand, which spreads the action across regions.",
                     "basis": "reported"
                   },
                   {
-                    "step": "Wider visibility for the demand",
-                    "detail": "Mobilisation across many locations could raise the profile of the anti-CEC demand.",
+                    "step": "Pressure on authorities",
+                    "detail": "The combined march and local protests could disrupt movement in and around Delhi and increase pressure on authorities to respond to the demand.",
                     "basis": "inferred"
                   }
                 ],
-                "breaks_if": "The march is called off or the demand is met before October 23."
+                "breaks_if": "The effect would fade if the march is called off or restricted, or if the demand is addressed before October 23."
               }
             }
           },
@@ -20395,67 +21039,77 @@
           "date": "2026-10-18T10:32:52.000Z",
           "relevance": "medium",
           "image": "https://www.livemint.com/lm-img/img/2026/10/18/1600x900/logo/21689_1792253523658_qtY3_1792253527919_WMl4_349adbef-4ce8-410b-8025-a4e5f2bc6497_YG7R_1792318437118_qX0M_52e7fffd-84d0-43a4-bfce-2959eceeab3b_Err6.jpg",
-          "why": "FSSAI notices to Nestlé India and HUL over nutrition supplement claims signal tighter scrutiny of food labelling.",
+          "why": "India's food regulator has issued notices to Nestle India and Hindustan Unilever over allegedly misleading claims on nutrition supplements, including HUL's 'happy birth weight' claim. Mint reports that this extends a nationwide food safety crackdown.",
           "implications": [
-            "The regulator alleges misleading claims on nutrition supplements, including HUL's 'happy birth weight' claim.",
-            "The action extends FSSAI's nationwide safety crackdown, so other food companies could face closer labelling checks.",
-            "Shoppers could see changes to product claims if the companies revise their labels."
+            "The notices put the claims printed on supplement packs and used in marketing under formal review, so the companies may have to justify them with evidence or change how products are described.",
+            "Because two of the largest packaged food and consumer goods companies are named, other makers of fortified or supplement products could face closer checks on what their labels promise."
           ],
           "analysis": {
-            "v": 2,
-            "at": "2026-10-18T11:27:52.389Z",
+            "v": 3,
+            "at": "2026-10-20T19:40:58.371Z",
             "tier": "quick",
             "primary": "impact_chain",
             "complement": null,
             "features": [],
             "exposure": {
               "level": "medium",
-              "reason": "Affects the packaged food and nutrition industry through labelling compliance obligations."
+              "reason": "The effect reaches India through one industry, packaged nutrition products, and through the labelling rules its companies must follow. The reports do not link it to a staple food or to prices."
             },
             "horizon": {
-              "value": "weeks",
-              "reason": "Notices typically prompt company responses soon; no deadline reported."
+              "value": "months",
+              "reason": "Regulatory notices usually lead to company replies and a later decision, so any change to labels or claims would take some time to appear."
             },
             "confidence": {
               "level": "low",
-              "reason": "Single outlet; no on-record official quoted in the summary."
+              "reason": "This rests on a single Mint report with no on-record regulator statement, and the exact wording and grounds of the notices are not confirmed."
             },
             "outlets": 1,
             "affected": [
               {
                 "group": "Food shoppers",
                 "direction": "unclear",
-                "what": "product label claims",
+                "what": "claims on supplement labels",
+                "effect": "Shoppers who buy nutrition supplements may see changed or withdrawn health claims on packs and advertising if the regulator is not satisfied with the companies' replies.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "Nestlé India and HUL responses to the FSSAI notices",
+                "what": "Replies from Nestle India and Hindustan Unilever, or any follow-up order from the regulator on the disputed claims",
+                "why": "It would show whether the claims are withdrawn, changed or defended, and whether the crackdown widens to other brands.",
                 "when": "",
-                "where": "FSSAI"
+                "where": "Food Safety and Standards Authority of India"
+              }
+            ],
+            "context": [
+              "The Food Safety and Standards Authority of India sets the rules for food labelling and advertising claims. It usually sends a notice asking a company to explain before it decides on any further action."
+            ],
+            "terms": [
+              {
+                "term": "FSSAI",
+                "meaning": "The Food Safety and Standards Authority of India, the national regulator that sets and enforces standards for food safety, labelling and claims."
               }
             ],
             "frameworks": {
               "impact_chain": {
                 "chain": [
                   {
-                    "step": "FSSAI issues notices",
-                    "detail": "Nestlé India and HUL are accused of misleading nutrition supplement claims.",
+                    "step": "Regulator issues notices to two companies",
+                    "detail": "The Food Safety and Standards Authority of India has issued notices to Nestle India and Hindustan Unilever for allegedly making misleading claims about nutrition supplements, including HUL's 'happy birth weight' claim.",
                     "basis": "reported"
                   },
                   {
-                    "step": "Crackdown extends",
-                    "detail": "The action extends the regulator's nationwide safety crackdown.",
+                    "step": "Part of a wider crackdown",
+                    "detail": "Mint reports that the notices extend the regulator's nationwide food safety crackdown, so they form part of a broader push rather than a single isolated case.",
                     "basis": "reported"
                   },
                   {
-                    "step": "Wider label scrutiny possible",
-                    "detail": "Other brands' supplement claims may face closer checks.",
+                    "step": "Labels and claims may change",
+                    "detail": "The companies may need to defend their claims, and could be asked to change packaging or advertising. Other brands of supplements could then face closer scrutiny of their claims.",
                     "basis": "inferred"
                   }
                 ],
-                "breaks_if": "Companies' replies satisfy FSSAI and the notices are closed without wider action."
+                "breaks_if": "The companies satisfy the regulator that their claims are supported, or the notices are withdrawn, in which case labels and marketing may not change."
               }
             }
           },
@@ -20481,15 +21135,14 @@
           "date": "2026-10-18T10:13:24.000Z",
           "relevance": "medium",
           "image": "https://th-i.thgim.com/public/incoming/4t327q/article70621377.ece/alternates/LANDSCAPE_1200/INDEX_SUPREME_COURT_02_08_7.jpg",
-          "why": "The Supreme Court is pressing States and UTs to answer the Centre on menstrual hygiene gaps, so delays could slow nationwide fixes.",
+          "why": "The Supreme Court has expressed displeasure that States and Union Territories have not responded to the Centre on menstrual hygiene, despite its 1 September direction to report on the deficiencies it highlighted.",
           "implications": [
-            "The Court is displeased that States and UTs have not responded to the Centre on deficiencies it highlighted.",
-            "Authorities could face further directions if they miss the next hearing's reporting requirement.",
-            "Any improvements in menstrual hygiene provision would depend on States and UTs acting on the Court's findings."
+            "Delays in state responses can leave the Centre without a full picture of gaps in menstrual hygiene provision, which may slow any national fix that depends on state information.",
+            "The Bench's displeasure suggests States and Union Territories could face closer court scrutiny if they again fail to report by the next hearing."
           ],
           "analysis": {
-            "v": 2,
-            "at": "2026-10-18T11:27:52.389Z",
+            "v": 3,
+            "at": "2026-10-20T19:40:58.371Z",
             "tier": "quick",
             "primary": "impact_chain",
             "complement": null,
@@ -20498,52 +21151,63 @@
             ],
             "exposure": {
               "level": "low",
-              "reason": "Court process on a welfare issue; the report describes no direct price, trade or safety mechanism."
+              "reason": "The reports describe only a court process of states reporting to the Centre. They name no change in facilities, spending or prices that would directly reach households yet."
             },
             "horizon": {
               "value": "months",
-              "reason": "Depends on next hearing and state follow-up; no date reported."
+              "reason": "The next effect depends on the next hearing date, which the report does not give, and on how long States take to compile and file their responses."
             },
             "confidence": {
               "level": "medium",
-              "reason": "Single outlet, but it reports the Bench's own on-record remarks."
+              "reason": "This rests on one report from The Hindu describing the Bench's remarks in court, and the specific deficiencies and the next hearing date are not stated in the report."
             },
             "outlets": 1,
             "affected": [
               {
                 "group": "A named state or region",
                 "direction": "unclear",
-                "what": "compliance with Court directions",
+                "what": "state reporting duties to the court",
+                "effect": "States and Union Territories that have not replied to the Centre are expected to report on the deficiencies the Court highlighted by the next hearing.",
                 "basis": "reported"
               }
             ],
             "watch": [
               {
-                "what": "States and UTs filing reports on deficiencies at the next hearing",
-                "when": "",
+                "what": "The next Supreme Court hearing, and whether States and Union Territories file their reports on the deficiencies",
+                "why": "It would show whether the court's pressure produces responses and any concrete steps on menstrual hygiene.",
+                "when": "next date of hearing",
                 "where": "Supreme Court of India"
+              }
+            ],
+            "context": [
+              "In public-interest cases the Supreme Court can direct governments to act and report back. Health and sanitation services are largely delivered by States, so national schemes depend on their cooperation."
+            ],
+            "terms": [
+              {
+                "term": "UTs",
+                "meaning": "Union Territories, regions of India that are administered directly or partly by the central government rather than as full States."
               }
             ],
             "frameworks": {
               "impact_chain": {
                 "chain": [
                   {
-                    "step": "Court directed States and UTs",
-                    "detail": "On September 1 it told them to consider the deficiencies and report by the next hearing.",
+                    "step": "Court voices displeasure",
+                    "detail": "The Supreme Court Bench said it was displeased that States and Union Territories had not responded to the Centre on menstrual hygiene.",
                     "basis": "reported"
                   },
                   {
-                    "step": "States and UTs did not respond",
-                    "detail": "The Bench expressed displeasure at the lack of response to the Centre.",
+                    "step": "Earlier direction went unanswered",
+                    "detail": "On 1 September the Bench had directed States and Union Territories to consider the deficiencies it highlighted and report by the next date of hearing.",
                     "basis": "reported"
                   },
                   {
-                    "step": "Court may press for compliance",
-                    "detail": "Further directions could follow, shaping how quickly hygiene gaps get addressed.",
+                    "step": "Action may be delayed",
+                    "detail": "Without state responses, the Centre may lack the information it needs, which could delay measures to address the gaps in menstrual hygiene provision.",
                     "basis": "inferred"
                   }
                 ],
-                "breaks_if": "States and UTs respond and report on the deficiencies before the next hearing."
+                "breaks_if": "States and Union Territories file complete reports before the next hearing, so that the Centre and the Court have the information they need to move ahead."
               }
             }
           },
@@ -20569,71 +21233,100 @@
           "date": "2026-10-17T04:31:02.000Z",
           "relevance": "medium",
           "image": "https://th-i.thgim.com/public/incoming/4yl2ws/article71564997.ece/alternates/LANDSCAPE_1200/20260922113L.jpg",
-          "why": "The Union Home Ministry has told all States to stop CJP supporters from moving towards Delhi, citing law and order concerns, which could affect Delhi-bound movement.",
+          "why": "Union Home Secretary Govind Mohan told States to stop CJP supporters from mobilising towards Delhi for an anti-CEC protest. A Delhi court later released CJP leader Abhijeet Dipke after he signed a peace bond.",
           "implications": [
-            "The Home Secretary has flagged grave law and order and public order implications of the proposed protest, according to The Hindu.",
-            "States may have to act on the directive, which could mean added policing or restrictions on movement toward Delhi.",
-            "The report gives no protest date or details of measures, so any effect on daily life remains uncertain."
+            "The directive asks State police to act before protesters reach Delhi, so people in States that supply protesters may face checks or restrictions on gatherings and travel.",
+            "Delhi Police has separately cleared a Congress rally at Ramlila Maidan on November 1, which shows that permission for political gatherings in the capital is being handled case by case."
           ],
           "analysis": {
-            "v": 2,
-            "at": "2026-10-17T04:44:50.174Z",
+            "v": 3,
+            "at": "2026-10-20T19:40:58.372Z",
             "tier": "quick",
-            "primary": "impact_chain",
+            "primary": "timeline",
             "complement": null,
             "features": [
+              "fast_moving",
               "pending_outcome"
             ],
             "exposure": {
               "level": "low",
-              "reason": "The report describes no mechanism reaching household essentials, trade or travel; effects are conditional."
+              "reason": "The reports describe policing and protest permissions, not any change in prices, jobs, trade or travel rules, so the direct channel to households and businesses is weak and limited to possible local disruption."
             },
-            "horizon": null,
+            "horizon": {
+              "value": "weeks",
+              "reason": "The Congress rally is set for November 1, and the timing of the CJP protest is not given in the reports."
+            },
             "confidence": {
               "level": "medium",
-              "reason": "Single outlet, but it cites an official communication from the Union Home Secretary."
+              "reason": "Both reports are from The Hindu, one citing a Home Secretary communication and the other an unnamed senior police officer, and the CJP protest date and aims are not stated."
             },
             "outlets": 1,
             "affected": [
               {
                 "group": "A named state or region",
                 "direction": "unclear",
-                "what": "Delhi-bound movement and security posture",
+                "what": "movement and policing around Delhi",
+                "effect": "Delhi and the States where protesters travel from may see tighter policing and restrictions on gatherings, which could affect local movement around protest dates.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "Further Home Ministry or State government orders on the proposed protest",
-                "when": "",
-                "where": "Ministry of Home Affairs"
+                "what": "The Congress rally at Ramlila Maidan in Delhi, for which Delhi Police issued a no-objection certificate",
+                "why": "It will show how the capital's police manage large political gatherings during this dispute.",
+                "when": "2026-11-01",
+                "where": "Delhi Police"
               },
               {
-                "what": "Any announced date or details of the CJP protest towards Delhi",
+                "what": "Whether the CJP protest towards Delhi goes ahead and how State police respond to the Home Ministry's directive",
+                "why": "It would show how far the Union directive is carried out by State governments.",
                 "when": "",
-                "where": ""
+                "where": "Ministry of Home Affairs"
+              }
+            ],
+            "context": [
+              "Law and order is largely a State subject in India, so the Union Home Ministry usually works through advisories to Chief Secretaries and police chiefs instead of policing directly. Rallies in Delhi normally need police permission."
+            ],
+            "terms": [
+              {
+                "term": "peace bond",
+                "meaning": "A written undertaking given to a court, in which a person promises to keep the peace and avoid disturbing public order, usually with a penalty if the promise is broken."
               }
             ],
             "frameworks": {
-              "impact_chain": {
-                "chain": [
+              "timeline": {
+                "entries": [
                   {
-                    "step": "MHA issues directive",
-                    "detail": "Home Secretary Govind Mohan wrote to Chief Secretaries and DGPs about the proposed protest.",
-                    "basis": "reported"
+                    "when": "October 17, 2026",
+                    "what": "Union Home Secretary Govind Mohan wrote to Chief Secretaries and Directors General of Police, flagging grave law and order and public order implications of the proposed protest and asking States to stop CJP supporters mobilising towards Delhi.",
+                    "actor": "Union Home Secretary Govind Mohan",
+                    "outlet": "The Hindu",
+                    "type": "action",
+                    "verification": "confirmed"
                   },
                   {
-                    "step": "Law and order concerns flagged",
-                    "detail": "The communication cites grave law and order and public order implications.",
-                    "basis": "reported"
+                    "when": "October 17, 2026",
+                    "what": "A senior Delhi Police officer said the force had permitted the Congress to hold a rally at Ramlila Maidan on November 1 and had issued a no-objection certificate for it.",
+                    "actor": "Delhi Police (unnamed senior officer)",
+                    "outlet": "The Hindu",
+                    "type": "claim",
+                    "verification": "claimed"
                   },
                   {
-                    "step": "States may restrict mobilisation",
-                    "detail": "States could use policing measures to stop supporters heading to Delhi.",
-                    "basis": "inferred"
+                    "when": "October 18, 2026",
+                    "what": "A Delhi court released CJP leader Abhijeet Dipke after he signed a peace bond.",
+                    "actor": "Delhi court",
+                    "outlet": "The Hindu",
+                    "type": "action",
+                    "verification": "confirmed"
                   }
                 ],
-                "breaks_if": "The protest is called off or States find no mobilisation toward Delhi."
+                "current_status": "The Home Ministry's directive to States is in place, Dipke has been released on a peace bond, and the Congress rally on November 1 has police permission. The reports do not say whether the CJP protest will proceed.",
+                "open_questions": [
+                  "On what date is the CJP protest towards Delhi planned to take place?",
+                  "Why was Abhijeet Dipke brought before a Delhi court before being released on a peace bond?",
+                  "How will State governments enforce the Home Ministry's direction on protesters travelling to Delhi?"
+                ]
               }
             }
           },
@@ -25120,16 +25813,16 @@
   ],
   "source": "BBC News & The Guardian & NPR & Al Jazeera & MercoPress & ABC News & The New York Times & CNBC & CBS News & DW & France 24 & Africanews & South China Morning Post & The Hindu & Mint",
   "lastRun": {
-    "analysed": 74,
-    "added": 8,
-    "merged": 5,
-    "rejected": 61,
+    "analysed": 51,
+    "added": 4,
+    "merged": 2,
+    "rejected": 45,
     "failedBatches": 0,
     "feeds": {
       "thehindu": {
         "feedsOk": 6,
         "feedsFailed": 0,
-        "items": 342
+        "items": 340
       },
       "mint": {
         "feedsOk": 6,
@@ -25138,18 +25831,18 @@
       }
     },
     "shareImages": {
-      "tried": 1,
-      "found": 1,
-      "summaries": 1
+      "tried": 0,
+      "found": 0,
+      "summaries": 0
     },
     "threads": {
-      "assigned": 8,
-      "created": 4,
+      "assigned": 4,
+      "created": 2,
       "failedBatches": 0
     },
     "summaries": {
-      "written": 0,
-      "due": 5
+      "written": 7,
+      "due": 7
     },
     "kinds": {
       "labelled": 0,
@@ -25157,10 +25850,9 @@
       "failedBatches": 0
     },
     "frames": {
-      "done": 0,
-      "waiting": 49,
-      "failedBatches": 0,
-      "budgetStopped": true
+      "done": 12,
+      "waiting": 29,
+      "failedBatches": 0
     },
     "stats": {
       "searched": 0,
@@ -25177,28 +25869,35 @@
       "filter": {
         "model": "claude-haiku-5-5",
         "calls": 6,
-        "inputTokens": 27223,
-        "outputTokens": 11159,
-        "cost": 0.0084
+        "inputTokens": 28973,
+        "outputTokens": 11138,
+        "cost": 0.0085
       },
       "analysis_quick": {
         "model": "claude-sonnet-5-5",
+        "calls": 5,
+        "inputTokens": 14790,
+        "outputTokens": 23927,
+        "cost": 0.2688
+      },
+      "analysis": {
+        "model": "claude-opus-5-5",
         "calls": 3,
-        "inputTokens": 8904,
-        "outputTokens": 12366,
-        "cost": 0.1415
+        "inputTokens": 11675,
+        "outputTokens": 22828,
+        "cost": 0.5033
       },
       "threads": {
         "model": "claude-sonnet-5-5",
-        "calls": 1,
-        "inputTokens": 10414,
-        "outputTokens": 230,
-        "cost": 0.0231
+        "calls": 8,
+        "inputTokens": 14156,
+        "outputTokens": 2221,
+        "cost": 0.0507
       }
     },
     "spend": {
-      "thisDesk": 0.1729,
-      "today": 3.925,
+      "thisDesk": 0.8311,
+      "today": 1.932,
       "cap": 6
     }
   },
