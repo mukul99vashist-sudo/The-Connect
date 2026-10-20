@@ -1373,7 +1373,6 @@ function renderFramework(it){
   if(a.watch&&a.watch.length){ var w=sec("What to watch"), wl=el("ul","fw-watch"); a.watch.forEach(function(x){ var li=el("li"); li.appendChild(el("span","when",x.when||"Next")); var t=el("span",null,x.what); if(x.why) t.appendChild(el("span","why",x.why)); if(x.where) t.appendChild(el("em",null," · Check: "+x.where)); li.appendChild(t); wl.appendChild(li); }); w.appendChild(wl); b.appendChild(w); }
   b.appendChild(el("p","fw-foot disc","Written by AI from the reports listed below. Figures are shown only when they appear in those reports"+(a.context&&a.context.length?"; Background is general context and adds no figures":"")+"."));
   b.appendChild(el("p","fw-foot disc","Nothing here is financial or investment advice."));
-  var hw=el("button","sr-link fw-how","How we analyse every story →"); hw.type="button"; hw.addEventListener("click",function(){ $("sheet").close(); openAccount("method"); }); b.appendChild(hw);
   return b;
 }
 /* ---------- Statistics layer: official figures, each linked to the page it was matched against ---------- */
@@ -2155,7 +2154,7 @@ function toggleRow(label, help, on, onChange){
 function setRow(label, help, control){ var r=el("div","set-row"), t=el("span","set-txt"); t.appendChild(el("b",null,label)); if(help) t.appendChild(el("small",null,help)); r.appendChild(t); r.appendChild(control); return r; }
 function soon(){ return el("span","soon","Coming soon"); }
 
-var ACCT_TABS=[["account","Account"],["saved","Saved"],["settings","Settings"],["plan","Plan & payment"],["method","How we analyse"],["help","Help & about"]];
+var ACCT_TABS=[["account","Account"],["saved","Saved"],["settings","Settings"],["plan","Plan & payment"],["help","Help & about"]];
 var ACCT_ICONS={
   account:'<circle cx="12" cy="8.5" r="4"/><path d="M4.5 20.5c1.2-3.8 4.2-5.8 7.5-5.8s6.3 2 7.5 5.8"/>',
   saved:'<path d="M6.5 3.5h11v17l-5.5-3.8-5.5 3.8z"/>',
@@ -2177,7 +2176,7 @@ function renderAccount(){
     if(x[0]==="saved" && saved.length) b.appendChild(el("span","ct",String(saved.length)));
     b.addEventListener("click",function(){ acctTab=x[0]; renderAccount(); }); nav.appendChild(b); });
   var h=el("h2","acct-h",(ACCT_TABS.filter(function(x){ return x[0]===acctTab; })[0]||[])[1]); h.id="acctTitle"; body.appendChild(h);
-  ({account:acctAccount, saved:acctSaved, settings:acctSettings, plan:acctPlan, method:acctMethod, help:acctHelp})[acctTab](body);
+  ({account:acctAccount, saved:acctSaved, settings:acctSettings, plan:acctPlan, help:acctHelp})[acctTab](body);
 }
 function acctAccount(body){
   var card=el("div","acct-card who"); card.appendChild(avatar("lg"));
@@ -2270,7 +2269,6 @@ function acctHelp(body){
    ["How are the gauges decided?","Exposure, timing and confidence follow fixed rules shown under the ⓘ next to each gauge. High confidence needs at least three outlets."],
    ["Is this financial advice?","No. The analysis explains how events reach people; it never recommends buying, selling or timing anything."]].forEach(function(q){
     var d=el("details","acct-faq"); d.appendChild(el("summary",null,q[0])); d.appendChild(el("p",null,q[1])); body.appendChild(d); });
-  var hm=el("button","sr-link","Read how we analyse every story →"); hm.type="button"; hm.addEventListener("click",function(){ acctTab="method"; renderAccount(); }); body.appendChild(hm);
   body.appendChild(el("p","disc","The analysis, gauges and implications are AI-generated, not reported fact, and may be wrong."));
 }
 /* ---------- "Ripple" story layout (trial): an edited story, not a stack of AI boxes ----------
@@ -2402,35 +2400,6 @@ function openRipple(e, d, body){
   if(typeof d.showModal==="function"){ if(!d.open) d.showModal(); } else d.setAttribute("open","");
   body.scrollTop=0; requestAnimationFrame(function(){ body.scrollTop=0; });
   try{ $("sheetClose").focus({preventScroll:true}); }catch(err){ $("sheetClose").focus(); }
-}
-/* "How we analyse": the method in plain words, built from the same rules the engine follows */
-function acctMethod(body){
-  body.appendChild(el("p","muted","Every story on The Connect goes through the same steps. The analysis is written by AI (Anthropic's Claude models) under fixed rules, and every figure is checked against its source. This page sets out those rules."));
-  function step(n, title, paras, list){ var s=el("section","acct-sec mstep"); var h=el("h3"); h.appendChild(el("span","mnum",String(n))); h.appendChild(document.createTextNode(title)); s.appendChild(h);
-    (paras||[]).forEach(function(p){ s.appendChild(el("p","muted",p)); });
-    if(list){ var ul=el("ul","mlist"); list.forEach(function(x){ var li=el("li"); if(Array.isArray(x)){ li.appendChild(el("b",null,x[0]+" ")); li.appendChild(document.createTextNode(x[1])); } else li.textContent=x; ul.appendChild(li); }); s.appendChild(ul); }
-    body.appendChild(s); }
-  var gl=(docs.global&&docs.global.sources)||[], dm=(docs.domestic&&docs.domestic.sources)||[];
-  // the other view's outlet list may not be loaded yet: fetch it and redraw this page once it arrives
-  ["global","domestic"].forEach(function(v){ if(!docs[v]) loadFrom(sourcesFor(VIEWS[v].data)).then(function(d){ docs[v]=d; if($("acct").open && acctTab==="method") renderAccount(); }).catch(function(){}); });
-  var byRegion={}; gl.forEach(function(x){ (byRegion[x.region]=byRegion[x.region]||[]).push(x.name); });
-  step(1,"Where the news comes from",["Two desks read different outlets, and each judges a story only from its own outlets, so the same event can get different verdicts on the two views."],
-    [["Global impact:", gl.length ? gl.length+" international outlets on six continents. "+Object.keys(byRegion).map(function(r){ return r+": "+byRegion[r].join(", "); }).join(". ")+"." : "international outlets on six continents."],
-     ["Inside India:", dm.length ? dm.map(function(x){ return x.name; }).join(" and ")+"." : "Indian national outlets."],
-     ["Freshness:", "the desks check their outlets several times a day; headlines older than 24 hours are not analysed."]]);
-  step(2,"What gets in",["A fast model reads every headline and keeps only those that plausibly affect India (Global impact) or are of national significance (Inside India). Opinion pieces, market tickers and daily price lists are left out. What was filtered out is listed at the bottom of each view, so the filter can be checked."]);
-  step(3,"One event, many reports",["When several outlets report the same event within four days, their reports are joined into one story. The number of outlets is shown on every story, and every outlet's report is linked."]);
-  step(4,"What kind of report it is",["Each report is labelled, because each kind is treated differently."],
-    [["Hard news:","full analysis."],["Breaking:","treated as an early report; effects stay conditional and confidence is at most medium."],["Investigative:","findings are attributed to the outlet that made them."],["Soft news and features:","kept as background, without implications."],["Opinion:","not used in the analysis."]]);
-  step(5,"How deep the analysis goes",["A story starts as a Quick read. It becomes Standard or In depth as more outlets report it, as more reports arrive and as it keeps running. In-depth stories get a second lens."]);
-  step(6,"The lens that fits the story",["Instead of one generic summary, each story is read through the lens that fits it, chosen by fixed rules from a set of eleven:"],
-    [["Impact chain:","how an event travels, step by step, to people in India."],["Disruption map:","a closed port, strait or plant, and what flows through it to India."],["Trade flow shift:","who buys and sells what, and where India sits."],["Policy & compliance tracker:","a rule's stage and who must do what."],["Release & decision decoder:","a data release or rate decision, figure by figure."],["Price pass-through ladder:","how a global price reaches what Indians pay."],["Winners & losers:","which groups gain or lose, and how."],["Conflicting accounts:","when outlets disagree, each version side by side."],["Timeline & attribution:","who said or did what, and when."],["Conflict escalation ladder:","where a conflict stands on a seven-step scale."],["Scenarios & signposts:","the paths an unresolved situation could take, and the signs to watch."]]);
-  step(7,"The three verdicts",["Each story gets three verdicts, each with its reason. The rules behind them are shown under the ⓘ next to each one."],
-    [["Exposure for India:","high when it touches a household essential (fuel, LPG, food staples, loan EMIs, deposit rates), a top import or export, or the safety and travel of Indians; medium for one industry, one bilateral relationship or a compliance duty; low when the link is indirect."],["When it is felt:","now (within a week), weeks (one to six weeks), months (two to twelve months) or years."],["Confidence:","high needs three or more outlets agreeing and an on-record official source, which is enforced in code; medium for two outlets, or one with an official source; low for a single outlet, anonymous sourcing or an unresolved conflict."]]);
-  step(8,"Numbers we can stand behind",["Official statistics come only from government agencies, central banks and international organisations. Each figure in a chart is checked automatically against the official page it comes from, and figures that cannot be found there are thrown away. A chart needs at least three checked figures."]);
-  step(9,"Rules the writing must follow",null,
-    [["Facts only from the reports:","no number, name or date that is not in them."],["Inferences are marked:","anything not stated in the reports is worded as a possibility and labelled."],["Background is labelled:","general context is kept apart from the reports and may not add figures; code removes any sentence that does."],["No advice:","the analysis explains how events reach people; it never recommends buying, selling or timing anything."],["Plain English:","complete sentences, abbreviations spelled out, technical terms explained."]]);
-  step(10,"What we are not",["We are not a substitute for the original reporting: every story links to each outlet's own report. The analysis is AI-generated and can be wrong; if something looks wrong, the reports linked in each story are the place to check."]);
 }
 /* Story sheet with the analysis and links to each outlet's report. */
 var sheetView="global";
