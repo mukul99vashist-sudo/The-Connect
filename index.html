@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="color-scheme" content="light">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>The Continent Connect</title>
+<title>The Connect</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <!-- Masthead font loads without holding up the page; the page shows in Georgia until it arrives -->
@@ -1058,7 +1058,7 @@ html[data-text="large"] #sheet .sheet{zoom:1.12}
     </div>
     <div class="mh-center">
       <p class="mh-kicker" id="sub">News that reaches India</p>
-      <h1 class="mh-brand"><a href="./" id="brandLink" title="Refresh The Continent Connect">The Continent <em>Connect</em></a></h1>
+      <h1 class="mh-brand"><a href="./" id="brandLink" title="Refresh The Connect">The <em>Connect</em></a></h1>
       <p class="mh-meta"><span id="today"></span><span class="sep" aria-hidden="true">·</span><span id="status" aria-live="polite"></span></p>
     </div>
     <div class="mh-right">
@@ -1781,15 +1781,15 @@ function reportForDate(it, iso, when){
 function sourceLine(ev){ return ev.source&&ev.source.url ? (ev.source.fromReport ? "Reported by "+ev.source.outlet+": " : "Official source: ")+ev.source.url : ""; }
 /* Calendar buttons */
 function gcalUrl(ev){
-  var end=isoPlus(ev.end||ev.date,1).replace(/-/g,""), details=[ev.why, ev.time?"Time: "+ev.time:"", sourceLine(ev), "The Continent Connect: "+siteHome()].filter(Boolean).join("\n\n");
+  var end=isoPlus(ev.end||ev.date,1).replace(/-/g,""), details=[ev.why, ev.time?"Time: "+ev.time:"", sourceLine(ev), "The Connect: "+siteHome()].filter(Boolean).join("\n\n");
   return "https://calendar.google.com/calendar/render?action=TEMPLATE&text="+encodeURIComponent(ev.title)+"&dates="+ev.date.replace(/-/g,"")+"/"+end+"&details="+encodeURIComponent(details);
 }
 function icsEsc(s){ return String(s||"").replace(/\\/g,"\\\\").replace(/;/g,"\\;").replace(/,/g,"\\,").replace(/\r?\n/g,"\\n"); }
 function icsFold(l){ var out=[], cur=""; for(var i=0;i<l.length;i++){ if(cur.length>=73){ out.push(cur); cur=" "; } cur+=l[i]; } out.push(cur); return out.join("\r\n"); }
 function icsText(ev){
   var stamp=new Date().toISOString().replace(/[-:]/g,"").replace(/\.\d+/,"");
-  var desc=[ev.why, ev.time?"Time: "+ev.time:"", sourceLine(ev), "The Continent Connect: "+siteHome()].filter(Boolean).join("\n\n");
-  return ["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//The Continent Connect//Dates to watch//EN","METHOD:PUBLISH","BEGIN:VEVENT","UID:"+ev.id+"@continent-connect","DTSTAMP:"+stamp,
+  var desc=[ev.why, ev.time?"Time: "+ev.time:"", sourceLine(ev), "The Connect: "+siteHome()].filter(Boolean).join("\n\n");
+  return ["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//The Connect//Dates to watch//EN","METHOD:PUBLISH","BEGIN:VEVENT","UID:"+ev.id+"@the-connect","DTSTAMP:"+stamp,
     "DTSTART;VALUE=DATE:"+ev.date.replace(/-/g,""),"DTEND;VALUE=DATE:"+isoPlus(ev.end||ev.date,1).replace(/-/g,""),"SUMMARY:"+icsEsc(ev.title),"DESCRIPTION:"+icsEsc(desc),
     "BEGIN:VALARM","ACTION:DISPLAY","DESCRIPTION:"+icsEsc(ev.title),"TRIGGER:-PT15H","END:VALARM","END:VEVENT","END:VCALENDAR"].map(icsFold).join("\r\n")+"\r\n";
 }
@@ -2253,7 +2253,7 @@ function acctPlan(body){
   var bh=el("section","acct-sec"); bh.appendChild(el("h3",null,"Billing history")); bh.appendChild(el("p","muted","No payments yet.")); body.appendChild(bh);
 }
 function acctHelp(body){
-  [["What is The Continent Connect?","News that reaches India, explained: each story comes with what it means for people and businesses here, how exposed India is, when the effect is likely to be felt, and official figures behind it."],
+  [["What is The Connect?","News that reaches India, explained: each story comes with what it means for people and businesses here, how exposed India is, when the effect is likely to be felt, and official figures behind it."],
    ["Where do the stories come from?","Global impact reads 13 international outlets on six continents; Inside India reads Indian outlets. Each story links to every outlet's own report."],
    ["How are the gauges decided?","Exposure, timing and confidence follow fixed rules shown under the ⓘ next to each gauge. High confidence needs at least three outlets."],
    ["Is this financial advice?","No. The analysis explains how events reach people; it never recommends buying, selling or timing anything."]].forEach(function(q){
@@ -2393,7 +2393,7 @@ function openRipple(e, d, body){
 }
 /* "How we analyse": the method in plain words, built from the same rules the engine follows */
 function acctMethod(body){
-  body.appendChild(el("p","muted","Every story on The Continent Connect goes through the same steps. The analysis is written by AI (Anthropic's Claude models) under fixed rules, and every figure is checked against its source. This page sets out those rules."));
+  body.appendChild(el("p","muted","Every story on The Connect goes through the same steps. The analysis is written by AI (Anthropic's Claude models) under fixed rules, and every figure is checked against its source. This page sets out those rules."));
   function step(n, title, paras, list){ var s=el("section","acct-sec mstep"); var h=el("h3"); h.appendChild(el("span","mnum",String(n))); h.appendChild(document.createTextNode(title)); s.appendChild(h);
     (paras||[]).forEach(function(p){ s.appendChild(el("p","muted",p)); });
     if(list){ var ul=el("ul","mlist"); list.forEach(function(x){ var li=el("li"); if(Array.isArray(x)){ li.appendChild(el("b",null,x[0]+" ")); li.appendChild(document.createTextNode(x[1])); } else li.textContent=x; ul.appendChild(li); }); s.appendChild(ul); }
@@ -2528,7 +2528,7 @@ function setView(v, push){
   view=v; tab="all"; showAll=false;
   Array.prototype.forEach.call(document.querySelectorAll(".seg [data-view]"),function(b){ b.setAttribute("aria-pressed", b.getAttribute("data-view")===v?"true":"false"); });
   $("sub").textContent=VIEWS[v].sub;
-  document.title=(v==="global"?"Global impact":"Inside India")+" · The Continent Connect";
+  document.title=(v==="global"?"Global impact":"Inside India")+" · The Connect";
   if(push) history.replaceState(null,"", v==="domestic" ? "#inside" : location.pathname+location.search);
   if($("brandLink")) $("brandLink").setAttribute("href", location.pathname + location.search + (v==="domestic" ? "#inside" : ""));
   loadSeen();
