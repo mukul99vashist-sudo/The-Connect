@@ -286,7 +286,7 @@ async function fetchOgImage(url) {
   const ctl = new AbortController(), t = setTimeout(() => ctl.abort(), 8000);
   try {
     const res = await fetch(url, { signal: ctl.signal, redirect: "follow",
-      headers: { "user-agent": "Mozilla/5.0 (compatible; ContinentConnectBot/1.0)", accept: "text/html" } });
+      headers: { "user-agent": "Mozilla/5.0 (compatible; TheConnectBot/1.0)", accept: "text/html" } });
     if (!res.ok) return null;
     const html = (await res.text()).slice(0, 400000);
     return { image: ogImageFromHtml(html), description: ogDescriptionFromHtml(html) };
@@ -1266,13 +1266,13 @@ function icsFold(line) { const out = []; let cur = ""; for (const ch of line) { 
 function siteUrl() { const [o, r] = String(process.env.GITHUB_REPOSITORY || "mukul99vashist-sudo/intelligence-engine").split("/"); return `https://${o}.github.io/${r}/`; }
 function buildIcs(events, name) {
   const stamp = new Date().toISOString().replace(/[-:]/g, "").replace(/\.\d+/, "");
-  const lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//The Continent Connect//Dates to watch//EN", "CALSCALE:GREGORIAN", "METHOD:PUBLISH",
+  const lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//The Connect//Dates to watch//EN", "CALSCALE:GREGORIAN", "METHOD:PUBLISH",
     `X-WR-CALNAME:${icsEscape(name)}`, "X-WR-CALDESC:Officially scheduled dates behind the news: rate decisions\\, data releases\\, results and summits.",
     "REFRESH-INTERVAL;VALUE=DURATION:PT12H", "X-PUBLISHED-TTL:PT12H"];
   for (const e of events) {
     const endEx = addDays(e.end || e.date, 1).replace(/-/g, "");
     const desc = [e.why, e.time ? `Time: ${e.time}` : "", `Official source: ${e.source.url}`, `Stories and analysis: ${siteUrl()}`].filter(Boolean).join("\n\n");
-    lines.push("BEGIN:VEVENT", `UID:${e.id}@continent-connect`, `DTSTAMP:${stamp}`, `DTSTART;VALUE=DATE:${e.date.replace(/-/g, "")}`, `DTEND;VALUE=DATE:${endEx}`,
+    lines.push("BEGIN:VEVENT", `UID:${e.id}@the-connect`, `DTSTAMP:${stamp}`, `DTSTART;VALUE=DATE:${e.date.replace(/-/g, "")}`, `DTEND;VALUE=DATE:${endEx}`,
       `SUMMARY:${icsEscape(e.title)}`, `DESCRIPTION:${icsEscape(desc)}`, `URL:${e.source.url}`, "TRANSP:TRANSPARENT",
       "BEGIN:VALARM", "ACTION:DISPLAY", `DESCRIPTION:${icsEscape(e.title)}`, "TRIGGER:-PT15H", "END:VALARM", "END:VEVENT");
   }
@@ -1318,10 +1318,10 @@ async function refreshCalendar() {
   const sameEvents = old && JSON.stringify(JSON.parse(old).events) === JSON.stringify(cal.events);
   if (!old || due.length || !sameEvents) {
     await fs.writeFile(CALENDAR_FILE, json);
-    await writeIfChanged("data/calendar.ics", buildIcs(cal.events, "The Continent Connect: dates to watch"));
+    await writeIfChanged("data/calendar.ics", buildIcs(cal.events, "The Connect: dates to watch"));
     for (const s of SECTORS) {
       const evs = cal.events.filter(e => e.sectors.includes(s.id)), path = `data/calendar-${s.id}.ics`;
-      if (evs.length) await writeIfChanged(path, buildIcs(evs, `The Continent Connect: ${s.name} dates`));
+      if (evs.length) await writeIfChanged(path, buildIcs(evs, `The Connect: ${s.name} dates`));
       else await fs.rm(path, { force: true });
     }
   }
