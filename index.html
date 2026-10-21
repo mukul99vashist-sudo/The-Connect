@@ -1130,7 +1130,7 @@ body.home-on,body.home-on[data-rail="left"]{padding-left:0;padding-right:0}
 .hm-chip{all:unset;cursor:pointer;min-height:36px;box-sizing:border-box;display:inline-flex;align-items:center;padding:7px 13px;border:1px solid var(--accent);border-radius:999px;background:var(--card);color:var(--ink);font:600 14px/1.2 var(--sans)}
 .hm-chip.main{background:var(--accent);color:#FFF}
 .hm-chip:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
-.hm-find input{font:inherit;font-size:14px;border:1px solid var(--tile-line);border-radius:999px;padding:8px 14px;background:var(--bg-2);color:var(--ink);width:200px;min-height:36px;box-sizing:border-box}
+.hm-find input{font:inherit;font-size:15px;border:1px solid var(--tile-line);border-radius:999px;padding:10px 16px;background:var(--bg-2);color:var(--ink);width:280px;min-height:40px;box-sizing:border-box}
 .hm-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .hm-price{font-size:13px;color:var(--ink-3)}
 .mapbtn{padding:0;width:40px}.mapbtn svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.6}
@@ -1172,9 +1172,7 @@ dialog.hm-login,dialog.hm-login[open]{border:0;border-radius:20px;padding:0;widt
     <div class="hm-page" id="hmPage" hidden aria-live="polite"></div>
   </div>
   <div class="hm-bar">
-    <div class="hm-mine"><span class="k">Your countries</span><span class="hm-chips" id="hmChips"></span>
-      <label class="hm-find"><span class="hm-sr">Find a country</span><input id="hmFind" list="hmNames" placeholder="Find a country" autocomplete="off"><datalist id="hmNames"></datalist></label></div>
-    <div class="hm-price"><span id="hmCount">1 country</span> · free during the beta</div>
+    <label class="hm-find"><span class="hm-sr">Find your country</span><input id="hmFind" list="hmNames" placeholder="Find your country" autocomplete="off"><datalist id="hmNames"></datalist></label>
   </div>
 </section>
 <dialog class="hm-login" id="hmLogin" aria-labelledby="lgTitle">
@@ -2874,7 +2872,7 @@ function paint(){
 }
 function placeCard(){}
 function renderChips(){
-  var c=mine(), chips=$("hmChips"); chips.textContent="";
+  var c=mine(), chips=$("hmChips"); if(!chips) return; chips.textContent="";
   c.forEach(function(n){ var b=el("button","hm-chip"+(n==="India"?" main":""), nice(n)+(n==="India"?"":" ×")); b.type="button";
     b.setAttribute("aria-label", n==="India" ? "Open India" : "Remove "+nice(n));
     b.addEventListener("click",function(){ if(n==="India") goTo("India"); else remove(n); }); chips.appendChild(b); });
