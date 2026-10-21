@@ -596,16 +596,158 @@ const FW_SPEC = {
   winners_losers: `"winners_losers": {"groups":[{"group":"one of the affected groups","direction":"gain|lose|mixed|unclear","directness":"direct|indirect","mechanism":"one or two complete sentences, ≤40 words, on how the change reaches this group"}],"not_affected":"one complete sentence, ≤35 words, on a group readers might assume is affected but is not, and why; or empty"}. Max 6 groups; each needs a mechanism from the reports. Never name companies as winners in a market sense.`,
   conflicting: `"conflicting": {"disputed":{"item":"what is disputed, as a short phrase","unit":"..."},"accounts":[{"outlet":"...","value":"as reported","origin":"who the figure or claim comes from","time":"as reported"}],"agreed":["complete sentences: facts all reports agree on"],"explanations":[{"type":"different time|different source|different definition|unexplained","note":"one complete sentence, ≤35 words, on why the accounts may differ"}],"status":"unresolved|converging|resolved"}. Never average or pick a side; use neutral verbs.`,
   timeline: `"timeline": {"entries":[{"when":"as reported","what":"one complete sentence, ≤35 words","actor":"...","outlet":"...","type":"action|claim|denial|confirmation","verification":"confirmed|claimed|contested"}],"current_status":"one or two complete sentences, ≤45 words","open_questions":["each a complete question, ≤25 words"]}. Oldest first, up to 6 entries. Keep both sides of any contested claim.`,
-  escalation: `"escalation": {"current_rung":1,"evidence":"one or two complete sentences, ≤40 words, on the reported action that places it there","previous_rung":null,"next_signals":[{"rung":5,"signal":"one complete sentence, ≤30 words, describing the observable event that would show a move to that rung"}],"india_channels":["oil|shipping|remittances|diaspora safety|flights|trade"]}. Rungs: 1 Rhetoric and threats; 2 Sanctions and diplomatic measures; 3 Mobilisation and posturing; 4 Limited strikes or attacks; 5 Sustained strikes; 6 Strikes on critical infrastructure or third countries; 7 Full-scale war. The rung must match actions actually reported; never predict.`,
+  escalation: `"escalation": {"move":"up|down|none","rung":4,"development":"one complete sentence, ≤35 words, on what THIS story adds to the war: an attack, a deployment, talks, a threat, a proposal","evidence":"one or two complete sentences, ≤40 words: for up or down, the reported action that moves the war to the new rung; for none, why the war's level stays where it is","next_signals":[{"rung":5,"signal":"one complete sentence, ≤30 words, describing the observable event that would show a move to that rung"}],"india_channels":["oil|shipping|remittances|diaspora safety|flights|trade"]}. The rung belongs to the WAR, not to this story. The story's "war" gives the war's current rung, the date it was set and the action behind it: start from that rung. "up" only if these reports describe a NEW action at a higher rung that took place after that date. "down" only if they report a de-escalation that has actually happened: a ceasefire or truce in force, a withdrawal, or fighting reported to have stopped. Talks, proposals, offers, statements and threats never move it down. Otherwise "none", with "rung" equal to the war's current rung. If the story has no "war", or the war has no rung yet, set "rung" from the actions reported and "move":"none". Next signals are observable events for other rungs, judged from the war's rung after your move. Rungs: 1 Rhetoric and threats; 2 Sanctions and diplomatic measures; 3 Mobilisation and posturing; 4 Limited strikes or attacks; 5 Sustained strikes; 6 Strikes on critical infrastructure or third countries; 7 Full-scale war. The rung must match actions actually reported; never predict.`,
   scenarios: `"scenarios": {"question":"the unresolved thing, as a complete question, ≤25 words","scenarios":[{"name":"short label, ≤5 words","what":"one or two complete sentences, ≤40 words, on what would happen","signal":"one complete sentence, ≤30 words, on the observable sign that this path is unfolding","india_effect":"one or two complete sentences, ≤40 words, cautious, on what it would mean for India"}]}. 2 or 3 scenarios, each tied to an outcome named in the reports or an official position. No probabilities, no ranking.`
 };
+
+// ---------- War ladder: one escalation level per war, shared by every story about it, on both desks ----------
+// Without it, each story is rated alone: a peace-talks story about the Russia–Ukraine war reads as "rhetoric" while a
+// strike story the same day reads as "sustained strikes". The level belongs to the war; a story can only move it,
+// and only with a reported action (up) or a de-escalation that has actually happened (down).
+const WARS_FILE = "data/conflicts.json";
+const WAR_MATCH_BATCH = 20;    // stories per war-matching request
+const WAR_LINK_LIMIT = 60;     // older escalation stories tied to a war per desk per run
+const WAR_SEED_LIMIT = 6;      // new wars given a starting level per desk per run
+const WAR_ACTIVE_DAYS = 120;   // wars offered for matching
+const RUNG_NAMES = ["Rhetoric and threats", "Sanctions and diplomatic measures", "Mobilisation and posturing", "Limited strikes or attacks", "Sustained strikes", "Strikes on critical infrastructure or third countries", "Full-scale war"];
+// A move down needs a de-escalation that has happened, not one that is proposed.
+const DEESCALATION = /\b(ceasefire|cease-fire|truce|armistice)\b|\bwithdr(ew|awn|awal|awing)\b|\bpulled (back|out)\b|\b(halted|suspended|stopped|ended|paused)\b[^.]{0,30}\b(strikes|attacks|offensive|fighting|operations|bombing|bombardment|hostilities|war)\b|\b(fighting|strikes|attacks|hostilities)\b[^.]{0,20}\b(stopped|ended|halted|ceased)\b/i;
+const PROPOSED = /\b(propos\w*|offer\w*|calls? for|called for|seek\w*|urg\w*|push\w* for|could|would|may|might|talks? (on|about|over))\b[^.]{0,60}\b(ceasefire|cease-fire|truce|withdrawal|pause)\b/i;
+const IN_FORCE = /\b(in force|in effect|took effect|takes effect|came into effect|holding|has held|agreed|signed|began|begun|started|announced|declared|implemented)\b/i;
+export function isDeescalation(text) { const t = String(text || ""); return DEESCALATION.test(t) && !(PROPOSED.test(t) && !IN_FORCE.test(t)); }
+let wars = { conflicts: {} };
+async function loadWars() { wars = await readJson(WARS_FILE, { conflicts: {} }); wars.conflicts ||= {}; }
+async function saveWars() { await fs.writeFile(WARS_FILE, JSON.stringify({ updatedAt: new Date().toISOString(), rungs: RUNG_NAMES, conflicts: wars.conflicts }, null, 1) + "\n"); }
+function warIdFor(name) { return "w" + idFor("war:" + name.toLowerCase().replace(/[–—-]/g, "-").replace(/\s+/g, " ").trim()).slice(1); }
+// What the analysis desk is told about a story's war.
+export function warForPrompt(id) {
+  const w = id && wars.conflicts[id]; if (!w) return null;
+  if (!(w.rung >= 1)) return { name: w.name, parties: w.parties || [], current_rung: null };
+  return { name: w.name, parties: w.parties || [], current_rung: w.rung, level: RUNG_NAMES[w.rung - 1], set_on: String(w.since || "").slice(0, 10), set_by: w.evidence || "",
+    recent_moves: (w.history || []).slice(-3).map(h => ({ date: String(h.at || "").slice(0, 10), from: h.from, to: h.to })) };
+}
+// Apply the analysis desk's verdict to the war, under fixed rules, and record on the story what happened.
+export function applyLadder(f, warId, plan) {
+  const w = wars.conflicts[warId]; if (!w) return f;
+  const when = (plan.reports || []).map(r => r.date || "").filter(Boolean).sort().pop() || new Date().toISOString();
+  const from = w.rung >= 1 ? w.rung : null; let to = from, held = "";
+  if (from === null) to = f.rung;
+  else if (f.move === "up" && f.rung > from) { if (when >= (w.since || "")) to = f.rung; else held = "older report"; }
+  else if (f.move === "down" && f.rung < from) {
+    if (when < (w.since || "")) held = "older report";
+    else if (!isDeescalation(f.evidence)) held = "no de-escalation reported";
+    else to = f.rung;
+  }
+  if (to !== from) {
+    w.history = [...(w.history || []), { at: when, from, to, evidence: f.evidence, story: plan.id || "", headline: plan.headline || "", url: plan.url || "" }].slice(-40);
+    w.rung = to; w.since = when; w.evidence = f.evidence; w.story = plan.id || ""; w.url = plan.url || "";
+  }
+  if (!w.updated || when > w.updated) w.updated = when;
+  f.conflict = warId; f.applied = to === from ? "none" : from === null ? "set" : to > from ? "up" : "down";
+  f.from = from; f.rung = f.current_rung = w.rung; f.previous_rung = to !== from ? from : null;
+  if (held) f.held = held; else delete f.held;
+  return f;
+}
+function warMatchPrompt(stories, known) {
+  return `Each news story below is about armed conflict. Say which war or armed confrontation it belongs to.
+
+A war is the conflict itself, defined by its main parties and where it is fought, not one aspect of it. Strikes, attacks on energy sites or shipping, ceasefire talks, peace proposals, military aid, sanctions tied to the fighting and statements by its leaders all belong to the same war. For example, "Russia–Ukraine war" covers Ukrainian strikes on Russian refineries, attacks on Black Sea shipping and US-led peace talks.
+
+Rules:
+1. Use a key from KNOWN WARS when the story is about the same war, even if it covers a different aspect or a new country becomes involved.
+2. Otherwise name a new war: 2 to 5 words, neutral, naming the main parties or the place (good: "Russia–Ukraine war", "Yemen war", "Israel–Iran conflict"; bad: "Middle East tensions", "Escalating crisis"). Give its main parties.
+3. If the story is not about an armed conflict (for example a trade dispute or a diplomatic row with no fighting or military threat), return "war": null.
+
+KNOWN WARS:
+${JSON.stringify(known)}
+
+Stories:
+${JSON.stringify(stories)}
+
+Return ONLY a JSON array, one object per story: [{"id":"0","war":"<key>"}] or [{"id":"1","newWar":"<name>","parties":["...","..."]}] or [{"id":"2","war":null}]`;
+}
+// items: [{ key, headline, reports }] → Map(key → war id or "none")
+async function linkWars(items, level = "core") {
+  const out = new Map();
+  const cut = new Date(Date.now() - WAR_ACTIVE_DAYS * 864e5).toISOString();
+  const byName = new Map(Object.values(wars.conflicts).map(w => [w.name.toLowerCase(), w]));
+  for (let k = 0; k < items.length; k += WAR_MATCH_BATCH) {
+    const chunk = items.slice(k, k + WAR_MATCH_BATCH);
+    const known = Object.values(wars.conflicts).filter(w => (w.updated || w.created || "") >= cut).map(w => ({ key: w.id, name: w.name, parties: w.parties || [] }));
+    const stories = chunk.map(x => { const r = (x.reports || []).slice(-1)[0] || {}; return { id: x.key, headline: x.headline || r.headline || "", summary: r.summary || "" }; });
+    const res = await callClaude(warMatchPrompt(stories, known), "filter", level);
+    for (const r of res || []) {
+      const x = chunk.find(c => c.key === String(r?.id)); if (!x) continue;
+      let w = typeof r.war === "string" && wars.conflicts[r.war];
+      if (!w && typeof r.newWar === "string" && r.newWar.trim()) {
+        const name = r.newWar.trim().slice(0, 60);
+        w = byName.get(name.toLowerCase());
+        if (!w) { w = { id: warIdFor(name), name, parties: arr(r.parties, 6).map(p => str(p, 40)).filter(Boolean), rung: null, created: new Date().toISOString(), history: [] }; wars.conflicts[w.id] = w; byName.set(name.toLowerCase(), w); }
+      }
+      out.set(x.key, w ? w.id : "none");
+    }
+  }
+  return out;
+}
+function seedPrompt(w, stories) {
+  return `You keep the escalation ladder for one war on a news site that explains how world events affect India. Set the war's CURRENT level from the stories below (oldest first), using only what they report.
+
+War: ${w.name} (${(w.parties || []).join(", ")})
+
+Rungs: 1 Rhetoric and threats; 2 Sanctions and diplomatic measures; 3 Mobilisation and posturing; 4 Limited strikes or attacks; 5 Sustained strikes; 6 Strikes on critical infrastructure or third countries; 7 Full-scale war.
+
+Rules:
+1. The level is the war's, not any single story's. It is set by the most serious kind of action the reports show is still going on.
+2. The level only comes down after a de-escalation that has actually happened: a ceasefire or truce in force, a withdrawal, or fighting reported to have stopped. Talks, proposals, offers and statements do not lower it.
+3. Base everything on actions reported in these stories. Never predict.
+
+Stories:
+${JSON.stringify(stories)}
+
+Return ONLY a JSON array with one object:
+[{"rung":5,"since":"YYYY-MM-DD, the date of the story that shows the action setting the current level","story":"<id of that story>","evidence":"one or two complete sentences, ≤40 words, on the reported action that sets the level","history":[{"date":"YYYY-MM-DD","from":4,"to":5,"story":"<id>","evidence":"one complete sentence, ≤30 words"}]}]
+"history" lists up to 4 earlier changes of level visible in these stories, oldest first; leave it empty if there were none.`;
+}
+// Before a desk's new stories: tie older escalation stories to their war, then give new wars a starting level.
+async function prepareWars(events) {
+  let linked = 0, seeded = 0, failed = 0;
+  const usesLadder = e => !!e.analysis?.frameworks?.escalation;
+  try {
+    const cut = new Date(Date.now() - WAR_ACTIVE_DAYS * 864e5).toISOString();
+    const todo = events.filter(e => usesLadder(e) && !e.conflict && latest(e) >= cut).sort((a, b) => latest(a).localeCompare(latest(b))).slice(0, WAR_LINK_LIMIT);
+    if (todo.length) {
+      const ids = await linkWars(todo.map(e => ({ key: e.id, headline: e.headline, reports: e.reports })));
+      for (const e of todo) if (ids.has(e.id)) { e.conflict = ids.get(e.id); linked++; }
+    }
+    const members = id => events.filter(e => e.conflict === id && usesLadder(e)).sort((a, b) => latest(a).localeCompare(latest(b)));
+    const unseeded = Object.values(wars.conflicts).filter(w => !(w.rung >= 1) && members(w.id).length).slice(0, WAR_SEED_LIMIT);
+    for (const w of unseeded) {
+      const list = members(w.id).slice(-15);
+      const stories = list.map(e => ({ id: e.id, date: latest(e).slice(0, 10), headline: e.headline, bottom_line: e.why || "", reports: (e.reports || []).slice(-3).map(r => r.headline) }));
+      let res;
+      try { res = await callClaude(seedPrompt(w, stories), "analysis"); } catch (e) { if (e instanceof BudgetError) throw e; console.error(`War level for ${w.name} failed: ${e.message}`); failed++; continue; }
+      const r = (res || [])[0]; const rung = Math.round(+r?.rung); if (!(rung >= 1 && rung <= 7)) { failed++; continue; }
+      const byId = new Map(list.map(e => [e.id, e])), ref = byId.get(r.story) || list[list.length - 1];
+      const day = d => /^\d{4}-\d{2}-\d{2}$/.test(String(d || "")) ? d + "T00:00:00.000Z" : "";
+      const s = x => noAdvice(str(x, 400)) ? sentence(x, 300) : "";
+      w.history = arr(r.history, 4).map(h => { const e = byId.get(h?.story); const f = Math.round(+h?.from), t = Math.round(+h?.to);
+        return t >= 1 && t <= 7 ? { at: day(h.date) || (e ? latest(e) : ""), from: f >= 1 && f <= 7 ? f : null, to: t, evidence: s(h.evidence), story: e?.id || "", headline: e?.headline || "", url: e?.url || "", seed: true } : null; }).filter(Boolean);
+      if (!w.history.length || w.history[w.history.length - 1].to !== rung)
+        w.history.push({ at: day(r.since) || latest(ref), from: w.history.length ? w.history[w.history.length - 1].to : null, to: rung, evidence: s(r.evidence), story: ref.id, headline: ref.headline, url: ref.url || "", seed: true });
+      w.rung = rung; w.since = day(r.since) || latest(ref); w.evidence = s(r.evidence); w.story = ref.id; w.url = ref.url || ""; w.seededAt = new Date().toISOString();
+      w.updated = latest(list[list.length - 1]);
+      seeded++;
+    }
+  } catch (e) { if (!(e instanceof BudgetError)) { console.error(`War ladder step failed: ${e.message}`); failed++; } }
+  return { linked, seeded, ...(failed ? { failed } : {}), active: Object.keys(wars.conflicts).length };
+}
 
 function analysisPrompt(batch, mode) {
   const sectors = SECTORS.map(s => `- ${s.id}: ${s.name}`).join("\n");
   const lens = mode === "domestic" ? `explains what developments INSIDE ${REGION} mean for people and businesses in ${REGION}` : `explains how world news affects ${REGION}`;
   const check = mode === "domestic" ? `of national significance for ${REGION}` : `something that plausibly affects ${REGION}`;
   const used = [...new Set(batch.flatMap(x => [x.primary, x.complement]).filter(Boolean))];
-  const items = batch.map(x => ({ id: x.i, kind: x.kind, tier: x.tier, frameworks: [x.primary, x.complement].filter(Boolean), reports: x.reports }));
+  const items = batch.map(x => ({ id: x.i, kind: x.kind, tier: x.tier, frameworks: [x.primary, x.complement].filter(Boolean), ...(x.war ? { war: x.war } : {}), reports: x.reports }));
   return `You are the senior analysis desk of an intelligence product that ${lens}. For each story, write the universal block and fill the framework(s) listed for it, using ONLY the reports given.
 
 UNIVERSAL BLOCK (every story):
@@ -697,8 +839,8 @@ function cleanFramework(key, f, nums) {
         explanations: arr(f.explanations, 3).map(x => ({ type: clip(x?.type, 30), note: s(x?.note, 300) })).filter(x => x.type), status: pick(f.status, ["unresolved", "converging", "resolved"], "unresolved") } : null; }
     case "timeline": { const entries = arr(f.entries, 6).map(x => ({ when: clip(x?.when, 30), what: s(x?.what, 350), actor: clip(x?.actor, 50), outlet: clip(x?.outlet, 40), type: pick(x?.type, ["action", "claim", "denial", "confirmation"], "action"), verification: pick(x?.verification, ["confirmed", "claimed", "contested"], "claimed") })).filter(x => x.what);
       return entries.length ? { entries, current_status: s(f.current_status, 400), open_questions: arr(f.open_questions, 3).map(x => s(x, 300)).filter(Boolean) } : null; }
-    case "escalation": { const r = Math.round(+f.current_rung); if (!(r >= 1 && r <= 7)) return null; const pr = Math.round(+f.previous_rung);
-      return { current_rung: r, evidence: s(f.evidence, 400), previous_rung: pr >= 1 && pr <= 7 ? pr : null,
+    case "escalation": { const r = Math.round(+(f.rung ?? f.current_rung)); if (!(r >= 1 && r <= 7)) return null;
+      return { move: pick(f.move, ["up", "down", "none"], "none"), rung: r, current_rung: r, previous_rung: null, development: s(f.development, 300), evidence: s(f.evidence, 400),
         next_signals: arr(f.next_signals, 3).map(x => ({ rung: Math.round(+x?.rung), signal: s(x?.signal, 300) })).filter(x => x.rung >= 1 && x.rung <= 7 && x.signal),
         india_channels: arr(f.india_channels, 6).map(x => clip(x, 30)).filter(Boolean) }; }
     case "scenarios": { const sc = arr(f.scenarios, 3).map(x => ({ name: s(x?.name, 60), what: s(x?.what, 400), signal: s(x?.signal, 300), india_effect: s(x?.india_effect, 300) })).filter(x => x.name && x.what);
@@ -729,6 +871,7 @@ function cleanAnalysis(r, plan, reportText) {
     frameworks: {} };
   for (const k of [plan.primary, plan.complement].filter(Boolean)) { const f = cleanFramework(k, r[k], nums); if (f) a.frameworks[k] = f; }
   if (!a.frameworks[plan.primary]) a.frameworksMissing = true;
+  if (a.frameworks.escalation && plan.war && plan.war !== "none") applyLadder(a.frameworks.escalation, plan.war, plan);
   // Rule check: High confidence needs three or more outlets (the rubric's own threshold), whatever the model said.
   if (a.confidence?.level === "high" && (a.outlets || 0) < 3) { a.confidence.level = "medium"; a.confidence.capped = true; }
   return a;
@@ -754,18 +897,26 @@ async function analyseStories(list, mode, level = "core") {
     const complement = tier === "deep" ? pickComplement(primary, f) : null;
     return { ...x, primary, complement, tier, features: Object.keys(f).filter(k => f[k]) };
   });
+  // War ladder: stories read through the escalation ladder are tied to their war, and the analysis starts from the war's level.
+  const atWar = planned.filter(x => [x.primary, x.complement].includes("escalation"));
+  const unlinked = atWar.filter(x => !x.war || x.war === "none");
+  if (unlinked.length) {
+    const ids = await linkWars(unlinked.map(x => ({ key: String(x.i), reports: x.reports, headline: x.headline })), level);
+    for (const x of unlinked) x.war = ids.get(String(x.i)) || "none";
+  }
   const out = new Map();
   // Quick reads go to the cheaper model; standard and in-depth stories to Opus.
   for (const [job, group] of [["analysis", planned.filter(x => x.tier !== "quick")], ["analysis_quick", planned.filter(x => x.tier === "quick")]])
     for (let k = 0; k < group.length; k += ANALYSIS_CHUNK) {
       const chunk = group.slice(k, k + ANALYSIS_CHUNK);
-      const res = await callClaude(analysisPrompt(chunk.map(x => ({ i: x.i, kind: x.kind, tier: x.tier, primary: x.primary, complement: x.complement, reports: reportsForPrompt(x.reports) })), mode), job, level);
+      const res = await callClaude(analysisPrompt(chunk.map(x => ({ i: x.i, kind: x.kind, tier: x.tier, primary: x.primary, complement: x.complement, war: [x.primary, x.complement].includes("escalation") ? warForPrompt(x.war) : null, reports: reportsForPrompt(x.reports) })), mode), job, level);
       for (const r of res || []) { const x = chunk.find(c => c.i === +r?.id); if (x) out.set(x.i, { r, plan: x }); }
     }
   return out;
 }
 function applyAnalysis(ev, r, plan) {
   ev.analysis = cleanAnalysis(r, plan, reportTextOf(ev.reports || []));
+  if (plan.war) ev.conflict = plan.war;
   if (noAdvice(r.why) && str(r.why)) ev.why = sentence(r.why, 400);
   const imp = arr(r.implications, 4).filter(x => typeof x === "string" && noAdvice(x)).map(x => sentence(x, 320)); if (imp.length) ev.implications = imp;
 }
@@ -784,7 +935,7 @@ async function reframeRecent(data, mode) {
   for (let k = 0; k < due.length; k += ANALYSIS_CHUNK * 2) {
     const chunk = due.slice(k, k + ANALYSIS_CHUNK * 2);
     try {
-      const res = await analyseStories(chunk.map((ev, i) => ({ i, kind: kindOfEv(ev), reports: ev.reports || [], relevance: ev.relevance, prev: ev.analysis })), mode, "extra");
+      const res = await analyseStories(chunk.map((ev, i) => ({ i, id: ev.id, headline: ev.headline, url: ev.url, war: ev.conflict, kind: kindOfEv(ev), reports: ev.reports || [], relevance: ev.relevance, prev: ev.analysis })), mode, "extra");
       chunk.forEach((ev, i) => { const o = res.get(i); if (!o || o.r.relevant === false) return; applyAnalysis(ev, o.r, o.plan); done++; });
     } catch (e) { if (e instanceof BudgetError) { stopped = true; break; } console.error(`Framework batch failed: ${e.message}`); failed++; }
   }
@@ -1374,6 +1525,7 @@ export async function main() {
   if (!process.env.ANTHROPIC_API_KEY) { console.error("ANTHROPIC_API_KEY secret is missing."); process.exit(1); }
   await fs.mkdir("data", { recursive: true });
   await loadBudget();
+  await loadWars();
   console.log(`Budget: $${budget.spent.toFixed(2)} of $${DAILY_BUDGET} used today (${budget.day}, India time)`);
   let deskFailed = false;
   try {
@@ -1457,6 +1609,9 @@ async function runDesk(desk) {
   const rejected = data.schema === SCHEMA && seen.size ? await readJson(desk.rejected, []) : [];
   let added = 0, merged = 0, failures = 0, budgetStopped = false;
   const runStart = budget ? budget.spent : 0;
+  // War ladder: tie older escalation stories to their war and set the starting level of new wars, before new stories are analysed.
+  const warPrep = await prepareWars(allEvents());
+  if (warPrep.linked || warPrep.seeded) console.log(`War ladder: ${warPrep.linked} older stories tied to a war, ${warPrep.seeded} wars given a starting level`);
   for (let k = 0; k < fresh.length; k += BATCH) {
     const batch = fresh.slice(k, k + BATCH);
     if (budgetLeft("core") < 0.25) { budgetStopped = true; break; }   // left unseen: picked up by a later run if still fresh
@@ -1479,7 +1634,7 @@ async function runDesk(desk) {
     for (const v of byId.values()) if (v.relevant && kindOf(v) === "opinion") { v.relevant = false; v.reason = "Opinion piece: kept out of the analysis"; }
     const needsAnalysis = v => !["soft", "feature"].includes(kindOf(v));
     const toAnalyse = [...byId.entries()].filter(([i, v]) => v.relevant && !isFollowUp(i, v) && needsAnalysis(v))
-      .map(([i, v]) => ({ i, kind: kindOf(v), relevance: "medium", reports: [{ source: batch[i].src, headline: batch[i].headline, summary: batch[i].summary, lede: batch[i].lede, date: batch[i].date, kind: kindOf(v) }] }));
+      .map(([i, v]) => ({ i, id: idFor(batch[i].url), headline: batch[i].headline, url: batch[i].url, kind: kindOf(v), relevance: "medium", reports: [{ source: batch[i].src, headline: batch[i].headline, summary: batch[i].summary, lede: batch[i].lede, date: batch[i].date, kind: kindOf(v) }] }));
     const analysis = new Map();
     if (toAnalyse.length) {
       try { for (const [id, o] of await analyseStories(toAnalyse, desk.mode)) analysis.set(id, o); }
@@ -1515,6 +1670,7 @@ async function runDesk(desk) {
         why: typeof r.why === "string" && noAdvice(r.why) ? r.why : "",
         implications: (r.implications || []).filter(x => typeof x === "string" && noAdvice(x)).slice(0, 3),
         ...(o ? { analysis: cleanAnalysis(r, o.plan, reportTextOf([report])) } : {}),
+        ...(o?.plan?.war ? { conflict: o.plan.war } : {}),
         reports: [report]
       };
       sector.items.push(ev); placed[i] = ev; added++;
@@ -1567,7 +1723,8 @@ async function runDesk(desk) {
   for (const s of data.sectors) s.items = s.items.filter(i => { const t = Date.parse(latest(i)); return isNaN(t) || t >= recentCut; }).map(({ sector, ...rest }) => rest);
   data.recentDays = RECENT_DAYS;
   data.updatedAt = new Date().toISOString();
-  data.lastRun = { analysed: fresh.length, added, merged, rejected: fresh.length && !failures && !budgetStopped ? fresh.length - added - merged : undefined, failedBatches: failures, feeds: feedHealth, shareImages: og, threads: th, summaries: sm, kinds, frames, stats, models: usage,
+  await saveWars();
+  data.lastRun = { wars: warPrep, analysed: fresh.length, added, merged, rejected: fresh.length && !failures && !budgetStopped ? fresh.length - added - merged : undefined, failedBatches: failures, feeds: feedHealth, shareImages: og, threads: th, summaries: sm, kinds, frames, stats, models: usage,
     spend: budget ? { thisDesk: Math.round((budget.spent - runStart) * 1e4) / 1e4, today: Math.round(budget.spent * 1e4) / 1e4, cap: DAILY_BUDGET, ...(budgetStopped ? { stopped: true } : {}) } : undefined };
 
   await fs.writeFile(desk.data, JSON.stringify(data, null, 2) + "\n");
