@@ -1165,7 +1165,7 @@ dialog.hm-login,dialog.hm-login[open]{border:0;border-radius:20px;padding:0;widt
     <a class="hm-brand" href="#map" id="hmBrand"><svg class="hm-mark" viewBox="0 0 34 20" aria-hidden="true"><path d="M5 15 Q17 -1 29 15"/><circle cx="5" cy="15" r="4"/><circle class="b" cx="29" cy="15" r="4"/></svg><span>The <em>Connect</em></span></a>
     <div class="hm-nav"><button class="pillbtn" id="hmTheme" type="button">Dark mode</button><button class="pillbtn hm-go" id="hmSignin" type="button" aria-haspopup="dialog">Sign in</button></div>
   </div>
-  <h2 class="hm-title">See how the world reaches you.</h2>
+  <h2 class="hm-title">See how the world’s news reaches you.</h2>
   <div class="hm-stage" id="hmStage">
     <div class="hm-map"><svg id="hmSvg" viewBox="0 0 1200 560" preserveAspectRatio="xMidYMid meet" role="img" aria-label="World map"></svg></div>
     <div class="hm-card" id="hmCard" hidden aria-live="polite"></div>
@@ -2915,7 +2915,7 @@ function showHome(){
   build(); home.hidden=false; hover=null; focus=null; closePage(); paintTheme(); setTimeout(centreOnIndia,0);
   document.body.classList.add("home-on"); window.scrollTo(0,0);
   if(location.hash!=="#map") history.replaceState(null,"","#map");
-  document.title="The Connect · See how the world reaches you";
+  document.title="The Connect · See how the world’s news reaches you";
   refreshStories();
   if(!docs.global) loadFrom(sourcesFor(VIEWS.global.data)).then(function(d){ docs.global=d; refreshStories(); }).catch(function(){});
 }
