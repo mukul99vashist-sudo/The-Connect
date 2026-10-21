@@ -446,6 +446,40 @@ const RELEVANCE_RULES = {
   domestic: `Keep an item only if it is a development of NATIONAL significance for India: national policy, regulation, budgets and taxes, RBI and banking, inflation and jobs data, infrastructure, energy, industry and manufacturing, agriculture and food supply, technology and telecom policy, environment and climate events with wide impact, and major governance developments. Mark relevant=false for crime, accidents, court cases about individuals, celebrity, entertainment, sport, religion, city- or state-level stories without national impact, party political sparring, single-company results or deals that do not affect a whole sector, and stock-market commentary. When unsure, choose false.`
 };
 
+// Where the event itself happened: drawn on the home page's world map as a line from that place to India.
+const PLACE_RULE = `For kept items also give "place": where the event itself happened, not where it was reported from: {"name":"short place name, e.g. Strait of Hormuz, Kyiv, Washington, Mumbai","country":"country name","lat":0.0,"lon":0.0}. For a government's decision use its capital (a US tariff → Washington); for an incident use where it happened. Use null when there is no single place (for example a worldwide price move).`;
+const PLACE_LIMIT = 120, PLACE_BATCH = 40, PLACE_DAYS = 7;   // recent stories given a place per desk per run (one-off catch-up)
+export function cleanPlace(p) {
+  if (!p || typeof p !== "object") return null;
+  const lat = +p.lat, lon = +p.lon, name = str(p.name, 40), country = str(p.country, 40);
+  if (!name || !isFinite(lat) || !isFinite(lon) || Math.abs(lat) > 90 || Math.abs(lon) > 180) return null;
+  return { name, country, lat: Math.round(lat * 100) / 100, lon: Math.round(lon * 100) / 100 };
+}
+function placePrompt(items) {
+  return `For each news story below, say where the event itself happened.
+
+${PLACE_RULE.replace("For kept items also give", "Give")}
+
+Stories:
+${JSON.stringify(items)}
+
+Return ONLY a JSON array, one object per story: [{"id":0,"place":{"name":"...","country":"...","lat":0.0,"lon":0.0}}] or [{"id":1,"place":null}]`;
+}
+// One-off catch-up: give recent stories that predate the place field a place.
+async function labelPlaces(data) {
+  const cut = new Date(Date.now() - PLACE_DAYS * 864e5).toISOString();
+  const pending = data.sectors.flatMap(s => s.items).filter(e => !e.place && !e.placeTried && latest(e) >= cut).sort((a, b) => latest(b).localeCompare(latest(a))).slice(0, PLACE_LIMIT);
+  let labelled = 0, none = 0, failed = 0;
+  for (let k = 0; k < pending.length; k += PLACE_BATCH) {
+    const batch = pending.slice(k, k + PLACE_BATCH);
+    try {
+      const res = await callClaude(placePrompt(batch.map((e, i) => ({ id: i, headline: e.headline, summary: (e.reports || []).map(r => r.summary).find(Boolean) || e.why || "" }))), "filter");
+      for (const r of res || []) { const e = batch[+r?.id]; if (!e) continue; const p = cleanPlace(r.place); if (p) { e.place = p; labelled++; } else { e.placeTried = true; none++; } }
+    } catch (e) { if (e instanceof BudgetError) break; console.error(`Place batch failed: ${e.message}`); failed++; }
+  }
+  return { labelled, none, waiting: Math.max(0, pending.length - labelled - none), ...(failed ? { failedBatches: failed } : {}) };
+}
+
 // Step 1 (fast model): keep or reject each headline, and match follow-ups to stories already on the desk.
 function filterPrompt(batch, recent, mode) {
   const items = batch.map((s, i) => ({ id: i, outlet: OUTLETS[s.src], headline: s.headline, summary: s.summary }));
@@ -464,6 +498,7 @@ Rules:
 4. ${KIND_RULE}
 Give "kind" for EVERY item, kept or not. For kept items also give "sector", the ONE sector it fits best:
 ${SECTORS.map(s => `- ${s.id}: ${s.name}`).join("\n")}
+${PLACE_RULE}
 
 KNOWN EVENTS:
 ${JSON.stringify(known)}
@@ -472,7 +507,7 @@ Items:
 ${JSON.stringify(items)}
 
 Return ONLY a JSON array, one object per item:
-[{"id":0,"kind":"hard","relevant":true,"sector":"energy","sameAs":null}]
+[{"id":0,"kind":"hard","relevant":true,"sector":"energy","place":{"name":"Strait of Hormuz","country":"Iran","lat":26.6,"lon":56.3},"sameAs":null}]
 For relevant=false return {"id":N,"kind":"...","relevant":false,"reason":"${mode === "domestic" ? "why it is not of national significance" : `why it does not reach ${REGION}`}, under 15 words","sameAs":null}.`;
 }
 
@@ -1671,6 +1706,7 @@ async function runDesk(desk) {
         implications: (r.implications || []).filter(x => typeof x === "string" && noAdvice(x)).slice(0, 3),
         ...(o ? { analysis: cleanAnalysis(r, o.plan, reportTextOf([report])) } : {}),
         ...(o?.plan?.war ? { conflict: o.plan.war } : {}),
+        ...(cleanPlace(v.place) ? { place: cleanPlace(v.place) } : {}),
         reports: [report]
       };
       sector.items.push(ev); placed[i] = ev; added++;
@@ -1680,6 +1716,8 @@ async function runDesk(desk) {
 
   const stats = await addStatistics(data, desk.mode);     // statistics come before catch-up work
   const kinds = await classifyOlder(data);
+  const places = await labelPlaces(data);
+  if (places.labelled) console.log(`Places: ${places.labelled} recent stories placed on the map, ${places.waiting} waiting`);
   const frames = await reframeRecent(data, desk.mode);
   if (stats.searched) console.log(`Statistics: ${stats.searched} stories due, ${stats.found} new charts, ${stats.reused} reused saved series, ${stats.none} without, ${stats.failed} failed; ${stats.proposed} figures proposed, ${stats.droppedPoints} not found on an official page, ${stats.pagesFetched} official pages fetched`);
   for (const x of stats.samples || []) console.log(`  · ${x.result}: ${x.headline}` + (x.proposed !== undefined ? ` (${x.checked}/${x.proposed} figures checked, ${x.pagesFetched} pages)` : ""));
@@ -1724,7 +1762,7 @@ async function runDesk(desk) {
   data.recentDays = RECENT_DAYS;
   data.updatedAt = new Date().toISOString();
   await saveWars();
-  data.lastRun = { wars: warPrep, analysed: fresh.length, added, merged, rejected: fresh.length && !failures && !budgetStopped ? fresh.length - added - merged : undefined, failedBatches: failures, feeds: feedHealth, shareImages: og, threads: th, summaries: sm, kinds, frames, stats, models: usage,
+  data.lastRun = { wars: warPrep, places, analysed: fresh.length, added, merged, rejected: fresh.length && !failures && !budgetStopped ? fresh.length - added - merged : undefined, failedBatches: failures, feeds: feedHealth, shareImages: og, threads: th, summaries: sm, kinds, frames, stats, models: usage,
     spend: budget ? { thisDesk: Math.round((budget.spent - runStart) * 1e4) / 1e4, today: Math.round(budget.spent * 1e4) / 1e4, cap: DAILY_BUDGET, ...(budgetStopped ? { stopped: true } : {}) } : undefined };
 
   await fs.writeFile(desk.data, JSON.stringify(data, null, 2) + "\n");
