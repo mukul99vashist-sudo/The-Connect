@@ -1081,7 +1081,7 @@ body.home-on,body.home-on[data-rail="left"]{padding-left:0;padding-right:0}
 .hm-lines line{stroke:var(--accent);stroke-width:1.8;stroke-linecap:round;pointer-events:none}
 .hm-glow{fill:var(--accent);pointer-events:none}.hm-glow.b{opacity:.2}
 .hm-node{cursor:pointer;outline:none}.hm-node circle{fill:var(--hm-node)}.hm-node.on circle,.hm-node:hover circle,.hm-node:focus-visible circle{fill:var(--accent)}
-.hm-node text{fill:var(--ink-2);font:500 13px var(--sans);paint-order:stroke;stroke:var(--bg);stroke-width:3px;stroke-linejoin:round}
+.hm-node text{fill:var(--ink-2);font:500 12px var(--sans);paint-order:stroke;stroke:var(--bg);stroke-width:3px;stroke-linejoin:round}
 .hm-name{fill:var(--ink);font:700 24px "Newsreader",Georgia,serif;text-anchor:middle;paint-order:stroke;stroke:var(--bg);stroke-width:5px;stroke-linejoin:round;pointer-events:none}
 .hm-sub{fill:var(--ink-3);font:600 11px var(--sans);text-anchor:middle;paint-order:stroke;stroke:var(--bg);stroke-width:4px;stroke-linejoin:round;pointer-events:none}
 .hm-page{position:absolute;inset:0;z-index:3;overflow:auto;background:var(--bg);padding:6px 2px 10px}
@@ -2807,26 +2807,34 @@ function todays(){
   pool.sort(function(a,b){ return ((b.it.relevance==="high")-(a.it.relevance==="high")) || latestDate(b.it).localeCompare(latestDate(a.it)); });
   return pool;
 }
-/* The connection network drawn on the map (the design chosen on 22 Oct): major economies and India's main partners as points,
-   grey lines for the big links between them, and orange lines from every labelled point into the country under the pointer. */
+/* The connection network on the map: the world's 20 largest economies (IMF World Economic Outlook, October 2025,
+   projected 2026 nominal GDP), grey lines for major links between them, and orange lines from every one of them into the
+   country under the pointer. */
 var NET=[
-  {id:"us",label:"United States",c:"United States of America",xy:[371.6,170.4],big:1,lx:-18,ly:20,anchor:"start"},
-  {id:"eu",label:"EU",c:null,xy:[620.6,125.2],big:1,lx:-10,ly:-9,anchor:"end"},
-  {id:"ru",label:"Russia",c:"Russia",xy:[713.2,107.4],big:1,lx:9,ly:-9},
-  {id:"ir",label:"Iran",c:"Iran",xy:[767.9,182.7],big:1,lx:-6,ly:-10,anchor:"middle"},
-  {id:"sa",label:"Saudi Arabia",c:"Saudi Arabia",xy:[758.3,225.1],big:1,lx:-10,ly:22,anchor:"middle"},
-  {id:"ae",label:"UAE",c:"United Arab Emirates",xy:[783.1,225.9],big:1,lx:24,ly:22,anchor:"middle"},
-  {id:"cn",label:"China",c:"China",xy:[963.9,166.5],big:1,lx:9,ly:-9},
-  {id:"jp",label:"Japan",c:"Japan",xy:[1042.5,182.7],big:1,lx:9,ly:-9},
-  {id:"sg",label:"Singapore",c:"Malaysia",xy:[951.8,314.8],big:1,lx:10,ly:-4},
-  {id:"au",label:"Australia",c:"Australia",xy:[1072.4,455.8],big:1,lx:10,ly:5},
-  {id:"ca",c:"Canada",xy:[382.6,145.6]},{id:"uk",c:"United Kingdom",xy:[607.7,122.8]},{id:"ua",c:"Ukraine",xy:[696.3,126.7]},
-  {id:"tr",c:"Turkey",xy:[708.6,166.5]},{id:"il",c:"Israel",xy:[719,197.7]},{id:"eg",c:"Egypt",xy:[706.9,204.6]},{id:"pk",c:"Pakistan",xy:[836.7,190.4]},
-  {id:"bd",c:"Bangladesh",xy:[899.5,228.6]},{id:"id",c:"Indonesia",xy:[961.2,343.8]},{id:"br",c:"Brazil",xy:[451.2,380.6]},
-  {id:"ng",c:"Nigeria",xy:[632.8,285.1]},{id:"ke",c:"Kenya",xy:[729.9,325]},{id:"za",c:"South Africa",xy:[698.5,418.8]}
+  {id:"us",label:"United States",c:"United States of America",xy:[371.4,170.4],lx:-18,ly:20},
+  {id:"cn",label:"China",c:"China",xy:[963.9,166.5],lx:-6,ly:-10,anchor:"middle"},
+  {id:"de",label:"Germany",c:"Germany",xy:[646.3,119.1],lx:2,ly:-9},
+  {id:"in",label:"India",c:"India",xy:[853.8,210.1],lx:9,ly:16},
+  {id:"jp",label:"Japan",c:"Japan",xy:[1042.5,182.7],lx:9,ly:-8},
+  {id:"uk",label:"UK",c:"United Kingdom",xy:[607.6,122.8],lx:-8,ly:4,anchor:"end"},
+  {id:"fr",label:"France",c:"France",xy:[614.9,132.6],lx:-7,ly:13,anchor:"end"},
+  {id:"it",label:"Italy",c:"Italy",xy:[645.9,158.9],lx:0,ly:18,anchor:"middle"},
+  {id:"ru",label:"Russia",c:"Russia",xy:[713.2,107.4],lx:9,ly:-8},
+  {id:"ca",label:"Canada",c:"Canada",xy:[382.6,145.6],lx:8,ly:-8},
+  {id:"br",label:"Brazil",c:"Brazil",xy:[451.2,380.6],lx:10,ly:4},
+  {id:"es",label:"Spain",c:"Spain",xy:[596.7,164.6],lx:-8,ly:4,anchor:"end"},
+  {id:"mx",label:"Mexico",c:"Mexico",xy:[285.5,245.5],lx:-8,ly:4,anchor:"end"},
+  {id:"au",label:"Australia",c:"Australia",xy:[1072.4,455.8],lx:10,ly:5},
+  {id:"kr",label:"South Korea",c:"South Korea",xy:[1000.1,175.5],lx:-2,ly:19,anchor:"end"},
+  {id:"tr",label:"Turkey",c:"Turkey",xy:[708.4,166.4],lx:-4,ly:-9,anchor:"middle"},
+  {id:"id",label:"Indonesia",c:"Indonesia",xy:[961.2,343.8],lx:0,ly:18,anchor:"middle"},
+  {id:"nl",label:"Netherlands",c:"Netherlands",xy:[622,119.6],lx:0,ly:-9,anchor:"end"},
+  {id:"sa",label:"Saudi Arabia",c:"Saudi Arabia",xy:[758.3,225.1],lx:0,ly:20,anchor:"middle"},
+  {id:"pl",label:"Poland",c:"Poland",xy:[668.1,120.1],lx:8,ly:5}
 ];
-var NET_LINKS=[["us","eu"],["us","cn"],["us","ir"],["us","ru"],["us","ca"],["eu","ru"],["eu","cn"],["eu","uk"],["ru","ua"],["ir","il"],["tr","pk"],["pk","sa"],["cn","jp"],["jp","au"],["br","ae"]];
-var NET_IN=["us","eu","ru","ir","sa","ae","cn","sg","bd","au"];   // the points whose orange lines run into the highlighted country
+NET.forEach(function(n){ n.big=1; });
+var NET_LINKS=[["us","ca"],["us","mx"],["us","cn"],["us","de"],["us","jp"],["us","uk"],["cn","jp"],["cn","kr"],["cn","au"],["cn","ru"],["cn","br"],["cn","id"],["de","fr"],["de","nl"],["de","pl"],["de","it"],["fr","es"],["ru","tr"],["sa","us"],["jp","au"]];
+var NET_IN=NET.map(function(n){ return n.id; });   // every one of the 20 connects to the highlighted country
 var NET_BY={}; NET.forEach(function(n){ NET_BY[n.id]=n; });
 function buildNodes(){
   nodes=NET;
@@ -2846,8 +2854,8 @@ function paint(){
     gLines.appendChild(node("line",{x1:n.xy[0],y1:n.xy[1],x2:t[0],y2:t[1]})); });
   NET.forEach(function(n){
     var g=node("g",{"class":"hm-node"+(n.big?" big":"")+(n.c && n.c===a?" on":"")});
-    g.appendChild(node("circle",{cx:n.xy[0],cy:n.xy[1],r:n.big?4.6:2.8}));
-    if(n.label){ var tx=node("text",{x:n.xy[0]+n.lx,y:n.xy[1]+n.ly,"text-anchor":n.anchor||"start"}); tx.textContent=n.label; g.appendChild(tx); }
+    g.appendChild(node("circle",{cx:n.xy[0],cy:n.xy[1],r:4}));
+    if(n.label && n.c!==a){ var tx=node("text",{x:n.xy[0]+n.lx,y:n.xy[1]+n.ly,"text-anchor":n.anchor||"start"}); tx.textContent=n.label; g.appendChild(tx); }
     if(n.c){ g.setAttribute("tabindex","0"); g.setAttribute("role","button"); g.setAttribute("aria-label",nice(n.c));
       g.addEventListener("click",function(){ goTo(n.c); }); g.addEventListener("keydown",function(ev){ if(ev.key==="Enter"||ev.key===" "){ ev.preventDefault(); goTo(n.c); } });
       g.addEventListener("pointerenter",function(){ if(!touchUI){ hover=n.c; paint(); } }); }
