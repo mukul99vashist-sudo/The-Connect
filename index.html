@@ -1077,11 +1077,12 @@ body.home-on,body.home-on[data-rail="left"]{padding-left:0;padding-right:0}
 #hmSvg{position:absolute;inset:0;width:100%;height:100%;display:block}
 .hm-dots{fill:var(--hm-dot)}
 .hm-links line{stroke:var(--hm-link);stroke-width:1;opacity:.85;pointer-events:none}
+.hm-links .hm-minor{fill:var(--hm-node);opacity:.85;pointer-events:none}
 .hm-lines line{stroke:var(--accent);stroke-width:1.9;stroke-linecap:round;pointer-events:none}
 .hm-glow{fill:var(--accent);pointer-events:none}.hm-glow.b{opacity:.22}
 .hm-node{cursor:pointer;outline:none}.hm-node circle{fill:var(--hm-node)}.hm-node.on circle,.hm-node:hover circle,.hm-node:focus-visible circle{fill:var(--accent)}
 .hm-node text{fill:var(--ink-2);font:600 12px var(--sans);paint-order:stroke;stroke:var(--bg);stroke-width:3px;stroke-linejoin:round}
-.hm-name{fill:var(--ink);font:700 24px "Newsreader",Georgia,serif;text-anchor:middle;paint-order:stroke;stroke:var(--bg);stroke-width:5px;stroke-linejoin:round;pointer-events:none}
+.hm-name{fill:var(--ink);font:700 22px "Newsreader",Georgia,serif;text-anchor:middle;paint-order:stroke;stroke:var(--bg);stroke-width:5px;stroke-linejoin:round;pointer-events:none}
 .hm-sub{fill:var(--ink-3);font:600 11px var(--sans);text-anchor:middle;paint-order:stroke;stroke:var(--bg);stroke-width:4px;stroke-linejoin:round;pointer-events:none}
 .hm-page{position:absolute;inset:0;z-index:3;overflow:auto;background:var(--bg);padding:6px 2px 10px}
 .hm-page[hidden]{display:none}
@@ -2808,18 +2809,25 @@ function todays(){
   pool.sort(function(a,b){ return ((b.it.relevance==="high")-(a.it.relevance==="high")) || latestDate(b.it).localeCompare(latestDate(a.it)); });
   return pool;
 }
-/* One point per country where today's stories happened, joined to the countries its storylines also touch */
+/* One point per country where today's stories happened. Grey lines join each story's country to the other countries it involves
+   (the other side of a deal, dispute or war), and countries that share a storyline. Involved countries with no story of their own get a small dot. */
 function buildNodes(){
-  var byC={}, out=[];
+  var byC={}, out=[], minor={}, links={};
   stories.forEach(function(x){ var c=countryOf(x.it.place); if(!c || c==="India") return;
     var n=byC[c]; if(!n){ if(out.length>=14) return; n=byC[c]={country:c, xy:proj(x.it.place.lon,x.it.place.lat), stories:[], threads:{}}; out.push(n); }
     n.stories.push(x); if(x.it.thread) n.threads[x.it.thread]=1; });
   nodes=out;
-  gLinks.textContent="";
+  var at=function(c){ return byC[c] ? byC[c].xy : (map.byName[c] ? map.byName[c].t : null); };
+  var link=function(a,b){ if(!a || !b || a===b || a==="India" || b==="India") return; var k=a<b?a+"|"+b:b+"|"+a; if(links[k]) return; var p=at(a), q=at(b); if(!p || !q) return;
+    links[k]=[p,q]; [a,b].forEach(function(c){ if(!byC[c]) minor[c]=map.byName[c].t; }); };
+  stories.forEach(function(x){ var c=countryOf(x.it.place); if(!c || !byC[c]) return;
+    (x.it.place.involves||[]).forEach(function(o){ var d=countryOf({country:o}); if(d) link(c,d); }); });
   for(var i=0;i<out.length;i++) for(var j=i+1;j<out.length;j++){
-    var shared=Object.keys(out[i].threads).some(function(t){ return out[j].threads[t]; });
-    if(shared) gLinks.appendChild(node("line",{x1:out[i].xy[0],y1:out[i].xy[1],x2:out[j].xy[0],y2:out[j].xy[1]}));
+    if(Object.keys(out[i].threads).some(function(t){ return out[j].threads[t]; })) link(out[i].country, out[j].country);
   }
+  gLinks.textContent="";
+  Object.keys(links).slice(0,30).forEach(function(k){ var l=links[k]; gLinks.appendChild(node("line",{x1:l[0][0],y1:l[0][1],x2:l[1][0],y2:l[1][1]})); });
+  Object.keys(minor).forEach(function(c){ gLinks.appendChild(node("circle",{cx:minor[c][0],cy:minor[c][1],r:2.8,"class":"hm-minor"})); });
 }
 function add(n){ var c=mine(); if(c.indexOf(n)<0){ c.push(n); prefs.countries=c; savePrefs(); } }
 function remove(n){ if(n==="India") return; prefs.countries=mine().filter(function(x){ return x!==n; }); savePrefs(); renderChips(); }
@@ -2843,10 +2851,10 @@ function paint(){
     svg.setAttribute("aria-label","World map. Point at a country to see how today's stories connect to it; click to open it."); return; }
   var live=!!LIVE[a];
   pActive.setAttribute("d",dotsPath(info.dots));
-  glowA.setAttribute("cx",t[0]); glowA.setAttribute("cy",t[1]); glowA.setAttribute("r",20);
-  glowB.setAttribute("cx",t[0]); glowB.setAttribute("cy",t[1]); glowB.setAttribute("r",36);
+  glowA.setAttribute("cx",t[0]); glowA.setAttribute("cy",t[1]); glowA.setAttribute("r",8);
+  glowB.setAttribute("cx",t[0]); glowB.setAttribute("cy",t[1]); glowB.setAttribute("r",15);
   // name below and to the right of the glow, as on the reference; flipped near the right edge or the foot of the map
-  var right=t[0]>1020, lx=right ? t[0]-18 : t[0]+18, ly=t[1]>480 ? t[1]-44 : t[1]+44, anchor=right?"end":"start";
+  var right=t[0]>1020, lx=right ? t[0]-16 : t[0]+16, ly=t[1]>480 ? t[1]-30 : t[1]+30, anchor=right?"end":"start";
   label.textContent=nice(a); label.setAttribute("x",lx); label.setAttribute("y",ly); label.setAttribute("text-anchor",anchor);
   sub.setAttribute("text-anchor",anchor);
   sub.textContent=live ? "Live · "+(touchUI?"tap again":"click")+" to open" : "Desk in the works · "+(touchUI?"tap again":"click")+" to open";
