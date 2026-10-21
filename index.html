@@ -1059,8 +1059,9 @@ html[data-text="large"] #sheet .sheet{zoom:1.12}
 /* v60: ripple detail label on its own line */
 .rp-basis{display:block;margin-top:6px}
 /* Home: the world map */
-.home{--hm-dot:#C7C7CC;max-width:1320px;margin:0 auto;padding:22px clamp(16px,3.5vw,48px) 40px}
-:root[data-theme="dark"] .home{--hm-dot:#3A3A3E}
+.home{--hm-fill:#FFFFFF;--hm-line:#B8B8C0;--hm-op:1;max-width:1320px;margin:0 auto;padding:18px clamp(16px,3.5vw,48px) 14px;height:100vh;height:100dvh;box-sizing:border-box;display:flex;flex-direction:column;overflow:hidden}
+:root[data-theme="dark"] .home{--hm-fill:#F5F5F7;--hm-line:transparent;--hm-op:.42}
+body.home-on{overflow:hidden}
 .home[hidden]{display:none}
 body.home-on .wrap{display:none}
 body.home-on,body.home-on[data-rail="left"]{padding-left:0;padding-right:0}
@@ -1070,13 +1071,13 @@ body.home-on,body.home-on[data-rail="left"]{padding-left:0;padding-right:0}
 .hm-mark{width:34px;height:20px;flex:none}.hm-mark path{fill:none;stroke:var(--accent);stroke-width:2}.hm-mark circle{fill:var(--ink)}.hm-mark circle.b{fill:var(--accent)}
 .hm-nav{display:flex;gap:10px;flex-wrap:wrap}
 .hm-go{background:var(--ink);color:var(--bg);border-color:var(--ink)}
-.hm-lead{display:flex;align-items:flex-end;justify-content:space-between;gap:12px 40px;flex-wrap:wrap;margin:22px 0 6px}
-.hm-lead h2{margin:0;font:600 clamp(28px,3.4vw,44px)/1.08 "Newsreader",Georgia,serif;letter-spacing:-.01em;max-width:720px}
-.hm-lead p{margin:0;max-width:420px;color:var(--ink-3);font-size:15px}
-.hm-stage{position:relative}
-.hm-map{position:relative;width:100%;aspect-ratio:1200/560}
+.hm-title{margin:12px 0 0;font:600 clamp(24px,3vw,40px)/1.1 "Newsreader",Georgia,serif;letter-spacing:-.01em}
+.hm-stage{position:relative;flex:1 1 auto;min-height:0;margin-top:6px}
+.hm-map{position:absolute;inset:0}
 #hmSvg{position:absolute;inset:0;width:100%;height:100%;display:block}
-.hm-dots{fill:var(--hm-dot)}.hm-picked{fill:var(--accent);opacity:.35}.hm-active{fill:var(--accent)}
+.hm-dots{fill:var(--hm-fill);stroke:var(--hm-line);stroke-width:.9;opacity:var(--hm-op)}
+.hm-name{fill:var(--ink);font:700 20px "Newsreader",Georgia,serif;text-anchor:middle;paint-order:stroke;stroke:var(--bg);stroke-width:5px;stroke-linejoin:round;pointer-events:none}
+.hm-card[hidden]{display:none}.hm-picked{fill:var(--accent);opacity:.35}.hm-active{fill:var(--accent)}
 .hm-hit{cursor:pointer}
 .hm-arc{fill:none;stroke:var(--accent);stroke-width:1.6;stroke-linecap:round;opacity:.8;pointer-events:none;transition:stroke-width .15s,opacity .15s}
 .hm-arc.dash{stroke-dasharray:3 5;opacity:.5}.hm-arc.on{stroke-width:3.4;opacity:1}
@@ -1100,7 +1101,7 @@ body.home-on,body.home-on[data-rail="left"]{padding-left:0;padding-right:0}
 .hm-today button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 .hm-today .pl{font-size:12px;font-weight:700;color:var(--accent)}
 .hm-today .hl{font-size:14px;line-height:1.35;color:var(--ink);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-.hm-bar{margin-top:20px;border-top:1px solid var(--rule);padding-top:16px;display:flex;align-items:center;justify-content:space-between;gap:12px 24px;flex-wrap:wrap}
+.hm-bar{flex:none;margin-top:8px;border-top:1px solid var(--rule);padding-top:12px;display:flex;align-items:center;justify-content:space-between;gap:12px 24px;flex-wrap:wrap}
 .hm-mine{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
 .hm-mine .k{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);margin-right:4px}
 .hm-chips{display:contents}
@@ -1111,8 +1112,26 @@ body.home-on,body.home-on[data-rail="left"]{padding-left:0;padding-right:0}
 .hm-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .hm-price{font-size:13px;color:var(--ink-3)}
 .mapbtn{padding:0;width:40px}.mapbtn svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.6}
+dialog.hm-login,dialog.hm-login[open]{border:0;border-radius:20px;padding:0;width:min(420px,calc(100vw - 32px));height:fit-content;min-height:0;max-height:calc(100dvh - 32px);overflow:auto;background:var(--card);color:var(--ink);box-shadow:0 24px 64px rgba(0,0,0,.25)}
+.hm-login::backdrop{background:rgba(0,0,0,.45)}
+.hm-login form{position:relative;display:flex;flex-direction:column;gap:14px;padding:30px 30px 26px}
+.hm-login h2{margin:0;font:600 30px/1.1 "Newsreader",Georgia,serif}
+.lg-sub{margin:-6px 0 4px;color:var(--ink-3);font-size:14px}
+.lg-f{display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:600;color:var(--ink-2)}
+.lg-f input{font:inherit;font-size:16px;font-weight:400;padding:12px 14px;border-radius:10px;border:1px solid var(--tile-line);background:var(--bg);color:var(--ink)}
+.lg-f input:focus{outline:2px solid var(--accent);outline-offset:1px}
+.lg-x{all:unset;cursor:pointer;position:absolute;right:14px;top:12px;width:36px;height:36px;display:flex;align-items:center;justify-content:center;border-radius:50%;font-size:24px;color:var(--ink-3)}
+.lg-x:hover{background:var(--bg-2)}.lg-x:focus-visible{outline:2px solid var(--accent)}
+.lg-link{all:unset;cursor:pointer;color:var(--accent);font-weight:600;font-size:13px;border-radius:4px}.lg-link:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.lg-forgot{align-self:flex-end;margin-top:-6px}.lg-forgot[hidden]{display:none}
+.lg-main{all:unset;cursor:pointer;text-align:center;padding:13px 18px;border-radius:999px;background:var(--ink);color:var(--bg);font:600 16px/1.2 var(--sans)}.lg-main:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.lg-msg{margin:0;font-size:13px;line-height:1.45;color:var(--ink-2)}.lg-msg:empty{display:none}
+.lg-alt{font-size:13px;color:var(--ink-3);text-align:center}
 @media (max-width:700px){
-  .hm-card{position:static;width:auto;margin-top:10px;align-self:stretch}
+  .hm-map{overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+  .hm-map::-webkit-scrollbar{display:none}
+  #hmSvg{position:relative;inset:auto;height:100%;width:auto;aspect-ratio:1200/560;max-width:none}
+  .hm-card{left:0!important;right:0;top:auto!important;bottom:0;width:auto}
   .hm-pin text{display:none}
   .hm-find input{width:100%}.hm-find{flex:1 1 100%}
 }
@@ -1122,20 +1141,32 @@ body.home-on,body.home-on[data-rail="left"]{padding-left:0;padding-right:0}
 <section class="home" id="home" hidden aria-label="Choose your country">
   <div class="hm-top">
     <a class="hm-brand" href="#map" id="hmBrand"><svg class="hm-mark" viewBox="0 0 34 20" aria-hidden="true"><path d="M5 15 Q17 -1 29 15"/><circle cx="5" cy="15" r="4"/><circle class="b" cx="29" cy="15" r="4"/></svg><span>The <em>Connect</em></span></a>
-    <div class="hm-nav"><button class="pillbtn" id="hmSignin" type="button">Sign in</button><button class="pillbtn hm-go" id="hmSkip" type="button">India's news →</button></div>
+    <div class="hm-nav"><button class="pillbtn" id="hmTheme" type="button">Dark mode</button><button class="pillbtn hm-go" id="hmSignin" type="button" aria-haspopup="dialog">Sign in</button></div>
   </div>
-  <div class="hm-lead"><h2>Pick your country. See what reaches it.</h2><p>Point at or tap any country: it lights up and today's stories from abroad connect to it. Open it, or add it to your countries.</p></div>
+  <h2 class="hm-title">See how the world reaches you.</h2>
   <div class="hm-stage" id="hmStage">
-    <div class="hm-map"><svg id="hmSvg" viewBox="0 0 1200 560" role="img" aria-label="World map"></svg></div>
-    <div class="hm-card" id="hmCard" aria-live="polite"></div>
+    <div class="hm-map"><svg id="hmSvg" viewBox="0 0 1200 560" preserveAspectRatio="xMidYMid meet" role="img" aria-label="World map"></svg></div>
+    <div class="hm-card" id="hmCard" hidden aria-live="polite"></div>
   </div>
-  <div class="hm-today" id="hmToday" hidden><h3>Today's stories reaching India</h3><ol id="hmList"></ol></div>
   <div class="hm-bar">
     <div class="hm-mine"><span class="k">Your countries</span><span class="hm-chips" id="hmChips"></span>
       <label class="hm-find"><span class="hm-sr">Find a country</span><input id="hmFind" list="hmNames" placeholder="Find a country" autocomplete="off"><datalist id="hmNames"></datalist></label></div>
     <div class="hm-price"><span id="hmCount">1 country</span> · free during the beta</div>
   </div>
 </section>
+<dialog class="hm-login" id="hmLogin" aria-labelledby="lgTitle">
+  <form id="lgForm">
+    <button type="button" class="lg-x" id="lgClose" aria-label="Close">×</button>
+    <h2 id="lgTitle">Sign in</h2>
+    <p class="lg-sub">Your countries and saved stories, on every device.</p>
+    <label class="lg-f">Email<input id="lgEmail" type="email" required autocomplete="email" placeholder="you@example.com"></label>
+    <label class="lg-f">Password<input id="lgPass" type="password" required minlength="8" autocomplete="current-password" placeholder="At least 8 characters"></label>
+    <button type="button" id="lgForgot" class="lg-link lg-forgot">Forgot password?</button>
+    <button type="submit" id="lgSubmit" class="lg-main">Sign in</button>
+    <p class="lg-msg" id="lgMsg" role="status"></p>
+    <div class="lg-alt"><span id="lgSwitchLbl">New to The Connect?</span> <button type="button" id="lgSwitch" class="lg-link">Create an account</button></div>
+  </form>
+</dialog>
 <div class="wrap">
   <header class="mh">
     <div class="mh-left">
@@ -2694,7 +2725,7 @@ var STEP=7, DOT=2.4, MW=1200, MH=560, NS="http://www.w3.org/2000/svg";
 var LIVE={"India":true};
 var NICE={"United States of America":"United States","Dem. Rep. Congo":"DR Congo","Central African Rep.":"Central African Republic","S. Sudan":"South Sudan","Bosnia and Herz.":"Bosnia and Herzegovina","Dominican Rep.":"Dominican Republic","Eq. Guinea":"Equatorial Guinea","W. Sahara":"Western Sahara","Macedonia":"North Macedonia"};
 var TARGET={"India":[853.8,210.1]};          // New Delhi
-var home=$("home"), svg=$("hmSvg"), stage=$("hmStage"), card=$("hmCard"), map=null, hover=null, focus=null, origins=[], built=false;
+var home=$("home"), svg=$("hmSvg"), stage=$("hmStage"), card=$("hmCard"), map=null, focus=null, origins=[], built=false;
 function nice(n){ return NICE[n]||n; }
 function mine(){ var c=prefs.countries; c=Array.isArray(c)?c.filter(function(x){ return typeof x==="string"; }):[]; if(c.indexOf("India")<0) c.unshift("India"); return c; }
 /* Natural Earth projection, the same one the dot map was drawn with */
@@ -2715,10 +2746,11 @@ function loadMap(){
 }
 function dotsPath(list){ return list.map(function(d){ return "M"+(d[0]-DOT)+" "+d[1]+"a"+DOT+" "+DOT+" 0 1 0 "+(2*DOT)+" 0a"+DOT+" "+DOT+" 0 1 0 "+(-2*DOT)+" 0"; }).join(""); }
 function node(tag,attrs){ var n=document.createElementNS(NS,tag); for(var k in attrs) n.setAttribute(k,attrs[k]); return n; }
-var pPicked, pActive, gArcs, gPins, ringA, ringB, hit;
+var pPicked, pActive, gArcs, gPins, ringA, ringB, hit, label;
+function fit(){ var r=svg.getBoundingClientRect(), k=Math.min(r.width/MW, r.height/MH); return {r:r, k:k, ox:(r.width-MW*k)/2, oy:(r.height-MH*k)/2}; }
 function cellAt(ev){
-  var r=svg.getBoundingClientRect(); if(!r.width) return null;
-  var x=(ev.clientX-r.left)*MW/r.width, y=(ev.clientY-r.top)*MH/r.height, c=Math.floor(x/STEP), w=Math.floor(y/STEP), n=map.cell[c+","+w];
+  var f=fit(); if(!f.k) return null;
+  var x=(ev.clientX-f.r.left-f.ox)/f.k, y=(ev.clientY-f.r.top-f.oy)/f.k, c=Math.floor(x/STEP), w=Math.floor(y/STEP), n=map.cell[c+","+w];
   for(var dc=-1; dc<=1 && !n; dc++) for(var dr=-1; dr<=1 && !n; dr++) n=map.cell[(c+dc)+","+(w+dr)];
   return n||null;
 }
@@ -2729,13 +2761,13 @@ function build(){
   pPicked=node("path",{"class":"hm-picked"}); pActive=node("path",{"class":"hm-active"});
   hit=node("rect",{x:0,y:0,width:MW,height:MH,fill:"transparent","class":"hm-hit"});
   gArcs=node("g",{}); gPins=node("g",{}); ringA=node("circle",{r:14,"class":"hm-ring"}); ringB=node("circle",{r:24,"class":"hm-ring b"});
-  [pPicked,pActive,hit,gArcs,ringA,ringB,gPins].forEach(function(n){ svg.appendChild(n); });
-  hit.addEventListener("pointermove",function(ev){ if(ev.pointerType==="touch") return; var n=cellAt(ev); if(n!==hover){ hover=n; paint(); } });
-  stage.addEventListener("pointerleave",function(){ if(hover){ hover=null; paint(); } });
-  hit.addEventListener("click",function(ev){ var n=cellAt(ev); if(!n) return; focus=n; hover=null; if(LIVE[n]) openCountry(n); else { add(n); paint(); } });
+  label=node("text",{"class":"hm-name"});
+  [pPicked,pActive,hit,gArcs,ringA,ringB,gPins,label].forEach(function(n){ svg.appendChild(n); });
+  hit.addEventListener("pointermove",function(ev){ hit.style.cursor=cellAt(ev)?"pointer":"default"; });
+  hit.addEventListener("click",function(ev){ var n=cellAt(ev); focus=(n && n!==focus) ? n : null; paint(); });
   var dl=$("hmNames"); map.names.forEach(function(n){ var o=document.createElement("option"); o.value=nice(n); dl.appendChild(o); });
   $("hmFind").addEventListener("change",function(){ var v=this.value.trim().toLowerCase(), n=map.names.filter(function(x){ return nice(x).toLowerCase()===v || x.toLowerCase()===v; })[0];
-    if(!n) return; this.value=""; focus=n; if(LIVE[n]) openCountry(n); else { add(n); paint(); } });
+    if(!n) return; this.value=""; this.blur(); focus=n; paint(); });
   window.addEventListener("resize",function(){ if(!home.hidden) placeCard(); });
 }
 /* Today's stories from abroad that carry a place, newest and most relevant first */
@@ -2754,14 +2786,21 @@ function todays(){
 }
 function add(n){ var c=mine(); if(c.indexOf(n)<0){ c.push(n); prefs.countries=c; savePrefs(); } }
 function remove(n){ if(n==="India") return; prefs.countries=mine().filter(function(x){ return x!==n; }); savePrefs(); if(focus===n) focus=null; paint(); }
-function active(){ return hover || focus || "India"; }
+function active(){ return focus; }
 function paint(){
   if(!map) return;
-  var a=active(), info=map.byName[a]||map.byName.India, t=info.t, live=!!LIVE[a], c=mine();
+  var a=active(), c=mine();
+  gArcs.textContent=""; gPins.textContent=""; renderChips(c);
+  home.classList.toggle("hm-picked-on", !!a);
+  if(!a || !map.byName[a]){ pActive.setAttribute("d",""); pPicked.setAttribute("d",""); label.textContent=""; card.hidden=true; [ringA,ringB].forEach(function(r){ r.setAttribute("r",0); });
+    svg.setAttribute("aria-label","World map. Click a country to see how today's stories connect to it."); return; }
+  var info=map.byName[a], t=info.t, live=!!LIVE[a];
+  card.hidden=false;
   pActive.setAttribute("d",dotsPath(info.dots));
-  pPicked.setAttribute("d",dotsPath([].concat.apply([],c.filter(function(x){ return x!==a && map.byName[x]; }).map(function(x){ return map.byName[x].dots; }))));
+  pPicked.setAttribute("d","");
+  ringA.setAttribute("r",14); ringB.setAttribute("r",24);
   [ringA,ringB].forEach(function(r){ r.setAttribute("cx",t[0]); r.setAttribute("cy",t[1]); });
-  gArcs.textContent=""; gPins.textContent="";
+  label.textContent=nice(a); label.setAttribute("x",t[0]); label.setAttribute("y",t[1]-30);
   origins.forEach(function(o,i){
     var x1=o.xy[0], y1=o.xy[1]; if(Math.hypot(x1-t[0],y1-t[1])<24) return;
     var mx=(x1+t[0])/2, my=(y1+t[1])/2, d=Math.hypot(t[0]-x1,t[1]-y1), lift=Math.min(d*0.35,160);
@@ -2779,7 +2818,7 @@ function paint(){
   card.textContent=""; card.classList.toggle("hm-off",!live);
   if(live){
     card.appendChild(el("span","k","Live"));
-    var go=el("button","big","Open "+nice(a)+" →"); go.type="button"; go.addEventListener("click",function(){ openCountry(a); }); card.appendChild(go);
+    var go=el("button",null,"Open "+nice(a)+" →"); go.type="button"; go.addEventListener("click",function(){ openCountry(a); }); card.appendChild(go);
     var places=origins.map(function(o){ return o.it.place.name; });
     card.appendChild(el("p",null, places.length ? "Today it is reached from "+places.slice(0,5).join(", ")+(places.length>5?" and "+(places.length-5)+" more places":"")+"." : "Lines appear as today's stories are mapped."));
     var ins=el("button","alt","Inside India →"); ins.type="button"; ins.addEventListener("click",function(){ openCountry(a,"domestic"); }); card.appendChild(ins);
@@ -2791,36 +2830,27 @@ function paint(){
     ad.addEventListener("click",function(){ if(on) remove(a); else { add(a); focus=a; paint(); } }); card.appendChild(ad);
   }
   placeCard(t);
-  // your countries
+}
+function renderChips(c){
   var chips=$("hmChips"); chips.textContent="";
   c.forEach(function(n){ var b=el("button","hm-chip"+(n==="India"?" main":""), nice(n)+(n==="India"?"":" ×")); b.type="button";
-    b.setAttribute("aria-label", n==="India" ? "India (live)" : "Remove "+nice(n));
-    b.addEventListener("click",function(){ if(n==="India") openCountry("India"); else remove(n); }); chips.appendChild(b); });
+    b.setAttribute("aria-label", n==="India" ? "Show India on the map" : "Remove "+nice(n));
+    b.addEventListener("click",function(){ if(n==="India"){ focus="India"; paint(); } else remove(n); }); chips.appendChild(b); });
   $("hmCount").textContent=c.length===1?"1 country":c.length+" countries";
 }
 function placeCard(t){
-  t=t||(map.byName[active()]||map.byName.India).t;
+  if(!t){ var a=active(); if(!a || !map.byName[a]) return; t=map.byName[a].t; }
   if(matchMedia("(max-width: 700px)").matches){ card.style.left=""; card.style.top=""; return; }
-  var r=svg.getBoundingClientRect(), s=stage.getBoundingClientRect(), k=r.width/MW, x=t[0]*k+(r.left-s.left), y=t[1]*k+(r.top-s.top), w=card.offsetWidth||240, h=card.offsetHeight||150;
+  var f=fit(), s=stage.getBoundingClientRect(), k=f.k, x=t[0]*k+f.ox+(f.r.left-s.left), y=t[1]*k+f.oy+(f.r.top-s.top), w=card.offsetWidth||240, h=card.offsetHeight||150;
   var left=x+26+w>s.width ? x-26-w : x+26, top=Math.max(0,Math.min(s.height-h, y+22));
   card.style.left=Math.max(0,left)+"px"; card.style.top=top+"px";
 }
 function glow(i,on){ Array.prototype.forEach.call(gArcs.querySelectorAll('[data-i="'+i+'"]'),function(p){ p.classList.toggle("on",on); });
-  var li=$("hmList").querySelector('[data-i="'+i+'"]'); if(li) li.classList.toggle("on",on); }
-function renderList(){
-  var ol=$("hmList"); ol.textContent="";
-  $("hmToday").hidden=!origins.length;
-  origins.forEach(function(o,i){ var li=el("li"), b=el("button"); b.type="button"; b.setAttribute("data-i",i);
-    b.appendChild(el("span","pl",o.it.place.name+(o.it.place.country&&o.it.place.country!==o.it.place.name?", "+o.it.place.country:"")));
-    b.appendChild(el("span","hl",o.it.headline));
-    b.addEventListener("click",function(){ openStory(o); });
-    b.addEventListener("pointerenter",function(){ glow(i,true); }); b.addEventListener("pointerleave",function(){ glow(i,false); });
-    b.addEventListener("focus",function(){ glow(i,true); }); b.addEventListener("blur",function(){ glow(i,false); });
-    li.appendChild(b); ol.appendChild(li); });
 }
-function refreshStories(){ origins=todays(); renderList(); paint(); }
+function refreshStories(){ origins=todays(); paint(); }
+function centreOnIndia(){ var m=svg.parentNode; if(m.scrollWidth>m.clientWidth+4){ var k=svg.getBoundingClientRect().height/MH; m.scrollLeft=Math.max(0,TARGET.India[0]*k-m.clientWidth/2); } }
 function showHome(){
-  build(); home.hidden=false; document.body.classList.add("home-on"); window.scrollTo(0,0);
+  build(); home.hidden=false; focus=null; paintTheme(); setTimeout(centreOnIndia,0); document.body.classList.add("home-on"); window.scrollTo(0,0);
   if(location.hash!=="#map") history.replaceState(null,"","#map");
   document.title="The Connect · Pick your country";
   refreshStories();
@@ -2835,10 +2865,24 @@ function openCountry(n, v){
 function openStory(o){ openCountry("India","global"); setTimeout(function(){ openSheet({it:o.it, sector:o.sector, view:"global"}); },0); }
 window.addEventListener("hashchange",function(){ if(location.hash==="#map" && home.hidden) showHome(); });
 $("mapBtn").addEventListener("click",showHome);
-$("hmSkip").addEventListener("click",function(){ openCountry("India","global"); });
-$("hmSignin").addEventListener("click",function(){ openAccount(); });
-$("hmBrand").addEventListener("click",function(ev){ ev.preventDefault(); focus=null; hover=null; paint(); });
-document.addEventListener("keydown",function(ev){ if(ev.key==="Escape" && !home.hidden && prefs.country && !($("acct").open)) hideHome(); });
+$("hmBrand").addEventListener("click",function(ev){ ev.preventDefault(); focus=null; paint(); });
+/* Light / dark on the map page */
+function paintTheme(){ var dark=document.documentElement.getAttribute("data-theme")==="dark", b=$("hmTheme"); b.textContent=dark?"Light mode":"Dark mode"; b.setAttribute("aria-label","Switch to "+(dark?"light":"dark")+" theme"); }
+$("hmTheme").addEventListener("click",function(){ setThemePref(document.documentElement.getAttribute("data-theme")==="dark"?"light":"dark"); paintTheme(); });
+paintTheme();
+/* Sign in: email and password. Accounts are not switched on yet, so nothing is sent or stored. */
+var lg=$("hmLogin"), lgMode="in";
+function lgPaint(){ $("lgTitle").textContent=lgMode==="in"?"Sign in":"Create your account"; $("lgSubmit").textContent=lgMode==="in"?"Sign in":"Create account";
+  $("lgSwitch").textContent=lgMode==="in"?"Create an account":"I already have an account"; $("lgSwitchLbl").textContent=lgMode==="in"?"New to The Connect?":"Have an account?";
+  $("lgPass").setAttribute("autocomplete",lgMode==="in"?"current-password":"new-password"); $("lgForgot").hidden=lgMode!=="in"; $("lgMsg").textContent=""; }
+$("hmSignin").addEventListener("click",function(){ lgMode="in"; lgPaint(); if(lg.showModal) lg.showModal(); else lg.setAttribute("open",""); setTimeout(function(){ $("lgEmail").focus(); },30); });
+$("lgClose").addEventListener("click",function(){ lg.close(); });
+lg.addEventListener("click",function(ev){ if(ev.target===lg) lg.close(); });
+$("lgSwitch").addEventListener("click",function(){ lgMode=lgMode==="in"?"up":"in"; lgPaint(); });
+$("lgForgot").addEventListener("click",function(){ $("lgMsg").textContent="Password reset will be available when accounts open."; });
+$("lgForm").addEventListener("submit",function(ev){ ev.preventDefault(); $("lgPass").value="";
+  $("lgMsg").textContent="Accounts open soon. Until then, your countries and saved stories are kept in this browser, and nothing you typed was sent or stored."; });
+document.addEventListener("keydown",function(ev){ if(ev.key==="Escape" && !home.hidden && !lg.open){ if(focus){ focus=null; paint(); } else if(prefs.country && !($("acct").open)) hideHome(); } });
 window.__homeRefresh=function(){ if(!home.hidden) refreshStories(); };
 // First visit (no country chosen yet) or a #map link opens the map; returning readers go straight to their country.
 if(!prefs.country || location.hash==="#map") showHome();
