@@ -434,6 +434,14 @@ footer .disc{display:block;margin:0 0 4px}
 .esc .n{font-weight:800;text-align:center}
 .esc b{display:block;font-size:13px}
 .esc li span{font-size:12px}
+.esc-hist{margin-top:12px}
+.esc-hist .k{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-3);margin-bottom:6px}
+.esc-hist ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.esc-hist li{display:flex;gap:10px;font-size:13px}
+.esc-hist .when{flex:none;min-width:52px;font-weight:700;color:var(--accent);font-size:12px;padding-top:1px}
+.esc-hist b{display:block;font-size:13px}
+.esc-hist .why{display:block;color:var(--ink-2);font-size:13px;line-height:1.45}
+.esc-hist a{display:block;font-size:12px;color:var(--ink-3)}
 .fw-chips{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-top:10px}
 .fw-chips .k{margin:0 4px 0 0}
 .fw-chips .fw-chip{margin-left:0}
@@ -1152,7 +1160,10 @@ var VIEWS={
 };
 var view = location.hash==="#inside" ? "domestic" : "global";
 try{ if(!location.hash){ var pv=(JSON.parse(localStorage.getItem("tcc.prefs")||"{}")||{}).view; if(pv==="domestic") view="domestic"; } }catch(e){}
-var docs={}, rejectedByView={}, lastUpdatedByView={}, threadsByView={}, archiveByView={};
+var docs={}, rejectedByView={}, lastUpdatedByView={}, threadsByView={}, archiveByView={}, warsDoc=null;
+/* The war ladder: one escalation level per war, shared by every story about it (data/conflicts.json) */
+function warOf(it){ var id=it&&it.conflict, c=warsDoc&&warsDoc.conflicts; return id&&id!=="none"&&c&&c[id]&&c[id].rung>=1 ? c[id] : null; }
+function loadWars(){ return loadFrom(sourcesFor("conflicts.json")).then(function(d){ warsDoc=d; }).catch(function(){}); }
 var OUTLET={bbc:"BBC News",guardian:"The Guardian",npr:"NPR",aljazeera:"Al Jazeera",mercopress:"MercoPress",abc:"ABC News",nyt:"The New York Times",cnbc:"CNBC",cbs:"CBS News",dw:"DW",france24:"France 24",africanews:"Africanews",scmp:"South China Morning Post",thehindu:"The Hindu",mint:"Mint"};
 var REGION={bbc:"Europe",guardian:"Europe",npr:"North America",aljazeera:"Asia",mercopress:"South America",abc:"Australia",nyt:"North America",cnbc:"North America",cbs:"North America",dw:"Europe",france24:"Europe",africanews:"Africa",scmp:"Asia",thehindu:"India",mint:"India"};
 function learnSources(doc){ (doc.sources||[]).forEach(function(x){ OUTLET[x.id]=x.name; if(x.region) REGION[x.id]=x.region; }); }
@@ -1305,9 +1316,15 @@ var FW_RENDER={
     s.appendChild(el("p","fw-foot disc","We never average conflicting figures or pick a side.")); },
   timeline:function(f,s){ var ol=el("ol","fw-tl"); f.entries.forEach(function(x){ var li=el("li","v-"+x.verification); li.appendChild(el("span","when",x.when||"")); var b=el("div"); b.appendChild(el("b",null,x.what)); b.appendChild(el("span",null,[x.actor,x.outlet].filter(Boolean).join(" · ")+" · ")); b.lastChild.appendChild(chip(cap(x.verification),"st-"+(x.verification==="confirmed"?"confirmed":x.verification==="claimed"?"claimed":"alleged"))); li.appendChild(b); ol.appendChild(li); }); s.appendChild(ol);
     if(f.current_status) s.appendChild(el("p","fw-next","Now: "+f.current_status)); (f.open_questions||[]).forEach(function(q){ s.appendChild(el("p","fw-next","Open question: "+q)); }); },
-  escalation:function(f,s){ var wrap=el("div","fw-esc"), ol=el("ol","esc"); var sig={}; (f.next_signals||[]).forEach(function(x){ sig[x.rung]=x.signal; });
-    for(var r=7;r>=1;r--){ var li=el("li",(r===f.current_rung?"now":r<f.current_rung?"below":"")+(r===f.previous_rung?" prev":"")); li.appendChild(el("span","n",String(r))); var b=el("div"); b.appendChild(el("b",null,RUNGS[r-1])); if(r===f.current_rung&&f.evidence) b.appendChild(el("span",null,"Now: "+f.evidence)); else if(sig[r]) b.appendChild(el("span",null,"Signal: "+sig[r])); else if(r===f.previous_rung) b.appendChild(el("span",null,"Previous level")); li.appendChild(b); ol.appendChild(li); }
+  escalation:function(f,s,it){ var w=warOf(it), cur=w?w.rung:f.current_rung, hist=w?(w.history||[]):[], last=hist.length?hist[hist.length-1]:null, prev=w?(last&&last.from):f.previous_rung;
+    if(w){ var hd=el("p","fw-inst"); hd.appendChild(el("b",null,w.name)); hd.appendChild(document.createTextNode(": one level for the whole war, the same on every story about it."+(w.since?" At this level since "+day(w.since)+".":""))); s.appendChild(hd); }
+    var wrap=el("div","fw-esc"), ol=el("ol","esc"); var sig={}; (f.next_signals||[]).forEach(function(x){ if(x.rung!==cur) sig[x.rung]=x.signal; });
+    for(var r=7;r>=1;r--){ var li=el("li",(r===cur?"now":r<cur?"below":"")+(r===prev?" prev":"")); li.appendChild(el("span","n",String(r))); var b=el("div"); b.appendChild(el("b",null,RUNGS[r-1])); var ev=w?w.evidence:f.evidence; if(r===cur&&ev) b.appendChild(el("span",null,"Now: "+ev)); else if(sig[r]) b.appendChild(el("span",null,"Signal: "+sig[r])); else if(r===prev) b.appendChild(el("span",null,"Previous level")); li.appendChild(b); ol.appendChild(li); }
     wrap.appendChild(ol); s.appendChild(wrap);
+    if(w && f.development){ var mv=f.applied==="up"||f.applied==="down" ? " It moved the war from rung "+f.from+" to rung "+f.rung+"." : f.applied==="set" ? "" : " It did not change the war's level."; s.appendChild(el("p","fw-next","This story: "+f.development+mv)); }
+    if(w && hist.length){ var hs=el("div","esc-hist"); hs.appendChild(el("div","k","How the war's level has moved")); var ul=el("ul");
+      hist.slice(-5).reverse().forEach(function(h){ var li=el("li"); li.appendChild(el("span","when",day(h.at)||"Earlier")); var t=el("span"); t.appendChild(el("b",null,(h.from?"Rung "+h.from+" → "+h.to:"Set at rung "+h.to)+": "+RUNGS[h.to-1])); if(h.evidence) t.appendChild(el("span","why",h.evidence)); if(h.url&&h.headline){ var a=el("a",null,h.headline); a.href=h.url; a.target="_blank"; a.rel="noopener"; t.appendChild(a); } li.appendChild(t); ul.appendChild(li); });
+      hs.appendChild(ul); s.appendChild(hs); }
     if(f.india_channels&&f.india_channels.length){ var c=el("div","fw-chips"); c.appendChild(el("span","k","How it reaches India")); f.india_channels.forEach(function(x){ c.appendChild(chip(cap(x))); }); s.appendChild(c); } },
   scenarios:function(f,s){ if(f.question) s.appendChild(el("p","fw-inst",f.question)); var g=el("div","fw-scen"); f.scenarios.forEach(function(x){ var d=el("div","scen"); d.appendChild(el("b",null,x.name)); d.appendChild(document.createTextNode(tidyText(x.what))); if(x.india_effect) d.appendChild(el("span","sig","For India: "+x.india_effect)); if(x.signal) d.appendChild(el("span","sig","Signal to watch: "+x.signal)); g.appendChild(d); }); s.appendChild(g);
     s.appendChild(el("p","fw-foot disc","Scenarios are not ranked and carry no probabilities.")); }
@@ -1361,7 +1378,7 @@ function renderFramework(it){
     basis.appendChild(document.createTextNode(" · "+outs.length+" outlet"+(outs.length===1?"":"s")+": "+names.join(", ")));
     basis.title="Global impact and Inside India judge each story only from their own outlets, so the same event can get different verdicts on the two views.";
     b.appendChild(basis); }
-  [a.primary,a.complement].forEach(function(k){ var f=k && a.frameworks[k]; if(!f || !FW_RENDER[k]) return; var s=sec(FW_NAME[k], k===a.complement?"Deep-dive complement":null); s.classList.add("fw-"+k); try{ FW_RENDER[k](f,s); }catch(e){ return; } b.appendChild(s); });
+  [a.primary,a.complement].forEach(function(k){ var f=k && a.frameworks[k]; if(!f || !FW_RENDER[k]) return; var s=sec(FW_NAME[k], k===a.complement?"Deep-dive complement":null); s.classList.add("fw-"+k); try{ FW_RENDER[k](f,s,it); }catch(e){ return; } b.appendChild(s); });
   if(a.affected&&a.affected.length){ var af=sec("Who in India feels it"), ag=el("div","fw-aff");
     a.affected.forEach(function(x){ var d=el("div","aff"+(x.basis==="inferred"?" inf":"")+(x.effect?" long":"")); d.appendChild(el("span","arrow",ARROW[x.direction]||"?")); var t=el("b",null,x.group); d.appendChild(t);
       // v3 analyses carry a full sentence; older ones a short label
@@ -2293,7 +2310,9 @@ function rippleStops(it, e){
   else if(fw.trade_flow){ var tf=fw.trade_flow;
     add(cap((tf.change&&tf.change.type)||"change")+": "+(tf.good||"trade"), (tf.actors||[]).map(function(x){ return x.country; }).join(", "), true);
     if(tf.india_position) add("India as "+tf.india_position.role.replace(/_/g," "), tf.india_position.note, false); }
-  else if(fw.escalation){ var es=fw.escalation; add("Escalation: rung "+es.current_rung+" of 7", es.evidence, true);
+  else if(fw.escalation){ var es=fw.escalation, war=warOf(it);
+    if(war){ add(war.name+": rung "+war.rung+" of 7, "+RUNGS[war.rung-1].toLowerCase(), war.evidence, true); if(es.development) add("This story: "+es.development, es.applied==="up"||es.applied==="down"?"It moved the war from rung "+es.from+" to rung "+es.rung+".":"", true); }
+    else add("Escalation: rung "+es.current_rung+" of 7", es.evidence, true);
     (es.india_channels||[]).slice(0,2).forEach(function(c){ add(cap(c), "", false); }); }
   else if(fw.policy_tracker){ var pc=fw.policy_tracker; add(pc.instrument.name, [pc.instrument.issuer, pc.instrument.jurisdiction].filter(Boolean).join(", "), true);
     (pc.obligations||[]).slice(0,2).forEach(function(o){ add(o.who, o.what, true); }); }
@@ -2562,6 +2581,7 @@ function refresh(){
   var v=view; loadCalendar();
   loadFrom(sourcesFor(VIEWS[v].rejected)).then(function(list){ rejectedByView[v]=list; if(v===view) renderAudit(list); }).catch(function(){ if(v===view) renderAudit([]); });
   loadFrom(sourcesFor(VIEWS[v].threads)).then(function(t){ threadsByView[v]=t; }).catch(function(){});
+  loadWars();
   if(range===0) loadArchive(v).then(function(){ if(v===view && docs[v]) show(v); }).catch(function(){});
   loadFrom(sourcesFor(VIEWS[v].data)).then(function(doc){
     docs[v]=doc; if(v!==view) return;
