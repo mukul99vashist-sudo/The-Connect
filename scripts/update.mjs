@@ -447,13 +447,14 @@ const RELEVANCE_RULES = {
 };
 
 // Where the event itself happened: drawn on the home page's world map as a line from that place to India.
-const PLACE_RULE = `For kept items also give "place": where the event itself happened, not where it was reported from: {"name":"short place name, e.g. Strait of Hormuz, Kyiv, Washington, Mumbai","country":"country name","lat":0.0,"lon":0.0}. For a government's decision use its capital (a US tariff → Washington); for an incident use where it happened. Use null when there is no single place (for example a worldwide price move).`;
+const PLACE_RULE = `For kept items also give "place": where the event itself happened, not where it was reported from: {"name":"short place name, e.g. Strait of Hormuz, Kyiv, Washington, Mumbai","country":"country name","lat":0.0,"lon":0.0,"involves":["up to 3 other countries directly involved, e.g. the other side of a deal, dispute or conflict"]}. For a government's decision use its capital (a US tariff on China → Washington, involves ["China"]); for an incident use where it happened. "involves" is [] when no other country is directly involved. Use null when there is no single place (for example a worldwide price move).`;
 const PLACE_LIMIT = 120, PLACE_BATCH = 40, PLACE_DAYS = 7;   // recent stories given a place per desk per run (one-off catch-up)
 export function cleanPlace(p) {
   if (!p || typeof p !== "object") return null;
   const lat = +p.lat, lon = +p.lon, name = str(p.name, 40), country = str(p.country, 40);
   if (!name || !isFinite(lat) || !isFinite(lon) || Math.abs(lat) > 90 || Math.abs(lon) > 180) return null;
-  return { name, country, lat: Math.round(lat * 100) / 100, lon: Math.round(lon * 100) / 100 };
+  const involves = arr(p.involves, 3).map(x => str(x, 40)).filter(x => x && x.toLowerCase() !== country.toLowerCase());
+  return { name, country, lat: Math.round(lat * 100) / 100, lon: Math.round(lon * 100) / 100, ...(involves.length ? { involves } : {}) };
 }
 function placePrompt(items) {
   return `For each news story below, say where the event itself happened.
@@ -463,7 +464,7 @@ ${PLACE_RULE.replace("For kept items also give", "Give")}
 Stories:
 ${JSON.stringify(items)}
 
-Return ONLY a JSON array, one object per story: [{"id":0,"place":{"name":"...","country":"...","lat":0.0,"lon":0.0}}] or [{"id":1,"place":null}]`;
+Return ONLY a JSON array, one object per story: [{"id":0,"place":{"name":"...","country":"...","lat":0.0,"lon":0.0,"involves":["..."]}}] or [{"id":1,"place":null}]`;
 }
 // One-off catch-up: give recent stories that predate the place field a place.
 async function labelPlaces(data) {
@@ -507,7 +508,7 @@ Items:
 ${JSON.stringify(items)}
 
 Return ONLY a JSON array, one object per item:
-[{"id":0,"kind":"hard","relevant":true,"sector":"energy","place":{"name":"Strait of Hormuz","country":"Iran","lat":26.6,"lon":56.3},"sameAs":null}]
+[{"id":0,"kind":"hard","relevant":true,"sector":"energy","place":{"name":"Strait of Hormuz","country":"Iran","lat":26.6,"lon":56.3,"involves":["United States"]},"sameAs":null}]
 For relevant=false return {"id":N,"kind":"...","relevant":false,"reason":"${mode === "domestic" ? "why it is not of national significance" : `why it does not reach ${REGION}`}, under 15 words","sameAs":null}.`;
 }
 
