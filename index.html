@@ -1078,11 +1078,11 @@ body.home-on,body.home-on[data-rail="left"]{padding-left:0;padding-right:0}
 .hm-dots{fill:var(--hm-dot)}
 .hm-links line{stroke:var(--hm-link);stroke-width:1;opacity:.85;pointer-events:none}
 .hm-links .hm-minor{fill:var(--hm-node);opacity:.85;pointer-events:none}
-.hm-lines line{stroke:var(--accent);stroke-width:1.9;stroke-linecap:round;pointer-events:none}
-.hm-glow{fill:var(--accent);pointer-events:none}.hm-glow.b{opacity:.22}
+.hm-lines line{stroke:var(--accent);stroke-width:1.8;stroke-linecap:round;pointer-events:none}
+.hm-glow{fill:var(--accent);pointer-events:none}.hm-glow.b{opacity:.2}
 .hm-node{cursor:pointer;outline:none}.hm-node circle{fill:var(--hm-node)}.hm-node.on circle,.hm-node:hover circle,.hm-node:focus-visible circle{fill:var(--accent)}
-.hm-node text{fill:var(--ink-2);font:600 12px var(--sans);paint-order:stroke;stroke:var(--bg);stroke-width:3px;stroke-linejoin:round}
-.hm-name{fill:var(--ink);font:700 22px "Newsreader",Georgia,serif;text-anchor:middle;paint-order:stroke;stroke:var(--bg);stroke-width:5px;stroke-linejoin:round;pointer-events:none}
+.hm-node text{fill:var(--ink-2);font:500 13px var(--sans);paint-order:stroke;stroke:var(--bg);stroke-width:3px;stroke-linejoin:round}
+.hm-name{fill:var(--ink);font:700 24px "Newsreader",Georgia,serif;text-anchor:middle;paint-order:stroke;stroke:var(--bg);stroke-width:5px;stroke-linejoin:round;pointer-events:none}
 .hm-sub{fill:var(--ink-3);font:600 11px var(--sans);text-anchor:middle;paint-order:stroke;stroke:var(--bg);stroke-width:4px;stroke-linejoin:round;pointer-events:none}
 .hm-page{position:absolute;inset:0;z-index:3;overflow:auto;background:var(--bg);padding:6px 2px 10px}
 .hm-page[hidden]{display:none}
@@ -2809,58 +2809,63 @@ function todays(){
   pool.sort(function(a,b){ return ((b.it.relevance==="high")-(a.it.relevance==="high")) || latestDate(b.it).localeCompare(latestDate(a.it)); });
   return pool;
 }
-/* One point per country where today's stories happened. Grey lines join each story's country to the other countries it involves
-   (the other side of a deal, dispute or war), and countries that share a storyline. Involved countries with no story of their own get a small dot. */
+/* The connection network drawn on the map (the design chosen on 22 Oct): major economies and India's main partners as points,
+   grey lines for the big links between them, and orange lines from every labelled point into the country under the pointer. */
+var NET=[
+  {id:"us",label:"United States",c:"United States of America",xy:[371.6,170.4],big:1,lx:-18,ly:20,anchor:"start"},
+  {id:"eu",label:"EU",c:null,xy:[620.6,125.2],big:1,lx:-10,ly:-9,anchor:"end"},
+  {id:"ru",label:"Russia",c:"Russia",xy:[713.2,107.4],big:1,lx:9,ly:-9},
+  {id:"ir",label:"Iran",c:"Iran",xy:[767.9,182.7],big:1,lx:-6,ly:-10,anchor:"middle"},
+  {id:"sa",label:"Saudi Arabia",c:"Saudi Arabia",xy:[758.3,225.1],big:1,lx:-10,ly:22,anchor:"middle"},
+  {id:"ae",label:"UAE",c:"United Arab Emirates",xy:[783.1,225.9],big:1,lx:24,ly:22,anchor:"middle"},
+  {id:"cn",label:"China",c:"China",xy:[963.9,166.5],big:1,lx:9,ly:-9},
+  {id:"jp",label:"Japan",c:"Japan",xy:[1042.5,182.7],big:1,lx:9,ly:-9},
+  {id:"sg",label:"Singapore",c:"Malaysia",xy:[951.8,314.8],big:1,lx:10,ly:-4},
+  {id:"au",label:"Australia",c:"Australia",xy:[1072.4,455.8],big:1,lx:10,ly:5},
+  {id:"ca",c:"Canada",xy:[382.6,145.6]},{id:"uk",c:"United Kingdom",xy:[607.7,122.8]},{id:"ua",c:"Ukraine",xy:[696.3,126.7]},
+  {id:"tr",c:"Turkey",xy:[708.6,166.5]},{id:"il",c:"Israel",xy:[719,197.7]},{id:"eg",c:"Egypt",xy:[706.9,204.6]},{id:"pk",c:"Pakistan",xy:[836.7,190.4]},
+  {id:"bd",c:"Bangladesh",xy:[899.5,228.6]},{id:"id",c:"Indonesia",xy:[961.2,343.8]},{id:"br",c:"Brazil",xy:[451.2,380.6]},
+  {id:"ng",c:"Nigeria",xy:[632.8,285.1]},{id:"ke",c:"Kenya",xy:[729.9,325]},{id:"za",c:"South Africa",xy:[698.5,418.8]}
+];
+var NET_LINKS=[["us","eu"],["us","cn"],["us","ir"],["us","ru"],["us","ca"],["eu","ru"],["eu","cn"],["eu","uk"],["ru","ua"],["ir","il"],["tr","pk"],["pk","sa"],["cn","jp"],["jp","au"],["br","ae"]];
+var NET_IN=["us","eu","ru","ir","sa","ae","cn","sg","bd","au"];   // the points whose orange lines run into the highlighted country
+var NET_BY={}; NET.forEach(function(n){ NET_BY[n.id]=n; });
 function buildNodes(){
-  var byC={}, out=[], minor={}, links={};
-  stories.forEach(function(x){ var c=countryOf(x.it.place); if(!c || c==="India") return;
-    var n=byC[c]; if(!n){ if(out.length>=14) return; n=byC[c]={country:c, xy:proj(x.it.place.lon,x.it.place.lat), stories:[], threads:{}}; out.push(n); }
-    n.stories.push(x); if(x.it.thread) n.threads[x.it.thread]=1; });
-  nodes=out;
-  var at=function(c){ return byC[c] ? byC[c].xy : (map.byName[c] ? map.byName[c].t : null); };
-  var link=function(a,b){ if(!a || !b || a===b || a==="India" || b==="India") return; var k=a<b?a+"|"+b:b+"|"+a; if(links[k]) return; var p=at(a), q=at(b); if(!p || !q) return;
-    links[k]=[p,q]; [a,b].forEach(function(c){ if(!byC[c]) minor[c]=map.byName[c].t; }); };
-  stories.forEach(function(x){ var c=countryOf(x.it.place); if(!c || !byC[c]) return;
-    (x.it.place.involves||[]).forEach(function(o){ var d=countryOf({country:o}); if(d) link(c,d); }); });
-  for(var i=0;i<out.length;i++) for(var j=i+1;j<out.length;j++){
-    if(Object.keys(out[i].threads).some(function(t){ return out[j].threads[t]; })) link(out[i].country, out[j].country);
-  }
+  nodes=NET;
   gLinks.textContent="";
-  Object.keys(links).slice(0,30).forEach(function(k){ var l=links[k]; gLinks.appendChild(node("line",{x1:l[0][0],y1:l[0][1],x2:l[1][0],y2:l[1][1]})); });
-  Object.keys(minor).forEach(function(c){ gLinks.appendChild(node("circle",{cx:minor[c][0],cy:minor[c][1],r:2.8,"class":"hm-minor"})); });
+  NET_LINKS.forEach(function(l){ var a=NET_BY[l[0]].xy, b=NET_BY[l[1]].xy; gLinks.appendChild(node("line",{x1:a[0],y1:a[1],x2:b[0],y2:b[1]})); });
 }
 function add(n){ var c=mine(); if(c.indexOf(n)<0){ c.push(n); prefs.countries=c; savePrefs(); } }
 function remove(n){ if(n==="India") return; prefs.countries=mine().filter(function(x){ return x!==n; }); savePrefs(); renderChips(); }
 function active(){ return hover || focus; }
+function targetOf(a){ var hit=NET.filter(function(n){ return n.c===a && n.big; })[0]; return hit ? hit.xy : map.byName[a].t; }
 function paint(){
   if(!map) return;
   var a=active(); renderChips();
   gLines.textContent=""; gNodes.textContent="";
-  var info=a && map.byName[a], t=info ? info.t : null;
-  nodes.forEach(function(n,i){
-    if(t && n.country!==a) gLines.appendChild(node("line",{x1:n.xy[0],y1:n.xy[1],x2:t[0],y2:t[1]}));
-    var g=node("g",{"class":"hm-node"+(n.country===a?" on":""),tabindex:"0",role:"button","aria-label":nice(n.country)+": "+n.stories.length+" of today's stories"});
-    g.appendChild(node("circle",{cx:n.xy[0],cy:n.xy[1],r:4.2}));
-    var tx=node("text",{x:n.xy[0]+(n.xy[0]>1050?-8:8),y:n.xy[1]+(i%2?16:-8),"text-anchor":n.xy[0]>1050?"end":"start"}); tx.textContent=nice(n.country); g.appendChild(tx);
-    g.addEventListener("click",function(){ goTo(n.country); }); g.addEventListener("keydown",function(ev){ if(ev.key==="Enter"||ev.key===" "){ ev.preventDefault(); goTo(n.country); } });
-    g.addEventListener("pointerenter",function(){ if(!touchUI){ hover=n.country; paint(); } });
+  var info=a && map.byName[a], t=info ? targetOf(a) : null;
+  if(t) NET_IN.forEach(function(id){ var n=NET_BY[id]; if(n.c===a || Math.hypot(n.xy[0]-t[0],n.xy[1]-t[1])<14) return;
+    gLines.appendChild(node("line",{x1:n.xy[0],y1:n.xy[1],x2:t[0],y2:t[1]})); });
+  NET.forEach(function(n){
+    var g=node("g",{"class":"hm-node"+(n.big?" big":"")+(n.c && n.c===a?" on":"")});
+    g.appendChild(node("circle",{cx:n.xy[0],cy:n.xy[1],r:n.big?4.6:2.8}));
+    if(n.label){ var tx=node("text",{x:n.xy[0]+n.lx,y:n.xy[1]+n.ly,"text-anchor":n.anchor||"start"}); tx.textContent=n.label; g.appendChild(tx); }
+    if(n.c){ g.setAttribute("tabindex","0"); g.setAttribute("role","button"); g.setAttribute("aria-label",nice(n.c));
+      g.addEventListener("click",function(){ goTo(n.c); }); g.addEventListener("keydown",function(ev){ if(ev.key==="Enter"||ev.key===" "){ ev.preventDefault(); goTo(n.c); } });
+      g.addEventListener("pointerenter",function(){ if(!touchUI){ hover=n.c; paint(); } }); }
     gNodes.appendChild(g);
   });
   home.classList.toggle("hm-lit", !!info);
-  if(!info){ pActive.setAttribute("d",""); label.textContent=""; sub.textContent=""; glowA.setAttribute("r",0); glowB.setAttribute("r",0); card.hidden=true;
-    svg.setAttribute("aria-label","World map. Point at a country to see how today's stories connect to it; click to open it."); return; }
+  pActive.setAttribute("d","");
+  if(!info){ label.textContent=""; sub.textContent=""; glowA.setAttribute("r",0); glowB.setAttribute("r",0); card.hidden=true;
+    svg.setAttribute("aria-label","World map. Point at a country to see how the world connects to it; click to open it."); return; }
   var live=!!LIVE[a];
-  pActive.setAttribute("d",dotsPath(info.dots));
   glowA.setAttribute("cx",t[0]); glowA.setAttribute("cy",t[1]); glowA.setAttribute("r",8);
-  glowB.setAttribute("cx",t[0]); glowB.setAttribute("cy",t[1]); glowB.setAttribute("r",15);
-  // name below and to the right of the glow, as on the reference; flipped near the right edge or the foot of the map
-  var right=t[0]>1020, lx=right ? t[0]-16 : t[0]+16, ly=t[1]>480 ? t[1]-30 : t[1]+30, anchor=right?"end":"start";
+  glowB.setAttribute("cx",t[0]); glowB.setAttribute("cy",t[1]); glowB.setAttribute("r",17);
+  var right=t[0]>1020, lx=right ? t[0]-20 : t[0]+20, ly=t[1]>480 ? t[1]-26 : t[1]+40, anchor=right?"end":"start";
   label.textContent=nice(a); label.setAttribute("x",lx); label.setAttribute("y",ly); label.setAttribute("text-anchor",anchor);
-  sub.setAttribute("text-anchor",anchor);
-  sub.textContent=live ? "Live · "+(touchUI?"tap again":"click")+" to open" : "Desk in the works · "+(touchUI?"tap again":"click")+" to open";
-  sub.setAttribute("x",lx); sub.setAttribute("y",ly+17);
-  svg.setAttribute("aria-label","World map. "+nice(a)+" is highlighted"+(nodes.length?", with lines from "+nodes.length+" countries in today's stories.":"."));
-  // phones: a card at the foot of the map, since there is no pointer to hover with
+  sub.textContent="";
+  svg.setAttribute("aria-label","World map. "+nice(a)+" is highlighted"+(live?"; click to open its news.":"; click to open its page."));
   card.textContent=""; card.hidden=!touchUI;
   if(touchUI){
     card.appendChild(el("span","k"+(live?"":" off"), live?"Live":"Desk in the works"));
