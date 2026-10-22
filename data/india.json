@@ -2,12 +2,660 @@
   "schema": 4,
   "region": "India",
   "since": "2026-10-02",
-  "updatedAt": "2026-10-22T05:13:15.207Z",
+  "updatedAt": "2026-10-22T12:12:26.932Z",
   "sectors": [
     {
       "id": "energy",
       "name": "Energy",
       "items": [
+        {
+          "id": "s1l8i59q",
+          "headline": "Stocks Fall and Oil Rises as Investors Retreat from Mounting Risks",
+          "url": "https://www.nytimes.com/2026/10/22/business/stocks-oil-prices.html",
+          "source": "nyt",
+          "date": "2026-10-22T12:02:25.000Z",
+          "relevance": "medium",
+          "image": "https://static01.nyt.com/images/2026/10/22/multimedia/22osg-promo-lqhb/22osg-promo-lqhb-mediumSquareAt3X.jpg",
+          "why": "The New York Times reports that oil jumped to its highest level in months while stocks fell after technology earnings unsettled investors. India imports most of its crude, so higher oil prices can raise its fuel import costs.",
+          "implications": [
+            "Higher crude prices raise the cost of oil that Indian refiners buy, which can squeeze their margins or feed into the prices charged for petrol and diesel.",
+            "A larger oil import bill can widen India's trade deficit and put pressure on government finances, depending on how long prices stay high."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-22T12:11:23.486Z",
+            "tier": "quick",
+            "primary": "pass_through",
+            "complement": null,
+            "features": [
+              "price_move"
+            ],
+            "exposure": {
+              "level": "high",
+              "reason": "Petrol and diesel are household essentials, and India's heavy reliance on imported crude means a sustained rise in oil prices can reach fuel costs, although the report gives no price figures."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Refiners buy crude with a lag and retail fuel prices adjust gradually, so any effect on Indian pump prices would take weeks to emerge."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on one outlet, The New York Times, with no named official source, and it gives no size for the oil price rise or its cause."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "up",
+                "what": "petrol and diesel prices",
+                "effect": "If higher crude costs are passed on, drivers and transporters in India could eventually pay more for petrol and diesel, though taxes and pricing practices may delay or soften this.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Government finances",
+                "direction": "unclear",
+                "what": "oil import bill and fuel taxes",
+                "effect": "A higher crude price raises the import bill, and the government's choices on fuel taxes could determine how much of the burden falls on its own accounts.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Whether the oil price stays at its highest level in months or falls back",
+                "why": "A lasting rise would be more likely to reach Indian refiners' costs and retail fuel prices than a brief spike.",
+                "when": "",
+                "where": "Petroleum Planning and Analysis Cell (PPAC)"
+              }
+            ],
+            "context": [
+              "India imports most of the crude oil it uses, so global price moves reach its economy through import costs. Retail petrol and diesel prices also include central and state taxes, which cushion or amplify changes in crude."
+            ],
+            "terms": [],
+            "frameworks": {
+              "pass_through": {
+                "driver": {
+                  "variable": "Global oil price",
+                  "direction": "up",
+                  "size": ""
+                },
+                "product": "petrol & diesel",
+                "rungs": [
+                  {
+                    "stage": "Global oil price → Indian refiners' crude cost",
+                    "pass": "likely",
+                    "damper": "India imports most of its crude, so refiners pay world prices, though purchase contracts and stored inventory can delay the full effect.",
+                    "lag": "weeks"
+                  },
+                  {
+                    "stage": "Refiners' cost → retail petrol and diesel prices",
+                    "pass": "partial",
+                    "damper": "Retail prices are set by oil marketing companies under government influence, so cost increases may be absorbed for a time instead of passed on immediately.",
+                    "lag": "weeks"
+                  },
+                  {
+                    "stage": "Retail base price → price at the pump",
+                    "pass": "partial",
+                    "damper": "Central excise duty and state value-added tax make up a large part of the pump price, which can soften or magnify the effect of crude moves.",
+                    "lag": "weeks"
+                  }
+                ],
+                "end_user": {
+                  "group": "Fuel & LPG users",
+                  "effect": "Drivers and transport users may notice higher petrol and diesel prices only if the crude rise lasts and companies or governments choose to pass it on. Any change would probably appear gradually."
+                }
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "nyt",
+              "headline": "Stocks Fall and Oil Rises as Investors Retreat from Mounting Risks",
+              "url": "https://www.nytimes.com/2026/10/22/business/stocks-oil-prices.html",
+              "date": "2026-10-22T12:02:25.000Z",
+              "kind": "hard",
+              "summary": "Earnings reports from big technology companies spooked investors and the price of oil jumped to its highest level in months.",
+              "summaryV": 3,
+              "image": "https://static01.nyt.com/images/2026/10/22/multimedia/22osg-promo-lqhb/22osg-promo-lqhb-mediumSquareAt3X.jpg"
+            }
+          ],
+          "thread": "t1dbdiwl"
+        },
+        {
+          "id": "stchozp",
+          "headline": "Trump backs Netanyahu: Is the US planning a new Iran attack with Israel?",
+          "url": "https://www.aljazeera.com/news/2026/10/19/trump-backs-netanyahu-is-the-us-planning-a-new-iran-attack-with-israel",
+          "source": "aljazeera",
+          "date": "2026-10-19T17:16:22.000Z",
+          "relevance": "medium",
+          "why": "President Trump has endorsed Prime Minister Netanyahu before Israel's election and floated restarting the war with Iran, while his defence secretary visited Israel. Renewed fighting could threaten Gulf oil supplies and the large Indian workforce in the region.",
+          "implications": [
+            "If US-Israeli strikes on Iran resume, insurers and shipowners could charge more to move cargo through Gulf waters, which may raise India's costs for imported crude.",
+            "Defense Secretary Pete Hegseth's unannounced visit, just over a week before the election, signals close US-Israeli coordination as Washington publicly weighs renewed military action.",
+            "Indian workers and their families in Gulf countries could face safety risks and travel disruption if renewed conflict leads to airspace closures across the region.",
+            "The timing ties the decision to Israeli domestic politics, so the election outcome could shape whether Washington moves from talk to action."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-20T08:47:31.551Z",
+            "tier": "standard",
+            "primary": "escalation",
+            "complement": null,
+            "features": [
+              "armed_conflict",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "high",
+              "reason": "A renewed Iran war would touch India's crude oil imports and the safety and travel of Indians in the Gulf, both of which affect households directly."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Israel's election is just over a week away, and any decision on renewed strikes could follow within weeks."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "Al Jazeera and CBS News report the endorsement and Hegseth's visit; no decision to restart the war has been confirmed."
+            },
+            "outlets": 2,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "up",
+                "what": "fuel price risk",
+                "effect": "Renewed conflict near Gulf shipping routes could raise crude prices and refiners' costs, which may feed through to petrol, diesel and LPG prices.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Gulf & overseas workers and families",
+                "direction": "unclear",
+                "what": "safety and job security",
+                "effect": "Indians working in Gulf states could face safety risks and job disruption if fighting spreads, affecting remittances to families at home.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Travellers & pilgrims",
+                "direction": "down",
+                "what": "flight availability",
+                "effect": "Airspace closures during renewed strikes could force cancellations or longer routes on flights between India, the Gulf and Europe.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Result of Israel's general election, in which Prime Minister Netanyahu is standing",
+                "why": "The outcome could shape whether Washington and Israel's government move towards renewed military action against Iran.",
+                "when": "just over a week after 20 October 2026",
+                "where": ""
+              },
+              {
+                "what": "Any formal US announcement on resuming military operations against Iran",
+                "why": "An announcement would mark a shift from President Trump floating the idea to an actual decision.",
+                "when": "",
+                "where": "The White House"
+              },
+              {
+                "what": "Deployment of additional US naval or air forces to the Middle East",
+                "why": "New deployments would indicate practical preparations for renewed strikes rather than political signalling.",
+                "when": "",
+                "where": "US Department of Defense"
+              }
+            ],
+            "context": [
+              "India imports most of its crude oil, and a large share comes from the Gulf, often shipped near Iran through the Strait of Hormuz.",
+              "Gulf countries host a very large Indian workforce whose remittances support many households, particularly in states such as Kerala."
+            ],
+            "terms": [
+              {
+                "term": "Strait of Hormuz",
+                "meaning": "A narrow sea passage between Iran and Oman through which a large share of the world's seaborne oil passes."
+              }
+            ],
+            "frameworks": {
+              "escalation": {
+                "current_rung": 1,
+                "evidence": "President Trump has floated restarting the Iran war and endorsed Netanyahu, and Defense Secretary Hegseth visited Israel. No new military action has been reported.",
+                "previous_rung": null,
+                "next_signals": [
+                  {
+                    "rung": 3,
+                    "signal": "The United States or Israel moving warships, aircraft or air-defence systems towards Iran would show mobilisation beyond statements."
+                  },
+                  {
+                    "rung": 4,
+                    "signal": "US or Israeli strikes on Iranian military or nuclear sites would show a move to limited attacks."
+                  },
+                  {
+                    "rung": 6,
+                    "signal": "Attacks on Gulf oil facilities, tankers or shipping lanes would show the conflict reaching critical infrastructure and third countries."
+                  }
+                ],
+                "india_channels": [
+                  "oil",
+                  "shipping",
+                  "remittances",
+                  "diaspora safety",
+                  "flights"
+                ]
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "aljazeera",
+              "headline": "Trump backs Netanyahu: Is the US planning a new Iran attack with Israel?",
+              "url": "https://www.aljazeera.com/news/2026/10/19/trump-backs-netanyahu-is-the-us-planning-a-new-iran-attack-with-israel",
+              "date": "2026-10-19T17:16:22.000Z",
+              "kind": "hard",
+              "summary": "Trump’s endorsement comes after he previously shied away from fully backing Netanyahu’s election campaign.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/afp_6ad6002b1963-1792409643.jpg?resize=1920%2C1440"
+            },
+            {
+              "source": "cbs",
+              "headline": "Hegseth meets Netanyahu ahead of elections, possible Iran war restart",
+              "url": "https://www.cbsnews.com/news/hegseth-visits-israel-elections-iran-war-netanyahu/",
+              "date": "2026-10-20T04:50:45.000Z",
+              "kind": "hard",
+              "summary": "Defense Secretary Pete Hegseth made an unannounced visit to Israel just over a week before Prime Minister Benjamin Netanyahu stands for elections, and as President Trump floats restarting the Iran war.",
+              "summaryV": 3
+            },
+            {
+              "source": "france24",
+              "headline": "'Netanyahu is fighting for his political career', expert says a week ahead of crucial vote",
+              "url": "https://www.france24.com/en/netanyahu-is-fighting-for-his-political-career-expert-says-a-week-ahead-of-crucial-vote",
+              "date": "2026-10-20T20:03:50.000Z",
+              "kind": "hard",
+              "summary": "Israeli Prime Minister Benjamin Netanyahu basked in Donald Trump's endorsement on Monday ahead of close-fought elections, airing a phone call in which the US president predicted he would win and suggested they may again attack Iran together. FRANCE 24's Noga Tarnopolsky reports from Jerusalem.",
+              "summaryV": 3,
+              "image": "https://s.france24.com/media/display/858d62aa-c18a-11f1-8b18-0f96b136895a/w:1024/p:16x9/000-C4VA8T6.jpg"
+            },
+            {
+              "source": "npr",
+              "headline": "U.S. and Israel are planning for a possible attack on Iran, source tells NPR",
+              "url": "https://www.npr.org/2026/10/22/nx-s1-6011514/us-israel-iran-war",
+              "date": "2026-10-22T08:56:58.000Z",
+              "kind": "investigative",
+              "summary": "The U.S. and Israel are preparing plans for a possible attack on Iran in early November, after the U.S. midterm elections, a person briefed on war planning told NPR. Iran said it is prepared.",
+              "summaryV": 3,
+              "image": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/8192x5464+0+0/resize/8192x5464!/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F49%2F98%2F9041826c489783e12ef6068beb87%2Fgettyimages-2300727417.jpg"
+            },
+            {
+              "source": "france24",
+              "headline": "Are fresh US-Israeli strikes on Iran in the pipeline?",
+              "url": "https://www.france24.com/en/tv-shows/press-review/20261022-are-fresh-us-israeli-strikes-on-iran-in-the-pipeline",
+              "date": "2026-10-22T11:32:22.000Z",
+              "kind": "hard",
+              "summary": "PRESS REVIEW – Thursday, October 22: The New York Times's sources report plans for fresh strikes on Iran after the US midterm elections. In other news, the French Senate publishes a 30-step proposal for how to \"take back control\", just days after protests gave way to riots.",
+              "summaryV": 3,
+              "image": "https://s.france24.com/media/display/85419180-cded-11f1-b616-ab78a7fed2ce/w:1024/p:16x9/capture-bd8a83d8.jpg"
+            }
+          ],
+          "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/afp_6ad6002b1963-1792409643.jpg?resize=1920%2C1440",
+          "thread": "t2ogxay",
+          "stats": {
+            "v": 2,
+            "at": "2026-10-20T14:26:46.501Z",
+            "series": [
+              {
+                "title": "Crude oil and condensate through the Strait of Hormuz",
+                "unit": "million barrels per day",
+                "publisher": "U.S. Energy Information Administration",
+                "points": [
+                  {
+                    "period": "2020",
+                    "value": 14.4,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2021",
+                    "value": 14.7,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2022",
+                    "value": 16.2,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2023",
+                    "value": 15.8,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2024",
+                    "value": 14.6,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "1H25",
+                    "value": 14.7,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "title": "eia.gov",
+                    "domain": "eia.gov"
+                  }
+                ],
+                "domains": [
+                  "eia.gov"
+                ],
+                "dropped": 0,
+                "why": "Both series track oil flows through the Strait of Hormuz, the Gulf supply route that the story says renewed fighting with Iran could threaten.",
+                "reused": true,
+                "checkedAt": "2026-10-13T23:16:50.395Z"
+              },
+              {
+                "title": "Oil flows through the Strait of Hormuz, total",
+                "unit": "million barrels per day",
+                "publisher": "U.S. Energy Information Administration",
+                "points": [
+                  {
+                    "period": "2020",
+                    "value": 19.2,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2021",
+                    "value": 19.7,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2022",
+                    "value": 21.9,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2023",
+                    "value": 21.8,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2024",
+                    "value": 20.7,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "1H25",
+                    "value": 20.9,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "title": "eia.gov",
+                    "domain": "eia.gov"
+                  }
+                ],
+                "domains": [
+                  "eia.gov"
+                ],
+                "dropped": 0,
+                "why": "Both series track oil flows through the Strait of Hormuz, the Gulf supply route that the story says renewed fighting with Iran could threaten.",
+                "reused": true,
+                "checkedAt": "2026-10-13T23:16:50.395Z"
+              }
+            ]
+          },
+          "conflict": "w1ye2krf"
+        },
+        {
+          "id": "s14woks4",
+          "headline": "Russian strikes hit Kyiv after Witkoff meets Putin",
+          "url": "https://www.aljazeera.com/news/2026/10/22/russian-strikes-hit-kyiv-after-witkoff-meets-putin",
+          "source": "aljazeera",
+          "date": "2026-10-22T08:18:39.000Z",
+          "relevance": "medium",
+          "why": "Al Jazeera reports that Russian strikes hit Kyiv, killing one person and injuring 22, after Witkoff met Putin. Ukraine says appeasement will not end the war. Continued fighting keeps global energy markets, and India's import costs, exposed.",
+          "implications": [
+            "The strike on the capital so soon after the Witkoff–Putin meeting suggests that diplomatic contact has not yet slowed Russian attacks, so the war's pressure on energy and trade flows may continue.",
+            "Ukraine's rejection of appeasement indicates that Kyiv is resisting any settlement it sees as favouring Moscow, which makes a quick end to the war, and the market relief that would bring, less certain."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-22T12:09:03.458Z",
+            "tier": "quick",
+            "primary": "escalation",
+            "complement": null,
+            "features": [
+              "armed_conflict",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "The report covers only a strike on Kyiv and diplomacy. Any effect on India would be indirect, through global oil and commodity prices, and the report describes no such effect."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Any effect on Indian fuel costs would depend on whether strikes on energy infrastructure continue and move global prices over the coming weeks."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single outlet, Al Jazeera, and on a Ukrainian statement, with no independent confirmation of the casualty figures or of what Witkoff and Putin discussed."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "fuel price pressure",
+                "effect": "If continued attacks on energy infrastructure unsettle global crude markets, Indian refiners' costs could change, which may eventually feed through to petrol and diesel prices.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Further Russian strikes on Kyiv or other Ukrainian cities, or renewed Ukrainian attacks on Russian energy facilities",
+                "why": "Repeated attacks would show whether the war's energy-infrastructure phase is continuing after the diplomatic contact.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "India imports most of its crude oil, and Russia has been a significant supplier since the war began, so fighting that disrupts energy supplies can change India's import costs.",
+              "India has kept ties with both Russia and Ukraine and has generally called for dialogue, so Indian policy tends to respond to the war's economic effects rather than take sides."
+            ],
+            "terms": [],
+            "frameworks": {
+              "escalation": {
+                "move": "none",
+                "rung": 6,
+                "current_rung": 6,
+                "previous_rung": null,
+                "development": "Russian strikes hit Kyiv, killing one person and injuring 22, shortly after Witkoff met Putin, while Ukraine publicly rejected appeasement as a way to end the war.",
+                "evidence": "The war stays at rung 6 because this strike continues attacks at a level already reached on 2026-10-18. No higher-rung action is reported, and no ceasefire or halt in fighting is reported either.",
+                "next_signals": [
+                  {
+                    "rung": 7,
+                    "signal": "Either side announces a general mobilisation or a new offensive across the whole front, going beyond the current exchange of strikes."
+                  },
+                  {
+                    "rung": 5,
+                    "signal": "A new energy ceasefire comes into force and strikes on power infrastructure and oil depots are reported to have stopped."
+                  }
+                ],
+                "india_channels": [
+                  "oil",
+                  "trade"
+                ],
+                "conflict": "wzti51f",
+                "applied": "none",
+                "from": 6
+              }
+            }
+          },
+          "conflict": "wzti51f",
+          "place": {
+            "name": "Kyiv",
+            "country": "Ukraine",
+            "lat": 50.45,
+            "lon": 30.52,
+            "involves": [
+              "Russia",
+              "United States"
+            ]
+          },
+          "reports": [
+            {
+              "source": "aljazeera",
+              "headline": "Russian strikes hit Kyiv after Witkoff meets Putin",
+              "url": "https://www.aljazeera.com/news/2026/10/22/russian-strikes-hit-kyiv-after-witkoff-meets-putin",
+              "date": "2026-10-22T08:18:39.000Z",
+              "kind": "hard",
+              "summary": "Ukraine says 'appeasement' will not end war as Russian attacks kill 1, injure 22 in its capital.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/ap_6ad9afe10e916-1792651233.jpg?resize=1920%2C1440"
+            }
+          ],
+          "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/ap_6ad9afe10e916-1792651233.jpg?resize=1920%2C1440",
+          "thread": "tq9ru94"
+        },
+        {
+          "id": "s1e9v7nh",
+          "headline": "Egypt will 'defend Saudi territory' and won't attack Yemen, Sisi says",
+          "url": "http://www.africanews.com/2026/10/22/egypt-will-defend-saudi-territory-and-wont-attack-yemen-sisi-says/",
+          "source": "africanews",
+          "date": "2026-10-22T06:46:04.000Z",
+          "relevance": "medium",
+          "why": "Egyptian President Sisi has asked parliament to authorise military support for Saudi Arabia against the Houthis if Riyadh requests it, while ruling out an attack on Yemen. A wider Gulf war could affect India's oil supplies and its citizens in Saudi Arabia.",
+          "implications": [
+            "The offer is conditional on a Saudi request and limited to defending Saudi territory. It signals possible Arab backing for Riyadh without, so far, any reported Egyptian action against Yemen.",
+            "If Egyptian forces were deployed to guard Saudi sites, the conflict would involve another state. That could raise the risk to Saudi airports and oil facilities, which affects flights and crude supplies reaching India."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-22T12:08:02.577Z",
+            "tier": "quick",
+            "primary": "escalation",
+            "complement": null,
+            "features": [
+              "armed_conflict",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The story reports a proposal, not a new attack. It reaches India indirectly, through the risk to Saudi oil supplies, flights and the many Indians living in the kingdom."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Any effect depends on parliament's authorisation and a possible Saudi request, which would take some time and have not been reported."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "This rests on a single outlet, Africanews, but it quotes President Sisi on the record. Parliament's decision and any Saudi request remain unconfirmed."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Gulf & overseas workers and families",
+                "direction": "unclear",
+                "what": "safety in Saudi Arabia",
+                "effect": "Indian workers in Saudi Arabia could face greater risk if wider involvement prolongs or widens attacks on the kingdom, which could worry their families at home.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "fuel price risk",
+                "effect": "A wider war around Saudi oil facilities could raise crude prices and refiners' costs, which may eventually feed through to petrol, diesel and LPG prices.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Egypt's parliament votes on whether to authorise military support for Saudi Arabia",
+                "why": "A vote in favour would show that Egypt's offer is moving from a statement towards possible deployment.",
+                "when": "",
+                "where": "Egyptian parliament"
+              },
+              {
+                "what": "Saudi Arabia formally requests Egyptian military help",
+                "why": "Sisi's offer applies only if Riyadh asks, so a request would show Saudi Arabia wants other states involved.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "India imports most of its crude oil, and a large share comes from the Gulf, so attacks on Saudi energy infrastructure can raise global prices and Indian import costs.",
+              "Millions of Indians live and work in Gulf states, and Saudi Arabia is also a major destination for Indian pilgrims."
+            ],
+            "terms": [],
+            "frameworks": {
+              "escalation": {
+                "move": "none",
+                "rung": 6,
+                "current_rung": 6,
+                "previous_rung": null,
+                "development": "Egypt's president asked parliament to authorise support for Saudi Arabia if requested, and said Egypt would defend Saudi territory and not attack Yemen.",
+                "evidence": "The report describes a proposal and a statement, not a new attack or deployment. The war therefore stays at rung 6, set by the Houthi strikes on Riyadh and later attacks on Saudi airports and oil infrastructure.",
+                "next_signals": [
+                  {
+                    "rung": 7,
+                    "signal": "Egyptian or other foreign forces are deployed in the conflict, or the coalition and the Houthis begin large-scale, sustained operations across Yemeni and Saudi territory."
+                  },
+                  {
+                    "rung": 5,
+                    "signal": "A ceasefire takes effect, or the Houthi strikes on Saudi airports and oil sites are reported to have stopped."
+                  }
+                ],
+                "india_channels": [
+                  "oil",
+                  "flights",
+                  "diaspora safety"
+                ],
+                "conflict": "w1f5pudc",
+                "applied": "none",
+                "from": 6
+              }
+            }
+          },
+          "conflict": "w1f5pudc",
+          "place": {
+            "name": "Cairo",
+            "country": "Egypt",
+            "lat": 30.04,
+            "lon": 31.24,
+            "involves": [
+              "Saudi Arabia",
+              "Yemen"
+            ]
+          },
+          "reports": [
+            {
+              "source": "africanews",
+              "headline": "Egypt will 'defend Saudi territory' and won't attack Yemen, Sisi says",
+              "url": "http://www.africanews.com/2026/10/22/egypt-will-defend-saudi-territory-and-wont-attack-yemen-sisi-says/",
+              "date": "2026-10-22T06:46:04.000Z",
+              "kind": "hard",
+              "summary": "Egypt’s proposed military support for Saudi Arabia is aimed at defending the Gulf kingdom and will not involve an attack on Yemen, President Sisi said on Wednesday. Sisi has asked parliament to authorize support for Riyadh and its war against Yemen’s Iran-backed Houthi rebels “if requested.”",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://images.euronews.com/articles/stories/09/96/25/64/1024x538_cmsv2_9f6faa65-5ec3-5ec4-a935-80e11bb2abbe-9962564.jpg"
+            }
+          ],
+          "image": "https://images.euronews.com/articles/stories/09/96/25/64/1024x538_cmsv2_9f6faa65-5ec3-5ec4-a935-80e11bb2abbe-9962564.jpg",
+          "thread": "tq5ix5r"
+        },
         {
           "id": "s6n2u6j",
           "headline": "US orders departure of personnel from Saudi Arabia, citing Houthi threat",
@@ -177,10 +825,25 @@
               "kind": "hard",
               "summary": "The U.S. ordered non-emergency staff out of Saudi Arabia after Houthi strikes on an airport and an oil field, reviving fears of a widening regional conflict.",
               "summaryV": 3
+            },
+            {
+              "source": "cbs",
+              "headline": "U.S. ordering some government staff to depart Saudi Arabia",
+              "url": "https://www.cbsnews.com/news/us-saudi-arabia-ordered-departure-houthis/",
+              "date": "2026-10-21T23:28:00.000Z",
+              "kind": "hard",
+              "summary": "The U.S. military has also been quietly reducing its footprint at posts in the Middle East due to regional threats from the Houthis and direct threats from Iran, CBS News has learned.",
+              "summaryV": 3
             }
           ],
           "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/ap_6ad938b69c56d-1792620726.jpg?resize=1920%2C1440",
-          "thread": "tq5ix5r"
+          "thread": "tq5ix5r",
+          "stats": {
+            "v": 2,
+            "at": "2026-10-22T12:11:25.386Z",
+            "series": [],
+            "reuseOnly": true
+          }
         },
         {
           "id": "s103h3wi",
@@ -1946,282 +2609,6 @@
             ]
           },
           "conflict": "w1f5pudc"
-        },
-        {
-          "id": "stchozp",
-          "headline": "Trump backs Netanyahu: Is the US planning a new Iran attack with Israel?",
-          "url": "https://www.aljazeera.com/news/2026/10/19/trump-backs-netanyahu-is-the-us-planning-a-new-iran-attack-with-israel",
-          "source": "aljazeera",
-          "date": "2026-10-19T17:16:22.000Z",
-          "relevance": "medium",
-          "why": "President Trump has endorsed Prime Minister Netanyahu before Israel's election and floated restarting the war with Iran, while his defence secretary visited Israel. Renewed fighting could threaten Gulf oil supplies and the large Indian workforce in the region.",
-          "implications": [
-            "If US-Israeli strikes on Iran resume, insurers and shipowners could charge more to move cargo through Gulf waters, which may raise India's costs for imported crude.",
-            "Defense Secretary Pete Hegseth's unannounced visit, just over a week before the election, signals close US-Israeli coordination as Washington publicly weighs renewed military action.",
-            "Indian workers and their families in Gulf countries could face safety risks and travel disruption if renewed conflict leads to airspace closures across the region.",
-            "The timing ties the decision to Israeli domestic politics, so the election outcome could shape whether Washington moves from talk to action."
-          ],
-          "analysis": {
-            "v": 3,
-            "at": "2026-10-20T08:47:31.551Z",
-            "tier": "standard",
-            "primary": "escalation",
-            "complement": null,
-            "features": [
-              "armed_conflict",
-              "pending_outcome"
-            ],
-            "exposure": {
-              "level": "high",
-              "reason": "A renewed Iran war would touch India's crude oil imports and the safety and travel of Indians in the Gulf, both of which affect households directly."
-            },
-            "horizon": {
-              "value": "weeks",
-              "reason": "Israel's election is just over a week away, and any decision on renewed strikes could follow within weeks."
-            },
-            "confidence": {
-              "level": "medium",
-              "reason": "Al Jazeera and CBS News report the endorsement and Hegseth's visit; no decision to restart the war has been confirmed."
-            },
-            "outlets": 2,
-            "affected": [
-              {
-                "group": "Fuel & LPG users",
-                "direction": "up",
-                "what": "fuel price risk",
-                "effect": "Renewed conflict near Gulf shipping routes could raise crude prices and refiners' costs, which may feed through to petrol, diesel and LPG prices.",
-                "basis": "inferred"
-              },
-              {
-                "group": "Gulf & overseas workers and families",
-                "direction": "unclear",
-                "what": "safety and job security",
-                "effect": "Indians working in Gulf states could face safety risks and job disruption if fighting spreads, affecting remittances to families at home.",
-                "basis": "inferred"
-              },
-              {
-                "group": "Travellers & pilgrims",
-                "direction": "down",
-                "what": "flight availability",
-                "effect": "Airspace closures during renewed strikes could force cancellations or longer routes on flights between India, the Gulf and Europe.",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "Result of Israel's general election, in which Prime Minister Netanyahu is standing",
-                "why": "The outcome could shape whether Washington and Israel's government move towards renewed military action against Iran.",
-                "when": "just over a week after 20 October 2026",
-                "where": ""
-              },
-              {
-                "what": "Any formal US announcement on resuming military operations against Iran",
-                "why": "An announcement would mark a shift from President Trump floating the idea to an actual decision.",
-                "when": "",
-                "where": "The White House"
-              },
-              {
-                "what": "Deployment of additional US naval or air forces to the Middle East",
-                "why": "New deployments would indicate practical preparations for renewed strikes rather than political signalling.",
-                "when": "",
-                "where": "US Department of Defense"
-              }
-            ],
-            "context": [
-              "India imports most of its crude oil, and a large share comes from the Gulf, often shipped near Iran through the Strait of Hormuz.",
-              "Gulf countries host a very large Indian workforce whose remittances support many households, particularly in states such as Kerala."
-            ],
-            "terms": [
-              {
-                "term": "Strait of Hormuz",
-                "meaning": "A narrow sea passage between Iran and Oman through which a large share of the world's seaborne oil passes."
-              }
-            ],
-            "frameworks": {
-              "escalation": {
-                "current_rung": 1,
-                "evidence": "President Trump has floated restarting the Iran war and endorsed Netanyahu, and Defense Secretary Hegseth visited Israel. No new military action has been reported.",
-                "previous_rung": null,
-                "next_signals": [
-                  {
-                    "rung": 3,
-                    "signal": "The United States or Israel moving warships, aircraft or air-defence systems towards Iran would show mobilisation beyond statements."
-                  },
-                  {
-                    "rung": 4,
-                    "signal": "US or Israeli strikes on Iranian military or nuclear sites would show a move to limited attacks."
-                  },
-                  {
-                    "rung": 6,
-                    "signal": "Attacks on Gulf oil facilities, tankers or shipping lanes would show the conflict reaching critical infrastructure and third countries."
-                  }
-                ],
-                "india_channels": [
-                  "oil",
-                  "shipping",
-                  "remittances",
-                  "diaspora safety",
-                  "flights"
-                ]
-              }
-            }
-          },
-          "reports": [
-            {
-              "source": "aljazeera",
-              "headline": "Trump backs Netanyahu: Is the US planning a new Iran attack with Israel?",
-              "url": "https://www.aljazeera.com/news/2026/10/19/trump-backs-netanyahu-is-the-us-planning-a-new-iran-attack-with-israel",
-              "date": "2026-10-19T17:16:22.000Z",
-              "kind": "hard",
-              "summary": "Trump’s endorsement comes after he previously shied away from fully backing Netanyahu’s election campaign.",
-              "summaryV": 3,
-              "ogTried": true,
-              "descTried": true,
-              "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/afp_6ad6002b1963-1792409643.jpg?resize=1920%2C1440"
-            },
-            {
-              "source": "cbs",
-              "headline": "Hegseth meets Netanyahu ahead of elections, possible Iran war restart",
-              "url": "https://www.cbsnews.com/news/hegseth-visits-israel-elections-iran-war-netanyahu/",
-              "date": "2026-10-20T04:50:45.000Z",
-              "kind": "hard",
-              "summary": "Defense Secretary Pete Hegseth made an unannounced visit to Israel just over a week before Prime Minister Benjamin Netanyahu stands for elections, and as President Trump floats restarting the Iran war.",
-              "summaryV": 3
-            },
-            {
-              "source": "france24",
-              "headline": "'Netanyahu is fighting for his political career', expert says a week ahead of crucial vote",
-              "url": "https://www.france24.com/en/netanyahu-is-fighting-for-his-political-career-expert-says-a-week-ahead-of-crucial-vote",
-              "date": "2026-10-20T20:03:50.000Z",
-              "kind": "hard",
-              "summary": "Israeli Prime Minister Benjamin Netanyahu basked in Donald Trump's endorsement on Monday ahead of close-fought elections, airing a phone call in which the US president predicted he would win and suggested they may again attack Iran together. FRANCE 24's Noga Tarnopolsky reports from Jerusalem.",
-              "summaryV": 3,
-              "image": "https://s.france24.com/media/display/858d62aa-c18a-11f1-8b18-0f96b136895a/w:1024/p:16x9/000-C4VA8T6.jpg"
-            }
-          ],
-          "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/afp_6ad6002b1963-1792409643.jpg?resize=1920%2C1440",
-          "thread": "t2ogxay",
-          "stats": {
-            "v": 2,
-            "at": "2026-10-20T14:26:46.501Z",
-            "series": [
-              {
-                "title": "Crude oil and condensate through the Strait of Hormuz",
-                "unit": "million barrels per day",
-                "publisher": "U.S. Energy Information Administration",
-                "points": [
-                  {
-                    "period": "2020",
-                    "value": 14.4,
-                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-                    "source": "eia.gov"
-                  },
-                  {
-                    "period": "2021",
-                    "value": 14.7,
-                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-                    "source": "eia.gov"
-                  },
-                  {
-                    "period": "2022",
-                    "value": 16.2,
-                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-                    "source": "eia.gov"
-                  },
-                  {
-                    "period": "2023",
-                    "value": 15.8,
-                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-                    "source": "eia.gov"
-                  },
-                  {
-                    "period": "2024",
-                    "value": 14.6,
-                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-                    "source": "eia.gov"
-                  },
-                  {
-                    "period": "1H25",
-                    "value": 14.7,
-                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-                    "source": "eia.gov"
-                  }
-                ],
-                "sources": [
-                  {
-                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-                    "title": "eia.gov",
-                    "domain": "eia.gov"
-                  }
-                ],
-                "domains": [
-                  "eia.gov"
-                ],
-                "dropped": 0,
-                "why": "Both series track oil flows through the Strait of Hormuz, the Gulf supply route that the story says renewed fighting with Iran could threaten.",
-                "reused": true,
-                "checkedAt": "2026-10-13T23:16:50.395Z"
-              },
-              {
-                "title": "Oil flows through the Strait of Hormuz, total",
-                "unit": "million barrels per day",
-                "publisher": "U.S. Energy Information Administration",
-                "points": [
-                  {
-                    "period": "2020",
-                    "value": 19.2,
-                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-                    "source": "eia.gov"
-                  },
-                  {
-                    "period": "2021",
-                    "value": 19.7,
-                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-                    "source": "eia.gov"
-                  },
-                  {
-                    "period": "2022",
-                    "value": 21.9,
-                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-                    "source": "eia.gov"
-                  },
-                  {
-                    "period": "2023",
-                    "value": 21.8,
-                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-                    "source": "eia.gov"
-                  },
-                  {
-                    "period": "2024",
-                    "value": 20.7,
-                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-                    "source": "eia.gov"
-                  },
-                  {
-                    "period": "1H25",
-                    "value": 20.9,
-                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-                    "source": "eia.gov"
-                  }
-                ],
-                "sources": [
-                  {
-                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-                    "title": "eia.gov",
-                    "domain": "eia.gov"
-                  }
-                ],
-                "domains": [
-                  "eia.gov"
-                ],
-                "dropped": 0,
-                "why": "Both series track oil flows through the Strait of Hormuz, the Gulf supply route that the story says renewed fighting with Iran could threaten.",
-                "reused": true,
-                "checkedAt": "2026-10-13T23:16:50.395Z"
-              }
-            ]
-          },
-          "conflict": "w1ye2krf"
         },
         {
           "id": "sxmug20",
@@ -10119,6 +10506,242 @@
       "name": "Logistics & Shipping",
       "items": [
         {
+          "id": "smjooc7",
+          "headline": "China urges opening Bab al-Mandeb in first joint statement with regional nation",
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3371811/china-urges-opening-bab-al-mandeb-first-joint-statement-regional-nation",
+          "source": "scmp",
+          "date": "2026-10-22T11:39:20.000Z",
+          "relevance": "medium",
+          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/22/78170304-3308-491b-8fb1-e364469fa23e_8adabd47.jpg?itok=BT22iSlM&v=1792669158",
+          "why": "China and Djibouti issued a joint communique backing efforts to keep international shipping lanes safe and open, as the US-Iran war's fallout affects the Red Sea. Indian cargo moving between Asia and Europe can depend on that route.",
+          "implications": [
+            "Beijing's first formal statement of this kind with a Red Sea nation shows that a major trading power wants the Bab al-Mandeb route kept open, which may add diplomatic weight to shipping security efforts.",
+            "A statement alone does not secure a sea lane. Indian exporters and importers would feel any change through shipping schedules and freight costs only if conditions at sea change."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-22T12:11:23.485Z",
+            "tier": "quick",
+            "primary": "disruption_map",
+            "complement": null,
+            "features": [
+              "disruption",
+              "armed_conflict",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The Red Sea route can carry India's sea trade with Europe, but the report describes a diplomatic statement and gives no evidence of a closure or a specific effect on Indian cargo."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "The statement sets no timetable, so any effect on Indian shipping would depend on how security conditions in the Red Sea develop."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "This rests on one outlet, the South China Morning Post, citing an official joint communique; the actual state of shipping at the strait is not described."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "Red Sea shipping reliability",
+                "effect": "Traders moving goods between India and Europe could face delays or higher freight costs if the strait remains unsafe, though the report does not say so directly.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Further joint statements or shipping security measures from Red Sea countries and major trading powers on the Bab al-Mandeb",
+                "why": "Such steps would show whether the diplomatic effort is turning into practical protection for commercial ships.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "Bab al-Mandeb is a narrow strait at the southern end of the Red Sea. Ships sailing between Asia and Europe via the Suez Canal normally pass through it, and much of India's goods trade with Europe travels by sea."
+            ],
+            "terms": [
+              {
+                "term": "Bab al-Mandeb",
+                "meaning": "A narrow strait linking the Red Sea with the Gulf of Aden, used by ships travelling between Asia and Europe through the Suez Canal."
+              }
+            ],
+            "frameworks": {
+              "disruption_map": {
+                "node": {
+                  "name": "Bab al-Mandeb",
+                  "type": "strait",
+                  "status": "unknown",
+                  "as_of": "2026-10-22"
+                },
+                "cause": {
+                  "text": "The report says the fallout from the US-Iran war is the reason China and Djibouti are urging that international shipping lanes be kept safe and open.",
+                  "status": "claimed"
+                },
+                "flows": [
+                  {
+                    "flow": "cargo",
+                    "india_link": "International shipping through the strait carries cargo between Asia and Europe, which may include Indian exports and imports. Indian shippers and traders could face delays or higher freight if the lane is unsafe.",
+                    "basis": "inferred"
+                  }
+                ],
+                "alternatives": [],
+                "duration": "not reported"
+              }
+            }
+          },
+          "place": {
+            "name": "Bab al-Mandeb",
+            "country": "Djibouti",
+            "lat": 12.6,
+            "lon": 43.3,
+            "involves": [
+              "China",
+              "Yemen"
+            ]
+          },
+          "reports": [
+            {
+              "source": "scmp",
+              "headline": "China urges opening Bab al-Mandeb in first joint statement with regional nation",
+              "url": "https://www.scmp.com/news/china/diplomacy/article/3371811/china-urges-opening-bab-al-mandeb-first-joint-statement-regional-nation",
+              "date": "2026-10-22T11:39:20.000Z",
+              "kind": "hard",
+              "summary": "China backs “constructive efforts” to ensure international shipping lanes are safe and open, a communique jointly issued with Djibouti said, marking Beijing’s first formal statement with a Red Sea nation on containing the fallout from the US-Iran war.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/22/78170304-3308-491b-8fb1-e364469fa23e_8adabd47.jpg?itok=BT22iSlM&v=1792669158"
+            }
+          ],
+          "thread": "t9i3c9z"
+        },
+        {
+          "id": "s89hcpz",
+          "headline": "Two killed in attack on airport in eastern Saudi Arabia, authorities say",
+          "url": "https://www.bbc.co.uk/news/articles/cqwy71ww156ro",
+          "source": "bbc",
+          "date": "2026-10-22T09:14:48.000Z",
+          "relevance": "medium",
+          "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/5e3c/live/e7d9d390-cdf5-11f1-a64c-550be9e3c66b.jpg",
+          "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/5e3c/live/e7d9d390-cdf5-11f1-a64c-550be9e3c66b.jpg",
+          "why": "BBC News reports that two people were killed in an attack on an airport in eastern Saudi Arabia, the latest in a series of Houthi attacks on Saudi airports and other sites. Indian travellers and workers in the kingdom could be affected.",
+          "implications": [
+            "Repeated strikes on Saudi airports can lead to closures and flight cancellations, which may disrupt Indians travelling to or through the kingdom.",
+            "The attack hit eastern Saudi Arabia, so the Houthi campaign now appears to reach beyond the areas it has already targeted, which could widen the area where Indians living there face risk."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-22T12:09:45.842Z",
+            "tier": "quick",
+            "primary": "escalation",
+            "complement": null,
+            "features": [
+              "armed_conflict"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The channel is air travel to and through Saudi Arabia and the safety of Indian workers there. The report does not mention any Indian casualties or flight changes, so the level stays at medium."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Any effect on flights or travel advice depends on whether the attacks continue and how airlines and authorities respond over the coming weeks."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "This rests on a single BBC News report that cites Saudi authorities; the airport's name, the weapon used and the exact toll details are not given in the summary provided."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Travellers & pilgrims",
+                "direction": "down",
+                "what": "flight availability",
+                "effect": "Attacks on Saudi airports could cause closures or cancellations, which may disrupt Indians flying to Saudi Arabia, including pilgrims, or connecting through it.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Gulf & overseas workers and families",
+                "direction": "unclear",
+                "what": "personal safety and travel",
+                "effect": "Indian workers living near targeted airports or other sites in Saudi Arabia could face greater risk, and their families in India may worry about contact and travel plans.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Further Houthi attacks on Saudi airports or other sites, or Saudi announcements of airport closures",
+                "why": "It would show whether the campaign is continuing and whether flights used by Indians are being disrupted.",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "Travel or safety advisories for Indians in Saudi Arabia",
+                "why": "An advisory would show whether the Indian government considers the risk to its citizens to have risen.",
+                "when": "",
+                "where": "Ministry of External Affairs"
+              }
+            ],
+            "context": [
+              "Saudi Arabia hosts a very large Indian workforce and is one of India's main suppliers of crude oil, so lasting insecurity there matters to India for both people and energy.",
+              "The Houthis are an armed movement in Yemen that has been fighting a Saudi-led coalition, and the fighting has repeatedly spilled across the border into Saudi territory."
+            ],
+            "terms": [],
+            "frameworks": {
+              "escalation": {
+                "move": "none",
+                "rung": 6,
+                "current_rung": 6,
+                "previous_rung": null,
+                "development": "The Houthis are reported to have attacked another airport in eastern Saudi Arabia, killing two people, as part of a continuing series of attacks on airports and other sites.",
+                "evidence": "The war was set at rung 6 on 12 October after strikes on Riyadh. This attack is of the same kind, targeting a Saudi airport, so it does not reach full-scale war.",
+                "next_signals": [
+                  {
+                    "rung": 7,
+                    "signal": "The Saudi-led coalition and the Houthis would be reported to be fighting across multiple fronts, for example through large-scale ground offensives alongside continuing air and missile strikes."
+                  },
+                  {
+                    "rung": 5,
+                    "signal": "The Houthis would stop attacking Saudi airports and oil sites, and Saudi authorities would reopen closed airports for normal flights."
+                  }
+                ],
+                "india_channels": [
+                  "flights",
+                  "diaspora safety",
+                  "oil"
+                ],
+                "conflict": "w1f5pudc",
+                "applied": "none",
+                "from": 6
+              }
+            }
+          },
+          "conflict": "w1f5pudc",
+          "place": {
+            "name": "Eastern Saudi Arabia",
+            "country": "Saudi Arabia",
+            "lat": 26.4,
+            "lon": 49.8,
+            "involves": [
+              "Yemen"
+            ]
+          },
+          "reports": [
+            {
+              "source": "bbc",
+              "headline": "Two killed in attack on airport in eastern Saudi Arabia, authorities say",
+              "url": "https://www.bbc.co.uk/news/articles/cqwy71ww156ro",
+              "date": "2026-10-22T09:14:48.000Z",
+              "kind": "hard",
+              "summary": "It is the latest in a series of attacks by the Houthi movement which have targeted airports and other sites in the kingdom.",
+              "summaryV": 3,
+              "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/5e3c/live/e7d9d390-cdf5-11f1-a64c-550be9e3c66b.jpg",
+              "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/5e3c/live/e7d9d390-cdf5-11f1-a64c-550be9e3c66b.jpg"
+            }
+          ],
+          "thread": "t1nrccds"
+        },
+        {
           "id": "sksfpnp",
           "headline": "Qatar, France call for opening of Hormuz and Gaza ceasefire implementation",
           "url": "https://www.aljazeera.com/news/2026/10/22/qatar-france-call-for-opening-of-hormuz-and-gaza-ceasefire-implementation",
@@ -13257,6 +13880,108 @@
       "id": "economy",
       "name": "Economy & Trade",
       "items": [
+        {
+          "id": "sj19pyt",
+          "headline": "Who blinked first? Fragile EU-China trade peace sparks new war of words",
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3371807/who-blinked-first-fragile-eu-china-trade-peace-sparks-new-war-words",
+          "source": "scmp",
+          "date": "2026-10-22T12:00:18.000Z",
+          "relevance": "medium",
+          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/22/5b3baf4a-e4d3-4b77-898b-b4561a87eaf6_91c6ab66.jpg?itok=Q1eYtuuQ&v=1792667661",
+          "why": "Less than two weeks after Brussels and Beijing struck a surprise deal to avert an escalating trade dispute, the two sides are arguing over who blinked first. India could be affected indirectly through global trade conditions.",
+          "implications": [
+            "A public quarrel so soon after the deal suggests the agreement may be fragile, which could keep trade between two of the world's largest economies uncertain.",
+            "Indian exporters selling to Europe or competing with Chinese goods may find market conditions shifting if the dispute revives, although the report does not describe any such effect."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-22T12:11:23.485Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "The report describes a dispute between the European Union and China and names no mechanism that reaches India directly. Any effect would come indirectly through shifts in trade flows or competition."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "The report gives no timetable, and any indirect effect on Indian trade would take time to appear if the deal weakens."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single outlet, the South China Morning Post, with no named official source, and the terms of the deal are not described."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "MSME exporters",
+                "direction": "unclear",
+                "what": "competition in European markets",
+                "effect": "If the EU-China dispute revives, Indian small exporters could see changes in demand or competition in European markets, but the report gives no detail.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Further statements from Brussels or Beijing on whether the recent trade deal will be kept",
+                "why": "They would show whether the fragile truce is holding or the earlier trade dispute is returning.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "The European Union and China are among India's major trading partners, and disputes between them can change where goods are sold and at what prices. Trade deals between large economies often hold only if both sides can present them as wins."
+            ],
+            "terms": [],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Surprise EU-China deal averts dispute",
+                    "detail": "Brussels and Beijing struck a deal less than two weeks ago to avert an escalating trade dispute. This set up a fragile calm between two major trading partners.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Row over who blinked first",
+                    "detail": "The rapprochement has descended into a battle over who blinked first. A public dispute over credit can weaken trust in the deal.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Possible indirect effect on Indian exporters",
+                    "detail": "If the truce fails, trade between the European Union and China could shift. Indian exporters competing in European markets may then face changed demand or competition.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The deal holds and both sides keep trade flowing without renewed measures, in which case there would be no new disturbance to global trade reaching Indian exporters."
+              }
+            }
+          },
+          "place": {
+            "name": "Brussels",
+            "country": "Belgium",
+            "lat": 50.85,
+            "lon": 4.35,
+            "involves": [
+              "China"
+            ]
+          },
+          "reports": [
+            {
+              "source": "scmp",
+              "headline": "Who blinked first? Fragile EU-China trade peace sparks new war of words",
+              "url": "https://www.scmp.com/news/china/diplomacy/article/3371807/who-blinked-first-fragile-eu-china-trade-peace-sparks-new-war-words",
+              "date": "2026-10-22T12:00:18.000Z",
+              "kind": "hard",
+              "summary": "Less than two weeks after Brussels and Beijing struck a surprise deal to avert an escalating trade dispute, their fragile rapprochement has descended into a battle over who blinked first.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/22/5b3baf4a-e4d3-4b77-898b-b4561a87eaf6_91c6ab66.jpg?itok=Q1eYtuuQ&v=1792667661"
+            }
+          ],
+          "thread": "t1vem20c"
+        },
         {
           "id": "spnaxni",
           "headline": "Russian missiles hit Kyiv as Moscow signals readiness for peace talks",
@@ -19738,6 +20463,16 @@
               "summaryV": 3,
               "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6c55/live/d85b8680-cda9-11f1-a64c-550be9e3c66b.jpg",
               "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/6c55/live/d85b8680-cda9-11f1-a64c-550be9e3c66b.jpg"
+            },
+            {
+              "source": "nyt",
+              "headline": "Global Rush to Fix PHP Security Flaw Leaves Some Websites Offline",
+              "url": "https://www.nytimes.com/2026/10/22/world/php-vulnerability-websites-cybersecurity-ai.html",
+              "date": "2026-10-22T11:48:14.000Z",
+              "kind": "hard",
+              "summary": "Governments and businesses in Kenya, the Netherlands and elsewhere were scrambling to prevent hackers from exploiting a vulnerability in PHP, a widely used programming language.",
+              "summaryV": 3,
+              "image": "https://static01.nyt.com/images/2026/10/22/multimedia/22int-website-flaws-qvzg/22int-website-flaws-qvzg-mediumSquareAt3X.jpg"
             }
           ],
           "thread": "t1b261c8"
@@ -19835,10 +20570,52 @@
               "ogTried": true,
               "descTried": true,
               "image": "https://image.cnbcfm.com/api/v1/image/108444221-1792627087371-gettyimages-2300746288-20090101261021-99-21563.jpeg?v=1792627101&w=1920&h=1080"
+            },
+            {
+              "source": "scmp",
+              "headline": "Hong Kong watchdog joins global agencies to warn of web scripting hack risks",
+              "url": "https://www.scmp.com/news/hong-kong/article/3371756/hong-kong-watchdog-warns-hacking-risks-flaws-web-programming-language",
+              "date": "2026-10-22T06:37:01.000Z",
+              "kind": "hard",
+              "summary": "A Hong Kong information security watchdog issued an “extremely high risk” warning on Thursday morning over two critical flaws in a widely used web programming language that could allow hackers to execute code remotely and take control of servers.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/22/00320106-6785-4a23-8a4d-e15c167ab16a_aebd3126.jpg?itok=5Q4PMLtp&v=1792651009"
             }
           ],
           "image": "https://image.cnbcfm.com/api/v1/image/108444221-1792627087371-gettyimages-2300746288-20090101261021-99-21563.jpeg?v=1792627101&w=1920&h=1080",
           "thread": "t1b261c8"
+        },
+        {
+          "id": "s15l728e",
+          "headline": "Inside India newsletter: Asia’s hottest data center market aims to quell concerns over water and power use",
+          "url": "https://www.cnbc.com/2026/10/22/india-data-center-google-amazon.html",
+          "source": "cnbc",
+          "date": "2026-10-22T00:07:48.000Z",
+          "relevance": "medium",
+          "why": "",
+          "implications": [],
+          "place": {
+            "name": "India",
+            "country": "India",
+            "lat": 20.6,
+            "lon": 78.9
+          },
+          "reports": [
+            {
+              "source": "cnbc",
+              "headline": "Inside India newsletter: Asia’s hottest data center market aims to quell concerns over water and power use",
+              "url": "https://www.cnbc.com/2026/10/22/india-data-center-google-amazon.html",
+              "date": "2026-10-22T00:07:48.000Z",
+              "kind": "feature",
+              "summary": "India is grappling with growing public anger against data centers that pose a threat to its ambitions to host the whole world's data.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://image.cnbcfm.com/api/v1/image/108436227-1792484468325-gettyimages-2299069320-AFP_C83L2RR.jpeg?v=1792484492&w=1920&h=1080"
+            }
+          ],
+          "image": "https://image.cnbcfm.com/api/v1/image/108436227-1792484468325-gettyimages-2299069320-AFP_C83L2RR.jpeg?v=1792484492&w=1920&h=1080",
+          "thread": "tsluzs0"
         },
         {
           "id": "s19f1z8u",
@@ -22654,6 +23431,159 @@
       "name": "Policy & Governance",
       "items": [
         {
+          "id": "s1vyzdnu",
+          "headline": "Former U.S. ambassador on Trump's recent moves to embrace Russia",
+          "url": "https://www.npr.org/2026/10/20/nx-s1-6007865/former-u-s-ambassador-on-trumps-recent-moves-to-embrace-russia",
+          "source": "npr",
+          "date": "2026-10-20T11:03:48.000Z",
+          "relevance": "medium",
+          "why": "",
+          "implications": [],
+          "reports": [
+            {
+              "source": "npr",
+              "headline": "Former U.S. ambassador on Trump's recent moves to embrace Russia",
+              "url": "https://www.npr.org/2026/10/20/nx-s1-6007865/former-u-s-ambassador-on-trumps-recent-moves-to-embrace-russia",
+              "date": "2026-10-20T11:03:48.000Z",
+              "kind": "feature",
+              "summary": "NPR's Steve Inskeep speaks with former U.S. Ambassador to Russia Michael McFaul about President Trump's latest embrace of Russia and what it means for Ukraine and any hopes of peace.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true
+            },
+            {
+              "source": "npr",
+              "headline": "Current U.S. support for Ukraine looks very different than it did",
+              "url": "https://www.npr.org/2026/10/20/nx-s1-6009227/current-u-s-support-for-ukraine-looks-very-different-than-it-did",
+              "date": "2026-10-20T20:27:23.000Z",
+              "kind": "feature",
+              "summary": "NPR's Scott Detrow talks with William Taylor, former U.S. Ambassador to Ukraine, about President Trump's recent moves to support Russia and how that compares to past administrations.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true
+            },
+            {
+              "source": "npr",
+              "headline": "Former U.S. Ambassador to Ukraine on Trump's turn toward Russia",
+              "url": "https://www.npr.org/2026/10/21/nx-s1-6009376/former-u-s-ambassador-to-ukraine-on-trumps-turn-toward-russia",
+              "date": "2026-10-21T10:56:00.000Z",
+              "kind": "feature",
+              "summary": "NPR's Steve Inskeep asks former U.S. Ambassador to Ukraine John Herbst about President Trump's embrace of Russia as envoy Steve Witkoff heads to Moscow after meeting Ukraine's Volodymyr Zelenskyy.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true
+            },
+            {
+              "source": "npr",
+              "headline": "Former U.S. Ambassador to Ukraine William Taylor on Trump's embrace of Russia",
+              "url": "https://www.npr.org/2026/10/22/nx-s1-6010509/former-u-s-ambassador-to-ukraine-william-taylor-on-trumps-embrace-of-russia",
+              "date": "2026-10-22T09:59:02.000Z",
+              "kind": "feature",
+              "summary": "NPR's Steve Inskeep asks former U.S. Ambassador to Ukraine William Taylor about President Trump's embrace of Russia as envoy Steve Witkoff visits Moscow after meeting Ukraine's Volodymyr Zelenskyy.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true
+            }
+          ],
+          "thread": "tq9ru94"
+        },
+        {
+          "id": "sgkhkbd",
+          "headline": "India seeks to expand navy’s reach with 4 amphibious warships",
+          "url": "https://www.scmp.com/week-asia/politics/article/3371775/india-seeks-expand-navys-reach-4-amphibious-warships",
+          "source": "scmp",
+          "date": "2026-10-22T09:00:12.000Z",
+          "relevance": "medium",
+          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/22/b1bcc58f-f129-4d55-8ea3-62a2c461bea7_b861c1b7.jpg?itok=m_4bqWjR&v=1792657416",
+          "why": "The South China Morning Post reports that India plans to acquire four large amphibious warships to strengthen naval logistics and humanitarian missions across the Indian Ocean. Security experts say their value depends on how the navy uses them in a crisis.",
+          "implications": [
+            "Ships that can carry supplies and personnel could let the navy deliver relief to Indian Ocean countries more readily, which may add to India's standing as a regional first responder.",
+            "Experts quoted by the newspaper say the ships' value depends on how effectively the navy uses them in a crisis, so buying them alone does not guarantee capability."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-22T12:09:03.458Z",
+            "tier": "quick",
+            "primary": "winners_losers",
+            "complement": null,
+            "features": [
+              "allocation"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "The report describes a planned naval acquisition with no direct channel to prices, jobs or travel. Any effect on households would be indirect, through defence spending or Indian Ocean security."
+            },
+            "horizon": {
+              "value": "years",
+              "reason": "The ships are only planned, and acquiring large warships normally takes years from approval to delivery and operational use."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single outlet, the South China Morning Post, quoting unnamed security experts, with no official Indian statement on cost, timing or approval in the report."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Government finances",
+                "direction": "up",
+                "what": "defence spending",
+                "effect": "Buying four large warships would add to the defence budget, which could limit the money available for other government priorities.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "A formal government approval, tender or contract announcement for the four amphibious warships",
+                "why": "It would confirm that the plan has moved from intention to a funded acquisition, and would show its cost and timeline.",
+                "when": "",
+                "where": "Ministry of Defence"
+              }
+            ],
+            "context": [
+              "Amphibious warships are large vessels that carry troops, vehicles, helicopters and landing craft, and navies commonly use them for disaster relief and evacuations as well as for military tasks.",
+              "Major defence acquisitions in India usually pass through several approval stages and take years from planning to delivery, and the cost is met from the defence budget."
+            ],
+            "terms": [
+              {
+                "term": "amphibious warships",
+                "meaning": "Large naval ships built to carry troops, vehicles and landing craft close to shore, and also used to deliver supplies and humanitarian aid."
+              }
+            ],
+            "frameworks": {
+              "winners_losers": {
+                "groups": [
+                  {
+                    "group": "Government finances",
+                    "direction": "lose",
+                    "directness": "indirect",
+                    "mechanism": "Acquiring four large warships would be paid for from the defence budget, which could reduce the room for other public spending if the plan goes ahead."
+                  }
+                ],
+                "not_affected": "Household consumers such as fuel users and food shoppers are not affected, because the report describes only a naval acquisition plan and mentions no change in prices or supplies."
+              }
+            }
+          },
+          "place": {
+            "name": "New Delhi",
+            "country": "India",
+            "lat": 28.6,
+            "lon": 77.2
+          },
+          "reports": [
+            {
+              "source": "scmp",
+              "headline": "India seeks to expand navy’s reach with 4 amphibious warships",
+              "url": "https://www.scmp.com/week-asia/politics/article/3371775/india-seeks-expand-navys-reach-4-amphibious-warships",
+              "date": "2026-10-22T09:00:12.000Z",
+              "kind": "hard",
+              "summary": "India’s planned acquisition of four large amphibious warships would strengthen its ability to support naval logistics and humanitarian missions across the Indian Ocean, with security experts saying their value depends on how the navy could effectively utilise them during a crisis.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/22/b1bcc58f-f129-4d55-8ea3-62a2c461bea7_b861c1b7.jpg?itok=m_4bqWjR&v=1792657416"
+            }
+          ],
+          "thread": "t1iuok8q"
+        },
+        {
           "id": "s1j34yac",
           "headline": "‘Open War’ Between Afghanistan and Pakistan Adds a Volatile Element",
           "url": "https://www.nytimes.com/2026/10/22/world/asia/afghanistan-pakistan-proxy-war.html",
@@ -23475,52 +24405,6 @@
               }
             ]
           }
-        },
-        {
-          "id": "s1vyzdnu",
-          "headline": "Former U.S. ambassador on Trump's recent moves to embrace Russia",
-          "url": "https://www.npr.org/2026/10/20/nx-s1-6007865/former-u-s-ambassador-on-trumps-recent-moves-to-embrace-russia",
-          "source": "npr",
-          "date": "2026-10-20T11:03:48.000Z",
-          "relevance": "medium",
-          "why": "",
-          "implications": [],
-          "reports": [
-            {
-              "source": "npr",
-              "headline": "Former U.S. ambassador on Trump's recent moves to embrace Russia",
-              "url": "https://www.npr.org/2026/10/20/nx-s1-6007865/former-u-s-ambassador-on-trumps-recent-moves-to-embrace-russia",
-              "date": "2026-10-20T11:03:48.000Z",
-              "kind": "feature",
-              "summary": "NPR's Steve Inskeep speaks with former U.S. Ambassador to Russia Michael McFaul about President Trump's latest embrace of Russia and what it means for Ukraine and any hopes of peace.",
-              "summaryV": 3,
-              "ogTried": true,
-              "descTried": true
-            },
-            {
-              "source": "npr",
-              "headline": "Current U.S. support for Ukraine looks very different than it did",
-              "url": "https://www.npr.org/2026/10/20/nx-s1-6009227/current-u-s-support-for-ukraine-looks-very-different-than-it-did",
-              "date": "2026-10-20T20:27:23.000Z",
-              "kind": "feature",
-              "summary": "NPR's Scott Detrow talks with William Taylor, former U.S. Ambassador to Ukraine, about President Trump's recent moves to support Russia and how that compares to past administrations.",
-              "summaryV": 3,
-              "ogTried": true,
-              "descTried": true
-            },
-            {
-              "source": "npr",
-              "headline": "Former U.S. Ambassador to Ukraine on Trump's turn toward Russia",
-              "url": "https://www.npr.org/2026/10/21/nx-s1-6009376/former-u-s-ambassador-to-ukraine-on-trumps-turn-toward-russia",
-              "date": "2026-10-21T10:56:00.000Z",
-              "kind": "feature",
-              "summary": "NPR's Steve Inskeep asks former U.S. Ambassador to Ukraine John Herbst about President Trump's embrace of Russia as envoy Steve Witkoff heads to Moscow after meeting Ukraine's Volodymyr Zelenskyy.",
-              "summaryV": 3,
-              "ogTried": true,
-              "descTried": true
-            }
-          ],
-          "thread": "tq9ru94"
         },
         {
           "id": "s19mcmea",
@@ -27675,7 +28559,7 @@
     "wars": {
       "linked": 0,
       "seeded": 0,
-      "active": 4
+      "active": 5
     },
     "places": {
       "labelled": 0,
@@ -27683,20 +28567,20 @@
       "waiting": 120,
       "failedBatches": 3
     },
-    "analysed": 172,
-    "added": 6,
-    "merged": 7,
-    "failedBatches": 3,
+    "analysed": 216,
+    "added": 8,
+    "merged": 6,
+    "failedBatches": 4,
     "feeds": {
       "bbc": {
         "feedsOk": 6,
         "feedsFailed": 0,
-        "items": 163
+        "items": 161
       },
       "guardian": {
         "feedsOk": 7,
         "feedsFailed": 0,
-        "items": 200
+        "items": 203
       },
       "npr": {
         "feedsOk": 4,
@@ -27706,7 +28590,7 @@
       "aljazeera": {
         "feedsOk": 1,
         "feedsFailed": 0,
-        "items": 16
+        "items": 12
       },
       "mercopress": {
         "feedsOk": 3,
@@ -27736,12 +28620,12 @@
       "dw": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 32
+        "items": 31
       },
       "france24": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 77
+        "items": 78
       },
       "africanews": {
         "feedsOk": 1,
@@ -27751,22 +28635,22 @@
       "scmp": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 140
+        "items": 141
       }
     },
     "shareImages": {
       "tried": 4,
-      "found": 4,
+      "found": 3,
       "summaries": 0
     },
     "threads": {
-      "assigned": 6,
-      "created": 1,
+      "assigned": 8,
+      "created": 3,
       "failedBatches": 0
     },
     "summaries": {
-      "written": 4,
-      "due": 4
+      "written": 0,
+      "due": 5
     },
     "kinds": {
       "labelled": 0,
@@ -27774,75 +28658,53 @@
       "failedBatches": 0
     },
     "frames": {
-      "done": 12,
-      "waiting": 7,
-      "failedBatches": 0
+      "done": 0,
+      "waiting": 9,
+      "failedBatches": 0,
+      "budgetStopped": true
     },
     "stats": {
-      "searched": 2,
+      "searched": 1,
       "found": 0,
-      "reused": 1,
+      "reused": 0,
       "none": 1,
       "failed": 0,
-      "proposed": 5,
-      "droppedPoints": 5,
+      "proposed": 0,
+      "droppedPoints": 0,
       "pagesFetched": 0,
       "samples": [
         {
-          "headline": "US envoy to meet Putin in Russia as Zelensky says intelligence sharing 'works no",
-          "result": "reused saved series"
-        },
-        {
-          "headline": "Saudi Arabia Postpones Its FII Investment Event After Houthi Attacks",
-          "result": "no figure found on an official page",
-          "proposed": 5,
-          "checked": 0,
-          "pagesFetched": 0
+          "headline": "US orders departure of personnel from Saudi Arabia, citing Houthi threat",
+          "result": "no saved series; search kept for in-depth stories"
         }
       ]
     },
     "models": {
       "filter": {
         "model": "claude-haiku-5-5",
-        "calls": 21,
-        "inputTokens": 78030,
-        "outputTokens": 45029,
-        "cost": 0.0301
+        "calls": 20,
+        "inputTokens": 87667,
+        "outputTokens": 48688,
+        "cost": 0.033
       },
       "analysis_quick": {
         "model": "claude-sonnet-5-5",
-        "calls": 8,
-        "inputTokens": 25406,
-        "outputTokens": 25998,
-        "cost": 0.3109
-      },
-      "stats": {
-        "model": "claude-sonnet-5-5",
-        "calls": 1,
-        "inputTokens": 137510,
-        "outputTokens": 1508,
-        "searches": 3,
-        "fetches": 4,
-        "cost": 0.3201
-      },
-      "analysis": {
-        "model": "claude-opus-5-5",
-        "calls": 3,
-        "inputTokens": 10626,
-        "outputTokens": 16252,
-        "cost": 0.3675
+        "calls": 4,
+        "inputTokens": 13256,
+        "outputTokens": 16164,
+        "cost": 0.1882
       },
       "threads": {
         "model": "claude-sonnet-5-5",
-        "calls": 5,
-        "inputTokens": 12843,
-        "outputTokens": 1631,
-        "cost": 0.0421
+        "calls": 1,
+        "inputTokens": 7186,
+        "outputTokens": 724,
+        "cost": 0.0216
       }
     },
     "spend": {
-      "thisDesk": 1.0707,
-      "today": 2.7037,
+      "thisDesk": 0.2429,
+      "today": 3.6446,
       "cap": 6
     }
   },
