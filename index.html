@@ -490,6 +490,24 @@ footer .disc{display:block;margin:0 0 4px}
 .more{margin:16px 0 0;border:1px solid var(--rule);background:var(--card);border-radius:999px;padding:9px 18px;font-size:14px;font-weight:600;cursor:pointer}
 
 .quiet{margin:26px 0 0;font-size:14px;color:var(--ink-3)}
+.minor{margin:34px 0 0;border-top:1px solid var(--rule);padding-top:16px}
+.minor-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 14px;margin:0 0 8px}
+.minor-head h3{margin:0;font-size:17px;letter-spacing:-.01em}
+.minor-head p{margin:0;font-size:13.5px;color:var(--ink-3)}
+.minor-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 28px}
+.minor-list li{border-bottom:1px solid var(--rule);min-width:0}
+.mrow{display:grid;gap:3px;width:100%;text-align:left;background:none;border:0;padding:11px 0;color:inherit;font:inherit;cursor:pointer}
+.mrow:hover .mn-h{text-decoration:underline;text-decoration-color:var(--sc,var(--ink-3))}
+.mrow:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:6px}
+.mrow .mn-k{display:flex;align-items:center;gap:6px;font-size:11.5px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--sc,var(--ink-3))}
+.mrow .mn-k .nc-dot{width:6px;height:6px;border-radius:50%;background:var(--sc,var(--ink-3));display:inline-block}
+.mrow .mn-h{font-size:15px;font-weight:600;line-height:1.35;color:var(--ink)}
+.mrow .mn-if{font-size:13.5px;color:var(--ink-2)}
+.mrow .mn-if::before{content:"";display:inline-block;width:7px;height:7px;border:1.5px solid var(--accent);border-radius:50%;margin-right:6px;vertical-align:1px}
+.mrow .mn-meta{font-size:12.5px;color:var(--ink-3)}
+.watch-note{display:flex;flex-wrap:wrap;gap:4px 10px;align-items:baseline;margin:10px 0 4px;padding:10px 14px;border:1px solid var(--rule);border-left:3px solid var(--accent);border-radius:10px;background:var(--bg-2);font-size:14px;color:var(--ink-2)}
+.watch-note b{color:var(--accent);font-size:12px;letter-spacing:.06em;text-transform:uppercase}
+@media (max-width:760px){.minor-list{grid-template-columns:minmax(0,1fr)}}
 .quiet b{color:var(--ink-2);font-weight:600}
 .state{padding:28px 22px;background:var(--bg-2);border-radius:16px;color:var(--ink-2)}
 
@@ -1328,8 +1346,19 @@ function inRange(it){ if(!range) return true; var t=Date.parse(latestDate(it)); 
 loadSeen();
 function isDeveloping(it){ var r=reportsOf(it); if(r.length<2) return false; var ts=r.map(function(x){return Date.parse(x.date);}).filter(function(t){return !isNaN(t);}); return ts.length>1 && (Math.max.apply(null,ts)-Math.min.apply(null,ts))>2*36e5; }
 
-/* Rank for the Top Story: relevance, corroboration, freshness. */
-function score(e){
+/* Rank (v73): the engine's priority score (0-100) fading with age, half the weight after 36 hours.
+   Stories saved before v73 have no priority: a fallback from relevance, analysis and outlets. */
+var HALF_LIFE_H=36, WATCH_SHOW=10, BRIEF_SHOW=10, BRIEF_HOURS=48;
+function priorityOf(it){
+  if(typeof it.priority==="number") return it.priority;
+  var n=outletsOf(it).length, base=it.analysis ? (it.relevance==="high"?60:45)+15 : 25;
+  return Math.min(100, base+Math.min(15,5*Math.max(0,n-1)));
+}
+function ageHours(it){ var a=(Date.now()-Date.parse(latestDate(it)||0))/36e5; return isNaN(a)?999:Math.max(0,a); }
+function rank(e){ return priorityOf(e.it)*Math.pow(0.5, ageHours(e.it)/HALF_LIFE_H); }
+function isMinor(it){ return it.stage==="watch" || it.stage==="brief" || it.stage==="expired"; }
+function score(e){ return rank(e); }
+function scoreOld(e){
   var age=(Date.now()-Date.parse(latestDate(e.it)||0))/36e5; if(isNaN(age)) age=999;
   // Impact on India matters most; corroboration and freshness break ties.
   return (e.it.relevance==="high"?5:1) + (outletsOf(e.it).length>1?1:0) + (age<12?2:age<48?1:0);
@@ -1845,16 +1874,44 @@ function render(doc){
   }
   if(!allEvents.length){ main.appendChild(el("div","state", view==="global" ? "No India-relevant stories yet. The desk checks its outlets throughout the day, and new stories will appear here automatically." : "No stories of national significance yet. The desk checks The Hindu and Mint throughout the day, and new stories will appear here automatically.")); return; }
 
-  var list = tab==="all" ? events.slice() : events.filter(function(e){return e.sector.id===tab;});
-  list.sort(function(a,b){ return String(latestDate(b.it)).localeCompare(String(latestDate(a.it))); });
+  var pool = tab==="all" ? events.slice() : events.filter(function(e){return e.sector.id===tab;});
+  var byRank=function(a,b){ return rank(b)-rank(a) || String(latestDate(b.it)).localeCompare(String(latestDate(a.it))); };
+  var watching=pool.filter(function(e){ return e.it.stage==="watch"; }).sort(byRank).slice(0,WATCH_SHOW);
+  var briefs=pool.filter(function(e){ return e.it.stage==="brief" && ageHours(e.it)<=BRIEF_HOURS; }).sort(byRank).slice(0,BRIEF_SHOW);
+  var list=pool.filter(function(e){ return !isMinor(e.it); }).sort(byRank);
 
-  mosaicInto(main, list);
+  if(list.length) mosaicInto(main, list);
+  if(watching.length) main.appendChild(minorSection("Watching","Small today. Each will be analysed if the event named below happens.",watching,true));
+  if(briefs.length) main.appendChild(minorSection("In brief","Smaller stories from the last two days, without analysis.",briefs,false));
   if(tab==="all"){
     var empty=(doc.sectors||[]).filter(function(s){return !(s.items||[]).length;});
     if(empty.length){ var q=el("p","quiet"); q.appendChild(el("b",null, view==="global" ? "No India-relevant stories yet in: " : "No national stories yet in: ")); q.appendChild(document.createTextNode(empty.map(function(s){return s.name;}).join(" · "))); main.appendChild(q); }
   }
 }
 
+/* Watching and In brief: compact lists at the foot of the feed (v73). */
+function minorSection(title, note, list, watching){
+  var sec=el("section","minor"+(watching?" watching":"")), h=el("div","minor-head");
+  h.appendChild(el("h3",null,title)); h.appendChild(el("p",null,note)); sec.appendChild(h);
+  var ul=el("ul","minor-list");
+  list.forEach(function(e){
+    var li=el("li"), b=el("button","mrow"); b.type="button"; b.style.setProperty("--sc","var(--s-"+e.sector.id+")");
+    var k=el("span","mn-k"); k.appendChild(el("i","nc-dot")); k.appendChild(document.createTextNode(e.sector.name)); b.appendChild(k);
+    b.appendChild(el("span","mn-h",e.it.headline));
+    if(watching && e.it.watch && e.it.watch.grows_if) b.appendChild(el("span","mn-if","Analysed if: "+e.it.watch.grows_if));
+    var outs=outletsOf(e.it).map(function(o){return OUTLET[o]||o;});
+    b.appendChild(el("span","mn-meta",outs.slice(0,2).join(" · ")+(when(latestDate(e.it))?" · "+when(latestDate(e.it)):"")));
+    b.addEventListener("click",function(){ openSheet(e); });
+    li.appendChild(b); ul.appendChild(li);
+  });
+  sec.appendChild(ul); return sec;
+}
+function watchNote(it){
+  if(it.stage!=="watch" || !it.watch) return null;
+  var n=el("div","watch-note"); n.appendChild(el("b",null,"Watching"));
+  n.appendChild(el("span",null,"Not analysed yet, because the effect on India is small so far. It will be analysed if: "+(it.watch.grows_if||"the story grows")+"."));
+  return n;
+}
 function mosaicInto(main, list){
   // Mosaic: blocks of different-sized tiles that always fill the full width, so there are no gaps.
   // The lead must be recent: only stories with a report in the last 48 hours compete (all stories if none are that fresh).
@@ -2574,7 +2631,7 @@ function openSheet(e){
   sheetView=e.view||view;
   var it=e.it, d=$("sheet"), body=$("sheetBody"); body.textContent=""; body.scrollTop=0;
   body.style.setProperty("--sc","var(--s-"+e.sector.id+")");
-  if(storyLayout()==="ripple"){ openRipple(e, d, body); return; }
+  if(storyLayout()==="ripple"){ openRipple(e, d, body); var wn=watchNote(it), rt=body.querySelector(".rp-top"); if(wn){ if(rt) rt.parentNode.insertBefore(wn, rt.nextSibling); else body.insertBefore(wn, body.firstChild); } return; }
   body.classList.remove("rp");
   var lr=leadReport(it), picSrc=(lr.image ? lr : it);
   var ht=thumb(picSrc, e.sector.id), fig=el("figure","hero"), row=el("div","hero-row"+(ht?"":" solo"));
@@ -2594,6 +2651,7 @@ function openSheet(e){
   var h=el("h2",null,it.headline); h.id="sheetTitle"; head.appendChild(h);
   head.appendChild(byline(it,true));
   body.appendChild(head);
+  var wn2=watchNote(it); if(wn2) body.appendChild(wn2);
 
   var hasFw=!!(it.analysis && it.analysis.v>=2 && it.analysis.frameworks);
   var left=el("div","panel"+(hasFw?" full":""));
