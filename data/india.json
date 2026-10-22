@@ -2,12 +2,350 @@
   "schema": 4,
   "region": "India",
   "since": "2026-10-02",
-  "updatedAt": "2026-10-21T22:00:00.861Z",
+  "updatedAt": "2026-10-22T05:13:15.207Z",
   "sectors": [
     {
       "id": "energy",
       "name": "Energy",
       "items": [
+        {
+          "id": "s6n2u6j",
+          "headline": "US orders departure of personnel from Saudi Arabia, citing Houthi threat",
+          "url": "https://www.aljazeera.com/news/2026/10/21/us-orders-departure-of-personnel-from-saudi-arabia-citing-houthi-threat",
+          "source": "aljazeera",
+          "date": "2026-10-21T23:13:35.000Z",
+          "relevance": "medium",
+          "why": "The United States ordered non-emergency staff out of Saudi Arabia after Houthi strikes on an airport and an oil field killed at least three people. Saudi Arabia supplies crude to India and hosts many Indian workers.",
+          "implications": [
+            "Strikes on a Saudi oil field could raise the risk premium on Gulf crude, which may push up costs for Indian refiners and eventually petrol, diesel and liquefied petroleum gas prices.",
+            "An attack on a Saudi airport could disrupt flights between India and the kingdom, affecting workers, families and pilgrims who travel on those routes.",
+            "CNBC reports that Washington is readying strikes on Iran after the US midterm elections, which could widen the conflict across the Gulf, where many Indians live and work.",
+            "A US decision to withdraw diplomats signals that Washington judges the security risk in Saudi Arabia to be rising, and other governments may reassess advice for their own citizens."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-22T05:10:58.350Z",
+            "tier": "standard",
+            "primary": "disruption_map",
+            "complement": null,
+            "features": [
+              "disruption",
+              "armed_conflict",
+              "fast_moving",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "high",
+              "reason": "The conflict reaches India through Saudi crude supplies, a top Indian import, and through the safety and travel of the many Indians living in or visiting Saudi Arabia."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "The timing depends on whether the Houthi attacks on Saudi energy and transport sites continue and whether a wider US–Iran confrontation follows."
+            },
+            "confidence": {
+              "level": "high",
+              "reason": "Al Jazeera, BBC News and CNBC agree on the State Department departure order and the strikes, but CNBC's report of planned US strikes on Iran is unconfirmed."
+            },
+            "outlets": 3,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "up",
+                "what": "fuel price pressure",
+                "effect": "Attacks on Saudi oil facilities could raise global crude prices, which may raise Indian refiners' costs and later feed into petrol, diesel and cooking gas prices.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Gulf & overseas workers and families",
+                "direction": "unclear",
+                "what": "safety of Indian workers",
+                "effect": "Indian workers in Saudi Arabia may face greater security risks if Houthi strikes on airports and oil fields continue, which could worry families who depend on their remittances.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Travellers & pilgrims",
+                "direction": "down",
+                "what": "flight availability",
+                "effect": "Strikes on a Saudi airport could disrupt flights from India, affecting pilgrims and other travellers heading to the kingdom.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Further Houthi strikes on Saudi airports, oil fields or other energy facilities",
+                "why": "Repeated attacks would show whether the threat to Saudi crude output and air travel is growing or contained.",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "US military strikes on Iran following the midterm elections",
+                "why": "Such strikes would signal a wider regional conflict touching Gulf oil supplies and Indian communities across the region.",
+                "when": "after the midterms",
+                "where": ""
+              },
+              {
+                "what": "Updated travel or safety advisories for Indian nationals in Saudi Arabia",
+                "why": "A new advisory would show whether India judges the risk to its citizens to have risen.",
+                "when": "",
+                "where": "Ministry of External Affairs, India"
+              }
+            ],
+            "context": [
+              "India imports most of the crude oil it uses, and Saudi Arabia has long been one of its largest suppliers, so supply disruptions or price spikes there feed into Indian fuel costs.",
+              "Saudi Arabia hosts a large Indian workforce whose remittances support many households, especially in southern states, and it is the destination for Indian Hajj and Umrah pilgrims.",
+              "The Houthis are a Yemen-based armed movement aligned with Iran that has previously launched missile and drone attacks on Saudi territory and on shipping near the Red Sea."
+            ],
+            "terms": [
+              {
+                "term": "Houthis",
+                "meaning": "An Iran-aligned armed movement that controls much of northern Yemen and has attacked Saudi Arabia and shipping in the past."
+              },
+              {
+                "term": "non-emergency staff",
+                "meaning": "Embassy employees whose roles are not essential during a crisis, whom a government orders home when it judges the local security risk to be high."
+              }
+            ],
+            "frameworks": {
+              "disruption_map": {
+                "node": {
+                  "name": "Saudi airport and oil field struck by Houthis",
+                  "type": "other",
+                  "status": "unknown",
+                  "as_of": "2026-10-22"
+                },
+                "cause": {
+                  "text": "Iran-aligned Houthi forces carried out strikes on a Saudi airport and an oil field, killing at least three people, according to BBC News and CNBC.",
+                  "status": "confirmed"
+                },
+                "flows": [
+                  {
+                    "flow": "crude",
+                    "india_link": "Saudi Arabia is a major supplier of crude oil to Indian refiners. Damage or threats to Saudi oil fields could tighten supply and raise prices for Indian fuel users.",
+                    "basis": "inferred"
+                  },
+                  {
+                    "flow": "air passengers",
+                    "india_link": "Indian workers, families and pilgrims fly regularly between India and Saudi airports. Attacks on airports could interrupt these journeys.",
+                    "basis": "inferred"
+                  }
+                ],
+                "alternatives": [],
+                "duration": "not reported"
+              }
+            }
+          },
+          "conflict": "w1f5pudc",
+          "place": {
+            "name": "Riyadh",
+            "country": "Saudi Arabia",
+            "lat": 24.71,
+            "lon": 46.68,
+            "involves": [
+              "United States",
+              "Yemen"
+            ]
+          },
+          "reports": [
+            {
+              "source": "aljazeera",
+              "headline": "US orders departure of personnel from Saudi Arabia, citing Houthi threat",
+              "url": "https://www.aljazeera.com/news/2026/10/21/us-orders-departure-of-personnel-from-saudi-arabia-citing-houthi-threat",
+              "date": "2026-10-21T23:13:35.000Z",
+              "kind": "hard",
+              "summary": "US State Department says Iran-aligned Houthis have 'increasingly ⁠⁠engaged in hostilities' against Saudi Arabia.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/ap_6ad938b69c56d-1792620726.jpg?resize=1920%2C1440"
+            },
+            {
+              "source": "bbc",
+              "headline": "US orders some diplomats to leave Saudi Arabia as Houthi attacks escalate",
+              "url": "https://www.bbc.co.uk/news/articles/c6x2vpk93770o",
+              "date": "2026-10-22T01:07:34.000Z",
+              "kind": "hard",
+              "summary": "The warning to US officials comes as at least three people die in the latest strikes at an airport and an oil field.",
+              "summaryV": 3,
+              "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6998/live/cec97250-cdb1-11f1-bc2e-018d645d8d21.jpg",
+              "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/6998/live/cec97250-cdb1-11f1-bc2e-018d645d8d21.jpg"
+            },
+            {
+              "source": "cnbc",
+              "headline": "U.S. pulls diplomats from Saudi Arabia as it reportedly readies Iran strikes after midterms",
+              "url": "https://www.cnbc.com/2026/10/22/us-iran-trump-hormuz-.html",
+              "date": "2026-10-22T04:35:54.000Z",
+              "kind": "hard",
+              "summary": "The U.S. ordered non-emergency staff out of Saudi Arabia after Houthi strikes on an airport and an oil field, reviving fears of a widening regional conflict.",
+              "summaryV": 3
+            }
+          ],
+          "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/ap_6ad938b69c56d-1792620726.jpg?resize=1920%2C1440",
+          "thread": "tq5ix5r"
+        },
+        {
+          "id": "s103h3wi",
+          "headline": "Trump makes Russia-friendly moves as he looks for a way to end the war with Ukraine",
+          "url": "https://www.npr.org/2026/10/20/nx-s1-6007897/trump-makes-russia-friendly-moves-as-he-looks-for-a-way-to-end-the-war-with-ukraine",
+          "source": "npr",
+          "date": "2026-10-20T11:03:52.000Z",
+          "relevance": "medium",
+          "why": "President Trump has moved towards Russia, including a reported Russia diesel deal and sanctions pause, while seeking an end to the Ukraine war. Any easing of sanctions could change the terms on which India buys Russian oil.",
+          "implications": [
+            "The Guardian reports a sanctions pause on Russia, which could ease compliance pressure on Indian refiners that buy Russian crude, though the details and scope have not been reported.",
+            "NPR reports that high energy costs ahead of the US midterms are driving Trump's push, so his policy may shift again depending on domestic political pressure.",
+            "Republican lawmakers are threatening to withdraw support for Trump's agenda, which could limit or reverse the Russia-friendly measures and keep uncertainty high for oil importers such as India."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-22T05:10:58.351Z",
+            "tier": "standard",
+            "primary": "escalation",
+            "complement": null,
+            "features": [
+              "armed_conflict",
+              "trade_flow",
+              "fast_moving",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The story reaches India mainly through US sanctions policy on Russian oil, which shapes how Indian refiners buy Russian crude; the reported measures are not yet detailed."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Any change to sanctions takes time to affect oil contracts and shipping, and US policy remains unsettled amid Republican pushback before the midterms."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "NPR, The Guardian, France 24 and ABC News describe Trump's pivot, but the diesel deal and sanctions pause rest on The Guardian's summary without official detail."
+            },
+            "outlets": 4,
+            "affected": [
+              {
+                "group": "Importers & traders",
+                "direction": "mixed",
+                "what": "Russian oil sanctions compliance",
+                "effect": "Indian refiners buying Russian crude could face lighter US sanctions risk if the pause holds, but shifting US policy keeps contract planning uncertain.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "fuel price outlook",
+                "effect": "Easier Russian oil and diesel flows could soften global fuel prices that feed into Indian pump prices, but the effect depends on how far sanctions actually change.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Publication of the terms of the US sanctions pause and the Russia diesel deal",
+                "why": "The details would show whether Indian purchases of Russian oil face fewer restrictions.",
+                "when": "",
+                "where": "US Treasury Department"
+              },
+              {
+                "what": "Republican lawmakers acting to block or reverse Trump's Russia measures",
+                "why": "Successful pushback would signal that any sanctions relief may be short-lived.",
+                "when": "",
+                "where": "US Congress"
+              },
+              {
+                "what": "A renewed energy ceasefire between Russia and Ukraine taking effect",
+                "why": "A truce in force would ease strikes on energy infrastructure that are disturbing global fuel markets.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "India has become one of the largest buyers of Russian crude since 2022, and US sanctions on Russian oil have affected how Indian refiners pay for and ship those cargoes.",
+              "Diplomatic shifts change sanctions and price expectations, but they do not alter the battlefield; strikes on energy infrastructure continue to affect global fuel markets until fighting actually stops."
+            ],
+            "terms": [
+              {
+                "term": "sanctions pause",
+                "meaning": "A temporary suspension of economic penalties, here US measures against Russia, which can change who may legally trade with targeted Russian firms."
+              },
+              {
+                "term": "GOP",
+                "meaning": "The 'Grand Old Party', a common name for the US Republican Party."
+              }
+            ],
+            "frameworks": {
+              "escalation": {
+                "move": "none",
+                "rung": 6,
+                "current_rung": 6,
+                "previous_rung": null,
+                "development": "This story adds a US diplomatic shift towards Russia, including a reported diesel deal and sanctions pause, as President Trump seeks a way to end the war.",
+                "evidence": "The reports describe diplomacy and US domestic politics, not a ceasefire, withdrawal or halt in fighting, so the war remains at the level of strikes on critical infrastructure.",
+                "next_signals": [
+                  {
+                    "rung": 7,
+                    "signal": "Russia or Ukraine launches a major new ground offensive or general mobilisation that is reported as a move to full-scale war."
+                  },
+                  {
+                    "rung": 5,
+                    "signal": "Both sides stop striking power and oil infrastructure while other military strikes continue, for example under a restored energy ceasefire."
+                  }
+                ],
+                "india_channels": [
+                  "oil",
+                  "trade"
+                ],
+                "conflict": "wzti51f",
+                "applied": "none",
+                "from": 6
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "npr",
+              "headline": "Trump makes Russia-friendly moves as he looks for a way to end the war with Ukraine",
+              "url": "https://www.npr.org/2026/10/20/nx-s1-6007897/trump-makes-russia-friendly-moves-as-he-looks-for-a-way-to-end-the-war-with-ukraine",
+              "date": "2026-10-20T11:03:52.000Z",
+              "kind": "hard",
+              "summary": "President Trump's up and down relationship with Russia is back on as he presses to find an end to the war in Ukraine amid high energy costs ahead of the U.S. midterms.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true
+            },
+            {
+              "source": "guardian",
+              "headline": "Republicans push back on Donald Trump’s wavering support for Ukraine",
+              "url": "https://www.theguardian.com/us-news/2026/oct/20/republicans-push-back-trump-ukraine-russia",
+              "date": "2026-10-20T17:32:57.000Z",
+              "kind": "hard",
+              "summary": "GOP lawmakers threaten to pull support for president’s agenda after Russia diesel deal and sanctions pause",
+              "summaryV": 3,
+              "lede": "US politics live – latest updates",
+              "image": "https://i.guim.co.uk/img/media/d47579aeaf14d8ad5d80418a2fdb2f7743db4810/665_0_5338_4272/master/5338.jpg?width=700&quality=85&auto=format&fit=max&s=8b24ace60e9d52adfbc9702ad2395c28"
+            },
+            {
+              "source": "france24",
+              "headline": "Trump faces fresh questions over ties to 'humanitarian' Putin",
+              "url": "https://www.france24.com/en/trump-faces-fresh-questions-over-ties-to-humanitarian-putin",
+              "date": "2026-10-21T18:53:28.000Z",
+              "kind": "hard",
+              "summary": "US President Donald Trump's pivot away from Ukraine has triggered fresh questions about his attachment to Russian leader Vladimir Putin, the man a top American envoy flattered on Wednesday as a \"humanitarian.",
+              "summaryV": 3,
+              "image": "https://s.france24.com/media/display/6eda9058-cd3f-11f1-84de-8bea73bbe173/w:1024/p:16x9/2026-10-21T102625Z-722811654-RC2M7OATXY8O-RTRMADP-3-UKRAINE-CRISIS-PUTIN-WITKOFF.jpg"
+            },
+            {
+              "source": "abc",
+              "headline": "The Trump about-turn that might have even surprised Putin",
+              "url": "https://www.abc.net.au/news/2026-10-22/trump-gives-putin-a-huge-victory-in-russia-ukraine-war/107295366",
+              "date": "2026-10-22T03:55:08.000Z",
+              "kind": "feature",
+              "summary": "The US president stuns even some of his own Republican colleagues by giving his Russian counterpart his biggest economic and propaganda victory since the invasion of Ukraine in 2022.",
+              "summaryV": 3,
+              "image": "https://live-production.wcms.abc-cdn.net.au/8f589c99b94569844fae00313f4b8b37?impolicy=wcms_crop_resize&cropH=1680&cropW=2983&xPos=17&yPos=77&width=862&height=485"
+            }
+          ],
+          "thread": "tq9ru94",
+          "image": "https://i.guim.co.uk/img/media/d47579aeaf14d8ad5d80418a2fdb2f7743db4810/665_0_5338_4272/master/5338.jpg?width=700&quality=85&auto=format&fit=max&s=8b24ace60e9d52adfbc9702ad2395c28",
+          "conflict": "wzti51f"
+        },
         {
           "id": "s1vngyow",
           "headline": "Russia to send first diesel tanker to the US amid Trump deal",
@@ -359,158 +697,6 @@
           "image": "https://www.aljazeera.com/wp-content/uploads/2026/05/getty_69f6fdf528-1777794549.jpg?resize=1920%2C1440",
           "thread": "t2ogxay",
           "conflict": "w1ye2krf"
-        },
-        {
-          "id": "s103h3wi",
-          "headline": "Trump makes Russia-friendly moves as he looks for a way to end the war with Ukraine",
-          "url": "https://www.npr.org/2026/10/20/nx-s1-6007897/trump-makes-russia-friendly-moves-as-he-looks-for-a-way-to-end-the-war-with-ukraine",
-          "source": "npr",
-          "date": "2026-10-20T11:03:52.000Z",
-          "relevance": "medium",
-          "why": "President Trump is making Russia-friendly moves, including a reported diesel deal and a pause in sanctions, as he seeks to end the Ukraine war amid high energy costs. Any easing of sanctions on Russian energy could affect India's crude purchases and fuel costs.",
-          "implications": [
-            "Indian refiners have been large buyers of Russian crude, so a pause in US sanctions could ease payment and shipping hurdles, though the reports do not say which sanctions are paused.",
-            "If more Russian diesel and crude can be sold legally on world markets, global fuel prices could soften, which may lower import costs for India.",
-            "Republican lawmakers are threatening to withdraw support for Trump's agenda, so the sanctions pause could be reversed or narrowed, leaving Indian buyers facing continued uncertainty.",
-            "NPR ties Trump's moves to high energy costs ahead of the US midterm elections, which suggests that domestic US politics may set the pace of any change in sanctions."
-          ],
-          "analysis": {
-            "v": 3,
-            "at": "2026-10-20T19:31:10.890Z",
-            "tier": "standard",
-            "primary": "escalation",
-            "complement": null,
-            "features": [
-              "armed_conflict",
-              "trade_flow",
-              "pending_outcome"
-            ],
-            "exposure": {
-              "level": "medium",
-              "reason": "The channel is India's purchases of Russian crude and global fuel prices. The effect is indirect and depends on the scope of the sanctions pause, which the reports do not detail."
-            },
-            "horizon": {
-              "value": "months",
-              "reason": "Any change in sanctions would take time to filter through shipping, payment and contract arrangements before it affects Indian import costs."
-            },
-            "confidence": {
-              "level": "medium",
-              "reason": "This rests on NPR and the Guardian. Details of the diesel deal and the sanctions pause appear only in the Guardian's summary and remain unspecified."
-            },
-            "outlets": 2,
-            "affected": [
-              {
-                "group": "Importers & traders",
-                "direction": "mixed",
-                "what": "Russian crude sourcing terms",
-                "effect": "Indian refiners buying Russian oil may face easier or shifting terms, depending on how far US sanctions are paused and whether the pause lasts.",
-                "basis": "inferred"
-              },
-              {
-                "group": "Fuel & LPG users",
-                "direction": "unclear",
-                "what": "petrol and diesel prices",
-                "effect": "Fuel prices for Indian consumers could ease only if more Russian supply lowers global prices and the saving is passed on to them.",
-                "basis": "inferred"
-              },
-              {
-                "group": "Government finances",
-                "direction": "mixed",
-                "what": "oil import bill",
-                "effect": "Lower global energy costs could reduce India's oil import bill, while a reversal of the sanctions pause could keep that bill elevated.",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "Republican lawmakers act to block or condition the pause in Russia sanctions",
-                "why": "It would show whether the easing of pressure on Russian energy is likely to last.",
-                "when": "",
-                "where": "US Congress"
-              },
-              {
-                "what": "Publication of the terms of the diesel deal and the sanctions pause",
-                "why": "It would show whether Russian crude sales to buyers such as India are covered by the easing.",
-                "when": "",
-                "where": "US Treasury Department"
-              },
-              {
-                "what": "The US midterm elections",
-                "why": "NPR links Trump's moves to the midterms, so the result could shape whether the Russia-friendly approach continues.",
-                "when": "",
-                "where": ""
-              }
-            ],
-            "context": [
-              "India imports most of the crude oil it refines, so changes in global oil prices and supply rules feed through to its import bill and, over time, to domestic fuel prices.",
-              "Since Russia's full-scale invasion of Ukraine, Indian refiners have bought large volumes of discounted Russian crude, while Western sanctions have shaped how such cargoes are shipped, insured and paid for.",
-              "In the United States, the executive branch can grant or withdraw sanctions relief, and Congress can push back through legislation or political pressure."
-            ],
-            "terms": [
-              {
-                "term": "midterms",
-                "meaning": "US national elections held halfway through a president's four-year term, in which control of Congress is decided."
-              },
-              {
-                "term": "GOP",
-                "meaning": "The 'Grand Old Party', a common name for the US Republican Party."
-              }
-            ],
-            "frameworks": {
-              "escalation": {
-                "current_rung": 7,
-                "evidence": "NPR describes an ongoing war between Russia and Ukraine that President Trump is seeking to end. The Guardian reports a US-Russia diesel deal and a sanctions pause while the fighting continues.",
-                "previous_rung": null,
-                "next_signals": [
-                  {
-                    "rung": 2,
-                    "signal": "A reported ceasefire or peace agreement that halts the fighting while leaving sanctions and diplomatic measures in place would mark a move down to rung 2."
-                  }
-                ],
-                "india_channels": [
-                  "oil",
-                  "trade"
-                ]
-              }
-            }
-          },
-          "reports": [
-            {
-              "source": "npr",
-              "headline": "Trump makes Russia-friendly moves as he looks for a way to end the war with Ukraine",
-              "url": "https://www.npr.org/2026/10/20/nx-s1-6007897/trump-makes-russia-friendly-moves-as-he-looks-for-a-way-to-end-the-war-with-ukraine",
-              "date": "2026-10-20T11:03:52.000Z",
-              "kind": "hard",
-              "summary": "President Trump's up and down relationship with Russia is back on as he presses to find an end to the war in Ukraine amid high energy costs ahead of the U.S. midterms.",
-              "summaryV": 3,
-              "ogTried": true,
-              "descTried": true
-            },
-            {
-              "source": "guardian",
-              "headline": "Republicans push back on Donald Trump’s wavering support for Ukraine",
-              "url": "https://www.theguardian.com/us-news/2026/oct/20/republicans-push-back-trump-ukraine-russia",
-              "date": "2026-10-20T17:32:57.000Z",
-              "kind": "hard",
-              "summary": "GOP lawmakers threaten to pull support for president’s agenda after Russia diesel deal and sanctions pause",
-              "summaryV": 3,
-              "lede": "US politics live – latest updates",
-              "image": "https://i.guim.co.uk/img/media/d47579aeaf14d8ad5d80418a2fdb2f7743db4810/665_0_5338_4272/master/5338.jpg?width=700&quality=85&auto=format&fit=max&s=8b24ace60e9d52adfbc9702ad2395c28"
-            },
-            {
-              "source": "france24",
-              "headline": "Trump faces fresh questions over ties to 'humanitarian' Putin",
-              "url": "https://www.france24.com/en/trump-faces-fresh-questions-over-ties-to-humanitarian-putin",
-              "date": "2026-10-21T18:53:28.000Z",
-              "kind": "hard",
-              "summary": "US President Donald Trump's pivot away from Ukraine has triggered fresh questions about his attachment to Russian leader Vladimir Putin, the man a top American envoy flattered on Wednesday as a \"humanitarian.",
-              "summaryV": 3,
-              "image": "https://s.france24.com/media/display/6eda9058-cd3f-11f1-84de-8bea73bbe173/w:1024/p:16x9/2026-10-21T102625Z-722811654-RC2M7OATXY8O-RTRMADP-3-UKRAINE-CRISIS-PUTIN-WITKOFF.jpg"
-            }
-          ],
-          "thread": "tq9ru94",
-          "image": "https://i.guim.co.uk/img/media/d47579aeaf14d8ad5d80418a2fdb2f7743db4810/665_0_5338_4272/master/5338.jpg?width=700&quality=85&auto=format&fit=max&s=8b24ace60e9d52adfbc9702ad2395c28",
-          "conflict": "wzti51f"
         },
         {
           "id": "sp26xye",
@@ -4864,14 +5050,14 @@
           "date": "2026-10-16T16:07:37.000Z",
           "relevance": "medium",
           "image": "https://static01.nyt.com/images/2026/10/15/multimedia/15xp-zelensky-fbcz/15xp-zelensky-fbcz-mediumSquareAt3X.jpg",
-          "why": "Renewed Ukrainian strikes on Russian refineries could disturb Russian fuel output and, through global energy markets, may eventually touch India's fuel costs.",
+          "why": "Zelensky has told the Financial Times that Ukraine will resume strikes on Russian refineries, defying a US demand, according to The New York Times. Attacks on refineries could tighten global fuel supply and affect India as an energy importer.",
           "implications": [
-            "The reports give no oil-price or India-specific effect, so any fuel-market impact is inferred and could be small.",
-            "If strikes resume and hit output, global fuel supply could tighten, which may affect India's import costs."
+            "Strikes on Russian refineries reduce Russia's fuel output, which may tighten global diesel supply and raise prices that Indian importers and refiners face.",
+            "Open defiance of a US demand shows strain between Kyiv and Washington, which could complicate Western policy on Russian energy trade that India relies on."
           ],
           "analysis": {
-            "v": 2,
-            "at": "2026-10-16T21:13:27.670Z",
+            "v": 3,
+            "at": "2026-10-22T05:12:50.054Z",
             "tier": "quick",
             "primary": "escalation",
             "complement": null,
@@ -4880,51 +5066,66 @@
               "pending_outcome"
             ],
             "exposure": {
-              "level": "low",
-              "reason": "The reports describe only a stated intent to resume strikes, with no reported effect on oil flows."
+              "level": "medium",
+              "reason": "Attacks on Russian refineries could affect global diesel and crude prices, which reach India through import costs, but the reports do not quantify any supply loss."
             },
             "horizon": {
               "value": "weeks",
-              "reason": "Strikes are only announced; any market effect would follow actual attacks."
+              "reason": "Any effect on global fuel prices would depend on how soon the strikes resume and how much refining capacity they damage."
             },
             "confidence": {
               "level": "medium",
-              "reason": "One outlet reporting Zelensky's on-record interview; no confirmation of strikes."
+              "reason": "This rests on one outlet, The New York Times, relaying an on-record interview Zelensky gave to the Financial Times, and the strikes have not yet been reported as resumed."
             },
             "outlets": 1,
             "affected": [
               {
                 "group": "Fuel & LPG users",
                 "direction": "unclear",
-                "what": "fuel prices",
+                "what": "diesel and fuel prices",
+                "effect": "If refinery strikes reduce Russian fuel exports, global diesel prices could rise, which may feed into Indian fuel costs through import prices.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "Reports of new Ukrainian strikes on Russian refineries",
+                "what": "Reports of new Ukrainian strikes on Russian refineries after the pause ends",
+                "why": "They would confirm that Kyiv has acted on its stated intention despite the US demand.",
                 "when": "",
-                "where": "Office of the President of Ukraine"
+                "where": ""
               }
             ],
+            "context": [
+              "India imports most of its crude oil, so disruptions to major energy producers and exporters in a war tend to affect the prices Indian refiners pay.",
+              "Refineries turn crude oil into fuels such as diesel, so damage to them cuts fuel supply even when crude production continues."
+            ],
+            "terms": [],
             "frameworks": {
               "escalation": {
-                "current_rung": 1,
-                "evidence": "Zelensky said in a Financial Times interview that Ukraine will resume refinery strikes, which it had paused at US demand.",
+                "move": "none",
+                "rung": 6,
+                "current_rung": 6,
                 "previous_rung": null,
+                "development": "Zelensky said Ukraine will resume strikes on Russian refineries after pausing them at a US demand, which signals intent to restart attacks.",
+                "evidence": "The report describes a stated intention to resume strikes, not an attack, and it is dated before the date on which the war's current rung was set. Statements and threats do not move the rung.",
                 "next_signals": [
                   {
-                    "rung": 4,
-                    "signal": "A confirmed Ukrainian attack on a Russian refinery"
+                    "rung": 7,
+                    "signal": "Russia and Ukraine launch full-scale offensives across many fronts, with large-scale mobilisation announced by either side."
                   },
                   {
                     "rung": 5,
-                    "signal": "Repeated refinery strikes over consecutive weeks"
+                    "signal": "A ceasefire on energy infrastructure takes effect and strikes on power and oil facilities are reported to have stopped."
                   }
                 ],
                 "india_channels": [
-                  "oil"
-                ]
+                  "oil",
+                  "shipping",
+                  "trade"
+                ],
+                "conflict": "wzti51f",
+                "applied": "none",
+                "from": 6
               }
             }
           },
@@ -9918,6 +10119,126 @@
       "name": "Logistics & Shipping",
       "items": [
         {
+          "id": "sksfpnp",
+          "headline": "Qatar, France call for opening of Hormuz and Gaza ceasefire implementation",
+          "url": "https://www.aljazeera.com/news/2026/10/22/qatar-france-call-for-opening-of-hormuz-and-gaza-ceasefire-implementation",
+          "source": "aljazeera",
+          "date": "2026-10-22T01:45:48.000Z",
+          "relevance": "medium",
+          "why": "Al Jazeera reports that Qatari and French leaders called for restoring freedom of navigation in the Strait of Hormuz and for implementation of the Gaza ceasefire. India could be affected because the strait is a key energy shipping route.",
+          "implications": [
+            "The call suggests that passage through the strait is a live diplomatic concern, which could matter to Indian importers and shippers who rely on Gulf sea routes.",
+            "Linking Hormuz with the Gaza ceasefire shows that the two Middle East issues are being treated together in diplomacy, so progress on one could affect the other."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-22T05:06:30.314Z",
+            "tier": "quick",
+            "primary": "disruption_map",
+            "complement": null,
+            "features": [
+              "disruption",
+              "armed_conflict",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The report describes only a diplomatic call on navigation, but India's fuel and LPG imports depend on Gulf shipping, so exposure would rise if passage stays restricted."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "The timing depends on whether diplomatic calls lead to restored passage, and the report gives no timeline."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "This rests on a single Al Jazeera report of statements by Qatari and French leaders; the current status of the strait and the cause of any restriction are not described."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "fuel supply security",
+                "effect": "If shipping through Hormuz stays restricted, supplies of crude and gas reaching India could be disrupted, which may feed into fuel and LPG prices.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "Gulf shipping conditions",
+                "effect": "Traders using Gulf sea routes could face delays or higher shipping costs if freedom of navigation is not restored.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Confirmation that freedom of navigation in the Strait of Hormuz has been restored",
+                "why": "It would show whether the diplomatic calls have eased the shipping concerns that affect India's energy supply.",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "Steps to implement the Gaza ceasefire",
+                "why": "Progress could influence wider Middle East tensions linked to shipping routes.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "The Strait of Hormuz is the narrow sea passage at the mouth of the Persian Gulf. A large share of the world's oil and gas shipments pass through it, and India imports most of its crude oil."
+            ],
+            "terms": [
+              {
+                "term": "Strait of Hormuz",
+                "meaning": "A narrow waterway between the Persian Gulf and the open sea through which much of the world's oil and gas is shipped."
+              }
+            ],
+            "frameworks": {
+              "disruption_map": {
+                "node": {
+                  "name": "Strait of Hormuz",
+                  "type": "strait",
+                  "status": "unknown",
+                  "as_of": "2026-10-22T01:45"
+                },
+                "cause": {
+                  "text": "The report does not say what is restricting passage; it records only Qatari and French calls to restore freedom of navigation.",
+                  "status": "claimed"
+                },
+                "flows": [],
+                "alternatives": [],
+                "duration": "not reported"
+              }
+            }
+          },
+          "place": {
+            "name": "Strait of Hormuz",
+            "country": "Iran",
+            "lat": 26.6,
+            "lon": 56.3,
+            "involves": [
+              "Qatar",
+              "France"
+            ]
+          },
+          "reports": [
+            {
+              "source": "aljazeera",
+              "headline": "Qatar, France call for opening of Hormuz and Gaza ceasefire implementation",
+              "url": "https://www.aljazeera.com/news/2026/10/22/qatar-france-call-for-opening-of-hormuz-and-gaza-ceasefire-implementation",
+              "date": "2026-10-22T01:45:48.000Z",
+              "kind": "hard",
+              "summary": "Qatari and French leaders stress need to restore freedom of navigation in Strait of Hormuz.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/reuters_6ad9506a-1792626794.jpg?resize=1920%2C1440"
+            }
+          ],
+          "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/reuters_6ad9506a-1792626794.jpg?resize=1920%2C1440",
+          "thread": "t2ogxay"
+        },
+        {
           "id": "sug6ouw",
           "headline": "Blast heard in Yemen’s Aden as Houthis claim attack on military camp",
           "url": "https://www.aljazeera.com/news/2026/10/21/blast-heard-in-yemens-aden-as-houthis-claim-attack-on-military-camp",
@@ -10869,11 +11190,10 @@
           "source": "aljazeera",
           "date": "2026-10-13T13:47:14.000Z",
           "relevance": "medium",
-          "why": "Fresh government air strikes on Houthi positions signal escalation in Yemen's war, which could raise risks near shipping routes India uses.",
+          "why": "Yemen's government has launched air strikes on Houthi positions, and Houthi missile strikes now threaten government supply routes on the Red Sea coast. The war is already at a high level, so India's exposure runs through Gulf safety, energy supply and sea lanes.",
           "implications": [
-            "Yemen's government has launched air strikes on Houthi positions.",
-            "A rights group accuses the Houthis of killing five civilians.",
-            "Wider fighting could raise risks for shipping near Yemen."
+            "Fighting along Yemen's Red Sea coast is close to a sea lane used for trade between Asia and Europe. If it spreads to shipping, Indian exporters and importers could face delays and higher freight and insurance costs.",
+            "The war already includes Houthi attacks on Saudi airports and oil infrastructure. If these continue, flights and fuel supplies in the Gulf could be disrupted, which would affect Indian workers and energy buyers."
           ],
           "reports": [
             {
@@ -10901,8 +11221,8 @@
           "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/AFP__20261009__D2Q29KE__v2__HighRes__YemenSaudiIranUsIsraelWar-1791891006.jpg?resize=1920%2C1440",
           "thread": "t1j5n1me",
           "analysis": {
-            "v": 2,
-            "at": "2026-10-13T20:19:58.321Z",
+            "v": 3,
+            "at": "2026-10-22T05:10:58.352Z",
             "tier": "quick",
             "primary": "escalation",
             "complement": null,
@@ -10910,51 +11230,79 @@
               "armed_conflict"
             ],
             "exposure": {
-              "level": "low",
-              "reason": "No direct India mechanism in the report."
+              "level": "medium",
+              "reason": "The reports describe ground and air fighting inside Yemen, but the wider war reaches Saudi airports, oil sites and Red Sea routes, which could affect Indian workers, fuel supply and shipping. No direct Indian impact is reported yet."
             },
             "horizon": {
               "value": "weeks",
-              "reason": "Depends on whether fighting widens."
+              "reason": "Effects on India would depend on whether the fighting reaches shipping lanes, Gulf airports or oil facilities, which could take some weeks to show."
             },
             "confidence": {
               "level": "low",
-              "reason": "Single outlet; casualty figures are a rights group's accusation."
+              "reason": "Both reports come from Al Jazeera, and the civilian casualty claim comes from a Yemeni rights group, so it is a claim by one party and is unconfirmed."
             },
+            "outlets": 1,
             "affected": [
               {
-                "group": "Importers & traders",
+                "group": "Gulf & overseas workers and families",
                 "direction": "unclear",
-                "what": "shipping risk",
+                "what": "safety and travel in Gulf",
+                "effect": "Houthi attacks on Saudi airports, if they continue, could disrupt flights and raise safety worries for Indian workers in the Gulf and their families at home.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Importers & traders",
+                "direction": "down",
+                "what": "Red Sea shipping reliability",
+                "effect": "If the fighting along Yemen's Red Sea coast spreads to shipping, Indian traders could face delays and higher freight and insurance costs on routes toward Europe.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "Further Yemeni government air strikes on Houthi positions",
+                "what": "Further Houthi missile strikes on Yemen's Red Sea coast or on Saudi airports and oil sites",
+                "why": "Such strikes would show whether the war is spreading toward shipping lanes and Gulf infrastructure that matter to India.",
                 "when": "",
                 "where": ""
               }
             ],
+            "context": [
+              "Yemen's war pits the Houthis, who hold much of the north, against the internationally recognised government, which is backed by a Saudi-led coalition.",
+              "India imports most of its crude oil, and millions of Indians live and work in Gulf countries. Instability around Saudi Arabia and the Red Sea can therefore reach Indian households and trade."
+            ],
+            "terms": [
+              {
+                "term": "Houthis",
+                "meaning": "The Houthis are an armed movement that controls much of northern Yemen and is fighting the country's internationally recognised government."
+              }
+            ],
             "frameworks": {
               "escalation": {
-                "current_rung": 4,
-                "evidence": "Yemeni government launched air strikes on Houthi positions.",
+                "move": "none",
+                "rung": 6,
+                "current_rung": 6,
                 "previous_rung": null,
+                "development": "Yemen's government launched air strikes on Houthi positions, and the Houthis responded with missile strikes that threaten government supply routes on the Red Sea coast.",
+                "evidence": "The reports describe continued fighting inside Yemen, but no new attack on a third country beyond the war's earlier strikes on Saudi airports and oil sites. They report no ceasefire or fighting that has stopped.",
                 "next_signals": [
                   {
-                    "rung": 5,
-                    "signal": "Daily, repeated air strikes on Houthi areas"
+                    "rung": 7,
+                    "signal": "The Saudi-led coalition and the Houthis commit large forces to open, multi-front fighting, with the war openly described as full-scale."
                   },
                   {
-                    "rung": 6,
-                    "signal": "Attacks on shipping or on third-country infrastructure"
+                    "rung": 5,
+                    "signal": "Houthi strikes on Saudi airports and oil infrastructure stop, and the fighting is confined to targets inside Yemen."
                   }
                 ],
                 "india_channels": [
+                  "oil",
                   "shipping",
-                  "oil"
-                ]
+                  "diaspora safety",
+                  "flights"
+                ],
+                "conflict": "w1f5pudc",
+                "applied": "none",
+                "from": 6
               }
             }
           },
@@ -12910,6 +13258,234 @@
       "name": "Economy & Trade",
       "items": [
         {
+          "id": "spnaxni",
+          "headline": "Russian missiles hit Kyiv as Moscow signals readiness for peace talks",
+          "url": "https://www.france24.com/en/europe/20261022-russia-missiles-kyiv-ukraine-peace-talks",
+          "source": "france24",
+          "date": "2026-10-22T01:51:03.000Z",
+          "relevance": "medium",
+          "image": "https://s.france24.com/media/display/bf71a96e-cb7f-11f1-8810-6313a763b466/w:1024/p:16x9/2026-10-18T235422Z-1304641961-RC2X5OA93ZJS-RTRMADP-3-UKRAINE-CRISIS-ATTACK-KYIV.jpg",
+          "why": "Russian missiles struck Kyiv overnight, wounding six people, hours after Moscow signalled readiness to resume US-mediated peace talks. India is affected only indirectly, mainly through global energy and commodity prices that the war influences.",
+          "implications": [
+            "Strikes on a capital city alongside talk of negotiations show that fighting continues while diplomacy is explored, so any easing of risks to energy supplies and trade remains uncertain.",
+            "Indian importers and refiners buy at world prices, so a lasting pause could ease cost pressure, while continued strikes on energy sites could keep global markets unsettled."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-22T05:06:30.314Z",
+            "tier": "quick",
+            "primary": "escalation",
+            "complement": null,
+            "features": [
+              "armed_conflict",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "The report describes no direct channel to India. Any effect would come indirectly through global oil and commodity prices, which the war can influence but which this strike alone is not reported to have moved."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Any effect on India depends on whether talks actually resume and on future strikes on energy sites, neither of which is settled in the report."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "This rests on a single France 24 report citing Ukrainian authorities for the strike; Moscow's signal and any schedule for talks are not independently confirmed here."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "global energy and commodity costs",
+                "effect": "Continued strikes could keep global energy prices unsettled, while a move to peace talks could ease them, either of which would change Indian importers' costs.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Russia and Ukraine formally resuming US-mediated peace talks after Moscow's signal of readiness",
+                "why": "It would show whether the signal is turning into negotiations that could reduce risks to energy supplies.",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "Further Russian or Ukrainian strikes on power or oil infrastructure in the coming days",
+                "why": "Continued attacks on energy sites would show the war remains at its current level despite the talk of talks.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "India imports most of its crude oil, so wars involving major energy producers such as Russia can shift the global prices and supply routes that Indian buyers rely on.",
+              "Peace talks in wars like this often start and stall repeatedly, so a signal of readiness is not the same as an agreed ceasefire."
+            ],
+            "terms": [],
+            "frameworks": {
+              "escalation": {
+                "move": "none",
+                "rung": 6,
+                "current_rung": 6,
+                "previous_rung": null,
+                "development": "Russian missiles hit Kyiv overnight and wounded six people, while Moscow signalled readiness to resume US-mediated peace talks.",
+                "evidence": "The Kyiv strike continues the exchange of strikes already placed at rung 6 on 18 October. Signalling readiness for talks is not a ceasefire or a halt in fighting, so the rung stays where it is.",
+                "next_signals": [
+                  {
+                    "rung": 7,
+                    "signal": "Either side announces general mobilisation or launches a large new ground offensive, showing a shift from strikes to all-out war."
+                  },
+                  {
+                    "rung": 5,
+                    "signal": "A ceasefire on strikes against infrastructure comes into force and attacks on power and oil sites are reported to have stopped."
+                  }
+                ],
+                "india_channels": [
+                  "oil",
+                  "trade"
+                ],
+                "conflict": "wzti51f",
+                "applied": "none",
+                "from": 6
+              }
+            }
+          },
+          "conflict": "wzti51f",
+          "place": {
+            "name": "Kyiv",
+            "country": "Ukraine",
+            "lat": 50.45,
+            "lon": 30.52,
+            "involves": [
+              "Russia"
+            ]
+          },
+          "reports": [
+            {
+              "source": "france24",
+              "headline": "Russian missiles hit Kyiv as Moscow signals readiness for peace talks",
+              "url": "https://www.france24.com/en/europe/20261022-russia-missiles-kyiv-ukraine-peace-talks",
+              "date": "2026-10-22T01:51:03.000Z",
+              "kind": "hard",
+              "summary": "Russian missiles struck Kyiv overnight, wounding six people and forcing residents into shelters, Ukrainian authorities said Thursday, hours after Moscow signalled readiness to resume US-mediated peace talks.",
+              "summaryV": 3,
+              "image": "https://s.france24.com/media/display/bf71a96e-cb7f-11f1-8810-6313a763b466/w:1024/p:16x9/2026-10-18T235422Z-1304641961-RC2X5OA93ZJS-RTRMADP-3-UKRAINE-CRISIS-ATTACK-KYIV.jpg"
+            }
+          ],
+          "thread": "tq9ru94"
+        },
+        {
+          "id": "s102116o",
+          "headline": "CNBC Daily Open: War worries meet AI anxiety",
+          "url": "https://www.cnbc.com/2026/10/22/trump-iran-musk-tesla-spacex-merger-.html",
+          "source": "cnbc",
+          "date": "2026-10-22T01:49:18.000Z",
+          "relevance": "medium",
+          "why": "CNBC reports that Washington says it has no plans to renew strikes on Iran before the 3 November midterms, but that escalation may not wait long afterwards. Renewed fighting could affect India through oil and shipping.",
+          "implications": [
+            "The stated pause appears tied to the US political calendar, so it does not signal a lasting settlement and the risk of renewed strikes could return after the election.",
+            "Renewed strikes could again threaten Gulf energy routes, which could raise crude costs for Indian refiners and put pressure on fuel prices and the import bill."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-22T05:06:30.314Z",
+            "tier": "quick",
+            "primary": "escalation",
+            "complement": null,
+            "features": [
+              "armed_conflict",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The channel is oil and Gulf shipping, which matter to Indian fuel costs, but this report adds only a statement about a pause and a warning, not a new disruption."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "The 3 November midterms mark the stated end of the pause, so any renewed escalation would most plausibly follow within weeks, though the report gives no firm date."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "This rests on a single CNBC newsletter summary of a Washington statement with no named official, and the claim that escalation may follow is an assessment."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "fuel price risk",
+                "effect": "If strikes resume and disrupt Gulf energy supplies, higher crude costs could feed through to petrol, diesel and LPG prices in India.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "US midterm elections and any move by Washington to renew strikes on Iran afterwards",
+                "why": "It would show whether the stated pause ends once the election is over.",
+                "when": "2026-11-03",
+                "where": ""
+              }
+            ],
+            "context": [
+              "India imports most of its crude oil, and a large share of its oil and gas supplies comes from the Gulf. Conflict near Gulf shipping routes therefore tends to feed quickly into Indian energy costs."
+            ],
+            "terms": [
+              {
+                "term": "midterms",
+                "meaning": "US congressional elections held halfway through a president's four-year term."
+              }
+            ],
+            "frameworks": {
+              "escalation": {
+                "move": "none",
+                "rung": 6,
+                "current_rung": 6,
+                "previous_rung": null,
+                "development": "Washington says it has no plans to renew strikes on Iran before the 3 November midterms, while CNBC notes that escalation may not wait long after that.",
+                "evidence": "A statement about intentions and a warning about the future are not actions, and talks or statements do not lower the war's level. No new attack or ceasefire is reported, so the war stays at rung 6.",
+                "next_signals": [
+                  {
+                    "rung": 7,
+                    "signal": "The United States and Iran begin full-scale war, with large, sustained operations by both sides beyond the current strikes on infrastructure and third countries."
+                  }
+                ],
+                "india_channels": [
+                  "oil",
+                  "shipping"
+                ],
+                "conflict": "w1ye2krf",
+                "applied": "none",
+                "from": 6
+              }
+            }
+          },
+          "conflict": "w1ye2krf",
+          "place": {
+            "name": "Washington",
+            "country": "United States",
+            "lat": 38.9,
+            "lon": -77,
+            "involves": [
+              "Iran"
+            ]
+          },
+          "reports": [
+            {
+              "source": "cnbc",
+              "headline": "CNBC Daily Open: War worries meet AI anxiety",
+              "url": "https://www.cnbc.com/2026/10/22/trump-iran-musk-tesla-spacex-merger-.html",
+              "date": "2026-10-22T01:49:18.000Z",
+              "kind": "hard",
+              "summary": "Washington says it has no plans to renew strikes on Iran before the Nov. 3 midterms, but escalation may not wait long after that.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://image.cnbcfm.com/api/v1/image/108408368-1791979687138-gettyimages-2294353668-AA_12092026_2948093.jpeg?v=1791979737&w=1920&h=1080"
+            }
+          ],
+          "image": "https://image.cnbcfm.com/api/v1/image/108408368-1791979687138-gettyimages-2294353668-AA_12092026_2948093.jpeg?v=1791979737&w=1920&h=1080",
+          "thread": "t2ogxay"
+        },
+        {
           "id": "sdp1mf1",
           "headline": "Zelensky proposes freezing front with Russia as first step to peace talks",
           "url": "https://www.france24.com/en/europe/20261021-zelensky-proposes-freezing-front-with-russia-first-step-peace-talks",
@@ -13420,9 +13996,8 @@
           "thread": "t1j5n1me",
           "stats": {
             "v": 2,
-            "at": "2026-10-20T00:28:01.914Z",
-            "series": [],
-            "reuseOnly": true
+            "at": "2026-10-22T05:07:46.395Z",
+            "series": []
           },
           "conflict": "w1f5pudc"
         },
@@ -15939,15 +16514,16 @@
           "date": "2026-10-16T18:28:21.000Z",
           "relevance": "medium",
           "image": "https://static01.nyt.com/images/2026/10/16/multimedia/2026-biz-sept-promos-fed-deficit/2026-biz-sept-promos-fed-deficit-mediumSquareAt3X-v3.png",
-          "why": "The U.S. fiscal 2026 deficit rose to almost $2 trillion amid higher interest rates. Heavier U.S. borrowing may affect global rates and capital flows reaching India.",
+          "why": "The US Treasury reported a federal budget deficit of almost $2 trillion for fiscal 2026, up 12% in a year. Heavier US government borrowing could keep global interest rates high and affect capital flows into India.",
           "implications": [
-            "The U.S. deficit for fiscal 2026 rose 12% in a single year, according to Treasury data reported by CNBC.",
-            "The New York Times links it to higher borrowing costs, Iran war spending and tariff refunds.",
-            "Sustained U.S. borrowing could keep global interest rates elevated, which may influence funding costs and investment flows into India."
+            "The New York Times reports that higher interest rates are inflating Washington's borrowing costs, so the deficit is being driven partly by the price of servicing existing debt.",
+            "Spending on the Iran war and on tariff refunds is adding to the gap, which the New York Times describes as a reality check for the administration's cost cutting.",
+            "A larger deficit means more US Treasury bond issuance, which could hold US yields up and make dollar assets more attractive than Indian ones.",
+            "If global investors shift money towards US bonds, the rupee could weaken, which may raise the rupee cost of India's imports such as crude oil and electronics."
           ],
           "analysis": {
-            "v": 2,
-            "at": "2026-10-16T23:45:00.285Z",
+            "v": 3,
+            "at": "2026-10-22T05:12:50.053Z",
             "tier": "standard",
             "primary": "decoder",
             "complement": null,
@@ -15956,75 +16532,97 @@
             ],
             "exposure": {
               "level": "low",
-              "reason": "Reports describe no direct mechanism reaching India. Any effect would come through global rates."
+              "reason": "The deficit reaches India only indirectly, through possible effects on global bond yields, capital flows and the rupee, and the reports describe no direct mechanism affecting India."
             },
             "horizon": {
               "value": "months",
-              "reason": "Fiscal effects on global rates build slowly"
+              "reason": "Any effect on yields and capital flows would build gradually as the US Treasury finances the deficit through bond sales over the coming fiscal year."
             },
             "confidence": {
               "level": "medium",
-              "reason": "Two outlets report it, citing official Treasury Department data."
+              "reason": "The figures come from official US Treasury data reported by CNBC and the New York Times, but only two outlets carry the story."
             },
             "outlets": 2,
             "affected": [
               {
-                "group": "Borrowers",
+                "group": "Importers & traders",
                 "direction": "unclear",
-                "what": "possible global rate pressure",
+                "what": "rupee cost of imports",
+                "effect": "If higher US borrowing draws capital away from India and weakens the rupee, importers could pay more in rupees for dollar-priced goods.",
                 "basis": "inferred"
               },
               {
-                "group": "Government finances",
+                "group": "Borrowers",
                 "direction": "unclear",
-                "what": "possible costlier external borrowing",
+                "what": "global interest rate backdrop",
+                "effect": "Persistently high US yields could limit how far Indian interest rates fall, which may affect loan costs for Indian companies and households.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "Next U.S. Treasury monthly budget data",
+                "what": "US Treasury monthly budget statements for fiscal 2027 showing whether the deficit keeps widening",
+                "why": "A continued rise would suggest sustained heavy US borrowing and upward pressure on global interest rates.",
                 "when": "",
-                "where": "U.S. Treasury Department"
+                "where": "US Treasury Department"
               },
               {
-                "what": "Federal Reserve October interest rate decision",
+                "what": "The Federal Reserve's interest rate decision at its October meeting",
+                "why": "The Fed's rate path drives US borrowing costs, which the reports identify as a key driver of the deficit.",
                 "when": "October 2026",
-                "where": "Federal Reserve"
+                "where": "US Federal Reserve"
+              }
+            ],
+            "context": [
+              "The US government finances its deficits by selling Treasury bonds, and large issuance can push up US yields, which serve as a benchmark for borrowing costs worldwide.",
+              "When US yields rise, foreign investors often move money out of emerging markets such as India, which can put downward pressure on the rupee.",
+              "The Reserve Bank of India holds part of its foreign exchange reserves in US government securities, so US fiscal conditions matter for the value of those holdings."
+            ],
+            "terms": [
+              {
+                "term": "fiscal 2026",
+                "meaning": "The US government's financial year, which runs from 1 October to 30 September, so fiscal 2026 ended in September 2026."
+              },
+              {
+                "term": "budget deficit",
+                "meaning": "The amount by which a government's spending exceeds its revenue in a year, which it covers by borrowing."
               }
             ],
             "frameworks": {
               "decoder": {
                 "kind": "release",
                 "headline": {
-                  "label": "U.S. budget deficit (almost)",
+                  "label": "US federal budget deficit",
                   "value": 2,
-                  "unit": "trillion USD",
-                  "period": "fiscal 2026",
+                  "unit": "USD trillion (almost)",
+                  "period": "Fiscal year 2026",
                   "previous": null,
-                  "previousLabel": "",
+                  "previousLabel": "Fiscal year 2025",
                   "from": "CNBC"
                 },
                 "comparisons": [
                   {
-                    "label": "Increase in a single year",
+                    "label": "Change from previous fiscal year",
                     "value": 12,
-                    "unit": "%",
+                    "unit": "% increase",
                     "from": "CNBC"
                   }
                 ],
                 "drivers": [
                   {
-                    "name": "Higher interest and borrowing costs",
-                    "direction": "up"
+                    "name": "Higher interest costs",
+                    "direction": "up",
+                    "how": "The New York Times reports that higher interest rates are inflating the government's borrowing costs, which adds to total spending."
                   },
                   {
                     "name": "Iran war spending",
-                    "direction": "up"
+                    "direction": "up",
+                    "how": "The New York Times reports that the administration's spending on the Iran war has added to the deficit."
                   },
                   {
                     "name": "Tariff refunds",
-                    "direction": "up"
+                    "direction": "up",
+                    "how": "The New York Times reports that tariff refunds paid by the administration have contributed to the larger deficit."
                   }
                 ],
                 "decision": null
@@ -16088,15 +16686,14 @@
           "date": "2026-10-16T20:25:46.000Z",
           "relevance": "medium",
           "image": "https://s.france24.com/media/display/c6338998-c99a-11f1-9ea4-6313a763b466/w:1024/p:16x9/000-D3GY8H7.jpg",
-          "why": "France 24 reports the US eased sanctions on Moscow in a diesel-supply deal, which could shift energy trade terms India deals with.",
+          "why": "Ukraine has asked the European Union for €70 billion more for next year as its ties with Washington worsen after the US eased sanctions on Moscow in a diesel-supply deal. This could reshape Russian energy trade that India depends on.",
           "implications": [
-            "France 24 reports the US eased sanctions on Moscow as part of a diesel-supply deal, straining Zelensky's ties with Trump.",
-            "Zelensky asked Brussels for an additional €70 billion to fund the war next year.",
-            "Eased sanctions could alter fuel trade conditions, and a longer war could prolong global energy uncertainty."
+            "Easing sanctions on Russian fuel could change how much Russian diesel and crude reaches world markets, which may in turn affect the prices Indian refiners and fuel importers pay.",
+            "If Europe has to carry more of Ukraine's funding, the war may be sustained for longer, prolonging the uncertainty over energy supply that Indian importers face."
           ],
           "analysis": {
-            "v": 2,
-            "at": "2026-10-16T21:14:57.339Z",
+            "v": 3,
+            "at": "2026-10-22T05:12:50.054Z",
             "tier": "quick",
             "primary": "impact_chain",
             "complement": null,
@@ -16104,53 +16701,66 @@
               "pending_outcome"
             ],
             "exposure": {
-              "level": "low",
-              "reason": "Indirect link through possible energy market effects; the report names no India mechanism."
+              "level": "medium",
+              "reason": "The channel is indirect: changes to sanctions on Russian fuel could alter global oil and diesel supply and prices, which affect India as a large importer, but the reports give no figures."
             },
             "horizon": {
               "value": "months",
-              "reason": "The funding request covers next year; effects are indirect."
+              "reason": "European funding decisions and any change in Russian fuel flows take time to work through to global energy prices."
             },
             "confidence": {
-              "level": "low",
-              "reason": "Single outlet; the sanctions deal details are not elaborated."
+              "level": "medium",
+              "reason": "This rests on a single outlet, France 24, which reports Zelensky's request to Brussels, but the details of the diesel-supply deal are not spelled out or confirmed elsewhere."
             },
             "outlets": 1,
             "affected": [
               {
                 "group": "Fuel & LPG users",
                 "direction": "unclear",
-                "what": "diesel and energy trade terms",
+                "what": "fuel supply and prices",
+                "effect": "If the sanctions easing changes the supply of Russian diesel or crude to world markets, it could alter import costs for Indian refiners and, over time, pump prices.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "Russian energy trade terms",
+                "effect": "Looser US sanctions on Moscow could change the rules and risks for Indian firms that trade in Russian fuel.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "Brussels' response to Zelensky's €70 billion request",
+                "what": "Whether European Union governments agree to Ukraine's request for an additional €70 billion for next year",
+                "why": "It would show how far Europe is willing to replace the US as Ukraine's main backer.",
                 "when": "",
-                "where": ""
+                "where": "European Commission"
               }
             ],
+            "context": [
+              "India imports most of its crude oil, and since the war began it has bought Russian crude, so changes in Western sanctions on Russia directly shape its import options and costs."
+            ],
+            "terms": [],
             "frameworks": {
               "impact_chain": {
                 "chain": [
                   {
-                    "step": "US eases Russia sanctions",
-                    "detail": "Eased as part of a diesel-supply deal, per France 24.",
+                    "step": "Ukraine asks Europe for more money",
+                    "detail": "Zelensky asked Brussels for an additional €70 billion to fund the war against Russia next year, turning to European allies for support.",
                     "basis": "reported"
                   },
                   {
-                    "step": "Ukraine-US ties deteriorate",
-                    "detail": "Zelensky turns to Europe, asking for €70 billion more.",
+                    "step": "US eases sanctions on Moscow",
+                    "detail": "Relations between Zelensky and Trump deteriorated after the US eased sanctions on Russia as part of a diesel-supply deal, which pushed Kyiv towards Europe.",
                     "basis": "reported"
                   },
                   {
-                    "step": "Energy trade terms may shift",
-                    "detail": "Looser sanctions could alter fuel supply conditions relevant to India.",
+                    "step": "Russian fuel flows may shift",
+                    "detail": "Eased sanctions could change how much Russian diesel and related energy reaches world markets, which may affect prices that India, a large energy importer, pays.",
                     "basis": "inferred"
                   }
                 ],
-                "breaks_if": "The sanctions easing is limited to the diesel deal and does not alter wider energy trade."
+                "breaks_if": "The sanctions easing is narrow and limited to the diesel deal, so global supply and prices of fuel that India buys do not change."
               }
             }
           },
@@ -16175,15 +16785,15 @@
           "source": "cnbc",
           "date": "2026-10-16T08:31:55.000Z",
           "relevance": "medium",
-          "why": "Fed chair Warsh gave no signal on another rate hike before the October meeting. The U.S. rate path could sway the rupee, capital flows and Indian borrowing costs.",
+          "why": "Federal Reserve Chairman Kevin Warsh gave no signal on another rate hike before the Fed's October meeting. US rate decisions shape global capital flows, the rupee and the room the Reserve Bank of India has on interest rates.",
           "implications": [
-            "Warsh praised a \"synchronous tightening\" by central banks against inflation, but did not signal an October hike.",
-            "The New York Times reports he flagged A.I. as a 'shock' to the economy.",
-            "A further Fed hike could pressure the rupee and may influence RBI policy and loan rates in India."
+            "The New York Times reports that Warsh did nothing to convey urgency about raising rates, which could ease fears of an imminent US hike.",
+            "CNBC reports that Warsh praised a 'synchronous tightening' by central banks, suggesting he sees global rate rises as sharing the burden of fighting inflation.",
+            "CNBC notes that upcoming US inflation figures may reveal the Fed's direction, so market expectations could shift sharply when those numbers are released."
           ],
           "analysis": {
-            "v": 2,
-            "at": "2026-10-16T23:45:00.285Z",
+            "v": 3,
+            "at": "2026-10-22T05:12:50.054Z",
             "tier": "standard",
             "primary": "decoder",
             "complement": null,
@@ -16193,41 +16803,67 @@
             ],
             "exposure": {
               "level": "medium",
-              "reason": "Indirect link through U.S. rates to the rupee and capital flows. This is not stated in the reports."
+              "reason": "Fed policy reaches India through capital flows and the rupee exchange rate, which affect import costs and financial markets, but the reports describe no direct effect on Indian households."
             },
             "horizon": {
               "value": "weeks",
-              "reason": "Fed meets later in October"
+              "reason": "The Fed meets later in October, and its decision there would set the near-term direction for US rates and global capital flows."
             },
             "confidence": {
               "level": "medium",
-              "reason": "Two outlets report it, based on Warsh's on-record remarks."
+              "reason": "Warsh's on-record remarks are reported by CNBC and the New York Times, but only two outlets cover them and the Fed's October decision is unknown."
             },
             "outlets": 2,
             "affected": [
               {
-                "group": "Borrowers",
+                "group": "Importers & traders",
                 "direction": "unclear",
-                "what": "possible loan rate pressure",
+                "what": "rupee cost of imports",
+                "effect": "If the Fed raises rates and the rupee weakens as capital leaves India, importers could pay more in rupees for dollar-priced goods.",
                 "basis": "inferred"
               },
               {
-                "group": "Importers & traders",
+                "group": "Students abroad",
                 "direction": "unclear",
-                "what": "possible rupee import costs",
+                "what": "cost of fees and living",
+                "effect": "A weaker rupee following a US rate hike could raise the rupee cost of tuition and living expenses for Indian students in the United States.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Borrowers",
+                "direction": "unclear",
+                "what": "domestic interest rate outlook",
+                "effect": "Continued Fed tightening could narrow the Reserve Bank of India's room to cut rates, which may affect loan EMIs for Indian households.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "Federal Reserve October interest rate decision",
+                "what": "The Federal Reserve's interest rate decision at its October meeting",
+                "why": "It will show whether the Fed raises rates again or pauses, shaping the dollar and capital flows to India.",
                 "when": "October 2026",
-                "where": "Federal Reserve"
+                "where": "US Federal Reserve"
               },
               {
-                "what": "Upcoming U.S. inflation numbers",
+                "what": "The release of the latest US inflation figures before the Fed meeting",
+                "why": "CNBC notes these numbers may tip Warsh's hand on whether another rate hike is needed.",
                 "when": "",
                 "where": ""
+              }
+            ],
+            "context": [
+              "Higher US interest rates tend to strengthen the dollar and draw investment away from emerging markets such as India, putting pressure on the rupee.",
+              "India imports most of its crude oil, which is priced in dollars, so a weaker rupee can raise the domestic cost of fuel and other imports.",
+              "The Reserve Bank of India sets its own repo rate but watches Federal Reserve policy closely because large rate gaps can affect capital flows and the rupee."
+            ],
+            "terms": [
+              {
+                "term": "synchronous tightening",
+                "meaning": "Several central banks raising interest rates or restricting credit at roughly the same time to bring down inflation."
+              },
+              {
+                "term": "Fed",
+                "meaning": "The US Federal Reserve, the central bank that sets US interest rates and whose decisions influence financial markets worldwide."
               }
             ],
             "frameworks": {
@@ -16237,22 +16873,20 @@
                 "comparisons": [],
                 "drivers": [
                   {
-                    "name": "Inflation",
-                    "direction": "up"
+                    "name": "Global synchronous tightening",
+                    "direction": "mixed",
+                    "how": "CNBC reports that Warsh praised a 'synchronous tightening' by central banks in the fight against inflation, without saying whether it reduces the need for US hikes."
                   },
                   {
-                    "name": "Synchronous global central bank tightening",
-                    "direction": "up"
-                  },
-                  {
-                    "name": "A.I. shock to economy",
-                    "direction": "mixed"
+                    "name": "AI shock to economy",
+                    "direction": "mixed",
+                    "how": "The New York Times reports that Warsh vowed to tame inflation as artificial intelligence delivers a 'shock' to the economy."
                   }
                 ],
                 "decision": {
                   "action": "other",
-                  "size": "no signal given",
-                  "stance": "Vows to tame inflation; avoids guidance; no urgency conveyed to raise rates"
+                  "size": "No rate change announced; no signal given on another hike…",
+                  "stance": "Warsh stuck to his pledge not to give guidance on the path of interest rates and conveyed no urgency to raise them at the October meeting, according to the New York Times."
                 }
               }
             }
@@ -18972,78 +19606,103 @@
           "relevance": "medium",
           "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6136/live/b103d880-cd90-11f1-b1e7-39558e114359.jpg",
           "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/6136/live/b103d880-cd90-11f1-b1e7-39558e114359.jpg",
-          "why": "The BBC reports that websites were taken down worldwide as a critical security update was issued for flaws in PHP, a widely used web programming language. Indian websites and the firms that run them could be affected.",
+          "why": "Two critical flaws in PHP, found by artificial intelligence, let attackers run code on servers without logging in, prompting governments and companies to take websites offline. Indian sites built on PHP could face similar risks and patching work.",
           "implications": [
-            "Organisations running PHP-based sites may have to apply the update quickly, which could cause temporary outages or extra work for technical teams, including Indian IT services and hosting firms.",
-            "If the update is delayed, unpatched sites could stay exposed to attackers, which would matter most for businesses that take payments or hold customer data online."
+            "Websites that have not applied the security update could be open to attackers who run code on their servers, which may expose data held by Indian businesses and public bodies.",
+            "Indian information technology service firms that maintain websites for clients could face a surge of urgent patching work, as MercoPress reports governments in several countries taking sites offline.",
+            "If Indian government portals are taken offline as a precaution, citizens could temporarily lose access to online services until the fixes are applied."
           ],
           "analysis": {
             "v": 3,
-            "at": "2026-10-21T21:53:02.086Z",
-            "tier": "quick",
+            "at": "2026-10-22T05:10:58.351Z",
+            "tier": "standard",
             "primary": "impact_chain",
             "complement": null,
             "features": [],
             "exposure": {
               "level": "medium",
-              "reason": "The channel is the Indian IT and web-hosting sector and any business running PHP-based websites, which may need to patch or face disruption. The reports do not mention India or any household essential."
+              "reason": "The flaws reach India through websites and servers running PHP, creating urgent patching duties for the information technology industry and website operators rather than a household essential."
             },
             "horizon": {
               "value": "now",
-              "reason": "Websites were already reported down and the update has been issued, so patching and any disruption would be immediate."
+              "reason": "Websites are already being taken offline and patched, so any disruption or attack risk falls in the days immediately after the update's release."
             },
             "confidence": {
-              "level": "low",
-              "reason": "This rests on a single early BBC report with no named official source, and the scale, affected versions and any Indian impact are unconfirmed."
+              "level": "medium",
+              "reason": "This is an early story resting on BBC News and MercoPress; neither summary names an official source, and any effect on Indian sites is unreported."
             },
-            "outlets": 1,
+            "outlets": 2,
             "affected": [
               {
                 "group": "IT & services workers",
                 "direction": "up",
-                "what": "emergency patching workload",
-                "effect": "Technical teams at Indian IT, hosting and web firms may face urgent work applying the update and checking client websites that use PHP.",
+                "what": "urgent patching workload",
+                "effect": "Indian technology staff who run or maintain PHP websites could face urgent work applying the critical update and checking servers for intrusion.",
+                "basis": "inferred"
+              },
+              {
+                "group": "MSME exporters",
+                "direction": "down",
+                "what": "website availability",
+                "effect": "Small exporters relying on PHP-based websites or online stores could see temporary downtime or attack risk if their sites are unpatched or taken offline.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "Further security advisories or guidance on the PHP vulnerabilities from Indian cyber-security authorities",
-                "why": "It would show whether Indian organisations are considered exposed and what they are being told to do.",
+                "what": "An Indian advisory on the two critical PHP vulnerabilities",
+                "why": "An advisory would show the official Indian assessment of the risk and the required patching steps.",
                 "when": "",
-                "where": "CERT-In (Indian Computer Emergency Response Team)"
+                "where": "CERT-In"
+              },
+              {
+                "what": "Reports of attackers exploiting the PHP flaws against websites",
+                "why": "Active exploitation would show the threat has moved from potential to real damage.",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "Government websites taken offline being restored after patching",
+                "why": "Restoration would indicate the immediate scramble is easing.",
+                "when": "",
+                "where": ""
               }
             ],
             "context": [
-              "PHP is a programming language that runs the server side of a very large number of websites. When a serious flaw in such a widely used tool is found, operators generally have to install a fix quickly.",
-              "India has a large IT services industry and many small businesses with websites built on common web tools, so a flaw in a widely used language can reach Indian firms directly."
+              "PHP is a long-established language behind a large share of websites, including many content-management platforms widely used by Indian businesses and public bodies.",
+              "In India, the Indian Computer Emergency Response Team (CERT-In) issues advisories on serious software flaws and expects organisations to patch vulnerable systems promptly."
             ],
             "terms": [
               {
                 "term": "PHP",
-                "meaning": "PHP is a programming language used to build and run the server side of many websites and web applications."
+                "meaning": "A programming language that runs on web servers and powers a large share of websites."
               }
             ],
             "frameworks": {
               "impact_chain": {
                 "chain": [
                   {
-                    "step": "Websites go down, update issued",
-                    "detail": "The BBC reports that websites were taken down worldwide and a critical security update was issued for PHP flaws described as the most significant ever found by AI.",
+                    "step": "AI uncovers critical PHP flaws",
+                    "detail": "Artificial intelligence found two critical vulnerabilities in PHP that let attackers run code remotely on servers without authenticating, and a critical security update was issued.",
                     "basis": "reported"
                   },
                   {
-                    "step": "PHP's wide use spreads exposure",
-                    "detail": "Because PHP is widely used across the internet, the flaws could affect many sites, including those hosted or built by Indian companies, and so make patching necessary for them.",
+                    "step": "Websites taken offline worldwide",
+                    "detail": "Governments and companies in several countries temporarily took websites offline to protect them, according to BBC News and MercoPress.",
                     "basis": "reported"
                   },
                   {
-                    "step": "Indian firms may patch or face outages",
-                    "detail": "Indian businesses and IT service providers running affected sites may need to apply the update urgently, which could cause temporary disruption or leave unpatched sites open to attack.",
+                    "step": "Indian PHP sites may need patching",
+                    "detail": "Indian government portals and business websites built on PHP could need urgent updates and may be taken offline briefly, adding work for technology staff.",
+                    "basis": "inferred"
+                  },
+                  {
+                    "step": "Users could face service gaps",
+                    "detail": "Citizens and customers could lose temporary access to some online services, and unpatched sites could suffer data breaches.",
                     "basis": "inferred"
                   }
                 ],
-                "breaks_if": "The effect would not reach India if Indian sites do not run the affected PHP versions or have already applied the update before attackers exploit the flaws."
+                "breaks_if": "Indian website operators apply the PHP security update quickly, before attackers exploit the flaws, leaving no meaningful downtime or breaches."
               }
             }
           },
@@ -19058,9 +19717,268 @@
               "summaryV": 3,
               "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6136/live/b103d880-cd90-11f1-b1e7-39558e114359.jpg",
               "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/6136/live/b103d880-cd90-11f1-b1e7-39558e114359.jpg"
+            },
+            {
+              "source": "mercopress",
+              "headline": "Global alert over two critical PHP flaws forces government websites offline",
+              "url": "https://en.mercopress.com/2026/10/22/global-alert-over-two-critical-php-flaws-forces-government-websites-offline",
+              "date": "2026-10-22T02:14:00.000Z",
+              "kind": "hard",
+              "summary": "Governments and companies in several countries temporarily took websites offline this week over two critical vulnerabilities in PHP, the programming language that powers much of the internet, which allow an attacker to run code remotely on servers without authenticating.",
+              "summaryV": 3,
+              "image": "https://en.mercopress.com/data/cache/noticias/111851/100x80/php.jpg"
+            },
+            {
+              "source": "bbc",
+              "headline": "What is PHP and why did it spark a global cyber-security scramble?",
+              "url": "https://www.bbc.co.uk/news/articles/c3qjnwye0ep5o",
+              "date": "2026-10-22T03:48:50.000Z",
+              "kind": "feature",
+              "summary": "AI uncovered long-hidden programming flaws, triggering a rare global cyber-security response.",
+              "summaryV": 3,
+              "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6c55/live/d85b8680-cda9-11f1-a64c-550be9e3c66b.jpg",
+              "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/6c55/live/d85b8680-cda9-11f1-a64c-550be9e3c66b.jpg"
             }
           ],
           "thread": "t1b261c8"
+        },
+        {
+          "id": "s1u3nset",
+          "headline": "Critical web security flaws spark global alarm as Google, OpenAI and Amazon respond",
+          "url": "https://www.cnbc.com/2026/10/22/php-google-openai-and-amazon-cyber.html",
+          "source": "cnbc",
+          "date": "2026-10-22T01:05:15.000Z",
+          "relevance": "medium",
+          "why": "CNBC reports that critical security flaws in PHP, a widely used web programming language, have prompted global warnings, with Google, OpenAI and Amazon responding. Indian firms and portals running PHP-based websites could be exposed.",
+          "implications": [
+            "Indian IT services companies that maintain websites for overseas clients may face extra patching and security-review work if the flaws affect software they manage.",
+            "Smaller Indian businesses and public portals running PHP-based sites could stay exposed until fixes are applied, because such sites are often updated slowly."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-22T05:06:30.313Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "low",
+              "reason": "The report names no India-specific effect; any impact would come indirectly through Indian IT services firms and websites that run PHP, so exposure is low until a concrete link emerges."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "The timing depends on how quickly fixes are released and how quickly organisations apply them; the report gives no timeline."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single CNBC summary with no named official source, and the nature and scope of the flaws are not detailed."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "IT & services workers",
+                "direction": "unclear",
+                "what": "security patching workload",
+                "effect": "Teams that build or maintain PHP-based systems for clients may need to assess and fix affected software, which could add work and urgency.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Release of security patches or official advisories for the reported PHP flaws",
+                "why": "It would show whether fixes exist and how urgently organisations running PHP must act.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "PHP is a programming language that runs the server side of a very large number of websites worldwide. Flaws in it can therefore affect many organisations at once, including those in India."
+            ],
+            "terms": [
+              {
+                "term": "PHP",
+                "meaning": "A widely used programming language that powers the back end of many websites and web applications."
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Critical PHP flaws are flagged",
+                    "detail": "CNBC reports that critical security flaws in PHP have triggered global warnings about potential cyber threats.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Large technology firms respond",
+                    "detail": "Google, OpenAI and Amazon are reported to be responding to the flaws, which suggests that the risk is being treated as serious across the industry.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Indian PHP-based systems may need fixes",
+                    "detail": "Indian IT firms and organisations running PHP-based websites could have to review and patch their systems, which may raise their workload and security risk.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The flaws are fixed before attackers exploit them, or the affected PHP versions are not in use in Indian systems."
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "cnbc",
+              "headline": "Critical web security flaws spark global alarm as Google, OpenAI and Amazon respond",
+              "url": "https://www.cnbc.com/2026/10/22/php-google-openai-and-amazon-cyber.html",
+              "date": "2026-10-22T01:05:15.000Z",
+              "kind": "hard",
+              "summary": "Critical PHP security flaws trigger global warnings as Google, OpenAI and Amazon respond to potential cyber threats.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://image.cnbcfm.com/api/v1/image/108444221-1792627087371-gettyimages-2300746288-20090101261021-99-21563.jpeg?v=1792627101&w=1920&h=1080"
+            }
+          ],
+          "image": "https://image.cnbcfm.com/api/v1/image/108444221-1792627087371-gettyimages-2300746288-20090101261021-99-21563.jpeg?v=1792627101&w=1920&h=1080",
+          "thread": "t1b261c8"
+        },
+        {
+          "id": "s19f1z8u",
+          "headline": "Calls grow for India to lure tech talent home as US tightens job curbs",
+          "url": "https://www.scmp.com/week-asia/economics/article/3371404/calls-grow-india-lure-tech-talent-home-us-tightens-job-curbs",
+          "source": "scmp",
+          "date": "2026-10-19T11:57:16.000Z",
+          "relevance": "medium",
+          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/19/fc070834-3790-4136-aac1-678ccfda7f6d_e44b5b25.jpg?itok=smFR2eBU&v=1792411026",
+          "why": "Tighter US visa, sponsorship and green card rules, together with US tech firms cutting foreign hiring, are making American jobs and residency harder for Indian graduates and tech workers. This is pushing some home and prompting calls for India to attract them back.",
+          "implications": [
+            "Indian students weighing costly US master's degrees may reconsider, because the reports describe graduates struggling to secure the employer sponsorship they need to stay and work after their studies.",
+            "Families that borrowed to fund overseas education could face financial strain if graduates return without US jobs, because loan repayments may have been planned around foreign salaries.",
+            "Returning graduates could add skilled talent to India's technology sector, and the South China Morning Post reports growing calls for India to lure such talent home.",
+            "The BBC reports that green card curbs are putting permanent residency further out of reach for many Indians already working in the US, which adds uncertainty to their long-term plans."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-22T05:10:58.352Z",
+            "tier": "standard",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "medium",
+              "reason": "The effect reaches India through the US job and residency prospects of Indian students and tech workers. That concentrates it on one industry and one bilateral relationship rather than on household essentials."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "The effect builds over academic and hiring cycles as graduates look for work after their courses end and students decide on future applications."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "This rests on a South China Morning Post report and a BBC feature; neither summary cites an on-record official, and the specific rule changes are not detailed."
+            },
+            "outlets": 2,
+            "affected": [
+              {
+                "group": "Students abroad",
+                "direction": "down",
+                "what": "US job prospects after graduation",
+                "effect": "Indian graduates in the US find it harder to get jobs because frequent visa rule changes and employer sponsorship requirements deter hiring, so some are returning to India.",
+                "basis": "reported"
+              },
+              {
+                "group": "IT & services workers",
+                "direction": "down",
+                "what": "US residency prospects",
+                "effect": "Indian tech workers in the US face green card curbs and reduced foreign hiring by tech firms, which makes permanent residency increasingly distant for many.",
+                "basis": "reported"
+              },
+              {
+                "group": "Salaried workers",
+                "direction": "mixed",
+                "what": "competition for tech jobs",
+                "effect": "Graduates returning from the US could increase competition for skilled technology jobs in India while also widening the talent pool available to Indian employers.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "US government announcements of further changes to visa, sponsorship or green card rules",
+                "why": "These would show whether pressure on Indian graduates and tech workers in the US is easing or intensifying.",
+                "when": "",
+                "where": "US Citizenship and Immigration Services (USCIS)"
+              },
+              {
+                "what": "Indian government schemes or incentives aimed at attracting overseas tech talent back to India",
+                "why": "These would indicate whether the reported calls to lure talent home are turning into actual policy.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "India sends one of the largest groups of international students to the United States, and Indian professionals have long been among the main users of US skilled-worker visas, particularly in technology.",
+              "US green cards are subject to per-country limits, so applicants from high-demand countries such as India typically wait far longer for permanent residency than applicants from most other countries.",
+              "Indian IT services companies earn a large share of their revenue from US clients and have historically relied on sending staff to work on-site in the United States."
+            ],
+            "terms": [
+              {
+                "term": "green card",
+                "meaning": "A US permanent resident card that allows a foreign national to live and work in the United States indefinitely."
+              },
+              {
+                "term": "employer sponsorship",
+                "meaning": "The process in which a US employer formally backs a foreign worker's visa or residency application, which is usually required to work there."
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "US tightens visa and residency rules",
+                    "detail": "The US administration has imposed immigration curbs, including on green cards, and visa and employer sponsorship rules change frequently. This makes it harder for foreign graduates and workers to stay.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "US tech firms cut foreign hiring",
+                    "detail": "The BBC reports that US technology companies are reducing their hiring of foreign workers, which narrows job options for Indian graduates and professionals seeking to remain in the country.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Indian graduates return home",
+                    "detail": "Some Indian graduates are returning home after failing to find US jobs. The South China Morning Post cites a data science master's graduate from Pace University who returned to India in October.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Indian job market absorbs returnees",
+                    "detail": "Returnees could add skilled talent to India's technology sector and raise competition for jobs. This may strengthen the growing calls for India to attract overseas tech talent back home.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The effect would stall if US authorities eased visa and green card rules or if US technology firms resumed hiring foreign graduates at earlier levels."
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "scmp",
+              "headline": "Calls grow for India to lure tech talent home as US tightens job curbs",
+              "url": "https://www.scmp.com/week-asia/economics/article/3371404/calls-grow-india-lure-tech-talent-home-us-tightens-job-curbs",
+              "date": "2026-10-19T11:57:16.000Z",
+              "kind": "hard",
+              "summary": "After completing a master’s degree in data science at Pace University in New York in May last year, Tarun returned to India in October, saying frequent changes in US visa rules and employer sponsorship requirements had made it difficult for him to find a job in the world’s largest economy.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/19/fc070834-3790-4136-aac1-678ccfda7f6d_e44b5b25.jpg?itok=smFR2eBU&v=1792411026"
+            },
+            {
+              "source": "bbc",
+              "headline": "Trump's green card curbs test Indian tech workers' American dream",
+              "url": "https://www.bbc.co.uk/news/articles/cqj34j7dk771o",
+              "date": "2026-10-21T23:06:37.000Z",
+              "kind": "feature",
+              "summary": "With immigration curbs and tech firms cutting foreign hiring, US residency is becoming a distant dream for many Indians.",
+              "summaryV": 3,
+              "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/51e1/live/804b8da0-cc6e-11f1-baeb-8d65d4bcd7ab.jpg",
+              "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/51e1/live/804b8da0-cc6e-11f1-baeb-8d65d4bcd7ab.jpg"
+            }
+          ],
+          "thread": "t1glzf0p"
         },
         {
           "id": "s17efqgg",
@@ -19412,115 +20330,6 @@
             }
           ],
           "thread": "t5dqex6"
-        },
-        {
-          "id": "s19f1z8u",
-          "headline": "Calls grow for India to lure tech talent home as US tightens job curbs",
-          "url": "https://www.scmp.com/week-asia/economics/article/3371404/calls-grow-india-lure-tech-talent-home-us-tightens-job-curbs",
-          "source": "scmp",
-          "date": "2026-10-19T11:57:16.000Z",
-          "relevance": "medium",
-          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/19/fc070834-3790-4136-aac1-678ccfda7f6d_e44b5b25.jpg?itok=smFR2eBU&v=1792411026",
-          "why": "The South China Morning Post reports growing calls for India to attract tech talent home as shifting US visa rules and employer sponsorship requirements make it harder for graduates to find jobs there. One data science graduate has already returned.",
-          "implications": [
-            "Indian students who borrow to study in the United States may find it harder to repay if visa uncertainty keeps them from securing US jobs after graduation.",
-            "If more graduates return, Indian employers and start-ups could draw on a larger pool of trained data and technology workers, provided enough suitable jobs exist at home."
-          ],
-          "analysis": {
-            "v": 3,
-            "at": "2026-10-19T20:47:16.274Z",
-            "tier": "quick",
-            "primary": "impact_chain",
-            "complement": null,
-            "features": [],
-            "exposure": {
-              "level": "medium",
-              "reason": "The channel is the career path of Indian students and technology workers who depend on US employers and visas. It is one sector and one bilateral relationship rather than a household essential."
-            },
-            "horizon": {
-              "value": "months",
-              "reason": "Graduate hiring, visa cycles and any Indian policy response operate over academic and recruitment years, so changes would appear over many months."
-            },
-            "confidence": {
-              "level": "low",
-              "reason": "This rests on a single South China Sea-based outlet, the South China Morning Post, which relies on one graduate's account; no official source or data is cited."
-            },
-            "outlets": 1,
-            "affected": [
-              {
-                "group": "Students abroad",
-                "direction": "down",
-                "what": "US job prospects after study",
-                "effect": "Frequent visa rule changes and sponsorship requirements may make it harder for Indian graduates in the US to find work, which could weaken the payoff from studying there.",
-                "basis": "inferred"
-              },
-              {
-                "group": "IT & services workers",
-                "direction": "mixed",
-                "what": "domestic talent pool and competition",
-                "effect": "Returning graduates could widen the talent available to Indian employers, which may increase competition for jobs while helping firms that are hiring.",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "Any Indian government or industry scheme to attract returning overseas graduates into technology jobs",
-                "why": "It would show whether the calls to lure talent home become concrete incentives.",
-                "when": "",
-                "where": ""
-              },
-              {
-                "what": "Further changes to US work visa rules or employer sponsorship requirements",
-                "why": "These changes drive how hard it is for Indian graduates to stay and work in the United States.",
-                "when": "",
-                "where": "U.S. Citizenship and Immigration Services"
-              }
-            ],
-            "context": [
-              "Indian students are among the largest groups of foreign students in the United States, and many rely on work visas after their studies. Indian technology firms also earn much of their revenue in the US."
-            ],
-            "terms": [
-              {
-                "term": "employer sponsorship",
-                "meaning": "A foreign worker usually needs an employer to file a visa petition on their behalf, so a job offer alone does not guarantee the right to work."
-              }
-            ],
-            "frameworks": {
-              "impact_chain": {
-                "chain": [
-                  {
-                    "step": "US visa rules and sponsorship tighten",
-                    "detail": "The South China Morning Post reports that frequent changes in US visa rules and employer sponsorship requirements made it difficult for a data science graduate to find a job in the United States.",
-                    "basis": "reported"
-                  },
-                  {
-                    "step": "Graduates return to India",
-                    "detail": "The graduate, Tarun, returned to India after finishing a master's degree in New York, and the report says calls are growing for India to lure such talent home.",
-                    "basis": "reported"
-                  },
-                  {
-                    "step": "India's talent pool may grow",
-                    "detail": "More returning graduates could enlarge the supply of skilled technology workers in India and increase pressure on policymakers and employers to offer attractive jobs.",
-                    "basis": "inferred"
-                  }
-                ],
-                "breaks_if": "US visa conditions ease, or Indian employers do not offer roles attractive enough, so graduates stay abroad and no meaningful number return."
-              }
-            }
-          },
-          "reports": [
-            {
-              "source": "scmp",
-              "headline": "Calls grow for India to lure tech talent home as US tightens job curbs",
-              "url": "https://www.scmp.com/week-asia/economics/article/3371404/calls-grow-india-lure-tech-talent-home-us-tightens-job-curbs",
-              "date": "2026-10-19T11:57:16.000Z",
-              "kind": "hard",
-              "summary": "After completing a master’s degree in data science at Pace University in New York in May last year, Tarun returned to India in October, saying frequent changes in US visa rules and employer sponsorship requirements had made it difficult for him to find a job in the world’s largest economy.",
-              "summaryV": 3,
-              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/19/fc070834-3790-4136-aac1-678ccfda7f6d_e44b5b25.jpg?itok=smFR2eBU&v=1792411026"
-            }
-          ],
-          "thread": "t1glzf0p"
         },
         {
           "id": "sin9vgt",
@@ -21515,73 +22324,91 @@
           "date": "2026-10-16T14:41:01.000Z",
           "relevance": "high",
           "image": "https://static01.nyt.com/images/2026/10/05/multimedia/05-INT-INDIA-SUGAR-01-jbfv/05-INT-INDIA-SUGAR-01-jbfv-mediumSquareAt3X.jpg",
-          "why": "El Niño has withered India's sugarcane crop, which The New York Times says is hurting consumers and farmers and undermining energy security goals.",
+          "why": "The New York Times reports that El Niño has withered India's sugarcane crop. India is the world's second-largest sugar producer, and the damage is hurting consumers and farmers and undermining the country's energy security goals.",
           "implications": [
-            "A smaller cane crop could tighten domestic sugar supply and may raise costs for households.",
-            "Cane farmers are reported to be hurt by the withered crop.",
-            "India is the world's second-largest producer, so the shortfall could also affect global sugar supply."
+            "Farmers who depend on cane for income carry the first loss, because a smaller or poorer harvest means less to sell from the same planted area.",
+            "Households buy sugar as a daily staple, so a shorter crop could put pressure on the prices they pay."
           ],
           "analysis": {
-            "v": 2,
-            "at": "2026-10-16T21:12:40.826Z",
+            "v": 3,
+            "at": "2026-10-22T05:12:50.054Z",
             "tier": "quick",
             "primary": "impact_chain",
             "complement": null,
             "features": [],
             "exposure": {
               "level": "high",
-              "reason": "Sugar is a food staple, and the crop damage is reported to hurt consumers."
+              "reason": "Sugar is a household food staple, and the crop supports many cane farmers. The report also links the shortfall to India's energy security goals, so it reaches both food and fuel policy."
             },
             "horizon": {
-              "value": "weeks",
-              "reason": "Crop already damaged; price and policy effects may follow."
+              "value": "months",
+              "reason": "The standing crop is already damaged, and the effect on sugar supplies and ethanol availability would unfold over the coming sugar season rather than within days."
             },
             "confidence": {
               "level": "low",
-              "reason": "Single outlet and no on-record official source in the report."
+              "reason": "This rests on a single outlet, The New York Times, and only its summary was available, with no official figures or named sources on the size of the damage."
             },
             "outlets": 1,
             "affected": [
               {
+                "group": "Farmers",
+                "direction": "down",
+                "what": "cane farm income",
+                "effect": "Cane growers are hurt because the El Niño-damaged crop is smaller or weaker, which reduces what they can sell to sugar mills.",
+                "basis": "reported"
+              },
+              {
                 "group": "Food shoppers",
                 "direction": "up",
-                "what": "sugar costs may rise",
+                "what": "sugar prices",
+                "effect": "A smaller cane crop reduces sugar supply, which could raise the price consumers pay for sugar and products made with it.",
                 "basis": "inferred"
               },
               {
-                "group": "Farmers",
-                "direction": "down",
-                "what": "sugarcane crop losses",
-                "basis": "reported"
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "ethanol blending supply",
+                "effect": "Less cane could leave less feedstock for ethanol blended into petrol, which may weaken efforts to cut oil imports.",
+                "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "Official estimates of the sugarcane crop shortfall and any sugar supply measures",
+                "what": "Official estimates of India's sugarcane and sugar output for the current season",
+                "why": "These figures would show how large the shortfall is and whether the damage described by the report is widespread.",
                 "when": "",
-                "where": ""
+                "where": "Ministry of Consumer Affairs, Food and Public Distribution"
+              }
+            ],
+            "context": [
+              "India's energy security policy relies partly on blending ethanol made from sugarcane into petrol, which reduces oil imports. Cane used for fuel is not available as sugar, so a poor crop can strain both."
+            ],
+            "terms": [
+              {
+                "term": "El Niño",
+                "meaning": "El Niño is a periodic warming of the Pacific Ocean that disrupts weather worldwide and often reduces or delays monsoon rainfall in India."
               }
             ],
             "frameworks": {
               "impact_chain": {
                 "chain": [
                   {
-                    "step": "El Niño withers Indian sugarcane",
-                    "detail": "The crop in the world's second-largest producer is reported withered.",
+                    "step": "El Niño damages India's cane crop",
+                    "detail": "The New York Times reports that El Niño has withered the sugarcane crop in India, the world's second-largest producer, which reduces the amount of cane available.",
                     "basis": "reported"
                   },
                   {
-                    "step": "Lower supply may lift prices",
-                    "detail": "A smaller cane crop could tighten sugar supply for consumers.",
+                    "step": "Farmers and consumers are hurt",
+                    "detail": "The report says the damaged crop is hurting both consumers and farmers. Growers have less to sell, and shoppers face tighter sugar supplies.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Energy security goals come under strain",
+                    "detail": "The report says the shortfall undermines India's energy security goals. This may be because less cane is available for ethanol blended into petrol, which could keep fuel import needs higher.",
                     "basis": "inferred"
-                  },
-                  {
-                    "step": "Farmers and energy goals hit",
-                    "detail": "NYT says farmers are hurt and energy security goals undermined.",
-                    "basis": "reported"
                   }
                 ],
-                "breaks_if": "Crop losses prove limited or other supply offsets the shortfall."
+                "breaks_if": "The effect would be limited if mills, stocks or other supply sources cover the shortfall so that sugar and ethanol availability stay close to normal."
               }
             }
           },
@@ -21826,6 +22653,262 @@
       "id": "governance",
       "name": "Policy & Governance",
       "items": [
+        {
+          "id": "s1j34yac",
+          "headline": "‘Open War’ Between Afghanistan and Pakistan Adds a Volatile Element",
+          "url": "https://www.nytimes.com/2026/10/22/world/asia/afghanistan-pakistan-proxy-war.html",
+          "source": "nyt",
+          "date": "2026-10-22T04:10:29.000Z",
+          "relevance": "medium",
+          "image": "https://static01.nyt.com/images/2026/10/22/multimedia/22int-afghanistan-pakistan-hwkc/22int-afghanistan-pakistan-hwkc-mediumSquareAt3X.jpg",
+          "why": "The New York Times reports that Afghanistan and Pakistan, after eight months of conflict, are now turning to proxy groups. India could be affected through regional security and cross-border trade, although the report names no direct channel.",
+          "implications": [
+            "Fighting through proxy groups can be harder to contain than clashes between state forces, which makes the conflict less predictable for neighbouring countries, including India, that watch the region's security.",
+            "Prolonged fighting that takes a heavy toll on civilians can unsettle the region, and any resulting disruption could affect Indian interests in the neighbourhood."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-22T05:07:24.615Z",
+            "tier": "quick",
+            "primary": "escalation",
+            "complement": null,
+            "features": [
+              "armed_conflict"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "The report describes no direct channel to India, such as fuel, trade flows or the safety of Indians. Any effect would be indirect, through regional security or trade, and is not reported."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "The conflict has run for eight months and is shifting to proxy fighting, so any effect on India would build slowly rather than arrive within weeks."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single outlet, The New York Times, with only a short summary available and no on-record official source."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "regional trade conditions",
+                "effect": "Prolonged conflict between neighbours could disrupt trade and transit links in the region, which may affect Indian traders who deal with Afghanistan or Pakistan.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Reports of further attacks by proxy groups or direct strikes between Afghan and Pakistani forces",
+                "why": "These would show whether the conflict is spreading beyond its present level or settling into a longer proxy contest.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "India borders Pakistan and has long followed developments in Afghanistan closely, so a worsening conflict between the two is usually read in New Delhi as a regional security matter."
+            ],
+            "terms": [
+              {
+                "term": "proxy groups",
+                "meaning": "Armed groups that a state backs or uses to fight on its behalf, so that it avoids direct confrontation between its own forces."
+              }
+            ],
+            "frameworks": {
+              "escalation": {
+                "move": "none",
+                "rung": 4,
+                "current_rung": 4,
+                "previous_rung": null,
+                "development": "The two sides are reported to have turned to proxy groups after eight months of conflict that has caused heavy civilian casualties.",
+                "evidence": "The report describes an ongoing conflict, a heavy civilian toll and a turn to proxy groups. It does not describe new strikes at a higher level, so the war is placed at limited attacks.",
+                "next_signals": [
+                  {
+                    "rung": 5,
+                    "signal": "Reports of sustained, repeated strikes by Afghan or Pakistani forces across the border over several days."
+                  },
+                  {
+                    "rung": 6,
+                    "signal": "Attacks on critical infrastructure, or strikes that reach third countries."
+                  }
+                ],
+                "india_channels": [
+                  "trade",
+                  "diaspora safety"
+                ],
+                "conflict": "w1wd7bb4",
+                "applied": "set",
+                "from": null
+              }
+            }
+          },
+          "conflict": "w1wd7bb4",
+          "place": {
+            "name": "Torkham, Pakistan-Afghanistan border",
+            "country": "Pakistan",
+            "lat": 34.1,
+            "lon": 71.1,
+            "involves": [
+              "Afghanistan"
+            ]
+          },
+          "reports": [
+            {
+              "source": "nyt",
+              "headline": "‘Open War’ Between Afghanistan and Pakistan Adds a Volatile Element",
+              "url": "https://www.nytimes.com/2026/10/22/world/asia/afghanistan-pakistan-proxy-war.html",
+              "date": "2026-10-22T04:10:29.000Z",
+              "kind": "hard",
+              "summary": "The two sides turn to proxy groups after eight months of a conflict that has taken a heavy toll on civilians.",
+              "summaryV": 3,
+              "image": "https://static01.nyt.com/images/2026/10/22/multimedia/22int-afghanistan-pakistan-hwkc/22int-afghanistan-pakistan-hwkc-mediumSquareAt3X.jpg"
+            }
+          ],
+          "thread": "tcgsca7"
+        },
+        {
+          "id": "swrarpu",
+          "headline": "Putin orders release of jailed American as he meets Trump envoy for Ukraine talks",
+          "url": "https://www.theguardian.com/world/2026/oct/21/putin-witkoff-russia-ukraine-trump-stephen-hubbard-release",
+          "source": "guardian",
+          "date": "2026-10-21T15:24:58.000Z",
+          "relevance": "medium",
+          "image": "https://i.guim.co.uk/img/media/3b6f9d48538efe71034a096db4868d7da488b502/460_0_4252_3402/master/4252.jpg?width=700&quality=85&auto=format&fit=max&s=dee286bf18b296c565836a82508333b6",
+          "why": "Vladimir Putin met US envoy Steve Witkoff and freed a jailed American. Moscow indicated that trilateral talks with Ukraine could resume in November, a process that may eventually shape the sanctions and oil flows on which India's Russian crude purchases depend.",
+          "implications": [
+            "Any peace process could alter Western sanctions on Russian oil, which may change the discounts and payment conditions faced by Indian refiners buying Russian crude.",
+            "Russia's demand that Ukraine make \"necessary decisions\" suggests the two sides remain far apart, so strikes on energy infrastructure may continue to unsettle global fuel prices.",
+            "The release of Stephen Hubbard signals warmer US–Russia contact, which could change the diplomatic pressure India faces over its trade with Russia."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-21T21:56:50.410Z",
+            "tier": "standard",
+            "primary": "escalation",
+            "complement": null,
+            "features": [
+              "armed_conflict",
+              "fast_moving",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The channel is India's crude oil trade with Russia. These talks have changed nothing yet, so the effect on Indian fuel costs remains potential rather than immediate."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Talks could resume only in November, and any change to sanctions or oil flows would take further time to emerge."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "The Guardian and CBS News report the meeting and the release, but the November resumption of talks is only indicated by Moscow and remains unconfirmed."
+            },
+            "outlets": 2,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "fuel import costs",
+                "effect": "Progress or failure in talks could shift global oil prices and sanctions on Russian crude, which may feed through to the price of fuel refined in India.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "Russia trade conditions",
+                "effect": "Indian firms trading with Russia may face changed sanctions risk and payment conditions if US–Russia diplomacy produces a settlement.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Resumption of trilateral talks involving the United States, Russia and Ukraine",
+                "why": "Their resumption would show whether diplomacy is gaining momentum while strikes on infrastructure continue.",
+                "when": "November 2026",
+                "where": "Kremlin"
+              },
+              {
+                "what": "Further Russian or Ukrainian strikes on power infrastructure and oil depots",
+                "why": "Continued strikes would show the war remains at the infrastructure-attack level despite the diplomatic contacts.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "India has consistently called for dialogue and diplomacy to end the war while maintaining close defence and energy ties with Russia."
+            ],
+            "terms": [
+              {
+                "term": "ICC",
+                "meaning": "The International Criminal Court, a tribunal in The Hague that has issued an arrest warrant for Vladimir Putin."
+              },
+              {
+                "term": "trilateral talks",
+                "meaning": "Negotiations involving three parties, here the United States, Russia and Ukraine."
+              }
+            ],
+            "frameworks": {
+              "escalation": {
+                "move": "none",
+                "rung": 6,
+                "current_rung": 6,
+                "previous_rung": null,
+                "development": "This story adds diplomacy: Putin met US envoy Steve Witkoff, freed jailed American Stephen Hubbard, and Moscow indicated trilateral talks with Ukraine could resume in November.",
+                "evidence": "The reports describe talks, a prisoner release and statements, but no ceasefire or halt to fighting. The war therefore remains at the level of strikes on each other's power infrastructure set on 2026-10-18.",
+                "next_signals": [
+                  {
+                    "rung": 5,
+                    "signal": "A renewed energy ceasefire takes effect and both sides stop striking power infrastructure and oil depots, while other fighting continues."
+                  },
+                  {
+                    "rung": 7,
+                    "signal": "Either side announces general mobilisation or launches major new offensives across the whole front alongside continued infrastructure strikes."
+                  }
+                ],
+                "india_channels": [
+                  "oil",
+                  "trade"
+                ],
+                "conflict": "wzti51f",
+                "applied": "none",
+                "from": 6
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "guardian",
+              "headline": "Putin orders release of jailed American as he meets Trump envoy for Ukraine talks",
+              "url": "https://www.theguardian.com/world/2026/oct/21/putin-witkoff-russia-ukraine-trump-stephen-hubbard-release",
+              "date": "2026-10-21T15:24:58.000Z",
+              "kind": "hard",
+              "summary": "Russia frees Stephen Hubbard after US request while Steve Witkoff praises Putin, wanted by ICC as war criminal, as a ‘humanitarian’",
+              "summaryV": 3,
+              "lede": "Europe live – latest updates",
+              "image": "https://i.guim.co.uk/img/media/3b6f9d48538efe71034a096db4868d7da488b502/460_0_4252_3402/master/4252.jpg?width=700&quality=85&auto=format&fit=max&s=dee286bf18b296c565836a82508333b6"
+            },
+            {
+              "source": "cbs",
+              "headline": "Russia says Ukraine must make \"necessary decisions\" to end the war",
+              "url": "https://www.cbsnews.com/news/russia-ukraine-war-witkoff-putin-trump-zelenskyy/",
+              "date": "2026-10-21T17:15:19.000Z",
+              "kind": "hard",
+              "summary": "U.S. envoy Steve Witkoff, meeting with Vladimir Putin in Russia, voiced hope for new trilateral talks involving Ukraine, and Moscow indicated the talks could resume in November.",
+              "summaryV": 3
+            },
+            {
+              "source": "npr",
+              "headline": "Putin releases American Stephen Hubbard from Russian prison",
+              "url": "https://www.npr.org/2026/10/21/nx-s1-6010608/putin-releases-american-stephen-hubbard-from-russian-prison",
+              "date": "2026-10-21T22:39:19.000Z",
+              "kind": "hard",
+              "summary": "Russian President Vladimir Putin has freed another American, 74-year-old Michigan native Stephen Hubbard, from a Russian prison following a request from President Trump.",
+              "summaryV": 3
+            }
+          ],
+          "thread": "tq9ru94",
+          "conflict": "wzti51f"
+        },
         {
           "id": "s1ooesay",
           "headline": "Kremlin says 'ready' to resume 3-way talks with US and Ukraine mid-November",
@@ -22095,140 +23178,6 @@
           "thread": "t1ya4ss"
         },
         {
-          "id": "swrarpu",
-          "headline": "Putin orders release of jailed American as he meets Trump envoy for Ukraine talks",
-          "url": "https://www.theguardian.com/world/2026/oct/21/putin-witkoff-russia-ukraine-trump-stephen-hubbard-release",
-          "source": "guardian",
-          "date": "2026-10-21T15:24:58.000Z",
-          "relevance": "medium",
-          "image": "https://i.guim.co.uk/img/media/3b6f9d48538efe71034a096db4868d7da488b502/460_0_4252_3402/master/4252.jpg?width=700&quality=85&auto=format&fit=max&s=dee286bf18b296c565836a82508333b6",
-          "why": "Vladimir Putin met US envoy Steve Witkoff and freed a jailed American. Moscow indicated that trilateral talks with Ukraine could resume in November, a process that may eventually shape the sanctions and oil flows on which India's Russian crude purchases depend.",
-          "implications": [
-            "Any peace process could alter Western sanctions on Russian oil, which may change the discounts and payment conditions faced by Indian refiners buying Russian crude.",
-            "Russia's demand that Ukraine make \"necessary decisions\" suggests the two sides remain far apart, so strikes on energy infrastructure may continue to unsettle global fuel prices.",
-            "The release of Stephen Hubbard signals warmer US–Russia contact, which could change the diplomatic pressure India faces over its trade with Russia."
-          ],
-          "analysis": {
-            "v": 3,
-            "at": "2026-10-21T21:56:50.410Z",
-            "tier": "standard",
-            "primary": "escalation",
-            "complement": null,
-            "features": [
-              "armed_conflict",
-              "fast_moving",
-              "pending_outcome"
-            ],
-            "exposure": {
-              "level": "medium",
-              "reason": "The channel is India's crude oil trade with Russia. These talks have changed nothing yet, so the effect on Indian fuel costs remains potential rather than immediate."
-            },
-            "horizon": {
-              "value": "months",
-              "reason": "Talks could resume only in November, and any change to sanctions or oil flows would take further time to emerge."
-            },
-            "confidence": {
-              "level": "medium",
-              "reason": "The Guardian and CBS News report the meeting and the release, but the November resumption of talks is only indicated by Moscow and remains unconfirmed."
-            },
-            "outlets": 2,
-            "affected": [
-              {
-                "group": "Fuel & LPG users",
-                "direction": "unclear",
-                "what": "fuel import costs",
-                "effect": "Progress or failure in talks could shift global oil prices and sanctions on Russian crude, which may feed through to the price of fuel refined in India.",
-                "basis": "inferred"
-              },
-              {
-                "group": "Importers & traders",
-                "direction": "unclear",
-                "what": "Russia trade conditions",
-                "effect": "Indian firms trading with Russia may face changed sanctions risk and payment conditions if US–Russia diplomacy produces a settlement.",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "Resumption of trilateral talks involving the United States, Russia and Ukraine",
-                "why": "Their resumption would show whether diplomacy is gaining momentum while strikes on infrastructure continue.",
-                "when": "November 2026",
-                "where": "Kremlin"
-              },
-              {
-                "what": "Further Russian or Ukrainian strikes on power infrastructure and oil depots",
-                "why": "Continued strikes would show the war remains at the infrastructure-attack level despite the diplomatic contacts.",
-                "when": "",
-                "where": ""
-              }
-            ],
-            "context": [
-              "India has consistently called for dialogue and diplomacy to end the war while maintaining close defence and energy ties with Russia."
-            ],
-            "terms": [
-              {
-                "term": "ICC",
-                "meaning": "The International Criminal Court, a tribunal in The Hague that has issued an arrest warrant for Vladimir Putin."
-              },
-              {
-                "term": "trilateral talks",
-                "meaning": "Negotiations involving three parties, here the United States, Russia and Ukraine."
-              }
-            ],
-            "frameworks": {
-              "escalation": {
-                "move": "none",
-                "rung": 6,
-                "current_rung": 6,
-                "previous_rung": null,
-                "development": "This story adds diplomacy: Putin met US envoy Steve Witkoff, freed jailed American Stephen Hubbard, and Moscow indicated trilateral talks with Ukraine could resume in November.",
-                "evidence": "The reports describe talks, a prisoner release and statements, but no ceasefire or halt to fighting. The war therefore remains at the level of strikes on each other's power infrastructure set on 2026-10-18.",
-                "next_signals": [
-                  {
-                    "rung": 5,
-                    "signal": "A renewed energy ceasefire takes effect and both sides stop striking power infrastructure and oil depots, while other fighting continues."
-                  },
-                  {
-                    "rung": 7,
-                    "signal": "Either side announces general mobilisation or launches major new offensives across the whole front alongside continued infrastructure strikes."
-                  }
-                ],
-                "india_channels": [
-                  "oil",
-                  "trade"
-                ],
-                "conflict": "wzti51f",
-                "applied": "none",
-                "from": 6
-              }
-            }
-          },
-          "reports": [
-            {
-              "source": "guardian",
-              "headline": "Putin orders release of jailed American as he meets Trump envoy for Ukraine talks",
-              "url": "https://www.theguardian.com/world/2026/oct/21/putin-witkoff-russia-ukraine-trump-stephen-hubbard-release",
-              "date": "2026-10-21T15:24:58.000Z",
-              "kind": "hard",
-              "summary": "Russia frees Stephen Hubbard after US request while Steve Witkoff praises Putin, wanted by ICC as war criminal, as a ‘humanitarian’",
-              "summaryV": 3,
-              "lede": "Europe live – latest updates",
-              "image": "https://i.guim.co.uk/img/media/3b6f9d48538efe71034a096db4868d7da488b502/460_0_4252_3402/master/4252.jpg?width=700&quality=85&auto=format&fit=max&s=dee286bf18b296c565836a82508333b6"
-            },
-            {
-              "source": "cbs",
-              "headline": "Russia says Ukraine must make \"necessary decisions\" to end the war",
-              "url": "https://www.cbsnews.com/news/russia-ukraine-war-witkoff-putin-trump-zelenskyy/",
-              "date": "2026-10-21T17:15:19.000Z",
-              "kind": "hard",
-              "summary": "U.S. envoy Steve Witkoff, meeting with Vladimir Putin in Russia, voiced hope for new trilateral talks involving Ukraine, and Moscow indicated the talks could resume in November.",
-              "summaryV": 3
-            }
-          ],
-          "thread": "tq9ru94",
-          "conflict": "wzti51f"
-        },
-        {
           "id": "s1r3qgp2",
           "headline": "US envoy to meet Putin in Russia as Zelensky says intelligence sharing 'works now'",
           "url": "https://www.bbc.co.uk/news/articles/cq5ynkx3xy11o",
@@ -22462,7 +23411,70 @@
             }
           ],
           "thread": "tq9ru94",
-          "conflict": "wzti51f"
+          "conflict": "wzti51f",
+          "stats": {
+            "v": 2,
+            "at": "2026-10-22T05:07:28.519Z",
+            "series": [
+              {
+                "title": "U.S. net imports of crude oil and products from Russia",
+                "unit": "thousand barrels per day",
+                "publisher": "U.S. Energy Information Administration",
+                "points": [
+                  {
+                    "period": "2020",
+                    "value": 540,
+                    "url": "https://www.eia.gov/dnav/pet/pet_move_neti_dc_nus-nrs_mbblpd_a.htm",
+                    "source": "Russia Net Imports of Crude Oil and Petroleum Products into the U.S."
+                  },
+                  {
+                    "period": "2021",
+                    "value": 673,
+                    "url": "https://www.eia.gov/dnav/pet/pet_move_neti_dc_nus-nrs_mbblpd_a.htm",
+                    "source": "Russia Net Imports of Crude Oil and Petroleum Products into the U.S."
+                  },
+                  {
+                    "period": "2022",
+                    "value": 147,
+                    "url": "https://www.eia.gov/dnav/pet/pet_move_neti_dc_nus-nrs_mbblpd_a.htm",
+                    "source": "Russia Net Imports of Crude Oil and Petroleum Products into the U.S."
+                  },
+                  {
+                    "period": "2023",
+                    "value": 0,
+                    "url": "https://www.eia.gov/dnav/pet/pet_move_neti_dc_nus-nrs_mbblpd_a.htm",
+                    "source": "Russia Net Imports of Crude Oil and Petroleum Products into the U.S."
+                  },
+                  {
+                    "period": "2024",
+                    "value": 0,
+                    "url": "https://www.eia.gov/dnav/pet/pet_move_neti_dc_nus-nrs_mbblpd_a.htm",
+                    "source": "Russia Net Imports of Crude Oil and Petroleum Products into the U.S."
+                  },
+                  {
+                    "period": "2025",
+                    "value": 0,
+                    "url": "https://www.eia.gov/dnav/pet/pet_move_neti_dc_nus-nrs_mbblpd_a.htm",
+                    "source": "Russia Net Imports of Crude Oil and Petroleum Products into the U.S."
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.eia.gov/dnav/pet/pet_move_neti_dc_nus-nrs_mbblpd_a.htm",
+                    "title": "Russia Net Imports of Crude Oil and Petroleum Products into the U.S.",
+                    "domain": "eia.gov"
+                  }
+                ],
+                "domains": [
+                  "eia.gov"
+                ],
+                "dropped": 0,
+                "why": "It tracks the volume of crude and product trade flowing from Russia, the same oil market the story says could shift with any peace deal, though it measures US purchases rather than Indian refiners' pu",
+                "reused": true,
+                "checkedAt": "2026-10-13T23:10:06.410Z"
+              }
+            ]
+          }
         },
         {
           "id": "s1vyzdnu",
@@ -24450,29 +25462,29 @@
           "relevance": "medium",
           "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/ae0a/live/7e914b00-c96f-11f1-80fc-ab418b149008.jpg",
           "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/ae0a/live/7e914b00-c96f-11f1-80fc-ab418b149008.jpg",
-          "why": "Jantar Mantar's denotification as a protest site could change where and how citizens can demonstrate in central Delhi.",
+          "why": "The BBC reports that Jantar Mantar, the 18th-century site long used for demonstrations in Delhi, has been denotified as a protest site. This could change where and how citizens in the capital can hold public protests.",
           "implications": [
-            "BBC News reports that Jantar Mantar, long synonymous with Delhi demonstrations, has been denotified as a protest site.",
-            "Protesters may lose a long-used central venue and could move to other locations or face tighter limits."
+            "Protesters, unions and civil society groups that have used the site could have to find other venues or seek fresh permissions, which may reduce the visibility of their demonstrations in central Delhi.",
+            "The change could also shape how the right to peaceful assembly works in practice in the capital, since protests there are closely tied to access to a recognised site."
           ],
           "analysis": {
-            "v": 2,
-            "at": "2026-10-17T04:42:06.976Z",
+            "v": 3,
+            "at": "2026-10-22T05:10:58.352Z",
             "tier": "quick",
             "primary": "impact_chain",
             "complement": null,
             "features": [],
             "exposure": {
               "level": "low",
-              "reason": "Domestic civic-space issue; no reported effect on household essentials, trade or safety."
+              "reason": "The effect works through civic and political access in Delhi rather than through prices, trade or safety, and the report describes no wider economic channel."
             },
             "horizon": {
-              "value": "now",
-              "reason": "Denotification has already happened; it applies to any new protest."
+              "value": "weeks",
+              "reason": "The effect will show when groups next seek to protest in Delhi and find out how the denotification is applied."
             },
             "confidence": {
               "level": "low",
-              "reason": "Single outlet; no named official source in the summary."
+              "reason": "The account rests on a single BBC News report, and the summary gives no named official source or details of the order."
             },
             "outlets": 1,
             "affected": [
@@ -24480,41 +25492,48 @@
                 "group": "A named state or region",
                 "direction": "unclear",
                 "what": "Delhi protest venues",
+                "effect": "Groups that demonstrate in the capital may lose a customary venue and have to use other locations or seek new permissions.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "Any announced alternative site for protests in Delhi",
+                "what": "Any official notification, clarification or court challenge about the denotification of Jantar Mantar",
+                "why": "It would show the reasons for the change and whether another designated protest site will replace it.",
                 "when": "",
                 "where": ""
-              },
+              }
+            ],
+            "context": [
+              "In India, peaceful assembly is a constitutional freedom subject to reasonable restrictions, and authorities usually designate specific places where protests may be held in cities.",
+              "Delhi is the seat of national government, so protest sites there carry particular weight for groups trying to reach policymakers and the national media."
+            ],
+            "terms": [
               {
-                "what": "Whether groups challenge the denotification",
-                "when": "",
-                "where": ""
+                "term": "denotified",
+                "meaning": "Removed from an official list or notification, so the site no longer has the formal status of a designated protest venue."
               }
             ],
             "frameworks": {
               "impact_chain": {
                 "chain": [
                   {
-                    "step": "Site denotified",
-                    "detail": "Jantar Mantar has been denotified as a protest site.",
+                    "step": "Jantar Mantar denotified as protest site",
+                    "detail": "The BBC reports that the 18th-century site in Delhi has been denotified as a protest site, ending its formal status as a designated venue.",
                     "basis": "reported"
                   },
                   {
-                    "step": "Iconic venue affected",
-                    "detail": "The 18th Century site is almost synonymous with Delhi demonstrations.",
+                    "step": "A long-standing protest venue is lost",
+                    "detail": "The site is described as almost synonymous with demonstrations in Delhi, so its denotification removes a place that many groups have relied on to be seen and heard.",
                     "basis": "reported"
                   },
                   {
-                    "step": "Protests may relocate",
-                    "detail": "Demonstrations could shift elsewhere or face tighter conditions.",
+                    "step": "Protest groups must adapt",
+                    "detail": "Organisers could have to move to other locations or seek new permissions, which may reduce the visibility of public protests in central Delhi.",
                     "basis": "inferred"
                   }
                 ],
-                "breaks_if": "The denotification is reversed or an equivalent protest site is notified."
+                "breaks_if": "Authorities designate an equally accessible alternative site in central Delhi, or the denotification is reversed or set aside, so groups keep a comparable venue for demonstrations."
               }
             }
           },
@@ -24540,15 +25559,14 @@
           "source": "cbs",
           "date": "2026-10-16T20:12:46.000Z",
           "relevance": "medium",
-          "why": "Iran's president says he is ready for talks, but earlier overtures failed, so any effect on Gulf stability and India remains uncertain.",
+          "why": "Iran's president has denied seeking nuclear weapons and said he is ready for talks, though earlier signals of openness did not lead to negotiations. Any change in Iran's standoff with the West could matter to India's energy and Gulf interests.",
           "implications": [
-            "CBS News reports Iran's president denied nuclear ambitions and said he is ready for talks.",
-            "Earlier signals of openness did not come to fruition, so talks are not assured.",
-            "Any diplomatic outcome could shape Gulf stability, which matters for Indians living and working in the region."
+            "Because earlier offers of talks did not come to fruition, this statement alone does not show that tensions around Iran are easing.",
+            "If talks did eventually happen, lower tension in the region could reduce risks to oil supply and to Indians living in the Gulf."
           ],
           "analysis": {
-            "v": 2,
-            "at": "2026-10-16T21:14:57.339Z",
+            "v": 3,
+            "at": "2026-10-22T05:12:50.054Z",
             "tier": "quick",
             "primary": "impact_chain",
             "complement": null,
@@ -24557,52 +25575,58 @@
             ],
             "exposure": {
               "level": "low",
-              "reason": "No direct mechanism for India in the report; effects are indirect."
+              "reason": "The reports describe only a statement of readiness for talks, with no action affecting oil, shipping or Indians abroad, so any link to India is indirect."
             },
             "horizon": {
               "value": "months",
-              "reason": "No talks are reported as scheduled."
+              "reason": "No talks are scheduled in the reports, so any effect on regional tension depends on negotiations that may or may not begin."
             },
             "confidence": {
-              "level": "medium",
-              "reason": "One outlet, but the president's remarks are on record."
+              "level": "low",
+              "reason": "This rests on a single CBS News report with very little detail, and what the talks would cover or who would take part is unconfirmed."
             },
             "outlets": 1,
             "affected": [
               {
                 "group": "Gulf & overseas workers and families",
                 "direction": "unclear",
-                "what": "regional stability outlook",
+                "what": "regional security outlook",
+                "effect": "Whether Iran's offer leads to talks could influence tension in the Gulf, where many Indian workers and their families live.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "Whether formal talks involving Iran are scheduled",
+                "what": "Whether formal talks involving Iran on its nuclear programme are announced or scheduled",
+                "why": "It would show whether this offer differs from earlier ones that did not lead to negotiations.",
                 "when": "",
-                "where": ""
+                "where": "Ministry of External Affairs"
               }
             ],
+            "context": [
+              "India imports most of its crude oil, much of it from the Gulf region, so tension involving Iran can raise risks for shipping and prices."
+            ],
+            "terms": [],
             "frameworks": {
               "impact_chain": {
                 "chain": [
                   {
-                    "step": "Iran signals openness to talks",
-                    "detail": "President denies nuclear ambitions and says he is ready for talks.",
+                    "step": "Iran's president denies nuclear ambitions",
+                    "detail": "Iran's president said his country does not seek nuclear weapons and that he is ready for talks, which is a statement of intent rather than an agreed process.",
                     "basis": "reported"
                   },
                   {
-                    "step": "Past overtures stalled",
-                    "detail": "Earlier signals of openness did not come to fruition.",
+                    "step": "Earlier offers did not lead to talks",
+                    "detail": "CBS News notes that Iran has signalled openness to talks in the past, but those discussions did not come to fruition, so this offer is not yet a sign of progress.",
                     "basis": "reported"
                   },
                   {
-                    "step": "Gulf stability outlook may shift",
-                    "detail": "Whether talks happen could shape regional conditions that matter to India.",
+                    "step": "Gulf tension may stay or ease",
+                    "detail": "If talks begin, tension in the Gulf could fall, lowering risks to oil supply and Indian workers there; if not, the risks remain unchanged.",
                     "basis": "inferred"
                   }
                 ],
-                "breaks_if": "No talks are actually held, as with earlier overtures."
+                "breaks_if": "No negotiations are actually held, so the regional situation, and therefore India's exposure through oil and the Gulf, stays as it is."
               }
             }
           },
@@ -26649,8 +27673,8 @@
   "source": "BBC News & The Guardian & NPR & Al Jazeera & MercoPress & ABC News & The New York Times & CNBC & CBS News & DW & France 24 & Africanews & South China Morning Post & The Hindu & Mint",
   "lastRun": {
     "wars": {
-      "linked": 48,
-      "seeded": 4,
+      "linked": 0,
+      "seeded": 0,
       "active": 4
     },
     "places": {
@@ -26659,20 +27683,20 @@
       "waiting": 120,
       "failedBatches": 3
     },
-    "analysed": 125,
-    "added": 3,
-    "merged": 5,
-    "failedBatches": 2,
+    "analysed": 172,
+    "added": 6,
+    "merged": 7,
+    "failedBatches": 3,
     "feeds": {
       "bbc": {
         "feedsOk": 6,
         "feedsFailed": 0,
-        "items": 162
+        "items": 163
       },
       "guardian": {
         "feedsOk": 7,
         "feedsFailed": 0,
-        "items": 201
+        "items": 200
       },
       "npr": {
         "feedsOk": 4,
@@ -26682,7 +27706,7 @@
       "aljazeera": {
         "feedsOk": 1,
         "feedsFailed": 0,
-        "items": 11
+        "items": 16
       },
       "mercopress": {
         "feedsOk": 3,
@@ -26697,17 +27721,17 @@
       "nyt": {
         "feedsOk": 5,
         "feedsFailed": 0,
-        "items": 171
+        "items": 169
       },
       "cnbc": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 89
+        "items": 90
       },
       "cbs": {
         "feedsOk": 2,
         "feedsFailed": 0,
-        "items": 46
+        "items": 45
       },
       "dw": {
         "feedsOk": 3,
@@ -26717,7 +27741,7 @@
       "france24": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 75
+        "items": 77
       },
       "africanews": {
         "feedsOk": 1,
@@ -26731,18 +27755,18 @@
       }
     },
     "shareImages": {
-      "tried": 2,
-      "found": 2,
+      "tried": 4,
+      "found": 4,
       "summaries": 0
     },
     "threads": {
-      "assigned": 3,
+      "assigned": 6,
       "created": 1,
       "failedBatches": 0
     },
     "summaries": {
-      "written": 9,
-      "due": 9
+      "written": 4,
+      "due": 4
     },
     "kinds": {
       "labelled": 0,
@@ -26751,53 +27775,74 @@
     },
     "frames": {
       "done": 12,
-      "waiting": 15,
+      "waiting": 7,
       "failedBatches": 0
     },
     "stats": {
-      "searched": 0,
+      "searched": 2,
       "found": 0,
-      "reused": 0,
-      "none": 0,
+      "reused": 1,
+      "none": 1,
       "failed": 0,
-      "proposed": 0,
-      "droppedPoints": 0,
+      "proposed": 5,
+      "droppedPoints": 5,
       "pagesFetched": 0,
-      "samples": []
+      "samples": [
+        {
+          "headline": "US envoy to meet Putin in Russia as Zelensky says intelligence sharing 'works no",
+          "result": "reused saved series"
+        },
+        {
+          "headline": "Saudi Arabia Postpones Its FII Investment Event After Houthi Attacks",
+          "result": "no figure found on an official page",
+          "proposed": 5,
+          "checked": 0,
+          "pagesFetched": 0
+        }
+      ]
     },
     "models": {
       "filter": {
         "model": "claude-haiku-5-5",
-        "calls": 16,
-        "inputTokens": 67110,
-        "outputTokens": 40326,
-        "cost": 0.0269
-      },
-      "analysis": {
-        "model": "claude-opus-5-5",
-        "calls": 7,
-        "inputTokens": 25223,
-        "outputTokens": 26592,
-        "cost": 0.6327
+        "calls": 21,
+        "inputTokens": 78030,
+        "outputTokens": 45029,
+        "cost": 0.0301
       },
       "analysis_quick": {
         "model": "claude-sonnet-5-5",
-        "calls": 4,
-        "inputTokens": 12581,
-        "outputTokens": 14331,
-        "cost": 0.1685
+        "calls": 8,
+        "inputTokens": 25406,
+        "outputTokens": 25998,
+        "cost": 0.3109
+      },
+      "stats": {
+        "model": "claude-sonnet-5-5",
+        "calls": 1,
+        "inputTokens": 137510,
+        "outputTokens": 1508,
+        "searches": 3,
+        "fetches": 4,
+        "cost": 0.3201
+      },
+      "analysis": {
+        "model": "claude-opus-5-5",
+        "calls": 3,
+        "inputTokens": 10626,
+        "outputTokens": 16252,
+        "cost": 0.3675
       },
       "threads": {
         "model": "claude-sonnet-5-5",
-        "calls": 10,
-        "inputTokens": 20907,
-        "outputTokens": 4074,
-        "cost": 0.0827
+        "calls": 5,
+        "inputTokens": 12843,
+        "outputTokens": 1631,
+        "cost": 0.0421
       }
     },
     "spend": {
-      "thisDesk": 0.9106,
-      "today": 0.9106,
+      "thisDesk": 1.0707,
+      "today": 2.7037,
       "cap": 6
     }
   },
