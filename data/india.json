@@ -2,12 +2,210 @@
   "schema": 4,
   "region": "India",
   "since": "2026-10-02",
-  "updatedAt": "2026-10-22T12:12:26.932Z",
+  "updatedAt": "2026-10-22T17:23:49.284Z",
   "sectors": [
     {
       "id": "energy",
       "name": "Energy",
       "items": [
+        {
+          "id": "s6n2u6j",
+          "headline": "US orders departure of personnel from Saudi Arabia, citing Houthi threat",
+          "url": "https://www.aljazeera.com/news/2026/10/21/us-orders-departure-of-personnel-from-saudi-arabia-citing-houthi-threat",
+          "source": "aljazeera",
+          "date": "2026-10-21T23:13:35.000Z",
+          "relevance": "medium",
+          "why": "The United States ordered non-emergency staff out of Saudi Arabia after Houthi strikes on an airport and an oil field killed at least three people. Saudi Arabia supplies crude to India and hosts many Indian workers.",
+          "implications": [
+            "Strikes on a Saudi oil field could raise the risk premium on Gulf crude, which may push up costs for Indian refiners and eventually petrol, diesel and liquefied petroleum gas prices.",
+            "An attack on a Saudi airport could disrupt flights between India and the kingdom, affecting workers, families and pilgrims who travel on those routes.",
+            "CNBC reports that Washington is readying strikes on Iran after the US midterm elections, which could widen the conflict across the Gulf, where many Indians live and work.",
+            "A US decision to withdraw diplomats signals that Washington judges the security risk in Saudi Arabia to be rising, and other governments may reassess advice for their own citizens."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-22T05:10:58.350Z",
+            "tier": "standard",
+            "primary": "disruption_map",
+            "complement": null,
+            "features": [
+              "disruption",
+              "armed_conflict",
+              "fast_moving",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "high",
+              "reason": "The conflict reaches India through Saudi crude supplies, a top Indian import, and through the safety and travel of the many Indians living in or visiting Saudi Arabia."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "The timing depends on whether the Houthi attacks on Saudi energy and transport sites continue and whether a wider US–Iran confrontation follows."
+            },
+            "confidence": {
+              "level": "high",
+              "reason": "Al Jazeera, BBC News and CNBC agree on the State Department departure order and the strikes, but CNBC's report of planned US strikes on Iran is unconfirmed."
+            },
+            "outlets": 3,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "up",
+                "what": "fuel price pressure",
+                "effect": "Attacks on Saudi oil facilities could raise global crude prices, which may raise Indian refiners' costs and later feed into petrol, diesel and cooking gas prices.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Gulf & overseas workers and families",
+                "direction": "unclear",
+                "what": "safety of Indian workers",
+                "effect": "Indian workers in Saudi Arabia may face greater security risks if Houthi strikes on airports and oil fields continue, which could worry families who depend on their remittances.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Travellers & pilgrims",
+                "direction": "down",
+                "what": "flight availability",
+                "effect": "Strikes on a Saudi airport could disrupt flights from India, affecting pilgrims and other travellers heading to the kingdom.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Further Houthi strikes on Saudi airports, oil fields or other energy facilities",
+                "why": "Repeated attacks would show whether the threat to Saudi crude output and air travel is growing or contained.",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "US military strikes on Iran following the midterm elections",
+                "why": "Such strikes would signal a wider regional conflict touching Gulf oil supplies and Indian communities across the region.",
+                "when": "after the midterms",
+                "where": ""
+              },
+              {
+                "what": "Updated travel or safety advisories for Indian nationals in Saudi Arabia",
+                "why": "A new advisory would show whether India judges the risk to its citizens to have risen.",
+                "when": "",
+                "where": "Ministry of External Affairs, India"
+              }
+            ],
+            "context": [
+              "India imports most of the crude oil it uses, and Saudi Arabia has long been one of its largest suppliers, so supply disruptions or price spikes there feed into Indian fuel costs.",
+              "Saudi Arabia hosts a large Indian workforce whose remittances support many households, especially in southern states, and it is the destination for Indian Hajj and Umrah pilgrims.",
+              "The Houthis are a Yemen-based armed movement aligned with Iran that has previously launched missile and drone attacks on Saudi territory and on shipping near the Red Sea."
+            ],
+            "terms": [
+              {
+                "term": "Houthis",
+                "meaning": "An Iran-aligned armed movement that controls much of northern Yemen and has attacked Saudi Arabia and shipping in the past."
+              },
+              {
+                "term": "non-emergency staff",
+                "meaning": "Embassy employees whose roles are not essential during a crisis, whom a government orders home when it judges the local security risk to be high."
+              }
+            ],
+            "frameworks": {
+              "disruption_map": {
+                "node": {
+                  "name": "Saudi airport and oil field struck by Houthis",
+                  "type": "other",
+                  "status": "unknown",
+                  "as_of": "2026-10-22"
+                },
+                "cause": {
+                  "text": "Iran-aligned Houthi forces carried out strikes on a Saudi airport and an oil field, killing at least three people, according to BBC News and CNBC.",
+                  "status": "confirmed"
+                },
+                "flows": [
+                  {
+                    "flow": "crude",
+                    "india_link": "Saudi Arabia is a major supplier of crude oil to Indian refiners. Damage or threats to Saudi oil fields could tighten supply and raise prices for Indian fuel users.",
+                    "basis": "inferred"
+                  },
+                  {
+                    "flow": "air passengers",
+                    "india_link": "Indian workers, families and pilgrims fly regularly between India and Saudi airports. Attacks on airports could interrupt these journeys.",
+                    "basis": "inferred"
+                  }
+                ],
+                "alternatives": [],
+                "duration": "not reported"
+              }
+            }
+          },
+          "conflict": "w1f5pudc",
+          "place": {
+            "name": "Riyadh",
+            "country": "Saudi Arabia",
+            "lat": 24.71,
+            "lon": 46.68,
+            "involves": [
+              "United States",
+              "Yemen"
+            ]
+          },
+          "reports": [
+            {
+              "source": "aljazeera",
+              "headline": "US orders departure of personnel from Saudi Arabia, citing Houthi threat",
+              "url": "https://www.aljazeera.com/news/2026/10/21/us-orders-departure-of-personnel-from-saudi-arabia-citing-houthi-threat",
+              "date": "2026-10-21T23:13:35.000Z",
+              "kind": "hard",
+              "summary": "US State Department says Iran-aligned Houthis have 'increasingly ⁠⁠engaged in hostilities' against Saudi Arabia.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/ap_6ad938b69c56d-1792620726.jpg?resize=1920%2C1440"
+            },
+            {
+              "source": "bbc",
+              "headline": "US orders some diplomats to leave Saudi Arabia as Houthi attacks escalate",
+              "url": "https://www.bbc.co.uk/news/articles/c6x2vpk93770o",
+              "date": "2026-10-22T01:07:34.000Z",
+              "kind": "hard",
+              "summary": "The warning to US officials comes as at least three people die in the latest strikes at an airport and an oil field.",
+              "summaryV": 3,
+              "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6998/live/cec97250-cdb1-11f1-bc2e-018d645d8d21.jpg",
+              "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/6998/live/cec97250-cdb1-11f1-bc2e-018d645d8d21.jpg"
+            },
+            {
+              "source": "cnbc",
+              "headline": "U.S. pulls diplomats from Saudi Arabia as it reportedly readies Iran strikes after midterms",
+              "url": "https://www.cnbc.com/2026/10/22/us-iran-trump-hormuz-.html",
+              "date": "2026-10-22T04:35:54.000Z",
+              "kind": "hard",
+              "summary": "The U.S. ordered non-emergency staff out of Saudi Arabia after Houthi strikes on an airport and an oil field, reviving fears of a widening regional conflict.",
+              "summaryV": 3
+            },
+            {
+              "source": "cbs",
+              "headline": "U.S. ordering some government staff to depart Saudi Arabia",
+              "url": "https://www.cbsnews.com/news/us-saudi-arabia-ordered-departure-houthis/",
+              "date": "2026-10-21T23:28:00.000Z",
+              "kind": "hard",
+              "summary": "The U.S. military has also been quietly reducing its footprint at posts in the Middle East due to regional threats from the Houthis and direct threats from Iran, CBS News has learned.",
+              "summaryV": 3
+            },
+            {
+              "source": "aljazeera",
+              "headline": "Iran reveals ‘offensive’ doctrine, US issues alert: Is war imminent?",
+              "url": "https://www.aljazeera.com/news/2026/10/22/iran-reveals-offensive-doctrine-us-issues-alert-is-war-imminent",
+              "date": "2026-10-22T12:12:32.000Z",
+              "kind": "hard",
+              "summary": "US orders diplomatic staff out of Saudi Arabia amid escalating conflict and reports of potential US strikes on Iran.",
+              "summaryV": 3
+            }
+          ],
+          "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/ap_6ad938b69c56d-1792620726.jpg?resize=1920%2C1440",
+          "thread": "tq5ix5r",
+          "stats": {
+            "v": 2,
+            "at": "2026-10-22T12:11:25.386Z",
+            "series": [],
+            "reuseOnly": true
+          }
+        },
         {
           "id": "s1l8i59q",
           "headline": "Stocks Fall and Oil Rises as Investors Retreat from Mounting Risks",
@@ -290,6 +488,15 @@
               "summary": "PRESS REVIEW – Thursday, October 22: The New York Times's sources report plans for fresh strikes on Iran after the US midterm elections. In other news, the French Senate publishes a 30-step proposal for how to \"take back control\", just days after protests gave way to riots.",
               "summaryV": 3,
               "image": "https://s.france24.com/media/display/85419180-cded-11f1-b616-ab78a7fed2ce/w:1024/p:16x9/capture-bd8a83d8.jpg"
+            },
+            {
+              "source": "npr",
+              "headline": "U.S., Israel may attack Iran post-elections. And, SpaceX and Tesla consider merging",
+              "url": "https://www.npr.org/2026/10/22/g-s1-149315/up-first-newsletter-midterm-campaign-israel-iran-elon-musk-spacex-tesla",
+              "date": "2026-10-22T11:28:24.000Z",
+              "kind": "hard",
+              "summary": "The U.S. and Israel are planning for a possible post-elections attack on Iran, an anonymous source tells NPR. And, Elon Musk considers merging his companies SpaceX and Tesla.",
+              "summaryV": 3
             }
           ],
           "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/afp_6ad6002b1963-1792409643.jpg?resize=1920%2C1440",
@@ -415,6 +622,127 @@
             ]
           },
           "conflict": "w1ye2krf"
+        },
+        {
+          "id": "s1pd88qn",
+          "headline": "Oil prices jump to five-month high as attacks threaten global supply",
+          "url": "https://www.theguardian.com/business/2026/oct/22/oil-prices-jump-five-month-high-threats-supply",
+          "source": "guardian",
+          "date": "2026-10-22T11:28:11.000Z",
+          "relevance": "high",
+          "image": "https://i.guim.co.uk/img/media/e3e106cee8c7a119858472afd76f5d130e4d43b6/1722_527_3180_2545/master/3180.jpg?width=700&quality=85&auto=format&fit=max&s=b8e22b5c3cf4c074bcfda67a7e16255b",
+          "why": "Oil prices rose to a five-month high after Iran's Revolutionary Guard said it hit four vessels in the northern Gulf and three more vessels struck mines near the strait of Hormuz, which could raise India's crude costs.",
+          "implications": [
+            "Because India pays for crude in dollars, a sustained rise in oil prices could enlarge its import bill and put pressure on the rupee and the trade balance.",
+            "Higher crude costs may squeeze the margins of Indian refiners and fuel retailers, or eventually feed through to petrol and diesel prices, depending on how far costs are passed on."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-22T17:21:30.088Z",
+            "tier": "quick",
+            "primary": "disruption_map",
+            "complement": null,
+            "features": [
+              "disruption",
+              "armed_conflict",
+              "price_move"
+            ],
+            "exposure": {
+              "level": "high",
+              "reason": "India's heavy dependence on imported crude means higher global oil prices raise the cost of petrol, diesel and the national import bill, which touches household fuel spending."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Higher crude prices reach Indian refiners' costs within weeks, but pump prices respond more slowly and depend on how long the disruption lasts."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single Guardian report in which the attacks are claimed by Iran's Revolutionary Guard, and no independent confirmation of the incidents is given."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "up",
+                "what": "fuel costs",
+                "effect": "If higher crude prices persist, Indian refiners' costs rise, which could eventually be passed on to petrol, diesel and cooking gas prices paid by households.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Importers & traders",
+                "direction": "up",
+                "what": "import costs",
+                "effect": "Companies that import crude and oil-linked goods may face higher bills as prices climb, which could in turn raise costs for their customers.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Further attacks or mine strikes on vessels in the northern Gulf or near the strait of Hormuz",
+                "why": "Repeated incidents would show whether the supply threat is growing and would add to upward pressure on oil prices.",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "Whether oil prices stay at or above the five-month high in the coming days",
+                "why": "A sustained rise would raise the likelihood of higher costs reaching Indian refiners and fuel consumers.",
+                "when": "",
+                "where": "Ministry of Petroleum and Natural Gas"
+              }
+            ],
+            "context": [
+              "India imports most of the crude oil it consumes, and a large share of the world's seaborne oil passes through the strait of Hormuz, so trouble there affects prices everywhere."
+            ],
+            "terms": [
+              {
+                "term": "IRGC",
+                "meaning": "The Islamic Revolutionary Guard Corps, a branch of Iran's armed forces that operates separately from the regular army."
+              }
+            ],
+            "frameworks": {
+              "disruption_map": {
+                "node": {
+                  "name": "Strait of Hormuz",
+                  "type": "strait",
+                  "status": "unknown",
+                  "as_of": "2026-10-22"
+                },
+                "cause": {
+                  "text": "Iran's Revolutionary Guard says it hit four vessels in the northern Gulf, and three more vessels struck mines near the strait of Hormuz.",
+                  "status": "claimed"
+                },
+                "flows": [
+                  {
+                    "flow": "crude",
+                    "india_link": "Oil prices rose on fears for global supply. India imports most of its crude, so Indian refiners and, eventually, fuel consumers depend on prices and shipping through the Gulf.",
+                    "basis": "inferred"
+                  }
+                ],
+                "alternatives": [],
+                "duration": "not reported"
+              }
+            }
+          },
+          "place": {
+            "name": "Strait of Hormuz",
+            "country": "Iran",
+            "lat": 26.6,
+            "lon": 56.3
+          },
+          "reports": [
+            {
+              "source": "guardian",
+              "headline": "Oil prices jump to five-month high as attacks threaten global supply",
+              "url": "https://www.theguardian.com/business/2026/oct/22/oil-prices-jump-five-month-high-threats-supply",
+              "date": "2026-10-22T11:28:11.000Z",
+              "kind": "hard",
+              "summary": "Iran’s IRGC says it hit four vessels in the northern Gulf and three more struck mines near the strait of Hormuz",
+              "summaryV": 3,
+              "lede": "Shipping workers: how is the Middle East conflict affecting you?",
+              "image": "https://i.guim.co.uk/img/media/e3e106cee8c7a119858472afd76f5d130e4d43b6/1722_527_3180_2545/master/3180.jpg?width=700&quality=85&auto=format&fit=max&s=b8e22b5c3cf4c074bcfda67a7e16255b"
+            }
+          ],
+          "thread": "t2ogxay"
         },
         {
           "id": "s14woks4",
@@ -655,195 +983,6 @@
           ],
           "image": "https://images.euronews.com/articles/stories/09/96/25/64/1024x538_cmsv2_9f6faa65-5ec3-5ec4-a935-80e11bb2abbe-9962564.jpg",
           "thread": "tq5ix5r"
-        },
-        {
-          "id": "s6n2u6j",
-          "headline": "US orders departure of personnel from Saudi Arabia, citing Houthi threat",
-          "url": "https://www.aljazeera.com/news/2026/10/21/us-orders-departure-of-personnel-from-saudi-arabia-citing-houthi-threat",
-          "source": "aljazeera",
-          "date": "2026-10-21T23:13:35.000Z",
-          "relevance": "medium",
-          "why": "The United States ordered non-emergency staff out of Saudi Arabia after Houthi strikes on an airport and an oil field killed at least three people. Saudi Arabia supplies crude to India and hosts many Indian workers.",
-          "implications": [
-            "Strikes on a Saudi oil field could raise the risk premium on Gulf crude, which may push up costs for Indian refiners and eventually petrol, diesel and liquefied petroleum gas prices.",
-            "An attack on a Saudi airport could disrupt flights between India and the kingdom, affecting workers, families and pilgrims who travel on those routes.",
-            "CNBC reports that Washington is readying strikes on Iran after the US midterm elections, which could widen the conflict across the Gulf, where many Indians live and work.",
-            "A US decision to withdraw diplomats signals that Washington judges the security risk in Saudi Arabia to be rising, and other governments may reassess advice for their own citizens."
-          ],
-          "analysis": {
-            "v": 3,
-            "at": "2026-10-22T05:10:58.350Z",
-            "tier": "standard",
-            "primary": "disruption_map",
-            "complement": null,
-            "features": [
-              "disruption",
-              "armed_conflict",
-              "fast_moving",
-              "pending_outcome"
-            ],
-            "exposure": {
-              "level": "high",
-              "reason": "The conflict reaches India through Saudi crude supplies, a top Indian import, and through the safety and travel of the many Indians living in or visiting Saudi Arabia."
-            },
-            "horizon": {
-              "value": "weeks",
-              "reason": "The timing depends on whether the Houthi attacks on Saudi energy and transport sites continue and whether a wider US–Iran confrontation follows."
-            },
-            "confidence": {
-              "level": "high",
-              "reason": "Al Jazeera, BBC News and CNBC agree on the State Department departure order and the strikes, but CNBC's report of planned US strikes on Iran is unconfirmed."
-            },
-            "outlets": 3,
-            "affected": [
-              {
-                "group": "Fuel & LPG users",
-                "direction": "up",
-                "what": "fuel price pressure",
-                "effect": "Attacks on Saudi oil facilities could raise global crude prices, which may raise Indian refiners' costs and later feed into petrol, diesel and cooking gas prices.",
-                "basis": "inferred"
-              },
-              {
-                "group": "Gulf & overseas workers and families",
-                "direction": "unclear",
-                "what": "safety of Indian workers",
-                "effect": "Indian workers in Saudi Arabia may face greater security risks if Houthi strikes on airports and oil fields continue, which could worry families who depend on their remittances.",
-                "basis": "inferred"
-              },
-              {
-                "group": "Travellers & pilgrims",
-                "direction": "down",
-                "what": "flight availability",
-                "effect": "Strikes on a Saudi airport could disrupt flights from India, affecting pilgrims and other travellers heading to the kingdom.",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "Further Houthi strikes on Saudi airports, oil fields or other energy facilities",
-                "why": "Repeated attacks would show whether the threat to Saudi crude output and air travel is growing or contained.",
-                "when": "",
-                "where": ""
-              },
-              {
-                "what": "US military strikes on Iran following the midterm elections",
-                "why": "Such strikes would signal a wider regional conflict touching Gulf oil supplies and Indian communities across the region.",
-                "when": "after the midterms",
-                "where": ""
-              },
-              {
-                "what": "Updated travel or safety advisories for Indian nationals in Saudi Arabia",
-                "why": "A new advisory would show whether India judges the risk to its citizens to have risen.",
-                "when": "",
-                "where": "Ministry of External Affairs, India"
-              }
-            ],
-            "context": [
-              "India imports most of the crude oil it uses, and Saudi Arabia has long been one of its largest suppliers, so supply disruptions or price spikes there feed into Indian fuel costs.",
-              "Saudi Arabia hosts a large Indian workforce whose remittances support many households, especially in southern states, and it is the destination for Indian Hajj and Umrah pilgrims.",
-              "The Houthis are a Yemen-based armed movement aligned with Iran that has previously launched missile and drone attacks on Saudi territory and on shipping near the Red Sea."
-            ],
-            "terms": [
-              {
-                "term": "Houthis",
-                "meaning": "An Iran-aligned armed movement that controls much of northern Yemen and has attacked Saudi Arabia and shipping in the past."
-              },
-              {
-                "term": "non-emergency staff",
-                "meaning": "Embassy employees whose roles are not essential during a crisis, whom a government orders home when it judges the local security risk to be high."
-              }
-            ],
-            "frameworks": {
-              "disruption_map": {
-                "node": {
-                  "name": "Saudi airport and oil field struck by Houthis",
-                  "type": "other",
-                  "status": "unknown",
-                  "as_of": "2026-10-22"
-                },
-                "cause": {
-                  "text": "Iran-aligned Houthi forces carried out strikes on a Saudi airport and an oil field, killing at least three people, according to BBC News and CNBC.",
-                  "status": "confirmed"
-                },
-                "flows": [
-                  {
-                    "flow": "crude",
-                    "india_link": "Saudi Arabia is a major supplier of crude oil to Indian refiners. Damage or threats to Saudi oil fields could tighten supply and raise prices for Indian fuel users.",
-                    "basis": "inferred"
-                  },
-                  {
-                    "flow": "air passengers",
-                    "india_link": "Indian workers, families and pilgrims fly regularly between India and Saudi airports. Attacks on airports could interrupt these journeys.",
-                    "basis": "inferred"
-                  }
-                ],
-                "alternatives": [],
-                "duration": "not reported"
-              }
-            }
-          },
-          "conflict": "w1f5pudc",
-          "place": {
-            "name": "Riyadh",
-            "country": "Saudi Arabia",
-            "lat": 24.71,
-            "lon": 46.68,
-            "involves": [
-              "United States",
-              "Yemen"
-            ]
-          },
-          "reports": [
-            {
-              "source": "aljazeera",
-              "headline": "US orders departure of personnel from Saudi Arabia, citing Houthi threat",
-              "url": "https://www.aljazeera.com/news/2026/10/21/us-orders-departure-of-personnel-from-saudi-arabia-citing-houthi-threat",
-              "date": "2026-10-21T23:13:35.000Z",
-              "kind": "hard",
-              "summary": "US State Department says Iran-aligned Houthis have 'increasingly ⁠⁠engaged in hostilities' against Saudi Arabia.",
-              "summaryV": 3,
-              "ogTried": true,
-              "descTried": true,
-              "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/ap_6ad938b69c56d-1792620726.jpg?resize=1920%2C1440"
-            },
-            {
-              "source": "bbc",
-              "headline": "US orders some diplomats to leave Saudi Arabia as Houthi attacks escalate",
-              "url": "https://www.bbc.co.uk/news/articles/c6x2vpk93770o",
-              "date": "2026-10-22T01:07:34.000Z",
-              "kind": "hard",
-              "summary": "The warning to US officials comes as at least three people die in the latest strikes at an airport and an oil field.",
-              "summaryV": 3,
-              "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6998/live/cec97250-cdb1-11f1-bc2e-018d645d8d21.jpg",
-              "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/6998/live/cec97250-cdb1-11f1-bc2e-018d645d8d21.jpg"
-            },
-            {
-              "source": "cnbc",
-              "headline": "U.S. pulls diplomats from Saudi Arabia as it reportedly readies Iran strikes after midterms",
-              "url": "https://www.cnbc.com/2026/10/22/us-iran-trump-hormuz-.html",
-              "date": "2026-10-22T04:35:54.000Z",
-              "kind": "hard",
-              "summary": "The U.S. ordered non-emergency staff out of Saudi Arabia after Houthi strikes on an airport and an oil field, reviving fears of a widening regional conflict.",
-              "summaryV": 3
-            },
-            {
-              "source": "cbs",
-              "headline": "U.S. ordering some government staff to depart Saudi Arabia",
-              "url": "https://www.cbsnews.com/news/us-saudi-arabia-ordered-departure-houthis/",
-              "date": "2026-10-21T23:28:00.000Z",
-              "kind": "hard",
-              "summary": "The U.S. military has also been quietly reducing its footprint at posts in the Middle East due to regional threats from the Houthis and direct threats from Iran, CBS News has learned.",
-              "summaryV": 3
-            }
-          ],
-          "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/ap_6ad938b69c56d-1792620726.jpg?resize=1920%2C1440",
-          "thread": "tq5ix5r",
-          "stats": {
-            "v": 2,
-            "at": "2026-10-22T12:11:25.386Z",
-            "series": [],
-            "reuseOnly": true
-          }
         },
         {
           "id": "s103h3wi",
@@ -20473,6 +20612,17 @@
               "summary": "Governments and businesses in Kenya, the Netherlands and elsewhere were scrambling to prevent hackers from exploiting a vulnerability in PHP, a widely used programming language.",
               "summaryV": 3,
               "image": "https://static01.nyt.com/images/2026/10/22/multimedia/22int-website-flaws-qvzg/22int-website-flaws-qvzg-mediumSquareAt3X.jpg"
+            },
+            {
+              "source": "bbc",
+              "headline": "Race to update services' computer systems after cyber-security flaw found",
+              "url": "https://www.bbc.co.uk/news/articles/c9j34zgmkxx1o",
+              "date": "2026-10-22T17:12:51.000Z",
+              "kind": "breaking",
+              "summary": "Websites were taken offline after the developers of programming language PHP said \"critical vulnerabilities\" had been discovered.",
+              "summaryV": 3,
+              "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c4a1/live/7169fdc0-ce3b-11f1-9a39-31b474234113.jpg",
+              "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/c4a1/live/7169fdc0-ce3b-11f1-9a39-31b474234113.jpg"
             }
           ],
           "thread": "t1b261c8"
@@ -28567,20 +28717,20 @@
       "waiting": 120,
       "failedBatches": 3
     },
-    "analysed": 216,
-    "added": 8,
-    "merged": 6,
-    "failedBatches": 4,
+    "analysed": 211,
+    "added": 1,
+    "merged": 3,
+    "failedBatches": 7,
     "feeds": {
       "bbc": {
         "feedsOk": 6,
         "feedsFailed": 0,
-        "items": 161
+        "items": 164
       },
       "guardian": {
         "feedsOk": 7,
         "feedsFailed": 0,
-        "items": 203
+        "items": 202
       },
       "npr": {
         "feedsOk": 4,
@@ -28590,7 +28740,7 @@
       "aljazeera": {
         "feedsOk": 1,
         "feedsFailed": 0,
-        "items": 12
+        "items": 14
       },
       "mercopress": {
         "feedsOk": 3,
@@ -28615,7 +28765,7 @@
       "cbs": {
         "feedsOk": 2,
         "feedsFailed": 0,
-        "items": 45
+        "items": 43
       },
       "dw": {
         "feedsOk": 3,
@@ -28625,7 +28775,7 @@
       "france24": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 78
+        "items": 74
       },
       "africanews": {
         "feedsOk": 1,
@@ -28639,18 +28789,18 @@
       }
     },
     "shareImages": {
-      "tried": 4,
-      "found": 3,
+      "tried": 0,
+      "found": 0,
       "summaries": 0
     },
     "threads": {
-      "assigned": 8,
-      "created": 3,
+      "assigned": 1,
+      "created": 0,
       "failedBatches": 0
     },
     "summaries": {
       "written": 0,
-      "due": 5
+      "due": 6
     },
     "kinds": {
       "labelled": 0,
@@ -28659,52 +28809,47 @@
     },
     "frames": {
       "done": 0,
-      "waiting": 9,
+      "waiting": 11,
       "failedBatches": 0,
       "budgetStopped": true
     },
     "stats": {
-      "searched": 1,
+      "searched": 0,
       "found": 0,
       "reused": 0,
-      "none": 1,
+      "none": 0,
       "failed": 0,
       "proposed": 0,
       "droppedPoints": 0,
       "pagesFetched": 0,
-      "samples": [
-        {
-          "headline": "US orders departure of personnel from Saudi Arabia, citing Houthi threat",
-          "result": "no saved series; search kept for in-depth stories"
-        }
-      ]
+      "samples": []
     },
     "models": {
       "filter": {
         "model": "claude-haiku-5-5",
-        "calls": 20,
-        "inputTokens": 87667,
-        "outputTokens": 48688,
-        "cost": 0.033
+        "calls": 13,
+        "inputTokens": 79775,
+        "outputTokens": 45469,
+        "cost": 0.0307
       },
       "analysis_quick": {
         "model": "claude-sonnet-5-5",
-        "calls": 4,
-        "inputTokens": 13256,
-        "outputTokens": 16164,
-        "cost": 0.1882
+        "calls": 1,
+        "inputTokens": 2659,
+        "outputTokens": 2768,
+        "cost": 0.033
       },
       "threads": {
         "model": "claude-sonnet-5-5",
         "calls": 1,
-        "inputTokens": 7186,
-        "outputTokens": 724,
-        "cost": 0.0216
+        "inputTokens": 6463,
+        "outputTokens": 29,
+        "cost": 0.0132
       }
     },
     "spend": {
-      "thisDesk": 0.2429,
-      "today": 3.6446,
+      "thisDesk": 0.0769,
+      "today": 4.0233,
       "cap": 6
     }
   },
