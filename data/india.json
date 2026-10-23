@@ -2,12 +2,155 @@
   "schema": 4,
   "region": "India",
   "since": "2026-10-02",
-  "updatedAt": "2026-10-23T17:19:45.585Z",
+  "updatedAt": "2026-10-23T21:36:49.139Z",
   "sectors": [
     {
       "id": "energy",
       "name": "Energy",
       "items": [
+        {
+          "id": "s1ptbqou",
+          "headline": "Qatar deal to buy U.S. natural gas shows how Iran war has redrawn global energy markets",
+          "url": "https://www.cnbc.com/2026/10/23/cheniere-qatar-energy-lng-natural-gas-iran-war-strait-hormuz.html",
+          "source": "cnbc",
+          "date": "2026-10-23T19:19:08.000Z",
+          "relevance": "medium",
+          "why": "CNBC reports that Qatar has agreed a deal to buy U.S. natural gas, and says the Iran war is reshaping global energy markets in favour of U.S. liquefied natural gas exporters. India, a large gas importer, could see supply and prices shift.",
+          "implications": [
+            "If U.S. exporters win more large buyers, the availability and pricing of liquefied natural gas cargoes could shift, and Indian importers that buy on contracts and in the spot market may face different supply sources and costs.",
+            "Higher or more volatile gas costs could pass through to power generators, fertiliser makers and city gas distributors, which may raise costs for industry and, over time, for households."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-23T21:32:22.285Z",
+            "tier": "quick",
+            "primary": "trade_flow",
+            "complement": null,
+            "features": [
+              "trade_flow"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The channel is India's imported liquefied natural gas, which feeds power, fertiliser and city gas supply. The level is medium because the report gives no detail on volumes or on any direct effect on India."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Gas supply contracts and shipping patterns change slowly, and the report gives no start date or volumes for the deal."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single CNBC headline and summary, with no official source quoted and the deal's terms and the wider market effects unconfirmed."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "gas availability and prices",
+                "effect": "Households and vehicle owners who use piped or compressed natural gas could be affected if shifts in global liquefied natural gas trade change import costs.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "liquefied natural gas sourcing terms",
+                "effect": "Indian gas importers may find that a market reshaped by the Iran war changes who they can buy from and at what price.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Published details of the Qatar purchase, including volumes, duration and pricing terms",
+                "why": "The terms would show how large the shift in global liquefied natural gas trade is and whether it affects supply available to Indian buyers.",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "Movements in Asian spot prices for liquefied natural gas in the coming weeks",
+                "why": "Spot prices would show whether the reshaped market is raising costs for import-dependent buyers such as India.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "India imports a significant share of its natural gas as liquefied natural gas, and Qatar has long been one of its main suppliers.",
+              "Conflict in the Gulf region typically makes buyers more cautious about depending on shipments that pass through it, which can push them towards suppliers elsewhere."
+            ],
+            "terms": [
+              {
+                "term": "liquefied natural gas",
+                "meaning": "Natural gas cooled into a liquid so that it can be shipped by sea in specialised tankers to countries without pipeline links."
+              }
+            ],
+            "frameworks": {
+              "trade_flow": {
+                "good": "Liquefied natural gas",
+                "actors": [
+                  {
+                    "country": "Qatar",
+                    "role": "importer",
+                    "is_india": false
+                  },
+                  {
+                    "country": "United States",
+                    "role": "exporter",
+                    "is_india": false
+                  },
+                  {
+                    "country": "India",
+                    "role": "third_party",
+                    "is_india": true
+                  }
+                ],
+                "change": {
+                  "type": "deal",
+                  "effective": ""
+                },
+                "india_position": {
+                  "role": "not_involved",
+                  "note": "India is not a party to this reported deal. As a major importer of liquefied natural gas, it could be affected if the deal and the Iran war change global supply and pricing."
+                },
+                "volumes": []
+              }
+            }
+          },
+          "place": {
+            "name": "Doha",
+            "country": "Qatar",
+            "lat": 25.29,
+            "lon": 51.53,
+            "involves": [
+              "United States"
+            ]
+          },
+          "stage": "analyse",
+          "filter": {
+            "verdict": "analyse",
+            "channel": "prices_supply",
+            "status": "done",
+            "effect": "medium",
+            "reach": "national",
+            "reason": "Qatar's US gas purchase deal reshapes LNG supply during the Iran war",
+            "at": "2026-10-23T21:32:22.285Z"
+          },
+          "reports": [
+            {
+              "source": "cnbc",
+              "headline": "Qatar deal to buy U.S. natural gas shows how Iran war has redrawn global energy markets",
+              "url": "https://www.cnbc.com/2026/10/23/cheniere-qatar-energy-lng-natural-gas-iran-war-strait-hormuz.html",
+              "date": "2026-10-23T19:19:08.000Z",
+              "kind": "hard",
+              "summary": "The Iran war is transforming global energy markets and benefiting U.S. companies, especially liquefied natural gas exporters.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://image.cnbcfm.com/api/v1/image/108100371-1739229606318-gettyimages-2198779762-dji_20250210161428_0023_d_e8rbepyz.jpeg?v=1739229803&w=1920&h=1080"
+            }
+          ],
+          "image": "https://image.cnbcfm.com/api/v1/image/108100371-1739229606318-gettyimages-2198779762-dji_20250210161428_0023_d_e8rbepyz.jpeg?v=1739229803&w=1920&h=1080",
+          "priority": 65,
+          "thread": "txvjlfx"
+        },
         {
           "id": "st3ru09",
           "headline": "Brent crude tops $113, highest level since May, after Trump hints at action on Iran",
@@ -12064,6 +12207,58 @@
       "name": "Logistics & Shipping",
       "items": [
         {
+          "id": "s1sqkokw",
+          "headline": "Romania blames Russia after drone sinks ship in the Black Sea",
+          "url": "https://www.aljazeera.com/news/2026/10/23/romania-blames-russia-after-drone-sinks-ship-in-the-black-sea",
+          "source": "aljazeera",
+          "date": "2026-10-23T17:26:13.000Z",
+          "relevance": "medium",
+          "why": "",
+          "implications": [],
+          "place": {
+            "name": "Black Sea off Romania",
+            "country": "Romania",
+            "lat": 44.5,
+            "lon": 29,
+            "involves": [
+              "Russia"
+            ]
+          },
+          "stage": "watch",
+          "filter": {
+            "verdict": "watch",
+            "channel": "prices_supply",
+            "status": "done",
+            "effect": "low",
+            "reach": "regional",
+            "grows_if": "Attacks on Black Sea shipping halt Ukrainian or Russian grain exports",
+            "reason": "Ship sunk in Black Sea; effect on India's supply is indirect so far",
+            "at": "2026-10-23T21:31:39.041Z"
+          },
+          "watch": {
+            "grows_if": "Attacks on Black Sea shipping halt Ukrainian or Russian grain exports",
+            "since": "2026-10-23T21:31:39.041Z",
+            "expires": "2026-10-30T21:31:39.041Z"
+          },
+          "reports": [
+            {
+              "source": "aljazeera",
+              "headline": "Romania blames Russia after drone sinks ship in the Black Sea",
+              "url": "https://www.aljazeera.com/news/2026/10/23/romania-blames-russia-after-drone-sinks-ship-in-the-black-sea",
+              "date": "2026-10-23T17:26:13.000Z",
+              "kind": "hard",
+              "summary": "One sailor killed and three others missing after Comoros-flagged Khoryv hit near Romanian waters.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/afp_6ad7e5888d08-1792533896.jpg?resize=1920%2C1440"
+            }
+          ],
+          "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/afp_6ad7e5888d08-1792533896.jpg?resize=1920%2C1440",
+          "priority": 35,
+          "thread": "t14axxk2"
+        },
+        {
           "id": "s89hcpz",
           "headline": "Two killed in attack on airport in eastern Saudi Arabia, authorities say",
           "url": "https://www.bbc.co.uk/news/articles/cqwy71ww156ro",
@@ -15680,6 +15875,183 @@
       "name": "Economy & Trade",
       "items": [
         {
+          "id": "spnaxni",
+          "headline": "Russian missiles hit Kyiv as Moscow signals readiness for peace talks",
+          "url": "https://www.france24.com/en/europe/20261022-russia-missiles-kyiv-ukraine-peace-talks",
+          "source": "france24",
+          "date": "2026-10-22T01:51:03.000Z",
+          "relevance": "medium",
+          "image": "https://s.france24.com/media/display/bf71a96e-cb7f-11f1-8810-6313a763b466/w:1024/p:16x9/2026-10-18T235422Z-1304641961-RC2X5OA93ZJS-RTRMADP-3-UKRAINE-CRISIS-ATTACK-KYIV.jpg",
+          "why": "Russian missiles struck Kyiv overnight, wounding six people, hours after Moscow signalled readiness to resume US-mediated peace talks. India is affected only indirectly, mainly through global energy and commodity prices that the war influences.",
+          "implications": [
+            "Strikes on a capital city alongside talk of negotiations show that fighting continues while diplomacy is explored, so any easing of risks to energy supplies and trade remains uncertain.",
+            "Indian importers and refiners buy at world prices, so a lasting pause could ease cost pressure, while continued strikes on energy sites could keep global markets unsettled."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-22T05:06:30.314Z",
+            "tier": "quick",
+            "primary": "escalation",
+            "complement": null,
+            "features": [
+              "armed_conflict",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "The report describes no direct channel to India. Any effect would come indirectly through global oil and commodity prices, which the war can influence but which this strike alone is not reported to have moved."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Any effect on India depends on whether talks actually resume and on future strikes on energy sites, neither of which is settled in the report."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "This rests on a single France 24 report citing Ukrainian authorities for the strike; Moscow's signal and any schedule for talks are not independently confirmed here."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "global energy and commodity costs",
+                "effect": "Continued strikes could keep global energy prices unsettled, while a move to peace talks could ease them, either of which would change Indian importers' costs.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Russia and Ukraine formally resuming US-mediated peace talks after Moscow's signal of readiness",
+                "why": "It would show whether the signal is turning into negotiations that could reduce risks to energy supplies.",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "Further Russian or Ukrainian strikes on power or oil infrastructure in the coming days",
+                "why": "Continued attacks on energy sites would show the war remains at its current level despite the talk of talks.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "India imports most of its crude oil, so wars involving major energy producers such as Russia can shift the global prices and supply routes that Indian buyers rely on.",
+              "Peace talks in wars like this often start and stall repeatedly, so a signal of readiness is not the same as an agreed ceasefire."
+            ],
+            "terms": [],
+            "frameworks": {
+              "escalation": {
+                "move": "none",
+                "rung": 6,
+                "current_rung": 6,
+                "previous_rung": null,
+                "development": "Russian missiles hit Kyiv overnight and wounded six people, while Moscow signalled readiness to resume US-mediated peace talks.",
+                "evidence": "The Kyiv strike continues the exchange of strikes already placed at rung 6 on 18 October. Signalling readiness for talks is not a ceasefire or a halt in fighting, so the rung stays where it is.",
+                "next_signals": [
+                  {
+                    "rung": 7,
+                    "signal": "Either side announces general mobilisation or launches a large new ground offensive, showing a shift from strikes to all-out war."
+                  },
+                  {
+                    "rung": 5,
+                    "signal": "A ceasefire on strikes against infrastructure comes into force and attacks on power and oil sites are reported to have stopped."
+                  }
+                ],
+                "india_channels": [
+                  "oil",
+                  "trade"
+                ],
+                "conflict": "wzti51f",
+                "applied": "none",
+                "from": 6
+              }
+            }
+          },
+          "conflict": "wzti51f",
+          "place": {
+            "name": "Kyiv",
+            "country": "Ukraine",
+            "lat": 50.45,
+            "lon": 30.52,
+            "involves": [
+              "Russia"
+            ]
+          },
+          "reports": [
+            {
+              "source": "france24",
+              "headline": "Russian missiles hit Kyiv as Moscow signals readiness for peace talks",
+              "url": "https://www.france24.com/en/europe/20261022-russia-missiles-kyiv-ukraine-peace-talks",
+              "date": "2026-10-22T01:51:03.000Z",
+              "kind": "hard",
+              "summary": "Russian missiles struck Kyiv overnight, wounding six people and forcing residents into shelters, Ukrainian authorities said Thursday, hours after Moscow signalled readiness to resume US-mediated peace talks.",
+              "summaryV": 3,
+              "image": "https://s.france24.com/media/display/bf71a96e-cb7f-11f1-8810-6313a763b466/w:1024/p:16x9/2026-10-18T235422Z-1304641961-RC2X5OA93ZJS-RTRMADP-3-UKRAINE-CRISIS-ATTACK-KYIV.jpg"
+            },
+            {
+              "source": "dw",
+              "headline": "Russia's attacks on Ukraine's capital, Kyiv, are intensifying. DW asked people on the ground what life is like",
+              "url": "https://www.dw.com/en/russia-s-attacks-on-ukraine-s-capital-kyiv-are-intensifying-dw-asked-people-on-the-ground-what-life-is-like/a-79741090",
+              "date": "2026-10-23T19:08:00.000Z",
+              "kind": "feature",
+              "summary": "Russia's attacks on the Ukrainian capital are hitting harder and more frequently, making 2026 one of the long war's bloodiest years for Kyiv. DW asked people on the ground what life is like.",
+              "summaryV": 3
+            }
+          ],
+          "thread": "tq9ru94",
+          "finChecked": true,
+          "priority": 65
+        },
+        {
+          "id": "sfzcak7",
+          "headline": "US consumer sentiment hits a near-record low before midterm elections",
+          "url": "https://www.aljazeera.com/economy/2026/10/23/us-consumer-sentiment-hits-a-near-record-low-before-midterm-elections",
+          "source": "aljazeera",
+          "date": "2026-10-23T17:26:21.000Z",
+          "relevance": "medium",
+          "why": "",
+          "implications": [],
+          "place": {
+            "name": "Washington",
+            "country": "United States",
+            "lat": 38.9,
+            "lon": -77
+          },
+          "stage": "watch",
+          "filter": {
+            "verdict": "watch",
+            "channel": "major_economies",
+            "status": "done",
+            "effect": "low",
+            "reach": "national",
+            "grows_if": "US consumer spending contracts for a full quarter",
+            "reason": "US sentiment slump could hit demand for Indian exports; link is indirect",
+            "at": "2026-10-23T21:31:39.041Z"
+          },
+          "watch": {
+            "grows_if": "US consumer spending contracts for a full quarter",
+            "since": "2026-10-23T21:31:39.041Z",
+            "expires": "2026-10-30T21:31:39.041Z"
+          },
+          "reports": [
+            {
+              "source": "aljazeera",
+              "headline": "US consumer sentiment hits a near-record low before midterm elections",
+              "url": "https://www.aljazeera.com/economy/2026/10/23/us-consumer-sentiment-hits-a-near-record-low-before-midterm-elections",
+              "date": "2026-10-23T17:26:21.000Z",
+              "kind": "hard",
+              "summary": "Independent voters’ economic anxieties highlight political implications of plummeting US consumer sentiment.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/ap_6adb8adaed96d-1792772826.jpg?resize=1920%2C1440"
+            }
+          ],
+          "finChecked": true,
+          "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/ap_6adb8adaed96d-1792772826.jpg?resize=1920%2C1440",
+          "priority": 45,
+          "thread": "tkivn88"
+        },
+        {
           "id": "se48dne",
           "headline": "Fewer people are flying as airfare soars. Here's why airlines aren't worried",
           "url": "https://www.cnbc.com/2026/10/23/airfare-airline-capacity.html",
@@ -15919,124 +16291,6 @@
             }
           ],
           "thread": "t1vem20c",
-          "finChecked": true,
-          "priority": 60
-        },
-        {
-          "id": "spnaxni",
-          "headline": "Russian missiles hit Kyiv as Moscow signals readiness for peace talks",
-          "url": "https://www.france24.com/en/europe/20261022-russia-missiles-kyiv-ukraine-peace-talks",
-          "source": "france24",
-          "date": "2026-10-22T01:51:03.000Z",
-          "relevance": "medium",
-          "image": "https://s.france24.com/media/display/bf71a96e-cb7f-11f1-8810-6313a763b466/w:1024/p:16x9/2026-10-18T235422Z-1304641961-RC2X5OA93ZJS-RTRMADP-3-UKRAINE-CRISIS-ATTACK-KYIV.jpg",
-          "why": "Russian missiles struck Kyiv overnight, wounding six people, hours after Moscow signalled readiness to resume US-mediated peace talks. India is affected only indirectly, mainly through global energy and commodity prices that the war influences.",
-          "implications": [
-            "Strikes on a capital city alongside talk of negotiations show that fighting continues while diplomacy is explored, so any easing of risks to energy supplies and trade remains uncertain.",
-            "Indian importers and refiners buy at world prices, so a lasting pause could ease cost pressure, while continued strikes on energy sites could keep global markets unsettled."
-          ],
-          "analysis": {
-            "v": 3,
-            "at": "2026-10-22T05:06:30.314Z",
-            "tier": "quick",
-            "primary": "escalation",
-            "complement": null,
-            "features": [
-              "armed_conflict",
-              "pending_outcome"
-            ],
-            "exposure": {
-              "level": "low",
-              "reason": "The report describes no direct channel to India. Any effect would come indirectly through global oil and commodity prices, which the war can influence but which this strike alone is not reported to have moved."
-            },
-            "horizon": {
-              "value": "months",
-              "reason": "Any effect on India depends on whether talks actually resume and on future strikes on energy sites, neither of which is settled in the report."
-            },
-            "confidence": {
-              "level": "medium",
-              "reason": "This rests on a single France 24 report citing Ukrainian authorities for the strike; Moscow's signal and any schedule for talks are not independently confirmed here."
-            },
-            "outlets": 1,
-            "affected": [
-              {
-                "group": "Importers & traders",
-                "direction": "unclear",
-                "what": "global energy and commodity costs",
-                "effect": "Continued strikes could keep global energy prices unsettled, while a move to peace talks could ease them, either of which would change Indian importers' costs.",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "Russia and Ukraine formally resuming US-mediated peace talks after Moscow's signal of readiness",
-                "why": "It would show whether the signal is turning into negotiations that could reduce risks to energy supplies.",
-                "when": "",
-                "where": ""
-              },
-              {
-                "what": "Further Russian or Ukrainian strikes on power or oil infrastructure in the coming days",
-                "why": "Continued attacks on energy sites would show the war remains at its current level despite the talk of talks.",
-                "when": "",
-                "where": ""
-              }
-            ],
-            "context": [
-              "India imports most of its crude oil, so wars involving major energy producers such as Russia can shift the global prices and supply routes that Indian buyers rely on.",
-              "Peace talks in wars like this often start and stall repeatedly, so a signal of readiness is not the same as an agreed ceasefire."
-            ],
-            "terms": [],
-            "frameworks": {
-              "escalation": {
-                "move": "none",
-                "rung": 6,
-                "current_rung": 6,
-                "previous_rung": null,
-                "development": "Russian missiles hit Kyiv overnight and wounded six people, while Moscow signalled readiness to resume US-mediated peace talks.",
-                "evidence": "The Kyiv strike continues the exchange of strikes already placed at rung 6 on 18 October. Signalling readiness for talks is not a ceasefire or a halt in fighting, so the rung stays where it is.",
-                "next_signals": [
-                  {
-                    "rung": 7,
-                    "signal": "Either side announces general mobilisation or launches a large new ground offensive, showing a shift from strikes to all-out war."
-                  },
-                  {
-                    "rung": 5,
-                    "signal": "A ceasefire on strikes against infrastructure comes into force and attacks on power and oil sites are reported to have stopped."
-                  }
-                ],
-                "india_channels": [
-                  "oil",
-                  "trade"
-                ],
-                "conflict": "wzti51f",
-                "applied": "none",
-                "from": 6
-              }
-            }
-          },
-          "conflict": "wzti51f",
-          "place": {
-            "name": "Kyiv",
-            "country": "Ukraine",
-            "lat": 50.45,
-            "lon": 30.52,
-            "involves": [
-              "Russia"
-            ]
-          },
-          "reports": [
-            {
-              "source": "france24",
-              "headline": "Russian missiles hit Kyiv as Moscow signals readiness for peace talks",
-              "url": "https://www.france24.com/en/europe/20261022-russia-missiles-kyiv-ukraine-peace-talks",
-              "date": "2026-10-22T01:51:03.000Z",
-              "kind": "hard",
-              "summary": "Russian missiles struck Kyiv overnight, wounding six people and forcing residents into shelters, Ukrainian authorities said Thursday, hours after Moscow signalled readiness to resume US-mediated peace talks.",
-              "summaryV": 3,
-              "image": "https://s.france24.com/media/display/bf71a96e-cb7f-11f1-8810-6313a763b466/w:1024/p:16x9/2026-10-18T235422Z-1304641961-RC2X5OA93ZJS-RTRMADP-3-UKRAINE-CRISIS-ATTACK-KYIV.jpg"
-            }
-          ],
-          "thread": "tq9ru94",
           "finChecked": true,
           "priority": 60
         },
@@ -23228,67 +23482,6 @@
       "name": "Technology",
       "items": [
         {
-          "id": "s1qnkhzd",
-          "headline": "Singapore pushes for quick action on PHP security flaws as hackers prowl",
-          "url": "https://www.scmp.com/news/asia/southeast-asia/article/3371820/singapore-pushes-quick-action-php-security-flaws-hackers-prowl",
-          "source": "scmp",
-          "date": "2026-10-22T13:58:28.000Z",
-          "relevance": "medium",
-          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/22/c3ddfb2c-e673-4090-b7c2-efd996f5845e_ed325a29.jpg?itok=c6vb4ImW&v=1792677507",
-          "why": "",
-          "implications": [],
-          "stage": "brief",
-          "filter": {
-            "verdict": "brief",
-            "channel": "tech_standards",
-            "status": "done",
-            "effect": "low",
-            "reach": "sector",
-            "reason": "Cyber flaw alert in a widely used language; limited effect on Indian firms.",
-            "at": "2026-10-23T05:03:53.881Z"
-          },
-          "reports": [
-            {
-              "source": "scmp",
-              "headline": "Singapore pushes for quick action on PHP security flaws as hackers prowl",
-              "url": "https://www.scmp.com/news/asia/southeast-asia/article/3371820/singapore-pushes-quick-action-php-security-flaws-hackers-prowl",
-              "date": "2026-10-22T13:58:28.000Z",
-              "kind": "hard",
-              "summary": "Organisations in Singapore have been urged to immediately fix two critical security flaws in a widely used programming language amid reports of widespread attempts by hackers to exploit the vulnerabilities.",
-              "summaryV": 3,
-              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/22/c3ddfb2c-e673-4090-b7c2-efd996f5845e_ed325a29.jpg?itok=c6vb4ImW&v=1792677507"
-            },
-            {
-              "source": "bbc",
-              "headline": "'It's been relentless' say IT workers on frontline of PHP cyber-security scramble",
-              "url": "https://www.bbc.co.uk/news/articles/cxnv025d8qpmo",
-              "date": "2026-10-23T12:00:25.000Z",
-              "kind": "hard",
-              "summary": "IT and cyber experts have told the BBC about their struggles in the last 48 hours to update their systems.",
-              "summaryV": 3,
-              "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/61e6/live/e791c7d0-ced6-11f1-8507-45cb00a1c41c.jpg",
-              "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/61e6/live/e791c7d0-ced6-11f1-8507-45cb00a1c41c.jpg"
-            },
-            {
-              "source": "cnbc",
-              "headline": "AI's 'Black October': Critical PHP flaws set off global security scramble",
-              "url": "https://www.cnbc.com/2026/10/23/php-vulnerabilities-ai-cybersecurity.html",
-              "date": "2026-10-23T16:55:37.000Z",
-              "kind": "breaking",
-              "summary": "Governments and businesses around the globe are scrambling to contain the fallout after the PHP vulnerabilities leaked online.",
-              "summaryV": 3
-            }
-          ],
-          "place": {
-            "name": "Singapore",
-            "country": "Singapore",
-            "lat": 1.35,
-            "lon": 103.82
-          },
-          "priority": 35,
-          "thread": "t1b261c8"
-        },
-        {
           "id": "s1u3nset",
           "headline": "Critical web security flaws spark global alarm as Google, OpenAI and Amazon respond",
           "url": "https://www.cnbc.com/2026/10/22/php-google-openai-and-amazon-cyber.html",
@@ -23449,12 +23642,84 @@
               "summary": "Governments around the world are rushing to implement safety measures after AI technology found 'severe' vulnerabilities in a key programming language called PHP.",
               "summaryV": 3,
               "image": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/5824x3883+0+0/resize/5824x3883!/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fea%2F9b%2F0e0d258549c9be17fa62b3a4fa98%2Fgettyimages-2301428719.jpg"
+            },
+            {
+              "source": "guardian",
+              "headline": "‘Black October’: cybersecurity experts sound the alarm over new era of AI-enabled hacking",
+              "url": "https://www.theguardian.com/technology/2026/oct/23/cybersecurity-ai-hacking-php-vulnerability",
+              "date": "2026-10-23T18:48:48.000Z",
+              "kind": "hard",
+              "summary": "After discovery of severe bug in the PHP programming language, executives warn of ‘vulnerability tsunami’",
+              "summaryV": 3,
+              "lede": "Leaders in cybersecurity are sounding the alarm after the discovery of a major vulnerability this week. They are predicting that artificial intelligence tools will expose more fundamental weaknesses in global internet infrastructure in the months to come.",
+              "image": "https://i.guim.co.uk/img/media/cb4c18c4ae3df1d687b8488dfb57058ade00d1a7/731_0_3659_2927/master/3659.jpg?width=700&quality=85&auto=format&fit=max&s=ad72cfc10095d74850c20932c4ecc3ed"
             }
           ],
           "image": "https://image.cnbcfm.com/api/v1/image/108444221-1792627087371-gettyimages-2300746288-20090101261021-99-21563.jpeg?v=1792627101&w=1920&h=1080",
           "thread": "t1b261c8",
           "placeTried": true,
           "priority": 75
+        },
+        {
+          "id": "s1qnkhzd",
+          "headline": "Singapore pushes for quick action on PHP security flaws as hackers prowl",
+          "url": "https://www.scmp.com/news/asia/southeast-asia/article/3371820/singapore-pushes-quick-action-php-security-flaws-hackers-prowl",
+          "source": "scmp",
+          "date": "2026-10-22T13:58:28.000Z",
+          "relevance": "medium",
+          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/22/c3ddfb2c-e673-4090-b7c2-efd996f5845e_ed325a29.jpg?itok=c6vb4ImW&v=1792677507",
+          "why": "",
+          "implications": [],
+          "stage": "brief",
+          "filter": {
+            "verdict": "brief",
+            "channel": "tech_standards",
+            "status": "done",
+            "effect": "low",
+            "reach": "sector",
+            "reason": "Cyber flaw alert in a widely used language; limited effect on Indian firms.",
+            "at": "2026-10-23T05:03:53.881Z"
+          },
+          "reports": [
+            {
+              "source": "scmp",
+              "headline": "Singapore pushes for quick action on PHP security flaws as hackers prowl",
+              "url": "https://www.scmp.com/news/asia/southeast-asia/article/3371820/singapore-pushes-quick-action-php-security-flaws-hackers-prowl",
+              "date": "2026-10-22T13:58:28.000Z",
+              "kind": "hard",
+              "summary": "Organisations in Singapore have been urged to immediately fix two critical security flaws in a widely used programming language amid reports of widespread attempts by hackers to exploit the vulnerabilities.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/22/c3ddfb2c-e673-4090-b7c2-efd996f5845e_ed325a29.jpg?itok=c6vb4ImW&v=1792677507"
+            },
+            {
+              "source": "bbc",
+              "headline": "'It's been relentless' say IT workers on frontline of PHP cyber-security scramble",
+              "url": "https://www.bbc.co.uk/news/articles/cxnv025d8qpmo",
+              "date": "2026-10-23T12:00:25.000Z",
+              "kind": "hard",
+              "summary": "IT and cyber experts have told the BBC about their struggles in the last 48 hours to update their systems.",
+              "summaryV": 3,
+              "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/61e6/live/e791c7d0-ced6-11f1-8507-45cb00a1c41c.jpg",
+              "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/61e6/live/e791c7d0-ced6-11f1-8507-45cb00a1c41c.jpg"
+            },
+            {
+              "source": "cnbc",
+              "headline": "AI's 'Black October': Critical PHP flaws set off global security scramble",
+              "url": "https://www.cnbc.com/2026/10/23/php-vulnerabilities-ai-cybersecurity.html",
+              "date": "2026-10-23T16:55:37.000Z",
+              "kind": "breaking",
+              "summary": "Governments and businesses around the globe are scrambling to contain the fallout after the PHP vulnerabilities leaked online.",
+              "summaryV": 3
+            }
+          ],
+          "place": {
+            "name": "Singapore",
+            "country": "Singapore",
+            "lat": 1.35,
+            "lon": 103.82
+          },
+          "priority": 35,
+          "thread": "t1b261c8"
         },
         {
           "id": "s1af3xhg",
@@ -26961,6 +27226,149 @@
       "name": "Policy & Governance",
       "items": [
         {
+          "id": "s6oxaog",
+          "headline": "Ebola Outbreak in Africa Reaches Widest Expansion Ever",
+          "url": "https://www.nytimes.com/2026/10/22/health/ebola-nigeria-congo-kenya.html",
+          "source": "nyt",
+          "date": "2026-10-22T16:41:13.000Z",
+          "relevance": "medium",
+          "image": "https://static01.nyt.com/images/2026/10/22/multimedia/22dc-ebola-mcvt/22dc-ebola-mcvt-mediumSquareAt3X.jpg",
+          "why": "An Ebola outbreak in Africa has reached its widest expansion ever, and a first case has been identified in Nigeria with its origins unknown. Any effect on India would be indirect, through travel and health precautions.",
+          "implications": [
+            "Because the origin of the Nigerian case is still unknown, officials cannot yet say whether it links to existing spread, which determines how widely containment and tracing efforts must reach.",
+            "If spread continues, Indian health authorities may consider screening arriving passengers, and Indians living in or travelling to affected countries could face tighter movement rules."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-23T05:05:13.279Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "low",
+              "reason": "The reports describe no direct link to India. Any channel would be indirect, through travel advisories or screening affecting Indians in or travelling to West Africa."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Timing depends on whether the outbreak spreads further and when health authorities decide on any travel or screening measures."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single New York Times summary citing unnamed health officials, and the origin of the Nigerian case is unconfirmed."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Travellers & pilgrims",
+                "direction": "unclear",
+                "what": "travel screening and advisories",
+                "effect": "Travel to and from affected African countries could face health screening or advisories if the outbreak keeps spreading.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Gulf & overseas workers and families",
+                "direction": "unclear",
+                "what": "safety and mobility abroad",
+                "effect": "Indians working or living in West Africa could be affected by local containment measures or travel restrictions if the outbreak widens.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Confirmation of the origin of the Nigerian case and any further new cases in other countries",
+                "why": "It would show whether the outbreak is still widening beyond the countries already affected.",
+                "when": "",
+                "where": "World Health Organization"
+              },
+              {
+                "what": "Any health advisory or airport screening announced by the Indian government for travellers from Africa",
+                "why": "It would show whether authorities see a direct risk to India.",
+                "when": "",
+                "where": "Ministry of Health and Family Welfare"
+              }
+            ],
+            "context": [
+              "Ebola is a severe viral disease that spreads through contact with the body fluids of infected people, and outbreaks are normally contained by tracing and isolating contacts.",
+              "India has screened arriving passengers from affected countries during earlier outbreaks, so health measures at airports are a familiar tool."
+            ],
+            "terms": [],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Outbreak reaches widest expansion ever",
+                    "detail": "The New York Times reports that the Ebola outbreak in Africa has expanded further than in any earlier outbreak, including a newly identified case in Nigeria, the first in that country.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Officials seek origin of Nigerian case",
+                    "detail": "Health officials are urgently trying to establish how the case in Nigeria arose, which determines how far containment efforts must extend.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Travel and health precautions may follow",
+                    "detail": "If the outbreak keeps spreading, India could introduce passenger screening or advisories, which may affect Indians travelling to or living in affected African countries.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The Nigerian case is traced and contained quickly without further spread, so no new travel restrictions or screening are needed for Indians."
+              }
+            }
+          },
+          "place": {
+            "name": "Nigeria",
+            "country": "Nigeria",
+            "lat": 9.08,
+            "lon": 8.68
+          },
+          "stage": "analyse",
+          "filter": {
+            "verdict": "analyse",
+            "channel": "health_travel",
+            "status": "done",
+            "effect": "medium",
+            "reach": "national",
+            "reason": "Ebola spreads to Nigeria, a new country, raising travel and health risks",
+            "at": "2026-10-23T05:05:13.279Z"
+          },
+          "reports": [
+            {
+              "source": "nyt",
+              "headline": "Ebola Outbreak in Africa Reaches Widest Expansion Ever",
+              "url": "https://www.nytimes.com/2026/10/22/health/ebola-nigeria-congo-kenya.html",
+              "date": "2026-10-22T16:41:13.000Z",
+              "kind": "hard",
+              "summary": "Health officials are urgently seeking answers about the origins of a case newly identified in Nigeria, the first in that West African nation.",
+              "summaryV": 3,
+              "image": "https://static01.nyt.com/images/2026/10/22/multimedia/22dc-ebola-mcvt/22dc-ebola-mcvt-mediumSquareAt3X.jpg"
+            },
+            {
+              "source": "france24",
+              "headline": "Building collapse in Nairobi search for survivors under way",
+              "url": "https://www.france24.com/en/building-collapse-in-nairobi-search-for-survivors-under-way",
+              "date": "2026-10-23T20:31:50.000Z",
+              "kind": "hard",
+              "summary": "In tonight's programme, scramble to get through rubble to trapped survivors after a more than 10 storeys building being built in Nairobi goes down. Also, Kenya says that there's been a second Ebola death.",
+              "summaryV": 3,
+              "image": "https://s.france24.com/media/display/6ca47780-cf20-11f1-a61d-4d317af013fd/w:1024/p:16x9/capture-bed663fa.jpg"
+            },
+            {
+              "source": "scmp",
+              "headline": "Kenya reports second Ebola death, a close relative of first patient",
+              "url": "https://www.scmp.com/news/world/africa/article/3371988/kenya-reports-second-ebola-death-close-relative-first-patient",
+              "date": "2026-10-23T21:19:15.000Z",
+              "kind": "hard",
+              "summary": "Kenya’s health ministry announced the country’s second Ebola death on Friday, saying a 65-year-old woman who was a close relative of the first patient died after developing symptoms while in quarantine.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/24/20714293-743e-4461-9b00-4d5e4ba45a1f_6a157fa0.jpg?itok=7a5bpfMY&v=1792790345"
+            }
+          ],
+          "finChecked": true,
+          "priority": 75,
+          "thread": "t1ye80mu"
+        },
+        {
           "id": "shoma6a",
           "headline": "WHO: Africa facing 'complex' Ebola outbreak after Nigeria reports first case",
           "url": "http://www.africanews.com/2026/10/23/who-africa-facing-complex-ebola-outbreak-after-nigeria-reports-first-case/",
@@ -27557,129 +27965,6 @@
             ]
           },
           "priority": 65
-        },
-        {
-          "id": "s6oxaog",
-          "headline": "Ebola Outbreak in Africa Reaches Widest Expansion Ever",
-          "url": "https://www.nytimes.com/2026/10/22/health/ebola-nigeria-congo-kenya.html",
-          "source": "nyt",
-          "date": "2026-10-22T16:41:13.000Z",
-          "relevance": "medium",
-          "image": "https://static01.nyt.com/images/2026/10/22/multimedia/22dc-ebola-mcvt/22dc-ebola-mcvt-mediumSquareAt3X.jpg",
-          "why": "An Ebola outbreak in Africa has reached its widest expansion ever, and a first case has been identified in Nigeria with its origins unknown. Any effect on India would be indirect, through travel and health precautions.",
-          "implications": [
-            "Because the origin of the Nigerian case is still unknown, officials cannot yet say whether it links to existing spread, which determines how widely containment and tracing efforts must reach.",
-            "If spread continues, Indian health authorities may consider screening arriving passengers, and Indians living in or travelling to affected countries could face tighter movement rules."
-          ],
-          "analysis": {
-            "v": 3,
-            "at": "2026-10-23T05:05:13.279Z",
-            "tier": "quick",
-            "primary": "impact_chain",
-            "complement": null,
-            "features": [],
-            "exposure": {
-              "level": "low",
-              "reason": "The reports describe no direct link to India. Any channel would be indirect, through travel advisories or screening affecting Indians in or travelling to West Africa."
-            },
-            "horizon": {
-              "value": "weeks",
-              "reason": "Timing depends on whether the outbreak spreads further and when health authorities decide on any travel or screening measures."
-            },
-            "confidence": {
-              "level": "low",
-              "reason": "This rests on a single New York Times summary citing unnamed health officials, and the origin of the Nigerian case is unconfirmed."
-            },
-            "outlets": 1,
-            "affected": [
-              {
-                "group": "Travellers & pilgrims",
-                "direction": "unclear",
-                "what": "travel screening and advisories",
-                "effect": "Travel to and from affected African countries could face health screening or advisories if the outbreak keeps spreading.",
-                "basis": "inferred"
-              },
-              {
-                "group": "Gulf & overseas workers and families",
-                "direction": "unclear",
-                "what": "safety and mobility abroad",
-                "effect": "Indians working or living in West Africa could be affected by local containment measures or travel restrictions if the outbreak widens.",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "Confirmation of the origin of the Nigerian case and any further new cases in other countries",
-                "why": "It would show whether the outbreak is still widening beyond the countries already affected.",
-                "when": "",
-                "where": "World Health Organization"
-              },
-              {
-                "what": "Any health advisory or airport screening announced by the Indian government for travellers from Africa",
-                "why": "It would show whether authorities see a direct risk to India.",
-                "when": "",
-                "where": "Ministry of Health and Family Welfare"
-              }
-            ],
-            "context": [
-              "Ebola is a severe viral disease that spreads through contact with the body fluids of infected people, and outbreaks are normally contained by tracing and isolating contacts.",
-              "India has screened arriving passengers from affected countries during earlier outbreaks, so health measures at airports are a familiar tool."
-            ],
-            "terms": [],
-            "frameworks": {
-              "impact_chain": {
-                "chain": [
-                  {
-                    "step": "Outbreak reaches widest expansion ever",
-                    "detail": "The New York Times reports that the Ebola outbreak in Africa has expanded further than in any earlier outbreak, including a newly identified case in Nigeria, the first in that country.",
-                    "basis": "reported"
-                  },
-                  {
-                    "step": "Officials seek origin of Nigerian case",
-                    "detail": "Health officials are urgently trying to establish how the case in Nigeria arose, which determines how far containment efforts must extend.",
-                    "basis": "reported"
-                  },
-                  {
-                    "step": "Travel and health precautions may follow",
-                    "detail": "If the outbreak keeps spreading, India could introduce passenger screening or advisories, which may affect Indians travelling to or living in affected African countries.",
-                    "basis": "inferred"
-                  }
-                ],
-                "breaks_if": "The Nigerian case is traced and contained quickly without further spread, so no new travel restrictions or screening are needed for Indians."
-              }
-            }
-          },
-          "place": {
-            "name": "Nigeria",
-            "country": "Nigeria",
-            "lat": 9.08,
-            "lon": 8.68
-          },
-          "stage": "analyse",
-          "filter": {
-            "verdict": "analyse",
-            "channel": "health_travel",
-            "status": "done",
-            "effect": "medium",
-            "reach": "national",
-            "reason": "Ebola spreads to Nigeria, a new country, raising travel and health risks",
-            "at": "2026-10-23T05:05:13.279Z"
-          },
-          "reports": [
-            {
-              "source": "nyt",
-              "headline": "Ebola Outbreak in Africa Reaches Widest Expansion Ever",
-              "url": "https://www.nytimes.com/2026/10/22/health/ebola-nigeria-congo-kenya.html",
-              "date": "2026-10-22T16:41:13.000Z",
-              "kind": "hard",
-              "summary": "Health officials are urgently seeking answers about the origins of a case newly identified in Nigeria, the first in that West African nation.",
-              "summaryV": 3,
-              "image": "https://static01.nyt.com/images/2026/10/22/multimedia/22dc-ebola-mcvt/22dc-ebola-mcvt-mediumSquareAt3X.jpg"
-            }
-          ],
-          "finChecked": true,
-          "priority": 65,
-          "thread": "t1ye80mu"
         },
         {
           "id": "s1vyzdnu",
@@ -32828,15 +33113,15 @@
   "source": "BBC News & The Guardian & NPR & Al Jazeera & MercoPress & ABC News & The New York Times & CNBC & CBS News & DW & France 24 & Africanews & South China Morning Post & The Hindu & Mint",
   "lastRun": {
     "filter": {
-      "reject": 125,
-      "watch": 7,
+      "reject": 61,
+      "watch": 3,
       "analyse": 3
     },
     "watch": {
-      "checked": 1,
+      "checked": 0,
       "promoted": 0,
       "expired": 0,
-      "open": 4
+      "open": 6
     },
     "wars": {
       "linked": 0,
@@ -32845,53 +33130,48 @@
     },
     "places": {
       "labelled": 0,
-      "none": 1,
+      "none": 0,
       "waiting": 0
     },
     "skipped": {
-      "since": "2026-10-23T12:08:17.760Z",
+      "since": "2026-10-23T17:19:45.585Z",
       "counts": {
-        "section": 23,
-        "video_audio": 1,
-        "live_blog": 3
+        "live_blog": 2,
+        "section": 11
       },
       "examples": {
-        "section": [
-          "PSG v Lyon moved as Paris prepares for more protests",
-          "The little-known investment Martin Lewis wants you to understand...",
-          "Which is really England’s oldest pub? Tree-ring dating helps settle debate",
-          "Hammersmith Bridge is a symbol of our dysfunctional times. The money is there, the joined-up thinking isn’t | Simon Jenk",
-          "Brazil’s right has already changed the balance of power"
-        ],
-        "video_audio": [
-          "Watch: CCTV footage appears to show gunmen near church in Jordan"
-        ],
         "live_blog": [
-          "Melania Trump has helped broker ceasefire in Russian-occupied Ukrainian town, says White House – Europe live",
-          "‘How can France stop Marine Le Pen’? Our Europe columnists answered your questions on protests and politics in France",
-          "Trump’s justice department sues to block Senate race certification in Alaska if Republican loses – live"
+          "Melania Trump has helped broker ceasefire in Russian-occupied Ukrainian town, says White House – as it happened",
+          "Trump repeats false claim that other Dan Sullivan on Alaska ballot is ‘cheating’ during Florida rally - live"
+        ],
+        "section": [
+          "Why is the UK at the forefront of AI-driven job cuts?",
+          "Russia, Ukraine agree to Melania Trump-brokered localised ceasefire",
+          "Trump’s broken promises: economy, war and ICE",
+          "Aston Villa vs Manchester City: Premier League – teams, prediction, lineups",
+          "Israel locks down occupied West Bank after Hebron shooting"
         ]
       }
     },
     "finance": {
       "moved": 0,
-      "checked": 2
+      "checked": 1
     },
-    "analysed": 135,
+    "analysed": 67,
     "added": 3,
-    "merged": 10,
-    "rejected": 122,
+    "merged": 4,
+    "rejected": 60,
     "failedBatches": 0,
     "feeds": {
       "bbc": {
         "feedsOk": 6,
         "feedsFailed": 0,
-        "items": 157
+        "items": 149
       },
       "guardian": {
         "feedsOk": 7,
         "feedsFailed": 0,
-        "items": 197
+        "items": 200
       },
       "npr": {
         "feedsOk": 4,
@@ -32901,7 +33181,7 @@
       "aljazeera": {
         "feedsOk": 1,
         "feedsFailed": 0,
-        "items": 14
+        "items": 13
       },
       "mercopress": {
         "feedsOk": 3,
@@ -32916,7 +33196,7 @@
       "nyt": {
         "feedsOk": 5,
         "feedsFailed": 0,
-        "items": 170
+        "items": 167
       },
       "cnbc": {
         "feedsOk": 3,
@@ -32926,7 +33206,7 @@
       "cbs": {
         "feedsOk": 2,
         "feedsFailed": 0,
-        "items": 48
+        "items": 50
       },
       "dw": {
         "feedsOk": 3,
@@ -32946,12 +33226,12 @@
       "scmp": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 143
+        "items": 142
       }
     },
     "shareImages": {
-      "tried": 1,
-      "found": 1,
+      "tried": 3,
+      "found": 3,
       "summaries": 0
     },
     "threads": {
@@ -32960,8 +33240,8 @@
       "failedBatches": 0
     },
     "summaries": {
-      "written": 0,
-      "due": 1
+      "written": 2,
+      "due": 2
     },
     "kinds": {
       "labelled": 0,
@@ -32970,9 +33250,8 @@
     },
     "frames": {
       "done": 0,
-      "waiting": 3,
-      "failedBatches": 0,
-      "budgetStopped": true
+      "waiting": 6,
+      "failedBatches": 1
     },
     "stats": {
       "searched": 0,
@@ -32988,29 +33267,36 @@
     "models": {
       "filter": {
         "model": "claude-haiku-5-5",
-        "calls": 11,
-        "inputTokens": 56602,
-        "outputTokens": 21855,
-        "cost": 0.0167
+        "calls": 6,
+        "inputTokens": 32060,
+        "outputTokens": 14239,
+        "cost": 0.0104
       },
       "analysis_quick": {
         "model": "claude-sonnet-5-5",
         "calls": 1,
-        "inputTokens": 3279,
-        "outputTokens": 2849,
-        "cost": 0.035
+        "inputTokens": 2781,
+        "outputTokens": 2773,
+        "cost": 0.0333
+      },
+      "analysis": {
+        "model": "claude-opus-5-5",
+        "calls": 2,
+        "inputTokens": 12114,
+        "outputTokens": 25239,
+        "cost": 0.5532
       },
       "threads": {
         "model": "claude-sonnet-5-5",
-        "calls": 1,
-        "inputTokens": 6978,
-        "outputTokens": 87,
-        "cost": 0.0148
+        "calls": 3,
+        "inputTokens": 10484,
+        "outputTokens": 1788,
+        "cost": 0.0389
       }
     },
     "spend": {
-      "thisDesk": 0.0665,
-      "today": 3.6888,
+      "thisDesk": 0.6357,
+      "today": 0.6357,
       "cap": 6
     }
   },
