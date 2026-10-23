@@ -2,131 +2,188 @@
   "schema": 4,
   "region": "India",
   "since": "2026-10-02",
-  "updatedAt": "2026-10-23T05:10:28.068Z",
+  "updatedAt": "2026-10-23T11:51:08.251Z",
   "sectors": [
     {
       "id": "energy",
       "name": "Energy",
       "items": [
         {
-          "id": "s4p6nwu",
-          "headline": "Trump invokes Cold War-era Defence Production Act to boost oil production and refining",
-          "url": "https://www.scmp.com/news/world/united-states-canada/article/3371836/trump-invokes-cold-war-era-defence-production-act-boost-oil-production-and-refining",
-          "source": "scmp",
-          "date": "2026-10-22T22:21:42.000Z",
-          "relevance": "medium",
-          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/23/a318648b-9948-4d81-b038-094c40241e0b_08dd78b8.jpg?itok=D0Sw3J-3&v=1792707695",
-          "why": "US President Donald Trump has determined that petroleum production and refining are essential to national defence under a Cold War-era law. This could open US funding for fossil fuel projects and may eventually affect global oil supply, which matters to India.",
+          "id": "st3ru09",
+          "headline": "Brent crude tops $113, highest level since May, after Trump hints at action on Iran",
+          "url": "https://www.cnbc.com/2026/10/22/oil-prices-today-wti-brent-saudi-arabia.html",
+          "source": "cnbc",
+          "date": "2026-10-22T19:19:41.000Z",
+          "relevance": "high",
+          "why": "Brent crude rose to $114.72 a barrel, a five-month high, after Iran threatened retaliatory attacks on Gulf oil and tech facilities amid fears of renewed US strikes. This raises the cost of India's crude imports.",
           "implications": [
-            "If US funding raises American oil and refined-fuel output, global supply could increase over time, which may ease price pressure on the crude that Indian refiners buy.",
-            "The report only says the move could open funding, so any effect on world markets depends on which projects actually receive money and how quickly they come on stream."
+            "If Iran carries out its threatened attacks on Gulf oil facilities, supply from the region India relies on could be disrupted, not just made more expensive.",
+            "Higher crude prices raise refiners' costs, which could feed through to petrol, diesel and cooking gas prices or squeeze the margins of state-run fuel retailers.",
+            "A larger oil import bill could widen India's trade deficit and put pressure on the rupee, which may make other imports dearer.",
+            "Iran's threat to Gulf tech facilities could also concern the many Indians who work in Gulf states, where such facilities are located."
           ],
           "analysis": {
             "v": 3,
-            "at": "2026-10-23T05:05:46.422Z",
-            "tier": "quick",
-            "primary": "policy_tracker",
+            "at": "2026-10-23T11:51:01.408Z",
+            "tier": "standard",
+            "primary": "escalation",
             "complement": null,
             "features": [
-              "policy_stage",
-              "allocation",
+              "armed_conflict",
+              "price_move",
+              "fast_moving",
               "pending_outcome"
             ],
             "exposure": {
-              "level": "low",
-              "reason": "The reports describe only a US funding possibility and give no direct route to India. Any link would run indirectly through global crude and fuel supply, which is why the exposure is low for now."
+              "level": "high",
+              "reason": "The story reaches India through crude oil, a top import that feeds into petrol, diesel and LPG prices, and through threats to Gulf states where many Indians work."
             },
             "horizon": {
-              "value": "months",
-              "reason": "Funding decisions and any new production or refining capacity take time, so effects on global supply would appear well after the announcement."
+              "value": "weeks",
+              "reason": "Higher crude prices usually reach Indian import costs and pump prices with a lag of several weeks, depending on whether fuel retailers pass them on."
             },
             "confidence": {
-              "level": "low",
-              "reason": "This rests on a single report from the South China Morning Post, and it is not yet confirmed what funding will follow."
+              "level": "medium",
+              "reason": "CNBC and The Guardian agree on the price rise, but the reported US plan to resume strikes is unconfirmed and the story is still developing."
             },
-            "outlets": 1,
+            "outlets": 2,
             "affected": [
               {
                 "group": "Fuel & LPG users",
+                "direction": "up",
+                "what": "fuel and cooking gas costs",
+                "effect": "Higher crude prices could raise petrol, diesel and LPG prices in India if state-run fuel retailers pass on their higher import costs.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Government finances",
+                "direction": "down",
+                "what": "fiscal and import strain",
+                "effect": "A costlier oil import bill could strain public finances if the government cuts fuel taxes or compensates fuel retailers to shield consumers.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Gulf & overseas workers and families",
                 "direction": "unclear",
-                "what": "crude and fuel price pressure",
-                "effect": "If US output rises, global supply could grow and ease crude costs for Indian refiners, but the reports do not say whether this will happen.",
+                "what": "workplace safety risk",
+                "effect": "Iran's threatened attacks on Gulf oil and tech facilities could put at risk Indians working in Gulf states, and the families relying on their earnings.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "Announcements of specific US funding or projects approved under the petroleum determination",
-                "why": "These would show whether the determination turns into real new oil or refining capacity.",
+                "what": "Whether the United States actually resumes strikes on Iran",
+                "why": "Renewed strikes would test whether Iran follows through on its threats against Gulf facilities, which would affect oil supply.",
                 "when": "",
-                "where": "White House website"
+                "where": ""
+              },
+              {
+                "what": "Any Iranian attack on Gulf oil or tech facilities",
+                "why": "An attack would show that the threat has turned into action and could push crude prices higher.",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "Movement in the Brent crude price above or below $113",
+                "why": "The price shows how much risk markets see to oil supply and what India pays for its imports.",
+                "when": "",
+                "where": ""
               }
             ],
             "context": [
-              "India imports most of the crude oil it uses, so changes in global supply and prices reach Indian fuel costs, refiners and the import bill, even when the policy that triggers them is made elsewhere."
+              "India imports most of the crude oil it uses, and a large share comes from Gulf producers whose cargoes pass through the Strait of Hormuz.",
+              "Retail petrol and diesel prices in India are set mainly by state-run oil marketing companies, which sometimes absorb global price swings for a period rather than passing them on immediately.",
+              "India also imports much of its liquefied petroleum gas (LPG), used for household cooking, from Gulf suppliers."
             ],
             "terms": [
               {
-                "term": "Defence Production Act",
-                "meaning": "A US law that lets the president direct and financially support private industry to meet national defence needs."
+                "term": "Brent crude",
+                "meaning": "The main international benchmark price for crude oil, used to price much of the oil that India buys."
               }
             ],
             "frameworks": {
-              "policy_tracker": {
-                "instrument": {
-                  "name": "Presidential determination that petroleum production and refining are essential to national defence, under the Defence Production Act",
-                  "issuer": "US President Donald Trump",
-                  "jurisdiction": "United States"
-                },
-                "stages": [
+              "escalation": {
+                "move": "none",
+                "rung": 6,
+                "current_rung": 6,
+                "previous_rung": null,
+                "development": "Iran threatened retaliatory attacks on Gulf oil and tech facilities and said it is prepared for warfare, while President Trump hinted at action and accused Iran of manipulating the oil market.",
+                "evidence": "The reports describe threats and reported US planning, not a new attack. The war stays at strikes on critical infrastructure or third countries, set on 2026-10-20.",
+                "next_signals": [
                   {
-                    "stage": "adopted",
-                    "date": "2026-10-22",
-                    "status": "done"
+                    "rung": 7,
+                    "signal": "The United States resumes strikes on Iran and Iran attacks Gulf oil facilities, turning the conflict into open, full-scale war across the region."
+                  },
+                  {
+                    "rung": 5,
+                    "signal": "Iranian attacks on third countries and disruption of the Strait of Hormuz stop, while strikes between the United States and Iran continue."
                   }
                 ],
-                "obligations": [
-                  {
-                    "who": "US federal government",
-                    "what": "The determination could allow the government to direct US funding to fossil fuel projects, but the report does not say whether any money has been committed.",
-                    "from": "2026-10-22"
-                  }
+                "india_channels": [
+                  "oil",
+                  "shipping",
+                  "diaspora safety",
+                  "remittances"
                 ],
-                "applies_to_india": "partly",
-                "india_note": "The measure places no direct obligation on India. If it raises US oil and refining output, it could affect global crude supply and prices, which Indian refiners and consumers depend on."
+                "conflict": "w1ye2krf",
+                "applied": "none",
+                "from": 6
               }
-            }
+            },
+            "reading": [
+              {
+                "headline": "Troubled waters: life during wartime for Iranians on the strait of Hormuz",
+                "url": "https://www.theguardian.com/artanddesign/2026/oct/21/strait-of-hormuz-life-amid-wartime-iran",
+                "source": "guardian",
+                "date": "2026-10-21T05:00:02.000Z"
+              },
+              {
+                "headline": "Dire straits: why Filipino sailors continue to brave troubled Middle East waters",
+                "url": "https://www.scmp.com/week-asia/economics/article/3371457/dire-straits-why-filipino-sailors-continue-brave-troubled-middle-east-waters",
+                "source": "scmp",
+                "date": "2026-10-20T05:00:05.000Z"
+              }
+            ]
           },
-          "place": {
-            "name": "Washington",
-            "country": "United States",
-            "lat": 38.9,
-            "lon": -77
-          },
-          "stage": "analyse",
-          "filter": {
-            "verdict": "analyse",
-            "channel": "prices_supply",
-            "status": "done",
-            "effect": "medium",
-            "reach": "national",
-            "reason": "US emergency order to boost oil output and refining affects global supply India imports",
-            "at": "2026-10-23T05:05:46.423Z"
-          },
+          "conflict": "w1ye2krf",
           "reports": [
             {
-              "source": "scmp",
-              "headline": "Trump invokes Cold War-era Defence Production Act to boost oil production and refining",
-              "url": "https://www.scmp.com/news/world/united-states-canada/article/3371836/trump-invokes-cold-war-era-defence-production-act-boost-oil-production-and-refining",
-              "date": "2026-10-22T22:21:42.000Z",
-              "kind": "hard",
-              "summary": "US ⁠President Donald Trump determined ⁠on Thursday that petroleum ⁠production, refining and related activities are essential to national defence, a move that could open up US funding for fossil fuel projects.",
+              "source": "cnbc",
+              "headline": "Brent crude tops $113, highest level since May, after Trump hints at action on Iran",
+              "url": "https://www.cnbc.com/2026/10/22/oil-prices-today-wti-brent-saudi-arabia.html",
+              "date": "2026-10-22T19:19:41.000Z",
+              "kind": "breaking",
+              "summary": "The Middle East conflict could flare up again as the U.S. reportedly plans to resume strikes against Iran.",
               "summaryV": 3,
-              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/23/a318648b-9948-4d81-b038-094c40241e0b_08dd78b8.jpg?itok=D0Sw3J-3&v=1792707695"
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://image.cnbcfm.com/api/v1/image/108398587-1791817200941-gettyimages-2299319676-AA_12102026_2989970.jpeg?v=1791817236&w=1920&h=1080"
+            },
+            {
+              "source": "guardian",
+              "headline": "Oil hits five-month high amid fears US will renew strikes on Iran",
+              "url": "https://www.theguardian.com/business/2026/oct/23/oil-five-month-high-fears-us-renews-strikes-iran",
+              "date": "2026-10-23T11:35:51.000Z",
+              "kind": "hard",
+              "summary": "Brent crude rises to $114.72 a barrel after Tehran threatens retaliatory attacks on Gulf oil and tech facilities",
+              "summaryV": 3,
+              "lede": "Business live – latest updates",
+              "image": "https://i.guim.co.uk/img/media/c0f302e34e0b51e7da8489af30c4f6d217592b8a/424_0_4520_3616/master/4520.jpg?width=700&quality=85&auto=format&fit=max&s=2332037b020bf1cf0409c256058c3e75"
+            },
+            {
+              "source": "cnbc",
+              "headline": "U.S. oil holds above $100, Brent at five-month high as Iran says it’s prepared for warfare",
+              "url": "https://www.cnbc.com/2026/10/23/oil-price-brent-wti-iran-war-saudi-arabia.html",
+              "date": "2026-10-23T11:39:59.000Z",
+              "kind": "hard",
+              "summary": "U.S. President Donald Trump accused Iran on Thursday of trying to manipulate the oil market.",
+              "summaryV": 3
             }
           ],
-          "priority": 65,
-          "thread": "t2ogxay"
+          "image": "https://image.cnbcfm.com/api/v1/image/108398587-1791817200941-gettyimages-2299319676-AA_12102026_2989970.jpeg?v=1791817236&w=1920&h=1080",
+          "thread": "t2ogxay",
+          "placeTried": true,
+          "priority": 85
         },
         {
           "id": "stchozp",
@@ -135,16 +192,16 @@
           "source": "aljazeera",
           "date": "2026-10-19T17:16:22.000Z",
           "relevance": "medium",
-          "why": "NPR and The New York Times report that the United States and Israel are planning a possible new attack on Iran after the US midterm elections. Renewed strikes could further strain Gulf energy supplies and shipping on which India depends.",
+          "why": "The US and Israel are reported to be planning a possible attack on Iran in early November, with military reinforcements moving to the Middle East. Renewed war could threaten Gulf oil supply and the safety of Indians in the region.",
           "implications": [
-            "NPR reports, citing a person briefed on war planning, that the attack could come in early November, which would put any fresh disruption within weeks rather than months.",
-            "Iran has said it is prepared, which suggests any new strikes could draw a response that may widen threats to Gulf states and shipping routes.",
-            "Donald Trump publicly suggested in a call aired by Benjamin Netanyahu that they may attack Iran together again, so the threat comes from the US president himself, not only unnamed sources.",
-            "The timing is tied to two elections, the US midterms and Israel's vote, so their results could shape whether and when these plans proceed."
+            "NPR reports, citing a person briefed on war planning, that the attack could come after the US midterm elections, suggesting a timing window rather than an immediate strike.",
+            "Iran has said it is prepared, so a fresh attack could trigger retaliation against shipping or Gulf states, where many Indians live and work.",
+            "Renewed strikes could push up crude prices and shipping insurance costs, which may raise what India pays for oil and for goods moving through Gulf waters.",
+            "Any closure of Gulf airspace during strikes could disrupt flights between India and the Gulf, affecting workers, travellers and pilgrims."
           ],
           "analysis": {
             "v": 3,
-            "at": "2026-10-22T21:53:09.987Z",
+            "at": "2026-10-23T11:51:01.409Z",
             "tier": "deep",
             "primary": "escalation",
             "complement": "scenarios",
@@ -155,80 +212,76 @@
             ],
             "exposure": {
               "level": "high",
-              "reason": "Any renewed US-Israeli strikes would hit a war already disrupting the Strait of Hormuz, the route for much of India's crude and LPG imports and home to many Indian workers in the Gulf."
+              "reason": "A renewed attack would reach India through crude oil, a top import, and through the safety and travel of the large Indian community in Gulf states."
             },
             "horizon": {
               "value": "weeks",
-              "reason": "The reported planning points to early November, after the US midterm elections, which is within a few weeks of these reports."
+              "reason": "The reported planning points to a possible attack in early November, after the US midterm elections, which is within weeks."
             },
             "confidence": {
               "level": "medium",
-              "reason": "Trump's own public remarks are reported by France 24 and CBS News, but the planning and timing rest on anonymous sources cited by NPR and The New York Times."
+              "reason": "NPR and The New York Times, via France 24, report the plans from anonymous sources; the reinforcements and the visit are reported, but no attack decision is confirmed."
             },
             "outlets": 4,
             "affected": [
               {
                 "group": "Fuel & LPG users",
                 "direction": "up",
-                "what": "fuel and cooking gas prices",
-                "effect": "Fresh strikes could push crude and LPG prices higher, which may raise costs for Indian refiners and eventually for petrol, diesel and cooking gas users.",
+                "what": "fuel and cooking gas costs",
+                "effect": "If fresh strikes disrupt Gulf supply, higher crude prices could feed through to petrol, diesel and LPG prices in India.",
                 "basis": "inferred"
               },
               {
                 "group": "Gulf & overseas workers and families",
                 "direction": "unclear",
-                "what": "safety and income security",
-                "effect": "A wider conflict could threaten the safety and jobs of Indians working in Gulf states, which may affect remittances to their families in India.",
+                "what": "safety and remittances",
+                "effect": "Iranian retaliation against Gulf states could endanger Indian workers there and disrupt the remittances their families depend on.",
                 "basis": "inferred"
               },
               {
-                "group": "Importers & traders",
-                "direction": "up",
-                "what": "freight and insurance costs",
-                "effect": "Renewed fighting could raise shipping insurance and freight rates on Gulf routes, which may increase costs for Indian importers and traders.",
+                "group": "Travellers & pilgrims",
+                "direction": "down",
+                "what": "flight availability",
+                "effect": "Airspace closures during any attack could cancel or reroute flights between India and the Gulf and the wider Middle East.",
                 "basis": "inferred"
               },
               {
                 "group": "Government finances",
                 "direction": "down",
                 "what": "oil import bill",
-                "effect": "Higher oil prices could enlarge India's import bill and may put pressure on government finances if fuel taxes or subsidies are adjusted.",
+                "effect": "A costlier oil import bill could strain public finances if the government cushions fuel prices for consumers.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "Whether the United States and Israel strike Iran after the US midterm elections",
-                "why": "It would show whether the reported planning has turned into action that could widen the war.",
-                "when": "early November",
+                "what": "Results of the US midterm elections",
+                "why": "NPR's source says the possible attack is planned for after these elections, so their conclusion marks the reported window.",
+                "when": "early November 2026",
                 "where": ""
               },
               {
-                "what": "The result of Israel's election in which Benjamin Netanyahu is standing",
-                "why": "It would indicate whether the leader Trump has backed for a joint attack remains in office.",
-                "when": "just over a week after 20 October, as re",
+                "what": "Results of Israel's election, in which Netanyahu is standing",
+                "why": "Trump suggested he and Netanyahu may attack Iran together, so the result shows who leads Israel through any renewed war.",
+                "when": "just over a week after 2026-10-20",
                 "where": ""
               },
               {
-                "what": "Iranian statements or military moves responding to the reported attack plans",
-                "why": "They would show whether Iran's stated readiness translates into further attacks on Gulf states or shipping.",
+                "what": "Further US military reinforcements arriving in the Middle East or personnel leaving",
+                "why": "Continued movements would show that preparations for a possible attack are advancing.",
                 "when": "",
-                "where": ""
+                "where": "US Department of Defense"
               }
             ],
             "context": [
-              "India imports most of the crude oil it uses and a large share of its liquefied petroleum gas (LPG), much of it from Gulf producers whose exports pass through the Strait of Hormuz.",
-              "Millions of Indians live and work in Gulf countries, and the money they send home is an important source of income for many Indian families and of foreign exchange for India.",
-              "Wider fighting in the Gulf usually raises oil prices, shipping insurance costs and freight rates, which can feed into India's import bill and domestic fuel prices."
+              "India imports most of the crude oil it uses, much of it from Gulf producers whose shipments pass through the Strait of Hormuz.",
+              "Gulf states host millions of Indian workers, whose remittances are an important source of income for families in states such as Kerala.",
+              "During past Gulf crises, India has had to plan evacuations of its nationals and faced sharp swings in oil prices."
             ],
             "terms": [
               {
                 "term": "midterm elections",
-                "meaning": "US national elections held midway through a president's four-year term, mainly to choose members of Congress."
-              },
-              {
-                "term": "Strait of Hormuz",
-                "meaning": "A narrow sea passage between Iran and Oman through which much of the Gulf's oil and gas exports are shipped."
+                "meaning": "US national elections held midway through a president's four-year term, in which seats in Congress are contested."
               }
             ],
             "frameworks": {
@@ -237,16 +290,16 @@
                 "rung": 6,
                 "current_rung": 6,
                 "previous_rung": null,
-                "development": "This story adds reported US-Israeli planning for a possible new attack on Iran in early November, along with public suggestions by President Trump that they may attack Iran together again.",
-                "evidence": "The reports describe planning, threats and a ministerial visit, not a new attack. The war therefore stays at rung 6, where Iranian strikes on third countries and disruption of Hormuz continue.",
+                "development": "The US and Israel are reported to be planning a possible attack on Iran for early November, while US military reinforcements move to the Middle East and Defense Secretary Hegseth visited Israel.",
+                "evidence": "Reinforcements and war planning are mobilisation, below the war's current rung. No new attack is reported, so the war stays at strikes on critical infrastructure or third countries, set on 2026-10-20.",
                 "next_signals": [
                   {
                     "rung": 7,
-                    "signal": "The United States and Israel launch a broad joint military campaign against Iran, and Iran responds with all-out attacks across the region."
+                    "signal": "The United States and Israel launch fresh strikes on Iran and Iran retaliates widely, bringing open, full-scale war across the region."
                   },
                   {
                     "rung": 5,
-                    "signal": "Iranian attacks on Gulf states and on shipping in the Strait of Hormuz stop, while strikes between the main parties continue."
+                    "signal": "Iranian attacks on third countries and disruption of the Strait of Hormuz stop, while strikes between the parties continue."
                   }
                 ],
                 "india_channels": [
@@ -261,25 +314,19 @@
                 "from": 6
               },
               "scenarios": {
-                "question": "Will the United States and Israel carry out the attack on Iran that is reportedly being planned for after the US midterm elections?",
+                "question": "Will the United States and Israel launch fresh strikes on Iran after the US midterm elections in early November?",
                 "scenarios": [
                   {
-                    "name": "Joint strikes go ahead",
-                    "what": "The United States and Israel carry out the attack on Iran in early November, as NPR's source describes, restarting direct strikes on Iranian territory.",
-                    "signal": "Officials in Washington or Jerusalem confirm new strikes on Iran in the days after the US midterm elections.",
-                    "india_effect": "Oil and LPG prices could rise further, and shipping and flights through the Gulf may face more disruption, raising costs for Indian consumers and importers."
+                    "name": "Strikes after midterms",
+                    "what": "The US and Israel carry out the attack that NPR's source and The New York Times's sources describe, in early November after the midterms. Iran, which says it is prepared, could respond.",
+                    "signal": "Reinforcements continue to arrive in the Middle East, more personnel leave the region, and US or Israeli officials announce military action against Iran.",
+                    "india_effect": "India could face higher crude prices, disrupted Gulf flights and renewed safety concerns for Indians in the region, which may require evacuation planning."
                   },
                   {
-                    "name": "Iran retaliates widely",
-                    "what": "Having said it is prepared, Iran answers any new attack with strikes on regional targets and further action against shipping.",
-                    "signal": "Iran announces or carries out attacks on Gulf states or vessels in the Strait of Hormuz following US-Israeli strikes.",
-                    "india_effect": "The safety of Indians in the Gulf could become a direct concern, and remittances and energy supplies to India may face greater risk."
-                  },
-                  {
-                    "name": "Plans stay on paper",
-                    "what": "The planning reported by NPR and The New York Times does not lead to strikes, and Trump's remarks remain statements rather than action.",
-                    "signal": "Early November passes without new US-Israeli strikes on Iran being reported.",
-                    "india_effect": "India's exposure would remain tied to the existing war and disruption in Hormuz, without an added shock from a restarted US-Israeli campaign."
+                    "name": "Build-up without strikes",
+                    "what": "Trump and Netanyahu keep suggesting an attack is on the table, but no strike takes place and the military build-up serves as pressure on Iran.",
+                    "signal": "The midterms pass without US or Israeli military action against Iran, and reinforcements stop growing or are drawn down.",
+                    "india_effect": "Oil prices could stay elevated while the threat persists, but direct risks to Indian workers, flights and shipping may be smaller than in an attack."
                   }
                 ]
               }
@@ -367,6 +414,25 @@
               "date": "2026-10-22T22:17:04.000Z",
               "kind": "feature",
               "summary": "Could the U.S. and Israel be on the verge of launching a new attack on Iran? President Trump and Prime Minister Benjamin Netanyahu have been suggesting that's on the table.",
+              "summaryV": 3
+            },
+            {
+              "source": "france24",
+              "headline": "NYT reports plans for fresh strikes on Iran after the US midterm elections",
+              "url": "https://www.france24.com/en/nyt-reports-plans-for-fresh-strikes-on-iran-after-the-us-midterm-elections",
+              "date": "2026-10-23T08:40:09.000Z",
+              "kind": "hard",
+              "summary": "Reza Sayah, our correspondent in Tehran Iran, has more.",
+              "summaryV": 3,
+              "image": "https://s.france24.com/media/display/247ad3fa-cebc-11f1-9f6f-4d317af013fd/w:1024/p:16x9/EN-20261023-090607-090912-CS-01.jpg"
+            },
+            {
+              "source": "npr",
+              "headline": "Military reinforcements move to Mideast. And, millions of Americans vote early",
+              "url": "https://www.npr.org/2026/10/23/g-s1-149514/up-first-newsletter-iran-war-midterm-voting-trump-bbc",
+              "date": "2026-10-23T11:22:25.000Z",
+              "kind": "hard",
+              "summary": "Military reinforcements are heading to the Middle East and some personnel have left the region, pointing to a potential attack on Iran. And, millions of Americans have already voted in the midterms.",
               "summaryV": 3
             }
           ],
@@ -506,129 +572,238 @@
           "priority": 95
         },
         {
-          "id": "st3ru09",
-          "headline": "Brent crude tops $113, highest level since May, after Trump hints at action on Iran",
-          "url": "https://www.cnbc.com/2026/10/22/oil-prices-today-wti-brent-saudi-arabia.html",
-          "source": "cnbc",
-          "date": "2026-10-22T19:19:41.000Z",
-          "relevance": "high",
-          "why": "CNBC reports that Brent crude rose above $113, its highest since May, after President Trump hinted at action on Iran and the US reportedly planned to resume strikes. India imports most of its oil, so it is exposed to this price rise.",
+          "id": "skaqi4y",
+          "headline": "Why Rubio is visiting Reliance’s oil refinery in India, the world’s largest",
+          "url": "https://www.aljazeera.com/news/2026/10/20/why-rubio-is-visiting-reliances-oil-refinery-in-india-the-worlds-largest",
+          "source": "aljazeera",
+          "date": "2026-10-20T12:37:06.000Z",
+          "relevance": "medium",
+          "why": "",
+          "implications": [],
+          "reports": [
+            {
+              "source": "aljazeera",
+              "headline": "Why Rubio is visiting Reliance’s oil refinery in India, the world’s largest",
+              "url": "https://www.aljazeera.com/news/2026/10/20/why-rubio-is-visiting-reliances-oil-refinery-in-india-the-worlds-largest",
+              "date": "2026-10-20T12:37:06.000Z",
+              "kind": "feature",
+              "summary": "Reliance is central to Washington’s efforts to punish Russian energy buyers and contain oil prices amid the war on Iran.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/2007-02-01T120000Z_389211615_GM1DUNBEQOAA_RTRMADP_3_INDIA-OIL-FIRE-1792491599.jpg?resize=1920%2C1440"
+            },
+            {
+              "source": "nyt",
+              "headline": "Rubio Travels to India to Strengthen Economic Ties Amid Strained U.S. Relations",
+              "url": "https://www.nytimes.com/2026/10/20/world/asia/marco-rubio-india-us-trade-deal.html",
+              "date": "2026-10-20T14:14:55.000Z",
+              "kind": "hard",
+              "summary": "The secretary of state will meet with Asia’s richest men in Mumbai as Washington continues negotiations over a trade deal with India.",
+              "summaryV": 3,
+              "image": "https://static01.nyt.com/images/2026/10/20/multimedia/20int-rubio-india-fqjh/20int-rubio-india-fqjh-mediumSquareAt3X.jpg"
+            },
+            {
+              "source": "cnbc",
+              "headline": "U.S. eyes refining muscle of Indian billionaire Ambani's Reliance as Rubio visits Jamnagar plant",
+              "url": "https://www.cnbc.com/2026/10/21/rubio-reliance-venezuela-oil-diesel.html",
+              "date": "2026-10-21T04:47:43.000Z",
+              "kind": "hard",
+              "summary": "Rubio said the \"extraordinary\" refining capacity of Reliance could help India diversify its energy supplies, hinting at greater offtake of Venezuelan crude.",
+              "summaryV": 3
+            },
+            {
+              "source": "scmp",
+              "headline": "Why US Secretary of State Rubio is skipping New Delhi for an Indian oil refinery",
+              "url": "https://www.scmp.com/week-asia/politics/article/3371651/why-us-secretary-state-rubio-skipping-delhi-indian-oil-refinery",
+              "date": "2026-10-21T10:30:06.000Z",
+              "kind": "feature",
+              "summary": "US Secretary of State Marco Rubio’s visit to India’s Jamnagar this week – home to the world’s largest oil refining complex – signals energy cooperation as the anchor for bilateral ties even as broader policy friction frays relations, according to analysts.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/21/9b64853d-f0c5-47dd-886f-3f60f50ede7f_aa7acab0.jpg?itok=ECZ3eca1&v=1792575354"
+            },
+            {
+              "source": "bbc",
+              "headline": "Rubio turns to small Indian town as US faces high oil prices",
+              "url": "https://www.bbc.co.uk/news/articles/c3x2wnk8ejq5o",
+              "date": "2026-10-23T08:39:42.000Z",
+              "kind": "hard",
+              "summary": "US Secretary of State Marco Rubio pushed a business and energy agenda over diplomacy on his second trip to India this year.",
+              "summaryV": 3,
+              "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/4816/live/10dcbb60-ce21-11f1-906e-e3128518d85d.jpg",
+              "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/4816/live/10dcbb60-ce21-11f1-906e-e3128518d85d.jpg"
+            }
+          ],
+          "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/2007-02-01T120000Z_389211615_GM1DUNBEQOAA_RTRMADP_3_INDIA-OIL-FIRE-1792491599.jpg?resize=1920%2C1440",
+          "thread": "t1q27ee0",
+          "place": {
+            "name": "Jamnagar",
+            "country": "India",
+            "lat": 22.47,
+            "lon": 70.06,
+            "involves": [
+              "United States"
+            ]
+          },
+          "priority": 40
+        },
+        {
+          "id": "s108kq5q",
+          "headline": "EU entering winter with lowest gas reserves on record, IEA boss warns",
+          "url": "https://www.aljazeera.com/economy/2026/10/23/eu-entering-winter-with-lowest-gas-reserves-on-record-iea-boss-warns",
+          "source": "aljazeera",
+          "date": "2026-10-23T06:02:15.000Z",
+          "relevance": "medium",
+          "why": "",
+          "implications": [],
+          "stage": "context",
+          "filter": {
+            "verdict": "analyse",
+            "channel": "prices_supply",
+            "status": "done",
+            "effect": "medium",
+            "reach": "regional",
+            "reason": "EU gas storage at record low raises LNG competition and prices for India",
+            "at": "2026-10-23T11:46:59.733Z"
+          },
+          "reports": [
+            {
+              "source": "aljazeera",
+              "headline": "EU entering winter with lowest gas reserves on record, IEA boss warns",
+              "url": "https://www.aljazeera.com/economy/2026/10/23/eu-entering-winter-with-lowest-gas-reserves-on-record-iea-boss-warns",
+              "date": "2026-10-23T06:02:15.000Z",
+              "kind": "feature",
+              "summary": "Al Jazeera interviews Fatih Birol in Berlin as the Iran war disrupts global energy supplies.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/2026-09-29T102003Z_594774522_RC2MX4AEEI3V_RTRMADP_3_EU-ENERGY-IEA-RESERVES-1792688729.jpg?resize=1920%2C1440"
+            }
+          ],
+          "placeTried": true,
+          "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/2026-09-29T102003Z_594774522_RC2MX4AEEI3V_RTRMADP_3_EU-ENERGY-IEA-RESERVES-1792688729.jpg?resize=1920%2C1440",
+          "priority": 30,
+          "thread": "t1m68tbs"
+        },
+        {
+          "id": "s4p6nwu",
+          "headline": "Trump invokes Cold War-era Defence Production Act to boost oil production and refining",
+          "url": "https://www.scmp.com/news/world/united-states-canada/article/3371836/trump-invokes-cold-war-era-defence-production-act-boost-oil-production-and-refining",
+          "source": "scmp",
+          "date": "2026-10-22T22:21:42.000Z",
+          "relevance": "medium",
+          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/23/a318648b-9948-4d81-b038-094c40241e0b_08dd78b8.jpg?itok=D0Sw3J-3&v=1792707695",
+          "why": "US President Donald Trump has determined that petroleum production and refining are essential to national defence under a Cold War-era law. This could open US funding for fossil fuel projects and may eventually affect global oil supply, which matters to India.",
           "implications": [
-            "A higher crude price raises the cost of the oil India must buy abroad. That can widen the import bill and squeeze the margins of oil refiners and marketing companies.",
-            "If the price stays high, pressure could build on petrol, diesel and LPG prices, or on the government's finances if it absorbs part of the increase."
+            "If US funding raises American oil and refined-fuel output, global supply could increase over time, which may ease price pressure on the crude that Indian refiners buy.",
+            "The report only says the move could open funding, so any effect on world markets depends on which projects actually receive money and how quickly they come on stream."
           ],
           "analysis": {
             "v": 3,
-            "at": "2026-10-22T21:48:23.861Z",
+            "at": "2026-10-23T05:05:46.422Z",
             "tier": "quick",
-            "primary": "escalation",
+            "primary": "policy_tracker",
             "complement": null,
             "features": [
-              "armed_conflict",
-              "price_move",
+              "policy_stage",
+              "allocation",
               "pending_outcome"
             ],
             "exposure": {
-              "level": "high",
-              "reason": "Crude oil is among India's largest imports and feeds into petrol, diesel and LPG costs. A sharp rise in Brent therefore reaches household fuel spending and the import bill."
+              "level": "low",
+              "reason": "The reports describe only a US funding possibility and give no direct route to India. Any link would run indirectly through global crude and fuel supply, which is why the exposure is low for now."
             },
             "horizon": {
-              "value": "weeks",
-              "reason": "Higher import costs reach refiners first, and any change in retail fuel prices usually follows over the coming weeks if crude stays elevated."
+              "value": "months",
+              "reason": "Funding decisions and any new production or refining capacity take time, so effects on global supply would appear well after the announcement."
             },
             "confidence": {
               "level": "low",
-              "reason": "This rests on a single CNBC report, and the US plan to resume strikes is described only as reported, with no official confirmation."
+              "reason": "This rests on a single report from the South China Morning Post, and it is not yet confirmed what funding will follow."
             },
             "outlets": 1,
             "affected": [
               {
                 "group": "Fuel & LPG users",
-                "direction": "up",
-                "what": "fuel price pressure",
-                "effect": "If Brent stays high, refiners' costs rise, which could eventually feed through to petrol, diesel and LPG prices paid by households.",
-                "basis": "inferred"
-              },
-              {
-                "group": "Government finances",
-                "direction": "down",
-                "what": "oil import bill",
-                "effect": "A higher crude price could raise India's import bill and increase pressure on the government if it chooses to cushion consumers from the increase.",
+                "direction": "unclear",
+                "what": "crude and fuel price pressure",
+                "effect": "If US output rises, global supply could grow and ease crude costs for Indian refiners, but the reports do not say whether this will happen.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "Official US confirmation or announcement of renewed strikes on Iran",
-                "why": "It would show whether the reported plan has become action, which would raise the risk to oil supply routes.",
+                "what": "Announcements of specific US funding or projects approved under the petroleum determination",
+                "why": "These would show whether the determination turns into real new oil or refining capacity.",
                 "when": "",
-                "where": ""
-              },
-              {
-                "what": "Whether Brent crude holds above $113 in the coming sessions",
-                "why": "A sustained price at this level would raise the likelihood of cost pressure reaching Indian refiners and fuel prices.",
-                "when": "",
-                "where": ""
+                "where": "White House website"
               }
             ],
             "context": [
-              "India imports most of the crude oil it uses, and the price is set in dollars on global markets. International price rises therefore pass quickly into India's import costs.",
-              "Much Gulf oil leaves through the Strait of Hormuz, so fighting near that route tends to move prices sharply."
+              "India imports most of the crude oil it uses, so changes in global supply and prices reach Indian fuel costs, refiners and the import bill, even when the policy that triggers them is made elsewhere."
             ],
             "terms": [
               {
-                "term": "Brent crude",
-                "meaning": "Brent crude is the international benchmark price for oil, widely used to price the crude that India and many other countries import."
+                "term": "Defence Production Act",
+                "meaning": "A US law that lets the president direct and financially support private industry to meet national defence needs."
               }
             ],
             "frameworks": {
-              "escalation": {
-                "move": "none",
-                "rung": 6,
-                "current_rung": 6,
-                "previous_rung": null,
-                "development": "President Trump hinted at action on Iran, and the US reportedly plans to resume strikes, which pushed Brent crude above $113.",
-                "evidence": "The report describes hints and a reported plan, not a new attack that has taken place since 20 October. Threats and plans do not move the war's level, so it stays at strikes on critical infrastructure or third countries.",
-                "next_signals": [
+              "policy_tracker": {
+                "instrument": {
+                  "name": "Presidential determination that petroleum production and refining are essential to national defence, under the Defence Production Act",
+                  "issuer": "US President Donald Trump",
+                  "jurisdiction": "United States"
+                },
+                "stages": [
                   {
-                    "rung": 7,
-                    "signal": "The US launches a broad, sustained military campaign against Iran, and Iran responds with wide-ranging attacks across the region."
-                  },
-                  {
-                    "rung": 5,
-                    "signal": "Iranian attacks on third countries stop and Hormuz traffic resumes, leaving only direct US–Iran strikes."
+                    "stage": "adopted",
+                    "date": "2026-10-22",
+                    "status": "done"
                   }
                 ],
-                "india_channels": [
-                  "oil",
-                  "shipping",
-                  "trade"
+                "obligations": [
+                  {
+                    "who": "US federal government",
+                    "what": "The determination could allow the government to direct US funding to fossil fuel projects, but the report does not say whether any money has been committed.",
+                    "from": "2026-10-22"
+                  }
                 ],
-                "conflict": "w1ye2krf",
-                "applied": "none",
-                "from": 6
+                "applies_to_india": "partly",
+                "india_note": "The measure places no direct obligation on India. If it raises US oil and refining output, it could affect global crude supply and prices, which Indian refiners and consumers depend on."
               }
             }
           },
-          "conflict": "w1ye2krf",
+          "place": {
+            "name": "Washington",
+            "country": "United States",
+            "lat": 38.9,
+            "lon": -77
+          },
+          "stage": "analyse",
+          "filter": {
+            "verdict": "analyse",
+            "channel": "prices_supply",
+            "status": "done",
+            "effect": "medium",
+            "reach": "national",
+            "reason": "US emergency order to boost oil output and refining affects global supply India imports",
+            "at": "2026-10-23T05:05:46.423Z"
+          },
           "reports": [
             {
-              "source": "cnbc",
-              "headline": "Brent crude tops $113, highest level since May, after Trump hints at action on Iran",
-              "url": "https://www.cnbc.com/2026/10/22/oil-prices-today-wti-brent-saudi-arabia.html",
-              "date": "2026-10-22T19:19:41.000Z",
-              "kind": "breaking",
-              "summary": "The Middle East conflict could flare up again as the U.S. reportedly plans to resume strikes against Iran.",
+              "source": "scmp",
+              "headline": "Trump invokes Cold War-era Defence Production Act to boost oil production and refining",
+              "url": "https://www.scmp.com/news/world/united-states-canada/article/3371836/trump-invokes-cold-war-era-defence-production-act-boost-oil-production-and-refining",
+              "date": "2026-10-22T22:21:42.000Z",
+              "kind": "hard",
+              "summary": "US ⁠President Donald Trump determined ⁠on Thursday that petroleum ⁠production, refining and related activities are essential to national defence, a move that could open up US funding for fossil fuel projects.",
               "summaryV": 3,
-              "ogTried": true,
-              "descTried": true,
-              "image": "https://image.cnbcfm.com/api/v1/image/108398587-1791817200941-gettyimages-2299319676-AA_12102026_2989970.jpeg?v=1791817236&w=1920&h=1080"
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/23/a318648b-9948-4d81-b038-094c40241e0b_08dd78b8.jpg?itok=D0Sw3J-3&v=1792707695"
             }
           ],
-          "image": "https://image.cnbcfm.com/api/v1/image/108398587-1791817200941-gettyimages-2299319676-AA_12102026_2989970.jpeg?v=1791817236&w=1920&h=1080",
-          "thread": "t2ogxay",
-          "placeTried": true,
-          "priority": 80
+          "priority": 65,
+          "thread": "t2ogxay"
         },
         {
           "id": "s10x2ag1",
@@ -932,7 +1107,127 @@
               "United States"
             ]
           },
-          "priority": 85
+          "priority": 85,
+          "stats": {
+            "v": 2,
+            "at": "2026-10-23T11:48:55.717Z",
+            "series": [
+              {
+                "title": "Crude oil and condensate through the Strait of Hormuz",
+                "unit": "million barrels per day",
+                "publisher": "U.S. Energy Information Administration",
+                "points": [
+                  {
+                    "period": "2020",
+                    "value": 14.4,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2021",
+                    "value": 14.7,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2022",
+                    "value": 16.2,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2023",
+                    "value": 15.8,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2024",
+                    "value": 14.6,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "1H25",
+                    "value": 14.7,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "title": "eia.gov",
+                    "domain": "eia.gov"
+                  }
+                ],
+                "domains": [
+                  "eia.gov"
+                ],
+                "dropped": 0,
+                "why": "Both series track the volume of oil moving through the Strait of Hormuz, the Gulf shipping route whose disruption the story warns could follow renewed escalation with Iran.",
+                "reused": true,
+                "checkedAt": "2026-10-13T23:16:50.395Z"
+              },
+              {
+                "title": "Oil flows through the Strait of Hormuz, total",
+                "unit": "million barrels per day",
+                "publisher": "U.S. Energy Information Administration",
+                "points": [
+                  {
+                    "period": "2020",
+                    "value": 19.2,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2021",
+                    "value": 19.7,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2022",
+                    "value": 21.9,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2023",
+                    "value": 21.8,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2024",
+                    "value": 20.7,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "1H25",
+                    "value": 20.9,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "title": "eia.gov",
+                    "domain": "eia.gov"
+                  }
+                ],
+                "domains": [
+                  "eia.gov"
+                ],
+                "dropped": 0,
+                "why": "Both series track the volume of oil moving through the Strait of Hormuz, the Gulf shipping route whose disruption the story warns could follow renewed escalation with Iran.",
+                "reused": true,
+                "checkedAt": "2026-10-13T23:16:50.395Z"
+              }
+            ]
+          }
         },
         {
           "id": "s6n2u6j",
@@ -2757,71 +3052,6 @@
             ]
           },
           "priority": 95
-        },
-        {
-          "id": "skaqi4y",
-          "headline": "Why Rubio is visiting Reliance’s oil refinery in India, the world’s largest",
-          "url": "https://www.aljazeera.com/news/2026/10/20/why-rubio-is-visiting-reliances-oil-refinery-in-india-the-worlds-largest",
-          "source": "aljazeera",
-          "date": "2026-10-20T12:37:06.000Z",
-          "relevance": "medium",
-          "why": "",
-          "implications": [],
-          "reports": [
-            {
-              "source": "aljazeera",
-              "headline": "Why Rubio is visiting Reliance’s oil refinery in India, the world’s largest",
-              "url": "https://www.aljazeera.com/news/2026/10/20/why-rubio-is-visiting-reliances-oil-refinery-in-india-the-worlds-largest",
-              "date": "2026-10-20T12:37:06.000Z",
-              "kind": "feature",
-              "summary": "Reliance is central to Washington’s efforts to punish Russian energy buyers and contain oil prices amid the war on Iran.",
-              "summaryV": 3,
-              "ogTried": true,
-              "descTried": true,
-              "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/2007-02-01T120000Z_389211615_GM1DUNBEQOAA_RTRMADP_3_INDIA-OIL-FIRE-1792491599.jpg?resize=1920%2C1440"
-            },
-            {
-              "source": "nyt",
-              "headline": "Rubio Travels to India to Strengthen Economic Ties Amid Strained U.S. Relations",
-              "url": "https://www.nytimes.com/2026/10/20/world/asia/marco-rubio-india-us-trade-deal.html",
-              "date": "2026-10-20T14:14:55.000Z",
-              "kind": "hard",
-              "summary": "The secretary of state will meet with Asia’s richest men in Mumbai as Washington continues negotiations over a trade deal with India.",
-              "summaryV": 3,
-              "image": "https://static01.nyt.com/images/2026/10/20/multimedia/20int-rubio-india-fqjh/20int-rubio-india-fqjh-mediumSquareAt3X.jpg"
-            },
-            {
-              "source": "cnbc",
-              "headline": "U.S. eyes refining muscle of Indian billionaire Ambani's Reliance as Rubio visits Jamnagar plant",
-              "url": "https://www.cnbc.com/2026/10/21/rubio-reliance-venezuela-oil-diesel.html",
-              "date": "2026-10-21T04:47:43.000Z",
-              "kind": "hard",
-              "summary": "Rubio said the \"extraordinary\" refining capacity of Reliance could help India diversify its energy supplies, hinting at greater offtake of Venezuelan crude.",
-              "summaryV": 3
-            },
-            {
-              "source": "scmp",
-              "headline": "Why US Secretary of State Rubio is skipping New Delhi for an Indian oil refinery",
-              "url": "https://www.scmp.com/week-asia/politics/article/3371651/why-us-secretary-state-rubio-skipping-delhi-indian-oil-refinery",
-              "date": "2026-10-21T10:30:06.000Z",
-              "kind": "feature",
-              "summary": "US Secretary of State Marco Rubio’s visit to India’s Jamnagar this week – home to the world’s largest oil refining complex – signals energy cooperation as the anchor for bilateral ties even as broader policy friction frays relations, according to analysts.",
-              "summaryV": 3,
-              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/21/9b64853d-f0c5-47dd-886f-3f60f50ede7f_aa7acab0.jpg?itok=ECZ3eca1&v=1792575354"
-            }
-          ],
-          "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/2007-02-01T120000Z_389211615_GM1DUNBEQOAA_RTRMADP_3_INDIA-OIL-FIRE-1792491599.jpg?resize=1920%2C1440",
-          "thread": "t1q27ee0",
-          "place": {
-            "name": "Jamnagar",
-            "country": "India",
-            "lat": 22.47,
-            "lon": 70.06,
-            "involves": [
-              "United States"
-            ]
-          },
-          "priority": 40
         },
         {
           "id": "ss9m2xp",
@@ -20283,6 +20513,92 @@
       "name": "Finance",
       "items": [
         {
+          "id": "su8p1pb",
+          "headline": "A Tech Rotation Roils the Markets, Again",
+          "url": "https://www.nytimes.com/2026/10/23/business/dealbook/tech-rotation-nasdaq-ai.html",
+          "source": "nyt",
+          "date": "2026-10-23T11:42:50.000Z",
+          "relevance": "medium",
+          "image": "https://static01.nyt.com/images/2026/10/23/multimedia/23db-nasdaq-wclt/23db-nasdaq-wclt-mediumSquareAt3X.jpg",
+          "why": "",
+          "implications": [],
+          "stage": "watch",
+          "filter": {
+            "verdict": "watch",
+            "channel": "money_capital",
+            "status": "done",
+            "effect": "low",
+            "reach": "national",
+            "grows_if": "Brent stays above $110 for a month while AI spending cuts hit tech shares",
+            "reason": "Tech share rotation driven by oil and AI costs; effect uncertain",
+            "at": "2026-10-23T11:48:50.902Z"
+          },
+          "watch": {
+            "grows_if": "Brent stays above $110 for a month while AI spending cuts hit tech shares",
+            "since": "2026-10-23T11:48:50.902Z",
+            "expires": "2026-10-30T11:48:50.902Z"
+          },
+          "reports": [
+            {
+              "source": "nyt",
+              "headline": "A Tech Rotation Roils the Markets, Again",
+              "url": "https://www.nytimes.com/2026/10/23/business/dealbook/tech-rotation-nasdaq-ai.html",
+              "date": "2026-10-23T11:42:50.000Z",
+              "kind": "hard",
+              "summary": "Investors are bracing for a one-two punch: rising oil prices and concerns about the soaring costs of the artificial intelligence buildout.",
+              "summaryV": 3,
+              "image": "https://static01.nyt.com/images/2026/10/23/multimedia/23db-nasdaq-wclt/23db-nasdaq-wclt-mediumSquareAt3X.jpg"
+            }
+          ],
+          "placeTried": true,
+          "priority": 45,
+          "thread": "t1dbdiwl"
+        },
+        {
+          "id": "s1g5uzpv",
+          "headline": "France is flashing euro crisis signals. This time, the fault lines are different",
+          "url": "https://www.cnbc.com/2026/10/23/france-debt-euro-zone-contagion.html",
+          "source": "cnbc",
+          "date": "2026-10-23T11:12:38.000Z",
+          "relevance": "medium",
+          "why": "",
+          "implications": [],
+          "place": {
+            "name": "Paris",
+            "country": "France",
+            "lat": 48.86,
+            "lon": 2.35
+          },
+          "stage": "context",
+          "filter": {
+            "verdict": "watch",
+            "channel": "money_capital",
+            "status": "done",
+            "effect": "low",
+            "reach": "national",
+            "grows_if": "French bond spreads widen sharply against Germany and other euro zone bonds",
+            "reason": "French borrowing costs surge on debt and political risk; euro spillover uncertain",
+            "at": "2026-10-23T11:48:50.902Z"
+          },
+          "reports": [
+            {
+              "source": "cnbc",
+              "headline": "France is flashing euro crisis signals. This time, the fault lines are different",
+              "url": "https://www.cnbc.com/2026/10/23/france-debt-euro-zone-contagion.html",
+              "date": "2026-10-23T11:12:38.000Z",
+              "kind": "feature",
+              "summary": "French borrowing costs have surged as debt and political risks mount, raising questions over whether the stress could spread across the euro zone.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://image.cnbcfm.com/api/v1/image/108380607-1791534375907-gettyimages-2298585875-AFP_D2MC8LX.jpeg?v=1791534388&w=1920&h=1080"
+            }
+          ],
+          "image": "https://image.cnbcfm.com/api/v1/image/108380607-1791534375907-gettyimages-2298585875-AFP_D2MC8LX.jpeg?v=1791534388&w=1920&h=1080",
+          "priority": 40,
+          "thread": "t1rn1bq5"
+        },
+        {
           "id": "sj44e88",
           "headline": "Nasdaq dives 750 points as investors reassess AI spending",
           "url": "https://www.cbsnews.com/news/nasdaq-ai-spending-debt-investors-concerns-stocks/",
@@ -20425,11 +20741,91 @@
               "kind": "hard",
               "summary": "Tech-heavy Nasdaq falls 2.6 percent as debate rages over whether AI is a bubble.",
               "summaryV": 3
+            },
+            {
+              "source": "cnbc",
+              "headline": "CNBC Daily Open: Tech falls to earth, Musk's fortunes diverge",
+              "url": "https://www.cnbc.com/2026/10/23/trump-elon-musk-tesla-starlink-tech-nasdaq-.html",
+              "date": "2026-10-23T09:58:56.000Z",
+              "kind": "hard",
+              "summary": "Markets are digesting the tech rout on Wall Street with the Nasdaq Composite logging its worst day in three months on renewed doubts over AI spending.",
+              "summaryV": 3
             }
           ],
           "image": "https://assets3.cbsnewsstatic.com/hub/i/r/2026/10/22/4ce53f60-2c8e-4cd2-931c-3c9dce7b2832/thumbnail/1200x630/2dffe26dd922fc86798d96c2b1db6b4b/gettyimages-2300487265.jpg",
           "thread": "t1dbdiwl",
           "priority": 75
+        },
+        {
+          "id": "s1bjmrbj",
+          "headline": "France protests: Macron condemns 'stupid' comments from Trump, others as bond market pressure builds",
+          "url": "https://www.cnbc.com/2026/10/22/macron-trump-france-protests.html",
+          "source": "cnbc",
+          "date": "2026-10-22T14:21:56.000Z",
+          "relevance": "medium",
+          "why": "",
+          "implications": [],
+          "place": {
+            "name": "Paris",
+            "country": "France",
+            "lat": 48.86,
+            "lon": 2.35
+          },
+          "stage": "watch",
+          "filter": {
+            "verdict": "watch",
+            "channel": "money_capital",
+            "status": "done",
+            "effect": "low",
+            "reach": "national",
+            "grows_if": "French bond sell-off spreads to other euro-area government bonds",
+            "reason": "French 10-year yield at 24-year high; limited direct effect on India so far.",
+            "at": "2026-10-23T05:03:53.882Z"
+          },
+          "watch": {
+            "grows_if": "French bond sell-off spreads to other euro-area government bonds",
+            "since": "2026-10-23T05:03:53.882Z",
+            "expires": "2026-10-30T05:03:53.882Z",
+            "recheck": false,
+            "checkedAt": "2026-10-23T11:48:52.364Z",
+            "checkedReports": 3
+          },
+          "reports": [
+            {
+              "source": "cnbc",
+              "headline": "France protests: Macron condemns 'stupid' comments from Trump, others as bond market pressure builds",
+              "url": "https://www.cnbc.com/2026/10/22/macron-trump-france-protests.html",
+              "date": "2026-10-22T14:21:56.000Z",
+              "kind": "hard",
+              "summary": "France is facing a mounting economic crisis that pushed its 10-year government bond yield to a new 24-year high on Thursday.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://image.cnbcfm.com/api/v1/image/108445227-1792648710242-gettyimages-2300710122-AFP_D3XH84B.jpeg?v=1792651411&w=1920&h=1080"
+            },
+            {
+              "source": "france24",
+              "headline": "Major protests in France: French shop owners brace for more unrest",
+              "url": "https://www.france24.com/en/major-protests-in-france-french-shop-owners-brace-for-more-unrest",
+              "date": "2026-10-23T08:46:04.000Z",
+              "kind": "hard",
+              "summary": "French President Emmanuel Macron said on Thursday that \"illegitimate\" protests would be banned in the coming days and blamed \"seditious\" ultra-left groups and vandals for last weekend's riots and looting.",
+              "summaryV": 3,
+              "image": "https://s.france24.com/media/display/071f40c0-cebc-11f1-b17e-4b25c96ec90e/w:1024/p:16x9/EN-20261023-090255-090455-CS-01.jpg"
+            },
+            {
+              "source": "aljazeera",
+              "headline": "Macron to meet student groups: Where are France’s protests heading?",
+              "url": "https://www.aljazeera.com/news/2026/10/23/we-want-promises-backed-by-results",
+              "date": "2026-10-23T08:50:23.000Z",
+              "kind": "feature",
+              "summary": "President to meet for first time with student representatives on Friday before further protests.",
+              "summaryV": 3
+            }
+          ],
+          "image": "https://image.cnbcfm.com/api/v1/image/108445227-1792648710242-gettyimages-2300710122-AFP_D3XH84B.jpeg?v=1792651411&w=1920&h=1080",
+          "priority": 55,
+          "thread": "t1rn1bq5"
         },
         {
           "id": "sp1d814",
@@ -20682,55 +21078,6 @@
           "image": "https://image.cnbcfm.com/api/v1/image/108254453-1768932204557-gettyimages-2256714490-US_STOCKS.jpeg?v=1775807964&w=1920&h=1080",
           "priority": 65,
           "thread": "t1rzjgok"
-        },
-        {
-          "id": "s1bjmrbj",
-          "headline": "France protests: Macron condemns 'stupid' comments from Trump, others as bond market pressure builds",
-          "url": "https://www.cnbc.com/2026/10/22/macron-trump-france-protests.html",
-          "source": "cnbc",
-          "date": "2026-10-22T14:21:56.000Z",
-          "relevance": "medium",
-          "why": "",
-          "implications": [],
-          "place": {
-            "name": "Paris",
-            "country": "France",
-            "lat": 48.86,
-            "lon": 2.35
-          },
-          "stage": "watch",
-          "filter": {
-            "verdict": "watch",
-            "channel": "money_capital",
-            "status": "done",
-            "effect": "low",
-            "reach": "national",
-            "grows_if": "French bond sell-off spreads to other euro-area government bonds",
-            "reason": "French 10-year yield at 24-year high; limited direct effect on India so far.",
-            "at": "2026-10-23T05:03:53.882Z"
-          },
-          "watch": {
-            "grows_if": "French bond sell-off spreads to other euro-area government bonds",
-            "since": "2026-10-23T05:03:53.882Z",
-            "expires": "2026-10-30T05:03:53.882Z"
-          },
-          "reports": [
-            {
-              "source": "cnbc",
-              "headline": "France protests: Macron condemns 'stupid' comments from Trump, others as bond market pressure builds",
-              "url": "https://www.cnbc.com/2026/10/22/macron-trump-france-protests.html",
-              "date": "2026-10-22T14:21:56.000Z",
-              "kind": "hard",
-              "summary": "France is facing a mounting economic crisis that pushed its 10-year government bond yield to a new 24-year high on Thursday.",
-              "summaryV": 3,
-              "ogTried": true,
-              "descTried": true,
-              "image": "https://image.cnbcfm.com/api/v1/image/108445227-1792648710242-gettyimages-2300710122-AFP_D3XH84B.jpeg?v=1792651411&w=1920&h=1080"
-            }
-          ],
-          "image": "https://image.cnbcfm.com/api/v1/image/108445227-1792648710242-gettyimages-2300710122-AFP_D3XH84B.jpeg?v=1792651411&w=1920&h=1080",
-          "priority": 45,
-          "thread": "t1rn1bq5"
         },
         {
           "id": "sgys1we",
@@ -22626,6 +22973,311 @@
       "name": "Technology",
       "items": [
         {
+          "id": "s1u3nset",
+          "headline": "Critical web security flaws spark global alarm as Google, OpenAI and Amazon respond",
+          "url": "https://www.cnbc.com/2026/10/22/php-google-openai-and-amazon-cyber.html",
+          "source": "cnbc",
+          "date": "2026-10-22T01:05:15.000Z",
+          "relevance": "medium",
+          "why": "Security agencies worldwide, including Hong Kong's watchdog, have warned of two critical flaws in the PHP web programming language that could let hackers take control of servers. Indian websites and IT firms running PHP could be exposed.",
+          "implications": [
+            "The flaws could allow hackers to run their own code remotely on affected servers, meaning stolen data or hijacked websites if systems are not fixed.",
+            "Large technology companies including Google, OpenAI and Amazon have responded, which signals that the risk reaches widely used cloud and online services.",
+            "The BBC notes that no attack has yet happened, so the immediate burden falls on companies and IT teams to patch systems before attackers act.",
+            "Indian IT services firms that manage websites and servers for clients could face urgent patching work, while smaller businesses with fewer security staff may remain exposed longer."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-22T21:53:09.987Z",
+            "tier": "standard",
+            "primary": "timeline",
+            "complement": null,
+            "features": [
+              "fast_moving",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The risk reaches India through websites, servers and IT services firms that use PHP, affecting one industry and creating an urgent security obligation rather than a household essential."
+            },
+            "horizon": {
+              "value": "now",
+              "reason": "Agencies have issued warnings now, and organisations need to patch immediately before attackers exploit the flaws."
+            },
+            "confidence": {
+              "level": "high",
+              "reason": "CNBC, the South China Morning Post and BBC News agree on the warnings, with an on-record Hong Kong watchdog alert; no actual attack has yet been reported."
+            },
+            "outlets": 3,
+            "affected": [
+              {
+                "group": "IT & services workers",
+                "direction": "up",
+                "what": "urgent patching workload",
+                "effect": "Indian IT staff who manage websites and servers may face urgent work to update PHP systems for employers and overseas clients.",
+                "basis": "inferred"
+              },
+              {
+                "group": "MSME exporters",
+                "direction": "down",
+                "what": "website security risk",
+                "effect": "Small businesses that sell online through PHP-based websites could face hacking risk if they lack staff or resources to apply fixes quickly.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Reports of hackers actively exploiting the two PHP flaws",
+                "why": "It would show the threat has moved from warning to real attacks on servers.",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "An advisory on the PHP flaws from India's cyber security agency",
+                "why": "It would show how Indian authorities expect organisations in India to respond.",
+                "when": "",
+                "where": "Indian Computer Emergency Response Team (CERT-In)"
+              }
+            ],
+            "context": [
+              "PHP is one of the most widely used languages for building websites and runs behind many popular content management systems, so flaws in it can affect a very large number of sites.",
+              "When serious software flaws become public, attackers often try to exploit them quickly, which is why cyber agencies urge organisations to apply security updates without delay.",
+              "Indian IT services companies run and maintain systems for clients worldwide, so global security alerts usually create work and risk for them as well."
+            ],
+            "terms": [
+              {
+                "term": "PHP",
+                "meaning": "A widely used programming language for building websites and the software that runs on web servers."
+              },
+              {
+                "term": "execute code remotely",
+                "meaning": "When an attacker can run their own commands on a computer over the internet without physical access to it."
+              }
+            ],
+            "frameworks": {
+              "timeline": {
+                "entries": [
+                  {
+                    "when": "2026-10-22",
+                    "what": "Global warnings were issued over critical PHP security flaws, and Google, OpenAI and Amazon responded to the potential cyber threats.",
+                    "actor": "Google, OpenAI, Amazon",
+                    "outlet": "CNBC",
+                    "type": "action",
+                    "verification": "confirmed"
+                  },
+                  {
+                    "when": "Thursday morning, 2026-10-22",
+                    "what": "A Hong Kong information security watchdog issued an extremely high risk warning that two PHP flaws could let hackers execute code remotely and control servers.",
+                    "actor": "Hong Kong information security watchdog",
+                    "outlet": "South China Morning Post",
+                    "type": "action",
+                    "verification": "confirmed"
+                  },
+                  {
+                    "when": "2026-10-22",
+                    "what": "BBC News commentary said the global response had been dramatic but that the cyber event itself had not yet happened.",
+                    "actor": "BBC News",
+                    "outlet": "BBC News",
+                    "type": "claim",
+                    "verification": "claimed"
+                  }
+                ],
+                "current_status": "Agencies and major technology firms have issued warnings over two critical PHP flaws, but no actual exploitation has been reported so far.",
+                "open_questions": [
+                  "Will attackers begin exploiting the PHP flaws before most organisations apply fixes?",
+                  "How many websites and servers in India run vulnerable versions of PHP?"
+                ]
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "cnbc",
+              "headline": "Critical web security flaws spark global alarm as Google, OpenAI and Amazon respond",
+              "url": "https://www.cnbc.com/2026/10/22/php-google-openai-and-amazon-cyber.html",
+              "date": "2026-10-22T01:05:15.000Z",
+              "kind": "hard",
+              "summary": "Critical PHP security flaws trigger global warnings as Google, OpenAI and Amazon respond to potential cyber threats.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://image.cnbcfm.com/api/v1/image/108444221-1792627087371-gettyimages-2300746288-20090101261021-99-21563.jpeg?v=1792627101&w=1920&h=1080"
+            },
+            {
+              "source": "scmp",
+              "headline": "Hong Kong watchdog joins global agencies to warn of web scripting hack risks",
+              "url": "https://www.scmp.com/news/hong-kong/article/3371756/hong-kong-watchdog-warns-hacking-risks-flaws-web-programming-language",
+              "date": "2026-10-22T06:37:01.000Z",
+              "kind": "hard",
+              "summary": "A Hong Kong information security watchdog issued an “extremely high risk” warning on Thursday morning over two critical flaws in a widely used web programming language that could allow hackers to execute code remotely and take control of servers.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/22/00320106-6785-4a23-8a4d-e15c167ab16a_aebd3126.jpg?itok=5Q4PMLtp&v=1792651009"
+            },
+            {
+              "source": "bbc",
+              "headline": "Zoe Kleinman: PHP is the cyber equivalent of an unexploded bomb",
+              "url": "https://www.bbc.co.uk/news/articles/cw98z6qlyvg3o",
+              "date": "2026-10-22T10:17:26.000Z",
+              "kind": "feature",
+              "summary": "It has been a dramatic, public and global response, but the cyber event hasn't happened yet.",
+              "summaryV": 3,
+              "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/71b5/live/6f991250-ce0f-11f1-bc2e-018d645d8d21.jpg",
+              "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/71b5/live/6f991250-ce0f-11f1-bc2e-018d645d8d21.jpg"
+            },
+            {
+              "source": "npr",
+              "headline": "Hacking attempts rise after flaws found in program affecting 70 percent of websites",
+              "url": "https://www.npr.org/2026/10/23/g-s1-149503/hacking-php-flaws",
+              "date": "2026-10-23T09:37:38.000Z",
+              "kind": "hard",
+              "summary": "Governments around the world are rushing to implement safety measures after AI technology found 'severe' vulnerabilities in a key programming language called PHP.",
+              "summaryV": 3,
+              "image": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/5824x3883+0+0/resize/5824x3883!/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fea%2F9b%2F0e0d258549c9be17fa62b3a4fa98%2Fgettyimages-2301428719.jpg"
+            }
+          ],
+          "image": "https://image.cnbcfm.com/api/v1/image/108444221-1792627087371-gettyimages-2300746288-20090101261021-99-21563.jpeg?v=1792627101&w=1920&h=1080",
+          "thread": "t1b261c8",
+          "placeTried": true,
+          "priority": 75
+        },
+        {
+          "id": "s1af3xhg",
+          "headline": "China Moves to Tighten Its Grip Over Exports of Top A.I. Models",
+          "url": "https://www.nytimes.com/2026/10/21/world/asia/china-exports-ai-controls.html",
+          "source": "nyt",
+          "date": "2026-10-21T09:24:47.000Z",
+          "relevance": "medium",
+          "image": "https://static01.nyt.com/images/2026/10/21/multimedia/21int-china-ai-rules-01-lvpc/21int-china-ai-rules-01-lvpc-mediumSquareAt3X.jpg",
+          "why": "China has drafted rules tightening control over exports of its top artificial intelligence models. Leading developers DeepSeek and MiniMax have registered and continued open-source releases. Indian developers who rely on Chinese models could eventually face new conditions on access.",
+          "implications": [
+            "The South China Morning Post, citing state media, reports that DeepSeek and MiniMax completed export registration and kept releasing models. This suggests the rules may add paperwork rather than end open-source availability.",
+            "Indian startups and software firms that build products on freely downloadable Chinese models could face changed licensing terms if Beijing later uses registration to limit overseas use.",
+            "The New York Times describes the rules as balancing national security against China's aim to outpace the United States. Future tightening could therefore depend on how Beijing judges security risks.",
+            "If Chinese models became harder to obtain, Indian developers may lean more on American or domestic alternatives, which could change their costs and choice of tools."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-23T11:51:01.410Z",
+            "tier": "standard",
+            "primary": "policy_tracker",
+            "complement": null,
+            "features": [
+              "policy_stage"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "The rules reach India only indirectly, through Indian developers' use of Chinese AI models. Reports say releases are continuing, and they describe no specific mechanism affecting India."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "The rules are still described as a draft, and any change in model availability for overseas users would emerge only as the rules are finalised and applied."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "This rests on two outlets, The New York Times and the South China Morning Post, the latter citing state media. The final rules and their overseas licensing conditions remain unconfirmed."
+            },
+            "outlets": 2,
+            "affected": [
+              {
+                "group": "IT & services workers",
+                "direction": "unclear",
+                "what": "access to Chinese AI models",
+                "effect": "Indian developers using Chinese open-source models could face new licensing conditions if China's registration system is later used to restrict overseas distribution.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Publication of the final version of China's AI model export rules",
+                "why": "The final text would show whether overseas licensing and open-source releases face lasting conditions or limits.",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "Further Chinese AI developers completing export registration and continuing overseas releases",
+                "why": "Continued releases would suggest the rules act as an oversight step rather than a barrier to foreign users.",
+                "when": "",
+                "where": "Chinese state media"
+              }
+            ],
+            "context": [
+              "Open-source artificial intelligence models can be downloaded and run by developers anywhere. Many smaller firms therefore build on freely available models rather than paying to train their own.",
+              "The United States already restricts exports of advanced AI chips to China. Controls on AI technology have become a central part of the wider technology rivalry between the two countries.",
+              "India has in the past restricted some Chinese apps on data-security grounds, so the use of Chinese AI tools in India also carries a domestic policy dimension."
+            ],
+            "terms": [
+              {
+                "term": "open-source releases",
+                "meaning": "Publishing an AI model so that anyone can download, use and modify it, usually under a licence that sets the conditions of use."
+              },
+              {
+                "term": "export registration procedures",
+                "meaning": "Formal steps a company must complete with Chinese authorities before sending regulated technology abroad or licensing it overseas."
+              }
+            ],
+            "frameworks": {
+              "policy_tracker": {
+                "instrument": {
+                  "name": "Draft rules on export of artificial intelligence technology",
+                  "issuer": "Government of China",
+                  "jurisdiction": "China"
+                },
+                "stages": [
+                  {
+                    "stage": "draft",
+                    "date": "",
+                    "status": "current"
+                  },
+                  {
+                    "stage": "adopted",
+                    "date": "",
+                    "status": "next"
+                  }
+                ],
+                "obligations": [
+                  {
+                    "who": "Chinese AI model developers",
+                    "what": "State media accounts indicate that developers must complete export registration procedures before making open-source releases or licensing models overseas.",
+                    "from": ""
+                  }
+                ],
+                "applies_to_india": "no",
+                "india_note": "The rules bind Chinese developers, not Indian entities. They could affect Indian startups and software firms that use Chinese open-source models if registration later brings conditions on overseas use."
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "nyt",
+              "headline": "China Moves to Tighten Its Grip Over Exports of Top A.I. Models",
+              "url": "https://www.nytimes.com/2026/10/21/world/asia/china-exports-ai-controls.html",
+              "date": "2026-10-21T09:24:47.000Z",
+              "kind": "hard",
+              "summary": "Draft rules on the export of artificial intelligence technology show how China is trying to balance national security risks with its desire to outpace the United States.",
+              "summaryV": 3,
+              "image": "https://static01.nyt.com/images/2026/10/21/multimedia/21int-china-ai-rules-01-lvpc/21int-china-ai-rules-01-lvpc-mediumSquareAt3X.jpg"
+            },
+            {
+              "source": "scmp",
+              "headline": "DeepSeek, MiniMax secure open-source licences days after new China export rules: state media",
+              "url": "https://www.scmp.com/tech/policy/article/3371880/deepseek-minimax-secure-open-source-licenses-days-after-new-china-export-rules-state-media",
+              "date": "2026-10-23T06:00:25.000Z",
+              "kind": "hard",
+              "summary": "Chinese artificial intelligence model developers DeepSeek and MiniMax have completed export registration procedures and proceeded with open-source releases and overseas licensing activities, according to Chinese state media, days after Beijing moved to tighten oversight on AI tech transfers.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/23/13c2709b-a038-4b95-9f39-fe150b4e1a28_7b46c8fc.jpg?itok=dvrkrTvi&v=1792734912"
+            }
+          ],
+          "thread": "t5dqex6",
+          "place": {
+            "name": "Beijing",
+            "country": "China",
+            "lat": 39.9,
+            "lon": 116.41
+          },
+          "priority": 65
+        },
+        {
           "id": "s1gm78l6",
           "headline": "Websites taken down worldwide as critical cyber-security update issued",
           "url": "https://www.bbc.co.uk/news/articles/cmly0lg3w5x2o",
@@ -22967,164 +23619,6 @@
           },
           "priority": 25,
           "thread": "t1b261c8"
-        },
-        {
-          "id": "s1u3nset",
-          "headline": "Critical web security flaws spark global alarm as Google, OpenAI and Amazon respond",
-          "url": "https://www.cnbc.com/2026/10/22/php-google-openai-and-amazon-cyber.html",
-          "source": "cnbc",
-          "date": "2026-10-22T01:05:15.000Z",
-          "relevance": "medium",
-          "why": "Security agencies worldwide, including Hong Kong's watchdog, have warned of two critical flaws in the PHP web programming language that could let hackers take control of servers. Indian websites and IT firms running PHP could be exposed.",
-          "implications": [
-            "The flaws could allow hackers to run their own code remotely on affected servers, meaning stolen data or hijacked websites if systems are not fixed.",
-            "Large technology companies including Google, OpenAI and Amazon have responded, which signals that the risk reaches widely used cloud and online services.",
-            "The BBC notes that no attack has yet happened, so the immediate burden falls on companies and IT teams to patch systems before attackers act.",
-            "Indian IT services firms that manage websites and servers for clients could face urgent patching work, while smaller businesses with fewer security staff may remain exposed longer."
-          ],
-          "analysis": {
-            "v": 3,
-            "at": "2026-10-22T21:53:09.987Z",
-            "tier": "standard",
-            "primary": "timeline",
-            "complement": null,
-            "features": [
-              "fast_moving",
-              "pending_outcome"
-            ],
-            "exposure": {
-              "level": "medium",
-              "reason": "The risk reaches India through websites, servers and IT services firms that use PHP, affecting one industry and creating an urgent security obligation rather than a household essential."
-            },
-            "horizon": {
-              "value": "now",
-              "reason": "Agencies have issued warnings now, and organisations need to patch immediately before attackers exploit the flaws."
-            },
-            "confidence": {
-              "level": "high",
-              "reason": "CNBC, the South China Morning Post and BBC News agree on the warnings, with an on-record Hong Kong watchdog alert; no actual attack has yet been reported."
-            },
-            "outlets": 3,
-            "affected": [
-              {
-                "group": "IT & services workers",
-                "direction": "up",
-                "what": "urgent patching workload",
-                "effect": "Indian IT staff who manage websites and servers may face urgent work to update PHP systems for employers and overseas clients.",
-                "basis": "inferred"
-              },
-              {
-                "group": "MSME exporters",
-                "direction": "down",
-                "what": "website security risk",
-                "effect": "Small businesses that sell online through PHP-based websites could face hacking risk if they lack staff or resources to apply fixes quickly.",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "Reports of hackers actively exploiting the two PHP flaws",
-                "why": "It would show the threat has moved from warning to real attacks on servers.",
-                "when": "",
-                "where": ""
-              },
-              {
-                "what": "An advisory on the PHP flaws from India's cyber security agency",
-                "why": "It would show how Indian authorities expect organisations in India to respond.",
-                "when": "",
-                "where": "Indian Computer Emergency Response Team (CERT-In)"
-              }
-            ],
-            "context": [
-              "PHP is one of the most widely used languages for building websites and runs behind many popular content management systems, so flaws in it can affect a very large number of sites.",
-              "When serious software flaws become public, attackers often try to exploit them quickly, which is why cyber agencies urge organisations to apply security updates without delay.",
-              "Indian IT services companies run and maintain systems for clients worldwide, so global security alerts usually create work and risk for them as well."
-            ],
-            "terms": [
-              {
-                "term": "PHP",
-                "meaning": "A widely used programming language for building websites and the software that runs on web servers."
-              },
-              {
-                "term": "execute code remotely",
-                "meaning": "When an attacker can run their own commands on a computer over the internet without physical access to it."
-              }
-            ],
-            "frameworks": {
-              "timeline": {
-                "entries": [
-                  {
-                    "when": "2026-10-22",
-                    "what": "Global warnings were issued over critical PHP security flaws, and Google, OpenAI and Amazon responded to the potential cyber threats.",
-                    "actor": "Google, OpenAI, Amazon",
-                    "outlet": "CNBC",
-                    "type": "action",
-                    "verification": "confirmed"
-                  },
-                  {
-                    "when": "Thursday morning, 2026-10-22",
-                    "what": "A Hong Kong information security watchdog issued an extremely high risk warning that two PHP flaws could let hackers execute code remotely and control servers.",
-                    "actor": "Hong Kong information security watchdog",
-                    "outlet": "South China Morning Post",
-                    "type": "action",
-                    "verification": "confirmed"
-                  },
-                  {
-                    "when": "2026-10-22",
-                    "what": "BBC News commentary said the global response had been dramatic but that the cyber event itself had not yet happened.",
-                    "actor": "BBC News",
-                    "outlet": "BBC News",
-                    "type": "claim",
-                    "verification": "claimed"
-                  }
-                ],
-                "current_status": "Agencies and major technology firms have issued warnings over two critical PHP flaws, but no actual exploitation has been reported so far.",
-                "open_questions": [
-                  "Will attackers begin exploiting the PHP flaws before most organisations apply fixes?",
-                  "How many websites and servers in India run vulnerable versions of PHP?"
-                ]
-              }
-            }
-          },
-          "reports": [
-            {
-              "source": "cnbc",
-              "headline": "Critical web security flaws spark global alarm as Google, OpenAI and Amazon respond",
-              "url": "https://www.cnbc.com/2026/10/22/php-google-openai-and-amazon-cyber.html",
-              "date": "2026-10-22T01:05:15.000Z",
-              "kind": "hard",
-              "summary": "Critical PHP security flaws trigger global warnings as Google, OpenAI and Amazon respond to potential cyber threats.",
-              "summaryV": 3,
-              "ogTried": true,
-              "descTried": true,
-              "image": "https://image.cnbcfm.com/api/v1/image/108444221-1792627087371-gettyimages-2300746288-20090101261021-99-21563.jpeg?v=1792627101&w=1920&h=1080"
-            },
-            {
-              "source": "scmp",
-              "headline": "Hong Kong watchdog joins global agencies to warn of web scripting hack risks",
-              "url": "https://www.scmp.com/news/hong-kong/article/3371756/hong-kong-watchdog-warns-hacking-risks-flaws-web-programming-language",
-              "date": "2026-10-22T06:37:01.000Z",
-              "kind": "hard",
-              "summary": "A Hong Kong information security watchdog issued an “extremely high risk” warning on Thursday morning over two critical flaws in a widely used web programming language that could allow hackers to execute code remotely and take control of servers.",
-              "summaryV": 3,
-              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/22/00320106-6785-4a23-8a4d-e15c167ab16a_aebd3126.jpg?itok=5Q4PMLtp&v=1792651009"
-            },
-            {
-              "source": "bbc",
-              "headline": "Zoe Kleinman: PHP is the cyber equivalent of an unexploded bomb",
-              "url": "https://www.bbc.co.uk/news/articles/cw98z6qlyvg3o",
-              "date": "2026-10-22T10:17:26.000Z",
-              "kind": "feature",
-              "summary": "It has been a dramatic, public and global response, but the cyber event hasn't happened yet.",
-              "summaryV": 3,
-              "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/71b5/live/6f991250-ce0f-11f1-bc2e-018d645d8d21.jpg",
-              "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/71b5/live/6f991250-ce0f-11f1-bc2e-018d645d8d21.jpg"
-            }
-          ],
-          "image": "https://image.cnbcfm.com/api/v1/image/108444221-1792627087371-gettyimages-2300746288-20090101261021-99-21563.jpeg?v=1792627101&w=1920&h=1080",
-          "thread": "t1b261c8",
-          "placeTried": true,
-          "priority": 70
         },
         {
           "id": "s15l728e",
@@ -23563,119 +24057,6 @@
             ]
           },
           "priority": 75
-        },
-        {
-          "id": "s1af3xhg",
-          "headline": "China Moves to Tighten Its Grip Over Exports of Top A.I. Models",
-          "url": "https://www.nytimes.com/2026/10/21/world/asia/china-exports-ai-controls.html",
-          "source": "nyt",
-          "date": "2026-10-21T09:24:47.000Z",
-          "relevance": "medium",
-          "image": "https://static01.nyt.com/images/2026/10/21/multimedia/21int-china-ai-rules-01-lvpc/21int-china-ai-rules-01-lvpc-mediumSquareAt3X.jpg",
-          "why": "The New York Times reports that China has issued draft rules to tighten control over exports of artificial intelligence technology, including top models. Indian technology firms and researchers that depend on foreign AI tools could be affected if the rules are adopted.",
-          "implications": [
-            "If adopted, the rules could limit which Chinese AI models and related technology are available abroad, which may narrow the choices for Indian companies that build products on foreign models.",
-            "The report presents the draft as balancing national security against China's wish to outpace the United States, so it signals that AI technology is being treated as a strategic asset."
-          ],
-          "analysis": {
-            "v": 3,
-            "at": "2026-10-21T12:05:50.531Z",
-            "tier": "quick",
-            "primary": "policy_tracker",
-            "complement": null,
-            "features": [
-              "policy_stage"
-            ],
-            "exposure": {
-              "level": "low",
-              "reason": "The report does not mention India, and any effect would be indirect, through Indian firms or researchers that use Chinese AI technology, so the channel is narrow and unconfirmed."
-            },
-            "horizon": {
-              "value": "months",
-              "reason": "The rules are still in draft form, so they must be finalised before they can affect anyone, which usually takes months."
-            },
-            "confidence": {
-              "level": "low",
-              "reason": "The report comes from one outlet, The New York Times, and the summary does not name an official source or give the contents of the draft rules."
-            },
-            "outlets": 1,
-            "affected": [
-              {
-                "group": "IT & services workers",
-                "direction": "unclear",
-                "what": "access to AI tools",
-                "effect": "Indian technology teams that use or build on Chinese AI models could see access narrowed if the draft rules become final, although the report does not mention India.",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "Publication of a final version of China's rules on exports of artificial intelligence technology",
-                "why": "It would show how strict the controls are and which types of AI technology they cover.",
-                "when": "",
-                "where": ""
-              }
-            ],
-            "context": [
-              "Governments use export controls to decide which technologies can be sold abroad, usually citing security concerns. Controls on advanced technology have become a common tool in competition between major economies."
-            ],
-            "terms": [
-              {
-                "term": "A.I. models",
-                "meaning": "A.I. models are software systems trained on large amounts of data that can generate text, images or code or make predictions."
-              }
-            ],
-            "frameworks": {
-              "policy_tracker": {
-                "instrument": {
-                  "name": "Draft rules on the export of artificial intelligence technology",
-                  "issuer": "Chinese authorities (the issuing body is not named in the report)",
-                  "jurisdiction": "China"
-                },
-                "stages": [
-                  {
-                    "stage": "draft",
-                    "date": "",
-                    "status": "current"
-                  },
-                  {
-                    "stage": "adopted",
-                    "date": "",
-                    "status": "next"
-                  }
-                ],
-                "obligations": [
-                  {
-                    "who": "Exporters and developers of artificial intelligence technology in China",
-                    "what": "If the draft is adopted, they would face tighter government control over exporting top A.I. models, though the report's summary does not give the specific requirements.",
-                    "from": ""
-                  }
-                ],
-                "applies_to_india": "partly",
-                "india_note": "The report does not mention India. Indian firms and researchers that use Chinese AI technology could be affected if the rules are adopted, but this is inferred, not reported."
-              }
-            }
-          },
-          "reports": [
-            {
-              "source": "nyt",
-              "headline": "China Moves to Tighten Its Grip Over Exports of Top A.I. Models",
-              "url": "https://www.nytimes.com/2026/10/21/world/asia/china-exports-ai-controls.html",
-              "date": "2026-10-21T09:24:47.000Z",
-              "kind": "hard",
-              "summary": "Draft rules on the export of artificial intelligence technology show how China is trying to balance national security risks with its desire to outpace the United States.",
-              "summaryV": 3,
-              "image": "https://static01.nyt.com/images/2026/10/21/multimedia/21int-china-ai-rules-01-lvpc/21int-china-ai-rules-01-lvpc-mediumSquareAt3X.jpg"
-            }
-          ],
-          "thread": "t5dqex6",
-          "place": {
-            "name": "Beijing",
-            "country": "China",
-            "lat": 39.9,
-            "lon": 116.41
-          },
-          "priority": 60
         },
         {
           "id": "sin9vgt",
@@ -26188,91 +26569,145 @@
           "source": "africanews",
           "date": "2026-10-23T04:45:59.000Z",
           "relevance": "medium",
-          "why": "The World Health Organization's Africa chief has warned that the continent faces a \"complex\" Ebola outbreak after Nigeria reported its first case. India could be affected through health precautions for travellers and through its links with Nigeria.",
+          "why": "The World Health Organization (WHO) warned that Africa faces a complex Ebola outbreak after Nigeria confirmed its first case, the first in west Africa. India could be affected through travel links and any health screening response.",
           "implications": [
-            "Indian health authorities may consider screening or advisories for people arriving from affected countries, which could affect passengers on routes connecting India with West Africa.",
-            "Indian families and workers in Nigeria could face disruption to work or travel if the outbreak spreads or if movement restrictions are introduced."
+            "The case involves the Bundibugyo strain in a woman returning from Uganda, showing the virus travelling from east to west Africa along air routes.",
+            "Nigeria has stepped up temperature checks at Lagos airport, and India could introduce similar screening for passengers arriving from affected countries.",
+            "The woman is the wife of a Swiss diplomat whose husband is isolated without symptoms, so tracing her contacts will show whether the virus has spread further.",
+            "Indians living or working in Nigeria and travellers on routes to west Africa could face health checks or travel disruption if the outbreak widens."
           ],
           "analysis": {
             "v": 3,
-            "at": "2026-10-23T05:07:10.387Z",
-            "tier": "quick",
-            "primary": "impact_chain",
-            "complement": null,
-            "features": [],
+            "at": "2026-10-23T11:51:01.410Z",
+            "tier": "deep",
+            "primary": "timeline",
+            "complement": "scenarios",
+            "features": [
+              "fast_moving"
+            ],
             "exposure": {
               "level": "low",
-              "reason": "The reports describe no direct channel to India. Any effect would come indirectly through Indians living in or travelling to Nigeria, or through precautionary health measures, which the reports do not mention."
+              "reason": "The reports describe no direct link to India; any effect would come indirectly through travel and the Indian community in Nigeria if the outbreak spreads."
             },
             "horizon": {
               "value": "weeks",
-              "reason": "The timing depends on whether the outbreak spreads further and whether Indian authorities issue travel or health advisories, which would take days to weeks."
+              "reason": "Whether further cases appear among the woman's contacts, which would shape any travel or screening response, will become clear over the coming weeks."
             },
             "confidence": {
-              "level": "medium",
-              "reason": "This rests on one outlet, Africanews, quoting the World Health Organization's Africa chief; the number of cases and any spread beyond Nigeria are not given."
+              "level": "high",
+              "reason": "Africanews, the South China Morning Post, France 24 and BBC News agree, with on-record statements from the WHO and Swiss officials; the extent of further spread is unknown."
             },
-            "outlets": 1,
+            "outlets": 4,
             "affected": [
               {
-                "group": "Gulf & overseas workers and families",
-                "direction": "unclear",
-                "what": "safety and work in Nigeria",
-                "effect": "Indians working or living in Nigeria could face health risks or movement restrictions if the outbreak spreads, which would affect their families in India.",
+                "group": "Travellers & pilgrims",
+                "direction": "mixed",
+                "what": "airport health checks",
+                "effect": "Travellers between India and west or east Africa could face temperature checks or health questionnaires if Indian authorities respond as Nigeria has.",
                 "basis": "inferred"
               },
               {
-                "group": "Travellers & pilgrims",
+                "group": "Gulf & overseas workers and families",
                 "direction": "unclear",
-                "what": "health checks on travel",
-                "effect": "Travellers between India and West Africa could face additional health screening or advisories if Indian authorities respond to the outbreak.",
+                "what": "health risk in Nigeria",
+                "effect": "Indians working in Nigeria, and their families in India, could face health concerns or travel restrictions if local transmission develops.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "Any further Ebola cases confirmed in Nigeria or in other African countries",
-                "why": "It would show whether the outbreak is spreading and so how likely it is to reach Indian travellers and workers.",
+                "what": "Any further confirmed Ebola cases in Nigeria, including among the woman's contacts",
+                "why": "New cases would show whether the outbreak has started spreading in west Africa beyond a single imported case.",
                 "when": "",
-                "where": "World Health Organization Africa regional office"
+                "where": "World Health Organization"
               },
               {
-                "what": "Any health advisory or airport screening announced by India for arrivals from affected countries",
-                "why": "It would show whether the outbreak is leading to direct measures affecting travellers to and from India.",
+                "what": "Whether the Swiss diplomat in isolation develops symptoms",
+                "why": "His health is the first test of whether the virus passed to close contacts of the confirmed case.",
                 "when": "",
-                "where": "Ministry of Health and Family Welfare"
+                "where": "Swiss officials"
+              },
+              {
+                "what": "Any Indian airport screening advisory for arrivals from Nigeria or Uganda",
+                "why": "An advisory would show that Indian authorities see a travel risk and would affect passengers on these routes.",
+                "when": "",
+                "where": "Ministry of Health and Family Welfare, India"
               }
             ],
             "context": [
-              "Ebola spreads through contact with the bodily fluids of infected people, so outbreaks are usually contained by tracing contacts and isolating patients rather than by broad travel bans.",
-              "India has long-standing trade and diaspora ties with Nigeria and other West African countries, so health events there can have indirect effects on Indian travellers and businesses."
+              "Ebola spreads through direct contact with the bodily fluids of a sick person, not through the air, so outbreaks are usually controlled by isolating patients and tracing their contacts.",
+              "India has a large business community and many workers in Nigeria, and direct and connecting air links carry travellers between the two countries.",
+              "In past Ebola outbreaks, India screened arriving passengers from affected countries at its international airports."
             ],
             "terms": [
               {
-                "term": "Ebola",
-                "meaning": "Ebola is a severe viral illness that spreads through contact with the bodily fluids of infected people and can be fatal."
+                "term": "Bundibugyo strain",
+                "meaning": "A species of Ebola virus first identified in Uganda; the main licensed Ebola vaccine targets a different species."
+              },
+              {
+                "term": "WHO",
+                "meaning": "The World Health Organization, the United Nations agency that coordinates international responses to disease outbreaks."
               }
             ],
             "frameworks": {
-              "impact_chain": {
-                "chain": [
+              "timeline": {
+                "entries": [
                   {
-                    "step": "WHO warns of a complex outbreak",
-                    "detail": "The World Health Organization's Africa chief has said the continent faces a \"complex\" Ebola outbreak. This follows the first reported case in Nigeria.",
-                    "basis": "reported"
+                    "when": "Earlier this week",
+                    "what": "Nigeria confirmed its first case of the Bundibugyo strain of Ebola, in a woman returning from Uganda, the first case in west Africa.",
+                    "actor": "Nigerian authorities",
+                    "outlet": "Africanews",
+                    "type": "confirmation",
+                    "verification": "confirmed"
                   },
                   {
-                    "step": "Outbreak reaches a new country",
-                    "detail": "Nigeria's first case means the virus has now been reported there, which raises the chance of wider concern about movement of people between Nigeria and other countries.",
-                    "basis": "reported"
+                    "when": "Thursday (2026-10-22)",
+                    "what": "The WHO's Africa chief warned that the continent faces a complex Ebola outbreak after the virus crossed from east Africa to Nigeria.",
+                    "actor": "World Health Organization",
+                    "outlet": "France 24",
+                    "type": "action",
+                    "verification": "confirmed"
                   },
                   {
-                    "step": "Indian precautions may follow",
-                    "detail": "Indian authorities could consider health screening or advisories for travellers, which could affect Indians in Nigeria and passengers on routes linking India with West Africa.",
-                    "basis": "inferred"
+                    "when": "2026-10-23",
+                    "what": "Nigeria stepped up health screening for international arrivals, with passengers at Lagos airport queuing for temperature checks.",
+                    "actor": "Nigerian authorities",
+                    "outlet": "Africanews",
+                    "type": "action",
+                    "verification": "confirmed"
+                  },
+                  {
+                    "when": "2026-10-23",
+                    "what": "Swiss officials confirmed that the woman is the wife of a Swiss diplomat, and said her husband is in isolation but has no symptoms.",
+                    "actor": "Swiss officials",
+                    "outlet": "BBC News",
+                    "type": "confirmation",
+                    "verification": "confirmed"
                   }
                 ],
-                "breaks_if": "The outbreak stays confined to a small number of cases and Indian authorities judge that no special screening or travel advisories are needed."
+                "current_status": "Nigeria has one confirmed Bundibugyo Ebola case, the WHO has warned of a complex outbreak, and Nigeria has stepped up airport screening while the patient's husband remains isolated without symptoms.",
+                "open_questions": [
+                  "Has the virus spread to any of the woman's contacts in Nigeria or elsewhere?",
+                  "How large is the outbreak in east Africa, where the woman was travelling from Uganda?",
+                  "Will other countries, including India, introduce screening for travellers from affected countries?"
+                ]
+              },
+              "scenarios": {
+                "question": "Will Nigeria's first Ebola case remain isolated, or will the virus spread further in west Africa?",
+                "scenarios": [
+                  {
+                    "name": "Single case contained",
+                    "what": "The woman's case remains the only one in Nigeria, her husband and other contacts stay free of symptoms, and screening stops further imported cases.",
+                    "signal": "Nigerian and Swiss officials report no new cases among contacts, and the isolated husband remains symptom-free.",
+                    "india_effect": "Effects on India would likely stay minimal, perhaps limited to precautionary health checks for some arriving travellers."
+                  },
+                  {
+                    "name": "Wider west African spread",
+                    "what": "Further cases appear in Nigeria or neighbouring countries, deepening the complex outbreak the WHO has warned of.",
+                    "signal": "The WHO or Nigerian authorities confirm new Ebola cases beyond the first patient, especially without travel links to Uganda.",
+                    "india_effect": "India could tighten airport screening and issue travel advisories, which may affect Indians working in Nigeria and travellers on routes to west Africa."
+                  }
+                ]
               }
             }
           },
@@ -26304,12 +26739,206 @@
               "ogTried": true,
               "descTried": true,
               "image": "https://images.euronews.com/articles/stories/09/96/34/47/1024x538_cmsv2_4c51cd92-cd32-5dca-9c2e-207d77989596-9963447.jpg"
+            },
+            {
+              "source": "scmp",
+              "headline": "WHO warns Africa faces ‘complex’ Ebola outbreak as virus reaches Nigeria",
+              "url": "https://www.scmp.com/news/world/africa/article/3371887/who-warns-africa-faces-complex-ebola-outbreak-virus-reaches-nigeria",
+              "date": "2026-10-23T06:49:24.000Z",
+              "kind": "breaking",
+              "summary": "The World Health Organization has warned that Africa faced a “complex” Ebola outbreak after the virus crossed from east Africa to Nigeria, marking the first case in the west of the continent.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/23/bee9e113-5dca-448f-b559-95c6c84d04ca_231a5c2b.jpg?itok=aYZVsiZb&v=1792738158"
+            },
+            {
+              "source": "france24",
+              "headline": "Africa faces 'complex' Ebola outbreak after spread to Nigeria: WHO",
+              "url": "https://www.france24.com/en/africa-faces-complex-ebola-outbreak-after-spread-to-nigeria-who",
+              "date": "2026-10-23T08:28:09.000Z",
+              "kind": "hard",
+              "summary": "The World Health Organization warned Thursday that Africa faced a \"complex\" Ebola outbreak after the virus crossed from east Africa to Nigeria, marking the first case in the west of the continent.",
+              "summaryV": 3,
+              "image": "https://s.france24.com/media/display/b7e9f0b4-ceba-11f1-9d55-5b4a75578ebb/w:1024/p:16x9/EN-20261023-082125-082315-CS.jpg"
+            },
+            {
+              "source": "africanews",
+              "headline": "Nigeria steps up airport health screenings over Ebola fears",
+              "url": "http://www.africanews.com/2026/10/23/nigeria-steps-up-airport-health-screenings-over-ebola-fears/",
+              "date": "2026-10-23T09:42:51.000Z",
+              "kind": "hard",
+              "summary": "Passengers arriving at Lagos airport queue for temperature checks as Nigeria steps up health screening protocols for international arrivals. The country confirmed its first case of the Bundibugyo strain of Ebola earlier this week in a woman returning from Uganda.",
+              "summaryV": 3
+            },
+            {
+              "source": "bbc",
+              "headline": "Woman with Ebola in Nigeria confirmed as wife of Swiss diplomat",
+              "url": "https://www.bbc.co.uk/news/articles/cmwy4wlzqz3zo",
+              "date": "2026-10-23T10:14:33.000Z",
+              "kind": "breaking",
+              "summary": "Her husband is currently in isolation but has not developed any symptoms, Swiss officials say.",
+              "summaryV": 3,
+              "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/bc0c/live/cdfdf700-ce98-11f1-a6ca-3fa3d92134e2.jpg",
+              "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/bc0c/live/cdfdf700-ce98-11f1-a6ca-3fa3d92134e2.jpg"
             }
           ],
           "finChecked": true,
           "image": "https://images.euronews.com/articles/stories/09/96/34/47/1024x538_cmsv2_4c51cd92-cd32-5dca-9c2e-207d77989596-9963447.jpg",
-          "priority": 65,
+          "priority": 80,
           "thread": "t1ye80mu"
+        },
+        {
+          "id": "s1ooesay",
+          "headline": "Kremlin says 'ready' to resume 3-way talks with US and Ukraine mid-November",
+          "url": "https://www.france24.com/en/kremlin-says-ready-to-resume-3-way-talks-with-us-and-ukraine-mid-november",
+          "source": "france24",
+          "date": "2026-10-21T15:51:32.000Z",
+          "relevance": "medium",
+          "image": "https://s.france24.com/media/display/0898c536-cd66-11f1-87a1-4da0d2c6855d/w:1024/p:16x9/capture-404e6bea.jpg",
+          "why": "Russia agreed to resume three-way talks with Ukraine and the United States after President Putin met US envoy Steve Witkoff. The war stays at a high level, and its effect on India runs mainly through energy markets.",
+          "implications": [
+            "The reports give different timing, with the Kremlin saying mid-November and Ukraine preferring early November, so the start of talks is not yet fixed.",
+            "Talks agreed in principle do not stop strikes on energy sites, so any effect on global oil supply and prices depends on what happens on the battlefield."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-23T05:10:02.657Z",
+            "tier": "quick",
+            "primary": "escalation",
+            "complement": null,
+            "features": [
+              "armed_conflict",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The channel is global oil and energy prices, which depend on the war's effect on Russian energy facilities. The reports describe talks, not a change in supply, so exposure is moderate."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Talks are expected in early or mid-November, so any change in the war's course would come after that."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "All three reports come from France 24, though they cite on-record statements from the Kremlin and President Zelenskiy, and the dates for the talks differ."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "fuel price pressure",
+                "effect": "If talks lowered strikes on energy sites, global oil prices could ease; continued strikes could keep them elevated, which would reach Indian fuel costs through import prices.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "energy import costs",
+                "effect": "Importers of crude and energy-linked goods face costs that depend on whether the war's strikes on energy infrastructure continue or ease.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Whether three-way talks between Russian, Ukrainian and US negotiators actually take place",
+                "why": "It would show whether the diplomatic track is moving beyond statements of readiness.",
+                "when": "Early to mid-November 2026",
+                "where": ""
+              }
+            ],
+            "context": [
+              "India imports most of its crude oil, so strikes on oil depots and power infrastructure in a major producing region can influence the global prices Indian consumers and refiners face."
+            ],
+            "terms": [
+              {
+                "term": "trilateral talks",
+                "meaning": "Negotiations involving three parties, here Russia, Ukraine and the United States, rather than two sides alone."
+              }
+            ],
+            "frameworks": {
+              "escalation": {
+                "move": "none",
+                "rung": 6,
+                "current_rung": 6,
+                "previous_rung": null,
+                "development": "Russia said it is ready to resume three-way talks with Ukraine and the United States, and Ukraine said it supports the US proposal, after Putin met US envoy Steve Witkoff.",
+                "evidence": "The reports describe agreement to talk and a proposal, not a ceasefire in force, a withdrawal or an end to fighting, so the war stays at the rung set on 18 October.",
+                "next_signals": [
+                  {
+                    "rung": 5,
+                    "signal": "A ceasefire or halt to strikes on each other's power and oil infrastructure being reported as in force."
+                  },
+                  {
+                    "rung": 7,
+                    "signal": "Either side announcing a general mobilisation or launching a new large-scale offensive across the front."
+                  }
+                ],
+                "india_channels": [
+                  "oil",
+                  "trade"
+                ],
+                "conflict": "wzti51f",
+                "applied": "none",
+                "from": 6
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "france24",
+              "headline": "Kremlin says 'ready' to resume 3-way talks with US and Ukraine mid-November",
+              "url": "https://www.france24.com/en/kremlin-says-ready-to-resume-3-way-talks-with-us-and-ukraine-mid-november",
+              "date": "2026-10-21T15:51:32.000Z",
+              "kind": "hard",
+              "summary": "Moscow is ready to resume trilateral US-Ukraine-Russia talks next month, the Kremlin said Wednesday after President Vladimir Putin met with US envoy Steve Witkoff in Russia. FRANCE 24's correspondent Gulliver Cragg has more.",
+              "summaryV": 3,
+              "image": "https://s.france24.com/media/display/0898c536-cd66-11f1-87a1-4da0d2c6855d/w:1024/p:16x9/capture-404e6bea.jpg"
+            },
+            {
+              "source": "france24",
+              "headline": "Putin agrees to resume three-way talks with Kyiv and Washington",
+              "url": "https://www.france24.com/en/putin-agrees-to-resume-three-way-talks-with-kyiv-and-washington",
+              "date": "2026-10-21T19:32:52.000Z",
+              "kind": "hard",
+              "summary": "President ⁠Volodymyr Zelenskiy ​said on Wednesday ​that Ukraine supported a US proposal for ​three-way talks ‌with Russia ⁠and the United ‌States at the level ⁠of negotiators to be held as soon ​as possible, preferably ‌no later than early November.",
+              "summaryV": 3,
+              "image": "https://s.france24.com/media/display/a08fd0b8-cd85-11f1-b980-4da0d2c6855d/w:1024/p:16x9/EN-20261021-210107-211150-CS.jpg"
+            },
+            {
+              "source": "france24",
+              "headline": "Russia agrees to resume trilateral peace talks on Ukraine war",
+              "url": "https://www.france24.com/en/russia-agrees-to-resume-trilateral-peace-talks-on-ukraine-war",
+              "date": "2026-10-22T14:19:27.000Z",
+              "kind": "hard",
+              "summary": "A US envoy met Putin in Saint Petersburg on Wednesday after the Kremlin agreed to resume peace talks with Ukraine and the United States. Details by FRANCE 24's correspondent Gulliver Cragg.",
+              "summaryV": 3,
+              "image": "https://s.france24.com/media/display/6eda9058-cd3f-11f1-84de-8bea73bbe173/w:1024/p:16x9/2026-10-21T102625Z-722811654-RC2M7OATXY8O-RTRMADP-3-UKRAINE-CRISIS-PUTIN-WITKOFF.jpg"
+            },
+            {
+              "source": "france24",
+              "headline": "Russia ready for talks on plans for final Ukraine deal, not truce: Putin",
+              "url": "https://www.france24.com/en/russia-ready-for-talks-on-plans-for-final-ukraine-deal-not-truce-putin",
+              "date": "2026-10-23T08:00:49.000Z",
+              "kind": "hard",
+              "summary": "Russia is ready to resume three-way talks with Ukraine and the United States, but on the security parameters of a final peace d al and not a \"short\" ceasefire, President Vladimir Putin said Thursday.",
+              "summaryV": 3,
+              "image": "https://s.france24.com/media/display/816265c0-ceb6-11f1-9f1a-bba4eee3dc72/w:1024/p:16x9/EN-20261023-081004-081155-CS.jpg"
+            }
+          ],
+          "thread": "tq9ru94",
+          "conflict": "wzti51f",
+          "finChecked": true,
+          "place": {
+            "name": "Moscow",
+            "country": "Russia",
+            "lat": 55.76,
+            "lon": 37.62,
+            "involves": [
+              "United States",
+              "Ukraine"
+            ]
+          },
+          "priority": 60
         },
         {
           "id": "s1o32iuw",
@@ -26600,150 +27229,6 @@
           "finChecked": true,
           "priority": 65,
           "thread": "t1ye80mu"
-        },
-        {
-          "id": "s1ooesay",
-          "headline": "Kremlin says 'ready' to resume 3-way talks with US and Ukraine mid-November",
-          "url": "https://www.france24.com/en/kremlin-says-ready-to-resume-3-way-talks-with-us-and-ukraine-mid-november",
-          "source": "france24",
-          "date": "2026-10-21T15:51:32.000Z",
-          "relevance": "medium",
-          "image": "https://s.france24.com/media/display/0898c536-cd66-11f1-87a1-4da0d2c6855d/w:1024/p:16x9/capture-404e6bea.jpg",
-          "why": "Russia agreed to resume three-way talks with Ukraine and the United States after President Putin met US envoy Steve Witkoff. The war stays at a high level, and its effect on India runs mainly through energy markets.",
-          "implications": [
-            "The reports give different timing, with the Kremlin saying mid-November and Ukraine preferring early November, so the start of talks is not yet fixed.",
-            "Talks agreed in principle do not stop strikes on energy sites, so any effect on global oil supply and prices depends on what happens on the battlefield."
-          ],
-          "analysis": {
-            "v": 3,
-            "at": "2026-10-23T05:10:02.657Z",
-            "tier": "quick",
-            "primary": "escalation",
-            "complement": null,
-            "features": [
-              "armed_conflict",
-              "pending_outcome"
-            ],
-            "exposure": {
-              "level": "medium",
-              "reason": "The channel is global oil and energy prices, which depend on the war's effect on Russian energy facilities. The reports describe talks, not a change in supply, so exposure is moderate."
-            },
-            "horizon": {
-              "value": "weeks",
-              "reason": "Talks are expected in early or mid-November, so any change in the war's course would come after that."
-            },
-            "confidence": {
-              "level": "medium",
-              "reason": "All three reports come from France 24, though they cite on-record statements from the Kremlin and President Zelenskiy, and the dates for the talks differ."
-            },
-            "outlets": 1,
-            "affected": [
-              {
-                "group": "Fuel & LPG users",
-                "direction": "unclear",
-                "what": "fuel price pressure",
-                "effect": "If talks lowered strikes on energy sites, global oil prices could ease; continued strikes could keep them elevated, which would reach Indian fuel costs through import prices.",
-                "basis": "inferred"
-              },
-              {
-                "group": "Importers & traders",
-                "direction": "unclear",
-                "what": "energy import costs",
-                "effect": "Importers of crude and energy-linked goods face costs that depend on whether the war's strikes on energy infrastructure continue or ease.",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "Whether three-way talks between Russian, Ukrainian and US negotiators actually take place",
-                "why": "It would show whether the diplomatic track is moving beyond statements of readiness.",
-                "when": "Early to mid-November 2026",
-                "where": ""
-              }
-            ],
-            "context": [
-              "India imports most of its crude oil, so strikes on oil depots and power infrastructure in a major producing region can influence the global prices Indian consumers and refiners face."
-            ],
-            "terms": [
-              {
-                "term": "trilateral talks",
-                "meaning": "Negotiations involving three parties, here Russia, Ukraine and the United States, rather than two sides alone."
-              }
-            ],
-            "frameworks": {
-              "escalation": {
-                "move": "none",
-                "rung": 6,
-                "current_rung": 6,
-                "previous_rung": null,
-                "development": "Russia said it is ready to resume three-way talks with Ukraine and the United States, and Ukraine said it supports the US proposal, after Putin met US envoy Steve Witkoff.",
-                "evidence": "The reports describe agreement to talk and a proposal, not a ceasefire in force, a withdrawal or an end to fighting, so the war stays at the rung set on 18 October.",
-                "next_signals": [
-                  {
-                    "rung": 5,
-                    "signal": "A ceasefire or halt to strikes on each other's power and oil infrastructure being reported as in force."
-                  },
-                  {
-                    "rung": 7,
-                    "signal": "Either side announcing a general mobilisation or launching a new large-scale offensive across the front."
-                  }
-                ],
-                "india_channels": [
-                  "oil",
-                  "trade"
-                ],
-                "conflict": "wzti51f",
-                "applied": "none",
-                "from": 6
-              }
-            }
-          },
-          "reports": [
-            {
-              "source": "france24",
-              "headline": "Kremlin says 'ready' to resume 3-way talks with US and Ukraine mid-November",
-              "url": "https://www.france24.com/en/kremlin-says-ready-to-resume-3-way-talks-with-us-and-ukraine-mid-november",
-              "date": "2026-10-21T15:51:32.000Z",
-              "kind": "hard",
-              "summary": "Moscow is ready to resume trilateral US-Ukraine-Russia talks next month, the Kremlin said Wednesday after President Vladimir Putin met with US envoy Steve Witkoff in Russia. FRANCE 24's correspondent Gulliver Cragg has more.",
-              "summaryV": 3,
-              "image": "https://s.france24.com/media/display/0898c536-cd66-11f1-87a1-4da0d2c6855d/w:1024/p:16x9/capture-404e6bea.jpg"
-            },
-            {
-              "source": "france24",
-              "headline": "Putin agrees to resume three-way talks with Kyiv and Washington",
-              "url": "https://www.france24.com/en/putin-agrees-to-resume-three-way-talks-with-kyiv-and-washington",
-              "date": "2026-10-21T19:32:52.000Z",
-              "kind": "hard",
-              "summary": "President ⁠Volodymyr Zelenskiy ​said on Wednesday ​that Ukraine supported a US proposal for ​three-way talks ‌with Russia ⁠and the United ‌States at the level ⁠of negotiators to be held as soon ​as possible, preferably ‌no later than early November.",
-              "summaryV": 3,
-              "image": "https://s.france24.com/media/display/a08fd0b8-cd85-11f1-b980-4da0d2c6855d/w:1024/p:16x9/EN-20261021-210107-211150-CS.jpg"
-            },
-            {
-              "source": "france24",
-              "headline": "Russia agrees to resume trilateral peace talks on Ukraine war",
-              "url": "https://www.france24.com/en/russia-agrees-to-resume-trilateral-peace-talks-on-ukraine-war",
-              "date": "2026-10-22T14:19:27.000Z",
-              "kind": "hard",
-              "summary": "A US envoy met Putin in Saint Petersburg on Wednesday after the Kremlin agreed to resume peace talks with Ukraine and the United States. Details by FRANCE 24's correspondent Gulliver Cragg.",
-              "summaryV": 3,
-              "image": "https://s.france24.com/media/display/6eda9058-cd3f-11f1-84de-8bea73bbe173/w:1024/p:16x9/2026-10-21T102625Z-722811654-RC2M7OATXY8O-RTRMADP-3-UKRAINE-CRISIS-PUTIN-WITKOFF.jpg"
-            }
-          ],
-          "thread": "tq9ru94",
-          "conflict": "wzti51f",
-          "finChecked": true,
-          "place": {
-            "name": "Moscow",
-            "country": "Russia",
-            "lat": 55.76,
-            "lon": 37.62,
-            "involves": [
-              "United States",
-              "Ukraine"
-            ]
-          },
-          "priority": 60
         },
         {
           "id": "s1vyzdnu",
@@ -31892,16 +32377,15 @@
   "source": "BBC News & The Guardian & NPR & Al Jazeera & MercoPress & ABC News & The New York Times & CNBC & CBS News & DW & France 24 & Africanews & South China Morning Post & The Hindu & Mint",
   "lastRun": {
     "filter": {
-      "reject": 164,
-      "brief": 2,
-      "watch": 3,
+      "reject": 151,
+      "watch": 7,
       "analyse": 8
     },
     "watch": {
-      "checked": 0,
+      "checked": 1,
       "promoted": 0,
       "expired": 0,
-      "open": 1
+      "open": 2
     },
     "wars": {
       "linked": 0,
@@ -31909,54 +32393,56 @@
       "active": 6
     },
     "places": {
-      "labelled": 92,
-      "none": 28,
+      "labelled": 0,
+      "none": 2,
       "waiting": 0
     },
     "skipped": {
-      "since": "2026-10-22T21:55:44.132Z",
+      "since": "2026-10-23T05:10:28.068Z",
       "counts": {
-        "podcast_quiz_gallery": 2,
-        "live_blog": 2,
-        "section": 6
+        "section": 28,
+        "live_blog": 5,
+        "podcast_quiz_gallery": 1
       },
       "examples": {
-        "podcast_quiz_gallery": [
-          "Brazil’s election and the battle for the Amazon – podcast",
-          "What will Trump do if he loses in November? Your questions answered – podcast"
+        "section": [
+          "Doctors tell the BBC about the targeting of Sudanese hospitals by paramilitary fighters",
+          "Renting in London - 'I pay £2,000 for one bedroom'",
+          "BBC presenter battles strong winds as Storm Austen hits Newquay",
+          "‘Overnight, everything was dead’: the Teesside fisherman turned activist dubbed the Mr Bates of the seas",
+          "Week in wildlife: a bookworm bear, an angelic spider and a bald hedgehog"
         ],
         "live_blog": [
-          "Trump tells Iowa rally crowd he encouraged Ramaswamy to keep running widely criticized campaign ad – as it happened",
-          "Iran war live: Trump hints new strikes, says US knocked ‘hell out’ of Iran"
+          "France to deploy 70,000 officers as it braces for weekend of protests – Europe live",
+          "Reader Q&A: what’s next for France? Ask our Europe columnists",
+          "Andy Burnham warns of ‘winter of greater flooding’ – UK politics live",
+          "Trump to rally in Florida after stoking Ramaswamy ad furor – US politics live",
+          "Oil hits five-month high as global stocks wobble on AI fears; retail sales in Great Britain fall as shoppers cut back - "
         ],
-        "section": [
-          "In allowing coal expansion in the Hunter, Chris Minns is pouring fuel on the climate fire. His decision will come back t",
-          "Indian developer turns ‘Cockroach’ protests into video game",
-          "Tibet rocked by 7.0-magnitude earthquake",
-          "UK Conservative Party leader responds to Al Jazeera investigation",
-          "10/22: CBS Evening News"
+        "podcast_quiz_gallery": [
+          "Five homes in England to get sport lovers’ hearts racing – in pictures"
         ]
       }
     },
     "finance": {
       "moved": 0,
-      "checked": 3
+      "checked": 0
     },
-    "analysed": 177,
-    "added": 8,
-    "merged": 10,
-    "rejected": 159,
+    "analysed": 166,
+    "added": 3,
+    "merged": 15,
+    "rejected": 148,
     "failedBatches": 0,
     "feeds": {
       "bbc": {
         "feedsOk": 6,
         "feedsFailed": 0,
-        "items": 166
+        "items": 150
       },
       "guardian": {
         "feedsOk": 7,
         "feedsFailed": 0,
-        "items": 200
+        "items": 197
       },
       "npr": {
         "feedsOk": 4,
@@ -31966,7 +32452,7 @@
       "aljazeera": {
         "feedsOk": 1,
         "feedsFailed": 0,
-        "items": 18
+        "items": 10
       },
       "mercopress": {
         "feedsOk": 3,
@@ -31981,7 +32467,7 @@
       "nyt": {
         "feedsOk": 5,
         "feedsFailed": 0,
-        "items": 170
+        "items": 169
       },
       "cnbc": {
         "feedsOk": 3,
@@ -31991,12 +32477,12 @@
       "cbs": {
         "feedsOk": 2,
         "feedsFailed": 0,
-        "items": 44
+        "items": 46
       },
       "dw": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 32
+        "items": 31
       },
       "france24": {
         "feedsOk": 3,
@@ -32011,22 +32497,22 @@
       "scmp": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 142
+        "items": 144
       }
     },
     "shareImages": {
-      "tried": 3,
-      "found": 3,
+      "tried": 2,
+      "found": 2,
       "summaries": 0
     },
     "threads": {
-      "assigned": 8,
-      "created": 2,
+      "assigned": 3,
+      "created": 1,
       "failedBatches": 0
     },
     "summaries": {
-      "written": 6,
-      "due": 6
+      "written": 2,
+      "due": 2
     },
     "kinds": {
       "labelled": 0,
@@ -32039,74 +32525,47 @@
       "failedBatches": 0
     },
     "stats": {
-      "searched": 3,
-      "found": 1,
+      "searched": 1,
+      "found": 0,
       "reused": 1,
-      "none": 1,
+      "none": 0,
       "failed": 0,
-      "proposed": 6,
+      "proposed": 0,
       "droppedPoints": 0,
-      "pagesFetched": 2,
+      "pagesFetched": 0,
       "samples": [
         {
-          "headline": "Websites taken down worldwide as critical cyber-security update issued",
+          "headline": "Iran, Taunting Trump Over Gas Prices, Braces for Aftermath of Midterm Elections",
           "result": "reused saved series"
-        },
-        {
-          "headline": "Two killed in attack on airport in eastern Saudi Arabia, authorities say",
-          "result": "no saved series; search kept for in-depth stories"
-        },
-        {
-          "headline": "US orders departure of personnel from Saudi Arabia, citing Houthi threat",
-          "result": "chart",
-          "proposed": 6,
-          "checked": 6,
-          "pagesFetched": 2
         }
       ]
     },
     "models": {
       "filter": {
         "model": "claude-haiku-5-5",
-        "calls": 20,
-        "inputTokens": 93551,
-        "outputTokens": 48085,
-        "cost": 0.0334
-      },
-      "analysis_quick": {
-        "model": "claude-sonnet-5-5",
-        "calls": 5,
-        "inputTokens": 16674,
-        "outputTokens": 16174,
-        "cost": 0.195
-      },
-      "stats": {
-        "model": "claude-sonnet-5-5",
-        "calls": 1,
-        "inputTokens": 96756,
-        "outputTokens": 1340,
-        "searches": 2,
-        "fetches": 2,
-        "cost": 0.2269
+        "calls": 11,
+        "inputTokens": 68781,
+        "outputTokens": 32750,
+        "cost": 0.0232
       },
       "analysis": {
         "model": "claude-opus-5-5",
-        "calls": 1,
-        "inputTokens": 4416,
-        "outputTokens": 5146,
-        "cost": 0.1206
+        "calls": 2,
+        "inputTokens": 9412,
+        "outputTokens": 12553,
+        "cost": 0.2887
       },
       "threads": {
         "model": "claude-sonnet-5-5",
-        "calls": 7,
-        "inputTokens": 12867,
-        "outputTokens": 2520,
-        "cost": 0.051
+        "calls": 3,
+        "inputTokens": 8223,
+        "outputTokens": 485,
+        "cost": 0.0213
       }
     },
     "spend": {
-      "thisDesk": 0.6269,
-      "today": 2.0034,
+      "thisDesk": 0.3333,
+      "today": 2.6694,
       "cap": 6
     }
   },
