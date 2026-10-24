@@ -2,12 +2,179 @@
   "schema": 4,
   "region": "India",
   "since": "2026-10-02",
-  "updatedAt": "2026-10-24T16:06:21.859Z",
+  "updatedAt": "2026-10-24T21:00:15.674Z",
   "sectors": [
     {
       "id": "energy",
       "name": "Energy",
       "items": [
+        {
+          "id": "s82d2if",
+          "headline": "Yemen's Houthi rebels claim new attacks on oil facilities and airports across Saudi Arabia",
+          "url": "https://www.france24.com/en/middle-east/20261024-yemen-s-houthi-rebels-claim-new-attacks-on-oil-facilities-and-airports-across-saudi-arabia",
+          "source": "france24",
+          "date": "2026-10-24T17:50:25.000Z",
+          "relevance": "medium",
+          "image": "https://s.france24.com/media/display/1192dd1a-cfd3-11f1-97a7-bdb9616e85cf/w:1024/p:16x9/King-Khalid-International-Airport.jpg",
+          "why": "Yemen's Houthi rebels say they attacked Saudi oil facilities, pipelines and airports on Saturday, but no damage has been confirmed. Any real disruption could raise the price India pays for Saudi crude and affect Indians who travel to or work in Saudi Arabia.",
+          "implications": [
+            "If Saudi oil facilities or pipelines are damaged, reduced exports could push up global crude prices, which would raise Indian refiners' costs and could feed through to petrol, diesel and LPG prices.",
+            "Attacks on Saudi airports could disrupt flights between India and Saudi Arabia, which Indian workers, their families and pilgrims depend on to travel.",
+            "Yemen's government says the Houthis also fired three ballistic missiles at coast guard sites in Aden, which suggests the fighting may be spreading to a coastline close to shipping lanes used by India-Europe trade.",
+            "ABC News reports that clashes between Saudi Arabia and the Houthis are intensifying, and a prolonged conflict could raise freight and insurance costs for Indian importers and exporters using Gulf and Red Sea routes."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-24T21:00:09.604Z",
+            "tier": "standard",
+            "primary": "disruption_map",
+            "complement": null,
+            "features": [
+              "disruption",
+              "armed_conflict",
+              "fast_moving",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "high",
+              "reason": "The claimed attacks target Saudi crude infrastructure, a top source of Indian oil imports, and airports used by many Indian workers and pilgrims, though the actual impact depends on unconfirmed damage."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Any effect on Indian fuel costs or travel depends on whether Saudi output or flights are actually disrupted, which the reports do not yet establish."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "France 24 and ABC News report the attacks only as Houthi claims; no Saudi confirmation of strikes or damage is cited, and the Aden account comes from Yemen's government."
+            },
+            "outlets": 2,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "up",
+                "what": "fuel price risk",
+                "effect": "If Saudi oil supply is disrupted, higher crude prices could raise refiners' costs and may eventually increase what Indian households pay for petrol, diesel and LPG.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Gulf & overseas workers and families",
+                "direction": "unclear",
+                "what": "safety and travel",
+                "effect": "Indians working in Saudi Arabia and their families in India could face safety concerns and disrupted travel if attacks on airports and oil sites continue.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Travellers & pilgrims",
+                "direction": "unclear",
+                "what": "flight availability",
+                "effect": "Attacks on Saudi airports could lead to flight delays or cancellations for Indian travellers and pilgrims flying to Saudi Arabia.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Saudi official confirmation or denial of damage to oil facilities, pipelines or airports",
+                "why": "Confirmed damage would show whether the claimed attacks actually threaten Saudi oil exports or flight operations.",
+                "when": "",
+                "where": "Saudi Press Agency"
+              },
+              {
+                "what": "Movement in global benchmark crude oil prices following the claimed attacks",
+                "why": "A sustained rise would indicate that markets expect supply losses, which would raise India's oil import costs.",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "Travel or safety advisories for Indians in Saudi Arabia",
+                "why": "An advisory would signal that Indian authorities judge the risk to Indian nationals or flights to be rising.",
+                "when": "",
+                "where": "Embassy of India, Riyadh; Ministry of External Affairs"
+              }
+            ],
+            "context": [
+              "India imports most of the crude oil it uses, and Saudi Arabia has long been one of its largest suppliers, so supply shocks there tend to show up quickly in India's import bill.",
+              "Saudi Arabia hosts one of the largest communities of Indian workers abroad, and many Indians travel there each year for the Haj and Umrah pilgrimages.",
+              "In earlier phases of the Yemen conflict, Houthi-claimed strikes on Saudi energy sites have at times briefly disrupted output and lifted global oil prices."
+            ],
+            "terms": [
+              {
+                "term": "Houthi",
+                "meaning": "An Iran-allied rebel movement that controls much of northern Yemen and has been fighting Yemen's Saudi-backed government and Saudi Arabia."
+              }
+            ],
+            "frameworks": {
+              "disruption_map": {
+                "node": {
+                  "name": "Saudi oil facilities, pipelines and airports",
+                  "type": "other",
+                  "status": "unknown",
+                  "as_of": "Saturday, 2026-10-24, as reported"
+                },
+                "cause": {
+                  "text": "Yemen's Iran-allied Houthi rebels say they launched attacks, in what they describe as phases, on Saudi oil facilities, pipelines and airports amid intensifying clashes with Saudi Arabia.",
+                  "status": "claimed"
+                },
+                "flows": [
+                  {
+                    "flow": "crude",
+                    "india_link": "Saudi Arabia is a major supplier of crude oil to Indian refiners, so damage to its oil facilities or pipelines could tighten supply and raise costs for India's fuel sector.",
+                    "basis": "inferred"
+                  },
+                  {
+                    "flow": "air passengers",
+                    "india_link": "Saudi airports handle many Indian workers, their families and pilgrims, who could face delays or cancellations if the attacks disrupt airport operations.",
+                    "basis": "inferred"
+                  }
+                ],
+                "alternatives": [],
+                "duration": "not reported"
+              }
+            }
+          },
+          "place": {
+            "name": "Saudi Arabia",
+            "country": "Saudi Arabia",
+            "lat": 24.7,
+            "lon": 46.7,
+            "involves": [
+              "Yemen"
+            ]
+          },
+          "stage": "analyse",
+          "filter": {
+            "verdict": "analyse",
+            "channel": "prices_supply",
+            "status": "done",
+            "effect": "high",
+            "reach": "national",
+            "reason": "Houthi strikes on Saudi oil facilities threaten crude supply India imports.",
+            "at": "2026-10-24T20:59:19.642Z"
+          },
+          "reports": [
+            {
+              "source": "france24",
+              "headline": "Yemen's Houthi rebels claim new attacks on oil facilities and airports across Saudi Arabia",
+              "url": "https://www.france24.com/en/middle-east/20261024-yemen-s-houthi-rebels-claim-new-attacks-on-oil-facilities-and-airports-across-saudi-arabia",
+              "date": "2026-10-24T17:50:25.000Z",
+              "kind": "hard",
+              "summary": "Yemen’s Iran-allied Houthi rebels said they launched attacks at Saudi oil facilities and airports on Saturday while Yemen’s Saudi-backed government ​said the ‌group also fired three ballistic missiles at coast guard sites in ⁠the port city of Aden.",
+              "summaryV": 3,
+              "image": "https://s.france24.com/media/display/1192dd1a-cfd3-11f1-97a7-bdb9616e85cf/w:1024/p:16x9/King-Khalid-International-Airport.jpg"
+            },
+            {
+              "source": "abc",
+              "headline": "Houthis claim 'phases' of attacks on Saudi airports, oil pipelines",
+              "url": "https://www.abc.net.au/news/2026-10-25/houthis-claim-attacks-on-saudi-airports-oil-pipelines/107305824",
+              "date": "2026-10-24T19:25:25.000Z",
+              "kind": "hard",
+              "summary": "Yemen's Iran-allied Houthis say they have launched attacks at airports and oil facilities, as clashes between Saudi Arabia and the militant group intensify.",
+              "summaryV": 3,
+              "image": "https://live-production.wcms.abc-cdn.net.au/c1a0b5233b0ebceca8569333d7d301fc?impolicy=wcms_crop_resize&cropH=2714&cropW=4825&xPos=88&yPos=0&width=862&height=485"
+            }
+          ],
+          "priority": 90,
+          "thread": "tq5ix5r"
+        },
         {
           "id": "s1hx6f8",
           "headline": "Two 'unauthorised' oil tankers struck in Strait of Hormuz, Iran says",
@@ -34132,9 +34299,8 @@
   "source": "BBC News & The Guardian & NPR & Al Jazeera & MercoPress & ABC News & The New York Times & CNBC & CBS News & DW & France 24 & Africanews & South China Morning Post & The Hindu & Mint",
   "lastRun": {
     "filter": {
-      "reject": 63,
-      "analyse": 2,
-      "watch": 2
+      "reject": 44,
+      "analyse": 2
     },
     "watch": {
       "checked": 0,
@@ -34148,40 +34314,39 @@
       "active": 6
     },
     "places": {
-      "labelled": 1,
-      "none": 1,
+      "labelled": 0,
+      "none": 0,
       "waiting": 0
     },
     "skipped": {
-      "since": "2026-10-24T11:19:11.426Z",
+      "since": "2026-10-24T16:06:21.859Z",
       "counts": {
-        "section": 23,
-        "live_blog": 4
+        "section": 7,
+        "live_blog": 3
       },
       "examples": {
         "section": [
-          "Watch as fire engulfs Hitler's mountaintop Eagle's Nest retreat",
-          "Amber weather warning as Storm Boelo hits Scotland",
-          "Sam Fender tells fans high ticket prices for Proper Massive tour are ‘getting changed’",
-          "Northern Olympics campaign to get £7m in Healey’s budget",
-          "Why Israeli tourists and investors are unsettling Cypriots"
+          "Fireworks and tear gas as protesters and riot police clash in Paris",
+          "Arsenal join Man City at Premier League summit, Spurs shock Chelsea 2-0",
+          "Thousands join Paris protests as authorities clamp down on disorder",
+          "Kim Jong Un crosses new bridge linking North Korea and China",
+          "Serbian elections: A country where students may actually take power"
         ],
         "live_blog": [
-          "Thousands march in Paris and other French cities as protests take place across Europe – Europe live",
-          "France protests live: 135 arrested as marches held under tight security",
-          "Live Updates: Protesters March in France Amid Heavy Security",
+          "Hundreds of thousands march in France as protests take place across Europe – as it happened",
+          "France Protest Updates: Hundreds of Thousands March Amid Heavy Security",
           "Here’s the latest."
         ]
       }
     },
     "finance": {
       "moved": 0,
-      "checked": 1
+      "checked": 0
     },
-    "analysed": 67,
-    "added": 3,
+    "analysed": 46,
+    "added": 1,
     "merged": 1,
-    "rejected": 63,
+    "rejected": 44,
     "failedBatches": 0,
     "feeds": {
       "bbc": {
@@ -34192,7 +34357,7 @@
       "guardian": {
         "feedsOk": 7,
         "feedsFailed": 0,
-        "items": 201
+        "items": 202
       },
       "npr": {
         "feedsOk": 4,
@@ -34202,7 +34367,7 @@
       "aljazeera": {
         "feedsOk": 1,
         "feedsFailed": 0,
-        "items": 11
+        "items": 12
       },
       "mercopress": {
         "feedsOk": 3,
@@ -34217,7 +34382,7 @@
       "nyt": {
         "feedsOk": 5,
         "feedsFailed": 0,
-        "items": 173
+        "items": 172
       },
       "cnbc": {
         "feedsOk": 3,
@@ -34227,7 +34392,7 @@
       "cbs": {
         "feedsOk": 2,
         "feedsFailed": 0,
-        "items": 48
+        "items": 49
       },
       "dw": {
         "feedsOk": 3,
@@ -34251,13 +34416,13 @@
       }
     },
     "shareImages": {
-      "tried": 3,
-      "found": 3,
+      "tried": 0,
+      "found": 0,
       "summaries": 0
     },
     "threads": {
-      "assigned": 3,
-      "created": 1,
+      "assigned": 1,
+      "created": 0,
       "failedBatches": 0
     },
     "summaries": {
@@ -34270,7 +34435,7 @@
       "failedBatches": 0
     },
     "frames": {
-      "done": 0,
+      "done": 1,
       "waiting": 0,
       "failedBatches": 0
     },
@@ -34288,29 +34453,36 @@
     "models": {
       "filter": {
         "model": "claude-haiku-5-5",
-        "calls": 6,
-        "inputTokens": 27241,
-        "outputTokens": 10465,
-        "cost": 0.0079
+        "calls": 4,
+        "inputTokens": 19022,
+        "outputTokens": 6879,
+        "cost": 0.0053
       },
       "analysis_quick": {
         "model": "claude-sonnet-5-5",
         "calls": 1,
-        "inputTokens": 2707,
-        "outputTokens": 2107,
-        "cost": 0.0265
+        "inputTokens": 2875,
+        "outputTokens": 2490,
+        "cost": 0.0306
+      },
+      "analysis": {
+        "model": "claude-opus-5-5",
+        "calls": 1,
+        "inputTokens": 3002,
+        "outputTokens": 3987,
+        "cost": 0.0917
       },
       "threads": {
         "model": "claude-sonnet-5-5",
         "calls": 2,
-        "inputTokens": 10131,
-        "outputTokens": 1083,
-        "cost": 0.0311
+        "inputTokens": 7845,
+        "outputTokens": 470,
+        "cost": 0.0204
       }
     },
     "spend": {
-      "thisDesk": 0.0655,
-      "today": 1.7969,
+      "thisDesk": 0.1481,
+      "today": 0.1481,
       "cap": 6
     }
   },
