@@ -2,7 +2,7 @@
   "schema": 4,
   "region": "India",
   "since": "2026-10-02",
-  "updatedAt": "2026-10-24T11:19:11.426Z",
+  "updatedAt": "2026-10-24T16:06:21.859Z",
   "sectors": [
     {
       "id": "energy",
@@ -12382,6 +12382,168 @@
       "name": "Logistics & Shipping",
       "items": [
         {
+          "id": "sryjdeo",
+          "headline": "Why popular airplanes are getting scrapped years early",
+          "url": "https://www.cnbc.com/2026/10/24/spirit-airlines-planes-scrapped-engine-shortage.html",
+          "source": "cnbc",
+          "date": "2026-10-24T15:18:30.000Z",
+          "relevance": "medium",
+          "why": "CNBC reports that popular passenger aircraft are being dismantled for parts years ahead of schedule because engines and other components are scarce. Indian airlines and flyers could feel this if the squeeze limits the aircraft available.",
+          "implications": [
+            "Planes taken apart early for spares leave fewer aircraft available to fly, so airlines may find it harder to add seats or replace ageing planes.",
+            "If Indian carriers cannot get enough engines or parts, some of their aircraft could stay grounded, which may reduce flight choice and keep fares firm on busy routes."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-24T16:06:08.002Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "medium",
+              "reason": "The effect would reach India through airline fleets and seat supply, which matter to air travellers but form one industry rather than a household essential. The reports do not mention Indian carriers directly."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Timing depends on how long engine and parts supply takes to recover, which the report does not say, and fleet changes usually play out over months."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single CNBC summary with no named official source, and it does not say whether Indian airlines are affected."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Travellers & pilgrims",
+                "direction": "down",
+                "what": "flight availability",
+                "effect": "If airlines have fewer working aircraft because parts are scarce, there could be fewer seats on some routes and firmer fares for Indian passengers.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Indian airlines reporting grounded aircraft or delayed fleet additions because of engine or spare-parts shortages",
+                "why": "It would show whether the global parts shortage is actually cutting seat capacity in India.",
+                "when": "",
+                "where": "Directorate General of Civil Aviation (DGCA)"
+              }
+            ],
+            "context": [
+              "India imports nearly all of its commercial aircraft and engines, and many Indian airlines lease their planes. Their fleets therefore depend on global supplies of engines, spare parts and repair capacity."
+            ],
+            "terms": [
+              {
+                "term": "dismantled for parts",
+                "meaning": "An aircraft is taken apart so that its engines and components can be reused as spares to keep other aircraft flying."
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Engines and components run short",
+                    "detail": "CNBC reports that engines and other aircraft components are in short supply, so operators cannot easily get the parts needed to keep planes flying.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Planes are scrapped years early for parts",
+                    "detail": "Because new parts are hard to find, aircraft are being dismantled well before their planned retirement so that their components can serve as spares.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Fewer aircraft for Indian routes",
+                    "detail": "A smaller usable global fleet could leave Indian carriers, which import and lease most of their planes, with less capacity. That may limit flight choice and push fares up.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "Engine and parts supply recovers quickly, or Indian carriers' fleets do not rely on the aircraft types being scrapped, so their capacity is not constrained."
+              }
+            }
+          },
+          "stage": "analyse",
+          "filter": {
+            "verdict": "analyse",
+            "channel": "business_shocks",
+            "status": "done",
+            "effect": "medium",
+            "reach": "national",
+            "reason": "Engine shortages force early retirement of popular jets, squeezing airline capacity.",
+            "at": "2026-10-24T16:06:08.003Z"
+          },
+          "reports": [
+            {
+              "source": "cnbc",
+              "headline": "Why popular airplanes are getting scrapped years early",
+              "url": "https://www.cnbc.com/2026/10/24/spirit-airlines-planes-scrapped-engine-shortage.html",
+              "date": "2026-10-24T15:18:30.000Z",
+              "kind": "hard",
+              "summary": "Airplanes are getting dismantled for parts years ahead of schedule because engines and other components are in short supply.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://image.cnbcfm.com/api/v1/image/108452656-carbon_scrap.jpg?v=1792780124&w=1920&h=1080"
+            }
+          ],
+          "placeTried": true,
+          "image": "https://image.cnbcfm.com/api/v1/image/108452656-carbon_scrap.jpg?v=1792780124&w=1920&h=1080",
+          "priority": 65,
+          "thread": "t1qkaj1z"
+        },
+        {
+          "id": "s15zk5wn",
+          "headline": "Iran says won’t allow US warships to get close as Trump ponders new attacks",
+          "url": "https://www.aljazeera.com/news/2026/10/24/iran-says-wont-allow-us-warships-to-get-close-as-trump-ponders-new-attacks",
+          "source": "aljazeera",
+          "date": "2026-10-24T13:06:03.000Z",
+          "relevance": "medium",
+          "why": "",
+          "implications": [],
+          "place": {
+            "name": "Strait of Hormuz",
+            "country": "Iran",
+            "lat": 26.6,
+            "lon": 56.3,
+            "involves": [
+              "United States"
+            ]
+          },
+          "stage": "watch",
+          "filter": {
+            "verdict": "watch",
+            "channel": "routes_security",
+            "status": "intention",
+            "effect": "low",
+            "reach": "regional",
+            "grows_if": "US launches new strikes on Iran or ships are attacked in the Strait of Hormuz",
+            "reason": "Trump weighing new attacks on Iran threatens Gulf shipping, but no action taken yet",
+            "at": "2026-10-24T16:05:38.568Z"
+          },
+          "watch": {
+            "grows_if": "US launches new strikes on Iran or ships are attacked in the Strait of Hormuz",
+            "since": "2026-10-24T16:05:38.568Z",
+            "expires": "2026-10-31T16:05:38.568Z"
+          },
+          "reports": [
+            {
+              "source": "aljazeera",
+              "headline": "Iran says won’t allow US warships to get close as Trump ponders new attacks",
+              "url": "https://www.aljazeera.com/news/2026/10/24/iran-says-wont-allow-us-warships-to-get-close-as-trump-ponders-new-attacks",
+              "date": "2026-10-24T13:06:03.000Z",
+              "kind": "hard",
+              "summary": "Iranian officials, media and analysts sense war is closer, but signal there will be no backing down.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/reuters_6adcacbb-1792847035.jpg?resize=1920%2C1440"
+            }
+          ],
+          "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/reuters_6adcacbb-1792847035.jpg?resize=1920%2C1440",
+          "priority": 30,
+          "thread": "t2ogxay"
+        },
+        {
           "id": "s1sqkokw",
           "headline": "Romania blames Russia after drone sinks ship in the Black Sea",
           "url": "https://www.aljazeera.com/news/2026/10/23/romania-blames-russia-after-drone-sinks-ship-in-the-black-sea",
@@ -23790,6 +23952,76 @@
       "name": "Technology",
       "items": [
         {
+          "id": "s1qnkhzd",
+          "headline": "Singapore pushes for quick action on PHP security flaws as hackers prowl",
+          "url": "https://www.scmp.com/news/asia/southeast-asia/article/3371820/singapore-pushes-quick-action-php-security-flaws-hackers-prowl",
+          "source": "scmp",
+          "date": "2026-10-22T13:58:28.000Z",
+          "relevance": "medium",
+          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/22/c3ddfb2c-e673-4090-b7c2-efd996f5845e_ed325a29.jpg?itok=c6vb4ImW&v=1792677507",
+          "why": "",
+          "implications": [],
+          "stage": "brief",
+          "filter": {
+            "verdict": "brief",
+            "channel": "tech_standards",
+            "status": "done",
+            "effect": "low",
+            "reach": "sector",
+            "reason": "Cyber flaw alert in a widely used language; limited effect on Indian firms.",
+            "at": "2026-10-23T05:03:53.881Z"
+          },
+          "reports": [
+            {
+              "source": "scmp",
+              "headline": "Singapore pushes for quick action on PHP security flaws as hackers prowl",
+              "url": "https://www.scmp.com/news/asia/southeast-asia/article/3371820/singapore-pushes-quick-action-php-security-flaws-hackers-prowl",
+              "date": "2026-10-22T13:58:28.000Z",
+              "kind": "hard",
+              "summary": "Organisations in Singapore have been urged to immediately fix two critical security flaws in a widely used programming language amid reports of widespread attempts by hackers to exploit the vulnerabilities.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/22/c3ddfb2c-e673-4090-b7c2-efd996f5845e_ed325a29.jpg?itok=c6vb4ImW&v=1792677507"
+            },
+            {
+              "source": "bbc",
+              "headline": "'It's been relentless' say IT workers on frontline of PHP cyber-security scramble",
+              "url": "https://www.bbc.co.uk/news/articles/cxnv025d8qpmo",
+              "date": "2026-10-23T12:00:25.000Z",
+              "kind": "hard",
+              "summary": "IT and cyber experts have told the BBC about their struggles in the last 48 hours to update their systems.",
+              "summaryV": 3,
+              "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/61e6/live/e791c7d0-ced6-11f1-8507-45cb00a1c41c.jpg",
+              "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/61e6/live/e791c7d0-ced6-11f1-8507-45cb00a1c41c.jpg"
+            },
+            {
+              "source": "cnbc",
+              "headline": "AI's 'Black October': Critical PHP flaws set off global security scramble",
+              "url": "https://www.cnbc.com/2026/10/23/php-vulnerabilities-ai-cybersecurity.html",
+              "date": "2026-10-23T16:55:37.000Z",
+              "kind": "breaking",
+              "summary": "Governments and businesses around the globe are scrambling to contain the fallout after the PHP vulnerabilities leaked online.",
+              "summaryV": 3
+            },
+            {
+              "source": "npr",
+              "headline": "AI found the flaw. Hackers found the leak: The race to save 'PHP2SHELL'",
+              "url": "https://www.npr.org/2026/10/24/nx-s1-6012327/ai-found-the-flaw-hackers-found-the-leak-the-race-to-save-php2shell",
+              "date": "2026-10-24T11:42:09.000Z",
+              "kind": "breaking",
+              "summary": "AI discovered a vulnerability in part of the internet's architecture, called PHP2SHELL. Security researchers rushed to fix it, but news of the vulnerability leaked and hackers have swooped in.",
+              "summaryV": 3
+            }
+          ],
+          "place": {
+            "name": "Singapore",
+            "country": "Singapore",
+            "lat": 1.35,
+            "lon": 103.82
+          },
+          "priority": 40,
+          "thread": "t1b261c8"
+        },
+        {
           "id": "src1r30",
           "headline": "Typhoon Champi hits Taiwan, killing one and injuring hundreds",
           "url": "https://www.aljazeera.com/news/2026/10/23/typhoon-champi-hits-taiwan-killing-one-and-injuring-350",
@@ -24117,67 +24349,6 @@
               }
             ]
           }
-        },
-        {
-          "id": "s1qnkhzd",
-          "headline": "Singapore pushes for quick action on PHP security flaws as hackers prowl",
-          "url": "https://www.scmp.com/news/asia/southeast-asia/article/3371820/singapore-pushes-quick-action-php-security-flaws-hackers-prowl",
-          "source": "scmp",
-          "date": "2026-10-22T13:58:28.000Z",
-          "relevance": "medium",
-          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/22/c3ddfb2c-e673-4090-b7c2-efd996f5845e_ed325a29.jpg?itok=c6vb4ImW&v=1792677507",
-          "why": "",
-          "implications": [],
-          "stage": "brief",
-          "filter": {
-            "verdict": "brief",
-            "channel": "tech_standards",
-            "status": "done",
-            "effect": "low",
-            "reach": "sector",
-            "reason": "Cyber flaw alert in a widely used language; limited effect on Indian firms.",
-            "at": "2026-10-23T05:03:53.881Z"
-          },
-          "reports": [
-            {
-              "source": "scmp",
-              "headline": "Singapore pushes for quick action on PHP security flaws as hackers prowl",
-              "url": "https://www.scmp.com/news/asia/southeast-asia/article/3371820/singapore-pushes-quick-action-php-security-flaws-hackers-prowl",
-              "date": "2026-10-22T13:58:28.000Z",
-              "kind": "hard",
-              "summary": "Organisations in Singapore have been urged to immediately fix two critical security flaws in a widely used programming language amid reports of widespread attempts by hackers to exploit the vulnerabilities.",
-              "summaryV": 3,
-              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/22/c3ddfb2c-e673-4090-b7c2-efd996f5845e_ed325a29.jpg?itok=c6vb4ImW&v=1792677507"
-            },
-            {
-              "source": "bbc",
-              "headline": "'It's been relentless' say IT workers on frontline of PHP cyber-security scramble",
-              "url": "https://www.bbc.co.uk/news/articles/cxnv025d8qpmo",
-              "date": "2026-10-23T12:00:25.000Z",
-              "kind": "hard",
-              "summary": "IT and cyber experts have told the BBC about their struggles in the last 48 hours to update their systems.",
-              "summaryV": 3,
-              "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/61e6/live/e791c7d0-ced6-11f1-8507-45cb00a1c41c.jpg",
-              "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/61e6/live/e791c7d0-ced6-11f1-8507-45cb00a1c41c.jpg"
-            },
-            {
-              "source": "cnbc",
-              "headline": "AI's 'Black October': Critical PHP flaws set off global security scramble",
-              "url": "https://www.cnbc.com/2026/10/23/php-vulnerabilities-ai-cybersecurity.html",
-              "date": "2026-10-23T16:55:37.000Z",
-              "kind": "breaking",
-              "summary": "Governments and businesses around the globe are scrambling to contain the fallout after the PHP vulnerabilities leaked online.",
-              "summaryV": 3
-            }
-          ],
-          "place": {
-            "name": "Singapore",
-            "country": "Singapore",
-            "lat": 1.35,
-            "lon": 103.82
-          },
-          "priority": 35,
-          "thread": "t1b261c8"
         },
         {
           "id": "s1af3xhg",
@@ -27683,6 +27854,59 @@
       "id": "governance",
       "name": "Policy & Governance",
       "items": [
+        {
+          "id": "sv5g0wm",
+          "headline": "Is Iran planning attacks on Americans; why is the US on alert?",
+          "url": "https://www.aljazeera.com/news/2026/10/24/is-iran-planning-attacks-on-americans-why-is-the-us-on-alert",
+          "source": "aljazeera",
+          "date": "2026-10-24T12:51:21.000Z",
+          "relevance": "medium",
+          "why": "",
+          "implications": [],
+          "stage": "watch",
+          "filter": {
+            "verdict": "watch",
+            "channel": "routes_security",
+            "status": "done",
+            "effect": "low",
+            "reach": "regional",
+            "grows_if": "Iran carries out an attack on US citizens in a Gulf state",
+            "reason": "Intelligence warning of Iranian plots in Middle East; India effect indirect",
+            "at": "2026-10-24T16:05:24.986Z"
+          },
+          "watch": {
+            "grows_if": "Iran carries out an attack on US citizens in a Gulf state",
+            "since": "2026-10-24T16:05:24.986Z",
+            "expires": "2026-10-31T16:05:24.986Z"
+          },
+          "reports": [
+            {
+              "source": "aljazeera",
+              "headline": "Is Iran planning attacks on Americans; why is the US on alert?",
+              "url": "https://www.aljazeera.com/news/2026/10/24/is-iran-planning-attacks-on-americans-why-is-the-us-on-alert",
+              "date": "2026-10-24T12:51:21.000Z",
+              "kind": "hard",
+              "summary": "US intelligence memo warns that Iranian plots against US citizens in the Middle East 'have reached advanced stages'.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/epa_6ad49897d480-1792317591.jpg?resize=1920%2C1440"
+            }
+          ],
+          "finChecked": true,
+          "place": {
+            "name": "Tehran",
+            "country": "Iran",
+            "lat": 35.69,
+            "lon": 51.39,
+            "involves": [
+              "United States"
+            ]
+          },
+          "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/epa_6ad49897d480-1792317591.jpg?resize=1920%2C1440",
+          "priority": 35,
+          "thread": "t2ogxay"
+        },
         {
           "id": "s88ssr6",
           "headline": "New Tumaini Ebola vaccine trial launches in Bunia as DRC struggles",
@@ -33908,15 +34132,15 @@
   "source": "BBC News & The Guardian & NPR & Al Jazeera & MercoPress & ABC News & The New York Times & CNBC & CBS News & DW & France 24 & Africanews & South China Morning Post & The Hindu & Mint",
   "lastRun": {
     "filter": {
-      "reject": 103,
-      "watch": 2,
-      "analyse": 1
+      "reject": 63,
+      "analyse": 2,
+      "watch": 2
     },
     "watch": {
-      "checked": 1,
+      "checked": 0,
       "promoted": 0,
       "expired": 0,
-      "open": 8
+      "open": 10
     },
     "wars": {
       "linked": 0,
@@ -33924,33 +34148,29 @@
       "active": 6
     },
     "places": {
-      "labelled": 0,
-      "none": 0,
+      "labelled": 1,
+      "none": 1,
       "waiting": 0
     },
     "skipped": {
-      "since": "2026-10-24T04:52:32.927Z",
+      "since": "2026-10-24T11:19:11.426Z",
       "counts": {
-        "section": 19,
-        "live_blog": 4,
-        "podcast_quiz_gallery": 1
+        "section": 23,
+        "live_blog": 4
       },
       "examples": {
         "section": [
-          "The rise of AI election ads in US midterms campaign",
-          "Dónal Lunny, ‘colossus of Irish music’, dies aged 79",
-          "What essentials to keep, what rubbish to get rid of? Burnham, Badenoch, Farage don’t know either | Robert Hutton",
-          "Fine ‘headphone dodgers’ if you will, but to really tackle antisocial behaviour, Britain should look to Japan | Emily Br",
-          "Ethiopian PM’s advisor: Tigrayan forces and others hinder stability"
+          "Watch as fire engulfs Hitler's mountaintop Eagle's Nest retreat",
+          "Amber weather warning as Storm Boelo hits Scotland",
+          "Sam Fender tells fans high ticket prices for Proper Massive tour are ‘getting changed’",
+          "Northern Olympics campaign to get £7m in Healey’s budget",
+          "Why Israeli tourists and investors are unsettling Cypriots"
         ],
         "live_blog": [
-          "Protests begin across France, with shops, businesses and tourist sites closed – Europe live",
-          "Aston Villa vs Manchester City LIVE: Premier League",
-          "Live Updates: France Deploys Vast Security Force in Effort to Prevent More Riots",
+          "Thousands march in Paris and other French cities as protests take place across Europe – Europe live",
+          "France protests live: 135 arrested as marches held under tight security",
+          "Live Updates: Protesters March in France Amid Heavy Security",
           "Here’s the latest."
-        ],
-        "podcast_quiz_gallery": [
-          "“Culture is stagnant, so politics is stuck” – playwright James Graham | Radical Thinking – podcast"
         ]
       }
     },
@@ -33958,21 +34178,21 @@
       "moved": 0,
       "checked": 1
     },
-    "analysed": 106,
-    "added": 2,
-    "merged": 5,
-    "rejected": 99,
+    "analysed": 67,
+    "added": 3,
+    "merged": 1,
+    "rejected": 63,
     "failedBatches": 0,
     "feeds": {
       "bbc": {
         "feedsOk": 6,
         "feedsFailed": 0,
-        "items": 157
+        "items": 161
       },
       "guardian": {
         "feedsOk": 7,
         "feedsFailed": 0,
-        "items": 199
+        "items": 201
       },
       "npr": {
         "feedsOk": 4,
@@ -33982,7 +34202,7 @@
       "aljazeera": {
         "feedsOk": 1,
         "feedsFailed": 0,
-        "items": 13
+        "items": 11
       },
       "mercopress": {
         "feedsOk": 3,
@@ -33997,7 +34217,7 @@
       "nyt": {
         "feedsOk": 5,
         "feedsFailed": 0,
-        "items": 172
+        "items": 173
       },
       "cnbc": {
         "feedsOk": 3,
@@ -34012,12 +34232,12 @@
       "dw": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 32
+        "items": 31
       },
       "france24": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 79
+        "items": 78
       },
       "africanews": {
         "feedsOk": 1,
@@ -34027,22 +34247,22 @@
       "scmp": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 143
+        "items": 144
       }
     },
     "shareImages": {
-      "tried": 2,
-      "found": 2,
+      "tried": 3,
+      "found": 3,
       "summaries": 0
     },
     "threads": {
-      "assigned": 2,
-      "created": 0,
+      "assigned": 3,
+      "created": 1,
       "failedBatches": 0
     },
     "summaries": {
-      "written": 2,
-      "due": 2
+      "written": 1,
+      "due": 1
     },
     "kinds": {
       "labelled": 0,
@@ -34055,67 +34275,42 @@
       "failedBatches": 0
     },
     "stats": {
-      "searched": 3,
+      "searched": 0,
       "found": 0,
-      "reused": 2,
-      "none": 1,
+      "reused": 0,
+      "none": 0,
       "failed": 0,
       "proposed": 0,
       "droppedPoints": 0,
-      "pagesFetched": 1,
-      "samples": [
-        {
-          "headline": "Ebola Outbreak in Africa Reaches Widest Expansion Ever",
-          "result": "none",
-          "proposed": 0,
-          "checked": 0,
-          "pagesFetched": 1
-        },
-        {
-          "headline": "Critical web security flaws spark global alarm as Google, OpenAI and Amazon resp",
-          "result": "reused saved series"
-        },
-        {
-          "headline": "Kremlin says 'ready' to resume 3-way talks with US and Ukraine mid-November",
-          "result": "reused saved series"
-        }
-      ]
+      "pagesFetched": 0,
+      "samples": []
     },
     "models": {
       "filter": {
         "model": "claude-haiku-5-5",
-        "calls": 11,
-        "inputTokens": 48230,
-        "outputTokens": 15635,
-        "cost": 0.0127
+        "calls": 6,
+        "inputTokens": 27241,
+        "outputTokens": 10465,
+        "cost": 0.0079
       },
       "analysis_quick": {
         "model": "claude-sonnet-5-5",
         "calls": 1,
-        "inputTokens": 2864,
-        "outputTokens": 2476,
-        "cost": 0.0305
-      },
-      "stats": {
-        "model": "claude-sonnet-5-5",
-        "calls": 1,
-        "inputTokens": 69513,
-        "outputTokens": 747,
-        "searches": 2,
-        "fetches": 2,
-        "cost": 0.1665
+        "inputTokens": 2707,
+        "outputTokens": 2107,
+        "cost": 0.0265
       },
       "threads": {
         "model": "claude-sonnet-5-5",
-        "calls": 3,
-        "inputTokens": 10724,
-        "outputTokens": 1148,
-        "cost": 0.0329
+        "calls": 2,
+        "inputTokens": 10131,
+        "outputTokens": 1083,
+        "cost": 0.0311
       }
     },
     "spend": {
-      "thisDesk": 0.2426,
-      "today": 1.6147,
+      "thisDesk": 0.0655,
+      "today": 1.7969,
       "cap": 6
     }
   },
