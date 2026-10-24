@@ -2,12 +2,331 @@
   "schema": 4,
   "region": "India",
   "since": "2026-10-02",
-  "updatedAt": "2026-10-23T21:36:49.139Z",
+  "updatedAt": "2026-10-24T04:52:32.927Z",
   "sectors": [
     {
       "id": "energy",
       "name": "Energy",
       "items": [
+        {
+          "id": "s6n2u6j",
+          "headline": "US orders departure of personnel from Saudi Arabia, citing Houthi threat",
+          "url": "https://www.aljazeera.com/news/2026/10/21/us-orders-departure-of-personnel-from-saudi-arabia-citing-houthi-threat",
+          "source": "aljazeera",
+          "date": "2026-10-21T23:13:35.000Z",
+          "relevance": "medium",
+          "why": "The United States ordered non-emergency diplomats and families out of Saudi Arabia after Houthi strikes on an airport and an oil field killed at least three. Wider Gulf instability threatens India's oil supplies and its large workforce there.",
+          "implications": [
+            "The Guardian reports similar withdrawals from the UAE, Jordan, Qatar and Bahrain, countries that together host millions of Indian workers whose safety and remittances could be affected.",
+            "CNBC reports that the US is readying strikes on Iran after its midterm elections, which could widen the conflict to a region supplying much of India's oil and gas.",
+            "Strikes on Saudi oil fields may raise crude prices and freight insurance costs, which could increase India's import bill and pressure the rupee.",
+            "CBS News has learned that the US military is quietly reducing its footprint in the Middle East, suggesting Washington expects more attacks on Gulf sites."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-22T21:53:09.986Z",
+            "tier": "deep",
+            "primary": "disruption_map",
+            "complement": "escalation",
+            "features": [
+              "disruption",
+              "armed_conflict",
+              "fast_moving",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "high",
+              "reason": "The conflict reaches India through crude oil, a top import, and through the safety of the large Indian workforce in Saudi Arabia and neighbouring Gulf states."
+            },
+            "horizon": {
+              "value": "now",
+              "reason": "Near-daily attacks are under way and oil markets and worker safety respond immediately, although retail fuel price effects in India may take weeks."
+            },
+            "confidence": {
+              "level": "high",
+              "reason": "Seven outlets report the US State Department's on-record departure order; only the CNBC report of planned US strikes on Iran rests on unconfirmed reports."
+            },
+            "outlets": 6,
+            "affected": [
+              {
+                "group": "Gulf & overseas workers and families",
+                "direction": "down",
+                "what": "safety and job security",
+                "effect": "Indian workers in Saudi Arabia and neighbouring Gulf states could face greater danger and disruption as attacks continue and foreign governments withdraw staff.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Fuel & LPG users",
+                "direction": "up",
+                "what": "fuel price pressure",
+                "effect": "Attacks on Saudi oil fields could raise global crude prices, which may feed through to petrol, diesel and LPG costs in India.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Travellers & pilgrims",
+                "direction": "down",
+                "what": "flight availability",
+                "effect": "Strikes on Saudi airports could lead to flight cancellations or rerouting for Indians travelling to and from the kingdom.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Government finances",
+                "direction": "down",
+                "what": "oil import bill",
+                "effect": "Higher crude prices would raise India's import bill and could pressure fuel subsidy and tax decisions.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "US military strikes on Iran following the US midterm elections",
+                "why": "Strikes would widen the conflict beyond Yemen and Saudi Arabia, raising risks to Gulf oil flows and Indian workers.",
+                "when": "after the US midterm elections",
+                "where": ""
+              },
+              {
+                "what": "India's Ministry of External Affairs issues an advisory for Indians in Saudi Arabia or the Gulf",
+                "why": "It would show whether New Delhi sees a direct threat to Indian nationals in the region.",
+                "when": "",
+                "where": "Ministry of External Affairs"
+              },
+              {
+                "what": "Further Houthi strikes on Saudi oil fields or energy facilities",
+                "why": "Repeated hits on oil sites would raise the risk of supply disruption and higher crude prices for India.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "India imports most of the crude oil it uses, and Gulf producers such as Saudi Arabia, Iraq and the UAE are among its largest suppliers.",
+              "Gulf countries host the largest share of Indian workers abroad, and their remittances are a significant source of income for households in states such as Kerala.",
+              "Much of the Gulf's oil and gas exports pass through the Strait of Hormuz, so any conflict involving Iran raises the risk of disruption to shipping."
+            ],
+            "terms": [
+              {
+                "term": "non-emergency staff",
+                "meaning": "Embassy employees whose work is not essential during a crisis and who can be sent home when a government judges a post unsafe."
+              },
+              {
+                "term": "midterms",
+                "meaning": "US congressional elections held midway through a president's four-year term."
+              }
+            ],
+            "frameworks": {
+              "disruption_map": {
+                "node": {
+                  "name": "Saudi oil field struck by Houthis",
+                  "type": "other",
+                  "status": "unknown",
+                  "as_of": "2026-10-22"
+                },
+                "cause": {
+                  "text": "Houthi strikes on an oil field and an airport in Saudi Arabia killed at least three people, amid near-daily attacks on the kingdom.",
+                  "status": "confirmed"
+                },
+                "flows": [
+                  {
+                    "flow": "crude",
+                    "india_link": "Saudi Arabia is a major crude supplier to India, so damage to its oil fields could tighten supply and raise costs for Indian refiners and consumers.",
+                    "basis": "inferred"
+                  },
+                  {
+                    "flow": "air passengers",
+                    "india_link": "Attacks on Saudi airports could disrupt flights used by Indian workers, families and pilgrims travelling between India and the kingdom.",
+                    "basis": "inferred"
+                  }
+                ],
+                "alternatives": [],
+                "duration": "not reported"
+              },
+              "escalation": {
+                "move": "none",
+                "rung": 6,
+                "current_rung": 6,
+                "previous_rung": null,
+                "development": "This story adds new Houthi strikes on a Saudi airport and an oil field that killed at least three, and a US order for non-emergency diplomats to leave Saudi Arabia.",
+                "evidence": "The strikes on an airport and an oil field are attacks on critical infrastructure, matching the rung already set on 2026-10-12; the US withdrawal is a precaution, not a new military action.",
+                "next_signals": [
+                  {
+                    "rung": 7,
+                    "signal": "The Saudi-led coalition or other states launch large-scale military operations, turning the conflict into open full-scale war across the region."
+                  },
+                  {
+                    "rung": 5,
+                    "signal": "Houthi attacks continue but stop hitting airports, oil facilities or third countries, limiting strikes to military targets."
+                  }
+                ],
+                "india_channels": [
+                  "oil",
+                  "diaspora safety",
+                  "remittances",
+                  "flights"
+                ],
+                "conflict": "w1f5pudc",
+                "applied": "none",
+                "from": 6
+              }
+            }
+          },
+          "conflict": "w1f5pudc",
+          "place": {
+            "name": "Riyadh",
+            "country": "Saudi Arabia",
+            "lat": 24.71,
+            "lon": 46.68,
+            "involves": [
+              "United States",
+              "Yemen"
+            ]
+          },
+          "reports": [
+            {
+              "source": "aljazeera",
+              "headline": "US orders departure of personnel from Saudi Arabia, citing Houthi threat",
+              "url": "https://www.aljazeera.com/news/2026/10/21/us-orders-departure-of-personnel-from-saudi-arabia-citing-houthi-threat",
+              "date": "2026-10-21T23:13:35.000Z",
+              "kind": "hard",
+              "summary": "US State Department says Iran-aligned Houthis have 'increasingly ⁠⁠engaged in hostilities' against Saudi Arabia.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/ap_6ad938b69c56d-1792620726.jpg?resize=1920%2C1440"
+            },
+            {
+              "source": "bbc",
+              "headline": "US orders some diplomats to leave Saudi Arabia as Houthi attacks escalate",
+              "url": "https://www.bbc.co.uk/news/articles/c6x2vpk93770o",
+              "date": "2026-10-22T01:07:34.000Z",
+              "kind": "hard",
+              "summary": "The warning to US officials comes as at least three people die in the latest strikes at an airport and an oil field.",
+              "summaryV": 3,
+              "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6998/live/cec97250-cdb1-11f1-bc2e-018d645d8d21.jpg",
+              "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/6998/live/cec97250-cdb1-11f1-bc2e-018d645d8d21.jpg"
+            },
+            {
+              "source": "cnbc",
+              "headline": "U.S. pulls diplomats from Saudi Arabia as it reportedly readies Iran strikes after midterms",
+              "url": "https://www.cnbc.com/2026/10/22/us-iran-trump-hormuz-.html",
+              "date": "2026-10-22T04:35:54.000Z",
+              "kind": "hard",
+              "summary": "The U.S. ordered non-emergency staff out of Saudi Arabia after Houthi strikes on an airport and an oil field, reviving fears of a widening regional conflict.",
+              "summaryV": 3
+            },
+            {
+              "source": "cbs",
+              "headline": "U.S. ordering some government staff to depart Saudi Arabia",
+              "url": "https://www.cbsnews.com/news/us-saudi-arabia-ordered-departure-houthis/",
+              "date": "2026-10-21T23:28:00.000Z",
+              "kind": "hard",
+              "summary": "The U.S. military has also been quietly reducing its footprint at posts in the Middle East due to regional threats from the Houthis and direct threats from Iran, CBS News has learned.",
+              "summaryV": 3
+            },
+            {
+              "source": "aljazeera",
+              "headline": "Iran reveals ‘offensive’ doctrine, US issues alert: Is war imminent?",
+              "url": "https://www.aljazeera.com/news/2026/10/22/iran-reveals-offensive-doctrine-us-issues-alert-is-war-imminent",
+              "date": "2026-10-22T12:12:32.000Z",
+              "kind": "hard",
+              "summary": "US orders diplomatic staff out of Saudi Arabia amid escalating conflict and reports of potential US strikes on Iran.",
+              "summaryV": 3
+            },
+            {
+              "source": "abc",
+              "headline": "US orders diplomats to leave Saudi Arabia amid Houthi strikes",
+              "url": "https://www.abc.net.au/news/2026-10-22/us-diplomats-to-leave-saudi-arabia-amid-houthi-strikes/107295684",
+              "date": "2026-10-22T01:02:12.000Z",
+              "kind": "hard",
+              "summary": "The United States has ordered non-essential US embassy staff and their families to leave Saudi Arabia, as the kingdom comes under sustained deadly attacks by Yemen's Houthis.",
+              "summaryV": 3,
+              "image": "https://live-production.wcms.abc-cdn.net.au/1b6b31d7a1d58d816d5f44f88ca61edc?impolicy=wcms_crop_resize&cropH=2711&cropW=4820&xPos=0&yPos=251&width=862&height=485"
+            },
+            {
+              "source": "guardian",
+              "headline": "Some US diplomats told to leave Saudi Arabia amid Houthi attacks",
+              "url": "https://www.theguardian.com/world/2026/oct/22/us-diplomats-told-to-leave-saudi-arabia-amid-houthi-attacks",
+              "date": "2026-10-22T13:05:30.000Z",
+              "kind": "hard",
+              "summary": "Similar withdrawals from UAE, Jordan, Qatar and Bahrain reported as concerns grow about restart of war on Iran after US midterm elections",
+              "summaryV": 3,
+              "lede": "The US state department has ordered some diplomats and the families of US government employees to leave Saudi Arabia as the gulf kingdom faces a barrage of near-daily attacks, with at least three people killed at an airport and oilfield.",
+              "image": "https://i.guim.co.uk/img/media/ad0d9a1d652695e1b6e3636cdcd6f787bc705218/926_113_3873_3100/master/3873.jpg?width=700&quality=85&auto=format&fit=max&s=3202cb021754032edbeeb85a61e56e78"
+            },
+            {
+              "source": "nyt",
+              "headline": "Iran in ‘Advanced Stages’ of Planning Attacks Against Americans, Officials Say",
+              "url": "https://www.nytimes.com/2026/10/23/us/politics/security-warnings-iran-threats.html",
+              "date": "2026-10-24T03:46:54.000Z",
+              "kind": "hard",
+              "summary": "The U.S. government has ordered diplomats and other federal employees to leave Saudi Arabia. It is also drawing down staff at other missions in the region.",
+              "summaryV": 3,
+              "image": "https://static01.nyt.com/images/2026/10/23/multimedia/dc-iran-security-gcqh/dc-iran-security-gcqh-mediumSquareAt3X.jpg"
+            }
+          ],
+          "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/ap_6ad938b69c56d-1792620726.jpg?resize=1920%2C1440",
+          "thread": "tq5ix5r",
+          "stats": {
+            "v": 2,
+            "at": "2026-10-23T05:07:39.435Z",
+            "series": [
+              {
+                "title": "Brent crude oil spot price, daily",
+                "unit": "US$ per barrel",
+                "publisher": "U.S. Energy Information Administration",
+                "why": "Brent is the benchmark that sets what India pays for most of its imported crude, so it shows how Gulf instability and attacks on Saudi oil sites reach India's import costs.",
+                "points": [
+                  {
+                    "period": "13 Oct 2026",
+                    "value": 125.78,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "14 Oct 2026",
+                    "value": 126.55,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "15 Oct 2026",
+                    "value": 126.35,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "16 Oct 2026",
+                    "value": 119.33,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "19 Oct 2026",
+                    "value": 118.82,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "20 Oct 2026",
+                    "value": 115.22,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  }
+                ],
+                "dropped": 0,
+                "sources": [
+                  {
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "title": "Spot Prices for Crude Oil and Petroleum Products",
+                    "domain": "eia.gov"
+                  }
+                ],
+                "domains": [
+                  "eia.gov"
+                ]
+              }
+            ]
+          },
+          "priority": 95
+        },
         {
           "id": "s1ptbqou",
           "headline": "Qatar deal to buy U.S. natural gas shows how Iran war has redrawn global energy markets",
@@ -158,90 +477,100 @@
           "source": "cnbc",
           "date": "2026-10-22T19:19:41.000Z",
           "relevance": "high",
-          "why": "Brent crude rose to $114.72 a barrel, a five-month high, after Iran threatened retaliatory attacks on Gulf oil and tech facilities amid fears of renewed US strikes. This raises the cost of India's crude imports.",
+          "why": "Brent crude rose as high as $117 a barrel after Donald Trump hinted at renewed US strikes on Iran and Tehran threatened Gulf oil facilities. Higher prices raise the cost of India's largely imported crude oil.",
           "implications": [
-            "If Iran carries out its threatened attacks on Gulf oil facilities, supply from the region India relies on could be disrupted, not just made more expensive.",
-            "Higher crude prices raise refiners' costs, which could feed through to petrol, diesel and cooking gas prices or squeeze the margins of state-run fuel retailers.",
-            "A larger oil import bill could widen India's trade deficit and put pressure on the rupee, which may make other imports dearer.",
-            "Iran's threat to Gulf tech facilities could also concern the many Indians who work in Gulf states, where such facilities are located."
+            "Iran's reported threat to hit Gulf oil and technology facilities puts at risk the same Gulf producers that supply much of India's crude, beyond the existing disruption around the Strait of Hormuz.",
+            "A sustained rise in crude prices could widen India's import bill and pressure the rupee, because oil purchases are paid for in dollars.",
+            "If Indian retail fuel prices are held steady, state-run oil marketing companies or the government may absorb the higher cost, which could strain their finances instead of household budgets.",
+            "Any Iranian strikes on Gulf facilities could affect the safety and jobs of the large Indian workforce in Gulf states and the remittances their families depend on."
           ],
           "analysis": {
             "v": 3,
-            "at": "2026-10-23T11:51:01.408Z",
-            "tier": "standard",
+            "at": "2026-10-24T04:52:28.654Z",
+            "tier": "deep",
             "primary": "escalation",
-            "complement": null,
+            "complement": "scenarios",
             "features": [
-              "armed_conflict",
               "price_move",
               "fast_moving",
               "pending_outcome"
             ],
             "exposure": {
               "level": "high",
-              "reason": "The story reaches India through crude oil, a top import that feeds into petrol, diesel and LPG prices, and through threats to Gulf states where many Indians work."
+              "reason": "Crude oil is India's largest import, and higher prices feed into the cost of petrol, diesel and LPG. Threats to Gulf facilities also touch the safety of Indians working there."
             },
             "horizon": {
               "value": "weeks",
-              "reason": "Higher crude prices usually reach Indian import costs and pump prices with a lag of several weeks, depending on whether fuel retailers pass them on."
+              "reason": "Crude price rises usually reach Indian fuel prices and the import bill over several weeks, depending on whether oil companies or the government absorb them."
             },
             "confidence": {
               "level": "medium",
-              "reason": "CNBC and The Guardian agree on the price rise, but the reported US plan to resume strikes is unconfirmed and the story is still developing."
+              "reason": "CNBC, The Guardian and The New York Times agree on the price rise, but the planned US strikes rest on reported, unconfirmed plans and Iranian threats."
             },
-            "outlets": 2,
+            "outlets": 3,
             "affected": [
               {
                 "group": "Fuel & LPG users",
                 "direction": "up",
-                "what": "fuel and cooking gas costs",
-                "effect": "Higher crude prices could raise petrol, diesel and LPG prices in India if state-run fuel retailers pass on their higher import costs.",
+                "what": "fuel price pressure",
+                "effect": "Higher global crude prices raise refiners' costs, which could feed through to petrol, diesel and LPG prices if they are not absorbed.",
                 "basis": "inferred"
               },
               {
                 "group": "Government finances",
                 "direction": "down",
-                "what": "fiscal and import strain",
-                "effect": "A costlier oil import bill could strain public finances if the government cuts fuel taxes or compensates fuel retailers to shield consumers.",
+                "what": "subsidy and revenue strain",
+                "effect": "If the government cuts fuel taxes or compensates oil companies to cushion consumers, its finances could come under pressure.",
                 "basis": "inferred"
               },
               {
                 "group": "Gulf & overseas workers and families",
                 "direction": "unclear",
-                "what": "workplace safety risk",
-                "effect": "Iran's threatened attacks on Gulf oil and tech facilities could put at risk Indians working in Gulf states, and the families relying on their earnings.",
+                "what": "safety and job risk",
+                "effect": "Iran's threatened attacks on Gulf oil and technology facilities could endanger Indian workers there and disrupt the remittances their families receive.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Importers & traders",
+                "direction": "up",
+                "what": "import and freight costs",
+                "effect": "Costlier oil and greater risk on Gulf shipping routes could raise fuel and transport costs for Indian importers and traders.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "Whether the United States actually resumes strikes on Iran",
-                "why": "Renewed strikes would test whether Iran follows through on its threats against Gulf facilities, which would affect oil supply.",
+                "what": "A US announcement or confirmed reports that strikes on Iran have resumed",
+                "why": "It would show whether the reported plans have turned into action that could push the war towards full-scale conflict.",
+                "when": "",
+                "where": "The White House"
+              },
+              {
+                "what": "Iranian attacks on oil or technology facilities in Gulf states",
+                "why": "Such attacks would show that Tehran is carrying out its threat and directly endangering supply to India.",
                 "when": "",
                 "where": ""
               },
               {
-                "what": "Any Iranian attack on Gulf oil or tech facilities",
-                "why": "An attack would show that the threat has turned into action and could push crude prices higher.",
-                "when": "",
-                "where": ""
-              },
-              {
-                "what": "Movement in the Brent crude price above or below $113",
-                "why": "The price shows how much risk markets see to oil supply and what India pays for its imports.",
+                "what": "Whether Brent crude stays above $113 a barrel",
+                "why": "Sustained high prices would make it more likely that Indian fuel costs and the import bill rise.",
                 "when": "",
                 "where": ""
               }
             ],
             "context": [
-              "India imports most of the crude oil it uses, and a large share comes from Gulf producers whose cargoes pass through the Strait of Hormuz.",
-              "Retail petrol and diesel prices in India are set mainly by state-run oil marketing companies, which sometimes absorb global price swings for a period rather than passing them on immediately.",
-              "India also imports much of its liquefied petroleum gas (LPG), used for household cooking, from Gulf suppliers."
+              "India imports most of the crude oil it uses, and a large share comes from Gulf producers whose shipments pass through the Strait of Hormuz. A conflict there therefore raises both price and supply risk for India.",
+              "Retail petrol and diesel prices in India are set by largely state-owned oil marketing companies and are heavily taxed. Global price rises therefore often reach consumers with a delay or are partly absorbed.",
+              "Attacks on shipping in the strait also endanger merchant crews, and India supplies a large number of the world's seafarers."
             ],
             "terms": [
               {
                 "term": "Brent crude",
-                "meaning": "The main international benchmark price for crude oil, used to price much of the oil that India buys."
+                "meaning": "The main international benchmark price for crude oil, used to price much of the oil that India imports."
+              },
+              {
+                "term": "Strait of Hormuz",
+                "meaning": "The narrow sea passage out of the Gulf through which a large share of the world's seaborne oil and gas passes."
               }
             ],
             "frameworks": {
@@ -250,27 +579,50 @@
                 "rung": 6,
                 "current_rung": 6,
                 "previous_rung": null,
-                "development": "Iran threatened retaliatory attacks on Gulf oil and tech facilities and said it is prepared for warfare, while President Trump hinted at action and accused Iran of manipulating the oil market.",
-                "evidence": "The reports describe threats and reported US planning, not a new attack. The war stays at strikes on critical infrastructure or third countries, set on 2026-10-20.",
+                "development": "This story adds reported US plans to resume strikes on Iran, a hint of action from Donald Trump and an Iranian threat to retaliate against Gulf oil and technology facilities.",
+                "evidence": "The reports describe threats, reported plans and statements of readiness, not new attacks. The war therefore stays at the rung set on 2026-10-20 for strikes on third countries and critical infrastructure.",
                 "next_signals": [
                   {
                     "rung": 7,
-                    "signal": "The United States resumes strikes on Iran and Iran attacks Gulf oil facilities, turning the conflict into open, full-scale war across the region."
+                    "signal": "The United States and Iran engage in open, all-out military conflict, with large-scale and continuous operations against each other's forces and territory."
                   },
                   {
                     "rung": 5,
-                    "signal": "Iranian attacks on third countries and disruption of the Strait of Hormuz stop, while strikes between the United States and Iran continue."
+                    "signal": "Iranian attacks on Gulf states and shipping stop and the Strait of Hormuz reopens, while direct US-Iran strikes continue."
                   }
                 ],
                 "india_channels": [
                   "oil",
                   "shipping",
-                  "diaspora safety",
-                  "remittances"
+                  "remittances",
+                  "diaspora safety"
                 ],
                 "conflict": "w1ye2krf",
                 "applied": "none",
                 "from": 6
+              },
+              "scenarios": {
+                "question": "Will the United States resume strikes on Iran, and will Tehran carry out its threatened attacks on Gulf oil and technology facilities?",
+                "scenarios": [
+                  {
+                    "name": "Strikes and Gulf retaliation",
+                    "what": "The United States resumes strikes on Iran and Tehran retaliates against oil and technology facilities in Gulf states, as it has threatened.",
+                    "signal": "Confirmed US strikes on Iran are followed by reported Iranian attacks on Gulf energy or technology sites.",
+                    "india_effect": "This could push crude prices higher and disrupt Gulf supply to India, raising fuel cost pressure. It could also put Indian workers in the Gulf at greater risk."
+                  },
+                  {
+                    "name": "US strikes, limited retaliation",
+                    "what": "The United States resumes strikes, but Iran does not follow through on attacks against Gulf oil and technology facilities.",
+                    "signal": "US strikes are reported, but there are no reports of new attacks on Gulf facilities.",
+                    "india_effect": "Oil prices could stay elevated on risk fears, but direct damage to Gulf supply and to Indian workers there may be avoided."
+                  },
+                  {
+                    "name": "Threats without action",
+                    "what": "The United States does not resume strikes, and the threats from both sides remain statements.",
+                    "signal": "No US strikes take place and oil prices fall back from the five-month high.",
+                    "india_effect": "Price pressure on India's oil import bill could ease, although the continuing disruption around the Strait of Hormuz would still weigh on supply."
+                  }
+                ]
               }
             },
             "reading": [
@@ -1501,315 +1853,6 @@
               }
             ]
           }
-        },
-        {
-          "id": "s6n2u6j",
-          "headline": "US orders departure of personnel from Saudi Arabia, citing Houthi threat",
-          "url": "https://www.aljazeera.com/news/2026/10/21/us-orders-departure-of-personnel-from-saudi-arabia-citing-houthi-threat",
-          "source": "aljazeera",
-          "date": "2026-10-21T23:13:35.000Z",
-          "relevance": "medium",
-          "why": "The United States ordered non-emergency diplomats and families out of Saudi Arabia after Houthi strikes on an airport and an oil field killed at least three. Wider Gulf instability threatens India's oil supplies and its large workforce there.",
-          "implications": [
-            "The Guardian reports similar withdrawals from the UAE, Jordan, Qatar and Bahrain, countries that together host millions of Indian workers whose safety and remittances could be affected.",
-            "CNBC reports that the US is readying strikes on Iran after its midterm elections, which could widen the conflict to a region supplying much of India's oil and gas.",
-            "Strikes on Saudi oil fields may raise crude prices and freight insurance costs, which could increase India's import bill and pressure the rupee.",
-            "CBS News has learned that the US military is quietly reducing its footprint in the Middle East, suggesting Washington expects more attacks on Gulf sites."
-          ],
-          "analysis": {
-            "v": 3,
-            "at": "2026-10-22T21:53:09.986Z",
-            "tier": "deep",
-            "primary": "disruption_map",
-            "complement": "escalation",
-            "features": [
-              "disruption",
-              "armed_conflict",
-              "fast_moving",
-              "pending_outcome"
-            ],
-            "exposure": {
-              "level": "high",
-              "reason": "The conflict reaches India through crude oil, a top import, and through the safety of the large Indian workforce in Saudi Arabia and neighbouring Gulf states."
-            },
-            "horizon": {
-              "value": "now",
-              "reason": "Near-daily attacks are under way and oil markets and worker safety respond immediately, although retail fuel price effects in India may take weeks."
-            },
-            "confidence": {
-              "level": "high",
-              "reason": "Seven outlets report the US State Department's on-record departure order; only the CNBC report of planned US strikes on Iran rests on unconfirmed reports."
-            },
-            "outlets": 6,
-            "affected": [
-              {
-                "group": "Gulf & overseas workers and families",
-                "direction": "down",
-                "what": "safety and job security",
-                "effect": "Indian workers in Saudi Arabia and neighbouring Gulf states could face greater danger and disruption as attacks continue and foreign governments withdraw staff.",
-                "basis": "inferred"
-              },
-              {
-                "group": "Fuel & LPG users",
-                "direction": "up",
-                "what": "fuel price pressure",
-                "effect": "Attacks on Saudi oil fields could raise global crude prices, which may feed through to petrol, diesel and LPG costs in India.",
-                "basis": "inferred"
-              },
-              {
-                "group": "Travellers & pilgrims",
-                "direction": "down",
-                "what": "flight availability",
-                "effect": "Strikes on Saudi airports could lead to flight cancellations or rerouting for Indians travelling to and from the kingdom.",
-                "basis": "inferred"
-              },
-              {
-                "group": "Government finances",
-                "direction": "down",
-                "what": "oil import bill",
-                "effect": "Higher crude prices would raise India's import bill and could pressure fuel subsidy and tax decisions.",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "US military strikes on Iran following the US midterm elections",
-                "why": "Strikes would widen the conflict beyond Yemen and Saudi Arabia, raising risks to Gulf oil flows and Indian workers.",
-                "when": "after the US midterm elections",
-                "where": ""
-              },
-              {
-                "what": "India's Ministry of External Affairs issues an advisory for Indians in Saudi Arabia or the Gulf",
-                "why": "It would show whether New Delhi sees a direct threat to Indian nationals in the region.",
-                "when": "",
-                "where": "Ministry of External Affairs"
-              },
-              {
-                "what": "Further Houthi strikes on Saudi oil fields or energy facilities",
-                "why": "Repeated hits on oil sites would raise the risk of supply disruption and higher crude prices for India.",
-                "when": "",
-                "where": ""
-              }
-            ],
-            "context": [
-              "India imports most of the crude oil it uses, and Gulf producers such as Saudi Arabia, Iraq and the UAE are among its largest suppliers.",
-              "Gulf countries host the largest share of Indian workers abroad, and their remittances are a significant source of income for households in states such as Kerala.",
-              "Much of the Gulf's oil and gas exports pass through the Strait of Hormuz, so any conflict involving Iran raises the risk of disruption to shipping."
-            ],
-            "terms": [
-              {
-                "term": "non-emergency staff",
-                "meaning": "Embassy employees whose work is not essential during a crisis and who can be sent home when a government judges a post unsafe."
-              },
-              {
-                "term": "midterms",
-                "meaning": "US congressional elections held midway through a president's four-year term."
-              }
-            ],
-            "frameworks": {
-              "disruption_map": {
-                "node": {
-                  "name": "Saudi oil field struck by Houthis",
-                  "type": "other",
-                  "status": "unknown",
-                  "as_of": "2026-10-22"
-                },
-                "cause": {
-                  "text": "Houthi strikes on an oil field and an airport in Saudi Arabia killed at least three people, amid near-daily attacks on the kingdom.",
-                  "status": "confirmed"
-                },
-                "flows": [
-                  {
-                    "flow": "crude",
-                    "india_link": "Saudi Arabia is a major crude supplier to India, so damage to its oil fields could tighten supply and raise costs for Indian refiners and consumers.",
-                    "basis": "inferred"
-                  },
-                  {
-                    "flow": "air passengers",
-                    "india_link": "Attacks on Saudi airports could disrupt flights used by Indian workers, families and pilgrims travelling between India and the kingdom.",
-                    "basis": "inferred"
-                  }
-                ],
-                "alternatives": [],
-                "duration": "not reported"
-              },
-              "escalation": {
-                "move": "none",
-                "rung": 6,
-                "current_rung": 6,
-                "previous_rung": null,
-                "development": "This story adds new Houthi strikes on a Saudi airport and an oil field that killed at least three, and a US order for non-emergency diplomats to leave Saudi Arabia.",
-                "evidence": "The strikes on an airport and an oil field are attacks on critical infrastructure, matching the rung already set on 2026-10-12; the US withdrawal is a precaution, not a new military action.",
-                "next_signals": [
-                  {
-                    "rung": 7,
-                    "signal": "The Saudi-led coalition or other states launch large-scale military operations, turning the conflict into open full-scale war across the region."
-                  },
-                  {
-                    "rung": 5,
-                    "signal": "Houthi attacks continue but stop hitting airports, oil facilities or third countries, limiting strikes to military targets."
-                  }
-                ],
-                "india_channels": [
-                  "oil",
-                  "diaspora safety",
-                  "remittances",
-                  "flights"
-                ],
-                "conflict": "w1f5pudc",
-                "applied": "none",
-                "from": 6
-              }
-            }
-          },
-          "conflict": "w1f5pudc",
-          "place": {
-            "name": "Riyadh",
-            "country": "Saudi Arabia",
-            "lat": 24.71,
-            "lon": 46.68,
-            "involves": [
-              "United States",
-              "Yemen"
-            ]
-          },
-          "reports": [
-            {
-              "source": "aljazeera",
-              "headline": "US orders departure of personnel from Saudi Arabia, citing Houthi threat",
-              "url": "https://www.aljazeera.com/news/2026/10/21/us-orders-departure-of-personnel-from-saudi-arabia-citing-houthi-threat",
-              "date": "2026-10-21T23:13:35.000Z",
-              "kind": "hard",
-              "summary": "US State Department says Iran-aligned Houthis have 'increasingly ⁠⁠engaged in hostilities' against Saudi Arabia.",
-              "summaryV": 3,
-              "ogTried": true,
-              "descTried": true,
-              "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/ap_6ad938b69c56d-1792620726.jpg?resize=1920%2C1440"
-            },
-            {
-              "source": "bbc",
-              "headline": "US orders some diplomats to leave Saudi Arabia as Houthi attacks escalate",
-              "url": "https://www.bbc.co.uk/news/articles/c6x2vpk93770o",
-              "date": "2026-10-22T01:07:34.000Z",
-              "kind": "hard",
-              "summary": "The warning to US officials comes as at least three people die in the latest strikes at an airport and an oil field.",
-              "summaryV": 3,
-              "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6998/live/cec97250-cdb1-11f1-bc2e-018d645d8d21.jpg",
-              "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/6998/live/cec97250-cdb1-11f1-bc2e-018d645d8d21.jpg"
-            },
-            {
-              "source": "cnbc",
-              "headline": "U.S. pulls diplomats from Saudi Arabia as it reportedly readies Iran strikes after midterms",
-              "url": "https://www.cnbc.com/2026/10/22/us-iran-trump-hormuz-.html",
-              "date": "2026-10-22T04:35:54.000Z",
-              "kind": "hard",
-              "summary": "The U.S. ordered non-emergency staff out of Saudi Arabia after Houthi strikes on an airport and an oil field, reviving fears of a widening regional conflict.",
-              "summaryV": 3
-            },
-            {
-              "source": "cbs",
-              "headline": "U.S. ordering some government staff to depart Saudi Arabia",
-              "url": "https://www.cbsnews.com/news/us-saudi-arabia-ordered-departure-houthis/",
-              "date": "2026-10-21T23:28:00.000Z",
-              "kind": "hard",
-              "summary": "The U.S. military has also been quietly reducing its footprint at posts in the Middle East due to regional threats from the Houthis and direct threats from Iran, CBS News has learned.",
-              "summaryV": 3
-            },
-            {
-              "source": "aljazeera",
-              "headline": "Iran reveals ‘offensive’ doctrine, US issues alert: Is war imminent?",
-              "url": "https://www.aljazeera.com/news/2026/10/22/iran-reveals-offensive-doctrine-us-issues-alert-is-war-imminent",
-              "date": "2026-10-22T12:12:32.000Z",
-              "kind": "hard",
-              "summary": "US orders diplomatic staff out of Saudi Arabia amid escalating conflict and reports of potential US strikes on Iran.",
-              "summaryV": 3
-            },
-            {
-              "source": "abc",
-              "headline": "US orders diplomats to leave Saudi Arabia amid Houthi strikes",
-              "url": "https://www.abc.net.au/news/2026-10-22/us-diplomats-to-leave-saudi-arabia-amid-houthi-strikes/107295684",
-              "date": "2026-10-22T01:02:12.000Z",
-              "kind": "hard",
-              "summary": "The United States has ordered non-essential US embassy staff and their families to leave Saudi Arabia, as the kingdom comes under sustained deadly attacks by Yemen's Houthis.",
-              "summaryV": 3,
-              "image": "https://live-production.wcms.abc-cdn.net.au/1b6b31d7a1d58d816d5f44f88ca61edc?impolicy=wcms_crop_resize&cropH=2711&cropW=4820&xPos=0&yPos=251&width=862&height=485"
-            },
-            {
-              "source": "guardian",
-              "headline": "Some US diplomats told to leave Saudi Arabia amid Houthi attacks",
-              "url": "https://www.theguardian.com/world/2026/oct/22/us-diplomats-told-to-leave-saudi-arabia-amid-houthi-attacks",
-              "date": "2026-10-22T13:05:30.000Z",
-              "kind": "hard",
-              "summary": "Similar withdrawals from UAE, Jordan, Qatar and Bahrain reported as concerns grow about restart of war on Iran after US midterm elections",
-              "summaryV": 3,
-              "lede": "The US state department has ordered some diplomats and the families of US government employees to leave Saudi Arabia as the gulf kingdom faces a barrage of near-daily attacks, with at least three people killed at an airport and oilfield.",
-              "image": "https://i.guim.co.uk/img/media/ad0d9a1d652695e1b6e3636cdcd6f787bc705218/926_113_3873_3100/master/3873.jpg?width=700&quality=85&auto=format&fit=max&s=3202cb021754032edbeeb85a61e56e78"
-            }
-          ],
-          "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/ap_6ad938b69c56d-1792620726.jpg?resize=1920%2C1440",
-          "thread": "tq5ix5r",
-          "stats": {
-            "v": 2,
-            "at": "2026-10-23T05:07:39.435Z",
-            "series": [
-              {
-                "title": "Brent crude oil spot price, daily",
-                "unit": "US$ per barrel",
-                "publisher": "U.S. Energy Information Administration",
-                "why": "Brent is the benchmark that sets what India pays for most of its imported crude, so it shows how Gulf instability and attacks on Saudi oil sites reach India's import costs.",
-                "points": [
-                  {
-                    "period": "13 Oct 2026",
-                    "value": 125.78,
-                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
-                    "source": "Spot Prices for Crude Oil and Petroleum Products"
-                  },
-                  {
-                    "period": "14 Oct 2026",
-                    "value": 126.55,
-                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
-                    "source": "Spot Prices for Crude Oil and Petroleum Products"
-                  },
-                  {
-                    "period": "15 Oct 2026",
-                    "value": 126.35,
-                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
-                    "source": "Spot Prices for Crude Oil and Petroleum Products"
-                  },
-                  {
-                    "period": "16 Oct 2026",
-                    "value": 119.33,
-                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
-                    "source": "Spot Prices for Crude Oil and Petroleum Products"
-                  },
-                  {
-                    "period": "19 Oct 2026",
-                    "value": 118.82,
-                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
-                    "source": "Spot Prices for Crude Oil and Petroleum Products"
-                  },
-                  {
-                    "period": "20 Oct 2026",
-                    "value": 115.22,
-                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
-                    "source": "Spot Prices for Crude Oil and Petroleum Products"
-                  }
-                ],
-                "dropped": 0,
-                "sources": [
-                  {
-                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
-                    "title": "Spot Prices for Crude Oil and Petroleum Products",
-                    "domain": "eia.gov"
-                  }
-                ],
-                "domains": [
-                  "eia.gov"
-                ]
-              }
-            ]
-          },
-          "priority": 95
         },
         {
           "id": "s1l8i59q",
@@ -15882,15 +15925,17 @@
           "date": "2026-10-22T01:51:03.000Z",
           "relevance": "medium",
           "image": "https://s.france24.com/media/display/bf71a96e-cb7f-11f1-8810-6313a763b466/w:1024/p:16x9/2026-10-18T235422Z-1304641961-RC2X5OA93ZJS-RTRMADP-3-UKRAINE-CRISIS-ATTACK-KYIV.jpg",
-          "why": "Russian missiles struck Kyiv overnight, wounding six people, hours after Moscow signalled readiness to resume US-mediated peace talks. India is affected only indirectly, mainly through global energy and commodity prices that the war influences.",
+          "why": "Russian missiles struck Kyiv, wounding six, hours after Moscow signalled readiness to resume US-mediated peace talks. The war's course matters for India mainly through its large purchases of Russian crude oil and global energy prices.",
           "implications": [
-            "Strikes on a capital city alongside talk of negotiations show that fighting continues while diplomacy is explored, so any easing of risks to energy supplies and trade remains uncertain.",
-            "Indian importers and refiners buy at world prices, so a lasting pause could ease cost pressure, while continued strikes on energy sites could keep global markets unsettled."
+            "The strike came hours after Moscow's signal on talks, which suggests that diplomatic overtures have not yet reduced the fighting.",
+            "DW reports that Russian attacks on Kyiv are hitting harder and more often, making 2026 one of the war's bloodiest years for the capital.",
+            "If peace talks resumed and made progress, the sanctions and price conditions that shape India's discounted Russian crude imports could shift.",
+            "Continued strikes on energy infrastructure could keep global oil markets unsettled, which may affect what Indian refiners pay for crude."
           ],
           "analysis": {
             "v": 3,
-            "at": "2026-10-22T05:06:30.314Z",
-            "tier": "quick",
+            "at": "2026-10-24T04:52:28.654Z",
+            "tier": "standard",
             "primary": "escalation",
             "complement": null,
             "features": [
@@ -15899,43 +15944,50 @@
             ],
             "exposure": {
               "level": "low",
-              "reason": "The report describes no direct channel to India. Any effect would come indirectly through global oil and commodity prices, which the war can influence but which this strike alone is not reported to have moved."
+              "reason": "This story adds a strike on Kyiv and a talks signal. Its link to India runs only indirectly through oil prices and Russian crude supply, which these reports do not discuss."
             },
             "horizon": {
               "value": "months",
-              "reason": "Any effect on India depends on whether talks actually resume and on future strikes on energy sites, neither of which is settled in the report."
+              "reason": "Any effect on India depends on whether peace talks resume and change sanctions or energy flows, which would take months to play out."
             },
             "confidence": {
               "level": "medium",
-              "reason": "This rests on a single France 24 report citing Ukrainian authorities for the strike; Moscow's signal and any schedule for talks are not independently confirmed here."
+              "reason": "The strike rests on France 24 citing Ukrainian authorities, backed by DW's feature. Moscow's readiness for talks is reported by one outlet and remains unconfirmed."
             },
-            "outlets": 1,
+            "outlets": 2,
             "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "fuel price pressures",
+                "effect": "Prolonged fighting or a peace deal could move global crude prices, which may eventually feed through to petrol and diesel costs in India.",
+                "basis": "inferred"
+              },
               {
                 "group": "Importers & traders",
                 "direction": "unclear",
-                "what": "global energy and commodity costs",
-                "effect": "Continued strikes could keep global energy prices unsettled, while a move to peace talks could ease them, either of which would change Indian importers' costs.",
+                "what": "Russian crude terms",
+                "effect": "Indian crude buyers could see the discounts and sanctions risks on Russian oil change depending on whether talks resume or fighting intensifies.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "Russia and Ukraine formally resuming US-mediated peace talks after Moscow's signal of readiness",
-                "why": "It would show whether the signal is turning into negotiations that could reduce risks to energy supplies.",
+                "what": "A formal resumption of US-mediated peace talks between Russia and Ukraine",
+                "why": "Resumed talks would show whether Moscow's signal leads to diplomacy that could eventually change sanctions and energy flows.",
                 "when": "",
                 "where": ""
               },
               {
-                "what": "Further Russian or Ukrainian strikes on power or oil infrastructure in the coming days",
-                "why": "Continued attacks on energy sites would show the war remains at its current level despite the talk of talks.",
+                "what": "Further Russian missile strikes on Kyiv or Ukrainian strikes on Russian energy sites",
+                "why": "Continued strikes would show that fighting is persisting at its current intensity despite talk of negotiations.",
                 "when": "",
                 "where": ""
               }
             ],
             "context": [
-              "India imports most of its crude oil, so wars involving major energy producers such as Russia can shift the global prices and supply routes that Indian buyers rely on.",
-              "Peace talks in wars like this often start and stall repeatedly, so a signal of readiness is not the same as an agreed ceasefire."
+              "India has avoided taking sides in the war and has repeatedly called for dialogue and diplomacy, while keeping its trade and defence ties with Russia.",
+              "The United States has pushed for a quick negotiated end to the war, and that pressure has shaped the diplomatic context around any resumed talks."
             ],
             "terms": [],
             "frameworks": {
@@ -15944,16 +15996,16 @@
                 "rung": 6,
                 "current_rung": 6,
                 "previous_rung": null,
-                "development": "Russian missiles hit Kyiv overnight and wounded six people, while Moscow signalled readiness to resume US-mediated peace talks.",
-                "evidence": "The Kyiv strike continues the exchange of strikes already placed at rung 6 on 18 October. Signalling readiness for talks is not a ceasefire or a halt in fighting, so the rung stays where it is.",
+                "development": "Russia launched an overnight missile strike on Kyiv that wounded six people, while Moscow signalled readiness to resume US-mediated peace talks.",
+                "evidence": "The strike on Kyiv continues the fighting but is not a new action above the current rung of strikes on critical infrastructure. A signal of readiness for talks does not move the war down.",
                 "next_signals": [
                   {
                     "rung": 7,
-                    "signal": "Either side announces general mobilisation or launches a large new ground offensive, showing a shift from strikes to all-out war."
+                    "signal": "Either side announces a general mobilisation or launches a major new ground offensive across a broad front."
                   },
                   {
                     "rung": 5,
-                    "signal": "A ceasefire on strikes against infrastructure comes into force and attacks on power and oil sites are reported to have stopped."
+                    "signal": "Both sides verifiably halt strikes on power and oil infrastructure while other strikes continue, as under the earlier energy ceasefire."
                   }
                 ],
                 "india_channels": [
@@ -15964,7 +16016,21 @@
                 "applied": "none",
                 "from": 6
               }
-            }
+            },
+            "reading": [
+              {
+                "headline": "Former U.S. ambassador on Trump's recent moves to embrace Russia",
+                "url": "https://www.npr.org/2026/10/20/nx-s1-6007865/former-u-s-ambassador-on-trumps-recent-moves-to-embrace-russia",
+                "source": "npr",
+                "date": "2026-10-20T11:03:48.000Z"
+              },
+              {
+                "headline": "Ukraine: Coerced into a Corner?",
+                "url": "https://www.france24.com/en/tv-shows/spotlight/20261011-ukraine-coerced-into-a-corner",
+                "source": "france24",
+                "date": "2026-10-11T17:36:49.000Z"
+              }
+            ]
           },
           "conflict": "wzti51f",
           "place": {
@@ -20993,6 +21059,68 @@
       "name": "Finance",
       "items": [
         {
+          "id": "s1gk7lne",
+          "headline": "Moody's holds steady on France's credit rating as country grapples with turmoil and higher yields",
+          "url": "https://www.cnbc.com/2026/10/23/moodys-holds-steady-on-frances-credit-rating-as-country-grapples-with-turmoil-and-higher-yields.html",
+          "source": "cnbc",
+          "date": "2026-10-23T22:49:42.000Z",
+          "relevance": "medium",
+          "why": "",
+          "implications": [],
+          "place": {
+            "name": "Paris",
+            "country": "France",
+            "lat": 48.85,
+            "lon": 2.35
+          },
+          "stage": "watch",
+          "filter": {
+            "verdict": "watch",
+            "channel": "money_capital",
+            "status": "done",
+            "effect": "low",
+            "reach": "national",
+            "grows_if": "Moody's downgrades France's credit rating",
+            "reason": "Rating held at Aa3; France's turmoil and yields have only indirect India effect.",
+            "at": "2026-10-24T04:48:52.211Z"
+          },
+          "watch": {
+            "grows_if": "Moody's downgrades France's credit rating",
+            "since": "2026-10-24T04:48:52.211Z",
+            "expires": "2026-10-31T04:48:52.211Z",
+            "recheck": false,
+            "checkedAt": "2026-10-24T04:49:22.065Z",
+            "checkedReports": 2
+          },
+          "reports": [
+            {
+              "source": "cnbc",
+              "headline": "Moody's holds steady on France's credit rating as country grapples with turmoil and higher yields",
+              "url": "https://www.cnbc.com/2026/10/23/moodys-holds-steady-on-frances-credit-rating-as-country-grapples-with-turmoil-and-higher-yields.html",
+              "date": "2026-10-23T22:49:42.000Z",
+              "kind": "hard",
+              "summary": "Moody's left its credit rating on France at Aa3, giving the country some relief in a week of unrest.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://image.cnbcfm.com/api/v1/image/108453365-1792793633822-gettyimages-2300178554-AA_17102026_2998635.jpeg?v=1792793674&w=1920&h=1080"
+            },
+            {
+              "source": "nyt",
+              "headline": "France’s Avoids a Debt Downgrade From Moody’s, but Is Given a Warning",
+              "url": "https://www.nytimes.com/2026/10/23/business/france-debt-moodys-protests.html",
+              "date": "2026-10-23T23:23:10.000Z",
+              "kind": "hard",
+              "summary": "Moody’s held the country’s credit rating steady amid political uncertainty and a rise in borrowing costs that have worsened France’s debt situation.",
+              "summaryV": 3,
+              "image": "https://static01.nyt.com/images/2026/10/23/multimedia/23Biz-France-Debt-blzq/23Biz-France-Debt-blzq-mediumSquareAt3X.jpg"
+            }
+          ],
+          "image": "https://image.cnbcfm.com/api/v1/image/108453365-1792793633822-gettyimages-2300178554-AA_17102026_2998635.jpeg?v=1792793674&w=1920&h=1080",
+          "priority": 50,
+          "thread": "t1rn1bq5"
+        },
+        {
           "id": "s1bjmrbj",
           "headline": "France protests: Macron condemns 'stupid' comments from Trump, others as bond market pressure builds",
           "url": "https://www.cnbc.com/2026/10/22/macron-trump-france-protests.html",
@@ -23482,85 +23610,138 @@
       "name": "Technology",
       "items": [
         {
+          "id": "src1r30",
+          "headline": "Typhoon Champi hits Taiwan, killing one and injuring hundreds",
+          "url": "https://www.aljazeera.com/news/2026/10/23/typhoon-champi-hits-taiwan-killing-one-and-injuring-350",
+          "source": "aljazeera",
+          "date": "2026-10-23T23:10:54.000Z",
+          "relevance": "medium",
+          "why": "",
+          "implications": [],
+          "place": {
+            "name": "Taipei",
+            "country": "Taiwan",
+            "lat": 25.03,
+            "lon": 121.56
+          },
+          "stage": "brief",
+          "filter": {
+            "verdict": "brief",
+            "channel": "climate_weather",
+            "status": "done",
+            "effect": "low",
+            "reach": "regional",
+            "reason": "Typhoon hit Taiwan, a chip and electronics supplier; limited current effect on India.",
+            "at": "2026-10-24T04:48:52.211Z"
+          },
+          "reports": [
+            {
+              "source": "aljazeera",
+              "headline": "Typhoon Champi hits Taiwan, killing one and injuring hundreds",
+              "url": "https://www.aljazeera.com/news/2026/10/23/typhoon-champi-hits-taiwan-killing-one-and-injuring-350",
+              "date": "2026-10-23T23:10:54.000Z",
+              "kind": "breaking",
+              "summary": "Authorities warn of 'destructive winds' and urge residents to shelter as the storm passes the island's northeast.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/afp_6adbd99e74be-1792792990.jpg?resize=1920%2C1440"
+            }
+          ],
+          "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/afp_6adbd99e74be-1792792990.jpg?resize=1920%2C1440",
+          "priority": 20,
+          "thread": "t1wli4ry"
+        },
+        {
           "id": "s1u3nset",
           "headline": "Critical web security flaws spark global alarm as Google, OpenAI and Amazon respond",
           "url": "https://www.cnbc.com/2026/10/22/php-google-openai-and-amazon-cyber.html",
           "source": "cnbc",
           "date": "2026-10-22T01:05:15.000Z",
           "relevance": "medium",
-          "why": "Security agencies worldwide, including Hong Kong's watchdog, have warned of two critical flaws in the PHP web programming language that could let hackers take control of servers. Indian websites and IT firms running PHP could be exposed.",
+          "why": "AI tools found two critical flaws in PHP, a programming language used by about 70 percent of websites, and hacking attempts are rising. Indian websites, businesses and IT services firms that run or maintain PHP-based systems are exposed.",
           "implications": [
-            "The flaws could allow hackers to run their own code remotely on affected servers, meaning stolen data or hijacked websites if systems are not fixed.",
-            "Large technology companies including Google, OpenAI and Amazon have responded, which signals that the risk reaches widely used cloud and online services.",
-            "The BBC notes that no attack has yet happened, so the immediate burden falls on companies and IT teams to patch systems before attackers act.",
-            "Indian IT services firms that manage websites and servers for clients could face urgent patching work, while smaller businesses with fewer security staff may remain exposed longer."
+            "The flaws could let hackers run code remotely and take control of servers, so any organisation with an unpatched PHP website faces the risk of a takeover.",
+            "Indian IT services firms that maintain websites for clients at home and abroad may face a heavy patching workload in the coming weeks.",
+            "Small Indian businesses that run PHP-based websites without dedicated security staff could be slower to patch and therefore more exposed to attacks.",
+            "The Guardian reports that cybersecurity leaders expect AI tools to expose more fundamental internet weaknesses in the coming months, which could make such alerts more frequent."
           ],
           "analysis": {
             "v": 3,
-            "at": "2026-10-22T21:53:09.987Z",
-            "tier": "standard",
+            "at": "2026-10-24T04:52:28.654Z",
+            "tier": "deep",
             "primary": "timeline",
-            "complement": null,
+            "complement": "scenarios",
             "features": [
               "fast_moving",
               "pending_outcome"
             ],
             "exposure": {
               "level": "medium",
-              "reason": "The risk reaches India through websites, servers and IT services firms that use PHP, affecting one industry and creating an urgent security obligation rather than a household essential."
+              "reason": "The risk reaches India through one industry channel: websites and servers built on PHP, and the IT firms that maintain them. It does not directly touch household essentials."
             },
             "horizon": {
               "value": "now",
-              "reason": "Agencies have issued warnings now, and organisations need to patch immediately before attackers exploit the flaws."
+              "reason": "Hacking attempts are already rising, so organisations in India face exposure immediately until they apply fixes."
             },
             "confidence": {
               "level": "high",
-              "reason": "CNBC, the South China Morning Post and BBC News agree on the warnings, with an on-record Hong Kong watchdog alert; no actual attack has yet been reported."
+              "reason": "Five outlets agree, and Hong Kong's information security watchdog issued an on-record warning. No major successful attack has yet been confirmed."
             },
-            "outlets": 3,
+            "outlets": 5,
             "affected": [
               {
                 "group": "IT & services workers",
                 "direction": "up",
-                "what": "urgent patching workload",
-                "effect": "Indian IT staff who manage websites and servers may face urgent work to update PHP systems for employers and overseas clients.",
+                "what": "patching and security workload",
+                "effect": "Engineers at Indian IT and security firms may face urgent work checking and patching client systems built on PHP.",
                 "basis": "inferred"
               },
               {
                 "group": "MSME exporters",
                 "direction": "down",
-                "what": "website security risk",
-                "effect": "Small businesses that sell online through PHP-based websites could face hacking risk if they lack staff or resources to apply fixes quickly.",
+                "what": "website attack risk",
+                "effect": "Small exporters that rely on PHP-based websites for orders could face takeover or disruption if they do not patch quickly.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "Reports of hackers actively exploiting the two PHP flaws",
-                "why": "It would show the threat has moved from warning to real attacks on servers.",
+                "what": "Reports of a major website or server breach that exploits the PHP flaws",
+                "why": "A confirmed breach would show the threat has moved from warning to actual damage.",
                 "when": "",
                 "where": ""
               },
               {
-                "what": "An advisory on the PHP flaws from India's cyber security agency",
-                "why": "It would show how Indian authorities expect organisations in India to respond.",
+                "what": "A security advisory on the PHP flaws from India's national cyber agency",
+                "why": "An advisory would show how Indian authorities assess the domestic risk and what action they expect organisations to take.",
                 "when": "",
                 "where": "Indian Computer Emergency Response Team (CERT-In)"
+              },
+              {
+                "what": "Further critical flaws in core internet software found by AI tools",
+                "why": "New discoveries would support experts' warning of a wave of AI-enabled vulnerability disclosures.",
+                "when": "months to come",
+                "where": ""
               }
             ],
             "context": [
-              "PHP is one of the most widely used languages for building websites and runs behind many popular content management systems, so flaws in it can affect a very large number of sites.",
-              "When serious software flaws become public, attackers often try to exploit them quickly, which is why cyber agencies urge organisations to apply security updates without delay.",
-              "Indian IT services companies run and maintain systems for clients worldwide, so global security alerts usually create work and risk for them as well."
+              "PHP powers many common website platforms and content-management systems, so a flaw in the language itself can affect millions of sites at once rather than a single product.",
+              "In India, the Indian Computer Emergency Response Team (CERT-In) issues security advisories, and many organisations are required to report cyber incidents to it.",
+              "Indian IT services firms earn much of their revenue maintaining software for overseas clients, so global security emergencies often fall on their engineering teams."
             ],
             "terms": [
               {
                 "term": "PHP",
-                "meaning": "A widely used programming language for building websites and the software that runs on web servers."
+                "meaning": "A widely used programming language that runs on web servers to build websites and web applications."
               },
               {
                 "term": "execute code remotely",
-                "meaning": "When an attacker can run their own commands on a computer over the internet without physical access to it."
+                "meaning": "An attacker running their own commands on another computer over the internet, without physical access, often taking full control."
+              },
+              {
+                "term": "vulnerability tsunami",
+                "meaning": "Executives' phrase for an expected flood of newly discovered software weaknesses, driven by AI tools that can find flaws quickly."
               }
             ],
             "frameworks": {
@@ -23568,15 +23749,15 @@
                 "entries": [
                   {
                     "when": "2026-10-22",
-                    "what": "Global warnings were issued over critical PHP security flaws, and Google, OpenAI and Amazon responded to the potential cyber threats.",
-                    "actor": "Google, OpenAI, Amazon",
+                    "what": "Google, OpenAI and Amazon responded to potential cyber threats after critical PHP security flaws triggered global warnings.",
+                    "actor": "Google, OpenAI and Amazon",
                     "outlet": "CNBC",
                     "type": "action",
                     "verification": "confirmed"
                   },
                   {
-                    "when": "Thursday morning, 2026-10-22",
-                    "what": "A Hong Kong information security watchdog issued an extremely high risk warning that two PHP flaws could let hackers execute code remotely and control servers.",
+                    "when": "2026-10-22",
+                    "what": "A Hong Kong information security watchdog issued an extremely high risk warning over two critical PHP flaws that could let hackers take control of servers.",
                     "actor": "Hong Kong information security watchdog",
                     "outlet": "South China Morning Post",
                     "type": "action",
@@ -23584,17 +23765,57 @@
                   },
                   {
                     "when": "2026-10-22",
-                    "what": "BBC News commentary said the global response had been dramatic but that the cyber event itself had not yet happened.",
-                    "actor": "BBC News",
+                    "what": "BBC technology editor Zoe Kleinman wrote that the global response has been dramatic but that the cyber event itself has not yet happened.",
+                    "actor": "Zoe Kleinman",
                     "outlet": "BBC News",
+                    "type": "claim",
+                    "verification": "claimed"
+                  },
+                  {
+                    "when": "2026-10-23",
+                    "what": "NPR reported that hacking attempts were rising and that governments were rushing to implement safety measures after AI technology found the flaws.",
+                    "actor": "Governments",
+                    "outlet": "NPR",
+                    "type": "action",
+                    "verification": "confirmed"
+                  },
+                  {
+                    "when": "2026-10-23",
+                    "what": "The Guardian reported that cybersecurity leaders predict AI tools will expose more fundamental weaknesses in global internet infrastructure in the coming months.",
+                    "actor": "Cybersecurity executives",
+                    "outlet": "The Guardian",
                     "type": "claim",
                     "verification": "claimed"
                   }
                 ],
-                "current_status": "Agencies and major technology firms have issued warnings over two critical PHP flaws, but no actual exploitation has been reported so far.",
+                "current_status": "Governments and major technology firms are responding to two critical PHP flaws, and hacking attempts are rising. No major successful attack has been reported so far.",
                 "open_questions": [
-                  "Will attackers begin exploiting the PHP flaws before most organisations apply fixes?",
-                  "How many websites and servers in India run vulnerable versions of PHP?"
+                  "Has any organisation suffered a confirmed breach through these PHP flaws?",
+                  "How quickly are website operators applying fixes for the two flaws?",
+                  "Have Indian authorities issued guidance to organisations running PHP-based systems?"
+                ]
+              },
+              "scenarios": {
+                "question": "Will website operators patch the PHP flaws before attackers can exploit them on a large scale?",
+                "scenarios": [
+                  {
+                    "name": "Patching outpaces attackers",
+                    "what": "The coordinated global response closes the flaws before widespread damage occurs, in line with the BBC's observation that the cyber event has not yet happened.",
+                    "signal": "Security agencies report widespread patching and no major confirmed breaches.",
+                    "india_effect": "Indian organisations would mainly bear the cost and effort of patching, with limited disruption to websites and services."
+                  },
+                  {
+                    "name": "Widespread exploitation",
+                    "what": "Rising hacking attempts turn into successful takeovers of unpatched servers across many countries.",
+                    "signal": "Multiple organisations disclose breaches or server takeovers linked to the PHP flaws.",
+                    "india_effect": "Indian businesses, especially smaller ones slow to patch, could face website outages or data theft, adding work and costs for IT firms."
+                  },
+                  {
+                    "name": "AI-found flaws multiply",
+                    "what": "AI tools expose further fundamental weaknesses in internet software, as cybersecurity executives predict, producing repeated emergency alerts.",
+                    "signal": "New critical vulnerabilities in widely used internet software are disclosed in the coming months.",
+                    "india_effect": "Indian IT and cybersecurity firms could see sustained demand for security work, while organisations face recurring patching costs."
+                  }
                 ]
               }
             }
@@ -27233,86 +27454,152 @@
           "date": "2026-10-22T16:41:13.000Z",
           "relevance": "medium",
           "image": "https://static01.nyt.com/images/2026/10/22/multimedia/22dc-ebola-mcvt/22dc-ebola-mcvt-mediumSquareAt3X.jpg",
-          "why": "An Ebola outbreak in Africa has reached its widest expansion ever, and a first case has been identified in Nigeria with its origins unknown. Any effect on India would be indirect, through travel and health precautions.",
+          "why": "The Ebola outbreak in Africa has reached its widest expansion ever, covering four countries after Nigeria's first case and a second death in Kenya. This could reach India through Indians living in, working in or travelling to affected countries.",
           "implications": [
-            "Because the origin of the Nigerian case is still unknown, officials cannot yet say whether it links to existing spread, which determines how widely containment and tracing efforts must reach.",
-            "If spread continues, Indian health authorities may consider screening arriving passengers, and Indians living in or travelling to affected countries could face tighter movement rules."
+            "Nigeria's case is the outbreak's first in West Africa, and health officials there are still trying to trace where the infection came from.",
+            "Kenya's health ministry says it has found no evidence of community spread, because the second victim was a close relative of the first patient and was already in quarantine.",
+            "Kenya's first patient had travelled from the Democratic Republic of Congo, which shows how cross-border travel has carried the virus between countries in the region.",
+            "Indian communities and business travellers in East and West Africa could face health precautions or travel disruption if the outbreak keeps spreading."
           ],
           "analysis": {
             "v": 3,
-            "at": "2026-10-23T05:05:13.279Z",
-            "tier": "quick",
-            "primary": "impact_chain",
-            "complement": null,
-            "features": [],
+            "at": "2026-10-24T04:52:28.653Z",
+            "tier": "deep",
+            "primary": "timeline",
+            "complement": "scenarios",
+            "features": [
+              "fast_moving",
+              "pending_outcome"
+            ],
             "exposure": {
-              "level": "low",
-              "reason": "The reports describe no direct link to India. Any channel would be indirect, through travel advisories or screening affecting Indians in or travelling to West Africa."
+              "level": "medium",
+              "reason": "The outbreak reaches India mainly through the safety and travel of Indians in affected African countries. The reports describe no direct case or trade link to India, so the level is medium."
             },
             "horizon": {
               "value": "weeks",
-              "reason": "Timing depends on whether the outbreak spreads further and when health authorities decide on any travel or screening measures."
+              "reason": "Whether new cases appear beyond known contacts in Kenya and Nigeria over the coming weeks will decide whether travel precautions become relevant for Indians."
             },
             "confidence": {
-              "level": "low",
-              "reason": "This rests on a single New York Times summary citing unnamed health officials, and the origin of the Nigerian case is unconfirmed."
+              "level": "high",
+              "reason": "Five outlets agree on the facts, and Kenya's health ministry is on record. The origin of Nigeria's case remains unconfirmed."
             },
-            "outlets": 1,
+            "outlets": 5,
             "affected": [
-              {
-                "group": "Travellers & pilgrims",
-                "direction": "unclear",
-                "what": "travel screening and advisories",
-                "effect": "Travel to and from affected African countries could face health screening or advisories if the outbreak keeps spreading.",
-                "basis": "inferred"
-              },
               {
                 "group": "Gulf & overseas workers and families",
                 "direction": "unclear",
-                "what": "safety and mobility abroad",
-                "effect": "Indians working or living in West Africa could be affected by local containment measures or travel restrictions if the outbreak widens.",
+                "what": "health risk in Africa",
+                "effect": "Indians working in Kenya, Nigeria and neighbouring countries, and their families in India, could face health worries and precautions if the outbreak spreads further.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Travellers & pilgrims",
+                "direction": "unclear",
+                "what": "travel screening and disruption",
+                "effect": "Travellers between India and affected African countries could face health screening or changed travel plans if authorities respond to the outbreak's spread.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "Confirmation of the origin of the Nigerian case and any further new cases in other countries",
-                "why": "It would show whether the outbreak is still widening beyond the countries already affected.",
+                "what": "The finding of Nigerian health officials on where the country's first Ebola case came from",
+                "why": "A traced source would point to contained spread, while an unknown source could signal undetected transmission in West Africa.",
                 "when": "",
-                "where": "World Health Organization"
+                "where": "Nigeria's health authorities"
               },
               {
-                "what": "Any health advisory or airport screening announced by the Indian government for travellers from Africa",
-                "why": "It would show whether authorities see a direct risk to India.",
+                "what": "Any Kenyan Ebola case outside the first patient's quarantined contacts",
+                "why": "Such a case would contradict Kenya's statement that there is no evidence of community spread.",
                 "when": "",
-                "where": "Ministry of Health and Family Welfare"
+                "where": "Kenya Ministry of Health"
+              },
+              {
+                "what": "Confirmed Ebola cases in a fifth country",
+                "why": "A further country would show the outbreak is still widening beyond its current record reach.",
+                "when": "",
+                "where": ""
               }
             ],
             "context": [
-              "Ebola is a severe viral disease that spreads through contact with the body fluids of infected people, and outbreaks are normally contained by tracing and isolating contacts.",
-              "India has screened arriving passengers from affected countries during earlier outbreaks, so health measures at airports are a familiar tool."
+              "Ebola spreads through direct contact with the blood or bodily fluids of infected people, not through the air. Outbreaks are usually contained by tracing contacts and quarantining them.",
+              "India has long-standing trade and diaspora links with both East and West Africa, and many Indian nationals live and work in countries such as Kenya and Nigeria.",
+              "During past Ebola outbreaks, Indian health authorities have screened passengers arriving from affected regions at international airports."
             ],
-            "terms": [],
+            "terms": [
+              {
+                "term": "community spread",
+                "meaning": "Transmission of a disease among people with no known link to an existing case, which suggests the infection is circulating undetected."
+              },
+              {
+                "term": "quarantine",
+                "meaning": "Keeping people who may have been exposed to a disease apart from others until it is clear whether they are infected."
+              }
+            ],
             "frameworks": {
-              "impact_chain": {
-                "chain": [
+              "timeline": {
+                "entries": [
                   {
-                    "step": "Outbreak reaches widest expansion ever",
-                    "detail": "The New York Times reports that the Ebola outbreak in Africa has expanded further than in any earlier outbreak, including a newly identified case in Nigeria, the first in that country.",
-                    "basis": "reported"
+                    "when": "2026-10-22",
+                    "what": "Health officials identified Nigeria's first Ebola case and were urgently seeking its origins, as the outbreak reached its widest expansion ever.",
+                    "actor": "Health officials",
+                    "outlet": "The New York Times",
+                    "type": "action",
+                    "verification": "confirmed"
                   },
                   {
-                    "step": "Officials seek origin of Nigerian case",
-                    "detail": "Health officials are urgently trying to establish how the case in Nigeria arose, which determines how far containment efforts must extend.",
-                    "basis": "reported"
+                    "when": "2026-10-23",
+                    "what": "Kenya's health ministry announced a second Ebola death: a 65-year-old woman, a close relative of the first patient, who developed symptoms while in quarantine.",
+                    "actor": "Kenya Ministry of Health",
+                    "outlet": "South China Morning Post",
+                    "type": "confirmation",
+                    "verification": "confirmed"
                   },
                   {
-                    "step": "Travel and health precautions may follow",
-                    "detail": "If the outbreak keeps spreading, India could introduce passenger screening or advisories, which may affect Indians travelling to or living in affected African countries.",
-                    "basis": "inferred"
+                    "when": "2026-10-23",
+                    "what": "Kenya said there was no evidence of community spread, while the outbreak was reported to have reached four countries across eastern, central and western Africa.",
+                    "actor": "Kenya Ministry of Health",
+                    "outlet": "Al Jazeera",
+                    "type": "claim",
+                    "verification": "claimed"
+                  },
+                  {
+                    "when": "2026-10-24",
+                    "what": "The BBC reported that Kenya's first victim was a man who had travelled from the Democratic Republic of Congo.",
+                    "actor": "BBC News",
+                    "outlet": "BBC News",
+                    "type": "confirmation",
+                    "verification": "confirmed"
                   }
                 ],
-                "breaks_if": "The Nigerian case is traced and contained quickly without further spread, so no new travel restrictions or screening are needed for Indians."
+                "current_status": "The outbreak covers four African countries. Kenya has recorded two deaths within one family and says it sees no community spread, while Nigeria is investigating the origin of its first case.",
+                "open_questions": [
+                  "How did Nigeria's first Ebola patient become infected?",
+                  "Have all contacts of Kenya's two victims been traced and isolated?",
+                  "Will health authorities outside Africa, including India's, introduce screening for travellers from affected countries?"
+                ]
+              },
+              "scenarios": {
+                "question": "Will the outbreak stay limited to known contacts, or will community spread be confirmed in Kenya or Nigeria?",
+                "scenarios": [
+                  {
+                    "name": "Contained among contacts",
+                    "what": "New cases stay limited to quarantined contacts of known patients, which would bear out Kenya's statement that there is no community spread.",
+                    "signal": "Health ministries report no new cases outside traced contact lists over the following weeks.",
+                    "india_effect": "Any effect on Indians in Africa or on travel would likely remain limited to routine precautions."
+                  },
+                  {
+                    "name": "Community spread confirmed",
+                    "what": "Cases appear among people with no known link to existing patients in Kenya or Nigeria, showing undetected transmission.",
+                    "signal": "A health ministry reports a case it cannot link to any known patient or contact.",
+                    "india_effect": "Indian nationals in affected countries could face greater health risk, and Indian authorities could consider screening travellers from the region."
+                  },
+                  {
+                    "name": "Further geographic spread",
+                    "what": "The outbreak extends beyond its current four countries and widens its record reach.",
+                    "signal": "A fifth country confirms an Ebola case.",
+                    "india_effect": "Wider spread could increase the number of Indian communities and travel routes exposed to health precautions."
+                  }
+                ]
               }
             }
           },
@@ -27362,10 +27649,30 @@
               "summary": "Kenya’s health ministry announced the country’s second Ebola death on Friday, saying a 65-year-old woman who was a close relative of the first patient died after developing symptoms while in quarantine.",
               "summaryV": 3,
               "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/24/20714293-743e-4461-9b00-4d5e4ba45a1f_6a157fa0.jpg?itok=7a5bpfMY&v=1792790345"
+            },
+            {
+              "source": "aljazeera",
+              "headline": "Kenya announces second Ebola death, says ‘no evidence’ of community spread",
+              "url": "https://www.aljazeera.com/news/2026/10/23/kenya-announces-second-ebola-death-says-no-evidence-of-community-spread",
+              "date": "2026-10-23T22:33:48.000Z",
+              "kind": "hard",
+              "summary": "The Ebola outbreak has now spread to four countries across eastern, central ⁠⁠and western Africa.",
+              "summaryV": 3
+            },
+            {
+              "source": "bbc",
+              "headline": "Woman, 65, becomes second patient to die of Ebola in Kenya",
+              "url": "https://www.bbc.co.uk/news/articles/c6x2355448eyo",
+              "date": "2026-10-24T00:05:43.000Z",
+              "kind": "hard",
+              "summary": "She was a close family member of the first victim, a man who had travelled from the Democratic Republic of Congo.",
+              "summaryV": 3,
+              "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8d0b/live/15946bd0-cf39-11f1-a003-d5e5a8cb108b.jpg",
+              "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/8d0b/live/15946bd0-cf39-11f1-a003-d5e5a8cb108b.jpg"
             }
           ],
           "finChecked": true,
-          "priority": 75,
+          "priority": 80,
           "thread": "t1ye80mu"
         },
         {
@@ -27375,145 +27682,157 @@
           "source": "africanews",
           "date": "2026-10-23T04:45:59.000Z",
           "relevance": "medium",
-          "why": "The World Health Organization (WHO) warned that Africa faces a complex Ebola outbreak after Nigeria confirmed its first case, the first in west Africa. India could be affected through travel links and any health screening response.",
+          "why": "The World Health Organization (WHO) says Africa faces a 'complex' Ebola outbreak after Nigeria confirmed its first case. Wider spread could bring travel screening and health risks for Indians travelling to, or living in, affected African countries.",
           "implications": [
-            "The case involves the Bundibugyo strain in a woman returning from Uganda, showing the virus travelling from east to west Africa along air routes.",
-            "Nigeria has stepped up temperature checks at Lagos airport, and India could introduce similar screening for passengers arriving from affected countries.",
-            "The woman is the wife of a Swiss diplomat whose husband is isolated without symptoms, so tracing her contacts will show whether the virus has spread further.",
-            "Indians living or working in Nigeria and travellers on routes to west Africa could face health checks or travel disruption if the outbreak widens."
+            "Nigeria has begun temperature checks for international arrivals at Lagos airport, so travellers, including Indians flying in, may face extra screening and delays.",
+            "Investigators are checking whether the first Kenyan and Nigerian patients crossed paths at Uganda's main airport, which suggests air travel hubs could be a route of spread.",
+            "The case involves the Bundibugyo strain, and an unclear source of infection makes it harder for health authorities to judge where the risk lies.",
+            "If the outbreak keeps reaching new countries, Indian health authorities could review screening of passengers arriving from affected regions."
           ],
           "analysis": {
             "v": 3,
-            "at": "2026-10-23T11:51:01.410Z",
+            "at": "2026-10-24T04:52:28.654Z",
             "tier": "deep",
-            "primary": "timeline",
-            "complement": "scenarios",
+            "primary": "conflicting",
+            "complement": "impact_chain",
             "features": [
-              "fast_moving"
+              "conflict",
+              "fast_moving",
+              "pending_outcome"
             ],
             "exposure": {
-              "level": "low",
-              "reason": "The reports describe no direct link to India; any effect would come indirectly through travel and the Indian community in Nigeria if the outbreak spreads."
+              "level": "medium",
+              "reason": "The outbreak reaches India mainly through air travel and Indian communities in affected African countries. The reports describe no Indian cases or measures, which keeps the level medium."
             },
             "horizon": {
               "value": "weeks",
-              "reason": "Whether further cases appear among the woman's contacts, which would shape any travel or screening response, will become clear over the coming weeks."
+              "reason": "Any effect depends on whether contact tracing over the coming weeks finds further cases or new countries."
             },
             "confidence": {
               "level": "high",
-              "reason": "Africanews, the South China Morning Post, France 24 and BBC News agree, with on-record statements from the WHO and Swiss officials; the extent of further spread is unknown."
+              "reason": "Eight reports from outlets including the BBC, NPR and The Guardian cite WHO and Swiss officials on record. How the patient was infected remains unresolved."
             },
-            "outlets": 4,
+            "outlets": 7,
             "affected": [
               {
                 "group": "Travellers & pilgrims",
-                "direction": "mixed",
-                "what": "airport health checks",
-                "effect": "Travellers between India and west or east Africa could face temperature checks or health questionnaires if Indian authorities respond as Nigeria has.",
+                "direction": "unclear",
+                "what": "airport health screening",
+                "effect": "Indians travelling to or through Nigeria now face airport temperature checks, and wider spread could bring more screening or travel restrictions.",
                 "basis": "inferred"
               },
               {
                 "group": "Gulf & overseas workers and families",
                 "direction": "unclear",
-                "what": "health risk in Nigeria",
-                "effect": "Indians working in Nigeria, and their families in India, could face health concerns or travel restrictions if local transmission develops.",
+                "what": "health risk in Africa",
+                "effect": "Indian workers in affected African countries and their families in India could face greater health risk and uncertainty if the outbreak spreads further.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "Any further confirmed Ebola cases in Nigeria, including among the woman's contacts",
-                "why": "New cases would show whether the outbreak has started spreading in west Africa beyond a single imported case.",
+                "what": "Findings on whether the Kenyan and Nigerian patients crossed paths at Uganda's main airport",
+                "why": "This would show whether the virus is spreading through travel hubs, which matters most for air travellers.",
                 "when": "",
                 "where": "World Health Organization"
               },
               {
                 "what": "Whether the Swiss diplomat in isolation develops symptoms",
-                "why": "His health is the first test of whether the virus passed to close contacts of the confirmed case.",
+                "why": "Symptoms would point to onward transmission within Nigeria beyond the first case.",
                 "when": "",
-                "where": "Swiss officials"
+                "where": ""
               },
               {
-                "what": "Any Indian airport screening advisory for arrivals from Nigeria or Uganda",
-                "why": "An advisory would show that Indian authorities see a travel risk and would affect passengers on these routes.",
+                "what": "WHO reports of Ebola cases in additional countries",
+                "why": "Spread to more countries would raise the chance of wider travel screening, possibly including in India.",
                 "when": "",
-                "where": "Ministry of Health and Family Welfare, India"
+                "where": "World Health Organization"
               }
             ],
             "context": [
-              "Ebola spreads through direct contact with the bodily fluids of a sick person, not through the air, so outbreaks are usually controlled by isolating patients and tracing their contacts.",
-              "India has a large business community and many workers in Nigeria, and direct and connecting air links carry travellers between the two countries.",
-              "In past Ebola outbreaks, India screened arriving passengers from affected countries at its international airports."
+              "Ebola spreads through direct contact with the bodily fluids of an infected person, so control depends on tracing contacts and isolating patients quickly.",
+              "Large Indian communities live and work across East and West Africa, including Nigeria, and India has significant trade and travel links with the continent.",
+              "In past Ebola outbreaks, India and other countries have screened arrivals from affected countries at international airports."
             ],
             "terms": [
               {
                 "term": "Bundibugyo strain",
-                "meaning": "A species of Ebola virus first identified in Uganda; the main licensed Ebola vaccine targets a different species."
-              },
-              {
-                "term": "WHO",
-                "meaning": "The World Health Organization, the United Nations agency that coordinates international responses to disease outbreaks."
+                "meaning": "One of several types of Ebola virus, named after the district in Uganda where it was first identified."
               }
             ],
             "frameworks": {
-              "timeline": {
-                "entries": [
+              "conflicting": {
+                "disputed": {
+                  "item": "Where Nigeria's first Ebola patient became infected",
+                  "unit": "location of infection"
+                },
+                "accounts": [
                   {
-                    "when": "Earlier this week",
-                    "what": "Nigeria confirmed its first case of the Bundibugyo strain of Ebola, in a woman returning from Uganda, the first case in west Africa.",
-                    "actor": "Nigerian authorities",
                     "outlet": "Africanews",
-                    "type": "confirmation",
-                    "verification": "confirmed"
+                    "value": "Woman returning from Uganda",
+                    "origin": "Nigeria's confirmation of the case, as reported by Africanews",
+                    "time": "earlier this week"
                   },
                   {
-                    "when": "Thursday (2026-10-22)",
-                    "what": "The WHO's Africa chief warned that the continent faces a complex Ebola outbreak after the virus crossed from east Africa to Nigeria.",
-                    "actor": "World Health Organization",
-                    "outlet": "France 24",
-                    "type": "action",
-                    "verification": "confirmed"
+                    "outlet": "The Guardian",
+                    "value": "Believed to have contracted the virus while travelling in Uganda",
+                    "origin": "Swiss officials",
+                    "time": "2026-10-23"
                   },
                   {
-                    "when": "2026-10-23",
-                    "what": "Nigeria stepped up health screening for international arrivals, with passengers at Lagos airport queuing for temperature checks.",
-                    "actor": "Nigerian authorities",
-                    "outlet": "Africanews",
-                    "type": "action",
-                    "verification": "confirmed"
+                    "outlet": "DW",
+                    "value": "Uganda says it has no active Ebola cases",
+                    "origin": "Ugandan authorities",
+                    "time": "2026-10-23"
                   },
                   {
-                    "when": "2026-10-23",
-                    "what": "Swiss officials confirmed that the woman is the wife of a Swiss diplomat, and said her husband is in isolation but has no symptoms.",
-                    "actor": "Swiss officials",
-                    "outlet": "BBC News",
-                    "type": "confirmation",
-                    "verification": "confirmed"
+                    "outlet": "DW",
+                    "value": "Conflicting accounts cloud the source of one infection",
+                    "origin": "Health officials investigating the cases",
+                    "time": "2026-10-23"
                   }
                 ],
-                "current_status": "Nigeria has one confirmed Bundibugyo Ebola case, the WHO has warned of a complex outbreak, and Nigeria has stepped up airport screening while the patient's husband remains isolated without symptoms.",
-                "open_questions": [
-                  "Has the virus spread to any of the woman's contacts in Nigeria or elsewhere?",
-                  "How large is the outbreak in east Africa, where the woman was travelling from Uganda?",
-                  "Will other countries, including India, introduce screening for travellers from affected countries?"
-                ]
-              },
-              "scenarios": {
-                "question": "Will Nigeria's first Ebola case remain isolated, or will the virus spread further in west Africa?",
-                "scenarios": [
+                "agreed": [
+                  "Nigeria has recorded its first Ebola case in the current outbreak.",
+                  "The WHO has warned that Africa faces a complex Ebola outbreak.",
+                  "The patient in Nigeria is a woman, identified by Swiss officials as the wife of a Swiss diplomat."
+                ],
+                "explanations": [
                   {
-                    "name": "Single case contained",
-                    "what": "The woman's case remains the only one in Nigeria, her husband and other contacts stay free of symptoms, and screening stops further imported cases.",
-                    "signal": "Nigerian and Swiss officials report no new cases among contacts, and the isolated husband remains symptom-free.",
-                    "india_effect": "Effects on India would likely stay minimal, perhaps limited to precautionary health checks for some arriving travellers."
+                    "type": "different source",
+                    "note": "Swiss officials link the infection to travel in Uganda, while Uganda reports no active cases, so each side is describing its own records."
                   },
                   {
-                    "name": "Wider west African spread",
-                    "what": "Further cases appear in Nigeria or neighbouring countries, deepening the complex outbreak the WHO has warned of.",
-                    "signal": "The WHO or Nigerian authorities confirm new Ebola cases beyond the first patient, especially without travel links to Uganda.",
-                    "india_effect": "India could tighten airport screening and issue travel advisories, which may affect Indians working in Nigeria and travellers on routes to west Africa."
+                    "type": "unexplained",
+                    "note": "Investigators have not yet established how or where the patient was exposed, including whether infection occurred at Uganda's main airport."
                   }
-                ]
+                ],
+                "status": "unresolved"
+              },
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Nigeria confirms first Ebola case",
+                    "detail": "Nigeria confirmed a case of the Bundibugyo strain in a woman returning from Uganda, and the WHO called the outbreak complex.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Screening and tracing intensify",
+                    "detail": "Nigeria stepped up temperature checks at Lagos airport, while officials investigate whether Kenyan and Nigerian patients crossed paths at Uganda's main airport.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Other countries may tighten checks",
+                    "detail": "If more cases appear in new countries, health authorities elsewhere, possibly including India, could increase screening of arrivals from affected regions.",
+                    "basis": "inferred"
+                  },
+                  {
+                    "step": "Indian travellers and residents affected",
+                    "detail": "Indians travelling to or living in affected African countries could face health checks, travel disruption and greater health risk.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The effect would not reach India if contact tracing contains the outbreak and no further cases appear in new countries or travel hubs."
               }
             }
           },
@@ -27635,94 +27954,170 @@
           "date": "2026-10-21T15:51:32.000Z",
           "relevance": "medium",
           "image": "https://s.france24.com/media/display/0898c536-cd66-11f1-87a1-4da0d2c6855d/w:1024/p:16x9/capture-404e6bea.jpg",
-          "why": "Russia agreed to resume three-way talks with Ukraine and the United States after President Putin met US envoy Steve Witkoff. The war stays at a high level, and its effect on India runs mainly through energy markets.",
+          "why": "Russia says it will resume US-brokered three-way talks with Ukraine in November in the United Arab Emirates (UAE), but only on a final deal, not a short ceasefire. Any eventual settlement could reshape the Russian oil trade that India relies on.",
           "implications": [
-            "The reports give different timing, with the Kremlin saying mid-November and Ukraine preferring early November, so the start of talks is not yet fixed.",
-            "Talks agreed in principle do not stop strikes on energy sites, so any effect on global oil supply and prices depends on what happens on the battlefield."
+            "Putin's insistence on discussing a final peace deal rather than a short ceasefire means fighting may continue during the talks, so near-term change for India is limited.",
+            "A final settlement could eventually lead to a review of Western sanctions on Russia, which could change the discounts and terms on which Indian refiners buy Russian crude.",
+            "Holding the talks in the UAE places the negotiations in a Gulf partner with close ties to India, though the reports describe no Indian role."
           ],
           "analysis": {
             "v": 3,
-            "at": "2026-10-23T05:10:02.657Z",
-            "tier": "quick",
-            "primary": "escalation",
-            "complement": null,
+            "at": "2026-10-24T04:52:28.655Z",
+            "tier": "deep",
+            "primary": "conflicting",
+            "complement": "impact_chain",
             "features": [
+              "conflict",
               "armed_conflict",
+              "fast_moving",
               "pending_outcome"
             ],
             "exposure": {
               "level": "medium",
-              "reason": "The channel is global oil and energy prices, which depend on the war's effect on Russian energy facilities. The reports describe talks, not a change in supply, so exposure is moderate."
+              "reason": "The talks reach India mainly through its imports of Russian crude oil and its relationship with Moscow. Only talks have been agreed, so any effect remains indirect for now."
             },
             "horizon": {
-              "value": "weeks",
-              "reason": "Talks are expected in early or mid-November, so any change in the war's course would come after that."
+              "value": "months",
+              "reason": "Talks are due in November, and any change to sanctions or oil trade would depend on a final deal that could take months."
             },
             "confidence": {
-              "level": "medium",
-              "reason": "All three reports come from France 24, though they cite on-record statements from the Kremlin and President Zelenskiy, and the dates for the talks differ."
+              "level": "high",
+              "reason": "France 24, Al Jazeera and Africanews report on-record statements from Putin, Kremlin spokesman Peskov and Zelenskiy, although the exact date has not been confirmed."
             },
-            "outlets": 1,
+            "outlets": 3,
             "affected": [
               {
                 "group": "Fuel & LPG users",
                 "direction": "unclear",
-                "what": "fuel price pressure",
-                "effect": "If talks lowered strikes on energy sites, global oil prices could ease; continued strikes could keep them elevated, which would reach Indian fuel costs through import prices.",
+                "what": "longer-term crude costs",
+                "effect": "Any eventual settlement could change the price and supply of Russian crude to Indian refiners, which could affect domestic fuel costs over time.",
                 "basis": "inferred"
               },
               {
                 "group": "Importers & traders",
                 "direction": "unclear",
-                "what": "energy import costs",
-                "effect": "Importers of crude and energy-linked goods face costs that depend on whether the war's strikes on energy infrastructure continue or ease.",
+                "what": "Russian oil trade terms",
+                "effect": "Indian refiners and traders dealing with Russia could see sanctions and payment arrangements change if the talks lead to a final deal.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "Whether three-way talks between Russian, Ukrainian and US negotiators actually take place",
-                "why": "It would show whether the diplomatic track is moving beyond statements of readiness.",
-                "when": "Early to mid-November 2026",
+                "what": "An announcement of the exact date of the three-way talks in the UAE",
+                "why": "A fixed date would show whether talks resume in early or mid-November and that the process is moving forward.",
+                "when": "November 2026",
+                "where": "The Kremlin"
+              },
+              {
+                "what": "Whether the November talks discuss a ceasefire or only a final settlement",
+                "why": "This would show whether Putin's position that he will not discuss a short ceasefire holds at the table.",
+                "when": "November 2026",
                 "where": ""
               }
             ],
             "context": [
-              "India imports most of its crude oil, so strikes on oil depots and power infrastructure in a major producing region can influence the global prices Indian consumers and refiners face."
+              "Western sanctions and price restrictions on Russian oil shape how Indian refiners pay for and ship it, so any change in sanctions affects those terms.",
+              "India has kept close ties with both Russia and Western countries throughout the war, and Russia remains a major supplier of military equipment to India."
             ],
             "terms": [
               {
-                "term": "trilateral talks",
-                "meaning": "Negotiations involving three parties, here Russia, Ukraine and the United States, rather than two sides alone."
+                "term": "Kremlin",
+                "meaning": "The seat of the Russian presidency, used to refer to the Russian president's office and government."
+              },
+              {
+                "term": "trilateral",
+                "meaning": "Involving three parties, here Russia, Ukraine and the United States."
               }
             ],
             "frameworks": {
-              "escalation": {
-                "move": "none",
-                "rung": 6,
-                "current_rung": 6,
-                "previous_rung": null,
-                "development": "Russia said it is ready to resume three-way talks with Ukraine and the United States, and Ukraine said it supports the US proposal, after Putin met US envoy Steve Witkoff.",
-                "evidence": "The reports describe agreement to talk and a proposal, not a ceasefire in force, a withdrawal or an end to fighting, so the war stays at the rung set on 18 October.",
-                "next_signals": [
+              "conflicting": {
+                "disputed": {
+                  "item": "When the three-way talks should resume",
+                  "unit": "timing of talks"
+                },
+                "accounts": [
                   {
-                    "rung": 5,
-                    "signal": "A ceasefire or halt to strikes on each other's power and oil infrastructure being reported as in force."
+                    "outlet": "France 24",
+                    "value": "Mid-November",
+                    "origin": "The Kremlin",
+                    "time": "2026-10-21"
                   },
                   {
-                    "rung": 7,
-                    "signal": "Either side announcing a general mobilisation or launching a new large-scale offensive across the front."
+                    "outlet": "France 24",
+                    "value": "As soon as possible, preferably no later than early November",
+                    "origin": "Ukrainian President Volodymyr Zelenskiy",
+                    "time": "2026-10-21"
+                  },
+                  {
+                    "outlet": "Africanews",
+                    "value": "November, in the United Arab Emirates",
+                    "origin": "Kremlin spokesman Dmitry Peskov",
+                    "time": "2026-10-23"
+                  },
+                  {
+                    "outlet": "Al Jazeera",
+                    "value": "November, in the UAE",
+                    "origin": "The Kremlin",
+                    "time": "2026-10-23"
                   }
                 ],
-                "india_channels": [
-                  "oil",
-                  "trade"
+                "agreed": [
+                  "Russia has agreed to resume three-way talks with Ukraine and the United States.",
+                  "The talks are brokered by the United States and would be the first since negotiations stopped earlier this year.",
+                  "The talks are expected to take place in November."
                 ],
-                "conflict": "wzti51f",
-                "applied": "none",
-                "from": 6
+                "explanations": [
+                  {
+                    "type": "different source",
+                    "note": "Ukraine stated its preferred timing for the talks, while the Kremlin stated when Russia is ready, so the figures reflect each side's position."
+                  },
+                  {
+                    "type": "different time",
+                    "note": "Later Kremlin statements on 2026-10-23 name November and the UAE without repeating the earlier mid-November wording."
+                  }
+                ],
+                "status": "converging"
+              },
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Russia agrees to resume talks",
+                    "detail": "After Putin met US envoy Steve Witkoff, the Kremlin said three-way talks with Ukraine and the United States would resume in November in the UAE.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Talks focus on final deal",
+                    "detail": "Putin said Russia will discuss the security parameters of a final peace deal, not a short ceasefire, which sets the scope of the negotiations.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Sanctions could eventually be reviewed",
+                    "detail": "If the talks produce a final settlement, Western sanctions on Russian energy could later be eased or changed.",
+                    "basis": "inferred"
+                  },
+                  {
+                    "step": "Indian oil import terms shift",
+                    "detail": "A change in sanctions could alter the discounts, payment routes and supply of Russian crude that Indian refiners buy, affecting India's import costs.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The effect would not reach India if the talks fail to produce a final deal or if sanctions on Russian energy stay unchanged after any settlement."
               }
-            }
+            },
+            "reading": [
+              {
+                "headline": "Former U.S. ambassador on Trump's recent moves to embrace Russia",
+                "url": "https://www.npr.org/2026/10/20/nx-s1-6007865/former-u-s-ambassador-on-trumps-recent-moves-to-embrace-russia",
+                "source": "npr",
+                "date": "2026-10-20T11:03:48.000Z"
+              },
+              {
+                "headline": "Ukraine: Coerced into a Corner?",
+                "url": "https://www.france24.com/en/tv-shows/spotlight/20261011-ukraine-coerced-into-a-corner",
+                "source": "france24",
+                "date": "2026-10-11T17:36:49.000Z"
+              }
+            ]
           },
           "reports": [
             {
@@ -33113,15 +33508,16 @@
   "source": "BBC News & The Guardian & NPR & Al Jazeera & MercoPress & ABC News & The New York Times & CNBC & CBS News & DW & France 24 & Africanews & South China Morning Post & The Hindu & Mint",
   "lastRun": {
     "filter": {
-      "reject": 61,
-      "watch": 3,
-      "analyse": 3
+      "reject": 63,
+      "analyse": 4,
+      "watch": 2,
+      "brief": 1
     },
     "watch": {
-      "checked": 0,
+      "checked": 1,
       "promoted": 0,
       "expired": 0,
-      "open": 6
+      "open": 7
     },
     "wars": {
       "linked": 0,
@@ -33134,44 +33530,44 @@
       "waiting": 0
     },
     "skipped": {
-      "since": "2026-10-23T17:19:45.585Z",
+      "since": "2026-10-23T21:36:49.139Z",
       "counts": {
         "live_blog": 2,
-        "section": 11
+        "section": 8
       },
       "examples": {
         "live_blog": [
-          "Melania Trump has helped broker ceasefire in Russian-occupied Ukrainian town, says White House – as it happened",
-          "Trump repeats false claim that other Dan Sullivan on Alaska ballot is ‘cheating’ during Florida rally - live"
+          "Ramaswamy accuses Acton of ‘lying’ about attack ad, but court records contradict mother’s claim – as it happened",
+          "Iran war live: Saudi downs Houthi ballistic missile targeting Riyadh"
         ],
         "section": [
-          "Why is the UK at the forefront of AI-driven job cuts?",
-          "Russia, Ukraine agree to Melania Trump-brokered localised ceasefire",
-          "Trump’s broken promises: economy, war and ICE",
-          "Aston Villa vs Manchester City: Premier League – teams, prediction, lineups",
-          "Israel locks down occupied West Bank after Hebron shooting"
+          "Argentina identifies dozens of victims killed in its ‘Dirty War’",
+          "Marco Rubio urges Cubans to collaborate with CIA to topple gov’t",
+          "Century-old mosque near Indian PM’s residence under gov’t threat",
+          "Syrians protest Israel’s incursions near occupied Golan Heights",
+          "Macklemore: ‘I say free Palestine’ as he kicks off a new tour"
         ]
       }
     },
     "finance": {
       "moved": 0,
-      "checked": 1
+      "checked": 0
     },
-    "analysed": 67,
-    "added": 3,
+    "analysed": 70,
+    "added": 2,
     "merged": 4,
-    "rejected": 60,
+    "rejected": 64,
     "failedBatches": 0,
     "feeds": {
       "bbc": {
         "feedsOk": 6,
         "feedsFailed": 0,
-        "items": 149
+        "items": 152
       },
       "guardian": {
         "feedsOk": 7,
         "feedsFailed": 0,
-        "items": 200
+        "items": 197
       },
       "npr": {
         "feedsOk": 4,
@@ -33181,7 +33577,7 @@
       "aljazeera": {
         "feedsOk": 1,
         "feedsFailed": 0,
-        "items": 13
+        "items": 12
       },
       "mercopress": {
         "feedsOk": 3,
@@ -33196,7 +33592,7 @@
       "nyt": {
         "feedsOk": 5,
         "feedsFailed": 0,
-        "items": 167
+        "items": 168
       },
       "cnbc": {
         "feedsOk": 3,
@@ -33206,7 +33602,7 @@
       "cbs": {
         "feedsOk": 2,
         "feedsFailed": 0,
-        "items": 50
+        "items": 48
       },
       "dw": {
         "feedsOk": 3,
@@ -33230,18 +33626,18 @@
       }
     },
     "shareImages": {
-      "tried": 3,
-      "found": 3,
+      "tried": 2,
+      "found": 2,
       "summaries": 0
     },
     "threads": {
-      "assigned": 3,
-      "created": 2,
+      "assigned": 2,
+      "created": 1,
       "failedBatches": 0
     },
     "summaries": {
-      "written": 2,
-      "due": 2
+      "written": 1,
+      "due": 1
     },
     "kinds": {
       "labelled": 0,
@@ -33249,9 +33645,9 @@
       "failedBatches": 0
     },
     "frames": {
-      "done": 0,
-      "waiting": 6,
-      "failedBatches": 1
+      "done": 6,
+      "waiting": 0,
+      "failedBatches": 0
     },
     "stats": {
       "searched": 0,
@@ -33268,35 +33664,35 @@
       "filter": {
         "model": "claude-haiku-5-5",
         "calls": 6,
-        "inputTokens": 32060,
-        "outputTokens": 14239,
-        "cost": 0.0104
+        "inputTokens": 32834,
+        "outputTokens": 14622,
+        "cost": 0.0105
       },
       "analysis_quick": {
         "model": "claude-sonnet-5-5",
         "calls": 1,
-        "inputTokens": 2781,
-        "outputTokens": 2773,
-        "cost": 0.0333
+        "inputTokens": 2718,
+        "outputTokens": 302,
+        "cost": 0.0085
       },
       "analysis": {
         "model": "claude-opus-5-5",
         "calls": 2,
-        "inputTokens": 12114,
-        "outputTokens": 25239,
-        "cost": 0.5532
+        "inputTokens": 12153,
+        "outputTokens": 19685,
+        "cost": 0.4423
       },
       "threads": {
         "model": "claude-sonnet-5-5",
-        "calls": 3,
-        "inputTokens": 10484,
-        "outputTokens": 1788,
-        "cost": 0.0389
+        "calls": 2,
+        "inputTokens": 7914,
+        "outputTokens": 273,
+        "cost": 0.0185
       }
     },
     "spend": {
-      "thisDesk": 0.6357,
-      "today": 0.6357,
+      "thisDesk": 0.4799,
+      "today": 1.3016,
       "cap": 6
     }
   },
