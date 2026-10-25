@@ -2,7 +2,7 @@
   "schema": 4,
   "region": "India",
   "since": "2026-10-02",
-  "updatedAt": "2026-10-25T18:30:47.495Z",
+  "updatedAt": "2026-10-25T19:09:38.044Z",
   "sectors": [
     {
       "id": "energy",
@@ -603,8 +603,11 @@
           "date": "2026-10-25T03:38:07.000Z",
           "relevance": "medium",
           "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/25/ed09dbbb-63ee-415d-868d-553e1f20ad07_0a307aa5.jpg?itok=9wi5Q2zZ&v=1792899480",
-          "why": "",
-          "implications": [],
+          "why": "Indonesia has cut its gas exports, and Singapore's Prime Minister Lawrence Wong has said suppliers with signed contracts should honour them. Singapore could turn to other suppliers, which may tighten gas markets that India also buys from.",
+          "implications": [
+            "If Singapore's buyers seek replacement cargoes of liquefied natural gas on the open market, they could compete with Indian importers for the same supplies and push spot prices higher.",
+            "Indian gas users, such as fertiliser makers, city gas distributors and power producers, rely partly on imported gas, so higher import costs could gradually raise their input costs."
+          ],
           "place": {
             "name": "Singapore",
             "country": "Singapore",
@@ -643,7 +646,97 @@
             }
           ],
           "priority": 35,
-          "thread": "t17rclr0"
+          "thread": "t17rclr0",
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-25T19:07:40.917Z",
+            "tier": "quick",
+            "primary": "trade_flow",
+            "complement": null,
+            "features": [
+              "trade_flow",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "The reports do not link the cut to India directly. Any effect would come indirectly through competition for liquefied natural gas cargoes and prices in the wider Asian gas market."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "The timing depends on how long Indonesia's cut lasts and whether Singapore buys more on the spot market, which the reports do not say."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "The report rests on a single outlet, the South China Morning Post, quoting Singapore's Prime Minister on the record; the size, duration and reasons for the cut are not given."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "up",
+                "what": "imported gas costs",
+                "effect": "If Asian gas prices rise because Singapore seeks new supplies, piped and compressed gas costs in India could increase through higher import bills for distributors.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Power consumers",
+                "direction": "unclear",
+                "what": "gas-based power costs",
+                "effect": "Gas-fired power plants that depend on imported gas could face higher fuel costs if global supplies tighten, which may eventually influence electricity costs.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Indonesian government or supplier statements on how long and how deep the gas export cut will be",
+                "why": "The scale and duration of the cut would show how much extra demand Singapore may place on the wider gas market.",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "Whether Singapore's buyers begin buying additional liquefied natural gas cargoes on the spot market",
+                "why": "Extra spot buying by Singapore would indicate stronger competition for supplies that Indian importers also depend on.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "India imports a large share of its natural gas as liquefied natural gas, so it is exposed to changes in global gas prices.",
+              "When one supplier cuts exports, affected buyers usually look to the spot market, which tends to lift prices for all buyers in the region."
+            ],
+            "terms": [],
+            "frameworks": {
+              "trade_flow": {
+                "good": "Natural gas",
+                "actors": [
+                  {
+                    "country": "Indonesia",
+                    "role": "exporter",
+                    "is_india": false
+                  },
+                  {
+                    "country": "Singapore",
+                    "role": "importer",
+                    "is_india": false
+                  },
+                  {
+                    "country": "India",
+                    "role": "third_party",
+                    "is_india": true
+                  }
+                ],
+                "change": {
+                  "type": "cut",
+                  "effective": ""
+                },
+                "india_position": {
+                  "role": "competing_buyer",
+                  "note": "The reports do not say India buys gas from Indonesia. India could, however, compete with Singapore for replacement liquefied natural gas cargoes, which may raise costs for Indian buyers."
+                },
+                "volumes": []
+              }
+            }
+          }
         },
         {
           "id": "s1hx6f8",
@@ -12900,8 +12993,13 @@
           "source": "aljazeera",
           "date": "2026-10-24T13:06:03.000Z",
           "relevance": "medium",
-          "why": "",
-          "implications": [],
+          "why": "Reports say the United States has drawn up plans to renew strikes on Iran, while Iran warns it will not let US warships come close. Renewed fighting would threaten Gulf oil supplies, shipping routes and Indians living in the region.",
+          "implications": [
+            "Al Jazeera reports that the Pentagon's plans are timed for after the US midterm polls, so any decision may follow that political calendar.",
+            "Iranian officials and analysts signal there will be no backing down, which raises the risk of naval confrontation near shipping lanes that carry oil to India.",
+            "Analysts question what renewed strikes could achieve, so the outcome remains uncertain even if the plans are approved.",
+            "Further fighting could add to existing disruption around the Strait of Hormuz, which may raise freight and insurance costs for Indian importers."
+          ],
           "place": {
             "name": "Strait of Hormuz",
             "country": "Iran",
@@ -12965,7 +13063,134 @@
           ],
           "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/reuters_6adcacbb-1792847035.jpg?resize=1920%2C1440",
           "priority": 35,
-          "thread": "t2ogxay"
+          "thread": "t2ogxay",
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-25T19:07:40.916Z",
+            "tier": "standard",
+            "primary": "escalation",
+            "complement": null,
+            "features": [
+              "armed_conflict",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "high",
+              "reason": "Renewed US strikes on Iran would bear on Gulf oil supply, shipping through Hormuz and the safety of Indians in the region, all of which touch household fuel costs and family incomes."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Reports say the strike plans are intended for after the US midterm polls, so any effect would follow that decision rather than arrive immediately."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "Al Jazeera and The New York Times report the strike plans, but these rest on unnamed reports and no official US confirmation of approval."
+            },
+            "outlets": 2,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "up",
+                "what": "fuel and cooking gas costs",
+                "effect": "Renewed strikes could push up crude and gas prices, which may raise refiners' costs and feed through to petrol, diesel and LPG prices in India.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Gulf & overseas workers and families",
+                "direction": "down",
+                "what": "safety and job security",
+                "effect": "Indians working in Gulf countries could face greater safety risks and job disruption if fighting widens, which may affect remittances to families at home.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Importers & traders",
+                "direction": "up",
+                "what": "freight and insurance costs",
+                "effect": "Tension near Gulf shipping lanes could raise freight and marine insurance charges for goods moving to and from India.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Whether President Trump approves the reported CENTCOM plans for new strikes on Iran",
+                "why": "Approval would signal renewed US attacks and a higher risk to Gulf oil and shipping.",
+                "when": "after the midterm polls",
+                "where": "White House; US Department of Defense"
+              },
+              {
+                "what": "Any Iranian action against US warships approaching its waters",
+                "why": "A naval clash would indicate direct confrontation and greater danger to tankers using the Strait of Hormuz.",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "Whether shipping through the Strait of Hormuz reopens or remains disrupted",
+                "why": "Reopening would ease pressure on India's oil and gas imports, while continued disruption would keep costs elevated.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "India imports most of the crude oil it uses, and a large share of its oil and gas imports passes through the Strait of Hormuz.",
+              "Millions of Indians work in Gulf countries, and the money they send home is an important source of income for many families, especially in states such as Kerala.",
+              "When Gulf conflict threatens shipping, oil prices and marine insurance costs tend to rise, which can raise import bills and fuel costs."
+            ],
+            "terms": [
+              {
+                "term": "CENTCOM",
+                "meaning": "US Central Command, the American military headquarters responsible for operations in the Middle East, including the Gulf."
+              },
+              {
+                "term": "midterm polls",
+                "meaning": "US elections held midway through a president's four-year term, choosing members of Congress and other officials."
+              }
+            ],
+            "frameworks": {
+              "escalation": {
+                "move": "none",
+                "rung": 6,
+                "current_rung": 6,
+                "previous_rung": null,
+                "development": "This story adds reports that US military planners have drawn up plans for renewed strikes on Iran, and Iranian warnings that US warships will not be allowed to come close.",
+                "evidence": "The reports describe plans, deliberations and threats rather than a new attack, so the war stays at rung 6, set on 2026-10-20 over Iranian strikes on third countries and disruption of Hormuz.",
+                "next_signals": [
+                  {
+                    "rung": 7,
+                    "signal": "The United States and Iran engage in full-scale war, with large-scale military operations across Iranian territory and the wider Gulf."
+                  },
+                  {
+                    "rung": 5,
+                    "signal": "Iranian attacks on Gulf states and shipping stop and the Strait of Hormuz reopens, while direct US–Iran strikes continue."
+                  }
+                ],
+                "india_channels": [
+                  "oil",
+                  "shipping",
+                  "remittances",
+                  "diaspora safety",
+                  "flights"
+                ],
+                "conflict": "w1ye2krf",
+                "applied": "none",
+                "from": 6
+              }
+            },
+            "reading": [
+              {
+                "headline": "Troubled waters: life during wartime for Iranians on the strait of Hormuz",
+                "url": "https://www.theguardian.com/artanddesign/2026/oct/21/strait-of-hormuz-life-amid-wartime-iran",
+                "source": "guardian",
+                "date": "2026-10-21T05:00:02.000Z"
+              },
+              {
+                "headline": "Dire straits: why Filipino sailors continue to brave troubled Middle East waters",
+                "url": "https://www.scmp.com/week-asia/economics/article/3371457/dire-straits-why-filipino-sailors-continue-brave-troubled-middle-east-waters",
+                "source": "scmp",
+                "date": "2026-10-20T05:00:05.000Z"
+              }
+            ]
+          },
+          "conflict": "w1ye2krf"
         },
         {
           "id": "sryjdeo",
@@ -13084,8 +13309,11 @@
           "source": "aljazeera",
           "date": "2026-10-23T17:26:13.000Z",
           "relevance": "medium",
-          "why": "",
-          "implications": [],
+          "why": "Romania has blamed Russia after a drone sank the Comoros-flagged ship Khoryv near its waters in the Black Sea, killing one sailor and leaving three missing. Indian importers could be affected if Black Sea shipping costs rise.",
+          "implications": [
+            "If merchant ships in the Black Sea come to be treated as targets, shipowners and insurers may charge more for voyages there, which can raise the delivered cost of cargoes bound for importers.",
+            "An attack near a neighbouring country's waters could pull that country and its allies more directly into the war, which may widen the area where commercial shipping faces risk."
+          ],
           "place": {
             "name": "Black Sea off Romania",
             "country": "Romania",
@@ -13127,7 +13355,98 @@
           ],
           "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/afp_6ad7e5888d08-1792533896.jpg?resize=1920%2C1440",
           "priority": 35,
-          "thread": "t14axxk2"
+          "thread": "t14axxk2",
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-25T19:09:38.025Z",
+            "tier": "quick",
+            "primary": "escalation",
+            "complement": null,
+            "features": [
+              "armed_conflict"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "The reports describe no direct link to India. Any effect would be indirect, through Black Sea freight and insurance costs for imports such as edible oil and fertiliser, and only if shipping is disrupted."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Any effect would appear only if shipowners and insurers change their pricing or routes after this incident, which would take some weeks to show in import costs."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single outlet, Al Jazeera, and the attribution to Russia is Romania's claim; Russia's response and the cause of the sinking are not reported."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "Black Sea cargo costs",
+                "effect": "Importers of Black Sea cargoes such as edible oil or fertiliser could face higher freight and insurance costs if shipowners treat the route as more dangerous.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Food shoppers",
+                "direction": "unclear",
+                "what": "edible oil prices",
+                "effect": "If higher shipping costs or disruption raise the landed cost of imported edible oils, some of it could reach household cooking oil prices.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Whether Russia responds to Romania's accusation and whether Romania takes the matter to its allies",
+                "why": "It would show whether the incident stays a single attack or becomes a wider confrontation involving third countries.",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "Whether shipowners or insurers change Black Sea routes or raise voyage charges after the sinking",
+                "why": "It would show whether the attack is likely to raise costs for cargoes that India imports.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "The Black Sea is a major route for grain, sunflower oil and fertiliser, and India imports edible oils and fertiliser, so disruption there can reach Indian import costs.",
+              "Romania is a member of NATO and the European Union, so an attack near its waters is treated by allies as a security matter and not only as a shipping incident."
+            ],
+            "terms": [
+              {
+                "term": "Comoros-flagged",
+                "meaning": "The ship is registered in Comoros, which is its legal home country, even though its owners, cargo and crew may come from elsewhere."
+              }
+            ],
+            "frameworks": {
+              "escalation": {
+                "move": "none",
+                "rung": 6,
+                "current_rung": 6,
+                "previous_rung": null,
+                "development": "A drone attack sank a commercial ship near Romanian waters, killing one sailor, and Romania has blamed Russia, which extends the war's risks to shipping near a third country.",
+                "evidence": "The attack fits the war's existing level of strikes on critical infrastructure or third countries. The report describes no step to full-scale war, and the attribution to Russia is Romania's claim.",
+                "next_signals": [
+                  {
+                    "rung": 7,
+                    "signal": "A direct military clash between Russia and Romania or its allies, or a formal allied move to treat the attack as an armed attack on a member state, would show a move to full-scale war."
+                  },
+                  {
+                    "rung": 5,
+                    "signal": "A new ceasefire on energy and shipping strikes coming into force, with attacks reported to have stopped, would show a move down to sustained strikes."
+                  }
+                ],
+                "india_channels": [
+                  "shipping",
+                  "trade"
+                ],
+                "conflict": "wzti51f",
+                "applied": "none",
+                "from": 6
+              }
+            }
+          },
+          "conflict": "wzti51f"
         },
         {
           "id": "s89hcpz",
@@ -16950,8 +17269,11 @@
           "source": "aljazeera",
           "date": "2026-10-23T17:26:21.000Z",
           "relevance": "medium",
-          "why": "",
-          "implications": [],
+          "why": "Al Jazeera reports that US consumer sentiment has fallen to a near-record low ahead of the midterm elections. Weaker American household confidence could reduce demand for goods and services bought from India.",
+          "implications": [
+            "If anxious US households cut spending, American demand for Indian goods and services could soften, which would matter most for exporters selling to US consumers.",
+            "Indian technology and services firms earn much of their revenue from US clients, so a weaker American economy could slow their hiring over time."
+          ],
           "place": {
             "name": "Washington",
             "country": "United States",
@@ -16991,7 +17313,84 @@
           "finChecked": true,
           "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/ap_6adb8adaed96d-1792772826.jpg?resize=1920%2C1440",
           "priority": 45,
-          "thread": "tkivn88"
+          "thread": "tkivn88",
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-25T19:09:38.024Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "medium",
+              "reason": "The channel is US demand for Indian exports and services, which affects particular industries rather than household essentials. The reports do not describe any direct effect on India, so the link is inferred."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Weaker US spending takes time to reduce orders, export volumes and hiring, so any effect on India would build gradually."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single outlet, Al Jazeera, with no official source cited, and any effect on India is not covered in the report."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Large exporters",
+                "direction": "down",
+                "what": "US demand for exports",
+                "effect": "Weaker American household confidence could reduce orders from US buyers, which would lower export volumes for Indian firms that sell to American consumers.",
+                "basis": "inferred"
+              },
+              {
+                "group": "IT & services workers",
+                "direction": "unclear",
+                "what": "US client spending",
+                "effect": "If US businesses and households become more cautious, Indian services firms could see slower demand, which may affect hiring.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "The next US consumer sentiment reading and any sign of a fall in American retail spending",
+                "why": "It would show whether the weakness is deepening and likely to reduce demand for Indian exports.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "The United States is one of India's largest export markets, and Indian information technology firms earn a large share of their revenue there.",
+              "Consumer sentiment surveys are a guide to future spending, but they do not always translate into lower actual spending."
+            ],
+            "terms": [
+              {
+                "term": "consumer sentiment",
+                "meaning": "A survey-based measure of how confident households feel about their finances and the economy, often used to gauge future spending."
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "US sentiment falls sharply",
+                    "detail": "Al Jazeera reports that US consumer sentiment has hit a near-record low before the midterm elections.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Economic anxiety becomes political",
+                    "detail": "The report says independent voters' economic worries carry political implications, which shows how widespread the concern is among American households.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "US demand for Indian goods may weaken",
+                    "detail": "If anxious households spend less, American orders for Indian exports and services could fall, which may affect exporters and technology firms.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "American households keep spending despite low confidence, so demand for Indian exports and services does not weaken."
+              }
+            }
+          }
         },
         {
           "id": "se48dne",
@@ -21941,8 +22340,13 @@
           "source": "cnbc",
           "date": "2026-10-22T14:21:56.000Z",
           "relevance": "medium",
-          "why": "",
-          "implications": [],
+          "why": "CNBC reports that unrest over the cost of living in France has pushed French government bond yields to a 24-year high. Euro-zone market stress and disruption in Paris may affect investment flows toward India and Indians studying or travelling in France.",
+          "implications": [
+            "Higher French borrowing costs raise questions over France's budget and growth, which investors are weighing ahead of further protests, according to CNBC.",
+            "Saturday's protests drew more than 400,000 people nationwide and 110,000 in Paris, and 1,314 people were arrested, so disruption to daily life in French cities is continuing.",
+            "Museum closures and barricaded shops in Paris could disrupt plans for Indian tourists and business visitors during protest days.",
+            "Officials are investigating a separate drive-by shooting in Trappes, outside Paris, as a potential terrorist act, which adds to security concerns for residents and visitors."
+          ],
           "place": {
             "name": "Paris",
             "country": "France",
@@ -22100,7 +22504,155 @@
           ],
           "image": "https://image.cnbcfm.com/api/v1/image/108445227-1792648710242-gettyimages-2300710122-AFP_D3XH84B.jpeg?v=1792651411&w=1920&h=1080",
           "priority": 60,
-          "thread": "t1rn1bq5"
+          "thread": "t1rn1bq5",
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-25T19:07:40.913Z",
+            "tier": "deep",
+            "primary": "market_move",
+            "complement": "scenarios",
+            "features": [
+              "market_move",
+              "fast_moving",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The unrest reaches India mainly through global investor sentiment and the safety and travel of Indians in France. No direct effect on Indian household essentials is reported, which keeps exposure medium."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Further protests are expected, and any knock-on effect on investor sentiment or travel would build over the coming weeks rather than immediately."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "France 24, CBS News and the South China Morning Post agree on the protests and the official police numbers, but the bond-yield move rests on CNBC alone."
+            },
+            "outlets": 6,
+            "affected": [
+              {
+                "group": "Students abroad",
+                "direction": "down",
+                "what": "safety and daily disruption",
+                "effect": "Indian students in Paris may face closed venues, barricaded shops and protest-related disruption, as Chinese students there are reported to be doing.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Travellers & pilgrims",
+                "direction": "down",
+                "what": "access to Paris attractions",
+                "effect": "Indian tourists could find museums closed and city centres disrupted on protest days, which may affect itineraries in France.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Equity & mutual fund investors",
+                "direction": "unclear",
+                "what": "foreign investor sentiment",
+                "effect": "If euro-zone market stress deepens, foreign investors could become more cautious toward emerging markets, which may affect Indian share prices held by mutual funds.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Whether further announced protests in France stay peaceful or return to rioting and looting",
+                "why": "A repeat of the earlier violence would signal deeper instability and greater risk for residents and visitors in France.",
+                "when": "",
+                "where": "French Interior Ministry"
+              },
+              {
+                "what": "The direction of French government bond yields after the latest weekend of protests",
+                "why": "Falling yields would suggest investor fears are easing, while further rises would point to spreading market stress.",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "The findings of the investigation into the Trappes drive-by shooting",
+                "why": "Confirmation of a terrorist motive would raise security concerns for people living in or travelling to France.",
+                "when": "",
+                "where": "French authorities"
+              }
+            ],
+            "context": [
+              "A government bond yield is the return investors demand to lend to that government, and it rises when they see greater risk in its budget or politics.",
+              "When stress builds in a major advanced economy, global investors often reduce exposure to riskier assets, which can include shares and bonds in emerging markets such as India.",
+              "The European Union is one of India's largest trading partners, and many Indian students, tourists and professionals live in or travel to France."
+            ],
+            "terms": [
+              {
+                "term": "bond yields",
+                "meaning": "The annual return investors earn on government debt, which moves up when they demand more compensation for lending."
+              },
+              {
+                "term": "gendarmes",
+                "meaning": "Members of France's military police force, which handles public order alongside the regular national police."
+              },
+              {
+                "term": "euro zone",
+                "meaning": "The group of European Union countries that use the euro as their shared currency."
+              }
+            ],
+            "frameworks": {
+              "market_move": {
+                "moved": {
+                  "what": "French government bond yields",
+                  "kind": "bond yields",
+                  "direction": "up",
+                  "size": "24-year high",
+                  "period": "amid the unrest, as reported on 24 October"
+                },
+                "cause": {
+                  "text": "CNBC attributes the rise to French unrest, with investors weighing risks to the budget, growth and particular sectors ahead of more protests.",
+                  "status": "reported",
+                  "by": "CNBC"
+                },
+                "duration": "unclear",
+                "channels": [
+                  {
+                    "channel": "foreign investment flows",
+                    "india_link": "Stress in a large euro-zone bond market could make global investors more risk-averse, which may lead some to pull money from emerging markets including India.",
+                    "basis": "inferred"
+                  },
+                  {
+                    "channel": "company earnings",
+                    "india_link": "If French unrest weighs on growth, demand from France for Indian goods and services could weaken, which may affect Indian exporters and service firms with European clients.",
+                    "basis": "inferred"
+                  }
+                ],
+                "not_settled": "The reports do not say whether bond yields eased after Saturday's largely peaceful protests or how lasting the budget and growth risks are."
+              },
+              "scenarios": {
+                "question": "Will France's protests over the cost of living and school funding stay largely peaceful, or return to the rioting and looting seen earlier?",
+                "scenarios": [
+                  {
+                    "name": "Protests stay peaceful",
+                    "what": "Marches continue on the pattern of Saturday, when most of the more than 400,000 protesters demonstrated peacefully under heavy security.",
+                    "signal": "Further protest days pass with mostly peaceful marches and no repeat of widespread shop damage or looting.",
+                    "india_effect": "Disruption for Indian students and visitors would likely stay limited to protest days, and pressure on investor sentiment may ease."
+                  },
+                  {
+                    "name": "Riots return",
+                    "what": "Violence and looting resume on the scale of the earlier weekend, when 3,000 shops were damaged or looted, despite large police deployments.",
+                    "signal": "Reports of widespread looting, damaged shops and clashes in several French cities on a future protest day.",
+                    "india_effect": "Indians in France could face greater safety risks, and renewed market stress may weigh on investor appetite for emerging markets including India."
+                  },
+                  {
+                    "name": "Movement keeps broadening",
+                    "what": "The movement, which began in a few high schools and has grown to include labour unions and other activists, could widen further.",
+                    "signal": "Unions and other groups announce new nationwide actions alongside further student protests.",
+                    "india_effect": "Prolonged unrest could disrupt business and travel in France for longer, which may affect Indian firms and travellers dealing with the country."
+                  }
+                ]
+              }
+            },
+            "reading": [
+              {
+                "headline": "France is flashing euro crisis signals. This time, the fault lines are different",
+                "url": "https://www.cnbc.com/2026/10/23/france-debt-euro-zone-contagion.html",
+                "source": "cnbc",
+                "date": "2026-10-23T11:12:38.000Z"
+              }
+            ]
+          }
         },
         {
           "id": "s1gk7lne",
@@ -22109,8 +22661,12 @@
           "source": "cnbc",
           "date": "2026-10-23T22:49:42.000Z",
           "relevance": "medium",
-          "why": "",
-          "implications": [],
+          "why": "Moody's kept France's credit rating at Aa3 despite political unrest and rising borrowing costs, but issued a warning. Avoiding a downgrade lowers the immediate risk of wider European market stress spilling into Indian markets.",
+          "implications": [
+            "A downgrade could have forced some investors to sell French government bonds, so the hold reduces the chance of a sudden jump in European borrowing costs for now.",
+            "The New York Times reports that Moody's issued a warning, which means a later downgrade could still unsettle global bond markets if France's debt situation worsens.",
+            "If stress in France spread to other euro zone markets, global investors could pull money from emerging markets such as India, which may weigh on Indian shares and the rupee."
+          ],
           "place": {
             "name": "Paris",
             "country": "France",
@@ -22162,7 +22718,105 @@
           ],
           "image": "https://image.cnbcfm.com/api/v1/image/108453365-1792793633822-gettyimages-2300178554-AA_17102026_2998635.jpeg?v=1792793674&w=1920&h=1080",
           "priority": 50,
-          "thread": "t1rn1bq5"
+          "thread": "t1rn1bq5",
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-25T19:09:38.024Z",
+            "tier": "standard",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "The decision reaches India only indirectly, through global investor sentiment and euro zone demand. Because the rating was held rather than cut, no new shock is transmitted, so exposure is low."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Any effect on India depends on whether France's debt and political problems worsen over coming months and prompt further rating action."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "CNBC and The New York Times both report Moody's on-record decision, but the content of the warning is described only by The New York Times."
+            },
+            "outlets": 2,
+            "affected": [
+              {
+                "group": "Equity & mutual fund investors",
+                "direction": "unclear",
+                "what": "foreign investment flows",
+                "effect": "Renewed European bond stress could lead foreign investors to withdraw money from Indian markets, while continued stability may limit that risk.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Large exporters",
+                "direction": "unclear",
+                "what": "euro zone demand",
+                "effect": "Indian exporters selling to Europe could face weaker demand if France's debt troubles deepen and slow the euro zone economy.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Movements in French government borrowing costs in the coming weeks",
+                "why": "Further rises would suggest the warning is not calming investors and that stress could spread.",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "Further political unrest or instability in France",
+                "why": "Continued turmoil could raise the risk of a future downgrade and wider market stress.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "Credit rating agencies judge how likely a government is to repay its debts, and a downgrade can raise its borrowing costs and force some investors to sell its bonds.",
+              "France is one of the largest economies in the euro zone, and the European Union is among India's most important trading partners and export markets.",
+              "Stress in large developed-country bond markets can make global investors more cautious, leading them to move money out of emerging markets including India."
+            ],
+            "terms": [
+              {
+                "term": "Aa3",
+                "meaning": "A Moody's rating grade, fourth-highest on its scale, indicating a borrower of high quality with very low credit risk."
+              },
+              {
+                "term": "yields",
+                "meaning": "The return investors demand to hold a government's bonds; higher yields mean the government pays more to borrow."
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Moody's holds France at Aa3",
+                    "detail": "Moody's kept France's credit rating at Aa3 during a week of unrest and rising borrowing costs, while issuing a warning, according to The New York Times.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "French bond stress eases for now",
+                    "detail": "Avoiding a downgrade means investors are not pushed to sell French bonds because of a rating cut, which removes one immediate source of pressure on borrowing costs.",
+                    "basis": "inferred"
+                  },
+                  {
+                    "step": "Spillover to India stays limited",
+                    "detail": "With no new rating shock, global investors may have less reason to move money out of emerging markets, so Indian shares and the rupee could see little effect.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The effect would change if France's political turmoil or rising borrowing costs led to a later downgrade, turning the current relief into a fresh source of market stress."
+              }
+            },
+            "reading": [
+              {
+                "headline": "France is flashing euro crisis signals. This time, the fault lines are different",
+                "url": "https://www.cnbc.com/2026/10/23/france-debt-euro-zone-contagion.html",
+                "source": "cnbc",
+                "date": "2026-10-23T11:12:38.000Z"
+              }
+            ]
+          }
         },
         {
           "id": "su8p1pb",
@@ -24561,8 +25215,13 @@
           "date": "2026-10-22T13:58:28.000Z",
           "relevance": "medium",
           "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/22/c3ddfb2c-e673-4090-b7c2-efd996f5845e_ed325a29.jpg?itok=c6vb4ImW&v=1792677507",
-          "why": "",
-          "implications": [],
+          "why": "Two critical security flaws in PHP, a widely used programming language, leaked online and hackers are trying to exploit them worldwide. Indian organisations running PHP-based systems could be exposed and may need urgent fixes.",
+          "implications": [
+            "Because the flaw details leaked before every system could be fixed, organisations that have not yet applied updates may be open to attack while hackers actively search for vulnerable systems.",
+            "Indian IT and cyber-security staff could face the same intense workload that BBC News describes among workers who have spent days updating systems.",
+            "Indian IT services firms that maintain systems for overseas clients may face pressure to secure those clients' systems quickly, which could raise both workload and reputational risk.",
+            "NPR reports that artificial intelligence found the flaw, which suggests automated tools may increasingly uncover serious weaknesses faster than organisations can fix them."
+          ],
           "stage": "brief",
           "filter": {
             "verdict": "brief",
@@ -24621,7 +25280,119 @@
             "lon": 103.82
           },
           "priority": 40,
-          "thread": "t1b261c8"
+          "thread": "t1b261c8",
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-25T19:09:38.024Z",
+            "tier": "standard",
+            "primary": "timeline",
+            "complement": null,
+            "features": [
+              "fast_moving"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The flaws reach India through organisations and IT firms that run or maintain PHP-based systems. The impact falls mainly on one industry and its clients, so exposure is medium."
+            },
+            "horizon": {
+              "value": "now",
+              "reason": "Reports describe hackers already attempting widespread exploitation, so any organisation with unpatched systems faces risk immediately."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "Four outlets agree the flaws are being exploited, but two reports are breaking, no official source is named, and the AI-discovery account rests on NPR."
+            },
+            "outlets": 4,
+            "affected": [
+              {
+                "group": "IT & services workers",
+                "direction": "up",
+                "what": "urgent patching workload",
+                "effect": "Indian IT and security staff may face heavy workloads updating PHP-based systems, as the BBC reports workers elsewhere have done.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Large exporters",
+                "direction": "mixed",
+                "what": "client security demands",
+                "effect": "Indian IT services exporters could face urgent client requests to secure systems, adding work but also risk if breaches occur.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "An advisory from CERT-In on the PHP vulnerabilities",
+                "why": "It would show whether Indian authorities consider Indian systems at significant risk.",
+                "when": "",
+                "where": "CERT-In"
+              },
+              {
+                "what": "Reports of successful breaches at Indian organisations using the PHP flaws",
+                "why": "Such reports would show whether the global hacking attempts have turned into actual harm in India.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "PHP runs a large share of the world's websites and web applications, so a flaw in it can affect government portals, businesses and online services in many countries, including India.",
+              "In India, the Indian Computer Emergency Response Team (CERT-In) is the national agency that handles cyber incidents and issues advisories urging organisations to fix serious vulnerabilities.",
+              "Indian IT services companies earn much of their revenue by building and maintaining software systems for clients in the United States and Europe."
+            ],
+            "terms": [
+              {
+                "term": "PHP",
+                "meaning": "A programming language widely used to build websites and web applications that run on internet servers."
+              },
+              {
+                "term": "PHP2SHELL",
+                "meaning": "The name given to the vulnerability, which NPR reports was discovered by artificial intelligence in part of the internet's architecture."
+              }
+            ],
+            "frameworks": {
+              "timeline": {
+                "entries": [
+                  {
+                    "when": "2026-10-22",
+                    "what": "Organisations in Singapore were urged to fix two critical PHP security flaws immediately amid reports of widespread hacking attempts.",
+                    "actor": "Singapore",
+                    "outlet": "South China Morning Post",
+                    "type": "action",
+                    "verification": "confirmed"
+                  },
+                  {
+                    "when": "2026-10-23",
+                    "what": "IT and cyber experts told the BBC they had struggled over the previous 48 hours to update their systems.",
+                    "actor": "IT and cyber experts",
+                    "outlet": "BBC News",
+                    "type": "claim",
+                    "verification": "claimed"
+                  },
+                  {
+                    "when": "2026-10-23",
+                    "what": "Governments and businesses around the world were reported to be scrambling to contain the fallout after the vulnerabilities leaked online.",
+                    "actor": "Governments and businesses",
+                    "outlet": "CNBC",
+                    "type": "action",
+                    "verification": "confirmed"
+                  },
+                  {
+                    "when": "2026-10-24",
+                    "what": "NPR reported that artificial intelligence discovered the PHP2SHELL vulnerability, and that hackers moved in after news of it leaked.",
+                    "actor": "Security researchers and hackers",
+                    "outlet": "NPR",
+                    "type": "claim",
+                    "verification": "claimed"
+                  }
+                ],
+                "current_status": "Organisations worldwide are racing to update their systems while hackers attempt to exploit the leaked PHP flaws. No report mentions India specifically.",
+                "open_questions": [
+                  "How many Indian organisations run PHP systems that remain unpatched against these flaws?",
+                  "Has any Indian authority issued guidance on the PHP vulnerabilities?",
+                  "How did details of the vulnerability leak before fixes were widely applied?"
+                ]
+              }
+            }
+          }
         },
         {
           "id": "src1r30",
@@ -24630,8 +25401,11 @@
           "source": "aljazeera",
           "date": "2026-10-23T23:10:54.000Z",
           "relevance": "medium",
-          "why": "",
-          "implications": [],
+          "why": "Al Jazeera reports that Typhoon Champi has hit Taiwan, killing one person and injuring hundreds. Disruption there could eventually affect shipping and electronics supply chains that Indian importers depend on.",
+          "implications": [
+            "Authorities have warned of destructive winds and urged residents to shelter, which suggests ports, flights and factories on the island could be disrupted while the storm passes.",
+            "Any delay in Taiwanese exports could slow the arrival of components for Indian manufacturers and traders who import from Taiwan."
+          ],
           "place": {
             "name": "Taipei",
             "country": "Taiwan",
@@ -24664,7 +25438,72 @@
           ],
           "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/afp_6adbd99e74be-1792792990.jpg?resize=1920%2C1440",
           "priority": 20,
-          "thread": "t1wli4ry"
+          "thread": "t1wli4ry",
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-25T19:09:38.024Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "low",
+              "reason": "The reports describe only casualties and wind warnings in Taiwan and name no trade or supply channel to India, so any effect on India is indirect and speculative."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Any delay to shipments or components would appear only after the storm has passed and damage to ports and factories is known."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This is an early report from a single outlet, Al Jazeera, and the extent of damage and any disruption to industry are unconfirmed."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "electronics delivery timing",
+                "effect": "Indian importers of Taiwanese components could face delays if the storm interrupts production or port operations on the island.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Official updates from Taiwan's authorities on port, airport and factory operations after the storm",
+                "why": "They would show whether the typhoon causes lasting disruption to exports that reach India.",
+                "when": "",
+                "where": "Taiwan Central Weather Administration"
+              }
+            ],
+            "context": [
+              "Taiwan is a major producer of electronic components and semiconductors, and India imports many electronic parts, so disruption there can reach Indian buyers.",
+              "Typhoon disruption to ports and factories is usually temporary, and its length depends on the damage."
+            ],
+            "terms": [],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Typhoon strikes Taiwan",
+                    "detail": "Typhoon Champi hit Taiwan and, according to Al Jazeera, killed one person and injured hundreds.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Authorities warn of destructive winds",
+                    "detail": "Officials urged residents to shelter as the storm passed the island's northeast, a sign that normal activity could be interrupted.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Supply chains may be delayed",
+                    "detail": "If factories or ports are closed or damaged, shipments of Taiwanese goods could be delayed, which may affect Indian importers of electronics.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "Taiwan's ports and factories resume normal operations quickly after the storm, so no meaningful delay builds up in shipments to India."
+              }
+            }
+          }
         },
         {
           "id": "s1u3nset",
@@ -28706,8 +29545,12 @@
           "source": "africanews",
           "date": "2026-10-24T08:38:44.000Z",
           "relevance": "medium",
-          "why": "",
-          "implications": [],
+          "why": "A clinical trial of vaccines against the Bundibugyo strain of Ebola has begun in the Democratic Republic of Congo, where a deadly outbreak is spreading across parts of Africa. The outbreak matters to India mainly through travel and Indians working in Africa.",
+          "implications": [
+            "The trial is taking place in Ituri province, where the outbreak is embedded, so results will depend on testing the vaccines during an active epidemic.",
+            "Indians who work or travel in affected parts of Africa could face health risks until an effective vaccine against this strain is available.",
+            "Indian health authorities could use airport screening of travellers from affected countries if the outbreak continues to spread."
+          ],
           "place": {
             "name": "Bunia",
             "country": "DR Congo",
@@ -28760,7 +29603,106 @@
           "finChecked": true,
           "image": "https://images.euronews.com/articles/stories/09/96/53/74/1024x538_cmsv2_cdadcd1c-00fa-5ce5-874d-a2ae4e52d9e4-9965374.jpg",
           "priority": 40,
-          "thread": "t1ye80mu"
+          "thread": "t1ye80mu",
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-25T19:07:40.917Z",
+            "tier": "standard",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "low",
+              "reason": "The reports describe no direct link to India, so any effect would come indirectly through travel and Indians working in affected African countries."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Vaccine trials take time to produce results, so any effect on the outbreak or on travel risks would unfold over months."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "Africanews and the South China Morning Post both report the trial's launch, but neither names an official source, and trial results are not yet known."
+            },
+            "outlets": 2,
+            "affected": [
+              {
+                "group": "Travellers & pilgrims",
+                "direction": "unclear",
+                "what": "health screening and travel risk",
+                "effect": "Indian travellers to and from affected parts of Africa could face health checks or advisories if the outbreak keeps spreading.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Gulf & overseas workers and families",
+                "direction": "unclear",
+                "what": "health risk in Africa",
+                "effect": "Indians working in affected African countries could face infection risks until an effective vaccine against the Bundibugyo strain becomes available.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Early results from the TUMAini vaccine trial in Ituri province",
+                "why": "Positive results would suggest a tool to contain the outbreak and reduce risks to travellers and workers.",
+                "when": "",
+                "where": "World Health Organization"
+              },
+              {
+                "what": "Reports of the Ebola outbreak spreading to further countries or regions",
+                "why": "Wider spread would increase the chance of travel-related cases and health measures affecting Indians.",
+                "when": "",
+                "where": "World Health Organization"
+              },
+              {
+                "what": "Any Indian health advisory or airport screening for arrivals from affected countries",
+                "why": "Such measures would show Indian authorities see a direct risk from the outbreak.",
+                "when": "",
+                "where": "Ministry of Health and Family Welfare"
+              }
+            ],
+            "context": [
+              "Ebola is a severe viral disease that spreads through contact with the body fluids of infected people, and outbreaks have repeatedly occurred in central Africa.",
+              "Ebola vaccine development has focused on particular strains, and a vaccine that works against one strain may not protect against another.",
+              "India typically responds to international disease outbreaks with health screening at airports and travel advisories issued by its health ministry."
+            ],
+            "terms": [
+              {
+                "term": "Bundibugyo strain",
+                "meaning": "One of several types of Ebola virus, named after the area in Uganda where it was first identified."
+              },
+              {
+                "term": "TUMAini trial",
+                "meaning": "The name of the clinical study now evaluating candidate vaccines against the Bundibugyo strain in Congo."
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Vaccine trial begins in Congo",
+                    "detail": "A trial of candidate vaccines against the Bundibugyo strain of Ebola has started in Ituri province, Democratic Republic of Congo, where most cases and deaths have occurred.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Outbreak spreads across parts of Africa",
+                    "detail": "The South China Morning Post reports that this strain is driving a deadly outbreak across parts of Africa, which widens the area where people may be exposed.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Indians in Africa face exposure",
+                    "detail": "Indians working in or travelling to affected countries could face infection risks, which may prompt Indian authorities to issue advisories or screen arrivals.",
+                    "basis": "inferred"
+                  },
+                  {
+                    "step": "Vaccine success could reduce risk",
+                    "detail": "If the trial shows the vaccines work, wider use could help contain the outbreak and lower risks for Indians in the region.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The effect would not reach India if the outbreak stays confined to areas with little Indian travel or work, and no travel-related cases occur."
+              }
+            }
+          }
         },
         {
           "id": "sf9qvtj",
@@ -28821,8 +29763,11 @@
           "source": "aljazeera",
           "date": "2026-10-24T12:51:21.000Z",
           "relevance": "medium",
-          "why": "",
-          "implications": [],
+          "why": "Al Jazeera reports that a US intelligence memo warns Iranian plots against US citizens in the Middle East have reached advanced stages. This could add security risk across a region where India has large energy and diaspora interests.",
+          "implications": [
+            "If such plots were carried out, the conflict could widen beyond the current attacks on Gulf states, adding risk to the shipping and energy routes that India relies on.",
+            "Indians living and working in the Middle East could face greater security risk and travel disruption if attacks on foreign nationals in the region increase."
+          ],
           "stage": "watch",
           "filter": {
             "verdict": "watch",
@@ -28865,7 +29810,85 @@
           },
           "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/epa_6ad49897d480-1792317591.jpg?resize=1920%2C1440",
           "priority": 35,
-          "thread": "t2ogxay"
+          "thread": "t2ogxay",
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-25T19:09:38.023Z",
+            "tier": "quick",
+            "primary": "escalation",
+            "complement": null,
+            "features": [
+              "armed_conflict"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The reports mention no Indian target, but wider Iranian attacks could reach India through Gulf energy supplies and the safety of Indians in the region. The channel is indirect, so the exposure is medium."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "The memo describes plots at an advanced stage, but no attack is reported yet, so any effect on India would depend on whether and when attacks occur."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single outlet, Al Jazeera, describing an intelligence memo; the plots themselves are unconfirmed and no official on-record source is cited."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Gulf & overseas workers and families",
+                "direction": "unclear",
+                "what": "safety of Indians in region",
+                "effect": "Indians living in the Middle East could face higher security risk if Iranian attacks on foreign nationals increase, which may worry families at home.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "fuel supply risk",
+                "effect": "Wider attacks could further disturb Gulf energy routes, which could raise the cost of imported fuel and feed through to prices paid by households.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Any official US statement confirming the threat or reporting an actual Iranian attack on US citizens in the region",
+                "why": "It would show whether the warning has turned into a new attack that could widen the war.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "India imports most of its crude oil, and a large share of that oil and of its cooking gas comes from the Gulf, so instability near the Strait of Hormuz matters for fuel supply.",
+              "An intelligence warning describes an assessed threat and does not always lead to an attack."
+            ],
+            "terms": [],
+            "frameworks": {
+              "escalation": {
+                "move": "none",
+                "rung": 6,
+                "current_rung": 6,
+                "previous_rung": null,
+                "development": "A US intelligence memo reportedly warns that Iranian plots against US citizens in the Middle East have reached advanced stages, which is a warning rather than an attack.",
+                "evidence": "No new strike after 20 October is reported; the memo describes plots, not executed attacks. The war therefore stays at the level of strikes on critical infrastructure or third countries.",
+                "next_signals": [
+                  {
+                    "rung": 7,
+                    "signal": "The United States and Iran openly commit large forces to direct, full-scale combat rather than limited or regional attacks."
+                  }
+                ],
+                "india_channels": [
+                  "oil",
+                  "shipping",
+                  "diaspora safety",
+                  "remittances"
+                ],
+                "conflict": "w1ye2krf",
+                "applied": "none",
+                "from": 6
+              }
+            }
+          },
+          "conflict": "w1ye2krf"
         },
         {
           "id": "shoma6a",
@@ -34807,25 +35830,6 @@
   ],
   "source": "BBC News & The Guardian & NPR & Al Jazeera & MercoPress & ABC News & The New York Times & CNBC & CBS News & DW & France 24 & Africanews & South China Morning Post & The Hindu & Mint",
   "lastRun": {
-    "filter": {
-      "reject": 21,
-      "watch": 1
-    },
-    "health": {
-      "day": "2026-10-25",
-      "newCards24h": 0,
-      "keepRate2d": 0.045,
-      "alarm": [
-        "only 0 new stories in the main feed in 24 hours (expected 10+)",
-        "filter kept 4.5% of headlines over two days (expected 6%+)"
-      ]
-    },
-    "watch": {
-      "checked": 1,
-      "promoted": 0,
-      "expired": 0,
-      "open": 13
-    },
     "wars": {
       "linked": 0,
       "seeded": 0,
@@ -34837,33 +35841,29 @@
       "waiting": 0
     },
     "skipped": {
-      "since": "2026-10-25T16:37:30.380Z",
+      "since": "2026-10-25T18:30:47.495Z",
       "counts": {
-        "section": 7,
-        "live_blog": 2
+        "live_blog": 2,
+        "section": 1
       },
       "examples": {
-        "section": [
-          "When will the weather settle after Storm Boelo?",
-          "The Guardian view on Oxford Street’s pedestrianisation: cities should be designed around people, not cars | Editorial",
-          "Jordan FA chief says AFC Congress ‘pure politics’ at behest of Infantino",
-          "US and Israel elections: New leaders, same policies?",
-          "Can protests in Europe bring about change?"
-        ],
         "live_blog": [
           "Serbia votes as strongman Vučić faces grassroots challenge to 12-year rule – Europe live",
           "Here’s the latest."
+        ],
+        "section": [
+          "When is the 2026 Ballon d’Or, who are the favourites, and how can you watch it?"
         ]
       }
     },
     "finance": {
       "moved": 0,
-      "checked": 1
+      "checked": 0
     },
-    "analysed": 22,
-    "added": 1,
-    "merged": 1,
-    "rejected": 20,
+    "analysed": 15,
+    "added": 0,
+    "merged": 0,
+    "rejected": 15,
     "failedBatches": 0,
     "feeds": {
       "bbc": {
@@ -34884,7 +35884,7 @@
       "aljazeera": {
         "feedsOk": 1,
         "feedsFailed": 0,
-        "items": 12
+        "items": 11
       },
       "mercopress": {
         "feedsOk": 3,
@@ -34933,18 +35933,18 @@
       }
     },
     "shareImages": {
-      "tried": 1,
+      "tried": 0,
       "found": 0,
       "summaries": 0
     },
     "threads": {
-      "assigned": 1,
+      "assigned": 0,
       "created": 0,
       "failedBatches": 0
     },
     "summaries": {
-      "written": 1,
-      "due": 1
+      "written": 0,
+      "due": 0
     },
     "kinds": {
       "labelled": 0,
@@ -34952,61 +35952,47 @@
       "failedBatches": 0
     },
     "frames": {
-      "done": 0,
-      "waiting": 0,
+      "done": 10,
+      "waiting": 6,
       "failedBatches": 0
     },
     "stats": {
-      "searched": 2,
+      "searched": 0,
       "found": 0,
-      "reused": 1,
-      "none": 1,
+      "reused": 0,
+      "none": 0,
       "failed": 0,
       "proposed": 0,
       "droppedPoints": 0,
-      "pagesFetched": 2,
-      "samples": [
-        {
-          "headline": "Yemen's Houthi rebels claim new attacks on oil facilities and airports across Sa",
-          "result": "none",
-          "proposed": 0,
-          "checked": 0,
-          "pagesFetched": 2
-        },
-        {
-          "headline": "Iran says indirect talks with U.S. on ceasefire proposal continue",
-          "result": "reused saved series"
-        }
-      ]
+      "pagesFetched": 0,
+      "samples": []
     },
     "models": {
       "filter": {
         "model": "claude-haiku-5-5",
         "calls": 5,
-        "inputTokens": 10674,
-        "outputTokens": 5005,
-        "cost": 0.0035
+        "inputTokens": 11854,
+        "outputTokens": 5046,
+        "cost": 0.0036
       },
-      "stats": {
-        "model": "claude-sonnet-5-5",
-        "calls": 1,
-        "inputTokens": 163239,
-        "outputTokens": 811,
-        "searches": 3,
-        "fetches": 2,
-        "cost": 0.3646
-      },
-      "threads": {
-        "model": "claude-sonnet-5-5",
+      "analysis": {
+        "model": "claude-opus-5-5",
         "calls": 2,
-        "inputTokens": 7707,
-        "outputTokens": 231,
-        "cost": 0.0177
+        "inputTokens": 9656,
+        "outputTokens": 13536,
+        "cost": 0.3093
+      },
+      "analysis_quick": {
+        "model": "claude-sonnet-5-5",
+        "calls": 3,
+        "inputTokens": 10432,
+        "outputTokens": 11372,
+        "cost": 0.1346
       }
     },
     "spend": {
-      "thisDesk": 0.3859,
-      "today": 1.7245,
+      "thisDesk": 0.4476,
+      "today": 0.4476,
       "cap": 6
     }
   },
