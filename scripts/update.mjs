@@ -461,6 +461,9 @@ const MARKET_RULE = {
   domestic: `Markets: a move in the whole Indian share market (Sensex, Nifty), a sector's shares, government bond yields or the rupee is relevant when the item names a cause beyond the market itself (for example foreign investors selling as US yields rise, or IT shares falling on weak US client spending). One company's share move, stock tips, buy or sell calls, price targets, IPO grey-market premiums, and market wraps that list moves without a cause are NOT relevant. A single company's results are relevant only when the item shows a whole sector's direction, such as hiring across IT services.`
 };
 // Relevance framework v1 (23 Oct 2026, claude/relevance-framework.html): a five-step test with four outcomes.
+// v74 (25 Oct): Global desk loosened after its new stories fell from ~22 to 1–7 a day: official forecasts count as data,
+// explainers are judged by their development, wider list of major economies, "unsure → brief not reject",
+// election day in major economies is watch, India-named items are never rejected (also enforced in code).
 // analyse = full analysis; watch = short "Watching" item with a named trigger; brief = low but real, shown at the foot;
 // reject = not shown. Built from seven AI platforms' answers; replaces the topic lists in RELEVANCE_RULES below.
 const FILTER_RULES = {
@@ -472,8 +475,9 @@ Work through these steps in order.
 - done: an action taken, a law passed, a ruling issued, data published, an event that occurred;
 - in_process: an official proposal on its way to a decision (a bill introduced, rules drafted, a government "moves to");
 - intention: a plan, platform, or "weighs", "eyes", "considers" by someone who can decide;
-- statement: opinion, prediction, demand, analysis, or a claim by someone who cannot decide.
-Statements are rejected. Commentary, explainers, question headlines, recaps and anniversaries are rejected.
+- statement: opinion, prediction, demand, or a claim by someone who cannot decide.
+Forecasts and figures published by official bodies (the IMF, World Bank, central banks, OPEC, the IEA, statistics offices) count as data published: done.
+Statements, opinion columns, recaps and anniversaries are rejected. An explainer, analysis piece or question headline is judged by the development it is about: if that development is recent and has a channel, give it that development's status; if it is about a war or crisis already among the KNOWN EVENTS, set sameAs to it.
 
 2. CHANNEL. Finish the sentence "This reaches people or businesses in India because it changes ___". Pick exactly one channel; if none fits, reject.
 - india_direct: a foreign government or body acts on India, Indian firms or a deal with India.
@@ -486,7 +490,7 @@ Statements are rejected. Commentary, explainers, question headlines, recaps and 
 - climate_weather: weather systems that steer India's monsoon (El Nino, La Nina); storms, droughts or disasters at India's suppliers or on its routes.
 - tech_standards: AI and chip rules, platform rules, cyber attacks, approvals of aircraft or products Indians use.
 - global_rules: WTO, UN, climate, tax, shipping or aviation rules India must follow.
-- major_economies: growth, recession or a change of government in the US, China, the EU, the UK, Japan, the Gulf states or India's neighbours.
+- major_economies: growth, recession, a crisis or a change of government in a major economy: the US, China, the EU and its large members, the UK, Japan, Russia, the Gulf states, other G20 and BRICS members, or India's neighbours.
 - business_shocks: a failure, grounding or sector-wide shift at global firms with a stated effect on supply, prices or jobs.
 
 3. EVIDENCE. The headline or summary must state the development: what, who, how big, where. You may add only long-established facts, used in one step: India imports most of its oil, gas, edible oil and gold; Indians are among the largest groups of US student and work visa holders; millions of Indians work in the Gulf; Indian airlines fly Boeing and Airbus aircraft; Indian IT firms earn much of their revenue in the US and Europe; the US Federal Reserve's decisions move the rupee and foreign money in India. Never build a link that needs two guesses.
@@ -501,15 +505,16 @@ REACH: national, sector (a whole industry or several states), regional or local.
 - analyse: effect high or medium, status done or in_process, effect felt within about a year.
 - watch: a real development whose effect is low or uncertain today, where one named, checkable event would make it medium or high within weeks or months. Write that event in grows_if, for example "WHO declares an emergency", "Fed raises rates", "ceasefire signed". Never "further developments".
 - brief: a real development with a clear channel and low effect, no growth path, and sector or regional reach. Shown low on the site without analysis.
-- reject: no channel, a statement, local reach with no growth path, or any of these: sport, celebrity, entertainment, lifestyle; another country's domestic politics, crime, services or prices with no channel; daily casualty or strike counts in a long war; single-company results, deals or share moves; stock tips and predictions; conference and event listings; long-range projections with no decision.
+- reject: no channel at all, a statement, local reach with no growth path, or any of these: sport, celebrity, entertainment, lifestyle; another country's domestic politics, crime, services or prices with no channel; daily casualty or strike counts in a long war; single-company results, deals or share moves; stock tips and predictions; conference and event listings; long-range projections that are neither official nor about a decision.
 
 Hard rules:
-- Wars and crises: analyse a new party joining, strikes on energy or shipping, new sanctions, or a ceasefire in force. Peace talks are watch. Daily strikes and casualty counts are reject.
-- Foreign elections: analyse results or changes of government in major economies and neighbours. Watch a leading candidate's stated policy with an India channel. Reject campaigning, polls and disputes.
+- India by name: an item about India, Indians, the rupee or Indian firms is never rejected unless it is sport, entertainment, celebrity or one person's crime. Use channel india_direct; choose at least brief.
+- Wars and crises: analyse a new party joining, strikes on energy or shipping, new sanctions, or a ceasefire in force. Peace talks are watch. Daily strikes and casualty counts are reject, but set sameAs when the war is a KNOWN EVENT so the report joins its story. Explainers and reactions about such a war also join its story through sameAs.
+- Foreign elections: analyse results or changes of government in major economies and neighbours. Watch election day, a runoff or coalition talks in a major economy, with grows_if naming the result or the new government's first trade, energy or India decision. Watch a leading candidate's stated policy with an India channel. Reject campaigning, polls and disputes.
 - Outbreaks abroad: watch a dangerous outbreak in a place connected to India; analyse when it spreads to other countries, the WHO acts, or travel rules change.
-- One company: reject unless it is a failure, a grounding, or a sector-wide move with a stated effect.
+- One company: reject unless it is a failure, a grounding, a sector-wide move with a stated effect, or a decision worth over $1 billion in a sector India makes or buys (cars, electronics, chips, medicines, steel, textiles), which is brief.
 - Markets: analyse a move in a whole share market, a sector's shares or bond yields when a cause beyond the market is named; reject one company's share move, stock tips, price targets, IPO grey-market premiums and market wraps with no cause.
-- Unsure about size or timing: choose watch. Unsure about the channel: reject.`,
+- Unsure about size or timing: choose watch. Unsure whether the effect is big enough: choose brief, not reject. Reject only when no channel fits at all.`,
   domestic: `You are the relevance filter of The Connect's India desk. The Connect explains to ordinary people across India what developments inside India change for what they pay, earn and save, their jobs, safety and travel, and the rules they live under. It never gives investment advice. The items come from Indian outlets. For each item you see only the outlet, the headline and the publisher's summary.
 
 Work through these steps in order.
@@ -564,8 +569,26 @@ const CHANNELS = {
   global: ["india_direct", "trade_access", "prices_supply", "money_capital", "routes_security", "indians_abroad", "health_travel", "climate_weather", "tech_standards", "global_rules", "major_economies", "business_shocks"],
   domestic: ["prices_costs", "money_banking", "jobs_wages", "budgets_welfare", "industry_trade", "infrastructure_energy", "farms_food", "health_safety", "weather_environment", "law_courts", "politics_governance", "security_foreign", "digital_tech"]
 };
+// v74 (25 Oct): the Global desk never rejects an item about India by name, except sport, entertainment and one person's crime.
+const INDIA_NAMED = /\b(India|India's|Indian|Indians|New Delhi|Delhi|Mumbai|Bengaluru|Bangalore|Chennai|Kolkata|Hyderabad|rupee|Modi|RBI|Adani|Reliance|Tata|Infosys|Wipro|HCLTech|Mahindra)\b/i;
+const INDIA_NOT = /\b(cricket|IPL|T20|ODI|Test match|Bollywood|actor|actress|film|box office|singer|wedding|celebrity|murder|stabbed|arrested for|sentenced)\b/i;
+export function namesIndia(headline) { const h = String(headline || ""); return INDIA_NAMED.test(h) && !INDIA_NOT.test(h); }
 // Code checks on the model's verdict, so the outcome always follows the written rules.
-function settleVerdict(v, mode) {
+export function settleVerdict(v, mode, item) {
+  const guard = mode !== "domestic" && item && namesIndia(item.headline) && KINDS_OK(v.kind);
+  const settled = settleCore(v, mode);
+  if (settled === "reject" && guard) {                                                   // India by name: at least a brief
+    v.channel = v.channel && CHANNELS.global.includes(v.channel) ? v.channel : "india_direct";
+    if (!v.reach || v.reach === "local") v.reach = "national";
+    if (!v.effect) v.effect = "low";
+    v.reason = "About India by name: kept as a brief" + (v.reason ? ` (filter said: ${String(v.reason).slice(0, 80)})` : "");
+    v.guarded = true;
+    return "brief";
+  }
+  return settled;
+}
+const KINDS_OK = k => k !== "opinion";
+function settleCore(v, mode) {
   let verdict = VERDICTS.includes(v.verdict) ? v.verdict : v.relevant === true ? "analyse" : "reject";
   const grows = typeof v.grows_if === "string" && v.grows_if.trim().length >= 4 && !/further developments/i.test(v.grows_if);
   if (verdict !== "reject" && v.status === "statement") { verdict = "reject"; v.reason = "A statement or prediction, not a development"; }   // a statement is never kept
@@ -1922,7 +1945,7 @@ async function runDesk(desk) {
     // Settle each verdict by the framework's rules; opinion stays out whatever the model said.
     const kindOfV = v => KINDS.includes(v.kind) ? v.kind : "hard";
     for (const v of byId.values()) {
-      v.verdict = settleVerdict(v, desk.mode);
+      v.verdict = settleVerdict(v, desk.mode, batch[+v.id]);
       if (v.verdict !== "reject" && kindOfV(v) === "opinion") { v.verdict = "reject"; v.reason = "Opinion piece: kept out of the analysis"; }
       v.relevant = v.verdict !== "reject";
       tally[v.verdict] = (tally[v.verdict] || 0) + 1;
@@ -1934,7 +1957,10 @@ async function runDesk(desk) {
       if (!target) return false;
       // A routine update to a story already on the desk joins it even when it would not stand alone
       // (decision 23 Oct: a daily casualty count merges into its war's story), but never a statement.
-      return v.relevant || (v.status !== "statement" && target.stage !== "expired" && target.stage !== "brief");
+      // v74: a statement (explainer, reaction) may join a story only when that story is a war or crisis already on the desk.
+      if (v.relevant) return true;
+      if (target.stage === "expired" || target.stage === "brief" || kindOfV(v) === "opinion") return false;
+      return v.status !== "statement" || !!target.conflict;
     };
     // Step 2: Opus writes the analysis for kept stories that are new to the desk, in one request per batch.
     // Layer 1 routing: opinion stays out; soft news and features are kept as context without analysis.
@@ -2048,7 +2074,8 @@ async function runDesk(desk) {
   data.recentDays = RECENT_DAYS;
   data.updatedAt = new Date().toISOString();
   await saveWars();
-  data.lastRun = { filter: tally, watch, wars: warPrep, places, skipped, finance, analysed: fresh.length, added, merged, rejected: fresh.length && !failures && !budgetStopped ? fresh.length - added - merged : undefined, failedBatches: failures, feeds: feedHealth, shareImages: og, threads: th, summaries: sm, kinds, frames, stats, models: usage,
+  const health = await recordHealth(desk, data, tally, added, merged);
+  data.lastRun = { filter: tally, health, watch, wars: warPrep, places, skipped, finance, analysed: fresh.length, added, merged, rejected: fresh.length && !failures && !budgetStopped ? fresh.length - added - merged : undefined, failedBatches: failures, feeds: feedHealth, shareImages: og, threads: th, summaries: sm, kinds, frames, stats, models: usage,
     spend: budget ? { thisDesk: Math.round((budget.spent - runStart) * 1e4) / 1e4, today: Math.round(budget.spent * 1e4) / 1e4, cap: DAILY_BUDGET, ...(budgetStopped ? { stopped: true } : {}) } : undefined };
 
   await fs.writeFile(desk.data, JSON.stringify(data, null, 2) + "\n");
@@ -2059,5 +2086,31 @@ async function runDesk(desk) {
   return { added, merged, failures, analysed: fresh.length };
 }
 function latest(e) { return (e.reports || []).map(r => r.date || "").sort().pop() || e.date || ""; }
+
+// v74 (25 Oct): a daily record of what each desk's filter decided, and an alarm when a desk goes quiet.
+// The v73 rules cut the Global desk from about 22 new stories a day to 1–7 before anyone noticed; this makes it visible.
+const HEALTH_FILE = "data/filter-health.json", HEALTH_DAYS = 30;
+const HEALTH_MIN = { global: { newPerDay: 10, keepRate: 0.06 }, domestic: { newPerDay: 12, keepRate: 0.06 } };
+export async function recordHealth(desk, data, tally, added, merged) {
+  const doc = await readJson(HEALTH_FILE, { days: {} });
+  const day = new Date().toISOString().slice(0, 10);
+  const d = ((doc.days[day] ||= {})[desk.id] ||= { judged: 0, analyse: 0, watch: 0, brief: 0, reject: 0, added: 0, merged: 0, runs: 0 });
+  for (const k of VERDICTS) d[k] += tally[k] || 0;
+  d.judged += VERDICTS.reduce((t, k) => t + (tally[k] || 0), 0);
+  d.added += added; d.merged += merged; d.runs += 1;
+  const keep = days => { let j = 0, k = 0; for (const x of days) { const y = doc.days[x]?.[desk.id]; if (y) { j += y.judged; k += y.judged - y.reject; } } return j ? k / j : null; };
+  const recent = Object.keys(doc.days).sort().slice(-2);                       // today and yesterday
+  const cut = Date.now() - 864e5;
+  const newCards = data.sectors.flatMap(s => s.items).filter(e => { const first = (e.reports || []).map(r => r.date || "").sort()[0] || e.date; return Date.parse(first) >= cut && !["watch", "brief", "expired"].includes(e.stage); }).length;
+  const keepRate = keep(recent), min = HEALTH_MIN[desk.mode === "domestic" ? "domestic" : "global"];
+  const alarm = [];
+  if (newCards < min.newPerDay) alarm.push(`only ${newCards} new stories in the main feed in 24 hours (expected ${min.newPerDay}+)`);
+  if (keepRate !== null && keepRate < min.keepRate) alarm.push(`filter kept ${(keepRate * 100).toFixed(1)}% of headlines over two days (expected ${min.keepRate * 100}%+)`);
+  for (const x of Object.keys(doc.days).sort().slice(0, -HEALTH_DAYS)) delete doc.days[x];
+  doc.updatedAt = new Date().toISOString();
+  await fs.writeFile(HEALTH_FILE, JSON.stringify(doc, null, 1) + "\n");
+  if (alarm.length) console.log(`::warning title=${desk.id} desk is quiet::${alarm.join("; ")}`);   // shows on the GitHub Actions run page
+  return { day, newCards24h: newCards, keepRate2d: keepRate === null ? null : Math.round(keepRate * 1000) / 1000, ...(alarm.length ? { alarm } : {}) };
+}
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) main().catch(e => { console.error(e); process.exit(1); });
