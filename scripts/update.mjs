@@ -460,214 +460,6 @@ const MARKET_RULE = {
   global: `Markets: a move in a whole share market, a sector's shares or government bond yields is relevant when the item names a cause beyond the market itself (for example a global sell-off as US yields rise, or chip stocks falling after new US export curbs) and the move plausibly reaches ${REGION}. A move in one company's shares, stock tips, buy or sell calls, price targets, IPO grey-market premiums, and market wraps that list moves without a cause are NOT relevant.`,
   domestic: `Markets: a move in the whole Indian share market (Sensex, Nifty), a sector's shares, government bond yields or the rupee is relevant when the item names a cause beyond the market itself (for example foreign investors selling as US yields rise, or IT shares falling on weak US client spending). One company's share move, stock tips, buy or sell calls, price targets, IPO grey-market premiums, and market wraps that list moves without a cause are NOT relevant. A single company's results are relevant only when the item shows a whole sector's direction, such as hiring across IT services.`
 };
-// Relevance framework v1 (23 Oct 2026, claude/relevance-framework.html): a five-step test with four outcomes.
-// v74 (25 Oct): Global desk loosened after its new stories fell from ~22 to 1–7 a day: official forecasts count as data,
-// explainers are judged by their development, wider list of major economies, "unsure → brief not reject",
-// election day in major economies is watch, India-named items are never rejected (also enforced in code).
-// analyse = full analysis; watch = short "Watching" item with a named trigger; brief = low but real, shown at the foot;
-// reject = not shown. Built from seven AI platforms' answers; replaces the topic lists in RELEVANCE_RULES below.
-const FILTER_RULES = {
-  global: `You are the relevance filter of The Connect's Global desk. The Connect explains to ordinary people in India how developments in the rest of the world change what they pay, earn and save, their jobs, safety and travel, and the rules they live under. It never gives investment advice. For each item you see only the outlet, the headline and the publisher's summary.
-
-Work through these steps in order.
-
-1. WHAT HAPPENED. Name the development and its status:
-- done: an action taken, a law passed, a ruling issued, data published, an event that occurred;
-- in_process: an official proposal on its way to a decision (a bill introduced, rules drafted, a government "moves to");
-- intention: a plan, platform, or "weighs", "eyes", "considers" by someone who can decide;
-- statement: opinion, prediction, demand, or a claim by someone who cannot decide.
-Forecasts and figures published by official bodies (the IMF, World Bank, central banks, OPEC, the IEA, statistics offices) count as data published: done.
-Statements, opinion columns, recaps and anniversaries are rejected. An explainer, analysis piece or question headline is judged by the development it is about: if that development is recent and has a channel, give it that development's status; if it is about a war or crisis already among the KNOWN EVENTS, set sameAs to it.
-
-2. CHANNEL. Finish the sentence "This reaches people or businesses in India because it changes ___". Pick exactly one channel; if none fits, reject.
-- india_direct: a foreign government or body acts on India, Indian firms or a deal with India.
-- trade_access: tariffs, sanctions, export controls, trade deals or standards that change what India buys or sells.
-- prices_supply: world prices or supply of oil, gas, food, fertiliser, metals, freight or key inputs such as chips and medicine ingredients.
-- money_capital: major central banks, the dollar, bond yields, banking shocks, capital flows, credit ratings.
-- routes_security: war, piracy, blockades or airspace closures on India's trade, energy or travel routes; security in India's neighbourhood.
-- indians_abroad: visas, migration rules, safety of Indians abroad, evacuations, remittances.
-- health_travel: outbreaks that can cross borders; drug or food safety alerts.
-- climate_weather: weather systems that steer India's monsoon (El Nino, La Nina); storms, droughts or disasters at India's suppliers or on its routes.
-- tech_standards: AI and chip rules, platform rules, cyber attacks, approvals of aircraft or products Indians use.
-- global_rules: WTO, UN, climate, tax, shipping or aviation rules India must follow.
-- major_economies: growth, recession, a crisis or a change of government in a major economy: the US, China, the EU and its large members, the UK, Japan, Russia, the Gulf states, other G20 and BRICS members, or India's neighbours.
-- business_shocks: a failure, grounding or sector-wide shift at global firms with a stated effect on supply, prices or jobs.
-
-3. EVIDENCE. The headline or summary must state the development: what, who, how big, where. You may add only long-established facts, used in one step: India imports most of its oil, gas, edible oil and gold; Indians are among the largest groups of US student and work visa holders; millions of Indians work in the Gulf; Indian airlines fly Boeing and Airbus aircraft; Indian IT firms earn much of their revenue in the US and Europe; the US Federal Reserve's decisions move the rupee and foreign money in India. Never build a link that needs two guesses.
-
-4. EFFECT on India if the item plays out:
-- high: national prices, a household essential, a top Indian import or export, or the safety or travel of many Indians;
-- medium: a whole sector, a large group, one bilateral relationship, or a rule Indian firms must follow;
-- low: a small group, an indirect link, or a far-off date.
-REACH: national, sector (a whole industry or several states), regional or local.
-
-5. VERDICT.
-- analyse: effect high or medium, status done or in_process, effect felt within about a year.
-- watch: a real development whose effect is low or uncertain today, where one named, checkable event would make it medium or high within weeks or months. Write that event in grows_if, for example "WHO declares an emergency", "Fed raises rates", "ceasefire signed". Never "further developments".
-- brief: a real development with a clear channel and low effect, no growth path, and sector or regional reach. Shown low on the site without analysis.
-- reject: no channel at all, a statement, local reach with no growth path, or any of these: sport, celebrity, entertainment, lifestyle; another country's domestic politics, crime, services or prices with no channel; daily casualty or strike counts in a long war; single-company results, deals or share moves; stock tips and predictions; conference and event listings; long-range projections that are neither official nor about a decision.
-
-Hard rules:
-- India by name: an item about India, Indians, the rupee or Indian firms is never rejected unless it is sport, entertainment, celebrity or one person's crime. Use channel india_direct; choose at least brief.
-- Wars and crises: analyse a new party joining, strikes on energy or shipping, new sanctions, or a ceasefire in force. Peace talks are watch. Daily strikes and casualty counts are reject, but set sameAs when the war is a KNOWN EVENT so the report joins its story. Explainers and reactions about such a war also join its story through sameAs.
-- Foreign elections: analyse results or changes of government in major economies and neighbours. Watch election day, a runoff or coalition talks in a major economy, with grows_if naming the result or the new government's first trade, energy or India decision. Watch a leading candidate's stated policy with an India channel. Reject campaigning, polls and disputes.
-- Outbreaks abroad: watch a dangerous outbreak in a place connected to India; analyse when it spreads to other countries, the WHO acts, or travel rules change.
-- One company: reject unless it is a failure, a grounding, a sector-wide move with a stated effect, or a decision worth over $1 billion in a sector India makes or buys (cars, electronics, chips, medicines, steel, textiles), which is brief.
-- Markets: analyse a move in a whole share market, a sector's shares or bond yields when a cause beyond the market is named; reject one company's share move, stock tips, price targets, IPO grey-market premiums and market wraps with no cause.
-- Unsure about size or timing: choose watch. Unsure whether the effect is big enough: choose brief, not reject. Reject only when no channel fits at all.`,
-  domestic: `You are the relevance filter of The Connect's India desk. The Connect explains to ordinary people across India what developments inside India change for what they pay, earn and save, their jobs, safety and travel, and the rules they live under. It never gives investment advice. The items come from Indian outlets. For each item you see only the outlet, the headline and the publisher's summary.
-
-Work through these steps in order.
-
-1. WHAT HAPPENED. Name the development and its status:
-- done: an action taken, a law passed or notified, a ruling issued, data published, an event that occurred;
-- in_process: an official proposal on its way to a decision (a bill introduced, draft rules, a state "to frame" a policy);
-- intention: a plan or promise by someone who can decide;
-- statement: opinion, prediction, demand, an allegation with no official response, or a taunt.
-Statements are rejected. Explainers, question headlines and event or conference listings are rejected.
-
-2. CHANNEL. Finish the sentence "This changes something for people or businesses in India because it changes ___". Pick exactly one channel; if none fits, reject.
-- prices_costs: what households pay: inflation, fuel and LPG, food prices, taxes on goods, subsidies.
-- money_banking: RBI, banks, loans, deposits, insurance, pensions, payments, share and bond markets, the rupee.
-- jobs_wages: employment and wage data, labour codes, hiring or layoffs across a sector.
-- budgets_welfare: the Union budget, the GST Council, welfare schemes and entitlements.
-- industry_trade: a whole industry: production schemes, sector sales or output, exports and imports.
-- infrastructure_energy: power, water, rail, roads, ports, airports, telecom networks.
-- farms_food: crops, sowing, MSP, procurement, food stocks, curbs on food exports or imports.
-- health_safety: outbreaks, drug and food rules, disasters, public-safety failures at scale.
-- weather_environment: weather alerts, cyclones, floods, heat and cold, air-pollution curbs.
-- law_courts: national laws, regulators' rules, court rulings that set rules for many.
-- politics_governance: who governs and what is decided: elections, governments, Parliament, the Election Commission, Centre-state disputes.
-- security_foreign: borders, defence, terrorism, diplomacy and trade talks.
-- digital_tech: UPI, Aadhaar, telecom and platform rules, cyber attacks, AI rules.
-
-3. EVIDENCE. The item must state the development: what, who, how big, where. You may add only long-established facts, used in one step, for example that Delhi-NCR, Mumbai and Bengaluru carry a large share of the country's business, or that SBI and HDFC Bank are among India's largest banks. Never build a link that needs two guesses.
-
-4. EFFECT and REACH.
-- effect high: a household essential, or the rules, safety or money of millions;
-- medium: a whole sector, a large city or region, or a large group;
-- low: a small group or an indirect link.
-- reach: national, sector, regional (one state or region) or local.
-
-5. VERDICT.
-- analyse: effect high or medium, status done or in_process, and national or sector reach, or regional reach allowed by the hard rules below.
-- watch: a real development whose effect is low or uncertain today, where one named, checkable event would raise it, for example "red alert or flooding", "Centre or another state adopts it", "RBI acts", "bill passed". Write that event in grows_if.
-- brief: a real development with a clear channel and low effect, no growth path, and sector or regional reach. Shown low on the site without analysis.
-- reject: no channel, a statement, local reach only, or any of these: crime, accidents and individual court cases; celebrity, entertainment, sport; religion items that change no rule; single-company results, deals, IPO subscriptions and share moves; stock tips; event, expo and conference announcements.
-
-Hard rules:
-- State or city stories: analyse when a public system fails in a national business hub (Delhi-NCR, Mumbai, Bengaluru, Chennai, Hyderabad, Kolkata, a major port), or when a state that leads a sector acts in that sector. Watch a state's first-of-its-kind policy on a problem every state faces. Otherwise reject.
-- One company: analyse a breach, outage, failure or regulator action at a systemically important firm (the largest banks, insurers, exchanges, telecom operators), or a move that resets a whole sector. Watch a review or probe at such a firm. Reject results and deals.
-- Politics: analyse results, a government formed or fallen in any state or at the Centre, bills passed, ordinances and Election Commission decisions. Watch alliances breaking, confidence votes, and promises with a cost and a decision date. Reject speeches, taunts, demands and predictions. Judge every party by the same rules.
-- Weather and pollution: reject routine forecasts in the normal season. Watch heavy-rain, heat or cyclone warnings and first-stage pollution curbs. Analyse floods, landfall, crop damage, deaths, power or transport cuts, heatwaves across several states, and stricter pollution stages.
-- Courts: analyse Supreme Court or High Court rulings that set or change a rule for many; reject individual cases.
-- Markets: analyse a move in the Sensex or Nifty, a sector's shares, bond yields or the rupee when a cause beyond the market is named; reject one company's share move, stock tips, price targets, IPO grey-market premiums and market wraps with no cause.
-- Unsure about size or timing: choose watch. Unsure about the channel: reject.`
-};
-const VERDICTS = ["analyse", "watch", "brief", "reject"];
-const CHANNELS = {
-  global: ["india_direct", "trade_access", "prices_supply", "money_capital", "routes_security", "indians_abroad", "health_travel", "climate_weather", "tech_standards", "global_rules", "major_economies", "business_shocks"],
-  domestic: ["prices_costs", "money_banking", "jobs_wages", "budgets_welfare", "industry_trade", "infrastructure_energy", "farms_food", "health_safety", "weather_environment", "law_courts", "politics_governance", "security_foreign", "digital_tech"]
-};
-// v74 (25 Oct): the Global desk never rejects an item about India by name, except sport, entertainment and one person's crime.
-const INDIA_NAMED = /\b(India|India's|Indian|Indians|New Delhi|Delhi|Mumbai|Bengaluru|Bangalore|Chennai|Kolkata|Hyderabad|rupee|Modi|RBI|Adani|Reliance|Tata|Infosys|Wipro|HCLTech|Mahindra)\b/i;
-const INDIA_NOT = /\b(cricket|IPL|T20|ODI|Test match|Bollywood|actor|actress|film|box office|singer|wedding|celebrity|murder|stabbed|arrested for|sentenced)\b/i;
-export function namesIndia(headline) { const h = String(headline || ""); return INDIA_NAMED.test(h) && !INDIA_NOT.test(h); }
-// Code checks on the model's verdict, so the outcome always follows the written rules.
-export function settleVerdict(v, mode, item) {
-  const guard = mode !== "domestic" && item && namesIndia(item.headline) && KINDS_OK(v.kind);
-  const settled = settleCore(v, mode);
-  if (settled === "reject" && guard) {                                                   // India by name: at least a brief
-    v.channel = v.channel && CHANNELS.global.includes(v.channel) ? v.channel : "india_direct";
-    if (!v.reach || v.reach === "local") v.reach = "national";
-    if (!v.effect) v.effect = "low";
-    v.reason = "About India by name: kept as a brief" + (v.reason ? ` (filter said: ${String(v.reason).slice(0, 80)})` : "");
-    v.guarded = true;
-    return "brief";
-  }
-  return settled;
-}
-const KINDS_OK = k => k !== "opinion";
-function settleCore(v, mode) {
-  let verdict = VERDICTS.includes(v.verdict) ? v.verdict : v.relevant === true ? "analyse" : "reject";
-  const grows = typeof v.grows_if === "string" && v.grows_if.trim().length >= 4 && !/further developments/i.test(v.grows_if);
-  if (verdict !== "reject" && v.status === "statement") { verdict = "reject"; v.reason = "A statement or prediction, not a development"; }   // a statement is never kept
-  if (verdict !== "reject" && v.channel && !CHANNELS[mode].includes(v.channel)) v.channel = null;
-  if (verdict !== "reject" && !v.channel) { verdict = "reject"; v.reason = "No route to India named"; }                                // no channel, no story
-  if (verdict === "analyse" && v.effect === "low") verdict = grows ? "watch" : "brief";            // the bar is medium
-  if (verdict === "analyse" && v.status === "intention") verdict = grows ? "watch" : "brief";      // only done or in process is analysed
-  if (verdict === "watch" && !grows) verdict = "brief";                                               // watch needs a checkable trigger
-  if (verdict === "brief" && v.reach === "local") { verdict = "reject"; v.reason = "Local, with no way to grow"; }                     // local items with no growth path stay out
-  return verdict;
-}
-function filterInfo(v, verdict) {
-  const pickS = (x, list) => list.includes(x) ? x : null;
-  return { verdict, channel: v.channel || null, status: pickS(v.status, ["done", "in_process", "intention", "statement"]), effect: pickS(v.effect, ["high", "medium", "low"]),
-    reach: pickS(v.reach, ["national", "sector", "regional", "local"]), ...(verdict === "watch" ? { grows_if: str(v.grows_if, 120) } : {}), reason: str(v.reason, 160), at: new Date().toISOString() };
-}
-// Watch items leave the "Watching" strip after a set time unless their trigger happens first.
-const WATCH_DAYS = { weather: 3, outbreak: 14, scheduled: 21, other: 7 };
-function watchKind(channel) {
-  if (["climate_weather", "weather_environment"].includes(channel)) return "weather";
-  if (["health_travel", "health_safety"].includes(channel)) return "outbreak";
-  if (["politics_governance", "law_courts", "global_rules", "budgets_welfare"].includes(channel)) return "scheduled";
-  return "other";
-}
-const watchExpiry = (channel, from = Date.now()) => new Date(from + WATCH_DAYS[watchKind(channel)] * 864e5).toISOString();
-// Priority 0-100, set by code from the filter's answers (and the analysis, once written). The site ranks by it.
-function priorityOf(ev) {
-  const f = ev.filter || {}, a = ev.analysis;
-  let base;
-  if (ev.stage === "watch") base = f.effect === "medium" || f.effect === "high" ? 35 : 25;
-  else if (ev.stage === "brief") base = 10;
-  else if (ev.stage === "expired") base = 5;
-  else if (ev.stage === "context" || !a) base = 20;
-  else { const eff = f.effect || a.exposure?.level || (ev.relevance === "high" ? "high" : "medium"); base = eff === "high" ? 60 : 45; }
-  const reach = { national: 15, sector: 10, regional: 5, local: 0 }[f.reach] ?? (a ? 10 : 5);
-  const status = { done: 5, in_process: 3, intention: 0, statement: 0 }[f.status] ?? (a ? 5 : 0);
-  const outlets = Math.min(15, 5 * Math.max(0, new Set((ev.reports || []).map(r => r.source)).size - 1));
-  const exposure = a?.exposure?.level === "high" ? 5 : 0;
-  return Math.min(100, base + reach + status + outlets + exposure);
-}
-const WATCH_CHECK_LIMIT = 30, WATCH_CHECK_BATCH = 15;
-function promotePrompt(items) {
-  return `Each developing story below was put on watch with a trigger ("grows_if"): the event that would make it matter to people or businesses in India. Newer reports have arrived since. For each story decide whether to promote it to full analysis.
-
-Promote only if the newer reports show the trigger has happened, or on their own show a medium or high effect on India: a whole sector, a large city or region, a household essential, the rules, safety or money of many people. More articles about the same thing are not enough. A forecast, a statement or a demand is not enough.
-
-Stories:
-${JSON.stringify(items)}
-
-Return ONLY a JSON array: [{"id":0,"promote":false,"effect":"low","reason":"under 15 words"}]`;
-}
-async function reviewWatch(data, mode) {
-  const now = Date.now(), all = data.sectors.flatMap(sec => sec.items);
-  let expired = 0, checked = 0, promoted = 0, failed = 0;
-  for (const ev of all) if (ev.stage === "watch" && Date.parse(ev.watch?.expires || 0) < now) { ev.stage = "expired"; ev.watch.expiredAt = new Date().toISOString(); expired++; }
-  const due = all.filter(ev => ev.stage === "watch" && ev.watch?.recheck).sort((a, b) => latest(b).localeCompare(latest(a))).slice(0, WATCH_CHECK_LIMIT);
-  const up = [];
-  for (let k = 0; k < due.length; k += WATCH_CHECK_BATCH) {
-    const batch = due.slice(k, k + WATCH_CHECK_BATCH);
-    try {
-      const res = await callClaude(promotePrompt(batch.map((ev, i) => ({ id: i, headline: ev.headline, grows_if: ev.watch.grows_if, first_seen: String(ev.watch.since || ev.date || "").slice(0, 10),
-        newer_reports: (ev.reports || []).slice(ev.watch.checkedReports || 1).slice(-6).map(r => ({ outlet: OUTLETS[r.source] || r.source, date: String(r.date || "").slice(0, 16), headline: r.headline, summary: r.summary || "" })) }))), "filter");
-      const byI = new Map((res || []).filter(r => r && Number.isInteger(+r.id)).map(r => [+r.id, r]));
-      batch.forEach((ev, i) => { checked++; ev.watch.recheck = false; ev.watch.checkedAt = new Date().toISOString(); ev.watch.checkedReports = (ev.reports || []).length; const r = byI.get(i);
-        if (r?.promote === true) { up.push(ev); ev.watch.promoteReason = str(r.reason, 160); if (["medium", "high"].includes(r.effect)) ev.filter = { ...(ev.filter || {}), effect: r.effect }; } });
-    } catch (e) { if (e instanceof BudgetError) break; console.error(`Watch check failed: ${e.message}`); failed++; }
-  }
-  // Promoted stories are analysed now, with the same steps as any new story.
-  if (up.length) {
-    try {
-      const res = await analyseStories(up.map((ev, i) => ({ i, id: ev.id, headline: ev.headline, url: ev.url, war: ev.conflict, kind: (ev.reports || [])[0]?.kind || "hard", reports: ev.reports || [], relevance: ev.relevance })), mode, "core");
-      up.forEach((ev, i) => { const o = res.get(i); if (!o || o.r.relevant === false) return;
-        applyAnalysis(ev, o.r, o.plan); ev.stage = "analyse"; ev.watch.promotedAt = new Date().toISOString();
-        const lead = (ev.reports || []).slice(-1)[0]; if (lead && lead.url !== ev.url) { ev.watch.firstHeadline = ev.headline; ev.headline = lead.headline; ev.url = lead.url; }   /* the report that set off the trigger leads */
-        ev.filter = { ...(ev.filter || {}), verdict: "analyse" }; promoted++; });
-    } catch (e) { if (!(e instanceof BudgetError)) { console.error(`Promoted-story analysis failed: ${e.message}`); failed++; } }
-  }
-  return { checked, promoted, expired, open: all.filter(ev => ev.stage === "watch").length, ...(failed ? { failedBatches: failed } : {}) };
-}
 const RELEVANCE_RULES = {
   global: `Keep an item only if it plausibly affects India: a global price, supply or trade shift, a policy by a major economy, a regional conflict on India's trade or energy routes, or events in or about India. Judge by what the HEADLINE is about. A story framed around another country's domestic prices, politics, services or crime is NOT relevant, even if its summary mentions a global cause (for example "UK diesel price hits record high" is not relevant; the global cause gets its own story). Elections, leadership contests and changes of government in other countries are NOT relevant unless the item itself mentions a trade, tariff, energy, sanctions or foreign-policy shift. Sport, celebrity, entertainment, lifestyle, local crime and single-company stock news are not relevant. ${MARKET_RULE.global} When unsure, choose false.`,
   domestic: `Keep an item only if it is a development of NATIONAL significance for India: national policy, regulation, budgets and taxes, RBI and banking, inflation and jobs data, infrastructure, energy, industry and manufacturing, agriculture and food supply, technology and telecom policy, environment and climate events with wide impact, and major governance developments. Mark relevant=false for crime, accidents, court cases about individuals, celebrity, entertainment, sport, religion, city- or state-level stories without national impact, party political sparring, single-company results or deals that do not affect a whole sector. ${MARKET_RULE.domestic} When unsure, choose false.`
@@ -712,14 +504,21 @@ async function labelPlaces(data) {
 function filterPrompt(batch, recent, mode) {
   const items = batch.map((s, i) => ({ id: i, outlet: OUTLETS[s.src], headline: s.headline, summary: s.summary }));
   const known = recent.map(e => ({ key: e.id, headline: e.headline }));
-  return `${FILTER_RULES[mode === "domestic" ? "domestic" : "global"]}
+  const desk = mode === "domestic"
+    ? `an intelligence product that explains what developments INSIDE ${REGION} mean for people and businesses in ${REGION}. The items come from Indian outlets.`
+    : `an intelligence product that explains how world news affects ${REGION}.`;
+  return `You are the filter desk of ${desk}
 
-ALSO FOR EVERY ITEM:
-- ${SAME_EVENT_RULE}
-- ${KIND_RULE}
-- For items you do not reject, give "sector", the ONE sector it fits best:
+For each news item, decide whether to keep it, and whether it is the same story as one already on the desk.
+
+Rules:
+1. ${RELEVANCE_RULES[mode === "domestic" ? "domestic" : "global"]}
+2. Use only the headline and summary given. Do not invent facts.
+3. ${SAME_EVENT_RULE}
+4. ${KIND_RULE}
+Give "kind" for EVERY item, kept or not. For kept items also give "sector", the ONE sector it fits best:
 ${sectorList()}
-- ${PLACE_RULE}
+${PLACE_RULE}
 
 KNOWN EVENTS:
 ${JSON.stringify(known)}
@@ -727,9 +526,9 @@ ${JSON.stringify(known)}
 Items:
 ${JSON.stringify(items)}
 
-Return ONLY a JSON array, one object per item, in input order:
-[{"id":0,"verdict":"analyse","channel":"${CHANNELS[mode === "domestic" ? "domestic" : "global"][0]}","status":"done","effect":"high","reach":"national","grows_if":null,"reason":"under 15 words","kind":"hard","sector":"energy","place":{"name":"Strait of Hormuz","country":"Iran","lat":26.6,"lon":56.3,"involves":["United States"]},"sameAs":null}]
-For verdict "reject" give only id, verdict, status, kind, reason and sameAs.`;
+Return ONLY a JSON array, one object per item:
+[{"id":0,"kind":"hard","relevant":true,"sector":"energy","place":{"name":"Strait of Hormuz","country":"Iran","lat":26.6,"lon":56.3,"involves":["United States"]},"sameAs":null}]
+For relevant=false return {"id":N,"kind":"...","relevant":false,"reason":"${mode === "domestic" ? "why it is not of national significance" : `why it does not reach ${REGION}`}, under 15 words","sameAs":null}.`;
 }
 
 // One-off (23 Oct): recent stories whose main subject is finance move from Economy & Trade or Policy into Finance.
@@ -1228,7 +1027,7 @@ function applyAnalysis(ev, r, plan) {
 // Existing stories: analyse those with no current analysis, or whose depth tier has risen since. Newest first.
 async function reframeRecent(data, mode) {
   const kindOfEv = ev => (ev.reports || [])[0]?.kind || "hard";
-  const eligible = ev => !["soft", "feature", "opinion"].includes(kindOfEv(ev)) && !["watch", "brief", "expired", "context"].includes(ev.stage);
+  const eligible = ev => !["soft", "feature", "opinion"].includes(kindOfEv(ev));
   // Also re-analyse when the story has grown: two or more reports published after the analysis was written
   // (e.g. a trade deal first reported as import duties, later as zero-duty access for Indian exports and new visas).
   const grown = ev => !!ev.analysis?.at && (ev.reports || []).filter(r => (r.date || "") > ev.analysis.at).length >= 2;
@@ -1810,7 +1609,7 @@ async function callClaude(prompt, job, level = "core") {
         "anthropic-version": "2023-06-01",
         "content-type": "application/json"
       },
-      body: JSON.stringify({ model, max_tokens: job.startsWith("analysis") ? 16000 : job === "filter" ? 8000 : 4000, messages: [{ role: "user", content: prompt }] })
+      body: JSON.stringify({ model, max_tokens: job.startsWith("analysis") ? 16000 : 4000, messages: [{ role: "user", content: prompt }] })
     });
     const body = await res.json().catch(() => ({}));
     if (res.ok) {
@@ -1926,7 +1725,6 @@ async function runDesk(desk) {
 
   const rejected = data.schema === SCHEMA && seen.size ? await readJson(desk.rejected, []) : [];
   let added = 0, merged = 0, failures = 0, budgetStopped = false;
-  const tally = {};                                         // filter outcomes this run
   const runStart = budget ? budget.spent : 0;
   // War ladder: tie older escalation stories to their war and set the starting level of new wars, before new stories are analysed.
   const warPrep = await prepareWars(allEvents());
@@ -1942,32 +1740,17 @@ async function runDesk(desk) {
     catch (e) { if (e instanceof BudgetError) { budgetStopped = true; break; } console.error(`Filter batch failed: ${e.message}`); failures++; continue; } // not marked seen: retried next run
     const byId = new Map();
     for (const v of verdicts || []) if (v && Number.isInteger(+v.id) && batch[+v.id]) byId.set(+v.id, v);
-    // Settle each verdict by the framework's rules; opinion stays out whatever the model said.
-    const kindOfV = v => KINDS.includes(v.kind) ? v.kind : "hard";
-    for (const v of byId.values()) {
-      v.verdict = settleVerdict(v, desk.mode, batch[+v.id]);
-      if (v.verdict !== "reject" && kindOfV(v) === "opinion") { v.verdict = "reject"; v.reason = "Opinion piece: kept out of the analysis"; }
-      v.relevant = v.verdict !== "reject";
-      tally[v.verdict] = (tally[v.verdict] || 0) + 1;
-    }
     const isFollowUp = (i, v) => {
       if (typeof v.sameAs !== "string" || !v.sameAs) return false;
-      if (v.sameAs.startsWith("item:")) { const k = +v.sameAs.slice(5); return v.relevant && k < i && !!byId.get(k)?.relevant; }
-      const target = findEvent(v.sameAs);
-      if (!target) return false;
-      // A routine update to a story already on the desk joins it even when it would not stand alone
-      // (decision 23 Oct: a daily casualty count merges into its war's story), but never a statement.
-      // v74: a statement (explainer, reaction) may join a story only when that story is a war or crisis already on the desk.
-      if (v.relevant) return true;
-      if (target.stage === "expired" || target.stage === "brief" || kindOfV(v) === "opinion") return false;
-      return v.status !== "statement" || !!target.conflict;
+      if (v.sameAs.startsWith("item:")) { const k = +v.sameAs.slice(5); return k < i && !!byId.get(k)?.relevant; }
+      return !!findEvent(v.sameAs);
     };
     // Step 2: Opus writes the analysis for kept stories that are new to the desk, in one request per batch.
     // Layer 1 routing: opinion stays out; soft news and features are kept as context without analysis.
     const kindOf = v => KINDS.includes(v.kind) ? v.kind : "hard";
     for (const v of byId.values()) if (v.relevant && kindOf(v) === "opinion") { v.relevant = false; v.reason = "Opinion piece: kept out of the analysis"; }
     const needsAnalysis = v => !["soft", "feature"].includes(kindOf(v));
-    const toAnalyse = [...byId.entries()].filter(([i, v]) => v.verdict === "analyse" && !isFollowUp(i, v) && needsAnalysis(v))
+    const toAnalyse = [...byId.entries()].filter(([i, v]) => v.relevant && !isFollowUp(i, v) && needsAnalysis(v))
       .map(([i, v]) => ({ i, id: idFor(batch[i].url), headline: batch[i].headline, url: batch[i].url, kind: kindOf(v), relevance: "medium", reports: [{ source: batch[i].src, headline: batch[i].headline, summary: batch[i].summary, lede: batch[i].lede, date: batch[i].date, kind: kindOf(v) }] }));
     const analysis = new Map();
     if (toAnalyse.length) {
@@ -1980,7 +1763,7 @@ async function runDesk(desk) {
     for (let i = 0; i < batch.length; i++) {
       const s = batch[i], v = byId.get(i);
       if (!v) continue;
-      if (!v.relevant && !isFollowUp(i, v)) { reject(s, v.reason, KINDS.includes(v.kind) ? v.kind : undefined); continue; }
+      if (!v.relevant) { reject(s, v.reason, KINDS.includes(v.kind) ? v.kind : undefined); continue; }
       const report = { source: s.src, headline: s.headline, url: s.url, date: s.date, kind: kindOf(v), ...(s.summary && s.summary.length >= 40 ? { summary: s.summary, summaryV: SUMMARY_V } : {}), ...(s.lede ? { lede: s.lede } : {}), ...(s.image ? { image: s.image } : {}), ...(s.imageLarge ? { imageLarge: s.imageLarge } : {}) };
       if (isFollowUp(i, v)) {
         const k = v.sameAs.startsWith("item:") ? +v.sameAs.slice(5) : null;
@@ -1988,17 +1771,11 @@ async function runDesk(desk) {
         if (!target) { if (k !== null && dropped.has(k)) { reject(s, "Same story as an item the analysis desk set aside"); dropped.add(i); } continue; }
         if (!target.reports.some(x => x.url === s.url)) target.reports.push(report);
         if (!target.image && s.image) { target.image = s.image; if (s.imageLarge) target.imageLarge = s.imageLarge; }
-        if (target.stage === "watch" && target.watch) {          // a new report on a watched story: check its trigger this run
-          target.watch.recheck = true;
-          if (watchKind(target.filter?.channel) === "weather") target.watch.expires = watchExpiry(target.filter?.channel);   // weather watches renew
-        }
         placed[i] = target; merged++;
         continue;
       }
-      const full = needsAnalysis(v) && v.verdict === "analyse";
-      const o = full ? analysis.get(i) : null;
-      const r = full ? o?.r : { relevant: true, sector: v.sector, relevance: "medium", why: "", implications: [] };  // watch, brief or context: no analysis
-      const stage = !needsAnalysis(v) ? "context" : v.verdict;
+      const o = needsAnalysis(v) ? analysis.get(i) : null;
+      const r = needsAnalysis(v) ? o?.r : { relevant: true, sector: v.sector, relevance: "medium", why: "", implications: [] };  // context only
       if (!r) continue;
       if (r.relevant === false) { reject(s, r.reason, kindOf(v)); dropped.add(i); continue; }
       const sector = data.sectors.find(x => x.id === r.sector) || data.sectors.find(x => x.id === v.sector);
@@ -2012,8 +1789,6 @@ async function runDesk(desk) {
         ...(o ? { analysis: cleanAnalysis(r, o.plan, reportTextOf([report])) } : {}),
         ...(o?.plan?.war ? { conflict: o.plan.war } : {}),
         ...(cleanPlace(v.place) ? { place: cleanPlace(v.place) } : {}),
-        stage, filter: filterInfo(v, v.verdict),
-        ...(stage === "watch" ? { watch: { grows_if: str(v.grows_if, 120), since: new Date().toISOString(), expires: watchExpiry(v.channel) } } : {}),
         reports: [report]
       };
       sector.items.push(ev); placed[i] = ev; added++;
@@ -2021,8 +1796,6 @@ async function runDesk(desk) {
     batch.forEach(s => seen.add(s.url));
   }
 
-  const watch = await reviewWatch(data, desk.mode);           // expire old watch items; promote those whose trigger happened
-  if (watch.checked || watch.expired) console.log(`Watching: ${watch.checked} checked, ${watch.promoted} promoted to analysis, ${watch.expired} expired, ${watch.open} open`);
   const finance = await moveToFinance(data);
   if (finance.moved || finance.checked) console.log(`Finance: ${finance.moved} of ${finance.checked} recent stories moved into the new Finance sector`);
   const stats = await addStatistics(data, desk.mode);     // statistics come before catch-up work
@@ -2037,7 +1810,6 @@ async function runDesk(desk) {
   const og = await fillShareImages(data);
   if (og.tried) console.log(`Article pages checked: ${og.tried} (photos found ${og.found}, summaries found ${og.summaries})`);
 
-  for (const s of data.sectors) for (const ev of s.items) ev.priority = priorityOf(ev);
   for (const s of data.sectors) {
     const uniq = new Map(s.items.map(i => [i.id, i]));
     s.items = [...uniq.values()].sort((a, b) => latest(b).localeCompare(latest(a)));
@@ -2074,8 +1846,7 @@ async function runDesk(desk) {
   data.recentDays = RECENT_DAYS;
   data.updatedAt = new Date().toISOString();
   await saveWars();
-  const health = await recordHealth(desk, data, tally, added, merged);
-  data.lastRun = { filter: tally, health, watch, wars: warPrep, places, skipped, finance, analysed: fresh.length, added, merged, rejected: fresh.length && !failures && !budgetStopped ? fresh.length - added - merged : undefined, failedBatches: failures, feeds: feedHealth, shareImages: og, threads: th, summaries: sm, kinds, frames, stats, models: usage,
+  data.lastRun = { wars: warPrep, places, skipped, finance, analysed: fresh.length, added, merged, rejected: fresh.length && !failures && !budgetStopped ? fresh.length - added - merged : undefined, failedBatches: failures, feeds: feedHealth, shareImages: og, threads: th, summaries: sm, kinds, frames, stats, models: usage,
     spend: budget ? { thisDesk: Math.round((budget.spent - runStart) * 1e4) / 1e4, today: Math.round(budget.spent * 1e4) / 1e4, cap: DAILY_BUDGET, ...(budgetStopped ? { stopped: true } : {}) } : undefined };
 
   await fs.writeFile(desk.data, JSON.stringify(data, null, 2) + "\n");
@@ -2086,31 +1857,5 @@ async function runDesk(desk) {
   return { added, merged, failures, analysed: fresh.length };
 }
 function latest(e) { return (e.reports || []).map(r => r.date || "").sort().pop() || e.date || ""; }
-
-// v74 (25 Oct): a daily record of what each desk's filter decided, and an alarm when a desk goes quiet.
-// The v73 rules cut the Global desk from about 22 new stories a day to 1–7 before anyone noticed; this makes it visible.
-const HEALTH_FILE = "data/filter-health.json", HEALTH_DAYS = 30;
-const HEALTH_MIN = { global: { newPerDay: 10, keepRate: 0.06 }, domestic: { newPerDay: 12, keepRate: 0.06 } };
-export async function recordHealth(desk, data, tally, added, merged) {
-  const doc = await readJson(HEALTH_FILE, { days: {} });
-  const day = new Date().toISOString().slice(0, 10);
-  const d = ((doc.days[day] ||= {})[desk.id] ||= { judged: 0, analyse: 0, watch: 0, brief: 0, reject: 0, added: 0, merged: 0, runs: 0 });
-  for (const k of VERDICTS) d[k] += tally[k] || 0;
-  d.judged += VERDICTS.reduce((t, k) => t + (tally[k] || 0), 0);
-  d.added += added; d.merged += merged; d.runs += 1;
-  const keep = days => { let j = 0, k = 0; for (const x of days) { const y = doc.days[x]?.[desk.id]; if (y) { j += y.judged; k += y.judged - y.reject; } } return j ? k / j : null; };
-  const recent = Object.keys(doc.days).sort().slice(-2);                       // today and yesterday
-  const cut = Date.now() - 864e5;
-  const newCards = data.sectors.flatMap(s => s.items).filter(e => { const first = (e.reports || []).map(r => r.date || "").sort()[0] || e.date; return Date.parse(first) >= cut && !["watch", "brief", "expired"].includes(e.stage); }).length;
-  const keepRate = keep(recent), min = HEALTH_MIN[desk.mode === "domestic" ? "domestic" : "global"];
-  const alarm = [];
-  if (newCards < min.newPerDay) alarm.push(`only ${newCards} new stories in the main feed in 24 hours (expected ${min.newPerDay}+)`);
-  if (keepRate !== null && keepRate < min.keepRate) alarm.push(`filter kept ${(keepRate * 100).toFixed(1)}% of headlines over two days (expected ${min.keepRate * 100}%+)`);
-  for (const x of Object.keys(doc.days).sort().slice(0, -HEALTH_DAYS)) delete doc.days[x];
-  doc.updatedAt = new Date().toISOString();
-  await fs.writeFile(HEALTH_FILE, JSON.stringify(doc, null, 1) + "\n");
-  if (alarm.length) console.log(`::warning title=${desk.id} desk is quiet::${alarm.join("; ")}`);   // shows on the GitHub Actions run page
-  return { day, newCards24h: newCards, keepRate2d: keepRate === null ? null : Math.round(keepRate * 1000) / 1000, ...(alarm.length ? { alarm } : {}) };
-}
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) main().catch(e => { console.error(e); process.exit(1); });
