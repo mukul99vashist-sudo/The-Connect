@@ -2,12 +2,146 @@
   "schema": 4,
   "region": "India",
   "since": "2026-10-02",
-  "updatedAt": "2026-10-25T19:23:17.275Z",
+  "updatedAt": "2026-10-25T20:59:33.226Z",
   "sectors": [
     {
       "id": "energy",
       "name": "Energy",
       "items": [
+        {
+          "id": "s1gub930",
+          "headline": "Live: Wall Street retreats as oil prices continue to rise, ASX set to slip",
+          "url": "https://www.abc.net.au/news/2026-10-26/asx-markets-business-live-news-october-26/107306820",
+          "source": "abc",
+          "date": "2026-10-25T19:59:06.000Z",
+          "relevance": "medium",
+          "image": "https://live-production.wcms.abc-cdn.net.au/2bcc5de27112144035164dd51dacf77e?impolicy=wcms_crop_resize&cropH=530&cropW=942&xPos=0&yPos=14&width=862&height=485",
+          "why": "ABC News reports that Wall Street shares fell and Australian shares were set to slip after oil prices jumped. India imports most of its crude oil, so a lasting rise could raise its import costs and weigh on its markets.",
+          "implications": [
+            "If higher crude prices persist, Indian oil refiners would pay more for imported crude, which can eventually feed through to petrol, diesel and cooking gas prices.",
+            "A weaker mood in global share markets can also spill into Indian equities, because Indian markets often react to moves on Wall Street."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-25T20:59:24.252Z",
+            "tier": "quick",
+            "primary": "market_move",
+            "complement": null,
+            "features": [
+              "market_move",
+              "price_move"
+            ],
+            "exposure": {
+              "level": "high",
+              "reason": "Crude oil is among India's largest imports and feeds into fuel prices, so a sustained rise could reach households and businesses. The size and duration of this jump are not reported."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Pump prices and import costs adjust with a lag, and the effect depends on whether oil prices stay high, which the report does not say."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a brief summary from one outlet's live blog, with no figures, named officials or stated reason for the oil price jump."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "fuel prices",
+                "effect": "If higher crude prices last, refiners' costs could rise, which may eventually feed through to petrol, diesel and cooking gas prices.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Equity & mutual fund investors",
+                "direction": "unclear",
+                "what": "share market mood",
+                "effect": "Weakness on Wall Street and in other global markets could influence sentiment in Indian shares, which would show up in the value of equity holdings.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Government finances",
+                "direction": "unclear",
+                "what": "import bill pressure",
+                "effect": "A sustained rise in crude prices could increase India's import bill and put pressure on the trade balance and government finances.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Whether crude oil prices keep rising or ease back in the coming trading sessions",
+                "why": "It would show whether the jump is a brief swing or a lasting change that matters for India's import costs.",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "How Indian share indices open after the fall on Wall Street",
+                "why": "It would show whether the global weakness carries over to Indian markets.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "India imports most of the crude oil it uses, so higher global prices raise the import bill and can widen the trade deficit. Rising oil prices also tend to lift inflation expectations worldwide."
+            ],
+            "terms": [
+              {
+                "term": "ASX",
+                "meaning": "The ASX is the Australian Securities Exchange, Australia's main stock market, whose benchmark index is often used to gauge market mood in the Asia-Pacific region."
+              }
+            ],
+            "frameworks": {
+              "market_move": {
+                "moved": {
+                  "what": "Wall Street share markets",
+                  "kind": "share index",
+                  "direction": "down",
+                  "size": "",
+                  "period": "during the day's trading, as reported on 25 October"
+                },
+                "cause": {
+                  "text": "ABC News says oil prices have jumped, putting downward pressure on global stock markets, including Australia's ASX.",
+                  "status": "reported",
+                  "by": "ABC News live markets blog"
+                },
+                "duration": "unclear",
+                "channels": [
+                  {
+                    "channel": "rupee",
+                    "india_link": "Higher oil prices could raise India's dollar needs for crude imports, which may put pressure on the rupee and increase costs for importers.",
+                    "basis": "inferred"
+                  }
+                ],
+                "not_settled": "The report does not say how large the moves were, why oil prices jumped, or how long the rise might last."
+              }
+            }
+          },
+          "stage": "analyse",
+          "filter": {
+            "verdict": "analyse",
+            "channel": "prices_supply",
+            "status": "done",
+            "effect": "high",
+            "reach": "national",
+            "reason": "Oil price rise pulls down Wall Street and ASX; oil is India's top import.",
+            "at": "2026-10-25T20:59:24.253Z"
+          },
+          "reports": [
+            {
+              "source": "abc",
+              "headline": "Live: Wall Street retreats as oil prices continue to rise, ASX set to slip",
+              "url": "https://www.abc.net.au/news/2026-10-26/asx-markets-business-live-news-october-26/107306820",
+              "date": "2026-10-25T19:59:06.000Z",
+              "kind": "breaking",
+              "summary": "Oil prices have jumped, putting downward pressure on global stock markets, including the ASX. Follow the day's events and insights from our business reporters on the ABC News live markets blog.",
+              "summaryV": 3,
+              "image": "https://live-production.wcms.abc-cdn.net.au/2bcc5de27112144035164dd51dacf77e?impolicy=wcms_crop_resize&cropH=530&cropW=942&xPos=0&yPos=14&width=862&height=485"
+            }
+          ],
+          "placeTried": true,
+          "priority": 85,
+          "thread": "t1dbdiwl"
+        },
         {
           "id": "s82d2if",
           "headline": "Yemen's Houthi rebels claim new attacks on oil facilities and airports across Saudi Arabia",
@@ -17213,7 +17347,10 @@
           "watch": {
             "grows_if": "Brazil's new president announces a first trade, tariff or energy decision affecting India",
             "since": "2026-10-25T18:30:18.863Z",
-            "expires": "2026-11-01T18:30:18.863Z"
+            "expires": "2026-11-01T18:30:18.863Z",
+            "recheck": false,
+            "checkedAt": "2026-10-25T20:59:27.561Z",
+            "checkedReports": 2
           },
           "reports": [
             {
@@ -17226,11 +17363,24 @@
               "summaryV": 3,
               "ogTried": true,
               "descTried": true
+            },
+            {
+              "source": "cbs",
+              "headline": "Brazil votes in tense presidential runoff between Lula and Flávio Bolsonaro",
+              "url": "https://www.cbsnews.com/news/brazil-presidential-runoff-lula-flavio-bolsonaro/",
+              "date": "2026-10-25T20:45:54.000Z",
+              "kind": "hard",
+              "summary": "Brazilians are choosing between President Luiz Inácio Lula da Silva and Flávio Bolsonaro in a polarizing presidential election.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://assets1.cbsnewsstatic.com/hub/i/r/2026/10/25/d36e81f1-c982-4d14-8a55-08ee185f3a38/thumbnail/1200x630/0e02b1afd9aaf2a0a1c3efb0026c7128/ap26298414533867.jpg"
             }
           ],
           "finChecked": true,
-          "priority": 45,
-          "thread": "t1crla7m"
+          "priority": 50,
+          "thread": "t1crla7m",
+          "image": "https://assets1.cbsnewsstatic.com/hub/i/r/2026/10/25/d36e81f1-c982-4d14-8a55-08ee185f3a38/thumbnail/1200x630/0e02b1afd9aaf2a0a1c3efb0026c7128/ap26298414533867.jpg"
         },
         {
           "id": "spnaxni",
@@ -35956,10 +36106,11 @@
   "source": "BBC News & The Guardian & NPR & Al Jazeera & MercoPress & ABC News & The New York Times & CNBC & CBS News & DW & France 24 & Africanews & South China Morning Post & The Hindu & Mint",
   "lastRun": {
     "filter": {
-      "reject": 4
+      "reject": 25,
+      "analyse": 1
     },
     "watch": {
-      "checked": 0,
+      "checked": 1,
       "promoted": 0,
       "expired": 0,
       "open": 13
@@ -35971,17 +36122,29 @@
     },
     "places": {
       "labelled": 0,
-      "none": 0,
+      "none": 1,
       "waiting": 0
     },
     "skipped": {
-      "since": "2026-10-25T19:09:38.044Z",
+      "since": "2026-10-25T19:23:17.275Z",
       "counts": {
-        "live_blog": 1
+        "section": 5,
+        "live_blog": 5
       },
       "examples": {
+        "section": [
+          "The aftermath of Storm Boelo across Scotland",
+          "Can Carrick survive Man United’s slump and Fernandes fallout?",
+          "The narrative battle over France’s unrest",
+          "Iraqis mark seven years since Tishreen protests with reform demands",
+          "Marine Le Pen launches presidential campaign in Orléans"
+        ],
         "live_blog": [
-          "Serbia votes as strongman Vučić faces grassroots challenge to 12-year rule – Europe live"
+          "Australia politics live: MPs to pay tribute to Helen Haines as parliament resumes; Hanson says One Nation cartoons ‘not ",
+          "Polls close in Serbia as strongman Vučić faces challenge to 12-year rule – Europe live",
+          "Brazil election results 2026 live: Lula-Bolsonaro vote extended by 2 hours",
+          "A corruption scandal involving a Brazilian Supreme Court justice has shaken up the election.",
+          "Here’s the latest."
         ]
       }
     },
@@ -35989,21 +36152,21 @@
       "moved": 0,
       "checked": 0
     },
-    "analysed": 4,
-    "added": 0,
-    "merged": 0,
-    "rejected": 4,
+    "analysed": 26,
+    "added": 1,
+    "merged": 1,
+    "rejected": 24,
     "failedBatches": 0,
     "feeds": {
       "bbc": {
         "feedsOk": 6,
         "feedsFailed": 0,
-        "items": 162
+        "items": 161
       },
       "guardian": {
         "feedsOk": 7,
         "feedsFailed": 0,
-        "items": 202
+        "items": 201
       },
       "npr": {
         "feedsOk": 4,
@@ -36013,7 +36176,7 @@
       "aljazeera": {
         "feedsOk": 1,
         "feedsFailed": 0,
-        "items": 11
+        "items": 8
       },
       "mercopress": {
         "feedsOk": 3,
@@ -36028,7 +36191,7 @@
       "nyt": {
         "feedsOk": 5,
         "feedsFailed": 0,
-        "items": 173
+        "items": 171
       },
       "cnbc": {
         "feedsOk": 3,
@@ -36048,7 +36211,7 @@
       "france24": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 77
+        "items": 75
       },
       "africanews": {
         "feedsOk": 1,
@@ -36062,18 +36225,18 @@
       }
     },
     "shareImages": {
-      "tried": 0,
-      "found": 0,
+      "tried": 1,
+      "found": 1,
       "summaries": 0
     },
     "threads": {
-      "assigned": 0,
+      "assigned": 1,
       "created": 0,
       "failedBatches": 0
     },
     "summaries": {
-      "written": 0,
-      "due": 0
+      "written": 1,
+      "due": 1
     },
     "kinds": {
       "labelled": 0,
@@ -36086,49 +36249,42 @@
       "failedBatches": 0
     },
     "stats": {
-      "searched": 2,
+      "searched": 0,
       "found": 0,
-      "reused": 1,
-      "none": 1,
+      "reused": 0,
+      "none": 0,
       "failed": 0,
-      "proposed": 5,
-      "droppedPoints": 5,
-      "pagesFetched": 2,
-      "samples": [
-        {
-          "headline": "France protests: Macron condemns 'stupid' comments from Trump, others as bond ma",
-          "result": "no figure found on an official page",
-          "proposed": 5,
-          "checked": 0,
-          "pagesFetched": 2
-        },
-        {
-          "headline": "Iran says won’t allow US warships to get close as Trump ponders new attacks",
-          "result": "reused saved series"
-        }
-      ]
+      "proposed": 0,
+      "droppedPoints": 0,
+      "pagesFetched": 0,
+      "samples": []
     },
     "models": {
       "filter": {
         "model": "claude-haiku-5-5",
-        "calls": 3,
-        "inputTokens": 7494,
-        "outputTokens": 1140,
-        "cost": 0.0014
+        "calls": 5,
+        "inputTokens": 14584,
+        "outputTokens": 4024,
+        "cost": 0.0035
       },
-      "stats": {
+      "analysis_quick": {
         "model": "claude-sonnet-5-5",
         "calls": 1,
-        "inputTokens": 49905,
-        "outputTokens": 1293,
-        "searches": 2,
-        "fetches": 2,
-        "cost": 0.1327
+        "inputTokens": 3042,
+        "outputTokens": 2639,
+        "cost": 0.0325
+      },
+      "threads": {
+        "model": "claude-sonnet-5-5",
+        "calls": 2,
+        "inputTokens": 8047,
+        "outputTokens": 409,
+        "cost": 0.0202
       }
     },
     "spend": {
-      "thisDesk": 0.1341,
-      "today": 0.7755,
+      "thisDesk": 0.0561,
+      "today": 0.8325,
       "cap": 6
     }
   },
