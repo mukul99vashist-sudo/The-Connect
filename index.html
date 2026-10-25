@@ -1876,7 +1876,7 @@ function render(doc){
 
   var pool = tab==="all" ? events.slice() : events.filter(function(e){return e.sector.id===tab;});
   var byRank=function(a,b){ return rank(b)-rank(a) || String(latestDate(b.it)).localeCompare(String(latestDate(a.it))); };
-  var watching=pool.filter(function(e){ return e.it.stage==="watch" && !(e.it.watch && Date.parse(e.it.watch.expires) < Date.now()); /* v72 restore: the engine no longer expires watch items, so the site hides them once their date passes */ }).sort(byRank).slice(0,WATCH_SHOW);
+  var watching=pool.filter(function(e){ return e.it.stage==="watch"; }).sort(byRank).slice(0,WATCH_SHOW);
   var briefs=pool.filter(function(e){ return e.it.stage==="brief" && ageHours(e.it)<=BRIEF_HOURS; }).sort(byRank).slice(0,BRIEF_SHOW);
   var list=pool.filter(function(e){ return !isMinor(e.it); }).sort(byRank);
 
