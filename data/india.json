@@ -2,7 +2,7 @@
   "schema": 4,
   "region": "India",
   "since": "2026-10-02",
-  "updatedAt": "2026-10-25T20:59:33.226Z",
+  "updatedAt": "2026-10-25T23:21:36.473Z",
   "sectors": [
     {
       "id": "energy",
@@ -36106,11 +36106,10 @@
   "source": "BBC News & The Guardian & NPR & Al Jazeera & MercoPress & ABC News & The New York Times & CNBC & CBS News & DW & France 24 & Africanews & South China Morning Post & The Hindu & Mint",
   "lastRun": {
     "filter": {
-      "reject": 25,
-      "analyse": 1
+      "reject": 27
     },
     "watch": {
-      "checked": 1,
+      "checked": 0,
       "promoted": 0,
       "expired": 0,
       "open": 13
@@ -36122,29 +36121,33 @@
     },
     "places": {
       "labelled": 0,
-      "none": 1,
+      "none": 0,
       "waiting": 0
     },
     "skipped": {
-      "since": "2026-10-25T19:23:17.275Z",
+      "since": "2026-10-25T20:59:33.226Z",
       "counts": {
         "section": 5,
-        "live_blog": 5
+        "podcast_quiz_gallery": 1,
+        "live_blog": 8
       },
       "examples": {
         "section": [
-          "The aftermath of Storm Boelo across Scotland",
-          "Can Carrick survive Man United’s slump and Fernandes fallout?",
-          "The narrative battle over France’s unrest",
-          "Iraqis mark seven years since Tishreen protests with reform demands",
-          "Marine Le Pen launches presidential campaign in Orléans"
+          "Why Israel's election is one of the most important in its history",
+          "Real Madrid beat Barcelona 2-1 at Camp Nou to halve gap to La Liga leaders",
+          "Marine Le Pen launches French presidential campaign",
+          "Trump VS California",
+          "Peak lighting outcry spotlights the trouble with fast-track governance"
+        ],
+        "podcast_quiz_gallery": [
+          "In pictures: Storm Boelo leaves a trail of destruction across Scotland"
         ],
         "live_blog": [
-          "Australia politics live: MPs to pay tribute to Helen Haines as parliament resumes; Hanson says One Nation cartoons ‘not ",
-          "Polls close in Serbia as strongman Vučić faces challenge to 12-year rule – Europe live",
-          "Brazil election results 2026 live: Lula-Bolsonaro vote extended by 2 hours",
-          "A corruption scandal involving a Brazilian Supreme Court justice has shaken up the election.",
-          "Here’s the latest."
+          "Brazil runoff live updates: ballot count resumes after two-hour voting extension",
+          "Australia politics live: MPs to honour Haines with ‘civility pledge’ and orange cockatoos; access to contraception and U",
+          "Wild scenes of celebration in Belgrade as Vučić concedes Serbian election – Europe live",
+          "Live Updates: Polls Close in Brazil as Presidential Race Comes to Chaotic Close",
+          "The future of the Amazon rainforest could depend on who wins."
         ]
       }
     },
@@ -36152,21 +36155,21 @@
       "moved": 0,
       "checked": 0
     },
-    "analysed": 26,
-    "added": 1,
-    "merged": 1,
-    "rejected": 24,
+    "analysed": 27,
+    "added": 0,
+    "merged": 0,
+    "rejected": 27,
     "failedBatches": 0,
     "feeds": {
       "bbc": {
         "feedsOk": 6,
         "feedsFailed": 0,
-        "items": 161
+        "items": 160
       },
       "guardian": {
         "feedsOk": 7,
         "feedsFailed": 0,
-        "items": 201
+        "items": 200
       },
       "npr": {
         "feedsOk": 4,
@@ -36176,7 +36179,7 @@
       "aljazeera": {
         "feedsOk": 1,
         "feedsFailed": 0,
-        "items": 8
+        "items": 9
       },
       "mercopress": {
         "feedsOk": 3,
@@ -36191,7 +36194,7 @@
       "nyt": {
         "feedsOk": 5,
         "feedsFailed": 0,
-        "items": 171
+        "items": 168
       },
       "cnbc": {
         "feedsOk": 3,
@@ -36201,7 +36204,7 @@
       "cbs": {
         "feedsOk": 2,
         "feedsFailed": 0,
-        "items": 46
+        "items": 47
       },
       "dw": {
         "feedsOk": 3,
@@ -36225,18 +36228,18 @@
       }
     },
     "shareImages": {
-      "tried": 1,
-      "found": 1,
+      "tried": 0,
+      "found": 0,
       "summaries": 0
     },
     "threads": {
-      "assigned": 1,
+      "assigned": 0,
       "created": 0,
       "failedBatches": 0
     },
     "summaries": {
-      "written": 1,
-      "due": 1
+      "written": 0,
+      "due": 0
     },
     "kinds": {
       "labelled": 0,
@@ -36262,29 +36265,15 @@
     "models": {
       "filter": {
         "model": "claude-haiku-5-5",
-        "calls": 5,
-        "inputTokens": 14584,
-        "outputTokens": 4024,
-        "cost": 0.0035
-      },
-      "analysis_quick": {
-        "model": "claude-sonnet-5-5",
-        "calls": 1,
-        "inputTokens": 3042,
-        "outputTokens": 2639,
-        "cost": 0.0325
-      },
-      "threads": {
-        "model": "claude-sonnet-5-5",
         "calls": 2,
-        "inputTokens": 8047,
-        "outputTokens": 409,
-        "cost": 0.0202
+        "inputTokens": 12898,
+        "outputTokens": 3045,
+        "cost": 0.0028
       }
     },
     "spend": {
-      "thisDesk": 0.0561,
-      "today": 0.8325,
+      "thisDesk": 0.0028,
+      "today": 0.8361,
       "cap": 6
     }
   },
