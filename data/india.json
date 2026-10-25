@@ -2,7 +2,7 @@
   "schema": 4,
   "region": "India",
   "since": "2026-10-02",
-  "updatedAt": "2026-10-25T11:48:32.134Z",
+  "updatedAt": "2026-10-25T16:37:30.380Z",
   "sectors": [
     {
       "id": "energy",
@@ -16,19 +16,19 @@
           "date": "2026-10-24T17:50:25.000Z",
           "relevance": "medium",
           "image": "https://s.france24.com/media/display/1192dd1a-cfd3-11f1-97a7-bdb9616e85cf/w:1024/p:16x9/King-Khalid-International-Airport.jpg",
-          "why": "Yemen's Houthi rebels say they attacked Saudi oil facilities and airports, while Saudi Arabia says it intercepted missiles and drones. Any damage could raise crude prices for import-dependent India and affect Indians who live in or travel to Saudi Arabia.",
+          "why": "Houthi rebels claimed new attacks on Saudi oil facilities and airports, while Riyadh's airport partially resumed flights after a two-week suspension. India is exposed through Saudi crude supplies, the large Indian community in Saudi Arabia and Gulf air travel.",
           "implications": [
-            "If the claimed strikes damaged Saudi oil facilities or pipelines, global crude prices could rise, which would increase costs for Indian refiners and could feed through to petrol, diesel and LPG prices.",
-            "Attacks on Saudi airports could disrupt flights used by Indian workers, their families and pilgrims, although the reports do not confirm that any Saudi airport has closed.",
-            "The Saudi-led coalition says it intercepted a drone and a missile aimed at Riyadh and 10 missiles aimed at its southern region, but the reports give no account of any damage.",
-            "Houthi missile fire on Aden's airport and coastguard sites shows the fighting spreading inside Yemen, which could raise perceived risks for ships and aircraft near the Red Sea route that Indian trade with Europe uses."
+            "The Houthis say they hit Saudi oil facilities and pipelines. If the damage is confirmed, it could tighten regional supply and raise the crude prices that Indian refiners pay.",
+            "The partial reopening of Riyadh's airport restores some flights for Indians travelling to and from the Saudi capital. Houthi threats of further strikes, however, leave schedules exposed to fresh suspensions.",
+            "Saudi air defences intercepted a Houthi barrage near Mecca. This brings the fighting close to the city that Indian Muslims visit for Umrah and Hajj pilgrimages.",
+            "Houthi missiles also reportedly struck Aden's airport and a coastguard base. Strikes on this southern Yemeni port city could raise perceived risk for ships in nearby waters that carry Indian trade."
           ],
           "analysis": {
             "v": 3,
-            "at": "2026-10-25T11:48:32.112Z",
-            "tier": "standard",
+            "at": "2026-10-25T16:37:30.362Z",
+            "tier": "deep",
             "primary": "disruption_map",
-            "complement": null,
+            "complement": "escalation",
             "features": [
               "disruption",
               "armed_conflict",
@@ -37,101 +37,126 @@
             ],
             "exposure": {
               "level": "high",
-              "reason": "The attacks target Saudi oil infrastructure, a top source of India's crude imports, and Saudi airports used by large numbers of Indian workers and pilgrims, touching both fuel costs and the safety of Indians."
+              "reason": "The conflict reaches India through Saudi crude supplies, the safety of the large Indian community in Saudi Arabia, and flights used by Indian workers and pilgrims. All of these are household essentials or concern the safety and travel of Indians."
             },
             "horizon": {
-              "value": "weeks",
-              "reason": "Any effect in India depends on whether damage to Saudi oil facilities or airports is confirmed and on how crude markets and airlines respond over the coming weeks."
+              "value": "now",
+              "reason": "The partial reopening of Riyadh's airport and continuing Houthi strikes affect Indian travellers and residents in Saudi Arabia immediately."
             },
             "confidence": {
               "level": "medium",
-              "reason": "France 24, ABC News and Al Jazeera report the attacks, but strikes on Saudi oil facilities and airports are Houthi claims, and the coalition reports only interceptions, with damage unconfirmed."
+              "reason": "Eight reports from five outlets agree that the attacks and the airport reopening took place, but the strikes on oil facilities rest on Houthi claims and the damage is unconfirmed."
             },
-            "outlets": 3,
+            "outlets": 6,
             "affected": [
               {
-                "group": "Fuel & LPG users",
-                "direction": "unclear",
-                "what": "fuel and LPG prices",
-                "effect": "If Saudi oil output or exports were disrupted, higher crude prices could raise Indian refiners' costs and may eventually feed through to petrol, diesel and LPG prices.",
-                "basis": "inferred"
-              },
-              {
                 "group": "Gulf & overseas workers and families",
-                "direction": "unclear",
-                "what": "safety and travel risks",
-                "effect": "Indian workers in Saudi Arabia could face greater security risks and possible flight disruption if missile and drone attacks on Saudi cities and airports continue.",
+                "direction": "down",
+                "what": "safety of Indians in Saudi Arabia",
+                "effect": "Repeated missile and drone attacks on Riyadh and other Saudi cities could put Indian workers there at risk and worry their families in India.",
                 "basis": "inferred"
               },
               {
                 "group": "Travellers & pilgrims",
+                "direction": "mixed",
+                "what": "flight availability to Riyadh",
+                "effect": "Riyadh's airport has partially resumed flights after two weeks, but Houthi threats of further strikes could disrupt travel again, including for pilgrims heading towards Mecca.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Fuel & LPG users",
                 "direction": "unclear",
-                "what": "flight availability",
-                "effect": "Indian pilgrims and travellers heading to Saudi Arabia could see delays or cancellations if airports targeted by the Houthis suspend or restrict operations.",
+                "what": "crude oil import costs",
+                "effect": "If the claimed attacks on Saudi oil sites cut output, higher crude prices could raise Indian refiners' costs and may feed into petrol, diesel and LPG prices.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "Saudi official confirmation of any damage to oil facilities or pipelines targeted by the Houthis",
-                "why": "Confirmed damage would show whether Saudi crude supply, and therefore oil prices facing India, is actually at risk.",
-                "when": "",
-                "where": "Saudi-led coalition statements"
-              },
-              {
-                "what": "Any suspension or restriction of flights at Saudi airports named as Houthi targets",
-                "why": "Flight disruption would directly affect Indian workers, families and pilgrims travelling to and from Saudi Arabia.",
+                "what": "Full resumption of scheduled flights at Riyadh's King Khalid International Airport",
+                "why": "It would show whether air links used by Indian workers and travellers have returned to normal.",
                 "when": "",
                 "where": ""
               },
               {
-                "what": "Any travel or safety advisory issued for Indian nationals in Saudi Arabia",
-                "why": "An advisory would indicate how seriously Indian authorities assess the risk to Indians living in or visiting Saudi Arabia.",
+                "what": "Saudi confirmation or denial of damage to oil facilities and pipelines",
+                "why": "It would show whether the Houthi claims translate into a real loss of oil supply.",
+                "when": "",
+                "where": "Saudi Press Agency"
+              },
+              {
+                "what": "Indian embassy advisories for Indian nationals in Saudi Arabia",
+                "why": "They would signal whether Indian authorities judge the risk to Indians there to be rising.",
                 "when": "",
                 "where": "Embassy of India, Riyadh"
               }
             ],
             "context": [
-              "India imports most of the crude oil it refines, and Saudi Arabia is one of its largest suppliers, so supply disruptions or price spikes in Saudi oil quickly affect India's import bill.",
-              "Saudi Arabia hosts one of the largest communities of Indian workers abroad, and their remittances support many households, particularly in southern states such as Kerala.",
-              "Attacks on Gulf energy infrastructure tend to push up international crude prices through risk premiums, even when physical damage turns out to be limited."
+              "India imports most of the crude oil it uses, and Saudi Arabia has long been one of its largest suppliers, so threats to Saudi oil facilities matter for India's fuel import bill.",
+              "Saudi Arabia hosts one of the largest communities of Indian workers abroad, whose earnings sent home support many families, especially in states such as Kerala.",
+              "Large numbers of Indian pilgrims travel to Mecca and Medina each year for Umrah and Hajj, usually flying through Saudi airports."
             ],
             "terms": [
               {
                 "term": "Houthis",
-                "meaning": "An Iran-allied armed movement in Yemen that controls much of the country's north and is fighting Saudi Arabia and Yemen's Saudi-backed government."
+                "meaning": "An Iran-allied armed movement that controls much of northern Yemen and has fought a Saudi-led military coalition for years."
               },
               {
                 "term": "Saudi-led coalition",
-                "meaning": "A military alliance led by Saudi Arabia that supports Yemen's internationally recognised government against the Houthis."
+                "meaning": "A group of states led by Saudi Arabia that backs Yemen's internationally recognised government against the Houthis."
+              },
+              {
+                "term": "ballistic missiles",
+                "meaning": "Rocket-powered missiles that fly a high, arcing path to strike distant targets, which makes them harder to intercept than slower weapons."
               }
             ],
             "frameworks": {
               "disruption_map": {
                 "node": {
-                  "name": "Saudi oil facilities, pipelines and airports",
-                  "type": "other",
-                  "status": "unknown",
-                  "as_of": "2026-10-24 (Saturday)"
+                  "name": "Riyadh airport (King Khalid International Airport)",
+                  "type": "airport",
+                  "status": "partial",
+                  "as_of": "2026-10-25"
                 },
                 "cause": {
-                  "text": "Yemen's Iran-allied Houthi rebels said they launched attacks in phases on Saudi oil facilities, pipelines and airports as clashes with Saudi Arabia intensified.",
-                  "status": "claimed"
+                  "text": "Houthi missile strikes on the Saudi capital this month forced a two-week suspension of operations at the airport.",
+                  "status": "confirmed"
                 },
                 "flows": [
                   {
-                    "flow": "crude",
-                    "india_link": "Saudi Arabia is a major supplier of crude oil to Indian refiners, so damage to its oil facilities or pipelines could tighten supply and raise prices for India.",
-                    "basis": "inferred"
-                  },
-                  {
                     "flow": "air passengers",
-                    "india_link": "Indian workers, their families and pilgrims rely on flights to Saudi airports, so attacks on those airports could disrupt their travel.",
+                    "india_link": "Indian workers, their families and other travellers rely on flights into Riyadh. Reduced operations could limit their seats and routes between India and the Saudi capital.",
                     "basis": "inferred"
                   }
                 ],
                 "alternatives": [],
-                "duration": "not reported"
+                "duration": "Operations were suspended for two weeks before a partial resumption; a date for full reopening is not reported."
+              },
+              "escalation": {
+                "move": "none",
+                "rung": 6,
+                "current_rung": 6,
+                "previous_rung": null,
+                "development": "The Houthis claimed new attacks on Saudi airports, oil facilities and pipelines and fired missiles at Aden, while Saudi Arabia said it intercepted missiles and drones near Riyadh and Mecca.",
+                "evidence": "The claimed strikes on oil infrastructure and airports are the same kind of action that set rung 6 on 12 October. No full-scale war or ceasefire is reported, so the level holds.",
+                "next_signals": [
+                  {
+                    "rung": 7,
+                    "signal": "Saudi or coalition forces launch a large-scale invasion of Houthi-held Yemen with mobilised national armies, or the Houthis launch an equivalent offensive."
+                  },
+                  {
+                    "rung": 5,
+                    "signal": "Houthi attacks on Saudi airports and oil facilities stop, while strikes between the sides continue only against military targets."
+                  }
+                ],
+                "india_channels": [
+                  "oil",
+                  "flights",
+                  "diaspora safety"
+                ],
+                "conflict": "w1f5pudc",
+                "applied": "none",
+                "from": 6
               }
             }
           },
@@ -192,16 +217,264 @@
               "kind": "hard",
               "summary": "Saudi-led coalition says intercepted drone, missile launched towards Riyadh and 10 missiles targeting southern region.",
               "summaryV": 3
+            },
+            {
+              "source": "cnbc",
+              "headline": "Saudi Arabia says it intercepted missiles and drones from Iran-backed Houthis",
+              "url": "https://www.cnbc.com/2026/10/25/saudi-arabia-houthi-missile-drone-interceptions.html",
+              "date": "2026-10-25T13:41:37.000Z",
+              "kind": "hard",
+              "summary": "Saudi Arabia says it intercepted Houthi missiles and drones, while the Houthis claimed attacks on airports and energy sites amid rising regional supply risks.",
+              "summaryV": 3
+            },
+            {
+              "source": "aljazeera",
+              "headline": "Saudi air defences intercept Houthi barrage near Mecca",
+              "url": "https://www.aljazeera.com/news/2026/10/25/saudi-air-defences-intercept-houthi-barrage-near-mecca",
+              "date": "2026-10-25T13:49:33.000Z",
+              "kind": "hard",
+              "summary": "Houthi attacks on Saudi Arabia escalate as fierce ground battles and a devastating siege strangle Yemen's Taiz.",
+              "summaryV": 3
+            },
+            {
+              "source": "africanews",
+              "headline": "Saudi Arabia's Riyadh airport partially resumes flights after Houthi attacks",
+              "url": "http://www.africanews.com/2026/10/25/saudi-arabias-riyadh-airport-partially-resumes-flights-after-houthi-attacks/",
+              "date": "2026-10-25T14:35:41.000Z",
+              "kind": "hard",
+              "summary": "The announcement comes after a two-week suspension of operations following strikes from Yemen's Houthis on the Saudi capital.",
+              "summaryV": 3
+            },
+            {
+              "source": "nyt",
+              "headline": "Saudi Arabia Reopens Riyadh Airport Even as Houthis Threaten Further Strikes",
+              "url": "https://www.nytimes.com/2026/10/25/world/middleeast/saudi-arabia-riyadh-airport-reopens.html",
+              "date": "2026-10-25T15:50:53.000Z",
+              "kind": "hard",
+              "summary": "The Houthis, an Iran-backed Yemeni militia, launched several deadly attacks on the airport this month.",
+              "summaryV": 3,
+              "image": "https://static01.nyt.com/images/2026/10/25/multimedia/25int-saudi-airport-1-pqfm/25int-saudi-airport-1-pqfm-mediumSquareAt3X.jpg"
             }
           ],
-          "priority": 95,
+          "priority": 100,
           "thread": "tq5ix5r",
           "stats": {
             "v": 2,
             "at": "2026-10-24T23:24:41.042Z",
             "series": [],
             "reuseOnly": true
-          }
+          },
+          "conflict": "w1f5pudc"
+        },
+        {
+          "id": "s1kd7mh7",
+          "headline": "Iran says indirect talks with U.S. on ceasefire proposal continue",
+          "url": "https://www.cbsnews.com/live-updates/iran-war-trump-us-ceasefire-talks-ongoing/",
+          "source": "cbs",
+          "date": "2026-10-21T20:17:43.000Z",
+          "relevance": "medium",
+          "why": "Iran's president blamed the United States for the failure of an interim deal to pause Iran's war with the US and Israel, but urged a new attempt. A prolonged war may keep Gulf energy shipments to India at risk.",
+          "implications": [
+            "Iran said on 21 October that the United States was seeking changes to a seven-day ceasefire proposal that President Trump rejected last month, so the terms of any pause remain contested.",
+            "President Masoud Pezeshkian's call for a new attempt at an agreement means diplomacy has not been abandoned, so the outlook for the war could still change.",
+            "Without a pause in fighting, Indian refiners and shippers sourcing oil and gas from the Gulf may keep facing higher freight and insurance costs.",
+            "Both accounts come from the Iranian side. No United States account of the talks appears in the reports, so Washington's position is known only as Iran describes it."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-25T16:37:30.364Z",
+            "tier": "deep",
+            "primary": "conflicting",
+            "complement": "impact_chain",
+            "features": [
+              "conflict",
+              "armed_conflict",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The reports describe no new attack, so the effect on India runs indirectly through the risk that a continuing war poses to Gulf oil and gas shipping and to Indians in the region."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "No timeline for a new ceasefire attempt is reported, so any effect on India depends on how long the war continues."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "The account rests on two outlets that both report statements by Iranian officials, and no United States confirmation of the state of the talks is reported."
+            },
+            "outlets": 2,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "fuel import costs",
+                "effect": "A continuing war could keep tanker freight and insurance costs high on Gulf routes, which may raise the cost of the crude and LPG that India imports.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Gulf & overseas workers and families",
+                "direction": "unclear",
+                "what": "regional security",
+                "effect": "The failure of a pause could prolong insecurity in the Gulf region, where many Indians live and work.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "shipping costs",
+                "effect": "Prolonged conflict near Gulf sea lanes could keep freight and insurance charges elevated for Indian traders moving goods through the region.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "A new ceasefire proposal announced by Iran or the United States",
+                "why": "It would show whether Pezeshkian's call for a fresh attempt has turned into actual negotiations.",
+                "when": "",
+                "where": "Iranian Ministry of Foreign Affairs"
+              },
+              {
+                "what": "A United States statement on the state of indirect talks with Iran",
+                "why": "It would confirm or contradict Iran's account of why the interim deal failed.",
+                "when": "",
+                "where": "The White House"
+              },
+              {
+                "what": "A ceasefire between Iran, the US and Israel actually taking effect",
+                "why": "It would mark a real reduction in risk to Gulf shipping routes used by Indian energy imports.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "India imports most of its crude oil and much of its liquefied petroleum gas from Gulf producers, and a large share of these cargoes passes through the Strait of Hormuz.",
+              "Wars near the Strait of Hormuz typically raise shipping insurance premiums and freight rates for tankers, which can push up the delivered cost of fuel for importing countries such as India.",
+              "Indirect talks are negotiations in which the two sides do not meet but pass messages through third-country mediators, which often makes progress slow and hard to verify."
+            ],
+            "terms": [
+              {
+                "term": "indirect talks",
+                "meaning": "Negotiations in which the two sides exchange positions through intermediaries rather than meeting face to face."
+              },
+              {
+                "term": "interim peace deal",
+                "meaning": "A temporary agreement intended to pause fighting while the parties negotiate a fuller settlement to end the war."
+              }
+            ],
+            "frameworks": {
+              "conflicting": {
+                "disputed": {
+                  "item": "state of the interim ceasefire effort",
+                  "unit": "status of negotiations"
+                },
+                "accounts": [
+                  {
+                    "outlet": "CBS News",
+                    "value": "Indirect talks continue, with the US seeking changes to a seven-day ceasefire proposal that Trump rejected last month",
+                    "origin": "Iran",
+                    "time": "2026-10-21"
+                  },
+                  {
+                    "outlet": "Africanews",
+                    "value": "The interim peace deal has failed, and a new attempt should be made to reach an agreement to end the war",
+                    "origin": "Iranian President Masoud Pezeshkian",
+                    "time": "2026-10-25"
+                  }
+                ],
+                "agreed": [
+                  "Both reports describe Iranian statements about diplomatic efforts with the United States to pause or end the war.",
+                  "Neither report describes a ceasefire in force."
+                ],
+                "explanations": [
+                  {
+                    "type": "different time",
+                    "note": "The talks may have broken down between 21 October, when Iran said they were continuing, and 25 October, when its president described the interim deal as failed."
+                  },
+                  {
+                    "type": "different definition",
+                    "note": "The seven-day ceasefire proposal and the interim peace deal may refer to different stages or versions of the negotiations, which the reports do not clarify."
+                  }
+                ],
+                "status": "unresolved"
+              },
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "US seeks changes to ceasefire proposal",
+                    "detail": "Iran said the United States sought changes to a seven-day ceasefire proposal that Trump had rejected, while indirect talks continued. This left the terms of any pause unsettled.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Iran says interim deal has failed",
+                    "detail": "President Pezeshkian blamed the United States for the failure of the interim deal but called for a new attempt. The war with the US and Israel therefore continues without an agreed pause.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Gulf shipping risk may persist",
+                    "detail": "A continuing war may keep tankers and cargo ships in Gulf waters exposed to attack, which could hold freight and insurance costs high on routes serving India.",
+                    "basis": "inferred"
+                  },
+                  {
+                    "step": "India's fuel import costs could rise",
+                    "detail": "Higher shipping costs and supply risks could raise the price Indian refiners pay for crude and LPG, which may feed through to fuel prices or government subsidy bills.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "A ceasefire takes effect, or Gulf shipping continues without disruption despite the war, so that freight, insurance and crude costs for India do not rise."
+              }
+            },
+            "reading": [
+              {
+                "headline": "Troubled waters: life during wartime for Iranians on the strait of Hormuz",
+                "url": "https://www.theguardian.com/artanddesign/2026/oct/21/strait-of-hormuz-life-amid-wartime-iran",
+                "source": "guardian",
+                "date": "2026-10-21T05:00:02.000Z"
+              },
+              {
+                "headline": "Dire straits: why Filipino sailors continue to brave troubled Middle East waters",
+                "url": "https://www.scmp.com/week-asia/economics/article/3371457/dire-straits-why-filipino-sailors-continue-brave-troubled-middle-east-waters",
+                "source": "scmp",
+                "date": "2026-10-20T05:00:05.000Z"
+              }
+            ]
+          },
+          "conflict": "w1ye2krf",
+          "place": {
+            "name": "Tehran",
+            "country": "Iran",
+            "lat": 35.69,
+            "lon": 51.39,
+            "involves": [
+              "United States"
+            ]
+          },
+          "reports": [
+            {
+              "source": "cbs",
+              "headline": "Iran says indirect talks with U.S. on ceasefire proposal continue",
+              "url": "https://www.cbsnews.com/live-updates/iran-war-trump-us-ceasefire-talks-ongoing/",
+              "date": "2026-10-21T20:17:43.000Z",
+              "kind": "hard",
+              "summary": "Iran says the U.S. is seeking changes to a seven-day ceasefire proposal Trump rejected last month as indirect talks continue.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://assets2.cbsnewsstatic.com/hub/i/r/2026/10/21/f1a47408-34a0-47ec-a0b0-6151ebf80a4a/thumbnail/1200x630/19fa8992d497e5e98adf93ab2c3d0021/gettyimages-2300722944.jpg"
+            },
+            {
+              "source": "africanews",
+              "headline": "Iranian president blames United States for failure of interim peace deal",
+              "url": "http://www.africanews.com/2026/10/25/iranian-president-blames-united-states-for-failure-of-interim-peace-deal/",
+              "date": "2026-10-25T13:55:33.000Z",
+              "kind": "hard",
+              "summary": "Masoud Pezeshkian emphasised, however, that a new attempt should be made to reach an agreement to end the war with the US and Israel.",
+              "summaryV": 3
+            }
+          ],
+          "image": "https://assets2.cbsnewsstatic.com/hub/i/r/2026/10/21/f1a47408-34a0-47ec-a0b0-6151ebf80a4a/thumbnail/1200x630/19fa8992d497e5e98adf93ab2c3d0021/gettyimages-2300722944.jpg",
+          "thread": "t2ogxay",
+          "priority": 65
         },
         {
           "id": "s1qvfgse",
@@ -3045,131 +3318,6 @@
             ]
           },
           "priority": 60
-        },
-        {
-          "id": "s1kd7mh7",
-          "headline": "Iran says indirect talks with U.S. on ceasefire proposal continue",
-          "url": "https://www.cbsnews.com/live-updates/iran-war-trump-us-ceasefire-talks-ongoing/",
-          "source": "cbs",
-          "date": "2026-10-21T20:17:43.000Z",
-          "relevance": "medium",
-          "why": "Iran says indirect talks with the US on a ceasefire proposal continue, with Washington seeking changes to a seven-day plan Trump rejected last month. The outcome bears on Gulf oil and shipping routes that supply India.",
-          "implications": [
-            "A ceasefire that held could ease risks around the Strait of Hormuz, which may reduce pressure on crude oil supply and shipping costs that feed into Indian fuel prices.",
-            "Because the plan was rejected before and changes are still being sought, an agreement is uncertain, so Indian importers and refiners may continue to face disrupted Gulf supply."
-          ],
-          "analysis": {
-            "v": 3,
-            "at": "2026-10-21T21:53:02.087Z",
-            "tier": "quick",
-            "primary": "escalation",
-            "complement": null,
-            "features": [
-              "armed_conflict",
-              "pending_outcome"
-            ],
-            "exposure": {
-              "level": "high",
-              "reason": "A ceasefire would bear on the Strait of Hormuz and Iranian attacks on Gulf states, through which crude oil, LPG and shipping reach India, so fuel prices and supply for households are at stake."
-            },
-            "horizon": {
-              "value": "weeks",
-              "reason": "Talks are ongoing but no agreement is reported, so any easing in oil and shipping conditions would depend on a deal that has not yet been reached."
-            },
-            "confidence": {
-              "level": "low",
-              "reason": "This rests on a single CBS News report of Iran's own account of the talks, and the US position and the content of the changes are unconfirmed."
-            },
-            "outlets": 1,
-            "affected": [
-              {
-                "group": "Fuel & LPG users",
-                "direction": "unclear",
-                "what": "fuel and LPG supply and prices",
-                "effect": "A ceasefire could ease crude and LPG supply risks and costs, while failed talks could leave Gulf disruption in place, which may keep pressure on Indian fuel prices.",
-                "basis": "inferred"
-              },
-              {
-                "group": "Importers & traders",
-                "direction": "unclear",
-                "what": "Gulf shipping conditions",
-                "effect": "Importers depending on Gulf routes could see shipping risk and costs ease if a ceasefire takes hold, or persist if talks stall.",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "An announced ceasefire taking effect, or a public statement that the talks have broken down",
-                "why": "It would show whether the war is moving towards a lower rung or remaining at attacks on third countries.",
-                "when": "",
-                "where": ""
-              }
-            ],
-            "context": [
-              "India imports most of its crude oil, and a large share of that and of its gas and LPG supply comes from the Gulf, so conflict near the Strait of Hormuz matters to Indian fuel supply.",
-              "Indirect talks are negotiations in which the parties exchange positions through others rather than meeting, and they often continue even while fighting goes on."
-            ],
-            "terms": [
-              {
-                "term": "indirect talks",
-                "meaning": "Negotiations in which the two sides pass messages and proposals through intermediaries instead of meeting face to face."
-              }
-            ],
-            "frameworks": {
-              "escalation": {
-                "move": "none",
-                "rung": 6,
-                "current_rung": 6,
-                "previous_rung": null,
-                "development": "Iran says indirect talks with the US continue, with the US seeking changes to a seven-day ceasefire proposal that Trump rejected last month.",
-                "evidence": "The report describes talks and a proposal only, and no ceasefire is in force and no new attack is reported. The war therefore stays at the rung set on 2026-10-20 for strikes on third countries and critical infrastructure.",
-                "next_signals": [
-                  {
-                    "rung": 7,
-                    "signal": "The US and Iran openly commit large-scale forces to a full-scale war, with sustained attacks well beyond the Gulf region."
-                  },
-                  {
-                    "rung": 5,
-                    "signal": "A ceasefire comes into force and Iranian attacks on Gulf states stop, leaving only limited or sustained strikes between the two main parties."
-                  }
-                ],
-                "india_channels": [
-                  "oil",
-                  "shipping"
-                ],
-                "conflict": "w1ye2krf",
-                "applied": "none",
-                "from": 6
-              }
-            }
-          },
-          "conflict": "w1ye2krf",
-          "place": {
-            "name": "Tehran",
-            "country": "Iran",
-            "lat": 35.69,
-            "lon": 51.39,
-            "involves": [
-              "United States"
-            ]
-          },
-          "reports": [
-            {
-              "source": "cbs",
-              "headline": "Iran says indirect talks with U.S. on ceasefire proposal continue",
-              "url": "https://www.cbsnews.com/live-updates/iran-war-trump-us-ceasefire-talks-ongoing/",
-              "date": "2026-10-21T20:17:43.000Z",
-              "kind": "hard",
-              "summary": "Iran says the U.S. is seeking changes to a seven-day ceasefire proposal Trump rejected last month as indirect talks continue.",
-              "summaryV": 3,
-              "ogTried": true,
-              "descTried": true,
-              "image": "https://assets2.cbsnewsstatic.com/hub/i/r/2026/10/21/f1a47408-34a0-47ec-a0b0-6151ebf80a4a/thumbnail/1200x630/19fa8992d497e5e98adf93ab2c3d0021/gettyimages-2300722944.jpg"
-            }
-          ],
-          "image": "https://assets2.cbsnewsstatic.com/hub/i/r/2026/10/21/f1a47408-34a0-47ec-a0b0-6151ebf80a4a/thumbnail/1200x630/19fa8992d497e5e98adf93ab2c3d0021/gettyimages-2300722944.jpg",
-          "thread": "t2ogxay",
-          "priority": 80
         },
         {
           "id": "s1xowkk",
@@ -12660,8 +12808,8 @@
             "since": "2026-10-24T16:05:38.568Z",
             "expires": "2026-10-31T16:05:38.568Z",
             "recheck": false,
-            "checkedAt": "2026-10-25T04:57:13.028Z",
-            "checkedReports": 2
+            "checkedAt": "2026-10-25T16:36:03.597Z",
+            "checkedReports": 3
           },
           "reports": [
             {
@@ -12685,6 +12833,15 @@
               "summary": "The United States and Israel have drawn up plans to renew strikes against Iran, creating a sense of dread among war-weary residents.",
               "summaryV": 3,
               "image": "https://static01.nyt.com/images/2026/10/24/multimedia/24int-iran-mood-bwvj/24int-iran-mood-bwvj-mediumSquareAt3X.jpg"
+            },
+            {
+              "source": "aljazeera",
+              "headline": "CENTCOM reportedly has plans for Iran strikes: Will Trump approve them?",
+              "url": "https://www.aljazeera.com/news/2026/10/25/centcom-reportedly-has-plans-for-iran-strikes-will-trump-approve-them",
+              "date": "2026-10-25T11:39:41.000Z",
+              "kind": "feature",
+              "summary": "Reports say Pentagon has drawn up plans for strikes after midterm polls, but analysts question what it could achieve.",
+              "summaryV": 3
             }
           ],
           "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/reuters_6adcacbb-1792847035.jpg?resize=1920%2C1440",
@@ -21641,8 +21798,8 @@
             "since": "2026-10-23T05:03:53.882Z",
             "expires": "2026-10-30T05:03:53.882Z",
             "recheck": false,
-            "checkedAt": "2026-10-24T11:18:42.643Z",
-            "checkedReports": 11
+            "checkedAt": "2026-10-25T16:36:03.597Z",
+            "checkedReports": 12
           },
           "reports": [
             {
@@ -21752,6 +21909,16 @@
               "summary": "The authorities deployed tens of thousands of security forces and banned demonstrations in some cities, hoping to avoid a repeat of the riots that shook the country a week ago.",
               "summaryV": 3,
               "image": "https://static01.nyt.com/images/2026/11/03/multimedia/03int-france-schools-wtk-vphk/03int-france-schools-wtk-vphk-mediumSquareAt3X.jpg"
+            },
+            {
+              "source": "france24",
+              "headline": "France: 110.000 protesters in Paris",
+              "url": "https://www.france24.com/en/france-110-000-protesters-in-paris",
+              "date": "2026-10-25T15:00:01.000Z",
+              "kind": "hard",
+              "summary": "Hundreds of demonstrations took place across France on Saturday over the rising cost of living, with security forces deployed in large numbers to prevent a repeat of the violence seen last weekend.",
+              "summaryV": 3,
+              "image": "https://s.france24.com/media/display/b799d560-d07d-11f1-abd8-bdb9616e85cf/w:1024/p:16x9/EN-20261024-180607-181821-CS.jpg"
             }
           ],
           "image": "https://image.cnbcfm.com/api/v1/image/108445227-1792648710242-gettyimages-2300710122-AFP_D3XH84B.jpeg?v=1792651411&w=1920&h=1080",
@@ -34464,11 +34631,12 @@
   "source": "BBC News & The Guardian & NPR & Al Jazeera & MercoPress & ABC News & The New York Times & CNBC & CBS News & DW & France 24 & Africanews & South China Morning Post & The Hindu & Mint",
   "lastRun": {
     "filter": {
-      "reject": 112,
-      "watch": 2
+      "reject": 71,
+      "analyse": 4,
+      "watch": 1
     },
     "watch": {
-      "checked": 1,
+      "checked": 2,
       "promoted": 0,
       "expired": 0,
       "open": 12
@@ -34484,25 +34652,27 @@
       "waiting": 0
     },
     "skipped": {
-      "since": "2026-10-25T04:57:15.232Z",
+      "since": "2026-10-25T11:48:32.134Z",
       "counts": {
-        "section": 16,
-        "podcast_quiz_gallery": 1,
-        "live_blog": 1
+        "live_blog": 2,
+        "section": 20,
+        "podcast_quiz_gallery": 2
       },
       "examples": {
+        "live_blog": [
+          "Serbia votes as strongman Vučić faces grassroots challenge to 12-year rule – Europe live",
+          "Italy’s Young Protesters Return to the Streets"
+        ],
         "section": [
-          "'What was in the Clyde is basically now on the shore'",
-          "‘I can’t believe I get to see that’: One Born Every Minute is back for a 12th series",
-          "Police in Albania filmed beating protester unconscious",
-          "Pakistan drops Shan Masood from Sri Lanka Test squad as Agha, Rizwan return",
-          "Trump mocks reporter asking about Iran strikes, as Tehran says US derailed"
+          "Ali G: Who Iz I? stooge says he was in on joke but didn’t tell Sacha Baron Cohen: ‘He’s not going to punk me. I’ll trick",
+          "As a young man, magazines were my window to the world. That wonder will be lost when all the shops have gone | John Harr",
+          "Neighbours is being recut into a microdrama focused on Margot Robbie – and her co-stars aren’t happy",
+          "Thousands rally against Netanyahu in Tel Aviv ahead of Israeli elections – video",
+          "Jordanians mourn victims of deadly church attack"
         ],
         "podcast_quiz_gallery": [
-          "Lights out: the island that goes dark to save young seabirds – in pictures"
-        ],
-        "live_blog": [
-          "Brazil 2026 election live: Lula and Bolsonaro in tight race"
+          "In pictures: Initially peaceful protests across France over inequality again descend into violence",
+          "The week in pictures: Protests across France, wildfires in Indonesia and Brazilian elections"
         ]
       }
     },
@@ -34510,10 +34680,10 @@
       "moved": 0,
       "checked": 0
     },
-    "analysed": 114,
+    "analysed": 76,
     "added": 0,
-    "merged": 3,
-    "rejected": 111,
+    "merged": 7,
+    "rejected": 69,
     "failedBatches": 0,
     "feeds": {
       "bbc": {
@@ -34524,7 +34694,7 @@
       "guardian": {
         "feedsOk": 7,
         "feedsFailed": 0,
-        "items": 203
+        "items": 202
       },
       "npr": {
         "feedsOk": 4,
@@ -34534,7 +34704,7 @@
       "aljazeera": {
         "feedsOk": 1,
         "feedsFailed": 0,
-        "items": 12
+        "items": 15
       },
       "mercopress": {
         "feedsOk": 3,
@@ -34554,22 +34724,22 @@
       "cnbc": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 90
+        "items": 89
       },
       "cbs": {
         "feedsOk": 2,
         "feedsFailed": 0,
-        "items": 47
+        "items": 45
       },
       "dw": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 32
+        "items": 31
       },
       "france24": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 79
+        "items": 77
       },
       "africanews": {
         "feedsOk": 1,
@@ -34579,7 +34749,7 @@
       "scmp": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 145
+        "items": 144
       }
     },
     "shareImages": {
@@ -34602,7 +34772,7 @@
       "failedBatches": 0
     },
     "frames": {
-      "done": 1,
+      "done": 2,
       "waiting": 0,
       "failedBatches": 0
     },
@@ -34621,21 +34791,21 @@
       "filter": {
         "model": "claude-haiku-5-5",
         "calls": 7,
-        "inputTokens": 41477,
-        "outputTokens": 17137,
-        "cost": 0.0127
+        "inputTokens": 32287,
+        "outputTokens": 13553,
+        "cost": 0.0099
       },
       "analysis": {
         "model": "claude-opus-5-5",
         "calls": 1,
-        "inputTokens": 3233,
-        "outputTokens": 4049,
-        "cost": 0.0939
+        "inputTokens": 5371,
+        "outputTokens": 8814,
+        "cost": 0.1978
       }
     },
     "spend": {
-      "thisDesk": 0.1066,
-      "today": 0.5516,
+      "thisDesk": 0.2078,
+      "today": 1.1983,
       "cap": 6
     }
   },
