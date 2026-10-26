@@ -2,12 +2,126 @@
   "schema": 4,
   "region": "India",
   "since": "2026-10-02",
-  "updatedAt": "2026-10-26T05:01:22.579Z",
+  "updatedAt": "2026-10-26T05:38:59.045Z",
   "sectors": [
     {
       "id": "energy",
       "name": "Energy",
       "items": [
+        {
+          "id": "s4z7qet",
+          "headline": "Oil slides over 2% as traders weigh Saudi attack risks, demand destruction",
+          "url": "https://www.cnbc.com/2026/10/26/oil-prices-today-wti-brent.html",
+          "source": "cnbc",
+          "date": "2026-10-26T05:18:01.000Z",
+          "relevance": "medium",
+          "why": "Oil prices fell by more than 2% as traders balanced the threat of further attacks on Saudi energy infrastructure against fears that high prices would cut demand. India, a large crude importer, is exposed to either outcome.",
+          "implications": [
+            "A price fall eases pressure on Indian refiners' import costs, but the report ties it to market judgement rather than any reduction in the risk of attacks on Saudi energy facilities.",
+            "If attacks on Saudi energy infrastructure were to resume or widen, crude prices could rise again, which would reverse any relief for Indian fuel buyers."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-26T05:37:05.154Z",
+            "tier": "quick",
+            "primary": "escalation",
+            "complement": null,
+            "features": [
+              "armed_conflict",
+              "price_move"
+            ],
+            "exposure": {
+              "level": "high",
+              "reason": "Crude oil is India's largest import and sets the cost base for petrol, diesel and cooking gas, so a move in global prices reaches households and government finances."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Crude price changes take some weeks to pass through refinery costs and retail fuel pricing, and the direction depends on whether attacks continue."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single CNBC report with no named official source, and it does not say whether any new attack has happened."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "mixed",
+                "what": "fuel price pressure",
+                "effect": "A lower crude price could ease pressure on retail fuel prices, but renewed attacks on Saudi energy facilities could push prices up again.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Government finances",
+                "direction": "mixed",
+                "what": "oil import bill",
+                "effect": "A fall in crude prices could lower India's oil import bill, while a rebound caused by attacks could raise it.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Any new Houthi attack on Saudi airports or oil facilities, or a renewed rise in global crude prices",
+                "why": "It would show whether the market's concern about further attacks is turning into actual disruption to Saudi energy supply.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "India imports most of the crude oil it uses, so global price swings reach Indian refiners and the government's import bill, and can influence petrol, diesel and cooking gas prices."
+            ],
+            "terms": [
+              {
+                "term": "demand destruction",
+                "meaning": "A fall in fuel consumption that happens because prices have stayed high for long enough that buyers cut back or switch."
+              }
+            ],
+            "frameworks": {
+              "escalation": {
+                "move": "none",
+                "rung": 6,
+                "current_rung": 6,
+                "previous_rung": null,
+                "development": "This story adds no new attack. It records oil traders weighing the threat of further attacks on Saudi energy infrastructure against fears of weaker demand.",
+                "evidence": "The report describes only market reaction and the risk of further attacks, with no new strike after 12 October 2026, so the war stays at rung 6.",
+                "next_signals": [
+                  {
+                    "rung": 7,
+                    "signal": "Open, large-scale fighting between the Houthis and the Saudi-led coalition across multiple fronts, going beyond strikes on airports and oil sites."
+                  },
+                  {
+                    "rung": 5,
+                    "signal": "A ceasefire or truce taking effect, or reports that attacks on Saudi airports and energy sites have stopped."
+                  }
+                ],
+                "india_channels": [
+                  "oil"
+                ],
+                "conflict": "w1f5pudc",
+                "applied": "none",
+                "from": 6
+              }
+            }
+          },
+          "conflict": "w1f5pudc",
+          "reports": [
+            {
+              "source": "cnbc",
+              "headline": "Oil slides over 2% as traders weigh Saudi attack risks, demand destruction",
+              "url": "https://www.cnbc.com/2026/10/26/oil-prices-today-wti-brent.html",
+              "date": "2026-10-26T05:18:01.000Z",
+              "kind": "hard",
+              "summary": "Oil prices fell as investors weighed the threat of further attacks on Saudi Arabian energy infrastructure against concerns that elevated prices could erode demand.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://image.cnbcfm.com/api/v1/image/108421354-1792180537305-gettyimages-2300550189-_24a0706_rjfjbbgj.jpeg?v=1792180665&w=1920&h=1080"
+            }
+          ],
+          "placeTried": true,
+          "image": "https://image.cnbcfm.com/api/v1/image/108421354-1792180537305-gettyimages-2300550189-_24a0706_rjfjbbgj.jpeg?v=1792180665&w=1920&h=1080",
+          "thread": "t1dbdiwl"
+        },
         {
           "id": "s11uyzkc",
           "headline": "US military says it helped Gulf states export 1.5 billion barrels of oil",
@@ -17466,8 +17580,13 @@
           "source": "africanews",
           "date": "2026-10-25T17:49:14.000Z",
           "relevance": "medium",
-          "why": "",
-          "implications": [],
+          "why": "Luiz Inácio Lula da Silva won Brazil's presidential runoff with 51.78% of valid votes, and Flávio Bolsonaro reportedly refuses to concede. The reports name no link to India, but continuity in Brazil may shape India's ties with a fellow BRICS member and farm exporter.",
+          "implications": [
+            "Because the sitting president won, India may deal with a broadly familiar Brazilian government rather than a sharp change of direction in groupings such as BRICS, where both countries sit.",
+            "The narrow 51.78% to 48.22% margin and Bolsonaro's reported refusal to concede could prolong political tension in Brazil, which may slow its trade and diplomatic engagement with partners including India.",
+            "The reports describe no direct economic channel, so any effect on Indian households could come only indirectly, for example through Brazil's weight in world markets for sugar and soybeans.",
+            "CNBC reports that this is the first time since direct elections returned in 1989 that a first-round loser won the runoff, which points to a deeply divided Brazilian electorate."
+          ],
           "place": {
             "name": "Brasília",
             "country": "Brazil",
@@ -17549,7 +17668,129 @@
           "finChecked": true,
           "priority": 60,
           "thread": "t1crla7m",
-          "image": "https://assets1.cbsnewsstatic.com/hub/i/r/2026/10/25/d36e81f1-c982-4d14-8a55-08ee185f3a38/thumbnail/1200x630/0e02b1afd9aaf2a0a1c3efb0026c7128/ap26298414533867.jpg"
+          "image": "https://assets1.cbsnewsstatic.com/hub/i/r/2026/10/25/d36e81f1-c982-4d14-8a55-08ee185f3a38/thumbnail/1200x630/0e02b1afd9aaf2a0a1c3efb0026c7128/ap26298414533867.jpg",
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-26T05:38:39.462Z",
+            "tier": "deep",
+            "primary": "impact_chain",
+            "complement": "scenarios",
+            "features": [
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "The story reaches India only indirectly, through diplomatic ties within BRICS and through Brazil's role in commodity trade. The reports describe no direct mechanism affecting Indian prices, jobs or citizens."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Any effect on India would depend on how the re-elected government sets its trade and foreign policy over the coming months, not on the vote itself."
+            },
+            "confidence": {
+              "level": "high",
+              "reason": "Al Jazeera, CNBC and MercoPress report Lula's victory, and MercoPress cites the Superior Electoral Court's count; whether Bolsonaro will eventually concede has not been reported."
+            },
+            "outlets": 5,
+            "affected": [
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "Brazilian commodity trade conditions",
+                "effect": "Indian traders dealing in Brazilian commodities such as soybean oil or sugar could see policy continuity, or delays if Brazil's political dispute persists.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Large exporters",
+                "direction": "unclear",
+                "what": "access to Brazilian market",
+                "effect": "Indian firms exporting to Brazil may face a familiar trade policy environment under the re-elected government, though the reports give no details of its trade plans.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Whether Flávio Bolsonaro concedes defeat or formally challenges the runoff result",
+                "why": "A concession would end the uncertainty, while a prolonged challenge could keep Brazil's politics unsettled and slow engagement with partners.",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "Final official result from Brazil's Superior Electoral Court after all votes are counted",
+                "why": "Completion of the count beyond 99.97% would confirm the outcome that the reports describe.",
+                "when": "",
+                "where": "Superior Electoral Court of Brazil"
+              },
+              {
+                "what": "Statements by the re-elected Lula government on trade and BRICS priorities",
+                "why": "These would show whether Brazil's approach toward partners such as India continues unchanged or shifts.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "India and Brazil are both members of the BRICS grouping of large emerging economies and often coordinate positions on trade and on the reform of global institutions.",
+              "Brazil is one of the world's largest exporters of agricultural commodities such as sugar and soybeans, so its policies can influence global prices that India also faces as a trader.",
+              "In a runoff system, the two leading candidates from the first round meet again, and the loser's acceptance of the result usually marks the start of a peaceful transfer or continuation of power."
+            ],
+            "terms": [
+              {
+                "term": "runoff",
+                "meaning": "A second round of voting between the two leading candidates, held when no one wins an outright majority in the first round."
+              },
+              {
+                "term": "Superior Electoral Court",
+                "meaning": "Brazil's highest electoral authority, which organises national elections and announces the official vote count."
+              },
+              {
+                "term": "far right",
+                "meaning": "A label for political movements at the strongly nationalist and conservative end of the political spectrum."
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Lula wins presidential runoff",
+                    "detail": "Lula won 51.78% of valid votes against 48.22% for Flávio Bolsonaro, according to the Superior Electoral Court. This returns the sitting president for a fourth term.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Bolsonaro reportedly refuses to concede",
+                    "detail": "CNBC reports that Bolsonaro refuses to concede after a polarising contest. This leaves open whether the transition will proceed smoothly or face a political dispute.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Brazilian policy likely continues",
+                    "detail": "Because the incumbent stays in office, Brazil's foreign and trade policies may continue along existing lines, provided the dispute over the result does not escalate.",
+                    "basis": "inferred"
+                  },
+                  {
+                    "step": "India sees diplomatic and trade continuity",
+                    "detail": "India could see steady relations with Brazil in BRICS and in commodity trade, so effects on Indian businesses and consumers may stay small and indirect.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The effect on India would stay negligible if Brazil's re-elected government makes no change to policies relevant to India, or if trade between the two countries remains unaffected."
+              },
+              "scenarios": {
+                "question": "Will Flávio Bolsonaro accept the runoff result, or will his reported refusal to concede prolong the political dispute in Brazil?",
+                "scenarios": [
+                  {
+                    "name": "Result accepted",
+                    "what": "Bolsonaro eventually accepts the result announced by the Superior Electoral Court, and Lula proceeds to his fourth term without a serious challenge.",
+                    "signal": "A public concession by Bolsonaro, or no formal challenge to the official count.",
+                    "india_effect": "India would likely deal with a stable Brazilian government, which could allow existing diplomatic and trade engagement to continue without disruption."
+                  },
+                  {
+                    "name": "Prolonged refusal to concede",
+                    "what": "Bolsonaro maintains his reported refusal to concede, which keeps political tension high in a closely divided country.",
+                    "signal": "Continued public rejection of the result by Bolsonaro or his allies, or formal legal challenges to the count.",
+                    "india_effect": "A drawn-out dispute could absorb Brazil's political attention and may slow its engagement with partners such as India, though the reports give no sign of direct effects."
+                  }
+                ]
+              }
+            }
+          }
         },
         {
           "id": "spnaxni",
@@ -17838,8 +18079,11 @@
           "source": "cnbc",
           "date": "2026-10-23T16:51:21.000Z",
           "relevance": "medium",
-          "why": "",
-          "implications": [],
+          "why": "CNBC reports that airfares surged in the third quarter because of higher fuel costs, and that fewer people flew. Because airfares follow fuel costs, Indian travellers on international routes could face similar pressure.",
+          "implications": [
+            "Fewer passengers paying higher fares means airlines are earning more per seat, which may encourage them to keep fares high rather than cut them to fill planes.",
+            "Indian carriers also buy aviation fuel linked to global crude prices, so a similar rise in costs could push up their fares."
+          ],
           "stage": "watch",
           "filter": {
             "verdict": "watch",
@@ -17874,7 +18118,86 @@
           "placeTried": true,
           "image": "https://image.cnbcfm.com/api/v1/image/108363280-1789501763591-gettyimages-2267575658-_sm36684.jpeg?v=1789501842&w=1920&h=1080",
           "priority": 40,
-          "thread": "t1lbf1dw"
+          "thread": "t1lbf1dw",
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-26T05:38:39.462Z",
+            "tier": "quick",
+            "primary": "pass_through",
+            "complement": null,
+            "features": [
+              "price_move"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The channel is higher fuel costs raising ticket prices, which affects Indians who fly, mainly abroad. Air travel is not a household essential, and the reports do not describe Indian fares directly."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Fares are reset regularly as airlines respond to fuel costs, so any pass-through to Indian routes could appear within a few weeks."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single CNBC report that relies on airline statements, and it does not say how Indian airlines or routes are affected."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Travellers & pilgrims",
+                "direction": "up",
+                "what": "airfares",
+                "effect": "Higher fuel costs may raise ticket prices for Indians flying internationally, because airlines pass costs on to passengers who are still willing to pay.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Indian airlines raising fares or adding fuel surcharges in response to higher aviation fuel costs",
+                "why": "It would show whether the fare pressure reported by CNBC is reaching Indian passengers.",
+                "when": "",
+                "where": "Directorate General of Civil Aviation"
+              }
+            ],
+            "context": [
+              "Fuel is one of the largest operating costs for airlines, so changes in oil prices usually reach ticket prices within months.",
+              "India imports most of its crude oil, so global price rises tend to reach Indian fuel users and airlines."
+            ],
+            "terms": [],
+            "frameworks": {
+              "pass_through": {
+                "driver": {
+                  "variable": "Aviation fuel cost",
+                  "direction": "up",
+                  "size": ""
+                },
+                "product": "other",
+                "rungs": [
+                  {
+                    "stage": "Global fuel price → Airline operating costs",
+                    "pass": "likely",
+                    "damper": "Fuel purchase contracts and hedging can delay the rise in airlines' costs, but they cannot block it for long.",
+                    "lag": "weeks"
+                  },
+                  {
+                    "stage": "Airline costs → Ticket prices",
+                    "pass": "likely",
+                    "damper": "CNBC reports that travellers are mostly accepting higher fares, so airlines face little pressure to absorb the cost.",
+                    "lag": "weeks"
+                  },
+                  {
+                    "stage": "Ticket prices → Fares paid by Indian travellers",
+                    "pass": "partial",
+                    "damper": "Competition between Indian carriers and seasonal demand may soften increases on some routes, and the reports do not cover Indian pricing.",
+                    "lag": "weeks"
+                  }
+                ],
+                "end_user": {
+                  "group": "Travellers & pilgrims",
+                  "effect": "Indians booking international flights may notice higher fares over the coming weeks, while the effect on domestic fares is not described in the reports."
+                }
+              }
+            }
+          }
         },
         {
           "id": "sj6ykwc",
@@ -17884,8 +18207,12 @@
           "date": "2026-10-23T13:00:20.000Z",
           "relevance": "medium",
           "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/24/14ee41bd-dbd9-4a0f-98bb-d5b14412dc09_65998033.jpg?itok=vu-VJUkl&v=1792773451",
-          "why": "",
-          "implications": [],
+          "why": "The European Union's trade chief said the bloc may impose quotas or tariffs on more Chinese industries before further talks with Beijing, naming plastics. This could redirect Chinese goods and shift competition for Indian exporters.",
+          "implications": [
+            "If Chinese plastics become harder to sell in Europe, Indian producers could gain room in the European market, provided they meet the bloc's standards and prices.",
+            "Chinese exporters may look for other markets, which could bring more competition for Indian manufacturers at home and in third countries.",
+            "Indian firms that import Chinese inputs may see price changes if Chinese suppliers redirect their sales."
+          ],
           "place": {
             "name": "Brussels",
             "country": "Belgium",
@@ -17925,7 +18252,96 @@
           ],
           "finChecked": true,
           "priority": 40,
-          "thread": "t1vem20c"
+          "thread": "t1vem20c",
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-26T05:38:39.463Z",
+            "tier": "quick",
+            "primary": "trade_flow",
+            "complement": null,
+            "features": [
+              "trade_flow",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The channel is trade diversion in specific industries, mainly plastics, and it affects Indian exporters to Europe and importers of Chinese goods. It is not a household essential and no measure has yet been announced."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "The investigations are still under way and further negotiations with Beijing come first, so any measures and their effects on trade could take months to appear."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "This rests on one outlet, the South China Morning Post, but it quotes the EU trade chief on record; no measures have been confirmed."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "MSME exporters",
+                "direction": "mixed",
+                "what": "competition in export markets",
+                "effect": "Smaller Indian plastics exporters could win European sales if Chinese goods are restricted, but may face more Chinese competition elsewhere.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "prices of Chinese goods",
+                "effect": "Indian buyers of Chinese goods could see lower or more volatile prices if Chinese exporters redirect shipments away from Europe.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "An EU announcement of quotas or tariffs on Chinese plastics or other industries",
+                "why": "It would confirm which products are restricted and how far Chinese exports could be redirected.",
+                "when": "",
+                "where": "European Commission"
+              }
+            ],
+            "context": [
+              "The EU is a major market for Indian goods, and India and China often compete in the same labour-intensive product categories.",
+              "When one large market restricts a country's exports, the goods are often redirected to other markets, which can lower prices there."
+            ],
+            "terms": [
+              {
+                "term": "quotas",
+                "meaning": "Quotas are limits on the quantity of a product that may be imported, usually set for a period and often applied alongside tariffs."
+              }
+            ],
+            "frameworks": {
+              "trade_flow": {
+                "good": "Chinese industrial goods, including plastics",
+                "actors": [
+                  {
+                    "country": "European Union",
+                    "role": "importer",
+                    "is_india": false
+                  },
+                  {
+                    "country": "China",
+                    "role": "exporter",
+                    "is_india": false
+                  },
+                  {
+                    "country": "India",
+                    "role": "third_party",
+                    "is_india": true
+                  }
+                ],
+                "change": {
+                  "type": "tariff",
+                  "effective": ""
+                },
+                "india_position": {
+                  "role": "rival_exporter",
+                  "note": "India sells some competing goods to Europe and could benefit if Chinese products are restricted there. Indian buyers and manufacturers could also face redirected Chinese goods, though the reports do not cover India."
+                },
+                "volumes": []
+              }
+            }
+          }
         },
         {
           "id": "s1c5b6s4",
@@ -17935,8 +18351,11 @@
           "date": "2026-10-23T04:00:05.000Z",
           "relevance": "medium",
           "image": "https://i.guim.co.uk/img/media/beb7d211c357532b1fb71fd027d947ef985ba7e5/716_0_4840_3872/master/4840.jpg?width=700&quality=85&auto=format&fit=max&s=63bce950d460e896ac86394b3a2035b8",
-          "why": "",
-          "implications": [],
+          "why": "The Guardian reports that UK consumer confidence has fallen at its fastest rate outside the Covid pandemic since the 2016 Brexit vote, as the Middle East war and the cost of living hurt Britain. Any effect on India would be indirect, through trade and services demand.",
+          "implications": [
+            "If British households cut spending, Indian companies that sell consumer goods or services to UK customers could see weaker orders, although the report does not say this has happened.",
+            "The report says pressure on the chancellor is rising before the budget. Any tax or spending choices in that budget could further shape UK demand for imports and services."
+          ],
           "place": {
             "name": "London",
             "country": "United Kingdom",
@@ -17968,7 +18387,83 @@
           ],
           "finChecked": true,
           "priority": 30,
-          "thread": "t1m7efz0"
+          "thread": "t1m7efz0",
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-26T05:38:39.463Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "low",
+              "reason": "The report describes only UK household sentiment and gives no direct link to Indian trade, prices or jobs. Any effect would come indirectly through weaker UK demand for Indian exports and services."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Changes in UK household spending usually take months to show up in export orders and in the contracts of Indian service providers."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single Guardian report with no named official source in the excerpt, and it gives no direct evidence of any effect on India."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Large exporters",
+                "direction": "unclear",
+                "what": "UK demand for Indian goods",
+                "effect": "Weaker British consumer spending could reduce orders from UK buyers for Indian goods, though the report does not say whether or how this will happen.",
+                "basis": "inferred"
+              },
+              {
+                "group": "IT & services workers",
+                "direction": "unclear",
+                "what": "UK client spending",
+                "effect": "If British businesses and consumers become more cautious, Indian service firms with UK clients could face tighter budgets, although the report does not mention this.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "The UK chancellor's budget and its measures on tax and household support",
+                "why": "It would show whether the government tries to ease the pressure on British consumers, which affects UK demand for imports.",
+                "when": "ahead of the UK budget (date not given i",
+                "where": ""
+              }
+            ],
+            "context": [
+              "The United Kingdom is one of India's larger trading partners, and Indian firms sell it goods and services, including technology services, so a weaker British economy can slow demand for what India supplies."
+            ],
+            "terms": [
+              {
+                "term": "consumer confidence",
+                "meaning": "A survey-based measure of how optimistic households feel about their finances and the economy, which often shapes how much they spend."
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "UK consumer confidence falls sharply",
+                    "detail": "The Guardian reports that UK consumer confidence has fallen at its fastest rate outside the Covid pandemic since the 2016 Brexit vote, as damage from the Middle East war hits Britain.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Cost of living squeezes households",
+                    "detail": "The report says the war's economic fallout adds to pressure on consumers and on the chancellor before the budget, which leaves households with less room to spend.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Weaker UK demand could reach Indian sellers",
+                    "detail": "If British households spend less, UK buyers could order fewer goods and services from India, which could affect Indian exporters and service firms with UK customers.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "UK households keep spending despite lower confidence, or the budget eases the cost-of-living pressure, so that UK demand for Indian goods and services does not weaken."
+              }
+            }
+          }
         },
         {
           "id": "sj19pyt",
@@ -22763,2885 +23258,6 @@
             }
           ],
           "thread": "t1crla7m",
-          "finChecked": true,
-          "priority": 25
-        }
-      ]
-    },
-    {
-      "id": "finance",
-      "name": "Finance",
-      "items": [
-        {
-          "id": "s1bjmrbj",
-          "headline": "France protests: Macron condemns 'stupid' comments from Trump, others as bond market pressure builds",
-          "url": "https://www.cnbc.com/2026/10/22/macron-trump-france-protests.html",
-          "source": "cnbc",
-          "date": "2026-10-22T14:21:56.000Z",
-          "relevance": "medium",
-          "why": "CNBC reports that unrest over the cost of living in France has pushed French government bond yields to a 24-year high. Euro-zone market stress and disruption in Paris may affect investment flows toward India and Indians studying or travelling in France.",
-          "implications": [
-            "Higher French borrowing costs raise questions over France's budget and growth, which investors are weighing ahead of further protests, according to CNBC.",
-            "Saturday's protests drew more than 400,000 people nationwide and 110,000 in Paris, and 1,314 people were arrested, so disruption to daily life in French cities is continuing.",
-            "Museum closures and barricaded shops in Paris could disrupt plans for Indian tourists and business visitors during protest days.",
-            "Officials are investigating a separate drive-by shooting in Trappes, outside Paris, as a potential terrorist act, which adds to security concerns for residents and visitors."
-          ],
-          "place": {
-            "name": "Paris",
-            "country": "France",
-            "lat": 48.86,
-            "lon": 2.35
-          },
-          "stage": "watch",
-          "filter": {
-            "verdict": "watch",
-            "channel": "money_capital",
-            "status": "done",
-            "effect": "low",
-            "reach": "national",
-            "grows_if": "French bond sell-off spreads to other euro-area government bonds",
-            "reason": "French 10-year yield at 24-year high; limited direct effect on India so far.",
-            "at": "2026-10-23T05:03:53.882Z"
-          },
-          "watch": {
-            "grows_if": "French bond sell-off spreads to other euro-area government bonds",
-            "since": "2026-10-23T05:03:53.882Z",
-            "expires": "2026-10-30T05:03:53.882Z",
-            "recheck": false,
-            "checkedAt": "2026-10-25T18:30:20.236Z",
-            "checkedReports": 13
-          },
-          "reports": [
-            {
-              "source": "cnbc",
-              "headline": "France protests: Macron condemns 'stupid' comments from Trump, others as bond market pressure builds",
-              "url": "https://www.cnbc.com/2026/10/22/macron-trump-france-protests.html",
-              "date": "2026-10-22T14:21:56.000Z",
-              "kind": "hard",
-              "summary": "France is facing a mounting economic crisis that pushed its 10-year government bond yield to a new 24-year high on Thursday.",
-              "summaryV": 3,
-              "ogTried": true,
-              "descTried": true,
-              "image": "https://image.cnbcfm.com/api/v1/image/108445227-1792648710242-gettyimages-2300710122-AFP_D3XH84B.jpeg?v=1792651411&w=1920&h=1080"
-            },
-            {
-              "source": "france24",
-              "headline": "Major protests in France: French shop owners brace for more unrest",
-              "url": "https://www.france24.com/en/major-protests-in-france-french-shop-owners-brace-for-more-unrest",
-              "date": "2026-10-23T08:46:04.000Z",
-              "kind": "hard",
-              "summary": "French President Emmanuel Macron said on Thursday that \"illegitimate\" protests would be banned in the coming days and blamed \"seditious\" ultra-left groups and vandals for last weekend's riots and looting.",
-              "summaryV": 3,
-              "image": "https://s.france24.com/media/display/071f40c0-cebc-11f1-b17e-4b25c96ec90e/w:1024/p:16x9/EN-20261023-090255-090455-CS-01.jpg"
-            },
-            {
-              "source": "aljazeera",
-              "headline": "Macron to meet student groups: Where are France’s protests heading?",
-              "url": "https://www.aljazeera.com/news/2026/10/23/we-want-promises-backed-by-results",
-              "date": "2026-10-23T08:50:23.000Z",
-              "kind": "feature",
-              "summary": "President to meet for first time with student representatives on Friday before further protests.",
-              "summaryV": 3
-            },
-            {
-              "source": "scmp",
-              "headline": "France deploys 70,000 police for new protests as Macron delays Africa trip",
-              "url": "https://www.scmp.com/news/world/europe/article/3371973/france-deploys-70000-police-new-protests-macron-delays-africa-trip",
-              "date": "2026-10-23T14:01:39.000Z",
-              "kind": "hard",
-              "summary": "France will deploy some 70,000 police nationwide as it braces for new protests this weekend after some of the worst urban violence in years erupted on the sidelines of demonstrations a week ago, the government said on Friday.",
-              "summaryV": 3,
-              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/23/3767e49d-3b18-4c3c-912f-4cccf876ce84_2c831b54.jpg?itok=SEY4Vg4E&v=1792764093"
-            },
-            {
-              "source": "france24",
-              "headline": "French protests: President Emmanuel Macron meets student unions representatives",
-              "url": "https://www.france24.com/en/french-protests-president-emmanuel-macron-meets-student-unions-representatives",
-              "date": "2026-10-23T14:26:41.000Z",
-              "kind": "hard",
-              "summary": "For the first time since the beginning of the mobilisation, French President Emmanuel Macron is set to meet student representatives as the government prepares for tomorrow's mobilisation. Luke Shrago has more.",
-              "summaryV": 3,
-              "image": "https://s.france24.com/media/display/6b6d8444-ceec-11f1-9feb-4d317af013fd/w:1024/p:16x9/EN-20261023-143406-143746-CS.jpg"
-            },
-            {
-              "source": "cbs",
-              "headline": "Deadly shooting in Paris suburb may be terrorist act, officials say",
-              "url": "https://www.cbsnews.com/news/gunman-terrorist-attack-paris-suburb/",
-              "date": "2026-10-23T14:40:00.000Z",
-              "kind": "breaking",
-              "summary": "Officials said they are investigating a drive-by shooting in Trappes, outside Paris, as a potential terrorist act and called it a \"miracle\" that there weren't more casualties.",
-              "summaryV": 3
-            },
-            {
-              "source": "cnbc",
-              "headline": "What next for France as riots rattle markets? Three questions facing investors ahead of more protests",
-              "url": "https://www.cnbc.com/2026/10/24/france-riots-paris-unrest-debt-budget.html",
-              "date": "2026-10-24T06:23:02.000Z",
-              "kind": "hard",
-              "summary": "French unrest pushed bond yields to a 24-year high as investors weigh budget, growth and sectors risks ahead of more protests.",
-              "summaryV": 3
-            },
-            {
-              "source": "cbs",
-              "headline": "Paris museums close, shops build barricades ahead of more protests",
-              "url": "https://www.cbsnews.com/news/paris-france-new-protests-riots-museums-shops/",
-              "date": "2026-10-24T07:33:31.000Z",
-              "kind": "hard",
-              "summary": "A week after 3,000 shops were damaged or looted, France braces for more protests.",
-              "summaryV": 3
-            },
-            {
-              "source": "scmp",
-              "headline": "Chinese students in Paris hunker down as city braces for more mass protests",
-              "url": "https://www.scmp.com/economy/global-economy/article/3371981/chinese-students-paris-hunker-down-city-braces-more-mass-protests",
-              "date": "2026-10-24T08:00:13.000Z",
-              "kind": "soft",
-              "summary": "France is bracing for another day of mass protests on Saturday, with the government promising that 70,000 police and gendarmes will be deployed across the country amid fears that last weekend’s scenes of violence and looting could repeat themselves.",
-              "summaryV": 3,
-              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/23/58cc20f9-b0bb-4eed-83c1-281b49c85355_c004ff7c.jpg?itok=1BLEtTQG&v=1792768387"
-            },
-            {
-              "source": "nyt",
-              "headline": "How a Small Student Protest Spread Across France",
-              "url": "https://www.nytimes.com/2026/10/24/world/europe/france-protests-timeline.html",
-              "date": "2026-10-24T09:46:49.000Z",
-              "kind": "feature",
-              "summary": "A movement that began with a few high schools has broadened to encompass labor unions and other activists.",
-              "summaryV": 3,
-              "image": "https://static01.nyt.com/images/2026/10/24/multimedia/24france-protests-timeline-qzbm/24france-protests-timeline-qzbm-mediumSquareAt3X.jpg"
-            },
-            {
-              "source": "nyt",
-              "headline": "Why Are There Protests in France?",
-              "url": "https://www.nytimes.com/article/france-student-protests-why.html",
-              "date": "2026-10-24T11:08:49.000Z",
-              "kind": "feature",
-              "summary": "The authorities deployed tens of thousands of security forces and banned demonstrations in some cities, hoping to avoid a repeat of the riots that shook the country a week ago.",
-              "summaryV": 3,
-              "image": "https://static01.nyt.com/images/2026/11/03/multimedia/03int-france-schools-wtk-vphk/03int-france-schools-wtk-vphk-mediumSquareAt3X.jpg"
-            },
-            {
-              "source": "france24",
-              "headline": "France: 110.000 protesters in Paris",
-              "url": "https://www.france24.com/en/france-110-000-protesters-in-paris",
-              "date": "2026-10-25T15:00:01.000Z",
-              "kind": "hard",
-              "summary": "Hundreds of demonstrations took place across France on Saturday over the rising cost of living, with security forces deployed in large numbers to prevent a repeat of the violence seen last weekend.",
-              "summaryV": 3,
-              "image": "https://s.france24.com/media/display/b799d560-d07d-11f1-abd8-bdb9616e85cf/w:1024/p:16x9/EN-20261024-180607-181821-CS.jpg"
-            },
-            {
-              "source": "france24",
-              "headline": "France: 1.314 arrested during protests across the country",
-              "url": "https://www.france24.com/en/france-1-314-arrested-during-protests-across-the-country",
-              "date": "2026-10-25T16:32:57.000Z",
-              "kind": "hard",
-              "summary": "France saw another day of nationwide protests on Saturday, with more than 400,000 people taking to the streets over the rising cost of living and school funding. Most marches remained peaceful, a week after riots and looting hit several cities.",
-              "summaryV": 3,
-              "image": "https://s.france24.com/media/display/7638bc76-d091-11f1-b532-bdb9616e85cf/w:1024/p:16x9/EN-20261025-160438-160623-CS.jpg"
-            }
-          ],
-          "image": "https://image.cnbcfm.com/api/v1/image/108445227-1792648710242-gettyimages-2300710122-AFP_D3XH84B.jpeg?v=1792651411&w=1920&h=1080",
-          "priority": 60,
-          "thread": "t1rn1bq5",
-          "analysis": {
-            "v": 3,
-            "at": "2026-10-25T19:07:40.913Z",
-            "tier": "deep",
-            "primary": "market_move",
-            "complement": "scenarios",
-            "features": [
-              "market_move",
-              "fast_moving",
-              "pending_outcome"
-            ],
-            "exposure": {
-              "level": "medium",
-              "reason": "The unrest reaches India mainly through global investor sentiment and the safety and travel of Indians in France. No direct effect on Indian household essentials is reported, which keeps exposure medium."
-            },
-            "horizon": {
-              "value": "weeks",
-              "reason": "Further protests are expected, and any knock-on effect on investor sentiment or travel would build over the coming weeks rather than immediately."
-            },
-            "confidence": {
-              "level": "medium",
-              "reason": "France 24, CBS News and the South China Morning Post agree on the protests and the official police numbers, but the bond-yield move rests on CNBC alone."
-            },
-            "outlets": 6,
-            "affected": [
-              {
-                "group": "Students abroad",
-                "direction": "down",
-                "what": "safety and daily disruption",
-                "effect": "Indian students in Paris may face closed venues, barricaded shops and protest-related disruption, as Chinese students there are reported to be doing.",
-                "basis": "inferred"
-              },
-              {
-                "group": "Travellers & pilgrims",
-                "direction": "down",
-                "what": "access to Paris attractions",
-                "effect": "Indian tourists could find museums closed and city centres disrupted on protest days, which may affect itineraries in France.",
-                "basis": "inferred"
-              },
-              {
-                "group": "Equity & mutual fund investors",
-                "direction": "unclear",
-                "what": "foreign investor sentiment",
-                "effect": "If euro-zone market stress deepens, foreign investors could become more cautious toward emerging markets, which may affect Indian share prices held by mutual funds.",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "Whether further announced protests in France stay peaceful or return to rioting and looting",
-                "why": "A repeat of the earlier violence would signal deeper instability and greater risk for residents and visitors in France.",
-                "when": "",
-                "where": "French Interior Ministry"
-              },
-              {
-                "what": "The direction of French government bond yields after the latest weekend of protests",
-                "why": "Falling yields would suggest investor fears are easing, while further rises would point to spreading market stress.",
-                "when": "",
-                "where": ""
-              },
-              {
-                "what": "The findings of the investigation into the Trappes drive-by shooting",
-                "why": "Confirmation of a terrorist motive would raise security concerns for people living in or travelling to France.",
-                "when": "",
-                "where": "French authorities"
-              }
-            ],
-            "context": [
-              "A government bond yield is the return investors demand to lend to that government, and it rises when they see greater risk in its budget or politics.",
-              "When stress builds in a major advanced economy, global investors often reduce exposure to riskier assets, which can include shares and bonds in emerging markets such as India.",
-              "The European Union is one of India's largest trading partners, and many Indian students, tourists and professionals live in or travel to France."
-            ],
-            "terms": [
-              {
-                "term": "bond yields",
-                "meaning": "The annual return investors earn on government debt, which moves up when they demand more compensation for lending."
-              },
-              {
-                "term": "gendarmes",
-                "meaning": "Members of France's military police force, which handles public order alongside the regular national police."
-              },
-              {
-                "term": "euro zone",
-                "meaning": "The group of European Union countries that use the euro as their shared currency."
-              }
-            ],
-            "frameworks": {
-              "market_move": {
-                "moved": {
-                  "what": "French government bond yields",
-                  "kind": "bond yields",
-                  "direction": "up",
-                  "size": "24-year high",
-                  "period": "amid the unrest, as reported on 24 October"
-                },
-                "cause": {
-                  "text": "CNBC attributes the rise to French unrest, with investors weighing risks to the budget, growth and particular sectors ahead of more protests.",
-                  "status": "reported",
-                  "by": "CNBC"
-                },
-                "duration": "unclear",
-                "channels": [
-                  {
-                    "channel": "foreign investment flows",
-                    "india_link": "Stress in a large euro-zone bond market could make global investors more risk-averse, which may lead some to pull money from emerging markets including India.",
-                    "basis": "inferred"
-                  },
-                  {
-                    "channel": "company earnings",
-                    "india_link": "If French unrest weighs on growth, demand from France for Indian goods and services could weaken, which may affect Indian exporters and service firms with European clients.",
-                    "basis": "inferred"
-                  }
-                ],
-                "not_settled": "The reports do not say whether bond yields eased after Saturday's largely peaceful protests or how lasting the budget and growth risks are."
-              },
-              "scenarios": {
-                "question": "Will France's protests over the cost of living and school funding stay largely peaceful, or return to the rioting and looting seen earlier?",
-                "scenarios": [
-                  {
-                    "name": "Protests stay peaceful",
-                    "what": "Marches continue on the pattern of Saturday, when most of the more than 400,000 protesters demonstrated peacefully under heavy security.",
-                    "signal": "Further protest days pass with mostly peaceful marches and no repeat of widespread shop damage or looting.",
-                    "india_effect": "Disruption for Indian students and visitors would likely stay limited to protest days, and pressure on investor sentiment may ease."
-                  },
-                  {
-                    "name": "Riots return",
-                    "what": "Violence and looting resume on the scale of the earlier weekend, when 3,000 shops were damaged or looted, despite large police deployments.",
-                    "signal": "Reports of widespread looting, damaged shops and clashes in several French cities on a future protest day.",
-                    "india_effect": "Indians in France could face greater safety risks, and renewed market stress may weigh on investor appetite for emerging markets including India."
-                  },
-                  {
-                    "name": "Movement keeps broadening",
-                    "what": "The movement, which began in a few high schools and has grown to include labour unions and other activists, could widen further.",
-                    "signal": "Unions and other groups announce new nationwide actions alongside further student protests.",
-                    "india_effect": "Prolonged unrest could disrupt business and travel in France for longer, which may affect Indian firms and travellers dealing with the country."
-                  }
-                ]
-              }
-            },
-            "reading": [
-              {
-                "headline": "France is flashing euro crisis signals. This time, the fault lines are different",
-                "url": "https://www.cnbc.com/2026/10/23/france-debt-euro-zone-contagion.html",
-                "source": "cnbc",
-                "date": "2026-10-23T11:12:38.000Z"
-              }
-            ]
-          },
-          "stats": {
-            "v": 2,
-            "at": "2026-10-25T19:23:15.073Z",
-            "series": []
-          }
-        },
-        {
-          "id": "s1gk7lne",
-          "headline": "Moody's holds steady on France's credit rating as country grapples with turmoil and higher yields",
-          "url": "https://www.cnbc.com/2026/10/23/moodys-holds-steady-on-frances-credit-rating-as-country-grapples-with-turmoil-and-higher-yields.html",
-          "source": "cnbc",
-          "date": "2026-10-23T22:49:42.000Z",
-          "relevance": "medium",
-          "why": "Moody's kept France's credit rating at Aa3 despite political unrest and rising borrowing costs, but issued a warning. Avoiding a downgrade lowers the immediate risk of wider European market stress spilling into Indian markets.",
-          "implications": [
-            "A downgrade could have forced some investors to sell French government bonds, so the hold reduces the chance of a sudden jump in European borrowing costs for now.",
-            "The New York Times reports that Moody's issued a warning, which means a later downgrade could still unsettle global bond markets if France's debt situation worsens.",
-            "If stress in France spread to other euro zone markets, global investors could pull money from emerging markets such as India, which may weigh on Indian shares and the rupee."
-          ],
-          "place": {
-            "name": "Paris",
-            "country": "France",
-            "lat": 48.85,
-            "lon": 2.35
-          },
-          "stage": "watch",
-          "filter": {
-            "verdict": "watch",
-            "channel": "money_capital",
-            "status": "done",
-            "effect": "low",
-            "reach": "national",
-            "grows_if": "Moody's downgrades France's credit rating",
-            "reason": "Rating held at Aa3; France's turmoil and yields have only indirect India effect.",
-            "at": "2026-10-24T04:48:52.211Z"
-          },
-          "watch": {
-            "grows_if": "Moody's downgrades France's credit rating",
-            "since": "2026-10-24T04:48:52.211Z",
-            "expires": "2026-10-31T04:48:52.211Z",
-            "recheck": false,
-            "checkedAt": "2026-10-24T04:49:22.065Z",
-            "checkedReports": 2
-          },
-          "reports": [
-            {
-              "source": "cnbc",
-              "headline": "Moody's holds steady on France's credit rating as country grapples with turmoil and higher yields",
-              "url": "https://www.cnbc.com/2026/10/23/moodys-holds-steady-on-frances-credit-rating-as-country-grapples-with-turmoil-and-higher-yields.html",
-              "date": "2026-10-23T22:49:42.000Z",
-              "kind": "hard",
-              "summary": "Moody's left its credit rating on France at Aa3, giving the country some relief in a week of unrest.",
-              "summaryV": 3,
-              "ogTried": true,
-              "descTried": true,
-              "image": "https://image.cnbcfm.com/api/v1/image/108453365-1792793633822-gettyimages-2300178554-AA_17102026_2998635.jpeg?v=1792793674&w=1920&h=1080"
-            },
-            {
-              "source": "nyt",
-              "headline": "France’s Avoids a Debt Downgrade From Moody’s, but Is Given a Warning",
-              "url": "https://www.nytimes.com/2026/10/23/business/france-debt-moodys-protests.html",
-              "date": "2026-10-23T23:23:10.000Z",
-              "kind": "hard",
-              "summary": "Moody’s held the country’s credit rating steady amid political uncertainty and a rise in borrowing costs that have worsened France’s debt situation.",
-              "summaryV": 3,
-              "image": "https://static01.nyt.com/images/2026/10/23/multimedia/23Biz-France-Debt-blzq/23Biz-France-Debt-blzq-mediumSquareAt3X.jpg"
-            }
-          ],
-          "image": "https://image.cnbcfm.com/api/v1/image/108453365-1792793633822-gettyimages-2300178554-AA_17102026_2998635.jpeg?v=1792793674&w=1920&h=1080",
-          "priority": 50,
-          "thread": "t1rn1bq5",
-          "analysis": {
-            "v": 3,
-            "at": "2026-10-25T19:09:38.024Z",
-            "tier": "standard",
-            "primary": "impact_chain",
-            "complement": null,
-            "features": [
-              "pending_outcome"
-            ],
-            "exposure": {
-              "level": "low",
-              "reason": "The decision reaches India only indirectly, through global investor sentiment and euro zone demand. Because the rating was held rather than cut, no new shock is transmitted, so exposure is low."
-            },
-            "horizon": {
-              "value": "months",
-              "reason": "Any effect on India depends on whether France's debt and political problems worsen over coming months and prompt further rating action."
-            },
-            "confidence": {
-              "level": "medium",
-              "reason": "CNBC and The New York Times both report Moody's on-record decision, but the content of the warning is described only by The New York Times."
-            },
-            "outlets": 2,
-            "affected": [
-              {
-                "group": "Equity & mutual fund investors",
-                "direction": "unclear",
-                "what": "foreign investment flows",
-                "effect": "Renewed European bond stress could lead foreign investors to withdraw money from Indian markets, while continued stability may limit that risk.",
-                "basis": "inferred"
-              },
-              {
-                "group": "Large exporters",
-                "direction": "unclear",
-                "what": "euro zone demand",
-                "effect": "Indian exporters selling to Europe could face weaker demand if France's debt troubles deepen and slow the euro zone economy.",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "Movements in French government borrowing costs in the coming weeks",
-                "why": "Further rises would suggest the warning is not calming investors and that stress could spread.",
-                "when": "",
-                "where": ""
-              },
-              {
-                "what": "Further political unrest or instability in France",
-                "why": "Continued turmoil could raise the risk of a future downgrade and wider market stress.",
-                "when": "",
-                "where": ""
-              }
-            ],
-            "context": [
-              "Credit rating agencies judge how likely a government is to repay its debts, and a downgrade can raise its borrowing costs and force some investors to sell its bonds.",
-              "France is one of the largest economies in the euro zone, and the European Union is among India's most important trading partners and export markets.",
-              "Stress in large developed-country bond markets can make global investors more cautious, leading them to move money out of emerging markets including India."
-            ],
-            "terms": [
-              {
-                "term": "Aa3",
-                "meaning": "A Moody's rating grade, fourth-highest on its scale, indicating a borrower of high quality with very low credit risk."
-              },
-              {
-                "term": "yields",
-                "meaning": "The return investors demand to hold a government's bonds; higher yields mean the government pays more to borrow."
-              }
-            ],
-            "frameworks": {
-              "impact_chain": {
-                "chain": [
-                  {
-                    "step": "Moody's holds France at Aa3",
-                    "detail": "Moody's kept France's credit rating at Aa3 during a week of unrest and rising borrowing costs, while issuing a warning, according to The New York Times.",
-                    "basis": "reported"
-                  },
-                  {
-                    "step": "French bond stress eases for now",
-                    "detail": "Avoiding a downgrade means investors are not pushed to sell French bonds because of a rating cut, which removes one immediate source of pressure on borrowing costs.",
-                    "basis": "inferred"
-                  },
-                  {
-                    "step": "Spillover to India stays limited",
-                    "detail": "With no new rating shock, global investors may have less reason to move money out of emerging markets, so Indian shares and the rupee could see little effect.",
-                    "basis": "inferred"
-                  }
-                ],
-                "breaks_if": "The effect would change if France's political turmoil or rising borrowing costs led to a later downgrade, turning the current relief into a fresh source of market stress."
-              }
-            },
-            "reading": [
-              {
-                "headline": "France is flashing euro crisis signals. This time, the fault lines are different",
-                "url": "https://www.cnbc.com/2026/10/23/france-debt-euro-zone-contagion.html",
-                "source": "cnbc",
-                "date": "2026-10-23T11:12:38.000Z"
-              }
-            ]
-          }
-        },
-        {
-          "id": "su8p1pb",
-          "headline": "A Tech Rotation Roils the Markets, Again",
-          "url": "https://www.nytimes.com/2026/10/23/business/dealbook/tech-rotation-nasdaq-ai.html",
-          "source": "nyt",
-          "date": "2026-10-23T11:42:50.000Z",
-          "relevance": "medium",
-          "image": "https://static01.nyt.com/images/2026/10/23/multimedia/23db-nasdaq-wclt/23db-nasdaq-wclt-mediumSquareAt3X.jpg",
-          "why": "",
-          "implications": [],
-          "stage": "watch",
-          "filter": {
-            "verdict": "watch",
-            "channel": "money_capital",
-            "status": "done",
-            "effect": "low",
-            "reach": "national",
-            "grows_if": "Brent stays above $110 for a month while AI spending cuts hit tech shares",
-            "reason": "Tech share rotation driven by oil and AI costs; effect uncertain",
-            "at": "2026-10-23T11:48:50.902Z"
-          },
-          "watch": {
-            "grows_if": "Brent stays above $110 for a month while AI spending cuts hit tech shares",
-            "since": "2026-10-23T11:48:50.902Z",
-            "expires": "2026-10-30T11:48:50.902Z"
-          },
-          "reports": [
-            {
-              "source": "nyt",
-              "headline": "A Tech Rotation Roils the Markets, Again",
-              "url": "https://www.nytimes.com/2026/10/23/business/dealbook/tech-rotation-nasdaq-ai.html",
-              "date": "2026-10-23T11:42:50.000Z",
-              "kind": "hard",
-              "summary": "Investors are bracing for a one-two punch: rising oil prices and concerns about the soaring costs of the artificial intelligence buildout.",
-              "summaryV": 3,
-              "image": "https://static01.nyt.com/images/2026/10/23/multimedia/23db-nasdaq-wclt/23db-nasdaq-wclt-mediumSquareAt3X.jpg"
-            }
-          ],
-          "placeTried": true,
-          "priority": 45,
-          "thread": "t1dbdiwl"
-        },
-        {
-          "id": "s1g5uzpv",
-          "headline": "France is flashing euro crisis signals. This time, the fault lines are different",
-          "url": "https://www.cnbc.com/2026/10/23/france-debt-euro-zone-contagion.html",
-          "source": "cnbc",
-          "date": "2026-10-23T11:12:38.000Z",
-          "relevance": "medium",
-          "why": "",
-          "implications": [],
-          "place": {
-            "name": "Paris",
-            "country": "France",
-            "lat": 48.86,
-            "lon": 2.35
-          },
-          "stage": "context",
-          "filter": {
-            "verdict": "watch",
-            "channel": "money_capital",
-            "status": "done",
-            "effect": "low",
-            "reach": "national",
-            "grows_if": "French bond spreads widen sharply against Germany and other euro zone bonds",
-            "reason": "French borrowing costs surge on debt and political risk; euro spillover uncertain",
-            "at": "2026-10-23T11:48:50.902Z"
-          },
-          "reports": [
-            {
-              "source": "cnbc",
-              "headline": "France is flashing euro crisis signals. This time, the fault lines are different",
-              "url": "https://www.cnbc.com/2026/10/23/france-debt-euro-zone-contagion.html",
-              "date": "2026-10-23T11:12:38.000Z",
-              "kind": "feature",
-              "summary": "French borrowing costs have surged as debt and political risks mount, raising questions over whether the stress could spread across the euro zone.",
-              "summaryV": 3,
-              "ogTried": true,
-              "descTried": true,
-              "image": "https://image.cnbcfm.com/api/v1/image/108380607-1791534375907-gettyimages-2298585875-AFP_D2MC8LX.jpeg?v=1791534388&w=1920&h=1080"
-            }
-          ],
-          "image": "https://image.cnbcfm.com/api/v1/image/108380607-1791534375907-gettyimages-2298585875-AFP_D2MC8LX.jpeg?v=1791534388&w=1920&h=1080",
-          "priority": 40,
-          "thread": "t1rn1bq5"
-        },
-        {
-          "id": "sj44e88",
-          "headline": "Nasdaq dives 750 points as investors reassess AI spending",
-          "url": "https://www.cbsnews.com/news/nasdaq-ai-spending-debt-investors-concerns-stocks/",
-          "source": "cbs",
-          "date": "2026-10-22T20:32:43.000Z",
-          "relevance": "medium",
-          "why": "US technology shares fell sharply on Thursday as investors worried about the debt funding AI spending, pulling markets lower worldwide while oil reached a five-month high. India is exposed through global investor sentiment and US-linked technology demand.",
-          "implications": [
-            "Indian information technology firms earn much of their revenue from US clients, so a sharp fall in US technology shares can weigh on sentiment towards Indian technology companies.",
-            "Oil reached its highest level since May on worries about the war with Iran. Because India imports most of its crude, higher prices can raise its import bill and feed into fuel costs."
-          ],
-          "analysis": {
-            "v": 3,
-            "at": "2026-10-23T05:10:02.656Z",
-            "tier": "quick",
-            "primary": "market_move",
-            "complement": null,
-            "features": [
-              "market_move"
-            ],
-            "exposure": {
-              "level": "medium",
-              "reason": "The main channel is global investor sentiment towards technology shares, which can spill into Indian markets and IT firms with US clients. Higher oil adds a smaller household-cost link."
-            },
-            "horizon": {
-              "value": "now",
-              "reason": "Share markets react within hours or days to moves in US indices, and oil prices feed quickly into trading sentiment."
-            },
-            "confidence": {
-              "level": "medium",
-              "reason": "CBS News, ABC News, The Guardian and Al Jazeera agree on the fall, but the cause rests on analysts' views rather than an official source."
-            },
-            "outlets": 4,
-            "affected": [
-              {
-                "group": "Equity & mutual fund investors",
-                "direction": "down",
-                "what": "market sentiment",
-                "effect": "A global technology sell-off can make foreign investors more cautious about emerging markets, which may weigh on Indian share indices and the funds that track them.",
-                "basis": "inferred"
-              },
-              {
-                "group": "Fuel & LPG users",
-                "direction": "up",
-                "what": "fuel cost pressure",
-                "effect": "Oil at a five-month high raises refiners' import costs, which could feed through to petrol and diesel prices if it persists.",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "Whether oil prices stay near the five-month high as worries about the war with Iran continue",
-                "why": "It would show whether the fuel cost pressure on India is building or fading.",
-                "when": "",
-                "where": ""
-              }
-            ],
-            "context": [
-              "Foreign portfolio investors adjust their holdings across countries according to global risk appetite, so sharp falls in US shares can bring caution towards emerging markets such as India.",
-              "India imports most of the crude oil it uses, so global oil price swings affect its import bill and its inflation."
-            ],
-            "terms": [
-              {
-                "term": "Nasdaq",
-                "meaning": "A US stock index dominated by technology companies, often used as a gauge of how technology shares are performing."
-              }
-            ],
-            "frameworks": {
-              "market_move": {
-                "moved": {
-                  "what": "Nasdaq",
-                  "kind": "share index",
-                  "direction": "down",
-                  "size": "750 points, or 2.6 percent",
-                  "period": "on Thursday"
-                },
-                "cause": {
-                  "text": "Investors are worried about the large amount of debt AI companies are using to pay for data centre and chip spending, and a debate continues over whether AI is a bubble.",
-                  "status": "reported",
-                  "by": "Wall Street analysts quoted by CBS News"
-                },
-                "duration": "one_day",
-                "channels": [
-                  {
-                    "channel": "foreign investment flows",
-                    "india_link": "A global technology sell-off can make foreign investors more cautious about emerging markets, which may affect money flowing into Indian shares and technology firms.",
-                    "basis": "inferred"
-                  }
-                ],
-                "not_settled": "The reports describe a debate over whether AI is a bubble and do not say whether the fall reflects a lasting change."
-              }
-            },
-            "capped": "one-day market move"
-          },
-          "place": {
-            "name": "New York",
-            "country": "United States",
-            "lat": 40.71,
-            "lon": -74.01
-          },
-          "reports": [
-            {
-              "source": "cbs",
-              "headline": "Nasdaq dives 750 points as investors reassess AI spending",
-              "url": "https://www.cbsnews.com/news/nasdaq-ai-spending-debt-investors-concerns-stocks/",
-              "date": "2026-10-22T20:32:43.000Z",
-              "kind": "hard",
-              "summary": "Investors are fretting over the massive debt AI companies are relying on to finance data center and chip spending, Wall Street analysts say.",
-              "summaryV": 3,
-              "ogTried": true,
-              "descTried": true,
-              "image": "https://assets3.cbsnewsstatic.com/hub/i/r/2026/10/22/4ce53f60-2c8e-4cd2-931c-3c9dce7b2832/thumbnail/1200x630/2dffe26dd922fc86798d96c2b1db6b4b/gettyimages-2300487265.jpg"
-            },
-            {
-              "source": "abc",
-              "headline": "Live: ASX to fall, US tech rout rattles markets",
-              "url": "https://www.abc.net.au/news/2026-10-23/asx-markets-business-news-live-updates-oct-23/107291840",
-              "date": "2026-10-22T20:33:42.000Z",
-              "kind": "hard",
-              "summary": "Australian shares are set to fall after a US tech rout driven by concerns about AI spending, while oil hits a five-month high. Follow the day's events and insights from our business reporters on the ABC News live markets blog.",
-              "summaryV": 3,
-              "image": "https://live-production.wcms.abc-cdn.net.au/ca64714984ce2d55e0a9f3af4412813f?impolicy=wcms_crop_resize&cropH=2806&cropW=4988&xPos=0&yPos=294&width=862&height=485"
-            },
-            {
-              "source": "guardian",
-              "headline": "Sharp drops for AI stocks overwhelm markets worldwide as oil prices jump",
-              "url": "https://www.theguardian.com/business/2026/oct/22/stock-markets-drop-ai-oil",
-              "date": "2026-10-22T21:50:13.000Z",
-              "kind": "hard",
-              "summary": "Datacenter and chip costs fueled sharp decrease in AI sector although non-AI stocks still had a strong showing",
-              "summaryV": 3,
-              "lede": "The latest shudder for stocks in the AI industry pulled markets lower worldwide on Thursday, while oil prices hit their highest levels since May on worries about the war with Iran .",
-              "image": "https://i.guim.co.uk/img/media/9e77a4ead0dd662eb649b44a2b029545f70ae2d1/408_0_4078_3263/master/4078.jpg?width=700&quality=85&auto=format&fit=max&s=21901b560e780664fd09cfe59c624e5d"
-            },
-            {
-              "source": "aljazeera",
-              "headline": "US tech stocks tumble as investors fret over AI spending",
-              "url": "https://www.aljazeera.com/economy/2026/10/23/us-tech-stocks-tumble-as-investors-fret-over-ai-spending",
-              "date": "2026-10-23T03:13:13.000Z",
-              "kind": "hard",
-              "summary": "Tech-heavy Nasdaq falls 2.6 percent as debate rages over whether AI is a bubble.",
-              "summaryV": 3
-            },
-            {
-              "source": "cnbc",
-              "headline": "CNBC Daily Open: Tech falls to earth, Musk's fortunes diverge",
-              "url": "https://www.cnbc.com/2026/10/23/trump-elon-musk-tesla-starlink-tech-nasdaq-.html",
-              "date": "2026-10-23T09:58:56.000Z",
-              "kind": "hard",
-              "summary": "Markets are digesting the tech rout on Wall Street with the Nasdaq Composite logging its worst day in three months on renewed doubts over AI spending.",
-              "summaryV": 3
-            }
-          ],
-          "image": "https://assets3.cbsnewsstatic.com/hub/i/r/2026/10/22/4ce53f60-2c8e-4cd2-931c-3c9dce7b2832/thumbnail/1200x630/2dffe26dd922fc86798d96c2b1db6b4b/gettyimages-2300487265.jpg",
-          "thread": "t1dbdiwl",
-          "priority": 75
-        },
-        {
-          "id": "sp1d814",
-          "headline": "China’s bear-market rout deepens as growth concerns and AI sell-off spur caution",
-          "url": "https://www.scmp.com/business/china-business/article/3371853/chinas-bear-market-rout-deepens-growth-concerns-and-ai-sell-spur-caution",
-          "source": "scmp",
-          "date": "2026-10-23T02:41:51.000Z",
-          "relevance": "medium",
-          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/23/840512ee-03c1-44ed-8e8c-83f6a5bf7588_64efb567.jpg?itok=9PeehN4q&v=1792723310",
-          "why": "China's benchmark CSI 300 Index fell further into bear-market territory on Friday, as hopes of fresh stimulus from Beijing faded and global investors pulled back from artificial intelligence-related trades. India could feel this through investor sentiment and foreign money flows.",
-          "implications": [
-            "Global fund managers often compare emerging markets when deciding where to place money, so weakness in China could change how foreign investors weigh Indian shares, though the reports do not say which way flows would move.",
-            "A broad retreat from artificial intelligence-related trades could also weigh on global technology sentiment, which may matter for Indian technology and services companies that depend on overseas clients and investor confidence."
-          ],
-          "analysis": {
-            "v": 3,
-            "at": "2026-10-23T05:06:33.225Z",
-            "tier": "quick",
-            "primary": "market_move",
-            "complement": null,
-            "features": [
-              "market_move"
-            ],
-            "exposure": {
-              "level": "low",
-              "reason": "The reports describe only a Chinese market sell-off and a global retreat from artificial intelligence trades. Any effect on India would run indirectly through foreign investor sentiment and flows, and the reports give no direct mechanism."
-            },
-            "horizon": {
-              "value": "weeks",
-              "reason": "Foreign investors' allocation decisions and market sentiment tend to adjust over a few weeks as the sell-off either continues or settles."
-            },
-            "confidence": {
-              "level": "low",
-              "reason": "This rests on a single report from the South China Morning Post with no named official source, and the link to India is not covered in the report."
-            },
-            "outlets": 1,
-            "affected": [
-              {
-                "group": "Equity & mutual fund investors",
-                "direction": "unclear",
-                "what": "market sentiment and flows",
-                "effect": "Weak global sentiment toward Chinese and artificial intelligence-linked shares could change foreign investors' appetite for Indian shares, which may influence the value of equity and mutual fund holdings.",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "Any announcement of new stimulus measures from Beijing to support growth and Chinese share prices",
-                "why": "Renewed stimulus hopes were reported as a factor in the sell-off, so any announcement would show whether that pressure is easing.",
-                "when": "",
-                "where": ""
-              }
-            ],
-            "context": [
-              "India and China are both large emerging markets, so foreign investors treat them as alternatives, and a change in one market's appeal can affect money flowing to the other."
-            ],
-            "terms": [
-              {
-                "term": "bear market",
-                "meaning": "A bear market is a prolonged fall in share prices, commonly defined as a drop of 20 percent or more from a recent peak."
-              }
-            ],
-            "frameworks": {
-              "market_move": {
-                "moved": {
-                  "what": "China's CSI 300 Index",
-                  "kind": "share index",
-                  "direction": "down",
-                  "size": "",
-                  "period": "on Friday"
-                },
-                "cause": {
-                  "text": "The South China Morning Post reports that fading hopes of fresh stimulus from Beijing, together with a global retreat from artificial intelligence-related trades, unsettled investors and pushed the index deeper into a bear market.",
-                  "status": "reported",
-                  "by": "South China Morning Post"
-                },
-                "duration": "multi_day",
-                "channels": [
-                  {
-                    "channel": "foreign investment flows",
-                    "india_link": "Global investors who reduce exposure to China or to artificial intelligence-linked shares may reconsider how much they hold in other emerging markets, including India, which could affect Indian share prices.",
-                    "basis": "inferred"
-                  }
-                ],
-                "not_settled": "The report does not say how deep the fall has been, how long it may last, or whether Beijing will announce new stimulus."
-              }
-            }
-          },
-          "place": {
-            "name": "Shanghai",
-            "country": "China",
-            "lat": 31.23,
-            "lon": 121.47
-          },
-          "stage": "analyse",
-          "filter": {
-            "verdict": "analyse",
-            "channel": "money_capital",
-            "status": "done",
-            "effect": "medium",
-            "reach": "national",
-            "reason": "China's whole stock market falls into bear territory on named causes, affecting global capital flows.",
-            "at": "2026-10-23T05:06:33.225Z"
-          },
-          "reports": [
-            {
-              "source": "scmp",
-              "headline": "China’s bear-market rout deepens as growth concerns and AI sell-off spur caution",
-              "url": "https://www.scmp.com/business/china-business/article/3371853/chinas-bear-market-rout-deepens-growth-concerns-and-ai-sell-spur-caution",
-              "date": "2026-10-23T02:41:51.000Z",
-              "kind": "hard",
-              "summary": "Chinese stocks extended their sell-off on Friday, pushing the benchmark CSI 300 Index deeper into bear-market territory, as waning hopes for fresh stimulus from Beijing and a global retreat from artificial intelligence-related trades rattled investor sentiment.",
-              "summaryV": 3,
-              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/23/840512ee-03c1-44ed-8e8c-83f6a5bf7588_64efb567.jpg?itok=9PeehN4q&v=1792723310"
-            }
-          ],
-          "priority": 65,
-          "thread": "tiqxbxc"
-        },
-        {
-          "id": "s1afxr9m",
-          "headline": "10-year Treasury yield tumbles below 5% to lowest level in nearly a month",
-          "url": "https://www.cnbc.com/2026/10/22/treasurys-bonds-ai-yields.html",
-          "source": "cnbc",
-          "date": "2026-10-22T20:05:13.000Z",
-          "relevance": "medium",
-          "why": "The US 10-year Treasury yield fell below 5% on Thursday, its lowest in nearly a month, as stocks slumped and oil prices surged. This matters to India through global investor flows and crude costs.",
-          "implications": [
-            "Lower US yields reduce the return on US government bonds, which can make emerging-market assets, including Indian bonds and shares, comparatively more attractive to global investors.",
-            "Surging oil prices work against this because India imports most of its crude, so a higher import bill could put pressure on the rupee and on fuel costs."
-          ],
-          "analysis": {
-            "v": 3,
-            "at": "2026-10-23T05:05:13.280Z",
-            "tier": "quick",
-            "primary": "market_move",
-            "complement": null,
-            "features": [
-              "market_move"
-            ],
-            "exposure": {
-              "level": "medium",
-              "reason": "The move reaches India through foreign investor flows and, separately, through higher oil prices that raise the import bill. Neither is a direct, confirmed effect on household essentials yet."
-            },
-            "horizon": {
-              "value": "now",
-              "reason": "Bond and currency markets react within days, while any effect on fuel costs would depend on how long oil prices stay high."
-            },
-            "confidence": {
-              "level": "low",
-              "reason": "This rests on a single CNBC summary, and the size of the oil price rise and the reasons for the yield fall are not detailed."
-            },
-            "outlets": 1,
-            "affected": [
-              {
-                "group": "Equity & mutual fund investors",
-                "direction": "unclear",
-                "what": "foreign investor flows",
-                "effect": "Falling US yields could change how global funds weigh Indian assets, while the stock market slump may make them more cautious, so the net effect is unclear.",
-                "basis": "inferred"
-              },
-              {
-                "group": "Fuel & LPG users",
-                "direction": "unclear",
-                "what": "pressure from higher oil prices",
-                "effect": "Surging oil prices raise India's crude import costs, which could eventually feed into petrol, diesel and cooking gas prices.",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "Whether the US 10-year yield stays below 5% in the coming sessions",
-                "why": "It would show whether the Thursday fall reflects a lasting shift in investor demand for safe assets.",
-                "when": "",
-                "where": "US Department of the Treasury daily yield data"
-              },
-              {
-                "what": "Whether oil prices continue to rise after Thursday's surge",
-                "why": "Continued rises would increase India's import bill and pressure on the rupee.",
-                "when": "",
-                "where": ""
-              }
-            ],
-            "context": [
-              "Bond yields move opposite to bond prices, and they tend to fall when investors buy US government bonds as a safer place for money during stock market weakness.",
-              "US Treasury yields act as a benchmark for borrowing costs worldwide, so their direction influences how global funds allocate money between the US and markets such as India."
-            ],
-            "terms": [
-              {
-                "term": "10-year Treasury yield",
-                "meaning": "The annual return investors earn from holding a ten-year US government bond, widely used as a benchmark for global borrowing costs and risk appetite."
-              }
-            ],
-            "frameworks": {
-              "market_move": {
-                "moved": {
-                  "what": "US 10-year Treasury yield",
-                  "kind": "bond yields",
-                  "direction": "down",
-                  "size": "below 5%",
-                  "period": "on Thursday"
-                },
-                "cause": {
-                  "text": "CNBC says yields fell sharply as investors monitored a slump in stocks and surging oil prices, with the yield reaching its lowest level in nearly a month.",
-                  "status": "reported",
-                  "by": "CNBC"
-                },
-                "duration": "one_day",
-                "channels": [
-                  {
-                    "channel": "foreign investment flows",
-                    "india_link": "Lower US yields can ease the pull of US bonds on global money, which could support flows into Indian assets, though a stock market slump may offset this.",
-                    "basis": "inferred"
-                  }
-                ],
-                "not_settled": "The report does not say whether the fall in yields will last or how large the oil price rise has been."
-              }
-            }
-          },
-          "place": {
-            "name": "Washington",
-            "country": "United States",
-            "lat": 38.9,
-            "lon": -77.04
-          },
-          "stage": "analyse",
-          "filter": {
-            "verdict": "analyse",
-            "channel": "money_capital",
-            "status": "done",
-            "effect": "medium",
-            "reach": "national",
-            "reason": "US 10-year yield falls amid stock slump and oil surge, moving global capital",
-            "at": "2026-10-23T05:05:13.280Z"
-          },
-          "reports": [
-            {
-              "source": "cnbc",
-              "headline": "10-year Treasury yield tumbles below 5% to lowest level in nearly a month",
-              "url": "https://www.cnbc.com/2026/10/22/treasurys-bonds-ai-yields.html",
-              "date": "2026-10-22T20:05:13.000Z",
-              "kind": "hard",
-              "summary": "Treasury yields dove dramatically lower on Thursday as investors monitored a slump in stocks and surging oil prices.",
-              "summaryV": 3,
-              "ogTried": true,
-              "descTried": true,
-              "image": "https://image.cnbcfm.com/api/v1/image/108254453-1768932204557-gettyimages-2256714490-US_STOCKS.jpeg?v=1775807964&w=1920&h=1080"
-            }
-          ],
-          "image": "https://image.cnbcfm.com/api/v1/image/108254453-1768932204557-gettyimages-2256714490-US_STOCKS.jpeg?v=1775807964&w=1920&h=1080",
-          "priority": 65,
-          "thread": "t1rzjgok"
-        },
-        {
-          "id": "sgys1we",
-          "headline": "BlackRock, GIC among investors chasing Indian telecom major Jio's IPO as anchor bids top $26 billion",
-          "url": "https://www.cnbc.com/2026/10/20/jio-ipo-gic-blackrock-.html",
-          "source": "cnbc",
-          "date": "2026-10-20T02:44:35.000Z",
-          "relevance": "medium",
-          "why": "Jio Platforms, the digital arm of Mukesh Ambani's Reliance Industries, is launching India's largest-ever initial public offering (IPO) in rupee terms. The test of investor confidence plays out on Indian stock exchanges and in Indian savers' portfolios.",
-          "implications": [
-            "Anchor bids topping $26 billion against a raise of up to $3.2 billion show heavy demand from large investors such as BlackRock and Singapore's GIC before the public offer opens.",
-            "The offering is India's largest ever in rupee terms but only the second largest in dollar terms, because the rupee has weakened against the dollar over time.",
-            "Strong demand for a listing of this size could shape how global funds judge the depth of India's equity market for future large offerings.",
-            "The South China Morning Post frames the listing against a heating rivalry with Elon Musk, which suggests investors are weighing competition in Indian telecoms and broadband."
-          ],
-          "analysis": {
-            "v": 3,
-            "at": "2026-10-20T19:33:13.938Z",
-            "tier": "standard",
-            "primary": "winners_losers",
-            "complement": null,
-            "features": [
-              "allocation",
-              "pending_outcome"
-            ],
-            "exposure": {
-              "level": "medium",
-              "reason": "The channel is India's equity market and one large telecoms company. It touches investors and the telecoms sector rather than household essentials, so exposure is medium."
-            },
-            "horizon": {
-              "value": "now",
-              "reason": "The Guardian reports that Jio Platforms floats on the stock market on Wednesday, so market reaction comes within days."
-            },
-            "confidence": {
-              "level": "medium",
-              "reason": "CNBC, the South China Morning Post and The Guardian agree on the listing, but none cites an on-record official, and they differ on whether it is a record."
-            },
-            "outlets": 3,
-            "affected": [
-              {
-                "group": "Depositors & savers",
-                "direction": "mixed",
-                "what": "exposure to large IPO",
-                "effect": "Indian households that apply for shares directly or hold them through mutual funds may gain or lose depending on how Jio's shares trade after listing.",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "Jio Platforms shares begin trading on the stock market",
-                "why": "The listing-day price will show whether investor faith in the record valuation holds once trading opens to the wider market.",
-                "when": "2026-10-21",
-                "where": "National Stock Exchange of India and BSE"
-              },
-              {
-                "what": "Subscription levels across retail and institutional categories of the Jio offering",
-                "why": "Subscription figures will show whether demand extends beyond the anchor investors to ordinary Indian investors.",
-                "when": "",
-                "where": "National Stock Exchange of India and BSE"
-              }
-            ],
-            "context": [
-              "Jio is India's leading mobile telecoms operator and is part of the Reliance Industries conglomerate controlled by Mukesh Ambani.",
-              "In Indian IPOs, anchor investors are large institutions that commit to buy shares shortly before the public offer opens. Strong anchor demand is often read as a signal of institutional confidence.",
-              "IPOs in India are regulated by the Securities and Exchange Board of India (SEBI), which sets disclosure rules and the shares reserved for retail investors."
-            ],
-            "terms": [
-              {
-                "term": "IPO",
-                "meaning": "An initial public offering, the first time a company sells its shares to the public and lists them on a stock exchange."
-              },
-              {
-                "term": "anchor bids",
-                "meaning": "Commitments from large institutional investors to buy a set portion of IPO shares before the offer opens to the general public."
-              }
-            ],
-            "frameworks": {},
-            "frameworksMissing": true
-          },
-          "reports": [
-            {
-              "source": "cnbc",
-              "headline": "BlackRock, GIC among investors chasing Indian telecom major Jio's IPO as anchor bids top $26 billion",
-              "url": "https://www.cnbc.com/2026/10/20/jio-ipo-gic-blackrock-.html",
-              "date": "2026-10-20T02:44:35.000Z",
-              "kind": "hard",
-              "summary": "Jio Platforms plans to raise up to $3.2 billion through an IPO, which is India's largest ever in rupee terms, but the second largest in dollar terms.",
-              "summaryV": 3,
-              "ogTried": true,
-              "descTried": true,
-              "image": "https://image.cnbcfm.com/api/v1/image/108435073-1792458285539-gettyimages-2299757574-INDIA_JIO_IPO.jpeg?v=1792458317&w=1920&h=1080"
-            },
-            {
-              "source": "scmp",
-              "headline": "India’s record US$108b Jio IPO tests market faith as Musk rivalry heats up",
-              "url": "https://www.scmp.com/week-asia/economics/article/3371536/indias-record-us108b-jio-ipo-tests-market-faith-musk-rivalry-heats",
-              "date": "2026-10-20T11:43:36.000Z",
-              "kind": "hard",
-              "summary": "The coming launch of India’s largest-ever initial public offering (IPO) will test investor confidence in the country’s leading telecoms operator, Jio Platforms, the digital arm of billionaire Mukesh Ambani’s Reliance Industries.",
-              "summaryV": 3,
-              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/20/092c6b69-66a3-449b-89dd-5886fc6f2df4_d29a0e59.jpg?itok=akbs3U-T&v=1792496612"
-            },
-            {
-              "source": "guardian",
-              "headline": "Billionaire Mukesh Ambani launches India’s biggest-ever IPO",
-              "url": "https://www.theguardian.com/business/2026/oct/20/mukesh-ambani-jio-platforms-ipo-india-stock-market",
-              "date": "2026-10-20T09:53:27.000Z",
-              "kind": "hard",
-              "summary": "Low-cost broadband provider Jio Platforms aims for £81bn valuation when it floats on the stock market on Wednesday",
-              "summaryV": 3,
-              "lede": "Business live – latest updates",
-              "image": "https://i.guim.co.uk/img/media/3ae335b7e0e881c618a8eb3edcc27734c745f17e/510_0_4583_3668/master/4583.jpg?width=700&quality=85&auto=format&fit=max&s=40028a54202fd4434861478cec56b784"
-            },
-            {
-              "source": "bbc",
-              "headline": "Billionaire Mukesh Ambani's Jio launches India's biggest share sale",
-              "url": "https://www.bbc.co.uk/news/articles/ck7vp17z7jv3o",
-              "date": "2026-10-21T05:16:44.000Z",
-              "kind": "hard",
-              "summary": "India's second mega IPO in a month comes despite subdued equity markets and aims to raise $3.2bn.",
-              "summaryV": 3,
-              "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/72d9/live/d85fca80-cd20-11f1-acea-8755f0f28c17.jpg",
-              "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/72d9/live/d85fca80-cd20-11f1-acea-8755f0f28c17.jpg"
-            }
-          ],
-          "image": "https://image.cnbcfm.com/api/v1/image/108435073-1792458285539-gettyimages-2299757574-INDIA_JIO_IPO.jpeg?v=1792458317&w=1920&h=1080",
-          "thread": "taxfz9d",
-          "finChecked": true,
-          "place": {
-            "name": "Mumbai",
-            "country": "India",
-            "lat": 19.08,
-            "lon": 72.88
-          },
-          "priority": 75
-        },
-        {
-          "id": "sn8yypi",
-          "headline": "Housing is flashing warning signs just as the Fed weighs more interest rate hikes",
-          "url": "https://www.cnbc.com/2026/10/20/housing-mortgage-rates-real-estate-federal-reserve.html",
-          "source": "cnbc",
-          "date": "2026-10-20T19:13:46.000Z",
-          "relevance": "medium",
-          "why": "CNBC reports that US housing data worsened further in September while the US Federal Reserve weighs more interest rate hikes. Any further US rate rises could reach India through capital flows, the rupee and demand for Indian services.",
-          "implications": [
-            "Weak US housing combined with higher US rates could signal slower American demand, which may matter for Indian firms that earn much of their revenue from US clients."
-          ],
-          "analysis": {
-            "v": 3,
-            "at": "2026-10-20T19:26:58.251Z",
-            "tier": "quick",
-            "primary": "decoder",
-            "complement": null,
-            "features": [
-              "scheduled",
-              "pending_outcome"
-            ],
-            "exposure": {
-              "level": "low",
-              "reason": "The report gives no direct link to India. Any effect would be indirect, through global capital flows and US demand, and it depends on what the Federal Reserve actually decides."
-            },
-            "horizon": {
-              "value": "months",
-              "reason": "The effect depends on the Federal Reserve's future rate decisions and on how slowly US housing weakness spreads to wider demand."
-            },
-            "confidence": {
-              "level": "low",
-              "reason": "This rests on a single CNBC summary that gives no figures, no named official and no confirmed Federal Reserve decision."
-            },
-            "outlets": 1,
-            "affected": [
-              {
-                "group": "IT & services workers",
-                "direction": "unclear",
-                "what": "US client demand",
-                "effect": "A weaker US economy under higher interest rates could reduce spending by American clients on Indian technology and services firms, though the report does not say so.",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "The Federal Reserve's next interest rate decision and any further US housing data releases",
-                "why": "They would show whether rate hikes are actually going ahead and how far the housing slowdown is spreading.",
-                "when": "",
-                "where": "US Federal Reserve"
-              }
-            ],
-            "context": [
-              "Housing is among the most interest-rate-sensitive parts of the US economy, so weak housing data is often read as a sign that higher rates are slowing activity. The Federal Reserve's decisions also influence global borrowing costs and dollar flows."
-            ],
-            "terms": [
-              {
-                "term": "interest rate hikes",
-                "meaning": "Increases in the central bank's policy rate, which make borrowing more expensive and are used to slow inflation and demand."
-              }
-            ],
-            "frameworks": {
-              "decoder": {
-                "kind": "release",
-                "headline": {
-                  "label": "US housing data deteriorated further",
-                  "value": null,
-                  "unit": "",
-                  "period": "September 2026",
-                  "previous": null,
-                  "previousLabel": "",
-                  "from": "CNBC"
-                },
-                "comparisons": [],
-                "drivers": [],
-                "decision": null
-              }
-            }
-          },
-          "reports": [
-            {
-              "source": "cnbc",
-              "headline": "Housing is flashing warning signs just as the Fed weighs more interest rate hikes",
-              "url": "https://www.cnbc.com/2026/10/20/housing-mortgage-rates-real-estate-federal-reserve.html",
-              "date": "2026-10-20T19:13:46.000Z",
-              "kind": "hard",
-              "summary": "Housing data deteriorated further in September, according to separate reports Tuesday.",
-              "summaryV": 3,
-              "ogTried": true,
-              "descTried": true,
-              "image": "https://image.cnbcfm.com/api/v1/image/108327067-1792519521637-108327067-1782417101819-gettyimages-2283316440-_24a0872_jiglfdso.jpeg?v=1792519640&w=1920&h=1080"
-            }
-          ],
-          "image": "https://image.cnbcfm.com/api/v1/image/108327067-1792519521637-108327067-1782417101819-gettyimages-2283316440-_24a0872_jiglfdso.jpeg?v=1792519640&w=1920&h=1080",
-          "thread": "tpnacn3",
-          "finChecked": true,
-          "place": {
-            "name": "Washington",
-            "country": "United States",
-            "lat": 38.91,
-            "lon": -77.04
-          },
-          "priority": 60
-        },
-        {
-          "id": "sm06p94",
-          "headline": "Treasury yields move lower as investors assess U.S. inflation backdrop",
-          "url": "https://www.cnbc.com/2026/10/19/bonds-treasurys-us-yields.html",
-          "source": "cnbc",
-          "date": "2026-10-19T11:51:37.000Z",
-          "relevance": "medium",
-          "why": "CNBC reports that US Treasury yields fell as investors weigh US inflation and interest rates against geopolitical developments. Lower US yields can influence foreign investment flows into India, but the link to Indian borrowers is indirect.",
-          "implications": [
-            "Lower US yields may make Indian bonds look relatively more attractive to foreign investors, which could support capital inflows and the rupee.",
-            "Indian loan rates follow the Reserve Bank of India's policy rate more closely than US bond moves, so any effect on home loan instalments would be small and slow."
-          ],
-          "analysis": {
-            "v": 3,
-            "at": "2026-10-19T20:47:16.274Z",
-            "tier": "quick",
-            "primary": "pass_through",
-            "complement": null,
-            "features": [
-              "price_move"
-            ],
-            "exposure": {
-              "level": "low",
-              "reason": "The only channel is indirect, through foreign investor flows and Indian bond yields, and the report describes no specific effect on loan rates, deposit rates or other household essentials in India."
-            },
-            "horizon": {
-              "value": "months",
-              "reason": "Any effect would pass through bond markets and then the Reserve Bank of India's rate decisions, which change over months rather than days."
-            },
-            "confidence": {
-              "level": "low",
-              "reason": "This rests on one CNBC summary with no named official source, and the report does not say what is driving the fall in yields."
-            },
-            "outlets": 1,
-            "affected": [
-              {
-                "group": "Borrowers",
-                "direction": "unclear",
-                "what": "loan interest costs",
-                "effect": "Lower US yields could ease Indian bond yields slightly, but loan rates mainly follow Reserve Bank of India policy, so borrowers may notice little change.",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "The next US inflation reading and any change in expectations for US interest rates",
-                "why": "These shape the direction of Treasury yields and therefore global investor flows.",
-                "when": "",
-                "where": "U.S. Bureau of Labor Statistics"
-              },
-              {
-                "what": "The Reserve Bank of India's next decision on its policy interest rate",
-                "why": "This decision sets the main benchmark for Indian bank lending rates.",
-                "when": "",
-                "where": "Reserve Bank of India"
-              }
-            ],
-            "context": [
-              "US Treasury yields act as a global benchmark for the cost of money, so they influence where international investors place funds. Indian bond yields are shaped mainly by domestic inflation, government borrowing and central bank policy."
-            ],
-            "terms": [
-              {
-                "term": "Treasury yields",
-                "meaning": "The return investors earn for lending to the US government by buying its bonds, which is widely used as a benchmark for global interest rates."
-              }
-            ],
-            "frameworks": {
-              "pass_through": {
-                "driver": {
-                  "variable": "US Treasury yields",
-                  "direction": "down",
-                  "size": ""
-                },
-                "product": "loan EMIs",
-                "rungs": [
-                  {
-                    "stage": "US Treasury yields → global investor flows",
-                    "pass": "partial",
-                    "damper": "Investors also weigh inflation, geopolitical risk and local conditions, so lower US yields do not automatically send money to India.",
-                    "lag": "days"
-                  },
-                  {
-                    "stage": "Foreign flows → Indian government bond yields",
-                    "pass": "partial",
-                    "damper": "Indian yields respond mainly to domestic inflation, government borrowing and central bank policy, which can outweigh moves in US yields.",
-                    "lag": "weeks"
-                  },
-                  {
-                    "stage": "Indian bond yields → bank lending rates",
-                    "pass": "partial",
-                    "damper": "Most loan rates are tied to the Reserve Bank of India's policy rate, so they change mainly after its decisions rather than bond market moves.",
-                    "lag": "months"
-                  }
-                ],
-                "end_user": {
-                  "group": "Borrowers",
-                  "effect": "Borrowers are unlikely to notice a direct change in loan instalments from this move alone. Any effect would depend on Reserve Bank of India decisions and could take months."
-                }
-              }
-            }
-          },
-          "reports": [
-            {
-              "source": "cnbc",
-              "headline": "Treasury yields move lower as investors assess U.S. inflation backdrop",
-              "url": "https://www.cnbc.com/2026/10/19/bonds-treasurys-us-yields.html",
-              "date": "2026-10-19T11:51:37.000Z",
-              "kind": "hard",
-              "summary": "Treasury yields fell as investors weigh the domestic inflation and interest rate backdrop against broader geopolitical developments.",
-              "summaryV": 3,
-              "ogTried": true,
-              "descTried": true,
-              "image": "https://image.cnbcfm.com/api/v1/image/108320322-1781190016576-gettyimages-2281074249-anotherday224778328_rfo9fpyj.jpeg?v=1782307950&w=1920&h=1080"
-            }
-          ],
-          "image": "https://image.cnbcfm.com/api/v1/image/108320322-1781190016576-gettyimages-2281074249-anotherday224778328_rfo9fpyj.jpeg?v=1782307950&w=1920&h=1080",
-          "thread": "t1rzjgok",
-          "finChecked": true,
-          "placeTried": true,
-          "priority": 60
-        },
-        {
-          "id": "s1wdkvmz",
-          "headline": "India’s Finance Minister blames easy exits and excess liquidity for equity market's underperformance",
-          "url": "https://www.cnbc.com/2026/10/18/india-ai-nifty50-sensex-investors.html",
-          "source": "cnbc",
-          "date": "2026-10-18T23:00:01.000Z",
-          "relevance": "medium",
-          "why": "CNBC reports that India's Finance Minister blames easy exits and excess liquidity for the equity market's underperformance. She also said continued capital outflows are among the biggest risks facing India in 2027.",
-          "implications": [
-            "The reference to easy exits suggests that investors can leave Indian markets quickly, so sustained foreign selling could weigh on share prices and put pressure on the rupee.",
-            "Because the warning comes from the finance minister, it may show that the government treats the stability of foreign investment flows as a policy concern for 2027."
-          ],
-          "analysis": {
-            "v": 3,
-            "at": "2026-10-20T08:47:31.551Z",
-            "tier": "quick",
-            "primary": "impact_chain",
-            "complement": null,
-            "features": [],
-            "exposure": {
-              "level": "low",
-              "reason": "The reports describe a risk to equity markets and capital flows, not a direct change in household prices. The channel to Indians is indirect, through market-linked savings and financing conditions."
-            },
-            "horizon": {
-              "value": "months",
-              "reason": "The minister framed capital outflows as a risk for 2027, so any effect would build gradually rather than appear within weeks."
-            },
-            "confidence": {
-              "level": "medium",
-              "reason": "This rests on a single outlet, CNBC, but it attributes the remarks to India's Finance Minister; no second outlet or detailed data is provided."
-            },
-            "outlets": 1,
-            "affected": [
-              {
-                "group": "Depositors & savers",
-                "direction": "unclear",
-                "what": "value of market-linked savings",
-                "effect": "Savings held in shares or equity funds could lose value if outflows weaken the market, although the reports do not say how large any effect would be.",
-                "basis": "inferred"
-              },
-              {
-                "group": "Government finances",
-                "direction": "unclear",
-                "what": "reliance on foreign capital",
-                "effect": "Persistent outflows could make it harder to attract the foreign money that supports India's external financing, though the reports do not describe any such effect.",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "Further official comments or data on foreign investor outflows from Indian equity markets",
-                "why": "It would show whether the minister's concern is reflected in actual selling by foreign investors.",
-                "when": "",
-                "where": "Ministry of Finance"
-              }
-            ],
-            "context": [],
-            "terms": [
-              {
-                "term": "capital outflows",
-                "meaning": "Money leaving a country when investors sell local assets, such as shares and bonds, and move the proceeds abroad."
-              }
-            ],
-            "frameworks": {
-              "impact_chain": {
-                "chain": [
-                  {
-                    "step": "Minister warns about capital outflows",
-                    "detail": "India's Finance Minister said continued capital outflows are one of the biggest risks for the country in 2027, according to CNBC.",
-                    "basis": "reported"
-                  },
-                  {
-                    "step": "Easy exits and excess liquidity blamed",
-                    "detail": "She attributed the equity market's underperformance to easy exits and excess liquidity, which suggests investors can withdraw quickly and weaken market sentiment.",
-                    "basis": "reported"
-                  },
-                  {
-                    "step": "Savings and financing could be affected",
-                    "detail": "Weaker equity markets could reduce the value of market-linked savings and may make it more expensive for Indian companies to raise money.",
-                    "basis": "inferred"
-                  }
-                ],
-                "breaks_if": "The effect would not reach households if domestic investors absorb any foreign selling and outflows slow, leaving market prices and financing conditions broadly stable."
-              }
-            }
-          },
-          "reports": [
-            {
-              "source": "cnbc",
-              "headline": "India’s Finance Minister blames easy exits and excess liquidity for equity market's underperformance",
-              "url": "https://www.cnbc.com/2026/10/18/india-ai-nifty50-sensex-investors.html",
-              "date": "2026-10-18T23:00:01.000Z",
-              "kind": "hard",
-              "summary": "India's finance minister said that continued capital outflows are one of the biggest risks for the country in 2027.",
-              "summaryV": 3,
-              "ogTried": true,
-              "descTried": true,
-              "image": "https://image.cnbcfm.com/api/v1/image/108419553-1792155192930-gettyimages-2299704856-THAILAND_IMF_WORLD_BANK.jpeg?v=1792155212&w=1920&h=1080"
-            }
-          ],
-          "image": "https://image.cnbcfm.com/api/v1/image/108419553-1792155192930-gettyimages-2299704856-THAILAND_IMF_WORLD_BANK.jpeg?v=1792155212&w=1920&h=1080",
-          "thread": "t1jm9880",
-          "finChecked": true,
-          "place": {
-            "name": "Mumbai",
-            "country": "India",
-            "lat": 19.08,
-            "lon": 72.88
-          },
-          "priority": 60
-        },
-        {
-          "id": "symlylw",
-          "headline": "Analysis: Why a $2 trillion deficit and 5% Treasury yields are becoming America's biggest economic challenge",
-          "url": "https://www.cnbc.com/2026/10/15/treasury-yields-deficit-national-debt-ai.html",
-          "source": "cnbc",
-          "date": "2026-10-16T22:33:05.000Z",
-          "relevance": "medium",
-          "why": "",
-          "implications": [],
-          "reports": [
-            {
-              "source": "cnbc",
-              "headline": "Analysis: Why a $2 trillion deficit and 5% Treasury yields are becoming America's biggest economic challenge",
-              "url": "https://www.cnbc.com/2026/10/15/treasury-yields-deficit-national-debt-ai.html",
-              "date": "2026-10-16T22:33:05.000Z",
-              "kind": "feature",
-              "summary": "Treasury yields above 5% are raising borrowing costs for households and the federal government, highlighting the challenge of financing $2 trillion deficits.",
-              "summaryV": 3,
-              "ogTried": true,
-              "descTried": true,
-              "image": "https://image.cnbcfm.com/api/v1/image/108364024-17895883942026-09-16t194825z_342271609_rc2iknaojij8_rtrmadp_0_usa-fed.jpeg?v=1789588428&w=1920&h=1080"
-            }
-          ],
-          "image": "https://image.cnbcfm.com/api/v1/image/108364024-17895883942026-09-16t194825z_342271609_rc2iknaojij8_rtrmadp_0_usa-fed.jpeg?v=1789588428&w=1920&h=1080",
-          "thread": "t1rzjgok",
-          "finChecked": true,
-          "placeTried": true,
-          "priority": 25
-        },
-        {
-          "id": "smmgdl7",
-          "headline": "CNBC Daily Open: Warsh holds cards close on Fed policy, but inflation numbers may tip his hand",
-          "url": "https://www.cnbc.com/2026/10/16/cnbc-daily-open-warsh-holds-cards-close-on-fed-policy-but-inflation-numbers-may-tip-his-hand.html",
-          "source": "cnbc",
-          "date": "2026-10-16T08:31:55.000Z",
-          "relevance": "medium",
-          "why": "Federal Reserve Chairman Kevin Warsh gave no signal on another rate hike before the Fed's October meeting. US rate decisions shape global capital flows, the rupee and the room the Reserve Bank of India has on interest rates.",
-          "implications": [
-            "The New York Times reports that Warsh did nothing to convey urgency about raising rates, which could ease fears of an imminent US hike.",
-            "CNBC reports that Warsh praised a 'synchronous tightening' by central banks, suggesting he sees global rate rises as sharing the burden of fighting inflation.",
-            "CNBC notes that upcoming US inflation figures may reveal the Fed's direction, so market expectations could shift sharply when those numbers are released."
-          ],
-          "analysis": {
-            "v": 3,
-            "at": "2026-10-22T05:12:50.054Z",
-            "tier": "standard",
-            "primary": "decoder",
-            "complement": null,
-            "features": [
-              "scheduled",
-              "pending_outcome"
-            ],
-            "exposure": {
-              "level": "medium",
-              "reason": "Fed policy reaches India through capital flows and the rupee exchange rate, which affect import costs and financial markets, but the reports describe no direct effect on Indian households."
-            },
-            "horizon": {
-              "value": "weeks",
-              "reason": "The Fed meets later in October, and its decision there would set the near-term direction for US rates and global capital flows."
-            },
-            "confidence": {
-              "level": "medium",
-              "reason": "Warsh's on-record remarks are reported by CNBC and the New York Times, but only two outlets cover them and the Fed's October decision is unknown."
-            },
-            "outlets": 2,
-            "affected": [
-              {
-                "group": "Importers & traders",
-                "direction": "unclear",
-                "what": "rupee cost of imports",
-                "effect": "If the Fed raises rates and the rupee weakens as capital leaves India, importers could pay more in rupees for dollar-priced goods.",
-                "basis": "inferred"
-              },
-              {
-                "group": "Students abroad",
-                "direction": "unclear",
-                "what": "cost of fees and living",
-                "effect": "A weaker rupee following a US rate hike could raise the rupee cost of tuition and living expenses for Indian students in the United States.",
-                "basis": "inferred"
-              },
-              {
-                "group": "Borrowers",
-                "direction": "unclear",
-                "what": "domestic interest rate outlook",
-                "effect": "Continued Fed tightening could narrow the Reserve Bank of India's room to cut rates, which may affect loan EMIs for Indian households.",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "The Federal Reserve's interest rate decision at its October meeting",
-                "why": "It will show whether the Fed raises rates again or pauses, shaping the dollar and capital flows to India.",
-                "when": "October 2026",
-                "where": "US Federal Reserve"
-              },
-              {
-                "what": "The release of the latest US inflation figures before the Fed meeting",
-                "why": "CNBC notes these numbers may tip Warsh's hand on whether another rate hike is needed.",
-                "when": "",
-                "where": ""
-              }
-            ],
-            "context": [
-              "Higher US interest rates tend to strengthen the dollar and draw investment away from emerging markets such as India, putting pressure on the rupee.",
-              "India imports most of its crude oil, which is priced in dollars, so a weaker rupee can raise the domestic cost of fuel and other imports.",
-              "The Reserve Bank of India sets its own repo rate but watches Federal Reserve policy closely because large rate gaps can affect capital flows and the rupee."
-            ],
-            "terms": [
-              {
-                "term": "synchronous tightening",
-                "meaning": "Several central banks raising interest rates or restricting credit at roughly the same time to bring down inflation."
-              },
-              {
-                "term": "Fed",
-                "meaning": "The US Federal Reserve, the central bank that sets US interest rates and whose decisions influence financial markets worldwide."
-              }
-            ],
-            "frameworks": {
-              "decoder": {
-                "kind": "decision",
-                "headline": null,
-                "comparisons": [],
-                "drivers": [
-                  {
-                    "name": "Global synchronous tightening",
-                    "direction": "mixed",
-                    "how": "CNBC reports that Warsh praised a 'synchronous tightening' by central banks in the fight against inflation, without saying whether it reduces the need for US hikes."
-                  },
-                  {
-                    "name": "AI shock to economy",
-                    "direction": "mixed",
-                    "how": "The New York Times reports that Warsh vowed to tame inflation as artificial intelligence delivers a 'shock' to the economy."
-                  }
-                ],
-                "decision": {
-                  "action": "other",
-                  "size": "No rate change announced; no signal given on another hike…",
-                  "stance": "Warsh stuck to his pledge not to give guidance on the path of interest rates and conveyed no urgency to raise them at the October meeting, according to the New York Times."
-                }
-              }
-            }
-          },
-          "reports": [
-            {
-              "source": "cnbc",
-              "headline": "CNBC Daily Open: Warsh holds cards close on Fed policy, but inflation numbers may tip his hand",
-              "url": "https://www.cnbc.com/2026/10/16/cnbc-daily-open-warsh-holds-cards-close-on-fed-policy-but-inflation-numbers-may-tip-his-hand.html",
-              "date": "2026-10-16T08:31:55.000Z",
-              "kind": "hard",
-              "summary": "Kevin Warsh offered markets few clues in his final public appearance before the central bank's October meeting.",
-              "summaryV": 3,
-              "ogTried": true,
-              "descTried": true,
-              "image": "https://image.cnbcfm.com/api/v1/image/108363997-1789587698127-108363997-1789586467261-gettyimages-2295047002-WARSH_FOMC_NYSE.jpeg?v=1789587776&w=1920&h=1080"
-            },
-            {
-              "source": "cnbc",
-              "headline": "Fed's Warsh withholds rate signal, praises recent global tightening",
-              "url": "https://www.cnbc.com/2026/10/16/feds-warsh-says-ai-development-path-will-be-very-bumpy-.html",
-              "date": "2026-10-16T12:36:00.000Z",
-              "kind": "hard",
-              "summary": "Warsh refrained from signaling another interest rate hike this month, pointed to a \"synchronous tightening\" by central banks in the fight against inflation.",
-              "summaryV": 3,
-              "ogTried": true,
-              "descTried": true,
-              "image": "https://image.cnbcfm.com/api/v1/image/108419543-1792154224580-108419543-1792154011425-gettyimages-2299896164-AA_16102026_2996197.jpg?v=1792154235&w=1920&h=1080"
-            },
-            {
-              "source": "nyt",
-              "headline": "Warsh Vows to Tame Inflation as A.I. Delivers ‘Shock’ to Economy",
-              "url": "https://www.nytimes.com/2026/10/16/business/warsh-fed-imf-bangkok.html",
-              "date": "2026-10-16T18:06:41.000Z",
-              "kind": "hard",
-              "summary": "The Federal Reserve chairman stuck to his pledge to avoid providing guidance about the path forward for interest rates, but did nothing to convey an urgency to raise them later this month.",
-              "summaryV": 3,
-              "image": "https://static01.nyt.com/images/2026/10/16/multimedia/16biz-warsh-vbgk/16biz-warsh-vbgk-mediumSquareAt3X.jpg"
-            }
-          ],
-          "image": "https://image.cnbcfm.com/api/v1/image/108363997-1789587698127-108363997-1789586467261-gettyimages-2295047002-WARSH_FOMC_NYSE.jpeg?v=1789587776&w=1920&h=1080",
-          "thread": "tpnacn3",
-          "finChecked": true,
-          "place": {
-            "name": "Washington",
-            "country": "United States",
-            "lat": 38.91,
-            "lon": -77.04
-          },
-          "priority": 65
-        },
-        {
-          "id": "satjp3g",
-          "headline": "Analysis: Everyone expects the Fed to hold rates in October. Kevin Warsh could surprise us all",
-          "url": "https://www.cnbc.com/2026/10/16/kevin-warsh-fed-october-rate-hike-interest-rates-markets.html",
-          "source": "cnbc",
-          "date": "2026-10-16T16:27:31.000Z",
-          "relevance": "medium",
-          "why": "",
-          "implications": [],
-          "reports": [
-            {
-              "source": "cnbc",
-              "headline": "Analysis: Everyone expects the Fed to hold rates in October. Kevin Warsh could surprise us all",
-              "url": "https://www.cnbc.com/2026/10/16/kevin-warsh-fed-october-rate-hike-interest-rates-markets.html",
-              "date": "2026-10-16T16:27:31.000Z",
-              "kind": "feature",
-              "summary": "Investors expect the Fed to pause rate hikes in October, but Kevin Warsh's rejection of traditional communications practices and continued concern about inflation leave the decision uncertain.",
-              "summaryV": 3,
-              "ogTried": true,
-              "descTried": true,
-              "image": "https://image.cnbcfm.com/api/v1/image/108363914-1789584457539-108363914-17895839902026-09-16t183652z_1716047873_rc2iknar714p_rtrmadp_0_usa-fed.jpeg?v=1789584478&w=1920&h=1080"
-            }
-          ],
-          "image": "https://image.cnbcfm.com/api/v1/image/108363914-1789584457539-108363914-17895839902026-09-16t183652z_1716047873_rc2iknar714p_rtrmadp_0_usa-fed.jpeg?v=1789584478&w=1920&h=1080",
-          "thread": "tpnacn3",
-          "finChecked": true,
-          "place": {
-            "name": "Washington",
-            "country": "United States",
-            "lat": 38.91,
-            "lon": -77.04
-          },
-          "priority": 25
-        },
-        {
-          "id": "sz88zl8",
-          "headline": "When Will the Fed Move on Rates?",
-          "url": "https://www.nytimes.com/2026/10/16/business/dealbook/fed-rates-warsh-inflation.html",
-          "source": "nyt",
-          "date": "2026-10-16T12:00:34.000Z",
-          "relevance": "medium",
-          "image": "https://static01.nyt.com/images/2026/10/16/multimedia/16db-warsh-phjg/16db-warsh-phjg-mediumSquareAt3X.jpg",
-          "why": "",
-          "implications": [],
-          "reports": [
-            {
-              "source": "nyt",
-              "headline": "When Will the Fed Move on Rates?",
-              "url": "https://www.nytimes.com/2026/10/16/business/dealbook/fed-rates-warsh-inflation.html",
-              "date": "2026-10-16T12:00:34.000Z",
-              "kind": "feature",
-              "summary": "Kevin Warsh, the central bank’s chairman, suggested he wouldn’t push to raise borrowing rates this month. But persistent inflation may force the Fed’s hand.",
-              "summaryV": 3,
-              "image": "https://static01.nyt.com/images/2026/10/16/multimedia/16db-warsh-phjg/16db-warsh-phjg-mediumSquareAt3X.jpg"
-            }
-          ],
-          "thread": "tpnacn3",
-          "finChecked": true,
-          "place": {
-            "name": "Washington",
-            "country": "United States",
-            "lat": 38.91,
-            "lon": -77.04
-          },
-          "priority": 25
-        },
-        {
-          "id": "s1mv2u3m",
-          "headline": "China says only joint action, not exchange rates alone, can address global imbalances",
-          "url": "https://www.scmp.com/economy/global-economy/article/3371116/china-says-only-joint-action-not-exchange-rates-alone-can-address-global-imbalances",
-          "source": "scmp",
-          "date": "2026-10-16T06:13:13.000Z",
-          "relevance": "medium",
-          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/16/ca5543e0-4ab6-43de-843a-e1b6e1ee6b4a_528a2eab.jpg?itok=3hYDZXml&v=1792131192",
-          "why": "China's central bank chief said exchange-rate changes alone cannot fix global imbalances and urged surplus and deficit economies to share responsibility. He also pledged to promote yuan bonds as collateral, which could slowly widen the yuan's global role.",
-          "implications": [
-            "By rejecting exchange rates as the only remedy, China signals resistance to pressure for a stronger yuan, which affects the price of Chinese goods that Indian firms import.",
-            "If lenders worldwide accept yuan bonds as collateral, the yuan may become easier to use in cross-border finance, which could eventually influence how Indian firms settle trade with China."
-          ],
-          "analysis": {
-            "v": 3,
-            "at": "2026-10-22T21:55:18.235Z",
-            "tier": "quick",
-            "primary": "impact_chain",
-            "complement": null,
-            "features": [],
-            "exposure": {
-              "level": "low",
-              "reason": "The reports describe only a statement and a pledge, with no direct mechanism reaching Indian households or industries; any effect would be indirect, through trade with China and the yuan's use."
-            },
-            "horizon": {
-              "value": "years",
-              "reason": "Changes in which currencies and bonds are widely accepted as collateral happen gradually, so any effect on Indian trade or finance would take years."
-            },
-            "confidence": {
-              "level": "medium",
-              "reason": "The South China Morning Post quotes the central bank chief on the record, but the report is a single outlet and the pledge has no reported policy steps."
-            },
-            "outlets": 1,
-            "affected": [
-              {
-                "group": "Importers & traders",
-                "direction": "unclear",
-                "what": "yuan settlement options",
-                "effect": "Wider global acceptance of yuan bonds could make yuan-based settlement more common in trade with China, which may change currency costs for Indian importers over time.",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "Concrete Chinese steps to have yuan-denominated bonds accepted as collateral by foreign lenders or clearing institutions",
-                "why": "It would show whether the pledge is turning into practical changes in global use of the yuan.",
-                "when": "",
-                "where": "People's Bank of China"
-              }
-            ],
-            "context": [
-              "India runs a large trade deficit with China and imports many Chinese machinery, electronics and chemical inputs, so Chinese currency and trade policy matters to Indian manufacturers.",
-              "Global imbalances refer to persistent trade surpluses in some countries and deficits in others, a recurring theme in international economic talks."
-            ],
-            "terms": [
-              {
-                "term": "eligible collateral",
-                "meaning": "Assets that lenders or central banks accept as security when they lend money, so wider acceptance makes an asset more useful in financial markets."
-              }
-            ],
-            "frameworks": {
-              "impact_chain": {
-                "chain": [
-                  {
-                    "step": "China rejects exchange-rate-only fix",
-                    "detail": "China's central bank chief said exchange-rate adjustments alone cannot resolve global imbalances and urged both surplus and deficit economies to share responsibility. This frames China's stance on currency policy.",
-                    "basis": "reported"
-                  },
-                  {
-                    "step": "Pledge to promote yuan bonds",
-                    "detail": "He pledged to promote yuan-denominated bonds as eligible collateral widely recognised and accepted globally. This aims to raise the yuan's role in international finance.",
-                    "basis": "reported"
-                  },
-                  {
-                    "step": "Possible shift in yuan use",
-                    "detail": "If foreign lenders accept yuan bonds more widely, yuan-based dealings could grow, which may eventually change how Indian firms pay for imports from China.",
-                    "basis": "inferred"
-                  }
-                ],
-                "breaks_if": "Foreign lenders and institutions do not widen their acceptance of yuan bonds as collateral, leaving the pledge as a statement with no change in global currency use."
-              }
-            }
-          },
-          "reports": [
-            {
-              "source": "scmp",
-              "headline": "China says only joint action, not exchange rates alone, can address global imbalances",
-              "url": "https://www.scmp.com/economy/global-economy/article/3371116/china-says-only-joint-action-not-exchange-rates-alone-can-address-global-imbalances",
-              "date": "2026-10-16T06:13:13.000Z",
-              "kind": "hard",
-              "summary": "China’s central bank chief has said exchange-rate adjustments alone cannot resolve global economic imbalances, urging surplus and deficit economies to share responsibility for addressing them. He also pledged to promote yuan-denominated bonds as “eligible collateral widely recognised and accepted globally”.",
-              "summaryV": 3,
-              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/16/ca5543e0-4ab6-43de-843a-e1b6e1ee6b4a_528a2eab.jpg?itok=3hYDZXml&v=1792131192"
-            }
-          ],
-          "thread": "t1aiqdnc",
-          "finChecked": true,
-          "priority": 60
-        },
-        {
-          "id": "s1iijppa",
-          "headline": "India's rupee forecast to weaken toward 100-per-dollar level even as RBI pushes back",
-          "url": "https://www.cnbc.com/2026/10/16/india-rupee-rbi-dollar-iran-war.html",
-          "source": "cnbc",
-          "date": "2026-10-16T00:54:25.000Z",
-          "relevance": "medium",
-          "why": "CNBC reports that forecasters expect the rupee to weaken toward 100 per dollar even though the Reserve Bank of India (RBI) is resisting. Recent RBI moves lifted the rupee from 96.79 to the 95 level. A weaker rupee raises India's import costs.",
-          "implications": [
-            "A weaker rupee raises the rupee cost of dollar-priced imports such as crude oil. This could increase costs for refiners and importers even if global prices do not change.",
-            "The recent recovery shows that RBI action can slow a fall in the rupee. The forecast suggests that this support may not fully offset the underlying pressure on the currency."
-          ],
-          "analysis": {
-            "v": 3,
-            "at": "2026-10-22T21:55:18.235Z",
-            "tier": "quick",
-            "primary": "pass_through",
-            "complement": null,
-            "features": [
-              "price_move"
-            ],
-            "exposure": {
-              "level": "high",
-              "reason": "A weaker rupee raises the rupee cost of imported crude oil, a top Indian import that feeds into petrol and diesel. It also raises the cost of other dollar-priced imports and overseas payments."
-            },
-            "horizon": {
-              "value": "months",
-              "reason": "The report gives no date for the forecast, and currency moves reach pump prices and import bills only gradually, through contracts, inventories and the timing of price revisions."
-            },
-            "confidence": {
-              "level": "low",
-              "reason": "This rests on a single CNBC report, the forecast is an opinion rather than an outcome, and no on-record RBI statement is quoted in the material provided."
-            },
-            "outlets": 1,
-            "affected": [
-              {
-                "group": "Importers & traders",
-                "direction": "up",
-                "what": "import costs in rupees",
-                "effect": "If the rupee weakens toward 100 per dollar, goods and inputs priced in dollars would cost more rupees to buy, which could squeeze margins or raise selling prices.",
-                "basis": "inferred"
-              },
-              {
-                "group": "Fuel & LPG users",
-                "direction": "up",
-                "what": "fuel price pressure",
-                "effect": "Crude oil is bought in dollars, so a weaker rupee could raise refiners' costs and add pressure on petrol and diesel prices over time.",
-                "basis": "inferred"
-              },
-              {
-                "group": "Students abroad",
-                "direction": "up",
-                "what": "cost of fees and living",
-                "effect": "Families sending money abroad for fees and living costs may need more rupees for each dollar if the currency weakens further.",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "Whether the rupee holds around the 95 level or slides back toward the earlier 96.79 mark",
-                "why": "It would show whether the RBI's recent moves are strong enough to counter the forecast weakness.",
-                "when": "",
-                "where": "Reserve Bank of India"
-              }
-            ],
-            "context": [
-              "India imports most of its crude oil and pays for it in dollars, so the exchange rate matters for fuel costs. The RBI often intervenes in the currency market to smooth sharp moves, but it does not usually target a fixed level."
-            ],
-            "terms": [],
-            "frameworks": {
-              "pass_through": {
-                "driver": {
-                  "variable": "Rupee exchange rate against the US dollar",
-                  "direction": "down",
-                  "size": "forecast to weaken toward 100 per dollar"
-                },
-                "product": "petrol & diesel",
-                "rungs": [
-                  {
-                    "stage": "Weaker rupee → higher rupee cost of imported crude",
-                    "pass": "likely",
-                    "damper": "Crude is priced in dollars, so a weaker rupee raises its rupee cost directly, but refiners buy under existing contracts and hold inventory, which delays the full effect.",
-                    "lag": "weeks"
-                  },
-                  {
-                    "stage": "Refiners' higher costs → retail petrol and diesel prices",
-                    "pass": "partial",
-                    "damper": "Oil companies do not always revise pump prices promptly, and taxes make up a large share of the pump price, so cost increases may be absorbed or spread out.",
-                    "lag": "weeks"
-                  },
-                  {
-                    "stage": "Fuel prices → transport and goods costs",
-                    "pass": "unclear",
-                    "damper": "Whether higher fuel costs reach consumer prices depends on how much transporters and sellers can pass on, which the reports do not address.",
-                    "lag": "months"
-                  }
-                ],
-                "end_user": {
-                  "group": "Fuel & LPG users",
-                  "effect": "If the rupee weakens as forecast, motorists and transporters may eventually see upward pressure on petrol and diesel prices. The timing and size are uncertain because pump prices adjust slowly."
-                }
-              }
-            }
-          },
-          "reports": [
-            {
-              "source": "cnbc",
-              "headline": "India's rupee forecast to weaken toward 100-per-dollar level even as RBI pushes back",
-              "url": "https://www.cnbc.com/2026/10/16/india-rupee-rbi-dollar-iran-war.html",
-              "date": "2026-10-16T00:54:25.000Z",
-              "kind": "hard",
-              "summary": "The RBI's latest moves have helped the rupee recover from 96.79 rupees per dollar to the 95-level over recent days.",
-              "summaryV": 3,
-              "ogTried": true,
-              "descTried": true,
-              "image": "https://image.cnbcfm.com/api/v1/image/108407418-1791962222103-gettyimages-2275894808-AFP_B2ZU48H.jpeg?v=1791962252&w=1920&h=1080"
-            }
-          ],
-          "image": "https://image.cnbcfm.com/api/v1/image/108407418-1791962222103-gettyimages-2275894808-AFP_B2ZU48H.jpeg?v=1791962252&w=1920&h=1080",
-          "thread": "t1if9243",
-          "finChecked": true,
-          "priority": 80
-        },
-        {
-          "id": "spli7hm",
-          "headline": "PBOC adds most gold in three years amid China pivot from US dollar",
-          "url": "https://www.scmp.com/plus/business/commodities/article/3370735/pboc-adds-most-gold-three-years-amid-china-pivot-us-dollar",
-          "source": "scmp",
-          "date": "2026-10-13T09:40:58.000Z",
-          "relevance": "medium",
-          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/13/52d39dde-b1ca-489c-a358-fa6814e03695_457c82d7.jpg?itok=uj3BTRSW&v=1791884447",
-          "why": "China's central bank bought the most gold in three years, and sustained buying could influence global gold prices that shape India's large gold import bill.",
-          "implications": [
-            "The PBOC added the most gold in three years, buying on a price dip.",
-            "Continued central bank demand could support gold prices that Indian buyers pay."
-          ],
-          "reports": [
-            {
-              "source": "scmp",
-              "headline": "PBOC adds most gold in three years amid China pivot from US dollar",
-              "url": "https://www.scmp.com/plus/business/commodities/article/3370735/pboc-adds-most-gold-three-years-amid-china-pivot-us-dollar",
-              "date": "2026-10-13T09:40:58.000Z",
-              "kind": "hard",
-              "summary": "China’s central bank boosted gold holdings by the most in three years last month, taking advantage of a dip in prices to further pare its exposure to US dollar assets amid tensions with Washington.",
-              "summaryV": 3,
-              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/13/52d39dde-b1ca-489c-a358-fa6814e03695_457c82d7.jpg?itok=uj3BTRSW&v=1791884447"
-            }
-          ],
-          "thread": "ttjprot",
-          "analysis": {
-            "v": 2,
-            "at": "2026-10-13T20:21:26.595Z",
-            "tier": "quick",
-            "primary": "impact_chain",
-            "complement": null,
-            "features": [],
-            "exposure": {
-              "level": "medium",
-              "reason": "Gold is a major Indian import, but any price effect is inferred."
-            },
-            "horizon": {
-              "value": "months",
-              "reason": "Monthly reserve changes build up gradually."
-            },
-            "confidence": {
-              "level": "low",
-              "reason": "Single outlet report."
-            },
-            "affected": [
-              {
-                "group": "Importers & traders",
-                "direction": "unclear",
-                "what": "gold import costs",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "Next monthly PBOC gold reserve figures",
-                "when": "",
-                "where": "People's Bank of China"
-              }
-            ],
-            "frameworks": {
-              "impact_chain": {
-                "chain": [
-                  {
-                    "step": "PBOC adds most gold",
-                    "detail": "Largest monthly gold addition in three years, bought on a price dip.",
-                    "basis": "reported"
-                  },
-                  {
-                    "step": "China pares dollar exposure",
-                    "detail": "Shift away from US dollar assets amid tensions with Washington.",
-                    "basis": "reported"
-                  },
-                  {
-                    "step": "Gold prices may firm",
-                    "detail": "Sustained central bank demand could support gold prices India imports at.",
-                    "basis": "inferred"
-                  }
-                ],
-                "breaks_if": "PBOC slows purchases or other factors push gold prices lower."
-              }
-            }
-          },
-          "finChecked": true,
-          "priority": 60
-        },
-        {
-          "id": "sfsafpw",
-          "headline": "The Forces Driving Up Bond Yields Take a Troubling Turn",
-          "url": "https://www.nytimes.com/2026/10/13/business/term-premium-bond-yields.html",
-          "source": "nyt",
-          "date": "2026-10-13T09:02:15.000Z",
-          "relevance": "medium",
-          "why": "",
-          "implications": [],
-          "reports": [
-            {
-              "source": "nyt",
-              "headline": "The Forces Driving Up Bond Yields Take a Troubling Turn",
-              "url": "https://www.nytimes.com/2026/10/13/business/term-premium-bond-yields.html",
-              "date": "2026-10-13T09:02:15.000Z",
-              "kind": "feature",
-              "summary": "Some analysts say investors are demanding a higher “term premium” to buy government debt, reflecting growing worries about debt levels and deficits.",
-              "summaryV": 3,
-              "ogTried": true,
-              "descTried": true
-            }
-          ],
-          "thread": "t12s750z",
-          "finChecked": true,
-          "priority": 25
-        },
-        {
-          "id": "sf3cdny",
-          "headline": "Threat of AI share crash puts world financial stability at risk, says IMF",
-          "url": "https://www.theguardian.com/business/2026/oct/13/ai-share-crash-risk-global-imf-debt-corrowing-cyber-attacks",
-          "source": "guardian",
-          "date": "2026-10-13T03:15:12.000Z",
-          "relevance": "medium",
-          "image": "https://i.guim.co.uk/img/media/e66d4b83821641865a2b61c557a735880c9734e0/936_0_4064_3251/master/4064.jpg?width=700&quality=85&auto=format&fit=max&s=54cc0243baaf87c3509db8f8c1106bd3",
-          "why": "The IMF warns of an AI share crash and possible disorderly bond-yield spikes. These shocks could ripple into Indian borrowing costs and markets.",
-          "implications": [
-            "The IMF says high AI valuations and debt put world financial stability at risk.",
-            "Government bond market risks have worsened, and yields could jump sharply and disorderly.",
-            "A global yield spike could raise borrowing costs for Indian government and households."
-          ],
-          "reports": [
-            {
-              "source": "guardian",
-              "headline": "Threat of AI share crash puts world financial stability at risk, says IMF",
-              "url": "https://www.theguardian.com/business/2026/oct/13/ai-share-crash-risk-global-imf-debt-corrowing-cyber-attacks",
-              "date": "2026-10-13T03:15:12.000Z",
-              "kind": "hard",
-              "summary": "High valuations and debt put sector in danger, while fund also warns on government borrowing and cyber-attacks",
-              "summaryV": 3,
-              "lede": "The threat of an AI share price crash rippling out across global markets is putting world financial stability at risk, the International Monetary fund has warned.",
-              "image": "https://i.guim.co.uk/img/media/e66d4b83821641865a2b61c557a735880c9734e0/936_0_4064_3251/master/4064.jpg?width=700&quality=85&auto=format&fit=max&s=54cc0243baaf87c3509db8f8c1106bd3"
-            },
-            {
-              "source": "cnbc",
-              "headline": "IMF warns bond yields could see a 'disorderly' spike as debt, inflation risks worsen",
-              "url": "https://www.cnbc.com/2026/10/13/treasury-yields-imf-debt-inflation-.html",
-              "date": "2026-10-13T03:19:43.000Z",
-              "kind": "hard",
-              "summary": "The IMF says risks in the government bond market have worsened and that yields could jump sharply and disorderly.",
-              "summaryV": 3
-            }
-          ],
-          "thread": "t17jq34i",
-          "analysis": {
-            "v": 2,
-            "at": "2026-10-13T20:22:31.170Z",
-            "tier": "standard",
-            "primary": "impact_chain",
-            "complement": null,
-            "features": [],
-            "exposure": {
-              "level": "medium",
-              "reason": "Could affect loan rates via global markets; India link is not reported."
-            },
-            "horizon": {
-              "value": "months",
-              "reason": "Risks flagged as worsening, with no set trigger date."
-            },
-            "confidence": {
-              "level": "medium",
-              "reason": "Two outlets citing IMF warnings on record."
-            },
-            "affected": [
-              {
-                "group": "Borrowers",
-                "direction": "up",
-                "what": "loan costs",
-                "basis": "inferred"
-              },
-              {
-                "group": "Government finances",
-                "direction": "up",
-                "what": "borrowing costs",
-                "basis": "inferred"
-              },
-              {
-                "group": "IT & services workers",
-                "direction": "unclear",
-                "what": "AI sector demand",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "Sharp moves in global government bond yields",
-                "when": "",
-                "where": ""
-              },
-              {
-                "what": "RBI comments on global financial stability risks",
-                "when": "",
-                "where": "Reserve Bank of India"
-              }
-            ],
-            "frameworks": {
-              "impact_chain": {
-                "chain": [
-                  {
-                    "step": "IMF flags AI crash risk",
-                    "detail": "High valuations and debt could trigger a crash rippling across global markets.",
-                    "basis": "reported"
-                  },
-                  {
-                    "step": "Bond yields could spike",
-                    "detail": "IMF says government bond yields could jump sharply and disorderly.",
-                    "basis": "reported"
-                  },
-                  {
-                    "step": "Global borrowing costs may rise",
-                    "detail": "Higher benchmark yields could lift funding costs worldwide.",
-                    "basis": "inferred"
-                  },
-                  {
-                    "step": "Indian rates could follow",
-                    "detail": "Government and household borrowing costs in India may rise.",
-                    "basis": "inferred"
-                  }
-                ],
-                "breaks_if": "AI valuations and bond markets adjust gradually without disorderly moves."
-              }
-            }
-          },
-          "finChecked": true,
-          "priority": 65
-        },
-        {
-          "id": "s14bp762",
-          "headline": "Higher rates could be needed to avoid 'inflationary mindset' taking hold, says Fed's Hammack",
-          "url": "https://www.cnbc.com/2026/10/12/beth-hammack-fed-inflation-policy.html",
-          "source": "cnbc",
-          "date": "2026-10-13T02:58:11.000Z",
-          "relevance": "medium",
-          "why": "A Fed official backing higher US rates signals tighter global money, which could pressure capital flows and the rupee in India.",
-          "implications": [
-            "Cleveland Fed president Hammack says tighter monetary policy would be needed to bring down inflation.",
-            "Higher US rates could draw investment away from markets like India.",
-            "This is one official's view, not a Fed decision."
-          ],
-          "reports": [
-            {
-              "source": "cnbc",
-              "headline": "Higher rates could be needed to avoid 'inflationary mindset' taking hold, says Fed's Hammack",
-              "url": "https://www.cnbc.com/2026/10/12/beth-hammack-fed-inflation-policy.html",
-              "date": "2026-10-13T02:58:11.000Z",
-              "kind": "hard",
-              "summary": "The Cleveland Fed president said that tighter monetary policy would be needed to bring down inflation.",
-              "summaryV": 3,
-              "ogTried": true,
-              "descTried": true,
-              "image": "https://image.cnbcfm.com/api/v1/image/108220143-1761932982247-gettyimages-2243837894-DALLAS_FED_SPEAK.jpeg?v=1761933060&w=1920&h=1080"
-            }
-          ],
-          "image": "https://image.cnbcfm.com/api/v1/image/108220143-1761932982247-gettyimages-2243837894-DALLAS_FED_SPEAK.jpeg?v=1761933060&w=1920&h=1080",
-          "thread": "tpnacn3",
-          "analysis": {
-            "v": 2,
-            "at": "2026-10-13T21:04:26.340Z",
-            "tier": "quick",
-            "primary": "impact_chain",
-            "complement": null,
-            "features": [],
-            "exposure": {
-              "level": "low",
-              "reason": "One official's view; India mechanism not in the reports."
-            },
-            "horizon": {
-              "value": "months",
-              "reason": "Depends on future Fed rate decisions."
-            },
-            "confidence": {
-              "level": "medium",
-              "reason": "Single outlet with an on-record Fed official."
-            },
-            "affected": [
-              {
-                "group": "Importers & traders",
-                "direction": "unclear",
-                "what": "rupee-linked import costs",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "Next Federal Reserve interest rate decision",
-                "when": "",
-                "where": "US Federal Reserve"
-              }
-            ],
-            "frameworks": {
-              "impact_chain": {
-                "chain": [
-                  {
-                    "step": "Hammack backs tighter policy",
-                    "detail": "Cleveland Fed president says higher rates may be needed.",
-                    "basis": "reported"
-                  },
-                  {
-                    "step": "Aim is lower US inflation",
-                    "detail": "Goal is preventing an inflationary mindset taking hold.",
-                    "basis": "reported"
-                  },
-                  {
-                    "step": "Capital could flow out of India",
-                    "detail": "Higher US rates may pull funds and weaken the rupee.",
-                    "basis": "inferred"
-                  }
-                ],
-                "breaks_if": "Fed holds or cuts rates instead of tightening."
-              }
-            }
-          },
-          "finChecked": true,
-          "priority": 60
-        },
-        {
-          "id": "sc1s3ry",
-          "headline": "Yields on key US Treasury bonds reached new highs, but for the 10-year demand was especially strong",
-          "url": "https://en.mercopress.com/2026/10/12/yields-on-key-us-treasury-bonds-reached-new-highs-but-for-the-10-year-demand-was-especially-strong",
-          "source": "mercopress",
-          "date": "2026-10-12T07:06:00.000Z",
-          "relevance": "medium",
-          "image": "https://en.mercopress.com/data/cache/noticias/111730/100x80/ustre.jpg",
-          "why": "US Treasury yields at multi-decade highs could pull foreign money from Indian bonds and push up domestic borrowing costs, though the reports do not mention India.",
-          "implications": [
-            "Higher US yields could make Indian bonds relatively less attractive to foreign investors.",
-            "Outflows may pressure the rupee and Indian bond yields.",
-            "Any rise in domestic rates could feed slowly into loan EMIs."
-          ],
-          "reports": [
-            {
-              "source": "mercopress",
-              "headline": "Yields on key US Treasury bonds reached new highs, but for the 10-year demand was especially strong",
-              "url": "https://en.mercopress.com/2026/10/12/yields-on-key-us-treasury-bonds-reached-new-highs-but-for-the-10-year-demand-was-especially-strong",
-              "date": "2026-10-12T07:06:00.000Z",
-              "kind": "hard",
-              "summary": "Yields on key US Treasury bonds touched fresh 24-year highs Wednesday as the latest global bond sell-off picked up steam. The 10-year Treasury yield rose as high as 5.36%, and the 30-year Treasury yield hit 5.73% — the highest for each since 2002.",
-              "summaryV": 3,
-              "image": "https://en.mercopress.com/data/cache/noticias/111730/100x80/ustre.jpg"
-            },
-            {
-              "source": "scmp",
-              "headline": "Hong Kong investors are warming to US Treasury bonds as yields hit 20-year high",
-              "url": "https://www.scmp.com/business/china-business/article/3370557/hong-kong-investors-are-warming-us-treasury-bonds-yields-hit-20-year-high",
-              "date": "2026-10-12T23:00:30.000Z",
-              "kind": "hard",
-              "summary": "US Treasuries are looking increasingly attractive to Hong Kong investors after a prolonged sell-off pushed yields to multi-decade highs, prompting some strategists and wealth managers to recommend buying while others warned that further losses may lie ahead.",
-              "summaryV": 3,
-              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/12/599c59b7-f65e-4431-b04c-6c63226881d1_3cc994ea.jpg?itok=zDi4ZDle&v=1791786655"
-            }
-          ],
-          "thread": "t12s750z",
-          "analysis": {
-            "v": 2,
-            "at": "2026-10-13T21:06:09.019Z",
-            "tier": "standard",
-            "primary": "pass_through",
-            "complement": null,
-            "features": [
-              "price_move"
-            ],
-            "exposure": {
-              "level": "medium",
-              "reason": "Inferred link to Indian borrowing costs through capital flows; no India mechanism reported."
-            },
-            "horizon": {
-              "value": "months",
-              "reason": "Rate effects would pass through markets and banks gradually."
-            },
-            "confidence": {
-              "level": "medium",
-              "reason": "Two outlets report the yield highs; the India link is inferred."
-            },
-            "affected": [
-              {
-                "group": "Borrowers",
-                "direction": "up",
-                "what": "loan EMIs",
-                "basis": "inferred"
-              },
-              {
-                "group": "Government finances",
-                "direction": "up",
-                "what": "borrowing costs",
-                "basis": "inferred"
-              },
-              {
-                "group": "Importers & traders",
-                "direction": "mixed",
-                "what": "rupee exchange rate",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "US 10-year Treasury yield moving above or below 5.36%",
-                "when": "",
-                "where": "US Treasury"
-              },
-              {
-                "what": "RBI commentary on bond yields and the rupee",
-                "when": "",
-                "where": "Reserve Bank of India"
-              }
-            ],
-            "frameworks": {
-              "pass_through": {
-                "driver": {
-                  "variable": "US 10-year Treasury yield",
-                  "direction": "up",
-                  "size": "as high as 5.36%"
-                },
-                "product": "loan EMIs",
-                "rungs": [
-                  {
-                    "stage": "US yields → foreign bond outflows from India",
-                    "pass": "unclear",
-                    "damper": "Investor positioning, RBI market operations",
-                    "lag": "weeks"
-                  },
-                  {
-                    "stage": "Outflows → Indian bond yields",
-                    "pass": "partial",
-                    "damper": "Domestic demand for government bonds, RBI liquidity",
-                    "lag": "weeks"
-                  },
-                  {
-                    "stage": "Bond yields → bank lending rates",
-                    "pass": "partial",
-                    "damper": "Repo-linked loans follow RBI policy rate, not bonds",
-                    "lag": "months"
-                  },
-                  {
-                    "stage": "Lending rates → household EMIs",
-                    "pass": "partial",
-                    "damper": "Fixed-rate contracts and reset periods",
-                    "lag": "months"
-                  }
-                ],
-                "end_user": {
-                  "group": "Borrowers",
-                  "effect": "Could see gradual upward pressure on EMIs if Indian rates follow global yields; no India effect reported."
-                }
-              }
-            }
-          },
-          "finChecked": true,
-          "priority": 65
-        },
-        {
-          "id": "s7hzhfz",
-          "headline": "CNBC's The China Connection newsletter: How a gold-buying spree helps the yuan go global",
-          "url": "https://www.cnbc.com/2026/10/12/cnbc-china-connection-newsletter-gold-purchases-yuan-globalization.html",
-          "source": "cnbc",
-          "date": "2026-10-12T23:00:01.000Z",
-          "relevance": "medium",
-          "why": "",
-          "implications": [],
-          "reports": [
-            {
-              "source": "cnbc",
-              "headline": "CNBC's The China Connection newsletter: How a gold-buying spree helps the yuan go global",
-              "url": "https://www.cnbc.com/2026/10/12/cnbc-china-connection-newsletter-gold-purchases-yuan-globalization.html",
-              "date": "2026-10-12T23:00:01.000Z",
-              "kind": "feature",
-              "summary": "Plans to develop a gold trading hub in Hong Kong coincide with China's growing gold reserves.",
-              "summaryV": 3,
-              "ogTried": true,
-              "descTried": true,
-              "image": "https://image.cnbcfm.com/api/v1/image/108395801-1791765174233-gettyimages-2297267815-Gold_Market.jpeg?v=1791765222&w=1920&h=1080"
-            }
-          ],
-          "image": "https://image.cnbcfm.com/api/v1/image/108395801-1791765174233-gettyimages-2297267815-Gold_Market.jpeg?v=1791765222&w=1920&h=1080",
-          "thread": "ttjprot",
-          "finChecked": true,
-          "priority": 25
-        },
-        {
-          "id": "s1usjn6c",
-          "headline": "Why China is importing a record amount of gold — and what it means for prices",
-          "url": "https://www.cnbc.com/2026/10/12/china-gold-buying-interest-rate-.html",
-          "source": "cnbc",
-          "date": "2026-10-12T00:51:10.000Z",
-          "relevance": "medium",
-          "why": "China's record gold buying could lift global gold prices, which may raise the cost of India's gold imports and affect household gold purchases.",
-          "implications": [
-            "Record Chinese demand is driven by Beijing's dollar diversification and households seeking safe savings, according to CNBC.",
-            "Stronger global demand could push gold prices higher, which may raise India's gold import bill.",
-            "Higher prices may also affect Indian jewellers and gold traders."
-          ],
-          "reports": [
-            {
-              "source": "cnbc",
-              "headline": "Why China is importing a record amount of gold — and what it means for prices",
-              "url": "https://www.cnbc.com/2026/10/12/china-gold-buying-interest-rate-.html",
-              "date": "2026-10-12T00:51:10.000Z",
-              "kind": "hard",
-              "summary": "Beijing’s push to diversify away from the dollar and Chinese households’ search for a safe place to put their savings has fueled China’s record gold buying.",
-              "summaryV": 3,
-              "ogTried": true,
-              "descTried": true,
-              "image": "https://image.cnbcfm.com/api/v1/image/108375012-1791434896477-gettyimages-2179215252-vcg111524625398.jpeg?v=1791434922&w=1920&h=1080"
-            }
-          ],
-          "image": "https://image.cnbcfm.com/api/v1/image/108375012-1791434896477-gettyimages-2179215252-vcg111524625398.jpeg?v=1791434922&w=1920&h=1080",
-          "thread": "ttjprot",
-          "analysis": {
-            "v": 2,
-            "at": "2026-10-13T21:08:16.174Z",
-            "tier": "quick",
-            "primary": "impact_chain",
-            "complement": null,
-            "features": [],
-            "exposure": {
-              "level": "medium",
-              "reason": "Gold is a major Indian import, but the reports give no India-specific link."
-            },
-            "horizon": {
-              "value": "months",
-              "reason": "Price effects from sustained buying could build gradually."
-            },
-            "confidence": {
-              "level": "low",
-              "reason": "Single outlet; price effect on India not reported."
-            },
-            "affected": [
-              {
-                "group": "Importers & traders",
-                "direction": "up",
-                "what": "gold import costs",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "China's monthly gold import figures and global gold price trend",
-                "when": "",
-                "where": ""
-              }
-            ],
-            "frameworks": {
-              "impact_chain": {
-                "chain": [
-                  {
-                    "step": "Beijing diversifies from dollar",
-                    "detail": "Policy push and household safe-haven demand drive Chinese gold buying.",
-                    "basis": "reported"
-                  },
-                  {
-                    "step": "China imports record gold",
-                    "detail": "CNBC reports China's gold imports have reached a record.",
-                    "basis": "reported"
-                  },
-                  {
-                    "step": "Indian import costs may rise",
-                    "detail": "Higher global demand could lift prices India pays for gold.",
-                    "basis": "inferred"
-                  }
-                ],
-                "breaks_if": "Chinese buying slows or other demand falls, offsetting price pressure."
-              }
-            }
-          },
-          "finChecked": true,
-          "priority": 60
-        },
-        {
-          "id": "sxhm8c2",
-          "headline": "China rejects yuan complaints, ‘golden week’ travel, Canton Fair",
-          "url": "https://www.scmp.com/plus/economy/china-economy/article/3370339/china-rejects-yuan-complaints-golden-week-travel-canton-fair",
-          "source": "scmp",
-          "date": "2026-10-09T09:02:34.000Z",
-          "relevance": "medium",
-          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/09/17ad9161-f26f-4960-9ab0-98a4c2587496_f13de13c.jpg?itok=iNyXb0cx&v=1791536554",
-          "why": "A possible EU-China trade war over the yuan could redirect Chinese exports and shift trade flows that reach Indian markets.",
-          "implications": [
-            "China's central bank rejected European claims that the yuan is undervalued.",
-            "The EU and China are in crunch negotiations ahead of a possible trade war.",
-            "A trade war could divert Chinese goods toward other markets, possibly including India."
-          ],
-          "reports": [
-            {
-              "source": "scmp",
-              "headline": "China rejects yuan complaints, ‘golden week’ travel, Canton Fair",
-              "url": "https://www.scmp.com/plus/economy/china-economy/article/3370339/china-rejects-yuan-complaints-golden-week-travel-canton-fair",
-              "date": "2026-10-09T09:02:34.000Z",
-              "summary": "China’s central bank rejected claims that the yuan is undervalued, rebutting a key European argument amid crunch negotiations ahead of a possible trade war.",
-              "summaryV": 3,
-              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/09/17ad9161-f26f-4960-9ab0-98a4c2587496_f13de13c.jpg?itok=iNyXb0cx&v=1791536554",
-              "kind": "hard"
-            }
-          ],
-          "thread": "t1vem20c",
-          "analysis": {
-            "v": 2,
-            "at": "2026-10-13T23:08:27.646Z",
-            "tier": "quick",
-            "primary": "impact_chain",
-            "complement": null,
-            "features": [
-              "pending_outcome"
-            ],
-            "exposure": {
-              "level": "low",
-              "reason": "Indirect; reports describe no mechanism involving India."
-            },
-            "horizon": {
-              "value": "months",
-              "reason": "Negotiations are ongoing; trade war not yet started."
-            },
-            "confidence": {
-              "level": "medium",
-              "reason": "Single outlet; central bank position on record."
-            },
-            "affected": [
-              {
-                "group": "Importers & traders",
-                "direction": "unclear",
-                "what": "Chinese goods supply and prices",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "Outcome of EU-China trade negotiations",
-                "when": "",
-                "where": ""
-              }
-            ],
-            "frameworks": {
-              "impact_chain": {
-                "chain": [
-                  {
-                    "step": "China rejects yuan undervaluation claims",
-                    "detail": "Central bank rebutted a key European argument.",
-                    "basis": "reported"
-                  },
-                  {
-                    "step": "EU-China trade war possible",
-                    "detail": "Crunch negotiations are underway ahead of a possible trade war.",
-                    "basis": "reported"
-                  },
-                  {
-                    "step": "Chinese exports could divert",
-                    "detail": "Barred goods may flow to other markets, possibly India.",
-                    "basis": "inferred"
-                  }
-                ],
-                "breaks_if": "The EU and China reach a negotiated settlement."
-              }
-            }
-          },
-          "finChecked": true,
-          "priority": 60
-        },
-        {
-          "id": "s1am380j",
-          "headline": "A Top Fed Official Casts Further Doubt on a Rate Rise This Month",
-          "url": "https://www.nytimes.com/2026/10/08/business/federal-reserve-christopher-waller-rates.html",
-          "source": "nyt",
-          "date": "2026-10-08T08:38:57.000Z",
-          "relevance": "medium",
-          "image": "https://static01.nyt.com/images/2026/10/08/multimedia/08DC-FED-WALLER-vtpj/08DC-FED-WALLER-vtpj-mediumSquareAt3X.jpg",
-          "why": "A delay in further US Federal Reserve rate rises can shape global capital flows and the rupee, which feeds into India's borrowing costs and the Reserve Bank of India's policy choices.",
-          "implications": [
-            "A pause in US rate rises could ease pressure on the rupee for now, though a hike later in the year remains likely.",
-            "The Reserve Bank of India may have slightly more room on its own rate decisions while the Fed holds off.",
-            "Indian firms and the government borrowing in dollars could face steadier costs in the near term."
-          ],
-          "reports": [
-            {
-              "source": "nyt",
-              "headline": "A Top Fed Official Casts Further Doubt on a Rate Rise This Month",
-              "url": "https://www.nytimes.com/2026/10/08/business/federal-reserve-christopher-waller-rates.html",
-              "date": "2026-10-08T08:38:57.000Z",
-              "kind": "hard",
-              "summary": "The Federal Reserve is poised to raise interest rates further as it seeks to tame inflation, but that is unlikely to happen until the end of the year.",
-              "summaryV": 3,
-              "image": "https://static01.nyt.com/images/2026/10/08/multimedia/08DC-FED-WALLER-vtpj/08DC-FED-WALLER-vtpj-mediumSquareAt3X.jpg"
-            }
-          ],
-          "thread": "tpnacn3",
-          "finChecked": true,
-          "priority": 25
-        },
-        {
-          "id": "swyaa9z",
-          "headline": "Fed Minutes Show Officials Saw More Work to Do to Quell Inflation",
-          "url": "https://www.nytimes.com/2026/10/07/business/fed-minutes-show-officials-saw-more-work-to-do-to-quell-inflation.html",
-          "source": "nyt",
-          "date": "2026-10-07T19:18:48.000Z",
-          "relevance": "medium",
-          "image": "https://static01.nyt.com/images/2026/10/07/multimedia/07dc-fed-minutes-pckm/07dc-fed-minutes-pckm-mediumSquareAt3X.jpg",
-          "why": "Minutes from the US Federal Reserve's September meeting show officials growing more concerned about inflation risks, which could keep US interest rates higher and affect the rupee and the Reserve Bank of India's policy choices.",
-          "implications": [
-            "Prolonged high US interest rates may pressure the rupee, which could make imported goods and fuel costlier for India.",
-            "The RBI may be more cautious about cutting rates, which could keep borrowing costs for Indian households and businesses elevated.",
-            "Families paying US-linked costs, such as student fees, could face higher rupee expenses if the dollar strengthens."
-          ],
-          "reports": [
-            {
-              "source": "nyt",
-              "headline": "Fed Minutes Show Officials Saw More Work to Do to Quell Inflation",
-              "url": "https://www.nytimes.com/2026/10/07/business/fed-minutes-show-officials-saw-more-work-to-do-to-quell-inflation.html",
-              "date": "2026-10-07T19:18:48.000Z",
-              "kind": "hard",
-              "summary": "Policymakers grew increasingly concerned about inflation risks at their most recent meeting in September.",
-              "summaryV": 3,
-              "image": "https://static01.nyt.com/images/2026/10/07/multimedia/07dc-fed-minutes-pckm/07dc-fed-minutes-pckm-mediumSquareAt3X.jpg"
-            }
-          ],
-          "thread": "tpnacn3",
-          "finChecked": true,
-          "priority": 25
-        },
-        {
-          "id": "s1nj6hif",
-          "headline": "India’s central bank hikes rates for the first time since 2023 as inflation risks build",
-          "url": "https://www.cnbc.com/2026/10/07/india-rbi-interest-rates-inflation.html",
-          "source": "cnbc",
-          "date": "2026-10-07T11:55:36.000Z",
-          "relevance": "high",
-          "why": "The Reserve Bank of India has raised interest rates for the first time since 2023 because inflation risks are building, which directly affects borrowing costs across the country.",
-          "implications": [
-            "Home, vehicle and personal loan rates may rise, increasing monthly repayments for many households.",
-            "Higher rates could slow business borrowing and investment, possibly cooling growth in credit-dependent sectors.",
-            "HSBC and Goldman Sachs expect another hike in December, so borrowing costs could climb further."
-          ],
-          "reports": [
-            {
-              "source": "cnbc",
-              "headline": "India’s central bank hikes rates for the first time since 2023 as inflation risks build",
-              "url": "https://www.cnbc.com/2026/10/07/india-rbi-interest-rates-inflation.html",
-              "date": "2026-10-07T11:55:36.000Z",
-              "kind": "hard",
-              "summary": "HSBC and Goldman Sachs expect the RBI to raise interest rates in December as well.",
-              "summaryV": 3,
-              "ogTried": true,
-              "descTried": true,
-              "image": "https://image.cnbcfm.com/api/v1/image/108373925-1791374076652-gettyimages-2298413594-AFP_D2FY7DW.jpeg?v=1791374109&w=1920&h=1080"
-            }
-          ],
-          "image": "https://image.cnbcfm.com/api/v1/image/108373925-1791374076652-gettyimages-2298413594-AFP_D2FY7DW.jpeg?v=1791374109&w=1920&h=1080",
-          "thread": "t1qk19hr",
-          "finChecked": true,
-          "priority": 25
-        },
-        {
-          "id": "siruljh",
-          "headline": "India's first bank rate hike since 2023 signals growing inflation concerns",
-          "url": "https://www.bbc.co.uk/news/articles/c5j9kngz3j1go",
-          "source": "bbc",
-          "date": "2026-10-07T10:44:02.000Z",
-          "relevance": "high",
-          "why": "India's first rate hike since 2023 reflects inflation pressure linked to the Middle East conflict.",
-          "implications": [
-            "Loan and EMI costs for households and businesses are likely to rise in the coming weeks.",
-            "Higher borrowing costs could slow credit-driven consumption and investment.",
-            "Inflation worries may persist if Middle East conflict keeps energy prices elevated."
-          ],
-          "reports": [
-            {
-              "source": "bbc",
-              "headline": "India's first bank rate hike since 2023 signals growing inflation concerns",
-              "url": "https://www.bbc.co.uk/news/articles/c5j9kngz3j1go",
-              "date": "2026-10-07T10:44:02.000Z",
-              "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3ce3/live/45771df0-c207-11f1-b488-75e728293e20.jpg",
-              "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/3ce3/live/45771df0-c207-11f1-b488-75e728293e20.jpg",
-              "summary": "The hike reflects a global shift towards tighter monetary policy as central banks battle inflation fuelled by Middle East conflict.",
-              "summaryV": 3,
-              "kind": "hard"
-            }
-          ],
-          "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3ce3/live/45771df0-c207-11f1-b488-75e728293e20.jpg",
-          "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/3ce3/live/45771df0-c207-11f1-b488-75e728293e20.jpg",
-          "thread": "t1qk19hr",
-          "finChecked": true,
-          "priority": 25
-        },
-        {
-          "id": "s1c0c575",
-          "headline": "Five reasons India's stock market is sinking even when its economy is growing",
-          "url": "https://www.bbc.co.uk/news/articles/cwp9g5p1gy7yo",
-          "source": "bbc",
-          "date": "2026-10-05T23:13:11.000Z",
-          "relevance": "medium",
-          "why": "India's equity market is lagging badly despite fast economic growth, a gap that points to investor caution about the economy.",
-          "implications": [
-            "The gap between strong growth and weak markets may signal cautious sentiment toward India's economic outlook.",
-            "Weak markets could make it harder for Indian businesses to raise funds for expansion.",
-            "Household savings and wealth held in market-linked products may come under pressure."
-          ],
-          "reports": [
-            {
-              "source": "bbc",
-              "headline": "Five reasons India's stock market is sinking even when its economy is growing",
-              "url": "https://www.bbc.co.uk/news/articles/cwp9g5p1gy7yo",
-              "date": "2026-10-05T23:13:11.000Z",
-              "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3270/live/5e1025a0-c135-11f1-a88e-ffa9b333d51f.jpg",
-              "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/3270/live/5e1025a0-c135-11f1-a88e-ffa9b333d51f.jpg",
-              "summary": "The world's fastest growing major economy has one of the worst performing major equity markets in 2026.",
-              "summaryV": 3,
-              "kind": "feature"
-            }
-          ],
-          "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3270/live/5e1025a0-c135-11f1-a88e-ffa9b333d51f.jpg",
-          "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/3270/live/5e1025a0-c135-11f1-a88e-ffa9b333d51f.jpg",
-          "thread": "t1jm9880",
-          "finChecked": true,
-          "priority": 25
-        },
-        {
-          "id": "spi4l4o",
-          "headline": "Euro falls to 17-month low against dollar on French debt concerns",
-          "url": "https://www.france24.com/en/tv-shows/business/20261005-euro-falls-to-17-month-low-against-the-usd-on-french-debt-concerns",
-          "source": "france24",
-          "date": "2026-10-05T20:51:22.000Z",
-          "relevance": "medium",
-          "image": "https://s.france24.com/media/display/dc9d51c8-c0fd-11f1-838b-dd51fcab6130/w:1024/p:16x9/EN-NW-IVS-ECO-EURO-VS-USD-2-YEARS-ROYER-Yuka.png",
-          "why": "A weaker euro against the dollar changes rupee-equivalent prices for trade, travel and payments between India and the Eurozone.",
-          "implications": [
-            "Indian goods sold to Europe could earn less in rupee terms, squeezing margins for exporters billing in euros.",
-            "Machinery and other imports priced in euros may become somewhat cheaper for Indian buyers.",
-            "Indian students and travellers heading to Eurozone countries may find fees and trip costs slightly lower."
-          ],
-          "reports": [
-            {
-              "source": "france24",
-              "headline": "Euro falls to 17-month low against dollar on French debt concerns",
-              "url": "https://www.france24.com/en/tv-shows/business/20261005-euro-falls-to-17-month-low-against-the-usd-on-french-debt-concerns",
-              "date": "2026-10-05T20:51:22.000Z",
-              "kind": "hard",
-              "summary": "The euro has stumbled to a 17-month low against the US dollar on concerns about France's ability to bring its public finances in order. The currency has dropped nearly 7 percent from its peak in late January.",
-              "summaryV": 3,
-              "image": "https://s.france24.com/media/display/dc9d51c8-c0fd-11f1-838b-dd51fcab6130/w:1024/p:16x9/EN-NW-IVS-ECO-EURO-VS-USD-2-YEARS-ROYER-Yuka.png"
-            }
-          ],
-          "thread": "t1rn1bq5",
-          "finChecked": true,
-          "priority": 25
-        },
-        {
-          "id": "sinn1mq",
-          "headline": "Euro plummets against US dollar: Has the next financial crisis begun?",
-          "url": "https://www.dw.com/en/euro-plummets-against-us-dollar-has-the-next-financial-crisis-begun/a-79549031",
-          "source": "dw",
-          "date": "2026-10-05T14:28:00.000Z",
-          "relevance": "medium",
-          "why": "The euro has fallen to a 17-month low against the dollar amid French debt worries and rising EU inflation, which could weaken demand for Indian exports to Europe and reduce what Indian exporters earn.",
-          "implications": [
-            "Indian exporters paid in euros may receive less when converting earnings, squeezing margins in sectors that sell heavily to Europe.",
-            "Higher EU inflation and fiscal worries could dampen European demand for Indian goods and services.",
-            "European imports into India may become relatively cheaper, adding competition for some domestic producers."
-          ],
-          "reports": [
-            {
-              "source": "dw",
-              "headline": "Euro plummets against US dollar: Has the next financial crisis begun?",
-              "url": "https://www.dw.com/en/euro-plummets-against-us-dollar-has-the-next-financial-crisis-begun/a-79549031",
-              "date": "2026-10-05T14:28:00.000Z",
-              "kind": "hard",
-              "summary": "The euro has fallen to a 17-month low against the dollar. That will make inflation worse in the EU, where political worries and concern over French debt are already troubling investors. Is a fiscal crisis at hand?",
-              "summaryV": 3,
-              "ogTried": true,
-              "descTried": true,
-              "image": "https://static.dw.com/image/72884137_6.jpg"
-            }
-          ],
-          "image": "https://static.dw.com/image/72884137_6.jpg",
-          "thread": "t1rn1bq5",
-          "finChecked": true,
-          "priority": 25
-        },
-        {
-          "id": "s1haxzqq",
-          "headline": "Euro falls to 17-month low against dollar amid French debt fears",
-          "url": "https://www.theguardian.com/business/2026/oct/05/euro-falls-dollar-amid-french-debt-cac-40-spain-eurozone",
-          "source": "guardian",
-          "date": "2026-10-05T11:18:20.000Z",
-          "relevance": "medium",
-          "why": "A weaker euro against the dollar and eurozone debt worries could shift currency and trade conditions affecting India's exports to Europe.",
-          "implications": [
-            "Indian exports to the eurozone may become less price-competitive if the euro stays weak.",
-            "Rupee movements against the euro and dollar could become more volatile, affecting import costs and exporters' earnings.",
-            "Prolonged eurozone uncertainty could dampen European demand for Indian goods and services."
-          ],
-          "reports": [
-            {
-              "source": "guardian",
-              "headline": "Euro falls to 17-month low against dollar amid French debt fears",
-              "url": "https://www.theguardian.com/business/2026/oct/05/euro-falls-dollar-amid-french-debt-cac-40-spain-eurozone",
-              "date": "2026-10-05T11:18:20.000Z",
-              "ogTried": true,
-              "image": "https://i.guim.co.uk/img/media/4f8cfc2283ce9b8b686cbd47a16f80f2e2b91e4b/21_0_3333_2666/master/3333.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=0331c55da2ac2136a49bacf36f527606",
-              "descTried": true,
-              "summary": "France’s Cac 40 index slides as announcement of snap election in Spain also helps fuel eurozone uncertainty",
-              "summaryV": 3,
-              "kind": "hard"
-            }
-          ],
-          "image": "https://i.guim.co.uk/img/media/4f8cfc2283ce9b8b686cbd47a16f80f2e2b91e4b/21_0_3333_2666/master/3333.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=0331c55da2ac2136a49bacf36f527606",
-          "thread": "t1rn1bq5",
-          "finChecked": true,
-          "priority": 25
-        },
-        {
-          "id": "stzs5qa",
-          "headline": "Soft Jobs Report Boosts Market Bets Fed Will Skip October Rate Increase",
-          "url": "https://www.nytimes.com/2026/10/02/business/economy/jobs-report-fed-interest-rates.html",
-          "source": "nyt",
-          "date": "2026-10-02T15:50:14.000Z",
-          "relevance": "medium",
-          "image": "https://static01.nyt.com/images/2026/10/02/multimedia/02biz-jobs-report-fed-markets-lwht/02biz-jobs-report-fed-markets-lwht-mediumSquareAt3X.jpg",
-          "why": "A softer US jobs report has lowered expectations that the Federal Reserve will raise rates in October, which could ease pressure on the rupee and on capital flows to emerging economies like India.",
-          "implications": [
-            "If the Fed holds rates, pressure on the rupee from a stronger dollar may ease, slightly lowering the cost of imported goods.",
-            "The RBI may have more room in its own interest rate decisions if US rates stop rising.",
-            "Indian firms borrowing in dollars could face steadier repayment costs if US rate rises pause."
-          ],
-          "reports": [
-            {
-              "source": "nyt",
-              "headline": "Soft Jobs Report Boosts Market Bets Fed Will Skip October Rate Increase",
-              "url": "https://www.nytimes.com/2026/10/02/business/economy/jobs-report-fed-interest-rates.html",
-              "date": "2026-10-02T15:50:14.000Z",
-              "kind": "hard",
-              "summary": "The odds of an interest rate change at the Federal Reserve’s meeting in late October have dropped following a softer jobs report and strong signaling from bank officials.",
-              "summaryV": 3,
-              "image": "https://static01.nyt.com/images/2026/10/02/multimedia/02biz-jobs-report-fed-markets-lwht/02biz-jobs-report-fed-markets-lwht-mediumSquareAt3X.jpg"
-            }
-          ],
-          "thread": "tpnacn3",
           "finChecked": true,
           "priority": 25
         }
@@ -36274,16 +33890,6 @@
   ],
   "source": "BBC News & The Guardian & NPR & Al Jazeera & MercoPress & ABC News & The New York Times & CNBC & CBS News & DW & France 24 & Africanews & South China Morning Post & The Hindu & Mint",
   "lastRun": {
-    "filter": {
-      "reject": 65,
-      "analyse": 1
-    },
-    "watch": {
-      "checked": 1,
-      "promoted": 0,
-      "expired": 0,
-      "open": 13
-    },
     "wars": {
       "linked": 0,
       "seeded": 0,
@@ -36291,56 +33897,24 @@
     },
     "places": {
       "labelled": 0,
-      "none": 0,
+      "none": 1,
       "waiting": 0
     },
-    "skipped": {
-      "since": "2026-10-25T23:21:36.473Z",
-      "counts": {
-        "live_blog": 8,
-        "podcast_quiz_gallery": 2,
-        "section": 13
-      },
-      "examples": {
-        "live_blog": [
-          "Brazil runoff live updates: Bolsonaro says it is ‘impossible to concede’ election result after historic Lula win",
-          "Australia politics live: Plibersek notes ‘industrial scale of abuse’ but urges young women not to be turned off entering",
-          "‘Door to EU is open’ new Serbian government told after Vučić concedes election – Europe live as it happened",
-          "Iran war live: Saudi forces attack Sanaa after Houthis target Riyadh",
-          "Brazil Live Updates: Lula Wins Re-Election as Bolsonaro Rejects Result"
-        ],
-        "podcast_quiz_gallery": [
-          "How Abu Dhabi bought Andy Burnham’s Manchester - podcast",
-          "In pictures: Protests over inequality, rising living costs turn violent across France"
-        ],
-        "section": [
-          "Ballon d’Or 2026 predictions: Yamal, Mbappe and Kane – who will win?",
-          "Lula thanks Brazil’s youth for historic election win",
-          "Netanyahu rival Eisenkot holds final rally before Israeli election",
-          "Serbia celebrates historic election win for student-backed movement",
-          "Trump escalates anti-Muslim rhetoric in fierce attack on El-Sayed"
-        ]
-      }
-    },
-    "finance": {
-      "moved": 0,
-      "checked": 0
-    },
-    "analysed": 66,
+    "analysed": 12,
     "added": 1,
-    "merged": 3,
-    "rejected": 62,
+    "merged": 0,
+    "rejected": 11,
     "failedBatches": 0,
     "feeds": {
       "bbc": {
         "feedsOk": 6,
         "feedsFailed": 0,
-        "items": 161
+        "items": 163
       },
       "guardian": {
         "feedsOk": 7,
         "feedsFailed": 0,
-        "items": 201
+        "items": 200
       },
       "npr": {
         "feedsOk": 4,
@@ -36350,7 +33924,7 @@
       "aljazeera": {
         "feedsOk": 1,
         "feedsFailed": 0,
-        "items": 13
+        "items": 14
       },
       "mercopress": {
         "feedsOk": 3,
@@ -36370,7 +33944,7 @@
       "cnbc": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 89
+        "items": 88
       },
       "cbs": {
         "feedsOk": 2,
@@ -36409,8 +33983,8 @@
       "failedBatches": 0
     },
     "summaries": {
-      "written": 1,
-      "due": 1
+      "written": 4,
+      "due": 4
     },
     "kinds": {
       "labelled": 0,
@@ -36418,8 +33992,8 @@
       "failedBatches": 0
     },
     "frames": {
-      "done": 0,
-      "waiting": 0,
+      "done": 4,
+      "waiting": 1,
       "failedBatches": 0
     },
     "stats": {
@@ -36436,29 +34010,36 @@
     "models": {
       "filter": {
         "model": "claude-haiku-5-5",
-        "calls": 6,
-        "inputTokens": 24077,
-        "outputTokens": 10293,
-        "cost": 0.0076
+        "calls": 5,
+        "inputTokens": 8085,
+        "outputTokens": 3778,
+        "cost": 0.0027
       },
       "analysis_quick": {
         "model": "claude-sonnet-5-5",
+        "calls": 3,
+        "inputTokens": 9221,
+        "outputTokens": 8264,
+        "cost": 0.1011
+      },
+      "analysis": {
+        "model": "claude-opus-5-5",
         "calls": 1,
-        "inputTokens": 3289,
-        "outputTokens": 3338,
-        "cost": 0.04
+        "inputTokens": 3304,
+        "outputTokens": 4402,
+        "cost": 0.1013
       },
       "threads": {
         "model": "claude-sonnet-5-5",
-        "calls": 2,
-        "inputTokens": 10179,
-        "outputTokens": 1101,
-        "cost": 0.0314
+        "calls": 5,
+        "inputTokens": 11442,
+        "outputTokens": 2224,
+        "cost": 0.045
       }
     },
     "spend": {
-      "thisDesk": 0.0789,
-      "today": 0.9159,
+      "thisDesk": 0.2502,
+      "today": 1.2228,
       "cap": 6
     }
   },
