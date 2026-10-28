@@ -2,12 +2,123 @@
   "schema": 4,
   "region": "India",
   "since": "2026-10-02",
-  "updatedAt": "2026-10-27T22:33:55.694Z",
+  "updatedAt": "2026-10-28T06:06:03.248Z",
   "sectors": [
     {
       "id": "energy",
       "name": "Energy",
       "items": [
+        {
+          "id": "syzg97b",
+          "headline": "Petrol and diesel prices today, October 28: Check fuel rates in different cities across India",
+          "url": "https://www.livemint.com/news/india/petrol-and-diesel-prices-today-october-28-check-fuel-rates-in-different-cities-across-india-11793150045980.html",
+          "source": "mint",
+          "date": "2026-10-28T01:22:04.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2026/10/28/1600x900/logo/The-attendants-said-checking_1793150256914_B047_1793150257052_vXQ3_cf8df46e-26a8-42eb-8f4d-43cdbba1c87d_UwRj.jpg",
+          "why": "Mint's daily fuel price listing for 28 October reports that compressed natural gas (CNG) prices rose in several locations, by up to ₹2 in Chennai, Mathura and Meerut. This raises running costs for CNG vehicle owners in those cities.",
+          "implications": [
+            "Drivers of CNG autos, taxis and private cars in the affected cities may face higher daily fuel bills, which could build pressure for fare increases where fares track fuel costs.",
+            "The summary mentions no change in petrol or diesel prices, so the reported rise appears specific to CNG in these listings."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-28T06:02:48.720Z",
+            "tier": "quick",
+            "primary": "pass_through",
+            "complement": null,
+            "features": [
+              "price_move"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The channel is the retail CNG pump price, which touches vehicle owners and commuters only in the cities named. The reported rise is small, and no change in petrol or diesel prices is reported."
+            },
+            "horizon": {
+              "value": "now",
+              "reason": "The listing reports prices for 28 October, so the higher CNG rates already apply at pumps in the named cities."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single Mint price listing with no official source, and the reasons for the increases and the full list of cities are not given."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "up",
+                "what": "CNG pump prices",
+                "effect": "CNG users in Chennai, Mathura, Meerut and other listed locations pay more per unit of fuel, which raises the running cost of their vehicles.",
+                "basis": "reported"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Whether CNG prices in the listed cities are raised again or rolled back in the next daily price updates",
+                "why": "It would show whether the increase is a one-time adjustment or the start of a wider rise.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "CNG is sold through city gas distribution networks, and retail prices are set by the distributing companies city by city, so increases can differ widely from one location to another."
+            ],
+            "terms": [
+              {
+                "term": "CNG",
+                "meaning": "Compressed natural gas, a fuel sold at dedicated pumps and used mainly in autos, taxis, buses and some private cars."
+              }
+            ],
+            "frameworks": {
+              "pass_through": {
+                "driver": {
+                  "variable": "CNG retail price in several cities",
+                  "direction": "up",
+                  "size": "up to ₹2 in Chennai, Mathura and Meerut"
+                },
+                "product": "other",
+                "rungs": [
+                  {
+                    "stage": "Gas supply cost → City gas distributors' costs",
+                    "pass": "unclear",
+                    "damper": "The reports give no reason for the rise, so it is not known which cost change, if any, led distributors to raise prices.",
+                    "lag": "weeks"
+                  },
+                  {
+                    "stage": "Distributors' costs → CNG pump price",
+                    "pass": "likely",
+                    "damper": "Distributors set prices city by city, so the size of the increase varies by location, as the reported rises of up to ₹2 suggest.",
+                    "lag": "days"
+                  },
+                  {
+                    "stage": "Pump price → Running costs and fares",
+                    "pass": "partial",
+                    "damper": "Drivers may absorb the extra cost at first, because fares for autos and taxis are often fixed or regulated by local authorities and change only after revision.",
+                    "lag": "weeks"
+                  }
+                ],
+                "end_user": {
+                  "group": "Fuel & LPG users",
+                  "effect": "CNG vehicle owners in the affected cities may notice a slightly higher cost at each refill straight away. Any effect on auto and taxi fares would probably come later, if fares are revised."
+                }
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "Petrol and diesel prices today, October 28: Check fuel rates in different cities across India",
+              "url": "https://www.livemint.com/news/india/petrol-and-diesel-prices-today-october-28-check-fuel-rates-in-different-cities-across-india-11793150045980.html",
+              "date": "2026-10-28T01:22:04.000Z",
+              "kind": "hard",
+              "summary": "Check petrol and diesel prices in major Indian cities on October 28. CNG prices rose in several locations, with increases of up to ₹2 in Chennai, Mathura and Meerut.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/10/28/1600x900/logo/The-attendants-said-checking_1793150256914_B047_1793150257052_vXQ3_cf8df46e-26a8-42eb-8f4d-43cdbba1c87d_UwRj.jpg"
+            }
+          ],
+          "placeTried": true,
+          "thread": "to54n4o"
+        },
         {
           "id": "s54i6ot",
           "headline": "Government allows Ethanol 100 in compliant vehicles",
@@ -27616,12 +27727,12 @@
           "date": "2026-10-24T19:50:53.000Z",
           "relevance": "medium",
           "image": "https://th-i.thgim.com/public/incoming/ef9fij/article71621316.ece/alternates/LANDSCAPE_1200/10215_24_10_2026_17_18_19_1_IMG_20261024_WA0027.JPG",
-          "why": "Very severe cyclonic storm Arnab began making landfall near Narsapur on the Andhra Pradesh coast late on October 27. Tens of thousands were evacuated, flights, trains and buses were cancelled, and southern Odisha and north Chennai also faced disruption.",
+          "why": "Very severe cyclone Arnab began landfall near Narsapur and crossed the Andhra Pradesh coast early on October 28, 2026. It disrupted flights, trains, power and schools, and put Odisha and West Bengal on alert.",
           "implications": [
-            "The cancellation of flights, trains and buses in Andhra Pradesh, and transport curbs in Odisha, interrupt passenger travel and goods movement along the east coast until services are restored.",
-            "Andhra Pradesh brought 30,000 fishing boats ashore, so fishing households lose income for as long as they cannot go to sea, and fish supplies to local markets could fall.",
-            "Snapped live wires that killed a man at Mangalapalem, and power cuts in Visakhapatnam, show the strain on electricity networks; restoration could take longer if landfall is prolonged, as the India Meteorological Department warns.",
-            "Heavy rain and strong winds across Andhra Pradesh's coastal districts could damage standing crops and rural infrastructure, although the reports do not yet describe any crop or property losses."
+            "Andhra Pradesh brought 30,000 fishing boats ashore, so coastal fishing families lose daily earnings for as long as authorities keep boats off the sea.",
+            "Andhra Pradesh cancelled flights, trains and buses, and Odisha shut ghat roads and imposed transport curbs, so travel and the movement of goods along the eastern coast may stay disrupted until routes are cleared.",
+            "Mint reports uprooted trees, snapped power lines and blocked roads, so electricity supply in affected districts may stay interrupted until utilities repair lines and clear debris.",
+            "Schools in 16 coastal districts of Andhra Pradesh are closed, and 609 of them are serving as relief shelters, which suspends classes while the buildings house displaced people."
           ],
           "place": {
             "name": "Bapatla",
@@ -27898,182 +28009,213 @@
               "summary": "IMD experts said the landfall process may go on for a long time, and they can indicate the tentative landfall point only after the process is over",
               "summaryV": 3,
               "image": "https://th-i.thgim.com/public/incoming/pjs6kb/article71633426.ece/alternates/LANDSCAPE_1200/India_Cyclone_Extreme_Weather_92394.jpg"
+            },
+            {
+              "source": "mint",
+              "headline": "Cyclone Arnab Landfall: Trains, flights cancelled; Odisha, Andhra Pradesh and West Bengal on alert - Top updates",
+              "url": "https://www.livemint.com/news/india/cyclone-arnab-landfall-trains-flights-cancelled-odisha-andhra-pradesh-and-west-bengal-on-alert-top-updates-11793151829616.html",
+              "date": "2026-10-28T01:58:13.000Z",
+              "kind": "breaking",
+              "summary": "Cyclone Arnab’s landfall in Andhra Pradesh has uprooted trees, snapped power lines and blocked roads, with flooding possible in coastal low-lying areas. The IMD warned of extreme rainfall and damaging winds across parts of Andhra Pradesh and Odisha.&nbsp;",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/10/28/1600x900/maxresdefault_1793159600201_nad8_1793159604081_Pikx_71a90899-5ea0-4762-9d6e-7cecdd374a5d_jE2z.jpg"
+            },
+            {
+              "source": "mint",
+              "headline": "Cyclone Arnab: Check IMD weather predictions for West Bengal, Odisha and Andhra Pradesh; heavy rain, thunderstorms, more",
+              "url": "https://www.livemint.com/news/india/cyclone-arnab-check-imd-weather-predictions-for-west-bengal-odisha-and-andhra-pradesh-heavy-rain-thunderstorms-more-11793153339852.html",
+              "date": "2026-10-28T02:30:59.000Z",
+              "kind": "hard",
+              "summary": "The IMD has issued rain and wind alerts across three eastern coastal states as Cyclone Arnab approaches. West Bengal faces heavy rain and squalls, Odisha has an extremely heavy rain warning for October 28, and Andhra Pradesh may receive widespread, locally extreme rainfall.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/10/28/1600x900/logo/IMD_Oct_28_1793154446502_KmrJ_1793154454044_nKLZ_6320917e-8456-48b9-895e-6b51079a8913_jkB5.jpg"
+            },
+            {
+              "source": "thehindu",
+              "headline": "Cyclone Arnab: 609 Andhra schools turn into relief shelters",
+              "url": "https://www.thehindu.com/news/national/andhra-pradesh/cyclone-arnab-609-andhra-schools-turn-into-relief-shelters/article71634201.ece",
+              "date": "2026-10-28T05:44:49.000Z",
+              "kind": "hard",
+              "summary": "Schools in 16 coastal districts are closed, and 17,054 NCC, NSS and Scouts volunteers have been mobilised",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/news/national/andhra-pradesh/3in8i5/article71634471.ece/alternates/LANDSCAPE_1200/School.jpeg"
+            },
+            {
+              "source": "thehindu",
+              "headline": "Very severe cyclone Arnab crosses Andhra coast, weakens into severe cyclonic storm: IMD | LIVE",
+              "url": "https://www.thehindu.com/news/national/cyclone-arnab-landfall-andhra-pradesh-odisha-rainfall-weather-imd-alert-live-updates-october-28-2026/article71634111.ece",
+              "date": "2026-10-28T05:51:16.000Z",
+              "kind": "breaking",
+              "summary": "The landfall process is complete with the weather system moving entirely over land; CM Naidu says no loss of life reported in Andhra",
+              "summaryV": 3
             }
           ],
           "priority": 55,
           "thread": "t1tlxm8k",
           "analysis": {
             "v": 3,
-            "at": "2026-10-27T22:33:01.779Z",
+            "at": "2026-10-28T06:05:14.485Z",
             "tier": "deep",
             "primary": "timeline",
             "complement": "scenarios",
             "features": [
-              "disruption",
               "fast_moving",
               "pending_outcome"
             ],
             "exposure": {
               "level": "high",
-              "reason": "The cyclone directly threatens the safety, homes, power supply and travel of people in coastal Andhra Pradesh and southern Odisha. One death has already been reported, which places exposure at the high level."
+              "reason": "The cyclone directly affects the safety, travel, power supply and livelihoods of people in Andhra Pradesh, Odisha and West Bengal through rain, wind damage and transport cancellations."
             },
             "horizon": {
               "value": "now",
-              "reason": "Landfall was under way on the night of October 27, so evacuations, closures and cancellations are already affecting people."
+              "reason": "Landfall was completed on October 28, 2026, and disruption to transport, power and fishing is happening immediately as the system moves inland."
             },
             "confidence": {
               "level": "medium",
-              "reason": "The account rests on The Hindu and Mint, citing the Chief Minister and the weather department, but evacuation and shelter figures differ and the final landfall point is unconfirmed."
+              "reason": "The account rests on two outlets, The Hindu and Mint, citing the IMD and Chief Minister Naidu; the full extent of damage, especially in Odisha, is not yet reported."
             },
             "outlets": 2,
             "affected": [
               {
-                "group": "A named state or region",
-                "direction": "down",
-                "what": "Andhra Pradesh, southern Odisha safety",
-                "effect": "Residents of coastal Andhra Pradesh and southern Odisha face evacuation, school closures, fallen trees, waterlogging and power interruptions as the cyclone crosses the coast.",
-                "basis": "reported"
-              },
-              {
                 "group": "Fishers",
                 "direction": "down",
-                "what": "days at sea lost",
-                "effect": "Fishers in Andhra Pradesh lose fishing days and income because 30,000 boats were brought ashore, and rough seas were reported as far as north Chennai.",
+                "what": "fishing days and earnings",
+                "effect": "Andhra Pradesh brought 30,000 fishing boats ashore, which halts fishing and the income it provides while the sea remains dangerous.",
                 "basis": "reported"
               },
               {
                 "group": "Travellers & pilgrims",
                 "direction": "down",
-                "what": "flight, train, bus availability",
-                "effect": "Travellers face cancelled flights, trains and buses in Andhra Pradesh, along with closed ghat roads and transport curbs in Odisha.",
+                "what": "flight and train availability",
+                "effect": "Cancelled flights, trains and bus services in Andhra Pradesh, and transport curbs in Odisha, disrupt journeys across the eastern coast.",
                 "basis": "reported"
               },
               {
                 "group": "Power consumers",
                 "direction": "down",
                 "what": "electricity supply",
-                "effect": "Households in Visakhapatnam and other affected districts face power interruptions as wind and rain bring down lines and trees.",
+                "effect": "Snapped power lines and power interruptions in Visakhapatnam and other affected areas cut supply to households and businesses until repairs are made.",
                 "basis": "reported"
               }
             ],
             "watch": [
               {
-                "what": "The India Meteorological Department confirming the final landfall point after the landfall process ends",
-                "why": "It would show where the strongest winds struck and which districts are likely to need the most relief and repair.",
+                "what": "IMD bulletins on the weakening system's path and rainfall over Odisha and West Bengal",
+                "why": "They will show whether the extreme rainfall the IMD warned of extends flooding and disruption beyond Andhra Pradesh.",
                 "when": "2026-10-28",
                 "where": "India Meteorological Department"
               },
               {
-                "what": "Resumption of cancelled flights, trains and bus services in Andhra Pradesh",
-                "why": "It would indicate how quickly normal travel and goods movement along the east coast is returning.",
+                "what": "Restoration of cancelled flights, trains and bus services in Andhra Pradesh and Odisha",
+                "why": "Resumed services would indicate that roads, tracks and airports are clear and that travel disruption is easing.",
                 "when": "",
                 "where": "Ministry of Civil Aviation"
               },
               {
-                "what": "Sea conditions calming off north Chennai and Tiruvallur",
-                "why": "It would show whether the rough-sea warning for the Tamil Nadu coast has eased as forecast.",
-                "when": "2026-10-28",
-                "where": "Regional Meteorological Centre, Chennai"
+                "what": "Andhra Pradesh and Odisha government damage and casualty assessments",
+                "why": "They will show whether the early report of no loss of life in Andhra holds, and how badly homes and infrastructure were hit.",
+                "when": "",
+                "where": "Andhra Pradesh and Odisha state governments"
               }
             ],
             "context": [
-              "The Bay of Bengal regularly produces cyclones in the post-monsoon season, and India's east coast, especially Andhra Pradesh and Odisha, is among the most exposed regions.",
-              "Indian states now rely on large pre-emptive evacuations to cyclone shelters, which have sharply reduced death tolls compared with earlier decades, although damage to homes, crops and power lines often remains heavy.",
-              "The Godavari and Krishna river deltas in coastal Andhra Pradesh are major rice-growing and aquaculture areas, so storms there can affect farm and fishing livelihoods."
+              "The India Meteorological Department (IMD) is the official agency that tracks cyclones and issues warnings, and state governments use its forecasts to order evacuations, closures and transport suspensions.",
+              "The months after the monsoon are a main cyclone season over the Bay of Bengal, and the east coast states of Andhra Pradesh, Odisha and West Bengal are frequently affected.",
+              "A cyclone usually weakens once it moves over land, but its remnants can still bring heavy rain and flooding to areas well inland and to neighbouring states."
             ],
             "terms": [
               {
                 "term": "very severe cyclonic storm",
-                "meaning": "A category in the India Meteorological Department's scale for cyclones with strong sustained winds, ranking above a severe cyclonic storm."
+                "meaning": "An IMD intensity category for cyclones with sustained winds strong enough to cause major damage, ranked above a severe cyclonic storm."
               },
               {
                 "term": "landfall",
-                "meaning": "The point at which the centre of a cyclone moves from the sea onto the coast, usually bringing its strongest winds and heaviest rain."
+                "meaning": "The process of a cyclone's centre moving from the sea across the coastline onto land."
               },
               {
-                "term": "IMD",
-                "meaning": "The India Meteorological Department, the government agency that forecasts weather and tracks cyclones."
+                "term": "NCC, NSS",
+                "meaning": "The National Cadet Corps and National Service Scheme, youth programmes whose members volunteer in public service, including disaster relief."
               }
             ],
             "frameworks": {
               "timeline": {
                 "entries": [
                   {
-                    "when": "2026-10-27 15:20",
-                    "what": "Chief Minister N. Chandrababu Naidu said 84,396 people had been evacuated, 290 cyclone shelters set up and schools in affected districts would close on October 28.",
-                    "actor": "N. Chandrababu Naidu, Andhra Pradesh government",
+                    "when": "October 27, 2026, evening",
+                    "what": "Visakhapatnam district received 147.9 mm of rain between 8.30 a.m. and 9 p.m., with fallen trees, waterlogged roads, power interruptions, cancelled buses and closed beaches.",
+                    "actor": "Visakhapatnam civic agencies",
                     "outlet": "The Hindu",
                     "type": "action",
-                    "verification": "contested"
-                  },
-                  {
-                    "when": "2026-10-27 18:01",
-                    "what": "A 65-year-old man died at Mangalapalem after touching snapped live wires, and landfall was expected near the Yanam-Kakinada region between 2 a.m. and 4 a.m.",
-                    "actor": "Andhra Pradesh government",
-                    "outlet": "The Hindu",
-                    "type": "confirmation",
                     "verification": "confirmed"
                   },
                   {
-                    "when": "2026-10-27 18:38",
-                    "what": "Mint reported that at least 89,000 people had been evacuated, over 2,000 shelters set up, train services cancelled and Odisha planned to evacuate 48,000 people, with winds reaching 140 kmph.",
-                    "actor": "Andhra Pradesh and Odisha governments",
-                    "outlet": "Mint",
-                    "type": "action",
-                    "verification": "contested"
-                  },
-                  {
-                    "when": "2026-10-27 19:03",
-                    "what": "The Civil Aviation Ministry reviewed flight safety as Arnab was forecast to intensify into a very severe cyclone with wind speeds of 125–135 km/h.",
+                    "when": "October 27, 2026",
+                    "what": "The Civil Aviation Ministry reviewed flight safety as Arnab was forecast to become a very severe cyclone and hit Andhra Pradesh on October 28 with 125–135 km/h winds.",
                     "actor": "Ministry of Civil Aviation",
                     "outlet": "The Hindu",
                     "type": "action",
                     "verification": "confirmed"
                   },
                   {
-                    "when": "2026-10-27 20:17",
-                    "what": "Andhra Pradesh cancelled several flights and trains and brought 30,000 fishing boats ashore, while Odisha shut ghat roads, imposed transport curbs and began a large evacuation.",
+                    "when": "October 27, 2026, night",
+                    "what": "Andhra Pradesh cancelled flights and trains and brought 30,000 fishing boats ashore, while Odisha shut ghat roads, imposed transport curbs and began a massive evacuation.",
                     "actor": "Andhra Pradesh and Odisha governments",
                     "outlet": "The Hindu",
                     "type": "action",
                     "verification": "confirmed"
                   },
                   {
-                    "when": "2026-10-27 21:45",
-                    "what": "Very severe cyclonic storm Arnab began landfall near Narsapur, and weather department experts said the tentative landfall point could be indicated only after the process ended.",
-                    "actor": "India Meteorological Department",
+                    "when": "October 27, 2026, late night",
+                    "what": "The cyclone began landfall near Narsapur, and IMD experts said the process could take a long time and the landfall point could be fixed only afterwards.",
+                    "actor": "IMD",
                     "outlet": "The Hindu",
                     "type": "confirmation",
                     "verification": "confirmed"
+                  },
+                  {
+                    "when": "October 28, 2026, early morning",
+                    "what": "The IMD said the landfall process was complete, the system had moved entirely over land, and it had weakened into a severe cyclonic storm.",
+                    "actor": "IMD",
+                    "outlet": "The Hindu",
+                    "type": "confirmation",
+                    "verification": "confirmed"
+                  },
+                  {
+                    "when": "October 28, 2026, early morning",
+                    "what": "Chief Minister Naidu said that no loss of life had been reported in Andhra Pradesh.",
+                    "actor": "Andhra Pradesh Chief Minister Naidu",
+                    "outlet": "The Hindu",
+                    "type": "claim",
+                    "verification": "claimed"
                   }
                 ],
-                "current_status": "As of late October 27, The Hindu reports that Arnab has begun landfall near Narsapur on the Andhra Pradesh coast. The India Meteorological Department says the final landfall point will be indicated only after a possibly prolonged process.",
+                "current_status": "Arnab has crossed the Andhra Pradesh coast and weakened into a severe cyclonic storm over land. The IMD continues to warn of extreme rainfall and damaging winds in Andhra Pradesh and Odisha, and of heavy rain in West Bengal.",
                 "open_questions": [
-                  "Where will the India Meteorological Department finally place the landfall point, given earlier forecasts pointed to the Yanam-Kakinada region?",
-                  "How many people were actually evacuated and how many shelters opened, given that the official and Mint figures differ?",
-                  "How much damage will the cyclone cause to power lines, homes and crops in Andhra Pradesh and southern Odisha?"
+                  "How much damage have homes, roads, crops and power lines in Andhra Pradesh suffered?",
+                  "Will the extremely heavy rain forecast for Odisha cause flooding or casualties there?",
+                  "When will flights, trains, bus services and fishing resume along the affected coast?"
                 ]
               },
               "scenarios": {
-                "question": "How far will Cyclone Arnab's impact spread as its landfall process continues along the Andhra Pradesh coast?",
+                "question": "How much further disruption will the weakening Cyclone Arnab cause as it moves inland over Andhra Pradesh and Odisha?",
                 "scenarios": [
                   {
-                    "name": "Confined to coastal Andhra",
-                    "what": "As Chief Minister Naidu indicated, the main impact stays within northern and coastal Andhra Pradesh, up to the Krishna district.",
-                    "signal": "Damage and rain reports come mainly from Andhra Pradesh districts, while Odisha and Chennai report easing conditions.",
-                    "india_effect": "Relief and repair work would focus on Andhra Pradesh's power network, roads and fishing communities, and travel disruption could ease once services resume."
+                    "name": "Steady weakening over land",
+                    "what": "The system keeps weakening, as the IMD reported after landfall, and rain eases without major new flooding.",
+                    "signal": "IMD bulletins downgrade the system further and state governments begin lifting transport curbs and reopening schools.",
+                    "india_effect": "Flights, trains and power supply could be restored within days, and fishers may be allowed back to sea once warnings are withdrawn."
                   },
                   {
-                    "name": "Southern Odisha also hit",
-                    "what": "The storm brings heavy rain and wind into southern Odisha, where authorities shut ghat roads, curbed transport and planned to evacuate 48,000 people.",
-                    "signal": "Odisha reports heavy rain, road blockages or damage in its southern districts after landfall.",
-                    "india_effect": "Disruption to travel, power and livelihoods could extend across two states, which may widen the relief effort and slow the restoration of transport links."
+                    "name": "Extreme rain and flooding",
+                    "what": "The extreme rainfall the IMD warned of hits Andhra Pradesh and Odisha, and coastal low-lying areas flood, as Mint reported was possible.",
+                    "signal": "Reports emerge of flooded villages, rising rivers or further evacuations in Andhra Pradesh or Odisha.",
+                    "india_effect": "Transport and power disruption could last longer, relief shelters may stay in use, and damage to homes and crops could widen."
                   },
                   {
-                    "name": "Prolonged landfall",
-                    "what": "As weather department experts warned, the landfall process continues for a long time, keeping heavy rain and strong winds over the coast for longer.",
-                    "signal": "The India Meteorological Department delays naming a final landfall point while heavy rain persists into October 28.",
-                    "india_effect": "Longer exposure could deepen waterlogging, power outages and losses for fishers kept ashore, and could delay the reopening of schools and transport."
+                    "name": "Wider impact in West Bengal",
+                    "what": "The remnant system brings the heavy rain and squalls the IMD forecast for West Bengal, spreading disruption beyond the two worst-hit states.",
+                    "signal": "West Bengal authorities announce transport suspensions, school closures or evacuations linked to the storm.",
+                    "india_effect": "Disruption to travel and daily life could extend further along the eastern coast, affecting more households and transport links."
                   }
                 ]
               }
@@ -29507,8 +29649,11 @@
           "date": "2026-10-24T08:44:32.000Z",
           "relevance": "medium",
           "image": "https://th-i.thgim.com/public/incoming/cg6tg3/article71619476.ece/alternates/LANDSCAPE_1200/20261023411L.jpg",
-          "why": "",
-          "implications": [],
+          "why": "President Droupadi Murmu's two-day visit to Odisha has been postponed because a low-pressure area over the Bay of Bengal is forecast to become a cyclonic storm, with landfall likely on the morning of October 28.",
+          "implications": [
+            "Postponing a presidential visit suggests authorities expect the storm to disrupt movement and security arrangements in the forecast area, though the report does not describe the expected severity.",
+            "Coastal residents and fishing communities could face weather warnings and precautionary measures if the system strengthens as forecast, but the report does not say which stretch of coast is expected to be hit."
+          ],
           "place": {
             "name": "Odisha coast",
             "country": "India",
@@ -29544,7 +29689,89 @@
             }
           ],
           "priority": 45,
-          "thread": "t1tlxm8k"
+          "thread": "t1tlxm8k",
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-28T06:05:57.175Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "medium",
+              "reason": "The reports link the storm to safety and planning in Odisha, but they do not name the coast at risk or describe its strength, so the reach across India is limited."
+            },
+            "horizon": {
+              "value": "now",
+              "reason": "The storm is forecast to make landfall on the morning of October 28, within a week of the report."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single outlet, The Hindu, citing a forecast with no named official quoted, and the storm's track and strength could change."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "A named state or region",
+                "direction": "down",
+                "what": "Odisha visit and storm disruption",
+                "effect": "The President's visit to Odisha has been postponed, and the state may face storm preparations or disruption if the system intensifies as forecast.",
+                "basis": "reported"
+              },
+              {
+                "group": "Fishers",
+                "direction": "unclear",
+                "what": "possible sea-going restrictions",
+                "effect": "Fishing communities along the Bay of Bengal could be advised to avoid the sea if the cyclonic storm develops, which would interrupt their work.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Updates on whether the low-pressure area becomes a cyclonic storm and where it makes landfall",
+                "why": "This would show whether the forecast risk to the coast materialises and how severe it is.",
+                "when": "2026-10-28",
+                "where": "India Meteorological Department"
+              },
+              {
+                "what": "An announcement of a new date for the President's Odisha visit",
+                "why": "A new date would indicate when officials expect conditions to return to normal.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "Cyclonic storms in the Bay of Bengal commonly develop from low-pressure areas, and the India Meteorological Department tracks and forecasts them. Coastal state governments usually prepare for such storms through their disaster management authorities."
+            ],
+            "terms": [
+              {
+                "term": "low-pressure area",
+                "meaning": "A region where atmospheric pressure is lower than its surroundings, which can draw in moist air and, over warm seas, strengthen into a cyclonic storm."
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Low-pressure area forecast to intensify",
+                    "detail": "A low-pressure area over the Bay of Bengal is expected to become a cyclonic storm and make landfall on the morning of October 28.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Presidential visit postponed",
+                    "detail": "President Murmu's two-day Odisha visit has been postponed because of the forecast, showing that officials are treating the storm as a serious disruption.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Local preparations and disruption",
+                    "detail": "Coastal administrations, residents and fishing communities may need to prepare for the storm, which could disrupt daily activity near the landfall area.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The system fails to intensify into a cyclonic storm or moves away from the coast, so that little disruption occurs on land."
+              }
+            }
+          }
         },
         {
           "id": "sh6lyu0",
@@ -33423,6 +33650,114 @@
       "name": "Policy & Governance",
       "items": [
         {
+          "id": "samtnfn",
+          "headline": "Private hospitals may have to go public with tariffs",
+          "url": "https://www.livemint.com/news/india/private-hospitals-may-have-to-go-public-with-tariffs-11793090929449.html",
+          "source": "mint",
+          "date": "2026-10-28T01:01:02.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2026/10/27/1600x900/logo/pexels-photo-11782003_1790920351071_aFXj_179092036_1793098941311_D3bK_1793098941479_lwNw_7da7b932-b4cd-4dc6-a9b7-10c3a44a76d3_7C2B.jpeg",
+          "why": "Mint reports that the Centre may require private hospitals to upload their charges, specialities, registration details and grievance officer contacts to a central portal. The plan is meant to improve transparency for patients across India.",
+          "implications": [
+            "If the requirement is adopted, patients could compare hospital charges before choosing where to seek treatment, which may put pressure on hospitals that charge much more than others.",
+            "Hospitals would face a new compliance task, because they would have to keep their published charges and contact details accurate and up to date."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-28T06:02:48.720Z",
+            "tier": "quick",
+            "primary": "policy_tracker",
+            "complement": null,
+            "features": [
+              "policy_stage",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The proposal would reach patients through the information they can see about private hospital charges and would place a compliance duty on hospitals. It is still only a plan."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "The measure is still a possible plan with no reported date, so any portal and upload requirement would take time to put in place."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "The report rests on a single outlet, Mint, and describes what the Centre may do rather than a confirmed decision."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Salaried workers",
+                "direction": "unclear",
+                "what": "visibility of hospital charges",
+                "effect": "Households that use private hospitals could find charges and grievance contacts in one place, if the portal is created and hospitals comply.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "An official notice or draft rule requiring private hospitals to upload their charges to a central portal",
+                "why": "This would confirm whether the plan has become a formal requirement and when hospitals must comply.",
+                "when": "",
+                "where": "Ministry of Health and Family Welfare"
+              }
+            ],
+            "context": [
+              "Healthcare charges in private hospitals are largely set by the hospitals themselves, and patients often learn the cost only after treatment begins. Public disclosure rules are one way governments try to reduce that information gap."
+            ],
+            "terms": [],
+            "frameworks": {
+              "policy_tracker": {
+                "instrument": {
+                  "name": "Central portal for private hospital disclosures",
+                  "issuer": "Central Government",
+                  "jurisdiction": "India"
+                },
+                "stages": [
+                  {
+                    "stage": "draft",
+                    "date": "",
+                    "status": "current"
+                  },
+                  {
+                    "stage": "adopted",
+                    "date": "",
+                    "status": "next"
+                  }
+                ],
+                "obligations": [
+                  {
+                    "who": "Private hospitals",
+                    "what": "Hospitals may have to upload their charges, available specialities, registration details and grievance officer contacts to a central portal.",
+                    "from": ""
+                  }
+                ],
+                "applies_to_india": "yes",
+                "india_note": "If adopted, private hospitals across India would have to publish their charges and contact details. Patients could then compare costs and find grievance officers more easily."
+              }
+            }
+          },
+          "place": {
+            "name": "New Delhi",
+            "country": "India",
+            "lat": 28.61,
+            "lon": 77.21
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "Private hospitals may have to go public with tariffs",
+              "url": "https://www.livemint.com/news/india/private-hospitals-may-have-to-go-public-with-tariffs-11793090929449.html",
+              "date": "2026-10-28T01:01:02.000Z",
+              "kind": "hard",
+              "summary": "As part of a plan to improve transparency, the Centre may require hospitals to upload their charges, available specialities, registration details and grievance officer contacts to a central portal.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/10/27/1600x900/logo/pexels-photo-11782003_1790920351071_aFXj_179092036_1793098941311_D3bK_1793098941479_lwNw_7da7b932-b4cd-4dc6-a9b7-10c3a44a76d3_7C2B.jpeg"
+            }
+          ],
+          "thread": "t1efhn13"
+        },
+        {
           "id": "s780r8b",
           "headline": "RBI Governor Sanjay Malhotra flags need for 'prudent borrowing' as states face fiscal management challenges",
           "url": "https://www.livemint.com/economy/rbi-governor-sanjay-malhotra-flags-need-for-prudent-borrowing-as-states-face-fiscal-management-challenges-11793123643792.html",
@@ -33430,77 +33765,107 @@
           "date": "2026-10-27T17:59:57.000Z",
           "relevance": "medium",
           "image": "https://www.livemint.com/lm-img/img/2026/10/27/1600x900/logo/AP10-15-2025-000442B-0_1767957593073_1767957617524_1793123914062_GzCV_b4a6a67d-1804-42d2-a4bc-c405c8c00867_G9HH.jpg",
-          "why": "Reserve Bank of India Governor Sanjay Malhotra urged state governments to improve the quality of their spending, borrow prudently and strengthen cash management. The call bears on the fiscal health of state budgets, which fund many public services.",
+          "why": "Reserve Bank of India (RBI) Governor Sanjay Malhotra urged state governments to borrow prudently, improve spending quality and strengthen cash management, because states face fiscal management challenges that affect how sustainably public services are funded.",
           "implications": [
-            "States provide much of the spending on health, roads, schools and welfare, so weaker fiscal discipline could eventually squeeze the services and payments that residents depend on.",
-            "Wider use of digital platforms for lending and direct benefit transfers could make state payments more traceable, which may help states plan their cash needs more precisely."
+            "The Governor's emphasis on spending quality signals concern that states' borrowed money should fund lasting needs rather than simply cover routine shortfalls.",
+            "His call for wider digital lending and direct benefit transfers could mean faster, more traceable delivery of credit and welfare payments if states adopt these platforms.",
+            "Advising states to use the State Level Bankers' Committee (SLBC) forum points to closer coordination between state governments and banks on lending within each state.",
+            "The remarks are advice rather than binding rules, so any effect depends on whether individual states change their borrowing and spending plans."
           ],
           "analysis": {
             "v": 3,
-            "at": "2026-10-27T22:31:15.803Z",
-            "tier": "quick",
+            "at": "2026-10-28T06:05:14.485Z",
+            "tier": "standard",
             "primary": "impact_chain",
             "complement": null,
             "features": [],
             "exposure": {
               "level": "low",
-              "reason": "The reports describe a call for better practices, not a measure with a direct channel to household prices or incomes. Any effect on residents would be indirect, through state budgets and services."
+              "reason": "The channel is indirect: the Governor gave advice to state finance officials, and the reports describe no binding measure that changes borrowing costs or services immediately."
             },
             "horizon": {
               "value": "months",
-              "reason": "The governor made an appeal and the reports give no deadline, so any change would show up gradually in state budgets and borrowing over coming budget cycles."
+              "reason": "Any change would show up gradually in states' borrowing plans and budgets rather than immediately after a conference speech."
             },
             "confidence": {
               "level": "medium",
-              "reason": "This rests on a single outlet, Mint, reporting the Governor's on-record remarks; how states will respond is not reported."
+              "reason": "Two outlets, Mint and The Hindu, report the Governor's on-record remarks; whether states will act on them is not reported."
             },
-            "outlets": 1,
+            "outlets": 2,
             "affected": [
               {
                 "group": "Government finances",
                 "direction": "unclear",
-                "what": "state fiscal management",
-                "effect": "If states adopt prudent borrowing and better cash management, their budgets could become more sustainable; the reports do not say whether states will act on the advice.",
+                "what": "state borrowing and spending",
+                "effect": "State governments are urged to borrow prudently, improve spending quality and manage cash better, which could reshape their budgets if they act.",
+                "basis": "reported"
+              },
+              {
+                "group": "Borrowers",
+                "direction": "unclear",
+                "what": "access to digital credit",
+                "effect": "Wider use of digital lending platforms and closer coordination through the SLBC could make bank credit easier to reach in some states.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "Whether state governments announce changes to their borrowing, spending or cash management practices in response to the Governor's call",
-                "why": "It would show whether the central bank's appeal is turning into changes in state finances.",
+                "what": "States' market borrowing calendars and the amounts they raise at RBI auctions",
+                "why": "Smaller or steadier borrowing would suggest states are heeding the Governor's call for prudent borrowing.",
                 "when": "",
                 "where": "Reserve Bank of India"
+              },
+              {
+                "what": "State announcements expanding digital lending or direct benefit transfer platforms",
+                "why": "Such announcements would show whether states are taking up the Governor's call for wider digital delivery.",
+                "when": "",
+                "where": "State finance departments"
               }
             ],
             "context": [
-              "The Reserve Bank of India acts as banker and debt manager to state governments, which fund much of their deficits by issuing bonds, so its views on state borrowing carry institutional weight."
+              "The RBI acts as banker and debt manager to state governments and conducts the auctions through which states raise market loans.",
+              "States carry out a large share of public spending on services such as health, education and policing, so their finances shape what residents receive.",
+              "Heavy borrowing by governments can add to demand for funds in bond markets, which can influence wider interest rates."
             ],
             "terms": [
               {
+                "term": "State Level Bankers' Committee (SLBC)",
+                "meaning": "A forum in each state where banks and the state government coordinate on lending, banking access and development schemes."
+              },
+              {
                 "term": "direct benefit transfers",
-                "meaning": "Payments such as subsidies and welfare benefits sent straight into beneficiaries' bank accounts, instead of passing through intermediaries."
+                "meaning": "Government payments of subsidies or welfare sent straight into beneficiaries' bank accounts instead of through intermediaries."
+              },
+              {
+                "term": "cash management",
+                "meaning": "How a government times its receipts, spending and short-term borrowing so that it does not run short of funds."
               }
             ],
             "frameworks": {
               "impact_chain": {
                 "chain": [
                   {
-                    "step": "Governor urges states to borrow prudently",
-                    "detail": "Governor Sanjay Malhotra asked states to improve the quality of their spending, adopt prudent borrowing and strengthen cash management so that their finances remain sustainable.",
+                    "step": "Governor addresses state finance secretaries",
+                    "detail": "At the 36th Conference of State Finance Secretaries, Governor Malhotra urged states to improve spending quality, borrow prudently and strengthen cash management to keep their finances sustainable.",
                     "basis": "reported"
                   },
                   {
-                    "step": "Digital lending and transfers encouraged",
-                    "detail": "He also called for wider use of digital platforms for lending and for direct benefit transfers, which would shape how states channel money to beneficiaries.",
+                    "step": "Push for digital delivery and SLBC",
+                    "detail": "He called for wider use of digital platforms for lending and direct benefit transfers and for effective use of the SLBC forum, setting out practical tools for states.",
                     "basis": "reported"
                   },
                   {
-                    "step": "State budgets could become more sustainable",
-                    "detail": "If states follow this advice, better cash planning and targeted payments could ease fiscal strain and leave more room for public services that residents use.",
+                    "step": "States may revise borrowing plans",
+                    "detail": "If states follow the advice, they may borrow more cautiously and direct funds towards productive spending, changing the size and timing of their market loans.",
+                    "basis": "inferred"
+                  },
+                  {
+                    "step": "Effects on rates and services",
+                    "detail": "More restrained state borrowing could ease pressure on bond yields that influence wider interest rates, and better spending could improve public services for residents.",
                     "basis": "inferred"
                   }
                 ],
-                "breaks_if": "States do not change their borrowing and spending practices, since the Governor's remarks are advice and the reports mention no binding measure."
+                "breaks_if": "The effect would not reach residents if states treat the Governor's remarks as advice only and keep their borrowing and spending patterns unchanged."
               }
             }
           },
@@ -33520,9 +33885,362 @@
               "summary": "RBI Governor Sanjay Malhotra urged states to improve spending quality, adopt prudent borrowing and strengthen cash management to ensure fiscal sustainability. He also called for wider use of digital platforms for lending and direct benefit transfers.",
               "summaryV": 3,
               "image": "https://www.livemint.com/lm-img/img/2026/10/27/1600x900/logo/AP10-15-2025-000442B-0_1767957593073_1767957617524_1793123914062_GzCV_b4a6a67d-1804-42d2-a4bc-c405c8c00867_G9HH.jpg"
+            },
+            {
+              "source": "thehindu",
+              "headline": "RBI Governor asks states to adopt prudent borrowing strategies",
+              "url": "https://www.thehindu.com/business/rbi-governor-asks-states-to-adopt-prudent-borrowing-strategies/article71633065.ece",
+              "date": "2026-10-27T17:14:31.000Z",
+              "kind": "hard",
+              "summary": "Addressing the 36th Conference of State Finance Secretaries, the governor also advised states to make effective use of the State Level Bankers’ Committee (SLBC) forum",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/incoming/izhzti/article71633075.ece/alternates/LANDSCAPE_1200/20261023044L.jpg"
             }
           ],
           "thread": "tjq4k1t"
+        },
+        {
+          "id": "s12uqnjs",
+          "headline": "NPPA slashes cancer drug MRPs by up to 93%; Thiotepa cut by ₹72,921",
+          "url": "https://www.livemint.com/industry/nppa-slashes-cancer-drug-mrps-by-up-to-93-thiotepa-cut-by-72921-11793117657428.html",
+          "source": "mint",
+          "date": "2026-10-27T17:36:54.000Z",
+          "relevance": "high",
+          "image": "https://www.livemint.com/lm-img/img/2026/10/27/1600x900/logo/drugs_1716432555967_1793120663999_Olo2_f567af74-e9bc-4b60-821e-81d9d721ebdc_zu7n.jpg",
+          "why": "The National Pharmaceutical Pricing Authority (NPPA) has cut the maximum retail prices of 543 formulations across 137 non-scheduled cancer medicines, with some cuts above 90%. The cuts could lower out-of-pocket costs for cancer patients in India.",
+          "implications": [
+            "Because the cuts come through a trade margin rationalisation framework, they work by trimming the margins that distributors and retailers add, so these intermediaries may earn less on these drugs.",
+            "Thiotepa's price fell by ₹72,921, which suggests patients on costly treatments could see large savings once the new prices reach pharmacies and hospitals."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-28T06:02:48.719Z",
+            "tier": "quick",
+            "primary": "pass_through",
+            "complement": null,
+            "features": [
+              "price_move"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The cuts act through retail prices of cancer drugs and the margins of pharmacies and distributors. They matter greatly to affected families but concern one part of the healthcare and pharmaceutical industry."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "The reports do not say when the new prices take effect, and stock already labelled with older prices could take some weeks to clear."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "The report rests on one outlet, Mint, which describes the regulator's action. The effective date and how the new prices are enforced are not reported."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Importers & traders",
+                "direction": "down",
+                "what": "trade margins on cancer drugs",
+                "effect": "Distributors and retailers may earn less per pack because the cuts come through a framework that rationalises trade margins.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Salaried workers",
+                "direction": "down",
+                "what": "cancer drug costs",
+                "effect": "Households paying for cancer medicines out of pocket could pay lower prices at pharmacies once the new maximum retail prices are applied.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Whether pharmacies and hospitals begin selling the 543 formulations at the revised maximum retail prices",
+                "why": "This would show how quickly the price cuts reach patients.",
+                "when": "",
+                "where": "National Pharmaceutical Pricing Authority"
+              }
+            ],
+            "context": [
+              "The maximum retail price (MRP) is the highest price at which a medicine may legally be sold to a patient. Pricing authorities can limit the margins added between the manufacturer and the retailer."
+            ],
+            "terms": [
+              {
+                "term": "non-scheduled",
+                "meaning": "Medicines that are not on the national list of essential medicines, whose prices are not directly fixed but can still be capped by the regulator."
+              }
+            ],
+            "frameworks": {
+              "pass_through": {
+                "driver": {
+                  "variable": "Regulated maximum retail price of non-scheduled cancer medicines",
+                  "direction": "down",
+                  "size": "up to 93%"
+                },
+                "product": "other",
+                "rungs": [
+                  {
+                    "stage": "Regulator's price cut → Manufacturers' and distributors' margins",
+                    "pass": "likely",
+                    "damper": "The cut is applied through a trade margin rationalisation framework, so it reduces the margins in the supply chain rather than relying on market competition.",
+                    "lag": "weeks"
+                  },
+                  {
+                    "stage": "Revised price → Retail price at pharmacies",
+                    "pass": "partial",
+                    "damper": "Stock already printed with older prices could remain on shelves for some time, and the reports do not say when the new prices apply.",
+                    "lag": "weeks"
+                  },
+                  {
+                    "stage": "Retail price → Patient's out-of-pocket cost",
+                    "pass": "likely",
+                    "damper": "Patients who buy through hospitals or insurance may notice the change differently from those who pay at retail pharmacies.",
+                    "lag": "weeks"
+                  }
+                ],
+                "end_user": {
+                  "group": "Salaried workers",
+                  "effect": "Families paying for cancer treatment themselves may see lower bills for the affected medicines once the new prices reach pharmacies. The reports do not say when that will happen."
+                }
+              }
+            }
+          },
+          "place": {
+            "name": "New Delhi",
+            "country": "India",
+            "lat": 28.61,
+            "lon": 77.21
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "NPPA slashes cancer drug MRPs by up to 93%; Thiotepa cut by ₹72,921",
+              "url": "https://www.livemint.com/industry/nppa-slashes-cancer-drug-mrps-by-up-to-93-thiotepa-cut-by-72921-11793117657428.html",
+              "date": "2026-10-27T17:36:54.000Z",
+              "kind": "hard",
+              "summary": "The drug pricing regulator has slashed retail prices of 543 formulations across 137 non-scheduled cancer medicines, with some cuts exceeding 90% under a trade margin rationalisation framework.&nbsp;",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/10/27/1600x900/logo/drugs_1716432555967_1793120663999_Olo2_f567af74-e9bc-4b60-821e-81d9d721ebdc_zu7n.jpg"
+            }
+          ],
+          "thread": "t1efhn13"
+        },
+        {
+          "id": "sp422bx",
+          "headline": "Minister Gadkari warns of penalties for poor highway quality as AI monitoring expands",
+          "url": "https://www.livemint.com/news/india/minister-gadkari-warns-of-penalties-for-poor-highway-quality-as-ai-monitoring-expands-11793105596302.html",
+          "source": "mint",
+          "date": "2026-10-27T14:08:24.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2026/10/27/1600x900/logo/ANI-20260706471-0_1783673325639_1783673333441_098abcf5-d1f4-4b45-a214-891fb9a5d276_1793109912618_ZQYx_55392c12-7f7a-4361-8014-9bd62e536c37_bz0f.jpg",
+          "why": "Minister Gadkari says Network Surveillance Vehicles will track potholes across highways, and that contractors, consultants and officials could be blacklisted or penalised for quality lapses. This could affect the condition of roads Indians drive on.",
+          "implications": [
+            "Penalties cover contractors, consultants and officials alike, so responsibility for defects is spread across everyone who builds and supervises a road, not only the builder.",
+            "Automated pothole tracking could give the ministry its own evidence of defects instead of relying on complaints, which may make it easier to identify the stretch and the party responsible."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-27T22:30:23.626Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "medium",
+              "reason": "The effect reaches people who travel on national highways and the freight that moves on them, but it depends on how strictly the penalties are enforced and on the scale of the rollout."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Monitoring is still expanding, and any visible improvement in road surfaces would depend on inspections, enforcement and repair work over the coming months."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "This rests on a single Mint report quoting the minister; the scale of the rollout and the timing of enforcement are not stated."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Travellers & pilgrims",
+                "direction": "up",
+                "what": "highway surface quality",
+                "effect": "If penalties are enforced, defects such as potholes could be found and repaired faster, which may make road journeys smoother and safer.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "The first blacklisting or penalty against a contractor, consultant or official for poor highway quality",
+                "why": "It would show whether the warning is being turned into enforcement.",
+                "when": "",
+                "where": "Ministry of Road Transport and Highways"
+              }
+            ],
+            "context": [
+              "Highways in India are usually built and maintained by private contractors under government contracts, with separate consultants and officials supervising quality. Blacklisting bars a firm from winning future contracts, which makes it a serious commercial penalty."
+            ],
+            "terms": [
+              {
+                "term": "Network Surveillance Vehicles",
+                "meaning": "Vehicles that the road transport ministry says will be used to track potholes and other defects across the highway network."
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Minister announces penalties and AI monitoring",
+                    "detail": "Minister Gadkari says contractors, consultants and officials face blacklisting and penalties for quality lapses as AI-based monitoring expands.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Surveillance vehicles track potholes",
+                    "detail": "Network Surveillance Vehicles will track potholes across highways, producing a record of defects that can be linked to particular stretches and responsible parties.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Faster repairs on highways",
+                    "detail": "If defects lead to penalties, contractors may repair roads sooner and build to a higher standard, which could improve conditions for drivers and freight operators.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The monitoring data is not followed by actual penalties or repairs, so contractors and officials face no real consequence for poor quality."
+              }
+            }
+          },
+          "place": {
+            "name": "New Delhi",
+            "country": "India",
+            "lat": 28.61,
+            "lon": 77.21
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "Minister Gadkari warns of penalties for poor highway quality as AI monitoring expands",
+              "url": "https://www.livemint.com/news/india/minister-gadkari-warns-of-penalties-for-poor-highway-quality-as-ai-monitoring-expands-11793105596302.html",
+              "date": "2026-10-27T14:08:24.000Z",
+              "kind": "hard",
+              "summary": "Network Surveillance Vehicles will track potholes across highways, with contractors, consultants and officials facing blacklisting and penalties for quality lapses, the road transport minister says.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/10/27/1600x900/logo/ANI-20260706471-0_1783673325639_1783673333441_098abcf5-d1f4-4b45-a214-891fb9a5d276_1793109912618_ZQYx_55392c12-7f7a-4361-8014-9bd62e536c37_bz0f.jpg"
+            },
+            {
+              "source": "mint",
+              "headline": "Delhi to Haridwar in 90 minutes? Union Minister Nitin Gadkari explains how the new road project could cut travel time",
+              "url": "https://www.livemint.com/industry/infrastructure/delhi-to-haridwar-in-90-minutes-union-minister-nitin-gadkari-explains-how-the-new-road-project-could-cut-travel-time-11793121904601.html",
+              "date": "2026-10-27T17:32:05.000Z",
+              "kind": "hard",
+              "summary": "Nitin Gadkari said a road project opening next month could cut travel between Delhi and Haridwar to 90 minutes. He also highlighted faster journeys to religious destinations and warned that poor highway construction will bring penalties and blacklisting.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/10/27/1600x900/logo/gads_1793122058304_hRE7_1793122061619_mPPu_f644a8c9-cd05-4aa9-b76f-3926c543a974_8PPz.png"
+            }
+          ],
+          "thread": "t1n9b2do"
+        },
+        {
+          "id": "s1qdvngx",
+          "headline": "IRDAI to implement distribution reforms only after consensus: Ajay Seth",
+          "url": "https://www.thehindu.com/business/Industry/irdai-to-implement-distribution-reforms-only-after-consensus-ajay-seth/article71633033.ece",
+          "source": "thehindu",
+          "date": "2026-10-27T17:07:17.000Z",
+          "relevance": "medium",
+          "image": "https://th-i.thgim.com/public/incoming/ulgbeh/article71633055.ece/alternates/LANDSCAPE_1200/20261015283L.jpg",
+          "why": "Ajay Seth said the Insurance Regulatory and Development Authority of India (IRDAI) will bring in insurance distribution reforms only after building consensus. He also said it will work to speed up health insurance claims, which matters to policyholders.",
+          "implications": [
+            "Waiting for consensus may give insurers and intermediaries time to put their views to the regulator before rules are set, so changes to selling practices may arrive gradually.",
+            "Faster handling of health claims could matter most to families who depend on insurance to pay hospital bills, although the report gives no detail on how this will be done."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-28T06:02:48.719Z",
+            "tier": "quick",
+            "primary": "policy_tracker",
+            "complement": null,
+            "features": [
+              "policy_stage",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The reforms reach people through the way health and other insurance is sold and how claims are handled, and they bind insurers and intermediaries. The report gives no detail on specific changes, so the level is medium."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "The regulator says it will act only after consensus, and no dates are reported, so changes are unlikely to reach policyholders within weeks."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "The report rests on one outlet, The Hindu, quoting an on-record speech at a summit, and it gives no detail of the reforms."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Salaried workers",
+                "direction": "unclear",
+                "what": "health claim handling",
+                "effect": "Households that hold health insurance could see claims processed faster if the regulator's stated aim is met, but the report gives no details or timeline.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Publication of IRDAI proposals or consultation papers on insurance distribution reforms",
+                "why": "This would show what the reforms contain and how far consensus has been reached.",
+                "when": "",
+                "where": "IRDAI website"
+              }
+            ],
+            "context": [
+              "Distribution rules govern how insurers sell policies through agents, brokers and other intermediaries, including how they are paid. Indian insurance regulators usually consult the industry before finalising such rules."
+            ],
+            "terms": [
+              {
+                "term": "distribution reforms",
+                "meaning": "Changes to the rules on how insurance companies sell policies through agents, brokers and other channels."
+              }
+            ],
+            "frameworks": {
+              "policy_tracker": {
+                "instrument": {
+                  "name": "Insurance distribution reforms",
+                  "issuer": "Insurance Regulatory and Development Authority of India (IRDAI)",
+                  "jurisdiction": "India"
+                },
+                "stages": [
+                  {
+                    "stage": "announced",
+                    "date": "2026-10-27",
+                    "status": "current"
+                  }
+                ],
+                "obligations": [
+                  {
+                    "who": "IRDAI",
+                    "what": "The regulator said it will work to speed up the settlement of claims on health insurance policies.",
+                    "from": ""
+                  }
+                ],
+                "applies_to_india": "yes",
+                "india_note": "The reforms would change how insurers sell policies to Indian households, and faster health claims would affect policyholders. No rules or dates have been reported yet."
+              }
+            }
+          },
+          "place": {
+            "name": "Mumbai",
+            "country": "India",
+            "lat": 19.08,
+            "lon": 72.88
+          },
+          "reports": [
+            {
+              "source": "thehindu",
+              "headline": "IRDAI to implement distribution reforms only after consensus: Ajay Seth",
+              "url": "https://www.thehindu.com/business/Industry/irdai-to-implement-distribution-reforms-only-after-consensus-ajay-seth/article71633033.ece",
+              "date": "2026-10-27T17:07:17.000Z",
+              "kind": "hard",
+              "summary": "Speaking at the annual Business Standard BFSI Insights Summit, Ajay Seth said the regulator will work to expedite claims in case of health policies",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/incoming/ulgbeh/article71633055.ece/alternates/LANDSCAPE_1200/20261015283L.jpg"
+            }
+          ],
+          "thread": "tj7817y"
         },
         {
           "id": "sfanilh",
@@ -33983,108 +34701,6 @@
             }
           ],
           "thread": "tdh44jj"
-        },
-        {
-          "id": "sp422bx",
-          "headline": "Minister Gadkari warns of penalties for poor highway quality as AI monitoring expands",
-          "url": "https://www.livemint.com/news/india/minister-gadkari-warns-of-penalties-for-poor-highway-quality-as-ai-monitoring-expands-11793105596302.html",
-          "source": "mint",
-          "date": "2026-10-27T14:08:24.000Z",
-          "relevance": "medium",
-          "image": "https://www.livemint.com/lm-img/img/2026/10/27/1600x900/logo/ANI-20260706471-0_1783673325639_1783673333441_098abcf5-d1f4-4b45-a214-891fb9a5d276_1793109912618_ZQYx_55392c12-7f7a-4361-8014-9bd62e536c37_bz0f.jpg",
-          "why": "Minister Gadkari says Network Surveillance Vehicles will track potholes across highways, and that contractors, consultants and officials could be blacklisted or penalised for quality lapses. This could affect the condition of roads Indians drive on.",
-          "implications": [
-            "Penalties cover contractors, consultants and officials alike, so responsibility for defects is spread across everyone who builds and supervises a road, not only the builder.",
-            "Automated pothole tracking could give the ministry its own evidence of defects instead of relying on complaints, which may make it easier to identify the stretch and the party responsible."
-          ],
-          "analysis": {
-            "v": 3,
-            "at": "2026-10-27T22:30:23.626Z",
-            "tier": "quick",
-            "primary": "impact_chain",
-            "complement": null,
-            "features": [],
-            "exposure": {
-              "level": "medium",
-              "reason": "The effect reaches people who travel on national highways and the freight that moves on them, but it depends on how strictly the penalties are enforced and on the scale of the rollout."
-            },
-            "horizon": {
-              "value": "months",
-              "reason": "Monitoring is still expanding, and any visible improvement in road surfaces would depend on inspections, enforcement and repair work over the coming months."
-            },
-            "confidence": {
-              "level": "medium",
-              "reason": "This rests on a single Mint report quoting the minister; the scale of the rollout and the timing of enforcement are not stated."
-            },
-            "outlets": 1,
-            "affected": [
-              {
-                "group": "Travellers & pilgrims",
-                "direction": "up",
-                "what": "highway surface quality",
-                "effect": "If penalties are enforced, defects such as potholes could be found and repaired faster, which may make road journeys smoother and safer.",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "The first blacklisting or penalty against a contractor, consultant or official for poor highway quality",
-                "why": "It would show whether the warning is being turned into enforcement.",
-                "when": "",
-                "where": "Ministry of Road Transport and Highways"
-              }
-            ],
-            "context": [
-              "Highways in India are usually built and maintained by private contractors under government contracts, with separate consultants and officials supervising quality. Blacklisting bars a firm from winning future contracts, which makes it a serious commercial penalty."
-            ],
-            "terms": [
-              {
-                "term": "Network Surveillance Vehicles",
-                "meaning": "Vehicles that the road transport ministry says will be used to track potholes and other defects across the highway network."
-              }
-            ],
-            "frameworks": {
-              "impact_chain": {
-                "chain": [
-                  {
-                    "step": "Minister announces penalties and AI monitoring",
-                    "detail": "Minister Gadkari says contractors, consultants and officials face blacklisting and penalties for quality lapses as AI-based monitoring expands.",
-                    "basis": "reported"
-                  },
-                  {
-                    "step": "Surveillance vehicles track potholes",
-                    "detail": "Network Surveillance Vehicles will track potholes across highways, producing a record of defects that can be linked to particular stretches and responsible parties.",
-                    "basis": "reported"
-                  },
-                  {
-                    "step": "Faster repairs on highways",
-                    "detail": "If defects lead to penalties, contractors may repair roads sooner and build to a higher standard, which could improve conditions for drivers and freight operators.",
-                    "basis": "inferred"
-                  }
-                ],
-                "breaks_if": "The monitoring data is not followed by actual penalties or repairs, so contractors and officials face no real consequence for poor quality."
-              }
-            }
-          },
-          "place": {
-            "name": "New Delhi",
-            "country": "India",
-            "lat": 28.61,
-            "lon": 77.21
-          },
-          "reports": [
-            {
-              "source": "mint",
-              "headline": "Minister Gadkari warns of penalties for poor highway quality as AI monitoring expands",
-              "url": "https://www.livemint.com/news/india/minister-gadkari-warns-of-penalties-for-poor-highway-quality-as-ai-monitoring-expands-11793105596302.html",
-              "date": "2026-10-27T14:08:24.000Z",
-              "kind": "hard",
-              "summary": "Network Surveillance Vehicles will track potholes across highways, with contractors, consultants and officials facing blacklisting and penalties for quality lapses, the road transport minister says.",
-              "summaryV": 3,
-              "image": "https://www.livemint.com/lm-img/img/2026/10/27/1600x900/logo/ANI-20260706471-0_1783673325639_1783673333441_098abcf5-d1f4-4b45-a214-891fb9a5d276_1793109912618_ZQYx_55392c12-7f7a-4361-8014-9bd62e536c37_bz0f.jpg"
-            }
-          ],
-          "thread": "t1n9b2do"
         },
         {
           "id": "sw940mo",
@@ -35708,8 +36324,12 @@
           "date": "2026-10-24T07:32:50.000Z",
           "relevance": "medium",
           "image": "https://th-i.thgim.com/public/news/national/hwf3bx/article67730690.ece/alternates/LANDSCAPE_1200/NKV-NewParliament.JPG",
-          "why": "",
-          "implications": [],
+          "why": "A Parliamentary panel has selected the enhancement of the Members of Parliament Local Area Development Scheme (MPLADS) fund as a topic for study. It will examine how funds are released and whether the allocation should be increased.",
+          "implications": [
+            "Any increase in the allocation would be a charge on the Union budget, so a recommendation to enhance the fund could add to government spending.",
+            "The review of release guidelines could affect how quickly money reaches local projects recommended by MPs, although the report gives no detail on any proposed change.",
+            "This is only a study topic so far, and the report does not mention any recommendation or government decision."
+          ],
           "place": {
             "name": "New Delhi",
             "country": "India",
@@ -35746,7 +36366,76 @@
           ],
           "finChecked": true,
           "priority": 43,
-          "thread": "t1w360ne"
+          "thread": "t1w360ne",
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-28T06:05:57.175Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "low",
+              "reason": "The report describes only a committee study, with no change yet to funding or rules, so no direct channel to household costs or incomes is reported."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Committee studies usually take months to produce a report, and any government action would follow only after that."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "This rests on a single outlet, The Hindu, reporting the committee's choice of topic; no recommendation or government response has been reported."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Government finances",
+                "direction": "unclear",
+                "what": "possible higher MPLADS allocation",
+                "effect": "If the committee recommends and the government accepts a larger allocation, central spending on the scheme could rise, though no such decision has been reported.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "The committee's report and any recommendation on raising the MPLADS allocation or changing release guidelines",
+                "why": "It would show whether the panel favours more funding or faster releases.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "MPLADS lets each Member of Parliament recommend development works in their constituency, which are funded by the central government. Parliamentary committees study such schemes and make recommendations, which the government is not obliged to accept."
+            ],
+            "terms": [
+              {
+                "term": "MPLADS",
+                "meaning": "The Members of Parliament Local Area Development Scheme, under which MPs recommend local development works in their constituencies that are paid for by central government funds."
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Panel selects MPLADS topic",
+                    "detail": "A Parliamentary committee has chosen the enhancement of MPs' development fund as a subject for study.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Guidelines and allocation reviewed",
+                    "detail": "The committee will examine the guidelines governing the release of MPLADS funds and assess whether the allocation should be enhanced.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Possible recommendations to government",
+                    "detail": "The committee could recommend a larger allocation or changes to release rules, which the government may then consider.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The committee does not recommend changes, or the government declines to act on its recommendations, leaving the scheme's funding and rules as they are."
+              }
+            }
+          }
         },
         {
           "id": "s1hr8ht4",
@@ -44196,18 +44885,18 @@
     },
     "places": {
       "labelled": 0,
-      "none": 0,
+      "none": 1,
       "waiting": 0
     },
-    "analysed": 140,
-    "added": 7,
-    "merged": 9,
-    "failedBatches": 2,
+    "analysed": 116,
+    "added": 4,
+    "merged": 6,
+    "failedBatches": 1,
     "feeds": {
       "thehindu": {
         "feedsOk": 6,
         "feedsFailed": 0,
-        "items": 344
+        "items": 345
       },
       "mint": {
         "feedsOk": 6,
@@ -44216,13 +44905,13 @@
       }
     },
     "shareImages": {
-      "tried": 1,
-      "found": 1,
+      "tried": 0,
+      "found": 0,
       "summaries": 0
     },
     "threads": {
-      "assigned": 7,
-      "created": 5,
+      "assigned": 4,
+      "created": 0,
       "failedBatches": 0
     },
     "summaries": {
@@ -44236,7 +44925,7 @@
     },
     "frames": {
       "done": 4,
-      "waiting": 35,
+      "waiting": 33,
       "failedBatches": 0
     },
     "stats": {
@@ -44253,36 +44942,36 @@
     "models": {
       "filter": {
         "model": "claude-haiku-5-5",
-        "calls": 11,
-        "inputTokens": 57157,
-        "outputTokens": 26236,
-        "cost": 0.0187
+        "calls": 10,
+        "inputTokens": 48325,
+        "outputTokens": 20929,
+        "cost": 0.0155
       },
       "analysis_quick": {
         "model": "claude-sonnet-5-5",
-        "calls": 8,
-        "inputTokens": 22955,
-        "outputTokens": 18115,
-        "cost": 0.2271
+        "calls": 7,
+        "inputTokens": 20101,
+        "outputTokens": 14075,
+        "cost": 0.181
       },
       "analysis": {
         "model": "claude-opus-5-5",
         "calls": 1,
-        "inputTokens": 4366,
-        "outputTokens": 9020,
-        "cost": 0.1979
+        "inputTokens": 4401,
+        "outputTokens": 9045,
+        "cost": 0.1985
       },
       "threads": {
         "model": "claude-sonnet-5-5",
         "calls": 3,
-        "inputTokens": 11258,
-        "outputTokens": 1011,
-        "cost": 0.0326
+        "inputTokens": 11030,
+        "outputTokens": 513,
+        "cost": 0.0272
       }
     },
     "spend": {
-      "thisDesk": 0.4764,
-      "today": 0.6259,
+      "thisDesk": 0.4219,
+      "today": 1.4863,
       "cap": 6
     }
   },

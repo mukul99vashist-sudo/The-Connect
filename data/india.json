@@ -2,238 +2,289 @@
   "schema": 4,
   "region": "India",
   "since": "2026-10-02",
-  "updatedAt": "2026-10-27T22:28:12.274Z",
+  "updatedAt": "2026-10-28T06:01:08.180Z",
   "sectors": [
     {
       "id": "energy",
       "name": "Energy",
       "items": [
         {
-          "id": "s1mlob7z",
-          "headline": "Trump administration may let more Russian diesel onto market, energy secretary tells CNBC",
-          "url": "https://www.cnbc.com/2026/10/27/trump-putin-zelenskyy-russia-ukraine-diesel.html",
-          "source": "cnbc",
-          "date": "2026-10-27T22:18:59.000Z",
+          "id": "s82d2if",
+          "headline": "Yemen's Houthi rebels claim new attacks on oil facilities and airports across Saudi Arabia",
+          "url": "https://www.france24.com/en/middle-east/20261024-yemen-s-houthi-rebels-claim-new-attacks-on-oil-facilities-and-airports-across-saudi-arabia",
+          "source": "france24",
+          "date": "2026-10-24T17:50:25.000Z",
           "relevance": "medium",
-          "why": "The US energy secretary told CNBC that the Trump administration may let more Russian diesel onto the market under a Trump-Putin deal. Analysts say the volumes are too small to lower prices materially, which limits any relief for India.",
+          "image": "https://s.france24.com/media/display/1192dd1a-cfd3-11f1-97a7-bdb9616e85cf/w:1024/p:16x9/King-Khalid-International-Airport.jpg",
+          "why": "Houthi forces in Yemen kept firing missiles and drones at Saudi Arabia and claimed hits on airports and energy sites, including a refinery. Oil prices rose, which can raise India's crude import costs and affects Indians living in Saudi Arabia.",
           "implications": [
-            "Because the shipments are small compared with total diesel demand, global diesel prices are unlikely to fall much. Indian refiners and fuel importers may therefore see little change in their costs.",
-            "The report says the administration may allow more Russian diesel, so the volumes and timing remain uncertain. Any wider effect on prices would depend on how much is actually allowed onto the market."
+            "CNBC reports that attacks on a Saudi refinery pushed oil prices higher, so Indian refiners may face higher purchase costs that could later reach petrol, diesel and LPG prices.",
+            "Riyadh's main airport has only partly resumed flights after a two-week suspension, so travel between India and the Saudi capital may remain limited and unreliable.",
+            "Saudi air defences intercepted a barrage near Mecca, which could worry Indian pilgrims and their families about the safety of travel to Islam's holiest city.",
+            "Talks in Tehran between officials from Saudi Arabia, Turkiye, Pakistan and Iran are under way, but missile and drone attacks continued while the officials met."
           ],
           "analysis": {
             "v": 3,
-            "at": "2026-10-27T22:27:51.961Z",
-            "tier": "quick",
-            "primary": "trade_flow",
-            "complement": null,
+            "at": "2026-10-28T06:00:57.048Z",
+            "tier": "deep",
+            "primary": "disruption_map",
+            "complement": "escalation",
             "features": [
-              "trade_flow",
+              "disruption",
+              "armed_conflict",
+              "fast_moving",
               "pending_outcome"
             ],
             "exposure": {
-              "level": "low",
-              "reason": "Diesel is a household and farm essential in India, but the report says the extra volumes are too small to move prices materially. No direct channel to India is described."
+              "level": "high",
+              "reason": "The conflict reaches India through crude oil, a top Indian import whose price rose after the refinery attacks, and through the safety and travel of Indians living in or visiting Saudi Arabia."
             },
             "horizon": {
-              "value": "months",
-              "reason": "The administration has only said it may allow more diesel, and the effect on prices is expected to be small, so any impact on India would be slow and modest."
+              "value": "now",
+              "reason": "Oil prices were already rising on Wednesday and flights to Riyadh are only partly running, so the effects on costs and travel are immediate."
             },
             "confidence": {
               "level": "medium",
-              "reason": "This rests on a single CNBC report that quotes the energy secretary and unnamed analysts, and the report does not detail the deal's terms or volumes."
+              "reason": "Al Jazeera, CNBC, The New York Times and Africanews agree on the attacks and the Saudi interceptions, but the refinery attack rests on CNBC and Houthi claims of damage are unverified."
             },
-            "outlets": 1,
+            "outlets": 6,
             "affected": [
               {
                 "group": "Fuel & LPG users",
-                "direction": "unclear",
-                "what": "diesel price relief",
-                "effect": "Analysts say the volumes are too small to lower prices materially, so global diesel benchmarks that influence Indian fuel costs may change little.",
+                "direction": "up",
+                "what": "fuel and cooking gas costs",
+                "effect": "Higher global crude prices after the refinery attacks may raise Indian refiners' costs, which could later feed through to petrol, diesel and LPG prices.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Gulf & overseas workers and families",
+                "direction": "down",
+                "what": "safety and travel to Riyadh",
+                "effect": "Indian workers in Saudi Arabia may face greater risk from missile strikes and fewer flights home while Riyadh's airport runs only partly.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Travellers & pilgrims",
+                "direction": "down",
+                "what": "flight availability and safety",
+                "effect": "A partial airport reopening and interceptions near Mecca could reduce flight options and raise safety concerns for Indian travellers and pilgrims to Saudi Arabia.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Government finances",
+                "direction": "up",
+                "what": "oil import bill",
+                "effect": "Higher crude prices could increase what India pays for imported oil, adding pressure on the trade deficit and on any fuel subsidies.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "Any official statement setting out how much Russian diesel the administration will allow onto the market",
-                "why": "It would show whether the volumes are large enough to affect global diesel prices.",
+                "what": "Outcome of the meeting of Saudi, Turkish, Pakistani and Iranian officials in Tehran on de-escalating the conflict",
+                "why": "An agreement that actually halts the attacks would reduce the risk to Saudi oil supply and to Indians in the kingdom.",
+                "when": "2026-10-27",
+                "where": ""
+              },
+              {
+                "what": "Full resumption of flights at King Khalid International Airport in Riyadh",
+                "why": "It would show whether air links used by Indian workers and travellers have returned to normal.",
                 "when": "",
-                "where": "US Department of Energy"
+                "where": ""
+              },
+              {
+                "what": "Saudi statements on damage to the refinery and other energy sites hit by Houthi attacks",
+                "why": "Confirmed damage would indicate whether Saudi oil output and exports, which India relies on, are actually reduced.",
+                "when": "",
+                "where": ""
               }
             ],
             "context": [
-              "India imports most of its crude oil and refines it into diesel, which is a key fuel for transport, farming and freight. Global fuel prices therefore influence India's import costs and pump prices."
+              "India imports most of the crude oil it uses, and Saudi Arabia has long been one of its largest suppliers, so attacks on Saudi energy sites matter directly for Indian fuel costs.",
+              "Saudi Arabia hosts one of the largest communities of Indian workers abroad, and their earnings sent home support many households, especially in southern Indian states.",
+              "Large numbers of Indian Muslims travel to Mecca every year for the Hajj and Umrah pilgrimages, usually on flights that land at Saudi airports."
             ],
-            "terms": [],
+            "terms": [
+              {
+                "term": "Houthis",
+                "meaning": "An armed movement that controls much of northern Yemen and is backed by Iran, according to the reports."
+              },
+              {
+                "term": "Saudi-led coalition",
+                "meaning": "A military alliance headed by Saudi Arabia that is fighting the Houthis in Yemen."
+              }
+            ],
             "frameworks": {
-              "trade_flow": {
-                "good": "Diesel",
-                "actors": [
+              "disruption_map": {
+                "node": {
+                  "name": "King Khalid International Airport, Riyadh",
+                  "type": "airport",
+                  "status": "partial",
+                  "as_of": "2026-10-25"
+                },
+                "cause": {
+                  "text": "Repeated Houthi missile strikes on Riyadh, including several deadly attacks on the airport this month, led to a two-week suspension of operations.",
+                  "status": "confirmed"
+                },
+                "flows": [
                   {
-                    "country": "Russia",
-                    "role": "exporter",
-                    "is_india": false
-                  },
-                  {
-                    "country": "United States",
-                    "role": "third_party",
-                    "is_india": false
+                    "flow": "air passengers",
+                    "india_link": "Indian workers based in Riyadh, their families and business travellers may depend on flights through this airport, so a partial service could limit their ability to travel between India and the Saudi capital.",
+                    "basis": "inferred"
                   }
                 ],
-                "change": {
-                  "type": "deal",
-                  "effective": ""
-                },
-                "india_position": {
-                  "role": "not_involved",
-                  "note": "The report does not mention India in this trade. Indian buyers could be affected only indirectly, through global diesel prices, which analysts say are unlikely to fall materially."
-                },
-                "volumes": []
+                "alternatives": [],
+                "duration": "Operations were suspended for two weeks before a partial resumption of flights."
+              },
+              "escalation": {
+                "move": "none",
+                "rung": 6,
+                "current_rung": 6,
+                "previous_rung": null,
+                "development": "The Houthis claimed new attacks on Saudi airports and energy sites, including a refinery, while Saudi forces reported intercepting missiles and drones aimed at Riyadh, the south and near Mecca.",
+                "evidence": "The new attacks on airports and a refinery continue strikes on critical infrastructure, the war's existing rung. The partial airport reopening and the Tehran talks are not a ceasefire or withdrawal.",
+                "next_signals": [
+                  {
+                    "rung": 7,
+                    "signal": "Saudi or Houthi forces launch a large-scale cross-border ground offensive, or either side declares all-out war with full national mobilisation."
+                  },
+                  {
+                    "rung": 5,
+                    "signal": "Houthi and coalition strikes continue but stop hitting airports, refineries and other critical infrastructure, with attacks limited to military targets."
+                  }
+                ],
+                "india_channels": [
+                  "oil",
+                  "flights",
+                  "diaspora safety"
+                ],
+                "conflict": "w1f5pudc",
+                "applied": "none",
+                "from": 6
               }
             }
           },
           "place": {
-            "name": "Washington",
-            "country": "United States",
-            "lat": 38.9,
-            "lon": -77,
+            "name": "Saudi Arabia",
+            "country": "Saudi Arabia",
+            "lat": 24.7,
+            "lon": 46.7,
             "involves": [
-              "Russia"
+              "Yemen"
             ]
           },
+          "stage": "analyse",
+          "filter": {
+            "verdict": "analyse",
+            "channel": "prices_supply",
+            "status": "done",
+            "effect": "high",
+            "reach": "national",
+            "reason": "Houthi strikes on Saudi oil facilities threaten crude supply India imports.",
+            "at": "2026-10-24T20:59:19.642Z"
+          },
           "reports": [
+            {
+              "source": "france24",
+              "headline": "Yemen's Houthi rebels claim new attacks on oil facilities and airports across Saudi Arabia",
+              "url": "https://www.france24.com/en/middle-east/20261024-yemen-s-houthi-rebels-claim-new-attacks-on-oil-facilities-and-airports-across-saudi-arabia",
+              "date": "2026-10-24T17:50:25.000Z",
+              "kind": "hard",
+              "summary": "Yemen’s Iran-allied Houthi rebels said they launched attacks at Saudi oil facilities and airports on Saturday while Yemen’s Saudi-backed government ​said the ‌group also fired three ballistic missiles at coast guard sites in ⁠the port city of Aden.",
+              "summaryV": 3,
+              "image": "https://s.france24.com/media/display/1192dd1a-cfd3-11f1-97a7-bdb9616e85cf/w:1024/p:16x9/King-Khalid-International-Airport.jpg"
+            },
+            {
+              "source": "abc",
+              "headline": "Houthis claim 'phases' of attacks on Saudi airports, oil pipelines",
+              "url": "https://www.abc.net.au/news/2026-10-25/houthis-claim-attacks-on-saudi-airports-oil-pipelines/107305824",
+              "date": "2026-10-24T19:25:25.000Z",
+              "kind": "hard",
+              "summary": "Yemen's Iran-allied Houthis say they have launched attacks at airports and oil facilities, as clashes between Saudi Arabia and the militant group intensify.",
+              "summaryV": 3,
+              "image": "https://live-production.wcms.abc-cdn.net.au/c1a0b5233b0ebceca8569333d7d301fc?impolicy=wcms_crop_resize&cropH=2714&cropW=4825&xPos=88&yPos=0&width=862&height=485"
+            },
+            {
+              "source": "aljazeera",
+              "headline": "Houthis launch attacks on Saudi Arabia and Yemen’s Aden",
+              "url": "https://www.aljazeera.com/news/2026/10/24/houthis-launch-attacks-on-saudi-arabia-and-yemens-aden",
+              "date": "2026-10-24T21:08:51.000Z",
+              "kind": "breaking",
+              "summary": "Houthi missiles reportedly struck a number of targets in Yemen, including Aden's airport and a coastguard base.",
+              "summaryV": 3
+            },
+            {
+              "source": "aljazeera",
+              "headline": "Saudi Arabia intercepts missiles and drones as fighting with Houthis rages",
+              "url": "https://www.aljazeera.com/news/2026/10/25/saudi-arabia-intercepts-missiles-and-drones-as-fighting-with-houthis-rages",
+              "date": "2026-10-25T10:42:51.000Z",
+              "kind": "hard",
+              "summary": "Saudi-led coalition says intercepted drone, missile launched towards Riyadh and 10 missiles targeting southern region.",
+              "summaryV": 3
+            },
             {
               "source": "cnbc",
-              "headline": "Trump administration may let more Russian diesel onto market, energy secretary tells CNBC",
-              "url": "https://www.cnbc.com/2026/10/27/trump-putin-zelenskyy-russia-ukraine-diesel.html",
-              "date": "2026-10-27T22:18:59.000Z",
+              "headline": "Saudi Arabia says it intercepted missiles and drones from Iran-backed Houthis",
+              "url": "https://www.cnbc.com/2026/10/25/saudi-arabia-houthi-missile-drone-interceptions.html",
+              "date": "2026-10-25T13:41:37.000Z",
               "kind": "hard",
-              "summary": "The diesel volumes in the Trump-Putin deal won't materially lower prices because the shipments are small compared to total demand, analysts say.",
-              "summaryV": 3,
-              "ogTried": true,
-              "descTried": true,
-              "image": "https://image.cnbcfm.com/api/v1/image/108447261-1792683071904-gettyimages-2300877130-AFP_D44B7V6.jpeg?v=1792683181&w=1920&h=1080"
-            }
-          ],
-          "image": "https://image.cnbcfm.com/api/v1/image/108447261-1792683071904-gettyimages-2300877130-AFP_D44B7V6.jpeg?v=1792683181&w=1920&h=1080",
-          "thread": "t1uohici"
-        },
-        {
-          "id": "s7mcla6",
-          "headline": "Rubio invokes China, Russia to defend disputed Venezuela oil deal",
-          "url": "https://www.scmp.com/news/china/diplomacy/article/3372347/rubio-invokes-china-russia-defend-disputed-venezuela-oil-deal",
-          "source": "scmp",
-          "date": "2026-10-27T16:18:20.000Z",
-          "relevance": "medium",
-          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/28/d743d552-9b39-4401-a5fc-cbf0eaf1b205_b9d25b51.jpg?itok=foDpby-c&v=1793122299",
-          "why": "Marco Rubio, the US Secretary of State, defended Washington's Venezuela oil agreement as an alternative to Chinese and Russian involvement. India imports most of its crude oil, so shifts in Venezuelan supply could matter indirectly.",
-          "implications": [
-            "The dispute shows that control over Venezuelan oil is being framed as a contest between the United States and rivals, which could shape which buyers get access to that crude.",
-            "If access is steered towards particular buyers, Indian refiners may have fewer or different supply options, although the report gives no detail on the deal's terms."
-          ],
-          "analysis": {
-            "v": 3,
-            "at": "2026-10-27T22:26:27.689Z",
-            "tier": "quick",
-            "primary": "trade_flow",
-            "complement": null,
-            "features": [
-              "trade_flow"
-            ],
-            "exposure": {
-              "level": "low",
-              "reason": "The report describes a political defence of an agreement and gives no volumes or buyers, so the channel to India through crude supply and prices is indirect and unconfirmed."
+              "summary": "Saudi Arabia says it intercepted Houthi missiles and drones, while the Houthis claimed attacks on airports and energy sites amid rising regional supply risks.",
+              "summaryV": 3
             },
-            "horizon": {
-              "value": "months",
-              "reason": "The report describes a political dispute over an agreement and gives no dates for any change in oil flows."
-            },
-            "confidence": {
-              "level": "medium",
-              "reason": "This rests on one outlet, the South China Morning Post, quoting an on-record official, and the terms of the oil agreement are not described in the report."
-            },
-            "outlets": 1,
-            "affected": [
-              {
-                "group": "Fuel & LPG users",
-                "direction": "unclear",
-                "what": "crude supply options",
-                "effect": "Indian refiners' crude costs could be affected if Venezuelan supply is redirected, which may feed through to fuel prices, though the report gives no volumes.",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "Publication of the terms of the US Venezuela oil agreement, including which buyers may receive the oil",
-                "why": "It would show whether the deal changes crude availability for buyers such as Indian refiners.",
-                "when": "",
-                "where": "US State Department"
-              }
-            ],
-            "context": [
-              "India imports most of the crude oil it uses, so refiners watch supply changes among major producers because these can influence global prices and the choice of suppliers."
-            ],
-            "terms": [],
-            "frameworks": {
-              "trade_flow": {
-                "good": "crude oil",
-                "actors": [
-                  {
-                    "country": "Venezuela",
-                    "role": "exporter",
-                    "is_india": false
-                  },
-                  {
-                    "country": "United States",
-                    "role": "third_party",
-                    "is_india": false
-                  },
-                  {
-                    "country": "China",
-                    "role": "third_party",
-                    "is_india": false
-                  },
-                  {
-                    "country": "Russia",
-                    "role": "third_party",
-                    "is_india": false
-                  }
-                ],
-                "change": {
-                  "type": "deal",
-                  "effective": ""
-                },
-                "india_position": {
-                  "role": "not_involved",
-                  "note": "The report does not mention India or any buyer of the oil. India is a large crude importer, so a change in who can access Venezuelan oil could, in principle, affect Indian buyers."
-                },
-                "volumes": []
-              }
-            }
-          },
-          "place": {
-            "name": "Washington",
-            "country": "United States",
-            "lat": 38.9,
-            "lon": -77,
-            "involves": [
-              "Venezuela",
-              "China",
-              "Russia"
-            ]
-          },
-          "reports": [
             {
-              "source": "scmp",
-              "headline": "Rubio invokes China, Russia to defend disputed Venezuela oil deal",
-              "url": "https://www.scmp.com/news/china/diplomacy/article/3372347/rubio-invokes-china-russia-defend-disputed-venezuela-oil-deal",
-              "date": "2026-10-27T16:18:20.000Z",
+              "source": "aljazeera",
+              "headline": "Saudi air defences intercept Houthi barrage near Mecca",
+              "url": "https://www.aljazeera.com/news/2026/10/25/saudi-air-defences-intercept-houthi-barrage-near-mecca",
+              "date": "2026-10-25T13:49:33.000Z",
               "kind": "hard",
-              "summary": "US Secretary of State Marco Rubio has defended Washington’s oil agreement in Venezuela as an alternative to Chinese and Russian involvement, pushing back against criticism from opposition leader Maria Corina Machado.",
+              "summary": "Houthi attacks on Saudi Arabia escalate as fierce ground battles and a devastating siege strangle Yemen's Taiz.",
+              "summaryV": 3
+            },
+            {
+              "source": "africanews",
+              "headline": "Saudi Arabia's Riyadh airport partially resumes flights after Houthi attacks",
+              "url": "http://www.africanews.com/2026/10/25/saudi-arabias-riyadh-airport-partially-resumes-flights-after-houthi-attacks/",
+              "date": "2026-10-25T14:35:41.000Z",
+              "kind": "hard",
+              "summary": "The announcement comes after a two-week suspension of operations following strikes from Yemen's Houthis on the Saudi capital.",
+              "summaryV": 3
+            },
+            {
+              "source": "nyt",
+              "headline": "Saudi Arabia Reopens Riyadh Airport Even as Houthis Threaten Further Strikes",
+              "url": "https://www.nytimes.com/2026/10/25/world/middleeast/saudi-arabia-riyadh-airport-reopens.html",
+              "date": "2026-10-25T15:50:53.000Z",
+              "kind": "hard",
+              "summary": "The Houthis, an Iran-backed Yemeni militia, launched several deadly attacks on the airport this month.",
               "summaryV": 3,
-              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/28/d743d552-9b39-4401-a5fc-cbf0eaf1b205_b9d25b51.jpg?itok=foDpby-c&v=1793122299"
+              "image": "https://static01.nyt.com/images/2026/10/25/multimedia/25int-saudi-airport-1-pqfm/25int-saudi-airport-1-pqfm-mediumSquareAt3X.jpg"
+            },
+            {
+              "source": "aljazeera",
+              "headline": "Saudi-led coalition says it downed Houthi missiles, drones aimed at kingdom",
+              "url": "https://www.aljazeera.com/news/2026/10/27/saudi-led-coalition-destroys-four-houthi-drones",
+              "date": "2026-10-27T04:54:26.000Z",
+              "kind": "breaking",
+              "summary": "The attacks come as top officials from Saudi Arabia, Turkiye, Pakistan and Iran meet in Tehran to de-escalate conflict.",
+              "summaryV": 3
+            },
+            {
+              "source": "cnbc",
+              "headline": "Oil prices rise as Houthi attacks on Saudi Arabian refinery raise supply worries",
+              "url": "https://www.cnbc.com/2026/10/28/oil-price-today-wti-brent-hormuz.html",
+              "date": "2026-10-28T05:52:51.000Z",
+              "kind": "hard",
+              "summary": "Oil prices climbed Wednesday as investors weighed the prospect of a prolonged conflict in the Middle East.",
+              "summaryV": 3
             }
           ],
-          "thread": "t1q27ee0"
+          "priority": 100,
+          "thread": "tq5ix5r",
+          "stats": {
+            "v": 2,
+            "at": "2026-10-25T18:30:40.263Z",
+            "series": []
+          },
+          "conflict": "w1f5pudc"
         },
         {
           "id": "s1pzryi5",
@@ -486,6 +537,17 @@
               "kind": "hard",
               "summary": "The US and Israel have teased strikes around their elections, particularly against Iran's civilian infrastructure.",
               "summaryV": 3
+            },
+            {
+              "source": "guardian",
+              "headline": "Gulf states working on multipart peace deal to avert renewal of US-Iran war",
+              "url": "https://www.theguardian.com/world/2026/oct/28/gulf-states-multipart-peace-deal-avert-renewal-us-iran-war",
+              "date": "2026-10-28T05:00:55.000Z",
+              "kind": "hard",
+              "summary": "Talks are aimed at reopening strait of Hormuz and lifting sanctions on Iran, and for Houthis to withdraw in Yemen",
+              "summaryV": 3,
+              "lede": "A multipronged peace deal to reopen the strait of Hormuz within four days of sanctions being lifted and for the Houthis to withdraw substantial forces inside Yemen are at the heart of Gulf states’ plans to avert what they regard as a disastrous renewal of war between Iran and the US.",
+              "image": "https://i.guim.co.uk/img/media/7696200dce7254abdadd923a886adbbcc098804a/11_17_4694_3755/master/4694.jpg?width=700&quality=85&auto=format&fit=max&s=1f6dfb0e51d7c971cc831a2865c0e4a3"
             }
           ],
           "thread": "t2ogxay",
@@ -611,270 +673,258 @@
           }
         },
         {
-          "id": "s82d2if",
-          "headline": "Yemen's Houthi rebels claim new attacks on oil facilities and airports across Saudi Arabia",
-          "url": "https://www.france24.com/en/middle-east/20261024-yemen-s-houthi-rebels-claim-new-attacks-on-oil-facilities-and-airports-across-saudi-arabia",
-          "source": "france24",
-          "date": "2026-10-24T17:50:25.000Z",
+          "id": "s7mcla6",
+          "headline": "Rubio invokes China, Russia to defend disputed Venezuela oil deal",
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3372347/rubio-invokes-china-russia-defend-disputed-venezuela-oil-deal",
+          "source": "scmp",
+          "date": "2026-10-27T16:18:20.000Z",
           "relevance": "medium",
-          "image": "https://s.france24.com/media/display/1192dd1a-cfd3-11f1-97a7-bdb9616e85cf/w:1024/p:16x9/King-Khalid-International-Airport.jpg",
-          "why": "Houthi rebels claimed new attacks on Saudi oil facilities and airports, while Riyadh's airport partially resumed flights after a two-week suspension. India is exposed through Saudi crude supplies, the large Indian community in Saudi Arabia and Gulf air travel.",
+          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/28/d743d552-9b39-4401-a5fc-cbf0eaf1b205_b9d25b51.jpg?itok=foDpby-c&v=1793122299",
+          "why": "The United States has struck an oil deal with Venezuela's post-Maduro government, which President Trump called the 'greatest oil victory in history'. Steering Venezuelan crude toward the US could change which oil Indian refiners can buy.",
           "implications": [
-            "The Houthis say they hit Saudi oil facilities and pipelines. If the damage is confirmed, it could tighten regional supply and raise the crude prices that Indian refiners pay.",
-            "The partial reopening of Riyadh's airport restores some flights for Indians travelling to and from the Saudi capital. Houthi threats of further strikes, however, leave schedules exposed to fresh suspensions.",
-            "Saudi air defences intercepted a Houthi barrage near Mecca. This brings the fighting close to the city that Indian Muslims visit for Umrah and Hajj pilgrimages.",
-            "Houthi missiles also reportedly struck Aden's airport and a coastguard base. Strikes on this southern Yemeni port city could raise perceived risk for ships in nearby waters that carry Indian trade."
+            "Secretary of State Marco Rubio presented the deal as an alternative to Chinese and Russian involvement, suggesting Washington wants Venezuelan oil kept out of rival hands.",
+            "If more Venezuelan crude flows to the United States, less may be available to Asian buyers, which could narrow sourcing options for Indian refiners that process heavy oil.",
+            "Opposition leader Maria Corina Machado has criticised the deal, so its political durability inside Venezuela, and therefore the reliability of supply, remains uncertain.",
+            "Trump's display of a tanker he said held one million barrels shows oil is already moving, but the reports give no terms for overall volumes or buyers."
           ],
           "analysis": {
             "v": 3,
-            "at": "2026-10-25T16:37:30.362Z",
-            "tier": "deep",
-            "primary": "disruption_map",
-            "complement": "escalation",
+            "at": "2026-10-28T06:00:57.048Z",
+            "tier": "standard",
+            "primary": "trade_flow",
+            "complement": null,
             "features": [
-              "disruption",
-              "armed_conflict",
-              "fast_moving",
-              "pending_outcome"
+              "trade_flow"
             ],
             "exposure": {
-              "level": "high",
-              "reason": "The conflict reaches India through Saudi crude supplies, the safety of the large Indian community in Saudi Arabia, and flights used by Indian workers and pilgrims. All of these are household essentials or concern the safety and travel of Indians."
+              "level": "medium",
+              "reason": "The deal reaches India mainly through the refining industry, which could see Venezuelan crude directed to the United States; the reports describe no direct effect on Indian buyers."
             },
             "horizon": {
-              "value": "now",
-              "reason": "The partial reopening of Riyadh's airport and continuing Houthi strikes affect Indian travellers and residents in Saudi Arabia immediately."
+              "value": "months",
+              "reason": "Any shift in Venezuelan export patterns would show up in cargo allocations and refinery purchases over months, not immediately."
             },
             "confidence": {
               "level": "medium",
-              "reason": "Eight reports from five outlets agree that the attacks and the airport reopening took place, but the strikes on oil facilities rest on Houthi claims and the damage is unconfirmed."
+              "reason": "The South China Morning Post and The Guardian report on-record statements by Rubio and Trump, but the deal's terms are not reported and the tanker volume is Trump's claim."
             },
-            "outlets": 6,
+            "outlets": 2,
             "affected": [
               {
-                "group": "Gulf & overseas workers and families",
-                "direction": "down",
-                "what": "safety of Indians in Saudi Arabia",
-                "effect": "Repeated missile and drone attacks on Riyadh and other Saudi cities could put Indian workers there at risk and worry their families in India.",
-                "basis": "inferred"
-              },
-              {
-                "group": "Travellers & pilgrims",
+                "group": "Importers & traders",
                 "direction": "mixed",
-                "what": "flight availability to Riyadh",
-                "effect": "Riyadh's airport has partially resumed flights after two weeks, but Houthi threats of further strikes could disrupt travel again, including for pilgrims heading towards Mecca.",
+                "what": "crude sourcing options",
+                "effect": "Indian refiners may find less Venezuelan heavy crude on offer if the US deal channels it to American buyers, which could change their supply mix.",
                 "basis": "inferred"
               },
               {
                 "group": "Fuel & LPG users",
                 "direction": "unclear",
-                "what": "crude oil import costs",
-                "effect": "If the claimed attacks on Saudi oil sites cut output, higher crude prices could raise Indian refiners' costs and may feed into petrol, diesel and LPG prices.",
+                "what": "fuel prices",
+                "effect": "Any change in global crude availability from the deal could affect refiners' costs, but the reports give no sign of an effect on Indian pump prices.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "Full resumption of scheduled flights at Riyadh's King Khalid International Airport",
-                "why": "It would show whether air links used by Indian workers and travellers have returned to normal.",
+                "what": "Publication of the US-Venezuela oil deal's terms, including volumes and permitted buyers",
+                "why": "The terms would show whether buyers outside the United States, including Indian refiners, can still purchase Venezuelan crude.",
+                "when": "",
+                "where": "US State Department"
+              },
+              {
+                "what": "Venezuelan opposition challenges to the oil agreement led by Maria Corina Machado",
+                "why": "Strong opposition could make the deal less stable and future Venezuelan supply less predictable.",
                 "when": "",
                 "where": ""
-              },
-              {
-                "what": "Saudi confirmation or denial of damage to oil facilities and pipelines",
-                "why": "It would show whether the Houthi claims translate into a real loss of oil supply.",
-                "when": "",
-                "where": "Saudi Press Agency"
-              },
-              {
-                "what": "Indian embassy advisories for Indian nationals in Saudi Arabia",
-                "why": "They would signal whether Indian authorities judge the risk to Indians there to be rising.",
-                "when": "",
-                "where": "Embassy of India, Riyadh"
               }
             ],
             "context": [
-              "India imports most of the crude oil it uses, and Saudi Arabia has long been one of its largest suppliers, so threats to Saudi oil facilities matter for India's fuel import bill.",
-              "Saudi Arabia hosts one of the largest communities of Indian workers abroad, whose earnings sent home support many families, especially in states such as Kerala.",
-              "Large numbers of Indian pilgrims travel to Mecca and Medina each year for Umrah and Hajj, usually flying through Saudi airports."
+              "Indian refiners, particularly complex coastal refineries built to process heavy crude, have historically been significant buyers of Venezuelan oil when US sanctions allowed it.",
+              "India imports most of its crude oil and tries to spread purchases across many suppliers, so changes in who can buy a country's oil affect its options."
             ],
-            "terms": [
-              {
-                "term": "Houthis",
-                "meaning": "An Iran-allied armed movement that controls much of northern Yemen and has fought a Saudi-led military coalition for years."
-              },
-              {
-                "term": "Saudi-led coalition",
-                "meaning": "A group of states led by Saudi Arabia that backs Yemen's internationally recognised government against the Houthis."
-              },
-              {
-                "term": "ballistic missiles",
-                "meaning": "Rocket-powered missiles that fly a high, arcing path to strike distant targets, which makes them harder to intercept than slower weapons."
-              }
-            ],
+            "terms": [],
             "frameworks": {
-              "disruption_map": {
-                "node": {
-                  "name": "Riyadh airport (King Khalid International Airport)",
-                  "type": "airport",
-                  "status": "partial",
-                  "as_of": "2026-10-25"
-                },
-                "cause": {
-                  "text": "Houthi missile strikes on the Saudi capital this month forced a two-week suspension of operations at the airport.",
-                  "status": "confirmed"
-                },
-                "flows": [
+              "trade_flow": {
+                "good": "Crude oil",
+                "actors": [
                   {
-                    "flow": "air passengers",
-                    "india_link": "Indian workers, their families and other travellers rely on flights into Riyadh. Reduced operations could limit their seats and routes between India and the Saudi capital.",
-                    "basis": "inferred"
-                  }
-                ],
-                "alternatives": [],
-                "duration": "Operations were suspended for two weeks before a partial resumption; a date for full reopening is not reported."
-              },
-              "escalation": {
-                "move": "none",
-                "rung": 6,
-                "current_rung": 6,
-                "previous_rung": null,
-                "development": "The Houthis claimed new attacks on Saudi airports, oil facilities and pipelines and fired missiles at Aden, while Saudi Arabia said it intercepted missiles and drones near Riyadh and Mecca.",
-                "evidence": "The claimed strikes on oil infrastructure and airports are the same kind of action that set rung 6 on 12 October. No full-scale war or ceasefire is reported, so the level holds.",
-                "next_signals": [
-                  {
-                    "rung": 7,
-                    "signal": "Saudi or coalition forces launch a large-scale invasion of Houthi-held Yemen with mobilised national armies, or the Houthis launch an equivalent offensive."
+                    "country": "Venezuela",
+                    "role": "exporter",
+                    "is_india": false
                   },
                   {
-                    "rung": 5,
-                    "signal": "Houthi attacks on Saudi airports and oil facilities stop, while strikes between the sides continue only against military targets."
+                    "country": "United States",
+                    "role": "importer",
+                    "is_india": false
+                  },
+                  {
+                    "country": "China",
+                    "role": "third_party",
+                    "is_india": false
+                  },
+                  {
+                    "country": "Russia",
+                    "role": "third_party",
+                    "is_india": false
                   }
                 ],
-                "india_channels": [
-                  "oil",
-                  "flights",
-                  "diaspora safety"
-                ],
-                "conflict": "w1f5pudc",
-                "applied": "none",
-                "from": 6
+                "change": {
+                  "type": "deal",
+                  "effective": ""
+                },
+                "india_position": {
+                  "role": "competing_buyer",
+                  "note": "India is not a party to the deal but has historically bought Venezuelan crude for its refineries. If the agreement channels Venezuelan oil mainly to the United States, Indian refiners could find fewer cargoes available."
+                },
+                "volumes": []
               }
             }
           },
           "place": {
-            "name": "Saudi Arabia",
-            "country": "Saudi Arabia",
-            "lat": 24.7,
-            "lon": 46.7,
+            "name": "Washington",
+            "country": "United States",
+            "lat": 38.9,
+            "lon": -77,
             "involves": [
-              "Yemen"
+              "Venezuela",
+              "China",
+              "Russia"
             ]
-          },
-          "stage": "analyse",
-          "filter": {
-            "verdict": "analyse",
-            "channel": "prices_supply",
-            "status": "done",
-            "effect": "high",
-            "reach": "national",
-            "reason": "Houthi strikes on Saudi oil facilities threaten crude supply India imports.",
-            "at": "2026-10-24T20:59:19.642Z"
           },
           "reports": [
             {
-              "source": "france24",
-              "headline": "Yemen's Houthi rebels claim new attacks on oil facilities and airports across Saudi Arabia",
-              "url": "https://www.france24.com/en/middle-east/20261024-yemen-s-houthi-rebels-claim-new-attacks-on-oil-facilities-and-airports-across-saudi-arabia",
-              "date": "2026-10-24T17:50:25.000Z",
+              "source": "scmp",
+              "headline": "Rubio invokes China, Russia to defend disputed Venezuela oil deal",
+              "url": "https://www.scmp.com/news/china/diplomacy/article/3372347/rubio-invokes-china-russia-defend-disputed-venezuela-oil-deal",
+              "date": "2026-10-27T16:18:20.000Z",
               "kind": "hard",
-              "summary": "Yemen’s Iran-allied Houthi rebels said they launched attacks at Saudi oil facilities and airports on Saturday while Yemen’s Saudi-backed government ​said the ‌group also fired three ballistic missiles at coast guard sites in ⁠the port city of Aden.",
+              "summary": "US Secretary of State Marco Rubio has defended Washington’s oil agreement in Venezuela as an alternative to Chinese and Russian involvement, pushing back against criticism from opposition leader Maria Corina Machado.",
               "summaryV": 3,
-              "image": "https://s.france24.com/media/display/1192dd1a-cfd3-11f1-97a7-bdb9616e85cf/w:1024/p:16x9/King-Khalid-International-Airport.jpg"
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/28/d743d552-9b39-4401-a5fc-cbf0eaf1b205_b9d25b51.jpg?itok=foDpby-c&v=1793122299"
             },
             {
-              "source": "abc",
-              "headline": "Houthis claim 'phases' of attacks on Saudi airports, oil pipelines",
-              "url": "https://www.abc.net.au/news/2026-10-25/houthis-claim-attacks-on-saudi-airports-oil-pipelines/107305824",
-              "date": "2026-10-24T19:25:25.000Z",
+              "source": "guardian",
+              "headline": "Trump shows off tanker with ‘1m barrels of oil’ and floats Venezuela as 51st state",
+              "url": "https://www.theguardian.com/us-news/2026/oct/27/trump-oil-tanker-venezuela",
+              "date": "2026-10-27T23:07:06.000Z",
               "kind": "hard",
-              "summary": "Yemen's Iran-allied Houthis say they have launched attacks at airports and oil facilities, as clashes between Saudi Arabia and the militant group intensify.",
+              "summary": "President at Texas campaign rally hails deal struck with post-Maduro government as ‘greatest oil victory in history’",
               "summaryV": 3,
-              "image": "https://live-production.wcms.abc-cdn.net.au/c1a0b5233b0ebceca8569333d7d301fc?impolicy=wcms_crop_resize&cropH=2714&cropW=4825&xPos=88&yPos=0&width=862&height=485"
-            },
-            {
-              "source": "aljazeera",
-              "headline": "Houthis launch attacks on Saudi Arabia and Yemen’s Aden",
-              "url": "https://www.aljazeera.com/news/2026/10/24/houthis-launch-attacks-on-saudi-arabia-and-yemens-aden",
-              "date": "2026-10-24T21:08:51.000Z",
-              "kind": "breaking",
-              "summary": "Houthi missiles reportedly struck a number of targets in Yemen, including Aden's airport and a coastguard base.",
-              "summaryV": 3
-            },
-            {
-              "source": "aljazeera",
-              "headline": "Saudi Arabia intercepts missiles and drones as fighting with Houthis rages",
-              "url": "https://www.aljazeera.com/news/2026/10/25/saudi-arabia-intercepts-missiles-and-drones-as-fighting-with-houthis-rages",
-              "date": "2026-10-25T10:42:51.000Z",
-              "kind": "hard",
-              "summary": "Saudi-led coalition says intercepted drone, missile launched towards Riyadh and 10 missiles targeting southern region.",
-              "summaryV": 3
-            },
-            {
-              "source": "cnbc",
-              "headline": "Saudi Arabia says it intercepted missiles and drones from Iran-backed Houthis",
-              "url": "https://www.cnbc.com/2026/10/25/saudi-arabia-houthi-missile-drone-interceptions.html",
-              "date": "2026-10-25T13:41:37.000Z",
-              "kind": "hard",
-              "summary": "Saudi Arabia says it intercepted Houthi missiles and drones, while the Houthis claimed attacks on airports and energy sites amid rising regional supply risks.",
-              "summaryV": 3
-            },
-            {
-              "source": "aljazeera",
-              "headline": "Saudi air defences intercept Houthi barrage near Mecca",
-              "url": "https://www.aljazeera.com/news/2026/10/25/saudi-air-defences-intercept-houthi-barrage-near-mecca",
-              "date": "2026-10-25T13:49:33.000Z",
-              "kind": "hard",
-              "summary": "Houthi attacks on Saudi Arabia escalate as fierce ground battles and a devastating siege strangle Yemen's Taiz.",
-              "summaryV": 3
-            },
-            {
-              "source": "africanews",
-              "headline": "Saudi Arabia's Riyadh airport partially resumes flights after Houthi attacks",
-              "url": "http://www.africanews.com/2026/10/25/saudi-arabias-riyadh-airport-partially-resumes-flights-after-houthi-attacks/",
-              "date": "2026-10-25T14:35:41.000Z",
-              "kind": "hard",
-              "summary": "The announcement comes after a two-week suspension of operations following strikes from Yemen's Houthis on the Saudi capital.",
-              "summaryV": 3
-            },
-            {
-              "source": "nyt",
-              "headline": "Saudi Arabia Reopens Riyadh Airport Even as Houthis Threaten Further Strikes",
-              "url": "https://www.nytimes.com/2026/10/25/world/middleeast/saudi-arabia-riyadh-airport-reopens.html",
-              "date": "2026-10-25T15:50:53.000Z",
-              "kind": "hard",
-              "summary": "The Houthis, an Iran-backed Yemeni militia, launched several deadly attacks on the airport this month.",
-              "summaryV": 3,
-              "image": "https://static01.nyt.com/images/2026/10/25/multimedia/25int-saudi-airport-1-pqfm/25int-saudi-airport-1-pqfm-mediumSquareAt3X.jpg"
-            },
-            {
-              "source": "aljazeera",
-              "headline": "Saudi-led coalition says it downed Houthi missiles, drones aimed at kingdom",
-              "url": "https://www.aljazeera.com/news/2026/10/27/saudi-led-coalition-destroys-four-houthi-drones",
-              "date": "2026-10-27T04:54:26.000Z",
-              "kind": "breaking",
-              "summary": "The attacks come as top officials from Saudi Arabia, Turkiye, Pakistan and Iran meet in Tehran to de-escalate conflict.",
-              "summaryV": 3
+              "lede": "Donald Trump suggested Venezuela would become the 51st state of the United States on Tuesday as the president showed off a tanker he claimed had “one million barrels of oil on it” from the country, nine months after deposing its president.",
+              "image": "https://i.guim.co.uk/img/media/01afd8750a3187f6d5f755bec793006b33b2292c/621_0_6180_4947/master/6180.jpg?width=700&quality=85&auto=format&fit=max&s=049299750c6700ed5d5dea08708fa851"
             }
           ],
-          "priority": 100,
-          "thread": "tq5ix5r",
-          "stats": {
-            "v": 2,
-            "at": "2026-10-25T18:30:40.263Z",
-            "series": []
+          "thread": "t1q27ee0"
+        },
+        {
+          "id": "s1mlob7z",
+          "headline": "Trump administration may let more Russian diesel onto market, energy secretary tells CNBC",
+          "url": "https://www.cnbc.com/2026/10/27/trump-putin-zelenskyy-russia-ukraine-diesel.html",
+          "source": "cnbc",
+          "date": "2026-10-27T22:18:59.000Z",
+          "relevance": "medium",
+          "why": "The US energy secretary told CNBC that the Trump administration may let more Russian diesel onto the market under a Trump-Putin deal. Analysts say the volumes are too small to lower prices materially, which limits any relief for India.",
+          "implications": [
+            "Because the shipments are small compared with total diesel demand, global diesel prices are unlikely to fall much. Indian refiners and fuel importers may therefore see little change in their costs.",
+            "The report says the administration may allow more Russian diesel, so the volumes and timing remain uncertain. Any wider effect on prices would depend on how much is actually allowed onto the market."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-27T22:27:51.961Z",
+            "tier": "quick",
+            "primary": "trade_flow",
+            "complement": null,
+            "features": [
+              "trade_flow",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "Diesel is a household and farm essential in India, but the report says the extra volumes are too small to move prices materially. No direct channel to India is described."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "The administration has only said it may allow more diesel, and the effect on prices is expected to be small, so any impact on India would be slow and modest."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "This rests on a single CNBC report that quotes the energy secretary and unnamed analysts, and the report does not detail the deal's terms or volumes."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "diesel price relief",
+                "effect": "Analysts say the volumes are too small to lower prices materially, so global diesel benchmarks that influence Indian fuel costs may change little.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Any official statement setting out how much Russian diesel the administration will allow onto the market",
+                "why": "It would show whether the volumes are large enough to affect global diesel prices.",
+                "when": "",
+                "where": "US Department of Energy"
+              }
+            ],
+            "context": [
+              "India imports most of its crude oil and refines it into diesel, which is a key fuel for transport, farming and freight. Global fuel prices therefore influence India's import costs and pump prices."
+            ],
+            "terms": [],
+            "frameworks": {
+              "trade_flow": {
+                "good": "Diesel",
+                "actors": [
+                  {
+                    "country": "Russia",
+                    "role": "exporter",
+                    "is_india": false
+                  },
+                  {
+                    "country": "United States",
+                    "role": "third_party",
+                    "is_india": false
+                  }
+                ],
+                "change": {
+                  "type": "deal",
+                  "effective": ""
+                },
+                "india_position": {
+                  "role": "not_involved",
+                  "note": "The report does not mention India in this trade. Indian buyers could be affected only indirectly, through global diesel prices, which analysts say are unlikely to fall materially."
+                },
+                "volumes": []
+              }
+            }
           },
-          "conflict": "w1f5pudc"
+          "place": {
+            "name": "Washington",
+            "country": "United States",
+            "lat": 38.9,
+            "lon": -77,
+            "involves": [
+              "Russia"
+            ]
+          },
+          "reports": [
+            {
+              "source": "cnbc",
+              "headline": "Trump administration may let more Russian diesel onto market, energy secretary tells CNBC",
+              "url": "https://www.cnbc.com/2026/10/27/trump-putin-zelenskyy-russia-ukraine-diesel.html",
+              "date": "2026-10-27T22:18:59.000Z",
+              "kind": "hard",
+              "summary": "The diesel volumes in the Trump-Putin deal won't materially lower prices because the shipments are small compared to total demand, analysts say.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://image.cnbcfm.com/api/v1/image/108447261-1792683071904-gettyimages-2300877130-AFP_D44B7V6.jpeg?v=1792683181&w=1920&h=1080"
+            }
+          ],
+          "image": "https://image.cnbcfm.com/api/v1/image/108447261-1792683071904-gettyimages-2300877130-AFP_D44B7V6.jpeg?v=1792683181&w=1920&h=1080",
+          "thread": "t1uohici"
         },
         {
           "id": "s6aq9ck",
@@ -18922,6 +18972,319 @@
       "name": "Economy & Trade",
       "items": [
         {
+          "id": "sqp66v0",
+          "headline": "Meta- and Google-backed Jio Platforms’ shares soar over 21% on trading debut after record IPO",
+          "url": "https://www.cnbc.com/2026/10/28/jio-ipo-india-listing-.html",
+          "source": "cnbc",
+          "date": "2026-10-28T05:16:41.000Z",
+          "relevance": "medium",
+          "why": "CNBC reports that Jio Platforms shares rose more than 21% on their trading debut. The company raised 302 billion rupees ($3.2 billion) at 1,119 rupees a share in India's largest-ever initial public offering (IPO), which matters to Indian investors and capital markets.",
+          "implications": [
+            "A strong first-day rise suggests investors wanted the shares at the offer price, which may encourage other large Indian companies to consider listing on the stock market.",
+            "Households that hold shares directly, or through mutual funds and pension schemes, may see the value of their holdings change as this large stock trades."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-28T05:58:29.878Z",
+            "tier": "quick",
+            "primary": "pass_through",
+            "complement": null,
+            "features": [
+              "price_move",
+              "allocation"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "The channel is the stock market and investor savings. The report describes no effect on household essentials, trade flows or the safety of Indians."
+            },
+            "horizon": {
+              "value": "now",
+              "reason": "The shares began trading on the debut day reported, so any market effect is already under way."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single outlet, CNBC, with no exchange statement or company official quoted in the summary, so the figures are unconfirmed by a second source."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Depositors & savers",
+                "direction": "unclear",
+                "what": "household equity holdings",
+                "effect": "",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Jio Platforms' share price in the sessions after its debut",
+                "why": "It would show whether the first-day gain of more than 21% holds or fades as the market settles.",
+                "when": "",
+                "where": "NSE and BSE websites"
+              }
+            ],
+            "context": [
+              "An initial public offering is the first sale of a company's shares to the public, and the shares then trade freely on a stock exchange.",
+              "Gains on the first day of trading do not guarantee later performance, because share prices keep moving with company results and market conditions."
+            ],
+            "terms": [
+              {
+                "term": "IPO",
+                "meaning": "An initial public offering is the first time a company sells its shares to the public to raise money."
+              }
+            ],
+            "frameworks": {},
+            "frameworksMissing": true
+          },
+          "place": {
+            "name": "Mumbai",
+            "country": "India",
+            "lat": 19.08,
+            "lon": 72.88
+          },
+          "reports": [
+            {
+              "source": "cnbc",
+              "headline": "Meta- and Google-backed Jio Platforms’ shares soar over 21% on trading debut after record IPO",
+              "url": "https://www.cnbc.com/2026/10/28/jio-ipo-india-listing-.html",
+              "date": "2026-10-28T05:16:41.000Z",
+              "kind": "hard",
+              "summary": "Jio had offered 270 million shares in the IPO priced at 1,119 rupees apiece, raising 302 billion rupees ($3.2 billion) in the country's largest-ever IPO.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://image.cnbcfm.com/api/v1/image/108472576-1793163135126-gettyimages-2301839789-INDIA_JIO_IPO.jpeg?v=1793163164&w=1920&h=1080"
+            }
+          ],
+          "image": "https://image.cnbcfm.com/api/v1/image/108472576-1793163135126-gettyimages-2301839789-INDIA_JIO_IPO.jpeg?v=1793163164&w=1920&h=1080",
+          "thread": "taxfz9d"
+        },
+        {
+          "id": "sdn9otu",
+          "headline": "EU plans high-level China currency talks as fears of new trade shock mount",
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3372373/eu-plans-high-level-china-currency-talks-fears-new-trade-shock-mount",
+          "source": "scmp",
+          "date": "2026-10-28T05:00:07.000Z",
+          "relevance": "medium",
+          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/28/259760c7-0362-44c9-bb91-fddfc7305b6a_17edfb46.jpg?itok=Ff5IFFrQ&v=1793156461",
+          "why": "The South China Morning Post reports that senior European finance and banking officials plan to visit Beijing in the coming months to press China to stop holding down its currency. Indian exporters could feel this through competition from Chinese goods.",
+          "implications": [
+            "Europe is trying to shield its struggling industry from cheap Chinese goods, so Chinese exporters may look harder at other large markets, including India, if European trade is restricted.",
+            "Indian small and medium exporters that compete with Chinese manufacturers in third countries could face tighter pricing if Chinese goods stay cheap because of the currency."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-28T05:58:29.878Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "The report describes only European plans to hold talks. Any effect on India would come indirectly, through competition from Chinese goods in export markets or through rerouted Chinese exports."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "The report says the visits will take place over the coming months, and any change in trade flows would follow only after those talks."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single outlet, the South China Morning Post, with no named official on record, and the effect on India is not discussed in the report."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "MSME exporters",
+                "direction": "down",
+                "what": "competition from Chinese goods",
+                "effect": "If China keeps its currency weak and diverts exports, Indian small exporters may face lower-priced Chinese rivals in overseas markets.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "price of Chinese goods",
+                "effect": "Chinese goods that stay cheap could remain attractive to Indian importers, while any change in China's currency policy could alter those import costs.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Visits by senior European finance and banking officials to Beijing to discuss China's currency",
+                "why": "The visits would show whether Europe's pressure leads to any change in how China manages its currency.",
+                "when": "coming months",
+                "where": ""
+              }
+            ],
+            "context": [
+              "When a country keeps its currency weaker than it otherwise would be, its exports become cheaper abroad, which can displace goods made elsewhere.",
+              "India imports many manufactured goods and components from China, and its exporters often compete with Chinese firms in the same overseas markets."
+            ],
+            "terms": [
+              {
+                "term": "holding down its currency",
+                "meaning": "Keeping the exchange rate lower than market forces would set it, so that the country's exports cost less for foreign buyers."
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "EU plans currency talks in Beijing",
+                    "detail": "The South China Morning Post reports that, after China accepted a cap on its hybrid car exports, senior European finance and banking officials will travel to Beijing in the coming months to discuss its currency.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Europe seeks to protect its industry",
+                    "detail": "The aim is to persuade Beijing to stop holding down its currency, which Europe sees as a threat to its struggling industry. The report says fears of a new trade shock are growing.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Chinese goods may seek other markets",
+                    "detail": "If the currency stays weak and European markets become harder to sell into, Chinese exporters may push more goods toward markets such as India, which could pressure Indian manufacturers and exporters.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The effect would not reach India if China lets its currency strengthen after the talks, or if Chinese exporters do not redirect goods to markets such as India."
+              }
+            }
+          },
+          "place": {
+            "name": "Beijing",
+            "country": "China",
+            "lat": 39.9,
+            "lon": 116.4,
+            "involves": [
+              "European Union"
+            ]
+          },
+          "reports": [
+            {
+              "source": "scmp",
+              "headline": "EU plans high-level China currency talks as fears of new trade shock mount",
+              "url": "https://www.scmp.com/news/china/diplomacy/article/3372373/eu-plans-high-level-china-currency-talks-fears-new-trade-shock-mount",
+              "date": "2026-10-28T05:00:07.000Z",
+              "kind": "hard",
+              "summary": "After convincing China to accept a cap on its hybrid car exports, a stream of top-level European finance and banking officials will descend on the Chinese capital in the coming months on a far trickier mission: persuading Beijing to stop holding down its currency to help save the bloc’s struggling industry.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/28/259760c7-0362-44c9-bb91-fddfc7305b6a_17edfb46.jpg?itok=Ff5IFFrQ&v=1793156461"
+            }
+          ],
+          "thread": "t1aiqdnc"
+        },
+        {
+          "id": "s4hd9em",
+          "headline": "Indian investors rush to Nvidia, SpaceX, Apple as local trading apps roll out access to U.S. stocks",
+          "url": "https://www.cnbc.com/2026/10/28/india-us-stocks-retail-access.html",
+          "source": "cnbc",
+          "date": "2026-10-28T00:14:24.000Z",
+          "relevance": "medium",
+          "why": "CNBC reports that major Indian brokerages are giving retail investors access to U.S. stocks such as Nvidia, SpaceX and Apple while the local market has been battered. Some household savings may therefore shift towards foreign shares.",
+          "implications": [
+            "Investors who buy U.S. shares through local apps would be exposed to movements in the rupee against the dollar as well as to U.S. share prices.",
+            "If enough savers move money abroad, domestic equity markets could lose some of the retail participation that has supported them in recent years.",
+            "Brokerages could gain a new source of business from these products, which may matter more to them while trading in the local market is weak."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-28T05:57:16.344Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "medium",
+              "reason": "The effect works through brokerage apps and the portfolios of retail investors, which makes it an issue for one industry and its customers rather than for a household essential."
+            },
+            "horizon": {
+              "value": "now",
+              "reason": "The reports say brokerages are already rolling out access and investors are already using it, so any shift in savings has begun."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single CNBC report with no named official or brokerage source, and the scale of the investor flows is not quantified in the material available."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Depositors & savers",
+                "direction": "mixed",
+                "what": "where savings are invested",
+                "effect": "Retail savers can place money in U.S. shares through local apps, which may diversify their holdings but adds exposure to U.S. markets and currency movements.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Any change in rules from Indian regulators on overseas investing by retail investors through local brokerage apps",
+                "why": "It would show whether the new access is allowed to grow or is restricted.",
+                "when": "",
+                "where": "Reserve Bank of India and Securities and Exchange Board of India"
+              },
+              {
+                "what": "Whether the battered local market recovers and retail interest in Indian shares returns",
+                "why": "A recovery would indicate whether the move into U.S. stocks is a temporary reaction or a lasting shift.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "Retail participation in Indian markets has grown largely through app-based brokerages, which now compete by widening the range of products they offer.",
+              "Money sent abroad by Indian residents for investment is governed by central bank foreign exchange rules, so the scale of such flows depends on regulation as well as demand."
+            ],
+            "terms": [],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Brokerages open U.S. stock access",
+                    "detail": "Major Indian brokerages are providing retail investors with access to U.S. stocks through local trading apps, at a time when the domestic market has been battered.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Retail investors rush to U.S. shares",
+                    "detail": "CNBC reports that Indian investors are rushing to buy shares such as Nvidia, SpaceX and Apple, which suggests that some savings are being redirected abroad.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Savings flow out of local markets",
+                    "detail": "Money moving into U.S. shares could reduce retail inflows to Indian equities and leave investors exposed to the rupee-dollar exchange rate.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The effect would stay small if the domestic market recovers or if regulatory limits on sending money abroad keep the amounts that retail investors can move overseas low."
+              }
+            }
+          },
+          "place": {
+            "name": "Mumbai",
+            "country": "India",
+            "lat": 19.08,
+            "lon": 72.88,
+            "involves": [
+              "United States"
+            ]
+          },
+          "reports": [
+            {
+              "source": "cnbc",
+              "headline": "Indian investors rush to Nvidia, SpaceX, Apple as local trading apps roll out access to U.S. stocks",
+              "url": "https://www.cnbc.com/2026/10/28/india-us-stocks-retail-access.html",
+              "date": "2026-10-28T00:14:24.000Z",
+              "kind": "hard",
+              "summary": "Major Indian brokerages are providing retail investors access to U.S. stocks at a time when the local market has been battered.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://image.cnbcfm.com/api/v1/image/108467546-1793083979300-gettyimages-2286903422-avdjuly26lot2j.jpeg?v=1793083990&w=1920&h=1080"
+            }
+          ],
+          "image": "https://image.cnbcfm.com/api/v1/image/108467546-1793083979300-gettyimages-2286903422-avdjuly26lot2j.jpeg?v=1793083990&w=1920&h=1080",
+          "thread": "t19h8otn"
+        },
+        {
           "id": "s1393e9v",
           "headline": "Trump Explores Lifting Sanctions on Russia’s Flagship Investment Fund",
           "url": "https://www.nytimes.com/2026/10/27/us/politics/russia-fund-sanctions-trump.html",
@@ -19031,99 +19394,110 @@
           "source": "cbs",
           "date": "2026-10-26T20:10:30.000Z",
           "relevance": "medium",
-          "why": "The US Federal Reserve announces its next interest rate decision this week, and most reports expect a pause after September's hike. US rate moves can shift investment flows and the rupee, which reaches Indian importers, borrowers and families paying in dollars.",
+          "why": "The US Federal Reserve is widely expected to hold interest rates this week after its September hike, but Warsh may signal more increases. That could pull money towards the dollar and pressure the rupee, Indian borrowing costs and import bills.",
           "implications": [
-            "The New York Times notes that inflation is moving in the wrong direction while the labour market is stable, which supports the case for further US rate rises later.",
-            "CNBC reports that Warsh may point the way to more hikes, so the message from this meeting may matter more than the decision itself.",
-            "Higher US rates can draw foreign investment out of emerging markets such as India, which could weaken the rupee and make dollar-priced imports more expensive.",
-            "A weaker rupee could also raise the cost of tuition and living expenses for Indian students in the United States, whose bills are paid in dollars."
+            "Even without a change this week, a signal of further US rate rises could lead foreign investors to move money out of emerging markets such as India.",
+            "If the dollar strengthens against the rupee, Indian importers of dollar-priced goods could face higher costs that may feed into domestic prices.",
+            "A more aggressive Fed could leave the Reserve Bank of India less room to cut rates, which may keep loan rates for Indian households and firms higher.",
+            "Indian families paying overseas tuition or living costs in dollars could see those bills rise in rupee terms if the dollar strengthens."
           ],
           "analysis": {
             "v": 3,
-            "at": "2026-10-27T15:31:26.952Z",
-            "tier": "standard",
+            "at": "2026-10-28T06:00:57.048Z",
+            "tier": "deep",
             "primary": "conflicting",
-            "complement": null,
+            "complement": "impact_chain",
             "features": [
               "scheduled",
               "pending_outcome"
             ],
             "exposure": {
               "level": "medium",
-              "reason": "The effect reaches India indirectly through foreign investment flows and the rupee's exchange rate. That touches importers and dollar spending rather than household essentials directly, which makes exposure medium."
+              "reason": "The effect reaches India indirectly through currency markets, foreign investment flows and the Reserve Bank of India's room to set rates. A hold this week limits the immediate impact."
             },
             "horizon": {
-              "value": "weeks",
-              "reason": "The decision comes this week, but any effect on the rupee, import costs or Indian rate expectations would build over the following weeks."
+              "value": "months",
+              "reason": "The decision is expected to be a hold, so any effect depends on whether signalled future hikes materialise and move the dollar and Indian rates over coming months."
             },
             "confidence": {
               "level": "medium",
-              "reason": "CBS News, The New York Times and CNBC agree that a decision is due this week, but the expected hold rests on surveys and market pricing, not an official statement."
+              "reason": "CBS, The New York Times and CNBC agree a decision is due this week, but the expected hold rests on surveys and market expectations, not an on-record official statement."
             },
             "outlets": 3,
             "affected": [
               {
-                "group": "Importers & traders",
-                "direction": "unclear",
-                "what": "dollar-denominated import costs",
-                "effect": "If US rate signals strengthen the dollar against the rupee, Indian importers could pay more in rupees for goods priced in dollars.",
+                "group": "Students abroad",
+                "direction": "up",
+                "what": "cost of overseas study",
+                "effect": "If expectations of further US rate rises strengthen the dollar, tuition and living costs paid in dollars could rise in rupee terms for Indian students.",
                 "basis": "inferred"
               },
               {
-                "group": "Students abroad",
-                "direction": "unclear",
-                "what": "cost of studying in US",
-                "effect": "Movements in the rupee caused by US rate expectations could change the rupee cost of US tuition and living expenses for Indian students and their families.",
+                "group": "Importers & traders",
+                "direction": "up",
+                "what": "cost of dollar-priced imports",
+                "effect": "A stronger dollar could raise the rupee cost of imported goods and inputs, squeezing margins for Indian importers or pushing up the prices they charge.",
                 "basis": "inferred"
               },
               {
                 "group": "Borrowers",
                 "direction": "unclear",
-                "what": "outlook for loan rates",
-                "effect": "Signals of further US hikes could make the Reserve Bank of India more cautious about lowering rates, which may affect loan interest costs in India.",
+                "what": "loan interest rates",
+                "effect": "If the Fed signals more hikes, the Reserve Bank of India may have less room to cut rates, which could keep loan payments for Indian borrowers elevated.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Large exporters",
+                "direction": "mixed",
+                "what": "rupee earnings from exports",
+                "effect": "A weaker rupee could raise the rupee value of dollar export earnings, although slower global demand from higher US rates may offset some of that gain.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
                 "what": "The Federal Reserve's interest rate decision at this week's meeting",
-                "why": "It will show whether the Fed holds rates as most respondents and markets expect, or raises them again after September.",
+                "why": "It will confirm whether US rates are held after the September hike or raised again.",
                 "when": "this week",
                 "where": "US Federal Reserve"
               },
               {
                 "what": "Whether Warsh signals further rate hikes when explaining the decision",
-                "why": "A signal of more hikes would suggest continued pressure on emerging-market currencies, including the rupee, in coming months.",
+                "why": "A clear signal of more hikes would raise the chance of dollar strength and pressure on the rupee.",
                 "when": "this week",
                 "where": "US Federal Reserve"
               }
             ],
             "context": [
-              "The Federal Reserve's benchmark rate influences returns on dollar assets worldwide, so global investors often move money between the US and emerging markets when it changes or is expected to change.",
-              "The Reserve Bank of India considers the rupee's exchange rate and imported inflation when it sets its own policy rate, so US rate decisions can indirectly shape Indian borrowing costs.",
-              "India imports most of its crude oil and pays for it in dollars, so rupee weakness tends to raise the country's import bill."
+              "The Federal Reserve sets US short-term interest rates, and its decisions influence global capital flows because much international lending, trade and investment is priced in US dollars.",
+              "When US rates rise or are expected to rise, investors often shift money towards dollar assets, which tends to weaken emerging-market currencies such as the Indian rupee.",
+              "India imports most of its crude oil and pays for it largely in dollars, so a weaker rupee can raise the country's import bill and add to inflation."
             ],
             "terms": [
               {
                 "term": "Federal Reserve",
-                "meaning": "The central bank of the United States, which sets the benchmark interest rate for the US economy."
+                "meaning": "The central bank of the United States, which sets benchmark US interest rates and oversees the country's monetary policy."
               },
               {
-                "term": "pause",
-                "meaning": "A decision by a central bank to leave interest rates unchanged at a meeting, after a period of raising or cutting them."
+                "term": "CNBC Fed Survey",
+                "meaning": "A regular CNBC poll of economists, fund managers and strategists asking what they expect the Federal Reserve to do at its meetings."
+              },
+              {
+                "term": "benchmark interest rates",
+                "meaning": "The key policy rates a central bank sets, which influence borrowing costs across an economy's loans, bonds and deposits."
               }
             ],
             "frameworks": {
               "conflicting": {
                 "disputed": {
-                  "item": "expected Federal Reserve decision this week",
-                  "unit": "hold or hike at this week's meeting"
+                  "item": "expected outcome of this week's Federal Reserve meeting",
+                  "unit": "rate decision (hold or hike)"
                 },
                 "accounts": [
                   {
                     "outlet": "CBS News",
-                    "value": "Raises the question of whether the Fed is likely to raise rates this week, without stating an expectation in the summary",
-                    "origin": "CBS News reporting",
+                    "value": "Asks whether the Fed is likely to raise rates this week, without stating an expected outcome",
+                    "origin": "CBS News framing of the upcoming decision",
                     "time": "2026-10-26"
                   },
                   {
@@ -19147,19 +19521,44 @@
                 ],
                 "agreed": [
                   "The Federal Reserve will announce its latest interest rate decision this week.",
-                  "The Federal Reserve raised interest rates in September."
+                  "The Federal Reserve raised rates in September, which CBS News reports was the first hike in three years."
                 ],
                 "explanations": [
                   {
                     "type": "different time",
-                    "note": "The CBS News piece was published a day earlier and frames the decision as an open question, while later reports describe survey and market expectations of a hold."
+                    "note": "The CBS News report was published a day earlier and frames the decision as an open question, while the later reports cite surveys and market pricing that point to a hold."
                   },
                   {
                     "type": "different source",
-                    "note": "The reports draw on different bases, including a CNBC survey of respondents, market pricing and The New York Times' own analysis of inflation and jobs data."
+                    "note": "CNBC draws on a survey of respondents and market expectations, whereas The New York Times offers its own analysis of inflation and the labour market."
                   }
                 ],
                 "status": "converging"
+              },
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Fed hiked rates in September",
+                    "detail": "The Federal Reserve raised interest rates in September, its first hike in three years. The New York Times reports inflation is moving in the wrong direction while the labour market remains stable.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Hold expected, more hikes signalled",
+                    "detail": "Markets and a CNBC survey expect rates to be held this week, but CNBC reports Warsh may point the way to further hikes, shaping expectations of higher US rates.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Dollar strengthens, capital leaves emerging markets",
+                    "detail": "Expectations of higher US rates could draw investors towards dollar assets and away from emerging markets, which may weaken the rupee and reduce foreign investment in Indian markets.",
+                    "basis": "inferred"
+                  },
+                  {
+                    "step": "Costs rise for Indian households and firms",
+                    "detail": "A weaker rupee could raise import and overseas education costs, and pressure on the currency may limit the Reserve Bank of India's room to lower loan rates.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The effect would weaken if the Fed holds rates without signalling further hikes, leaving dollar strength and capital outflows from India limited."
               }
             }
           },
@@ -19209,6 +19608,16 @@
               "kind": "hard",
               "summary": "Markets overwhelmingly expect no change in benchmark interest rates following September's increase.",
               "summaryV": 3
+            },
+            {
+              "source": "nyt",
+              "headline": "The Fed Is Expected to Hold Rates Steady. Warsh Will Have to Explain Why.",
+              "url": "https://www.nytimes.com/2026/10/27/business/fed-interest-rates-warsh.html",
+              "date": "2026-10-27T09:03:48.000Z",
+              "kind": "feature",
+              "summary": "Inflation is moving in the wrong direction and the labor market remains stable, a combination that bolsters the case for higher interest rates.",
+              "summaryV": 3,
+              "image": "https://static01.nyt.com/images/2026/10/26/multimedia/27dc-fed-zqhm/27dc-fed-zqhm-mediumSquareAt3X.jpg"
             }
           ],
           "image": "https://assets2.cbsnewsstatic.com/hub/i/r/2026/10/26/e68e3d14-2afb-4f4a-8cb2-23e20ceb50fc/thumbnail/1200x630/755abb248de2e01bcf540a616d6e837e/gettyimages-2299891429.jpg",
@@ -27635,6 +28044,39 @@
       "name": "Manufacturing",
       "items": [
         {
+          "id": "s1mmribr",
+          "headline": "Can India turn wartime ammo sales into lasting European defence ties?",
+          "url": "https://www.scmp.com/week-asia/politics/article/3372348/can-india-turn-wartime-ammo-sales-lasting-european-defence-ties",
+          "source": "scmp",
+          "date": "2026-10-28T04:30:07.000Z",
+          "relevance": "medium",
+          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/28/63082289-de64-4ca1-a263-38a7f62866b9_72a6f6da.jpg?itok=oZ4ytLO8&v=1793117980",
+          "why": "",
+          "implications": [],
+          "place": {
+            "name": "New Delhi",
+            "country": "India",
+            "lat": 28.61,
+            "lon": 77.21,
+            "involves": [
+              "Ukraine"
+            ]
+          },
+          "reports": [
+            {
+              "source": "scmp",
+              "headline": "Can India turn wartime ammo sales into lasting European defence ties?",
+              "url": "https://www.scmp.com/week-asia/politics/article/3372348/can-india-turn-wartime-ammo-sales-lasting-european-defence-ties",
+              "date": "2026-10-28T04:30:07.000Z",
+              "kind": "feature",
+              "summary": "India has emerged as a major exporter of ammunition and other weapons to Europe since the outbreak of the Ukraine-Russia war, but analysts caution that New Delhi has yet to secure a lasting foothold in Europe’s defence market.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/28/63082289-de64-4ca1-a263-38a7f62866b9_72a6f6da.jpg?itok=oZ4ytLO8&v=1793117980"
+            }
+          ],
+          "thread": "t1t1f6ye"
+        },
+        {
           "id": "s1omxssp",
           "headline": "Who owns India’s textile traditions in age of AI-enabled mass production?",
           "url": "https://www.aljazeera.com/features/2026/10/21/who-owns-indias-textile-traditions-in-age-of-ai-enabled-mass-production",
@@ -28761,6 +29203,302 @@
       "name": "Environment & Climate",
       "items": [
         {
+          "id": "su2yvee",
+          "headline": "India evacuates tens of thousands as ‘very severe’ Cyclone Arnab nears",
+          "url": "https://www.aljazeera.com/news/2026/10/27/india-evacuates-tens-of-thousands-as-very-severe-cyclone-arnab-nears",
+          "source": "aljazeera",
+          "date": "2026-10-27T08:02:37.000Z",
+          "relevance": "high",
+          "why": "Cyclone Arnab, described as a 'very severe' storm, made landfall on India's southeastern coast on Wednesday. Authorities evacuated large numbers of people in two states, and the storm is forecast to move inland and north toward Nepal.",
+          "implications": [
+            "The New York Times reports that the storm will cut inland and head north, so heavy rain and wind may reach states well beyond the coast where it landed.",
+            "Reports differ sharply on the scale of evacuation, from tens of thousands to nearly 100,000 moved and 400,000 needing evacuation, so the full human toll is not yet clear.",
+            "Torrential rain during the post-monsoon season could damage standing or harvested crops in affected states, which may hurt farm incomes and local food supplies.",
+            "Damage to homes, power lines and roads in the two coastal states could disrupt electricity, transport and fishing for days after the storm passes."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-28T06:00:57.048Z",
+            "tier": "deep",
+            "primary": "impact_chain",
+            "complement": "winners_losers",
+            "features": [
+              "fast_moving"
+            ],
+            "exposure": {
+              "level": "high",
+              "reason": "The cyclone directly threatens the safety, homes and livelihoods of people in two Indian states, with nearly 100,000 already evacuated according to authorities cited by the South China Morning Post."
+            },
+            "horizon": {
+              "value": "now",
+              "reason": "The storm made landfall on Wednesday, so its wind, rain and evacuation effects are being felt immediately."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "Al Jazeera, The New York Times and the South China Morning Post agree on the landfall, but these are early reports with conflicting evacuation figures and no damage assessment yet."
+            },
+            "outlets": 3,
+            "affected": [
+              {
+                "group": "Farmers",
+                "direction": "down",
+                "what": "crop damage",
+                "effect": "Torrential rain and strong winds could flatten or flood crops in the affected states and along the storm's inland path, which may reduce farm incomes.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Fishers",
+                "direction": "down",
+                "what": "lost fishing days",
+                "effect": "Coastal fishing communities may be unable to go to sea during and after the storm and could lose boats or nets to the winds.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Power consumers",
+                "direction": "down",
+                "what": "electricity supply",
+                "effect": "High winds could bring down power lines in the affected states, which may leave households and businesses without electricity for some time.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Official forecasts of Cyclone Arnab's track as it moves inland and north toward Nepal",
+                "why": "The track will show which further Indian states may face heavy rain and flooding.",
+                "when": "",
+                "where": "India Meteorological Department"
+              },
+              {
+                "what": "Official figures on evacuations, casualties and damage in the two affected states",
+                "why": "These figures would settle the conflicting early reports and show the real scale of harm.",
+                "when": "",
+                "where": "State disaster management authorities"
+              }
+            ],
+            "context": [
+              "October to December is a main cyclone season in the Bay of Bengal, and India's eastern coast is regularly struck by storms during these months.",
+              "India relies on large pre-emptive evacuations by national and state disaster response agencies, an approach that has sharply reduced cyclone deaths in recent decades.",
+              "Cyclones that move inland usually weaken into depressions but can still bring very heavy rain and flooding far from the coast."
+            ],
+            "terms": [
+              {
+                "term": "very severe",
+                "meaning": "A strength category the India Meteorological Department uses for strong cyclonic storms with very high sustained wind speeds."
+              },
+              {
+                "term": "landfall",
+                "meaning": "The moment the centre of a cyclone moves from the sea onto land."
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Cyclone makes landfall on southeastern coast",
+                    "detail": "Cyclone Arnab struck India's southeastern coast on Wednesday with ferocious winds and torrential rain, according to the South China Morning Post.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Mass evacuations in two states",
+                    "detail": "Authorities moved nearly 100,000 people from their homes in two states, while earlier reports said 400,000 people needed evacuation.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Storm moves inland and north",
+                    "detail": "The New York Times reports the storm is forecast to cut inland and head north toward Nepal, carrying rain and wind into interior regions.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Damage to farms, power and livelihoods",
+                    "detail": "Wind and flooding along the path could damage crops, power lines and fishing equipment, which may disrupt incomes and local supplies for weeks.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The storm weakens quickly after landfall and the evacuations keep people out of danger, limiting damage to homes, crops and infrastructure."
+              },
+              "winners_losers": {
+                "groups": [
+                  {
+                    "group": "Southeastern coastal India",
+                    "direction": "lose",
+                    "directness": "direct",
+                    "mechanism": "Ferocious winds and torrential rain hit the coast at landfall, forcing nearly 100,000 residents of two states to leave their homes."
+                  },
+                  {
+                    "group": "Farmers",
+                    "direction": "lose",
+                    "directness": "direct",
+                    "mechanism": "The torrential rain reported at landfall, and the storm's forecast path inland, could flood or flatten crops in affected districts."
+                  },
+                  {
+                    "group": "Fishers",
+                    "direction": "lose",
+                    "directness": "direct",
+                    "mechanism": "The ferocious winds lashing the coast may keep fishing boats ashore and could damage boats and nets in coastal villages."
+                  },
+                  {
+                    "group": "Power consumers",
+                    "direction": "lose",
+                    "directness": "indirect",
+                    "mechanism": "The strong winds reported at landfall could bring down power lines, which may cut electricity to homes and businesses in the affected areas."
+                  }
+                ],
+                "not_affected": "Residents of India's western coast are not in the reported path, which runs from the southeastern coast inland and north toward Nepal."
+              }
+            }
+          },
+          "place": {
+            "name": "Bay of Bengal",
+            "country": "India",
+            "lat": 18,
+            "lon": 87
+          },
+          "reports": [
+            {
+              "source": "aljazeera",
+              "headline": "India evacuates tens of thousands as ‘very severe’ Cyclone Arnab nears",
+              "url": "https://www.aljazeera.com/news/2026/10/27/india-evacuates-tens-of-thousands-as-very-severe-cyclone-arnab-nears",
+              "date": "2026-10-27T08:02:37.000Z",
+              "kind": "breaking",
+              "summary": "The cyclonic storm is set to make landfall on Wednesday, with 400,000 people in need of evacuation.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/AP25301397846074-1793082640.jpg?resize=1920%2C1440"
+            },
+            {
+              "source": "nyt",
+              "headline": "India Evacuates Tens of Thousands as Cyclone Arnab Approaches",
+              "url": "https://www.nytimes.com/2026/10/27/world/asia/india-cyclone-arnab-evacuations-nepal.html",
+              "date": "2026-10-27T11:09:53.000Z",
+              "kind": "hard",
+              "summary": "The storm, Arnab, is forecast to make landfall Wednesday on the country’s eastern coast and then cut inland and head north toward Nepal.",
+              "summaryV": 3,
+              "image": "https://static01.nyt.com/images/2026/10/27/multimedia/27int-india-cyclone-gqwp/27int-india-cyclone-gqwp-mediumSquareAt3X.jpg"
+            },
+            {
+              "source": "scmp",
+              "headline": "100,000 evacuated in India as Cyclone Arnab makes landfall on southeast coast",
+              "url": "https://www.scmp.com/news/asia/south-asia/article/3372365/100000-evacuated-india-cyclone-arnab-makes-landfall-southeast-coast",
+              "date": "2026-10-28T01:58:16.000Z",
+              "kind": "breaking",
+              "summary": "Ferocious winds and torrential rain lashed India’s southeastern coast as Cyclone Arnab made landfall on Wednesday, forcing nearly 100,000 people to evacuate their homes in two states, authorities said.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/28/0b6ea0c5-b7bb-4929-b0c5-2915479f765a_7ffede13.jpg?itok=QdDvL-HQ&v=1793152693"
+            }
+          ],
+          "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/AP25301397846074-1793082640.jpg?resize=1920%2C1440",
+          "thread": "t1lrksv5",
+          "stats": {
+            "v": 2,
+            "at": "2026-10-27T22:27:54.337Z",
+            "series": [
+              {
+                "title": "Cyclones making landfall over the Indian coast",
+                "unit": "number of cyclones per year",
+                "publisher": "Ministry of Earth Sciences (via Press Information Bureau)",
+                "points": [
+                  {
+                    "period": "2016",
+                    "value": 1,
+                    "url": "https://www.pib.gov.in/Pressreleaseshare.aspx?PRID=1704837&reg=48&lang=2",
+                    "source": "Study on Cyclones"
+                  },
+                  {
+                    "period": "2017",
+                    "value": 0,
+                    "url": "https://www.pib.gov.in/Pressreleaseshare.aspx?PRID=1704837&reg=48&lang=2",
+                    "source": "Study on Cyclones"
+                  },
+                  {
+                    "period": "2018",
+                    "value": 3,
+                    "url": "https://www.pib.gov.in/Pressreleaseshare.aspx?PRID=1704837&reg=48&lang=2",
+                    "source": "Study on Cyclones"
+                  },
+                  {
+                    "period": "2019",
+                    "value": 2,
+                    "url": "https://www.pib.gov.in/Pressreleaseshare.aspx?PRID=1704837&reg=48&lang=2",
+                    "source": "Study on Cyclones"
+                  },
+                  {
+                    "period": "2020",
+                    "value": 4,
+                    "url": "https://www.pib.gov.in/Pressreleaseshare.aspx?PRID=1704837&reg=48&lang=2",
+                    "source": "Study on Cyclones"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.pib.gov.in/Pressreleaseshare.aspx?PRID=1704837&reg=48&lang=2",
+                    "title": "Study on Cyclones",
+                    "domain": "pib.gov.in"
+                  }
+                ],
+                "domains": [
+                  "pib.gov.in"
+                ],
+                "dropped": 0,
+                "why": "Both series count cyclones affecting the Indian coast and the Bay of Bengal basin where the storm is forecast to make landfall, so they track the same kind of event the story reports.",
+                "reused": true,
+                "checkedAt": "2026-10-26T13:28:44.632Z"
+              },
+              {
+                "title": "Cyclones formed over Bay of Bengal and Arabian Sea",
+                "unit": "number of cyclones per year",
+                "publisher": "Ministry of Earth Sciences (via Press Information Bureau)",
+                "points": [
+                  {
+                    "period": "2016",
+                    "value": 4,
+                    "url": "https://www.pib.gov.in/Pressreleaseshare.aspx?PRID=1704837&reg=48&lang=2",
+                    "source": "Study on Cyclones"
+                  },
+                  {
+                    "period": "2017",
+                    "value": 3,
+                    "url": "https://www.pib.gov.in/Pressreleaseshare.aspx?PRID=1704837&reg=48&lang=2",
+                    "source": "Study on Cyclones"
+                  },
+                  {
+                    "period": "2018",
+                    "value": 7,
+                    "url": "https://www.pib.gov.in/Pressreleaseshare.aspx?PRID=1704837&reg=48&lang=2",
+                    "source": "Study on Cyclones"
+                  },
+                  {
+                    "period": "2019",
+                    "value": 8,
+                    "url": "https://www.pib.gov.in/Pressreleaseshare.aspx?PRID=1704837&reg=48&lang=2",
+                    "source": "Study on Cyclones"
+                  },
+                  {
+                    "period": "2020",
+                    "value": 5,
+                    "url": "https://www.pib.gov.in/Pressreleaseshare.aspx?PRID=1704837&reg=48&lang=2",
+                    "source": "Study on Cyclones"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.pib.gov.in/Pressreleaseshare.aspx?PRID=1704837&reg=48&lang=2",
+                    "title": "Study on Cyclones",
+                    "domain": "pib.gov.in"
+                  }
+                ],
+                "domains": [
+                  "pib.gov.in"
+                ],
+                "dropped": 0,
+                "why": "Both series count cyclones affecting the Indian coast and the Bay of Bengal basin where the storm is forecast to make landfall, so they track the same kind of event the story reports.",
+                "reused": true,
+                "checkedAt": "2026-10-26T13:28:44.632Z"
+              }
+            ]
+          }
+        },
+        {
           "id": "sh4wvzh",
           "headline": "Greenhouse gas levels hit record highs, climate impact to last centuries: UN",
           "url": "https://www.scmp.com/news/world/article/3372304/greenhouse-gas-levels-hit-record-highs-climate-impact-will-last-centuries-un",
@@ -28886,269 +29624,6 @@
           ],
           "placeTried": true,
           "thread": "tk8e0z9"
-        },
-        {
-          "id": "su2yvee",
-          "headline": "India evacuates tens of thousands as ‘very severe’ Cyclone Arnab nears",
-          "url": "https://www.aljazeera.com/news/2026/10/27/india-evacuates-tens-of-thousands-as-very-severe-cyclone-arnab-nears",
-          "source": "aljazeera",
-          "date": "2026-10-27T08:02:37.000Z",
-          "relevance": "high",
-          "why": "A 'very severe' storm, Cyclone Arnab, is forecast to make landfall on India's eastern coast on Wednesday. Authorities are evacuating tens of thousands of people, and 400,000 are reported to need evacuation.",
-          "implications": [
-            "The New York Times reports that the storm will cut inland and head north toward Nepal after landfall, so its effects could reach areas far from the coastline.",
-            "Strong winds and heavy rain from a storm of this strength could damage standing crops, fishing boats and homes in coastal districts.",
-            "Damage to power lines, roads, railways and ports could interrupt electricity supply, travel and the movement of goods across eastern India for some days.",
-            "Relief, rescue and rebuilding work after landfall may add to spending by the central and affected state governments."
-          ],
-          "analysis": {
-            "v": 3,
-            "at": "2026-10-27T15:31:26.954Z",
-            "tier": "standard",
-            "primary": "impact_chain",
-            "complement": null,
-            "features": [
-              "pending_outcome"
-            ],
-            "exposure": {
-              "level": "high",
-              "reason": "The storm directly threatens the safety and homes of people on India's eastern coast, where 400,000 are reported to need evacuation, so the exposure is high."
-            },
-            "horizon": {
-              "value": "now",
-              "reason": "The storm is forecast to make landfall on Wednesday, so its effects on people in India will be felt within days."
-            },
-            "confidence": {
-              "level": "medium",
-              "reason": "Al Jazeera and The New York Times agree on the evacuations and the Wednesday landfall, but neither cites a named official source, and the storm's final track remains a forecast."
-            },
-            "outlets": 2,
-            "affected": [
-              {
-                "group": "Farmers",
-                "direction": "down",
-                "what": "crop damage risk",
-                "effect": "Heavy rain and strong winds along the storm's path inland could flatten or flood standing crops, which may reduce farmers' harvests and incomes.",
-                "basis": "inferred"
-              },
-              {
-                "group": "Fishers",
-                "direction": "down",
-                "what": "lost fishing days",
-                "effect": "Coastal fishers may be unable to go to sea before and after landfall, and their boats and nets could be damaged by the storm.",
-                "basis": "inferred"
-              },
-              {
-                "group": "Power consumers",
-                "direction": "down",
-                "what": "electricity outages",
-                "effect": "High winds could bring down power lines in the storm's path, which may cause outages for households and businesses in eastern and northern areas.",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "Cyclone Arnab makes landfall on India's eastern coast",
-                "why": "The strength and location of the landfall will show how severe the damage to coastal communities is likely to be.",
-                "when": "2026-10-28",
-                "where": "India Meteorological Department"
-              },
-              {
-                "what": "Authorities report progress toward evacuating the 400,000 people said to be at risk",
-                "why": "The share of people moved to safety before landfall will indicate how well loss of life is likely to be contained.",
-                "when": "2026-10-28",
-                "where": ""
-              },
-              {
-                "what": "The storm moves inland and heads north toward Nepal",
-                "why": "The track will show whether heavy rain and flooding are likely to spread to inland and northern regions beyond the coast.",
-                "when": "",
-                "where": "India Meteorological Department"
-              }
-            ],
-            "context": [
-              "The India Meteorological Department grades cyclones by sustained wind speed, and 'very severe cyclonic storm' is one of its higher categories, signalling a risk of serious damage from wind, storm surge and flooding.",
-              "The Bay of Bengal, which borders India's eastern coast, regularly produces cyclones in the months after the monsoon.",
-              "India's large-scale advance evacuations have, over the years, greatly reduced deaths from such storms, although damage to property, farms and infrastructure can remain heavy."
-            ],
-            "terms": [
-              {
-                "term": "very severe",
-                "meaning": "A category in the Indian weather agency's cyclone scale for storms with very strong sustained winds, capable of causing extensive damage."
-              },
-              {
-                "term": "landfall",
-                "meaning": "The moment the centre of a storm moves from the sea onto land, usually when its winds and rain are most destructive."
-              }
-            ],
-            "frameworks": {
-              "impact_chain": {
-                "chain": [
-                  {
-                    "step": "Very severe cyclone approaches eastern coast",
-                    "detail": "Cyclone Arnab, rated 'very severe', is nearing India, and authorities are evacuating tens of thousands of people out of 400,000 reported to need evacuation.",
-                    "basis": "reported"
-                  },
-                  {
-                    "step": "Storm makes landfall on Wednesday",
-                    "detail": "The cyclone is forecast to make landfall on India's eastern coast on Wednesday, bringing its strongest winds and rain to coastal communities.",
-                    "basis": "reported"
-                  },
-                  {
-                    "step": "Storm moves inland toward Nepal",
-                    "detail": "After landfall, the storm is forecast to cut inland and head north toward Nepal, carrying rain and wind into areas away from the coast.",
-                    "basis": "reported"
-                  },
-                  {
-                    "step": "Damage to farms, power and transport",
-                    "detail": "Along its path, the storm could damage crops, power lines, roads and railways, which may disrupt incomes, electricity and travel for people in eastern and northern India.",
-                    "basis": "inferred"
-                  }
-                ],
-                "breaks_if": "The effects would be much smaller if the cyclone weakens sharply before landfall or changes course away from populated coastal and inland areas."
-              }
-            }
-          },
-          "place": {
-            "name": "Bay of Bengal",
-            "country": "India",
-            "lat": 18,
-            "lon": 87
-          },
-          "reports": [
-            {
-              "source": "aljazeera",
-              "headline": "India evacuates tens of thousands as ‘very severe’ Cyclone Arnab nears",
-              "url": "https://www.aljazeera.com/news/2026/10/27/india-evacuates-tens-of-thousands-as-very-severe-cyclone-arnab-nears",
-              "date": "2026-10-27T08:02:37.000Z",
-              "kind": "breaking",
-              "summary": "The cyclonic storm is set to make landfall on Wednesday, with 400,000 people in need of evacuation.",
-              "summaryV": 3,
-              "ogTried": true,
-              "descTried": true,
-              "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/AP25301397846074-1793082640.jpg?resize=1920%2C1440"
-            },
-            {
-              "source": "nyt",
-              "headline": "India Evacuates Tens of Thousands as Cyclone Arnab Approaches",
-              "url": "https://www.nytimes.com/2026/10/27/world/asia/india-cyclone-arnab-evacuations-nepal.html",
-              "date": "2026-10-27T11:09:53.000Z",
-              "kind": "hard",
-              "summary": "The storm, Arnab, is forecast to make landfall Wednesday on the country’s eastern coast and then cut inland and head north toward Nepal.",
-              "summaryV": 3,
-              "image": "https://static01.nyt.com/images/2026/10/27/multimedia/27int-india-cyclone-gqwp/27int-india-cyclone-gqwp-mediumSquareAt3X.jpg"
-            }
-          ],
-          "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/AP25301397846074-1793082640.jpg?resize=1920%2C1440",
-          "thread": "t1lrksv5",
-          "stats": {
-            "v": 2,
-            "at": "2026-10-27T22:27:54.337Z",
-            "series": [
-              {
-                "title": "Cyclones making landfall over the Indian coast",
-                "unit": "number of cyclones per year",
-                "publisher": "Ministry of Earth Sciences (via Press Information Bureau)",
-                "points": [
-                  {
-                    "period": "2016",
-                    "value": 1,
-                    "url": "https://www.pib.gov.in/Pressreleaseshare.aspx?PRID=1704837&reg=48&lang=2",
-                    "source": "Study on Cyclones"
-                  },
-                  {
-                    "period": "2017",
-                    "value": 0,
-                    "url": "https://www.pib.gov.in/Pressreleaseshare.aspx?PRID=1704837&reg=48&lang=2",
-                    "source": "Study on Cyclones"
-                  },
-                  {
-                    "period": "2018",
-                    "value": 3,
-                    "url": "https://www.pib.gov.in/Pressreleaseshare.aspx?PRID=1704837&reg=48&lang=2",
-                    "source": "Study on Cyclones"
-                  },
-                  {
-                    "period": "2019",
-                    "value": 2,
-                    "url": "https://www.pib.gov.in/Pressreleaseshare.aspx?PRID=1704837&reg=48&lang=2",
-                    "source": "Study on Cyclones"
-                  },
-                  {
-                    "period": "2020",
-                    "value": 4,
-                    "url": "https://www.pib.gov.in/Pressreleaseshare.aspx?PRID=1704837&reg=48&lang=2",
-                    "source": "Study on Cyclones"
-                  }
-                ],
-                "sources": [
-                  {
-                    "url": "https://www.pib.gov.in/Pressreleaseshare.aspx?PRID=1704837&reg=48&lang=2",
-                    "title": "Study on Cyclones",
-                    "domain": "pib.gov.in"
-                  }
-                ],
-                "domains": [
-                  "pib.gov.in"
-                ],
-                "dropped": 0,
-                "why": "Both series count cyclones affecting the Indian coast and the Bay of Bengal basin where the storm is forecast to make landfall, so they track the same kind of event the story reports.",
-                "reused": true,
-                "checkedAt": "2026-10-26T13:28:44.632Z"
-              },
-              {
-                "title": "Cyclones formed over Bay of Bengal and Arabian Sea",
-                "unit": "number of cyclones per year",
-                "publisher": "Ministry of Earth Sciences (via Press Information Bureau)",
-                "points": [
-                  {
-                    "period": "2016",
-                    "value": 4,
-                    "url": "https://www.pib.gov.in/Pressreleaseshare.aspx?PRID=1704837&reg=48&lang=2",
-                    "source": "Study on Cyclones"
-                  },
-                  {
-                    "period": "2017",
-                    "value": 3,
-                    "url": "https://www.pib.gov.in/Pressreleaseshare.aspx?PRID=1704837&reg=48&lang=2",
-                    "source": "Study on Cyclones"
-                  },
-                  {
-                    "period": "2018",
-                    "value": 7,
-                    "url": "https://www.pib.gov.in/Pressreleaseshare.aspx?PRID=1704837&reg=48&lang=2",
-                    "source": "Study on Cyclones"
-                  },
-                  {
-                    "period": "2019",
-                    "value": 8,
-                    "url": "https://www.pib.gov.in/Pressreleaseshare.aspx?PRID=1704837&reg=48&lang=2",
-                    "source": "Study on Cyclones"
-                  },
-                  {
-                    "period": "2020",
-                    "value": 5,
-                    "url": "https://www.pib.gov.in/Pressreleaseshare.aspx?PRID=1704837&reg=48&lang=2",
-                    "source": "Study on Cyclones"
-                  }
-                ],
-                "sources": [
-                  {
-                    "url": "https://www.pib.gov.in/Pressreleaseshare.aspx?PRID=1704837&reg=48&lang=2",
-                    "title": "Study on Cyclones",
-                    "domain": "pib.gov.in"
-                  }
-                ],
-                "domains": [
-                  "pib.gov.in"
-                ],
-                "dropped": 0,
-                "why": "Both series count cyclones affecting the Indian coast and the Bay of Bengal basin where the storm is forecast to make landfall, so they track the same kind of event the story reports.",
-                "reused": true,
-                "checkedAt": "2026-10-26T13:28:44.632Z"
-              }
-            ]
-          }
         },
         {
           "id": "s1uj5jvr",
@@ -30206,6 +30681,165 @@
       "name": "Policy & Governance",
       "items": [
         {
+          "id": "s1st0yfh",
+          "headline": "Why India has soured on Trump ahead of US midterms",
+          "url": "https://www.aljazeera.com/features/2026/10/28/why-india-has-soured-on-trump-ahead-of-us-midterms",
+          "source": "aljazeera",
+          "date": "2026-10-28T05:43:40.000Z",
+          "relevance": "medium",
+          "why": "",
+          "implications": [],
+          "place": {
+            "name": "New Delhi",
+            "country": "India",
+            "lat": 28.6,
+            "lon": 77.2,
+            "involves": [
+              "United States"
+            ]
+          },
+          "reports": [
+            {
+              "source": "aljazeera",
+              "headline": "Why India has soured on Trump ahead of US midterms",
+              "url": "https://www.aljazeera.com/features/2026/10/28/why-india-has-soured-on-trump-ahead-of-us-midterms",
+              "date": "2026-10-28T05:43:40.000Z",
+              "kind": "feature",
+              "summary": "Seven years after Modi backed Trump, New Delhi may now hope US midterm losses leave the president chastened.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/AFP__20250213__36XT4JK__v2__HighRes__TopshotUsIndiaPoliticsDiplomacyTrumpModi-1-1790853683.jpg?resize=1920%2C1440"
+            }
+          ],
+          "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/AFP__20250213__36XT4JK__v2__HighRes__TopshotUsIndiaPoliticsDiplomacyTrumpModi-1-1790853683.jpg?resize=1920%2C1440",
+          "thread": "trijh54"
+        },
+        {
+          "id": "shdoe4j",
+          "headline": "Why Indian-American support for Trump is slipping before midterms",
+          "url": "https://www.scmp.com/week-asia/politics/article/3372349/why-indian-american-support-trump-slipping-midterms",
+          "source": "scmp",
+          "date": "2026-10-28T01:30:12.000Z",
+          "relevance": "medium",
+          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/28/0b1b6722-9a0c-4c9e-ae53-3347b05938e4_28636dc4.jpg?itok=sVOXJtfB&v=1793119453",
+          "why": "",
+          "implications": [],
+          "place": {
+            "name": "Washington",
+            "country": "United States",
+            "lat": 38.91,
+            "lon": -77.04,
+            "involves": [
+              "India"
+            ]
+          },
+          "reports": [
+            {
+              "source": "scmp",
+              "headline": "Why Indian-American support for Trump is slipping before midterms",
+              "url": "https://www.scmp.com/week-asia/politics/article/3372349/why-indian-american-support-trump-slipping-midterms",
+              "date": "2026-10-28T01:30:12.000Z",
+              "kind": "feature",
+              "summary": "Immigration restrictions, rising living costs and strains in US-India relations are testing support for President Donald Trump among some Indian-Americans who backed the Republican Party in 2024, analysts say, ahead of November’s midterm elections.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/28/0b1b6722-9a0c-4c9e-ae53-3347b05938e4_28636dc4.jpg?itok=sVOXJtfB&v=1793119453"
+            }
+          ],
+          "thread": "trijh54"
+        },
+        {
+          "id": "stiv5iv",
+          "headline": "India-China border face-offs test Modi six years after deadly clash",
+          "url": "https://www.aljazeera.com/news/2026/10/27/india-china-border-face-offs-test-modi-six-years-after-deadly-clash",
+          "source": "aljazeera",
+          "date": "2026-10-27T13:15:32.000Z",
+          "relevance": "medium",
+          "why": "",
+          "implications": [],
+          "place": {
+            "name": "Ladakh border area",
+            "country": "India",
+            "lat": 34.2,
+            "lon": 77.6,
+            "involves": [
+              "China"
+            ]
+          },
+          "reports": [
+            {
+              "source": "aljazeera",
+              "headline": "India-China border face-offs test Modi six years after deadly clash",
+              "url": "https://www.aljazeera.com/news/2026/10/27/india-china-border-face-offs-test-modi-six-years-after-deadly-clash",
+              "date": "2026-10-27T13:15:32.000Z",
+              "kind": "feature",
+              "summary": "Despite thaw in India-China ties, border tensions again challenge Modi's strongman image at home.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/2026-09-12T093856Z_1857542824_RC2LHNAVHBOI_RTRMADP_3_BRICS-SUMMIT-1793100515.jpg?resize=1920%2C1440"
+            },
+            {
+              "source": "scmp",
+              "headline": "Fragile India-China thaw tested by reported fresh Himalayan border face-offs",
+              "url": "https://www.scmp.com/news/china/diplomacy/article/3372296/fragile-india-china-thaw-tested-reported-fresh-himalayan-border-face-offs",
+              "date": "2026-10-27T09:25:48.000Z",
+              "kind": "hard",
+              "summary": "A fragile rapprochement between China and India is facing a renewed test following reports of military face-offs along their hotly contested border.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/27/88f8aa79-518c-4add-a8d9-13faa99aab0e_2c1f8032.jpg?itok=LXCtJzmJ&v=1793093147"
+            },
+            {
+              "source": "bbc",
+              "headline": "India and China were easing tensions - then a border official spoke out",
+              "url": "https://www.bbc.co.uk/news/articles/cj3vq7nkzr0qo",
+              "date": "2026-10-28T00:06:27.000Z",
+              "kind": "hard",
+              "summary": "India-China ties were on a cautious recovery path until a border official’s remarks raised fresh doubts about ground realities.",
+              "summaryV": 3,
+              "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/70ef/live/56e7aaf0-d1f2-11f1-b360-61fb5d34dc08.jpg",
+              "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/70ef/live/56e7aaf0-d1f2-11f1-b360-61fb5d34dc08.jpg"
+            }
+          ],
+          "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/2026-09-12T093856Z_1857542824_RC2LHNAVHBOI_RTRMADP_3_BRICS-SUMMIT-1793100515.jpg?resize=1920%2C1440",
+          "thread": "t1rt9t5i"
+        },
+        {
+          "id": "szjowbj",
+          "headline": "Myanmar: Is the US undermining the EU's diplomatic blockade?",
+          "url": "https://www.dw.com/en/myanmar-is-the-us-undermining-the-eu-s-diplomatic-blockade/a-79778863",
+          "source": "dw",
+          "date": "2026-10-27T15:16:00.000Z",
+          "relevance": "medium",
+          "why": "",
+          "implications": [],
+          "place": {
+            "name": "Naypyidaw",
+            "country": "Myanmar",
+            "lat": 19.76,
+            "lon": 96.08,
+            "involves": [
+              "United States"
+            ]
+          },
+          "reports": [
+            {
+              "source": "dw",
+              "headline": "Myanmar: Is the US undermining the EU's diplomatic blockade?",
+              "url": "https://www.dw.com/en/myanmar-is-the-us-undermining-the-eu-s-diplomatic-blockade/a-79778863",
+              "date": "2026-10-27T15:16:00.000Z",
+              "kind": "feature",
+              "summary": "With the US reopening talks with Myanmar's military-backed government, and several Southeast Asian countries restarting diplomatic contacts, the EU is facing uncomfortable questions about its own boycott of the junta.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://static.dw.com/image/76992758_6.jpg"
+            }
+          ],
+          "image": "https://static.dw.com/image/76992758_6.jpg",
+          "thread": "t154wf6t"
+        },
+        {
           "id": "s1xn2f0r",
           "headline": "Will elections in Israel change its Iran approach?",
           "url": "https://www.dw.com/en/will-elections-in-israel-change-its-iran-approach/a-79776122",
@@ -30239,41 +30873,6 @@
           ],
           "image": "https://static.dw.com/image/79759992_6.jpg",
           "thread": "t1am6o6d"
-        },
-        {
-          "id": "stiv5iv",
-          "headline": "India-China border face-offs test Modi six years after deadly clash",
-          "url": "https://www.aljazeera.com/news/2026/10/27/india-china-border-face-offs-test-modi-six-years-after-deadly-clash",
-          "source": "aljazeera",
-          "date": "2026-10-27T13:15:32.000Z",
-          "relevance": "medium",
-          "why": "",
-          "implications": [],
-          "place": {
-            "name": "Ladakh border area",
-            "country": "India",
-            "lat": 34.2,
-            "lon": 77.6,
-            "involves": [
-              "China"
-            ]
-          },
-          "reports": [
-            {
-              "source": "aljazeera",
-              "headline": "India-China border face-offs test Modi six years after deadly clash",
-              "url": "https://www.aljazeera.com/news/2026/10/27/india-china-border-face-offs-test-modi-six-years-after-deadly-clash",
-              "date": "2026-10-27T13:15:32.000Z",
-              "kind": "feature",
-              "summary": "Despite thaw in India-China ties, border tensions again challenge Modi's strongman image at home.",
-              "summaryV": 3,
-              "ogTried": true,
-              "descTried": true,
-              "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/2026-09-12T093856Z_1857542824_RC2LHNAVHBOI_RTRMADP_3_BRICS-SUMMIT-1793100515.jpg?resize=1920%2C1440"
-            }
-          ],
-          "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/2026-09-12T093856Z_1857542824_RC2LHNAVHBOI_RTRMADP_3_BRICS-SUMMIT-1793100515.jpg?resize=1920%2C1440",
-          "thread": "t1rt9t5i"
         },
         {
           "id": "sinkehy",
@@ -30496,6 +31095,40 @@
           ],
           "placeTried": true,
           "thread": "tw3hcen"
+        },
+        {
+          "id": "sfz5dmq",
+          "headline": "What Marco Rubio’s sidestepping of New Delhi says about the US’s stance on India",
+          "url": "https://www.theguardian.com/world/2026/oct/26/marco-rubio-us-secretary-of-state-india-visit-mumbai",
+          "source": "guardian",
+          "date": "2026-10-27T09:21:33.000Z",
+          "relevance": "medium",
+          "image": "https://i.guim.co.uk/img/media/1feda1d03fd340d455bf7e59753f9cbfd2d7b3e0/427_0_4914_3933/master/4914.jpg?width=700&quality=85&auto=format&fit=max&s=ec3aaee6bd4d95d9cb4984a549bcb064",
+          "why": "",
+          "implications": [],
+          "place": {
+            "name": "New Delhi",
+            "country": "India",
+            "lat": 28.61,
+            "lon": 77.21,
+            "involves": [
+              "United States"
+            ]
+          },
+          "reports": [
+            {
+              "source": "guardian",
+              "headline": "What Marco Rubio’s sidestepping of New Delhi says about the US’s stance on India",
+              "url": "https://www.theguardian.com/world/2026/oct/26/marco-rubio-us-secretary-of-state-india-visit-mumbai",
+              "date": "2026-10-27T09:21:33.000Z",
+              "kind": "feature",
+              "summary": "Rubio’s decision not to meet Narendra Modi last week was seen by some as a snub – but by focusing on business leaders and oil, the secretary of state made American priorities clear. Plus: the artist bringing a female perspective to men’s clothing",
+              "summaryV": 3,
+              "lede": "• Don’t get This is India delivered to your inbox? Sign up here",
+              "image": "https://i.guim.co.uk/img/media/1feda1d03fd340d455bf7e59753f9cbfd2d7b3e0/427_0_4914_3933/master/4914.jpg?width=700&quality=85&auto=format&fit=max&s=ec3aaee6bd4d95d9cb4984a549bcb064"
+            }
+          ],
+          "thread": "trijh54"
         },
         {
           "id": "s1erde0a",
@@ -37171,20 +37804,20 @@
       "none": 0,
       "waiting": 0
     },
-    "analysed": 161,
-    "added": 3,
-    "merged": 0,
+    "analysed": 131,
+    "added": 8,
+    "merged": 7,
     "failedBatches": 1,
     "feeds": {
       "bbc": {
         "feedsOk": 6,
         "feedsFailed": 0,
-        "items": 154
+        "items": 145
       },
       "guardian": {
         "feedsOk": 7,
         "feedsFailed": 0,
-        "items": 199
+        "items": 200
       },
       "npr": {
         "feedsOk": 4,
@@ -37194,7 +37827,7 @@
       "aljazeera": {
         "feedsOk": 1,
         "feedsFailed": 0,
-        "items": 14
+        "items": 12
       },
       "mercopress": {
         "feedsOk": 3,
@@ -37214,12 +37847,12 @@
       "cnbc": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 88
+        "items": 89
       },
       "cbs": {
         "feedsOk": 2,
         "feedsFailed": 0,
-        "items": 47
+        "items": 46
       },
       "dw": {
         "feedsOk": 3,
@@ -37229,7 +37862,7 @@
       "france24": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 69
+        "items": 70
       },
       "africanews": {
         "feedsOk": 1,
@@ -37243,18 +37876,18 @@
       }
     },
     "shareImages": {
-      "tried": 1,
-      "found": 1,
+      "tried": 4,
+      "found": 4,
       "summaries": 0
     },
     "threads": {
-      "assigned": 3,
-      "created": 0,
+      "assigned": 8,
+      "created": 3,
       "failedBatches": 0
     },
     "summaries": {
-      "written": 3,
-      "due": 3
+      "written": 2,
+      "due": 2
     },
     "kinds": {
       "labelled": 0,
@@ -37262,52 +37895,54 @@
       "failedBatches": 0
     },
     "frames": {
-      "done": 0,
+      "done": 4,
       "waiting": 1,
       "failedBatches": 0
     },
     "stats": {
-      "searched": 1,
+      "searched": 0,
       "found": 0,
-      "reused": 1,
+      "reused": 0,
       "none": 0,
       "failed": 0,
       "proposed": 0,
       "droppedPoints": 0,
       "pagesFetched": 0,
-      "samples": [
-        {
-          "headline": "India evacuates tens of thousands as ‘very severe’ Cyclone Arnab nears",
-          "result": "reused saved series"
-        }
-      ]
+      "samples": []
     },
     "models": {
       "filter": {
         "model": "claude-haiku-5-5",
-        "calls": 12,
-        "inputTokens": 42970,
-        "outputTokens": 23033,
-        "cost": 0.0158
+        "calls": 9,
+        "inputTokens": 39078,
+        "outputTokens": 21699,
+        "cost": 0.0148
       },
       "analysis_quick": {
         "model": "claude-sonnet-5-5",
-        "calls": 4,
-        "inputTokens": 11358,
-        "outputTokens": 7695,
-        "cost": 0.0997
+        "calls": 3,
+        "inputTokens": 8877,
+        "outputTokens": 7925,
+        "cost": 0.097
+      },
+      "analysis": {
+        "model": "claude-opus-5-5",
+        "calls": 2,
+        "inputTokens": 8807,
+        "outputTokens": 13284,
+        "cost": 0.3009
       },
       "threads": {
         "model": "claude-sonnet-5-5",
-        "calls": 4,
-        "inputTokens": 10910,
-        "outputTokens": 1222,
-        "cost": 0.034
+        "calls": 3,
+        "inputTokens": 9934,
+        "outputTokens": 594,
+        "cost": 0.0258
       }
     },
     "spend": {
-      "thisDesk": 0.1495,
-      "today": 0.1495,
+      "thisDesk": 0.4385,
+      "today": 1.0644,
       "cap": 6
     }
   },
