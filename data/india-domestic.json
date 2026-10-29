@@ -2,12 +2,133 @@
   "schema": 4,
   "region": "India",
   "since": "2026-10-02",
-  "updatedAt": "2026-10-29T01:09:21.906Z",
+  "updatedAt": "2026-10-29T10:21:44.767Z",
   "sectors": [
     {
       "id": "energy",
       "name": "Energy",
       "items": [
+        {
+          "id": "syzg97b",
+          "headline": "Petrol and diesel prices today, October 28: Check fuel rates in different cities across India",
+          "url": "https://www.livemint.com/news/india/petrol-and-diesel-prices-today-october-28-check-fuel-rates-in-different-cities-across-india-11793150045980.html",
+          "source": "mint",
+          "date": "2026-10-28T01:22:04.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2026/10/28/1600x900/logo/The-attendants-said-checking_1793150256914_B047_1793150257052_vXQ3_cf8df46e-26a8-42eb-8f4d-43cdbba1c87d_UwRj.jpg",
+          "why": "Mint's daily fuel price listing for 28 October reports that compressed natural gas (CNG) prices rose in several locations, by up to ₹2 in Chennai, Mathura and Meerut. This raises running costs for CNG vehicle owners in those cities.",
+          "implications": [
+            "Drivers of CNG autos, taxis and private cars in the affected cities may face higher daily fuel bills, which could build pressure for fare increases where fares track fuel costs.",
+            "The summary mentions no change in petrol or diesel prices, so the reported rise appears specific to CNG in these listings."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-28T06:02:48.720Z",
+            "tier": "quick",
+            "primary": "pass_through",
+            "complement": null,
+            "features": [
+              "price_move"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The channel is the retail CNG pump price, which touches vehicle owners and commuters only in the cities named. The reported rise is small, and no change in petrol or diesel prices is reported."
+            },
+            "horizon": {
+              "value": "now",
+              "reason": "The listing reports prices for 28 October, so the higher CNG rates already apply at pumps in the named cities."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single Mint price listing with no official source, and the reasons for the increases and the full list of cities are not given."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "up",
+                "what": "CNG pump prices",
+                "effect": "CNG users in Chennai, Mathura, Meerut and other listed locations pay more per unit of fuel, which raises the running cost of their vehicles.",
+                "basis": "reported"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Whether CNG prices in the listed cities are raised again or rolled back in the next daily price updates",
+                "why": "It would show whether the increase is a one-time adjustment or the start of a wider rise.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "CNG is sold through city gas distribution networks, and retail prices are set by the distributing companies city by city, so increases can differ widely from one location to another."
+            ],
+            "terms": [
+              {
+                "term": "CNG",
+                "meaning": "Compressed natural gas, a fuel sold at dedicated pumps and used mainly in autos, taxis, buses and some private cars."
+              }
+            ],
+            "frameworks": {
+              "pass_through": {
+                "driver": {
+                  "variable": "CNG retail price in several cities",
+                  "direction": "up",
+                  "size": "up to ₹2 in Chennai, Mathura and Meerut"
+                },
+                "product": "other",
+                "rungs": [
+                  {
+                    "stage": "Gas supply cost → City gas distributors' costs",
+                    "pass": "unclear",
+                    "damper": "The reports give no reason for the rise, so it is not known which cost change, if any, led distributors to raise prices.",
+                    "lag": "weeks"
+                  },
+                  {
+                    "stage": "Distributors' costs → CNG pump price",
+                    "pass": "likely",
+                    "damper": "Distributors set prices city by city, so the size of the increase varies by location, as the reported rises of up to ₹2 suggest.",
+                    "lag": "days"
+                  },
+                  {
+                    "stage": "Pump price → Running costs and fares",
+                    "pass": "partial",
+                    "damper": "Drivers may absorb the extra cost at first, because fares for autos and taxis are often fixed or regulated by local authorities and change only after revision.",
+                    "lag": "weeks"
+                  }
+                ],
+                "end_user": {
+                  "group": "Fuel & LPG users",
+                  "effect": "CNG vehicle owners in the affected cities may notice a slightly higher cost at each refill straight away. Any effect on auto and taxi fares would probably come later, if fares are revised."
+                }
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "Petrol and diesel prices today, October 28: Check fuel rates in different cities across India",
+              "url": "https://www.livemint.com/news/india/petrol-and-diesel-prices-today-october-28-check-fuel-rates-in-different-cities-across-india-11793150045980.html",
+              "date": "2026-10-28T01:22:04.000Z",
+              "kind": "hard",
+              "summary": "Check petrol and diesel prices in major Indian cities on October 28. CNG prices rose in several locations, with increases of up to ₹2 in Chennai, Mathura and Meerut.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/10/28/1600x900/logo/The-attendants-said-checking_1793150256914_B047_1793150257052_vXQ3_cf8df46e-26a8-42eb-8f4d-43cdbba1c87d_UwRj.jpg"
+            },
+            {
+              "source": "mint",
+              "headline": "Petrol and diesel prices today, October 29: Check fuel rates in different cities across India",
+              "url": "https://www.livemint.com/news/india/petrol-and-diesel-prices-today-october-29-check-fuel-rates-in-different-cities-across-india-11793237728806.html",
+              "date": "2026-10-29T01:41:15.000Z",
+              "kind": "hard",
+              "summary": "Fuel prices were steady for petrol and diesel across major cities, but CNG became costlier in many locations.&nbsp;",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/10/29/1600x900/logo/INDIA-ECONOMY-ENERGY-FUEL_1793237958723_aXW3_1793237958943_PWHA_11ccc019-9340-4477-9bcb-c295377c4879_CCIW.jpg"
+            }
+          ],
+          "placeTried": true,
+          "thread": "to54n4o"
+        },
         {
           "id": "seova1e",
           "headline": "India needs $220 billion for green power transition by FY30",
@@ -116,117 +237,6 @@
             }
           ],
           "thread": "t158hpcj"
-        },
-        {
-          "id": "syzg97b",
-          "headline": "Petrol and diesel prices today, October 28: Check fuel rates in different cities across India",
-          "url": "https://www.livemint.com/news/india/petrol-and-diesel-prices-today-october-28-check-fuel-rates-in-different-cities-across-india-11793150045980.html",
-          "source": "mint",
-          "date": "2026-10-28T01:22:04.000Z",
-          "relevance": "medium",
-          "image": "https://www.livemint.com/lm-img/img/2026/10/28/1600x900/logo/The-attendants-said-checking_1793150256914_B047_1793150257052_vXQ3_cf8df46e-26a8-42eb-8f4d-43cdbba1c87d_UwRj.jpg",
-          "why": "Mint's daily fuel price listing for 28 October reports that compressed natural gas (CNG) prices rose in several locations, by up to ₹2 in Chennai, Mathura and Meerut. This raises running costs for CNG vehicle owners in those cities.",
-          "implications": [
-            "Drivers of CNG autos, taxis and private cars in the affected cities may face higher daily fuel bills, which could build pressure for fare increases where fares track fuel costs.",
-            "The summary mentions no change in petrol or diesel prices, so the reported rise appears specific to CNG in these listings."
-          ],
-          "analysis": {
-            "v": 3,
-            "at": "2026-10-28T06:02:48.720Z",
-            "tier": "quick",
-            "primary": "pass_through",
-            "complement": null,
-            "features": [
-              "price_move"
-            ],
-            "exposure": {
-              "level": "medium",
-              "reason": "The channel is the retail CNG pump price, which touches vehicle owners and commuters only in the cities named. The reported rise is small, and no change in petrol or diesel prices is reported."
-            },
-            "horizon": {
-              "value": "now",
-              "reason": "The listing reports prices for 28 October, so the higher CNG rates already apply at pumps in the named cities."
-            },
-            "confidence": {
-              "level": "low",
-              "reason": "This rests on a single Mint price listing with no official source, and the reasons for the increases and the full list of cities are not given."
-            },
-            "outlets": 1,
-            "affected": [
-              {
-                "group": "Fuel & LPG users",
-                "direction": "up",
-                "what": "CNG pump prices",
-                "effect": "CNG users in Chennai, Mathura, Meerut and other listed locations pay more per unit of fuel, which raises the running cost of their vehicles.",
-                "basis": "reported"
-              }
-            ],
-            "watch": [
-              {
-                "what": "Whether CNG prices in the listed cities are raised again or rolled back in the next daily price updates",
-                "why": "It would show whether the increase is a one-time adjustment or the start of a wider rise.",
-                "when": "",
-                "where": ""
-              }
-            ],
-            "context": [
-              "CNG is sold through city gas distribution networks, and retail prices are set by the distributing companies city by city, so increases can differ widely from one location to another."
-            ],
-            "terms": [
-              {
-                "term": "CNG",
-                "meaning": "Compressed natural gas, a fuel sold at dedicated pumps and used mainly in autos, taxis, buses and some private cars."
-              }
-            ],
-            "frameworks": {
-              "pass_through": {
-                "driver": {
-                  "variable": "CNG retail price in several cities",
-                  "direction": "up",
-                  "size": "up to ₹2 in Chennai, Mathura and Meerut"
-                },
-                "product": "other",
-                "rungs": [
-                  {
-                    "stage": "Gas supply cost → City gas distributors' costs",
-                    "pass": "unclear",
-                    "damper": "The reports give no reason for the rise, so it is not known which cost change, if any, led distributors to raise prices.",
-                    "lag": "weeks"
-                  },
-                  {
-                    "stage": "Distributors' costs → CNG pump price",
-                    "pass": "likely",
-                    "damper": "Distributors set prices city by city, so the size of the increase varies by location, as the reported rises of up to ₹2 suggest.",
-                    "lag": "days"
-                  },
-                  {
-                    "stage": "Pump price → Running costs and fares",
-                    "pass": "partial",
-                    "damper": "Drivers may absorb the extra cost at first, because fares for autos and taxis are often fixed or regulated by local authorities and change only after revision.",
-                    "lag": "weeks"
-                  }
-                ],
-                "end_user": {
-                  "group": "Fuel & LPG users",
-                  "effect": "CNG vehicle owners in the affected cities may notice a slightly higher cost at each refill straight away. Any effect on auto and taxi fares would probably come later, if fares are revised."
-                }
-              }
-            }
-          },
-          "reports": [
-            {
-              "source": "mint",
-              "headline": "Petrol and diesel prices today, October 28: Check fuel rates in different cities across India",
-              "url": "https://www.livemint.com/news/india/petrol-and-diesel-prices-today-october-28-check-fuel-rates-in-different-cities-across-india-11793150045980.html",
-              "date": "2026-10-28T01:22:04.000Z",
-              "kind": "hard",
-              "summary": "Check petrol and diesel prices in major Indian cities on October 28. CNG prices rose in several locations, with increases of up to ₹2 in Chennai, Mathura and Meerut.",
-              "summaryV": 3,
-              "image": "https://www.livemint.com/lm-img/img/2026/10/28/1600x900/logo/The-attendants-said-checking_1793150256914_B047_1793150257052_vXQ3_cf8df46e-26a8-42eb-8f4d-43cdbba1c87d_UwRj.jpg"
-            }
-          ],
-          "placeTried": true,
-          "thread": "to54n4o"
         },
         {
           "id": "s54i6ot",
@@ -1374,8 +1384,11 @@
           "date": "2026-10-23T16:44:08.000Z",
           "relevance": "medium",
           "image": "https://th-i.thgim.com/public/news/national/telangana/da8rd2/article71617432.ece/alternates/LANDSCAPE_1200/CM%20at%20Praja%20Bhavan%20.jpeg",
-          "why": "",
-          "implications": [],
+          "why": "The chief minister of the state led by Revanth says an El Nino-linked water and power crisis is likely to last until July. He has asked people to save both and announced a special employment guarantee scheme after Sankranti.",
+          "implications": [
+            "If the crisis lasts until July, households and businesses in the state could face months of pressure on water and electricity supply, and conservation appeals may continue throughout that period.",
+            "The planned employment guarantee scheme suggests the state expects some people to lose income during the crisis, and it could provide paid work to affected households."
+          ],
           "place": {
             "name": "Hyderabad",
             "country": "India",
@@ -1411,7 +1424,89 @@
             }
           ],
           "priority": 40,
-          "thread": "t1duzt7p"
+          "thread": "t1duzt7p",
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-29T10:21:34.107Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "medium",
+              "reason": "The reports describe water and power stress in one state, which reaches residents mainly through supply of two essential services. The effect is regional rather than national, so the exposure is medium."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "The chief minister expects the crisis to persist until July, and the employment scheme is due only after Sankranti."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "This rests on one Hindu report of the chief minister's own statement; no independent data on shortages or details of the scheme are given."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Power consumers",
+                "direction": "unclear",
+                "what": "electricity availability and use",
+                "effect": "The chief minister asked people to save power, which indicates that supply could remain under strain for months.",
+                "basis": "reported"
+              },
+              {
+                "group": "A named state or region",
+                "direction": "mixed",
+                "what": "water stress and job support",
+                "effect": "The state faces a water and power crisis, while a special employment guarantee scheme is planned to support people after Sankranti.",
+                "basis": "reported"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Launch and design of the special employment guarantee scheme the chief minister promised after Sankranti",
+                "why": "It would show who is eligible and how much income support the state will actually provide.",
+                "when": "after Sankranti",
+                "where": ""
+              },
+              {
+                "what": "Further state government appeals or measures on saving water and power",
+                "why": "They would show whether the crisis is deepening or easing before July.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "El Nino is a periodic warming of Pacific waters that often disturbs monsoon rainfall in India, which can leave reservoirs lower and push up electricity demand for cooling and water pumping."
+            ],
+            "terms": [
+              {
+                "term": "El Nino",
+                "meaning": "A periodic warming of Pacific Ocean surface waters that changes weather worldwide and often weakens monsoon rainfall in India."
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "El Nino-linked crisis expected to last",
+                    "detail": "The chief minister says the water and power crisis caused by El Nino is likely to persist until July, so the strain is expected to continue for months rather than weeks.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Public asked to conserve and adapt",
+                    "detail": "He has asked people to save water and power and to adapt, as they did during the pandemic, which indicates that supply cannot be assured to meet normal demand.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Employment scheme to cushion households",
+                    "detail": "A special employment guarantee scheme is planned after Sankranti, and it could provide paid work to households whose incomes suffer from the crisis.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The effect would weaken if rainfall and reservoir levels recovered well before July, reducing the need for conservation appeals and relief work."
+              }
+            }
+          }
         },
         {
           "id": "s1asuvpp",
@@ -9545,6 +9640,132 @@
       "name": "Economy & Trade",
       "items": [
         {
+          "id": "s1ikr9zv",
+          "headline": "Rupee rises 11 paise to 95.17 against U.S. dollar in early trade",
+          "url": "https://www.thehindu.com/business/markets/rupee-rises-11-paise-against-us-dollar-in-early-trade-on-thursday/article71639047.ece",
+          "source": "thehindu",
+          "date": "2026-10-29T05:22:33.000Z",
+          "relevance": "medium",
+          "image": "https://th-i.thgim.com/public/incoming/hsaj71/article71639072.ece/alternates/LANDSCAPE_1200/istockphoto-1257153929-612x612.jpg",
+          "why": "The rupee gained 11 paise to 95.17 against the U.S. dollar in early trade after the U.S. Federal Reserve held rates at 3.75%–4.00%. Forex traders said the market reaction was mildly negative for the dollar.",
+          "implications": [
+            "A slightly stronger rupee means each dollar of imports costs marginally fewer rupees, which can ease the bill for importers if the move holds beyond a single morning of trading.",
+            "The report describes only an early-trade move, so it does not show whether the dollar's softer tone will last or change the rupee's direction over the coming days."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-29T10:18:54.482Z",
+            "tier": "quick",
+            "primary": "pass_through",
+            "complement": null,
+            "features": [
+              "price_move"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "The exchange rate can affect the rupee cost of imports, but an 11 paise move in early trade is small and the report describes no direct effect on prices paid by households."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Importers usually work with existing contracts and inventory, so a small exchange-rate move would take weeks of persistence before it shows up in costs."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single report from The Hindu that relies on unnamed forex traders, and it covers only early trade, so the day's close is unconfirmed."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Importers & traders",
+                "direction": "down",
+                "what": "rupee cost of imports",
+                "effect": "A stronger rupee means importers pay slightly fewer rupees for dollar-priced goods, though the effect depends on whether the move lasts and on existing contracts.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Students abroad",
+                "direction": "down",
+                "what": "rupee cost of dollar expenses",
+                "effect": "Families sending dollars for fees and living costs may need marginally fewer rupees per dollar if the rupee's gain holds.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Whether the rupee holds its gain against the dollar by the close of trading and in following sessions",
+                "why": "It would show whether the softer dollar tone after the Fed decision is lasting or only a brief reaction.",
+                "when": "",
+                "where": "Reserve Bank of India"
+              }
+            ],
+            "context": [
+              "India imports most of its crude oil and many other goods priced in dollars, so the rupee's value against the dollar affects import costs. Prices paid by households usually respond only to sustained exchange-rate moves."
+            ],
+            "terms": [
+              {
+                "term": "U.S. Fed",
+                "meaning": "The Federal Reserve, the central bank of the United States, whose interest-rate decisions influence the dollar and flows of money into emerging markets such as India."
+              }
+            ],
+            "frameworks": {
+              "pass_through": {
+                "driver": {
+                  "variable": "Rupee value against the U.S. dollar",
+                  "direction": "up",
+                  "size": "11 paise to 95.17"
+                },
+                "product": "other",
+                "rungs": [
+                  {
+                    "stage": "Stronger rupee → Importers' landed cost",
+                    "pass": "partial",
+                    "damper": "The move is small and importers often work with forward contracts and existing inventory bought at earlier exchange rates, so the gain reaches costs only gradually.",
+                    "lag": "weeks"
+                  },
+                  {
+                    "stage": "Importers' cost → Wholesale prices of imported goods",
+                    "pass": "unclear",
+                    "damper": "Wholesalers may absorb a small change in cost instead of changing prices, and global dollar prices of the goods can move in the other direction.",
+                    "lag": "weeks"
+                  },
+                  {
+                    "stage": "Wholesale prices → Retail prices paid by consumers",
+                    "pass": "blocked",
+                    "damper": "A single 11 paise move is too small to change retail prices, which also depend on taxes, margins and, for fuel, administered pricing practices.",
+                    "lag": "months"
+                  }
+                ],
+                "end_user": {
+                  "group": "Importers & traders",
+                  "effect": "Importers may see a slight easing in rupee costs of dollar-priced goods if the rupee's gain lasts. Households are unlikely to notice any change in prices from this one move."
+                }
+              }
+            }
+          },
+          "place": {
+            "name": "Mumbai",
+            "country": "India",
+            "lat": 19.08,
+            "lon": 72.88,
+            "involves": [
+              "United States"
+            ]
+          },
+          "reports": [
+            {
+              "source": "thehindu",
+              "headline": "Rupee rises 11 paise to 95.17 against U.S. dollar in early trade",
+              "url": "https://www.thehindu.com/business/markets/rupee-rises-11-paise-against-us-dollar-in-early-trade-on-thursday/article71639047.ece",
+              "date": "2026-10-29T05:22:33.000Z",
+              "kind": "hard",
+              "summary": "The U.S. Fed kept interest rates unchanged at 3.75%–4.00% as widely expected, but the market reaction turned mildly dollar-negative, forex traders said",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/incoming/hsaj71/article71639072.ece/alternates/LANDSCAPE_1200/istockphoto-1257153929-612x612.jpg"
+            }
+          ],
+          "thread": "t5sqh80"
+        },
+        {
           "id": "sns8mg7",
           "headline": "Silver imports surge at India’s bullion exchange after new licensing rules",
           "url": "https://www.livemint.com/news/silver-imports-surge-at-india-s-bullion-exchange-after-new-licensing-rules-11793170482288.html",
@@ -9884,6 +10105,160 @@
           "thread": "t1lbge0y"
         },
         {
+          "id": "s14i0jre",
+          "headline": "India, Mexico launch negotiations for preferential trade agreement",
+          "url": "https://www.livemint.com/news/india/india-mexico-preferential-trade-agreement-talks-11793174588986.html",
+          "source": "mint",
+          "date": "2026-10-28T08:39:30.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2026/10/28/1600x900/logo/2-0-73056464-CARGO-SHIP-3C--0_1681401626245_1793176529874_atm4_3317c907-1ba2-4134-a79e-954651e4cb4a_ZcVT.jpg",
+          "why": "India and Mexico have signed Terms of Reference to begin negotiating a preferential trade agreement. Bilateral merchandise trade was about $7.83 billion in FY26, and India ran a surplus of around $3.62 billion.",
+          "implications": [
+            "Because India already sells more to Mexico than it buys, the talks are likely to centre on protecting and widening market access for Indian exporters.",
+            "A preferential deal could lower Mexican tariffs on selected Indian goods, which may make those products cheaper for Mexican buyers than goods from competing countries.",
+            "Mexico is likely to seek concessions in return, which could expose some Indian producers to more competition from Mexican imports on the goods included in the deal.",
+            "The proposed visit by a Mexican business delegation in the first quarter of 2027 suggests both governments want company-level investment and sourcing links, not only tariff cuts."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-29T10:21:00.840Z",
+            "tier": "standard",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The development reaches India through one bilateral trade relationship. Any effect depends on future tariff cuts for particular exporting sectors, so it does not touch household essentials."
+            },
+            "horizon": {
+              "value": "years",
+              "reason": "Negotiations have only just begun, and trade agreements generally take more than a year to conclude and implement before tariffs change."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "Mint and The Hindu both report the signing and The Hindu names Commerce Secretary Rajesh Agrawal's presence, but only two outlets cover it and no deal terms exist yet."
+            },
+            "outlets": 2,
+            "affected": [
+              {
+                "group": "Large exporters",
+                "direction": "up",
+                "what": "Mexican market access",
+                "effect": "Large Indian manufacturers selling to Mexico could face lower tariffs on goods covered by an eventual agreement, which may improve their price competitiveness.",
+                "basis": "inferred"
+              },
+              {
+                "group": "MSME exporters",
+                "direction": "up",
+                "what": "export opportunities to Mexico",
+                "effect": "Smaller exporters could find it easier to enter the Mexican market if the agreement reduces tariffs on the products they make.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Importers & traders",
+                "direction": "mixed",
+                "what": "cost of Mexican imports",
+                "effect": "If India offers tariff concessions in return, importers of Mexican goods may pay less, while competing domestic producers could face more pressure.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "First formal round of India–Mexico preferential trade agreement negotiations",
+                "why": "The first round would show which goods and sectors each side is prioritising for tariff cuts.",
+                "when": "",
+                "where": "Ministry of Commerce and Industry"
+              },
+              {
+                "what": "Visit by a Mexican business delegation to India",
+                "why": "The visit would indicate whether the talks are producing concrete company-level investment and sourcing interest.",
+                "when": "first quarter of 2027",
+                "where": "Ministry of Commerce and Industry"
+              }
+            ],
+            "context": [
+              "A preferential trade agreement cuts tariffs on an agreed list of goods and is usually narrower than a full free trade agreement, which covers most trade and often services and investment.",
+              "Terms of Reference set the scope and process of negotiations, so signing them marks the formal start of talks rather than any change in tariffs.",
+              "Mexico is a significant overseas market for Indian-made vehicles and automotive components, and it also gives access to North American supply chains."
+            ],
+            "terms": [
+              {
+                "term": "Terms of Reference",
+                "meaning": "A document in which two governments agree on the scope, subjects and procedures for negotiations before formal talks begin."
+              },
+              {
+                "term": "preferential trade agreement",
+                "meaning": "A trade deal in which countries reduce tariffs on a limited list of each other's goods, rather than on most trade."
+              },
+              {
+                "term": "trade surplus",
+                "meaning": "The amount by which a country's exports to a partner exceed its imports from that partner."
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Terms of Reference signed in Mexico",
+                    "detail": "India and Mexico signed Terms of Reference, with Commerce Secretary Rajesh Agrawal present, formally launching negotiations on a preferential trade agreement covering trade that stood at about $7.83 billion in FY26.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Business delegation planned for 2027",
+                    "detail": "The two sides discussed a possible Mexican business delegation visiting India in the first quarter of 2027, which would build direct company contacts alongside the government talks.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Negotiators agree tariff cuts",
+                    "detail": "Negotiators could agree reduced tariffs on a selected list of goods, which would lower the cost of trading those products between the two countries.",
+                    "basis": "inferred"
+                  },
+                  {
+                    "step": "Indian exporters gain price advantage",
+                    "detail": "Lower Mexican tariffs may make covered Indian goods more competitive, which could raise export volumes and support jobs in the exporting industries.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The effect would not reach Indian firms if negotiations stall or the final list of goods excludes products that India exports to Mexico in significant volumes."
+              }
+            }
+          },
+          "place": {
+            "name": "New Delhi",
+            "country": "India",
+            "lat": 28.61,
+            "lon": 77.21,
+            "involves": [
+              "Mexico"
+            ]
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "India, Mexico launch negotiations for preferential trade agreement",
+              "url": "https://www.livemint.com/news/india/india-mexico-preferential-trade-agreement-talks-11793174588986.html",
+              "date": "2026-10-28T08:39:30.000Z",
+              "kind": "hard",
+              "summary": "Bilateral merchandise trade between the two countries stood at about $7.83 billion in FY26, with India recording a trade surplus of around $3.62 billion.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/10/28/1600x900/logo/2-0-73056464-CARGO-SHIP-3C--0_1681401626245_1793176529874_atm4_3317c907-1ba2-4134-a79e-954651e4cb4a_ZcVT.jpg"
+            },
+            {
+              "source": "thehindu",
+              "headline": "India and Mexico sign Terms of Reference for preferential trade agreement negotiations to begin",
+              "url": "https://www.thehindu.com/business/Economy/india-and-mexico-sign-terms-of-reference-for-preferential-trade-agreement-negotiations-to-begin/article71635915.ece",
+              "date": "2026-10-28T14:30:00.000Z",
+              "kind": "hard",
+              "summary": "Commerce Secretary Rajesh Agrawal visited Mexico for the signing. The two sides also discussed a possible business delegation from Mexico visiting India in the first quarter of 2027",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/incoming/lrs3be/article71636708.ece/alternates/LANDSCAPE_1200/IMG_BL28_India_Mexico_fl_2_1_P9GNGQMF.jpg"
+            }
+          ],
+          "thread": "t1x54di8"
+        },
+        {
           "id": "s4364ks",
           "headline": "India's industrial output growth slows to 6.7% in September as manufacturing, consumer durables lose momentum",
           "url": "https://www.livemint.com/economy/indias-industrial-output-growth-slows-to-6-7-in-september-as-manufacturing-consumer-durables-lose-momentum-11793187860166.html",
@@ -10018,6 +10393,16 @@
               "summary": "India’s industrial output growth slowed to 6.7% in September from 7.8% in August, missing market expectations of 7.3%. Manufacturing and electricity growth moderated, while mining contracted 6.2%. Industrial production grew 6.8% in April-September, up from 4.4% a year earlier.",
               "summaryV": 3,
               "image": "https://www.livemint.com/lm-img/img/2026/10/28/1600x900/logo/Gemini_Generated_Image_b7abgb7oabgb7oa_179318822_1793188239913_d9el_1793188240039_O1WR_48095527-7950-4468-9c97-771e8ce442dc_W0Lc.png"
+            },
+            {
+              "source": "mint",
+              "headline": "Industrial output growth a tad slower at 6.7% in September, expansion led by manufacturing, electricity generation",
+              "url": "https://www.livemint.com/economy/industrial-output-growth-a-tad-slower-at-6-7-in-september-expansion-led-by-manufacturing-electricity-generation-11793186294012.html",
+              "date": "2026-10-28T14:08:09.000Z",
+              "kind": "hard",
+              "summary": "The industrial output growth moderated to 6.7% in September from 8% in August, driven by strong performances in manufacturing and electricity generation despite a drop in mining.&nbsp;",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/10/28/1600x900/logo/2-0-648439695-18F07MP002-0_1680244799343_1793194220375_lMlj_21b00e4c-a266-49d0-8f22-1e9fa71a151c_Iq2m.jpg"
             }
           ],
           "thread": "tekc9dj"
@@ -10416,120 +10801,6 @@
             }
           ],
           "thread": "ted31bn"
-        },
-        {
-          "id": "s14i0jre",
-          "headline": "India, Mexico launch negotiations for preferential trade agreement",
-          "url": "https://www.livemint.com/news/india/india-mexico-preferential-trade-agreement-talks-11793174588986.html",
-          "source": "mint",
-          "date": "2026-10-28T08:39:30.000Z",
-          "relevance": "medium",
-          "image": "https://www.livemint.com/lm-img/img/2026/10/28/1600x900/logo/2-0-73056464-CARGO-SHIP-3C--0_1681401626245_1793176529874_atm4_3317c907-1ba2-4134-a79e-954651e4cb4a_ZcVT.jpg",
-          "why": "India and Mexico have launched negotiations for a preferential trade agreement. Their bilateral merchandise trade was about $7.83 billion in FY26, with India recording a surplus of around $3.62 billion.",
-          "implications": [
-            "If the talks lead to lower tariffs, Indian exporters selling to Mexico could gain easier market access, and Indian importers of Mexican goods could face lower duties.",
-            "Launching negotiations is only a first step, so the sectors covered and the tariff cuts are not yet known."
-          ],
-          "analysis": {
-            "v": 3,
-            "at": "2026-10-28T13:18:24.497Z",
-            "tier": "quick",
-            "primary": "impact_chain",
-            "complement": null,
-            "features": [
-              "pending_outcome"
-            ],
-            "exposure": {
-              "level": "medium",
-              "reason": "The channel is one bilateral trade relationship, with India running a surplus with Mexico. No tariff changes have been reported, so there is no direct effect on households yet."
-            },
-            "horizon": {
-              "value": "years",
-              "reason": "Negotiations have only just begun, and tariff changes would follow only after a deal is concluded and brought into effect."
-            },
-            "confidence": {
-              "level": "low",
-              "reason": "This rests on a single Mint report whose summary names no official source and gives no scope of the talks or timeline."
-            },
-            "outlets": 1,
-            "affected": [
-              {
-                "group": "Large exporters",
-                "direction": "unclear",
-                "what": "market access to Mexico",
-                "effect": "Indian exporters may gain easier access to the Mexican market if the agreement lowers tariffs on goods they sell there.",
-                "basis": "inferred"
-              },
-              {
-                "group": "Importers & traders",
-                "direction": "unclear",
-                "what": "duties on Mexican imports",
-                "effect": "Traders who import from Mexico could face lower duties on covered goods if the agreement cuts tariffs.",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "The announcement of further negotiating rounds or of the product lists covered by the proposed agreement",
-                "why": "It would show how far the talks have progressed and which Indian sectors may be affected.",
-                "when": "",
-                "where": "Ministry of Commerce and Industry"
-              }
-            ],
-            "context": [
-              "A preferential trade agreement usually cuts tariffs on a limited list of products, rather than on nearly all trade as a full free trade agreement does. Such talks generally take considerable time to conclude."
-            ],
-            "terms": [
-              {
-                "term": "preferential trade agreement",
-                "meaning": "A deal in which two or more countries lower tariffs on selected goods traded between them."
-              }
-            ],
-            "frameworks": {
-              "impact_chain": {
-                "chain": [
-                  {
-                    "step": "Negotiations launched",
-                    "detail": "India and Mexico have begun talks on a preferential trade agreement, building on bilateral merchandise trade of about $7.83 billion in FY26.",
-                    "basis": "reported"
-                  },
-                  {
-                    "step": "India holds a trade surplus",
-                    "detail": "India recorded a surplus of around $3.62 billion with Mexico in FY26, so Indian exports to Mexico exceed its imports from there.",
-                    "basis": "reported"
-                  },
-                  {
-                    "step": "Tariff cuts could widen trade",
-                    "detail": "If a deal lowers tariffs on selected goods, Indian exporters could find Mexico easier to sell to, and trade between the two countries could grow.",
-                    "basis": "inferred"
-                  }
-                ],
-                "breaks_if": "The effect would not reach Indian firms if the negotiations do not conclude, or if the final agreement leaves out the goods that Indian exporters and importers actually trade."
-              }
-            }
-          },
-          "place": {
-            "name": "New Delhi",
-            "country": "India",
-            "lat": 28.61,
-            "lon": 77.21,
-            "involves": [
-              "Mexico"
-            ]
-          },
-          "reports": [
-            {
-              "source": "mint",
-              "headline": "India, Mexico launch negotiations for preferential trade agreement",
-              "url": "https://www.livemint.com/news/india/india-mexico-preferential-trade-agreement-talks-11793174588986.html",
-              "date": "2026-10-28T08:39:30.000Z",
-              "kind": "hard",
-              "summary": "Bilateral merchandise trade between the two countries stood at about $7.83 billion in FY26, with India recording a trade surplus of around $3.62 billion.",
-              "summaryV": 3,
-              "image": "https://www.livemint.com/lm-img/img/2026/10/28/1600x900/logo/2-0-73056464-CARGO-SHIP-3C--0_1681401626245_1793176529874_atm4_3317c907-1ba2-4134-a79e-954651e4cb4a_ZcVT.jpg"
-            }
-          ],
-          "thread": "t1x54di8"
         },
         {
           "id": "s1xd7h4t",
@@ -20046,6 +20317,110 @@
       "name": "Technology",
       "items": [
         {
+          "id": "sfmmskp",
+          "headline": "Vehicle data shared only in masked form: ULIP",
+          "url": "https://www.thehindu.com/news/national/vehicle-data-shared-only-in-masked-form-ulip/article71636370.ece",
+          "source": "thehindu",
+          "date": "2026-10-28T14:58:14.000Z",
+          "relevance": "medium",
+          "image": "https://th-i.thgim.com/public/news/national/p8na7q/article71636876.ece/alternates/LANDSCAPE_1200/iStock-942740004.jpg",
+          "why": "A clarification says vehicle data on the Centre's logistics portal, ULIP, is shared only in masked form. This follows the Road Ministry seeking an audit of portal users after complaints that apps and websites sell vehicle information.",
+          "implications": [
+            "Businesses and developers that access vehicle data through the portal may face closer checks on who they are and how they use the data.",
+            "If the audit finds misuse, access rules for portal users could be tightened, which may affect firms that build services on this data."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-29T10:18:15.259Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The issue reaches one set of users: logistics and technology firms that use the portal, along with vehicle owners whose details are at stake. It touches compliance and data access rather than a household essential."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "The timing of the audit is not reported, so any change in access rules for portal users could come within weeks but remains uncertain."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "The report rests on one outlet, The Hindu, relaying the ULIP clarification and the Road Ministry's audit request; the audit's scope and findings are not yet reported."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "access to vehicle data",
+                "effect": "Firms in logistics and trade that use vehicle data through the portal could face an audit of their access, though the reports do not say what rules will change.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Outcome of the Road Ministry's audit of users accessing the logistics portal",
+                "why": "The findings would show whether data was misused and whether access rules for portal users will change.",
+                "when": "",
+                "where": "Ministry of Road Transport and Highways"
+              }
+            ],
+            "context": [
+              "Government data portals share information with approved users, and misuse can occur if access is not monitored. Masking hides identifying details while leaving the rest of the data usable."
+            ],
+            "terms": [
+              {
+                "term": "ULIP",
+                "meaning": "ULIP is the Centre's logistics portal, through which approved users can access data related to the movement of goods, including vehicle information."
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Complaints about sale of vehicle data",
+                    "detail": "Complaints were made that multiple apps and websites are selling vehicle information, which raised concern about how such data leaves government systems.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Road Ministry seeks audit of users",
+                    "detail": "The Road Ministry asked for an audit of users accessing the Centre's logistics portal, and the clarification followed that vehicle data is shared only in masked form.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Tighter access for portal users",
+                    "detail": "Businesses using the portal could face closer checks on access, and vehicle owners' personal details may be better protected if the audit leads to stricter rules.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The audit finds no misuse, or the masked data proves to contain no identifying details, in which case access rules for portal users may not change."
+              }
+            }
+          },
+          "place": {
+            "name": "New Delhi",
+            "country": "India",
+            "lat": 28.61,
+            "lon": 77.21
+          },
+          "reports": [
+            {
+              "source": "thehindu",
+              "headline": "Vehicle data shared only in masked form: ULIP",
+              "url": "https://www.thehindu.com/news/national/vehicle-data-shared-only-in-masked-form-ulip/article71636370.ece",
+              "date": "2026-10-28T14:58:14.000Z",
+              "kind": "hard",
+              "summary": "Clarification comes after Road Ministry sought audit of users accessing the Centre’s logistics portal following complaints that multiple apps and websites are selling vehicle information",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/news/national/p8na7q/article71636876.ece/alternates/LANDSCAPE_1200/iStock-942740004.jpg"
+            }
+          ],
+          "thread": "tswvytp"
+        },
+        {
           "id": "suwrh2u",
           "headline": "ISRO to launch NVS-03 satellite on October 30",
           "url": "https://www.thehindu.com/news/national/karnataka/isro-to-launch-nvs-03-satellite-on-october-30/article71635780.ece",
@@ -26124,6 +26499,161 @@
       "name": "Manufacturing",
       "items": [
         {
+          "id": "sftksuc",
+          "headline": "Textile ministry reopens PLI scheme, halves turnover threshold to ₹100 cr",
+          "url": "https://www.livemint.com/news/india/textile-ministry-reopens-pli-scheme-halves-turnover-threshold-to-100-cr-11793197515898.html",
+          "source": "mint",
+          "date": "2026-10-28T16:57:06.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2026/10/28/1600x900/logo/2-0-498063779-textile-mill1-0_1681036355734_1793206496653_pHjZ_23e290b9-ca3c-4677-9003-9fce1096c28f_s4Ec.jpg",
+          "why": "The Ministry of Textiles will reopen the textile PLI scheme's application portal from 1 November to 31 December. It has halved the minimum turnover for Part 2 applicants from ₹200 crore to ₹100 crore, so smaller Indian manufacturers can now apply.",
+          "implications": [
+            "Halving the turnover bar means mid-sized textile units and MSMEs that were previously too small to qualify can now compete for government incentives alongside larger firms.",
+            "The ministry says the lower threshold is meant to encourage participation by MSMEs and mid-sized units, which suggests earlier rounds drew mainly large manufacturers.",
+            "If more firms join, the government could take on larger incentive payouts in later years, because these schemes typically pay out against future production and sales.",
+            "Firms that apply in this window could expand capacity to meet the scheme's targets, which may create more factory jobs in textile clusters."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-29T10:21:00.839Z",
+            "tier": "standard",
+            "primary": "policy_tracker",
+            "complement": null,
+            "features": [
+              "policy_stage"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The measure reaches India through a single industry, textiles, by widening eligibility for government incentives. That makes it significant for manufacturers and their workers but not a household essential."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Applications run until 31 December, and any approvals, investment and incentive payments would follow in the months after the window closes."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "Mint and The Hindu both report the ministry's decision and agree on the dates and threshold, but neither quotes a named official on record."
+            },
+            "outlets": 2,
+            "affected": [
+              {
+                "group": "MSME exporters",
+                "direction": "up",
+                "what": "access to PLI incentives",
+                "effect": "Smaller textile manufacturers, many of which export, could now qualify for production incentives because the Part 2 turnover requirement has fallen to ₹100 crore.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Manufacturing workers",
+                "direction": "up",
+                "what": "textile factory hiring",
+                "effect": "If newly eligible firms expand output to meet scheme targets, textile factories could hire more workers in manufacturing clusters.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Government finances",
+                "direction": "mixed",
+                "what": "incentive payout commitments",
+                "effect": "Wider participation could raise future incentive spending, although the government may also gain from added production, exports and tax revenue.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Opening of the textile PLI scheme application portal",
+                "why": "The opening confirms that the new round and the lower ₹100 crore threshold are taking effect as reported.",
+                "when": "2026-11-01",
+                "where": "Ministry of Textiles"
+              },
+              {
+                "what": "Closing of the application window and any published count of applicants",
+                "why": "The number of applicants would show whether the lower threshold actually drew in MSMEs and mid-sized units.",
+                "when": "2026-12-31",
+                "where": "Ministry of Textiles"
+              }
+            ],
+            "context": [
+              "Production Linked Incentive (PLI) schemes pay eligible firms a share of their additional sales over several years, provided they meet investment and output targets set by the government.",
+              "Textiles and apparel are among India's largest employers and a major export category, and much of the industry is made up of small and medium-sized units.",
+              "The textile PLI scheme has focused on man-made fibre products and technical textiles, segments where India has sought to compete more strongly with other Asian producers."
+            ],
+            "terms": [
+              {
+                "term": "PLI scheme",
+                "meaning": "A Production Linked Incentive scheme gives eligible manufacturers cash incentives linked to their increase in production or sales over a set number of years."
+              },
+              {
+                "term": "MSMEs",
+                "meaning": "Micro, small and medium enterprises are smaller businesses classified by the government according to their investment and turnover."
+              }
+            ],
+            "frameworks": {
+              "policy_tracker": {
+                "instrument": {
+                  "name": "Production Linked Incentive (PLI) scheme for textiles",
+                  "issuer": "Ministry of Textiles",
+                  "jurisdiction": "India"
+                },
+                "stages": [
+                  {
+                    "stage": "announced",
+                    "date": "2026-10-28",
+                    "status": "done"
+                  },
+                  {
+                    "stage": "amended_or_repealed",
+                    "date": "2026-10-28",
+                    "status": "done"
+                  },
+                  {
+                    "stage": "in_force",
+                    "date": "2026-11-01",
+                    "status": "next"
+                  }
+                ],
+                "obligations": [
+                  {
+                    "who": "Textile manufacturers applying under Part 2 of the scheme",
+                    "what": "Applicants must have a minimum annual turnover of ₹100 crore and must submit their applications through the ministry's portal between 1 November and 31 December.",
+                    "from": "2026-11-01"
+                  }
+                ],
+                "applies_to_india": "yes",
+                "india_note": "The change opens government production incentives to smaller Indian textile manufacturers. It could widen the base of firms that receive support and spread investment beyond the largest companies."
+              }
+            }
+          },
+          "place": {
+            "name": "New Delhi",
+            "country": "India",
+            "lat": 28.6,
+            "lon": 77.2
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "Textile ministry reopens PLI scheme, halves turnover threshold to ₹100 cr",
+              "url": "https://www.livemint.com/news/india/textile-ministry-reopens-pli-scheme-halves-turnover-threshold-to-100-cr-11793197515898.html",
+              "date": "2026-10-28T16:57:06.000Z",
+              "kind": "hard",
+              "summary": "The application portal the PLI scheme for textiles will open from 1 November to 31 December.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/10/28/1600x900/logo/2-0-498063779-textile-mill1-0_1681036355734_1793206496653_pHjZ_23e290b9-ca3c-4677-9003-9fce1096c28f_s4Ec.jpg"
+            },
+            {
+              "source": "thehindu",
+              "headline": "Textile ministry to re-open application portal for PLI scheme",
+              "url": "https://www.thehindu.com/business/textile-ministry-to-re-open-application-portal-for-pli-scheme/article71637222.ece",
+              "date": "2026-10-29T07:43:06.000Z",
+              "kind": "hard",
+              "summary": "In the current round the minimum annual turnover requirement has been reduced from ₹200 crore to ₹100 crore under Part 2 category of the scheme, to encourage participation by MSMEs and mid-sized manufacturing units",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/incoming/1xapee/article71639516.ece/alternates/LANDSCAPE_1200/Changes-in-PF-wGCSGJQ10L.3.jpg.jpg"
+            }
+          ],
+          "thread": "thzddpg"
+        },
+        {
           "id": "s1i6elwa",
           "headline": "MSMEs feel squeeze as polymer, freight costs rise",
           "url": "https://www.livemint.com/industry/msmes-feel-squeeze-as-polymer-freight-costs-rise-11793174015480.html",
@@ -26238,127 +26768,6 @@
             }
           ],
           "thread": "t5rvyh9"
-        },
-        {
-          "id": "sftksuc",
-          "headline": "Textile ministry reopens PLI scheme, halves turnover threshold to ₹100 cr",
-          "url": "https://www.livemint.com/news/india/textile-ministry-reopens-pli-scheme-halves-turnover-threshold-to-100-cr-11793197515898.html",
-          "source": "mint",
-          "date": "2026-10-28T16:57:06.000Z",
-          "relevance": "medium",
-          "image": "https://www.livemint.com/lm-img/img/2026/10/28/1600x900/logo/2-0-498063779-textile-mill1-0_1681036355734_1793206496653_pHjZ_23e290b9-ca3c-4677-9003-9fce1096c28f_s4Ec.jpg",
-          "why": "The Ministry of Textiles has reopened the Production Linked Incentive (PLI) scheme for textiles and halved the turnover threshold to ₹100 crore. Applications will be accepted on the portal from 1 November to 31 December.",
-          "implications": [
-            "A lower turnover threshold means smaller textile manufacturers than before may now qualify to apply for incentives under the scheme.",
-            "The two-month application window sets a fixed period in which eligible firms must file, so participation will depend on how many firms apply in time."
-          ],
-          "analysis": {
-            "v": 3,
-            "at": "2026-10-28T20:30:51.501Z",
-            "tier": "quick",
-            "primary": "policy_tracker",
-            "complement": null,
-            "features": [
-              "policy_stage",
-              "pending_outcome"
-            ],
-            "exposure": {
-              "level": "medium",
-              "reason": "The measure affects one industry, textiles, through eligibility for government incentives. It does not touch a household essential directly."
-            },
-            "horizon": {
-              "value": "weeks",
-              "reason": "The application portal opens on 1 November and closes on 31 December, so the first effects are in applications and eligibility."
-            },
-            "confidence": {
-              "level": "medium",
-              "reason": "The report is from one outlet, Mint, reporting the ministry's decision; the details of incentive rates and the earlier threshold are not given."
-            },
-            "outlets": 1,
-            "affected": [
-              {
-                "group": "Manufacturing workers",
-                "direction": "unclear",
-                "what": "textile factory jobs",
-                "effect": "If more mid-sized textile firms receive incentives and expand production, jobs in the sector could grow, but the reports do not say how much.",
-                "basis": "inferred"
-              },
-              {
-                "group": "MSME exporters",
-                "direction": "up",
-                "what": "eligibility for incentives",
-                "effect": "Smaller textile firms with turnover above the new lower threshold may be able to apply for incentives that were previously out of reach.",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "The textile PLI application portal opens for applications",
-                "why": "It marks the start of the window in which eligible firms can apply under the revised threshold.",
-                "when": "2026-11-01",
-                "where": "Ministry of Textiles"
-              },
-              {
-                "what": "The application window closes",
-                "why": "It sets the last date for firms to apply, after which participation can be assessed.",
-                "when": "2026-12-31",
-                "where": "Ministry of Textiles"
-              }
-            ],
-            "context": [
-              "PLI schemes give companies cash incentives linked to their sales or output, to encourage domestic manufacturing. Textiles is a large employer and a major export sector in India."
-            ],
-            "terms": [
-              {
-                "term": "PLI scheme",
-                "meaning": "A Production Linked Incentive scheme pays manufacturers an incentive based on their sales or output, to encourage more production in India."
-              }
-            ],
-            "frameworks": {
-              "policy_tracker": {
-                "instrument": {
-                  "name": "Production Linked Incentive (PLI) scheme for textiles",
-                  "issuer": "Ministry of Textiles",
-                  "jurisdiction": "India"
-                },
-                "stages": [
-                  {
-                    "stage": "amended_or_repealed",
-                    "date": "2026-10-28",
-                    "status": "current"
-                  }
-                ],
-                "obligations": [
-                  {
-                    "who": "Textile manufacturers seeking incentives",
-                    "what": "They must apply through the scheme's online portal during the open window and meet the revised turnover threshold of ₹100 crore.",
-                    "from": "2026-11-01"
-                  }
-                ],
-                "applies_to_india": "yes",
-                "india_note": "The scheme applies to textile manufacturers in India. Halving the turnover threshold widens the pool of firms that can seek incentives, and the application window runs until 31 December."
-              }
-            }
-          },
-          "place": {
-            "name": "New Delhi",
-            "country": "India",
-            "lat": 28.6,
-            "lon": 77.2
-          },
-          "reports": [
-            {
-              "source": "mint",
-              "headline": "Textile ministry reopens PLI scheme, halves turnover threshold to ₹100 cr",
-              "url": "https://www.livemint.com/news/india/textile-ministry-reopens-pli-scheme-halves-turnover-threshold-to-100-cr-11793197515898.html",
-              "date": "2026-10-28T16:57:06.000Z",
-              "kind": "hard",
-              "summary": "The application portal the PLI scheme for textiles will open from 1 November to 31 December.",
-              "summaryV": 3,
-              "image": "https://www.livemint.com/lm-img/img/2026/10/28/1600x900/logo/2-0-498063779-textile-mill1-0_1681036355734_1793206496653_pHjZ_23e290b9-ca3c-4677-9003-9fce1096c28f_s4Ec.jpg"
-            }
-          ],
-          "thread": "thzddpg"
         },
         {
           "id": "s1a9wwy7",
@@ -29796,106 +30205,102 @@
           "date": "2026-10-28T10:23:38.000Z",
           "relevance": "high",
           "image": "https://th-i.thgim.com/public/incoming/brxim5/article71635312.ece/alternates/LANDSCAPE_1200/PTI10_28_2026_000158B.jpg",
-          "why": "Cyclone Arnab brought heavy rain and winds gusting up to 150 kmph to north Andhra and Odisha on 28 October. Five people died in north Andhra, and 17 Odisha districts were affected by heavy rain.",
+          "why": "Cyclone Arnab hit coastal Andhra Pradesh and Odisha with heavy rain and winds gusting up to 150 kmph. Five people died in north Andhra, evacuations took place, 64 train services were cancelled and crops across 80,500 hectares were affected.",
           "implications": [
-            "Crops across 80,500 hectares in north Andhra were affected, which could reduce incomes for the farmers concerned and, depending on the damage, the supply of produce from those districts.",
-            "In Odisha, evacuation had reached about 28,000 people against a target of 48,000 at the morning report, so shelter and relief needs could grow if heavy rain continues in the affected districts."
+            "Crop damage across 80,500 hectares in Andhra Pradesh could cut incomes for affected farmers. It may also tighten local supplies of produce, depending on which crops were lost and how badly.",
+            "A new Bay of Bengal system is likely to head for the Andhra coast, so more rain could fall on areas already flooded. Relief needs in places such as Ganjam, where 300 villages are marooned, could last longer."
           ],
           "analysis": {
             "v": 3,
-            "at": "2026-10-28T20:32:53.090Z",
+            "at": "2026-10-29T10:21:00.839Z",
             "tier": "quick",
-            "primary": "timeline",
+            "primary": "disruption_map",
             "complement": null,
             "features": [
-              "fast_moving"
+              "disruption",
+              "fast_moving",
+              "pending_outcome"
             ],
             "exposure": {
               "level": "high",
-              "reason": "The cyclone directly threatens the safety of residents in coastal and inland districts of Odisha and north Andhra, and deaths and crop damage have already been reported."
+              "reason": "The cyclone affects the safety of residents of coastal Andhra Pradesh and Odisha through evacuations, flooding and deaths. It also disrupts rail travel and damages standing crops."
             },
             "horizon": {
               "value": "now",
-              "reason": "The storm was lashing the coast and heavy rain was continuing across districts on 28 October, so the effects are immediate."
+              "reason": "Flooding, evacuations, relief work and train disruptions are already under way, while the full extent of crop losses will become clear over the following weeks."
             },
             "confidence": {
               "level": "medium",
-              "reason": "All three reports come from The Hindu, and the Odisha evacuation figures are attributed to the Special Relief Commissioner; the final death toll and damage totals are not yet confirmed."
+              "reason": "All reports come from The Hindu, citing Odisha's Special Relief Commissioner and Home Minister Shah. Damage figures are early, and the new Bay system is only a forecast."
             },
             "outlets": 1,
             "affected": [
               {
-                "group": "Farmers",
+                "group": "A named state or region",
                 "direction": "down",
-                "what": "crop area damaged",
-                "effect": "Crops across 80,500 hectares in north Andhra were affected by extremely heavy rain and wind, which could reduce harvests and incomes for the farmers concerned.",
+                "what": "safety and daily life",
+                "effect": "Coastal Andhra Pradesh and Odisha face flooding, deaths and evacuations. Around 28,000 people had been evacuated across eight Odisha districts against a target of 48,000, and 17 Odisha districts were affected by heavy rain.",
                 "basis": "reported"
               },
               {
-                "group": "A named state or region",
+                "group": "Farmers",
                 "direction": "down",
-                "what": "safety and normal life disrupted",
-                "effect": "Coastal and inland districts of Odisha and north Andhra face deaths, evacuations, uprooted trees and flood alerts, which disrupt daily life and strain relief arrangements.",
+                "what": "crop area damaged",
+                "effect": "Crops across 80,500 hectares in coastal Andhra Pradesh were affected by heavy rain and wind, which can reduce harvests and incomes for the farmers concerned.",
+                "basis": "reported"
+              },
+              {
+                "group": "Travellers & pilgrims",
+                "direction": "down",
+                "what": "train service availability",
+                "effect": "Sixty-four train services were cancelled on October 27 and 28, including long-distance expresses linking Telangana with coastal Andhra Pradesh and Odisha, so passengers on these routes had to change plans.",
                 "basis": "reported"
               }
             ],
             "watch": [
               {
-                "what": "Updated casualty, evacuation and crop damage figures for Odisha and north Andhra",
-                "why": "The figures would show how far the early counts of deaths, evacuees and damaged crops grow as assessments are completed.",
+                "what": "The new Bay of Bengal system heading towards the Andhra coast and the rain it brings",
+                "why": "It would show whether areas already hit by Cyclone Arnab face further flooding and damage.",
                 "when": "",
-                "where": "Odisha Special Relief Commissioner"
+                "where": "India Meteorological Department"
               },
               {
-                "what": "Whether the flash flood alert for southern Odisha districts is extended or withdrawn",
-                "why": "It would show whether the flood risk from continuing heavy rain is easing or spreading.",
+                "what": "Updates on evacuations and on marooned villages in Ganjam district",
+                "why": "These would show how severe the flooding in southern Odisha remains and how long relief operations may last.",
                 "when": "",
-                "where": ""
+                "where": "Odisha Special Relief Commissioner"
               }
             ],
             "context": [
-              "Cyclones that form over the Bay of Bengal usually cross the east coast and bring strong winds and heavy rain. State governments move people out of low-lying and coastal areas before landfall.",
-              "Heavy rain after landfall can also cause flash floods in inland hilly districts."
+              "Cyclones draw energy from warm sea water and weaken after crossing land, but their remnants can still carry heavy rain far inland and cause flash floods. India's east coast is regularly exposed to such storms in the post-monsoon season."
             ],
             "terms": [
               {
-                "term": "Special Relief Commissioner",
-                "meaning": "The state official who coordinates disaster relief, including evacuation and relief camps, in Odisha."
+                "term": "NDRF and SDRF",
+                "meaning": "The National Disaster Response Force and State Disaster Response Force are specialist teams that carry out rescue and relief work during floods, cyclones and other disasters."
               }
             ],
             "frameworks": {
-              "timeline": {
-                "entries": [
+              "disruption_map": {
+                "node": {
+                  "name": "Rail services between Telangana, coastal Andhra Pradesh and Odisha",
+                  "type": "rail",
+                  "status": "partial",
+                  "as_of": "Report of 2026-10-29 08:29, covering cancellations on October 27 and 28"
+                },
+                "cause": {
+                  "text": "Cyclone Arnab brought extremely heavy rain and winds gusting up to 150 kmph to coastal Andhra Pradesh and Odisha, and 64 train services were cancelled.",
+                  "status": "confirmed"
+                },
+                "flows": [
                   {
-                    "when": "28 October 2026, morning",
-                    "what": "The Hindu reported a flash flood alert for several southern Odisha districts, with around 28,000 people evacuated across eight districts against a planned target of 48,000.",
-                    "actor": "Odisha Special Relief Commissioner",
-                    "outlet": "The Hindu",
-                    "type": "action",
-                    "verification": "confirmed"
-                  },
-                  {
-                    "when": "28 October 2026, afternoon",
-                    "what": "Five people were reported dead in north Andhra, where winds gusted up to 150 kmph, over 1,000 trees were uprooted and crops across 80,500 hectares were affected.",
-                    "actor": "Cyclone Arnab in north Andhra coastal districts",
-                    "outlet": "The Hindu",
-                    "type": "action",
-                    "verification": "confirmed"
-                  },
-                  {
-                    "when": "28 October 2026, evening",
-                    "what": "The Hindu reported that 17 Odisha districts were affected by heavy rain, with Gajapati worst hit, and that 2,245 pregnant women were shifted to nearby health centres.",
-                    "actor": "Odisha authorities",
-                    "outlet": "The Hindu",
-                    "type": "action",
-                    "verification": "confirmed"
+                    "flow": "other",
+                    "india_link": "Long-distance express trains connecting Telangana with coastal Andhra Pradesh and Odisha were among those cancelled. Passengers on these routes were advised to check train status before travel.",
+                    "basis": "reported"
                   }
                 ],
-                "current_status": "By the evening of 28 October, Cyclone Arnab had caused five reported deaths in north Andhra, and heavy rain had affected 17 Odisha districts, with Gajapati the worst hit. Evacuation in Odisha was still below its target at the morning report.",
-                "open_questions": [
-                  "What will the final death toll and crop damage be across north Andhra and Odisha?",
-                  "Did Odisha reach its planned evacuation target of 48,000 people?"
-                ]
+                "alternatives": [],
+                "duration": "not reported"
               }
             }
           },
@@ -29935,6 +30340,35 @@
               "summary": "As many as 2,245 pregnant women were shifted to nearby health centres, while 931 babies were born during the disaster",
               "summaryV": 3,
               "image": "https://th-i.thgim.com/public/incoming/msj5yb/article71637818.ece/alternates/LANDSCAPE_1200/20261028463L.jpg"
+            },
+            {
+              "source": "thehindu",
+              "headline": "Cyclone Arnab: Home Minister Shah speaks with CMs of affected States, assures all support",
+              "url": "https://www.thehindu.com/news/national/cyclone-arnab-home-minister-shah-speaks-with-cms-of-affected-states-assures-all-support/article71639388.ece",
+              "date": "2026-10-29T07:48:58.000Z",
+              "kind": "hard",
+              "summary": "Mr. Shah said NDRF and SDRF teams have ‘sprung into action and are continuing rescue and relief operations on a war footing’",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/incoming/75tp28/article71639399.ece/alternates/LANDSCAPE_1200/PTI10_20_2026_000341B.jpg"
+            },
+            {
+              "source": "thehindu",
+              "headline": "Cyclone ‘Arnab’: 64 train services cancelled on October 27 and 28",
+              "url": "https://www.thehindu.com/news/national/andhra-pradesh/cyclone-arnab-train-services-cancelled-on-october-27-and-28/article71630352.ece",
+              "date": "2026-10-29T08:29:31.000Z",
+              "kind": "hard",
+              "summary": "Long-distance express trains connecting Telangana with coastal Andhra Pradesh and Odisha among those affected; passengers advised to check status before travel",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/incoming/kyz9qz/article71630609.ece/alternates/LANDSCAPE_1200/VSP30_Montha_Railway%201.JPG"
+            },
+            {
+              "source": "thehindu",
+              "headline": "Cyclone Arnab LIVE: New Bay system likely to head for Andhra coast; 300 villages marooned in Ganjam",
+              "url": "https://www.thehindu.com/news/national/cyclone-arnab-weakens-into-depression-imd-alert-odisha-andhra-pradesh-telangana-live-updates-october-29-2026/article71638778.ece",
+              "date": "2026-10-29T10:16:04.000Z",
+              "kind": "breaking",
+              "summary": "Arnab’s remnant brings rain to West Bengal, Jharkhand and Madhya Pradesh after weakening into a depression",
+              "summaryV": 3
             }
           ],
           "thread": "thmsatr"
@@ -36154,6 +36588,36 @@
       "name": "Policy & Governance",
       "items": [
         {
+          "id": "s7oen93",
+          "headline": "Why India rejected a patent application for shorter drug-resistant TB treatment | Explained",
+          "url": "https://www.thehindu.com/sci-tech/health/why-india-rejected-a-patent-application-for-shorter-drug-resistant-tb-treatment-explained/article71639506.ece",
+          "source": "thehindu",
+          "date": "2026-10-29T07:52:09.000Z",
+          "relevance": "medium",
+          "image": "https://th-i.thgim.com/public/incoming/fq546f/article71639555.ece/alternates/LANDSCAPE_1200/IMG_Tuberculosis_treatme_2_1_VDD6667R.jpg",
+          "why": "",
+          "implications": [],
+          "place": {
+            "name": "New Delhi",
+            "country": "India",
+            "lat": 28.6,
+            "lon": 77.2
+          },
+          "reports": [
+            {
+              "source": "thehindu",
+              "headline": "Why India rejected a patent application for shorter drug-resistant TB treatment | Explained",
+              "url": "https://www.thehindu.com/sci-tech/health/why-india-rejected-a-patent-application-for-shorter-drug-resistant-tb-treatment-explained/article71639506.ece",
+              "date": "2026-10-29T07:52:09.000Z",
+              "kind": "feature",
+              "summary": "The decision could open the door to greater generic competition, but its impact on treatment costs will depend on drug availability, pricing, and access to care",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/incoming/fq546f/article71639555.ece/alternates/LANDSCAPE_1200/IMG_Tuberculosis_treatme_2_1_VDD6667R.jpg"
+            }
+          ],
+          "thread": "t6gg7kf"
+        },
+        {
           "id": "s1l14uej",
           "headline": "Railways to strictly enforce overnight mobile charging ban on trains",
           "url": "https://www.thehindu.com/news/national/telangana/railways-to-strictly-enforce-overnight-mobile-charging-ban-on-trains/article71637074.ece",
@@ -36454,6 +36918,101 @@
             }
           ],
           "thread": "t13oo2em"
+        },
+        {
+          "id": "s1j7kn8w",
+          "headline": "Cabinet approves PM Viksit Gram Swaraj Yojana for 2026-31 with ₹7,395 crore outlay to strengthen Panchayat governance",
+          "url": "https://www.livemint.com/economy/cabinet-approves-pm-viksit-gram-swaraj-yojana-for-2026-31-with-7-395-crore-outlay-to-strengthen-panchayat-governance-11793189302320.html",
+          "source": "mint",
+          "date": "2026-10-28T13:22:52.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2026/10/28/1600x900/logo/Gemini_Generated_Imae_dqafjgdqafjgdqaf_179318966_1793189673942_Pm2q_1793189674074_1Ycq_d7a8e75e-3740-44c0-b689-e25ea6e585a8_lixR.png",
+          "why": "The Union Cabinet has approved the Pradhan Mantri Viksit Gram Swaraj Yojana for 2026-27 to 2030-31 with an outlay of ₹7,395.55 crore. It aims to strengthen Panchayat governance across more than 2.55 lakh local bodies.",
+          "implications": [
+            "The scheme is meant to benefit around 32 lakh elected representatives and functionaries. Its practical effect on villages will depend on how the outlay is used, which the report does not detail.",
+            "Funding is committed across five financial years, so the cost may be spread over several annual budgets rather than falling in a single year."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-29T10:18:15.258Z",
+            "tier": "quick",
+            "primary": "winners_losers",
+            "complement": null,
+            "features": [
+              "allocation"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "The scheme reaches people only indirectly, through the working of local bodies. The report describes no change to fuel, food, loan rates or deposit rates, so household exposure is limited."
+            },
+            "horizon": {
+              "value": "years",
+              "reason": "The scheme runs from 2026-27 to 2030-31, and improvements in local governance generally build up over the life of such a programme."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "The report rests on one outlet, Mint, citing a Cabinet approval; scheme guidelines and the detailed use of funds are not covered."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Government finances",
+                "direction": "up",
+                "what": "central spending commitment",
+                "effect": "The Cabinet has approved an outlay of ₹7,395.55 crore over five years, which adds a multi-year spending commitment for the government.",
+                "basis": "reported"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Publication of operational guidelines or fund-release details for the scheme",
+                "why": "Guidelines would show how the outlay is divided and what Panchayats and their representatives are expected to do.",
+                "when": "",
+                "where": "Press Information Bureau"
+              }
+            ],
+            "context": [
+              "Panchayats are the elected local councils that form the lowest tier of government in rural India, and many welfare and development programmes rely on them to deliver services."
+            ],
+            "terms": [
+              {
+                "term": "Panchayats",
+                "meaning": "Panchayats are elected village-level local governments in rural India that handle local administration and carry out many public programmes."
+              }
+            ],
+            "frameworks": {
+              "winners_losers": {
+                "groups": [
+                  {
+                    "group": "Government finances",
+                    "direction": "lose",
+                    "directness": "direct",
+                    "mechanism": "The approved outlay of ₹7,395.55 crore for 2026-27 to 2030-31 is a spending commitment, which uses public funds that could otherwise be directed elsewhere."
+                  }
+                ],
+                "not_affected": "Borrowers and depositors are not directly affected, because the report describes a governance scheme for local bodies and says nothing about interest rates or lending."
+              }
+            }
+          },
+          "place": {
+            "name": "New Delhi",
+            "country": "India",
+            "lat": 28.61,
+            "lon": 77.21
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "Cabinet approves PM Viksit Gram Swaraj Yojana for 2026-31 with ₹7,395 crore outlay to strengthen Panchayat governance",
+              "url": "https://www.livemint.com/economy/cabinet-approves-pm-viksit-gram-swaraj-yojana-for-2026-31-with-7-395-crore-outlay-to-strengthen-panchayat-governance-11793189302320.html",
+              "date": "2026-10-28T13:22:52.000Z",
+              "kind": "hard",
+              "summary": "The Union Cabinet has approved the Pradhan Mantri Viksit Gram Swaraj Yojana for 2026-27 to 2030-31, with an outlay of ₹7,395.55 crore. The scheme will cover over 2.55 lakh Panchayats and traditional local bodies, benefiting around 32 lakh elected representatives and functionaries.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/10/28/1600x900/logo/Gemini_Generated_Imae_dqafjgdqafjgdqaf_179318966_1793189673942_Pm2q_1793189674074_1Ycq_d7a8e75e-3740-44c0-b689-e25ea6e585a8_lixR.png"
+            }
+          ],
+          "thread": "t21ploc"
         },
         {
           "id": "se4fgo9",
@@ -48440,9 +48999,9 @@
       "none": 0,
       "waiting": 0
     },
-    "analysed": 44,
-    "added": 3,
-    "merged": 1,
+    "analysed": 106,
+    "added": 4,
+    "merged": 7,
     "failedBatches": 1,
     "feeds": {
       "thehindu": {
@@ -48453,7 +49012,7 @@
       "mint": {
         "feedsOk": 6,
         "feedsFailed": 0,
-        "items": 210
+        "items": 209
       }
     },
     "shareImages": {
@@ -48462,13 +49021,13 @@
       "summaries": 0
     },
     "threads": {
-      "assigned": 3,
-      "created": 3,
+      "assigned": 4,
+      "created": 2,
       "failedBatches": 0
     },
     "summaries": {
-      "written": 0,
-      "due": 0
+      "written": 2,
+      "due": 2
     },
     "kinds": {
       "labelled": 0,
@@ -48477,51 +49036,53 @@
     },
     "frames": {
       "done": 4,
-      "waiting": 23,
+      "waiting": 22,
       "failedBatches": 0
     },
     "stats": {
-      "searched": 1,
+      "searched": 0,
       "found": 0,
-      "reused": 1,
+      "reused": 0,
       "none": 0,
       "failed": 0,
       "proposed": 0,
       "droppedPoints": 0,
       "pagesFetched": 0,
-      "samples": [
-        {
-          "headline": "Cyclonic storm likely to hit North Andhra Pradesh coast on October 28, says IMD",
-          "result": "reused saved series"
-        }
-      ]
+      "samples": []
     },
     "models": {
       "filter": {
         "model": "claude-haiku-5-5",
-        "calls": 7,
-        "inputTokens": 22054,
-        "outputTokens": 10473,
-        "cost": 0.0074
+        "calls": 9,
+        "inputTokens": 44394,
+        "outputTokens": 19152,
+        "cost": 0.0141
       },
       "analysis_quick": {
         "model": "claude-sonnet-5-5",
-        "calls": 5,
-        "inputTokens": 15335,
-        "outputTokens": 13442,
-        "cost": 0.1651
+        "calls": 6,
+        "inputTokens": 17882,
+        "outputTokens": 16079,
+        "cost": 0.1966
+      },
+      "analysis": {
+        "model": "claude-opus-5-5",
+        "calls": 1,
+        "inputTokens": 3215,
+        "outputTokens": 5318,
+        "cost": 0.1192
       },
       "threads": {
         "model": "claude-sonnet-5-5",
-        "calls": 1,
-        "inputTokens": 9642,
-        "outputTokens": 101,
-        "cost": 0.0203
+        "calls": 3,
+        "inputTokens": 11020,
+        "outputTokens": 984,
+        "cost": 0.0319
       }
     },
     "spend": {
-      "thisDesk": 0.1928,
-      "today": 1.2593,
+      "thisDesk": 0.3617,
+      "today": 1.9866,
       "cap": 6
     }
   },
