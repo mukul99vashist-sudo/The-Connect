@@ -2,12 +2,171 @@
   "schema": 4,
   "region": "India",
   "since": "2026-10-02",
-  "updatedAt": "2026-10-28T20:28:47.712Z",
+  "updatedAt": "2026-10-29T01:06:52.393Z",
   "sectors": [
     {
       "id": "energy",
       "name": "Energy",
       "items": [
+        {
+          "id": "s1m8ihwi",
+          "headline": "European gas prices soar to four-year high over winter supply fears",
+          "url": "https://www.theguardian.com/business/2026/oct/26/european-gas-prices-four-year-high-winter-supply-fears-middle-east",
+          "source": "guardian",
+          "date": "2026-10-26T10:35:24.000Z",
+          "relevance": "medium",
+          "image": "https://i.guim.co.uk/img/media/275f98d8c2bcb343ced7e3b49bd547734a4db6f9/865_0_6406_5124/master/6406.jpg?width=700&quality=85&auto=format&fit=max&s=407897bc239d82708caa3208b54f9b61",
+          "why": "European natural gas prices topped €100 per megawatt hour, their highest since 2022, on winter supply fears and Middle East tensions. Competition for gas shipments could raise costs for India's gas importers, city gas networks and fertiliser plants.",
+          "implications": [
+            "Europe and Asian buyers compete for the same shipments of liquefied natural gas (LNG), so a European scramble before winter could raise the price India pays for cargoes bought outside long-term contracts.",
+            "Fertiliser plants use natural gas to make urea, and because urea prices for farmers are administered, higher gas costs could show up mainly in the government's subsidy bill rather than in farm prices.",
+            "France 24 reports that EU gas storage is only 72% full, so Europe may keep buying heavily through winter and keep competition for gas cargoes intense.",
+            "The Guardian links the jump to reports of US-Israeli plans to strike Iran, and a wider Middle East disruption could also lift crude oil and LPG prices, which matter more to Indian households."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-29T01:06:50.508Z",
+            "tier": "standard",
+            "primary": "pass_through",
+            "complement": null,
+            "features": [
+              "price_move"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The effect reaches India indirectly, through competition for imported LNG cargoes. That competition affects city gas, fertiliser and gas-using industries, but long-term contracts and priority allocation of domestic gas soften the impact."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Winter heating demand is building now, and spot cargo prices reprice within weeks, while contract-linked supplies adjust more slowly."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "The Guardian and France 24 agree on the four-year price high, but the reported US-Israeli strike plans driving the fears remain unconfirmed."
+            },
+            "outlets": 2,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "up",
+                "what": "CNG and piped gas prices",
+                "effect": "City gas distributors that buy imported LNG may face higher costs, which could eventually feed into CNG and piped cooking gas prices for Indian households and motorists.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Government finances",
+                "direction": "up",
+                "what": "fertiliser subsidy bill",
+                "effect": "Higher imported gas costs could raise urea production costs, and because farm prices are administered, the government may have to absorb more through the fertiliser subsidy.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Manufacturing workers",
+                "direction": "down",
+                "what": "industrial gas costs",
+                "effect": "Industries that run on natural gas could face higher input costs if LNG prices rise, which may squeeze margins at gas-dependent factories.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Updates on EU gas storage levels as winter heating demand begins",
+                "why": "Slow refilling or fast drawdown would signal continued European buying pressure on global gas cargoes.",
+                "when": "",
+                "where": "European Commission"
+              },
+              {
+                "what": "Confirmation or denial of reported US-Israeli plans to strike Iran",
+                "why": "Military action could disrupt Middle East energy supplies and lift gas, crude and LPG prices together.",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "Price revisions for CNG and piped cooking gas by Indian city gas distributors",
+                "why": "Revisions would show whether higher global gas costs are reaching Indian consumers.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "India imports a large share of the natural gas it uses as LNG, buying partly under long-term contracts and partly on the spot market, where prices react quickly to global demand.",
+              "The government gives priority in allocating cheaper domestically produced gas to household piped gas and compressed natural gas (CNG), which partly cushions these users from imported gas prices.",
+              "Urea sold to Indian farmers carries an administered price, and the government subsidy covers the gap between that price and the cost of production."
+            ],
+            "terms": [
+              {
+                "term": "megawatt hour",
+                "meaning": "A unit of energy equal to one million watts used for one hour, used to price wholesale gas and electricity."
+              }
+            ],
+            "frameworks": {
+              "pass_through": {
+                "driver": {
+                  "variable": "European natural gas price",
+                  "direction": "up",
+                  "size": "above €100 per megawatt hour, highest since 2022"
+                },
+                "product": "other",
+                "rungs": [
+                  {
+                    "stage": "European gas price → Global LNG spot price",
+                    "pass": "likely",
+                    "damper": "Spot LNG prices tend to follow Europe closely because Europe and Asia bid for the same flexible cargoes, though Asian demand conditions also matter.",
+                    "lag": "days"
+                  },
+                  {
+                    "stage": "Global LNG spot price → Indian importers' cost",
+                    "pass": "partial",
+                    "damper": "Much of India's LNG arrives under long-term contracts with their own pricing formulas, so only spot purchases reprice quickly.",
+                    "lag": "weeks"
+                  },
+                  {
+                    "stage": "Importers' cost → City gas distributors' cost",
+                    "pass": "partial",
+                    "damper": "Priority allocation of cheaper domestic gas to household piped gas and CNG cushions distributors from the full imported price.",
+                    "lag": "weeks"
+                  },
+                  {
+                    "stage": "Distributors' cost → CNG and piped gas prices",
+                    "pass": "partial",
+                    "damper": "Distributors revise retail prices periodically and may absorb part of a cost increase to stay competitive with petrol and diesel.",
+                    "lag": "months"
+                  }
+                ],
+                "end_user": {
+                  "group": "Fuel & LPG users",
+                  "effect": "CNG motorists and piped gas households may see price revisions if high global gas prices persist through winter. Any change is likely to be gradual and smaller than the European price jump."
+                }
+              }
+            }
+          },
+          "conflict": "w1ye2krf",
+          "reports": [
+            {
+              "source": "guardian",
+              "headline": "European gas prices soar to four-year high over winter supply fears",
+              "url": "https://www.theguardian.com/business/2026/oct/26/european-gas-prices-four-year-high-winter-supply-fears-middle-east",
+              "date": "2026-10-26T10:35:24.000Z",
+              "kind": "hard",
+              "summary": "Jump fuelled by fears of further Middle East supply disruptions amid reports of US-Israeli plans to strike Iran",
+              "summaryV": 3,
+              "lede": "European gas prices have jumped to levels not seen since 2022 as fears continue to grow around the continent’s supply this winter and the conflict in the Middle East.",
+              "image": "https://i.guim.co.uk/img/media/275f98d8c2bcb343ced7e3b49bd547734a4db6f9/865_0_6406_5124/master/6406.jpg?width=700&quality=85&auto=format&fit=max&s=407897bc239d82708caa3208b54f9b61"
+            },
+            {
+              "source": "france24",
+              "headline": "EU natural gas prices top €100 for first time since 2022",
+              "url": "https://www.france24.com/en/tv-shows/business/20261028-eu-natural-gas-prices-top-%E2%82%AC100-for-first-time-since-2022",
+              "date": "2026-10-28T22:02:12.000Z",
+              "kind": "hard",
+              "summary": "As winter approaches, the price of European natural gas topped €100 / megawatt hour, its highest level since 2022. The EU says it's not worried about supplies, although its storage facilities are only 72% full, but warns households of a 'difficult' season to come.",
+              "summaryV": 3,
+              "image": "https://s.france24.com/media/display/f2c1ff66-d319-11f1-8cc1-47de50b3c1e4/w:1024/p:16x9/capture-428f8665.jpg"
+            }
+          ],
+          "placeTried": true,
+          "thread": "t1m68tbs"
+        },
         {
           "id": "s6aq9ck",
           "headline": "Mecca defence alliance members in Tehran to defuse Iran-US, Yemen tensions",
@@ -1655,128 +1814,6 @@
               }
             }
           }
-        },
-        {
-          "id": "s1m8ihwi",
-          "headline": "European gas prices soar to four-year high over winter supply fears",
-          "url": "https://www.theguardian.com/business/2026/oct/26/european-gas-prices-four-year-high-winter-supply-fears-middle-east",
-          "source": "guardian",
-          "date": "2026-10-26T10:35:24.000Z",
-          "relevance": "medium",
-          "image": "https://i.guim.co.uk/img/media/275f98d8c2bcb343ced7e3b49bd547734a4db6f9/865_0_6406_5124/master/6406.jpg?width=700&quality=85&auto=format&fit=max&s=407897bc239d82708caa3208b54f9b61",
-          "why": "The Guardian reports that European gas prices have reached their highest level since 2022 on fears of further Middle East supply disruption. Higher global gas prices can raise India's costs for imported liquefied natural gas.",
-          "implications": [
-            "Europe competes with Asian buyers for liquefied natural gas cargoes, so a sustained price rise there can lift the price India pays for spot cargoes.",
-            "Costlier gas can raise input costs for gas-based power plants and fertiliser makers, and the government may have to bear part of that cost through subsidies."
-          ],
-          "analysis": {
-            "v": 3,
-            "at": "2026-10-26T13:21:26.017Z",
-            "tier": "quick",
-            "primary": "escalation",
-            "complement": null,
-            "features": [
-              "armed_conflict",
-              "price_move",
-              "pending_outcome"
-            ],
-            "exposure": {
-              "level": "medium",
-              "reason": "The channel is global LNG prices, which affect gas used in power, fertiliser and city gas. The reports describe only a European price move, so the direct link to India is indirect."
-            },
-            "horizon": {
-              "value": "months",
-              "reason": "Long-term gas contracts adjust slowly, so higher costs would reach power, fertiliser and city gas users over months rather than days."
-            },
-            "confidence": {
-              "level": "low",
-              "reason": "This rests on a single outlet, The Guardian, and the reported US-Israeli strike plans are unconfirmed and carry no named official source."
-            },
-            "outlets": 1,
-            "affected": [
-              {
-                "group": "Government finances",
-                "direction": "down",
-                "what": "fertiliser subsidy burden",
-                "effect": "Costlier imported gas could raise fertiliser production costs, which may increase the subsidy the government pays to keep farm prices steady.",
-                "basis": "inferred"
-              },
-              {
-                "group": "Importers & traders",
-                "direction": "up",
-                "what": "LNG import costs",
-                "effect": "Firms that buy LNG on the spot market could pay more if Europe's price surge pulls up global cargo prices.",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "Whether the United States and Israel carry out a strike on Iran, as the reports say is being planned",
-                "why": "A strike would show whether the war is moving to a higher level and would likely put more pressure on Gulf gas and oil supplies.",
-                "when": "",
-                "where": ""
-              },
-              {
-                "what": "Whether the Strait of Hormuz is reopened to shipping after the pressure from Gulf states",
-                "why": "A reopening would ease fears over energy supply and could lower gas prices.",
-                "when": "",
-                "where": ""
-              }
-            ],
-            "context": [
-              "India imports a large part of its natural gas as liquefied natural gas (LNG), and a significant share of those supplies comes from Gulf producers, so Middle East disruption can affect both price and availability."
-            ],
-            "terms": [
-              {
-                "term": "liquefied natural gas",
-                "meaning": "Natural gas cooled into a liquid so that it can be shipped in tankers and sold on global markets."
-              }
-            ],
-            "frameworks": {
-              "escalation": {
-                "move": "none",
-                "rung": 6,
-                "current_rung": 6,
-                "previous_rung": null,
-                "development": "Reports of US-Israeli plans to strike Iran have pushed European gas prices to a four-year high, but no new strike is described in this story.",
-                "evidence": "The report describes only fears and reported plans, not an attack that took place after 20 October. The war therefore stays at the rung set by Iranian strikes on third countries and the disruption of the Strait of Hormuz.",
-                "next_signals": [
-                  {
-                    "rung": 7,
-                    "signal": "The United States and Israel launch a large-scale, sustained military campaign against Iran, with Iran responding across the region."
-                  },
-                  {
-                    "rung": 5,
-                    "signal": "Iranian attacks on Gulf states stop and shipping through the Strait of Hormuz resumes, which would show a fall in the level of the war."
-                  }
-                ],
-                "india_channels": [
-                  "oil",
-                  "shipping",
-                  "trade"
-                ],
-                "conflict": "w1ye2krf",
-                "applied": "none",
-                "from": 6
-              }
-            }
-          },
-          "conflict": "w1ye2krf",
-          "reports": [
-            {
-              "source": "guardian",
-              "headline": "European gas prices soar to four-year high over winter supply fears",
-              "url": "https://www.theguardian.com/business/2026/oct/26/european-gas-prices-four-year-high-winter-supply-fears-middle-east",
-              "date": "2026-10-26T10:35:24.000Z",
-              "kind": "hard",
-              "summary": "Jump fuelled by fears of further Middle East supply disruptions amid reports of US-Israeli plans to strike Iran",
-              "summaryV": 3,
-              "lede": "European gas prices have jumped to levels not seen since 2022 as fears continue to grow around the continent’s supply this winter and the conflict in the Middle East.",
-              "image": "https://i.guim.co.uk/img/media/275f98d8c2bcb343ced7e3b49bd547734a4db6f9/865_0_6406_5124/master/6406.jpg?width=700&quality=85&auto=format&fit=max&s=407897bc239d82708caa3208b54f9b61"
-            }
-          ],
-          "placeTried": true,
-          "thread": "t1m68tbs"
         },
         {
           "id": "s4z7qet",
@@ -19133,21 +19170,242 @@
       "name": "Economy & Trade",
       "items": [
         {
+          "id": "stbpot0",
+          "headline": "Canada and EU drop associate membership plan in bid to deepen ties",
+          "url": "https://www.france24.com/en/europe/20261029-canada-and-eu-drop-associate-membership-plan-in-bid-to-deepen-ties",
+          "source": "france24",
+          "date": "2026-10-29T00:56:33.000Z",
+          "relevance": "medium",
+          "image": "https://s.france24.com/media/display/de478f98-d32c-11f1-b496-47de50b3c1e4/w:1024/p:16x9/AP26264053021764.jpg",
+          "why": "France 24 reports that Canada and the European Union will pursue closer ties but have dropped a proposal for associate EU membership, ahead of a summit in Montreal. Prime Minister Mark Carney is seeking to reduce Canada's reliance on the US.",
+          "implications": [
+            "Canada is trying to widen its economic partnerships even though Donald Trump has warned against it, which signals that major trading relationships are being reshuffled.",
+            "Deeper Canada-EU links could change where Canadian buyers and sellers look for partners, which may affect competition for Indian businesses that trade with Canada."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-29T01:05:21.520Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "The reports describe a Canada-EU arrangement and no direct channel to India. Any effect would be indirect, through shifts in Canada's trade relationships that could touch Indian exporters."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Closer trade and political ties between Canada and the EU would take time to be negotiated and implemented before any change reaches trading partners."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "This rests on a single outlet, France 24, citing a joint declaration issued before the summit, and the outcome of the summit itself is not yet reported."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "trade with Canada",
+                "effect": "If Canada shifts more trade toward the European Union, Indian firms dealing with Canadian buyers and suppliers could face more competition or new openings.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "The outcome and final joint statement of the Canada-EU summit in Montreal",
+                "why": "It would show what closer ties Canada and the EU actually agreed to, now that associate membership is off the table.",
+                "when": "2026-10-29",
+                "where": ""
+              }
+            ],
+            "context": [
+              "Canada's economy is closely tied to the United States through trade. Countries that want to lessen such dependence usually try to sign deeper trade and investment arrangements with other large economies or blocs."
+            ],
+            "terms": [
+              {
+                "term": "associate membership",
+                "meaning": "A proposed status that would give a non-member country a closer formal relationship with the European Union than an ordinary trade partner has, without making it a full member."
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Canada and EU drop associate membership",
+                    "detail": "A joint declaration ahead of the Montreal summit says Canada and the EU will pursue closer ties but without the associate membership proposal.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Canada seeks less reliance on the US",
+                    "detail": "Prime Minister Mark Carney wants to reduce Canada's dependence on the United States, despite warnings from Donald Trump, which pushes Canada toward other partners.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Canada's trade partners may shift",
+                    "detail": "As Canada builds deeper links with the EU, trade flows and supply arrangements could change, which may alter competition for Indian exporters selling to Canada.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The effect would not reach India if the closer Canada-EU ties stay mostly political and do not change trade flows or the terms for suppliers selling into Canada."
+              }
+            }
+          },
+          "place": {
+            "name": "Montreal",
+            "country": "Canada",
+            "lat": 45.5,
+            "lon": -73.57,
+            "involves": [
+              "European Union"
+            ]
+          },
+          "reports": [
+            {
+              "source": "france24",
+              "headline": "Canada and EU drop associate membership plan in bid to deepen ties",
+              "url": "https://www.france24.com/en/europe/20261029-canada-and-eu-drop-associate-membership-plan-in-bid-to-deepen-ties",
+              "date": "2026-10-29T00:56:33.000Z",
+              "kind": "hard",
+              "summary": "Canada and the European Union will pursue closer ties but have dropped a proposal for associate EU membership, according to a joint declaration ahead of Thursday’s summit in Montreal. Prime Minister Mark Carney is seeking to reduce Canada’s reliance on the US, despite warnings from Donald Trump.",
+              "summaryV": 3,
+              "image": "https://s.france24.com/media/display/de478f98-d32c-11f1-b496-47de50b3c1e4/w:1024/p:16x9/AP26264053021764.jpg"
+            }
+          ],
+          "thread": "tifhegk"
+        },
+        {
+          "id": "s1393e9v",
+          "headline": "Trump Explores Lifting Sanctions on Russia’s Flagship Investment Fund",
+          "url": "https://www.nytimes.com/2026/10/27/us/politics/russia-fund-sanctions-trump.html",
+          "source": "nyt",
+          "date": "2026-10-27T17:30:52.000Z",
+          "relevance": "medium",
+          "image": "https://static01.nyt.com/images/2026/10/26/multimedia/26dc-russia-sanctions-mvcg/26dc-russia-sanctions-mvcg-mediumSquareAt3X-v2.jpg",
+          "why": "The New York Times reports that President Trump is exploring lifting US sanctions on Russia's flagship investment fund as an economic incentive to end the war in Ukraine. It could change the sanctions environment for Indian firms dealing with Russia.",
+          "implications": [
+            "The move is described as a concession tied to the hope of ending the war, so how long any easing lasts could depend on whether that aim is met.",
+            "Indian banks and companies with Russian counterparties could face a different compliance picture if the fund is removed from sanctions, though the report does not say how."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-27T22:26:27.690Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "The report gives no direct channel to India. Any effect would run indirectly through the sanctions compliance of Indian firms dealing with Russia, or through the wider course of the Ukraine war."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "The step is only being explored, and any formal decision and its effect on trade and payments would take time."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single outlet, the New York Times, and the report says only that the option is being explored, with no decision confirmed."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "sanctions compliance risk",
+                "effect": "Indian traders and banks dealing with Russian entities could face lighter or different sanctions compliance requirements if the fund is delisted, though the report does not say so.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "A formal US announcement removing Russia's flagship investment fund from the sanctions list",
+                "why": "It would confirm that the option has become policy and would show the scope of any easing.",
+                "when": "",
+                "where": "US Treasury Department, Office of Foreign Assets Control"
+              }
+            ],
+            "context": [
+              "US sanctions bar American firms from dealing with listed entities, and non-US firms risk penalties too because many payments run through dollar systems.",
+              "India has long-standing economic ties with Russia, including in energy and defence, so changes in Western sanctions on Russia are closely watched by Indian businesses."
+            ],
+            "terms": [],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "US explores lifting fund sanctions",
+                    "detail": "The New York Times reports that President Trump is exploring lifting sanctions on Russia's flagship investment fund, which would be the latest US concession to Moscow.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Concession aimed at ending the war",
+                    "detail": "The report says Mr Trump is pursuing economic incentives that he hopes will secure an end to the war in Ukraine, so the sanctions step is linked to peace efforts.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Indian firms' Russia dealings may change",
+                    "detail": "Easing sanctions on a major Russian fund could reduce the compliance risk for Indian companies and banks dealing with Russian partners, and a wider peace could ease war-related trade disruption.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The effect would not reach India if the sanctions are not actually lifted, or if the easing is too narrow to change how Indian firms deal with Russia."
+              }
+            }
+          },
+          "place": {
+            "name": "Washington",
+            "country": "United States",
+            "lat": 38.9,
+            "lon": -77,
+            "involves": [
+              "Russia"
+            ]
+          },
+          "reports": [
+            {
+              "source": "nyt",
+              "headline": "Trump Explores Lifting Sanctions on Russia’s Flagship Investment Fund",
+              "url": "https://www.nytimes.com/2026/10/27/us/politics/russia-fund-sanctions-trump.html",
+              "date": "2026-10-27T17:30:52.000Z",
+              "kind": "hard",
+              "summary": "The move would be the latest U.S. concession to Moscow as President Trump pursues economic incentives he hopes will secure an end to war in Ukraine.",
+              "summaryV": 3,
+              "image": "https://static01.nyt.com/images/2026/10/26/multimedia/26dc-russia-sanctions-mvcg/26dc-russia-sanctions-mvcg-mediumSquareAt3X-v2.jpg"
+            },
+            {
+              "source": "nyt",
+              "headline": "Trump Officials Discussing Sanctions Relief for Russian Fund, Russia Acknowledges",
+              "url": "https://www.nytimes.com/2026/10/28/us/politics/russia-sanctions-relief-fund-trump.html",
+              "date": "2026-10-28T23:37:41.000Z",
+              "kind": "hard",
+              "summary": "A Russian official said potential relief for a state investment fund was part of talks. Russia has sought to wring economic benefits from the negotiations on ending the war with Ukraine.",
+              "summaryV": 3,
+              "image": "https://static01.nyt.com/images/2026/10/28/multimedia/dc-russia-sanctions-jpht/dc-russia-sanctions-jpht-mediumSquareAt3X.jpg"
+            }
+          ],
+          "thread": "t1nate9f"
+        },
+        {
           "id": "s1gtksyh",
           "headline": "Fed expected to hold interest rates steady but a hike is anticipated by year's end",
           "url": "https://www.npr.org/2026/10/28/nx-s1-6017978/fed-expected-to-hold-interest-rates-steady-but-a-hike-is-anticipated-by-years-end",
           "source": "npr",
           "date": "2026-10-28T08:45:31.000Z",
           "relevance": "medium",
-          "why": "The US Federal Reserve held its benchmark rate at 3.75-4 percent, but two voters wanted a hike and investors expect one in December. Tighter US policy could draw money from India, weaken the rupee and constrain the Reserve Bank of India.",
+          "why": "The US Federal Reserve held interest rates steady, but inflation remains above 3% and investors expect a December hike. High US rates can strengthen the dollar and draw investment away from India, pressuring the rupee and borrowing costs.",
           "implications": [
-            "Two of the 12 Federal Open Market Committee voters dissented in favour of a quarter-point hike, which signals continued pressure for tighter US policy and could keep the dollar firm against the rupee.",
-            "A weaker rupee could raise the rupee cost of dollar-priced imports such as crude oil and electronics, adding to price pressures the Reserve Bank of India must weigh.",
-            "Because the Fed held rather than hiked in October, immediate pressure on Indian markets may be limited, which could give the Reserve Bank of India room to focus on domestic conditions for now."
+            "CNBC reports that two of 12 voters wanted a quarter-point hike, and NPR says investors widely expect a December rise, so pressure from high US rates on emerging markets may persist.",
+            "A firmer dollar could weaken the rupee, which would raise the rupee cost of dollar-priced imports such as crude oil and could add to inflation in India.",
+            "The Guardian notes that US rates are at one of the highest pre-election levels in over 20 years, which could make dollar borrowing costlier for Indian companies that raise funds abroad.",
+            "The Reserve Bank of India (RBI) may have less room to cut its own rates while US rates stay high, because a wide gap could encourage foreign investors to move money out of India."
           ],
           "analysis": {
             "v": 3,
-            "at": "2026-10-28T20:28:24.126Z",
+            "at": "2026-10-29T01:06:50.508Z",
             "tier": "deep",
             "primary": "decoder",
             "complement": "pass_through",
@@ -19157,160 +19415,159 @@
             ],
             "exposure": {
               "level": "medium",
-              "reason": "Fed decisions reach India indirectly, through foreign investment flows, the rupee's exchange rate and the Reserve Bank of India's policy choices. A hold limits the immediate effect, although an expected future hike keeps the channel active."
+              "reason": "The effect reaches India indirectly, through the dollar, the rupee and foreign capital flows. These can shape import costs and RBI decisions, but an expected hold changes little immediately."
             },
             "horizon": {
               "value": "months",
-              "reason": "The October hold changes little immediately, so effects depend on the anticipated December decision and how the rupee and Indian policy respond afterwards."
+              "reason": "The Fed's December meeting and a possible March hike set the timing, and any effect on Indian borrowing costs would come through RBI decisions over months."
             },
             "confidence": {
               "level": "high",
-              "reason": "Al Jazeera, The Guardian, CNBC and CBS News all report the hold, and Fed chair Kevin Warsh commented on the record; the December hike remains only an investor expectation."
+              "reason": "Eight reports from outlets including The Guardian, CNBC, NPR and The New York Times agree on the hold, with on-record comments from Fed chair Kevin Warsh."
             },
-            "outlets": 6,
+            "outlets": 8,
             "affected": [
-              {
-                "group": "Borrowers",
-                "direction": "unclear",
-                "what": "loan interest rates",
-                "effect": "If US rate pressure limits the Reserve Bank of India's room to cut rates, Indian banks' lending rates and loan EMIs may stay higher for longer.",
-                "basis": "inferred"
-              },
               {
                 "group": "Students abroad",
                 "direction": "up",
-                "what": "rupee cost of fees",
-                "effect": "A stronger dollar could raise the rupee cost of tuition and living expenses for Indian students in the US and other dollar-linked destinations.",
+                "what": "dollar-denominated study costs",
+                "effect": "If high US rates strengthen the dollar against the rupee, Indian families paying US or other dollar-linked tuition and living costs could face higher bills in rupees.",
                 "basis": "inferred"
               },
               {
                 "group": "Importers & traders",
                 "direction": "up",
-                "what": "dollar import costs",
-                "effect": "If the rupee weakens against the dollar, businesses paying for imports in dollars may face higher rupee costs for the same goods.",
+                "what": "rupee cost of imports",
+                "effect": "A weaker rupee could raise the rupee cost of dollar-priced goods, squeezing importers' margins or pushing up prices they charge.",
                 "basis": "inferred"
               },
               {
-                "group": "Gulf & overseas workers and families",
+                "group": "Borrowers",
+                "direction": "unclear",
+                "what": "outlook for loan rates",
+                "effect": "Loan rates in India change only if the RBI acts, and persistent high US rates could make the RBI more cautious about cutting.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Large exporters",
                 "direction": "up",
-                "what": "rupee value of remittances",
-                "effect": "A weaker rupee could mean that money sent home by Indians working abroad converts into more rupees for their families.",
+                "what": "rupee value of dollar earnings",
+                "effect": "Exporters earning in dollars, such as IT services firms, could receive more rupees per dollar if the rupee weakens against a firmer dollar.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "The Federal Reserve's December interest rate decision",
-                "why": "A hike would confirm investors' expectations of tighter US policy and could increase pressure on the rupee and capital flows.",
+                "what": "The Federal Reserve's decision at its December meeting",
+                "why": "A hike would confirm continued tightening and could add pressure on the rupee and emerging-market capital flows.",
                 "when": "December 2026",
                 "where": "US Federal Reserve"
               },
               {
-                "what": "Movement of the rupee against the US dollar",
-                "why": "The exchange rate is the main channel through which Fed decisions reach import costs and Indian inflation.",
+                "what": "US inflation and economic data released before the December meeting",
+                "why": "Fed chair Warsh said this information-rich period will help officials determine next steps for policy.",
                 "when": "",
-                "where": "Reserve Bank of India"
+                "where": "US Federal Reserve"
               },
               {
-                "what": "US inflation data showing whether inflation stays above 3 percent",
-                "why": "Persistent inflation above 3 percent would make a further Fed hike more likely, according to the reasoning behind the dissents.",
+                "what": "The Reserve Bank of India's next monetary policy decision and its comments on the rupee",
+                "why": "It would show whether high US rates are influencing Indian interest rates and borrowing costs.",
                 "when": "",
-                "where": "US Bureau of Labor Statistics"
+                "where": "Reserve Bank of India"
               }
             ],
             "context": [
-              "When US interest rates rise or are expected to rise, global investors often shift money towards dollar assets, which tends to weaken emerging-market currencies such as the Indian rupee.",
-              "The Reserve Bank of India sets its policy rate mainly on domestic inflation and growth, but it watches the Fed closely because of capital flows and the exchange rate.",
-              "India imports most of its crude oil and pays for it in dollars, so a weaker rupee raises the country's import bill and can feed into domestic prices."
+              "The RBI sets its policy rate mainly on domestic inflation and growth, but it watches the rupee and capital flows, and it can use foreign exchange reserves to smooth sharp currency moves.",
+              "India imports most of its crude oil and pays for it in dollars, so a weaker rupee raises the country's import bill."
             ],
             "terms": [
               {
                 "term": "Federal Open Market Committee",
-                "meaning": "The US Federal Reserve committee whose voting members decide the country's benchmark interest rate."
+                "meaning": "The US Federal Reserve's rate-setting body, whose voting members decide the benchmark US interest rate."
               },
               {
-                "term": "benchmark interest rate",
-                "meaning": "The Fed's target rate for overnight lending between US banks, which influences borrowing costs across the US economy and global markets."
+                "term": "quarter percentage point",
+                "meaning": "An interest rate change of 0.25 percentage points, the standard step size for US central bank moves."
               },
               {
-                "term": "midterm elections",
-                "meaning": "US national elections held halfway through a presidential term, in which seats in Congress are contested."
+                "term": "midterms",
+                "meaning": "US national elections held halfway through a president's four-year term, for seats in Congress."
               }
             ],
             "frameworks": {
               "decoder": {
                 "kind": "decision",
                 "headline": {
-                  "label": "Federal funds target range (lower bound of 3.75-4 percent)",
-                  "value": 3.75,
-                  "unit": "percent",
+                  "label": "Change in US federal funds rate",
+                  "value": null,
+                  "unit": "percentage points",
                   "period": "October 2026 meeting",
                   "previous": null,
-                  "previousLabel": "Unchanged from the level set after the September hike",
-                  "from": "Al Jazeera"
+                  "previousLabel": "Raised in September, the first hike in three years",
+                  "from": "CBS News"
                 },
                 "comparisons": [
                   {
-                    "label": "US inflation (remaining above)",
+                    "label": "US inflation (above)",
                     "value": 3,
-                    "unit": "percent",
+                    "unit": "%",
                     "from": "The Guardian"
                   }
                 ],
                 "drivers": [
                   {
-                    "name": "Inflation still above 3 percent",
+                    "name": "Stubborn inflation",
                     "direction": "up",
-                    "how": "Reports say US inflation remains above 3 percent and continues to rise, which keeps pressure on the Fed to tighten policy rather than ease it."
+                    "how": "Reports say inflation remains above 3% with little progress, which kept pressure for higher rates and led two voters to favour a quarter-point hike."
                   },
                   {
-                    "name": "Dissent for a quarter-point hike",
-                    "direction": "up",
-                    "how": "CNBC reports that two of the 12 committee voters wanted a quarter-point increase, showing internal support for higher rates."
+                    "name": "Waiting for more data",
+                    "direction": "mixed",
+                    "how": "Warsh said an information-rich period before the December meeting will help officials decide next steps, which supported pausing rather than hiking now."
                   }
                 ],
                 "decision": {
                   "action": "hold",
-                  "size": "Unchanged at 3.75-4 percent",
-                  "stance": "Fed chair Kevin Warsh said politics played no role in the pause, which follows a September hike that was the first in three years. Investors think a December hike is likely."
+                  "size": "unchanged",
+                  "stance": "Fed chair Kevin Warsh said politics played no role in the pause and that incoming data before December will guide policy. Two of 12 voters dissented in favour of a quarter-point hike."
                 }
               },
               "pass_through": {
                 "driver": {
-                  "variable": "US federal funds rate",
+                  "variable": "US interest-rate outlook",
                   "direction": "up",
-                  "size": "Held at 3.75-4 percent after a September hike, with a…"
+                  "size": "held unchanged; investors widely expect a hike in December"
                 },
                 "product": "loan EMIs",
                 "rungs": [
                   {
-                    "stage": "US interest rates → Foreign investor flows from India",
+                    "stage": "US rate outlook → Dollar and capital flows",
                     "pass": "partial",
-                    "damper": "A hold rather than a hike limits the immediate pull of capital towards the US, and India's growth prospects can keep some foreign investors in Indian assets.",
-                    "lag": "weeks"
+                    "damper": "The hold was in line with market expectations, so much of its effect on the dollar and on flows into India was likely already priced in.",
+                    "lag": "days"
                   },
                   {
-                    "stage": "Investor outflows → Rupee exchange rate",
-                    "pass": "partial",
-                    "damper": "The Reserve Bank of India can use its foreign exchange reserves to smooth sharp moves in the rupee, which dampens the effect of outflows.",
-                    "lag": "weeks"
-                  },
-                  {
-                    "stage": "Rupee and US rates → Reserve Bank of India policy",
+                    "stage": "Rupee and capital flows → RBI policy rate",
                     "pass": "unclear",
-                    "damper": "The Reserve Bank of India sets its policy rate mainly on domestic inflation and growth, so Fed moves are only one factor in its decisions.",
+                    "damper": "The RBI sets rates mainly on domestic inflation and growth, and it can use foreign exchange reserves to steady the rupee instead of changing rates.",
                     "lag": "months"
                   },
                   {
-                    "stage": "Reserve Bank of India policy → Bank lending rates",
+                    "stage": "RBI policy rate → Bank lending rates",
                     "pass": "partial",
-                    "damper": "Banks adjust loan rates gradually, and only loans linked to external benchmarks reprice quickly, so changes reach existing borrowers unevenly.",
+                    "damper": "Loans linked to external benchmarks adjust quickly, while loans tied to banks' internal benchmarks reprice more slowly.",
+                    "lag": "months"
+                  },
+                  {
+                    "stage": "Bank lending rates → Borrowers' EMIs",
+                    "pass": "partial",
+                    "damper": "Banks often extend loan tenures rather than raise monthly instalments, which delays the effect on household budgets.",
                     "lag": "months"
                   }
                 ],
                 "end_user": {
                   "group": "Borrowers",
-                  "effect": "Indian borrowers are unlikely to notice any change from this hold. If the Fed hikes later and this constrains the Reserve Bank of India, loan EMIs may stay higher for longer over the coming months."
+                  "effect": "Indian borrowers are unlikely to see any immediate change from this hold. Prolonged high US rates could make the RBI slower to cut, which may keep loan EMIs from falling over the coming months."
                 }
               }
             }
@@ -19380,10 +19637,158 @@
               "kind": "hard",
               "summary": "The U.S. central bank left borrowing costs unchanged this month after hiking rates in September for the first time in three years.",
               "summaryV": 3
+            },
+            {
+              "source": "npr",
+              "headline": "Fed holds interest rates steady even as inflation remains stubborn",
+              "url": "https://www.npr.org/2026/10/28/nx-s1-6020425/federal-reserve-interest-rates-inflation",
+              "date": "2026-10-28T18:04:42.000Z",
+              "kind": "hard",
+              "summary": "The Federal Reserve opted to leave its benchmark interest rate unchanged — but investors widely expect the central bank to raise rates at its next meeting in December to combat stubborn inflation.",
+              "summaryV": 3,
+              "image": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/8087x5392+0+0/resize/8087x5392!/quality/85/format/webp/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fc3%2Feb%2F1c48feef483e9b705d5e63e76f89%2Fgettyimages-2295625605.jpg"
+            },
+            {
+              "source": "scmp",
+              "headline": "US Fed holds interest rates steady despite surging inflation",
+              "url": "https://www.scmp.com/news/world/united-states-canada/article/3372489/us-fed-holds-interest-rates-steady-despite-surging-inflation",
+              "date": "2026-10-28T18:37:06.000Z",
+              "kind": "hard",
+              "summary": "The US Federal Reserve on Wednesday held interest rates steady, in line with market expectations, days ahead of crucial midterm elections where surging inflation has been a key issue.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/29/c55bbcfb-9719-447b-a070-8a11f3289511_15f3dd50.jpg?itok=BqajYiEr&v=1793212615"
+            },
+            {
+              "source": "abc",
+              "headline": "Live: US staring down December and March rate hikes as Fed leaves rates on hold",
+              "url": "https://www.abc.net.au/news/2026-10-29/asx-markets-business-live-news-29-october-2026/107321622",
+              "date": "2026-10-28T20:23:36.000Z",
+              "kind": "hard",
+              "summary": "The US Federal Reserve has held interest rates unchanged at its most recent meeting, but in Australia, high inflation data means we're likely to hike. Follow the day's events and insights from our business reporters on the ABC News live markets blog.",
+              "summaryV": 3,
+              "image": "https://live-production.wcms.abc-cdn.net.au/2bcc5de27112144035164dd51dacf77e?impolicy=wcms_crop_resize&cropH=530&cropW=942&xPos=0&yPos=14&width=862&height=485"
+            },
+            {
+              "source": "nyt",
+              "headline": "Fed Holds Rates Steady Despite Lack of Progress on Inflation",
+              "url": "https://www.nytimes.com/2026/10/28/business/economy/warsh-interest-rates-fed.html",
+              "date": "2026-10-28T21:27:49.000Z",
+              "kind": "hard",
+              "summary": "Kevin M. Warsh, the chairman of the Federal Reserve, said an “information-rich” period before the central bank’s gathering in December will help officials determine next steps for policy.",
+              "summaryV": 3,
+              "image": "https://static01.nyt.com/images/2026/10/28/multimedia/28dc-fed-lwvg/28dc-fed-lwvg-mediumSquareAt3X.jpg"
+            },
+            {
+              "source": "cnbc",
+              "headline": "Here are five key takeaways from the Fed rate decision and Warsh news conference",
+              "url": "https://www.cnbc.com/2026/10/28/fed-rate-decision-warsh-takeaways.html",
+              "date": "2026-10-28T21:31:46.000Z",
+              "kind": "hard",
+              "summary": "Even though the interest-rate vote went as expected, there were a few surprises out of this week's Federal Open Market Committee meeting.",
+              "summaryV": 3
             }
           ],
           "image": "https://static01.nyt.com/images/2026/10/28/multimedia/28dc-fed-preview--01-gbkp/28dc-fed-preview--01-gbkp-mediumSquareAt3X.jpg",
-          "thread": "tpnacn3"
+          "thread": "tpnacn3",
+          "stats": {
+            "v": 2,
+            "at": "2026-10-29T01:05:23.723Z",
+            "series": [
+              {
+                "title": "US Fed target federal funds rate range after each change",
+                "unit": "% (target range)",
+                "publisher": "Board of Governors of the Federal Reserve System",
+                "points": [
+                  {
+                    "period": "Dec 15, 2022",
+                    "value": 4.25,
+                    "url": "https://www.federalreserve.gov/monetarypolicy/openmarket.htm",
+                    "source": "Open Market Operations"
+                  },
+                  {
+                    "period": "Feb 2, 2023",
+                    "value": 4.5,
+                    "url": "https://www.federalreserve.gov/monetarypolicy/openmarket.htm",
+                    "source": "Open Market Operations"
+                  },
+                  {
+                    "period": "Mar 23, 2023",
+                    "value": 4.75,
+                    "url": "https://www.federalreserve.gov/monetarypolicy/openmarket.htm",
+                    "source": "Open Market Operations"
+                  },
+                  {
+                    "period": "May 4, 2023",
+                    "value": 5,
+                    "url": "https://www.federalreserve.gov/monetarypolicy/openmarket.htm",
+                    "source": "Open Market Operations"
+                  },
+                  {
+                    "period": "Jul 27, 2023",
+                    "value": 5.25,
+                    "url": "https://www.federalreserve.gov/monetarypolicy/openmarket.htm",
+                    "source": "Open Market Operations"
+                  },
+                  {
+                    "period": "Sep 19, 2024",
+                    "value": 4.75,
+                    "url": "https://www.federalreserve.gov/monetarypolicy/openmarket.htm",
+                    "source": "Open Market Operations"
+                  },
+                  {
+                    "period": "Nov 8, 2024",
+                    "value": 4.5,
+                    "url": "https://www.federalreserve.gov/monetarypolicy/openmarket.htm",
+                    "source": "Open Market Operations"
+                  },
+                  {
+                    "period": "Dec 19, 2024",
+                    "value": 4.25,
+                    "url": "https://www.federalreserve.gov/monetarypolicy/openmarket.htm",
+                    "source": "Open Market Operations"
+                  },
+                  {
+                    "period": "Sep 18, 2025",
+                    "value": 4,
+                    "url": "https://www.federalreserve.gov/monetarypolicy/openmarket.htm",
+                    "source": "Open Market Operations"
+                  },
+                  {
+                    "period": "Oct 30, 2025",
+                    "value": 3.75,
+                    "url": "https://www.federalreserve.gov/monetarypolicy/openmarket.htm",
+                    "source": "Open Market Operations"
+                  },
+                  {
+                    "period": "Dec 11, 2025",
+                    "value": 3.5,
+                    "url": "https://www.federalreserve.gov/monetarypolicy/openmarket.htm",
+                    "source": "Open Market Operations"
+                  },
+                  {
+                    "period": "Sep 17, 2026",
+                    "value": 3.75,
+                    "url": "https://www.federalreserve.gov/monetarypolicy/openmarket.htm",
+                    "source": "Open Market Operations"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.federalreserve.gov/monetarypolicy/openmarket.htm",
+                    "title": "Open Market Operations",
+                    "domain": "federalreserve.gov"
+                  }
+                ],
+                "domains": [
+                  "federalreserve.gov"
+                ],
+                "dropped": 0,
+                "why": "The series tracks the US Federal Reserve's target federal funds rate after each change, which is the central policy decision the story reports on.",
+                "reused": true,
+                "checkedAt": "2026-10-28T13:16:32.547Z"
+              }
+            ]
+          }
         },
         {
           "id": "s1aytv4r",
@@ -19904,109 +20309,6 @@
           ],
           "image": "https://image.cnbcfm.com/api/v1/image/108467546-1793083979300-gettyimages-2286903422-avdjuly26lot2j.jpeg?v=1793083990&w=1920&h=1080",
           "thread": "t19h8otn"
-        },
-        {
-          "id": "s1393e9v",
-          "headline": "Trump Explores Lifting Sanctions on Russia’s Flagship Investment Fund",
-          "url": "https://www.nytimes.com/2026/10/27/us/politics/russia-fund-sanctions-trump.html",
-          "source": "nyt",
-          "date": "2026-10-27T17:30:52.000Z",
-          "relevance": "medium",
-          "image": "https://static01.nyt.com/images/2026/10/26/multimedia/26dc-russia-sanctions-mvcg/26dc-russia-sanctions-mvcg-mediumSquareAt3X-v2.jpg",
-          "why": "The New York Times reports that President Trump is exploring lifting US sanctions on Russia's flagship investment fund as an economic incentive to end the war in Ukraine. It could change the sanctions environment for Indian firms dealing with Russia.",
-          "implications": [
-            "The move is described as a concession tied to the hope of ending the war, so how long any easing lasts could depend on whether that aim is met.",
-            "Indian banks and companies with Russian counterparties could face a different compliance picture if the fund is removed from sanctions, though the report does not say how."
-          ],
-          "analysis": {
-            "v": 3,
-            "at": "2026-10-27T22:26:27.690Z",
-            "tier": "quick",
-            "primary": "impact_chain",
-            "complement": null,
-            "features": [
-              "pending_outcome"
-            ],
-            "exposure": {
-              "level": "low",
-              "reason": "The report gives no direct channel to India. Any effect would run indirectly through the sanctions compliance of Indian firms dealing with Russia, or through the wider course of the Ukraine war."
-            },
-            "horizon": {
-              "value": "months",
-              "reason": "The step is only being explored, and any formal decision and its effect on trade and payments would take time."
-            },
-            "confidence": {
-              "level": "low",
-              "reason": "This rests on a single outlet, the New York Times, and the report says only that the option is being explored, with no decision confirmed."
-            },
-            "outlets": 1,
-            "affected": [
-              {
-                "group": "Importers & traders",
-                "direction": "unclear",
-                "what": "sanctions compliance risk",
-                "effect": "Indian traders and banks dealing with Russian entities could face lighter or different sanctions compliance requirements if the fund is delisted, though the report does not say so.",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "A formal US announcement removing Russia's flagship investment fund from the sanctions list",
-                "why": "It would confirm that the option has become policy and would show the scope of any easing.",
-                "when": "",
-                "where": "US Treasury Department, Office of Foreign Assets Control"
-              }
-            ],
-            "context": [
-              "US sanctions bar American firms from dealing with listed entities, and non-US firms risk penalties too because many payments run through dollar systems.",
-              "India has long-standing economic ties with Russia, including in energy and defence, so changes in Western sanctions on Russia are closely watched by Indian businesses."
-            ],
-            "terms": [],
-            "frameworks": {
-              "impact_chain": {
-                "chain": [
-                  {
-                    "step": "US explores lifting fund sanctions",
-                    "detail": "The New York Times reports that President Trump is exploring lifting sanctions on Russia's flagship investment fund, which would be the latest US concession to Moscow.",
-                    "basis": "reported"
-                  },
-                  {
-                    "step": "Concession aimed at ending the war",
-                    "detail": "The report says Mr Trump is pursuing economic incentives that he hopes will secure an end to the war in Ukraine, so the sanctions step is linked to peace efforts.",
-                    "basis": "reported"
-                  },
-                  {
-                    "step": "Indian firms' Russia dealings may change",
-                    "detail": "Easing sanctions on a major Russian fund could reduce the compliance risk for Indian companies and banks dealing with Russian partners, and a wider peace could ease war-related trade disruption.",
-                    "basis": "inferred"
-                  }
-                ],
-                "breaks_if": "The effect would not reach India if the sanctions are not actually lifted, or if the easing is too narrow to change how Indian firms deal with Russia."
-              }
-            }
-          },
-          "place": {
-            "name": "Washington",
-            "country": "United States",
-            "lat": 38.9,
-            "lon": -77,
-            "involves": [
-              "Russia"
-            ]
-          },
-          "reports": [
-            {
-              "source": "nyt",
-              "headline": "Trump Explores Lifting Sanctions on Russia’s Flagship Investment Fund",
-              "url": "https://www.nytimes.com/2026/10/27/us/politics/russia-fund-sanctions-trump.html",
-              "date": "2026-10-27T17:30:52.000Z",
-              "kind": "hard",
-              "summary": "The move would be the latest U.S. concession to Moscow as President Trump pursues economic incentives he hopes will secure an end to war in Ukraine.",
-              "summaryV": 3,
-              "image": "https://static01.nyt.com/images/2026/10/26/multimedia/26dc-russia-sanctions-mvcg/26dc-russia-sanctions-mvcg-mediumSquareAt3X-v2.jpg"
-            }
-          ],
-          "thread": "t1nate9f"
         },
         {
           "id": "sbydmv0",
@@ -30054,6 +30356,41 @@
       "name": "Environment & Climate",
       "items": [
         {
+          "id": "sqbj2lr",
+          "headline": "Building boom puts 300,000 people in the path of potential Himalayan disasters",
+          "url": "https://www.bbc.co.uk/news/articles/c574pj3zljvjo",
+          "source": "bbc",
+          "date": "2026-10-28T23:11:59.000Z",
+          "relevance": "medium",
+          "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/1fa1/live/e95162f0-cdf6-11f1-9a39-31b474234113.jpg",
+          "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/1fa1/live/e95162f0-cdf6-11f1-9a39-31b474234113.jpg",
+          "why": "",
+          "implications": [],
+          "place": {
+            "name": "Uttarakhand",
+            "country": "India",
+            "lat": 30.07,
+            "lon": 79.02,
+            "involves": [
+              "Nepal"
+            ]
+          },
+          "reports": [
+            {
+              "source": "bbc",
+              "headline": "Building boom puts 300,000 people in the path of potential Himalayan disasters",
+              "url": "https://www.bbc.co.uk/news/articles/c574pj3zljvjo",
+              "date": "2026-10-28T23:11:59.000Z",
+              "kind": "feature",
+              "summary": "The construction of tourism facilities, housing, and infrastructure has surged in parts of Nepal and India's Uttarakhand.",
+              "summaryV": 3,
+              "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/1fa1/live/e95162f0-cdf6-11f1-9a39-31b474234113.jpg",
+              "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/1fa1/live/e95162f0-cdf6-11f1-9a39-31b474234113.jpg"
+            }
+          ],
+          "thread": "t1n31z81"
+        },
+        {
           "id": "su2yvee",
           "headline": "India evacuates tens of thousands as ‘very severe’ Cyclone Arnab nears",
           "url": "https://www.aljazeera.com/news/2026/10/27/india-evacuates-tens-of-thousands-as-very-severe-cyclone-arnab-nears",
@@ -31531,6 +31868,111 @@
       "id": "governance",
       "name": "Policy & Governance",
       "items": [
+        {
+          "id": "sif6b16",
+          "headline": "Inside India newsletter: New Delhi approves $22 billion in military spending amid China border tensions",
+          "url": "https://www.cnbc.com/2026/10/29/india-china-us-israel-military-spending.html",
+          "source": "cnbc",
+          "date": "2026-10-29T00:11:14.000Z",
+          "relevance": "medium",
+          "why": "CNBC reports that New Delhi has approved $22 billion in military spending amid tensions with China on the border. The outlet says American, Israeli and Russian defence manufacturers are likely to find substantial opportunities in India's expanding defence market.",
+          "implications": [
+            "Large defence outlays are paid from the central budget, so the spending competes with other public priorities and shapes how much room the government has for other expenditure.",
+            "Foreign suppliers are expected to benefit, which suggests that part of the money may flow abroad as imports rather than stay with Indian producers."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-29T01:05:21.519Z",
+            "tier": "quick",
+            "primary": "winners_losers",
+            "complement": null,
+            "features": [
+              "allocation"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The effect reaches India mainly through central government spending and the defence supply industry, which is one sector. The reports give no direct channel to household prices or essentials."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Defence approvals usually turn into contracts and deliveries over a long period, so the effect on industry and public finances would build gradually."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single CNBC newsletter summary, which gives no named official source, and the claim about which suppliers will benefit is the outlet's own assessment."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Government finances",
+                "direction": "down",
+                "what": "room for other spending",
+                "effect": "A $22 billion defence approval commits public money to the military, which may leave less room in the budget for other priorities.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Manufacturing workers",
+                "direction": "unclear",
+                "what": "defence-related factory demand",
+                "effect": "Jobs in defence manufacturing could rise if orders are placed with Indian factories, but the reports say only that foreign makers are likely to gain.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Announcements of which specific equipment purchases and suppliers the $22 billion approval will cover",
+                "why": "This would show how much of the spending goes to foreign firms and how much to Indian producers.",
+                "when": "",
+                "where": "Ministry of Defence"
+              }
+            ],
+            "context": [
+              "India has long been one of the world's largest buyers of foreign weapons, and it also tries to build more of its defence equipment at home. Procurement decisions therefore balance security needs, cost and domestic industry."
+            ],
+            "terms": [],
+            "frameworks": {
+              "winners_losers": {
+                "groups": [
+                  {
+                    "group": "Government finances",
+                    "direction": "lose",
+                    "directness": "direct",
+                    "mechanism": "The approved $22 billion is a call on public money, so the government bears the cost of the expanded military spending."
+                  },
+                  {
+                    "group": "Manufacturing workers",
+                    "direction": "unclear",
+                    "directness": "indirect",
+                    "mechanism": "CNBC says foreign defence manufacturers are likely to find the most opportunities. Whether Indian factories and their workers gain depends on how much is ordered domestically, which the report does not say."
+                  }
+                ],
+                "not_affected": "Fuel and LPG users are not directly affected, because the report describes no change in energy supply or prices from this spending approval."
+              }
+            }
+          },
+          "place": {
+            "name": "New Delhi",
+            "country": "India",
+            "lat": 28.61,
+            "lon": 77.21
+          },
+          "reports": [
+            {
+              "source": "cnbc",
+              "headline": "Inside India newsletter: New Delhi approves $22 billion in military spending amid China border tensions",
+              "url": "https://www.cnbc.com/2026/10/29/india-china-us-israel-military-spending.html",
+              "date": "2026-10-29T00:11:14.000Z",
+              "kind": "hard",
+              "summary": "American, Israeli, and Russian defense manufacturers are likely to find substantial opportunities in India's expanding defense market",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://image.cnbcfm.com/api/v1/image/108472168-1793157513648-gettyimages-2257637080-kachroo-notitle260125_npX0Q.jpeg?v=1793157526&w=1920&h=1080"
+            }
+          ],
+          "image": "https://image.cnbcfm.com/api/v1/image/108472168-1793157513648-gettyimages-2257637080-kachroo-notitle260125_npX0Q.jpeg?v=1793157526&w=1920&h=1080",
+          "thread": "t143bipw"
+        },
         {
           "id": "s1uzqcq0",
           "headline": "Are GCC countries looking for a regional security pact with Iran?",
@@ -38905,15 +39347,15 @@
       "none": 0,
       "waiting": 0
     },
-    "analysed": 218,
-    "added": 8,
-    "merged": 6,
-    "failedBatches": 2,
+    "analysed": 126,
+    "added": 3,
+    "merged": 7,
+    "failedBatches": 1,
     "feeds": {
       "bbc": {
         "feedsOk": 6,
         "feedsFailed": 0,
-        "items": 147
+        "items": 154
       },
       "guardian": {
         "feedsOk": 7,
@@ -38928,7 +39370,7 @@
       "aljazeera": {
         "feedsOk": 1,
         "feedsFailed": 0,
-        "items": 13
+        "items": 14
       },
       "mercopress": {
         "feedsOk": 3,
@@ -38943,7 +39385,7 @@
       "nyt": {
         "feedsOk": 5,
         "feedsFailed": 0,
-        "items": 160
+        "items": 165
       },
       "cnbc": {
         "feedsOk": 3,
@@ -38953,7 +39395,7 @@
       "cbs": {
         "feedsOk": 2,
         "feedsFailed": 0,
-        "items": 45
+        "items": 44
       },
       "dw": {
         "feedsOk": 3,
@@ -38963,7 +39405,7 @@
       "france24": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 59
+        "items": 66
       },
       "africanews": {
         "feedsOk": 1,
@@ -38973,22 +39415,22 @@
       "scmp": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 144
+        "items": 141
       }
     },
     "shareImages": {
-      "tried": 4,
-      "found": 2,
+      "tried": 1,
+      "found": 1,
       "summaries": 0
     },
     "threads": {
-      "assigned": 8,
+      "assigned": 3,
       "created": 3,
       "failedBatches": 0
     },
     "summaries": {
-      "written": 4,
-      "due": 4
+      "written": 0,
+      "due": 0
     },
     "kinds": {
       "labelled": 0,
@@ -38996,54 +39438,59 @@
       "failedBatches": 0
     },
     "frames": {
-      "done": 1,
+      "done": 2,
       "waiting": 1,
       "failedBatches": 0
     },
     "stats": {
-      "searched": 0,
+      "searched": 1,
       "found": 0,
-      "reused": 0,
+      "reused": 1,
       "none": 0,
       "failed": 0,
       "proposed": 0,
       "droppedPoints": 0,
       "pagesFetched": 0,
-      "samples": []
+      "samples": [
+        {
+          "headline": "Fed expected to hold interest rates steady but a hike is anticipated by year's e",
+          "result": "reused saved series"
+        }
+      ]
     },
     "models": {
       "filter": {
         "model": "claude-haiku-5-5",
-        "calls": 15,
-        "inputTokens": 60546,
-        "outputTokens": 33427,
-        "cost": 0.0228
+        "calls": 10,
+        "inputTokens": 39410,
+        "outputTokens": 20126,
+        "cost": 0.014
       },
       "analysis_quick": {
         "model": "claude-sonnet-5-5",
-        "calls": 5,
-        "inputTokens": 15084,
-        "outputTokens": 16776,
-        "cost": 0.1979
+        "calls": 3,
+        "inputTokens": 8309,
+        "outputTokens": 4334,
+        "cost": 0.06
       },
       "analysis": {
         "model": "claude-opus-5-5",
         "calls": 1,
-        "inputTokens": 3581,
-        "outputTokens": 5006,
-        "cost": 0.1144
+        "inputTokens": 4218,
+        "outputTokens": 8686,
+        "cost": 0.1906
       },
       "threads": {
         "model": "claude-sonnet-5-5",
-        "calls": 5,
-        "inputTokens": 11417,
-        "outputTokens": 1580,
-        "cost": 0.0387
+        "calls": 1,
+        "inputTokens": 8712,
+        "outputTokens": 95,
+        "cost": 0.0184
       }
     },
     "spend": {
-      "thisDesk": 0.3738,
-      "today": 0.3738,
+      "thisDesk": 0.2829,
+      "today": 1.0665,
       "cap": 6
     }
   },
