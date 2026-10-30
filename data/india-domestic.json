@@ -2,7 +2,7 @@
   "schema": 4,
   "region": "India",
   "since": "2026-10-02",
-  "updatedAt": "2026-10-29T18:49:05.572Z",
+  "updatedAt": "2026-10-30T01:15:03.970Z",
   "sectors": [
     {
       "id": "energy",
@@ -1619,8 +1619,11 @@
           "date": "2026-10-23T15:18:50.000Z",
           "relevance": "medium",
           "image": "https://th-i.thgim.com/public/news/national/telangana/nlmeta/article71616774.ece/alternates/LANDSCAPE_1200/YTPS_2026-05-13%20at%2010.53.01%20PM.jpeg",
-          "why": "",
-          "implications": [],
+          "why": "The Hindu reports that a state power generation company is arranging to move coal from Mahanadi Coalfields to the YTPS plant so that its fifth unit can become fully operational and begin commercial operation.",
+          "implications": [
+            "A new unit can add electricity generation capacity only if it has a steady coal supply, so the arrangements for moving coal are what could decide how soon it runs fully.",
+            "If the unit runs reliably, the state's electricity supply could become more secure for homes and industry that depend on the grid, though the report gives no figures."
+          ],
           "place": {
             "name": "Yadadri Thermal Power Station, Nalgonda",
             "country": "India",
@@ -1656,7 +1659,73 @@
             }
           ],
           "priority": 33,
-          "thread": "t9n2rvu"
+          "thread": "t9n2rvu",
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-30T01:15:03.937Z",
+            "tier": "quick",
+            "primary": "winners_losers",
+            "complement": null,
+            "features": [
+              "allocation"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "The report concerns coal supply for one unit at one power station, and it describes no change in tariffs or supply that would directly reach households."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "No date is reported, but the coal-movement arrangements are under way and the unit's start depends on them."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "The account rests on a single outlet, The Hindu, with no named official quoted, and no start date for commercial operation is confirmed."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Power consumers",
+                "direction": "up",
+                "what": "electricity supply availability",
+                "effect": "A fully operating fifth unit could add generation capacity to the grid serving the plant's state, which may help supply reliability for consumers.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "An announcement that the fifth unit of YTPS has begun commercial operation",
+                "why": "It would confirm that coal supply from Mahanadi Coalfields has been secured and that the new capacity is available.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "Most Indian coal-fired power stations depend on coal supplied by Coal India subsidiaries such as Mahanadi Coalfields. The coal usually travels by rail, so transport planning matters as much as mining."
+            ],
+            "terms": [
+              {
+                "term": "Genco",
+                "meaning": "A generation company, here a state-owned firm that produces electricity and sells it to distribution companies."
+              },
+              {
+                "term": "commercial operation",
+                "meaning": "The stage at which a power unit is formally declared ready to supply electricity regularly under its supply arrangements."
+              }
+            ],
+            "frameworks": {
+              "winners_losers": {
+                "groups": [
+                  {
+                    "group": "Power consumers",
+                    "direction": "gain",
+                    "directness": "indirect",
+                    "mechanism": "If coal reaches the plant and the fifth unit runs fully, more electricity could be available on the grid, which may support supply reliability for homes and businesses."
+                  }
+                ],
+                "not_affected": "Fuel and LPG users are not affected, because the report concerns coal for power generation and not petrol, diesel or cooking gas."
+              }
+            }
+          }
         },
         {
           "id": "s1aeraj5",
@@ -1666,8 +1735,11 @@
           "date": "2026-10-23T14:54:37.000Z",
           "relevance": "medium",
           "image": "https://www.livemint.com/lm-img/img/2026/10/23/1600x900/logo/INDIGO-INDIA-ANTITRUST-1_1766276406560_1766276414171_1792766524480_7hwq_d47fef98-2cc2-4fce-930a-d029abc5b824_X3tp.JPG",
-          "why": "",
-          "implications": [],
+          "why": "Goa has cut the value added tax (VAT) on aviation turbine fuel (ATF) to 7% from 15%, effective October 24. This lowers the tax on fuel airlines buy at Goa's airports, though fares may not change.",
+          "implications": [
+            "Airlines buy fuel at the airports where they operate, so the lower tax applies only to fuel bought in Goa and not to fuel bought elsewhere in their networks.",
+            "Whether fares fall depends on whether airlines pass the saving on to passengers, and the reports do not say that they will."
+          ],
           "place": {
             "name": "Goa",
             "country": "India",
@@ -1697,7 +1769,107 @@
             }
           ],
           "priority": 20,
-          "thread": "tvj0m4g"
+          "thread": "tvj0m4g",
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-30T01:15:03.938Z",
+            "tier": "quick",
+            "primary": "pass_through",
+            "complement": null,
+            "features": [
+              "price_move"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The change reaches one industry, aviation, through a lower fuel tax at Goa's airports, and any effect on fares for passengers is uncertain."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "The tax cut takes effect on October 24, but any change in fares depends on airlines' pricing decisions and on tickets sold later."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "The report rests on a single outlet, Mint, and its summary shows no official notification or airline response, so the effect on fares is unconfirmed."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Travellers & pilgrims",
+                "direction": "unclear",
+                "what": "airfares on Goa flights",
+                "effect": "Passengers flying from Goa airports could see lower fares only if airlines pass on part of the fuel tax saving, which the reports do not confirm.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Government finances",
+                "direction": "down",
+                "what": "state tax revenue from ATF",
+                "effect": "A lower VAT rate means Goa collects less tax on each unit of aviation fuel sold, unless higher fuel sales offset it.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Goa's reduced 7% VAT rate on aviation turbine fuel takes effect",
+                "why": "It marks the start of the lower tax component on fuel bought at Goa's airports.",
+                "when": "2026-10-24",
+                "where": ""
+              },
+              {
+                "what": "Whether airlines announce or show lower fares on flights from Goa airports after the cut",
+                "why": "It would show whether the tax saving is being passed on to passengers.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "ATF is outside the goods and services tax, so each state sets its own VAT rate on it. Fuel is one of an airline's largest costs, but fares also reflect demand, competition and other costs."
+            ],
+            "terms": [
+              {
+                "term": "ATF",
+                "meaning": "Aviation turbine fuel is the jet fuel that airlines buy to run their aircraft."
+              },
+              {
+                "term": "VAT",
+                "meaning": "Value added tax is a tax charged on sales; for aviation fuel, state governments set the rate."
+              }
+            ],
+            "frameworks": {
+              "pass_through": {
+                "driver": {
+                  "variable": "Goa's VAT rate on aviation turbine fuel",
+                  "direction": "down",
+                  "size": "7% from 15%"
+                },
+                "product": "other",
+                "rungs": [
+                  {
+                    "stage": "State VAT cut → tax on fuel bought at Goa airports",
+                    "pass": "likely",
+                    "damper": "The cut applies only to fuel bought at Goa's airports and does not change the base price of the fuel itself.",
+                    "lag": "days"
+                  },
+                  {
+                    "stage": "Lower fuel tax → airlines' operating costs",
+                    "pass": "partial",
+                    "damper": "Fuel is one of the largest cost items, but only fuel bought in Goa benefits, and other costs remain unchanged.",
+                    "lag": "weeks"
+                  },
+                  {
+                    "stage": "Airline costs → fares on Goa flights",
+                    "pass": "unclear",
+                    "damper": "Airlines set fares according to demand and competition, so they may keep any saving rather than lower fares.",
+                    "lag": "weeks"
+                  }
+                ],
+                "end_user": {
+                  "group": "Travellers & pilgrims",
+                  "effect": "Passengers flying from Goa may notice lower fares only if airlines choose to pass on the saving, and any change could take weeks to show."
+                }
+              }
+            }
+          }
         },
         {
           "id": "s1pfou70",
@@ -37643,6 +37815,120 @@
           "thread": "tbzosip"
         },
         {
+          "id": "s8r7dpq",
+          "headline": "Delhi SIR: Supreme Court asks ECI to extend deadlines, simplify enrolment",
+          "url": "https://www.thehindu.com/news/national/supreme-court-delhi-sir-enrolment-deadlines-form-6-case-updates/article71635381.ece",
+          "source": "thehindu",
+          "date": "2026-10-28T11:48:30.000Z",
+          "relevance": "medium",
+          "image": "https://th-i.thgim.com/public/incoming/4t327q/article70621377.ece/alternates/LANDSCAPE_1200/INDEX_SUPREME_COURT_02_08_7.jpg",
+          "why": "The Supreme Court asked the Election Commission of India (ECI) to extend deadlines and simplify enrolment in the Delhi voter-list revision. It also said it did not judicially review the 'logical discrepancy' issue in the Bihar case.",
+          "implications": [
+            "Longer deadlines and simpler enrolment could give Delhi residents more time and an easier route to stay on, or be added to, the electoral roll.",
+            "The Court's clarification on Bihar signals that its Delhi directions do not amount to an endorsement or rejection of how the Bihar revision handled 'logical discrepancy' cases."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-28T13:21:14.842Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The effect reaches voters in Delhi through the enrolment process and its deadlines, which could affect who remains on the electoral roll. It is a compliance matter for one region rather than a household-cost issue."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "The timing depends on when the Election Commission of India revises the Delhi schedule in response to the Court's request."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "The account rests on a single outlet, The Hindu, reporting a Supreme Court hearing; the exact wording of the order and the revised deadlines are not given."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "A named state or region",
+                "direction": "unclear",
+                "what": "Delhi voter enrolment process",
+                "effect": "Delhi residents may get more time and a simpler process to enrol or be verified, depending on how the Election Commission of India acts.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "The Election Commission of India announcing revised deadlines or simplified enrolment steps for the Delhi revision",
+                "why": "It would show how far the Commission has acted on the Supreme Court's request.",
+                "when": "",
+                "where": "Election Commission of India"
+              }
+            ],
+            "context": [
+              "Special revisions of electoral rolls require voters to be verified within fixed deadlines, so procedural rules and timelines can decide whether eligible citizens remain on the list."
+            ],
+            "terms": [
+              {
+                "term": "SIR",
+                "meaning": "Special Intensive Revision, an exercise in which the Election Commission of India re-verifies and updates the electoral roll for a state or region."
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Court addresses the Election Commission",
+                    "detail": "In the Delhi SIR case, the Supreme Court asked the Election Commission of India to extend deadlines and simplify enrolment.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Court limits the Bihar reference",
+                    "detail": "The Court clarified that it did not judicially review the 'logical discrepancy' issue in the Bihar SIR case, so its Delhi directions are not a ruling on that point.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Delhi voters may get more time",
+                    "detail": "If the Commission follows the request, Delhi residents could have longer and easier access to enrolment, which may reduce the risk of eligible voters missing the process.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The Election Commission does not change the Delhi deadlines or enrolment steps, in which case residents would face the original process and timelines."
+              }
+            }
+          },
+          "place": {
+            "name": "New Delhi",
+            "country": "India",
+            "lat": 28.61,
+            "lon": 77.21
+          },
+          "reports": [
+            {
+              "source": "thehindu",
+              "headline": "Delhi SIR: Supreme Court asks ECI to extend deadlines, simplify enrolment",
+              "url": "https://www.thehindu.com/news/national/supreme-court-delhi-sir-enrolment-deadlines-form-6-case-updates/article71635381.ece",
+              "date": "2026-10-28T11:48:30.000Z",
+              "kind": "hard",
+              "summary": "While addressing the ECI in the Delhi SIR case, the top court clarified that it did not judicially review the ‘logical discrepancy’ in the Bihar SIR case",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/incoming/4t327q/article70621377.ece/alternates/LANDSCAPE_1200/INDEX_SUPREME_COURT_02_08_7.jpg"
+            },
+            {
+              "source": "thehindu",
+              "headline": "ECI extends SIR timelines in Maharashtra, Delhi, Andhra, Haryana, Telangana, Nagaland",
+              "url": "https://www.thehindu.com/news/national/eci-extends-sir-timelines-in-maharashtra-delhi-andhra-haryana-telangana-nagaland/article71642254.ece",
+              "date": "2026-10-29T18:29:17.000Z",
+              "kind": "hard",
+              "summary": "The revisions follow requests from the Chief Electoral Officers of the concerned States",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/incoming/mllfre/article71642288.ece/alternates/LANDSCAPE_1200/Present-but-maGU4GMSI2Q.3.jpg.jpg"
+            }
+          ],
+          "thread": "t1iy3j15"
+        },
+        {
           "id": "s1n3dom1",
           "headline": "Corporate Affairs Ministry has ‘hijacked’ staff appointments in NCLT: Supreme Court",
           "url": "https://www.thehindu.com/news/national/sc-nclat-nclt-presidents-proposals-on-infrastructure-staff-requirements/article71639787.ece",
@@ -39234,110 +39520,6 @@
             }
           ],
           "thread": "t1m0bwse"
-        },
-        {
-          "id": "s8r7dpq",
-          "headline": "Delhi SIR: Supreme Court asks ECI to extend deadlines, simplify enrolment",
-          "url": "https://www.thehindu.com/news/national/supreme-court-delhi-sir-enrolment-deadlines-form-6-case-updates/article71635381.ece",
-          "source": "thehindu",
-          "date": "2026-10-28T11:48:30.000Z",
-          "relevance": "medium",
-          "image": "https://th-i.thgim.com/public/incoming/4t327q/article70621377.ece/alternates/LANDSCAPE_1200/INDEX_SUPREME_COURT_02_08_7.jpg",
-          "why": "The Supreme Court asked the Election Commission of India (ECI) to extend deadlines and simplify enrolment in the Delhi voter-list revision. It also said it did not judicially review the 'logical discrepancy' issue in the Bihar case.",
-          "implications": [
-            "Longer deadlines and simpler enrolment could give Delhi residents more time and an easier route to stay on, or be added to, the electoral roll.",
-            "The Court's clarification on Bihar signals that its Delhi directions do not amount to an endorsement or rejection of how the Bihar revision handled 'logical discrepancy' cases."
-          ],
-          "analysis": {
-            "v": 3,
-            "at": "2026-10-28T13:21:14.842Z",
-            "tier": "quick",
-            "primary": "impact_chain",
-            "complement": null,
-            "features": [
-              "pending_outcome"
-            ],
-            "exposure": {
-              "level": "medium",
-              "reason": "The effect reaches voters in Delhi through the enrolment process and its deadlines, which could affect who remains on the electoral roll. It is a compliance matter for one region rather than a household-cost issue."
-            },
-            "horizon": {
-              "value": "weeks",
-              "reason": "The timing depends on when the Election Commission of India revises the Delhi schedule in response to the Court's request."
-            },
-            "confidence": {
-              "level": "medium",
-              "reason": "The account rests on a single outlet, The Hindu, reporting a Supreme Court hearing; the exact wording of the order and the revised deadlines are not given."
-            },
-            "outlets": 1,
-            "affected": [
-              {
-                "group": "A named state or region",
-                "direction": "unclear",
-                "what": "Delhi voter enrolment process",
-                "effect": "Delhi residents may get more time and a simpler process to enrol or be verified, depending on how the Election Commission of India acts.",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "The Election Commission of India announcing revised deadlines or simplified enrolment steps for the Delhi revision",
-                "why": "It would show how far the Commission has acted on the Supreme Court's request.",
-                "when": "",
-                "where": "Election Commission of India"
-              }
-            ],
-            "context": [
-              "Special revisions of electoral rolls require voters to be verified within fixed deadlines, so procedural rules and timelines can decide whether eligible citizens remain on the list."
-            ],
-            "terms": [
-              {
-                "term": "SIR",
-                "meaning": "Special Intensive Revision, an exercise in which the Election Commission of India re-verifies and updates the electoral roll for a state or region."
-              }
-            ],
-            "frameworks": {
-              "impact_chain": {
-                "chain": [
-                  {
-                    "step": "Court addresses the Election Commission",
-                    "detail": "In the Delhi SIR case, the Supreme Court asked the Election Commission of India to extend deadlines and simplify enrolment.",
-                    "basis": "reported"
-                  },
-                  {
-                    "step": "Court limits the Bihar reference",
-                    "detail": "The Court clarified that it did not judicially review the 'logical discrepancy' issue in the Bihar SIR case, so its Delhi directions are not a ruling on that point.",
-                    "basis": "reported"
-                  },
-                  {
-                    "step": "Delhi voters may get more time",
-                    "detail": "If the Commission follows the request, Delhi residents could have longer and easier access to enrolment, which may reduce the risk of eligible voters missing the process.",
-                    "basis": "inferred"
-                  }
-                ],
-                "breaks_if": "The Election Commission does not change the Delhi deadlines or enrolment steps, in which case residents would face the original process and timelines."
-              }
-            }
-          },
-          "place": {
-            "name": "New Delhi",
-            "country": "India",
-            "lat": 28.61,
-            "lon": 77.21
-          },
-          "reports": [
-            {
-              "source": "thehindu",
-              "headline": "Delhi SIR: Supreme Court asks ECI to extend deadlines, simplify enrolment",
-              "url": "https://www.thehindu.com/news/national/supreme-court-delhi-sir-enrolment-deadlines-form-6-case-updates/article71635381.ece",
-              "date": "2026-10-28T11:48:30.000Z",
-              "kind": "hard",
-              "summary": "While addressing the ECI in the Delhi SIR case, the top court clarified that it did not judicially review the ‘logical discrepancy’ in the Bihar SIR case",
-              "summaryV": 3,
-              "image": "https://th-i.thgim.com/public/incoming/4t327q/article70621377.ece/alternates/LANDSCAPE_1200/INDEX_SUPREME_COURT_02_08_7.jpg"
-            }
-          ],
-          "thread": "t1iy3j15"
         },
         {
           "id": "s1bbkk9b",
@@ -42398,8 +42580,11 @@
           "date": "2026-10-24T03:13:37.000Z",
           "relevance": "medium",
           "image": "https://th-i.thgim.com/public/incoming/8fzim8/article71618986.ece/alternates/LANDSCAPE_1200/6678_24-9-2017_19-31-35_TRIBAL_1.JPG",
-          "why": "",
-          "implications": [],
+          "why": "Kerala plans a State-wide mapping to identify children living in conditions that risk their health, education and safety, followed by regular follow-ups, as part of efforts to prevent child deaths linked to malnutrition and neglect.",
+          "implications": [
+            "Identifying at-risk children before harm occurs could let officials direct nutrition, health and protection services to specific families rather than relying on complaints or emergencies.",
+            "Because the mapping covers health, education and safety together, one child's record could involve several departments, which may require them to coordinate their follow-up visits."
+          ],
           "place": {
             "name": "Thiruvananthapuram",
             "country": "India",
@@ -42436,7 +42621,81 @@
           ],
           "finChecked": true,
           "priority": 30,
-          "thread": "t12z0r34"
+          "thread": "t12z0r34",
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-30T01:15:03.937Z",
+            "tier": "quick",
+            "primary": "policy_tracker",
+            "complement": null,
+            "features": [
+              "policy_stage"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The plan reaches children and families in one state, Kerala, through its child welfare machinery, so it is a single-state measure rather than a national household essential."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "The mapping must first be carried out and details collected before regular follow-ups begin, and the report gives no start date."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "This rests on The Hindu's explainer alone; no named official is quoted and the report gives no timeline or scale for the mapping."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "A named state or region",
+                "direction": "up",
+                "what": "child welfare monitoring in Kerala",
+                "effect": "Children found to be living in vulnerable conditions in Kerala will have their details collected and receive regular follow-ups, according to The Hindu.",
+                "basis": "reported"
+              }
+            ],
+            "watch": [
+              {
+                "what": "The start of the State-wide vulnerability mapping in Kerala's districts and any published guidelines for it",
+                "why": "It would show whether the announced plan has moved into field work and how children are being identified.",
+                "when": "",
+                "where": "Kerala Department of Women and Child Development"
+              }
+            ],
+            "context": [
+              "Child protection and nutrition services in India are delivered mainly by state governments through district and local offices, so the quality of such programmes often depends on field-level staffing and follow-through."
+            ],
+            "terms": [
+              {
+                "term": "vulnerability mapping",
+                "meaning": "A survey that identifies and records children living in conditions that put their health, education or safety at risk, so that they can be followed up."
+              }
+            ],
+            "frameworks": {
+              "policy_tracker": {
+                "instrument": {
+                  "name": "State-wide child vulnerability mapping",
+                  "issuer": "Kerala government",
+                  "jurisdiction": "Kerala"
+                },
+                "stages": [
+                  {
+                    "stage": "announced",
+                    "date": "2026-10-24",
+                    "status": "current"
+                  }
+                ],
+                "obligations": [
+                  {
+                    "who": "Kerala authorities",
+                    "what": "They are to map children living in vulnerable conditions, collect their details and hold regular follow-ups once those children are identified.",
+                    "from": ""
+                  }
+                ],
+                "applies_to_india": "partly",
+                "india_note": "The measure applies only within Kerala, but it may offer other states an example of how to track children at risk of malnutrition and neglect before harm occurs."
+              }
+            }
+          }
         },
         {
           "id": "sb69658",
@@ -42824,8 +43083,11 @@
           "date": "2026-10-23T16:35:55.000Z",
           "relevance": "medium",
           "image": "https://th-i.thgim.com/public/incoming/i1marn/article71617476.ece/alternates/LANDSCAPE_1200/6678_25-7-2016_15-7-31_TRIBAL_5.JPG",
-          "why": "",
-          "implications": [],
+          "why": "A Kerala meeting decided that district Women and Child Development Officers will be fully responsible for children's safety and rehabilitation, alongside a planned State-wide child vulnerability mapping.",
+          "implications": [
+            "Placing responsibility on one named district officer makes accountability clearer, so lapses in a child's protection can be traced to a specific office.",
+            "The approach could depend heavily on district offices having enough staff and resources to handle both the mapping and the rehabilitation of children found to be at risk."
+          ],
           "place": {
             "name": "Thiruvananthapuram",
             "country": "India",
@@ -42862,7 +43124,81 @@
           ],
           "finChecked": true,
           "priority": 30,
-          "thread": "t12z0r34"
+          "thread": "t12z0r34",
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-30T01:15:03.937Z",
+            "tier": "quick",
+            "primary": "policy_tracker",
+            "complement": null,
+            "features": [
+              "policy_stage"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The decision reaches children and families in one state, Kerala, through its district administration, so it is a single-state measure rather than a national household essential."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "The mapping still has to be conducted and districts must organise their work, and the report gives no start date."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "This rests on a single report from The Hindu about a meeting decision; no officials are named and no timeline for the mapping is given."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "A named state or region",
+                "direction": "up",
+                "what": "district responsibility for child safety",
+                "effect": "District officers in Kerala become fully responsible for the safety and rehabilitation of children identified as vulnerable, according to The Hindu.",
+                "basis": "reported"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Kerala district offices beginning the child vulnerability mapping and reporting on children identified",
+                "why": "It would show whether the meeting's decision is being turned into district-level action.",
+                "when": "",
+                "where": "Kerala Department of Women and Child Development"
+              }
+            ],
+            "context": [
+              "Child welfare in India is largely a state subject carried out through district-level officials, who coordinate with local bodies, health services and schools to protect and rehabilitate children."
+            ],
+            "terms": [
+              {
+                "term": "Women and Child Development Officers",
+                "meaning": "District-level officials who oversee government child welfare, nutrition and protection work in their areas."
+              }
+            ],
+            "frameworks": {
+              "policy_tracker": {
+                "instrument": {
+                  "name": "Statewide child vulnerability mapping and district responsibility for child safety",
+                  "issuer": "Kerala government meeting",
+                  "jurisdiction": "Kerala"
+                },
+                "stages": [
+                  {
+                    "stage": "announced",
+                    "date": "2026-10-23",
+                    "status": "current"
+                  }
+                ],
+                "obligations": [
+                  {
+                    "who": "District Women and Child Development Officers",
+                    "what": "They are to be fully responsible for ensuring the safety and rehabilitation of children in their districts.",
+                    "from": ""
+                  }
+                ],
+                "applies_to_india": "partly",
+                "india_note": "The decision applies only within Kerala, where it affects children at risk and the district officials responsible for them; other states are not bound by it."
+              }
+            }
+          }
         },
         {
           "id": "s1ccat28",
@@ -43087,8 +43423,11 @@
           "date": "2026-10-23T15:59:43.000Z",
           "relevance": "medium",
           "image": "https://www.livemint.com/lm-img/img/2026/10/23/1600x900/logo/Untitled_Design_1792769911653_wdOo_1792769915671_9NtH_221b4508-c7dd-4057-a28c-3b1f27e795c0_H7Le.png",
-          "why": "",
-          "implications": [],
+          "why": "Mint reports, citing records obtained under the Right to Information (RTI) Act, that the Cabinet Secretariat declined to act on complaints by Election Commissioners Sukhbir Singh Sandhu and Vivek Joshi against senior poll official Maneesh Garg, because they were filed individually.",
+          "implications": [
+            "The stated reason is procedural, concerning who submitted the complaints. The report does not describe any assessment of the conduct that the two commissioners flagged.",
+            "The episode shows that two Election Commissioners did not obtain government action on their concerns, which may raise questions about how disagreements inside the Commission are handled."
+          ],
           "place": {
             "name": "New Delhi",
             "country": "India",
@@ -43125,7 +43464,68 @@
           ],
           "finChecked": true,
           "priority": 45,
-          "thread": "t14fyeji"
+          "thread": "t14fyeji",
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-30T01:15:03.937Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "low",
+              "reason": "The reports describe an internal dispute over complaint procedure and show no direct channel to household costs, jobs or travel. Any effect would be indirect, through confidence in election administration."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "No deadline is reported, and any change would depend on further steps by the Election Commission or the government."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "The account rests on a single outlet, Mint, interpreting RTI records, and the reports contain no on-record response from the Commission, the Cabinet Secretariat or the official named."
+            },
+            "outlets": 1,
+            "affected": [],
+            "watch": [
+              {
+                "what": "Whether the Election Commission as a whole submits the complaints about the official to the government",
+                "why": "This would show whether the Cabinet Secretariat's procedural objection can be met and whether the complaints are then examined.",
+                "when": "",
+                "where": "Election Commission of India"
+              }
+            ],
+            "context": [
+              "The Election Commission of India is a constitutional body that oversees elections, and its members are meant to work independently of the government. The RTI Act allows citizens to obtain records from public authorities."
+            ],
+            "terms": [
+              {
+                "term": "RTI",
+                "meaning": "The Right to Information Act lets citizens request records from government bodies, and journalists often use it to obtain internal correspondence."
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Commissioners raise complaints",
+                    "detail": "Mint reports that records obtained under RTI show Election Commissioners Sukhbir Singh Sandhu and Vivek Joshi complained about the conduct of senior poll official Maneesh Garg.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Cabinet Secretariat declines to act",
+                    "detail": "The Cabinet Secretariat declined to act, saying the complaints were submitted by the two commissioners individually and not by the Election Commission as a whole.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Concerns may stay unresolved",
+                    "detail": "If no joint complaint follows, the conduct concerns could remain unexamined, which may affect public confidence in how election officials are held to account.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The Election Commission as a whole submits the complaints, or the government examines them despite the procedural objection, so that the conduct concerns are formally addressed."
+              }
+            }
+          }
         },
         {
           "id": "s1b5yqmw",
@@ -50990,20 +51390,20 @@
       "active": 6
     },
     "places": {
-      "labelled": 1,
-      "none": 1,
+      "labelled": 0,
+      "none": 0,
       "waiting": 0
     },
-    "analysed": 141,
-    "added": 18,
-    "merged": 5,
-    "rejected": 118,
+    "analysed": 38,
+    "added": 0,
+    "merged": 1,
+    "rejected": 37,
     "failedBatches": 0,
     "feeds": {
       "thehindu": {
         "feedsOk": 6,
         "feedsFailed": 0,
-        "items": 343
+        "items": 342
       },
       "mint": {
         "feedsOk": 6,
@@ -51017,13 +51417,13 @@
       "summaries": 0
     },
     "threads": {
-      "assigned": 18,
-      "created": 10,
+      "assigned": 0,
+      "created": 0,
       "failedBatches": 0
     },
     "summaries": {
-      "written": 8,
-      "due": 8
+      "written": 0,
+      "due": 0
     },
     "kinds": {
       "labelled": 0,
@@ -51031,8 +51431,8 @@
       "failedBatches": 0
     },
     "frames": {
-      "done": 3,
-      "waiting": 21,
+      "done": 5,
+      "waiting": 15,
       "failedBatches": 0
     },
     "stats": {
@@ -51049,36 +51449,22 @@
     "models": {
       "filter": {
         "model": "claude-haiku-5-5",
-        "calls": 15,
-        "inputTokens": 58658,
-        "outputTokens": 27571,
-        "cost": 0.0198
+        "calls": 4,
+        "inputTokens": 17508,
+        "outputTokens": 7413,
+        "cost": 0.0055
       },
       "analysis_quick": {
         "model": "claude-sonnet-5-5",
-        "calls": 12,
-        "inputTokens": 36257,
-        "outputTokens": 44925,
-        "cost": 0.5217
-      },
-      "analysis": {
-        "model": "claude-opus-5-5",
-        "calls": 1,
-        "inputTokens": 2747,
-        "outputTokens": 3409,
-        "cost": 0.0792
-      },
-      "threads": {
-        "model": "claude-sonnet-5-5",
-        "calls": 9,
-        "inputTokens": 15784,
-        "outputTokens": 3330,
-        "cost": 0.065
+        "calls": 4,
+        "inputTokens": 12367,
+        "outputTokens": 12778,
+        "cost": 0.1526
       }
     },
     "spend": {
-      "thisDesk": 0.6855,
-      "today": 1.2722,
+      "thisDesk": 0.158,
+      "today": 1.7545,
       "cap": 6
     }
   },
