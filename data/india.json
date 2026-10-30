@@ -2,7 +2,7 @@
   "schema": 4,
   "region": "India",
   "since": "2026-10-02",
-  "updatedAt": "2026-10-30T01:12:52.070Z",
+  "updatedAt": "2026-10-30T10:18:45.686Z",
   "sectors": [
     {
       "id": "energy",
@@ -15,99 +15,138 @@
           "source": "aljazeera",
           "date": "2026-10-30T00:11:20.000Z",
           "relevance": "medium",
-          "why": "Al Jazeera reports that Houthi forces claim six attacks on Saudi airports and oil facilities, despite recent Iran-led talks in Tehran. If confirmed, they could threaten Gulf oil supplies and the safety and travel of Indians in Saudi Arabia.",
+          "why": "Yemen's Houthi rebels claim six attacks on Saudi airports and oil facilities, and Saudi Arabia says it destroyed a Houthi drone near Mecca. This reaches India through Saudi crude supplies, Indian workers in Saudi Arabia and pilgrim travel.",
           "implications": [
-            "Attacks on oil facilities, if they cause real damage, could tighten crude supply and raise global prices, which would raise costs for Indian refiners and eventually for fuel buyers.",
-            "Attacks on airports could disrupt flights to and from Saudi Arabia, affecting Indian workers, families and pilgrims who depend on those routes."
+            "If attacks on Saudi oil facilities are confirmed, global crude prices could rise, which may raise costs for Indian refiners and eventually affect petrol, diesel and LPG pricing.",
+            "Attacks on Saudi airports, if confirmed, could disrupt flights between India and Saudi Arabia that carry migrant workers, business travellers and pilgrims.",
+            "A drone reported near Mecca may raise safety concerns for Indian pilgrims travelling for Umrah, and could prompt authorities to review travel guidance.",
+            "The attacks were announced despite talks in Tehran between Iran and the Mecca pact countries earlier in the week, which suggests that diplomacy has not yet reduced hostilities."
           ],
           "analysis": {
             "v": 3,
-            "at": "2026-10-30T01:11:01.362Z",
-            "tier": "quick",
-            "primary": "escalation",
+            "at": "2026-10-30T10:18:27.729Z",
+            "tier": "standard",
+            "primary": "conflicting",
             "complement": null,
             "features": [
+              "conflict",
               "armed_conflict",
+              "fast_moving",
               "pending_outcome"
             ],
             "exposure": {
-              "level": "medium",
-              "reason": "The channels are possible disruption to Saudi oil supply and to travel and safety of Indians in Saudi Arabia. The level stays medium because the attacks are only claimed and no damage is reported."
+              "level": "high",
+              "reason": "The reported targets include Saudi oil facilities and airports, which link to India's crude imports and to the safety and travel of Indians living in or visiting Saudi Arabia."
             },
             "horizon": {
               "value": "weeks",
-              "reason": "Any effect on oil prices or flights would depend on whether damage is confirmed and on how quickly further attacks follow."
+              "reason": "Any effect on Indian fuel costs or travel depends on whether the attacks are confirmed and on how oil markets and airlines respond over the coming weeks."
             },
             "confidence": {
-              "level": "low",
-              "reason": "This rests on one outlet, Al Jazeera, reporting a claim by the Houthis themselves; Saudi confirmation and any damage assessment are not in the report."
+              "level": "medium",
+              "reason": "Al Jazeera and the South China Morning Post report the Saudi interception claim, but the six attacks rest on a Houthi announcement, and the Houthis deny targeting Mecca."
             },
-            "outlets": 1,
+            "outlets": 2,
             "affected": [
               {
                 "group": "Fuel & LPG users",
-                "direction": "unclear",
+                "direction": "up",
                 "what": "fuel price pressure",
-                "effect": "If attacks damage Saudi oil facilities and cut supply, higher crude prices could raise refiners' costs and eventually pump prices in India.",
+                "effect": "If Saudi oil facilities were damaged, higher crude prices could raise Indian refiners' costs, which may eventually feed through to petrol, diesel and LPG prices.",
                 "basis": "inferred"
               },
               {
                 "group": "Gulf & overseas workers and families",
                 "direction": "unclear",
                 "what": "safety and travel",
-                "effect": "Attacks on Saudi airports could disrupt flights and raise safety concerns for Indian workers in Saudi Arabia and for the families who depend on them.",
+                "effect": "Indian workers in Saudi Arabia could face security risks and flight disruptions if attacks on airports and facilities continue, which may worry their families in India.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Travellers & pilgrims",
+                "direction": "down",
+                "what": "flight availability",
+                "effect": "Reported attacks on Saudi airports and a drone near Mecca could disrupt flights and make pilgrimage travel to Saudi Arabia less certain for Indians.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "Saudi authorities confirming or denying the attacks and describing any damage to airports or oil facilities",
-                "why": "It would show whether the Houthi claim reflects real damage that could affect oil supply and air travel.",
+                "what": "Saudi official confirmation or denial of damage to oil facilities and airports",
+                "why": "It would show whether the Houthi claims involve real disruption to oil supply and air travel.",
                 "when": "",
                 "where": "Saudi Press Agency"
               },
               {
-                "what": "Any Indian government advisory for Indians in Saudi Arabia or changes to flights serving Saudi airports",
-                "why": "It would show whether the attacks are affecting the safety and travel of Indians.",
+                "what": "Indian government travel advisories for Indians in Saudi Arabia and for pilgrims",
+                "why": "It would indicate whether Indian authorities see a direct risk to their citizens' safety or travel.",
                 "when": "",
-                "where": "Ministry of External Affairs"
+                "where": "Ministry of External Affairs; Embassy of India, Riyadh"
+              },
+              {
+                "what": "Further talks between Iran and the Mecca pact countries following the Tehran meeting",
+                "why": "Progress or breakdown in these talks would signal whether the hostilities are likely to ease or escalate.",
+                "when": "",
+                "where": ""
               }
             ],
             "context": [
-              "India imports most of its crude oil, and the Gulf is a major source, so disruption to Gulf production or shipping tends to reach Indian fuel costs. Large numbers of Indians also live and work in the Gulf."
+              "India imports most of the crude oil it uses, and Saudi Arabia is one of its largest suppliers, so supply risks in the Gulf affect India's import bill and fuel costs.",
+              "Saudi Arabia hosts a very large community of Indian workers whose remittances support families at home, especially in states such as Kerala.",
+              "Saudi Arabia is the destination for India's Haj and Umrah pilgrims, so security incidents near Mecca directly concern many Indian travellers."
             ],
             "terms": [
               {
-                "term": "Mecca pact countries",
-                "meaning": "The report's name for a group of countries that held talks with Iran in Tehran; the report does not list the members or explain the pact."
+                "term": "Houthi",
+                "meaning": "An Iran-backed armed movement in Yemen that controls much of the country's north and has previously launched drone and missile attacks on Saudi Arabia."
+              },
+              {
+                "term": "Umrah",
+                "meaning": "A Muslim pilgrimage to Mecca that can be performed at any time of year, unlike the annual Haj."
               }
             ],
             "frameworks": {
-              "escalation": {
-                "move": "none",
-                "rung": 6,
-                "current_rung": 6,
-                "previous_rung": null,
-                "development": "Houthi forces claim six attacks on Saudi airports and oil facilities, continuing strikes despite talks between Iran and the Mecca pact countries in Tehran earlier this week.",
-                "evidence": "The war has stood at rung 6 since 12 October, and the claimed attacks hit the same kinds of targets rather than a higher rung. Talks do not count as de-escalation, and the claim is unverified.",
-                "next_signals": [
+              "conflicting": {
+                "disputed": {
+                  "item": "whether a Houthi drone targeted the Mecca area",
+                  "unit": "claim"
+                },
+                "accounts": [
                   {
-                    "rung": 7,
-                    "signal": "A declared large-scale offensive, such as a ground push across the border or open all-out fighting between the Houthis and the Saudi-led coalition."
+                    "outlet": "Al Jazeera",
+                    "value": "Houthi forces claim six attacks on Saudi airports and oil facilities",
+                    "origin": "Houthi forces",
+                    "time": "2026-10-30T00:11"
                   },
                   {
-                    "rung": 5,
-                    "signal": "A ceasefire or halt in strikes on Saudi territory that is announced and reported to be holding."
+                    "outlet": "South China Morning Post",
+                    "value": "Saudi Arabia intercepted and destroyed a Houthi-launched drone near Mecca; the Houthis denied the claim",
+                    "origin": "Saudi Arabia; Houthis",
+                    "time": "Friday (2026-10-30T09:25)"
+                  },
+                  {
+                    "outlet": "Al Jazeera",
+                    "value": "Saudi Arabia reports interception of a Houthi drone targeting Mecca; the Houthis deny targeting the region",
+                    "origin": "Saudi Arabia; Houthis",
+                    "time": "2026-10-30T09:42"
                   }
                 ],
-                "india_channels": [
-                  "oil",
-                  "flights",
-                  "diaspora safety"
+                "agreed": [
+                  "Saudi Arabia says it intercepted a drone that it attributes to the Houthis near Mecca.",
+                  "The Houthis deny targeting the Mecca region.",
+                  "The reports describe escalating hostilities between the Houthis and Saudi Arabia."
                 ],
-                "conflict": "w1f5pudc",
-                "applied": "none",
-                "from": 6
+                "explanations": [
+                  {
+                    "type": "different source",
+                    "note": "The Mecca drone account comes from the Saudi government, while the denial and the claim of six attacks come from the Houthis, who are opposing parties in the conflict."
+                  },
+                  {
+                    "type": "unexplained",
+                    "note": "The reports do not explain how the Houthi claim of six attacks on airports and oil facilities relates to the drone Saudi Arabia says it destroyed near Mecca."
+                  }
+                ],
+                "status": "unresolved"
               }
             }
           },
@@ -134,10 +173,176 @@
               "ogTried": true,
               "descTried": true,
               "image": "https://www.aljazeera.com/wp-content/uploads/2026/07/ap_6a613e7ed9b96-1784757886.jpg?resize=1920%2C1440"
+            },
+            {
+              "source": "scmp",
+              "headline": "Saudi Arabia says Houthis-launched drone destroyed near Mecca, group denies",
+              "url": "https://www.scmp.com/news/world/middle-east/article/3372733/saudi-arabia-says-houthis-launched-drone-destroyed-near-mecca-group-denies",
+              "date": "2026-10-30T09:25:58.000Z",
+              "kind": "hard",
+              "summary": "Saudi Arabia said on Friday it intercepted and destroyed a drone launched by Yemen’s Iran-backed Houthi rebels near Islam’s holiest city, a claim the Houthis denied.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/30/bfd38b4e-ed3c-4a77-bf48-99c96589b6d2_b31ede9f.jpg?itok=9HnXpruP&v=1793352348"
+            },
+            {
+              "source": "aljazeera",
+              "headline": "Saudi Arabia reports interception of Houthi drone targeting Mecca",
+              "url": "https://www.aljazeera.com/news/2026/10/30/saudi-arabia-reports-interception-of-houthi-drone-targeting-mecca",
+              "date": "2026-10-30T09:42:42.000Z",
+              "kind": "hard",
+              "summary": "Houthis deny targeting the region of the Muslim holy city as hostilities continue to escalate.",
+              "summaryV": 3
             }
           ],
           "image": "https://www.aljazeera.com/wp-content/uploads/2026/07/ap_6a613e7ed9b96-1784757886.jpg?resize=1920%2C1440",
           "thread": "tq5ix5r"
+        },
+        {
+          "id": "s1dn9vqt",
+          "headline": "Oil flows are up as Iran war turmoil eases. Why do prices keep rising?",
+          "url": "https://www.aljazeera.com/economy/2026/10/30/oil-flows-are-up-as-iran-war-turmoil-eases-why-do-prices-keep-rising",
+          "source": "aljazeera",
+          "date": "2026-10-30T08:36:11.000Z",
+          "relevance": "medium",
+          "why": "",
+          "implications": [],
+          "reports": [
+            {
+              "source": "aljazeera",
+              "headline": "Oil flows are up as Iran war turmoil eases. Why do prices keep rising?",
+              "url": "https://www.aljazeera.com/economy/2026/10/30/oil-flows-are-up-as-iran-war-turmoil-eases-why-do-prices-keep-rising",
+              "date": "2026-10-30T08:36:11.000Z",
+              "kind": "feature",
+              "summary": "Brent crude prices are up more than 60 percent compared with pre-war levels, despite rebound in supply.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/AP26253657242641-1-1793234091_8cc3e0-1793343640.jpg?resize=1200%2C630&quality=80"
+            }
+          ],
+          "placeTried": true,
+          "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/AP26253657242641-1-1793234091_8cc3e0-1793343640.jpg?resize=1200%2C630&quality=80",
+          "thread": "t1dbdiwl"
+        },
+        {
+          "id": "s1lo0ybp",
+          "headline": "Iran claims four tankers struck mines in Hormuz as strike fears grow after U.S. midterms",
+          "url": "https://www.cnbc.com/2026/10/30/iran-trump-hormuz-oil-middle-east-.html",
+          "source": "cnbc",
+          "date": "2026-10-30T07:12:49.000Z",
+          "relevance": "high",
+          "why": "Iran says four tankers struck mines in the Strait of Hormuz and disputes a U.S. claim that key shipping lanes are clear. If confirmed, tanker traffic that India's energy imports depend on could be disrupted.",
+          "implications": [
+            "Mines, or fear of them, can make shipowners and insurers cautious about entering the strait, which may delay or reroute cargoes bound for Indian ports.",
+            "The headline says fears of strikes are growing after the U.S. midterm elections, so shipping risk may stay elevated while the two sides' accounts conflict."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-30T10:16:09.384Z",
+            "tier": "quick",
+            "primary": "disruption_map",
+            "complement": null,
+            "features": [
+              "disruption",
+              "armed_conflict",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "high",
+              "reason": "The strait is a main route for the oil and gas India imports, so disruption could raise import costs and affect fuel and LPG supply, which are household essentials."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "The effect would depend on how long tanker movements stay hampered and how quickly cargoes already at sea or on order are delayed or repriced."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on one CNBC report of a claim by Iran, which the U.S. disputes, and none of it is independently confirmed."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "fuel and LPG supply costs",
+                "effect": "If tanker traffic through the strait is hampered, India's crude and gas import costs could rise, which may feed through to petrol, diesel and LPG prices.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Importers & traders",
+                "direction": "up",
+                "what": "shipping delays and costs",
+                "effect": "Cautious insurers and rerouted vessels could raise freight and insurance costs and lengthen delivery times for goods moving through the Gulf region.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Independent confirmation of whether four tankers struck mines and whether the key shipping lanes are actually cleared",
+                "why": "It would show whether the Iranian or the U.S. account is correct and whether tanker traffic is really constrained.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "India imports most of its crude oil, and a large share of Gulf oil and gas exports to Asia passes through the Strait of Hormuz, a narrow waterway at the mouth of the Persian Gulf.",
+              "Sea mines are hard to detect and slow to clear, so claims that lanes are safe are usually verified before shipowners and insurers resume normal traffic."
+            ],
+            "terms": [
+              {
+                "term": "Strait of Hormuz",
+                "meaning": "A narrow sea passage between Iran and the Arabian Peninsula through which much of the Gulf region's oil and gas exports travel by tanker."
+              }
+            ],
+            "frameworks": {
+              "disruption_map": {
+                "node": {
+                  "name": "Strait of Hormuz",
+                  "type": "strait",
+                  "status": "unknown",
+                  "as_of": "2026-10-30 07:12"
+                },
+                "cause": {
+                  "text": "Iran claims that four tankers struck mines in the strait, while it disputes a U.S. claim that key shipping lanes have been cleared.",
+                  "status": "claimed"
+                },
+                "flows": [
+                  {
+                    "flow": "cargo",
+                    "india_link": "Tankers are the vessels named in the report. If their passage is delayed, the energy cargoes India imports from the Gulf may be affected.",
+                    "basis": "inferred"
+                  }
+                ],
+                "alternatives": [],
+                "duration": "not reported"
+              }
+            }
+          },
+          "place": {
+            "name": "Strait of Hormuz",
+            "country": "Iran",
+            "lat": 26.6,
+            "lon": 56.3,
+            "involves": [
+              "United States"
+            ]
+          },
+          "reports": [
+            {
+              "source": "cnbc",
+              "headline": "Iran claims four tankers struck mines in Hormuz as strike fears grow after U.S. midterms",
+              "url": "https://www.cnbc.com/2026/10/30/iran-trump-hormuz-oil-middle-east-.html",
+              "date": "2026-10-30T07:12:49.000Z",
+              "kind": "breaking",
+              "summary": "Iran said four tankers struck mines in the Strait of Hormuz, while Tehran disputed a U.S. claim that key shipping lanes had been cleared.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://image.cnbcfm.com/api/v1/image/108484423-1793336204524-gettyimages-2293738583-AA_09092026_2944246.jpeg?v=1793336240&w=1920&h=1080"
+            }
+          ],
+          "image": "https://image.cnbcfm.com/api/v1/image/108484423-1793336204524-gettyimages-2293738583-AA_09092026_2944246.jpeg?v=1793336240&w=1920&h=1080",
+          "thread": "t2ogxay"
         },
         {
           "id": "s16zdv39",
@@ -15594,6 +15799,113 @@
       "name": "Logistics & Shipping",
       "items": [
         {
+          "id": "siemg7p",
+          "headline": "Rescue operations on after Indian helicopter crashes in Himalayan state",
+          "url": "https://www.bbc.co.uk/news/articles/cr93zxyn9eqeo",
+          "source": "bbc",
+          "date": "2026-10-30T10:07:58.000Z",
+          "relevance": "medium",
+          "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/a6da/live/dd357d00-d448-11f1-97f9-27ebf08d99fe.jpg",
+          "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/a6da/live/dd357d00-d448-11f1-97f9-27ebf08d99fe.jpg",
+          "why": "BBC News reports that rescue operations are under way after an Indian helicopter crashed in a Himalayan state. The aircraft reportedly took off from the Badrinath pilgrimage site on Friday afternoon and then lost contact.",
+          "implications": [
+            "Families of those on board, and pilgrims planning journeys to the shrine, will be looking for confirmed information on who was aboard and what happened to them.",
+            "If the cause is linked to terrain or weather, flights serving other remote Himalayan sites could face closer checks or temporary restrictions."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-30T10:17:46.212Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The channel is the safety of passengers on pilgrimage helicopter flights, which is a single travel segment. The number of people aboard and the cause of the crash are not yet reported."
+            },
+            "horizon": {
+              "value": "now",
+              "reason": "Rescue operations are under way, so the first confirmed information on the people aboard is likely within days."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single early BBC News report that uses the word 'reportedly', and casualties, the operator and the cause are all unconfirmed."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Travellers & pilgrims",
+                "direction": "unclear",
+                "what": "safety of pilgrim helicopter flights",
+                "effect": "Pilgrims who use helicopters to reach Badrinath could see flights paused or checked more closely if investigators find a wider safety concern.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Official confirmation of the number of people on board and of any casualties from the rescue teams",
+                "why": "It would establish the scale of the accident, which the early report does not state.",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "Announcement of an inquiry into the cause of the crash and any change to flights from Badrinath",
+                "why": "It would show whether the finding is limited to this flight or affects pilgrimage helicopter services more widely.",
+                "when": "",
+                "where": "Aircraft Accident Investigation Bureau of India"
+              }
+            ],
+            "context": [
+              "Helicopters are commonly used to reach remote Himalayan shrines, where mountain terrain and quickly changing weather make flying difficult. Air accidents in India are normally followed by a formal investigation by the aviation authorities."
+            ],
+            "terms": [],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Helicopter loses contact after take-off",
+                    "detail": "BBC News reports that the aircraft reportedly took off from Badrinath on Friday afternoon and then lost contact, and that it crashed in a Himalayan state.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Rescue operations begin",
+                    "detail": "Rescue operations are under way, so the people aboard and the condition of the aircraft will become clearer as teams reach the site.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Scrutiny of pilgrimage helicopter flights",
+                    "detail": "If investigators identify a cause linked to conditions on the route, authorities could tighten checks on similar flights, which may affect pilgrims who rely on them.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The effect would stay confined to the incident itself if the investigation finds a cause specific to this one flight and no wider change is made to pilgrimage helicopter operations."
+              }
+            }
+          },
+          "place": {
+            "name": "Badrinath, Uttarakhand",
+            "country": "India",
+            "lat": 30.74,
+            "lon": 79.49
+          },
+          "reports": [
+            {
+              "source": "bbc",
+              "headline": "Rescue operations on after Indian helicopter crashes in Himalayan state",
+              "url": "https://www.bbc.co.uk/news/articles/cr93zxyn9eqeo",
+              "date": "2026-10-30T10:07:58.000Z",
+              "kind": "breaking",
+              "summary": "The aircraft reportedly took off from the Hindu pilgrimage site of Badrinath on Friday afternoon before losing contact.",
+              "summaryV": 3,
+              "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/a6da/live/dd357d00-d448-11f1-97f9-27ebf08d99fe.jpg",
+              "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/a6da/live/dd357d00-d448-11f1-97f9-27ebf08d99fe.jpg"
+            }
+          ],
+          "thread": "t12y1rh8"
+        },
+        {
           "id": "sg84zu",
           "headline": "China and Russia are redrawing Arctic trade. Can Europe fight back?",
           "url": "https://www.cnbc.com/2026/10/27/arctic-shipping-china-and-russia-expand-grip-can-europe-fight-back.html",
@@ -19981,6 +20293,238 @@
       "name": "Economy & Trade",
       "items": [
         {
+          "id": "skm6i2m",
+          "headline": "Euro zone economy slows to 0.4% growth in Q3 as crisis-hit France contracts",
+          "url": "https://www.cnbc.com/2026/10/30/euro-zone-gdp-france.html",
+          "source": "cnbc",
+          "date": "2026-10-30T10:09:07.000Z",
+          "relevance": "medium",
+          "why": "CNBC reports that euro zone economic growth slowed to 0.4% in the third quarter, with France, described as crisis-hit, contracting. The euro zone is a large market for Indian exports, so weaker demand there could matter.",
+          "implications": [
+            "Slower growth in European economies can reduce spending on imported goods and services, which could soften orders for Indian exporters that sell into the region.",
+            "A contraction in one of the bloc's largest economies could also add to pressure on European policymakers, which could influence currency and financial market conditions that Indian firms watch."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-30T10:17:46.212Z",
+            "tier": "quick",
+            "primary": "decoder",
+            "complement": null,
+            "features": [
+              "scheduled"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "The reports describe no direct mechanism for India. Any effect would be indirect, through European demand for Indian exports, and growth of 0.4% is still positive."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Changes in European demand usually show up in Indian export orders and shipments over several months rather than immediately."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single CNBC headline with no summary, so the statistical source, the basis of the 0.4% figure and the size of the French contraction are not stated."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Large exporters",
+                "direction": "unclear",
+                "what": "European demand for exports",
+                "effect": "Indian exporters selling to euro zone customers could face softer demand if slower growth, especially in France, reduces European spending on imports.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Further detail on the third-quarter estimate, including the size of the French contraction and other countries' results",
+                "why": "It would show how broad the slowdown is across the euro zone, which the headline alone does not reveal.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "The euro zone is the group of European Union countries that use the euro, and it is one of the main destinations for Indian goods and services. Changes in its growth usually reach India through export demand."
+            ],
+            "terms": [
+              {
+                "term": "euro zone",
+                "meaning": "The group of European Union countries that use the euro as their currency, which together form one of the world's largest economic areas."
+              }
+            ],
+            "frameworks": {
+              "decoder": {
+                "kind": "release",
+                "headline": {
+                  "label": "Euro zone economic growth",
+                  "value": 0.4,
+                  "unit": "%",
+                  "period": "Q3",
+                  "previous": null,
+                  "previousLabel": "Previous quarter figure not given in the report",
+                  "from": "CNBC"
+                },
+                "comparisons": [],
+                "drivers": [
+                  {
+                    "name": "France contracting",
+                    "direction": "down",
+                    "how": "CNBC's headline says France, described as crisis-hit, contracted in the quarter, which pulled down the euro zone's overall growth."
+                  }
+                ],
+                "decision": null
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "cnbc",
+              "headline": "Euro zone economy slows to 0.4% growth in Q3 as crisis-hit France contracts",
+              "url": "https://www.cnbc.com/2026/10/30/euro-zone-gdp-france.html",
+              "date": "2026-10-30T10:09:07.000Z",
+              "kind": "hard",
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://image.cnbcfm.com/api/v1/image/108481335-17932881682026-10-29t153441z_649909291_rc2zcoadjax6_rtrmadp_0_global-forex.jpeg?v=1793288201&w=1920&h=1080"
+            }
+          ],
+          "placeTried": true,
+          "image": "https://image.cnbcfm.com/api/v1/image/108481335-17932881682026-10-29t153441z_649909291_rc2zcoadjax6_rtrmadp_0_global-forex.jpeg?v=1793288201&w=1920&h=1080",
+          "thread": "t1rn1bq5"
+        },
+        {
+          "id": "s1merzi7",
+          "headline": "Bank of Japan is expected to hold rates this week — but stay hawkish: CNBC survey",
+          "url": "https://www.cnbc.com/2026/10/27/boj-october-meeting-rate-cnbc-survey.html",
+          "source": "cnbc",
+          "date": "2026-10-27T00:17:44.000Z",
+          "relevance": "medium",
+          "why": "A CNBC survey says the Bank of Japan is expected to hold interest rates this week but to prepare for a rate rise in December or January. Any shift could reach India through global capital flows and the yen.",
+          "implications": [
+            "If Japanese interest rates rise, borrowing in yen becomes costlier for global investors. Some money that was borrowed cheaply in Japan and invested in emerging markets, including India, could then be withdrawn.",
+            "A stronger yen could change the cost of Japanese goods and of trade settled in yen. This would matter most for Indian importers and traders who deal with Japanese suppliers or buyers."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-27T00:38:18.110Z",
+            "tier": "quick",
+            "primary": "decoder",
+            "complement": null,
+            "features": [
+              "scheduled",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "The reports describe no direct channel to India. Any effect would be indirect, through yen movements and global investment flows, and the central bank is only expected to hold rates this week."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "The survey points to a possible rate rise in December or January, so any effect on capital flows or the yen would build up after that."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single CNBC survey of respondents, with no on-record statement from the Bank of Japan, so the expected path is unconfirmed."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "yen-linked trade costs",
+                "effect": "A change in Japanese interest rates could move the yen, which may alter the cost of trade with Japan for Indian importers and exporters.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "The Bank of Japan's rate decision and policy statement this week, to see whether it signals a rate rise",
+                "why": "The wording would show whether the central bank is preparing the ground for a hike in December or January.",
+                "when": "this week",
+                "where": "Bank of Japan"
+              },
+              {
+                "what": "Bank of Japan policy meetings in December and January, where the survey respondents expect a rate rise",
+                "why": "A rise would confirm the tightening path that could affect the yen and global capital flows.",
+                "when": "December 2026 or January 2027",
+                "where": "Bank of Japan"
+              }
+            ],
+            "context": [
+              "Japan has kept interest rates very low for many years, which made yen loans a cheap source of funds for global investors. Some of that money has historically flowed into higher-yielding markets such as India."
+            ],
+            "terms": [
+              {
+                "term": "hawkish",
+                "meaning": "A central bank is called hawkish when it leans towards raising interest rates, usually because it is worried about inflation."
+              }
+            ],
+            "frameworks": {
+              "decoder": {
+                "kind": "decision",
+                "headline": {
+                  "label": "Bank of Japan policy rate decision expected this week: hold",
+                  "value": null,
+                  "unit": "",
+                  "period": "This week, as of 27 October 2026",
+                  "previous": null,
+                  "previousLabel": "Not stated in the reports",
+                  "from": "CNBC"
+                },
+                "comparisons": [],
+                "drivers": [
+                  {
+                    "name": "Rising inflation",
+                    "direction": "up",
+                    "how": "The CNBC survey says inflation continues to rise, which supports the expectation that the central bank will move towards a rate hike."
+                  },
+                  {
+                    "name": "Rising wages",
+                    "direction": "up",
+                    "how": "The CNBC survey says wages continue to rise, which adds to the expectation of a rate hike in December or January."
+                  }
+                ],
+                "decision": {
+                  "action": "hold",
+                  "size": "No change expected this week",
+                  "stance": "Survey respondents expect the Bank of Japan to hold rates now but to set the stage for a hike in December or January, because inflation and wages continue to rise."
+                }
+              }
+            }
+          },
+          "place": {
+            "name": "Tokyo",
+            "country": "Japan",
+            "lat": 35.68,
+            "lon": 139.69
+          },
+          "reports": [
+            {
+              "source": "cnbc",
+              "headline": "Bank of Japan is expected to hold rates this week — but stay hawkish: CNBC survey",
+              "url": "https://www.cnbc.com/2026/10/27/boj-october-meeting-rate-cnbc-survey.html",
+              "date": "2026-10-27T00:17:44.000Z",
+              "kind": "hard",
+              "summary": "All survey respondents said they expect the BOJ to set the stage for a rate hike in December or January, as inflation and wages continue to rise.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://image.cnbcfm.com/api/v1/image/108154240-108154240-1748998400275-gettyimages-2216643487-JAPAN_BOJ.jpeg?v=1748998448&w=1920&h=1080"
+            },
+            {
+              "source": "cnbc",
+              "headline": "BOJ holds rates as underlying inflation aligns with 2% target for first time since 2013",
+              "url": "https://www.cnbc.com/2026/10/30/boj-inflation-target-rates.html",
+              "date": "2026-10-30T04:19:38.000Z",
+              "kind": "hard",
+              "summary": "The BOJ declared that its underlying inflation target of 2% has been met, the first time the central bank has done so since it set the target in 2013.",
+              "summaryV": 3
+            }
+          ],
+          "image": "https://image.cnbcfm.com/api/v1/image/108154240-108154240-1748998400275-gettyimages-2216643487-JAPAN_BOJ.jpeg?v=1748998448&w=1920&h=1080",
+          "thread": "t9q6fz4"
+        },
+        {
           "id": "s3j1ia6",
           "headline": "ECB head Lagarde resigns amid mounting economic, political challenges for Europe",
           "url": "https://www.scmp.com/news/world/europe/article/3372617/ecb-head-lagarde-resigns-amid-mounting-economic-political-challenges-europe",
@@ -23015,129 +23559,6 @@
             }
           ],
           "thread": "t1kuf26e"
-        },
-        {
-          "id": "s1merzi7",
-          "headline": "Bank of Japan is expected to hold rates this week — but stay hawkish: CNBC survey",
-          "url": "https://www.cnbc.com/2026/10/27/boj-october-meeting-rate-cnbc-survey.html",
-          "source": "cnbc",
-          "date": "2026-10-27T00:17:44.000Z",
-          "relevance": "medium",
-          "why": "A CNBC survey says the Bank of Japan is expected to hold interest rates this week but to prepare for a rate rise in December or January. Any shift could reach India through global capital flows and the yen.",
-          "implications": [
-            "If Japanese interest rates rise, borrowing in yen becomes costlier for global investors. Some money that was borrowed cheaply in Japan and invested in emerging markets, including India, could then be withdrawn.",
-            "A stronger yen could change the cost of Japanese goods and of trade settled in yen. This would matter most for Indian importers and traders who deal with Japanese suppliers or buyers."
-          ],
-          "analysis": {
-            "v": 3,
-            "at": "2026-10-27T00:38:18.110Z",
-            "tier": "quick",
-            "primary": "decoder",
-            "complement": null,
-            "features": [
-              "scheduled",
-              "pending_outcome"
-            ],
-            "exposure": {
-              "level": "low",
-              "reason": "The reports describe no direct channel to India. Any effect would be indirect, through yen movements and global investment flows, and the central bank is only expected to hold rates this week."
-            },
-            "horizon": {
-              "value": "months",
-              "reason": "The survey points to a possible rate rise in December or January, so any effect on capital flows or the yen would build up after that."
-            },
-            "confidence": {
-              "level": "low",
-              "reason": "This rests on a single CNBC survey of respondents, with no on-record statement from the Bank of Japan, so the expected path is unconfirmed."
-            },
-            "outlets": 1,
-            "affected": [
-              {
-                "group": "Importers & traders",
-                "direction": "unclear",
-                "what": "yen-linked trade costs",
-                "effect": "A change in Japanese interest rates could move the yen, which may alter the cost of trade with Japan for Indian importers and exporters.",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "The Bank of Japan's rate decision and policy statement this week, to see whether it signals a rate rise",
-                "why": "The wording would show whether the central bank is preparing the ground for a hike in December or January.",
-                "when": "this week",
-                "where": "Bank of Japan"
-              },
-              {
-                "what": "Bank of Japan policy meetings in December and January, where the survey respondents expect a rate rise",
-                "why": "A rise would confirm the tightening path that could affect the yen and global capital flows.",
-                "when": "December 2026 or January 2027",
-                "where": "Bank of Japan"
-              }
-            ],
-            "context": [
-              "Japan has kept interest rates very low for many years, which made yen loans a cheap source of funds for global investors. Some of that money has historically flowed into higher-yielding markets such as India."
-            ],
-            "terms": [
-              {
-                "term": "hawkish",
-                "meaning": "A central bank is called hawkish when it leans towards raising interest rates, usually because it is worried about inflation."
-              }
-            ],
-            "frameworks": {
-              "decoder": {
-                "kind": "decision",
-                "headline": {
-                  "label": "Bank of Japan policy rate decision expected this week: hold",
-                  "value": null,
-                  "unit": "",
-                  "period": "This week, as of 27 October 2026",
-                  "previous": null,
-                  "previousLabel": "Not stated in the reports",
-                  "from": "CNBC"
-                },
-                "comparisons": [],
-                "drivers": [
-                  {
-                    "name": "Rising inflation",
-                    "direction": "up",
-                    "how": "The CNBC survey says inflation continues to rise, which supports the expectation that the central bank will move towards a rate hike."
-                  },
-                  {
-                    "name": "Rising wages",
-                    "direction": "up",
-                    "how": "The CNBC survey says wages continue to rise, which adds to the expectation of a rate hike in December or January."
-                  }
-                ],
-                "decision": {
-                  "action": "hold",
-                  "size": "No change expected this week",
-                  "stance": "Survey respondents expect the Bank of Japan to hold rates now but to set the stage for a hike in December or January, because inflation and wages continue to rise."
-                }
-              }
-            }
-          },
-          "place": {
-            "name": "Tokyo",
-            "country": "Japan",
-            "lat": 35.68,
-            "lon": 139.69
-          },
-          "reports": [
-            {
-              "source": "cnbc",
-              "headline": "Bank of Japan is expected to hold rates this week — but stay hawkish: CNBC survey",
-              "url": "https://www.cnbc.com/2026/10/27/boj-october-meeting-rate-cnbc-survey.html",
-              "date": "2026-10-27T00:17:44.000Z",
-              "kind": "hard",
-              "summary": "All survey respondents said they expect the BOJ to set the stage for a rate hike in December or January, as inflation and wages continue to rise.",
-              "summaryV": 3,
-              "ogTried": true,
-              "descTried": true,
-              "image": "https://image.cnbcfm.com/api/v1/image/108154240-108154240-1748998400275-gettyimages-2216643487-JAPAN_BOJ.jpeg?v=1748998448&w=1920&h=1080"
-            }
-          ],
-          "image": "https://image.cnbcfm.com/api/v1/image/108154240-108154240-1748998400275-gettyimages-2216643487-JAPAN_BOJ.jpeg?v=1748998448&w=1920&h=1080",
-          "thread": "t9q6fz4"
         },
         {
           "id": "s1co232q",
@@ -29048,6 +29469,121 @@
       "name": "Technology",
       "items": [
         {
+          "id": "s1n67wlp",
+          "headline": "Indian AI infrastructure firm reportedly seeks to raise $3 billion of debt to buy Nvidia's next-generation chips",
+          "url": "https://www.cnbc.com/2026/10/30/nvidia-india-ai-chips-computing.html",
+          "source": "cnbc",
+          "date": "2026-10-30T08:19:14.000Z",
+          "relevance": "medium",
+          "why": "An Indian AI infrastructure firm, AM Intelligence, is reportedly seeking $3 billion of debt to buy Nvidia's next-generation Rubin chips and build 400 MW of computing capacity within two years. This could expand AI computing available in India.",
+          "implications": [
+            "Because the plan is to be financed with debt, it depends on lenders agreeing to terms, so the size and timeline of the capacity could change if the financing is not completed.",
+            "If built, more AI computing located in India could give Indian companies and developers local access to advanced chips, which may reduce their reliance on overseas computing providers."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-30T10:16:41.983Z",
+            "tier": "quick",
+            "primary": "winners_losers",
+            "complement": null,
+            "features": [
+              "allocation",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The channel is the Indian technology and AI services industry, which could gain access to more domestic computing power. It is not a household essential, and the plan is still only reported."
+            },
+            "horizon": {
+              "value": "years",
+              "reason": "The company's stated plan is to set up the capacity within two years, so any effect on users in India would come only after it is built."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single outlet, CNBC, using the word 'reportedly', with no on-record company or lender confirmation of the debt raise or the chip purchase."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "IT & services workers",
+                "direction": "up",
+                "what": "AI computing access",
+                "effect": "More AI computing capacity in India could give technology firms and their staff local access to advanced chips for building and running AI services.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "advanced chip imports",
+                "effect": "Buying Nvidia's chips for a 400 MW build could involve large imports of computing hardware, although the report does not describe how the chips would be supplied.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Confirmation from AM Intelligence or its lenders that the $3 billion debt has been raised and the chip purchase agreed",
+                "why": "It would show whether the reported plan is moving from intention to funded commitment.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "Training and running large AI models needs big clusters of specialised chips housed in data centres, and the capacity of such facilities is commonly measured by the electrical power they can draw.",
+              "Indian companies have often relied on overseas cloud providers and imported chips for large-scale AI computing."
+            ],
+            "terms": [
+              {
+                "term": "graphics processing units",
+                "meaning": "Graphics processing units (GPUs) are specialised chips that perform many calculations at once, which makes them the main hardware for training and running AI models."
+              }
+            ],
+            "frameworks": {
+              "winners_losers": {
+                "groups": [
+                  {
+                    "group": "IT & services workers",
+                    "direction": "gain",
+                    "directness": "indirect",
+                    "mechanism": "If the capacity is built, Indian technology firms could use locally hosted advanced chips for AI work, which may support AI-related roles in India."
+                  },
+                  {
+                    "group": "Importers & traders",
+                    "direction": "unclear",
+                    "directness": "indirect",
+                    "mechanism": "A large purchase of Nvidia's chips could add to imports of computing hardware, but the report does not say how the chips would be sourced."
+                  }
+                ],
+                "not_affected": "Power consumers are not shown to be affected, because the report describes the 400 MW only as computing capacity and says nothing about grid supply or electricity tariffs."
+              }
+            }
+          },
+          "place": {
+            "name": "New Delhi",
+            "country": "India",
+            "lat": 28.61,
+            "lon": 77.21,
+            "involves": [
+              "United States"
+            ]
+          },
+          "reports": [
+            {
+              "source": "cnbc",
+              "headline": "Indian AI infrastructure firm reportedly seeks to raise $3 billion of debt to buy Nvidia's next-generation chips",
+              "url": "https://www.cnbc.com/2026/10/30/nvidia-india-ai-chips-computing.html",
+              "date": "2026-10-30T08:19:14.000Z",
+              "kind": "hard",
+              "summary": "Within two years, AM Intelligence plans to set up 400 MW of compute capacity using Nvidia's Rubin graphics processing units.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://image.cnbcfm.com/api/v1/image/108441791-1792586576774-gettyimages-2300714257-GERMANY_NVIDIA.jpeg?v=1792586602&w=1920&h=1080"
+            }
+          ],
+          "image": "https://image.cnbcfm.com/api/v1/image/108441791-1792586576774-gettyimages-2300714257-GERMANY_NVIDIA.jpeg?v=1792586602&w=1920&h=1080",
+          "thread": "tt1woy1"
+        },
+        {
           "id": "s1qnkhzd",
           "headline": "Singapore pushes for quick action on PHP security flaws as hackers prowl",
           "url": "https://www.scmp.com/news/asia/southeast-asia/article/3371820/singapore-pushes-quick-action-php-security-flaws-hackers-prowl",
@@ -34220,6 +34756,134 @@
       "id": "governance",
       "name": "Policy & Governance",
       "items": [
+        {
+          "id": "s1g0s1kl",
+          "headline": "Asian scientists are looking to South Korea as it becomes harder to stay in the US",
+          "url": "https://www.scmp.com/news/china/science/article/3372506/asian-scientists-are-looking-south-korea-it-becomes-harder-stay-us",
+          "source": "scmp",
+          "date": "2026-10-30T10:00:06.000Z",
+          "relevance": "medium",
+          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/29/f64e9e8e-ccf2-4939-9e45-048c983ae205_1f70352e.jpg?itok=5gWS6qTn&v=1793242255",
+          "why": "",
+          "implications": [],
+          "place": {
+            "name": "Seoul",
+            "country": "South Korea",
+            "lat": 37.57,
+            "lon": 126.98,
+            "involves": [
+              "United States"
+            ]
+          },
+          "reports": [
+            {
+              "source": "scmp",
+              "headline": "Asian scientists are looking to South Korea as it becomes harder to stay in the US",
+              "url": "https://www.scmp.com/news/china/science/article/3372506/asian-scientists-are-looking-south-korea-it-becomes-harder-stay-us",
+              "date": "2026-10-30T10:00:06.000Z",
+              "kind": "feature",
+              "summary": "As tightening US visa restrictions and geopolitics lock out Asian researchers from Western institutions, South Korea is emerging as a new academic sanctuary for top talent.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/29/f64e9e8e-ccf2-4939-9e45-048c983ae205_1f70352e.jpg?itok=5gWS6qTn&v=1793242255"
+            }
+          ],
+          "thread": "t1glzf0p"
+        },
+        {
+          "id": "s1mxd4vg",
+          "headline": "India's PM cracks down on journalists 'to stamp out the protests'",
+          "url": "https://www.abc.net.au/news/2026-10-30/journalists-accuse-indian-pm-modi-of-crackdown-over-protests/107313104",
+          "source": "abc",
+          "date": "2026-10-30T04:06:13.000Z",
+          "relevance": "medium",
+          "image": "https://live-production.wcms.abc-cdn.net.au/73afa64b94f5f33fab55fc61d555efc3?impolicy=wcms_crop_resize&cropH=968&cropW=1721&xPos=199&yPos=208&width=862&height=485",
+          "why": "ABC News reports that more than 40 journalists were detained during two days of protests in India, according to a media watchdog. The reports present this as a crackdown by the Prime Minister that builds on longer-running pressure on the press.",
+          "implications": [
+            "Journalists and news organisations are the most directly affected, because detention during protests can deter reporters from covering demonstrations and make it harder for them to gather information on the ground.",
+            "If coverage is curtailed, readers and viewers across India may have to rely more heavily on official accounts of the protests, which could narrow public debate about what is happening."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-30T10:15:17.583Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "medium",
+              "reason": "The effect falls mainly on one industry, journalism, and on public access to independent reporting. The reports describe no direct economic channel for households, so exposure is not high."
+            },
+            "horizon": {
+              "value": "now",
+              "reason": "The detentions have already taken place during the two days of protests, so any effect on reporting and public information is immediate."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on one outlet, ABC News, relaying a count from a media watchdog. No government account of the detentions is included in the reports."
+            },
+            "outlets": 1,
+            "affected": [],
+            "watch": [
+              {
+                "what": "Whether the detained journalists are released without charge or face formal legal proceedings",
+                "why": "It would show whether the detentions were short-term handling of the protests or the start of lasting legal pressure on the press.",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "Any updated count of detained journalists from the media watchdog cited in the report",
+                "why": "A changed figure would show whether the crackdown on reporters is widening or easing as the protests continue.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "India's constitution protects freedom of speech and expression, including for the press, but allows reasonable restrictions. Police also have wide powers to detain people during protests, so the legal basis for any detention matters."
+            ],
+            "terms": [],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Journalists detained during protests",
+                    "detail": "A media watchdog reports that more than 40 journalists were detained over two days of protests. ABC News describes this as the Prime Minister cracking down in order to stamp out the protests.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Part of longer pressure on the press",
+                    "detail": "ABC News notes that government pressure on press freedom dates back much further than these protests. The detentions therefore sit within a longer pattern rather than being a single isolated event.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Less independent coverage reaches the public",
+                    "detail": "Reporters who fear detention may cover protests less freely, which could leave audiences in India relying more on official accounts and with less independent information.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The detained journalists are released promptly and reporters can continue to cover the protests without further detentions, so independent coverage is not reduced."
+              }
+            }
+          },
+          "place": {
+            "name": "New Delhi",
+            "country": "India",
+            "lat": 28.61,
+            "lon": 77.21
+          },
+          "reports": [
+            {
+              "source": "abc",
+              "headline": "India's PM cracks down on journalists 'to stamp out the protests'",
+              "url": "https://www.abc.net.au/news/2026-10-30/journalists-accuse-indian-pm-modi-of-crackdown-over-protests/107313104",
+              "date": "2026-10-30T04:06:13.000Z",
+              "kind": "hard",
+              "summary": "More than 40 journalists were detained during two days of protests, a media watchdog reports, but government pressure on press freedom dates back much further.",
+              "summaryV": 3,
+              "image": "https://live-production.wcms.abc-cdn.net.au/73afa64b94f5f33fab55fc61d555efc3?impolicy=wcms_crop_resize&cropH=968&cropW=1721&xPos=199&yPos=208&width=862&height=485"
+            }
+          ],
+          "thread": "t1ya4ss"
+        },
         {
           "id": "s1sar3i1",
           "headline": "Japan and US strike deal on missile assembly as Tokyo expands long-range arsenal",
@@ -41889,24 +42553,24 @@
     },
     "places": {
       "labelled": 0,
-      "none": 0,
+      "none": 2,
       "waiting": 0
     },
-    "analysed": 121,
-    "added": 2,
-    "merged": 5,
-    "rejected": 114,
+    "analysed": 170,
+    "added": 7,
+    "merged": 3,
+    "rejected": 160,
     "failedBatches": 0,
     "feeds": {
       "bbc": {
         "feedsOk": 6,
         "feedsFailed": 0,
-        "items": 150
+        "items": 157
       },
       "guardian": {
         "feedsOk": 7,
         "feedsFailed": 0,
-        "items": 201
+        "items": 186
       },
       "npr": {
         "feedsOk": 4,
@@ -41916,7 +42580,7 @@
       "aljazeera": {
         "feedsOk": 1,
         "feedsFailed": 0,
-        "items": 18
+        "items": 14
       },
       "mercopress": {
         "feedsOk": 3,
@@ -41931,17 +42595,17 @@
       "nyt": {
         "feedsOk": 5,
         "feedsFailed": 0,
-        "items": 172
+        "items": 174
       },
       "cnbc": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 89
+        "items": 90
       },
       "cbs": {
         "feedsOk": 2,
         "feedsFailed": 0,
-        "items": 44
+        "items": 43
       },
       "dw": {
         "feedsOk": 3,
@@ -41951,7 +42615,7 @@
       "france24": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 59
+        "items": 65
       },
       "africanews": {
         "feedsOk": 1,
@@ -41961,22 +42625,22 @@
       "scmp": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 141
+        "items": 139
       }
     },
     "shareImages": {
-      "tried": 1,
-      "found": 1,
+      "tried": 4,
+      "found": 4,
       "summaries": 0
     },
     "threads": {
-      "assigned": 2,
-      "created": 0,
+      "assigned": 7,
+      "created": 2,
       "failedBatches": 0
     },
     "summaries": {
-      "written": 2,
-      "due": 2
+      "written": 4,
+      "due": 4
     },
     "kinds": {
       "labelled": 0,
@@ -41984,71 +42648,54 @@
       "failedBatches": 0
     },
     "frames": {
-      "done": 2,
+      "done": 1,
       "waiting": 2,
       "failedBatches": 0
     },
     "stats": {
-      "searched": 1,
+      "searched": 0,
       "found": 0,
       "reused": 0,
-      "none": 1,
+      "none": 0,
       "failed": 0,
       "proposed": 0,
       "droppedPoints": 0,
       "pagesFetched": 0,
-      "samples": [
-        {
-          "headline": "ECB head Lagarde resigns amid mounting economic, political challenges for Europe",
-          "result": "nothing",
-          "proposed": 0,
-          "checked": 0,
-          "pagesFetched": 0
-        }
-      ]
+      "samples": []
     },
     "models": {
       "filter": {
         "model": "claude-haiku-5-5",
-        "calls": 10,
-        "inputTokens": 39693,
-        "outputTokens": 16998,
-        "cost": 0.0125
+        "calls": 13,
+        "inputTokens": 53749,
+        "outputTokens": 25372,
+        "cost": 0.0181
       },
       "analysis_quick": {
         "model": "claude-sonnet-5-5",
-        "calls": 3,
-        "inputTokens": 8533,
-        "outputTokens": 5508,
-        "cost": 0.0721
-      },
-      "stats": {
-        "model": "claude-sonnet-5-5",
-        "calls": 1,
-        "inputTokens": 4669,
-        "outputTokens": 194,
-        "searches": 0,
-        "fetches": 0,
-        "cost": 0.0113
+        "calls": 5,
+        "inputTokens": 13874,
+        "outputTokens": 12904,
+        "cost": 0.1568
       },
       "analysis": {
         "model": "claude-opus-5-5",
         "calls": 1,
-        "inputTokens": 4879,
-        "outputTokens": 8716,
-        "cost": 0.1938
+        "inputTokens": 3457,
+        "outputTokens": 3678,
+        "cost": 0.0874
       },
       "threads": {
         "model": "claude-sonnet-5-5",
-        "calls": 3,
-        "inputTokens": 10795,
-        "outputTokens": 1302,
-        "cost": 0.0345
+        "calls": 5,
+        "inputTokens": 14565,
+        "outputTokens": 1963,
+        "cost": 0.0488
       }
     },
     "spend": {
-      "thisDesk": 0.3243,
-      "today": 1.5965,
+      "thisDesk": 0.311,
+      "today": 2.0655,
       "cap": 6
     }
   },
