@@ -2,7 +2,7 @@
   "schema": 4,
   "region": "India",
   "since": "2026-10-02",
-  "updatedAt": "2026-10-30T18:11:22.851Z",
+  "updatedAt": "2026-10-30T22:33:31.868Z",
   "sectors": [
     {
       "id": "energy",
@@ -15,15 +15,17 @@
           "source": "cbs",
           "date": "2026-10-30T17:27:48.000Z",
           "relevance": "medium",
-          "why": "President Trump predicts the war with Iran will end soon but gives no details, while Qatari mediators return to Tehran to push for a deal. Any settlement could affect Gulf oil flows and Indians living in the Gulf.",
+          "why": "Qatari mediators have returned to Tehran to push for a deal to end the US–Iran war, and Trump predicts it will end soon, but no agreement is reported; India's oil supplies and Gulf workers remain exposed to the continuing conflict.",
           "implications": [
-            "A deal that halted Iranian attacks and reopened the Strait of Hormuz could ease pressure on oil supplies, which India depends on, but the reports describe no agreement yet.",
-            "Indian families with relatives working in Gulf states would be affected by any change in the security situation, so mediation outcomes matter beyond energy markets."
+            "Trump offered no details to support his prediction, so the reports give no evidence yet that Iranian attacks on Gulf states or disruption of the Strait of Hormuz have stopped.",
+            "Pakistan's military spokesman warned of powerful spoilers who believe the conflict serves them, suggesting mediation could stall even with several countries involved.",
+            "If a deal reopens the Strait of Hormuz, oil and gas shipments to India could flow more freely, which may ease pressure on fuel and liquefied petroleum gas (LPG) costs.",
+            "Until fighting actually stops, Indian workers and families in Gulf states and travellers using Gulf airspace remain exposed to attacks on third countries."
           ],
           "analysis": {
             "v": 3,
-            "at": "2026-10-30T18:10:02.599Z",
-            "tier": "quick",
+            "at": "2026-10-30T22:33:31.845Z",
+            "tier": "standard",
             "primary": "escalation",
             "complement": null,
             "features": [
@@ -31,69 +33,98 @@
               "pending_outcome"
             ],
             "exposure": {
-              "level": "medium",
-              "reason": "The story reaches India through oil supply routes and Gulf diaspora safety, but it reports only a prediction and mediation efforts, with no agreed deal or change on the ground."
+              "level": "high",
+              "reason": "The war touches India's crude oil and LPG supplies through the Strait of Hormuz and the safety of Indians working in Gulf states, both household-level concerns."
             },
             "horizon": {
               "value": "weeks",
-              "reason": "Mr Trump gave no timeline, so any effect on India depends on a deal actually being agreed and fighting and shipping disruption actually easing."
+              "reason": "Any relief depends on whether the Qatari-led mediation produces a deal, and no timetable for an agreement is reported."
             },
             "confidence": {
               "level": "medium",
-              "reason": "This rests on one outlet, CBS News, quoting President Trump on the record, but he gave no details and the Qatari mediation has not yet produced anything confirmed."
+              "reason": "CBS News and Al Jazeera report the mediation, but the optimism rests on statements by Trump and Pakistan's military, and no deal is confirmed."
             },
-            "outlets": 1,
+            "outlets": 2,
             "affected": [
               {
                 "group": "Fuel & LPG users",
                 "direction": "unclear",
-                "what": "fuel supply and prices",
-                "effect": "If a deal reopens the Strait of Hormuz, crude supply to India could improve and ease fuel cost pressure, but nothing in the reports confirms this.",
+                "what": "fuel and LPG supply costs",
+                "effect": "A deal that reopens the Strait of Hormuz could ease supply pressure on crude and LPG imports, while failed talks would keep costs exposed to disruption.",
                 "basis": "inferred"
               },
               {
                 "group": "Gulf & overseas workers and families",
                 "direction": "unclear",
-                "what": "safety in Gulf states",
-                "effect": "A successful deal could reduce the risk from Iranian attacks on Gulf countries, where many Indians work, but no agreement has been reported.",
+                "what": "safety and remittances",
+                "effect": "Indian workers in Gulf states remain exposed to Iranian attacks on third countries until fighting stops, which could also affect remittances to families in India.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Travellers & pilgrims",
+                "direction": "unclear",
+                "what": "flight routes and availability",
+                "effect": "Continued conflict could keep airspace over parts of the Gulf restricted, affecting flights between India and the region.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "Whether the Qatari mediators in Tehran produce an announced agreement or ceasefire between the United States and Iran",
-                "why": "A confirmed ceasefire would be the first reported de-escalation, unlike the present prediction without details.",
+                "what": "Outcome of the Qatari mediators' talks in Tehran on a deal to end the war",
+                "why": "An agreed deal would be the first concrete step towards ending attacks and reopening shipping routes.",
+                "when": "",
+                "where": "Qatar Ministry of Foreign Affairs"
+              },
+              {
+                "what": "Reports that Iranian attacks on Gulf states have stopped and the Strait of Hormuz has reopened",
+                "why": "This would show an actual de-escalation affecting India's oil supplies and the safety of Indians in the Gulf.",
                 "when": "",
                 "where": ""
               }
             ],
             "context": [
-              "India imports most of its crude oil, and a large share of world oil and gas shipments passes through the Strait of Hormuz. Disruption there therefore tends to raise costs for Indian refiners and consumers."
+              "India imports most of its crude oil, and a large share of its crude and liquefied petroleum gas imports from the Gulf passes through the Strait of Hormuz.",
+              "Millions of Indians live and work in Gulf Cooperation Council states, and their remittances are an important source of income for many Indian households, particularly in states such as Kerala.",
+              "Mediated talks in wars of this kind often run alongside continued fighting, and announcements of progress do not by themselves change conditions on the ground."
             ],
-            "terms": [],
+            "terms": [
+              {
+                "term": "Strait of Hormuz",
+                "meaning": "A narrow sea passage between Iran and Oman through which a large share of the world's seaborne oil and gas exports from the Gulf pass."
+              },
+              {
+                "term": "Gulf Cooperation Council",
+                "meaning": "A regional grouping of six Gulf Arab states, including Saudi Arabia, the United Arab Emirates and Qatar."
+              }
+            ],
             "frameworks": {
               "escalation": {
                 "move": "none",
                 "rung": 6,
                 "current_rung": 6,
                 "previous_rung": null,
-                "development": "President Trump predicted the war will end soon without giving details, while Qatari mediators returned to Tehran to push for a deal.",
-                "evidence": "The reports describe a prediction and mediation efforts only. No ceasefire, withdrawal or halt in fighting is reported, so the war stays at the level of strikes on critical infrastructure or third countries.",
+                "development": "This story adds renewed mediation, with Qatari mediators returning to Tehran to push for a deal, Trump predicting the war will end soon and Pakistan's army expressing cautious optimism.",
+                "evidence": "The reports describe talks and statements only, which do not move the war down; no ceasefire, withdrawal or halt to Iranian attacks on Gulf states or the Strait of Hormuz is reported.",
                 "next_signals": [
                   {
-                    "rung": 5,
-                    "signal": "A ceasefire is announced and takes effect, with Iranian attacks on Gulf states stopping and shipping through the Strait of Hormuz resuming."
+                    "rung": 7,
+                    "signal": "Reports of a full-scale war, such as a ground invasion or all-out military campaign between the United States and Iran, would show a move to the highest rung."
                   },
                   {
-                    "rung": 7,
-                    "signal": "The United States and Iran openly commit full national forces to direct, sustained combat beyond the current strikes."
+                    "rung": 5,
+                    "signal": "Reports that Iranian attacks on Gulf states have stopped and the Strait of Hormuz has reopened, while US–Iran strikes continue, would show a move down to sustained strikes."
+                  },
+                  {
+                    "rung": 3,
+                    "signal": "A ceasefire in force with fighting reported to have stopped, leaving only military deployments and posturing, would show a move well down the ladder."
                   }
                 ],
                 "india_channels": [
                   "oil",
                   "shipping",
                   "remittances",
-                  "diaspora safety"
+                  "diaspora safety",
+                  "flights"
                 ],
                 "conflict": "w1ye2krf",
                 "applied": "none",
@@ -124,9 +155,169 @@
               "ogTried": true,
               "descTried": true,
               "image": "https://assets3.cbsnewsstatic.com/hub/i/r/2026/10/30/6861dff3-34d6-496b-a11f-ad14b9228936/thumbnail/1200x630/865a67ecaaffb5727a37fc942110b0ff/hvy6j5dwyaajcje.jpg"
+            },
+            {
+              "source": "aljazeera",
+              "headline": "Pakistan army ‘cautiously optimistic’ about US-Iran mediation efforts",
+              "url": "https://www.aljazeera.com/news/2026/10/30/pakistan-army-cautiously-optimistic-about-us-iran-mediation-efforts",
+              "date": "2026-10-30T18:55:36.000Z",
+              "kind": "hard",
+              "summary": "Pakistan's military spokesman warns of 'powerful spoilers and detractors' who still believe the conflict serves them.",
+              "summaryV": 3
             }
           ],
           "image": "https://assets3.cbsnewsstatic.com/hub/i/r/2026/10/30/6861dff3-34d6-496b-a11f-ad14b9228936/thumbnail/1200x630/865a67ecaaffb5727a37fc942110b0ff/hvy6j5dwyaajcje.jpg",
+          "thread": "t2ogxay"
+        },
+        {
+          "id": "s1vq49r6",
+          "headline": "Ship reported on fire off Oman as Iran escalation fears mount",
+          "url": "https://www.dw.com/en/ship-reported-on-fire-off-oman-as-iran-escalation-fears-mount/a-79792733",
+          "source": "dw",
+          "date": "2026-10-29T10:04:00.000Z",
+          "relevance": "medium",
+          "why": "An oil tanker caught fire in the Strait of Hormuz and Oman rescued 25 people from it. Iran says it halted three tankers using 'unauthorised routes'. Disruption on this route could raise the cost and risk of the Gulf oil India imports.",
+          "implications": [
+            "If Iran keeps halting tankers that it says are using unauthorised routes, ships could face delays and higher insurance costs, which may raise the delivered cost of Gulf crude to Indian refiners.",
+            "Iran's claim that it shot down another United States drone indicates that military tension with Washington is continuing, which could keep shipping companies wary of the route for longer than this single fire.",
+            "A higher cost for crude imports could enlarge India's oil import bill, which may weigh on the rupee and on government finances if fuel taxes or subsidies are adjusted to cushion consumers."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-30T22:33:31.846Z",
+            "tier": "standard",
+            "primary": "disruption_map",
+            "complement": null,
+            "features": [
+              "disruption",
+              "armed_conflict",
+              "fast_moving"
+            ],
+            "exposure": {
+              "level": "high",
+              "reason": "The incident affects a main shipping route for crude oil, one of India's largest imports. Any lasting disruption could feed through to fuel costs, which reach almost every household."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Any effect in India depends on whether tanker disruptions persist long enough to move crude prices and freight costs, which then pass to refiners with a lag."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "Two outlets, DW and Al Jazeera, report the fire, citing a British maritime agency and an Omani rescue. The fire's cause and Iran's claims about the tankers remain unconfirmed."
+            },
+            "outlets": 2,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "up",
+                "what": "fuel price pressure",
+                "effect": "If shipping through Hormuz becomes riskier or slower, higher crude and freight costs could eventually put upward pressure on petrol, diesel and cooking gas prices in India.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Government finances",
+                "direction": "down",
+                "what": "oil import bill",
+                "effect": "A rise in the cost of imported crude could enlarge India's import bill and could strain public finances if the government cuts fuel taxes or raises subsidies.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Gulf & overseas workers and families",
+                "direction": "unclear",
+                "what": "regional security risk",
+                "effect": "Continued military tension between Iran and the United States could raise safety concerns for Indians working in Gulf countries and for their families in India.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Further Iranian statements about halting tankers on what it calls unauthorised routes through Hormuz",
+                "why": "Repeated halts would indicate that commercial tanker traffic is being restricted, not merely disrupted by a single incident.",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "New incident reports for the Strait of Hormuz from the British maritime agency",
+                "why": "Additional reported incidents would show whether shipping risk in the strait is rising or the fire was isolated.",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "An official explanation of what caused the oil tanker fire",
+                "why": "A finding of an attack rather than an accident would point to a greater risk for tankers carrying Gulf oil.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "India imports most of the crude oil it uses, and a large share comes from Gulf producers whose exports must pass through the Strait of Hormuz.",
+              "Security incidents in busy shipping lanes usually raise war-risk insurance premiums and freight rates, so costs can rise even when oil continues to flow.",
+              "Retail petrol and diesel prices in India are set by state-run oil marketing companies and do not always move immediately with global crude prices."
+            ],
+            "terms": [
+              {
+                "term": "Strait of Hormuz",
+                "meaning": "A narrow sea passage between Iran and Oman through which oil and gas tankers leaving the Persian Gulf must travel."
+              }
+            ],
+            "frameworks": {
+              "disruption_map": {
+                "node": {
+                  "name": "Strait of Hormuz",
+                  "type": "strait",
+                  "status": "unknown",
+                  "as_of": "2026-10-30T18:33"
+                },
+                "cause": {
+                  "text": "The reports do not state what caused the tanker fire. Separately, Iran says it halted three oil tankers that were attempting to use unauthorised routes through the strait.",
+                  "status": "claimed"
+                },
+                "flows": [
+                  {
+                    "flow": "crude",
+                    "india_link": "Oil tankers crossing Hormuz carry Gulf crude, a major source of India's oil imports. Indian refiners, and in turn fuel users, could face higher costs if passage is restricted.",
+                    "basis": "inferred"
+                  }
+                ],
+                "alternatives": [],
+                "duration": "not reported"
+              }
+            }
+          },
+          "conflict": "w1ye2krf",
+          "place": {
+            "name": "Strait of Hormuz",
+            "country": "Iran",
+            "lat": 26.6,
+            "lon": 56.3,
+            "involves": [
+              "United States"
+            ]
+          },
+          "reports": [
+            {
+              "source": "dw",
+              "headline": "Ship reported on fire off Oman as Iran escalation fears mount",
+              "url": "https://www.dw.com/en/ship-reported-on-fire-off-oman-as-iran-escalation-fears-mount/a-79792733",
+              "date": "2026-10-29T10:04:00.000Z",
+              "kind": "breaking",
+              "summary": "A ship in the Strait of Hormuz is reported to be on fire, a British maritime agency says. Iran has meanwhile said it has shot down another US drone as military tensions with Washington continue.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://static.dw.com/image/79686475_6.jpg"
+            },
+            {
+              "source": "aljazeera",
+              "headline": "Oman rescues 25 from burning oil tanker in Strait of Hormuz",
+              "url": "https://www.aljazeera.com/news/2026/10/30/oman-rescues-25-from-burning-oil-tanker-in-strait-of-hormuz",
+              "date": "2026-10-30T18:33:29.000Z",
+              "kind": "breaking",
+              "summary": "Incident comes as Iran says three oil tankers were halted while attempting to use 'unauthorised routes' to cross Hormuz.",
+              "summaryV": 3
+            }
+          ],
+          "image": "https://static.dw.com/image/79686475_6.jpg",
           "thread": "t2ogxay"
         },
         {
@@ -1245,128 +1436,6 @@
           ],
           "image": "https://static.dw.com/image/77543762_6.jpg",
           "thread": "t1mw6u0e"
-        },
-        {
-          "id": "s1vq49r6",
-          "headline": "Ship reported on fire off Oman as Iran escalation fears mount",
-          "url": "https://www.dw.com/en/ship-reported-on-fire-off-oman-as-iran-escalation-fears-mount/a-79792733",
-          "source": "dw",
-          "date": "2026-10-29T10:04:00.000Z",
-          "relevance": "medium",
-          "why": "A ship in the Strait of Hormuz is reported on fire by a British maritime agency, and Iran says it shot down another US drone. If the fire is conflict-related, it could raise risks to Gulf shipping that carries India's energy imports.",
-          "implications": [
-            "The reports do not give a cause for the fire, so it is unclear whether it was an attack, an accident or linked to the conflict. Shippers may still treat the area as riskier.",
-            "If merchant vessels face greater danger, insurers could raise premiums and some operators could delay voyages. That may raise the cost of bringing crude oil and cooking gas to Indian ports."
-          ],
-          "analysis": {
-            "v": 3,
-            "at": "2026-10-29T18:34:02.288Z",
-            "tier": "quick",
-            "primary": "escalation",
-            "complement": null,
-            "features": [
-              "armed_conflict"
-            ],
-            "exposure": {
-              "level": "medium",
-              "reason": "Fuel and LPG supplies to India depend heavily on Gulf shipping through Hormuz, but this report describes only one ship fire with an unstated cause, so the effect on India is not yet established."
-            },
-            "horizon": {
-              "value": "weeks",
-              "reason": "Any effect would come through shipping schedules, insurance costs and cargo prices, which usually adjust over one to six weeks if the risk to vessels persists."
-            },
-            "confidence": {
-              "level": "low",
-              "reason": "This rests on a single DW report of an early-stage event, the cause of the fire is unconfirmed, and the drone claim comes from Iran, a party to the war."
-            },
-            "outlets": 1,
-            "affected": [
-              {
-                "group": "Fuel & LPG users",
-                "direction": "unclear",
-                "what": "fuel supply risk",
-                "effect": "If tanker traffic through Hormuz is disrupted, crude oil and LPG deliveries to India could be delayed or become costlier, which may eventually reach pump and cylinder prices.",
-                "basis": "inferred"
-              },
-              {
-                "group": "Importers & traders",
-                "direction": "up",
-                "what": "shipping and insurance costs",
-                "effect": "Greater danger to vessels near Hormuz could lead insurers and carriers to charge more for cargo moving to and from the Gulf, raising costs for Indian importers.",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "Confirmation from the British maritime agency of what caused the fire on the ship and whether other vessels were affected",
-                "why": "It would show whether the fire is an attack on shipping or an accident, which determines the risk to energy cargoes.",
-                "when": "",
-                "where": ""
-              }
-            ],
-            "context": [
-              "India imports most of its crude oil, and a large share of its oil and gas supply comes from Gulf producers whose cargoes pass through the Strait of Hormuz. Higher shipping and insurance costs can feed into refiners' costs."
-            ],
-            "terms": [
-              {
-                "term": "Strait of Hormuz",
-                "meaning": "A narrow waterway between Iran and Oman through which much of the Gulf's oil and gas exports travel to world markets."
-              }
-            ],
-            "frameworks": {
-              "escalation": {
-                "move": "none",
-                "rung": 6,
-                "current_rung": 6,
-                "previous_rung": null,
-                "development": "Iran says it shot down another US drone, and a ship in the Strait of Hormuz has been reported on fire, though no cause has been given.",
-                "evidence": "No action above rung 6 is reported after 20 October. The drone shoot-down is an Iranian claim and the cause of the ship fire is unstated, so the war stays at rung 6.",
-                "next_signals": [
-                  {
-                    "rung": 7,
-                    "signal": "US and Iranian forces openly engage in a declared or clearly sustained full-scale campaign across several fronts, beyond the current strikes and shipping disruption."
-                  },
-                  {
-                    "rung": 5,
-                    "signal": "Reports confirm that Iranian attacks on third countries and shipping have stopped and the Strait of Hormuz has reopened, while fighting between the two sides continues."
-                  }
-                ],
-                "india_channels": [
-                  "oil",
-                  "shipping"
-                ],
-                "conflict": "w1ye2krf",
-                "applied": "none",
-                "from": 6
-              }
-            }
-          },
-          "conflict": "w1ye2krf",
-          "place": {
-            "name": "Strait of Hormuz",
-            "country": "Iran",
-            "lat": 26.6,
-            "lon": 56.3,
-            "involves": [
-              "United States"
-            ]
-          },
-          "reports": [
-            {
-              "source": "dw",
-              "headline": "Ship reported on fire off Oman as Iran escalation fears mount",
-              "url": "https://www.dw.com/en/ship-reported-on-fire-off-oman-as-iran-escalation-fears-mount/a-79792733",
-              "date": "2026-10-29T10:04:00.000Z",
-              "kind": "breaking",
-              "summary": "A ship in the Strait of Hormuz is reported to be on fire, a British maritime agency says. Iran has meanwhile said it has shot down another US drone as military tensions with Washington continue.",
-              "summaryV": 3,
-              "ogTried": true,
-              "descTried": true,
-              "image": "https://static.dw.com/image/79686475_6.jpg"
-            }
-          ],
-          "image": "https://static.dw.com/image/79686475_6.jpg",
-          "thread": "t2ogxay"
         },
         {
           "id": "s1k4qfsp",
@@ -20998,6 +21067,235 @@
       "name": "Economy & Trade",
       "items": [
         {
+          "id": "stbpot0",
+          "headline": "Canada and EU drop associate membership plan in bid to deepen ties",
+          "url": "https://www.france24.com/en/europe/20261029-canada-and-eu-drop-associate-membership-plan-in-bid-to-deepen-ties",
+          "source": "france24",
+          "date": "2026-10-29T00:56:33.000Z",
+          "relevance": "medium",
+          "image": "https://s.france24.com/media/display/de478f98-d32c-11f1-b496-47de50b3c1e4/w:1024/p:16x9/AP26264053021764.jpg",
+          "why": "Canada and the EU launched a new economic and security partnership, with Prime Minister Mark Carney aiming to make Canada the EU's first 'associate member', part of a wider shift by US partners to diversify trade that India also competes in.",
+          "implications": [
+            "The NYT reports that Carney's goal is to reduce American influence over Canada and expand trade elsewhere, which could make Canada and the EU closer trading partners and competitors for Indian exporters.",
+            "Opposition within the bloc, including from Germany, kept the term 'associate member' out of the joint declaration, so the final shape of the arrangement remains uncertain.",
+            "If Canada gains deeper access to European markets and rules, Indian exporters selling similar goods to the EU could face stronger competition from Canadian suppliers.",
+            "The move shows middle powers seeking alternatives to the US market, which could shape the terms India meets in its own trade talks with the EU and Canada."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-30T22:33:31.844Z",
+            "tier": "deep",
+            "primary": "conflicting",
+            "complement": "impact_chain",
+            "features": [
+              "conflict",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "The reports describe no direct mechanism reaching India; any effect would come indirectly through changed competition in EU and Canadian markets and India's own trade negotiations."
+            },
+            "horizon": {
+              "value": "years",
+              "reason": "Negotiations are only expected to conclude in June, and any trade effects would take longer to work through."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "Five outlets report the summit and on-record statements by von der Leyen and Carney, but whether the 'associate member' status will be adopted remains unresolved."
+            },
+            "outlets": 4,
+            "affected": [
+              {
+                "group": "Large exporters",
+                "direction": "unclear",
+                "what": "competition in EU markets",
+                "effect": "If Canada gains deeper integration with the EU, Indian exporters selling similar goods to Europe could face stronger competition from Canadian suppliers.",
+                "basis": "inferred"
+              },
+              {
+                "group": "MSME exporters",
+                "direction": "unclear",
+                "what": "trade rules and standards",
+                "effect": "Closer Canada–EU alignment on rules could set standards that smaller Indian exporters to both markets may need to meet.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Conclusion of negotiations on making Canada the EU's first associate member",
+                "why": "A concluded deal would show whether the partnership deepens market access enough to affect competing exporters such as India.",
+                "when": "June",
+                "where": "European Commission; Office of the Prime Minister of Canada"
+              },
+              {
+                "what": "Statements by Germany and other EU member states on the associate member designation",
+                "why": "Continued opposition could narrow or block the arrangement, limiting its trade effects.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "Canada and the European Union already have a comprehensive trade agreement that removed most tariffs between them, so any new partnership would build on existing market access.",
+              "The United States is the largest export market for both Canada and India, which gives both countries reasons to diversify their trade towards other partners such as the EU.",
+              "Changes to EU membership arrangements typically need agreement from member states, which is why opposition from countries such as Germany matters for the outcome."
+            ],
+            "terms": [
+              {
+                "term": "associate member",
+                "meaning": "A proposed new status that would give Canada closer ties with the European Union without full membership; no country has held it before."
+              },
+              {
+                "term": "joint declaration",
+                "meaning": "A formal statement agreed by both sides setting out shared goals, here launching the new Canada–EU economic and security partnership."
+              }
+            ],
+            "frameworks": {
+              "conflicting": {
+                "disputed": {
+                  "item": "Whether the associate membership plan for Canada has been dropped",
+                  "unit": "status of proposal"
+                },
+                "accounts": [
+                  {
+                    "outlet": "France 24",
+                    "value": "Canada and the EU have dropped the proposal for associate EU membership",
+                    "origin": "Joint declaration ahead of the Montreal summit",
+                    "time": "2026-10-29, before Thursday's summit"
+                  },
+                  {
+                    "outlet": "BBC News",
+                    "value": "Von der Leyen continued to use the term 'associate member' for Canada despite opposition from some members, including Germany",
+                    "origin": "European Commission President Ursula von der Leyen",
+                    "time": "2026-10-29, at the Montreal summit"
+                  },
+                  {
+                    "outlet": "South China Morning Post",
+                    "value": "The EU and Canada continue to explore Canada becoming the union's first associate member, though the term does not appear in the joint declaration",
+                    "origin": "Ursula von der Leyen",
+                    "time": "2026-10-29"
+                  },
+                  {
+                    "outlet": "South China Morning Post",
+                    "value": "Carney expects to conclude negotiations in June on making Canada the bloc's first associate member",
+                    "origin": "Prime Minister Mark Carney",
+                    "time": "2026-10-30"
+                  },
+                  {
+                    "outlet": "The New York Times",
+                    "value": "Carney commits Canada to becoming the EU's first associate member",
+                    "origin": "Prime Minister Mark Carney",
+                    "time": "2026-10-30"
+                  }
+                ],
+                "agreed": [
+                  "The term 'associate member' does not appear in the joint declaration launching the new Canada–EU partnership.",
+                  "Canada and the European Union are pursuing closer economic and security ties.",
+                  "Carney is seeking to reduce Canada's reliance on the United States."
+                ],
+                "explanations": [
+                  {
+                    "type": "different source",
+                    "note": "France 24 based its account on the text of the joint declaration, while later reports cite statements by von der Leyen and Carney that go beyond that text."
+                  },
+                  {
+                    "type": "different time",
+                    "note": "The France 24 report came before the summit, while later reports reflect what leaders said at and after the summit."
+                  }
+                ],
+                "status": "converging"
+              },
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Canada and EU launch new partnership",
+                    "detail": "A joint declaration launched a new economic and security partnership, and Carney said he expects to conclude negotiations on associate membership in June.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Canada diversifies away from US market",
+                    "detail": "The NYT reports that the move is part of Carney's effort to reduce American influence and expand Canadian trade to other parts of the world.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Deeper Canada–EU market integration",
+                    "detail": "If the arrangement is concluded, Canadian firms could gain closer access to European markets and rules, strengthening their position against other exporters to the EU.",
+                    "basis": "inferred"
+                  },
+                  {
+                    "step": "Indian exporters face changed competition",
+                    "detail": "Indian exporters selling similar goods to the EU could meet stronger Canadian competition, and the deal could shape the terms India seeks in its own talks with both partners.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The effect would not reach India if opposition from EU members such as Germany blocks the associate membership arrangement or limits it to symbolic cooperation without new market access."
+              }
+            }
+          },
+          "place": {
+            "name": "Montreal",
+            "country": "Canada",
+            "lat": 45.5,
+            "lon": -73.57,
+            "involves": [
+              "European Union"
+            ]
+          },
+          "reports": [
+            {
+              "source": "france24",
+              "headline": "Canada and EU drop associate membership plan in bid to deepen ties",
+              "url": "https://www.france24.com/en/europe/20261029-canada-and-eu-drop-associate-membership-plan-in-bid-to-deepen-ties",
+              "date": "2026-10-29T00:56:33.000Z",
+              "kind": "hard",
+              "summary": "Canada and the European Union will pursue closer ties but have dropped a proposal for associate EU membership, according to a joint declaration ahead of Thursday’s summit in Montreal. Prime Minister Mark Carney is seeking to reduce Canada’s reliance on the US, despite warnings from Donald Trump.",
+              "summaryV": 3,
+              "image": "https://s.france24.com/media/display/de478f98-d32c-11f1-b496-47de50b3c1e4/w:1024/p:16x9/AP26264053021764.jpg"
+            },
+            {
+              "source": "bbc",
+              "headline": "EU chief lays out vision for new Canada partnership at Montreal summit",
+              "url": "https://www.bbc.co.uk/news/articles/cq8ezj7jylrzo",
+              "date": "2026-10-29T17:02:59.000Z",
+              "kind": "hard",
+              "summary": "Ursula von der Leyen continued to use the term \"associate member\" for Canada despite some opposition of the bloc's members, including Germany.",
+              "summaryV": 3,
+              "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/b497/live/e5c53340-d3ba-11f1-8c27-87a7c72809db.jpg",
+              "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/b497/live/e5c53340-d3ba-11f1-8c27-87a7c72809db.jpg"
+            },
+            {
+              "source": "scmp",
+              "headline": "EU considering Canada as ‘associate member’ despite internal opposition",
+              "url": "https://www.scmp.com/news/world/united-states-canada/article/3372638/eu-considering-canada-associate-member-despite-internal-opposition",
+              "date": "2026-10-29T19:43:34.000Z",
+              "kind": "hard",
+              "summary": "European Commission President Ursula von der Leyen said on Thursday the EU and Canada continue to explore Canada becoming the union’s first “associate member”, a term so divisive among member countries that it does not appear in a joint declaration.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/30/d4cfd6f6-f8bb-4010-a84e-5dd42bcb7300_6864e1e4.jpg?itok=elyHuicl&v=1793303006"
+            },
+            {
+              "source": "scmp",
+              "headline": "Carney eyes June deal on making Canada the EU’s first associate member",
+              "url": "https://www.scmp.com/news/world/united-states-canada/article/3372794/carney-expects-conclude-talks-making-canada-eus-first-associate-member-june",
+              "date": "2026-10-30T18:32:16.000Z",
+              "kind": "hard",
+              "summary": "Canadian Prime Minister Mark Carney said on Friday he expects to conclude negotiations with the European Union in June on an unprecedented partnership that would make Canada the bloc’s first “associate member”, even though the designation was left out of a joint declaration launching a new economic and security…",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/31/7bf85b69-3982-43ea-baa6-0418dad53a7a_7fea9678.jpg?itok=GRz6a7Bj&v=1793385125"
+            },
+            {
+              "source": "nyt",
+              "headline": "Carney Commits Canada to Becoming European Union’s First ‘Associate Member’",
+              "url": "https://www.nytimes.com/2026/10/30/world/canada/carney-canada-european-union.html",
+              "date": "2026-10-30T21:08:01.000Z",
+              "kind": "hard",
+              "summary": "The move is part of the Canadian prime minister’s effort to reduce American influence over Canada and expand trade to other parts of the world.",
+              "summaryV": 3,
+              "image": "https://static01.nyt.com/images/2026/10/30/multimedia/30int-canada-assess-fmtk/30int-canada-assess-fmtk-mediumSquareAt3X.jpg"
+            }
+          ],
+          "thread": "tifhegk"
+        },
+        {
           "id": "skm6i2m",
           "headline": "Euro zone economy slows to 0.4% growth in Q3 as crisis-hit France contracts",
           "url": "https://www.cnbc.com/2026/10/30/euro-zone-gdp-france.html",
@@ -21445,134 +21743,6 @@
             "at": "2026-10-30T01:11:14.350Z",
             "series": []
           }
-        },
-        {
-          "id": "stbpot0",
-          "headline": "Canada and EU drop associate membership plan in bid to deepen ties",
-          "url": "https://www.france24.com/en/europe/20261029-canada-and-eu-drop-associate-membership-plan-in-bid-to-deepen-ties",
-          "source": "france24",
-          "date": "2026-10-29T00:56:33.000Z",
-          "relevance": "medium",
-          "image": "https://s.france24.com/media/display/de478f98-d32c-11f1-b496-47de50b3c1e4/w:1024/p:16x9/AP26264053021764.jpg",
-          "why": "France 24 reports that Canada and the European Union will pursue closer ties but have dropped a proposal for associate EU membership, ahead of a summit in Montreal. Prime Minister Mark Carney is seeking to reduce Canada's reliance on the US.",
-          "implications": [
-            "Canada is trying to widen its economic partnerships even though Donald Trump has warned against it, which signals that major trading relationships are being reshuffled.",
-            "Deeper Canada-EU links could change where Canadian buyers and sellers look for partners, which may affect competition for Indian businesses that trade with Canada."
-          ],
-          "analysis": {
-            "v": 3,
-            "at": "2026-10-29T01:05:21.520Z",
-            "tier": "quick",
-            "primary": "impact_chain",
-            "complement": null,
-            "features": [
-              "pending_outcome"
-            ],
-            "exposure": {
-              "level": "low",
-              "reason": "The reports describe a Canada-EU arrangement and no direct channel to India. Any effect would be indirect, through shifts in Canada's trade relationships that could touch Indian exporters."
-            },
-            "horizon": {
-              "value": "months",
-              "reason": "Closer trade and political ties between Canada and the EU would take time to be negotiated and implemented before any change reaches trading partners."
-            },
-            "confidence": {
-              "level": "medium",
-              "reason": "This rests on a single outlet, France 24, citing a joint declaration issued before the summit, and the outcome of the summit itself is not yet reported."
-            },
-            "outlets": 1,
-            "affected": [
-              {
-                "group": "Importers & traders",
-                "direction": "unclear",
-                "what": "trade with Canada",
-                "effect": "If Canada shifts more trade toward the European Union, Indian firms dealing with Canadian buyers and suppliers could face more competition or new openings.",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "The outcome and final joint statement of the Canada-EU summit in Montreal",
-                "why": "It would show what closer ties Canada and the EU actually agreed to, now that associate membership is off the table.",
-                "when": "2026-10-29",
-                "where": ""
-              }
-            ],
-            "context": [
-              "Canada's economy is closely tied to the United States through trade. Countries that want to lessen such dependence usually try to sign deeper trade and investment arrangements with other large economies or blocs."
-            ],
-            "terms": [
-              {
-                "term": "associate membership",
-                "meaning": "A proposed status that would give a non-member country a closer formal relationship with the European Union than an ordinary trade partner has, without making it a full member."
-              }
-            ],
-            "frameworks": {
-              "impact_chain": {
-                "chain": [
-                  {
-                    "step": "Canada and EU drop associate membership",
-                    "detail": "A joint declaration ahead of the Montreal summit says Canada and the EU will pursue closer ties but without the associate membership proposal.",
-                    "basis": "reported"
-                  },
-                  {
-                    "step": "Canada seeks less reliance on the US",
-                    "detail": "Prime Minister Mark Carney wants to reduce Canada's dependence on the United States, despite warnings from Donald Trump, which pushes Canada toward other partners.",
-                    "basis": "reported"
-                  },
-                  {
-                    "step": "Canada's trade partners may shift",
-                    "detail": "As Canada builds deeper links with the EU, trade flows and supply arrangements could change, which may alter competition for Indian exporters selling to Canada.",
-                    "basis": "inferred"
-                  }
-                ],
-                "breaks_if": "The effect would not reach India if the closer Canada-EU ties stay mostly political and do not change trade flows or the terms for suppliers selling into Canada."
-              }
-            }
-          },
-          "place": {
-            "name": "Montreal",
-            "country": "Canada",
-            "lat": 45.5,
-            "lon": -73.57,
-            "involves": [
-              "European Union"
-            ]
-          },
-          "reports": [
-            {
-              "source": "france24",
-              "headline": "Canada and EU drop associate membership plan in bid to deepen ties",
-              "url": "https://www.france24.com/en/europe/20261029-canada-and-eu-drop-associate-membership-plan-in-bid-to-deepen-ties",
-              "date": "2026-10-29T00:56:33.000Z",
-              "kind": "hard",
-              "summary": "Canada and the European Union will pursue closer ties but have dropped a proposal for associate EU membership, according to a joint declaration ahead of Thursday’s summit in Montreal. Prime Minister Mark Carney is seeking to reduce Canada’s reliance on the US, despite warnings from Donald Trump.",
-              "summaryV": 3,
-              "image": "https://s.france24.com/media/display/de478f98-d32c-11f1-b496-47de50b3c1e4/w:1024/p:16x9/AP26264053021764.jpg"
-            },
-            {
-              "source": "bbc",
-              "headline": "EU chief lays out vision for new Canada partnership at Montreal summit",
-              "url": "https://www.bbc.co.uk/news/articles/cq8ezj7jylrzo",
-              "date": "2026-10-29T17:02:59.000Z",
-              "kind": "hard",
-              "summary": "Ursula von der Leyen continued to use the term \"associate member\" for Canada despite some opposition of the bloc's members, including Germany.",
-              "summaryV": 3,
-              "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/b497/live/e5c53340-d3ba-11f1-8c27-87a7c72809db.jpg",
-              "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/b497/live/e5c53340-d3ba-11f1-8c27-87a7c72809db.jpg"
-            },
-            {
-              "source": "scmp",
-              "headline": "EU considering Canada as ‘associate member’ despite internal opposition",
-              "url": "https://www.scmp.com/news/world/united-states-canada/article/3372638/eu-considering-canada-associate-member-despite-internal-opposition",
-              "date": "2026-10-29T19:43:34.000Z",
-              "kind": "hard",
-              "summary": "European Commission President Ursula von der Leyen said on Thursday the EU and Canada continue to explore Canada becoming the union’s first “associate member”, a term so divisive among member countries that it does not appear in a joint declaration.",
-              "summaryV": 3,
-              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/30/d4cfd6f6-f8bb-4010-a84e-5dd42bcb7300_6864e1e4.jpg?itok=elyHuicl&v=1793303006"
-            }
-          ],
-          "thread": "tifhegk"
         },
         {
           "id": "sjljwyy",
@@ -30182,14 +30352,16 @@
           "source": "cbs",
           "date": "2026-10-30T17:44:11.000Z",
           "relevance": "medium",
-          "why": "Disappointing earnings from Alphabet, Amazon and Intel pushed the Nasdaq down more than 800 points and revived fears about AI spending. The fall could reach India through foreign investor flows, Indian technology shares and demand for IT services.",
+          "why": "A sharp sell-off in US technology shares, driven by weak earnings from Alphabet, Amazon and Intel, could reach India through foreign investor flows, Indian share prices and sentiment around Indian IT services firms.",
           "implications": [
-            "If large US technology companies cut spending after weak results, Indian IT services firms that rely on American clients could see slower contract growth, which may affect hiring.",
-            "The BBC links the falls to AI spending nearing $1tn, and investor doubts about that spending could also weigh on firms building AI-related services or capacity in India."
+            "Investors are questioning whether the heavy spending on artificial intelligence by large US firms can generate returns quickly enough, which could make those firms more cautious about technology budgets.",
+            "If US technology companies slow their spending, Indian IT services firms that depend on American clients could see slower deal flow, which may affect hiring over the following months.",
+            "A broad retreat from riskier assets by global investors could lead foreign funds to sell Indian shares, which may put pressure on Indian stock indices and the rupee.",
+            "Indian households with market-linked savings, such as equity mutual funds, could see the value of those holdings fall if the sell-off spreads to Indian markets."
           ],
           "analysis": {
             "v": 3,
-            "at": "2026-10-30T18:10:49.522Z",
+            "at": "2026-10-30T22:33:31.842Z",
             "tier": "standard",
             "primary": "pass_through",
             "complement": null,
@@ -30198,91 +30370,103 @@
             ],
             "exposure": {
               "level": "medium",
-              "reason": "The effect reaches India mainly through one industry, IT services, and through financial market sentiment, rather than through a household essential, so exposure is medium."
+              "reason": ""
             },
             "horizon": {
               "value": "weeks",
-              "reason": "Market spillovers can appear within days, but any effect on Indian IT firms' business would surface only as companies report results and revise guidance."
+              "reason": "Market and investor-flow effects can appear within days, but any change in US technology spending reaching Indian IT firms would take longer to show."
             },
             "confidence": {
-              "level": "medium",
-              "reason": "This rests on CBS News and BBC News, which agree on the falls; neither cites an official source, and the wider fears about AI spending are interpretation."
+              "level": "high",
+              "reason": "Four outlets, CBS News, BBC News, The Guardian and the South China Morning Post, agree on the US sell-off, while any effect on India is inferred rather than reported."
             },
-            "outlets": 2,
+            "outlets": 4,
             "affected": [
               {
                 "group": "IT & services workers",
                 "direction": "unclear",
-                "what": "IT demand and hiring",
-                "effect": "If US technology firms cut budgets after weak earnings, Indian IT services companies could win fewer new contracts, which may slow hiring.",
+                "what": "client spending and hiring",
+                "effect": "If US technology firms rein in spending after weak earnings, Indian IT services firms could see slower demand, which may affect hiring.",
                 "basis": "inferred"
               },
               {
                 "group": "Depositors & savers",
                 "direction": "down",
-                "what": "equity fund values",
-                "effect": "Savers holding equity mutual funds may see lower valuations if selling in US technology shares spreads to Indian markets through foreign investor outflows.",
+                "what": "value of equity savings",
+                "effect": "If foreign investors sell Indian shares in a global retreat from risk, households holding equity mutual funds could see the value of their holdings fall.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "rupee exchange rate",
+                "effect": "Foreign fund outflows could weaken the rupee, which may raise the rupee cost of imported goods for traders.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "Quarterly results and revenue guidance from India's large IT services companies",
-                "why": "These would show whether caution among US technology clients is reaching Indian firms' order books.",
+                "what": "Further moves in the Nasdaq and S&P 500 after the third straight losing week",
+                "why": "Continued falls would suggest the sell-off is deepening and is more likely to spill into emerging markets such as India.",
                 "when": "",
                 "where": ""
               }
             ],
             "context": [
-              "Indian IT services companies earn a large share of their revenue from clients in the United States, so changes in American corporate technology budgets tend to affect their order books."
+              "Indian IT services companies earn a large share of their revenue from clients in the United States, so changes in American corporate technology spending tend to affect their order books and hiring.",
+              "Domestic investors, including households investing monthly through mutual funds, have become an important counterweight to foreign selling in Indian markets."
             ],
             "terms": [
               {
                 "term": "Nasdaq",
-                "meaning": "A US stock market index dominated by technology companies, widely watched as a gauge of investor sentiment towards the tech sector."
+                "meaning": "A US stock exchange and index heavily weighted towards technology companies, often used as a gauge of investor sentiment towards the tech sector."
               },
               {
                 "term": "AI trade",
-                "meaning": "Investors' heavy buying of shares in companies expected to profit from artificial intelligence, which has driven up their stock prices."
+                "meaning": "Market shorthand for investor bets that companies building or using artificial intelligence will deliver strong profits, which has pushed up their share prices."
+              },
+              {
+                "term": "S&P 500",
+                "meaning": "An index tracking 500 large US-listed companies, widely used as a benchmark for the overall US stock market."
               }
             ],
             "frameworks": {
               "pass_through": {
                 "driver": {
-                  "variable": "US technology share prices (Nasdaq index)",
+                  "variable": "US technology share prices",
                   "direction": "down",
-                  "size": "more than 800 points"
+                  "size": "Nasdaq fell more than 800 points; nearly $1tn erased in one…"
                 },
                 "product": "other",
                 "rungs": [
                   {
-                    "stage": "US tech share prices to global risk appetite",
-                    "pass": "likely",
-                    "damper": "Investors may treat the fall as specific to a few companies' earnings rather than as a broad shift, which would limit the spillover to other markets.",
+                    "stage": "US tech share prices → global investor risk appetite",
+                    "pass": "partial",
+                    "damper": "Investors may treat the fall as specific to AI-linked US firms rather than as a broad reason to sell riskier assets elsewhere.",
                     "lag": "days"
                   },
                   {
-                    "stage": "Global risk appetite to foreign flows into India",
-                    "pass": "partial",
-                    "damper": "Steady domestic investment through mutual funds and institutions can offset foreign selling and cushion Indian share prices.",
+                    "stage": "Global risk appetite → foreign flows into India",
+                    "pass": "unclear",
+                    "damper": "Domestic institutional investors and steady monthly household investments through systematic investment plans (SIPs) can offset selling by foreign funds.",
                     "lag": "days"
                   },
                   {
-                    "stage": "Foreign flows to Indian technology share prices",
+                    "stage": "Foreign flows → Indian share prices and rupee",
                     "pass": "partial",
-                    "damper": "Indian IT services firms earn from client service contracts rather than chip or cloud sales, so their earnings may not track US tech firms closely.",
-                    "lag": "days"
+                    "damper": "The Reserve Bank of India can sell dollars from its reserves to smooth sharp swings in the rupee.",
+                    "lag": "weeks"
                   },
                   {
-                    "stage": "Indian share prices to savers' fund values",
+                    "stage": "Indian share prices → household market-linked savings",
                     "pass": "partial",
-                    "damper": "Diversified funds hold shares across many sectors, which dilutes the effect of a fall concentrated in technology stocks.",
+                    "damper": "Much of Indian household wealth sits in bank deposits, gold and property rather than equities, which limits the direct effect.",
                     "lag": "weeks"
                   }
                 ],
                 "end_user": {
                   "group": "Depositors & savers",
-                  "effect": "Savers with equity mutual funds may notice lower fund values in the coming days or weeks if the US sell-off spreads to Indian markets, though this remains uncertain."
+                  "effect": ""
                 }
               }
             }
@@ -30316,6 +30500,27 @@
               "summaryV": 3,
               "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/10b0/live/dcdf2a60-d46e-11f1-9dda-1ba6fcc7d159.jpg",
               "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/10b0/live/dcdf2a60-d46e-11f1-9dda-1ba6fcc7d159.jpg"
+            },
+            {
+              "source": "guardian",
+              "headline": "Tech sell-off drives US markets down by nearly $1tn after subpar earnings reports",
+              "url": "https://www.theguardian.com/technology/2026/oct/30/tech-stocks-drop-earnings-report",
+              "date": "2026-10-30T18:27:51.000Z",
+              "kind": "hard",
+              "summary": "Big tech stocks falter as investors question whether billions being poured into AI can generate returns quickly enough",
+              "summaryV": 3,
+              "lede": "A sell-off of tech stocks that began earlier this month and gained steam with disappointing earnings from leading tech companies drove US markets down by hundreds of billions of dollars Friday. In total, the decline has knocked nearly $1tn in value off the tech-heavy Nasdaq exchange in one week and erased about $2tn in a month.",
+              "image": "https://i.guim.co.uk/img/media/7a052dd1015720ea8d19c722dd7b8bcd0586aab3/452_0_4515_3613/master/4515.jpg?width=700&quality=85&auto=format&fit=max&s=9e7514d5115f905496140d21c66758e3"
+            },
+            {
+              "source": "scmp",
+              "headline": "Wall Street drops to its worst day since June after tech sell-off deepens",
+              "url": "https://www.scmp.com/news/world/united-states-canada/article/3372800/wall-street-drops-its-worst-day-june-after-tech-sell-deepens",
+              "date": "2026-10-30T22:01:13.000Z",
+              "kind": "hard",
+              "summary": "A sell-off for tech stocks got even worse on Friday on worries that Wall Street’s frenzy around artificial intelligence technology sent prices too high. The S&P 500 tumbled 1.8 per cent for its worst day since June, and it closed out a third straight losing week.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/31/a6edd57c-a504-481a-ac6e-d1d189da62ca_fcd8ce38.jpg?itok=hT1WiL6i&v=1793397906"
             }
           ],
           "image": "https://assets2.cbsnewsstatic.com/hub/i/r/2026/03/09/79d66ab2-a42c-475b-91aa-6e8c0ecca229/thumbnail/1200x630/b8fe2e5c8cb8472bf24a59cca378a141/11-mcnicholas-image.jpg",
@@ -43406,23 +43611,23 @@
     },
     "places": {
       "labelled": 0,
-      "none": 1,
+      "none": 0,
       "waiting": 0
     },
-    "analysed": 163,
-    "added": 8,
-    "merged": 1,
+    "analysed": 124,
+    "added": 0,
+    "merged": 6,
     "failedBatches": 2,
     "feeds": {
       "bbc": {
         "feedsOk": 6,
         "feedsFailed": 0,
-        "items": 165
+        "items": 167
       },
       "guardian": {
         "feedsOk": 7,
         "feedsFailed": 0,
-        "items": 195
+        "items": 197
       },
       "npr": {
         "feedsOk": 4,
@@ -43432,7 +43637,7 @@
       "aljazeera": {
         "feedsOk": 1,
         "feedsFailed": 0,
-        "items": 11
+        "items": 16
       },
       "mercopress": {
         "feedsOk": 3,
@@ -43457,12 +43662,12 @@
       "cbs": {
         "feedsOk": 2,
         "feedsFailed": 0,
-        "items": 47
+        "items": 48
       },
       "dw": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 30
+        "items": 31
       },
       "france24": {
         "feedsOk": 3,
@@ -43477,22 +43682,22 @@
       "scmp": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 141
+        "items": 139
       }
     },
     "shareImages": {
-      "tried": 4,
-      "found": 4,
+      "tried": 0,
+      "found": 0,
       "summaries": 0
     },
     "threads": {
-      "assigned": 8,
-      "created": 1,
+      "assigned": 0,
+      "created": 0,
       "failedBatches": 0
     },
     "summaries": {
-      "written": 6,
-      "due": 6
+      "written": 0,
+      "due": 0
     },
     "kinds": {
       "labelled": 0,
@@ -43500,59 +43705,47 @@
       "failedBatches": 0
     },
     "frames": {
-      "done": 1,
-      "waiting": 2,
+      "done": 4,
+      "waiting": 1,
       "failedBatches": 0
     },
     "stats": {
-      "searched": 1,
+      "searched": 0,
       "found": 0,
       "reused": 0,
-      "none": 1,
+      "none": 0,
       "failed": 0,
       "proposed": 0,
       "droppedPoints": 0,
       "pagesFetched": 0,
-      "samples": [
-        {
-          "headline": "Houthi forces claim six attacks on Saudi airports, oil facilities",
-          "result": "no saved series; search kept for in-depth stories"
-        }
-      ]
+      "samples": []
     },
     "models": {
       "filter": {
         "model": "claude-haiku-5-5",
-        "calls": 18,
-        "inputTokens": 59143,
-        "outputTokens": 28437,
-        "cost": 0.02
-      },
-      "analysis_quick": {
-        "model": "claude-sonnet-5-5",
         "calls": 6,
-        "inputTokens": 18283,
-        "outputTokens": 16672,
-        "cost": 0.2034
+        "inputTokens": 37807,
+        "outputTokens": 19229,
+        "cost": 0.0134
       },
       "analysis": {
         "model": "claude-opus-5-5",
-        "calls": 1,
-        "inputTokens": 3443,
-        "outputTokens": 3643,
-        "cost": 0.0866
+        "calls": 2,
+        "inputTokens": 8079,
+        "outputTokens": 12107,
+        "cost": 0.2745
       },
-      "threads": {
+      "analysis_quick": {
         "model": "claude-sonnet-5-5",
-        "calls": 7,
-        "inputTokens": 16146,
-        "outputTokens": 3705,
-        "cost": 0.0693
+        "calls": 1,
+        "inputTokens": 2782,
+        "outputTokens": 444,
+        "cost": 0.01
       }
     },
     "spend": {
-      "thisDesk": 0.3794,
-      "today": 2.8561,
+      "thisDesk": 0.2979,
+      "today": 0.2979,
       "cap": 6
     }
   },
