@@ -2,12 +2,130 @@
   "schema": 4,
   "region": "India",
   "since": "2026-10-02",
-  "updatedAt": "2026-10-31T06:15:00.853Z",
+  "updatedAt": "2026-10-31T07:00:27.169Z",
   "sectors": [
     {
       "id": "energy",
       "name": "Energy",
       "items": [
+        {
+          "id": "s12xp18x",
+          "headline": "Chevron and Exxon hit all-time highs as refining profits soar in reaction to Iran and Ukraine wars",
+          "url": "https://www.cnbc.com/2026/10/30/chevron-exxon-cvx-xom-earnings-q3-2026.html",
+          "source": "cnbc",
+          "date": "2026-10-30T16:44:31.000Z",
+          "relevance": "high",
+          "why": "CNBC reports that global diesel prices have surged after Ukraine and Iran struck refineries in Russia and the Middle East, lifting profits at refiners such as Chevron and Exxon. India, a large crude importer, could face higher fuel costs.",
+          "implications": [
+            "Diesel is widely used by trucks, farm equipment and public transport, so a sustained rise in its price could raise freight and food distribution costs across India.",
+            "Indian refiners that sell diesel abroad could earn wider margins, while the cost of imported crude and fuel products may rise for the country as a whole."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-30T18:09:15.575Z",
+            "tier": "quick",
+            "primary": "escalation",
+            "complement": null,
+            "features": [
+              "armed_conflict"
+            ],
+            "exposure": {
+              "level": "high",
+              "reason": "Diesel is a household and transport essential, and India relies on imported crude, so higher global diesel prices can reach pump prices and freight costs."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Global prices have already moved, and the pass-through to Indian import bills, freight rates and fuel costs usually takes a few weeks."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single CNBC report, summarised briefly, with no official source, and the dates and targets of the strikes are not detailed."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "up",
+                "what": "diesel and transport costs",
+                "effect": "Higher global diesel prices may raise refiners' costs, which could feed through to pump prices and to the cost of moving goods by road.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Large exporters",
+                "direction": "mixed",
+                "what": "refining margins",
+                "effect": "Indian refiners that export diesel could gain from stronger margins, while other exporters may face higher fuel and freight costs.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Further reports of strikes on refineries or oil depots in Russia or the Middle East",
+                "why": "New attacks would show whether diesel supply stays tight and global prices keep rising.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "India imports most of the crude oil it uses, so disruptions to global refining and supply reach it through import costs and the prices of fuels such as diesel.",
+              "Attacks on refineries cut the output of finished fuels, which can tighten diesel supply even when crude oil supply is unchanged."
+            ],
+            "terms": [],
+            "frameworks": {
+              "escalation": {
+                "move": "none",
+                "rung": 6,
+                "current_rung": 6,
+                "previous_rung": null,
+                "development": "CNBC reports that Ukrainian and Iranian strikes on refineries in Russia and the Middle East have pushed global diesel prices sharply higher.",
+                "evidence": "The report does not date these strikes after 18 October 2026, when the war was placed at rung 6, so it shows no new higher-rung action and the level stays where it is.",
+                "next_signals": [
+                  {
+                    "rung": 7,
+                    "signal": "Reports that Russia and Ukraine have moved to open full-scale war, for example through general mobilisation or the direct entry of other countries' forces."
+                  },
+                  {
+                    "rung": 5,
+                    "signal": "Strikes on power and oil infrastructure stop being reported, with attacks confined to military targets, which would indicate a move down to sustained strikes."
+                  }
+                ],
+                "india_channels": [
+                  "oil"
+                ],
+                "conflict": "wzti51f",
+                "applied": "none",
+                "from": 6
+              }
+            }
+          },
+          "conflict": "wzti51f",
+          "reports": [
+            {
+              "source": "cnbc",
+              "headline": "Chevron and Exxon hit all-time highs as refining profits soar in reaction to Iran and Ukraine wars",
+              "url": "https://www.cnbc.com/2026/10/30/chevron-exxon-cvx-xom-earnings-q3-2026.html",
+              "date": "2026-10-30T16:44:31.000Z",
+              "kind": "hard",
+              "summary": "Global diesel prices surged as Ukraine and Iran struck refineries in Russia and the Middle East.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://image.cnbcfm.com/api/v1/image/108373938-1791375909497-gettyimages-2291635421-AFP_C6KY7DL.jpeg?v=1793358679&w=1920&h=1080"
+            },
+            {
+              "source": "cnbc",
+              "headline": "Trump called out Big Oil profits. Here’s how much their refining earnings have surged since",
+              "url": "https://www.cnbc.com/2026/10/31/trump-big-oil-refining-profits.html",
+              "date": "2026-10-31T06:00:02.000Z",
+              "kind": "hard",
+              "summary": "Trump criticized Big Oil for making “too much money,” but oil majors have since reported surging refining earnings as fuel supplies tightened.",
+              "summaryV": 3
+            }
+          ],
+          "placeTried": true,
+          "image": "https://image.cnbcfm.com/api/v1/image/108373938-1791375909497-gettyimages-2291635421-AFP_C6KY7DL.jpeg?v=1793358679&w=1920&h=1080",
+          "thread": "t183s5v2"
+        },
         {
           "id": "szrvdxz",
           "headline": "Trump predicts Iran war will end soon as Qatar pushes for a deal",
@@ -559,115 +677,6 @@
               }
             ]
           }
-        },
-        {
-          "id": "s12xp18x",
-          "headline": "Chevron and Exxon hit all-time highs as refining profits soar in reaction to Iran and Ukraine wars",
-          "url": "https://www.cnbc.com/2026/10/30/chevron-exxon-cvx-xom-earnings-q3-2026.html",
-          "source": "cnbc",
-          "date": "2026-10-30T16:44:31.000Z",
-          "relevance": "high",
-          "why": "CNBC reports that global diesel prices have surged after Ukraine and Iran struck refineries in Russia and the Middle East, lifting profits at refiners such as Chevron and Exxon. India, a large crude importer, could face higher fuel costs.",
-          "implications": [
-            "Diesel is widely used by trucks, farm equipment and public transport, so a sustained rise in its price could raise freight and food distribution costs across India.",
-            "Indian refiners that sell diesel abroad could earn wider margins, while the cost of imported crude and fuel products may rise for the country as a whole."
-          ],
-          "analysis": {
-            "v": 3,
-            "at": "2026-10-30T18:09:15.575Z",
-            "tier": "quick",
-            "primary": "escalation",
-            "complement": null,
-            "features": [
-              "armed_conflict"
-            ],
-            "exposure": {
-              "level": "high",
-              "reason": "Diesel is a household and transport essential, and India relies on imported crude, so higher global diesel prices can reach pump prices and freight costs."
-            },
-            "horizon": {
-              "value": "weeks",
-              "reason": "Global prices have already moved, and the pass-through to Indian import bills, freight rates and fuel costs usually takes a few weeks."
-            },
-            "confidence": {
-              "level": "low",
-              "reason": "This rests on a single CNBC report, summarised briefly, with no official source, and the dates and targets of the strikes are not detailed."
-            },
-            "outlets": 1,
-            "affected": [
-              {
-                "group": "Fuel & LPG users",
-                "direction": "up",
-                "what": "diesel and transport costs",
-                "effect": "Higher global diesel prices may raise refiners' costs, which could feed through to pump prices and to the cost of moving goods by road.",
-                "basis": "inferred"
-              },
-              {
-                "group": "Large exporters",
-                "direction": "mixed",
-                "what": "refining margins",
-                "effect": "Indian refiners that export diesel could gain from stronger margins, while other exporters may face higher fuel and freight costs.",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "Further reports of strikes on refineries or oil depots in Russia or the Middle East",
-                "why": "New attacks would show whether diesel supply stays tight and global prices keep rising.",
-                "when": "",
-                "where": ""
-              }
-            ],
-            "context": [
-              "India imports most of the crude oil it uses, so disruptions to global refining and supply reach it through import costs and the prices of fuels such as diesel.",
-              "Attacks on refineries cut the output of finished fuels, which can tighten diesel supply even when crude oil supply is unchanged."
-            ],
-            "terms": [],
-            "frameworks": {
-              "escalation": {
-                "move": "none",
-                "rung": 6,
-                "current_rung": 6,
-                "previous_rung": null,
-                "development": "CNBC reports that Ukrainian and Iranian strikes on refineries in Russia and the Middle East have pushed global diesel prices sharply higher.",
-                "evidence": "The report does not date these strikes after 18 October 2026, when the war was placed at rung 6, so it shows no new higher-rung action and the level stays where it is.",
-                "next_signals": [
-                  {
-                    "rung": 7,
-                    "signal": "Reports that Russia and Ukraine have moved to open full-scale war, for example through general mobilisation or the direct entry of other countries' forces."
-                  },
-                  {
-                    "rung": 5,
-                    "signal": "Strikes on power and oil infrastructure stop being reported, with attacks confined to military targets, which would indicate a move down to sustained strikes."
-                  }
-                ],
-                "india_channels": [
-                  "oil"
-                ],
-                "conflict": "wzti51f",
-                "applied": "none",
-                "from": 6
-              }
-            }
-          },
-          "conflict": "wzti51f",
-          "reports": [
-            {
-              "source": "cnbc",
-              "headline": "Chevron and Exxon hit all-time highs as refining profits soar in reaction to Iran and Ukraine wars",
-              "url": "https://www.cnbc.com/2026/10/30/chevron-exxon-cvx-xom-earnings-q3-2026.html",
-              "date": "2026-10-30T16:44:31.000Z",
-              "kind": "hard",
-              "summary": "Global diesel prices surged as Ukraine and Iran struck refineries in Russia and the Middle East.",
-              "summaryV": 3,
-              "ogTried": true,
-              "descTried": true,
-              "image": "https://image.cnbcfm.com/api/v1/image/108373938-1791375909497-gettyimages-2291635421-AFP_C6KY7DL.jpeg?v=1793358679&w=1920&h=1080"
-            }
-          ],
-          "placeTried": true,
-          "image": "https://image.cnbcfm.com/api/v1/image/108373938-1791375909497-gettyimages-2291635421-AFP_C6KY7DL.jpeg?v=1793358679&w=1920&h=1080",
-          "thread": "t183s5v2"
         },
         {
           "id": "syxbxbu",
@@ -44375,17 +44384,17 @@
     "wars": {
       "linked": 0,
       "seeded": 0,
-      "active": 6
+      "active": 7
     },
     "places": {
-      "labelled": 1,
-      "none": 1,
+      "labelled": 0,
+      "none": 0,
       "waiting": 0
     },
-    "analysed": 129,
-    "added": 6,
+    "analysed": 58,
+    "added": 0,
     "merged": 1,
-    "failedBatches": 2,
+    "failedBatches": 1,
     "feeds": {
       "bbc": {
         "feedsOk": 6,
@@ -44405,7 +44414,7 @@
       "aljazeera": {
         "feedsOk": 1,
         "feedsFailed": 0,
-        "items": 16
+        "items": 12
       },
       "mercopress": {
         "feedsOk": 3,
@@ -44450,22 +44459,22 @@
       "scmp": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 140
+        "items": 141
       }
     },
     "shareImages": {
-      "tried": 1,
-      "found": 1,
+      "tried": 0,
+      "found": 0,
       "summaries": 0
     },
     "threads": {
-      "assigned": 6,
-      "created": 3,
+      "assigned": 0,
+      "created": 0,
       "failedBatches": 0
     },
     "summaries": {
-      "written": 3,
-      "due": 3
+      "written": 0,
+      "due": 0
     },
     "kinds": {
       "labelled": 0,
@@ -44478,67 +44487,35 @@
       "failedBatches": 0
     },
     "stats": {
-      "searched": 3,
+      "searched": 0,
       "found": 0,
-      "reused": 2,
-      "none": 1,
+      "reused": 0,
+      "none": 0,
       "failed": 0,
-      "proposed": 7,
-      "droppedPoints": 7,
+      "proposed": 0,
+      "droppedPoints": 0,
       "pagesFetched": 0,
-      "samples": [
-        {
-          "headline": "Canada and EU drop associate membership plan in bid to deepen ties",
-          "result": "no figure found on an official page",
-          "proposed": 7,
-          "checked": 0,
-          "pagesFetched": 0
-        },
-        {
-          "headline": "Trump predicts Iran war will end soon as Qatar pushes for a deal",
-          "result": "reused saved series"
-        },
-        {
-          "headline": "Ship reported on fire off Oman as Iran escalation fears mount",
-          "result": "reused saved series"
-        }
-      ]
+      "samples": []
     },
     "models": {
       "filter": {
         "model": "claude-haiku-5-5",
-        "calls": 14,
-        "inputTokens": 47892,
-        "outputTokens": 22774,
-        "cost": 0.0162
+        "calls": 4,
+        "inputTokens": 20725,
+        "outputTokens": 8610,
+        "cost": 0.0064
       },
       "analysis_quick": {
         "model": "claude-sonnet-5-5",
-        "calls": 3,
-        "inputTokens": 9082,
-        "outputTokens": 9496,
-        "cost": 0.1131
-      },
-      "stats": {
-        "model": "claude-sonnet-5-5",
         "calls": 1,
-        "inputTokens": 84671,
-        "outputTokens": 836,
-        "searches": 2,
-        "fetches": 1,
-        "cost": 0.1977
-      },
-      "threads": {
-        "model": "claude-sonnet-5-5",
-        "calls": 4,
-        "inputTokens": 11879,
-        "outputTokens": 850,
-        "cost": 0.0323
+        "inputTokens": 2782,
+        "outputTokens": 441,
+        "cost": 0.01
       }
     },
     "spend": {
-      "thisDesk": 0.3593,
-      "today": 1.0698,
+      "thisDesk": 0.0164,
+      "today": 1.5233,
       "cap": 6
     }
   },
