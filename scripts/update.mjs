@@ -23,9 +23,15 @@ const OUTLET_INFO = {
   africanews: { name: "Africanews",   region: "Africa" },
   scmp:       { name: "South China Morning Post", region: "Asia" },
   thehindu:   { name: "The Hindu",    region: "India" },
-  mint:       { name: "Mint",         region: "India" }
+  mint:       { name: "Mint",         region: "India" },
+  indianexpress: { name: "The Indian Express", region: "India" }
 };
 const OUTLETS = Object.fromEntries(Object.entries(OUTLET_INFO).map(([id, o]) => [id, o.name]));
+// v75 (31 Oct 2026): back to the v72 keep/reject filter (v73/v74's Watch and Brief outcomes hid most stories and cut the
+// Global desk to a few a day), plus: Indian Express as the India desk's third outlet; Global items about India by name
+// are never rejected; a daily filter health record; statistics chosen by data (releases, prices, trade, markets, energy)
+// rather than story depth, up to 8 per desk per run; and figures checked on official pages the engine fetches itself
+// when the model names a page but did not open it.
 const SINCE = "2026-10-02";                    // ignore stories published before this date
 const GLOBAL_FEEDS = [
   { src: "bbc", url: "https://feeds.bbci.co.uk/news/world/rss.xml" },
@@ -86,7 +92,12 @@ const INDIA_FEEDS = [
   { src: "mint", url: "https://www.livemint.com/rss/politics" },
   { src: "mint", url: "https://www.livemint.com/rss/industry" },
   { src: "mint", url: "https://www.livemint.com/rss/companies" },
-  { src: "mint", url: "https://www.livemint.com/rss/technology" }
+  { src: "mint", url: "https://www.livemint.com/rss/technology" },
+  // v75: The Indian Express (national news, economy, banking and finance, technology). Its feeds carry 200 items each.
+  { src: "indianexpress", url: "https://indianexpress.com/section/india/feed/" },
+  { src: "indianexpress", url: "https://indianexpress.com/section/business/economy/feed/" },
+  { src: "indianexpress", url: "https://indianexpress.com/section/business/banking-and-finance/feed/" },
+  { src: "indianexpress", url: "https://indianexpress.com/section/technology/feed/" }
 ];
 const DESKS = [
   { id: "global",   mode: "global",   feeds: GLOBAL_FEEDS, data: "data/india.json",          seen: "data/seen.json",          rejected: "data/rejected.json",          threads: "data/threads-global.json",   archive: "data/archive/global" },
@@ -137,21 +148,32 @@ const SECTORS = [
   { id: "energy",        name: "Energy" },
   { id: "logistics",     name: "Logistics & Shipping" },
   { id: "economy",       name: "Economy & Trade" },
+  { id: "finance",       name: "Finance" },        // added 23 Oct: banks, rates, savings, insurance, markets, the rupee
   { id: "technology",    name: "Technology" },
   { id: "manufacturing", name: "Manufacturing" },
   { id: "environment",   name: "Environment & Climate" },
   { id: "agriculture",   name: "Agriculture & Food" },
   { id: "governance",    name: "Policy & Governance" }
 ];
+// What separates the two money sectors, given to the models (the site shows only the names).
+const SECTOR_HINTS = {
+  economy: "growth, inflation and jobs data, trade, tariffs, budgets and taxes",
+  finance: "banks and lenders, central-bank interest-rate and liquidity decisions, loans and deposits, insurance, pensions, mutual funds, share and bond markets, the rupee and other currencies"
+};
+const sectorList = () => SECTORS.map(s => `- ${s.id}: ${s.name}${SECTOR_HINTS[s.id] ? ` (${SECTOR_HINTS[s.id]})` : ""}`).join("\n");
 const MAX_REJECTED = 150;                      // audit trail of what the filter discarded, per desk
 const BATCH = 25;              // headlines per filter request (kept new stories from a batch go to one analysis request)
-const MAX_NEW_PER_RUN = { global: 300, domestic: 150 };   // the rest wait for the next run
+const MAX_NEW_PER_RUN = { global: 300, domestic: 250 };   // v75: India desk raised for its third outlet   // the rest wait for the next run
 const MATCH_WINDOW_DAYS = 4;   // how far back to look for the same event
 const FRESH_HOURS = 24;        // headlines older than this are skipped, never analysed (no catch-up after a pause)
 const RECENT_DAYS = 60;        // the site's main file holds the last 60 days; everything is kept in monthly archive files
 const CLASSIFY_BATCH = 40;     // reports per request when labelling older reports with their kind
 const CLASSIFY_LIMIT = 800;    // older reports labelled per desk per run (the rest wait for the next run)
 const KINDS = ["hard", "breaking", "investigative", "soft", "feature", "opinion"];
+// v75: on the Global desk an item about India by name is never rejected, except sport, entertainment, celebrity and one person's crime.
+const INDIA_NAMED = /\b(India|India's|Indian|Indians|New Delhi|Delhi|Mumbai|Bengaluru|Bangalore|Chennai|Kolkata|Hyderabad|rupee|Modi|RBI|Adani|Reliance|Tata|Infosys|Wipro|HCLTech|Mahindra)\b/i;
+const INDIA_NOT = /\b(cricket|IPL|T20|ODI|Test match|Bollywood|actor|actress|film|box office|singer|wedding|celebrity|murder|stabbed|arrested for|sentenced)\b/i;
+export function namesIndia(headline) { const h = String(headline || ""); return INDIA_NAMED.test(h) && !INDIA_NOT.test(h); }
 const KIND_RULE = `"kind" is what sort of piece it is:
 - "hard": straight reporting of events, decisions, data or policy
 - "breaking": first reports of something that has just happened, details still emerging
@@ -203,18 +225,24 @@ export function trimSentence(text, max = 320) {
 const SUMMARY_V = 3;   // v3: subtitle and opening paragraph stored separately; entities fixed   // bump to re-derive stored publisher summaries
 function plain(s) { return decode(String(s || "").replace(/<[^>]+>/g, " ")).replace(/\s+/g, " ").trim().slice(0, 400); }
 // Skip formats that duplicate an article or aren't reporting: videos, live blogs, opinion, sport, podcasts.
-function skip(title, link) {
-  if (/^(watch|listen|video)\s*:/i.test(title)) return true;
-  if (/– as it happened$|- as it happened$/i.test(title)) return true;
+// Returns the rule that matched (counted on lastRun.skipped), or "" to keep the item.
+// 23 Oct: The Long Read now goes to the filter like any other feature; market-wide moves (Sensex, Nifty, sector shares,
+// results) go to the filter too, which keeps them only with a named cause. Tips, targets, GMP and live wraps stay out.
+export function skipReason(title, link) {
+  if (/^(watch|listen|video)\s*:/i.test(title)) return "video_audio";
+  if (/– as it happened$|- as it happened$|[–-] live$/i.test(title)) return "live_blog";
   // newsletters, briefings, podcasts and round-ups summarise other reports rather than reporting news
-  if (/^((monday|tuesday|wednesday|thursday|friday|saturday|sunday|morning|evening|weekend|first edition|business today)\b[^:]{0,20})?\s*briefing\s*:/i.test(title)) return true;
-  if (/^(first edition|the long read|today in focus|business live|newsletter)\b|\b(podcast|quiz|in (\d+ )?(photos|pictures))\b|[–-] live$/i.test(title)) return true;
-  if (/\/series\/|\/info\/|\/newsletters?\//.test(link)) return true;
-  // single-stock and market-ticker items (common on business sites) edge towards stock tips
-  if (/\b(share price|shares (jump|surge|fall|slump|rise|tank|rally)|stocks? to (buy|watch)|buy or sell|target price|sensex|nifty|stock market today|ipo (gmp|allotment|subscription)|q[1-4] results?:)\b/i.test(title)) return true;
-  if (/\/market\/stock-market-news\/|\/market\/live-blog\/|\/astrology\/|\/horoscope/.test(link)) return true;
-  return /\/sport\/|\/sports\/|\/live\/|\/liveblog\/|\/videos?\/|\/program\/|\/gallery\/|\/podcasts?\/|\/opinions?\/|\/commentisfree\/|\/audio\/|\/football\/|\/lifeandstyle\/|\/culture\/|\/tv-and-radio\/|\/music\/|\/film\/|\/books\//.test(link);
+  if (/^((monday|tuesday|wednesday|thursday|friday|saturday|sunday|morning|evening|weekend|first edition|business today)\b[^:]{0,20})?\s*briefing\s*:/i.test(title)) return "briefing_newsletter";
+  if (/^(first edition|today in focus|business live|newsletter)\b/i.test(title) || /\/series\/|\/info\/|\/newsletters?\//.test(link)) return "briefing_newsletter";
+  if (/\b(podcast|quiz|in (\d+ )?(photos|pictures))\b/i.test(title)) return "podcast_quiz_gallery";
+  // stock tips and tickers: one share's price, buy/sell calls, targets, grey-market IPO premiums, live market wraps
+  if (/\b(share price|stocks? to (buy|watch)|buy or sell|target price|stock market today|ipo (gmp|allotment|subscription))\b/i.test(title)) return "stock_tips_tickers";
+  if (/\/market\/live-blog\/|\/live\/|\/liveblog\//.test(link)) return "live_blog";
+  if (/\/astrology\/|\/horoscope/.test(link)) return "section";
+  if (/\/sport\/|\/sports\/|\/videos?\/|\/program\/|\/gallery\/|\/podcasts?\/|\/opinions?\/|\/commentisfree\/|\/audio\/|\/football\/|\/lifeandstyle\/|\/culture\/|\/tv-and-radio\/|\/music\/|\/film\/|\/books\//.test(link)) return "section";
+  return "";
 }
+let skippedItems = [];   // this desk run: { reason, headline, date } for items dropped by skipReason
 // Publisher-supplied thumbnail from the feed item (linked, not copied). Prefers the widest rendition.
 function unescapeHtml(s) { return String(s || "").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&quot;/g, '"').replace(/&#39;|&apos;/g, "'").replace(/&#x([0-9a-f]+);/gi, (_, h) => String.fromCodePoint(parseInt(h, 16))).replace(/&#(\d+);/g, (_, n) => String.fromCodePoint(+n)).replace(/&amp;/g, "&"); }
 function attr(a, name) { const m = new RegExp(`\\b${name}=["']([^"']+)["']`).exec(a); return m ? m[1] : ""; }
@@ -416,7 +444,9 @@ export function parseRss(xml, src) {
     const href = tag(b, "link") || attr((/<link\b[^>]*rel=["']alternate["'][^>]*>/.exec(b) || /<link\b[^>]*>/.exec(b) || [""])[0], "href");
     const title = plain(tag(b, "title")), link = cleanUrl(href), summary = trimSentence(firstParagraph(desc)), lede = feedLede(desc);
     const pub = Date.parse(tag(b, "pubDate") || tag(b, "dc:date") || tag(b, "published") || tag(b, "updated"));
-    if (!title || !link || skip(title, link)) continue;
+    if (!title || !link) continue;
+    const why = skipReason(title, link);
+    if (why) { skippedItems.push({ reason: why, headline: title, url: link, date: isNaN(pub) ? null : new Date(pub).toISOString() }); continue; }
     items.push({ src, headline: title, url: link, summary, ...(lede ? { lede } : {}), date: isNaN(pub) ? null : new Date(pub).toISOString(), ...(imageOf(b) || {}) });
   }
   return items;
@@ -441,9 +471,13 @@ async function fetchFeeds(FEEDS) {
 /* ---------- Claude analysis ---------- */
 const SAME_EVENT_RULE = `Same story: if an item reports the same story as one of the KNOWN EVENTS below, set "sameAs" to that event's key. If it reports the same story as an EARLIER item in this list, set "sameAs" to "item:<id>". The same story includes follow-ups, updates, new details, reactions and investigations about the SAME incident, protest, conflict, crisis or announcement (for example three reports on the same protest movement, or a later update on the same war). It is a DIFFERENT story when a different actor takes a separate decision or action, even on the same topic (for example "US pressures Europe to release reserves" and "G7 agrees to release reserves" are two stories). Otherwise "sameAs" is null.`;
 
+const MARKET_RULE = {
+  global: `Markets: a move in a whole share market, a sector's shares or government bond yields is relevant when the item names a cause beyond the market itself (for example a global sell-off as US yields rise, or chip stocks falling after new US export curbs) and the move plausibly reaches ${REGION}. A move in one company's shares, stock tips, buy or sell calls, price targets, IPO grey-market premiums, and market wraps that list moves without a cause are NOT relevant.`,
+  domestic: `Markets: a move in the whole Indian share market (Sensex, Nifty), a sector's shares, government bond yields or the rupee is relevant when the item names a cause beyond the market itself (for example foreign investors selling as US yields rise, or IT shares falling on weak US client spending). One company's share move, stock tips, buy or sell calls, price targets, IPO grey-market premiums, and market wraps that list moves without a cause are NOT relevant. A single company's results are relevant only when the item shows a whole sector's direction, such as hiring across IT services.`
+};
 const RELEVANCE_RULES = {
-  global: `Keep an item only if it plausibly affects India: a global price, supply or trade shift, a policy by a major economy, a regional conflict on India's trade or energy routes, or events in or about India. Judge by what the HEADLINE is about. A story framed around another country's domestic prices, politics, services or crime is NOT relevant, even if its summary mentions a global cause (for example "UK diesel price hits record high" is not relevant; the global cause gets its own story). Elections, leadership contests and changes of government in other countries are NOT relevant unless the item itself mentions a trade, tariff, energy, sanctions or foreign-policy shift. Sport, celebrity, entertainment, lifestyle, local crime and single-company stock news are not relevant. When unsure, choose false.`,
-  domestic: `Keep an item only if it is a development of NATIONAL significance for India: national policy, regulation, budgets and taxes, RBI and banking, inflation and jobs data, infrastructure, energy, industry and manufacturing, agriculture and food supply, technology and telecom policy, environment and climate events with wide impact, and major governance developments. Mark relevant=false for crime, accidents, court cases about individuals, celebrity, entertainment, sport, religion, city- or state-level stories without national impact, party political sparring, single-company results or deals that do not affect a whole sector, and stock-market commentary. When unsure, choose false.`
+  global: `Keep an item only if it plausibly affects India: a global price, supply or trade shift, a policy by a major economy, a regional conflict on India's trade or energy routes, or events in or about India. Judge by what the HEADLINE is about. A story framed around another country's domestic prices, politics, services or crime is NOT relevant, even if its summary mentions a global cause (for example "UK diesel price hits record high" is not relevant; the global cause gets its own story). Elections, leadership contests and changes of government in other countries are NOT relevant unless the item itself mentions a trade, tariff, energy, sanctions or foreign-policy shift. Sport, celebrity, entertainment, lifestyle, local crime and single-company stock news are not relevant. ${MARKET_RULE.global} When unsure, choose false.`,
+  domestic: `Keep an item only if it is a development of NATIONAL significance for India: national policy, regulation, budgets and taxes, RBI and banking, inflation and jobs data, infrastructure, energy, industry and manufacturing, agriculture and food supply, technology and telecom policy, environment and climate events with wide impact, and major governance developments. Mark relevant=false for crime, accidents, court cases about individuals, celebrity, entertainment, sport, religion, city- or state-level stories without national impact, party political sparring, single-company results or deals that do not affect a whole sector. ${MARKET_RULE.domestic} When unsure, choose false.`
 };
 
 // Where the event itself happened: drawn on the home page's world map as a line from that place to India.
@@ -498,7 +532,7 @@ Rules:
 3. ${SAME_EVENT_RULE}
 4. ${KIND_RULE}
 Give "kind" for EVERY item, kept or not. For kept items also give "sector", the ONE sector it fits best:
-${SECTORS.map(s => `- ${s.id}: ${s.name}`).join("\n")}
+${sectorList()}
 ${PLACE_RULE}
 
 KNOWN EVENTS:
@@ -510,6 +544,34 @@ ${JSON.stringify(items)}
 Return ONLY a JSON array, one object per item:
 [{"id":0,"kind":"hard","relevant":true,"sector":"energy","place":{"name":"Strait of Hormuz","country":"Iran","lat":26.6,"lon":56.3,"involves":["United States"]},"sameAs":null}]
 For relevant=false return {"id":N,"kind":"...","relevant":false,"reason":"${mode === "domestic" ? "why it is not of national significance" : `why it does not reach ${REGION}`}, under 15 words","sameAs":null}.`;
+}
+
+// One-off (23 Oct): recent stories whose main subject is finance move from Economy & Trade or Policy into Finance.
+const FINANCE_DAYS = 30, FINANCE_LIMIT = 200, FINANCE_BATCH = 40;
+function financePrompt(items) {
+  return `For each news story below, say whether its MAIN subject is finance: ${SECTOR_HINTS.finance}. Growth, inflation and jobs data, trade, tariffs, budgets and taxes are NOT finance.
+
+Stories:
+${JSON.stringify(items)}
+
+Return ONLY a JSON array: [{"id":0,"finance":false}]`;
+}
+async function moveToFinance(data) {
+  const fin = data.sectors.find(s => s.id === "finance"); if (!fin) return { moved: 0 };
+  const cut = new Date(Date.now() - FINANCE_DAYS * 864e5).toISOString();
+  const pending = data.sectors.filter(s => ["economy", "governance"].includes(s.id)).flatMap(sec => sec.items.filter(ev => !ev.finChecked && latest(ev) >= cut).map(ev => ({ ev, sec })))
+    .sort((a, b) => latest(b.ev).localeCompare(latest(a.ev))).slice(0, FINANCE_LIMIT);
+  let moved = 0, checked = 0, failed = 0;
+  for (let k = 0; k < pending.length; k += FINANCE_BATCH) {
+    const batch = pending.slice(k, k + FINANCE_BATCH);
+    try {
+      const res = await callClaude(financePrompt(batch.map((x, i) => ({ id: i, headline: x.ev.headline, summary: (x.ev.reports || []).map(r => r.summary).find(Boolean) || x.ev.why || "" }))), "filter");
+      const yes = new Set((res || []).filter(r => r?.finance === true).map(r => +r.id));
+      batch.forEach((x, i) => { x.ev.finChecked = true; checked++;
+        if (yes.has(i)) { x.sec.items = x.sec.items.filter(e => e !== x.ev); fin.items.push(x.ev); moved++; } });
+    } catch (e) { if (e instanceof BudgetError) break; console.error(`Finance check failed: ${e.message}`); failed++; }
+  }
+  return { moved, checked, ...(failed ? { failedBatches: failed } : {}) };
 }
 
 // One-off labelling of older reports with their kind (no change to their analysis).
@@ -549,7 +611,8 @@ const ANALYSIS_V = 3;           // v3: complete sentences throughout, background
 const ANALYSIS_CHUNK = 3;      // stories per Opus request (each analysis is long)
 const FEATURE_BATCH = 12;      // stories per feature-question request
 const REFRAME_LIMIT = 12;      // existing stories (re)analysed per desk per run, newest first
-const REFRAME_DAYS = 7;        // older stories keep the analysis they have
+const REFRAME_DAYS = 7;
+const READING_DAYS = 90;       // feature pieces offered as background reading        // older stories keep the analysis they have
 
 const FRAMEWORKS = {
   impact_chain:   "Impact chain",
@@ -562,24 +625,26 @@ const FRAMEWORKS = {
   conflicting:    "Conflicting accounts",
   timeline:       "Timeline & attribution",
   escalation:     "Conflict escalation ladder",
+  market_move:    "Market move",
   scenarios:      "Scenarios & signposts"
 };
 // Fixed priority: the first feature that is true picks the primary framework.
 const PRIORITY = [
   ["conflict", "conflicting"], ["scheduled", "decoder"], ["disruption", "disruption_map"], ["armed_conflict", "escalation"],
-  ["trade_flow", "trade_flow"], ["policy_stage", "policy_tracker"], ["price_move", "pass_through"],
+  ["trade_flow", "trade_flow"], ["policy_stage", "policy_tracker"], ["market_move", "market_move"], ["price_move", "pass_through"],
   ["allocation", "winners_losers"], ["fast_moving", "timeline"]
 ];
-const FEATURE_KEYS = ["conflict", "scheduled", "disruption", "armed_conflict", "trade_flow", "policy_stage", "price_move", "allocation", "fast_moving", "pending_outcome"];
+const FEATURE_KEYS = ["conflict", "scheduled", "disruption", "armed_conflict", "trade_flow", "policy_stage", "market_move", "price_move", "allocation", "fast_moving", "pending_outcome"];
 function pickPrimary(f) { for (const [k, fw] of PRIORITY) if (f && f[k]) return fw; return "impact_chain"; }
 // Deep-dive pairing, evaluated in order. Never pairs a framework with itself.
 function pickComplement(primary, f) {
   const order = {
     impact_chain:   [f.pending_outcome && "scenarios", "winners_losers"],
     disruption_map: [f.armed_conflict && "escalation", f.price_move && "pass_through", f.pending_outcome && "scenarios", "winners_losers"],
-    trade_flow:     [f.price_move && "pass_through", f.pending_outcome && "scenarios", "winners_losers"],
+    trade_flow:     [f.market_move && "market_move", f.price_move && "pass_through", f.pending_outcome && "scenarios", "winners_losers"],
     policy_tracker: [f.pending_outcome && "scenarios", "winners_losers"],
-    decoder:        ["pass_through", "winners_losers"],
+    decoder:        [f.market_move && "market_move", "pass_through", "winners_losers"],
+    market_move:    [f.pending_outcome && "scenarios", "winners_losers"],
     pass_through:   ["winners_losers"],
     winners_losers: [f.pending_outcome && "scenarios", "impact_chain"],
     conflicting:    ["impact_chain"],
@@ -589,12 +654,15 @@ function pickComplement(primary, f) {
   return order.find(x => x && x !== primary) || null;
 }
 // Depth tier from the story's own reports.
-function tierOf(ev) {
+// A one-day market move stays a Quick read (decision 23 Oct); a run of days or a record can go deeper.
+const RECORD = /\b(record|all[- ]time|lowest since|highest since|\d+-(year|month|week) (high|low)|worst (day|week|month|year)|best (day|week|month|year))\b/i;
+function tierOf(ev, primary) {
   const reps = ev.reports || [];
   const outlets = new Set(reps.map(r => r.source)).size;
   const ts = reps.map(r => Date.parse(r.date)).filter(t => !isNaN(t));
   const spanDays = ts.length ? (Math.max(...ts) - Math.min(...ts)) / 864e5 : 0;
   if (outlets < 2) return "quick";
+  if (primary === "market_move" && spanDays < 2 && !reps.some(r => RECORD.test(r.headline || ""))) return "quick";
   if (spanDays >= 3 || reps.length >= 5 || (ev.relevance === "high" && outlets >= 3)) return "deep";
   return "standard";
 }
@@ -610,6 +678,7 @@ Questions (true or false):
 - "armed_conflict": military action, an attack by an armed group, strikes, troop movements, or ceasefire/war talks.
 - "trade_flow": a NAMED good and a NAMED partner with a change in buying or selling, or a tariff, sanction, ban, quota or trade deal that changes such a flow.
 - "policy_stage": a NAMED law, regulation, rule or scheme reported at a stage (proposed, draft, passed, notified, takes effect, delayed, struck down) with a further stage still pending.
+- "market_move": the headline is about a move in a whole share market or index (for example Sensex, Nifty, S&P 500), a whole sector's shares, or government bond yields. Not one company's shares, and not a currency or commodity price on its own.
 - "price_move": the headline is a change in a price, exchange rate or interest rate, or an immediate one-off tax or duty change.
 - "allocation": an action by a named company or industry (merger, investment, plant opening or closure, layoffs, large contract) or an allocation decision (budget, MSP, subsidy, quota).
 - "fast_moving": three or more developments in sequence across the reports, or responsibility for an act is disputed.
@@ -618,10 +687,10 @@ Questions (true or false):
 Stories:
 ${JSON.stringify(items)}
 
-Return ONLY a JSON array: [{"id":0,"conflict":false,"scheduled":false,"disruption":true,"armed_conflict":true,"trade_flow":false,"policy_stage":false,"price_move":false,"allocation":false,"fast_moving":false,"pending_outcome":true}]`;
+Return ONLY a JSON array: [{"id":0,"conflict":false,"scheduled":false,"disruption":true,"armed_conflict":true,"trade_flow":false,"policy_stage":false,"market_move":false,"price_move":false,"allocation":false,"fast_moving":false,"pending_outcome":true}]`;
 }
 
-const GROUPS = ["Fuel & LPG users", "Food shoppers", "Borrowers", "Depositors & savers", "Salaried workers", "Farmers", "Fishers", "MSME exporters", "Large exporters", "Importers & traders", "Students abroad", "Gulf & overseas workers and families", "Travellers & pilgrims", "IT & services workers", "Manufacturing workers", "Power consumers", "Government finances", "A named state or region"];
+const GROUPS = ["Fuel & LPG users", "Food shoppers", "Borrowers", "Depositors & savers", "Equity & mutual fund investors", "Salaried workers", "Farmers", "Fishers", "MSME exporters", "Large exporters", "Importers & traders", "Students abroad", "Gulf & overseas workers and families", "Travellers & pilgrims", "IT & services workers", "Manufacturing workers", "Power consumers", "Government finances", "A named state or region"];
 const FW_SPEC = {
   impact_chain: `"impact_chain": {"chain":[{"step":"short label for the step, ≤8 words","detail":"one or two complete sentences, ≤40 words, explaining what happens at this step and how it leads to the next","basis":"reported|inferred"}], "breaks_if":"one complete sentence, ≤35 words, on the condition that would stop the effect reaching India"}. 3 steps at Quick read, up to 4 otherwise. The first step must be reported. At most 1 inferred step at Quick read, 2 otherwise.`,
   disruption_map: `"disruption_map": {"node":{"name":"...","type":"port|airport|strait|canal|pipeline|refinery|power plant|factory|rail|road|other","status":"closed|partial|open|unknown","as_of":"date/time as reported"},"cause":{"text":"one complete sentence, ≤35 words","status":"confirmed|claimed|alleged"},"flows":[{"flow":"crude|LNG|containers|air passengers|workers|pilgrims|cargo|other","india_link":"one or two complete sentences, ≤40 words, on how this flow reaches India and who depends on it","basis":"reported|inferred"}],"alternatives":["each a short phrase as reported"],"duration":"as reported, or 'not reported'"}. Only flows named in the reports.`,
@@ -633,6 +702,7 @@ const FW_SPEC = {
   conflicting: `"conflicting": {"disputed":{"item":"what is disputed, as a short phrase","unit":"..."},"accounts":[{"outlet":"...","value":"as reported","origin":"who the figure or claim comes from","time":"as reported"}],"agreed":["complete sentences: facts all reports agree on"],"explanations":[{"type":"different time|different source|different definition|unexplained","note":"one complete sentence, ≤35 words, on why the accounts may differ"}],"status":"unresolved|converging|resolved"}. Never average or pick a side; use neutral verbs.`,
   timeline: `"timeline": {"entries":[{"when":"as reported","what":"one complete sentence, ≤35 words","actor":"...","outlet":"...","type":"action|claim|denial|confirmation","verification":"confirmed|claimed|contested"}],"current_status":"one or two complete sentences, ≤45 words","open_questions":["each a complete question, ≤25 words"]}. Oldest first, up to 6 entries. Keep both sides of any contested claim.`,
   escalation: `"escalation": {"move":"up|down|none","rung":4,"development":"one complete sentence, ≤35 words, on what THIS story adds to the war: an attack, a deployment, talks, a threat, a proposal","evidence":"one or two complete sentences, ≤40 words: for up or down, the reported action that moves the war to the new rung; for none, why the war's level stays where it is","next_signals":[{"rung":5,"signal":"one complete sentence, ≤30 words, describing the observable event that would show a move to that rung"}],"india_channels":["oil|shipping|remittances|diaspora safety|flights|trade"]}. The rung belongs to the WAR, not to this story. The story's "war" gives the war's current rung, the date it was set and the action behind it: start from that rung. "up" only if these reports describe a NEW action at a higher rung that took place after that date. "down" only if they report a de-escalation that has actually happened: a ceasefire or truce in force, a withdrawal, or fighting reported to have stopped. Talks, proposals, offers, statements and threats never move it down. Otherwise "none", with "rung" equal to the war's current rung. If the story has no "war", or the war has no rung yet, set "rung" from the actions reported and "move":"none". Next signals are observable events for other rungs, judged from the war's rung after your move. Rungs: 1 Rhetoric and threats; 2 Sanctions and diplomatic measures; 3 Mobilisation and posturing; 4 Limited strikes or attacks; 5 Sustained strikes; 6 Strikes on critical infrastructure or third countries; 7 Full-scale war. The rung must match actions actually reported; never predict.`,
+  market_move: `"market_move": {"moved":{"what":"the market, index, sector or bond that moved, e.g. Sensex, Nifty IT index, US 10-year Treasury yield","kind":"share index|sector shares|bond yields|other","direction":"up|down|mixed","size":"the move as reported, e.g. '900 points' or '2.1%', or empty","period":"as reported, e.g. 'on Thursday' or 'this week'"},"cause":{"text":"one or two complete sentences, ≤40 words, on the cause the reports give","status":"reported|claimed","by":"who gives the cause, e.g. exchange data, the central bank, analysts quoted by the outlet"},"duration":"one_day|multi_day|record|unclear","channels":[{"channel":"foreign investment flows|rupee|borrowing costs|company earnings|jobs in the sector|household savings|other","india_link":"one or two complete sentences, ≤40 words, on how this move reaches people or businesses in ${REGION}","basis":"reported|inferred"}],"not_settled":"one complete sentence, ≤30 words, on what the reports say is still unknown, or empty"}. 1 channel at Quick read, up to 3 otherwise. Explain what moved and why. Never say where markets will go next, never suggest buying, selling or holding anything, and never name a share as a winner. "one_day" unless the reports describe a run of days ("multi_day") or a record.`,
   scenarios: `"scenarios": {"question":"the unresolved thing, as a complete question, ≤25 words","scenarios":[{"name":"short label, ≤5 words","what":"one or two complete sentences, ≤40 words, on what would happen","signal":"one complete sentence, ≤30 words, on the observable sign that this path is unfolding","india_effect":"one or two complete sentences, ≤40 words, cautious, on what it would mean for India"}]}. 2 or 3 scenarios, each tied to an outcome named in the reports or an official position. No probabilities, no ranking.`
 };
 
@@ -779,11 +849,12 @@ async function prepareWars(events) {
 }
 
 function analysisPrompt(batch, mode) {
-  const sectors = SECTORS.map(s => `- ${s.id}: ${s.name}`).join("\n");
+  const sectors = sectorList();
   const lens = mode === "domestic" ? `explains what developments INSIDE ${REGION} mean for people and businesses in ${REGION}` : `explains how world news affects ${REGION}`;
   const check = mode === "domestic" ? `of national significance for ${REGION}` : `something that plausibly affects ${REGION}`;
   const used = [...new Set(batch.flatMap(x => [x.primary, x.complement]).filter(Boolean))];
-  const items = batch.map(x => ({ id: x.i, kind: x.kind, tier: x.tier, frameworks: [x.primary, x.complement].filter(Boolean), ...(x.war ? { war: x.war } : {}), reports: x.reports }));
+  const items = batch.map(x => ({ id: x.i, kind: x.kind, tier: x.tier, frameworks: [x.primary, x.complement].filter(Boolean), ...(x.war ? { war: x.war } : {}), reports: x.reports,
+    ...(x.reading?.length ? { background_reading: x.reading.map(r => ({ outlet: OUTLETS[r.source] || r.source, date: String(r.date || "").slice(0, 10), headline: r.headline, summary: r.summary || "" })) } : {}) }));
   return `You are the senior analysis desk of an intelligence product that ${lens}. For each story, write the universal block and fill the framework(s) listed for it, using ONLY the reports given.
 
 UNIVERSAL BLOCK (every story):
@@ -816,6 +887,7 @@ RULES:
 3. Never give advice of any kind: no stocks, investments, trades, buying, selling, locking in rates, stocking up or timing decisions. Explain mechanisms only.
 4. Kind "breaking": early report; keep effects conditional and confidence at most medium. Kind "investigative": attribute findings to the outlet ("The Guardian reports that…").
 5. If, on a careful reading, a story is not ${check}, return {"id":N,"relevant":false,"reason":"≤15 words"}.
+6. "background_reading", when a story has it, holds feature pieces from the same storyline, not reports of this event. Use them only to write "context". Never take facts, numbers or claims about this event from them.
 
 Sectors:
 ${sectors}
@@ -827,8 +899,10 @@ Return ONLY a JSON array, one object per story: [{"id":0,"relevant":true,"sector
 }
 
 // ----- validators -----
-const ADVICE = /\b(you should|readers should|consider (buying|selling|investing|locking|hedging|stocking)|good (time|window|moment) to|lock(ing)? in (a |the )?(rate|fd|deposit|price)|stock up|bulk (buy|buying|purchases?)|buy (now|before|more)|sell (now|before)|(buy|sell|hold) (rating|call|recommendation)|target price|multibagger|outperform|portfolio|invest in|investors? should)\b/i;
-function noAdvice(s) { return typeof s === "string" && !ADVICE.test(s); }
+const ADVICE = /\b(you should|readers should|consider (buying|selling|investing|locking|hedging|stocking)|good (time|window|moment) to|lock(ing)? in (a |the )?(rate|fd|deposit|price)|stock up|bulk (buy|buying|purchases?)|buy (now|before|more)|sell (now|before)|(buy|sell|hold) (rating|call|recommendation)|target price|multibagger|outperform|(?<!foreign )(?<!foreign-)portfolio(?! invest)|(should|could|might want to|may want to|better to) (consider )?invest(ing)? in|investors? should)\b/i;
+// 23 Oct: no forecasts of where markets go next (the market framework explains moves, never predicts them).
+const FORECAST = /\b(sensex|nifty|markets?|stocks?|shares|equities|indices|index|bonds?)\b[^.]{0,50}\b(will|set to|poised to|likely to|expected to|could soon|bound to)\s+(rally|rebound|recover|bounce|crash|correct|tumble|plunge|surge|soar|climb|fall further|rise further|bottom out|hit (new |fresh )?(highs?|lows?))\b|\bcorrection (is )?(ahead|coming|likely|due)\b|\b(buying opportunity|entry point|book(ing)? profits?|bottom(ed)? out|time the market)\b/i;
+function noAdvice(s) { return typeof s === "string" && !ADVICE.test(s) && !FORECAST.test(s); }
 function numbersIn(text) { return new Set((String(text).replace(/(\d),(?=\d{2,3}\b)/g, "$1").match(/\d+(\.\d+)?/g) || []).map(Number)); }
 function str(x, n = 240) { return typeof x === "string" ? x.trim().slice(0, n) : ""; }
 function numOrNull(x) { if (typeof x === "number" && isFinite(x)) return x; if (typeof x === "string" && /^-?[\d,]+(\.\d+)?$/.test(x.trim())) return +x.replace(/,/g, ""); return null; }
@@ -879,6 +953,13 @@ function cleanFramework(key, f, nums) {
       return { move: pick(f.move, ["up", "down", "none"], "none"), rung: r, current_rung: r, previous_rung: null, development: s(f.development, 300), evidence: s(f.evidence, 400),
         next_signals: arr(f.next_signals, 3).map(x => ({ rung: Math.round(+x?.rung), signal: s(x?.signal, 300) })).filter(x => x.rung >= 1 && x.rung <= 7 && x.signal),
         india_channels: arr(f.india_channels, 6).map(x => clip(x, 30)).filter(Boolean) }; }
+    case "market_move": { const m = f.moved || {}; if (!clip(m.what)) return null;
+      const size = clip(m.size, 30);
+      return { moved: { what: clip(m.what, 60), kind: pick(m.kind, ["share index", "sector shares", "bond yields", "other"], "other"), direction: pick(m.direction, ["up", "down", "mixed"], "mixed"), size: size && noNewNumbers(size, nums) ? size : "", period: clip(m.period, 40) },
+        cause: f.cause && s(f.cause.text, 320) ? { text: s(f.cause.text, 320), status: pick(f.cause.status, ["reported", "claimed"], "claimed"), by: clip(f.cause.by, 60) } : null,
+        duration: pick(f.duration, ["one_day", "multi_day", "record", "unclear"], "unclear"),
+        channels: arr(f.channels, 3).map(x => ({ channel: clip(x?.channel, 30), india_link: s(x?.india_link, 350), basis: pick(x?.basis, ["reported", "inferred"], "inferred") })).filter(x => x.channel && x.india_link),
+        not_settled: s(f.not_settled, 260) }; }
     case "scenarios": { const sc = arr(f.scenarios, 3).map(x => ({ name: s(x?.name, 60), what: s(x?.what, 400), signal: s(x?.signal, 300), india_effect: s(x?.india_effect, 300) })).filter(x => x.name && x.what);
       return sc.length >= 2 ? { question: s(f.question, 300), scenarios: sc } : null; }
   }
@@ -908,6 +989,8 @@ function cleanAnalysis(r, plan, reportText) {
   for (const k of [plan.primary, plan.complement].filter(Boolean)) { const f = cleanFramework(k, r[k], nums); if (f) a.frameworks[k] = f; }
   if (!a.frameworks[plan.primary]) a.frameworksMissing = true;
   if (a.frameworks.escalation && plan.war && plan.war !== "none") applyLadder(a.frameworks.escalation, plan.war, plan);
+  if (plan.tier !== "quick" && plan.reading?.length) a.reading = plan.reading.map(r => ({ headline: r.headline, url: r.url, source: r.source, date: r.date }));
+  if (plan.primary === "market_move" && plan.tier === "quick" && new Set((plan.reports || []).map(x => x.source)).size >= 2) a.capped = "one-day market move";
   // Rule check: High confidence needs three or more outlets (the rubric's own threshold), whatever the model said.
   if (a.confidence?.level === "high" && (a.outlets || 0) < 3) { a.confidence.level = "medium"; a.confidence.capped = true; }
   return a;
@@ -927,9 +1010,9 @@ async function analyseStories(list, mode, level = "core") {
   }
   const planned = list.map(x => {
     const f = feats.get(x.i) || {};
-    const tier = tierOf({ reports: x.reports, relevance: x.relevance });
     // Sticky primary: once a story has reached Standard, keep its lens unless it is a conflict of accounts.
     const primary = (x.prev?.primary && x.prev.tier !== "quick" && !f.conflict) ? x.prev.primary : pickPrimary(f);
+    const tier = tierOf({ reports: x.reports, relevance: x.relevance }, primary);
     const complement = tier === "deep" ? pickComplement(primary, f) : null;
     return { ...x, primary, complement, tier, features: Object.keys(f).filter(k => f[k]) };
   });
@@ -945,7 +1028,7 @@ async function analyseStories(list, mode, level = "core") {
   for (const [job, group] of [["analysis", planned.filter(x => x.tier !== "quick")], ["analysis_quick", planned.filter(x => x.tier === "quick")]])
     for (let k = 0; k < group.length; k += ANALYSIS_CHUNK) {
       const chunk = group.slice(k, k + ANALYSIS_CHUNK);
-      const res = await callClaude(analysisPrompt(chunk.map(x => ({ i: x.i, kind: x.kind, tier: x.tier, primary: x.primary, complement: x.complement, war: [x.primary, x.complement].includes("escalation") ? warForPrompt(x.war) : null, reports: reportsForPrompt(x.reports) })), mode), job, level);
+      const res = await callClaude(analysisPrompt(chunk.map(x => ({ i: x.i, kind: x.kind, tier: x.tier, primary: x.primary, complement: x.complement, war: [x.primary, x.complement].includes("escalation") ? warForPrompt(x.war) : null, reports: reportsForPrompt(x.reports), reading: x.tier !== "quick" ? x.reading : null })), mode), job, level);
       for (const r of res || []) { const x = chunk.find(c => c.i === +r?.id); if (x) out.set(x.i, { r, plan: x }); }
     }
   return out;
@@ -963,15 +1046,20 @@ async function reframeRecent(data, mode) {
   // Also re-analyse when the story has grown: two or more reports published after the analysis was written
   // (e.g. a trade deal first reported as import duties, later as zero-duty access for Indian exports and new visas).
   const grown = ev => !!ev.analysis?.at && (ev.reports || []).filter(r => (r.date || "") > ev.analysis.at).length >= 2;
-  const stale = ev => ev.analysis?.v !== ANALYSIS_V || TIER_RANK[tierOf(ev)] > TIER_RANK[ev.analysis.tier] || grown(ev);
+  const stale = ev => ev.analysis?.v !== ANALYSIS_V || TIER_RANK[tierOf(ev, ev.analysis.primary)] > TIER_RANK[ev.analysis.tier] || grown(ev);
   const cut = new Date(Date.now() - REFRAME_DAYS * 864e5).toISOString();
   const all = data.sectors.flatMap(sec => sec.items).filter(ev => eligible(ev) && stale(ev) && latest(ev) >= cut).sort((a, b) => latest(b).localeCompare(latest(a)));
   const due = all.slice(0, REFRAME_LIMIT);
+  // Background reading: up to 2 feature pieces (explainers, The Long Read) from the same storyline, newest first.
+  const readCut = new Date(Date.now() - READING_DAYS * 864e5).toISOString();
+  const features = data.sectors.flatMap(sec => sec.items).filter(ev => ev.thread && kindOfEv(ev) === "feature" && latest(ev) >= readCut);
+  const readingFor = ev => !ev.thread ? [] : features.filter(x => x.thread === ev.thread && x.id !== ev.id).sort((a, b) => latest(b).localeCompare(latest(a))).slice(0, 2)
+    .map(x => ({ headline: x.headline, url: x.url, source: x.source, date: x.date, summary: (x.reports || []).map(r => r.summary).find(Boolean) || "" }));
   let done = 0, failed = 0, stopped = false;
   for (let k = 0; k < due.length; k += ANALYSIS_CHUNK * 2) {
     const chunk = due.slice(k, k + ANALYSIS_CHUNK * 2);
     try {
-      const res = await analyseStories(chunk.map((ev, i) => ({ i, id: ev.id, headline: ev.headline, url: ev.url, war: ev.conflict, kind: kindOfEv(ev), reports: ev.reports || [], relevance: ev.relevance, prev: ev.analysis })), mode, "extra");
+      const res = await analyseStories(chunk.map((ev, i) => ({ i, id: ev.id, headline: ev.headline, url: ev.url, war: ev.conflict, kind: kindOfEv(ev), reports: ev.reports || [], relevance: ev.relevance, prev: ev.analysis, reading: readingFor(ev) })), mode, "extra");
       chunk.forEach((ev, i) => { const o = res.get(i); if (!o || o.r.relevant === false) return; applyAnalysis(ev, o.r, o.plan); done++; });
     } catch (e) { if (e instanceof BudgetError) { stopped = true; break; } console.error(`Framework batch failed: ${e.message}`); failed++; }
   }
@@ -984,7 +1072,7 @@ async function reframeRecent(data, mode) {
 // appears on an official page fetched (or quoted by a citation) in this answer; short numbers must also sit near
 // their year. A series needs at least 3 checked figures to be shown.
 const STATS_V = 2;              // v2: verify against fetched page text, not only the short citation snippets
-const STATS_LIMIT = 4;          // stories per desk per run that get statistics (searched or reused)
+const STATS_LIMIT = 8;          // v75: stories per desk per run that get statistics (searched or reused); was 4
 const STATS_LIBRARY = "data/stats-library.json";   // every checked series found so far, shared by both desks
 const LIBRARY_MAX = 300, LIBRARY_FRESH_DAYS = 45;  // reused only while recent enough
 const STATS_MIN_POINTS = 3;
@@ -1109,8 +1197,8 @@ function foundIn(text, pat, period) {
   }
   return false;
 }
-function parseStats(content) {
-  const pages = fetchedPages(content);
+export function parseStats(content, extraPages = []) {
+  const pages = [...fetchedPages(content), ...extraPages];
   const series = []; let s = null;
   const diag = { said: "nothing", proposed: 0, kept: 0, notFound: 0, pagesFetched: pages.length };
   for (const { text, cites } of linesWithCitations(content)) {
@@ -1182,12 +1270,43 @@ async function reuseFromLibrary(ev, lib) {
   const why = typeof pick.why === "string" && noAdvice(pick.why) && !/\d{2,}/.test(pick.why) ? str(pick.why, 200) : "";
   return ids.map(i => { const { key, at, firstFor, ...x } = options[i]; return { ...x, why, reused: true, checkedAt: at }; });
 }
-// In-depth stories (and standard stories with high exposure) get statistics once, newest first: a saved series if one
-// fits, otherwise a search. Results are kept with the story.
+// v75: statistics follow the data, not the depth. A story about a data release, a price, a trade flow, a market move, a
+// rate decision or an energy or shipping disruption gets a chart at any depth (most India-desk stories are Quick reads
+// because each comes from one outlet); in-depth stories still qualify as before. Data stories go first, newest first.
+const DATA_FEATURES = ["scheduled", "price_move", "trade_flow", "market_move"];
+const DATA_FRAMEWORKS = ["decoder", "pass_through", "trade_flow", "market_move"];
+export function dataFit(ev, sectorId) {
+  const a = ev.analysis || {}, f = Array.isArray(a.features) ? a.features : Object.keys(a.features || {}).filter(k => a.features[k]);
+  return f.some(x => DATA_FEATURES.includes(x)) || DATA_FRAMEWORKS.includes(a.primary) || DATA_FRAMEWORKS.includes(a.complement)
+    || (f.includes("disruption") && ["energy", "logistics"].includes(sectorId));
+}
+// The model sometimes names an official page without opening it, and every figure is then thrown away. The engine
+// fetches up to two such pages itself and checks the figures against their text.
+async function fetchOfficialText(url) {
+  try {
+    const ctl = new AbortController(); const t = setTimeout(() => ctl.abort(), 15000);
+    const r = await fetch(url, { signal: ctl.signal, headers: { "user-agent": "Mozilla/5.0 (compatible; TheConnectBot/1.0)" } }); clearTimeout(t);
+    if (!r.ok || !/html|text/.test(r.headers.get("content-type") || "")) return null;
+    const html = (await r.text()).slice(0, 2_000_000);
+    const text = html.replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>/gi, " ").replace(/<\/(td|th|tr|p|div|li|h\d)>/gi, "$& | ").replace(/<[^>]+>/g, " ")
+      .replace(/&nbsp;/g, " ").replace(/&amp;/g, "&").replace(/\s+/g, " ");
+    const title = (/<title[^>]*>([^<]*)/i.exec(html) || [])[1] || domainOf(url);
+    return { url, title: title.trim().slice(0, 120), text };
+  } catch { return null; }
+}
+export function namedSources(content) {
+  const urls = [];
+  for (const b of content) if (b.type === "text") for (const line of String(b.text || "").split("\n")) {
+    const f = line.split("|").map(x => x.trim()); if (f[0] === "SOURCE" && f[1]) { const u = f.slice(1).join("|"); if (isOfficial(u) && !urls.includes(u)) urls.push(u); }
+  }
+  return urls;
+}
 async function addStatistics(data, mode) {
-  const want = ev => ev.analysis?.v >= 2 && (ev.analysis.tier === "deep" || (ev.analysis.tier === "standard" && ev.analysis.exposure?.level === "high"));
-  const due = data.sectors.flatMap(sec => sec.items).filter(ev => want(ev) && (ev.stats?.v !== STATS_V || (ev.stats.reuseOnly && ev.analysis.tier === "deep")))
-    .sort((a, b) => latest(b).localeCompare(latest(a))).slice(0, STATS_LIMIT);
+  const items = data.sectors.flatMap(sec => sec.items.map(ev => ({ ev, sid: sec.id })));
+  const want = ({ ev, sid }) => ev.analysis?.v >= 2 && (dataFit(ev, sid) || ev.analysis.tier === "deep" || (ev.analysis.tier === "standard" && ev.analysis.exposure?.level === "high"));
+  const due = items.filter(x => want(x) && (x.ev.stats?.v !== STATS_V || (x.ev.stats.reuseOnly && (dataFit(x.ev, x.sid) || x.ev.analysis.tier === "deep"))))
+    .sort((a, b) => (dataFit(b.ev, b.sid) - dataFit(a.ev, a.sid)) || latest(b.ev).localeCompare(latest(a.ev))).slice(0, STATS_LIMIT)
+    .map(x => Object.assign(x.ev, { __fit: dataFit(x.ev, x.sid) }));
   const lib = await loadLibrary(); let changed = false;
   // First run with the library: seed it with the charts already on the desk.
   for (const ev of data.sectors.flatMap(sec => sec.items)) if (ev.stats?.series?.length && !ev.stats.series.some(x => x.reused) && !ev.stats.series.every(x => lib.some(y => y.key === seriesKey(x)))) { addToLibrary(lib, ev.stats.series, ev, ev.stats.at); changed = true; }
@@ -1199,14 +1318,22 @@ async function addStatistics(data, mode) {
       if (again) { ev.stats = { v: STATS_V, at: new Date().toISOString(), series: again }; reused++; samples.push({ headline: str(ev.headline, 80), result: "reused saved series" }); continue; }
       // New web searches cost the most, so they are kept for in-depth stories (decision 20 Oct). A standard story with
       // nothing suitable on file is marked done without a search; it gets a fresh look if it later turns in-depth.
-      if (ev.analysis.tier !== "deep") { ev.stats = { v: STATS_V, at: new Date().toISOString(), series: [], reuseOnly: true }; none++; samples.push({ headline: str(ev.headline, 80), result: "no saved series; search kept for in-depth stories" }); continue; }
-      const { series, diag } = parseStats(await callStats(statsPrompt(ev, mode)));
+      const fit = ev.__fit; delete ev.__fit;
+      if (ev.analysis.tier !== "deep" && !fit) { ev.stats = { v: STATS_V, at: new Date().toISOString(), series: [], reuseOnly: true }; none++; samples.push({ headline: str(ev.headline, 80), result: "no saved series; search kept for data and in-depth stories" }); continue; }
+      const content = await callStats(statsPrompt(ev, mode));
+      let { series, diag } = parseStats(content);
+      if (!series.length && diag.proposed) {                     // figures proposed but none checked: open the named pages ourselves
+        const have = new Set(fetchedPages(content).map(p => p.url));
+        const extra = (await Promise.all(namedSources(content).filter(u => !have.has(u)).slice(0, 2).map(fetchOfficialText))).filter(Boolean);
+        if (extra.length) { const again = parseStats(content, extra); series = again.series; diag = { ...again.diag, selfFetched: extra.length }; }
+      }
       ev.stats = { v: STATS_V, at: new Date().toISOString(), series };
       if (series.length) { found++; addToLibrary(lib, series, ev); } else none++;
       droppedPoints += diag.notFound; proposed += diag.proposed; pagesFetched += diag.pagesFetched;
-      samples.push({ headline: str(ev.headline, 80), result: series.length ? "chart" : diag.said, proposed: diag.proposed, checked: diag.kept, pagesFetched: diag.pagesFetched });
+      samples.push({ headline: str(ev.headline, 80), result: series.length ? "chart" : diag.said, proposed: diag.proposed, checked: diag.kept, pagesFetched: diag.pagesFetched, ...(diag.selfFetched ? { selfFetched: diag.selfFetched } : {}) });
     } catch (e) { if (e instanceof BudgetError) { stopped = true; break; } console.error(`Statistics for "${ev.headline}" failed: ${e.message}`); failed++; }
   }
+  for (const ev of due) delete ev.__fit;
   if (found || changed) await saveLibrary(lib);
   return { searched: due.length, found, reused, none, failed, proposed, droppedPoints, pagesFetched, samples, ...(stopped ? { budgetStopped: true } : {}) };
 }
@@ -1579,7 +1706,7 @@ export async function main() {
 }
 
 async function runDesk(desk) {
-  feedHealth = {}; usage = {};
+  feedHealth = {}; usage = {}; skippedItems = [];
   let data = await readJson(desk.data, null);
   let seen = new Set(await readJson(desk.seen, []));
   if (!data || data.schema !== SCHEMA) {
@@ -1629,6 +1756,10 @@ async function runDesk(desk) {
     if (!ev.image) { const r = (ev.reports || []).find(x => x.image); if (r) { ev.image = r.image; if (r.imageLarge) ev.imageLarge = r.imageLarge; backfilled++; } }
   }
   if (backfilled) console.log(`Added images to ${backfilled} existing stories`);
+  // v75 one-off: stories that v73/v74 put on Watch or Brief become ordinary stories again (recent ones get analysed by the re-analysis step).
+  let unstaged = 0;
+  for (const ev of allEvents()) if (ev.stage || ev.watch) { delete ev.stage; delete ev.watch; delete ev.priority; unstaged++; }
+  if (unstaged) console.log(`${unstaged} Watch/Brief stories from v73-v74 returned to the main feed`);
   const freshCut = Date.now() - FRESH_HOURS * 36e5;
   const stale = fetched.filter(it => it.date && Date.parse(it.date) < freshCut && !seen.has(it.url)).length;
   if (stale) console.log(`${stale} headlines older than ${FRESH_HOURS} hours skipped`);
@@ -1641,9 +1772,17 @@ async function runDesk(desk) {
     .reverse();                                                    // ...then process them in time order so the first report leads
   console.log(`${fresh.length} new headlines to analyse: ` + deskOutlets.map(k => `${OUTLETS[k]} ${fresh.filter(f => f.src === k).length}`).join(", "));
   console.log("Feed health: " + JSON.stringify(feedHealth));
+  // Format skips since the previous run (unique links), with a few examples per rule so the rules can be reviewed.
+  const prevRun = Date.parse(data.updatedAt || "") || Date.now() - 3 * 36e5;
+  const skipped = { since: new Date(prevRun).toISOString(), counts: {}, examples: {} };
+  for (const it of new Map(skippedItems.filter(x => !x.date || Date.parse(x.date) >= prevRun).map(x => [x.url, x])).values()) {
+    skipped.counts[it.reason] = (skipped.counts[it.reason] || 0) + 1;
+    const ex = skipped.examples[it.reason] ||= []; if (ex.length < 5) ex.push(it.headline.slice(0, 120));
+  }
+  console.log("Skipped formats since last run: " + JSON.stringify(skipped.counts));
 
   const rejected = data.schema === SCHEMA && seen.size ? await readJson(desk.rejected, []) : [];
-  let added = 0, merged = 0, failures = 0, budgetStopped = false;
+  let added = 0, merged = 0, failures = 0, budgetStopped = false, judged = 0, kept = 0, guarded = 0;
   const runStart = budget ? budget.spent : 0;
   // War ladder: tie older escalation stories to their war and set the starting level of new wars, before new stories are analysed.
   const warPrep = await prepareWars(allEvents());
@@ -1668,6 +1807,9 @@ async function runDesk(desk) {
     // Layer 1 routing: opinion stays out; soft news and features are kept as context without analysis.
     const kindOf = v => KINDS.includes(v.kind) ? v.kind : "hard";
     for (const v of byId.values()) if (v.relevant && kindOf(v) === "opinion") { v.relevant = false; v.reason = "Opinion piece: kept out of the analysis"; }
+    if (desk.mode !== "domestic") for (const [i, v] of byId) if (!v.relevant && ["hard", "breaking", "investigative"].includes(kindOf(v)) && namesIndia(batch[i].headline)) {   // news only: no lifestyle, features or opinion
+      v.relevant = true; v.guarded = true; v.reason = "About India by name"; guarded++; }
+    for (const v of byId.values()) { judged++; if (v.relevant) kept++; }
     const needsAnalysis = v => !["soft", "feature"].includes(kindOf(v));
     const toAnalyse = [...byId.entries()].filter(([i, v]) => v.relevant && !isFollowUp(i, v) && needsAnalysis(v))
       .map(([i, v]) => ({ i, id: idFor(batch[i].url), headline: batch[i].headline, url: batch[i].url, kind: kindOf(v), relevance: "medium", reports: [{ source: batch[i].src, headline: batch[i].headline, summary: batch[i].summary, lede: batch[i].lede, date: batch[i].date, kind: kindOf(v) }] }));
@@ -1697,7 +1839,7 @@ async function runDesk(desk) {
       const r = needsAnalysis(v) ? o?.r : { relevant: true, sector: v.sector, relevance: "medium", why: "", implications: [] };  // context only
       if (!r) continue;
       if (r.relevant === false) { reject(s, r.reason, kindOf(v)); dropped.add(i); continue; }
-      const sector = data.sectors.find(x => x.id === r.sector) || data.sectors.find(x => x.id === v.sector);
+      const sector = data.sectors.find(x => x.id === r.sector) || data.sectors.find(x => x.id === v.sector) || (v.guarded ? data.sectors.find(x => x.id === "economy") : null);
       if (!sector) continue;
       const ev = {
         id: idFor(s.url), headline: s.headline, url: s.url, source: s.src, date: s.date,
@@ -1715,6 +1857,8 @@ async function runDesk(desk) {
     batch.forEach(s => seen.add(s.url));
   }
 
+  const finance = await moveToFinance(data);
+  if (finance.moved || finance.checked) console.log(`Finance: ${finance.moved} of ${finance.checked} recent stories moved into the new Finance sector`);
   const stats = await addStatistics(data, desk.mode);     // statistics come before catch-up work
   const kinds = await classifyOlder(data);
   const places = await labelPlaces(data);
@@ -1763,7 +1907,8 @@ async function runDesk(desk) {
   data.recentDays = RECENT_DAYS;
   data.updatedAt = new Date().toISOString();
   await saveWars();
-  data.lastRun = { wars: warPrep, places, analysed: fresh.length, added, merged, rejected: fresh.length && !failures && !budgetStopped ? fresh.length - added - merged : undefined, failedBatches: failures, feeds: feedHealth, shareImages: og, threads: th, summaries: sm, kinds, frames, stats, models: usage,
+  const health = await recordHealth(desk, data, { judged, kept, guarded }, added, merged);
+  data.lastRun = { filter: { judged, kept, guarded }, health, wars: warPrep, places, skipped, finance, analysed: fresh.length, added, merged, rejected: fresh.length && !failures && !budgetStopped ? fresh.length - added - merged : undefined, failedBatches: failures, feeds: feedHealth, shareImages: og, threads: th, summaries: sm, kinds, frames, stats, models: usage,
     spend: budget ? { thisDesk: Math.round((budget.spent - runStart) * 1e4) / 1e4, today: Math.round(budget.spent * 1e4) / 1e4, cap: DAILY_BUDGET, ...(budgetStopped ? { stopped: true } : {}) } : undefined };
 
   await fs.writeFile(desk.data, JSON.stringify(data, null, 2) + "\n");
@@ -1774,5 +1919,29 @@ async function runDesk(desk) {
   return { added, merged, failures, analysed: fresh.length };
 }
 function latest(e) { return (e.reports || []).map(r => r.date || "").sort().pop() || e.date || ""; }
+
+// v75: a daily record of each desk's filter, and a warning on the GitHub Actions run page when a desk goes quiet.
+const HEALTH_FILE = "data/filter-health.json", HEALTH_DAYS = 30;
+const HEALTH_MIN = { global: { newPerDay: 10, keepRate: 0.06 }, domestic: { newPerDay: 12, keepRate: 0.06 } };
+export async function recordHealth(desk, data, f, added, merged) {
+  const doc = await readJson(HEALTH_FILE, { days: {} }); doc.days ||= {};
+  const day = new Date().toISOString().slice(0, 10);
+  const d = ((doc.days[day] ||= {})[desk.id] ||= { judged: 0, kept: 0, guarded: 0, added: 0, merged: 0, runs: 0 });
+  if (d.kept === undefined) { d.kept = (d.judged || 0) - (d.reject || 0); d.guarded = 0; }        // days written by v74
+  d.judged += f.judged; d.kept += f.kept; d.guarded += f.guarded; d.added += added; d.merged += merged; d.runs += 1;
+  const recent = Object.keys(doc.days).sort().slice(-2);
+  let j = 0, k = 0; for (const x of recent) { const y = doc.days[x]?.[desk.id]; if (y) { j += y.judged || 0; k += y.kept ?? ((y.judged || 0) - (y.reject || 0)); } }
+  const keepRate = j ? k / j : null;
+  const cut = Date.now() - 864e5;
+  const newCards = data.sectors.flatMap(s => s.items).filter(e => Date.parse((e.reports || []).map(r => r.date || "").sort()[0] || e.date) >= cut).length;
+  const min = HEALTH_MIN[desk.mode === "domestic" ? "domestic" : "global"], alarm = [];
+  if (newCards < min.newPerDay) alarm.push(`only ${newCards} new stories in 24 hours (expected ${min.newPerDay}+)`);
+  if (keepRate !== null && j >= 50 && keepRate < min.keepRate) alarm.push(`filter kept ${(keepRate * 100).toFixed(1)}% of headlines over two days (expected ${min.keepRate * 100}%+)`);
+  for (const x of Object.keys(doc.days).sort().slice(0, -HEALTH_DAYS)) delete doc.days[x];
+  doc.updatedAt = new Date().toISOString();
+  await fs.writeFile(HEALTH_FILE, JSON.stringify(doc, null, 1) + "\n");
+  if (alarm.length) console.log(`::warning title=${desk.id} desk is quiet::${alarm.join("; ")}`);
+  return { day, newStories24h: newCards, keepRate2d: keepRate === null ? null : Math.round(keepRate * 1000) / 1000, ...(alarm.length ? { alarm } : {}) };
+}
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) main().catch(e => { console.error(e); process.exit(1); });
