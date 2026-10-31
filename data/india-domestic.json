@@ -2,12 +2,141 @@
   "schema": 4,
   "region": "India",
   "since": "2026-10-02",
-  "updatedAt": "2026-10-31T12:51:50.022Z",
+  "updatedAt": "2026-10-31T19:33:54.460Z",
   "sectors": [
     {
       "id": "energy",
       "name": "Energy",
       "items": [
+        {
+          "id": "sjaujie",
+          "headline": "IOC says crude Q2 price volatile as procurement swings between discounts and premiums",
+          "url": "https://www.thehindu.com/business/Economy/crude-oil-prices-very-volatile-in-q2-carried-both-discounts-premium-at-varying-intervals-iocl-official/article71650317.ece",
+          "source": "thehindu",
+          "date": "2026-10-31T16:09:42.000Z",
+          "relevance": "medium",
+          "image": "https://th-i.thgim.com/public/incoming/t9f3bb/article71650425.ece/alternates/LANDSCAPE_1200/iStock-1466744855.jpg",
+          "why": "Indian Oil's finance director said its crude procurement has swung between discounts and premiums, and projected losses on LPG sales of ₹309 per cylinder in November and ₹370 in December. This bears on household LPG costs.",
+          "implications": [
+            "Under-recoveries mean Indian Oil expects to sell LPG below its cost, so the loss falls on the company or on whoever compensates it, unless cylinder prices change.",
+            "The projected rise from November to December suggests the gap is widening. That could add pressure for a price revision or government support, although the report does not say either is planned."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-31T19:29:31.491Z",
+            "tier": "quick",
+            "primary": "pass_through",
+            "complement": null,
+            "features": [
+              "price_move"
+            ],
+            "exposure": {
+              "level": "high",
+              "reason": "LPG is a household cooking essential, and any decision on who bears these losses could reach families through cylinder prices. No price change is reported yet."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "The projections cover November and December, so any consequence for cylinder prices or compensation would arise over the coming weeks."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "This rests on one outlet, The Hindu, quoting an on-record Indian Oil director; the report does not say whether prices or compensation will change."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "LPG cylinder prices",
+                "effect": "Households may see no immediate change, but a later price revision could follow if the losses are not absorbed or compensated.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Government finances",
+                "direction": "unclear",
+                "what": "possible LPG compensation",
+                "effect": "If the government compensates fuel sellers for LPG losses, its subsidy-related spending could rise, though the report does not mention any such plan.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Any revision to household LPG cylinder prices or an announcement of compensation for LPG losses",
+                "why": "It would show who ends up bearing the projected under-recoveries.",
+                "when": "November 2026",
+                "where": "Indian Oil Corporation"
+              }
+            ],
+            "context": [
+              "India imports a large share of its LPG, and household cylinder prices are tightly managed, so global price swings do not automatically reach consumers.",
+              "When selling prices stay below cost, oil marketing companies record under-recoveries, which have at times been offset by government compensation."
+            ],
+            "terms": [
+              {
+                "term": "under-recoveries",
+                "meaning": "Under-recoveries are the losses a fuel seller makes when the price it charges is lower than its cost of supplying the product."
+              }
+            ],
+            "frameworks": {
+              "pass_through": {
+                "driver": {
+                  "variable": "LPG under-recovery per cylinder",
+                  "direction": "up",
+                  "size": "₹309 per cylinder in November and ₹370 per cylinder in…"
+                },
+                "product": "LPG",
+                "rungs": [
+                  {
+                    "stage": "Global prices → Indian Oil's procurement cost",
+                    "pass": "partial",
+                    "damper": "Crude procurement has swung between discounts and premiums, so the cost reaching the company varies and does not move in a straight line with global prices.",
+                    "lag": "weeks"
+                  },
+                  {
+                    "stage": "Procurement cost → gap against cylinder price",
+                    "pass": "likely",
+                    "damper": "Household cylinder prices are managed rather than set freely, so a cost increase shows up as an under-recovery instead of an immediate price rise.",
+                    "lag": "weeks"
+                  },
+                  {
+                    "stage": "Company losses → price paid by households",
+                    "pass": "unclear",
+                    "damper": "The report does not say whether the company will absorb the losses, receive compensation or raise prices.",
+                    "lag": "months"
+                  }
+                ],
+                "end_user": {
+                  "group": "Fuel & LPG users",
+                  "effect": "Households may not notice any change soon, since no price revision is reported. Any later change would depend on decisions about who bears the losses."
+                }
+              }
+            }
+          },
+          "place": {
+            "name": "New Delhi",
+            "country": "India",
+            "lat": 28.6,
+            "lon": 77.2
+          },
+          "reports": [
+            {
+              "source": "thehindu",
+              "headline": "IOC says crude Q2 price volatile as procurement swings between discounts and premiums",
+              "url": "https://www.thehindu.com/business/Economy/crude-oil-prices-very-volatile-in-q2-carried-both-discounts-premium-at-varying-intervals-iocl-official/article71650317.ece",
+              "date": "2026-10-31T16:09:42.000Z",
+              "kind": "hard",
+              "summary": "Anuj Jain, Director (Finance) at Indian Oil also stated under-recoveries on LPG is projected at ₹309/cylinder in November and ₹370/cylinder in December.",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/incoming/t9f3bb/article71650425.ece/alternates/LANDSCAPE_1200/iStock-1466744855.jpg"
+            }
+          ],
+          "stats": {
+            "v": 2,
+            "at": "2026-10-31T19:30:34.656Z",
+            "series": []
+          },
+          "thread": "t1y046b4"
+        },
         {
           "id": "s3jxcru",
           "headline": "Petrol export duty cut to nil, diesel levy raised by ₹3 a litre",
@@ -16,15 +145,17 @@
           "date": "2026-10-31T11:16:41.000Z",
           "relevance": "medium",
           "image": "https://th-i.thgim.com/public/news/national/up7fc2/article71649104.ece/alternates/LANDSCAPE_1200/PTI05_23_2026_000070B.jpg",
-          "why": "In its fortnightly review, the government raised the export levy on diesel to ₹11.5 per litre from ₹8.5, cut the petrol export duty to nil, and lifted the aviation turbine fuel levy to ₹11 per litre from ₹10.5.",
+          "why": "In its fortnightly review, the government removed the export duty on petrol and raised export levies on diesel and aviation turbine fuel (ATF). This changes how much Indian refiners earn from shipping these fuels abroad.",
           "implications": [
-            "A higher diesel levy raises the cost of selling diesel abroad, which could reduce the overseas margin refiners earn and make supplying the domestic market relatively more attractive.",
-            "Removing the petrol export duty lets refiners export petrol without that charge, so the three fuels now face different incentives at the border."
+            "Refiners exporting diesel now pay ₹11.5 a litre instead of ₹8.5, which reduces the earnings they get from each litre sold overseas.",
+            "The higher diesel levy comes as India's diesel exports reached 700 kilo barrels per day in October, the highest since September 2025, according to the ship-tracking firm Kpler.",
+            "Removing the petrol duty makes petrol exports more attractive to refiners. Raising the diesel and ATF levies could encourage them to keep more of those fuels for the domestic market.",
+            "The changes apply for a fortnight from October 31, so refiners face rates that can be revised again at the next review."
           ],
           "analysis": {
             "v": 3,
-            "at": "2026-10-31T12:51:19.347Z",
-            "tier": "quick",
+            "at": "2026-10-31T19:33:40.119Z",
+            "tier": "standard",
             "primary": "decoder",
             "complement": null,
             "features": [
@@ -32,50 +163,72 @@
               "price_move"
             ],
             "exposure": {
-              "level": "medium",
-              "reason": "The channel is refiners' export economics for diesel, petrol and aviation fuel; the reports do not mention any change in retail fuel prices, so household exposure is indirect."
+              "level": "high",
+              "reason": "Refined fuels are among India's largest exports, and the levies directly change refiners' export earnings. They may also influence how much diesel stays in the domestic market."
             },
             "horizon": {
-              "value": "weeks",
-              "reason": "The levies come from a fortnightly review, so the new rates apply over the next review period and exporters' decisions would show up within weeks."
+              "value": "now",
+              "reason": "The revised duties took effect on October 31 and apply for a fortnight, so exporters face them immediately."
             },
             "confidence": {
               "level": "medium",
-              "reason": "The account rests on one outlet, The Hindu, reporting a government review, with the export figure attributed to Kpler; the government's reasoning is not reported."
+              "reason": "Two outlets, The Hindu and Mint, agree on the changes, but neither summary cites a named official, and the government's reasoning is not reported."
             },
-            "outlets": 1,
+            "outlets": 2,
             "affected": [
               {
                 "group": "Large exporters",
                 "direction": "mixed",
-                "what": "fuel export margins",
-                "effect": "Refiners selling diesel and aviation turbine fuel abroad face higher levies, while petrol exporters no longer pay a duty, so margins could move in different directions.",
+                "what": "fuel export earnings",
+                "effect": "Refiners lose part of their diesel and ATF export earnings through higher levies but no longer pay any duty on petrol shipped abroad.",
+                "basis": "reported"
+              },
+              {
+                "group": "Government finances",
+                "direction": "mixed",
+                "what": "fuel export levy revenue",
+                "effect": "Revenue from diesel and ATF export levies could rise at higher rates, while revenue from petrol export duty falls to zero.",
                 "basis": "inferred"
               },
               {
                 "group": "Fuel & LPG users",
                 "direction": "unclear",
-                "what": "domestic fuel availability",
-                "effect": "If higher levies shift some diesel from export to domestic sale, local supply could improve, though the reports do not say this is the aim.",
+                "what": "domestic diesel availability",
+                "effect": "A higher diesel export levy could encourage refiners to sell more diesel at home, which may support domestic supply.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "The government's next fortnightly review of export levies on diesel, petrol and aviation turbine fuel",
-                "why": "It would show whether the diesel levy is raised again, held or reduced after October's export surge.",
-                "when": "next fortnightly review",
+                "what": "The next fortnightly government review of export levies on petrol, diesel and ATF",
+                "why": "It will show whether the higher diesel levy and the nil petrol duty continue or are reversed.",
+                "when": "fortnight from October 31",
                 "where": ""
+              },
+              {
+                "what": "India's diesel export volumes after the higher levy takes effect",
+                "why": "A fall from October's 700 kilo barrels per day would suggest the levy is curbing diesel exports.",
+                "when": "",
+                "where": "Kpler"
               }
             ],
             "context": [
-              "India imports most of its crude oil but refines more than it consumes, so it exports significant volumes of diesel, petrol and aviation fuel.",
-              "Export levies on fuels are generally used to make overseas sales less attractive relative to domestic supply or to collect revenue when export margins are high."
+              "India imports most of its crude oil, but it has large refining capacity and is a major exporter of refined fuels such as diesel and petrol.",
+              "Export levies on fuels are generally used to discourage refiners from shipping too much abroad when overseas margins are high, which helps protect domestic supply.",
+              "Retail petrol and diesel prices in India are largely set by state-run oil marketing companies, so export duty changes do not pass directly into pump prices."
             ],
             "terms": [
               {
-                "term": "export levy",
-                "meaning": "A charge the government places on goods sold abroad, which raises the cost of exporting them."
+                "term": "ATF",
+                "meaning": "Aviation turbine fuel, the kerosene-based fuel used by jet aircraft."
+              },
+              {
+                "term": "Kpler",
+                "meaning": "A commodity data company that tracks cargo shipments, including oil and fuel exports, using vessel-tracking information."
+              },
+              {
+                "term": "kilo barrels per day",
+                "meaning": "Thousands of barrels per day, a standard measure of oil and fuel flow; one barrel is about 159 litres."
               }
             ],
             "frameworks": {
@@ -85,30 +238,30 @@
                   "label": "Diesel export levy",
                   "value": 11.5,
                   "unit": "₹ per litre",
-                  "period": "Fortnightly review reported on 31 October 2026",
+                  "period": "Fortnight from October 31",
                   "previous": 8.5,
-                  "previousLabel": "Previous level",
+                  "previousLabel": "Previous levy",
                   "from": "The Hindu"
                 },
                 "comparisons": [
                   {
-                    "label": "Aviation turbine fuel export levy (previously ₹10.5)",
+                    "label": "ATF export levy (new)",
                     "value": 11,
                     "unit": "₹ per litre",
                     "from": "The Hindu"
                   },
                   {
-                    "label": "India's diesel exports in October, highest since September 2025, per Kpler",
-                    "value": 700,
-                    "unit": "kilo barrels per day",
+                    "label": "ATF export levy (previous)",
+                    "value": 10.5,
+                    "unit": "₹ per litre",
                     "from": "The Hindu"
                   }
                 ],
                 "drivers": [],
                 "decision": {
                   "action": "other",
-                  "size": "Diesel levy raised by ₹3 to ₹11.5 per litre; aviation…",
-                  "stance": "The report does not give the government's stated reasoning. It notes that India's diesel exports touched 700 kilo barrels per day in October, the highest since September 2025, according to Kpler."
+                  "size": "Petrol export duty cut to nil; diesel levy raised by ₹3 to…",
+                  "stance": "The reports do not give the government's stated reasoning. They say only that the changes were made in the regular fortnightly review and apply for a fortnight from October 31."
                 }
               }
             }
@@ -129,9 +282,116 @@
               "summary": "The government’s fortnightly review raised the export levy on diesel to ₹11.5 per litre from ₹8.5 and on aviation turbine fuel to ₹11 per litre from ₹10.5, while India’s diesel exports touched 700 kilo barrels per day in October, the highest since September 2025, according to Kpler",
               "summaryV": 3,
               "image": "https://th-i.thgim.com/public/news/national/up7fc2/article71649104.ece/alternates/LANDSCAPE_1200/PTI05_23_2026_000070B.jpg"
+            },
+            {
+              "source": "mint",
+              "headline": "Govt scraps export duty on petrol; hikes levies on diesel, ATF — check details here",
+              "url": "https://www.livemint.com/economy/govt-scraps-export-duty-on-petrol-hikes-levies-on-diesel-atf-check-details-here-11793452144023.html",
+              "date": "2026-10-31T14:08:09.000Z",
+              "kind": "hard",
+              "summary": "India has scrapped export duty on petrol for a fortnight from October 31, while raising levies on diesel and ATF. Details here.&nbsp;",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/10/31/1600x900/logo/im-03795811_1793177576165_2NMw_1793455536307_J9Bw_8e01d02c-f80d-4837-a028-2957ba2f04a8_c83v.jpg"
             }
           ],
-          "thread": "t1ms8ih5"
+          "thread": "t1ms8ih5",
+          "stats": {
+            "v": 2,
+            "at": "2026-10-31T19:31:14.326Z",
+            "series": [
+              {
+                "title": "India export duty on diesel, total, per litre (2022 episode)",
+                "unit": "Rs per litre",
+                "publisher": "Petroleum Planning & Analysis Cell (Ministry of Petroleum & Natural Gas)",
+                "why": "The government has used fortnightly export levies on diesel before, and this series shows how the rate moved up and down with each review.",
+                "points": [
+                  {
+                    "period": "01.07.2022",
+                    "value": 13,
+                    "url": "https://ppac.gov.in/prices/excise-duty-on-export-of-petrol-diesel-atf-and-special-additional-excise-duty-saed-on-domestic-crude-oil-production",
+                    "source": "ppac.gov.in"
+                  },
+                  {
+                    "period": "20.07.2022",
+                    "value": 11,
+                    "url": "https://ppac.gov.in/prices/excise-duty-on-export-of-petrol-diesel-atf-and-special-additional-excise-duty-saed-on-domestic-crude-oil-production",
+                    "source": "ppac.gov.in"
+                  },
+                  {
+                    "period": "03.08.2022",
+                    "value": 5,
+                    "url": "https://ppac.gov.in/prices/excise-duty-on-export-of-petrol-diesel-atf-and-special-additional-excise-duty-saed-on-domestic-crude-oil-production",
+                    "source": "ppac.gov.in"
+                  },
+                  {
+                    "period": "19.08.2022",
+                    "value": 7,
+                    "url": "https://ppac.gov.in/prices/excise-duty-on-export-of-petrol-diesel-atf-and-special-additional-excise-duty-saed-on-domestic-crude-oil-production",
+                    "source": "ppac.gov.in"
+                  },
+                  {
+                    "period": "01.09.2022",
+                    "value": 13.5,
+                    "url": "https://ppac.gov.in/prices/excise-duty-on-export-of-petrol-diesel-atf-and-special-additional-excise-duty-saed-on-domestic-crude-oil-production",
+                    "source": "ppac.gov.in"
+                  },
+                  {
+                    "period": "17.09.2022",
+                    "value": 10,
+                    "url": "https://ppac.gov.in/prices/excise-duty-on-export-of-petrol-diesel-atf-and-special-additional-excise-duty-saed-on-domestic-crude-oil-production",
+                    "source": "ppac.gov.in"
+                  },
+                  {
+                    "period": "02.10.2022",
+                    "value": 5,
+                    "url": "https://ppac.gov.in/prices/excise-duty-on-export-of-petrol-diesel-atf-and-special-additional-excise-duty-saed-on-domestic-crude-oil-production",
+                    "source": "ppac.gov.in"
+                  },
+                  {
+                    "period": "16.10.2022",
+                    "value": 12,
+                    "url": "https://ppac.gov.in/prices/excise-duty-on-export-of-petrol-diesel-atf-and-special-additional-excise-duty-saed-on-domestic-crude-oil-production",
+                    "source": "ppac.gov.in"
+                  },
+                  {
+                    "period": "02.11.2022",
+                    "value": 13,
+                    "url": "https://ppac.gov.in/prices/excise-duty-on-export-of-petrol-diesel-atf-and-special-additional-excise-duty-saed-on-domestic-crude-oil-production",
+                    "source": "ppac.gov.in"
+                  },
+                  {
+                    "period": "17.11.2022",
+                    "value": 10.5,
+                    "url": "https://ppac.gov.in/prices/excise-duty-on-export-of-petrol-diesel-atf-and-special-additional-excise-duty-saed-on-domestic-crude-oil-production",
+                    "source": "ppac.gov.in"
+                  },
+                  {
+                    "period": "02.12.2022",
+                    "value": 8,
+                    "url": "https://ppac.gov.in/prices/excise-duty-on-export-of-petrol-diesel-atf-and-special-additional-excise-duty-saed-on-domestic-crude-oil-production",
+                    "source": "ppac.gov.in"
+                  },
+                  {
+                    "period": "16.12.2022",
+                    "value": 5,
+                    "url": "https://ppac.gov.in/prices/excise-duty-on-export-of-petrol-diesel-atf-and-special-additional-excise-duty-saed-on-domestic-crude-oil-production",
+                    "source": "ppac.gov.in"
+                  }
+                ],
+                "dropped": 0,
+                "sources": [
+                  {
+                    "url": "https://ppac.gov.in/prices/excise-duty-on-export-of-petrol-diesel-atf-and-special-additional-excise-duty-saed-on-domestic-crude-oil-production",
+                    "title": "ppac.gov.in",
+                    "domain": "ppac.gov.in"
+                  }
+                ],
+                "domains": [
+                  "ppac.gov.in"
+                ]
+              }
+            ]
+          }
         },
         {
           "id": "s11rj08i",
@@ -6797,7 +7057,12 @@
               "image": "https://www.livemint.com/lm-img/img/2026/10/31/1600x900/logo/ipiccy_ima_1793438131083_bQLZ_1793438143266_HMwK_2bbc265d-8a78-448e-9331-4918cde243e8_cG0z.jpg"
             }
           ],
-          "thread": "tbdhstp"
+          "thread": "tbdhstp",
+          "stats": {
+            "v": 2,
+            "at": "2026-10-31T19:31:30.212Z",
+            "series": []
+          }
         },
         {
           "id": "s123wuci",
@@ -10787,6 +11052,348 @@
       "name": "Economy & Trade",
       "items": [
         {
+          "id": "soonrga",
+          "headline": "Centre releases additional instalment of tax devolution of ₹1.09 lakh crore to states",
+          "url": "https://www.thehindu.com/business/centre-releases-additional-instalment-of-tax-devolution-of-109-lakh-crore-to-states/article71650532.ece",
+          "source": "thehindu",
+          "date": "2026-10-31T16:36:48.000Z",
+          "relevance": "medium",
+          "image": "https://th-i.thgim.com/public/incoming/mo5bsn/article71650545.ece/alternates/LANDSCAPE_1200/TH%20TRI-1%207.jpg",
+          "why": "The Centre has released an additional instalment of tax devolution worth ₹1.09 lakh crore to states, on top of the regular monthly devolution. It is the second additional instalment this financial year.",
+          "implications": [
+            "The extra transfer gives state governments more cash on hand, which could help them fund spending or manage cash flow during the year.",
+            "Because it is a second additional instalment, it suggests the Centre is releasing states' share of taxes faster than the regular monthly schedule alone would."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-31T19:29:31.491Z",
+            "tier": "quick",
+            "primary": "winners_losers",
+            "complement": null,
+            "features": [
+              "allocation"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "The money moves between governments and reaches people only indirectly, through whatever state spending it supports. The reports describe no direct effect on household prices or taxes."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "States can use the released funds soon, but any effect on spending or services would appear gradually as budgets are executed."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single brief report from The Hindu that does not quote a finance ministry statement or give a state-wise breakdown."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Government finances",
+                "direction": "up",
+                "what": "state government revenue",
+                "effect": "State governments receive ₹1.09 lakh crore beyond the regular monthly devolution, which raises the funds available to them in the near term.",
+                "basis": "reported"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Release of the next regular monthly devolution instalment or any further additional instalment to states",
+                "why": "It would show whether the Centre continues to front-load transfers to states this financial year.",
+                "when": "",
+                "where": "Ministry of Finance"
+              }
+            ],
+            "context": [
+              "Tax devolution is the share of central tax revenue that the Centre passes to states under a formula based on Finance Commission recommendations, normally in regular monthly instalments."
+            ],
+            "terms": [
+              {
+                "term": "tax devolution",
+                "meaning": "Tax devolution is the transfer of a share of the Centre's tax collections to state governments under a Finance Commission formula."
+              }
+            ],
+            "frameworks": {
+              "winners_losers": {
+                "groups": [
+                  {
+                    "group": "Government finances",
+                    "direction": "gain",
+                    "directness": "direct",
+                    "mechanism": "State governments receive the additional instalment of ₹1.09 lakh crore, which adds to their available funds beyond the regular monthly devolution."
+                  }
+                ],
+                "not_affected": "Individual taxpayers and salaried workers are not directly affected, because the release moves existing central tax revenue to states and does not change tax rates or liabilities."
+              }
+            }
+          },
+          "place": {
+            "name": "New Delhi",
+            "country": "India",
+            "lat": 28.6,
+            "lon": 77.2
+          },
+          "reports": [
+            {
+              "source": "thehindu",
+              "headline": "Centre releases additional instalment of tax devolution of ₹1.09 lakh crore to states",
+              "url": "https://www.thehindu.com/business/centre-releases-additional-instalment-of-tax-devolution-of-109-lakh-crore-to-states/article71650532.ece",
+              "date": "2026-10-31T16:36:48.000Z",
+              "kind": "hard",
+              "summary": "This is in addition to the regular monthly devolution and the second additional instalment this financial year",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/incoming/mo5bsn/article71650545.ece/alternates/LANDSCAPE_1200/TH%20TRI-1%207.jpg"
+            },
+            {
+              "source": "thehindu",
+              "headline": "Centre releases ₹4,504-crore additional instalment of tax devolution to Karnataka",
+              "url": "https://www.thehindu.com/news/national/karnataka/centre-releases-4504-crore-additional-instalment-of-tax-devolution-to-karnataka/article71650706.ece",
+              "date": "2026-10-31T18:00:32.000Z",
+              "kind": "hard",
+              "ogTried": true,
+              "descTried": true,
+              "summary": "The Centre on Saturday released an additional instalment of tax devolution to State governments totalling over ₹1.09 lakh crore. Karnataka’s share stood at ₹4,504 crore.",
+              "summaryV": 3,
+              "image": "https://www.thehindu.com/theme/images/og-image.png"
+            }
+          ],
+          "finChecked": true,
+          "thread": "tt9547n"
+        },
+        {
+          "id": "s3619x5",
+          "headline": "Government extends import duty exemption for cotton",
+          "url": "https://www.thehindu.com/business/government-extends-import-duty-exemption-for-cotton/article71648074.ece",
+          "source": "thehindu",
+          "date": "2026-10-31T01:14:15.000Z",
+          "relevance": "medium",
+          "image": "https://th-i.thgim.com/public/incoming/358o4p/article71648079.ece/alternates/LANDSCAPE_1200/2026-10-29T053134Z_803883632_RC2BAOAJAURA_RTRMADP_3_AFGHANISTAN-OPIUM-MALNUTRITION.JPG",
+          "why": "The Finance Ministry has extended the import duty exemption on cotton, first granted in May this year, in a notification issued on October 30. The Hindu's report gives October 31 as the date the exemption continues until.",
+          "implications": [
+            "Cotton imports continue to enter without import duty for the period covered, which could keep the cost of imported fibre lower for spinning mills and traders.",
+            "Duty-free imports can compete with domestic cotton, so the decision could also influence the prices that Indian cotton farmers receive."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-31T06:16:18.848Z",
+            "tier": "quick",
+            "primary": "trade_flow",
+            "complement": null,
+            "features": [
+              "trade_flow",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The channel is the raw material cost of cotton for the textile industry and the competition that imports pose to domestic growers, which makes this a single-industry matter."
+            },
+            "horizon": {
+              "value": "now",
+              "reason": "The reported end date of October 31 falls immediately after the October 30 notification, so the duty position changes within days."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "The report rests on The Hindu alone, citing a Finance Ministry notification, and the wording of the end date is unclear."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Importers & traders",
+                "direction": "down",
+                "what": "cost of imported cotton",
+                "effect": "Continued exemption means cotton can be imported without duty during the covered period, which could lower the landed cost for mills and traders.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Farmers",
+                "direction": "unclear",
+                "what": "domestic cotton prices",
+                "effect": "Duty-free imports could add supply that competes with Indian-grown cotton, which may affect the prices farmers receive.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Whether the exemption lapses or is renewed after October 31",
+                "why": "It would show whether duty returns on cotton imports for Indian buyers.",
+                "when": "2026-10-31",
+                "where": "Finance Ministry customs notifications"
+              }
+            ],
+            "context": [
+              "India grows a large amount of cotton but also imports it, and import duties are normally used to protect domestic growers. Governments sometimes waive them temporarily to ease raw material costs for the textile industry."
+            ],
+            "terms": [
+              {
+                "term": "import duty exemption",
+                "meaning": "A government decision that lets a product enter the country without paying the customs duty that would otherwise apply."
+              }
+            ],
+            "frameworks": {
+              "trade_flow": {
+                "good": "Cotton",
+                "actors": [
+                  {
+                    "country": "India",
+                    "role": "importer",
+                    "is_india": true
+                  }
+                ],
+                "change": {
+                  "type": "tariff",
+                  "effective": "Continues until October 31, as reported"
+                },
+                "india_position": {
+                  "role": "competing_buyer",
+                  "note": "India is the importing country in this decision, which removes the duty on cotton it buys from abroad. Indian mills could pay less for imported cotton, while domestic growers may face more competition."
+                },
+                "volumes": []
+              }
+            }
+          },
+          "place": {
+            "name": "New Delhi",
+            "country": "India",
+            "lat": 28.61,
+            "lon": 77.21
+          },
+          "reports": [
+            {
+              "source": "thehindu",
+              "headline": "Government extends import duty exemption for cotton",
+              "url": "https://www.thehindu.com/business/government-extends-import-duty-exemption-for-cotton/article71648074.ece",
+              "date": "2026-10-31T01:14:15.000Z",
+              "kind": "hard",
+              "summary": "In a notification issued on October 30, the Finance Ministry said the exemption, which had been granted in May this year, will continue until October 31",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/incoming/358o4p/article71648079.ece/alternates/LANDSCAPE_1200/2026-10-29T053134Z_803883632_RC2BAOAJAURA_RTRMADP_3_AFGHANISTAN-OPIUM-MALNUTRITION.JPG"
+            },
+            {
+              "source": "thehindu",
+              "headline": "Textile industry welcomes customs duty exemption extension for cotton",
+              "url": "https://www.thehindu.com/news/cities/Coimbatore/textile-industry-welcomes-customs-duty-exemption-extension-for-cotton/article71650288.ece",
+              "date": "2026-10-31T15:46:43.000Z",
+              "kind": "hard",
+              "ogTried": true,
+              "descTried": true,
+              "summary": "The Indian textile and apparel industry has welcomed the government decision to extend customs duty exemption for cotton till December 31, 2026",
+              "summaryV": 3,
+              "image": "https://www.thehindu.com/theme/images/og-image.png"
+            }
+          ],
+          "thread": "t1t3m881",
+          "finChecked": true,
+          "stats": {
+            "v": 2,
+            "at": "2026-10-31T07:53:45.931Z",
+            "series": [
+              {
+                "title": "India's cotton imports by quantity, by season",
+                "unit": "bales",
+                "publisher": "Ministry of Textiles (DGCIS data, via PIB)",
+                "why": "Imports were modest in the seasons before the duty-free windows began and rose in the latest season, which shows how much cotton the exemption is meant to bring in.",
+                "points": [
+                  {
+                    "period": "2019-20",
+                    "value": 1550312,
+                    "url": "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2155457",
+                    "source": "IMPORT OF COTTON"
+                  },
+                  {
+                    "period": "2020-21",
+                    "value": 1102637,
+                    "url": "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2155457",
+                    "source": "IMPORT OF COTTON"
+                  },
+                  {
+                    "period": "2022-23",
+                    "value": 1459396,
+                    "url": "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2155457",
+                    "source": "IMPORT OF COTTON"
+                  },
+                  {
+                    "period": "2023-24",
+                    "value": 1519675,
+                    "url": "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2155457",
+                    "source": "IMPORT OF COTTON"
+                  },
+                  {
+                    "period": "2024-25 (to 31 May 2025)",
+                    "value": 2709648,
+                    "url": "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2155457",
+                    "source": "IMPORT OF COTTON"
+                  }
+                ],
+                "dropped": 0,
+                "sources": [
+                  {
+                    "url": "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2155457",
+                    "title": "IMPORT OF COTTON",
+                    "domain": "pib.gov.in"
+                  }
+                ],
+                "domains": [
+                  "pib.gov.in"
+                ]
+              },
+              {
+                "title": "India's cotton imports by value, by season",
+                "unit": "Rs. crore",
+                "publisher": "Ministry of Textiles (DGCIS data, via PIB)",
+                "why": "",
+                "points": [
+                  {
+                    "period": "2019-20",
+                    "value": 3588,
+                    "url": "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2155457",
+                    "source": "IMPORT OF COTTON"
+                  },
+                  {
+                    "period": "2020-21",
+                    "value": 3480,
+                    "url": "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2155457",
+                    "source": "IMPORT OF COTTON"
+                  },
+                  {
+                    "period": "2021-22",
+                    "value": 10354,
+                    "url": "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2155457",
+                    "source": "IMPORT OF COTTON"
+                  },
+                  {
+                    "period": "2022-23",
+                    "value": 6029,
+                    "url": "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2155457",
+                    "source": "IMPORT OF COTTON"
+                  },
+                  {
+                    "period": "2023-24",
+                    "value": 5483,
+                    "url": "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2155457",
+                    "source": "IMPORT OF COTTON"
+                  },
+                  {
+                    "period": "2024-25 (to 31 May 2025)",
+                    "value": 7830,
+                    "url": "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2155457",
+                    "source": "IMPORT OF COTTON"
+                  }
+                ],
+                "dropped": 0,
+                "sources": [
+                  {
+                    "url": "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2155457",
+                    "title": "IMPORT OF COTTON",
+                    "domain": "pib.gov.in"
+                  }
+                ],
+                "domains": [
+                  "pib.gov.in"
+                ]
+              }
+            ]
+          }
+        },
+        {
           "id": "s6ajge0",
           "headline": "Extreme poverty in India falls to 2.6% from 27.1%: World Bank",
           "url": "https://www.livemint.com/economy/india-extreme-poverty-rate-declines-2011-to-2023-world-bank-11793375500521.html",
@@ -10934,228 +11541,6 @@
           ],
           "thread": "t1k6xxap",
           "finChecked": true
-        },
-        {
-          "id": "s3619x5",
-          "headline": "Government extends import duty exemption for cotton",
-          "url": "https://www.thehindu.com/business/government-extends-import-duty-exemption-for-cotton/article71648074.ece",
-          "source": "thehindu",
-          "date": "2026-10-31T01:14:15.000Z",
-          "relevance": "medium",
-          "image": "https://th-i.thgim.com/public/incoming/358o4p/article71648079.ece/alternates/LANDSCAPE_1200/2026-10-29T053134Z_803883632_RC2BAOAJAURA_RTRMADP_3_AFGHANISTAN-OPIUM-MALNUTRITION.JPG",
-          "why": "The Finance Ministry has extended the import duty exemption on cotton, first granted in May this year, in a notification issued on October 30. The Hindu's report gives October 31 as the date the exemption continues until.",
-          "implications": [
-            "Cotton imports continue to enter without import duty for the period covered, which could keep the cost of imported fibre lower for spinning mills and traders.",
-            "Duty-free imports can compete with domestic cotton, so the decision could also influence the prices that Indian cotton farmers receive."
-          ],
-          "analysis": {
-            "v": 3,
-            "at": "2026-10-31T06:16:18.848Z",
-            "tier": "quick",
-            "primary": "trade_flow",
-            "complement": null,
-            "features": [
-              "trade_flow",
-              "pending_outcome"
-            ],
-            "exposure": {
-              "level": "medium",
-              "reason": "The channel is the raw material cost of cotton for the textile industry and the competition that imports pose to domestic growers, which makes this a single-industry matter."
-            },
-            "horizon": {
-              "value": "now",
-              "reason": "The reported end date of October 31 falls immediately after the October 30 notification, so the duty position changes within days."
-            },
-            "confidence": {
-              "level": "medium",
-              "reason": "The report rests on The Hindu alone, citing a Finance Ministry notification, and the wording of the end date is unclear."
-            },
-            "outlets": 1,
-            "affected": [
-              {
-                "group": "Importers & traders",
-                "direction": "down",
-                "what": "cost of imported cotton",
-                "effect": "Continued exemption means cotton can be imported without duty during the covered period, which could lower the landed cost for mills and traders.",
-                "basis": "inferred"
-              },
-              {
-                "group": "Farmers",
-                "direction": "unclear",
-                "what": "domestic cotton prices",
-                "effect": "Duty-free imports could add supply that competes with Indian-grown cotton, which may affect the prices farmers receive.",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "Whether the exemption lapses or is renewed after October 31",
-                "why": "It would show whether duty returns on cotton imports for Indian buyers.",
-                "when": "2026-10-31",
-                "where": "Finance Ministry customs notifications"
-              }
-            ],
-            "context": [
-              "India grows a large amount of cotton but also imports it, and import duties are normally used to protect domestic growers. Governments sometimes waive them temporarily to ease raw material costs for the textile industry."
-            ],
-            "terms": [
-              {
-                "term": "import duty exemption",
-                "meaning": "A government decision that lets a product enter the country without paying the customs duty that would otherwise apply."
-              }
-            ],
-            "frameworks": {
-              "trade_flow": {
-                "good": "Cotton",
-                "actors": [
-                  {
-                    "country": "India",
-                    "role": "importer",
-                    "is_india": true
-                  }
-                ],
-                "change": {
-                  "type": "tariff",
-                  "effective": "Continues until October 31, as reported"
-                },
-                "india_position": {
-                  "role": "competing_buyer",
-                  "note": "India is the importing country in this decision, which removes the duty on cotton it buys from abroad. Indian mills could pay less for imported cotton, while domestic growers may face more competition."
-                },
-                "volumes": []
-              }
-            }
-          },
-          "place": {
-            "name": "New Delhi",
-            "country": "India",
-            "lat": 28.61,
-            "lon": 77.21
-          },
-          "reports": [
-            {
-              "source": "thehindu",
-              "headline": "Government extends import duty exemption for cotton",
-              "url": "https://www.thehindu.com/business/government-extends-import-duty-exemption-for-cotton/article71648074.ece",
-              "date": "2026-10-31T01:14:15.000Z",
-              "kind": "hard",
-              "summary": "In a notification issued on October 30, the Finance Ministry said the exemption, which had been granted in May this year, will continue until October 31",
-              "summaryV": 3,
-              "image": "https://th-i.thgim.com/public/incoming/358o4p/article71648079.ece/alternates/LANDSCAPE_1200/2026-10-29T053134Z_803883632_RC2BAOAJAURA_RTRMADP_3_AFGHANISTAN-OPIUM-MALNUTRITION.JPG"
-            }
-          ],
-          "thread": "t1t3m881",
-          "finChecked": true,
-          "stats": {
-            "v": 2,
-            "at": "2026-10-31T07:53:45.931Z",
-            "series": [
-              {
-                "title": "India's cotton imports by quantity, by season",
-                "unit": "bales",
-                "publisher": "Ministry of Textiles (DGCIS data, via PIB)",
-                "why": "Imports were modest in the seasons before the duty-free windows began and rose in the latest season, which shows how much cotton the exemption is meant to bring in.",
-                "points": [
-                  {
-                    "period": "2019-20",
-                    "value": 1550312,
-                    "url": "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2155457",
-                    "source": "IMPORT OF COTTON"
-                  },
-                  {
-                    "period": "2020-21",
-                    "value": 1102637,
-                    "url": "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2155457",
-                    "source": "IMPORT OF COTTON"
-                  },
-                  {
-                    "period": "2022-23",
-                    "value": 1459396,
-                    "url": "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2155457",
-                    "source": "IMPORT OF COTTON"
-                  },
-                  {
-                    "period": "2023-24",
-                    "value": 1519675,
-                    "url": "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2155457",
-                    "source": "IMPORT OF COTTON"
-                  },
-                  {
-                    "period": "2024-25 (to 31 May 2025)",
-                    "value": 2709648,
-                    "url": "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2155457",
-                    "source": "IMPORT OF COTTON"
-                  }
-                ],
-                "dropped": 0,
-                "sources": [
-                  {
-                    "url": "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2155457",
-                    "title": "IMPORT OF COTTON",
-                    "domain": "pib.gov.in"
-                  }
-                ],
-                "domains": [
-                  "pib.gov.in"
-                ]
-              },
-              {
-                "title": "India's cotton imports by value, by season",
-                "unit": "Rs. crore",
-                "publisher": "Ministry of Textiles (DGCIS data, via PIB)",
-                "why": "",
-                "points": [
-                  {
-                    "period": "2019-20",
-                    "value": 3588,
-                    "url": "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2155457",
-                    "source": "IMPORT OF COTTON"
-                  },
-                  {
-                    "period": "2020-21",
-                    "value": 3480,
-                    "url": "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2155457",
-                    "source": "IMPORT OF COTTON"
-                  },
-                  {
-                    "period": "2021-22",
-                    "value": 10354,
-                    "url": "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2155457",
-                    "source": "IMPORT OF COTTON"
-                  },
-                  {
-                    "period": "2022-23",
-                    "value": 6029,
-                    "url": "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2155457",
-                    "source": "IMPORT OF COTTON"
-                  },
-                  {
-                    "period": "2023-24",
-                    "value": 5483,
-                    "url": "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2155457",
-                    "source": "IMPORT OF COTTON"
-                  },
-                  {
-                    "period": "2024-25 (to 31 May 2025)",
-                    "value": 7830,
-                    "url": "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2155457",
-                    "source": "IMPORT OF COTTON"
-                  }
-                ],
-                "dropped": 0,
-                "sources": [
-                  {
-                    "url": "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2155457",
-                    "title": "IMPORT OF COTTON",
-                    "domain": "pib.gov.in"
-                  }
-                ],
-                "domains": [
-                  "pib.gov.in"
-                ]
-              }
-            ]
-          }
         },
         {
           "id": "s1jq9iko",
@@ -11791,7 +12176,12 @@
             "lon": 78.96
           },
           "thread": "tkhd2mg",
-          "finChecked": true
+          "finChecked": true,
+          "stats": {
+            "v": 2,
+            "at": "2026-10-31T19:31:50.865Z",
+            "series": []
+          }
         },
         {
           "id": "swu7e8r",
@@ -11891,7 +12281,195 @@
             }
           ],
           "thread": "t1c8rmk",
-          "finChecked": true
+          "finChecked": true,
+          "stats": {
+            "v": 2,
+            "at": "2026-10-31T19:32:04.906Z",
+            "series": [
+              {
+                "title": "Index of Services Production: Retail Trade (base 2024-25=100)",
+                "unit": "index points (2024-25 = 100)",
+                "publisher": "Ministry of Statistics & Programme Implementation (MoSPI)",
+                "why": "Retail trade is one of the fast-growing sub-sectors in the new trial index, so its monthly path shows the momentum behind the headline.",
+                "points": [
+                  {
+                    "period": "Aug 2025",
+                    "value": 116.1,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2316489&lang=2&reg=48",
+                    "source": "Release of Sub-Sectoral Trial Index of Services Production (ISP) for July 2026 (Base Year 2024–25)"
+                  },
+                  {
+                    "period": "Sep 2025",
+                    "value": 133.8,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2316489&lang=2&reg=48",
+                    "source": "Release of Sub-Sectoral Trial Index of Services Production (ISP) for July 2026 (Base Year 2024–25)"
+                  },
+                  {
+                    "period": "Oct 2025",
+                    "value": 153.1,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2316489&lang=2&reg=48",
+                    "source": "Release of Sub-Sectoral Trial Index of Services Production (ISP) for July 2026 (Base Year 2024–25)"
+                  },
+                  {
+                    "period": "Nov 2025",
+                    "value": 122.3,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2316489&lang=2&reg=48",
+                    "source": "Release of Sub-Sectoral Trial Index of Services Production (ISP) for July 2026 (Base Year 2024–25)"
+                  },
+                  {
+                    "period": "Dec 2025",
+                    "value": 138.7,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2316489&lang=2&reg=48",
+                    "source": "Release of Sub-Sectoral Trial Index of Services Production (ISP) for July 2026 (Base Year 2024–25)"
+                  },
+                  {
+                    "period": "Jan 2026",
+                    "value": 145.4,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2316489&lang=2&reg=48",
+                    "source": "Release of Sub-Sectoral Trial Index of Services Production (ISP) for July 2026 (Base Year 2024–25)"
+                  },
+                  {
+                    "period": "Feb 2026",
+                    "value": 138.7,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2316489&lang=2&reg=48",
+                    "source": "Release of Sub-Sectoral Trial Index of Services Production (ISP) for July 2026 (Base Year 2024–25)"
+                  },
+                  {
+                    "period": "Mar 2026",
+                    "value": 155.4,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2316489&lang=2&reg=48",
+                    "source": "Release of Sub-Sectoral Trial Index of Services Production (ISP) for July 2026 (Base Year 2024–25)"
+                  },
+                  {
+                    "period": "Apr 2026",
+                    "value": 137.5,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2316489&lang=2&reg=48",
+                    "source": "Release of Sub-Sectoral Trial Index of Services Production (ISP) for July 2026 (Base Year 2024–25)"
+                  },
+                  {
+                    "period": "May 2026",
+                    "value": 138.1,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2316489&lang=2&reg=48",
+                    "source": "Release of Sub-Sectoral Trial Index of Services Production (ISP) for July 2026 (Base Year 2024–25)"
+                  },
+                  {
+                    "period": "Jun 2026",
+                    "value": 138,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2316489&lang=2&reg=48",
+                    "source": "Release of Sub-Sectoral Trial Index of Services Production (ISP) for July 2026 (Base Year 2024–25)"
+                  },
+                  {
+                    "period": "Jul 2026",
+                    "value": 140,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2316489&lang=2&reg=48",
+                    "source": "Release of Sub-Sectoral Trial Index of Services Production (ISP) for July 2026 (Base Year 2024–25)"
+                  }
+                ],
+                "dropped": 0,
+                "sources": [
+                  {
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2316489&lang=2&reg=48",
+                    "title": "Release of Sub-Sectoral Trial Index of Services Production (ISP) for July 2026 (Base Year 2024–25)",
+                    "domain": "pib.gov.in"
+                  }
+                ],
+                "domains": [
+                  "pib.gov.in"
+                ]
+              },
+              {
+                "title": "Index of Services Production: Air Transport (base 2024-25=100)",
+                "unit": "index points (2024-25 = 100)",
+                "publisher": "Ministry of Statistics & Programme Implementation (MoSPI)",
+                "why": "Air transport is among the few sub-sectors that have been weakening rather than growing, which gives context to the contracting segments in the story.",
+                "points": [
+                  {
+                    "period": "Aug 2025",
+                    "value": 98.7,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2316489&lang=2&reg=48",
+                    "source": "Release of Sub-Sectoral Trial Index of Services Production (ISP) for July 2026 (Base Year 2024–25)"
+                  },
+                  {
+                    "period": "Sep 2025",
+                    "value": 95.4,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2316489&lang=2&reg=48",
+                    "source": "Release of Sub-Sectoral Trial Index of Services Production (ISP) for July 2026 (Base Year 2024–25)"
+                  },
+                  {
+                    "period": "Oct 2025",
+                    "value": 105,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2316489&lang=2&reg=48",
+                    "source": "Release of Sub-Sectoral Trial Index of Services Production (ISP) for July 2026 (Base Year 2024–25)"
+                  },
+                  {
+                    "period": "Nov 2025",
+                    "value": 113.3,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2316489&lang=2&reg=48",
+                    "source": "Release of Sub-Sectoral Trial Index of Services Production (ISP) for July 2026 (Base Year 2024–25)"
+                  },
+                  {
+                    "period": "Dec 2025",
+                    "value": 113.3,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2316489&lang=2&reg=48",
+                    "source": "Release of Sub-Sectoral Trial Index of Services Production (ISP) for July 2026 (Base Year 2024–25)"
+                  },
+                  {
+                    "period": "Jan 2026",
+                    "value": 117.3,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2316489&lang=2&reg=48",
+                    "source": "Release of Sub-Sectoral Trial Index of Services Production (ISP) for July 2026 (Base Year 2024–25)"
+                  },
+                  {
+                    "period": "Feb 2026",
+                    "value": 107,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2316489&lang=2&reg=48",
+                    "source": "Release of Sub-Sectoral Trial Index of Services Production (ISP) for July 2026 (Base Year 2024–25)"
+                  },
+                  {
+                    "period": "Mar 2026",
+                    "value": 102,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2316489&lang=2&reg=48",
+                    "source": "Release of Sub-Sectoral Trial Index of Services Production (ISP) for July 2026 (Base Year 2024–25)"
+                  },
+                  {
+                    "period": "Apr 2026",
+                    "value": 89.9,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2316489&lang=2&reg=48",
+                    "source": "Release of Sub-Sectoral Trial Index of Services Production (ISP) for July 2026 (Base Year 2024–25)"
+                  },
+                  {
+                    "period": "May 2026",
+                    "value": 99.9,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2316489&lang=2&reg=48",
+                    "source": "Release of Sub-Sectoral Trial Index of Services Production (ISP) for July 2026 (Base Year 2024–25)"
+                  },
+                  {
+                    "period": "Jun 2026",
+                    "value": 91.2,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2316489&lang=2&reg=48",
+                    "source": "Release of Sub-Sectoral Trial Index of Services Production (ISP) for July 2026 (Base Year 2024–25)"
+                  },
+                  {
+                    "period": "Jul 2026",
+                    "value": 87.8,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2316489&lang=2&reg=48",
+                    "source": "Release of Sub-Sectoral Trial Index of Services Production (ISP) for July 2026 (Base Year 2024–25)"
+                  }
+                ],
+                "dropped": 0,
+                "sources": [
+                  {
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2316489&lang=2&reg=48",
+                    "title": "Release of Sub-Sectoral Trial Index of Services Production (ISP) for July 2026 (Base Year 2024–25)",
+                    "domain": "pib.gov.in"
+                  }
+                ],
+                "domains": [
+                  "pib.gov.in"
+                ]
+              }
+            ]
+          }
         },
         {
           "id": "s97cqur",
@@ -22414,7 +22992,56 @@
             }
           ],
           "thread": "t5sqh80",
-          "finChecked": true
+          "finChecked": true,
+          "stats": {
+            "v": 2,
+            "at": "2026-10-31T19:32:17.897Z",
+            "series": [
+              {
+                "title": "Indian rupees per U.S. dollar, annual average",
+                "unit": "Indian rupees per U.S. dollar",
+                "publisher": "Board of Governors of the Federal Reserve System (G.5A)",
+                "why": "The yearly average rupee-dollar rate shows how far the rupee has weakened against the dollar in the years before the latest early-trade move.",
+                "points": [
+                  {
+                    "period": "2022",
+                    "value": 78.5792,
+                    "url": "https://www.federalreserve.gov/releases/g5a/current/",
+                    "source": "Federal Reserve Board - Foreign Exchange Rates - G.5A - January 05, 2026"
+                  },
+                  {
+                    "period": "2023",
+                    "value": 82.5708,
+                    "url": "https://www.federalreserve.gov/releases/g5a/current/",
+                    "source": "Federal Reserve Board - Foreign Exchange Rates - G.5A - January 05, 2026"
+                  },
+                  {
+                    "period": "2024",
+                    "value": 83.6566,
+                    "url": "https://www.federalreserve.gov/releases/g5a/current/",
+                    "source": "Federal Reserve Board - Foreign Exchange Rates - G.5A - January 05, 2026"
+                  },
+                  {
+                    "period": "2025",
+                    "value": 87.1468,
+                    "url": "https://www.federalreserve.gov/releases/g5a/current/",
+                    "source": "Federal Reserve Board - Foreign Exchange Rates - G.5A - January 05, 2026"
+                  }
+                ],
+                "dropped": 0,
+                "sources": [
+                  {
+                    "url": "https://www.federalreserve.gov/releases/g5a/current/",
+                    "title": "Federal Reserve Board - Foreign Exchange Rates - G.5A - January 05, 2026",
+                    "domain": "federalreserve.gov"
+                  }
+                ],
+                "domains": [
+                  "federalreserve.gov"
+                ]
+              }
+            ]
+          }
         },
         {
           "id": "s920m6f",
@@ -23874,16 +24501,16 @@
           "date": "2026-10-28T13:07:43.000Z",
           "relevance": "medium",
           "image": "https://th-i.thgim.com/public/incoming/wpmqs8/article71636100.ece/alternates/LANDSCAPE_1200/20261028225L.jpg",
-          "why": "ISRO's GSLV-F18 rocket placed the NVS-03 navigation satellite into orbit on October 30. The satellite is expected to restore the functioning of NavIC, India's own regional satellite navigation system, which reduces reliance on foreign systems such as GPS.",
+          "why": "The Indian Space Research Organisation (ISRO) placed the NVS-03 navigation satellite in orbit, which Mint reports restored India's NavIC system to its minimum of four satellites. This strengthens India's independent navigation and timekeeping capability.",
           "implications": [
-            "NVS-03 carries an indigenous atomic clock alongside procured ones, which may reduce India's dependence on imported timing hardware, the component on which satellite positioning accuracy rests.",
-            "The added L1 frequency band could make NavIC signals easier for mainstream smartphones and receivers in India to use, because many consumer navigation chips are already built around that band.",
-            "The satellite has a reported mission life of 12 years, so if it performs as designed it could anchor the NavIC constellation for more than a decade.",
-            "The launch follows the unsuccessful NVS-02 mission, so a working NVS-03 matters for keeping alive a system India began building after the 1999 Kargil War, when the US reportedly restricted GPS data access."
+            "The satellite carries an indigenous atomic clock alongside procured ones, so India depends less on imported clocks for the precise timing that satellite navigation requires.",
+            "Its L1 signal is reported to be compatible with modern devices, which could make it easier for phones and other receivers sold in India to use NavIC.",
+            "Mint reports that the earlier NVS-02 satellite was not successful, so this launch fills a gap that had left the constellation below its working minimum.",
+            "With a reported mission life of 12 years, NVS-03 gives NavIC a longer-term base for the navigation services that the Prime Minister said benefit people."
           ],
           "analysis": {
             "v": 3,
-            "at": "2026-10-30T22:37:36.612Z",
+            "at": "2026-10-31T19:33:40.120Z",
             "tier": "deep",
             "primary": "impact_chain",
             "complement": "winners_losers",
@@ -23892,63 +24519,56 @@
             ],
             "exposure": {
               "level": "medium",
-              "reason": "The effect reaches India through a single strategic technology system: navigation and timing services. It matters for defence, transport and devices, but does not directly change household prices or incomes."
+              "reason": "The effect reaches India through one strategic capability, satellite navigation and timing. Benefits to households and businesses arrive indirectly through devices and services that use NavIC."
             },
             "horizon": {
               "value": "months",
-              "reason": "Navigation satellites usually need orbit-raising and in-orbit testing before they enter service, so any restored NavIC performance is likely to be felt over the coming months."
+              "reason": "A new satellite usually needs orbit-raising and in-orbit testing, and device makers need time to support its signals, before users notice any change."
             },
             "confidence": {
               "level": "medium",
-              "reason": "The Hindu and Mint both report the launch plans, but the orbit placement rests on one breaking report from The Hindu, and the restoration of NavIC is expected rather than confirmed."
+              "reason": "The Hindu and Mint both report the successful launch, with the Prime Minister on record. The Hindu calls the restoration of NavIC 'expected', while Mint says it has happened."
             },
             "outlets": 2,
             "affected": [
               {
-                "group": "Fishers",
-                "direction": "up",
-                "what": "navigation and alert reliability",
-                "effect": "A restored NavIC constellation could improve the reliability of positioning and messaging services that coastal fishers use at sea.",
-                "basis": "inferred"
-              },
-              {
                 "group": "Travellers & pilgrims",
                 "direction": "up",
-                "what": "domestic navigation coverage",
-                "effect": "Better regional navigation signals, including the added L1 band, could improve positioning accuracy on devices that support NavIC for people travelling within India.",
+                "what": "navigation signal availability",
+                "effect": "Travellers using NavIC-enabled phones or vehicle systems could get more dependable positioning now that the constellation is back to its minimum configuration.",
                 "basis": "inferred"
               },
               {
-                "group": "Government finances",
-                "direction": "mixed",
-                "what": "return on space investment",
-                "effect": "A successful NVS-03 may help recover the value of public spending on the NavIC programme after the unsuccessful NVS-02 mission.",
+                "group": "IT & services workers",
+                "direction": "unclear",
+                "what": "access to precise timing",
+                "effect": "Services that depend on accurate time signals, such as networks and digital systems, could gain an Indian-controlled timing source through NavIC's atomic clocks.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "ISRO confirmation that NVS-03 has reached its final orbit and completed in-orbit testing",
-                "why": "This would show whether the satellite is working as designed and can begin contributing to NavIC services.",
+                "what": "ISRO confirmation that NVS-03 has reached its final orbit and NavIC services are operating",
+                "why": "It would confirm whether the restoration of NavIC that Mint reports is fully in effect.",
                 "when": "",
                 "where": "ISRO"
               },
               {
-                "what": "Official updates on whether NavIC constellation services have been restored after NVS-03 enters service",
-                "why": "This would confirm whether the mission achieved its central goal of restoring India's regional navigation system.",
+                "what": "ISRO announcements on launching further second-generation NVS navigation satellites",
+                "why": "Additional satellites would show whether NavIC moves beyond its minimum of four working satellites toward a sturdier constellation.",
                 "when": "",
                 "where": "ISRO"
               }
             ],
             "context": [
-              "Satellite navigation works by measuring the time signals take to travel from several satellites to a receiver. Each satellite therefore needs highly precise atomic clocks, and a constellation needs a minimum number of working satellites to give reliable positions.",
-              "Several first-generation NavIC satellites have suffered atomic clock failures in the past, which weakened the constellation and created the need for replacement satellites such as the second-generation NVS series.",
-              "The Indian government has encouraged the use of NavIC in devices such as smartphones and commercial vehicle trackers, but most consumer devices in India still rely mainly on the US GPS system."
+              "Satellite navigation systems work out a position by comparing timed signals from several satellites, so working atomic clocks and a minimum number of satellites in view are essential.",
+              "NavIC is a regional system covering India and surrounding areas, unlike global systems such as the US-run GPS. Atomic clock failures on earlier NavIC satellites had weakened the constellation.",
+              "Most consumer devices combine signals from several satellite systems, so a stronger NavIC is typically added to GPS rather than replacing it."
             ],
             "terms": [
               {
                 "term": "NavIC",
-                "meaning": "Navigation with Indian Constellation, India's own regional satellite navigation system, which provides positioning and timing over India and surrounding areas."
+                "meaning": "Navigation with Indian Constellation, India's own regional satellite navigation system, which provides positioning and timing signals over India and nearby areas."
               },
               {
                 "term": "GSLV",
@@ -23956,7 +24576,7 @@
               },
               {
                 "term": "L1/L5 signals",
-                "meaning": "Radio frequency bands used by navigation satellites to broadcast signals; L1 is the band most widely read by consumer navigation receivers."
+                "meaning": "Radio frequency bands used for navigation signals; L1 is the band most widely supported by everyday smartphones and receivers."
               }
             ],
             "frameworks": {
@@ -23964,49 +24584,43 @@
                 "chain": [
                   {
                     "step": "GSLV-F18 places NVS-03 in orbit",
-                    "detail": "ISRO's GSLV-F18 rocket, on the 20th GSLV flight, lifted off from Sriharikota and placed the 2,250-kg NVS-03 satellite into orbit on October 30.",
+                    "detail": "ISRO's GSLV-F18 rocket, on the 20th GSLV flight, launched the 2,250-kg NVS-03 from Sriharikota at 11:51 pm on October 30. The Hindu reports that the satellite was placed into orbit.",
                     "basis": "reported"
                   },
                   {
-                    "step": "Satellite strengthens the NavIC constellation",
-                    "detail": "NVS-03 carries an indigenous atomic clock and procured clocks. It is expected to restore the functioning of the NavIC constellation after the earlier NVS-02 mission was not successful.",
+                    "step": "NavIC returns to four satellites",
+                    "detail": "Mint reports that NVS-03 restored NavIC to its minimum operational configuration of four satellites. The Hindu describes this restoration as expected.",
                     "basis": "reported"
                   },
                   {
-                    "step": "Enhanced signals improve regional navigation",
-                    "detail": "The satellite broadcasts enhanced L1 and L5 signals, including an added L1 band. This is reported to boost India's regional navigation services and support their continuity.",
+                    "step": "Modern devices can receive signals",
+                    "detail": "The satellite carries atomic clocks and an L1 signal compatible with modern devices. This allows receivers in India to use NavIC for position and precise time.",
                     "basis": "reported"
                   },
                   {
-                    "step": "Wider use of Indian navigation",
-                    "detail": "If NavIC works reliably, more devices and users in India could rely on it alongside or instead of GPS. This may reduce the strategic risk the Kargil-era GPS restrictions exposed.",
+                    "step": "Reliance on foreign systems eases",
+                    "detail": "Wider use of NavIC could reduce India's dependence on foreign systems such as GPS. The Hindu notes that NavIC's development began after the US reportedly restricted GPS data access during the 1999 Kargil War.",
                     "basis": "inferred"
                   }
                 ],
-                "breaks_if": "The effect would not reach India if NVS-03 fails to reach its working orbit or its atomic clocks or signals fail during testing, leaving the NavIC constellation unrestored."
+                "breaks_if": "The effect would stall if NVS-03 failed to reach its working orbit or its atomic clocks failed in service, because NavIC would then fall below its four-satellite minimum."
               },
               "winners_losers": {
                 "groups": [
                   {
-                    "group": "Fishers",
-                    "direction": "gain",
-                    "directness": "indirect",
-                    "mechanism": "The satellite is reported to boost regional navigation. This could make NavIC-based positioning and messaging services used by coastal fishers more dependable once it enters service."
-                  },
-                  {
                     "group": "Travellers & pilgrims",
                     "direction": "gain",
                     "directness": "indirect",
-                    "mechanism": "Enhanced L1 and L5 signals are reported to improve regional navigation. This may give travellers using NavIC-capable devices more accurate positioning within India."
+                    "mechanism": "The L1 signal is reported to work with modern devices. People using NavIC-enabled phones and vehicle systems could therefore get steadier positioning across India."
                   },
                   {
-                    "group": "Government finances",
-                    "direction": "mixed",
+                    "group": "IT & services workers",
+                    "direction": "unclear",
                     "directness": "indirect",
-                    "mechanism": "A working NVS-03, with a 12-year mission life, could restore value to public investment in NavIC after the unsuccessful NVS-02 mission. Any further failure would add to the programme's cost."
+                    "mechanism": "The reports say NVS-03 strengthens India's precise timekeeping capability. Digital services that rely on accurate time could draw on an Indian-run source, though no specific users are named."
                   }
                 ],
-                "not_affected": "Most smartphone users are unlikely to notice an immediate change, because their devices typically combine several navigation systems, including GPS, and NVS-03 still has to complete testing before entering service."
+                "not_affected": "Most smartphone users may notice little immediate change, because their phones typically combine signals from several satellite systems, including GPS, and do not rely on NavIC alone."
               }
             }
           },
@@ -30987,7 +31601,70 @@
               "image": "https://www.livemint.com/lm-img/img/2026/10/28/1600x900/logo/Plastic_1793186375291_U3Ce_1793186375515_4iMR_776401d2-9c4f-44c8-ae5b-18653ec84476_6ZUX.jpg"
             }
           ],
-          "thread": "t5rvyh9"
+          "thread": "t5rvyh9",
+          "stats": {
+            "v": 2,
+            "at": "2026-10-31T19:32:20.250Z",
+            "series": [
+              {
+                "title": "Brent crude oil spot price, daily",
+                "unit": "US$ per barrel",
+                "publisher": "U.S. Energy Information Administration",
+                "points": [
+                  {
+                    "period": "13 Oct 2026",
+                    "value": 125.78,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "14 Oct 2026",
+                    "value": 126.55,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "15 Oct 2026",
+                    "value": 126.35,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "16 Oct 2026",
+                    "value": 119.33,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "19 Oct 2026",
+                    "value": 118.82,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "20 Oct 2026",
+                    "value": 115.22,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "title": "Spot Prices for Crude Oil and Petroleum Products",
+                    "domain": "eia.gov"
+                  }
+                ],
+                "domains": [
+                  "eia.gov"
+                ],
+                "dropped": 0,
+                "why": "The story names rising crude oil prices as a main driver of squeezed margins for polymer-based manufacturers, and the Brent crude spot price series tracks that exact input cost.",
+                "reused": true,
+                "checkedAt": "2026-10-23T05:07:39.435Z"
+              }
+            ]
+          }
         },
         {
           "id": "s1a9wwy7",
@@ -34265,6 +34942,131 @@
       "id": "environment",
       "name": "Environment & Climate",
       "items": [
+        {
+          "id": "sgingu0",
+          "headline": "After ‘Arnab’, Andhra Pradesh may face another severe cyclonic storm",
+          "url": "https://www.thehindu.com/news/national/andhra-pradesh/after-arnab-andhra-pradesh-may-face-another-severe-cyclonic-storm/article71649303.ece",
+          "source": "thehindu",
+          "date": "2026-10-31T17:34:37.000Z",
+          "relevance": "medium",
+          "image": "https://th-i.thgim.com/public/incoming/4u5hyb/article71649937.ece/alternates/LANDSCAPE_1200/VSP01_Fishing%20Boats%20%203.JPG",
+          "why": "The Hindu reports that a depression over the Bay of Bengal is expected to intensify into a severe cyclonic storm by November 2 and make landfall on the Andhra Pradesh coast on November 3, with winds of up to 120 kmph.",
+          "implications": [
+            "Residents of the coastal stretch between Narsapur and Nellore could face disruption from strong winds, and state authorities may need to prepare for possible evacuations and relief measures.",
+            "Fishing communities and farmers in the landfall zone could be exposed, because boats at sea and standing crops are vulnerable to high winds."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-31T19:30:06.233Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "high",
+              "reason": "The channel is the safety of people living on the Andhra Pradesh coast, which is forecast to take a landfall with winds up to 120 kmph. Effects beyond that region are not described in the report."
+            },
+            "horizon": {
+              "value": "now",
+              "reason": "The report gives landfall as November 3, only a few days after the report date of October 31."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single outlet, The Hindu, and the summary names no official forecaster; intensity and landfall are forecasts that may change."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "A named state or region",
+                "direction": "down",
+                "what": "coastal safety and services",
+                "effect": "Coastal Andhra Pradesh between Narsapur and Nellore could see strong winds at landfall, which may disrupt daily life, transport and power supply in the area.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Fishers",
+                "direction": "down",
+                "what": "fishing activity and boat safety",
+                "effect": "Rough seas and high winds ahead of landfall could keep boats ashore or put crews at risk, cutting fishing days and income.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Farmers",
+                "direction": "down",
+                "what": "standing crop damage risk",
+                "effect": "Strong winds, and any heavy rain the storm brings, could damage standing crops in the coastal districts near landfall.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Whether the depression intensifies into a severe cyclonic storm as forecast",
+                "why": "This would confirm that the storm is strengthening as projected before it reaches the coast.",
+                "when": "2026-11-02",
+                "where": "India Meteorological Department"
+              },
+              {
+                "what": "Landfall between Narsapur and Nellore with winds near 120 kmph",
+                "why": "The actual landfall point and wind speed would show which districts bear the greatest impact.",
+                "when": "2026-11-03",
+                "where": "India Meteorological Department"
+              }
+            ],
+            "context": [
+              "Cyclones that form over the Bay of Bengal often cross India's east coast, and the India Meteorological Department tracks them and issues warnings.",
+              "Forecast intensity and the landfall location can change as a system develops, so early projections are often revised."
+            ],
+            "terms": [
+              {
+                "term": "severe cyclonic storm",
+                "meaning": "A category in India's cyclone classification for an intense storm with strong winds, stronger than an ordinary cyclonic storm but weaker than a very severe cyclonic storm."
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Depression strengthens over Bay of Bengal",
+                    "detail": "The Hindu reports that the depression is likely to intensify into a severe cyclonic storm by November 2, which sets up a stronger system approaching the coast.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Landfall forecast on Andhra coast",
+                    "detail": "Landfall is expected between Narsapur and Nellore on November 3, with maximum wind speed of 120 kmph, so the impact would fall on that stretch of coast.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Coastal communities face disruption",
+                    "detail": "Strong winds at landfall could disrupt fishing, damage crops and interrupt transport and power in coastal districts, affecting residents and workers there.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The system weakens or shifts track away from the Andhra Pradesh coast before November 3, in which case strong winds would not reach the area."
+              }
+            }
+          },
+          "place": {
+            "name": "Andhra Pradesh coast, Bay of Bengal",
+            "country": "India",
+            "lat": 15.5,
+            "lon": 81
+          },
+          "reports": [
+            {
+              "source": "thehindu",
+              "headline": "After ‘Arnab’, Andhra Pradesh may face another severe cyclonic storm",
+              "url": "https://www.thehindu.com/news/national/andhra-pradesh/after-arnab-andhra-pradesh-may-face-another-severe-cyclonic-storm/article71649303.ece",
+              "date": "2026-10-31T17:34:37.000Z",
+              "kind": "hard",
+              "summary": "The depression over Bay of Bengal is likely to intensify into a severe cyclonic storm by November 2; landfall is expected between Narsapur and Nellore on November 3, with maximum wind speed of 120 kmph",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/incoming/4u5hyb/article71649937.ece/alternates/LANDSCAPE_1200/VSP01_Fishing%20Boats%20%203.JPG"
+            }
+          ],
+          "thread": "t1tlxm8k"
+        },
         {
           "id": "sftc8cb",
           "headline": "CPCB threatens to shut NCR industries yet to order pollution-control devices",
@@ -41474,6 +42276,108 @@
       "name": "Policy & Governance",
       "items": [
         {
+          "id": "s1nu0sk7",
+          "headline": "IBBI notifies new rules to shield healthy real estate projects from developer insolvency",
+          "url": "https://www.livemint.com/news/india/ibbi-notifies-new-rules-to-shield-healthy-real-estate-projects-from-developer-insolvency-11793449278405.html",
+          "source": "mint",
+          "date": "2026-10-31T13:21:49.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2026/10/31/1600x900/logo/L2_1736859147776_1793452373615_3kUw_5929d5d2-c023-4b54-8940-f12ca22424c4_krrh.JPG",
+          "why": "The Insolvency and Bankruptcy Board of India (IBBI) has notified rules that let financial creditors seek exemption for financially sound real estate projects from a developer's bankruptcy proceedings. This could protect homebuyers in healthy projects from delays caused by defaults elsewhere.",
+          "implications": [
+            "Without an exemption, a default on one project can pull a developer's other healthy projects into the same insolvency process, which can stall construction and hold up the registration of homes for buyers.",
+            "The relief is not automatic. The rules let financial creditors seek exemption, so outcomes may depend on whether creditors apply and on whether a project is judged financially sound."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-31T19:28:45.903Z",
+            "tier": "quick",
+            "primary": "policy_tracker",
+            "complement": null,
+            "features": [
+              "policy_stage"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": ""
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Any benefit depends on future insolvency cases in which creditors apply for exemption and the request is decided, which is likely to take months rather than days."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single Mint report that quotes no official statement, and the full text of the rules and their effective date are not confirmed in the report."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Borrowers",
+                "direction": "unclear",
+                "what": "risk of project delays",
+                "effect": "Homebuyers, many of whom are home-loan borrowers, could face fewer construction and registration delays if their project is exempted from a developer's insolvency proceedings.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "The first cases in which financial creditors apply for exemption of a real estate project under the new rules",
+                "why": "It would show how readily the exemption is used in practice and whether homebuyers in healthy projects actually gain protection.",
+                "when": "",
+                "where": "Insolvency and Bankruptcy Board of India"
+              }
+            ],
+            "context": [
+              "Under India's insolvency law, a company in insolvency is generally placed under a moratorium, which freezes most claims and legal actions against it. For developers, this has historically left even well-run projects stuck alongside troubled ones."
+            ],
+            "terms": [
+              {
+                "term": "IBBI",
+                "meaning": "The Insolvency and Bankruptcy Board of India is the regulator that frames rules for insolvency proceedings and for the professionals and agencies involved in them."
+              }
+            ],
+            "frameworks": {
+              "policy_tracker": {
+                "instrument": {
+                  "name": "Rules allowing exemption of financially sound real estate projects from developer insolvency proceedings",
+                  "issuer": "Insolvency and Bankruptcy Board of India (IBBI)",
+                  "jurisdiction": "India"
+                },
+                "stages": [
+                  {
+                    "stage": "notified",
+                    "date": "2026-10-31",
+                    "status": "done"
+                  }
+                ],
+                "obligations": [],
+                "applies_to_india": "yes",
+                "india_note": "The rules apply to real estate developers in India and could shield homebuyers in sound projects from construction delays and registration hurdles. Lenders gain a route to separate healthy projects from a defaulting developer's other assets."
+              }
+            }
+          },
+          "place": {
+            "name": "New Delhi",
+            "country": "India",
+            "lat": 28.6,
+            "lon": 77.2
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "IBBI notifies new rules to shield healthy real estate projects from developer insolvency",
+              "url": "https://www.livemint.com/news/india/ibbi-notifies-new-rules-to-shield-healthy-real-estate-projects-from-developer-insolvency-11793449278405.html",
+              "date": "2026-10-31T13:21:49.000Z",
+              "kind": "hard",
+              "summary": "New rules let financial creditors seek exemption for financially sound projects from bankruptcy proceedings, potentially protecting homebuyers from construction delays and registration hurdles caused by defaults elsewhere in a developer’s portfolio.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/10/31/1600x900/logo/L2_1736859147776_1793452373615_3kUw_5929d5d2-c023-4b54-8940-f12ca22424c4_krrh.JPG"
+            }
+          ],
+          "finChecked": true,
+          "thread": "t162ka0n"
+        },
+        {
           "id": "s1lpxgo0",
           "headline": "Census trainers flag queries on Aadhaar, caste, age and birthplace of parents as key challenges",
           "url": "https://www.thehindu.com/news/national/census-trainers-flag-queries-on-aadhaar-caste-age-and-birthplace-of-parents-as-key-challenges/article71640896.ece",
@@ -43041,7 +43945,70 @@
             }
           ],
           "thread": "t1efhn13",
-          "finChecked": true
+          "finChecked": true,
+          "stats": {
+            "v": 2,
+            "at": "2026-10-31T19:32:07.534Z",
+            "series": [
+              {
+                "title": "WPI pharmaceutical products, monthly index (2022-23=100)",
+                "unit": "index points (base 2022-23=100)",
+                "publisher": "Office of the Economic Adviser, DPIIT (via PIB)",
+                "points": [
+                  {
+                    "period": "Dec 2025",
+                    "value": 99.9,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2272872&reg=48&lang=1",
+                    "source": "PRESS RELEASE ON NEW SERIES OF WHOLESALE PRICE INDEX, AND PRODUCER PRICE INDICES WITH BASE YEAR 2022-23"
+                  },
+                  {
+                    "period": "Jan 2026",
+                    "value": 99.6,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2272872&reg=48&lang=1",
+                    "source": "PRESS RELEASE ON NEW SERIES OF WHOLESALE PRICE INDEX, AND PRODUCER PRICE INDICES WITH BASE YEAR 2022-23"
+                  },
+                  {
+                    "period": "Feb 2026",
+                    "value": 99.6,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2272872&reg=48&lang=1",
+                    "source": "PRESS RELEASE ON NEW SERIES OF WHOLESALE PRICE INDEX, AND PRODUCER PRICE INDICES WITH BASE YEAR 2022-23"
+                  },
+                  {
+                    "period": "Mar 2026",
+                    "value": 100.8,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2272872&reg=48&lang=1",
+                    "source": "PRESS RELEASE ON NEW SERIES OF WHOLESALE PRICE INDEX, AND PRODUCER PRICE INDICES WITH BASE YEAR 2022-23"
+                  },
+                  {
+                    "period": "Apr 2026",
+                    "value": 102,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2272872&reg=48&lang=1",
+                    "source": "PRESS RELEASE ON NEW SERIES OF WHOLESALE PRICE INDEX, AND PRODUCER PRICE INDICES WITH BASE YEAR 2022-23"
+                  },
+                  {
+                    "period": "May 2026",
+                    "value": 102.3,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2272872&reg=48&lang=1",
+                    "source": "PRESS RELEASE ON NEW SERIES OF WHOLESALE PRICE INDEX, AND PRODUCER PRICE INDICES WITH BASE YEAR 2022-23"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2272872&reg=48&lang=1",
+                    "title": "PRESS RELEASE ON NEW SERIES OF WHOLESALE PRICE INDEX, AND PRODUCER PRICE INDICES WITH BASE YEAR 2022-23",
+                    "domain": "pib.gov.in"
+                  }
+                ],
+                "domains": [
+                  "pib.gov.in"
+                ],
+                "dropped": 0,
+                "why": "The monthly wholesale price index for pharmaceutical products in India tracks the same domestic drug-price subject as the NPPA ceiling-price cuts, though it measures producer prices rather than the re",
+                "reused": true,
+                "checkedAt": "2026-10-16T21:21:34.823Z"
+              }
+            ]
+          }
         },
         {
           "id": "sd3m7m",
@@ -55271,14 +56238,14 @@
   "source": "BBC News & The Guardian & NPR & Al Jazeera & MercoPress & ABC News & The New York Times & CNBC & CBS News & DW & France 24 & Africanews & South China Morning Post & The Hindu & Mint & The Indian Express",
   "lastRun": {
     "filter": {
-      "judged": 79,
+      "judged": 85,
       "kept": 7,
       "guarded": 0
     },
     "health": {
       "day": "2026-10-31",
-      "newStories24h": 23,
-      "keepRate2d": 0.111
+      "newStories24h": 12,
+      "keepRate2d": 0.1
     },
     "wars": {
       "linked": 0,
@@ -55291,24 +56258,18 @@
       "waiting": 0
     },
     "skipped": {
-      "since": "2026-10-31T07:55:44.141Z",
-      "counts": {
-        "section": 1
-      },
-      "examples": {
-        "section": [
-          "Google’s parent company Alphabet’s shares plunge 12.6%, loses almost $500 billion in market value"
-        ]
-      }
+      "since": "2026-10-31T12:51:50.022Z",
+      "counts": {},
+      "examples": {}
     },
     "finance": {
       "moved": 0,
-      "checked": 0
+      "checked": 2
     },
-    "analysed": 79,
-    "added": 3,
-    "merged": 1,
-    "rejected": 75,
+    "analysed": 85,
+    "added": 4,
+    "merged": 3,
+    "rejected": 78,
     "failedBatches": 0,
     "feeds": {
       "thehindu": {
@@ -55328,18 +56289,18 @@
       }
     },
     "shareImages": {
-      "tried": 0,
-      "found": 0,
-      "summaries": 0
+      "tried": 2,
+      "found": 2,
+      "summaries": 2
     },
     "threads": {
-      "assigned": 3,
-      "created": 1,
+      "assigned": 4,
+      "created": 2,
       "failedBatches": 0
     },
     "summaries": {
-      "written": 0,
-      "due": 2
+      "written": 4,
+      "due": 4
     },
     "kinds": {
       "labelled": 0,
@@ -55347,49 +56308,114 @@
       "failedBatches": 0
     },
     "frames": {
-      "done": 0,
-      "waiting": 6,
-      "failedBatches": 0,
-      "budgetStopped": true
+      "done": 2,
+      "waiting": 4,
+      "failedBatches": 0
     },
     "stats": {
       "searched": 8,
-      "found": 0,
-      "reused": 0,
-      "none": 0,
+      "found": 3,
+      "reused": 2,
+      "none": 3,
       "failed": 0,
-      "proposed": 0,
+      "proposed": 42,
       "droppedPoints": 0,
-      "pagesFetched": 0,
-      "samples": [],
-      "budgetStopped": true
+      "pagesFetched": 6,
+      "samples": [
+        {
+          "headline": "IOC says crude Q2 price volatile as procurement swings between discounts and pre",
+          "result": "none",
+          "proposed": 0,
+          "checked": 0,
+          "pagesFetched": 0
+        },
+        {
+          "headline": "Petrol export duty cut to nil, diesel levy raised by ₹3 a litre",
+          "result": "chart",
+          "proposed": 12,
+          "checked": 12,
+          "pagesFetched": 2
+        },
+        {
+          "headline": "Adani Airport, foreign airlines deadlocked over Mumbai airport shift",
+          "result": "none",
+          "proposed": 0,
+          "checked": 0,
+          "pagesFetched": 0
+        },
+        {
+          "headline": "Pharma H1 exports up 5% to $16.14-bn. as Europe offsets U.S. slowdown",
+          "result": "too few checked figures",
+          "proposed": 2,
+          "checked": 2,
+          "pagesFetched": 1
+        },
+        {
+          "headline": "Trial Index of Services Production shows sustained momentum in August",
+          "result": "chart",
+          "proposed": 24,
+          "checked": 24,
+          "pagesFetched": 1
+        },
+        {
+          "headline": "NPPA slashes cancer drug MRPs by up to 93%; Thiotepa cut by ₹72,921",
+          "result": "reused saved series"
+        },
+        {
+          "headline": "Rupee rises 11 paise to 95.17 against U.S. dollar in early trade",
+          "result": "chart",
+          "proposed": 4,
+          "checked": 4,
+          "pagesFetched": 2
+        },
+        {
+          "headline": "MSMEs feel squeeze as polymer, freight costs rise",
+          "result": "reused saved series"
+        }
+      ]
     },
     "models": {
       "filter": {
         "model": "claude-haiku-5-5",
-        "calls": 8,
-        "inputTokens": 35799,
-        "outputTokens": 11319,
-        "cost": 0.0092
+        "calls": 17,
+        "inputTokens": 47161,
+        "outputTokens": 14325,
+        "cost": 0.0119
       },
       "analysis_quick": {
         "model": "claude-sonnet-5-5",
-        "calls": 4,
-        "inputTokens": 11809,
-        "outputTokens": 10895,
-        "cost": 0.1326
+        "calls": 5,
+        "inputTokens": 14656,
+        "outputTokens": 10947,
+        "cost": 0.1388
+      },
+      "stats": {
+        "model": "claude-sonnet-5-5",
+        "calls": 6,
+        "inputTokens": 677127,
+        "outputTokens": 7275,
+        "searches": 15,
+        "fetches": 15,
+        "cost": 1.577
+      },
+      "analysis": {
+        "model": "claude-opus-5-5",
+        "calls": 1,
+        "inputTokens": 4655,
+        "outputTokens": 7351,
+        "cost": 0.1656
       },
       "threads": {
         "model": "claude-sonnet-5-5",
-        "calls": 1,
-        "inputTokens": 9715,
-        "outputTokens": 88,
-        "cost": 0.0203
+        "calls": 5,
+        "inputTokens": 12695,
+        "outputTokens": 1624,
+        "cost": 0.0416
       }
     },
     "spend": {
-      "thisDesk": 0.1621,
-      "today": 5.4054,
+      "thisDesk": 1.9349,
+      "today": 3.3577,
       "cap": 6
     }
   },
