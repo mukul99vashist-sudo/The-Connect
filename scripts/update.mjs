@@ -27,6 +27,8 @@ const OUTLET_INFO = {
   indianexpress: { name: "The Indian Express", region: "India" }
 };
 const OUTLETS = Object.fromEntries(Object.entries(OUTLET_INFO).map(([id, o]) => [id, o.name]));
+// v76 (31 Oct 2026): filter replies get 8,000 tokens and a failed batch is retried in halves; one failed batch no longer
+// fails the run (that skipped saving); Indian Express feeds are requested with a browser user agent after a 403.
 // v75 (31 Oct 2026): back to the v72 keep/reject filter (v73/v74's Watch and Brief outcomes hid most stories and cut the
 // Global desk to a few a day), plus: Indian Express as the India desk's third outlet; Global items about India by name
 // are never rejected; a daily filter health record; statistics chosen by data (releases, prices, trade, markets, energy)
@@ -453,11 +455,13 @@ export function parseRss(xml, src) {
 }
 
 let feedHealth = {};   // outlet -> { feedsOk, feedsFailed, items }
+const BROWSER_UA_SOURCES = new Set(["indianexpress"]);   // v76: returned 403 to the engine's own user agent
 async function fetchFeeds(FEEDS) {
   const all = new Map();
   for (const { src, url } of FEEDS) {
     try {
-      const res = await fetch(url, { headers: { "user-agent": "intelligence-engine/1.0 (+github actions)" } });
+      const ua = BROWSER_UA_SOURCES.has(src) ? "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36" : "intelligence-engine/1.0 (+github actions)";
+      const res = await fetch(url, { headers: { "user-agent": ua, accept: "application/rss+xml, application/xml;q=0.9, */*;q=0.8" } });
       const h = feedHealth[src] ||= { feedsOk: 0, feedsFailed: 0, items: 0 };
       if (!res.ok) { console.warn(`Feed ${url} returned ${res.status}`); h.feedsFailed++; continue; }
       const items = parseRss(await res.text(), src);
@@ -1663,7 +1667,7 @@ async function callClaude(prompt, job, level = "core") {
         "anthropic-version": "2023-06-01",
         "content-type": "application/json"
       },
-      body: JSON.stringify({ model, max_tokens: job.startsWith("analysis") ? 16000 : 4000, messages: [{ role: "user", content: prompt }] })
+      body: JSON.stringify({ model, max_tokens: job.startsWith("analysis") ? 16000 : job === "filter" ? 8000 : 4000,  messages: [{ role: "user", content: prompt }] })
     });
     const body = await res.json().catch(() => ({}));
     if (res.ok) {
@@ -1698,7 +1702,7 @@ export async function main() {
     for (const desk of DESKS) {
       console.log(`\n=== ${desk.id} desk ===`);
       const r = await runDesk(desk);
-      if (r.failures && !r.added && !r.merged && r.analysed) deskFailed = true;
+      if (r.failures && r.failures >= r.batches && r.analysed) deskFailed = true;   // v76: only when every batch failed (one bad batch used to fail the run and skip saving)
       await saveBudget();
     }
   } finally { await saveBudget(); }
@@ -1787,14 +1791,16 @@ async function runDesk(desk) {
   // War ladder: tie older escalation stories to their war and set the starting level of new wars, before new stories are analysed.
   const warPrep = await prepareWars(allEvents());
   if (warPrep.linked || warPrep.seeded) console.log(`War ladder: ${warPrep.linked} older stories tied to a war, ${warPrep.seeded} wars given a starting level`);
+  let batches = 0;
   for (let k = 0; k < fresh.length; k += BATCH) {
+    batches++;
     const batch = fresh.slice(k, k + BATCH);
     if (budgetLeft("core") < 0.25) { budgetStopped = true; break; }   // left unseen: picked up by a later run if still fresh
     const cutoff = Date.now() - MATCH_WINDOW_DAYS * 864e5;
     const recent = allEvents().filter(e => !e.date || Date.parse(e.date) >= cutoff).slice(0, 80);
     // Step 1: the fast model keeps or rejects each headline and spots follow-ups to known stories.
     let verdicts;
-    try { verdicts = await callClaude(filterPrompt(batch, recent, desk.mode), "filter"); }
+    try { verdicts = await filterWithSplit(batch, recent, desk.mode); }
     catch (e) { if (e instanceof BudgetError) { budgetStopped = true; break; } console.error(`Filter batch failed: ${e.message}`); failures++; continue; } // not marked seen: retried next run
     const byId = new Map();
     for (const v of verdicts || []) if (v && Number.isInteger(+v.id) && batch[+v.id]) byId.set(+v.id, v);
@@ -1916,9 +1922,26 @@ async function runDesk(desk) {
   await fs.writeFile(desk.rejected, JSON.stringify(rejected.slice(0, MAX_REJECTED), null, 2) + "\n");
   console.log(`Added ${added} new events, merged ${merged} reports into existing events. Failed batches: ${failures}.`);
   if (budget) console.log(`Spend: this desk $${(budget.spent - runStart).toFixed(2)}; today $${budget.spent.toFixed(2)} of $${DAILY_BUDGET}${budgetStopped ? " — daily budget reached, remaining headlines wait for a later run" : ""}`);
-  return { added, merged, failures, analysed: fresh.length };
+  if (failures) console.log(`::warning title=${desk.id} desk::${failures} of ${batches} filter or analysis batches failed; they are retried next run`);
+  return { added, merged, failures, batches, analysed: fresh.length };
 }
 function latest(e) { return (e.reports || []).map(r => r.date || "").sort().pop() || e.date || ""; }
+
+// v76: if the filter's reply for a batch cannot be read, try the batch again as two halves (ids and "item:" links renumbered).
+async function filterWithSplit(batch, recent, mode) {
+  try { return await callClaude(filterPrompt(batch, recent, mode), "filter"); }
+  catch (e) {
+    if (e instanceof BudgetError || batch.length < 2) throw e;
+    console.warn(`Filter batch of ${batch.length} failed (${e.message}); retrying as two halves`);
+    const h = Math.ceil(batch.length / 2), out = [];
+    for (const [part, off] of [[batch.slice(0, h), 0], [batch.slice(h), h]]) {
+      const res = await callClaude(filterPrompt(part, recent, mode), "filter");
+      for (const v of res || []) { if (!v || !Number.isInteger(+v.id)) continue;
+        out.push({ ...v, id: +v.id + off, ...(typeof v.sameAs === "string" && v.sameAs.startsWith("item:") ? { sameAs: "item:" + (+v.sameAs.slice(5) + off) } : {}) }); }
+    }
+    return out;
+  }
+}
 
 // v75: a daily record of each desk's filter, and a warning on the GitHub Actions run page when a desk goes quiet.
 const HEALTH_FILE = "data/filter-health.json", HEALTH_DAYS = 30;
