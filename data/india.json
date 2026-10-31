@@ -2,129 +2,261 @@
   "schema": 4,
   "region": "India",
   "since": "2026-10-02",
-  "updatedAt": "2026-10-31T07:53:03.187Z",
+  "updatedAt": "2026-10-31T12:49:41.696Z",
   "sectors": [
     {
       "id": "energy",
       "name": "Energy",
       "items": [
         {
-          "id": "s12xp18x",
-          "headline": "Chevron and Exxon hit all-time highs as refining profits soar in reaction to Iran and Ukraine wars",
-          "url": "https://www.cnbc.com/2026/10/30/chevron-exxon-cvx-xom-earnings-q3-2026.html",
+          "id": "s1lo0ybp",
+          "headline": "Iran claims four tankers struck mines in Hormuz as strike fears grow after U.S. midterms",
+          "url": "https://www.cnbc.com/2026/10/30/iran-trump-hormuz-oil-middle-east-.html",
           "source": "cnbc",
-          "date": "2026-10-30T16:44:31.000Z",
+          "date": "2026-10-30T07:12:49.000Z",
           "relevance": "high",
-          "why": "CNBC reports that global diesel prices have surged after Ukraine and Iran struck refineries in Russia and the Middle East, lifting profits at refiners such as Chevron and Exxon. India, a large crude importer, could face higher fuel costs.",
+          "why": "Iran says four tankers struck mines in the Strait of Hormuz and disputes a U.S. claim that key shipping lanes are clear. If confirmed, tanker traffic that India's energy imports depend on could be disrupted.",
           "implications": [
-            "Diesel is widely used by trucks, farm equipment and public transport, so a sustained rise in its price could raise freight and food distribution costs across India.",
-            "Indian refiners that sell diesel abroad could earn wider margins, while the cost of imported crude and fuel products may rise for the country as a whole."
+            "Mines, or fear of them, can make shipowners and insurers cautious about entering the strait, which may delay or reroute cargoes bound for Indian ports.",
+            "The headline says fears of strikes are growing after the U.S. midterm elections, so shipping risk may stay elevated while the two sides' accounts conflict."
           ],
           "analysis": {
             "v": 3,
-            "at": "2026-10-30T18:09:15.575Z",
+            "at": "2026-10-30T10:16:09.384Z",
             "tier": "quick",
-            "primary": "escalation",
+            "primary": "disruption_map",
             "complement": null,
             "features": [
-              "armed_conflict"
+              "disruption",
+              "armed_conflict",
+              "pending_outcome"
             ],
             "exposure": {
               "level": "high",
-              "reason": "Diesel is a household and transport essential, and India relies on imported crude, so higher global diesel prices can reach pump prices and freight costs."
+              "reason": "The strait is a main route for the oil and gas India imports, so disruption could raise import costs and affect fuel and LPG supply, which are household essentials."
             },
             "horizon": {
               "value": "weeks",
-              "reason": "Global prices have already moved, and the pass-through to Indian import bills, freight rates and fuel costs usually takes a few weeks."
+              "reason": "The effect would depend on how long tanker movements stay hampered and how quickly cargoes already at sea or on order are delayed or repriced."
             },
             "confidence": {
               "level": "low",
-              "reason": "This rests on a single CNBC report, summarised briefly, with no official source, and the dates and targets of the strikes are not detailed."
+              "reason": "This rests on one CNBC report of a claim by Iran, which the U.S. disputes, and none of it is independently confirmed."
             },
             "outlets": 1,
             "affected": [
               {
                 "group": "Fuel & LPG users",
-                "direction": "up",
-                "what": "diesel and transport costs",
-                "effect": "Higher global diesel prices may raise refiners' costs, which could feed through to pump prices and to the cost of moving goods by road.",
+                "direction": "unclear",
+                "what": "fuel and LPG supply costs",
+                "effect": "If tanker traffic through the strait is hampered, India's crude and gas import costs could rise, which may feed through to petrol, diesel and LPG prices.",
                 "basis": "inferred"
               },
               {
-                "group": "Large exporters",
-                "direction": "mixed",
-                "what": "refining margins",
-                "effect": "Indian refiners that export diesel could gain from stronger margins, while other exporters may face higher fuel and freight costs.",
+                "group": "Importers & traders",
+                "direction": "up",
+                "what": "shipping delays and costs",
+                "effect": "Cautious insurers and rerouted vessels could raise freight and insurance costs and lengthen delivery times for goods moving through the Gulf region.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "Further reports of strikes on refineries or oil depots in Russia or the Middle East",
-                "why": "New attacks would show whether diesel supply stays tight and global prices keep rising.",
+                "what": "Independent confirmation of whether four tankers struck mines and whether the key shipping lanes are actually cleared",
+                "why": "It would show whether the Iranian or the U.S. account is correct and whether tanker traffic is really constrained.",
                 "when": "",
                 "where": ""
               }
             ],
             "context": [
-              "India imports most of the crude oil it uses, so disruptions to global refining and supply reach it through import costs and the prices of fuels such as diesel.",
-              "Attacks on refineries cut the output of finished fuels, which can tighten diesel supply even when crude oil supply is unchanged."
+              "India imports most of its crude oil, and a large share of Gulf oil and gas exports to Asia passes through the Strait of Hormuz, a narrow waterway at the mouth of the Persian Gulf.",
+              "Sea mines are hard to detect and slow to clear, so claims that lanes are safe are usually verified before shipowners and insurers resume normal traffic."
             ],
-            "terms": [],
+            "terms": [
+              {
+                "term": "Strait of Hormuz",
+                "meaning": "A narrow sea passage between Iran and the Arabian Peninsula through which much of the Gulf region's oil and gas exports travel by tanker."
+              }
+            ],
             "frameworks": {
-              "escalation": {
-                "move": "none",
-                "rung": 6,
-                "current_rung": 6,
-                "previous_rung": null,
-                "development": "CNBC reports that Ukrainian and Iranian strikes on refineries in Russia and the Middle East have pushed global diesel prices sharply higher.",
-                "evidence": "The report does not date these strikes after 18 October 2026, when the war was placed at rung 6, so it shows no new higher-rung action and the level stays where it is.",
-                "next_signals": [
+              "disruption_map": {
+                "node": {
+                  "name": "Strait of Hormuz",
+                  "type": "strait",
+                  "status": "unknown",
+                  "as_of": "2026-10-30 07:12"
+                },
+                "cause": {
+                  "text": "Iran claims that four tankers struck mines in the strait, while it disputes a U.S. claim that key shipping lanes have been cleared.",
+                  "status": "claimed"
+                },
+                "flows": [
                   {
-                    "rung": 7,
-                    "signal": "Reports that Russia and Ukraine have moved to open full-scale war, for example through general mobilisation or the direct entry of other countries' forces."
-                  },
-                  {
-                    "rung": 5,
-                    "signal": "Strikes on power and oil infrastructure stop being reported, with attacks confined to military targets, which would indicate a move down to sustained strikes."
+                    "flow": "cargo",
+                    "india_link": "Tankers are the vessels named in the report. If their passage is delayed, the energy cargoes India imports from the Gulf may be affected.",
+                    "basis": "inferred"
                   }
                 ],
-                "india_channels": [
-                  "oil"
-                ],
-                "conflict": "wzti51f",
-                "applied": "none",
-                "from": 6
+                "alternatives": [],
+                "duration": "not reported"
               }
             }
           },
-          "conflict": "wzti51f",
+          "place": {
+            "name": "Strait of Hormuz",
+            "country": "Iran",
+            "lat": 26.6,
+            "lon": 56.3,
+            "involves": [
+              "United States"
+            ]
+          },
           "reports": [
             {
               "source": "cnbc",
-              "headline": "Chevron and Exxon hit all-time highs as refining profits soar in reaction to Iran and Ukraine wars",
-              "url": "https://www.cnbc.com/2026/10/30/chevron-exxon-cvx-xom-earnings-q3-2026.html",
-              "date": "2026-10-30T16:44:31.000Z",
-              "kind": "hard",
-              "summary": "Global diesel prices surged as Ukraine and Iran struck refineries in Russia and the Middle East.",
+              "headline": "Iran claims four tankers struck mines in Hormuz as strike fears grow after U.S. midterms",
+              "url": "https://www.cnbc.com/2026/10/30/iran-trump-hormuz-oil-middle-east-.html",
+              "date": "2026-10-30T07:12:49.000Z",
+              "kind": "breaking",
+              "summary": "Iran said four tankers struck mines in the Strait of Hormuz, while Tehran disputed a U.S. claim that key shipping lanes had been cleared.",
               "summaryV": 3,
               "ogTried": true,
               "descTried": true,
-              "image": "https://image.cnbcfm.com/api/v1/image/108373938-1791375909497-gettyimages-2291635421-AFP_C6KY7DL.jpeg?v=1793358679&w=1920&h=1080"
+              "image": "https://image.cnbcfm.com/api/v1/image/108484423-1793336204524-gettyimages-2293738583-AA_09092026_2944246.jpeg?v=1793336240&w=1920&h=1080"
             },
             {
-              "source": "cnbc",
-              "headline": "Trump called out Big Oil profits. Here’s how much their refining earnings have surged since",
-              "url": "https://www.cnbc.com/2026/10/31/trump-big-oil-refining-profits.html",
-              "date": "2026-10-31T06:00:02.000Z",
-              "kind": "hard",
-              "summary": "Trump criticized Big Oil for making “too much money,” but oil majors have since reported surging refining earnings as fuel supplies tightened.",
-              "summaryV": 3
+              "source": "abc",
+              "headline": "'Supertanker' strikes mine in Hormuz, losing two million barrels of oil",
+              "url": "https://www.abc.net.au/news/2026-10-31/four-tankers-strike-mines-in-strait-of-hormuz/107332392",
+              "date": "2026-10-31T12:37:33.000Z",
+              "kind": "breaking",
+              "summary": "Four oil tankers, including a 'supertanker' carrying more than two million barrels of oil, have hit mines and caught fire while travelling through the Strait of Hormuz.",
+              "summaryV": 3,
+              "image": "https://live-production.wcms.abc-cdn.net.au/486d108a6cec5daa130cda494b8a0cb7?impolicy=wcms_crop_resize&cropH=2810&cropW=4995&xPos=0&yPos=377&width=862&height=485"
             }
           ],
-          "placeTried": true,
-          "image": "https://image.cnbcfm.com/api/v1/image/108373938-1791375909497-gettyimages-2291635421-AFP_C6KY7DL.jpeg?v=1793358679&w=1920&h=1080",
-          "thread": "t183s5v2"
+          "image": "https://image.cnbcfm.com/api/v1/image/108484423-1793336204524-gettyimages-2293738583-AA_09092026_2944246.jpeg?v=1793336240&w=1920&h=1080",
+          "thread": "t2ogxay",
+          "stats": {
+            "v": 2,
+            "at": "2026-10-31T07:51:26.866Z",
+            "series": [
+              {
+                "title": "Crude oil and condensate through the Strait of Hormuz",
+                "unit": "million barrels per day",
+                "publisher": "U.S. Energy Information Administration",
+                "points": [
+                  {
+                    "period": "2020",
+                    "value": 14.4,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2021",
+                    "value": 14.7,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2022",
+                    "value": 16.2,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2023",
+                    "value": 15.8,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2024",
+                    "value": 14.6,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "1H25",
+                    "value": 14.7,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "title": "eia.gov",
+                    "domain": "eia.gov"
+                  }
+                ],
+                "domains": [
+                  "eia.gov"
+                ],
+                "dropped": 0,
+                "why": "Both series track oil volumes moving through the Strait of Hormuz, the chokepoint whose tanker traffic the story says may be disrupted by reported mine strikes.",
+                "reused": true,
+                "checkedAt": "2026-10-13T23:16:50.395Z"
+              },
+              {
+                "title": "Oil flows through the Strait of Hormuz, total",
+                "unit": "million barrels per day",
+                "publisher": "U.S. Energy Information Administration",
+                "points": [
+                  {
+                    "period": "2020",
+                    "value": 19.2,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2021",
+                    "value": 19.7,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2022",
+                    "value": 21.9,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2023",
+                    "value": 21.8,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2024",
+                    "value": 20.7,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "1H25",
+                    "value": 20.9,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "title": "eia.gov",
+                    "domain": "eia.gov"
+                  }
+                ],
+                "domains": [
+                  "eia.gov"
+                ],
+                "dropped": 0,
+                "why": "Both series track oil volumes moving through the Strait of Hormuz, the chokepoint whose tanker traffic the story says may be disrupted by reported mine strikes.",
+                "reused": true,
+                "checkedAt": "2026-10-13T23:16:50.395Z"
+              }
+            ]
+          }
         },
         {
           "id": "szrvdxz",
@@ -282,6 +414,24 @@
               "kind": "hard",
               "summary": "Pakistan's military spokesman warns of 'powerful spoilers and detractors' who still believe the conflict serves them.",
               "summaryV": 3
+            },
+            {
+              "source": "cnbc",
+              "headline": "Qatari mediators held talks in Tehran aimed at restarting direct U.S.-Iran negotiations, source says",
+              "url": "https://www.cnbc.com/2026/10/31/qatar-iran-us-talks-mediation.html",
+              "date": "2026-10-31T12:11:12.000Z",
+              "kind": "hard",
+              "summary": "Axios reported that Qatari mediators held more than 12 hours of talks in Tehran on Friday to reach a deal to avoid a resumption of American-led attacks on Iran.",
+              "summaryV": 3
+            },
+            {
+              "source": "aljazeera",
+              "headline": "Iran warns of unfettered retaliation if attacked as mediators try for peace",
+              "url": "https://www.aljazeera.com/news/2026/10/31/iran-warns-of-unfettered-retaliation-if-attacked-as-mediators-try-for-peace",
+              "date": "2026-10-31T12:13:42.000Z",
+              "kind": "hard",
+              "summary": "Iran’s supreme leader says Tehran’s potential response will not be restricted by geography.",
+              "summaryV": 3
             }
           ],
           "image": "https://assets3.cbsnewsstatic.com/hub/i/r/2026/10/30/6861dff3-34d6-496b-a11f-ad14b9228936/thumbnail/1200x630/865a67ecaaffb5727a37fc942110b0ff/hvy6j5dwyaajcje.jpg",
@@ -406,6 +556,160 @@
               }
             ]
           }
+        },
+        {
+          "id": "sn5zdu1",
+          "headline": "Are Houthis using Russian satellites as Saudi Arabia fends off strikes?",
+          "url": "https://www.aljazeera.com/news/2026/10/31/are-houthis-using-russian-satellites-as-saudi-arabia-faces-hits",
+          "source": "aljazeera",
+          "date": "2026-10-31T08:08:30.000Z",
+          "relevance": "medium",
+          "why": "",
+          "implications": [],
+          "place": {
+            "name": "Riyadh",
+            "country": "Saudi Arabia",
+            "lat": 24.7,
+            "lon": 46.7,
+            "involves": [
+              "Yemen",
+              "Russia"
+            ]
+          },
+          "reports": [
+            {
+              "source": "aljazeera",
+              "headline": "Are Houthis using Russian satellites as Saudi Arabia fends off strikes?",
+              "url": "https://www.aljazeera.com/news/2026/10/31/are-houthis-using-russian-satellites-as-saudi-arabia-faces-hits",
+              "date": "2026-10-31T08:08:30.000Z",
+              "kind": "feature",
+              "summary": "Analysts say the seizure of state arsenals, external backing and extensive military evolution has helped the Houthis.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/AFP__20261021__D3ZD9ZQ__v1__HighRes__YemenSaudiIranUsIsraelWar-1793111925.jpg?resize=1920%2C1440"
+            }
+          ],
+          "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/AFP__20261021__D3ZD9ZQ__v1__HighRes__YemenSaudiIranUsIsraelWar-1793111925.jpg?resize=1920%2C1440",
+          "thread": "tq5ix5r"
+        },
+        {
+          "id": "s12xp18x",
+          "headline": "Chevron and Exxon hit all-time highs as refining profits soar in reaction to Iran and Ukraine wars",
+          "url": "https://www.cnbc.com/2026/10/30/chevron-exxon-cvx-xom-earnings-q3-2026.html",
+          "source": "cnbc",
+          "date": "2026-10-30T16:44:31.000Z",
+          "relevance": "high",
+          "why": "CNBC reports that global diesel prices have surged after Ukraine and Iran struck refineries in Russia and the Middle East, lifting profits at refiners such as Chevron and Exxon. India, a large crude importer, could face higher fuel costs.",
+          "implications": [
+            "Diesel is widely used by trucks, farm equipment and public transport, so a sustained rise in its price could raise freight and food distribution costs across India.",
+            "Indian refiners that sell diesel abroad could earn wider margins, while the cost of imported crude and fuel products may rise for the country as a whole."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-30T18:09:15.575Z",
+            "tier": "quick",
+            "primary": "escalation",
+            "complement": null,
+            "features": [
+              "armed_conflict"
+            ],
+            "exposure": {
+              "level": "high",
+              "reason": "Diesel is a household and transport essential, and India relies on imported crude, so higher global diesel prices can reach pump prices and freight costs."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Global prices have already moved, and the pass-through to Indian import bills, freight rates and fuel costs usually takes a few weeks."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single CNBC report, summarised briefly, with no official source, and the dates and targets of the strikes are not detailed."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "up",
+                "what": "diesel and transport costs",
+                "effect": "Higher global diesel prices may raise refiners' costs, which could feed through to pump prices and to the cost of moving goods by road.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Large exporters",
+                "direction": "mixed",
+                "what": "refining margins",
+                "effect": "Indian refiners that export diesel could gain from stronger margins, while other exporters may face higher fuel and freight costs.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Further reports of strikes on refineries or oil depots in Russia or the Middle East",
+                "why": "New attacks would show whether diesel supply stays tight and global prices keep rising.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "India imports most of the crude oil it uses, so disruptions to global refining and supply reach it through import costs and the prices of fuels such as diesel.",
+              "Attacks on refineries cut the output of finished fuels, which can tighten diesel supply even when crude oil supply is unchanged."
+            ],
+            "terms": [],
+            "frameworks": {
+              "escalation": {
+                "move": "none",
+                "rung": 6,
+                "current_rung": 6,
+                "previous_rung": null,
+                "development": "CNBC reports that Ukrainian and Iranian strikes on refineries in Russia and the Middle East have pushed global diesel prices sharply higher.",
+                "evidence": "The report does not date these strikes after 18 October 2026, when the war was placed at rung 6, so it shows no new higher-rung action and the level stays where it is.",
+                "next_signals": [
+                  {
+                    "rung": 7,
+                    "signal": "Reports that Russia and Ukraine have moved to open full-scale war, for example through general mobilisation or the direct entry of other countries' forces."
+                  },
+                  {
+                    "rung": 5,
+                    "signal": "Strikes on power and oil infrastructure stop being reported, with attacks confined to military targets, which would indicate a move down to sustained strikes."
+                  }
+                ],
+                "india_channels": [
+                  "oil"
+                ],
+                "conflict": "wzti51f",
+                "applied": "none",
+                "from": 6
+              }
+            }
+          },
+          "conflict": "wzti51f",
+          "reports": [
+            {
+              "source": "cnbc",
+              "headline": "Chevron and Exxon hit all-time highs as refining profits soar in reaction to Iran and Ukraine wars",
+              "url": "https://www.cnbc.com/2026/10/30/chevron-exxon-cvx-xom-earnings-q3-2026.html",
+              "date": "2026-10-30T16:44:31.000Z",
+              "kind": "hard",
+              "summary": "Global diesel prices surged as Ukraine and Iran struck refineries in Russia and the Middle East.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://image.cnbcfm.com/api/v1/image/108373938-1791375909497-gettyimages-2291635421-AFP_C6KY7DL.jpeg?v=1793358679&w=1920&h=1080"
+            },
+            {
+              "source": "cnbc",
+              "headline": "Trump called out Big Oil profits. Here’s how much their refining earnings have surged since",
+              "url": "https://www.cnbc.com/2026/10/31/trump-big-oil-refining-profits.html",
+              "date": "2026-10-31T06:00:02.000Z",
+              "kind": "hard",
+              "summary": "Trump criticized Big Oil for making “too much money,” but oil majors have since reported surging refining earnings as fuel supplies tightened.",
+              "summaryV": 3
+            }
+          ],
+          "placeTried": true,
+          "image": "https://image.cnbcfm.com/api/v1/image/108373938-1791375909497-gettyimages-2291635421-AFP_C6KY7DL.jpeg?v=1793358679&w=1920&h=1080",
+          "thread": "t183s5v2"
         },
         {
           "id": "s1vq49r6",
@@ -1156,246 +1460,6 @@
           "placeTried": true,
           "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/AP26253657242641-1-1793234091_8cc3e0-1793343640.jpg?resize=1200%2C630&quality=80",
           "thread": "t1dbdiwl"
-        },
-        {
-          "id": "s1lo0ybp",
-          "headline": "Iran claims four tankers struck mines in Hormuz as strike fears grow after U.S. midterms",
-          "url": "https://www.cnbc.com/2026/10/30/iran-trump-hormuz-oil-middle-east-.html",
-          "source": "cnbc",
-          "date": "2026-10-30T07:12:49.000Z",
-          "relevance": "high",
-          "why": "Iran says four tankers struck mines in the Strait of Hormuz and disputes a U.S. claim that key shipping lanes are clear. If confirmed, tanker traffic that India's energy imports depend on could be disrupted.",
-          "implications": [
-            "Mines, or fear of them, can make shipowners and insurers cautious about entering the strait, which may delay or reroute cargoes bound for Indian ports.",
-            "The headline says fears of strikes are growing after the U.S. midterm elections, so shipping risk may stay elevated while the two sides' accounts conflict."
-          ],
-          "analysis": {
-            "v": 3,
-            "at": "2026-10-30T10:16:09.384Z",
-            "tier": "quick",
-            "primary": "disruption_map",
-            "complement": null,
-            "features": [
-              "disruption",
-              "armed_conflict",
-              "pending_outcome"
-            ],
-            "exposure": {
-              "level": "high",
-              "reason": "The strait is a main route for the oil and gas India imports, so disruption could raise import costs and affect fuel and LPG supply, which are household essentials."
-            },
-            "horizon": {
-              "value": "weeks",
-              "reason": "The effect would depend on how long tanker movements stay hampered and how quickly cargoes already at sea or on order are delayed or repriced."
-            },
-            "confidence": {
-              "level": "low",
-              "reason": "This rests on one CNBC report of a claim by Iran, which the U.S. disputes, and none of it is independently confirmed."
-            },
-            "outlets": 1,
-            "affected": [
-              {
-                "group": "Fuel & LPG users",
-                "direction": "unclear",
-                "what": "fuel and LPG supply costs",
-                "effect": "If tanker traffic through the strait is hampered, India's crude and gas import costs could rise, which may feed through to petrol, diesel and LPG prices.",
-                "basis": "inferred"
-              },
-              {
-                "group": "Importers & traders",
-                "direction": "up",
-                "what": "shipping delays and costs",
-                "effect": "Cautious insurers and rerouted vessels could raise freight and insurance costs and lengthen delivery times for goods moving through the Gulf region.",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "Independent confirmation of whether four tankers struck mines and whether the key shipping lanes are actually cleared",
-                "why": "It would show whether the Iranian or the U.S. account is correct and whether tanker traffic is really constrained.",
-                "when": "",
-                "where": ""
-              }
-            ],
-            "context": [
-              "India imports most of its crude oil, and a large share of Gulf oil and gas exports to Asia passes through the Strait of Hormuz, a narrow waterway at the mouth of the Persian Gulf.",
-              "Sea mines are hard to detect and slow to clear, so claims that lanes are safe are usually verified before shipowners and insurers resume normal traffic."
-            ],
-            "terms": [
-              {
-                "term": "Strait of Hormuz",
-                "meaning": "A narrow sea passage between Iran and the Arabian Peninsula through which much of the Gulf region's oil and gas exports travel by tanker."
-              }
-            ],
-            "frameworks": {
-              "disruption_map": {
-                "node": {
-                  "name": "Strait of Hormuz",
-                  "type": "strait",
-                  "status": "unknown",
-                  "as_of": "2026-10-30 07:12"
-                },
-                "cause": {
-                  "text": "Iran claims that four tankers struck mines in the strait, while it disputes a U.S. claim that key shipping lanes have been cleared.",
-                  "status": "claimed"
-                },
-                "flows": [
-                  {
-                    "flow": "cargo",
-                    "india_link": "Tankers are the vessels named in the report. If their passage is delayed, the energy cargoes India imports from the Gulf may be affected.",
-                    "basis": "inferred"
-                  }
-                ],
-                "alternatives": [],
-                "duration": "not reported"
-              }
-            }
-          },
-          "place": {
-            "name": "Strait of Hormuz",
-            "country": "Iran",
-            "lat": 26.6,
-            "lon": 56.3,
-            "involves": [
-              "United States"
-            ]
-          },
-          "reports": [
-            {
-              "source": "cnbc",
-              "headline": "Iran claims four tankers struck mines in Hormuz as strike fears grow after U.S. midterms",
-              "url": "https://www.cnbc.com/2026/10/30/iran-trump-hormuz-oil-middle-east-.html",
-              "date": "2026-10-30T07:12:49.000Z",
-              "kind": "breaking",
-              "summary": "Iran said four tankers struck mines in the Strait of Hormuz, while Tehran disputed a U.S. claim that key shipping lanes had been cleared.",
-              "summaryV": 3,
-              "ogTried": true,
-              "descTried": true,
-              "image": "https://image.cnbcfm.com/api/v1/image/108484423-1793336204524-gettyimages-2293738583-AA_09092026_2944246.jpeg?v=1793336240&w=1920&h=1080"
-            }
-          ],
-          "image": "https://image.cnbcfm.com/api/v1/image/108484423-1793336204524-gettyimages-2293738583-AA_09092026_2944246.jpeg?v=1793336240&w=1920&h=1080",
-          "thread": "t2ogxay",
-          "stats": {
-            "v": 2,
-            "at": "2026-10-31T07:51:26.866Z",
-            "series": [
-              {
-                "title": "Crude oil and condensate through the Strait of Hormuz",
-                "unit": "million barrels per day",
-                "publisher": "U.S. Energy Information Administration",
-                "points": [
-                  {
-                    "period": "2020",
-                    "value": 14.4,
-                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-                    "source": "eia.gov"
-                  },
-                  {
-                    "period": "2021",
-                    "value": 14.7,
-                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-                    "source": "eia.gov"
-                  },
-                  {
-                    "period": "2022",
-                    "value": 16.2,
-                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-                    "source": "eia.gov"
-                  },
-                  {
-                    "period": "2023",
-                    "value": 15.8,
-                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-                    "source": "eia.gov"
-                  },
-                  {
-                    "period": "2024",
-                    "value": 14.6,
-                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-                    "source": "eia.gov"
-                  },
-                  {
-                    "period": "1H25",
-                    "value": 14.7,
-                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-                    "source": "eia.gov"
-                  }
-                ],
-                "sources": [
-                  {
-                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-                    "title": "eia.gov",
-                    "domain": "eia.gov"
-                  }
-                ],
-                "domains": [
-                  "eia.gov"
-                ],
-                "dropped": 0,
-                "why": "Both series track oil volumes moving through the Strait of Hormuz, the chokepoint whose tanker traffic the story says may be disrupted by reported mine strikes.",
-                "reused": true,
-                "checkedAt": "2026-10-13T23:16:50.395Z"
-              },
-              {
-                "title": "Oil flows through the Strait of Hormuz, total",
-                "unit": "million barrels per day",
-                "publisher": "U.S. Energy Information Administration",
-                "points": [
-                  {
-                    "period": "2020",
-                    "value": 19.2,
-                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-                    "source": "eia.gov"
-                  },
-                  {
-                    "period": "2021",
-                    "value": 19.7,
-                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-                    "source": "eia.gov"
-                  },
-                  {
-                    "period": "2022",
-                    "value": 21.9,
-                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-                    "source": "eia.gov"
-                  },
-                  {
-                    "period": "2023",
-                    "value": 21.8,
-                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-                    "source": "eia.gov"
-                  },
-                  {
-                    "period": "2024",
-                    "value": 20.7,
-                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-                    "source": "eia.gov"
-                  },
-                  {
-                    "period": "1H25",
-                    "value": 20.9,
-                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-                    "source": "eia.gov"
-                  }
-                ],
-                "sources": [
-                  {
-                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-                    "title": "eia.gov",
-                    "domain": "eia.gov"
-                  }
-                ],
-                "domains": [
-                  "eia.gov"
-                ],
-                "dropped": 0,
-                "why": "Both series track oil volumes moving through the Strait of Hormuz, the chokepoint whose tanker traffic the story says may be disrupted by reported mine strikes.",
-                "reused": true,
-                "checkedAt": "2026-10-13T23:16:50.395Z"
-              }
-            ]
-          }
         },
         {
           "id": "s16zdv39",
@@ -29274,6 +29338,109 @@
       "name": "Finance",
       "items": [
         {
+          "id": "sqp66v0",
+          "headline": "Meta- and Google-backed Jio Platforms’ shares soar over 21% on trading debut after record IPO",
+          "url": "https://www.cnbc.com/2026/10/28/jio-ipo-india-listing-.html",
+          "source": "cnbc",
+          "date": "2026-10-28T05:16:41.000Z",
+          "relevance": "medium",
+          "why": "CNBC reports that Jio Platforms shares rose more than 21% on their trading debut. The company raised 302 billion rupees ($3.2 billion) at 1,119 rupees a share in India's largest-ever initial public offering (IPO), which matters to Indian investors and capital markets.",
+          "implications": [
+            "A strong first-day rise suggests investors wanted the shares at the offer price, which may encourage other large Indian companies to consider listing on the stock market.",
+            "Households that hold shares directly, or through mutual funds and pension schemes, may see the value of their holdings change as this large stock trades."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-28T05:58:29.878Z",
+            "tier": "quick",
+            "primary": "pass_through",
+            "complement": null,
+            "features": [
+              "price_move",
+              "allocation"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "The channel is the stock market and investor savings. The report describes no effect on household essentials, trade flows or the safety of Indians."
+            },
+            "horizon": {
+              "value": "now",
+              "reason": "The shares began trading on the debut day reported, so any market effect is already under way."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single outlet, CNBC, with no exchange statement or company official quoted in the summary, so the figures are unconfirmed by a second source."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Depositors & savers",
+                "direction": "unclear",
+                "what": "household equity holdings",
+                "effect": "",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Jio Platforms' share price in the sessions after its debut",
+                "why": "It would show whether the first-day gain of more than 21% holds or fades as the market settles.",
+                "when": "",
+                "where": "NSE and BSE websites"
+              }
+            ],
+            "context": [
+              "An initial public offering is the first sale of a company's shares to the public, and the shares then trade freely on a stock exchange.",
+              "Gains on the first day of trading do not guarantee later performance, because share prices keep moving with company results and market conditions."
+            ],
+            "terms": [
+              {
+                "term": "IPO",
+                "meaning": "An initial public offering is the first time a company sells its shares to the public to raise money."
+              }
+            ],
+            "frameworks": {},
+            "frameworksMissing": true
+          },
+          "place": {
+            "name": "Mumbai",
+            "country": "India",
+            "lat": 19.08,
+            "lon": 72.88
+          },
+          "reports": [
+            {
+              "source": "cnbc",
+              "headline": "Meta- and Google-backed Jio Platforms’ shares soar over 21% on trading debut after record IPO",
+              "url": "https://www.cnbc.com/2026/10/28/jio-ipo-india-listing-.html",
+              "date": "2026-10-28T05:16:41.000Z",
+              "kind": "hard",
+              "summary": "Jio had offered 270 million shares in the IPO priced at 1,119 rupees apiece, raising 302 billion rupees ($3.2 billion) in the country's largest-ever IPO.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://image.cnbcfm.com/api/v1/image/108472576-1793163135126-gettyimages-2301839789-INDIA_JIO_IPO.jpeg?v=1793163164&w=1920&h=1080"
+            },
+            {
+              "source": "aljazeera",
+              "headline": "How Ambani’s Jio became India’s second-largest company",
+              "url": "https://www.aljazeera.com/news/2026/10/31/how-ambanis-jio-became-indias-second-largest-company",
+              "date": "2026-10-31T10:39:15.000Z",
+              "kind": "feature",
+              "summary": "Jio makes India’s largest-ever stock market debut, raising $3.2bn in IPO.",
+              "summaryV": 3
+            }
+          ],
+          "image": "https://image.cnbcfm.com/api/v1/image/108472576-1793163135126-gettyimages-2301839789-INDIA_JIO_IPO.jpeg?v=1793163164&w=1920&h=1080",
+          "thread": "taxfz9d",
+          "finChecked": true,
+          "stats": {
+            "v": 2,
+            "at": "2026-10-31T12:49:37.119Z",
+            "series": []
+          }
+        },
+        {
           "id": "s1merzi7",
           "headline": "Bank of Japan is expected to hold rates this week — but stay hawkish: CNBC survey",
           "url": "https://www.cnbc.com/2026/10/27/boj-october-meeting-rate-cnbc-survey.html",
@@ -30661,95 +30828,6 @@
             }
           ],
           "thread": "tpnacn3",
-          "finChecked": true
-        },
-        {
-          "id": "sqp66v0",
-          "headline": "Meta- and Google-backed Jio Platforms’ shares soar over 21% on trading debut after record IPO",
-          "url": "https://www.cnbc.com/2026/10/28/jio-ipo-india-listing-.html",
-          "source": "cnbc",
-          "date": "2026-10-28T05:16:41.000Z",
-          "relevance": "medium",
-          "why": "CNBC reports that Jio Platforms shares rose more than 21% on their trading debut. The company raised 302 billion rupees ($3.2 billion) at 1,119 rupees a share in India's largest-ever initial public offering (IPO), which matters to Indian investors and capital markets.",
-          "implications": [
-            "A strong first-day rise suggests investors wanted the shares at the offer price, which may encourage other large Indian companies to consider listing on the stock market.",
-            "Households that hold shares directly, or through mutual funds and pension schemes, may see the value of their holdings change as this large stock trades."
-          ],
-          "analysis": {
-            "v": 3,
-            "at": "2026-10-28T05:58:29.878Z",
-            "tier": "quick",
-            "primary": "pass_through",
-            "complement": null,
-            "features": [
-              "price_move",
-              "allocation"
-            ],
-            "exposure": {
-              "level": "low",
-              "reason": "The channel is the stock market and investor savings. The report describes no effect on household essentials, trade flows or the safety of Indians."
-            },
-            "horizon": {
-              "value": "now",
-              "reason": "The shares began trading on the debut day reported, so any market effect is already under way."
-            },
-            "confidence": {
-              "level": "low",
-              "reason": "This rests on a single outlet, CNBC, with no exchange statement or company official quoted in the summary, so the figures are unconfirmed by a second source."
-            },
-            "outlets": 1,
-            "affected": [
-              {
-                "group": "Depositors & savers",
-                "direction": "unclear",
-                "what": "household equity holdings",
-                "effect": "",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "Jio Platforms' share price in the sessions after its debut",
-                "why": "It would show whether the first-day gain of more than 21% holds or fades as the market settles.",
-                "when": "",
-                "where": "NSE and BSE websites"
-              }
-            ],
-            "context": [
-              "An initial public offering is the first sale of a company's shares to the public, and the shares then trade freely on a stock exchange.",
-              "Gains on the first day of trading do not guarantee later performance, because share prices keep moving with company results and market conditions."
-            ],
-            "terms": [
-              {
-                "term": "IPO",
-                "meaning": "An initial public offering is the first time a company sells its shares to the public to raise money."
-              }
-            ],
-            "frameworks": {},
-            "frameworksMissing": true
-          },
-          "place": {
-            "name": "Mumbai",
-            "country": "India",
-            "lat": 19.08,
-            "lon": 72.88
-          },
-          "reports": [
-            {
-              "source": "cnbc",
-              "headline": "Meta- and Google-backed Jio Platforms’ shares soar over 21% on trading debut after record IPO",
-              "url": "https://www.cnbc.com/2026/10/28/jio-ipo-india-listing-.html",
-              "date": "2026-10-28T05:16:41.000Z",
-              "kind": "hard",
-              "summary": "Jio had offered 270 million shares in the IPO priced at 1,119 rupees apiece, raising 302 billion rupees ($3.2 billion) in the country's largest-ever IPO.",
-              "summaryV": 3,
-              "ogTried": true,
-              "descTried": true,
-              "image": "https://image.cnbcfm.com/api/v1/image/108472576-1793163135126-gettyimages-2301839789-INDIA_JIO_IPO.jpeg?v=1793163164&w=1920&h=1080"
-            }
-          ],
-          "image": "https://image.cnbcfm.com/api/v1/image/108472576-1793163135126-gettyimages-2301839789-INDIA_JIO_IPO.jpeg?v=1793163164&w=1920&h=1080",
-          "thread": "taxfz9d",
           "finChecked": true
         },
         {
@@ -35377,6 +35455,16 @@
               "summary": "Almost 200 nations approved two agreements on Friday to halt biodiversity loss by 2030, following almost two weeks of negotiations that ran into extra time on the final day.",
               "summaryV": 3,
               "image": "https://s.france24.com/media/display/f0b7382a-d4a0-11f1-a95a-a575454bc579/w:1024/p:16x9/000-D4J497F.jpg"
+            },
+            {
+              "source": "scmp",
+              "headline": "200 nations at Cop17 commit to biodiversity goals amid missed opportunities",
+              "url": "https://www.scmp.com/news/world/united-states-canada/article/3372839/200-nations-cop17-commit-biodiversity-goals-amid-missed-opportunities",
+              "date": "2026-10-31T11:16:20.000Z",
+              "kind": "hard",
+              "summary": "Nearly 200 nations have struck hard-fought agreements at a UN biodiversity summit, but the outcome was accompanied by disappointment over missed opportunities to address humanity’s destructive toll on nature.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/31/c6d4d7f3-1890-44f3-a8bb-037d1cdcb355_b2f88b9c.jpg?itok=oafzXRrO&v=1793445377"
             }
           ],
           "placeTried": true,
@@ -37027,6 +37115,41 @@
       "id": "governance",
       "name": "Policy & Governance",
       "items": [
+        {
+          "id": "sxrek5h",
+          "headline": "Iran Braces for More War, No Matter the Outcome of the U.S. and Israeli Elections",
+          "url": "https://www.nytimes.com/2026/10/31/world/middleeast/iran-war-israel-us-elections-trump-netanyahu.html",
+          "source": "nyt",
+          "date": "2026-10-31T12:26:58.000Z",
+          "relevance": "medium",
+          "image": "https://static01.nyt.com/images/2026/10/31/multimedia/31int-iran-assess-1-vjkm/31int-iran-assess-1-vjkm-mediumSquareAt3X.jpg",
+          "why": "",
+          "implications": [],
+          "place": {
+            "name": "Tehran",
+            "country": "Iran",
+            "lat": 35.69,
+            "lon": 51.39,
+            "involves": [
+              "United States",
+              "Israel"
+            ]
+          },
+          "reports": [
+            {
+              "source": "nyt",
+              "headline": "Iran Braces for More War, No Matter the Outcome of the U.S. and Israeli Elections",
+              "url": "https://www.nytimes.com/2026/10/31/world/middleeast/iran-war-israel-us-elections-trump-netanyahu.html",
+              "date": "2026-10-31T12:26:58.000Z",
+              "kind": "feature",
+              "summary": "With Prime Minister Benjamin Netanyahu fighting to stay in power and President Trump facing a tough midterm, Iran’s leaders expect no major shift in policy.",
+              "summaryV": 3,
+              "image": "https://static01.nyt.com/images/2026/10/31/multimedia/31int-iran-assess-1-vjkm/31int-iran-assess-1-vjkm-mediumSquareAt3X.jpg"
+            }
+          ],
+          "finChecked": true,
+          "thread": "t1am6o6d"
+        },
         {
           "id": "syvc98n",
           "headline": "Canada and EU announce new alliance open to like-minded countries",
@@ -44977,14 +45100,14 @@
   "source": "BBC News & The Guardian & NPR & Al Jazeera & MercoPress & ABC News & The New York Times & CNBC & CBS News & DW & France 24 & Africanews & South China Morning Post & The Hindu & Mint & The Indian Express",
   "lastRun": {
     "filter": {
-      "judged": 32,
-      "kept": 6,
+      "judged": 84,
+      "kept": 7,
       "guarded": 0
     },
     "health": {
       "day": "2026-10-31",
-      "newStories24h": 20,
-      "keepRate2d": 0.13
+      "newStories24h": 13,
+      "keepRate2d": 0.101
     },
     "wars": {
       "linked": 0,
@@ -44997,24 +45120,34 @@
       "waiting": 0
     },
     "skipped": {
-      "since": "2026-10-31T07:00:27.169Z",
+      "since": "2026-10-31T07:53:03.187Z",
       "counts": {
-        "section": 1
+        "section": 17,
+        "live_blog": 3
       },
       "examples": {
         "section": [
-          "Nigel’s ‘chiselled cheekbones’ make the news – Reform’s the Reformer, digested by John Crace"
+          "CCTV, zip ties and election watchers: How US mail-in votes are secured and counted",
+          "Fallon Sherrock pulls off shock defeat of world darts No 1 Luke Littler in live TV battle",
+          "Relying on AI is rotting your brain. But here’s what you can do about it | Carly Dober",
+          "Is AI your new wingman? How chatbots are transforming dating",
+          "Mill 19: a creative hub built into a former steel factory"
+        ],
+        "live_blog": [
+          "France and Germany braced for unrest with hundreds of demonstrations planned – Europe live",
+          "Chelsea vs Manchester United: LIVE – Premier League",
+          "Here is the latest."
         ]
       }
     },
     "finance": {
-      "moved": 14,
-      "checked": 50
+      "moved": 0,
+      "checked": 1
     },
-    "analysed": 32,
-    "added": 1,
-    "merged": 3,
-    "rejected": 28,
+    "analysed": 84,
+    "added": 2,
+    "merged": 5,
+    "rejected": 77,
     "failedBatches": 0,
     "feeds": {
       "bbc": {
@@ -45035,7 +45168,7 @@
       "aljazeera": {
         "feedsOk": 1,
         "feedsFailed": 0,
-        "items": 12
+        "items": 15
       },
       "mercopress": {
         "feedsOk": 3,
@@ -45050,7 +45183,7 @@
       "nyt": {
         "feedsOk": 5,
         "feedsFailed": 0,
-        "items": 179
+        "items": 177
       },
       "cnbc": {
         "feedsOk": 3,
@@ -45060,17 +45193,17 @@
       "cbs": {
         "feedsOk": 2,
         "feedsFailed": 0,
-        "items": 47
+        "items": 48
       },
       "dw": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 31
+        "items": 30
       },
       "france24": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 62
+        "items": 68
       },
       "africanews": {
         "feedsOk": 1,
@@ -45080,22 +45213,22 @@
       "scmp": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 142
+        "items": 141
       }
     },
     "shareImages": {
-      "tried": 0,
-      "found": 0,
+      "tried": 1,
+      "found": 1,
       "summaries": 0
     },
     "threads": {
-      "assigned": 1,
+      "assigned": 2,
       "created": 0,
       "failedBatches": 0
     },
     "summaries": {
-      "written": 1,
-      "due": 1
+      "written": 0,
+      "due": 2
     },
     "kinds": {
       "labelled": 0,
@@ -45103,111 +45236,60 @@
       "failedBatches": 0
     },
     "frames": {
-      "done": 2,
-      "waiting": 1,
-      "failedBatches": 0
+      "done": 0,
+      "waiting": 4,
+      "failedBatches": 0,
+      "budgetStopped": true
     },
     "stats": {
       "searched": 8,
-      "found": 1,
-      "reused": 3,
-      "none": 4,
+      "found": 0,
+      "reused": 0,
+      "none": 1,
       "failed": 0,
-      "proposed": 22,
-      "droppedPoints": 15,
-      "pagesFetched": 4,
+      "proposed": 8,
+      "droppedPoints": 8,
+      "pagesFetched": 1,
       "samples": [
         {
-          "headline": "US bans Chinese labs from testing electronics ahead of Trump-Xi meeting",
-          "result": "chart",
-          "proposed": 7,
-          "checked": 7,
-          "pagesFetched": 1
-        },
-        {
-          "headline": "Tech stocks crushed as Nasdaq tumbles more than 800 points",
-          "result": "none",
-          "proposed": 0,
-          "checked": 0,
-          "pagesFetched": 1
-        },
-        {
-          "headline": "Tankers defy sharp escalation of Iranian attacks to keep crude oil flowing throu",
-          "result": "reused saved series"
-        },
-        {
-          "headline": "Black Sea shipping under growing threats as drones hit container ships",
+          "headline": "Meta- and Google-backed Jio Platforms’ shares soar over 21% on trading debut aft",
           "result": "no figure found on an official page",
-          "proposed": 5,
+          "proposed": 8,
           "checked": 0,
-          "pagesFetched": 0
-        },
-        {
-          "headline": "Euro zone economy slows to 0.4% growth in Q3 as crisis-hit France contracts",
-          "result": "no figure found on an official page",
-          "proposed": 4,
-          "checked": 0,
-          "pagesFetched": 2
-        },
-        {
-          "headline": "Iran claims four tankers struck mines in Hormuz as strike fears grow after U.S. ",
-          "result": "reused saved series"
-        },
-        {
-          "headline": "Bank of Japan is expected to hold rates this week — but stay hawkish: CNBC surve",
-          "result": "no figure found on an official page",
-          "proposed": 6,
-          "checked": 0,
-          "pagesFetched": 0
-        },
-        {
-          "headline": "Trump administration may let more Russian diesel onto market, energy secretary t",
-          "result": "reused saved series"
+          "pagesFetched": 1,
+          "selfFetched": 1
         }
-      ]
+      ],
+      "budgetStopped": true
     },
     "models": {
       "filter": {
         "model": "claude-haiku-5-5",
-        "calls": 14,
-        "inputTokens": 30240,
-        "outputTokens": 10324,
-        "cost": 0.0084
-      },
-      "analysis_quick": {
-        "model": "claude-sonnet-5-5",
-        "calls": 2,
-        "inputTokens": 5915,
-        "outputTokens": 3054,
-        "cost": 0.0424
+        "calls": 7,
+        "inputTokens": 29722,
+        "outputTokens": 12138,
+        "cost": 0.0091
       },
       "stats": {
         "model": "claude-sonnet-5-5",
-        "calls": 5,
-        "inputTokens": 424354,
-        "outputTokens": 5251,
-        "searches": 11,
-        "fetches": 10,
-        "cost": 1.0111
-      },
-      "analysis": {
-        "model": "claude-opus-5-5",
         "calls": 1,
-        "inputTokens": 4386,
-        "outputTokens": 6905,
-        "cost": 0.1556
+        "inputTokens": 127099,
+        "outputTokens": 2035,
+        "searches": 3,
+        "fetches": 3,
+        "cost": 0.3045
       },
       "threads": {
         "model": "claude-sonnet-5-5",
-        "calls": 2,
-        "inputTokens": 9205,
-        "outputTokens": 322,
-        "cost": 0.0217
+        "calls": 1,
+        "inputTokens": 8896,
+        "outputTokens": 55,
+        "cost": 0.0183
       }
     },
     "spend": {
-      "thisDesk": 1.239,
-      "today": 2.7835,
+      "thisDesk": 0.3319,
+      "today": 5.2433,
       "cap": 6
     }
   },
