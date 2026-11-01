@@ -2,12 +2,146 @@
   "schema": 4,
   "region": "India",
   "since": "2026-10-02",
-  "updatedAt": "2026-11-01T00:17:00.037Z",
+  "updatedAt": "2026-11-01T06:27:46.048Z",
   "sectors": [
     {
       "id": "energy",
       "name": "Energy",
       "items": [
+        {
+          "id": "szccnnn",
+          "headline": "Commercial LPG rate hiked by ₹10 per 19-kg cylinder ahead of Dhanteras, Diwali; ATF up by ₹1.37/litre — Check prices",
+          "url": "https://www.livemint.com/news/india/commercial-lpg-rate-hiked-rs-10-per-19-kg-cylinder-rs-2820-dhanteras-diwali-atf-up-by-rs-1-37-litre-138-50-check-prices-11793511335981.html",
+          "source": "mint",
+          "date": "2026-11-01T05:51:05.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2026/11/01/1600x900/logo/ANI-20260608332-0_1782264301487_1782264318525_aad451b0-531e-4080-85af-40d12df690f8_1793511872641_noYW_a842a16a-5bc6-4cb9-aa97-c7c45f9150a6_cayn.jpg",
+          "why": "State-run oil marketing companies (OMCs) raised commercial LPG by ₹10 to ₹2,820 per 19-kg cylinder and aviation turbine fuel (ATF) by ₹1.37 per litre to ₹138.50, raising costs for restaurants, caterers and airlines during the festive season.",
+          "implications": [
+            "Restaurants, hotels and caterers use commercial cylinders, so the higher price adds to their running costs just before Dhanteras and Diwali, when demand for eating out is usually strong.",
+            "A higher ATF price raises airlines' fuel costs, which could feed into fares, although a rise of ₹1.37 per litre is small next to the ₹138.50 price."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-01T06:27:42.302Z",
+            "tier": "quick",
+            "primary": "pass_through",
+            "complement": null,
+            "features": [
+              "price_move"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The change reaches businesses that buy commercial cylinders and airlines that buy ATF, so it touches specific industries. The report does not mention household LPG cylinders."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Businesses face the new price once it takes effect, but any change in menu prices or airfares would take a few weeks to appear."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single Mint report that gives the new prices but cites no official price notification from the oil companies."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Food shoppers",
+                "direction": "up",
+                "what": "eating-out prices",
+                "effect": "Restaurants and caterers pay more for cooking gas, and some may pass part of this on through menu prices, though the small rise may be absorbed.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Travellers & pilgrims",
+                "direction": "up",
+                "what": "airfare pressure",
+                "effect": "Airlines face a slightly higher fuel cost, which could add modest pressure on fares during the festive travel season.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "The next revision of commercial LPG and ATF prices by the oil marketing companies",
+                "why": "It would show whether the festive-season increase continues or reverses, and so whether cost pressure on restaurants and airlines persists.",
+                "when": "",
+                "where": "Indian Oil Corporation price notifications"
+              }
+            ],
+            "context": [
+              "Commercial LPG and ATF prices are revised by state-run oil marketing companies at regular intervals, broadly following international benchmark prices and the exchange rate.",
+              "India imports most of its LPG and crude oil, so global price movements and the rupee shape what domestic businesses pay."
+            ],
+            "terms": [
+              {
+                "term": "OMCs",
+                "meaning": "Oil marketing companies are the state-run firms that sell petrol, diesel, LPG and aviation fuel to consumers and businesses and revise many of these prices."
+              }
+            ],
+            "frameworks": {
+              "pass_through": {
+                "driver": {
+                  "variable": "Commercial LPG price set by oil marketing companies",
+                  "direction": "up",
+                  "size": "₹10 per 19-kg cylinder, to ₹2,820"
+                },
+                "product": "LPG",
+                "rungs": [
+                  {
+                    "stage": "Oil marketing companies' revision → Distributors' selling price",
+                    "pass": "likely",
+                    "damper": "Commercial cylinders are generally outside the household subsidy arrangements, so a revised price usually reaches distributors and buyers directly.",
+                    "lag": "days"
+                  },
+                  {
+                    "stage": "Distributors → Restaurants and caterers' costs",
+                    "pass": "likely",
+                    "damper": "Businesses buying through longer-term supply arrangements or holding stock of cylinders may feel the increase only when they reorder.",
+                    "lag": "weeks"
+                  },
+                  {
+                    "stage": "Restaurants' costs → Menu prices",
+                    "pass": "partial",
+                    "damper": "Gas is only one of several costs, and competition and festive demand shape whether a small increase is absorbed or passed on.",
+                    "lag": "weeks"
+                  }
+                ],
+                "end_user": {
+                  "group": "Food shoppers",
+                  "effect": "People who eat out or order from caterers may notice small price rises over the coming weeks, though many outlets could absorb an increase of this size."
+                }
+              }
+            }
+          },
+          "place": {
+            "name": "New Delhi",
+            "country": "India",
+            "lat": 28.61,
+            "lon": 77.21
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "Commercial LPG rate hiked by ₹10 per 19-kg cylinder ahead of Dhanteras, Diwali; ATF up by ₹1.37/litre — Check prices",
+              "url": "https://www.livemint.com/news/india/commercial-lpg-rate-hiked-rs-10-per-19-kg-cylinder-rs-2820-dhanteras-diwali-atf-up-by-rs-1-37-litre-138-50-check-prices-11793511335981.html",
+              "date": "2026-11-01T05:51:05.000Z",
+              "kind": "hard",
+              "summary": "State OMCs have hiked commercial LPG rates hiked by ₹10 to ₹2,820 per 19-kg cylinder amid this festive season ahead of Dhanteras and Diwali; ATF prices are up by ₹1.37 per litre to ₹138.50/litre.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/11/01/1600x900/logo/ANI-20260608332-0_1782264301487_1782264318525_aad451b0-531e-4080-85af-40d12df690f8_1793511872641_noYW_a842a16a-5bc6-4cb9-aa97-c7c45f9150a6_cayn.jpg"
+            },
+            {
+              "source": "thehindu",
+              "headline": "Commercial LPG prices hiked ₹10/cylinder; ATF hiked ₹1.37/litre",
+              "url": "https://www.thehindu.com/business/Industry/commercial-lpg-prices-hiked-by-around-10-per-cylinder/article71652063.ece",
+              "date": "2026-11-01T06:11:28.000Z",
+              "kind": "hard",
+              "summary": "The price of Aviation Turbine Fuel was also hiked by ₹1.37 per litre. It now costs ₹138.5 per litre",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/incoming/hte4x7/article71652061.ece/alternates/LANDSCAPE_1200/PTI10_01_2026_000145B.jpg"
+            }
+          ],
+          "thread": "t1y046b4"
+        },
         {
           "id": "sjaujie",
           "headline": "IOC says crude Q2 price volatile as procurement swings between discounts and premiums",
@@ -11151,6 +11285,165 @@
       "name": "Economy & Trade",
       "items": [
         {
+          "id": "s6ajge0",
+          "headline": "Extreme poverty in India falls to 2.6% from 27.1%: World Bank",
+          "url": "https://www.livemint.com/economy/india-extreme-poverty-rate-declines-2011-to-2023-world-bank-11793375500521.html",
+          "source": "mint",
+          "date": "2026-10-30T16:54:38.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2026/10/30/1600x900/logo/THAILAND-IMF-WORLD-BANK-1_1793378907258_7SjA_1793378915632_MOJi_54b6569d-8a73-42a8-b5e1-dec423c1046f_zdWr.jpg",
+          "why": "The World Bank's October 2026 Poverty & Equity Brief finds that extreme poverty in India fell to 2.6% in 2023 from 27.1% in 2011. It credits government transfers and rising employment, a finding that may shape welfare policy debates.",
+          "implications": [
+            "The brief attributes the decline to government transfers and rising employment, which indicates that both welfare support and jobs played a part in raising the incomes of poorer households.",
+            "The 496 million people who crossed the higher $4.20-a-day line show that gains extended beyond the poorest households, not only those near the extreme poverty threshold.",
+            "Households that have only recently crossed these poverty lines could remain vulnerable to shocks such as food price increases or job losses, which may keep pressure on the government to maintain support.",
+            "The figures run only to 2023, so they do not show how household living standards in India have changed since then."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-30T22:37:36.612Z",
+            "tier": "standard",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "low",
+              "reason": "The report is an assessment of past trends and does not itself change prices, incomes or rules. Any effect would come indirectly through how the government uses it in welfare and spending decisions."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Any influence would depend on the findings feeding into policy and budget discussions, which typically unfold over months rather than weeks."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "Mint and The Hindu both report the World Bank's figures consistently, but only two outlets cover the brief and any policy response remains unknown."
+            },
+            "outlets": 2,
+            "affected": [
+              {
+                "group": "Government finances",
+                "direction": "unclear",
+                "what": "welfare spending debate",
+                "effect": "The World Bank's credit to government transfers could be cited both to justify continuing welfare spending and to argue for narrowing its targeting as poverty falls.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Salaried workers",
+                "direction": "up",
+                "what": "employment-driven income gains",
+                "effect": "The World Bank reports that rising employment helped drive the poverty decline between 2011 and 2023, which points to jobs lifting household incomes above poverty lines.",
+                "basis": "reported"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Government statements citing the World Bank brief in welfare or budget policy discussions",
+                "why": "This would show whether the findings are being used to shape spending on transfers and support schemes.",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "Future World Bank briefs showing whether India's poverty decline continued after 2023",
+                "why": "This would show whether the gains measured to 2023 have held or reversed since then.",
+                "when": "",
+                "where": "World Bank Poverty & Equity Brief"
+              }
+            ],
+            "context": [
+              "World Bank poverty lines are expressed in purchasing-power-parity dollars, which adjust for differences in prices between countries, so a dollar-a-day line does not equal a simple currency conversion into rupees.",
+              "India's poverty estimates depend heavily on official household consumption surveys, which have been conducted infrequently. Measured poverty can therefore shift sharply when a new survey becomes available.",
+              "Government transfers in India include subsidised or free food grains through the public distribution system and direct cash transfers to beneficiaries' bank accounts."
+            ],
+            "terms": [
+              {
+                "term": "lower-middle-income poverty line",
+                "meaning": "A World Bank threshold, reported here as $4.20 a day, used to measure poverty in lower-middle-income countries. It is higher than the extreme poverty line."
+              },
+              {
+                "term": "Poverty & Equity Brief",
+                "meaning": "A periodic World Bank country report summarising the latest estimates of poverty and inequality."
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "World Bank publishes poverty findings",
+                    "detail": "The World Bank's October 2026 Poverty & Equity Brief reports that extreme poverty in India fell to 2.6% in 2023 from 27.1% in 2011, one of the fastest reductions in the world.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Transfers and jobs credited",
+                    "detail": "The brief attributes the decline to government transfers and rising employment. It also finds that 496 million people moved above the $4.20-a-day line over the same period.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Findings enter policy debate",
+                    "detail": "The government and its critics could cite the findings in debates over the size and targeting of welfare schemes and over job creation priorities.",
+                    "basis": "inferred"
+                  },
+                  {
+                    "step": "Possible shift in support design",
+                    "detail": "If policy changes follow, households near the poverty lines could see changes in the support they receive. This would matter most for those still vulnerable to income shocks.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The effect would not reach households if the government treats the brief only as a benchmark and makes no changes to welfare schemes or spending as a result."
+              }
+            }
+          },
+          "place": {
+            "name": "New Delhi",
+            "country": "India",
+            "lat": 28.61,
+            "lon": 77.21
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "Extreme poverty in India falls to 2.6% from 27.1%: World Bank",
+              "url": "https://www.livemint.com/economy/india-extreme-poverty-rate-declines-2011-to-2023-world-bank-11793375500521.html",
+              "date": "2026-10-30T16:54:38.000Z",
+              "kind": "hard",
+              "summary": "As many as 496 million people moved above the lower-middle-income poverty line of $4.20 a day between 2011 and 2023, according to the World Bank’s October 2026 Poverty & Equity Brief.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/10/30/1600x900/logo/THAILAND-IMF-WORLD-BANK-1_1793378907258_7SjA_1793378915632_MOJi_54b6569d-8a73-42a8-b5e1-dec423c1046f_zdWr.jpg"
+            },
+            {
+              "source": "thehindu",
+              "headline": "India made ‘remarkable progress’ in reducing poverty: World Bank",
+              "url": "https://www.thehindu.com/news/national/india-made-remarkable-progress-in-reducing-poverty-world-bank/article71646460.ece",
+              "date": "2026-10-30T16:59:03.000Z",
+              "kind": "hard",
+              "summary": "Report says the country saw one of the fastest reductions in poverty in the world; extreme poverty fell to 2.6% in 2023 from 27.1% in 2011, driven by government transfers and rising employment",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/todays-paper/tp-business/eszdkx/article53407032.ece/alternates/LANDSCAPE_1200/29thARUN01NOTEG951QM3LQ3jpgjpg-4aprth"
+            },
+            {
+              "source": "mint",
+              "headline": "India lifted 49.6 crore people out of poverty between 2011 and 2023, says World Bank report - Here is how it was done",
+              "url": "https://www.livemint.com/economy/india-lifted-49-6-crore-people-out-of-poverty-between-2011-and-2023-says-world-bank-report-here-is-how-it-was-done-11793419126241.html",
+              "date": "2026-10-31T04:04:51.000Z",
+              "kind": "hard",
+              "summary": "The World Bank says India lifted an estimated 496 million people out of poverty between 2011 and 2023. Extreme poverty fell from 27.1% to 2.6%, driven by consumption growth, rising employment—particularly among women—and expanded social transfers.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/10/31/1600x900/logo/poverty_1793419383696_HOsF_1793419393984_lyfF_23e0079e-2a55-4efb-9195-317a2e3463ce_MdEH.jpg"
+            },
+            {
+              "source": "thehindu",
+              "headline": "PM Modi cites World Bank report to highlight ‘historic’ fall in India’s extreme poverty",
+              "url": "https://www.thehindu.com/news/national/pm-modi-cities-world-bank-report-to-highlight-historic-fall-in-indias-extreme-poverty/article71652106.ece",
+              "date": "2026-11-01T05:31:42.000Z",
+              "kind": "hard",
+              "summary": "In a post on Instagram featuring the inspiring and energetic song ‘Thaan Liya’ from the Bollywood movie ‘Dasvi’ as background music, Mr. Modi highlighted that the “historic\" drop in poverty represents a generational surge in opportunities",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/incoming/5zjv28/article71652113.ece/alternates/LANDSCAPE_1200/PTI10_31_2026_000370B.jpg"
+            }
+          ],
+          "thread": "t1k6xxap",
+          "finChecked": true
+        },
+        {
           "id": "soonrga",
           "headline": "Centre releases additional instalment of tax devolution of ₹1.09 lakh crore to states",
           "url": "https://www.thehindu.com/business/centre-releases-additional-instalment-of-tax-devolution-of-109-lakh-crore-to-states/article71650532.ece",
@@ -11253,6 +11546,16 @@
               "summary": "The Centre on Saturday released an additional instalment of tax devolution to State governments totalling over ₹1.09 lakh crore. Karnataka’s share stood at ₹4,504 crore.",
               "summaryV": 3,
               "image": "https://www.thehindu.com/theme/images/og-image.png"
+            },
+            {
+              "source": "mint",
+              "headline": "States get addition instalment of tax devolution of ₹1.09 lakh crore, supported by strong economy, taxes—See break-up",
+              "url": "https://www.livemint.com/economy/states-get-addition-instalment-of-tax-devolution-of-rs-1-09-lakh-crore-supported-by-strong-economy-taxes-see-breakup-11793503116157.html",
+              "date": "2026-11-01T04:51:04.000Z",
+              "kind": "hard",
+              "summary": "Centre releases addition instalment of tax devolution of ₹1.09 lakh crore to states. Union Finance Minister Nirmala Sitharaman said this comes amid stronger economic activity and buoyant tax collections.&nbsp;",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/11/01/1600x900/logo/pexels-photo-5849573_1782034109972_1782034119972_efc26e90-9836-4868-9c26-bd4023a20ddf_1793508399350_EmhM_00114555-529c-4681-9b23-bdb3c8972524_2tyD.jpeg"
             }
           ],
           "finChecked": true,
@@ -11491,155 +11794,6 @@
               }
             ]
           }
-        },
-        {
-          "id": "s6ajge0",
-          "headline": "Extreme poverty in India falls to 2.6% from 27.1%: World Bank",
-          "url": "https://www.livemint.com/economy/india-extreme-poverty-rate-declines-2011-to-2023-world-bank-11793375500521.html",
-          "source": "mint",
-          "date": "2026-10-30T16:54:38.000Z",
-          "relevance": "medium",
-          "image": "https://www.livemint.com/lm-img/img/2026/10/30/1600x900/logo/THAILAND-IMF-WORLD-BANK-1_1793378907258_7SjA_1793378915632_MOJi_54b6569d-8a73-42a8-b5e1-dec423c1046f_zdWr.jpg",
-          "why": "The World Bank's October 2026 Poverty & Equity Brief finds that extreme poverty in India fell to 2.6% in 2023 from 27.1% in 2011. It credits government transfers and rising employment, a finding that may shape welfare policy debates.",
-          "implications": [
-            "The brief attributes the decline to government transfers and rising employment, which indicates that both welfare support and jobs played a part in raising the incomes of poorer households.",
-            "The 496 million people who crossed the higher $4.20-a-day line show that gains extended beyond the poorest households, not only those near the extreme poverty threshold.",
-            "Households that have only recently crossed these poverty lines could remain vulnerable to shocks such as food price increases or job losses, which may keep pressure on the government to maintain support.",
-            "The figures run only to 2023, so they do not show how household living standards in India have changed since then."
-          ],
-          "analysis": {
-            "v": 3,
-            "at": "2026-10-30T22:37:36.612Z",
-            "tier": "standard",
-            "primary": "impact_chain",
-            "complement": null,
-            "features": [],
-            "exposure": {
-              "level": "low",
-              "reason": "The report is an assessment of past trends and does not itself change prices, incomes or rules. Any effect would come indirectly through how the government uses it in welfare and spending decisions."
-            },
-            "horizon": {
-              "value": "months",
-              "reason": "Any influence would depend on the findings feeding into policy and budget discussions, which typically unfold over months rather than weeks."
-            },
-            "confidence": {
-              "level": "medium",
-              "reason": "Mint and The Hindu both report the World Bank's figures consistently, but only two outlets cover the brief and any policy response remains unknown."
-            },
-            "outlets": 2,
-            "affected": [
-              {
-                "group": "Government finances",
-                "direction": "unclear",
-                "what": "welfare spending debate",
-                "effect": "The World Bank's credit to government transfers could be cited both to justify continuing welfare spending and to argue for narrowing its targeting as poverty falls.",
-                "basis": "inferred"
-              },
-              {
-                "group": "Salaried workers",
-                "direction": "up",
-                "what": "employment-driven income gains",
-                "effect": "The World Bank reports that rising employment helped drive the poverty decline between 2011 and 2023, which points to jobs lifting household incomes above poverty lines.",
-                "basis": "reported"
-              }
-            ],
-            "watch": [
-              {
-                "what": "Government statements citing the World Bank brief in welfare or budget policy discussions",
-                "why": "This would show whether the findings are being used to shape spending on transfers and support schemes.",
-                "when": "",
-                "where": ""
-              },
-              {
-                "what": "Future World Bank briefs showing whether India's poverty decline continued after 2023",
-                "why": "This would show whether the gains measured to 2023 have held or reversed since then.",
-                "when": "",
-                "where": "World Bank Poverty & Equity Brief"
-              }
-            ],
-            "context": [
-              "World Bank poverty lines are expressed in purchasing-power-parity dollars, which adjust for differences in prices between countries, so a dollar-a-day line does not equal a simple currency conversion into rupees.",
-              "India's poverty estimates depend heavily on official household consumption surveys, which have been conducted infrequently. Measured poverty can therefore shift sharply when a new survey becomes available.",
-              "Government transfers in India include subsidised or free food grains through the public distribution system and direct cash transfers to beneficiaries' bank accounts."
-            ],
-            "terms": [
-              {
-                "term": "lower-middle-income poverty line",
-                "meaning": "A World Bank threshold, reported here as $4.20 a day, used to measure poverty in lower-middle-income countries. It is higher than the extreme poverty line."
-              },
-              {
-                "term": "Poverty & Equity Brief",
-                "meaning": "A periodic World Bank country report summarising the latest estimates of poverty and inequality."
-              }
-            ],
-            "frameworks": {
-              "impact_chain": {
-                "chain": [
-                  {
-                    "step": "World Bank publishes poverty findings",
-                    "detail": "The World Bank's October 2026 Poverty & Equity Brief reports that extreme poverty in India fell to 2.6% in 2023 from 27.1% in 2011, one of the fastest reductions in the world.",
-                    "basis": "reported"
-                  },
-                  {
-                    "step": "Transfers and jobs credited",
-                    "detail": "The brief attributes the decline to government transfers and rising employment. It also finds that 496 million people moved above the $4.20-a-day line over the same period.",
-                    "basis": "reported"
-                  },
-                  {
-                    "step": "Findings enter policy debate",
-                    "detail": "The government and its critics could cite the findings in debates over the size and targeting of welfare schemes and over job creation priorities.",
-                    "basis": "inferred"
-                  },
-                  {
-                    "step": "Possible shift in support design",
-                    "detail": "If policy changes follow, households near the poverty lines could see changes in the support they receive. This would matter most for those still vulnerable to income shocks.",
-                    "basis": "inferred"
-                  }
-                ],
-                "breaks_if": "The effect would not reach households if the government treats the brief only as a benchmark and makes no changes to welfare schemes or spending as a result."
-              }
-            }
-          },
-          "place": {
-            "name": "New Delhi",
-            "country": "India",
-            "lat": 28.61,
-            "lon": 77.21
-          },
-          "reports": [
-            {
-              "source": "mint",
-              "headline": "Extreme poverty in India falls to 2.6% from 27.1%: World Bank",
-              "url": "https://www.livemint.com/economy/india-extreme-poverty-rate-declines-2011-to-2023-world-bank-11793375500521.html",
-              "date": "2026-10-30T16:54:38.000Z",
-              "kind": "hard",
-              "summary": "As many as 496 million people moved above the lower-middle-income poverty line of $4.20 a day between 2011 and 2023, according to the World Bank’s October 2026 Poverty & Equity Brief.",
-              "summaryV": 3,
-              "image": "https://www.livemint.com/lm-img/img/2026/10/30/1600x900/logo/THAILAND-IMF-WORLD-BANK-1_1793378907258_7SjA_1793378915632_MOJi_54b6569d-8a73-42a8-b5e1-dec423c1046f_zdWr.jpg"
-            },
-            {
-              "source": "thehindu",
-              "headline": "India made ‘remarkable progress’ in reducing poverty: World Bank",
-              "url": "https://www.thehindu.com/news/national/india-made-remarkable-progress-in-reducing-poverty-world-bank/article71646460.ece",
-              "date": "2026-10-30T16:59:03.000Z",
-              "kind": "hard",
-              "summary": "Report says the country saw one of the fastest reductions in poverty in the world; extreme poverty fell to 2.6% in 2023 from 27.1% in 2011, driven by government transfers and rising employment",
-              "summaryV": 3,
-              "image": "https://th-i.thgim.com/public/todays-paper/tp-business/eszdkx/article53407032.ece/alternates/LANDSCAPE_1200/29thARUN01NOTEG951QM3LQ3jpgjpg-4aprth"
-            },
-            {
-              "source": "mint",
-              "headline": "India lifted 49.6 crore people out of poverty between 2011 and 2023, says World Bank report - Here is how it was done",
-              "url": "https://www.livemint.com/economy/india-lifted-49-6-crore-people-out-of-poverty-between-2011-and-2023-says-world-bank-report-here-is-how-it-was-done-11793419126241.html",
-              "date": "2026-10-31T04:04:51.000Z",
-              "kind": "hard",
-              "summary": "The World Bank says India lifted an estimated 496 million people out of poverty between 2011 and 2023. Extreme poverty fell from 27.1% to 2.6%, driven by consumption growth, rising employment—particularly among women—and expanded social transfers.",
-              "summaryV": 3,
-              "image": "https://www.livemint.com/lm-img/img/2026/10/31/1600x900/logo/poverty_1793419383696_HOsF_1793419393984_lyfF_23e0079e-2a55-4efb-9195-317a2e3463ce_MdEH.jpg"
-            }
-          ],
-          "thread": "t1k6xxap",
-          "finChecked": true
         },
         {
           "id": "s1jq9iko",
@@ -56892,16 +57046,16 @@
   "source": "BBC News & The Guardian & NPR & Al Jazeera & MercoPress & ABC News & The New York Times & CNBC & CBS News & DW & France 24 & Africanews & South China Morning Post & The Hindu & Mint & The Indian Express",
   "lastRun": {
     "filter": {
-      "judged": 10,
-      "kept": 1,
+      "judged": 51,
+      "kept": 5,
       "guarded": 0
     },
     "health": {
       "day": "2026-11-01",
-      "newStories24h": 11,
-      "keepRate2d": 0.084,
+      "newStories24h": 9,
+      "keepRate2d": 0.087,
       "alarm": [
-        "only 11 new stories in 24 hours (expected 12+)"
+        "only 9 new stories in 24 hours (expected 12+)"
       ]
     },
     "wars": {
@@ -56915,30 +57069,30 @@
       "waiting": 0
     },
     "skipped": {
-      "since": "2026-10-31T19:33:54.460Z",
+      "since": "2026-11-01T00:17:00.037Z",
       "counts": {
         "section": 1
       },
       "examples": {
         "section": [
-          "IOA’s election Code of Conduct bars criticism of ‘private life’ of candidates, publicity"
+          "Justice Sanjay Kishan Kaul on his memoir ‘Without Fear or Favour ‘and the executive’s growing influence over the collegi"
         ]
       }
     },
     "finance": {
       "moved": 0,
-      "checked": 1
+      "checked": 0
     },
-    "analysed": 10,
+    "analysed": 51,
     "added": 1,
-    "merged": 0,
-    "rejected": 9,
+    "merged": 3,
+    "rejected": 47,
     "failedBatches": 0,
     "feeds": {
       "thehindu": {
         "feedsOk": 6,
         "feedsFailed": 0,
-        "items": 347
+        "items": 346
       },
       "mint": {
         "feedsOk": 6,
@@ -56958,12 +57112,12 @@
     },
     "threads": {
       "assigned": 1,
-      "created": 1,
+      "created": 0,
       "failedBatches": 0
     },
     "summaries": {
       "written": 0,
-      "due": 0
+      "due": 1
     },
     "kinds": {
       "labelled": 0,
@@ -56972,98 +57126,48 @@
     },
     "frames": {
       "done": 0,
-      "waiting": 2,
+      "waiting": 5,
       "failedBatches": 0,
       "budgetStopped": true
     },
     "stats": {
       "searched": 8,
-      "found": 1,
-      "reused": 5,
-      "none": 2,
+      "found": 0,
+      "reused": 0,
+      "none": 0,
       "failed": 0,
-      "proposed": 13,
+      "proposed": 0,
       "droppedPoints": 0,
-      "pagesFetched": 1,
-      "samples": [
-        {
-          "headline": "India's industrial output growth slows to 6.7% in September as manufacturing, co",
-          "result": "chart",
-          "proposed": 13,
-          "checked": 13,
-          "pagesFetched": 1
-        },
-        {
-          "headline": "Rupee falls 29 paise to close at 95.22 against U.S. dollar",
-          "result": "reused saved series"
-        },
-        {
-          "headline": "GST relief for farmers as tax on retreaded tractor tyres cut to 5% from 1 Novemb",
-          "result": "none",
-          "proposed": 0,
-          "checked": 0,
-          "pagesFetched": 0
-        },
-        {
-          "headline": "India’s air passenger traffic falls 6.5% in September as higher fares hit demand",
-          "result": "reused saved series"
-        },
-        {
-          "headline": "LTCG news: Budget 2027-28 may cut long-term capital gains tax for both domestic ",
-          "result": "nothing",
-          "proposed": 0,
-          "checked": 0,
-          "pagesFetched": 0
-        },
-        {
-          "headline": "RBI may hike repo rate to 6.25% by H1 2027, warns Deutsche Bank as inflation ris",
-          "result": "reused saved series"
-        },
-        {
-          "headline": "Rupee closes marginally up three paise at 95.12 against U.S. dollar amid elevate",
-          "result": "reused saved series"
-        },
-        {
-          "headline": "'Don't panic over rupee fall': Raghuram Rajan warns against exhausting forex res",
-          "result": "reused saved series"
-        }
-      ]
+      "pagesFetched": 0,
+      "samples": [],
+      "budgetStopped": true
     },
     "models": {
       "filter": {
         "model": "claude-haiku-5-5",
-        "calls": 11,
-        "inputTokens": 22498,
-        "outputTokens": 3517,
-        "cost": 0.0039
+        "calls": 5,
+        "inputTokens": 24360,
+        "outputTokens": 7286,
+        "cost": 0.0061
       },
       "analysis_quick": {
         "model": "claude-sonnet-5-5",
-        "calls": 1,
-        "inputTokens": 2764,
-        "outputTokens": 2728,
-        "cost": 0.0328
-      },
-      "stats": {
-        "model": "claude-sonnet-5-5",
-        "calls": 3,
-        "inputTokens": 287313,
-        "outputTokens": 2998,
-        "searches": 7,
-        "fetches": 4,
-        "cost": 0.6746
+        "calls": 2,
+        "inputTokens": 5715,
+        "outputTokens": 3718,
+        "cost": 0.0486
       },
       "threads": {
         "model": "claude-sonnet-5-5",
         "calls": 1,
-        "inputTokens": 9339,
-        "outputTokens": 29,
-        "cost": 0.019
+        "inputTokens": 9411,
+        "outputTokens": 202,
+        "cost": 0.0208
       }
     },
     "spend": {
-      "thisDesk": 0.7304,
-      "today": 5.3134,
+      "thisDesk": 0.0755,
+      "today": 5.4453,
       "cap": 6
     }
   },
