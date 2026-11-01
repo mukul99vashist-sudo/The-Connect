@@ -27,6 +27,8 @@ const OUTLET_INFO = {
   indianexpress: { name: "The Indian Express", region: "India" }
 };
 const OUTLETS = Object.fromEntries(Object.entries(OUTLET_INFO).map(([id, o]) => [id, o.name]));
+// v77 (2 Nov 2026): reader-facing text no longer contains notes about the reports themselves; disruption-map dates are
+// dates only; well-known routes (Hormuz, Red Sea/Suez, Malacca) show India's long-established flows, marked inferred.
 // v76 (31 Oct 2026): filter replies get 8,000 tokens and a failed batch is retried in halves; one failed batch no longer
 // fails the run (that skipped saving); Indian Express feeds are requested with a browser user agent after a 403.
 // v75 (31 Oct 2026): back to the v72 keep/reject filter (v73/v74's Watch and Brief outcomes hid most stories and cut the
@@ -697,7 +699,7 @@ Return ONLY a JSON array: [{"id":0,"conflict":false,"scheduled":false,"disruptio
 const GROUPS = ["Fuel & LPG users", "Food shoppers", "Borrowers", "Depositors & savers", "Equity & mutual fund investors", "Salaried workers", "Farmers", "Fishers", "MSME exporters", "Large exporters", "Importers & traders", "Students abroad", "Gulf & overseas workers and families", "Travellers & pilgrims", "IT & services workers", "Manufacturing workers", "Power consumers", "Government finances", "A named state or region"];
 const FW_SPEC = {
   impact_chain: `"impact_chain": {"chain":[{"step":"short label for the step, ≤8 words","detail":"one or two complete sentences, ≤40 words, explaining what happens at this step and how it leads to the next","basis":"reported|inferred"}], "breaks_if":"one complete sentence, ≤35 words, on the condition that would stop the effect reaching India"}. 3 steps at Quick read, up to 4 otherwise. The first step must be reported. At most 1 inferred step at Quick read, 2 otherwise.`,
-  disruption_map: `"disruption_map": {"node":{"name":"...","type":"port|airport|strait|canal|pipeline|refinery|power plant|factory|rail|road|other","status":"closed|partial|open|unknown","as_of":"date/time as reported"},"cause":{"text":"one complete sentence, ≤35 words","status":"confirmed|claimed|alleged"},"flows":[{"flow":"crude|LNG|containers|air passengers|workers|pilgrims|cargo|other","india_link":"one or two complete sentences, ≤40 words, on how this flow reaches India and who depends on it","basis":"reported|inferred"}],"alternatives":["each a short phrase as reported"],"duration":"as reported, or 'not reported'"}. Only flows named in the reports.`,
+  disruption_map: `"disruption_map": {"node":{"name":"...","type":"port|airport|strait|canal|pipeline|refinery|power plant|factory|rail|road|other","status":"closed|partial|open|unknown","as_of":"the date of that status only, e.g. 1 Nov 2026"},"cause":{"text":"one complete sentence, ≤35 words","status":"confirmed|claimed|alleged"},"flows":[{"flow":"crude|LNG|containers|air passengers|workers|pilgrims|cargo|other","india_link":"one or two complete sentences, ≤40 words, on how this flow reaches India and who depends on it","basis":"reported|inferred"}],"alternatives":["each a short phrase as reported"],"duration":"as reported, or 'not reported'"}. Status "closed" or "partial" only when a report says the site is closed, shut, blocked, halted or restricted, or reports talks about reopening it; otherwise "unknown". Flows: those named in the reports; for a well-known route you may add India's long-established flows through it, marked "inferred".`,
   trade_flow: `"trade_flow": {"good":"...","actors":[{"country":"...","role":"exporter|importer|third_party","is_india":false}],"change":{"type":"start|stop|increase|cut|tariff|sanction|ban|deal|other","effective":"date if reported"},"india_position":{"role":"competing_buyer|supplier|rival_exporter|transit|not_involved","note":"two complete sentences, ≤50 words, cautious: where India sits in this trade and what the change could mean for Indian buyers or sellers"},"volumes":[{"value":0,"unit":"...","period":"...","from":"<outlet>"}]}. Volumes only if stated in the reports.`,
   policy_tracker: `"policy_tracker": {"instrument":{"name":"...","issuer":"...","jurisdiction":"..."},"stages":[{"stage":"announced|draft|adopted|notified|transition|in_force|under_review|amended_or_repealed","date":"if reported","status":"done|current|next"}],"obligations":[{"who":"...","what":"one complete sentence, ≤35 words, on what they must do","from":"date if reported"}],"applies_to_india":"yes|no|partly","india_note":"one or two complete sentences, ≤45 words, on what the measure means for Indian people, firms or the government"}. Assign stages only from the reports' wording; a proposal is never "in_force".`,
   decoder: `"decoder": {"kind":"release|decision","headline":{"label":"...","value":0,"unit":"...","period":"...","previous":null,"previousLabel":"...","from":"<outlet>"},"comparisons":[{"label":"e.g. RBI target, year ago","value":0,"unit":"...","from":"<outlet>"}],"drivers":[{"name":"short label, ≤6 words","direction":"up|down|mixed","how":"one complete sentence, ≤30 words, on how this factor moved the figure, as stated by the issuer or quoted in reports"}],"decision":{"action":"hike|cut|hold|other","size":"as reported","stance":"one or two complete sentences, ≤40 words, on the stated reasoning"}}. Drivers only as stated by the issuer or quoted in reports. No consensus figure unless a report attributes one.`,
@@ -884,6 +886,8 @@ WRITING STYLE (every text field):
 - Explain mechanisms, not labels: write "Higher crude prices raise refiners' costs, which can feed through to petrol and diesel prices", not "fuel prices".
 - Spell out abbreviations on first use, for example "merchant discount rate (MDR)".
 - Short labels are allowed only in fields described as a label or name.
+- Write about the world, never about the reports. Never write "the report says", "the reports do not explain", "the wording implies" or similar. If something is not known, say so plainly ("The cause has not been reported") or leave the field empty.
+- Date and time fields hold only a date or time, for example "1 Nov 2026" or "Friday morning", never an explanation.
 
 RULES:
 1. Facts only from the reports. Never invent numbers, names, dates, causes or events, and do not add descriptions the reports do not make (for example calling a visit "unannounced" when the reports only say its announcement was unexpected). Every number you write must appear in the reports. If a field cannot be filled, leave it out.
@@ -915,7 +919,60 @@ const arr = (x, n) => (Array.isArray(x) ? x : []).slice(0, n);
 // A figure is kept only if its value appears in the reports' text.
 const inReports = (v, nums) => v === null || nums.has(v) || nums.has(Math.abs(v));
 
-function cleanFramework(key, f, nums) {
+// v77: sentences about the reports themselves ("The report does not explain…", "the wording implies…") are removed from
+// reader-facing text; disruption dates are reduced to the date; a well-known route with no flow named gets India's
+// long-established flows through it, marked inferred.
+const META_TEXT = /\b(the|this|these) (report|reports|article|articles|wording|summary|summaries|outlet|outlets) (does|do|did|is|are) not\b|\b(the|this) (wording|phrasing)\b|\b(report|reports|article|wording) (implies|imply|suggests|suggest|says nothing|say nothing)\b|\bnot (stated|explained|specified|mentioned) in the (report|reports|article)|\b(it|the report|the article) (places|frames|presents|puts|situates|sets) (the|this) (issue|story|event|news|development)\b/i;
+export function dropMeta(text) {
+  if (typeof text !== "string" || !META_TEXT.test(text)) return text;
+  // "The reports do not say how large the moves were" -> "It is not yet known how large the moves were"
+  const t = text.replace(/\b(?:the|this|these) (?:report|reports|article|articles|summary|summaries|outlet|outlets) (?:does|do|did) not (?:say|state|explain|specify|give|mention|report|make clear|clarify|indicate)\s+(how|why|what|when|whether|who|which|where)\b/gi,
+    (m, w) => "it is not yet known " + w).replace(/(^|[.!?]\s+)it is not yet known/g, (m, p) => p + "It is not yet known");
+  // drop meta clauses within a sentence ("…; it places the issue within…"), then meta sentences
+  return t.split(/(?<=[.!?])\s+/).map(x => { if (!META_TEXT.test(x) || !x.includes(";")) return x;
+    const keep = x.split(/;\s+/).filter(c => !META_TEXT.test(c)); return keep.length ? keep.join("; ").replace(/[.!?]?$/, ".") : ""; })
+    .filter(x => x && !META_TEXT.test(x)).join(" ").trim();
+}
+const MONTHS3 = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+export function asOfDate(x) {
+  const t = String(x || "").trim(); if (!t) return "";
+  let m = /(\d{4})-(\d{2})-(\d{2})/.exec(t); if (m) return `${+m[3]} ${MONTHS3[+m[2] - 1]} ${m[1]}`;
+  m = /(\d{1,2}(?:[–-]\d{1,2})?)\s+(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\.?,?\s+(\d{4})/i.exec(t); if (m) return `${m[1]} ${m[2][0].toUpperCase()}${m[2].slice(1, 3).toLowerCase()} ${m[3]}`;
+  m = /(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\.?\s+(\d{1,2}),?\s+(\d{4})/i.exec(t); if (m) return `${m[2]} ${m[1][0].toUpperCase()}${m[1].slice(1, 3).toLowerCase()} ${m[3]}`;
+  return t.length <= 24 && !META_TEXT.test(t) && !/\b(impl|suggest|report)/i.test(t) ? t : "";
+}
+const KNOWN_ROUTES = [
+  { re: /hormuz|persian gulf/i, flows: [
+    { flow: "Crude", india_link: "A large share of the crude oil India imports from the Gulf is shipped through the Strait of Hormuz, so disruption there can raise India's fuel import costs.", basis: "inferred" },
+    { flow: "LNG", india_link: "Much of India's liquefied natural gas from Qatar and the UAE passes through the strait, supplying power plants, fertiliser makers and city gas networks.", basis: "inferred" } ] },
+  { re: /red sea|bab[ -]el[ -]mandeb|suez/i, flows: [
+    { flow: "Containers", india_link: "Most of India's container trade with Europe normally passes through the Red Sea and the Suez Canal; diversions around Africa add time and freight costs for exporters and importers.", basis: "inferred" } ] },
+  { re: /malacca/i, flows: [
+    { flow: "Containers", india_link: "India's trade with East Asia, including electronics and machinery imports, passes through the Strait of Malacca.", basis: "inferred" } ] }
+];
+export function tidyFramework(key, f) {
+  if (!f || typeof f !== "object") return f;
+  const walk = v => typeof v === "string" ? dropMeta(v) : Array.isArray(v) ? v.map(walk) : v && typeof v === "object" ? Object.fromEntries(Object.entries(v).map(([k, x]) => [k, walk(x)])) : v;
+  const rawAsOf = key === "disruption_map" ? f.node?.as_of : null;
+  const t = key === "conflicting" ? f : walk(f);            // "unexplained" differences between accounts are the point of that framework
+  // a list item whose explanation was only a note about the reports is dropped (every group, obligation or entry needs one)
+  if (key === "winners_losers" && Array.isArray(t.groups)) t.groups = t.groups.filter(g => g.mechanism);
+  if (key === "policy_tracker" && Array.isArray(t.obligations)) t.obligations = t.obligations.filter(o => o.what);
+  if (key === "timeline" && Array.isArray(t.entries)) t.entries = t.entries.filter(e => e.what);
+  const NR = "Not yet reported.";
+  if (key === "escalation" && f.evidence && !t.evidence) t.evidence = NR;
+  if (key === "market_move" && f.not_settled && !t.not_settled) t.not_settled = NR;
+  if (key === "trade_flow" && f.india_position?.note && t.india_position && !t.india_position.note) t.india_position.note = NR;
+  if (key === "pass_through" && f.end_user?.effect && t.end_user && !t.end_user.effect) t.end_user.effect = NR;
+  if (key === "disruption_map" && t.node) {
+    t.node = { ...t.node, as_of: asOfDate(rawAsOf) };
+    if (t.cause && !t.cause.text) t.cause = { ...t.cause, text: "The cause has not been reported." };
+    if (!(t.flows || []).length) { const r = KNOWN_ROUTES.find(x => x.re.test(t.node.name || "")); if (r) t.flows = r.flows.map(x => ({ ...x })); }
+  }
+  return t;
+}
+function cleanFramework(key, f, nums) { return tidyFramework(key, cleanFrameworkRaw(key, f, nums)); }
+function cleanFrameworkRaw(key, f, nums) {
   if (!f || typeof f !== "object") return null;
   // Labels and short fields get twice their nominal room and are trimmed at a word or sentence end, never mid-word.
   const clip = (x, n = 240) => sentence(typeof x === "string" ? x : "", Math.max(n * 2, 60));
@@ -1869,6 +1926,10 @@ async function runDesk(desk) {
   const kinds = await classifyOlder(data);
   const places = await labelPlaces(data);
   if (places.labelled) console.log(`Places: ${places.labelled} recent stories placed on the map, ${places.waiting} waiting`);
+  let tidied = 0;                                         // v77: existing analyses get the same clean-up as new ones
+  for (const ev of allEvents()) { const fw = ev.analysis?.frameworks; if (!fw) continue;
+    for (const k of Object.keys(fw)) { const before = JSON.stringify(fw[k]); fw[k] = tidyFramework(k, fw[k]); if (JSON.stringify(fw[k]) !== before) tidied++; } }
+  if (tidied) console.log(`Tidied ${tidied} existing analysis sections (notes about the reports, dates, known routes)`);
   const frames = await reframeRecent(data, desk.mode);
   if (stats.searched) console.log(`Statistics: ${stats.searched} stories due, ${stats.found} new charts, ${stats.reused} reused saved series, ${stats.none} without, ${stats.failed} failed; ${stats.proposed} figures proposed, ${stats.droppedPoints} not found on an official page, ${stats.pagesFetched} official pages fetched`);
   for (const x of stats.samples || []) console.log(`  · ${x.result}: ${x.headline}` + (x.proposed !== undefined ? ` (${x.checked}/${x.proposed} figures checked, ${x.pagesFetched} pages)` : ""));
