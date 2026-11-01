@@ -2,153 +2,130 @@
   "schema": 4,
   "region": "India",
   "since": "2026-10-02",
-  "updatedAt": "2026-11-01T06:26:42.978Z",
+  "updatedAt": "2026-11-01T16:04:13.187Z",
   "sectors": [
     {
       "id": "energy",
       "name": "Energy",
       "items": [
         {
-          "id": "s17r8pp2",
-          "headline": "Iran’s supreme leader warns US, Israel against war",
-          "url": "https://www.scmp.com/news/world/middle-east/article/3372847/irans-supreme-leader-warns-us-israel-against-war",
-          "source": "scmp",
-          "date": "2026-10-31T14:16:26.000Z",
-          "relevance": "medium",
-          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/31/9d83694f-57fd-466d-aa2d-31ce14f66a1e_848d1b03.jpg?itok=T8285_Wu&v=1793456180",
-          "why": "Iran's supreme leader Mojtaba Khamenei warned the United States and Israel against resuming strikes. Renewed fighting could further disrupt Gulf energy supplies that India relies on and endanger Indians working in the region.",
+          "id": "sotc2yh",
+          "headline": "Iran and US explore diplomacy amid rising threats of war",
+          "url": "https://www.aljazeera.com/news/2026/11/1/iran-and-us-explore-diplomacy-amid-rising-threats-of-war",
+          "source": "aljazeera",
+          "date": "2026-11-01T13:02:10.000Z",
+          "relevance": "high",
+          "why": "Iran says it could reopen the Strait of Hormuz in a shorter period if its conditions are met, while US President Donald Trump says the US still has targets to 'take care of'. India depends on Gulf shipping for energy.",
           "implications": [
-            "The warning answers threats of renewed strikes from Iran's foes, which signals that the risk of fresh fighting remains live rather than receding.",
-            "Fears of renewed fighting can raise the risk premium in oil markets, which could increase the cost of crude that Indian refiners buy.",
-            "Indian workers and their families in Gulf countries could face renewed safety risks and travel disruption if strikes resume."
+            "The report does not set out Iran's conditions, so the timing of any return to normal shipping through the strait remains uncertain for Indian importers and refiners.",
+            "Talks running alongside threats of war mean the situation could move either way, and prolonged disruption could raise costs for Indian refiners and fuel distributors."
           ],
           "analysis": {
             "v": 3,
-            "at": "2026-10-31T19:27:54.716Z",
-            "tier": "standard",
-            "primary": "escalation",
+            "at": "2026-11-01T16:03:39.496Z",
+            "tier": "quick",
+            "primary": "disruption_map",
             "complement": null,
             "features": [
+              "disruption",
               "armed_conflict",
               "pending_outcome"
             ],
             "exposure": {
               "level": "high",
-              "reason": "Any return to strikes would hit the Gulf, a source of much of India's crude and home to many Indian workers. That channel touches fuel prices and Indians' safety."
+              "reason": "The strait could affect crude oil and LPG shipments to India, which are household essentials and top imports. This channel is inferred, because the report itself does not name specific cargoes."
             },
             "horizon": {
               "value": "weeks",
-              "reason": "The timing depends on whether the United States or Israel resumes strikes, which the reports describe as a threatened possibility rather than a scheduled event."
+              "reason": "The timing depends on whether diplomacy produces a reopening and on how quickly any change in shipping and prices passes through to Indian fuel markets."
             },
             "confidence": {
-              "level": "medium",
-              "reason": "Two outlets, South China Morning Post and France 24, report Khamenei's written statement; the specific threats of resumed strikes are not detailed."
+              "level": "low",
+              "reason": "This rests on a single Al Jazeera report, and Iran's conditions, the current state of the strait and the outcome of talks are not confirmed."
             },
-            "outlets": 2,
+            "outlets": 1,
             "affected": [
               {
                 "group": "Fuel & LPG users",
-                "direction": "up",
-                "what": "fuel price risk",
-                "effect": "Renewed fighting could push up global crude and gas prices, which may feed through to petrol, diesel and cooking gas costs in India.",
+                "direction": "unclear",
+                "what": "fuel and LPG supply costs",
+                "effect": "If shipping through Hormuz stays restricted, import costs for crude and gas could rise and may eventually feed into petrol, diesel and cooking gas prices; a reopening could ease this.",
                 "basis": "inferred"
               },
               {
-                "group": "Gulf & overseas workers and families",
+                "group": "Importers & traders",
                 "direction": "unclear",
-                "what": "safety and travel risk",
-                "effect": "Indians working in Gulf states could face safety threats and flight disruption if strikes resume, affecting families who depend on their earnings.",
+                "what": "shipping costs and delays",
+                "effect": "Uncertainty over passage through the strait could raise freight and insurance costs for traders whose cargoes pass through the Gulf.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "An announcement by the United States or Israel of resumed strikes on Iran",
-                "why": "It would show the threatened return to war is happening and that Gulf energy and travel risks are rising.",
+                "what": "Iran setting out the conditions under which it would reopen the Strait of Hormuz, or announcing a reopening",
+                "why": "It would show whether shipping through the strait could resume and how soon.",
                 "when": "",
                 "where": ""
               },
               {
-                "what": "Iranian retaliation against shipping or Gulf states following any new strikes",
-                "why": "Such action would directly threaten oil flows to India and the safety of Indians in the region.",
+                "what": "Further US statements or action on the targets Trump says the US still has to 'take care of'",
+                "why": "It would show whether talks are holding or tensions are escalating toward war.",
                 "when": "",
                 "where": ""
               }
             ],
             "context": [
-              "India imports most of the crude oil it uses, and a large share comes from Gulf producers whose exports pass through the Strait of Hormuz.",
-              "Millions of Indians live and work in Gulf countries, and the money they send home is an important source of income for many Indian households, particularly in states such as Kerala."
+              "India imports most of its crude oil, and much of its crude and liquefied petroleum gas (LPG) comes from Gulf producers whose cargoes ship through Hormuz.",
+              "Disruption to a major shipping route usually raises oil prices, freight rates and insurance costs, even before physical supplies fall."
             ],
             "terms": [
               {
-                "term": "supreme leader",
-                "meaning": "Iran's highest political and religious authority, who has final say over the armed forces and major state policy."
+                "term": "Hormuz",
+                "meaning": "The Strait of Hormuz is a narrow waterway linking the Gulf to the open sea, through which a large share of the world's oil exports passes."
               }
             ],
             "frameworks": {
-              "escalation": {
-                "move": "none",
-                "rung": 6,
-                "current_rung": 6,
-                "previous_rung": null,
-                "development": "This story adds a written warning from Iran's supreme leader Mojtaba Khamenei to the United States and Israel against returning to war or launching further strikes.",
-                "evidence": "A warning is rhetoric and does not change the war's level. No new attack, ceasefire or withdrawal is reported, so the war stays at the rung set on 2026-10-20.",
-                "next_signals": [
-                  {
-                    "rung": 7,
-                    "signal": "The United States or Israel launches a broad military campaign against Iran, and Iran answers with widespread attacks across the region."
-                  },
-                  {
-                    "rung": 5,
-                    "signal": "Strikes continue but Iranian attacks on third countries and on shipping through the Strait of Hormuz are reported to have stopped."
-                  }
-                ],
-                "india_channels": [
-                  "oil",
-                  "shipping",
-                  "remittances",
-                  "diaspora safety",
-                  "flights"
-                ],
-                "conflict": "w1ye2krf",
-                "applied": "none",
-                "from": 6
+              "disruption_map": {
+                "node": {
+                  "name": "Strait of Hormuz",
+                  "type": "strait",
+                  "status": "closed",
+                  "as_of": "Report of 2026-11-01; the wording about reopening implies the strait is…"
+                },
+                "cause": {
+                  "text": "The report does not explain why the strait is closed; it places the issue within rising tensions between Iran and the US and threats of war.",
+                  "status": "claimed"
+                },
+                "flows": [],
+                "alternatives": [],
+                "duration": "not reported"
               }
             }
           },
-          "conflict": "w1ye2krf",
           "place": {
-            "name": "Tehran",
+            "name": "Strait of Hormuz",
             "country": "Iran",
-            "lat": 35.69,
-            "lon": 51.39,
+            "lat": 26.6,
+            "lon": 56.3,
             "involves": [
-              "United States",
-              "Israel"
+              "United States"
             ]
           },
           "reports": [
             {
-              "source": "scmp",
-              "headline": "Iran’s supreme leader warns US, Israel against war",
-              "url": "https://www.scmp.com/news/world/middle-east/article/3372847/irans-supreme-leader-warns-us-israel-against-war",
-              "date": "2026-10-31T14:16:26.000Z",
+              "source": "aljazeera",
+              "headline": "Iran and US explore diplomacy amid rising threats of war",
+              "url": "https://www.aljazeera.com/news/2026/11/1/iran-and-us-explore-diplomacy-amid-rising-threats-of-war",
+              "date": "2026-11-01T13:02:10.000Z",
               "kind": "hard",
-              "summary": "Iran’s supreme leader Mojtaba Khamenei on Saturday warned the United States and Israel against returning to war, according to a written statement, following threats from the Islamic republic’s foes of a possible resumption of strikes.",
+              "summary": "Iran says could reopen Hormuz in shorter period if conditions met, as Trump says US still has targets to 'take care of'.",
               "summaryV": 3,
-              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/31/9d83694f-57fd-466d-aa2d-31ce14f66a1e_848d1b03.jpg?itok=T8285_Wu&v=1793456180"
-            },
-            {
-              "source": "france24",
-              "headline": "Iran's Khamenei warns US and Israel against new attacks",
-              "url": "https://www.france24.com/en/middle-east/20261031-iran-s-khamenei-warns-us-and-israel-against-new-attacks",
-              "date": "2026-10-31T17:00:36.000Z",
-              "kind": "hard",
-              "summary": "Iran's Supreme Leader Mojtaba Khamenei warned the United States and Israel on Saturday against further strikes as fears mount over a resumption of fighting in the Middle East.",
-              "summaryV": 3,
-              "image": "https://s.france24.com/media/display/77114946-d54c-11f1-8f61-a575454bc579/w:1024/p:16x9/AP26285515397254.jpg"
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/14405199-1793530960.jpg?resize=1920%2C1440"
             }
           ],
+          "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/14405199-1793530960.jpg?resize=1920%2C1440",
           "thread": "t2ogxay"
         },
         {
@@ -347,6 +324,25 @@
               "kind": "hard",
               "summary": "Iran’s Foreign Minister Abbas Araghchi tells Al Jazeera Tehran doesn't rule out attack, is ‘prepared for all scenarios’.",
               "summaryV": 3
+            },
+            {
+              "source": "aljazeera",
+              "headline": "Mediators continue US-Iran negotiations amid war rhetoric: What we know",
+              "url": "https://www.aljazeera.com/news/2026/11/1/mediators-continue-us-iran-negotiations-amid-war-rhetoric-what-we-know",
+              "date": "2026-11-01T11:14:27.000Z",
+              "kind": "feature",
+              "summary": "Trump says latest talks 'going fine'; Iranian leaders say they favour diplomacy but are ready to respond to US attacks.",
+              "summaryV": 3
+            },
+            {
+              "source": "scmp",
+              "headline": "US-Iran talks: UAE ‘braced for the worst’, hoping for diplomacy",
+              "url": "https://www.scmp.com/news/world/middle-east/article/3372891/us-iran-talks-uae-braced-worst-hoping-diplomacy",
+              "date": "2026-11-01T11:35:47.000Z",
+              "kind": "hard",
+              "summary": "The UAE is hoping for a breakthrough in negotiations between Iran and the United States while being prepared for the worst, a senior official said on Sunday, following threats of a resumption of the Middle East war.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/01/e95ccd75-f3a7-430c-a54b-6c0afb3cfae7_dbedf38c.jpg?itok=xoEuFjkP&v=1793532945"
             }
           ],
           "thread": "t2ogxay",
@@ -413,6 +409,261 @@
               }
             ]
           }
+        },
+        {
+          "id": "s1gtjkgh",
+          "headline": "Russia opens terrorism case over Ukraine oil refinery attack",
+          "url": "https://www.abc.net.au/news/2026-11-01/russia-opens-terrorism-case-over-ukraine-oil-refinery-attack/107334242",
+          "source": "abc",
+          "date": "2026-11-01T11:27:39.000Z",
+          "relevance": "medium",
+          "image": "https://live-production.wcms.abc-cdn.net.au/35bc1b163fa9d1848d656426d66f9085?impolicy=wcms_crop_resize&cropH=2813&cropW=5000&xPos=0&yPos=261&width=862&height=485",
+          "why": "Russia has opened a terrorism case after a large drone attack reportedly caused significant damage to a refinery that Ukraine called one of Russia's largest. Any effect on India would be indirect, through global oil and fuel prices.",
+          "implications": [
+            "If the damage cuts the refinery's output, less Russian fuel could reach export markets, which may tighten global supplies of refined products and push international prices up.",
+            "Higher international fuel prices could raise costs for Indian oil companies and importers, although the report gives no estimate of how long the refinery may be out of action."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-01T16:03:04.921Z",
+            "tier": "quick",
+            "primary": "disruption_map",
+            "complement": null,
+            "features": [
+              "disruption",
+              "armed_conflict",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "The report describes no direct link to India. Any effect would come indirectly through global fuel prices if the refinery's output falls, and the report does not say whether it will."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Any change in global fuel prices would depend on how long the refinery stays damaged, and such shifts usually reach Indian importers over several weeks rather than days."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single ABC News report, and the extent of the damage is described as reported and relies on Ukraine's description of the facility."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "global fuel price pressure",
+                "effect": "If lost refinery output tightens global fuel supplies, higher international prices could eventually feed into the cost of fuel in India, but the report does not say this will happen.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Official confirmation of how badly the refinery was damaged and whether its output has been halted",
+                "why": "It would show whether any meaningful volume of Russian fuel is likely to leave global supply.",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "Further drone attacks on Russian oil refineries",
+                "why": "Repeated strikes would raise the chance of a lasting reduction in Russian refined fuel supply to world markets.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "India imports most of the crude oil it uses, so Indian fuel costs are sensitive to global prices of crude oil and refined fuels.",
+              "A refinery turns crude oil into petrol, diesel and other fuels, so damage to one can reduce fuel supply even when crude oil supplies are unaffected."
+            ],
+            "terms": [],
+            "frameworks": {
+              "disruption_map": {
+                "node": {
+                  "name": "Russian oil refinery hit by drones (name not given in the report)",
+                  "type": "refinery",
+                  "status": "unknown",
+                  "as_of": "2026-11-01"
+                },
+                "cause": {
+                  "text": "A massive drone attack reportedly caused significant damage to the facility, which Ukraine described as one of Russia's largest oil refineries, and Russia has opened a terrorism case.",
+                  "status": "claimed"
+                },
+                "flows": [
+                  {
+                    "flow": "other",
+                    "india_link": "The refinery's fuel output could affect global supplies of refined products. India imports most of its crude oil, so international fuel price changes may reach Indian oil companies and importers.",
+                    "basis": "inferred"
+                  }
+                ],
+                "alternatives": [],
+                "duration": "not reported"
+              }
+            }
+          },
+          "place": {
+            "name": "Russia",
+            "country": "Russia",
+            "lat": 55.75,
+            "lon": 37.62,
+            "involves": [
+              "Ukraine"
+            ]
+          },
+          "reports": [
+            {
+              "source": "abc",
+              "headline": "Russia opens terrorism case over Ukraine oil refinery attack",
+              "url": "https://www.abc.net.au/news/2026-11-01/russia-opens-terrorism-case-over-ukraine-oil-refinery-attack/107334242",
+              "date": "2026-11-01T11:27:39.000Z",
+              "kind": "hard",
+              "summary": "A facility which Ukraine named \"one of Russia's largest\" oil refineries reportedly sustained \"significant damage\" in the \"massive drone attack\".",
+              "summaryV": 3,
+              "image": "https://live-production.wcms.abc-cdn.net.au/35bc1b163fa9d1848d656426d66f9085?impolicy=wcms_crop_resize&cropH=2813&cropW=5000&xPos=0&yPos=261&width=862&height=485"
+            }
+          ],
+          "thread": "t1ibmsov"
+        },
+        {
+          "id": "s17r8pp2",
+          "headline": "Iran’s supreme leader warns US, Israel against war",
+          "url": "https://www.scmp.com/news/world/middle-east/article/3372847/irans-supreme-leader-warns-us-israel-against-war",
+          "source": "scmp",
+          "date": "2026-10-31T14:16:26.000Z",
+          "relevance": "medium",
+          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/31/9d83694f-57fd-466d-aa2d-31ce14f66a1e_848d1b03.jpg?itok=T8285_Wu&v=1793456180",
+          "why": "Iran's supreme leader Mojtaba Khamenei warned the United States and Israel against resuming strikes. Renewed fighting could further disrupt Gulf energy supplies that India relies on and endanger Indians working in the region.",
+          "implications": [
+            "The warning answers threats of renewed strikes from Iran's foes, which signals that the risk of fresh fighting remains live rather than receding.",
+            "Fears of renewed fighting can raise the risk premium in oil markets, which could increase the cost of crude that Indian refiners buy.",
+            "Indian workers and their families in Gulf countries could face renewed safety risks and travel disruption if strikes resume."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-31T19:27:54.716Z",
+            "tier": "standard",
+            "primary": "escalation",
+            "complement": null,
+            "features": [
+              "armed_conflict",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "high",
+              "reason": "Any return to strikes would hit the Gulf, a source of much of India's crude and home to many Indian workers. That channel touches fuel prices and Indians' safety."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "The timing depends on whether the United States or Israel resumes strikes, which the reports describe as a threatened possibility rather than a scheduled event."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "Two outlets, South China Morning Post and France 24, report Khamenei's written statement; the specific threats of resumed strikes are not detailed."
+            },
+            "outlets": 2,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "up",
+                "what": "fuel price risk",
+                "effect": "Renewed fighting could push up global crude and gas prices, which may feed through to petrol, diesel and cooking gas costs in India.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Gulf & overseas workers and families",
+                "direction": "unclear",
+                "what": "safety and travel risk",
+                "effect": "Indians working in Gulf states could face safety threats and flight disruption if strikes resume, affecting families who depend on their earnings.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "An announcement by the United States or Israel of resumed strikes on Iran",
+                "why": "It would show the threatened return to war is happening and that Gulf energy and travel risks are rising.",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "Iranian retaliation against shipping or Gulf states following any new strikes",
+                "why": "Such action would directly threaten oil flows to India and the safety of Indians in the region.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "India imports most of the crude oil it uses, and a large share comes from Gulf producers whose exports pass through the Strait of Hormuz.",
+              "Millions of Indians live and work in Gulf countries, and the money they send home is an important source of income for many Indian households, particularly in states such as Kerala."
+            ],
+            "terms": [
+              {
+                "term": "supreme leader",
+                "meaning": "Iran's highest political and religious authority, who has final say over the armed forces and major state policy."
+              }
+            ],
+            "frameworks": {
+              "escalation": {
+                "move": "none",
+                "rung": 6,
+                "current_rung": 6,
+                "previous_rung": null,
+                "development": "This story adds a written warning from Iran's supreme leader Mojtaba Khamenei to the United States and Israel against returning to war or launching further strikes.",
+                "evidence": "A warning is rhetoric and does not change the war's level. No new attack, ceasefire or withdrawal is reported, so the war stays at the rung set on 2026-10-20.",
+                "next_signals": [
+                  {
+                    "rung": 7,
+                    "signal": "The United States or Israel launches a broad military campaign against Iran, and Iran answers with widespread attacks across the region."
+                  },
+                  {
+                    "rung": 5,
+                    "signal": "Strikes continue but Iranian attacks on third countries and on shipping through the Strait of Hormuz are reported to have stopped."
+                  }
+                ],
+                "india_channels": [
+                  "oil",
+                  "shipping",
+                  "remittances",
+                  "diaspora safety",
+                  "flights"
+                ],
+                "conflict": "w1ye2krf",
+                "applied": "none",
+                "from": 6
+              }
+            }
+          },
+          "conflict": "w1ye2krf",
+          "place": {
+            "name": "Tehran",
+            "country": "Iran",
+            "lat": 35.69,
+            "lon": 51.39,
+            "involves": [
+              "United States",
+              "Israel"
+            ]
+          },
+          "reports": [
+            {
+              "source": "scmp",
+              "headline": "Iran’s supreme leader warns US, Israel against war",
+              "url": "https://www.scmp.com/news/world/middle-east/article/3372847/irans-supreme-leader-warns-us-israel-against-war",
+              "date": "2026-10-31T14:16:26.000Z",
+              "kind": "hard",
+              "summary": "Iran’s supreme leader Mojtaba Khamenei on Saturday warned the United States and Israel against returning to war, according to a written statement, following threats from the Islamic republic’s foes of a possible resumption of strikes.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/31/9d83694f-57fd-466d-aa2d-31ce14f66a1e_848d1b03.jpg?itok=T8285_Wu&v=1793456180"
+            },
+            {
+              "source": "france24",
+              "headline": "Iran's Khamenei warns US and Israel against new attacks",
+              "url": "https://www.france24.com/en/middle-east/20261031-iran-s-khamenei-warns-us-and-israel-against-new-attacks",
+              "date": "2026-10-31T17:00:36.000Z",
+              "kind": "hard",
+              "summary": "Iran's Supreme Leader Mojtaba Khamenei warned the United States and Israel on Saturday against further strikes as fears mount over a resumption of fighting in the Middle East.",
+              "summaryV": 3,
+              "image": "https://s.france24.com/media/display/77114946-d54c-11f1-8f61-a575454bc579/w:1024/p:16x9/AP26285515397254.jpg"
+            }
+          ],
+          "thread": "t2ogxay"
         },
         {
           "id": "s1lo0ybp",
@@ -17698,6 +17949,263 @@
       "id": "logistics",
       "name": "Logistics & Shipping",
       "items": [
+        {
+          "id": "s3z20p5",
+          "headline": "Somali piracy resurges as Iranian vessel seized carrying 23 crew",
+          "url": "https://www.scmp.com/news/world/africa/article/3372904/somali-piracy-resurges-iranian-vessel-seized-carrying-23-crew",
+          "source": "scmp",
+          "date": "2026-11-01T14:54:00.000Z",
+          "relevance": "medium",
+          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/01/4956339a-0e4b-4620-852d-84c2e4aed9b0_b2863036.jpg?itok=ANp7aA26&v=1793544836",
+          "why": "Somali pirates have seized an Iranian fishing vessel with 23 people aboard, and a European Union maritime security body warns it could become a base for further attacks. Indian trade and seafarers use these Indian Ocean routes.",
+          "implications": [
+            "If the captured vessel is used to attack merchant ships, shipowners may pay more for insurance and security on Arabian Sea routes, and those costs could eventually reach Indian importers and exporters.",
+            "Indian crews serve on many merchant ships, so any attack on a commercial vessel near this lane could put Indian seafarers at risk."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-01T16:04:10.354Z",
+            "tier": "quick",
+            "primary": "escalation",
+            "complement": null,
+            "features": [
+              "armed_conflict"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The reports describe only one seizure of a fishing vessel, with no disruption to merchant ships yet. India's sea trade could be affected through shipping lane risk and insurance costs, so exposure is medium."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Any effect on freight costs or voyages depends on whether the pirates use the captured vessel to attack merchant ships in the coming weeks."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "The report from the South China Morning Post relies on an official statement from the European Union's MSCIO, but it is a single outlet and no further attacks are confirmed."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Importers & traders",
+                "direction": "up",
+                "what": "shipping risk and costs",
+                "effect": "If pirates threaten the commercial lane, shipowners and insurers may charge more for cargo moving across the Arabian Sea, which could raise costs for Indian importers and exporters.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Gulf & overseas workers and families",
+                "direction": "unclear",
+                "what": "safety of Indian seafarers",
+                "effect": "Indian seafarers working on merchant ships passing through the area could face greater risk if the captured vessel is used for further attacks.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Any further seizure or attack on a commercial ship near the shipping lane the captured vessel is approaching",
+                "why": "It would show whether the warning about a floating base for further attacks is coming true.",
+                "when": "",
+                "where": "European Union Maritime Security Centre Indian Ocean (MSCIO)"
+              }
+            ],
+            "context": [
+              "India imports most of its crude oil and carries most of its trade by sea, much of it across the Arabian Sea and near the Gulf of Aden.",
+              "Pirates often use a hijacked fishing vessel as a floating base, because it lets them operate farther from the coast while looking like ordinary traffic."
+            ],
+            "terms": [
+              {
+                "term": "MSCIO",
+                "meaning": "The European Union's Maritime Security Centre Indian Ocean, a body that monitors threats to shipping in the region and issues warnings to the industry."
+              }
+            ],
+            "frameworks": {
+              "escalation": {
+                "move": "none",
+                "rung": 4,
+                "current_rung": 4,
+                "previous_rung": null,
+                "development": "Somali pirates seized an Iranian fishing vessel with 23 people aboard, and the European Union's MSCIO warned that it could be used as a base for further attacks.",
+                "evidence": "The seizure of a single fishing vessel is a limited attack. The reports describe no repeated or sustained attacks on merchant ships, so the level stays where it is.",
+                "next_signals": [
+                  {
+                    "rung": 5,
+                    "signal": "Repeated attacks or seizures of commercial ships in the shipping lane, launched from the captured vessel or others, would show a move to sustained strikes."
+                  }
+                ],
+                "india_channels": [
+                  "shipping",
+                  "trade",
+                  "oil"
+                ]
+              }
+            }
+          },
+          "conflict": "none",
+          "place": {
+            "name": "Somali coast, Indian Ocean",
+            "country": "Somalia",
+            "lat": 2.05,
+            "lon": 45.32,
+            "involves": [
+              "Iran"
+            ]
+          },
+          "reports": [
+            {
+              "source": "scmp",
+              "headline": "Somali piracy resurges as Iranian vessel seized carrying 23 crew",
+              "url": "https://www.scmp.com/news/world/africa/article/3372904/somali-piracy-resurges-iranian-vessel-seized-carrying-23-crew",
+              "date": "2026-11-01T14:54:00.000Z",
+              "kind": "hard",
+              "summary": "Somali pirates have seized an Iranian fishing vessel carrying 23 people, the European Union’s Maritime Security Centre Indian Ocean (MSCIO) said, warning that the ship was approaching a commercial shipping lane and could become a floating base for further attacks.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/01/4956339a-0e4b-4620-852d-84c2e4aed9b0_b2863036.jpg?itok=ANp7aA26&v=1793544836"
+            }
+          ],
+          "thread": "t7xihzv"
+        },
+        {
+          "id": "s8timzo",
+          "headline": "How a Little-Known Company Dominated the Persian Gulf Oil Trade",
+          "url": "https://www.nytimes.com/2026/11/01/business/sinokor-oil-tankers-strait-hormuz-shipping-iran.html",
+          "source": "nyt",
+          "date": "2026-11-01T10:02:30.000Z",
+          "relevance": "medium",
+          "why": "",
+          "implications": [],
+          "place": {
+            "name": "Strait of Hormuz",
+            "country": "Iran",
+            "lat": 26.6,
+            "lon": 56.3,
+            "involves": [
+              "South Korea",
+              "United States"
+            ]
+          },
+          "reports": [
+            {
+              "source": "nyt",
+              "headline": "How a Little-Known Company Dominated the Persian Gulf Oil Trade",
+              "url": "https://www.nytimes.com/2026/11/01/business/sinokor-oil-tankers-strait-hormuz-shipping-iran.html",
+              "date": "2026-11-01T10:02:30.000Z",
+              "kind": "feature",
+              "summary": "South Korea’s Sinokor controls about half the tanker transits through the Strait of Hormuz, benefiting from a big bet just before the war in Iran started.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true
+            }
+          ],
+          "thread": "t2ogxay"
+        },
+        {
+          "id": "sruvxud",
+          "headline": "Beijing ramps up maritime patrols around Taiwan, prompting Taipei to shadow ships",
+          "url": "https://www.scmp.com/news/china/politics/article/3372875/beijing-ramps-maritime-patrols-around-taiwan-prompting-taipei-shadow-ships",
+          "source": "scmp",
+          "date": "2026-11-01T07:32:10.000Z",
+          "relevance": "medium",
+          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/01/1f8285da-21bb-4084-ab63-c93b53ec29e7_278904ee.jpg?itok=Yh7zgjjh&v=1793518323",
+          "why": "The South China Morning Post reports that Beijing has stepped up coastguard patrols around Taiwan, from its eastern approaches to waters near Quemoy and Dongsha Island, and Taipei is shadowing the ships. India is affected only if shipping or trade through these waters is disturbed.",
+          "implications": [
+            "The reports describe patrols and shadowing only, with no attacks or disruption to commercial shipping. Any effect on India would therefore depend on whether the pressure later interferes with merchant vessels or port access.",
+            "If shipping insurers or carriers see these waters as riskier, freight costs and delivery times for Indian importers of electronics and components from East Asia could rise. This is an inference, not something the reports state."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-01T16:02:10.942Z",
+            "tier": "quick",
+            "primary": "escalation",
+            "complement": null,
+            "features": [
+              "armed_conflict"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "The reports describe only patrols and shadowing of ships, with no disruption to trade or shipping lanes. Any channel into India, such as freight costs or component supply, is indirect and would need further escalation."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "No disruption to trade is reported, so any effect on Indian supply chains would appear only if the patrols later interfere with commercial shipping."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single outlet, the South China Morning Post, with no official statement from Beijing or Taipei quoted in the summary, so the scale of the deployment is unconfirmed."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "shipping and supply risk",
+                "effect": "Indian importers of East Asian electronics could face higher freight or insurance costs if the patrols begin to disrupt commercial shipping, though no such disruption is reported.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Any report of Chinese coastguard vessels stopping, boarding or blocking merchant ships near Taiwan or its outlying islands",
+                "why": "It would show the pressure moving from naval posturing to interference with commercial traffic, which is the route by which India would be affected.",
+                "when": "",
+                "where": "Taiwan's coastguard statements"
+              }
+            ],
+            "context": [
+              "India imports many electronic goods and components from East Asia, and much of that cargo passes through the seas around Taiwan. Sustained tension there can therefore matter to Indian supply chains even without any fighting."
+            ],
+            "terms": [],
+            "frameworks": {
+              "escalation": {
+                "move": "none",
+                "rung": 3,
+                "current_rung": 3,
+                "previous_rung": null,
+                "development": "Beijing has widened its coastguard patrols around Taiwan, from the eastern approaches to waters near Quemoy and Dongsha Island, and Taipei is shadowing the ships.",
+                "evidence": "The reports describe patrols and shadowing only, with no strikes or attacks. This is continued maritime posturing, so the war stays at the level of mobilisation and posturing.",
+                "next_signals": [
+                  {
+                    "rung": 4,
+                    "signal": "Chinese and Taiwanese vessels exchange fire, or one side uses force against the other's ship, such as ramming or firing on it."
+                  },
+                  {
+                    "rung": 5,
+                    "signal": "Repeated armed attacks over several days, rather than a single incident, are reported between the two sides' forces."
+                  }
+                ],
+                "india_channels": [
+                  "shipping",
+                  "trade"
+                ],
+                "conflict": "w594piu",
+                "applied": "none",
+                "from": 3
+              }
+            }
+          },
+          "conflict": "w594piu",
+          "place": {
+            "name": "Quemoy",
+            "country": "Taiwan",
+            "lat": 24.44,
+            "lon": 118.38,
+            "involves": [
+              "China"
+            ]
+          },
+          "reports": [
+            {
+              "source": "scmp",
+              "headline": "Beijing ramps up maritime patrols around Taiwan, prompting Taipei to shadow ships",
+              "url": "https://www.scmp.com/news/china/politics/article/3372875/beijing-ramps-maritime-patrols-around-taiwan-prompting-taipei-shadow-ships",
+              "date": "2026-11-01T07:32:10.000Z",
+              "kind": "hard",
+              "summary": "Beijing has stepped up its maritime presence around Taiwan, deploying coastguard patrols from the island’s eastern approaches to waters near Quemoy and remote Dongsha Island.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/01/1f8285da-21bb-4084-ab63-c93b53ec29e7_278904ee.jpg?itok=Yh7zgjjh&v=1793518323"
+            }
+          ],
+          "thread": "tny4upw"
+        },
         {
           "id": "s1e5y0kt",
           "headline": "Black Sea shipping under growing threats as drones hit container ships",
@@ -38945,10 +39453,73 @@
               "summaryV": 3,
               "lede": "Indian security personnel carrying batons and shields and accompanied by riot control vehicles surrounded the site of a planned opposition ⁠protest in Delhi on Sunday that is set to demand the resignation of the country’s election chief over a controversial revision of voter lists.",
               "image": "https://i.guim.co.uk/img/media/d60e9fd994f652f80f1c66f36e90440bb9f71ccd/1155_169_4342_3473/master/4342.jpg?width=700&quality=85&auto=format&fit=max&s=49856399084c9dd5837f29d9d6948741"
+            },
+            {
+              "source": "france24",
+              "headline": "Indian opposition parties stage mega rally seeking election chief’s resignation",
+              "url": "https://www.france24.com/en/asia-pacific/20261101-india-tightens-security-as-opposition-holds-mega-rally-demanding-election-chief-s-resignation",
+              "date": "2026-11-01T06:24:17.000Z",
+              "kind": "hard",
+              "summary": "Tens of thousands of demonstrators on Sunday joined a protest in New Delhi called by Indian opposition leader Rahul Gandhi and backed by the youth “Cockroach” movement amid tight security.",
+              "summaryV": 3,
+              "image": "https://s.france24.com/media/display/2e7f6500-d5d8-11f1-ac7a-1beafce15fea/w:1024/p:16x9/AP26305338577567.jpg"
+            },
+            {
+              "source": "scmp",
+              "headline": "Indian opposition unites to demand Modi electoral chief’s resignation",
+              "url": "https://www.scmp.com/news/asia/south-asia/article/3372886/indian-opposition-unites-demand-modi-electoral-chiefs-resignation",
+              "date": "2026-11-01T10:13:07.000Z",
+              "kind": "hard",
+              "summary": "Thousands protested in Delhi on Sunday to demand the resignation of India’s election chief over a revision of voter lists, the latest in more than a month of ‌opposition demonstrations challenging Prime Minister Narendra Modi.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/01/84858078-8b23-475f-b1d8-7638e7012cfb_2ab7e6d9.jpg?itok=9xBSGsr_&v=1793527984"
+            },
+            {
+              "source": "aljazeera",
+              "headline": "Thousands rally in New Delhi to demand India’s election chief resign",
+              "url": "https://www.aljazeera.com/news/2026/11/1/thousands-rally-in-delhi-demanding-indias-election-chief-resign",
+              "date": "2026-11-01T11:26:08.000Z",
+              "kind": "breaking",
+              "summary": "Hundreds of police, some carrying batons and shields, are deployed around the rally site.",
+              "summaryV": 3
             }
           ],
           "finChecked": true,
           "thread": "t1kqejni"
+        },
+        {
+          "id": "s1xaf5pc",
+          "headline": "Armour vs altitude: India’s light tank dilemma along China border",
+          "url": "https://www.scmp.com/week-asia/politics/article/3372762/armour-vs-altitude-indias-light-tank-dilemma-along-china-border",
+          "source": "scmp",
+          "date": "2026-11-01T08:00:19.000Z",
+          "relevance": "medium",
+          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/30/7e265750-1f84-4a3a-8fef-02821ffe5852_d1c460de.jpg?itok=47oz5ZfJ&v=1793358957",
+          "why": "",
+          "implications": [],
+          "place": {
+            "name": "Ladakh",
+            "country": "India",
+            "lat": 34.15,
+            "lon": 77.58,
+            "involves": [
+              "China"
+            ]
+          },
+          "reports": [
+            {
+              "source": "scmp",
+              "headline": "Armour vs altitude: India’s light tank dilemma along China border",
+              "url": "https://www.scmp.com/week-asia/politics/article/3372762/armour-vs-altitude-indias-light-tank-dilemma-along-china-border",
+              "date": "2026-11-01T08:00:19.000Z",
+              "kind": "feature",
+              "summary": "India’s new high-altitude combat tank was designed to go where its heavier armoured fighting vehicles cannot: the thin mountain air, narrow roads and small bridges along its disputed border with China.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/30/7e265750-1f84-4a3a-8fef-02821ffe5852_d1c460de.jpg?itok=47oz5ZfJ&v=1793358957"
+            }
+          ],
+          "finChecked": true,
+          "thread": "t1rt9t5i"
         },
         {
           "id": "sopfvfr",
@@ -47172,17 +47743,14 @@
   "source": "BBC News & The Guardian & NPR & Al Jazeera & MercoPress & ABC News & The New York Times & CNBC & CBS News & DW & France 24 & Africanews & South China Morning Post & The Hindu & Mint & The Indian Express",
   "lastRun": {
     "filter": {
-      "judged": 48,
-      "kept": 3,
+      "judged": 120,
+      "kept": 11,
       "guarded": 0
     },
     "health": {
       "day": "2026-11-01",
-      "newStories24h": 8,
-      "keepRate2d": 0.088,
-      "alarm": [
-        "only 8 new stories in 24 hours (expected 10+)"
-      ]
+      "newStories24h": 10,
+      "keepRate2d": 0.089
     },
     "wars": {
       "linked": 0,
@@ -47195,17 +47763,27 @@
       "waiting": 0
     },
     "skipped": {
-      "since": "2026-11-01T00:15:40.380Z",
+      "since": "2026-11-01T06:26:42.978Z",
       "counts": {
-        "section": 12
+        "section": 20,
+        "live_blog": 3,
+        "podcast_quiz_gallery": 1
       },
       "examples": {
         "section": [
-          "Roger’s cynical gift basket for El-Sayed on his birthday",
-          "France protests enter third week as police fire tear gas",
-          "What we know about latest efforts to end US war on Iran",
-          "India’s largest dam planned to counter China faces Indigenous revolt",
-          "The murder of Javits Frimpong, a bullied schoolboy in The Bronx"
+          "Spill from vandalised home oil tank kills 13 birds",
+          "One person killed in shooting outside Magic City Classic football game in Alabama",
+          "Dramatic helicopter rescue saves climbers stranded on Italian cliff",
+          "JERUSALEM DAILY: Israel continues siege and arrests in Hebron",
+          "Photos: Thousands join India’s opposition rally against election chief"
+        ],
+        "live_blog": [
+          "John Healey says UK apology over historic role in slave trade won’t lead to financial reparations – as it happened",
+          "US midterms live: Trump, Democrats in last-ditch efforts before polls",
+          "Liverpool vs Arsenal live: Premier League"
+        ],
+        "podcast_quiz_gallery": [
+          "The week in pictures: Lula's victory, Israeli elections and Spain train crash"
         ]
       }
     },
@@ -47213,21 +47791,21 @@
       "moved": 0,
       "checked": 1
     },
-    "analysed": 48,
-    "added": 1,
-    "merged": 2,
-    "rejected": 45,
+    "analysed": 120,
+    "added": 6,
+    "merged": 5,
+    "rejected": 109,
     "failedBatches": 0,
     "feeds": {
       "bbc": {
         "feedsOk": 6,
         "feedsFailed": 0,
-        "items": 161
+        "items": 160
       },
       "guardian": {
         "feedsOk": 7,
         "feedsFailed": 0,
-        "items": 196
+        "items": 198
       },
       "npr": {
         "feedsOk": 4,
@@ -47252,7 +47830,7 @@
       "nyt": {
         "feedsOk": 5,
         "feedsFailed": 0,
-        "items": 177
+        "items": 178
       },
       "cnbc": {
         "feedsOk": 3,
@@ -47262,7 +47840,7 @@
       "cbs": {
         "feedsOk": 2,
         "feedsFailed": 0,
-        "items": 47
+        "items": 46
       },
       "dw": {
         "feedsOk": 3,
@@ -47282,22 +47860,22 @@
       "scmp": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 141
+        "items": 140
       }
     },
     "shareImages": {
-      "tried": 0,
-      "found": 0,
+      "tried": 2,
+      "found": 1,
       "summaries": 0
     },
     "threads": {
-      "assigned": 1,
+      "assigned": 6,
       "created": 0,
       "failedBatches": 0
     },
     "summaries": {
       "written": 0,
-      "due": 1
+      "due": 6
     },
     "kinds": {
       "labelled": 0,
@@ -47306,57 +47884,48 @@
     },
     "frames": {
       "done": 0,
-      "waiting": 4,
+      "waiting": 5,
       "failedBatches": 0,
       "budgetStopped": true
     },
     "stats": {
       "searched": 8,
       "found": 0,
-      "reused": 2,
+      "reused": 0,
       "none": 0,
       "failed": 0,
       "proposed": 0,
       "droppedPoints": 0,
       "pagesFetched": 0,
-      "samples": [
-        {
-          "headline": "Live: Wall Street retreats as oil prices continue to rise, ASX set to slip",
-          "result": "reused saved series"
-        },
-        {
-          "headline": "Two 'unauthorised' oil tankers struck in Strait of Hormuz, Iran says",
-          "result": "reused saved series"
-        }
-      ],
+      "samples": [],
       "budgetStopped": true
     },
     "models": {
       "filter": {
         "model": "claude-haiku-5-5",
-        "calls": 7,
-        "inputTokens": 20877,
-        "outputTokens": 6550,
-        "cost": 0.0053
+        "calls": 12,
+        "inputTokens": 40191,
+        "outputTokens": 17775,
+        "cost": 0.0128
       },
       "analysis_quick": {
         "model": "claude-sonnet-5-5",
-        "calls": 1,
-        "inputTokens": 2714,
-        "outputTokens": 2774,
-        "cost": 0.0332
+        "calls": 4,
+        "inputTokens": 12115,
+        "outputTokens": 9987,
+        "cost": 0.1241
       },
       "threads": {
         "model": "claude-sonnet-5-5",
         "calls": 1,
-        "inputTokens": 8779,
-        "outputTokens": 27,
-        "cost": 0.0178
+        "inputTokens": 9433,
+        "outputTokens": 159,
+        "cost": 0.0205
       }
     },
     "spend": {
-      "thisDesk": 0.0564,
-      "today": 5.3698,
+      "thisDesk": 0.1575,
+      "today": 5.6028,
       "cap": 6
     }
   },
