@@ -375,6 +375,8 @@ footer .disc{display:block;margin:0 0 4px}
 .dm-node.st-closed{border-color:var(--k-breaking)!important}.dm-node.st-partial{border-color:var(--s-manufacturing)!important}.dm-node.st-open{border-color:var(--ok)!important}
 .dm-node b{display:block;font-size:15px;margin:2px 0 6px}
 .dm-node .fw-chip,.dm-cause .fw-chip{margin:6px 0 0}
+.fw-chip{max-width:100%;white-space:normal;text-align:left}
+.dm-asof{color:var(--ink-3);font-size:12px;margin-top:6px}
 .dm-flow{display:grid;gap:1px;padding:6px 0;border-top:1px solid var(--rule)}
 .dm-flow:first-of-type{border-top:0}
 .dm-flow.inf b::after{content:" · may";font-weight:500;color:var(--ink-3)}
@@ -1410,8 +1412,8 @@ var FW_RENDER={
     if(f.breaks_if) s.appendChild(el("p","fw-next","Breaks if: "+f.breaks_if)); },
   disruption_map:function(f,s){ var row=el("div","fw-dmap");
     if(f.cause){ var c=el("div","dm-cause"); c.appendChild(el("div","k","Cause")); c.appendChild(el("div",null,f.cause.text)); c.appendChild(chip(cap(f.cause.status),"st-"+f.cause.status)); row.appendChild(c); }
-    var n=el("div","dm-node st-"+f.node.status); n.appendChild(el("div","k",cap(f.node.type||"site"))); n.appendChild(el("b",null,f.node.name)); n.appendChild(chip(cap(f.node.status)+(f.node.as_of?" · "+f.node.as_of:""),"st-"+f.node.status)); row.appendChild(n);
-    var fl=el("div","dm-flows"); fl.appendChild(el("div","k","What runs through it to India")); (f.flows||[]).forEach(function(x){ var d=el("div","dm-flow"+(x.basis==="inferred"?" inf":"")); d.appendChild(el("b",null,cap(x.flow))); d.appendChild(el("span",null,x.india_link)); fl.appendChild(d); }); if(!(f.flows||[]).length) fl.appendChild(el("span","note","No India-linked flow named in the reports")); row.appendChild(fl);
+    var n=el("div","dm-node st-"+f.node.status); n.appendChild(el("div","k",cap(f.node.type||"site"))); n.appendChild(el("b",null,f.node.name)); n.appendChild(chip(f.node.status==="unknown"?"Status not reported":cap(f.node.status),"st-"+f.node.status)); if(f.node.as_of && f.node.as_of.length<=24) n.appendChild(el("div","dm-asof","As of "+f.node.as_of)); row.appendChild(n);
+    var fl=el("div","dm-flows"); fl.appendChild(el("div","k","What runs through it to India")); (f.flows||[]).forEach(function(x){ var d=el("div","dm-flow"+(x.basis==="inferred"?" inf":"")); d.appendChild(el("b",null,cap(x.flow))); d.appendChild(el("span",null,x.india_link)); fl.appendChild(d); }); if(!(f.flows||[]).length) fl.appendChild(el("span","note","No flow to India reported yet")); row.appendChild(fl);
     s.appendChild(row);
     var meta=[]; if(f.alternatives&&f.alternatives.length) meta.push("Alternatives: "+f.alternatives.join(", ")); meta.push("Expected duration: "+(f.duration||"not reported")); s.appendChild(el("p","fw-next",meta.join(" · "))); },
   trade_flow:function(f,s){ var w=el("div","fw-trade"), L=el("div","tf-col"), M=el("div","tf-mid"), R=el("div","tf-col");
