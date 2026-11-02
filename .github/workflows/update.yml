@@ -27,7 +27,7 @@ jobs:
         run: node scripts/update.mjs
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          DAILY_BUDGET_USD: "6"        # hard daily spending cap in US$ (India day); change here
+          DAILY_BUDGET_USD: "4"        # hard daily spending cap in US$ (India day); set 3 Nov 2026 after the YC submission
           CALENDAR_JOB: "off"          # "on" to collect dates for the calendar again
 
       - name: Save results
