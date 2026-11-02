@@ -2,7 +2,7 @@
   "schema": 4,
   "region": "India",
   "since": "2026-10-02",
-  "updatedAt": "2026-11-02T06:29:56.190Z",
+  "updatedAt": "2026-11-02T19:28:48.512Z",
   "sectors": [
     {
       "id": "energy",
@@ -15,103 +15,161 @@
           "source": "aljazeera",
           "date": "2026-11-01T13:02:10.000Z",
           "relevance": "high",
-          "why": "Iran says it could reopen the Strait of Hormuz in a shorter period if its conditions are met, while US President Donald Trump says the US still has targets to 'take care of'. India depends on Gulf shipping for energy.",
+          "why": "Iran says it is holding intensive indirect talks with the United States to avert renewed US strikes, which President Trump has threatened after this week's midterm elections. The outcome bears on Gulf oil supplies and on Indians living in the region.",
           "implications": [
-            "The report does not set out Iran's conditions, so the timing of any return to normal shipping through the strait remains uncertain for Indian importers and refiners.",
-            "Talks running alongside threats of war mean the situation could move either way, and prolonged disruption could raise costs for Indian refiners and fuel distributors."
+            "Oil prices fell on Monday on reports that both sides are pursuing diplomacy, which could ease cost pressure on Indian refiners if talks hold. Renewed fighting could reverse that fall.",
+            "Gulf states are bracing for a possible US attack on Iran after the midterms, which raises concern for the large Indian workforce living and working in those countries.",
+            "Iran has warned that any renewed war could last longer than the previous round of fighting, which could prolong disruption to the shipping and energy flows that India depends on.",
+            "China has told a senior Iranian official in Beijing that armed conflict is not the way out, adding outside diplomatic pressure for a political settlement."
           ],
           "analysis": {
             "v": 3,
-            "at": "2026-11-01T16:03:39.496Z",
-            "tier": "quick",
-            "primary": "disruption_map",
-            "complement": null,
+            "at": "2026-11-02T19:28:23.759Z",
+            "tier": "deep",
+            "primary": "escalation",
+            "complement": "scenarios",
             "features": [
-              "disruption",
               "armed_conflict",
+              "fast_moving",
               "pending_outcome"
             ],
             "exposure": {
               "level": "high",
-              "reason": "The strait could affect crude oil and LPG shipments to India, which are household essentials and top imports. This channel is inferred, because the report itself does not name specific cargoes."
+              "reason": "The war threatens oil and gas supplies from the Gulf, which is India's main source of crude imports. It also threatens the safety of Indians living in Gulf states."
             },
             "horizon": {
               "value": "weeks",
-              "reason": "The timing depends on whether diplomacy produces a reopening and on how quickly any change in shipping and prices passes through to Indian fuel markets."
+              "reason": "President Trump has tied possible renewed strikes to the period after this week's midterm elections, so the direction of the war should become clearer within weeks."
             },
             "confidence": {
-              "level": "low",
-              "reason": "This rests on a single Al Jazeera report, and Iran's conditions, the current state of the strait and the outcome of talks are not confirmed."
+              "level": "medium",
+              "reason": "ABC News, France 24, CBS News and others report Iran's statements, but progress in the indirect talks rests on Iranian claims that Washington has not confirmed."
             },
-            "outlets": 1,
+            "outlets": 8,
             "affected": [
               {
                 "group": "Fuel & LPG users",
-                "direction": "unclear",
-                "what": "fuel and LPG supply costs",
-                "effect": "If shipping through Hormuz stays restricted, import costs for crude and gas could rise and may eventually feed into petrol, diesel and cooking gas prices; a reopening could ease this.",
+                "direction": "mixed",
+                "what": "fuel import costs",
+                "effect": "Diplomacy that lowers crude prices could ease refiners' costs, while renewed US strikes could raise crude prices and feed through to petrol, diesel and LPG prices.",
                 "basis": "inferred"
               },
               {
-                "group": "Importers & traders",
+                "group": "Gulf & overseas workers and families",
                 "direction": "unclear",
-                "what": "shipping costs and delays",
-                "effect": "Uncertainty over passage through the strait could raise freight and insurance costs for traders whose cargoes pass through the Gulf.",
+                "what": "safety in Gulf states",
+                "effect": "Gulf states are bracing for a possible US attack on Iran, which could put Indian workers there, and the remittances their families rely on, at risk.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Government finances",
+                "direction": "mixed",
+                "what": "oil import bill",
+                "effect": "Swings in crude prices driven by war or peace could raise or lower India's oil import bill and the government's fuel-related revenue and subsidy pressures.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "Iran setting out the conditions under which it would reopen the Strait of Hormuz, or announcing a reopening",
-                "why": "It would show whether shipping through the strait could resume and how soon.",
+                "what": "Whether the United States launches new strikes on Iran after the midterm elections",
+                "why": "New strikes would show that diplomacy has failed and that the war is resuming.",
+                "when": "after the midterms",
+                "where": ""
+              },
+              {
+                "what": "A public US statement confirming or rejecting a deal from the indirect talks with Iran",
+                "why": "Confirmation from Washington would show whether the talks Iran describes are producing real progress.",
                 "when": "",
                 "where": ""
               },
               {
-                "what": "Further US statements or action on the targets Trump says the US still has to 'take care of'",
-                "why": "It would show whether talks are holding or tensions are escalating toward war.",
-                "when": "",
+                "what": "The US midterm elections, which President Trump has linked to decisions on Iran",
+                "why": "The election marks the point after which President Trump has said further strikes may follow.",
+                "when": "this week",
                 "where": ""
               }
             ],
             "context": [
-              "India imports most of its crude oil, and much of its crude and liquefied petroleum gas (LPG) comes from Gulf producers whose cargoes ship through Hormuz.",
-              "Disruption to a major shipping route usually raises oil prices, freight rates and insurance costs, even before physical supplies fall."
+              "India imports most of the crude oil it uses, and a large share comes from Gulf producers whose tankers pass through the Strait of Hormuz.",
+              "Millions of Indians work in Gulf states, and the money they send home is an important source of income for families in states such as Kerala.",
+              "Oil prices usually react to signs of war or peace in the Gulf before any physical change in supply, so diplomatic news can quickly change what India pays for imported fuel."
             ],
             "terms": [
               {
-                "term": "Hormuz",
-                "meaning": "The Strait of Hormuz is a narrow waterway linking the Gulf to the open sea, through which a large share of the world's oil exports passes."
+                "term": "midterms",
+                "meaning": "The US midterm elections are national congressional elections held halfway through a president's four-year term."
+              },
+              {
+                "term": "indirect talks",
+                "meaning": "Indirect talks are negotiations in which the two sides pass messages through mediators instead of meeting face to face."
               }
             ],
             "frameworks": {
-              "disruption_map": {
-                "node": {
-                  "name": "Strait of Hormuz",
-                  "type": "strait",
-                  "status": "closed",
-                  "as_of": "1 Nov 2026"
-                },
-                "cause": {
-                  "text": "It is not yet known why the strait is closed.",
-                  "status": "claimed"
-                },
-                "flows": [
+              "escalation": {
+                "move": "none",
+                "rung": 6,
+                "current_rung": 6,
+                "previous_rung": null,
+                "development": "This story adds intensive indirect US–Iran talks to avert renewed war, alongside President Trump's threat to strike more targets and Iran's warning that a new war could last longer.",
+                "evidence": "No new attack and no ceasefire in force is reported. Talks and threats do not change the war's level, so it stays at strikes on critical infrastructure or third countries.",
+                "next_signals": [
                   {
-                    "flow": "Crude",
-                    "india_link": "A large share of the crude oil India imports from the Gulf is shipped through the Strait of Hormuz, so disruption there can raise India's fuel import costs.",
-                    "basis": "inferred"
+                    "rung": 7,
+                    "signal": "US forces launch a broad campaign against Iran and Iran retaliates across the region, amounting to full-scale war."
                   },
                   {
-                    "flow": "LNG",
-                    "india_link": "Much of India's liquefied natural gas from Qatar and the UAE passes through the strait, supplying power plants, fertiliser makers and city gas networks.",
-                    "basis": "inferred"
+                    "rung": 5,
+                    "signal": "Iranian attacks on Gulf states and energy routes stop, while US and Iranian strikes on each other's military targets continue."
                   }
                 ],
-                "alternatives": [],
-                "duration": "not reported"
+                "india_channels": [
+                  "oil",
+                  "shipping",
+                  "remittances",
+                  "diaspora safety"
+                ],
+                "conflict": "w1ye2krf",
+                "applied": "none",
+                "from": 6
+              },
+              "scenarios": {
+                "question": "Will the indirect US–Iran talks produce a deal before President Trump decides whether to renew strikes after the midterm elections?",
+                "scenarios": [
+                  {
+                    "name": "Negotiated deal ends war",
+                    "what": "The indirect talks yield an agreement to end the war. Iran says that outcome now depends on Washington's decision.",
+                    "signal": "Washington and Tehran both publicly confirm the terms of an agreement.",
+                    "india_effect": "A deal could calm oil prices and shipping risks, which may ease pressure on India's import bill and on Indians working in the Gulf."
+                  },
+                  {
+                    "name": "Renewed US strikes",
+                    "what": "President Trump follows through on his threat to strike more targets after the midterms. Iran has warned that a new round could last longer than the last.",
+                    "signal": "US strikes on Iranian targets are reported after the midterm elections.",
+                    "india_effect": "Renewed fighting could push up crude prices and disrupt Gulf shipping, raising costs for India and risks for Indian workers in Gulf states."
+                  },
+                  {
+                    "name": "Talks drag on",
+                    "what": "Both sides keep diplomacy alive while trading threats, which leaves the war unresolved.",
+                    "signal": "Talks continue past the midterms with neither a deal nor fresh strikes.",
+                    "india_effect": "Prolonged uncertainty could keep oil prices volatile and Gulf shipping risks elevated for Indian importers and refiners."
+                  }
+                ]
               }
-            }
+            },
+            "reading": [
+              {
+                "headline": "How a Little-Known Company Dominated the Persian Gulf Oil Trade",
+                "url": "https://www.nytimes.com/2026/11/01/business/sinokor-oil-tankers-strait-hormuz-shipping-iran.html",
+                "source": "nyt",
+                "date": "2026-11-01T10:02:30.000Z"
+              },
+              {
+                "headline": "Troubled waters: life during wartime for Iranians on the strait of Hormuz",
+                "url": "https://www.theguardian.com/artanddesign/2026/oct/21/strait-of-hormuz-life-amid-wartime-iran",
+                "source": "guardian",
+                "date": "2026-10-21T05:00:02.000Z"
+              }
+            ]
           },
           "place": {
             "name": "Strait of Hormuz",
@@ -153,6 +211,63 @@
               "summary": "Iran warned on Sunday that any renewed war with the United States could last longer than the previous round of fighting, after US President Donald Trump said he still had to “take care” of more targets.",
               "summaryV": 3,
               "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/02/6c04b72e-d85c-4a12-9e97-adf0986e7c19_4e6cdecd.jpg?itok=cpp639gY&v=1793599122"
+            },
+            {
+              "source": "scmp",
+              "headline": "Talks are the only way out, China tells Iran as US threat hangs over Middle East",
+              "url": "https://www.scmp.com/news/china/diplomacy/article/3373010/talks-are-only-way-out-china-tells-iran-us-threat-hangs-over-middle-east",
+              "date": "2026-11-02T11:45:31.000Z",
+              "kind": "hard",
+              "summary": "China’s top diplomat has again stressed the need for a political settlement to strife in the Middle East, telling a senior Iranian official in Beijing on Monday that armed conflict was not the way out.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/02/d9475732-e119-4ff4-932e-e74a4f12823d_697be5f4.jpg?itok=FMX9DEgt&v=1793619930"
+            },
+            {
+              "source": "npr",
+              "headline": "Haley Stevens backs Mike Rogers. And, Gulf states brace for potential attack on Iran",
+              "url": "https://www.npr.org/2026/11/02/g-s1-151215/up-first-newsletter-michigan-senate-iran-war-supreme-court-colorado-catholic-church",
+              "date": "2026-11-02T12:19:54.000Z",
+              "kind": "hard",
+              "summary": "Democrats in Michigan are considering their options after Haley Stevens endorsed GOP candidate Mike Rogers for Senate. And the Gulf states are bracing for a possible U.S. attack on Iran after the midterms.",
+              "summaryV": 3
+            },
+            {
+              "source": "dw",
+              "headline": "What might Trump have planned for Iran following the midterm election?",
+              "url": "https://www.dw.com/en/what-might-trump-have-planned-for-iran-following-the-midterm-election/a-79831816",
+              "date": "2026-11-02T15:41:00.000Z",
+              "kind": "feature",
+              "summary": "While the US midterms could open a window for diplomacy with Iran, they could also unleash a new military escalation. DW spoke with analysts to identify eight factors that could tip the balance toward war or peace.",
+              "summaryV": 3
+            },
+            {
+              "source": "abc",
+              "headline": "Iran says 'intensive' negotiations underway with US to avert war",
+              "url": "https://www.abc.net.au/news/2026-11-03/iran-negotiations-us-intensive-war/107339208",
+              "date": "2026-11-02T17:27:10.000Z",
+              "kind": "hard",
+              "summary": "The renewed diplomatic push comes despite US President Donald Trump threatening to renew strikes on Iran after this week's midterm elections.",
+              "summaryV": 3,
+              "image": "https://live-production.wcms.abc-cdn.net.au/180e3c71413ff57a069a648e3bd356ad?impolicy=wcms_crop_resize&cropH=2813&cropW=5000&xPos=0&yPos=260&width=862&height=485"
+            },
+            {
+              "source": "france24",
+              "headline": "Iran engages US in 'intensive' negotiations to avert fresh war outbreak",
+              "url": "https://www.france24.com/en/middle-east/20261102-iran-engages-us-in-intensive-negotiations-to-avert-fresh-war-outbreak",
+              "date": "2026-11-02T17:42:22.000Z",
+              "kind": "breaking",
+              "summary": "Tehran on Monday said that the country was holding \"intensive\" indirect talks with Washington to avoid a fresh round of US attacks on Iran ahead of the US midterm elections this week.",
+              "summaryV": 3,
+              "image": "https://s.france24.com/media/display/18a41438-d6dc-11f1-b1cd-1beafce15fea/w:1024/p:16x9/2026-10-17T081002Z-2072440926-RC2W4OA50VW1-RTRMADP-3-IRAQ-CONFERENCE-OIC.jpg"
+            },
+            {
+              "source": "cbs",
+              "headline": "Iran says \"ball is in the U.S. court\" on any deal to end the war",
+              "url": "https://www.cbsnews.com/live-updates/iran-war-us-trump-negotiations-midterms/",
+              "date": "2026-11-02T19:03:29.000Z",
+              "kind": "hard",
+              "summary": "Trump must decide whether to end the war or return to it, Iran says, as both sides trade threats, but keep diplomacy alive.",
+              "summaryV": 3
             }
           ],
           "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/14405199-1793530960.jpg?resize=1920%2C1440",
@@ -276,7 +391,1052 @@
                 "checkedAt": "2026-10-13T23:16:50.395Z"
               }
             ]
-          }
+          },
+          "conflict": "w1ye2krf"
+        },
+        {
+          "id": "s12xfnju",
+          "headline": "Iran proposes two-day plan to reopen Strait of Hormuz",
+          "url": "http://www.africanews.com/2026/11/02/iran-proposes-two-day-plan-to-reopen-strait-of-hormuz/",
+          "source": "africanews",
+          "date": "2026-11-02T09:57:18.000Z",
+          "relevance": "high",
+          "why": "Iran says it would reopen the Strait of Hormuz within two days as part of a deal with the United States, shortening its earlier seven-day plan. The strait carries the Gulf oil and gas on which India heavily depends.",
+          "implications": [
+            "A faster reopening could shorten the period in which tankers bound for India face disruption, which may ease freight and insurance costs for Indian refiners.",
+            "The offer depends on a wider US–Iran deal that is still being negotiated through mediators in Qatar, so any reopening remains conditional on an agreement being reached.",
+            "Iranian officials are preparing for all-out war even while they negotiate, so the same shipping lane could face further disruption if the talks fail.",
+            "India's liquefied natural gas (LNG) imports from Qatar also pass through the strait, so a reopening could matter for city gas suppliers and fertiliser producers as well as fuel users."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-02T19:28:23.760Z",
+            "tier": "deep",
+            "primary": "disruption_map",
+            "complement": "escalation",
+            "features": [
+              "disruption",
+              "armed_conflict",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "high",
+              "reason": "The strait is the main route for India's crude oil, liquefied petroleum gas (LPG) and LNG imports from the Gulf, so its status directly affects household fuel and cooking gas supplies."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "A reopening requires a US–Iran deal to be concluded first, after which Iran says its plan could be carried out within two days."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "Africanews, Al Jazeera and The New York Times report on-record statements by Iran's foreign minister, but the plan's details and any US acceptance remain unconfirmed."
+            },
+            "outlets": 3,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "down",
+                "what": "fuel supply risk",
+                "effect": "If the strait reopens under a deal, steadier tanker flows could ease supply worries and the price pressure on petrol, diesel and LPG in India.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Importers & traders",
+                "direction": "down",
+                "what": "shipping and insurance costs",
+                "effect": "A reopened strait could lower the war-risk insurance and freight costs that Indian importers pay to move cargo through the Gulf.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Government finances",
+                "direction": "down",
+                "what": "oil import bill",
+                "effect": "Smoother energy flows could reduce pressure on India's oil import bill and on the government's fuel-related spending.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "A US response to Iran's two-day plan to reopen the Strait of Hormuz",
+                "why": "Acceptance by Washington would show whether the plan can move from proposal to implementation.",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "The outcome of the Iranian delegation's talks with mediators in Qatar",
+                "why": "An agreement in Qatar would be the condition that triggers Iran's offer to reopen the strait.",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "Tanker traffic resuming through the Strait of Hormuz",
+                "why": "Resumed transits would show whether the reopening has actually happened, not just been promised.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "The Strait of Hormuz is the narrow sea passage out of the Gulf, and much of the oil exported by Saudi Arabia, Iraq, the United Arab Emirates and Kuwait passes through it.",
+              "India imports most of its crude oil and much of its cooking gas from Gulf producers, so prolonged disruption at the strait raises costs and supply risks for Indian refiners.",
+              "Qatar has often acted as a go-between for Washington and Tehran, hosting indirect contacts when the two governments do not negotiate directly."
+            ],
+            "terms": [
+              {
+                "term": "Strait of Hormuz",
+                "meaning": "The Strait of Hormuz is the narrow channel between Iran and Oman through which tankers leave the Gulf for world markets."
+              },
+              {
+                "term": "mediators",
+                "meaning": "Mediators are third parties who carry proposals between the two sides when they do not negotiate directly."
+              }
+            ],
+            "frameworks": {
+              "disruption_map": {
+                "node": {
+                  "name": "Strait of Hormuz",
+                  "type": "strait",
+                  "status": "closed",
+                  "as_of": "2 Nov 2026"
+                },
+                "cause": {
+                  "text": "Shipping through the strait has been disrupted during the US–Iran war, and Iran is offering to reopen it only as part of a deal with the United States.",
+                  "status": "confirmed"
+                },
+                "flows": [
+                  {
+                    "flow": "crude",
+                    "india_link": "Oil shipped from Gulf producers through the strait supplies a large share of the crude that Indian refiners process into petrol and diesel.",
+                    "basis": "reported"
+                  },
+                  {
+                    "flow": "LNG",
+                    "india_link": "Liquefied natural gas from Qatar moves through the strait to India, where city gas networks, power plants and fertiliser makers depend on it.",
+                    "basis": "reported"
+                  },
+                  {
+                    "flow": "other",
+                    "india_link": "Liquefied petroleum gas from Gulf producers may also move through the strait, and Indian households depend on it for cooking.",
+                    "basis": "inferred"
+                  }
+                ],
+                "alternatives": [],
+                "duration": "not reported"
+              },
+              "escalation": {
+                "move": "none",
+                "rung": 6,
+                "current_rung": 6,
+                "previous_rung": null,
+                "development": "Iran proposes a condensed two-day plan to reopen the Strait of Hormuz under a US deal, while its officials also prepare for all-out war.",
+                "evidence": "A proposal does not move the war down, and no new attack is reported. The war therefore stays at strikes on critical infrastructure or third countries.",
+                "next_signals": [
+                  {
+                    "rung": 7,
+                    "signal": "Talks collapse and the United States and Iran enter all-out war across the region."
+                  },
+                  {
+                    "rung": 5,
+                    "signal": "The strait reopens and Iranian attacks on Gulf states stop, while US and Iranian strikes on each other continue."
+                  }
+                ],
+                "india_channels": [
+                  "oil",
+                  "shipping",
+                  "trade"
+                ],
+                "conflict": "w1ye2krf",
+                "applied": "none",
+                "from": 6
+              }
+            }
+          },
+          "place": {
+            "name": "Strait of Hormuz",
+            "country": "Iran",
+            "lat": 26.6,
+            "lon": 56.3,
+            "involves": [
+              "Qatar",
+              "United States"
+            ]
+          },
+          "reports": [
+            {
+              "source": "africanews",
+              "headline": "Iran proposes two-day plan to reopen Strait of Hormuz",
+              "url": "http://www.africanews.com/2026/11/02/iran-proposes-two-day-plan-to-reopen-strait-of-hormuz/",
+              "date": "2026-11-02T09:57:18.000Z",
+              "kind": "hard",
+              "summary": "Iran has agreed to a \"two-day plan\" to reopen the Strait of Hormuz, shortening its earlier seven-day proposal, Iranian Foreign Minister Seyed Abbas Araghchi said on Sunday, as an Iranian delegation continues talks with mediators in Qatar.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://images.euronews.com/articles/stories/09/97/60/26/1024x538_cmsv2_83f0f765-3d11-5925-920d-37a82fa2ad8e-9976026.jpg"
+            },
+            {
+              "source": "aljazeera",
+              "headline": "Iran pushing accelerated plan for ceasefire talks with US",
+              "url": "https://www.aljazeera.com/news/2026/11/2/iran-pushing-accelerated-plan-for-ceasefire-talks-with-us",
+              "date": "2026-11-02T18:49:26.000Z",
+              "kind": "hard",
+              "summary": "Tehran says plan has been condensed and can be implemented within two days as it continues talks with mediators.",
+              "summaryV": 3
+            },
+            {
+              "source": "nyt",
+              "headline": "Iran Says It Would Reopen Strait of Hormuz in 2 Days as Part of U.S. Deal",
+              "url": "https://www.nytimes.com/2026/11/02/world/middleeast/iran-deal-strait-of-hormuz.html",
+              "date": "2026-11-02T19:01:04.000Z",
+              "kind": "hard",
+              "summary": "Iranian officials spoke of some progress in negotiating to reopen the strait, a vital oil and gas shipping lane, even as they prepare for all-out war.",
+              "summaryV": 3,
+              "image": "https://static01.nyt.com/images/2026/11/02/multimedia/02-int-Iran-Diplomacy-01-jglt/02-int-Iran-Diplomacy-01-jglt-mediumSquareAt3X.jpg"
+            }
+          ],
+          "image": "https://images.euronews.com/articles/stories/09/97/60/26/1024x538_cmsv2_83f0f765-3d11-5925-920d-37a82fa2ad8e-9976026.jpg",
+          "stats": {
+            "v": 2,
+            "at": "2026-11-02T19:24:57.422Z",
+            "series": [
+              {
+                "title": "Crude oil and condensate through the Strait of Hormuz",
+                "unit": "million barrels per day",
+                "publisher": "U.S. Energy Information Administration",
+                "points": [
+                  {
+                    "period": "2020",
+                    "value": 14.4,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2021",
+                    "value": 14.7,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2022",
+                    "value": 16.2,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2023",
+                    "value": 15.8,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2024",
+                    "value": 14.6,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "1H25",
+                    "value": 14.7,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "title": "eia.gov",
+                    "domain": "eia.gov"
+                  }
+                ],
+                "domains": [
+                  "eia.gov"
+                ],
+                "dropped": 0,
+                "why": "Both series directly measure oil volumes moving through the Strait of Hormuz, the chokepoint whose reopening the story describes and on which India's energy imports depend.",
+                "reused": true,
+                "checkedAt": "2026-10-13T23:16:50.395Z"
+              },
+              {
+                "title": "Oil flows through the Strait of Hormuz, total",
+                "unit": "million barrels per day",
+                "publisher": "U.S. Energy Information Administration",
+                "points": [
+                  {
+                    "period": "2020",
+                    "value": 19.2,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2021",
+                    "value": 19.7,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2022",
+                    "value": 21.9,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2023",
+                    "value": 21.8,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2024",
+                    "value": 20.7,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "1H25",
+                    "value": 20.9,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "title": "eia.gov",
+                    "domain": "eia.gov"
+                  }
+                ],
+                "domains": [
+                  "eia.gov"
+                ],
+                "dropped": 0,
+                "why": "Both series directly measure oil volumes moving through the Strait of Hormuz, the chokepoint whose reopening the story describes and on which India's energy imports depend.",
+                "reused": true,
+                "checkedAt": "2026-10-13T23:16:50.395Z"
+              }
+            ]
+          },
+          "conflict": "w1ye2krf",
+          "thread": "t2ogxay"
+        },
+        {
+          "id": "s5t7w58",
+          "headline": "Oil price falls amid hope of a breakthrough to end Iran war",
+          "url": "https://www.theguardian.com/business/2026/nov/02/oil-price-falls-amid-hope-of-a-breakthrough-to-end-iran-war",
+          "source": "guardian",
+          "date": "2026-11-02T17:14:23.000Z",
+          "relevance": "high",
+          "image": "https://i.guim.co.uk/img/media/5aa655482ec1b18379bdd2373abb83196044c4d5/1261_325_3461_2770/master/3461.jpg?width=700&quality=85&auto=format&fit=max&s=3c8fd88c0ea026d1f1f1dbab2e78d122",
+          "why": "Brent crude fell by more than 6% to $105.55 a barrel, its lowest in more than two weeks, on hopes of a breakthrough to end the Iran war. Lower crude prices ease India's oil import costs.",
+          "implications": [
+            "A sustained fall in crude would reduce what Indian refiners pay for imported oil, which could eventually ease pressure on petrol, diesel and cooking gas prices.",
+            "The price drop reflects hope rather than an agreement, so it could reverse quickly if talks stall or attacks on Gulf states and shipping continue."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-02T19:23:55.746Z",
+            "tier": "quick",
+            "primary": "escalation",
+            "complement": null,
+            "features": [
+              "armed_conflict",
+              "price_move",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "high",
+              "reason": "Crude oil is among India's largest imports and sets the cost of petrol, diesel and LPG, so a move in Brent reaches household fuel costs and the import bill. The fall is not yet confirmed as lasting."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Lower crude takes weeks to pass through refinery purchases and pump prices, and only if the fall lasts."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single outlet, The Guardian, with no official source cited, and the hoped-for breakthrough has not been confirmed."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "down",
+                "what": "fuel price pressure",
+                "effect": "If lower crude prices hold, refiners' costs fall, which could ease upward pressure on petrol, diesel and LPG prices.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Government finances",
+                "direction": "down",
+                "what": "oil import bill",
+                "effect": "A lasting drop in Brent would lower the cost of India's crude imports, which could ease pressure on the import bill and on fuel-related subsidies.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Whether Brent crude stays near or below $105.55 a barrel in the coming days",
+                "why": "It would show whether markets still believe a deal to end the war is close.",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "Any confirmed talks or agreement between the United States and Iran on halting attacks and reopening the Strait of Hormuz",
+                "why": "A confirmed agreement, not just hope of one, would be needed for the war to move down a rung.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "India imports most of the crude oil it uses, so global price swings feed into its import bill, inflation and the government's finances. Prices tend to react to expectations about supply through the Strait of Hormuz."
+            ],
+            "terms": [
+              {
+                "term": "Brent crude",
+                "meaning": "Brent is the international benchmark price for oil, and it guides what many Indian refiners pay for imported crude."
+              }
+            ],
+            "frameworks": {
+              "escalation": {
+                "move": "none",
+                "rung": 6,
+                "current_rung": 6,
+                "previous_rung": null,
+                "development": "Oil prices fell on hopes of a breakthrough to end the Iran war, but no ceasefire, withdrawal or end to fighting has been reported.",
+                "evidence": "Hopes of talks and a market price move do not count as de-escalation. The war stays at the level of strikes on critical infrastructure or third countries until fighting is reported to have stopped.",
+                "next_signals": [
+                  {
+                    "rung": 5,
+                    "signal": "Iranian attacks on Gulf states and energy routes stop, and the Strait of Hormuz reopens, while strikes between the two main parties continue."
+                  },
+                  {
+                    "rung": 7,
+                    "signal": "The United States and Iran are reported to be committing to full-scale war, with large-scale campaigns beyond the current strikes."
+                  }
+                ],
+                "india_channels": [
+                  "oil",
+                  "shipping"
+                ],
+                "conflict": "w1ye2krf",
+                "applied": "none",
+                "from": 6
+              }
+            }
+          },
+          "conflict": "w1ye2krf",
+          "reports": [
+            {
+              "source": "guardian",
+              "headline": "Oil price falls amid hope of a breakthrough to end Iran war",
+              "url": "https://www.theguardian.com/business/2026/nov/02/oil-price-falls-amid-hope-of-a-breakthrough-to-end-iran-war",
+              "date": "2026-11-02T17:14:23.000Z",
+              "kind": "hard",
+              "summary": "Brent crude drops by more than 6% to $105.55 a barrel, the lowest level in more than two weeks",
+              "summaryV": 3,
+              "lede": "The oil price has fallen to its lowest level in more two weeks amid new hopes of a breakthrough to end the Iran war.",
+              "image": "https://i.guim.co.uk/img/media/5aa655482ec1b18379bdd2373abb83196044c4d5/1261_325_3461_2770/master/3461.jpg?width=700&quality=85&auto=format&fit=max&s=3c8fd88c0ea026d1f1f1dbab2e78d122"
+            }
+          ],
+          "stats": {
+            "v": 2,
+            "at": "2026-11-02T19:24:58.653Z",
+            "series": [
+              {
+                "title": "Brent crude spot price, daily",
+                "unit": "US$ per barrel",
+                "publisher": "U.S. Energy Information Administration",
+                "points": [
+                  {
+                    "period": "29 Sep 2026",
+                    "value": 113.96,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "30 Sep 2026",
+                    "value": 115.91,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "1 Oct 2026",
+                    "value": 114.82,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "2 Oct 2026",
+                    "value": 135.51,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "5 Oct 2026",
+                    "value": 125.51,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "6 Oct 2026",
+                    "value": 125.44,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "title": "Spot Prices for Crude Oil and Petroleum Products",
+                    "domain": "eia.gov"
+                  }
+                ],
+                "domains": [
+                  "eia.gov"
+                ],
+                "dropped": 0,
+                "why": "Both series track the daily Brent crude spot price in US dollars per barrel, the same benchmark whose fall the story reports.",
+                "reused": true,
+                "checkedAt": "2026-10-13T23:11:10.422Z"
+              },
+              {
+                "title": "Brent crude oil spot price, daily",
+                "unit": "US$ per barrel",
+                "publisher": "U.S. Energy Information Administration",
+                "points": [
+                  {
+                    "period": "13 Oct 2026",
+                    "value": 125.78,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "14 Oct 2026",
+                    "value": 126.55,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "15 Oct 2026",
+                    "value": 126.35,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "16 Oct 2026",
+                    "value": 119.33,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "19 Oct 2026",
+                    "value": 118.82,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "20 Oct 2026",
+                    "value": 115.22,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "title": "Spot Prices for Crude Oil and Petroleum Products",
+                    "domain": "eia.gov"
+                  }
+                ],
+                "domains": [
+                  "eia.gov"
+                ],
+                "dropped": 0,
+                "why": "Both series track the daily Brent crude spot price in US dollars per barrel, the same benchmark whose fall the story reports.",
+                "reused": true,
+                "checkedAt": "2026-10-23T05:07:39.435Z"
+              }
+            ]
+          },
+          "placeTried": true,
+          "thread": "t1dbdiwl"
+        },
+        {
+          "id": "s1ih54fw",
+          "headline": "China and Oman unite in Mideast peace call on sultan’s ‘historic’ Beijing visit",
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3372994/china-and-oman-unite-mideast-peace-call-sultans-historic-beijing-visit",
+          "source": "scmp",
+          "date": "2026-11-02T09:20:42.000Z",
+          "relevance": "high",
+          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/02/d7dfdded-d04b-4b9f-a9b2-a7713d432a2e_8ef9a50a.jpg?itok=RDjMRvtO&v=1793611806",
+          "why": "China and Oman jointly called for a full US–Iran ceasefire and restored safe passage through the Strait of Hormuz. The call adds diplomatic weight behind reopening a route that carries much of India's oil and gas.",
+          "implications": [
+            "China is a large buyer of Gulf oil, so its push for safe passage matches the interest of India, another major importer that depends on the same route.",
+            "Beijing is also sending an envoy to the Gulf, which could add another channel of pressure on both sides alongside mediation already under way elsewhere.",
+            "A joint call does not itself change shipping conditions, so Indian refiners could still face disruption until a ceasefire actually takes hold."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-02T19:28:23.760Z",
+            "tier": "standard",
+            "primary": "escalation",
+            "complement": null,
+            "features": [
+              "armed_conflict",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "This is a diplomatic statement, and its effect on India runs only indirectly, through any eventual reopening of the Hormuz shipping route."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Any effect would come only once a ceasefire is agreed, and that depends on US–Iran talks that are still under way."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "The South China Morning Post and Al Jazeera both report the on-record talks between Xi Jinping and Sultan Haitham, but the envoy's mission and its results are not detailed."
+            },
+            "outlets": 2,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "fuel supply outlook",
+                "effect": "If added diplomacy helps restore safe passage through Hormuz, steadier crude and gas flows could ease pressure on fuel and LPG prices in India.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "Gulf shipping conditions",
+                "effect": "Restored safe passage could lower shipping risks and costs for Indian importers moving goods through the Gulf.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Meetings held by China's envoy in the Gulf and any statements on the US–Iran talks",
+                "why": "Concrete proposals from the envoy would show whether China is moving from statements to active mediation.",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "The announcement of a full US–Iran ceasefire",
+                "why": "A ceasefire in force would be the first real step towards the restored Hormuz passage that China and Oman are calling for.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "Oman sits on the southern side of the Strait of Hormuz and has long served as a quiet channel for messages between Washington and Tehran.",
+              "India imports most of its crude oil, and much of it comes from Gulf producers whose tankers must pass through the strait."
+            ],
+            "terms": [
+              {
+                "term": "Strait of Hormuz",
+                "meaning": "The Strait of Hormuz is the narrow channel between Iran and Oman through which tankers leave the Gulf for world markets."
+              }
+            ],
+            "frameworks": {
+              "escalation": {
+                "move": "none",
+                "rung": 6,
+                "current_rung": 6,
+                "previous_rung": null,
+                "development": "China and Oman call for a full ceasefire and restored passage through Hormuz, and Beijing sends an envoy to the Gulf.",
+                "evidence": "Diplomatic calls do not change the war's level, and neither a ceasefire nor a new attack is reported, so the war stays at strikes on critical infrastructure or third countries.",
+                "next_signals": [
+                  {
+                    "rung": 7,
+                    "signal": "The United States and Iran move into all-out war, with fighting spreading across the region."
+                  },
+                  {
+                    "rung": 5,
+                    "signal": "Safe passage through Hormuz is restored and attacks on Gulf states stop, while US and Iranian strikes on each other continue."
+                  }
+                ],
+                "india_channels": [
+                  "oil",
+                  "shipping"
+                ],
+                "conflict": "w1ye2krf",
+                "applied": "none",
+                "from": 6
+              }
+            }
+          },
+          "place": {
+            "name": "Beijing",
+            "country": "China",
+            "lat": 39.9,
+            "lon": 116.4,
+            "involves": [
+              "Oman",
+              "Iran",
+              "United States"
+            ]
+          },
+          "reports": [
+            {
+              "source": "scmp",
+              "headline": "China and Oman unite in Mideast peace call on sultan’s ‘historic’ Beijing visit",
+              "url": "https://www.scmp.com/news/china/diplomacy/article/3372994/china-and-oman-unite-mideast-peace-call-sultans-historic-beijing-visit",
+              "date": "2026-11-02T09:20:42.000Z",
+              "kind": "hard",
+              "summary": "China and Oman have called for a peaceful resolution and full ceasefire between the US and Iran, stressing that safe passage through the Strait of Hormuz must be restored. The call came during talks in Beijing on Monday between Chinese President Xi Jinping and Oman’s Sultan Haitham bin Tariq.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/02/d7dfdded-d04b-4b9f-a9b2-a7713d432a2e_8ef9a50a.jpg?itok=RDjMRvtO&v=1793611806"
+            },
+            {
+              "source": "aljazeera",
+              "headline": "China steps up Middle East diplomacy with Iran and Oman meetings",
+              "url": "https://www.aljazeera.com/news/2026/11/2/china-steps-up-middle-east-diplomacy-with-iran-and-oman-meetings",
+              "date": "2026-11-02T16:03:52.000Z",
+              "kind": "hard",
+              "summary": "Beijing urges dialogue on US-Iran war, sends envoy to Gulf as Xi hosts first Omani head of state visit since 1978.",
+              "summaryV": 3
+            }
+          ],
+          "stats": {
+            "v": 2,
+            "at": "2026-11-02T19:25:00.414Z",
+            "series": [
+              {
+                "title": "Oil flows through the Strait of Hormuz, total",
+                "unit": "million barrels per day",
+                "publisher": "U.S. Energy Information Administration",
+                "points": [
+                  {
+                    "period": "2020",
+                    "value": 19.2,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2021",
+                    "value": 19.7,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2022",
+                    "value": 21.9,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2023",
+                    "value": 21.8,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2024",
+                    "value": 20.7,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "1H25",
+                    "value": 20.9,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "title": "eia.gov",
+                    "domain": "eia.gov"
+                  }
+                ],
+                "domains": [
+                  "eia.gov"
+                ],
+                "dropped": 0,
+                "why": "Both series track oil volumes moving through the Strait of Hormuz, the waterway whose safe passage the China-Oman call addresses and which the story links to India's energy imports.",
+                "reused": true,
+                "checkedAt": "2026-10-13T23:16:50.395Z"
+              },
+              {
+                "title": "Crude oil and condensate through the Strait of Hormuz",
+                "unit": "million barrels per day",
+                "publisher": "U.S. Energy Information Administration",
+                "points": [
+                  {
+                    "period": "2020",
+                    "value": 14.4,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2021",
+                    "value": 14.7,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2022",
+                    "value": 16.2,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2023",
+                    "value": 15.8,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2024",
+                    "value": 14.6,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "1H25",
+                    "value": 14.7,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "title": "eia.gov",
+                    "domain": "eia.gov"
+                  }
+                ],
+                "domains": [
+                  "eia.gov"
+                ],
+                "dropped": 0,
+                "why": "Both series track oil volumes moving through the Strait of Hormuz, the waterway whose safe passage the China-Oman call addresses and which the story links to India's energy imports.",
+                "reused": true,
+                "checkedAt": "2026-10-13T23:16:50.395Z"
+              }
+            ]
+          },
+          "conflict": "w1ye2krf",
+          "thread": "t2ogxay"
+        },
+        {
+          "id": "s30wy0l",
+          "headline": "How would Tehran respond if the US and Israel bomb Iran again?",
+          "url": "https://www.aljazeera.com/news/2026/11/2/how-would-tehran-respond-if-the-us-and-israel-bomb-iran",
+          "source": "aljazeera",
+          "date": "2026-11-02T14:17:31.000Z",
+          "relevance": "medium",
+          "why": "",
+          "implications": [],
+          "place": {
+            "name": "Tehran",
+            "country": "Iran",
+            "lat": 35.69,
+            "lon": 51.39,
+            "involves": [
+              "United States",
+              "Israel"
+            ]
+          },
+          "reports": [
+            {
+              "source": "aljazeera",
+              "headline": "How would Tehran respond if the US and Israel bomb Iran again?",
+              "url": "https://www.aljazeera.com/news/2026/11/2/how-would-tehran-respond-if-the-us-and-israel-bomb-iran",
+              "date": "2026-11-02T14:17:31.000Z",
+              "kind": "feature",
+              "summary": "Iran has retained significant offensive capability, but civilians and critical infrastructure remain largely exposed.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/getty_6ae8890c9d-1793624332.jpg?resize=1200%2C675"
+            }
+          ],
+          "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/getty_6ae8890c9d-1793624332.jpg?resize=1200%2C675",
+          "thread": "t2ogxay"
+        },
+        {
+          "id": "s1oc5rba",
+          "headline": "Crude prices slide as investors brace for a big week",
+          "url": "https://www.cnbc.com/2026/11/02/crude-prices-crater-investors-brace-for-big-week.html",
+          "source": "cnbc",
+          "date": "2026-11-02T12:57:06.000Z",
+          "relevance": "medium",
+          "why": "CNBC reports that crude oil prices slid on 2 November 2026 as investors waited for a heavy week of Apple earnings, the US midterm elections and Friday's jobs data. Because India imports most of its crude, lower prices could eventually ease fuel costs.",
+          "implications": [
+            "A lasting fall in crude would lower the import bill of India's oil refiners and the country's overall spending on foreign currency for energy. The size and duration of this move have not been reported.",
+            "The coming US events could change oil prices again, so any relief for Indian fuel costs would depend on whether the decline holds through the week."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-02T19:22:37.794Z",
+            "tier": "quick",
+            "primary": "pass_through",
+            "complement": null,
+            "features": [
+              "price_move",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "Crude prices reach Indian households through the cost of petrol and diesel, but the size of this move is unreported and retail prices respond slowly. The direct channel is therefore real but weak for now."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Refiners buy crude cargoes in advance and retail fuel prices are adjusted only gradually, so a single day's move would take weeks to show up, if it does at all."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single CNBC item whose headline says crude slid while its summary says futures pushed higher, and the size and cause of the move are not given."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "petrol and diesel prices",
+                "effect": "If lower crude prices last, refiners' costs could ease, but retail prices in India may not change quickly or at all.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Government finances",
+                "direction": "unclear",
+                "what": "import bill and fuel tax revenue",
+                "effect": "Cheaper crude could reduce India's spending on energy imports, while the effect on fuel tax revenue would depend on how retail prices and duties respond.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "The United States jobs data release due on Friday, which investors are treating as a major event of the week",
+                "why": "A strong or weak reading could shift expectations for the dollar and for oil demand, and so move crude prices again.",
+                "when": "2026-11-06",
+                "where": "US Bureau of Labor Statistics"
+              }
+            ],
+            "context": [
+              "India imports most of the crude oil it uses, so global prices shape the cost of making petrol, diesel and other fuels. Retail fuel prices in India change far less often than world crude prices."
+            ],
+            "terms": [
+              {
+                "term": "Futures",
+                "meaning": "Futures are contracts to buy or sell a commodity such as crude oil at an agreed price on a set future date, and their prices are the market's benchmark."
+              }
+            ],
+            "frameworks": {
+              "pass_through": {
+                "driver": {
+                  "variable": "Global crude oil price",
+                  "direction": "down",
+                  "size": ""
+                },
+                "product": "petrol & diesel",
+                "rungs": [
+                  {
+                    "stage": "Global crude price to Indian refiners' cost",
+                    "pass": "partial",
+                    "damper": "Indian refiners buy crude under a mix of contracts and cargoes arranged in advance, and they hold inventory, so a one-day price change does not immediately alter their costs.",
+                    "lag": "weeks"
+                  },
+                  {
+                    "stage": "Refiners' cost to oil marketing companies' margins",
+                    "pass": "partial",
+                    "damper": "State-run fuel retailers may keep pump prices steady for long periods and use lower costs to rebuild margins rather than cut prices.",
+                    "lag": "weeks"
+                  },
+                  {
+                    "stage": "Oil company prices to pump prices",
+                    "pass": "blocked",
+                    "damper": "Central and state taxes make up a large part of the pump price, and a change in crude affects only the smaller product-cost portion.",
+                    "lag": "months"
+                  }
+                ],
+                "end_user": {
+                  "group": "Fuel & LPG users",
+                  "effect": "Motorists may notice little change in petrol and diesel prices in the near term. Any relief would probably need a sustained fall in crude and would appear gradually."
+                }
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "cnbc",
+              "headline": "Crude prices slide as investors brace for a big week",
+              "url": "https://www.cnbc.com/2026/11/02/crude-prices-crater-investors-brace-for-big-week.html",
+              "date": "2026-11-02T12:57:06.000Z",
+              "kind": "hard",
+              "summary": "Futures push higher ahead of Apple, the midterms and jobs data due Friday",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://image.cnbcfm.com/api/v1/image/108478855-1793252242563-gettyimages-2265325794-US-.jpeg?v=1793376733&w=1920&h=1080"
+            }
+          ],
+          "stats": {
+            "v": 2,
+            "at": "2026-11-02T19:25:02.152Z",
+            "series": [
+              {
+                "title": "Brent crude spot price, daily",
+                "unit": "US$ per barrel",
+                "publisher": "U.S. Energy Information Administration",
+                "points": [
+                  {
+                    "period": "29 Sep 2026",
+                    "value": 113.96,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "30 Sep 2026",
+                    "value": 115.91,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "1 Oct 2026",
+                    "value": 114.82,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "2 Oct 2026",
+                    "value": 135.51,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "5 Oct 2026",
+                    "value": 125.51,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "6 Oct 2026",
+                    "value": 125.44,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "title": "Spot Prices for Crude Oil and Petroleum Products",
+                    "domain": "eia.gov"
+                  }
+                ],
+                "domains": [
+                  "eia.gov"
+                ],
+                "dropped": 0,
+                "why": "The Brent crude spot price series tracks the daily oil price movement that the story reports as sliding ahead of a heavy week for investors.",
+                "reused": true,
+                "checkedAt": "2026-10-13T23:11:10.422Z"
+              }
+            ]
+          },
+          "placeTried": true,
+          "image": "https://image.cnbcfm.com/api/v1/image/108478855-1793252242563-gettyimages-2265325794-US-.jpeg?v=1793376733&w=1920&h=1080",
+          "thread": "t1dbdiwl"
         },
         {
           "id": "szrvdxz",
@@ -285,16 +1445,16 @@
           "source": "cbs",
           "date": "2026-10-30T17:27:48.000Z",
           "relevance": "medium",
-          "why": "Qatari mediators are pressing Iran and the United States toward a deal that could reopen the Strait of Hormuz. That outcome would ease the main threat to India's oil and gas supplies, but a resumption of US-led attacks would deepen it.",
+          "why": "Qatar is mediating between Iran and the United States over a proposal that could reopen the Strait of Hormuz. Both sides are reportedly preparing for strikes after Tuesday's US midterm elections, which leaves India's Gulf oil supplies and workers exposed.",
           "implications": [
-            "The Guardian reports that the talks centre on releasing $6bn in Iranian assets, so any reopening of Hormuz may depend on Washington accepting a financial concession.",
-            "Iran's supreme leader has said a response to any attack would not be restricted by geography, which could widen the risk to Gulf states where many Indians live and work.",
-            "Gulf officials say they are braced for the worst, which suggests disruption to shipping and energy flows may continue even while the talks go on.",
-            "Pakistan's army spokesman warned of powerful spoilers who benefit from the conflict, so a deal could be blocked even if the mediators make progress."
+            "The Guardian reports that the deal hinges on releasing $6bn in Iranian assets, so a financial concession could decide whether tankers carrying Gulf crude and gas toward India move freely again.",
+            "Iran's supreme leader says Tehran's response to any attack will not be restricted by geography, which could put Gulf states hosting large Indian workforces at greater risk if strikes resume.",
+            "The US midterm elections act as a deadline, so the coming days could swing oil prices sharply in either direction, with knock-on effects on India's import bill and the rupee.",
+            "Pakistan's military warns of powerful spoilers who still benefit from the conflict, which suggests that even a negotiated opening could be fragile for shipping and energy buyers."
           ],
           "analysis": {
             "v": 3,
-            "at": "2026-11-01T22:17:00.453Z",
+            "at": "2026-11-02T19:28:23.761Z",
             "tier": "deep",
             "primary": "escalation",
             "complement": "scenarios",
@@ -306,84 +1466,84 @@
             ],
             "exposure": {
               "level": "high",
-              "reason": "The strait carries much of India's crude oil and LPG imports, and the war also endangers the large Indian workforce in Gulf states. Both channels touch household essentials and the safety of Indians."
+              "reason": "The war reaches India through oil and gas shipments that pass through the Strait of Hormuz, and through the safety of Indian workers in Gulf states. Both touch household fuel costs and family incomes."
             },
             "horizon": {
-              "value": "weeks",
-              "reason": "The proposal is pending before the US midterm elections on Tuesday, and any reopening or renewed attack would feed into fuel import costs within weeks."
+              "value": "now",
+              "reason": "Washington's response to Iran's proposal and any strikes after Tuesday's midterm elections fall within days, and oil markets react to such news almost immediately."
             },
             "confidence": {
               "level": "medium",
-              "reason": "CBS, Al Jazeera, CNBC and The Guardian agree that mediation is under way, but the asset proposal rests on The Guardian and the talks detail on an anonymous source."
+              "reason": "CBS, Al Jazeera, CNBC, The Guardian and NPR agree that Qatari mediation is under way. Strike preparations rest on unattributed reports, and the $6bn asset detail rests on The Guardian alone."
             },
-            "outlets": 4,
+            "outlets": 5,
             "affected": [
               {
                 "group": "Fuel & LPG users",
-                "direction": "unclear",
+                "direction": "mixed",
                 "what": "fuel and LPG costs",
-                "effect": "A reopened strait could ease import costs for petrol, diesel and LPG, while renewed attacks could keep supplies tight and costs high.",
+                "effect": "A reopened strait could ease crude and gas supply costs, while renewed strikes could raise them, and either change may eventually feed through to petrol, diesel and cooking gas prices.",
                 "basis": "inferred"
               },
               {
                 "group": "Gulf & overseas workers and families",
                 "direction": "unclear",
                 "what": "safety and job security",
-                "effect": "Iran's threat of geographically unrestricted retaliation may put Indian workers in Gulf states at risk, and their families depend on their remittances.",
+                "effect": "Iran's threat of retaliation unrestricted by geography could endanger Indian workers in Gulf states if US attacks resume, and their families' remittance income could also be affected.",
                 "basis": "inferred"
               },
               {
                 "group": "Importers & traders",
-                "direction": "unclear",
-                "what": "shipping routes and freight costs",
-                "effect": "Indian traders using Gulf shipping lanes could face continued delays and higher freight costs until the strait reopens.",
+                "direction": "mixed",
+                "what": "shipping costs and routes",
+                "effect": "Indian importers relying on Gulf shipping lanes may face continued high freight and insurance costs unless a deal reopens the strait.",
                 "basis": "inferred"
               },
               {
                 "group": "Government finances",
                 "direction": "unclear",
                 "what": "oil import bill",
-                "effect": "The cost of India's oil imports, and any fuel tax or subsidy decisions, may shift depending on whether the strait reopens or the war resumes.",
+                "effect": "Swings in oil prices driven by the talks could change India's oil import bill and pressure subsidy spending on cooking gas.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "Washington's response to the Iranian proposal that could reopen the Strait of Hormuz",
-                "why": "Acceptance would point towards reopened energy flows, while rejection would raise the risk of renewed US-led attacks.",
+                "what": "Washington's formal response to the Iranian proposal to reopen the Strait of Hormuz",
+                "why": "It would show whether a negotiated reopening of the main route for India's Gulf oil is possible soon.",
+                "when": "",
+                "where": "US State Department"
+              },
+              {
+                "what": "Whether US or Iranian strikes take place after the US midterm elections",
+                "why": "Renewed strikes would signal a wider conflict, with greater risk to Gulf oil flows and to Indian workers in the region.",
                 "when": "2026-11-03",
-                "where": "The White House"
-              },
-              {
-                "what": "Any announced release of Iranian assets brokered by Qatar",
-                "why": "It would show that the financial concession reported to unlock the reopening of the waterway has been agreed.",
-                "when": "",
-                "where": "Qatar's Ministry of Foreign Affairs"
-              },
-              {
-                "what": "Ships resuming normal transits through the Strait of Hormuz",
-                "why": "It would show that the critical energy route is actually reopening, rather than merely being discussed.",
-                "when": "",
                 "where": ""
+              },
+              {
+                "what": "Release of $6bn in frozen Iranian assets through Qatari mediation",
+                "why": "A release would indicate that the deal that could reopen the strait is moving forward.",
+                "when": "",
+                "where": "Qatar Ministry of Foreign Affairs"
               }
             ],
             "context": [
-              "India imports most of the crude oil it uses, and a large share of its crude and liquefied petroleum gas (LPG) comes from Gulf producers whose exports pass through the Strait of Hormuz.",
-              "Millions of Indians work in Gulf Cooperation Council states, and their remittances are a significant source of household income in states such as Kerala.",
-              "When a major shipping chokepoint is disrupted, tanker freight and insurance costs usually rise, which raises the delivered cost of energy for importing countries."
+              "India imports most of the crude oil it uses and a large share of its liquefied petroleum gas, and much of both comes from Gulf producers whose exports pass through the Strait of Hormuz.",
+              "Millions of Indians live and work in Gulf Cooperation Council countries, and their remittances are an important source of income for families in states such as Kerala.",
+              "In indirect talks, a mediator such as Qatar carries messages between parties that do not negotiate face to face. Unfreezing assets held abroad is a common bargaining tool in such talks."
             ],
             "terms": [
               {
                 "term": "Strait of Hormuz",
-                "meaning": "The narrow sea passage between Iran and Oman through which much of the Gulf's oil and gas exports are shipped to world markets."
-              },
-              {
-                "term": "indirect talks",
-                "meaning": "Negotiations in which mediators carry messages between two sides that do not meet face to face."
+                "meaning": "The narrow sea passage between Iran and Oman through which a large share of the world's seaborne oil and gas exports leave the Gulf."
               },
               {
                 "term": "midterm elections",
-                "meaning": "US national elections held halfway through a president's four-year term, which decide control of Congress."
+                "meaning": "US congressional elections held midway through a presidential term, which here serve as a political deadline for decisions on Iran."
+              },
+              {
+                "term": "indirect talks",
+                "meaning": "Negotiations in which a mediator carries proposals between two sides that are not meeting each other directly."
               }
             ],
             "frameworks": {
@@ -392,53 +1552,53 @@
                 "rung": 6,
                 "current_rung": 6,
                 "previous_rung": null,
-                "development": "This story adds mediation: Qatari mediators held more than 12 hours of talks in Tehran, and Iran has made a proposal that could reopen the Strait of Hormuz.",
-                "evidence": "Talks, proposals, predictions and threats do not change the war's level. No ceasefire, withdrawal or reopening of the strait has been reported, so the war remains at the critical infrastructure rung.",
+                "development": "Qatari mediators held lengthy talks in Tehran to restart US–Iran negotiations and reopen the Strait of Hormuz, while Iran threatened geographically unrestricted retaliation and both sides reportedly prepared for further strikes.",
+                "evidence": "These reports describe talks, proposals, predictions and threats, none of which moves the war's level. No ceasefire, reopening of the strait or new higher-level attack is reported, so the war stays at rung 6.",
                 "next_signals": [
                   {
                     "rung": 7,
-                    "signal": "US-led attacks on Iran resume and Iran retaliates across the wider region, drawing several states into open, large-scale fighting."
+                    "signal": "The United States launches a large-scale campaign against Iran after the midterm elections, and Iran retaliates across the wider region in a full-scale war."
                   },
                   {
                     "rung": 5,
-                    "signal": "Iran stops attacks on third countries and the Strait of Hormuz reopens, while direct US-Iranian strikes continue."
+                    "signal": "The Strait of Hormuz reopens and Iranian attacks on third countries stop, while exchanges of strikes between the United States and Iran continue."
                   },
                   {
-                    "rung": 3,
-                    "signal": "Strikes stop under an agreed deal, leaving only military deployments and posturing around the Gulf."
+                    "rung": 4,
+                    "signal": "A ceasefire takes effect and only isolated strikes are reported, with shipping through the strait resuming."
                   }
                 ],
                 "india_channels": [
                   "oil",
                   "shipping",
-                  "remittances",
                   "diaspora safety",
-                  "flights"
+                  "remittances",
+                  "trade"
                 ],
                 "conflict": "w1ye2krf",
                 "applied": "none",
                 "from": 6
               },
               "scenarios": {
-                "question": "Will Washington accept Iran's proposal, so that the Strait of Hormuz reopens, or will American-led attacks on Iran resume?",
+                "question": "Will Qatar's mediation secure a deal that reopens the Strait of Hormuz before the United States resumes attacks on Iran?",
                 "scenarios": [
                   {
                     "name": "Deal reopens the strait",
-                    "what": "Washington accepts the Iranian proposal, the release of Iranian assets proceeds, and the Strait of Hormuz reopens before or soon after the US midterm elections.",
-                    "signal": "Washington publicly accepts the proposal and tankers begin transiting the strait again.",
-                    "india_effect": "Oil and LPG cargoes bound for India could move more freely, which may ease import costs and pressure on fuel prices over the following weeks."
+                    "what": "Washington accepts the Iranian proposal, the $6bn in Iranian assets is released, and the Strait of Hormuz reopens to shipping.",
+                    "signal": "The United States announces acceptance of the proposal, or Qatar confirms that the Iranian assets have been released.",
+                    "india_effect": "Oil and gas cargoes bound for India could move more freely, which may ease pressure on fuel costs and the import bill over time."
                   },
                   {
-                    "name": "Talks drag on",
-                    "what": "Indirect talks through Qatar continue without agreement, and the strait stays disrupted while neither side resumes full attacks.",
-                    "signal": "Mediators keep travelling between capitals with no announced deal and no reopening of the waterway.",
-                    "india_effect": "Uncertainty over Gulf energy supplies and shipping costs could persist, keeping India's fuel import bill exposed to sharp swings."
+                    "name": "Strikes resume after midterms",
+                    "what": "Talks fail and American-led attacks on Iran resume after Tuesday's elections, and Iran retaliates beyond its borders as its supreme leader has warned.",
+                    "signal": "New US strikes on Iran are reported, followed by Iranian attacks on Gulf states or shipping.",
+                    "india_effect": "Indian fuel costs could face further upward pressure, and the safety of Indian workers in Gulf states could become a pressing concern for the government."
                   },
                   {
-                    "name": "Attacks resume",
-                    "what": "The talks fail and American-led attacks on Iran resume, and Iran responds with retaliation that its supreme leader says would not be limited by geography.",
-                    "signal": "US-led strikes on Iran are reported, followed by Iranian attacks on Gulf states or shipping.",
-                    "india_effect": "India could face tighter oil and gas supplies, higher import costs and heightened risk to Indian workers and travellers in the Gulf."
+                    "name": "Direct talks restart",
+                    "what": "The Qatari effort succeeds in restarting direct US–Iran negotiations, but the strait stays disrupted while terms are worked out.",
+                    "signal": "US and Iranian officials announce or hold direct negotiations without an immediate reopening of the strait.",
+                    "india_effect": "The risk of a wider war could recede, but Indian energy imports may continue to face disruption and higher shipping costs until a settlement is reached."
                   }
                 ]
               }
@@ -11253,7 +12413,127 @@
           "image": "https://image.cnbcfm.com/api/v1/image/108374101-1791385507503-gettyimages-503850269-bld134034.jpeg?v=1791385521&w=1920&h=1080",
           "thread": "t2ogxay",
           "placeTried": true,
-          "priority": 80
+          "priority": 80,
+          "stats": {
+            "v": 2,
+            "at": "2026-11-02T19:25:27.009Z",
+            "series": [
+              {
+                "title": "Brent crude spot price, daily",
+                "unit": "US$ per barrel",
+                "publisher": "U.S. Energy Information Administration",
+                "points": [
+                  {
+                    "period": "29 Sep 2026",
+                    "value": 113.96,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "30 Sep 2026",
+                    "value": 115.91,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "1 Oct 2026",
+                    "value": 114.82,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "2 Oct 2026",
+                    "value": 135.51,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "5 Oct 2026",
+                    "value": 125.51,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "6 Oct 2026",
+                    "value": 125.44,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "title": "Spot Prices for Crude Oil and Petroleum Products",
+                    "domain": "eia.gov"
+                  }
+                ],
+                "domains": [
+                  "eia.gov"
+                ],
+                "dropped": 0,
+                "why": "The Brent crude spot price directly tracks the oil price movement the story reports, and total oil flows through the Strait of Hormuz directly measure the commercial shipping traffic affected by the a",
+                "reused": true,
+                "checkedAt": "2026-10-13T23:11:10.422Z"
+              },
+              {
+                "title": "Oil flows through the Strait of Hormuz, total",
+                "unit": "million barrels per day",
+                "publisher": "U.S. Energy Information Administration",
+                "points": [
+                  {
+                    "period": "2020",
+                    "value": 19.2,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2021",
+                    "value": 19.7,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2022",
+                    "value": 21.9,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2023",
+                    "value": 21.8,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2024",
+                    "value": 20.7,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "1H25",
+                    "value": 20.9,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "title": "eia.gov",
+                    "domain": "eia.gov"
+                  }
+                ],
+                "domains": [
+                  "eia.gov"
+                ],
+                "dropped": 0,
+                "why": "The Brent crude spot price directly tracks the oil price movement the story reports, and total oil flows through the Strait of Hormuz directly measure the commercial shipping traffic affected by the a",
+                "reused": true,
+                "checkedAt": "2026-10-13T23:16:50.395Z"
+              }
+            ]
+          }
         },
         {
           "id": "s4vxzkb",
@@ -24803,6 +26083,171 @@
       "name": "Economy & Trade",
       "items": [
         {
+          "id": "sx1qr6r",
+          "headline": "Trump Removes South Africa From the African Growth and Opportunity Act Trade Program",
+          "url": "https://www.nytimes.com/2026/11/02/world/africa/trump-south-africa-trade-program-agoa.html",
+          "source": "nyt",
+          "date": "2026-11-02T19:14:50.000Z",
+          "relevance": "medium",
+          "image": "https://static01.nyt.com/images/2026/11/02/multimedia/02int-safrica-agoa-1-mwfk/02int-safrica-agoa-1-mwfk-mediumSquareAt3X.jpg",
+          "why": "President Donald Trump has removed South Africa from the African Growth and Opportunity Act (AGOA) trade programme. The move is aimed at South Africa and could indirectly affect Indian exporters who compete with South African goods in the US market.",
+          "implications": [
+            "South African exporters may lose duty-free access to the US market, which could make their goods costlier there and shift some American orders towards other suppliers.",
+            "Indian firms selling similar goods to the US could face less competition from South Africa, but this depends on which products overlap. None have been named.",
+            "The decision adds strain to US-South Africa relations. India, which has trade and diplomatic ties with both countries, may need to weigh this in its own dealings."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-02T19:24:50.329Z",
+            "tier": "quick",
+            "primary": "trade_flow",
+            "complement": null,
+            "features": [
+              "trade_flow",
+              "policy_stage"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "The only link to India is indirect, through possible competition between Indian and South African exporters in the US market. No Indian product, price or household essential is named as affected."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "No effective date has been reported, and any shift in orders between competing exporters usually takes several months to appear in trade data."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single outlet, The New York Times, with no named official source, and the effective date and affected goods are not yet reported."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "MSME exporters",
+                "direction": "unclear",
+                "what": "competition in US market",
+                "effect": "Small Indian exporters selling goods that also come from South Africa could face less competition in the US, but the overlap in products has not been reported.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "A formal notice stating when South Africa's removal from the programme takes effect and which goods are covered",
+                "why": "It would show which exporters lose duty-free access and whether any Indian product lines compete directly.",
+                "when": "",
+                "where": "Office of the United States Trade Representative"
+              },
+              {
+                "what": "Any response from the South African government to the removal",
+                "why": "It would indicate whether the dispute is likely to widen into further trade measures.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "AGOA is a US law that gives eligible sub-Saharan African countries duty-free access to the American market for many products. Washington can remove a country from the programme at its own discretion.",
+              "India does not benefit from AGOA, so its exports to the US face standard tariffs, and any change in rivals' tariff treatment can alter its relative competitiveness."
+            ],
+            "terms": [
+              {
+                "term": "African Growth and Opportunity Act",
+                "meaning": "A US trade programme that lets eligible sub-Saharan African countries sell many goods to the United States without paying import duties."
+              }
+            ],
+            "frameworks": {
+              "trade_flow": {
+                "good": "Goods from South Africa that previously entered the United States duty-free under the AGOA programme; the specific…",
+                "actors": [
+                  {
+                    "country": "South Africa",
+                    "role": "exporter",
+                    "is_india": false
+                  },
+                  {
+                    "country": "United States",
+                    "role": "importer",
+                    "is_india": false
+                  },
+                  {
+                    "country": "India",
+                    "role": "third_party",
+                    "is_india": true
+                  }
+                ],
+                "change": {
+                  "type": "other",
+                  "effective": ""
+                },
+                "india_position": {
+                  "role": "rival_exporter",
+                  "note": "India may sell some products to the US that also come from South Africa, though no specific goods are named. If so, Indian sellers could gain some room in the US market, while Indian buyers of South African goods are not directly affected."
+                },
+                "volumes": []
+              }
+            }
+          },
+          "place": {
+            "name": "Washington",
+            "country": "United States",
+            "lat": 38.9,
+            "lon": -77,
+            "involves": [
+              "South Africa"
+            ]
+          },
+          "reports": [
+            {
+              "source": "nyt",
+              "headline": "Trump Removes South Africa From the African Growth and Opportunity Act Trade Program",
+              "url": "https://www.nytimes.com/2026/11/02/world/africa/trump-south-africa-trade-program-agoa.html",
+              "date": "2026-11-02T19:14:50.000Z",
+              "kind": "hard",
+              "summary": "The decision is the latest measure taken against the country, which the administration has accused of discriminating against white people.",
+              "summaryV": 3,
+              "image": "https://static01.nyt.com/images/2026/11/02/multimedia/02int-safrica-agoa-1-mwfk/02int-safrica-agoa-1-mwfk-mediumSquareAt3X.jpg"
+            }
+          ],
+          "finChecked": true,
+          "stats": {
+            "v": 2,
+            "at": "2026-11-02T19:24:56.006Z",
+            "series": []
+          },
+          "thread": "tagbo7z"
+        },
+        {
+          "id": "s1xtchrg",
+          "headline": "Trump’s Tariffs Are On the Ballot in Michigan",
+          "url": "https://www.nytimes.com/2026/11/02/business/economy/trump-tariffs-midterms-michigan.html",
+          "source": "nyt",
+          "date": "2026-11-02T17:48:42.000Z",
+          "relevance": "medium",
+          "image": "https://static01.nyt.com/images/2026/11/02/multimedia/02dc-trade-midterms-01-lmfk/02dc-trade-midterms-01-lmfk-mediumSquareAt3X.jpg",
+          "why": "",
+          "implications": [],
+          "place": {
+            "name": "Michigan",
+            "country": "United States",
+            "lat": 42.73,
+            "lon": -84.55,
+            "involves": [
+              "Canada"
+            ]
+          },
+          "reports": [
+            {
+              "source": "nyt",
+              "headline": "Trump’s Tariffs Are On the Ballot in Michigan",
+              "url": "https://www.nytimes.com/2026/11/02/business/economy/trump-tariffs-midterms-michigan.html",
+              "date": "2026-11-02T17:48:42.000Z",
+              "kind": "feature",
+              "summary": "The levies as well as trade fighting with Canada are facing a test in the state, where voters appear skeptical of free trade but also of the president’s erratic approach.",
+              "summaryV": 3,
+              "image": "https://static01.nyt.com/images/2026/11/02/multimedia/02dc-trade-midterms-01-lmfk/02dc-trade-midterms-01-lmfk-mediumSquareAt3X.jpg"
+            }
+          ],
+          "finChecked": true,
+          "thread": "topaoh5"
+        },
+        {
           "id": "s1cjpong",
           "headline": "China’s Message to Its Rivals: You Need What We Make",
           "url": "https://www.nytimes.com/2026/11/02/world/asia/chinas-message-to-its-rivals-you-need-what-we-make.html",
@@ -24828,10 +26273,46 @@
               "summary": "It’s not just rare earths. China is making it harder for other countries to shed their dependence on its solar, drone and drugmaking technology.",
               "summaryV": 3,
               "image": "https://static01.nyt.com/images/2026/11/02/multimedia/02int-china-export-controls-01-pqvb/02int-china-export-controls-01-pqvb-mediumSquareAt3X.jpg"
+            },
+            {
+              "source": "nyt",
+              "headline": "China’s Message to Its Rivals: You Need What We Make",
+              "url": "https://www.nytimes.com/2026/11/02/world/asia/china-us-exports-ai-solar.html",
+              "date": "2026-11-02T16:21:25.000Z",
+              "kind": "feature",
+              "summary": "It’s not just rare earths. China is making it harder for other countries to shed their dependence on its solar, drone and drugmaking technology.",
+              "summaryV": 3,
+              "image": "https://static01.nyt.com/images/2026/11/02/multimedia/02int-china-export-controls-01-pqvb/02int-china-export-controls-01-pqvb-mediumSquareAt3X.jpg"
             }
           ],
           "finChecked": true,
           "thread": "tgfs32m"
+        },
+        {
+          "id": "s15zsp8x",
+          "headline": "Gulf Economies, Torn by War in Iran, Desperately Need a Return to Normal",
+          "url": "https://www.nytimes.com/2026/11/02/business/iran-war-gulf-economies.html",
+          "source": "nyt",
+          "date": "2026-11-02T10:02:16.000Z",
+          "relevance": "medium",
+          "image": "https://static01.nyt.com/images/2026/11/02/multimedia/02Biz-Gulf-Economy-01-mbgt/02Biz-Gulf-Economy-01-mbgt-mediumSquareAt3X.jpg",
+          "why": "",
+          "implications": [],
+          "reports": [
+            {
+              "source": "nyt",
+              "headline": "Gulf Economies, Torn by War in Iran, Desperately Need a Return to Normal",
+              "url": "https://www.nytimes.com/2026/11/02/business/iran-war-gulf-economies.html",
+              "date": "2026-11-02T10:02:16.000Z",
+              "kind": "feature",
+              "summary": "States like Saudi Arabia and the United Arab Emirates that have worked to rebalance from a dependence on energy have seen growth plunge in a year of strife.",
+              "summaryV": 3,
+              "image": "https://static01.nyt.com/images/2026/11/02/multimedia/02Biz-Gulf-Economy-01-mbgt/02Biz-Gulf-Economy-01-mbgt-mediumSquareAt3X.jpg"
+            }
+          ],
+          "finChecked": true,
+          "placeTried": true,
+          "thread": "t1v4k6cd"
         },
         {
           "id": "snd7ris",
@@ -29139,7 +30620,141 @@
               "Canada"
             ]
           },
-          "priority": 65
+          "priority": 65,
+          "stats": {
+            "v": 2,
+            "at": "2026-11-02T19:25:40.333Z",
+            "series": [
+              {
+                "title": "US goods imports from India, annual total",
+                "unit": "US$ million",
+                "publisher": "U.S. Census Bureau",
+                "why": "This shows how much Indian merchandise American buyers import, which is the trade flow that tariffs set by presidential order apply to.",
+                "points": [
+                  {
+                    "period": "2019",
+                    "value": 57879,
+                    "url": "https://www.census.gov/foreign-trade/balance/c5330.html",
+                    "source": "International Trade"
+                  },
+                  {
+                    "period": "2020",
+                    "value": 51254.6,
+                    "url": "https://www.census.gov/foreign-trade/balance/c5330.html",
+                    "source": "International Trade"
+                  },
+                  {
+                    "period": "2021",
+                    "value": 73308.2,
+                    "url": "https://www.census.gov/foreign-trade/balance/c5330.html",
+                    "source": "International Trade"
+                  },
+                  {
+                    "period": "2022",
+                    "value": 85517.4,
+                    "url": "https://www.census.gov/foreign-trade/balance/c5330.html",
+                    "source": "International Trade"
+                  },
+                  {
+                    "period": "2023",
+                    "value": 83543.6,
+                    "url": "https://www.census.gov/foreign-trade/balance/c5330.html",
+                    "source": "International Trade"
+                  },
+                  {
+                    "period": "2024",
+                    "value": 87284.8,
+                    "url": "https://www.census.gov/foreign-trade/balance/c5330.html",
+                    "source": "International Trade"
+                  },
+                  {
+                    "period": "2025",
+                    "value": 103776.3,
+                    "url": "https://www.census.gov/foreign-trade/balance/c5330.html",
+                    "source": "International Trade"
+                  }
+                ],
+                "dropped": 0,
+                "sources": [
+                  {
+                    "url": "https://www.census.gov/foreign-trade/balance/c5330.html",
+                    "title": "International Trade",
+                    "domain": "census.gov"
+                  }
+                ],
+                "domains": [
+                  "census.gov"
+                ]
+              },
+              {
+                "title": "US goods imports from India, monthly",
+                "unit": "US$ million",
+                "publisher": "U.S. Census Bureau",
+                "why": "These recent monthly values show how Indian goods have kept flowing into the US while tariff powers are being challenged in court.",
+                "points": [
+                  {
+                    "period": "Jan 2026",
+                    "value": 7867.9,
+                    "url": "https://www.census.gov/foreign-trade/balance/c5330.html",
+                    "source": "International Trade"
+                  },
+                  {
+                    "period": "Feb 2026",
+                    "value": 6778.7,
+                    "url": "https://www.census.gov/foreign-trade/balance/c5330.html",
+                    "source": "International Trade"
+                  },
+                  {
+                    "period": "Mar 2026",
+                    "value": 8364.5,
+                    "url": "https://www.census.gov/foreign-trade/balance/c5330.html",
+                    "source": "International Trade"
+                  },
+                  {
+                    "period": "Apr 2026",
+                    "value": 8260.1,
+                    "url": "https://www.census.gov/foreign-trade/balance/c5330.html",
+                    "source": "International Trade"
+                  },
+                  {
+                    "period": "May 2026",
+                    "value": 9136.4,
+                    "url": "https://www.census.gov/foreign-trade/balance/c5330.html",
+                    "source": "International Trade"
+                  },
+                  {
+                    "period": "Jun 2026",
+                    "value": 8887.3,
+                    "url": "https://www.census.gov/foreign-trade/balance/c5330.html",
+                    "source": "International Trade"
+                  },
+                  {
+                    "period": "Jul 2026",
+                    "value": 9581.5,
+                    "url": "https://www.census.gov/foreign-trade/balance/c5330.html",
+                    "source": "International Trade"
+                  },
+                  {
+                    "period": "Aug 2026",
+                    "value": 9165.1,
+                    "url": "https://www.census.gov/foreign-trade/balance/c5330.html",
+                    "source": "International Trade"
+                  }
+                ],
+                "dropped": 0,
+                "sources": [
+                  {
+                    "url": "https://www.census.gov/foreign-trade/balance/c5330.html",
+                    "title": "International Trade",
+                    "domain": "census.gov"
+                  }
+                ],
+                "domains": [
+                  "census.gov"
+                ]
+              }
+            ]
+          }
         },
         {
           "id": "s1ncdcg4",
@@ -32910,6 +34525,118 @@
       "name": "Finance",
       "items": [
         {
+          "id": "skg1q3k",
+          "headline": "Beijing launches barrage of measures to stabilise stock market after sell-off",
+          "url": "https://www.scmp.com/business/markets/article/3372993/beijing-refreshes-asset-swap-support-chinas-stock-market-after-sell",
+          "source": "scmp",
+          "date": "2026-11-02T09:15:28.000Z",
+          "relevance": "medium",
+          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/02/878940b7-fa51-41c2-851d-2a7169a26cc9_e1d6e92a.jpg?itok=wHIAra1_&v=1793610913",
+          "why": "Chinese authorities announced measures on Monday to boost liquidity, cut rates on share buy-back loans and ease curbs on leveraged trading after a sell-off. The effects could reach India through global fund flows and trade sentiment.",
+          "implications": [
+            "Large swings in China's market can change how global funds spread money across emerging markets, which may in turn affect foreign portfolio flows into Indian shares.",
+            "A weaker Chinese market may signal softer confidence in China's economy, which could matter for Indian exporters who sell to China."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-02T19:21:26.761Z",
+            "tier": "quick",
+            "primary": "market_move",
+            "complement": null,
+            "features": [
+              "market_move"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "The reports describe a domestic Chinese policy response and name no direct channel to India. Any effect would be indirect, through investor flows or trade sentiment."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Any shift in fund allocation would show up gradually in weekly and monthly investor flow data rather than immediately."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "This rests on a single outlet, the South China Morning Post, reporting official measures; the size and cause of the sell-off are not given."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Equity & mutual fund investors",
+                "direction": "unclear",
+                "what": "foreign investor flows",
+                "effect": "Changes in China's market confidence could shift foreign money between Chinese and Indian shares, which may affect Indian market movements.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Whether Chinese share prices steady in the days after the new support measures take effect",
+                "why": "It would show whether the measures have calmed the sell-off that could otherwise spill over into other emerging markets.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "Chinese authorities have often used easier lending terms and extra liquidity to calm domestic share markets. India and China compete for the same pool of global emerging-market investment funds."
+            ],
+            "terms": [
+              {
+                "term": "leveraged trading",
+                "meaning": "Trading with borrowed money, which magnifies both gains and losses and can speed up a sell-off when prices fall."
+              }
+            ],
+            "frameworks": {
+              "market_move": {
+                "moved": {
+                  "what": "China's stock market",
+                  "kind": "share index",
+                  "direction": "down",
+                  "size": "",
+                  "period": "in the recent sell-off before Monday"
+                },
+                "cause": {
+                  "text": "Chinese authorities announced measures on Monday to boost liquidity, cut rates for share buy-back loans and ease curbs on leveraged trading, aiming to stabilise the market after the sell-off.",
+                  "status": "reported",
+                  "by": "the South China Morning Post, citing Chinese authorities' announcements"
+                },
+                "duration": "unclear",
+                "channels": [
+                  {
+                    "channel": "foreign investment flows",
+                    "india_link": "If global investors become more cautious about China, they may reallocate money among emerging markets, which could affect inflows into Indian shares.",
+                    "basis": "inferred"
+                  }
+                ],
+                "not_settled": "The size and cause of the sell-off, and how far the measures will steady the market, have not been reported."
+              }
+            }
+          },
+          "place": {
+            "name": "Beijing",
+            "country": "China",
+            "lat": 39.9,
+            "lon": 116.4
+          },
+          "reports": [
+            {
+              "source": "scmp",
+              "headline": "Beijing launches barrage of measures to stabilise stock market after sell-off",
+              "url": "https://www.scmp.com/business/markets/article/3372993/beijing-refreshes-asset-swap-support-chinas-stock-market-after-sell",
+              "date": "2026-11-02T09:15:28.000Z",
+              "kind": "hard",
+              "summary": "Chinese authorities have launched a renewed effort to stabilise the country’s struggling stock market, with a string of measures announced on Monday to boost liquidity, cut rates for share buy-back loans and ease curbs on leveraged trading.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/02/878940b7-fa51-41c2-851d-2a7169a26cc9_e1d6e92a.jpg?itok=wHIAra1_&v=1793610913"
+            }
+          ],
+          "stats": {
+            "v": 2,
+            "at": "2026-11-02T19:25:24.676Z",
+            "series": []
+          },
+          "thread": "tacu2ew"
+        },
+        {
           "id": "s161zkrr",
           "headline": "Canada-India $5.5 billion bank takeover attracts opposition from workers, politicians",
           "url": "https://www.cnbc.com/2026/11/02/canada-india-bank-takeover-protest-workers.html",
@@ -35403,6 +37130,112 @@
       "id": "technology",
       "name": "Technology",
       "items": [
+        {
+          "id": "s90rzgt",
+          "headline": "China’s CXMT defends bet on risky new DRAM architecture to circumvent US chip curbs",
+          "url": "https://www.scmp.com/tech/tech-war/article/3372997/chinas-cxmt-defends-bet-risky-new-dram-architecture-circumvent-us-chip-curbs",
+          "source": "scmp",
+          "date": "2026-11-02T11:30:09.000Z",
+          "relevance": "medium",
+          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/02/e554ec67-7575-4aaa-b87c-a894b271beec_54b95e26.jpg?itok=kKCzjsZ5&v=1793612231",
+          "why": "China's ChangXin Memory Technologies (CXMT) is pursuing a memory chip design that US rival Micron has chosen to avoid, as the industry splits over how to add capacity under US curbs. India is reached only indirectly, through electronics supply and chip policy.",
+          "implications": [
+            "US restrictions limit what equipment Chinese chipmakers can use, so CXMT is seeking a design route that packs more data onto silicon. Whether this works is disputed within the industry.",
+            "If CXMT's approach succeeds, it could add lower-cost memory supply that Indian phone and computer assemblers may eventually buy. If it fails, Chinese memory supply could stay constrained."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-02T19:21:59.145Z",
+            "tier": "quick",
+            "primary": "winners_losers",
+            "complement": null,
+            "features": [
+              "allocation"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "The reports describe a corporate design choice in China, with no stated change in memory prices or supply. Any effect on India would pass indirectly through electronics component costs and chip policy."
+            },
+            "horizon": {
+              "value": "years",
+              "reason": "Chip architecture choices take years to turn into production volumes and changes in the price of memory in consumer devices."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single outlet, the South China Morning Post, and on CXMT's own defence of its strategy. Independent confirmation of the technical and commercial outcome is missing."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "memory chip import costs",
+                "effect": "Indian importers of memory chips and electronics could see supply and prices shift over time if Chinese memory output changes, though no such change is reported.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Manufacturing workers",
+                "direction": "unclear",
+                "what": "electronics assembly inputs",
+                "effect": "Indian electronics assembly lines depend on imported memory, so a change in global memory costs could affect their input costs, though the reports describe no such change yet.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Any new US export-control measures aimed at Chinese memory chipmakers",
+                "why": "New curbs would show whether Chinese firms can keep expanding memory output and how global memory supply could shift.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "India imports most of the memory chips used in its phones, laptops and servers. Prices and supply in global memory markets therefore affect Indian electronics assemblers.",
+              "India is trying to build its own chip assembly and testing capacity through government incentives, and the strategies of global memory makers shape that effort."
+            ],
+            "terms": [
+              {
+                "term": "DRAM",
+                "meaning": "Dynamic random-access memory is the fast working memory used in phones, computers and data-centre servers to hold data while a device is running."
+              }
+            ],
+            "frameworks": {
+              "winners_losers": {
+                "groups": [
+                  {
+                    "group": "Importers & traders",
+                    "direction": "unclear",
+                    "directness": "indirect",
+                    "mechanism": "Indian buyers of memory chips could benefit if CXMT's design adds cheaper supply. They could lose if the approach fails and Chinese output stays constrained. The reports give no price or supply change."
+                  }
+                ],
+                "not_affected": "Ordinary smartphone and laptop buyers in India are not affected now, because no change in memory prices or device availability is reported."
+              }
+            }
+          },
+          "place": {
+            "name": "Hefei",
+            "country": "China",
+            "lat": 31.82,
+            "lon": 117.23,
+            "involves": [
+              "United States"
+            ]
+          },
+          "reports": [
+            {
+              "source": "scmp",
+              "headline": "China’s CXMT defends bet on risky new DRAM architecture to circumvent US chip curbs",
+              "url": "https://www.scmp.com/tech/tech-war/article/3372997/chinas-cxmt-defends-bet-risky-new-dram-architecture-circumvent-us-chip-curbs",
+              "date": "2026-11-02T11:30:09.000Z",
+              "kind": "hard",
+              "summary": "Chinese memory chip giant ChangXin Memory Technologies (CXMT) is pressing ahead with an alternative chip architecture that US rival Micron Technology has chosen to bypass, highlighting an industry divide over how best to pack more data onto silicon under cost and geopolitical constraints.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/02/e554ec67-7575-4aaa-b87c-a894b271beec_54b95e26.jpg?itok=kKCzjsZ5&v=1793612231"
+            }
+          ],
+          "thread": "tfiliqa"
+        },
         {
           "id": "s1b34tgx",
           "headline": "Tech stocks crushed as Nasdaq tumbles more than 800 points",
@@ -41326,6 +43159,129 @@
       "id": "governance",
       "name": "Policy & Governance",
       "items": [
+        {
+          "id": "shbo7vo",
+          "headline": "Japan weighs US$500 billion defence spending plan: sources",
+          "url": "https://www.scmp.com/news/asia/east-asia/article/3373033/japan-weighs-us500-billion-defence-spending-plan-sources",
+          "source": "scmp",
+          "date": "2026-11-02T14:45:23.000Z",
+          "relevance": "medium",
+          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/02/1521cfb7-4c3b-410e-9d91-efab4ede7dac_f3bfdb0f.jpg?itok=xYbwKeXP&v=1793630714",
+          "why": "Japan's government and ruling coalition are considering nearly doubling defence spending over five years, a plan said to total US$500 billion. The effect on India would be indirect, through Asian security and Japan-India defence ties.",
+          "implications": [
+            "A much larger Japanese defence budget could make Japan a more capable security partner in Asia, which may matter to India's own strategic planning and its defence cooperation with Tokyo.",
+            "The plan is still under consideration and has not been confirmed by the government, so its size, timing and final shape could change before any decision."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-02T19:23:24.833Z",
+            "tier": "quick",
+            "primary": "winners_losers",
+            "complement": null,
+            "features": [
+              "allocation",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "The reports describe only a Japanese domestic spending plan. Any link to India would run through strategic and defence relations, and no household, trade or travel channel is reported."
+            },
+            "horizon": {
+              "value": "years",
+              "reason": "The spending would be spread over five years and is still only under consideration, so any effect on India would emerge slowly."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "The story rests on one outlet citing two unnamed people familiar with the matter, and no official confirmation is reported."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Government finances",
+                "direction": "unclear",
+                "what": "defence cooperation planning",
+                "effect": "India's government may need to weigh how a better-funded Japanese military changes the scope for joint defence work and regional security planning, though no Indian response is reported.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "An official decision by the Japanese government and ruling coalition on the size of the five-year defence spending plan",
+                "why": "It would show whether the reported near-doubling is adopted and how large the final programme is.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "India and Japan are close partners on security and economic issues in the Indo-Pacific. Changes in either country's military posture can therefore shape how the two governments cooperate on defence and technology."
+            ],
+            "terms": [],
+            "frameworks": {
+              "winners_losers": {
+                "groups": [
+                  {
+                    "group": "Government finances",
+                    "direction": "unclear",
+                    "directness": "indirect",
+                    "mechanism": "A stronger Japanese military could create more room for defence cooperation with India, but it could also shift regional security calculations. No Indian reaction is reported, so the net effect is uncertain."
+                  }
+                ],
+                "not_affected": "Fuel and LPG users and food shoppers are not directly affected, because the plan concerns Japanese military spending and no trade, price or supply channel to India is reported."
+              }
+            }
+          },
+          "place": {
+            "name": "Tokyo",
+            "country": "Japan",
+            "lat": 35.68,
+            "lon": 139.69
+          },
+          "reports": [
+            {
+              "source": "scmp",
+              "headline": "Japan weighs US$500 billion defence spending plan: sources",
+              "url": "https://www.scmp.com/news/asia/east-asia/article/3373033/japan-weighs-us500-billion-defence-spending-plan-sources",
+              "date": "2026-11-02T14:45:23.000Z",
+              "kind": "hard",
+              "summary": "Japan’s ⁠government and ruling coalition ⁠are considering nearly doubling defence ⁠spending over the next five years as part of Prime Minister Sanae Takaichi’s push to strengthen the country’s military capabilities, according to two people familiar with the matter.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/02/1521cfb7-4c3b-410e-9d91-efab4ede7dac_f3bfdb0f.jpg?itok=xYbwKeXP&v=1793630714"
+            }
+          ],
+          "finChecked": true,
+          "thread": "t1kkgh8"
+        },
+        {
+          "id": "s1ysaaef",
+          "headline": "India offers Asean counterterrorism lessons, but will one size fit all?",
+          "url": "https://www.scmp.com/week-asia/politics/article/3372998/why-indias-asean-anti-terrorism-partnership-offer-may-not-be-one-size-fits-all",
+          "source": "scmp",
+          "date": "2026-11-02T09:38:21.000Z",
+          "relevance": "medium",
+          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/02/292aee7f-2179-4181-bda7-015bf65ed1d1_3fd234e4.jpg?itok=i6BNyEBa&v=1793612297",
+          "why": "",
+          "implications": [],
+          "place": {
+            "name": "New Delhi",
+            "country": "India",
+            "lat": 28.6,
+            "lon": 77.2
+          },
+          "reports": [
+            {
+              "source": "scmp",
+              "headline": "India offers Asean counterterrorism lessons, but will one size fit all?",
+              "url": "https://www.scmp.com/week-asia/politics/article/3372998/why-indias-asean-anti-terrorism-partnership-offer-may-not-be-one-size-fits-all",
+              "date": "2026-11-02T09:38:21.000Z",
+              "kind": "feature",
+              "summary": "As India seeks to expand its security cooperation with Southeast Asia by sharing its battle-tested counterterrorism expertise, defence analysts say its experience would only partly meet Asean’s needs given the differences in threat perception and domestic priorities.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/02/292aee7f-2179-4181-bda7-015bf65ed1d1_3fd234e4.jpg?itok=i6BNyEBa&v=1793612297"
+            }
+          ],
+          "finChecked": true,
+          "thread": "txxk9gb"
+        },
         {
           "id": "sxrek5h",
           "headline": "Iran Braces for More War, No Matter the Outcome of the U.S. and Israeli Elections",
@@ -49848,14 +51804,14 @@
   "source": "BBC News & The Guardian & NPR & Al Jazeera & MercoPress & ABC News & The New York Times & CNBC & CBS News & DW & France 24 & Africanews & South China Morning Post & The Hindu & Mint & The Indian Express",
   "lastRun": {
     "filter": {
-      "judged": 105,
-      "kept": 8,
-      "guarded": 0
+      "judged": 229,
+      "kept": 24,
+      "guarded": 1
     },
     "health": {
       "day": "2026-11-02",
-      "newStories24h": 11,
-      "keepRate2d": 0.072
+      "newStories24h": 15,
+      "keepRate2d": 0.084
     },
     "wars": {
       "linked": 0,
@@ -49864,47 +51820,50 @@
     },
     "places": {
       "labelled": 0,
-      "none": 0,
+      "none": 3,
       "waiting": 0
     },
     "skipped": {
-      "since": "2026-11-01T22:17:25.377Z",
+      "since": "2026-11-02T06:29:56.190Z",
       "counts": {
-        "section": 13,
-        "live_blog": 1
+        "section": 35,
+        "live_blog": 4
       },
       "examples": {
         "section": [
-          "'I've had people eating cat food': Rising cost of living top of mind for US voters",
-          "Google search has gone from being very handy to useless | First Dog on the Moon",
-          "Bulgaria has its first elected female president",
-          "Kimi Antonelli becomes Formula One’s youngest world champion in Mexico City",
-          "Muhammad Ali’s daughter and grandson endorse El-Sayed"
+          "'All this food is now useless': Piles of rubbish after shop freezers hit by cyber-attack",
+          "What we know about the alert app hack in Ukraine and Russia",
+          "What are Americans voting for in this election?",
+          "'New kit' helps battle against bugs",
+          "Guardian Essential poll: record number of Australians are turning their backs on the Melbourne Cup"
         ],
         "live_blog": [
-          "Iran war live: Tankers hit in Hormuz; Trump again says conflict to end soon"
+          "Ikea among shops affected by fridge cyber-hacks – Europe live",
+          "Charities condemn proposal to make some refugees wait up to 30 years for settlement – as it happened",
+          "Abdul El-Sayed’s campaign reports record fundraising day as Haley Stevens faces backlash for endorsing his opponent – li",
+          "US midterms 2026 live: Trump, Democrats make final push amid Michigan rift"
         ]
       }
     },
     "finance": {
       "moved": 0,
-      "checked": 1
+      "checked": 5
     },
-    "analysed": 105,
-    "added": 3,
-    "merged": 5,
-    "rejected": 97,
+    "analysed": 229,
+    "added": 12,
+    "merged": 10,
+    "rejected": 207,
     "failedBatches": 0,
     "feeds": {
       "bbc": {
         "feedsOk": 6,
         "feedsFailed": 0,
-        "items": 158
+        "items": 163
       },
       "guardian": {
         "feedsOk": 7,
         "feedsFailed": 0,
-        "items": 193
+        "items": 197
       },
       "npr": {
         "feedsOk": 4,
@@ -49914,7 +51873,7 @@
       "aljazeera": {
         "feedsOk": 1,
         "feedsFailed": 0,
-        "items": 14
+        "items": 16
       },
       "mercopress": {
         "feedsOk": 3,
@@ -49929,7 +51888,7 @@
       "nyt": {
         "feedsOk": 5,
         "feedsFailed": 0,
-        "items": 177
+        "items": 178
       },
       "cnbc": {
         "feedsOk": 3,
@@ -49939,17 +51898,17 @@
       "cbs": {
         "feedsOk": 2,
         "feedsFailed": 0,
-        "items": 44
+        "items": 48
       },
       "dw": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 30
+        "items": 31
       },
       "france24": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 75
+        "items": 63
       },
       "africanews": {
         "feedsOk": 1,
@@ -49959,22 +51918,22 @@
       "scmp": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 142
+        "items": 145
       }
     },
     "shareImages": {
-      "tried": 1,
-      "found": 1,
+      "tried": 3,
+      "found": 3,
       "summaries": 0
     },
     "threads": {
-      "assigned": 3,
-      "created": 3,
+      "assigned": 12,
+      "created": 4,
       "failedBatches": 0
     },
     "summaries": {
-      "written": 0,
-      "due": 0
+      "written": 5,
+      "due": 5
     },
     "kinds": {
       "labelled": 0,
@@ -49982,96 +51941,106 @@
       "failedBatches": 0
     },
     "frames": {
-      "done": 0,
-      "waiting": 3,
-      "failedBatches": 0,
-      "budgetStopped": true
+      "done": 4,
+      "waiting": 0,
+      "failedBatches": 0
     },
     "stats": {
       "searched": 8,
       "found": 1,
-      "reused": 6,
-      "none": 1,
+      "reused": 5,
+      "none": 2,
       "failed": 0,
-      "proposed": 14,
-      "droppedPoints": 7,
-      "pagesFetched": 3,
+      "proposed": 17,
+      "droppedPoints": 0,
+      "pagesFetched": 2,
       "samples": [
         {
-          "headline": "Chinese stocks rebound on optimism PBOC set to expand US$45 billion relending fa",
-          "result": "no figure found on an official page",
-          "proposed": 2,
+          "headline": "Trump Removes South Africa From the African Growth and Opportunity Act Trade Pro",
+          "result": "nothing",
+          "proposed": 0,
           "checked": 0,
-          "pagesFetched": 2
+          "pagesFetched": 0
         },
         {
-          "headline": "China urges opening Bab al-Mandeb in first joint statement with regional nation",
+          "headline": "Iran proposes two-day plan to reopen Strait of Hormuz",
+          "result": "reused saved series"
+        },
+        {
+          "headline": "Oil price falls amid hope of a breakthrough to end Iran war",
+          "result": "reused saved series"
+        },
+        {
+          "headline": "China and Oman unite in Mideast peace call on sultan’s ‘historic’ Beijing visit",
+          "result": "reused saved series"
+        },
+        {
+          "headline": "Crude prices slide as investors brace for a big week",
+          "result": "reused saved series"
+        },
+        {
+          "headline": "Beijing launches barrage of measures to stabilise stock market after sell-off",
+          "result": "too few checked figures",
+          "proposed": 2,
+          "checked": 2,
+          "pagesFetched": 1,
+          "selfFetched": 1
+        },
+        {
+          "headline": "Oil prices fall as traders hope for diplomatic progress in Middle East",
+          "result": "reused saved series"
+        },
+        {
+          "headline": "Trump Tariffs on Canada Spark Latest Lawsuit Over Trade Powers",
           "result": "chart",
-          "proposed": 12,
-          "checked": 7,
+          "proposed": 15,
+          "checked": 15,
           "pagesFetched": 1
-        },
-        {
-          "headline": "Oil prices jump to five-month high as attacks threaten global supply",
-          "result": "reused saved series"
-        },
-        {
-          "headline": "Trump makes Russia-friendly moves as he looks for a way to end the war with Ukra",
-          "result": "reused saved series"
-        },
-        {
-          "headline": "Qatar, France call for opening of Hormuz and Gaza ceasefire implementation",
-          "result": "reused saved series"
-        },
-        {
-          "headline": "Russia to send first diesel tanker to the US amid Trump deal",
-          "result": "reused saved series"
-        },
-        {
-          "headline": "France 'has to assist' Gulf states, diplomat says as Macron makes three-day visi",
-          "result": "reused saved series"
-        },
-        {
-          "headline": "Oil prices climb as traders assess Middle East developments",
-          "result": "reused saved series"
         }
       ]
     },
     "models": {
       "filter": {
         "model": "claude-haiku-5-5",
-        "calls": 16,
-        "inputTokens": 50437,
-        "outputTokens": 16214,
-        "cost": 0.0132
+        "calls": 30,
+        "inputTokens": 92868,
+        "outputTokens": 37754,
+        "cost": 0.0281
       },
       "analysis_quick": {
         "model": "claude-sonnet-5-5",
-        "calls": 2,
-        "inputTokens": 6040,
-        "outputTokens": 4551,
-        "cost": 0.0576
+        "calls": 8,
+        "inputTokens": 24716,
+        "outputTokens": 17555,
+        "cost": 0.225
       },
       "stats": {
         "model": "claude-sonnet-5-5",
+        "calls": 3,
+        "inputTokens": 200255,
+        "outputTokens": 2662,
+        "searches": 4,
+        "fetches": 5,
+        "cost": 0.4671
+      },
+      "analysis": {
+        "model": "claude-opus-5-5",
         "calls": 2,
-        "inputTokens": 222787,
-        "outputTokens": 2902,
-        "searches": 5,
-        "fetches": 3,
-        "cost": 0.5246
+        "inputTokens": 10925,
+        "outputTokens": 17239,
+        "cost": 0.3885
       },
       "threads": {
         "model": "claude-sonnet-5-5",
-        "calls": 1,
-        "inputTokens": 9070,
-        "outputTokens": 103,
-        "cost": 0.0192
+        "calls": 6,
+        "inputTokens": 16149,
+        "outputTokens": 2993,
+        "cost": 0.0622
       }
     },
     "spend": {
-      "thisDesk": 0.6145,
-      "today": 3.8652,
+      "thisDesk": 1.171,
+      "today": 1.171,
       "cap": 6
     }
   },
