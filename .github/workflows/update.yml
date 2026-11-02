@@ -18,6 +18,8 @@ jobs:
     timeout-minutes: 45            # Opus analysis and 13 outlets take longer than before
     steps:
       - uses: actions/checkout@v6
+        with:
+          ref: main                  # 3 Nov: always start from the latest data, even when this run waited in the queue
 
       - uses: actions/setup-node@v6
         with:
@@ -37,7 +39,11 @@ jobs:
             git config user.email "desk-bot@users.noreply.github.com"
             git add data
             git commit -m "Update India desk"
-            git pull --rebase
+            if ! git pull --rebase; then
+              git rebase --abort
+              echo "::error title=Results not saved::Another update reached the repo while this run was working, so its results could not be combined. Nothing on the site changed; the next run will start from the latest data."
+              exit 1
+            fi
             git push
           else
             echo "No changes"
