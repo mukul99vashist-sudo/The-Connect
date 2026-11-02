@@ -2,12 +2,282 @@
   "schema": 4,
   "region": "India",
   "since": "2026-10-02",
-  "updatedAt": "2026-11-01T22:17:25.377Z",
+  "updatedAt": "2026-11-02T06:29:56.190Z",
   "sectors": [
     {
       "id": "energy",
       "name": "Energy",
       "items": [
+        {
+          "id": "sotc2yh",
+          "headline": "Iran and US explore diplomacy amid rising threats of war",
+          "url": "https://www.aljazeera.com/news/2026/11/1/iran-and-us-explore-diplomacy-amid-rising-threats-of-war",
+          "source": "aljazeera",
+          "date": "2026-11-01T13:02:10.000Z",
+          "relevance": "high",
+          "why": "Iran says it could reopen the Strait of Hormuz in a shorter period if its conditions are met, while US President Donald Trump says the US still has targets to 'take care of'. India depends on Gulf shipping for energy.",
+          "implications": [
+            "The report does not set out Iran's conditions, so the timing of any return to normal shipping through the strait remains uncertain for Indian importers and refiners.",
+            "Talks running alongside threats of war mean the situation could move either way, and prolonged disruption could raise costs for Indian refiners and fuel distributors."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-01T16:03:39.496Z",
+            "tier": "quick",
+            "primary": "disruption_map",
+            "complement": null,
+            "features": [
+              "disruption",
+              "armed_conflict",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "high",
+              "reason": "The strait could affect crude oil and LPG shipments to India, which are household essentials and top imports. This channel is inferred, because the report itself does not name specific cargoes."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "The timing depends on whether diplomacy produces a reopening and on how quickly any change in shipping and prices passes through to Indian fuel markets."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single Al Jazeera report, and Iran's conditions, the current state of the strait and the outcome of talks are not confirmed."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "fuel and LPG supply costs",
+                "effect": "If shipping through Hormuz stays restricted, import costs for crude and gas could rise and may eventually feed into petrol, diesel and cooking gas prices; a reopening could ease this.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "shipping costs and delays",
+                "effect": "Uncertainty over passage through the strait could raise freight and insurance costs for traders whose cargoes pass through the Gulf.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Iran setting out the conditions under which it would reopen the Strait of Hormuz, or announcing a reopening",
+                "why": "It would show whether shipping through the strait could resume and how soon.",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "Further US statements or action on the targets Trump says the US still has to 'take care of'",
+                "why": "It would show whether talks are holding or tensions are escalating toward war.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "India imports most of its crude oil, and much of its crude and liquefied petroleum gas (LPG) comes from Gulf producers whose cargoes ship through Hormuz.",
+              "Disruption to a major shipping route usually raises oil prices, freight rates and insurance costs, even before physical supplies fall."
+            ],
+            "terms": [
+              {
+                "term": "Hormuz",
+                "meaning": "The Strait of Hormuz is a narrow waterway linking the Gulf to the open sea, through which a large share of the world's oil exports passes."
+              }
+            ],
+            "frameworks": {
+              "disruption_map": {
+                "node": {
+                  "name": "Strait of Hormuz",
+                  "type": "strait",
+                  "status": "closed",
+                  "as_of": "1 Nov 2026"
+                },
+                "cause": {
+                  "text": "It is not yet known why the strait is closed.",
+                  "status": "claimed"
+                },
+                "flows": [
+                  {
+                    "flow": "Crude",
+                    "india_link": "A large share of the crude oil India imports from the Gulf is shipped through the Strait of Hormuz, so disruption there can raise India's fuel import costs.",
+                    "basis": "inferred"
+                  },
+                  {
+                    "flow": "LNG",
+                    "india_link": "Much of India's liquefied natural gas from Qatar and the UAE passes through the strait, supplying power plants, fertiliser makers and city gas networks.",
+                    "basis": "inferred"
+                  }
+                ],
+                "alternatives": [],
+                "duration": "not reported"
+              }
+            }
+          },
+          "place": {
+            "name": "Strait of Hormuz",
+            "country": "Iran",
+            "lat": 26.6,
+            "lon": 56.3,
+            "involves": [
+              "United States"
+            ]
+          },
+          "reports": [
+            {
+              "source": "aljazeera",
+              "headline": "Iran and US explore diplomacy amid rising threats of war",
+              "url": "https://www.aljazeera.com/news/2026/11/1/iran-and-us-explore-diplomacy-amid-rising-threats-of-war",
+              "date": "2026-11-01T13:02:10.000Z",
+              "kind": "hard",
+              "summary": "Iran says could reopen Hormuz in shorter period if conditions met, as Trump says US still has targets to 'take care of'.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/14405199-1793530960.jpg?resize=1920%2C1440"
+            },
+            {
+              "source": "cnbc",
+              "headline": "Oil prices fall amid reports that the U.S. and Iran are both seeking diplomacy",
+              "url": "https://www.cnbc.com/2026/11/02/oil-prices-fall-as-iran-us-pursue-diplomacy.html",
+              "date": "2026-11-02T05:04:26.000Z",
+              "kind": "hard",
+              "summary": "Oil fell Monday, amid news that both the U.S. and Iran are pursuing diplomacy amid ongoing Mideast tensions",
+              "summaryV": 3
+            },
+            {
+              "source": "scmp",
+              "headline": "Iran warns new war with US could last longer as Trump threatens ‘the hammer’",
+              "url": "https://www.scmp.com/news/world/middle-east/article/3372947/iran-warns-new-war-us-could-last-longer-trump-threatens-hammer",
+              "date": "2026-11-02T05:58:52.000Z",
+              "kind": "hard",
+              "summary": "Iran warned on Sunday that any renewed war with the United States could last longer than the previous round of fighting, after US President Donald Trump said he still had to “take care” of more targets.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/02/6c04b72e-d85c-4a12-9e97-adf0986e7c19_4e6cdecd.jpg?itok=cpp639gY&v=1793599122"
+            }
+          ],
+          "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/14405199-1793530960.jpg?resize=1920%2C1440",
+          "thread": "t2ogxay",
+          "stats": {
+            "v": 2,
+            "at": "2026-11-01T22:13:07.633Z",
+            "series": [
+              {
+                "title": "Crude oil and condensate through the Strait of Hormuz",
+                "unit": "million barrels per day",
+                "publisher": "U.S. Energy Information Administration",
+                "points": [
+                  {
+                    "period": "2020",
+                    "value": 14.4,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2021",
+                    "value": 14.7,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2022",
+                    "value": 16.2,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2023",
+                    "value": 15.8,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2024",
+                    "value": 14.6,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "1H25",
+                    "value": 14.7,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "title": "eia.gov",
+                    "domain": "eia.gov"
+                  }
+                ],
+                "domains": [
+                  "eia.gov"
+                ],
+                "dropped": 0,
+                "why": "Both series directly measure oil flows through the Strait of Hormuz, the chokepoint whose possible reopening and closure is the core of the story.",
+                "reused": true,
+                "checkedAt": "2026-10-13T23:16:50.395Z"
+              },
+              {
+                "title": "Oil flows through the Strait of Hormuz, total",
+                "unit": "million barrels per day",
+                "publisher": "U.S. Energy Information Administration",
+                "points": [
+                  {
+                    "period": "2020",
+                    "value": 19.2,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2021",
+                    "value": 19.7,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2022",
+                    "value": 21.9,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2023",
+                    "value": 21.8,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2024",
+                    "value": 20.7,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "1H25",
+                    "value": 20.9,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "title": "eia.gov",
+                    "domain": "eia.gov"
+                  }
+                ],
+                "domains": [
+                  "eia.gov"
+                ],
+                "dropped": 0,
+                "why": "Both series directly measure oil flows through the Strait of Hormuz, the chokepoint whose possible reopening and closure is the core of the story.",
+                "reused": true,
+                "checkedAt": "2026-10-13T23:16:50.395Z"
+              }
+            ]
+          }
+        },
         {
           "id": "szrvdxz",
           "headline": "Trump predicts Iran war will end soon as Qatar pushes for a deal",
@@ -249,6 +519,24 @@
               "summaryV": 3,
               "lede": "Officials from the Gulf states are “braced for the worst” as they wait for Washington’s response to an Iranian proposal that could reopen the strait of Hormuz before the US midterm elections on Tuesday.",
               "image": "https://i.guim.co.uk/img/media/75595a1f74415be71c080524ca6d4e1d0a54626c/199_0_6398_5119/master/6398.jpg?width=700&quality=85&auto=format&fit=max&s=b44d3161c2b546a39f6c862bfd59f03b"
+            },
+            {
+              "source": "npr",
+              "headline": "Gulf region on edge as Qatar leads talks with Iran to stave off new U.S. attacks",
+              "url": "https://www.npr.org/2026/11/01/nx-s1-6023237/gulf-leaders-meet-in-qatar-in-effort-to-stave-off-new-escalation-in-u-s-and-iran-war",
+              "date": "2026-11-01T22:19:13.000Z",
+              "kind": "hard",
+              "summary": "Qatar has been leading intense mediation efforts over the past 72 hours to prevent a new round of possible U.S. attacks on Iran after Tuesday's midterm elections. The uncertainty has the entire Gulf region on edge.",
+              "summaryV": 3
+            },
+            {
+              "source": "cnbc",
+              "headline": "Rubio says Trump wants to end Iran war 'peacefully' even as both sides prepare for strikes",
+              "url": "https://www.cnbc.com/2026/11/02/us-iran-war-trump-hormuz-rubio.html",
+              "date": "2026-11-02T02:39:35.000Z",
+              "kind": "hard",
+              "summary": "The remarks come as reports suggest that both sides are gearing up for additional military strikes after the U.S. midterm elections.",
+              "summaryV": 3
             }
           ],
           "image": "https://assets3.cbsnewsstatic.com/hub/i/r/2026/10/30/6861dff3-34d6-496b-a11f-ad14b9228936/thumbnail/1200x630/865a67ecaaffb5727a37fc942110b0ff/hvy6j5dwyaajcje.jpg",
@@ -500,257 +788,6 @@
             }
           ],
           "thread": "t1ibmsov"
-        },
-        {
-          "id": "sotc2yh",
-          "headline": "Iran and US explore diplomacy amid rising threats of war",
-          "url": "https://www.aljazeera.com/news/2026/11/1/iran-and-us-explore-diplomacy-amid-rising-threats-of-war",
-          "source": "aljazeera",
-          "date": "2026-11-01T13:02:10.000Z",
-          "relevance": "high",
-          "why": "Iran says it could reopen the Strait of Hormuz in a shorter period if its conditions are met, while US President Donald Trump says the US still has targets to 'take care of'. India depends on Gulf shipping for energy.",
-          "implications": [
-            "The report does not set out Iran's conditions, so the timing of any return to normal shipping through the strait remains uncertain for Indian importers and refiners.",
-            "Talks running alongside threats of war mean the situation could move either way, and prolonged disruption could raise costs for Indian refiners and fuel distributors."
-          ],
-          "analysis": {
-            "v": 3,
-            "at": "2026-11-01T16:03:39.496Z",
-            "tier": "quick",
-            "primary": "disruption_map",
-            "complement": null,
-            "features": [
-              "disruption",
-              "armed_conflict",
-              "pending_outcome"
-            ],
-            "exposure": {
-              "level": "high",
-              "reason": "The strait could affect crude oil and LPG shipments to India, which are household essentials and top imports. This channel is inferred, because the report itself does not name specific cargoes."
-            },
-            "horizon": {
-              "value": "weeks",
-              "reason": "The timing depends on whether diplomacy produces a reopening and on how quickly any change in shipping and prices passes through to Indian fuel markets."
-            },
-            "confidence": {
-              "level": "low",
-              "reason": "This rests on a single Al Jazeera report, and Iran's conditions, the current state of the strait and the outcome of talks are not confirmed."
-            },
-            "outlets": 1,
-            "affected": [
-              {
-                "group": "Fuel & LPG users",
-                "direction": "unclear",
-                "what": "fuel and LPG supply costs",
-                "effect": "If shipping through Hormuz stays restricted, import costs for crude and gas could rise and may eventually feed into petrol, diesel and cooking gas prices; a reopening could ease this.",
-                "basis": "inferred"
-              },
-              {
-                "group": "Importers & traders",
-                "direction": "unclear",
-                "what": "shipping costs and delays",
-                "effect": "Uncertainty over passage through the strait could raise freight and insurance costs for traders whose cargoes pass through the Gulf.",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "Iran setting out the conditions under which it would reopen the Strait of Hormuz, or announcing a reopening",
-                "why": "It would show whether shipping through the strait could resume and how soon.",
-                "when": "",
-                "where": ""
-              },
-              {
-                "what": "Further US statements or action on the targets Trump says the US still has to 'take care of'",
-                "why": "It would show whether talks are holding or tensions are escalating toward war.",
-                "when": "",
-                "where": ""
-              }
-            ],
-            "context": [
-              "India imports most of its crude oil, and much of its crude and liquefied petroleum gas (LPG) comes from Gulf producers whose cargoes ship through Hormuz.",
-              "Disruption to a major shipping route usually raises oil prices, freight rates and insurance costs, even before physical supplies fall."
-            ],
-            "terms": [
-              {
-                "term": "Hormuz",
-                "meaning": "The Strait of Hormuz is a narrow waterway linking the Gulf to the open sea, through which a large share of the world's oil exports passes."
-              }
-            ],
-            "frameworks": {
-              "disruption_map": {
-                "node": {
-                  "name": "Strait of Hormuz",
-                  "type": "strait",
-                  "status": "closed",
-                  "as_of": "1 Nov 2026"
-                },
-                "cause": {
-                  "text": "It is not yet known why the strait is closed.",
-                  "status": "claimed"
-                },
-                "flows": [
-                  {
-                    "flow": "Crude",
-                    "india_link": "A large share of the crude oil India imports from the Gulf is shipped through the Strait of Hormuz, so disruption there can raise India's fuel import costs.",
-                    "basis": "inferred"
-                  },
-                  {
-                    "flow": "LNG",
-                    "india_link": "Much of India's liquefied natural gas from Qatar and the UAE passes through the strait, supplying power plants, fertiliser makers and city gas networks.",
-                    "basis": "inferred"
-                  }
-                ],
-                "alternatives": [],
-                "duration": "not reported"
-              }
-            }
-          },
-          "place": {
-            "name": "Strait of Hormuz",
-            "country": "Iran",
-            "lat": 26.6,
-            "lon": 56.3,
-            "involves": [
-              "United States"
-            ]
-          },
-          "reports": [
-            {
-              "source": "aljazeera",
-              "headline": "Iran and US explore diplomacy amid rising threats of war",
-              "url": "https://www.aljazeera.com/news/2026/11/1/iran-and-us-explore-diplomacy-amid-rising-threats-of-war",
-              "date": "2026-11-01T13:02:10.000Z",
-              "kind": "hard",
-              "summary": "Iran says could reopen Hormuz in shorter period if conditions met, as Trump says US still has targets to 'take care of'.",
-              "summaryV": 3,
-              "ogTried": true,
-              "descTried": true,
-              "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/14405199-1793530960.jpg?resize=1920%2C1440"
-            }
-          ],
-          "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/14405199-1793530960.jpg?resize=1920%2C1440",
-          "thread": "t2ogxay",
-          "stats": {
-            "v": 2,
-            "at": "2026-11-01T22:13:07.633Z",
-            "series": [
-              {
-                "title": "Crude oil and condensate through the Strait of Hormuz",
-                "unit": "million barrels per day",
-                "publisher": "U.S. Energy Information Administration",
-                "points": [
-                  {
-                    "period": "2020",
-                    "value": 14.4,
-                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-                    "source": "eia.gov"
-                  },
-                  {
-                    "period": "2021",
-                    "value": 14.7,
-                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-                    "source": "eia.gov"
-                  },
-                  {
-                    "period": "2022",
-                    "value": 16.2,
-                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-                    "source": "eia.gov"
-                  },
-                  {
-                    "period": "2023",
-                    "value": 15.8,
-                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-                    "source": "eia.gov"
-                  },
-                  {
-                    "period": "2024",
-                    "value": 14.6,
-                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-                    "source": "eia.gov"
-                  },
-                  {
-                    "period": "1H25",
-                    "value": 14.7,
-                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-                    "source": "eia.gov"
-                  }
-                ],
-                "sources": [
-                  {
-                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-                    "title": "eia.gov",
-                    "domain": "eia.gov"
-                  }
-                ],
-                "domains": [
-                  "eia.gov"
-                ],
-                "dropped": 0,
-                "why": "Both series directly measure oil flows through the Strait of Hormuz, the chokepoint whose possible reopening and closure is the core of the story.",
-                "reused": true,
-                "checkedAt": "2026-10-13T23:16:50.395Z"
-              },
-              {
-                "title": "Oil flows through the Strait of Hormuz, total",
-                "unit": "million barrels per day",
-                "publisher": "U.S. Energy Information Administration",
-                "points": [
-                  {
-                    "period": "2020",
-                    "value": 19.2,
-                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-                    "source": "eia.gov"
-                  },
-                  {
-                    "period": "2021",
-                    "value": 19.7,
-                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-                    "source": "eia.gov"
-                  },
-                  {
-                    "period": "2022",
-                    "value": 21.9,
-                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-                    "source": "eia.gov"
-                  },
-                  {
-                    "period": "2023",
-                    "value": 21.8,
-                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-                    "source": "eia.gov"
-                  },
-                  {
-                    "period": "2024",
-                    "value": 20.7,
-                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-                    "source": "eia.gov"
-                  },
-                  {
-                    "period": "1H25",
-                    "value": 20.9,
-                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-                    "source": "eia.gov"
-                  }
-                ],
-                "sources": [
-                  {
-                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-                    "title": "eia.gov",
-                    "domain": "eia.gov"
-                  }
-                ],
-                "domains": [
-                  "eia.gov"
-                ],
-                "dropped": 0,
-                "why": "Both series directly measure oil flows through the Strait of Hormuz, the chokepoint whose possible reopening and closure is the core of the story.",
-                "reused": true,
-                "checkedAt": "2026-10-13T23:16:50.395Z"
-              }
-            ]
-          }
         },
         {
           "id": "s16zdv39",
@@ -8577,7 +8614,127 @@
             }
           ],
           "thread": "t2ogxay",
-          "priority": 80
+          "priority": 80,
+          "stats": {
+            "v": 2,
+            "at": "2026-11-02T06:29:43.120Z",
+            "series": [
+              {
+                "title": "Brent crude spot price, daily",
+                "unit": "US$ per barrel",
+                "publisher": "U.S. Energy Information Administration",
+                "points": [
+                  {
+                    "period": "29 Sep 2026",
+                    "value": 113.96,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "30 Sep 2026",
+                    "value": 115.91,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "1 Oct 2026",
+                    "value": 114.82,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "2 Oct 2026",
+                    "value": 135.51,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "5 Oct 2026",
+                    "value": 125.51,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "6 Oct 2026",
+                    "value": 125.44,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "title": "Spot Prices for Crude Oil and Petroleum Products",
+                    "domain": "eia.gov"
+                  }
+                ],
+                "domains": [
+                  "eia.gov"
+                ],
+                "dropped": 0,
+                "why": "The Brent spot price series tracks the benchmark oil price that rose to a five-month high in the story, and the Strait of Hormuz crude flow series measures the supply disruption through the strait tha",
+                "reused": true,
+                "checkedAt": "2026-10-13T23:11:10.422Z"
+              },
+              {
+                "title": "Crude oil and condensate through the Strait of Hormuz",
+                "unit": "million barrels per day",
+                "publisher": "U.S. Energy Information Administration",
+                "points": [
+                  {
+                    "period": "2020",
+                    "value": 14.4,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2021",
+                    "value": 14.7,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2022",
+                    "value": 16.2,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2023",
+                    "value": 15.8,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2024",
+                    "value": 14.6,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "1H25",
+                    "value": 14.7,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "title": "eia.gov",
+                    "domain": "eia.gov"
+                  }
+                ],
+                "domains": [
+                  "eia.gov"
+                ],
+                "dropped": 0,
+                "why": "The Brent spot price series tracks the benchmark oil price that rose to a five-month high in the story, and the Strait of Hormuz crude flow series measures the supply disruption through the strait tha",
+                "reused": true,
+                "checkedAt": "2026-10-13T23:16:50.395Z"
+              }
+            ]
+          }
         },
         {
           "id": "s14woks4",
@@ -9032,7 +9189,115 @@
               "Ukraine"
             ]
           },
-          "priority": 75
+          "priority": 75,
+          "stats": {
+            "v": 2,
+            "at": "2026-11-02T06:29:45.229Z",
+            "series": [
+              {
+                "title": "U.S. imports of distillate fuel oil (diesel) from Russia, annual",
+                "unit": "thousand barrels",
+                "publisher": "U.S. Energy Information Administration",
+                "points": [
+                  {
+                    "period": "2019",
+                    "value": 2436,
+                    "url": "https://www.eia.gov/dnav/pet/PET_MOVE_IMPCUS_A1_NRS_EPD0_IM0_MBBL_A.htm",
+                    "source": "Distillate Fuel Oil Imports from Russia"
+                  },
+                  {
+                    "period": "2020",
+                    "value": 3207,
+                    "url": "https://www.eia.gov/dnav/pet/PET_MOVE_IMPCUS_A1_NRS_EPD0_IM0_MBBL_A.htm",
+                    "source": "Distillate Fuel Oil Imports from Russia"
+                  },
+                  {
+                    "period": "2021",
+                    "value": 8809,
+                    "url": "https://www.eia.gov/dnav/pet/PET_MOVE_IMPCUS_A1_NRS_EPD0_IM0_MBBL_A.htm",
+                    "source": "Distillate Fuel Oil Imports from Russia"
+                  },
+                  {
+                    "period": "2022",
+                    "value": 2267,
+                    "url": "https://www.eia.gov/dnav/pet/PET_MOVE_IMPCUS_A1_NRS_EPD0_IM0_MBBL_A.htm",
+                    "source": "Distillate Fuel Oil Imports from Russia"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.eia.gov/dnav/pet/PET_MOVE_IMPCUS_A1_NRS_EPD0_IM0_MBBL_A.htm",
+                    "title": "Distillate Fuel Oil Imports from Russia",
+                    "domain": "eia.gov"
+                  }
+                ],
+                "domains": [
+                  "eia.gov"
+                ],
+                "dropped": 0,
+                "why": "Both series track U.S. oil imports from Russia, the same country and flow at the center of the story's reported diesel deal and the sanctions debate.",
+                "reused": true,
+                "checkedAt": "2026-10-13T23:16:06.829Z"
+              },
+              {
+                "title": "U.S. net imports of crude oil and products from Russia",
+                "unit": "thousand barrels per day",
+                "publisher": "U.S. Energy Information Administration",
+                "points": [
+                  {
+                    "period": "2020",
+                    "value": 540,
+                    "url": "https://www.eia.gov/dnav/pet/pet_move_neti_dc_nus-nrs_mbblpd_a.htm",
+                    "source": "Russia Net Imports of Crude Oil and Petroleum Products into the U.S."
+                  },
+                  {
+                    "period": "2021",
+                    "value": 673,
+                    "url": "https://www.eia.gov/dnav/pet/pet_move_neti_dc_nus-nrs_mbblpd_a.htm",
+                    "source": "Russia Net Imports of Crude Oil and Petroleum Products into the U.S."
+                  },
+                  {
+                    "period": "2022",
+                    "value": 147,
+                    "url": "https://www.eia.gov/dnav/pet/pet_move_neti_dc_nus-nrs_mbblpd_a.htm",
+                    "source": "Russia Net Imports of Crude Oil and Petroleum Products into the U.S."
+                  },
+                  {
+                    "period": "2023",
+                    "value": 0,
+                    "url": "https://www.eia.gov/dnav/pet/pet_move_neti_dc_nus-nrs_mbblpd_a.htm",
+                    "source": "Russia Net Imports of Crude Oil and Petroleum Products into the U.S."
+                  },
+                  {
+                    "period": "2024",
+                    "value": 0,
+                    "url": "https://www.eia.gov/dnav/pet/pet_move_neti_dc_nus-nrs_mbblpd_a.htm",
+                    "source": "Russia Net Imports of Crude Oil and Petroleum Products into the U.S."
+                  },
+                  {
+                    "period": "2025",
+                    "value": 0,
+                    "url": "https://www.eia.gov/dnav/pet/pet_move_neti_dc_nus-nrs_mbblpd_a.htm",
+                    "source": "Russia Net Imports of Crude Oil and Petroleum Products into the U.S."
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.eia.gov/dnav/pet/pet_move_neti_dc_nus-nrs_mbblpd_a.htm",
+                    "title": "Russia Net Imports of Crude Oil and Petroleum Products into the U.S.",
+                    "domain": "eia.gov"
+                  }
+                ],
+                "domains": [
+                  "eia.gov"
+                ],
+                "dropped": 0,
+                "why": "Both series track U.S. oil imports from Russia, the same country and flow at the center of the story's reported diesel deal and the sanctions debate.",
+                "reused": true,
+                "checkedAt": "2026-10-13T23:10:06.410Z"
+              }
+            ]
+          }
         },
         {
           "id": "s1vngyow",
@@ -9156,7 +9421,115 @@
               "United States"
             ]
           },
-          "priority": 60
+          "priority": 60,
+          "stats": {
+            "v": 2,
+            "at": "2026-11-02T06:29:49.115Z",
+            "series": [
+              {
+                "title": "U.S. imports of distillate fuel oil (diesel) from Russia, annual",
+                "unit": "thousand barrels",
+                "publisher": "U.S. Energy Information Administration",
+                "points": [
+                  {
+                    "period": "2019",
+                    "value": 2436,
+                    "url": "https://www.eia.gov/dnav/pet/PET_MOVE_IMPCUS_A1_NRS_EPD0_IM0_MBBL_A.htm",
+                    "source": "Distillate Fuel Oil Imports from Russia"
+                  },
+                  {
+                    "period": "2020",
+                    "value": 3207,
+                    "url": "https://www.eia.gov/dnav/pet/PET_MOVE_IMPCUS_A1_NRS_EPD0_IM0_MBBL_A.htm",
+                    "source": "Distillate Fuel Oil Imports from Russia"
+                  },
+                  {
+                    "period": "2021",
+                    "value": 8809,
+                    "url": "https://www.eia.gov/dnav/pet/PET_MOVE_IMPCUS_A1_NRS_EPD0_IM0_MBBL_A.htm",
+                    "source": "Distillate Fuel Oil Imports from Russia"
+                  },
+                  {
+                    "period": "2022",
+                    "value": 2267,
+                    "url": "https://www.eia.gov/dnav/pet/PET_MOVE_IMPCUS_A1_NRS_EPD0_IM0_MBBL_A.htm",
+                    "source": "Distillate Fuel Oil Imports from Russia"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.eia.gov/dnav/pet/PET_MOVE_IMPCUS_A1_NRS_EPD0_IM0_MBBL_A.htm",
+                    "title": "Distillate Fuel Oil Imports from Russia",
+                    "domain": "eia.gov"
+                  }
+                ],
+                "domains": [
+                  "eia.gov"
+                ],
+                "dropped": 0,
+                "why": "Both series track petroleum flows between Russia and the United States, the same country pair and trade direction as the story's diesel tanker shipment, with one covering diesel specifically and the o",
+                "reused": true,
+                "checkedAt": "2026-10-13T23:16:06.829Z"
+              },
+              {
+                "title": "U.S. net imports of crude oil and products from Russia",
+                "unit": "thousand barrels per day",
+                "publisher": "U.S. Energy Information Administration",
+                "points": [
+                  {
+                    "period": "2020",
+                    "value": 540,
+                    "url": "https://www.eia.gov/dnav/pet/pet_move_neti_dc_nus-nrs_mbblpd_a.htm",
+                    "source": "Russia Net Imports of Crude Oil and Petroleum Products into the U.S."
+                  },
+                  {
+                    "period": "2021",
+                    "value": 673,
+                    "url": "https://www.eia.gov/dnav/pet/pet_move_neti_dc_nus-nrs_mbblpd_a.htm",
+                    "source": "Russia Net Imports of Crude Oil and Petroleum Products into the U.S."
+                  },
+                  {
+                    "period": "2022",
+                    "value": 147,
+                    "url": "https://www.eia.gov/dnav/pet/pet_move_neti_dc_nus-nrs_mbblpd_a.htm",
+                    "source": "Russia Net Imports of Crude Oil and Petroleum Products into the U.S."
+                  },
+                  {
+                    "period": "2023",
+                    "value": 0,
+                    "url": "https://www.eia.gov/dnav/pet/pet_move_neti_dc_nus-nrs_mbblpd_a.htm",
+                    "source": "Russia Net Imports of Crude Oil and Petroleum Products into the U.S."
+                  },
+                  {
+                    "period": "2024",
+                    "value": 0,
+                    "url": "https://www.eia.gov/dnav/pet/pet_move_neti_dc_nus-nrs_mbblpd_a.htm",
+                    "source": "Russia Net Imports of Crude Oil and Petroleum Products into the U.S."
+                  },
+                  {
+                    "period": "2025",
+                    "value": 0,
+                    "url": "https://www.eia.gov/dnav/pet/pet_move_neti_dc_nus-nrs_mbblpd_a.htm",
+                    "source": "Russia Net Imports of Crude Oil and Petroleum Products into the U.S."
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.eia.gov/dnav/pet/pet_move_neti_dc_nus-nrs_mbblpd_a.htm",
+                    "title": "Russia Net Imports of Crude Oil and Petroleum Products into the U.S.",
+                    "domain": "eia.gov"
+                  }
+                ],
+                "domains": [
+                  "eia.gov"
+                ],
+                "dropped": 0,
+                "why": "Both series track petroleum flows between Russia and the United States, the same country pair and trade direction as the story's diesel tanker shipment, with one covering diesel specifically and the o",
+                "reused": true,
+                "checkedAt": "2026-10-13T23:10:06.410Z"
+              }
+            ]
+          }
         },
         {
           "id": "s1xowkk",
@@ -9446,7 +9819,121 @@
               "France"
             ]
           },
-          "priority": 65
+          "priority": 65,
+          "stats": {
+            "v": 2,
+            "at": "2026-11-02T06:29:51.662Z",
+            "series": [
+              {
+                "title": "Oil flows through the Strait of Hormuz, total",
+                "unit": "million barrels per day",
+                "publisher": "U.S. Energy Information Administration",
+                "points": [
+                  {
+                    "period": "2020",
+                    "value": 19.2,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2021",
+                    "value": 19.7,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2022",
+                    "value": 21.9,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2023",
+                    "value": 21.8,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2024",
+                    "value": 20.7,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "1H25",
+                    "value": 20.9,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "title": "eia.gov",
+                    "domain": "eia.gov"
+                  }
+                ],
+                "domains": [
+                  "eia.gov"
+                ],
+                "dropped": 0,
+                "why": "Oil flows through the Strait of Hormuz and the Bab el-Mandeb Strait directly track the Gulf supply routes and the Red Sea shipping risk from Houthi attacks that the story describes.",
+                "reused": true,
+                "checkedAt": "2026-10-13T23:16:50.395Z"
+              },
+              {
+                "title": "Oil flows through Bab el-Mandeb Strait",
+                "unit": "million barrels per day",
+                "publisher": "U.S. Energy Information Administration",
+                "points": [
+                  {
+                    "period": "2020",
+                    "value": 5.7,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2021",
+                    "value": 6,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2022",
+                    "value": 8,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2023",
+                    "value": 9.3,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2024",
+                    "value": 4.1,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "title": "eia.gov",
+                    "domain": "eia.gov"
+                  }
+                ],
+                "domains": [
+                  "eia.gov"
+                ],
+                "dropped": 1,
+                "why": "Oil flows through the Strait of Hormuz and the Bab el-Mandeb Strait directly track the Gulf supply routes and the Red Sea shipping risk from Houthi attacks that the story describes.",
+                "reused": true,
+                "checkedAt": "2026-11-02T06:29:40.927Z"
+              }
+            ]
+          }
         },
         {
           "id": "s13un5s1",
@@ -9852,7 +10339,127 @@
               "Iran"
             ]
           },
-          "priority": 80
+          "priority": 80,
+          "stats": {
+            "v": 2,
+            "at": "2026-11-02T06:29:53.829Z",
+            "series": [
+              {
+                "title": "Brent crude spot price, daily",
+                "unit": "US$ per barrel",
+                "publisher": "U.S. Energy Information Administration",
+                "points": [
+                  {
+                    "period": "29 Sep 2026",
+                    "value": 113.96,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "30 Sep 2026",
+                    "value": 115.91,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "1 Oct 2026",
+                    "value": 114.82,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "2 Oct 2026",
+                    "value": 135.51,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "5 Oct 2026",
+                    "value": 125.51,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "6 Oct 2026",
+                    "value": 125.44,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "title": "Spot Prices for Crude Oil and Petroleum Products",
+                    "domain": "eia.gov"
+                  }
+                ],
+                "domains": [
+                  "eia.gov"
+                ],
+                "dropped": 0,
+                "why": "The Brent crude spot price tracks the oil price rise the story reports, and total oil flows through the Strait of Hormuz measure the shipping disruption the story describes.",
+                "reused": true,
+                "checkedAt": "2026-10-13T23:11:10.422Z"
+              },
+              {
+                "title": "Oil flows through the Strait of Hormuz, total",
+                "unit": "million barrels per day",
+                "publisher": "U.S. Energy Information Administration",
+                "points": [
+                  {
+                    "period": "2020",
+                    "value": 19.2,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2021",
+                    "value": 19.7,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2022",
+                    "value": 21.9,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2023",
+                    "value": 21.8,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2024",
+                    "value": 20.7,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "1H25",
+                    "value": 20.9,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "title": "eia.gov",
+                    "domain": "eia.gov"
+                  }
+                ],
+                "domains": [
+                  "eia.gov"
+                ],
+                "dropped": 0,
+                "why": "The Brent crude spot price tracks the oil price rise the story reports, and total oil flows through the Strait of Hormuz measure the shipping disruption the story describes.",
+                "reused": true,
+                "checkedAt": "2026-10-13T23:16:50.395Z"
+              }
+            ]
+          }
         },
         {
           "id": "s1hh1qud",
@@ -20684,7 +21291,62 @@
             }
           ],
           "thread": "t9i3c9z",
-          "priority": 60
+          "priority": 60,
+          "stats": {
+            "v": 2,
+            "at": "2026-11-02T06:29:40.927Z",
+            "series": [
+              {
+                "title": "Oil flows through Bab el-Mandeb Strait",
+                "unit": "million barrels per day",
+                "publisher": "U.S. Energy Information Administration",
+                "why": "This series tracks how much crude oil and petroleum product moved through the strait that China and Djibouti want kept open, and it shows the fall once Red Sea shipping came under attack.",
+                "points": [
+                  {
+                    "period": "2020",
+                    "value": 5.7,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2021",
+                    "value": 6,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2022",
+                    "value": 8,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2023",
+                    "value": 9.3,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2024",
+                    "value": 4.1,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  }
+                ],
+                "dropped": 1,
+                "sources": [
+                  {
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "title": "eia.gov",
+                    "domain": "eia.gov"
+                  }
+                ],
+                "domains": [
+                  "eia.gov"
+                ]
+              }
+            ]
+          }
         },
         {
           "id": "s1h3m1c9",
@@ -20843,7 +21505,127 @@
           ],
           "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/reuters_6ad9506a-1792626794.jpg?resize=1920%2C1440",
           "thread": "t2ogxay",
-          "priority": 60
+          "priority": 60,
+          "stats": {
+            "v": 2,
+            "at": "2026-11-02T06:29:46.788Z",
+            "series": [
+              {
+                "title": "Oil flows through the Strait of Hormuz, total",
+                "unit": "million barrels per day",
+                "publisher": "U.S. Energy Information Administration",
+                "points": [
+                  {
+                    "period": "2020",
+                    "value": 19.2,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2021",
+                    "value": 19.7,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2022",
+                    "value": 21.9,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2023",
+                    "value": 21.8,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2024",
+                    "value": 20.7,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "1H25",
+                    "value": 20.9,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "title": "eia.gov",
+                    "domain": "eia.gov"
+                  }
+                ],
+                "domains": [
+                  "eia.gov"
+                ],
+                "dropped": 0,
+                "why": "Both series measure oil flows through the Strait of Hormuz, the waterway whose freedom of navigation the story says Qatar and France called for restoring.",
+                "reused": true,
+                "checkedAt": "2026-10-13T23:16:50.395Z"
+              },
+              {
+                "title": "Crude oil and condensate through the Strait of Hormuz",
+                "unit": "million barrels per day",
+                "publisher": "U.S. Energy Information Administration",
+                "points": [
+                  {
+                    "period": "2020",
+                    "value": 14.4,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2021",
+                    "value": 14.7,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2022",
+                    "value": 16.2,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2023",
+                    "value": 15.8,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2024",
+                    "value": 14.6,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "1H25",
+                    "value": 14.7,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "title": "eia.gov",
+                    "domain": "eia.gov"
+                  }
+                ],
+                "domains": [
+                  "eia.gov"
+                ],
+                "dropped": 0,
+                "why": "Both series measure oil flows through the Strait of Hormuz, the waterway whose freedom of navigation the story says Qatar and France called for restoring.",
+                "reused": true,
+                "checkedAt": "2026-10-13T23:16:50.395Z"
+              }
+            ]
+          }
         },
         {
           "id": "sug6ouw",
@@ -24020,6 +24802,37 @@
       "id": "economy",
       "name": "Economy & Trade",
       "items": [
+        {
+          "id": "s1cjpong",
+          "headline": "China’s Message to Its Rivals: You Need What We Make",
+          "url": "https://www.nytimes.com/2026/11/02/world/asia/chinas-message-to-its-rivals-you-need-what-we-make.html",
+          "source": "nyt",
+          "date": "2026-11-02T05:00:08.000Z",
+          "relevance": "medium",
+          "image": "https://static01.nyt.com/images/2026/11/02/multimedia/02int-china-export-controls-01-pqvb/02int-china-export-controls-01-pqvb-mediumSquareAt3X.jpg",
+          "why": "",
+          "implications": [],
+          "place": {
+            "name": "Beijing",
+            "country": "China",
+            "lat": 39.9,
+            "lon": 116.4
+          },
+          "reports": [
+            {
+              "source": "nyt",
+              "headline": "China’s Message to Its Rivals: You Need What We Make",
+              "url": "https://www.nytimes.com/2026/11/02/world/asia/chinas-message-to-its-rivals-you-need-what-we-make.html",
+              "date": "2026-11-02T05:00:08.000Z",
+              "kind": "feature",
+              "summary": "It’s not just rare earths. China is making it harder for other countries to shed their dependence on its solar, drone and drugmaking technology.",
+              "summaryV": 3,
+              "image": "https://static01.nyt.com/images/2026/11/02/multimedia/02int-china-export-controls-01-pqvb/02int-china-export-controls-01-pqvb-mediumSquareAt3X.jpg"
+            }
+          ],
+          "finChecked": true,
+          "thread": "tgfs32m"
+        },
         {
           "id": "snd7ris",
           "headline": "G20 foreign ministers end Atlanta meeting without consensus on key issues",
@@ -32096,6 +32909,232 @@
       "id": "finance",
       "name": "Finance",
       "items": [
+        {
+          "id": "s161zkrr",
+          "headline": "Canada-India $5.5 billion bank takeover attracts opposition from workers, politicians",
+          "url": "https://www.cnbc.com/2026/11/02/canada-india-bank-takeover-protest-workers.html",
+          "source": "cnbc",
+          "date": "2026-11-02T04:09:34.000Z",
+          "relevance": "medium",
+          "why": "Workers at IDBI Bank and some politicians oppose a $5.5 billion Canada-India takeover of the lender. The workers want the government to cancel the privatization process. The dispute could affect how and when the sale proceeds.",
+          "implications": [
+            "Staff unions and politicians can raise the political cost of a bank sale, which may complicate the government's timetable for completing the transaction.",
+            "Because the deal is described as Canada-India, it also draws attention to foreign involvement in an Indian lender, which could add to the political criticism."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-02T06:28:44.041Z",
+            "tier": "quick",
+            "primary": "winners_losers",
+            "complement": null,
+            "features": [
+              "allocation",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The story concerns the ownership and staff of a single bank, so it reaches India through one industry and its employees. The reports describe no direct effect on household essentials such as loans or deposit rates."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Large bank ownership changes involve opposition, official decisions and approvals that usually take months, and the reports give no completion date."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single CNBC report that relays the demands of workers and critics, with no on-record government response or confirmed deal terms."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Salaried workers",
+                "direction": "unclear",
+                "what": "bank staff job security",
+                "effect": "IDBI employees are asking the government to protect staff interests, so their job terms could depend on how the sale is handled.",
+                "basis": "reported"
+              },
+              {
+                "group": "Government finances",
+                "direction": "mixed",
+                "what": "sale proceeds versus public stake",
+                "effect": "A completed sale could bring money to the government, while cancelling it would keep the public investment in the bank, as workers are demanding.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "A government response on whether it will continue with or cancel the privatization process",
+                "why": "It would show whether the opposition from workers and politicians is changing the course of the sale.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "Many Indian banks are owned wholly or partly by the government, and stake sales to private owners are often opposed by bank employee unions, who worry about jobs, pay and working conditions."
+            ],
+            "terms": [
+              {
+                "term": "privatization process",
+                "meaning": "The steps by which the government sells its ownership of a state-linked company, here a bank, to private buyers."
+              }
+            ],
+            "frameworks": {
+              "winners_losers": {
+                "groups": [
+                  {
+                    "group": "Salaried workers",
+                    "direction": "unclear",
+                    "directness": "direct",
+                    "mechanism": "IDBI employees have publicly asked for the sale to be cancelled and for staff interests to be protected, so their future terms depend on whether and how the takeover goes ahead."
+                  },
+                  {
+                    "group": "Government finances",
+                    "direction": "mixed",
+                    "directness": "direct",
+                    "mechanism": "A completed sale could bring proceeds to the government, but it would end the public investment in the bank that the workers want protected."
+                  }
+                ],
+                "not_affected": "Customers and staff of other banks are not directly affected, because the dispute concerns the ownership of a single lender."
+              }
+            }
+          },
+          "place": {
+            "name": "New Delhi",
+            "country": "India",
+            "lat": 28.6,
+            "lon": 77.2,
+            "involves": [
+              "Canada"
+            ]
+          },
+          "reports": [
+            {
+              "source": "cnbc",
+              "headline": "Canada-India $5.5 billion bank takeover attracts opposition from workers, politicians",
+              "url": "https://www.cnbc.com/2026/11/02/canada-india-bank-takeover-protest-workers.html",
+              "date": "2026-11-02T04:09:34.000Z",
+              "kind": "hard",
+              "summary": "IDBI workers demand the government \"cancel the privatization process\" and work to strengthen the bank while protecting public investment and staff interests.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://image.cnbcfm.com/api/v1/image/108500793-1793588022824-gettyimages-2281428105-TSCHNEIDER_67778_Fairfax_Financial_P8630152.jpeg?v=1793588035&w=1920&h=1080"
+            }
+          ],
+          "image": "https://image.cnbcfm.com/api/v1/image/108500793-1793588022824-gettyimages-2281428105-TSCHNEIDER_67778_Fairfax_Financial_P8630152.jpeg?v=1793588035&w=1920&h=1080",
+          "thread": "t1rbmsbf"
+        },
+        {
+          "id": "sj8cfiz",
+          "headline": "Chinese stocks rebound on optimism PBOC set to expand US$45 billion relending facility",
+          "url": "https://www.scmp.com/business/china-business/article/3372917/chinese-stocks-rebound-worst-sell-10-years-state-support-speculation-mounts",
+          "source": "scmp",
+          "date": "2026-11-02T02:22:38.000Z",
+          "relevance": "medium",
+          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/02/a7e049cd-62f9-4e8e-9c23-4336a60368de_05dd290c.jpg?itok=_8nXM35t&v=1793586142",
+          "why": "Chinese shares rebounded on Monday after a steep October sell-off, on speculation that China's central bank will expand a US$45 billion relending facility. The effect on India is indirect, through global investors' choices between emerging markets.",
+          "implications": [
+            "Global funds that hold both Chinese and Indian shares may adjust how much they allocate to each market, which could change foreign investment flows into Indian equities.",
+            "If Chinese policy support steadies sentiment in emerging markets generally, Indian share prices could feel less outside pressure, although the reports give no sign of a direct link."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-02T06:28:10.669Z",
+            "tier": "quick",
+            "primary": "market_move",
+            "complement": null,
+            "features": [
+              "market_move"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "The only channel is indirect: shifts in foreign investor flows between China and other emerging markets. The reports describe no direct link to Indian prices, trade or household finances."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Any effect would depend on whether the People's Bank of China actually expands the facility and on how global funds adjust their holdings afterwards."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single outlet, the South China Morning Post, and the central bank's move is speculation that has not been confirmed."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Equity & mutual fund investors",
+                "direction": "unclear",
+                "what": "foreign investor flows",
+                "effect": "A recovery in Chinese shares could shift some global fund money between China and India, which may affect demand for Indian shares held directly or through mutual funds.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "An announcement by the People's Bank of China that it is enlarging its relending facility",
+                "why": "It would show whether the speculation behind Monday's rebound was borne out and whether policy support for Chinese shares is widening.",
+                "when": "",
+                "where": "People's Bank of China"
+              }
+            ],
+            "context": [
+              "Foreign portfolio investors often treat large emerging markets as alternatives, so a stress or a recovery in one can shift money to or from others, including India."
+            ],
+            "terms": [
+              {
+                "term": "relending facility",
+                "meaning": "A central bank programme that lends to banks at low cost on the condition that they pass the money on to targeted borrowers or sectors."
+              }
+            ],
+            "frameworks": {
+              "market_move": {
+                "moved": {
+                  "what": "CSI 300 Index",
+                  "kind": "share index",
+                  "direction": "up",
+                  "size": "1.3 per cent to 4,035.72",
+                  "period": "on Monday, at the trading break"
+                },
+                "cause": {
+                  "text": "Investors speculated that Beijing would step up efforts to stem the October rout, which had pushed the benchmark into a bear market, including by expanding the People's Bank of China's US$45 billion relending facility.",
+                  "status": "claimed",
+                  "by": "market speculation as described by the South China Morning Post"
+                },
+                "duration": "one_day",
+                "channels": [
+                  {
+                    "channel": "foreign investment flows",
+                    "india_link": "A rebound in Chinese shares may make China more attractive to global funds, which could change how much money they allocate to Indian equities.",
+                    "basis": "inferred"
+                  }
+                ],
+                "not_settled": "It is not confirmed whether the People's Bank of China will actually expand the facility."
+              }
+            }
+          },
+          "place": {
+            "name": "Beijing",
+            "country": "China",
+            "lat": 39.9,
+            "lon": 116.4
+          },
+          "reports": [
+            {
+              "source": "scmp",
+              "headline": "Chinese stocks rebound on optimism PBOC set to expand US$45 billion relending facility",
+              "url": "https://www.scmp.com/business/china-business/article/3372917/chinese-stocks-rebound-worst-sell-10-years-state-support-speculation-mounts",
+              "date": "2026-11-02T02:22:38.000Z",
+              "kind": "hard",
+              "summary": "China’s stocks rebounded on Monday from a brutal sell-off in October as speculation gathered pace that Beijing would double down on efforts to stem a rout that sent its benchmark into a bear market. The CSI 300 Index rose 1.3 per cent to 4,035.72 at the trading break.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/02/a7e049cd-62f9-4e8e-9c23-4336a60368de_05dd290c.jpg?itok=_8nXM35t&v=1793586142"
+            }
+          ],
+          "stats": {
+            "v": 2,
+            "at": "2026-11-02T06:29:29.682Z",
+            "series": []
+          },
+          "thread": "tacu2ew"
+        },
         {
           "id": "sfdmsaa",
           "headline": "Everything changed for the oil, AI and bond trades over the past month",
@@ -40288,6 +41327,51 @@
       "name": "Policy & Governance",
       "items": [
         {
+          "id": "sxrek5h",
+          "headline": "Iran Braces for More War, No Matter the Outcome of the U.S. and Israeli Elections",
+          "url": "https://www.nytimes.com/2026/10/31/world/middleeast/iran-war-israel-us-elections-trump-netanyahu.html",
+          "source": "nyt",
+          "date": "2026-10-31T12:26:58.000Z",
+          "relevance": "medium",
+          "image": "https://static01.nyt.com/images/2026/10/31/multimedia/31int-iran-assess-1-vjkm/31int-iran-assess-1-vjkm-mediumSquareAt3X.jpg",
+          "why": "",
+          "implications": [],
+          "place": {
+            "name": "Tehran",
+            "country": "Iran",
+            "lat": 35.69,
+            "lon": 51.39,
+            "involves": [
+              "United States",
+              "Israel"
+            ]
+          },
+          "reports": [
+            {
+              "source": "nyt",
+              "headline": "Iran Braces for More War, No Matter the Outcome of the U.S. and Israeli Elections",
+              "url": "https://www.nytimes.com/2026/10/31/world/middleeast/iran-war-israel-us-elections-trump-netanyahu.html",
+              "date": "2026-10-31T12:26:58.000Z",
+              "kind": "feature",
+              "summary": "With Prime Minister Benjamin Netanyahu fighting to stay in power and President Trump facing a tough midterm, Iran’s leaders expect no major shift in policy.",
+              "summaryV": 3,
+              "image": "https://static01.nyt.com/images/2026/10/31/multimedia/31int-iran-assess-1-vjkm/31int-iran-assess-1-vjkm-mediumSquareAt3X.jpg"
+            },
+            {
+              "source": "france24",
+              "headline": "Iran warns renewed war with US could outlast previous conflict",
+              "url": "https://www.france24.com/en/middle-east/20261102-iran-warns-renewed-war-with-us-could-outlast-previous-conflict",
+              "date": "2026-11-02T00:23:23.000Z",
+              "kind": "hard",
+              "summary": "Iran warned on Sunday that a renewed war with the United States could last longer than the previous conflict, as President Donald Trump suggested Washington still had targets to strike.",
+              "summaryV": 3,
+              "image": "https://s.france24.com/media/display/66662f02-d557-11f1-8301-1beafce15fea/w:1024/p:16x9/FOTO-PORTADA-IRAN-MOJTABA-JAMENEI.jpg"
+            }
+          ],
+          "finChecked": true,
+          "thread": "t1am6o6d"
+        },
+        {
           "id": "sszla7r",
           "headline": "India's opposition set to hold mega rally seeking election chief's resignation",
           "url": "https://www.bbc.co.uk/news/articles/c60qk92dvlwgo",
@@ -40818,41 +41902,6 @@
           ],
           "finChecked": true,
           "thread": "t16ixwys"
-        },
-        {
-          "id": "sxrek5h",
-          "headline": "Iran Braces for More War, No Matter the Outcome of the U.S. and Israeli Elections",
-          "url": "https://www.nytimes.com/2026/10/31/world/middleeast/iran-war-israel-us-elections-trump-netanyahu.html",
-          "source": "nyt",
-          "date": "2026-10-31T12:26:58.000Z",
-          "relevance": "medium",
-          "image": "https://static01.nyt.com/images/2026/10/31/multimedia/31int-iran-assess-1-vjkm/31int-iran-assess-1-vjkm-mediumSquareAt3X.jpg",
-          "why": "",
-          "implications": [],
-          "place": {
-            "name": "Tehran",
-            "country": "Iran",
-            "lat": 35.69,
-            "lon": 51.39,
-            "involves": [
-              "United States",
-              "Israel"
-            ]
-          },
-          "reports": [
-            {
-              "source": "nyt",
-              "headline": "Iran Braces for More War, No Matter the Outcome of the U.S. and Israeli Elections",
-              "url": "https://www.nytimes.com/2026/10/31/world/middleeast/iran-war-israel-us-elections-trump-netanyahu.html",
-              "date": "2026-10-31T12:26:58.000Z",
-              "kind": "feature",
-              "summary": "With Prime Minister Benjamin Netanyahu fighting to stay in power and President Trump facing a tough midterm, Iran’s leaders expect no major shift in policy.",
-              "summaryV": 3,
-              "image": "https://static01.nyt.com/images/2026/10/31/multimedia/31int-iran-assess-1-vjkm/31int-iran-assess-1-vjkm-mediumSquareAt3X.jpg"
-            }
-          ],
-          "finChecked": true,
-          "thread": "t1am6o6d"
         },
         {
           "id": "syvc98n",
@@ -48799,17 +49848,14 @@
   "source": "BBC News & The Guardian & NPR & Al Jazeera & MercoPress & ABC News & The New York Times & CNBC & CBS News & DW & France 24 & Africanews & South China Morning Post & The Hindu & Mint & The Indian Express",
   "lastRun": {
     "filter": {
-      "judged": 89,
-      "kept": 5,
+      "judged": 105,
+      "kept": 8,
       "guarded": 0
     },
     "health": {
-      "day": "2026-11-01",
-      "newStories24h": 9,
-      "keepRate2d": 0.083,
-      "alarm": [
-        "only 9 new stories in 24 hours (expected 10+)"
-      ]
+      "day": "2026-11-02",
+      "newStories24h": 11,
+      "keepRate2d": 0.072
     },
     "wars": {
       "linked": 0,
@@ -48818,43 +49864,47 @@
     },
     "places": {
       "labelled": 0,
-      "none": 1,
+      "none": 0,
       "waiting": 0
     },
     "skipped": {
-      "since": "2026-11-01T16:08:33.738Z",
+      "since": "2026-11-01T22:17:25.377Z",
       "counts": {
-        "section": 12
+        "section": 13,
+        "live_blog": 1
       },
       "examples": {
         "section": [
-          "Peaceful protests in Germany spiral into violence and looting",
-          "Teenage violinist wins BBC Young Musician 2026, after first all-female final",
-          "Democrat Haley Stevens heckled as she backs El-Sayed rival",
-          "Thousands displaced from Hebron as Israel carries on siege",
-          "Al Jazeera Director General hails 30 years of groundbreaking news"
+          "'I've had people eating cat food': Rising cost of living top of mind for US voters",
+          "Google search has gone from being very handy to useless | First Dog on the Moon",
+          "Bulgaria has its first elected female president",
+          "Kimi Antonelli becomes Formula One’s youngest world champion in Mexico City",
+          "Muhammad Ali’s daughter and grandson endorse El-Sayed"
+        ],
+        "live_blog": [
+          "Iran war live: Tankers hit in Hormuz; Trump again says conflict to end soon"
         ]
       }
     },
     "finance": {
       "moved": 0,
-      "checked": 0
+      "checked": 1
     },
-    "analysed": 89,
-    "added": 2,
-    "merged": 2,
-    "rejected": 85,
+    "analysed": 105,
+    "added": 3,
+    "merged": 5,
+    "rejected": 97,
     "failedBatches": 0,
     "feeds": {
       "bbc": {
         "feedsOk": 6,
         "feedsFailed": 0,
-        "items": 166
+        "items": 158
       },
       "guardian": {
         "feedsOk": 7,
         "feedsFailed": 0,
-        "items": 198
+        "items": 193
       },
       "npr": {
         "feedsOk": 4,
@@ -48864,7 +49914,7 @@
       "aljazeera": {
         "feedsOk": 1,
         "feedsFailed": 0,
-        "items": 13
+        "items": 14
       },
       "mercopress": {
         "feedsOk": 3,
@@ -48879,7 +49929,7 @@
       "nyt": {
         "feedsOk": 5,
         "feedsFailed": 0,
-        "items": 176
+        "items": 177
       },
       "cnbc": {
         "feedsOk": 3,
@@ -48889,7 +49939,7 @@
       "cbs": {
         "feedsOk": 2,
         "feedsFailed": 0,
-        "items": 46
+        "items": 44
       },
       "dw": {
         "feedsOk": 3,
@@ -48899,7 +49949,7 @@
       "france24": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 74
+        "items": 75
       },
       "africanews": {
         "feedsOk": 1,
@@ -48909,7 +49959,7 @@
       "scmp": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 141
+        "items": 142
       }
     },
     "shareImages": {
@@ -48918,13 +49968,13 @@
       "summaries": 0
     },
     "threads": {
-      "assigned": 2,
-      "created": 0,
+      "assigned": 3,
+      "created": 3,
       "failedBatches": 0
     },
     "summaries": {
-      "written": 7,
-      "due": 7
+      "written": 0,
+      "due": 0
     },
     "kinds": {
       "labelled": 0,
@@ -48932,62 +49982,57 @@
       "failedBatches": 0
     },
     "frames": {
-      "done": 5,
-      "waiting": 1,
-      "failedBatches": 0
+      "done": 0,
+      "waiting": 3,
+      "failedBatches": 0,
+      "budgetStopped": true
     },
     "stats": {
       "searched": 8,
-      "found": 2,
-      "reused": 4,
-      "none": 2,
+      "found": 1,
+      "reused": 6,
+      "none": 1,
       "failed": 0,
-      "proposed": 24,
-      "droppedPoints": 10,
-      "pagesFetched": 2,
+      "proposed": 14,
+      "droppedPoints": 7,
+      "pagesFetched": 3,
       "samples": [
         {
-          "headline": "Iran and US explore diplomacy amid rising threats of war",
-          "result": "reused saved series"
-        },
-        {
-          "headline": "Russia opens terrorism case over Ukraine oil refinery attack",
-          "result": "nothing",
-          "proposed": 0,
-          "checked": 0,
-          "pagesFetched": 0
-        },
-        {
-          "headline": "Qatar deal to buy U.S. natural gas shows how Iran war has redrawn global energy ",
-          "result": "chart",
-          "proposed": 10,
-          "checked": 10,
-          "pagesFetched": 1
-        },
-        {
-          "headline": "Fewer people are flying as airfare soars. Here's why airlines aren't worried",
-          "result": "reused saved series"
-        },
-        {
-          "headline": "Europe considers new quotas and tariffs to stem Chinese imports",
-          "result": "chart",
-          "proposed": 4,
-          "checked": 4,
-          "pagesFetched": 1
-        },
-        {
-          "headline": "Two killed in attack on airport in eastern Saudi Arabia, authorities say",
+          "headline": "Chinese stocks rebound on optimism PBOC set to expand US$45 billion relending fa",
           "result": "no figure found on an official page",
-          "proposed": 10,
+          "proposed": 2,
           "checked": 0,
-          "pagesFetched": 0
+          "pagesFetched": 2
         },
         {
-          "headline": "Iran says seven ships hit in Hormuz Strait, warns US of wider response",
+          "headline": "China urges opening Bab al-Mandeb in first joint statement with regional nation",
+          "result": "chart",
+          "proposed": 12,
+          "checked": 7,
+          "pagesFetched": 1
+        },
+        {
+          "headline": "Oil prices jump to five-month high as attacks threaten global supply",
           "result": "reused saved series"
         },
         {
-          "headline": "Stocks Fall and Oil Rises as Investors Retreat from Mounting Risks",
+          "headline": "Trump makes Russia-friendly moves as he looks for a way to end the war with Ukra",
+          "result": "reused saved series"
+        },
+        {
+          "headline": "Qatar, France call for opening of Hormuz and Gaza ceasefire implementation",
+          "result": "reused saved series"
+        },
+        {
+          "headline": "Russia to send first diesel tanker to the US amid Trump deal",
+          "result": "reused saved series"
+        },
+        {
+          "headline": "France 'has to assist' Gulf states, diplomat says as Macron makes three-day visi",
+          "result": "reused saved series"
+        },
+        {
+          "headline": "Oil prices climb as traders assess Middle East developments",
           "result": "reused saved series"
         }
       ]
@@ -48995,45 +50040,38 @@
     "models": {
       "filter": {
         "model": "claude-haiku-5-5",
-        "calls": 18,
-        "inputTokens": 49968,
-        "outputTokens": 16267,
-        "cost": 0.013
+        "calls": 16,
+        "inputTokens": 50437,
+        "outputTokens": 16214,
+        "cost": 0.0132
       },
       "analysis_quick": {
         "model": "claude-sonnet-5-5",
-        "calls": 3,
-        "inputTokens": 9405,
-        "outputTokens": 3415,
-        "cost": 0.053
+        "calls": 2,
+        "inputTokens": 6040,
+        "outputTokens": 4551,
+        "cost": 0.0576
       },
       "stats": {
         "model": "claude-sonnet-5-5",
-        "calls": 4,
-        "inputTokens": 570800,
-        "outputTokens": 4120,
-        "searches": 7,
-        "fetches": 5,
-        "cost": 1.2528
-      },
-      "analysis": {
-        "model": "claude-opus-5-5",
         "calls": 2,
-        "inputTokens": 11550,
-        "outputTokens": 14743,
-        "cost": 0.3411
+        "inputTokens": 222787,
+        "outputTokens": 2902,
+        "searches": 5,
+        "fetches": 3,
+        "cost": 0.5246
       },
       "threads": {
         "model": "claude-sonnet-5-5",
-        "calls": 8,
-        "inputTokens": 17661,
-        "outputTokens": 2696,
-        "cost": 0.0623
+        "calls": 1,
+        "inputTokens": 9070,
+        "outputTokens": 103,
+        "cost": 0.0192
       }
     },
     "spend": {
-      "thisDesk": 1.7222,
-      "today": 1.7222,
+      "thisDesk": 0.6145,
+      "today": 3.8652,
       "cap": 6
     }
   },
