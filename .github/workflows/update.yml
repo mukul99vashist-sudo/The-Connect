@@ -29,7 +29,7 @@ jobs:
         run: node scripts/update.mjs
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          DAILY_BUDGET_USD: "1000"     # 4 Nov 2026: cap removed in practice (was $4); the Anthropic credit balance is the only limit
+          DAILY_BUDGET_USD: "6"        # hard daily spending cap in US$ (India day); set to $6 on 4 Nov 2026 (was $4)
           CALENDAR_JOB: "off"          # "on" to collect dates for the calendar again
 
       - name: Save results
