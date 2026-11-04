@@ -2,12 +2,278 @@
   "schema": 4,
   "region": "India",
   "since": "2026-10-02",
-  "updatedAt": "2026-11-04T01:32:23.312Z",
+  "updatedAt": "2026-11-04T11:19:03.700Z",
   "sectors": [
     {
       "id": "energy",
       "name": "Energy",
       "items": [
+        {
+          "id": "s3jxcru",
+          "headline": "Petrol export duty cut to nil, diesel levy raised by ₹3 a litre",
+          "url": "https://www.thehindu.com/business/petrol-export-duty-cut-to-nil-diesel-levy-raised-by-3-a-litre/article71649004.ece",
+          "source": "thehindu",
+          "date": "2026-10-31T11:16:41.000Z",
+          "relevance": "medium",
+          "image": "https://th-i.thgim.com/public/news/national/up7fc2/article71649104.ece/alternates/LANDSCAPE_1200/PTI05_23_2026_000070B.jpg",
+          "why": "In its fortnightly review, the government removed the export duty on petrol and raised export levies on diesel and aviation turbine fuel (ATF). This changes how much Indian refiners earn from shipping these fuels abroad.",
+          "implications": [
+            "Refiners exporting diesel now pay ₹11.5 a litre instead of ₹8.5, which reduces the earnings they get from each litre sold overseas.",
+            "The higher diesel levy comes as India's diesel exports reached 700 kilo barrels per day in October, the highest since September 2025, according to the ship-tracking firm Kpler.",
+            "Removing the petrol duty makes petrol exports more attractive to refiners. Raising the diesel and ATF levies could encourage them to keep more of those fuels for the domestic market.",
+            "The changes apply for a fortnight from October 31, so refiners face rates that can be revised again at the next review."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-10-31T19:33:40.119Z",
+            "tier": "standard",
+            "primary": "decoder",
+            "complement": null,
+            "features": [
+              "scheduled",
+              "price_move"
+            ],
+            "exposure": {
+              "level": "high",
+              "reason": "Refined fuels are among India's largest exports, and the levies directly change refiners' export earnings. They may also influence how much diesel stays in the domestic market."
+            },
+            "horizon": {
+              "value": "now",
+              "reason": "The revised duties took effect on October 31 and apply for a fortnight, so exporters face them immediately."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "Two outlets, The Hindu and Mint, agree on the changes, but neither summary cites a named official, and the government's reasoning is not reported."
+            },
+            "outlets": 2,
+            "affected": [
+              {
+                "group": "Large exporters",
+                "direction": "mixed",
+                "what": "fuel export earnings",
+                "effect": "Refiners lose part of their diesel and ATF export earnings through higher levies but no longer pay any duty on petrol shipped abroad.",
+                "basis": "reported"
+              },
+              {
+                "group": "Government finances",
+                "direction": "mixed",
+                "what": "fuel export levy revenue",
+                "effect": "Revenue from diesel and ATF export levies could rise at higher rates, while revenue from petrol export duty falls to zero.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "domestic diesel availability",
+                "effect": "A higher diesel export levy could encourage refiners to sell more diesel at home, which may support domestic supply.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "The next fortnightly government review of export levies on petrol, diesel and ATF",
+                "why": "It will show whether the higher diesel levy and the nil petrol duty continue or are reversed.",
+                "when": "fortnight from October 31",
+                "where": ""
+              },
+              {
+                "what": "India's diesel export volumes after the higher levy takes effect",
+                "why": "A fall from October's 700 kilo barrels per day would suggest the levy is curbing diesel exports.",
+                "when": "",
+                "where": "Kpler"
+              }
+            ],
+            "context": [
+              "India imports most of its crude oil, but it has large refining capacity and is a major exporter of refined fuels such as diesel and petrol.",
+              "Export levies on fuels are generally used to discourage refiners from shipping too much abroad when overseas margins are high, which helps protect domestic supply.",
+              "Retail petrol and diesel prices in India are largely set by state-run oil marketing companies, so export duty changes do not pass directly into pump prices."
+            ],
+            "terms": [
+              {
+                "term": "ATF",
+                "meaning": "Aviation turbine fuel, the kerosene-based fuel used by jet aircraft."
+              },
+              {
+                "term": "Kpler",
+                "meaning": "A commodity data company that tracks cargo shipments, including oil and fuel exports, using vessel-tracking information."
+              },
+              {
+                "term": "kilo barrels per day",
+                "meaning": "Thousands of barrels per day, a standard measure of oil and fuel flow; one barrel is about 159 litres."
+              }
+            ],
+            "frameworks": {
+              "decoder": {
+                "kind": "decision",
+                "headline": {
+                  "label": "Diesel export levy",
+                  "value": 11.5,
+                  "unit": "₹ per litre",
+                  "period": "Fortnight from October 31",
+                  "previous": 8.5,
+                  "previousLabel": "Previous levy",
+                  "from": "The Hindu"
+                },
+                "comparisons": [
+                  {
+                    "label": "ATF export levy (new)",
+                    "value": 11,
+                    "unit": "₹ per litre",
+                    "from": "The Hindu"
+                  },
+                  {
+                    "label": "ATF export levy (previous)",
+                    "value": 10.5,
+                    "unit": "₹ per litre",
+                    "from": "The Hindu"
+                  }
+                ],
+                "drivers": [],
+                "decision": {
+                  "action": "other",
+                  "size": "Petrol export duty cut to nil; diesel levy raised by ₹3 to…",
+                  "stance": "They say only that the changes were made in the regular fortnightly review and apply for a fortnight from October 31."
+                }
+              }
+            }
+          },
+          "place": {
+            "name": "New Delhi",
+            "country": "India",
+            "lat": 28.61,
+            "lon": 77.21
+          },
+          "reports": [
+            {
+              "source": "thehindu",
+              "headline": "Petrol export duty cut to nil, diesel levy raised by ₹3 a litre",
+              "url": "https://www.thehindu.com/business/petrol-export-duty-cut-to-nil-diesel-levy-raised-by-3-a-litre/article71649004.ece",
+              "date": "2026-10-31T11:16:41.000Z",
+              "kind": "hard",
+              "summary": "The government’s fortnightly review raised the export levy on diesel to ₹11.5 per litre from ₹8.5 and on aviation turbine fuel to ₹11 per litre from ₹10.5, while India’s diesel exports touched 700 kilo barrels per day in October, the highest since September 2025, according to Kpler",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/news/national/up7fc2/article71649104.ece/alternates/LANDSCAPE_1200/PTI05_23_2026_000070B.jpg"
+            },
+            {
+              "source": "mint",
+              "headline": "Govt scraps export duty on petrol; hikes levies on diesel, ATF — check details here",
+              "url": "https://www.livemint.com/economy/govt-scraps-export-duty-on-petrol-hikes-levies-on-diesel-atf-check-details-here-11793452144023.html",
+              "date": "2026-10-31T14:08:09.000Z",
+              "kind": "hard",
+              "summary": "India has scrapped export duty on petrol for a fortnight from October 31, while raising levies on diesel and ATF. Details here.&nbsp;",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/10/31/1600x900/logo/im-03795811_1793177576165_2NMw_1793455536307_J9Bw_8e01d02c-f80d-4837-a028-2957ba2f04a8_c83v.jpg"
+            },
+            {
+              "source": "mint",
+              "headline": "Fuel prices on 4 November: Check how much petrol, diesel, and CNG cost in Delhi, Mumbai, Bengaluru — Full list",
+              "url": "https://www.livemint.com/news/india/fuel-prices-on-4-november-check-how-much-petrol-diesel-and-cng-cost-in-delhi-mumbai-bengaluru-full-list-11793753511017.html",
+              "date": "2026-11-04T01:41:33.000Z",
+              "kind": "hard",
+              "summary": "Petrol and diesel prices remained largely stable across major cities on November 4 after the Centre cut the petrol export duty to zero and raised the diesel export levy. Meanwhile, global oil prices fluctuated as traders assessed mixed signals on US-Iran peace talks amid tensions in the Middle East.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/11/04/1600x900/logo/pexels-photo-12377482_1793064142985_E4rM_179306416_1793756323510_ixqs_1793756323624_8qWE_e38f82f0-46f3-475e-9159-8c75eff10b13_gpNr.jpeg"
+            }
+          ],
+          "thread": "t1ms8ih5",
+          "stats": {
+            "v": 2,
+            "at": "2026-10-31T19:31:14.326Z",
+            "series": [
+              {
+                "title": "India export duty on diesel, total, per litre (2022 episode)",
+                "unit": "Rs per litre",
+                "publisher": "Petroleum Planning & Analysis Cell (Ministry of Petroleum & Natural Gas)",
+                "why": "The government has used fortnightly export levies on diesel before, and this series shows how the rate moved up and down with each review.",
+                "points": [
+                  {
+                    "period": "01.07.2022",
+                    "value": 13,
+                    "url": "https://ppac.gov.in/prices/excise-duty-on-export-of-petrol-diesel-atf-and-special-additional-excise-duty-saed-on-domestic-crude-oil-production",
+                    "source": "ppac.gov.in"
+                  },
+                  {
+                    "period": "20.07.2022",
+                    "value": 11,
+                    "url": "https://ppac.gov.in/prices/excise-duty-on-export-of-petrol-diesel-atf-and-special-additional-excise-duty-saed-on-domestic-crude-oil-production",
+                    "source": "ppac.gov.in"
+                  },
+                  {
+                    "period": "03.08.2022",
+                    "value": 5,
+                    "url": "https://ppac.gov.in/prices/excise-duty-on-export-of-petrol-diesel-atf-and-special-additional-excise-duty-saed-on-domestic-crude-oil-production",
+                    "source": "ppac.gov.in"
+                  },
+                  {
+                    "period": "19.08.2022",
+                    "value": 7,
+                    "url": "https://ppac.gov.in/prices/excise-duty-on-export-of-petrol-diesel-atf-and-special-additional-excise-duty-saed-on-domestic-crude-oil-production",
+                    "source": "ppac.gov.in"
+                  },
+                  {
+                    "period": "01.09.2022",
+                    "value": 13.5,
+                    "url": "https://ppac.gov.in/prices/excise-duty-on-export-of-petrol-diesel-atf-and-special-additional-excise-duty-saed-on-domestic-crude-oil-production",
+                    "source": "ppac.gov.in"
+                  },
+                  {
+                    "period": "17.09.2022",
+                    "value": 10,
+                    "url": "https://ppac.gov.in/prices/excise-duty-on-export-of-petrol-diesel-atf-and-special-additional-excise-duty-saed-on-domestic-crude-oil-production",
+                    "source": "ppac.gov.in"
+                  },
+                  {
+                    "period": "02.10.2022",
+                    "value": 5,
+                    "url": "https://ppac.gov.in/prices/excise-duty-on-export-of-petrol-diesel-atf-and-special-additional-excise-duty-saed-on-domestic-crude-oil-production",
+                    "source": "ppac.gov.in"
+                  },
+                  {
+                    "period": "16.10.2022",
+                    "value": 12,
+                    "url": "https://ppac.gov.in/prices/excise-duty-on-export-of-petrol-diesel-atf-and-special-additional-excise-duty-saed-on-domestic-crude-oil-production",
+                    "source": "ppac.gov.in"
+                  },
+                  {
+                    "period": "02.11.2022",
+                    "value": 13,
+                    "url": "https://ppac.gov.in/prices/excise-duty-on-export-of-petrol-diesel-atf-and-special-additional-excise-duty-saed-on-domestic-crude-oil-production",
+                    "source": "ppac.gov.in"
+                  },
+                  {
+                    "period": "17.11.2022",
+                    "value": 10.5,
+                    "url": "https://ppac.gov.in/prices/excise-duty-on-export-of-petrol-diesel-atf-and-special-additional-excise-duty-saed-on-domestic-crude-oil-production",
+                    "source": "ppac.gov.in"
+                  },
+                  {
+                    "period": "02.12.2022",
+                    "value": 8,
+                    "url": "https://ppac.gov.in/prices/excise-duty-on-export-of-petrol-diesel-atf-and-special-additional-excise-duty-saed-on-domestic-crude-oil-production",
+                    "source": "ppac.gov.in"
+                  },
+                  {
+                    "period": "16.12.2022",
+                    "value": 5,
+                    "url": "https://ppac.gov.in/prices/excise-duty-on-export-of-petrol-diesel-atf-and-special-additional-excise-duty-saed-on-domestic-crude-oil-production",
+                    "source": "ppac.gov.in"
+                  }
+                ],
+                "dropped": 0,
+                "sources": [
+                  {
+                    "url": "https://ppac.gov.in/prices/excise-duty-on-export-of-petrol-diesel-atf-and-special-additional-excise-duty-saed-on-domestic-crude-oil-production",
+                    "title": "ppac.gov.in",
+                    "domain": "ppac.gov.in"
+                  }
+                ],
+                "domains": [
+                  "ppac.gov.in"
+                ]
+              }
+            ]
+          }
+        },
         {
           "id": "s1e30zw5",
           "headline": "Oil slips after early surge as US-Iran tensions persist, Brent falls 3%",
@@ -1324,262 +1590,6 @@
             "series": []
           },
           "thread": "t1y046b4"
-        },
-        {
-          "id": "s3jxcru",
-          "headline": "Petrol export duty cut to nil, diesel levy raised by ₹3 a litre",
-          "url": "https://www.thehindu.com/business/petrol-export-duty-cut-to-nil-diesel-levy-raised-by-3-a-litre/article71649004.ece",
-          "source": "thehindu",
-          "date": "2026-10-31T11:16:41.000Z",
-          "relevance": "medium",
-          "image": "https://th-i.thgim.com/public/news/national/up7fc2/article71649104.ece/alternates/LANDSCAPE_1200/PTI05_23_2026_000070B.jpg",
-          "why": "In its fortnightly review, the government removed the export duty on petrol and raised export levies on diesel and aviation turbine fuel (ATF). This changes how much Indian refiners earn from shipping these fuels abroad.",
-          "implications": [
-            "Refiners exporting diesel now pay ₹11.5 a litre instead of ₹8.5, which reduces the earnings they get from each litre sold overseas.",
-            "The higher diesel levy comes as India's diesel exports reached 700 kilo barrels per day in October, the highest since September 2025, according to the ship-tracking firm Kpler.",
-            "Removing the petrol duty makes petrol exports more attractive to refiners. Raising the diesel and ATF levies could encourage them to keep more of those fuels for the domestic market.",
-            "The changes apply for a fortnight from October 31, so refiners face rates that can be revised again at the next review."
-          ],
-          "analysis": {
-            "v": 3,
-            "at": "2026-10-31T19:33:40.119Z",
-            "tier": "standard",
-            "primary": "decoder",
-            "complement": null,
-            "features": [
-              "scheduled",
-              "price_move"
-            ],
-            "exposure": {
-              "level": "high",
-              "reason": "Refined fuels are among India's largest exports, and the levies directly change refiners' export earnings. They may also influence how much diesel stays in the domestic market."
-            },
-            "horizon": {
-              "value": "now",
-              "reason": "The revised duties took effect on October 31 and apply for a fortnight, so exporters face them immediately."
-            },
-            "confidence": {
-              "level": "medium",
-              "reason": "Two outlets, The Hindu and Mint, agree on the changes, but neither summary cites a named official, and the government's reasoning is not reported."
-            },
-            "outlets": 2,
-            "affected": [
-              {
-                "group": "Large exporters",
-                "direction": "mixed",
-                "what": "fuel export earnings",
-                "effect": "Refiners lose part of their diesel and ATF export earnings through higher levies but no longer pay any duty on petrol shipped abroad.",
-                "basis": "reported"
-              },
-              {
-                "group": "Government finances",
-                "direction": "mixed",
-                "what": "fuel export levy revenue",
-                "effect": "Revenue from diesel and ATF export levies could rise at higher rates, while revenue from petrol export duty falls to zero.",
-                "basis": "inferred"
-              },
-              {
-                "group": "Fuel & LPG users",
-                "direction": "unclear",
-                "what": "domestic diesel availability",
-                "effect": "A higher diesel export levy could encourage refiners to sell more diesel at home, which may support domestic supply.",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "The next fortnightly government review of export levies on petrol, diesel and ATF",
-                "why": "It will show whether the higher diesel levy and the nil petrol duty continue or are reversed.",
-                "when": "fortnight from October 31",
-                "where": ""
-              },
-              {
-                "what": "India's diesel export volumes after the higher levy takes effect",
-                "why": "A fall from October's 700 kilo barrels per day would suggest the levy is curbing diesel exports.",
-                "when": "",
-                "where": "Kpler"
-              }
-            ],
-            "context": [
-              "India imports most of its crude oil, but it has large refining capacity and is a major exporter of refined fuels such as diesel and petrol.",
-              "Export levies on fuels are generally used to discourage refiners from shipping too much abroad when overseas margins are high, which helps protect domestic supply.",
-              "Retail petrol and diesel prices in India are largely set by state-run oil marketing companies, so export duty changes do not pass directly into pump prices."
-            ],
-            "terms": [
-              {
-                "term": "ATF",
-                "meaning": "Aviation turbine fuel, the kerosene-based fuel used by jet aircraft."
-              },
-              {
-                "term": "Kpler",
-                "meaning": "A commodity data company that tracks cargo shipments, including oil and fuel exports, using vessel-tracking information."
-              },
-              {
-                "term": "kilo barrels per day",
-                "meaning": "Thousands of barrels per day, a standard measure of oil and fuel flow; one barrel is about 159 litres."
-              }
-            ],
-            "frameworks": {
-              "decoder": {
-                "kind": "decision",
-                "headline": {
-                  "label": "Diesel export levy",
-                  "value": 11.5,
-                  "unit": "₹ per litre",
-                  "period": "Fortnight from October 31",
-                  "previous": 8.5,
-                  "previousLabel": "Previous levy",
-                  "from": "The Hindu"
-                },
-                "comparisons": [
-                  {
-                    "label": "ATF export levy (new)",
-                    "value": 11,
-                    "unit": "₹ per litre",
-                    "from": "The Hindu"
-                  },
-                  {
-                    "label": "ATF export levy (previous)",
-                    "value": 10.5,
-                    "unit": "₹ per litre",
-                    "from": "The Hindu"
-                  }
-                ],
-                "drivers": [],
-                "decision": {
-                  "action": "other",
-                  "size": "Petrol export duty cut to nil; diesel levy raised by ₹3 to…",
-                  "stance": "They say only that the changes were made in the regular fortnightly review and apply for a fortnight from October 31."
-                }
-              }
-            }
-          },
-          "place": {
-            "name": "New Delhi",
-            "country": "India",
-            "lat": 28.61,
-            "lon": 77.21
-          },
-          "reports": [
-            {
-              "source": "thehindu",
-              "headline": "Petrol export duty cut to nil, diesel levy raised by ₹3 a litre",
-              "url": "https://www.thehindu.com/business/petrol-export-duty-cut-to-nil-diesel-levy-raised-by-3-a-litre/article71649004.ece",
-              "date": "2026-10-31T11:16:41.000Z",
-              "kind": "hard",
-              "summary": "The government’s fortnightly review raised the export levy on diesel to ₹11.5 per litre from ₹8.5 and on aviation turbine fuel to ₹11 per litre from ₹10.5, while India’s diesel exports touched 700 kilo barrels per day in October, the highest since September 2025, according to Kpler",
-              "summaryV": 3,
-              "image": "https://th-i.thgim.com/public/news/national/up7fc2/article71649104.ece/alternates/LANDSCAPE_1200/PTI05_23_2026_000070B.jpg"
-            },
-            {
-              "source": "mint",
-              "headline": "Govt scraps export duty on petrol; hikes levies on diesel, ATF — check details here",
-              "url": "https://www.livemint.com/economy/govt-scraps-export-duty-on-petrol-hikes-levies-on-diesel-atf-check-details-here-11793452144023.html",
-              "date": "2026-10-31T14:08:09.000Z",
-              "kind": "hard",
-              "summary": "India has scrapped export duty on petrol for a fortnight from October 31, while raising levies on diesel and ATF. Details here.&nbsp;",
-              "summaryV": 3,
-              "image": "https://www.livemint.com/lm-img/img/2026/10/31/1600x900/logo/im-03795811_1793177576165_2NMw_1793455536307_J9Bw_8e01d02c-f80d-4837-a028-2957ba2f04a8_c83v.jpg"
-            }
-          ],
-          "thread": "t1ms8ih5",
-          "stats": {
-            "v": 2,
-            "at": "2026-10-31T19:31:14.326Z",
-            "series": [
-              {
-                "title": "India export duty on diesel, total, per litre (2022 episode)",
-                "unit": "Rs per litre",
-                "publisher": "Petroleum Planning & Analysis Cell (Ministry of Petroleum & Natural Gas)",
-                "why": "The government has used fortnightly export levies on diesel before, and this series shows how the rate moved up and down with each review.",
-                "points": [
-                  {
-                    "period": "01.07.2022",
-                    "value": 13,
-                    "url": "https://ppac.gov.in/prices/excise-duty-on-export-of-petrol-diesel-atf-and-special-additional-excise-duty-saed-on-domestic-crude-oil-production",
-                    "source": "ppac.gov.in"
-                  },
-                  {
-                    "period": "20.07.2022",
-                    "value": 11,
-                    "url": "https://ppac.gov.in/prices/excise-duty-on-export-of-petrol-diesel-atf-and-special-additional-excise-duty-saed-on-domestic-crude-oil-production",
-                    "source": "ppac.gov.in"
-                  },
-                  {
-                    "period": "03.08.2022",
-                    "value": 5,
-                    "url": "https://ppac.gov.in/prices/excise-duty-on-export-of-petrol-diesel-atf-and-special-additional-excise-duty-saed-on-domestic-crude-oil-production",
-                    "source": "ppac.gov.in"
-                  },
-                  {
-                    "period": "19.08.2022",
-                    "value": 7,
-                    "url": "https://ppac.gov.in/prices/excise-duty-on-export-of-petrol-diesel-atf-and-special-additional-excise-duty-saed-on-domestic-crude-oil-production",
-                    "source": "ppac.gov.in"
-                  },
-                  {
-                    "period": "01.09.2022",
-                    "value": 13.5,
-                    "url": "https://ppac.gov.in/prices/excise-duty-on-export-of-petrol-diesel-atf-and-special-additional-excise-duty-saed-on-domestic-crude-oil-production",
-                    "source": "ppac.gov.in"
-                  },
-                  {
-                    "period": "17.09.2022",
-                    "value": 10,
-                    "url": "https://ppac.gov.in/prices/excise-duty-on-export-of-petrol-diesel-atf-and-special-additional-excise-duty-saed-on-domestic-crude-oil-production",
-                    "source": "ppac.gov.in"
-                  },
-                  {
-                    "period": "02.10.2022",
-                    "value": 5,
-                    "url": "https://ppac.gov.in/prices/excise-duty-on-export-of-petrol-diesel-atf-and-special-additional-excise-duty-saed-on-domestic-crude-oil-production",
-                    "source": "ppac.gov.in"
-                  },
-                  {
-                    "period": "16.10.2022",
-                    "value": 12,
-                    "url": "https://ppac.gov.in/prices/excise-duty-on-export-of-petrol-diesel-atf-and-special-additional-excise-duty-saed-on-domestic-crude-oil-production",
-                    "source": "ppac.gov.in"
-                  },
-                  {
-                    "period": "02.11.2022",
-                    "value": 13,
-                    "url": "https://ppac.gov.in/prices/excise-duty-on-export-of-petrol-diesel-atf-and-special-additional-excise-duty-saed-on-domestic-crude-oil-production",
-                    "source": "ppac.gov.in"
-                  },
-                  {
-                    "period": "17.11.2022",
-                    "value": 10.5,
-                    "url": "https://ppac.gov.in/prices/excise-duty-on-export-of-petrol-diesel-atf-and-special-additional-excise-duty-saed-on-domestic-crude-oil-production",
-                    "source": "ppac.gov.in"
-                  },
-                  {
-                    "period": "02.12.2022",
-                    "value": 8,
-                    "url": "https://ppac.gov.in/prices/excise-duty-on-export-of-petrol-diesel-atf-and-special-additional-excise-duty-saed-on-domestic-crude-oil-production",
-                    "source": "ppac.gov.in"
-                  },
-                  {
-                    "period": "16.12.2022",
-                    "value": 5,
-                    "url": "https://ppac.gov.in/prices/excise-duty-on-export-of-petrol-diesel-atf-and-special-additional-excise-duty-saed-on-domestic-crude-oil-production",
-                    "source": "ppac.gov.in"
-                  }
-                ],
-                "dropped": 0,
-                "sources": [
-                  {
-                    "url": "https://ppac.gov.in/prices/excise-duty-on-export-of-petrol-diesel-atf-and-special-additional-excise-duty-saed-on-domestic-crude-oil-production",
-                    "title": "ppac.gov.in",
-                    "domain": "ppac.gov.in"
-                  }
-                ],
-                "domains": [
-                  "ppac.gov.in"
-                ]
-              }
-            ]
-          }
         },
         {
           "id": "s11rj08i",
@@ -13041,6 +13051,116 @@
       "id": "economy",
       "name": "Economy & Trade",
       "items": [
+        {
+          "id": "s1mxcxrs",
+          "headline": "SC upholds states' power to levy additional tax on sales tax under pre-GST regime",
+          "url": "https://www.livemint.com/news/supreme-court-states-power-additional-sales-tax-surcharge-cess-gst-11793775813066.html",
+          "source": "mint",
+          "date": "2026-11-04T08:21:58.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2026/11/04/1600x900/logo/pexels-photo-6863176_1744029060787_1793780239311_CzrD_ad3e1965-39b0-4a17-a73f-4baecc4c9138_TJdr.jpeg",
+          "why": "A seven-judge Supreme Court Constitution Bench has upheld states' power to levy an additional tax on sales tax under the pre-GST regime, declining to revisit the S. Kodar judgment and settling a reference pending since 1998.",
+          "implications": [
+            "State governments keep a legal basis for additional-tax demands that relate to the period before GST, which could protect revenue they had claimed in older assessments.",
+            "Businesses facing such demands for pre-GST years may find it harder to contest them, because the court has refused to disturb the earlier ruling that supports the states."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-04T11:19:00.172Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "medium",
+              "reason": "The ruling matters to state revenue and to traders and businesses with pre-GST tax disputes, which is a compliance matter for one group rather than a household essential."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Pending assessments and appeals for pre-GST years must be taken up by tax authorities and courts, which is likely to take months."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "This rests on one outlet, Mint, reporting a Supreme Court judgment; the detailed reasoning and its effect on specific pending cases are not yet reported."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Government finances",
+                "direction": "up",
+                "what": "state tax claims",
+                "effect": "States keep the power to levy additional tax on sales tax for the pre-GST period, which may help them recover or retain revenue under older assessments.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "legacy tax disputes",
+                "effect": "Traders and businesses contesting additional-tax demands from the pre-GST period may find the challenge weaker, depending on how the judgment applies to their cases.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "The full judgment is read for how it applies to pending pre-GST additional tax cases",
+                "why": "It will show which disputes are settled and which businesses may still face demands.",
+                "when": "",
+                "where": "Supreme Court of India"
+              }
+            ],
+            "context": [
+              "Before GST, states levied their own sales taxes, and some added further levies on top. GST replaced most of these, but disputes over older tax periods continue to be decided in courts."
+            ],
+            "terms": [
+              {
+                "term": "S. Kodar judgment",
+                "meaning": "An earlier Supreme Court judgment on states' taxing powers, which the seven-judge bench chose to leave in place."
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Bench declines to revisit Kodar",
+                    "detail": "A seven-judge Constitution Bench found no reason to revisit the S. Kodar judgment, closing a reference that had been pending since 1998.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "States' power upheld",
+                    "detail": "The court upheld states' power to levy additional tax on sales tax under the pre-GST regime, so the legal basis for such levies stands.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Pending demands may proceed",
+                    "detail": "States may continue to pursue additional-tax demands for pre-GST periods, and businesses disputing them could remain liable if their cases fall within the upheld power.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The full judgment restricts how far the power applies to particular past tax periods or cases, so that pending demands against businesses are limited or fall away."
+              }
+            }
+          },
+          "place": {
+            "name": "New Delhi",
+            "country": "India",
+            "lat": 28.61,
+            "lon": 77.21
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "SC upholds states' power to levy additional tax on sales tax under pre-GST regime",
+              "url": "https://www.livemint.com/news/supreme-court-states-power-additional-sales-tax-surcharge-cess-gst-11793775813066.html",
+              "date": "2026-11-04T08:21:58.000Z",
+              "kind": "hard",
+              "summary": "A seven-judge Constitution Bench found no reason to revisit S. Kodar judgment, settling a reference pending since 1998.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/11/04/1600x900/logo/pexels-photo-6863176_1744029060787_1793780239311_CzrD_ad3e1965-39b0-4a17-a73f-4baecc4c9138_TJdr.jpeg"
+            }
+          ],
+          "finChecked": true,
+          "thread": "tqw8xre"
+        },
         {
           "id": "s1heiq03",
           "headline": "India plans ₹8,000-cr outlay to boost khadi, handloom and handicraft output",
@@ -26251,6 +26371,386 @@
       "name": "Finance",
       "items": [
         {
+          "id": "sxzaikr",
+          "headline": "RBI sets up market advisory panel to address liquidity, resilience concerns",
+          "url": "https://www.livemint.com/industry/rbi-sets-up-market-advisory-panel-to-address-liquidity-resilience-concerns-11793773573822.html",
+          "source": "mint",
+          "date": "2026-11-04T07:26:07.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2026/11/04/1600x900/logo/INDIA-RBI-MARKETS-COMITTEEE-0_1793776980630_KB52_1793776993253_Xwcg_a88bf26e-1959-4e38-95c4-0e1b3a0fcc50_yoYN.JPG",
+          "why": "The Reserve Bank of India has set up a committee of senior bankers, market infrastructure executives and industry representatives to advise on policy and operational issues in money, bond and foreign exchange markets, citing liquidity and resilience concerns.",
+          "implications": [
+            "The committee is advisory, so it does not change any rule itself; its significance lies in the market advice that the central bank may draw on.",
+            "Its advice on liquidity and market operations could eventually influence how smoothly banks and institutions raise short-term funds, which can affect borrowing costs across the economy."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-04T11:19:00.172Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "low",
+              "reason": "The panel only advises and no rule change has been reported, so any effect on loan or deposit rates would be indirect and would come later through market operations."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Advisory committees take time to deliberate, and any resulting changes to market rules would follow only after recommendations are made."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "This rests on one outlet, Mint, describing a central bank action; the committee's exact mandate, membership and timeline are not detailed."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Borrowers",
+                "direction": "unclear",
+                "what": "short-term funding conditions",
+                "effect": "Advice that improves liquidity management could make bank funding costs steadier, which may eventually influence the interest rates that borrowers pay.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Publication of the committee's recommendations or any Reserve Bank circular on market operations that follows from them",
+                "why": "It would show whether the advice leads to concrete changes in liquidity or market rules.",
+                "when": "",
+                "where": "Reserve Bank of India"
+              }
+            ],
+            "context": [
+              "The Reserve Bank of India regulates the money, government bond and foreign exchange markets, and it commonly consults market participants before changing operational arrangements. Liquidity refers to how easily cash and securities can be raised or traded."
+            ],
+            "terms": [
+              {
+                "term": "money market",
+                "meaning": "The market in which banks and institutions borrow and lend funds for short periods, which helps set short-term interest rates."
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Reserve Bank sets up advisory committee",
+                    "detail": "The central bank has formed a panel of senior bankers, market infrastructure executives and industry representatives, in response to concerns about liquidity and market resilience.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Panel advises on three markets",
+                    "detail": "The committee will advise on policy and operational issues across the money, bond and foreign exchange markets, giving the central bank direct market input.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Advice may shape market operations",
+                    "detail": "The recommendations could inform central bank changes that affect liquidity and how well markets function, which may in turn influence funding costs for banks and borrowers.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The central bank does not act on the committee's advice, so no change in liquidity arrangements or market rules reaches banks and borrowers."
+              }
+            }
+          },
+          "place": {
+            "name": "Mumbai",
+            "country": "India",
+            "lat": 19.08,
+            "lon": 72.88
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "RBI sets up market advisory panel to address liquidity, resilience concerns",
+              "url": "https://www.livemint.com/industry/rbi-sets-up-market-advisory-panel-to-address-liquidity-resilience-concerns-11793773573822.html",
+              "date": "2026-11-04T07:26:07.000Z",
+              "kind": "hard",
+              "summary": "The committee, comprising senior bankers, market infrastructure executives and industry representatives, will advise on policy and operational issues across money, bond and foreign exchange markets.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/11/04/1600x900/logo/INDIA-RBI-MARKETS-COMITTEEE-0_1793776980630_KB52_1793776993253_Xwcg_a88bf26e-1959-4e38-95c4-0e1b3a0fcc50_yoYN.JPG"
+            }
+          ],
+          "thread": "t1q92x13"
+        },
+        {
+          "id": "s1f417qz",
+          "headline": "Why Deutsche Bank is exiting its retail business in India | Explained",
+          "url": "https://www.thehindu.com/business/why-deutsche-bank-exiting-india-retail-business-explained/article71172841.ece",
+          "source": "thehindu",
+          "date": "2026-11-04T06:51:15.000Z",
+          "relevance": "medium",
+          "image": "https://th-i.thgim.com/public/incoming/z9brz5/article71173018.ece/alternates/LANDSCAPE_1200/AFP_B76D966.jpg",
+          "why": "",
+          "implications": [],
+          "place": {
+            "name": "Mumbai",
+            "country": "India",
+            "lat": 19.08,
+            "lon": 72.88,
+            "involves": [
+              "Germany"
+            ]
+          },
+          "reports": [
+            {
+              "source": "thehindu",
+              "headline": "Why Deutsche Bank is exiting its retail business in India | Explained",
+              "url": "https://www.thehindu.com/business/why-deutsche-bank-exiting-india-retail-business-explained/article71172841.ece",
+              "date": "2026-11-04T06:51:15.000Z",
+              "kind": "feature",
+              "summary": "Why is Deutsche Bank exiting? Why it is important for Kotak? What will happen to Deutsche Bank’s customers? What does this mean for India’s banking sector?",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/incoming/z9brz5/article71173018.ece/alternates/LANDSCAPE_1200/AFP_B76D966.jpg"
+            }
+          ],
+          "thread": "tb8rmx1"
+        },
+        {
+          "id": "s1e9ygdi",
+          "headline": "Stock markets rally in early trade on foreign fund inflows, easing crude oil prices",
+          "url": "https://www.thehindu.com/business/markets/stock-markets-rally-in-early-trade-on-foreign-fund-inflows-easing-crude-oil-prices/article71664174.ece",
+          "source": "thehindu",
+          "date": "2026-11-04T06:06:53.000Z",
+          "relevance": "medium",
+          "image": "https://th-i.thgim.com/public/hindi/editorial/6msfxh/article71664200.ece/alternates/LANDSCAPE_1200/NSE.jpg",
+          "why": "Indian share markets rallied in early trade on 4 November, with gains among the 30 Sensex companies. The rise came as foreign funds bought Indian shares and crude oil prices eased.",
+          "implications": [
+            "Foreign money entering Indian shares brings in dollars that must be converted into rupees, which can add to demand for the rupee.",
+            "Easing crude prices can lower India's import bill, because the country buys most of its oil abroad, but they do not by themselves change retail fuel prices.",
+            "Mutual fund schemes that hold large listed companies may show higher values for the session if the early gains hold."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-04T11:17:24.929Z",
+            "tier": "quick",
+            "primary": "market_move",
+            "complement": null,
+            "features": [
+              "market_move"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The move reaches households mainly through the value of shares and mutual fund holdings. The easing in crude prices is a possible indirect link to import costs, but no price effect is reported."
+            },
+            "horizon": {
+              "value": "now",
+              "reason": ""
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single early-trade report from The Hindu that names no analyst or exchange source for the causes and gives no size for the rally."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Equity & mutual fund investors",
+                "direction": "up",
+                "what": "value of share holdings",
+                "effect": "Portfolios and mutual fund schemes linked to large listed companies may show gains for the session while the rally lasts.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "The level at which the Sensex closes at the end of the day compared with its early gains",
+                "why": "It would show whether the rally held beyond early trade.",
+                "when": "2026-11-04",
+                "where": "BSE"
+              },
+              {
+                "what": "Whether crude oil prices continue to ease",
+                "why": "Sustained lower crude prices would reduce pressure on India's import bill and inflation.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "The Sensex tracks 30 large companies listed on the Bombay Stock Exchange and is widely used as a gauge of the market. Foreign portfolio investors are major buyers and sellers of Indian shares, so their flows can move the index."
+            ],
+            "terms": [
+              {
+                "term": "Sensex",
+                "meaning": "The Sensex is an index of 30 large companies listed on the Bombay Stock Exchange, used as a gauge of the Indian share market."
+              }
+            ],
+            "frameworks": {
+              "market_move": {
+                "moved": {
+                  "what": "Sensex",
+                  "kind": "share index",
+                  "direction": "up",
+                  "size": "",
+                  "period": "in early trade on 4 November"
+                },
+                "cause": {
+                  "text": "Share markets rallied on inflows from foreign funds and easing crude oil prices. The outlet states these causes without naming an analyst or exchange as the source.",
+                  "status": "claimed",
+                  "by": "The Hindu, without a named source"
+                },
+                "duration": "one_day",
+                "channels": [
+                  {
+                    "channel": "foreign investment flows",
+                    "india_link": "Foreign fund buying brings dollars into Indian shares, which can support the rupee and lift the value of savings held through shares and mutual funds.",
+                    "basis": "inferred"
+                  }
+                ],
+                "not_settled": "The size of the rally, whether it lasted beyond early trade and how far crude prices eased have not been reported."
+              }
+            }
+          },
+          "place": {
+            "name": "Mumbai",
+            "country": "India",
+            "lat": 19.08,
+            "lon": 72.88
+          },
+          "reports": [
+            {
+              "source": "thehindu",
+              "headline": "Stock markets rally in early trade on foreign fund inflows, easing crude oil prices",
+              "url": "https://www.thehindu.com/business/markets/stock-markets-rally-in-early-trade-on-foreign-fund-inflows-easing-crude-oil-prices/article71664174.ece",
+              "date": "2026-11-04T06:06:53.000Z",
+              "kind": "hard",
+              "summary": "In the 30 Sensex firms, Bharat Electronics, ITC, Adani Ports, HDFC Bank, Bajaj Finserv and State Bank of India were among the biggest winners",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/hindi/editorial/6msfxh/article71664200.ece/alternates/LANDSCAPE_1200/NSE.jpg"
+            }
+          ],
+          "thread": "t1dc6sy9"
+        },
+        {
+          "id": "s2o0ft2",
+          "headline": "Rupee rises 14 paise to 94.61 against U.S. dollar in early trade",
+          "url": "https://www.thehindu.com/business/markets/rupee-rises-14-paise-to-9461-against-us-dollar-in-early-trade/article71664175.ece",
+          "source": "thehindu",
+          "date": "2026-11-04T06:03:36.000Z",
+          "relevance": "medium",
+          "image": "https://th-i.thgim.com/public/hindi/editorial/9vn7lk/article71664190.ece/alternates/LANDSCAPE_1200/Rupee.jpg",
+          "why": "The rupee gained 14 paise to 94.61 against the US dollar in early trade on 4 November. Buying in domestic shares supported it while investors awaited the outcome of the US midterm elections.",
+          "implications": [
+            "A stronger rupee means each dollar of imports costs slightly fewer rupees, which can ease costs for importers of dollar-priced goods if the gain holds.",
+            "Exporters who are paid in dollars earn slightly fewer rupees per dollar when the rupee strengthens, so the effect on them runs in the opposite direction.",
+            "Currency moves around a major foreign election can reverse quickly, so a gain in early trade does not settle where the rupee ends the day."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-04T11:17:24.929Z",
+            "tier": "quick",
+            "primary": "pass_through",
+            "complement": null,
+            "features": [
+              "price_move",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The rupee's value reaches importers and exporters through the rupee cost of dollar payments. A move of 14 paise in one session is small, so the direct effect on households is limited."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Any effect on import costs appears only as new dollar payments are settled and contracts are repriced, which usually takes weeks."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single outlet, The Hindu, citing forex traders rather than an official source, and it describes only early trade with the election result still pending."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Importers & traders",
+                "direction": "down",
+                "what": "rupee cost of imports",
+                "effect": "A stronger rupee lowers the rupee amount needed to pay for dollar-priced imports, which may slightly reduce costs for importers if the gain is sustained.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Large exporters",
+                "direction": "down",
+                "what": "rupee earnings per dollar",
+                "effect": "Exporters paid in dollars may convert their receipts into slightly fewer rupees while the rupee is stronger, which could trim their margins.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "The outcome of the US midterm elections and the rupee's reaction to it",
+                "why": "The result could change investor appetite for emerging-market assets and so alter demand for the rupee.",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "Whether the rupee holds its early gain as domestic share buying continues through the session",
+                "why": "It would show whether the early move reflects lasting demand for rupees or only a brief reaction.",
+                "when": "2026-11-04",
+                "where": "Reserve Bank of India"
+              }
+            ],
+            "context": [
+              "India imports most of its crude oil and pays for it in dollars, so the rupee's value affects the national import bill. Exchange rates move with the supply of and demand for dollars, including foreign investment flows."
+            ],
+            "terms": [
+              {
+                "term": "paise",
+                "meaning": "Paise are the hundredth parts of a rupee, and exchange-rate moves are usually quoted in them."
+              }
+            ],
+            "frameworks": {
+              "pass_through": {
+                "driver": {
+                  "variable": "Rupee exchange rate against the US dollar (rupee stronger)",
+                  "direction": "up",
+                  "size": "14 paise"
+                },
+                "product": "other",
+                "rungs": [
+                  {
+                    "stage": "Stronger rupee → Importers' cost of dollar payments",
+                    "pass": "likely",
+                    "damper": "Importers who bought dollars earlier or hedged at fixed rates will not see the gain on those payments, so the benefit reaches only new, unhedged payments.",
+                    "lag": "days"
+                  },
+                  {
+                    "stage": "Importers' cost → Wholesale prices of imported goods",
+                    "pass": "partial",
+                    "damper": "A move of 14 paise is small and may be absorbed in importers' margins or offset by changes in the global dollar prices of the goods.",
+                    "lag": "weeks"
+                  },
+                  {
+                    "stage": "Wholesale prices → Retail prices",
+                    "pass": "unclear",
+                    "damper": "Retailers hold stock bought at earlier costs and change prices in steps, so small currency moves rarely alter shelf prices on their own.",
+                    "lag": "months"
+                  }
+                ],
+                "end_user": {
+                  "group": "Importers & traders",
+                  "effect": "Importers may see a marginally lower rupee bill for dollar-priced goods in the coming weeks if the rupee holds this level. Consumers are unlikely to notice any change from this move alone."
+                }
+              }
+            }
+          },
+          "place": {
+            "name": "Mumbai",
+            "country": "India",
+            "lat": 19.08,
+            "lon": 72.88
+          },
+          "reports": [
+            {
+              "source": "thehindu",
+              "headline": "Rupee rises 14 paise to 94.61 against U.S. dollar in early trade",
+              "url": "https://www.thehindu.com/business/markets/rupee-rises-14-paise-to-9461-against-us-dollar-in-early-trade/article71664175.ece",
+              "date": "2026-11-04T06:03:36.000Z",
+              "kind": "hard",
+              "summary": "Buying momentum in the domestic equities market also favoured the Indian currency even as investors awaited the outcome of the U.S. midterm elections, according to forex traders",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/hindi/editorial/9vn7lk/article71664190.ece/alternates/LANDSCAPE_1200/Rupee.jpg"
+            }
+          ],
+          "thread": "t5sqh80"
+        },
+        {
           "id": "s1pfaqak",
           "headline": "RBI's proposed curbs on revolving credit push NBFCs back to the drawing board",
           "url": "https://www.livemint.com/industry/rbis-proposed-curbs-on-revolving-credit-push-nbfcs-back-to-the-drawing-board-11793711901553.html",
@@ -30396,6 +30896,118 @@
       "name": "Technology",
       "items": [
         {
+          "id": "si2mktc",
+          "headline": "MeitY unveils indigenous AI Models EKA-1, Dhīr 2B and 5B under IndiaAI mission",
+          "url": "https://www.livemint.com/technology/meity-unveils-indigenous-ai-models-eka-1-dh-r-2b-and-5b-under-indiaai-mission-11793720433461.html",
+          "source": "mint",
+          "date": "2026-11-03T15:40:33.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2024/12/18/1600x900/logo/tech4_1734536476058_1734536482186.png",
+          "why": "The Ministry of Electronics and Information Technology (MeitY) has unveiled three indigenous artificial intelligence foundation models, EKA-1, Dhīr 2B and Dhīr 5B. Domestic companies built them with support under the IndiaAI Mission.",
+          "implications": [
+            "Domestic models could give Indian companies and government bodies an alternative to foreign AI systems for specialised tasks, which may reduce dependence on overseas providers.",
+            "The government has highlighted specialised applications, so the first effects are more likely to appear in particular industries than in everyday consumer services."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-03T19:21:35.485Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "medium",
+              "reason": "The effect reaches the technology industry and the organisations that may adopt these models, but the reports describe no direct link to household essentials or trade."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Companies and departments need time to test, adopt and build products on newly unveiled models before users notice any change."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "This rests on one outlet, Mint, reporting a MeitY announcement; the capabilities, users and deployment plans of the models are not yet confirmed."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "IT & services workers",
+                "direction": "unclear",
+                "what": "demand for AI skills",
+                "effect": "Domestic models could create work in building and adapting AI applications, but the reports do not say how many roles or which skills.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Announcements of specific industries or government departments adopting EKA-1, Dhīr 2B or Dhīr 5B",
+                "why": "Actual adoption would show whether the models move beyond launch into practical use.",
+                "when": "",
+                "where": "Ministry of Electronics and Information Technology"
+              }
+            ],
+            "context": [
+              "Foundation models are large AI systems trained on broad data and then adapted for specific uses. Governments back domestic versions to build local capability and to keep control over data and technology."
+            ],
+            "terms": [
+              {
+                "term": "foundation models",
+                "meaning": "Large AI systems trained on broad data that can be adapted for many tasks, such as writing, translation or analysis."
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Government unveils three domestic AI models",
+                    "detail": "MeitY has presented EKA-1, Dhīr 2B and Dhīr 5B, built by domestic companies with support under the IndiaAI Mission.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Focus on specialised applications",
+                    "detail": "The government has pointed to the potential of the models for specialised applications, which suggests that early use would target specific sectors.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Indian firms may build on local models",
+                    "detail": "Businesses and public bodies could use these models for their own products, which may lower reliance on foreign AI providers over time.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The models prove too limited, or too costly to adopt, for Indian organisations to build real products on them."
+              }
+            }
+          },
+          "place": {
+            "name": "New Delhi",
+            "country": "India",
+            "lat": 28.6,
+            "lon": 77.2
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "MeitY unveils indigenous AI Models EKA-1, Dhīr 2B and 5B under IndiaAI mission",
+              "url": "https://www.livemint.com/technology/meity-unveils-indigenous-ai-models-eka-1-dh-r-2b-and-5b-under-indiaai-mission-11793720433461.html",
+              "date": "2026-11-03T15:40:33.000Z",
+              "kind": "hard",
+              "summary": "Ministry of Electronics and Information Technology (MeitY) has unveiled three indigenous artificial intelligence foundation models, EKA-1, Dhīr 2B and Dhīr 5B, developed by domestic companies with support under the IndiaAI Mission, with the government highlighting their potential for specialised applications and…",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2024/12/18/1600x900/logo/tech4_1734536476058_1734536482186.png"
+            },
+            {
+              "source": "thehindu",
+              "headline": "IndiaAI Mission releases indigenous foundation models EKA-1, Dhīr 2B and Dhīr 5B",
+              "url": "https://www.thehindu.com/sci-tech/technology/indiaai-mission-releases-indigenous-foundation-models-eka-1-dhir-2b-and-dhir-5b/article71663984.ece",
+              "date": "2026-11-04T04:50:50.000Z",
+              "kind": "hard",
+              "summary": "These three indigenous models are a key milestone under the IndiaAI Mission, showcasing India's progress in creating homegrown AI technology",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/incoming/vw988u/article71663988.ece/alternates/LANDSCAPE_1200/2026-10-16T141553Z_1576751976_RC2D4OA3GVGZ_RTRMADP_3_INDIA-POLITICS.JPG"
+            }
+          ],
+          "thread": "tao9a2j"
+        },
+        {
           "id": "sxv83pf",
           "headline": "India plans stringent digital locks to secure banking data",
           "url": "https://www.livemint.com/economy/bis-safeguards-for-encryption-keys-banking-financial-data-cyber-security-11793711923718.html",
@@ -30496,108 +31108,6 @@
             }
           ],
           "thread": "touf849"
-        },
-        {
-          "id": "si2mktc",
-          "headline": "MeitY unveils indigenous AI Models EKA-1, Dhīr 2B and 5B under IndiaAI mission",
-          "url": "https://www.livemint.com/technology/meity-unveils-indigenous-ai-models-eka-1-dh-r-2b-and-5b-under-indiaai-mission-11793720433461.html",
-          "source": "mint",
-          "date": "2026-11-03T15:40:33.000Z",
-          "relevance": "medium",
-          "image": "https://www.livemint.com/lm-img/img/2024/12/18/1600x900/logo/tech4_1734536476058_1734536482186.png",
-          "why": "The Ministry of Electronics and Information Technology (MeitY) has unveiled three indigenous artificial intelligence foundation models, EKA-1, Dhīr 2B and Dhīr 5B. Domestic companies built them with support under the IndiaAI Mission.",
-          "implications": [
-            "Domestic models could give Indian companies and government bodies an alternative to foreign AI systems for specialised tasks, which may reduce dependence on overseas providers.",
-            "The government has highlighted specialised applications, so the first effects are more likely to appear in particular industries than in everyday consumer services."
-          ],
-          "analysis": {
-            "v": 3,
-            "at": "2026-11-03T19:21:35.485Z",
-            "tier": "quick",
-            "primary": "impact_chain",
-            "complement": null,
-            "features": [],
-            "exposure": {
-              "level": "medium",
-              "reason": "The effect reaches the technology industry and the organisations that may adopt these models, but the reports describe no direct link to household essentials or trade."
-            },
-            "horizon": {
-              "value": "months",
-              "reason": "Companies and departments need time to test, adopt and build products on newly unveiled models before users notice any change."
-            },
-            "confidence": {
-              "level": "medium",
-              "reason": "This rests on one outlet, Mint, reporting a MeitY announcement; the capabilities, users and deployment plans of the models are not yet confirmed."
-            },
-            "outlets": 1,
-            "affected": [
-              {
-                "group": "IT & services workers",
-                "direction": "unclear",
-                "what": "demand for AI skills",
-                "effect": "Domestic models could create work in building and adapting AI applications, but the reports do not say how many roles or which skills.",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "Announcements of specific industries or government departments adopting EKA-1, Dhīr 2B or Dhīr 5B",
-                "why": "Actual adoption would show whether the models move beyond launch into practical use.",
-                "when": "",
-                "where": "Ministry of Electronics and Information Technology"
-              }
-            ],
-            "context": [
-              "Foundation models are large AI systems trained on broad data and then adapted for specific uses. Governments back domestic versions to build local capability and to keep control over data and technology."
-            ],
-            "terms": [
-              {
-                "term": "foundation models",
-                "meaning": "Large AI systems trained on broad data that can be adapted for many tasks, such as writing, translation or analysis."
-              }
-            ],
-            "frameworks": {
-              "impact_chain": {
-                "chain": [
-                  {
-                    "step": "Government unveils three domestic AI models",
-                    "detail": "MeitY has presented EKA-1, Dhīr 2B and Dhīr 5B, built by domestic companies with support under the IndiaAI Mission.",
-                    "basis": "reported"
-                  },
-                  {
-                    "step": "Focus on specialised applications",
-                    "detail": "The government has pointed to the potential of the models for specialised applications, which suggests that early use would target specific sectors.",
-                    "basis": "reported"
-                  },
-                  {
-                    "step": "Indian firms may build on local models",
-                    "detail": "Businesses and public bodies could use these models for their own products, which may lower reliance on foreign AI providers over time.",
-                    "basis": "inferred"
-                  }
-                ],
-                "breaks_if": "The models prove too limited, or too costly to adopt, for Indian organisations to build real products on them."
-              }
-            }
-          },
-          "place": {
-            "name": "New Delhi",
-            "country": "India",
-            "lat": 28.6,
-            "lon": 77.2
-          },
-          "reports": [
-            {
-              "source": "mint",
-              "headline": "MeitY unveils indigenous AI Models EKA-1, Dhīr 2B and 5B under IndiaAI mission",
-              "url": "https://www.livemint.com/technology/meity-unveils-indigenous-ai-models-eka-1-dh-r-2b-and-5b-under-indiaai-mission-11793720433461.html",
-              "date": "2026-11-03T15:40:33.000Z",
-              "kind": "hard",
-              "summary": "Ministry of Electronics and Information Technology (MeitY) has unveiled three indigenous artificial intelligence foundation models, EKA-1, Dhīr 2B and Dhīr 5B, developed by domestic companies with support under the IndiaAI Mission, with the government highlighting their potential for specialised applications and…",
-              "summaryV": 3,
-              "image": "https://www.livemint.com/lm-img/img/2024/12/18/1600x900/logo/tech4_1734536476058_1734536482186.png"
-            }
-          ],
-          "thread": "tao9a2j"
         },
         {
           "id": "s8hilg2",
@@ -37569,6 +38079,145 @@
       "name": "Manufacturing",
       "items": [
         {
+          "id": "s195hxc2",
+          "headline": "How Amara Raja, Motherson and Belrise are powering a triple-engine push in auto supply chain",
+          "url": "https://www.livemint.com/companies/news/how-amara-raja-motherson-and-belrise-are-powering-a-triple-engine-push-in-auto-supply-chain-11793775783753.html",
+          "source": "mint",
+          "date": "2026-11-04T07:12:16.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2026/11/04/1600x900/logo/3-0-76954377-manufacturing2-0_1679798174265_1793775947263_SooQ_b17d0b0d-11a8-458c-b692-f3756624284f_sUGT.jpg",
+          "why": "",
+          "implications": [],
+          "place": {
+            "name": "India",
+            "country": "India",
+            "lat": 20.6,
+            "lon": 78.9
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "How Amara Raja, Motherson and Belrise are powering a triple-engine push in auto supply chain",
+              "url": "https://www.livemint.com/companies/news/how-amara-raja-motherson-and-belrise-are-powering-a-triple-engine-push-in-auto-supply-chain-11793775783753.html",
+              "date": "2026-11-04T07:12:16.000Z",
+              "kind": "feature",
+              "summary": "Auto component makers are expanding beyond traditional manufacturing through services, technology tie-ups and process innovations. Amara Raja plans a ₹100-crore automotive services venture; Belrise has partnered with YAMATO, while Motherson is exploring faster, energy-efficient production methods.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/11/04/1600x900/logo/3-0-76954377-manufacturing2-0_1679798174265_1793775947263_SooQ_b17d0b0d-11a8-458c-b692-f3756624284f_sUGT.jpg"
+            }
+          ],
+          "thread": "tov8hqo"
+        },
+        {
+          "id": "s1d81xu9",
+          "headline": "India’s first indigenous bullet train takes shape at Bengaluru's BEML - what is Bharat Train Control System?",
+          "url": "https://www.livemint.com/industry/infrastructure/indias-first-indigenous-bullet-train-takes-shape-at-bengalurus-beml-what-is-bharat-train-control-system-11793774391624.html",
+          "source": "mint",
+          "date": "2026-11-04T06:52:19.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2026/11/04/1600x900/logo/bt_1793774646837_OzxY_1793774658049_vIiO_65351aa0-de91-46f5-b953-f7a62510d4bc_hCXH.jpg",
+          "why": "Ashwini Vaishnaw inspected manufacturing and quality testing of India's first indigenous bullet train at BEML's Bengaluru plant. The eight-coach, 202-metre train is designed for 249 kmph and is planned to use the Bharat Train Control System.",
+          "implications": [
+            "Building the train in India could give domestic component makers and engineering suppliers a larger role in high-speed rail, if the design moves from prototype into regular production.",
+            "Using an indigenous control system could reduce reliance on imported signalling technology, although the reports do not say how far the system has been tested."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-04T11:19:00.172Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "low",
+              "reason": "The reports describe a manufacturing and testing stage only, with no fares, routes or costs, so the channel to households is indirect and limited to the rail manufacturing industry."
+            },
+            "horizon": {
+              "value": "years",
+              "reason": "The train is still being built and tested, and no date for passenger service has been reported."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "This rests on one outlet, Mint, reporting an inspection by a named minister; no service date or test results are given."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Manufacturing workers",
+                "direction": "up",
+                "what": "rolling stock and component work",
+                "effect": "Domestic production of a high-speed train could create more work at BEML and among its suppliers if the design is built in larger numbers.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Travellers & pilgrims",
+                "direction": "unclear",
+                "what": "future high-speed rail options",
+                "effect": "Passengers could eventually gain a domestically built high-speed option, but no route, fare or start date has been reported.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "An announcement of trial runs or a timeline for the indigenous bullet train entering service",
+                "why": "It would show how close the train is to carrying passengers and whether the control system has passed testing.",
+                "when": "",
+                "where": "Ministry of Railways"
+              }
+            ],
+            "context": [
+              "Train control systems are the signalling and safety technology that supervise train speed and spacing. Indian Railways has often relied on imported technology for advanced signalling and high-speed rail."
+            ],
+            "terms": [
+              {
+                "term": "Bharat Train Control System",
+                "meaning": "An indigenous system for controlling and supervising train movements, which is planned for use on this bullet train."
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Train built and inspected at BEML",
+                    "detail": "Ashwini Vaishnaw inspected key manufacturing stages and quality tests at BEML's Bengaluru plant, where India's first indigenous bullet train is taking shape.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Design and indigenous control system",
+                    "detail": "The eight-coach, 202-metre train is designed to run at 249 kmph and is planned to use the Bharat Train Control System, which is also indigenous.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Domestic supplier capability may grow",
+                    "detail": "If the train and its control system pass testing and are adopted, Indian firms could build more high-speed rail technology at home instead of importing it.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The train or its control system fails quality and safety testing, or is not adopted for passenger service, so no domestic production base develops."
+              }
+            }
+          },
+          "place": {
+            "name": "Bengaluru",
+            "country": "India",
+            "lat": 12.97,
+            "lon": 77.59
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "India’s first indigenous bullet train takes shape at Bengaluru's BEML - what is Bharat Train Control System?",
+              "url": "https://www.livemint.com/industry/infrastructure/indias-first-indigenous-bullet-train-takes-shape-at-bengalurus-beml-what-is-bharat-train-control-system-11793774391624.html",
+              "date": "2026-11-04T06:52:19.000Z",
+              "kind": "hard",
+              "summary": "At BEML’s Bengaluru plant, Ashwini Vaishnaw inspected key manufacturing stages and quality tests for India’s bullet train. The 202-metre, eight-coach train is designed to operate at 249 kmph. It is also planned to use the indigenous Bharat Train Control System.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/11/04/1600x900/logo/bt_1793774646837_OzxY_1793774658049_vIiO_65351aa0-de91-46f5-b953-f7a62510d4bc_hCXH.jpg"
+            }
+          ],
+          "thread": "t116f0em"
+        },
+        {
           "id": "s1xx7a6f",
           "headline": "Drugmakers may need designated expert to certify batches before sale",
           "url": "https://www.livemint.com/news/pharma-industry-drug-batch-release-medicines-market-11793721164354.html",
@@ -42357,116 +43006,6 @@
       "name": "Environment & Climate",
       "items": [
         {
-          "id": "s1f6eyp4",
-          "headline": "Southern India has grown wetter over seven decades, finds IMD study",
-          "url": "https://www.thehindu.com/news/national/tamil-nadu/southern-india-has-grown-wetter-over-seven-decades-finds-imd-study/article71661697.ece",
-          "source": "thehindu",
-          "date": "2026-11-03T18:13:01.000Z",
-          "relevance": "medium",
-          "image": "https://th-i.thgim.com/public/incoming/334fp/article71662671.ece/alternates/LANDSCAPE_1200/20261103118L.jpg",
-          "why": "An India Meteorological Department study finds that southern India has grown wetter over seven decades and the peninsula's hot semi-arid zone has nearly halved, while north-west India has become drier and hotter.",
-          "implications": [
-            "Changing rainfall patterns can alter which crops and water sources are dependable, so farmers in the peninsula and in the north-west may face very different conditions.",
-            "A drier and hotter north-west could add pressure on water supplies and irrigation, while wetter southern regions may need different water planning."
-          ],
-          "analysis": {
-            "v": 3,
-            "at": "2026-11-03T19:24:04.358Z",
-            "tier": "quick",
-            "primary": "impact_chain",
-            "complement": null,
-            "features": [],
-            "exposure": {
-              "level": "medium",
-              "reason": "The findings bear on farming and water planning in regions with shifting climate, but the change is gradual and the reports describe no immediate effect on household essentials."
-            },
-            "horizon": {
-              "value": "years",
-              "reason": "The study describes change over seven decades, so any adaptation in farming and water planning would unfold over a long period."
-            },
-            "confidence": {
-              "level": "medium",
-              "reason": "This rests on one outlet, The Hindu, reporting a study by the India Meteorological Department; the full methods and regional detail are not described."
-            },
-            "outlets": 1,
-            "affected": [
-              {
-                "group": "Farmers",
-                "direction": "mixed",
-                "what": "rainfall and crop conditions",
-                "effect": "Farmers in a wetter south and a drier, hotter north-west may face different crop and irrigation conditions as average climate shifts.",
-                "basis": "inferred"
-              },
-              {
-                "group": "A named state or region",
-                "direction": "mixed",
-                "what": "southern and north-west climate",
-                "effect": "Southern India has become wetter while north-west India has become drier and hotter, which may require different water planning in each region.",
-                "basis": "reported"
-              }
-            ],
-            "watch": [
-              {
-                "what": "Further regional detail or follow-up assessments from the India Meteorological Department on these climate shifts",
-                "why": "They would show which states and farming zones are most affected by the changing climate pattern.",
-                "when": "",
-                "where": "India Meteorological Department"
-              }
-            ],
-            "context": [
-              "Climate classification systems group regions by temperature and rainfall, so a shift from semi-arid to savannah climate reflects a lasting change in average conditions rather than a single season.",
-              "Indian agriculture depends heavily on seasonal rainfall, so long-run changes in rain patterns matter for farming and water management."
-            ],
-            "terms": [
-              {
-                "term": "tropical savannah climate",
-                "meaning": "A warm climate with a distinct wet season and dry season, typically wetter overall than a semi-arid climate."
-              }
-            ],
-            "frameworks": {
-              "impact_chain": {
-                "chain": [
-                  {
-                    "step": "South grows wetter",
-                    "detail": "The India Meteorological Department study finds southern India has become wetter over seven decades, and the peninsula's hot semi-arid zone has nearly halved.",
-                    "basis": "reported"
-                  },
-                  {
-                    "step": "North-west turns drier and hotter",
-                    "detail": "The same study finds that north-west India has become drier and hotter, so the country's climate has shifted in opposite directions across regions.",
-                    "basis": "reported"
-                  },
-                  {
-                    "step": "Farming and water planning may adapt",
-                    "detail": "Differences in rainfall and temperature could require changes in crop choices, irrigation and water management in each region.",
-                    "basis": "inferred"
-                  }
-                ],
-                "breaks_if": "The effect would be limited if irrigation, crop choices and water management adapt in step with the changed conditions in each region."
-              }
-            }
-          },
-          "place": {
-            "name": "Southern India",
-            "country": "India",
-            "lat": 12,
-            "lon": 78
-          },
-          "reports": [
-            {
-              "source": "thehindu",
-              "headline": "Southern India has grown wetter over seven decades, finds IMD study",
-              "url": "https://www.thehindu.com/news/national/tamil-nadu/southern-india-has-grown-wetter-over-seven-decades-finds-imd-study/article71661697.ece",
-              "date": "2026-11-03T18:13:01.000Z",
-              "kind": "hard",
-              "summary": "The peninsula’s hot semi-arid zone has nearly halved, with much of it turning into a tropical savannah climate, while north-west India has become drier and hotter",
-              "summaryV": 3,
-              "image": "https://th-i.thgim.com/public/incoming/334fp/article71662671.ece/alternates/LANDSCAPE_1200/20261103118L.jpg"
-            }
-          ],
-          "thread": "ta47o8k"
-        },
-        {
           "id": "s1k5uxy3",
           "headline": "‘Murasu’ strengthens into Severe Cyclonic Storm",
           "url": "https://www.thehindu.com/news/national/andhra-pradesh/cyclone-murasu-live-updates-november-2-2026/article71655112.ece",
@@ -42698,9 +43237,129 @@
               "summary": "City receives continuous rain after a prolonged dry spell; red alert remains in force until November 4 morning, schools and colleges to remain closed",
               "summaryV": 3,
               "image": "https://th-i.thgim.com/public/incoming/56gscu/article71662384.ece/alternates/LANDSCAPE_1200/vjkvg-kanuru%2020.JPG"
+            },
+            {
+              "source": "thehindu",
+              "headline": "Cyclone Murasu: All 70 gates of Prakasam Barrage opened; 71,000 cusecs released into Krishna",
+              "url": "https://www.thehindu.com/news/national/andhra-pradesh/cyclone-murasu-all-70-gates-of-prakasam-barrage-opened-71000-cusecs-released-into-krishna/article71663867.ece",
+              "date": "2026-11-04T08:41:08.000Z",
+              "kind": "hard",
+              "summary": "The inflows come largely from the Keesara, Munneru and Budameru streams after heavy rain in NTR district",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/incoming/fh2od0/article69976171.ece/alternates/LANDSCAPE_1200/DSC_0270.JPG"
             }
           ],
           "thread": "t1tlxm8k"
+        },
+        {
+          "id": "s1f6eyp4",
+          "headline": "Southern India has grown wetter over seven decades, finds IMD study",
+          "url": "https://www.thehindu.com/news/national/tamil-nadu/southern-india-has-grown-wetter-over-seven-decades-finds-imd-study/article71661697.ece",
+          "source": "thehindu",
+          "date": "2026-11-03T18:13:01.000Z",
+          "relevance": "medium",
+          "image": "https://th-i.thgim.com/public/incoming/334fp/article71662671.ece/alternates/LANDSCAPE_1200/20261103118L.jpg",
+          "why": "An India Meteorological Department study finds that southern India has grown wetter over seven decades and the peninsula's hot semi-arid zone has nearly halved, while north-west India has become drier and hotter.",
+          "implications": [
+            "Changing rainfall patterns can alter which crops and water sources are dependable, so farmers in the peninsula and in the north-west may face very different conditions.",
+            "A drier and hotter north-west could add pressure on water supplies and irrigation, while wetter southern regions may need different water planning."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-03T19:24:04.358Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "medium",
+              "reason": "The findings bear on farming and water planning in regions with shifting climate, but the change is gradual and the reports describe no immediate effect on household essentials."
+            },
+            "horizon": {
+              "value": "years",
+              "reason": "The study describes change over seven decades, so any adaptation in farming and water planning would unfold over a long period."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "This rests on one outlet, The Hindu, reporting a study by the India Meteorological Department; the full methods and regional detail are not described."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Farmers",
+                "direction": "mixed",
+                "what": "rainfall and crop conditions",
+                "effect": "Farmers in a wetter south and a drier, hotter north-west may face different crop and irrigation conditions as average climate shifts.",
+                "basis": "inferred"
+              },
+              {
+                "group": "A named state or region",
+                "direction": "mixed",
+                "what": "southern and north-west climate",
+                "effect": "Southern India has become wetter while north-west India has become drier and hotter, which may require different water planning in each region.",
+                "basis": "reported"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Further regional detail or follow-up assessments from the India Meteorological Department on these climate shifts",
+                "why": "They would show which states and farming zones are most affected by the changing climate pattern.",
+                "when": "",
+                "where": "India Meteorological Department"
+              }
+            ],
+            "context": [
+              "Climate classification systems group regions by temperature and rainfall, so a shift from semi-arid to savannah climate reflects a lasting change in average conditions rather than a single season.",
+              "Indian agriculture depends heavily on seasonal rainfall, so long-run changes in rain patterns matter for farming and water management."
+            ],
+            "terms": [
+              {
+                "term": "tropical savannah climate",
+                "meaning": "A warm climate with a distinct wet season and dry season, typically wetter overall than a semi-arid climate."
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "South grows wetter",
+                    "detail": "The India Meteorological Department study finds southern India has become wetter over seven decades, and the peninsula's hot semi-arid zone has nearly halved.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "North-west turns drier and hotter",
+                    "detail": "The same study finds that north-west India has become drier and hotter, so the country's climate has shifted in opposite directions across regions.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Farming and water planning may adapt",
+                    "detail": "Differences in rainfall and temperature could require changes in crop choices, irrigation and water management in each region.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The effect would be limited if irrigation, crop choices and water management adapt in step with the changed conditions in each region."
+              }
+            }
+          },
+          "place": {
+            "name": "Southern India",
+            "country": "India",
+            "lat": 12,
+            "lon": 78
+          },
+          "reports": [
+            {
+              "source": "thehindu",
+              "headline": "Southern India has grown wetter over seven decades, finds IMD study",
+              "url": "https://www.thehindu.com/news/national/tamil-nadu/southern-india-has-grown-wetter-over-seven-decades-finds-imd-study/article71661697.ece",
+              "date": "2026-11-03T18:13:01.000Z",
+              "kind": "hard",
+              "summary": "The peninsula’s hot semi-arid zone has nearly halved, with much of it turning into a tropical savannah climate, while north-west India has become drier and hotter",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/incoming/334fp/article71662671.ece/alternates/LANDSCAPE_1200/20261103118L.jpg"
+            }
+          ],
+          "thread": "ta47o8k"
         },
         {
           "id": "s13uwiko",
@@ -51209,6 +51868,268 @@
       "id": "governance",
       "name": "Policy & Governance",
       "items": [
+        {
+          "id": "s17cqted",
+          "headline": "Mint explainer: why is India opening new entry gateways for medicines and medical devices?",
+          "url": "https://www.livemint.com/news/why-is-india-opening-new-entry-gateways-for-medicines-and-medical-devices-11793763261157.html",
+          "source": "mint",
+          "date": "2026-11-04T08:27:40.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2026/11/04/1600x900/logo/2-0-399959616-pills-0_1680671054913_1793769023705_ZyXv_2e6c82fa-b576-4f61-82e6-949ffc83fad7_wK3J.jpg",
+          "why": "",
+          "implications": [],
+          "place": {
+            "name": "New Delhi",
+            "country": "India",
+            "lat": 28.61,
+            "lon": 77.21
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "Mint explainer: why is India opening new entry gateways for medicines and medical devices?",
+              "url": "https://www.livemint.com/news/why-is-india-opening-new-entry-gateways-for-medicines-and-medical-devices-11793763261157.html",
+              "date": "2026-11-04T08:27:40.000Z",
+              "kind": "feature",
+              "summary": "India plans to add dry ports, a special economic zone and an airport to its authorized entry points for medical imports, bringing clearances closer to manufacturing hubs and markets.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/11/04/1600x900/logo/2-0-399959616-pills-0_1680671054913_1793769023705_ZyXv_2e6c82fa-b576-4f61-82e6-949ffc83fad7_wK3J.jpg"
+            }
+          ],
+          "finChecked": true,
+          "thread": "t12duzfk"
+        },
+        {
+          "id": "s1qugd0b",
+          "headline": "SC seeks Centre, EC response on law giving blanket, lifelong immunity to CEC, Election Commissioners",
+          "url": "https://www.thehindu.com/news/national/sc-seeks-centre-ec-response-on-law-giving-blanket-lifelong-immunity-to-cec-election-commissioners/article71664699.ece",
+          "source": "thehindu",
+          "date": "2026-11-04T08:14:09.000Z",
+          "relevance": "medium",
+          "image": "https://th-i.thgim.com/public/incoming/h77ola/article71664729.ece/alternates/LANDSCAPE_1200/SIR%20ELECTION%20COMMISSION%20PC%20%20DELHI%202025_27_10_6.jpg",
+          "why": "The Supreme Court has asked the Centre and the Election Commission to respond to a challenge by RJD MP Manoj Jha against Section 16 of the 2023 law, which gives election commissioners lifelong immunity.",
+          "implications": [
+            "The case questions whether the officials who run India's elections can be held legally answerable for their actions, a matter that bears on public trust in election management.",
+            "The court has so far only sought responses, so the 2023 law remains in force while the Centre and the Election Commission prepare replies."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-04T11:19:00.172Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "The case concerns the legal protection of election officials and has no direct channel to prices, loans, jobs or trade. Any effect on Indians would come indirectly through confidence in how elections are run."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "The court has only asked for replies, and a constitutional challenge of this kind normally takes months to be heard and decided."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "This rests on a single outlet, The Hindu, reporting a Supreme Court step; the Centre's and the Election Commission's responses are not yet known."
+            },
+            "outlets": 1,
+            "affected": [],
+            "watch": [
+              {
+                "what": "The Centre and the Election Commission file their responses to the petition in the Supreme Court",
+                "why": "Their stated position will show how the government defends the immunity provision.",
+                "when": "",
+                "where": "Supreme Court of India"
+              }
+            ],
+            "context": [
+              "The Election Commission oversees elections to Parliament and state assemblies. When the Supreme Court seeks responses to a petition, the government must file its position before the court decides whether and how to hear the challenge in full."
+            ],
+            "terms": [
+              {
+                "term": "Section 16",
+                "meaning": "The provision of the 2023 law on election commissioners that, according to the petition, gives the Chief Election Commissioner and Election Commissioners blanket, lifelong immunity."
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Petition filed against Section 16",
+                    "detail": "RJD MP Manoj Jha has asked the Supreme Court to strike down Section 16 of the 2023 law on the appointment and service conditions of election commissioners.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Court seeks official responses",
+                    "detail": "The Supreme Court has asked the Centre and the Election Commission to respond to the challenge, which is the first formal step before the case is examined in full.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Accountability question to be decided",
+                    "detail": "The eventual ruling may determine whether election commissioners can face legal proceedings for official acts, which could shape public confidence in how elections are conducted.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The court declines to examine the challenge, or upholds Section 16, in which case the immunity continues unchanged and nothing changes for how commissioners are held accountable."
+              }
+            }
+          },
+          "place": {
+            "name": "New Delhi",
+            "country": "India",
+            "lat": 28.61,
+            "lon": 77.21
+          },
+          "reports": [
+            {
+              "source": "thehindu",
+              "headline": "SC seeks Centre, EC response on law giving blanket, lifelong immunity to CEC, Election Commissioners",
+              "url": "https://www.thehindu.com/news/national/sc-seeks-centre-ec-response-on-law-giving-blanket-lifelong-immunity-to-cec-election-commissioners/article71664699.ece",
+              "date": "2026-11-04T08:14:09.000Z",
+              "kind": "hard",
+              "summary": "RJD MP Manoj Jha has moved the Supreme Court challenging Section 16 of The Chief Election Commissioner And Other Election Commissioners (Appointment, Conditions Of Service And Term Of Office) Act, 2023",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/incoming/h77ola/article71664729.ece/alternates/LANDSCAPE_1200/SIR%20ELECTION%20COMMISSION%20PC%20%20DELHI%202025_27_10_6.jpg"
+            }
+          ],
+          "finChecked": true,
+          "thread": "t12qfnk1"
+        },
+        {
+          "id": "s5atuvc",
+          "headline": "Foreign Secretary Misri meets Nepal Foreign Minister, discusses bilateral ties",
+          "url": "https://www.thehindu.com/news/national/foreign-secretary-misri-meets-nepal-foreign-minister-discusses-bilateral-ties/article71664665.ece",
+          "source": "thehindu",
+          "date": "2026-11-04T07:58:42.000Z",
+          "relevance": "medium",
+          "image": "https://th-i.thgim.com/public/incoming/xlz1at/article71664669.ece/alternates/LANDSCAPE_1200/20261104034L.jpg",
+          "why": "Foreign Secretary Misri met Nepal's Foreign Minister during a two-day visit to Nepal. The visit aims to prepare the ground for Nepalese Prime Minister Balendra Shah's proposed visit to New Delhi.",
+          "implications": [
+            "Preparatory talks of this kind usually set the agenda for a leaders' meeting, so the issues raised now could shape what India and Nepal agree later.",
+            "Any outcome would matter most for people and businesses linked to cross-border trade and movement, though the reports do not name specific topics."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-04T11:19:00.172Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The story concerns one bilateral relationship, and any effect on Indian traders or border communities would come through agreements that have not yet been reported."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "The prime minister's visit to New Delhi is only proposed, and no date has been reported."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "This rests on one outlet, The Hindu, reporting an official meeting; the topics discussed and the date of the proposed visit are not given."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "cross-border trade arrangements",
+                "effect": "Agreements prepared for the leaders' meeting could eventually change trade or transit arrangements between India and Nepal, though no such measure has been reported.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "An announcement of the date and agenda for Prime Minister Balendra Shah's visit to New Delhi",
+                "why": "It would show how far preparatory talks have progressed and which issues the two governments prioritise.",
+                "when": "",
+                "where": "Ministry of External Affairs"
+              }
+            ],
+            "context": [
+              "Nepal shares a long open border with India, and India is a major trading partner and transit route for the landlocked country. Prime ministerial visits are normally prepared by officials in advance."
+            ],
+            "terms": [],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Foreign Secretary visits Nepal",
+                    "detail": "Foreign Secretary Misri is in Nepal on a two-day official visit and has met the Nepalese Foreign Minister to discuss bilateral ties.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Groundwork for a leaders' visit",
+                    "detail": "The visit aims to prepare the ground for Nepalese Prime Minister Balendra Shah's proposed visit to New Delhi.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Agenda for later agreements takes shape",
+                    "detail": "The talks could settle which issues are taken up at the leaders' meeting, and any resulting agreements may later affect trade or other ties with India.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The proposed visit is postponed or the two sides fail to agree on an agenda, so no new arrangements follow from the preparatory talks."
+              }
+            }
+          },
+          "place": {
+            "name": "Kathmandu",
+            "country": "Nepal",
+            "lat": 27.72,
+            "lon": 85.32,
+            "involves": [
+              "India"
+            ]
+          },
+          "reports": [
+            {
+              "source": "thehindu",
+              "headline": "Foreign Secretary Misri meets Nepal Foreign Minister, discusses bilateral ties",
+              "url": "https://www.thehindu.com/news/national/foreign-secretary-misri-meets-nepal-foreign-minister-discusses-bilateral-ties/article71664665.ece",
+              "date": "2026-11-04T07:58:42.000Z",
+              "kind": "hard",
+              "summary": "The diplomat is in Nepal on a two-day official visit aimed at preparing the ground for Nepalese Prime Minister Balendra Shah's proposed visit to New Delhi.",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/incoming/xlz1at/article71664669.ece/alternates/LANDSCAPE_1200/20261104034L.jpg"
+            }
+          ],
+          "finChecked": true,
+          "thread": "tbzosip"
+        },
+        {
+          "id": "s4y5ogx",
+          "headline": "Why is there variation in India’s fertility rates? | Explained",
+          "url": "https://www.thehindu.com/sci-tech/health/why-is-there-variation-in-indias-fertility-rates-explained/article69588360.ece",
+          "source": "thehindu",
+          "date": "2026-11-04T07:20:06.000Z",
+          "relevance": "medium",
+          "image": "https://th-i.thgim.com/public/news/national/anb86d/article69588644.ece/alternates/LANDSCAPE_1200/iStock-1169198891.jpg",
+          "why": "",
+          "implications": [],
+          "place": {
+            "name": "India",
+            "country": "India",
+            "lat": 20.6,
+            "lon": 78.9
+          },
+          "reports": [
+            {
+              "source": "thehindu",
+              "headline": "Why is there variation in India’s fertility rates? | Explained",
+              "url": "https://www.thehindu.com/sci-tech/health/why-is-there-variation-in-indias-fertility-rates-explained/article69588360.ece",
+              "date": "2026-11-04T07:20:06.000Z",
+              "kind": "feature",
+              "summary": "What is the Total Fertility Rate of India? How does it impact policy interventions?",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/news/national/anb86d/article69588644.ece/alternates/LANDSCAPE_1200/iStock-1169198891.jpg"
+            }
+          ],
+          "finChecked": true,
+          "thread": "tyajzgu"
+        },
         {
           "id": "so4rrsp",
           "headline": "India set to simplify visa forms",
@@ -66420,14 +67341,14 @@
   "source": "BBC News & The Guardian & NPR & Al Jazeera & MercoPress & ABC News & The New York Times & CNBC & CBS News & DW & France 24 & Africanews & South China Morning Post & The Hindu & Mint & The Indian Express",
   "lastRun": {
     "filter": {
-      "judged": 30,
-      "kept": 3,
+      "judged": 50,
+      "kept": 14,
       "guarded": 0
     },
     "health": {
       "day": "2026-11-04",
-      "newStories24h": 32,
-      "keepRate2d": 0.151
+      "newStories24h": 31,
+      "keepRate2d": 0.172
     },
     "wars": {
       "linked": 0,
@@ -66440,29 +67361,39 @@
       "waiting": 0
     },
     "skipped": {
-      "since": "2026-11-03T19:41:44.920Z",
-      "counts": {},
-      "examples": {}
+      "since": "2026-11-04T01:32:23.312Z",
+      "counts": {
+        "section": 2,
+        "podcast_quiz_gallery": 1
+      },
+      "examples": {
+        "section": [
+          "Women break barriers in Telangana’s Singareni coal mines | The Hindu",
+          "Jammu and Kashmir: History’s lessons and perils of political management"
+        ],
+        "podcast_quiz_gallery": [
+          "Cyclone Murasu in pictures | Storm and its impact on Andhra Pradesh"
+        ]
+      }
     },
     "finance": {
       "moved": 0,
-      "checked": 1
+      "checked": 5
     },
-    "analysed": 30,
-    "added": 3,
-    "merged": 0,
-    "rejected": 27,
+    "analysed": 118,
+    "added": 11,
+    "merged": 3,
     "failedBatches": 0,
     "feeds": {
       "thehindu": {
         "feedsOk": 6,
         "feedsFailed": 0,
-        "items": 349
+        "items": 347
       },
       "mint": {
         "feedsOk": 6,
         "feedsFailed": 0,
-        "items": 209
+        "items": 210
       },
       "indianexpress": {
         "feedsOk": 0,
@@ -66476,13 +67407,13 @@
       "summaries": 0
     },
     "threads": {
-      "assigned": 3,
-      "created": 2,
+      "assigned": 11,
+      "created": 8,
       "failedBatches": 0
     },
     "summaries": {
       "written": 0,
-      "due": 1
+      "due": 4
     },
     "kinds": {
       "labelled": 0,
@@ -66491,57 +67422,50 @@
     },
     "frames": {
       "done": 0,
-      "waiting": 0,
-      "failedBatches": 0
+      "waiting": 2,
+      "failedBatches": 0,
+      "budgetStopped": true
     },
     "stats": {
       "searched": 8,
       "found": 0,
-      "reused": 2,
+      "reused": 0,
       "none": 0,
       "failed": 0,
       "proposed": 0,
       "droppedPoints": 0,
       "pagesFetched": 0,
-      "samples": [
-        {
-          "headline": "'Why should the US bear the burden?': Treasury chief Bessent says Europe refused",
-          "result": "reused saved series"
-        },
-        {
-          "headline": "India issues fresh advisory for nationals in Saudi Arabia amid Houthi attacks, f",
-          "result": "reused saved series"
-        }
-      ],
+      "samples": [],
       "budgetStopped": true
     },
     "models": {
       "filter": {
         "model": "claude-haiku-5-5",
-        "calls": 8,
-        "inputTokens": 24487,
-        "outputTokens": 5503,
-        "cost": 0.0052
+        "calls": 5,
+        "inputTokens": 20255,
+        "outputTokens": 10389,
+        "cost": 0.0072
       },
       "analysis_quick": {
         "model": "claude-sonnet-5-5",
-        "calls": 2,
-        "inputTokens": 6154,
-        "outputTokens": 6076,
-        "cost": 0.073
+        "calls": 3,
+        "inputTokens": 9959,
+        "outputTokens": 15323,
+        "cost": 0.1731
       },
       "threads": {
         "model": "claude-sonnet-5-5",
         "calls": 1,
-        "inputTokens": 9416,
-        "outputTokens": 383,
-        "cost": 0.0227
+        "inputTokens": 10463,
+        "outputTokens": 319,
+        "cost": 0.0241
       }
     },
     "spend": {
-      "thisDesk": 0.1009,
-      "today": 5.3702,
-      "cap": 6
+      "thisDesk": 0.2045,
+      "today": 5.7835,
+      "cap": 6,
+      "stopped": true
     }
   },
   "recentDays": 60
