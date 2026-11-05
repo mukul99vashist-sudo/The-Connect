@@ -2,12 +2,229 @@
   "schema": 4,
   "region": "India",
   "since": "2026-10-02",
-  "updatedAt": "2026-11-04T20:01:25.984Z",
+  "updatedAt": "2026-11-05T01:35:12.517Z",
   "sectors": [
     {
       "id": "energy",
       "name": "Energy",
       "items": [
+        {
+          "id": "sv0z8qk",
+          "headline": "A 'demand decade' ahead for energy? BP, Baker Hughes CEOs weigh the investment outlook",
+          "url": "https://www.cnbc.com/2026/11/05/energy-leaders-investment-outlook.html",
+          "source": "cnbc",
+          "date": "2026-11-04T23:23:03.000Z",
+          "relevance": "medium",
+          "why": "",
+          "implications": [],
+          "reports": [
+            {
+              "source": "cnbc",
+              "headline": "A 'demand decade' ahead for energy? BP, Baker Hughes CEOs weigh the investment outlook",
+              "url": "https://www.cnbc.com/2026/11/05/energy-leaders-investment-outlook.html",
+              "date": "2026-11-04T23:23:03.000Z",
+              "kind": "feature",
+              "summary": "Rising energy demand offers investment opportunities, but geopolitical risks and oil price uncertainty cloud the outlook, executives and an analyst said.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://image.cnbcfm.com/api/v1/image/108511090-1793714798494-gettyimages-2302873944-UAE_ADIPEC.jpeg?v=1793714833&w=1920&h=1080"
+            }
+          ],
+          "placeTried": true,
+          "image": "https://image.cnbcfm.com/api/v1/image/108511090-1793714798494-gettyimages-2302873944-UAE_ADIPEC.jpeg?v=1793714833&w=1920&h=1080",
+          "thread": "t13bmwrw"
+        },
+        {
+          "id": "siwmo6b",
+          "headline": "Crude oil prices fall below $90 a barrel as Vance blames GOP election defeat on Iran war",
+          "url": "https://www.cnbc.com/2026/11/04/oil-price-iran-war-us-election-strait-hormuz.html",
+          "source": "cnbc",
+          "date": "2026-11-04T20:14:52.000Z",
+          "relevance": "medium",
+          "why": "Crude oil fell below $90 a barrel on Wednesday after US Vice President JD Vance blamed Republican midterm losses on the Iran war. India imports most of its crude, so a sustained fall could eventually lower its fuel costs.",
+          "implications": [
+            "Cheaper crude lowers the dollar cost of India's oil imports, which can ease pressure on the import bill and the rupee if the lower price lasts.",
+            "Any benefit to motorists depends on decisions by oil marketing companies and on taxes, so pump prices may move far less than crude does."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-05T01:32:17.986Z",
+            "tier": "quick",
+            "primary": "pass_through",
+            "complement": null,
+            "features": [
+              "price_move"
+            ],
+            "exposure": {
+              "level": "high",
+              "reason": "Crude oil is India's largest import and feeds directly into petrol and diesel, which are household essentials. The fall is only one day's move, so the eventual effect on pump prices is uncertain."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Refiners buy cargoes priced earlier and pump prices are adjusted by companies rather than daily, so any change would reach consumers only after some weeks."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "This rests on one CNBC report that quotes an official, Vance, but the link between his remarks and the price fall is not independently confirmed."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "down",
+                "what": "petrol and diesel costs",
+                "effect": "If lower crude prices persist, refiners' costs fall, which could slow or reduce increases in petrol and diesel prices, although taxes and company pricing decisions may limit the change.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Government finances",
+                "direction": "down",
+                "what": "crude import bill",
+                "effect": "A lower crude price reduces what India pays in dollars for imported oil, which could ease pressure on the import bill and the current account.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Whether crude oil stays below $90 a barrel in the coming trading sessions",
+                "why": "A lasting fall would matter for India's import costs, while a quick rebound would remove most of the relief.",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "Whether Indian oil marketing companies change petrol and diesel prices at the pump",
+                "why": "It would show whether lower crude costs are being passed on to consumers or absorbed by companies and taxes.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "India imports most of the crude oil it uses, so global price swings reach its refiners quickly, while retail petrol and diesel prices are not reset daily in step with crude.",
+              "Central and state taxes make up a large share of the pump price, which dampens the effect of crude price changes on what consumers pay."
+            ],
+            "terms": [
+              {
+                "term": "midterm election",
+                "meaning": "A US congressional election held halfway through a president's term, which decides control of the House of Representatives and part of the Senate."
+              }
+            ],
+            "frameworks": {
+              "pass_through": {
+                "driver": {
+                  "variable": "Global crude oil price",
+                  "direction": "down",
+                  "size": "below $90 a barrel"
+                },
+                "product": "petrol & diesel",
+                "rungs": [
+                  {
+                    "stage": "Global crude price to Indian refiners' import cost",
+                    "pass": "likely",
+                    "damper": "Refiners buy crude under contracts and cargoes priced earlier, so a fall in market prices reaches their costs only as new cargoes arrive.",
+                    "lag": "weeks"
+                  },
+                  {
+                    "stage": "Refiners' cost to oil companies' pre-tax fuel prices",
+                    "pass": "partial",
+                    "damper": "Oil marketing companies do not change pump prices daily with crude and may keep prices steady to recover earlier under-recoveries.",
+                    "lag": "weeks"
+                  },
+                  {
+                    "stage": "Pre-tax price to the price at the pump",
+                    "pass": "partial",
+                    "damper": "Central excise duty and state value-added tax form a large part of the pump price, so a fall in the underlying cost changes the final price by less.",
+                    "lag": "weeks"
+                  }
+                ],
+                "end_user": {
+                  "group": "Fuel & LPG users",
+                  "effect": "Motorists may notice little change at the pump in the short term. If crude stays lower, price increases could be delayed or small cuts could follow, depending on company and tax decisions."
+                }
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "cnbc",
+              "headline": "Crude oil prices fall below $90 a barrel as Vance blames GOP election defeat on Iran war",
+              "url": "https://www.cnbc.com/2026/11/04/oil-price-iran-war-us-election-strait-hormuz.html",
+              "date": "2026-11-04T20:14:52.000Z",
+              "kind": "hard",
+              "summary": "Crude oil prices tumbled Wednesday after Vice President JD Vance blamed the Republicans' steep midterm election losses on the Iran war.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://image.cnbcfm.com/api/v1/image/108518922-1793807059938-gettyimages-2303150469-2h1a7951_nrl1cyvp.jpeg?v=1793807082&w=1920&h=1080"
+            }
+          ],
+          "stats": {
+            "v": 2,
+            "at": "2026-11-05T01:33:29.525Z",
+            "series": [
+              {
+                "title": "Brent crude spot price, daily",
+                "unit": "US$ per barrel",
+                "publisher": "U.S. Energy Information Administration",
+                "points": [
+                  {
+                    "period": "29 Sep 2026",
+                    "value": 113.96,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "30 Sep 2026",
+                    "value": 115.91,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "1 Oct 2026",
+                    "value": 114.82,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "2 Oct 2026",
+                    "value": 135.51,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "5 Oct 2026",
+                    "value": 125.51,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "6 Oct 2026",
+                    "value": 125.44,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "title": "Spot Prices for Crude Oil and Petroleum Products",
+                    "domain": "eia.gov"
+                  }
+                ],
+                "domains": [
+                  "eia.gov"
+                ],
+                "dropped": 0,
+                "why": "",
+                "reused": true,
+                "checkedAt": "2026-10-13T23:11:10.422Z"
+              }
+            ]
+          },
+          "placeTried": true,
+          "image": "https://image.cnbcfm.com/api/v1/image/108518922-1793807059938-gettyimages-2303150469-2h1a7951_nrl1cyvp.jpeg?v=1793807082&w=1920&h=1080",
+          "thread": "t1dbdiwl"
+        },
         {
           "id": "shkzxrq",
           "headline": "Egyptian president calls Iran, US to resolve conflict",
@@ -19778,7 +19995,70 @@
               }
             }
           },
-          "priority": 60
+          "priority": 60,
+          "stats": {
+            "v": 2,
+            "at": "2026-11-05T01:34:10.708Z",
+            "series": [
+              {
+                "title": "Brent crude spot price, daily",
+                "unit": "US$ per barrel",
+                "publisher": "U.S. Energy Information Administration",
+                "points": [
+                  {
+                    "period": "29 Sep 2026",
+                    "value": 113.96,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "30 Sep 2026",
+                    "value": 115.91,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "1 Oct 2026",
+                    "value": 114.82,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "2 Oct 2026",
+                    "value": 135.51,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "5 Oct 2026",
+                    "value": 125.51,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "6 Oct 2026",
+                    "value": 125.44,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "title": "Spot Prices for Crude Oil and Petroleum Products",
+                    "domain": "eia.gov"
+                  }
+                ],
+                "domains": [
+                  "eia.gov"
+                ],
+                "dropped": 0,
+                "why": "The Brent crude spot price is the global benchmark for the energy price pullback the story reports, and it directly tracks the crude cost that could ease India's import bill.",
+                "reused": true,
+                "checkedAt": "2026-10-13T23:11:10.422Z"
+              }
+            ]
+          }
         },
         {
           "id": "sfpju3g",
@@ -19878,7 +20158,12 @@
               }
             }
           },
-          "priority": 60
+          "priority": 60,
+          "stats": {
+            "v": 2,
+            "at": "2026-11-05T01:35:08.819Z",
+            "series": []
+          }
         },
         {
           "id": "s1wygbc0",
@@ -27244,7 +27529,12 @@
               }
             }
           },
-          "priority": 80
+          "priority": 80,
+          "stats": {
+            "v": 2,
+            "at": "2026-11-05T01:34:08.448Z",
+            "series": []
+          }
         },
         {
           "id": "sm9qwr6",
@@ -28572,6 +28862,59 @@
       "name": "Economy & Trade",
       "items": [
         {
+          "id": "s11j7z0g",
+          "headline": "What the Democrats' midterms win means for the US economy and Trump",
+          "url": "https://www.dw.com/en/what-the-democrats-midterms-win-means-for-the-us-economy-and-trump/a-79853716",
+          "source": "dw",
+          "date": "2026-11-04T15:09:00.000Z",
+          "relevance": "medium",
+          "why": "",
+          "implications": [],
+          "place": {
+            "name": "Washington",
+            "country": "United States",
+            "lat": 38.9,
+            "lon": -77.04
+          },
+          "reports": [
+            {
+              "source": "dw",
+              "headline": "What the Democrats' midterms win means for the US economy and Trump",
+              "url": "https://www.dw.com/en/what-the-democrats-midterms-win-means-for-the-us-economy-and-trump/a-79853716",
+              "date": "2026-11-04T15:09:00.000Z",
+              "kind": "feature",
+              "summary": "From high oil prices and data centers to tariffs and mounting debt, economic concerns played a key role in the crushing defeat of President Donald Trump's Republicans. So can the Democrats now make a difference?",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://static.dw.com/image/79626408_6.jpg"
+            },
+            {
+              "source": "guardian",
+              "headline": "After the US midterms, what will a lame duck Trump mean for the global economy?",
+              "url": "https://www.theguardian.com/us-news/2026/nov/04/explainer-midterms-trump-us-global-economy-markets",
+              "date": "2026-11-04T15:56:30.000Z",
+              "kind": "feature",
+              "summary": "Republicans’ crushing setback will play out in stock markets, inflation, interest rates and economic growth",
+              "summaryV": 3,
+              "lede": "Donald Trump’s loss of control of the House of Representatives and the Senate has put the world economy on notice for an unpredictable final two years of his presidential term.",
+              "image": "https://i.guim.co.uk/img/media/2a93f1501ef9ad49bab6fef5ee59dc4a5af2e1b6/785_0_5678_4542/master/5678.jpg?width=700&quality=85&auto=format&fit=max&s=27605fb4acada390537fa3138730f2b0"
+            },
+            {
+              "source": "aljazeera",
+              "headline": "Democrats won Congress. But can they deliver on their promises?",
+              "url": "https://www.aljazeera.com/news/2026/11/5/democrats-won-congress-but-can-they-deliver-on-their-promises",
+              "date": "2026-11-05T00:25:43.000Z",
+              "kind": "feature",
+              "summary": "Despite their midterm election victories, Democrats face major obstacles to reining in Trump on Iran, tariffs and more.",
+              "summaryV": 3
+            }
+          ],
+          "finChecked": true,
+          "image": "https://static.dw.com/image/79626408_6.jpg",
+          "thread": "twkasa4"
+        },
+        {
           "id": "sg1v3oi",
           "headline": "Analysis: The Democrats have one chance to extract concessions from Trump. Markets will hate it",
           "url": "https://www.cnbc.com/2026/11/04/democrats-trump-debt-ceiling-fight.html",
@@ -28603,39 +28946,6 @@
           "finChecked": true,
           "image": "https://image.cnbcfm.com/api/v1/image/108249978-1767887539173-gettyimages-2255246069-kd1_7832_9ex7rskv.jpeg?v=1767887586&w=1920&h=1080",
           "thread": "t1rzjgok"
-        },
-        {
-          "id": "s11j7z0g",
-          "headline": "What the Democrats' midterms win means for the US economy and Trump",
-          "url": "https://www.dw.com/en/what-the-democrats-midterms-win-means-for-the-us-economy-and-trump/a-79853716",
-          "source": "dw",
-          "date": "2026-11-04T15:09:00.000Z",
-          "relevance": "medium",
-          "why": "",
-          "implications": [],
-          "place": {
-            "name": "Washington",
-            "country": "United States",
-            "lat": 38.9,
-            "lon": -77.04
-          },
-          "reports": [
-            {
-              "source": "dw",
-              "headline": "What the Democrats' midterms win means for the US economy and Trump",
-              "url": "https://www.dw.com/en/what-the-democrats-midterms-win-means-for-the-us-economy-and-trump/a-79853716",
-              "date": "2026-11-04T15:09:00.000Z",
-              "kind": "feature",
-              "summary": "From high oil prices and data centers to tariffs and mounting debt, economic concerns played a key role in the crushing defeat of President Donald Trump's Republicans. So can the Democrats now make a difference?",
-              "summaryV": 3,
-              "ogTried": true,
-              "descTried": true,
-              "image": "https://static.dw.com/image/79626408_6.jpg"
-            }
-          ],
-          "finChecked": true,
-          "image": "https://static.dw.com/image/79626408_6.jpg",
-          "thread": "twkasa4"
         },
         {
           "id": "s1pic82e",
@@ -36671,7 +36981,70 @@
             }
           },
           "finChecked": true,
-          "priority": 60
+          "priority": 60,
+          "stats": {
+            "v": 2,
+            "at": "2026-11-05T01:33:34.005Z",
+            "series": [
+              {
+                "title": "Brent crude spot price, daily",
+                "unit": "US$ per barrel",
+                "publisher": "U.S. Energy Information Administration",
+                "points": [
+                  {
+                    "period": "29 Sep 2026",
+                    "value": 113.96,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "30 Sep 2026",
+                    "value": 115.91,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "1 Oct 2026",
+                    "value": 114.82,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "2 Oct 2026",
+                    "value": 135.51,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "5 Oct 2026",
+                    "value": 125.51,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "6 Oct 2026",
+                    "value": 125.44,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "title": "Spot Prices for Crude Oil and Petroleum Products",
+                    "domain": "eia.gov"
+                  }
+                ],
+                "domains": [
+                  "eia.gov"
+                ],
+                "dropped": 0,
+                "why": "The story's central energy concern is the Iran-war oil price shock feeding into India's import costs, and daily Brent crude spot prices directly track that global oil price.",
+                "reused": true,
+                "checkedAt": "2026-10-13T23:11:10.422Z"
+              }
+            ]
+          }
         },
         {
           "id": "s1jnexfv",
@@ -36802,7 +37175,109 @@
             }
           },
           "finChecked": true,
-          "priority": 80
+          "priority": 80,
+          "stats": {
+            "v": 2,
+            "at": "2026-11-05T01:34:14.043Z",
+            "series": [
+              {
+                "title": "Saudi Arabia's share of India's inward remittances",
+                "unit": "% of total inward remittances (banks)",
+                "publisher": "Reserve Bank of India",
+                "points": [
+                  {
+                    "period": "2016-17",
+                    "value": 11.6,
+                    "url": "https://rbi.org.in/scripts/BS_ViewBulletin.aspx?Id=23260",
+                    "source": "RBI Bulletin | Official Website of Reserve Bank of India"
+                  },
+                  {
+                    "period": "2020-21",
+                    "value": 5.1,
+                    "url": "https://rbi.org.in/scripts/BS_ViewBulletin.aspx?Id=23260",
+                    "source": "RBI Bulletin | Official Website of Reserve Bank of India"
+                  },
+                  {
+                    "period": "2023-24",
+                    "value": 6.7,
+                    "url": "https://rbi.org.in/scripts/BS_ViewBulletin.aspx?Id=23260",
+                    "source": "RBI Bulletin | Official Website of Reserve Bank of India"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://rbi.org.in/scripts/BS_ViewBulletin.aspx?Id=23260",
+                    "title": "RBI Bulletin | Official Website of Reserve Bank of India",
+                    "domain": "rbi.org.in"
+                  }
+                ],
+                "domains": [
+                  "rbi.org.in"
+                ],
+                "dropped": 0,
+                "why": "The Saudi Arabia share of India's inward remittances tracks the Gulf remittance channel the story flags as at risk, and Strait of Hormuz oil flows measure the war-linked energy supply disruption the s",
+                "reused": true,
+                "checkedAt": "2026-11-01T00:15:35.446Z"
+              },
+              {
+                "title": "Oil flows through the Strait of Hormuz, total",
+                "unit": "million barrels per day",
+                "publisher": "U.S. Energy Information Administration",
+                "points": [
+                  {
+                    "period": "2020",
+                    "value": 19.2,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2021",
+                    "value": 19.7,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2022",
+                    "value": 21.9,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2023",
+                    "value": 21.8,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2024",
+                    "value": 20.7,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "1H25",
+                    "value": 20.9,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "title": "eia.gov",
+                    "domain": "eia.gov"
+                  }
+                ],
+                "domains": [
+                  "eia.gov"
+                ],
+                "dropped": 0,
+                "why": "The Saudi Arabia share of India's inward remittances tracks the Gulf remittance channel the story flags as at risk, and Strait of Hormuz oil flows measure the war-linked energy supply disruption the s",
+                "reused": true,
+                "checkedAt": "2026-10-13T23:16:50.395Z"
+              }
+            ]
+          }
         },
         {
           "id": "s160pmb6",
@@ -36936,7 +37411,159 @@
             }
           },
           "finChecked": true,
-          "priority": 65
+          "priority": 65,
+          "stats": {
+            "v": 2,
+            "at": "2026-11-05T01:34:44.485Z",
+            "series": [
+              {
+                "title": "World real GDP growth, annual (IMF Oct 2026 forecasts)",
+                "unit": "% annual change",
+                "publisher": "International Monetary Fund",
+                "why": "This is the global growth path that the IMF says is holding up but is now under strain from energy shocks and stretched budgets.",
+                "points": [
+                  {
+                    "period": "2019",
+                    "value": 3,
+                    "url": "https://www.imf.org/-/media/files/publications/weo/2026/october/english/tablea.pdf.md",
+                    "source": "imf.org"
+                  },
+                  {
+                    "period": "2020",
+                    "value": 2.7,
+                    "url": "https://www.imf.org/-/media/files/publications/weo/2026/october/english/tablea.pdf.md",
+                    "source": "imf.org"
+                  },
+                  {
+                    "period": "2021",
+                    "value": 6.7,
+                    "url": "https://www.imf.org/-/media/files/publications/weo/2026/october/english/tablea.pdf.md",
+                    "source": "imf.org"
+                  },
+                  {
+                    "period": "2022",
+                    "value": 3.8,
+                    "url": "https://www.imf.org/-/media/files/publications/weo/2026/october/english/tablea.pdf.md",
+                    "source": "imf.org"
+                  },
+                  {
+                    "period": "2023",
+                    "value": 3.3,
+                    "url": "https://www.imf.org/-/media/files/publications/weo/2026/october/english/tablea.pdf.md",
+                    "source": "imf.org"
+                  },
+                  {
+                    "period": "2024",
+                    "value": 3.5,
+                    "url": "https://www.imf.org/-/media/files/publications/weo/2026/october/english/tablea.pdf.md",
+                    "source": "imf.org"
+                  },
+                  {
+                    "period": "2025",
+                    "value": 3.5,
+                    "url": "https://www.imf.org/-/media/files/publications/weo/2026/october/english/tablea.pdf.md",
+                    "source": "imf.org"
+                  },
+                  {
+                    "period": "2026",
+                    "value": 3.1,
+                    "url": "https://www.imf.org/-/media/files/publications/weo/2026/october/english/tablea.pdf.md",
+                    "source": "imf.org"
+                  },
+                  {
+                    "period": "2027",
+                    "value": 3.4,
+                    "url": "https://www.imf.org/-/media/files/publications/weo/2026/october/english/tablea.pdf.md",
+                    "source": "imf.org"
+                  }
+                ],
+                "dropped": 0,
+                "sources": [
+                  {
+                    "url": "https://www.imf.org/-/media/files/publications/weo/2026/october/english/tablea.pdf.md",
+                    "title": "imf.org",
+                    "domain": "imf.org"
+                  }
+                ],
+                "domains": [
+                  "imf.org"
+                ]
+              },
+              {
+                "title": "India real GDP growth, annual (IMF Oct 2026 forecasts)",
+                "unit": "% annual change",
+                "publisher": "International Monetary Fund",
+                "why": "This shows how much growth India has to lose if the oil and fiscal strains the IMF describes spill over to an oil-importing economy.",
+                "points": [
+                  {
+                    "period": "2019",
+                    "value": 3.9,
+                    "url": "https://www.imf.org/-/media/files/publications/weo/2026/october/english/tablea.pdf.md",
+                    "source": "imf.org"
+                  },
+                  {
+                    "period": "2020",
+                    "value": 5.8,
+                    "url": "https://www.imf.org/-/media/files/publications/weo/2026/october/english/tablea.pdf.md",
+                    "source": "imf.org"
+                  },
+                  {
+                    "period": "2021",
+                    "value": 9.7,
+                    "url": "https://www.imf.org/-/media/files/publications/weo/2026/october/english/tablea.pdf.md",
+                    "source": "imf.org"
+                  },
+                  {
+                    "period": "2022",
+                    "value": 7.6,
+                    "url": "https://www.imf.org/-/media/files/publications/weo/2026/october/english/tablea.pdf.md",
+                    "source": "imf.org"
+                  },
+                  {
+                    "period": "2023",
+                    "value": 7.3,
+                    "url": "https://www.imf.org/-/media/files/publications/weo/2026/october/english/tablea.pdf.md",
+                    "source": "imf.org"
+                  },
+                  {
+                    "period": "2024",
+                    "value": 7.2,
+                    "url": "https://www.imf.org/-/media/files/publications/weo/2026/october/english/tablea.pdf.md",
+                    "source": "imf.org"
+                  },
+                  {
+                    "period": "2025",
+                    "value": 7.8,
+                    "url": "https://www.imf.org/-/media/files/publications/weo/2026/october/english/tablea.pdf.md",
+                    "source": "imf.org"
+                  },
+                  {
+                    "period": "2026",
+                    "value": 7,
+                    "url": "https://www.imf.org/-/media/files/publications/weo/2026/october/english/tablea.pdf.md",
+                    "source": "imf.org"
+                  },
+                  {
+                    "period": "2027",
+                    "value": 7,
+                    "url": "https://www.imf.org/-/media/files/publications/weo/2026/october/english/tablea.pdf.md",
+                    "source": "imf.org"
+                  }
+                ],
+                "dropped": 0,
+                "sources": [
+                  {
+                    "url": "https://www.imf.org/-/media/files/publications/weo/2026/october/english/tablea.pdf.md",
+                    "title": "imf.org",
+                    "domain": "imf.org"
+                  }
+                ],
+                "domains": [
+                  "imf.org"
+                ]
+              }
+            ]
+          }
         },
         {
           "id": "s1d3gwch",
@@ -37932,6 +38559,38 @@
       "id": "finance",
       "name": "Finance",
       "items": [
+        {
+          "id": "s16l29sa",
+          "headline": "Inside India newsletter: India weighs a tax cut to win over foreign investors. Will it work?",
+          "url": "https://www.cnbc.com/2026/11/05/india-tax-foreign-investors-nifty.html",
+          "source": "cnbc",
+          "date": "2026-11-05T00:04:36.000Z",
+          "relevance": "medium",
+          "why": "",
+          "implications": [],
+          "place": {
+            "name": "New Delhi",
+            "country": "India",
+            "lat": 28.6,
+            "lon": 77.2
+          },
+          "reports": [
+            {
+              "source": "cnbc",
+              "headline": "Inside India newsletter: India weighs a tax cut to win over foreign investors. Will it work?",
+              "url": "https://www.cnbc.com/2026/11/05/india-tax-foreign-investors-nifty.html",
+              "date": "2026-11-05T00:04:36.000Z",
+              "kind": "feature",
+              "summary": "Foreign investors are losing their appetite for Indian equities, with their holdings touching an all-time low of 14%.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://image.cnbcfm.com/api/v1/image/108514797-1793756542147-gettyimages-2302861996-AVaishnav_Lantern_market_ahead_of_Diwali_festival_in_Mumbai_1.jpeg?v=1793756554&w=1920&h=1080"
+            }
+          ],
+          "image": "https://image.cnbcfm.com/api/v1/image/108514797-1793756542147-gettyimages-2302861996-AVaishnav_Lantern_market_ahead_of_Diwali_festival_in_Mumbai_1.jpeg?v=1793756554&w=1920&h=1080",
+          "thread": "t1gpcbru"
+        },
         {
           "id": "s1p6uc5w",
           "headline": "Markets react to the US midterms: the dollar falls and gold rises",
@@ -45274,7 +45933,58 @@
               }
             }
           },
-          "priority": 65
+          "priority": 65,
+          "stats": {
+            "v": 2,
+            "at": "2026-11-05T01:33:31.960Z",
+            "series": [
+              {
+                "title": "EU goods imports from China, selected quarters",
+                "unit": "€ billion",
+                "publisher": "Eurostat",
+                "points": [
+                  {
+                    "period": "Q1 2021",
+                    "value": 107,
+                    "url": "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=EU_trade_with_China_-_latest_developments",
+                    "source": "<span class=\"mw-page-title-main\">EU trade with China - latest developments</span>"
+                  },
+                  {
+                    "period": "Q3 2022",
+                    "value": 165,
+                    "url": "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=EU_trade_with_China_-_latest_developments",
+                    "source": "<span class=\"mw-page-title-main\">EU trade with China - latest developments</span>"
+                  },
+                  {
+                    "period": "Q1 2024",
+                    "value": 122,
+                    "url": "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=EU_trade_with_China_-_latest_developments",
+                    "source": "<span class=\"mw-page-title-main\">EU trade with China - latest developments</span>"
+                  },
+                  {
+                    "period": "Q2 2026",
+                    "value": 154,
+                    "url": "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=EU_trade_with_China_-_latest_developments",
+                    "source": "<span class=\"mw-page-title-main\">EU trade with China - latest developments</span>"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=EU_trade_with_China_-_latest_developments",
+                    "title": "<span class=\"mw-page-title-main\">EU trade with China - latest developments</span>",
+                    "domain": "ec.europa.eu"
+                  }
+                ],
+                "domains": [
+                  "ec.europa.eu"
+                ],
+                "dropped": 0,
+                "why": "Eurostat's EU goods imports from China directly measures the EU-China trade flow at the center of the story's dispute over Chinese vehicle and hybrid imports.",
+                "reused": true,
+                "checkedAt": "2026-11-01T22:13:41.369Z"
+              }
+            ]
+          }
         },
         {
           "id": "s1feuh75",
@@ -45872,6 +46582,112 @@
       "id": "environment",
       "name": "Environment & Climate",
       "items": [
+        {
+          "id": "s1qg4x67",
+          "headline": "Typhoons batter East Asia as El Niño makes Pacific 'burn with fever'",
+          "url": "https://www.bbc.co.uk/news/articles/cw33kgj7nkemo",
+          "source": "bbc",
+          "date": "2026-11-04T23:12:47.000Z",
+          "relevance": "medium",
+          "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/30ea/live/eaa602a0-d75b-11f1-8f6b-d71817972456.jpg",
+          "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/30ea/live/eaa602a0-d75b-11f1-8f6b-d71817972456.jpg",
+          "why": "The BBC reports that unusually severe typhoons have struck East Asia in recent months and links them to an El Niño warming of the Pacific. India is not directly hit, but El Niño can influence Indian monsoon rainfall.",
+          "implications": [
+            "El Niño is a climate pattern that can affect weather well beyond the Pacific, so the same warming behind the typhoons could also bear on rainfall over India in coming seasons.",
+            "Severe storms in East Asia could disrupt ports and shipping schedules in the region, which may delay some goods that Indian importers and exporters trade with East Asian economies."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-05T01:33:13.200Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "low",
+              "reason": "The story describes storms in East Asia only. Any reach into India would be indirect, through El Niño's possible influence on the monsoon or through disrupted regional shipping, and neither is described."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Any effect on India would depend on how El Niño develops and on the timing of the next monsoon season, which is some months away."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single BBC News piece, available only as a headline and short summary, with no official source and no stated link to India."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Farmers",
+                "direction": "unclear",
+                "what": "monsoon rainfall outlook",
+                "effect": "If El Niño conditions persist, they could influence monsoon rainfall over India, which determines water for crops and therefore farm output and incomes.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "East Asia shipping reliability",
+                "effect": "Repeated typhoons could disrupt East Asian ports and sailing schedules, which may delay or raise the cost of goods moving between India and the region.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "The India Meteorological Department's next monsoon outlook and its assessment of El Niño conditions in the Pacific",
+                "why": "It would show whether the Pacific warming is expected to affect Indian rainfall.",
+                "when": "",
+                "where": "India Meteorological Department"
+              }
+            ],
+            "context": [
+              "El Niño is a periodic warming of the central and eastern Pacific Ocean that changes weather patterns around the world. In India, El Niño years have often been linked with weaker monsoon rainfall, which matters for farm output and food prices."
+            ],
+            "terms": [
+              {
+                "term": "El Niño",
+                "meaning": "A periodic warming of surface waters in the tropical Pacific Ocean that shifts rainfall and temperature patterns across many regions of the world."
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Typhoons batter East Asia",
+                    "detail": "The BBC reports that the last few months have brought unusually wild weather, including repeated typhoons, to countries used to such storms.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "El Niño warms the Pacific",
+                    "detail": "The BBC's headline links the severe weather to El Niño, which it describes as making the Pacific 'burn with fever'. That warming is a climate pattern with effects across Asia.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Monsoon and trade could be affected",
+                    "detail": "El Niño has often been associated with weaker Indian monsoon rainfall, and regional storms could disrupt shipping. Either could reach Indian farmers, importers and exporters.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The effect would not reach India if El Niño fades or does not suppress rainfall over India, and if East Asian port disruptions stay short and local."
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "bbc",
+              "headline": "Typhoons batter East Asia as El Niño makes Pacific 'burn with fever'",
+              "url": "https://www.bbc.co.uk/news/articles/cw33kgj7nkemo",
+              "date": "2026-11-04T23:12:47.000Z",
+              "kind": "hard",
+              "summary": "Even for countries where typhoons are a way of life, the last few months have brought unusually wild weather.",
+              "summaryV": 3,
+              "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/30ea/live/eaa602a0-d75b-11f1-8f6b-d71817972456.jpg",
+              "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/30ea/live/eaa602a0-d75b-11f1-8f6b-d71817972456.jpg"
+            }
+          ],
+          "placeTried": true,
+          "thread": "t1inkdsd"
+        },
         {
           "id": "sfiyh53",
           "headline": "Delhi air quality worsens ahead of Diwali as firework restrictions enter force",
@@ -47952,6 +48768,108 @@
       "name": "Policy & Governance",
       "items": [
         {
+          "id": "shbo7vo",
+          "headline": "Japan weighs US$500 billion defence spending plan: sources",
+          "url": "https://www.scmp.com/news/asia/east-asia/article/3373033/japan-weighs-us500-billion-defence-spending-plan-sources",
+          "source": "scmp",
+          "date": "2026-11-02T14:45:23.000Z",
+          "relevance": "medium",
+          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/02/1521cfb7-4c3b-410e-9d91-efab4ede7dac_f3bfdb0f.jpg?itok=xYbwKeXP&v=1793630714",
+          "why": "Japan's government and ruling coalition are considering nearly doubling defence spending over five years, a plan said to total US$500 billion. The effect on India would be indirect, through Asian security and Japan-India defence ties.",
+          "implications": [
+            "A much larger Japanese defence budget could make Japan a more capable security partner in Asia, which may matter to India's own strategic planning and its defence cooperation with Tokyo.",
+            "The plan is still under consideration and has not been confirmed by the government, so its size, timing and final shape could change before any decision."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-02T19:23:24.833Z",
+            "tier": "quick",
+            "primary": "winners_losers",
+            "complement": null,
+            "features": [
+              "allocation",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "The reports describe only a Japanese domestic spending plan. Any link to India would run through strategic and defence relations, and no household, trade or travel channel is reported."
+            },
+            "horizon": {
+              "value": "years",
+              "reason": "The spending would be spread over five years and is still only under consideration, so any effect on India would emerge slowly."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "The story rests on one outlet citing two unnamed people familiar with the matter, and no official confirmation is reported."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Government finances",
+                "direction": "unclear",
+                "what": "defence cooperation planning",
+                "effect": "India's government may need to weigh how a better-funded Japanese military changes the scope for joint defence work and regional security planning, though no Indian response is reported.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "An official decision by the Japanese government and ruling coalition on the size of the five-year defence spending plan",
+                "why": "It would show whether the reported near-doubling is adopted and how large the final programme is.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "India and Japan are close partners on security and economic issues in the Indo-Pacific. Changes in either country's military posture can therefore shape how the two governments cooperate on defence and technology."
+            ],
+            "terms": [],
+            "frameworks": {
+              "winners_losers": {
+                "groups": [
+                  {
+                    "group": "Government finances",
+                    "direction": "unclear",
+                    "directness": "indirect",
+                    "mechanism": "A stronger Japanese military could create more room for defence cooperation with India, but it could also shift regional security calculations. No Indian reaction is reported, so the net effect is uncertain."
+                  }
+                ],
+                "not_affected": "Fuel and LPG users and food shoppers are not directly affected, because the plan concerns Japanese military spending and no trade, price or supply channel to India is reported."
+              }
+            }
+          },
+          "place": {
+            "name": "Tokyo",
+            "country": "Japan",
+            "lat": 35.68,
+            "lon": 139.69
+          },
+          "reports": [
+            {
+              "source": "scmp",
+              "headline": "Japan weighs US$500 billion defence spending plan: sources",
+              "url": "https://www.scmp.com/news/asia/east-asia/article/3373033/japan-weighs-us500-billion-defence-spending-plan-sources",
+              "date": "2026-11-02T14:45:23.000Z",
+              "kind": "hard",
+              "summary": "Japan’s ⁠government and ruling coalition ⁠are considering nearly doubling defence ⁠spending over the next five years as part of Prime Minister Sanae Takaichi’s push to strengthen the country’s military capabilities, according to two people familiar with the matter.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/02/1521cfb7-4c3b-410e-9d91-efab4ede7dac_f3bfdb0f.jpg?itok=xYbwKeXP&v=1793630714"
+            },
+            {
+              "source": "scmp",
+              "headline": "What’s the message for China as Japan weighs US$500 billion defence surge?",
+              "url": "https://www.scmp.com/news/china/military/article/3373139/whats-message-china-japan-weighs-us500-billion-defence-surge",
+              "date": "2026-11-04T23:00:10.000Z",
+              "kind": "hard",
+              "summary": "China could face a substantially more capable Japanese military over the coming years as Tokyo considers nearly doubling its five-year defence spending to as much as 80 trillion yen (US$508 billion), according to media reports in Japan.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/03/d97e59a0-d7fa-4632-bbe8-2829a21c5cde_235eda48.jpg?itok=YtIOZpGN&v=1793698871"
+            }
+          ],
+          "finChecked": true,
+          "thread": "t1kkgh8"
+        },
+        {
           "id": "s8rie1z",
           "headline": "Iran says U.S. election results show Americans reject the war",
           "url": "https://www.cbsnews.com/live-updates/iran-war-us-trump-midterms-strait-of-hormuz/",
@@ -49020,98 +49938,6 @@
           ],
           "finChecked": true,
           "thread": "t4zm3pv"
-        },
-        {
-          "id": "shbo7vo",
-          "headline": "Japan weighs US$500 billion defence spending plan: sources",
-          "url": "https://www.scmp.com/news/asia/east-asia/article/3373033/japan-weighs-us500-billion-defence-spending-plan-sources",
-          "source": "scmp",
-          "date": "2026-11-02T14:45:23.000Z",
-          "relevance": "medium",
-          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/02/1521cfb7-4c3b-410e-9d91-efab4ede7dac_f3bfdb0f.jpg?itok=xYbwKeXP&v=1793630714",
-          "why": "Japan's government and ruling coalition are considering nearly doubling defence spending over five years, a plan said to total US$500 billion. The effect on India would be indirect, through Asian security and Japan-India defence ties.",
-          "implications": [
-            "A much larger Japanese defence budget could make Japan a more capable security partner in Asia, which may matter to India's own strategic planning and its defence cooperation with Tokyo.",
-            "The plan is still under consideration and has not been confirmed by the government, so its size, timing and final shape could change before any decision."
-          ],
-          "analysis": {
-            "v": 3,
-            "at": "2026-11-02T19:23:24.833Z",
-            "tier": "quick",
-            "primary": "winners_losers",
-            "complement": null,
-            "features": [
-              "allocation",
-              "pending_outcome"
-            ],
-            "exposure": {
-              "level": "low",
-              "reason": "The reports describe only a Japanese domestic spending plan. Any link to India would run through strategic and defence relations, and no household, trade or travel channel is reported."
-            },
-            "horizon": {
-              "value": "years",
-              "reason": "The spending would be spread over five years and is still only under consideration, so any effect on India would emerge slowly."
-            },
-            "confidence": {
-              "level": "low",
-              "reason": "The story rests on one outlet citing two unnamed people familiar with the matter, and no official confirmation is reported."
-            },
-            "outlets": 1,
-            "affected": [
-              {
-                "group": "Government finances",
-                "direction": "unclear",
-                "what": "defence cooperation planning",
-                "effect": "India's government may need to weigh how a better-funded Japanese military changes the scope for joint defence work and regional security planning, though no Indian response is reported.",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "An official decision by the Japanese government and ruling coalition on the size of the five-year defence spending plan",
-                "why": "It would show whether the reported near-doubling is adopted and how large the final programme is.",
-                "when": "",
-                "where": ""
-              }
-            ],
-            "context": [
-              "India and Japan are close partners on security and economic issues in the Indo-Pacific. Changes in either country's military posture can therefore shape how the two governments cooperate on defence and technology."
-            ],
-            "terms": [],
-            "frameworks": {
-              "winners_losers": {
-                "groups": [
-                  {
-                    "group": "Government finances",
-                    "direction": "unclear",
-                    "directness": "indirect",
-                    "mechanism": "A stronger Japanese military could create more room for defence cooperation with India, but it could also shift regional security calculations. No Indian reaction is reported, so the net effect is uncertain."
-                  }
-                ],
-                "not_affected": "Fuel and LPG users and food shoppers are not directly affected, because the plan concerns Japanese military spending and no trade, price or supply channel to India is reported."
-              }
-            }
-          },
-          "place": {
-            "name": "Tokyo",
-            "country": "Japan",
-            "lat": 35.68,
-            "lon": 139.69
-          },
-          "reports": [
-            {
-              "source": "scmp",
-              "headline": "Japan weighs US$500 billion defence spending plan: sources",
-              "url": "https://www.scmp.com/news/asia/east-asia/article/3373033/japan-weighs-us500-billion-defence-spending-plan-sources",
-              "date": "2026-11-02T14:45:23.000Z",
-              "kind": "hard",
-              "summary": "Japan’s ⁠government and ruling coalition ⁠are considering nearly doubling defence ⁠spending over the next five years as part of Prime Minister Sanae Takaichi’s push to strengthen the country’s military capabilities, according to two people familiar with the matter.",
-              "summaryV": 3,
-              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/02/1521cfb7-4c3b-410e-9d91-efab4ede7dac_f3bfdb0f.jpg?itok=xYbwKeXP&v=1793630714"
-            }
-          ],
-          "finChecked": true,
-          "thread": "t1kkgh8"
         },
         {
           "id": "s1ysaaef",
@@ -57666,14 +58492,14 @@
   "source": "BBC News & The Guardian & NPR & Al Jazeera & MercoPress & ABC News & The New York Times & CNBC & CBS News & DW & France 24 & Africanews & South China Morning Post & The Hindu & Mint & The Indian Express",
   "lastRun": {
     "filter": {
-      "judged": 162,
-      "kept": 17,
-      "guarded": 0
+      "judged": 98,
+      "kept": 8,
+      "guarded": 1
     },
     "health": {
-      "day": "2026-11-04",
-      "newStories24h": 20,
-      "keepRate2d": 0.1
+      "day": "2026-11-05",
+      "newStories24h": 22,
+      "keepRate2d": 0.089
     },
     "wars": {
       "linked": 0,
@@ -57682,54 +58508,50 @@
     },
     "places": {
       "labelled": 0,
-      "none": 0,
+      "none": 3,
       "waiting": 0
     },
     "skipped": {
-      "since": "2026-11-04T11:16:23.495Z",
+      "since": "2026-11-04T20:01:25.984Z",
       "counts": {
-        "section": 33,
-        "live_blog": 3,
-        "podcast_quiz_gallery": 2
+        "live_blog": 4,
+        "section": 11
       },
       "examples": {
-        "section": [
-          "'Most difficult days of my life' for keeper Owono",
-          "Nadal set to join Real Madrid board of directors",
-          "William meets firefighters who tackled summer blazes",
-          "Tinto Brass, director of Caligula and maestro of Euro erotica, dies aged 93",
-          "Ramayana: Rise of a Legend review – India’s most expensive film ever becomes spectacular, huge-scale epic"
-        ],
         "live_blog": [
-          "Zelenskyy says 40 now confirmed dead after ‘insane’ Russian attack on school – as it happened",
-          "UK politics: Burnham says US midterm results have created ‘opportunity’ for world to focus on cost of living and ending ",
-          "US midterm elections 2026 live updates: Trump defiant about brutal Republican losses and acknowledges Iran war’s unpopul"
+          "US midterm elections 2026 live: Democratic lead grows in Mississippi Senate race as Republican blame game begins",
+          "Iran war live: Trump says war caused election wipeout but he ‘had to do it’",
+          "US midterm election results live: Trump blames Iran war after losses",
+          "Democrats eye inquiries into Trump actions on energy, public land."
         ],
-        "podcast_quiz_gallery": [
-          "US midterm elections 2026: is this the end of Trump? - podcast",
-          "U.S. midterm elections in pictures: Democrats' sweeping victories deliver rebuke to Trump"
+        "section": [
+          "Africa’s richest man launches mega oil tank farm in Namibia",
+          "Ohio’s voters tell Republicans: don’t take us for granted",
+          "Historic firsts redraw US political map in 2026 midterm elections",
+          "Who gets to vote in the US?",
+          "Giant banner of Trump, Vance and Netanyahu burnt at Tehran rally"
         ]
       }
     },
     "finance": {
       "moved": 0,
-      "checked": 6
+      "checked": 0
     },
-    "analysed": 162,
-    "added": 10,
-    "merged": 6,
-    "rejected": 146,
+    "analysed": 98,
+    "added": 4,
+    "merged": 3,
+    "rejected": 91,
     "failedBatches": 0,
     "feeds": {
       "bbc": {
         "feedsOk": 6,
         "feedsFailed": 0,
-        "items": 147
+        "items": 145
       },
       "guardian": {
         "feedsOk": 7,
         "feedsFailed": 0,
-        "items": 195
+        "items": 197
       },
       "npr": {
         "feedsOk": 4,
@@ -57739,7 +58561,7 @@
       "aljazeera": {
         "feedsOk": 1,
         "feedsFailed": 0,
-        "items": 15
+        "items": 11
       },
       "mercopress": {
         "feedsOk": 3,
@@ -57749,12 +58571,12 @@
       "abc": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 32
+        "items": 33
       },
       "nyt": {
         "feedsOk": 5,
         "feedsFailed": 0,
-        "items": 180
+        "items": 177
       },
       "cnbc": {
         "feedsOk": 3,
@@ -57774,7 +58596,7 @@
       "france24": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 67
+        "items": 72
       },
       "africanews": {
         "feedsOk": 1,
@@ -57784,22 +58606,22 @@
       "scmp": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 148
+        "items": 149
       }
     },
     "shareImages": {
-      "tried": 5,
-      "found": 4,
+      "tried": 3,
+      "found": 3,
       "summaries": 0
     },
     "threads": {
-      "assigned": 10,
+      "assigned": 4,
       "created": 2,
       "failedBatches": 0
     },
     "summaries": {
-      "written": 8,
-      "due": 8
+      "written": 0,
+      "due": 2
     },
     "kinds": {
       "labelled": 0,
@@ -57807,109 +58629,99 @@
       "failedBatches": 0
     },
     "frames": {
-      "done": 5,
+      "done": 0,
       "waiting": 0,
       "failedBatches": 0
     },
     "stats": {
       "searched": 8,
-      "found": 2,
-      "reused": 4,
+      "found": 1,
+      "reused": 5,
       "none": 2,
       "failed": 0,
-      "proposed": 26,
-      "droppedPoints": 14,
-      "pagesFetched": 6,
+      "proposed": 20,
+      "droppedPoints": 0,
+      "pagesFetched": 4,
       "samples": [
         {
-          "headline": "Markets react to the US midterms: the dollar falls and gold rises",
-          "result": "chart",
-          "proposed": 5,
-          "checked": 5,
-          "pagesFetched": 2,
-          "selfFetched": 1
-        },
-        {
-          "headline": "America’s Trade Deficit Remained Elevated in September",
+          "headline": "Crude oil prices fall below $90 a barrel as Vance blames GOP election defeat on ",
           "result": "reused saved series"
         },
         {
-          "headline": "India vows to dig its way out of China machinery curbs",
+          "headline": "Paris Motor Show kicks off as China-EU rivalry heats up",
+          "result": "reused saved series"
+        },
+        {
+          "headline": "IMF upgrades 2026 global growth forecast but war and debt threaten outlook",
+          "result": "reused saved series"
+        },
+        {
+          "headline": "Airlines suspend flights to Riyadh amid security fears",
           "result": "none",
           "proposed": 0,
           "checked": 0,
-          "pagesFetched": 0
+          "pagesFetched": 1
         },
         {
-          "headline": "Euro zone inflation hits 4% for first time in three years as interest rate hike ",
-          "result": "no figure found on an official page",
-          "proposed": 14,
-          "checked": 0,
-          "pagesFetched": 2
-        },
-        {
-          "headline": "Four oil tankers destroyed in Hormuz after hitting mines, Tehran says",
+          "headline": "U.S. Treasury yields fall as energy prices pull back",
           "result": "reused saved series"
         },
         {
-          "headline": "US tech stocks recover after selloff spooks investors over AI spending",
+          "headline": "Middle East and Central Asia’s economy to shrink in 2026 amid war, IMF says",
+          "result": "reused saved series"
+        },
+        {
+          "headline": "IMF warns global economy ‘could soon test the limits of resilience’",
           "result": "chart",
-          "proposed": 7,
-          "checked": 7,
+          "proposed": 18,
+          "checked": 18,
           "pagesFetched": 2
         },
         {
-          "headline": "Trump says Houthis trying to increase oil prices before US elections",
-          "result": "reused saved series"
-        },
-        {
-          "headline": "French embassy in Riyadh tells citizens to avoid Saudi airports targeted by Hout",
-          "result": "reused saved series"
+          "headline": "Russia says Europe bought $320 billion in hydrocarbons since 2022",
+          "result": "too few checked figures",
+          "proposed": 2,
+          "checked": 2,
+          "pagesFetched": 1,
+          "selfFetched": 1
         }
       ]
     },
     "models": {
       "filter": {
         "model": "claude-haiku-5-5",
-        "calls": 22,
-        "inputTokens": 77583,
-        "outputTokens": 29963,
-        "cost": 0.0225
+        "calls": 16,
+        "inputTokens": 54848,
+        "outputTokens": 18592,
+        "cost": 0.0145
       },
       "analysis_quick": {
         "model": "claude-sonnet-5-5",
-        "calls": 4,
-        "inputTokens": 15468,
-        "outputTokens": 16573,
-        "cost": 0.1966
+        "calls": 3,
+        "inputTokens": 8676,
+        "outputTokens": 5896,
+        "cost": 0.0763
       },
       "stats": {
         "model": "claude-sonnet-5-5",
-        "calls": 4,
-        "inputTokens": 345107,
-        "outputTokens": 4982,
+        "calls": 3,
+        "inputTokens": 451599,
+        "outputTokens": 5883,
         "searches": 8,
         "fetches": 10,
-        "cost": 0.8201
-      },
-      "analysis": {
-        "model": "claude-opus-5-5",
-        "calls": 1,
-        "inputTokens": 5241,
-        "outputTokens": 7586,
-        "cost": 0.1727
+        "cost": 1.042
       },
       "threads": {
         "model": "claude-sonnet-5-5",
-        "calls": 9,
-        "inputTokens": 19484,
-        "outputTokens": 2733,
-        "cost": 0.0663
+        "calls": 1,
+        "inputTokens": 9082,
+        "outputTokens": 122,
+        "cost": 0.0194
       }
     },
     "spend": {
-      "thisDesk": 1.2784,
-      "today": 1.2784,
+      "thisDesk": 1.1525,
+      "today": 4.1803,
       "cap": 6
     }
   },
