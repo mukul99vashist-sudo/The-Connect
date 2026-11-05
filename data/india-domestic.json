@@ -2,12 +2,263 @@
   "schema": 4,
   "region": "India",
   "since": "2026-10-02",
-  "updatedAt": "2026-11-05T01:37:54.190Z",
+  "updatedAt": "2026-11-05T11:21:11.553Z",
   "sectors": [
     {
       "id": "energy",
       "name": "Energy",
       "items": [
+        {
+          "id": "s5imdbg",
+          "headline": "Oil prices hit two-month low after U.S. Democratic win",
+          "url": "https://www.thehindu.com/business/Economy/oil-prices-hit-two-month-low-after-us-democratic-win/article71668473.ece",
+          "source": "thehindu",
+          "date": "2026-11-05T02:52:17.000Z",
+          "relevance": "medium",
+          "image": "https://th-i.thgim.com/public/news/international/qqj2cc/article71668488.ece/alternates/LANDSCAPE_1200/oilprices.jpg",
+          "why": "Brent crude futures fell 1% to $93.5 per barrel, a two-month low, after an 8.7% drop in the previous session. Since India imports most of its crude, lower prices could eventually ease costs for refiners and fuel buyers.",
+          "implications": [
+            "Indian refiners usually buy crude cargoes some weeks before processing them, so a fall in benchmark prices reaches their costs with a delay.",
+            "A lower crude price also reduces the dollar cost of India's oil imports, which could ease pressure on the trade deficit and the rupee."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-05T11:16:48.415Z",
+            "tier": "quick",
+            "primary": "pass_through",
+            "complement": null,
+            "features": [
+              "price_move"
+            ],
+            "exposure": {
+              "level": "high",
+              "reason": "Petrol and diesel are household essentials, and crude oil is one of India's largest imports, so oil price moves reach both consumers and the national import bill."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Refiners' purchase timing and retail pricing practices mean any change at the pump would come after a lag, if at all."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on one outlet, The Hindu, whose short report gives the price move and links it to a US election result without further sourcing."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "down",
+                "what": "petrol and diesel prices",
+                "effect": "If lower crude costs are sustained, they could ease pressure on pump prices, though taxes and retailers' pricing choices may limit any change.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Government finances",
+                "direction": "down",
+                "what": "oil import bill",
+                "effect": "A cheaper crude price lowers the dollar value of India's oil imports, which could ease pressure on the trade deficit.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Whether Brent crude stays near the two-month low in the coming trading sessions",
+                "why": "A sustained fall would be more likely to feed into refiners' costs than a one-day move.",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "Any change in petrol and diesel prices announced by Indian fuel retailers",
+                "why": "It would show whether the lower crude price is passing through to consumers.",
+                "when": "",
+                "where": "Indian Oil Corporation"
+              }
+            ],
+            "context": [
+              "India imports most of the crude oil it uses, so global prices strongly influence its import bill.",
+              "Taxes form a large part of petrol and diesel prices in India, so changes in crude costs reach pump prices only partly."
+            ],
+            "terms": [
+              {
+                "term": "Brent crude futures",
+                "meaning": "Brent is the main international benchmark for oil prices, and futures are contracts to buy oil at an agreed price on a later date."
+              }
+            ],
+            "frameworks": {
+              "pass_through": {
+                "driver": {
+                  "variable": "Brent crude price",
+                  "direction": "down",
+                  "size": "1% to $93.5 per barrel, after an 8.7% slide in the previous…"
+                },
+                "product": "petrol & diesel",
+                "rungs": [
+                  {
+                    "stage": "Global crude price to Indian refiners' cost",
+                    "pass": "partial",
+                    "damper": "Refiners buy cargoes weeks ahead and hold inventory, so cheaper crude lowers their average cost only after earlier, costlier purchases are used up.",
+                    "lag": "weeks"
+                  },
+                  {
+                    "stage": "Refiners' cost to retail pump prices",
+                    "pass": "partial",
+                    "damper": "Central and state taxes make up a large part of the pump price, and fuel retailers do not necessarily change prices in step with crude costs.",
+                    "lag": "weeks"
+                  }
+                ],
+                "end_user": {
+                  "group": "Fuel & LPG users",
+                  "effect": "Motorists may notice little change at the pump in the short term. Any easing would depend on crude staying lower and on retailers' pricing decisions."
+                }
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "thehindu",
+              "headline": "Oil prices hit two-month low after U.S. Democratic win",
+              "url": "https://www.thehindu.com/business/Economy/oil-prices-hit-two-month-low-after-us-democratic-win/article71668473.ece",
+              "date": "2026-11-05T02:52:17.000Z",
+              "kind": "hard",
+              "summary": "Brent crude futures dropped 1% to $93.5 per ⁠barrel, after an 8.7% slide in the previous session",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/news/international/qqj2cc/article71668488.ece/alternates/LANDSCAPE_1200/oilprices.jpg"
+            },
+            {
+              "source": "mint",
+              "headline": "Petrol and diesel prices today, November 5: How much does fuel cost in Delhi, Mumbai, Bengaluru?",
+              "url": "https://www.livemint.com/news/india/petrol-and-diesel-prices-today-november-5-how-much-does-fuel-cost-in-delhi-mumbai-bengaluru-11793849582568.html",
+              "date": "2026-11-05T04:07:13.000Z",
+              "kind": "hard",
+              "summary": "Brent crude futures dived nearly 9% overnight, falling below $100 a barrel. Brent has dropped by about 20% so far this week.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/11/05/1600x900/logo/BELGIUM-ENERGY--3_1793323067896_pXKU_179332307804_1793851610799_jtGW_1793851610937_yoTe_f6e58069-e3c0-4f66-bac6-7538debf81db_ZYMc.JPG"
+            },
+            {
+              "source": "mint",
+              "headline": "US midterm election results: Impact on crude oil prices - what's happening after Trump's loss?",
+              "url": "https://www.livemint.com/news/us-news/us-midterm-election-results-impact-on-crude-oil-prices-whats-happening-after-trumps-loss-11793855107211.html",
+              "date": "2026-11-05T05:20:12.000Z",
+              "kind": "hard",
+              "summary": "Crude oil prices have fallen below $94 a barrel as US President Donald Trump's midterm election setback fuels hopes of an end to the Iran war. Here's how the political shift could affect global oil supplies, prices and India's crude imports.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/11/05/1600x900/logo/oil_price_1793855930310_4zP0_1793855934670_6Mku_6d98f366-36a4-4c53-a6e5-f2affaa9ec71_GCCK.png"
+            },
+            {
+              "source": "thehindu",
+              "headline": "Markets on spree after crude tumbles 9% following Trump’s midterm fallout",
+              "url": "https://www.thehindu.com/business/markets/stock-markets-on-november-5-2026-sensex-and-nifty-oil-prices/article71668596.ece",
+              "date": "2026-11-05T07:11:47.000Z",
+              "kind": "hard",
+              "summary": "Analysts suggest that the sharp decline in oil prices and the opening up of the Strait of Hormuz are anchoring the Indian markets",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/news/national/nlcwk8/article71668606.ece/alternates/LANDSCAPE_1200/stockmarket.jpg"
+            }
+          ],
+          "placeTried": true,
+          "thread": "t8nzveu"
+        },
+        {
+          "id": "sdadrjv",
+          "headline": "Private sector participation in nuclear energy: No compromise on safety aspects, says AERB Chairperson",
+          "url": "https://www.thehindu.com/news/national/private-sector-participation-in-nuclear-energy-aerb-will-provide-enabling-environment-without-compromising-safety-says-chairperson/article71668479.ece",
+          "source": "thehindu",
+          "date": "2026-11-05T05:02:27.000Z",
+          "relevance": "medium",
+          "image": "https://th-i.thgim.com/public/news/national/kerala/qih3fr/article71668477.ece/alternates/LANDSCAPE_1200/ak.jpg",
+          "why": "The chairperson of the Atomic Energy Regulatory Board (AERB) said safety will not be compromised as the government opens nuclear energy to private players under the SHANTI Act. The remarks reach India's future electricity supply.",
+          "implications": [
+            "Private companies entering nuclear energy would operate under the safety regulator's oversight, so its requirements could shape which projects are viable and how quickly they proceed.",
+            "The assurance is aimed at public and industry concern about safety, which often influences how readily communities and investors accept new nuclear projects."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-05T11:16:48.416Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "medium",
+              "reason": "The effect runs through one industry, nuclear power generation, and any change in electricity supply would come well after projects are approved and built."
+            },
+            "horizon": {
+              "value": "years",
+              "reason": "Nuclear plants take many years to approve, build and connect to the grid, so any effect on electricity supply is distant."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "This rests on one outlet, The Hindu, quoting the AERB chairperson on record; details of the safety rules for private players are not reported."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Power consumers",
+                "direction": "unclear",
+                "what": "long-term electricity supply",
+                "effect": "If private firms build nuclear plants under regulatory oversight, they could add generation capacity over time, but the scale and cost to consumers are not reported.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Any safety or licensing conditions announced for private operators in the nuclear sector",
+                "why": "They would show how strict and how workable the oversight regime is for private investors.",
+                "when": "",
+                "where": "Atomic Energy Regulatory Board"
+              }
+            ],
+            "context": [
+              "India's nuclear power sector has largely been run by government-owned entities, with the AERB acting as the independent safety regulator. Allowing private participation is therefore a significant change in how the sector is structured."
+            ],
+            "terms": [
+              {
+                "term": "AERB",
+                "meaning": "The Atomic Energy Regulatory Board, India's regulator for safety in nuclear and radiation-related activities."
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Regulator gives a safety assurance",
+                    "detail": "The AERB chairperson said there will be no compromise on safety aspects as private sector participation in nuclear energy is considered.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Government policy admits private players",
+                    "detail": "The remarks come in the context of the SHANTI Act and the Union government's decision to welcome private players into nuclear energy.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Private projects face regulatory scrutiny",
+                    "detail": "Private developers may have to meet the regulator's safety requirements, which could affect the pace and cost of projects and, over time, the electricity capacity available to consumers.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "Private firms may not commit capital to nuclear projects, or licensing may move so slowly that no new private capacity is built, in which case electricity supply is not affected."
+              }
+            }
+          },
+          "place": {
+            "name": "New Delhi",
+            "country": "India",
+            "lat": 28.61,
+            "lon": 77.21
+          },
+          "reports": [
+            {
+              "source": "thehindu",
+              "headline": "Private sector participation in nuclear energy: No compromise on safety aspects, says AERB Chairperson",
+              "url": "https://www.thehindu.com/news/national/private-sector-participation-in-nuclear-energy-aerb-will-provide-enabling-environment-without-compromising-safety-says-chairperson/article71668479.ece",
+              "date": "2026-11-05T05:02:27.000Z",
+              "kind": "hard",
+              "summary": "The AERB chairperson’s remarks gain significance in the context of SHANTI Act and the Union government’s policy decision to welcome private players",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/news/national/kerala/qih3fr/article71668477.ece/alternates/LANDSCAPE_1200/ak.jpg"
+            }
+          ],
+          "thread": "t1k3bkud"
+        },
         {
           "id": "s1pkopmw",
           "headline": "India’s green aviation push comes with a fuel bill: SAF mandate to hit airlines",
@@ -8999,6 +9250,249 @@
       "name": "Logistics & Shipping",
       "items": [
         {
+          "id": "s14dhk63",
+          "headline": "India’s ₹1.31 lakh crore railway project could break China’s record with world’s highest station in Ladakh | Details",
+          "url": "https://www.livemint.com/industry/infrastructure/indias-1-31-lakh-crore-railway-project-could-break-china-s-record-with-world-s-highest-station-in-ladakh-details-11793875534251.html",
+          "source": "mint",
+          "date": "2026-11-05T11:02:43.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2026/11/05/1600x900/logo/railway_1793876523175_qa4H_1793876523314_9vxA_e49ded9d-23df-4056-a821-5cf05cc32f81_3Wkw.png",
+          "why": "India is planning a 489 km railway line from Bilaspur in Himachal Pradesh to Leh in Ladakh, costing ₹1.31 lakh crore. It could include the world's highest railway station and 270 km of tunnels.",
+          "implications": [
+            "If the line is built, Ladakh could gain a rail connection for passengers and freight, which could reduce its reliance on road and air links over the long term.",
+            "The proposed cost of ₹1.31 lakh crore would be a large public commitment, and any funding decision would affect central government capital spending priorities over many years."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-05T11:21:04.517Z",
+            "tier": "quick",
+            "primary": "winners_losers",
+            "complement": null,
+            "features": [
+              "allocation",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "The project is only at the planning stage and has no direct channel to household essentials or major trade flows. Any effect would be indirect and would mainly reach Himachal Pradesh and Ladakh."
+            },
+            "horizon": {
+              "value": "years",
+              "reason": "The line is a proposal, and a 489 km route with 270 km of tunnels would take many years to build."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "The account rests on a single Mint report that names no official source, and it describes a proposed plan whose approval and funding are not confirmed."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "A named state or region",
+                "direction": "up",
+                "what": "rail connectivity for Ladakh",
+                "effect": "Ladakh and Himachal Pradesh could gain a new rail corridor between Bilaspur and Leh, which may improve access and local economic activity if the project goes ahead.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Travellers & pilgrims",
+                "direction": "up",
+                "what": "travel options to Leh",
+                "effect": "A completed line could give travellers a rail alternative for reaching Leh, though no passenger services, timetables or fares have been reported.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Government finances",
+                "direction": "down",
+                "what": "large capital outlay",
+                "effect": "The proposed cost of ₹1.31 lakh crore would add a long-term capital commitment to central government spending if the project is sanctioned.",
+                "basis": "reported"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Formal government approval and funding sanction for the Bilaspur to Leh railway line",
+                "why": "Approval would show whether the proposal is moving from planning to execution and how the cost would be financed.",
+                "when": "",
+                "where": "Ministry of Railways"
+              }
+            ],
+            "context": [
+              "Leh is not currently connected to the national rail network. Building railways through high Himalayan terrain generally requires extensive tunnelling and engineering work, which makes such projects slow and costly."
+            ],
+            "terms": [],
+            "frameworks": {
+              "winners_losers": {
+                "groups": [
+                  {
+                    "group": "A named state or region",
+                    "direction": "gain",
+                    "directness": "indirect",
+                    "mechanism": "The proposed line would link Bilaspur in Himachal Pradesh with Leh in Ladakh, so both regions could gain rail access if it is built."
+                  },
+                  {
+                    "group": "Travellers & pilgrims",
+                    "direction": "gain",
+                    "directness": "indirect",
+                    "mechanism": "A rail route to Leh could add a travel option for people visiting Ladakh, though no services have been announced."
+                  },
+                  {
+                    "group": "Government finances",
+                    "direction": "lose",
+                    "directness": "direct",
+                    "mechanism": "The project is estimated at ₹1.31 lakh crore, so building it would require a substantial public outlay."
+                  }
+                ],
+                "not_affected": "Rail passengers and freight users elsewhere in India are not affected for now, because the proposal covers a single corridor and has not been built or confirmed."
+              }
+            }
+          },
+          "place": {
+            "name": "Leh",
+            "country": "India",
+            "lat": 34.15,
+            "lon": 77.58
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "India’s ₹1.31 lakh crore railway project could break China’s record with world’s highest station in Ladakh | Details",
+              "url": "https://www.livemint.com/industry/infrastructure/indias-1-31-lakh-crore-railway-project-could-break-china-s-record-with-world-s-highest-station-in-ladakh-details-11793875534251.html",
+              "date": "2026-11-05T11:02:43.000Z",
+              "kind": "hard",
+              "summary": "India is planning a ₹1.31 lakh crore railway corridor connecting Bilaspur in Himachal Pradesh to Leh in Ladakh. Spanning 489 km, the proposed line could feature the world's highest railway station at 17,244 feet and include 270 km of tunnels.&nbsp;",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/11/05/1600x900/logo/railway_1793876523175_qa4H_1793876523314_9vxA_e49ded9d-23df-4056-a821-5cf05cc32f81_3Wkw.png"
+            }
+          ],
+          "thread": "t1i8ydw9"
+        },
+        {
+          "id": "s1u2rkmg",
+          "headline": "India gets Strait of Hormuz passage reprieve from Iran. What does Tehran expect in return?",
+          "url": "https://www.livemint.com/economy/india-gets-strait-of-hormuz-passage-reprieve-from-iran-what-does-tehran-expect-in-return-11793871532686.html",
+          "source": "mint",
+          "date": "2026-11-05T10:15:42.000Z",
+          "relevance": "high",
+          "image": "https://www.livemint.com/lm-img/img/2026/11/05/1600x900/logo/Hormuz_1793872564241_WdFt_1793872564418_twxn_74ae4bff-58cc-4616-bbd6-36ee6f79c499_65KO.png",
+          "why": "Iran is allowing Indian ships to pass through the Strait of Hormuz under selective exemptions. Mint links this to medicines, energy supplies and diplomatic interests, and asks what Tehran expects from India in return.",
+          "implications": [
+            "If Indian vessels keep getting passage, cargoes of energy and other goods bound for India could keep moving, which would limit shortages and shipping delays at Indian ports and refineries.",
+            "Exemptions granted selectively could come with diplomatic expectations of India. These could shape how New Delhi handles its relations with Iran and with other Gulf states."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-05T11:20:41.035Z",
+            "tier": "quick",
+            "primary": "disruption_map",
+            "complement": null,
+            "features": [
+              "disruption",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "high",
+              "reason": "Indian ships carrying energy cargoes depend on passage through the strait, and India's petrol, diesel and cooking gas supplies rely heavily on imports from the Gulf. Any change in access could therefore reach households."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Ships are passing now, but any effect on fuel supply or prices would depend on how long the exemptions last and on how quickly cargoes reach India."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single Mint report with no named official source, and the scope, conditions and duration of the exemptions have not been confirmed."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "fuel supply security",
+                "effect": "If passage for Indian tankers continues, crude and gas deliveries could stay steady and limit pressure on fuel prices. Any withdrawal of the exemption could tighten supply.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "shipping access and delays",
+                "effect": "Importers whose cargoes use Indian-linked vessels may face fewer delays if exemptions hold. Others could still face restrictions or higher shipping costs.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Any official statement from India or Iran on the conditions, scope or duration of the passage exemptions for Indian ships",
+                "why": "It would show whether the reprieve is lasting and what Iran expects from India in return.",
+                "when": "",
+                "where": "Ministry of External Affairs"
+              }
+            ],
+            "context": [
+              "India imports most of its crude oil, and a large share of Gulf oil and gas exports travels through the Strait of Hormuz, so access to the strait matters directly to Indian fuel supply."
+            ],
+            "terms": [
+              {
+                "term": "Strait of Hormuz",
+                "meaning": "A narrow waterway between Iran and Oman that links the Persian Gulf to the open sea and carries a large share of the world's oil shipments."
+              }
+            ],
+            "frameworks": {
+              "disruption_map": {
+                "node": {
+                  "name": "Strait of Hormuz",
+                  "type": "strait",
+                  "status": "partial",
+                  "as_of": "5 Nov 2026"
+                },
+                "cause": {
+                  "text": "Iran is granting selective exemptions that let Indian ships pass, which Mint links to medicines, energy supplies and Tehran's diplomatic interests; the underlying restrictions are not described.",
+                  "status": "claimed"
+                },
+                "flows": [
+                  {
+                    "flow": "crude",
+                    "india_link": "India imports most of its crude oil, and a large share of Gulf supply moves through this strait, so Indian refiners and fuel users depend on it.",
+                    "basis": "inferred"
+                  },
+                  {
+                    "flow": "LNG",
+                    "india_link": "India also imports liquefied natural gas from Gulf producers, which supports power, fertiliser and city gas supply and could be affected by access through the strait.",
+                    "basis": "inferred"
+                  },
+                  {
+                    "flow": "other",
+                    "india_link": "Medicines are named as one reason for Iran's exemptions. The direction and size of that trade with India have not been reported.",
+                    "basis": "reported"
+                  }
+                ],
+                "alternatives": [],
+                "duration": "not reported"
+              }
+            }
+          },
+          "place": {
+            "name": "Strait of Hormuz",
+            "country": "Iran",
+            "lat": 26.6,
+            "lon": 56.3,
+            "involves": [
+              "India"
+            ]
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "India gets Strait of Hormuz passage reprieve from Iran. What does Tehran expect in return?",
+              "url": "https://www.livemint.com/economy/india-gets-strait-of-hormuz-passage-reprieve-from-iran-what-does-tehran-expect-in-return-11793871532686.html",
+              "date": "2026-11-05T10:15:42.000Z",
+              "kind": "hard",
+              "summary": "Why is Iran allowing Indian ships to pass through the Strait of Hormuz? Medicines, energy supplies and diplomatic interests explain Tehran's selective exemptions.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/11/05/1600x900/logo/Hormuz_1793872564241_WdFt_1793872564418_twxn_74ae4bff-58cc-4616-bbd6-36ee6f79c499_65KO.png"
+            }
+          ],
+          "thread": "t8nzveu"
+        },
+        {
           "id": "s9i0748",
           "headline": "IndiGo CEO William Walsh takes aim at airport monopolies as record fuel costs bite",
           "url": "https://www.livemint.com/companies/indigo-ceo-william-walsh-takes-aim-at-airport-monopolies-as-record-fuel-costs-bite-11793611053512.html",
@@ -13717,6 +14211,488 @@
       "id": "economy",
       "name": "Economy & Trade",
       "items": [
+        {
+          "id": "s67cwyy",
+          "headline": "Food accounts for 53.5% of rural household spending as inflation rises: NABARD survey",
+          "url": "https://www.livemint.com/economy/nabard-survey-rural-inflation-food-expenditure-11793865782721.html",
+          "source": "mint",
+          "date": "2026-11-05T09:39:38.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2026/11/05/1600x900/logo/g783a9f966b1be1096d4389127df371210a0ecae5c7c993f53_1793871384245_yie7_1793871384388_rUi6_f711013d-0882-416e-b989-07f18b4be1c1_kodP.jpg",
+          "why": "A NABARD survey finds food accounts for 53.5% of rural household spending. Food spending stays sticky as inflation rises, while rural households' savings erode and borrowing picks up.",
+          "implications": [
+            "When most spending goes on food and food prices rise, households have less income left for other goods, which could weaken rural demand for non-essential items.",
+            "Eroding savings and more borrowing leave rural families with less cushion against shocks such as poor harvests or health costs, and may raise repayment stress for lenders serving them."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-05T11:20:05.661Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "high",
+              "reason": "The finding concerns food staples and household borrowing and savings, which are essentials for rural families. Rising prices reach them directly through their weekly spending."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "The survey describes a gradual build-up of strain in household budgets, and its effects on savings, borrowing and demand are likely to unfold over several months."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "The findings come from a NABARD survey reported by one outlet, Mint, so the wider data and methodology have not been confirmed by other outlets."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Food shoppers",
+                "direction": "up",
+                "what": "share of spending on food",
+                "effect": "Rural households keep spending on food despite rising prices, so food takes up a large share of their budgets and leaves less for other needs.",
+                "basis": "reported"
+              },
+              {
+                "group": "Depositors & savers",
+                "direction": "down",
+                "what": "rural household savings",
+                "effect": "Rising prices are eroding the savings of rural households, according to the survey, which reduces the financial cushion they hold.",
+                "basis": "reported"
+              },
+              {
+                "group": "Borrowers",
+                "direction": "up",
+                "what": "rural borrowing activity",
+                "effect": "Rural households are borrowing more as savings fall, which increases their debt obligations and exposure to repayment strain.",
+                "basis": "reported"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Official food inflation readings in the coming months",
+                "why": "They would show whether price pressure on rural household budgets is easing or continuing.",
+                "when": "",
+                "where": "Ministry of Statistics and Programme Implementation"
+              }
+            ],
+            "context": [
+              "Food has a larger weight in rural household budgets than in urban ones, so rising food prices hit rural families harder. Rural demand also matters for many consumer goods and farm-linked businesses."
+            ],
+            "terms": [
+              {
+                "term": "NABARD",
+                "meaning": "The National Bank for Agriculture and Rural Development, India's apex development bank for agriculture and rural areas, which also conducts surveys of rural households."
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Food dominates rural budgets",
+                    "detail": "The NABARD survey finds that food accounts for 53.5% of rural household spending, and that this spending stays sticky even as prices rise.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Savings erode, borrowing rises",
+                    "detail": "Because food spending does not fall, rural households face growing financial strain. Their savings are eroding and borrowing activity is picking up.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Demand and credit stress may follow",
+                    "detail": "With less money left after food and more debt to service, rural households may cut other spending, and lenders could see higher repayment stress.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The strain would ease if food price inflation slows or rural incomes rise enough to cover food costs without drawing down savings or taking on more debt."
+              }
+            }
+          },
+          "place": {
+            "name": "India",
+            "country": "India",
+            "lat": 20.59,
+            "lon": 78.96
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "Food accounts for 53.5% of rural household spending as inflation rises: NABARD survey",
+              "url": "https://www.livemint.com/economy/nabard-survey-rural-inflation-food-expenditure-11793865782721.html",
+              "date": "2026-11-05T09:39:38.000Z",
+              "kind": "hard",
+              "summary": "While spending on food remains sticky despite rising prices, rural households face growing financial strain as savings erode and borrowing activity picks up, the survey revealed.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/11/05/1600x900/logo/g783a9f966b1be1096d4389127df371210a0ecae5c7c993f53_1793871384245_yie7_1793871384388_rUi6_f711013d-0882-416e-b989-07f18b4be1c1_kodP.jpg"
+            }
+          ],
+          "finChecked": true,
+          "thread": "taejsof"
+        },
+        {
+          "id": "s1bn9ldo",
+          "headline": "GSTN to lengthen e-way bill numbers to 14 digits from January 2027 as volumes surge",
+          "url": "https://www.livemint.com/news/india/gstn-eway-bill-numbers-14-digits-january-2027-volumes-11793862369861.html",
+          "source": "mint",
+          "date": "2026-11-05T08:58:27.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2026/11/05/1600x900/logo/pexels-photo-4968390_1793868733153_RRgy_1793868748164_rEci_a24e3416-dfd6-469a-a919-2008e3ac3b06_oJSZ.jpeg",
+          "why": "The Goods and Services Tax Network (GSTN) will lengthen e-way bill numbers to 14 digits from January 2027 because document volumes have surged. Compliance rules stay the same, but businesses must update their systems in advance.",
+          "implications": [
+            "Firms and transporters that generate or verify e-way bills through accounting, ERP or logistics software may need to change number fields so that the longer numbers are accepted and stored correctly.",
+            "Because compliance rules are unchanged, this is a technical change rather than a new tax obligation, but systems that are not updated in time could reject or mis-record the new numbers."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-05T11:20:05.661Z",
+            "tier": "quick",
+            "primary": "policy_tracker",
+            "complement": null,
+            "features": [
+              "policy_stage"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The change reaches businesses that move goods and use the e-way bill system, through a system-update obligation. It does not touch household essentials or prices, so exposure is limited to one compliance area."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "The new numbering starts in January 2027, about two months after the report, so firms have a window in which to update their systems."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "The account rests on a single outlet, Mint, and the exact January start date and any official GSTN notice are not confirmed in the report."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "system update workload",
+                "effect": "Businesses that generate e-way bills must adjust their software to handle 14-digit numbers before January 2027, although the underlying compliance rules do not change.",
+                "basis": "reported"
+              }
+            ],
+            "watch": [
+              {
+                "what": "An official GSTN advisory giving the exact start date and technical format of the 14-digit e-way bill numbers",
+                "why": "It would tell businesses and software vendors precisely what to change and by when.",
+                "when": "January 2027",
+                "where": "GST Network (GSTN) e-way bill portal"
+              }
+            ],
+            "context": [
+              "An e-way bill is an electronic document that generally has to accompany goods moved between locations under the Goods and Services Tax (GST), and GSTN runs the technology platform behind GST."
+            ],
+            "terms": [
+              {
+                "term": "e-way bill",
+                "meaning": "An electronic document, generated on the GST system, that must accompany certain consignments of goods while they are being transported."
+              }
+            ],
+            "frameworks": {
+              "policy_tracker": {
+                "instrument": {
+                  "name": "14-digit e-way bill numbering",
+                  "issuer": "Goods and Services Tax Network (GSTN)",
+                  "jurisdiction": "India"
+                },
+                "stages": [
+                  {
+                    "stage": "announced",
+                    "date": "2026-11-05",
+                    "status": "done"
+                  },
+                  {
+                    "stage": "in_force",
+                    "date": "January 2027",
+                    "status": "next"
+                  }
+                ],
+                "obligations": [
+                  {
+                    "who": "Businesses that generate or use e-way bills",
+                    "what": "They must update their systems in advance so that the longer 14-digit numbers are handled correctly, while existing compliance rules remain unchanged.",
+                    "from": "January 2027"
+                  }
+                ],
+                "applies_to_india": "yes",
+                "india_note": "The change applies to all Indian businesses that generate e-way bills. It is a backend numbering update meant to prevent shortages as document volumes grow, not a change in tax rules."
+              }
+            }
+          },
+          "place": {
+            "name": "New Delhi",
+            "country": "India",
+            "lat": 28.61,
+            "lon": 77.21
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "GSTN to lengthen e-way bill numbers to 14 digits from January 2027 as volumes surge",
+              "url": "https://www.livemint.com/news/india/gstn-eway-bill-numbers-14-digits-january-2027-volumes-11793862369861.html",
+              "date": "2026-11-05T08:58:27.000Z",
+              "kind": "hard",
+              "summary": "The backend update aims to prevent numbering shortages as document volumes surged nearly 83% over four years to 1.42 billion in FY26. Compliance rules remain unchanged, but businesses must update their systems in advance.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/11/05/1600x900/logo/pexels-photo-4968390_1793868733153_RRgy_1793868748164_rEci_a24e3416-dfd6-469a-a919-2008e3ac3b06_oJSZ.jpeg"
+            }
+          ],
+          "finChecked": true,
+          "thread": "t14sojca"
+        },
+        {
+          "id": "s117j5yl",
+          "headline": "Mobile phone retailers expect 10% price hike post Diwali even as sales drop",
+          "url": "https://www.thehindu.com/sci-tech/technology/mobile-phone-retailers-expect-10-price-hike-post-diwali-even-as-sales-drop/article71668987.ece",
+          "source": "thehindu",
+          "date": "2026-11-05T07:35:17.000Z",
+          "relevance": "medium",
+          "image": "https://th-i.thgim.com/public/incoming/w086mo/article71669011.ece/alternates/LANDSCAPE_1200/2026-01-12T064210Z_5901846_RC2JOGAV1ZKS_RTRMADP_3_COUNTERPOINT-SMARTPHONE.JPG",
+          "why": "The All India Mobile Retail Association expects mobile phone prices to rise by about 10 per cent after Diwali and projects sales volumes to fall by 50 per cent after mid-November, possibly for an extended period.",
+          "implications": [
+            "Lower volumes would squeeze retailers' revenue and could leave unsold stock with dealers and distributors, which may in turn prompt offers that limit the price rise.",
+            "A projected drop that could persist beyond the festive season points to weak buyer demand, not just a short pause after Diwali."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-05T11:18:23.342Z",
+            "tier": "quick",
+            "primary": "pass_through",
+            "complement": null,
+            "features": [
+              "price_move"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The effect reaches households through the price of one product category, mobile phones, and reaches the mobile retail trade through lower sales volumes, so it is concentrated in one industry."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "The price rise is expected after Diwali and the sales drop after mid-November, both within the next few weeks."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on one outlet, The Hindu, reporting projections from a trade association, and the reason for the expected price rise has not been reported."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Salaried workers",
+                "direction": "up",
+                "what": "mobile phone prices",
+                "effect": "Households buying a phone after Diwali may pay roughly one-tenth more if retailers' expectations prove right, which could lead some to delay purchases.",
+                "basis": "reported"
+              },
+              {
+                "group": "Importers & traders",
+                "direction": "down",
+                "what": "retail sales volumes",
+                "effect": "Mobile retailers expect far fewer sales after mid-November, which would reduce their turnover and could strain smaller shops.",
+                "basis": "reported"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Whether phone brands and retailers raise prices once the Diwali offers end",
+                "why": "This would show whether the retailers' expected price increase is materialising.",
+                "when": "post Diwali",
+                "where": ""
+              },
+              {
+                "what": "Reported mobile retail sales volumes after the middle of November",
+                "why": "This would show whether the projected steep drop in volumes occurs.",
+                "when": "after mid-November 2026",
+                "where": ""
+              }
+            ],
+            "context": [
+              "Diwali is one of the busiest periods of the year for consumer electronics in India, so shops and brands often run offers before it. Retail associations speak for shop owners and their forecasts are not official data."
+            ],
+            "terms": [],
+            "frameworks": {
+              "pass_through": {
+                "driver": {
+                  "variable": "Mobile phone prices after Diwali",
+                  "direction": "up",
+                  "size": ""
+                },
+                "product": "electronics",
+                "rungs": [
+                  {
+                    "stage": "Brands' pricing → wholesale prices",
+                    "pass": "unclear",
+                    "damper": "The cause of the expected increase has not been reported, and festive offers that usually run until Diwali may simply lapse afterward.",
+                    "lag": "weeks"
+                  },
+                  {
+                    "stage": "Wholesale → retail shelf prices",
+                    "pass": "likely",
+                    "damper": "Retailers have limited margins to absorb higher purchase prices, so most of any increase may reach customers.",
+                    "lag": "weeks"
+                  },
+                  {
+                    "stage": "Higher prices → buyer demand",
+                    "pass": "partial",
+                    "damper": "Retailers expect volumes to fall sharply, which could push shops and brands to offer discounts that limit the price rise.",
+                    "lag": "weeks"
+                  }
+                ],
+                "end_user": {
+                  "group": "Salaried workers",
+                  "effect": "Households buying phones after Diwali may notice higher shelf prices and fewer offers, and some may postpone purchases if prices rise as retailers expect."
+                }
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "thehindu",
+              "headline": "Mobile phone retailers expect 10% price hike post Diwali even as sales drop",
+              "url": "https://www.thehindu.com/sci-tech/technology/mobile-phone-retailers-expect-10-price-hike-post-diwali-even-as-sales-drop/article71668987.ece",
+              "date": "2026-11-05T07:35:17.000Z",
+              "kind": "hard",
+              "summary": "All India Mobile Retail Association projects a staggering 50% volume drop after mid-Novmber that could persist over an extended period",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/incoming/w086mo/article71669011.ece/alternates/LANDSCAPE_1200/2026-01-12T064210Z_5901846_RC2JOGAV1ZKS_RTRMADP_3_COUNTERPOINT-SMARTPHONE.JPG"
+            }
+          ],
+          "finChecked": true,
+          "placeTried": true,
+          "thread": "t8ykufk"
+        },
+        {
+          "id": "s1s7yhfz",
+          "headline": "Fake ship flags, Iran oil trade: US sanctions Indian entities in expanding crackdown on Tehran",
+          "url": "https://www.livemint.com/news/us-news/fake-ship-flags-iran-oil-trade-us-sanctions-indian-entities-in-expanding-crackdown-on-tehran-11793845050850.html",
+          "source": "mint",
+          "date": "2026-11-05T02:31:42.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2026/11/05/1600x900/maxresdefault_1793868636210_yH70_1793868641885_sKE2_88c7fb01-ae5b-473c-aa06-f430292a6859_F2kP.jpg",
+          "why": "The United States has sanctioned India-based individuals and companies accused of using fake vessel registrations to move Iranian oil. The action widens Washington's pressure on Tehran and now reaches Indian shipping and trading businesses directly.",
+          "implications": [
+            "Indian ship managers, agents and traders handling tankers may face closer checks from banks, insurers and partners abroad, even where they have no link to the sanctioned entities.",
+            "Firms named in sanctions can lose access to dollar payments and Western services, which could disrupt their wider shipping or trading business.",
+            "The inclusion of a Turkish firm over support for Iran's airlines shows the crackdown extends beyond oil cargoes."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-05T11:16:48.415Z",
+            "tier": "quick",
+            "primary": "trade_flow",
+            "complement": null,
+            "features": [
+              "trade_flow"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The channel is compliance and business risk for Indian shipping and trading firms named or dealing with named parties. It does not directly touch a household essential, so exposure is medium."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Banks, insurers and counterparties usually review their exposure to newly sanctioned entities over the following weeks."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single outlet, Mint, and the names of the entities and the US official source are not given in the report."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "sanctions and compliance risk",
+                "effect": "Indian shipping and trading firms dealing in tanker cargoes may face stricter checks and the risk of losing dollar banking access if linked to sanctioned parties.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Further US sanctions designations that name more India-based firms or vessels linked to Iranian oil",
+                "why": "It would show whether the crackdown is widening further among Indian shipping and trading businesses.",
+                "when": "",
+                "where": "US Department of the Treasury"
+              },
+              {
+                "what": "Any response from the Indian government on the sanctioned India-based entities",
+                "why": "It would indicate how New Delhi handles the issue with Washington.",
+                "when": "",
+                "where": "Ministry of External Affairs"
+              }
+            ],
+            "context": [
+              "US sanctions on Iran's oil trade can reach companies in other countries because many shipping, insurance and payment transactions rely on the US financial system.",
+              "Sanctioned parties are generally barred from dealing with US firms and often find it harder to use international banks."
+            ],
+            "terms": [
+              {
+                "term": "fake vessel registrations",
+                "meaning": "Ships are registered under a country's flag, and falsified registrations can hide a vessel's true identity, ownership or cargo."
+              }
+            ],
+            "frameworks": {
+              "trade_flow": {
+                "good": "Iranian crude oil",
+                "actors": [
+                  {
+                    "country": "Iran",
+                    "role": "exporter",
+                    "is_india": false
+                  },
+                  {
+                    "country": "United States",
+                    "role": "third_party",
+                    "is_india": false
+                  },
+                  {
+                    "country": "India",
+                    "role": "third_party",
+                    "is_india": true
+                  },
+                  {
+                    "country": "Turkey",
+                    "role": "third_party",
+                    "is_india": false
+                  }
+                ],
+                "change": {
+                  "type": "sanction",
+                  "effective": ""
+                },
+                "india_position": {
+                  "role": "transit",
+                  "note": "India-based individuals and companies are accused of helping move Iranian oil using fake vessel registrations, so India appears here as a shipping and service hub rather than a buyer. Indian firms may face tighter compliance scrutiny as a result."
+                },
+                "volumes": []
+              }
+            }
+          },
+          "place": {
+            "name": "Washington",
+            "country": "United States",
+            "lat": 38.9,
+            "lon": -77,
+            "involves": [
+              "India",
+              "Iran",
+              "Turkey"
+            ]
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "Fake ship flags, Iran oil trade: US sanctions Indian entities in expanding crackdown on Tehran",
+              "url": "https://www.livemint.com/news/us-news/fake-ship-flags-iran-oil-trade-us-sanctions-indian-entities-in-expanding-crackdown-on-tehran-11793845050850.html",
+              "date": "2026-11-05T02:31:42.000Z",
+              "kind": "hard",
+              "summary": "The US has sanctioned India-based individuals and companies accused of using fake vessel registrations to help transport Iranian oil, widening Washington's crackdown on Tehran's oil trade. A Turkish firm was also targeted over support for Iran's airlines.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/11/05/1600x900/maxresdefault_1793868636210_yH70_1793868641885_sKE2_88c7fb01-ae5b-473c-aa06-f430292a6859_F2kP.jpg"
+            }
+          ],
+          "finChecked": true,
+          "thread": "t8nzveu"
+        },
         {
           "id": "s1bs6imu",
           "headline": "India sees some trade relief, new risks after US midterm vote",
@@ -27722,6 +28698,120 @@
       "name": "Finance",
       "items": [
         {
+          "id": "s1pkot0d",
+          "headline": "Congress seeks JPC probe into IDBI Bank sale, alleges valuation irregularities",
+          "url": "https://www.thehindu.com/news/national/congress-seeks-jpc-probe-into-idbi-bank-sale-alleges-valuation-irregularities/article71657915.ece",
+          "source": "thehindu",
+          "date": "2026-11-02T17:04:12.000Z",
+          "relevance": "medium",
+          "image": "https://th-i.thgim.com/public/incoming/cees0s/article71658105.ece/alternates/LANDSCAPE_1200/20261102183L.jpg",
+          "why": "The Congress party has asked for a joint parliamentary committee (JPC) inquiry into the sale of IDBI Bank. It alleges valuation irregularities and questions whether the bank's own funds were used by Fairfax to finance its acquisition.",
+          "implications": [
+            "The allegations are made by an opposition party and have not been tested. Their weight depends on whether the valuation reports are disclosed and what they show.",
+            "A dispute over valuation could affect confidence in how public-sector bank sales are priced and carried out, which matters for the government's wider asset-sale plans."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-02T19:34:19.835Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "The reports describe a political demand and allegations about one bank's sale. They name no direct channel to deposits, loans or prices for ordinary households."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "No date is reported for any inquiry or disclosure, and parliamentary or regulatory scrutiny of a bank sale usually takes months to develop."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single outlet, The Hindu, and the claims are made by a political party; no official response or valuation reports are reported."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Government finances",
+                "direction": "unclear",
+                "what": "credibility of bank sale",
+                "effect": "A contested valuation could complicate the government's plans to raise money by selling stakes in public-sector lenders, though no such effect has been reported.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Whether the government or the bank discloses the valuation reports that the Congress party has demanded",
+                "why": "Disclosure would show whether the valuation allegations have any basis and whether the dispute widens.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "The government has for some years been trying to sell its controlling stake in IDBI Bank. A JPC is formed only through a motion in Parliament, so an opposition demand does not by itself start an inquiry."
+            ],
+            "terms": [
+              {
+                "term": "JPC",
+                "meaning": "A joint parliamentary committee, made up of members of both Houses of Parliament, set up to investigate a specific matter in detail."
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Congress demands a JPC probe",
+                    "detail": "The Congress party has asked for a joint parliamentary committee to examine the sale of IDBI Bank, alleging irregularities in how the bank was valued.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Questions over use of bank funds",
+                    "detail": "The party questions whether the bank's own funds were used by Fairfax to finance its acquisition of the bank, and wants the valuation reports made public.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Political scrutiny of the sale grows",
+                    "detail": "If the valuation reports are not disclosed, the dispute could continue and may weigh on the credibility of public-sector bank sales.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The effect would stop if the valuation reports are disclosed and show no irregularity, or if no committee is formed and the demand fades."
+              }
+            }
+          },
+          "place": {
+            "name": "New Delhi",
+            "country": "India",
+            "lat": 28.6,
+            "lon": 77.2
+          },
+          "reports": [
+            {
+              "source": "thehindu",
+              "headline": "Congress seeks JPC probe into IDBI Bank sale, alleges valuation irregularities",
+              "url": "https://www.thehindu.com/news/national/congress-seeks-jpc-probe-into-idbi-bank-sale-alleges-valuation-irregularities/article71657915.ece",
+              "date": "2026-11-02T17:04:12.000Z",
+              "kind": "hard",
+              "summary": "The party questions the use of bank’s funds by Fairfax to finance acquisition; demands disclosure of valuation reports",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/incoming/cees0s/article71658105.ece/alternates/LANDSCAPE_1200/20261102183L.jpg"
+            },
+            {
+              "source": "mint",
+              "headline": "IDBI Bank stake sale: Why employees are protesting against Fairfax deal and demanding privatisation rollback",
+              "url": "https://www.livemint.com/companies/news/idbi-bank-stake-sale-why-employees-are-protesting-against-fairfax-deal-and-demanding-privatisation-rollback-11793874927748.html",
+              "date": "2026-11-05T11:00:24.000Z",
+              "kind": "hard",
+              "summary": "The proposed transaction, approved by the Indian government on October 14, involves the sale of a combined 60.72% stake held by the Centre and Life Insurance Corporation of India (LIC) to Fairfax.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/11/05/1600x900/logo/idbi_bank_strike_1793876392968_BNru_1793876401538_5kOH_36e1f52f-d453-4571-950c-397b87d2c607_lweQ.png"
+            }
+          ],
+          "thread": "t1sn5puo"
+        },
+        {
           "id": "s1htegz2",
           "headline": "How banks are preparing for the dawn of India's ECL era",
           "url": "https://www.livemint.com/industry/banking/expected-credit-loss-ecl-framework-rbi-bank-provisioning-bad-loans-state-bank-of-india-public-sector-banks-11793796955368.html",
@@ -29445,110 +30535,6 @@
             }
           ],
           "thread": "t120t1qd"
-        },
-        {
-          "id": "s1pkot0d",
-          "headline": "Congress seeks JPC probe into IDBI Bank sale, alleges valuation irregularities",
-          "url": "https://www.thehindu.com/news/national/congress-seeks-jpc-probe-into-idbi-bank-sale-alleges-valuation-irregularities/article71657915.ece",
-          "source": "thehindu",
-          "date": "2026-11-02T17:04:12.000Z",
-          "relevance": "medium",
-          "image": "https://th-i.thgim.com/public/incoming/cees0s/article71658105.ece/alternates/LANDSCAPE_1200/20261102183L.jpg",
-          "why": "The Congress party has asked for a joint parliamentary committee (JPC) inquiry into the sale of IDBI Bank. It alleges valuation irregularities and questions whether the bank's own funds were used by Fairfax to finance its acquisition.",
-          "implications": [
-            "The allegations are made by an opposition party and have not been tested. Their weight depends on whether the valuation reports are disclosed and what they show.",
-            "A dispute over valuation could affect confidence in how public-sector bank sales are priced and carried out, which matters for the government's wider asset-sale plans."
-          ],
-          "analysis": {
-            "v": 3,
-            "at": "2026-11-02T19:34:19.835Z",
-            "tier": "quick",
-            "primary": "impact_chain",
-            "complement": null,
-            "features": [
-              "pending_outcome"
-            ],
-            "exposure": {
-              "level": "low",
-              "reason": "The reports describe a political demand and allegations about one bank's sale. They name no direct channel to deposits, loans or prices for ordinary households."
-            },
-            "horizon": {
-              "value": "months",
-              "reason": "No date is reported for any inquiry or disclosure, and parliamentary or regulatory scrutiny of a bank sale usually takes months to develop."
-            },
-            "confidence": {
-              "level": "low",
-              "reason": "This rests on a single outlet, The Hindu, and the claims are made by a political party; no official response or valuation reports are reported."
-            },
-            "outlets": 1,
-            "affected": [
-              {
-                "group": "Government finances",
-                "direction": "unclear",
-                "what": "credibility of bank sale",
-                "effect": "A contested valuation could complicate the government's plans to raise money by selling stakes in public-sector lenders, though no such effect has been reported.",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "Whether the government or the bank discloses the valuation reports that the Congress party has demanded",
-                "why": "Disclosure would show whether the valuation allegations have any basis and whether the dispute widens.",
-                "when": "",
-                "where": ""
-              }
-            ],
-            "context": [
-              "The government has for some years been trying to sell its controlling stake in IDBI Bank. A JPC is formed only through a motion in Parliament, so an opposition demand does not by itself start an inquiry."
-            ],
-            "terms": [
-              {
-                "term": "JPC",
-                "meaning": "A joint parliamentary committee, made up of members of both Houses of Parliament, set up to investigate a specific matter in detail."
-              }
-            ],
-            "frameworks": {
-              "impact_chain": {
-                "chain": [
-                  {
-                    "step": "Congress demands a JPC probe",
-                    "detail": "The Congress party has asked for a joint parliamentary committee to examine the sale of IDBI Bank, alleging irregularities in how the bank was valued.",
-                    "basis": "reported"
-                  },
-                  {
-                    "step": "Questions over use of bank funds",
-                    "detail": "The party questions whether the bank's own funds were used by Fairfax to finance its acquisition of the bank, and wants the valuation reports made public.",
-                    "basis": "reported"
-                  },
-                  {
-                    "step": "Political scrutiny of the sale grows",
-                    "detail": "If the valuation reports are not disclosed, the dispute could continue and may weigh on the credibility of public-sector bank sales.",
-                    "basis": "inferred"
-                  }
-                ],
-                "breaks_if": "The effect would stop if the valuation reports are disclosed and show no irregularity, or if no committee is formed and the demand fades."
-              }
-            }
-          },
-          "place": {
-            "name": "New Delhi",
-            "country": "India",
-            "lat": 28.6,
-            "lon": 77.2
-          },
-          "reports": [
-            {
-              "source": "thehindu",
-              "headline": "Congress seeks JPC probe into IDBI Bank sale, alleges valuation irregularities",
-              "url": "https://www.thehindu.com/news/national/congress-seeks-jpc-probe-into-idbi-bank-sale-alleges-valuation-irregularities/article71657915.ece",
-              "date": "2026-11-02T17:04:12.000Z",
-              "kind": "hard",
-              "summary": "The party questions the use of bank’s funds by Fairfax to finance acquisition; demands disclosure of valuation reports",
-              "summaryV": 3,
-              "image": "https://th-i.thgim.com/public/incoming/cees0s/article71658105.ece/alternates/LANDSCAPE_1200/20261102183L.jpg"
-            }
-          ],
-          "thread": "t1sn5puo"
         },
         {
           "id": "slvs59f",
@@ -32934,6 +33920,439 @@
       "id": "technology",
       "name": "Technology",
       "items": [
+        {
+          "id": "s15l35tb",
+          "headline": "India flags Chinese-linked AI tools in hacking campaign against financial firms",
+          "url": "https://www.livemint.com/technology/india-flags-chinese-linked-ai-tools-in-hacking-campaign-against-financial-firms-11793867833483.html",
+          "source": "mint",
+          "date": "2026-11-05T08:37:12.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2024/12/18/1600x900/logo/tech1_1734536428801_1734536438047.jpg",
+          "why": "India has flagged artificial intelligence tools with Chinese links as being used in a hacking campaign against financial firms. The campaign targets institutions that hold the money and personal data of many Indians.",
+          "implications": [
+            "Banks, lenders and payment firms may need to strengthen their defences if AI tools make attacks faster or harder to spot.",
+            "If an attack succeeded, customers could face disrupted services or exposure of personal and account data."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-05T11:20:05.661Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "medium",
+              "reason": "The campaign targets financial firms, so any breach could reach customers' accounts and data. No actual losses or disruption have been reported, which keeps the level at medium."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "The warning is current, and firms would be expected to respond to it soon, but no specific incident or deadline has been reported."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single short Mint item, with no named agency, no affected firms and no technical details reported."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Depositors & savers",
+                "direction": "unclear",
+                "what": "data and account security",
+                "effect": "If financial firms were breached, customers' account data or access to services could be affected, though no such breach has been reported.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Further advisories or details naming the tools, the targeted firms or any confirmed breaches",
+                "why": "They would show whether the campaign has caused real harm or remains a warning.",
+                "when": "",
+                "where": "Indian Computer Emergency Response Team (CERT-In)"
+              }
+            ],
+            "context": [
+              "Financial firms are frequent targets for hackers because they hold money and sensitive customer records. Attackers can use AI tools to automate tasks such as writing convincing phishing messages or searching for weaknesses in systems."
+            ],
+            "terms": [],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "India flags the AI-enabled campaign",
+                    "detail": "India has flagged AI tools with Chinese links being used in a hacking campaign aimed at financial firms.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Financial firms are the targets",
+                    "detail": "The campaign is directed at financial firms, which are institutions that hold customer money and personal information.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Customers could be exposed",
+                    "detail": "If hackers get into a firm's systems, customers could face disrupted services or leaked data, depending on how well the firm's defences hold.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The effect would not reach customers if financial firms detect and block the intrusions before attackers reach customer data or systems."
+              }
+            }
+          },
+          "place": {
+            "name": "New Delhi",
+            "country": "India",
+            "lat": 28.61,
+            "lon": 77.21,
+            "involves": [
+              "China"
+            ]
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "India flags Chinese-linked AI tools in hacking campaign against financial firms",
+              "url": "https://www.livemint.com/technology/india-flags-chinese-linked-ai-tools-in-hacking-campaign-against-financial-firms-11793867833483.html",
+              "date": "2026-11-05T08:37:12.000Z",
+              "kind": "hard",
+              "summary": "INDIA-CYBER/AI:India flags Chinese-linked AI tools in hacking campaign against financial firms",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2024/12/18/1600x900/logo/tech1_1734536428801_1734536438047.jpg"
+            },
+            {
+              "source": "mint",
+              "headline": "CERT-In flags China-Linked AI cyberattacks on Indian banks: Hackers exploit holidays, low-monitoring windows",
+              "url": "https://www.livemint.com/news/india/certin-flags-china-linked-ai-cyberattacks-on-indian-banks-hackers-exploit-holidays-low-monitoring-windows-11793873291876.html",
+              "date": "2026-11-05T10:53:05.000Z",
+              "kind": "hard",
+              "summary": "India's cybersecurity agency, CERT-In, has flagged AI-driven cyberattacks targeting banks, non-banking lenders, fintech firms and cryptocurrency exchanges by a hacking group called Crafty Falcon.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/11/05/1600x900/logo/3-0-27757321-istockphoto-958867880-2048x2048-0_1679821178651_1793873695177_FkL2_c5baea46-4d93-49c3-9488-126b49d85a58_m7GY.jpg"
+            }
+          ],
+          "thread": "tldp4u6"
+        },
+        {
+          "id": "sq7lqje",
+          "headline": "Rising memory costs may push mobile prices up 30%, could trigger second-hand device market: Jefferies",
+          "url": "https://www.livemint.com/technology/rising-memory-costs-may-push-mobile-prices-up-30-could-trigger-second-hand-device-market-jefferies-11793863066245.html",
+          "source": "mint",
+          "date": "2026-11-05T07:17:45.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2026/11/05/1600x900/maxresdefault_1793865030548_j4dd_1793865036160_vUfB_9a5f35f0-5183-41d7-9545-94a3eb30f3d2_CSAc.jpg",
+          "why": "Brokerage Jefferies says rising memory chip costs, driven by demand from the artificial intelligence industry, could lift low-end smartphone prices by around 30 per cent. Indian buyers may delay purchases or turn to second-hand phones.",
+          "implications": [
+            "Budget phones have thin margins, so makers have little room to absorb higher chip costs and may pass much of the increase on to buyers.",
+            "If new phones become costlier, demand could shift to refurbished and second-hand devices, which would reduce sales volumes for new-phone sellers."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-05T11:18:23.342Z",
+            "tier": "quick",
+            "primary": "pass_through",
+            "complement": null,
+            "features": [
+              "price_move"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The effect reaches Indian households through the prices of one product category, budget smartphones, and through the mobile retail and manufacturing industry, rather than through a household essential."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Chip price changes usually reach phone prices only after existing inventory and supply contracts run down and new models are priced."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on one outlet, Mint, reporting a single brokerage forecast from Jefferies, and no manufacturer or official source has confirmed any price rise."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Salaried workers",
+                "direction": "up",
+                "what": "budget phone prices",
+                "effect": "Households buying low-end phones may face higher prices for new devices, which could push them to delay purchases or choose second-hand handsets.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Importers & traders",
+                "direction": "mixed",
+                "what": "new versus second-hand sales",
+                "effect": "Sellers of new phones may see weaker volumes if buyers wait, while second-hand device dealers could gain demand.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Announcements by smartphone makers of price increases on entry-level models",
+                "why": "This would show whether higher memory costs are actually reaching Indian shelf prices.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "Memory chips are a core component of every smartphone. AI data centres compete with phone makers for the same chip supply, which can raise prices for all buyers of memory."
+            ],
+            "terms": [
+              {
+                "term": "memory costs",
+                "meaning": "The price phone makers pay for the chips that store data and run apps on a smartphone."
+              }
+            ],
+            "frameworks": {
+              "pass_through": {
+                "driver": {
+                  "variable": "Memory chip costs",
+                  "direction": "up",
+                  "size": ""
+                },
+                "product": "electronics",
+                "rungs": [
+                  {
+                    "stage": "AI demand → memory chip prices",
+                    "pass": "likely",
+                    "damper": "Long-term supply contracts and stored inventory can delay when phone makers actually pay the higher chip prices.",
+                    "lag": "months"
+                  },
+                  {
+                    "stage": "Chip costs → phone makers' costs",
+                    "pass": "likely",
+                    "damper": "Budget phones have thin margins, but makers may absorb part of the rise by trimming other costs or using chips bought earlier.",
+                    "lag": "months"
+                  },
+                  {
+                    "stage": "Makers' prices → Indian shelf prices",
+                    "pass": "partial",
+                    "damper": "Competition in the low-end segment and price-sensitive buyers may force retailers and brands to hold back some of the increase.",
+                    "lag": "weeks"
+                  }
+                ],
+                "end_user": {
+                  "group": "Salaried workers",
+                  "effect": "Households buying a budget phone may find new models costlier over the coming months, and some may postpone a purchase or choose a second-hand device."
+                }
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "Rising memory costs may push mobile prices up 30%, could trigger second-hand device market: Jefferies",
+              "url": "https://www.livemint.com/technology/rising-memory-costs-may-push-mobile-prices-up-30-could-trigger-second-hand-device-market-jefferies-11793863066245.html",
+              "date": "2026-11-05T07:17:45.000Z",
+              "kind": "hard",
+              "summary": "Rising memory costs, driven by growing demand from the artificial intelligence industry, could push prices of low-end smartphones up by around 30 per cent and force consumers to delay fresh purchases or opt for second-hand devices, according to a report by Jefferies.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/11/05/1600x900/maxresdefault_1793865030548_j4dd_1793865036160_vUfB_9a5f35f0-5183-41d7-9545-94a3eb30f3d2_CSAc.jpg"
+            }
+          ],
+          "placeTried": true,
+          "thread": "t8ykufk"
+        },
+        {
+          "id": "sfvl8i0",
+          "headline": "CERT-In calls for testing AI agents for unauthorised tool use, privilege abuse",
+          "url": "https://www.thehindu.com/business/Industry/cert-in-calls-for-testing-ai-agents-for-unauthorised-tool-use-privilege-abuse/article71668646.ece",
+          "source": "thehindu",
+          "date": "2026-11-05T06:14:38.000Z",
+          "relevance": "medium",
+          "image": "https://th-i.thgim.com/public/incoming/xte4a1/article71668779.ece/alternates/LANDSCAPE_1200/iStock-2257366803.jpg",
+          "why": "CERT-In, India's cybersecurity agency, has issued guidelines asking organisations to test AI agents for unauthorised tool use and privilege abuse. They also require emergency-stop mechanisms and logged records of agents' actions.",
+          "implications": [
+            "Companies building or deploying AI agents may need to review what permissions each agent holds and how tasks are delegated, adding security testing to their development and operating work.",
+            "Systems with several cooperating agents must keep authenticated, logged communications, so organisations could be expected to produce records showing what each agent did."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-05T11:16:48.416Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "medium",
+              "reason": "The guidelines create a compliance and security-testing obligation for organisations that deploy AI agents, which mainly affects the technology and services industry rather than households."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Organisations need time to build testing, permission controls, emergency-stop features and logging into their AI systems."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "This rests on one outlet, The Hindu, describing official CERT-In guidelines; whether they are binding or how they will be enforced is not reported."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "IT & services workers",
+                "direction": "up",
+                "what": "security testing workload",
+                "effect": "Technology firms deploying AI agents may need more testing, access-control and logging work, which could raise demand for security and compliance skills.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Any CERT-In clarification on whether the AI agent guidelines are binding and how compliance will be checked",
+                "why": "It would show whether organisations face enforceable obligations or voluntary good-practice advice.",
+                "when": "",
+                "where": "CERT-In"
+              }
+            ],
+            "context": [
+              "CERT-In is the national agency for responding to cybersecurity incidents, and its guidelines commonly shape how Indian organisations handle security and incident reporting. AI agents are software that can take actions on their own using connected tools."
+            ],
+            "terms": [
+              {
+                "term": "AI agents",
+                "meaning": "Software systems that can plan and carry out tasks on their own by using other tools and systems, rather than only answering questions."
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "CERT-In issues AI agent guidelines",
+                    "detail": "CERT-In called for testing AI agents for unauthorised tool use and privilege abuse, setting out security expectations for such systems.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Specific controls are required",
+                    "detail": "The guidelines require checks on agents' permissions, task delegation and emergency-stop mechanisms, and multi-agent systems must keep authenticated, logged communications and records of actions.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Organisations add compliance work",
+                    "detail": "Firms deploying AI agents may need to build in testing, permission limits and logging, which could raise development effort and affect how quickly such tools are rolled out.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The guidelines turn out to be only advisory, or organisations do not deploy autonomous AI agents, in which case the extra testing and logging effort would not arise."
+              }
+            }
+          },
+          "place": {
+            "name": "New Delhi",
+            "country": "India",
+            "lat": 28.61,
+            "lon": 77.21
+          },
+          "reports": [
+            {
+              "source": "thehindu",
+              "headline": "CERT-In calls for testing AI agents for unauthorised tool use, privilege abuse",
+              "url": "https://www.thehindu.com/business/Industry/cert-in-calls-for-testing-ai-agents-for-unauthorised-tool-use-privilege-abuse/article71668646.ece",
+              "date": "2026-11-05T06:14:38.000Z",
+              "kind": "hard",
+              "summary": "Guidelines require checks on agents’ permissions, task delegation and emergency-stop mechanisms; multi-agent systems must maintain authenticated, logged communications and records of actions",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/incoming/xte4a1/article71668779.ece/alternates/LANDSCAPE_1200/iStock-2257366803.jpg"
+            }
+          ],
+          "thread": "tldp4u6"
+        },
+        {
+          "id": "spnvkeq",
+          "headline": "TRAI's new Network Anubhav platform to map real-world network speeds, call quality",
+          "url": "https://www.livemint.com/industry/telecom/trais-new-network-anubhav-platform-to-map-real-world-network-speeds-call-quality-11793850216722.html",
+          "source": "mint",
+          "date": "2026-11-05T03:49:30.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2026/11/05/1600x900/logo/2-0-1036514391-trai1-0_1679986289002_1793850381462_VwWK_1765aee5-dce8-4274-a7b3-203bc5cd7ad9_KBbW.JPG",
+          "why": "The Telecom Regulatory Authority of India (TRAI) launched the Network Anubhav Platform, a location-based dashboard that combines anonymised user tests with regulator drive tests. It lets consumers compare mobile and broadband performance and helps providers spot network problems.",
+          "implications": [
+            "Because the dashboard is organised by location, users in the same city could see differences in service quality between neighbourhoods and between providers.",
+            "Telecom providers receive data they can use to find weak spots in their networks, which could guide where they repair or upgrade."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-05T11:16:48.416Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "medium",
+              "reason": "The platform concerns one industry, telecom and broadband services, and reaches users through better information on service quality rather than through prices or a household essential."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "The dashboard becomes useful as enough user and drive-test data builds up, and provider improvements take longer still."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "This rests on one outlet, Mint, reporting a launch by the regulator; the platform's coverage and how often it is updated are not described."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "IT & services workers",
+                "direction": "up",
+                "what": "network quality information",
+                "effect": "Workers who depend on mobile or home broadband, including remote workers, could use location-level data to compare providers and judge connection quality before choosing one.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Whether TRAI publishes provider-wise or area-wise results from the Network Anubhav Platform",
+                "why": "Published results would show how far service quality differs between providers and locations.",
+                "when": "",
+                "where": "Telecom Regulatory Authority of India website"
+              }
+            ],
+            "context": [
+              "TRAI is India's telecom regulator and sets service-quality standards that mobile and broadband providers are expected to meet.",
+              "Consumers have often had limited independent, location-level information for comparing providers before choosing a plan."
+            ],
+            "terms": [
+              {
+                "term": "drive tests",
+                "meaning": "These are measurements taken by driving through an area with equipment that records signal strength, data speed and call quality."
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "TRAI launches the dashboard",
+                    "detail": "TRAI launched the Network Anubhav Platform, which combines anonymised user tests and regulator drive tests on a location-based map of mobile and broadband performance.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Consumers and providers get data",
+                    "detail": "Consumers can compare network speeds and call quality by location, and telecom providers get data to identify problems in their networks.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Public comparison may push improvements",
+                    "detail": "Visible differences between providers could encourage them to fix weak areas and could influence which provider users choose, if the data is reliable and widely used.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "Too few users run tests, or the data covers too few locations, so the dashboard does not give reliable comparisons and providers see little reason to act."
+              }
+            }
+          },
+          "place": {
+            "name": "New Delhi",
+            "country": "India",
+            "lat": 28.61,
+            "lon": 77.21
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "TRAI's new Network Anubhav platform to map real-world network speeds, call quality",
+              "url": "https://www.livemint.com/industry/telecom/trais-new-network-anubhav-platform-to-map-real-world-network-speeds-call-quality-11793850216722.html",
+              "date": "2026-11-05T03:49:30.000Z",
+              "kind": "hard",
+              "summary": "TRAI launched the Network Anubhav Platform, a geospatial dashboard combining anonymised user tests and regulator drive tests to help consumers compare mobile and broadband performance by location. It also gives telecom providers data to identify network issues.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/11/05/1600x900/logo/2-0-1036514391-trai1-0_1679986289002_1793850381462_VwWK_1765aee5-dce8-4274-a7b3-203bc5cd7ad9_KBbW.JPG"
+            }
+          ],
+          "thread": "tzqvj8g"
+        },
         {
           "id": "sogy5i5",
           "headline": "NVS-03 reaches geosynchronous orbit; satellite in good health",
@@ -45820,6 +47239,16 @@
               "descTried": true,
               "summary": "Extreme heavy rainfall hit Khammam and Bhadradri Kothagudem in Telangana overnight, with ongoing heavy showers and orange alert on November 4.",
               "summaryV": 3
+            },
+            {
+              "source": "mint",
+              "headline": "IMD weather alert today: Heavy rainfall likely in Tamil Nadu, Odisha, Andhra; shallow fog in Delhi NCR as AQI slips",
+              "url": "https://www.livemint.com/news/india/imd-weather-alert-today-heavy-rainfall-likely-in-tamil-nadu-odisha-andhra-shallow-fog-in-delhi-ncr-as-aqi-slips-11793841012054.html",
+              "date": "2026-11-05T02:01:21.000Z",
+              "kind": "breaking",
+              "summary": "Southern India continues to face turbulent weather today as the remnants of Cyclone Murasu trigger fresh IMD warnings for heavy rainfall and thunderstorms",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/11/05/1600x900/ANI-20261103118-0_1793842299034_Q5Ys_1793842354313_4NQd_4c1f6d0b-d7cb-41d3-a3a4-0b19b35eb631_v00F.jpg"
             }
           ],
           "thread": "t1tlxm8k"
@@ -50954,6 +52383,115 @@
       "name": "Agriculture & Food",
       "items": [
         {
+          "id": "sl8pu98",
+          "headline": "Post offices to serve as dark stores as govt expands Gujarat farmer e-commerce model to other states",
+          "url": "https://www.livemint.com/industry/agriculture/india-post-mystore-app-fpo-farmers-direct-ecommerce-delivery-11793853483732.html",
+          "source": "mint",
+          "date": "2026-11-05T08:25:46.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2026/11/05/1600x900/logo/P5_1734255229677_1793866894095_xc8x_00ce1c04-f088-48c9-a29c-b2991dfa04d4_VSbx.jpg",
+          "why": "The agriculture ministry and India Post are extending a farmer e-commerce model from Gujarat, Tamil Nadu and Madhya Pradesh to Rajasthan, Uttar Pradesh and Maharashtra, with post offices serving as dark stores.",
+          "implications": [
+            "Farmers in the three new states could gain a way to sell produce to online buyers without building their own storage or delivery systems.",
+            "The model turns the post office network into a farm-supply hub, which could give India Post a new source of parcel business."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-05T11:20:05.661Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "medium",
+              "reason": "The measure reaches one sector, farm marketing, through a government delivery channel. It does not directly touch household staples or prices in the reports."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "The rollout to three more states is still being arranged, and no start dates have been reported."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "This rests on a single Mint report that describes a collaboration between two government bodies, with no named official and no start dates reported."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Farmers",
+                "direction": "up",
+                "what": "access to online buyers",
+                "effect": "Farmers in the new states could sell through post offices acting as dark stores, which may widen their reach beyond local markets.",
+                "basis": "inferred"
+              },
+              {
+                "group": "A named state or region",
+                "direction": "up",
+                "what": "farm e-commerce coverage in three states",
+                "effect": "Rajasthan, Uttar Pradesh and Maharashtra are the next states to receive the farmer e-commerce model after earlier rollouts elsewhere.",
+                "basis": "reported"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Announcement of launch dates or pilot districts in Rajasthan, Uttar Pradesh and Maharashtra",
+                "why": "It would show how quickly farmers in these states can actually use the post office channel.",
+                "when": "",
+                "where": "Ministry of Agriculture and India Post"
+              }
+            ],
+            "context": [
+              "India Post runs one of the country's widest networks of branches, reaching many rural areas that private delivery firms serve poorly. Farmers usually depend on local markets and intermediaries to sell their produce."
+            ],
+            "terms": [
+              {
+                "term": "dark stores",
+                "meaning": "Dark stores are storage and packing points that fulfil online orders and are not open to walk-in shoppers."
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Ministry and India Post extend the model",
+                    "detail": "The agriculture ministry and India Post are working together to take the farmer e-commerce model, already run in Gujarat, Tamil Nadu and Madhya Pradesh, to three more states.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Post offices act as dark stores",
+                    "detail": "Post offices will serve as dark stores, meaning they would hold and dispatch orders for online sales of farm goods.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Farmers may reach wider markets",
+                    "detail": "Farmers near these post offices could sell directly to online buyers without arranging their own storage and delivery, which may change who captures the sale price.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The effect would stop short of farmers if online demand for their produce stays thin or if post offices cannot handle the volumes and perishability of farm goods."
+              }
+            }
+          },
+          "place": {
+            "name": "New Delhi",
+            "country": "India",
+            "lat": 28.61,
+            "lon": 77.21
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "Post offices to serve as dark stores as govt expands Gujarat farmer e-commerce model to other states",
+              "url": "https://www.livemint.com/industry/agriculture/india-post-mystore-app-fpo-farmers-direct-ecommerce-delivery-11793853483732.html",
+              "date": "2026-11-05T08:25:46.000Z",
+              "kind": "hard",
+              "summary": "After rollouts in Tamil Nadu and Madhya Pradesh, the agriculture ministry and India Post are collaborating to take the farmer e-commerce model to Rajasthan, Uttar Pradesh and Maharashtra.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/11/05/1600x900/logo/P5_1734255229677_1793866894095_xc8x_00ce1c04-f088-48c9-a29c-b2991dfa04d4_VSbx.jpg"
+            }
+          ],
+          "thread": "t17rtko9"
+        },
+        {
           "id": "swvtswo",
           "headline": "After milk and curd, prices of ghee, butter and paneer too up",
           "url": "https://www.thehindu.com/news/national/karnataka/after-milk-and-curd-prices-of-ghee-butter-and-paneer-too-up/article71667161.ece",
@@ -54679,6 +56217,494 @@
       "id": "governance",
       "name": "Policy & Governance",
       "items": [
+        {
+          "id": "s19u8v5d",
+          "headline": "ECI announces Special Summary Revision of electoral rolls in four States, two UTs",
+          "url": "https://www.thehindu.com/news/national/special-summary-revision-of-electoral-rolls-in-four-states-two-union-territories/article71669201.ece",
+          "source": "thehindu",
+          "date": "2026-11-05T09:36:44.000Z",
+          "relevance": "medium",
+          "image": "https://th-i.thgim.com/public/incoming/mw34g/article71669288.ece/alternates/LANDSCAPE_1200/Election_Commission_%20Of_India_Delhi_Delhi_6.jpg",
+          "why": "The Election Commission of India (ECI) has announced a Special Summary Revision of electoral rolls in Arunachal Pradesh, Chandigarh, Dadra and Nagar Haveli and Daman and Diu, Mizoram, Odisha and Sikkim, covering four states and two Union Territories.",
+          "implications": [
+            "Residents of these six regions may be able to check, correct or add their entries on the voter list, which determines who can vote in later elections.",
+            "The reports do not give the schedule, so the dates for claims and objections are not yet known."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-05T11:20:05.661Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "low",
+              "reason": "The revision reaches voters in six regions through the accuracy of their electoral entries. It involves no direct effect on prices, incomes or other household finances."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "The revision schedule has not been reported, so timing is uncertain, but such exercises typically begin soon after the announcement."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "The announcement is attributed to the ECI and reported by The Hindu, but this is one outlet and the schedule and scope of the revision are not reported."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "A named state or region",
+                "direction": "unclear",
+                "what": "voter list accuracy",
+                "effect": "Voters in Arunachal Pradesh, Chandigarh, Dadra and Nagar Haveli and Daman and Diu, Mizoram, Odisha and Sikkim may need to check that their entries on the rolls are correct.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "The ECI publishing the revision schedule, including dates for draft rolls, claims and objections",
+                "why": "It would tell voters in the six regions when they can check or correct their entries.",
+                "when": "",
+                "where": "Election Commission of India"
+              }
+            ],
+            "context": [
+              "Electoral rolls are the official lists of eligible voters, and a person generally has to be on the roll to vote. The ECI periodically revises them so that they stay accurate."
+            ],
+            "terms": [
+              {
+                "term": "Special Summary Revision",
+                "meaning": "A periodic exercise in which the Election Commission updates the electoral rolls in selected areas, usually allowing additions, corrections and deletions of entries."
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "ECI announces the revision",
+                    "detail": "The Election Commission of India has announced a Special Summary Revision of electoral rolls. This sets in motion an update of voter lists in the affected regions.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Six regions are covered",
+                    "detail": "The revision applies to Arunachal Pradesh, Mizoram, Odisha, Sikkim, Chandigarh, and Dadra and Nagar Haveli and Daman and Diu. Voter lists in these places will therefore be reviewed.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Voter lists may change",
+                    "detail": "Entries could be added, corrected or removed, which may affect who is listed as eligible to vote in future elections in these regions.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The effect on individual voters would not arise if their existing entries are already accurate and no corrections, additions or deletions are needed in their case."
+              }
+            }
+          },
+          "place": {
+            "name": "New Delhi",
+            "country": "India",
+            "lat": 28.61,
+            "lon": 77.21
+          },
+          "reports": [
+            {
+              "source": "thehindu",
+              "headline": "ECI announces Special Summary Revision of electoral rolls in four States, two UTs",
+              "url": "https://www.thehindu.com/news/national/special-summary-revision-of-electoral-rolls-in-four-states-two-union-territories/article71669201.ece",
+              "date": "2026-11-05T09:36:44.000Z",
+              "kind": "hard",
+              "summary": "The ECI announces Special Summary Revision of electoral rolls in Arunachal Pradesh, Chandigarh, Dadra and Nagar Haveli and Daman and Diu, Mizoram, Odisha and Sikkim",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/incoming/mw34g/article71669288.ece/alternates/LANDSCAPE_1200/Election_Commission_%20Of_India_Delhi_Delhi_6.jpg"
+            }
+          ],
+          "finChecked": true,
+          "thread": "t1iy3j15"
+        },
+        {
+          "id": "s4fj6x8",
+          "headline": "Agniveer Scheme: Inside Cabinet’s big announcement — Two-year extension in service, chance to join regular army and more",
+          "url": "https://www.livemint.com/news/india/agniveer-scheme-inside-cabinet-s-big-announcement-two-year-extension-in-service-chance-to-join-regular-army-and-more-11793867827049.html",
+          "source": "mint",
+          "date": "2026-11-05T08:43:19.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2026/11/05/1600x900/logo/PTI11-04-2026-000316B-0_1793867953078_ZoUD_1793867964654_Y0LQ_e521c050-b1ed-4bd5-b29b-f2107abb2bf8_GeOi.jpg",
+          "why": "The Ministry of Defence said the Union Cabinet has established a pathway for all Agniveers to be absorbed into the Indian Defence Forces, including a two-year extension in service and a chance to join the regular army.",
+          "implications": [
+            "Agniveers, who were recruited under a short-term scheme, gain a route to longer careers in the armed forces rather than facing an uncertain exit.",
+            "Longer service and absorption could change the long-term pay and pension costs the government carries for these personnel."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-05T11:20:05.661Z",
+            "tier": "quick",
+            "primary": "policy_tracker",
+            "complement": null,
+            "features": [
+              "policy_stage"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The decision directly affects Agniveers and their families and may change the government's defence personnel costs. It does not touch household essentials or trade."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "The Cabinet has set up the pathway, but the detailed rules and the timing of absorption have not been reported."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "This rests on one Mint report citing a Ministry of Defence statement, and the detailed terms and dates are not confirmed by other outlets."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Salaried workers",
+                "direction": "up",
+                "what": "job security for Agniveers",
+                "effect": "Agniveers gain a two-year extension in service and a chance to join the regular army, which improves their prospects of continued employment.",
+                "basis": "reported"
+              },
+              {
+                "group": "Government finances",
+                "direction": "unclear",
+                "what": "defence personnel costs",
+                "effect": "Longer service and absorption into regular ranks could change the government's salary and pension obligations, though the reports give no cost figures.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Official notification or detailed guidelines on the extension and absorption of Agniveers",
+                "why": "They would set out eligibility, selection and timing, which determine how many Agniveers actually benefit.",
+                "when": "",
+                "where": "Ministry of Defence"
+              }
+            ],
+            "context": [
+              "The Agniveer scheme brought in armed forces personnel on short fixed-term engagements instead of regular long careers. What happens to these recruits at the end of their term has been a recurring question in public debate."
+            ],
+            "terms": [
+              {
+                "term": "Agniveer",
+                "meaning": "An Agniveer is a soldier, sailor or airman recruited into the armed forces under a short-term engagement scheme rather than a regular career."
+              }
+            ],
+            "frameworks": {
+              "policy_tracker": {
+                "instrument": {
+                  "name": "Pathway for absorption of Agniveers into the Defence Forces",
+                  "issuer": "Union Cabinet, announced by the Ministry of Defence",
+                  "jurisdiction": "India"
+                },
+                "stages": [
+                  {
+                    "stage": "announced",
+                    "date": "2026-11-04",
+                    "status": "done"
+                  },
+                  {
+                    "stage": "adopted",
+                    "date": "",
+                    "status": "current"
+                  },
+                  {
+                    "stage": "notified",
+                    "date": "",
+                    "status": "next"
+                  }
+                ],
+                "obligations": [
+                  {
+                    "who": "Indian Defence Forces",
+                    "what": "They are to absorb Agniveers through the pathway the Cabinet has established, including a two-year extension in service and a chance to join the regular army.",
+                    "from": ""
+                  }
+                ],
+                "applies_to_india": "yes",
+                "india_note": "The measure applies to Agniveers serving in India's armed forces and their families. It may also change the government's long-term personnel costs, though no figures have been reported."
+              }
+            }
+          },
+          "place": {
+            "name": "New Delhi",
+            "country": "India",
+            "lat": 28.61,
+            "lon": 77.21
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "Agniveer Scheme: Inside Cabinet’s big announcement — Two-year extension in service, chance to join regular army and more",
+              "url": "https://www.livemint.com/news/india/agniveer-scheme-inside-cabinet-s-big-announcement-two-year-extension-in-service-chance-to-join-regular-army-and-more-11793867827049.html",
+              "date": "2026-11-05T08:43:19.000Z",
+              "kind": "hard",
+              "summary": "The Ministry of Defence said in a statement on Wednesday that the Union Cabinet had officially established a comprehensive pathway for all Agniveers to be absorbed into the Indian Defence Forces. Here's what the updated Agniveer Scheme looks like.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/11/05/1600x900/logo/PTI11-04-2026-000316B-0_1793867953078_ZoUD_1793867964654_Y0LQ_e521c050-b1ed-4bd5-b29b-f2107abb2bf8_GeOi.jpg"
+            }
+          ],
+          "finChecked": true,
+          "thread": "t1ft92ns"
+        },
+        {
+          "id": "s1xr6pab",
+          "headline": "Voter ID to replace Aadhaar for welfare payments? Opposition cries foul, links government’s proposal to SIR exclusions",
+          "url": "https://www.livemint.com/news/india/voter-id-to-replace-aadhaar-for-welfare-payments-opposition-cries-foul-links-government-s-proposal-to-sir-exclusions-11793865498273.html",
+          "source": "mint",
+          "date": "2026-11-05T08:14:30.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2026/11/05/1600x900/logo/sir_1793866112169_7Tvt_1793866120465_3bCI_8a18147b-2a1f-4339-bdf6-e3687bb03a0b_aX8R.jpg",
+          "why": "Union Minister Rajiv Ranjan Singh said welfare payments would rely on biometrics and voter ID numbers instead of Aadhaar. Opposition parties say this could cut off people removed from electoral rolls during the voter-list revision (SIR).",
+          "implications": [
+            "If eligibility is tied to voter ID numbers, people deleted from the electoral rolls could lose access to welfare payments, which is the concern the Congress and the CPI(M) have raised.",
+            "The CPI(M) warned of barriers for rural residents, who may find biometric checks and record corrections harder to complete and so could be delayed or excluded."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-05T11:18:23.343Z",
+            "tier": "quick",
+            "primary": "policy_tracker",
+            "complement": null,
+            "features": [
+              "policy_stage"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The proposal would change how people are identified for welfare payments, which could affect beneficiaries and the government's delivery systems. It remains a proposal, and no timeline or rules have been reported."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "No implementation date has been reported, and a change in identity checks would need formal rules and system changes before beneficiaries felt any effect."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "This rests on a single Mint report quoting a Union Minister and opposition parties; no formal notification, second outlet or detailed scheme design is cited."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Farmers",
+                "direction": "down",
+                "what": "access to welfare payments",
+                "effect": "Rural households, including farm families, could face delays or exclusion if biometric and voter ID verification is harder to complete or if their names are missing from electoral rolls.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Government finances",
+                "direction": "unclear",
+                "what": "welfare payment targeting",
+                "effect": "Changing the identity check could alter who qualifies for payments and how they are verified, which may change the cost and reach of welfare spending.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "A formal notification or rules setting out how voter ID numbers and biometrics would be used for welfare payments",
+                "why": "It would show whether the Minister's statement becomes a binding requirement and how people missing from electoral rolls would be treated.",
+                "when": "",
+                "where": "Gazette of India"
+              },
+              {
+                "what": "A government response to opposition concerns about people removed from electoral rolls and rural access",
+                "why": "It would show whether any safeguards or alternative identity options are planned for those who could be excluded.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "Aadhaar is the biometric-linked identity system that the government widely uses to verify beneficiaries of welfare schemes and to send payments directly to bank accounts, while voter ID numbers come from the Election Commission's electoral rolls."
+            ],
+            "terms": [
+              {
+                "term": "SIR",
+                "meaning": "The Special Intensive Revision is the Election Commission's exercise to re-verify voter lists, during which some names can be removed from the electoral rolls."
+              }
+            ],
+            "frameworks": {
+              "policy_tracker": {
+                "instrument": {
+                  "name": "Proposal to use biometrics and voter ID numbers instead of Aadhaar for welfare payments",
+                  "issuer": "Union government",
+                  "jurisdiction": "India"
+                },
+                "stages": [
+                  {
+                    "stage": "announced",
+                    "date": "",
+                    "status": "current"
+                  },
+                  {
+                    "stage": "adopted",
+                    "date": "",
+                    "status": "next"
+                  }
+                ],
+                "obligations": [
+                  {
+                    "who": "Welfare beneficiaries",
+                    "what": "Under the proposal, beneficiaries would be identified through biometrics and voter ID numbers rather than Aadhaar when receiving welfare payments.",
+                    "from": ""
+                  }
+                ],
+                "applies_to_india": "yes",
+                "india_note": "The proposal would change how welfare recipients across India are verified. Opposition parties say people removed from electoral rolls and rural residents could be denied benefits."
+              }
+            }
+          },
+          "place": {
+            "name": "New Delhi",
+            "country": "India",
+            "lat": 28.61,
+            "lon": 77.21
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "Voter ID to replace Aadhaar for welfare payments? Opposition cries foul, links government’s proposal to SIR exclusions",
+              "url": "https://www.livemint.com/news/india/voter-id-to-replace-aadhaar-for-welfare-payments-opposition-cries-foul-links-government-s-proposal-to-sir-exclusions-11793865498273.html",
+              "date": "2026-11-05T08:14:30.000Z",
+              "kind": "hard",
+              "summary": "Union Minister Rajiv Ranjan Singh said welfare payments would rely on biometrics and voter ID numbers instead of Aadhaar. Congress leader Pawan Khera and the CPI(M) warned the change could deny benefits to people removed from electoral rolls and create barriers for rural residents.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/11/05/1600x900/logo/sir_1793866112169_7Tvt_1793866120465_3bCI_8a18147b-2a1f-4339-bdf6-e3687bb03a0b_aX8R.jpg"
+            }
+          ],
+          "finChecked": true,
+          "thread": "tmju7gs"
+        },
+        {
+          "id": "s8itoay",
+          "headline": "24-hour to produce before Magistrate starts from detention, not ‘formal arrest’: Supreme Court",
+          "url": "https://www.thehindu.com/news/national/24-hour-to-produce-before-magistrate-starts-from-detention-not-formal-arrest-supreme-court/article71668833.ece",
+          "source": "thehindu",
+          "date": "2026-11-05T07:59:35.000Z",
+          "relevance": "medium",
+          "image": "https://th-i.thgim.com/public/news/national/p0g9w/article67415686.ece/alternates/LANDSCAPE_1200/IMG_IMG_SUPREMECOURT-NKV_2_1_2OBPIUSL.jpg",
+          "why": "The Supreme Court has ruled that the 24-hour limit for producing a person before a Magistrate starts from the moment of detention, not formal arrest. It also said fundamental rights prevail over special laws such as UAPA and PMLA.",
+          "implications": [
+            "Investigating agencies would have less room to keep someone in informal custody before recording an arrest, because the legal clock would already be running.",
+            "The ruling is relevant to people held under laws with tight bail rules, including business owners and executives facing money-laundering investigations."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-05T11:18:23.343Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "low",
+              "reason": "The ruling reaches India through criminal procedure for people detained by investigating agencies, not through prices, trade or household essentials, so its direct reach on most people is limited."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Police, agencies and lower courts need time to apply the ruling in individual cases after the judgment."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "This rests on one outlet, The Hindu, reporting a Supreme Court ruling, and the full judgment text and its exact scope have not been reviewed."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "protection on detention",
+                "effect": "Business people investigated under money-laundering or similar laws may gain an earlier right to appear before a Magistrate, though the ruling's practical reach is not yet clear.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "How lower courts and investigating agencies apply the detention ruling in new cases",
+                "why": "This would show whether the detention-based 24-hour rule changes practice on the ground.",
+                "when": "",
+                "where": "Supreme Court of India"
+              }
+            ],
+            "context": [
+              "The Constitution requires that an arrested person be produced before a Magistrate within 24 hours. Special laws such as UAPA and PMLA make bail harder to obtain than ordinary criminal law does."
+            ],
+            "terms": [
+              {
+                "term": "UAPA, PMLA",
+                "meaning": "The Unlawful Activities (Prevention) Act and the Prevention of Money Laundering Act, two special laws with strict bail conditions."
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Court sets detention as starting point",
+                    "detail": "The Supreme Court held that the 24-hour period to produce a person before a Magistrate begins at detention, not at formal arrest.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Rights placed above special laws",
+                    "detail": "The Court said fundamental rights prevail even over special laws such as UAPA and PMLA, where the right to bail is heavily restricted.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Less room for informal custody",
+                    "detail": "Agencies may have to produce detained people before a Magistrate sooner, which could give them earlier access to a court and a lawyer.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The effect would be limited if agencies already record arrests at the time of detention, or if later benches read the ruling narrowly."
+              }
+            }
+          },
+          "place": {
+            "name": "New Delhi",
+            "country": "India",
+            "lat": 28.61,
+            "lon": 77.21
+          },
+          "reports": [
+            {
+              "source": "thehindu",
+              "headline": "24-hour to produce before Magistrate starts from detention, not ‘formal arrest’: Supreme Court",
+              "url": "https://www.thehindu.com/news/national/24-hour-to-produce-before-magistrate-starts-from-detention-not-formal-arrest-supreme-court/article71668833.ece",
+              "date": "2026-11-05T07:59:35.000Z",
+              "kind": "hard",
+              "summary": "The Court said fundamental rights trumped even over special laws like UAPA, PMLA, in which the right to bail was heavily restricted",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/news/national/p0g9w/article67415686.ece/alternates/LANDSCAPE_1200/IMG_IMG_SUPREMECOURT-NKV_2_1_2OBPIUSL.jpg"
+            }
+          ],
+          "finChecked": true,
+          "thread": "ta4pnkz"
+        },
+        {
+          "id": "s14qrtu9",
+          "headline": "What are the changes in Agniveer scheme, and what prompted government to implement them? | Explained",
+          "url": "https://www.thehindu.com/news/national/what-are-the-changes-in-agniveer-scheme-and-what-prompted-government-to-implement-them-explained/article71668573.ece",
+          "source": "thehindu",
+          "date": "2026-11-05T06:25:01.000Z",
+          "relevance": "medium",
+          "image": "https://th-i.thgim.com/public/incoming/wxg558/article71668587.ece/alternates/LANDSCAPE_1200/PTI11_04_2026_000315B.jpg",
+          "why": "",
+          "implications": [],
+          "place": {
+            "name": "New Delhi",
+            "country": "India",
+            "lat": 28.61,
+            "lon": 77.21
+          },
+          "reports": [
+            {
+              "source": "thehindu",
+              "headline": "What are the changes in Agniveer scheme, and what prompted government to implement them? | Explained",
+              "url": "https://www.thehindu.com/news/national/what-are-the-changes-in-agniveer-scheme-and-what-prompted-government-to-implement-them-explained/article71668573.ece",
+              "date": "2026-11-05T06:25:01.000Z",
+              "kind": "feature",
+              "summary": "The decision, approved by the Cabinet on the recommendations of the three services, creates a pathway for the eventual absorption of all willing Agniveers, subject to merit and prescribed selection criteria",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/incoming/wxg558/article71668587.ece/alternates/LANDSCAPE_1200/PTI11_04_2026_000315B.jpg"
+            }
+          ],
+          "finChecked": true,
+          "thread": "t1ft92ns"
+        },
         {
           "id": "s1panyo",
           "headline": "ECI separates online Form 6, accompanying declaration for States undergoing SIR",
@@ -70851,14 +72877,14 @@
   "source": "BBC News & The Guardian & NPR & Al Jazeera & MercoPress & ABC News & The New York Times & CNBC & CBS News & DW & France 24 & Africanews & South China Morning Post & The Hindu & Mint & The Indian Express",
   "lastRun": {
     "filter": {
-      "judged": 29,
-      "kept": 6,
+      "judged": 107,
+      "kept": 24,
       "guarded": 0
     },
     "health": {
       "day": "2026-11-05",
-      "newStories24h": 38,
-      "keepRate2d": 0.215
+      "newStories24h": 41,
+      "keepRate2d": 0.218
     },
     "wars": {
       "linked": 0,
@@ -70867,34 +72893,36 @@
     },
     "places": {
       "labelled": 0,
-      "none": 0,
+      "none": 3,
       "waiting": 0
     },
     "skipped": {
-      "since": "2026-11-04T20:14:12.411Z",
+      "since": "2026-11-05T01:37:54.190Z",
       "counts": {
-        "section": 1
+        "section": 3
       },
       "examples": {
         "section": [
-          "Helping hand: On Cyclones Arnab and Murasu"
+          "Slow recovery: On the ISRO’s GSLV-F18 mission",
+          "From sea to market: How mussels sustain livelihoods along Thiruvananthapuram’s shore",
+          "Science should move past ‘top 2%’ label"
         ]
       }
     },
     "finance": {
       "moved": 0,
-      "checked": 2
+      "checked": 9
     },
-    "analysed": 29,
-    "added": 5,
-    "merged": 1,
-    "rejected": 23,
+    "analysed": 107,
+    "added": 18,
+    "merged": 6,
+    "rejected": 83,
     "failedBatches": 0,
     "feeds": {
       "thehindu": {
         "feedsOk": 6,
         "feedsFailed": 0,
-        "items": 345
+        "items": 347
       },
       "mint": {
         "feedsOk": 6,
@@ -70908,18 +72936,18 @@
       }
     },
     "shareImages": {
-      "tried": 1,
+      "tried": 0,
       "found": 0,
-      "summaries": 1
+      "summaries": 0
     },
     "threads": {
-      "assigned": 5,
-      "created": 4,
+      "assigned": 18,
+      "created": 8,
       "failedBatches": 0
     },
     "summaries": {
       "written": 0,
-      "due": 1
+      "due": 6
     },
     "kinds": {
       "labelled": 0,
@@ -70928,83 +72956,48 @@
     },
     "frames": {
       "done": 0,
-      "waiting": 1,
+      "waiting": 3,
       "failedBatches": 0,
       "budgetStopped": true
     },
     "stats": {
       "searched": 8,
-      "found": 1,
-      "reused": 1,
-      "none": 2,
+      "found": 0,
+      "reused": 0,
+      "none": 0,
       "failed": 0,
-      "proposed": 11,
-      "droppedPoints": 5,
-      "pagesFetched": 3,
-      "samples": [
-        {
-          "headline": "Services sector growth hits a four-month peak in October, PMI survey shows",
-          "result": "none",
-          "proposed": 0,
-          "checked": 0,
-          "pagesFetched": 1
-        },
-        {
-          "headline": "Unemployment rate in country stands at 5% in September, stable compared to Augus",
-          "result": "chart",
-          "proposed": 6,
-          "checked": 6,
-          "pagesFetched": 1
-        },
-        {
-          "headline": "India’s exports jump 23% in September; trade deficit narrows to $30.21 billion",
-          "result": "reused saved series"
-        },
-        {
-          "headline": "Net direct tax collection grows 13% to ₹13.38 lakh crore till October 14",
-          "result": "no figure found on an official page",
-          "proposed": 5,
-          "checked": 0,
-          "pagesFetched": 1
-        }
-      ],
+      "proposed": 0,
+      "droppedPoints": 0,
+      "pagesFetched": 0,
+      "samples": [],
       "budgetStopped": true
     },
     "models": {
       "filter": {
         "model": "claude-haiku-5-5",
-        "calls": 10,
-        "inputTokens": 31849,
-        "outputTokens": 7097,
-        "cost": 0.0068
+        "calls": 12,
+        "inputTokens": 47992,
+        "outputTokens": 22726,
+        "cost": 0.016
       },
       "analysis_quick": {
         "model": "claude-sonnet-5-5",
-        "calls": 2,
-        "inputTokens": 6605,
-        "outputTokens": 8821,
-        "cost": 0.1014
-      },
-      "stats": {
-        "model": "claude-sonnet-5-5",
-        "calls": 3,
-        "inputTokens": 375606,
-        "outputTokens": 4801,
-        "searches": 5,
-        "fetches": 8,
-        "cost": 0.8492
+        "calls": 8,
+        "inputTokens": 26242,
+        "outputTokens": 36684,
+        "cost": 0.4193
       },
       "threads": {
         "model": "claude-sonnet-5-5",
         "calls": 1,
-        "inputTokens": 9593,
-        "outputTokens": 159,
-        "cost": 0.0208
+        "inputTokens": 11410,
+        "outputTokens": 518,
+        "cost": 0.028
       }
     },
     "spend": {
-      "thisDesk": 0.9782,
-      "today": 5.1585,
+      "thisDesk": 0.4635,
+      "today": 5.7246,
       "cap": 6
     }
   },
