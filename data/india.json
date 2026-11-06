@@ -2,12 +2,530 @@
   "schema": 4,
   "region": "India",
   "since": "2026-10-02",
-  "updatedAt": "2026-11-06T01:41:47.780Z",
+  "updatedAt": "2026-11-06T11:15:25.309Z",
   "sectors": [
     {
       "id": "energy",
       "name": "Energy",
       "items": [
+        {
+          "id": "siwmo6b",
+          "headline": "Crude oil prices fall below $90 a barrel as Vance blames GOP election defeat on Iran war",
+          "url": "https://www.cnbc.com/2026/11/04/oil-price-iran-war-us-election-strait-hormuz.html",
+          "source": "cnbc",
+          "date": "2026-11-04T20:14:52.000Z",
+          "relevance": "medium",
+          "why": "Crude oil fell below $90 a barrel after the Republicans' midterm defeat, which Vice President JD Vance blamed on the Iran war, eased fears of escalation. Cheaper crude lowers the cost of India's largest import.",
+          "implications": [
+            "Lower crude prices may reduce India's oil import bill, which could ease pressure on the rupee and on the gap between what India pays for imports and earns from exports.",
+            "State-run fuel retailers may not cut pump prices quickly, because they often use lower costs to recover earlier losses before passing savings on to motorists.",
+            "The fall rests on expectations that the war will ease rather than on restored supply, so prices could rise again if fighting escalates.",
+            "Cheaper fuel could ease inflation over time, which may give the Reserve Bank of India more room in its interest-rate decisions."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-05T20:16:54.107Z",
+            "tier": "standard",
+            "primary": "pass_through",
+            "complement": null,
+            "features": [
+              "price_move"
+            ],
+            "exposure": {
+              "level": "high",
+              "reason": "Crude oil is India's largest import, so a sharp fall in global prices directly affects the import bill, refiners' costs and potentially the prices households pay for petrol and diesel."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Refiners buy crude on contracts priced over several weeks, and any retail price change depends on state-run companies' decisions, so effects in India would take weeks."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "CNBC and the South China Morning Post report the price fall, and three outlets report Vance's on-record remarks, but whether the decline will last is unconfirmed."
+            },
+            "outlets": 4,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "petrol and diesel prices",
+                "effect": "Lower crude costs could eventually allow cheaper pump prices, but state-run retailers and tax decisions may delay or absorb the saving.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Government finances",
+                "direction": "up",
+                "what": "oil import bill",
+                "effect": "A lower crude price could reduce India's import bill and fuel-related subsidy pressure, easing strain on public finances if prices stay low.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Importers & traders",
+                "direction": "down",
+                "what": "fuel and freight costs",
+                "effect": "Businesses that depend on diesel and transport could see lower input costs if cheaper crude passes through to fuel and freight rates.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Whether oil ends the week with its biggest weekly decline since the Covid-19 pandemic",
+                "why": "A sustained weekly fall would suggest markets expect a lasting easing of the war rather than a one-day reaction.",
+                "when": "this week",
+                "where": ""
+              },
+              {
+                "what": "Democratic moves in Congress to rein in the Iran war",
+                "why": "Concrete limits on the war would support the market view that escalation risk is falling.",
+                "when": "",
+                "where": "US Congress"
+              },
+              {
+                "what": "Any revision of retail petrol and diesel prices by India's state-run fuel retailers",
+                "why": "A revision would show whether lower global crude prices are reaching Indian motorists.",
+                "when": "",
+                "where": "Indian Oil Corporation"
+              }
+            ],
+            "context": [
+              "India imports most of the crude oil it uses, so movements in global oil prices strongly affect its trade balance, the rupee and government finances.",
+              "Retail petrol and diesel prices in India are set by state-run oil marketing companies, and central and state taxes make up a large share of what motorists pay."
+            ],
+            "terms": [
+              {
+                "term": "GOP",
+                "meaning": "Grand Old Party, a common name for the US Republican Party."
+              },
+              {
+                "term": "midterm elections",
+                "meaning": "US congressional elections held halfway through a president's four-year term, often seen as a verdict on the sitting administration."
+              }
+            ],
+            "frameworks": {
+              "pass_through": {
+                "driver": {
+                  "variable": "Global crude oil price",
+                  "direction": "down",
+                  "size": "below $90 a barrel"
+                },
+                "product": "petrol & diesel",
+                "rungs": [
+                  {
+                    "stage": "Global crude price → India's crude import cost",
+                    "pass": "likely",
+                    "damper": "Crude cargoes are bought on contracts priced over earlier periods, so lower prices reach refiners' import costs only gradually.",
+                    "lag": "weeks"
+                  },
+                  {
+                    "stage": "Refiners' cost → Retailers' margins",
+                    "pass": "partial",
+                    "damper": "State-run oil marketing companies may keep part of the saving to rebuild margins or recover earlier losses rather than cut prices.",
+                    "lag": "weeks"
+                  },
+                  {
+                    "stage": "Retailers' margins → Taxes on fuel",
+                    "pass": "unclear",
+                    "damper": "Central excise duty and state value-added tax make up a large share of pump prices, and governments could change them to capture some of the saving.",
+                    "lag": "months"
+                  },
+                  {
+                    "stage": "Taxes and margins → Pump prices",
+                    "pass": "unclear",
+                    "damper": "Retail prices are revised by state-run companies rather than moving automatically with global markets, so cuts depend on their decisions.",
+                    "lag": "months"
+                  }
+                ],
+                "end_user": {
+                  "group": "Fuel & LPG users",
+                  "effect": "Motorists may see little immediate change at the pump; any cut would depend on prices staying low and on decisions by state-run retailers and governments over the coming weeks or months."
+                }
+              }
+            },
+            "reading": [
+              {
+                "headline": "Everything changed for the oil, AI and bond trades over the past month",
+                "url": "https://www.cnbc.com/2026/11/01/oil-bond-yields-ai-market.html",
+                "source": "cnbc",
+                "date": "2026-11-01T15:58:24.000Z"
+              },
+              {
+                "headline": "Oil flows are up as Iran war turmoil eases. Why do prices keep rising?",
+                "url": "https://www.aljazeera.com/economy/2026/10/30/oil-flows-are-up-as-iran-war-turmoil-eases-why-do-prices-keep-rising",
+                "source": "aljazeera",
+                "date": "2026-10-30T08:36:11.000Z"
+              }
+            ]
+          },
+          "reports": [
+            {
+              "source": "cnbc",
+              "headline": "Crude oil prices fall below $90 a barrel as Vance blames GOP election defeat on Iran war",
+              "url": "https://www.cnbc.com/2026/11/04/oil-price-iran-war-us-election-strait-hormuz.html",
+              "date": "2026-11-04T20:14:52.000Z",
+              "kind": "hard",
+              "summary": "Crude oil prices tumbled Wednesday after Vice President JD Vance blamed the Republicans' steep midterm election losses on the Iran war.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://image.cnbcfm.com/api/v1/image/108518922-1793807059938-gettyimages-2303150469-2h1a7951_nrl1cyvp.jpeg?v=1793807082&w=1920&h=1080"
+            },
+            {
+              "source": "scmp",
+              "headline": "Oil prices slump as Trump election rout eases Middle East conflict risks",
+              "url": "https://www.scmp.com/plus/economy/china-economy/article/3373389/oil-prices-slump-trump-election-rout-eases-middle-east-conflict-risks",
+              "date": "2026-11-05T09:12:27.000Z",
+              "kind": "hard",
+              "summary": "Oil is headed for its biggest weekly decline since the Covid-19 pandemic after a Democratic blue wave in US midterm elections eased concerns about President Donald Trump escalating conflict in the Middle East.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/05/9789960c-7e0d-4bec-9382-061438090d31_b1d2c8ad.jpg?itok=R9l12jxK&v=1793870089"
+            },
+            {
+              "source": "aljazeera",
+              "headline": "Congress defeat: How Trump’s allies are distancing themselves from Iran war",
+              "url": "https://www.aljazeera.com/news/2026/11/5/congress-defeat-how-trumps-allies-are-distancing-themselves-from-iran-war",
+              "date": "2026-11-05T10:24:14.000Z",
+              "kind": "hard",
+              "summary": "US Vice President JD Vance blames the war for the midterm rout as Democrats prepare to use Congress to rein it in.",
+              "summaryV": 3
+            },
+            {
+              "source": "africanews",
+              "headline": "JD Vance distances himself from Trump and Iran war after US midterms debacle",
+              "url": "http://www.africanews.com/2026/11/05/jd-vance-distances-himself-from-trump-and-iran-war-after-us-midterms-debacle/",
+              "date": "2026-11-05T11:03:34.000Z",
+              "kind": "hard",
+              "summary": "United States Vice-President JD Vance distanced himself from Donald Trump's defence of the Iran war after the Republican party's debacle in the midterm elections.",
+              "summaryV": 3
+            },
+            {
+              "source": "cnbc",
+              "headline": "Oil prices set for sharp weekly fall after midterm elections as investors weigh Iran conflict risk",
+              "url": "https://www.cnbc.com/2026/11/06/oil-price-today-brent-wti.html",
+              "date": "2026-11-06T10:00:54.000Z",
+              "kind": "hard",
+              "summary": "Oil prices fell Friday as investors weighed the risk of renewed Iran war escalation after the midterms, alongside prospects for a diplomatic breakthrough.",
+              "summaryV": 3
+            }
+          ],
+          "stats": {
+            "v": 2,
+            "at": "2026-11-05T01:33:29.525Z",
+            "series": [
+              {
+                "title": "Brent crude spot price, daily",
+                "unit": "US$ per barrel",
+                "publisher": "U.S. Energy Information Administration",
+                "points": [
+                  {
+                    "period": "29 Sep 2026",
+                    "value": 113.96,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "30 Sep 2026",
+                    "value": 115.91,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "1 Oct 2026",
+                    "value": 114.82,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "2 Oct 2026",
+                    "value": 135.51,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "5 Oct 2026",
+                    "value": 125.51,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "6 Oct 2026",
+                    "value": 125.44,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "title": "Spot Prices for Crude Oil and Petroleum Products",
+                    "domain": "eia.gov"
+                  }
+                ],
+                "domains": [
+                  "eia.gov"
+                ],
+                "dropped": 0,
+                "why": "",
+                "reused": true,
+                "checkedAt": "2026-10-13T23:11:10.422Z"
+              }
+            ]
+          },
+          "placeTried": true,
+          "image": "https://image.cnbcfm.com/api/v1/image/108518922-1793807059938-gettyimages-2303150469-2h1a7951_nrl1cyvp.jpeg?v=1793807082&w=1920&h=1080",
+          "thread": "t1dbdiwl"
+        },
+        {
+          "id": "s8obuzf",
+          "headline": "Why is Iran exempting India, China, Qatar, Iraq from Hormuz restrictions?",
+          "url": "https://www.aljazeera.com/news/2026/11/6/why-is-iran-exempting-india-china-qatar-iraq-from-hormuz-restrictions",
+          "source": "aljazeera",
+          "date": "2026-11-06T06:06:24.000Z",
+          "relevance": "high",
+          "why": "Iran says ships from India, China, Qatar and Iraq can cross the Strait of Hormuz freely despite its restrictions on shipping. Analysts warn that these arrangements carry political risks for the countries concerned.",
+          "implications": [
+            "If Indian-linked ships keep passing freely, India's deliveries of Gulf crude and gas may be shielded from the direct effect of the restrictions. That protection depends on Tehran's continued consent.",
+            "Analysts say the arrangements carry political risks. India's access could therefore depend on its relations with Iran rather than on any general rule of free passage."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-06T11:12:49.782Z",
+            "tier": "quick",
+            "primary": "disruption_map",
+            "complement": null,
+            "features": [
+              "disruption"
+            ],
+            "exposure": {
+              "level": "high",
+              "reason": "Crude oil and gas shipped through Hormuz feed India's petrol, diesel and cooking gas supplies, which are household essentials. Any disruption to these cargoes could therefore reach many households."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "The timing depends on how long the restrictions last and whether the exemptions hold, neither of which has been reported."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single outlet, Al Jazeera, and on Tehran's own statement, while the terms and durability of the exemptions are unconfirmed."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "security of crude and gas supply",
+                "effect": "If Indian-linked ships keep crossing Hormuz freely, crude and gas deliveries may continue and limit pressure on fuel prices. Any change to the exemption could reverse this.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "shipping access through Hormuz",
+                "effect": "Importers whose cargoes pass through the strait may face different conditions depending on whether their ships fall under the exemption.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Any change to the list of countries whose ships Iran allows to cross Hormuz freely",
+                "why": "It would show whether India's exemption is durable or conditional on political terms.",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "Whether Iran tightens or eases its restrictions on ships from other countries",
+                "why": "It would indicate how widely the disruption could spread to shipping costs and supply.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "The Strait of Hormuz is a narrow waterway at the mouth of the Persian Gulf through which a large share of the world's oil and Qatari liquefied natural gas moves. India imports most of its crude oil, much of it from Gulf producers."
+            ],
+            "terms": [
+              {
+                "term": "Hormuz",
+                "meaning": "The Strait of Hormuz is the narrow sea passage between Iran and Oman that links the Persian Gulf to the open ocean."
+              }
+            ],
+            "frameworks": {
+              "disruption_map": {
+                "node": {
+                  "name": "Strait of Hormuz",
+                  "type": "strait",
+                  "status": "partial",
+                  "as_of": "6 Nov 2026"
+                },
+                "cause": {
+                  "text": "Iran has imposed restrictions on Hormuz shipping and says ships from India, China, Qatar and Iraq are exempt; the reason for the restrictions has not been reported.",
+                  "status": "claimed"
+                },
+                "flows": [
+                  {
+                    "flow": "crude",
+                    "india_link": "India imports most of its crude oil, and a large part of that arrives from Gulf producers via Hormuz. Refiners and fuel users depend on it.",
+                    "basis": "inferred"
+                  },
+                  {
+                    "flow": "LNG",
+                    "india_link": "Qatar, one of the exempted countries, is a long-standing supplier of liquefied natural gas to India. Gas-based power, fertiliser and city gas users could be affected by shipping conditions.",
+                    "basis": "inferred"
+                  }
+                ],
+                "alternatives": [],
+                "duration": "not reported"
+              }
+            }
+          },
+          "place": {
+            "name": "Strait of Hormuz",
+            "country": "Iran",
+            "lat": 26.6,
+            "lon": 56.3,
+            "involves": [
+              "India",
+              "China",
+              "Qatar"
+            ]
+          },
+          "reports": [
+            {
+              "source": "aljazeera",
+              "headline": "Why is Iran exempting India, China, Qatar, Iraq from Hormuz restrictions?",
+              "url": "https://www.aljazeera.com/news/2026/11/6/why-is-iran-exempting-india-china-qatar-iraq-from-hormuz-restrictions",
+              "date": "2026-11-06T06:06:24.000Z",
+              "kind": "hard",
+              "summary": "Tehran says ships from four countries can cross Hormuz freely, but analysts say the deals carry political risks.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/reuters_6aec701d-1793880093.jpg?resize=1920%2C1440"
+            }
+          ],
+          "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/reuters_6aec701d-1793880093.jpg?resize=1920%2C1440",
+          "thread": "t2ogxay"
+        },
+        {
+          "id": "sudwjcm",
+          "headline": "Renewed U.S.-Iran tension could push oil past $100: Rapidan Energy",
+          "url": "https://www.cnbc.com/2026/11/06/us-iran-war-trump-hormuz-oil-midterms.html",
+          "source": "cnbc",
+          "date": "2026-11-06T05:27:24.000Z",
+          "relevance": "high",
+          "why": "Rapidan Energy's Bob McNally predicts that renewed US–Iran tension will push both Brent and West Texas Intermediate futures above $100. Higher crude prices raise India's import bill and could feed into petrol and diesel costs.",
+          "implications": [
+            "Higher crude prices raise the cost of India's imports, which can widen the trade deficit and put pressure on the rupee and on government finances.",
+            "Whether pump prices rise depends on government decisions, because state-run fuel retailers and taxes can absorb part of the increase."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-06T11:11:54.183Z",
+            "tier": "quick",
+            "primary": "pass_through",
+            "complement": null,
+            "features": [
+              "price_move",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "high",
+              "reason": "Petrol and diesel are household essentials and crude oil is India's largest import, so a sharp rise in global prices could affect fuel costs, transport and the trade balance."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Crude cargoes are bought in advance and retail prices are adjusted slowly, so any effect on Indian pump prices would appear over several weeks rather than days."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This is a single analyst's forecast reported by CNBC alone, and it is not confirmation that prices have risen or will rise."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "up",
+                "what": "petrol and diesel costs",
+                "effect": "If crude prices rise as forecast, refiners' costs increase, which could eventually push up pump prices unless taxes or retailers' margins absorb it.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Government finances",
+                "direction": "down",
+                "what": "import bill and tax room",
+                "effect": "A higher oil import bill and any cut in fuel taxes to protect consumers could strain the government's finances.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Brent or West Texas Intermediate futures trading above $100 a barrel",
+                "why": "It would show whether the forecast of a jump above $100 is being borne out in the market.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "India imports most of the crude oil it uses, so international price movements reach Indian refiners quickly, although retail petrol and diesel prices are shaped by taxes and by the pricing decisions of state-run companies.",
+              "Forecasts by individual analysts are views about possible outcomes, and oil prices can move differently depending on supply disruptions and demand."
+            ],
+            "terms": [
+              {
+                "term": "Brent",
+                "meaning": "Brent is the international benchmark price for crude oil, and many Indian refiners' import costs are linked to it."
+              }
+            ],
+            "frameworks": {
+              "pass_through": {
+                "driver": {
+                  "variable": "Brent and West Texas Intermediate crude futures",
+                  "direction": "up",
+                  "size": "above $100, as forecast by Rapidan Energy"
+                },
+                "product": "petrol & diesel",
+                "rungs": [
+                  {
+                    "stage": "Global crude price → Indian refiners' cost",
+                    "pass": "likely",
+                    "damper": "Cargoes bought earlier and crude already in inventory delay the full effect, but India's heavy reliance on imports means higher prices eventually raise refiners' costs.",
+                    "lag": "weeks"
+                  },
+                  {
+                    "stage": "Refiners' cost → retail petrol and diesel prices",
+                    "pass": "partial",
+                    "damper": "Retail prices are set by fuel retailers under government influence, and taxes and retailer margins can absorb part of an increase.",
+                    "lag": "weeks"
+                  },
+                  {
+                    "stage": "Pump prices → transport and household costs",
+                    "pass": "unclear",
+                    "damper": "Whether higher diesel prices raise freight and food costs depends on how much of the rise reaches pumps and on competition among transporters.",
+                    "lag": "months"
+                  }
+                ],
+                "end_user": {
+                  "group": "Fuel & LPG users",
+                  "effect": "Motorists and households may notice higher pump prices only if the forecast materialises and the government and retailers let it pass through, probably after several weeks."
+                }
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "cnbc",
+              "headline": "Renewed U.S.-Iran tension could push oil past $100: Rapidan Energy",
+              "url": "https://www.cnbc.com/2026/11/06/us-iran-war-trump-hormuz-oil-midterms.html",
+              "date": "2026-11-06T05:27:24.000Z",
+              "kind": "hard",
+              "summary": "Bob McNally predicts that both Brent and West Texas Intermediate futures will jump above $100.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://image.cnbcfm.com/api/v1/image/108371245-1790878008470-gettyimages-2286461018-AFP_C2T99ZT.jpeg?v=1790878033&w=1920&h=1080"
+            }
+          ],
+          "placeTried": true,
+          "image": "https://image.cnbcfm.com/api/v1/image/108371245-1790878008470-gettyimages-2286461018-AFP_C2T99ZT.jpeg?v=1790878033&w=1920&h=1080",
+          "thread": "t2ogxay"
+        },
         {
           "id": "s1v7no8h",
           "headline": "Russia confirms new Ukraine peace talks as Melania Trump prepares to host ceasefire meeting",
@@ -800,263 +1318,6 @@
             }
           ],
           "thread": "t1ydn8ji"
-        },
-        {
-          "id": "siwmo6b",
-          "headline": "Crude oil prices fall below $90 a barrel as Vance blames GOP election defeat on Iran war",
-          "url": "https://www.cnbc.com/2026/11/04/oil-price-iran-war-us-election-strait-hormuz.html",
-          "source": "cnbc",
-          "date": "2026-11-04T20:14:52.000Z",
-          "relevance": "medium",
-          "why": "Crude oil fell below $90 a barrel after the Republicans' midterm defeat, which Vice President JD Vance blamed on the Iran war, eased fears of escalation. Cheaper crude lowers the cost of India's largest import.",
-          "implications": [
-            "Lower crude prices may reduce India's oil import bill, which could ease pressure on the rupee and on the gap between what India pays for imports and earns from exports.",
-            "State-run fuel retailers may not cut pump prices quickly, because they often use lower costs to recover earlier losses before passing savings on to motorists.",
-            "The fall rests on expectations that the war will ease rather than on restored supply, so prices could rise again if fighting escalates.",
-            "Cheaper fuel could ease inflation over time, which may give the Reserve Bank of India more room in its interest-rate decisions."
-          ],
-          "analysis": {
-            "v": 3,
-            "at": "2026-11-05T20:16:54.107Z",
-            "tier": "standard",
-            "primary": "pass_through",
-            "complement": null,
-            "features": [
-              "price_move"
-            ],
-            "exposure": {
-              "level": "high",
-              "reason": "Crude oil is India's largest import, so a sharp fall in global prices directly affects the import bill, refiners' costs and potentially the prices households pay for petrol and diesel."
-            },
-            "horizon": {
-              "value": "weeks",
-              "reason": "Refiners buy crude on contracts priced over several weeks, and any retail price change depends on state-run companies' decisions, so effects in India would take weeks."
-            },
-            "confidence": {
-              "level": "medium",
-              "reason": "CNBC and the South China Morning Post report the price fall, and three outlets report Vance's on-record remarks, but whether the decline will last is unconfirmed."
-            },
-            "outlets": 4,
-            "affected": [
-              {
-                "group": "Fuel & LPG users",
-                "direction": "unclear",
-                "what": "petrol and diesel prices",
-                "effect": "Lower crude costs could eventually allow cheaper pump prices, but state-run retailers and tax decisions may delay or absorb the saving.",
-                "basis": "inferred"
-              },
-              {
-                "group": "Government finances",
-                "direction": "up",
-                "what": "oil import bill",
-                "effect": "A lower crude price could reduce India's import bill and fuel-related subsidy pressure, easing strain on public finances if prices stay low.",
-                "basis": "inferred"
-              },
-              {
-                "group": "Importers & traders",
-                "direction": "down",
-                "what": "fuel and freight costs",
-                "effect": "Businesses that depend on diesel and transport could see lower input costs if cheaper crude passes through to fuel and freight rates.",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "Whether oil ends the week with its biggest weekly decline since the Covid-19 pandemic",
-                "why": "A sustained weekly fall would suggest markets expect a lasting easing of the war rather than a one-day reaction.",
-                "when": "this week",
-                "where": ""
-              },
-              {
-                "what": "Democratic moves in Congress to rein in the Iran war",
-                "why": "Concrete limits on the war would support the market view that escalation risk is falling.",
-                "when": "",
-                "where": "US Congress"
-              },
-              {
-                "what": "Any revision of retail petrol and diesel prices by India's state-run fuel retailers",
-                "why": "A revision would show whether lower global crude prices are reaching Indian motorists.",
-                "when": "",
-                "where": "Indian Oil Corporation"
-              }
-            ],
-            "context": [
-              "India imports most of the crude oil it uses, so movements in global oil prices strongly affect its trade balance, the rupee and government finances.",
-              "Retail petrol and diesel prices in India are set by state-run oil marketing companies, and central and state taxes make up a large share of what motorists pay."
-            ],
-            "terms": [
-              {
-                "term": "GOP",
-                "meaning": "Grand Old Party, a common name for the US Republican Party."
-              },
-              {
-                "term": "midterm elections",
-                "meaning": "US congressional elections held halfway through a president's four-year term, often seen as a verdict on the sitting administration."
-              }
-            ],
-            "frameworks": {
-              "pass_through": {
-                "driver": {
-                  "variable": "Global crude oil price",
-                  "direction": "down",
-                  "size": "below $90 a barrel"
-                },
-                "product": "petrol & diesel",
-                "rungs": [
-                  {
-                    "stage": "Global crude price → India's crude import cost",
-                    "pass": "likely",
-                    "damper": "Crude cargoes are bought on contracts priced over earlier periods, so lower prices reach refiners' import costs only gradually.",
-                    "lag": "weeks"
-                  },
-                  {
-                    "stage": "Refiners' cost → Retailers' margins",
-                    "pass": "partial",
-                    "damper": "State-run oil marketing companies may keep part of the saving to rebuild margins or recover earlier losses rather than cut prices.",
-                    "lag": "weeks"
-                  },
-                  {
-                    "stage": "Retailers' margins → Taxes on fuel",
-                    "pass": "unclear",
-                    "damper": "Central excise duty and state value-added tax make up a large share of pump prices, and governments could change them to capture some of the saving.",
-                    "lag": "months"
-                  },
-                  {
-                    "stage": "Taxes and margins → Pump prices",
-                    "pass": "unclear",
-                    "damper": "Retail prices are revised by state-run companies rather than moving automatically with global markets, so cuts depend on their decisions.",
-                    "lag": "months"
-                  }
-                ],
-                "end_user": {
-                  "group": "Fuel & LPG users",
-                  "effect": "Motorists may see little immediate change at the pump; any cut would depend on prices staying low and on decisions by state-run retailers and governments over the coming weeks or months."
-                }
-              }
-            },
-            "reading": [
-              {
-                "headline": "Everything changed for the oil, AI and bond trades over the past month",
-                "url": "https://www.cnbc.com/2026/11/01/oil-bond-yields-ai-market.html",
-                "source": "cnbc",
-                "date": "2026-11-01T15:58:24.000Z"
-              },
-              {
-                "headline": "Oil flows are up as Iran war turmoil eases. Why do prices keep rising?",
-                "url": "https://www.aljazeera.com/economy/2026/10/30/oil-flows-are-up-as-iran-war-turmoil-eases-why-do-prices-keep-rising",
-                "source": "aljazeera",
-                "date": "2026-10-30T08:36:11.000Z"
-              }
-            ]
-          },
-          "reports": [
-            {
-              "source": "cnbc",
-              "headline": "Crude oil prices fall below $90 a barrel as Vance blames GOP election defeat on Iran war",
-              "url": "https://www.cnbc.com/2026/11/04/oil-price-iran-war-us-election-strait-hormuz.html",
-              "date": "2026-11-04T20:14:52.000Z",
-              "kind": "hard",
-              "summary": "Crude oil prices tumbled Wednesday after Vice President JD Vance blamed the Republicans' steep midterm election losses on the Iran war.",
-              "summaryV": 3,
-              "ogTried": true,
-              "descTried": true,
-              "image": "https://image.cnbcfm.com/api/v1/image/108518922-1793807059938-gettyimages-2303150469-2h1a7951_nrl1cyvp.jpeg?v=1793807082&w=1920&h=1080"
-            },
-            {
-              "source": "scmp",
-              "headline": "Oil prices slump as Trump election rout eases Middle East conflict risks",
-              "url": "https://www.scmp.com/plus/economy/china-economy/article/3373389/oil-prices-slump-trump-election-rout-eases-middle-east-conflict-risks",
-              "date": "2026-11-05T09:12:27.000Z",
-              "kind": "hard",
-              "summary": "Oil is headed for its biggest weekly decline since the Covid-19 pandemic after a Democratic blue wave in US midterm elections eased concerns about President Donald Trump escalating conflict in the Middle East.",
-              "summaryV": 3,
-              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/05/9789960c-7e0d-4bec-9382-061438090d31_b1d2c8ad.jpg?itok=R9l12jxK&v=1793870089"
-            },
-            {
-              "source": "aljazeera",
-              "headline": "Congress defeat: How Trump’s allies are distancing themselves from Iran war",
-              "url": "https://www.aljazeera.com/news/2026/11/5/congress-defeat-how-trumps-allies-are-distancing-themselves-from-iran-war",
-              "date": "2026-11-05T10:24:14.000Z",
-              "kind": "hard",
-              "summary": "US Vice President JD Vance blames the war for the midterm rout as Democrats prepare to use Congress to rein it in.",
-              "summaryV": 3
-            },
-            {
-              "source": "africanews",
-              "headline": "JD Vance distances himself from Trump and Iran war after US midterms debacle",
-              "url": "http://www.africanews.com/2026/11/05/jd-vance-distances-himself-from-trump-and-iran-war-after-us-midterms-debacle/",
-              "date": "2026-11-05T11:03:34.000Z",
-              "kind": "hard",
-              "summary": "United States Vice-President JD Vance distanced himself from Donald Trump's defence of the Iran war after the Republican party's debacle in the midterm elections.",
-              "summaryV": 3
-            }
-          ],
-          "stats": {
-            "v": 2,
-            "at": "2026-11-05T01:33:29.525Z",
-            "series": [
-              {
-                "title": "Brent crude spot price, daily",
-                "unit": "US$ per barrel",
-                "publisher": "U.S. Energy Information Administration",
-                "points": [
-                  {
-                    "period": "29 Sep 2026",
-                    "value": 113.96,
-                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
-                    "source": "Spot Prices for Crude Oil and Petroleum Products"
-                  },
-                  {
-                    "period": "30 Sep 2026",
-                    "value": 115.91,
-                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
-                    "source": "Spot Prices for Crude Oil and Petroleum Products"
-                  },
-                  {
-                    "period": "1 Oct 2026",
-                    "value": 114.82,
-                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
-                    "source": "Spot Prices for Crude Oil and Petroleum Products"
-                  },
-                  {
-                    "period": "2 Oct 2026",
-                    "value": 135.51,
-                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
-                    "source": "Spot Prices for Crude Oil and Petroleum Products"
-                  },
-                  {
-                    "period": "5 Oct 2026",
-                    "value": 125.51,
-                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
-                    "source": "Spot Prices for Crude Oil and Petroleum Products"
-                  },
-                  {
-                    "period": "6 Oct 2026",
-                    "value": 125.44,
-                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
-                    "source": "Spot Prices for Crude Oil and Petroleum Products"
-                  }
-                ],
-                "sources": [
-                  {
-                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
-                    "title": "Spot Prices for Crude Oil and Petroleum Products",
-                    "domain": "eia.gov"
-                  }
-                ],
-                "domains": [
-                  "eia.gov"
-                ],
-                "dropped": 0,
-                "why": "",
-                "reused": true,
-                "checkedAt": "2026-10-13T23:11:10.422Z"
-              }
-            ]
-          },
-          "placeTried": true,
-          "image": "https://image.cnbcfm.com/api/v1/image/108518922-1793807059938-gettyimages-2303150469-2h1a7951_nrl1cyvp.jpeg?v=1793807082&w=1920&h=1080",
-          "thread": "t1dbdiwl"
         },
         {
           "id": "s1fh2uwn",
@@ -23972,6 +24233,138 @@
       "name": "Logistics & Shipping",
       "items": [
         {
+          "id": "s1apm1t4",
+          "headline": "UK jailing of Indian sailor over Russia sanctions sets off ‘perfect storm’",
+          "url": "https://www.aljazeera.com/features/2026/11/6/uk-jailing-of-indian-sailor-over-russia-sanctions-sets-off-perfect-storm",
+          "source": "aljazeera",
+          "date": "2026-11-06T08:32:57.000Z",
+          "relevance": "medium",
+          "why": "Britain has jailed Indian captain Ajay Pant after British soldiers captured his allegedly 'shadow' tanker in international waters. The case shows the legal risk facing Indian seafarers on vessels linked to Russian sanctions evasion.",
+          "implications": [
+            "Indian officers and crew are widely employed on tankers worldwide, so enforcement against one captain may make seafarers, their families and manning agencies more wary of ships with opaque ownership.",
+            "If more tankers carrying Russian cargoes are seized, freight and insurance costs for that trade could rise, which may complicate supply for Indian buyers of Russian oil."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-06T11:14:12.168Z",
+            "tier": "quick",
+            "primary": "escalation",
+            "complement": null,
+            "features": [
+              "armed_conflict",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The channel is the legal safety of Indian seafarers and the shipping of Russian cargoes. It touches one industry and the UK-India relationship, and no effect on household essentials is reported."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Any change in crew hiring, shipping costs or diplomatic handling would follow the legal process and later decisions by shipowners and agencies, which take time."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single Al Jazeera report with no official source quoted, and the capture date, charges and sentence are not given in the material available."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Gulf & overseas workers and families",
+                "direction": "unclear",
+                "what": "seafarers' legal risk",
+                "effect": "Indian crew and officers on tankers accused of sanctions evasion may face arrest and prosecution abroad, which could affect their livelihoods and their families' income.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "Russian cargo shipping risk",
+                "effect": "Wider seizures of tankers could raise the cost and risk of moving Russian oil, which may affect Indian traders and refiners who handle such cargoes.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "A formal response from the Indian government on the jailing of Captain Ajay Pant",
+                "why": "It would show how India handles the welfare of its seafarers in sanctions cases with the UK.",
+                "when": "",
+                "where": "Ministry of External Affairs"
+              },
+              {
+                "what": "Further British seizures of tankers alleged to belong to Russia's shadow fleet",
+                "why": "More seizures would show whether sanctions enforcement at sea is becoming a pattern that affects Indian crews.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "Western governments restrict Russia's oil trade, and a so-called shadow fleet of tankers with opaque ownership has carried cargoes outside those rules. Enforcement increasingly targets ships and the people who run them.",
+              "India imports most of its crude oil and has bought Russian crude since the war began, so action against that trade can reach Indian buyers, shippers and seafarers."
+            ],
+            "terms": [
+              {
+                "term": "shadow tanker",
+                "meaning": "A tanker that moves sanctioned oil through opaque ownership, flags or practices so that the cargo can avoid restrictions."
+              }
+            ],
+            "frameworks": {
+              "escalation": {
+                "move": "none",
+                "rung": 6,
+                "current_rung": 6,
+                "previous_rung": null,
+                "development": "Britain's capture of an allegedly shadow tanker and the jailing of its Indian captain add a sanctions-enforcement measure against Russia's oil trade, not a new military action.",
+                "evidence": "The war stays at rung 6 because the reports describe no new strike after 18 October 2026, when the two sides were hitting each other's power and oil infrastructure. Sanctions enforcement is a lower-rung measure.",
+                "next_signals": [
+                  {
+                    "rung": 5,
+                    "signal": "Russia and Ukraine stop striking each other's power and oil facilities, while other sustained attacks continue."
+                  },
+                  {
+                    "rung": 7,
+                    "signal": "Either side declares general mobilisation, or Russian forces and a NATO country's forces clash directly."
+                  }
+                ],
+                "india_channels": [
+                  "shipping",
+                  "oil",
+                  "diaspora safety"
+                ],
+                "conflict": "wzti51f",
+                "applied": "none",
+                "from": 6
+              }
+            }
+          },
+          "conflict": "wzti51f",
+          "place": {
+            "name": "London",
+            "country": "United Kingdom",
+            "lat": 51.5,
+            "lon": -0.1,
+            "involves": [
+              "India",
+              "Russia"
+            ]
+          },
+          "reports": [
+            {
+              "source": "aljazeera",
+              "headline": "UK jailing of Indian sailor over Russia sanctions sets off ‘perfect storm’",
+              "url": "https://www.aljazeera.com/features/2026/11/6/uk-jailing-of-indian-sailor-over-russia-sanctions-sets-off-perfect-storm",
+              "date": "2026-11-06T08:32:57.000Z",
+              "kind": "hard",
+              "summary": "Captain Ajay Pant was in international waters when his allegedly 'shadow' tanker was captured by British soldiers.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/PHOTO-2026-11-04-00-19-44-2-1793949474.jpg?resize=1200%2C675"
+            }
+          ],
+          "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/PHOTO-2026-11-04-00-19-44-2-1793949474.jpg?resize=1200%2C675",
+          "thread": "t1mw6u0e"
+        },
+        {
           "id": "s18vsm1r",
           "headline": "US sanctions Indian and Turkish firms accused of helping Iran",
           "url": "https://www.aljazeera.com/news/2026/11/5/us-sanctions-indian-and-turkish-firms-accused-of-helping-iran",
@@ -30189,6 +30582,77 @@
       "name": "Economy & Trade",
       "items": [
         {
+          "id": "s11j7z0g",
+          "headline": "What the Democrats' midterms win means for the US economy and Trump",
+          "url": "https://www.dw.com/en/what-the-democrats-midterms-win-means-for-the-us-economy-and-trump/a-79853716",
+          "source": "dw",
+          "date": "2026-11-04T15:09:00.000Z",
+          "relevance": "medium",
+          "why": "",
+          "implications": [],
+          "place": {
+            "name": "Washington",
+            "country": "United States",
+            "lat": 38.9,
+            "lon": -77.04
+          },
+          "reports": [
+            {
+              "source": "dw",
+              "headline": "What the Democrats' midterms win means for the US economy and Trump",
+              "url": "https://www.dw.com/en/what-the-democrats-midterms-win-means-for-the-us-economy-and-trump/a-79853716",
+              "date": "2026-11-04T15:09:00.000Z",
+              "kind": "feature",
+              "summary": "From high oil prices and data centers to tariffs and mounting debt, economic concerns played a key role in the crushing defeat of President Donald Trump's Republicans. So can the Democrats now make a difference?",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://static.dw.com/image/79626408_6.jpg"
+            },
+            {
+              "source": "guardian",
+              "headline": "After the US midterms, what will a lame duck Trump mean for the global economy?",
+              "url": "https://www.theguardian.com/us-news/2026/nov/04/explainer-midterms-trump-us-global-economy-markets",
+              "date": "2026-11-04T15:56:30.000Z",
+              "kind": "feature",
+              "summary": "Republicans’ crushing setback will play out in stock markets, inflation, interest rates and economic growth",
+              "summaryV": 3,
+              "lede": "Donald Trump’s loss of control of the House of Representatives and the Senate has put the world economy on notice for an unpredictable final two years of his presidential term.",
+              "image": "https://i.guim.co.uk/img/media/2a93f1501ef9ad49bab6fef5ee59dc4a5af2e1b6/785_0_5678_4542/master/5678.jpg?width=700&quality=85&auto=format&fit=max&s=27605fb4acada390537fa3138730f2b0"
+            },
+            {
+              "source": "aljazeera",
+              "headline": "Democrats won Congress. But can they deliver on their promises?",
+              "url": "https://www.aljazeera.com/news/2026/11/5/democrats-won-congress-but-can-they-deliver-on-their-promises",
+              "date": "2026-11-05T00:25:43.000Z",
+              "kind": "feature",
+              "summary": "Despite their midterm election victories, Democrats face major obstacles to reining in Trump on Iran, tariffs and more.",
+              "summaryV": 3
+            },
+            {
+              "source": "cnbc",
+              "headline": "Here's what the Democratic election rout could mean for the U.S. economy",
+              "url": "https://www.cnbc.com/2026/11/05/emocratic-midterm-economy.html",
+              "date": "2026-11-05T14:33:32.000Z",
+              "kind": "feature",
+              "summary": "The biggest forces shaping the economy aren't going to change just because the party in power did.",
+              "summaryV": 3
+            },
+            {
+              "source": "cnbc",
+              "headline": "Democrat sweep gives markets a reason to rethink path of interest rates",
+              "url": "https://www.cnbc.com/2026/11/06/oil-prices-interest-rates-midterms.html",
+              "date": "2026-11-06T10:22:22.000Z",
+              "kind": "feature",
+              "summary": "Rate hikes could be curbed by an Iran war resolution, slower U.S. growth and fresh fiscal policy — but none are set in stone.",
+              "summaryV": 3
+            }
+          ],
+          "finChecked": true,
+          "image": "https://static.dw.com/image/79626408_6.jpg",
+          "thread": "twkasa4"
+        },
+        {
           "id": "su2rx5q",
           "headline": "The October jobs report is out Friday. Here's everything to expect",
           "url": "https://www.cnbc.com/2026/11/05/october-jobs-report-preview.html",
@@ -30292,6 +30756,15 @@
               "ogTried": true,
               "descTried": true,
               "image": "https://image.cnbcfm.com/api/v1/image/108476508-1793219405492-gettyimages-2301921916-US_JOBLESS_CLAIMS.jpeg?v=1793219480&w=1920&h=1080"
+            },
+            {
+              "source": "npr",
+              "headline": "Labor Department to release latest jobs report",
+              "url": "https://www.npr.org/2026/11/06/nx-s1-6030632/labor-department-to-release-latest-jobs-report",
+              "date": "2026-11-06T09:46:31.000Z",
+              "kind": "hard",
+              "summary": "Stocks plunged on Thursday as a sell-off that began in the tech sector quickly spread to the rest of the market. There's been less drama in the job market. We'll get an update Friday morning.",
+              "summaryV": 3
             }
           ],
           "finChecked": true,
@@ -30344,66 +30817,159 @@
           "thread": "tvpzs9b"
         },
         {
-          "id": "s11j7z0g",
-          "headline": "What the Democrats' midterms win means for the US economy and Trump",
-          "url": "https://www.dw.com/en/what-the-democrats-midterms-win-means-for-the-us-economy-and-trump/a-79853716",
-          "source": "dw",
-          "date": "2026-11-04T15:09:00.000Z",
+          "id": "sw19wtq",
+          "headline": "Why a midterm mauling for Trump will not bring Asia trade relief",
+          "url": "https://www.scmp.com/week-asia/economics/article/3373082/why-midterm-mauling-trump-will-not-bring-asia-trade-relief",
+          "source": "scmp",
+          "date": "2026-11-03T11:30:08.000Z",
           "relevance": "medium",
+          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/03/ea785a0a-1c30-497d-975e-63871d919638_5f4ddec9.jpg?itok=rXslXJLV&v=1793682812",
           "why": "",
           "implications": [],
           "place": {
             "name": "Washington",
             "country": "United States",
             "lat": 38.9,
-            "lon": -77.04
+            "lon": -77,
+            "involves": [
+              "China"
+            ]
           },
           "reports": [
             {
-              "source": "dw",
-              "headline": "What the Democrats' midterms win means for the US economy and Trump",
-              "url": "https://www.dw.com/en/what-the-democrats-midterms-win-means-for-the-us-economy-and-trump/a-79853716",
-              "date": "2026-11-04T15:09:00.000Z",
+              "source": "scmp",
+              "headline": "Why a midterm mauling for Trump will not bring Asia trade relief",
+              "url": "https://www.scmp.com/week-asia/economics/article/3373082/why-midterm-mauling-trump-will-not-bring-asia-trade-relief",
+              "date": "2026-11-03T11:30:08.000Z",
               "kind": "feature",
-              "summary": "From high oil prices and data centers to tariffs and mounting debt, economic concerns played a key role in the crushing defeat of President Donald Trump's Republicans. So can the Democrats now make a difference?",
+              "summary": "Since returning to the White House in January last year, US President Donald Trump has upended the global trading order with his scattergun approach to tariffs and launched a war on Iran that sent oil prices soaring.",
               "summaryV": 3,
-              "ogTried": true,
-              "descTried": true,
-              "image": "https://static.dw.com/image/79626408_6.jpg"
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/03/ea785a0a-1c30-497d-975e-63871d919638_5f4ddec9.jpg?itok=rXslXJLV&v=1793682812"
             },
             {
-              "source": "guardian",
-              "headline": "After the US midterms, what will a lame duck Trump mean for the global economy?",
-              "url": "https://www.theguardian.com/us-news/2026/nov/04/explainer-midterms-trump-us-global-economy-markets",
-              "date": "2026-11-04T15:56:30.000Z",
+              "source": "scmp",
+              "headline": "Why Malaysia may still face trade uncertainty after US midterms",
+              "url": "https://www.scmp.com/week-asia/economics/article/3373541/why-malaysia-may-still-face-trade-uncertainty-after-us-midterms",
+              "date": "2026-11-06T09:00:26.000Z",
               "kind": "feature",
-              "summary": "Republicans’ crushing setback will play out in stock markets, inflation, interest rates and economic growth",
+              "summary": "Malaysia’s hope for a shift in US trade policy is unlikely to be realised for some time, experts warn, as the new Democratic-led Congress will face strong opposition from US President Donald Trump in its attempt to reverse some of his tariff measures.",
               "summaryV": 3,
-              "lede": "Donald Trump’s loss of control of the House of Representatives and the Senate has put the world economy on notice for an unpredictable final two years of his presidential term.",
-              "image": "https://i.guim.co.uk/img/media/2a93f1501ef9ad49bab6fef5ee59dc4a5af2e1b6/785_0_5678_4542/master/5678.jpg?width=700&quality=85&auto=format&fit=max&s=27605fb4acada390537fa3138730f2b0"
-            },
-            {
-              "source": "aljazeera",
-              "headline": "Democrats won Congress. But can they deliver on their promises?",
-              "url": "https://www.aljazeera.com/news/2026/11/5/democrats-won-congress-but-can-they-deliver-on-their-promises",
-              "date": "2026-11-05T00:25:43.000Z",
-              "kind": "feature",
-              "summary": "Despite their midterm election victories, Democrats face major obstacles to reining in Trump on Iran, tariffs and more.",
-              "summaryV": 3
-            },
-            {
-              "source": "cnbc",
-              "headline": "Here's what the Democratic election rout could mean for the U.S. economy",
-              "url": "https://www.cnbc.com/2026/11/05/emocratic-midterm-economy.html",
-              "date": "2026-11-05T14:33:32.000Z",
-              "kind": "feature",
-              "summary": "The biggest forces shaping the economy aren't going to change just because the party in power did.",
-              "summaryV": 3
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/06/0d613a6f-1909-482a-a24c-546f15c4c1cf_e8435330.jpg?itok=JLlihn8_&v=1793954135"
             }
           ],
           "finChecked": true,
-          "image": "https://static.dw.com/image/79626408_6.jpg",
-          "thread": "twkasa4"
+          "thread": "t1j4fadp"
+        },
+        {
+          "id": "s1xtnrrn",
+          "headline": "EU-China truce under strain as both sides brace for potential trade war",
+          "url": "https://www.scmp.com/news/china/article/3373493/eu-china-trade-truce-under-strain-both-sides-brace-potential-trade-war",
+          "source": "scmp",
+          "date": "2026-11-06T04:37:57.000Z",
+          "relevance": "medium",
+          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/06/39872c90-578a-40bc-bc0d-fe48eadfef69_8cf6c2e1.jpg?itok=prsA7lMB&v=1793939807",
+          "why": "The European Union and China struck a deal weeks ago to avert a trade war, but differences surfaced in Brussels this week and both sides are bracing for one. A breakdown could shift global trade flows that matter to Indian exporters.",
+          "implications": [
+            "If tariffs or counter-measures return, Chinese manufacturers may look for other markets for goods that would have gone to Europe, which could bring more competition for Indian producers at home and abroad.",
+            "A prolonged dispute could also unsettle business confidence and supply chains, on which Indian firms that import Chinese components or sell to European customers depend."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-06T11:11:54.179Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "The reports describe a dispute between the European Union and China only, so any effect on India would be indirect, through trade diversion or supply chains, rather than through a household essential."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Trade measures take time to be announced and applied, and shifts in trade flows usually show up in orders and prices only over several months."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single outlet, South China Morning Post, and the terms of the deal and the threats exchanged in Brussels have not been detailed."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "MSME exporters",
+                "direction": "unclear",
+                "what": "export competition",
+                "effect": "Chinese goods diverted from Europe could compete with Indian small exporters in third markets, though this depends on whether new trade barriers are actually imposed.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "input supply and costs",
+                "effect": "Indian traders who buy Chinese components could see supply or price changes if the dispute disrupts wider trade flows.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Any announcement of new European Union tariffs or Chinese counter-measures following this week's events in Brussels",
+                "why": "It would show whether the truce has collapsed and trade barriers are returning.",
+                "when": "",
+                "where": "European Commission"
+              }
+            ],
+            "context": [
+              "The European Union and China are among the world's largest trading partners, and India trades heavily with both, importing many manufactured inputs from China and selling goods and services to Europe.",
+              "Trade truces of this kind are usually temporary arrangements that can unravel when either side believes the other has not kept its commitments."
+            ],
+            "terms": [],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "The truce comes under strain",
+                    "detail": "The European Union and China agreed weeks ago to avert a trade war, but this week's events in Brussels saw threats exchanged and disagreement over what is wrong and who is to blame.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Both sides prepare for a trade war",
+                    "detail": "Each side is bracing for a possible trade war, which suggests tariffs or other counter-measures could return if the truce fails.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Trade flows may shift towards India's markets",
+                    "detail": "Goods that would have gone between China and Europe could be redirected to other markets, which may raise competition for Indian exporters and alter input supply for Indian firms.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The effect would not reach India if the European Union and China settle their differences and keep the truce, leaving trade between them largely unchanged."
+              }
+            }
+          },
+          "place": {
+            "name": "Brussels",
+            "country": "Belgium",
+            "lat": 50.85,
+            "lon": 4.35,
+            "involves": [
+              "China"
+            ]
+          },
+          "reports": [
+            {
+              "source": "scmp",
+              "headline": "EU-China truce under strain as both sides brace for potential trade war",
+              "url": "https://www.scmp.com/news/china/article/3373493/eu-china-trade-truce-under-strain-both-sides-brace-potential-trade-war",
+              "date": "2026-11-06T04:37:57.000Z",
+              "kind": "hard",
+              "summary": "Weeks after the European Union and China struck a deal aimed at averting a looming trade war, the two sides remain at loggerheads over what is wrong with their relationship, how to fix it and who is to blame. At events in Brussels this week, threats were exchanged and differences rose to the surface.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/06/39872c90-578a-40bc-bc0d-fe48eadfef69_8cf6c2e1.jpg?itok=prsA7lMB&v=1793939807"
+            }
+          ],
+          "finChecked": true,
+          "thread": "t1vem20c"
         },
         {
           "id": "s1mf9w1z",
@@ -31230,40 +31796,6 @@
           ],
           "finChecked": true,
           "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/AP26103230491948-1793662751.jpg?resize=1920%2C1440",
-          "thread": "t1j4fadp"
-        },
-        {
-          "id": "sw19wtq",
-          "headline": "Why a midterm mauling for Trump will not bring Asia trade relief",
-          "url": "https://www.scmp.com/week-asia/economics/article/3373082/why-midterm-mauling-trump-will-not-bring-asia-trade-relief",
-          "source": "scmp",
-          "date": "2026-11-03T11:30:08.000Z",
-          "relevance": "medium",
-          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/03/ea785a0a-1c30-497d-975e-63871d919638_5f4ddec9.jpg?itok=rXslXJLV&v=1793682812",
-          "why": "",
-          "implications": [],
-          "place": {
-            "name": "Washington",
-            "country": "United States",
-            "lat": 38.9,
-            "lon": -77,
-            "involves": [
-              "China"
-            ]
-          },
-          "reports": [
-            {
-              "source": "scmp",
-              "headline": "Why a midterm mauling for Trump will not bring Asia trade relief",
-              "url": "https://www.scmp.com/week-asia/economics/article/3373082/why-midterm-mauling-trump-will-not-bring-asia-trade-relief",
-              "date": "2026-11-03T11:30:08.000Z",
-              "kind": "feature",
-              "summary": "Since returning to the White House in January last year, US President Donald Trump has upended the global trading order with his scattergun approach to tariffs and launched a war on Iran that sent oil prices soaring.",
-              "summaryV": 3,
-              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/03/ea785a0a-1c30-497d-975e-63871d919638_5f4ddec9.jpg?itok=rXslXJLV&v=1793682812"
-            }
-          ],
-          "finChecked": true,
           "thread": "t1j4fadp"
         },
         {
@@ -40417,6 +40949,307 @@
       "name": "Finance",
       "items": [
         {
+          "id": "sip8dav",
+          "headline": "Stable Labor Market to Keep Fed on Track to Raise Rates Gradually",
+          "url": "https://www.nytimes.com/2026/11/06/business/economy/stable-labor-market-to-keep-fed-on-track-to-raise-rates-gradually.html",
+          "source": "nyt",
+          "date": "2026-11-06T10:45:28.000Z",
+          "relevance": "medium",
+          "image": "https://static01.nyt.com/images/2026/11/06/multimedia/06biz-jobs-report-fed-pbtv/06biz-jobs-report-fed-pbtv-mediumSquareAt3X.jpg",
+          "why": "The US Federal Reserve left interest rates unchanged at its meeting last week but is widely expected to raise them in December to tame inflation. This could affect India through capital flows and the rupee.",
+          "implications": [
+            "Higher US interest rates can make dollar assets more attractive, which may draw money away from emerging markets such as India and put pressure on the rupee.",
+            "A weaker rupee would raise the rupee cost of imports such as crude oil, and could also raise the cost of overseas education and travel."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-06T11:15:18.984Z",
+            "tier": "quick",
+            "primary": "decoder",
+            "complement": null,
+            "features": [
+              "scheduled",
+              "price_move",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The effect would reach India mainly through foreign investment flows and the rupee's exchange rate. It is indirect and depends on how markets react, so it is not a direct household-essential effect."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "The next Federal Reserve move is expected in December, and any market or currency reaction in India would be likely to follow around that decision."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single outlet, The New York Times, which describes the December move as widely expected rather than quoting an on-record Federal Reserve official."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Equity & mutual fund investors",
+                "direction": "unclear",
+                "what": "foreign investment flows",
+                "effect": "If higher US rates draw foreign money away from emerging markets, Indian share and bond markets could see outflows, which may affect the value of market-linked investments.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "rupee import costs",
+                "effect": "If a stronger dollar weakens the rupee, importers would pay more in rupees for dollar-priced goods, which could raise their costs.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "The Federal Reserve's interest-rate decision at its December meeting",
+                "why": "It would show whether the Fed raises rates as widely expected, which shapes dollar returns and capital flows into India.",
+                "when": "December 2026",
+                "where": "US Federal Reserve"
+              }
+            ],
+            "context": [
+              "The Federal Reserve's rate decisions influence returns on dollar assets worldwide. India's markets and currency are sensitive to foreign investor flows, and India imports most of its crude oil, which is paid for in dollars."
+            ],
+            "terms": [
+              {
+                "term": "Federal Reserve",
+                "meaning": "The Federal Reserve is the central bank of the United States, and it sets the benchmark interest rate for the US economy."
+              }
+            ],
+            "frameworks": {
+              "decoder": {
+                "kind": "decision",
+                "headline": null,
+                "comparisons": [],
+                "drivers": [
+                  {
+                    "name": "Stable labor market",
+                    "direction": "up",
+                    "how": "The New York Times headline says a stable labor market keeps the Fed on track to raise rates gradually."
+                  },
+                  {
+                    "name": "Inflation",
+                    "direction": "up",
+                    "how": "The New York Times reports that a further move is widely expected in December to help tame inflation."
+                  }
+                ],
+                "decision": {
+                  "action": "hold",
+                  "size": "No change to interest rates at last week's meeting",
+                  "stance": "The Federal Reserve decided against raising rates at its latest meeting. It is widely expected to move again in December to help tame inflation, with a stable labor market supporting gradual increases."
+                }
+              }
+            }
+          },
+          "place": {
+            "name": "Washington",
+            "country": "United States",
+            "lat": 38.9,
+            "lon": -77
+          },
+          "reports": [
+            {
+              "source": "nyt",
+              "headline": "Stable Labor Market to Keep Fed on Track to Raise Rates Gradually",
+              "url": "https://www.nytimes.com/2026/11/06/business/economy/stable-labor-market-to-keep-fed-on-track-to-raise-rates-gradually.html",
+              "date": "2026-11-06T10:45:28.000Z",
+              "kind": "hard",
+              "summary": "The Federal Reserve decided against raising interest rates at its meeting last week, but it is widely expected to move again in December to help tame inflation.",
+              "summaryV": 3,
+              "image": "https://static01.nyt.com/images/2026/11/06/multimedia/06biz-jobs-report-fed-pbtv/06biz-jobs-report-fed-pbtv-mediumSquareAt3X.jpg"
+            }
+          ],
+          "thread": "tpnacn3"
+        },
+        {
+          "id": "s6mi52d",
+          "headline": "US tech stocks recover after selloff spooks investors over AI spending",
+          "url": "https://www.theguardian.com/business/2026/nov/03/us-tech-stocks-recovery-ai-spending",
+          "source": "guardian",
+          "date": "2026-11-03T22:18:45.000Z",
+          "relevance": "medium",
+          "image": "https://i.guim.co.uk/img/media/4deeff6920cbe68eb5c102d876b4df883151e8e9/584_0_5820_4658/master/5820.jpg?width=700&quality=85&auto=format&fit=max&s=e466d0d2d43e63141dab77dd789540af",
+          "why": "US technology shares recovered on Tuesday afternoon after a selloff driven by investor worries over spending on artificial intelligence. The swing matters to India mainly through global investor mood and the US clients of Indian technology firms.",
+          "implications": [
+            "Predicted Democratic wins in the US midterm elections could lead to more regulation of technology companies, which may change the business environment for the US firms that Indian technology services companies serve.",
+            "If worries over AI spending return, global investors may grow more cautious about technology shares generally, which could affect money flowing into Indian listed technology companies."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-04T01:30:13.109Z",
+            "tier": "quick",
+            "primary": "market_move",
+            "complement": null,
+            "features": [
+              "market_move"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "The only link is indirect, through global investor sentiment and US client spending. Nothing in the reporting describes a direct effect on Indian households, trade or the rupee."
+            },
+            "horizon": {
+              "value": "now",
+              "reason": "Indian share markets usually react to overnight US moves in the next trading session, though any lasting effect would depend on how the AI spending debate develops."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single outlet, The Guardian, with no official source, no figures for the size of the moves and no stated reason for the rebound."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Equity & mutual fund investors",
+                "direction": "unclear",
+                "what": "sentiment towards technology shares",
+                "effect": "Swings in US technology shares can shift global investor mood, which may carry over into Indian technology-linked shares and funds that hold them.",
+                "basis": "inferred"
+              },
+              {
+                "group": "IT & services workers",
+                "direction": "unclear",
+                "what": "client technology budgets",
+                "effect": "Doubts about AI spending and possible tighter US regulation could influence how much US clients spend on technology services, which may affect hiring at Indian firms over time.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Whether US technology shares hold their recovery in the sessions that follow",
+                "why": "It would show whether investor concern over AI spending is easing or continuing.",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "Any proposals for tighter regulation of technology companies after the US midterm results",
+                "why": "It would show whether the predicted Democratic gains turn into policy that affects the US clients of Indian firms.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "Indian technology services firms earn a large share of their revenue from US clients, so the budgets and mood of US companies matter to them.",
+              "Foreign portfolio investors often adjust their holdings in emerging markets such as India in response to swings in global risk appetite."
+            ],
+            "terms": [
+              {
+                "term": "midterms",
+                "meaning": "The US congressional elections held halfway through a president's four-year term, which decide control of the House of Representatives and part of the Senate."
+              }
+            ],
+            "frameworks": {
+              "market_move": {
+                "moved": {
+                  "what": "US technology shares",
+                  "kind": "sector shares",
+                  "direction": "up",
+                  "size": "",
+                  "period": "on Tuesday afternoon"
+                },
+                "cause": {
+                  "text": "A selloff had unsettled investors over spending on artificial intelligence, and shares then recovered by Tuesday afternoon. The reason for the rebound has not been reported.",
+                  "status": "reported",
+                  "by": "The Guardian"
+                },
+                "duration": "one_day",
+                "channels": [
+                  {
+                    "channel": "foreign investment flows",
+                    "india_link": "Changes in global appetite for technology shares could influence how much foreign money moves into or out of Indian technology-linked companies.",
+                    "basis": "inferred"
+                  }
+                ],
+                "not_settled": "The size of the selloff and the recovery, and what triggered the rebound, have not been stated."
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "guardian",
+              "headline": "US tech stocks recover after selloff spooks investors over AI spending",
+              "url": "https://www.theguardian.com/business/2026/nov/03/us-tech-stocks-recovery-ai-spending",
+              "date": "2026-11-03T22:18:45.000Z",
+              "kind": "hard",
+              "summary": "Midterms didn’t appear to have huge impact, though predicted wins for Democrats could mean more regulation",
+              "summaryV": 3,
+              "lede": "US tech stocks made a recovery on Tuesday afternoon after a selloff spooked investors over AI spending.",
+              "image": "https://i.guim.co.uk/img/media/4deeff6920cbe68eb5c102d876b4df883151e8e9/584_0_5820_4658/master/5820.jpg?width=700&quality=85&auto=format&fit=max&s=e466d0d2d43e63141dab77dd789540af"
+            },
+            {
+              "source": "nyt",
+              "headline": "Global Stocks Follow U.S. Sell-Off as A.I. Spending Fears Spread",
+              "url": "https://www.nytimes.com/2026/11/06/business/global-stocks-markets-tech-ai.html",
+              "date": "2026-11-06T10:28:08.000Z",
+              "kind": "hard",
+              "summary": "Markets in Asia and Europe tumbled, with Japan’s market falling into a bear market.",
+              "summaryV": 3
+            }
+          ],
+          "place": {
+            "name": "New York",
+            "country": "United States",
+            "lat": 40.71,
+            "lon": -74.01
+          },
+          "thread": "t1nkczxr",
+          "stats": {
+            "v": 2,
+            "at": "2026-11-04T19:58:43.757Z",
+            "series": [
+              {
+                "title": "US private investment in IT equipment and software",
+                "unit": "US$ billion, seasonally adjusted annual ",
+                "publisher": "U.S. Bureau of Economic Analysis (via FRED, St. Louis Fed)",
+                "why": "This tracks how much US businesses are spending on computing equipment and software, which is the AI-spending trend behind the investor worries in the story.",
+                "points": [
+                  {
+                    "period": "Q3 2025",
+                    "value": 1426.042,
+                    "url": "https://fred.stlouisfed.org/series/A679RC1Q027SBEA",
+                    "source": "Private fixed investment in information processing equipment and software"
+                  },
+                  {
+                    "period": "Q4 2025",
+                    "value": 1494.995,
+                    "url": "https://fred.stlouisfed.org/series/A679RC1Q027SBEA",
+                    "source": "Private fixed investment in information processing equipment and software"
+                  },
+                  {
+                    "period": "Q1 2026",
+                    "value": 1586.328,
+                    "url": "https://fred.stlouisfed.org/series/A679RC1Q027SBEA",
+                    "source": "Private fixed investment in information processing equipment and software"
+                  },
+                  {
+                    "period": "Q2 2026",
+                    "value": 1645.684,
+                    "url": "https://fred.stlouisfed.org/series/A679RC1Q027SBEA",
+                    "source": "Private fixed investment in information processing equipment and software"
+                  },
+                  {
+                    "period": "Q3 2026",
+                    "value": 1765.37,
+                    "url": "https://fred.stlouisfed.org/series/A679RC1Q027SBEA",
+                    "source": "Private fixed investment in information processing equipment and software"
+                  }
+                ],
+                "dropped": 0,
+                "sources": [
+                  {
+                    "url": "https://fred.stlouisfed.org/series/A679RC1Q027SBEA",
+                    "title": "Private fixed investment in information processing equipment and software",
+                    "domain": "fred.stlouisfed.org"
+                  }
+                ],
+                "domains": [
+                  "fred.stlouisfed.org"
+                ]
+              }
+            ]
+          }
+        },
+        {
           "id": "s1x6hdg1",
           "headline": "AI stocks plunge after US election, driving down markets",
           "url": "https://www.aljazeera.com/economy/2026/11/5/ai-stocks-plunge-after-election-driving-down-us-markets",
@@ -40598,6 +41431,95 @@
               "kind": "hard",
               "summary": "Asian technology stocks tumbled Friday, tracking a sharp sell-off on Wall Street overnight that sent the tech-heavy Nasdaq Composite into correction territory.",
               "summaryV": 3
+            },
+            {
+              "source": "mercopress",
+              "headline": "Big Tech loses a trillion dollars in a day after the Democratic win",
+              "url": "https://en.mercopress.com/2026/11/06/big-tech-loses-a-trillion-dollars-in-a-day-after-the-democratic-win",
+              "date": "2026-11-06T00:51:00.000Z",
+              "kind": "hard",
+              "summary": "Shares in major technology companies plunged on Wall Street on Thursday and in Asian markets on Friday, in a sell-off that wiped hundreds of billions of dollars of market value, on fears that the Democratic victory in the US midterm elections will slow the expansion of data centres and artificial intelligence.",
+              "summaryV": 3,
+              "image": "https://en.mercopress.com/data/cache/noticias/112014/100x80/1200-900.jpg"
+            },
+            {
+              "source": "scmp",
+              "headline": "Tech stocks lead declines in Hong Kong, mainland China on US$2.3 trillion carnage in US",
+              "url": "https://www.scmp.com/business/china-business/article/3373474/tech-stocks-lead-declines-hong-kong-mainland-china-us23-trillion-carnage-us",
+              "date": "2026-11-06T01:59:06.000Z",
+              "kind": "hard",
+              "summary": "Stocks in Hong Kong and mainland China dropped on Friday, tracking a meltdown in US technology companies that erased more than US$2 trillion in market value on concerns that a Democrat-controlled Congress could upend the breakneck expansion of the AI industry.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/06/b4d8f4ed-5d45-40a0-bad7-6f206b211cd0_6d8a46d0.jpg?itok=vwzwW9xf&v=1793930333"
+            },
+            {
+              "source": "scmp",
+              "headline": "Post-US midterms AI worries pummel shares in Japan, South Korea",
+              "url": "https://www.scmp.com/news/asia/east-asia/article/3373478/post-us-midterms-ai-worries-pummel-shares-japan-south-korea",
+              "date": "2026-11-06T02:31:40.000Z",
+              "kind": "hard",
+              "summary": "Japanese and South Korean shares plunged on Friday after US shares tumbled overnight on worries that midterm election results could slow or derail the artificial intelligence data centre investment boom. Tokyo’s benchmark Nikkei 225 index fell 5.1 per cent to 56,930 points in early trade.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/06/6872c4f1-8c5b-4837-957a-3dab0499afa6_e943ebec.jpg?itok=qC875MUY&v=1793932299"
+            },
+            {
+              "source": "france24",
+              "headline": "Tech stocks plunge as US midterm results fuel fears of tighter AI rules",
+              "url": "https://www.france24.com/en/technology/20261106-tech-stocks-plunge-us-midterm-ai-rules",
+              "date": "2026-11-06T05:02:06.000Z",
+              "kind": "hard",
+              "summary": "Asian tech stocks fell sharply on Friday, driven by fears of tighter AI regulation following Democrats’ US midterm election victory. US voters widely oppose Data centres, and many winning candidates pledged to curb their development.",
+              "summaryV": 3,
+              "image": "https://s.france24.com/media/display/1be84736-d989-11f1-aed6-d18c5759e759/w:1024/p:16x9/0cb7dc483e38ff94c70690b196afde181d6bcadd.jpg"
+            },
+            {
+              "source": "aljazeera",
+              "headline": "Tech stock rout, driven by US AI fears, continues in Asian trading",
+              "url": "https://www.aljazeera.com/economy/2026/11/6/tech-stock-rout-driven-by-us-ai-fears-continues-in-asian-trading",
+              "date": "2026-11-06T08:41:05.000Z",
+              "kind": "hard",
+              "summary": "Global markets are being roiled due to concerns over US data centre expansion and AI regulation.",
+              "summaryV": 3
+            },
+            {
+              "source": "guardian",
+              "headline": "Global stocks plunge amid AI slowdown fears after Democrats’ midterm triumph",
+              "url": "https://www.theguardian.com/business/2026/nov/06/global-stocks-plunge-amid-ai-slowdown-fears-after-democrats-midterm-triumph",
+              "date": "2026-11-06T08:58:22.000Z",
+              "kind": "hard",
+              "summary": "Asian and European markets follow Wall Street with sharp fall as FTSE down 1.9%",
+              "summaryV": 3,
+              "lede": "Business live – latest updates",
+              "image": "https://i.guim.co.uk/img/media/133fcf307a659f484d60938a125776efe501ba4e/407_0_3025_2422/master/3025.jpg?width=700&quality=85&auto=format&fit=max&s=c9b009d116ee1fdcc35377fd421c7636"
+            },
+            {
+              "source": "scmp",
+              "headline": "AI bubble bursts, fifth plenum resolution, Singles’ Day",
+              "url": "https://www.scmp.com/plus/business/markets/article/3373548/ai-bubble-bursts-fifth-plenum-resolution-singles-day",
+              "date": "2026-11-06T09:05:28.000Z",
+              "kind": "hard",
+              "summary": "China’s stocks pared weekly gains and the benchmark 10-year bond hit a record low as the global artificial intelligence (AI) stock bubble burst following the US Democrats’ landslide win in midterm elections. The CSI 300 equity index fell 1.4 per cent, weighed down by AI-related shares.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/06/3f4678c0-c3ed-462a-b5bd-e0d90c971d72_da7f20f3.jpg?itok=qC-pWPeT&v=1793955923"
+            },
+            {
+              "source": "dw",
+              "headline": "European shares join a global sell-off as AI spending fears rattle Wall Street and Asian markets",
+              "url": "https://www.dw.com/en/european-shares-join-a-global-sell-off-as-ai-spending-fears-rattle-wall-street-and-asian-markets/a-79871504",
+              "date": "2026-11-06T09:29:00.000Z",
+              "kind": "hard",
+              "summary": "European shares have fallen after sharp losses in Asia and on Wall Street. Doubts over huge AI investments and fears of curbs following the Democrats' US midterm victory have rattled global markets.",
+              "summaryV": 3
+            },
+            {
+              "source": "france24",
+              "headline": "Live: European stocks plunge after US midterm election results shock markets",
+              "url": "https://www.france24.com/en/americas/20261106-live-european-stocks-plunge-after-us-midterm-election-results-shock-markets",
+              "date": "2026-11-06T09:37:30.000Z",
+              "kind": "hard",
+              "summary": "European shares tumbled on Friday as global investors grappled with uncertainty over AI stocks, following the Democrats’ sweeping victory in the US midterm elections. The drop is partly due to fears that Democrats could curb the development of AI data centres, which are widely unpopular among US voters.",
+              "summaryV": 3,
+              "image": "https://s.france24.com/media/display/d71b2db8-d9be-11f1-82d6-a575454bc579/w:1024/p:16x9/2026-11-05T161457Z-54596775-RC2QHOA0MWI0-RTRMADP-3-EUROPE-STOCKS.jpg"
             }
           ],
           "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/afp_6aeca2851439-1793892997.jpg?resize=1920%2C1440",
@@ -40663,6 +41585,116 @@
             "lon": -74.01
           },
           "thread": "t1nkczxr"
+        },
+        {
+          "id": "s11ow3a3",
+          "headline": "India as an AI hedge? The country's stocks could see robust inflows as markets globally tank",
+          "url": "https://www.cnbc.com/2026/11/06/india-ai-tech-hedge-nifty50.html",
+          "source": "cnbc",
+          "date": "2026-11-06T06:02:36.000Z",
+          "relevance": "medium",
+          "why": "India's Nifty 50 share index has gained nearly 9% over the last month. Stock markets with heavy artificial intelligence exposure, including those of the US, Japan, South Korea and Taiwan, have fallen sharply. This has prompted talk that India could attract foreign inflows.",
+          "implications": [
+            "If global investors look for markets less tied to artificial intelligence, more foreign money could move into Indian shares. That would lift share prices and the value of mutual fund holdings.",
+            "Foreign inflows also increase demand for rupees, which can support the currency. If global sentiment turned, the same money could leave and the effect would reverse."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-06T11:12:49.782Z",
+            "tier": "quick",
+            "primary": "market_move",
+            "complement": null,
+            "features": [
+              "market_move"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The channel is foreign investment flows into Indian shares, which affect the value of share and mutual fund holdings. It does not directly touch household essentials such as fuel or loan rates."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "The index gain has already occurred, but any foreign inflows would build up over the coming weeks as global investors adjust their holdings."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single outlet, CNBC, with no official source, and the expected foreign inflows are a projection that has not been confirmed."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Equity & mutual fund investors",
+                "direction": "up",
+                "what": "value of Indian share holdings",
+                "effect": "The Nifty 50's gain of nearly 9% over the last month has raised the value of holdings linked to large Indian companies.",
+                "basis": "reported"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Data on foreign portfolio investment flows into Indian shares in the coming weeks",
+                "why": "It would show whether the expected inflows into India are actually materialising.",
+                "when": "",
+                "where": "National Securities Depository Limited (NSDL) foreign portfolio investor data"
+              },
+              {
+                "what": "Whether share markets in the US, Japan, South Korea and Taiwan keep falling",
+                "why": "It would show whether the pressure on artificial intelligence-heavy markets, which prompted the talk of India as a hedge, persists.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "Global fund managers shift money between countries according to where they see better returns or lower risk. India's listed market is led by banks, consumer, energy and IT services firms rather than chip and hardware makers."
+            ],
+            "terms": [
+              {
+                "term": "Nifty 50",
+                "meaning": "The Nifty 50 is a benchmark index of 50 large companies listed on the National Stock Exchange, widely used to track the Indian share market."
+              }
+            ],
+            "frameworks": {
+              "market_move": {
+                "moved": {
+                  "what": "Nifty 50",
+                  "kind": "share index",
+                  "direction": "up",
+                  "size": "nearly 9%",
+                  "period": "over the last month"
+                },
+                "cause": {
+                  "text": "CNBC reports that India is being viewed as a hedge against artificial intelligence-driven declines, because markets with heavy exposure to the technology, including the US, Japan, South Korea and Taiwan, have fallen sharply.",
+                  "status": "claimed",
+                  "by": "CNBC"
+                },
+                "duration": "multi_day",
+                "channels": [
+                  {
+                    "channel": "foreign investment flows",
+                    "india_link": "Global investors moving away from artificial intelligence-heavy markets could send more money into Indian shares. That could support share prices and the rupee.",
+                    "basis": "inferred"
+                  }
+                ],
+                "not_settled": "Whether foreign inflows into India have actually materialised is not confirmed, as the headline says only that they could be robust."
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "cnbc",
+              "headline": "India as an AI hedge? The country's stocks could see robust inflows as markets globally tank",
+              "url": "https://www.cnbc.com/2026/11/06/india-ai-tech-hedge-nifty50.html",
+              "date": "2026-11-06T06:02:36.000Z",
+              "kind": "hard",
+              "summary": "Over the last month, India's Nifty 50 has gained nearly 9%, while markets with heavy AI exposure, including the U.S., Japan, South Korea and Taiwan are deep in the red.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://image.cnbcfm.com/api/v1/image/108530214-1793936515931-gettyimages-2282619452-miniseries20260315__n8a9107.jpeg?v=1793936910&w=1920&h=1080"
+            }
+          ],
+          "placeTried": true,
+          "image": "https://image.cnbcfm.com/api/v1/image/108530214-1793936515931-gettyimages-2282619452-miniseries20260315__n8a9107.jpeg?v=1793936910&w=1920&h=1080",
+          "thread": "t1gpcbru"
         },
         {
           "id": "s1m6i5oh",
@@ -41689,183 +42721,6 @@
             "series": []
           },
           "thread": "tacu2ew"
-        },
-        {
-          "id": "s6mi52d",
-          "headline": "US tech stocks recover after selloff spooks investors over AI spending",
-          "url": "https://www.theguardian.com/business/2026/nov/03/us-tech-stocks-recovery-ai-spending",
-          "source": "guardian",
-          "date": "2026-11-03T22:18:45.000Z",
-          "relevance": "medium",
-          "image": "https://i.guim.co.uk/img/media/4deeff6920cbe68eb5c102d876b4df883151e8e9/584_0_5820_4658/master/5820.jpg?width=700&quality=85&auto=format&fit=max&s=e466d0d2d43e63141dab77dd789540af",
-          "why": "US technology shares recovered on Tuesday afternoon after a selloff driven by investor worries over spending on artificial intelligence. The swing matters to India mainly through global investor mood and the US clients of Indian technology firms.",
-          "implications": [
-            "Predicted Democratic wins in the US midterm elections could lead to more regulation of technology companies, which may change the business environment for the US firms that Indian technology services companies serve.",
-            "If worries over AI spending return, global investors may grow more cautious about technology shares generally, which could affect money flowing into Indian listed technology companies."
-          ],
-          "analysis": {
-            "v": 3,
-            "at": "2026-11-04T01:30:13.109Z",
-            "tier": "quick",
-            "primary": "market_move",
-            "complement": null,
-            "features": [
-              "market_move"
-            ],
-            "exposure": {
-              "level": "low",
-              "reason": "The only link is indirect, through global investor sentiment and US client spending. Nothing in the reporting describes a direct effect on Indian households, trade or the rupee."
-            },
-            "horizon": {
-              "value": "now",
-              "reason": "Indian share markets usually react to overnight US moves in the next trading session, though any lasting effect would depend on how the AI spending debate develops."
-            },
-            "confidence": {
-              "level": "low",
-              "reason": "This rests on a single outlet, The Guardian, with no official source, no figures for the size of the moves and no stated reason for the rebound."
-            },
-            "outlets": 1,
-            "affected": [
-              {
-                "group": "Equity & mutual fund investors",
-                "direction": "unclear",
-                "what": "sentiment towards technology shares",
-                "effect": "Swings in US technology shares can shift global investor mood, which may carry over into Indian technology-linked shares and funds that hold them.",
-                "basis": "inferred"
-              },
-              {
-                "group": "IT & services workers",
-                "direction": "unclear",
-                "what": "client technology budgets",
-                "effect": "Doubts about AI spending and possible tighter US regulation could influence how much US clients spend on technology services, which may affect hiring at Indian firms over time.",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "Whether US technology shares hold their recovery in the sessions that follow",
-                "why": "It would show whether investor concern over AI spending is easing or continuing.",
-                "when": "",
-                "where": ""
-              },
-              {
-                "what": "Any proposals for tighter regulation of technology companies after the US midterm results",
-                "why": "It would show whether the predicted Democratic gains turn into policy that affects the US clients of Indian firms.",
-                "when": "",
-                "where": ""
-              }
-            ],
-            "context": [
-              "Indian technology services firms earn a large share of their revenue from US clients, so the budgets and mood of US companies matter to them.",
-              "Foreign portfolio investors often adjust their holdings in emerging markets such as India in response to swings in global risk appetite."
-            ],
-            "terms": [
-              {
-                "term": "midterms",
-                "meaning": "The US congressional elections held halfway through a president's four-year term, which decide control of the House of Representatives and part of the Senate."
-              }
-            ],
-            "frameworks": {
-              "market_move": {
-                "moved": {
-                  "what": "US technology shares",
-                  "kind": "sector shares",
-                  "direction": "up",
-                  "size": "",
-                  "period": "on Tuesday afternoon"
-                },
-                "cause": {
-                  "text": "A selloff had unsettled investors over spending on artificial intelligence, and shares then recovered by Tuesday afternoon. The reason for the rebound has not been reported.",
-                  "status": "reported",
-                  "by": "The Guardian"
-                },
-                "duration": "one_day",
-                "channels": [
-                  {
-                    "channel": "foreign investment flows",
-                    "india_link": "Changes in global appetite for technology shares could influence how much foreign money moves into or out of Indian technology-linked companies.",
-                    "basis": "inferred"
-                  }
-                ],
-                "not_settled": "The size of the selloff and the recovery, and what triggered the rebound, have not been stated."
-              }
-            }
-          },
-          "reports": [
-            {
-              "source": "guardian",
-              "headline": "US tech stocks recover after selloff spooks investors over AI spending",
-              "url": "https://www.theguardian.com/business/2026/nov/03/us-tech-stocks-recovery-ai-spending",
-              "date": "2026-11-03T22:18:45.000Z",
-              "kind": "hard",
-              "summary": "Midterms didn’t appear to have huge impact, though predicted wins for Democrats could mean more regulation",
-              "summaryV": 3,
-              "lede": "US tech stocks made a recovery on Tuesday afternoon after a selloff spooked investors over AI spending.",
-              "image": "https://i.guim.co.uk/img/media/4deeff6920cbe68eb5c102d876b4df883151e8e9/584_0_5820_4658/master/5820.jpg?width=700&quality=85&auto=format&fit=max&s=e466d0d2d43e63141dab77dd789540af"
-            }
-          ],
-          "place": {
-            "name": "New York",
-            "country": "United States",
-            "lat": 40.71,
-            "lon": -74.01
-          },
-          "thread": "t1nkczxr",
-          "stats": {
-            "v": 2,
-            "at": "2026-11-04T19:58:43.757Z",
-            "series": [
-              {
-                "title": "US private investment in IT equipment and software",
-                "unit": "US$ billion, seasonally adjusted annual ",
-                "publisher": "U.S. Bureau of Economic Analysis (via FRED, St. Louis Fed)",
-                "why": "This tracks how much US businesses are spending on computing equipment and software, which is the AI-spending trend behind the investor worries in the story.",
-                "points": [
-                  {
-                    "period": "Q3 2025",
-                    "value": 1426.042,
-                    "url": "https://fred.stlouisfed.org/series/A679RC1Q027SBEA",
-                    "source": "Private fixed investment in information processing equipment and software"
-                  },
-                  {
-                    "period": "Q4 2025",
-                    "value": 1494.995,
-                    "url": "https://fred.stlouisfed.org/series/A679RC1Q027SBEA",
-                    "source": "Private fixed investment in information processing equipment and software"
-                  },
-                  {
-                    "period": "Q1 2026",
-                    "value": 1586.328,
-                    "url": "https://fred.stlouisfed.org/series/A679RC1Q027SBEA",
-                    "source": "Private fixed investment in information processing equipment and software"
-                  },
-                  {
-                    "period": "Q2 2026",
-                    "value": 1645.684,
-                    "url": "https://fred.stlouisfed.org/series/A679RC1Q027SBEA",
-                    "source": "Private fixed investment in information processing equipment and software"
-                  },
-                  {
-                    "period": "Q3 2026",
-                    "value": 1765.37,
-                    "url": "https://fred.stlouisfed.org/series/A679RC1Q027SBEA",
-                    "source": "Private fixed investment in information processing equipment and software"
-                  }
-                ],
-                "dropped": 0,
-                "sources": [
-                  {
-                    "url": "https://fred.stlouisfed.org/series/A679RC1Q027SBEA",
-                    "title": "Private fixed investment in information processing equipment and software",
-                    "domain": "fred.stlouisfed.org"
-                  }
-                ],
-                "domains": [
-                  "fred.stlouisfed.org"
-                ]
-              }
-            ]
-          }
         },
         {
           "id": "s1q1q8zx",
@@ -47343,6 +48198,37 @@
       "name": "Manufacturing",
       "items": [
         {
+          "id": "s17s8n1s",
+          "headline": "‘Every day, someone loses a hand or a leg’: the brutal reality of India’s textile recycling industry",
+          "url": "https://www.theguardian.com/global-development/2026/nov/06/india-textile-recycling-industry-workers-factories-accidents-safety-amputations",
+          "source": "guardian",
+          "date": "2026-11-06T07:00:47.000Z",
+          "relevance": "medium",
+          "image": "https://i.guim.co.uk/img/media/d05cb680ba8b32eab783ac3ebbb35c6ac8ad27ba/0_0_2918_2335/master/2918.jpg?width=700&quality=85&auto=format&fit=max&s=63f1f9729603aaca49c8ee0df533317f",
+          "why": "",
+          "implications": [],
+          "place": {
+            "name": "Panipat",
+            "country": "India",
+            "lat": 29.39,
+            "lon": 76.97
+          },
+          "reports": [
+            {
+              "source": "guardian",
+              "headline": "‘Every day, someone loses a hand or a leg’: the brutal reality of India’s textile recycling industry",
+              "url": "https://www.theguardian.com/global-development/2026/nov/06/india-textile-recycling-industry-workers-factories-accidents-safety-amputations",
+              "date": "2026-11-06T07:00:47.000Z",
+              "kind": "feature",
+              "summary": "In Panipat, 1m tons of used clothing a year are turned into products for global brands, but dangerous machinery and few safeguards mean life-changing injuries are common",
+              "summaryV": 3,
+              "lede": "For three months, Suraj Kumar’s job was to feed discarded clothes into shredding machines in Panipat, an industrial city in the north Indian state of Haryana. Clothes discarded in the US, Canada and Europe arrive in the city to be torn back into fibres and spun into yarn, feeding a textile recycling industry that supplies markets across the world.",
+              "image": "https://i.guim.co.uk/img/media/d05cb680ba8b32eab783ac3ebbb35c6ac8ad27ba/0_0_2918_2335/master/2918.jpg?width=700&quality=85&auto=format&fit=max&s=63f1f9729603aaca49c8ee0df533317f"
+            }
+          ],
+          "thread": "tiz1vx5"
+        },
+        {
           "id": "s164rykn",
           "headline": "China Blocks SoftBank’s $5.4 Billion Robotics Takeover, Impeding Foreign Deals",
           "url": "https://www.nytimes.com/2026/11/05/business/softbank-robotics-china-block.html",
@@ -49294,6 +50180,120 @@
       "id": "environment",
       "name": "Environment & Climate",
       "items": [
+        {
+          "id": "sbrue56",
+          "headline": "Transition to renewable energy key issue at COP 31 talks",
+          "url": "http://www.africanews.com/2026/11/06/transition-to-renewable-energy-key-issue-at-cop-31-talks/",
+          "source": "africanews",
+          "date": "2026-11-06T09:57:59.000Z",
+          "relevance": "medium",
+          "why": "United Nations climate talks (COP 31) open in Turkey next week, with the implementation of pledges to phase out fossil fuels a central issue. The outcome could shape the pressure on India's coal and oil use.",
+          "implications": [
+            "Any agreed language on how fossil-fuel pledges are carried out could set expectations for large coal and oil users such as India, though talks alone do not change domestic policy.",
+            "Heatwaves in Europe and floods in Nepal form the backdrop to the talks, and Nepal's floods are a reminder that Himalayan weather extremes can affect India's neighbourhood."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-06T11:14:47.672Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "The talks produce pledges rather than immediate rules, so any effect on India would come indirectly through later energy and climate policy rather than through a household essential."
+            },
+            "horizon": {
+              "value": "years",
+              "reason": "Climate pledges are turned into national policy and energy investment over long periods, so any change in India's energy mix would take years to appear."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single outlet, Africanews, with no official source quoted, and the agenda and outcomes of the talks have not been confirmed."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Power consumers",
+                "direction": "unclear",
+                "what": "long-term electricity costs",
+                "effect": "Stronger fossil-fuel phase-out commitments could, over time, push India's coal-heavy power system toward renewables, which may change the cost of electricity.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Government finances",
+                "direction": "unclear",
+                "what": "energy transition spending",
+                "effect": "Firmer global expectations on fossil-fuel phase-out could raise pressure on the government to fund the shift to renewables, which may affect public spending.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "The opening of the COP 31 negotiations in Turkey and any statement on carrying out fossil-fuel phase-out pledges",
+                "why": "It would show how firmly the world's governments are committing to fossil-fuel cuts, which sets the direction for pressure on India.",
+                "when": "next week",
+                "where": "United Nations Framework Convention on Climate Change (UNFCCC) website"
+              }
+            ],
+            "context": [
+              "India relies heavily on coal for electricity and imports most of its crude oil, so any global push to phase out fossil fuels bears directly on its energy choices.",
+              "Developing countries have generally argued that richer countries should move first on fossil-fuel cuts and help pay for the transition."
+            ],
+            "terms": [
+              {
+                "term": "COP 31",
+                "meaning": "The 31st annual meeting of the countries that have signed the United Nations climate convention, where governments negotiate commitments on cutting emissions."
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Climate talks open in Turkey",
+                    "detail": "United Nations climate negotiations begin in Turkey next week, with the implementation of pledges to phase out fossil fuels as a key issue on the agenda.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Disasters shape the backdrop",
+                    "detail": "The talks follow heatwaves across Europe and catastrophic flooding in Nepal, which keep attention on the cost of climate change, including in India's neighbourhood.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Pressure on India's energy mix",
+                    "detail": "If governments agree firmer terms on phasing out fossil fuels, India, a large user of coal and imported oil, could face stronger expectations to speed its shift to renewables.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The negotiators fail to agree firmer terms on implementing the fossil-fuel pledges, or any agreed terms remain non-binding and leave India's energy policy unchanged."
+              }
+            }
+          },
+          "place": {
+            "name": "Antalya",
+            "country": "Turkey",
+            "lat": 36.9,
+            "lon": 30.7
+          },
+          "reports": [
+            {
+              "source": "africanews",
+              "headline": "Transition to renewable energy key issue at COP 31 talks",
+              "url": "http://www.africanews.com/2026/11/06/transition-to-renewable-energy-key-issue-at-cop-31-talks/",
+              "date": "2026-11-06T09:57:59.000Z",
+              "kind": "hard",
+              "summary": "UN climate negotiations beginning in Turkey next week will follow marked by a environmental disasters including heatwaves across Europe and catastrophic flooding in Nepal. A key issue at this year’s talks is the implementation of pledges to phase out fossil fuels.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://images.euronews.com/articles/stories/09/98/19/88/1024x538_cmsv2_8d43c9ec-344d-5e63-b4ee-e450d0e57236-9981988.jpg"
+            }
+          ],
+          "image": "https://images.euronews.com/articles/stories/09/98/19/88/1024x538_cmsv2_8d43c9ec-344d-5e63-b4ee-e450d0e57236-9981988.jpg",
+          "thread": "t4rp4vx"
+        },
         {
           "id": "sfiyh53",
           "headline": "Delhi air quality worsens ahead of Diwali as firework restrictions enter force",
@@ -51491,6 +52491,455 @@
       "name": "Policy & Governance",
       "items": [
         {
+          "id": "s5bv5f4",
+          "headline": "Major construction ongoing near Iran missile bases, satellite images suggest",
+          "url": "https://www.bbc.co.uk/news/articles/ckjrwx1r2d5ro",
+          "source": "bbc",
+          "date": "2026-11-06T07:33:41.000Z",
+          "relevance": "medium",
+          "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/5589/live/461d3e00-d879-11f1-b441-2b33b063138f.jpg",
+          "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/5589/live/461d3e00-d879-11f1-b441-2b33b063138f.jpg",
+          "why": "BBC News reports that satellite images taken in November suggest digging and new buildings near Iranian missile bases. Any resulting rise in Gulf tension could reach India through oil supply and the safety of Indians in the region.",
+          "implications": [
+            "The images suggest activity but do not show its purpose, so any effect on India depends on how Iran's neighbours and major powers respond to it.",
+            "If the activity raises regional tension, energy markets and shipping routes near the Gulf could become more unsettled, and Indian importers would feel that first."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-06T11:13:25.851Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "low",
+              "reason": "The reports describe only construction seen from satellites, with no stated link to oil supply, shipping or Indians abroad. Any effect would come indirectly through Gulf tensions that have not yet materialised."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "No timeline or escalation is reported, so any effect on India would depend on later political and military developments in the region."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on one BBC News report of satellite images that only suggest construction, with no official confirmation and no stated purpose."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "fuel price risk",
+                "effect": "If Gulf tensions rise, higher crude prices could raise refiners' costs and may eventually feed through to petrol, diesel and LPG prices in India.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Gulf & overseas workers and families",
+                "direction": "unclear",
+                "what": "regional safety concerns",
+                "effect": "Indians working in Gulf countries could face greater uncertainty if regional tensions grow, which may also affect the money they send to families in India.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Official responses from Iran or other governments to the reported construction near the missile bases",
+                "why": "Official statements would show whether the activity is being treated as a security threat that could raise regional tension.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "India imports most of its crude oil, and a large share of it comes from or passes through the Gulf region, so security tensions there matter to Indian fuel supply.",
+              "Millions of Indians also live and work in Gulf countries, so regional instability is a concern for their safety and for the money they send home."
+            ],
+            "terms": [],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Satellite images show new construction",
+                    "detail": "BBC News reports that satellite imagery taken in November suggests digging and new buildings near Iranian missile bases.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Purpose of the work is unconfirmed",
+                    "detail": "The images only suggest major construction, and it is not yet known what is being built or why. Reaction from other governments depends on how the activity is read.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Gulf tension could touch India",
+                    "detail": "If the activity raises regional tension, oil prices and shipping risk could rise. India, as a large crude importer with many citizens in the Gulf, could feel this.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "Regional tension does not rise in response, so oil supply, shipping routes and the safety of Indians in the Gulf stay unaffected."
+              }
+            }
+          },
+          "place": {
+            "name": "Iran missile bases",
+            "country": "Iran",
+            "lat": 35.69,
+            "lon": 51.42,
+            "involves": [
+              "United States",
+              "Israel"
+            ]
+          },
+          "reports": [
+            {
+              "source": "bbc",
+              "headline": "Major construction ongoing near Iran missile bases, satellite images suggest",
+              "url": "https://www.bbc.co.uk/news/articles/ckjrwx1r2d5ro",
+              "date": "2026-11-06T07:33:41.000Z",
+              "kind": "hard",
+              "summary": "Evidence of digging and new buildings are visible in satellite imagery taken in November, satellite images suggest.",
+              "summaryV": 3,
+              "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/5589/live/461d3e00-d879-11f1-b441-2b33b063138f.jpg",
+              "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/5589/live/461d3e00-d879-11f1-b441-2b33b063138f.jpg"
+            }
+          ],
+          "finChecked": true,
+          "thread": "thneg86"
+        },
+        {
+          "id": "sdr28mo",
+          "headline": "Why Democratic Congress may enhance US-Philippines alliance, pivot to Asia",
+          "url": "https://www.scmp.com/week-asia/politics/article/3373523/why-democratic-congress-may-enhance-us-philippines-alliance-pivot-asia",
+          "source": "scmp",
+          "date": "2026-11-06T07:12:47.000Z",
+          "relevance": "medium",
+          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/06/dccfe13d-1a04-41fd-8c2d-3bdf9fd26c7a_e844d958.jpg?itok=lIWxvAQf&v=1793949165",
+          "why": "",
+          "implications": [],
+          "place": {
+            "name": "Washington",
+            "country": "United States",
+            "lat": 38.9,
+            "lon": -77,
+            "involves": [
+              "Philippines"
+            ]
+          },
+          "reports": [
+            {
+              "source": "scmp",
+              "headline": "Why Democratic Congress may enhance US-Philippines alliance, pivot to Asia",
+              "url": "https://www.scmp.com/week-asia/politics/article/3373523/why-democratic-congress-may-enhance-us-philippines-alliance-pivot-asia",
+              "date": "2026-11-06T07:12:47.000Z",
+              "kind": "feature",
+              "summary": "The Democratic Party’s sweep of both houses of the US Congress could stabilise Washington’s commitment to the Philippines, bringing relief to allies rattled by President Donald Trump’s Iran war and his shifting foreign policy.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/06/dccfe13d-1a04-41fd-8c2d-3bdf9fd26c7a_e844d958.jpg?itok=lIWxvAQf&v=1793949165"
+            }
+          ],
+          "finChecked": true,
+          "thread": "t1j4fadp"
+        },
+        {
+          "id": "saj3x87",
+          "headline": "Iraq’s al-Zaidi talks to Trump as Baghdad seeks to stay out of war on Iran",
+          "url": "https://www.aljazeera.com/news/2026/11/6/iraqs-al-zaidi-talks-to-trump-as-baghdad-seeks-to-stay-out-of-war-on-iran",
+          "source": "aljazeera",
+          "date": "2026-11-06T05:00:47.000Z",
+          "relevance": "medium",
+          "why": "Iraq's al-Zaidi spoke to Trump while Iraq's top diplomat urged armed groups not to join any Iranian retaliation to US attacks, as Baghdad tries to stay out of the war. This matters to India through oil and Gulf stability.",
+          "implications": [
+            "If Iraqi armed groups joined Iranian retaliation, the war could spread to a further country in the region, raising risks for energy supplies and for Indians living in the Gulf.",
+            "Baghdad's effort to stay out shows that regional governments are working to contain the fighting, although armed groups may not follow government appeals."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-06T11:11:54.182Z",
+            "tier": "quick",
+            "primary": "escalation",
+            "complement": null,
+            "features": [
+              "armed_conflict",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The channel is oil supply and the safety of Indians in the region, but the reports describe diplomacy rather than a new attack or a disruption that directly reaches India."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "The timing depends on whether armed groups in Iraq join the fighting, which could happen at short notice and would then affect oil markets within weeks."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "This rests on a single outlet, Al Jazeera, though it reports an on-record appeal by Iraq's top diplomat and a call with Trump; the content of the call is not detailed."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "fuel supply risk",
+                "effect": "A wider war involving Iraq could disturb oil supplies and prices, which India's fuel prices ultimately follow, though nothing in the story shows this has happened.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Gulf & overseas workers and families",
+                "direction": "unclear",
+                "what": "safety in the region",
+                "effect": "Indians working in the Gulf and Iraq could face greater risk if the conflict spreads to more countries in the region.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Any Iraqi armed group announcing or carrying out attacks as part of Iranian retaliation against the United States",
+                "why": "It would show that Baghdad's appeal has failed and that a further country is being drawn into the war.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "India imports most of its crude oil, and a large share comes from West Asia, so conflict in or near the Gulf can affect its fuel supply and prices.",
+              "Armed groups in Iraq often act independently of the government, which makes it hard for Baghdad to guarantee that it will stay out of a regional conflict."
+            ],
+            "terms": [],
+            "frameworks": {
+              "escalation": {
+                "move": "none",
+                "rung": 6,
+                "current_rung": 6,
+                "previous_rung": null,
+                "development": "Iraq's al-Zaidi spoke to Trump while Iraq's top diplomat urged armed groups not to join any Iranian retaliation to US attacks, adding diplomacy but no new strike.",
+                "evidence": "The story reports a phone call and an appeal, which are talks and statements and do not move the war down. No new attack at a higher rung is described, so the war stays at rung 6.",
+                "next_signals": [
+                  {
+                    "rung": 7,
+                    "signal": "Iraqi armed groups, Iran and the United States begin open, large-scale fighting across several countries, with ground forces or a formal declaration of war."
+                  },
+                  {
+                    "rung": 5,
+                    "signal": "A ceasefire or truce takes effect, or fighting stops and attacks on third countries and critical infrastructure are reported to have ended."
+                  }
+                ],
+                "india_channels": [
+                  "oil",
+                  "diaspora safety"
+                ],
+                "conflict": "w1ye2krf",
+                "applied": "none",
+                "from": 6
+              }
+            }
+          },
+          "conflict": "w1ye2krf",
+          "place": {
+            "name": "Baghdad",
+            "country": "Iraq",
+            "lat": 33.31,
+            "lon": 44.36,
+            "involves": [
+              "United States",
+              "Iran"
+            ]
+          },
+          "reports": [
+            {
+              "source": "aljazeera",
+              "headline": "Iraq’s al-Zaidi talks to Trump as Baghdad seeks to stay out of war on Iran",
+              "url": "https://www.aljazeera.com/news/2026/11/6/iraqs-al-zaidi-talks-to-trump-as-baghdad-seeks-to-stay-out-of-war-on-iran",
+              "date": "2026-11-06T05:00:47.000Z",
+              "kind": "hard",
+              "summary": "Call comes as Iraq's top diplomat urges armed groups not to join any Iranian retaliation to US attacks.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/afp_6aed4b6d1b84-1793936237.jpg?resize=1920%2C1440"
+            }
+          ],
+          "finChecked": true,
+          "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/afp_6aed4b6d1b84-1793936237.jpg?resize=1920%2C1440",
+          "thread": "t157ancv"
+        },
+        {
+          "id": "s1d5bri",
+          "headline": "Trump axes US$3.8b annual military aid for Israel: ‘they no longer need it’",
+          "url": "https://www.scmp.com/news/world/united-states-canada/article/3373183/trump-axes-us38b-annual-military-aid-israel-they-no-longer-need-it",
+          "source": "scmp",
+          "date": "2026-11-03T15:33:47.000Z",
+          "relevance": "medium",
+          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/03/1597cea9-f6b5-4868-bf82-67f5e06c0f95_b8a34e86.jpg?itok=tNAvupUo&v=1793720017",
+          "why": "President Trump announced on US election day that Washington will end military aid to Israel, saying Israel no longer needs it. Any effect on India would be indirect, through shifts in Middle East security and Israel's defence relationships.",
+          "implications": [
+            "Outlets report different annual amounts for the aid being ended, so the scale of the change to Israel's defence funding is unclear.",
+            "The Guardian reports that the announcement appeared aimed at voters sceptical of US support for Israel and the Gaza war, suggesting a domestic political motive rather than a negotiated policy shift.",
+            "A reduction in US support could lead Israel to rely more on other defence partners, which may affect its cooperation with buyers such as India.",
+            "Michigan senator-elect Abdul El-Sayed welcomed the plan and called for arms sales to end, which indicates pressure in Congress to go further."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-04T20:00:43.015Z",
+            "tier": "standard",
+            "primary": "conflicting",
+            "complement": null,
+            "features": [
+              "conflict",
+              "allocation",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "No direct channel to India is reported. Any effect would come indirectly through Israel's defence industry, which supplies India, or through wider Middle East security."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "The Guardian reports that aid would end by the end of this year, and any knock-on effects on defence partnerships would take longer."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "Four outlets report Trump's on-record announcement, but they give different aid figures, and how or whether Congress implements it is unconfirmed."
+            },
+            "outlets": 4,
+            "affected": [
+              {
+                "group": "Government finances",
+                "direction": "unclear",
+                "what": "defence procurement ties",
+                "effect": "If Israel loses US financing, its defence firms could seek more export and co-production deals, which may affect India's defence purchasing relationship.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Action in Congress to approve, block or modify the end of military aid to Israel",
+                "why": "Congress controls spending, so its response will show whether Trump's announcement becomes binding policy.",
+                "when": "end of this year",
+                "where": "US Congress"
+              },
+              {
+                "what": "The Israeli government's official response to the aid announcement",
+                "why": "It would indicate whether Israel plans to replace US funding through other partners or its own budget.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "US military aid to Israel has mainly taken the form of financing that Israel spends on American-made weapons, under multi-year agreements approved and funded through Congress.",
+              "India has a close defence relationship with Israel and buys Israeli military equipment, so changes in Israel's defence finances could indirectly touch Indian procurement and co-production."
+            ],
+            "terms": [
+              {
+                "term": "10-year security aid deal",
+                "meaning": "A long-term US–Israel agreement setting annual levels of American military financing, largely used to buy US-made weapons."
+              }
+            ],
+            "frameworks": {
+              "conflicting": {
+                "disputed": {
+                  "item": "amount of US military aid to Israel being ended",
+                  "unit": "US dollars"
+                },
+                "accounts": [
+                  {
+                    "outlet": "South China Morning Post",
+                    "value": "US$3.8 billion annual aid under a 10-year deal running until 2028",
+                    "origin": "Trump's announcement and the terms of the security aid deal",
+                    "time": "Tuesday"
+                  },
+                  {
+                    "outlet": "The Guardian",
+                    "value": "$4bn annual payment",
+                    "origin": "Trump's election day announcement",
+                    "time": "3 Nov 2026"
+                  },
+                  {
+                    "outlet": "ABC News",
+                    "value": "$5.7b in aid",
+                    "origin": "Trump's announcement",
+                    "time": "3 Nov 2026"
+                  }
+                ],
+                "agreed": [
+                  "Donald Trump announced on US election day that the United States would end military aid to Israel.",
+                  "Trump framed the decision as Israel no longer needing the aid.",
+                  "The announcement came as a surprise during the US midterm elections."
+                ],
+                "explanations": [
+                  {
+                    "type": "different definition",
+                    "note": "The Guardian's $4bn figure may be a rounding of the US$3.8 billion annual amount set out in the 10-year deal."
+                  },
+                  {
+                    "type": "unexplained",
+                    "note": "The basis of ABC News's $5.7b figure has not been reported; it may include funding beyond the annual deal amount, but this has not been confirmed."
+                  }
+                ],
+                "status": "unresolved"
+              }
+            }
+          },
+          "place": {
+            "name": "Washington",
+            "country": "United States",
+            "lat": 38.9,
+            "lon": -77,
+            "involves": [
+              "Israel"
+            ]
+          },
+          "reports": [
+            {
+              "source": "scmp",
+              "headline": "Trump axes US$3.8b annual military aid for Israel: ‘they no longer need it’",
+              "url": "https://www.scmp.com/news/world/united-states-canada/article/3373183/trump-axes-us38b-annual-military-aid-israel-they-no-longer-need-it",
+              "date": "2026-11-03T15:33:47.000Z",
+              "kind": "hard",
+              "summary": "US President Donald Trump said on Tuesday that Washington was ending a 10-year security aid deal with Israel that allowed US$3.8 billion in annual aid to its ally until 2028.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/03/1597cea9-f6b5-4868-bf82-67f5e06c0f95_b8a34e86.jpg?itok=tNAvupUo&v=1793720017"
+            },
+            {
+              "source": "guardian",
+              "headline": "Trump claims US will end military aid to Israel by end of this year",
+              "url": "https://www.theguardian.com/us-news/2026/nov/03/donald-trump-usa-end-military-aid-to-israel-end-year-midterms",
+              "date": "2026-11-03T17:17:11.000Z",
+              "kind": "hard",
+              "summary": "US president makes surprise election day announcement, saying country does not ‘need’ $4bn annual payment",
+              "summaryV": 3,
+              "lede": "Donald Trump has said that the US will end military aid to Israel at the end of this year in a surprise election day announcement that appeared to be targeted at voters sceptical of US support for Israel and the war in Gaza .",
+              "image": "https://i.guim.co.uk/img/media/60b8ee8c7578d9966d060062362646a8be71b3ad/225_0_2339_1872/master/2339.jpg?width=700&quality=85&auto=format&fit=max&s=f699d602b83c8cd2a47812eb49f8f4d5"
+            },
+            {
+              "source": "abc",
+              "headline": "Trump says US will stop $5.7b in aid to Israel in surprise announcement",
+              "url": "https://www.abc.net.au/news/2026-11-04/us-midterms-daily-news-briefing/107340542",
+              "date": "2026-11-03T20:15:35.000Z",
+              "kind": "breaking",
+              "summary": "Donald Trump announces the US will cut funding to Israel in a move meant to take away a \"bad talking point\" from left-wing Democrats. Here's what to know about the US midterms today.",
+              "summaryV": 3,
+              "image": "https://live-production.wcms.abc-cdn.net.au/ad017d51dda3fc032a052580508be2d7?impolicy=wcms_crop_resize&cropH=1688&cropW=3000&xPos=0&yPos=156&width=862&height=485"
+            },
+            {
+              "source": "npr",
+              "headline": "Abdul El-Sayed welcomes Trump's plan to cut Israel aid, calls for end to arms sales",
+              "url": "https://www.npr.org/2026/11/04/nx-s1-6028702/abdul-el-sayed-michigan-senate-israel-aid",
+              "date": "2026-11-04T13:38:09.000Z",
+              "kind": "feature",
+              "summary": "Michigan's first Muslim senator-elect, Abdul El-Sayed, discusses his historic victory, an unlikely agreement with Trump on Israel military aid and the political divisions that remain.",
+              "summaryV": 3,
+              "image": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x1999+0+0/resize/3000x1999!/quality/85/format/webp/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F51%2F4b%2Ffc7b4ff9460d9cd09e9513f98b6f%2Fgettyimages-2303432872.jpg"
+            },
+            {
+              "source": "scmp",
+              "headline": "Trump’s Israel aid cut reveals push to trade grants for tech cooperation",
+              "url": "https://www.scmp.com/week-asia/politics/article/3373487/trumps-israel-aid-cut-reveals-push-trade-grants-tech-cooperation",
+              "date": "2026-11-06T05:00:29.000Z",
+              "kind": "hard",
+              "summary": "The close defence relationship between the United States and Israel is set to be restructured over the coming two years, with billions of dollars in direct annual military aid being phased out in favour of joint weapons technology programmes.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/06/8ace9d68-ced5-4208-b5c6-cb32a86453a6_795f342b.jpg?itok=xrhv-WKK&v=1793936509"
+            }
+          ],
+          "finChecked": true,
+          "thread": "t1iupw6f"
+        },
+        {
           "id": "smf2pqa",
           "headline": "Will US midterm election results spare Gulf states from further war?",
           "url": "https://www.dw.com/en/will-us-midterm-election-results-spare-gulf-states-from-further-war/a-79868398",
@@ -52406,178 +53855,6 @@
           ],
           "finChecked": true,
           "thread": "t2ogxay"
-        },
-        {
-          "id": "s1d5bri",
-          "headline": "Trump axes US$3.8b annual military aid for Israel: ‘they no longer need it’",
-          "url": "https://www.scmp.com/news/world/united-states-canada/article/3373183/trump-axes-us38b-annual-military-aid-israel-they-no-longer-need-it",
-          "source": "scmp",
-          "date": "2026-11-03T15:33:47.000Z",
-          "relevance": "medium",
-          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/03/1597cea9-f6b5-4868-bf82-67f5e06c0f95_b8a34e86.jpg?itok=tNAvupUo&v=1793720017",
-          "why": "President Trump announced on US election day that Washington will end military aid to Israel, saying Israel no longer needs it. Any effect on India would be indirect, through shifts in Middle East security and Israel's defence relationships.",
-          "implications": [
-            "Outlets report different annual amounts for the aid being ended, so the scale of the change to Israel's defence funding is unclear.",
-            "The Guardian reports that the announcement appeared aimed at voters sceptical of US support for Israel and the Gaza war, suggesting a domestic political motive rather than a negotiated policy shift.",
-            "A reduction in US support could lead Israel to rely more on other defence partners, which may affect its cooperation with buyers such as India.",
-            "Michigan senator-elect Abdul El-Sayed welcomed the plan and called for arms sales to end, which indicates pressure in Congress to go further."
-          ],
-          "analysis": {
-            "v": 3,
-            "at": "2026-11-04T20:00:43.015Z",
-            "tier": "standard",
-            "primary": "conflicting",
-            "complement": null,
-            "features": [
-              "conflict",
-              "allocation",
-              "pending_outcome"
-            ],
-            "exposure": {
-              "level": "low",
-              "reason": "No direct channel to India is reported. Any effect would come indirectly through Israel's defence industry, which supplies India, or through wider Middle East security."
-            },
-            "horizon": {
-              "value": "months",
-              "reason": "The Guardian reports that aid would end by the end of this year, and any knock-on effects on defence partnerships would take longer."
-            },
-            "confidence": {
-              "level": "medium",
-              "reason": "Four outlets report Trump's on-record announcement, but they give different aid figures, and how or whether Congress implements it is unconfirmed."
-            },
-            "outlets": 4,
-            "affected": [
-              {
-                "group": "Government finances",
-                "direction": "unclear",
-                "what": "defence procurement ties",
-                "effect": "If Israel loses US financing, its defence firms could seek more export and co-production deals, which may affect India's defence purchasing relationship.",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "Action in Congress to approve, block or modify the end of military aid to Israel",
-                "why": "Congress controls spending, so its response will show whether Trump's announcement becomes binding policy.",
-                "when": "end of this year",
-                "where": "US Congress"
-              },
-              {
-                "what": "The Israeli government's official response to the aid announcement",
-                "why": "It would indicate whether Israel plans to replace US funding through other partners or its own budget.",
-                "when": "",
-                "where": ""
-              }
-            ],
-            "context": [
-              "US military aid to Israel has mainly taken the form of financing that Israel spends on American-made weapons, under multi-year agreements approved and funded through Congress.",
-              "India has a close defence relationship with Israel and buys Israeli military equipment, so changes in Israel's defence finances could indirectly touch Indian procurement and co-production."
-            ],
-            "terms": [
-              {
-                "term": "10-year security aid deal",
-                "meaning": "A long-term US–Israel agreement setting annual levels of American military financing, largely used to buy US-made weapons."
-              }
-            ],
-            "frameworks": {
-              "conflicting": {
-                "disputed": {
-                  "item": "amount of US military aid to Israel being ended",
-                  "unit": "US dollars"
-                },
-                "accounts": [
-                  {
-                    "outlet": "South China Morning Post",
-                    "value": "US$3.8 billion annual aid under a 10-year deal running until 2028",
-                    "origin": "Trump's announcement and the terms of the security aid deal",
-                    "time": "Tuesday"
-                  },
-                  {
-                    "outlet": "The Guardian",
-                    "value": "$4bn annual payment",
-                    "origin": "Trump's election day announcement",
-                    "time": "3 Nov 2026"
-                  },
-                  {
-                    "outlet": "ABC News",
-                    "value": "$5.7b in aid",
-                    "origin": "Trump's announcement",
-                    "time": "3 Nov 2026"
-                  }
-                ],
-                "agreed": [
-                  "Donald Trump announced on US election day that the United States would end military aid to Israel.",
-                  "Trump framed the decision as Israel no longer needing the aid.",
-                  "The announcement came as a surprise during the US midterm elections."
-                ],
-                "explanations": [
-                  {
-                    "type": "different definition",
-                    "note": "The Guardian's $4bn figure may be a rounding of the US$3.8 billion annual amount set out in the 10-year deal."
-                  },
-                  {
-                    "type": "unexplained",
-                    "note": "The basis of ABC News's $5.7b figure has not been reported; it may include funding beyond the annual deal amount, but this has not been confirmed."
-                  }
-                ],
-                "status": "unresolved"
-              }
-            }
-          },
-          "place": {
-            "name": "Washington",
-            "country": "United States",
-            "lat": 38.9,
-            "lon": -77,
-            "involves": [
-              "Israel"
-            ]
-          },
-          "reports": [
-            {
-              "source": "scmp",
-              "headline": "Trump axes US$3.8b annual military aid for Israel: ‘they no longer need it’",
-              "url": "https://www.scmp.com/news/world/united-states-canada/article/3373183/trump-axes-us38b-annual-military-aid-israel-they-no-longer-need-it",
-              "date": "2026-11-03T15:33:47.000Z",
-              "kind": "hard",
-              "summary": "US President Donald Trump said on Tuesday that Washington was ending a 10-year security aid deal with Israel that allowed US$3.8 billion in annual aid to its ally until 2028.",
-              "summaryV": 3,
-              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/03/1597cea9-f6b5-4868-bf82-67f5e06c0f95_b8a34e86.jpg?itok=tNAvupUo&v=1793720017"
-            },
-            {
-              "source": "guardian",
-              "headline": "Trump claims US will end military aid to Israel by end of this year",
-              "url": "https://www.theguardian.com/us-news/2026/nov/03/donald-trump-usa-end-military-aid-to-israel-end-year-midterms",
-              "date": "2026-11-03T17:17:11.000Z",
-              "kind": "hard",
-              "summary": "US president makes surprise election day announcement, saying country does not ‘need’ $4bn annual payment",
-              "summaryV": 3,
-              "lede": "Donald Trump has said that the US will end military aid to Israel at the end of this year in a surprise election day announcement that appeared to be targeted at voters sceptical of US support for Israel and the war in Gaza .",
-              "image": "https://i.guim.co.uk/img/media/60b8ee8c7578d9966d060062362646a8be71b3ad/225_0_2339_1872/master/2339.jpg?width=700&quality=85&auto=format&fit=max&s=f699d602b83c8cd2a47812eb49f8f4d5"
-            },
-            {
-              "source": "abc",
-              "headline": "Trump says US will stop $5.7b in aid to Israel in surprise announcement",
-              "url": "https://www.abc.net.au/news/2026-11-04/us-midterms-daily-news-briefing/107340542",
-              "date": "2026-11-03T20:15:35.000Z",
-              "kind": "breaking",
-              "summary": "Donald Trump announces the US will cut funding to Israel in a move meant to take away a \"bad talking point\" from left-wing Democrats. Here's what to know about the US midterms today.",
-              "summaryV": 3,
-              "image": "https://live-production.wcms.abc-cdn.net.au/ad017d51dda3fc032a052580508be2d7?impolicy=wcms_crop_resize&cropH=1688&cropW=3000&xPos=0&yPos=156&width=862&height=485"
-            },
-            {
-              "source": "npr",
-              "headline": "Abdul El-Sayed welcomes Trump's plan to cut Israel aid, calls for end to arms sales",
-              "url": "https://www.npr.org/2026/11/04/nx-s1-6028702/abdul-el-sayed-michigan-senate-israel-aid",
-              "date": "2026-11-04T13:38:09.000Z",
-              "kind": "feature",
-              "summary": "Michigan's first Muslim senator-elect, Abdul El-Sayed, discusses his historic victory, an unlikely agreement with Trump on Israel military aid and the political divisions that remain.",
-              "summaryV": 3,
-              "image": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x1999+0+0/resize/3000x1999!/quality/85/format/webp/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F51%2F4b%2Ffc7b4ff9460d9cd09e9513f98b6f%2Fgettyimages-2303432872.jpg"
-            }
-          ],
-          "finChecked": true,
-          "thread": "t1iupw6f"
         },
         {
           "id": "sb5gv3k",
@@ -61681,14 +62958,14 @@
   "source": "BBC News & The Guardian & NPR & Al Jazeera & MercoPress & ABC News & The New York Times & CNBC & CBS News & DW & France 24 & Africanews & South China Morning Post & The Hindu & Mint & The Indian Express",
   "lastRun": {
     "filter": {
-      "judged": 97,
-      "kept": 12,
-      "guarded": 1
+      "judged": 163,
+      "kept": 26,
+      "guarded": 0
     },
     "health": {
       "day": "2026-11-06",
-      "newStories24h": 16,
-      "keepRate2d": 0.098
+      "newStories24h": 24,
+      "keepRate2d": 0.112
     },
     "wars": {
       "linked": 0,
@@ -61697,49 +62974,64 @@
     },
     "places": {
       "labelled": 0,
-      "none": 0,
+      "none": 2,
       "waiting": 0
     },
     "skipped": {
-      "since": "2026-11-05T20:18:09.420Z",
+      "since": "2026-11-06T01:41:47.780Z",
       "counts": {
-        "live_blog": 3,
-        "section": 14
+        "section": 29,
+        "video_audio": 1,
+        "live_blog": 7,
+        "briefing_newsletter": 1,
+        "podcast_quiz_gallery": 2
       },
       "examples": {
-        "live_blog": [
-          "Beau Lamarre-Condon trial live updates: double murder accused tells court of ‘outer-body experience’ after shootings",
-          "US elections 2026 live: Democrats exceed 250 House seats as blue wave sweeping Congress grows",
-          "Iran war live: Trump warns US may have to ‘destroy’ rest of Iran"
-        ],
         "section": [
-          "Powerhouse Parramatta opens this weekend – and it’s dazzling inside and out",
-          "Israeli settlers set fire to Palestinian olive grove near Ramallah",
-          "Spanish footballer Jesus de Miguel mourned by family and friends",
-          "Israeli demolitions displace more than 100 Palestinians in Biddu",
-          "Hoax bomb threats force emergency landings, evacuations across Europe"
+          "Could you live on a remote island as a job?",
+          "‘Clicky Ponting’ cheating scandal cricketer banned and club relegated",
+          "M&S takes on John Lewis in Christmas ad battle with topless ‘shredded Santa’",
+          "Week in wildlife: an autumnal deer, golden jackals and an oily-kneed beetle",
+          "There is a showdown looming in the Democratic party over support for Israel | Moustafa Bayoumi"
+        ],
+        "video_audio": [
+          "Watch: Moment woman rescues young koala from large snake"
+        ],
+        "live_blog": [
+          "Beau Lamarre-Condon trial: prosecution begins cross-examination of double murder accused – as it happened",
+          "European skies on high alert after hoax bomb threats this week – Europe live",
+          "Burnham to force employers to publish salaries on job ads in latest government ‘small fix’ – UK politics live",
+          "US midterm elections 2026 live: Democrats exceed 250 House seats as blue wave sweeping Congress grows",
+          "Democrats flip more House seats – as it happened"
+        ],
+        "briefing_newsletter": [
+          "Friday briefing: ​After a week of disruption, is living with threats our new normal?"
+        ],
+        "podcast_quiz_gallery": [
+          "Delhi braces for ‘pollution season’ as smog shrouds India’s capital – in pictures",
+          "Upside-down homes for sale in England – in pictures"
         ]
       }
     },
     "finance": {
       "moved": 0,
-      "checked": 1
+      "checked": 4
     },
-    "analysed": 97,
-    "added": 2,
-    "merged": 9,
-    "rejected": 86,
+    "analysed": 163,
+    "added": 11,
+    "merged": 15,
+    "rejected": 137,
     "failedBatches": 0,
     "feeds": {
       "bbc": {
         "feedsOk": 6,
         "feedsFailed": 0,
-        "items": 160
+        "items": 164
       },
       "guardian": {
         "feedsOk": 7,
         "feedsFailed": 0,
-        "items": 196
+        "items": 192
       },
       "npr": {
         "feedsOk": 4,
@@ -61749,12 +63041,12 @@
       "aljazeera": {
         "feedsOk": 1,
         "feedsFailed": 0,
-        "items": 13
+        "items": 15
       },
       "mercopress": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 20
+        "items": 30
       },
       "abc": {
         "feedsOk": 3,
@@ -61764,7 +63056,7 @@
       "nyt": {
         "feedsOk": 5,
         "feedsFailed": 0,
-        "items": 174
+        "items": 176
       },
       "cnbc": {
         "feedsOk": 3,
@@ -61774,7 +63066,7 @@
       "cbs": {
         "feedsOk": 2,
         "feedsFailed": 0,
-        "items": 48
+        "items": 47
       },
       "dw": {
         "feedsOk": 3,
@@ -61784,7 +63076,7 @@
       "france24": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 73
+        "items": 66
       },
       "africanews": {
         "feedsOk": 1,
@@ -61798,18 +63090,18 @@
       }
     },
     "shareImages": {
-      "tried": 3,
-      "found": 3,
+      "tried": 6,
+      "found": 6,
       "summaries": 0
     },
     "threads": {
-      "assigned": 2,
-      "created": 0,
+      "assigned": 11,
+      "created": 4,
       "failedBatches": 0
     },
     "summaries": {
       "written": 0,
-      "due": 2
+      "due": 8
     },
     "kinds": {
       "labelled": 0,
@@ -61818,95 +63110,48 @@
     },
     "frames": {
       "done": 0,
-      "waiting": 2,
+      "waiting": 6,
       "failedBatches": 0,
       "budgetStopped": true
     },
     "stats": {
-      "searched": 8,
+      "searched": 5,
       "found": 0,
-      "reused": 5,
-      "none": 3,
+      "reused": 0,
+      "none": 0,
       "failed": 0,
       "proposed": 0,
       "droppedPoints": 0,
-      "pagesFetched": 2,
-      "samples": [
-        {
-          "headline": "The October jobs report is out Friday. Here's everything to expect",
-          "result": "reused saved series"
-        },
-        {
-          "headline": "Ukraine defies Trump to resume attacks on Russian oil refineries",
-          "result": "reused saved series"
-        },
-        {
-          "headline": "EU to limit Chinese hybrid vehicle imports to 350,000 a year",
-          "result": "none",
-          "proposed": 0,
-          "checked": 0,
-          "pagesFetched": 2
-        },
-        {
-          "headline": "India’s retail inflation jumps to 5.54% in September, above estimates",
-          "result": "reused saved series"
-        },
-        {
-          "headline": "US forces disable ship ‘attempting to run’ Iran blockade in Gulf of Oman",
-          "result": "reused saved series"
-        },
-        {
-          "headline": "Iran says U.S. election results show Americans reject the war",
-          "result": "nothing",
-          "proposed": 0,
-          "checked": 0,
-          "pagesFetched": 0
-        },
-        {
-          "headline": "Indian national killed, New Zealander injured in Mount Everest helicopter crash",
-          "result": "no saved series; search kept for data and in-depth stories"
-        },
-        {
-          "headline": "India's opposition set to hold mega rally seeking election chief's resignation",
-          "result": "reused saved series"
-        }
-      ]
+      "pagesFetched": 0,
+      "samples": [],
+      "budgetStopped": true
     },
     "models": {
       "filter": {
         "model": "claude-haiku-5-5",
-        "calls": 16,
-        "inputTokens": 58921,
-        "outputTokens": 19365,
-        "cost": 0.0156
+        "calls": 17,
+        "inputTokens": 60737,
+        "outputTokens": 27452,
+        "cost": 0.0197
       },
       "analysis_quick": {
         "model": "claude-sonnet-5-5",
-        "calls": 2,
-        "inputTokens": 6713,
-        "outputTokens": 5767,
-        "cost": 0.071
-      },
-      "stats": {
-        "model": "claude-sonnet-5-5",
-        "calls": 2,
-        "inputTokens": 122821,
-        "outputTokens": 1856,
-        "searches": 2,
-        "fetches": 3,
-        "cost": 0.2842
+        "calls": 6,
+        "inputTokens": 19995,
+        "outputTokens": 22121,
+        "cost": 0.2613
       },
       "threads": {
         "model": "claude-sonnet-5-5",
         "calls": 1,
-        "inputTokens": 8910,
-        "outputTokens": 55,
-        "cost": 0.0184
+        "inputTokens": 10067,
+        "outputTokens": 323,
+        "cost": 0.0234
       }
     },
     "spend": {
-      "thisDesk": 0.3892,
-      "today": 4.2812,
+      "thisDesk": 0.3044,
+      "today": 5.4923,
       "cap": 6
     }
   },
