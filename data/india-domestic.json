@@ -2,7 +2,7 @@
   "schema": 4,
   "region": "India",
   "since": "2026-10-02",
-  "updatedAt": "2026-11-06T11:19:36.065Z",
+  "updatedAt": "2026-11-06T19:52:45.192Z",
   "sectors": [
     {
       "id": "energy",
@@ -16,15 +16,17 @@
           "date": "2026-11-06T11:10:43.000Z",
           "relevance": "high",
           "image": "https://th-i.thgim.com/public/incoming/hgef4b/article71673996.ece/alternates/LANDSCAPE_1200/_JAI8945.JPG",
-          "why": "Lab tests show the ethanol share in E20 petrol was as high as 31% in Karnataka. The state's food and consumer affairs minister wants oil marketing companies penalised and a spoilage fund created to compensate consumers.",
+          "why": "Karnataka's government says laboratory tests found up to 31.2% ethanol in petrol sold as E20 by oil marketing companies, including IOCL and HPCL, against a 20% limit. It is demanding penalties and a compensation fund for motorists.",
           "implications": [
-            "If petrol sold at pumps contains more ethanol than labelled, vehicles not designed for such blends may suffer lower mileage or fuel-system wear, and the cost would fall on motorists.",
-            "A compensation fund of the kind demanded would move the cost of any vehicle damage from owners to fuel companies, if it were adopted."
+            "If the findings hold, motorists in Karnataka may have bought fuel that did not match its labelled specification, which could affect engine performance and mileage, especially in older vehicles.",
+            "The state's proposed E20 spoilage fund would compensate consumers whose vehicles are damaged, which would shift the cost of any harm from motorists to the oil marketing companies.",
+            "A dispute between a state government and largely state-owned fuel retailers could prompt wider testing of blending accuracy beyond Karnataka.",
+            "The oil marketing companies' response to the test results has not been reported, so the cause of the high readings remains unexplained."
           ],
           "analysis": {
             "v": 3,
-            "at": "2026-11-06T11:19:32.082Z",
-            "tier": "quick",
+            "at": "2026-11-06T19:51:32.433Z",
+            "tier": "standard",
             "primary": "impact_chain",
             "complement": null,
             "features": [
@@ -32,70 +34,86 @@
             ],
             "exposure": {
               "level": "high",
-              "reason": "Petrol is a household essential and the blend reaches ordinary motorists at the pump. Any gap between the labelled and actual ethanol content could affect vehicle performance and repair costs."
+              "reason": "The issue concerns petrol quality at retail pumps, a household essential. Any confirmed over-blending directly affects motorists' vehicles and fuel economy in Karnataka and possibly elsewhere."
             },
             "horizon": {
               "value": "weeks",
-              "reason": "Any response from fuel companies or regulators, such as retesting or a compensation decision, would take weeks to emerge after the demand."
+              "reason": "The timing depends on how quickly the oil companies, central regulators or courts respond to the Karnataka government's demands for penalties and compensation."
             },
             "confidence": {
               "level": "medium",
-              "reason": "The Hindu reports the lab results and a state minister's on-record demands, but the testing body, sample size and any response from oil marketing companies are not reported."
+              "reason": "The Hindu and Mint both report the Karnataka government's test results, but these remain allegations by one party, and the oil companies' response is unreported."
             },
-            "outlets": 1,
+            "outlets": 2,
             "affected": [
               {
                 "group": "Fuel & LPG users",
                 "direction": "unclear",
-                "what": "petrol quality and vehicle wear",
-                "effect": "Motorists could face lower mileage or engine and fuel-system problems if petrol carries more ethanol than labelled, though the reports do not document any such damage.",
+                "what": "petrol quality at pumps",
+                "effect": "Motorists may have received petrol with more ethanol than labelled, which could reduce mileage or strain vehicle components, depending on whether the tests are confirmed.",
                 "basis": "inferred"
-              },
-              {
-                "group": "A named state or region",
-                "direction": "unclear",
-                "what": "Karnataka fuel quality dispute",
-                "effect": "Karnataka's government is demanding penalties on oil marketing companies and a compensation fund, which puts the state in a dispute with fuel suppliers over blend levels.",
-                "basis": "reported"
               }
             ],
             "watch": [
               {
-                "what": "A response from oil marketing companies or the central petroleum authorities to Karnataka's demand for penalties and a spoilage fund",
-                "why": "It would show whether the lab findings are accepted and whether any compensation or retesting follows.",
+                "what": "Public response from IOCL, HPCL or other oil marketing companies to the Karnataka test results",
+                "why": "It would show whether the companies dispute the findings or accept a blending failure.",
                 "when": "",
-                "where": "Ministry of Petroleum and Natural Gas; Karnataka Department of Food, Civil Suppl"
+                "where": ""
+              },
+              {
+                "what": "Any central government or regulator action on testing or penalising over-blended petrol",
+                "why": "It would indicate whether the issue is treated as national rather than confined to Karnataka.",
+                "when": "",
+                "where": "Ministry of Petroleum and Natural Gas"
+              },
+              {
+                "what": "Creation of an E20 spoilage fund to compensate consumers",
+                "why": "It would show whether motorists will be compensated for vehicle damage.",
+                "when": "",
+                "where": ""
               }
             ],
             "context": [
-              "E20 is petrol blended with ethanol, an alcohol made mainly from sugarcane and grain. India blends ethanol into petrol to reduce its dependence on imported crude oil, and oil marketing companies supply the blended fuel to petrol pumps."
+              "India blends ethanol, made mainly from sugarcane and grains, into petrol. The aim is to cut crude oil imports, which supply most of the country's needs, and to support farmers.",
+              "E20 petrol is meant to contain 20% ethanol. Some motorists have raised concerns that higher blends can reduce mileage and wear components in vehicles not designed for them.",
+              "Fuel retailing in India is dominated by public-sector oil marketing companies, while blending standards and penalties are mainly set at the national level rather than by states."
             ],
             "terms": [
               {
                 "term": "E20",
-                "meaning": "Petrol blended with ethanol, with ethanol intended to make up about one-fifth of the mixture."
+                "meaning": "Petrol blended with 20% ethanol and 80% conventional petrol, now the standard blend sold at most Indian fuel pumps."
+              },
+              {
+                "term": "OMCs",
+                "meaning": "Oil marketing companies, the firms such as IOCL and HPCL that blend, distribute and sell petrol and diesel through retail pumps."
               }
             ],
             "frameworks": {
               "impact_chain": {
                 "chain": [
                   {
-                    "step": "Lab tests find high ethanol share",
-                    "detail": "Lab tests show the ethanol blend in E20 petrol was as high as 31% in Karnataka, well above what the E20 label implies.",
+                    "step": "State tests find excess ethanol",
+                    "detail": "Karnataka's government says laboratory tests of petrol from several oil marketing companies recorded ethanol of up to 31.2%, above the 20% limit for E20 fuel.",
                     "basis": "reported"
                   },
                   {
-                    "step": "State minister demands action",
-                    "detail": "Karnataka's Minister for Food, Civil Supplies and Consumer Affairs demands that oil marketing companies be penalised and that an E20 spoilage fund compensate consumers.",
+                    "step": "State demands penalties and compensation",
+                    "detail": "Karnataka's Minister for Food, Civil Supplies and Consumer Affairs has demanded that the companies be penalised and that an E20 spoilage fund compensate consumers.",
                     "basis": "reported"
                   },
                   {
-                    "step": "Pressure on fuel quality oversight",
-                    "detail": "The demand could prompt retesting, closer checks on blend levels or a compensation mechanism, which may affect how fuel companies handle blending and consumer complaints.",
+                    "step": "Vehicle owners face possible damage",
+                    "detail": "Petrol with higher ethanol than labelled could lower mileage and stress fuel-system parts in vehicles not built for such blends. This could raise repair costs for motorists.",
+                    "basis": "inferred"
+                  },
+                  {
+                    "step": "Wider scrutiny of blending",
+                    "detail": "The allegations could lead to further testing of fuel blending by the oil companies and regulators, possibly in other states as well.",
                     "basis": "inferred"
                   }
                 ],
-                "breaks_if": "The effect would fade if further testing shows blends within permitted limits or the 31% reading proves to be an isolated sample."
+                "breaks_if": "Independent or official retesting finds the petrol within the permitted 20% blend, or the high readings are traced to a testing error rather than to the fuel supplied."
               }
             }
           },
@@ -115,6 +133,16 @@
               "summary": "Minister for Food, Civil Supplies and Consumer Affairs of Karnataka demands penalising OMCs, an E20 spoilage fund to compensate consumers",
               "summaryV": 3,
               "image": "https://th-i.thgim.com/public/incoming/hgef4b/article71673996.ece/alternates/LANDSCAPE_1200/_JAI8945.JPG"
+            },
+            {
+              "source": "mint",
+              "headline": "IOCL, HPCL petrol samples record over 30% ethanol, alleges Karnataka government; demands action",
+              "url": "https://www.livemint.com/news/india/iocl-hpcl-petrol-samples-record-over-30-ethanol-alleges-karnataka-government-demands-action-11793975229451.html",
+              "date": "2026-11-06T15:07:10.000Z",
+              "kind": "hard",
+              "summary": "The Karnataka govt has alleged that petrol samples from several oil marketing companies contained ethanol levels exceeding the prescribed 20% blending limit, with tests recording up to 31.2%.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/11/06/1600x900/logo/e20_1793977539750_Z2r9_1793977539881_3rGT_2a82c7eb-3366-4b95-80dc-6d368af63480_2L4N.jpg"
             }
           ],
           "thread": "tuyivfv"
@@ -226,7 +254,127 @@
               "image": "https://www.livemint.com/lm-img/img/2026/11/06/1600x900/logo/HPCL_Iran_War-AI_image_1793955197182_pELX_1793955197292_FAr7_fd925a80-0f9f-4dc4-814c-dc62c28904b4_Ib5b.jpg"
             }
           ],
-          "thread": "t8nzveu"
+          "thread": "t8nzveu",
+          "stats": {
+            "v": 2,
+            "at": "2026-11-06T19:48:29.087Z",
+            "series": [
+              {
+                "title": "Crude oil and condensate through the Strait of Hormuz",
+                "unit": "million barrels per day",
+                "publisher": "U.S. Energy Information Administration",
+                "points": [
+                  {
+                    "period": "2020",
+                    "value": 14.4,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2021",
+                    "value": 14.7,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2022",
+                    "value": 16.2,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2023",
+                    "value": 15.8,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2024",
+                    "value": 14.6,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "1H25",
+                    "value": 14.7,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "title": "eia.gov",
+                    "domain": "eia.gov"
+                  }
+                ],
+                "domains": [
+                  "eia.gov"
+                ],
+                "dropped": 0,
+                "why": "Both series measure the volume of oil moving through the Strait of Hormuz, which is the flow the story says is rising and that HPCL is struggling to ship.",
+                "reused": true,
+                "checkedAt": "2026-10-13T23:16:50.395Z"
+              },
+              {
+                "title": "Oil flows through the Strait of Hormuz, total",
+                "unit": "million barrels per day",
+                "publisher": "U.S. Energy Information Administration",
+                "points": [
+                  {
+                    "period": "2020",
+                    "value": 19.2,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2021",
+                    "value": 19.7,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2022",
+                    "value": 21.9,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2023",
+                    "value": 21.8,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2024",
+                    "value": 20.7,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "1H25",
+                    "value": 20.9,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "title": "eia.gov",
+                    "domain": "eia.gov"
+                  }
+                ],
+                "domains": [
+                  "eia.gov"
+                ],
+                "dropped": 0,
+                "why": "Both series measure the volume of oil moving through the Strait of Hormuz, which is the flow the story says is rising and that HPCL is struggling to ship.",
+                "reused": true,
+                "checkedAt": "2026-10-13T23:16:50.395Z"
+              }
+            ]
+          }
         },
         {
           "id": "sutrowm",
@@ -455,101 +603,140 @@
           "date": "2026-11-05T02:52:17.000Z",
           "relevance": "medium",
           "image": "https://th-i.thgim.com/public/news/international/qqj2cc/article71668488.ece/alternates/LANDSCAPE_1200/oilprices.jpg",
-          "why": "Brent crude futures fell 1% to $93.5 per barrel, a two-month low, after an 8.7% drop in the previous session. Since India imports most of its crude, lower prices could eventually ease costs for refiners and fuel buyers.",
+          "why": "Brent crude fell nearly 9% in one session to below $94 a barrel after President Trump's midterm setback raised hopes of an end to the Iran war. This lowers the cost of India's crude imports.",
           "implications": [
-            "Indian refiners usually buy crude cargoes some weeks before processing them, so a fall in benchmark prices reaches their costs with a delay.",
-            "A lower crude price also reduces the dollar cost of India's oil imports, which could ease pressure on the trade deficit and the rupee."
+            "Analysts link the fall in oil prices and the opening up of the Strait of Hormuz to a rally in Indian share markets.",
+            "Brent has dropped about 20% this week, so Indian refiners may face lower costs for the crude they buy for future deliveries.",
+            "The price fall rests on hopes that the Iran war will end, so prices could rise again if those hopes fade.",
+            "A lower oil import bill could ease pressure on India's trade balance and on inflation, though Indian consumers would see this only if retail fuel prices change."
           ],
           "analysis": {
             "v": 3,
-            "at": "2026-11-05T11:16:48.415Z",
-            "tier": "quick",
-            "primary": "pass_through",
+            "at": "2026-11-06T19:51:32.433Z",
+            "tier": "standard",
+            "primary": "disruption_map",
             "complement": null,
             "features": [
-              "price_move"
+              "disruption",
+              "armed_conflict",
+              "market_move",
+              "price_move",
+              "fast_moving",
+              "pending_outcome"
             ],
             "exposure": {
               "level": "high",
-              "reason": "Petrol and diesel are household essentials, and crude oil is one of India's largest imports, so oil price moves reach both consumers and the national import bill."
+              "reason": "Crude oil is one of India's largest imports and feeds into petrol, diesel and inflation. A sharp fall in Brent therefore reaches households and businesses across the country."
             },
             "horizon": {
               "value": "weeks",
-              "reason": "Refiners' purchase timing and retail pricing practices mean any change at the pump would come after a lag, if at all."
+              "reason": "Share markets reacted immediately, but lower crude costs reach refiners and any fuel price decisions only as new cargoes are bought and priced."
             },
             "confidence": {
-              "level": "low",
-              "reason": "This rests on one outlet, The Hindu, whose short report gives the price move and links it to a US election result without further sourcing."
+              "level": "medium",
+              "reason": "The price moves are reported by The Hindu and Mint, but the link to an end of the Iran war and to Hormuz reopening rests on analysts' views."
             },
-            "outlets": 1,
+            "outlets": 2,
             "affected": [
               {
+                "group": "Equity & mutual fund investors",
+                "direction": "up",
+                "what": "share market gains",
+                "effect": "Indian share markets rallied as the steep fall in crude prices and the opening up of Hormuz eased worries about costs and supply.",
+                "basis": "reported"
+              },
+              {
                 "group": "Fuel & LPG users",
-                "direction": "down",
-                "what": "petrol and diesel prices",
-                "effect": "If lower crude costs are sustained, they could ease pressure on pump prices, though taxes and retailers' pricing choices may limit any change.",
+                "direction": "unclear",
+                "what": "possible fuel price relief",
+                "effect": "Lower crude costs may ease pressure on petrol and diesel prices, but whether pump prices fall depends on decisions by oil marketing companies.",
                 "basis": "inferred"
               },
               {
                 "group": "Government finances",
-                "direction": "down",
-                "what": "oil import bill",
-                "effect": "A cheaper crude price lowers the dollar value of India's oil imports, which could ease pressure on the trade deficit.",
+                "direction": "up",
+                "what": "smaller oil import bill",
+                "effect": "Cheaper crude could reduce India's import bill and ease pressure on the trade balance and on the rupee.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "Whether Brent crude stays near the two-month low in the coming trading sessions",
-                "why": "A sustained fall would be more likely to feed into refiners' costs than a one-day move.",
+                "what": "Whether Brent crude stays below $100 a barrel in the coming sessions",
+                "why": "A sustained lower price would show the market expects lasting relief rather than a short reaction to the US election result.",
                 "when": "",
                 "where": ""
               },
               {
-                "what": "Any change in petrol and diesel prices announced by Indian fuel retailers",
-                "why": "It would show whether the lower crude price is passing through to consumers.",
+                "what": "Any revision to petrol and diesel retail prices by Indian oil marketing companies",
+                "why": "This would show whether lower international crude prices are reaching Indian consumers.",
                 "when": "",
-                "where": "Indian Oil Corporation"
+                "where": ""
+              },
+              {
+                "what": "Progress towards ending the Iran war and normal tanker traffic through the Strait of Hormuz",
+                "why": "Both underpin the current price fall, so setbacks could reverse it.",
+                "when": "",
+                "where": ""
               }
             ],
             "context": [
-              "India imports most of the crude oil it uses, so global prices strongly influence its import bill.",
-              "Taxes form a large part of petrol and diesel prices in India, so changes in crude costs reach pump prices only partly."
+              "India imports most of the crude oil it refines, so changes in global benchmark prices such as Brent directly affect the country's import bill and refiners' costs.",
+              "Retail petrol and diesel prices in India are set by oil marketing companies and taxes, and they do not always move immediately with international crude prices.",
+              "A large share of Gulf oil and gas exports passes through the Strait of Hormuz, making the route important for Indian energy supplies."
             ],
             "terms": [
               {
                 "term": "Brent crude futures",
-                "meaning": "Brent is the main international benchmark for oil prices, and futures are contracts to buy oil at an agreed price on a later date."
+                "meaning": "Contracts for future delivery of Brent crude, a North Sea oil grade whose price serves as the main global benchmark for oil."
+              },
+              {
+                "term": "Strait of Hormuz",
+                "meaning": "A narrow sea passage between Iran and Oman through which tankers carry oil and gas out of the Persian Gulf."
               }
             ],
             "frameworks": {
-              "pass_through": {
-                "driver": {
-                  "variable": "Brent crude price",
-                  "direction": "down",
-                  "size": "1% to $93.5 per barrel, after an 8.7% slide in the previous…"
+              "disruption_map": {
+                "node": {
+                  "name": "Strait of Hormuz",
+                  "type": "strait",
+                  "status": "partial",
+                  "as_of": "5 Nov 2026"
                 },
-                "product": "petrol & diesel",
-                "rungs": [
+                "cause": {
+                  "text": "The Iran war has disrupted the strait, and analysts link its opening up to hopes that the war will end after President Trump's midterm setback.",
+                  "status": "claimed"
+                },
+                "flows": [
                   {
-                    "stage": "Global crude price to Indian refiners' cost",
-                    "pass": "partial",
-                    "damper": "Refiners buy cargoes weeks ahead and hold inventory, so cheaper crude lowers their average cost only after earlier, costlier purchases are used up.",
-                    "lag": "weeks"
+                    "flow": "crude",
+                    "india_link": "India buys much of its crude from Gulf producers whose tankers use this strait. Indian refiners, and through them fuel users, depend on this supply.",
+                    "basis": "inferred"
                   },
                   {
-                    "stage": "Refiners' cost to retail pump prices",
-                    "pass": "partial",
-                    "damper": "Central and state taxes make up a large part of the pump price, and fuel retailers do not necessarily change prices in step with crude costs.",
-                    "lag": "weeks"
+                    "flow": "LNG",
+                    "india_link": "Liquefied natural gas from Gulf suppliers may move to India through the strait. Fertiliser plants, city gas networks and power producers depend on this gas.",
+                    "basis": "inferred"
                   }
                 ],
-                "end_user": {
-                  "group": "Fuel & LPG users",
-                  "effect": "Motorists may notice little change at the pump in the short term. Any easing would depend on crude staying lower and on retailers' pricing decisions."
-                }
+                "alternatives": [],
+                "duration": "not reported"
               }
-            }
+            },
+            "reading": [
+              {
+                "headline": "Why Brent crude could hit $120 amid Iran war? What it means for India as analysts warn oil prices to remain volatile",
+                "url": "https://www.livemint.com/news/india/why-brent-crude-could-hit-120-amid-iran-war-what-it-means-for-india-as-analysts-warn-oil-prices-to-remain-volatile-11792328648362.html",
+                "source": "mint",
+                "date": "2026-10-18T14:10:20.000Z"
+              },
+              {
+                "headline": "As conflicts disrupt shipping, India’s crude purchases show how fast it can adapt",
+                "url": "https://www.thehindu.com/business/as-conflicts-disrupt-shipping-indias-crude-purchases-show-how-fast-it-can-adapt/article71592461.ece",
+                "source": "thehindu",
+                "date": "2026-10-17T14:40:58.000Z"
+              }
+            ]
           },
           "reports": [
             {
@@ -13630,7 +13817,12 @@
               }
             }
           },
-          "priority": 60
+          "priority": 60,
+          "stats": {
+            "v": 2,
+            "at": "2026-11-06T19:49:11.033Z",
+            "series": []
+          }
         },
         {
           "id": "s1kddcdu",
@@ -13725,7 +13917,74 @@
             }
           ],
           "thread": "ti9k0xi",
-          "priority": 60
+          "priority": 60,
+          "stats": {
+            "v": 2,
+            "at": "2026-11-06T19:49:19.239Z",
+            "series": [
+              {
+                "title": "Indian Railways freight loading, by financial year",
+                "unit": "million tonnes",
+                "publisher": "Ministry of Railways (via Press Information Bureau)",
+                "why": "This shows the long-run annual rise in the tonnage Indian Railways loads, which is the volume that the September growth figure adds to.",
+                "points": [
+                  {
+                    "period": "2019-20",
+                    "value": 1210,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2295944&reg=3&lang=1",
+                    "source": "Full-Fledged DFC Operations and GCT Push Accelerate Freight Growth; Loading Rises Consistently from 1,098 MT in 2014-15 "
+                  },
+                  {
+                    "period": "2020-21",
+                    "value": 1233,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2295944&reg=3&lang=1",
+                    "source": "Full-Fledged DFC Operations and GCT Push Accelerate Freight Growth; Loading Rises Consistently from 1,098 MT in 2014-15 "
+                  },
+                  {
+                    "period": "2021-22",
+                    "value": 1418,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2295944&reg=3&lang=1",
+                    "source": "Full-Fledged DFC Operations and GCT Push Accelerate Freight Growth; Loading Rises Consistently from 1,098 MT in 2014-15 "
+                  },
+                  {
+                    "period": "2022-23",
+                    "value": 1512,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2295944&reg=3&lang=1",
+                    "source": "Full-Fledged DFC Operations and GCT Push Accelerate Freight Growth; Loading Rises Consistently from 1,098 MT in 2014-15 "
+                  },
+                  {
+                    "period": "2023-24",
+                    "value": 1591,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2295944&reg=3&lang=1",
+                    "source": "Full-Fledged DFC Operations and GCT Push Accelerate Freight Growth; Loading Rises Consistently from 1,098 MT in 2014-15 "
+                  },
+                  {
+                    "period": "2024-25",
+                    "value": 1617,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2295944&reg=3&lang=1",
+                    "source": "Full-Fledged DFC Operations and GCT Push Accelerate Freight Growth; Loading Rises Consistently from 1,098 MT in 2014-15 "
+                  },
+                  {
+                    "period": "2025-26",
+                    "value": 1670,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2295944&reg=3&lang=1",
+                    "source": "Full-Fledged DFC Operations and GCT Push Accelerate Freight Growth; Loading Rises Consistently from 1,098 MT in 2014-15 "
+                  }
+                ],
+                "dropped": 0,
+                "sources": [
+                  {
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2295944&reg=3&lang=1",
+                    "title": "Full-Fledged DFC Operations and GCT Push Accelerate Freight Growth; Loading Rises Consistently from 1,098 MT in 2014-15 ",
+                    "domain": "pib.gov.in"
+                  }
+                ],
+                "domains": [
+                  "pib.gov.in"
+                ]
+              }
+            ]
+          }
         },
         {
           "id": "syvkmg9",
@@ -15062,6 +15321,115 @@
       "id": "economy",
       "name": "Economy & Trade",
       "items": [
+        {
+          "id": "sxpbop6",
+          "headline": "India steps up public investment push as external risks mount",
+          "url": "https://www.livemint.com/news/finance-ministry-tells-central-ministries-and-depts-to-keep-capex-engine-running-11793955240379.html",
+          "source": "mint",
+          "date": "2026-11-06T17:02:58.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2026/11/06/1600x900/logo/Sitharaman_1793984549078_aVEe_1793984549468_tcjh_4120418c-c62c-45a8-a6eb-21831f796fbd_Rj4C.jpg",
+          "why": "The Union finance ministry has asked government departments and ministries to prioritise capital expenditure, which is spending on lasting assets. The aim is to keep growth from slowing as external risks mount while private investment is only beginning to revive.",
+          "implications": [
+            "Faster public spending on projects can create orders for construction and materials firms, which may support jobs and incomes in those sectors if departments actually spend the money.",
+            "If private investment strengthens, public spending would be supporting a recovery rather than replacing it. If private investment stalls, the government may have to carry more of the load."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-06T19:47:42.634Z",
+            "tier": "quick",
+            "primary": "winners_losers",
+            "complement": null,
+            "features": [
+              "allocation"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The channel is government spending on projects, which mainly affects construction-linked industries and overall growth. It does not directly change a household essential such as fuel, food prices or loan EMIs."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Departments must plan, tender and spend on projects, so any effect on activity and jobs would build gradually over the rest of the financial year."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single Mint report. The instruction's exact wording, the departments covered and any spending targets have not been confirmed by other outlets."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Government finances",
+                "direction": "mixed",
+                "what": "capital spending priority",
+                "effect": "Directing departments to spend more on capital projects shifts budget priorities towards investment, and it could add pressure on the deficit if overall spending rises.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Manufacturing workers",
+                "direction": "up",
+                "what": "demand from public projects",
+                "effect": "More public investment could raise demand for materials and equipment, which may support factory output and employment in industries that supply infrastructure projects.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Monthly data on central government capital spending showing whether departments are speeding up outlays",
+                "why": "It would show whether the finance ministry's push is translating into actual spending rather than instructions alone.",
+                "when": "",
+                "where": "Controller General of Accounts"
+              }
+            ],
+            "context": [
+              "Capital expenditure means spending on assets such as roads, railways and ports. Governments often lean on it to support growth when private businesses are cautious, because it can be directed more quickly than private spending."
+            ],
+            "terms": [
+              {
+                "term": "capital expenditure",
+                "meaning": "Government spending on lasting assets such as roads, railways and ports, as opposed to day-to-day costs such as salaries and subsidies."
+              }
+            ],
+            "frameworks": {
+              "winners_losers": {
+                "groups": [
+                  {
+                    "group": "Manufacturing workers",
+                    "direction": "gain",
+                    "directness": "indirect",
+                    "mechanism": "If departments speed up capital projects, suppliers of construction materials and equipment could see higher demand, which may support factory jobs and output."
+                  },
+                  {
+                    "group": "Government finances",
+                    "direction": "mixed",
+                    "directness": "direct",
+                    "mechanism": "Prioritising capital expenditure directs public money towards productive investment and supports growth, but it also commits the government to spending that could pressure the deficit."
+                  }
+                ],
+                "not_affected": "Fuel and LPG users are not directly affected, because the instruction concerns how departments spend their budgets and does not change retail energy prices."
+              }
+            }
+          },
+          "place": {
+            "name": "New Delhi",
+            "country": "India",
+            "lat": 28.61,
+            "lon": 77.21
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "India steps up public investment push as external risks mount",
+              "url": "https://www.livemint.com/news/finance-ministry-tells-central-ministries-and-depts-to-keep-capex-engine-running-11793955240379.html",
+              "date": "2026-11-06T17:02:58.000Z",
+              "kind": "hard",
+              "summary": "The Union finance ministry has asked government departments and ministries to prioritise capital expenditure to sustain the flow of productive investment and prevent growth momentum from flagging just as private investment is beginning to revive.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/11/06/1600x900/logo/Sitharaman_1793984549078_aVEe_1793984549468_tcjh_4120418c-c62c-45a8-a6eb-21831f796fbd_Rj4C.jpg"
+            }
+          ],
+          "finChecked": true,
+          "thread": "teiwrn1"
+        },
         {
           "id": "s1bs6imu",
           "headline": "India sees some trade relief, new risks after US midterm vote",
@@ -30074,6 +30442,579 @@
       "name": "Finance",
       "items": [
         {
+          "id": "svohvzw",
+          "headline": "IDBI Bank stake sale: ‘Very, very remote’ chance of finding another buyer at ₹52,000 crore, says DIPAM Secretary Chawla",
+          "url": "https://www.livemint.com/companies/news/idbi-bank-stake-sale-very-very-remote-chance-of-finding-another-buyer-at-52-000-crore-says-dipam-secretary-chawla-11793971089575.html",
+          "source": "mint",
+          "date": "2026-11-06T14:58:22.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2026/11/06/1600x900/logo/Untitled_Design_1793974042031_C1Qh_1793974045755_iyNg_ed44554c-89b1-4489-817c-e1a3c3fc9a4e_LEFb.png",
+          "why": "A senior panel of government secretaries has decided to invite improved offers for the government's stake in IDBI Bank, instead of cancelling the sale or accepting the existing offer. The aim is to maximise the sale value.",
+          "implications": [
+            "A higher price would add to the money the central government receives from selling its holding. This is a source of funds for the budget, although a fresh bidding round may push the receipt later.",
+            "The secretary said it is very unlikely that another buyer would pay ₹52,000 crore, so the outcome depends largely on whether the existing bidder improves its offer."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-06T19:47:12.495Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The effect reaches India through government sale receipts and the ownership of one bank. It does not touch a household essential directly, so the exposure is limited to one industry and public finances."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "The timing depends on how long a fresh round of improved offers and the government's decision on them take, and no date has been reported."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "This rests on a single Mint report, but it quotes the DIPAM Secretary on record; no outcome of the revised bidding has been reported."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Government finances",
+                "direction": "unclear",
+                "what": "sale proceeds and timing",
+                "effect": "Seeking better offers could raise the money the government receives from the stake sale, but a new bidding round may delay when that money arrives.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Submission of improved offers for the government's IDBI Bank stake and the government's decision on them",
+                "why": "It would show whether the revised round raises the sale value or leaves the government choosing again between accepting and cancelling.",
+                "when": "",
+                "where": "Department of Investment and Public Asset Management (DIPAM)"
+              }
+            ],
+            "context": [
+              "Disinvestment means the government sells part or all of its shareholding in a public-sector company. The proceeds are counted as government receipts, and the finance ministry's DIPAM manages such sales."
+            ],
+            "terms": [
+              {
+                "term": "DIPAM",
+                "meaning": "The Department of Investment and Public Asset Management, the finance ministry unit that handles the sale of the government's stakes in public-sector companies."
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Panel chooses to seek improved offers",
+                    "detail": "The Core Group of Secretaries on Disinvestment weighed cancelling the sale, accepting the existing offer and seeking revised bids. It chose to invite improved offers to maximise the transaction value.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Few alternative buyers at that price",
+                    "detail": "DIPAM Secretary Arunish Chawla said the chance of finding another buyer at ₹52,000 crore is very, very remote. This leaves the existing bidder central to any improved offer.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Sale value and timing may change",
+                    "detail": "Improved offers could raise the proceeds the government receives from the stake sale, while the extra round could delay completion of the transfer of the bank.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "No bidder submits a better offer, in which case the sale value would not rise and the government would again have to choose between accepting the existing offer and cancelling."
+              }
+            }
+          },
+          "place": {
+            "name": "New Delhi",
+            "country": "India",
+            "lat": 28.6,
+            "lon": 77.2
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "IDBI Bank stake sale: ‘Very, very remote’ chance of finding another buyer at ₹52,000 crore, says DIPAM Secretary Chawla",
+              "url": "https://www.livemint.com/companies/news/idbi-bank-stake-sale-very-very-remote-chance-of-finding-another-buyer-at-52-000-crore-says-dipam-secretary-chawla-11793971089575.html",
+              "date": "2026-11-06T14:58:22.000Z",
+              "kind": "hard",
+              "summary": "After weighing cancellation, accepting the existing offer and seeking revised bids, the Core Group of Secretaries on Disinvestment chose to invite improved offers for IDBI Bank to maximise the transaction value, DIPAM Secretary Arunish Chawla said.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/11/06/1600x900/logo/Untitled_Design_1793974042031_C1Qh_1793974045755_iyNg_ed44554c-89b1-4489-817c-e1a3c3fc9a4e_LEFb.png"
+            }
+          ],
+          "thread": "t1sn5puo"
+        },
+        {
+          "id": "s1wb6he2",
+          "headline": "India's forex reserves drop by $2.69 bn to $717 bn",
+          "url": "https://www.thehindu.com/business/markets/indias-forex-reserves-drop-by-269-bn-to-717-bn/article71674389.ece",
+          "source": "thehindu",
+          "date": "2026-11-06T13:56:09.000Z",
+          "relevance": "medium",
+          "image": "https://th-i.thgim.com/public/news/national/1vepx5/article71674470.ece/alternates/LANDSCAPE_1200/iStock-1358183711.jpg",
+          "why": "India's foreign exchange reserves fell by $2.69 billion to $717 billion. Experts attribute the drop to the use of Foreign Currency Non-Resident Bank (FCNR[B]) resources and to dollar sales by the Reserve Bank of India (RBI) to defend the rupee.",
+          "implications": [
+            "Dollar sales by the RBI are meant to slow the rupee's fall, which can limit the rise in the rupee cost of imports such as fuel for Indian businesses and households.",
+            "Reserves act as a buffer for import payments and foreign debt, so continued falls would reduce that cushion even though the current level remains large."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-06T19:47:12.493Z",
+            "tier": "quick",
+            "primary": "decoder",
+            "complement": null,
+            "features": [
+              "scheduled"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The channel is rupee stability, which matters most to importers and to firms with foreign-currency payments. A single weekly fall from a large reserve level has limited direct effect on households."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Reserves are reported weekly, and any effect on the rupee and import costs would show over the coming weeks as the RBI's currency operations continue."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single outlet, The Hindu, and the explanation comes from unnamed experts rather than an official statement; the size of the RBI's dollar sales has not been reported."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "rupee stability and import costs",
+                "effect": "RBI dollar sales aimed at defending the rupee may limit rupee weakness and so restrain import costs, but the effect on actual exchange rates has not been reported.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "The next weekly release of India's foreign exchange reserves",
+                "why": "It would show whether reserves keep falling as the RBI continues to defend the rupee.",
+                "when": "",
+                "where": "Reserve Bank of India"
+              }
+            ],
+            "context": [
+              "The RBI holds foreign exchange reserves so that it can sell dollars when the rupee is under pressure and smooth sharp swings. Reserves also change with the value of the assets held, not only with RBI trading."
+            ],
+            "terms": [
+              {
+                "term": "FCNR(B)",
+                "meaning": "Foreign Currency Non-Resident (Bank) deposits are foreign-currency deposits that non-resident Indians hold with Indian banks."
+              }
+            ],
+            "frameworks": {
+              "decoder": {
+                "kind": "release",
+                "headline": {
+                  "label": "India's foreign exchange reserves",
+                  "value": 717,
+                  "unit": "$ billion",
+                  "period": "latest reported week",
+                  "previous": null,
+                  "previousLabel": "Fall of $2.69 billion from the prior reading",
+                  "from": "The Hindu"
+                },
+                "comparisons": [],
+                "drivers": [
+                  {
+                    "name": "Use of FCNR(B) resources",
+                    "direction": "down",
+                    "how": "Experts quoted in the report attribute part of the fall to the deployment of Foreign Currency Non-Resident Bank (FCNR[B]) resources."
+                  },
+                  {
+                    "name": "RBI dollar sales for currency defence",
+                    "direction": "down",
+                    "how": "Experts quoted in the report attribute part of the fall to the RBI selling dollars to defend the rupee."
+                  }
+                ],
+                "decision": null
+              }
+            }
+          },
+          "place": {
+            "name": "Mumbai",
+            "country": "India",
+            "lat": 19.08,
+            "lon": 72.88
+          },
+          "reports": [
+            {
+              "source": "thehindu",
+              "headline": "India's forex reserves drop by $2.69 bn to $717 bn",
+              "url": "https://www.thehindu.com/business/markets/indias-forex-reserves-drop-by-269-bn-to-717-bn/article71674389.ece",
+              "date": "2026-11-06T13:56:09.000Z",
+              "kind": "hard",
+              "summary": "Experts attribute this decline to the deployment of the Foreign Currency Non-Resident Bank (FCNR[B]) resources and also to currency defence put up by RBI through dollar sales",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/news/national/1vepx5/article71674470.ece/alternates/LANDSCAPE_1200/iStock-1358183711.jpg"
+            }
+          ],
+          "stats": {
+            "v": 2,
+            "at": "2026-11-06T19:48:23.315Z",
+            "series": [
+              {
+                "title": "India's total foreign exchange reserves, end of financial year",
+                "unit": "US$ million",
+                "publisher": "Reserve Bank of India",
+                "why": "This is the RBI's own year-end record of total reserves, so it shows the long-run build-up that the latest weekly fall comes after.",
+                "points": [
+                  {
+                    "period": "2018-19",
+                    "value": 412871,
+                    "url": "https://rbi.org.in/Scripts/PublicationsView.aspx?id=23969",
+                    "source": "Publications | Official Website of Reserve Bank of India"
+                  },
+                  {
+                    "period": "2019-20",
+                    "value": 477807,
+                    "url": "https://rbi.org.in/Scripts/PublicationsView.aspx?id=23969",
+                    "source": "Publications | Official Website of Reserve Bank of India"
+                  },
+                  {
+                    "period": "2020-21",
+                    "value": 576984,
+                    "url": "https://rbi.org.in/Scripts/PublicationsView.aspx?id=23969",
+                    "source": "Publications | Official Website of Reserve Bank of India"
+                  },
+                  {
+                    "period": "2021-22",
+                    "value": 607309,
+                    "url": "https://rbi.org.in/Scripts/PublicationsView.aspx?id=23969",
+                    "source": "Publications | Official Website of Reserve Bank of India"
+                  },
+                  {
+                    "period": "2022-23",
+                    "value": 578449,
+                    "url": "https://rbi.org.in/Scripts/PublicationsView.aspx?id=23969",
+                    "source": "Publications | Official Website of Reserve Bank of India"
+                  },
+                  {
+                    "period": "2023-24",
+                    "value": 646419,
+                    "url": "https://rbi.org.in/Scripts/PublicationsView.aspx?id=23969",
+                    "source": "Publications | Official Website of Reserve Bank of India"
+                  },
+                  {
+                    "period": "2024-25",
+                    "value": 668326,
+                    "url": "https://rbi.org.in/Scripts/PublicationsView.aspx?id=23969",
+                    "source": "Publications | Official Website of Reserve Bank of India"
+                  },
+                  {
+                    "period": "2025-26",
+                    "value": 691108,
+                    "url": "https://rbi.org.in/Scripts/PublicationsView.aspx?id=23969",
+                    "source": "Publications | Official Website of Reserve Bank of India"
+                  }
+                ],
+                "dropped": 0,
+                "sources": [
+                  {
+                    "url": "https://rbi.org.in/Scripts/PublicationsView.aspx?id=23969",
+                    "title": "Publications | Official Website of Reserve Bank of India",
+                    "domain": "rbi.org.in"
+                  }
+                ],
+                "domains": [
+                  "rbi.org.in"
+                ]
+              }
+            ]
+          },
+          "thread": "t5sqh80"
+        },
+        {
+          "id": "s1wge1rz",
+          "headline": "SEBI proposes mandatory AML/CFT certification for principal officers of market intermediaries",
+          "url": "https://www.thehindu.com/business/markets/sebi-proposes-mandatory-amlcft-certification-for-principal-officers-of-market-intermediaries/article71674309.ece",
+          "source": "thehindu",
+          "date": "2026-11-06T13:45:02.000Z",
+          "relevance": "medium",
+          "image": "https://th-i.thgim.com/public/incoming/yy5ib9/article71656222.ece/alternates/LANDSCAPE_1200/IMG_PO18_SEBI_2_1_9GGM9C87.jpg",
+          "why": "The Securities and Exchange Board of India (SEBI) has proposed that principal officers of market intermediaries must hold a mandatory anti-money-laundering certification. The aim is to ensure they can spot suspicious transactions and meet reporting duties.",
+          "implications": [
+            "If adopted, brokers and other registered intermediaries would have to make sure their designated principal officer is certified, which could add training and compliance costs for those firms.",
+            "Better-trained principal officers may flag suspicious transactions more reliably, which could strengthen the reporting of possible money laundering through securities markets."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-06T19:47:12.493Z",
+            "tier": "quick",
+            "primary": "policy_tracker",
+            "complement": null,
+            "features": [
+              "policy_stage"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The proposal would create a compliance obligation for registered market intermediaries, so it reaches one industry directly. Ordinary investors are affected only indirectly, through compliance standards at their brokers."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "The measure is only a proposal, and a final decision and any transition period would have to come before certification could become mandatory."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "This rests on a single outlet, The Hindu, reporting a SEBI proposal; the final terms and any deadlines have not been reported."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Equity & mutual fund investors",
+                "direction": "unclear",
+                "what": "intermediary compliance standards",
+                "effect": "Stronger anti-money-laundering checks at brokers and other intermediaries may reduce misuse of market channels, though any direct change for individual investors has not been reported.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "SEBI deciding whether to adopt the certification requirement and setting a deadline for principal officers",
+                "why": "A final decision would show whether the requirement becomes binding and how quickly intermediaries must comply.",
+                "when": "",
+                "where": "SEBI"
+              }
+            ],
+            "context": [
+              "Market intermediaries such as brokers must name a principal officer who reports suspicious transactions to the authorities under India's anti-money-laundering law. SEBI usually issues proposals for comment before turning them into final rules."
+            ],
+            "terms": [
+              {
+                "term": "AML/CFT",
+                "meaning": "Anti-money laundering and countering the financing of terrorism, the set of rules requiring financial firms to detect and report illicit money flows."
+              }
+            ],
+            "frameworks": {
+              "policy_tracker": {
+                "instrument": {
+                  "name": "Proposed mandatory AML/CFT certification for principal officers of market intermediaries",
+                  "issuer": "Securities and Exchange Board of India (SEBI)",
+                  "jurisdiction": "India"
+                },
+                "stages": [
+                  {
+                    "stage": "draft",
+                    "date": "2026-11-06",
+                    "status": "current"
+                  },
+                  {
+                    "stage": "adopted",
+                    "date": "",
+                    "status": "next"
+                  }
+                ],
+                "obligations": [
+                  {
+                    "who": "Principal officers of market intermediaries",
+                    "what": "If the proposal is adopted, they would have to hold a certification showing expertise in spotting suspicious transactions, assessing money-laundering risks and meeting reporting obligations.",
+                    "from": ""
+                  }
+                ],
+                "applies_to_india": "yes",
+                "india_note": "The proposal applies to intermediaries in India's securities markets and would raise the skill requirements for the officers who report suspicious transactions. It is not yet a binding rule."
+              }
+            }
+          },
+          "place": {
+            "name": "Mumbai",
+            "country": "India",
+            "lat": 19.08,
+            "lon": 72.88
+          },
+          "reports": [
+            {
+              "source": "thehindu",
+              "headline": "SEBI proposes mandatory AML/CFT certification for principal officers of market intermediaries",
+              "url": "https://www.thehindu.com/business/markets/sebi-proposes-mandatory-amlcft-certification-for-principal-officers-of-market-intermediaries/article71674309.ece",
+              "date": "2026-11-06T13:45:02.000Z",
+              "kind": "hard",
+              "summary": "The proposal is aimed at ensuring that principal officers possess adequate expertise to identify suspicious transactions, assess money-laundering risks and comply with reporting obligations under the AML/CFT framework",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/incoming/yy5ib9/article71656222.ece/alternates/LANDSCAPE_1200/IMG_PO18_SEBI_2_1_9GGM9C87.jpg"
+            }
+          ],
+          "thread": "t1xnwbl"
+        },
+        {
+          "id": "s4suxwc",
+          "headline": "Rupee surges 52 points to close at 93.89 against U.S. dollar",
+          "url": "https://www.thehindu.com/business/markets/rupee-surges-52-points-to-close-at-9389-against-us-dollar/article71674023.ece",
+          "source": "thehindu",
+          "date": "2026-11-06T12:21:50.000Z",
+          "relevance": "medium",
+          "image": "https://th-i.thgim.com/public/incoming/9rhnrf/article71674105.ece/alternates/LANDSCAPE_1200/istockphoto-1648153748-612x612.jpg",
+          "why": "The rupee gained 52 points to close at 93.89 against the US dollar. Forex traders attributed the rise to a surge in domestic markets and to fears of a slowdown in artificial intelligence spending.",
+          "implications": [
+            "A stronger rupee means each dollar of imports costs fewer rupees, which can ease costs for businesses that buy goods and raw materials abroad.",
+            "Exporters receive fewer rupees for each dollar they earn, so a stronger rupee can trim their rupee revenue."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-06T19:47:12.493Z",
+            "tier": "quick",
+            "primary": "pass_through",
+            "complement": null,
+            "features": [
+              "price_move"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The rupee's value affects the rupee cost of imports and the rupee earnings of exporters. A single day's move of this size is small and is unlikely to reach households quickly."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Importers usually work through stock and contracts priced at earlier exchange rates, so any change in costs appears gradually and only if the rupee holds its gain."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single report from The Hindu that relies on forex traders' views, and the cause of the move is not confirmed by an official source."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Importers & traders",
+                "direction": "down",
+                "what": "rupee cost of imports",
+                "effect": "A stronger rupee lowers the rupee amount needed to pay dollar invoices, which could ease import costs if the gain lasts.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Large exporters",
+                "direction": "down",
+                "what": "rupee earnings per dollar",
+                "effect": "Exporters convert dollar receipts into fewer rupees when the rupee strengthens, which could reduce their rupee revenue.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Whether the rupee holds near its current level against the dollar over the coming sessions",
+                "why": "A sustained move matters for import costs more than a one-day gain does.",
+                "when": "",
+                "where": "Reserve Bank of India"
+              }
+            ],
+            "context": [
+              "India imports most of its crude oil and many other goods, and pays for them in dollars. Rupee movements therefore affect import costs, though retail prices respond slowly and only partly."
+            ],
+            "terms": [
+              {
+                "term": "52 points",
+                "meaning": "In rupee trading a point is one paisa, so the rupee gained 52 paise against the dollar on the day."
+              }
+            ],
+            "frameworks": {
+              "pass_through": {
+                "driver": {
+                  "variable": "Rupee value against the US dollar",
+                  "direction": "up",
+                  "size": "52 points to 93.89"
+                },
+                "product": "other",
+                "rungs": [
+                  {
+                    "stage": "Stronger rupee → Importers' rupee cost of dollar payments",
+                    "pass": "likely",
+                    "damper": "Many importers use forward contracts fixed at earlier rates, and a single day's small move is easily reversed.",
+                    "lag": "days"
+                  },
+                  {
+                    "stage": "Importers' costs → Wholesale prices of imported goods",
+                    "pass": "partial",
+                    "damper": "Stock bought earlier and contracts priced at older exchange rates delay any fall in landed costs.",
+                    "lag": "weeks"
+                  },
+                  {
+                    "stage": "Wholesale prices → Retail prices of imported goods",
+                    "pass": "unclear",
+                    "damper": "Retailers' margins, domestic costs and competition decide whether any saving is passed on to buyers.",
+                    "lag": "months"
+                  }
+                ],
+                "end_user": {
+                  "group": "Importers & traders",
+                  "effect": "Businesses that pay for imports in dollars may notice slightly lower rupee costs if the rupee stays firm. Any benefit for final buyers is likely to be slow and uneven."
+                }
+              }
+            }
+          },
+          "place": {
+            "name": "Mumbai",
+            "country": "India",
+            "lat": 19.08,
+            "lon": 72.88
+          },
+          "reports": [
+            {
+              "source": "thehindu",
+              "headline": "Rupee surges 52 points to close at 93.89 against U.S. dollar",
+              "url": "https://www.thehindu.com/business/markets/rupee-surges-52-points-to-close-at-9389-against-us-dollar/article71674023.ece",
+              "date": "2026-11-06T12:21:50.000Z",
+              "kind": "hard",
+              "summary": "Forex traders said a surge in domestic markets and fears of a slowdown in AI spending also supported the rupee",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/incoming/9rhnrf/article71674105.ece/alternates/LANDSCAPE_1200/istockphoto-1648153748-612x612.jpg"
+            }
+          ],
+          "stats": {
+            "v": 2,
+            "at": "2026-11-06T19:48:27.506Z",
+            "series": [
+              {
+                "title": "Indian rupees per U.S. dollar, annual average",
+                "unit": "Indian rupees per U.S. dollar",
+                "publisher": "Board of Governors of the Federal Reserve System (G.5A)",
+                "points": [
+                  {
+                    "period": "2022",
+                    "value": 78.5792,
+                    "url": "https://www.federalreserve.gov/releases/g5a/current/",
+                    "source": "Federal Reserve Board - Foreign Exchange Rates - G.5A - January 05, 2026"
+                  },
+                  {
+                    "period": "2023",
+                    "value": 82.5708,
+                    "url": "https://www.federalreserve.gov/releases/g5a/current/",
+                    "source": "Federal Reserve Board - Foreign Exchange Rates - G.5A - January 05, 2026"
+                  },
+                  {
+                    "period": "2024",
+                    "value": 83.6566,
+                    "url": "https://www.federalreserve.gov/releases/g5a/current/",
+                    "source": "Federal Reserve Board - Foreign Exchange Rates - G.5A - January 05, 2026"
+                  },
+                  {
+                    "period": "2025",
+                    "value": 87.1468,
+                    "url": "https://www.federalreserve.gov/releases/g5a/current/",
+                    "source": "Federal Reserve Board - Foreign Exchange Rates - G.5A - January 05, 2026"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.federalreserve.gov/releases/g5a/current/",
+                    "title": "Federal Reserve Board - Foreign Exchange Rates - G.5A - January 05, 2026",
+                    "domain": "federalreserve.gov"
+                  }
+                ],
+                "domains": [
+                  "federalreserve.gov"
+                ],
+                "dropped": 0,
+                "why": "This annual average series tracks the Indian rupee against the U.S. dollar, the same exchange rate the story reports on, though at annual rather than daily frequency.",
+                "reused": true,
+                "checkedAt": "2026-10-31T19:32:17.897Z"
+              }
+            ]
+          },
+          "thread": "t5sqh80"
+        },
+        {
           "id": "s12ttatx",
           "headline": "Floods and falling fire rates hurt general insurers in September quarter",
           "url": "https://www.livemint.com/industry/floods-and-falling-fire-rates-hurt-general-insurers-in-september-quarter-11793939120500.html",
@@ -30280,7 +31221,50 @@
               "image": "https://th-i.thgim.com/public/incoming/z4l0l9/article71672996.ece/alternates/LANDSCAPE_1200/20261005326L_vWGMEKA.jpg"
             }
           ],
-          "thread": "t1dc6sy9"
+          "thread": "t1dc6sy9",
+          "stats": {
+            "v": 2,
+            "at": "2026-11-06T19:48:42.760Z",
+            "series": [
+              {
+                "title": "Net FPI investment in India, monthly",
+                "unit": "US$ million",
+                "publisher": "Reserve Bank of India",
+                "why": "Net buying or selling by foreign portfolio investors in Indian securities is the flow the headline credits for market strength.",
+                "points": [
+                  {
+                    "period": "Jun 2025",
+                    "value": 2726,
+                    "url": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=24416",
+                    "source": "RBI Bulletin | Official Website of Reserve Bank of India"
+                  },
+                  {
+                    "period": "May 2026",
+                    "value": -4485,
+                    "url": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=24416",
+                    "source": "RBI Bulletin | Official Website of Reserve Bank of India"
+                  },
+                  {
+                    "period": "Jun 2026",
+                    "value": 2691,
+                    "url": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=24416",
+                    "source": "RBI Bulletin | Official Website of Reserve Bank of India"
+                  }
+                ],
+                "dropped": 0,
+                "sources": [
+                  {
+                    "url": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=24416",
+                    "title": "RBI Bulletin | Official Website of Reserve Bank of India",
+                    "domain": "rbi.org.in"
+                  }
+                ],
+                "domains": [
+                  "rbi.org.in"
+                ]
+              }
+            ]
+          }
         },
         {
           "id": "sw6g0i0",
@@ -30387,7 +31371,68 @@
               "image": "https://www.livemint.com/lm-img/img/2026/11/06/1600x900/logo/pexels-photo-6901511_1790331655751_MwQE_1790331669_1793936426891_eYre_1793936427075_IysH_3ab18961-84e5-4914-8510-8b0e2393ddf2_VbLJ.jpeg"
             }
           ],
-          "thread": "t19u7ep5"
+          "thread": "t19u7ep5",
+          "stats": {
+            "v": 2,
+            "at": "2026-11-06T19:48:55.443Z",
+            "series": [
+              {
+                "title": "India 10-year G-Sec par yield (FBIL), weekly",
+                "unit": "%",
+                "publisher": "Reserve Bank of India",
+                "why": "Banks' treasury income depends on government bond prices, which fall when benchmark yields rise, so this series shows the yield move behind the losses.",
+                "points": [
+                  {
+                    "period": "Week ended Oct 31 2025",
+                    "value": 6.5,
+                    "url": "https://www.rbi.org.in/Scripts/BS_NSDPDisplay.aspx?param=4",
+                    "source": "National Summary Data | Official Website of Reserve Bank of India"
+                  },
+                  {
+                    "period": "Week ended Oct 2 2026",
+                    "value": 7.23,
+                    "url": "https://www.rbi.org.in/Scripts/BS_NSDPDisplay.aspx?param=4",
+                    "source": "National Summary Data | Official Website of Reserve Bank of India"
+                  },
+                  {
+                    "period": "Week ended Oct 9 2026",
+                    "value": 7.37,
+                    "url": "https://www.rbi.org.in/Scripts/BS_NSDPDisplay.aspx?param=4",
+                    "source": "National Summary Data | Official Website of Reserve Bank of India"
+                  },
+                  {
+                    "period": "Week ended Oct 16 2026",
+                    "value": 7.4,
+                    "url": "https://www.rbi.org.in/Scripts/BS_NSDPDisplay.aspx?param=4",
+                    "source": "National Summary Data | Official Website of Reserve Bank of India"
+                  },
+                  {
+                    "period": "Week ended Oct 23 2026",
+                    "value": 7.52,
+                    "url": "https://www.rbi.org.in/Scripts/BS_NSDPDisplay.aspx?param=4",
+                    "source": "National Summary Data | Official Website of Reserve Bank of India"
+                  },
+                  {
+                    "period": "Week ended Oct 30 2026",
+                    "value": 7.45,
+                    "url": "https://www.rbi.org.in/Scripts/BS_NSDPDisplay.aspx?param=4",
+                    "source": "National Summary Data | Official Website of Reserve Bank of India"
+                  }
+                ],
+                "dropped": 0,
+                "sources": [
+                  {
+                    "url": "https://www.rbi.org.in/Scripts/BS_NSDPDisplay.aspx?param=4",
+                    "title": "National Summary Data | Official Website of Reserve Bank of India",
+                    "domain": "rbi.org.in"
+                  }
+                ],
+                "domains": [
+                  "rbi.org.in"
+                ]
+              }
+            ]
+          }
         },
         {
           "id": "sirqp2a",
@@ -31219,79 +32264,115 @@
           "date": "2026-11-02T17:04:12.000Z",
           "relevance": "medium",
           "image": "https://th-i.thgim.com/public/incoming/cees0s/article71658105.ece/alternates/LANDSCAPE_1200/20261102183L.jpg",
-          "why": "The Congress party has asked for a joint parliamentary committee (JPC) inquiry into the sale of IDBI Bank. It alleges valuation irregularities and questions whether the bank's own funds were used by Fairfax to finance its acquisition.",
+          "why": "The government-approved sale of a combined 60.72% stake in IDBI Bank to Fairfax faces new resistance. The Congress party is seeking a parliamentary probe into the bank's valuation, and employees are protesting and demanding that the privatisation be rolled back.",
           "implications": [
-            "The allegations are made by an opposition party and have not been tested. Their weight depends on whether the valuation reports are disclosed and what they show.",
-            "A dispute over valuation could affect confidence in how public-sector bank sales are priced and carried out, which matters for the government's wider asset-sale plans."
+            "The Congress party alleges valuation irregularities and questions whether Fairfax would use the bank's own funds to finance the acquisition. If substantiated, such claims could delay or reshape the deal.",
+            "Employees' protests reflect concerns about how private ownership would affect their jobs and working conditions, and could disrupt the bank's operations if they escalate.",
+            "Because the Centre and the Life Insurance Corporation of India (LIC) jointly hold the stake, the sale price affects both government revenue and the state-owned insurer's balance sheet."
           ],
           "analysis": {
             "v": 3,
-            "at": "2026-11-02T19:34:19.835Z",
-            "tier": "quick",
-            "primary": "impact_chain",
+            "at": "2026-11-06T19:51:32.433Z",
+            "tier": "standard",
+            "primary": "winners_losers",
             "complement": null,
             "features": [
+              "allocation",
               "pending_outcome"
             ],
             "exposure": {
-              "level": "low",
-              "reason": "The reports describe a political demand and allegations about one bank's sale. They name no direct channel to deposits, loans or prices for ordinary households."
+              "level": "medium",
+              "reason": "The dispute concerns ownership of one bank and government disinvestment revenue. It touches bank employees and public finances rather than household loan or deposit terms directly."
             },
             "horizon": {
               "value": "months",
-              "reason": "No date is reported for any inquiry or disclosure, and parliamentary or regulatory scrutiny of a bank sale usually takes months to develop."
+              "reason": "The timing depends on whether the government responds to the probe demand and how long it takes to complete the approved transaction."
             },
             "confidence": {
-              "level": "low",
-              "reason": "This rests on a single outlet, The Hindu, and the claims are made by a political party; no official response or valuation reports are reported."
+              "level": "medium",
+              "reason": "Mint and The Hindu report the approval, protests and probe demand, but the valuation and financing allegations are claims by the Congress party and remain unproven."
             },
-            "outlets": 1,
+            "outlets": 2,
             "affected": [
               {
                 "group": "Government finances",
+                "direction": "mixed",
+                "what": "disinvestment proceeds",
+                "effect": "The government expects revenue from selling its IDBI Bank stake, but a probe or rollback could delay or change those proceeds.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Salaried workers",
                 "direction": "unclear",
-                "what": "credibility of bank sale",
-                "effect": "A contested valuation could complicate the government's plans to raise money by selling stakes in public-sector lenders, though no such effect has been reported.",
+                "what": "bank employees' job conditions",
+                "effect": "IDBI Bank employees are protesting the Fairfax deal over concerns about privatisation and are demanding that it be rolled back.",
+                "basis": "reported"
+              },
+              {
+                "group": "Equity & mutual fund investors",
+                "direction": "unclear",
+                "what": "deal uncertainty",
+                "effect": "Political and employee opposition could add uncertainty over whether and when the change of ownership takes place, which could affect investors holding IDBI Bank shares.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "Whether the government or the bank discloses the valuation reports that the Congress party has demanded",
-                "why": "Disclosure would show whether the valuation allegations have any basis and whether the dispute widens.",
+                "what": "Government response to the Congress party's demand for a Joint Parliamentary Committee probe",
+                "why": "It would show whether the valuation allegations will be formally examined or set aside.",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "Disclosure of the valuation reports behind the IDBI Bank stake sale",
+                "why": "Disclosure would allow the valuation allegations to be tested against the actual figures.",
+                "when": "",
+                "where": "Department of Investment and Public Asset Management"
+              },
+              {
+                "what": "Escalation of IDBI Bank employee protests, such as strikes",
+                "why": "Strikes or wider action would indicate whether opposition could disrupt bank services or pressure the government.",
                 "when": "",
                 "where": ""
               }
             ],
             "context": [
-              "The government has for some years been trying to sell its controlling stake in IDBI Bank. A JPC is formed only through a motion in Parliament, so an opposition demand does not by itself start an inquiry."
+              "The government sells stakes in state-owned companies to raise revenue and reduce its role in commercial businesses. Bank privatisation has repeatedly met opposition from unions and political parties.",
+              "LIC is India's largest life insurer and is owned by the government. It took a controlling stake in IDBI Bank when the bank faced heavy bad loans."
             ],
             "terms": [
               {
                 "term": "JPC",
-                "meaning": "A joint parliamentary committee, made up of members of both Houses of Parliament, set up to investigate a specific matter in detail."
+                "meaning": "Joint Parliamentary Committee, a committee of members from both houses of Parliament set up to investigate a specific matter."
+              },
+              {
+                "term": "LIC",
+                "meaning": "Life Insurance Corporation of India, the state-owned life insurer that co-owns IDBI Bank with the central government."
               }
             ],
             "frameworks": {
-              "impact_chain": {
-                "chain": [
+              "winners_losers": {
+                "groups": [
                   {
-                    "step": "Congress demands a JPC probe",
-                    "detail": "The Congress party has asked for a joint parliamentary committee to examine the sale of IDBI Bank, alleging irregularities in how the bank was valued.",
-                    "basis": "reported"
+                    "group": "Government finances",
+                    "direction": "mixed",
+                    "directness": "direct",
+                    "mechanism": "Selling the Centre's share of the 60.72% stake brings in revenue. However, allegations of undervaluation suggest the government may receive less than critics believe the stake is worth."
                   },
                   {
-                    "step": "Questions over use of bank funds",
-                    "detail": "The party questions whether the bank's own funds were used by Fairfax to finance its acquisition of the bank, and wants the valuation reports made public.",
-                    "basis": "reported"
+                    "group": "Salaried workers",
+                    "direction": "lose",
+                    "directness": "direct",
+                    "mechanism": "IDBI Bank employees oppose the transfer to private ownership under Fairfax and are protesting. This reflects fears that privatisation could worsen their job security or conditions."
                   },
                   {
-                    "step": "Political scrutiny of the sale grows",
-                    "detail": "If the valuation reports are not disclosed, the dispute could continue and may weigh on the credibility of public-sector bank sales.",
-                    "basis": "inferred"
+                    "group": "Equity & mutual fund investors",
+                    "direction": "unclear",
+                    "directness": "indirect",
+                    "mechanism": "Demands for a probe and employee protests create uncertainty over whether and when the deal closes, which could affect investors holding IDBI Bank shares."
                   }
                 ],
-                "breaks_if": "The effect would stop if the valuation reports are disclosed and show no irregularity, or if no committee is formed and the demand fades."
+                "not_affected": "IDBI Bank depositors are not reported to face any change to their accounts, because the dispute concerns the bank's ownership and valuation rather than its day-to-day banking operations."
               }
             }
           },
@@ -44517,6 +45598,149 @@
       "name": "Manufacturing",
       "items": [
         {
+          "id": "s1d3zrfx",
+          "headline": "Wipro, Rockwell, Lohum arms among 12 cos to enter electronics component manufacturing scheme",
+          "url": "https://www.livemint.com/news/wipro-rockwell-lohum-arms-among-12-new-ecms-approvals-worth-7-5k-crore-11793960604998.html",
+          "source": "mint",
+          "date": "2026-11-06T11:24:24.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2026/11/06/1600x900/logo/WIPRO-INDIA--7_1755783324909_1755783337711_1793963534371_v14k_378fa890-ef8e-42d7-8ffa-c72ec7c7a94c_5bhi.JPG",
+          "why": "The IT Ministry has approved 12 more projects worth ₹7,503 crore under the Electronics Component Manufacturing Scheme. The projects will make battery materials, printed-circuit-board inputs and factory equipment in India, with turnover-linked government incentives.",
+          "implications": [
+            "Domestic production of battery materials and circuit-board inputs could reduce Indian electronics makers' reliance on imported components over time.",
+            "Because incentives are linked to turnover, the government's spending will rise only as the approved projects actually produce and sell, which ties the fiscal cost to output.",
+            "New component plants may create factory jobs and supplier demand in the regions where they are built, though locations have not been reported."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-06T19:51:32.433Z",
+            "tier": "standard",
+            "primary": "winners_losers",
+            "complement": null,
+            "features": [
+              "allocation"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The approvals reach India mainly through one industry, electronics component manufacturing, by encouraging investment and local production rather than by changing household prices directly."
+            },
+            "horizon": {
+              "value": "years",
+              "reason": "Factories must be built and begin production before output, jobs and turnover-linked incentive payments materialise."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "Mint and The Hindu both report the government approval of 12 projects worth ₹7,503 crore, but project locations, timelines and job numbers are not reported."
+            },
+            "outlets": 2,
+            "affected": [
+              {
+                "group": "Manufacturing workers",
+                "direction": "up",
+                "what": "factory jobs in components",
+                "effect": "New plants making battery materials, circuit-board inputs and factory equipment could create manufacturing jobs once they are built and running.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Importers & traders",
+                "direction": "mixed",
+                "what": "component import demand",
+                "effect": "Locally made components could gradually replace some imported inputs, which could reduce business for component importers while giving electronics makers domestic sourcing options.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Government finances",
+                "direction": "down",
+                "what": "incentive outlays",
+                "effect": "The government will pay turnover-linked incentives to approved projects, adding to spending as their production and sales grow.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Further project approvals under the Electronics Component Manufacturing Scheme",
+                "why": "Further approvals would show how quickly the government is expanding component manufacturing capacity.",
+                "when": "",
+                "where": "Ministry of Electronics and Information Technology"
+              },
+              {
+                "what": "Start of construction or production at the 12 approved projects",
+                "why": "It would show whether approvals are turning into actual factories and jobs.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "India has become a large assembler of phones and other electronics, but much of the value lies in components that are still largely imported, many of them from China.",
+              "The government has used incentive schemes tied to production or sales to draw manufacturing investment. Component-focused schemes aim to deepen the supply chain beyond final assembly."
+            ],
+            "terms": [
+              {
+                "term": "ECMS",
+                "meaning": "The Electronics Component Manufacturing Scheme, a government programme offering incentives linked to turnover to firms that make electronic components in India."
+              },
+              {
+                "term": "printed-circuit-board",
+                "meaning": "The board that holds and connects the electronic parts inside almost every electronic device."
+              }
+            ],
+            "frameworks": {
+              "winners_losers": {
+                "groups": [
+                  {
+                    "group": "Manufacturing workers",
+                    "direction": "gain",
+                    "directness": "indirect",
+                    "mechanism": "The approved projects to make battery materials, circuit-board inputs and factory equipment may add factory employment once production begins."
+                  },
+                  {
+                    "group": "Importers & traders",
+                    "direction": "mixed",
+                    "directness": "indirect",
+                    "mechanism": "Domestic production of components could displace some imports. This may squeeze component importers while widening sourcing options for electronics assemblers."
+                  },
+                  {
+                    "group": "Government finances",
+                    "direction": "lose",
+                    "directness": "direct",
+                    "mechanism": "The scheme commits the government to turnover-linked incentives, so public spending rises as the approved projects generate sales."
+                  }
+                ],
+                "not_affected": "Shoppers buying phones and laptops are unlikely to see near-term price changes, because the projects make inputs and equipment rather than finished devices, and they have not yet started production."
+              }
+            }
+          },
+          "place": {
+            "name": "New Delhi",
+            "country": "India",
+            "lat": 28.6,
+            "lon": 77.2
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "Wipro, Rockwell, Lohum arms among 12 cos to enter electronics component manufacturing scheme",
+              "url": "https://www.livemint.com/news/wipro-rockwell-lohum-arms-among-12-new-ecms-approvals-worth-7-5k-crore-11793960604998.html",
+              "date": "2026-11-06T11:24:24.000Z",
+              "kind": "hard",
+              "summary": "The govt has approved 12 projects worth ₹7,503 crore under its electronics component manufacturing scheme t produce battery materials, printed-circuit-board inputs and factory equipment",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/11/06/1600x900/logo/WIPRO-INDIA--7_1755783324909_1755783337711_1793963534371_v14k_378fa890-ef8e-42d7-8ffa-c72ec7c7a94c_5bhi.JPG"
+            },
+            {
+              "source": "thehindu",
+              "headline": "IT Ministry approves 12 more projects under ECMS scheme",
+              "url": "https://www.thehindu.com/business/Industry/it-ministry-approves-12-more-projects-under-ecms-scheme/article71673913.ece",
+              "date": "2026-11-06T12:38:10.000Z",
+              "kind": "hard",
+              "summary": "The Electronics Component Manufacturing Scheme (ECMS) allows the government to approve turnover-linked incentives across the component industry.",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/incoming/28j2cu/article71674158.ece/alternates/LANDSCAPE_1200/20261106258L.jpg"
+            }
+          ],
+          "thread": "tuvu25b"
+        },
+        {
           "id": "srhcrq7",
           "headline": "Automobile retail sales fall 24% in October on high base effect a year ago",
           "url": "https://www.thehindu.com/business/Industry/automobile-retail-sales-fall-24-in-october-on-high-base-effect-a-year-ago/article71673102.ece",
@@ -50209,141 +51433,165 @@
           "date": "2026-11-02T06:14:51.000Z",
           "relevance": "high",
           "image": "https://th-i.thgim.com/public/incoming/addiqq/article71655120.ece/alternates/LANDSCAPE_1200/BVR_1625.JPG",
-          "why": "Severe Cyclonic Storm Murasu began making landfall near Ongole in Andhra Pradesh. It brought gale-force winds and heavy rain, cancelled flights, closed schools in Vijayawada and prompted Odisha to evacuate 1.6 lakh people.",
+          "why": "Severe Cyclone Murasu made landfall near Ongole in Andhra Pradesh with winds of 100-110 kmph. It brought extremely heavy rain to Andhra Pradesh and Telangana, and Odisha evacuated 1.6 lakh people.",
           "implications": [
-            "The India Meteorological Department (IMD) expects heavy to extremely heavy rain over three days, mainly in Coastal Andhra Pradesh and Rayalaseema, so flooding risks may continue after landfall.",
-            "More than 20 flights were cancelled at Andhra Pradesh and Chennai airports, including 10 IndiGo flights from Vijayawada, which disrupts air travel across the southern region.",
-            "In Vijayawada, 100 mm of rain inundated roads, and schools and colleges stay closed while the red alert remains in force until the morning of 4 November.",
-            "Odisha's evacuation in five southern districts shows that the storm's reach was expected to extend well beyond the landfall point in Andhra Pradesh."
+            "Vijayawada received 100 mm of rain after a prolonged dry spell, which flooded roads and closed schools and colleges under a red alert.",
+            "All 70 gates of the Prakasam Barrage were opened to release 71,000 cusecs into the Krishna river, which could raise water levels for communities downstream.",
+            "The storm's effects spread inland after landfall, with extremely heavy rain in Telangana's Khammam and Bhadradri Kothagudem districts.",
+            "The cyclone's remnants are bringing fresh heavy rain warnings for Tamil Nadu, Odisha and Andhra Pradesh, so disruption may continue for several days."
           ],
           "analysis": {
             "v": 3,
-            "at": "2026-11-03T19:26:33.813Z",
+            "at": "2026-11-06T19:51:32.434Z",
             "tier": "deep",
             "primary": "disruption_map",
-            "complement": "scenarios",
+            "complement": "winners_losers",
             "features": [
-              "disruption",
-              "fast_moving",
-              "pending_outcome"
+              "fast_moving"
             ],
             "exposure": {
               "level": "high",
-              "reason": "The storm directly threatens the safety, homes and travel of people in coastal Andhra Pradesh, Chennai and southern Odisha through wind, flooding, flight cancellations and evacuations."
+              "reason": "The cyclone directly threatens the safety, homes and movement of people in several southern and eastern states, and Odisha evacuated 1.6 lakh people."
             },
             "horizon": {
               "value": "now",
-              "reason": "Landfall was under way on 2 November, and the heavy rain and the red alert run into 4 November."
+              "reason": "The landfall, flooding and heavy rain warnings are happening now, and the cyclone's remnants continue to drive alerts."
             },
             "confidence": {
               "level": "medium",
-              "reason": "The Hindu and Mint both report the storm, citing the IMD and airport authorities, but these are early reports and the extent of the damage is not yet known."
+              "reason": "The Hindu and Mint report the storm and cite the IMD, but this is a developing event and the extent of damage has not been reported."
             },
             "outlets": 2,
             "affected": [
               {
-                "group": "Travellers & pilgrims",
+                "group": "A named state or region",
                 "direction": "down",
-                "what": "flight availability",
-                "effect": "Airlines cancelled more than 20 flights at Andhra Pradesh and Chennai airports, and IndiGo issued an advisory, disrupting travel plans in the region.",
+                "what": "Coastal Andhra Pradesh, Rayalaseema flooding",
+                "effect": "Residents of Coastal Andhra Pradesh and Rayalaseema face gale-force winds, flooded roads and school closures as the cyclone crosses the coast near Ongole.",
+                "basis": "reported"
+              },
+              {
+                "group": "A named state or region",
+                "direction": "down",
+                "what": "Odisha evacuations",
+                "effect": "Odisha has evacuated 1.6 lakh people, with preparations focused on Ganjam, Gajapati, Malkangiri, Koraput and Kandhamal districts.",
+                "basis": "reported"
+              },
+              {
+                "group": "A named state or region",
+                "direction": "down",
+                "what": "Telangana heavy rain",
+                "effect": "Khammam and Bhadradri Kothagudem districts in Telangana received extremely heavy rain overnight and remain under an orange alert.",
                 "basis": "reported"
               },
               {
                 "group": "Farmers",
-                "direction": "down",
-                "what": "crop damage risk",
-                "effect": "Heavy to extremely heavy rain across Coastal Andhra Pradesh and Rayalaseema could flood fields and damage standing crops.",
+                "direction": "mixed",
+                "what": "crop damage, water availability",
+                "effect": "Heavy rain and flooding could damage standing crops in affected districts, while inflows after a dry spell may add water to rivers and reservoirs.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "The IMD lifting or extending the red alert for Vijayawada and coastal Andhra Pradesh",
-                "why": "It would show whether the worst of the rain is ending or whether the flooding risk persists.",
-                "when": "2026-11-04",
-                "where": "India Meteorological Department"
+                "what": "Fresh IMD warnings as the remnants of Cyclone Murasu move across southern India",
+                "why": "These will show which districts still face heavy rain and how long disruption may last.",
+                "when": "",
+                "where": "India Meteorological Department (IMD)"
               },
               {
-                "what": "Resumption of scheduled flights at Gannavaram Airport in Vijayawada and at Chennai",
-                "why": "It would indicate when air travel in the region returns to normal.",
+                "what": "Water releases at the Prakasam Barrage and flood levels on the Krishna river",
+                "why": "Rising releases would signal a greater flood risk for towns and farmland downstream.",
                 "when": "",
-                "where": "IndiGo travel advisories"
+                "where": ""
               },
               {
-                "what": "Rain and damage reports from the five evacuated districts of southern Odisha",
-                "why": "They would show how far inland and northward the storm's effects reached.",
+                "what": "Damage and crop loss assessments by the Andhra Pradesh, Telangana and Odisha governments",
+                "why": "These will show how severe the losses are and what relief affected people may receive.",
                 "when": "",
-                "where": "Odisha state government"
+                "where": ""
               }
             ],
             "context": [
-              "The weeks after the south-west monsoon withdraws are a peak season for cyclones that form over the Bay of Bengal and strike India's east coast.",
-              "Coastal Andhra Pradesh is a major rice-growing region, so prolonged heavy rain and flooding can damage standing crops and rural roads.",
-              "India's disaster-response system pre-positions national and state rescue teams and evacuates low-lying areas before landfall, which has sharply reduced cyclone deaths in recent decades."
+              "India's east coast is regularly hit by cyclones forming in the Bay of Bengal, especially in the months after the southwest monsoon.",
+              "The India Meteorological Department (IMD) issues colour-coded alerts, with red the most severe, prompting state authorities to evacuate people, close schools and prepare relief.",
+              "A cyclone weakens after landfall, but its remnants can still bring heavy rain and flooding far inland for several days."
             ],
             "terms": [
               {
-                "term": "Severe Cyclonic Storm",
-                "meaning": "An IMD category for a cyclone with sustained winds strong enough to damage structures, ranked above an ordinary cyclonic storm."
+                "term": "landfall",
+                "meaning": "The moment the centre of a cyclone crosses from the sea onto the coast."
               },
               {
-                "term": "NDRF, SDRF",
-                "meaning": "The National Disaster Response Force and the State Disaster Response Forces, specialist teams that carry out rescue and relief during disasters."
+                "term": "cusecs",
+                "meaning": "Cubic feet per second, a unit measuring how much water flows past a point such as a dam or barrage."
               },
               {
                 "term": "red alert",
-                "meaning": "The IMD's highest weather warning level, which signals severe weather that calls for action by authorities and residents."
+                "meaning": "The IMD's highest weather warning, signalling that authorities and residents should take action against severe weather."
               }
             ],
             "frameworks": {
               "disruption_map": {
                 "node": {
-                  "name": "Gannavaram Airport, Vijayawada",
-                  "type": "airport",
+                  "name": "Roads in Vijayawada",
+                  "type": "road",
                   "status": "unknown",
-                  "as_of": "2 Nov 2026"
+                  "as_of": "3 Nov 2026"
                 },
                 "cause": {
-                  "text": "Severe Cyclonic Storm Murasu made landfall near Ongole with winds of 100 to 110 kmph gusting to 120 kmph, which led airlines to cancel flights.",
+                  "text": "Severe Cyclone Murasu made landfall near Ongole and brought 100 mm of continuous rain to Vijayawada, inundating city roads.",
                   "status": "confirmed"
                 },
                 "flows": [
                   {
-                    "flow": "air passengers",
-                    "india_link": "More than 20 flights were cancelled at Andhra Pradesh and Chennai airports. Domestic travellers in the region depend on these flights for business and family travel.",
+                    "flow": "other",
+                    "india_link": "Road travel in Vijayawada has been hit by flooding. Residents, commuters and students depend on these roads, and schools and colleges have been closed.",
                     "basis": "reported"
                   },
                   {
-                    "flow": "other",
-                    "india_link": "Road traffic in Vijayawada was disrupted by inundated roads. Local commuters and goods movement in the city depend on this network.",
-                    "basis": "reported"
+                    "flow": "cargo",
+                    "india_link": "Flooded roads and heavy rain across Andhra Pradesh and Telangana could delay freight moving through the region. Traders and businesses that rely on regular deliveries may be affected.",
+                    "basis": "inferred"
                   }
                 ],
                 "alternatives": [],
-                "duration": "Red alert in force until 4 November morning; heavy rain expected over the next three days"
+                "duration": "Red alert in force until November 4 morning"
               },
-              "scenarios": {
-                "question": "How much damage will Cyclone Murasu cause as it moves inland after landfall near Ongole?",
-                "scenarios": [
+              "winners_losers": {
+                "groups": [
                   {
-                    "name": "Rain eases on schedule",
-                    "what": "The storm weakens inland and the red alert ends on the morning of 4 November, allowing schools to reopen and flights to resume.",
-                    "signal": "The IMD downgrades its warnings for Coastal Andhra Pradesh and airlines restore cancelled services.",
-                    "india_effect": "Disruption would probably be limited to a few days of lost travel, schooling and local business in the affected districts."
+                    "group": "A named state or region",
+                    "direction": "lose",
+                    "directness": "direct",
+                    "mechanism": "Coastal Andhra Pradesh bore the brunt of the cyclone's landfall near Ongole. Winds gusting to 120 kmph and extremely heavy rain flooded roads and closed schools in Vijayawada."
                   },
                   {
-                    "name": "Prolonged extreme rainfall",
-                    "what": "Heavy to extremely heavy rain persists across Coastal Andhra Pradesh and Rayalaseema over the three-day period and causes wider flooding.",
-                    "signal": "The IMD extends its red alert, and flooding is reported beyond Vijayawada.",
-                    "india_effect": "Prolonged flooding could damage crops, roads and homes, extend school closures and raise relief costs for the Andhra Pradesh government."
+                    "group": "A named state or region",
+                    "direction": "lose",
+                    "directness": "direct",
+                    "mechanism": "Odisha evacuated 1.6 lakh people from five districts, disrupting households and daily life while the state prepared for the storm."
                   },
                   {
-                    "name": "Southern Odisha also hit",
-                    "what": "The storm's rain and winds reach the five southern Odisha districts where 1.6 lakh people were evacuated.",
-                    "signal": "Heavy rain or damage is reported in Ganjam, Gajapati, Malkangiri, Koraput or Kandhamal.",
-                    "india_effect": "Relief and recovery work could stretch across two states, and evacuated families may stay in shelters longer."
+                    "group": "A named state or region",
+                    "direction": "lose",
+                    "directness": "direct",
+                    "mechanism": "Extremely heavy overnight rain struck Khammam and Bhadradri Kothagudem in Telangana, which remain under an orange alert."
+                  },
+                  {
+                    "group": "Farmers",
+                    "direction": "mixed",
+                    "directness": "direct",
+                    "mechanism": "Heavy rain and flooding across Andhra Pradesh and Telangana could damage crops. Rain after a prolonged dry spell and higher Krishna river flows may improve water availability."
+                  },
+                  {
+                    "group": "Fishers",
+                    "direction": "lose",
+                    "directness": "direct",
+                    "mechanism": "Gale-force winds along the coast near the landfall point could keep fishing boats in harbour, cutting fishing families' income while warnings remain in force."
                   }
-                ]
+                ],
+                "not_affected": "Residents of Delhi NCR are not facing cyclone-related rain. Their weather concern is shallow fog and worsening air quality."
               }
             }
           },
@@ -55598,6 +56846,307 @@
       "id": "agriculture",
       "name": "Agriculture & Food",
       "items": [
+        {
+          "id": "s6u13b3",
+          "headline": "Sugar output jumps 9.65 lakh tonnes as 184 mills begin crushing",
+          "url": "https://www.thehindu.com/business/sugar-output-jumps-965-lakh-tonnes-as-184-mills-begin-crushing/article71674353.ece",
+          "source": "thehindu",
+          "date": "2026-11-06T13:46:12.000Z",
+          "relevance": "medium",
+          "image": "https://th-i.thgim.com/public/incoming/ssqrqo/article71674447.ece/alternates/LANDSCAPE_1200/IMG_Sugar-productio_GHEA_2_1_OMB3Q6HN.jpg",
+          "why": "Sugar output has risen by 9.65 lakh tonnes as 184 mills began crushing. With 36 lakh tonnes carried over from the previous season, the sugar mills' association, ISMA, says domestic availability remains comfortable.",
+          "implications": [
+            "Ample stocks may limit upward pressure on retail sugar prices, which matters to households and to sweet and beverage makers that use sugar as a raw material.",
+            "As more mills start crushing, cane purchases from farmers continue, so mills' cash flows and their ability to pay growers depend on how the season develops."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-06T19:47:12.493Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "high",
+              "reason": "Sugar is a household food staple, so supply conditions reach consumers through retail prices. Comfortable stocks mean the pressure on prices reported so far is limited."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Output builds as more mills begin crushing, so the effect on market supply and prices would show over the coming weeks of the season."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "This rests on one outlet, The Hindu, quoting ISMA, an industry body; no government figures or price data have been reported."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Food shoppers",
+                "direction": "unclear",
+                "what": "sugar price pressure",
+                "effect": "Comfortable stocks and rising output may keep retail sugar prices from rising sharply, although prices have not been reported.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Farmers",
+                "direction": "unclear",
+                "what": "cane purchases by mills",
+                "effect": "As mills begin crushing, cane growers sell their crop to them, though payment terms and prices have not been reported.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Further ISMA production and stock estimates as more mills begin crushing",
+                "why": "These figures would show whether the comfortable supply position holds as the season progresses.",
+                "when": "",
+                "where": "ISMA"
+              }
+            ],
+            "context": [
+              "Indian mills buy sugarcane from farmers and crush it during a season that begins in the autumn. The government influences sugar prices and supply through rules on exports and on cane diverted to ethanol."
+            ],
+            "terms": [
+              {
+                "term": "ISMA",
+                "meaning": "The national association of Indian sugar mills, which publishes production and stock estimates for the industry."
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Mills begin crushing and output rises",
+                    "detail": "A total of 184 mills have begun crushing, and sugar output has risen by 9.65 lakh tonnes.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Large carried-over stocks add to supply",
+                    "detail": "Opening stocks of 36 lakh tonnes from the previous season add to new output, and ISMA says domestic sugar availability remains comfortable.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Retail prices may stay steady",
+                    "detail": "Ample availability could keep wholesale and retail sugar prices from rising sharply, which would help households and food and beverage makers that buy sugar.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The comfortable supply would not reach consumers if crushing slowed sharply or if more sugar were diverted to exports or ethanol, tightening domestic availability."
+              }
+            }
+          },
+          "place": {
+            "name": "India",
+            "country": "India",
+            "lat": 20.6,
+            "lon": 78.9
+          },
+          "reports": [
+            {
+              "source": "thehindu",
+              "headline": "Sugar output jumps 9.65 lakh tonnes as 184 mills begin crushing",
+              "url": "https://www.thehindu.com/business/sugar-output-jumps-965-lakh-tonnes-as-184-mills-begin-crushing/article71674353.ece",
+              "date": "2026-11-06T13:46:12.000Z",
+              "kind": "hard",
+              "summary": "With opening stocks of 36 lakh tonnes carried over from the previous season, domestic sugar availability remains comfortable, ISMA said.",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/incoming/ssqrqo/article71674447.ece/alternates/LANDSCAPE_1200/IMG_Sugar-productio_GHEA_2_1_OMB3Q6HN.jpg"
+            }
+          ],
+          "thread": "tvubmha"
+        },
+        {
+          "id": "s1orpq1b",
+          "headline": "Diwali gets costlier: Why rising milk, ghee, butter and dry fruit prices are squeezing festive budgets",
+          "url": "https://www.livemint.com/news/india/diwali-gets-costlier-why-rising-milk-ghee-butter-and-dry-fruit-prices-are-squeezing-festive-budgets-11793968267794.html",
+          "source": "mint",
+          "date": "2026-11-06T12:50:03.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2026/11/06/1600x900/logo/Diwali_1793969760289_tl5N_1793969760508_jVoV_dd128db2-9b77-424e-97c3-b66dff6ec302_B57J.png",
+          "why": "Higher prices for milk, ghee, butter, almonds and pistachios are raising the cost of homemade sweets, packaged mithai and corporate Diwali hampers. Supply constraints and rising food inflation are adding to the pressure on festive budgets.",
+          "implications": [
+            "Households that make sweets at home pay more for ingredients, while shops and packaged-sweet makers face higher input costs that they may pass on to buyers.",
+            "Companies that buy Diwali hampers in bulk may have to pay more or reduce what each hamper contains."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-06T19:47:12.493Z",
+            "tier": "quick",
+            "primary": "pass_through",
+            "complement": null,
+            "features": [
+              "price_move"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The higher costs reach households through dairy products and dry fruits used in festive food. These are common but not daily essentials in the way fuel or staple grains are."
+            },
+            "horizon": {
+              "value": "now",
+              "reason": "Festive buying is happening at this time, so shoppers face the higher prices straight away."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single Mint report with no official price data quoted, and the size of the price rises and the causes of the supply constraints are not specified."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Food shoppers",
+                "direction": "down",
+                "what": "festive food affordability",
+                "effect": "Households pay more for milk, ghee, butter, dry fruits and ready-made sweets, which squeezes their festive spending.",
+                "basis": "reported"
+              }
+            ],
+            "watch": [
+              {
+                "what": "The next official food inflation reading, especially for milk and dairy products",
+                "why": "It would show whether the festive price rise is part of a wider and lasting increase in food prices.",
+                "when": "",
+                "where": "Ministry of Statistics and Programme Implementation"
+              }
+            ],
+            "context": [
+              "Festive demand regularly lifts the price of dairy products and dry fruits, because sweet makers and gift sellers buy in large volumes over a short period. Constrained supply makes such increases larger."
+            ],
+            "terms": [],
+            "frameworks": {
+              "pass_through": {
+                "driver": {
+                  "variable": "Prices of milk, ghee, butter and dry fruits",
+                  "direction": "up",
+                  "size": ""
+                },
+                "product": "food staples",
+                "rungs": [
+                  {
+                    "stage": "Supply constraints → Wholesale prices of dairy and dry fruits",
+                    "pass": "likely",
+                    "damper": "Traders holding stock bought earlier may delay price rises, but limited supply and festive demand push wholesale prices up.",
+                    "lag": "days"
+                  },
+                  {
+                    "stage": "Ingredient prices → Sweet makers' and packagers' costs",
+                    "pass": "likely",
+                    "damper": "Large producers that buy in bulk or on longer contracts may absorb part of the increase for a while.",
+                    "lag": "days"
+                  },
+                  {
+                    "stage": "Production costs → Prices of mithai and corporate hampers",
+                    "pass": "partial",
+                    "damper": "Competition among sellers and fixed gifting budgets may limit how much of the increase is added to prices.",
+                    "lag": "weeks"
+                  }
+                ],
+                "end_user": {
+                  "group": "Food shoppers",
+                  "effect": "Households may find homemade sweets, packaged mithai and gift hampers more expensive during the festive season, with some easing possible once demand falls and supply improves."
+                }
+              }
+            }
+          },
+          "place": {
+            "name": "India",
+            "country": "India",
+            "lat": 20.6,
+            "lon": 78.9
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "Diwali gets costlier: Why rising milk, ghee, butter and dry fruit prices are squeezing festive budgets",
+              "url": "https://www.livemint.com/news/india/diwali-gets-costlier-why-rising-milk-ghee-butter-and-dry-fruit-prices-are-squeezing-festive-budgets-11793968267794.html",
+              "date": "2026-11-06T12:50:03.000Z",
+              "kind": "hard",
+              "summary": "Higher prices of dairy products, almonds, pistachios and other ingredients are raising the cost of homemade sweets, packaged mithai and corporate Diwali hampers. Supply constraints and rising food inflation are adding to the pressure on festive budgets.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/11/06/1600x900/logo/Diwali_1793969760289_tl5N_1793969760508_jVoV_dd128db2-9b77-424e-97c3-b66dff6ec302_B57J.png"
+            }
+          ],
+          "stats": {
+            "v": 2,
+            "at": "2026-11-06T19:48:25.812Z",
+            "series": [
+              {
+                "title": "India CPI (Combined) inflation, year-on-year, by month",
+                "unit": "%",
+                "publisher": "Ministry of Statistics & Programme Implementation (MoSPI), via PIB",
+                "points": [
+                  {
+                    "period": "Jan 2026",
+                    "value": 2.74,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2322244&reg=48&lang=2",
+                    "source": "PRESS RELEASE OF CONSUMER PRICE INDEX ON BASE 2024=100 FOR SEPTEMBER, 2026"
+                  },
+                  {
+                    "period": "Feb 2026",
+                    "value": 3.21,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2322244&reg=48&lang=2",
+                    "source": "PRESS RELEASE OF CONSUMER PRICE INDEX ON BASE 2024=100 FOR SEPTEMBER, 2026"
+                  },
+                  {
+                    "period": "Mar 2026",
+                    "value": 3.4,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2322244&reg=48&lang=2",
+                    "source": "PRESS RELEASE OF CONSUMER PRICE INDEX ON BASE 2024=100 FOR SEPTEMBER, 2026"
+                  },
+                  {
+                    "period": "Apr 2026",
+                    "value": 3.48,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2322244&reg=48&lang=2",
+                    "source": "PRESS RELEASE OF CONSUMER PRICE INDEX ON BASE 2024=100 FOR SEPTEMBER, 2026"
+                  },
+                  {
+                    "period": "May 2026",
+                    "value": 3.93,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2322244&reg=48&lang=2",
+                    "source": "PRESS RELEASE OF CONSUMER PRICE INDEX ON BASE 2024=100 FOR SEPTEMBER, 2026"
+                  },
+                  {
+                    "period": "Jun 2026",
+                    "value": 4.38,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2322244&reg=48&lang=2",
+                    "source": "PRESS RELEASE OF CONSUMER PRICE INDEX ON BASE 2024=100 FOR SEPTEMBER, 2026"
+                  },
+                  {
+                    "period": "Jul 2026",
+                    "value": 4.45,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2322244&reg=48&lang=2",
+                    "source": "PRESS RELEASE OF CONSUMER PRICE INDEX ON BASE 2024=100 FOR SEPTEMBER, 2026"
+                  },
+                  {
+                    "period": "Aug 2026",
+                    "value": 4.83,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2322244&reg=48&lang=2",
+                    "source": "PRESS RELEASE OF CONSUMER PRICE INDEX ON BASE 2024=100 FOR SEPTEMBER, 2026"
+                  },
+                  {
+                    "period": "Sep 2026",
+                    "value": 5.54,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2322244&reg=48&lang=2",
+                    "source": "PRESS RELEASE OF CONSUMER PRICE INDEX ON BASE 2024=100 FOR SEPTEMBER, 2026"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2322244&reg=48&lang=2",
+                    "title": "PRESS RELEASE OF CONSUMER PRICE INDEX ON BASE 2024=100 FOR SEPTEMBER, 2026",
+                    "domain": "pib.gov.in"
+                  }
+                ],
+                "domains": [
+                  "pib.gov.in"
+                ],
+                "dropped": 0,
+                "why": "India's year-on-year CPI inflation by month tracks the consumer price pressure, including food inflation, that the story says is squeezing festive household budgets.",
+                "reused": true,
+                "checkedAt": "2026-10-16T21:21:17.668Z"
+              }
+            ]
+          },
+          "thread": "tgij2sq"
+        },
         {
           "id": "sl8pu98",
           "headline": "Post offices to serve as dark stores as govt expands Gujarat farmer e-commerce model to other states",
@@ -76787,14 +78336,14 @@
   "source": "BBC News & The Guardian & NPR & Al Jazeera & MercoPress & ABC News & The New York Times & CNBC & CBS News & DW & France 24 & Africanews & South China Morning Post & The Hindu & Mint & The Indian Express",
   "lastRun": {
     "filter": {
-      "judged": 100,
-      "kept": 14,
+      "judged": 113,
+      "kept": 10,
       "guarded": 0
     },
     "health": {
       "day": "2026-11-06",
-      "newStories24h": 31,
-      "keepRate2d": 0.164
+      "newStories24h": 21,
+      "keepRate2d": 0.147
     },
     "wars": {
       "linked": 0,
@@ -76807,31 +78356,24 @@
       "waiting": 0
     },
     "skipped": {
-      "since": "2026-11-06T01:43:31.086Z",
-      "counts": {
-        "section": 3
-      },
-      "examples": {
-        "section": [
-          "Sivakasi’s fireworks industry: sparkling opportunities up ahead",
-          "‘Shankarabharanna’ interview: Shine Shetty, Sumanth Bhat and Tanvi Ram on the horror comedy",
-          "From sea to market: How mussels sustain livelihoods along Thiruvananthapuram’s shore"
-        ]
-      }
+      "since": "2026-11-06T11:19:36.065Z",
+      "counts": {},
+      "examples": {}
     },
     "finance": {
       "moved": 0,
-      "checked": 3
+      "checked": 1
     },
-    "analysed": 103,
-    "added": 12,
-    "merged": 1,
+    "analysed": 113,
+    "added": 8,
+    "merged": 2,
+    "rejected": 103,
     "failedBatches": 0,
     "feeds": {
       "thehindu": {
         "feedsOk": 6,
         "feedsFailed": 0,
-        "items": 346
+        "items": 350
       },
       "mint": {
         "feedsOk": 6,
@@ -76850,13 +78392,13 @@
       "summaries": 0
     },
     "threads": {
-      "assigned": 12,
-      "created": 4,
+      "assigned": 8,
+      "created": 3,
       "failedBatches": 0
     },
     "summaries": {
-      "written": 0,
-      "due": 15
+      "written": 19,
+      "due": 19
     },
     "kinds": {
       "labelled": 0,
@@ -76864,51 +78406,112 @@
       "failedBatches": 0
     },
     "frames": {
-      "done": 0,
-      "waiting": 3,
-      "failedBatches": 0,
-      "budgetStopped": true
+      "done": 5,
+      "waiting": 0,
+      "failedBatches": 0
     },
     "stats": {
       "searched": 8,
-      "found": 0,
-      "reused": 0,
-      "none": 0,
+      "found": 4,
+      "reused": 3,
+      "none": 1,
       "failed": 0,
-      "proposed": 0,
-      "droppedPoints": 0,
-      "pagesFetched": 0,
-      "samples": [],
-      "budgetStopped": true
+      "proposed": 36,
+      "droppedPoints": 12,
+      "pagesFetched": 5,
+      "samples": [
+        {
+          "headline": "India's forex reserves drop by $2.69 bn to $717 bn",
+          "result": "chart",
+          "proposed": 8,
+          "checked": 8,
+          "pagesFetched": 2
+        },
+        {
+          "headline": "Diwali gets costlier: Why rising milk, ghee, butter and dry fruit prices are squ",
+          "result": "reused saved series"
+        },
+        {
+          "headline": "Rupee surges 52 points to close at 93.89 against U.S. dollar",
+          "result": "reused saved series"
+        },
+        {
+          "headline": "US-Iran war: HPCL struggles to secure tankers to transport oil from the Strait o",
+          "result": "reused saved series"
+        },
+        {
+          "headline": "Stock markets trade higher in early session on sustained foreign fund inflows",
+          "result": "chart",
+          "proposed": 3,
+          "checked": 3,
+          "pagesFetched": 1
+        },
+        {
+          "headline": "Bond yield rise squeezes banks' Q2 treasury gains",
+          "result": "chart",
+          "proposed": 6,
+          "checked": 6,
+          "pagesFetched": 1
+        },
+        {
+          "headline": "Indian Railways’ September freight loading rises 6.1% as revenue grows 9.3%",
+          "result": "no figure found on an official page",
+          "proposed": 12,
+          "checked": 0,
+          "pagesFetched": 0
+        },
+        {
+          "headline": "6.14% growth registered in freight loading in September 2026 over September 2025",
+          "result": "chart",
+          "proposed": 7,
+          "checked": 7,
+          "pagesFetched": 1
+        }
+      ]
     },
     "models": {
       "filter": {
         "model": "claude-haiku-5-5",
-        "calls": 8,
-        "inputTokens": 37894,
-        "outputTokens": 17044,
-        "cost": 0.0123
+        "calls": 17,
+        "inputTokens": 71667,
+        "outputTokens": 18980,
+        "cost": 0.0168
       },
       "analysis_quick": {
         "model": "claude-sonnet-5-5",
+        "calls": 4,
+        "inputTokens": 13045,
+        "outputTokens": 16561,
+        "cost": 0.1917
+      },
+      "stats": {
+        "model": "claude-sonnet-5-5",
         "calls": 5,
-        "inputTokens": 16771,
-        "outputTokens": 24413,
-        "cost": 0.2777
+        "inputTokens": 383631,
+        "outputTokens": 4442,
+        "searches": 11,
+        "fetches": 6,
+        "cost": 0.9216
+      },
+      "analysis": {
+        "model": "claude-opus-5-5",
+        "calls": 2,
+        "inputTokens": 8878,
+        "outputTokens": 13837,
+        "cost": 0.3123
       },
       "threads": {
         "model": "claude-sonnet-5-5",
-        "calls": 1,
-        "inputTokens": 10473,
-        "outputTokens": 330,
-        "cost": 0.0242
+        "calls": 20,
+        "inputTokens": 28646,
+        "outputTokens": 8101,
+        "cost": 0.1383
       }
     },
     "spend": {
-      "thisDesk": 0.3142,
-      "today": 5.8065,
-      "cap": 6,
-      "stopped": true
+      "thisDesk": 1.5806,
+      "today": 3.2146,
+      "cap": 6
     }
   },
   "recentDays": 60
