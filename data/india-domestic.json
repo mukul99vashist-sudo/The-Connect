@@ -2,7 +2,7 @@
   "schema": 4,
   "region": "India",
   "since": "2026-10-02",
-  "updatedAt": "2026-11-07T10:31:43.153Z",
+  "updatedAt": "2026-11-07T17:50:12.673Z",
   "sectors": [
     {
       "id": "energy",
@@ -37669,6 +37669,110 @@
       "id": "technology",
       "name": "Technology",
       "items": [
+        {
+          "id": "spnuten",
+          "headline": "Elon Musk's Starlink, Jio, OneWeb race in India: Report reveals who submitted security papers first and what's pending",
+          "url": "https://www.livemint.com/industry/telecom/elon-musks-starlink-jio-oneweb-race-in-india-report-reveals-who-submitted-security-papers-first-and-whats-pending-11794056505524.html",
+          "source": "mint",
+          "date": "2026-11-07T14:22:52.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2026/11/07/1600x900/logo/Untitled_Design_1794060000943_8DGL_1794060005220_uBKF_d8006eb9-5235-41e1-add1-6b5e550028f2_87tJ.png",
+          "why": "Starlink was the last of India's three satellite internet providers, which are Starlink, Jio and OneWeb, to submit security compliance documents, according to a Mint report. All three have reportedly received licences but still have requirements to complete.",
+          "implications": [
+            "Holding a licence does not by itself allow a service to start. The security and regulatory steps still pending could determine when each company can actually begin offering satellite broadband to Indian customers.",
+            "Because all three firms are at a similar stage, the order in which they finish the remaining steps could shape which of them reaches Indian users first."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-07T17:49:42.411Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The channel is the telecom and broadband industry, where satellite providers could add a new way to connect users. The effect is limited to one industry and no launch date has been reported."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Timing depends on when the three firms finish their remaining regulatory and security requirements, and no completion dates have been reported."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single Mint report that cites another report, with no on-record official source, and the details of the pending requirements are unconfirmed."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "IT & services workers",
+                "direction": "unclear",
+                "what": "connectivity options",
+                "effect": "Satellite broadband could eventually give remote workers and small service firms another way to get online where fixed connections are weak, but no launch timing has been reported.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Confirmation that Starlink, Jio and OneWeb have completed their remaining regulatory and security requirements",
+                "why": "It would show how close each provider is to starting commercial satellite internet service in India.",
+                "when": "",
+                "where": "Department of Telecommunications"
+              }
+            ],
+            "context": [
+              "Satellite internet providers in India must hold a government licence and meet security conditions before they can offer services. Authorities generally treat network security as a precondition for commercial launch."
+            ],
+            "terms": [
+              {
+                "term": "security compliance documents",
+                "meaning": "Paperwork a telecom provider submits to show that its network and operations meet the security conditions set by the Indian government."
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Security papers submitted, licences held",
+                    "detail": "Starlink was the last of the three providers to submit security compliance documents. All three have reportedly received the licences they need.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Remaining requirements still pending",
+                    "detail": "The three companies have yet to complete other regulatory and security-related requirements, so none can be assumed ready to start service.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Possible launch of satellite broadband",
+                    "detail": "Once the remaining steps are cleared, the providers could begin offering satellite internet to Indian customers, adding to the options available to households and businesses.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The effect would not reach Indian users if the pending requirements are not completed or approvals are delayed, since the providers could not then start commercial service."
+              }
+            }
+          },
+          "place": {
+            "name": "New Delhi",
+            "country": "India",
+            "lat": 28.6,
+            "lon": 77.2
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "Elon Musk's Starlink, Jio, OneWeb race in India: Report reveals who submitted security papers first and what's pending",
+              "url": "https://www.livemint.com/industry/telecom/elon-musks-starlink-jio-oneweb-race-in-india-report-reveals-who-submitted-security-papers-first-and-whats-pending-11794056505524.html",
+              "date": "2026-11-07T14:22:52.000Z",
+              "kind": "hard",
+              "summary": "Starlink was the last of India’s three satellite internet providers to submit security compliance documents, according to a report. All three have reportedly received the necessary licences, although they are yet to complete remaining regulatory and security-related requirements.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/11/07/1600x900/logo/Untitled_Design_1794060000943_8DGL_1794060005220_uBKF_d8006eb9-5235-41e1-add1-6b5e550028f2_87tJ.png"
+            }
+          ],
+          "thread": "tcv7jbx"
+        },
         {
           "id": "sgpb0cc",
           "headline": "AI-driven attacks put telecom security on govt radar",
@@ -78856,13 +78960,16 @@
   "lastRun": {
     "filter": {
       "judged": 83,
-      "kept": 4,
+      "kept": 1,
       "guarded": 0
     },
     "health": {
       "day": "2026-11-07",
-      "newStories24h": 15,
-      "keepRate2d": 0.096
+      "newStories24h": 6,
+      "keepRate2d": 0.079,
+      "alarm": [
+        "only 6 new stories in 24 hours (expected 12+)"
+      ]
     },
     "wars": {
       "linked": 0,
@@ -78875,33 +78982,24 @@
       "waiting": 0
     },
     "skipped": {
-      "since": "2026-11-07T01:04:55.693Z",
-      "counts": {
-        "section": 4
-      },
-      "examples": {
-        "section": [
-          "Is your petrol really E20? Karnataka claims ethanol levels reached 31%",
-          "‘I’d always disliked politics’ | An excerpt from Sonia Gandhi’s ‘Belonging: A Journey of Love’",
-          "Why are these Beed women farmers staring at a dark Diwali this year? | Pulse Maharashtra",
-          "Why are flight tickets so expensive now? The truth behind rising airfares | Explained"
-        ]
-      }
+      "since": "2026-11-07T10:31:43.153Z",
+      "counts": {},
+      "examples": {}
     },
     "finance": {
       "moved": 0,
-      "checked": 1
+      "checked": 0
     },
     "analysed": 83,
-    "added": 2,
-    "merged": 2,
-    "rejected": 79,
+    "added": 1,
+    "merged": 0,
+    "rejected": 82,
     "failedBatches": 0,
     "feeds": {
       "thehindu": {
         "feedsOk": 6,
         "feedsFailed": 0,
-        "items": 346
+        "items": 349
       },
       "mint": {
         "feedsOk": 6,
@@ -78920,7 +79018,7 @@
       "summaries": 0
     },
     "threads": {
-      "assigned": 2,
+      "assigned": 1,
       "created": 1,
       "failedBatches": 0
     },
@@ -78954,29 +79052,29 @@
     "models": {
       "filter": {
         "model": "claude-haiku-5-5",
-        "calls": 7,
-        "inputTokens": 36172,
-        "outputTokens": 11232,
-        "cost": 0.0091
+        "calls": 5,
+        "inputTokens": 32059,
+        "outputTokens": 9887,
+        "cost": 0.0082
       },
       "analysis_quick": {
         "model": "claude-sonnet-5-5",
         "calls": 1,
-        "inputTokens": 3045,
-        "outputTokens": 2815,
-        "cost": 0.0342
+        "inputTokens": 2893,
+        "outputTokens": 2195,
+        "cost": 0.0277
       },
       "threads": {
         "model": "claude-sonnet-5-5",
         "calls": 1,
-        "inputTokens": 9304,
-        "outputTokens": 57,
-        "cost": 0.0192
+        "inputTokens": 9135,
+        "outputTokens": 187,
+        "cost": 0.0201
       }
     },
     "spend": {
-      "thisDesk": 0.0627,
-      "today": 5.3877,
+      "thisDesk": 0.056,
+      "today": 5.5334,
       "cap": 6
     }
   },
