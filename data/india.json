@@ -2,7 +2,7 @@
   "schema": 4,
   "region": "India",
   "since": "2026-10-02",
-  "updatedAt": "2026-11-07T17:49:09.487Z",
+  "updatedAt": "2026-11-07T22:05:55.508Z",
   "sectors": [
     {
       "id": "energy",
@@ -510,90 +510,155 @@
           "date": "2026-11-07T03:07:01.000Z",
           "relevance": "medium",
           "image": "https://i.guim.co.uk/img/media/25f4aae3e6af6bcaedf563ee3e0b174bd7a2de94/466_0_4645_3718/master/4645.jpg?width=700&quality=85&auto=format&fit=max&s=7751e15098bd7febeab0101fb3ff94c8",
-          "why": "President Donald Trump says the US military carried out a new round of limited strikes on an Iranian air defence system on Friday, as diplomacy accelerates. India's exposure runs mainly through Gulf oil supplies and shipping.",
+          "why": "The US carried out new limited strikes on an Iranian air defence system on Qeshm Island, in the Strait of Hormuz, as more ships were attacked there. This threatens the route that carries much of India's crude oil and gas.",
           "implications": [
-            "The strike adds to a conflict that is already at the level of attacks on third countries and disruption of the Strait of Hormuz, so further exchanges could keep energy shipping risks elevated.",
-            "The announcement came days after an earlier attack was made public, so repeated limited strikes may be becoming a pattern, which could complicate the diplomatic efforts that have accelerated."
+            "Attacks on ships in the Strait of Hormuz typically raise war-risk insurance premiums and freight rates. That could increase the landed cost of crude and LPG cargoes bound for India.",
+            "Indian state-run fuel retailers may absorb higher costs for a time. That could squeeze their finances or the government's budget before any change reaches petrol and diesel prices.",
+            "Trump claims a lot of progress in negotiations with Tehran, and mediators are trying to prevent escalation. A deal could ease the risk, although strikes have continued alongside the talks.",
+            "Indian seafarers on Gulf tankers and Indians living in Gulf states could face greater safety risks if attacks on shipping and nearby territory continue."
           ],
           "analysis": {
             "v": 3,
-            "at": "2026-11-07T10:29:29.341Z",
-            "tier": "quick",
-            "primary": "escalation",
-            "complement": null,
+            "at": "2026-11-07T22:05:46.059Z",
+            "tier": "deep",
+            "primary": "disruption_map",
+            "complement": "escalation",
             "features": [
+              "disruption",
               "armed_conflict",
+              "fast_moving",
               "pending_outcome"
             ],
             "exposure": {
-              "level": "medium",
-              "reason": "The reports describe a limited strike and do not mention shipping or oil. India's exposure comes through the Hormuz oil route, which is already disrupted, so this adds risk without a confirmed new effect."
+              "level": "high",
+              "reason": "The Strait of Hormuz carries a large share of India's crude oil and LPG imports, and the Gulf hosts many Indian workers. Attacks there touch fuel prices and Indians' safety."
             },
             "horizon": {
               "value": "weeks",
-              "reason": "Any effect on fuel supply or prices would depend on whether the strikes lead to further Iranian attacks or to a diplomatic settlement over the coming weeks."
+              "reason": "Insurance and freight costs react quickly, but any change in Indian retail fuel prices usually follows over weeks, depending on whether attacks persist or talks succeed."
             },
             "confidence": {
-              "level": "low",
-              "reason": "This rests on one outlet, The Guardian, relaying Trump's own description of the strikes, and the target and scale have not been independently confirmed."
+              "level": "medium",
+              "reason": "Five outlets carry Trump's on-record confirmation of the strikes, but the new attacks on ships in Hormuz rest on one outlet and the attackers are unnamed."
             },
-            "outlets": 1,
+            "outlets": 4,
             "affected": [
               {
                 "group": "Fuel & LPG users",
-                "direction": "unclear",
-                "what": "fuel supply risk",
-                "effect": "If the conflict keeps disrupting Gulf shipping, India's crude and gas import costs could rise, which may eventually feed through to petrol, diesel and cooking gas prices.",
+                "direction": "up",
+                "what": "fuel and LPG costs",
+                "effect": "Higher shipping risk and insurance costs on Gulf cargoes could raise refiners' costs, which may eventually feed into petrol, diesel and cooking gas prices.",
                 "basis": "inferred"
               },
               {
                 "group": "Gulf & overseas workers and families",
                 "direction": "unclear",
-                "what": "safety and remittance risk",
-                "effect": "Continued fighting involving Gulf states could affect the safety of Indian workers there and the stability of the money they send to families in India.",
+                "what": "safety and job security",
+                "effect": "Continued strikes near Gulf waters could heighten safety risks for Indians in the region and affect the jobs and remittances their families depend on.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Government finances",
+                "direction": "up",
+                "what": "oil import bill",
+                "effect": "Costlier crude and freight could enlarge India's oil import bill and any cost of shielding consumers from higher fuel prices.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Importers & traders",
+                "direction": "up",
+                "what": "freight and insurance costs",
+                "effect": "Attacks on ships in Hormuz could raise freight and war-risk insurance charges for Indian firms moving cargo to and from Gulf ports.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "Any Iranian retaliation or further US strikes following the latest round announced by Trump",
-                "why": "It would show whether limited strikes are being traded repeatedly or whether the exchange is easing.",
+                "what": "Further attacks on commercial ships in the Strait of Hormuz",
+                "why": "Continued attacks would raise shipping costs and supply risk for India's crude and LPG imports.",
                 "when": "",
                 "where": ""
               },
               {
-                "what": "Progress in the diplomatic efforts to end the conflict",
-                "why": "A concluded agreement would show whether the pressure on shipping and Gulf states could begin to ease.",
+                "what": "The outcome of mediators' efforts and US–Iran negotiations to end the conflict",
+                "why": "A ceasefire would lower risk on the Hormuz route, while a breakdown could bring wider strikes.",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "Any announcement that the Strait of Hormuz is closed or that shipping through it is restricted",
+                "why": "A formal closure or restriction would sharply cut Gulf oil and gas flows to India.",
                 "when": "",
                 "where": ""
               }
             ],
             "context": [
-              "India imports most of its crude oil, and much of the Gulf supply it relies on passes through the Strait of Hormuz.",
-              "Many Indians live and work in Gulf countries, so attacks involving Gulf states raise concern for their safety and for the money they send home."
+              "India imports most of the crude oil it refines and much of its LPG. A large share of both comes from Gulf producers whose exports pass through the Strait of Hormuz.",
+              "Large numbers of Indians work in Gulf states, and their remittances support households, particularly in Kerala and other southern states. Regional insecurity can therefore affect both their safety and family incomes.",
+              "When shipping through a chokepoint becomes risky, insurers raise war-risk premiums and some shipowners avoid the route. That raises freight costs even without a formal closure."
             ],
-            "terms": [],
+            "terms": [
+              {
+                "term": "Strait of Hormuz",
+                "meaning": "The narrow waterway between Iran and Oman linking the Gulf to the open sea, through which much of the Gulf's oil and gas exports pass."
+              },
+              {
+                "term": "Qeshm Island",
+                "meaning": "An Iranian island in the Strait of Hormuz, close to the shipping lanes used by tankers leaving the Gulf."
+              }
+            ],
             "frameworks": {
+              "disruption_map": {
+                "node": {
+                  "name": "Strait of Hormuz",
+                  "type": "strait",
+                  "status": "unknown",
+                  "as_of": "7 Nov 2026"
+                },
+                "cause": {
+                  "text": "Ships in the Strait of Hormuz were attacked and US strikes hit an air defence system on nearby Qeshm Island. Who attacked the ships has not been reported.",
+                  "status": "confirmed"
+                },
+                "flows": [
+                  {
+                    "flow": "crude",
+                    "india_link": "The waterway is a crucial route for oil shipments, and India depends heavily on Gulf crude passing through it to supply its refineries and fuel retailers.",
+                    "basis": "reported"
+                  },
+                  {
+                    "flow": "LNG",
+                    "india_link": "India imports liquefied natural gas from Gulf producers through Hormuz. Disruption could raise costs for power plants, fertiliser makers and city gas users.",
+                    "basis": "inferred"
+                  }
+                ],
+                "alternatives": [],
+                "duration": "not reported"
+              },
               "escalation": {
                 "move": "none",
                 "rung": 6,
                 "current_rung": 6,
                 "previous_rung": null,
-                "development": "The US military carried out a new round of limited strikes on an Iranian air defence system, which Trump described as minor, while diplomatic efforts to end the war have accelerated.",
-                "evidence": "These limited strikes sit below the war's current level, and no ceasefire, withdrawal or halt in fighting is reported. The war therefore stays at strikes on critical infrastructure or third countries.",
+                "development": "This story adds a new round of limited US strikes on an Iranian air defence system on Qeshm Island and further attacks on ships in Hormuz, alongside accelerating mediation.",
+                "evidence": "Limited strikes on military targets and attacks on shipping in a critical energy route fit the existing rung 6. No full-scale war, ceasefire or withdrawal is reported.",
                 "next_signals": [
                   {
                     "rung": 7,
-                    "signal": "The US and Iran begin sustained, large-scale military operations against each other beyond limited strikes on single targets such as air defences."
+                    "signal": "The United States launches a ground operation or a sustained, nationwide campaign of strikes aimed at Iran's government and economy."
+                  },
+                  {
+                    "rung": 5,
+                    "signal": "US–Iran strikes continue, but attacks on ships and third countries stop and the Strait of Hormuz returns to normal traffic."
                   },
                   {
                     "rung": 2,
-                    "signal": "A ceasefire or truce is announced and takes effect, with fighting and attacks on Gulf states and shipping reported to have stopped."
+                    "signal": "A ceasefire takes effect and military strikes stop, with the dispute handled through sanctions and negotiations."
                   }
                 ],
                 "india_channels": [
                   "oil",
                   "shipping",
+                  "remittances",
                   "diaspora safety"
                 ],
                 "conflict": "w1ye2krf",
@@ -671,15 +736,17 @@
           "source": "cbs",
           "date": "2026-11-06T17:27:00.000Z",
           "relevance": "medium",
-          "why": "President Trump says he will decide \"very soon\" whether to \"destroy what is left of\" Iran, while mediators push for a peace deal. A renewed US attack could further disrupt the Gulf energy routes that India depends on.",
+          "why": "President Trump says he will decide very soon whether to launch a new attack on Iran, while Qatar and other mediators push for a peace deal. Any further US strikes could prolong disruption to Gulf oil supplies and shipping that India relies on.",
           "implications": [
-            "A new US attack could prompt further Iranian strikes on Gulf states and shipping. That may keep the Strait of Hormuz disrupted and raise the cost of the crude oil and gas Indian refiners buy.",
-            "A peace deal brokered with Qatari help, if agreed, could ease pressure on that route. The outcome of the mediation therefore matters to India as much as the decision on strikes."
+            "A fresh US attack could keep the Strait of Hormuz disrupted for longer, raising freight and insurance costs for tankers that carry crude and liquefied gas to Indian ports.",
+            "Indian workers and their families in Qatar and other Gulf states may face greater uncertainty, because the war has already involved Iranian strikes on third countries in the region.",
+            "Qatar's role as a mediator matters to India, because a negotiated settlement would be the main route to a reopened shipping lane and steadier energy prices.",
+            "Al Jazeera notes that Trump has sent mixed messages since his party's midterm defeat, which leaves the direction of US policy unclear for oil-importing countries such as India."
           ],
           "analysis": {
             "v": 3,
-            "at": "2026-11-06T19:37:15.734Z",
-            "tier": "quick",
+            "at": "2026-11-07T22:05:46.059Z",
+            "tier": "standard",
             "primary": "escalation",
             "complement": null,
             "features": [
@@ -688,55 +755,67 @@
             ],
             "exposure": {
               "level": "high",
-              "reason": "A wider war could disrupt Gulf crude and gas shipments through the Strait of Hormuz, which feed India's petrol, diesel and cooking gas supply. It could also endanger Indians living in the Gulf."
+              "reason": "The war reaches India through crude oil and gas imports that pass through Hormuz and through the safety of Indian workers in the Gulf, both of which touch household essentials and many families."
             },
             "horizon": {
               "value": "weeks",
-              "reason": "Mr Trump says a decision is coming very soon, and any effect on fuel costs would follow only after strikes or a deal change shipping conditions."
+              "reason": "Trump says a decision on a new attack is coming very soon, and any strike would affect oil markets and Gulf shipping within weeks."
             },
             "confidence": {
               "level": "medium",
-              "reason": "This rests on a single CBS News report of Mr Trump's own statement; no decision has been made and the state of the mediation is unconfirmed."
+              "reason": "Trump's on-record remarks come from CBS News and are supported by an Al Jazeera analysis, but no decision has been made and the state of peace talks is unconfirmed."
             },
-            "outlets": 1,
+            "outlets": 2,
             "affected": [
               {
                 "group": "Fuel & LPG users",
-                "direction": "up",
-                "what": "fuel price pressure",
-                "effect": "If new strikes deepen the disruption of Gulf supply, higher crude and gas costs could feed through to petrol, diesel and cooking gas prices in India.",
+                "direction": "unclear",
+                "what": "fuel and LPG prices",
+                "effect": "A new US attack could keep Gulf supplies disrupted and push up crude and gas costs, which may feed through to petrol, diesel and cooking-gas prices in India.",
                 "basis": "inferred"
               },
               {
                 "group": "Gulf & overseas workers and families",
                 "direction": "unclear",
-                "what": "safety and remittances",
-                "effect": "Renewed attacks could threaten Indian workers in Gulf states and disrupt the money they send home, while a peace deal could reduce those risks.",
+                "what": "safety and job security",
+                "effect": "Further escalation could increase risks for Indians in Gulf states that have already faced Iranian strikes, affecting their safety and the remittances they send home.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "shipping and insurance costs",
+                "effect": "Continued disruption around Hormuz could keep freight and war-risk insurance costs high for Indian businesses trading with the Gulf.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "Mr Trump announces whether the United States will carry out a new attack on Iran",
-                "why": "It would show whether the war moves beyond its current level or whether mediation is holding.",
+                "what": "President Trump announces whether the United States will launch a new attack on Iran",
+                "why": "A decision to strike would signal further escalation, while holding off would give mediators more room.",
                 "when": "very soon",
-                "where": "White House"
+                "where": "The White House"
               },
               {
-                "what": "Mediators announce a peace deal between the United States and Iran",
-                "why": "A deal could ease the threat to Gulf energy routes that India relies on.",
+                "what": "Qatar and other mediators report progress towards a US–Iran peace deal",
+                "why": "A deal would be the clearest path to reopening the Strait of Hormuz and easing pressure on energy supplies.",
                 "when": "",
-                "where": ""
+                "where": "Qatar Ministry of Foreign Affairs"
               }
             ],
             "context": [
-              "India imports most of its crude oil and a large share of its cooking gas, and much of it comes from Gulf producers whose shipments pass through the Strait of Hormuz.",
-              "Millions of Indians live and work in Gulf countries and send money home, so fighting in the region raises concerns about their safety and about remittances."
+              "India imports most of the crude oil it uses, and a large share comes from Gulf producers whose cargoes pass through the Strait of Hormuz.",
+              "Several million Indians live and work in Gulf states, and the money they send home is an important source of income for families and of foreign exchange for India.",
+              "Threats of military action often move oil prices even before any strike takes place, because traders price in the risk of supply interruptions."
             ],
             "terms": [
               {
                 "term": "Strait of Hormuz",
-                "meaning": "A narrow waterway between Iran and Oman through which a large share of the world's oil exports is shipped."
+                "meaning": "A narrow sea passage between Iran and Oman through which a large share of the world's seaborne oil and gas exports travels."
+              },
+              {
+                "term": "midterm elections",
+                "meaning": "US congressional elections held midway through a president's four-year term, which can shift control of Congress."
               }
             ],
             "frameworks": {
@@ -745,23 +824,24 @@
                 "rung": 6,
                 "current_rung": 6,
                 "previous_rung": null,
-                "development": "President Trump says he will decide very soon on a possible new attack on Iran and has called Qatar's emir as mediators push for a peace deal.",
-                "evidence": "The report describes a threat and mediation efforts, not a new attack or a ceasefire in force. Statements and talks do not change the war's level, so it stays at strikes on critical infrastructure or third countries.",
+                "development": "President Trump has threatened to decide very soon whether to destroy what is left of Iran, while speaking to Qatar's emir as mediators press for a peace deal.",
+                "evidence": "The story reports a threat and diplomatic contacts, not a new attack or an actual ceasefire. The war therefore stays at strikes on critical infrastructure and third countries.",
                 "next_signals": [
                   {
                     "rung": 7,
-                    "signal": "The United States launches a large-scale assault on Iran and Iran retaliates widely across the region, indicating full-scale war."
+                    "signal": "The United States launches a broad military campaign against Iran, as Trump's threat to destroy what is left of Iran suggests is possible."
                   },
                   {
-                    "rung": 4,
-                    "signal": "A ceasefire or truce takes effect and Iranian attacks on Gulf states and the Strait of Hormuz stop."
+                    "rung": 5,
+                    "signal": "Iranian strikes on Gulf states stop and shipping through the Strait of Hormuz resumes, while some exchanges of fire between the parties continue."
                   }
                 ],
                 "india_channels": [
                   "oil",
                   "shipping",
                   "remittances",
-                  "diaspora safety"
+                  "diaspora safety",
+                  "flights"
                 ],
                 "conflict": "w1ye2krf",
                 "applied": "none",
@@ -25817,15 +25897,17 @@
           "source": "africanews",
           "date": "2026-11-06T10:35:41.000Z",
           "relevance": "medium",
-          "why": "Russia's defence ministry claimed on Thursday that it struck a cargo ship carrying military supplies south of Odesa, while Ukraine has long attacked ships serving Russian ports. Indian traders who rely on Black Sea cargoes could face higher shipping risk and costs.",
+          "why": "Russia claims it struck a cargo ship south of Odesa as Black Sea attacks escalate ahead of talks with the US in Abu Dhabi. Continued shipping attacks could raise costs for Russian oil and Black Sea edible oil reaching India.",
           "implications": [
-            "Repeated attacks on merchant vessels raise war-risk insurance premiums and freight costs for ships using Black Sea ports, and these costs may be passed on to buyers of grain, edible oil and fertiliser cargoes.",
-            "Indian importers who source cargoes from the region could face delays or higher landed costs if shipowners avoid the route, although no effect on Indian shipments has been reported."
+            "Ukraine has attacked vessels entering and leaving Russian ports in the Black Sea and the Sea of Azov for months. Ships on these routes therefore face risk from both sides.",
+            "Higher risk on Black Sea routes could raise insurance and freight costs for cargoes bound for India. Those costs may be passed on to Indian refiners and edible oil importers.",
+            "Negotiators from Russia, Ukraine and the US meet in Abu Dhabi on Tuesday. Progress could reduce shipping risk, but talks alone do not stop the attacks.",
+            "Zelenskyy says Russia is stepping up attacks ahead of the talks. This suggests both sides may be seeking leverage before negotiating."
           ],
           "analysis": {
             "v": 3,
-            "at": "2026-11-06T19:34:11.172Z",
-            "tier": "quick",
+            "at": "2026-11-07T22:05:46.058Z",
+            "tier": "standard",
             "primary": "escalation",
             "complement": null,
             "features": [
@@ -25834,54 +25916,56 @@
             ],
             "exposure": {
               "level": "medium",
-              "reason": "The channel is Black Sea shipping, which carries commodities India imports, such as edible oil and fertiliser. No Indian vessel or cargo is reported hit, so the effect is indirect and limited to traders in these goods."
+              "reason": "The channel is Black Sea shipping that carries some Russian crude and sunflower oil to India. The attacks raise costs, but these flows have not been reported halted, so exposure is medium."
             },
             "horizon": {
               "value": "weeks",
-              "reason": "Insurance and freight rates can adjust within weeks of attacks on shipping, but any pass-through to Indian import costs takes longer."
+              "reason": "Freight and insurance costs adjust over weeks, and the outcome of Tuesday's Abu Dhabi talks will shape whether attacks on shipping continue."
             },
             "confidence": {
-              "level": "low",
-              "reason": "The strike rests on a claim by Russia's defence ministry, reported by a single outlet, Africanews, and has not been independently confirmed."
+              "level": "medium",
+              "reason": "Two outlets report the escalation and the Tuesday talks, but the ship strike rests on an unverified claim by Russia's defence ministry."
             },
-            "outlets": 1,
+            "outlets": 2,
             "affected": [
               {
                 "group": "Importers & traders",
                 "direction": "up",
                 "what": "shipping and insurance costs",
-                "effect": "Importers of Black Sea commodities may face higher freight and war-risk insurance charges, or delays, if attacks on merchant ships continue.",
+                "effect": "Attacks on Black Sea vessels could raise freight and war-risk insurance costs for Indian importers of Russian crude and edible oils.",
                 "basis": "inferred"
               },
               {
                 "group": "Food shoppers",
-                "direction": "unclear",
-                "what": "edible oil prices",
-                "effect": "If Black Sea supplies of edible oil become costlier or slower to ship, retail prices in India could be affected, though no such effect has been reported.",
+                "direction": "up",
+                "what": "cooking oil prices",
+                "effect": "If Black Sea shipping is disrupted, sunflower oil imports could become costlier, which may raise edible oil prices in Indian shops.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "Further reported attacks on commercial vessels in the Black Sea or the Sea of Azov",
-                "why": "Repeated attacks would show whether shipping risk is rising enough to affect cargo flows and costs.",
-                "when": "",
+                "what": "Talks between Russian, Ukrainian and US negotiators in Abu Dhabi",
+                "why": "Progress could reduce the risk to Black Sea shipping, while failure could bring more attacks on vessels.",
+                "when": "2026-11-10",
                 "where": ""
               },
               {
-                "what": "The outcome of the planned Abu Dhabi talks between Russia and Ukraine",
-                "why": "It would show whether either side is willing to curb strikes on shipping and energy infrastructure.",
+                "what": "Further attacks on merchant ships in the Black Sea or the Sea of Azov",
+                "why": "More attacks would raise insurance and freight costs on routes carrying Russian oil and edible oil.",
                 "when": "",
                 "where": ""
               }
             ],
             "context": [
-              "Black Sea ports are a major export route for grain and sunflower oil, and India imports edible oil and fertiliser from the wider region. Insurers usually raise war-risk premiums where merchant ships come under attack."
+              "India has become a major buyer of Russian crude oil, and some of these cargoes load at Russia's Black Sea ports before sailing to India.",
+              "India also imports much of its sunflower oil from Russia and Ukraine, so disruption to Black Sea shipping can affect cooking oil supplies and prices.",
+              "Attacks on merchant ships usually lead insurers to raise war-risk premiums, which increases the cost of shipping on the affected routes."
             ],
             "terms": [
               {
                 "term": "Sea of Azov",
-                "meaning": "A shallow sea north of the Black Sea, bordering Russia and Ukraine, whose ports handle regional trade and are linked to the Black Sea by a narrow strait."
+                "meaning": "A shallow sea north of the Black Sea, bordered by Russia and Ukraine, whose ports handle grain, oil and other cargo."
               }
             ],
             "frameworks": {
@@ -25890,28 +25974,40 @@
                 "rung": 6,
                 "current_rung": 6,
                 "previous_rung": null,
-                "development": "Russia claimed a strike on a cargo ship south of Odesa, adding to months of Ukrainian attacks on vessels serving Russian ports, as both sides head towards talks in Abu Dhabi.",
-                "evidence": "The reported ship strike does not go beyond the strikes on power infrastructure and oil depots that set the war at rung 6 on 18 October 2026. Planned talks do not lower the rung.",
+                "development": "This story adds a Russian claim of striking a cargo ship south of Odesa and confirms that trilateral talks will be held in Abu Dhabi on Tuesday.",
+                "evidence": "Strikes on shipping continue a pattern already covered by rung 6, set when both sides hit each other's power and oil infrastructure. No ceasefire, withdrawal or halt in fighting is reported.",
                 "next_signals": [
                   {
                     "rung": 7,
-                    "signal": "Either side announces a general mobilisation or launches a large coordinated offensive across the whole front, going beyond strikes on infrastructure and shipping."
+                    "signal": "Either side launches a major new offensive or general mobilisation that widens the war well beyond the current exchanges of long-range strikes."
                   },
                   {
                     "rung": 5,
-                    "signal": "Russia and Ukraine both halt strikes on each other's energy infrastructure, with the pause confirmed as in force and fighting reported to have stopped."
+                    "signal": "Both sides stop striking energy infrastructure and merchant shipping under an agreed truce, while other strikes continue."
+                  },
+                  {
+                    "rung": 2,
+                    "signal": "A full ceasefire takes effect after the Abu Dhabi talks and fighting is reported to have stopped."
                   }
                 ],
                 "india_channels": [
+                  "oil",
                   "shipping",
-                  "trade",
-                  "oil"
+                  "trade"
                 ],
                 "conflict": "wzti51f",
                 "applied": "none",
                 "from": 6
               }
-            }
+            },
+            "reading": [
+              {
+                "headline": "Black Sea and black ops: How exposed is Europe to Ukraine war spillover?",
+                "url": "https://www.france24.com/en/tv-shows/the-debate/20261008-black-sea-and-black-ops-how-exposed-is-europe-to-ukraine-war-spillover",
+                "source": "france24",
+                "date": "2026-10-08T20:42:28.000Z"
+              }
+            ]
           },
           "conflict": "wzti51f",
           "place": {
@@ -32339,88 +32435,125 @@
           "source": "aljazeera",
           "date": "2026-11-06T23:00:37.000Z",
           "relevance": "medium",
-          "why": "The United States has urged China to honour the commitments it made under the Busan trade deal agreed by Donald Trump and Xi Jinping. India is affected indirectly, through global trade conditions and supply chains.",
+          "why": "The United States has urged China to honour its 2025 Busan trade deal commitments on agricultural purchases and rare earths supply, while China complains of US trade restrictions. The dispute could affect global rare earth supplies that Indian manufacturers depend on.",
           "implications": [
-            "If the commitments are not honoured, tariffs and technology restrictions between the two largest economies could stay in place. That may keep global trade uncertain for Indian exporters who sell into either market.",
-            "Continued friction could push companies to rearrange supply chains. That may open opportunities for Indian manufacturers, but it could also raise costs for Indian firms that depend on Chinese inputs."
+            "If China restricts rare earth exports again, Indian makers of electric vehicles, electronics and motors could face shortages or higher prices for magnets they import.",
+            "Renewed US–China friction could reopen the threat of higher tariffs, which could redirect trade flows and change competition for Indian exporters in the US market.",
+            "China's concern over US trade-restrictive measures suggests both sides are dissatisfied, which makes the durability of the deal uncertain for businesses planning supply chains."
           ],
           "analysis": {
             "v": 3,
-            "at": "2026-11-07T00:59:53.265Z",
-            "tier": "quick",
-            "primary": "impact_chain",
+            "at": "2026-11-07T22:05:46.059Z",
+            "tier": "standard",
+            "primary": "trade_flow",
             "complement": null,
             "features": [
+              "trade_flow",
               "pending_outcome"
             ],
             "exposure": {
-              "level": "low",
-              "reason": "The story describes a dispute between the United States and China. Any effect on India would come indirectly, through global trade and supply chains, and no direct channel to India is reported."
+              "level": "medium",
+              "reason": "India is not party to the deal, but its manufacturers depend on Chinese rare earth supplies, so the channel runs through specific industries rather than household essentials."
             },
             "horizon": {
               "value": "months",
-              "reason": "Progress depends on whether China fulfils its commitments over time, and any spillover to Indian trade and supply chains would build up slowly."
+              "reason": "Any change in Chinese rare earth export policy or US tariffs would take months to work through supply contracts and factory output."
             },
             "confidence": {
-              "level": "low",
-              "reason": "This rests on a single Al Jazeera report with a brief summary, and it is unclear which specific commitments the United States says China has not met."
+              "level": "medium",
+              "reason": "Al Jazeera and DW both report the US call and China's response, but no specific breach or new restriction has been confirmed."
             },
-            "outlets": 1,
+            "outlets": 2,
             "affected": [
               {
-                "group": "Importers & traders",
+                "group": "Manufacturing workers",
                 "direction": "unclear",
-                "what": "global trade conditions",
-                "effect": "Whether tariffs and technology restrictions ease or persist between the United States and China could change costs and supply chains for Indian traders.",
+                "what": "rare earth supply security",
+                "effect": "Indian factories making electric vehicles, electronics and motors could face input shortages if China tightens rare earth exports, which may affect production and jobs.",
                 "basis": "inferred"
               },
               {
-                "group": "MSME exporters",
-                "direction": "unclear",
-                "what": "export demand and competition",
-                "effect": "Continued US-China tension could shift orders and sourcing between countries, which may help or hurt small Indian exporters depending on the product.",
+                "group": "Large exporters",
+                "direction": "mixed",
+                "what": "US market competition",
+                "effect": "Renewed US–China tariff friction could shift US buyers towards other suppliers, which may create openings or new competition for Indian exporters.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "Statements from either government on whether China has fulfilled its Busan commitments",
-                "why": "These would show whether the easing of tariffs and technology restrictions is holding or breaking down.",
+                "what": "China announces changes to rare earth export licensing or supply arrangements",
+                "why": "Tighter rules would signal supply risks for Indian manufacturers that rely on Chinese magnets.",
                 "when": "",
-                "where": ""
+                "where": "China Ministry of Commerce"
+              },
+              {
+                "what": "The United States announces new tariffs or restrictions on China over unmet Busan commitments",
+                "why": "New measures would show the deal is breaking down, with wider effects on global trade flows.",
+                "when": "",
+                "where": "Office of the United States Trade Representative"
               }
             ],
             "context": [
-              "India trades heavily with both the United States and China, so changes in their trade relations can shift global demand, prices and supply chains on which Indian businesses depend."
+              "China dominates the global mining and especially the processing of rare earths, and India imports most of the rare earth magnets used by its vehicle and electronics industries.",
+              "When the United States and China raise tariffs on each other, some buyers look for alternative suppliers, which can create openings for exporters in countries such as India.",
+              "China has previously used export licensing on rare earths as leverage in trade disputes, which affected manufacturers in many countries beyond the United States."
             ],
             "terms": [
               {
+                "term": "rare earths",
+                "meaning": "A group of metals used to make powerful magnets and components for electric vehicles, electronics, wind turbines and defence equipment."
+              },
+              {
                 "term": "Busan trade deal",
-                "meaning": "The arrangement between US President Donald Trump and Chinese President Xi Jinping, reached in Busan, which aimed to ease tariffs and technology restrictions between their countries."
+                "meaning": "A 2025 agreement reached by Presidents Trump and Xi in Busan, South Korea, to ease tariffs and technology restrictions between the two countries."
               }
             ],
             "frameworks": {
-              "impact_chain": {
-                "chain": [
+              "trade_flow": {
+                "good": "Rare earths and agricultural products",
+                "actors": [
                   {
-                    "step": "US presses China on Busan commitments",
-                    "detail": "The United States has urged China to honour the commitments it made under the Busan trade deal agreed by Donald Trump and Xi Jinping.",
-                    "basis": "reported"
+                    "country": "China",
+                    "role": "exporter",
+                    "is_india": false
                   },
                   {
-                    "step": "Deal's progress depends on China",
-                    "detail": "The deal aimed to ease tariffs and technology restrictions between the two countries. Whether that easing continues depends on China fulfilling its commitments.",
-                    "basis": "reported"
+                    "country": "United States",
+                    "role": "importer",
+                    "is_india": false
                   },
                   {
-                    "step": "Global trade conditions may shift",
-                    "detail": "Whether the easing holds or fails could affect global trade flows and supply chains, which may in turn change demand and costs for Indian exporters and importers.",
-                    "basis": "inferred"
+                    "country": "India",
+                    "role": "third_party",
+                    "is_india": true
                   }
                 ],
-                "breaks_if": "The effect would not reach India if China fulfils its commitments and the US-China easing holds, leaving global trade conditions largely unchanged for Indian businesses."
+                "change": {
+                  "type": "deal",
+                  "effective": ""
+                },
+                "india_position": {
+                  "role": "competing_buyer",
+                  "note": "India is not part of the Busan deal but competes with other countries for Chinese rare earths used in its manufacturing. If US–China tensions lead China to tighten supplies again, Indian buyers could face scarcer or costlier inputs."
+                },
+                "volumes": []
               }
-            }
+            },
+            "reading": [
+              {
+                "headline": "History repeats in Shenzhen? China hosts another lame-duck US president",
+                "url": "https://www.scmp.com/news/china/diplomacy/article/3373654/history-repeats-shenzhen-china-hosts-another-lame-duck-us-president",
+                "source": "scmp",
+                "date": "2026-11-07T14:00:08.000Z"
+              },
+              {
+                "headline": "Will the US midterm ‘blue tsunami’ erode China’s faith in Xi and Trump’s relationship?",
+                "url": "https://www.scmp.com/news/china/diplomacy/article/3373574/will-us-midterm-blue-tsunami-erode-chinas-faith-trump-and-xis-relationship",
+                "source": "scmp",
+                "date": "2026-11-06T22:00:09.000Z"
+              }
+            ]
           },
           "place": {
             "name": "Washington",
@@ -53319,79 +53452,98 @@
           "relevance": "high",
           "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f657/live/383e2830-d810-11f1-bc0e-b5a9e0785e4b.jpg",
           "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/f657/live/383e2830-d810-11f1-bc0e-b5a9e0785e4b.jpg",
-          "why": "Delhi's air quality index stood at 377, in the \"very poor\" category, on Wednesday morning as firework restrictions came into force ahead of Diwali. Millions of people in the capital are breathing polluted air.",
+          "why": "Delhi's air has deteriorated to very poor levels ahead of Diwali, and IQAir ranked the Indian capital the world's most polluted major city on Saturday. Millions of residents face health risks as severe pollution is forecast for the festival.",
           "implications": [
-            "Children, older people and those with heart or breathing conditions are most at risk when air stays in the very poor band for long periods.",
-            "Festival fireworks add to existing pollution, so the days around Diwali can push readings higher unless the new restrictions are widely observed."
+            "Firework restrictions have entered force, but the festival may still add smoke to already stagnant winter air, so pollution could peak around Diwali night.",
+            "Children, older people and those with asthma or heart conditions are usually the most vulnerable to sustained exposure to very poor air.",
+            "The Delhi government has announced a four-month winter action plan, but experts quoted by the BBC say it will not be enough to fix the problem.",
+            "If readings worsen further, authorities may impose additional emergency curbs that could affect construction work, vehicle use and schools in the capital region."
           ],
           "analysis": {
             "v": 3,
-            "at": "2026-11-04T11:14:08.812Z",
-            "tier": "quick",
+            "at": "2026-11-07T22:05:46.059Z",
+            "tier": "standard",
             "primary": "impact_chain",
             "complement": null,
             "features": [],
             "exposure": {
               "level": "high",
-              "reason": "Poor air directly affects the health of Delhi residents, which makes this a safety concern for a very large urban population, even though the effect is concentrated in one region."
+              "reason": "Very poor and severe air directly affects the health and safety of millions of people living in India's capital, making this an immediate public-health issue rather than an indirect one."
             },
             "horizon": {
               "value": "now",
-              "reason": "The reading was recorded on Wednesday morning, and people in Delhi are breathing the polluted air immediately and through the Diwali period."
+              "reason": "Pollution is already very poor, severe levels are forecast around Diwali, and the winter pollution season typically lasts for several months."
             },
             "confidence": {
-              "level": "low",
-              "reason": "This rests on a single BBC News report, which does not name the monitoring agency behind the reading or give details of the restrictions."
+              "level": "medium",
+              "reason": "Two outlets, BBC News and the South China Morning Post citing IQAir, agree on very poor air, but the severity of conditions during Diwali is still only forecast."
             },
-            "outlets": 1,
-            "affected": [
-              {
-                "group": "A named state or region",
-                "direction": "down",
-                "what": "Delhi air quality",
-                "effect": "Residents of Delhi face air in the very poor category, which can aggravate breathing problems and limit comfortable time outdoors.",
-                "basis": "inferred"
-              }
-            ],
+            "outlets": 2,
+            "affected": [],
             "watch": [
               {
-                "what": "Delhi's air quality readings in the days around Diwali, and whether they improve or worsen further",
-                "why": "It would show whether the firework restrictions are limiting additional pollution during the festival.",
-                "when": "",
+                "what": "Delhi's air quality index readings on Diwali and the morning after",
+                "why": "The readings will show whether firework restrictions limited the usual festival spike in pollution.",
+                "when": "2026-11-08",
                 "where": "Central Pollution Control Board"
+              },
+              {
+                "what": "Delhi authorities announce additional emergency curbs on construction, vehicles or schools",
+                "why": "New curbs would show that officials judge the pollution to have reached a more serious level.",
+                "when": "",
+                "where": "Commission for Air Quality Management"
               }
             ],
             "context": [
-              "Delhi's air commonly worsens in the autumn and winter months, when cooler, calmer weather traps pollutants close to the ground, and local sources of smoke and dust add to the problem."
+              "Delhi's air usually worsens each winter, when cooler temperatures and weak winds trap emissions from vehicles, industry, construction dust and crop-residue burning in neighbouring states close to the ground.",
+              "Authorities in the capital region use a graded set of emergency measures, tightening restrictions on activities such as construction and some vehicles as air quality readings deteriorate.",
+              "Despite years of interventions and emergency restrictions, the crisis returns every winter, which is why experts call for longer-term action on the underlying sources of pollution."
             ],
             "terms": [
               {
                 "term": "air quality index",
-                "meaning": "A scale that combines the levels of several pollutants into one number, grouped into bands such as \"very poor\", to show how harmful the air is."
+                "meaning": "A single number summarising pollutant levels in the air, with higher readings meaning dirtier air and greater health risk."
+              },
+              {
+                "term": "IQAir",
+                "meaning": "A Swiss company that collects air quality data and publishes rankings of pollution in cities around the world."
               }
             ],
             "frameworks": {
               "impact_chain": {
                 "chain": [
                   {
-                    "step": "Air quality worsens in Delhi",
-                    "detail": "Delhi's air quality index reached 377 on Wednesday morning, which falls in the \"very poor\" category, as the city approached Diwali.",
+                    "step": "Air quality falls to very poor",
+                    "detail": "Delhi's air quality index stood at 377 on Wednesday morning, in the very poor category, as firework restrictions entered force ahead of Diwali.",
                     "basis": "reported"
                   },
                   {
-                    "step": "Firework restrictions come into force",
-                    "detail": "Restrictions on fireworks began to apply ahead of Diwali. They are meant to limit the extra pollution that festival fireworks add to air that is already poor.",
+                    "step": "Delhi ranked world's most polluted city",
+                    "detail": "On Saturday morning, the day before Diwali, IQAir ranked New Delhi as the world's most polluted major city, with severe pollution forecast for the capital.",
                     "basis": "reported"
                   },
                   {
-                    "step": "Health risk for residents",
-                    "detail": "People in Delhi, especially children, older people and those with respiratory illness, may face greater health risks and may need to reduce time spent outdoors while the air stays this polluted.",
+                    "step": "Government response judged insufficient",
+                    "detail": "The Delhi government has announced a four-month winter action plan, but experts say it will not be enough to bring pollution down to safe levels.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Residents face prolonged health risks",
+                    "detail": "Without a decisive improvement, residents may face weeks of harmful exposure, which could increase respiratory illness, hospital visits and disruption to outdoor work and schooling.",
                     "basis": "inferred"
                   }
                 ],
-                "breaks_if": "The effect on residents would ease if the restrictions are widely observed and weather conditions disperse pollutants, so that readings improve out of the very poor category."
+                "breaks_if": "The effect would ease if strong winds or rain disperse pollutants and festival firework use stays low, allowing readings to fall out of the very poor and severe categories."
               }
-            }
+            },
+            "reading": [
+              {
+                "headline": "'No choice but to bear it': Delhi's unrelenting air pollution crisis",
+                "url": "https://www.dw.com/en/no-choice-but-to-bear-it-delhi-s-unrelenting-air-pollution-crisis/a-79873124",
+                "source": "dw",
+                "date": "2026-11-06T12:05:00.000Z"
+              }
+            ]
           },
           "place": {
             "name": "Delhi",
@@ -55704,6 +55856,156 @@
       "name": "Policy & Governance",
       "items": [
         {
+          "id": "s1vv8noc",
+          "headline": "Iran’s nuclear programme: US offers US$20 million reward for information",
+          "url": "https://www.scmp.com/news/world/united-states-canada/article/3373625/irans-nuclear-programme-us-offers-us20-million-reward-information",
+          "source": "scmp",
+          "date": "2026-11-07T02:04:14.000Z",
+          "relevance": "medium",
+          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/07/8978bea8-0a55-4eee-a57d-1bf9253ea02e_0d415751.jpg?itok=1vO7f1y9&v=1794017043",
+          "why": "The US State Department's Rewards for Justice programme is offering a US$20 million reward for information on Iran's nuclear programme. This keeps pressure on Tehran and could shape whether the war, and its risk to India's oil supplies, eases or deepens.",
+          "implications": [
+            "The offer comes as President Donald Trump says Tehran wants a deal to end the war, even though he has repeatedly raised the prospect of renewing strikes on Iran's nuclear facilities.",
+            "Renewed strikes on nuclear sites could unsettle oil markets. That may raise the cost of the crude that Indian refiners import and feed into petrol, diesel and cooking gas prices.",
+            "A negotiated deal, by contrast, could ease risk premiums on Gulf oil and shipping. That may lower India's import costs and reduce pressure on the rupee."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-07T22:05:46.057Z",
+            "tier": "standard",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "The reward itself has no direct channel to India. Any effect would come indirectly, through whether the US–Iran war escalates or ends and how that moves oil prices."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Any effect on India depends on how negotiations or possible renewed strikes develop over the coming months, not on the reward itself."
+            },
+            "confidence": {
+              "level": "high",
+              "reason": "Three outlets agree and cite the US military and the State Department programme on record, although one headline gives a figure that differs from its own text."
+            },
+            "outlets": 3,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "fuel and cooking gas prices",
+                "effect": "If the war escalates or ends, crude import costs could rise or fall. That may pass through to petrol, diesel and LPG prices in India.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Government finances",
+                "direction": "unclear",
+                "what": "oil import bill",
+                "effect": "Changes in crude prices driven by the war's course could raise or lower India's oil import bill and the cost of any fuel price support.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "A US decision on whether to renew strikes on Iran's nuclear facilities",
+                "why": "Renewed strikes would signal escalation that could lift oil prices and shipping risk for India.",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "Progress or breakdown in US–Iran efforts to reach a deal ending the war",
+                "why": "A deal could ease oil-supply risks for India, while a breakdown could deepen them.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "India imports most of the crude oil it refines, and a large share comes from Gulf producers. Conflict involving Iran therefore tends to reach Indian consumers through oil prices and shipping costs.",
+              "Rewards for Justice is a long-running US government programme that pays informants for information on security threats. It is usually used as a pressure tool alongside sanctions and diplomacy."
+            ],
+            "terms": [
+              {
+                "term": "Rewards for Justice",
+                "meaning": "A US State Department programme that offers cash rewards for information about threats to US national security."
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "US offers reward on nuclear programme",
+                    "detail": "The State Department's Rewards for Justice programme is offering US$20 million and possible relocation for information on Iran's nuclear programme. This keeps pressure on Tehran.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Deal talk and strike threats coexist",
+                    "detail": "President Trump says Tehran wants a deal to end the war. He has also repeatedly raised the prospect of renewing strikes against Iran's nuclear facilities.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Oil markets price war risk",
+                    "detail": "Uncertainty over whether the war ends or escalates could keep a risk premium on Gulf crude and shipping. That may move the prices Indian refiners pay for imports.",
+                    "basis": "inferred"
+                  },
+                  {
+                    "step": "Indian fuel costs shift",
+                    "detail": "Higher or lower crude costs could feed into petrol, diesel and LPG prices in India, as well as into the country's oil import bill.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The effect would not reach India if neither a deal nor renewed strikes materially changes Gulf oil supply or shipping conditions."
+              }
+            }
+          },
+          "conflict": "w1ye2krf",
+          "place": {
+            "name": "Washington",
+            "country": "United States",
+            "lat": 38.9,
+            "lon": -77,
+            "involves": [
+              "Iran"
+            ]
+          },
+          "reports": [
+            {
+              "source": "scmp",
+              "headline": "Iran’s nuclear programme: US offers US$20 million reward for information",
+              "url": "https://www.scmp.com/news/world/united-states-canada/article/3373625/irans-nuclear-programme-us-offers-us20-million-reward-information",
+              "date": "2026-11-07T02:04:14.000Z",
+              "kind": "hard",
+              "summary": "Washington is offering a US$20 million reward “and possible relocation” for information about Iran’s nuclear programme, the US military has said, as President Donald Trump reiterated that Tehran wants to make a deal to end the war.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/07/8978bea8-0a55-4eee-a57d-1bf9253ea02e_0d415751.jpg?itok=1vO7f1y9&v=1794017043"
+            },
+            {
+              "source": "abc",
+              "headline": "US offers $29m reward for details on Iran's nuclear program",
+              "url": "https://www.abc.net.au/news/2026-11-07/us-20-million-rewards-for-justice-iran-nuclear-program-details/107359156",
+              "date": "2026-11-07T03:27:57.000Z",
+              "kind": "hard",
+              "summary": "A US State Department program, Rewards for Justice, \"is offering a $US20 million reward — and possible relocation — for information on Iran's nuclear program\".",
+              "summaryV": 3,
+              "image": "https://live-production.wcms.abc-cdn.net.au/fa9a17192449fc463e08335df364bab8?impolicy=wcms_crop_resize&cropH=2813&cropW=5000&xPos=0&yPos=377&width=862&height=485"
+            },
+            {
+              "source": "bbc",
+              "headline": "US offers $20m reward for information about Iran's nuclear programme",
+              "url": "https://www.bbc.co.uk/news/articles/c6d091ev3p0jo",
+              "date": "2026-11-07T18:14:38.000Z",
+              "kind": "hard",
+              "summary": "Donald Trump has repeatedly raised the prospecting of renewing strikes against Iran's nuclear facilities.",
+              "summaryV": 3,
+              "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/0b84/live/0f887590-dad0-11f1-93e1-3b657b665bcf.jpg",
+              "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/0b84/live/0f887590-dad0-11f1-93e1-3b657b665bcf.jpg"
+            }
+          ],
+          "finChecked": true,
+          "thread": "t1ydn8ji"
+        },
+        {
           "id": "s13npd4u",
           "headline": "Trump left with ‘no good options’ to end Iran war after crushing US midterms defeat",
           "url": "https://www.scmp.com/news/china/diplomacy/article/3373596/trump-left-no-good-options-end-iran-war-following-crushing-us-midterms-defeat",
@@ -55745,126 +56047,6 @@
           ],
           "finChecked": true,
           "thread": "t1dbdiwl"
-        },
-        {
-          "id": "s1vv8noc",
-          "headline": "Iran’s nuclear programme: US offers US$20 million reward for information",
-          "url": "https://www.scmp.com/news/world/united-states-canada/article/3373625/irans-nuclear-programme-us-offers-us20-million-reward-information",
-          "source": "scmp",
-          "date": "2026-11-07T02:04:14.000Z",
-          "relevance": "medium",
-          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/07/8978bea8-0a55-4eee-a57d-1bf9253ea02e_0d415751.jpg?itok=1vO7f1y9&v=1794017043",
-          "why": "The US military has offered a US$20 million reward, with possible relocation, for information on Iran's nuclear programme, while President Donald Trump repeated that Tehran wants a deal to end the war. India is exposed through the war's effect on energy routes.",
-          "implications": [
-            "The reward points to continued US intelligence pressure on Iran's nuclear work, while the president's remarks suggest that a negotiated end to the war is still being discussed publicly.",
-            "Indian importers and shipping firms would feel any change only if talks or fighting alter the security of Gulf energy routes."
-          ],
-          "analysis": {
-            "v": 3,
-            "at": "2026-11-07T10:28:34.886Z",
-            "tier": "quick",
-            "primary": "escalation",
-            "complement": null,
-            "features": [
-              "armed_conflict",
-              "pending_outcome"
-            ],
-            "exposure": {
-              "level": "low",
-              "reason": "The reward offer and Mr Trump's remarks are statements, not actions that disrupt oil, shipping or travel. Any effect on India would come only indirectly, through whether the wider war ends or continues."
-            },
-            "horizon": {
-              "value": "months",
-              "reason": "No negotiation timetable has been reported, so any effect on India depends on when talks or fighting change the situation in the Gulf."
-            },
-            "confidence": {
-              "level": "medium",
-              "reason": "This rests on one outlet, the South China Morning Post, citing a US military statement; Mr Trump's claim that Tehran wants a deal is unconfirmed by Iran."
-            },
-            "outlets": 1,
-            "affected": [
-              {
-                "group": "Fuel & LPG users",
-                "direction": "unclear",
-                "what": "fuel supply risk",
-                "effect": "A deal that ended the war could ease risks to Gulf oil and gas supplies, while continued fighting could keep them elevated; the reward offer itself changes nothing directly.",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "Any announcement that US and Iranian officials have begun formal negotiations to end the war",
-                "why": "It would be the first concrete sign that Mr Trump's talk of a deal is turning into diplomacy.",
-                "when": "",
-                "where": ""
-              }
-            ],
-            "context": [
-              "India imports most of its crude oil, and much of it and its liquefied petroleum gas (LPG) comes from Gulf producers whose cargoes pass through the Strait of Hormuz, so Gulf security matters to Indian fuel supply."
-            ],
-            "terms": [],
-            "frameworks": {
-              "escalation": {
-                "move": "none",
-                "rung": 6,
-                "current_rung": 6,
-                "previous_rung": null,
-                "development": "The United States has offered a reward for information on Iran's nuclear programme, and President Trump has repeated that Iran wants a deal to end the war.",
-                "evidence": "A reward offer and statements about a possible deal are not attacks, a ceasefire or a withdrawal. The war therefore stays at rung 6, set by Iranian strikes on third countries and disruption of a critical energy route.",
-                "next_signals": [
-                  {
-                    "rung": 7,
-                    "signal": "Large-scale ground operations or a declared general mobilisation by either the United States or Iran would show a move to full-scale war."
-                  },
-                  {
-                    "rung": 5,
-                    "signal": "A ceasefire taking effect, with attacks on third countries and on energy infrastructure stopping, would show a move down to sustained strikes only."
-                  }
-                ],
-                "india_channels": [
-                  "oil",
-                  "shipping"
-                ],
-                "conflict": "w1ye2krf",
-                "applied": "none",
-                "from": 6
-              }
-            }
-          },
-          "conflict": "w1ye2krf",
-          "place": {
-            "name": "Washington",
-            "country": "United States",
-            "lat": 38.9,
-            "lon": -77,
-            "involves": [
-              "Iran"
-            ]
-          },
-          "reports": [
-            {
-              "source": "scmp",
-              "headline": "Iran’s nuclear programme: US offers US$20 million reward for information",
-              "url": "https://www.scmp.com/news/world/united-states-canada/article/3373625/irans-nuclear-programme-us-offers-us20-million-reward-information",
-              "date": "2026-11-07T02:04:14.000Z",
-              "kind": "hard",
-              "summary": "Washington is offering a US$20 million reward “and possible relocation” for information about Iran’s nuclear programme, the US military has said, as President Donald Trump reiterated that Tehran wants to make a deal to end the war.",
-              "summaryV": 3,
-              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/07/8978bea8-0a55-4eee-a57d-1bf9253ea02e_0d415751.jpg?itok=1vO7f1y9&v=1794017043"
-            },
-            {
-              "source": "abc",
-              "headline": "US offers $29m reward for details on Iran's nuclear program",
-              "url": "https://www.abc.net.au/news/2026-11-07/us-20-million-rewards-for-justice-iran-nuclear-program-details/107359156",
-              "date": "2026-11-07T03:27:57.000Z",
-              "kind": "hard",
-              "summary": "A US State Department program, Rewards for Justice, \"is offering a $US20 million reward — and possible relocation — for information on Iran's nuclear program\".",
-              "summaryV": 3,
-              "image": "https://live-production.wcms.abc-cdn.net.au/fa9a17192449fc463e08335df364bab8?impolicy=wcms_crop_resize&cropH=2813&cropW=5000&xPos=0&yPos=377&width=862&height=485"
-            }
-          ],
-          "finChecked": true,
-          "thread": "t1ydn8ji"
         },
         {
           "id": "ssyrz6k",
@@ -56381,7 +56563,12 @@
             }
           ],
           "finChecked": true,
-          "thread": "t1iupw6f"
+          "thread": "t1iupw6f",
+          "stats": {
+            "v": 2,
+            "at": "2026-11-07T22:02:33.644Z",
+            "series": []
+          }
         },
         {
           "id": "smf2pqa",
@@ -66402,14 +66589,17 @@
   "source": "BBC News & The Guardian & NPR & Al Jazeera & MercoPress & ABC News & The New York Times & CNBC & CBS News & DW & France 24 & Africanews & South China Morning Post & The Hindu & Mint & The Indian Express",
   "lastRun": {
     "filter": {
-      "judged": 97,
-      "kept": 7,
+      "judged": 54,
+      "kept": 1,
       "guarded": 0
     },
     "health": {
       "day": "2026-11-07",
-      "newStories24h": 11,
-      "keepRate2d": 0.122
+      "newStories24h": 8,
+      "keepRate2d": 0.115,
+      "alarm": [
+        "only 8 new stories in 24 hours (expected 10+)"
+      ]
     },
     "wars": {
       "linked": 0,
@@ -66422,45 +66612,47 @@
       "waiting": 0
     },
     "skipped": {
-      "since": "2026-11-07T10:30:31.812Z",
+      "since": "2026-11-07T17:49:09.487Z",
       "counts": {
-        "section": 20,
-        "live_blog": 3
+        "section": 14,
+        "live_blog": 1,
+        "podcast_quiz_gallery": 1
       },
       "examples": {
         "section": [
-          "New Zealand election 'too close to call' - so who will be next PM?",
-          "Lebanese footballer refuses to give up after injuries from Israeli strike",
-          "Jerusalem Daily: Heavy rains flood Gaza",
-          "Israel builds 90km network of military roads across southern Lebanon",
-          "Hundreds march in Pau, France against high living costs"
+          "Gaza wedding festival sees 250 couples married at the same time",
+          "Ipswich Town's new club shop 'here to stay'",
+          "Richard Lloyd, founding member and guitarist of punk band Television, dies aged 75",
+          "Police clash with protesters as anti-government rallies sweep France",
+          "Mélenchon promises action against Israeli annexation if elected President"
         ],
         "live_blog": [
-          "New Zealand election coalition talks will likely take weeks – as it happened",
-          "Kraków shooting latest updates: six killed and more than a dozen injured, police say",
-          "Valencia vs Real Madrid LIVE: La Liga"
+          "Kraków shooting latest updates: six killed and more than a dozen injured, police say"
+        ],
+        "podcast_quiz_gallery": [
+          "Let a thousand blossoms bloom: Sydney’s jacarandas put on their spring show – in pictures"
         ]
       }
     },
     "finance": {
       "moved": 0,
-      "checked": 1
+      "checked": 0
     },
-    "analysed": 97,
-    "added": 3,
-    "merged": 4,
-    "rejected": 90,
+    "analysed": 54,
+    "added": 0,
+    "merged": 1,
+    "rejected": 53,
     "failedBatches": 0,
     "feeds": {
       "bbc": {
         "feedsOk": 6,
         "feedsFailed": 0,
-        "items": 160
+        "items": 162
       },
       "guardian": {
         "feedsOk": 7,
         "feedsFailed": 0,
-        "items": 203
+        "items": 202
       },
       "npr": {
         "feedsOk": 4,
@@ -66470,7 +66662,7 @@
       "aljazeera": {
         "feedsOk": 1,
         "feedsFailed": 0,
-        "items": 12
+        "items": 9
       },
       "mercopress": {
         "feedsOk": 3,
@@ -66485,7 +66677,7 @@
       "nyt": {
         "feedsOk": 5,
         "feedsFailed": 0,
-        "items": 168
+        "items": 167
       },
       "cnbc": {
         "feedsOk": 3,
@@ -66495,7 +66687,7 @@
       "cbs": {
         "feedsOk": 2,
         "feedsFailed": 0,
-        "items": 45
+        "items": 44
       },
       "dw": {
         "feedsOk": 3,
@@ -66519,17 +66711,17 @@
       }
     },
     "shareImages": {
-      "tried": 2,
-      "found": 2,
+      "tried": 0,
+      "found": 0,
       "summaries": 0
     },
     "threads": {
-      "assigned": 3,
+      "assigned": 0,
       "created": 0,
       "failedBatches": 0
     },
     "summaries": {
-      "written": 0,
+      "written": 4,
       "due": 4
     },
     "kinds": {
@@ -66538,49 +66730,64 @@
       "failedBatches": 0
     },
     "frames": {
-      "done": 0,
-      "waiting": 6,
-      "failedBatches": 0,
-      "budgetStopped": true
+      "done": 6,
+      "waiting": 0,
+      "failedBatches": 0
     },
     "stats": {
       "searched": 1,
       "found": 0,
       "reused": 0,
-      "none": 0,
+      "none": 1,
       "failed": 0,
-      "proposed": 0,
-      "droppedPoints": 0,
+      "proposed": 6,
+      "droppedPoints": 6,
       "pagesFetched": 0,
-      "samples": [],
-      "budgetStopped": true
+      "samples": [
+        {
+          "headline": "Trump axes US$3.8b annual military aid for Israel: ‘they no longer need it’",
+          "result": "no figure found on an official page",
+          "proposed": 6,
+          "checked": 0,
+          "pagesFetched": 0
+        }
+      ]
     },
     "models": {
       "filter": {
         "model": "claude-haiku-5-5",
-        "calls": 9,
-        "inputTokens": 33469,
-        "outputTokens": 13820,
-        "cost": 0.0102
+        "calls": 5,
+        "inputTokens": 26270,
+        "outputTokens": 7809,
+        "cost": 0.0065
       },
-      "analysis_quick": {
+      "stats": {
         "model": "claude-sonnet-5-5",
+        "calls": 1,
+        "inputTokens": 106421,
+        "outputTokens": 1754,
+        "searches": 3,
+        "fetches": 3,
+        "cost": 0.2604
+      },
+      "analysis": {
+        "model": "claude-opus-5-5",
         "calls": 2,
-        "inputTokens": 6808,
-        "outputTokens": 4700,
-        "cost": 0.0606
+        "inputTokens": 10678,
+        "outputTokens": 20635,
+        "cost": 0.4554
       },
       "threads": {
         "model": "claude-sonnet-5-5",
-        "calls": 1,
-        "inputTokens": 9040,
-        "outputTokens": 77,
-        "cost": 0.0189
+        "calls": 4,
+        "inputTokens": 3003,
+        "outputTokens": 951,
+        "cost": 0.0156
       }
     },
     "spend": {
-      "thisDesk": 0.0897,
-      "today": 5.4774,
+      "thisDesk": 0.7378,
+      "today": 0.7378,
       "cap": 6
     }
   },
