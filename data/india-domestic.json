@@ -2,12 +2,146 @@
   "schema": 4,
   "region": "India",
   "since": "2026-10-02",
-  "updatedAt": "2026-11-07T22:08:34.555Z",
+  "updatedAt": "2026-11-08T06:22:48.172Z",
   "sectors": [
     {
       "id": "energy",
       "name": "Energy",
       "items": [
+        {
+          "id": "s1g7pfty",
+          "headline": "Fuel prices today on 8 November: Check how much petrol, diesel cost in Delhi, Bengaluru, Mumbai, Chennai — Full list",
+          "url": "https://www.livemint.com/news/india/fuel-prices-today-on-8-november-check-how-much-petrol-diesel-cost-in-delhi-bengaluru-mumbai-chennai-full-list-11794100902262.html",
+          "source": "mint",
+          "date": "2026-11-08T01:29:55.000Z",
+          "relevance": "high",
+          "image": "https://www.livemint.com/lm-img/img/2026/11/08/1600x900/logo/pexels-photo-20500734_1792978034292_t2R9_179297804_1794101466691_TVch_1794101466804_t7ch_f1478be9-8134-4557-9a73-8d97e2515434_GR78.jpeg",
+          "why": "Petrol and diesel prices stayed largely unchanged in major Indian cities on 8 November despite swings in global crude prices amid Middle East tensions, while India's oil consumption rose 10% in October to its highest since March.",
+          "implications": [
+            "Pump prices that stay steady while crude swings show that retail fuel prices in India do not move one-for-one with global markets, so households may not see global volatility immediately.",
+            "Higher consumption means India needs more imported crude and fuel, which could raise the import bill if global prices stay elevated."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-08T06:22:07.913Z",
+            "tier": "quick",
+            "primary": "pass_through",
+            "complement": null,
+            "features": [
+              "price_move"
+            ],
+            "exposure": {
+              "level": "high",
+              "reason": "Petrol and diesel are household essentials that also drive transport and freight costs, and India depends on imported crude, so global price swings and rising demand reach consumers through fuel prices."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Pump prices are unchanged now, and any change would follow refiners' costs, which adjust with a lag because crude is bought in advance and retailers revise prices infrequently."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "The reporting rests on one outlet, Mint, citing government consumption data; the size and direction of the crude price moves are not specified."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "petrol and diesel prices",
+                "effect": "Pump prices were steady on 8 November, so motorists and transporters saw no immediate change, though future revisions would depend on how refiners' crude costs evolve.",
+                "basis": "reported"
+              },
+              {
+                "group": "Government finances",
+                "direction": "unclear",
+                "what": "fuel import bill",
+                "effect": "Rising oil consumption means larger import volumes, which could widen the import bill if global crude prices climb, while higher fuel sales may also raise tax collections.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Any revision of petrol and diesel prices by fuel retailers in major cities",
+                "why": "A change would show whether global crude swings are starting to pass through to pump prices.",
+                "when": "",
+                "where": "Indian Oil Corporation retail price listings"
+              },
+              {
+                "what": "The next monthly government data on India's oil consumption",
+                "why": "It would show whether October's demand surge was a one-month spike or a continuing trend.",
+                "when": "",
+                "where": "Petroleum Planning and Analysis Cell"
+              }
+            ],
+            "context": [
+              "India imports most of the crude oil it uses, so global price movements affect refiners' costs. Retail petrol and diesel prices are set mainly by state-run fuel retailers and include substantial central and state taxes."
+            ],
+            "terms": [
+              {
+                "term": "oil consumption",
+                "meaning": "The total volume of petroleum products used in India in a month, which is a broad indicator of demand from transport, industry and households."
+              }
+            ],
+            "frameworks": {
+              "pass_through": {
+                "driver": {
+                  "variable": "India's oil consumption, alongside fluctuating global crude prices",
+                  "direction": "up",
+                  "size": "10% rise in October consumption"
+                },
+                "product": "petrol & diesel",
+                "rungs": [
+                  {
+                    "stage": "Global crude swings → refiners' import cost",
+                    "pass": "partial",
+                    "damper": "Refiners buy crude through contracts and hold inventories, so price swings reach their costs gradually rather than immediately.",
+                    "lag": "weeks"
+                  },
+                  {
+                    "stage": "Refiners' cost → retailers' pump price decisions",
+                    "pass": "blocked",
+                    "damper": "State-run fuel retailers dominate the market and have left prices largely unchanged, which absorbs short-term swings in crude.",
+                    "lag": "weeks"
+                  },
+                  {
+                    "stage": "Base price → price at the pump",
+                    "pass": "partial",
+                    "damper": "Central excise duty and state value added tax form a large part of the pump price, so a move in crude is diluted before reaching consumers.",
+                    "lag": "days"
+                  }
+                ],
+                "end_user": {
+                  "group": "Fuel & LPG users",
+                  "effect": "Motorists and transporters saw steady prices on 8 November. A change in pump prices would depend on how long crude stays volatile and on retailers' decisions."
+                }
+              }
+            }
+          },
+          "place": {
+            "name": "India",
+            "country": "India",
+            "lat": 20.6,
+            "lon": 78.9
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "Fuel prices today on 8 November: Check how much petrol, diesel cost in Delhi, Bengaluru, Mumbai, Chennai — Full list",
+              "url": "https://www.livemint.com/news/india/fuel-prices-today-on-8-november-check-how-much-petrol-diesel-cost-in-delhi-bengaluru-mumbai-chennai-full-list-11794100902262.html",
+              "date": "2026-11-08T01:29:55.000Z",
+              "kind": "hard",
+              "summary": "Petrol and diesel prices remained largely unchanged across major Indian cities on November 8, despite fluctuations in global crude rates amid Middle East tensions. Meanwhile, India's oil consumption surged 10% in October to its highest level since March, government data showed.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/11/08/1600x900/logo/pexels-photo-20500734_1792978034292_t2R9_179297804_1794101466691_TVch_1794101466804_t7ch_f1478be9-8134-4557-9a73-8d97e2515434_GR78.jpeg"
+            }
+          ],
+          "stats": {
+            "v": 2,
+            "at": "2026-11-08T06:22:34.071Z",
+            "series": []
+          },
+          "thread": "t1qd7rgj"
+        },
         {
           "id": "szild8s",
           "headline": "Lab tests show ethanol blend in E20 petrol as high as 31% in Karnataka",
@@ -15697,6 +15831,104 @@
       "name": "Economy & Trade",
       "items": [
         {
+          "id": "s1h5j7h6",
+          "headline": "Indian women earn more at managerial positions, but very few get to climb the corporate ladder",
+          "url": "https://www.livemint.com/news/indian-women-earn-more-at-managerial-positions-but-very-few-get-to-climb-the-corporate-ladder-11793961063503.html",
+          "source": "mint",
+          "date": "2026-11-08T01:30:31.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2026/11/06/1600x900/logo/g5256889473a613367e9c7501b9178abef6f953d2d392f0bbb_1793987005152_zFIj_1793987005267_EspU_fa2070cd-83c8-4e74-8ffd-8c2ba6d40def_0QP0.png",
+          "why": "Mint reports that India's gender pay gap reverses among managers, with women earning more per hour than men, but women hold only 11.9% of managerial positions, pointing to barriers in reaching senior leadership.",
+          "implications": [
+            "Because few women reach managerial roles, the higher pay they earn there applies to a small group and does not change the overall earnings gap for most working women.",
+            "Data on career progression and professional experience points to further hurdles, which suggests the constraint lies in promotion rather than in pay once a woman becomes a manager."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-08T06:22:07.915Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "low",
+              "reason": "The findings describe a structural pattern in managerial employment affecting a small group of salaried workers, and the reports describe no direct price or policy channel to households."
+            },
+            "horizon": {
+              "value": "years",
+              "reason": "Changes in women's representation in management depend on gradual shifts in hiring, promotion and career paths that take many years."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "The findings rest on a single outlet, Mint, and the underlying data source and survey period are not named in the report."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Salaried workers",
+                "direction": "mixed",
+                "what": "women managers' pay and promotion",
+                "effect": "Women who become managers earn more per hour than men, but few reach those roles, so promotion barriers limit how many benefit.",
+                "basis": "reported"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Further data on women's progression into senior leadership roles",
+                "why": "It would show whether the share of women in managerial positions is rising from the current 11.9%.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "Pay gaps are usually measured across all workers, so they reflect which jobs women hold as well as pay within a job. Women's participation in India's paid workforce has long been lower than men's."
+            ],
+            "terms": [],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Pay gap reverses among managers",
+                    "detail": "Women in managerial positions in India earn more per hour than men, according to the data analysed by Mint.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Few women hold managerial roles",
+                    "detail": "Women account for only 11.9% of managerial positions, so the higher pay reaches a small group, and the data shows further hurdles to senior leadership.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Limited gains in overall earnings",
+                    "detail": "Because promotion into management is the bottleneck, the pay advantage may do little to narrow the wider gender earnings gap or lift women's household incomes.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "A larger share of women moved into managerial roles, which would spread the higher managerial pay to more women and narrow the wider earnings gap."
+              }
+            }
+          },
+          "place": {
+            "name": "India",
+            "country": "India",
+            "lat": 20.6,
+            "lon": 78.9
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "Indian women earn more at managerial positions, but very few get to climb the corporate ladder",
+              "url": "https://www.livemint.com/news/indian-women-earn-more-at-managerial-positions-but-very-few-get-to-climb-the-corporate-ladder-11793961063503.html",
+              "date": "2026-11-08T01:30:31.000Z",
+              "kind": "hard",
+              "summary": "India’s gender pay gap reverses among managers, with women earning more per hour than men. But women account for just 11.9% of managerial positions. Data on career progression and professional experience reveals further hurdles women face in reaching senior leadership roles.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/11/06/1600x900/logo/g5256889473a613367e9c7501b9178abef6f953d2d392f0bbb_1793987005152_zFIj_1793987005267_EspU_fa2070cd-83c8-4e74-8ffd-8c2ba6d40def_0QP0.png"
+            }
+          ],
+          "finChecked": true,
+          "thread": "t1ykg2gm"
+        },
+        {
           "id": "sxpbop6",
           "headline": "India steps up public investment push as external risks mount",
           "url": "https://www.livemint.com/news/finance-ministry-tells-central-ministries-and-depts-to-keep-capex-engine-running-11793955240379.html",
@@ -30826,6 +31058,36 @@
       "id": "finance",
       "name": "Finance",
       "items": [
+        {
+          "id": "s40qgn0",
+          "headline": "10 years since demonetisation: Cash usage unchanged, fake notes on the rise",
+          "url": "https://www.thehindu.com/business/10-years-since-demonetisation-cash-usage-unchanged-fake-notes-on-the-rise/article71673986.ece",
+          "source": "thehindu",
+          "date": "2026-11-08T05:36:06.000Z",
+          "relevance": "medium",
+          "image": "https://th-i.thgim.com/public/news/national/lgtow2/article71678816.ece/alternates/LANDSCAPE_1200/iStock-806907204.jpg",
+          "why": "",
+          "implications": [],
+          "place": {
+            "name": "New Delhi",
+            "country": "India",
+            "lat": 28.61,
+            "lon": 77.21
+          },
+          "reports": [
+            {
+              "source": "thehindu",
+              "headline": "10 years since demonetisation: Cash usage unchanged, fake notes on the rise",
+              "url": "https://www.thehindu.com/business/10-years-since-demonetisation-cash-usage-unchanged-fake-notes-on-the-rise/article71673986.ece",
+              "date": "2026-11-08T05:36:06.000Z",
+              "kind": "feature",
+              "summary": "This Deepavali marks 10 years since Prime Minister Narendra Modi announced overnight demonetisation of 86% of the country’s cash. Data shows some stated aims of the move remain largely unmet",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/news/national/lgtow2/article71678816.ece/alternates/LANDSCAPE_1200/iStock-806907204.jpg"
+            }
+          ],
+          "thread": "tkovd36"
+        },
         {
           "id": "svohvzw",
           "headline": "IDBI Bank stake sale: ‘Very, very remote’ chance of finding another buyer at ₹52,000 crore, says DIPAM Secretary Chawla",
@@ -51721,105 +51983,36 @@
       "name": "Environment & Climate",
       "items": [
         {
-          "id": "sunixzz",
-          "headline": "India moves to set standards for hydrogen-powered trucks",
-          "url": "https://www.livemint.com/industry/manufacturing/india-moves-to-set-standards-for-hydrogen-powered-trucks-11793960908339.html",
-          "source": "mint",
-          "date": "2026-11-07T00:30:23.000Z",
+          "id": "s11vx7sh",
+          "headline": "News in Frames: Many twists in the monsoon’s tale",
+          "url": "https://www.thehindu.com/photos/news-in-frames-many-twists-in-the-monsoons-tale/article71680539.ece",
+          "source": "thehindu",
+          "date": "2026-11-08T05:05:16.000Z",
           "relevance": "medium",
-          "image": "https://www.livemint.com/lm-img/img/2026/11/06/1600x900/logo/2-0-377524761-000-Del6295043-0_1680526101181_1793984616264_EhtQ_cc9c4344-c8ea-46cd-9542-d0a1ad1b4c61_Pod0.jpg",
-          "why": "India is moving to set standards for hydrogen-powered trucks. Diesel trucks make up about 5% of India's vehicle fleet but produce 34% of the transport sector's carbon emissions, so freight is a priority for cutting emissions.",
-          "implications": [
-            "Technical standards could give truck makers and fuel suppliers common specifications to design to, which may be a precondition for hydrogen trucks to be built and sold in India.",
-            "Because diesel trucks emit far more than their share of the fleet suggests, any shift to hydrogen in freight could cut transport emissions by more than the vehicle numbers imply."
-          ],
-          "analysis": {
-            "v": 3,
-            "at": "2026-11-07T01:03:16.834Z",
-            "tier": "quick",
-            "primary": "policy_tracker",
-            "complement": null,
-            "features": [
-              "policy_stage"
-            ],
-            "exposure": {
-              "level": "medium",
-              "reason": "The measure concerns one industry, trucking and truck manufacturing, and no immediate cost or price change for households is reported. Over time it could affect freight costs and diesel demand."
-            },
-            "horizon": {
-              "value": "years",
-              "reason": "Standards are only an early step, and hydrogen trucks would still need to be developed, certified, supplied with fuel and adopted by fleets before the effect is widely felt."
-            },
-            "confidence": {
-              "level": "low",
-              "reason": "This rests on a single Mint report, and the issuing body, the content of the standards and the timetable are not described."
-            },
-            "outlets": 1,
-            "affected": [
-              {
-                "group": "Importers & traders",
-                "direction": "unclear",
-                "what": "freight costs",
-                "effect": "Goods move largely by truck, so a future change in the fuel and cost of trucking could affect transport costs for traders.",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "Publication of the draft or final technical standards for hydrogen-powered trucks",
-                "why": "The text would show which safety and performance requirements truck makers would have to meet.",
-                "when": "",
-                "where": ""
-              }
-            ],
-            "context": [
-              "Vehicle standards set safety and technical requirements that manufacturers must meet before a new type of vehicle can be certified for road use. India's freight sector relies heavily on diesel, most of which comes from imported crude oil."
-            ],
-            "terms": [
-              {
-                "term": "Decarbonising freight transport",
-                "meaning": "This means cutting the carbon dioxide released by vehicles that carry goods, for example by moving from diesel to cleaner fuels such as hydrogen."
-              }
-            ],
-            "frameworks": {
-              "policy_tracker": {
-                "instrument": {
-                  "name": "Standards for hydrogen-powered trucks",
-                  "issuer": "Government of India; the specific agency has not been named",
-                  "jurisdiction": "India"
-                },
-                "stages": [
-                  {
-                    "stage": "announced",
-                    "date": "",
-                    "status": "current"
-                  }
-                ],
-                "obligations": [],
-                "applies_to_india": "yes",
-                "india_note": "The standards would apply to trucks in India and aim at the segment that causes a large share of transport emissions. Their effect on truck makers, fuel suppliers and freight users depends on details not yet reported."
-              }
-            }
-          },
+          "why": "",
+          "implications": [],
           "place": {
-            "name": "New Delhi",
+            "name": "Andhra Pradesh",
             "country": "India",
-            "lat": 28.61,
-            "lon": 77.21
+            "lat": 16.5,
+            "lon": 80.6
           },
           "reports": [
             {
-              "source": "mint",
-              "headline": "India moves to set standards for hydrogen-powered trucks",
-              "url": "https://www.livemint.com/industry/manufacturing/india-moves-to-set-standards-for-hydrogen-powered-trucks-11793960908339.html",
-              "date": "2026-11-07T00:30:23.000Z",
-              "kind": "hard",
-              "summary": "Decarbonising freight transport is important because diesel trucks account for around 5% of India's vehicle fleet but contribute 34% of the transport sector's carbon emissions",
+              "source": "thehindu",
+              "headline": "News in Frames: Many twists in the monsoon’s tale",
+              "url": "https://www.thehindu.com/photos/news-in-frames-many-twists-in-the-monsoons-tale/article71680539.ece",
+              "date": "2026-11-08T05:05:16.000Z",
+              "kind": "feature",
+              "summary": "Andhra Pradesh swung from drought to deluge, with two back-to-back cyclones causing an estimated ₹6,500 cr. in damage and leaving at least 17 dead; crops were flattened and coconut trees uprooted, with farmers in the Godavari belt facing at least two years of recovery",
               "summaryV": 3,
-              "image": "https://www.livemint.com/lm-img/img/2026/11/06/1600x900/logo/2-0-377524761-000-Del6295043-0_1680526101181_1793984616264_EhtQ_cc9c4344-c8ea-46cd-9542-d0a1ad1b4c61_Pod0.jpg"
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://th-i.thgim.com/public/incoming/am8wmt/article71680563.ece/alternates/LANDSCAPE_1200/wind.jpg"
             }
           ],
-          "thread": "t6mw5fs"
+          "image": "https://th-i.thgim.com/public/incoming/am8wmt/article71680563.ece/alternates/LANDSCAPE_1200/wind.jpg",
+          "thread": "t1nsgg07"
         },
         {
           "id": "slkmdfl",
@@ -51919,9 +52112,120 @@
               "summary": "Many parts of the national capital, including IIT Delhi, ITO, Dwarka, Rohini, Punjabi Bagh, Alipur, Bawana, and Jahangirpuri, witnessed “severe” level air pollution",
               "summaryV": 3,
               "image": "https://th-i.thgim.com/public/incoming/s89fxg/article71672805.ece/alternates/LANDSCAPE_1200/POLLUTION%20STANDLONE%20DELHI%201.JPG"
+            },
+            {
+              "source": "thehindu",
+              "headline": "Delhi wakes up to toxic haze on Deepavali, close to 'severe' AQI at 383",
+              "url": "https://www.thehindu.com/news/cities/Delhi/delhi-wakes-up-to-toxic-haze-on-deepavali-close-to-severe-aqi-at-383/article71680540.ece",
+              "date": "2026-11-08T05:01:40.000Z",
+              "kind": "hard",
+              "summary": "Jahangirpuri recorded the highest AQI at 450, followed by RK Puram at 448, according to the Sameer app.",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/incoming/26hbkz/article71680543.ece/alternates/LANDSCAPE_1200/20261107244L.jpg"
             }
           ],
           "thread": "t1f6i1iy"
+        },
+        {
+          "id": "sunixzz",
+          "headline": "India moves to set standards for hydrogen-powered trucks",
+          "url": "https://www.livemint.com/industry/manufacturing/india-moves-to-set-standards-for-hydrogen-powered-trucks-11793960908339.html",
+          "source": "mint",
+          "date": "2026-11-07T00:30:23.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2026/11/06/1600x900/logo/2-0-377524761-000-Del6295043-0_1680526101181_1793984616264_EhtQ_cc9c4344-c8ea-46cd-9542-d0a1ad1b4c61_Pod0.jpg",
+          "why": "India is moving to set standards for hydrogen-powered trucks. Diesel trucks make up about 5% of India's vehicle fleet but produce 34% of the transport sector's carbon emissions, so freight is a priority for cutting emissions.",
+          "implications": [
+            "Technical standards could give truck makers and fuel suppliers common specifications to design to, which may be a precondition for hydrogen trucks to be built and sold in India.",
+            "Because diesel trucks emit far more than their share of the fleet suggests, any shift to hydrogen in freight could cut transport emissions by more than the vehicle numbers imply."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-07T01:03:16.834Z",
+            "tier": "quick",
+            "primary": "policy_tracker",
+            "complement": null,
+            "features": [
+              "policy_stage"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The measure concerns one industry, trucking and truck manufacturing, and no immediate cost or price change for households is reported. Over time it could affect freight costs and diesel demand."
+            },
+            "horizon": {
+              "value": "years",
+              "reason": "Standards are only an early step, and hydrogen trucks would still need to be developed, certified, supplied with fuel and adopted by fleets before the effect is widely felt."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single Mint report, and the issuing body, the content of the standards and the timetable are not described."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "freight costs",
+                "effect": "Goods move largely by truck, so a future change in the fuel and cost of trucking could affect transport costs for traders.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Publication of the draft or final technical standards for hydrogen-powered trucks",
+                "why": "The text would show which safety and performance requirements truck makers would have to meet.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "Vehicle standards set safety and technical requirements that manufacturers must meet before a new type of vehicle can be certified for road use. India's freight sector relies heavily on diesel, most of which comes from imported crude oil."
+            ],
+            "terms": [
+              {
+                "term": "Decarbonising freight transport",
+                "meaning": "This means cutting the carbon dioxide released by vehicles that carry goods, for example by moving from diesel to cleaner fuels such as hydrogen."
+              }
+            ],
+            "frameworks": {
+              "policy_tracker": {
+                "instrument": {
+                  "name": "Standards for hydrogen-powered trucks",
+                  "issuer": "Government of India; the specific agency has not been named",
+                  "jurisdiction": "India"
+                },
+                "stages": [
+                  {
+                    "stage": "announced",
+                    "date": "",
+                    "status": "current"
+                  }
+                ],
+                "obligations": [],
+                "applies_to_india": "yes",
+                "india_note": "The standards would apply to trucks in India and aim at the segment that causes a large share of transport emissions. Their effect on truck makers, fuel suppliers and freight users depends on details not yet reported."
+              }
+            }
+          },
+          "place": {
+            "name": "New Delhi",
+            "country": "India",
+            "lat": 28.61,
+            "lon": 77.21
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "India moves to set standards for hydrogen-powered trucks",
+              "url": "https://www.livemint.com/industry/manufacturing/india-moves-to-set-standards-for-hydrogen-powered-trucks-11793960908339.html",
+              "date": "2026-11-07T00:30:23.000Z",
+              "kind": "hard",
+              "summary": "Decarbonising freight transport is important because diesel trucks account for around 5% of India's vehicle fleet but contribute 34% of the transport sector's carbon emissions",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/11/06/1600x900/logo/2-0-377524761-000-Del6295043-0_1680526101181_1793984616264_EhtQ_cc9c4344-c8ea-46cd-9542-d0a1ad1b4c61_Pod0.jpg"
+            }
+          ],
+          "thread": "t6mw5fs"
         },
         {
           "id": "s1kjonvx",
@@ -52564,7 +52868,135 @@
               "image": "https://www.livemint.com/lm-img/img/2026/11/04/1600x900/logo/Latest-News_1545121335238_1793798147615_T7oZ_ef745c16-6825-4535-abf1-49892f0af678_qkoH.jpg"
             }
           ],
-          "thread": "t1f6i1iy"
+          "thread": "t1f6i1iy",
+          "stats": {
+            "v": 2,
+            "at": "2026-11-08T06:22:43.383Z",
+            "series": [
+              {
+                "title": "Delhi average AQI in October, by year",
+                "unit": "AQI (index value)",
+                "publisher": "Press Information Bureau (Ministry of Environment, Forest and Climate Change / C",
+                "why": "October is the month when Delhi's air normally starts to worsen, so these values show how the early-winter slide in earlier years compares with this year's first \"very poor\" reading.",
+                "points": [
+                  {
+                    "period": "2019",
+                    "value": 234,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2210305&reg=3&lang=2",
+                    "source": "2025 - Air Quality Perspective in Delhi"
+                  },
+                  {
+                    "period": "2020",
+                    "value": 265,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2210305&reg=3&lang=2",
+                    "source": "2025 - Air Quality Perspective in Delhi"
+                  },
+                  {
+                    "period": "2021",
+                    "value": 173,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2210305&reg=3&lang=2",
+                    "source": "2025 - Air Quality Perspective in Delhi"
+                  },
+                  {
+                    "period": "2022",
+                    "value": 210,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2210305&reg=3&lang=2",
+                    "source": "2025 - Air Quality Perspective in Delhi"
+                  },
+                  {
+                    "period": "2023",
+                    "value": 219,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2210305&reg=3&lang=2",
+                    "source": "2025 - Air Quality Perspective in Delhi"
+                  },
+                  {
+                    "period": "2024",
+                    "value": 234,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2210305&reg=3&lang=2",
+                    "source": "2025 - Air Quality Perspective in Delhi"
+                  },
+                  {
+                    "period": "2025",
+                    "value": 223,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2210305&reg=3&lang=2",
+                    "source": "2025 - Air Quality Perspective in Delhi"
+                  }
+                ],
+                "dropped": 0,
+                "sources": [
+                  {
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2210305&reg=3&lang=2",
+                    "title": "2025 - Air Quality Perspective in Delhi",
+                    "domain": "pib.gov.in"
+                  }
+                ],
+                "domains": [
+                  "pib.gov.in"
+                ]
+              },
+              {
+                "title": "Delhi average AQI in November, by year",
+                "unit": "AQI (index value)",
+                "publisher": "Press Information Bureau (Ministry of Environment, Forest and Climate Change / C",
+                "why": "November monthly averages show how far into the \"very poor\" range and above Delhi's air has usually gone in the weeks after this first \"very poor\" reading.",
+                "points": [
+                  {
+                    "period": "2019",
+                    "value": 312,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2210305&reg=3&lang=2",
+                    "source": "2025 - Air Quality Perspective in Delhi"
+                  },
+                  {
+                    "period": "2020",
+                    "value": 328,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2210305&reg=3&lang=2",
+                    "source": "2025 - Air Quality Perspective in Delhi"
+                  },
+                  {
+                    "period": "2021",
+                    "value": 377,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2210305&reg=3&lang=2",
+                    "source": "2025 - Air Quality Perspective in Delhi"
+                  },
+                  {
+                    "period": "2022",
+                    "value": 321,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2210305&reg=3&lang=2",
+                    "source": "2025 - Air Quality Perspective in Delhi"
+                  },
+                  {
+                    "period": "2023",
+                    "value": 373,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2210305&reg=3&lang=2",
+                    "source": "2025 - Air Quality Perspective in Delhi"
+                  },
+                  {
+                    "period": "2024",
+                    "value": 374,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2210305&reg=3&lang=2",
+                    "source": "2025 - Air Quality Perspective in Delhi"
+                  },
+                  {
+                    "period": "2025",
+                    "value": 354,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2210305&reg=3&lang=2",
+                    "source": "2025 - Air Quality Perspective in Delhi"
+                  }
+                ],
+                "dropped": 0,
+                "sources": [
+                  {
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2210305&reg=3&lang=2",
+                    "title": "2025 - Air Quality Perspective in Delhi",
+                    "domain": "pib.gov.in"
+                  }
+                ],
+                "domains": [
+                  "pib.gov.in"
+                ]
+              }
+            ]
+          }
         },
         {
           "id": "s1f6eyp4",
@@ -53570,7 +54002,64 @@
               "image": "https://www.livemint.com/lm-img/img/2026/11/02/1600x900/logo/Delhi_school_open_today_1734396144396_1793594236317_ftEz_1b20eb67-2e95-4d86-84fe-14550a9c7a54_VIPi.jpg"
             }
           ],
-          "thread": "t1tlxm8k"
+          "thread": "t1tlxm8k",
+          "stats": {
+            "v": 2,
+            "at": "2026-11-08T06:22:46.044Z",
+            "series": [
+              {
+                "title": "Cyclones making landfall over the Indian coast",
+                "unit": "number of cyclones per year",
+                "publisher": "Ministry of Earth Sciences (via Press Information Bureau)",
+                "points": [
+                  {
+                    "period": "2016",
+                    "value": 1,
+                    "url": "https://www.pib.gov.in/Pressreleaseshare.aspx?PRID=1704837&reg=48&lang=2",
+                    "source": "Study on Cyclones"
+                  },
+                  {
+                    "period": "2017",
+                    "value": 0,
+                    "url": "https://www.pib.gov.in/Pressreleaseshare.aspx?PRID=1704837&reg=48&lang=2",
+                    "source": "Study on Cyclones"
+                  },
+                  {
+                    "period": "2018",
+                    "value": 3,
+                    "url": "https://www.pib.gov.in/Pressreleaseshare.aspx?PRID=1704837&reg=48&lang=2",
+                    "source": "Study on Cyclones"
+                  },
+                  {
+                    "period": "2019",
+                    "value": 2,
+                    "url": "https://www.pib.gov.in/Pressreleaseshare.aspx?PRID=1704837&reg=48&lang=2",
+                    "source": "Study on Cyclones"
+                  },
+                  {
+                    "period": "2020",
+                    "value": 4,
+                    "url": "https://www.pib.gov.in/Pressreleaseshare.aspx?PRID=1704837&reg=48&lang=2",
+                    "source": "Study on Cyclones"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.pib.gov.in/Pressreleaseshare.aspx?PRID=1704837&reg=48&lang=2",
+                    "title": "Study on Cyclones",
+                    "domain": "pib.gov.in"
+                  }
+                ],
+                "domains": [
+                  "pib.gov.in"
+                ],
+                "dropped": 0,
+                "why": "This series counts cyclones making landfall over the Indian coast each year, which directly measures the type of event the story reports: a cyclone forecast to make landfall in Andhra Pradesh.",
+                "reused": true,
+                "checkedAt": "2026-10-26T13:28:44.632Z"
+              }
+            ]
+          }
         },
         {
           "id": "sgingu0",
@@ -57503,6 +57992,108 @@
       "id": "agriculture",
       "name": "Agriculture & Food",
       "items": [
+        {
+          "id": "s1jg8ry3",
+          "headline": "FSSAI seizes 3,280 tonne food items, cancels 52 licences in nationwide inspection drive",
+          "url": "https://www.thehindu.com/news/national/fssai-seizes-3280-tonne-food-items-cancels-52-licences-in-nationwide-inspection-drive/article71680460.ece",
+          "source": "thehindu",
+          "date": "2026-11-08T01:54:19.000Z",
+          "relevance": "medium",
+          "image": "https://th-i.thgim.com/public/incoming/ssixf8/article71680461.ece/alternates/LANDSCAPE_1200/HWbfCOebQAAc8zz.jpg",
+          "why": "The Food Safety and Standards Authority of India (FSSAI) inspected 56,431 food establishments between 1 September and 5 November, seized 3,280 tonne of non-compliant food including paneer, ghee, milk and sweets, and cancelled 52 licences.",
+          "implications": [
+            "Seizures of dairy products and sweets mean that some non-compliant items were removed from the market, which affects shoppers of everyday foods and the businesses that supplied them.",
+            "Licence cancellations remove 52 businesses from legal operation and signal to other food businesses that compliance with licensing and safety rules is being checked."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-08T06:22:07.915Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "medium",
+              "reason": "The drive touches food businesses through licensing and compliance obligations, and reaches shoppers of dairy products and sweets, but the reports give no effect on food prices."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "The seizures and cancellations have already happened, and any change in compliance behaviour or supply of the affected products would show over the following weeks."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "The figures come from one outlet, The Hindu, attributing them to the regulator; no second outlet or detail on which states were covered is available."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Food shoppers",
+                "direction": "unclear",
+                "what": "safety of dairy and sweets",
+                "effect": "Removal of non-compliant paneer, ghee, milk and sweets from sale may lower the chance of buying substandard products, though the extent of the problem beyond the inspected outlets is unknown.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Further enforcement announcements or results from FSSAI after the 5 November cut-off",
+                "why": "They would show whether inspections and licence cancellations continue at the same pace.",
+                "when": "",
+                "where": "Food Safety and Standards Authority of India"
+              }
+            ],
+            "context": [
+              "FSSAI is India's national food regulator and sets safety standards under the Food Safety and Standards Act. Food businesses need a licence or registration, and inspections are carried out together with state food safety officials."
+            ],
+            "terms": [
+              {
+                "term": "FSSAI",
+                "meaning": "The Food Safety and Standards Authority of India, the national regulator that sets food safety standards and licenses food businesses."
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Nationwide inspection drive",
+                    "detail": "FSSAI inspected 56,431 food establishments between 1 September and 5 November and seized non-compliant products, including paneer, ghee, milk and sweets.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Seizures and licence cancellations",
+                    "detail": "The regulator seized 3,280 tonne of food items and cancelled 52 licences, taking those products and businesses out of the legal market.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Stronger compliance incentives",
+                    "detail": "The enforcement may push food businesses to follow licensing and quality rules more closely and may reduce substandard products reaching shoppers.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "Enforcement stays limited to the inspected outlets or non-compliant products re-enter supply chains through other sellers, in which case shoppers would see little change."
+              }
+            }
+          },
+          "place": {
+            "name": "India",
+            "country": "India",
+            "lat": 20.6,
+            "lon": 78.9
+          },
+          "reports": [
+            {
+              "source": "thehindu",
+              "headline": "FSSAI seizes 3,280 tonne food items, cancels 52 licences in nationwide inspection drive",
+              "url": "https://www.thehindu.com/news/national/fssai-seizes-3280-tonne-food-items-cancels-52-licences-in-nationwide-inspection-drive/article71680460.ece",
+              "date": "2026-11-08T01:54:19.000Z",
+              "kind": "hard",
+              "summary": "The regulator said it inspected 56,431 food establishments during its nationwide enforcement drive between September 1 and November 5, and seized non-compliant food products, including paneer, ghee, milk and sweets",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/incoming/ssixf8/article71680461.ece/alternates/LANDSCAPE_1200/HWbfCOebQAAc8zz.jpg"
+            }
+          ],
+          "thread": "t533nto"
+        },
         {
           "id": "s16q9ejc",
           "headline": "No fresh curbs on broken rice exports as India banks on steady paddy procurement",
@@ -79366,16 +79957,17 @@
   "source": "BBC News & The Guardian & NPR & Al Jazeera & MercoPress & ABC News & The New York Times & CNBC & CBS News & DW & France 24 & Africanews & South China Morning Post & The Hindu & Mint & The Indian Express",
   "lastRun": {
     "filter": {
-      "judged": 27,
-      "kept": 0,
+      "judged": 47,
+      "kept": 6,
       "guarded": 0
     },
     "health": {
-      "day": "2026-11-07",
-      "newStories24h": 5,
-      "keepRate2d": 0.074,
+      "day": "2026-11-08",
+      "newStories24h": 7,
+      "keepRate2d": 0.055,
       "alarm": [
-        "only 5 new stories in 24 hours (expected 12+)"
+        "only 7 new stories in 24 hours (expected 12+)",
+        "filter kept 5.5% of headlines over two days (expected 6%+)"
       ]
     },
     "wars": {
@@ -79389,18 +79981,18 @@
       "waiting": 0
     },
     "skipped": {
-      "since": "2026-11-07T17:50:12.673Z",
+      "since": "2026-11-07T22:08:34.555Z",
       "counts": {},
       "examples": {}
     },
     "finance": {
       "moved": 0,
-      "checked": 0
+      "checked": 1
     },
-    "analysed": 27,
-    "added": 0,
-    "merged": 0,
-    "rejected": 27,
+    "analysed": 47,
+    "added": 5,
+    "merged": 1,
+    "rejected": 41,
     "failedBatches": 0,
     "feeds": {
       "thehindu": {
@@ -79420,18 +80012,18 @@
       }
     },
     "shareImages": {
-      "tried": 0,
-      "found": 0,
+      "tried": 1,
+      "found": 1,
       "summaries": 0
     },
     "threads": {
-      "assigned": 0,
-      "created": 0,
+      "assigned": 5,
+      "created": 4,
       "failedBatches": 0
     },
     "summaries": {
-      "written": 2,
-      "due": 2
+      "written": 0,
+      "due": 1
     },
     "kinds": {
       "labelled": 0,
@@ -79439,62 +80031,36 @@
       "failedBatches": 0
     },
     "frames": {
-      "done": 1,
+      "done": 0,
       "waiting": 0,
       "failedBatches": 0
     },
     "stats": {
-      "searched": 8,
-      "found": 0,
-      "reused": 4,
-      "none": 4,
+      "searched": 3,
+      "found": 1,
+      "reused": 1,
+      "none": 1,
       "failed": 0,
-      "proposed": 10,
-      "droppedPoints": 10,
-      "pagesFetched": 4,
+      "proposed": 14,
+      "droppedPoints": 0,
+      "pagesFetched": 1,
       "samples": [
         {
-          "headline": "Petrol, diesel prices on 7 November: Check how much fuel costs in Delhi, Mumbai,",
-          "result": "none",
-          "proposed": 0,
-          "checked": 0,
-          "pagesFetched": 1
-        },
-        {
-          "headline": "FTAs may add $140bn to India GDP by 2035, lift exports 6.2%: Bloomberg Economics",
-          "result": "no figure found on an official page",
-          "proposed": 10,
-          "checked": 0,
-          "pagesFetched": 1
-        },
-        {
-          "headline": "US-Iran war: Mohsen Rezaei says Washington accepted some conditions to reopen Ho",
-          "result": "reused saved series"
-        },
-        {
-          "headline": "Jio-bp raises petrol price by ₹5 per litre, diesel up ₹3",
-          "result": "none",
-          "proposed": 0,
-          "checked": 0,
-          "pagesFetched": 2
-        },
-        {
-          "headline": "Drought, ethanol demand squeeze meat retailers as feed costs rise",
-          "result": "reused saved series"
-        },
-        {
-          "headline": "India initiates anti-dumping probe on Pen-G, salts from China",
+          "headline": "Fuel prices today on 8 November: Check how much petrol, diesel cost in Delhi, Be",
           "result": "none",
           "proposed": 0,
           "checked": 0,
           "pagesFetched": 0
         },
         {
-          "headline": "Lab tests show ethanol blend in E20 petrol as high as 31% in Karnataka",
-          "result": "reused saved series"
+          "headline": "Air quality worsens to ‘very poor’ category in Delhi, parts of north India",
+          "result": "chart",
+          "proposed": 14,
+          "checked": 14,
+          "pagesFetched": 1
         },
         {
-          "headline": "‘Murasu’ strengthens into Severe Cyclonic Storm",
+          "headline": "Cyclone ‘Murasu’: Telangana issues orange alert for 6 districts amid heavy rainf",
           "result": "reused saved series"
         }
       ]
@@ -79502,38 +80068,38 @@
     "models": {
       "filter": {
         "model": "claude-haiku-5-5",
-        "calls": 11,
-        "inputTokens": 42065,
-        "outputTokens": 6158,
-        "cost": 0.0072
+        "calls": 7,
+        "inputTokens": 28663,
+        "outputTokens": 8157,
+        "cost": 0.0068
+      },
+      "analysis_quick": {
+        "model": "claude-sonnet-5-5",
+        "calls": 1,
+        "inputTokens": 3599,
+        "outputTokens": 5348,
+        "cost": 0.0607
       },
       "stats": {
         "model": "claude-sonnet-5-5",
-        "calls": 4,
-        "inputTokens": 1220802,
-        "outputTokens": 5157,
-        "searches": 10,
-        "fetches": 13,
-        "cost": 2.5932
-      },
-      "analysis": {
-        "model": "claude-opus-5-5",
-        "calls": 1,
-        "inputTokens": 3321,
-        "outputTokens": 4424,
-        "cost": 0.1018
+        "calls": 2,
+        "inputTokens": 193521,
+        "outputTokens": 1827,
+        "searches": 5,
+        "fetches": 5,
+        "cost": 0.4553
       },
       "threads": {
         "model": "claude-sonnet-5-5",
-        "calls": 2,
-        "inputTokens": 1040,
-        "outputTokens": 510,
-        "cost": 0.0071
+        "calls": 1,
+        "inputTokens": 9762,
+        "outputTokens": 172,
+        "cost": 0.0212
       }
     },
     "spend": {
-      "thisDesk": 2.7094,
-      "today": 3.4472,
+      "thisDesk": 0.5442,
+      "today": 4.0695,
       "cap": 6
     }
   },
