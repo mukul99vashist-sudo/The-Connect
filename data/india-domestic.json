@@ -2,12 +2,252 @@
   "schema": 4,
   "region": "India",
   "since": "2026-10-02",
-  "updatedAt": "2026-11-08T06:22:48.172Z",
+  "updatedAt": "2026-11-08T13:43:36.714Z",
   "sectors": [
     {
       "id": "energy",
       "name": "Energy",
       "items": [
+        {
+          "id": "s20qf3y",
+          "headline": "Iran war: IOC to buy crude, LPG carriers as Strait of Hormuz disruptions drive freight costs",
+          "url": "https://www.livemint.com/economy/iran-war-ioc-to-buy-crude-lpg-carriers-as-strait-of-hormuz-disruptions-drive-freight-costs-11794120543240.html",
+          "source": "mint",
+          "date": "2026-11-08T07:00:52.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2026/11/08/1600x900/logo/INDIA-ENERGY-INDIAN-OIL-CORPN-0_1769490434325_1769490448896_1794120877856_Wod9_0f98ab7b-54e9-4a6d-acaf-9552084dc565_NHC4.JPG",
+          "why": "Indian Oil Corporation plans to buy crude and LPG carriers and explore shipbuilding in India, as disruptions around the Strait of Hormuz push up freight costs. It also aims to diversify crude supplies and raise inventories.",
+          "implications": [
+            "Owning ships could reduce the company's exposure to hired-vessel freight rates, which rise when shipping routes become risky or scarce.",
+            "Larger inventories and wider crude sourcing could cushion refineries against supply interruptions, though they require added storage and investment.",
+            "Shipbuilding in India, if pursued, would be a long-term project and would not ease current freight costs quickly."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-08T13:43:19.608Z",
+            "tier": "quick",
+            "primary": "disruption_map",
+            "complement": null,
+            "features": [
+              "disruption",
+              "armed_conflict",
+              "allocation"
+            ],
+            "exposure": {
+              "level": "high",
+              "reason": "Crude and LPG are household-essential fuels, and higher freight costs on their imports could feed into supply costs for refiners and, over time, into fuel prices. The reports do not state any price change."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Buying vessels, building inventories and diversifying crude sources take months to arrange, while the freight cost pressure is already present."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single Mint report of company plans, and the number of ships, their cost, timing and any official statement are unconfirmed."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "import freight costs",
+                "effect": "Higher freight costs raise the cost of bringing in crude and LPG, which could eventually feed into fuel and cooking gas costs, though the company's plan aims to limit this.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Indian Oil Corporation announcing a tender or order for crude or LPG carriers",
+                "why": "It would show whether the plan has moved from intention to purchase, and how large the fleet addition would be.",
+                "when": "",
+                "where": "Indian Oil Corporation"
+              }
+            ],
+            "context": [
+              "India imports most of its crude oil and a large share of its cooking gas, much of it from Gulf producers. Indian Oil is a state-owned company and India's largest refiner, so its supply choices matter nationally."
+            ],
+            "terms": [
+              {
+                "term": "Strait of Hormuz",
+                "meaning": "A narrow waterway between Iran and Oman through which a large share of the Gulf's oil and gas shipments pass."
+              }
+            ],
+            "frameworks": {
+              "disruption_map": {
+                "node": {
+                  "name": "Strait of Hormuz",
+                  "type": "strait",
+                  "status": "unknown",
+                  "as_of": "8 Nov 2026"
+                },
+                "cause": {
+                  "text": "Mint links the Strait of Hormuz disruptions to the Iran war, and says they have driven up freight costs.",
+                  "status": "claimed"
+                },
+                "flows": [
+                  {
+                    "flow": "crude",
+                    "india_link": "Indian Oil imports crude oil by sea and is buying carriers because higher freight costs raise the cost of moving crude to its refineries.",
+                    "basis": "reported"
+                  },
+                  {
+                    "flow": "other",
+                    "india_link": "Indian Oil also plans to buy LPG carriers, because higher shipping costs affect the imported LPG that supplies cooking gas.",
+                    "basis": "reported"
+                  }
+                ],
+                "alternatives": [
+                  "diversify crude supplies",
+                  "increase inventories",
+                  "buy own crude and LPG carriers"
+                ],
+                "duration": "not reported"
+              }
+            }
+          },
+          "place": {
+            "name": "New Delhi",
+            "country": "India",
+            "lat": 28.6,
+            "lon": 77.2,
+            "involves": [
+              "Iran"
+            ]
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "Iran war: IOC to buy crude, LPG carriers as Strait of Hormuz disruptions drive freight costs",
+              "url": "https://www.livemint.com/economy/iran-war-ioc-to-buy-crude-lpg-carriers-as-strait-of-hormuz-disruptions-drive-freight-costs-11794120543240.html",
+              "date": "2026-11-08T07:00:52.000Z",
+              "kind": "hard",
+              "summary": "Indian Oil Corporation plans to buy crude and LPG carriers and explore shipbuilding in India as Strait of Hormuz disruptions drive up freight costs. The move complements efforts to diversify crude supplies, increase inventories and strengthen resilience across its energy supply chain.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/11/08/1600x900/logo/INDIA-ENERGY-INDIAN-OIL-CORPN-0_1769490434325_1769490448896_1794120877856_Wod9_0f98ab7b-54e9-4a6d-acaf-9552084dc565_NHC4.JPG"
+            }
+          ],
+          "stats": {
+            "v": 2,
+            "at": "2026-11-08T13:43:34.818Z",
+            "series": [
+              {
+                "title": "Crude oil and condensate through the Strait of Hormuz",
+                "unit": "million barrels per day",
+                "publisher": "U.S. Energy Information Administration",
+                "points": [
+                  {
+                    "period": "2020",
+                    "value": 14.4,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2021",
+                    "value": 14.7,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2022",
+                    "value": 16.2,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2023",
+                    "value": 15.8,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2024",
+                    "value": 14.6,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "1H25",
+                    "value": 14.7,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "title": "eia.gov",
+                    "domain": "eia.gov"
+                  }
+                ],
+                "domains": [
+                  "eia.gov"
+                ],
+                "dropped": 0,
+                "why": "Both series measure oil flows through the Strait of Hormuz, the chokepoint whose disruption is driving the freight costs and crude-supply concerns in the story.",
+                "reused": true,
+                "checkedAt": "2026-10-13T23:16:50.395Z"
+              },
+              {
+                "title": "Oil flows through the Strait of Hormuz, total",
+                "unit": "million barrels per day",
+                "publisher": "U.S. Energy Information Administration",
+                "points": [
+                  {
+                    "period": "2020",
+                    "value": 19.2,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2021",
+                    "value": 19.7,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2022",
+                    "value": 21.9,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2023",
+                    "value": 21.8,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2024",
+                    "value": 20.7,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "1H25",
+                    "value": 20.9,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "title": "eia.gov",
+                    "domain": "eia.gov"
+                  }
+                ],
+                "domains": [
+                  "eia.gov"
+                ],
+                "dropped": 0,
+                "why": "Both series measure oil flows through the Strait of Hormuz, the chokepoint whose disruption is driving the freight costs and crude-supply concerns in the story.",
+                "reused": true,
+                "checkedAt": "2026-10-13T23:16:50.395Z"
+              }
+            ]
+          },
+          "thread": "t8nzveu"
+        },
         {
           "id": "s1g7pfty",
           "headline": "Fuel prices today on 8 November: Check how much petrol, diesel cost in Delhi, Bengaluru, Mumbai, Chennai — Full list",
@@ -31059,6 +31299,199 @@
       "name": "Finance",
       "items": [
         {
+          "id": "s1wb6he2",
+          "headline": "India's forex reserves drop by $2.69 bn to $717 bn",
+          "url": "https://www.thehindu.com/business/markets/indias-forex-reserves-drop-by-269-bn-to-717-bn/article71674389.ece",
+          "source": "thehindu",
+          "date": "2026-11-06T13:56:09.000Z",
+          "relevance": "medium",
+          "image": "https://th-i.thgim.com/public/news/national/1vepx5/article71674470.ece/alternates/LANDSCAPE_1200/iStock-1358183711.jpg",
+          "why": "India's foreign exchange reserves fell by $2.69 billion to $717 billion. Experts attribute the drop to the use of Foreign Currency Non-Resident Bank (FCNR[B]) resources and to dollar sales by the Reserve Bank of India (RBI) to defend the rupee.",
+          "implications": [
+            "Dollar sales by the RBI are meant to slow the rupee's fall, which can limit the rise in the rupee cost of imports such as fuel for Indian businesses and households.",
+            "Reserves act as a buffer for import payments and foreign debt, so continued falls would reduce that cushion even though the current level remains large."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-06T19:47:12.493Z",
+            "tier": "quick",
+            "primary": "decoder",
+            "complement": null,
+            "features": [
+              "scheduled"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The channel is rupee stability, which matters most to importers and to firms with foreign-currency payments. A single weekly fall from a large reserve level has limited direct effect on households."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Reserves are reported weekly, and any effect on the rupee and import costs would show over the coming weeks as the RBI's currency operations continue."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single outlet, The Hindu, and the explanation comes from unnamed experts rather than an official statement; the size of the RBI's dollar sales has not been reported."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "rupee stability and import costs",
+                "effect": "RBI dollar sales aimed at defending the rupee may limit rupee weakness and so restrain import costs, but the effect on actual exchange rates has not been reported.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "The next weekly release of India's foreign exchange reserves",
+                "why": "It would show whether reserves keep falling as the RBI continues to defend the rupee.",
+                "when": "",
+                "where": "Reserve Bank of India"
+              }
+            ],
+            "context": [
+              "The RBI holds foreign exchange reserves so that it can sell dollars when the rupee is under pressure and smooth sharp swings. Reserves also change with the value of the assets held, not only with RBI trading."
+            ],
+            "terms": [
+              {
+                "term": "FCNR(B)",
+                "meaning": "Foreign Currency Non-Resident (Bank) deposits are foreign-currency deposits that non-resident Indians hold with Indian banks."
+              }
+            ],
+            "frameworks": {
+              "decoder": {
+                "kind": "release",
+                "headline": {
+                  "label": "India's foreign exchange reserves",
+                  "value": 717,
+                  "unit": "$ billion",
+                  "period": "latest reported week",
+                  "previous": null,
+                  "previousLabel": "Fall of $2.69 billion from the prior reading",
+                  "from": "The Hindu"
+                },
+                "comparisons": [],
+                "drivers": [
+                  {
+                    "name": "Use of FCNR(B) resources",
+                    "direction": "down",
+                    "how": "Experts quoted in the report attribute part of the fall to the deployment of Foreign Currency Non-Resident Bank (FCNR[B]) resources."
+                  },
+                  {
+                    "name": "RBI dollar sales for currency defence",
+                    "direction": "down",
+                    "how": "Experts quoted in the report attribute part of the fall to the RBI selling dollars to defend the rupee."
+                  }
+                ],
+                "decision": null
+              }
+            }
+          },
+          "place": {
+            "name": "Mumbai",
+            "country": "India",
+            "lat": 19.08,
+            "lon": 72.88
+          },
+          "reports": [
+            {
+              "source": "thehindu",
+              "headline": "India's forex reserves drop by $2.69 bn to $717 bn",
+              "url": "https://www.thehindu.com/business/markets/indias-forex-reserves-drop-by-269-bn-to-717-bn/article71674389.ece",
+              "date": "2026-11-06T13:56:09.000Z",
+              "kind": "hard",
+              "summary": "Experts attribute this decline to the deployment of the Foreign Currency Non-Resident Bank (FCNR[B]) resources and also to currency defence put up by RBI through dollar sales",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/news/national/1vepx5/article71674470.ece/alternates/LANDSCAPE_1200/iStock-1358183711.jpg"
+            },
+            {
+              "source": "mint",
+              "headline": "India's forex reserves fall $2.69 billion to $717 billion: Why RBI is selling dollars and what it means for the rupee",
+              "url": "https://www.livemint.com/economy/indias-forex-reserves-fall-2-69-billion-to-717-billion-why-rbi-is-selling-dollars-and-what-it-means-for-the-rupee-11794125996170.html",
+              "date": "2026-11-08T10:40:55.000Z",
+              "kind": "hard",
+              "summary": "India's forex reserves fell $2.69 billion to $717.06 billion in the week ended 30 October. RBI dollar sales, FCNR(B) fund deployment and changes in asset valuations are contributing to the decline. Here's what it means for the rupee and consumers.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/11/08/1600x900/logo/Gemini_Generate_Image_x516mhx516mhx516_1794126294_1794126303756_J1hT_1794126303921_bO7y_55cca598-1164-4f5e-9685-2a68ad67ccd0_9RPh.png"
+            }
+          ],
+          "stats": {
+            "v": 2,
+            "at": "2026-11-06T19:48:23.315Z",
+            "series": [
+              {
+                "title": "India's total foreign exchange reserves, end of financial year",
+                "unit": "US$ million",
+                "publisher": "Reserve Bank of India",
+                "why": "This is the RBI's own year-end record of total reserves, so it shows the long-run build-up that the latest weekly fall comes after.",
+                "points": [
+                  {
+                    "period": "2018-19",
+                    "value": 412871,
+                    "url": "https://rbi.org.in/Scripts/PublicationsView.aspx?id=23969",
+                    "source": "Publications | Official Website of Reserve Bank of India"
+                  },
+                  {
+                    "period": "2019-20",
+                    "value": 477807,
+                    "url": "https://rbi.org.in/Scripts/PublicationsView.aspx?id=23969",
+                    "source": "Publications | Official Website of Reserve Bank of India"
+                  },
+                  {
+                    "period": "2020-21",
+                    "value": 576984,
+                    "url": "https://rbi.org.in/Scripts/PublicationsView.aspx?id=23969",
+                    "source": "Publications | Official Website of Reserve Bank of India"
+                  },
+                  {
+                    "period": "2021-22",
+                    "value": 607309,
+                    "url": "https://rbi.org.in/Scripts/PublicationsView.aspx?id=23969",
+                    "source": "Publications | Official Website of Reserve Bank of India"
+                  },
+                  {
+                    "period": "2022-23",
+                    "value": 578449,
+                    "url": "https://rbi.org.in/Scripts/PublicationsView.aspx?id=23969",
+                    "source": "Publications | Official Website of Reserve Bank of India"
+                  },
+                  {
+                    "period": "2023-24",
+                    "value": 646419,
+                    "url": "https://rbi.org.in/Scripts/PublicationsView.aspx?id=23969",
+                    "source": "Publications | Official Website of Reserve Bank of India"
+                  },
+                  {
+                    "period": "2024-25",
+                    "value": 668326,
+                    "url": "https://rbi.org.in/Scripts/PublicationsView.aspx?id=23969",
+                    "source": "Publications | Official Website of Reserve Bank of India"
+                  },
+                  {
+                    "period": "2025-26",
+                    "value": 691108,
+                    "url": "https://rbi.org.in/Scripts/PublicationsView.aspx?id=23969",
+                    "source": "Publications | Official Website of Reserve Bank of India"
+                  }
+                ],
+                "dropped": 0,
+                "sources": [
+                  {
+                    "url": "https://rbi.org.in/Scripts/PublicationsView.aspx?id=23969",
+                    "title": "Publications | Official Website of Reserve Bank of India",
+                    "domain": "rbi.org.in"
+                  }
+                ],
+                "domains": [
+                  "rbi.org.in"
+                ]
+              }
+            ]
+          },
+          "thread": "t5sqh80"
+        },
+        {
           "id": "s40qgn0",
           "headline": "10 years since demonetisation: Cash usage unchanged, fake notes on the rise",
           "url": "https://www.thehindu.com/business/10-years-since-demonetisation-cash-usage-unchanged-fake-notes-on-the-rise/article71673986.ece",
@@ -31191,189 +31624,6 @@
             }
           ],
           "thread": "t1sn5puo"
-        },
-        {
-          "id": "s1wb6he2",
-          "headline": "India's forex reserves drop by $2.69 bn to $717 bn",
-          "url": "https://www.thehindu.com/business/markets/indias-forex-reserves-drop-by-269-bn-to-717-bn/article71674389.ece",
-          "source": "thehindu",
-          "date": "2026-11-06T13:56:09.000Z",
-          "relevance": "medium",
-          "image": "https://th-i.thgim.com/public/news/national/1vepx5/article71674470.ece/alternates/LANDSCAPE_1200/iStock-1358183711.jpg",
-          "why": "India's foreign exchange reserves fell by $2.69 billion to $717 billion. Experts attribute the drop to the use of Foreign Currency Non-Resident Bank (FCNR[B]) resources and to dollar sales by the Reserve Bank of India (RBI) to defend the rupee.",
-          "implications": [
-            "Dollar sales by the RBI are meant to slow the rupee's fall, which can limit the rise in the rupee cost of imports such as fuel for Indian businesses and households.",
-            "Reserves act as a buffer for import payments and foreign debt, so continued falls would reduce that cushion even though the current level remains large."
-          ],
-          "analysis": {
-            "v": 3,
-            "at": "2026-11-06T19:47:12.493Z",
-            "tier": "quick",
-            "primary": "decoder",
-            "complement": null,
-            "features": [
-              "scheduled"
-            ],
-            "exposure": {
-              "level": "medium",
-              "reason": "The channel is rupee stability, which matters most to importers and to firms with foreign-currency payments. A single weekly fall from a large reserve level has limited direct effect on households."
-            },
-            "horizon": {
-              "value": "weeks",
-              "reason": "Reserves are reported weekly, and any effect on the rupee and import costs would show over the coming weeks as the RBI's currency operations continue."
-            },
-            "confidence": {
-              "level": "low",
-              "reason": "This rests on a single outlet, The Hindu, and the explanation comes from unnamed experts rather than an official statement; the size of the RBI's dollar sales has not been reported."
-            },
-            "outlets": 1,
-            "affected": [
-              {
-                "group": "Importers & traders",
-                "direction": "unclear",
-                "what": "rupee stability and import costs",
-                "effect": "RBI dollar sales aimed at defending the rupee may limit rupee weakness and so restrain import costs, but the effect on actual exchange rates has not been reported.",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "The next weekly release of India's foreign exchange reserves",
-                "why": "It would show whether reserves keep falling as the RBI continues to defend the rupee.",
-                "when": "",
-                "where": "Reserve Bank of India"
-              }
-            ],
-            "context": [
-              "The RBI holds foreign exchange reserves so that it can sell dollars when the rupee is under pressure and smooth sharp swings. Reserves also change with the value of the assets held, not only with RBI trading."
-            ],
-            "terms": [
-              {
-                "term": "FCNR(B)",
-                "meaning": "Foreign Currency Non-Resident (Bank) deposits are foreign-currency deposits that non-resident Indians hold with Indian banks."
-              }
-            ],
-            "frameworks": {
-              "decoder": {
-                "kind": "release",
-                "headline": {
-                  "label": "India's foreign exchange reserves",
-                  "value": 717,
-                  "unit": "$ billion",
-                  "period": "latest reported week",
-                  "previous": null,
-                  "previousLabel": "Fall of $2.69 billion from the prior reading",
-                  "from": "The Hindu"
-                },
-                "comparisons": [],
-                "drivers": [
-                  {
-                    "name": "Use of FCNR(B) resources",
-                    "direction": "down",
-                    "how": "Experts quoted in the report attribute part of the fall to the deployment of Foreign Currency Non-Resident Bank (FCNR[B]) resources."
-                  },
-                  {
-                    "name": "RBI dollar sales for currency defence",
-                    "direction": "down",
-                    "how": "Experts quoted in the report attribute part of the fall to the RBI selling dollars to defend the rupee."
-                  }
-                ],
-                "decision": null
-              }
-            }
-          },
-          "place": {
-            "name": "Mumbai",
-            "country": "India",
-            "lat": 19.08,
-            "lon": 72.88
-          },
-          "reports": [
-            {
-              "source": "thehindu",
-              "headline": "India's forex reserves drop by $2.69 bn to $717 bn",
-              "url": "https://www.thehindu.com/business/markets/indias-forex-reserves-drop-by-269-bn-to-717-bn/article71674389.ece",
-              "date": "2026-11-06T13:56:09.000Z",
-              "kind": "hard",
-              "summary": "Experts attribute this decline to the deployment of the Foreign Currency Non-Resident Bank (FCNR[B]) resources and also to currency defence put up by RBI through dollar sales",
-              "summaryV": 3,
-              "image": "https://th-i.thgim.com/public/news/national/1vepx5/article71674470.ece/alternates/LANDSCAPE_1200/iStock-1358183711.jpg"
-            }
-          ],
-          "stats": {
-            "v": 2,
-            "at": "2026-11-06T19:48:23.315Z",
-            "series": [
-              {
-                "title": "India's total foreign exchange reserves, end of financial year",
-                "unit": "US$ million",
-                "publisher": "Reserve Bank of India",
-                "why": "This is the RBI's own year-end record of total reserves, so it shows the long-run build-up that the latest weekly fall comes after.",
-                "points": [
-                  {
-                    "period": "2018-19",
-                    "value": 412871,
-                    "url": "https://rbi.org.in/Scripts/PublicationsView.aspx?id=23969",
-                    "source": "Publications | Official Website of Reserve Bank of India"
-                  },
-                  {
-                    "period": "2019-20",
-                    "value": 477807,
-                    "url": "https://rbi.org.in/Scripts/PublicationsView.aspx?id=23969",
-                    "source": "Publications | Official Website of Reserve Bank of India"
-                  },
-                  {
-                    "period": "2020-21",
-                    "value": 576984,
-                    "url": "https://rbi.org.in/Scripts/PublicationsView.aspx?id=23969",
-                    "source": "Publications | Official Website of Reserve Bank of India"
-                  },
-                  {
-                    "period": "2021-22",
-                    "value": 607309,
-                    "url": "https://rbi.org.in/Scripts/PublicationsView.aspx?id=23969",
-                    "source": "Publications | Official Website of Reserve Bank of India"
-                  },
-                  {
-                    "period": "2022-23",
-                    "value": 578449,
-                    "url": "https://rbi.org.in/Scripts/PublicationsView.aspx?id=23969",
-                    "source": "Publications | Official Website of Reserve Bank of India"
-                  },
-                  {
-                    "period": "2023-24",
-                    "value": 646419,
-                    "url": "https://rbi.org.in/Scripts/PublicationsView.aspx?id=23969",
-                    "source": "Publications | Official Website of Reserve Bank of India"
-                  },
-                  {
-                    "period": "2024-25",
-                    "value": 668326,
-                    "url": "https://rbi.org.in/Scripts/PublicationsView.aspx?id=23969",
-                    "source": "Publications | Official Website of Reserve Bank of India"
-                  },
-                  {
-                    "period": "2025-26",
-                    "value": 691108,
-                    "url": "https://rbi.org.in/Scripts/PublicationsView.aspx?id=23969",
-                    "source": "Publications | Official Website of Reserve Bank of India"
-                  }
-                ],
-                "dropped": 0,
-                "sources": [
-                  {
-                    "url": "https://rbi.org.in/Scripts/PublicationsView.aspx?id=23969",
-                    "title": "Publications | Official Website of Reserve Bank of India",
-                    "domain": "rbi.org.in"
-                  }
-                ],
-                "domains": [
-                  "rbi.org.in"
-                ]
-              }
-            ]
-          },
-          "thread": "t5sqh80"
         },
         {
           "id": "s1wge1rz",
@@ -46348,6 +46598,108 @@
       "id": "manufacturing",
       "name": "Manufacturing",
       "items": [
+        {
+          "id": "s13cjpyf",
+          "headline": "MSME ministry plans to amend Coir Industry Act 1953 to modernise infra, ease compliance burden",
+          "url": "https://www.livemint.com/news/msme-ministry-plans-to-amend-coir-industry-act-1953-to-modernise-infra-ease-compliance-burden-11793957436679.html",
+          "source": "mint",
+          "date": "2026-11-08T06:30:39.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2026/11/06/1600x900/logo/MSME-ministry-to-launch-Champions-2-0-portal-and-a_1687607284019_1793985932695_bqGK_f0aeb069-c515-4d9e-bde8-f69bfac47ff6_efjJ.jpg",
+          "why": "The Ministry of Micro, Small and Medium Enterprises plans to amend the 1953 Coir Industry Act to widen product definitions and cut red tape. The plan comes as coir exports have reached a record.",
+          "implications": [
+            "A wider product definition could bring newer coir-based goods under the Act's support and regulation, which may help small producers who now fall outside its older categories.",
+            "Lighter compliance rules could reduce paperwork and costs for small coir units, many of which are small firms with limited administrative capacity."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-08T13:43:19.607Z",
+            "tier": "quick",
+            "primary": "policy_tracker",
+            "complement": null,
+            "features": [
+              "policy_stage",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The change would reach one industry, coir producers and exporters, through the rules on product definitions and compliance. It touches no household essential, so the exposure is medium."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "The Centre is only weighing the amendment, and any change to an Act needs further government and parliamentary steps before it takes effect."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single Mint report, and the exact changes, their timing and any official statement have not been confirmed."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "MSME exporters",
+                "direction": "up",
+                "what": "compliance burden and product scope",
+                "effect": "Broader product definitions and fewer compliance requirements could make it easier and cheaper for small coir exporters to operate and sell a wider range of goods.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Publication of a draft amendment to the Coir Industry Act, or its approval by the Union Cabinet",
+                "why": "It would show how far the plan has moved and what the new definitions and compliance rules actually contain.",
+                "when": "",
+                "where": "Ministry of Micro, Small and Medium Enterprises"
+              }
+            ],
+            "context": [
+              "Coir is a fibre made from coconut husks and is produced largely by small and household units. Old industry laws are usually amended through Parliament, so changes follow a multi-step process."
+            ],
+            "terms": [
+              {
+                "term": "coir",
+                "meaning": "Coir is a natural fibre extracted from coconut husks and used to make products such as mats, ropes and garden materials."
+              }
+            ],
+            "frameworks": {
+              "policy_tracker": {
+                "instrument": {
+                  "name": "Coir Industry Act 1953 (proposed amendment)",
+                  "issuer": "Ministry of Micro, Small and Medium Enterprises",
+                  "jurisdiction": "India (Central Government)"
+                },
+                "stages": [
+                  {
+                    "stage": "announced",
+                    "date": "8 Nov 2026",
+                    "status": "current"
+                  }
+                ],
+                "obligations": [],
+                "applies_to_india": "yes",
+                "india_note": "The amendment would change the law governing India's coir industry, widening what counts as a coir product and reducing compliance burdens for producers and exporters."
+              }
+            }
+          },
+          "place": {
+            "name": "New Delhi",
+            "country": "India",
+            "lat": 28.6,
+            "lon": 77.2
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "MSME ministry plans to amend Coir Industry Act 1953 to modernise infra, ease compliance burden",
+              "url": "https://www.livemint.com/news/msme-ministry-plans-to-amend-coir-industry-act-1953-to-modernise-infra-ease-compliance-burden-11793957436679.html",
+              "date": "2026-11-08T06:30:39.000Z",
+              "kind": "hard",
+              "summary": "The Centre is weighing changes to the 1953 Coir Industry Act to widen its product definitions and cut red tape. The move comes as coir exports hit a record.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/11/06/1600x900/logo/MSME-ministry-to-launch-Champions-2-0-portal-and-a_1687607284019_1793985932695_bqGK_f0aeb069-c515-4d9e-bde8-f69bfac47ff6_efjJ.jpg"
+            }
+          ],
+          "thread": "tk52oy4"
+        },
         {
           "id": "s1d3zrfx",
           "headline": "Wipro, Rockwell, Lohum arms among 12 cos to enter electronics component manufacturing scheme",
@@ -79957,17 +80309,17 @@
   "source": "BBC News & The Guardian & NPR & Al Jazeera & MercoPress & ABC News & The New York Times & CNBC & CBS News & DW & France 24 & Africanews & South China Morning Post & The Hindu & Mint & The Indian Express",
   "lastRun": {
     "filter": {
-      "judged": 47,
-      "kept": 6,
+      "judged": 57,
+      "kept": 3,
       "guarded": 0
     },
     "health": {
       "day": "2026-11-08",
-      "newStories24h": 7,
-      "keepRate2d": 0.055,
+      "newStories24h": 8,
+      "keepRate2d": 0.054,
       "alarm": [
-        "only 7 new stories in 24 hours (expected 12+)",
-        "filter kept 5.5% of headlines over two days (expected 6%+)"
+        "only 8 new stories in 24 hours (expected 12+)",
+        "filter kept 5.4% of headlines over two days (expected 6%+)"
       ]
     },
     "wars": {
@@ -79981,18 +80333,18 @@
       "waiting": 0
     },
     "skipped": {
-      "since": "2026-11-07T22:08:34.555Z",
+      "since": "2026-11-08T06:22:48.172Z",
       "counts": {},
       "examples": {}
     },
     "finance": {
       "moved": 0,
-      "checked": 1
+      "checked": 0
     },
-    "analysed": 47,
-    "added": 5,
+    "analysed": 57,
+    "added": 2,
     "merged": 1,
-    "rejected": 41,
+    "rejected": 54,
     "failedBatches": 0,
     "feeds": {
       "thehindu": {
@@ -80012,18 +80364,18 @@
       }
     },
     "shareImages": {
-      "tried": 1,
-      "found": 1,
+      "tried": 0,
+      "found": 0,
       "summaries": 0
     },
     "threads": {
-      "assigned": 5,
-      "created": 4,
+      "assigned": 2,
+      "created": 1,
       "failedBatches": 0
     },
     "summaries": {
       "written": 0,
-      "due": 1
+      "due": 2
     },
     "kinds": {
       "labelled": 0,
@@ -80032,35 +80384,22 @@
     },
     "frames": {
       "done": 0,
-      "waiting": 0,
-      "failedBatches": 0
+      "waiting": 1,
+      "failedBatches": 0,
+      "budgetStopped": true
     },
     "stats": {
-      "searched": 3,
-      "found": 1,
+      "searched": 1,
+      "found": 0,
       "reused": 1,
-      "none": 1,
+      "none": 0,
       "failed": 0,
-      "proposed": 14,
+      "proposed": 0,
       "droppedPoints": 0,
-      "pagesFetched": 1,
+      "pagesFetched": 0,
       "samples": [
         {
-          "headline": "Fuel prices today on 8 November: Check how much petrol, diesel cost in Delhi, Be",
-          "result": "none",
-          "proposed": 0,
-          "checked": 0,
-          "pagesFetched": 0
-        },
-        {
-          "headline": "Air quality worsens to ‘very poor’ category in Delhi, parts of north India",
-          "result": "chart",
-          "proposed": 14,
-          "checked": 14,
-          "pagesFetched": 1
-        },
-        {
-          "headline": "Cyclone ‘Murasu’: Telangana issues orange alert for 6 districts amid heavy rainf",
+          "headline": "Iran war: IOC to buy crude, LPG carriers as Strait of Hormuz disruptions drive f",
           "result": "reused saved series"
         }
       ]
@@ -80068,38 +80407,29 @@
     "models": {
       "filter": {
         "model": "claude-haiku-5-5",
-        "calls": 7,
-        "inputTokens": 28663,
-        "outputTokens": 8157,
-        "cost": 0.0068
+        "calls": 5,
+        "inputTokens": 28425,
+        "outputTokens": 7604,
+        "cost": 0.0066
       },
       "analysis_quick": {
         "model": "claude-sonnet-5-5",
         "calls": 1,
-        "inputTokens": 3599,
-        "outputTokens": 5348,
-        "cost": 0.0607
-      },
-      "stats": {
-        "model": "claude-sonnet-5-5",
-        "calls": 2,
-        "inputTokens": 193521,
-        "outputTokens": 1827,
-        "searches": 5,
-        "fetches": 5,
-        "cost": 0.4553
+        "inputTokens": 3504,
+        "outputTokens": 4186,
+        "cost": 0.0489
       },
       "threads": {
         "model": "claude-sonnet-5-5",
         "calls": 1,
-        "inputTokens": 9762,
-        "outputTokens": 172,
-        "cost": 0.0212
+        "inputTokens": 9318,
+        "outputTokens": 59,
+        "cost": 0.0192
       }
     },
     "spend": {
-      "thisDesk": 0.5442,
-      "today": 4.0695,
+      "thisDesk": 0.0747,
+      "today": 4.6694,
       "cap": 6
     }
   },

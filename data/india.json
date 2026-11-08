@@ -2,12 +2,164 @@
   "schema": 4,
   "region": "India",
   "since": "2026-10-02",
-  "updatedAt": "2026-11-08T06:21:07.856Z",
+  "updatedAt": "2026-11-08T13:42:30.534Z",
   "sectors": [
     {
       "id": "energy",
       "name": "Energy",
       "items": [
+        {
+          "id": "svgdj89",
+          "headline": "Saudi Aramco building in Riyadh damaged in ‘attempted’ attack",
+          "url": "https://www.aljazeera.com/news/2026/11/8/saudi-arabia-intercepts-houthi-missiles-targeting-riyadh-eastern-province",
+          "source": "aljazeera",
+          "date": "2026-11-08T07:40:07.000Z",
+          "relevance": "medium",
+          "why": "Saudi Arabia's Energy Ministry says a Saudi Aramco building in Riyadh was damaged by falling shrapnel in an attempted attack. India depends on Gulf oil, so any wider threat to Saudi energy assets would concern Indian fuel supply.",
+          "implications": [
+            "No damage to oil production, export terminals or shipments has been reported, so the immediate effect on crude supply to India appears limited.",
+            "An attack linked to the state oil company's property could raise the risk premium that traders attach to Gulf crude, which can lift import costs for Indian refiners."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-08T13:40:59.963Z",
+            "tier": "quick",
+            "primary": "disruption_map",
+            "complement": null,
+            "features": [
+              "disruption",
+              "armed_conflict"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "Only an office building is reported damaged, and no supply disruption is reported. The link to India is indirect, through possible price nervousness in crude markets that supply Indian refiners."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Any effect on prices would depend on whether further attacks follow, and fuel costs in India adjust with a lag."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "This rests on one outlet, Al Jazeera, citing the Saudi Energy Ministry; the nature of the attack and who carried it out are unconfirmed."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "fuel price risk",
+                "effect": "If attacks spread to oil facilities, higher crude prices could raise refiners' costs and eventually petrol and diesel prices; no such effect is reported so far.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Gulf & overseas workers and families",
+                "direction": "unclear",
+                "what": "safety concerns in Riyadh",
+                "effect": "Indian workers and families in Saudi Arabia could face greater security concerns if attacks on the capital recur.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Further statements from Saudi Arabia about who carried out the attempted attack and whether other sites were targeted",
+                "why": "It would show whether this was an isolated incident or part of a wider threat to Saudi energy assets.",
+                "when": "",
+                "where": "Saudi Ministry of Energy"
+              },
+              {
+                "what": "Any change in crude oil prices or Gulf shipping arrangements following the incident",
+                "why": "It would indicate whether markets see a risk to supply that could reach Indian refiners.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "Saudi Aramco is the Saudi state-controlled oil company, and Saudi Arabia is one of the Gulf suppliers on which India's refiners have long relied.",
+              "India imports most of the crude oil it uses, so Indian fuel costs respond to Gulf security news even when physical supply is unaffected."
+            ],
+            "terms": [],
+            "frameworks": {
+              "disruption_map": {
+                "node": {
+                  "name": "Saudi Aramco building, Riyadh",
+                  "type": "other",
+                  "status": "unknown",
+                  "as_of": "8 Nov 2026"
+                },
+                "cause": {
+                  "text": "The Saudi Energy Ministry says the building in the capital was damaged by falling shrapnel after an attempted attack.",
+                  "status": "claimed"
+                },
+                "flows": [
+                  {
+                    "flow": "crude",
+                    "india_link": "Saudi Arabia is a long-established crude supplier to India, so Indian refiners and fuel users depend on stable Gulf supply. No disruption to shipments has been reported.",
+                    "basis": "inferred"
+                  }
+                ],
+                "alternatives": [],
+                "duration": "not reported"
+              }
+            }
+          },
+          "place": {
+            "name": "Riyadh",
+            "country": "Saudi Arabia",
+            "lat": 24.7,
+            "lon": 46.7
+          },
+          "reports": [
+            {
+              "source": "aljazeera",
+              "headline": "Saudi Aramco building in Riyadh damaged in ‘attempted’ attack",
+              "url": "https://www.aljazeera.com/news/2026/11/8/saudi-arabia-intercepts-houthi-missiles-targeting-riyadh-eastern-province",
+              "date": "2026-11-08T07:40:07.000Z",
+              "kind": "breaking",
+              "summary": "Saudi Arabia's Energy Ministry says building in the capital was damaged by falling shrapnel.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/AFP__20230416__33DB3QE__v5__HighRes__SaudiAramcoEnergy-1794131288.jpg?resize=1920%2C1440"
+            },
+            {
+              "source": "france24",
+              "headline": "Middle East live: Riyadh's financial district targeted following deadly Saudi strikes in Yemen",
+              "url": "https://www.france24.com/en/middle-east/20261108-middle-east-live-riyadh-financial-district-targeted-deadly-strikes-yemen-israel-eisenkot-netanyahu-coalition-government-elections",
+              "date": "2026-11-08T09:47:36.000Z",
+              "kind": "hard",
+              "summary": "Riyadh’s Aramco Tower was damaged by falling debris on Sunday after the Saudi-led coalition fighting Yemen’s Houthi rebels intercepted two ballistic missiles headed for the capital’s financial district. The attack comes a day after Saudi ​air strikes killed at least 33 people near Sanaa.",
+              "summaryV": 3,
+              "image": "https://s.france24.com/media/display/0e783f10-db4c-11f1-abfd-a575454bc579/w:1024/p:16x9/7f554331a6cdd64418e7973b0fb73c45bab02694.jpg"
+            },
+            {
+              "source": "scmp",
+              "headline": "Saudi Aramco building in Riyadh damaged in attempted attack",
+              "url": "https://www.scmp.com/news/world/middle-east/article/3373700/saudi-aramco-building-riyadh-damaged-attempted-attack",
+              "date": "2026-11-08T11:34:24.000Z",
+              "kind": "hard",
+              "summary": "An ⁠administrative building belonging to state ⁠oil giant Saudi Aramco in ⁠Riyadh was damaged by falling debris following an attempted attack on Sunday, with no injuries or fatalities reported, the kingdom’s Energy Ministry said.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/08/53e72927-8a5e-47a5-a91e-6e9ec360bc2d_e2ad55b6.jpg?itok=SEjcCnDx&v=1794137655"
+            },
+            {
+              "source": "nyt",
+              "headline": "Saudi Aramco Tower Damaged as Yemen’s Houthis Attack Riyadh",
+              "url": "https://www.nytimes.com/2026/11/08/world/middleeast/saudi-aramco-tower-riyadh-hit.html",
+              "date": "2026-11-08T13:05:01.000Z",
+              "kind": "hard",
+              "summary": "The Saudi authorities said no one was injured and that “falling shrapnel” from an intercepted missile had hit the building in the capital’s financial district.",
+              "summaryV": 3,
+              "image": "https://static01.nyt.com/images/2026/11/08/world/08int-saudi-attack-fna/08int-saudi-attack-fna-mediumSquareAt3X.jpg"
+            }
+          ],
+          "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/AFP__20230416__33DB3QE__v5__HighRes__SaudiAramcoEnergy-1794131288.jpg?resize=1920%2C1440",
+          "stats": {
+            "v": 2,
+            "at": "2026-11-08T13:42:15.164Z",
+            "series": []
+          },
+          "thread": "t2ogxay"
+        },
         {
           "id": "s1tlz8r7",
           "headline": "US launches task force to disrupt Iran’s land-based supply routes",
@@ -32760,6 +32912,39 @@
       "name": "Economy & Trade",
       "items": [
         {
+          "id": "sfk1ngh",
+          "headline": "How Democrats will try to end Trump's tariffs",
+          "url": "https://www.cnbc.com/2026/11/08/trump-tariffs-democrats-congress-canada.html",
+          "source": "cnbc",
+          "date": "2026-11-08T13:00:01.000Z",
+          "relevance": "medium",
+          "why": "",
+          "implications": [],
+          "place": {
+            "name": "Washington",
+            "country": "United States",
+            "lat": 38.9,
+            "lon": -77
+          },
+          "reports": [
+            {
+              "source": "cnbc",
+              "headline": "How Democrats will try to end Trump's tariffs",
+              "url": "https://www.cnbc.com/2026/11/08/trump-tariffs-democrats-congress-canada.html",
+              "date": "2026-11-08T13:00:01.000Z",
+              "kind": "feature",
+              "summary": "Rep. Hakeem Jeffries, D-N.Y., who is likely the next House speaker, has made clear that ending President Trump's tariffs is one of Democrats' top priorities.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://image.cnbcfm.com/api/v1/image/108520320-17938216482026-11-04t171726z_612909176_rc2ufoaxm75b_rtrmadp_0_usa-election-europe-farright.jpeg?v=1794004884&w=1920&h=1080"
+            }
+          ],
+          "finChecked": true,
+          "image": "https://image.cnbcfm.com/api/v1/image/108520320-17938216482026-11-04t171726z_612909176_rc2ufoaxm75b_rtrmadp_0_usa-election-europe-farright.jpeg?v=1794004884&w=1920&h=1080",
+          "thread": "topaoh5"
+        },
+        {
           "id": "s16vt7cq",
           "headline": "History repeats in Shenzhen? China hosts another lame-duck US president",
           "url": "https://www.scmp.com/news/china/diplomacy/article/3373654/history-repeats-shenzhen-china-hosts-another-lame-duck-us-president",
@@ -53878,6 +54063,316 @@
       "name": "Environment & Climate",
       "items": [
         {
+          "id": "s480dut",
+          "headline": "Cop31 must deliver climate progress that people can see is real, host says",
+          "url": "https://www.theguardian.com/environment/2026/nov/08/cop31-climate-summit-deliver-progress-real-host-says",
+          "source": "guardian",
+          "date": "2026-11-08T13:24:00.000Z",
+          "relevance": "medium",
+          "image": "https://i.guim.co.uk/img/media/5864e1f794c25f06dace50bf42918bce1e0f72db/174_0_6003_4803/master/6003.jpg?width=700&quality=85&auto=format&fit=max&s=15781ae9a454770c3e9a59500f40c757",
+          "why": "The Cop31 UN climate summit opens in Turkey on Monday with nearly 190 countries attending. Its host wants a visible, tangible result. Any deal on emissions or climate support could shape India's climate obligations and funding.",
+          "implications": [
+            "India takes part as one of the countries negotiating, so any agreed text on emissions cuts or climate finance could later affect its policy choices and its public spending.",
+            "The Guardian links the talks to El Niño, a weather pattern that can disturb rainfall in India, which keeps farm output and food prices in the discussion."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-08T13:42:04.236Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "The reports describe the opening of talks and give no specific measure that reaches India. Any effect would come later, through agreed emissions commitments or climate finance, so the exposure is indirect."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Summit outcomes usually take months to become national policy, funding or trade rules, so households and firms in India are unlikely to feel any effect within weeks."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "This rests on a single outlet, The Guardian, quoting the summit host on the record; the summit's actual outcome and any terms affecting India are not yet known."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Government finances",
+                "direction": "unclear",
+                "what": "climate commitments and funding",
+                "effect": "Any agreement on emissions targets or climate finance could change what the Indian government must spend or can receive, but no such terms have been reported yet.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Farmers",
+                "direction": "unclear",
+                "what": "weather risk to crops",
+                "effect": "The talks take place amid El Niño, which can disrupt rainfall and crop yields in India, though the reports do not describe any specific impact on Indian farms.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "The opening of the Cop31 talks in Turkey and the tangible outcome the host says the summit must deliver",
+                "why": "It would show whether countries move beyond statements to concrete commitments that could involve India.",
+                "when": "2026-11-09",
+                "where": "UN Climate Change (UNFCCC)"
+              }
+            ],
+            "context": [
+              "India has long argued that wealthy countries, which emitted most historically, should lead on cutting emissions and should provide climate finance to developing countries.",
+              "Indian agriculture still depends heavily on the monsoon, so shifts in global weather patterns matter to farm incomes and food supply."
+            ],
+            "terms": [
+              {
+                "term": "Cop31",
+                "meaning": "The 31st annual Conference of the Parties, the UN climate summit where countries negotiate commitments on emissions and climate finance."
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Cop31 opens in Turkey",
+                    "detail": "Leaders and representatives of close to 190 countries gather for the UN climate talks, and the host says the summit must produce a tangible outcome that people can see is real.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Talks held amid El Niño",
+                    "detail": "The Guardian describes a world grappling with an El Niño supercharged by fossil fuels, which raises pressure on negotiators to agree concrete action rather than general statements.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "India's obligations and funding may shift",
+                    "detail": "If countries agree firm steps on emissions or climate finance, India could face new commitments or gain new funding, which could in turn affect policy, public spending and industry.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The summit ends without a concrete agreement, or any agreed measures carry no new obligations or funding that involve India, in which case nothing reaches Indian households or firms."
+              }
+            }
+          },
+          "place": {
+            "name": "Antalya",
+            "country": "Turkey",
+            "lat": 36.9,
+            "lon": 30.7
+          },
+          "reports": [
+            {
+              "source": "guardian",
+              "headline": "Cop31 must deliver climate progress that people can see is real, host says",
+              "url": "https://www.theguardian.com/environment/2026/nov/08/cop31-climate-summit-deliver-progress-real-host-says",
+              "date": "2026-11-08T13:24:00.000Z",
+              "kind": "hard",
+              "summary": "High-stakes talks involving 190 countries begin on Monday as world grapples with El Niño supercharged by fossil fuels",
+              "summaryV": 3,
+              "lede": "The Cop31 summit must produce progress, “a tangible outcome ... that people can see is real”, its host has said as scores of world leaders and representatives of close to 190 countries gather in Turkey for the UN climate talks.",
+              "image": "https://i.guim.co.uk/img/media/5864e1f794c25f06dace50bf42918bce1e0f72db/174_0_6003_4803/master/6003.jpg?width=700&quality=85&auto=format&fit=max&s=15781ae9a454770c3e9a59500f40c757"
+            }
+          ],
+          "thread": "t4rp4vx"
+        },
+        {
+          "id": "sbrue56",
+          "headline": "Transition to renewable energy key issue at COP 31 talks",
+          "url": "http://www.africanews.com/2026/11/06/transition-to-renewable-energy-key-issue-at-cop-31-talks/",
+          "source": "africanews",
+          "date": "2026-11-06T09:57:59.000Z",
+          "relevance": "medium",
+          "why": "The UN COP31 climate summit opens in Antalya, Turkey, on Monday. Implementing pledges to phase out fossil fuels is a key issue, which could add pressure on coal-reliant India's energy transition plans.",
+          "implications": [
+            "Turkey, as host, plans to push an electrification drive to meet global energy demand, which could steer talks towards expanding clean power rather than only cutting fossil fuel use.",
+            "Talks on implementing fossil fuel phase-out pledges could increase scrutiny of large coal users, and India may face pressure to set out clearer timelines for its power sector.",
+            "The summit takes place during a cost-of-living crisis fuelled by war in the Middle East, which could make governments, including India's, cautious about commitments that raise near-term energy costs.",
+            "Catastrophic flooding in Nepal before the talks highlights climate risks in India's immediate neighbourhood, which could strengthen South Asian calls for adaptation funding."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-06T19:41:17.159Z",
+            "tier": "standard",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The effect reaches India through international climate commitments that shape its long-term power and energy policy. This is a policy and compliance channel rather than an immediate change in household prices."
+            },
+            "horizon": {
+              "value": "years",
+              "reason": "Any outcomes on phasing out fossil fuels would feed into national plans and investment decisions that take several years to change India's energy mix."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "Africanews and France 24 agree on the summit's timing, venue and agenda, but neither quotes an on-record official, and no outcomes are yet known."
+            },
+            "outlets": 2,
+            "affected": [
+              {
+                "group": "Power consumers",
+                "direction": "unclear",
+                "what": "electricity generation mix",
+                "effect": "Stronger global commitments to phase out fossil fuels could gradually change how India generates electricity, with uncertain effects on power costs for consumers.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Government finances",
+                "direction": "mixed",
+                "what": "transition and climate finance",
+                "effect": "India's government could face spending pressure for the energy transition, though new international climate finance could offset some of that cost.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Manufacturing workers",
+                "direction": "unclear",
+                "what": "industrial energy shift",
+                "effect": "An electrification push could change energy sources and equipment demand in Indian industry, with uncertain effects on manufacturing jobs.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Opening of the COP31 climate conference in Antalya, Turkey",
+                "why": "The opening agenda will show how central fossil fuel phase-out implementation is to the negotiations.",
+                "when": "2026-11-09",
+                "where": "UN Framework Convention on Climate Change (UNFCCC)"
+              },
+              {
+                "what": "Details of Turkey's proposed electrification drive",
+                "why": "The specifics will show whether developing countries such as India are expected to take on new targets or receive support.",
+                "when": "",
+                "where": "COP31 Presidency"
+              },
+              {
+                "what": "Final COP31 text on implementing fossil fuel phase-out pledges",
+                "why": "The wording will indicate how much new pressure India faces over its coal use.",
+                "when": "",
+                "where": "UN Framework Convention on Climate Change (UNFCCC)"
+              }
+            ],
+            "context": [
+              "India relies heavily on coal to generate electricity and has generally argued in climate talks that developed countries should act first and provide finance to developing nations.",
+              "Decisions at UN climate conferences are taken by consensus. Each country's emissions targets are set in its own national pledges rather than imposed by the summit.",
+              "Electrification means shifting energy uses such as transport, heating and industry from directly burning fossil fuels to running on electricity, ideally generated from clean sources."
+            ],
+            "terms": [
+              {
+                "term": "COP31",
+                "meaning": "The 31st annual Conference of the Parties, the main yearly negotiating meeting under the United Nations climate change treaty."
+              },
+              {
+                "term": "electrification",
+                "meaning": "Switching energy uses such as vehicles, heating and industrial processes from fuels like oil, gas or coal to electricity."
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "COP31 opens in Antalya",
+                    "detail": "UN climate negotiations begin in Antalya, Turkey, on Monday, following heatwaves across Europe and catastrophic flooding in Nepal.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Fossil fuel phase-out and electrification debated",
+                    "detail": "Implementing pledges to phase out fossil fuels is a key issue, and host Turkey plans to push an electrification drive to meet global energy demand.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Pressure on coal-reliant economies",
+                    "detail": "Any agreement on implementation could increase pressure on large coal users such as India to set clearer transition plans for their power sectors.",
+                    "basis": "inferred"
+                  },
+                  {
+                    "step": "Indian energy policy may adjust",
+                    "detail": "India could reflect outcomes in its national climate pledges, power sector investment and requests for climate finance over the following years.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The effect would not reach India if the talks end without agreement on implementing fossil fuel phase-out pledges, or if commitments remain voluntary and India keeps its existing plans."
+              }
+            }
+          },
+          "place": {
+            "name": "Antalya",
+            "country": "Turkey",
+            "lat": 36.9,
+            "lon": 30.7
+          },
+          "reports": [
+            {
+              "source": "africanews",
+              "headline": "Transition to renewable energy key issue at COP 31 talks",
+              "url": "http://www.africanews.com/2026/11/06/transition-to-renewable-energy-key-issue-at-cop-31-talks/",
+              "date": "2026-11-06T09:57:59.000Z",
+              "kind": "hard",
+              "summary": "UN climate negotiations beginning in Turkey next week will follow marked by a environmental disasters including heatwaves across Europe and catastrophic flooding in Nepal. A key issue at this year’s talks is the implementation of pledges to phase out fossil fuels.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://images.euronews.com/articles/stories/09/98/19/88/1024x538_cmsv2_8d43c9ec-344d-5e63-b4ee-e450d0e57236-9981988.jpg"
+            },
+            {
+              "source": "france24",
+              "headline": "Turkey to push for 'electrification' drive at COP31 as climate threats mount",
+              "url": "https://www.france24.com/en/environment/20261106-turkey-to-push-for-electrification-drive-at-cop31-as-climate-threats-mount",
+              "date": "2026-11-06T15:36:34.000Z",
+              "kind": "hard",
+              "summary": "COP31 host Turkey is set to push for a \"electrification\" drive to help meet global elergy demand as the UN climate conference kicks off in Antalya on Monday. The annual summit takes place this year under the shadow of a cost-of-living crisis fuelled by the war in the Middle East.",
+              "summaryV": 3,
+              "image": "https://s.france24.com/media/display/79a8343e-d9f3-11f1-ba9d-a575454bc579/w:1024/p:16x9/000-D6HQ8CQ.jpg"
+            },
+            {
+              "source": "nyt",
+              "headline": "With Hopes Low and Temperatures High, Climate Summit Opens in Turkey",
+              "url": "https://www.nytimes.com/2026/11/08/climate/with-hopes-low-and-temperatures-high-climate-summit-opens-in-turkey.html",
+              "date": "2026-11-08T10:01:37.000Z",
+              "kind": "hard",
+              "summary": "War, artificial intelligence and the Trump era have overshadowed climate change. But officials from nearly every nation are meeting to confront global warming.",
+              "summaryV": 3,
+              "image": "https://static01.nyt.com/images/2026/11/08/multimedia/08CLI-COP31-01-mgpv/08CLI-COP31-01-mgpv-mediumSquareAt3X.jpg"
+            },
+            {
+              "source": "nyt",
+              "headline": "A Guide to COP31 Climate Talks in Antalya, Turkey",
+              "url": "https://www.nytimes.com/2026/11/08/climate/what-is-cop31-climate.html",
+              "date": "2026-11-08T10:01:50.000Z",
+              "kind": "feature",
+              "summary": "Negotiators and leaders are gathering for annual United Nations climate talks. They come as global temperatures are set to breach a key threshold.",
+              "summaryV": 3,
+              "image": "https://static01.nyt.com/images/2026/11/08/multimedia/08CLI-COP31-FAQ-jqfw/08CLI-COP31-FAQ-jqfw-mediumSquareAt3X.jpg"
+            },
+            {
+              "source": "guardian",
+              "headline": "Cop31: what is at stake at the UN climate summit and what can it achieve?",
+              "url": "https://www.theguardian.com/environment/2026/nov/08/cop31-what-is-at-stake-at-the-un-climate-summit-and-what-can-it-achieve",
+              "date": "2026-11-08T11:00:38.000Z",
+              "kind": "feature",
+              "summary": "Delegates from more than 190 countries are gathering in Turkey for climate talks, but the US will be absent",
+              "summaryV": 3,
+              "lede": "As the planet faces unprecedented human-caused global heating, heads of government are meeting for the next fortnight for the latest round of climate talks. We ask why it matters and what is likely to be achieved.",
+              "image": "https://i.guim.co.uk/img/media/d6b690af57abc6ab43cbd2a94e2f483c2480349a/18_0_4233_3386/master/4233.jpg?width=700&quality=85&auto=format&fit=max&s=3158c6f0dbe7df573f5719e026d1d18d"
+            },
+            {
+              "source": "guardian",
+              "headline": "Who’s who at Cop31: key players at the climate talks",
+              "url": "https://www.theguardian.com/environment/2026/nov/08/cop31-key-players-climate-talks",
+              "date": "2026-11-08T11:48:56.000Z",
+              "kind": "feature",
+              "summary": "What are the relationships and dominant interests in play, as the summit kicks off after a bitter row over its hosting?",
+              "summaryV": 3,
+              "lede": "Hosting Cop was a key pledge from Australia’s prime minister, Anthony Albanese in 2021 , while in opposition, before his successful election campaign. But arcane rules meant the country had to wait its turn to bid and was then embroiled in an angry row with Turkey over the hosting . The final compromise put Australia in charge of the negotiations which will take place in the Turkish city of Antaly",
+              "image": "https://i.guim.co.uk/img/media/72678bea25c1a92a183def8f6052f58a39fa3e5a/790_0_4240_3392/master/4240.jpg?width=700&quality=85&auto=format&fit=max&s=23270e0eaccd405ef9d446499ed7f437"
+            }
+          ],
+          "image": "https://images.euronews.com/articles/stories/09/98/19/88/1024x538_cmsv2_8d43c9ec-344d-5e63-b4ee-e450d0e57236-9981988.jpg",
+          "thread": "t4rp4vx"
+        },
+        {
           "id": "sfiyh53",
           "headline": "Delhi air quality worsens ahead of Diwali as firework restrictions enter force",
           "url": "https://www.bbc.co.uk/news/articles/c699z8792n7ro",
@@ -54036,161 +54531,6 @@
             "series": [],
             "reuseOnly": true
           }
-        },
-        {
-          "id": "sbrue56",
-          "headline": "Transition to renewable energy key issue at COP 31 talks",
-          "url": "http://www.africanews.com/2026/11/06/transition-to-renewable-energy-key-issue-at-cop-31-talks/",
-          "source": "africanews",
-          "date": "2026-11-06T09:57:59.000Z",
-          "relevance": "medium",
-          "why": "The UN COP31 climate summit opens in Antalya, Turkey, on Monday. Implementing pledges to phase out fossil fuels is a key issue, which could add pressure on coal-reliant India's energy transition plans.",
-          "implications": [
-            "Turkey, as host, plans to push an electrification drive to meet global energy demand, which could steer talks towards expanding clean power rather than only cutting fossil fuel use.",
-            "Talks on implementing fossil fuel phase-out pledges could increase scrutiny of large coal users, and India may face pressure to set out clearer timelines for its power sector.",
-            "The summit takes place during a cost-of-living crisis fuelled by war in the Middle East, which could make governments, including India's, cautious about commitments that raise near-term energy costs.",
-            "Catastrophic flooding in Nepal before the talks highlights climate risks in India's immediate neighbourhood, which could strengthen South Asian calls for adaptation funding."
-          ],
-          "analysis": {
-            "v": 3,
-            "at": "2026-11-06T19:41:17.159Z",
-            "tier": "standard",
-            "primary": "impact_chain",
-            "complement": null,
-            "features": [
-              "pending_outcome"
-            ],
-            "exposure": {
-              "level": "medium",
-              "reason": "The effect reaches India through international climate commitments that shape its long-term power and energy policy. This is a policy and compliance channel rather than an immediate change in household prices."
-            },
-            "horizon": {
-              "value": "years",
-              "reason": "Any outcomes on phasing out fossil fuels would feed into national plans and investment decisions that take several years to change India's energy mix."
-            },
-            "confidence": {
-              "level": "medium",
-              "reason": "Africanews and France 24 agree on the summit's timing, venue and agenda, but neither quotes an on-record official, and no outcomes are yet known."
-            },
-            "outlets": 2,
-            "affected": [
-              {
-                "group": "Power consumers",
-                "direction": "unclear",
-                "what": "electricity generation mix",
-                "effect": "Stronger global commitments to phase out fossil fuels could gradually change how India generates electricity, with uncertain effects on power costs for consumers.",
-                "basis": "inferred"
-              },
-              {
-                "group": "Government finances",
-                "direction": "mixed",
-                "what": "transition and climate finance",
-                "effect": "India's government could face spending pressure for the energy transition, though new international climate finance could offset some of that cost.",
-                "basis": "inferred"
-              },
-              {
-                "group": "Manufacturing workers",
-                "direction": "unclear",
-                "what": "industrial energy shift",
-                "effect": "An electrification push could change energy sources and equipment demand in Indian industry, with uncertain effects on manufacturing jobs.",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "Opening of the COP31 climate conference in Antalya, Turkey",
-                "why": "The opening agenda will show how central fossil fuel phase-out implementation is to the negotiations.",
-                "when": "2026-11-09",
-                "where": "UN Framework Convention on Climate Change (UNFCCC)"
-              },
-              {
-                "what": "Details of Turkey's proposed electrification drive",
-                "why": "The specifics will show whether developing countries such as India are expected to take on new targets or receive support.",
-                "when": "",
-                "where": "COP31 Presidency"
-              },
-              {
-                "what": "Final COP31 text on implementing fossil fuel phase-out pledges",
-                "why": "The wording will indicate how much new pressure India faces over its coal use.",
-                "when": "",
-                "where": "UN Framework Convention on Climate Change (UNFCCC)"
-              }
-            ],
-            "context": [
-              "India relies heavily on coal to generate electricity and has generally argued in climate talks that developed countries should act first and provide finance to developing nations.",
-              "Decisions at UN climate conferences are taken by consensus. Each country's emissions targets are set in its own national pledges rather than imposed by the summit.",
-              "Electrification means shifting energy uses such as transport, heating and industry from directly burning fossil fuels to running on electricity, ideally generated from clean sources."
-            ],
-            "terms": [
-              {
-                "term": "COP31",
-                "meaning": "The 31st annual Conference of the Parties, the main yearly negotiating meeting under the United Nations climate change treaty."
-              },
-              {
-                "term": "electrification",
-                "meaning": "Switching energy uses such as vehicles, heating and industrial processes from fuels like oil, gas or coal to electricity."
-              }
-            ],
-            "frameworks": {
-              "impact_chain": {
-                "chain": [
-                  {
-                    "step": "COP31 opens in Antalya",
-                    "detail": "UN climate negotiations begin in Antalya, Turkey, on Monday, following heatwaves across Europe and catastrophic flooding in Nepal.",
-                    "basis": "reported"
-                  },
-                  {
-                    "step": "Fossil fuel phase-out and electrification debated",
-                    "detail": "Implementing pledges to phase out fossil fuels is a key issue, and host Turkey plans to push an electrification drive to meet global energy demand.",
-                    "basis": "reported"
-                  },
-                  {
-                    "step": "Pressure on coal-reliant economies",
-                    "detail": "Any agreement on implementation could increase pressure on large coal users such as India to set clearer transition plans for their power sectors.",
-                    "basis": "inferred"
-                  },
-                  {
-                    "step": "Indian energy policy may adjust",
-                    "detail": "India could reflect outcomes in its national climate pledges, power sector investment and requests for climate finance over the following years.",
-                    "basis": "inferred"
-                  }
-                ],
-                "breaks_if": "The effect would not reach India if the talks end without agreement on implementing fossil fuel phase-out pledges, or if commitments remain voluntary and India keeps its existing plans."
-              }
-            }
-          },
-          "place": {
-            "name": "Antalya",
-            "country": "Turkey",
-            "lat": 36.9,
-            "lon": 30.7
-          },
-          "reports": [
-            {
-              "source": "africanews",
-              "headline": "Transition to renewable energy key issue at COP 31 talks",
-              "url": "http://www.africanews.com/2026/11/06/transition-to-renewable-energy-key-issue-at-cop-31-talks/",
-              "date": "2026-11-06T09:57:59.000Z",
-              "kind": "hard",
-              "summary": "UN climate negotiations beginning in Turkey next week will follow marked by a environmental disasters including heatwaves across Europe and catastrophic flooding in Nepal. A key issue at this year’s talks is the implementation of pledges to phase out fossil fuels.",
-              "summaryV": 3,
-              "ogTried": true,
-              "descTried": true,
-              "image": "https://images.euronews.com/articles/stories/09/98/19/88/1024x538_cmsv2_8d43c9ec-344d-5e63-b4ee-e450d0e57236-9981988.jpg"
-            },
-            {
-              "source": "france24",
-              "headline": "Turkey to push for 'electrification' drive at COP31 as climate threats mount",
-              "url": "https://www.france24.com/en/environment/20261106-turkey-to-push-for-electrification-drive-at-cop31-as-climate-threats-mount",
-              "date": "2026-11-06T15:36:34.000Z",
-              "kind": "hard",
-              "summary": "COP31 host Turkey is set to push for a \"electrification\" drive to help meet global elergy demand as the UN climate conference kicks off in Antalya on Monday. The annual summit takes place this year under the shadow of a cost-of-living crisis fuelled by the war in the Middle East.",
-              "summaryV": 3,
-              "image": "https://s.france24.com/media/display/79a8343e-d9f3-11f1-ba9d-a575454bc579/w:1024/p:16x9/000-D6HQ8CQ.jpg"
-            }
-          ],
-          "image": "https://images.euronews.com/articles/stories/09/98/19/88/1024x538_cmsv2_8d43c9ec-344d-5e63-b4ee-e450d0e57236-9981988.jpg",
-          "thread": "t4rp4vx"
         },
         {
           "id": "s1nj4aom",
@@ -56305,6 +56645,137 @@
       "id": "governance",
       "name": "Policy & Governance",
       "items": [
+        {
+          "id": "s785emh",
+          "headline": "India questions US ‘double standards’ as Pakistan secures F-16 upgrade deal",
+          "url": "https://www.scmp.com/week-asia/politics/article/3373584/india-questions-us-double-standards-pakistan-secures-f-16-upgrade-deal",
+          "source": "scmp",
+          "date": "2026-11-08T08:00:36.000Z",
+          "relevance": "medium",
+          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/06/29aa6b32-c687-4cde-ac1e-a82b0162dd83_bbc57ef1.jpg?itok=R82rVcC_&v=1793965529",
+          "why": "The United States has decided to upgrade Pakistan's F-16 fighter jets, and critics in India accuse Washington of double standards. The issue bears on India's security outlook and its relationship with the United States.",
+          "implications": [
+            "Public criticism in India could shape how the government raises the matter with Washington, which may colour wider talks on defence, trade and technology cooperation.",
+            "Better-equipped Pakistani aircraft could influence Indian military planning, which over time may affect defence spending priorities and the public finances."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-08T13:40:59.965Z",
+            "tier": "quick",
+            "primary": "trade_flow",
+            "complement": null,
+            "features": [
+              "trade_flow",
+              "allocation"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The channel is the India–United States bilateral relationship and India's security planning with Pakistan. No direct effect on household essentials or Indian trade is reported."
+            },
+            "horizon": {
+              "value": "years",
+              "reason": "Military upgrades take time to deliver, and any shift in the regional balance or in Indian defence planning would unfold over a long period."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single outlet, the South China Morning Post, and the double-standards claim comes from unnamed critics in India; deal terms are not reported."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Government finances",
+                "direction": "unclear",
+                "what": "defence spending pressure",
+                "effect": "A stronger Pakistani air force could add to pressure on India's defence budget, although the reports give no figures or Indian government response.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "An official response from India's government to the United States decision on the Pakistan F-16 upgrade",
+                "why": "It would show whether New Delhi treats the issue as a serious diplomatic concern.",
+                "when": "",
+                "where": "Ministry of External Affairs"
+              },
+              {
+                "what": "Details of the upgrade deal, such as its scope and delivery schedule, from the US government",
+                "why": "These would clarify how significant the upgrade is for the regional military balance.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "The United States has long had defence ties with Pakistan, while India and Pakistan are rival nuclear-armed neighbours whose security relations are closely watched in New Delhi.",
+              "India has built its own defence partnership with Washington in recent years, so American decisions on Pakistan tend to draw close political scrutiny in India."
+            ],
+            "terms": [
+              {
+                "term": "F-16 upgrade",
+                "meaning": "A programme to modernise existing F-16 fighter aircraft, typically by improving systems such as electronics and weapons capability, rather than buying new planes."
+              }
+            ],
+            "frameworks": {
+              "trade_flow": {
+                "good": "F-16 fighter jet upgrades",
+                "actors": [
+                  {
+                    "country": "United States",
+                    "role": "exporter",
+                    "is_india": false
+                  },
+                  {
+                    "country": "Pakistan",
+                    "role": "importer",
+                    "is_india": false
+                  },
+                  {
+                    "country": "India",
+                    "role": "third_party",
+                    "is_india": true
+                  }
+                ],
+                "change": {
+                  "type": "deal",
+                  "effective": ""
+                },
+                "india_position": {
+                  "role": "not_involved",
+                  "note": "India is not a party to the deal, but critics there question the United States decision. It could affect Indian perceptions of Washington and the regional military balance, though no direct effect on Indian buyers or sellers is reported."
+                },
+                "volumes": []
+              }
+            }
+          },
+          "place": {
+            "name": "Washington",
+            "country": "United States",
+            "lat": 38.9,
+            "lon": -77,
+            "involves": [
+              "Pakistan",
+              "India"
+            ]
+          },
+          "reports": [
+            {
+              "source": "scmp",
+              "headline": "India questions US ‘double standards’ as Pakistan secures F-16 upgrade deal",
+              "url": "https://www.scmp.com/week-asia/politics/article/3373584/india-questions-us-double-standards-pakistan-secures-f-16-upgrade-deal",
+              "date": "2026-11-08T08:00:36.000Z",
+              "kind": "hard",
+              "summary": "Washington’s decision to upgrade Pakistan’s F-16 fighter jets has drawn accusations of double standards from critics in India, who question why the United States is strengthening a nuclear-armed ally while waging war against Iran over its nuclear programme.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/06/29aa6b32-c687-4cde-ac1e-a82b0162dd83_bbc57ef1.jpg?itok=R82rVcC_&v=1793965529"
+            }
+          ],
+          "finChecked": true,
+          "stats": {
+            "v": 2,
+            "at": "2026-11-08T13:42:28.498Z",
+            "series": []
+          },
+          "thread": "t7majgh"
+        },
         {
           "id": "s1vv8noc",
           "headline": "Iran’s nuclear programme: US offers US$20 million reward for information",
@@ -67039,16 +67510,16 @@
   "source": "BBC News & The Guardian & NPR & Al Jazeera & MercoPress & ABC News & The New York Times & CNBC & CBS News & DW & France 24 & Africanews & South China Morning Post & The Hindu & Mint & The Indian Express",
   "lastRun": {
     "filter": {
-      "judged": 60,
-      "kept": 4,
+      "judged": 95,
+      "kept": 11,
       "guarded": 0
     },
     "health": {
       "day": "2026-11-08",
-      "newStories24h": 5,
-      "keepRate2d": 0.069,
+      "newStories24h": 8,
+      "keepRate2d": 0.078,
       "alarm": [
-        "only 5 new stories in 24 hours (expected 10+)"
+        "only 8 new stories in 24 hours (expected 10+)"
       ]
     },
     "wars": {
@@ -67062,44 +67533,43 @@
       "waiting": 0
     },
     "skipped": {
-      "since": "2026-11-07T22:05:55.508Z",
+      "since": "2026-11-08T06:21:07.856Z",
       "counts": {
-        "live_blog": 2,
-        "section": 8
+        "section": 16,
+        "podcast_quiz_gallery": 1
       },
       "examples": {
-        "live_blog": [
-          "Kraków shooting latest updates: six killed and more than a dozen injured – as it happened",
-          "Iran war live: US moves to block land supply routes; UAE rescues 22 sailors"
-        ],
         "section": [
-          "Donald Trump’s power is on the wane. What next for Russia, Israel – and the rest of us? | Simon Tisdall",
-          "Haitians cheer El Salvador’s Bukele amid gang war",
-          "Plane clips truck during emergency landing on busy Florida road",
-          "Egypt sacks winning football coach after wives’ scandal",
-          "Polish PM calls deadly Krakow shooting an act of ‘terrorism’"
+          "How the deadly shooting in Krakow unfolded",
+          "How the story of ‘the girl of 100 portraits’ inspired two books",
+          "Could UFC boss Dana White be next White House press secretary?",
+          "Messi becomes first player to win back-to-back MLS Golden Boot awards",
+          "After rebel offensive, efforts to push them back appear to have stalled"
+        ],
+        "podcast_quiz_gallery": [
+          "In pictures: France protests draw 146,000 as clashes erupt for fourth straight weekend"
         ]
       }
     },
     "finance": {
       "moved": 0,
-      "checked": 0
+      "checked": 2
     },
-    "analysed": 60,
-    "added": 1,
-    "merged": 2,
-    "rejected": 57,
+    "analysed": 95,
+    "added": 4,
+    "merged": 7,
+    "rejected": 84,
     "failedBatches": 0,
     "feeds": {
       "bbc": {
         "feedsOk": 6,
         "feedsFailed": 0,
-        "items": 154
+        "items": 155
       },
       "guardian": {
         "feedsOk": 7,
         "feedsFailed": 0,
-        "items": 200
+        "items": 203
       },
       "npr": {
         "feedsOk": 4,
@@ -67109,7 +67579,7 @@
       "aljazeera": {
         "feedsOk": 1,
         "feedsFailed": 0,
-        "items": 10
+        "items": 14
       },
       "mercopress": {
         "feedsOk": 3,
@@ -67124,17 +67594,17 @@
       "nyt": {
         "feedsOk": 5,
         "feedsFailed": 0,
-        "items": 169
+        "items": 171
       },
       "cnbc": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 90
+        "items": 89
       },
       "cbs": {
         "feedsOk": 2,
         "feedsFailed": 0,
-        "items": 44
+        "items": 45
       },
       "dw": {
         "feedsOk": 3,
@@ -67144,7 +67614,7 @@
       "france24": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 74
+        "items": 71
       },
       "africanews": {
         "feedsOk": 1,
@@ -67154,22 +67624,22 @@
       "scmp": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 141
+        "items": 140
       }
     },
     "shareImages": {
-      "tried": 1,
-      "found": 1,
+      "tried": 2,
+      "found": 2,
       "summaries": 0
     },
     "threads": {
-      "assigned": 1,
-      "created": 0,
+      "assigned": 4,
+      "created": 1,
       "failedBatches": 0
     },
     "summaries": {
-      "written": 1,
-      "due": 1
+      "written": 0,
+      "due": 3
     },
     "kinds": {
       "labelled": 0,
@@ -67178,64 +67648,71 @@
     },
     "frames": {
       "done": 0,
-      "waiting": 1,
+      "waiting": 3,
       "failedBatches": 0,
       "budgetStopped": true
     },
     "stats": {
-      "searched": 4,
+      "searched": 2,
       "found": 0,
-      "reused": 3,
-      "none": 1,
+      "reused": 0,
+      "none": 2,
       "failed": 0,
-      "proposed": 0,
-      "droppedPoints": 0,
+      "proposed": 7,
+      "droppedPoints": 7,
       "pagesFetched": 0,
       "samples": [
         {
-          "headline": "US carries out another round of ‘minor’ strikes on Iran, Trump says",
-          "result": "reused saved series"
+          "headline": "Saudi Aramco building in Riyadh damaged in ‘attempted’ attack",
+          "result": "no figure found on an official page",
+          "proposed": 7,
+          "checked": 0,
+          "pagesFetched": 0
         },
         {
-          "headline": "US urges China to honour Busan trade deal commitments",
-          "result": "reused saved series"
-        },
-        {
-          "headline": "Delhi air quality worsens ahead of Diwali as firework restrictions enter force",
-          "result": "no saved series; search kept for data and in-depth stories"
-        },
-        {
-          "headline": "Trump touts imminent decision on potential new attack on Iran",
-          "result": "reused saved series"
+          "headline": "India questions US ‘double standards’ as Pakistan secures F-16 upgrade deal",
+          "result": "none",
+          "proposed": 0,
+          "checked": 0,
+          "pagesFetched": 0
         }
       ]
     },
     "models": {
       "filter": {
         "model": "claude-haiku-5-5",
-        "calls": 11,
-        "inputTokens": 38440,
-        "outputTokens": 8732,
-        "cost": 0.0082
+        "calls": 9,
+        "inputTokens": 37374,
+        "outputTokens": 14565,
+        "cost": 0.011
       },
       "analysis_quick": {
         "model": "claude-sonnet-5-5",
         "calls": 2,
-        "inputTokens": 6343,
-        "outputTokens": 2331,
-        "cost": 0.036
+        "inputTokens": 6360,
+        "outputTokens": 7202,
+        "cost": 0.0847
+      },
+      "stats": {
+        "model": "claude-sonnet-5-5",
+        "calls": 2,
+        "inputTokens": 170958,
+        "outputTokens": 1813,
+        "searches": 5,
+        "fetches": 6,
+        "cost": 0.41
       },
       "threads": {
         "model": "claude-sonnet-5-5",
-        "calls": 2,
-        "inputTokens": 11868,
-        "outputTokens": 1015,
-        "cost": 0.0339
+        "calls": 1,
+        "inputTokens": 9150,
+        "outputTokens": 106,
+        "cost": 0.0194
       }
     },
     "spend": {
-      "thisDesk": 0.0781,
-      "today": 3.5253,
+      "thisDesk": 0.5252,
+      "today": 4.5947,
       "cap": 6
     }
   },
