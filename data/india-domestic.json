@@ -2,7 +2,7 @@
   "schema": 4,
   "region": "India",
   "since": "2026-10-02",
-  "updatedAt": "2026-11-08T13:43:36.714Z",
+  "updatedAt": "2026-11-08T19:52:23.004Z",
   "sectors": [
     {
       "id": "energy",
@@ -31306,15 +31306,17 @@
           "date": "2026-11-06T13:56:09.000Z",
           "relevance": "medium",
           "image": "https://th-i.thgim.com/public/news/national/1vepx5/article71674470.ece/alternates/LANDSCAPE_1200/iStock-1358183711.jpg",
-          "why": "India's foreign exchange reserves fell by $2.69 billion to $717 billion. Experts attribute the drop to the use of Foreign Currency Non-Resident Bank (FCNR[B]) resources and to dollar sales by the Reserve Bank of India (RBI) to defend the rupee.",
+          "why": "India's foreign exchange reserves fell $2.69 billion to $717.06 billion in the week ended 30 October, partly because the Reserve Bank of India (RBI) sold dollars to support the rupee, which affects how costly imports become.",
           "implications": [
-            "Dollar sales by the RBI are meant to slow the rupee's fall, which can limit the rise in the rupee cost of imports such as fuel for Indian businesses and households.",
-            "Reserves act as a buffer for import payments and foreign debt, so continued falls would reduce that cushion even though the current level remains large."
+            "When the RBI sells dollars from its reserves, it adds foreign currency to the market, which can slow the rupee's fall and limit how quickly the rupee cost of imports rises.",
+            "Part of the decline came from deploying Foreign Currency Non-Resident Bank (FCNR[B]) resources, so not all of the fall reflects direct intervention to defend the rupee.",
+            "Changes in asset valuations also lowered the total, so the movement in the value of holdings can shift the headline figure even when no policy action is taken.",
+            "Reserves remain sizeable at $717.06 billion, but repeated weekly declines from dollar sales could signal continuing pressure on the rupee against the dollar."
           ],
           "analysis": {
             "v": 3,
-            "at": "2026-11-06T19:47:12.493Z",
-            "tier": "quick",
+            "at": "2026-11-08T19:52:13.255Z",
+            "tier": "standard",
             "primary": "decoder",
             "complement": null,
             "features": [
@@ -31322,66 +31324,108 @@
             ],
             "exposure": {
               "level": "medium",
-              "reason": "The channel is rupee stability, which matters most to importers and to firms with foreign-currency payments. A single weekly fall from a large reserve level has limited direct effect on households."
+              "reason": "This reaches India through the rupee's exchange rate, which shapes import costs and inflation, but the reserve fall itself is an indirect signal rather than a direct change to household prices."
             },
             "horizon": {
               "value": "weeks",
-              "reason": "Reserves are reported weekly, and any effect on the rupee and import costs would show over the coming weeks as the RBI's currency operations continue."
+              "reason": "RBI dollar sales affect the rupee immediately, but any effect on import costs and consumer prices usually takes several weeks to pass through."
             },
             "confidence": {
-              "level": "low",
-              "reason": "This rests on a single outlet, The Hindu, and the explanation comes from unnamed experts rather than an official statement; the size of the RBI's dollar sales has not been reported."
+              "level": "medium",
+              "reason": "The headline figure is consistent across The Hindu and Mint, but the explanation of causes rests on unnamed experts rather than an on-record RBI statement."
             },
-            "outlets": 1,
+            "outlets": 2,
             "affected": [
               {
                 "group": "Importers & traders",
                 "direction": "unclear",
-                "what": "rupee stability and import costs",
-                "effect": "RBI dollar sales aimed at defending the rupee may limit rupee weakness and so restrain import costs, but the effect on actual exchange rates has not been reported.",
+                "what": "dollar cost of imports",
+                "effect": "RBI dollar sales may slow the rupee's decline, which could limit increases in the rupee cost of goods that importers pay for in dollars.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Students abroad",
+                "direction": "unclear",
+                "what": "overseas tuition and living costs",
+                "effect": "The rupee's movement against the dollar may change how many rupees families need to send for fees and living expenses abroad.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "imported fuel costs",
+                "effect": "Because crude oil is bought in dollars, the RBI's support for the rupee could influence refiners' import costs and, over time, fuel prices.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "The next weekly release of India's foreign exchange reserves",
-                "why": "It would show whether reserves keep falling as the RBI continues to defend the rupee.",
+                "what": "The RBI's next weekly release of foreign exchange reserve figures",
+                "why": "A further fall would suggest continued dollar sales to support the rupee, while a rise would suggest easing pressure.",
                 "when": "",
-                "where": "Reserve Bank of India"
+                "where": "Reserve Bank of India Weekly Statistical Supplement"
+              },
+              {
+                "what": "Movement in the rupee's exchange rate against the US dollar",
+                "why": "Continued rupee weakness would indicate whether RBI intervention is enough to contain pressure on the currency.",
+                "when": "",
+                "where": "RBI reference rate"
               }
             ],
             "context": [
-              "The RBI holds foreign exchange reserves so that it can sell dollars when the rupee is under pressure and smooth sharp swings. Reserves also change with the value of the assets held, not only with RBI trading."
+              "India's foreign exchange reserves are held by the RBI in foreign currencies, gold, Special Drawing Rights and its reserve position with the International Monetary Fund, and the figures are published weekly.",
+              "The RBI generally says it intervenes in the currency market to curb excessive volatility in the rupee rather than to target a particular exchange rate.",
+              "Because India imports most of its crude oil and many other goods priced in dollars, a weaker rupee tends to raise import costs, which can feed into domestic prices."
             ],
             "terms": [
               {
                 "term": "FCNR(B)",
-                "meaning": "Foreign Currency Non-Resident (Bank) deposits are foreign-currency deposits that non-resident Indians hold with Indian banks."
+                "meaning": "Foreign Currency Non-Resident (Bank) deposits are accounts in which non-resident Indians hold savings in foreign currency with Indian banks."
+              },
+              {
+                "term": "currency defence",
+                "meaning": "A central bank sells foreign currency from its reserves to prevent its own currency from falling too far or too fast."
+              },
+              {
+                "term": "asset valuations",
+                "meaning": "Changes in the dollar value of reserve holdings, such as gold or non-dollar currencies, caused by price movements rather than buying or selling."
               }
             ],
             "frameworks": {
               "decoder": {
                 "kind": "release",
                 "headline": {
-                  "label": "India's foreign exchange reserves",
-                  "value": 717,
-                  "unit": "$ billion",
-                  "period": "latest reported week",
+                  "label": "Foreign exchange reserves",
+                  "value": 717.06,
+                  "unit": "US$ billion",
+                  "period": "Week ended 30 October 2026",
                   "previous": null,
-                  "previousLabel": "Fall of $2.69 billion from the prior reading",
-                  "from": "The Hindu"
+                  "previousLabel": "Previous week",
+                  "from": "Mint"
                 },
-                "comparisons": [],
+                "comparisons": [
+                  {
+                    "label": "Weekly decline",
+                    "value": 2.69,
+                    "unit": "US$ billion",
+                    "from": "The Hindu"
+                  }
+                ],
                 "drivers": [
                   {
-                    "name": "Use of FCNR(B) resources",
+                    "name": "RBI dollar sales",
                     "direction": "down",
-                    "how": "Experts quoted in the report attribute part of the fall to the deployment of Foreign Currency Non-Resident Bank (FCNR[B]) resources."
+                    "how": "Experts say the RBI sold dollars to defend the rupee, drawing down the foreign currency held in reserves."
                   },
                   {
-                    "name": "RBI dollar sales for currency defence",
+                    "name": "FCNR(B) fund deployment",
                     "direction": "down",
-                    "how": "Experts quoted in the report attribute part of the fall to the RBI selling dollars to defend the rupee."
+                    "how": "Experts attribute part of the decline to the deployment of Foreign Currency Non-Resident Bank resources."
+                  },
+                  {
+                    "name": "Asset valuation changes",
+                    "direction": "down",
+                    "how": "Mint reports that changes in the valuation of reserve assets contributed to the fall in the total."
                   }
                 ],
                 "decision": null
@@ -52335,6 +52379,138 @@
       "name": "Environment & Climate",
       "items": [
         {
+          "id": "slkmdfl",
+          "headline": "Air quality of Delhi worsens, many parts reel under ‘severe’ level air pollution",
+          "url": "https://www.thehindu.com/news/cities/Delhi/air-quality-of-delhi-worsens-many-parts-reel-under-severe-level-air-pollution/article71672802.ece",
+          "source": "thehindu",
+          "date": "2026-11-06T09:39:03.000Z",
+          "relevance": "medium",
+          "image": "https://th-i.thgim.com/public/incoming/s89fxg/article71672805.ece/alternates/LANDSCAPE_1200/POLLUTION%20STANDLONE%20DELHI%201.JPG",
+          "why": "Delhi's air turned toxic over Deepavali, with 20 monitoring stations in the 'severe' category on 8 November. Forecasters expect 'severe' air from 9 November, which affects the health of millions of residents of the national capital.",
+          "implications": [
+            "Several days of 'severe' air can aggravate breathing and heart problems, and children, older people and outdoor workers in Delhi are usually the most exposed.",
+            "Parts of the city exceeded the World Health Organization limit by more than 50 times even though firecrackers were banned, which suggests the ban did not stop the Deepavali spike."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-08T19:52:13.254Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "medium",
+              "reason": "The effect is on health in one region, Delhi, through breathing polluted air. It does not touch a household essential or a major trade flow, so the exposure is medium."
+            },
+            "horizon": {
+              "value": "now",
+              "reason": "Residents are already breathing very poor to severe air, and the forecast severe spell begins on 9 November and is expected to last a few days."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "All four reports come from The Hindu, but they rely on official readings from the Sameer app and the Air Quality Early Warning System forecast."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "A named state or region",
+                "direction": "up",
+                "what": "Delhi air pollution exposure",
+                "effect": "Delhi residents face very poor to severe air, with readings as high as 450 at Jahangirpuri, and a forecast severe spell from 9 November.",
+                "basis": "reported"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Delhi's air quality slipping into the 'severe' category across the city and staying there for several days",
+                "why": "It would show whether the Early Warning System forecast of a prolonged severe spell is holding.",
+                "when": "2026-11-09",
+                "where": "Air Quality Early Warning System and the Sameer app"
+              }
+            ],
+            "context": [
+              "Delhi's air usually worsens in late autumn and winter, when cooler, calmer conditions trap pollutants close to the ground. Firecracker bans are meant to limit one source of this seasonal build-up."
+            ],
+            "terms": [
+              {
+                "term": "AQI",
+                "meaning": "The Air Quality Index is a scale that summarises pollutant levels into categories, with 'severe' being the worst band on India's scale."
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Firecracker ban defied on Deepavali",
+                    "detail": "People set off firecrackers despite the ban on Deepavali, and air pollution in parts of Delhi rose to more than 50 times the World Health Organization limit.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Smog settles over the city",
+                    "detail": "Thick smog covered Delhi on Deepavali night, with 20 monitoring stations in the 'severe' category, which sets up a worse start to the following days.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Severe spell forecast to continue",
+                    "detail": "The Early Warning System expects 'severe' air from 9 November for a few days, which could lengthen residents' exposure and strain people with breathing or heart conditions.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "Weather conditions disperse the smog sooner than forecast, so the air improves and the expected severe spell from 9 November does not materialise."
+              }
+            }
+          },
+          "place": {
+            "name": "New Delhi",
+            "country": "India",
+            "lat": 28.6,
+            "lon": 77.2
+          },
+          "reports": [
+            {
+              "source": "thehindu",
+              "headline": "Air quality of Delhi worsens, many parts reel under ‘severe’ level air pollution",
+              "url": "https://www.thehindu.com/news/cities/Delhi/air-quality-of-delhi-worsens-many-parts-reel-under-severe-level-air-pollution/article71672802.ece",
+              "date": "2026-11-06T09:39:03.000Z",
+              "kind": "hard",
+              "summary": "Many parts of the national capital, including IIT Delhi, ITO, Dwarka, Rohini, Punjabi Bagh, Alipur, Bawana, and Jahangirpuri, witnessed “severe” level air pollution",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/incoming/s89fxg/article71672805.ece/alternates/LANDSCAPE_1200/POLLUTION%20STANDLONE%20DELHI%201.JPG"
+            },
+            {
+              "source": "thehindu",
+              "headline": "Delhi wakes up to toxic haze on Deepavali, close to 'severe' AQI at 383",
+              "url": "https://www.thehindu.com/news/cities/Delhi/delhi-wakes-up-to-toxic-haze-on-deepavali-close-to-severe-aqi-at-383/article71680540.ece",
+              "date": "2026-11-08T05:01:40.000Z",
+              "kind": "hard",
+              "summary": "Jahangirpuri recorded the highest AQI at 450, followed by RK Puram at 448, according to the Sameer app.",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/incoming/26hbkz/article71680543.ece/alternates/LANDSCAPE_1200/20261107244L.jpg"
+            },
+            {
+              "source": "thehindu",
+              "headline": "Thick smog blankets Delhi on Deepavali night, AQI at 20 stations ‘severe’",
+              "url": "https://www.thehindu.com/news/cities/Delhi/delhi-air-quality-deepavali-cracker-ban-ver-poor/article71681158.ece",
+              "date": "2026-11-08T17:33:38.000Z",
+              "kind": "hard",
+              "summary": "The Air Quality Early Warning System (EWS) has forecast that Delhi's air quality is likely to slip into the 'severe' category from November 9 and remain there for the subsequent few days",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/incoming/6yts88/article71681162.ece/alternates/LANDSCAPE_1200/POLLUTION%20STANDLONE%20DELHI%201.JPG"
+            },
+            {
+              "source": "thehindu",
+              "headline": "Air pollution over 50 times WHO limit in parts of Delhi as people defy ban on firecrackers on Deepavali",
+              "url": "https://www.thehindu.com/news/cities/Delhi/air-pollution-over-50-times-who-limit-in-parts-of-delhi-as-people-defy-ban-on-firecrackers-on-deepavali/article71681210.ece",
+              "date": "2026-11-08T19:31:12.000Z",
+              "kind": "hard",
+              "summary": "The overall air quality of Delhi continued to be in the “very poor” category while many parts of the city continued to reel under “severe” air quality",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/incoming/1ls0qx/article71681213.ece/alternates/LANDSCAPE_1200/India_Hindu_Festival_722_.jpg"
+            }
+          ],
+          "thread": "t1f6i1iy"
+        },
+        {
           "id": "s11vx7sh",
           "headline": "News in Frames: Many twists in the monsoon’s tale",
           "url": "https://www.thehindu.com/photos/news-in-frames-many-twists-in-the-monsoons-tale/article71680539.ece",
@@ -52365,118 +52541,6 @@
           ],
           "image": "https://th-i.thgim.com/public/incoming/am8wmt/article71680563.ece/alternates/LANDSCAPE_1200/wind.jpg",
           "thread": "t1nsgg07"
-        },
-        {
-          "id": "slkmdfl",
-          "headline": "Air quality of Delhi worsens, many parts reel under ‘severe’ level air pollution",
-          "url": "https://www.thehindu.com/news/cities/Delhi/air-quality-of-delhi-worsens-many-parts-reel-under-severe-level-air-pollution/article71672802.ece",
-          "source": "thehindu",
-          "date": "2026-11-06T09:39:03.000Z",
-          "relevance": "medium",
-          "image": "https://th-i.thgim.com/public/incoming/s89fxg/article71672805.ece/alternates/LANDSCAPE_1200/POLLUTION%20STANDLONE%20DELHI%201.JPG",
-          "why": "Air quality in Delhi has worsened, and many parts of the capital, including IIT Delhi, ITO, Dwarka, Rohini, Punjabi Bagh, Alipur, Bawana and Jahangirpuri, recorded 'severe' air pollution, according to The Hindu.",
-          "implications": [
-            "Severe air pollution can aggravate breathing and heart problems, so residents with existing conditions, children and older people are most exposed, especially those who work outdoors.",
-            "Persistently severe air could lead authorities to impose curbs on construction, traffic or schools, which may disrupt daily routines and businesses in the capital."
-          ],
-          "analysis": {
-            "v": 3,
-            "at": "2026-11-06T11:18:27.384Z",
-            "tier": "quick",
-            "primary": "impact_chain",
-            "complement": null,
-            "features": [],
-            "exposure": {
-              "level": "medium",
-              "reason": "The effect reaches the health and daily routines of people in Delhi through the air they breathe. It is regional rather than a national household essential."
-            },
-            "horizon": {
-              "value": "now",
-              "reason": "Residents are breathing the polluted air at present, and conditions change from day to day with weather."
-            },
-            "confidence": {
-              "level": "medium",
-              "reason": "This rests on one report from The Hindu citing severe readings in named localities; overall duration and official response are not covered."
-            },
-            "outlets": 1,
-            "affected": [
-              {
-                "group": "A named state or region",
-                "direction": "down",
-                "what": "Delhi air quality",
-                "effect": "Residents across Delhi face severe pollution in many localities, which raises health risks from breathing polluted air.",
-                "basis": "reported"
-              }
-            ],
-            "watch": [
-              {
-                "what": "Daily air quality readings for Delhi over the coming days",
-                "why": "They would show whether severe conditions are easing or persisting.",
-                "when": "",
-                "where": "Central Pollution Control Board"
-              }
-            ],
-            "context": [
-              "Delhi's air usually deteriorates in the cooler months, when weather conditions trap pollutants close to the ground. Local emissions from traffic, dust and industry then build up rather than disperse."
-            ],
-            "terms": [
-              {
-                "term": "'severe' level air pollution",
-                "meaning": "This is one of the worst categories on India's air quality index, indicating air that can affect healthy people and seriously harm those with existing illness."
-              }
-            ],
-            "frameworks": {
-              "impact_chain": {
-                "chain": [
-                  {
-                    "step": "Delhi air quality worsens",
-                    "detail": "Air quality in the national capital has deteriorated, according to The Hindu.",
-                    "basis": "reported"
-                  },
-                  {
-                    "step": "Many localities reach 'severe' level",
-                    "detail": "Areas including IIT Delhi, ITO, Dwarka, Rohini, Punjabi Bagh, Alipur, Bawana and Jahangirpuri recorded severe air pollution, which means the problem is widespread across the city.",
-                    "basis": "reported"
-                  },
-                  {
-                    "step": "Health risks and possible curbs",
-                    "detail": "Prolonged exposure may worsen respiratory illness among residents, and authorities could respond with restrictions on polluting activities.",
-                    "basis": "inferred"
-                  }
-                ],
-                "breaks_if": "The effect would ease if weather conditions disperse pollutants or if emissions fall enough to bring readings out of the severe category."
-              }
-            }
-          },
-          "place": {
-            "name": "New Delhi",
-            "country": "India",
-            "lat": 28.6,
-            "lon": 77.2
-          },
-          "reports": [
-            {
-              "source": "thehindu",
-              "headline": "Air quality of Delhi worsens, many parts reel under ‘severe’ level air pollution",
-              "url": "https://www.thehindu.com/news/cities/Delhi/air-quality-of-delhi-worsens-many-parts-reel-under-severe-level-air-pollution/article71672802.ece",
-              "date": "2026-11-06T09:39:03.000Z",
-              "kind": "hard",
-              "summary": "Many parts of the national capital, including IIT Delhi, ITO, Dwarka, Rohini, Punjabi Bagh, Alipur, Bawana, and Jahangirpuri, witnessed “severe” level air pollution",
-              "summaryV": 3,
-              "image": "https://th-i.thgim.com/public/incoming/s89fxg/article71672805.ece/alternates/LANDSCAPE_1200/POLLUTION%20STANDLONE%20DELHI%201.JPG"
-            },
-            {
-              "source": "thehindu",
-              "headline": "Delhi wakes up to toxic haze on Deepavali, close to 'severe' AQI at 383",
-              "url": "https://www.thehindu.com/news/cities/Delhi/delhi-wakes-up-to-toxic-haze-on-deepavali-close-to-severe-aqi-at-383/article71680540.ece",
-              "date": "2026-11-08T05:01:40.000Z",
-              "kind": "hard",
-              "summary": "Jahangirpuri recorded the highest AQI at 450, followed by RK Puram at 448, according to the Sameer app.",
-              "summaryV": 3,
-              "image": "https://th-i.thgim.com/public/incoming/26hbkz/article71680543.ece/alternates/LANDSCAPE_1200/20261107244L.jpg"
-            }
-          ],
-          "thread": "t1f6i1iy"
         },
         {
           "id": "sunixzz",
@@ -80309,17 +80373,17 @@
   "source": "BBC News & The Guardian & NPR & Al Jazeera & MercoPress & ABC News & The New York Times & CNBC & CBS News & DW & France 24 & Africanews & South China Morning Post & The Hindu & Mint & The Indian Express",
   "lastRun": {
     "filter": {
-      "judged": 57,
-      "kept": 3,
+      "judged": 15,
+      "kept": 2,
       "guarded": 0
     },
     "health": {
       "day": "2026-11-08",
-      "newStories24h": 8,
-      "keepRate2d": 0.054,
+      "newStories24h": 7,
+      "keepRate2d": 0.058,
       "alarm": [
-        "only 8 new stories in 24 hours (expected 12+)",
-        "filter kept 5.4% of headlines over two days (expected 6%+)"
+        "only 7 new stories in 24 hours (expected 12+)",
+        "filter kept 5.8% of headlines over two days (expected 6%+)"
       ]
     },
     "wars": {
@@ -80333,24 +80397,30 @@
       "waiting": 0
     },
     "skipped": {
-      "since": "2026-11-08T06:22:48.172Z",
-      "counts": {},
-      "examples": {}
+      "since": "2026-11-08T13:43:36.714Z",
+      "counts": {
+        "section": 1
+      },
+      "examples": {
+        "section": [
+          "P.T. Usha complains to IOA electoral officer over WhatsApp campaign for SOM polls"
+        ]
+      }
     },
     "finance": {
       "moved": 0,
       "checked": 0
     },
-    "analysed": 57,
-    "added": 2,
-    "merged": 1,
-    "rejected": 54,
+    "analysed": 15,
+    "added": 0,
+    "merged": 2,
+    "rejected": 13,
     "failedBatches": 0,
     "feeds": {
       "thehindu": {
         "feedsOk": 6,
         "feedsFailed": 0,
-        "items": 349
+        "items": 348
       },
       "mint": {
         "feedsOk": 6,
@@ -80369,12 +80439,12 @@
       "summaries": 0
     },
     "threads": {
-      "assigned": 2,
-      "created": 1,
+      "assigned": 0,
+      "created": 0,
       "failedBatches": 0
     },
     "summaries": {
-      "written": 0,
+      "written": 2,
       "due": 2
     },
     "kinds": {
@@ -80383,53 +80453,54 @@
       "failedBatches": 0
     },
     "frames": {
-      "done": 0,
-      "waiting": 1,
-      "failedBatches": 0,
-      "budgetStopped": true
+      "done": 2,
+      "waiting": 0,
+      "failedBatches": 0
     },
     "stats": {
-      "searched": 1,
+      "searched": 0,
       "found": 0,
-      "reused": 1,
+      "reused": 0,
       "none": 0,
       "failed": 0,
       "proposed": 0,
       "droppedPoints": 0,
       "pagesFetched": 0,
-      "samples": [
-        {
-          "headline": "Iran war: IOC to buy crude, LPG carriers as Strait of Hormuz disruptions drive f",
-          "result": "reused saved series"
-        }
-      ]
+      "samples": []
     },
     "models": {
       "filter": {
         "model": "claude-haiku-5-5",
-        "calls": 5,
-        "inputTokens": 28425,
-        "outputTokens": 7604,
-        "cost": 0.0066
+        "calls": 2,
+        "inputTokens": 8646,
+        "outputTokens": 2884,
+        "cost": 0.0023
+      },
+      "analysis": {
+        "model": "claude-opus-5-5",
+        "calls": 1,
+        "inputTokens": 3152,
+        "outputTokens": 3514,
+        "cost": 0.0829
       },
       "analysis_quick": {
         "model": "claude-sonnet-5-5",
         "calls": 1,
-        "inputTokens": 3504,
-        "outputTokens": 4186,
-        "cost": 0.0489
+        "inputTokens": 3279,
+        "outputTokens": 2299,
+        "cost": 0.0295
       },
       "threads": {
         "model": "claude-sonnet-5-5",
-        "calls": 1,
-        "inputTokens": 9318,
-        "outputTokens": 59,
-        "cost": 0.0192
+        "calls": 2,
+        "inputTokens": 4182,
+        "outputTokens": 1033,
+        "cost": 0.0187
       }
     },
     "spend": {
-      "thisDesk": 0.0747,
-      "today": 4.6694,
+      "thisDesk": 0.1334,
+      "today": 0.5484,
       "cap": 6
     }
   },
