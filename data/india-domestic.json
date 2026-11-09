@@ -2,7 +2,7 @@
   "schema": 4,
   "region": "India",
   "since": "2026-10-02",
-  "updatedAt": "2026-11-08T19:52:23.004Z",
+  "updatedAt": "2026-11-09T01:03:37.340Z",
   "sectors": [
     {
       "id": "energy",
@@ -80373,17 +80373,16 @@
   "source": "BBC News & The Guardian & NPR & Al Jazeera & MercoPress & ABC News & The New York Times & CNBC & CBS News & DW & France 24 & Africanews & South China Morning Post & The Hindu & Mint & The Indian Express",
   "lastRun": {
     "filter": {
-      "judged": 15,
-      "kept": 2,
+      "judged": 7,
+      "kept": 0,
       "guarded": 0
     },
     "health": {
-      "day": "2026-11-08",
+      "day": "2026-11-09",
       "newStories24h": 7,
-      "keepRate2d": 0.058,
+      "keepRate2d": 0.087,
       "alarm": [
-        "only 7 new stories in 24 hours (expected 12+)",
-        "filter kept 5.8% of headlines over two days (expected 6%+)"
+        "only 7 new stories in 24 hours (expected 12+)"
       ]
     },
     "wars": {
@@ -80397,24 +80396,18 @@
       "waiting": 0
     },
     "skipped": {
-      "since": "2026-11-08T13:43:36.714Z",
-      "counts": {
-        "section": 1
-      },
-      "examples": {
-        "section": [
-          "P.T. Usha complains to IOA electoral officer over WhatsApp campaign for SOM polls"
-        ]
-      }
+      "since": "2026-11-08T19:52:23.004Z",
+      "counts": {},
+      "examples": {}
     },
     "finance": {
       "moved": 0,
       "checked": 0
     },
-    "analysed": 15,
+    "analysed": 7,
     "added": 0,
-    "merged": 2,
-    "rejected": 13,
+    "merged": 0,
+    "rejected": 7,
     "failedBatches": 0,
     "feeds": {
       "thehindu": {
@@ -80444,8 +80437,8 @@
       "failedBatches": 0
     },
     "summaries": {
-      "written": 2,
-      "due": 2
+      "written": 0,
+      "due": 0
     },
     "kinds": {
       "labelled": 0,
@@ -80453,7 +80446,7 @@
       "failedBatches": 0
     },
     "frames": {
-      "done": 2,
+      "done": 0,
       "waiting": 0,
       "failedBatches": 0
     },
@@ -80471,36 +80464,15 @@
     "models": {
       "filter": {
         "model": "claude-haiku-5-5",
-        "calls": 2,
-        "inputTokens": 8646,
-        "outputTokens": 2884,
-        "cost": 0.0023
-      },
-      "analysis": {
-        "model": "claude-opus-5-5",
         "calls": 1,
-        "inputTokens": 3152,
-        "outputTokens": 3514,
-        "cost": 0.0829
-      },
-      "analysis_quick": {
-        "model": "claude-sonnet-5-5",
-        "calls": 1,
-        "inputTokens": 3279,
-        "outputTokens": 2299,
-        "cost": 0.0295
-      },
-      "threads": {
-        "model": "claude-sonnet-5-5",
-        "calls": 2,
-        "inputTokens": 4182,
-        "outputTokens": 1033,
-        "cost": 0.0187
+        "inputTokens": 5935,
+        "outputTokens": 939,
+        "cost": 0.0011
       }
     },
     "spend": {
-      "thisDesk": 0.1334,
-      "today": 0.5484,
+      "thisDesk": 0.0011,
+      "today": 0.7939,
       "cap": 6
     }
   },
