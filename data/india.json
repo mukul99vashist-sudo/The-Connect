@@ -2,12 +2,45 @@
   "schema": 4,
   "region": "India",
   "since": "2026-10-02",
-  "updatedAt": "2026-11-14T01:34:27.701Z",
+  "updatedAt": "2026-11-14T10:44:36.445Z",
   "sectors": [
     {
       "id": "energy",
       "name": "Energy",
       "items": [
+        {
+          "id": "sfqwg0o",
+          "headline": "Trump’s Oil Grab in Venezuela Is Testing the Country’s National Identity",
+          "url": "https://www.nytimes.com/2026/11/14/world/americas/trump-venezuela-oil.html",
+          "source": "nyt",
+          "date": "2026-11-14T10:10:01.000Z",
+          "relevance": "medium",
+          "image": "https://static01.nyt.com/images/2026/10/29/multimedia/00int-venezuela-oil-pqfl/00int-venezuela-oil-pqfl-mediumSquareAt3X.jpg",
+          "why": "",
+          "implications": [],
+          "place": {
+            "name": "Caracas",
+            "country": "Venezuela",
+            "lat": 10.48,
+            "lon": -66.9,
+            "involves": [
+              "United States"
+            ]
+          },
+          "reports": [
+            {
+              "source": "nyt",
+              "headline": "Trump’s Oil Grab in Venezuela Is Testing the Country’s National Identity",
+              "url": "https://www.nytimes.com/2026/11/14/world/americas/trump-venezuela-oil.html",
+              "date": "2026-11-14T10:10:01.000Z",
+              "kind": "feature",
+              "summary": "Long-held beliefs in Venezuela about sovereign control over oil are fraying as the U.S. lays claim to the country’s oil reserves.",
+              "summaryV": 3,
+              "image": "https://static01.nyt.com/images/2026/10/29/multimedia/00int-venezuela-oil-pqfl/00int-venezuela-oil-pqfl-mediumSquareAt3X.jpg"
+            }
+          ],
+          "thread": "t1q27ee0"
+        },
         {
           "id": "sx2f18y",
           "headline": "War in Ukraine: Putin Meets with envoys from the U.S. President",
@@ -32718,6 +32751,253 @@
       "name": "Logistics & Shipping",
       "items": [
         {
+          "id": "s10obamq",
+          "headline": "UN says 25 seafarers killed in, around Hormuz since US-Israel war on Iran",
+          "url": "https://www.aljazeera.com/news/2026/11/14/un-says-25-seafarers-killed-in-around-hormuz-since-february",
+          "source": "aljazeera",
+          "date": "2026-11-14T07:46:36.000Z",
+          "relevance": "high",
+          "why": "The United Nations says 25 seafarers have been killed in and around the Strait of Hormuz since the US-Israel war on Iran began, and Iran reports three more vessels hit mines. Shipping risk on a key energy route could reach India.",
+          "implications": [
+            "Repeated mine strikes raise the danger to ships and crews, which may push up insurance costs and make shipowners more cautious about entering the area.",
+            "If crude oil or gas cargoes bound for India are delayed or rerouted, refiners could face higher costs that may feed through to petrol, diesel and cooking gas prices."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-14T10:42:15.072Z",
+            "tier": "quick",
+            "primary": "disruption_map",
+            "complement": null,
+            "features": [
+              "disruption",
+              "armed_conflict",
+              "fast_moving"
+            ],
+            "exposure": {
+              "level": "high",
+              "reason": "Crude oil and gas shipped through Hormuz are among India's largest imports, and fuel and cooking gas are household essentials. The effect would depend on whether cargoes are actually delayed or become costlier."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Any effect on cargo schedules, freight and insurance costs would take some weeks to reach Indian refiners and then consumers, depending on how the shipping risk develops."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "The seafarer toll comes from a UN official quoted by Al Jazeera, but the mine strikes are Iran's own report and are not independently confirmed in the material available."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "up",
+                "what": "fuel price pressure",
+                "effect": "If shipping risk in the strait delays or raises the cost of oil and gas cargoes, higher import costs could eventually feed through to petrol, diesel and cooking gas prices.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Importers & traders",
+                "direction": "up",
+                "what": "shipping and insurance costs",
+                "effect": "Importers whose goods move through or near the strait could face higher freight and war-risk insurance charges, and possible delays, if mine incidents continue.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Further reports of vessels striking mines in or around the Strait of Hormuz",
+                "why": "More incidents would show whether the shipping risk is growing and whether cargoes bound for India are at greater risk.",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "Any new United Nations statements on the safety of seafarers in the strait",
+                "why": "They would indicate whether international pressure is leading to steps that make shipping safer.",
+                "when": "",
+                "where": "United Nations"
+              }
+            ],
+            "context": [
+              "The Strait of Hormuz is a narrow waterway at the mouth of the Gulf through which a large share of the world's oil and gas shipments pass.",
+              "India imports most of its crude oil and a large part of its gas, much of it from Gulf producers, so it is structurally exposed to shipping risks in this area."
+            ],
+            "terms": [],
+            "frameworks": {
+              "disruption_map": {
+                "node": {
+                  "name": "Strait of Hormuz",
+                  "type": "strait",
+                  "status": "unknown",
+                  "as_of": "14 Nov 2026"
+                },
+                "cause": {
+                  "text": "Iran reports that three more vessels have struck mines, amid the war between the United States and Israel on one side and Iran on the other.",
+                  "status": "claimed"
+                },
+                "flows": [
+                  {
+                    "flow": "crude",
+                    "india_link": "Much of India's imported crude oil is shipped from Gulf producers through this strait, so refiners and fuel consumers depend on safe passage.",
+                    "basis": "inferred"
+                  },
+                  {
+                    "flow": "LNG",
+                    "india_link": "India's imports of liquefied natural gas from Gulf suppliers pass through the strait, and power, fertiliser and city gas users rely on them.",
+                    "basis": "inferred"
+                  }
+                ],
+                "alternatives": [],
+                "duration": "not reported"
+              }
+            }
+          },
+          "place": {
+            "name": "Strait of Hormuz",
+            "country": "Iran",
+            "lat": 26.6,
+            "lon": 56.3,
+            "involves": [
+              "United States",
+              "Israel"
+            ]
+          },
+          "reports": [
+            {
+              "source": "aljazeera",
+              "headline": "UN says 25 seafarers killed in, around Hormuz since US-Israel war on Iran",
+              "url": "https://www.aljazeera.com/news/2026/11/14/un-says-25-seafarers-killed-in-around-hormuz-since-february",
+              "date": "2026-11-14T07:46:36.000Z",
+              "kind": "hard",
+              "summary": "'Situation cannot become new normal', says UN's Khaled Khiari, as Iran reports three more vessels hitting mines.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/reuters_6af7fff6-1794637814.jpg?resize=1920%2C1440"
+            }
+          ],
+          "stats": {
+            "v": 2,
+            "at": "2026-11-14T10:42:58.039Z",
+            "series": [
+              {
+                "title": "Crude oil and condensate through the Strait of Hormuz",
+                "unit": "million barrels per day",
+                "publisher": "U.S. Energy Information Administration",
+                "points": [
+                  {
+                    "period": "2020",
+                    "value": 14.4,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2021",
+                    "value": 14.7,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2022",
+                    "value": 16.2,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2023",
+                    "value": 15.8,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2024",
+                    "value": 14.6,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "1H25",
+                    "value": 14.7,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "title": "eia.gov",
+                    "domain": "eia.gov"
+                  }
+                ],
+                "domains": [
+                  "eia.gov"
+                ],
+                "dropped": 0,
+                "why": "Both series measure oil volumes moving through the Strait of Hormuz itself, the same chokepoint where the seafarer deaths and mine strikes are occurring, so they track the flow at risk in the story.",
+                "reused": true,
+                "checkedAt": "2026-10-13T23:16:50.395Z"
+              },
+              {
+                "title": "Oil flows through the Strait of Hormuz, total",
+                "unit": "million barrels per day",
+                "publisher": "U.S. Energy Information Administration",
+                "points": [
+                  {
+                    "period": "2020",
+                    "value": 19.2,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2021",
+                    "value": 19.7,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2022",
+                    "value": 21.9,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2023",
+                    "value": 21.8,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2024",
+                    "value": 20.7,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "1H25",
+                    "value": 20.9,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "title": "eia.gov",
+                    "domain": "eia.gov"
+                  }
+                ],
+                "domains": [
+                  "eia.gov"
+                ],
+                "dropped": 0,
+                "why": "Both series measure oil volumes moving through the Strait of Hormuz itself, the same chokepoint where the seafarer deaths and mine strikes are occurring, so they track the flow at risk in the story.",
+                "reused": true,
+                "checkedAt": "2026-10-13T23:16:50.395Z"
+              }
+            ]
+          },
+          "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/reuters_6af7fff6-1794637814.jpg?resize=1920%2C1440",
+          "thread": "t1mne8xn"
+        },
+        {
           "id": "s18bugnr",
           "headline": "What we know about China's military exercises around Taiwan",
           "url": "https://www.france24.com/en/asia-pacific/20261113-chinese-army-military-exercises-taiwan",
@@ -39436,6 +39716,275 @@
       "id": "economy",
       "name": "Economy & Trade",
       "items": [
+        {
+          "id": "shljhp5",
+          "headline": "US negotiators suggest Ukraine cedes territory in exchange for NATO membership",
+          "url": "https://www.france24.com/en/europe/20261114-us-negotiators-suggest-ukraine-cedes-territory-in-exchange-for-nato-membership",
+          "source": "france24",
+          "date": "2026-11-14T10:30:04.000Z",
+          "relevance": "medium",
+          "image": "https://s.france24.com/media/display/70cfdcca-e012-11f1-8f8f-5f54d898a954/w:1024/p:16x9/AP26316802067115.jpg",
+          "why": "Ukraine's President Zelensky says United States envoys proposed that Ukraine cede Donbas to Russia in return for NATO membership. Any settlement that ends the war could change the sanctions and pricing around the Russian crude India buys.",
+          "implications": [
+            "The proposal is a talking point, not an agreement, so Russia and Ukraine are still trading strikes on each other's power infrastructure while negotiators meet.",
+            "A settlement could eventually reopen debate on Western sanctions against Russian oil, which could alter the discounts and payment terms Indian refiners have relied on.",
+            "Ceding territory is politically difficult for Kyiv, and the proposal could stall talks rather than speed them up.",
+            "Any NATO membership offer would need backing from all alliance members, so the proposal's prospects also depend on European capitals."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-14T10:44:20.557Z",
+            "tier": "standard",
+            "primary": "escalation",
+            "complement": null,
+            "features": [
+              "armed_conflict",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The war reaches India mainly through the price and sanctions status of Russian crude oil. A proposal alone does not change those terms, which keeps exposure medium rather than high."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Any effect on oil sanctions or prices would follow only from an agreement, which would take further rounds of negotiation to reach."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "France 24 and BBC News both rest on Zelensky's account as a party to the war, and the United States has not confirmed the proposal on record."
+            },
+            "outlets": 2,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "fuel import costs",
+                "effect": "If talks eventually led to a settlement and eased sanctions, the cost of crude for Indian refiners could shift, which may later feed through to pump prices.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "Russia trade terms",
+                "effect": "Indian firms trading with Russia could face changed sanctions and payment conditions if a peace deal alters the Western measures now in place.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "A public United States statement confirming or denying the Donbas-for-NATO proposal",
+                "why": "It would show whether the proposal is official American policy or only Ukraine's account of the talks.",
+                "when": "",
+                "where": "US State Department"
+              },
+              {
+                "what": "Russia's official response to the proposed exchange of Donbas for Ukrainian NATO membership",
+                "why": "Moscow's reaction would indicate whether the proposal can become a basis for further negotiation.",
+                "when": "",
+                "where": "Kremlin"
+              },
+              {
+                "what": "The next round of peace talks following the meeting in Abu Dhabi",
+                "why": "A new round would show whether negotiations are progressing despite continuing strikes on energy infrastructure.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "Since the war began, India has become a major buyer of Russian crude oil, often at a discount to global benchmarks, while Western countries have tightened sanctions on Russian energy.",
+              "India has kept working ties with Russia, Ukraine and the West, and has generally called for dialogue and diplomacy to end the conflict.",
+              "NATO admits new members only by consensus, so any single member government can block an applicant's entry."
+            ],
+            "terms": [
+              {
+                "term": "NATO",
+                "meaning": "The North Atlantic Treaty Organization, a Western military alliance whose members pledge to defend one another if attacked."
+              },
+              {
+                "term": "Donbas",
+                "meaning": "An industrial area in eastern Ukraine, large parts of which have been contested or held by Russia during the conflict."
+              }
+            ],
+            "frameworks": {
+              "escalation": {
+                "move": "none",
+                "rung": 6,
+                "current_rung": 6,
+                "previous_rung": null,
+                "development": "United States negotiators, according to Zelensky, proposed after talks in Abu Dhabi that Ukraine cede Donbas to Russia in exchange for NATO membership.",
+                "evidence": "This is a proposal made during talks, and no ceasefire, withdrawal or halt to the strikes on power infrastructure has been reported, so the war stays at rung 6.",
+                "next_signals": [
+                  {
+                    "rung": 5,
+                    "signal": "Both sides announce and observe a halt to strikes on power and oil infrastructure, while other fighting continues."
+                  },
+                  {
+                    "rung": 7,
+                    "signal": "Either side launches a major new ground offensive or broad mobilisation that widens the war beyond the current exchange of infrastructure strikes."
+                  },
+                  {
+                    "rung": 4,
+                    "signal": "A ceasefire takes effect and holds, with only isolated or limited attacks reported along the front."
+                  }
+                ],
+                "india_channels": [
+                  "oil",
+                  "trade"
+                ],
+                "conflict": "wzti51f",
+                "applied": "none",
+                "from": 6
+              }
+            }
+          },
+          "conflict": "wzti51f",
+          "place": {
+            "name": "Abu Dhabi",
+            "country": "United Arab Emirates",
+            "lat": 24.45,
+            "lon": 54.38,
+            "involves": [
+              "Ukraine",
+              "Russia",
+              "United States"
+            ]
+          },
+          "reports": [
+            {
+              "source": "france24",
+              "headline": "US negotiators suggest Ukraine cedes territory in exchange for NATO membership",
+              "url": "https://www.france24.com/en/europe/20261114-us-negotiators-suggest-ukraine-cedes-territory-in-exchange-for-nato-membership",
+              "date": "2026-11-14T10:30:04.000Z",
+              "kind": "hard",
+              "summary": "President Zelensky said the US had proposed ceding Ukraine's eastern city of Donbas to Russia, in exchange for Ukrainian membership of NATO, following the latest round of peace talks in Abu Dhabi this week.",
+              "summaryV": 3,
+              "image": "https://s.france24.com/media/display/70cfdcca-e012-11f1-8f8f-5f54d898a954/w:1024/p:16x9/AP26316802067115.jpg"
+            },
+            {
+              "source": "bbc",
+              "headline": "US has floated Ukraine ceding Donbas for Nato membership, Zelensky says",
+              "url": "https://www.bbc.co.uk/news/articles/cwvg2l312ylqo",
+              "date": "2026-11-14T10:30:38.000Z",
+              "kind": "hard",
+              "summary": "The Ukrainian president says US envoys touted the exchange as part of efforts to end the war with Russia.",
+              "summaryV": 3,
+              "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/d028/live/47c10ab0-e013-11f1-b441-2b33b063138f.jpg",
+              "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/d028/live/47c10ab0-e013-11f1-b441-2b33b063138f.jpg"
+            }
+          ],
+          "finChecked": true,
+          "thread": "tq9ru94"
+        },
+        {
+          "id": "s1nthx6o",
+          "headline": "Indonesia’s commodity export U-turn: no monopoly, just all the data",
+          "url": "https://www.scmp.com/week-asia/economics/article/3374371/indonesias-commodity-export-u-turn-no-monopoly-just-all-data",
+          "source": "scmp",
+          "date": "2026-11-14T02:30:07.000Z",
+          "relevance": "medium",
+          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/13/c4ea2e1b-3658-4722-9e5b-273eab6cc6c8_b3bbb3aa.jpg?itok=chwqggdI&v=1794567534",
+          "why": "Indonesia has abandoned plans to make a powerful new state-owned enterprise the sole exporter of its palm oil, coal and ferroalloys. India buys palm oil and coal from Indonesia, so the decision removes one possible source of supply disruption.",
+          "implications": [
+            "A single state exporter could have given Indonesia more control over the prices and volumes offered to foreign buyers such as India. Dropping the plan removes that possibility for now.",
+            "Questions over oversight and pricing remain unresolved, so future rules on how exporters report and price shipments could still affect the terms on which Indian buyers contract."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-14T10:41:27.463Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "medium",
+              "reason": "Palm oil and coal are significant Indian imports from Indonesia, so export rules there matter to importers. However, the plan has been dropped and no change to supply or prices has been reported."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Any effect on India would depend on how Indonesia later settles its oversight and pricing arrangements, which has not been reported to be imminent."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single outlet, the South China Morning Post, with no named official source, and the details of oversight and pricing are unconfirmed."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "palm oil and coal import terms",
+                "effect": "Indian buyers keep dealing with multiple Indonesian exporters instead of one state seller, though future oversight and pricing rules could still change contract terms.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Food shoppers",
+                "direction": "unclear",
+                "what": "cooking oil price risk",
+                "effect": "Because palm oil is a common cooking oil, avoiding a single state exporter may reduce one risk of Indonesian export-driven price swings reaching Indian households.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Indonesian government details on how exporters of palm oil, coal and ferroalloys will be overseen and how prices will be set",
+                "why": "These rules would show whether the dropped monopoly plan is replaced by other controls that could affect Indian import costs.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "India depends heavily on imported edible oil, and Indonesia is one of its main palm oil suppliers. India also imports Indonesian coal for power generation and industry."
+            ],
+            "terms": [
+              {
+                "term": "sole exporter",
+                "meaning": "A single designated entity that is the only one allowed to sell a given commodity abroad, which gives it strong influence over export prices and volumes."
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Indonesia drops sole-exporter plan",
+                    "detail": "Indonesia has abandoned plans to make a powerful new state-owned enterprise the only exporter of its palm oil, coal and ferroalloys. Some businesses have been reassured by the change.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Oversight and pricing questions remain",
+                    "detail": "Doubts persist over how exports will be supervised and priced. Until these are settled, the terms facing foreign buyers of Indonesian commodities remain somewhat uncertain.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Indian buyers face continued supply routes",
+                    "detail": "Indian importers of palm oil and coal may keep buying through existing channels without a single state seller setting terms. Later rules could still change costs for them.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "Indonesia introduces other export controls or pricing rules that restrict supply or raise costs, or if Indian buyers source these commodities elsewhere, so the decision has no bearing on India."
+              }
+            }
+          },
+          "place": {
+            "name": "Jakarta",
+            "country": "Indonesia",
+            "lat": -6.2,
+            "lon": 106.8
+          },
+          "reports": [
+            {
+              "source": "scmp",
+              "headline": "Indonesia’s commodity export U-turn: no monopoly, just all the data",
+              "url": "https://www.scmp.com/week-asia/economics/article/3374371/indonesias-commodity-export-u-turn-no-monopoly-just-all-data",
+              "date": "2026-11-14T02:30:07.000Z",
+              "kind": "hard",
+              "summary": "Indonesia has abandoned plans to make a powerful new state-owned enterprise the “sole exporter” of its palm oil, coal and ferroalloys, in a move that has reassured some businesses, even as questions over oversight and pricing remain.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/13/c4ea2e1b-3658-4722-9e5b-273eab6cc6c8_b3bbb3aa.jpg?itok=chwqggdI&v=1794567534"
+            }
+          ],
+          "finChecked": true,
+          "thread": "tuji354"
+        },
         {
           "id": "s1v33ufs",
           "headline": "How the Jensen Huang affair changes the outlook for U.S.-China relations",
@@ -59336,6 +59885,15 @@
               "summaryV": 3,
               "lede": "Get our breaking news email , free app or daily news podcast",
               "image": "https://i.guim.co.uk/img/media/6e00c0e827484eda171fc2f542c59ea59f98fec9/411_82_4687_3752/master/4687.jpg?width=700&quality=85&auto=format&fit=max&s=a216c5add21c05edc1b18424225f42c8"
+            },
+            {
+              "source": "dw",
+              "headline": "Microsoft says all services working again",
+              "url": "https://www.dw.com/en/microsoft-says-all-services-working-again/a-79946887",
+              "date": "2026-11-14T09:06:00.000Z",
+              "kind": "hard",
+              "summary": "US tech giant Microsoft says it has fixed problems that led to a global outage of its services. The glitch severely disrupted online communications in businesses and governments for more than 24 hours.",
+              "summaryV": 3
             }
           ],
           "image": "https://assets3.cbsnewsstatic.com/hub/i/r/2026/11/13/3078adce-27fa-4f9b-b304-dbc4d6858df6/thumbnail/1200x630/66b309a0e07f93cb5bc2f636b440c201/gettyimages-2302285784.jpg",
@@ -59396,6 +59954,146 @@
               }
             ]
           }
+        },
+        {
+          "id": "s15jsatc",
+          "headline": "Trump to press Southeast Asia nations to join Pax Silica at Asean summit in Manila",
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3374393/trump-press-southeast-asia-nations-join-pax-silica-asean-summit-manila",
+          "source": "scmp",
+          "date": "2026-11-13T15:00:07.000Z",
+          "relevance": "medium",
+          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/13/cd8a1138-d23b-4370-a92e-a95be0da4ab8_bcbbd593.jpg?itok=zTKxytht&v=1794576888",
+          "why": "President Trump will press Southeast Asian economies at next week's Asean summit in Manila to join Pax Silica, his drive to keep China out of AI and chip supply chains. That could reshape a region competing with India for electronics investment.",
+          "implications": [
+            "If Southeast Asian states sign on, chip and AI investment that avoids China could flow more strongly to them, and India is also trying to attract that investment.",
+            "Some Asean governments trade heavily with both the United States and China, so pressure to choose sides could slow or limit their participation.",
+            "The push comes as Trump heads to a meeting with China's Xi Jinping, so any trade understanding between them could soften or sharpen the campaign."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-14T10:44:20.557Z",
+            "tier": "standard",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "The campaign reaches India only indirectly, through competition for semiconductor and electronics investment. No direct measure affecting India is involved, so exposure is low."
+            },
+            "horizon": {
+              "value": "years",
+              "reason": "Shifts in where chip and electronics factories are built depend on long investment cycles, not on a single summit."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "The Pax Silica push rests on the South China Morning Post, while Al Jazeera confirms the Asean summit and Trump's Asia trip, including a meeting with Xi."
+            },
+            "outlets": 2,
+            "affected": [
+              {
+                "group": "Manufacturing workers",
+                "direction": "unclear",
+                "what": "electronics investment competition",
+                "effect": "If Southeast Asian countries join Pax Silica and attract more chip plants, India's electronics sector could face stiffer competition for factories and the jobs they bring.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Large exporters",
+                "direction": "mixed",
+                "what": "electronics supply chains",
+                "effect": "Indian electronics exporters could gain from supply chains moving away from China, but may also lose ground to Southeast Asian rivals inside a US-led network.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Which Southeast Asian governments agree to join Pax Silica at the Asean summit in Manila",
+                "why": "Their decisions would show how far the chip supply-chain network is spreading among India's regional competitors.",
+                "when": "next week",
+                "where": "Asean Secretariat"
+              },
+              {
+                "what": "The outcome of Trump's meeting with China's Xi Jinping during his Asia trip",
+                "why": "A trade understanding or a clash would signal whether the effort to exclude China from chip supply chains is easing or hardening.",
+                "when": "next week",
+                "where": "White House"
+              }
+            ],
+            "context": [
+              "India is offering government incentives to build semiconductor and electronics manufacturing, competing with Southeast Asian countries that already host large chip assembly and testing operations.",
+              "India is not an Asean member, but it has a trade agreement with the bloc, and its supply chains for electronics components are closely linked to East and Southeast Asia."
+            ],
+            "terms": [
+              {
+                "term": "Pax Silica",
+                "meaning": "A Trump administration campaign to build artificial intelligence and semiconductor supply chains among partner countries that do not depend on China."
+              },
+              {
+                "term": "Asean",
+                "meaning": "The Association of Southeast Asian Nations, a regional bloc of ten Southeast Asian countries including Indonesia, Vietnam, Malaysia and the Philippines."
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Trump presses Asean to join",
+                    "detail": "President Trump plans to urge Southeast Asian economies at the Asean summit in Manila to join Pax Silica, his campaign to remove China from AI and chip supply chains.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Trade disruption frames the summit",
+                    "detail": "The summit coincides with a Trump Asia trip that highlights trade disruption and includes a meeting with Xi, so regional governments weigh American demands against their ties with China.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Chip investment may realign regionally",
+                    "detail": "If Asean members join, companies building China-free chip supply chains could favour Southeast Asian sites, drawing on investment India is also trying to attract.",
+                    "basis": "inferred"
+                  },
+                  {
+                    "step": "India's electronics push faces competition",
+                    "detail": "India's subsidised semiconductor and electronics manufacturing drive could meet stronger rivals for factories, although wider supply-chain diversification away from China may also create openings for India.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The effect would not reach India if Asean governments decline to join Pax Silica, or if investors treat India and Southeast Asia as complementary rather than competing locations."
+              }
+            }
+          },
+          "place": {
+            "name": "Manila",
+            "country": "Philippines",
+            "lat": 14.6,
+            "lon": 120.98,
+            "involves": [
+              "United States"
+            ]
+          },
+          "reports": [
+            {
+              "source": "scmp",
+              "headline": "Trump to press Southeast Asia nations to join Pax Silica at Asean summit in Manila",
+              "url": "https://www.scmp.com/news/china/diplomacy/article/3374393/trump-press-southeast-asia-nations-join-pax-silica-asean-summit-manila",
+              "date": "2026-11-13T15:00:07.000Z",
+              "kind": "hard",
+              "summary": "US President Donald Trump will press Southeast Asian economies to join Pax Silica, his campaign to China-proof AI and chip supply chains, when he attends the Asean summit in Manila next week.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/13/cd8a1138-d23b-4370-a92e-a95be0da4ab8_bcbbd593.jpg?itok=zTKxytht&v=1794576888"
+            },
+            {
+              "source": "aljazeera",
+              "headline": "Southeast Asian leaders to meet as Trump visit highlights trade disruption",
+              "url": "https://www.aljazeera.com/economy/2026/11/14/southeast-asian-leaders-to-meet-as-trump-visit-highlights-trade-disruption",
+              "date": "2026-11-14T06:48:14.000Z",
+              "kind": "hard",
+              "summary": "ASEAN summit comes as US president embarks on Asia trip that will see him meet China's Xi.",
+              "summaryV": 3
+            }
+          ],
+          "thread": "t1i6g21z"
         },
         {
           "id": "sgcqthx",
@@ -59946,120 +60644,6 @@
               }
             ]
           }
-        },
-        {
-          "id": "s15jsatc",
-          "headline": "Trump to press Southeast Asia nations to join Pax Silica at Asean summit in Manila",
-          "url": "https://www.scmp.com/news/china/diplomacy/article/3374393/trump-press-southeast-asia-nations-join-pax-silica-asean-summit-manila",
-          "source": "scmp",
-          "date": "2026-11-13T15:00:07.000Z",
-          "relevance": "medium",
-          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/13/cd8a1138-d23b-4370-a92e-a95be0da4ab8_bcbbd593.jpg?itok=zTKxytht&v=1794576888",
-          "why": "US President Donald Trump will press Southeast Asian economies to join Pax Silica, his campaign to China-proof AI and chip supply chains, at the Asean summit in Manila next week. India may be affected as chip supply chains realign.",
-          "implications": [
-            "If Southeast Asian economies join, chip assembly and testing investment could be steered towards them. That may compete with India for electronics and semiconductor manufacturing investment.",
-            "Indian technology and electronics firms that rely on global chip supplies could see changes in sourcing and costs if supply chains are reorganised, though no such change has been reported."
-          ],
-          "analysis": {
-            "v": 3,
-            "at": "2026-11-13T19:55:48.299Z",
-            "tier": "quick",
-            "primary": "impact_chain",
-            "complement": null,
-            "features": [
-              "pending_outcome"
-            ],
-            "exposure": {
-              "level": "low",
-              "reason": "No direct trade or investment mechanism involving India has been reported. Any effect would come indirectly, through shifts in where chip supply chain investment goes."
-            },
-            "horizon": {
-              "value": "years",
-              "reason": "Moving chip manufacturing and supply chains takes years, so the summit next week is only a first step."
-            },
-            "confidence": {
-              "level": "low",
-              "reason": "This rests on a single outlet, the South China Morning Post; which countries will join and what the campaign involves are unconfirmed."
-            },
-            "outlets": 1,
-            "affected": [
-              {
-                "group": "Manufacturing workers",
-                "direction": "unclear",
-                "what": "electronics investment",
-                "effect": "Chip and electronics investment that moves to Southeast Asia could reduce, or if India is also courted could add to, factory jobs in India.",
-                "basis": "inferred"
-              },
-              {
-                "group": "Importers & traders",
-                "direction": "unclear",
-                "what": "chip sourcing routes",
-                "effect": "Importers of chips and electronic components could face changed sourcing options if supply chains are reorganised around the campaign.",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "Whether Southeast Asian governments agree to join Pax Silica at the Asean summit in Manila",
-                "why": "It would show how far the US campaign is reshaping chip supply chains in countries that compete with India for investment.",
-                "when": "next week",
-                "where": ""
-              }
-            ],
-            "context": [
-              "Chip supply chains are concentrated in East Asia. India is trying to build electronics manufacturing and chip assembly capacity through government incentives, so shifts in where the US steers investment matter to it."
-            ],
-            "terms": [
-              {
-                "term": "Pax Silica",
-                "meaning": "The name of a US campaign, led by President Trump, aimed at making AI and chip supply chains less dependent on China."
-              }
-            ],
-            "frameworks": {
-              "impact_chain": {
-                "chain": [
-                  {
-                    "step": "Trump to press Asean at Manila summit",
-                    "detail": "President Trump will attend the Asean summit in Manila next week and press Southeast Asian economies to join Pax Silica.",
-                    "basis": "reported"
-                  },
-                  {
-                    "step": "Campaign targets China-linked supply chains",
-                    "detail": "Pax Silica is described as a campaign to China-proof AI and chip supply chains, so joining would tie members more closely to US-aligned supply networks.",
-                    "basis": "reported"
-                  },
-                  {
-                    "step": "Chip investment may be redirected",
-                    "detail": "If Southeast Asian economies join, investment could flow to them, which may compete with India's electronics push or change sourcing for Indian firms.",
-                    "basis": "inferred"
-                  }
-                ],
-                "breaks_if": "The effect would not reach India if Southeast Asian states decline to join or if the campaign does not change where chips are made and assembled."
-              }
-            }
-          },
-          "place": {
-            "name": "Manila",
-            "country": "Philippines",
-            "lat": 14.6,
-            "lon": 120.98,
-            "involves": [
-              "United States"
-            ]
-          },
-          "reports": [
-            {
-              "source": "scmp",
-              "headline": "Trump to press Southeast Asia nations to join Pax Silica at Asean summit in Manila",
-              "url": "https://www.scmp.com/news/china/diplomacy/article/3374393/trump-press-southeast-asia-nations-join-pax-silica-asean-summit-manila",
-              "date": "2026-11-13T15:00:07.000Z",
-              "kind": "hard",
-              "summary": "US President Donald Trump will press Southeast Asian economies to join Pax Silica, his campaign to China-proof AI and chip supply chains, when he attends the Asean summit in Manila next week.",
-              "summaryV": 3,
-              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/13/cd8a1138-d23b-4370-a92e-a95be0da4ab8_bcbbd593.jpg?itok=zTKxytht&v=1794576888"
-            }
-          ],
-          "thread": "t1i6g21z"
         },
         {
           "id": "s1405cp6",
@@ -70033,6 +70617,42 @@
       "name": "Policy & Governance",
       "items": [
         {
+          "id": "s1ra6kg9",
+          "headline": "Qatar and Turkiye sign a mutual defence pact: What do we know?",
+          "url": "https://www.aljazeera.com/news/2026/11/14/qatar-and-turkiye-sign-a-mutual-defence-pact-what-do-we-know",
+          "source": "aljazeera",
+          "date": "2026-11-14T09:19:43.000Z",
+          "relevance": "medium",
+          "why": "",
+          "implications": [],
+          "place": {
+            "name": "Doha",
+            "country": "Qatar",
+            "lat": 25.29,
+            "lon": 51.53,
+            "involves": [
+              "Turkiye"
+            ]
+          },
+          "reports": [
+            {
+              "source": "aljazeera",
+              "headline": "Qatar and Turkiye sign a mutual defence pact: What do we know?",
+              "url": "https://www.aljazeera.com/news/2026/11/14/qatar-and-turkiye-sign-a-mutual-defence-pact-what-do-we-know",
+              "date": "2026-11-14T09:19:43.000Z",
+              "kind": "feature",
+              "summary": "Analysts say the pact, agreed amid the US-Iran war, aims to deter attacks rather than build an offensive alliance.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/reuters_6af72f8f-1794584463.jpg?resize=1920%2C1440"
+            }
+          ],
+          "finChecked": true,
+          "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/reuters_6af72f8f-1794584463.jpg?resize=1920%2C1440",
+          "thread": "t1wke32i"
+        },
+        {
           "id": "s1ebdwea",
           "headline": "Trump-Xi-Putin summit under discussion as US allies watch on",
           "url": "https://www.scmp.com/plus/news/china/diplomacy/article/3374199/trump-xi-putin-summit-under-discussion-us-allies-watch",
@@ -70040,94 +70660,142 @@
           "date": "2026-11-12T09:07:22.000Z",
           "relevance": "medium",
           "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/12/3653edef-0781-45ef-be84-50b97230a4e5_0b5d1ea3.jpg?itok=DVHYr-Mj&v=1794473025",
-          "why": "The US has confirmed that a first-ever three-way summit of Donald Trump, Xi Jinping and Vladimir Putin is possible, and China is weighing whether to host it. Any deal among the three powers could reshape the diplomatic and trade setting India operates in.",
+          "why": "The White House has confirmed that Trump, Xi Jinping and Vladimir Putin will meet next week on the sidelines of the Apec summit in Shenzhen to discuss the Iran war and nuclear arms reduction. Progress on Iran could affect India's Gulf oil supplies.",
           "implications": [
-            "Trump is preparing an Asian tour next week, which gives the three leaders a near-term opportunity to meet if the summit goes ahead.",
-            "China must weigh the risk to its global image against hosting a meeting whose optics are likely to favour Moscow, so the summit's format and venue remain uncertain.",
-            "If the three powers reach understandings on sanctions or trade, India's purchases of Russian oil and its trade ties with the US could come under new pressure or find new room."
+            "Any step towards ending the Iran war could ease the risk to Gulf oil supply and shipping that India depends on, while a failed meeting would leave that risk unchanged.",
+            "Millions of Indians work in Gulf countries, so steps that reduce conflict in the region could lower the safety risk faced by these workers and their families.",
+            "A closer working relationship between Washington, Beijing and Moscow could complicate India's practice of balancing ties with the United States and Russia while managing its rivalry with China.",
+            "China is weighing its image carefully as host, since the meeting's optics are expected to favour Russia, and that could limit what Beijing is prepared to agree to."
           ],
           "analysis": {
             "v": 3,
-            "at": "2026-11-13T20:02:36.035Z",
-            "tier": "standard",
+            "at": "2026-11-14T10:44:20.558Z",
+            "tier": "deep",
             "primary": "impact_chain",
-            "complement": null,
+            "complement": "scenarios",
             "features": [
+              "fast_moving",
               "pending_outcome"
             ],
             "exposure": {
-              "level": "low",
-              "reason": "The summit is only under discussion and no agreements are reported, so any effect on India through diplomacy, sanctions or trade remains indirect."
+              "level": "medium",
+              "reason": "The meeting reaches India mainly through the Iran war's effect on Gulf oil and on Indian workers there. The talks have no guaranteed outcome, so exposure is medium."
             },
             "horizon": {
-              "value": "months",
-              "reason": "Any effect on India depends on whether the summit takes place and produces agreements, which would take months to turn into policy changes."
+              "value": "weeks",
+              "reason": "The meeting takes place next week, and any agreement on the Iran war could shift oil-market expectations within weeks."
             },
             "confidence": {
-              "level": "medium",
-              "reason": "The South China Morning Post reports US confirmation of the possibility and DW describes China's deliberations, but no summit date, venue or agenda has been confirmed."
+              "level": "high",
+              "reason": "The White House confirmed the meeting on record, and the South China Morning Post, Al Jazeera and BBC News all report it; its outcome is still unknown."
             },
-            "outlets": 2,
+            "outlets": 4,
             "affected": [
               {
-                "group": "Importers & traders",
+                "group": "Fuel & LPG users",
                 "direction": "unclear",
-                "what": "sanctions and trade terms",
-                "effect": "Any understanding on Russia among the three powers could change sanctions pressure, which may affect Indian firms that import Russian oil and other goods.",
+                "what": "fuel prices",
+                "effect": "If the leaders agree steps to calm the Iran war, crude prices could ease and lower refiners' costs, but a breakdown could keep prices elevated.",
                 "basis": "inferred"
               },
               {
-                "group": "Large exporters",
+                "group": "Gulf & overseas workers and families",
                 "direction": "unclear",
-                "what": "US and China trade conditions",
-                "effect": "A shift in relations among the US, China and Russia could alter trade conditions that Indian exporters face in American and Chinese markets.",
+                "what": "regional safety",
+                "effect": "Progress on the Iran war could reduce the security risks facing Indians working in the Gulf, while no progress would leave those risks in place.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Government finances",
+                "direction": "unclear",
+                "what": "oil import bill",
+                "effect": "Changes in oil prices driven by the Iran war could raise or lower India's import bill and the cost of any fuel subsidies.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "Donald Trump's Asian tour and any meeting with Xi Jinping or Vladimir Putin",
-                "why": "It would show whether the three-way summit moves from discussion to an actual meeting.",
+                "what": "The Trump, Xi and Putin meeting on the sidelines of the Apec summit in Shenzhen",
+                "why": "Whether it takes place as scheduled would show how far the three powers are willing to engage directly.",
                 "when": "next week",
-                "where": ""
+                "where": "White House"
               },
               {
-                "what": "A formal announcement of a summit date, venue or agenda",
-                "why": "An agenda would show whether sanctions, trade or energy, the issues most relevant to India, are on the table.",
-                "when": "",
-                "where": ""
+                "what": "Any joint statement or agreed steps on the Iran war after the meeting",
+                "why": "Concrete steps would indicate whether risks to Gulf oil supply and to Indian workers in the region may ease.",
+                "when": "next week",
+                "where": "White House"
+              },
+              {
+                "what": "Any announcement on the reduction of nuclear weapons by the three leaders",
+                "why": "It would signal whether the meeting produced broader cooperation between the powers whose rivalries shape India's strategic choices.",
+                "when": "next week",
+                "where": "White House"
               }
             ],
             "context": [
-              "India maintains close strategic partnerships with both the United States and Russia, and it has become a major buyer of Russian crude oil while also expanding trade and defence ties with Washington.",
-              "India has a long-running border dispute with China, so any warming between China and the other two powers is closely watched in New Delhi."
+              "India imports most of the crude oil it uses, and a large share comes from Gulf producers whose exports pass through waters exposed to any conflict involving Iran.",
+              "Conflict in the Gulf usually pushes up oil prices and shipping insurance costs, which raises India's import bill and can feed through to fuel prices and inflation.",
+              "India has a strategic partnership with the United States, long-standing defence ties with Russia and an unresolved border dispute with China."
             ],
-            "terms": [],
+            "terms": [
+              {
+                "term": "Apec",
+                "meaning": "Asia-Pacific Economic Cooperation, a forum of Pacific Rim economies whose annual leaders' summit often hosts side meetings between heads of government."
+              },
+              {
+                "term": "trilateral",
+                "meaning": "A meeting or agreement involving three countries, here the United States, China and Russia."
+              }
+            ],
             "frameworks": {
               "impact_chain": {
                 "chain": [
                   {
-                    "step": "US confirms possible three-way summit",
-                    "detail": "The US has confirmed that an unprecedented summit of Trump, Xi and Putin is possible as Trump prepares for an Asian tour next week.",
+                    "step": "White House confirms three-way meeting",
+                    "detail": "The White House confirmed that Trump, Xi and Putin will meet next week on the sidelines of the Apec summit in Shenzhen, following earlier discussion of the possibility.",
                     "basis": "reported"
                   },
                   {
-                    "step": "China weighs hosting the meeting",
-                    "detail": "China is considering hosting the summit but must tread carefully, because the optics are likely to favour Moscow and could harm Beijing's global image.",
+                    "step": "Iran war and nuclear arms on agenda",
+                    "detail": "Trump plans to discuss the Iran war and the reduction of nuclear weapons, which places Gulf security on the table among the three major powers.",
                     "basis": "reported"
                   },
                   {
-                    "step": "Possible deals among the powers",
-                    "detail": "If the summit takes place, the three leaders could reach understandings on sanctions, trade or security that change the terms on which other countries deal with them.",
+                    "step": "Gulf risk outlook may shift",
+                    "detail": "Agreement on steps to contain the Iran war could reduce perceived risks to Gulf oil supply and shipping, while a failed meeting could leave those risks unchanged.",
                     "basis": "inferred"
                   },
                   {
-                    "step": "India adjusts its diplomacy",
-                    "detail": "India could need to recalibrate its Russian oil purchases, its US trade ties and its approach to China if such understandings emerge.",
+                    "step": "India's oil bill and workers affected",
+                    "detail": "Lower Gulf risk could ease crude prices and the safety concerns facing Indian workers in the region, while continued conflict could keep both pressures in place.",
                     "basis": "inferred"
                   }
                 ],
-                "breaks_if": "If the summit does not happen, or ends without agreements touching sanctions, trade or energy, the effect on India would remain negligible."
+                "breaks_if": "The effect would not reach India if the meeting produces no concrete action on the Iran war, or if the parties fighting in that war ignore any agreement among the three leaders."
+              },
+              "scenarios": {
+                "question": "Will the Trump, Xi and Putin meeting in Shenzhen produce agreed steps on the Iran war or on reducing nuclear weapons?",
+                "scenarios": [
+                  {
+                    "name": "Agreement on Iran war",
+                    "what": "The three leaders agree on steps intended to de-escalate or end the Iran war, using the meeting as a joint diplomatic push.",
+                    "signal": "A joint or White House statement announces specific measures on the Iran war after the Shenzhen meeting.",
+                    "india_effect": "Reduced conflict in the Gulf could ease pressure on oil prices and shipping costs for India and lower risks to Indian workers, though effects would depend on implementation."
+                  },
+                  {
+                    "name": "Nuclear arms framework only",
+                    "what": "The leaders announce talks or a framework on reducing nuclear weapons but reach no concrete agreement on the Iran war.",
+                    "signal": "Statements after the meeting focus on nuclear arms reduction and say little or nothing definite about Iran.",
+                    "india_effect": "Gulf oil and worker-safety risks for India would likely remain unchanged, while closer US, Chinese and Russian coordination could still bear on India's diplomatic balancing."
+                  },
+                  {
+                    "name": "Meeting yields no outcome",
+                    "what": "The meeting takes place largely for its symbolism, with no agreed steps on either the Iran war or nuclear weapons.",
+                    "signal": "The leaders issue no joint statement, or each side describes the meeting differently afterwards.",
+                    "india_effect": "The risks the Iran war poses to India's oil supply and its Gulf workforce would continue at their current level."
+                  }
+                ]
               }
             }
           },
@@ -70170,6 +70838,26 @@
               "summary": "The White House on Friday confirmed an unprecedented meeting between leaders of the US, China and Russia has been scheduled to take place on the sidelines of the Asia-Pacific Economic Cooperation (Apec) summit in Shenzhen next week.",
               "summaryV": 3,
               "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/14/25f1c183-07f0-40d8-b9a7-1bbb97ebfaa6_9dcf4d3b.jpg?itok=HlwpEW0j&v=1794616908"
+            },
+            {
+              "source": "aljazeera",
+              "headline": "Trump, Xi and Putin to hold first three-way summit in China",
+              "url": "https://www.aljazeera.com/news/2026/11/14/trump-xi-and-putin-to-hold-first-three-way-summit-in-china",
+              "date": "2026-11-14T04:55:58.000Z",
+              "kind": "hard",
+              "summary": "White House says Trump plans to discuss the Iran war and nuclear arms at a meeting on the sidelines of APEC next week.",
+              "summaryV": 3
+            },
+            {
+              "source": "bbc",
+              "headline": "Trump, Putin and Xi plan historic joint meeting in China next week, White House says",
+              "url": "https://www.bbc.co.uk/news/articles/ckz74jzpy18do",
+              "date": "2026-11-14T05:52:31.000Z",
+              "kind": "hard",
+              "summary": "Trump will discuss the \"reduction of nuclear weapons\" during the unprecedented talks, a spokeswoman says.",
+              "summaryV": 3,
+              "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/172e/live/be162960-dfc9-11f1-81be-1f9bcd2a4214.jpg",
+              "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/172e/live/be162960-dfc9-11f1-81be-1f9bcd2a4214.jpg"
             }
           ],
           "finChecked": true,
@@ -82873,14 +83561,14 @@
   "source": "BBC News & The Guardian & NPR & Al Jazeera & MercoPress & ABC News & The New York Times & CNBC & CBS News & DW & France 24 & Africanews & South China Morning Post & The Hindu & Mint & The Indian Express",
   "lastRun": {
     "filter": {
-      "judged": 91,
-      "kept": 14,
+      "judged": 96,
+      "kept": 10,
       "guarded": 0
     },
     "health": {
       "day": "2026-11-14",
       "newStories24h": 23,
-      "keepRate2d": 0.135
+      "keepRate2d": 0.131
     },
     "wars": {
       "linked": 0,
@@ -82893,51 +83581,45 @@
       "waiting": 0
     },
     "skipped": {
-      "since": "2026-11-13T20:04:14.966Z",
+      "since": "2026-11-14T01:34:27.701Z",
       "counts": {
-        "video_audio": 1,
-        "live_blog": 5,
-        "section": 8
+        "section": 18,
+        "live_blog": 3
       },
       "examples": {
-        "video_audio": [
-          "Watch: Cruise ship seen sinking after collision with cargo ship in New Orleans"
+        "section": [
+          "'We'll get home one day' - US travellers impacted by nationwide ground stop",
+          "The rise of 'housefishing' by estate agents",
+          "Sabalenka crashes out of season-ending WTA Finals after losing to Svitolina",
+          "Migrant caravan heads to US from Mexico after Democrats’ midterm win",
+          "Pochettino bids emotional farewell to US football ahead of Man Utd move"
         ],
         "live_blog": [
-          "US flight outage live updates: Trump officials set to brief public hours after FAA grounds thousands of flights",
-          "Microsoft ‘deeply sorry’ for disruption affecting millions and says it’s ‘not related to cyber or AI’ – as it happened",
-          "Iran war live: Fighting grips Yemen as Qatar, Turkiye sign defence deal",
-          "LIVE: FAA issues US ground stop, some international flights to depart",
+          "Airport chaos continues after US ground stop lifted – as it happened",
+          "US flight outage: FAA lifts nationwide ground stop; Trump officials suggest new tech overwhelmed old equipment – as it h",
           "Here’s the latest."
-        ],
-        "section": [
-          "Microsoft services begin recovering after global outage",
-          "FAA grounds all fights across the US over ‘telecommunication outage’",
-          "Pope Leo cheered on return to Peru city where he served as bishop",
-          "Qatar and Turkiye send message of deterrence with new defence pact",
-          "Australia captain Cummins denies involvement in ‘Sandpapergate’"
         ]
       }
     },
     "finance": {
       "moved": 0,
-      "checked": 2
+      "checked": 3
     },
-    "analysed": 91,
-    "added": 4,
-    "merged": 8,
-    "rejected": 79,
+    "analysed": 96,
+    "added": 5,
+    "merged": 5,
+    "rejected": 86,
     "failedBatches": 0,
     "feeds": {
       "bbc": {
         "feedsOk": 6,
         "feedsFailed": 0,
-        "items": 155
+        "items": 156
       },
       "guardian": {
         "feedsOk": 7,
         "feedsFailed": 0,
-        "items": 194
+        "items": 198
       },
       "npr": {
         "feedsOk": 4,
@@ -82962,7 +83644,7 @@
       "nyt": {
         "feedsOk": 5,
         "feedsFailed": 0,
-        "items": 197
+        "items": 195
       },
       "cnbc": {
         "feedsOk": 3,
@@ -82972,7 +83654,7 @@
       "cbs": {
         "feedsOk": 2,
         "feedsFailed": 0,
-        "items": 46
+        "items": 44
       },
       "dw": {
         "feedsOk": 3,
@@ -82982,7 +83664,7 @@
       "france24": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 68
+        "items": 71
       },
       "africanews": {
         "feedsOk": 1,
@@ -82992,22 +83674,22 @@
       "scmp": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 145
+        "items": 141
       }
     },
     "shareImages": {
-      "tried": 1,
-      "found": 1,
+      "tried": 2,
+      "found": 2,
       "summaries": 0
     },
     "threads": {
-      "assigned": 4,
-      "created": 0,
+      "assigned": 5,
+      "created": 2,
       "failedBatches": 0
     },
     "summaries": {
-      "written": 4,
-      "due": 4
+      "written": 3,
+      "due": 3
     },
     "kinds": {
       "labelled": 0,
@@ -83015,85 +83697,59 @@
       "failedBatches": 0
     },
     "frames": {
-      "done": 2,
+      "done": 3,
       "waiting": 1,
       "failedBatches": 0
     },
     "stats": {
-      "searched": 3,
-      "found": 2,
-      "reused": 0,
-      "none": 1,
+      "searched": 1,
+      "found": 0,
+      "reused": 1,
+      "none": 0,
       "failed": 0,
-      "proposed": 13,
+      "proposed": 0,
       "droppedPoints": 0,
-      "pagesFetched": 4,
+      "pagesFetched": 0,
       "samples": [
         {
-          "headline": "Bessent blames US Commerce Department for not restricting Nvidia chip exports to",
-          "result": "none",
-          "proposed": 0,
-          "checked": 0,
-          "pagesFetched": 1
-        },
-        {
-          "headline": "China could tighten rare earths exports if US escalates chip curbs over Nvidia: ",
-          "result": "chart",
-          "proposed": 6,
-          "checked": 6,
-          "pagesFetched": 1
-        },
-        {
-          "headline": "Microsoft battling major worldwide outage",
-          "result": "chart",
-          "proposed": 7,
-          "checked": 7,
-          "pagesFetched": 2
+          "headline": "UN says 25 seafarers killed in, around Hormuz since US-Israel war on Iran",
+          "result": "reused saved series"
         }
       ]
     },
     "models": {
       "filter": {
         "model": "claude-haiku-5-5",
-        "calls": 13,
-        "inputTokens": 48377,
-        "outputTokens": 17917,
-        "cost": 0.0139
+        "calls": 11,
+        "inputTokens": 39358,
+        "outputTokens": 15734,
+        "cost": 0.0118
       },
       "analysis_quick": {
         "model": "claude-sonnet-5-5",
         "calls": 3,
-        "inputTokens": 9637,
-        "outputTokens": 5188,
-        "cost": 0.0712
-      },
-      "stats": {
-        "model": "claude-sonnet-5-5",
-        "calls": 3,
-        "inputTokens": 253682,
-        "outputTokens": 3105,
-        "searches": 6,
-        "fetches": 5,
-        "cost": 0.5984
+        "inputTokens": 9347,
+        "outputTokens": 8352,
+        "cost": 0.1021
       },
       "analysis": {
         "model": "claude-opus-5-5",
-        "calls": 1,
-        "inputTokens": 6241,
-        "outputTokens": 11781,
-        "cost": 0.2606
+        "calls": 2,
+        "inputTokens": 7915,
+        "outputTokens": 8337,
+        "cost": 0.1984
       },
       "threads": {
         "model": "claude-sonnet-5-5",
-        "calls": 5,
-        "inputTokens": 16342,
-        "outputTokens": 3137,
-        "cost": 0.0641
+        "calls": 4,
+        "inputTokens": 13963,
+        "outputTokens": 1994,
+        "cost": 0.0479
       }
     },
     "spend": {
-      "thisDesk": 1.008,
-      "today": 2.6462,
+      "thisDesk": 0.3603,
+      "today": 3.09,
       "cap": 6
     }
   },
