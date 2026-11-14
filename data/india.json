@@ -2,7 +2,7 @@
   "schema": 4,
   "region": "India",
   "since": "2026-10-02",
-  "updatedAt": "2026-11-14T18:21:44.268Z",
+  "updatedAt": "2026-11-14T22:40:40.404Z",
   "sectors": [
     {
       "id": "energy",
@@ -32760,6 +32760,123 @@
       "name": "Logistics & Shipping",
       "items": [
         {
+          "id": "s1dm4mdb",
+          "headline": "Black Sea now the world's deadliest waterway as Russia tests NATO limits",
+          "url": "https://www.abc.net.au/news/2026-11-15/inside-crew-rescuing-sailors-from-black-sea-drone-attacks/107380692",
+          "source": "abc",
+          "date": "2026-11-14T18:00:00.000Z",
+          "relevance": "medium",
+          "image": "https://live-production.wcms.abc-cdn.net.au/fd05885ed8f40016683825c8d73a7f5c?impolicy=wcms_crop_resize&cropH=720&cropW=1280&xPos=0&yPos=2&width=862&height=485",
+          "why": "Merchant ships carrying grain, chemicals and oil are increasingly being hit in the crossfire of Russia's war in Ukraine in the Black Sea. This could raise shipping costs and affect commodity supplies that reach India.",
+          "implications": [
+            "Greater danger to ships can raise insurance and freight costs for cargoes from the region, and importers may eventually pass those costs on to buyers.",
+            "Indian importers of grain, chemicals or oil shipped from the region could face delays or higher prices if fewer vessels are willing to sail."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-14T22:36:51.343Z",
+            "tier": "quick",
+            "primary": "disruption_map",
+            "complement": null,
+            "features": [
+              "disruption",
+              "armed_conflict"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The channel is imported commodities and shipping costs, which touch food-related trade and chemicals importers. The reports name no direct Indian cargo, so the effect is indirect."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Any effect depends on whether attacks on ships continue and how long it takes freight and insurance costs to feed into import prices."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single ABC News summary with no named official source, and it gives no detail on specific attacks or on any effect on India."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Food shoppers",
+                "direction": "up",
+                "what": "edible oil and grain prices",
+                "effect": "If grain and oil shipments from the Black Sea become costlier or less reliable, import costs could rise and feed into food prices in India.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Importers & traders",
+                "direction": "up",
+                "what": "shipping and insurance costs",
+                "effect": "Indian traders buying cargoes from the region could pay more for freight and war-risk insurance, or face delays.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Further attacks on merchant ships in the Black Sea",
+                "why": "More attacks would show whether the danger is growing enough to raise freight and insurance costs.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "Ukraine and Russia are major suppliers of grain and sunflower oil to world markets, and India imports edible oils from the wider region.",
+              "Shipping insurers charge more for sailing through war-risk areas, which raises the cost of moving goods."
+            ],
+            "terms": [],
+            "frameworks": {
+              "disruption_map": {
+                "node": {
+                  "name": "Black Sea",
+                  "type": "other",
+                  "status": "unknown",
+                  "as_of": "14 Nov 2026"
+                },
+                "cause": {
+                  "text": "Merchant ships are being caught in the crossfire of Russia's war in Ukraine.",
+                  "status": "confirmed"
+                },
+                "flows": [
+                  {
+                    "flow": "cargo",
+                    "india_link": "Grain, chemicals and oil are carried on these ships. India imports edible oils and some other commodities from the wider region, so importers and consumers could feel higher costs.",
+                    "basis": "reported"
+                  }
+                ],
+                "alternatives": [],
+                "duration": "not reported"
+              }
+            }
+          },
+          "place": {
+            "name": "Black Sea",
+            "country": "Ukraine",
+            "lat": 43.5,
+            "lon": 34,
+            "involves": [
+              "Russia"
+            ]
+          },
+          "reports": [
+            {
+              "source": "abc",
+              "headline": "Black Sea now the world's deadliest waterway as Russia tests NATO limits",
+              "url": "https://www.abc.net.au/news/2026-11-15/inside-crew-rescuing-sailors-from-black-sea-drone-attacks/107380692",
+              "date": "2026-11-14T18:00:00.000Z",
+              "kind": "hard",
+              "summary": "The Black Sea has become a deadly theatre of battle as merchant ships carrying things like grain, chemicals and oil are increasingly caught in the crossfire of Russia's war in Ukraine.",
+              "summaryV": 3,
+              "image": "https://live-production.wcms.abc-cdn.net.au/fd05885ed8f40016683825c8d73a7f5c?impolicy=wcms_crop_resize&cropH=720&cropW=1280&xPos=0&yPos=2&width=862&height=485"
+            }
+          ],
+          "stats": {
+            "v": 2,
+            "at": "2026-11-14T22:37:40.300Z",
+            "series": []
+          },
+          "thread": "t14axxk2"
+        },
+        {
           "id": "s10obamq",
           "headline": "UN says 25 seafarers killed in, around Hormuz since US-Israel war on Iran",
           "url": "https://www.aljazeera.com/news/2026/11/14/un-says-25-seafarers-killed-in-around-hormuz-since-february",
@@ -39733,85 +39850,89 @@
           "date": "2026-11-14T10:30:04.000Z",
           "relevance": "medium",
           "image": "https://s.france24.com/media/display/70cfdcca-e012-11f1-8f8f-5f54d898a954/w:1024/p:16x9/AP26316802067115.jpg",
-          "why": "Ukraine's President Zelensky says United States envoys proposed that Ukraine cede Donbas to Russia in return for NATO membership. Any settlement that ends the war could change the sanctions and pricing around the Russian crude India buys.",
+          "why": "President Zelensky says US negotiators floated Ukraine ceding the Donbas region to Russia in exchange for NATO membership. India could feel any eventual settlement mainly through Russian oil and global energy markets, but no deal exists yet.",
           "implications": [
-            "The proposal is a talking point, not an agreement, so Russia and Ukraine are still trading strikes on each other's power infrastructure while negotiators meet.",
-            "A settlement could eventually reopen debate on Western sanctions against Russian oil, which could alter the discounts and payment terms Indian refiners have relied on.",
-            "Ceding territory is politically difficult for Kyiv, and the proposal could stall talks rather than speed them up.",
-            "Any NATO membership offer would need backing from all alliance members, so the proposal's prospects also depend on European capitals."
+            "Zelensky says the idea surfaced after the latest round of peace talks in Abu Dhabi, so the proposal is still at an early, exploratory stage rather than an agreed framework.",
+            "DW reports that Zelensky said a security deal could be put to a referendum, which means Ukrainian voters, not only negotiators, could decide whether territory is given up.",
+            "Zelensky has also accused SpaceX of throttling Ukraine's Starshield satellite system across the frontline for political reasons, which suggests friction with US-linked suppliers even as talks continue.",
+            "Al Jazeera reports three people killed in Russia on the same day, which shows that strikes are continuing while the proposal is discussed."
           ],
           "analysis": {
             "v": 3,
-            "at": "2026-11-14T10:44:20.557Z",
-            "tier": "standard",
+            "at": "2026-11-14T22:40:21.824Z",
+            "tier": "deep",
             "primary": "escalation",
-            "complement": null,
+            "complement": "scenarios",
             "features": [
               "armed_conflict",
               "pending_outcome"
             ],
             "exposure": {
-              "level": "medium",
-              "reason": "The war reaches India mainly through the price and sanctions status of Russian crude oil. A proposal alone does not change those terms, which keeps exposure medium rather than high."
+              "level": "low",
+              "reason": "The reports describe only a floated proposal, with no change yet to oil flows, sanctions or trade, so any effect on India through Russian crude imports remains indirect."
             },
             "horizon": {
               "value": "months",
-              "reason": "Any effect on oil sanctions or prices would follow only from an agreement, which would take further rounds of negotiation to reach."
+              "reason": "Any deal would need further negotiation and possibly a Ukrainian referendum before it could change sanctions, oil flows or the fighting."
             },
             "confidence": {
               "level": "low",
-              "reason": "France 24 and BBC News both rest on Zelensky's account as a party to the war, and the United States has not confirmed the proposal on record."
+              "reason": "Six outlets report Zelensky's account, but the proposal is a claim by one party to the war and the United States has not confirmed it on record."
             },
-            "outlets": 2,
+            "outlets": 6,
             "affected": [
               {
                 "group": "Fuel & LPG users",
                 "direction": "unclear",
                 "what": "fuel import costs",
-                "effect": "If talks eventually led to a settlement and eased sanctions, the cost of crude for Indian refiners could shift, which may later feed through to pump prices.",
+                "effect": "A settlement could eventually change sanctions on Russian oil and global crude prices, which may alter India's import costs and later the prices of petrol and diesel.",
                 "basis": "inferred"
               },
               {
                 "group": "Importers & traders",
                 "direction": "unclear",
-                "what": "Russia trade terms",
-                "effect": "Indian firms trading with Russia could face changed sanctions and payment conditions if a peace deal alters the Western measures now in place.",
+                "what": "Russia trade conditions",
+                "effect": "Indian firms that trade with Russia could face different sanction and payment conditions if a peace deal eventually reshapes Western restrictions on Moscow.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "A public United States statement confirming or denying the Donbas-for-NATO proposal",
-                "why": "It would show whether the proposal is official American policy or only Ukraine's account of the talks.",
-                "when": "",
-                "where": "US State Department"
-              },
-              {
-                "what": "Russia's official response to the proposed exchange of Donbas for Ukrainian NATO membership",
-                "why": "Moscow's reaction would indicate whether the proposal can become a basis for further negotiation.",
-                "when": "",
-                "where": "Kremlin"
-              },
-              {
-                "what": "The next round of peace talks following the meeting in Abu Dhabi",
-                "why": "A new round would show whether negotiations are progressing despite continuing strikes on energy infrastructure.",
+                "what": "The next round of US-brokered peace talks between Ukrainian, Russian and US negotiators",
+                "why": "It would show whether the Donbas-for-NATO idea becomes a formal proposal or is dropped.",
                 "when": "",
                 "where": ""
+              },
+              {
+                "what": "A US government statement confirming or denying that its envoys floated the Donbas-for-NATO exchange",
+                "why": "On-record US confirmation would show whether Zelensky's account reflects Washington's actual negotiating position.",
+                "when": "",
+                "where": "White House"
+              },
+              {
+                "what": "Any formal Ukrainian move to put a security deal to a referendum",
+                "why": "It would show that Kyiv is seriously weighing territorial concessions and would set a timetable for a decision.",
+                "when": "",
+                "where": "Office of the President of Ukraine"
               }
             ],
             "context": [
-              "Since the war began, India has become a major buyer of Russian crude oil, often at a discount to global benchmarks, while Western countries have tightened sanctions on Russian energy.",
-              "India has kept working ties with Russia, Ukraine and the West, and has generally called for dialogue and diplomacy to end the conflict.",
-              "NATO admits new members only by consensus, so any single member government can block an applicant's entry."
+              "India imports most of the crude oil it uses and has become a major buyer of discounted Russian crude since the war began, so the war's course and Western sanctions on Russia shape India's fuel import bill.",
+              "India has kept a neutral position on the war, calling for dialogue and diplomacy while maintaining long-standing defence and energy ties with Russia and growing ties with the United States.",
+              "Territorial concessions are one of the hardest issues in any peace settlement, and Ukraine's leaders have repeatedly said that changes to its borders would need the public's consent."
             ],
             "terms": [
               {
                 "term": "NATO",
-                "meaning": "The North Atlantic Treaty Organization, a Western military alliance whose members pledge to defend one another if attacked."
+                "meaning": "The North Atlantic Treaty Organization, a Western military alliance whose members pledge to defend one another if any member is attacked."
               },
               {
                 "term": "Donbas",
-                "meaning": "An industrial area in eastern Ukraine, large parts of which have been contested or held by Russia during the conflict."
+                "meaning": "An industrial region in eastern Ukraine, much of which has been contested or occupied by Russian forces."
+              },
+              {
+                "term": "Starshield",
+                "meaning": "A military-grade satellite communications system made by Elon Musk's SpaceX, which Ukraine's forces use on the frontline."
               }
             ],
             "frameworks": {
@@ -39820,20 +39941,20 @@
                 "rung": 6,
                 "current_rung": 6,
                 "previous_rung": null,
-                "development": "United States negotiators, according to Zelensky, proposed after talks in Abu Dhabi that Ukraine cede Donbas to Russia in exchange for NATO membership.",
-                "evidence": "This is a proposal made during talks, and no ceasefire, withdrawal or halt to the strikes on power infrastructure has been reported, so the war stays at rung 6.",
+                "development": "This story adds a diplomatic proposal: according to Zelensky, US negotiators floated Ukraine ceding Donbas to Russia in exchange for NATO membership after talks in Abu Dhabi.",
+                "evidence": "Proposals and talks do not move the war down, and the three deaths reported in Russia do not mark a new higher rung, so the war stays at strikes on critical infrastructure.",
                 "next_signals": [
                   {
-                    "rung": 5,
-                    "signal": "Both sides announce and observe a halt to strikes on power and oil infrastructure, while other fighting continues."
-                  },
-                  {
                     "rung": 7,
-                    "signal": "Either side launches a major new ground offensive or broad mobilisation that widens the war beyond the current exchange of infrastructure strikes."
+                    "signal": "Russia or Ukraine would launch a declared general offensive involving full national mobilisation and attacks across the whole front and both countries' territory."
                   },
                   {
-                    "rung": 4,
-                    "signal": "A ceasefire takes effect and holds, with only isolated or limited attacks reported along the front."
+                    "rung": 5,
+                    "signal": "Both sides would announce and observe a halt to strikes on each other's power and oil infrastructure while frontline fighting continues."
+                  },
+                  {
+                    "rung": 2,
+                    "signal": "A ceasefire would take effect and hold, with fighting reported to have stopped and the dispute moving to sanctions and diplomatic negotiation."
                   }
                 ],
                 "india_channels": [
@@ -39843,8 +39964,39 @@
                 "conflict": "wzti51f",
                 "applied": "none",
                 "from": 6
+              },
+              "scenarios": {
+                "question": "Will Ukraine agree to give up the Donbas region in exchange for NATO membership as part of a US-brokered peace deal?",
+                "scenarios": [
+                  {
+                    "name": "Deal goes to referendum",
+                    "what": "Kyiv takes the Donbas-for-NATO idea forward and puts a security deal to Ukrainian voters in a referendum, as Zelensky said could happen.",
+                    "signal": "The Ukrainian government would announce a referendum question and date linked to a negotiated security agreement.",
+                    "india_effect": "A path towards ending the war could eventually ease pressure on global energy markets, but it may also change the discounts and sanction conditions attached to Russian crude that India buys."
+                  },
+                  {
+                    "name": "Proposal rejected",
+                    "what": "Ukraine, Russia or the United States rejects the exchange, and the talks in Abu Dhabi stall while strikes on energy infrastructure continue.",
+                    "signal": "Ukrainian or Russian officials would publicly rule out the Donbas-for-NATO formula, and no new talks would be scheduled.",
+                    "india_effect": "Continued strikes on oil and power facilities could keep global energy markets unsettled, which may keep India's crude import costs uncertain."
+                  }
+                ]
               }
-            }
+            },
+            "reading": [
+              {
+                "headline": "What Trump’s midterms debacle could mean for US support for Ukraine",
+                "url": "https://www.france24.com/en/europe/20261106-what-trump-s-midterms-debacle-could-mean-for-us-support-for-ukraine",
+                "source": "france24",
+                "date": "2026-11-06T18:49:19.000Z"
+              },
+              {
+                "headline": "Former U.S. ambassador on Trump's recent moves to embrace Russia",
+                "url": "https://www.npr.org/2026/10/20/nx-s1-6007865/former-u-s-ambassador-on-trumps-recent-moves-to-embrace-russia",
+                "source": "npr",
+                "date": "2026-10-20T11:03:48.000Z"
+              }
+            ]
           },
           "conflict": "wzti51f",
           "place": {
@@ -59735,63 +59887,85 @@
           "date": "2026-11-13T20:20:33.000Z",
           "relevance": "medium",
           "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/14/13f9bfd1-a256-4797-8b2b-96e1a403daeb_c8367995.jpg?itok=z45ubSDI&v=1794601222",
-          "why": "US Treasury Secretary Scott Bessent has blamed the Commerce Department for delaying the blacklisting of Megaspeed, an Nvidia customer suspected of diverting advanced AI chips to China. The dispute could shape the rules on which Indian technology firms rely.",
+          "why": "US Treasury Secretary Scott Bessent has blamed the Commerce Department for delaying the blacklisting of Megaspeed, a Singapore-linked Nvidia customer suspected of diverting advanced AI chips to China. Any tightening of US chip export rules could shape how Indian buyers obtain such chips.",
           "implications": [
-            "The public disagreement between two US departments suggests that enforcement of chip export controls is not settled. Indian companies buying advanced chips could face changing compliance expectations if Washington tightens or relaxes its approach.",
-            "The timing, days before an expected meeting between Donald Trump and Xi Jinping in Shenzhen, links chip controls to wider US-China bargaining. The outcome could affect global supply and pricing of AI hardware that Indian buyers also use."
+            "The public split between the Treasury and the Commerce Department suggests Washington has not settled how hard to police chip diversion through third countries such as Singapore.",
+            "The dispute comes days before an expected meeting between President Trump and President Xi in Shenzhen, so chip controls may become part of wider US-China bargaining.",
+            "If Washington responds with stricter checks on resellers outside China, Indian firms and research bodies that import advanced AI chips could face slower deliveries or more paperwork.",
+            "France 24 reports that Nvidia chief Jensen Huang stepped down in disgrace, and leadership turmoil at the leading AI chip supplier may unsettle global technology markets that Indian investors follow."
           ],
           "analysis": {
             "v": 3,
-            "at": "2026-11-14T01:30:17.767Z",
-            "tier": "quick",
+            "at": "2026-11-14T22:40:21.823Z",
+            "tier": "standard",
             "primary": "trade_flow",
             "complement": null,
             "features": [
               "trade_flow",
+              "fast_moving",
               "pending_outcome"
             ],
             "exposure": {
               "level": "low",
-              "reason": "The reports describe a dispute inside the US government over a single company, with no direct channel to Indian consumers or exporters. Any effect would come indirectly through global AI chip supply and US-China relations."
+              "reason": "India is not named in this dispute. The only channel is indirect: any wider US rules on chip resellers could affect Indian imports of advanced AI chips."
             },
             "horizon": {
               "value": "months",
-              "reason": "Any change to chip export enforcement would need to be decided and implemented in the US before Indian buyers or technology firms noticed an effect on supply."
+              "reason": "Any change to US export rules would need a Commerce Department decision, and its effect on Indian chip buyers would follow over later procurement cycles."
             },
             "confidence": {
-              "level": "medium",
-              "reason": "This rests on one outlet, the South China Morning Post, citing an on-record statement by Bessent; the suspected diversion of chips by Megaspeed has not been independently confirmed."
+              "level": "high",
+              "reason": "Three outlets agree on the inter-agency dispute, and Bessent's criticism is on record, although the alleged diversion by Megaspeed remains a suspicion and is unproven."
             },
-            "outlets": 1,
+            "outlets": 3,
             "affected": [
               {
-                "group": "IT & services workers",
+                "group": "Importers & traders",
                 "direction": "unclear",
-                "what": "access to advanced AI chips",
-                "effect": "Indian AI and data-centre projects depend on imported advanced chips, so stricter or looser US export enforcement could change how easily such hardware is supplied.",
+                "what": "AI chip import checks",
+                "effect": "Indian firms importing advanced AI chips could face tighter US reseller checks if Washington broadens its response to diversion through third countries.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Equity & mutual fund investors",
+                "direction": "mixed",
+                "what": "technology stock sentiment",
+                "effect": "Leadership upheaval at Nvidia and US policy uncertainty may move global technology shares, which can feed into Indian technology-focused funds.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "Whether the Commerce Department formally blacklists Megaspeed before or after the expected Trump-Xi meeting in Shenzhen",
-                "why": "It would show whether Washington is tightening enforcement on chip diversion or holding back during talks with China.",
-                "when": "in the coming days",
-                "where": "US Commerce Department"
+                "what": "Whether the Commerce Department blacklists Megaspeed",
+                "why": "A blacklisting would show Washington is tightening enforcement against chip diversion through third countries.",
+                "when": "",
+                "where": "US Department of Commerce, Bureau of Industry and Security"
+              },
+              {
+                "what": "Whether chip export controls feature at the Trump-Xi meeting in Shenzhen",
+                "why": "It would show whether chip curbs are being tightened or traded away in wider US-China talks.",
+                "when": "within days",
+                "where": ""
               }
             ],
             "context": [
-              "The United States restricts exports of advanced AI chips to China and relies on listing suspect companies to stop diversion through third parties. India is not the target of these controls, but it competes for the same scarce chips."
+              "The United States controls exports of its most advanced AI chips to China on national security grounds and uses an export blacklist to bar specific foreign companies from receiving them.",
+              "Washington has at times extended chip licensing requirements to many countries beyond China to stop diversion, so enforcement against third-country resellers can affect buyers elsewhere, including India.",
+              "India depends on imported high-end graphics processors, largely from US designers such as Nvidia, to build data centres and AI computing capacity."
             ],
             "terms": [
               {
+                "term": "export controls",
+                "meaning": "Government rules that require a licence, or ban outright, the sale of sensitive goods or technology to particular countries or companies."
+              },
+              {
                 "term": "blacklisting",
-                "meaning": "Placing a company on a US government list that restricts or bars exports to it, usually because of suspected breaches of export rules or national security concerns."
+                "meaning": "Placing a company on an official US list that bars American firms from supplying it with controlled goods without special permission."
               }
             ],
             "frameworks": {
               "trade_flow": {
-                "good": "Advanced AI chips made by Nvidia",
+                "good": "Advanced Nvidia AI chips",
                 "actors": [
                   {
                     "country": "United States",
@@ -59802,6 +59976,11 @@
                     "country": "China",
                     "role": "importer",
                     "is_india": false
+                  },
+                  {
+                    "country": "Singapore",
+                    "role": "third_party",
+                    "is_india": false
                   }
                 ],
                 "change": {
@@ -59810,11 +59989,19 @@
                 },
                 "india_position": {
                   "role": "not_involved",
-                  "note": "India is not named in the reports as a party to this trade. Indian buyers of advanced chips could be affected indirectly if tighter US enforcement changes global supply."
+                  "note": "India is not part of this alleged diversion route, but it also imports advanced US AI chips. Stricter US rules on third-country resellers could add compliance steps for Indian buyers, while lax enforcement would leave current arrangements unchanged."
                 },
                 "volumes": []
               }
-            }
+            },
+            "reading": [
+              {
+                "headline": "How the Jensen Huang affair changes the outlook for U.S.-China relations",
+                "url": "https://www.cnbc.com/2026/11/13/jensen-huang-nvidia-us-china-relations.html",
+                "source": "cnbc",
+                "date": "2026-11-13T01:48:50.000Z"
+              }
+            ]
           },
           "place": {
             "name": "Washington",
@@ -59845,6 +60032,15 @@
               "summary": "After the fall, the fallout. US government agencies are squabbling after AI leader Jensen Huang stepped down from chips giant Nvidia in disgrace. The Treasury says it wanted to blacklist a Singapore company at the heart of the scandal, but the Commerce Department didn't act.",
               "summaryV": 3,
               "image": "https://s.france24.com/media/display/de9eb5ba-e025-11f1-b03b-695cb59fade5/w:1024/p:16x9/EN-20261114-120954-121129-CS-01.jpg"
+            },
+            {
+              "source": "npr",
+              "headline": "Commerce Department under pressure for delaying export controls on Nvidia chips",
+              "url": "https://www.npr.org/2026/11/14/nx-s1-6040379/commerce-department-under-pressure-for-delaying-export-controls-on-nvidia-chips",
+              "date": "2026-11-14T22:21:07.000Z",
+              "kind": "hard",
+              "summary": "The U.S. Commerce Department is under scrutiny for clearing Chinese companies to handle Nvidia chips, despite national security concerns from cabinet officials and U.S. intelligence agencies.",
+              "summaryV": 3
             }
           ],
           "stats": {
@@ -59861,132 +60057,135 @@
           "source": "cbs",
           "date": "2026-11-13T10:15:44.000Z",
           "relevance": "medium",
-          "why": "Microsoft's Outlook email, messaging and other services failed worldwide for almost 24 hours before the company reported a broad recovery. Indian offices and IT firms that rely on Microsoft tools could have faced similar disruption.",
+          "why": "A Microsoft outage knocked out Outlook, Teams and other services worldwide for more than 24 hours before the company said services were fully restored. Indian businesses, offices and IT services firms that rely on these tools could have faced lost work time.",
           "implications": [
-            "Microsoft said the outage was not caused by a cyberattack or by AI agents, but the actual cause has not been reported, so customers cannot yet judge whether it could recur.",
-            "Public services as well as businesses were disrupted, so governments that run email and messaging on Microsoft systems could face pressure to plan backup ways of communicating.",
-            "Experts said the outage showed how heavily the world depends on a small group of large technology providers, a concentration that may also apply to many Indian organisations.",
-            "Experts in Australia warned that the disruption could have a billion-dollar impact there, which shows that lost working time can be costly even when an outage is short."
+            "The disruption hit governments, businesses and public services, including the healthcare industry, which shows that the failure of one provider can affect essential services as well as offices.",
+            "France 24 reports that hundreds of millions of people were affected, so the outage was among the widest IT failures in years.",
+            "Experts quoted by BBC News say the event is a stark reminder of how heavily the world relies on a small group of big tech providers.",
+            "The Guardian reports that experts estimate the outage could have a billion-dollar impact on Australia, which shows how lost working hours translate into economic costs."
           ],
           "analysis": {
             "v": 3,
-            "at": "2026-11-14T01:34:04.547Z",
+            "at": "2026-11-14T22:40:21.824Z",
             "tier": "deep",
             "primary": "impact_chain",
-            "complement": "scenarios",
+            "complement": "winners_losers",
             "features": [
-              "fast_moving",
-              "pending_outcome"
+              "fast_moving"
             ],
             "exposure": {
               "level": "medium",
-              "reason": "The outage reaches India through businesses, IT firms and offices that run email and messaging on Microsoft services. It disrupts work tools rather than a household essential, so exposure is medium."
+              "reason": "The outage reaches India through businesses, IT services firms and offices that use Microsoft's email and collaboration tools, but it was temporary and did not touch household essentials."
             },
             "horizon": {
               "value": "now",
-              "reason": "The disruption ran into a second day before recovery began, so any effect on Indian users would be felt immediately rather than later."
+              "reason": "The disruption lasted more than 24 hours and Microsoft says services are now fully restored, so its effects were felt immediately."
             },
             "confidence": {
               "level": "high",
-              "reason": "BBC, The New York Times, Al Jazeera, NPR and others report the outage, and Microsoft apologised on record. Its root cause and any specific impact on India have not been reported."
+              "reason": "Al Jazeera, NPR, BBC News, DW, France 24 and The Guardian report the outage and Microsoft's on-record statements; the cause and India-specific impact have not been reported."
             },
-            "outlets": 8,
+            "outlets": 10,
             "affected": [
               {
                 "group": "IT & services workers",
                 "direction": "down",
-                "what": "access to work tools",
-                "effect": "Indian IT and services staff who rely on Outlook and Microsoft messaging could have lost working time while email and collaboration services were unavailable.",
+                "what": "lost working time",
+                "effect": "Workers in Indian IT and outsourcing firms that run client work through Outlook and Teams may have lost access to email and meetings during the outage.",
                 "basis": "inferred"
               },
               {
                 "group": "Salaried workers",
                 "direction": "down",
-                "what": "office email access",
-                "effect": "Office employees in Indian firms and public bodies using Microsoft email may have been unable to send or receive messages during the outage.",
+                "what": "office communication disruption",
+                "effect": "Office employees in India whose employers use Microsoft services could have been unable to send email or join calls while the outage lasted.",
                 "basis": "inferred"
               },
               {
                 "group": "MSME exporters",
                 "direction": "down",
-                "what": "buyer communication",
-                "effect": "Small exporters who correspond with overseas buyers through Outlook email could have faced delays in orders and confirmations while the service was down.",
+                "what": "client communication delays",
+                "effect": "Small exporters relying on Outlook to deal with overseas buyers may have faced delays in orders and correspondence during the disruption.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "Microsoft publishes an explanation of the root cause of the global outage",
-                "why": "It would show what failed and whether customers relying on Microsoft services remain exposed to a repeat.",
+                "what": "Microsoft publishing an explanation of what caused the server failures",
+                "why": "The cause has not been reported, and an explanation would show whether a similar failure could recur.",
                 "when": "",
                 "where": "Microsoft"
               },
               {
-                "what": "CERT-In issues an advisory to Indian organisations about the Microsoft outage",
-                "why": "An advisory would confirm that Indian users were materially affected and set out the precautions authorities expect organisations to take.",
+                "what": "Any advisory from Indian authorities on the outage's impact on government or business systems",
+                "why": "It would show whether Indian public services were affected and what safeguards are being recommended.",
                 "when": "",
                 "where": "CERT-In"
               }
             ],
             "context": [
-              "Many Indian companies, banks and government offices use Microsoft's email, productivity and cloud services, so a failure in its systems can halt routine office communication across the country.",
-              "Indian IT services firms deliver much of their work to clients in the United States and Europe through shared cloud and collaboration tools, so disruption to those tools can delay project delivery.",
-              "The Indian Computer Emergency Response Team (CERT-In) is the national agency that tracks major technology incidents and issues advisories to organisations in India."
+              "Indian IT services firms, outsourcing centres and many government and corporate offices rely on cloud-based email and collaboration software to work with clients and colleagues, often across time zones.",
+              "A handful of large technology companies provide most of the world's cloud and workplace software, so a fault in one can disrupt many countries at once.",
+              "India's national cyber agency, the Indian Computer Emergency Response Team (CERT-In), issues advisories on major incidents affecting widely used software."
             ],
             "terms": [
               {
-                "term": "AI agents",
-                "meaning": "Artificial intelligence programs that can carry out tasks on their own, such as sending messages or changing system settings, with limited human supervision."
+                "term": "Teams",
+                "meaning": "Microsoft Teams, a workplace application used for video calls, chat and file sharing within organisations."
+              },
+              {
+                "term": "Outlook",
+                "meaning": "Microsoft's email and calendar service, widely used by businesses and governments."
               }
             ],
             "frameworks": {
               "impact_chain": {
                 "chain": [
                   {
-                    "step": "Microsoft services fail worldwide",
-                    "detail": "Microsoft's Outlook email, messaging and other services failed globally. The disruption stretched into a second day and lasted almost 24 hours before Microsoft reported a broad recovery.",
+                    "step": "Microsoft servers fail globally",
+                    "detail": "Server failures at Microsoft knocked out Outlook, Teams and other platforms, and the disruption stretched into a second day.",
                     "basis": "reported"
                   },
                   {
-                    "step": "Governments and businesses lose communication",
-                    "detail": "City governments in the US, spy agencies in Australia and businesses around the world lost access to email and messaging. Their staff had to work around the obstacles.",
+                    "step": "Governments, businesses and healthcare disrupted",
+                    "detail": "Governments, businesses, public services and the healthcare industry lost access to email and collaboration tools for more than 24 hours, affecting hundreds of millions of people.",
                     "basis": "reported"
                   },
                   {
-                    "step": "Indian users may face disruption",
-                    "detail": "Indian companies, IT services firms and public offices that use Microsoft services could have faced the same loss of email. This may have delayed work for clients overseas.",
+                    "step": "Indian offices may lose work time",
+                    "detail": "Indian firms, IT services companies and offices using Microsoft's tools could have been unable to communicate with clients and colleagues, delaying work during the outage.",
                     "basis": "inferred"
                   },
                   {
-                    "step": "Reliance on few providers questioned",
-                    "detail": "Experts called the outage a stark reminder of the world's reliance on a few big technology providers. That argument could lead Indian organisations to review their own dependence on such providers.",
-                    "basis": "inferred"
+                    "step": "Services restored",
+                    "detail": "Microsoft says it fixed the problems and restored operations to all affected customers and regions, which ends the direct disruption.",
+                    "basis": "reported"
                   }
                 ],
-                "breaks_if": "The effect would not reach India if Microsoft services used by Indian organisations stayed largely unaffected, were restored quickly, or were backed up by alternative communication tools."
+                "breaks_if": "The effect would not reach Indian users if their organisations do not depend on Microsoft's email and collaboration services or had backup communication systems in place."
               },
-              "scenarios": {
-                "question": "Will Microsoft's reported broad recovery hold, and will the cause of the outage be identified?",
-                "scenarios": [
+              "winners_losers": {
+                "groups": [
                   {
-                    "name": "Recovery holds",
-                    "what": "Microsoft completes the restoration of Outlook and its other services, and the progress it described as encouraging turns into full normal operation.",
-                    "signal": "Microsoft stops issuing outage updates and reports that all affected services are operating normally.",
-                    "india_effect": "Indian users would return to normal working. Their losses would be limited to the working time lost during the disruption."
+                    "group": "IT & services workers",
+                    "direction": "lose",
+                    "directness": "direct",
+                    "mechanism": "The outage knocked out Outlook and Teams for businesses worldwide, which could have halted email and meetings for Indian IT and outsourcing staff serving overseas clients."
                   },
                   {
-                    "name": "Disruption lingers",
-                    "what": "Services keep returning slowly, as Al Jazeera described, and some customers remain without full email or messaging access for longer.",
-                    "signal": "Users and organisations continue to report Outlook failures after Microsoft's apology and its announcement of a broad recovery.",
-                    "india_effect": "Indian firms and offices could face further delays in communication. IT services firms serving clients overseas could be among those most affected."
+                    "group": "Salaried workers",
+                    "direction": "lose",
+                    "directness": "direct",
+                    "mechanism": "Businesses and governments lost access to Microsoft's communication tools for more than 24 hours, which may have disrupted daily work for office employees in India using these services."
                   },
                   {
-                    "name": "Dependence under scrutiny",
-                    "what": "Experts' warnings in Australia about reliance on foreign technology lead governments to examine how dependent their public services are on a few large providers.",
-                    "signal": "A government announces a review of its reliance on Microsoft or other large foreign technology providers for public services.",
-                    "india_effect": "If similar debates spread, Indian policymakers could look again at how far public services rely on foreign cloud and email providers."
+                    "group": "MSME exporters",
+                    "direction": "lose",
+                    "directness": "indirect",
+                    "mechanism": "Small exporters that depend on Outlook email for orders and buyer contact could have faced delays while services were down."
                   }
-                ]
+                ],
+                "not_affected": "Fuel & LPG users are not affected, because the outage disrupted email and workplace software and has no reported link to energy supply or prices."
               }
             }
           },
@@ -66465,93 +66664,125 @@
           "date": "2026-11-11T09:11:32.000Z",
           "relevance": "medium",
           "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/11/290410b8-11c2-40a4-b922-fd868a5fcf3b_f6ae0c96.jpg?itok=tTuSfBkF&v=1794388288",
-          "why": "World leaders began formal talks at the UN climate conference in Turkey on 11 Nov 2026, seeking concrete action after a year of floods and heatwaves. The outcome could shape India's climate commitments and access to climate finance.",
+          "why": "UN climate talks at COP31 in Turkey continue after world leaders departed, and the UN climate chief warns that tactical delays could prevent a deal to slow global warming. The outcome shapes the climate commitments and finance India negotiates over.",
           "implications": [
-            "Leaders face mounting pressure because recent floods and heatwaves have made the costs of slow action visible, which could raise expectations on large emitters such as India.",
-            "If the talks agree concrete actions, India may need to align its national climate plans and energy policies with the new shared expectations.",
-            "Concerns that action is too slow suggest the talks may struggle to agree firm steps, which could leave vulnerable regions, including parts of India, facing rising disaster costs."
+            "The talks follow a year of deadly floods and heatwaves, the kinds of disasters that already strain Indian farming, health and infrastructure.",
+            "With leaders gone, officials must settle the remaining text, so agreement depends on negotiators bridging gaps rather than on political announcements.",
+            "Outgoing UN Secretary-General António Guterres framed climate action as central to peace, signalling pressure on all large emitters, including India, to strengthen plans.",
+            "A weak or failed outcome could leave developing countries such as India with less international finance for adapting to heat and floods."
           ],
           "analysis": {
             "v": 3,
-            "at": "2026-11-12T00:54:40.477Z",
-            "tier": "standard",
+            "at": "2026-11-14T22:40:21.823Z",
+            "tier": "deep",
             "primary": "impact_chain",
-            "complement": null,
+            "complement": "scenarios",
             "features": [
               "pending_outcome"
             ],
             "exposure": {
-              "level": "medium",
-              "reason": "The talks reach India through negotiated climate commitments and finance, which are policy obligations rather than immediate effects on prices or household costs."
+              "level": "low",
+              "reason": "Summit outcomes reach India indirectly through future emission commitments and climate finance. Nothing agreed at the talks has an immediate effect on prices or services."
             },
             "horizon": {
               "value": "years",
-              "reason": "Commitments agreed at climate talks usually reach national policy and spending over several years."
+              "reason": "Commitments made at climate summits feed into national plans and finance flows that take years to change policies and investment in India."
             },
             "confidence": {
-              "level": "medium",
-              "reason": "Two outlets, the South China Morning Post and Africanews, report the start of formal talks; no outcome or official commitments have been reported yet."
+              "level": "high",
+              "reason": "Four outlets agree the talks are under way and stalling risks are real, with on-record remarks from Guterres and the UN climate chief; the final outcome remains unknown."
             },
-            "outlets": 2,
+            "outlets": 4,
             "affected": [
               {
-                "group": "Government finances",
+                "group": "Farmers",
                 "direction": "unclear",
-                "what": "climate commitments and finance",
-                "effect": "New agreements could change what India must spend on its energy transition and what international climate finance it can access.",
+                "what": "climate risk exposure",
+                "effect": "Farmers face floods and heatwaves of the kind cited at the summit, and the strength of global action could influence how severe these risks become.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Government finances",
+                "direction": "mixed",
+                "what": "climate finance access",
+                "effect": "The outcome could change how much international finance India can draw on for adaptation and clean energy, affecting pressure on public budgets.",
                 "basis": "inferred"
               },
               {
                 "group": "Power consumers",
                 "direction": "unclear",
-                "what": "electricity sector transition",
-                "effect": "Stronger commitments to curb emissions could speed India's shift from coal power, which may affect electricity costs and supply over time.",
+                "what": "energy transition pace",
+                "effect": "A stronger deal may add pressure to shift away from coal power, which could influence electricity investment and tariffs over time.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "The concrete actions, if any, agreed at the end of the formal COP31 discussions",
-                "why": "It would show whether leaders turned pressure into commitments that could affect India's climate plans.",
+                "what": "Adoption or collapse of a final COP31 agreement on slowing global warming",
+                "why": "It would show whether countries overcame the delays the UN climate chief warned about.",
+                "when": "",
+                "where": "UN Framework Convention on Climate Change (UNFCCC)"
+              },
+              {
+                "what": "Language in the final text on climate finance for developing countries",
+                "why": "It would indicate how much support India and similar countries could expect for adaptation and clean energy.",
                 "when": "",
                 "where": "UN Framework Convention on Climate Change (UNFCCC)"
               }
             ],
             "context": [
-              "UN climate conferences work by consensus among nearly every country, so agreements often reflect compromises between rich nations, fossil fuel producers and developing economies such as India.",
-              "India's power sector depends heavily on coal, and India argues that developed countries should finance much of the transition in poorer nations."
+              "Decisions at UN climate conferences are made by consensus, so a small number of countries can delay or dilute a final agreement.",
+              "India argues that wealthy countries bear greater responsibility for past emissions and should provide finance and technology to help developing countries cut emissions and adapt.",
+              "India is among the world's largest emitters in total, though low per person, and is highly exposed to heatwaves, floods and erratic monsoons."
             ],
             "terms": [
               {
                 "term": "COP31",
-                "meaning": "The 31st Conference of the Parties, the annual United Nations summit where countries negotiate action on climate change."
+                "meaning": "The 31st Conference of the Parties, the annual summit of countries that have signed the UN climate change treaty."
               }
             ],
             "frameworks": {
               "impact_chain": {
                 "chain": [
                   {
-                    "step": "Leaders open formal climate talks",
-                    "detail": "World leaders began formal discussions at the UN climate conference in Turkey. They hope to agree concrete actions after a year of deadly floods and heatwaves.",
+                    "step": "Leaders open COP31 after disaster year",
+                    "detail": "World leaders gathered in Turkey for COP31 after a year of deadly floods and heatwaves, seeking concrete actions to curb global warming. Their departure left negotiators to finish the deal.",
                     "basis": "reported"
                   },
                   {
-                    "step": "Pressure mounts for urgent action",
-                    "detail": "Leaders face mounting pressure and concerns that action on global warming is too slow. This raises expectations for firm commitments.",
+                    "step": "Delays threaten final agreement",
+                    "detail": "The UN climate chief warned that tactical delays could prevent a deal, while Guterres urged that climate action be central to global governance. Protesters also pressed for a swift agreement.",
                     "basis": "reported"
                   },
                   {
-                    "step": "Agreements set shared expectations",
-                    "detail": "Any concrete actions agreed could set new expectations on emissions cuts and climate finance. Countries, India included, may then reflect them in national plans.",
+                    "step": "Outcome sets expectations for national plans",
+                    "detail": "Whatever is agreed could shape what large emitters, including India, are expected to promise in emission cuts and what finance wealthy countries offer.",
                     "basis": "inferred"
                   },
                   {
-                    "step": "India's policies and funding shift",
-                    "detail": "India could adjust its energy transition targets or gain new finance. This may affect power generation and spending on climate adaptation.",
+                    "step": "Effect on India's climate policy and funding",
+                    "detail": "India's energy planning and adaptation spending may then adjust to the strength of the deal and the money attached to it.",
                     "basis": "inferred"
                   }
                 ],
-                "breaks_if": "The effect would not reach India if the talks end without concrete actions or new finance, leaving national commitments unchanged."
+                "breaks_if": "The talks end without agreement, or with vague language that sets no new expectations on emissions or finance, leaving India's existing climate policies unchanged."
+              },
+              "scenarios": {
+                "question": "Will COP31 negotiators reach a deal to slow global warming, or will tactical delays prevent an agreement?",
+                "scenarios": [
+                  {
+                    "name": "Deal agreed",
+                    "what": "Negotiators overcome delays and adopt an agreement on concrete actions to curb global warming before the conference closes.",
+                    "signal": "Conference organisers announce that a final decision text has been adopted by all parties.",
+                    "india_effect": "India could face firmer expectations to strengthen its climate plans, possibly alongside clearer commitments on finance for adaptation and clean energy."
+                  },
+                  {
+                    "name": "Delays block deal",
+                    "what": "Tactical delays, as the UN climate chief warned, leave the talks without a meaningful agreement to slow global warming.",
+                    "signal": "The talks overrun or close with key decisions postponed to a later conference.",
+                    "india_effect": "Pressure on India's emission plans may ease in the short term, but expected climate finance could be delayed while climate risks continue to grow."
+                  }
+                ]
               }
             }
           },
@@ -70748,6 +70979,265 @@
       "name": "Policy & Governance",
       "items": [
         {
+          "id": "s16zj8df",
+          "headline": "US envoy Kushner says he aims to broker Europe-Russia talks on Ukraine",
+          "url": "https://www.aljazeera.com/news/2026/11/14/us-envoy-kushner-says-he-aims-to-broker-europe-russia-talks-on-ukraine",
+          "source": "aljazeera",
+          "date": "2026-11-14T21:10:26.000Z",
+          "relevance": "medium",
+          "why": "US envoy Jared Kushner says Washington aims to broker direct talks between Europe and Russia and is preparing another round of trilateral peace talks on Ukraine. The war's course matters to India as a major buyer of Russian crude oil.",
+          "implications": [
+            "Bringing Europe into direct contact with Moscow would add a party whose sanctions on Russian energy are central to any settlement.",
+            "Any peace deal that eased sanctions could change the discounts and payment arrangements that Indian refiners have relied on when buying Russian oil.",
+            "Until talks produce results, Russian and Ukrainian strikes on each other's energy infrastructure may continue to add uncertainty to global oil prices that India pays."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-14T22:40:21.823Z",
+            "tier": "standard",
+            "primary": "escalation",
+            "complement": null,
+            "features": [
+              "armed_conflict",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The channel is India's large crude oil trade with Russia. These are only talks, so no change to supply, prices or sanctions has yet occurred."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Any effect depends on talks producing a ceasefire or sanctions changes, which would take further negotiating rounds to arrive."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "The account rests on two outlets citing Kushner on record, and no date, venue or European commitment to direct talks has been confirmed."
+            },
+            "outlets": 2,
+            "affected": [
+              {
+                "group": "Importers & traders",
+                "direction": "mixed",
+                "what": "Russian crude terms",
+                "effect": "Indian refiners buying Russian oil could see discounts and payment terms change if talks eventually lead to eased sanctions.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "fuel price pressure",
+                "effect": "Progress or collapse in talks may shift global oil prices, which can influence refiners' costs and petrol and diesel prices in India.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "The date and venue of the next round of US-Russia-Ukraine trilateral talks",
+                "why": "It would show whether the peace process is gaining momentum.",
+                "when": "",
+                "where": "US State Department"
+              },
+              {
+                "what": "A first direct meeting between European officials and Russian representatives",
+                "why": "It would show Europe entering talks that could eventually touch on energy sanctions.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "India has become one of the largest buyers of Russian crude oil since the war began, attracted by discounted prices, while Western sanctions have complicated shipping and payments.",
+              "India imports most of the crude oil it consumes, so supply disruptions or price swings linked to the war can feed through to refiners' costs and fuel prices.",
+              "India has consistently called for dialogue and diplomacy to end the war, while declining to join Western sanctions on Russia."
+            ],
+            "terms": [
+              {
+                "term": "trilateral talks",
+                "meaning": "Negotiations involving three parties, here the United States, Russia and Ukraine, aimed at ending the war."
+              }
+            ],
+            "frameworks": {
+              "escalation": {
+                "move": "none",
+                "rung": 6,
+                "current_rung": 6,
+                "previous_rung": null,
+                "development": "US envoy Jared Kushner said Washington aims to broker direct Europe-Russia engagement and is preparing the next round of trilateral peace talks.",
+                "evidence": "These reports describe only diplomatic plans and statements. No ceasefire, withdrawal or halt to the strikes on energy infrastructure that set the war at this level has been reported.",
+                "next_signals": [
+                  {
+                    "rung": 5,
+                    "signal": "Russia and Ukraine both stop striking power plants and oil depots, while other fighting continues."
+                  },
+                  {
+                    "rung": 7,
+                    "signal": "Either side launches a major new offensive or attacks spread to additional countries, widening the war beyond its current scope."
+                  }
+                ],
+                "india_channels": [
+                  "oil",
+                  "trade"
+                ],
+                "conflict": "wzti51f",
+                "applied": "none",
+                "from": 6
+              }
+            }
+          },
+          "conflict": "wzti51f",
+          "place": {
+            "name": "Washington",
+            "country": "United States",
+            "lat": 38.9,
+            "lon": -77,
+            "involves": [
+              "Russia",
+              "Ukraine"
+            ]
+          },
+          "reports": [
+            {
+              "source": "aljazeera",
+              "headline": "US envoy Kushner says he aims to broker Europe-Russia talks on Ukraine",
+              "url": "https://www.aljazeera.com/news/2026/11/14/us-envoy-kushner-says-he-aims-to-broker-europe-russia-talks-on-ukraine",
+              "date": "2026-11-14T21:10:26.000Z",
+              "kind": "hard",
+              "summary": "Europe's direct engagement with Moscow as part of Ukraine-Russia peace talks is edging closer to becoming a reality.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/afp_6af8c810ac51-1794689040.jpg?resize=1920%2C1440"
+            },
+            {
+              "source": "cbs",
+              "headline": "U.S. facilitating direct engagement between Europe and Russia",
+              "url": "https://www.cbsnews.com/news/us-europe-russia-engagement-ukraine-war/",
+              "date": "2026-11-14T22:07:08.000Z",
+              "kind": "hard",
+              "summary": "President Trump's senior envoy and son-in-law, Jared Kushner, said they are also preparing for the next round of trilateral talks.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://assets2.cbsnewsstatic.com/hub/i/r/2026/11/14/6b7c9a1c-cf22-4bc0-a784-14264f608fb4/thumbnail/1200x630/c1490807d8376833ebe37ffd1e251ffa/ap26316810454758.jpg"
+            }
+          ],
+          "finChecked": true,
+          "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/afp_6af8c810ac51-1794689040.jpg?resize=1920%2C1440",
+          "thread": "tq9ru94"
+        },
+        {
+          "id": "ssgc3a0",
+          "headline": "Macron says limiting Ukraine aid would pave way to 'another war'",
+          "url": "https://www.france24.com/en/europe/20261114-macron-says-limiting-ukraine-aid-would-pave-way-to-another-war",
+          "source": "france24",
+          "date": "2026-11-14T20:15:43.000Z",
+          "relevance": "medium",
+          "image": "https://s.france24.com/media/display/b003a0ce-ce6b-11f1-a0f5-23d55109f116/w:1024/p:16x9/AP26295395173953-1.jpg",
+          "why": "French President Emmanuel Macron warned that limiting aid to Ukraine would force an \"unjust peace\" and risk another war, as the United States pushes talks between Ukraine and Moscow. Outcomes could affect India through oil and trade.",
+          "implications": [
+            "Western disagreement over aid could shape the terms of any settlement, and those terms would decide whether sanctions and trade restrictions on Russia stay in place.",
+            "Indian refiners and exporters could face changed conditions if talks lead to a settlement or the war drags on."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-14T22:36:51.346Z",
+            "tier": "quick",
+            "primary": "escalation",
+            "complement": null,
+            "features": [
+              "armed_conflict",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "The reports describe a statement and diplomatic efforts, with no direct mechanism for India. Any link would run indirectly through oil supply and trade conditions if the talks changed sanctions."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Talks are at an early stage and any settlement or change in sanctions would take time to affect supply and prices."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "The Macron statement is on record in a single France 24 report, and the progress of the US-led negotiation effort is not detailed."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "crude supply and fuel prices",
+                "effect": "A settlement or a prolonged war could change sanctions and the flow of Russian crude, which could in turn influence fuel costs in India.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Progress of the US-led effort to negotiate between Ukraine and Moscow",
+                "why": "It would show whether the war is moving towards a settlement or continuing at its current level.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "India imports most of its crude oil, and Russia has become a major supplier to Indian refiners in recent years.",
+              "Wars between major energy producers affect global oil prices and shipping routes, which reach Indian households through fuel and food costs."
+            ],
+            "terms": [],
+            "frameworks": {
+              "escalation": {
+                "move": "none",
+                "rung": 6,
+                "current_rung": 6,
+                "previous_rung": null,
+                "development": "French President Macron warned that limiting aid to Ukraine would force an unjust peace and risk another war, while the United States pursues talks between Ukraine and Moscow.",
+                "evidence": "The report describes a statement and diplomatic efforts, not a new attack or a ceasefire in force. Talks and warnings do not move the war from its current rung.",
+                "next_signals": [
+                  {
+                    "rung": 5,
+                    "signal": "Russia and Ukraine stop striking each other's power infrastructure, with a ceasefire confirmed to be in force."
+                  },
+                  {
+                    "rung": 7,
+                    "signal": "Direct combat breaks out between Russian forces and the forces of a NATO member, widening the war."
+                  }
+                ],
+                "india_channels": [
+                  "oil",
+                  "trade"
+                ],
+                "conflict": "wzti51f",
+                "applied": "none",
+                "from": 6
+              }
+            }
+          },
+          "conflict": "wzti51f",
+          "place": {
+            "name": "Paris",
+            "country": "France",
+            "lat": 48.85,
+            "lon": 2.35,
+            "involves": [
+              "Ukraine",
+              "Russia",
+              "United States"
+            ]
+          },
+          "reports": [
+            {
+              "source": "france24",
+              "headline": "Macron says limiting Ukraine aid would pave way to 'another war'",
+              "url": "https://www.france24.com/en/europe/20261114-macron-says-limiting-ukraine-aid-would-pave-way-to-another-war",
+              "date": "2026-11-14T20:15:43.000Z",
+              "kind": "hard",
+              "summary": "French President Emmanuel Macron on Saturday warned that limiting aid to Ukraine would force Kyiv into an \"unjust peace\" and risk another war. His statement comes as the United States pushes ahead with efforts to negotiate between Ukraine and Moscow.",
+              "summaryV": 3,
+              "image": "https://s.france24.com/media/display/b003a0ce-ce6b-11f1-a0f5-23d55109f116/w:1024/p:16x9/AP26295395173953-1.jpg"
+            }
+          ],
+          "finChecked": true,
+          "thread": "tq9ru94"
+        },
+        {
           "id": "s1ebdwea",
           "headline": "Trump-Xi-Putin summit under discussion as US allies watch on",
           "url": "https://www.scmp.com/plus/news/china/diplomacy/article/3374199/trump-xi-putin-summit-under-discussion-us-allies-watch",
@@ -70755,140 +71245,139 @@
           "date": "2026-11-12T09:07:22.000Z",
           "relevance": "medium",
           "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/12/3653edef-0781-45ef-be84-50b97230a4e5_0b5d1ea3.jpg?itok=DVHYr-Mj&v=1794473025",
-          "why": "The White House has confirmed that Trump, Xi Jinping and Vladimir Putin will meet next week on the sidelines of the Apec summit in Shenzhen to discuss the Iran war and nuclear arms reduction. Progress on Iran could affect India's Gulf oil supplies.",
+          "why": "The White House confirmed that Trump, Xi and Putin will hold an unprecedented three-way meeting at the APEC summit in Shenzhen next week, covering the Iran war and nuclear arms. India could be affected if the talks shift the Iran war, which bears on Gulf oil and shipping.",
           "implications": [
-            "Any step towards ending the Iran war could ease the risk to Gulf oil supply and shipping that India depends on, while a failed meeting would leave that risk unchanged.",
-            "Millions of Indians work in Gulf countries, so steps that reduce conflict in the region could lower the safety risk faced by these workers and their families.",
-            "A closer working relationship between Washington, Beijing and Moscow could complicate India's practice of balancing ties with the United States and Russia while managing its rivalry with China.",
-            "China is weighing its image carefully as host, since the meeting's optics are expected to favour Russia, and that could limit what Beijing is prepared to agree to."
+            "Al Jazeera reports that the White House says Trump will discuss the Iran war, so any progress or deadlock could affect the security of energy and shipping routes in the Gulf.",
+            "Trump also wants to discuss reducing nuclear weapons, which would be the first formal trilateral effort of its kind between the three nuclear powers.",
+            "DW reports that China is treading carefully as host because the meeting's optics may favour Moscow, which could test Beijing's international image.",
+            "US allies are watching closely, according to the South China Morning Post, because a deal among the three leaders could be struck without their direct involvement."
           ],
           "analysis": {
             "v": 3,
-            "at": "2026-11-14T10:44:20.558Z",
+            "at": "2026-11-14T22:40:21.824Z",
             "tier": "deep",
             "primary": "impact_chain",
             "complement": "scenarios",
             "features": [
-              "fast_moving",
               "pending_outcome"
             ],
             "exposure": {
               "level": "medium",
-              "reason": "The meeting reaches India mainly through the Iran war's effect on Gulf oil and on Indian workers there. The talks have no guaranteed outcome, so exposure is medium."
+              "reason": "The summit reaches India mainly through diplomacy and through any effect on the Iran war, which bears on Gulf oil and shipping, but no concrete outcome has yet been reported."
             },
             "horizon": {
               "value": "weeks",
-              "reason": "The meeting takes place next week, and any agreement on the Iran war could shift oil-market expectations within weeks."
+              "reason": "The meeting is scheduled for next week, and any effect on the Iran war or energy markets would follow its outcome."
             },
             "confidence": {
               "level": "high",
-              "reason": "The White House confirmed the meeting on record, and the South China Morning Post, Al Jazeera and BBC News all report it; its outcome is still unknown."
+              "reason": "The South China Morning Post, Al Jazeera, BBC News and CBS News report the meeting, which the White House confirmed on record; its outcomes are not yet known."
             },
-            "outlets": 4,
+            "outlets": 5,
             "affected": [
               {
                 "group": "Fuel & LPG users",
                 "direction": "unclear",
-                "what": "fuel prices",
-                "effect": "If the leaders agree steps to calm the Iran war, crude prices could ease and lower refiners' costs, but a breakdown could keep prices elevated.",
+                "what": "fuel price pressure",
+                "effect": "If the leaders make progress on the Iran war, pressure on Gulf oil supplies could ease, which may in time affect petrol, diesel and cooking gas prices in India.",
                 "basis": "inferred"
               },
               {
                 "group": "Gulf & overseas workers and families",
                 "direction": "unclear",
-                "what": "regional safety",
-                "effect": "Progress on the Iran war could reduce the security risks facing Indians working in the Gulf, while no progress would leave those risks in place.",
+                "what": "regional security outlook",
+                "effect": "Indian workers in the Gulf and their families could see the regional security situation change if the summit shifts the course of the Iran war.",
                 "basis": "inferred"
               },
               {
                 "group": "Government finances",
                 "direction": "unclear",
                 "what": "oil import bill",
-                "effect": "Changes in oil prices driven by the Iran war could raise or lower India's import bill and the cost of any fuel subsidies.",
+                "effect": "Changes in crude prices after the summit may raise or lower India's oil import bill, which affects subsidy spending and the current account.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "The Trump, Xi and Putin meeting on the sidelines of the Apec summit in Shenzhen",
-                "why": "Whether it takes place as scheduled would show how far the three powers are willing to engage directly.",
+                "what": "The Trump-Xi-Putin meeting on the sidelines of the APEC summit in Shenzhen",
+                "why": "It will show whether the three leaders agree on any steps on the Iran war or nuclear arms.",
                 "when": "next week",
                 "where": "White House"
               },
               {
-                "what": "Any joint statement or agreed steps on the Iran war after the meeting",
-                "why": "Concrete steps would indicate whether risks to Gulf oil supply and to Indian workers in the region may ease.",
+                "what": "Official readouts from Washington, Beijing and Moscow after the trilateral meeting",
+                "why": "Comparing the three accounts will show whether there is a shared position or only separate statements.",
                 "when": "next week",
                 "where": "White House"
               },
               {
-                "what": "Any announcement on the reduction of nuclear weapons by the three leaders",
-                "why": "It would signal whether the meeting produced broader cooperation between the powers whose rivalries shape India's strategic choices.",
+                "what": "Any announcement on the Iran war emerging from the meeting",
+                "why": "It would indicate whether risks to Gulf oil and shipping routes that India relies on are easing or persisting.",
                 "when": "next week",
-                "where": "White House"
+                "where": ""
               }
             ],
             "context": [
-              "India imports most of the crude oil it uses, and a large share comes from Gulf producers whose exports pass through waters exposed to any conflict involving Iran.",
-              "Conflict in the Gulf usually pushes up oil prices and shipping insurance costs, which raises India's import bill and can feed through to fuel prices and inflation.",
-              "India has a strategic partnership with the United States, long-standing defence ties with Russia and an unresolved border dispute with China."
+              "India imports most of its crude oil, much of it from Gulf producers, and millions of Indians work in Gulf countries, so conflict involving Iran can affect India's fuel costs, shipping and diaspora.",
+              "India is not a member of the Asia-Pacific Economic Cooperation (APEC) forum, so it has no seat at meetings held on its sidelines.",
+              "India balances close ties with the United States, long-standing defence and energy links with Russia, and a tense relationship with China, so closer coordination among the three matters to its diplomacy."
             ],
             "terms": [
               {
-                "term": "Apec",
-                "meaning": "Asia-Pacific Economic Cooperation, a forum of Pacific Rim economies whose annual leaders' summit often hosts side meetings between heads of government."
+                "term": "APEC",
+                "meaning": "Asia-Pacific Economic Cooperation, a forum of Pacific Rim economies that holds an annual leaders' summit, often used for side meetings."
               },
               {
                 "term": "trilateral",
-                "meaning": "A meeting or agreement involving three countries, here the United States, China and Russia."
+                "meaning": "A meeting or agreement involving three countries at the same time."
               }
             ],
             "frameworks": {
               "impact_chain": {
                 "chain": [
                   {
-                    "step": "White House confirms three-way meeting",
-                    "detail": "The White House confirmed that Trump, Xi and Putin will meet next week on the sidelines of the Apec summit in Shenzhen, following earlier discussion of the possibility.",
+                    "step": "White House confirms three-way summit",
+                    "detail": "The White House confirmed that Trump, Xi and Putin will meet on the sidelines of the APEC summit in Shenzhen next week, the first formal trilateral of its kind.",
                     "basis": "reported"
                   },
                   {
                     "step": "Iran war and nuclear arms on agenda",
-                    "detail": "Trump plans to discuss the Iran war and the reduction of nuclear weapons, which places Gulf security on the table among the three major powers.",
+                    "detail": "The White House says Trump plans to discuss the Iran war and the reduction of nuclear weapons, putting the conflict with Iran at the centre of great-power talks.",
                     "basis": "reported"
                   },
                   {
-                    "step": "Gulf risk outlook may shift",
-                    "detail": "Agreement on steps to contain the Iran war could reduce perceived risks to Gulf oil supply and shipping, while a failed meeting could leave those risks unchanged.",
+                    "step": "Gulf oil and shipping risk may shift",
+                    "detail": "Any agreement or deadlock on the Iran war could change perceived risks to Gulf oil production and shipping, which may move crude prices and freight costs.",
                     "basis": "inferred"
                   },
                   {
-                    "step": "India's oil bill and workers affected",
-                    "detail": "Lower Gulf risk could ease crude prices and the safety concerns facing Indian workers in the region, while continued conflict could keep both pressures in place.",
+                    "step": "Indian import costs could change",
+                    "detail": "Because India imports most of its crude, shifts in oil prices and shipping risk could feed into its import bill and eventually into domestic fuel prices.",
                     "basis": "inferred"
                   }
                 ],
-                "breaks_if": "The effect would not reach India if the meeting produces no concrete action on the Iran war, or if the parties fighting in that war ignore any agreement among the three leaders."
+                "breaks_if": "The effect would not reach India if the meeting produces no change in the Iran war and oil and shipping markets stay unaffected by its outcome."
               },
               "scenarios": {
-                "question": "Will the Trump, Xi and Putin meeting in Shenzhen produce agreed steps on the Iran war or on reducing nuclear weapons?",
+                "question": "Will the Trump-Xi-Putin meeting in Shenzhen produce agreement on the Iran war or on reducing nuclear weapons?",
                 "scenarios": [
                   {
-                    "name": "Agreement on Iran war",
-                    "what": "The three leaders agree on steps intended to de-escalate or end the Iran war, using the meeting as a joint diplomatic push.",
-                    "signal": "A joint or White House statement announces specific measures on the Iran war after the Shenzhen meeting.",
-                    "india_effect": "Reduced conflict in the Gulf could ease pressure on oil prices and shipping costs for India and lower risks to Indian workers, though effects would depend on implementation."
+                    "name": "Steps on Iran war",
+                    "what": "The three leaders agree on a shared approach to the Iran war, such as backing talks or measures to contain the fighting.",
+                    "signal": "Joint or matching statements from Washington, Beijing and Moscow would refer to the Iran war after the meeting.",
+                    "india_effect": "Reduced risk in the Gulf could ease pressure on oil and shipping routes that India depends on, though the effect on fuel prices may take time to appear."
                   },
                   {
-                    "name": "Nuclear arms framework only",
-                    "what": "The leaders announce talks or a framework on reducing nuclear weapons but reach no concrete agreement on the Iran war.",
-                    "signal": "Statements after the meeting focus on nuclear arms reduction and say little or nothing definite about Iran.",
-                    "india_effect": "Gulf oil and worker-safety risks for India would likely remain unchanged, while closer US, Chinese and Russian coordination could still bear on India's diplomatic balancing."
+                    "name": "Nuclear arms framework",
+                    "what": "The leaders agree to begin work on a treaty or framework for reducing nuclear weapons, a priority topic named for the meeting.",
+                    "signal": "The White House would announce follow-up nuclear arms talks or a treaty process involving China and Russia.",
+                    "india_effect": "A three-way arms control process could reshape the global nuclear order, which India, as a nuclear-armed state outside such frameworks, may need to respond to diplomatically."
                   },
                   {
-                    "name": "Meeting yields no outcome",
-                    "what": "The meeting takes place largely for its symbolism, with no agreed steps on either the Iran war or nuclear weapons.",
-                    "signal": "The leaders issue no joint statement, or each side describes the meeting differently afterwards.",
-                    "india_effect": "The risks the Iran war poses to India's oil supply and its Gulf workforce would continue at their current level."
+                    "name": "No concrete outcome",
+                    "what": "The meeting takes place but ends without agreement on the Iran war or nuclear arms, leaving existing tensions in place.",
+                    "signal": "Post-meeting readouts would describe only general discussions, with no joint statement or follow-up process announced.",
+                    "india_effect": "Uncertainty around the Iran war would persist, which could keep Gulf oil and shipping risks unresolved for India."
                   }
                 ]
               }
@@ -83773,14 +84262,14 @@
   "source": "BBC News & The Guardian & NPR & Al Jazeera & MercoPress & ABC News & The New York Times & CNBC & CBS News & DW & France 24 & Africanews & South China Morning Post & The Hindu & Mint & The Indian Express",
   "lastRun": {
     "filter": {
-      "judged": 102,
-      "kept": 13,
+      "judged": 43,
+      "kept": 5,
       "guarded": 0
     },
     "health": {
       "day": "2026-11-14",
-      "newStories24h": 12,
-      "keepRate2d": 0.13
+      "newStories24h": 10,
+      "keepRate2d": 0.129
     },
     "wars": {
       "linked": 0,
@@ -83793,49 +84282,43 @@
       "waiting": 0
     },
     "skipped": {
-      "since": "2026-11-14T10:44:36.445Z",
+      "since": "2026-11-14T18:21:44.268Z",
       "counts": {
-        "video_audio": 1,
-        "section": 13,
-        "live_blog": 3
+        "section": 10,
+        "video_audio": 1
       },
       "examples": {
+        "section": [
+          "'Can you believe it?': SpaceX catches part of its Starship rocket on return to Earth",
+          "Philippines’ Carmelle wins first Eurovision contest in Asia",
+          "Ronaldo-less Portugal thrashed 4-1 by Denmark in the Nations League",
+          "US flights resume after ageing technology blamed for outage",
+          "India’s Assam state demolishes homes of 132 Muslim families"
+        ],
         "video_audio": [
           "Watch: Cruise ship overturns after collision with tanker in New Orleans"
-        ],
-        "section": [
-          "Rising costs and arrests fuel protests in Central African Republic",
-          "Myanmar airstrike kills 12 at displacement camp in Rakhine state",
-          "Jerusalem Daily: Israeli forces occupy Palestinian-American’s home",
-          "Empower conference: officials and youth discuss peace and security",
-          "Spain vs England: UEFA Nations League – predictions, how to watch, teams"
-        ],
-        "live_blog": [
-          "Portugal vs Denmark LIVE: UEFA Nations League",
-          "Asian love ballads test Eurovision’s winning song formula.",
-          "Here’s the latest."
         ]
       }
     },
     "finance": {
       "moved": 0,
-      "checked": 1
+      "checked": 2
     },
-    "analysed": 102,
-    "added": 1,
-    "merged": 12,
-    "rejected": 89,
+    "analysed": 43,
+    "added": 3,
+    "merged": 2,
+    "rejected": 38,
     "failedBatches": 0,
     "feeds": {
       "bbc": {
         "feedsOk": 6,
         "feedsFailed": 0,
-        "items": 154
+        "items": 152
       },
       "guardian": {
         "feedsOk": 7,
         "feedsFailed": 0,
-        "items": 204
+        "items": 203
       },
       "npr": {
         "feedsOk": 4,
@@ -83845,7 +84328,7 @@
       "aljazeera": {
         "feedsOk": 1,
         "feedsFailed": 0,
-        "items": 16
+        "items": 14
       },
       "mercopress": {
         "feedsOk": 3,
@@ -83860,7 +84343,7 @@
       "nyt": {
         "feedsOk": 5,
         "feedsFailed": 0,
-        "items": 194
+        "items": 197
       },
       "cnbc": {
         "feedsOk": 3,
@@ -83870,7 +84353,7 @@
       "cbs": {
         "feedsOk": 2,
         "feedsFailed": 0,
-        "items": 45
+        "items": 46
       },
       "dw": {
         "feedsOk": 3,
@@ -83890,22 +84373,22 @@
       "scmp": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 142
+        "items": 139
       }
     },
     "shareImages": {
-      "tried": 0,
-      "found": 0,
+      "tried": 2,
+      "found": 2,
       "summaries": 0
     },
     "threads": {
-      "assigned": 1,
+      "assigned": 3,
       "created": 0,
       "failedBatches": 0
     },
     "summaries": {
-      "written": 1,
-      "due": 1
+      "written": 2,
+      "due": 2
     },
     "kinds": {
       "labelled": 0,
@@ -83913,53 +84396,71 @@
       "failedBatches": 0
     },
     "frames": {
-      "done": 0,
-      "waiting": 6,
-      "failedBatches": 0,
-      "budgetStopped": true
+      "done": 6,
+      "waiting": 1,
+      "failedBatches": 0
     },
     "stats": {
       "searched": 1,
       "found": 0,
-      "reused": 1,
-      "none": 0,
+      "reused": 0,
+      "none": 1,
       "failed": 0,
-      "proposed": 0,
-      "droppedPoints": 0,
-      "pagesFetched": 0,
+      "proposed": 12,
+      "droppedPoints": 12,
+      "pagesFetched": 1,
       "samples": [
         {
-          "headline": "Trump-Xi-Putin summit under discussion as US allies watch on",
-          "result": "reused saved series"
+          "headline": "Black Sea now the world's deadliest waterway as Russia tests NATO limits",
+          "result": "no figure found on an official page",
+          "proposed": 12,
+          "checked": 0,
+          "pagesFetched": 1
         }
       ]
     },
     "models": {
       "filter": {
         "model": "claude-haiku-5-5",
-        "calls": 8,
-        "inputTokens": 42001,
-        "outputTokens": 18192,
-        "cost": 0.0133
+        "calls": 10,
+        "inputTokens": 27363,
+        "outputTokens": 8820,
+        "cost": 0.007
+      },
+      "analysis_quick": {
+        "model": "claude-sonnet-5-5",
+        "calls": 2,
+        "inputTokens": 7399,
+        "outputTokens": 6337,
+        "cost": 0.0781
+      },
+      "stats": {
+        "model": "claude-sonnet-5-5",
+        "calls": 1,
+        "inputTokens": 128185,
+        "outputTokens": 1897,
+        "searches": 2,
+        "fetches": 2,
+        "cost": 0.2953
       },
       "analysis": {
         "model": "claude-opus-5-5",
-        "calls": 1,
-        "inputTokens": 6054,
-        "outputTokens": 10244,
-        "cost": 0.2291
+        "calls": 3,
+        "inputTokens": 15229,
+        "outputTokens": 16692,
+        "cost": 0.3948
       },
       "threads": {
         "model": "claude-sonnet-5-5",
-        "calls": 2,
-        "inputTokens": 10842,
-        "outputTokens": 991,
-        "cost": 0.0316
+        "calls": 3,
+        "inputTokens": 13829,
+        "outputTokens": 1865,
+        "cost": 0.0463
       }
     },
     "spend": {
-      "thisDesk": 0.274,
-      "today": 3.5305,
+      "thisDesk": 0.8217,
+      "today": 0.8217,
       "cap": 6
     }
   },
