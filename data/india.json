@@ -2,12 +2,213 @@
   "schema": 4,
   "region": "India",
   "since": "2026-10-02",
-  "updatedAt": "2026-11-15T16:31:52.698Z",
+  "updatedAt": "2026-11-15T23:01:54.644Z",
   "sectors": [
     {
       "id": "energy",
       "name": "Energy",
       "items": [
+        {
+          "id": "s120exzv",
+          "headline": "Ukraine says military Starlink disrupted again as US envoys meet Putin in Moscow",
+          "url": "https://www.bbc.co.uk/news/articles/cwrkgmymk55zo",
+          "source": "bbc",
+          "date": "2026-11-12T16:31:12.000Z",
+          "relevance": "medium",
+          "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/0196/live/ef110310-de9c-11f1-a701-fddedf244c16.jpg",
+          "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/0196/live/ef110310-de9c-11f1-a701-fddedf244c16.jpg",
+          "why": "US envoys met Putin in Moscow and Zelensky in Dublin to push for a deal, while Ukraine says restrictions on its military satellite internet hamper its air defence. Any deal or continued strikes could affect Russian oil flows that India relies on.",
+          "implications": [
+            "Ukraine says slower satellite internet makes it harder to intercept Russian strikes, which could leave its infrastructure more exposed while the two sides trade attacks on energy facilities.",
+            "The war has already seen Ukrainian drone strikes on Russian oil depots. Continued attacks of this kind could disrupt Russian fuel exports and affect prices in markets where India buys crude.",
+            "Zelensky has publicly urged the US and Elon Musk to lift the restrictions. This shows how far Kyiv's battlefield capability depends on a private American company's decisions.",
+            "A US-brokered deal could eventually change Western sanctions on Russia, which shape the discounts and payment terms available to Indian refiners buying Russian crude."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-15T23:01:54.602Z",
+            "tier": "deep",
+            "primary": "escalation",
+            "complement": "scenarios",
+            "features": [
+              "disruption",
+              "armed_conflict",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "The reported events reach India only indirectly, through any later effect of peace talks or energy strikes on Russian oil exports and sanctions. Nothing reported acts on India directly."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Any deal, and any resulting change to sanctions or Russian oil flows, would take months to negotiate and feed through to India."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "The BBC and CBS report the envoys' meetings and Zelensky's on-record appeal; the throttling rests on Ukrainian claims that SpaceX has not confirmed."
+            },
+            "outlets": 2,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "Russian crude supply conditions",
+                "effect": "Continued strikes on energy sites or a peace deal could change Russian oil export volumes and sanctions, which may affect India's crude costs and eventually fuel prices.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Government finances",
+                "direction": "unclear",
+                "what": "oil import bill",
+                "effect": "A change in the discounts on Russian crude, driven by a deal or by sanctions, could alter what India spends on oil imports.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "SpaceX or the US government restores full speed to Ukraine's military satellite terminals",
+                "why": "Restored speeds would show whether Washington is using the restrictions as leverage in its push for a deal.",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "Any announcement of a peace framework following the US envoys' meetings with Putin and Zelensky",
+                "why": "A framework would indicate whether sanctions on Russia, and with them Russian oil trade terms, could change.",
+                "when": "",
+                "where": "White House"
+              },
+              {
+                "what": "New strikes by either side on oil depots or power infrastructure",
+                "why": "Further strikes would show that the infrastructure war is continuing despite diplomacy, with possible effects on Russian fuel exports.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "India has long-standing defence ties with Russia and growing strategic ties with the US, and it has avoided taking sides in the war.",
+              "Ukraine relies heavily on satellite internet for battlefield communications and drone operations, because ground networks are vulnerable to Russian strikes."
+            ],
+            "terms": [
+              {
+                "term": "Starshield",
+                "meaning": "The government and military version of SpaceX's Starlink satellite internet network, built for defence and security users."
+              },
+              {
+                "term": "Starlink",
+                "meaning": "SpaceX's network of low-orbit satellites that provides internet access to terminals on the ground, including in war zones."
+              }
+            ],
+            "frameworks": {
+              "escalation": {
+                "move": "none",
+                "rung": 6,
+                "current_rung": 6,
+                "previous_rung": null,
+                "development": "US envoys Jared Kushner and Steve Witkoff held talks with Putin in Moscow and Zelensky in Dublin, while Ukraine said speed restrictions on its military satellite internet are hampering interception of Russian strikes.",
+                "evidence": "The reports describe talks and complaints about throttled satellite service, not a new kind of attack or any halt in fighting. The war stays at the level of mutual strikes on critical infrastructure.",
+                "next_signals": [
+                  {
+                    "rung": 5,
+                    "signal": "A ceasefire on energy infrastructure takes effect, and strikes on power plants and oil depots are reported to have stopped."
+                  },
+                  {
+                    "rung": 7,
+                    "signal": "Either side declares general mobilisation or launches a new large-scale ground offensive across several fronts."
+                  }
+                ],
+                "india_channels": [
+                  "oil",
+                  "trade"
+                ],
+                "conflict": "wzti51f",
+                "applied": "none",
+                "from": 6
+              },
+              "scenarios": {
+                "question": "Will the US-led diplomacy with Moscow and Kyiv produce a deal, and will satellite restrictions on Ukraine be lifted?",
+                "scenarios": [
+                  {
+                    "name": "US-brokered deal agreed",
+                    "what": "The talks led by Kushner and Witkoff produce an agreement between Russia and Ukraine that the US has been pushing for.",
+                    "signal": "The US, Russia and Ukraine announce agreed terms after further envoy meetings.",
+                    "india_effect": "A deal could eventually lead to changes in sanctions on Russia, which may alter the discounts and terms on Russian crude bought by Indian refiners."
+                  },
+                  {
+                    "name": "Restrictions lifted, fighting continues",
+                    "what": "The US and Musk lift the speed restrictions, as Zelensky has demanded, and Ukraine's interception capability recovers while strikes continue.",
+                    "signal": "Ukrainian officials report that military satellite internet speeds have returned to normal.",
+                    "india_effect": "Continued infrastructure strikes could keep Russian fuel exports uncertain, which may keep some volatility in oil markets India depends on."
+                  },
+                  {
+                    "name": "Talks stall under pressure",
+                    "what": "The diplomacy fails to produce a deal, and the restrictions stay in place while both sides keep striking energy infrastructure.",
+                    "signal": "Further Ukrainian complaints about throttling coincide with no announced progress from the envoys.",
+                    "india_effect": "The present situation for India's purchases of Russian crude would likely persist, with continuing risk from attacks on Russian oil facilities."
+                  }
+                ]
+              }
+            },
+            "reading": [
+              {
+                "headline": "What Trump’s midterms debacle could mean for US support for Ukraine",
+                "url": "https://www.france24.com/en/europe/20261106-what-trump-s-midterms-debacle-could-mean-for-us-support-for-ukraine",
+                "source": "france24",
+                "date": "2026-11-06T18:49:19.000Z"
+              },
+              {
+                "headline": "Former U.S. ambassador on Trump's recent moves to embrace Russia",
+                "url": "https://www.npr.org/2026/10/20/nx-s1-6007865/former-u-s-ambassador-on-trumps-recent-moves-to-embrace-russia",
+                "source": "npr",
+                "date": "2026-10-20T11:03:48.000Z"
+              }
+            ]
+          },
+          "conflict": "wzti51f",
+          "place": {
+            "name": "Moscow",
+            "country": "Russia",
+            "lat": 55.75,
+            "lon": 37.62,
+            "involves": [
+              "Ukraine",
+              "United States"
+            ]
+          },
+          "reports": [
+            {
+              "source": "bbc",
+              "headline": "Ukraine says military Starlink disrupted again as US envoys meet Putin in Moscow",
+              "url": "https://www.bbc.co.uk/news/articles/cwrkgmymk55zo",
+              "date": "2026-11-12T16:31:12.000Z",
+              "kind": "hard",
+              "summary": "Later on Thursday, Jared Kushner and Steve Witkoff will travel to Dublin to meet Ukraine's Volodymyr Zelensky.",
+              "summaryV": 3,
+              "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/0196/live/ef110310-de9c-11f1-a701-fddedf244c16.jpg",
+              "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/0196/live/ef110310-de9c-11f1-a701-fddedf244c16.jpg"
+            },
+            {
+              "source": "cbs",
+              "headline": "Ukraine says Starshield throttled again as U.S. pushes for a deal",
+              "url": "https://www.cbsnews.com/news/russia-ukraine-war-elon-musk-starshield-limited-us-witkoff-kushner-diplomacy/",
+              "date": "2026-11-12T16:56:29.000Z",
+              "kind": "hard",
+              "summary": "Ukraine says its ability to intercept Russian strikes is again hampered by speed restrictions on Musk's Starshield network amid U.S.-led diplomacy.",
+              "summaryV": 3
+            },
+            {
+              "source": "bbc",
+              "headline": "Zelensky urges US and Musk to lift Starlink restrictions and be on 'right side of history'",
+              "url": "https://www.bbc.co.uk/news/articles/c6m25zg88k45o",
+              "date": "2026-11-15T19:32:39.000Z",
+              "kind": "hard",
+              "summary": "The Ukrainian president says the slowed-down internet is making it difficult to stop Russian attacks.",
+              "summaryV": 3,
+              "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8bb5/live/938b6e20-e114-11f1-a7db-d90284d21c62.jpg",
+              "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/8bb5/live/938b6e20-e114-11f1-a7db-d90284d21c62.jpg"
+            }
+          ],
+          "thread": "tq9ru94"
+        },
         {
           "id": "s87nggb",
           "headline": "Ukrainian drones strike Russia's petrochemical capital in overnight assault",
@@ -2601,160 +2802,6 @@
             }
           ],
           "thread": "t1q27ee0"
-        },
-        {
-          "id": "s120exzv",
-          "headline": "Ukraine says military Starlink disrupted again as US envoys meet Putin in Moscow",
-          "url": "https://www.bbc.co.uk/news/articles/cwrkgmymk55zo",
-          "source": "bbc",
-          "date": "2026-11-12T16:31:12.000Z",
-          "relevance": "medium",
-          "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/0196/live/ef110310-de9c-11f1-a701-fddedf244c16.jpg",
-          "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/0196/live/ef110310-de9c-11f1-a701-fddedf244c16.jpg",
-          "why": "US envoys met Vladimir Putin in Moscow and were due to meet Volodymyr Zelensky in Dublin, as Ukraine said its military satellite link was throttled again. The talks could shape the Russian oil flows India relies on.",
-          "implications": [
-            "Ukraine says speed limits on the Starshield satellite network hamper its ability to intercept Russian strikes, which could leave more of its infrastructure exposed and prolong the energy war.",
-            "If US-led diplomacy produced a settlement, Western sanctions on Russian oil could change, which may alter the discounts and payment arrangements Indian refiners face on Russian crude.",
-            "India keeps close ties with both Moscow and Washington, so progress or failure in these talks could change the diplomatic pressure it faces over its Russian oil purchases."
-          ],
-          "analysis": {
-            "v": 3,
-            "at": "2026-11-13T20:03:40.782Z",
-            "tier": "standard",
-            "primary": "escalation",
-            "complement": null,
-            "features": [
-              "armed_conflict",
-              "pending_outcome"
-            ],
-            "exposure": {
-              "level": "medium",
-              "reason": "The war reaches India mainly through its large purchases of Russian crude and the sanctions around them, but these talks have not yet changed that trade."
-            },
-            "horizon": {
-              "value": "months",
-              "reason": "Any effect depends on whether the talks produce an agreement that changes sanctions or oil flows, which would take months to reach India."
-            },
-            "confidence": {
-              "level": "low",
-              "reason": "BBC News and CBS News report the envoy meetings, but the throttling rests on Ukraine's own claim, and the content of the talks has not been disclosed."
-            },
-            "outlets": 2,
-            "affected": [
-              {
-                "group": "Importers & traders",
-                "direction": "unclear",
-                "what": "Russian crude terms",
-                "effect": "Indian refiners buying Russian crude could see discounts and sanctions risk change if the US-led talks lead to a settlement or collapse.",
-                "basis": "inferred"
-              },
-              {
-                "group": "Fuel & LPG users",
-                "direction": "unclear",
-                "what": "fuel cost pressure",
-                "effect": "Continued strikes on energy facilities, or an agreement ending them, could move global fuel prices that feed into India's import costs.",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "The meeting between US envoys Jared Kushner and Steve Witkoff and Volodymyr Zelensky in Dublin",
-                "why": "Its outcome would show whether the US-led push is moving towards a deal that could affect sanctions on Russian oil.",
-                "when": "2026-11-12",
-                "where": ""
-              },
-              {
-                "what": "Whether full speeds are restored on Ukraine's military Starshield connections",
-                "why": "Restored service would ease Ukraine's air defence problems; continued limits could expose more infrastructure to Russian strikes.",
-                "when": "",
-                "where": ""
-              }
-            ],
-            "context": [
-              "Strikes on refineries, oil depots and power plants can cut Russia's fuel exports and unsettle global diesel and crude markets, which affects prices paid by importing countries such as India."
-            ],
-            "terms": [
-              {
-                "term": "Starshield",
-                "meaning": "A satellite communications service run by Elon Musk's SpaceX for government and military users, related to its commercial Starlink internet network."
-              }
-            ],
-            "frameworks": {
-              "escalation": {
-                "move": "none",
-                "rung": 6,
-                "current_rung": 6,
-                "previous_rung": null,
-                "development": "US envoys met Putin in Moscow and planned to meet Zelensky in Dublin, while Ukraine reported renewed speed restrictions on its military satellite communications.",
-                "evidence": "Diplomatic meetings and a reported communications restriction are not new military actions. The war therefore stays where it was set on 18 October, with both sides striking each other's power and oil infrastructure.",
-                "next_signals": [
-                  {
-                    "rung": 7,
-                    "signal": "Either side declares general mobilisation or launches a major new ground offensive across a wide front, beyond the current exchange of infrastructure strikes."
-                  },
-                  {
-                    "rung": 5,
-                    "signal": "A renewed energy ceasefire takes effect, and both sides are confirmed to have stopped striking power and oil facilities while other fighting continues."
-                  }
-                ],
-                "india_channels": [
-                  "oil",
-                  "trade"
-                ],
-                "conflict": "wzti51f",
-                "applied": "none",
-                "from": 6
-              }
-            },
-            "reading": [
-              {
-                "headline": "What Trump’s midterms debacle could mean for US support for Ukraine",
-                "url": "https://www.france24.com/en/europe/20261106-what-trump-s-midterms-debacle-could-mean-for-us-support-for-ukraine",
-                "source": "france24",
-                "date": "2026-11-06T18:49:19.000Z"
-              },
-              {
-                "headline": "Former U.S. ambassador on Trump's recent moves to embrace Russia",
-                "url": "https://www.npr.org/2026/10/20/nx-s1-6007865/former-u-s-ambassador-on-trumps-recent-moves-to-embrace-russia",
-                "source": "npr",
-                "date": "2026-10-20T11:03:48.000Z"
-              }
-            ]
-          },
-          "conflict": "wzti51f",
-          "place": {
-            "name": "Moscow",
-            "country": "Russia",
-            "lat": 55.75,
-            "lon": 37.62,
-            "involves": [
-              "Ukraine",
-              "United States"
-            ]
-          },
-          "reports": [
-            {
-              "source": "bbc",
-              "headline": "Ukraine says military Starlink disrupted again as US envoys meet Putin in Moscow",
-              "url": "https://www.bbc.co.uk/news/articles/cwrkgmymk55zo",
-              "date": "2026-11-12T16:31:12.000Z",
-              "kind": "hard",
-              "summary": "Later on Thursday, Jared Kushner and Steve Witkoff will travel to Dublin to meet Ukraine's Volodymyr Zelensky.",
-              "summaryV": 3,
-              "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/0196/live/ef110310-de9c-11f1-a701-fddedf244c16.jpg",
-              "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/0196/live/ef110310-de9c-11f1-a701-fddedf244c16.jpg"
-            },
-            {
-              "source": "cbs",
-              "headline": "Ukraine says Starshield throttled again as U.S. pushes for a deal",
-              "url": "https://www.cbsnews.com/news/russia-ukraine-war-elon-musk-starshield-limited-us-witkoff-kushner-diplomacy/",
-              "date": "2026-11-12T16:56:29.000Z",
-              "kind": "hard",
-              "summary": "Ukraine says its ability to intercept Russian strikes is again hampered by speed restrictions on Musk's Starshield network amid U.S.-led diplomacy.",
-              "summaryV": 3
-            }
-          ],
-          "thread": "tq9ru94"
         },
         {
           "id": "s13fohyw",
@@ -33073,87 +33120,122 @@
           "date": "2026-11-15T15:42:25.000Z",
           "relevance": "medium",
           "image": "https://static01.nyt.com/images/2026/11/15/multimedia/15int-yemen-retreat-1-bhfc/15int-yemen-retreat-1-bhfc-mediumSquareAt3X.jpg",
-          "why": "Saudi-backed forces in Yemen have retreated from the Red Sea as the Iran-backed Houthis advance, which analysts say tilts the war's balance. India could be affected through shipping routes, Gulf energy supplies and Indians living in Saudi Arabia.",
+          "why": "Saudi-backed Yemeni forces have pulled back from the Bab al-Mandeb strait to defend Aden as Houthis advance within 60 kilometres of it, while Iran has attacked Bahrain again. This raises risks for India's Red Sea trade route and for Indians in the Gulf.",
           "implications": [
-            "If the Houthis gain ground along the Red Sea, ships heading to and from the Suez Canal could face higher risk, which may raise freight and insurance costs for Indian traders.",
-            "A weaker Saudi position could invite further Houthi attacks on Saudi territory, which may disturb Gulf oil supplies and the safety of Indians working there."
+            "Government forces withdrew from Dhubab airport and areas around Bab al-Mandeb, which could let the Houthis extend control along the coast beside the strait that ships use to reach the Suez Canal.",
+            "If shipping risk rises, lines and insurers could raise war-risk charges or reroute around Africa, which may lengthen voyages and raise freight costs for Indian exporters and importers trading with Europe.",
+            "Iran has attacked Bahrain twice in days after a two-month lull, as US-Iran peace talks appear stalled. This raises safety concerns in a Gulf state with a large Indian community.",
+            "The Houthi advance comes as Saudi Arabia already faces Houthi strikes on its airports and oil infrastructure, which could add to risk around Gulf oil supply that India depends on."
           ],
           "analysis": {
             "v": 3,
-            "at": "2026-11-15T16:24:53.815Z",
-            "tier": "quick",
+            "at": "2026-11-15T23:01:54.602Z",
+            "tier": "standard",
             "primary": "escalation",
             "complement": null,
             "features": [
-              "armed_conflict"
+              "armed_conflict",
+              "fast_moving",
+              "pending_outcome"
             ],
             "exposure": {
-              "level": "medium",
-              "reason": "The channel is Red Sea shipping and Gulf energy, but the report describes only a ground retreat and no attack on shipping or oil, so any effect on India is indirect for now."
+              "level": "high",
+              "reason": "The Bab al-Mandeb route carries a large share of India's trade with Europe, and Iran's attacks on Bahrain touch the safety of Indians living in the Gulf."
             },
             "horizon": {
-              "value": "months",
-              "reason": "A change in territorial control takes time to turn into shipping disruption or energy disruption, and none has been reported yet."
+              "value": "weeks",
+              "reason": "Shipping lines and insurers typically reassess routes and charges within weeks once control of a strait's coastline shifts, and Gulf safety risks are immediate."
             },
             "confidence": {
-              "level": "low",
-              "reason": "This rests on a single outlet, The New York Times, citing analysts, with no official source, and the extent of the retreat is not detailed."
+              "level": "high",
+              "reason": "The New York Times, Al Jazeera and France 24 agree on the retreat, with an on-record Southern Armed Forces spokesman; any Houthi move against shipping is not reported."
             },
-            "outlets": 1,
+            "outlets": 3,
             "affected": [
               {
+                "group": "MSME exporters",
+                "direction": "up",
+                "what": "freight and insurance costs",
+                "effect": "Smaller exporters shipping to Europe could face higher freight and insurance charges if lines reroute or price in greater risk around Bab al-Mandeb.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Large exporters",
+                "direction": "up",
+                "what": "transit times to Europe",
+                "effect": "Diversions around Africa, if shipping lines choose them, could lengthen delivery times and raise costs for large exporters' shipments through the Red Sea.",
+                "basis": "inferred"
+              },
+              {
                 "group": "Importers & traders",
-                "direction": "unclear",
-                "what": "Red Sea shipping risk",
-                "effect": "Indian importers and exporters using the Suez route could face higher freight and insurance costs if Houthi control along the Red Sea coast leads to attacks on ships.",
+                "direction": "up",
+                "what": "shipping costs",
+                "effect": "Traders importing goods from Europe through the Suez route could pay more if war-risk premiums on Red Sea voyages rise.",
                 "basis": "inferred"
               },
               {
                 "group": "Gulf & overseas workers and families",
-                "direction": "unclear",
-                "what": "safety in Saudi Arabia",
-                "effect": "Indians living in Saudi Arabia could face greater risk if a stronger Houthi side extends its attacks on Saudi cities and infrastructure.",
+                "direction": "up",
+                "what": "safety risk in Bahrain",
+                "effect": "Renewed Iranian attacks on Bahrain raise security risks for Indians living there and concern for their families in India.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "Reports of Houthi forces taking control of Red Sea coastal areas or attacking commercial ships",
-                "why": "It would show whether the ground gains are turning into a direct threat to international shipping.",
+                "what": "Houthi forces advancing further towards Aden or fighting reported inside the city",
+                "why": "An attack on Aden would show whether the internationally recognised government can hold its seat, and would deepen instability near the strait.",
                 "when": "",
                 "where": ""
               },
               {
-                "what": "Fresh Houthi strikes on Saudi airports or oil facilities after this retreat",
-                "why": "It would show whether the battlefield shift is feeding into attacks on Saudi Arabia itself.",
+                "what": "Houthi forces taking positions along the Bab al-Mandeb coast vacated by government troops",
+                "why": "Control of that coastline would increase the Houthis' ability to threaten ships on India's main route to Europe.",
                 "when": "",
                 "where": ""
+              },
+              {
+                "what": "Further Iranian attacks on Bahrain or any Indian government advisory for nationals there",
+                "why": "These would show whether the risk to Indians in the Gulf is rising after the stalled US-Iran talks.",
+                "when": "",
+                "where": "Ministry of External Affairs"
               }
             ],
             "context": [
-              "India imports most of its crude oil, much of it from the Gulf, and a large share of its trade with Europe passes through the Red Sea and Suez Canal."
+              "The Bab al-Mandeb strait links the Red Sea to the Gulf of Aden, and the route through it and the Suez Canal carries much of India's trade with Europe.",
+              "Millions of Indians live and work in the Gulf states, and their remittances are a major source of household income in states such as Kerala."
             ],
-            "terms": [],
+            "terms": [
+              {
+                "term": "Bab al-Mandeb",
+                "meaning": "A narrow strait between Yemen and the Horn of Africa that ships must pass through to travel between the Red Sea and the Indian Ocean."
+              },
+              {
+                "term": "Houthis",
+                "meaning": "An Iran-backed armed movement that controls much of northern Yemen and is fighting the internationally recognised government and its Saudi allies."
+              }
+            ],
             "frameworks": {
               "escalation": {
                 "move": "none",
                 "rung": 6,
                 "current_rung": 6,
                 "previous_rung": null,
-                "development": "Saudi-backed forces have retreated from the Red Sea while the Houthis advance, which is a shift in ground fighting rather than a new strike or attack.",
-                "evidence": "The reported action is a retreat by one side, not a ceasefire or a halt in fighting, and no new attack above the earlier strikes on Riyadh and Saudi infrastructure is reported.",
+                "development": "The Houthis advanced to within 60 kilometres of Aden, while government forces redeployed from Dhubab airport and areas around Bab al-Mandeb to defend the city.",
+                "evidence": "The reports describe a ground advance and a government retreat, not an assault on Aden or fighting at a new scale. The war remains at the level set by Houthi strikes on Saudi airports and oil infrastructure.",
                 "next_signals": [
                   {
                     "rung": 7,
-                    "signal": "Houthi forces launch a broad offensive into Saudi territory, or Saudi Arabia commits large ground forces to the fighting, in a war that is no longer confined to Yemen."
+                    "signal": "Houthi forces launch an assault on Aden, with heavy fighting reported inside the city."
                   },
                   {
                     "rung": 5,
-                    "signal": "Strikes on Saudi airports and oil infrastructure are reported to have stopped while fighting continues inside Yemen."
+                    "signal": "Houthi strikes on Saudi airports and oil infrastructure are reported to have stopped while fighting inside Yemen continues."
                   }
                 ],
                 "india_channels": [
                   "shipping",
+                  "trade",
                   "oil",
                   "diaspora safety"
                 ],
@@ -33161,7 +33243,21 @@
                 "applied": "none",
                 "from": 6
               }
-            }
+            },
+            "reading": [
+              {
+                "headline": "Houthi attacks on strategic Saudi assets threaten Riyadh's regional leadership and economic ambitions",
+                "url": "https://www.dw.com/en/houthi-attacks-on-strategic-saudi-assets-threaten-riyadh-s-regional-leadership-and-economic-ambitions/a-79680200",
+                "source": "dw",
+                "date": "2026-10-16T14:03:00.000Z"
+              },
+              {
+                "headline": "Has Yemen returned to ‘full-scale war’?",
+                "url": "https://www.aljazeera.com/news/2026/10/10/has-yemen-returned-to-full-scale-war",
+                "source": "aljazeera",
+                "date": "2026-10-10T14:10:24.000Z"
+              }
+            ]
           },
           "conflict": "w1f5pudc",
           "place": {
@@ -33192,6 +33288,25 @@
               "kind": "hard",
               "summary": "The resumption of attacks after a two-month lull comes as peace talks between the U.S. and Iran appear to have stalled.",
               "summaryV": 3
+            },
+            {
+              "source": "aljazeera",
+              "headline": "Yemeni government forces redeploy from Bab al-Mandeb to defend Aden",
+              "url": "https://www.aljazeera.com/news/2026/11/15/yemeni-government-forces-redeploy-from-bab-al-mandeb-to-defend-aden",
+              "date": "2026-11-15T17:33:00.000Z",
+              "kind": "hard",
+              "summary": "Spokesman for the Southern Armed Forces says group is repositioning from Dhubab airport and areas around Bab al-Mandeb.",
+              "summaryV": 3
+            },
+            {
+              "source": "france24",
+              "headline": "Yemen's Houthis advance on Aden as government forces retreat to defend their capital",
+              "url": "https://www.france24.com/en/middle-east/20261115-yemen-houthis-advance-to-within-60-kilometres-of-aden-military-sources-say",
+              "date": "2026-11-15T19:28:54.000Z",
+              "kind": "hard",
+              "summary": "Houthi forces in Yemen have advanced to within 60 kilometres of Aden, the seat of the country's internationally recognised government, military and government sources said Sunday.",
+              "summaryV": 3,
+              "image": "https://s.france24.com/media/display/92e0513c-e12a-11f1-8ab7-3f371022a770/w:1024/p:16x9/2026-11-15T135302Z-1473180222-RC26OOADAAUR-RTRMADP-3-IRAN-CRISIS-YEMEN-DETAINEES.jpg"
             }
           ],
           "thread": "t1j5n1me"
@@ -40417,6 +40532,16 @@
               "summaryV": 3,
               "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/fa43/live/e2a9a870-e10d-11f1-93e1-3b657b665bcf.jpg",
               "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/fa43/live/e2a9a870-e10d-11f1-93e1-3b657b665bcf.jpg"
+            },
+            {
+              "source": "nyt",
+              "headline": "Megaspeed Says Alice Huang Left Company in August 2025",
+              "url": "https://www.nytimes.com/2026/11/15/business/megaspeed-alice-huang-nvidia-china.html",
+              "date": "2026-11-15T20:11:11.000Z",
+              "kind": "hard",
+              "summary": "The Singaporean company’s statement added to the timeline involving Ms. Huang, a former executive who had a relationship with Jensen Huang of Nvidia. U.S. officials say she was spying for China.",
+              "summaryV": 3,
+              "image": "https://static01.nyt.com/images/2026/11/15/multimedia/15xp-megaspeed1-zcvq/15xp-megaspeed1-zcvq-mediumSquareAt3X.jpg"
             }
           ],
           "finChecked": true,
@@ -71637,6 +71762,316 @@
       "name": "Policy & Governance",
       "items": [
         {
+          "id": "s1ebdwea",
+          "headline": "Trump-Xi-Putin summit under discussion as US allies watch on",
+          "url": "https://www.scmp.com/plus/news/china/diplomacy/article/3374199/trump-xi-putin-summit-under-discussion-us-allies-watch",
+          "source": "scmp",
+          "date": "2026-11-12T09:07:22.000Z",
+          "relevance": "medium",
+          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/12/3653edef-0781-45ef-be84-50b97230a4e5_0b5d1ea3.jpg?itok=DVHYr-Mj&v=1794473025",
+          "why": "The White House has confirmed that Trump, Xi and Putin will hold their first three-way meeting at the APEC summit in Shenzhen. The agenda includes the Iran war and nuclear arms reduction, both of which bear on India's oil supply and security.",
+          "implications": [
+            "Trump plans to raise the US war on Iran. Any movement towards ending or widening that war could change supply risks in the Gulf, which matter to India as a large crude importer.",
+            "European leaders have warned Washington against major concessions to Russia over Ukraine. A shift in US policy could change Western sanctions on Russian oil, which Indian refiners buy in large volumes.",
+            "Talks on reducing nuclear weapons will include China, India's neighbour and rival. Any arms-control understanding among the three powers could reshape the strategic balance India faces without India having a seat.",
+            "India keeps partnerships with both Washington and Moscow while managing tensions with Beijing. A closer understanding among all three leaders could narrow the room India uses to balance between them."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-15T23:01:54.599Z",
+            "tier": "deep",
+            "primary": "impact_chain",
+            "complement": "scenarios",
+            "features": [
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The meeting reaches India indirectly, through any change in the Iran war and in Western policy on Russian oil. Both shape India's crude supply and relations with major powers, but no direct measure affecting India has been announced."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "The meeting takes place next week, and any effect on oil markets or diplomacy would follow its outcomes over the following weeks."
+            },
+            "confidence": {
+              "level": "high",
+              "reason": "The South China Morning Post, Al Jazeera, BBC, CBS and The Guardian report the White House's on-record confirmation; what the leaders will agree remains unknown."
+            },
+            "outlets": 7,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "fuel price risk",
+                "effect": "Outcomes on the Iran war could raise or ease Gulf supply risks, which may feed through to the prices of petrol, diesel and LPG in India.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Gulf & overseas workers and families",
+                "direction": "unclear",
+                "what": "regional safety outlook",
+                "effect": "Any progress or breakdown on the Iran war could change security conditions in Gulf states where many Indians work and send money home.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Government finances",
+                "direction": "unclear",
+                "what": "oil import bill",
+                "effect": "Changes to Gulf risk or to sanctions on Russian oil could alter what India pays for crude imports, affecting the trade balance and fuel-related spending.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Trump, Xi and Putin hold their trilateral meeting on the sidelines of the APEC summit in Shenzhen",
+                "why": "Whether the meeting goes ahead as planned shows whether the three powers are ready to negotiate directly on wars and arms.",
+                "when": "next week",
+                "where": "White House"
+              },
+              {
+                "what": "Any joint statement on nuclear weapons reduction or on the Iran war after the meeting",
+                "why": "A concrete statement would show whether the talks produced commitments that could affect Gulf security and the strategic balance around India.",
+                "when": "next week",
+                "where": "White House"
+              },
+              {
+                "what": "Any change in the US position on the war in Ukraine announced around the summit",
+                "why": "A shift could signal changes to sanctions on Russian oil, which matter for Indian refiners' supply and costs.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "India imports most of the crude oil it uses, so conflict involving Iran and the Gulf can raise its import bill and domestic fuel costs.",
+              "India is not a member of APEC, the Asia-Pacific Economic Cooperation forum, and so is not present at meetings held on its sidelines."
+            ],
+            "terms": [
+              {
+                "term": "APEC",
+                "meaning": "Asia-Pacific Economic Cooperation, a forum of Pacific Rim economies that meets annually to discuss trade and economic cooperation."
+              },
+              {
+                "term": "trilateral",
+                "meaning": "A meeting or agreement involving three countries at the same time."
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "White House confirms three-way meeting",
+                    "detail": "The White House confirmed that Trump, Xi and Putin will meet on the sidelines of the APEC summit in Shenzhen next week. It is the first formal trilateral of its kind.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Leaders take up Iran and arms",
+                    "detail": "Trump plans to discuss the US war on Iran and the reduction of nuclear weapons, while European leaders press him not to concede too much to Russia over Ukraine.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Outcomes shift oil and sanctions risk",
+                    "detail": "Any agreement or breakdown on the Iran war could change perceived supply risk in the Gulf. A shift on Ukraine could alter sanctions on Russian crude.",
+                    "basis": "inferred"
+                  },
+                  {
+                    "step": "India's crude costs adjust",
+                    "detail": "Because India imports most of its crude, including large volumes from Russia, such changes could affect its import bill and, over time, domestic fuel prices.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The effect would not reach India if the meeting ends without any change in the course of the Iran war or in Western policy towards Russian oil."
+              },
+              "scenarios": {
+                "question": "Will the Trump-Xi-Putin meeting produce concrete agreements on the Iran war, nuclear arms or Ukraine?",
+                "scenarios": [
+                  {
+                    "name": "Movement on Iran war",
+                    "what": "The leaders agree on steps towards ending or containing the US war on Iran, which the White House lists as a priority topic.",
+                    "signal": "A joint or White House statement after the meeting announces a framework or next steps on the Iran war.",
+                    "india_effect": "Lower conflict risk in the Gulf could ease pressure on India's oil import costs and improve the outlook for Indians working in the region."
+                  },
+                  {
+                    "name": "Ukraine concessions to Russia",
+                    "what": "The US makes major concessions to Russia over Ukraine, the outcome European leaders have warned against.",
+                    "signal": "European governments publicly object to terms on Ukraine discussed or announced at the summit.",
+                    "india_effect": "A change in US policy on Russia could alter sanctions on Russian crude, affecting the price and terms at which Indian refiners buy it."
+                  },
+                  {
+                    "name": "Dialogue without commitments",
+                    "what": "The leaders hold the meeting and welcome dialogue, as Australia's prime minister did, but announce no concrete agreements on Iran, arms or Ukraine.",
+                    "signal": "Statements after the meeting describe the talks as constructive but name no agreed measures.",
+                    "india_effect": "India's exposure to the Iran war and to sanctions on Russian oil would remain broadly as it is now."
+                  }
+                ]
+              }
+            }
+          },
+          "place": {
+            "name": "Washington",
+            "country": "United States",
+            "lat": 38.9,
+            "lon": -77,
+            "involves": [
+              "China",
+              "Russia"
+            ]
+          },
+          "reports": [
+            {
+              "source": "scmp",
+              "headline": "Trump-Xi-Putin summit under discussion as US allies watch on",
+              "url": "https://www.scmp.com/plus/news/china/diplomacy/article/3374199/trump-xi-putin-summit-under-discussion-us-allies-watch",
+              "date": "2026-11-12T09:07:22.000Z",
+              "kind": "hard",
+              "summary": "The US confirmed the possibility of an unprecedented three-party presidential summit with Russia and China, as President Donald Trump prepares for an Asian tour next week.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/12/3653edef-0781-45ef-be84-50b97230a4e5_0b5d1ea3.jpg?itok=DVHYr-Mj&v=1794473025"
+            },
+            {
+              "source": "dw",
+              "headline": "Beijing faces its Russia dilemma amid talk of Xi-Trump-Putin summit",
+              "url": "https://www.dw.com/en/beijing-faces-its-russia-dilemma-amid-talk-of-xi-trump-putin-summit/a-79942427",
+              "date": "2026-11-13T15:28:00.000Z",
+              "kind": "feature",
+              "summary": "China is forced to tread carefully as it considers hosting a meeting between Xi Jinping, Vladimir Putin, and Donald Trump. While the optics are sure to favor Moscow, Beijing is risking its image at the global stage.",
+              "summaryV": 3
+            },
+            {
+              "source": "scmp",
+              "headline": "White House confirms US-China-Russia trilateral on Apec sidelines",
+              "url": "https://www.scmp.com/news/china/diplomacy/article/3374415/white-house-confirms-us-china-russia-trilateral-apec-sidelines",
+              "date": "2026-11-14T00:30:57.000Z",
+              "kind": "hard",
+              "summary": "The White House on Friday confirmed an unprecedented meeting between leaders of the US, China and Russia has been scheduled to take place on the sidelines of the Asia-Pacific Economic Cooperation (Apec) summit in Shenzhen next week.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/14/25f1c183-07f0-40d8-b9a7-1bbb97ebfaa6_9dcf4d3b.jpg?itok=HlwpEW0j&v=1794616908"
+            },
+            {
+              "source": "aljazeera",
+              "headline": "Trump, Xi and Putin to hold first three-way summit in China",
+              "url": "https://www.aljazeera.com/news/2026/11/14/trump-xi-and-putin-to-hold-first-three-way-summit-in-china",
+              "date": "2026-11-14T04:55:58.000Z",
+              "kind": "hard",
+              "summary": "White House says Trump plans to discuss the Iran war and nuclear arms at a meeting on the sidelines of APEC next week.",
+              "summaryV": 3
+            },
+            {
+              "source": "bbc",
+              "headline": "Trump, Putin and Xi plan historic joint meeting in China next week, White House says",
+              "url": "https://www.bbc.co.uk/news/articles/ckz74jzpy18do",
+              "date": "2026-11-14T05:52:31.000Z",
+              "kind": "hard",
+              "summary": "Trump will discuss the \"reduction of nuclear weapons\" during the unprecedented talks, a spokeswoman says.",
+              "summaryV": 3,
+              "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/172e/live/be162960-dfc9-11f1-81be-1f9bcd2a4214.jpg",
+              "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/172e/live/be162960-dfc9-11f1-81be-1f9bcd2a4214.jpg"
+            },
+            {
+              "source": "cbs",
+              "headline": "Trump, Putin, Xi Jinping to meet in first trilateral of its kind",
+              "url": "https://www.cbsnews.com/news/trump-putin-xi-jinping-meeting-china-us-russia-talks/",
+              "date": "2026-11-14T10:59:00.000Z",
+              "kind": "hard",
+              "summary": "President Trump is looking to talk about reducing nuclear arsenals in the first formal trilateral between the leaders of the U.S., China and Russia.",
+              "summaryV": 3
+            },
+            {
+              "source": "aljazeera",
+              "headline": "Trump-Xi-Putin trilateral meeting at APEC: What to expect",
+              "url": "https://www.aljazeera.com/news/2026/11/14/trump-xi-putin-trilateral-meeting-at-apec-what-to-expect",
+              "date": "2026-11-14T12:14:14.000Z",
+              "kind": "feature",
+              "summary": "A nuclear treaty and the US's war on Iran are among priority topics for China, Russia and US leaders.",
+              "summaryV": 3
+            },
+            {
+              "source": "guardian",
+              "headline": "Anthony Albanese welcomes Trump-Xi-Putin summit – even as European leaders express reservations",
+              "url": "https://www.theguardian.com/australia-news/2026/nov/15/anthony-albanese-welcomes-trump-xi-putin-summit-even-as-european-leaders-express-reservations",
+              "date": "2026-11-15T06:22:32.000Z",
+              "kind": "hard",
+              "summary": "‘We think dialogue is a good thing,’ Australian PM says after German chancellor urges the US to work with Europe for peace in Ukraine",
+              "summaryV": 3,
+              "lede": "Australia has endorsed this week’s historic summit between Donald Trump, Xi Jinping and Vladimir Putin in China, even as European leaders warn that the US president must not make major concessions over the war in Ukraine.",
+              "image": "https://i.guim.co.uk/img/media/bdce7545dc691e9936e076cd03bde7e3cc7e3a2a/264_0_3267_2614/master/3267.jpg?width=700&quality=85&auto=format&fit=max&s=2daf616594a166d9b7441320f79f7a61"
+            },
+            {
+              "source": "npr",
+              "headline": "What to expect from Trump and Xi's upcoming meeting in China",
+              "url": "https://www.npr.org/2026/11/15/nx-s1-6038814/what-to-expect-from-trump-and-xis-upcoming-meeting-in-china",
+              "date": "2026-11-15T22:11:26.000Z",
+              "kind": "feature",
+              "summary": "Preview of what to expect as President Trump meets with Chinese leader Xi Jinping and Russian President Vladimir Putin at the Asia-Pacific Economic Cooperation summit in Shenzhen, China this week.",
+              "summaryV": 3
+            }
+          ],
+          "finChecked": true,
+          "thread": "t1ipacnb",
+          "stats": {
+            "v": 2,
+            "at": "2026-11-14T18:19:51.986Z",
+            "series": [
+              {
+                "title": "Crude oil and condensate through the Strait of Hormuz",
+                "unit": "million barrels per day",
+                "publisher": "U.S. Energy Information Administration",
+                "points": [
+                  {
+                    "period": "2020",
+                    "value": 14.4,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2021",
+                    "value": 14.7,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2022",
+                    "value": 16.2,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2023",
+                    "value": 15.8,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2024",
+                    "value": 14.6,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "1H25",
+                    "value": 14.7,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "title": "eia.gov",
+                    "domain": "eia.gov"
+                  }
+                ],
+                "domains": [
+                  "eia.gov"
+                ],
+                "dropped": 0,
+                "why": "The story's concern is whether progress on the Iran war could change India's Gulf oil supplies, and crude and condensate flows through the Strait of Hormuz directly measure that supply route.",
+                "reused": true,
+                "checkedAt": "2026-10-13T23:16:50.395Z"
+              }
+            ]
+          }
+        },
+        {
           "id": "s1mvvmg0",
           "headline": "Iran claims attack on US military airbase in Bahrain",
           "url": "https://www.france24.com/en/middle-east/20261115-iran-claims-attack-on-us-military-airbase-in-bahrain",
@@ -71852,6 +72287,17 @@
               "summary": "Bahrain issued two alerts of potential threats on Sunday, its first such warnings since September as blasts rocked the capital, Manama.",
               "summaryV": 3,
               "image": "https://s.france24.com/media/display/dc1d38c8-e108-11f1-8b7b-5f54d898a954/w:1024/p:16x9/EN-20261115-160212-160405-CS.jpg"
+            },
+            {
+              "source": "guardian",
+              "headline": "Iran launches drone attacks against US military base in Bahrain",
+              "url": "https://www.theguardian.com/world/2026/nov/15/iran-launches-drone-attacks-against-us-military-base-in-bahrain",
+              "date": "2026-11-15T18:03:56.000Z",
+              "kind": "hard",
+              "summary": "Strikes cast further doubt on peace talks between Tehran and Washington with increasing risk of escalation",
+              "summaryV": 3,
+              "lede": "Iran has launched drone attacks against a US military base in Bahrain, casting further doubt on peace talks between Tehran and Washington and raising the spectre of escalation.",
+              "image": "https://i.guim.co.uk/img/media/90f87dd962175485473368db89ae4da6cfcd0981/425_0_4577_3662/master/4577.jpg?width=700&quality=85&auto=format&fit=max&s=a21aca2a20c9c2a1ce8d54fe9a1b72df"
             }
           ],
           "finChecked": true,
@@ -72204,308 +72650,6 @@
           ],
           "finChecked": true,
           "thread": "t1mn19v5"
-        },
-        {
-          "id": "s1ebdwea",
-          "headline": "Trump-Xi-Putin summit under discussion as US allies watch on",
-          "url": "https://www.scmp.com/plus/news/china/diplomacy/article/3374199/trump-xi-putin-summit-under-discussion-us-allies-watch",
-          "source": "scmp",
-          "date": "2026-11-12T09:07:22.000Z",
-          "relevance": "medium",
-          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/12/3653edef-0781-45ef-be84-50b97230a4e5_0b5d1ea3.jpg?itok=DVHYr-Mj&v=1794473025",
-          "why": "The White House confirmed that Trump, Xi and Putin will hold an unprecedented three-way meeting at the APEC summit in Shenzhen next week, covering the Iran war and nuclear arms. India could be affected if the talks shift the Iran war, which bears on Gulf oil and shipping.",
-          "implications": [
-            "Al Jazeera reports that the White House says Trump will discuss the Iran war, so any progress or deadlock could affect the security of energy and shipping routes in the Gulf.",
-            "Trump also wants to discuss reducing nuclear weapons, which would be the first formal trilateral effort of its kind between the three nuclear powers.",
-            "DW reports that China is treading carefully as host because the meeting's optics may favour Moscow, which could test Beijing's international image.",
-            "US allies are watching closely, according to the South China Morning Post, because a deal among the three leaders could be struck without their direct involvement."
-          ],
-          "analysis": {
-            "v": 3,
-            "at": "2026-11-14T22:40:21.824Z",
-            "tier": "deep",
-            "primary": "impact_chain",
-            "complement": "scenarios",
-            "features": [
-              "pending_outcome"
-            ],
-            "exposure": {
-              "level": "medium",
-              "reason": "The summit reaches India mainly through diplomacy and through any effect on the Iran war, which bears on Gulf oil and shipping, but no concrete outcome has yet been reported."
-            },
-            "horizon": {
-              "value": "weeks",
-              "reason": "The meeting is scheduled for next week, and any effect on the Iran war or energy markets would follow its outcome."
-            },
-            "confidence": {
-              "level": "high",
-              "reason": "The South China Morning Post, Al Jazeera, BBC News and CBS News report the meeting, which the White House confirmed on record; its outcomes are not yet known."
-            },
-            "outlets": 5,
-            "affected": [
-              {
-                "group": "Fuel & LPG users",
-                "direction": "unclear",
-                "what": "fuel price pressure",
-                "effect": "If the leaders make progress on the Iran war, pressure on Gulf oil supplies could ease, which may in time affect petrol, diesel and cooking gas prices in India.",
-                "basis": "inferred"
-              },
-              {
-                "group": "Gulf & overseas workers and families",
-                "direction": "unclear",
-                "what": "regional security outlook",
-                "effect": "Indian workers in the Gulf and their families could see the regional security situation change if the summit shifts the course of the Iran war.",
-                "basis": "inferred"
-              },
-              {
-                "group": "Government finances",
-                "direction": "unclear",
-                "what": "oil import bill",
-                "effect": "Changes in crude prices after the summit may raise or lower India's oil import bill, which affects subsidy spending and the current account.",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "The Trump-Xi-Putin meeting on the sidelines of the APEC summit in Shenzhen",
-                "why": "It will show whether the three leaders agree on any steps on the Iran war or nuclear arms.",
-                "when": "next week",
-                "where": "White House"
-              },
-              {
-                "what": "Official readouts from Washington, Beijing and Moscow after the trilateral meeting",
-                "why": "Comparing the three accounts will show whether there is a shared position or only separate statements.",
-                "when": "next week",
-                "where": "White House"
-              },
-              {
-                "what": "Any announcement on the Iran war emerging from the meeting",
-                "why": "It would indicate whether risks to Gulf oil and shipping routes that India relies on are easing or persisting.",
-                "when": "next week",
-                "where": ""
-              }
-            ],
-            "context": [
-              "India imports most of its crude oil, much of it from Gulf producers, and millions of Indians work in Gulf countries, so conflict involving Iran can affect India's fuel costs, shipping and diaspora.",
-              "India is not a member of the Asia-Pacific Economic Cooperation (APEC) forum, so it has no seat at meetings held on its sidelines.",
-              "India balances close ties with the United States, long-standing defence and energy links with Russia, and a tense relationship with China, so closer coordination among the three matters to its diplomacy."
-            ],
-            "terms": [
-              {
-                "term": "APEC",
-                "meaning": "Asia-Pacific Economic Cooperation, a forum of Pacific Rim economies that holds an annual leaders' summit, often used for side meetings."
-              },
-              {
-                "term": "trilateral",
-                "meaning": "A meeting or agreement involving three countries at the same time."
-              }
-            ],
-            "frameworks": {
-              "impact_chain": {
-                "chain": [
-                  {
-                    "step": "White House confirms three-way summit",
-                    "detail": "The White House confirmed that Trump, Xi and Putin will meet on the sidelines of the APEC summit in Shenzhen next week, the first formal trilateral of its kind.",
-                    "basis": "reported"
-                  },
-                  {
-                    "step": "Iran war and nuclear arms on agenda",
-                    "detail": "The White House says Trump plans to discuss the Iran war and the reduction of nuclear weapons, putting the conflict with Iran at the centre of great-power talks.",
-                    "basis": "reported"
-                  },
-                  {
-                    "step": "Gulf oil and shipping risk may shift",
-                    "detail": "Any agreement or deadlock on the Iran war could change perceived risks to Gulf oil production and shipping, which may move crude prices and freight costs.",
-                    "basis": "inferred"
-                  },
-                  {
-                    "step": "Indian import costs could change",
-                    "detail": "Because India imports most of its crude, shifts in oil prices and shipping risk could feed into its import bill and eventually into domestic fuel prices.",
-                    "basis": "inferred"
-                  }
-                ],
-                "breaks_if": "The effect would not reach India if the meeting produces no change in the Iran war and oil and shipping markets stay unaffected by its outcome."
-              },
-              "scenarios": {
-                "question": "Will the Trump-Xi-Putin meeting in Shenzhen produce agreement on the Iran war or on reducing nuclear weapons?",
-                "scenarios": [
-                  {
-                    "name": "Steps on Iran war",
-                    "what": "The three leaders agree on a shared approach to the Iran war, such as backing talks or measures to contain the fighting.",
-                    "signal": "Joint or matching statements from Washington, Beijing and Moscow would refer to the Iran war after the meeting.",
-                    "india_effect": "Reduced risk in the Gulf could ease pressure on oil and shipping routes that India depends on, though the effect on fuel prices may take time to appear."
-                  },
-                  {
-                    "name": "Nuclear arms framework",
-                    "what": "The leaders agree to begin work on a treaty or framework for reducing nuclear weapons, a priority topic named for the meeting.",
-                    "signal": "The White House would announce follow-up nuclear arms talks or a treaty process involving China and Russia.",
-                    "india_effect": "A three-way arms control process could reshape the global nuclear order, which India, as a nuclear-armed state outside such frameworks, may need to respond to diplomatically."
-                  },
-                  {
-                    "name": "No concrete outcome",
-                    "what": "The meeting takes place but ends without agreement on the Iran war or nuclear arms, leaving existing tensions in place.",
-                    "signal": "Post-meeting readouts would describe only general discussions, with no joint statement or follow-up process announced.",
-                    "india_effect": "Uncertainty around the Iran war would persist, which could keep Gulf oil and shipping risks unresolved for India."
-                  }
-                ]
-              }
-            }
-          },
-          "place": {
-            "name": "Washington",
-            "country": "United States",
-            "lat": 38.9,
-            "lon": -77,
-            "involves": [
-              "China",
-              "Russia"
-            ]
-          },
-          "reports": [
-            {
-              "source": "scmp",
-              "headline": "Trump-Xi-Putin summit under discussion as US allies watch on",
-              "url": "https://www.scmp.com/plus/news/china/diplomacy/article/3374199/trump-xi-putin-summit-under-discussion-us-allies-watch",
-              "date": "2026-11-12T09:07:22.000Z",
-              "kind": "hard",
-              "summary": "The US confirmed the possibility of an unprecedented three-party presidential summit with Russia and China, as President Donald Trump prepares for an Asian tour next week.",
-              "summaryV": 3,
-              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/12/3653edef-0781-45ef-be84-50b97230a4e5_0b5d1ea3.jpg?itok=DVHYr-Mj&v=1794473025"
-            },
-            {
-              "source": "dw",
-              "headline": "Beijing faces its Russia dilemma amid talk of Xi-Trump-Putin summit",
-              "url": "https://www.dw.com/en/beijing-faces-its-russia-dilemma-amid-talk-of-xi-trump-putin-summit/a-79942427",
-              "date": "2026-11-13T15:28:00.000Z",
-              "kind": "feature",
-              "summary": "China is forced to tread carefully as it considers hosting a meeting between Xi Jinping, Vladimir Putin, and Donald Trump. While the optics are sure to favor Moscow, Beijing is risking its image at the global stage.",
-              "summaryV": 3
-            },
-            {
-              "source": "scmp",
-              "headline": "White House confirms US-China-Russia trilateral on Apec sidelines",
-              "url": "https://www.scmp.com/news/china/diplomacy/article/3374415/white-house-confirms-us-china-russia-trilateral-apec-sidelines",
-              "date": "2026-11-14T00:30:57.000Z",
-              "kind": "hard",
-              "summary": "The White House on Friday confirmed an unprecedented meeting between leaders of the US, China and Russia has been scheduled to take place on the sidelines of the Asia-Pacific Economic Cooperation (Apec) summit in Shenzhen next week.",
-              "summaryV": 3,
-              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/14/25f1c183-07f0-40d8-b9a7-1bbb97ebfaa6_9dcf4d3b.jpg?itok=HlwpEW0j&v=1794616908"
-            },
-            {
-              "source": "aljazeera",
-              "headline": "Trump, Xi and Putin to hold first three-way summit in China",
-              "url": "https://www.aljazeera.com/news/2026/11/14/trump-xi-and-putin-to-hold-first-three-way-summit-in-china",
-              "date": "2026-11-14T04:55:58.000Z",
-              "kind": "hard",
-              "summary": "White House says Trump plans to discuss the Iran war and nuclear arms at a meeting on the sidelines of APEC next week.",
-              "summaryV": 3
-            },
-            {
-              "source": "bbc",
-              "headline": "Trump, Putin and Xi plan historic joint meeting in China next week, White House says",
-              "url": "https://www.bbc.co.uk/news/articles/ckz74jzpy18do",
-              "date": "2026-11-14T05:52:31.000Z",
-              "kind": "hard",
-              "summary": "Trump will discuss the \"reduction of nuclear weapons\" during the unprecedented talks, a spokeswoman says.",
-              "summaryV": 3,
-              "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/172e/live/be162960-dfc9-11f1-81be-1f9bcd2a4214.jpg",
-              "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/172e/live/be162960-dfc9-11f1-81be-1f9bcd2a4214.jpg"
-            },
-            {
-              "source": "cbs",
-              "headline": "Trump, Putin, Xi Jinping to meet in first trilateral of its kind",
-              "url": "https://www.cbsnews.com/news/trump-putin-xi-jinping-meeting-china-us-russia-talks/",
-              "date": "2026-11-14T10:59:00.000Z",
-              "kind": "hard",
-              "summary": "President Trump is looking to talk about reducing nuclear arsenals in the first formal trilateral between the leaders of the U.S., China and Russia.",
-              "summaryV": 3
-            },
-            {
-              "source": "aljazeera",
-              "headline": "Trump-Xi-Putin trilateral meeting at APEC: What to expect",
-              "url": "https://www.aljazeera.com/news/2026/11/14/trump-xi-putin-trilateral-meeting-at-apec-what-to-expect",
-              "date": "2026-11-14T12:14:14.000Z",
-              "kind": "feature",
-              "summary": "A nuclear treaty and the US's war on Iran are among priority topics for China, Russia and US leaders.",
-              "summaryV": 3
-            },
-            {
-              "source": "guardian",
-              "headline": "Anthony Albanese welcomes Trump-Xi-Putin summit – even as European leaders express reservations",
-              "url": "https://www.theguardian.com/australia-news/2026/nov/15/anthony-albanese-welcomes-trump-xi-putin-summit-even-as-european-leaders-express-reservations",
-              "date": "2026-11-15T06:22:32.000Z",
-              "kind": "hard",
-              "summary": "‘We think dialogue is a good thing,’ Australian PM says after German chancellor urges the US to work with Europe for peace in Ukraine",
-              "summaryV": 3,
-              "lede": "Australia has endorsed this week’s historic summit between Donald Trump, Xi Jinping and Vladimir Putin in China, even as European leaders warn that the US president must not make major concessions over the war in Ukraine.",
-              "image": "https://i.guim.co.uk/img/media/bdce7545dc691e9936e076cd03bde7e3cc7e3a2a/264_0_3267_2614/master/3267.jpg?width=700&quality=85&auto=format&fit=max&s=2daf616594a166d9b7441320f79f7a61"
-            }
-          ],
-          "finChecked": true,
-          "thread": "t1ipacnb",
-          "stats": {
-            "v": 2,
-            "at": "2026-11-14T18:19:51.986Z",
-            "series": [
-              {
-                "title": "Crude oil and condensate through the Strait of Hormuz",
-                "unit": "million barrels per day",
-                "publisher": "U.S. Energy Information Administration",
-                "points": [
-                  {
-                    "period": "2020",
-                    "value": 14.4,
-                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-                    "source": "eia.gov"
-                  },
-                  {
-                    "period": "2021",
-                    "value": 14.7,
-                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-                    "source": "eia.gov"
-                  },
-                  {
-                    "period": "2022",
-                    "value": 16.2,
-                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-                    "source": "eia.gov"
-                  },
-                  {
-                    "period": "2023",
-                    "value": 15.8,
-                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-                    "source": "eia.gov"
-                  },
-                  {
-                    "period": "2024",
-                    "value": 14.6,
-                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-                    "source": "eia.gov"
-                  },
-                  {
-                    "period": "1H25",
-                    "value": 14.7,
-                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-                    "source": "eia.gov"
-                  }
-                ],
-                "sources": [
-                  {
-                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-                    "title": "eia.gov",
-                    "domain": "eia.gov"
-                  }
-                ],
-                "domains": [
-                  "eia.gov"
-                ],
-                "dropped": 0,
-                "why": "The story's concern is whether progress on the Iran war could change India's Gulf oil supplies, and crude and condensate flows through the Strait of Hormuz directly measure that supply route.",
-                "reused": true,
-                "checkedAt": "2026-10-13T23:16:50.395Z"
-              }
-            ]
-          }
         },
         {
           "id": "s16zj8df",
@@ -85500,14 +85644,17 @@
   "source": "BBC News & The Guardian & NPR & Al Jazeera & MercoPress & ABC News & The New York Times & CNBC & CBS News & DW & France 24 & Africanews & South China Morning Post & The Hindu & Mint & The Indian Express",
   "lastRun": {
     "filter": {
-      "judged": 2,
-      "kept": 0,
+      "judged": 74,
+      "kept": 6,
       "guarded": 0
     },
     "health": {
       "day": "2026-11-15",
-      "newStories24h": 10,
-      "keepRate2d": 0.119
+      "newStories24h": 7,
+      "keepRate2d": 0.115,
+      "alarm": [
+        "only 7 new stories in 24 hours (expected 10+)"
+      ]
     },
     "wars": {
       "linked": 0,
@@ -85520,29 +85667,43 @@
       "waiting": 0
     },
     "skipped": {
-      "since": "2026-11-15T16:26:33.816Z",
-      "counts": {},
-      "examples": {}
+      "since": "2026-11-15T16:31:52.698Z",
+      "counts": {
+        "section": 19,
+        "live_blog": 1
+      },
+      "examples": {
+        "section": [
+          "Pope Leo rides in helicopter cockpit during Peru trip",
+          "Ronaldinho makes comeback in Ravenna win",
+          "LSU star MiLaysia Fulwiley arrested after allegedly striking police officer with car",
+          "The crisis facing Britain’s young people is politicians’ fault. To fix it, we need a generational response | Andy Burnha",
+          "The Guardian view on Cop31: the green transition must not be derailed | Editorial"
+        ],
+        "live_blog": [
+          "Spain 2-3 England: UEFA Nations League as it happened"
+        ]
+      }
     },
     "finance": {
       "moved": 0,
       "checked": 0
     },
-    "analysed": 2,
+    "analysed": 74,
     "added": 0,
-    "merged": 0,
-    "rejected": 2,
+    "merged": 6,
+    "rejected": 68,
     "failedBatches": 0,
     "feeds": {
       "bbc": {
         "feedsOk": 6,
         "feedsFailed": 0,
-        "items": 159
+        "items": 153
       },
       "guardian": {
         "feedsOk": 7,
         "feedsFailed": 0,
-        "items": 198
+        "items": 197
       },
       "npr": {
         "feedsOk": 4,
@@ -85552,7 +85713,7 @@
       "aljazeera": {
         "feedsOk": 1,
         "feedsFailed": 0,
-        "items": 10
+        "items": 9
       },
       "mercopress": {
         "feedsOk": 3,
@@ -85567,7 +85728,7 @@
       "nyt": {
         "feedsOk": 5,
         "feedsFailed": 0,
-        "items": 196
+        "items": 194
       },
       "cnbc": {
         "feedsOk": 3,
@@ -85577,17 +85738,17 @@
       "cbs": {
         "feedsOk": 2,
         "feedsFailed": 0,
-        "items": 46
+        "items": 44
       },
       "dw": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 31
+        "items": 32
       },
       "france24": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 69
+        "items": 72
       },
       "africanews": {
         "feedsOk": 1,
@@ -85620,45 +85781,40 @@
       "failedBatches": 0
     },
     "frames": {
-      "done": 0,
+      "done": 3,
       "waiting": 1,
       "failedBatches": 0
     },
     "stats": {
-      "searched": 1,
+      "searched": 0,
       "found": 0,
-      "reused": 1,
+      "reused": 0,
       "none": 0,
       "failed": 0,
       "proposed": 0,
       "droppedPoints": 0,
       "pagesFetched": 0,
-      "samples": [
-        {
-          "headline": "Iran claims attack on US military airbase in Bahrain",
-          "result": "reused saved series"
-        }
-      ]
+      "samples": []
     },
     "models": {
       "filter": {
         "model": "claude-haiku-5-5",
-        "calls": 3,
-        "inputTokens": 9471,
-        "outputTokens": 1032,
-        "cost": 0.0015
+        "calls": 4,
+        "inputTokens": 22694,
+        "outputTokens": 11712,
+        "cost": 0.0082
       },
       "analysis": {
         "model": "claude-opus-5-5",
-        "calls": 1,
-        "inputTokens": 3016,
-        "outputTokens": 208,
-        "cost": 0.0162
+        "calls": 2,
+        "inputTokens": 9380,
+        "outputTokens": 12699,
+        "cost": 0.2915
       }
     },
     "spend": {
-      "thisDesk": 0.0177,
-      "today": 2.7944,
+      "thisDesk": 0.2996,
+      "today": 0.2996,
       "cap": 6
     }
   },
