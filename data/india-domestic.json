@@ -2,12 +2,342 @@
   "schema": 4,
   "region": "India",
   "since": "2026-10-02",
-  "updatedAt": "2026-11-15T23:03:04.724Z",
+  "updatedAt": "2026-11-16T07:00:17.295Z",
   "sectors": [
     {
       "id": "energy",
       "name": "Energy",
       "items": [
+        {
+          "id": "sj3lxzd",
+          "headline": "‘Not technically possible’: Union Minister Suresh Gopi rules out immediate fuel price cut, cites ₹42,000 crore loss",
+          "url": "https://www.livemint.com/news/india/not-technically-possible-suresh-gopi-rules-out-immediate-fuel-price-cut-cites-42-000-crore-loss-11794796216557.html",
+          "source": "mint",
+          "date": "2026-11-16T03:51:17.000Z",
+          "relevance": "high",
+          "image": "https://www.livemint.com/lm-img/img/2026/11/16/1600x900/logo/ANI-20261112090-0_1794800583047_EaYY_1794800613927_OxgB_0a25918b-8420-4bda-9946-c353c9a46dc2_YZIT.jpg",
+          "why": "Union Minister Suresh Gopi said an immediate cut in fuel prices is not technically possible, citing a loss of ₹42,000 crore and the strain the West Asia conflict has placed on fuel retailers' balance sheets.",
+          "implications": [
+            "Petrol and diesel buyers may not see lower pump prices soon, because the retailers' reported losses leave little room to pass relief to customers.",
+            "Because transport costs affect many goods, unchanged fuel prices could keep freight and delivery costs elevated for businesses and households, though the size of that effect has not been reported."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-16T06:57:51.365Z",
+            "tier": "quick",
+            "primary": "pass_through",
+            "complement": null,
+            "features": [
+              "price_move"
+            ],
+            "exposure": {
+              "level": "high",
+              "reason": "Petrol and diesel are household essentials, and pump prices also shape transport and freight costs. A minister ruling out a cut therefore reaches a very large number of consumers."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "No date is given for a price cut, so the timing depends on when retailers recover their losses and when the West Asia conflict eases."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "The account rests on a single outlet, Mint, but it attributes the statement on record to a Union Minister. Details of the ₹42,000 crore loss are not reported."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "petrol and diesel prices",
+                "effect": "Motorists and businesses that use fuel may not get lower pump prices soon, because retailers say their losses leave no room for an immediate cut.",
+                "basis": "reported"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Any announcement by fuel retailers or the government changing petrol and diesel prices",
+                "why": "It would show whether the retailers' losses are easing enough to allow relief at the pump.",
+                "when": "",
+                "where": "Ministry of Petroleum and Natural Gas"
+              },
+              {
+                "what": "Developments in the West Asia conflict that affect the cost of supplying fuel to India",
+                "why": "The minister tied the pricing constraint to the conflict, so changes in it would alter the retailers' position.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "India imports most of its crude oil, so global price shocks reach its fuel retailers quickly. Most pump sales are made by state-run companies, and the government influences how fast price changes reach consumers."
+            ],
+            "terms": [],
+            "frameworks": {
+              "pass_through": {
+                "driver": {
+                  "variable": "Fuel supply costs under the West Asia conflict",
+                  "direction": "up",
+                  "size": ""
+                },
+                "product": "petrol & diesel",
+                "rungs": [
+                  {
+                    "stage": "West Asia conflict → Fuel retailers' costs",
+                    "pass": "likely",
+                    "damper": "The minister said the conflict has severely hurt retailers' balance sheets, so higher costs appear to have been absorbed by the companies rather than passed on in full.",
+                    "lag": "weeks"
+                  },
+                  {
+                    "stage": "Retailers' losses → Room for a price cut",
+                    "pass": "blocked",
+                    "damper": "The minister said an immediate cut is not technically possible, citing a loss of ₹42,000 crore, so retailers cannot lower prices until the losses are addressed.",
+                    "lag": "months"
+                  },
+                  {
+                    "stage": "Retail price decision → Pump price paid by consumers",
+                    "pass": "unclear",
+                    "damper": "Central and state taxes make up a large part of the pump price, and government influence over pricing can slow or soften any change.",
+                    "lag": "weeks"
+                  }
+                ],
+                "end_user": {
+                  "group": "Fuel & LPG users",
+                  "effect": "Motorists and businesses may not notice a fall in petrol and diesel prices soon. Any relief would depend on retailers' losses easing, and no timing has been reported."
+                }
+              }
+            }
+          },
+          "place": {
+            "name": "New Delhi",
+            "country": "India",
+            "lat": 28.61,
+            "lon": 77.21
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "‘Not technically possible’: Union Minister Suresh Gopi rules out immediate fuel price cut, cites ₹42,000 crore loss",
+              "url": "https://www.livemint.com/news/india/not-technically-possible-suresh-gopi-rules-out-immediate-fuel-price-cut-cites-42-000-crore-loss-11794796216557.html",
+              "date": "2026-11-16T03:51:17.000Z",
+              "kind": "hard",
+              "summary": "Suresh Gopi attributed the pricing constraints to the ongoing conflict in West Asia, which has severely impacted fuel retailers' balance sheets.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/11/16/1600x900/logo/ANI-20261112090-0_1794800583047_EaYY_1794800613927_OxgB_0a25918b-8420-4bda-9946-c353c9a46dc2_YZIT.jpg"
+            }
+          ],
+          "stats": {
+            "v": 2,
+            "at": "2026-11-16T06:58:09.605Z",
+            "series": [
+              {
+                "title": "Diesel retail price in Delhi, selected months",
+                "unit": "Rs per litre",
+                "publisher": "Petroleum Planning and Analysis Cell (PPAC), via Ministry of Petroleum & Natural",
+                "points": [
+                  {
+                    "period": "Jun 2022",
+                    "value": 89.62,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2283118&reg=48&lang=2",
+                    "source": "Ethanol Blended Petrol Programme- Q&A"
+                  },
+                  {
+                    "period": "Mar 2026",
+                    "value": 87.67,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2283118&reg=48&lang=2",
+                    "source": "Ethanol Blended Petrol Programme- Q&A"
+                  },
+                  {
+                    "period": "May 2026",
+                    "value": 87.67,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2283118&reg=48&lang=2",
+                    "source": "Ethanol Blended Petrol Programme- Q&A"
+                  },
+                  {
+                    "period": "Jun 2026",
+                    "value": 95.2,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2283118&reg=48&lang=2",
+                    "source": "Ethanol Blended Petrol Programme- Q&A"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2283118&reg=48&lang=2",
+                    "title": "Ethanol Blended Petrol Programme- Q&A",
+                    "domain": "pib.gov.in"
+                  }
+                ],
+                "domains": [
+                  "pib.gov.in"
+                ],
+                "dropped": 0,
+                "why": "It tracks Indian retail diesel prices in Delhi, the same fuel-pricing subject the story covers in the context of possible price cuts by fuel retailers.",
+                "reused": true,
+                "checkedAt": "2026-11-13T20:08:49.062Z"
+              }
+            ]
+          },
+          "thread": "t1t9su9v"
+        },
+        {
+          "id": "s1r4w5pb",
+          "headline": "Petrol and diesel prices today, November 16: Check fuel cost in Delhi, Mumbai, Bengaluru",
+          "url": "https://www.livemint.com/news/india/petrol-and-diesel-prices-today-november-16-check-fuel-cost-in-delhi-mumbai-bengaluru-11794791308719.html",
+          "source": "mint",
+          "date": "2026-11-16T02:25:06.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2026/11/16/1600x900/logo/petrol_1794795564932_WfVb_1794795565055_EYlK_bbb945a1-1740-4459-a650-f8d9c5767b22_vNJx.jpg",
+          "why": "Mint reports that India's fuel retailers have kept petrol and diesel prices unchanged, shielding consumers from the recent Middle East-driven oil price shocks. The price freeze protects households now, but the pressure on retailers continues.",
+          "implications": [
+            "While retailers hold pump prices steady, higher crude costs are absorbed by the fuel retailers rather than passed to drivers, which can reduce their earnings on petrol and diesel.",
+            "Transport and freight costs, which depend on diesel, stay stable for now, which helps limit price increases in food and other goods carried by road."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-16T06:55:54.127Z",
+            "tier": "quick",
+            "primary": "pass_through",
+            "complement": null,
+            "features": [
+              "price_move"
+            ],
+            "exposure": {
+              "level": "high",
+              "reason": "Petrol and diesel are household essentials, and diesel costs also influence transport and food prices. Pump prices are currently unchanged, but they could be revised if the pressure continues."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Timing depends on whether and when retailers decide to revise pump prices, which has not been announced; the current freeze protects consumers for now."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single outlet's daily price report with no named official source; the size of retailers' losses and any plan to change prices are unreported."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "petrol and diesel prices",
+                "effect": "Pump prices have not changed so far, but they could rise later if retailers stop absorbing the higher cost of crude oil.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Any revision to daily petrol and diesel prices in Delhi, Mumbai and Bengaluru by fuel retailers",
+                "why": "A change would show that the shielding of consumers from higher crude costs has ended.",
+                "when": "",
+                "where": "Indian Oil Corporation retail price page"
+              }
+            ],
+            "context": [
+              "India imports most of its crude oil, so global price moves reach its refiners directly. Pump prices are set by fuel retailers and include substantial central and state taxes, which makes them slow to change."
+            ],
+            "terms": [],
+            "frameworks": {
+              "pass_through": {
+                "driver": {
+                  "variable": "Global crude oil price",
+                  "direction": "up",
+                  "size": ""
+                },
+                "product": "petrol & diesel",
+                "rungs": [
+                  {
+                    "stage": "Global crude price → Refiners' cost",
+                    "pass": "likely",
+                    "damper": "India imports most of its crude, so higher global prices raise refiners' purchase costs, although crude bought earlier and held in inventory can delay the full effect.",
+                    "lag": "weeks"
+                  },
+                  {
+                    "stage": "Refiners' cost → Retailers' pricing decision",
+                    "pass": "blocked",
+                    "damper": "Fuel retailers have kept petrol and diesel rates unchanged, absorbing the higher cost instead of raising prices.",
+                    "lag": "weeks"
+                  },
+                  {
+                    "stage": "Retail price → Price at the pump",
+                    "pass": "partial",
+                    "damper": "Central and state taxes form a large part of the pump price, so any change in the base price reaches drivers in a muted form.",
+                    "lag": "days"
+                  }
+                ],
+                "end_user": {
+                  "group": "Fuel & LPG users",
+                  "effect": "Drivers have not seen a change in pump prices so far. If retailers later pass on higher crude costs, any increase may be gradual and softened by taxes."
+                }
+              }
+            }
+          },
+          "place": {
+            "name": "New Delhi",
+            "country": "India",
+            "lat": 28.6,
+            "lon": 77.2
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "Petrol and diesel prices today, November 16: Check fuel cost in Delhi, Mumbai, Bengaluru",
+              "url": "https://www.livemint.com/news/india/petrol-and-diesel-prices-today-november-16-check-fuel-cost-in-delhi-mumbai-bengaluru-11794791308719.html",
+              "date": "2026-11-16T02:25:06.000Z",
+              "kind": "hard",
+              "summary": "Indian consumers remain shielded from the recent Middle East-driven oil price shocks, as domestic fuel retailers continue to keep petrol and diesel rates unchanged.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/11/16/1600x900/logo/petrol_1794795564932_WfVb_1794795565055_EYlK_bbb945a1-1740-4459-a650-f8d9c5767b22_vNJx.jpg"
+            }
+          ],
+          "stats": {
+            "v": 2,
+            "at": "2026-11-16T06:58:11.488Z",
+            "series": [
+              {
+                "title": "Diesel retail price in Delhi, selected months",
+                "unit": "Rs per litre",
+                "publisher": "Petroleum Planning and Analysis Cell (PPAC), via Ministry of Petroleum & Natural",
+                "points": [
+                  {
+                    "period": "Jun 2022",
+                    "value": 89.62,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2283118&reg=48&lang=2",
+                    "source": "Ethanol Blended Petrol Programme- Q&A"
+                  },
+                  {
+                    "period": "Mar 2026",
+                    "value": 87.67,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2283118&reg=48&lang=2",
+                    "source": "Ethanol Blended Petrol Programme- Q&A"
+                  },
+                  {
+                    "period": "May 2026",
+                    "value": 87.67,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2283118&reg=48&lang=2",
+                    "source": "Ethanol Blended Petrol Programme- Q&A"
+                  },
+                  {
+                    "period": "Jun 2026",
+                    "value": 95.2,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2283118&reg=48&lang=2",
+                    "source": "Ethanol Blended Petrol Programme- Q&A"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2283118&reg=48&lang=2",
+                    "title": "Ethanol Blended Petrol Programme- Q&A",
+                    "domain": "pib.gov.in"
+                  }
+                ],
+                "domains": [
+                  "pib.gov.in"
+                ],
+                "dropped": 0,
+                "why": "This series tracks retail diesel prices in Delhi, the same country and fuel-price subject as the story's report that retailers have held pump prices steady.",
+                "reused": true,
+                "checkedAt": "2026-11-13T20:08:49.062Z"
+              }
+            ]
+          },
+          "thread": "t1qd7rgj"
+        },
         {
           "id": "s9vdp4c",
           "headline": "LPG cylinder price in Delhi: Why Ujjwala beneficiaries pay ₹642 for a cylinder that costs ₹1,267.24 to supply",
@@ -18048,6 +18378,203 @@
       "name": "Economy & Trade",
       "items": [
         {
+          "id": "sni1run",
+          "headline": "Piyush Goyal in Egypt: Both sides to discuss increasing cooperation in infra, manufacturing, logistics",
+          "url": "https://www.thehindu.com/news/national/piyush-goyal-in-egypt-both-sides-to-discuss-increasing-cooperation-in-infra-manufacturing-logistics/article71701055.ece",
+          "source": "thehindu",
+          "date": "2026-11-14T07:29:16.000Z",
+          "relevance": "medium",
+          "image": "https://th-i.thgim.com/public/incoming/o8zhm7/article71701070.ece/alternates/LANDSCAPE_1200/PTI11_13_2026_000442B.jpg",
+          "why": "Commerce Minister Piyush Goyal visited Egypt, where India and Egypt agreed to set up a Joint Working Group to explore a preferential or free trade agreement. They also discussed non-tariff barriers affecting trade between the two countries.",
+          "implications": [
+            "A working group only prepares the ground by defining the scope of talks, so tariffs on Indian goods in Egypt, and on Egyptian goods in India, do not change immediately.",
+            "If non-tariff barriers such as standards, licensing or customs procedures are eased, Indian exporters could find it simpler to sell in Egypt. That is an inference, because no specific measures have been reported."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-16T06:59:44.824Z",
+            "tier": "quick",
+            "primary": "timeline",
+            "complement": null,
+            "features": [
+              "fast_moving",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The effect runs through one bilateral trade relationship, with about $6.5 billion in annual trade, and mainly touches Indian exporters and importers dealing with Egypt rather than household essentials."
+            },
+            "horizon": {
+              "value": "years",
+              "reason": "The countries have only agreed to explore terms of reference, and any agreement that changes tariffs would need negotiation, signing and ratification first."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "All three reports come from The Hindu and cite Goyal and the outcome of the talks, but no second outlet or Egyptian statement is available."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Large exporters",
+                "direction": "up",
+                "what": "market access in Egypt",
+                "effect": "A future trade agreement could lower tariffs and ease barriers for Indian firms selling into Egypt and, through it, to Africa, the Middle East and Europe.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "terms of trade with Egypt",
+                "effect": "Any tariff or procedural changes would apply to goods moving both ways, but no specific products or measures have been reported.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "The first meeting of the Joint Working Group or publication of its terms of reference for a trade agreement",
+                "why": "It would show how wide the planned agreement is and whether talks are moving towards formal negotiations.",
+                "when": "",
+                "where": "Ministry of Commerce and Industry"
+              },
+              {
+                "what": "Any announcement of specific steps to reduce non-tariff barriers between India and Egypt",
+                "why": "It would show whether Indian exporters can expect practical changes in market access before any agreement is concluded.",
+                "when": "",
+                "where": "Ministry of Commerce and Industry"
+              }
+            ],
+            "context": [
+              "Egypt's position between Africa, the Middle East and Europe, and its control of the Suez Canal, makes it a natural gateway for Indian goods and shipping routes.",
+              "Trade agreements usually move from exploratory groups to formal negotiations and then to signing, a process that often takes a long time."
+            ],
+            "terms": [
+              {
+                "term": "PTA or FTA",
+                "meaning": "A preferential trade agreement cuts tariffs on a limited list of goods, while a free trade agreement covers a much wider range of goods and services."
+              }
+            ],
+            "frameworks": {
+              "timeline": {
+                "entries": [
+                  {
+                    "when": "14 Nov 2026",
+                    "what": "Piyush Goyal was in Egypt, where the two sides were due to discuss greater cooperation in infrastructure, manufacturing and logistics, with Egypt presented as a gateway to Africa, the Middle East and Europe.",
+                    "actor": "Piyush Goyal, Indian Commerce Minister",
+                    "outlet": "The Hindu",
+                    "type": "action",
+                    "verification": "confirmed"
+                  },
+                  {
+                    "when": "15 Nov 2026",
+                    "what": "Speaking to an Indian Community Association event in Cairo, Goyal said bilateral trade between India and Egypt stood at about $6.5 billion and that both countries wanted stronger trade and investment ties.",
+                    "actor": "Piyush Goyal, Indian Commerce Minister",
+                    "outlet": "The Hindu",
+                    "type": "claim",
+                    "verification": "claimed"
+                  },
+                  {
+                    "when": "16 Nov 2026",
+                    "what": "India and Egypt decided to set up a Joint Working Group to explore terms of reference for a preferential or free trade agreement, and discussed steps to address non-tariff barriers.",
+                    "actor": "India and Egypt",
+                    "outlet": "The Hindu",
+                    "type": "action",
+                    "verification": "confirmed"
+                  }
+                ],
+                "current_status": "A Joint Working Group is to be set up to explore the scope of a preferential or free trade agreement. No negotiations, tariff changes or timelines have been announced.",
+                "open_questions": [
+                  "Will the new agreement be a limited preferential trade agreement or a full free trade agreement?",
+                  "Which non-tariff barriers will be addressed first, and by when?"
+                ]
+              }
+            }
+          },
+          "place": {
+            "name": "Cairo",
+            "country": "Egypt",
+            "lat": 30.04,
+            "lon": 31.24
+          },
+          "reports": [
+            {
+              "source": "thehindu",
+              "headline": "Piyush Goyal in Egypt: Both sides to discuss increasing cooperation in infra, manufacturing, logistics",
+              "url": "https://www.thehindu.com/news/national/piyush-goyal-in-egypt-both-sides-to-discuss-increasing-cooperation-in-infra-manufacturing-logistics/article71701055.ece",
+              "date": "2026-11-14T07:29:16.000Z",
+              "kind": "hard",
+              "summary": "Egypt's strategic geographical location offers significant opportunities for Indian businesses to strengthen their presence in the country and access markets across Africa, the Middle East and Europe",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/incoming/o8zhm7/article71701070.ece/alternates/LANDSCAPE_1200/PTI11_13_2026_000442B.jpg"
+            },
+            {
+              "source": "thehindu",
+              "headline": "India, Egypt look to strengthen trade, investment ties, Piyush Goyal says",
+              "url": "https://www.thehindu.com/news/national/piyush-goyal-in-egypt-talks-to-strengthen-india-egypt-ties/article71704146.ece",
+              "date": "2026-11-15T05:42:37.000Z",
+              "kind": "hard",
+              "summary": "Addressing a community event organised by the Indian Community Association in Egypt in Cairo, Piyush Goyal said the bilateral trade between the countries stood at about $6.5 billion",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/incoming/yt9rop/article71704158.ece/alternates/LANDSCAPE_1200/PTI11_14_2026_000335B.jpg"
+            },
+            {
+              "source": "thehindu",
+              "headline": "India, Egypt discuss steps to boost trade, address non-tariff barriers",
+              "url": "https://www.thehindu.com/news/national/piyush-goyal-in-egypt-for-india-egypt-joint-trade-committee-jtc-meet/article71706845.ece",
+              "date": "2026-11-16T05:58:35.000Z",
+              "kind": "hard",
+              "summary": "The two countries have decided to set up a Joint Working Group to explore the Terms of Reference for a PTA or FTA to facilitate stronger bilateral trade, improve access to both markets and promote investment linkages between the two countries",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/incoming/cjdqcd/article71706918.ece/alternates/LANDSCAPE_1200/15th-PTI-IndiaGVLGQ7IHB.3.jpg.jpg"
+            }
+          ],
+          "finChecked": true,
+          "thread": "t10q01pj"
+        },
+        {
+          "id": "sbsuq3p",
+          "headline": "Can India bridge trade gap with Southeast Asia as PM Modi heads to Manila for ASEAN amid China’s growing clout?",
+          "url": "https://www.livemint.com/news/world/can-india-bridge-trade-gap-with-southeast-asia-as-pm-modi-heads-to-manila-for-asean-amid-china-s-growing-clout-11794578664909.html",
+          "source": "mint",
+          "date": "2026-11-13T16:12:22.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2026/11/13/1600x900/logo/aseanmpodi_1794585037183_mmxZ_1794585042560_qJ18_d5cab19d-e78b-4093-a39a-dbd59dc291ef_gBNo.png",
+          "why": "",
+          "implications": [],
+          "place": {
+            "name": "Manila",
+            "country": "Philippines",
+            "lat": 14.6,
+            "lon": 120.98,
+            "involves": [
+              "China"
+            ]
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "Can India bridge trade gap with Southeast Asia as PM Modi heads to Manila for ASEAN amid China’s growing clout?",
+              "url": "https://www.livemint.com/news/world/can-india-bridge-trade-gap-with-southeast-asia-as-pm-modi-heads-to-manila-for-asean-amid-china-s-growing-clout-11794578664909.html",
+              "date": "2026-11-13T16:12:22.000Z",
+              "kind": "feature",
+              "summary": "PM Modi visits Manila for the ASEAN-India Summit from November 16-18 as the country seeks to deepen trade ties with Southeast Asia. But a trade deficit of over $45 billion and China's dominance of regional supply chains pose major challenges. India is pushing to review its trade pact with ASEAN.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/11/13/1600x900/logo/aseanmpodi_1794585037183_mmxZ_1794585042560_qJ18_d5cab19d-e78b-4093-a39a-dbd59dc291ef_gBNo.png"
+            },
+            {
+              "source": "thehindu",
+              "headline": "India’s relation with ASEAN at heart of Act East Policy, says PM Modi",
+              "url": "https://www.thehindu.com/news/national/prime-minister-narendra-modi-manila-asean-india-summit-east-asia-summit/article71706657.ece",
+              "date": "2026-11-16T03:30:00.000Z",
+              "kind": "hard",
+              "summary": "Prime Minister Narendra Modi is visiting Manila on November 16-17 to participate in the 23rd ASEAN-India Summit and the 21st East Asia Summit at the invitation of Philippine President Ferdinand R Marcos Jr.",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/incoming/o3nwbo/article71706664.ece/alternates/LANDSCAPE_1200/PTI11_03_2026_000215B.jpg"
+            }
+          ],
+          "finChecked": true,
+          "thread": "tetswfc"
+        },
+        {
           "id": "suhoowo",
           "headline": "Most of India-US trade deal issues sorted, last stretch of concerns being discussed: Jaishankar",
           "url": "https://indianexpress.com/article/india/india-us-trade-deal-issues-sorted-jaishankar-donald-trump-tariff-china-10963432/",
@@ -18208,7 +18735,145 @@
             }
           ],
           "finChecked": true,
-          "thread": "t3dl82n"
+          "thread": "t3dl82n",
+          "stats": {
+            "v": 2,
+            "at": "2026-11-16T06:58:25.612Z",
+            "series": [
+              {
+                "title": "US goods imports from India, monthly",
+                "unit": "US$ million",
+                "publisher": "U.S. Census Bureau",
+                "points": [
+                  {
+                    "period": "Jan 2026",
+                    "value": 7867.9,
+                    "url": "https://www.census.gov/foreign-trade/balance/c5330.html",
+                    "source": "International Trade"
+                  },
+                  {
+                    "period": "Feb 2026",
+                    "value": 6778.7,
+                    "url": "https://www.census.gov/foreign-trade/balance/c5330.html",
+                    "source": "International Trade"
+                  },
+                  {
+                    "period": "Mar 2026",
+                    "value": 8364.5,
+                    "url": "https://www.census.gov/foreign-trade/balance/c5330.html",
+                    "source": "International Trade"
+                  },
+                  {
+                    "period": "Apr 2026",
+                    "value": 8260.1,
+                    "url": "https://www.census.gov/foreign-trade/balance/c5330.html",
+                    "source": "International Trade"
+                  },
+                  {
+                    "period": "May 2026",
+                    "value": 9136.4,
+                    "url": "https://www.census.gov/foreign-trade/balance/c5330.html",
+                    "source": "International Trade"
+                  },
+                  {
+                    "period": "Jun 2026",
+                    "value": 8887.3,
+                    "url": "https://www.census.gov/foreign-trade/balance/c5330.html",
+                    "source": "International Trade"
+                  },
+                  {
+                    "period": "Jul 2026",
+                    "value": 9581.5,
+                    "url": "https://www.census.gov/foreign-trade/balance/c5330.html",
+                    "source": "International Trade"
+                  },
+                  {
+                    "period": "Aug 2026",
+                    "value": 9165.1,
+                    "url": "https://www.census.gov/foreign-trade/balance/c5330.html",
+                    "source": "International Trade"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.census.gov/foreign-trade/balance/c5330.html",
+                    "title": "International Trade",
+                    "domain": "census.gov"
+                  }
+                ],
+                "domains": [
+                  "census.gov"
+                ],
+                "dropped": 0,
+                "why": "Both series track U.S. goods imports from India, the same trade flow the preferential-access deal would affect, at monthly and annual frequency.",
+                "reused": true,
+                "checkedAt": "2026-11-02T19:25:40.333Z"
+              },
+              {
+                "title": "US goods imports from India, annual total",
+                "unit": "US$ million",
+                "publisher": "U.S. Census Bureau",
+                "points": [
+                  {
+                    "period": "2019",
+                    "value": 57879,
+                    "url": "https://www.census.gov/foreign-trade/balance/c5330.html",
+                    "source": "International Trade"
+                  },
+                  {
+                    "period": "2020",
+                    "value": 51254.6,
+                    "url": "https://www.census.gov/foreign-trade/balance/c5330.html",
+                    "source": "International Trade"
+                  },
+                  {
+                    "period": "2021",
+                    "value": 73308.2,
+                    "url": "https://www.census.gov/foreign-trade/balance/c5330.html",
+                    "source": "International Trade"
+                  },
+                  {
+                    "period": "2022",
+                    "value": 85517.4,
+                    "url": "https://www.census.gov/foreign-trade/balance/c5330.html",
+                    "source": "International Trade"
+                  },
+                  {
+                    "period": "2023",
+                    "value": 83543.6,
+                    "url": "https://www.census.gov/foreign-trade/balance/c5330.html",
+                    "source": "International Trade"
+                  },
+                  {
+                    "period": "2024",
+                    "value": 87284.8,
+                    "url": "https://www.census.gov/foreign-trade/balance/c5330.html",
+                    "source": "International Trade"
+                  },
+                  {
+                    "period": "2025",
+                    "value": 103776.3,
+                    "url": "https://www.census.gov/foreign-trade/balance/c5330.html",
+                    "source": "International Trade"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.census.gov/foreign-trade/balance/c5330.html",
+                    "title": "International Trade",
+                    "domain": "census.gov"
+                  }
+                ],
+                "domains": [
+                  "census.gov"
+                ],
+                "dropped": 0,
+                "why": "Both series track U.S. goods imports from India, the same trade flow the preferential-access deal would affect, at monthly and annual frequency.",
+                "reused": true,
+                "checkedAt": "2026-11-02T19:25:40.333Z"
+              }
+            ]
+          }
         },
         {
           "id": "srheo5j",
@@ -18284,123 +18949,6 @@
           ],
           "finChecked": true,
           "thread": "t882231"
-        },
-        {
-          "id": "sni1run",
-          "headline": "Piyush Goyal in Egypt: Both sides to discuss increasing cooperation in infra, manufacturing, logistics",
-          "url": "https://www.thehindu.com/news/national/piyush-goyal-in-egypt-both-sides-to-discuss-increasing-cooperation-in-infra-manufacturing-logistics/article71701055.ece",
-          "source": "thehindu",
-          "date": "2026-11-14T07:29:16.000Z",
-          "relevance": "medium",
-          "image": "https://th-i.thgim.com/public/incoming/o8zhm7/article71701070.ece/alternates/LANDSCAPE_1200/PTI11_13_2026_000442B.jpg",
-          "why": "Commerce Minister Piyush Goyal is in Egypt, where both sides are to discuss deeper cooperation in infrastructure, manufacturing and logistics. Egypt's location could give Indian businesses a base for reaching African, Middle Eastern and European markets.",
-          "implications": [
-            "Indian manufacturers and logistics firms could gain a possible regional hub if the talks lead to concrete investment or trade arrangements.",
-            "Any outcome depends on agreements that have not yet been announced, so the effect on Indian exporters remains conditional for now."
-          ],
-          "analysis": {
-            "v": 3,
-            "at": "2026-11-14T10:46:29.159Z",
-            "tier": "quick",
-            "primary": "impact_chain",
-            "complement": null,
-            "features": [
-              "pending_outcome"
-            ],
-            "exposure": {
-              "level": "medium",
-              "reason": "The effect runs through one bilateral relationship and the industries, such as manufacturing and logistics, that might expand into Egypt. No household essential is touched in the reports."
-            },
-            "horizon": {
-              "value": "months",
-              "reason": "Trade and investment cooperation usually needs agreements, approvals and business decisions before it changes export or investment patterns."
-            },
-            "confidence": {
-              "level": "medium",
-              "reason": "This rests on one report from The Hindu about the stated agenda; no agreements or official outcomes have been reported yet."
-            },
-            "outlets": 1,
-            "affected": [
-              {
-                "group": "Large exporters",
-                "direction": "up",
-                "what": "access to regional markets",
-                "effect": "Stronger ties with Egypt could give larger Indian exporters and manufacturers a route into African, Middle Eastern and European markets.",
-                "basis": "inferred"
-              },
-              {
-                "group": "MSME exporters",
-                "direction": "unclear",
-                "what": "export opportunities",
-                "effect": "Smaller exporters could benefit if cooperation in logistics and manufacturing lowers the cost of reaching Egypt, though no specific measure has been reported.",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "Any agreements or joint statements on infrastructure, manufacturing or logistics issued during or after the visit",
-                "why": "They would show whether the talks produce concrete commitments for Indian businesses.",
-                "when": "",
-                "where": "Ministry of Commerce and Industry"
-              }
-            ],
-            "context": [
-              "Egypt sits at the meeting point of Africa, the Middle East and Europe, and it hosts the Suez Canal, a major shipping route between Asia and Europe."
-            ],
-            "terms": [],
-            "frameworks": {
-              "impact_chain": {
-                "chain": [
-                  {
-                    "step": "Minister visits Egypt for talks",
-                    "detail": "Piyush Goyal is in Egypt, where both sides are to discuss more cooperation in infrastructure, manufacturing and logistics.",
-                    "basis": "reported"
-                  },
-                  {
-                    "step": "Egypt seen as a gateway",
-                    "detail": "Egypt's location is described as an opportunity for Indian firms to strengthen their presence and reach markets across Africa, the Middle East and Europe.",
-                    "basis": "reported"
-                  },
-                  {
-                    "step": "Indian firms may expand",
-                    "detail": "If agreements follow, Indian manufacturers and logistics operators could set up or grow operations in Egypt and use it as a base for wider exports.",
-                    "basis": "inferred"
-                  }
-                ],
-                "breaks_if": "The talks end without concrete agreements or investment commitments, in which case Indian businesses would see no practical change in market access."
-              }
-            }
-          },
-          "place": {
-            "name": "Cairo",
-            "country": "Egypt",
-            "lat": 30.04,
-            "lon": 31.24
-          },
-          "reports": [
-            {
-              "source": "thehindu",
-              "headline": "Piyush Goyal in Egypt: Both sides to discuss increasing cooperation in infra, manufacturing, logistics",
-              "url": "https://www.thehindu.com/news/national/piyush-goyal-in-egypt-both-sides-to-discuss-increasing-cooperation-in-infra-manufacturing-logistics/article71701055.ece",
-              "date": "2026-11-14T07:29:16.000Z",
-              "kind": "hard",
-              "summary": "Egypt's strategic geographical location offers significant opportunities for Indian businesses to strengthen their presence in the country and access markets across Africa, the Middle East and Europe",
-              "summaryV": 3,
-              "image": "https://th-i.thgim.com/public/incoming/o8zhm7/article71701070.ece/alternates/LANDSCAPE_1200/PTI11_13_2026_000442B.jpg"
-            },
-            {
-              "source": "thehindu",
-              "headline": "India, Egypt look to strengthen trade, investment ties, Piyush Goyal says",
-              "url": "https://www.thehindu.com/news/national/piyush-goyal-in-egypt-talks-to-strengthen-india-egypt-ties/article71704146.ece",
-              "date": "2026-11-15T05:42:37.000Z",
-              "kind": "hard",
-              "summary": "Addressing a community event organised by the Indian Community Association in Egypt in Cairo, Piyush Goyal said the bilateral trade between the countries stood at about $6.5 billion",
-              "summaryV": 3,
-              "image": "https://th-i.thgim.com/public/incoming/yt9rop/article71704158.ece/alternates/LANDSCAPE_1200/PTI11_14_2026_000335B.jpg"
-            }
-          ],
-          "finChecked": true,
-          "thread": "t10q01pj"
         },
         {
           "id": "sdx77mq",
@@ -19025,40 +19573,6 @@
           ],
           "finChecked": true,
           "thread": "t3dl82n"
-        },
-        {
-          "id": "sbsuq3p",
-          "headline": "Can India bridge trade gap with Southeast Asia as PM Modi heads to Manila for ASEAN amid China’s growing clout?",
-          "url": "https://www.livemint.com/news/world/can-india-bridge-trade-gap-with-southeast-asia-as-pm-modi-heads-to-manila-for-asean-amid-china-s-growing-clout-11794578664909.html",
-          "source": "mint",
-          "date": "2026-11-13T16:12:22.000Z",
-          "relevance": "medium",
-          "image": "https://www.livemint.com/lm-img/img/2026/11/13/1600x900/logo/aseanmpodi_1794585037183_mmxZ_1794585042560_qJ18_d5cab19d-e78b-4093-a39a-dbd59dc291ef_gBNo.png",
-          "why": "",
-          "implications": [],
-          "place": {
-            "name": "Manila",
-            "country": "Philippines",
-            "lat": 14.6,
-            "lon": 120.98,
-            "involves": [
-              "China"
-            ]
-          },
-          "reports": [
-            {
-              "source": "mint",
-              "headline": "Can India bridge trade gap with Southeast Asia as PM Modi heads to Manila for ASEAN amid China’s growing clout?",
-              "url": "https://www.livemint.com/news/world/can-india-bridge-trade-gap-with-southeast-asia-as-pm-modi-heads-to-manila-for-asean-amid-china-s-growing-clout-11794578664909.html",
-              "date": "2026-11-13T16:12:22.000Z",
-              "kind": "feature",
-              "summary": "PM Modi visits Manila for the ASEAN-India Summit from November 16-18 as the country seeks to deepen trade ties with Southeast Asia. But a trade deficit of over $45 billion and China's dominance of regional supply chains pose major challenges. India is pushing to review its trade pact with ASEAN.",
-              "summaryV": 3,
-              "image": "https://www.livemint.com/lm-img/img/2026/11/13/1600x900/logo/aseanmpodi_1794585037183_mmxZ_1794585042560_qJ18_d5cab19d-e78b-4093-a39a-dbd59dc291ef_gBNo.png"
-            }
-          ],
-          "finChecked": true,
-          "thread": "tetswfc"
         },
         {
           "id": "syyq99z",
@@ -36535,6 +37049,397 @@
       "name": "Finance",
       "items": [
         {
+          "id": "s1pk04vk",
+          "headline": "Stock markets rally in early trade led by foreign fund inflows, lower crude oil",
+          "url": "https://www.thehindu.com/business/stock-markets-rally-in-early-trade-led-by-foreign-fund-inflows-lower-crude-oil/article71706819.ece",
+          "source": "thehindu",
+          "date": "2026-11-16T05:15:00.000Z",
+          "relevance": "medium",
+          "image": "https://th-i.thgim.com/public/incoming/lvfttn/article71706834.ece/alternates/LANDSCAPE_1200/iStock-2242901870.jpg",
+          "why": "Indian share indices rose in early trade, with the Sensex up 414.36 points at 82,010.15 and the Nifty up 102.10 points at 25,252.50. The Hindu attributes the rally to foreign fund inflows and lower crude oil prices.",
+          "implications": [
+            "Higher index levels lift the value of shares held directly and through mutual funds, so investors with equity exposure may see paper gains from the early move."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-16T06:57:51.366Z",
+            "tier": "quick",
+            "primary": "market_move",
+            "complement": null,
+            "features": [
+              "market_move"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The move reaches households holding shares directly or through mutual funds, but an early-trade gain does not by itself change essential prices or incomes."
+            },
+            "horizon": {
+              "value": "now",
+              "reason": ""
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single outlet's early-trade report, and the stated causes are not attributed to a named analyst or exchange statement."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Equity & mutual fund investors",
+                "direction": "up",
+                "what": "value of share holdings",
+                "effect": "Rising benchmark indices raise the market value of shares and equity mutual fund units, at least during early trade.",
+                "basis": "reported"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Whether the Sensex and Nifty hold their early gains at the close of trading",
+                "why": "Early-trade moves can reverse during the day, so the close shows whether the rally lasted.",
+                "when": "2026-11-16",
+                "where": "BSE and NSE"
+              }
+            ],
+            "context": [
+              "India imports most of its crude oil, so lower crude prices ease the import bill and inflation pressure, which markets generally view favourably. Foreign portfolio investors are also large buyers and sellers in Indian shares."
+            ],
+            "terms": [
+              {
+                "term": "Nifty",
+                "meaning": "The NSE's benchmark index of 50 large listed companies, used as a gauge of the overall Indian stock market."
+              }
+            ],
+            "frameworks": {
+              "market_move": {
+                "moved": {
+                  "what": "Sensex and Nifty",
+                  "kind": "share index",
+                  "direction": "up",
+                  "size": "Sensex 414.36 points to 82,010.15; Nifty 102.10 points to…",
+                  "period": "in early trade"
+                },
+                "cause": {
+                  "text": "The Hindu says the rally was led by foreign fund inflows and lower crude oil prices. No analyst or official is named as the source of this explanation.",
+                  "status": "claimed",
+                  "by": "The Hindu's market report"
+                },
+                "duration": "one_day",
+                "channels": [
+                  {
+                    "channel": "foreign investment flows",
+                    "india_link": "Foreign money coming into Indian shares lifts prices and brings in dollars, which may also support the rupee. Rising prices raise the value of savings held in equity mutual funds.",
+                    "basis": "inferred"
+                  }
+                ],
+                "not_settled": "It is not yet known whether the gains lasted through the day or how large the foreign inflows were."
+              }
+            }
+          },
+          "place": {
+            "name": "Mumbai",
+            "country": "India",
+            "lat": 19.08,
+            "lon": 72.88
+          },
+          "reports": [
+            {
+              "source": "thehindu",
+              "headline": "Stock markets rally in early trade led by foreign fund inflows, lower crude oil",
+              "url": "https://www.thehindu.com/business/stock-markets-rally-in-early-trade-led-by-foreign-fund-inflows-lower-crude-oil/article71706819.ece",
+              "date": "2026-11-16T05:15:00.000Z",
+              "kind": "hard",
+              "summary": "The 30-share BSE Sensex climbed 414.36 points to 82,010.15 in early trade and the 50-share NSE Nifty rallied 102.10 points to 25,252.50",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/incoming/lvfttn/article71706834.ece/alternates/LANDSCAPE_1200/iStock-2242901870.jpg"
+            }
+          ],
+          "stats": {
+            "v": 2,
+            "at": "2026-11-16T06:58:05.803Z",
+            "series": [
+              {
+                "title": "Net FPI investment in India, monthly",
+                "unit": "US$ million",
+                "publisher": "Reserve Bank of India",
+                "points": [
+                  {
+                    "period": "Jun 2025",
+                    "value": 2726,
+                    "url": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=24416",
+                    "source": "RBI Bulletin | Official Website of Reserve Bank of India"
+                  },
+                  {
+                    "period": "May 2026",
+                    "value": -4485,
+                    "url": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=24416",
+                    "source": "RBI Bulletin | Official Website of Reserve Bank of India"
+                  },
+                  {
+                    "period": "Jun 2026",
+                    "value": 2691,
+                    "url": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=24416",
+                    "source": "RBI Bulletin | Official Website of Reserve Bank of India"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=24416",
+                    "title": "RBI Bulletin | Official Website of Reserve Bank of India",
+                    "domain": "rbi.org.in"
+                  }
+                ],
+                "domains": [
+                  "rbi.org.in"
+                ],
+                "dropped": 0,
+                "why": "Net foreign portfolio investment into India directly measures the foreign fund inflows the story cites as the main driver of the rally, and the daily Brent crude price tracks the lower crude oil price",
+                "reused": true,
+                "checkedAt": "2026-11-06T19:48:42.760Z"
+              },
+              {
+                "title": "Brent crude oil spot price, daily",
+                "unit": "US$ per barrel",
+                "publisher": "U.S. Energy Information Administration",
+                "points": [
+                  {
+                    "period": "13 Oct 2026",
+                    "value": 125.78,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "14 Oct 2026",
+                    "value": 126.55,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "15 Oct 2026",
+                    "value": 126.35,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "16 Oct 2026",
+                    "value": 119.33,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "19 Oct 2026",
+                    "value": 118.82,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "20 Oct 2026",
+                    "value": 115.22,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "title": "Spot Prices for Crude Oil and Petroleum Products",
+                    "domain": "eia.gov"
+                  }
+                ],
+                "domains": [
+                  "eia.gov"
+                ],
+                "dropped": 0,
+                "why": "Net foreign portfolio investment into India directly measures the foreign fund inflows the story cites as the main driver of the rally, and the daily Brent crude price tracks the lower crude oil price",
+                "reused": true,
+                "checkedAt": "2026-10-23T05:07:39.435Z"
+              }
+            ]
+          },
+          "thread": "t1dc6sy9"
+        },
+        {
+          "id": "s19dej9",
+          "headline": "Rupee rises 6 paise to 94.13 against U.S. dollar in early trade",
+          "url": "https://www.thehindu.com/business/Industry/rupee-rises-6-paise-to-9413-against-us-dollar-in-early-trade/article71706772.ece",
+          "source": "thehindu",
+          "date": "2026-11-16T04:53:41.000Z",
+          "relevance": "medium",
+          "image": "https://th-i.thgim.com/public/incoming/uaiuz3/article71706782.ece/alternates/LANDSCAPE_1200/istockphoto-1257153929-612x612.jpg",
+          "why": "The rupee gained 6 paise to 94.13 against the US dollar in early trade. A strong dollar and rising US Treasury yields, amid uncertainty between the US and Iran, limited the gain.",
+          "implications": [
+            "At a rupee level near 94 per dollar, imports priced in dollars, such as crude oil and electronics, cost Indian buyers a large amount in rupees.",
+            "Rising US Treasury yields can draw global money towards dollar assets, which tends to weigh on emerging-market currencies such as the rupee."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-16T06:57:51.366Z",
+            "tier": "quick",
+            "primary": "pass_through",
+            "complement": null,
+            "features": [
+              "price_move"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The rupee-dollar rate affects the rupee cost of dollar-priced imports, but a 6 paise move is small, so the direct effect on household prices is limited."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Exchange-rate moves reach import costs and prices only gradually, as importers' existing contracts and inventories are used up."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single outlet's early-trade report with no official source, and the figures may change as trading continues."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Importers & traders",
+                "direction": "mixed",
+                "what": "rupee cost of imports",
+                "effect": "A slightly firmer rupee eases the rupee cost of dollar-priced imports, but a strong dollar limited the gain.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Students abroad",
+                "direction": "unclear",
+                "what": "cost of dollar payments",
+                "effect": "Families paying fees and living costs in dollars may see the rupee cost move with the exchange rate, though a 6 paise change is small.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Movement in US Treasury yields and the dollar's strength against the rupee in coming sessions",
+                "why": "These were the factors that capped the rupee's gain, so their direction shapes whether the rupee holds its level.",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "Developments in the uncertainty between the US and Iran",
+                "why": "The reports link this uncertainty to dollar strength, which affects the rupee.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "India imports most of its crude oil and pays for it in dollars, so the rupee's value shapes the cost of fuel imports. A weaker rupee raises the rupee cost of imports, while a stronger one lowers it."
+            ],
+            "terms": [
+              {
+                "term": "U.S. Treasury yields",
+                "meaning": "The return investors earn on US government bonds. When yields rise, dollar assets become more attractive to global investors."
+              }
+            ],
+            "frameworks": {
+              "pass_through": {
+                "driver": {
+                  "variable": "Rupee value against the US dollar",
+                  "direction": "up",
+                  "size": "6 paise to 94.13 per dollar in early trade"
+                },
+                "product": "other",
+                "rungs": [
+                  {
+                    "stage": "Rupee-dollar rate → Rupee cost of imports",
+                    "pass": "partial",
+                    "damper": "The rupee gained only 6 paise and a strong dollar capped the rise, so the change in import costs is small.",
+                    "lag": "days"
+                  },
+                  {
+                    "stage": "Import costs → Importers' prices",
+                    "pass": "partial",
+                    "damper": "Existing import contracts, stocks bought earlier and any currency hedging delay the point at which a changed exchange rate shows up in importers' costs.",
+                    "lag": "weeks"
+                  },
+                  {
+                    "stage": "Importers' prices → Prices paid by users",
+                    "pass": "unclear",
+                    "damper": "Administered fuel prices, competition and the share of imported inputs in each product decide how much of any change reaches buyers.",
+                    "lag": "months"
+                  }
+                ],
+                "end_user": {
+                  "group": "Importers & traders",
+                  "effect": "Importers may notice a small easing in the rupee cost of dollar-priced goods if the rupee's gain holds. Any effect on shelf prices could take weeks or months to appear."
+                }
+              }
+            }
+          },
+          "place": {
+            "name": "Mumbai",
+            "country": "India",
+            "lat": 19.08,
+            "lon": 72.88,
+            "involves": [
+              "United States"
+            ]
+          },
+          "reports": [
+            {
+              "source": "thehindu",
+              "headline": "Rupee rises 6 paise to 94.13 against U.S. dollar in early trade",
+              "url": "https://www.thehindu.com/business/Industry/rupee-rises-6-paise-to-9413-against-us-dollar-in-early-trade/article71706772.ece",
+              "date": "2026-11-16T04:53:41.000Z",
+              "kind": "hard",
+              "summary": "As rupee rose, a robust dollar and rising U.S. Treasury yields amid uncertainty between the U.S. and Iran capped the upside",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/incoming/uaiuz3/article71706782.ece/alternates/LANDSCAPE_1200/istockphoto-1257153929-612x612.jpg"
+            }
+          ],
+          "stats": {
+            "v": 2,
+            "at": "2026-11-16T06:58:07.868Z",
+            "series": [
+              {
+                "title": "Indian rupees per U.S. dollar, annual average",
+                "unit": "Indian rupees per U.S. dollar",
+                "publisher": "Board of Governors of the Federal Reserve System (G.5A)",
+                "points": [
+                  {
+                    "period": "2022",
+                    "value": 78.5792,
+                    "url": "https://www.federalreserve.gov/releases/g5a/current/",
+                    "source": "Federal Reserve Board - Foreign Exchange Rates - G.5A - January 05, 2026"
+                  },
+                  {
+                    "period": "2023",
+                    "value": 82.5708,
+                    "url": "https://www.federalreserve.gov/releases/g5a/current/",
+                    "source": "Federal Reserve Board - Foreign Exchange Rates - G.5A - January 05, 2026"
+                  },
+                  {
+                    "period": "2024",
+                    "value": 83.6566,
+                    "url": "https://www.federalreserve.gov/releases/g5a/current/",
+                    "source": "Federal Reserve Board - Foreign Exchange Rates - G.5A - January 05, 2026"
+                  },
+                  {
+                    "period": "2025",
+                    "value": 87.1468,
+                    "url": "https://www.federalreserve.gov/releases/g5a/current/",
+                    "source": "Federal Reserve Board - Foreign Exchange Rates - G.5A - January 05, 2026"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.federalreserve.gov/releases/g5a/current/",
+                    "title": "Federal Reserve Board - Foreign Exchange Rates - G.5A - January 05, 2026",
+                    "domain": "federalreserve.gov"
+                  }
+                ],
+                "domains": [
+                  "federalreserve.gov"
+                ],
+                "dropped": 0,
+                "why": "The annual average rupee-per-dollar exchange rate tracks the same currency pair that the story reports on, though at an annual rather than intraday frequency.",
+                "reused": true,
+                "checkedAt": "2026-10-31T19:32:17.897Z"
+              }
+            ]
+          },
+          "thread": "t5sqh80"
+        },
+        {
           "id": "s6h0xhu",
           "headline": "IDBI Bank sale: Union urges RBI to block Fairfax takeover",
           "url": "https://indianexpress.com/article/business/banking-and-finance/idbi-bank-fairfax-takeover-union-rbi-intervention-10964168/",
@@ -47263,6 +48168,412 @@
       "id": "technology",
       "name": "Technology",
       "items": [
+        {
+          "id": "s1w4wk10",
+          "headline": "DPDP rules may boost demand for cybersecurity professionals and security services: Report",
+          "url": "https://www.livemint.com/technology/dpdp-rules-may-boost-demand-for-cybersecurity-professionals-and-security-services-report-11794804963625.html",
+          "source": "mint",
+          "date": "2026-11-16T04:56:03.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2024/12/18/1600x900/logo/tech1_1734536428801_1734536438047.jpg",
+          "why": "Mint reports that the implementation of India's Digital Personal Data Protection (DPDP) Rules is expected to create fresh demand for cybersecurity professionals and managed security services as companies strengthen their data protection.",
+          "implications": [
+            "Companies that hold personal data may need to upgrade their systems, monitor security risks and prepare to respond to data breaches, which could raise their spending on security.",
+            "Greater demand for cybersecurity skills could widen job openings for security professionals and for firms that sell managed security services."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-16T06:57:51.366Z",
+            "tier": "quick",
+            "primary": "policy_tracker",
+            "complement": null,
+            "features": [
+              "policy_stage"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The measure creates a compliance obligation for companies that handle personal data and a hiring and services opportunity in one industry, cybersecurity, rather than touching household essentials."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Companies need time to upgrade systems and hire staff, so any rise in demand for security work would build up gradually."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single Mint report describing expected demand, with no official source quoted and no detail on timelines or penalties."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "IT & services workers",
+                "direction": "up",
+                "what": "demand for security jobs",
+                "effect": "Companies strengthening data protection are expected to need more cybersecurity professionals and managed security services, which could widen hiring in this field.",
+                "basis": "reported"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Any official timeline or compliance deadlines for companies under the DPDP Rules",
+                "why": "Deadlines would show how quickly companies must act and so how soon security spending and hiring could rise.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "India's data protection law sets duties for organisations that collect and use people's personal data, and the rules spell out how those duties are to be met. Compliance usually requires investment in security systems and trained staff."
+            ],
+            "terms": [
+              {
+                "term": "DPDP Rules",
+                "meaning": "The rules under India's Digital Personal Data Protection law, which govern how organisations collect, store and protect individuals' personal data."
+              }
+            ],
+            "frameworks": {
+              "policy_tracker": {
+                "instrument": {
+                  "name": "Digital Personal Data Protection (DPDP) Rules",
+                  "issuer": "Government of India",
+                  "jurisdiction": "India"
+                },
+                "stages": [
+                  {
+                    "stage": "adopted",
+                    "date": "",
+                    "status": "current"
+                  }
+                ],
+                "obligations": [
+                  {
+                    "who": "Companies that handle personal data",
+                    "what": "They are expected to strengthen their systems to protect personal data, monitor security risks and respond to potential data breaches.",
+                    "from": ""
+                  }
+                ],
+                "applies_to_india": "yes",
+                "india_note": "The rules apply to organisations in India that handle personal data and are expected to raise demand for cybersecurity staff and managed security services. Individuals may gain from better protection of their data."
+              }
+            }
+          },
+          "place": {
+            "name": "New Delhi",
+            "country": "India",
+            "lat": 28.61,
+            "lon": 77.21
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "DPDP rules may boost demand for cybersecurity professionals and security services: Report",
+              "url": "https://www.livemint.com/technology/dpdp-rules-may-boost-demand-for-cybersecurity-professionals-and-security-services-report-11794804963625.html",
+              "date": "2026-11-16T04:56:03.000Z",
+              "kind": "hard",
+              "summary": "The implementation of the Digital Personal Data Protection (DPDP) Rules is expected to create fresh demand for cybersecurity professionals and managed security services in India, as companies strengthen their systems to protect personal data, monitor security risks and respond to potential data breaches.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2024/12/18/1600x900/logo/tech1_1734536428801_1734536438047.jpg"
+            }
+          ],
+          "thread": "tf8mof2"
+        },
+        {
+          "id": "s8sfp8z",
+          "headline": "India joins US-led pact to safeguard AI supply chains from China - What is San Francisco Declaration?",
+          "url": "https://www.livemint.com/news/india/india-joins-us-led-pact-to-safeguard-ai-supply-chains-from-china-what-is-san-francisco-declaration-11794800825567.html",
+          "source": "mint",
+          "date": "2026-11-16T03:59:25.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2026/11/16/1600x900/logo/AI_1794801080991_yPsT_1794801094444_RMIE_d21da668-49d5-446d-945e-7ce4f03cf14f_gEXk.jpg",
+          "why": "India has joined a US-led effort, the San Francisco Declaration, to protect critical technologies and artificial intelligence (AI) supply chains. Partners will identify vulnerable areas across semiconductors, minerals, energy and manufacturing amid competition with China.",
+          "implications": [
+            "Indian electronics and manufacturing firms could be affected as partners map where supply chains are weak, since those findings may steer investment and sourcing decisions toward partner countries.",
+            "Closer technology cooperation with the United States could support India's ambitions in semiconductors and AI, but the declaration's practical commitments have not been reported."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-16T06:57:51.365Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "medium",
+              "reason": "The channel is the technology and manufacturing industry, plus India's relationship with the United States and its partners. It touches no household essential directly, so the exposure is medium."
+            },
+            "horizon": {
+              "value": "years",
+              "reason": "Partners must first identify vulnerable areas and then build alternative supply chains, which takes a long time before it changes what Indian firms or workers experience."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "The account rests on a single outlet, Mint, and no official Indian or US statement is quoted. The commitments the partners made are still unclear."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Manufacturing workers",
+                "direction": "unclear",
+                "what": "supply chain investment",
+                "effect": "Factories in semiconductors, minerals and other sectors may gain or lose investment as partners reshape supply chains away from dependence on China.",
+                "basis": "inferred"
+              },
+              {
+                "group": "IT & services workers",
+                "direction": "unclear",
+                "what": "AI technology access",
+                "effect": "Closer AI cooperation with the United States and other partners could shape access to technology and chips that Indian technology firms rely on.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Any published list of vulnerable supply chain areas or follow-up working groups under the declaration",
+                "why": "It would show which Indian industries are most directly drawn into the effort.",
+                "when": "",
+                "where": "Ministry of External Affairs"
+              }
+            ],
+            "context": [
+              "Semiconductors and many critical minerals pass through global supply chains in which a few countries, notably China, play a dominant role. India has been trying to build its own chip and electronics manufacturing base."
+            ],
+            "terms": [
+              {
+                "term": "San Francisco Declaration",
+                "meaning": "The name of the US-led arrangement under which partners, now including India, agreed to protect critical technology and AI supply chains."
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "India joins the US-led declaration",
+                    "detail": "India has joined a US-led effort to protect critical technologies and AI supply chains. Partners agreed to identify vulnerable areas across semiconductors, minerals, energy and manufacturing.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Cooperation aims to reduce China exposure",
+                    "detail": "The initiative aims to strengthen cooperation among partners amid competition with China. Identifying weak points is the first step toward reducing reliance on any single supplier.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Indian industry may see new sourcing options",
+                    "detail": "Indian electronics, chip and manufacturing firms could find new partners, investment or sourcing routes once weak points are identified. They could also face tighter technology rules.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The effect would not reach India if the declaration remains a statement of intent without funded projects, shared rules or concrete follow-up by the partners."
+              }
+            }
+          },
+          "place": {
+            "name": "Washington",
+            "country": "United States",
+            "lat": 38.9,
+            "lon": -77.04,
+            "involves": [
+              "China"
+            ]
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "India joins US-led pact to safeguard AI supply chains from China - What is San Francisco Declaration?",
+              "url": "https://www.livemint.com/news/india/india-joins-us-led-pact-to-safeguard-ai-supply-chains-from-china-what-is-san-francisco-declaration-11794800825567.html",
+              "date": "2026-11-16T03:59:25.000Z",
+              "kind": "hard",
+              "summary": "India has joined a US-led effort to protect critical technologies and AI supply chains, with partners agreeing to identify vulnerable areas across semiconductors, minerals, energy and manufacturing. The initiative aims to strengthen cooperation amid competition with China.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/11/16/1600x900/logo/AI_1794801080991_yPsT_1794801094444_RMIE_d21da668-49d5-446d-945e-7ce4f03cf14f_gEXk.jpg"
+            }
+          ],
+          "thread": "t19a2bj6"
+        },
+        {
+          "id": "si45siv",
+          "headline": "Jio explores Indian launch partners for satellite constellation; rocket capacity a hurdle",
+          "url": "https://www.livemint.com/companies/news/jio-satellites-skyroot-spacex-tariffs-satcom-cosmos-11794737248227.html",
+          "source": "mint",
+          "date": "2026-11-16T00:18:22.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2026/11/15/1600x900/logo/JIO-PLATFORMS-IPO--0_1794752897947_MNf9_1794752914494_rt31_c2abdb01-76eb-4b55-b071-8e8e034d4b37_72Sp.JPG",
+          "why": "Jio is exploring domestic partners to launch satellites for a planned broadband constellation, starting with about 390 satellites and aiming for 1,600 over time. Limited launch capacity and high costs remain hurdles.",
+          "implications": [
+            "Placing hundreds of satellites in orbit needs many launches, so Jio's plan could create sustained demand for India's rocket makers and launch services if domestic capacity can be expanded.",
+            "If domestic launch capacity stays limited and costly, the constellation's schedule could slip or Jio could be pushed to look for launches elsewhere."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-16T06:55:54.127Z",
+            "tier": "quick",
+            "primary": "winners_losers",
+            "complement": null,
+            "features": [
+              "allocation"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "The plan is at an exploratory stage and has no direct mechanism yet for household bills or services. Any effect would run through India's private space industry."
+            },
+            "horizon": {
+              "value": "years",
+              "reason": "Building rockets, manufacturing satellites and completing launches for a constellation of this size is a multi-year undertaking, and the partners have not yet been chosen."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single outlet, Mint, describing an exploratory effort; no launch partner, timeline or cost has been confirmed."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Manufacturing workers",
+                "direction": "up",
+                "what": "space manufacturing demand",
+                "effect": "If Jio goes ahead, demand for rockets and satellite components made in India could rise, which may support skilled manufacturing jobs in the private space sector.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Jio naming a domestic launch partner or announcing a launch schedule for its first batch of about 390 satellites",
+                "why": "It would show whether India's launch capacity can support the plan or whether the hurdles are holding it back.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "India's space sector was opened to private firms in recent years, but launches have largely been run by the state-run Indian Space Research Organisation, so private launch capacity is still developing."
+            ],
+            "terms": [
+              {
+                "term": "satellite constellation",
+                "meaning": "A large group of satellites that work together as one network, here to provide broadband internet from orbit."
+              }
+            ],
+            "frameworks": {
+              "winners_losers": {
+                "groups": [
+                  {
+                    "group": "Manufacturing workers",
+                    "direction": "gain",
+                    "directness": "indirect",
+                    "mechanism": "Mint reports the effort could boost India's private space sector. More launches and satellites built domestically could raise demand for skilled factory and engineering work, though this depends on capacity being built."
+                  }
+                ],
+                "not_affected": "Households looking for broadband soon are not affected yet, because the constellation is only planned and the launch capacity needed to put it in orbit is still a hurdle."
+              }
+            }
+          },
+          "place": {
+            "name": "Mumbai",
+            "country": "India",
+            "lat": 19.1,
+            "lon": 72.9
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "Jio explores Indian launch partners for satellite constellation; rocket capacity a hurdle",
+              "url": "https://www.livemint.com/companies/news/jio-satellites-skyroot-spacex-tariffs-satcom-cosmos-11794737248227.html",
+              "date": "2026-11-16T00:18:22.000Z",
+              "kind": "hard",
+              "summary": "Jio is exploring domestic partners to launch satellites for a planned broadband constellation, with an initial batch of about 390 and a longer-term goal of 1,600. The effort could boost India’s private space sector, though limited launch capacity and high costs remain hurdles.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/11/15/1600x900/logo/JIO-PLATFORMS-IPO--0_1794752897947_MNf9_1794752914494_rt31_c2abdb01-76eb-4b55-b071-8e8e034d4b37_72Sp.JPG"
+            }
+          ],
+          "thread": "t7ugjiz"
+        },
+        {
+          "id": "sucjxhl",
+          "headline": "West Asia conflict weighs on India's mid-sized IT firms as clients defer spending",
+          "url": "https://www.livemint.com/industry/infotech/west-asia-war-israel-iran-indian-it-companie-11794732445196.html",
+          "source": "mint",
+          "date": "2026-11-16T00:15:42.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2026/11/15/1600x900/logo/2-0-175395076-BPO-0_1680856342568_1794747312325_SbkL_4c01e13a-de72-40ec-a962-6419291b0565_DClP.JPG",
+          "why": "Four mid-sized Indian IT firms, LTM, Mphasis, Persistent Systems and Hexaware Technologies, said the Middle East war is creating challenges. Mint reports that clients are deferring spending, which could slow revenue at these firms.",
+          "implications": [
+            "Mid-sized IT firms depend on a steady flow of new client projects, so deferred spending can delay contract signings and slow the revenue these firms report in coming quarters.",
+            "Slower project starts could make these firms more cautious about hiring, which would matter most to IT and services workers and to fresh graduates seeking jobs."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-16T06:55:54.126Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "medium",
+              "reason": "The channel is one industry: client spending decisions affect the revenue and hiring of mid-sized IT firms. It is not a household essential, so exposure is medium."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Deferred client budgets typically show up in company results and hiring plans over the next few quarters, not within days."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "This rests on one outlet, Mint, citing remarks by the four companies on their post-earnings calls; the size of the spending deferrals has not been reported."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "IT & services workers",
+                "direction": "unclear",
+                "what": "hiring and job security",
+                "effect": "If client spending stays deferred, mid-sized IT firms may slow hiring because fewer new projects start, which could affect job openings in the sector.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Whether mid-sized IT firms again cite client spending delays and geopolitical challenges when they next report quarterly results",
+                "why": "Repeated comments would suggest the deferral of client spending is lasting rather than a one-quarter pause.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "Indian IT services firms earn much of their revenue from clients in the United States and Europe, so these clients' willingness to spend on technology projects strongly shapes the firms' growth."
+            ],
+            "terms": [],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Firms flag war-related challenges",
+                    "detail": "LTM, Mphasis, Persistent Systems and Hexaware Technologies each described geopolitical challenges from the Middle East war during their post-earnings calls last month.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Clients defer technology spending",
+                    "detail": "Mint reports that clients are putting off spending because of the conflict. This means projects that would have started are delayed, which reduces new work for these Indian firms.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Growth and hiring may soften",
+                    "detail": "Slower project starts could weigh on revenue growth at mid-sized IT firms and make them more cautious about hiring, which would reach IT workers.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The effect would not reach Indian workers if clients resume normal technology budgets as the conflict eases, or if firms win enough other work to offset the delays."
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "West Asia conflict weighs on India's mid-sized IT firms as clients defer spending",
+              "url": "https://www.livemint.com/industry/infotech/west-asia-war-israel-iran-indian-it-companie-11794732445196.html",
+              "date": "2026-11-16T00:15:42.000Z",
+              "kind": "hard",
+              "summary": "LTM Ltd, Mphasis Ltd, Persistent Systems Ltd, and Hexaware Technologies Ltd have each called out geopolitical challenges due to the middle-east war during the post-earnings call last month.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/11/15/1600x900/logo/2-0-175395076-BPO-0_1680856342568_1794747312325_SbkL_4c01e13a-de72-40ec-a962-6419291b0565_DClP.JPG"
+            }
+          ],
+          "placeTried": true,
+          "thread": "t1xdht6t"
+        },
         {
           "id": "scs19w4",
           "headline": "Indian Railways shifts over 2,200 trains to upgraded Passenger Reservation System",
@@ -63771,16 +65082,16 @@
           "date": "2026-11-15T01:34:13.000Z",
           "relevance": "medium",
           "image": "https://www.livemint.com/lm-img/img/2026/11/15/1600x900/ANI-20261103303-0_1794705630280_BPmd_1794705657171_P5K5_bf0c41fd-43ee-45db-b3c7-989cf08554c8_ek6y.jpg",
-          "why": "A depression over the Bay of Bengal is forecast to become a severe cyclonic storm by 17 November. Odisha is bracing for its third cyclone in three weeks, while Andhra Pradesh, still assessing earlier damage, faces conflicting signals about alerts.",
+          "why": "A depression over the Bay of Bengal is forecast to become a severe cyclonic storm by November 17 and may reach the Andhra Pradesh coast around November 19 night. It would be the third such system in about three weeks, threatening Andhra Pradesh and Odisha.",
           "implications": [
-            "Repeated storms within a few weeks leave little time to repair embankments, homes and power lines, so even a weaker system could cause outsized damage in coastal districts already hit.",
-            "Andhra Pradesh puts its losses from earlier cyclone damage at ₹2,484 crore and wants a Central team to report within 10 days, because that assessment shapes the federal relief the state can receive.",
-            "Fishing communities along the Bay of Bengal coast could lose further days at sea if warnings keep boats ashore, which would cut incomes already disrupted by the earlier storms.",
-            "One outlet places Andhra Pradesh on high alert while another reports no rainfall alerts for the state, so the risk to Andhra's coast remains unclear until official forecasts settle the storm's track."
+            "Odisha has ordered early evacuation of vulnerable areas, so coastal households there face disruption to homes and daily life even though forecasts point to landfall on the Andhra Pradesh coast.",
+            "Andhra Pradesh is still seeking central help for ₹2,484 crore in losses from Cyclone Murasu, so a fresh strike could add new damage before earlier relief and repairs are complete.",
+            "Repeated storms in a short span could damage standing crops and halt fishing along the east coast, which may cut farm and fishing incomes and disrupt local food supplies.",
+            "A separate system, a fresh Western Disturbance, is affecting northern India at the same time, so weather disruption in the coming days is not confined to the eastern coast."
           ],
           "analysis": {
             "v": 3,
-            "at": "2026-11-15T16:31:19.818Z",
+            "at": "2026-11-16T06:59:44.825Z",
             "tier": "deep",
             "primary": "timeline",
             "complement": "scenarios",
@@ -63790,84 +65101,70 @@
             ],
             "exposure": {
               "level": "high",
-              "reason": "A severe cyclone threatens the physical safety, homes and livelihoods of people in coastal Odisha, Andhra Pradesh, West Bengal and the Andaman Islands. It also threatens crops and fishing, which touch food supplies."
+              "reason": "The storm directly threatens the safety, homes and livelihoods of people in coastal Andhra Pradesh and Odisha, and it could damage crops in states already hit by earlier cyclones."
             },
             "horizon": {
               "value": "now",
-              "reason": "The depression is forecast to intensify into a severe cyclonic storm by 17 November, within days of the first reports."
+              "reason": "IMD expects the system to strengthen by November 17 and approach the Andhra Pradesh coast around November 19 night, within days of these reports."
             },
             "confidence": {
               "level": "medium",
-              "reason": "Mint, The Hindu and The Indian Express agree a system is intensifying, but these are early reports, the storm's track is unreported, and Andhra Pradesh's alert status is contested."
+              "reason": "Mint, The Hindu and The Indian Express all cite IMD forecasts, but these are early reports and the cyclone's final track, strength and landfall point remain forecasts."
             },
             "outlets": 3,
             "affected": [
               {
-                "group": "A named state or region",
-                "direction": "up",
-                "what": "Odisha coastal cyclone risk",
-                "effect": "Odisha faces the prospect of a third cyclone in three weeks, raising risks to lives, homes and infrastructure along its coast.",
-                "basis": "reported"
-              },
-              {
                 "group": "Farmers",
                 "direction": "down",
-                "what": "crop and plantation losses",
-                "effect": "Heavy rain and strong winds could flatten standing crops and uproot plantation trees in coastal districts, adding to losses from earlier storms.",
+                "what": "crop losses",
+                "effect": "Heavy rain and strong winds from another cyclone could flatten standing crops in east coast districts already damaged by earlier storms, cutting farm incomes.",
                 "basis": "inferred"
               },
               {
                 "group": "Fishers",
                 "direction": "down",
-                "what": "days at sea",
-                "effect": "Cyclone warnings could keep fishing boats in harbour across the Bay of Bengal coast, cutting the daily earnings of fishing households.",
+                "what": "lost fishing days",
+                "effect": "Coastal fishers may be kept ashore while the storm is active at sea, which could cost them several days of income.",
                 "basis": "inferred"
-              },
-              {
-                "group": "Government finances",
-                "direction": "up",
-                "what": "disaster relief claims",
-                "effect": "Andhra Pradesh has put earlier losses at ₹2,484 crore and is pressing for a quick Central assessment, which could raise claims on central disaster relief funds.",
-                "basis": "reported"
               }
             ],
             "watch": [
               {
-                "what": "IMD bulletin confirming the depression's upgrade to a severe cyclonic storm and its expected landfall area",
-                "why": "It would show which coastline faces the strongest winds and rain, and whether Odisha or Andhra Pradesh bears the main impact.",
+                "what": "IMD bulletin confirming the system has become a severe cyclonic storm",
+                "why": "It would confirm the forecast strengthening and show whether the storm is on course to become very severe.",
                 "when": "2026-11-17",
                 "where": "India Meteorological Department"
               },
               {
-                "what": "Any IMD rainfall or cyclone alert issued for coastal Andhra Pradesh",
-                "why": "It would resolve the conflict between reports of a high alert and reports of no rainfall alerts for the state.",
-                "when": "",
+                "what": "The cyclone's landfall point and strength on the Andhra Pradesh coast",
+                "why": "These will decide which districts and states bear the main damage to homes, crops and infrastructure.",
+                "when": "2026-11-19",
                 "where": "India Meteorological Department"
               },
               {
-                "what": "Central team's damage assessment report on Andhra Pradesh",
-                "why": "It would indicate how much central relief the state may receive for losses it estimates at ₹2,484 crore.",
+                "what": "The Central team's report on Cyclone Murasu damage in Andhra Pradesh",
+                "why": "It will show how much central relief the state receives before or alongside a new round of damage.",
                 "when": "within 10 days",
                 "where": "Andhra Pradesh government"
               }
             ],
             "context": [
-              "The months after the southwest monsoon are a main cyclone season over the Bay of Bengal, and India's eastern coast, particularly Odisha and Andhra Pradesh, is among the most frequently struck areas.",
-              "The India Meteorological Department (IMD) grades systems from low-pressure area to depression, then to cyclonic and severe cyclonic storm. Its colour-coded warnings escalate as winds strengthen and the expected landfall area becomes clearer.",
-              "States seeking extra central disaster relief usually submit a damage memorandum. An inter-ministerial central team then assesses the losses before funds are released from the national disaster response fund."
+              "The India Meteorological Department (IMD) classifies Bay of Bengal systems by sustained wind speed, rising from depression to cyclonic storm, severe and very severe cyclonic storm. Its track and intensity forecasts are revised as a system develops.",
+              "The post-monsoon months late in the year are a main cyclone season in the Bay of Bengal. India's eastern coastal states, notably Odisha and Andhra Pradesh, are among the most frequently affected.",
+              "When a state seeks central disaster assistance, the Union government usually sends an inter-ministerial team to assess the damage. That team's report informs how much relief funding the state receives."
             ],
             "terms": [
               {
-                "term": "Depression",
-                "meaning": "A low-pressure weather system with organised circulating winds that are still weaker than those of a cyclonic storm."
+                "term": "depression",
+                "meaning": "An organised low-pressure weather system with moderate winds that is weaker than a cyclone but can strengthen into one over warm sea water."
               },
               {
-                "term": "Severe cyclonic storm",
-                "meaning": "An IMD cyclone category stronger than an ordinary cyclonic storm, capable of damaging winds, heavy rain and coastal flooding."
+                "term": "very severe cyclonic storm",
+                "meaning": "One of the higher intensity grades IMD uses for cyclones, carrying winds strong enough to cause major damage to homes, crops and power lines."
               },
               {
-                "term": "Western Disturbance",
-                "meaning": "An eastward-moving weather system originating near the Mediterranean that brings rain, snow and colder conditions to northern India, mainly in winter."
+                "term": "Central team",
+                "meaning": "A team of Union government officials sent to assess disaster damage in a state; its report guides central relief funding."
               }
             ],
             "frameworks": {
@@ -63882,73 +65179,73 @@
                     "verification": "confirmed"
                   },
                   {
-                    "when": "15 Nov 2026, early morning",
-                    "what": "Odisha was reported to be bracing for a third cyclone in three weeks, with Andhra Pradesh, West Bengal and the Andaman Islands on high alert.",
+                    "when": "15 Nov 2026, 5:30 a.m.",
+                    "what": "The system intensified into a depression about 700 km west-southwest of Port Blair. No rainfall alerts were then issued for Andhra Pradesh, although Mint described the state as on high alert.",
                     "actor": "India Meteorological Department",
-                    "outlet": "Mint",
-                    "type": "claim",
+                    "outlet": "The Hindu; Mint",
+                    "type": "action",
                     "verification": "contested"
                   },
                   {
-                    "when": "15 Nov 2026, 5:30 a.m.",
-                    "what": "The system intensified into a depression about 700 km west-southwest of Port Blair and was forecast to become a severe cyclonic storm by 17 November.",
-                    "actor": "India Meteorological Department",
+                    "when": "15 Nov 2026",
+                    "what": "The Andhra Pradesh Chief Minister urged the Central team to report within 10 days on Cyclone Murasu damage, which the state puts at ₹2,484 crore.",
+                    "actor": "Andhra Pradesh Chief Minister",
                     "outlet": "The Hindu",
-                    "type": "confirmation",
+                    "type": "claim",
+                    "verification": "claimed"
+                  },
+                  {
+                    "when": "16 Nov 2026",
+                    "what": "IMD said the system would become a cyclonic storm on 16 November and a severe cyclonic storm on 17 November over the Bay of Bengal.",
+                    "actor": "India Meteorological Department",
+                    "outlet": "Mint; The Hindu",
+                    "type": "claim",
+                    "verification": "claimed"
+                  },
+                  {
+                    "when": "16 Nov 2026",
+                    "what": "Odisha ordered the early evacuation of vulnerable areas as the cyclone threat grew.",
+                    "actor": "Odisha government",
+                    "outlet": "The Hindu",
+                    "type": "action",
                     "verification": "confirmed"
                   },
                   {
-                    "when": "15 Nov 2026, morning",
-                    "what": "No rainfall alerts were reported to be in place for Andhra Pradesh despite the strengthening depression.",
+                    "when": "19 Nov 2026, night",
+                    "what": "The system is forecast to become a very severe cyclonic storm before reaching the Andhra Pradesh coast around this time.",
                     "actor": "India Meteorological Department",
                     "outlet": "The Hindu",
                     "type": "claim",
-                    "verification": "contested"
-                  },
-                  {
-                    "when": "15 Nov 2026, afternoon",
-                    "what": "Andhra Pradesh was reported to be bracing for its third intense cyclone in a month.",
-                    "actor": "Andhra Pradesh",
-                    "outlet": "The Indian Express",
-                    "type": "claim",
-                    "verification": "claimed"
-                  },
-                  {
-                    "when": "15 Nov 2026, afternoon",
-                    "what": "The Andhra Pradesh Chief Minister urged the Central team to submit its cyclone damage report within 10 days, and the state put its total loss at ₹2,484 crore.",
-                    "actor": "Andhra Pradesh Chief Minister",
-                    "outlet": "The Hindu",
-                    "type": "action",
                     "verification": "claimed"
                   }
                 ],
-                "current_status": "A depression over the Bay of Bengal is expected to strengthen into a severe cyclonic storm by 17 November. Its landfall area has not been reported, and accounts differ on whether Andhra Pradesh is under alert.",
+                "current_status": "A depression over the Bay of Bengal is forecast to strengthen into a severe cyclonic storm by November 17. Odisha has begun evacuations, and Andhra Pradesh is expected to face landfall around November 19 night.",
                 "open_questions": [
-                  "Where along the eastern coast is the storm expected to make landfall?",
-                  "Will the IMD issue rainfall or cyclone alerts for coastal Andhra Pradesh?",
-                  "How much central relief will Andhra Pradesh receive after the Central team submits its report?"
+                  "Will the storm reach very severe cyclonic storm strength before landfall, as forecast?",
+                  "Will the storm make landfall in Andhra Pradesh, or will its track shift towards Odisha or West Bengal?",
+                  "How quickly will the Centre act on Andhra Pradesh's ₹2,484 crore damage claim for Cyclone Murasu?"
                 ]
               },
               "scenarios": {
-                "question": "Which part of India's eastern coast will bear the brunt of the depression once it strengthens into a severe cyclonic storm?",
+                "question": "Where will the new Bay of Bengal cyclone make landfall, and how strong will it be when it does?",
                 "scenarios": [
                   {
-                    "name": "Odisha takes the hit",
-                    "what": "The system strengthens as forecast and moves towards Odisha, which would then face its third cyclone in three weeks.",
-                    "signal": "IMD bulletins name Odisha's coastal districts in the forecast landfall area and issue the highest alerts there.",
-                    "india_effect": "Coastal Odisha could see further damage to homes, crops and power networks still recovering from recent storms, and fishing could be disrupted. Relief and repair spending may rise."
+                    "name": "Very severe Andhra landfall",
+                    "what": "The storm becomes a very severe cyclonic storm and reaches the Andhra Pradesh coast around November 19 night, as currently forecast.",
+                    "signal": "IMD bulletins upgrade the system to very severe cyclonic storm and keep the forecast track pointed at the Andhra Pradesh coast.",
+                    "india_effect": "Coastal Andhra Pradesh could suffer fresh damage to homes, crops and infrastructure on top of losses from Cyclone Murasu, which could add to the state's demands for central relief."
                   },
                   {
-                    "name": "Andhra struck again",
-                    "what": "The storm's track brings heavy rain and wind to coastal Andhra Pradesh, making it the state's third intense cyclone in a month.",
-                    "signal": "The IMD issues rainfall and cyclone alerts for coastal Andhra Pradesh, replacing the earlier absence of alerts.",
-                    "india_effect": "Andhra Pradesh could see losses added to the ₹2,484 crore it has already estimated. Farm and fishing incomes could come under further strain, and claims on central relief may rise."
+                    "name": "Track shifts northward",
+                    "what": "The storm's path bends further north and brings its main impact to Odisha or West Bengal, both of which have been placed on alert.",
+                    "signal": "Revised IMD track forecasts move the expected landfall zone north of Andhra Pradesh, and Odisha or West Bengal widens its evacuations.",
+                    "india_effect": "Odisha's early evacuations could limit casualties, but farms and fishing communities further north could bear the damage instead of those in Andhra Pradesh."
                   },
                   {
-                    "name": "Andhra stays clear",
-                    "what": "The depression strengthens, but Andhra Pradesh remains outside its rainfall zone, consistent with the absence of alerts for the state.",
-                    "signal": "IMD bulletins continue to show no rainfall alerts for Andhra Pradesh as the storm approaches the coast.",
-                    "india_effect": "Andhra Pradesh could concentrate on recovery and on its pending relief claim. Risks to people and property would shift to other coastal states or island territories on the storm's path."
+                    "name": "Peaks at severe strength",
+                    "what": "The system reaches severe cyclonic storm strength by November 17 but does not strengthen further before reaching the coast.",
+                    "signal": "IMD bulletins stop short of upgrading the system to very severe cyclonic storm as it nears land.",
+                    "india_effect": "Damage could be less extensive than in the forecast case, though heavy rain could still harm crops and coastal areas weakened by earlier cyclones."
                   }
                 ]
               }
@@ -64022,6 +65319,26 @@
               "descTried": true,
               "summary": "AP CM appeals to Central team for 10-day report on ₹2,484 crore Cyclone Murasu damage; seeks immediate relief and infrastructure aid.",
               "summaryV": 3
+            },
+            {
+              "source": "mint",
+              "headline": "IMD weather update: Andhra, Odisha on high alert as third cyclone brews over Bay of Bengal in 3 weeks",
+              "url": "https://www.livemint.com/news/india/imd-weather-update-andhra-odisha-on-high-alert-as-third-cyclone-brews-over-bay-of-bengal-in-3-weeks-11794790988201.html",
+              "date": "2026-11-16T01:38:05.000Z",
+              "kind": "hard",
+              "summary": "The system will intensify into a cyclonic storm over the central parts of the south and adjoining west-central Bay of Bengal on 16 November and into a severe cyclonic storm on 17 November, said the IMD.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/11/16/1600x900/ANI-20261102581-0_1794792532010_g1UK_1794792546420_YghI_9d3d393c-7055-4afd-9985-7990e0ba11b1_ctD6.jpg"
+            },
+            {
+              "source": "thehindu",
+              "headline": "Odisha orders early evacuation of vulnerable areas as cyclone threat looms",
+              "url": "https://www.thehindu.com/news/national/odisha/odisha-orders-early-evacuation-of-vulnerable-areas-as-cyclone-threat-looms/article71706877.ece",
+              "date": "2026-11-16T05:42:04.000Z",
+              "kind": "hard",
+              "summary": "The weather system is likely to develop into a very severe cyclonic storm before reaching the Andhra Pradesh coast around November 19 night",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/incoming/iyfwa4/article71706898.ece/alternates/LANDSCAPE_1200/PTI10_29_2026_000266A.jpg"
             }
           ],
           "thread": "t1nsgg07",
@@ -64133,6 +65450,108 @@
               }
             ]
           }
+        },
+        {
+          "id": "sn5pni0",
+          "headline": "Delhi AQI at 800 today: India’s capital ‘breathes poison’ as it ranks 6th among the world’s most polluted cities",
+          "url": "https://www.livemint.com/news/india/delhi-aqi-at-800-today-india-s-capital-breathes-poison-as-it-ranks-6th-among-the-world-s-most-polluted-cities-11794798175346.html",
+          "source": "mint",
+          "date": "2026-11-16T03:14:14.000Z",
+          "relevance": "high",
+          "image": "https://www.livemint.com/lm-img/img/2026/11/16/1600x900/AQI_800_1794798771091_lIOF_1794798788618_a43t_090480c0-056c-4a08-9d87-65ebfa93ec54_rPYf.jpg",
+          "why": "Delhi's live Air Quality Index (AQI) reached 800 on 16 November, which is classed as hazardous, and the capital ranked sixth among the world's most polluted cities. Millions of residents are exposed to very polluted air.",
+          "implications": [
+            "Fine particles at this concentration can enter the lungs and bloodstream, so children, older people and those with heart or breathing conditions face the greatest health risk.",
+            "People who work or commute outdoors may be exposed for longer than others, which could raise the number of residents who fall ill or need medical care."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-16T06:57:51.365Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "high",
+              "reason": "The channel is direct exposure to polluted air, which affects the health and safety of Delhi's residents. That is why the exposure is high, even though the reading applies to one city."
+            },
+            "horizon": {
+              "value": "now",
+              "reason": "Residents breathe the polluted air as it is measured, so the health effect begins immediately and continues for as long as readings stay high."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "The reading rests on a single outlet, Mint, which cites a live AQI figure without naming the monitoring body, and no official statement is reported."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "A named state or region",
+                "direction": "down",
+                "what": "Delhi air quality",
+                "effect": "Delhi residents are breathing air in the hazardous category, with PM2.5 at 476 and PM10 at 666 micrograms per cubic metre.",
+                "basis": "reported"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Whether Delhi's AQI readings fall back from the hazardous range over the coming days",
+                "why": "It would show whether the severe pollution is a brief spike or a lasting episode.",
+                "when": "",
+                "where": "Central Pollution Control Board (CPCB)"
+              }
+            ],
+            "context": [
+              "Delhi's air usually worsens in the colder months because cool, still air traps pollution from vehicles, dust, burning and other local sources close to the ground."
+            ],
+            "terms": [
+              {
+                "term": "PM2.5",
+                "meaning": "Particles smaller than 2.5 micrometres across, small enough to travel deep into the lungs, and a key measure of how harmful the air is."
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Delhi AQI reaches the hazardous range",
+                    "detail": "Delhi's live AQI hit 800 on 16 November, with PM2.5 at 476 and PM10 at 666 micrograms per cubic metre. This puts the air in the hazardous category.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Delhi ranks among the world's worst",
+                    "detail": "The reading placed the capital sixth among the world's most polluted cities. This shows that the problem is severe even by global standards and affects a very large population.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Health risk for residents rises",
+                    "detail": "Breathing such heavily polluted air could aggravate respiratory and heart problems, especially for children, older people and people who work outdoors.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The effect would ease if readings fall out of the hazardous range, for example when winds disperse the pollutants, or if residents limit time outdoors."
+              }
+            }
+          },
+          "place": {
+            "name": "Delhi",
+            "country": "India",
+            "lat": 28.61,
+            "lon": 77.21
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "Delhi AQI at 800 today: India’s capital ‘breathes poison’ as it ranks 6th among the world’s most polluted cities",
+              "url": "https://www.livemint.com/news/india/delhi-aqi-at-800-today-india-s-capital-breathes-poison-as-it-ranks-6th-among-the-world-s-most-polluted-cities-11794798175346.html",
+              "date": "2026-11-16T03:14:14.000Z",
+              "kind": "hard",
+              "summary": "Delhi’s live AQI reached 800 on November 16, classified as hazardous, with PM2.5 at 476 and PM10 at 666 micrograms per cubic metre.&nbsp;",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/11/16/1600x900/AQI_800_1794798771091_lIOF_1794798788618_a43t_090480c0-056c-4a08-9d87-65ebfa93ec54_rPYf.jpg"
+            }
+          ],
+          "thread": "t1f6i1iy"
         },
         {
           "id": "s15diqe4",
@@ -71719,6 +73138,31 @@
       "name": "Agriculture & Food",
       "items": [
         {
+          "id": "s1oa8k67",
+          "headline": "Rebalancing India’s Rice economy: exports, virtual water, emissions and the groundwater challenge",
+          "url": "https://www.thehindu.com/news/national/rebalancing-indias-rice-economy-exports-virtual-water-emissions-and-the-groundwater-challenge/article71704600.ece",
+          "source": "thehindu",
+          "date": "2026-11-16T05:18:23.000Z",
+          "relevance": "medium",
+          "image": "https://th-i.thgim.com/public/incoming/gmlp37/article71705652.ece/alternates/LANDSCAPE_1200/Paddy%20field%20fertilizing%20-%20Tiruchi%201.jpg",
+          "why": "",
+          "implications": [],
+          "reports": [
+            {
+              "source": "thehindu",
+              "headline": "Rebalancing India’s Rice economy: exports, virtual water, emissions and the groundwater challenge",
+              "url": "https://www.thehindu.com/news/national/rebalancing-indias-rice-economy-exports-virtual-water-emissions-and-the-groundwater-challenge/article71704600.ece",
+              "date": "2026-11-16T05:18:23.000Z",
+              "kind": "feature",
+              "summary": "India has proved its competitiveness in global rice markets and the next challenge is to make that competitiveness sustainable; the country’s rice policy needs a more differentiated production strategy that moves from volume to value: more crop per drop, more income per tonne, and less energy use per unit exported",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/incoming/gmlp37/article71705652.ece/alternates/LANDSCAPE_1200/Paddy%20field%20fertilizing%20-%20Tiruchi%201.jpg"
+            }
+          ],
+          "placeTried": true,
+          "thread": "tjzu3rg"
+        },
+        {
           "id": "s3xbri2",
           "headline": "All sugar factories cannot pay same price to farmers, says Satish Jarkiholi",
           "url": "https://www.thehindu.com/news/national/karnataka/all-sugar-factories-cannot-pay-same-price-to-farmers-says-satish-jarkiholi/article71705399.ece",
@@ -77765,6 +79209,68 @@
       "name": "Policy & Governance",
       "items": [
         {
+          "id": "stosica",
+          "headline": "Mint Explainer: Why is the Centre turning to 3D concrete printing to build rural homes?",
+          "url": "https://www.livemint.com/news/india/3d-concrete-printing-pmay-gramin-rural-housing-mint-explainer-11794799077585.html",
+          "source": "mint",
+          "date": "2026-11-16T04:52:17.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2026/11/16/1600x900/logo/3D_Printed_Concrete_House_1794804463857_O0bB_1794804470672_Sv6h_34fd4a4d-1136-446d-a312-cc5c94dafc5f_mW7C.png",
+          "why": "",
+          "implications": [],
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "Mint Explainer: Why is the Centre turning to 3D concrete printing to build rural homes?",
+              "url": "https://www.livemint.com/news/india/3d-concrete-printing-pmay-gramin-rural-housing-mint-explainer-11794799077585.html",
+              "date": "2026-11-16T04:52:17.000Z",
+              "kind": "feature",
+              "summary": "The technology is expected to support the goal of housing for all by reducing construction time, lifecycle cost, material wastage and carbon emissions, while enhancing quality, durability, and inclusivity.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/11/16/1600x900/logo/3D_Printed_Concrete_House_1794804463857_O0bB_1794804470672_Sv6h_34fd4a4d-1136-446d-a312-cc5c94dafc5f_mW7C.png"
+            }
+          ],
+          "finChecked": true,
+          "place": {
+            "name": "New Delhi",
+            "country": "India",
+            "lat": 28.61,
+            "lon": 77.21
+          },
+          "thread": "t1q9pcfo"
+        },
+        {
+          "id": "sd73u2f",
+          "headline": "Privacy vs press freedom: where should the line be drawn?",
+          "url": "https://www.thehindu.com/news/national/privacy-vs-press-freedom-where-should-the-line-be-drawn/article71704591.ece",
+          "source": "thehindu",
+          "date": "2026-11-15T17:30:03.000Z",
+          "relevance": "medium",
+          "image": "https://th-i.thgim.com/public/news/national/9r6lhy/article71705666.ece/alternates/LANDSCAPE_1200/iStock-1777088857.jpg",
+          "why": "",
+          "implications": [],
+          "place": {
+            "name": "New Delhi",
+            "country": "India",
+            "lat": 28.6,
+            "lon": 77.2
+          },
+          "reports": [
+            {
+              "source": "thehindu",
+              "headline": "Privacy vs press freedom: where should the line be drawn?",
+              "url": "https://www.thehindu.com/news/national/privacy-vs-press-freedom-where-should-the-line-be-drawn/article71704591.ece",
+              "date": "2026-11-15T17:30:03.000Z",
+              "kind": "feature",
+              "summary": "The DPDP Act, 2023, has reignited the debate over privacy and press freedom. How does the law reconcile data protection with the public’s right to know?",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/news/national/9r6lhy/article71705666.ece/alternates/LANDSCAPE_1200/iStock-1777088857.jpg"
+            }
+          ],
+          "finChecked": true,
+          "thread": "tf8mof2"
+        },
+        {
           "id": "sxbvfbd",
           "headline": "Govt health spending triples, household burden eases",
           "url": "https://www.livemint.com/news/public-health-spending-triples-over-a-decade-as-out-of-pocket-burden-drops-to-42-7-govt-report-medicine-tests-11794738055661.html",
@@ -77927,7 +79433,12 @@
             }
           ],
           "finChecked": true,
-          "thread": "t1fx2e9q"
+          "thread": "t1fx2e9q",
+          "stats": {
+            "v": 2,
+            "at": "2026-11-16T06:58:23.890Z",
+            "series": []
+          }
         },
         {
           "id": "s1y06w5e",
@@ -98201,14 +99712,14 @@
   "source": "BBC News & The Guardian & NPR & Al Jazeera & MercoPress & ABC News & The New York Times & CNBC & CBS News & DW & France 24 & Africanews & South China Morning Post & The Hindu & Mint & The Indian Express",
   "lastRun": {
     "filter": {
-      "judged": 47,
-      "kept": 2,
+      "judged": 73,
+      "kept": 16,
       "guarded": 0
     },
     "health": {
-      "day": "2026-11-15",
-      "newStories24h": 15,
-      "keepRate2d": 0.101
+      "day": "2026-11-16",
+      "newStories24h": 22,
+      "keepRate2d": 0.135
     },
     "wars": {
       "linked": 0,
@@ -98216,35 +99727,29 @@
       "active": 7
     },
     "places": {
-      "labelled": 0,
-      "none": 0,
+      "labelled": 1,
+      "none": 2,
       "waiting": 0
     },
     "skipped": {
-      "since": "2026-11-15T16:31:54.875Z",
-      "counts": {
-        "section": 1
-      },
-      "examples": {
-        "section": [
-          "Diljit says attempts made to stop his Indore concert, recites ‘kisi ke baap ka Hindostan thodi hai’"
-        ]
-      }
+      "since": "2026-11-15T23:03:04.724Z",
+      "counts": {},
+      "examples": {}
     },
     "finance": {
       "moved": 0,
-      "checked": 0
+      "checked": 2
     },
-    "analysed": 47,
-    "added": 0,
-    "merged": 2,
-    "rejected": 45,
+    "analysed": 73,
+    "added": 12,
+    "merged": 4,
+    "rejected": 57,
     "failedBatches": 0,
     "feeds": {
       "thehindu": {
         "feedsOk": 6,
         "feedsFailed": 0,
-        "items": 349
+        "items": 350
       },
       "mint": {
         "feedsOk": 6,
@@ -98252,9 +99757,9 @@
         "items": 210
       },
       "indianexpress": {
-        "feedsOk": 4,
-        "feedsFailed": 0,
-        "items": 800
+        "feedsOk": 0,
+        "feedsFailed": 4,
+        "items": 0
       }
     },
     "shareImages": {
@@ -98263,13 +99768,13 @@
       "summaries": 0
     },
     "threads": {
-      "assigned": 0,
-      "created": 0,
+      "assigned": 12,
+      "created": 5,
       "failedBatches": 0
     },
     "summaries": {
-      "written": 0,
-      "due": 0
+      "written": 7,
+      "due": 7
     },
     "kinds": {
       "labelled": 0,
@@ -98282,35 +99787,86 @@
       "failedBatches": 0
     },
     "stats": {
-      "searched": 0,
+      "searched": 6,
       "found": 0,
-      "reused": 0,
-      "none": 0,
+      "reused": 5,
+      "none": 1,
       "failed": 0,
-      "proposed": 0,
+      "proposed": 2,
       "droppedPoints": 0,
-      "pagesFetched": 0,
-      "samples": []
+      "pagesFetched": 2,
+      "samples": [
+        {
+          "headline": "Stock markets rally in early trade led by foreign fund inflows, lower crude oil",
+          "result": "reused saved series"
+        },
+        {
+          "headline": "Rupee rises 6 paise to 94.13 against U.S. dollar in early trade",
+          "result": "reused saved series"
+        },
+        {
+          "headline": "‘Not technically possible’: Union Minister Suresh Gopi rules out immediate fuel ",
+          "result": "reused saved series"
+        },
+        {
+          "headline": "Petrol and diesel prices today, November 16: Check fuel cost in Delhi, Mumbai, B",
+          "result": "reused saved series"
+        },
+        {
+          "headline": "Govt health spending triples, household burden eases",
+          "result": "too few checked figures",
+          "proposed": 2,
+          "checked": 2,
+          "pagesFetched": 2
+        },
+        {
+          "headline": "Most of India-US trade deal issues sorted, last stretch of concerns being discus",
+          "result": "reused saved series"
+        }
+      ]
     },
     "models": {
       "filter": {
         "model": "claude-haiku-5-5",
-        "calls": 3,
-        "inputTokens": 16794,
-        "outputTokens": 5478,
-        "cost": 0.0045
+        "calls": 14,
+        "inputTokens": 56638,
+        "outputTokens": 16289,
+        "cost": 0.0138
+      },
+      "analysis_quick": {
+        "model": "claude-sonnet-5-5",
+        "calls": 4,
+        "inputTokens": 14525,
+        "outputTokens": 21026,
+        "cost": 0.2392
+      },
+      "stats": {
+        "model": "claude-sonnet-5-5",
+        "calls": 1,
+        "inputTokens": 131197,
+        "outputTokens": 1189,
+        "searches": 2,
+        "fetches": 2,
+        "cost": 0.2943
       },
       "analysis": {
         "model": "claude-opus-5-5",
         "calls": 1,
-        "inputTokens": 3691,
-        "outputTokens": 4851,
-        "cost": 0.1118
+        "inputTokens": 4045,
+        "outputTokens": 5626,
+        "cost": 0.1287
+      },
+      "threads": {
+        "model": "claude-sonnet-5-5",
+        "calls": 8,
+        "inputTokens": 20141,
+        "outputTokens": 3862,
+        "cost": 0.079
       }
     },
     "spend": {
-      "thisDesk": 0.1162,
-      "today": 0.4158,
+      "thisDesk": 0.755,
+      "today": 2.1069,
       "cap": 6
     }
   },
