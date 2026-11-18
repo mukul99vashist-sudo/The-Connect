@@ -2,7 +2,7 @@
   "schema": 4,
   "region": "India",
   "since": "2026-10-02",
-  "updatedAt": "2026-11-18T12:03:00.781Z",
+  "updatedAt": "2026-11-18T20:51:33.308Z",
   "sectors": [
     {
       "id": "energy",
@@ -15,102 +15,164 @@
           "source": "aljazeera",
           "date": "2026-11-17T23:38:38.000Z",
           "relevance": "high",
-          "why": "Kuwait says its air defences were repelling drones while Iran and the US exchanged attacks, including on Qeshm and Bahrain. The fighting around the Gulf could affect India's oil supplies and its citizens in the region.",
+          "why": "After US strikes on Iran's Qeshm Island in the Strait of Hormuz, Iran attacked Kuwait, Bahrain and oil tankers. This threatens Gulf oil flows India relies on and the safety of Indians in the region.",
           "implications": [
-            "If attacks continue on Gulf states, shipping and insurance costs in the region could rise, which may feed into the price India pays for imported crude oil.",
-            "Indian workers and families in Kuwait and Bahrain could face safety risks and travel disruption if the drone and air strikes persist."
+            "Kuwait reported its first Iranian attack in two months, which shows that a period of relative calm in the Gulf states has ended as peace talks falter.",
+            "Iran says it targeted US drone and missile installations at Kuwait's Ali Al Salem air base, so countries hosting US forces face direct retaliation.",
+            "Attacks on oil tankers could raise shipping and insurance costs on Gulf routes, which may feed into the price India pays for imported crude.",
+            "Large Indian communities in Kuwait and Bahrain could face safety risks and disrupted flights if the attacks continue."
           ],
           "analysis": {
             "v": 3,
-            "at": "2026-11-18T01:04:59.294Z",
-            "tier": "quick",
-            "primary": "escalation",
-            "complement": null,
+            "at": "2026-11-18T20:50:54.032Z",
+            "tier": "deep",
+            "primary": "disruption_map",
+            "complement": "escalation",
             "features": [
+              "disruption",
               "armed_conflict",
-              "fast_moving"
+              "fast_moving",
+              "pending_outcome"
             ],
             "exposure": {
               "level": "high",
-              "reason": "The Gulf is a main source of India's crude oil and home to a very large Indian community, so fighting there touches fuel supply and the safety of Indians."
+              "reason": "The attacks touch India's main crude supply route and Gulf states where many Indians live and work, linking them to fuel prices and to the safety of Indian nationals."
             },
             "horizon": {
               "value": "now",
-              "reason": "The attacks are happening now, so any effect on safety, flights and oil market sentiment could be felt within days."
+              "reason": "Attacks on tankers and Gulf states are happening now and can move oil prices and travel conditions within days."
             },
             "confidence": {
               "level": "medium",
-              "reason": "This rests on one outlet, Al Jazeera, citing Kuwait's military; the scale of damage and the US and Iranian accounts of the exchange are not yet confirmed."
+              "reason": "Seven reports from outlets including the BBC, CNBC and The New York Times agree, with statements from Kuwait and Bahrain, but early breaking details on damage remain unconfirmed."
             },
-            "outlets": 1,
+            "outlets": 6,
             "affected": [
               {
-                "group": "Gulf & overseas workers and families",
-                "direction": "down",
-                "what": "personal safety and security",
-                "effect": "Indians living in Kuwait and Bahrain could face greater physical risk and disruption to work if drone and air attacks on Gulf states continue.",
+                "group": "Fuel & LPG users",
+                "direction": "up",
+                "what": "fuel price pressure",
+                "effect": "Attacks on tankers and Gulf states could push up global crude prices and freight costs, which may feed through to petrol, diesel and LPG prices in India.",
                 "basis": "inferred"
               },
               {
-                "group": "Fuel & LPG users",
+                "group": "Gulf & overseas workers and families",
                 "direction": "unclear",
-                "what": "fuel price pressure",
-                "effect": "Continued fighting near Gulf oil routes could raise crude costs for Indian refiners, which can feed through to petrol, diesel and cooking gas prices.",
+                "what": "safety of Indians in Gulf",
+                "effect": "Iranian missile and drone attacks on Kuwait and Bahrain could put Indian workers there at risk and worry their families at home.",
                 "basis": "inferred"
               },
               {
                 "group": "Travellers & pilgrims",
                 "direction": "down",
-                "what": "flight availability",
-                "effect": "Air defence activity over Gulf states could lead to airspace restrictions and cancelled or rerouted flights for travellers between India and the region.",
+                "what": "Gulf flight availability",
+                "effect": "Air defence activity over Kuwait and Bahrain could lead to airspace restrictions and flight disruptions for Indians travelling to or through the Gulf.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Importers & traders",
+                "direction": "up",
+                "what": "shipping and insurance costs",
+                "effect": "Attacks on vessels near the Strait of Hormuz could raise war-risk insurance and freight rates for Indian cargo moving through Gulf ports.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "Further drone or missile attacks on Kuwait, Bahrain or other Gulf states, or on shipping near Hormuz",
-                "why": "Wider or repeated attacks would show the fighting is spreading and raise the risk to oil routes and Indian residents.",
+                "what": "Further Iranian attacks on oil tankers near the Strait of Hormuz",
+                "why": "Repeated attacks would indicate a sustained threat to the oil flows India relies on.",
                 "when": "",
                 "where": ""
               },
               {
-                "what": "Indian government advisories for citizens in Kuwait and Bahrain",
-                "why": "Official advisories would indicate how serious authorities judge the risk to Indians in the region.",
+                "what": "Statements from Kuwait and Bahrain on new drone or missile attacks",
+                "why": "They would show whether Iranian retaliation is continuing or subsiding after the Qeshm strikes.",
+                "when": "",
+                "where": "Kuwait military"
+              },
+              {
+                "what": "Advisories for Indian nationals in Kuwait and Bahrain",
+                "why": "They would show whether Indian authorities judge the risk to Indians in the region to have risen.",
                 "when": "",
                 "where": "Ministry of External Affairs"
               }
             ],
             "context": [
-              "India imports most of its crude oil, and a large share comes from Gulf producers whose cargoes pass through the Strait of Hormuz.",
-              "Millions of Indians live and work in Gulf countries, and the money they send home is an important source of income for many households."
+              "India imports most of its crude oil, and a large share comes from Gulf producers whose exports pass through the Strait of Hormuz.",
+              "Gulf states host large numbers of Indian workers whose remittances support families across India, especially in states such as Kerala.",
+              "When tankers are attacked, shipowners usually pay higher war-risk insurance premiums or avoid routes, which raises freight costs for oil importers."
             ],
             "terms": [
               {
                 "term": "Qeshm",
-                "meaning": "An Iranian island in the Strait of Hormuz, the narrow waterway through which much of the Gulf's oil exports pass."
+                "meaning": "Iran's largest island, located in the Strait of Hormuz, the narrow waterway linking the Gulf to the open sea."
+              },
+              {
+                "term": "Ali Al Salem air base",
+                "meaning": "A military air base in Kuwait that Iran says hosts US drone and missile installations."
+              },
+              {
+                "term": "Strait of Hormuz",
+                "meaning": "A narrow sea passage between Iran and Oman through which a large share of the world's seaborne oil and gas passes."
               }
             ],
             "frameworks": {
+              "disruption_map": {
+                "node": {
+                  "name": "Strait of Hormuz",
+                  "type": "strait",
+                  "status": "unknown",
+                  "as_of": "18 Nov 2026"
+                },
+                "cause": {
+                  "text": "US air strikes on Iran's Qeshm Island were followed by Iranian missile and drone attacks on Kuwait, Bahrain and oil tankers in the Gulf.",
+                  "status": "confirmed"
+                },
+                "flows": [
+                  {
+                    "flow": "crude",
+                    "india_link": "Oil tankers in the Gulf are under fire, and India could face higher prices or delays because much of its imported crude passes through the Strait of Hormuz.",
+                    "basis": "inferred"
+                  },
+                  {
+                    "flow": "LNG",
+                    "india_link": "India imports liquefied natural gas from Gulf suppliers through the strait, so attacks on shipping could affect supplies for power, fertiliser and city gas users.",
+                    "basis": "inferred"
+                  },
+                  {
+                    "flow": "workers",
+                    "india_link": "Many Indians work in Kuwait and Bahrain, and continued attacks could threaten their safety and the remittances their families depend on.",
+                    "basis": "inferred"
+                  }
+                ],
+                "alternatives": [],
+                "duration": "not reported"
+              },
               "escalation": {
                 "move": "none",
                 "rung": 6,
                 "current_rung": 6,
                 "previous_rung": null,
-                "development": "Iran and the US traded attacks on Qeshm and Bahrain, while Kuwait reported drones that its air defences were intercepting.",
-                "evidence": "Attacks reaching Kuwait and Bahrain match the war's existing level of strikes on third countries. No report describes a new action at the level of full-scale war, or a ceasefire.",
+                "development": "This story adds US strikes on Iran's Qeshm Island and renewed Iranian missile and drone attacks on Kuwait, Bahrain, a US air base and oil tankers.",
+                "evidence": "Iranian strikes on third countries and on tankers continue the pattern that set the current rung. There is no reported move to full-scale war, and The New York Times describes the region as stuck short of it.",
                 "next_signals": [
                   {
                     "rung": 7,
-                    "signal": "Large-scale, coordinated strikes or a ground offensive involving several states, or a formal declaration of war by either side, would indicate full-scale war."
+                    "signal": "The United States or Iran launches a full-scale military campaign, such as a ground invasion or nationwide strikes, beyond the current exchanges."
                   },
                   {
                     "rung": 5,
-                    "signal": "A reported halt to attacks on Gulf states, leaving only the US and Iran striking each other, would indicate fighting has narrowed."
+                    "signal": "Iran stops attacking Gulf states and tankers while strikes between Iranian and US forces continue."
+                  },
+                  {
+                    "rung": 4,
+                    "signal": "Exchanges fall back to occasional isolated strikes, for example after peace talks produce a partial truce that is observed."
                   }
                 ],
                 "india_channels": [
                   "oil",
                   "shipping",
+                  "remittances",
                   "diaspora safety",
                   "flights"
                 ],
@@ -118,7 +180,15 @@
                 "applied": "none",
                 "from": 6
               }
-            }
+            },
+            "reading": [
+              {
+                "headline": "Bessent’s relocation: From US to EU, is Iran bringing war to Western soil?",
+                "url": "https://www.aljazeera.com/news-analysis/2026/11/11/bessents-relocation-from-us-to-eu-is-iran-bringing-war-to-western-soil",
+                "source": "aljazeera",
+                "date": "2026-11-11T15:33:38.000Z"
+              }
+            ]
           },
           "conflict": "w1ye2krf",
           "place": {
@@ -172,10 +242,239 @@
               "kind": "breaking",
               "summary": "America's Persian Gulf allies and oil tankers are under fire as Iran appears to lash out following U.S. strikes on a key island in the Strait of Hormuz.",
               "summaryV": 3
+            },
+            {
+              "source": "bbc",
+              "headline": "Kuwait says it repelled first Iranian attack in two months after US strikes island",
+              "url": "https://www.bbc.co.uk/news/articles/cw4gn9jeqjq7o",
+              "date": "2026-11-18T13:04:48.000Z",
+              "kind": "breaking",
+              "summary": "Bahrain says it was also attacked by Iran following a US air strike on the Iranian island of Qeshm in the Gulf on Tuesday.",
+              "summaryV": 3,
+              "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/492e/live/f37939a0-e346-11f1-99aa-0f40b013ad11.jpg",
+              "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/492e/live/f37939a0-e346-11f1-99aa-0f40b013ad11.jpg"
+            },
+            {
+              "source": "nyt",
+              "headline": "Iran Fires Missiles and Drones at Gulf Arab States as Peace Talks Falter",
+              "url": "https://www.nytimes.com/2026/11/18/world/middleeast/iran-attacks-bahrain-kuwait-ships-hormuz.html",
+              "date": "2026-11-18T15:37:11.000Z",
+              "kind": "hard",
+              "summary": "Kuwait and Bahrain said they were targeted on Wednesday, a sign of how the Middle East is stuck in limbo between peace and full-blown war.",
+              "summaryV": 3,
+              "image": "https://static01.nyt.com/images/2026/11/18/multimedia/18int-gulf-attacks-mbvq/18int-gulf-attacks-mbvq-mediumSquareAt3X.jpg"
+            },
+            {
+              "source": "aljazeera",
+              "headline": "Kuwait, Bahrain face new Iran attacks after US strike on Qeshm Island",
+              "url": "https://www.aljazeera.com/news/2026/11/18/kuwait-bahrain-face-new-iran-attacks-after-us-strike-on-qeshm-island",
+              "date": "2026-11-18T16:47:26.000Z",
+              "kind": "breaking",
+              "summary": "Iranian attacks on the Gulf countries draw condemnation from across the region.",
+              "summaryV": 3
             }
           ],
           "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/reuters_6afcc965-1794951525.jpg?resize=1200%2C630",
           "thread": "t1vbuo9m"
+        },
+        {
+          "id": "s1u6mual",
+          "headline": "IEA chief sees no 'credible pathway' back to pre-war normality in the Strait of Hormuz",
+          "url": "https://www.cnbc.com/2026/11/18/iea-strait-hormuz-energy-risk.html",
+          "source": "cnbc",
+          "date": "2026-11-18T12:00:01.000Z",
+          "relevance": "medium",
+          "why": "The International Energy Agency's chief says the Iran war has crushed confidence in the Strait of Hormuz as a dependable route for energy and goods. India imports most of its crude oil, much of it from the Gulf.",
+          "implications": [
+            "If shippers and insurers keep treating the strait as risky, freight and insurance costs for Gulf cargoes could stay high, raising the landed cost of oil and gas for Indian refiners and importers.",
+            "Lasting doubt over the route could push Indian refiners and gas buyers to look for supplies from other regions, which may take time to arrange and could cost more."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-18T20:44:18.506Z",
+            "tier": "quick",
+            "primary": "disruption_map",
+            "complement": null,
+            "features": [
+              "disruption",
+              "armed_conflict",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "high",
+              "reason": "India imports most of its crude oil, and Gulf crude, gas and LPG cargoes may pass through the strait. Lasting disruption risk could therefore reach fuel and cooking gas costs and availability."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "The warning concerns a lasting loss of confidence rather than an immediate stoppage, so effects would build through shipping costs and sourcing decisions over months."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "This rests on a single CNBC report of the IEA chief's on-record remarks; the strait's current operating status and any specific disruptions are not detailed."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "up",
+                "what": "fuel supply costs",
+                "effect": "If Gulf shipping risk persists, higher freight, insurance and replacement-sourcing costs could be passed on into petrol, diesel and LPG prices.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Importers & traders",
+                "direction": "up",
+                "what": "freight and insurance costs",
+                "effect": "Traders moving goods to and from the Gulf could face higher freight and insurance charges and less predictable schedules if the route stays seen as unreliable.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Further IEA statements or assessments on shipping and energy flows through the Strait of Hormuz",
+                "why": "They would show whether the agency sees any gradual recovery in confidence in the route.",
+                "when": "",
+                "where": "International Energy Agency"
+              },
+              {
+                "what": "Changes in freight and war-risk insurance rates for cargoes moving through the Gulf",
+                "why": "Rising or falling rates would show how the market is pricing the risk on this route.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "A large share of the world's seaborne oil and liquefied natural gas passes through the narrow Strait of Hormuz, between Iran and Oman.",
+              "India imports most of its crude oil and much of its gas and LPG, a large part of it from Gulf producers."
+            ],
+            "terms": [
+              {
+                "term": "IEA",
+                "meaning": "The International Energy Agency is an intergovernmental body that advises countries on energy security and publishes analysis of global oil, gas and power markets."
+              }
+            ],
+            "frameworks": {
+              "disruption_map": {
+                "node": {
+                  "name": "Strait of Hormuz",
+                  "type": "strait",
+                  "status": "unknown",
+                  "as_of": "18 Nov 2026"
+                },
+                "cause": {
+                  "text": "The IEA chief says the Iran war has crushed confidence in the strait as a reliable corridor for energy and goods.",
+                  "status": "claimed"
+                },
+                "flows": [
+                  {
+                    "flow": "crude",
+                    "india_link": "India imports most of its crude oil, much of it from Gulf producers whose cargoes move through the strait, so Indian refiners depend on this route.",
+                    "basis": "inferred"
+                  },
+                  {
+                    "flow": "LNG",
+                    "india_link": "India buys liquefied natural gas from Gulf suppliers, and shipments from the region may pass through the strait, supporting power, fertiliser and city gas use.",
+                    "basis": "inferred"
+                  },
+                  {
+                    "flow": "cargo",
+                    "india_link": "The IEA chief describes the strait as a corridor for goods as well as energy, so Indian importers and exporters trading with Gulf ports may be affected.",
+                    "basis": "reported"
+                  }
+                ],
+                "alternatives": [],
+                "duration": "not reported"
+              }
+            }
+          },
+          "place": {
+            "name": "Strait of Hormuz",
+            "country": "Iran",
+            "lat": 26.6,
+            "lon": 56.3,
+            "involves": [
+              "United States"
+            ]
+          },
+          "reports": [
+            {
+              "source": "cnbc",
+              "headline": "IEA chief sees no 'credible pathway' back to pre-war normality in the Strait of Hormuz",
+              "url": "https://www.cnbc.com/2026/11/18/iea-strait-hormuz-energy-risk.html",
+              "date": "2026-11-18T12:00:01.000Z",
+              "kind": "hard",
+              "summary": "The Iran war has 'crushed' confidence in the Strait of Hormuz as a reliable energy and goods corridor, the IEA's chief warned.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://image.cnbcfm.com/api/v1/image/108310417-1779363174700-gettyimages-2270807610-IMF_WORLD_BANK.jpeg?v=1779363216&w=1920&h=1080"
+            }
+          ],
+          "stats": {
+            "v": 2,
+            "at": "2026-11-18T20:48:29.028Z",
+            "series": [
+              {
+                "title": "Crude oil and condensate through the Strait of Hormuz",
+                "unit": "million barrels per day",
+                "publisher": "U.S. Energy Information Administration",
+                "points": [
+                  {
+                    "period": "2020",
+                    "value": 14.4,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2021",
+                    "value": 14.7,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2022",
+                    "value": 16.2,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2023",
+                    "value": 15.8,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2024",
+                    "value": 14.6,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "1H25",
+                    "value": 14.7,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "title": "eia.gov",
+                    "domain": "eia.gov"
+                  }
+                ],
+                "domains": [
+                  "eia.gov"
+                ],
+                "dropped": 0,
+                "why": "This EIA series measures crude oil and condensate flowing through the Strait of Hormuz itself, which is the route the story says has lost its reliability.",
+                "reused": true,
+                "checkedAt": "2026-10-13T23:16:50.395Z"
+              }
+            ]
+          },
+          "image": "https://image.cnbcfm.com/api/v1/image/108310417-1779363174700-gettyimages-2270807610-IMF_WORLD_BANK.jpeg?v=1779363216&w=1920&h=1080",
+          "thread": "t2ogxay"
         },
         {
           "id": "stugakr",
@@ -34800,6 +35099,16 @@
               "ogTried": true,
               "descTried": true,
               "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/2025-12-15T165556Z_678996810_RC22HIAH0IRP_RTRMADP_3_YEMEN-SECURITY-1792006124.jpg?resize=1920%2C1440"
+            },
+            {
+              "source": "france24",
+              "headline": "Yemen: Why the Houthis may besiege Aden rather than storm it",
+              "url": "https://www.france24.com/en/middle-east/20261118-yemen-why-the-houthis-may-besiege-aden-rather-than-storm-it",
+              "date": "2026-11-18T15:55:41.000Z",
+              "kind": "feature",
+              "summary": "Bolstered by their recent military successes, Houthi rebels this week advanced close to the southern port city of Aden, the interim capital of the internationally recognised Yemeni government.",
+              "summaryV": 3,
+              "image": "https://s.france24.com/media/display/8be454f8-c9ee-11f1-a86a-2d1c143cdef3/w:1024/p:16x9/AP26286485676861.jpg"
             }
           ],
           "image": "https://www.aljazeera.com/wp-content/uploads/2026/10/2025-12-15T165556Z_678996810_RC22HIAH0IRP_RTRMADP_3_YEMEN-SECURITY-1792006124.jpg?resize=1920%2C1440",
@@ -42598,6 +42907,279 @@
       "name": "Economy & Trade",
       "items": [
         {
+          "id": "s121l71c",
+          "headline": "Andy Burnham to say Brexit ‘has not worked’ and he will sign new deal with EU",
+          "url": "https://www.theguardian.com/politics/2026/nov/16/andy-burnham-brexit-has-not-worked-sign-new-deal-with-eu",
+          "source": "guardian",
+          "date": "2026-11-16T07:00:38.000Z",
+          "relevance": "medium",
+          "image": "https://i.guim.co.uk/img/media/a9167ab535ad3f6ea97ad5092601ebdb54f5d261/247_0_6155_4927/master/6155.jpg?width=700&quality=85&auto=format&fit=max&s=028c02653091abcb6fbb27728fc7ab65",
+          "why": "UK Prime Minister Andy Burnham says Brexit has not worked and he will sign a new deal with the EU. Closer UK–EU ties could change the trading rules Indian exporters face in the British market.",
+          "implications": [
+            "Burnham says the agreements he seeks at this week's summit with European leaders could raise UK gross domestic product (GDP) by 0.4%, which could modestly lift British demand for imports, including from India.",
+            "If the UK aligns more of its product and food standards with EU rules, Indian exporters may need to meet requirements that more closely match those of the European market.",
+            "The scope of the new deal has not been reported, so it is not yet clear whether it touches areas covered by India's own trade arrangements with Britain."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-17T04:05:42.758Z",
+            "tier": "standard",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The effect runs through one bilateral relationship, India's trade with the UK. It depends on what the UK–EU deal covers, which has not been reported."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "A new deal must first be agreed at the summit and then implemented before trading rules for third countries such as India could change."
+            },
+            "confidence": {
+              "level": "high",
+              "reason": "Three outlets report Burnham's on-record statements; the content of the planned deal with the EU has not been reported."
+            },
+            "outlets": 3,
+            "affected": [
+              {
+                "group": "Large exporters",
+                "direction": "unclear",
+                "what": "UK market access rules",
+                "effect": "Indian firms selling to Britain could face product standards closer to EU rules if the UK aligns with the bloc, changing compliance costs.",
+                "basis": "inferred"
+              },
+              {
+                "group": "MSME exporters",
+                "direction": "unclear",
+                "what": "compliance requirements",
+                "effect": "Smaller Indian exporters may find it costlier to adapt if British standards shift towards EU requirements after a new deal.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Agreements signed between the UK and European leaders at this week's summit",
+                "why": "The details will show whether the deal changes product standards or customs rules that affect goods from third countries such as India.",
+                "when": "this week",
+                "where": "UK Prime Minister's Office"
+              }
+            ],
+            "context": [
+              "After leaving the EU, the UK left the bloc's single market and customs union, which allowed it to negotiate its own trade agreements, including one with India."
+            ],
+            "terms": [
+              {
+                "term": "Brexit",
+                "meaning": "The United Kingdom's departure from the European Union, which ended its membership of the bloc's single market and customs union."
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Burnham seeks new deal with EU",
+                    "detail": "UK Prime Minister Andy Burnham says Brexit has not worked and that he will sign a new deal with the EU at a summit with European leaders this week.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "UK aims for closer EU ties",
+                    "detail": "Burnham says the UK needs a much closer relationship with the EU, and that the agreements could raise UK gross domestic product (GDP) by 0.4%.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "UK rules may move towards EU",
+                    "detail": "Closer ties could bring some British product, food or customs rules closer to EU standards, which would apply to imports from all countries.",
+                    "basis": "inferred"
+                  },
+                  {
+                    "step": "Indian exporters adjust to the UK",
+                    "detail": "Indian exporters to Britain may need to adjust compliance with any changed standards, which could affect costs and how they use India's trade agreement with the UK.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The new UK–EU deal leaves out product standards and customs rules, so that conditions for goods arriving from outside the EU stay unchanged."
+              }
+            }
+          },
+          "place": {
+            "name": "London",
+            "country": "United Kingdom",
+            "lat": 51.5,
+            "lon": -0.1,
+            "involves": [
+              "European Union"
+            ]
+          },
+          "reports": [
+            {
+              "source": "guardian",
+              "headline": "Andy Burnham to say Brexit ‘has not worked’ and he will sign new deal with EU",
+              "url": "https://www.theguardian.com/politics/2026/nov/16/andy-burnham-brexit-has-not-worked-sign-new-deal-with-eu",
+              "date": "2026-11-16T07:00:38.000Z",
+              "kind": "hard",
+              "summary": "PM to meet European leaders at summit this week aiming to secure agreements that ‘could raise GDP by 0.4%’",
+              "summaryV": 3,
+              "lede": "Andy Burnham will say on Monday that Brexit “has not worked” and that he will sign a new deal with the EU.",
+              "image": "https://i.guim.co.uk/img/media/a9167ab535ad3f6ea97ad5092601ebdb54f5d261/247_0_6155_4927/master/6155.jpg?width=700&quality=85&auto=format&fit=max&s=028c02653091abcb6fbb27728fc7ab65"
+            },
+            {
+              "source": "scmp",
+              "headline": "UK’s Burnham says Brexit ‘has not worked’ before key EU talks",
+              "url": "https://www.scmp.com/news/world/europe/article/3374654/uk-pm-andy-burnham-says-brexit-has-not-worked-ahead-reset-summit-eu",
+              "date": "2026-11-16T22:08:48.000Z",
+              "kind": "hard",
+              "summary": "UK Prime Minister Andy Burnham said on Monday that it is time to admit that Brexit has not delivered for the UK and that the country needs a much closer relationship with the European Union to combat growing isolationism around the world.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/17/c1755b2b-625a-46e1-bc96-81aef46e3753_fe3a6dd7.jpg?itok=dHGOMCHr&v=1794885194"
+            },
+            {
+              "source": "aljazeera",
+              "headline": "UK seeks closer ties with EU after Brexit fail",
+              "url": "https://www.aljazeera.com/news/2026/11/17/uk-seeks-closer-ties-with-eu-after-brexit-fail",
+              "date": "2026-11-17T00:30:21.000Z",
+              "kind": "hard",
+              "summary": "Prime Minister Andy Burnham says UK lost more than it gained after its divorce from the bloc.",
+              "summaryV": 3
+            },
+            {
+              "source": "nyt",
+              "headline": "Undoing Brexit",
+              "url": "https://www.nytimes.com/2026/11/18/world/19int-theworld-brexit-trump-xi-putin.html",
+              "date": "2026-11-18T20:41:00.000Z",
+              "kind": "feature",
+              "summary": "Prime Minister Andy Burnham wants a reset with the European Union. Reversing a decade of separation won’t be easy.",
+              "summaryV": 3,
+              "image": "https://static01.nyt.com/images/2026/11/19/multimedia/19int-theworld-britain-eu-01-bwzt-promo/19int-theworld-britain-eu-01-bwzt-promo-mediumSquareAt3X.jpg"
+            }
+          ],
+          "finChecked": true,
+          "thread": "t1bckavm"
+        },
+        {
+          "id": "sp8oduk",
+          "headline": "Gold drops to over one-year low, raising concerns for African producers",
+          "url": "http://www.africanews.com/2026/11/18/gold-drops-to-over-one-year-low-raising-concerns-for-african-producers/",
+          "source": "africanews",
+          "date": "2026-11-18T16:38:02.000Z",
+          "relevance": "medium",
+          "why": "Gold fell below $3,800 per ounce on Wednesday, its lowest level in more than a year. India imports nearly all of its gold, so the fall could affect jewellery prices and the import bill.",
+          "implications": [
+            "Cheaper gold could lower the cost of imported bullion for Indian jewellers and dealers, though the rupee's exchange rate and import duties decide how much of the fall reaches domestic prices.",
+            "A lower gold price may reduce India's import bill for the metal, which could ease pressure on the country's trade balance if import volumes stay roughly unchanged."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-18T20:46:44.879Z",
+            "tier": "quick",
+            "primary": "pass_through",
+            "complement": null,
+            "features": [
+              "price_move"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The effect would reach India mainly through the jewellery and bullion trade and the gold import bill. The report itself describes only effects on African producers, so the Indian channel is inferred."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Domestic bullion prices follow global moves with a short delay, while changes in buying and in the import bill take several weeks to appear."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single outlet, Africanews, with no named official source, and it covers only the effect on African producers, not on India."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Importers & traders",
+                "direction": "down",
+                "what": "gold import cost",
+                "effect": "Bullion importers and jewellers may pay less for each ounce of gold they bring in, which could lower their purchase costs if the price stays down.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Government finances",
+                "direction": "mixed",
+                "what": "gold import bill",
+                "effect": "A lower gold price could shrink the value of gold imports and ease the trade deficit, although lower prices can also encourage higher import volumes.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Whether the gold price stays below $3,800 per ounce or recovers in the coming days",
+                "why": "A sustained low would show whether the lower price is lasting enough to change Indian jewellery prices and import costs.",
+                "when": "",
+                "where": "World Gold Council"
+              }
+            ],
+            "context": [
+              "India produces very little gold and imports almost all it consumes. Indian households buy it as jewellery and as a store of value, with demand rising around weddings and festivals.",
+              "Domestic gold prices are built from the international price, converted into rupees and then raised by import duty and taxes."
+            ],
+            "terms": [],
+            "frameworks": {
+              "pass_through": {
+                "driver": {
+                  "variable": "International gold price",
+                  "direction": "down",
+                  "size": "below $3,800 per ounce, the lowest in more than a year"
+                },
+                "product": "other",
+                "rungs": [
+                  {
+                    "stage": "Global gold price → Indian import cost",
+                    "pass": "likely",
+                    "damper": "The rupee's exchange rate against the dollar changes the cost in rupees, so a weaker rupee can offset part of the fall in the dollar price.",
+                    "lag": "days"
+                  },
+                  {
+                    "stage": "Import cost → domestic bullion price",
+                    "pass": "partial",
+                    "damper": "Import duty and taxes are charged on top of the international price, so the domestic price falls by less than the global price in percentage terms.",
+                    "lag": "days"
+                  },
+                  {
+                    "stage": "Bullion price → jewellery shop price",
+                    "pass": "partial",
+                    "damper": "Making charges, taxes and retailers' existing stock bought at earlier prices can slow or soften the fall in what buyers pay.",
+                    "lag": "weeks"
+                  }
+                ],
+                "end_user": {
+                  "group": "Importers & traders",
+                  "effect": "Bullion dealers and jewellers may see lower purchase costs within days. Shoppers could notice lower jewellery prices within weeks, depending on the rupee, taxes and shop stock."
+                }
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "africanews",
+              "headline": "Gold drops to over one-year low, raising concerns for African producers",
+              "url": "http://www.africanews.com/2026/11/18/gold-drops-to-over-one-year-low-raising-concerns-for-african-producers/",
+              "date": "2026-11-18T16:38:02.000Z",
+              "kind": "hard",
+              "summary": "The price of gold fell below $3,800 per ounce on Wednesday, reaching its lowest level in more than a year. This drop could have concrete impacts for African producers like Mali, Burkina Faso, Ghana or Tanzania.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://images.euronews.com/articles/stories/09/99/81/31/1024x538_cmsv2_2ac95eca-5679-586c-bb4d-50bedf59d41f-9998131.jpg"
+            }
+          ],
+          "finChecked": true,
+          "stats": {
+            "v": 2,
+            "at": "2026-11-18T20:48:22.486Z",
+            "series": []
+          },
+          "placeTried": true,
+          "image": "https://images.euronews.com/articles/stories/09/99/81/31/1024x538_cmsv2_2ac95eca-5679-586c-bb4d-50bedf59d41f-9998131.jpg",
+          "thread": "t1mv1xb"
+        },
+        {
           "id": "s1gp29t4",
           "headline": "Trump eyes China after brief Manila stop, seeking chemistry with Xi amid fresh AI strains",
           "url": "https://www.scmp.com/news/china/diplomacy/article/3374795/trump-eyes-china-after-brief-manila-stop-seeking-chemistry-xi-amid-fresh-ai-strains",
@@ -42605,15 +43187,17 @@
           "date": "2026-11-17T15:39:39.000Z",
           "relevance": "medium",
           "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/17/6abf86ce-551a-4b0a-8334-225c3ac7612b_95036dd3.jpg?itok=bQ-2RTZQ&v=1794929922",
-          "why": "US President Donald Trump has arrived in Manila and is looking ahead to talks with Chinese President Xi Jinping in Shenzhen amid fresh strains over artificial intelligence. India could feel the outcome through trade and technology conditions.",
+          "why": "US President Donald Trump has arrived in Shenzhen for talks with Chinese President Xi Jinping amid fresh strains over artificial intelligence (AI). Any shift in US-China trade terms could reach India through global supply chains and investment flows.",
           "implications": [
-            "Any easing or tightening of US-China technology and trade terms could change the conditions under which Indian exporters and technology firms compete for orders and for supply-chain investment.",
-            "Because the strains concern artificial intelligence, the talks may shape rules on advanced technology that Indian technology and services companies depend on, although the reports do not say what is on the table."
+            "Trump said he and Xi have very important things to discuss, so trade and technology disputes may be on the table rather than only ceremonial diplomacy.",
+            "A thaw between Washington and Beijing could weaken the case for global firms to move production away from China, which may reduce the investment India hopes to attract.",
+            "Renewed friction over AI could instead push more technology companies to diversify suppliers, which may benefit alternative manufacturing bases such as India.",
+            "A meeting with Russian President Vladimir Putin is also on Trump's agenda, which could matter for India because of its own close economic ties with Russia."
           ],
           "analysis": {
             "v": 3,
-            "at": "2026-11-17T16:16:22.916Z",
-            "tier": "quick",
+            "at": "2026-11-18T20:50:54.032Z",
+            "tier": "standard",
             "primary": "impact_chain",
             "complement": null,
             "features": [
@@ -42621,67 +43205,94 @@
             ],
             "exposure": {
               "level": "low",
-              "reason": "The reports describe only a forthcoming meeting and give no tariff, export or technology decision that would reach India directly. Any effect would be indirect, through global trade and technology conditions."
+              "reason": "The visit reaches India only indirectly, through possible changes to US-China trade terms and global investment decisions. No direct measure affecting India has been announced."
             },
             "horizon": {
               "value": "months",
-              "reason": "No agreement has been reported yet, so any effect on Indian trade or technology firms would depend on decisions that follow the Shenzhen meeting."
+              "reason": "Any agreements from the summit would take months to translate into tariff changes, sourcing decisions and investment flows that affect Indian businesses."
             },
             "confidence": {
               "level": "medium",
-              "reason": "This rests on one outlet, the South China Morning Post, which quotes Mr Trump on record; the nature of the AI strains and the meeting's agenda are unconfirmed."
+              "reason": "The South China Morning Post and NPR agree on the visit, with an on-record Trump quote, but the substance and outcome of the talks are unknown."
             },
-            "outlets": 1,
+            "outlets": 2,
             "affected": [
-              {
-                "group": "IT & services workers",
-                "direction": "unclear",
-                "what": "technology and trade conditions",
-                "effect": "Indian technology and services firms earn much of their revenue in the US, so changes in US-China technology relations could indirectly affect their business and hiring.",
-                "basis": "inferred"
-              },
               {
                 "group": "Large exporters",
                 "direction": "unclear",
-                "what": "global trade conditions",
-                "effect": "A shift in US-China trade relations could change tariffs and demand in markets where Indian exporters compete with Chinese suppliers.",
+                "what": "competition for diverted investment",
+                "effect": "Indian exporters competing with China for global orders could gain or lose, depending on whether US-China tensions ease or deepen after the talks.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Manufacturing workers",
+                "direction": "unclear",
+                "what": "new factory investment",
+                "effect": "Jobs linked to companies relocating production out of China could grow or slow, depending on the direction US-China trade relations take after the meeting.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "The outcome of the meeting between Mr Trump and Mr Xi in Shenzhen, especially on artificial intelligence and trade",
-                "why": "It would show whether US-China strains are easing or worsening, which shapes the global trade and technology climate India operates in.",
+                "what": "Any joint statement or announced agreement after the Trump-Xi meeting in Shenzhen",
+                "why": "It would show whether US-China trade and AI tensions are easing, which shapes supply-chain decisions affecting India.",
                 "when": "",
-                "where": ""
+                "where": "White House"
+              },
+              {
+                "what": "The outcome of Trump's planned meeting with Russian President Vladimir Putin",
+                "why": "It would indicate whether US policy towards Russia is shifting, which matters for India's trade with Moscow.",
+                "when": "",
+                "where": "White House"
               }
             ],
             "context": [
-              "The United States and China are rivals in technology and trade, and their decisions on tariffs and technology controls often affect third countries. India is both a competitor for supply-chain shifts and a large market for US-linked services."
+              "India is not a party to US-China talks, but it competes as an alternative manufacturing base for companies seeking to reduce their dependence on China.",
+              "Even when US and Chinese leaders display personal warmth, the two governments have tended to keep tightening trade and investment restrictions on each other.",
+              "India buys large volumes of crude oil from Russia, so US policy towards Moscow can affect India's energy trade and its relations with Washington."
             ],
             "terms": [],
             "frameworks": {
               "impact_chain": {
                 "chain": [
                   {
-                    "step": "Trump looks ahead to Xi meeting",
-                    "detail": "Hours after arriving in Manila on Tuesday, Mr Trump said he and Mr Xi had very important things to discuss in Shenzhen.",
+                    "step": "Trump arrives in Shenzhen",
+                    "detail": "Trump landed in Shenzhen after a brief stop in Manila, and Xi greeted him on the tarmac. Meetings with Xi and Putin are on the agenda.",
                     "basis": "reported"
                   },
                   {
-                    "step": "Talks held amid AI strains",
-                    "detail": "The South China Morning Post describes the meeting as taking place amid fresh strains over artificial intelligence, with Mr Trump seeking chemistry with Mr Xi.",
+                    "step": "Talks amid AI strains",
+                    "detail": "The leaders are meeting against a backdrop of fresh strains over artificial intelligence. Trump said they have very important things to discuss.",
                     "basis": "reported"
                   },
                   {
-                    "step": "Global trade and tech climate shifts",
-                    "detail": "Decisions that follow could change trade and technology conditions worldwide. This may indirectly affect Indian exporters and technology services firms that operate in US and Chinese markets.",
+                    "step": "US-China trade terms may shift",
+                    "detail": "Any deal or breakdown could change tariffs and technology controls between the two largest economies. This may alter where global companies choose to manufacture and source components.",
+                    "basis": "inferred"
+                  },
+                  {
+                    "step": "Indian manufacturing and exports affected",
+                    "detail": "Changes in global sourcing could affect how much investment and how many export orders flow to India as an alternative to China.",
                     "basis": "inferred"
                   }
                 ],
-                "breaks_if": "The meeting produces no change in US-China trade or technology terms, or any change does not touch the markets and supply chains where Indian firms operate."
+                "breaks_if": "The meeting produces no change in US-China trade or technology policy, which would leave global supply-chain decisions, and India's position within them, largely as they are."
               }
-            }
+            },
+            "reading": [
+              {
+                "headline": "Will a Spy Scandal, Trade Friction and a Surprise Guest Ruin Xi’s Big Moment?",
+                "url": "https://www.nytimes.com/2026/11/17/world/asia/xi-apec.html",
+                "source": "nyt",
+                "date": "2026-11-18T00:12:06.000Z"
+              },
+              {
+                "headline": "As Trump and Xi Mingle, Their Governments Are Arming Up",
+                "url": "https://www.nytimes.com/2026/11/17/business/trump-xi-meeting-tensions.html",
+                "source": "nyt",
+                "date": "2026-11-17T10:03:49.000Z"
+              }
+            ]
           },
           "place": {
             "name": "Manila",
@@ -42847,89 +43458,128 @@
           "date": "2026-11-18T03:24:54.000Z",
           "relevance": "medium",
           "image": "https://s.france24.com/media/display/6c27aea8-e2f8-11f1-acc5-ff16da94d1fe/w:1024/p:16x9/b8a39c56a6822b99f0824e38b60014e799bb99fe.jpg",
-          "why": "Chinese President Xi Jinping opened the Asia-Pacific Economic Cooperation (APEC) summit in Shenzhen by urging global cooperation on artificial intelligence and free trade, ahead of an expected meeting with US President Donald Trump. Outcomes could affect India through global trade and technology supply chains.",
+          "why": "Xi Jinping opened the APEC summit in Shenzhen by pledging lower trade barriers and wider access to China's market, ahead of talks with Trump on new US chip export restrictions. The outcome could reshape supply chains that Indian manufacturers depend on.",
           "implications": [
-            "New US chip export restrictions are expected to feature at the summit, and changes to such rules can alter the cost and availability of components used by electronics makers worldwide, including those supplying India.",
-            "A meeting between the leaders of the two largest economies could ease or sharpen trade tensions, which shapes tariffs, shipping demand and the export conditions Indian firms face."
+            "China is presenting itself as a stable, predictable partner for global firms, which could compete directly with India's efforts to attract companies diversifying away from China.",
+            "New US chip export restrictions are set to feature prominently, and any tightening could affect electronics supply chains that run through both China and India.",
+            "If China opens its manufacturing sector further to foreign investors, some multinational capital may stay in or return to China rather than move to India.",
+            "Xi also called for global cooperation on artificial intelligence, an area where India's technology sector has commercial and policy interests."
           ],
           "analysis": {
             "v": 3,
-            "at": "2026-11-18T11:57:16.619Z",
-            "tier": "quick",
+            "at": "2026-11-18T20:50:54.032Z",
+            "tier": "standard",
             "primary": "impact_chain",
             "complement": null,
             "features": [
               "pending_outcome"
             ],
             "exposure": {
-              "level": "low",
-              "reason": "The reach to India is indirect, running through global trade tensions and chip supply chains, and nothing reported yet changes a specific Indian import, export or household cost."
+              "level": "medium",
+              "reason": "The effect reaches India mainly through its electronics and manufacturing industries, which depend on Chinese inputs and compete with China for foreign investment. It does not touch household essentials directly."
             },
             "horizon": {
               "value": "months",
-              "reason": "Any effect depends on whether the leaders' talks lead to changes in tariffs or chip export rules, which would take time to reach Indian firms."
+              "reason": "Any change to tariffs, chip controls or Chinese market access would take months to alter companies' sourcing and investment decisions."
             },
             "confidence": {
-              "level": "medium",
-              "reason": "This rests on one outlet, France 24, reporting Xi's public remarks; the Trump meeting is only expected and its content is not yet known."
+              "level": "high",
+              "reason": "France 24, Al Jazeera and CNBC agree on Xi's on-record speech, though the outcome of his meeting with Trump is not yet known."
             },
-            "outlets": 1,
+            "outlets": 3,
             "affected": [
               {
-                "group": "Manufacturing workers",
-                "direction": "unclear",
-                "what": "electronics component supply",
-                "effect": "Tighter or looser US chip export rules could change component costs and availability for electronics factories in India, which may affect production and hiring.",
+                "group": "Large exporters",
+                "direction": "mixed",
+                "what": "competition for global orders",
+                "effect": "Indian electronics and manufacturing exporters could face stiffer competition if China wins back foreign investors, or gain if US chip curbs push sourcing elsewhere.",
                 "basis": "inferred"
               },
               {
-                "group": "Large exporters",
+                "group": "Importers & traders",
                 "direction": "unclear",
-                "what": "global trade conditions",
-                "effect": "Whether US–China trade tensions ease or worsen can shift global demand and shipping costs, which influences the conditions Indian exporters face.",
+                "what": "cost of Chinese inputs",
+                "effect": "Indian firms importing Chinese components could see their costs or supply change if US-China tensions shift the flow of chips and electronics.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Manufacturing workers",
+                "direction": "unclear",
+                "what": "factory investment",
+                "effect": "Hiring in Indian factories built for firms diversifying from China could slow or speed up, depending on the summit's effect on global investment decisions.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "Outcome of the expected meeting between Xi Jinping and Donald Trump on the sidelines of the APEC summit",
-                "why": "It would show whether trade tensions and chip export restrictions are easing or hardening.",
+                "what": "The outcome of Xi's meeting with Trump on trade and new US chip export restrictions",
+                "why": "It would show whether chip controls and tariffs are tightening or easing, which shapes electronics supply chains reaching India.",
                 "when": "",
-                "where": ""
+                "where": "White House"
+              },
+              {
+                "what": "Specific Chinese measures opening its market and manufacturing sector to foreign firms",
+                "why": "Concrete measures would indicate how strongly China will compete with India for foreign manufacturing investment.",
+                "when": "",
+                "where": "China's Ministry of Commerce"
               }
             ],
             "context": [
-              "APEC is a forum of Pacific Rim economies that promotes trade and investment cooperation; India is not a member, so it is affected by the outcomes rather than part of the talks.",
-              "US export controls on advanced chips are generally aimed at limiting China's access to cutting-edge technology, and they ripple through the global electronics supply chain on which India's growing electronics manufacturing depends."
+              "India is not a member of APEC, so it has no seat in these discussions even though their outcomes can affect its trade.",
+              "India runs a large trade deficit with China and relies heavily on Chinese electronic components, machinery and chemical inputs for its own manufacturing.",
+              "India has sought to attract firms moving production out of China, partly through production-linked incentive schemes for electronics and other sectors."
             ],
             "terms": [
               {
                 "term": "APEC",
-                "meaning": "Asia-Pacific Economic Cooperation, a grouping of Pacific Rim economies that meets annually to discuss trade and economic cooperation; India is not a member."
+                "meaning": "The Asia-Pacific Economic Cooperation forum, a grouping of Pacific Rim economies that meets annually to discuss trade and investment."
+              },
+              {
+                "term": "chip export restrictions",
+                "meaning": "Government rules that limit which advanced semiconductors, or the tools to make them, can be sold to particular countries or companies."
               }
             ],
             "frameworks": {
               "impact_chain": {
                 "chain": [
                   {
-                    "step": "Xi opens APEC in Shenzhen",
-                    "detail": "Xi Jinping called for stronger global cooperation on artificial intelligence and free trade as the summit opened, ahead of an expected meeting with Donald Trump.",
+                    "step": "Xi pitches free trade at APEC",
+                    "detail": "Xi opened the APEC summit in Shenzhen by calling for lower trade and investment barriers. He pledged broader access to China's market and manufacturing sector.",
                     "basis": "reported"
                   },
                   {
-                    "step": "Trade and chip curbs on agenda",
-                    "detail": "Trade tensions and new US chip export restrictions are set to feature prominently, so the talks could influence how freely technology and goods move between major economies.",
+                    "step": "Chip curbs on the agenda",
+                    "detail": "Trade tensions and new US chip export restrictions are set to feature prominently, ahead of Xi's expected meeting with Trump.",
                     "basis": "reported"
                   },
                   {
-                    "step": "Indirect effect on Indian firms",
-                    "detail": "Indian electronics and technology firms that rely on global chip supply chains and export markets could see changes in costs or demand if the rules or tariffs shift.",
+                    "step": "Global sourcing decisions may shift",
+                    "detail": "The talks could ease or harden trade and technology controls. This may change whether multinational firms keep production in China or move it to other countries.",
+                    "basis": "inferred"
+                  },
+                  {
+                    "step": "Indian manufacturing feels the effect",
+                    "detail": "Indian electronics makers depend on Chinese inputs and compete with China for investment, so their costs and investment inflows could change as a result.",
                     "basis": "inferred"
                   }
                 ],
-                "breaks_if": "The talks produce no change to tariffs or chip export rules, or any change does not touch the components and markets that Indian firms depend on."
+                "breaks_if": "Xi's pledges are not followed by concrete measures and the US leaves its chip and trade policy unchanged, which would leave existing supply-chain patterns largely undisturbed."
               }
-            }
+            },
+            "reading": [
+              {
+                "headline": "Will a Spy Scandal, Trade Friction and a Surprise Guest Ruin Xi’s Big Moment?",
+                "url": "https://www.nytimes.com/2026/11/17/world/asia/xi-apec.html",
+                "source": "nyt",
+                "date": "2026-11-18T00:12:06.000Z"
+              },
+              {
+                "headline": "As Trump and Xi Mingle, Their Governments Are Arming Up",
+                "url": "https://www.nytimes.com/2026/11/17/business/trump-xi-meeting-tensions.html",
+                "source": "nyt",
+                "date": "2026-11-17T10:03:49.000Z"
+              }
+            ]
           },
           "place": {
             "name": "Shenzhen",
@@ -42958,6 +43608,15 @@
               "date": "2026-11-18T08:05:18.000Z",
               "kind": "hard",
               "summary": "The president says Beijing seeks to provide a 'stable, predictable and beneficial environment for global enterprises'.",
+              "summaryV": 3
+            },
+            {
+              "source": "cnbc",
+              "headline": "China’s Xi calls for removing trade and investment barriers ahead of his meeting with Trump and Putin",
+              "url": "https://www.cnbc.com/2026/11/18/china-xi-trade-investment-barriers.html",
+              "date": "2026-11-18T08:00:05.000Z",
+              "kind": "hard",
+              "summary": "Xi opened the APEC summit in Shenzhen by calling for lower trade and investment barriers, pledging broader access to China’s market and manufacturing sector.",
               "summaryV": 3
             }
           ],
@@ -44025,147 +44684,6 @@
           ],
           "finChecked": true,
           "thread": "tq9ru94"
-        },
-        {
-          "id": "s121l71c",
-          "headline": "Andy Burnham to say Brexit ‘has not worked’ and he will sign new deal with EU",
-          "url": "https://www.theguardian.com/politics/2026/nov/16/andy-burnham-brexit-has-not-worked-sign-new-deal-with-eu",
-          "source": "guardian",
-          "date": "2026-11-16T07:00:38.000Z",
-          "relevance": "medium",
-          "image": "https://i.guim.co.uk/img/media/a9167ab535ad3f6ea97ad5092601ebdb54f5d261/247_0_6155_4927/master/6155.jpg?width=700&quality=85&auto=format&fit=max&s=028c02653091abcb6fbb27728fc7ab65",
-          "why": "UK Prime Minister Andy Burnham says Brexit has not worked and he will sign a new deal with the EU. Closer UK–EU ties could change the trading rules Indian exporters face in the British market.",
-          "implications": [
-            "Burnham says the agreements he seeks at this week's summit with European leaders could raise UK gross domestic product (GDP) by 0.4%, which could modestly lift British demand for imports, including from India.",
-            "If the UK aligns more of its product and food standards with EU rules, Indian exporters may need to meet requirements that more closely match those of the European market.",
-            "The scope of the new deal has not been reported, so it is not yet clear whether it touches areas covered by India's own trade arrangements with Britain."
-          ],
-          "analysis": {
-            "v": 3,
-            "at": "2026-11-17T04:05:42.758Z",
-            "tier": "standard",
-            "primary": "impact_chain",
-            "complement": null,
-            "features": [
-              "pending_outcome"
-            ],
-            "exposure": {
-              "level": "medium",
-              "reason": "The effect runs through one bilateral relationship, India's trade with the UK. It depends on what the UK–EU deal covers, which has not been reported."
-            },
-            "horizon": {
-              "value": "months",
-              "reason": "A new deal must first be agreed at the summit and then implemented before trading rules for third countries such as India could change."
-            },
-            "confidence": {
-              "level": "high",
-              "reason": "Three outlets report Burnham's on-record statements; the content of the planned deal with the EU has not been reported."
-            },
-            "outlets": 3,
-            "affected": [
-              {
-                "group": "Large exporters",
-                "direction": "unclear",
-                "what": "UK market access rules",
-                "effect": "Indian firms selling to Britain could face product standards closer to EU rules if the UK aligns with the bloc, changing compliance costs.",
-                "basis": "inferred"
-              },
-              {
-                "group": "MSME exporters",
-                "direction": "unclear",
-                "what": "compliance requirements",
-                "effect": "Smaller Indian exporters may find it costlier to adapt if British standards shift towards EU requirements after a new deal.",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "Agreements signed between the UK and European leaders at this week's summit",
-                "why": "The details will show whether the deal changes product standards or customs rules that affect goods from third countries such as India.",
-                "when": "this week",
-                "where": "UK Prime Minister's Office"
-              }
-            ],
-            "context": [
-              "After leaving the EU, the UK left the bloc's single market and customs union, which allowed it to negotiate its own trade agreements, including one with India."
-            ],
-            "terms": [
-              {
-                "term": "Brexit",
-                "meaning": "The United Kingdom's departure from the European Union, which ended its membership of the bloc's single market and customs union."
-              }
-            ],
-            "frameworks": {
-              "impact_chain": {
-                "chain": [
-                  {
-                    "step": "Burnham seeks new deal with EU",
-                    "detail": "UK Prime Minister Andy Burnham says Brexit has not worked and that he will sign a new deal with the EU at a summit with European leaders this week.",
-                    "basis": "reported"
-                  },
-                  {
-                    "step": "UK aims for closer EU ties",
-                    "detail": "Burnham says the UK needs a much closer relationship with the EU, and that the agreements could raise UK gross domestic product (GDP) by 0.4%.",
-                    "basis": "reported"
-                  },
-                  {
-                    "step": "UK rules may move towards EU",
-                    "detail": "Closer ties could bring some British product, food or customs rules closer to EU standards, which would apply to imports from all countries.",
-                    "basis": "inferred"
-                  },
-                  {
-                    "step": "Indian exporters adjust to the UK",
-                    "detail": "Indian exporters to Britain may need to adjust compliance with any changed standards, which could affect costs and how they use India's trade agreement with the UK.",
-                    "basis": "inferred"
-                  }
-                ],
-                "breaks_if": "The new UK–EU deal leaves out product standards and customs rules, so that conditions for goods arriving from outside the EU stay unchanged."
-              }
-            }
-          },
-          "place": {
-            "name": "London",
-            "country": "United Kingdom",
-            "lat": 51.5,
-            "lon": -0.1,
-            "involves": [
-              "European Union"
-            ]
-          },
-          "reports": [
-            {
-              "source": "guardian",
-              "headline": "Andy Burnham to say Brexit ‘has not worked’ and he will sign new deal with EU",
-              "url": "https://www.theguardian.com/politics/2026/nov/16/andy-burnham-brexit-has-not-worked-sign-new-deal-with-eu",
-              "date": "2026-11-16T07:00:38.000Z",
-              "kind": "hard",
-              "summary": "PM to meet European leaders at summit this week aiming to secure agreements that ‘could raise GDP by 0.4%’",
-              "summaryV": 3,
-              "lede": "Andy Burnham will say on Monday that Brexit “has not worked” and that he will sign a new deal with the EU.",
-              "image": "https://i.guim.co.uk/img/media/a9167ab535ad3f6ea97ad5092601ebdb54f5d261/247_0_6155_4927/master/6155.jpg?width=700&quality=85&auto=format&fit=max&s=028c02653091abcb6fbb27728fc7ab65"
-            },
-            {
-              "source": "scmp",
-              "headline": "UK’s Burnham says Brexit ‘has not worked’ before key EU talks",
-              "url": "https://www.scmp.com/news/world/europe/article/3374654/uk-pm-andy-burnham-says-brexit-has-not-worked-ahead-reset-summit-eu",
-              "date": "2026-11-16T22:08:48.000Z",
-              "kind": "hard",
-              "summary": "UK Prime Minister Andy Burnham said on Monday that it is time to admit that Brexit has not delivered for the UK and that the country needs a much closer relationship with the European Union to combat growing isolationism around the world.",
-              "summaryV": 3,
-              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/17/c1755b2b-625a-46e1-bc96-81aef46e3753_fe3a6dd7.jpg?itok=dHGOMCHr&v=1794885194"
-            },
-            {
-              "source": "aljazeera",
-              "headline": "UK seeks closer ties with EU after Brexit fail",
-              "url": "https://www.aljazeera.com/news/2026/11/17/uk-seeks-closer-ties-with-eu-after-brexit-fail",
-              "date": "2026-11-17T00:30:21.000Z",
-              "kind": "hard",
-              "summary": "Prime Minister Andy Burnham says UK lost more than it gained after its divorce from the bloc.",
-              "summaryV": 3
-            }
-          ],
-          "finChecked": true,
-          "thread": "t1bckavm"
         },
         {
           "id": "shljhp5",
@@ -58623,6 +59141,492 @@
       "name": "Finance",
       "items": [
         {
+          "id": "sci0rju",
+          "headline": "Fed Saw Need to Keep Raising Interest Rates Despite Holding Steady in October",
+          "url": "https://www.nytimes.com/2026/11/18/business/federal-reserve-rate-increase-october-meeting.html",
+          "source": "nyt",
+          "date": "2026-11-18T20:35:00.000Z",
+          "relevance": "medium",
+          "image": "https://static01.nyt.com/images/2026/11/18/multimedia/18dc-fed-minutes-lkbf/18dc-fed-minutes-lkbf-mediumSquareAt3X.jpg",
+          "why": "Minutes of the US Federal Reserve's latest meeting show officials saw a need to keep raising interest rates even though they held them steady in October. Firm US rates can influence capital flows and the rupee in India.",
+          "implications": [
+            "If US interest rates stay high or rise further, global investors may find US assets more attractive, which could draw money away from emerging markets such as India.",
+            "A stronger dollar and weaker rupee could raise the cost of imports such as crude oil, which may add to inflation pressure for Indian households and businesses."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-18T20:47:54.592Z",
+            "tier": "quick",
+            "primary": "decoder",
+            "complement": null,
+            "features": [
+              "scheduled"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The effect reaches India indirectly through foreign investment flows and the rupee's exchange rate. No direct impact on a household essential is reported, so exposure is medium."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Markets tend to adjust to Fed signals within days to weeks, while any effect on import costs would build up gradually."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "This rests on one outlet, The New York Times, summarising the Fed's own published minutes; the size and timing of any future rate rises are not reported."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Equity & mutual fund investors",
+                "direction": "unclear",
+                "what": "foreign investment flows",
+                "effect": "Expectations of higher US rates could prompt foreign investors to move money out of Indian shares and bonds, which may make Indian markets more volatile.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Importers & traders",
+                "direction": "up",
+                "what": "import costs",
+                "effect": "If higher US rates weaken the rupee against the dollar, Indian importers could pay more in rupees for goods priced in dollars.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "The Federal Reserve's next interest rate decision and any signal of a rate rise",
+                "why": "It would show whether officials follow through on the view in the minutes that rates may need to keep rising.",
+                "when": "",
+                "where": "Federal Reserve"
+              }
+            ],
+            "context": [
+              "The Federal Reserve sets the benchmark US interest rate, and its decisions influence borrowing costs and currency values worldwide. India is exposed mainly through foreign portfolio flows, the rupee and the cost of imports priced in dollars."
+            ],
+            "terms": [
+              {
+                "term": "Minutes",
+                "meaning": "The written record of a central bank's policy meeting, published some weeks afterwards, showing how officials discussed the economy and their options."
+              }
+            ],
+            "frameworks": {
+              "decoder": {
+                "kind": "decision",
+                "headline": {
+                  "label": "Federal Reserve October policy decision",
+                  "value": null,
+                  "unit": "",
+                  "period": "October",
+                  "previous": null,
+                  "previousLabel": "Minutes show officials saw a need for further rate rises",
+                  "from": "The New York Times"
+                },
+                "comparisons": [],
+                "drivers": [
+                  {
+                    "name": "Inflation remains top priority",
+                    "direction": "up",
+                    "how": "The minutes underscored that taming inflation remained officials' top priority, which supported the view that rates may need to keep rising."
+                  }
+                ],
+                "decision": {
+                  "action": "hold",
+                  "size": "Rates held steady in October",
+                  "stance": "Officials held rates in October but saw a need to keep raising them, because bringing down inflation remained their top priority."
+                }
+              }
+            }
+          },
+          "place": {
+            "name": "Washington",
+            "country": "United States",
+            "lat": 38.9,
+            "lon": -77
+          },
+          "reports": [
+            {
+              "source": "nyt",
+              "headline": "Fed Saw Need to Keep Raising Interest Rates Despite Holding Steady in October",
+              "url": "https://www.nytimes.com/2026/11/18/business/federal-reserve-rate-increase-october-meeting.html",
+              "date": "2026-11-18T20:35:00.000Z",
+              "kind": "hard",
+              "summary": "Minutes from the Federal Reserve’s most recent gathering underscored that taming inflation remained officials’ top priority.",
+              "summaryV": 3,
+              "image": "https://static01.nyt.com/images/2026/11/18/multimedia/18dc-fed-minutes-lkbf/18dc-fed-minutes-lkbf-mediumSquareAt3X.jpg"
+            }
+          ],
+          "stats": {
+            "v": 2,
+            "at": "2026-11-18T20:47:58.280Z",
+            "series": [
+              {
+                "title": "US Fed target federal funds rate range after each change",
+                "unit": "% (target range)",
+                "publisher": "Board of Governors of the Federal Reserve System",
+                "points": [
+                  {
+                    "period": "Dec 15, 2022",
+                    "value": 4.25,
+                    "url": "https://www.federalreserve.gov/monetarypolicy/openmarket.htm",
+                    "source": "Open Market Operations"
+                  },
+                  {
+                    "period": "Feb 2, 2023",
+                    "value": 4.5,
+                    "url": "https://www.federalreserve.gov/monetarypolicy/openmarket.htm",
+                    "source": "Open Market Operations"
+                  },
+                  {
+                    "period": "Mar 23, 2023",
+                    "value": 4.75,
+                    "url": "https://www.federalreserve.gov/monetarypolicy/openmarket.htm",
+                    "source": "Open Market Operations"
+                  },
+                  {
+                    "period": "May 4, 2023",
+                    "value": 5,
+                    "url": "https://www.federalreserve.gov/monetarypolicy/openmarket.htm",
+                    "source": "Open Market Operations"
+                  },
+                  {
+                    "period": "Jul 27, 2023",
+                    "value": 5.25,
+                    "url": "https://www.federalreserve.gov/monetarypolicy/openmarket.htm",
+                    "source": "Open Market Operations"
+                  },
+                  {
+                    "period": "Sep 19, 2024",
+                    "value": 4.75,
+                    "url": "https://www.federalreserve.gov/monetarypolicy/openmarket.htm",
+                    "source": "Open Market Operations"
+                  },
+                  {
+                    "period": "Nov 8, 2024",
+                    "value": 4.5,
+                    "url": "https://www.federalreserve.gov/monetarypolicy/openmarket.htm",
+                    "source": "Open Market Operations"
+                  },
+                  {
+                    "period": "Dec 19, 2024",
+                    "value": 4.25,
+                    "url": "https://www.federalreserve.gov/monetarypolicy/openmarket.htm",
+                    "source": "Open Market Operations"
+                  },
+                  {
+                    "period": "Sep 18, 2025",
+                    "value": 4,
+                    "url": "https://www.federalreserve.gov/monetarypolicy/openmarket.htm",
+                    "source": "Open Market Operations"
+                  },
+                  {
+                    "period": "Oct 30, 2025",
+                    "value": 3.75,
+                    "url": "https://www.federalreserve.gov/monetarypolicy/openmarket.htm",
+                    "source": "Open Market Operations"
+                  },
+                  {
+                    "period": "Dec 11, 2025",
+                    "value": 3.5,
+                    "url": "https://www.federalreserve.gov/monetarypolicy/openmarket.htm",
+                    "source": "Open Market Operations"
+                  },
+                  {
+                    "period": "Sep 17, 2026",
+                    "value": 3.75,
+                    "url": "https://www.federalreserve.gov/monetarypolicy/openmarket.htm",
+                    "source": "Open Market Operations"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.federalreserve.gov/monetarypolicy/openmarket.htm",
+                    "title": "Open Market Operations",
+                    "domain": "federalreserve.gov"
+                  }
+                ],
+                "domains": [
+                  "federalreserve.gov"
+                ],
+                "dropped": 0,
+                "why": "This series tracks the US Federal Reserve's target federal funds rate range after each change, which is the central policy decision the story covers: the Fed holding rates steady while officials argue",
+                "reused": true,
+                "checkedAt": "2026-10-28T13:16:32.547Z"
+              }
+            ]
+          },
+          "thread": "tpnacn3"
+        },
+        {
+          "id": "s1ok1iz6",
+          "headline": "Fed’s Waller says central bank may need to ‘shock people’ with half-point rate hike",
+          "url": "https://www.cnbc.com/2026/11/18/federal-reserve-governor-christopher-waller.html",
+          "source": "cnbc",
+          "date": "2026-11-18T15:13:39.000Z",
+          "relevance": "medium",
+          "why": "Waller of the US Federal Reserve said the central bank may need to \"shock people\" with a half-point rate hike because inflation remains above its 2% target. A tighter Fed can affect India through capital flows and the rupee.",
+          "implications": [
+            "A larger US rate rise widens the interest-rate gap in favour of dollar assets, which can draw money away from emerging markets such as India and put pressure on the rupee.",
+            "A weaker rupee raises the cost of imports such as crude oil, which could add to inflation and make the Reserve Bank of India more cautious about lowering rates."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-18T20:46:06.832Z",
+            "tier": "quick",
+            "primary": "pass_through",
+            "complement": null,
+            "features": [
+              "price_move",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The effect would reach India through foreign investment flows, the rupee and imported inflation. It does not touch a household essential directly, and the Fed has not yet decided on any hike."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Currency and bond markets react quickly to signals about US rates, but any change in Indian loan rates would follow only after policy decisions and would take longer."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "This rests on a single CNBC report quoting Waller on the record. No rate decision has been taken and the Fed's wider position is not confirmed."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Equity & mutual fund investors",
+                "direction": "unclear",
+                "what": "market volatility",
+                "effect": "Expectations of higher US rates could prompt foreign investors to move money out of Indian shares and bonds, which may unsettle prices and the value of mutual fund holdings.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Borrowers",
+                "direction": "unclear",
+                "what": "future loan rates",
+                "effect": "If a weaker rupee and higher imported prices keep Indian inflation elevated, the Reserve Bank of India could delay rate cuts, which would keep loan EMIs higher for longer.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "The Federal Reserve's next policy decision and any signal on the size of a rate increase",
+                "why": "It would show whether the half-point hike Waller described becomes policy or remains one official's view.",
+                "when": "",
+                "where": "US Federal Reserve"
+              },
+              {
+                "what": "The Reserve Bank of India's next statement on inflation and the rupee",
+                "why": "It would show whether Indian policymakers expect to respond to a tighter Fed.",
+                "when": "",
+                "where": "Reserve Bank of India"
+              }
+            ],
+            "context": [
+              "US interest rates act as a benchmark for global borrowing costs, so Fed decisions influence bond yields, currencies and investor flows worldwide.",
+              "The Reserve Bank of India sets its own policy rate mainly on domestic inflation and growth, but it watches the Fed because the gap between the two rates affects the rupee."
+            ],
+            "terms": [
+              {
+                "term": "half-point rate hike",
+                "meaning": "An increase of half a percentage point in the central bank's policy interest rate, which is larger than the usual step."
+              }
+            ],
+            "frameworks": {
+              "pass_through": {
+                "driver": {
+                  "variable": "US Federal Reserve policy interest rate",
+                  "direction": "up",
+                  "size": "half-point"
+                },
+                "product": "loan EMIs",
+                "rungs": [
+                  {
+                    "stage": "Fed rate signal → US bond yields and the dollar",
+                    "pass": "likely",
+                    "damper": "The Fed has not yet voted on a hike, so markets may price in the possibility without any change in actual rates.",
+                    "lag": "days"
+                  },
+                  {
+                    "stage": "Higher US yields → foreign flows and the rupee",
+                    "pass": "partial",
+                    "damper": "The Reserve Bank of India can sell dollars from its reserves to smooth rupee falls, and domestic factors also move investor flows.",
+                    "lag": "weeks"
+                  },
+                  {
+                    "stage": "Rupee and imported inflation → Indian policy rate and lending rates",
+                    "pass": "unclear",
+                    "damper": "Bank loan rates follow the Reserve Bank of India's policy rate, which it sets on domestic inflation and growth rather than by mirroring the Fed.",
+                    "lag": "months"
+                  }
+                ],
+                "end_user": {
+                  "group": "Borrowers",
+                  "effect": "Borrowers with floating-rate loans may notice a change in EMIs only if the Reserve Bank of India alters its policy rate, which would take months and is not assured."
+                }
+              }
+            }
+          },
+          "place": {
+            "name": "Washington",
+            "country": "United States",
+            "lat": 38.9,
+            "lon": -77.04
+          },
+          "reports": [
+            {
+              "source": "cnbc",
+              "headline": "Fed’s Waller says central bank may need to ‘shock people’ with half-point rate hike",
+              "url": "https://www.cnbc.com/2026/11/18/federal-reserve-governor-christopher-waller.html",
+              "date": "2026-11-18T15:13:39.000Z",
+              "kind": "hard",
+              "summary": "Continued inflation above the Fed's 2% target is pushing central bank officials into a more aggressive stance.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://image.cnbcfm.com/api/v1/image/108061571-17314280082024-11-12t160127z_566720729_rc2r3ba9xte4_rtrmadp_0_usa-fed-waller.jpeg?v=1745513196&w=1920&h=1080"
+            }
+          ],
+          "stats": {
+            "v": 2,
+            "at": "2026-11-18T20:48:25.286Z",
+            "series": [
+              {
+                "title": "US Fed target federal funds rate range after each change",
+                "unit": "% (target range)",
+                "publisher": "Board of Governors of the Federal Reserve System",
+                "points": [
+                  {
+                    "period": "Dec 15, 2022",
+                    "value": 4.25,
+                    "url": "https://www.federalreserve.gov/monetarypolicy/openmarket.htm",
+                    "source": "Open Market Operations"
+                  },
+                  {
+                    "period": "Feb 2, 2023",
+                    "value": 4.5,
+                    "url": "https://www.federalreserve.gov/monetarypolicy/openmarket.htm",
+                    "source": "Open Market Operations"
+                  },
+                  {
+                    "period": "Mar 23, 2023",
+                    "value": 4.75,
+                    "url": "https://www.federalreserve.gov/monetarypolicy/openmarket.htm",
+                    "source": "Open Market Operations"
+                  },
+                  {
+                    "period": "May 4, 2023",
+                    "value": 5,
+                    "url": "https://www.federalreserve.gov/monetarypolicy/openmarket.htm",
+                    "source": "Open Market Operations"
+                  },
+                  {
+                    "period": "Jul 27, 2023",
+                    "value": 5.25,
+                    "url": "https://www.federalreserve.gov/monetarypolicy/openmarket.htm",
+                    "source": "Open Market Operations"
+                  },
+                  {
+                    "period": "Sep 19, 2024",
+                    "value": 4.75,
+                    "url": "https://www.federalreserve.gov/monetarypolicy/openmarket.htm",
+                    "source": "Open Market Operations"
+                  },
+                  {
+                    "period": "Nov 8, 2024",
+                    "value": 4.5,
+                    "url": "https://www.federalreserve.gov/monetarypolicy/openmarket.htm",
+                    "source": "Open Market Operations"
+                  },
+                  {
+                    "period": "Dec 19, 2024",
+                    "value": 4.25,
+                    "url": "https://www.federalreserve.gov/monetarypolicy/openmarket.htm",
+                    "source": "Open Market Operations"
+                  },
+                  {
+                    "period": "Sep 18, 2025",
+                    "value": 4,
+                    "url": "https://www.federalreserve.gov/monetarypolicy/openmarket.htm",
+                    "source": "Open Market Operations"
+                  },
+                  {
+                    "period": "Oct 30, 2025",
+                    "value": 3.75,
+                    "url": "https://www.federalreserve.gov/monetarypolicy/openmarket.htm",
+                    "source": "Open Market Operations"
+                  },
+                  {
+                    "period": "Dec 11, 2025",
+                    "value": 3.5,
+                    "url": "https://www.federalreserve.gov/monetarypolicy/openmarket.htm",
+                    "source": "Open Market Operations"
+                  },
+                  {
+                    "period": "Sep 17, 2026",
+                    "value": 3.75,
+                    "url": "https://www.federalreserve.gov/monetarypolicy/openmarket.htm",
+                    "source": "Open Market Operations"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.federalreserve.gov/monetarypolicy/openmarket.htm",
+                    "title": "Open Market Operations",
+                    "domain": "federalreserve.gov"
+                  }
+                ],
+                "domains": [
+                  "federalreserve.gov"
+                ],
+                "dropped": 0,
+                "why": "The Fed target federal funds rate range tracks the central bank policy move the story is about, and net foreign portfolio investment into India is the capital-flow channel through which the story says",
+                "reused": true,
+                "checkedAt": "2026-10-28T13:16:32.547Z"
+              },
+              {
+                "title": "Net FPI investment in India, monthly",
+                "unit": "US$ million",
+                "publisher": "Reserve Bank of India",
+                "points": [
+                  {
+                    "period": "Jun 2025",
+                    "value": 2726,
+                    "url": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=24416",
+                    "source": "RBI Bulletin | Official Website of Reserve Bank of India"
+                  },
+                  {
+                    "period": "May 2026",
+                    "value": -4485,
+                    "url": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=24416",
+                    "source": "RBI Bulletin | Official Website of Reserve Bank of India"
+                  },
+                  {
+                    "period": "Jun 2026",
+                    "value": 2691,
+                    "url": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=24416",
+                    "source": "RBI Bulletin | Official Website of Reserve Bank of India"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=24416",
+                    "title": "RBI Bulletin | Official Website of Reserve Bank of India",
+                    "domain": "rbi.org.in"
+                  }
+                ],
+                "domains": [
+                  "rbi.org.in"
+                ],
+                "dropped": 0,
+                "why": "The Fed target federal funds rate range tracks the central bank policy move the story is about, and net foreign portfolio investment into India is the capital-flow channel through which the story says",
+                "reused": true,
+                "checkedAt": "2026-11-06T19:48:42.760Z"
+              }
+            ]
+          },
+          "image": "https://image.cnbcfm.com/api/v1/image/108061571-17314280082024-11-12t160127z_566720729_rc2r3ba9xte4_rtrmadp_0_usa-fed-waller.jpeg?v=1745513196&w=1920&h=1080",
+          "thread": "tpnacn3"
+        },
+        {
           "id": "s1qkpin9",
           "headline": "How low tech exposure turned India into a haven during Asia’s chip sell-off",
           "url": "https://www.scmp.com/week-asia/economics/article/3374927/how-low-tech-exposure-turned-india-haven-during-asias-chip-sell",
@@ -65751,6 +66755,257 @@
       "id": "technology",
       "name": "Technology",
       "items": [
+        {
+          "id": "s1g5fr5x",
+          "headline": "Nvidia says it will stop selling some data center chips to China",
+          "url": "https://www.cbsnews.com/news/nvidia-stops-shipping-hopper-chips-china/",
+          "source": "cbs",
+          "date": "2026-11-18T13:58:12.000Z",
+          "relevance": "medium",
+          "why": "Nvidia says it will stop selling some data center chips to China, as its China sales face closer scrutiny. The effect on India is indirect, through global competition for advanced computing hardware.",
+          "implications": [
+            "If Chinese demand for these chips is cut off, the same processors could in principle be directed to other buyers, which may affect how easily Indian cloud and data center operators obtain them.",
+            "Indian technology firms that build or rent artificial intelligence computing capacity depend on imported processors, so any change in global supply or pricing could reach their costs."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-18T20:45:27.547Z",
+            "tier": "quick",
+            "primary": "trade_flow",
+            "complement": null,
+            "features": [
+              "trade_flow"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "The only channel is indirect: possible shifts in global availability and pricing of advanced chips that Indian data center and technology firms import. No direct effect on households or Indian exports has been reported."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Chip supply contracts and data center build-outs move slowly, so any change in availability or pricing for Indian buyers would appear over several months."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "This rests on one outlet, CBS News, citing a statement from Nvidia; which chips are covered and from when has not been reported."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "IT & services workers",
+                "direction": "unclear",
+                "what": "AI computing hardware availability",
+                "effect": "Indian technology firms that depend on imported advanced chips could see supply or prices shift if Chinese demand is removed from the market.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Nvidia clarifying which data center chips are covered and when the halt on sales to China starts",
+                "why": "It would show how much supply could be redirected and whether Indian buyers are affected.",
+                "when": "",
+                "where": "Nvidia company statements"
+              }
+            ],
+            "context": [
+              "India imports almost all of its advanced computing chips and has little domestic capacity to make them, so it is exposed to decisions taken by foreign chip makers and governments.",
+              "Sales of advanced chips to China have been a continuing source of scrutiny and policy restrictions in the United States."
+            ],
+            "terms": [
+              {
+                "term": "data center chips",
+                "meaning": "Powerful processors installed in large server farms to train artificial intelligence models and run cloud computing services."
+              }
+            ],
+            "frameworks": {
+              "trade_flow": {
+                "good": "Data center chips",
+                "actors": [
+                  {
+                    "country": "United States",
+                    "role": "exporter",
+                    "is_india": false
+                  },
+                  {
+                    "country": "China",
+                    "role": "importer",
+                    "is_india": false
+                  },
+                  {
+                    "country": "India",
+                    "role": "third_party",
+                    "is_india": true
+                  }
+                ],
+                "change": {
+                  "type": "stop",
+                  "effective": ""
+                },
+                "india_position": {
+                  "role": "competing_buyer",
+                  "note": "India buys advanced chips from the same global suppliers as other countries. If Nvidia stops selling some chips to China, supply could become somewhat easier for other buyers, though this has not been reported."
+                },
+                "volumes": []
+              }
+            }
+          },
+          "place": {
+            "name": "Santa Clara",
+            "country": "United States",
+            "lat": 37.35,
+            "lon": -121.95,
+            "involves": [
+              "China"
+            ]
+          },
+          "reports": [
+            {
+              "source": "cbs",
+              "headline": "Nvidia says it will stop selling some data center chips to China",
+              "url": "https://www.cbsnews.com/news/nvidia-stops-shipping-hopper-chips-china/",
+              "date": "2026-11-18T13:58:12.000Z",
+              "kind": "hard",
+              "summary": "Nvidia's sales to China are facing heightened scrutiny after revelations that former CEO Jensen Huang had a relationship with a suspected Chinese spy.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://assets2.cbsnewsstatic.com/hub/i/r/2026/11/17/b5e7d604-22bc-462f-8c19-345d366d6467/thumbnail/1200x630/f0cc1d7b9e607a58f64035c4c7067480/cbsn-fusion-nvidia-sees-strong-earnings-report-despite-jensen-huang-scandal-and-resignation-thumbnail.jpg"
+            }
+          ],
+          "stats": {
+            "v": 2,
+            "at": "2026-11-18T20:48:27.673Z",
+            "series": [
+              {
+                "title": "US goods exports to mainland China, monthly",
+                "unit": "US$ million",
+                "publisher": "U.S. Census Bureau and Bureau of Economic Analysis (via FRED, St. Louis Fed)",
+                "points": [
+                  {
+                    "period": "Oct 2025",
+                    "value": 8924.26349,
+                    "url": "https://fred.stlouisfed.org/data/EXPCH",
+                    "source": "Table Data - U.S. Exports of Goods by F.A.S. Basis to Mainland China | FRED | St. Louis Fed"
+                  },
+                  {
+                    "period": "Nov 2025",
+                    "value": 6959.432112,
+                    "url": "https://fred.stlouisfed.org/data/EXPCH",
+                    "source": "Table Data - U.S. Exports of Goods by F.A.S. Basis to Mainland China | FRED | St. Louis Fed"
+                  },
+                  {
+                    "period": "Dec 2025",
+                    "value": 8313.509758,
+                    "url": "https://fred.stlouisfed.org/data/EXPCH",
+                    "source": "Table Data - U.S. Exports of Goods by F.A.S. Basis to Mainland China | FRED | St. Louis Fed"
+                  },
+                  {
+                    "period": "Jan 2026",
+                    "value": 8329.116905,
+                    "url": "https://fred.stlouisfed.org/data/EXPCH",
+                    "source": "Table Data - U.S. Exports of Goods by F.A.S. Basis to Mainland China | FRED | St. Louis Fed"
+                  },
+                  {
+                    "period": "Feb 2026",
+                    "value": 7946.590522,
+                    "url": "https://fred.stlouisfed.org/data/EXPCH",
+                    "source": "Table Data - U.S. Exports of Goods by F.A.S. Basis to Mainland China | FRED | St. Louis Fed"
+                  },
+                  {
+                    "period": "Mar 2026",
+                    "value": 11102.981106,
+                    "url": "https://fred.stlouisfed.org/data/EXPCH",
+                    "source": "Table Data - U.S. Exports of Goods by F.A.S. Basis to Mainland China | FRED | St. Louis Fed"
+                  },
+                  {
+                    "period": "Apr 2026",
+                    "value": 9395.083944,
+                    "url": "https://fred.stlouisfed.org/data/EXPCH",
+                    "source": "Table Data - U.S. Exports of Goods by F.A.S. Basis to Mainland China | FRED | St. Louis Fed"
+                  },
+                  {
+                    "period": "May 2026",
+                    "value": 9117.37231,
+                    "url": "https://fred.stlouisfed.org/data/EXPCH",
+                    "source": "Table Data - U.S. Exports of Goods by F.A.S. Basis to Mainland China | FRED | St. Louis Fed"
+                  },
+                  {
+                    "period": "Jun 2026",
+                    "value": 9571.187957,
+                    "url": "https://fred.stlouisfed.org/data/EXPCH",
+                    "source": "Table Data - U.S. Exports of Goods by F.A.S. Basis to Mainland China | FRED | St. Louis Fed"
+                  },
+                  {
+                    "period": "Jul 2026",
+                    "value": 9710.145792,
+                    "url": "https://fred.stlouisfed.org/data/EXPCH",
+                    "source": "Table Data - U.S. Exports of Goods by F.A.S. Basis to Mainland China | FRED | St. Louis Fed"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://fred.stlouisfed.org/data/EXPCH",
+                    "title": "Table Data - U.S. Exports of Goods by F.A.S. Basis to Mainland China | FRED | St. Louis Fed",
+                    "domain": "fred.stlouisfed.org"
+                  }
+                ],
+                "domains": [
+                  "fred.stlouisfed.org"
+                ],
+                "dropped": 0,
+                "why": "Both series track US goods exports to mainland China, the same trade flow in which Nvidia's data center chip sales would be recorded, so they can show whether the export restriction affects those ship",
+                "reused": true,
+                "checkedAt": "2026-11-16T19:04:38.172Z"
+              },
+              {
+                "title": "US goods exports to China, by year",
+                "unit": "US$ million",
+                "publisher": "U.S. Census Bureau",
+                "points": [
+                  {
+                    "period": "2021",
+                    "value": 151439.4,
+                    "url": "https://www.census.gov/foreign-trade/balance/c5700.html",
+                    "source": "International Trade"
+                  },
+                  {
+                    "period": "2023",
+                    "value": 147626.5,
+                    "url": "https://www.census.gov/foreign-trade/balance/c5700.html",
+                    "source": "International Trade"
+                  },
+                  {
+                    "period": "2024",
+                    "value": 143271.7,
+                    "url": "https://www.census.gov/foreign-trade/balance/c5700.html",
+                    "source": "International Trade"
+                  },
+                  {
+                    "period": "2025",
+                    "value": 105977.8,
+                    "url": "https://www.census.gov/foreign-trade/balance/c5700.html",
+                    "source": "International Trade"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.census.gov/foreign-trade/balance/c5700.html",
+                    "title": "International Trade",
+                    "domain": "census.gov"
+                  }
+                ],
+                "domains": [
+                  "census.gov"
+                ],
+                "dropped": 0,
+                "why": "Both series track US goods exports to mainland China, the same trade flow in which Nvidia's data center chip sales would be recorded, so they can show whether the export restriction affects those ship",
+                "reused": true,
+                "checkedAt": "2026-11-18T12:01:25.947Z"
+              }
+            ]
+          },
+          "image": "https://assets2.cbsnewsstatic.com/hub/i/r/2026/11/17/b5e7d604-22bc-462f-8c19-345d366d6467/thumbnail/1200x630/f0cc1d7b9e607a58f64035c4c7067480/cbsn-fusion-nvidia-sees-strong-earnings-report-despite-jensen-huang-scandal-and-resignation-thumbnail.jpg",
+          "thread": "tjdsk7n"
+        },
         {
           "id": "scadwlx",
           "headline": "US panel proposes tougher AI chip export rules ahead of Xi-Trump talks",
@@ -74178,78 +75433,84 @@
           "relevance": "medium",
           "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/0c9b/live/8fcd8b10-e17d-11f1-82ba-51ba73bbd316.jpg",
           "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/0c9b/live/8fcd8b10-e17d-11f1-82ba-51ba73bbd316.jpg",
-          "why": "The Prince and Princess of Wales have arrived in India ahead of a meeting with Prime Minister Narendra Modi. Most of their engagements relate to the Earthshot Prize, which Prince William founded.",
+          "why": "Prince William and Catherine visited India for Earthshot Prize events and met Prime Minister Modi in New Delhi. The visit highlights a growing India–UK partnership but brought no reported policy or trade announcements.",
           "implications": [
-            "Because most engagements centre on the Earthshot Prize, the visit may draw attention to environmental innovation in India, though no specific projects or funding have been reported.",
-            "The planned meeting with the Prime Minister gives the visit a diplomatic dimension, but what will be discussed has not been reported."
+            "The meeting with Modi was a late addition to a tour built around the Earthshot Prize, which suggests the political side of the visit was secondary to its climate focus.",
+            "Holding Earthshot engagements in India could draw international attention and potential funding to Indian climate and environmental solutions.",
+            "The visit signals that India–UK ties are strengthening despite the Indian government's rhetoric about decolonisation and the two countries' colonial history."
           ],
           "analysis": {
             "v": 3,
-            "at": "2026-11-16T06:50:36.802Z",
-            "tier": "quick",
+            "at": "2026-11-18T20:50:54.031Z",
+            "tier": "standard",
             "primary": "impact_chain",
             "complement": null,
             "features": [],
             "exposure": {
               "level": "low",
-              "reason": "The reports describe a ceremonial visit and no policy, trade or funding decision that would reach Indian households or firms. Any effect would be indirect."
+              "reason": "The visit reaches India only through goodwill and attention to climate projects. No trade, investment or policy decision was reported, so the effect is indirect."
             },
             "horizon": {
-              "value": "now",
-              "reason": "The couple have already arrived, so the engagements and the meeting with the Prime Minister take place during the current visit."
+              "value": "years",
+              "reason": "Any benefit depends on longer-term diplomatic and climate cooperation rather than an immediate decision."
             },
             "confidence": {
-              "level": "low",
-              "reason": "This rests on a single outlet, the BBC, with no official statement quoted, and the content of the meeting with Mr Modi is unconfirmed."
+              "level": "medium",
+              "reason": "BBC News reports the visit and the Modi meeting, and an Al Jazeera feature discusses its diplomatic significance; no official outcomes have been reported."
             },
-            "outlets": 1,
+            "outlets": 2,
             "affected": [
               {
-                "group": "Government finances",
+                "group": "Large exporters",
                 "direction": "unclear",
-                "what": "no direct fiscal change",
-                "effect": "No spending, agreement or funding commitment has been reported, so any fiscal effect is unknown and may be nil.",
+                "what": "India–UK relations climate",
+                "effect": "Warmer diplomatic ties could support trade and investment links with the UK, though the visit itself announced no measures.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "Any announcement after the meeting between the royal couple and Prime Minister Modi",
-                "why": "It would show whether the visit produced concrete cooperation on environment or other areas, or remained largely ceremonial.",
+                "what": "Any India–UK cooperation announcements following the royal couple's meeting with Modi",
+                "why": "Concrete announcements would show whether the visit translated into policy or investment rather than goodwill alone.",
                 "when": "",
-                "where": "Prime Minister's Office, India"
+                "where": "Ministry of External Affairs"
               }
             ],
             "context": [
-              "The Earthshot Prize is an award that backs practical solutions to environmental problems, and royal visits of this kind are usually symbolic rather than binding on governments.",
-              "India and the United Kingdom have broad ties in trade, education and climate cooperation, and high-profile visits often serve to signal goodwill."
+              "The British royal family has no formal role in UK government policy, so royal visits usually serve as goodwill gestures that support relations negotiated by elected governments.",
+              "India and the UK have negotiated a free trade agreement and cooperate on technology, defence and climate, and the UK hosts a large Indian diaspora."
             ],
             "terms": [
               {
                 "term": "Earthshot Prize",
-                "meaning": "An environmental award founded by Prince William that recognises solutions to environmental challenges."
+                "meaning": "An annual environmental award founded by Prince William that gives money and support to projects offering solutions to climate and environmental problems."
               }
             ],
             "frameworks": {
               "impact_chain": {
                 "chain": [
                   {
-                    "step": "Royal couple arrive in India",
-                    "detail": "The Prince and Princess of Wales have arrived in India ahead of a meeting with Prime Minister Modi, which sets the diplomatic frame for the visit.",
+                    "step": "Royal couple tours India",
+                    "detail": "Prince William and Catherine arrived in India mainly for Earthshot Prize engagements, putting climate solutions in the spotlight during the visit.",
                     "basis": "reported"
                   },
                   {
-                    "step": "Engagements centre on Earthshot Prize",
-                    "detail": "Most of the couple's engagements relate to the Earthshot Prize, which Prince William founded, so the visit's public focus is on environmental innovation.",
+                    "step": "Late meeting with Modi",
+                    "detail": "A meeting with Prime Minister Modi in New Delhi was added late, giving the visit a diplomatic dimension alongside the prize.",
                     "basis": "reported"
                   },
                   {
-                    "step": "Attention on environment and UK ties",
-                    "detail": "The visit may raise the profile of environmental projects and UK-India relations, though any practical effect depends on announcements that have not yet been reported.",
+                    "step": "Partnership signal",
+                    "detail": "The visit highlights a growing partnership between New Delhi and London despite their colonial history and the Indian government's decolonisation rhetoric.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Possible cooperation gains",
+                    "detail": "Improved goodwill could support climate, trade or investment cooperation between India and the UK over time.",
                     "basis": "inferred"
                   }
                 ],
-                "breaks_if": "The visit produces no announced agreements, funding or policy commitments, in which case it stays ceremonial and does not reach Indian households or firms."
+                "breaks_if": "The effect would not reach India if the visit stays ceremonial and neither government follows it with concrete agreements or funding."
               }
             }
           },
@@ -74282,6 +75543,17 @@
               "kind": "feature",
               "summary": "Prince William's visit highlights growing partnership between New Delhi and London, despite their colonial history.",
               "summaryV": 3
+            },
+            {
+              "source": "bbc",
+              "headline": "William and Kate meet PM Modi as they wrap up India tour",
+              "url": "https://www.bbc.co.uk/news/articles/cq62ped2ypy4o",
+              "date": "2026-11-18T20:07:08.000Z",
+              "kind": "hard",
+              "summary": "The meeting in New Delhi was a late addition to the royal couple's India visit, which also included their appearance at the annual Earthshot Prize",
+              "summaryV": 3,
+              "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/efe9/live/814a0670-e35a-11f1-a8cd-2ff5ed84046e.jpg",
+              "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/efe9/live/814a0670-e35a-11f1-a8cd-2ff5ed84046e.jpg"
             }
           ],
           "thread": "tdt8cjt"
@@ -78976,16 +80248,16 @@
           "date": "2026-11-16T06:52:27.000Z",
           "relevance": "medium",
           "image": "https://s.france24.com/media/display/f3560fd6-e1e6-11f1-a0e9-29048b396e03/w:1024/p:16x9/AP26320545342836.jpg",
-          "why": "Donald Trump, Xi Jinping and Vladimir Putin are due to meet in Shenzhen on Thursday to discuss the Ukraine war, nuclear issues, trade and the Iran war. Any shift in the Russia–Ukraine war could affect the oil markets on which India depends.",
+          "why": "The leaders of the US, China and Russia meet on Thursday in Shenzhen at the APEC summit, with the Ukraine war on the agenda. Any change in the war or in sanctions on Russia could affect India's Russian oil purchases.",
           "implications": [
-            "The war has reached strikes on Russian oil depots and power infrastructure, so any easing agreed in Shenzhen could reduce the risk premium in crude prices that feeds into India's oil import bill.",
-            "Trump says the Iran war will also be discussed, which matters to India because its Gulf energy supplies and its many workers in the region are exposed to that conflict.",
-            "A meeting where Washington, Beijing and Moscow set terms without India present could reshape trade and security arrangements to which New Delhi would then have to adjust.",
-            "Beijing has framed the talks around safeguarding world peace without detailing an agenda, so the meeting may yield mostly symbolic statements rather than measures that change fighting or oil flows."
+            "A Ukrainian attack that partially collapsed a prized Russian bridge shows that strikes on infrastructure are continuing even as the leaders prepare to talk.",
+            "A separate one-on-one meeting between Trump and Putin, held amid efforts to resolve the conflict and strengthen post-war security guarantees, could influence whether Western sanctions on Russian energy are kept, tightened or eased.",
+            "Indian refiners that buy Russian crude could see the economics of that trade change if sanctions relief or tightening follows the talks.",
+            "Analysts expect the meeting's symbolism to outweigh its concrete results, so India's balancing between Russia and the West may face no immediate change."
           ],
           "analysis": {
             "v": 3,
-            "at": "2026-11-18T01:10:27.300Z",
+            "at": "2026-11-18T20:50:54.030Z",
             "tier": "deep",
             "primary": "escalation",
             "complement": "scenarios",
@@ -78995,76 +80267,66 @@
             ],
             "exposure": {
               "level": "medium",
-              "reason": "The summit reaches India mainly through oil: an outcome that changes the war or sanctions on Russia could shift crude prices and Russian supply, but nothing concrete has yet been agreed."
+              "reason": "The war reaches India mainly through its Russian crude imports and global oil prices. Talks alone do not change supply, so the exposure is medium unless sanctions or fighting shift."
             },
             "horizon": {
               "value": "months",
-              "reason": "Any effect in India depends on the meeting yielding agreements on fighting or sanctions, which would take months to change oil flows and prices."
+              "reason": "Any agreement would take time to turn into sanctions changes or a ceasefire that alters oil flows to India."
             },
             "confidence": {
               "level": "high",
-              "reason": "CBS, NPR, France 24, The Guardian and the South China Morning Post report the meeting, which China's foreign ministry confirmed on record; its outcome remains unknown."
+              "reason": "NPR, Africanews, Al Jazeera and the South China Morning Post all confirm the meeting, which a Chinese foreign ministry spokesperson announced on record; its outcome is unknown."
             },
-            "outlets": 7,
+            "outlets": 9,
             "affected": [
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "Russian crude purchase terms",
+                "effect": "Indian refiners buying Russian crude could face changed discounts or payment conditions if the talks lead to sanctions being eased or tightened.",
+                "basis": "inferred"
+              },
               {
                 "group": "Fuel & LPG users",
                 "direction": "unclear",
                 "what": "fuel price pressure",
-                "effect": "If the talks ease or harden the war, global crude prices could shift, which may feed through to petrol, diesel and LPG costs in India.",
-                "basis": "inferred"
-              },
-              {
-                "group": "Importers & traders",
-                "direction": "mixed",
-                "what": "Russian crude supply terms",
-                "effect": "Indian refiners buying Russian crude could see discounts or volumes change if any sanctions relief or tightening follows the summit.",
-                "basis": "inferred"
-              },
-              {
-                "group": "Government finances",
-                "direction": "unclear",
-                "what": "oil import bill",
-                "effect": "Changes in crude prices after the summit could raise or lower India's oil import bill and the fiscal cost of keeping fuel prices stable.",
+                "effect": "Any shift in global oil prices driven by the talks or by continued strikes could eventually feed through to petrol, diesel and LPG costs in India.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
                 "what": "The trilateral meeting of Xi Jinping, Donald Trump and Vladimir Putin in Shenzhen",
-                "why": "Its statements will show whether the leaders agreed anything concrete on Ukraine, nuclear issues or trade.",
+                "why": "Its joint statements will show whether the three leaders agree on any steps toward ending the Ukraine war.",
                 "when": "2026-11-19",
                 "where": "Chinese foreign ministry"
               },
               {
-                "what": "Any announcement of Ukraine negotiations or a renewed energy ceasefire after the summit",
-                "why": "A halt to strikes on energy infrastructure would ease supply risks in oil markets relevant to India.",
-                "when": "",
+                "what": "The outcome of the one-on-one meeting between Trump and Putin",
+                "why": "It would show whether the US and Russia are moving toward a settlement or post-war security arrangements for Ukraine.",
+                "when": "2026-11-19",
                 "where": "White House"
               },
               {
-                "what": "Statements on the Iran war made at or after the Shenzhen meeting",
-                "why": "Any shift on Iran would affect Gulf energy supplies and the safety of Indians in the region.",
-                "when": "2026-11-19",
+                "what": "Further Russian or Ukrainian strikes on bridges, power plants or oil depots",
+                "why": "Continued strikes would show that the summit diplomacy has not changed the war on the ground.",
+                "when": "",
                 "where": ""
               }
             ],
             "context": [
-              "Meetings between leaders often produce statements of intent rather than binding ceasefires, and fighting usually continues until terms are agreed and carried out on the ground.",
-              "India has kept close ties with both sides, buying Russian oil and defence equipment while deepening trade and technology links with the United States."
+              "India imports most of the crude oil it uses, and Russia has become one of its largest suppliers since the Ukraine war began, often at discounted prices.",
+              "Western sanctions on Russian oil, including price caps and measures against shipping and buyers, shape how easily Indian refiners can buy and pay for Russian crude.",
+              "India has avoided taking sides in the war, keeping close ties with both Russia and the US and repeatedly calling for dialogue and diplomacy."
             ],
             "terms": [
               {
                 "term": "APEC",
-                "meaning": "Asia-Pacific Economic Cooperation, a forum of Pacific Rim economies whose leaders meet each year to discuss trade and economic issues."
+                "meaning": "Asia-Pacific Economic Cooperation, a regional forum of Pacific Rim economies that holds an annual leaders' summit on trade and economic issues."
               },
               {
-                "term": "Yalta Conference",
-                "meaning": "The 1945 meeting at which Britain, the Soviet Union and the United States shaped the global order after the Second World War."
-              },
-              {
-                "term": "trilateral",
-                "meaning": "A meeting or arrangement involving three countries at the same time."
+                "term": "post-war security guarantees",
+                "meaning": "Commitments by other countries to protect Ukraine from future attack once fighting ends, a central issue in any peace settlement."
               }
             ],
             "frameworks": {
@@ -79073,16 +80335,16 @@
                 "rung": 6,
                 "current_rung": 6,
                 "previous_rung": null,
-                "development": "Trump, Xi and Putin plan a first trilateral meeting in Shenzhen at which Trump says he will raise Russia's war in Ukraine, alongside nuclear issues, trade and the Iran war.",
-                "evidence": "No new attack, withdrawal or ceasefire is reported. A planned summit is diplomacy and does not change the war's level of strikes on power and oil infrastructure set on 18 October.",
+                "development": "This story adds a planned trilateral summit and a Trump–Putin bilateral meeting on resolving the war, alongside a Ukrainian attack that partially collapsed a prized Russian bridge.",
+                "evidence": "The bridge attack is another strike on critical infrastructure, consistent with the current rung. The planned talks are diplomacy, which does not lower the level until a ceasefire actually takes effect.",
                 "next_signals": [
                   {
                     "rung": 7,
-                    "signal": "Russia or Ukraine launches large new ground offensives across the front or announces general mobilisation while infrastructure strikes continue."
+                    "signal": "Either side launches a full-scale new offensive or general mobilisation that widens the war beyond the current exchange of strikes."
                   },
                   {
                     "rung": 5,
-                    "signal": "Both sides stop striking power and oil infrastructure, for example under a restored energy ceasefire, while other fighting continues."
+                    "signal": "Strikes on power plants, oil depots and bridges stop, for example under a restored energy ceasefire, while other military strikes continue."
                   }
                 ],
                 "india_channels": [
@@ -79094,25 +80356,25 @@
                 "from": 6
               },
               "scenarios": {
-                "question": "Will the Shenzhen meeting of Xi, Trump and Putin produce concrete steps towards ending the Russia–Ukraine war?",
+                "question": "Will the Shenzhen talks between Trump, Xi and Putin produce concrete steps toward ending the Ukraine war?",
                 "scenarios": [
                   {
                     "name": "Symbolism without results",
-                    "what": "The leaders meet and issue general statements about safeguarding world peace, as Chinese officials have framed it, but agree no concrete steps on Ukraine.",
-                    "signal": "Statements after the meeting speak of peace in general terms without a ceasefire, a negotiating timetable or any change to sanctions.",
-                    "india_effect": "Oil markets and India's Russian crude trade would likely remain shaped by the continuing strikes on energy infrastructure, leaving uncertainty over fuel costs unchanged."
+                    "what": "The meeting gives the leaders a stage but produces no concrete agreement on Ukraine, as some analysts expect.",
+                    "signal": "The leaders issue general statements about peace without a ceasefire, timetable or follow-up negotiating process.",
+                    "india_effect": "India's Russian oil trade and diplomatic balancing may continue largely unchanged, with energy prices still exposed to continued infrastructure strikes."
                   },
                   {
-                    "name": "Ukraine talks process agreed",
-                    "what": "The three leaders agree on a framework or a next round of negotiations on the Ukraine war, which Trump said he planned to raise.",
-                    "signal": "The leaders announce a date, venue or mediator for Ukraine negotiations, or a renewed halt to energy strikes.",
-                    "india_effect": "Lower war risk could ease crude price pressures and might eventually change sanctions on Russian oil, though any effect on Indian buyers would take time to appear."
+                    "name": "Progress on settlement",
+                    "what": "Trump and Putin move toward resolving the conflict and agree on work on post-war security guarantees.",
+                    "signal": "Officials announce a ceasefire framework, further negotiation rounds or discussion of sanctions relief after the Thursday meetings.",
+                    "india_effect": "Any easing of sanctions could change discounts and payment conditions for Indian buyers of Russian crude, and could calm global energy prices."
                   },
                   {
-                    "name": "Nuclear issues dominate",
-                    "what": "Discussion centres on nuclear issues and denuclearisation, topics Trump named, while Ukraine sees little progress.",
-                    "signal": "Announcements focus on arms control or a Trump meeting with Kim Jong-un rather than on Ukraine.",
-                    "india_effect": "Progress on nuclear risks could ease wider security tensions in Asia, but pressure from the war on energy markets relevant to India would likely continue."
+                    "name": "Strikes continue unabated",
+                    "what": "Talks falter and Russia and Ukraine keep striking each other's bridges, power systems and oil facilities.",
+                    "signal": "New attacks on energy infrastructure or bridges are reported in the days after the summit.",
+                    "india_effect": "Continued attacks on Russian oil facilities could keep global oil markets tense, which may weigh on India's import bill."
                   }
                 ]
               }
@@ -79255,6 +80517,44 @@
               "kind": "hard",
               "summary": "Russian President Vladimir Putin will meet Thursday with President Trump and Chinese President Xi, escaping the aftermath of a Ukrainian attack that partially collapsed a prized bridge.",
               "summaryV": 3
+            },
+            {
+              "source": "bbc",
+              "headline": "Steve Rosenberg: Historic talks with Xi and Trump are a coup for Putin",
+              "url": "https://www.bbc.co.uk/news/articles/c9n70gd320mpo",
+              "date": "2026-11-18T10:53:21.000Z",
+              "kind": "feature",
+              "summary": "Thursday's meeting between the leaders of US, China and Russia will give Vladimir Putin a big stage - but it does not bring him closer to winning the war in Ukraine.",
+              "summaryV": 3,
+              "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/17b2/live/72c78770-e36f-11f1-a094-5fdc692f3e33.jpg",
+              "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/17b2/live/72c78770-e36f-11f1-a094-5fdc692f3e33.jpg"
+            },
+            {
+              "source": "npr",
+              "headline": "Former U.S. ambassador on Trump's joint summit with leaders of China and Russia",
+              "url": "https://www.npr.org/2026/11/18/nx-s1-6044067/former-u-s-ambassador-on-trumps-joint-summit-with-leaders-of-china-and-russia",
+              "date": "2026-11-18T11:57:06.000Z",
+              "kind": "feature",
+              "summary": "NPR's Leila Fadel speaks to Nicholas Burns, former U.S. ambassador to China and NATO, about President Trump's planned meeting with the leaders of China and Russia.",
+              "summaryV": 3
+            },
+            {
+              "source": "npr",
+              "headline": "Trump to meet with Russia's Putin and China's Xi for historic joint meeting",
+              "url": "https://www.npr.org/2026/11/18/nx-s1-6027645/trump-to-meet-with-russias-putin-and-chinas-xi-for-historic-joint-meeting",
+              "date": "2026-11-18T11:57:10.000Z",
+              "kind": "hard",
+              "summary": "President Trump will meet with Russian President Vladimir Putin and Chinese President Xi on Thursday for a historic three-way meeting.",
+              "summaryV": 3
+            },
+            {
+              "source": "aljazeera",
+              "headline": "Trump and Putin to meet one-on-one in China Thursday",
+              "url": "https://www.aljazeera.com/news/2026/11/18/trump-and-putin-to-meet-one-on-one-in-china-thursday",
+              "date": "2026-11-18T20:12:20.000Z",
+              "kind": "hard",
+              "summary": "US and Russia leaders meet in China amid efforts to resolve Ukraine crisis and enhance post-war security guarantees.",
+              "summaryV": 3
             }
           ],
           "finChecked": true,
@@ -79306,11 +80606,172 @@
               "kind": "feature",
               "summary": "Analysts expect few concrete outcomes from talks between the leaders on the sidelines of the APEC summit.",
               "summaryV": 3
+            },
+            {
+              "source": "scmp",
+              "headline": "A tarmac hug with Xi and a handshake with Putin, how Trump began his China visit",
+              "url": "https://www.scmp.com/news/china/diplomacy/article/3374951/tarmac-hug-xi-and-handshake-putin-how-trump-began-his-china-visit",
+              "date": "2026-11-18T14:12:20.000Z",
+              "kind": "hard",
+              "summary": "Handshakes, warm welcomes and carefully staged photo opportunities defined US President Donald Trump’s first day in Shenzhen on Wednesday, as China showcased its diplomatic priorities ahead of a planned three-way summit with Russia. Here are the key moments from the day.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/18/b4eb1a4d-ac48-4c49-aa61-bf65f66143d7_771a68f7.jpg?itok=W8qgkTzu&v=1795011075"
+            },
+            {
+              "source": "france24",
+              "headline": "Three leaders, three agendas: Who wants what from Xi-Trump-Putin summit?",
+              "url": "https://www.france24.com/en/asia-pacific/20261118-three-leaders-three-agendas-who-wants-what-from-xi-trump-putin-summit",
+              "date": "2026-11-18T14:52:08.000Z",
+              "kind": "feature",
+              "summary": "Be it curbing arms sales to Taiwan, bouncing back after a midterms shellacking, or the optics of a place at the table with the world's two superpowers, Xi Jinping, Donald Trump and Vladimir Putin are approaching their trilateral meeting in Shenzhen with starkly different aims and agendas.",
+              "summaryV": 3,
+              "image": "https://s.france24.com/media/display/846f8b30-e35b-11f1-9492-c5c0357b2a0c/w:1024/p:16x9/AP26316475308509.jpg"
+            },
+            {
+              "source": "africanews",
+              "headline": "Trump, Putin, and Xi meet ahead of historic three-way talks in China",
+              "url": "http://www.africanews.com/2026/11/18/trump-putin-and-xi-meet-ahead-of-historic-three-way-talks-in-china/",
+              "date": "2026-11-18T15:33:22.000Z",
+              "kind": "hard",
+              "summary": "A full agenda has not been made public, but it is believed talks with include the wars in Ukraine and Iran, nuclear proliferation, trade tensions, and AI.",
+              "summaryV": 3
+            },
+            {
+              "source": "bbc",
+              "headline": "Trump shakes hands with Putin and Xi ahead of historic talks in China",
+              "url": "https://www.bbc.co.uk/news/articles/ck9d75x5wwwwo",
+              "date": "2026-11-18T16:10:44.000Z",
+              "kind": "hard",
+              "summary": "The three leaders will meet together for the first time on Thursday during a closely-watched summit.",
+              "summaryV": 3,
+              "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/a9fb/live/b2707bf0-e349-11f1-99aa-0f40b013ad11.jpg",
+              "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/a9fb/live/b2707bf0-e349-11f1-99aa-0f40b013ad11.jpg"
+            },
+            {
+              "source": "mercopress",
+              "headline": "Xi and Putin reaffirm their alliance on the eve of the first three-way summit with Trump",
+              "url": "https://en.mercopress.com/2026/11/18/xi-and-putin-reaffirm-their-alliance-on-the-eve-of-the-first-three-way-summit-with-trump",
+              "date": "2026-11-18T17:25:00.000Z",
+              "kind": "hard",
+              "summary": "Chinese President Xi Jinping and Russian President Vladimir Putin reaffirmed their strategic alliance in Shenzhen on Wednesday, hours before Xi personally greeted Donald Trump at the airport, on the eve of the first three-way meeting between the heads of state of China, Russia and the United States, to be held on…",
+              "summaryV": 3,
+              "image": "https://en.mercopress.com/data/cache/noticias/112147/100x80/79980749-605.jpg"
+            },
+            {
+              "source": "abc",
+              "headline": "The ambitions behind Trump, Xi and Putin's unprecedented meeting",
+              "url": "https://www.abc.net.au/news/2026-11-19/what-trump-putin-xi-want-when-they-meet/107390546",
+              "date": "2026-11-18T18:41:53.000Z",
+              "kind": "feature",
+              "summary": "Presidents Donald Trump, Xi Jinping and Vladimir Putin are about to sit down together for the first time. So what should we expect from this historic meeting?",
+              "summaryV": 3,
+              "image": "https://live-production.wcms.abc-cdn.net.au/7422255e8eccdee8d8f1c03708d9962c?impolicy=wcms_crop_resize&cropH=450&cropW=800&xPos=0&yPos=75&width=862&height=485"
             }
           ],
           "finChecked": true,
           "image": "https://static.dw.com/image/78531577_6.jpg",
           "thread": "t1ipacnb"
+        },
+        {
+          "id": "s4xx4aw",
+          "headline": "India: Online censorship grows after 'Cockroach' protests",
+          "url": "https://www.dw.com/en/india-online-censorship-grows-after-cockroach-protests/a-79976982",
+          "source": "dw",
+          "date": "2026-11-18T14:28:00.000Z",
+          "relevance": "medium",
+          "why": "Since anti-government 'Cockroach' protests began in India, journalists and creators say their social media content is increasingly being restricted. This could narrow what the public can see and share online.",
+          "implications": [
+            "Digital journalists and creators who rely on social media for audiences and income could lose reach if their posts are restricted, which may push some to avoid covering the protests.",
+            "Social media platforms operating in India could face growing pressure to act on takedown demands, adding to their compliance workload in the country."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-18T20:45:27.547Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "medium",
+              "reason": "The effect falls mainly on one industry, digital media and content creation, and on platforms' compliance duties. It does not touch household essentials, trade flows or the safety of Indians abroad."
+            },
+            "horizon": {
+              "value": "now",
+              "reason": "Journalists and creators already say content is being restricted, so the effect is being felt while the protests continue."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on one outlet, DW, relaying claims by journalists and creators; no official response or independent count of restrictions has been reported."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "IT & services workers",
+                "direction": "down",
+                "what": "online content reach and income",
+                "effect": "Workers in digital media and content creation could see audiences and earnings fall if their posts are restricted on social media platforms.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Any official statement or blocking orders on protest-related online content",
+                "why": "It would confirm whether the restrictions are government-directed or platform decisions.",
+                "when": "",
+                "where": "Ministry of Electronics and Information Technology"
+              }
+            ],
+            "context": [
+              "India's Information Technology Act lets the government order online content to be blocked on grounds such as public order and national security, and platforms that ignore such orders risk losing legal protection.",
+              "Governments in many countries tighten controls on online speech during periods of political unrest, and such measures often draw criticism from press freedom groups."
+            ],
+            "terms": [],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Anti-government protests begin",
+                    "detail": "Protests known as the 'Cockroach' protests have erupted in India against the government, drawing heavy discussion and posting on social media.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Content restrictions increase",
+                    "detail": "Journalists and creators say their content has been increasingly restricted on social media since the protests began, though who is ordering the restrictions has not been reported.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Public information and creator income narrow",
+                    "detail": "Reduced reach could limit what citizens can read about the protests and may cut audiences and earnings for independent creators and digital news outlets.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The restrictions are lifted or the affected content is restored, or they prove limited to a few accounts rather than a wider pattern."
+              }
+            }
+          },
+          "place": {
+            "name": "New Delhi",
+            "country": "India",
+            "lat": 28.61,
+            "lon": 77.21
+          },
+          "reports": [
+            {
+              "source": "dw",
+              "headline": "India: Online censorship grows after 'Cockroach' protests",
+              "url": "https://www.dw.com/en/india-online-censorship-grows-after-cockroach-protests/a-79976982",
+              "date": "2026-11-18T14:28:00.000Z",
+              "kind": "hard",
+              "summary": "Since anti-government Cockroach protests erupted, journalists and creators say their content is increasingly being restricted on social media in India.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://static.dw.com/image/76654839_6.jpg"
+            }
+          ],
+          "finChecked": true,
+          "image": "https://static.dw.com/image/76654839_6.jpg",
+          "thread": "t8k3qfd"
         },
         {
           "id": "splvudv",
@@ -94541,14 +96002,14 @@
   "source": "BBC News & The Guardian & NPR & Al Jazeera & MercoPress & ABC News & The New York Times & CNBC & CBS News & DW & France 24 & Africanews & South China Morning Post & The Hindu & Mint & The Indian Express",
   "lastRun": {
     "filter": {
-      "judged": 212,
-      "kept": 18,
+      "judged": 202,
+      "kept": 26,
       "guarded": 0
     },
     "health": {
       "day": "2026-11-18",
-      "newStories24h": 25,
-      "keepRate2d": 0.123
+      "newStories24h": 18,
+      "keepRate2d": 0.125
     },
     "wars": {
       "linked": 0,
@@ -94557,60 +96018,51 @@
     },
     "places": {
       "labelled": 0,
-      "none": 2,
+      "none": 1,
       "waiting": 0
     },
     "skipped": {
-      "since": "2026-11-18T01:11:25.553Z",
+      "since": "2026-11-18T12:03:00.781Z",
       "counts": {
-        "video_audio": 1,
-        "section": 28,
-        "live_blog": 11,
-        "podcast_quiz_gallery": 2
+        "section": 35,
+        "live_blog": 8
       },
       "examples": {
-        "video_audio": [
-          "Watch: Marco Rubio says recent tech outages are 'completely unrelated' to one another"
-        ],
         "section": [
-          "William and Kate honour Earthshot Prize winners in Mumbai",
-          "David Beckham's perfume, Poundland – and a mighty, mighty stink | Arwa Mahdawi",
-          "Shaken and stirred: Jeff Bezos says he was ‘heavily involved’ in picking new James Bond",
-          "Smoke spews from landfill in California after gas release – video",
-          "Elton John backs Australian artists in fight against AI in surprise Aria awards appearance"
+          "Inside the old gas pipeline where Ukraine is fighting an underground war with Russia",
+          "New video shows explosions moments before part of Crimea Bridge collapses",
+          "How high is UK inflation and how will you be affected?",
+          "Torrential rain causes widespread flooding in South Florida",
+          "Alexander Zverev notified of abuse lawsuit by ex-partner during ATP Finals"
         ],
         "live_blog": [
-          "Apec summit live: Xi welcomes Trump on China visit as Putin claims Europe in ‘humiliating decline’ in speech",
-          "‘Many’ Tory votes would switch to Labour if it committed to rejoining EU, claims Lammy – UK politics live",
-          "Peltola’s Alaska win ‘a gift for all America,’ says Schumer – US politics live",
-          "UK inflation rises to highest level in a year on back of higher petrol and diesel prices – business live",
-          "Does GTA VI live up to the hype? Our games editor has played it – ask her anything"
-        ],
-        "podcast_quiz_gallery": [
-          "Delhi devotees brave river pollution as Chhath festival celebrated across India - in pictures",
-          "Can Labour end the youth unemployment crisis? – podcast"
+          "Apec summit as it happened: Xi welcomes Trump on China visit as Putin claims Europe in ‘humiliating decline’",
+          "Markwayne Mullin defends move to take government plane to football game amid flight stoppage – US politics live",
+          "Cop31 as it happened: rich world offering ‘crumbs’ to help poor countries adapt to climate breakdown, campaigners say",
+          "Trump, Xi and Putin Shake Hands as Leaders Gather in China",
+          "Putin renews his warm bond with Xi."
         ]
       }
     },
     "finance": {
       "moved": 0,
-      "checked": 1
+      "checked": 2
     },
-    "analysed": 212,
-    "added": 7,
-    "merged": 10,
-    "rejected": 195,
+    "analysed": 202,
+    "added": 6,
+    "merged": 17,
+    "rejected": 179,
     "failedBatches": 0,
     "feeds": {
       "bbc": {
         "feedsOk": 6,
         "feedsFailed": 0,
-        "items": 149
+        "items": 157
       },
       "guardian": {
         "feedsOk": 7,
         "feedsFailed": 0,
-        "items": 192
+        "items": 195
       },
       "npr": {
         "feedsOk": 4,
@@ -94620,7 +96072,7 @@
       "aljazeera": {
         "feedsOk": 1,
         "feedsFailed": 0,
-        "items": 14
+        "items": 10
       },
       "mercopress": {
         "feedsOk": 3,
@@ -94635,7 +96087,7 @@
       "nyt": {
         "feedsOk": 5,
         "feedsFailed": 0,
-        "items": 185
+        "items": 180
       },
       "cnbc": {
         "feedsOk": 3,
@@ -94645,17 +96097,17 @@
       "cbs": {
         "feedsOk": 2,
         "feedsFailed": 0,
-        "items": 47
+        "items": 48
       },
       "dw": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 33
+        "items": 31
       },
       "france24": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 70
+        "items": 69
       },
       "africanews": {
         "feedsOk": 1,
@@ -94665,22 +96117,22 @@
       "scmp": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 146
+        "items": 145
       }
     },
     "shareImages": {
-      "tried": 2,
-      "found": 2,
+      "tried": 5,
+      "found": 5,
       "summaries": 0
     },
     "threads": {
-      "assigned": 7,
+      "assigned": 6,
       "created": 1,
       "failedBatches": 0
     },
     "summaries": {
-      "written": 0,
-      "due": 5
+      "written": 8,
+      "due": 8
     },
     "kinds": {
       "labelled": 0,
@@ -94688,56 +96140,41 @@
       "failedBatches": 0
     },
     "frames": {
-      "done": 0,
-      "waiting": 5,
-      "failedBatches": 0,
-      "budgetStopped": true
+      "done": 5,
+      "waiting": 1,
+      "failedBatches": 0
     },
     "stats": {
-      "searched": 6,
-      "found": 2,
-      "reused": 2,
-      "none": 2,
+      "searched": 5,
+      "found": 0,
+      "reused": 4,
+      "none": 1,
       "failed": 0,
-      "proposed": 18,
-      "droppedPoints": 2,
-      "pagesFetched": 5,
+      "proposed": 8,
+      "droppedPoints": 8,
+      "pagesFetched": 0,
       "samples": [
         {
-          "headline": "How low tech exposure turned India into a haven during Asia’s chip sell-off",
+          "headline": "Fed Saw Need to Keep Raising Interest Rates Despite Holding Steady in October",
           "result": "reused saved series"
         },
         {
-          "headline": "US panel proposes tougher AI chip export rules ahead of Xi-Trump talks",
-          "result": "chart",
-          "proposed": 4,
-          "checked": 4,
-          "pagesFetched": 2,
-          "selfFetched": 1
-        },
-        {
-          "headline": "Putin Will Continue Ukraine War Despite Plans to Meet Trump, Intelligence Says",
-          "result": "units did not match",
-          "proposed": 5,
-          "checked": 5,
-          "pagesFetched": 2
-        },
-        {
-          "headline": "Southeast Asia’s data center boom leaned on Chinese demand. New U.S. rules put t",
-          "result": "chart",
-          "proposed": 7,
-          "checked": 7,
-          "pagesFetched": 1
-        },
-        {
-          "headline": "US moves to stop AI chip-smuggling amid push to reinstate Huang",
+          "headline": "Gold drops to over one-year low, raising concerns for African producers",
           "result": "no figure found on an official page",
-          "proposed": 2,
+          "proposed": 8,
           "checked": 0,
           "pagesFetched": 0
         },
         {
-          "headline": "Trump arrives in Philippines to kick off Asia trip",
+          "headline": "Fed’s Waller says central bank may need to ‘shock people’ with half-point rate h",
+          "result": "reused saved series"
+        },
+        {
+          "headline": "Nvidia says it will stop selling some data center chips to China",
+          "result": "reused saved series"
+        },
+        {
+          "headline": "IEA chief sees no 'credible pathway' back to pre-war normality in the Strait of ",
           "result": "reused saved series"
         }
       ]
@@ -94745,38 +96182,45 @@
     "models": {
       "filter": {
         "model": "claude-haiku-5-5",
-        "calls": 25,
-        "inputTokens": 100791,
-        "outputTokens": 34677,
-        "cost": 0.0273
+        "calls": 24,
+        "inputTokens": 99449,
+        "outputTokens": 37119,
+        "cost": 0.0285
       },
       "analysis_quick": {
         "model": "claude-sonnet-5-5",
-        "calls": 6,
-        "inputTokens": 19138,
-        "outputTokens": 14848,
-        "cost": 0.1867
+        "calls": 7,
+        "inputTokens": 21321,
+        "outputTokens": 15671,
+        "cost": 0.1993
       },
       "stats": {
         "model": "claude-sonnet-5-5",
-        "calls": 4,
-        "inputTokens": 437097,
-        "outputTokens": 5733,
-        "searches": 9,
-        "fetches": 9,
-        "cost": 1.0215
+        "calls": 1,
+        "inputTokens": 232487,
+        "outputTokens": 1733,
+        "searches": 2,
+        "fetches": 1,
+        "cost": 0.5023
+      },
+      "analysis": {
+        "model": "claude-opus-5-5",
+        "calls": 2,
+        "inputTokens": 11175,
+        "outputTokens": 14960,
+        "cost": 0.3439
       },
       "threads": {
         "model": "claude-sonnet-5-5",
-        "calls": 1,
-        "inputTokens": 9741,
-        "outputTokens": 179,
-        "cost": 0.0213
+        "calls": 9,
+        "inputTokens": 24523,
+        "outputTokens": 5052,
+        "cost": 0.0996
       }
     },
     "spend": {
-      "thisDesk": 1.257,
-      "today": 3.9558,
+      "thisDesk": 1.1736,
+      "today": 1.1736,
       "cap": 6
     }
   },
