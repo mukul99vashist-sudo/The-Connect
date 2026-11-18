@@ -2,7 +2,7 @@
   "schema": 4,
   "region": "India",
   "since": "2026-10-02",
-  "updatedAt": "2026-11-17T16:18:03.560Z",
+  "updatedAt": "2026-11-18T01:18:17.250Z",
   "sectors": [
     {
       "id": "energy",
@@ -224,97 +224,119 @@
           "date": "2026-11-17T00:56:40.000Z",
           "relevance": "medium",
           "image": "https://th-i.thgim.com/public/incoming/rgd83k/article71710216.ece/alternates/LANDSCAPE_1200/TH09-nearby10_GGOFGPBMUR.3.jpg.jpg",
-          "why": "India has raised its export duty on diesel by ₹2.5 per litre and on aviation turbine fuel (ATF) by ₹1.5 per litre, while petrol stays at nil, as India looks to export more diesel to Europe.",
+          "why": "The central government has raised the export duty on diesel by ₹2.5 a litre and on aviation turbine fuel by ₹1.5 a litre, leaving petrol exports untaxed. This trims the earnings Indian refiners make on fuel sold abroad.",
           "implications": [
-            "A higher export duty raises the cost of selling diesel and ATF abroad, which can narrow the margins Indian refiners earn on exports compared with domestic sales.",
-            "The diesel increase matters because India wants to send more diesel to Europe during a global supply crunch. Refiners may weigh the levy against strong overseas demand."
+            "A higher levy on each litre of diesel shipped abroad could narrow the margins export-oriented Indian refiners earn from selling diesel into Europe's tight market.",
+            "The hike comes as India seeks to raise diesel exports to Europe, so it could temper refiners' incentive to divert more output abroad rather than sell it domestically.",
+            "This is the second increase in diesel export duty in quick succession, after the government raised it from ₹8.5 to ₹11.5 a litre on October 31.",
+            "The levy may add to central government revenue for as long as global fuel shortages keep export volumes and prices high."
           ],
           "analysis": {
             "v": 3,
-            "at": "2026-11-17T04:08:00.145Z",
-            "tier": "quick",
-            "primary": "trade_flow",
+            "at": "2026-11-18T01:17:36.862Z",
+            "tier": "standard",
+            "primary": "pass_through",
             "complement": null,
             "features": [
-              "trade_flow",
               "price_move"
             ],
             "exposure": {
               "level": "medium",
-              "reason": "The duty falls on refiners and fuel exporters, an industry-specific channel. Any effect on domestic pump prices or airfares has not been reported."
+              "reason": "The duty applies only to fuel exports, so it mainly affects the refining industry and government revenue. It does not directly change what Indian motorists pay at the pump."
             },
             "horizon": {
-              "value": "now",
-              "reason": "Export duty changes usually apply soon after notification, although the exact start date has not been reported."
+              "value": "weeks",
+              "reason": "Refiners may take some weeks to adjust export cargo plans and contracts to the higher levy. The effective date has not been reported."
             },
             "confidence": {
-              "level": "low",
-              "reason": "This rests on a single report from The Hindu, based on a summary with no named official source; the effective date and wider impact are unconfirmed."
+              "level": "medium",
+              "reason": "The Hindu and Mint both report the same duty changes, but neither summary cites an on-record official statement."
             },
-            "outlets": 1,
+            "outlets": 2,
             "affected": [
               {
                 "group": "Large exporters",
                 "direction": "down",
-                "what": "fuel export margins",
-                "effect": "Refiners that export diesel and ATF pay more duty per litre, which could reduce what they earn from overseas sales.",
-                "basis": "inferred"
+                "what": "diesel and ATF export margins",
+                "effect": "Refiners that ship diesel and jet fuel abroad pay more duty on each litre exported, which reduces what they earn from those sales.",
+                "basis": "reported"
               },
               {
                 "group": "Government finances",
                 "direction": "up",
-                "what": "export duty revenue",
-                "effect": "A higher per-litre levy on diesel and ATF exports could bring the government more revenue if export volumes hold up.",
+                "what": "export levy revenue",
+                "effect": "The central government could collect more revenue from the higher levy, depending on how much diesel and jet fuel continues to be exported.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Equity & mutual fund investors",
+                "direction": "down",
+                "what": "refiner profitability",
+                "effect": "Investors holding shares in export-oriented refiners may see the companies' profits trimmed if the higher duty narrows their export earnings.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "The official notification confirming the new duty rates and the date they take effect",
-                "why": "It would settle the exact rates and the start date.",
+                "what": "The next government revision of export duties on diesel, ATF and petrol",
+                "why": "A further change would show whether the government expects refiners' unusually high export profits to continue.",
                 "when": "",
-                "where": "Ministry of Finance"
+                "where": "Central Board of Indirect Taxes and Customs notifications"
               },
               {
-                "what": "Whether India's diesel shipments to Europe rise despite the higher duty",
-                "why": "It would show how far export demand outweighs the added levy.",
+                "what": "India's diesel export volumes to Europe in the coming weeks",
+                "why": "Any change would show whether the higher levy is slowing the planned rise in diesel shipments to Europe.",
                 "when": "",
                 "where": ""
               }
             ],
             "context": [
-              "Governments use export duties to collect extra revenue when overseas fuel prices are high, or to keep more supply at home. India refines more fuel than it consumes and exports the surplus."
+              "India imports most of the crude oil it uses, but it has large refining capacity and exports a substantial surplus of refined fuels such as diesel.",
+              "India has previously used special export levies, often called windfall taxes, to capture part of the unusually high profits refiners earn when global fuel prices spike, and it revises them periodically.",
+              "Retail petrol and diesel prices in India are largely set by state-run oil marketing companies and shaped by central and state taxes, so they often do not track global price movements closely."
             ],
             "terms": [
               {
                 "term": "ATF",
-                "meaning": "Aviation turbine fuel, the refined fuel used by jet aircraft, which airlines buy and which refiners can also export."
+                "meaning": "Aviation turbine fuel, the kerosene-based fuel used by jet aircraft."
+              },
+              {
+                "term": "windfall tax",
+                "meaning": "A special levy that captures part of the unusually large profits companies earn from sudden market conditions they did not create."
               }
             ],
             "frameworks": {
-              "trade_flow": {
-                "good": "Diesel and aviation turbine fuel",
-                "actors": [
+              "pass_through": {
+                "driver": {
+                  "variable": "Export duty on diesel",
+                  "direction": "up",
+                  "size": "₹2.5 per litre"
+                },
+                "product": "petrol & diesel",
+                "rungs": [
                   {
-                    "country": "India",
-                    "role": "exporter",
-                    "is_india": true
+                    "stage": "Higher export duty → Refiners' export earnings",
+                    "pass": "likely",
+                    "damper": "Strong European demand during the global supply crunch may let refiners absorb part of the levy without sharply cutting export volumes.",
+                    "lag": "days"
                   },
                   {
-                    "country": "Europe",
-                    "role": "importer",
-                    "is_india": false
+                    "stage": "Export earnings → Split between export and domestic sales",
+                    "pass": "unclear",
+                    "damper": "Existing export contracts, and the price gap that remains between European and Indian markets, may limit how much fuel refiners redirect to domestic sales.",
+                    "lag": "weeks"
+                  },
+                  {
+                    "stage": "Domestic fuel supply → Pump prices",
+                    "pass": "blocked",
+                    "damper": "Retail petrol and diesel prices are largely set by state-run oil marketing companies and shaped by taxes, so changes in supply rarely move pump prices directly.",
+                    "lag": "months"
                   }
                 ],
-                "change": {
-                  "type": "tariff",
-                  "effective": ""
-                },
-                "india_position": {
-                  "role": "supplier",
-                  "note": "India is a fuel supplier, and the duty makes each litre exported to Europe costlier for the seller. Buyers in Europe could face a slightly different supply picture, but the effect on volumes has not been reported."
-                },
-                "volumes": []
+                "end_user": {
+                  "group": "Fuel & LPG users",
+                  "effect": "Motorists and other diesel users in India are unlikely to notice any direct change in pump prices from this export duty. Any effect could come only indirectly, through slightly more fuel staying in the domestic market."
+                }
               }
             }
           },
@@ -13287,6 +13309,343 @@
       "name": "Logistics & Shipping",
       "items": [
         {
+          "id": "s1gp6y76",
+          "headline": "MEA condemns Hormuz attack on ship with 24 Indians onboard",
+          "url": "https://indianexpress.com/article/india/mea-condemns-hormuz-attack-on-ship-with-24-indians-onboard-10967422/",
+          "source": "indianexpress",
+          "date": "2026-11-17T19:04:49.000Z",
+          "relevance": "medium",
+          "image": "https://images.indianexpress.com/2026/11/US_a351e9_20261117190348.jpg",
+          "why": "India's Ministry of External Affairs (MEA) has condemned an attack on a ship in the Strait of Hormuz that had 24 Indians on board. The incident concerns the safety of Indian crew and a waterway central to India's energy imports.",
+          "implications": [
+            "The safety of the 24 Indians on board is the immediate concern, and their families and the Indian government will look for confirmation of their condition and for consular help.",
+            "If attacks of this kind make shipping through the strait riskier, shipowners and insurers may charge more or avoid the route, which could raise costs for cargo bound for India."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-18T01:13:44.767Z",
+            "tier": "quick",
+            "primary": "disruption_map",
+            "complement": null,
+            "features": [
+              "disruption",
+              "armed_conflict"
+            ],
+            "exposure": {
+              "level": "high",
+              "reason": "The attack puts the safety of 24 Indians at risk. It also occurred on a route that carries much of the crude oil and gas India imports, which touches household fuel supplies."
+            },
+            "horizon": {
+              "value": "now",
+              "reason": "The crew's safety and the diplomatic response are immediate, while any effect on fuel or freight costs would depend on whether shipping through the strait is disrupted."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "This rests on one outlet, The Indian Express, citing an official MEA statement; the attacker, the ship's identity, the damage and the condition of the crew have not been reported."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Gulf & overseas workers and families",
+                "direction": "unclear",
+                "what": "safety of Indian crew",
+                "effect": "The 24 Indians on the ship and their families face uncertainty over the crew's safety until authorities confirm their condition.",
+                "basis": "reported"
+              },
+              {
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "fuel supply risk",
+                "effect": "If attacks disrupt tanker traffic through Hormuz, India's crude and gas supplies could become costlier or less certain, which could eventually affect fuel prices.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "An official update from the Ministry of External Affairs on the condition and evacuation of the 24 Indians on board",
+                "why": "It would show whether the crew is safe and how India is handling the matter diplomatically.",
+                "when": "",
+                "where": "Ministry of External Affairs"
+              },
+              {
+                "what": "Any shipping advisories or changes in tanker movements through the Strait of Hormuz after the attack",
+                "why": "It would show whether the incident is disrupting trade flows that India relies on.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "India imports most of its crude oil and a large share of its gas from Gulf producers, and much of it is shipped through the Strait of Hormuz. Indian seafarers also make up a large part of the crews on merchant ships worldwide."
+            ],
+            "terms": [
+              {
+                "term": "Strait of Hormuz",
+                "meaning": "A narrow waterway between Iran and Oman that links the Persian Gulf to the open sea and carries a large share of the world's traded oil."
+              }
+            ],
+            "frameworks": {
+              "disruption_map": {
+                "node": {
+                  "name": "Strait of Hormuz",
+                  "type": "strait",
+                  "status": "unknown",
+                  "as_of": "17 Nov 2026"
+                },
+                "cause": {
+                  "text": "A ship carrying 24 Indians was attacked in the Strait of Hormuz, and India's Ministry of External Affairs has condemned the attack; the attacker has not been reported.",
+                  "status": "confirmed"
+                },
+                "flows": [
+                  {
+                    "flow": "workers",
+                    "india_link": "Twenty-four Indians were on board the attacked ship, so their safety and their families in India are directly affected.",
+                    "basis": "reported"
+                  },
+                  {
+                    "flow": "crude",
+                    "india_link": "India has long imported much of its crude oil from Gulf producers, and much of it passes through this strait, so refiners and fuel users depend on it.",
+                    "basis": "inferred"
+                  },
+                  {
+                    "flow": "LNG",
+                    "india_link": "India also buys liquefied natural gas from Gulf suppliers, and shipments pass through the strait, which supplies power, fertiliser and city gas users.",
+                    "basis": "inferred"
+                  }
+                ],
+                "alternatives": [],
+                "duration": "not reported"
+              }
+            }
+          },
+          "place": {
+            "name": "Strait of Hormuz",
+            "country": "Iran",
+            "lat": 26.6,
+            "lon": 56.3
+          },
+          "reports": [
+            {
+              "source": "indianexpress",
+              "headline": "MEA condemns Hormuz attack on ship with 24 Indians onboard",
+              "url": "https://indianexpress.com/article/india/mea-condemns-hormuz-attack-on-ship-with-24-indians-onboard-10967422/",
+              "date": "2026-11-17T19:04:49.000Z",
+              "kind": "hard",
+              "image": "https://images.indianexpress.com/2026/11/US_a351e9_20261117190348.jpg",
+              "ogTried": true,
+              "descTried": true,
+              "summary": "Expressing gratitude to regional authorities, the MEA added: “We appreciate the timely assistance and support extended by the Government of Oman in the rescue efforts.”",
+              "summaryV": 3
+            }
+          ],
+          "stats": {
+            "v": 2,
+            "at": "2026-11-18T01:14:35.744Z",
+            "series": [
+              {
+                "title": "Oil flows through the Strait of Hormuz, total",
+                "unit": "million barrels per day",
+                "publisher": "U.S. Energy Information Administration",
+                "points": [
+                  {
+                    "period": "2020",
+                    "value": 19.2,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2021",
+                    "value": 19.7,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2022",
+                    "value": 21.9,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2023",
+                    "value": 21.8,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2024",
+                    "value": 20.7,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "1H25",
+                    "value": 20.9,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "title": "eia.gov",
+                    "domain": "eia.gov"
+                  }
+                ],
+                "domains": [
+                  "eia.gov"
+                ],
+                "dropped": 0,
+                "why": "The series tracks total oil flows through the Strait of Hormuz, the same waterway where the ship attack occurred and which is central to India's energy imports.",
+                "reused": true,
+                "checkedAt": "2026-10-13T23:16:50.395Z"
+              }
+            ]
+          },
+          "thread": "t8nzveu"
+        },
+        {
+          "id": "s1bjsocg",
+          "headline": "East Asia meet: PM Narendra Modi announces safety initiative for seafarers, flags cyber fraud",
+          "url": "https://indianexpress.com/article/india/narendra-modi-asean-summit-proposals-free-e-visa-maritime-plan-cyber-forensics-10966622/",
+          "source": "indianexpress",
+          "date": "2026-11-17T09:11:53.000Z",
+          "relevance": "medium",
+          "image": "https://images.indianexpress.com/2026/11/PM-Modi-ASEAN.jpg",
+          "why": "Prime Minister Narendra Modi proposed a seafarers' safety initiative and raised cyber fraud at the East Asia Summit in Manila. Quad leaders separately opposed economic and maritime coercion in the Indo-Pacific, a region central to India's sea trade.",
+          "implications": [
+            "The content of the proposed seafarers' safety initiative has not been reported, so any practical protection for Indian crews depends on what partner countries later agree.",
+            "The Quad statement against maritime coercion signals that India and its partners treat the security of Indo-Pacific shipping lanes as a shared concern.",
+            "By raising cyber fraud at a regional summit, India is treating online fraud as a cross-border problem that may require cooperation with East Asian governments."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-18T01:17:36.861Z",
+            "tier": "standard",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "medium",
+              "reason": "The development reaches India through regional diplomacy and possible maritime cooperation affecting Indian seafarers. The level is medium because no concrete measure or timeline has yet been reported."
+            },
+            "horizon": {
+              "value": "years",
+              "reason": "The initiative is only a proposal, and regional agreements of this kind usually take a long time to negotiate and implement."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "The Indian Express and The Hindu both report the proposal and the Quad statement, but the details of the seafarers' initiative have not been reported."
+            },
+            "outlets": 2,
+            "affected": [
+              {
+                "group": "Gulf & overseas workers and families",
+                "direction": "unclear",
+                "what": "seafarer safety arrangements",
+                "effect": "Indian seafarers working on foreign and Indian ships could gain from regional safety cooperation if partner countries adopt the initiative.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Large exporters",
+                "direction": "unclear",
+                "what": "Indo-Pacific shipping security",
+                "effect": "Exporters that rely on Indo-Pacific sea routes could benefit if joint opposition to maritime coercion helps keep shipping lanes stable.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Publication of the details and scope of India's proposed seafarers' safety initiative",
+                "why": "The details would show what protections are planned for Indian crews and which countries have agreed to take part.",
+                "when": "",
+                "where": "Ministry of External Affairs"
+              },
+              {
+                "what": "Responses from East Asia Summit members to the initiative",
+                "why": "Support from other members would indicate whether the proposal is likely to become a working regional arrangement.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "India is one of the world's largest suppliers of seafarers to the global merchant fleet, so maritime safety arrangements abroad directly concern many Indian workers and their families.",
+              "Most of India's foreign trade by volume moves by sea, much of it through Indo-Pacific shipping routes, which makes stability in these waters important to Indian exporters and importers.",
+              "Summit initiatives are usually announced as proposals first, and they take effect only after member countries agree on details and put them into practice."
+            ],
+            "terms": [
+              {
+                "term": "East Asia Summit",
+                "meaning": "An annual leaders' forum of the ten ASEAN countries and partner countries, including India, that discusses regional political, security and economic issues."
+              },
+              {
+                "term": "Quad",
+                "meaning": "A diplomatic grouping of India, the United States, Japan and Australia that focuses on cooperation in the Indo-Pacific region."
+              },
+              {
+                "term": "ASEAN",
+                "meaning": "The Association of Southeast Asian Nations, a regional bloc of Southeast Asian countries that includes the Philippines."
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Modi proposes seafarers' safety initiative",
+                    "detail": "At the East Asia Summit in Manila, Prime Minister Modi proposed an initiative on the safety of seafarers and also raised concerns about cyber fraud.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Quad opposes maritime coercion",
+                    "detail": "Quad leaders issued a joint statement opposing economic and maritime coercion in the Indo-Pacific, which adds political backing to concerns about safe sea routes.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Regional partners consider cooperation",
+                    "detail": "Summit members could discuss joint measures on crew safety and shipping security, but no agreed measures have been reported.",
+                    "basis": "inferred"
+                  },
+                  {
+                    "step": "Indian seafarers and traders benefit",
+                    "detail": "If cooperation follows, Indian seafarers may face lower risks at sea, and Indian trade on Indo-Pacific routes could face fewer disruptions.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The effect would not reach India if summit members do not take up the proposal or it never becomes concrete, binding measures."
+              }
+            }
+          },
+          "place": {
+            "name": "Manila",
+            "country": "Philippines",
+            "lat": 14.6,
+            "lon": 120.98
+          },
+          "reports": [
+            {
+              "source": "indianexpress",
+              "headline": "East Asia meet: PM Narendra Modi announces safety initiative for seafarers, flags cyber fraud",
+              "url": "https://indianexpress.com/article/india/narendra-modi-asean-summit-proposals-free-e-visa-maritime-plan-cyber-forensics-10966622/",
+              "date": "2026-11-17T09:11:53.000Z",
+              "kind": "hard",
+              "image": "https://images.indianexpress.com/2026/11/PM-Modi-ASEAN.jpg",
+              "ogTried": true,
+              "descTried": true,
+              "summary": "PM Narendra Modi attended the ASEAN-India summit and the EAS in Manila on Tuesday.",
+              "summaryV": 3
+            },
+            {
+              "source": "thehindu",
+              "headline": "World needs peace, stability, predictability: Modi in Manila",
+              "url": "https://www.thehindu.com/news/national/world-needs-peace-stability-predictability-modi-in-manila/article71712862.ece",
+              "date": "2026-11-17T17:35:10.000Z",
+              "kind": "hard",
+              "summary": "Quad leaders issue joint statement opposing economic and maritime 'coercion' in Indo-Pacific; Modi proposes seafarers’ safety initiative at East Asia Summit, also attends meeting with ASEAN leaders",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/incoming/gs28v/article71713207.ece/alternates/LANDSCAPE_1200/20261117310L.jpg"
+            }
+          ],
+          "thread": "t6094p0"
+        },
+        {
           "id": "s1bpkers",
           "headline": "Indian Railways’ October performance: Freight and passenger traffic rise, train punctuality drops",
           "url": "https://indianexpress.com/article/india/indian-railways-october-performance-freight-passenger-punctuality-10964263/",
@@ -19065,6 +19424,117 @@
       "name": "Economy & Trade",
       "items": [
         {
+          "id": "si4y2jc",
+          "headline": "GDP growth likely to remain resilient at 7.5% in Q2 2026-27 despite external and monsoon headwinds: Icra",
+          "url": "https://www.livemint.com/news/gdp-growth-likely-to-remain-resilient-at-7-5-in-q2-2026-27-despite-external-and-monsoon-headwinds-icra-11794921376348.html",
+          "source": "mint",
+          "date": "2026-11-17T16:45:51.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2026/11/17/1600x900/logo/GDP_1794933775960_1Bws_1794933776275_aRu7_a41ee2af-323b-4a47-90d6-cc99206ea606_fRhF.jpg",
+          "why": "Rating agency Icra expects India's economy to grow 7.5% in the July–September quarter of 2026-27, slightly below 7.8% in the previous quarter. Weaker farm activity and slower government spending are the drags, while manufacturing and services keep growth resilient.",
+          "implications": [
+            "Slower government spending can reduce demand for construction, materials and contract work, which may be felt most by businesses and workers that depend on public projects.",
+            "Weaker farm activity could dampen rural incomes and demand for goods sold in villages, even while factories and service firms continue to expand at a firm pace."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-18T01:12:48.155Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "medium",
+              "reason": "The forecast reaches India through the broad pace of growth, which shapes jobs and incomes, but it does not directly change a household essential such as fuel prices or loan EMIs."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Growth trends feed into hiring and incomes gradually, and the official figures for the quarter will confirm or revise the forecast later."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "This rests on one outlet, Mint, quoting a named agency, Icra; it is a forecast, and the official GDP figure for the quarter is not yet available."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Farmers",
+                "direction": "down",
+                "what": "farm activity and incomes",
+                "effect": "Weaker agricultural activity in the quarter could mean softer farm output and lower rural incomes than in the previous quarter.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Manufacturing workers",
+                "direction": "up",
+                "what": "factory demand and jobs",
+                "effect": "Strong manufacturing activity could support steady factory output and hiring, helping to hold up incomes in the sector.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "The official GDP estimate for July to September 2026 from the government's statistics office",
+                "why": "It would show whether actual growth matches Icra's forecast of 7.5% or turns out higher or lower.",
+                "when": "",
+                "where": "National Statistics Office, Ministry of Statistics and Programme Implementation"
+              }
+            ],
+            "context": [
+              "India's financial year runs from April to March, and the government's statistics office publishes official GDP figures after each quarter ends. Agency forecasts come earlier and can differ from the official numbers.",
+              "Farm output in India depends heavily on monsoon rainfall, and government spending on infrastructure is a major driver of overall demand."
+            ],
+            "terms": [
+              {
+                "term": "Q2 FY27",
+                "meaning": "The second quarter of the financial year 2026-27, covering July to September 2026."
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Icra forecasts slightly slower growth",
+                    "detail": "Icra expects GDP growth of 7.5% in the second quarter of 2026-27, down marginally from 7.8% in the previous quarter.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Farm and government spending weigh on growth",
+                    "detail": "Weaker agricultural activity and slower government spending pull growth down, while strong manufacturing and services activity offset much of the drag and keep growth resilient.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Jobs and incomes may diverge by sector",
+                    "detail": "Factory and service jobs may stay steady because those sectors remain strong, while rural incomes and public-project work could feel the slowdown more.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The effect would not reach households if manufacturing and services prove stronger than expected and offset the farm and public-spending slowdown, or if official data differ markedly from the forecast."
+              }
+            }
+          },
+          "place": {
+            "name": "New Delhi",
+            "country": "India",
+            "lat": 28.61,
+            "lon": 77.21
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "GDP growth likely to remain resilient at 7.5% in Q2 2026-27 despite external and monsoon headwinds: Icra",
+              "url": "https://www.livemint.com/news/gdp-growth-likely-to-remain-resilient-at-7-5-in-q2-2026-27-despite-external-and-monsoon-headwinds-icra-11794921376348.html",
+              "date": "2026-11-17T16:45:51.000Z",
+              "kind": "hard",
+              "summary": "Icra expects India's GDP growth to slow marginally to 7.5% in Q2 FY27 from 7.8% in the previous quarter amid weaker agricultural activity and slower government spending. Strong manufacturing and services activity are expected to keep growth resilient.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/11/17/1600x900/logo/GDP_1794933775960_1Bws_1794933776275_aRu7_a41ee2af-323b-4a47-90d6-cc99206ea606_fRhF.jpg"
+            }
+          ],
+          "finChecked": true,
+          "thread": "t1kb1g6p"
+        },
+        {
           "id": "sktzfox",
           "headline": "Industry seeks tax breaks, stronger PLI push in pre-budget consultations",
           "url": "https://www.livemint.com/news/india/industry-seeks-tax-breaks-stronger-pli-push-in-pre-budget-consultations-11794925302075.html",
@@ -19396,7 +19866,12 @@
             }
           ],
           "finChecked": true,
-          "thread": "t119vi00"
+          "thread": "t119vi00",
+          "stats": {
+            "v": 2,
+            "at": "2026-11-18T01:15:19.397Z",
+            "series": []
+          }
         },
         {
           "id": "semw6xu",
@@ -19406,14 +19881,14 @@
           "date": "2026-11-16T12:12:41.000Z",
           "relevance": "medium",
           "image": "https://www.livemint.com/lm-img/img/2026/11/16/1600x900/logo/ANI-20261116161-0_1794829018475_w2sl_1794829027032_3WwZ_00d82965-4f96-4b43-a428-4142f37c39fa_5vwV.jpg",
-          "why": "Finance Minister Nirmala Sitharaman chaired the first pre-Budget consultation with economists, starting preparations for the Union Budget 2027-28. Further meetings with industry, trade unions, state governments and social sector groups will follow.",
+          "why": "Finance Minister Nirmala Sitharaman has chaired the first pre-Budget consultation, with economists, starting preparations for the Union Budget 2027-28. Industry, unions and states will be consulted next, so their views may shape tax and spending proposals.",
           "implications": [
-            "The consultations let the Finance Ministry hear competing priorities from economists, industry, labour, states and social sector groups before it settles its tax and spending proposals.",
-            "Because the groups to be consulted range from trade unions to state governments, the inputs could touch on wages, state finances and welfare spending, though no specific proposal has been reported."
+            "The consultations widen to industry, bankers, capital market participants, trade unions, state governments and social sector experts. Each group can press for tax, spending or regulatory changes that affect its own members.",
+            "Young people and retired bureaucrats are being consulted for the first time, which suggests the Finance Ministry is trying to widen the range of voices informing the Budget."
           ],
           "analysis": {
             "v": 3,
-            "at": "2026-11-16T19:11:16.525Z",
+            "at": "2026-11-18T01:17:36.862Z",
             "tier": "quick",
             "primary": "decoder",
             "complement": null,
@@ -19423,41 +19898,41 @@
             ],
             "exposure": {
               "level": "low",
-              "reason": "No tax or spending proposal has been reported, so there is no direct channel to households or businesses yet. Any effect would come only when the Budget is presented."
+              "reason": "The consultations only collect suggestions and announce no tax or spending change, so there is no direct channel to household finances yet. Any effect depends on what the Budget later contains."
             },
             "horizon": {
               "value": "months",
-              "reason": "The consultations are an early stage, and any effect on taxes or spending would arrive only after the Budget is presented and passed."
+              "reason": "Consultations are the first step in drafting the Budget, and any change would reach people only after proposals are made and approved. The Budget date has not been reported."
             },
             "confidence": {
-              "level": "medium",
-              "reason": "The account rests on a single outlet, Mint, which reports that the Finance Minister chaired the meeting; the content of the discussion has not been reported."
+              "level": "low",
+              "reason": "All three reports come from Mint, and no official statement is quoted directly, so the details of the process rest on a single outlet."
             },
             "outlets": 1,
             "affected": [
               {
                 "group": "Government finances",
                 "direction": "unclear",
-                "what": "Budget 2027-28 priorities",
-                "effect": "The inputs gathered from economists and other groups may shape how the government balances taxes and spending in the coming Budget.",
+                "what": "Budget 2027-28 inputs",
+                "effect": "Suggestions from economists, states and industry may influence how the government sets its taxation and spending priorities for the coming year, though no proposals have been announced.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "Further pre-Budget consultations with industry, trade unions, state governments and social sector representatives",
-                "why": "These meetings would show which groups the Finance Ministry is hearing from and which concerns are raised.",
-                "when": "",
+                "what": "Further consultations with industry, bankers, trade unions, state governments and social sector representatives, including young people for the first time",
+                "why": "The groups consulted and the demands they raise may indicate which issues receive attention in the Budget.",
+                "when": "over the next few days",
                 "where": "Ministry of Finance"
               }
             ],
             "context": [
-              "The Union Budget sets the central government's annual tax and spending plans, and consultations with stakeholders are a routine early step in preparing it."
+              "Before each Union Budget, the Finance Ministry holds meetings with different interest groups. These meetings gather suggestions, but the government is not bound by them, and final decisions on taxes and spending rest with the ministry and the Cabinet."
             ],
             "terms": [
               {
                 "term": "pre-Budget consultation",
-                "meaning": "A meeting in which the Finance Ministry gathers views from outside groups before it finalises the Budget proposals."
+                "meaning": "A meeting in which the Finance Ministry hears from economists, industry and other groups before it settles the tax and spending proposals in the Union Budget."
               }
             ],
             "frameworks": {
@@ -19468,8 +19943,8 @@
                 "drivers": [],
                 "decision": {
                   "action": "other",
-                  "size": "No decision announced; the first consultation was held",
-                  "stance": "The Finance Minister chaired the first consultation with economists to gather inputs for Budget 2027-28. Further discussions with industry, trade unions, state governments and social sector representatives are planned."
+                  "size": "First pre-Budget consultation, held with top economists",
+                  "stance": "The Finance Ministry says it is gathering inputs from economists, industry, trade unions, state governments and social sector representatives to inform the proposals for Budget 2027-28."
                 }
               }
             }
@@ -38925,6 +39400,110 @@
       "name": "Finance",
       "items": [
         {
+          "id": "s3tzf68",
+          "headline": "SEBI weighs curbs on leveraged stock purchases amid rising retail exposure",
+          "url": "https://www.thehindu.com/business/sebi-weighs-curbs-on-leveraged-stock-purchases-amid-rising-retail-exposure/article71713317.ece",
+          "source": "thehindu",
+          "date": "2026-11-17T18:05:59.000Z",
+          "relevance": "medium",
+          "image": "https://th-i.thgim.com/public/incoming/12mxse/article71713331.ece/alternates/LANDSCAPE_1200/2026-11-17T065759Z_424783088_RC2IPOAIUD1T_RTRMADP_3_INDIA-SEBI-MARGIN-TRADING.JPG",
+          "why": "The Securities and Exchange Board of India (SEBI) is considering limits on fresh borrowed-money share purchases in stocks where leverage crosses a threshold tied to free float. Small- and mid-cap shares account for most of the exposure, so retail investors in them are most likely to be affected.",
+          "implications": [
+            "If adopted, the limits could stop investors from adding margin-funded positions in the most heavily leveraged small- and mid-cap stocks, which would narrow the borrowing available to retail traders in those shares.",
+            "Brokers that lend to clients for share purchases could see less demand for margin funding in the affected stocks, although the proposal has not been finalised and its threshold has not been reported."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-18T01:13:16.375Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The proposal would mainly reach retail investors and brokers who use margin funding, mostly in small- and mid-cap shares. It does not touch a household essential, so the exposure is limited to one segment of the market."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "The curbs are still under consideration, so any rule would need to be finalised and then implemented by brokers and exchanges before investors feel an effect."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "The account rests on a single outlet, The Hindu, with no named SEBI official on record, and the exact threshold and the status of the proposal are unconfirmed."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Equity & mutual fund investors",
+                "direction": "down",
+                "what": "access to margin-funded buying",
+                "effect": "Retail investors who borrow to buy small- and mid-cap shares could be blocked from opening fresh leveraged positions once leverage in a stock crosses the threshold.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "A SEBI consultation paper or board decision setting the free-float-linked leverage threshold for margin-funded purchases",
+                "why": "It would show how many stocks the curbs cover and whether the restrictions are confirmed or dropped.",
+                "when": "",
+                "where": "SEBI website (sebi.gov.in)"
+              }
+            ],
+            "context": [
+              "Margin funding lets an investor buy shares by paying part of the price while a broker finances the rest, which magnifies both gains and losses. Market regulators generally step in when borrowing concentrates in thinly traded stocks, where sharp price falls can force sales."
+            ],
+            "terms": [
+              {
+                "term": "free float",
+                "meaning": "Free float is the portion of a company's shares available for public trading, excluding stakes held by promoters, governments or other long-term holders."
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "SEBI weighs curbs on leverage",
+                    "detail": "SEBI is considering restrictions on leveraged stock purchases because retail exposure to borrowed-money buying has been rising.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Threshold linked to free float",
+                    "detail": "The restrictions could prevent fresh margin-funded positions in stocks where leverage crosses a threshold tied to free float. Small- and mid-cap shares account for most of the exposure.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Less leveraged buying in small caps",
+                    "detail": "Retail traders and brokers could find fresh margin-funded buying blocked in the most leveraged smaller stocks, which may reduce borrowing-driven demand and price swings in those shares.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "SEBI drops the proposal, or sets the threshold so high that few stocks cross it, in which case margin-funded buying would carry on largely unchanged."
+              }
+            }
+          },
+          "place": {
+            "name": "Mumbai",
+            "country": "India",
+            "lat": 19.08,
+            "lon": 72.88
+          },
+          "reports": [
+            {
+              "source": "thehindu",
+              "headline": "SEBI weighs curbs on leveraged stock purchases amid rising retail exposure",
+              "url": "https://www.thehindu.com/business/sebi-weighs-curbs-on-leveraged-stock-purchases-amid-rising-retail-exposure/article71713317.ece",
+              "date": "2026-11-17T18:05:59.000Z",
+              "kind": "hard",
+              "summary": "Proposed restrictions could prevent fresh margin-funded positions in stocks where leverage crosses a threshold linked to free float, with small- and mid-cap shares accounting for most of the exposure",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/incoming/12mxse/article71713331.ece/alternates/LANDSCAPE_1200/2026-11-17T065759Z_424783088_RC2IPOAIUD1T_RTRMADP_3_INDIA-SEBI-MARGIN-TRADING.JPG"
+            }
+          ],
+          "thread": "tm1fozc"
+        },
+        {
           "id": "sx2m169",
           "headline": "Gold loan NBFCs seek RBI relief on capital norms as new rules raise NPA concerns",
           "url": "https://www.livemint.com/industry/banking/gold-loan-nbfcs-seek-rbi-relief-on-capital-norms-as-new-rules-raise-npa-concerns-11794919898824.html",
@@ -39786,7 +40365,109 @@
               "image": "https://th-i.thgim.com/public/news/national/4i8xva/article71710411.ece/alternates/LANDSCAPE_1200/iStock-2003934964.jpg"
             }
           ],
-          "thread": "t1dc6sy9"
+          "thread": "t1dc6sy9",
+          "stats": {
+            "v": 2,
+            "at": "2026-11-18T01:15:21.493Z",
+            "series": [
+              {
+                "title": "Net FPI investment in India, monthly",
+                "unit": "US$ million",
+                "publisher": "Reserve Bank of India",
+                "points": [
+                  {
+                    "period": "Jun 2025",
+                    "value": 2726,
+                    "url": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=24416",
+                    "source": "RBI Bulletin | Official Website of Reserve Bank of India"
+                  },
+                  {
+                    "period": "May 2026",
+                    "value": -4485,
+                    "url": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=24416",
+                    "source": "RBI Bulletin | Official Website of Reserve Bank of India"
+                  },
+                  {
+                    "period": "Jun 2026",
+                    "value": 2691,
+                    "url": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=24416",
+                    "source": "RBI Bulletin | Official Website of Reserve Bank of India"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=24416",
+                    "title": "RBI Bulletin | Official Website of Reserve Bank of India",
+                    "domain": "rbi.org.in"
+                  }
+                ],
+                "domains": [
+                  "rbi.org.in"
+                ],
+                "dropped": 0,
+                "why": "Net foreign portfolio investment flows into India directly track the foreign fund inflows cited as driving the Indian stock rally, and the daily Brent crude price tracks the crude oil price fall the s",
+                "reused": true,
+                "checkedAt": "2026-11-06T19:48:42.760Z"
+              },
+              {
+                "title": "Brent crude oil spot price, daily",
+                "unit": "US$ per barrel",
+                "publisher": "U.S. Energy Information Administration",
+                "points": [
+                  {
+                    "period": "13 Oct 2026",
+                    "value": 125.78,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "14 Oct 2026",
+                    "value": 126.55,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "15 Oct 2026",
+                    "value": 126.35,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "16 Oct 2026",
+                    "value": 119.33,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "19 Oct 2026",
+                    "value": 118.82,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "20 Oct 2026",
+                    "value": 115.22,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "title": "Spot Prices for Crude Oil and Petroleum Products",
+                    "domain": "eia.gov"
+                  }
+                ],
+                "domains": [
+                  "eia.gov"
+                ],
+                "dropped": 0,
+                "why": "Net foreign portfolio investment flows into India directly track the foreign fund inflows cited as driving the Indian stock rally, and the daily Brent crude price tracks the crude oil price fall the s",
+                "reused": true,
+                "checkedAt": "2026-10-23T05:07:39.435Z"
+              }
+            ]
+          }
         },
         {
           "id": "s1utkek5",
@@ -68930,89 +69611,196 @@
           "date": "2026-11-16T17:04:51.000Z",
           "relevance": "high",
           "image": "https://th-i.thgim.com/public/news/national/andhra-pradesh/4dag1z/article71707041.ece/alternates/LANDSCAPE_1200/WhatsApp%20Image%202026-11-16%20at%2012.15.06%20PM.jpeg",
-          "why": "Cyclone Akvan is forecast to make landfall between Nellore and Tuni in Andhra Pradesh as a very severe storm on November 20. Fishermen have been told to stay ashore until then.",
+          "why": "Cyclone Akvan formed over the Bay of Bengal and is forecast to strengthen and cross the Andhra Pradesh coast around noon on 20 November. Heavy rain is expected from 18 November, and fishermen have been told to stay ashore.",
           "implications": [
-            "Fishing households on the Andhra coast lose working days while they stay ashore, which cuts their income during the advisory period.",
-            "Fishermen are still waiting for compensation for Cyclone Arnab's losses, so a second storm may add to the financial strain on coastal fishing families."
+            "Andhra fishermen kept ashore until 20 November lose fishing income at a time when they are still awaiting compensation for losses from Cyclone Arnab.",
+            "Forecasts have placed landfall between Nellore and Tuni, and later between Visakhapatnam and Nellore, so the districts facing the strongest winds remain uncertain.",
+            "Heavy rain is expected in north coastal districts, including Visakhapatnam and Srikakulam, from 18 November evening. Crops, homes and transport there could be damaged or disrupted.",
+            "The system's clouds may also bring rain to Tamil Nadu, Puducherry, Telangana, Odisha and West Bengal, including moderate rain in parts of Chennai on Wednesday."
           ],
           "analysis": {
             "v": 3,
-            "at": "2026-11-16T19:13:34.527Z",
-            "tier": "quick",
-            "primary": "impact_chain",
-            "complement": null,
+            "at": "2026-11-18T01:17:36.862Z",
+            "tier": "deep",
+            "primary": "timeline",
+            "complement": "scenarios",
             "features": [
+              "fast_moving",
               "pending_outcome"
             ],
             "exposure": {
               "level": "high",
-              "reason": "A very severe cyclone threatens the safety of people along a long stretch of the Andhra coast, and the stay-ashore order directly stops fishing livelihoods."
+              "reason": "The storm directly threatens the safety, homes and livelihoods of people along the Andhra Pradesh coast and brings rain to several eastern states, which makes exposure high."
             },
             "horizon": {
               "value": "now",
-              "reason": "Landfall is forecast for November 20, within a week of the November 16 report, and the fishing restriction applies until then."
+              "reason": "Heavy rain is forecast from 18 November and landfall around noon on 20 November, both within a week."
             },
             "confidence": {
               "level": "medium",
-              "reason": "This rests on a single outlet, The Hindu, reporting the landfall forecast and the advisory; no named official or second outlet confirms the track or timing."
+              "reason": "The Hindu and Mint both cite India Meteorological Department forecasts, but the forecast landfall zone differs between reports and the storm's final intensity is not yet certain."
             },
-            "outlets": 1,
+            "outlets": 2,
             "affected": [
               {
                 "group": "Fishers",
                 "direction": "down",
-                "what": "fishing days and income",
-                "effect": "Andhra fishermen have been told to stay ashore until November 20, which stops fishing and the income it brings.",
+                "what": "lost fishing days",
+                "effect": "Andhra fishermen have been told to stay ashore until 20 November, which halts their income while earlier cyclone compensation is still pending.",
                 "basis": "reported"
               },
               {
                 "group": "A named state or region",
                 "direction": "down",
-                "what": "coastal Andhra disruption",
-                "effect": "Coastal districts between Nellore and Tuni may face wind and rain damage and disrupted daily life if the storm lands as forecast.",
+                "what": "Andhra Pradesh coastal safety",
+                "effect": "Coastal Andhra Pradesh faces very heavy rain on 19 and 20 November and a possible very severe cyclone landfall, which could threaten lives and property.",
+                "basis": "reported"
+              },
+              {
+                "group": "Farmers",
+                "direction": "down",
+                "what": "crop damage risk",
+                "effect": "Heavy rain and strong winds in coastal Andhra districts could flatten standing crops and plantations, adding to losses from earlier storms.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Power consumers",
+                "direction": "down",
+                "what": "power supply disruption",
+                "effect": "Strong winds near the landfall zone could damage power lines and interrupt electricity supply to households and businesses in coastal Andhra Pradesh.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "Cyclone Akvan's landfall between Nellore and Tuni as a very severe storm",
-                "why": "It would show whether the forecast track and intensity hold and how severe the coastal impact is.",
+                "what": "India Meteorological Department bulletins on Cyclone Akvan's track and intensity",
+                "why": "The bulletins will show which districts face landfall and whether the storm reaches very severe strength.",
+                "when": "2026-11-19",
+                "where": "India Meteorological Department"
+              },
+              {
+                "what": "Cyclone Akvan's landfall on the Andhra Pradesh coast",
+                "why": "The landfall location and strength will determine where damage to homes, crops and infrastructure is heaviest.",
                 "when": "2026-11-20",
                 "where": "India Meteorological Department"
+              },
+              {
+                "what": "Andhra Pradesh government relief and compensation announcements for fishermen and farmers",
+                "why": "These announcements would show whether communities hit by successive cyclones receive support for their losses.",
+                "when": "",
+                "where": "Government of Andhra Pradesh"
               }
             ],
             "context": [
-              "Cyclones forming over the Bay of Bengal regularly cross India's eastern coast, and coastal authorities usually keep fishermen ashore ahead of landfall because boats at sea are at serious risk.",
-              "Cyclone damage to boats, nets and homes is usually followed by state compensation claims, which can take time to process."
+              "The India Meteorological Department grades cyclones by wind speed. A very severe cyclonic storm can cause storm surge, flooding, and damage to power lines, crops and weak buildings near the landfall zone.",
+              "Coastal states usually move people from low-lying areas to shelters and halt fishing before landfall, and the exact landfall point is often refined as the storm approaches.",
+              "Andhra Pradesh's coast has already suffered cyclone damage this season, which leaves farming and fishing communities with less capacity to absorb new losses."
             ],
             "terms": [
               {
-                "term": "very severe storm",
-                "meaning": "A strong category of cyclone on the India Meteorological Department's scale, above a severe cyclonic storm, capable of causing heavy damage along the coast."
+                "term": "very severe cyclonic storm",
+                "meaning": "An India Meteorological Department category for a cyclone strong enough to cause extensive damage to structures, crops and power infrastructure near the coast."
+              },
+              {
+                "term": "landfall",
+                "meaning": "The point at which the centre of a cyclone crosses from the sea onto land, usually where winds and storm surge are strongest."
+              },
+              {
+                "term": "RMC",
+                "meaning": "Regional Meteorological Centre, a regional office of the India Meteorological Department that issues local weather forecasts, here for Chennai."
               }
             ],
             "frameworks": {
-              "impact_chain": {
-                "chain": [
+              "timeline": {
+                "entries": [
                   {
-                    "step": "Landfall forecast on Andhra coast",
-                    "detail": "Cyclone Akvan is expected to make landfall between Nellore and Tuni in Andhra Pradesh as a very severe storm on November 20.",
-                    "basis": "reported"
+                    "when": "16 Nov 2026, 17:04",
+                    "what": "The storm was forecast to cross Andhra Pradesh between Nellore and Tuni as a very severe storm on 20 November, and fishermen were told to stay ashore until then.",
+                    "actor": "India Meteorological Department (IMD)",
+                    "outlet": "The Hindu",
+                    "type": "action",
+                    "verification": "confirmed"
                   },
                   {
-                    "step": "Fishermen told to stay ashore",
-                    "detail": "Andhra fishermen have been told not to go to sea until November 20, which halts fishing for the period of the warning.",
-                    "basis": "reported"
+                    "when": "16 Nov 2026, 17:28",
+                    "what": "Cyclonic Storm Akvan formed over the Bay of Bengal, and the Andhra Pradesh Chief Minister told officials to take precautionary steps.",
+                    "actor": "Andhra Pradesh Chief Minister",
+                    "outlet": "The Hindu",
+                    "type": "action",
+                    "verification": "confirmed"
                   },
                   {
-                    "step": "Added strain on fishing families",
-                    "detail": "Fishermen still awaiting compensation for Cyclone Arnab's losses may face further hardship if Akvan damages boats, nets or coastal homes.",
-                    "basis": "inferred"
+                    "when": "17 Nov 2026, 01:47",
+                    "what": "A yellow alert was issued for Andhra Pradesh and Odisha. The storm was forecast to become very severe around 19 November morning and cross between Nellore and Tuni around noon on 20 November.",
+                    "actor": "India Meteorological Department (IMD)",
+                    "outlet": "Mint",
+                    "type": "action",
+                    "verification": "confirmed"
+                  },
+                  {
+                    "when": "17 Nov 2026, 03:42",
+                    "what": "Clouds linked to the system were projected to bring light to moderate rain to parts of Tamil Nadu, Puducherry, Telangana, Andhra Pradesh, Odisha and West Bengal.",
+                    "actor": "India Meteorological Department (IMD)",
+                    "outlet": "The Hindu",
+                    "type": "claim",
+                    "verification": "claimed"
+                  },
+                  {
+                    "when": "17 Nov 2026, 15:49",
+                    "what": "The storm was moving slowly and was likely to intensify further by 18 November morning, with probable landfall between Visakhapatnam and Nellore rather than Nellore and Tuni.",
+                    "actor": "India Meteorological Department (IMD)",
+                    "outlet": "The Hindu",
+                    "type": "claim",
+                    "verification": "contested"
+                  },
+                  {
+                    "when": "17 Nov 2026, 17:29",
+                    "what": "The Regional Meteorological Centre forecast moderate rain at isolated places in Chennai, Tiruvallur and Chengalpattu districts on Wednesday.",
+                    "actor": "Regional Meteorological Centre, Chennai",
+                    "outlet": "The Hindu",
+                    "type": "action",
+                    "verification": "confirmed"
                   }
                 ],
-                "breaks_if": "The effect would be limited if the storm weakens or changes course away from the Andhra coast, or if compensation reaches fishermen before further damage occurs."
+                "current_status": "Cyclone Akvan is moving slowly over the Bay of Bengal and is expected to intensify further. It is forecast to cross the Andhra Pradesh coast around noon on 20 November, but forecasts differ on the exact landfall zone.",
+                "open_questions": [
+                  "Will Cyclone Akvan cross the coast between Nellore and Tuni, or further north near Visakhapatnam?",
+                  "Will the storm reach very severe cyclonic storm strength before landfall?",
+                  "Will fishermen still awaiting Cyclone Arnab compensation receive support for the days lost to Akvan?"
+                ]
+              },
+              "scenarios": {
+                "question": "Where along the Andhra Pradesh coast, and at what strength, will Cyclone Akvan make landfall?",
+                "scenarios": [
+                  {
+                    "name": "Very severe landfall, Nellore–Tuni",
+                    "what": "The storm intensifies into a very severe cyclonic storm by 19 November and crosses between Nellore and Tuni around noon on 20 November, as earlier IMD forecasts stated.",
+                    "signal": "IMD bulletins on 19 November upgrade the storm to very severe and keep the Nellore–Tuni landfall window.",
+                    "india_effect": "Central and southern coastal Andhra districts could face the strongest winds and flooding, with risks to homes, crops, power lines and fishing communities."
+                  },
+                  {
+                    "name": "Landfall nearer Visakhapatnam",
+                    "what": "The landfall zone shifts north, towards the Visakhapatnam end of the later forecast band, while heavy rain hits north coastal districts from 18 November evening.",
+                    "signal": "Updated IMD bulletins narrow the landfall point towards Visakhapatnam and extend warnings for Srikakulam and Vizianagaram.",
+                    "india_effect": "North coastal Andhra districts, including Visakhapatnam, Srikakulam, Vizianagaram and tribal hill areas, could bear the heaviest rain and wind, which may disrupt transport and farm areas."
+                  },
+                  {
+                    "name": "Landfall as severe storm",
+                    "what": "The storm strengthens only to a severe cyclonic storm, as an early forecast suggested, before crossing the coast.",
+                    "signal": "IMD bulletins stop short of upgrading Akvan to very severe cyclonic storm status before 20 November.",
+                    "india_effect": "Wind damage could be more limited, but heavy rain could still flood low-lying areas and damage crops across coastal Andhra Pradesh."
+                  }
+                ]
               }
-            }
+            },
+            "reading": [
+              {
+                "headline": "News in Frames: Many twists in the monsoon’s tale",
+                "url": "https://www.thehindu.com/photos/news-in-frames-many-twists-in-the-monsoons-tale/article71680539.ece",
+                "source": "thehindu",
+                "date": "2026-11-08T05:05:16.000Z"
+              }
+            ]
           },
           "place": {
             "name": "Nellore, Andhra Pradesh",
@@ -69079,6 +69867,16 @@
               "summary": "Probable landfall between Visakhapatnam and Nellore; isolated heavy rain likely in Visakhapatnam, Alluri Sitharama Raju, Parvathipuram-Manyam, Srikakulam and Vizianagaram from November 18 evening",
               "summaryV": 3,
               "image": "https://th-i.thgim.com/public/incoming/ofb5a/article71712921.ece/alternates/LANDSCAPE_1200/002WINDY.jpg"
+            },
+            {
+              "source": "thehindu",
+              "headline": "Cyclone Akvan: RMC forecasts moderate rainfall for Chennai on Wednesday",
+              "url": "https://www.thehindu.com/news/cities/chennai/cyclone-akvan-rmc-forecasts-moderate-rainfall-for-chennai-on-wednesday/article71712804.ece",
+              "date": "2026-11-17T17:29:48.000Z",
+              "kind": "hard",
+              "summary": "The RMC has forecast moderate rainfall at isolated places in Chennai, Tiruvallur and Chengalpattu districts on Wednesday",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/incoming/h2k97g/article71713167.ece/alternates/LANDSCAPE_1200/BVR_3767_01.JPG"
             }
           ],
           "thread": "t1nsgg07"
@@ -77621,84 +78419,98 @@
           "date": "2026-11-17T09:42:27.000Z",
           "relevance": "medium",
           "image": "https://www.livemint.com/lm-img/img/2026/11/17/1600x900/logo/m_1794908343556_hzT3_1794908343758_kiqR_ea201973-99cf-4b8c-8bf9-5b6957f6d602_uTGV.JPG",
-          "why": "India's horticulture output, which covers fruits and vegetables, is estimated to have risen 4.36% to 386.9 million tonnes in FY26. The rise came from a smaller cultivated area, which points to better productivity.",
+          "why": "India's horticulture output is estimated to have risen 4.36% to a record 386.9 million tonnes in FY26 from a smaller cultivated area. The rise affects the supply of fruits and vegetables to Indian households and markets.",
           "implications": [
-            "Higher yields from less land suggest farmers are getting more from each hectare, which could raise their incomes if the extra produce sells at stable prices.",
-            "A larger harvest of fruits and vegetables could improve supply in markets, which may ease price pressure on household food budgets."
+            "Higher output from less land points to better yields per hectare, which can raise returns for growers if crop prices hold up.",
+            "A larger harvest of fruits and vegetables could ease pressure on retail food prices for households, depending on how much produce reaches markets.",
+            "Agriculture Minister Shivraj Singh Chouhan attributes the increase to farmers' efforts and the Centre's policies, which places the figures at the centre of the government's farm-policy message."
           ],
           "analysis": {
             "v": 3,
-            "at": "2026-11-17T15:05:09.845Z",
-            "tier": "quick",
+            "at": "2026-11-18T01:17:36.862Z",
+            "tier": "standard",
             "primary": "impact_chain",
             "complement": null,
             "features": [],
             "exposure": {
               "level": "medium",
-              "reason": "Fruits and vegetables are part of household food spending, so larger supply could affect prices. The link is indirect because the estimate says nothing about prices or demand."
+              "reason": "The development reaches India through the supply of fruits and vegetables to households and through growers' incomes. The level is medium because any effect on prices is indirect."
             },
             "horizon": {
               "value": "months",
-              "reason": "The estimate covers a financial year that has already ended, so any effect on market prices and farm incomes would show up gradually."
+              "reason": "The figures are an annual estimate, so any effect on food prices or farm incomes would appear over seasons rather than immediately."
             },
             "confidence": {
-              "level": "low",
-              "reason": "This rests on a single Mint report that does not name the source of the estimate or give a crop-wise breakdown."
+              "level": "medium",
+              "reason": "Mint and The Hindu both report the Agriculture Ministry's figures on record, but the numbers are estimates that may be revised."
             },
-            "outlets": 1,
+            "outlets": 2,
             "affected": [
               {
                 "group": "Farmers",
-                "direction": "up",
-                "what": "yield per hectare",
-                "effect": "Higher output from a smaller cultivated area indicates better productivity, which could raise earnings per hectare for horticulture growers.",
+                "direction": "mixed",
+                "what": "yields and crop prices",
+                "effect": "Higher yields on a smaller area can raise growers' output, but a larger supply could also lower the prices they receive for perishable produce.",
                 "basis": "inferred"
               },
               {
                 "group": "Food shoppers",
                 "direction": "down",
                 "what": "fruit and vegetable prices",
-                "effect": "A larger supply of fruits and vegetables could ease retail prices, although spoilage and transport costs may limit the effect.",
+                "effect": "A larger supply of fruits and vegetables could ease retail price pressure for households if the produce reaches markets.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "Release of revised or final horticulture production estimates, including crop-wise figures",
-                "why": "It would show which crops drove the rise and whether the estimate is revised.",
+                "what": "Revised Agriculture Ministry estimates of horticulture production for FY26",
+                "why": "Revisions would show whether the record output and the productivity gain hold up when fuller data arrive.",
                 "when": "",
                 "where": "Ministry of Agriculture and Farmers Welfare"
+              },
+              {
+                "what": "Monthly retail inflation data for vegetables and fruits",
+                "why": "The data would show whether higher production is translating into lower food prices for households.",
+                "when": "",
+                "where": "Ministry of Statistics and Programme Implementation"
               }
             ],
             "context": [
-              "Horticulture covers fruits, vegetables, flowers, spices and plantation crops. Output is sensitive to weather and perishable, so storage and transport affect how far a bigger harvest benefits farmers and consumers."
+              "Horticulture covers fruits, vegetables, spices, flowers and plantation crops. Vegetable prices often swing sharply and carry significant weight in India's retail inflation.",
+              "Official production figures are first released as estimates and are usually revised later as fuller data arrive.",
+              "Bumper harvests of perishable crops can push down prices that farmers receive at wholesale markets, especially where storage and cold-chain capacity are limited."
             ],
             "terms": [
               {
-                "term": "horticulture",
-                "meaning": "The farming of fruits, vegetables, flowers, spices and plantation crops, as distinct from field crops such as wheat and rice."
+                "term": "FY26",
+                "meaning": "India's financial year 2025-26, which runs from April 2025 to March 2026."
               }
             ],
             "frameworks": {
               "impact_chain": {
                 "chain": [
                   {
-                    "step": "Output estimated higher on less land",
-                    "detail": "Horticulture output is estimated to have risen 4.36% to 386.9 million tonnes in FY26, even though the cultivated area was smaller.",
+                    "step": "Ministry estimates record horticulture output",
+                    "detail": "The Agriculture Ministry estimates horticulture production rose 4.36% to 386.9 million tonnes in FY26 compared with 2024-25.",
                     "basis": "reported"
                   },
                   {
-                    "step": "Productivity improved",
-                    "detail": "Producing more from a smaller area points to higher yields per hectare, meaning growers harvested more from the same land.",
+                    "step": "Output rises from smaller area",
+                    "detail": "The increase came from a smaller cultivated area, which points to improved productivity per hectare rather than expansion of farmland.",
                     "basis": "reported"
                   },
                   {
-                    "step": "Wider supply in markets",
-                    "detail": "A larger harvest could increase the supply of fruits and vegetables, which may ease prices for shoppers and support farm incomes if produce reaches markets.",
+                    "step": "More produce reaches markets",
+                    "detail": "A larger supply of fruits and vegetables could reach wholesale and retail markets and ease price pressure for consumers.",
+                    "basis": "inferred"
+                  },
+                  {
+                    "step": "Farm-gate prices may soften",
+                    "detail": "Greater supply of perishable crops could lower the prices growers receive, so the gain in output may not translate fully into higher farm incomes.",
                     "basis": "inferred"
                   }
                 ],
-                "breaks_if": "The extra produce would not ease prices if it is lost to spoilage or cannot be moved to markets, or if weaker supply in other crops offsets it."
+                "breaks_if": "The effect would not reach households if much of the extra produce is lost after harvest, or if the gains are confined to crops that do not shape retail prices."
               }
             }
           },
@@ -77718,6 +78530,16 @@
               "summary": "The increase in output from a smaller cultivated area points to improved productivity.",
               "summaryV": 3,
               "image": "https://www.livemint.com/lm-img/img/2026/11/17/1600x900/logo/m_1794908343556_hzT3_1794908343758_kiqR_ea201973-99cf-4b8c-8bf9-5b6957f6d602_uTGV.JPG"
+            },
+            {
+              "source": "thehindu",
+              "headline": "‘Record horticultural production’ shows increase of 4.36% from 2024-25: Agriculture Ministry",
+              "url": "https://www.thehindu.com/news/national/record-horticultural-production-shows-increase-of-436-from-2024-25-agriculture-ministry/article71712523.ece",
+              "date": "2026-11-17T17:19:49.000Z",
+              "kind": "hard",
+              "summary": "Significant increase in horticultural production reflects the hard work of India’s farmers and the impact of the Centre’s farmer-friendly policies, Agriculture Minister Shivraj Singh Chouhan says",
+              "summaryV": 3,
+              "image": "https://th-i.thgim.com/public/incoming/vl8hra/article71713126.ece/alternates/LANDSCAPE_1200/20261021339L.jpg"
             }
           ],
           "thread": "t1m6nzr6"
@@ -83794,6 +84616,229 @@
       "name": "Policy & Governance",
       "items": [
         {
+          "id": "s16pbq4t",
+          "headline": "Dubious claims on labels may get product barred",
+          "url": "https://www.livemint.com/news/india/consumer-affairs-ministry-review-misleading-product-claims-trademark-delisted-11794889912935.html",
+          "source": "mint",
+          "date": "2026-11-18T00:31:10.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2026/11/17/1600x900/logo/Food_label_1794908312084_TVq9_1794908312234_54m3_ea7e65ff-c158-4731-8099-67d67539be45_YQbL.jpg",
+          "why": "India's consumer affairs ministry is considering tighter scrutiny of product labels and trademarks. Companies would have to back claims with credible evidence, or risk penalties or recommendations to delist products.",
+          "implications": [
+            "Manufacturers and brand owners could need to gather and keep test data or other evidence for every claim printed on packaging, which would raise their compliance work.",
+            "Penalties or delisting recommendations would add a commercial risk for brands whose claims cannot be supported, especially if sellers act on such recommendations.",
+            "Smaller manufacturers with fewer testing resources could find it harder than large firms to meet an evidence requirement."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-18T01:14:32.634Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The channel is a compliance obligation on manufacturers and brand owners selling labelled products. It is not tied to a household essential in the reports, so exposure stays at medium."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "The ministry is only considering the move, so rules would first need to be drafted and finalised before firms face enforcement."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single Mint report that describes the ministry as considering the idea, with no named official on record and no draft rules cited."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Importers & traders",
+                "direction": "mixed",
+                "what": "compliance duties on product claims",
+                "effect": "Sellers of branded goods may face more paperwork and possible penalties or delisting, while those with well-supported claims could gain credibility with shoppers.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Publication of draft guidelines or a notice on evidence for label claims and trademarks",
+                "why": "It would show how strict the evidence standard is and when firms must comply.",
+                "when": "",
+                "where": "Department of Consumer Affairs"
+              }
+            ],
+            "context": [
+              "India's consumer protection law treats misleading claims about goods as an unfair trade practice that authorities can act against. Rules on labels and advertising are usually tightened through ministry guidelines and notices."
+            ],
+            "terms": [
+              {
+                "term": "delist",
+                "meaning": "To delist a product is to remove it from the list of products offered for sale by a retailer or platform."
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Ministry weighs stricter label scrutiny",
+                    "detail": "India's consumer affairs ministry is considering tighter scrutiny of product labels and trademarks. Companies would have to support their claims with credible evidence.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Unsupported claims carry penalties",
+                    "detail": "Claims without evidence could lead to penalties or recommendations to delist the product, which raises the cost of making an unproven claim.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Manufacturers face higher compliance work",
+                    "detail": "Manufacturers may need to collect evidence and revise labels, which could add costs and delay product launches or relabelling.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The ministry drops the proposal or sets the evidence standard so loosely that firms need little new documentation, in which case manufacturers would see little change."
+              }
+            }
+          },
+          "place": {
+            "name": "New Delhi",
+            "country": "India",
+            "lat": 28.6,
+            "lon": 77.2
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "Dubious claims on labels may get product barred",
+              "url": "https://www.livemint.com/news/india/consumer-affairs-ministry-review-misleading-product-claims-trademark-delisted-11794889912935.html",
+              "date": "2026-11-18T00:31:10.000Z",
+              "kind": "hard",
+              "summary": "India’s consumer affairs ministry is considering tighter scrutiny of product labels and trademarks, requiring companies to support claims with credible evidence. Unsupported claims could lead to penalties or recommendations to delist products, increasing manufacturers’ compliance obligations.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/11/17/1600x900/logo/Food_label_1794908312084_TVq9_1794908312234_54m3_ea7e65ff-c158-4731-8099-67d67539be45_YQbL.jpg"
+            }
+          ],
+          "finChecked": true,
+          "thread": "t82w31f"
+        },
+        {
+          "id": "s2136e9",
+          "headline": "Revamped Agnipath scheme: On talks table, multi-skilling, tech proficiency for 6-year Agniveers",
+          "url": "https://indianexpress.com/article/india/agnipath-scheme-revamp-agniveer-permanent-recruitment-selection-criteria-10967466/",
+          "source": "indianexpress",
+          "date": "2026-11-18T00:00:49.000Z",
+          "relevance": "medium",
+          "image": "https://images.indianexpress.com/2026/11/Over-2700-Agniveers-including-142-women-completed-their-training-at-INS-Chilka-in-Odisha-last-week.-PTI.jpg",
+          "why": "Proposals to revamp the Agnipath short-service recruitment scheme are under discussion. They include multi-skilling and technology training for Agniveers serving six years. The outcome would shape career prospects for young recruits into India's armed forces.",
+          "implications": [
+            "If adopted, the changes could alter what young recruits learn during service, and so how employable they are when they return to civilian jobs.",
+            "A six-year term for Agniveers would change how long recruits stay in service and how long the armed forces keep them before the exit stage.",
+            "Training in technology and multiple skills could also affect how prepared the forces are to use modern equipment, though the proposals have not been detailed."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-18T01:14:32.634Z",
+            "tier": "quick",
+            "primary": "policy_tracker",
+            "complement": null,
+            "features": [
+              "policy_stage",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The scheme reaches one group, young recruits and their families, and one institution, the armed forces. It does not touch household essentials such as fuel, food or loan costs."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "The ideas are still under discussion, so any formal change would need approval and rollout before recruits notice a difference."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single Indian Express headline with no summary, no named official source and no detail on what is proposed."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Salaried workers",
+                "direction": "unclear",
+                "what": "career prospects of recruits",
+                "effect": "Recruits could gain skills useful in later civilian employment if multi-skilling is adopted, but the proposals are not yet detailed enough to say how much.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "An official announcement of revised Agnipath terms covering the six-year service period and the training content",
+                "why": "It would show which of the proposals under discussion have actually been adopted.",
+                "when": "",
+                "where": "Ministry of Defence"
+              }
+            ],
+            "context": [
+              "Agnipath is the central government's scheme for recruiting young personnel into the armed forces for a fixed period, with only a limited share retained afterwards. Changes to it usually need approval at senior levels of the defence establishment."
+            ],
+            "terms": [
+              {
+                "term": "Agniveers",
+                "meaning": "Agniveers are the young personnel recruited into the armed forces for a fixed term under the Agnipath scheme."
+              }
+            ],
+            "frameworks": {
+              "policy_tracker": {
+                "instrument": {
+                  "name": "Revamped Agnipath scheme",
+                  "issuer": "Government of India",
+                  "jurisdiction": "India"
+                },
+                "stages": [
+                  {
+                    "stage": "under_review",
+                    "date": "",
+                    "status": "current"
+                  },
+                  {
+                    "stage": "adopted",
+                    "date": "",
+                    "status": "next"
+                  }
+                ],
+                "obligations": [
+                  {
+                    "who": "Agniveers",
+                    "what": "If the proposals are adopted, Agniveers serving a six-year term could be required to undergo multi-skilling and build technology proficiency during service.",
+                    "from": ""
+                  }
+                ],
+                "applies_to_india": "yes",
+                "india_note": "The scheme governs recruitment into India's armed forces. Any revamp would affect young recruits, their families and the forces. Details and timing of the changes have not been reported."
+              }
+            }
+          },
+          "place": {
+            "name": "New Delhi",
+            "country": "India",
+            "lat": 28.6,
+            "lon": 77.2
+          },
+          "reports": [
+            {
+              "source": "indianexpress",
+              "headline": "Revamped Agnipath scheme: On talks table, multi-skilling, tech proficiency for 6-year Agniveers",
+              "url": "https://indianexpress.com/article/india/agnipath-scheme-revamp-agniveer-permanent-recruitment-selection-criteria-10967466/",
+              "date": "2026-11-18T00:00:49.000Z",
+              "kind": "hard",
+              "image": "https://images.indianexpress.com/2026/11/Over-2700-Agniveers-including-142-women-completed-their-training-at-INS-Chilka-in-Odisha-last-week.-PTI.jpg",
+              "ogTried": true,
+              "descTried": true,
+              "summary": "Presently under deliberation: HQ IDS on eligibility criteria for absorption of 75% Agniveers offered 2-year extension",
+              "summaryV": 3
+            }
+          ],
+          "finChecked": true,
+          "thread": "t46y1y6"
+        },
+        {
           "id": "s1bibfuk",
           "headline": "Nearly 75 lakh names added in draft SSR voters lists in 13 States and UTs",
           "url": "https://www.thehindu.com/news/national/nearly-75-lakh-names-added-in-draft-ssr-voters-lists-in-13-states-and-uts/article71712272.ece",
@@ -83895,6 +84940,117 @@
           ],
           "finChecked": true,
           "thread": "ti5hn96"
+        },
+        {
+          "id": "sf13283",
+          "headline": "Quad unveils security, business, AI plans; Trump says ‘phone, office open’",
+          "url": "https://indianexpress.com/article/india/quad-summit-2026-indo-pacific-initiatives-donald-trump-narendra-modi-10967222/",
+          "source": "indianexpress",
+          "date": "2026-11-17T15:33:05.000Z",
+          "relevance": "medium",
+          "image": "https://images.indianexpress.com/2026/11/quad-meet-pti.jpg",
+          "why": "The Quad grouping unveiled plans on security, business and artificial intelligence at its Manila summit, and US President Donald Trump said his phone and office are open. The specifics have not been reported.",
+          "implications": [
+            "Cooperation on business and artificial intelligence could affect Indian technology and services firms through investment, standards or supply chains, but no concrete commitments have been reported.",
+            "Trump's remark about an open phone and office suggests a willingness for direct contact, which could help Indian officials raise trade and security issues, though no specific issue has been reported."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-18T01:12:14.368Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "medium",
+              "reason": "The plans bear on India's relationship with the United States and its partners and on technology and business cooperation, but no specific measure reaching households or a major trade flow has been reported."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Summit announcements usually need working groups and funding decisions before any effect on firms or people becomes visible."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single outlet's headline, and the contents of the security, business and artificial intelligence plans are unconfirmed."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "IT & services workers",
+                "direction": "unclear",
+                "what": "AI cooperation opportunities",
+                "effect": "Quad artificial intelligence plans could change investment or partnership opportunities for Indian technology firms, but their content has not been reported.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Release of the Quad joint statement or fact sheet detailing the security, business and artificial intelligence plans",
+                "why": "It would show whether the plans carry funding, deadlines or commitments that affect Indian firms.",
+                "when": "",
+                "where": "Ministry of External Affairs"
+              }
+            ],
+            "context": [
+              "The Quad is an informal grouping of India, the United States, Japan and Australia that focuses on Indo-Pacific security, technology and economic cooperation.",
+              "Quad summits usually produce joint statements and working-group initiatives rather than binding treaties, so their effects tend to build gradually."
+            ],
+            "terms": [
+              {
+                "term": "Quad",
+                "meaning": "An informal strategic grouping of India, the United States, Japan and Australia that cooperates on security, technology and economic issues in the Indo-Pacific."
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Quad unveils plans",
+                    "detail": "At its Manila summit the Quad announced plans covering security, business and artificial intelligence. Their detailed content has not been reported.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Trump signals open channel",
+                    "detail": "President Trump said his phone and office are open, which signals a readiness for direct contact with partner leaders including India.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Possible channel for Indian concerns",
+                    "detail": "The plans and the open channel could give Indian officials and businesses more room to raise technology and trade matters with Washington.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The announced plans remain statements without funding, timelines or working groups, or the open channel does not lead to any follow-up engagement."
+              }
+            }
+          },
+          "place": {
+            "name": "Manila",
+            "country": "Philippines",
+            "lat": 14.6,
+            "lon": 120.98,
+            "involves": [
+              "United States",
+              "Japan",
+              "Australia"
+            ]
+          },
+          "reports": [
+            {
+              "source": "indianexpress",
+              "headline": "Quad unveils security, business, AI plans; Trump says ‘phone, office open’",
+              "url": "https://indianexpress.com/article/india/quad-summit-2026-indo-pacific-initiatives-donald-trump-narendra-modi-10967222/",
+              "date": "2026-11-17T15:33:05.000Z",
+              "kind": "hard",
+              "image": "https://images.indianexpress.com/2026/11/quad-meet-pti.jpg",
+              "ogTried": true,
+              "descTried": true,
+              "summary": "Meeting in Manila on the sidelines of the East Asia Summit, President Trump, Prime Minister Narendra Modi, Japanese Prime Minister Sanae Takaichi and Australian Prime Minister Anthony Albanese announced a slew of initiatives.",
+              "summaryV": 3
+            }
+          ],
+          "finChecked": true,
+          "thread": "t1wgb87n"
         },
         {
           "id": "spaohii",
@@ -104729,14 +105885,14 @@
   "source": "BBC News & The Guardian & NPR & Al Jazeera & MercoPress & ABC News & The New York Times & CNBC & CBS News & DW & France 24 & Africanews & South China Morning Post & The Hindu & Mint & The Indian Express",
   "lastRun": {
     "filter": {
-      "judged": 42,
-      "kept": 5,
+      "judged": 121,
+      "kept": 12,
       "guarded": 0
     },
     "health": {
-      "day": "2026-11-17",
-      "newStories24h": 32,
-      "keepRate2d": 0.177
+      "day": "2026-11-18",
+      "newStories24h": 27,
+      "keepRate2d": 0.146
     },
     "wars": {
       "linked": 0,
@@ -104749,30 +105905,33 @@
       "waiting": 0
     },
     "skipped": {
-      "since": "2026-11-17T15:08:12.923Z",
+      "since": "2026-11-17T16:18:03.560Z",
       "counts": {
-        "section": 1
+        "section": 4
       },
       "examples": {
         "section": [
-          "Dr. Ambedkar’s ideas must reach Gen Z: Economist Dr. Narendra Jadhav"
+          "India needs a comprehensive doctrine on space security",
+          "Transgender rights, healthcare should not be compromised",
+          "Elusive peace: On Kashmir terror attack",
+          "All-too fallible: On India’s vote against moratorium on death penalty"
         ]
       }
     },
     "finance": {
       "moved": 0,
-      "checked": 2
+      "checked": 4
     },
-    "analysed": 42,
-    "added": 3,
-    "merged": 1,
-    "rejected": 38,
+    "analysed": 121,
+    "added": 7,
+    "merged": 3,
+    "rejected": 111,
     "failedBatches": 0,
     "feeds": {
       "thehindu": {
         "feedsOk": 6,
         "feedsFailed": 0,
-        "items": 347
+        "items": 344
       },
       "mint": {
         "feedsOk": 6,
@@ -104780,24 +105939,24 @@
         "items": 209
       },
       "indianexpress": {
-        "feedsOk": 0,
-        "feedsFailed": 4,
-        "items": 0
+        "feedsOk": 4,
+        "feedsFailed": 0,
+        "items": 800
       }
     },
     "shareImages": {
-      "tried": 0,
+      "tried": 4,
       "found": 0,
-      "summaries": 0
+      "summaries": 4
     },
     "threads": {
-      "assigned": 3,
-      "created": 2,
+      "assigned": 7,
+      "created": 5,
       "failedBatches": 0
     },
     "summaries": {
-      "written": 0,
-      "due": 7
+      "written": 9,
+      "due": 9
     },
     "kinds": {
       "labelled": 0,
@@ -104805,49 +105964,79 @@
       "failedBatches": 0
     },
     "frames": {
-      "done": 0,
-      "waiting": 3,
-      "failedBatches": 0,
-      "budgetStopped": true
+      "done": 5,
+      "waiting": 0,
+      "failedBatches": 0
     },
     "stats": {
-      "searched": 2,
+      "searched": 3,
       "found": 0,
-      "reused": 0,
-      "none": 0,
+      "reused": 2,
+      "none": 1,
       "failed": 0,
-      "proposed": 0,
-      "droppedPoints": 0,
-      "pagesFetched": 0,
-      "samples": [],
-      "budgetStopped": true
+      "proposed": 11,
+      "droppedPoints": 11,
+      "pagesFetched": 1,
+      "samples": [
+        {
+          "headline": "MEA condemns Hormuz attack on ship with 24 Indians onboard",
+          "result": "reused saved series"
+        },
+        {
+          "headline": "Union Budget 2027-28: FICCI seeks graded LTCG taxation, ₹100 lakh crore in credi",
+          "result": "no figure found on an official page",
+          "proposed": 11,
+          "checked": 0,
+          "pagesFetched": 1
+        },
+        {
+          "headline": "Stock markets climb in early trade on foreign fund inflows, fall in crude oil pr",
+          "result": "reused saved series"
+        }
+      ]
     },
     "models": {
       "filter": {
         "model": "claude-haiku-5-5",
-        "calls": 5,
-        "inputTokens": 18085,
-        "outputTokens": 7307,
-        "cost": 0.0054
+        "calls": 15,
+        "inputTokens": 61184,
+        "outputTokens": 19670,
+        "cost": 0.016
       },
       "analysis_quick": {
         "model": "claude-sonnet-5-5",
+        "calls": 6,
+        "inputTokens": 18490,
+        "outputTokens": 17312,
+        "cost": 0.2102
+      },
+      "stats": {
+        "model": "claude-sonnet-5-5",
+        "calls": 1,
+        "inputTokens": 423090,
+        "outputTokens": 2594,
+        "searches": 2,
+        "fetches": 2,
+        "cost": 0.8921
+      },
+      "analysis": {
+        "model": "claude-opus-5-5",
         "calls": 2,
-        "inputTokens": 6150,
-        "outputTokens": 7130,
-        "cost": 0.0836
+        "inputTokens": 8015,
+        "outputTokens": 12603,
+        "cost": 0.2841
       },
       "threads": {
         "model": "claude-sonnet-5-5",
-        "calls": 1,
-        "inputTokens": 9690,
-        "outputTokens": 92,
-        "cost": 0.0203
+        "calls": 10,
+        "inputTokens": 24377,
+        "outputTokens": 5327,
+        "cost": 0.1022
       }
     },
     "spend": {
-      "thisDesk": 0.1094,
-      "today": 5.4849,
+      "thisDesk": 1.5043,
+      "today": 2.6988,
       "cap": 6
     }
   },
