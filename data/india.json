@@ -2,12 +2,445 @@
   "schema": 4,
   "region": "India",
   "since": "2026-10-02",
-  "updatedAt": "2026-11-19T02:45:19.422Z",
+  "updatedAt": "2026-11-19T11:58:26.095Z",
   "sectors": [
     {
       "id": "energy",
       "name": "Energy",
       "items": [
+        {
+          "id": "s17j4rpr",
+          "headline": "Tankers hit in Strait of Hormuz as drone raises alarm at Iraq gas field",
+          "url": "https://www.aljazeera.com/news/2026/11/17/tankers-hit-in-strait-of-hormuz-as-drone-raises-alarm-at-iraq-gas-field",
+          "source": "aljazeera",
+          "date": "2026-11-17T03:12:54.000Z",
+          "relevance": "high",
+          "why": "Iran has reported mine strikes on tankers in the Strait of Hormuz. A drone alert at an Iraqi gas field and the arrival of a US aircraft carrier add to tensions. India depends on Gulf shipping for much of its energy.",
+          "implications": [
+            "If tanker traffic slows or shipping costs and insurance charges rise, Gulf crude and gas could become costlier to deliver, which may raise the import bills of Indian refiners.",
+            "Sustained higher import costs could feed through to petrol, diesel and cooking gas prices and add pressure on the rupee, though the extent depends on how long the disruption lasts."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-17T04:02:31.702Z",
+            "tier": "quick",
+            "primary": "disruption_map",
+            "complement": null,
+            "features": [
+              "disruption",
+              "armed_conflict",
+              "fast_moving"
+            ],
+            "exposure": {
+              "level": "high",
+              "reason": "Crude oil and gas shipped through the Strait of Hormuz supply Indian refiners and gas users, so a prolonged disruption could reach household fuel and cooking gas prices."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "The effect depends on whether shipping is actually disrupted and for how long, and fuel costs reach consumers only after refiners' import costs change."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single early Al Jazeera report relaying Iran's own claim of tanker mine strikes, which has not been independently confirmed."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "up",
+                "what": "Possible fuel price pressure",
+                "effect": "If Gulf supply routes are disrupted, costlier crude and gas imports could push up petrol, diesel and cooking gas prices over time.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Importers & traders",
+                "direction": "up",
+                "what": "Shipping and insurance costs",
+                "effect": "Continued attacks on vessels near the strait could raise freight and insurance charges for cargo moving between the Gulf and India.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Further attacks on tankers or any confirmation of the mine strikes by independent shipping or naval authorities",
+                "why": "It would show whether the incident is isolated or a lasting threat to traffic through the strait.",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "Movements in global crude oil prices after the tanker strikes and the arrival of the US aircraft carrier",
+                "why": "Price moves indicate how seriously markets judge the risk to Gulf supply and how much cost may reach India.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "India imports most of its crude oil, and a large share of that crude and of its liquefied natural gas comes from Gulf producers whose cargoes pass through the Strait of Hormuz.",
+              "Because the strait is a narrow passage for a large share of world oil trade, security incidents there usually move global oil prices quickly."
+            ],
+            "terms": [
+              {
+                "term": "mine strikes",
+                "meaning": "Explosions caused when a ship hits or triggers a naval mine, an explosive device placed in the water, which can damage vessels and disrupt shipping."
+              }
+            ],
+            "frameworks": {
+              "disruption_map": {
+                "node": {
+                  "name": "Strait of Hormuz",
+                  "type": "strait",
+                  "status": "unknown",
+                  "as_of": "17 Nov 2026"
+                },
+                "cause": {
+                  "text": "Iran has reported that mines struck tankers in the strait, and this claim has not been independently confirmed.",
+                  "status": "claimed"
+                },
+                "flows": [
+                  {
+                    "flow": "crude",
+                    "india_link": "Indian refiners receive a large share of their imported crude from Gulf producers whose tankers pass through the strait, so disruption could affect fuel supply costs.",
+                    "basis": "inferred"
+                  },
+                  {
+                    "flow": "LNG",
+                    "india_link": "India imports liquefied natural gas from Gulf suppliers by sea through the strait, which serves power, fertiliser and city gas users.",
+                    "basis": "inferred"
+                  }
+                ],
+                "alternatives": [],
+                "duration": "not reported"
+              }
+            }
+          },
+          "place": {
+            "name": "Strait of Hormuz",
+            "country": "Iran",
+            "lat": 26.6,
+            "lon": 56.3,
+            "involves": [
+              "United States",
+              "Iraq"
+            ]
+          },
+          "reports": [
+            {
+              "source": "aljazeera",
+              "headline": "Tankers hit in Strait of Hormuz as drone raises alarm at Iraq gas field",
+              "url": "https://www.aljazeera.com/news/2026/11/17/tankers-hit-in-strait-of-hormuz-as-drone-raises-alarm-at-iraq-gas-field",
+              "date": "2026-11-17T03:12:54.000Z",
+              "kind": "breaking",
+              "summary": "Iran reports tanker mine strikes as a drone alert in Iraq and the arrival of a US aircraft carrier raise tensions.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/getty_6af466ae1a-1794401966.jpg?resize=1920%2C1440"
+            },
+            {
+              "source": "nyt",
+              "headline": "Iran Keeps Up Unrelenting Attacks on Ships in the Strait of Hormuz",
+              "url": "https://www.nytimes.com/2026/11/19/business/iran-tanker-attack-strait-of-hormuz.html",
+              "date": "2026-11-19T11:45:10.000Z",
+              "kind": "hard",
+              "summary": "A recent strike on a ship that had already been disabled might signal a dangerous new phase for tankers operating in the Persian Gulf and surrounding waters.",
+              "summaryV": 3,
+              "image": "https://static01.nyt.com/images/2026/11/19/multimedia/19Biz-Iran-Attacks-phjw/19Biz-Iran-Attacks-phjw-mediumSquareAt3X.jpg"
+            }
+          ],
+          "stats": {
+            "v": 2,
+            "at": "2026-11-17T04:02:34.116Z",
+            "series": [
+              {
+                "title": "Crude oil and condensate through the Strait of Hormuz",
+                "unit": "million barrels per day",
+                "publisher": "U.S. Energy Information Administration",
+                "points": [
+                  {
+                    "period": "2020",
+                    "value": 14.4,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2021",
+                    "value": 14.7,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2022",
+                    "value": 16.2,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2023",
+                    "value": 15.8,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2024",
+                    "value": 14.6,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "1H25",
+                    "value": 14.7,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "title": "eia.gov",
+                    "domain": "eia.gov"
+                  }
+                ],
+                "domains": [
+                  "eia.gov"
+                ],
+                "dropped": 0,
+                "why": "Both series directly measure oil flows through the Strait of Hormuz, the chokepoint where the story reports tanker strikes and shipping disruption.",
+                "reused": true,
+                "checkedAt": "2026-10-13T23:16:50.395Z"
+              },
+              {
+                "title": "Oil flows through the Strait of Hormuz, total",
+                "unit": "million barrels per day",
+                "publisher": "U.S. Energy Information Administration",
+                "points": [
+                  {
+                    "period": "2020",
+                    "value": 19.2,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2021",
+                    "value": 19.7,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2022",
+                    "value": 21.9,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2023",
+                    "value": 21.8,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2024",
+                    "value": 20.7,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "1H25",
+                    "value": 20.9,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "title": "eia.gov",
+                    "domain": "eia.gov"
+                  }
+                ],
+                "domains": [
+                  "eia.gov"
+                ],
+                "dropped": 0,
+                "why": "Both series directly measure oil flows through the Strait of Hormuz, the chokepoint where the story reports tanker strikes and shipping disruption.",
+                "reused": true,
+                "checkedAt": "2026-10-13T23:16:50.395Z"
+              }
+            ]
+          },
+          "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/getty_6af466ae1a-1794401966.jpg?resize=1920%2C1440",
+          "thread": "t2ogxay"
+        },
+        {
+          "id": "s1u1vhl6",
+          "headline": "Data center electricity use could double by 2030, IEA says",
+          "url": "https://www.cnbc.com/2026/11/19/data-center-electricity-demand-iea.html",
+          "source": "cnbc",
+          "date": "2026-11-19T11:34:24.000Z",
+          "relevance": "medium",
+          "why": "The International Energy Agency (IEA) says global electricity use by data centres could double by 2030 as the artificial intelligence boom strains power grids. India, a growing data centre market, may face similar demand pressure.",
+          "implications": [
+            "If data centre demand grows in India as it is projected to globally, state utilities and grid operators may need to add generation and transmission capacity in the regions where these facilities cluster.",
+            "Whether that extra demand is met by coal or by cleaner sources would shape emissions and the cost of supply for other power users."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-19T11:57:49.473Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "low",
+              "reason": "The report gives a global projection and no India-specific mechanism. Any effect would be indirect, through India's own data centre growth and the power grids that serve it."
+            },
+            "horizon": {
+              "value": "years",
+              "reason": "The projection runs to 2030, so any strain on grids would build gradually rather than being felt within weeks."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "This rests on a single CNBC report citing the IEA, and it describes a projection with a conditional 'could' rather than a confirmed outcome."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Power consumers",
+                "direction": "unclear",
+                "what": "grid demand and supply costs",
+                "effect": "Rising data centre demand could add pressure on electricity grids serving Indian cities, with consequences for supply reliability and costs that depend on how new capacity is built.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Further IEA analysis of how data centre demand is growing in individual countries, including India",
+                "why": "It would show whether the global projection translates into significant additional load on India's grids.",
+                "when": "",
+                "where": "International Energy Agency"
+              }
+            ],
+            "context": [
+              "Data centres run around the clock and need steady, reliable power for computing and cooling, so they are large and concentrated users of electricity.",
+              "India's electricity system still depends heavily on coal, so new large loads raise questions about generation capacity and emissions."
+            ],
+            "terms": [
+              {
+                "term": "IEA",
+                "meaning": "The International Energy Agency is an intergovernmental body that analyses global energy markets and publishes widely cited forecasts on oil, gas and electricity demand."
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "IEA projects data centre power use doubling",
+                    "detail": "The IEA says global electricity use by data centres could double by 2030. This sets the scale of new demand that power systems around the world may have to absorb.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "AI boom strains grids worldwide",
+                    "detail": "The growth of artificial intelligence is adding pressure to power grids across the world. Countries hosting data centres must find extra supply to keep them running.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Indian grids may see added demand",
+                    "detail": "India could see similar growth in electricity demand where data centres are built, which may require new generation and transmission capacity and affect supply costs for other users.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "Efficiency gains or a slower build-out of AI infrastructure keep data centre demand below the projection, or India adds supply fast enough that other power users are unaffected."
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "cnbc",
+              "headline": "Data center electricity use could double by 2030, IEA says",
+              "url": "https://www.cnbc.com/2026/11/19/data-center-electricity-demand-iea.html",
+              "date": "2026-11-19T11:34:24.000Z",
+              "kind": "hard",
+              "summary": "Global electricity use by data centers could double by 2030 as the AI boom adds pressure to power grids across the world, according to the IEA.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://image.cnbcfm.com/api/v1/image/108554983-1795077775639-gettyimages-2256322513-dji_20260114174803_0111_d_fs0a4xfd.jpeg?v=1795077817&w=1920&h=1080"
+            }
+          ],
+          "placeTried": true,
+          "image": "https://image.cnbcfm.com/api/v1/image/108554983-1795077775639-gettyimages-2256322513-dji_20260114174803_0111_d_fs0a4xfd.jpeg?v=1795077817&w=1920&h=1080",
+          "thread": "t1empd5t"
+        },
+        {
+          "id": "s1qinshp",
+          "headline": "How the War in Iran Will Remake the Global Energy Order",
+          "url": "https://www.nytimes.com/2026/11/19/business/cop31-energy-iea.html",
+          "source": "nyt",
+          "date": "2026-11-19T10:27:38.000Z",
+          "relevance": "medium",
+          "image": "https://static01.nyt.com/images/2026/11/19/multimedia/19biz-iea-energy-01-mgtf/19biz-iea-energy-01-mgtf-mediumSquareAt3X.jpg",
+          "why": "",
+          "implications": [],
+          "reports": [
+            {
+              "source": "nyt",
+              "headline": "How the War in Iran Will Remake the Global Energy Order",
+              "url": "https://www.nytimes.com/2026/11/19/business/cop31-energy-iea.html",
+              "date": "2026-11-19T10:27:38.000Z",
+              "kind": "feature",
+              "summary": "The International Energy Agency, in its most comprehensive analysis of the war’s fallout, found the oil shock could accelerate adoption of alternative power sources.",
+              "summaryV": 3,
+              "image": "https://static01.nyt.com/images/2026/11/19/multimedia/19biz-iea-energy-01-mgtf/19biz-iea-energy-01-mgtf-mediumSquareAt3X.jpg"
+            }
+          ],
+          "place": {
+            "name": "Tehran",
+            "country": "Iran",
+            "lat": 35.69,
+            "lon": 51.39,
+            "involves": [
+              "United States",
+              "Israel"
+            ]
+          },
+          "thread": "t1l2p2ng"
+        },
+        {
+          "id": "s1j1acvp",
+          "headline": "Iran balances ties with China and Russia as Trump ramps up pressure",
+          "url": "https://www.dw.com/en/iran-balances-ties-with-china-and-russia-as-trump-ramps-up-pressure/a-79979920",
+          "source": "dw",
+          "date": "2026-11-19T09:07:00.000Z",
+          "relevance": "medium",
+          "why": "",
+          "implications": [],
+          "place": {
+            "name": "Tehran",
+            "country": "Iran",
+            "lat": 35.69,
+            "lon": 51.42,
+            "involves": [
+              "China",
+              "Russia",
+              "United States"
+            ]
+          },
+          "reports": [
+            {
+              "source": "dw",
+              "headline": "Iran balances ties with China and Russia as Trump ramps up pressure",
+              "url": "https://www.dw.com/en/iran-balances-ties-with-china-and-russia-as-trump-ramps-up-pressure/a-79979920",
+              "date": "2026-11-19T09:07:00.000Z",
+              "kind": "feature",
+              "summary": "As Donald Trump seeks to tighten economic pressure on Iran, China remains its biggest oil customer and Russia a key partner. But both powers are balancing support for Tehran against broader interests with Washington.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://static.dw.com/image/79988014_6.jpg"
+            }
+          ],
+          "image": "https://static.dw.com/image/79988014_6.jpg",
+          "thread": "txcoami"
+        },
         {
           "id": "s1kaskzl",
           "headline": "Kuwait reports drone attacks as Iran, US trade attacks on Qeshm and Bahrain",
@@ -1437,258 +1870,6 @@
               }
             ]
           }
-        },
-        {
-          "id": "s17j4rpr",
-          "headline": "Tankers hit in Strait of Hormuz as drone raises alarm at Iraq gas field",
-          "url": "https://www.aljazeera.com/news/2026/11/17/tankers-hit-in-strait-of-hormuz-as-drone-raises-alarm-at-iraq-gas-field",
-          "source": "aljazeera",
-          "date": "2026-11-17T03:12:54.000Z",
-          "relevance": "high",
-          "why": "Iran has reported mine strikes on tankers in the Strait of Hormuz. A drone alert at an Iraqi gas field and the arrival of a US aircraft carrier add to tensions. India depends on Gulf shipping for much of its energy.",
-          "implications": [
-            "If tanker traffic slows or shipping costs and insurance charges rise, Gulf crude and gas could become costlier to deliver, which may raise the import bills of Indian refiners.",
-            "Sustained higher import costs could feed through to petrol, diesel and cooking gas prices and add pressure on the rupee, though the extent depends on how long the disruption lasts."
-          ],
-          "analysis": {
-            "v": 3,
-            "at": "2026-11-17T04:02:31.702Z",
-            "tier": "quick",
-            "primary": "disruption_map",
-            "complement": null,
-            "features": [
-              "disruption",
-              "armed_conflict",
-              "fast_moving"
-            ],
-            "exposure": {
-              "level": "high",
-              "reason": "Crude oil and gas shipped through the Strait of Hormuz supply Indian refiners and gas users, so a prolonged disruption could reach household fuel and cooking gas prices."
-            },
-            "horizon": {
-              "value": "weeks",
-              "reason": "The effect depends on whether shipping is actually disrupted and for how long, and fuel costs reach consumers only after refiners' import costs change."
-            },
-            "confidence": {
-              "level": "low",
-              "reason": "This rests on a single early Al Jazeera report relaying Iran's own claim of tanker mine strikes, which has not been independently confirmed."
-            },
-            "outlets": 1,
-            "affected": [
-              {
-                "group": "Fuel & LPG users",
-                "direction": "up",
-                "what": "Possible fuel price pressure",
-                "effect": "If Gulf supply routes are disrupted, costlier crude and gas imports could push up petrol, diesel and cooking gas prices over time.",
-                "basis": "inferred"
-              },
-              {
-                "group": "Importers & traders",
-                "direction": "up",
-                "what": "Shipping and insurance costs",
-                "effect": "Continued attacks on vessels near the strait could raise freight and insurance charges for cargo moving between the Gulf and India.",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "Further attacks on tankers or any confirmation of the mine strikes by independent shipping or naval authorities",
-                "why": "It would show whether the incident is isolated or a lasting threat to traffic through the strait.",
-                "when": "",
-                "where": ""
-              },
-              {
-                "what": "Movements in global crude oil prices after the tanker strikes and the arrival of the US aircraft carrier",
-                "why": "Price moves indicate how seriously markets judge the risk to Gulf supply and how much cost may reach India.",
-                "when": "",
-                "where": ""
-              }
-            ],
-            "context": [
-              "India imports most of its crude oil, and a large share of that crude and of its liquefied natural gas comes from Gulf producers whose cargoes pass through the Strait of Hormuz.",
-              "Because the strait is a narrow passage for a large share of world oil trade, security incidents there usually move global oil prices quickly."
-            ],
-            "terms": [
-              {
-                "term": "mine strikes",
-                "meaning": "Explosions caused when a ship hits or triggers a naval mine, an explosive device placed in the water, which can damage vessels and disrupt shipping."
-              }
-            ],
-            "frameworks": {
-              "disruption_map": {
-                "node": {
-                  "name": "Strait of Hormuz",
-                  "type": "strait",
-                  "status": "unknown",
-                  "as_of": "17 Nov 2026"
-                },
-                "cause": {
-                  "text": "Iran has reported that mines struck tankers in the strait, and this claim has not been independently confirmed.",
-                  "status": "claimed"
-                },
-                "flows": [
-                  {
-                    "flow": "crude",
-                    "india_link": "Indian refiners receive a large share of their imported crude from Gulf producers whose tankers pass through the strait, so disruption could affect fuel supply costs.",
-                    "basis": "inferred"
-                  },
-                  {
-                    "flow": "LNG",
-                    "india_link": "India imports liquefied natural gas from Gulf suppliers by sea through the strait, which serves power, fertiliser and city gas users.",
-                    "basis": "inferred"
-                  }
-                ],
-                "alternatives": [],
-                "duration": "not reported"
-              }
-            }
-          },
-          "place": {
-            "name": "Strait of Hormuz",
-            "country": "Iran",
-            "lat": 26.6,
-            "lon": 56.3,
-            "involves": [
-              "United States",
-              "Iraq"
-            ]
-          },
-          "reports": [
-            {
-              "source": "aljazeera",
-              "headline": "Tankers hit in Strait of Hormuz as drone raises alarm at Iraq gas field",
-              "url": "https://www.aljazeera.com/news/2026/11/17/tankers-hit-in-strait-of-hormuz-as-drone-raises-alarm-at-iraq-gas-field",
-              "date": "2026-11-17T03:12:54.000Z",
-              "kind": "breaking",
-              "summary": "Iran reports tanker mine strikes as a drone alert in Iraq and the arrival of a US aircraft carrier raise tensions.",
-              "summaryV": 3,
-              "ogTried": true,
-              "descTried": true,
-              "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/getty_6af466ae1a-1794401966.jpg?resize=1920%2C1440"
-            }
-          ],
-          "stats": {
-            "v": 2,
-            "at": "2026-11-17T04:02:34.116Z",
-            "series": [
-              {
-                "title": "Crude oil and condensate through the Strait of Hormuz",
-                "unit": "million barrels per day",
-                "publisher": "U.S. Energy Information Administration",
-                "points": [
-                  {
-                    "period": "2020",
-                    "value": 14.4,
-                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-                    "source": "eia.gov"
-                  },
-                  {
-                    "period": "2021",
-                    "value": 14.7,
-                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-                    "source": "eia.gov"
-                  },
-                  {
-                    "period": "2022",
-                    "value": 16.2,
-                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-                    "source": "eia.gov"
-                  },
-                  {
-                    "period": "2023",
-                    "value": 15.8,
-                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-                    "source": "eia.gov"
-                  },
-                  {
-                    "period": "2024",
-                    "value": 14.6,
-                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-                    "source": "eia.gov"
-                  },
-                  {
-                    "period": "1H25",
-                    "value": 14.7,
-                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-                    "source": "eia.gov"
-                  }
-                ],
-                "sources": [
-                  {
-                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-                    "title": "eia.gov",
-                    "domain": "eia.gov"
-                  }
-                ],
-                "domains": [
-                  "eia.gov"
-                ],
-                "dropped": 0,
-                "why": "Both series directly measure oil flows through the Strait of Hormuz, the chokepoint where the story reports tanker strikes and shipping disruption.",
-                "reused": true,
-                "checkedAt": "2026-10-13T23:16:50.395Z"
-              },
-              {
-                "title": "Oil flows through the Strait of Hormuz, total",
-                "unit": "million barrels per day",
-                "publisher": "U.S. Energy Information Administration",
-                "points": [
-                  {
-                    "period": "2020",
-                    "value": 19.2,
-                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-                    "source": "eia.gov"
-                  },
-                  {
-                    "period": "2021",
-                    "value": 19.7,
-                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-                    "source": "eia.gov"
-                  },
-                  {
-                    "period": "2022",
-                    "value": 21.9,
-                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-                    "source": "eia.gov"
-                  },
-                  {
-                    "period": "2023",
-                    "value": 21.8,
-                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-                    "source": "eia.gov"
-                  },
-                  {
-                    "period": "2024",
-                    "value": 20.7,
-                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-                    "source": "eia.gov"
-                  },
-                  {
-                    "period": "1H25",
-                    "value": 20.9,
-                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-                    "source": "eia.gov"
-                  }
-                ],
-                "sources": [
-                  {
-                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-                    "title": "eia.gov",
-                    "domain": "eia.gov"
-                  }
-                ],
-                "domains": [
-                  "eia.gov"
-                ],
-                "dropped": 0,
-                "why": "Both series directly measure oil flows through the Strait of Hormuz, the chokepoint where the story reports tanker strikes and shipping disruption.",
-                "reused": true,
-                "checkedAt": "2026-10-13T23:16:50.395Z"
-              }
-            ]
-          },
-          "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/getty_6af466ae1a-1794401966.jpg?resize=1920%2C1440",
-          "thread": "t2ogxay"
         },
         {
           "id": "s11kycw2",
@@ -35133,6 +35314,192 @@
       "name": "Logistics & Shipping",
       "items": [
         {
+          "id": "syzk8oc",
+          "headline": "‘Too early’ to determine impact of US blockade on Iran, with Tehran defiant",
+          "url": "https://www.aljazeera.com/economy/2026/11/19/too-early-to-determine-impact-of-us-siege-on-iran-with-tehran-defiant",
+          "source": "aljazeera",
+          "date": "2026-11-19T07:08:57.000Z",
+          "relevance": "medium",
+          "why": "The United States is blockading Iranian ports, and Al Jazeera reports that this is badly hurting Iran's economy while Tehran says it can cope. India's trade with Iran and Gulf shipping conditions could be affected.",
+          "implications": [
+            "Indian exporters who sell goods to Iran may find shipments delayed, rerouted or stopped if vessels cannot call at blockaded Iranian ports.",
+            "If the blockade widens tensions in Gulf waters, shipping insurance and freight costs for Indian cargo in the region could rise."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-19T11:56:17.090Z",
+            "tier": "quick",
+            "primary": "disruption_map",
+            "complement": null,
+            "features": [
+              "disruption",
+              "armed_conflict"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The main channel is India's bilateral trade with Iran and the safety of shipping in Gulf waters. No direct effect on fuel prices or household essentials has been reported."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "The impact is described as too early to judge, so any effect on Indian trade or shipping costs would depend on how long the blockade lasts."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single Al Jazeera report, and the extent of the blockade and its real economic effect remain unconfirmed."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Importers & traders",
+                "direction": "down",
+                "what": "trade with Iran",
+                "effect": "Indian traders who ship goods to or from Iran may face delays or halted cargo if Iranian ports are blocked.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "fuel price pressure",
+                "effect": "If the blockade unsettles Gulf shipping and oil markets, crude prices could shift, which may eventually reach petrol and diesel prices in India.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Any announcement of an end, easing or widening of the US blockade of Iranian ports",
+                "why": "It would show whether trade and shipping through the Gulf are likely to stay disrupted.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "A naval blockade stops ships from entering or leaving a country's ports, and it is usually meant to choke off trade and revenue. India has long traded with Iran in food items and other goods, and imports most of its crude oil, much of it from the Gulf region."
+            ],
+            "terms": [
+              {
+                "term": "blockade",
+                "meaning": "A blockade is the use of naval forces to prevent ships from entering or leaving a country's ports, usually to cut its trade and income."
+              }
+            ],
+            "frameworks": {
+              "disruption_map": {
+                "node": {
+                  "name": "Iranian ports",
+                  "type": "port",
+                  "status": "partial",
+                  "as_of": "19 Nov 2026"
+                },
+                "cause": {
+                  "text": "The United States is enforcing a blockade of Iranian ports, which is reported to be seriously damaging Iran's economy.",
+                  "status": "confirmed"
+                },
+                "flows": [
+                  {
+                    "flow": "cargo",
+                    "india_link": "India has long exported goods such as food items to Iran by sea, so Indian exporters and traders could be hit if ships cannot reach Iranian ports.",
+                    "basis": "inferred"
+                  },
+                  {
+                    "flow": "crude",
+                    "india_link": "Iranian oil exports are tied to Gulf shipping, and India relies heavily on imported crude, so wider disruption in the region could affect the oil prices Indian refiners pay.",
+                    "basis": "inferred"
+                  }
+                ],
+                "alternatives": [],
+                "duration": "not reported"
+              }
+            }
+          },
+          "place": {
+            "name": "Bandar Abbas",
+            "country": "Iran",
+            "lat": 27.18,
+            "lon": 56.27,
+            "involves": [
+              "United States"
+            ]
+          },
+          "reports": [
+            {
+              "source": "aljazeera",
+              "headline": "‘Too early’ to determine impact of US blockade on Iran, with Tehran defiant",
+              "url": "https://www.aljazeera.com/economy/2026/11/19/too-early-to-determine-impact-of-us-siege-on-iran-with-tehran-defiant",
+              "date": "2026-11-19T07:08:57.000Z",
+              "kind": "hard",
+              "summary": "The US blockade of Iranian ports has a crippling effect on the economy, but Tehran insists its economy can survive.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/epa_6afcd08a8f84-1794953354.jpg?resize=1920%2C1440"
+            }
+          ],
+          "stats": {
+            "v": 2,
+            "at": "2026-11-19T11:57:54.734Z",
+            "series": [
+              {
+                "title": "Crude oil and condensate through the Strait of Hormuz",
+                "unit": "million barrels per day",
+                "publisher": "U.S. Energy Information Administration",
+                "points": [
+                  {
+                    "period": "2020",
+                    "value": 14.4,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2021",
+                    "value": 14.7,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2022",
+                    "value": 16.2,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2023",
+                    "value": 15.8,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2024",
+                    "value": 14.6,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "1H25",
+                    "value": 14.7,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "title": "eia.gov",
+                    "domain": "eia.gov"
+                  }
+                ],
+                "domains": [
+                  "eia.gov"
+                ],
+                "dropped": 0,
+                "why": "Monthly-style flows of crude oil through the Strait of Hormuz track the Gulf shipping conditions that the blockade of Iranian ports is affecting, though the series covers all Gulf exporters rather tha",
+                "reused": true,
+                "checkedAt": "2026-10-13T23:16:50.395Z"
+              }
+            ]
+          },
+          "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/epa_6afcd08a8f84-1794953354.jpg?resize=1920%2C1440",
+          "thread": "tevcnqh"
+        },
+        {
           "id": "s1mbr5a5",
           "headline": "US panel urges Congress to punish China over Panama-flagged ship detentions",
           "url": "https://www.scmp.com/news/us/article/3374807/us-panel-urges-congress-punish-china-over-panama-flagged-ship-detentions",
@@ -43078,6 +43445,269 @@
       "id": "economy",
       "name": "Economy & Trade",
       "items": [
+        {
+          "id": "s1p2hql4",
+          "headline": "Skyscraper in Riyadh damaged as Saudi Arabia reports surge in new Houthi attacks",
+          "url": "https://www.france24.com/en/middle-east/20261119-skyscraper-in-riyadh-damaged-as-saudi-arabia-reports-surge-in-new-houthi-attacks",
+          "source": "france24",
+          "date": "2026-11-19T07:58:16.000Z",
+          "relevance": "medium",
+          "image": "https://s.france24.com/media/display/889a1214-e3ee-11f1-801f-6d75ed565170/w:1024/p:16x9/000-A6BN49E.jpg",
+          "why": "Saudi Arabia reports a surge in new attacks by Yemen's Houthis, and a skyscraper in Riyadh was damaged. India has many workers in Saudi Arabia and relies on Gulf crude supplies.",
+          "implications": [
+            "Indian families who depend on money sent home by relatives working in Saudi Arabia could be affected if the attacks threaten workplaces, safety or jobs.",
+            "If attacks spread to Saudi energy or shipping facilities, crude supplies and prices could be affected, which would matter for Indian refiners and fuel prices."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-19T11:56:17.091Z",
+            "tier": "quick",
+            "primary": "disruption_map",
+            "complement": null,
+            "features": [
+              "disruption",
+              "armed_conflict"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The channels are the safety and remittances of Indian workers in Saudi Arabia and possible effects on crude supply. No harm to Indians or oil facilities has been reported."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Effects on Indian workers or oil markets would depend on whether the attacks continue or spread beyond this latest surge."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single France 24 report that relays Saudi claims and witness accounts, and the scale of the attacks is unconfirmed."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Gulf & overseas workers and families",
+                "direction": "unclear",
+                "what": "safety and remittances",
+                "effect": "Indians working in Saudi Arabia could face greater safety risks, and families at home may be affected if jobs or earnings are disrupted.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "crude supply risk",
+                "effect": "Attacks that disturbed Saudi oil output or exports could lift crude prices, which may eventually feed through to fuel costs in India.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Further Houthi attacks on Saudi cities or energy and shipping facilities",
+                "why": "Repeated or wider attacks would raise risks for Indian workers and for Gulf oil supplies.",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "Any travel or safety advisory for Indians in Saudi Arabia",
+                "why": "It would signal how seriously Indian authorities view the risk to the diaspora.",
+                "when": "",
+                "where": "Ministry of External Affairs"
+              }
+            ],
+            "context": [
+              "Saudi Arabia is one of India's main suppliers of crude oil, and a very large number of Indians live and work there. Instability in the Gulf therefore tends to reach India through energy prices and the safety of its diaspora."
+            ],
+            "terms": [
+              {
+                "term": "Houthis",
+                "meaning": "The Houthis are an armed movement based in Yemen that controls much of the country and has carried out attacks on Saudi Arabia."
+              }
+            ],
+            "frameworks": {
+              "disruption_map": {
+                "node": {
+                  "name": "Public Investment Fund Tower, Riyadh",
+                  "type": "other",
+                  "status": "unknown",
+                  "as_of": "19 Nov 2026"
+                },
+                "cause": {
+                  "text": "Saudi Arabia reports new attacks by Yemen's Houthis, and witnesses said the tower was damaged across several floors with windows blown out.",
+                  "status": "claimed"
+                },
+                "flows": [
+                  {
+                    "flow": "workers",
+                    "india_link": "Many Indians work in Saudi Arabia and send money home, so attacks on its cities could affect their safety and their families' income.",
+                    "basis": "inferred"
+                  },
+                  {
+                    "flow": "crude",
+                    "india_link": "Saudi Arabia supplies a large share of India's imported crude, so attacks on the kingdom could matter to Indian refiners if oil facilities were targeted.",
+                    "basis": "inferred"
+                  }
+                ],
+                "alternatives": [],
+                "duration": "not reported"
+              }
+            }
+          },
+          "place": {
+            "name": "Riyadh",
+            "country": "Saudi Arabia",
+            "lat": 24.71,
+            "lon": 46.68,
+            "involves": [
+              "Yemen"
+            ]
+          },
+          "reports": [
+            {
+              "source": "france24",
+              "headline": "Skyscraper in Riyadh damaged as Saudi Arabia reports surge in new Houthi attacks",
+              "url": "https://www.france24.com/en/middle-east/20261119-skyscraper-in-riyadh-damaged-as-saudi-arabia-reports-surge-in-new-houthi-attacks",
+              "date": "2026-11-19T07:58:16.000Z",
+              "kind": "hard",
+              "summary": "A skyscraper in Saudi Arabia's capital Riyadh was damaged on Thursday after the Gulf country reported new attacks by Yemen's Houthis. Witnesses said the city's Public Investment Fund Tower, which showcases Saudi Arabia's economic ambitions, was \"damaged across several floors, with windows blown out\".",
+              "summaryV": 3,
+              "image": "https://s.france24.com/media/display/889a1214-e3ee-11f1-801f-6d75ed565170/w:1024/p:16x9/000-A6BN49E.jpg"
+            },
+            {
+              "source": "aljazeera",
+              "headline": "Saudi-led coalition intercepts Houthi missiles targeting Riyadh and south",
+              "url": "https://www.aljazeera.com/news/2026/11/19/saudi-led-coalition-intercepts-houthi-missiles-targeting-riyadh-and-south",
+              "date": "2026-11-19T08:19:17.000Z",
+              "kind": "breaking",
+              "summary": "Material damage was reported after ​debris fell following the latest Houthi strikes launched towards Saudi Arabia.",
+              "summaryV": 3
+            }
+          ],
+          "finChecked": true,
+          "thread": "tq5ix5r"
+        },
+        {
+          "id": "s1uvzq59",
+          "headline": "Far from Trump-Putin meeting, Europe to count cost of Ukraine’s defence",
+          "url": "https://www.aljazeera.com/news/2026/11/19/far-from-trump-putin-meeting-europe-to-count-cost-of-ukraines-defence",
+          "source": "aljazeera",
+          "date": "2026-11-19T04:58:36.000Z",
+          "relevance": "medium",
+          "why": "European leaders are due to meet in Berlin to weigh how to cover a 25 billion-euro ($27.4bn) Ukrainian financing gap next year. The outcome shapes how long Ukraine can keep fighting a war that affects India's oil and trade.",
+          "implications": [
+            "If the gap is only partly covered, Ukraine's ability to defend itself and repair its power network could weaken. That could lengthen a war that already disrupts energy and commodity markets.",
+            "Europe's rising spending on Ukraine's defence may strain European public budgets. This could, over time, affect European demand for goods and services that Indian exporters sell."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-19T11:54:37.781Z",
+            "tier": "quick",
+            "primary": "escalation",
+            "complement": null,
+            "features": [
+              "armed_conflict",
+              "allocation",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "The story concerns European financing for Ukraine. Any effect on India would be indirect, through the length of the war, energy prices or European demand, and none of these is described in the report."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "The gap concerns next year's budget, so any effect on the war's course or on India would take months to appear."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single Al Jazeera summary with no named official source, and the size of the gap and the meeting's outcome are unconfirmed."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "fuel price pressure",
+                "effect": "A longer war with continued strikes on energy sites could keep global oil prices unsettled, which may feed into petrol, diesel and LPG costs in India.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Large exporters",
+                "direction": "unclear",
+                "what": "European demand",
+                "effect": "Heavier European spending on Ukraine's defence could squeeze European budgets and may influence demand for Indian goods and services.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "The outcome of the Berlin meeting of European leaders on financing Ukraine's 25 billion-euro gap",
+                "why": "It would show whether Europe is prepared to cover Ukraine's needs and so sustain its war effort.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "India imports most of the crude oil it uses, so attacks on energy infrastructure in the war can influence global fuel prices and, through them, costs in India.",
+              "Europe is one of India's largest trading partners, so changes in European budgets and growth can reach Indian exporters."
+            ],
+            "terms": [
+              {
+                "term": "financing gap",
+                "meaning": "The difference between the money a government needs to meet its spending and the money it can raise or has been promised."
+              }
+            ],
+            "frameworks": {
+              "escalation": {
+                "move": "none",
+                "rung": 6,
+                "current_rung": 6,
+                "previous_rung": null,
+                "development": "European leaders are preparing to meet in Berlin to discuss funding for Ukraine's defence, which is a financial and diplomatic step and not a military action.",
+                "evidence": "No new attack, deployment or ceasefire is reported. The war stays at rung 6 because Russia and Ukraine were already trading strikes on each other's power infrastructure.",
+                "next_signals": [
+                  {
+                    "rung": 7,
+                    "signal": "Russia or Ukraine declares a general mobilisation, or Russian forces and those of a European state fight each other directly."
+                  },
+                  {
+                    "rung": 5,
+                    "signal": "Both sides stop striking power infrastructure and oil depots, and a renewed energy ceasefire is announced and holds."
+                  }
+                ],
+                "india_channels": [
+                  "oil",
+                  "trade"
+                ],
+                "conflict": "wzti51f",
+                "applied": "none",
+                "from": 6
+              }
+            }
+          },
+          "conflict": "wzti51f",
+          "place": {
+            "name": "Berlin",
+            "country": "Germany",
+            "lat": 52.52,
+            "lon": 13.41,
+            "involves": [
+              "Ukraine"
+            ]
+          },
+          "reports": [
+            {
+              "source": "aljazeera",
+              "headline": "Far from Trump-Putin meeting, Europe to count cost of Ukraine’s defence",
+              "url": "https://www.aljazeera.com/news/2026/11/19/far-from-trump-putin-meeting-europe-to-count-cost-of-ukraines-defence",
+              "date": "2026-11-19T04:58:36.000Z",
+              "kind": "hard",
+              "summary": "European leaders set to meet in Berlin as Kyiv faces a 25 billion-euro ($27.4bn) financing gap next year.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/afp_6aea00fc614b-1793720572_7d4393-1795058540.jpg?resize=1200%2C630&quality=80"
+            }
+          ],
+          "finChecked": true,
+          "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/afp_6aea00fc614b-1793720572_7d4393-1795058540.jpg?resize=1200%2C630&quality=80",
+          "thread": "t115s79t"
+        },
         {
           "id": "sga29ao",
           "headline": "Xi Jinping calls for global cooperation on AI and free trade at APEC summit",
@@ -67091,6 +67721,208 @@
       "name": "Technology",
       "items": [
         {
+          "id": "scwbdcq",
+          "headline": "Southeast Asia’s data center boom leaned on Chinese demand. New U.S. rules put that pipeline at risk",
+          "url": "https://www.cnbc.com/2026/11/18/nvidia-us-ai-chip-export-controls-data-centers-.html",
+          "source": "cnbc",
+          "date": "2026-11-18T08:09:43.000Z",
+          "relevance": "medium",
+          "why": "New U.S. rules require data centres in Southeast Asia to get U.S. approval to buy advanced AI chips, which could slow a build-out fuelled by Chinese demand. India may feel this as a rival data centre location.",
+          "implications": [
+            "If Southeast Asian projects slow, some data centre investment could shift to other markets such as India, though no such shift has been reported.",
+            "Indian firms buying advanced AI chips could face similar hurdles if comparable conditions were extended to them, but the rules as reported cover Southeast Asian data centres only."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-18T11:58:42.969Z",
+            "tier": "quick",
+            "primary": "trade_flow",
+            "complement": null,
+            "features": [
+              "trade_flow"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "The reported channel runs through Southeast Asian data centres and Chinese demand. It has no direct link to Indian households or a top Indian import, so any effect on India would be indirect, through competition for investment."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Data centre projects take months to plan and build, so any change in where investment goes would appear gradually rather than within weeks."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single CNBC report with no named official source in the material available, and the detailed terms of the rules are unconfirmed."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "IT & services workers",
+                "direction": "unclear",
+                "what": "data centre investment and jobs",
+                "effect": "Investment diverted from Southeast Asia could add to demand for data centre facilities and related technology work in India, though any such shift is unconfirmed.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Whether the U.S. extends similar approval requirements for advanced AI chips to other countries, including India",
+                "why": "It would show whether Indian data centre operators and cloud firms face the same hurdles as Southeast Asian buyers.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "The United States restricts exports of the most advanced AI chips to China, and Washington has long worried that such chips could reach Chinese users through third countries.",
+              "India is competing to attract data centre investment, supported by its large base of internet users and growing demand for cloud services."
+            ],
+            "terms": [
+              {
+                "term": "advanced AI chips",
+                "meaning": "Powerful processors, mostly designed by U.S. companies, that are used to train and run artificial intelligence systems inside data centres."
+              }
+            ],
+            "frameworks": {
+              "trade_flow": {
+                "good": "Advanced AI chips",
+                "actors": [
+                  {
+                    "country": "United States",
+                    "role": "exporter",
+                    "is_india": false
+                  },
+                  {
+                    "country": "Southeast Asian countries",
+                    "role": "importer",
+                    "is_india": false
+                  },
+                  {
+                    "country": "China",
+                    "role": "third_party",
+                    "is_india": false
+                  },
+                  {
+                    "country": "India",
+                    "role": "third_party",
+                    "is_india": true
+                  }
+                ],
+                "change": {
+                  "type": "other",
+                  "effective": ""
+                },
+                "india_position": {
+                  "role": "not_involved",
+                  "note": "India is not named in the rules as reported. It could compete with Southeast Asia for data centre investment and for the same advanced chips, though the effect on Indian buyers or sellers is not known."
+                },
+                "volumes": []
+              }
+            }
+          },
+          "place": {
+            "name": "Washington",
+            "country": "United States",
+            "lat": 38.9,
+            "lon": -77,
+            "involves": [
+              "Malaysia",
+              "Singapore"
+            ]
+          },
+          "reports": [
+            {
+              "source": "cnbc",
+              "headline": "Southeast Asia’s data center boom leaned on Chinese demand. New U.S. rules put that pipeline at risk",
+              "url": "https://www.cnbc.com/2026/11/18/nvidia-us-ai-chip-export-controls-data-centers-.html",
+              "date": "2026-11-18T08:09:43.000Z",
+              "kind": "hard",
+              "summary": "The rules require data centers in Southeast Asia to seek U.S. approval to buy advanced AI chips, threatening to slow a build-out fueled heavily on Chinese demand.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://image.cnbcfm.com/api/v1/image/108553838-1794981607110-gettyimages-2301831834-MALAYSIA_DATA_CENTERS.jpeg?v=1794981788&w=1920&h=1080"
+            },
+            {
+              "source": "scmp",
+              "headline": "New US chip restrictions could cool Southeast Asia’s booming M&A market, bankers warn",
+              "url": "https://www.scmp.com/business/banking-finance/article/3375015/new-us-chip-restrictions-could-cool-southeast-asias-booming-ma-market-bankers-warn",
+              "date": "2026-11-19T06:00:06.000Z",
+              "kind": "hard",
+              "summary": "The latest US export restrictions on AI chips might affect valuations in Southeast Asia’s booming mergers and acquisitions (M&A) market, which has attracted a flood of foreign investment as China’s market has cooled, according to M&A bankers.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/19/7bac19de-72e5-4a62-8d78-8274b73e5716_6a57b992.jpg?itok=X0583Df_&v=1795067021"
+            }
+          ],
+          "stats": {
+            "v": 2,
+            "at": "2026-11-18T12:02:00.373Z",
+            "series": [
+              {
+                "title": "U.S. goods exports to Malaysia, by year",
+                "unit": "US$ million",
+                "publisher": "U.S. Census Bureau",
+                "why": "Malaysia is a core Southeast Asian data centre hub, and this series tracks the total flow of U.S. goods, which include chips and servers, into it. It is a broad proxy, since it covers all goods and no",
+                "points": [
+                  {
+                    "period": "2019",
+                    "value": 13193.7,
+                    "url": "https://www.census.gov/foreign-trade/balance/c5570.html",
+                    "source": "International Trade"
+                  },
+                  {
+                    "period": "2020",
+                    "value": 12296.2,
+                    "url": "https://www.census.gov/foreign-trade/balance/c5570.html",
+                    "source": "International Trade"
+                  },
+                  {
+                    "period": "2021",
+                    "value": 15094.7,
+                    "url": "https://www.census.gov/foreign-trade/balance/c5570.html",
+                    "source": "International Trade"
+                  },
+                  {
+                    "period": "2022",
+                    "value": 18141.7,
+                    "url": "https://www.census.gov/foreign-trade/balance/c5570.html",
+                    "source": "International Trade"
+                  },
+                  {
+                    "period": "2023",
+                    "value": 19307.3,
+                    "url": "https://www.census.gov/foreign-trade/balance/c5570.html",
+                    "source": "International Trade"
+                  },
+                  {
+                    "period": "2024",
+                    "value": 27682.1,
+                    "url": "https://www.census.gov/foreign-trade/balance/c5570.html",
+                    "source": "International Trade"
+                  },
+                  {
+                    "period": "2025",
+                    "value": 28700.5,
+                    "url": "https://www.census.gov/foreign-trade/balance/c5570.html",
+                    "source": "International Trade"
+                  }
+                ],
+                "dropped": 0,
+                "sources": [
+                  {
+                    "url": "https://www.census.gov/foreign-trade/balance/c5570.html",
+                    "title": "International Trade",
+                    "domain": "census.gov"
+                  }
+                ],
+                "domains": [
+                  "census.gov"
+                ]
+              }
+            ]
+          },
+          "image": "https://image.cnbcfm.com/api/v1/image/108553838-1794981607110-gettyimages-2301831834-MALAYSIA_DATA_CENTERS.jpeg?v=1794981788&w=1920&h=1080",
+          "thread": "tjdsk7n"
+        },
+        {
           "id": "s3lqlso",
           "headline": "Xi-Trump ties tested as calls grow in Washington for tougher China policy",
           "url": "https://www.scmp.com/news/china/diplomacy/article/3374969/xi-trump-ties-tested-calls-grow-washington-tougher-china-policy",
@@ -67577,198 +68409,6 @@
               }
             ]
           },
-          "thread": "tjdsk7n"
-        },
-        {
-          "id": "scwbdcq",
-          "headline": "Southeast Asia’s data center boom leaned on Chinese demand. New U.S. rules put that pipeline at risk",
-          "url": "https://www.cnbc.com/2026/11/18/nvidia-us-ai-chip-export-controls-data-centers-.html",
-          "source": "cnbc",
-          "date": "2026-11-18T08:09:43.000Z",
-          "relevance": "medium",
-          "why": "New U.S. rules require data centres in Southeast Asia to get U.S. approval to buy advanced AI chips, which could slow a build-out fuelled by Chinese demand. India may feel this as a rival data centre location.",
-          "implications": [
-            "If Southeast Asian projects slow, some data centre investment could shift to other markets such as India, though no such shift has been reported.",
-            "Indian firms buying advanced AI chips could face similar hurdles if comparable conditions were extended to them, but the rules as reported cover Southeast Asian data centres only."
-          ],
-          "analysis": {
-            "v": 3,
-            "at": "2026-11-18T11:58:42.969Z",
-            "tier": "quick",
-            "primary": "trade_flow",
-            "complement": null,
-            "features": [
-              "trade_flow"
-            ],
-            "exposure": {
-              "level": "low",
-              "reason": "The reported channel runs through Southeast Asian data centres and Chinese demand. It has no direct link to Indian households or a top Indian import, so any effect on India would be indirect, through competition for investment."
-            },
-            "horizon": {
-              "value": "months",
-              "reason": "Data centre projects take months to plan and build, so any change in where investment goes would appear gradually rather than within weeks."
-            },
-            "confidence": {
-              "level": "low",
-              "reason": "This rests on a single CNBC report with no named official source in the material available, and the detailed terms of the rules are unconfirmed."
-            },
-            "outlets": 1,
-            "affected": [
-              {
-                "group": "IT & services workers",
-                "direction": "unclear",
-                "what": "data centre investment and jobs",
-                "effect": "Investment diverted from Southeast Asia could add to demand for data centre facilities and related technology work in India, though any such shift is unconfirmed.",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "Whether the U.S. extends similar approval requirements for advanced AI chips to other countries, including India",
-                "why": "It would show whether Indian data centre operators and cloud firms face the same hurdles as Southeast Asian buyers.",
-                "when": "",
-                "where": ""
-              }
-            ],
-            "context": [
-              "The United States restricts exports of the most advanced AI chips to China, and Washington has long worried that such chips could reach Chinese users through third countries.",
-              "India is competing to attract data centre investment, supported by its large base of internet users and growing demand for cloud services."
-            ],
-            "terms": [
-              {
-                "term": "advanced AI chips",
-                "meaning": "Powerful processors, mostly designed by U.S. companies, that are used to train and run artificial intelligence systems inside data centres."
-              }
-            ],
-            "frameworks": {
-              "trade_flow": {
-                "good": "Advanced AI chips",
-                "actors": [
-                  {
-                    "country": "United States",
-                    "role": "exporter",
-                    "is_india": false
-                  },
-                  {
-                    "country": "Southeast Asian countries",
-                    "role": "importer",
-                    "is_india": false
-                  },
-                  {
-                    "country": "China",
-                    "role": "third_party",
-                    "is_india": false
-                  },
-                  {
-                    "country": "India",
-                    "role": "third_party",
-                    "is_india": true
-                  }
-                ],
-                "change": {
-                  "type": "other",
-                  "effective": ""
-                },
-                "india_position": {
-                  "role": "not_involved",
-                  "note": "India is not named in the rules as reported. It could compete with Southeast Asia for data centre investment and for the same advanced chips, though the effect on Indian buyers or sellers is not known."
-                },
-                "volumes": []
-              }
-            }
-          },
-          "place": {
-            "name": "Washington",
-            "country": "United States",
-            "lat": 38.9,
-            "lon": -77,
-            "involves": [
-              "Malaysia",
-              "Singapore"
-            ]
-          },
-          "reports": [
-            {
-              "source": "cnbc",
-              "headline": "Southeast Asia’s data center boom leaned on Chinese demand. New U.S. rules put that pipeline at risk",
-              "url": "https://www.cnbc.com/2026/11/18/nvidia-us-ai-chip-export-controls-data-centers-.html",
-              "date": "2026-11-18T08:09:43.000Z",
-              "kind": "hard",
-              "summary": "The rules require data centers in Southeast Asia to seek U.S. approval to buy advanced AI chips, threatening to slow a build-out fueled heavily on Chinese demand.",
-              "summaryV": 3,
-              "ogTried": true,
-              "descTried": true,
-              "image": "https://image.cnbcfm.com/api/v1/image/108553838-1794981607110-gettyimages-2301831834-MALAYSIA_DATA_CENTERS.jpeg?v=1794981788&w=1920&h=1080"
-            }
-          ],
-          "stats": {
-            "v": 2,
-            "at": "2026-11-18T12:02:00.373Z",
-            "series": [
-              {
-                "title": "U.S. goods exports to Malaysia, by year",
-                "unit": "US$ million",
-                "publisher": "U.S. Census Bureau",
-                "why": "Malaysia is a core Southeast Asian data centre hub, and this series tracks the total flow of U.S. goods, which include chips and servers, into it. It is a broad proxy, since it covers all goods and no",
-                "points": [
-                  {
-                    "period": "2019",
-                    "value": 13193.7,
-                    "url": "https://www.census.gov/foreign-trade/balance/c5570.html",
-                    "source": "International Trade"
-                  },
-                  {
-                    "period": "2020",
-                    "value": 12296.2,
-                    "url": "https://www.census.gov/foreign-trade/balance/c5570.html",
-                    "source": "International Trade"
-                  },
-                  {
-                    "period": "2021",
-                    "value": 15094.7,
-                    "url": "https://www.census.gov/foreign-trade/balance/c5570.html",
-                    "source": "International Trade"
-                  },
-                  {
-                    "period": "2022",
-                    "value": 18141.7,
-                    "url": "https://www.census.gov/foreign-trade/balance/c5570.html",
-                    "source": "International Trade"
-                  },
-                  {
-                    "period": "2023",
-                    "value": 19307.3,
-                    "url": "https://www.census.gov/foreign-trade/balance/c5570.html",
-                    "source": "International Trade"
-                  },
-                  {
-                    "period": "2024",
-                    "value": 27682.1,
-                    "url": "https://www.census.gov/foreign-trade/balance/c5570.html",
-                    "source": "International Trade"
-                  },
-                  {
-                    "period": "2025",
-                    "value": 28700.5,
-                    "url": "https://www.census.gov/foreign-trade/balance/c5570.html",
-                    "source": "International Trade"
-                  }
-                ],
-                "dropped": 0,
-                "sources": [
-                  {
-                    "url": "https://www.census.gov/foreign-trade/balance/c5570.html",
-                    "title": "International Trade",
-                    "domain": "census.gov"
-                  }
-                ],
-                "domains": [
-                  "census.gov"
-                ]
-              }
-            ]
-          },
-          "image": "https://image.cnbcfm.com/api/v1/image/108553838-1794981607110-gettyimages-2301831834-MALAYSIA_DATA_CENTERS.jpeg?v=1794981788&w=1920&h=1080",
           "thread": "tjdsk7n"
         },
         {
@@ -73220,6 +73860,39 @@
       "name": "Manufacturing",
       "items": [
         {
+          "id": "s1u275uq",
+          "headline": "India ‘missed the bus’ on manufacturing in the 1980s. Can it now catch up with China?",
+          "url": "https://www.scmp.com/week-asia/economics/article/3375096/india-missed-bus-manufacturing-1980s-can-it-now-catch-china",
+          "source": "scmp",
+          "date": "2026-11-19T11:05:45.000Z",
+          "relevance": "medium",
+          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/19/d0122469-a35f-427f-8dba-e4a1241d748b_627059d1.jpg?itok=LVJNx8HM&v=1795086343",
+          "why": "",
+          "implications": [],
+          "place": {
+            "name": "New Delhi",
+            "country": "India",
+            "lat": 28.61,
+            "lon": 77.21,
+            "involves": [
+              "China"
+            ]
+          },
+          "reports": [
+            {
+              "source": "scmp",
+              "headline": "India ‘missed the bus’ on manufacturing in the 1980s. Can it now catch up with China?",
+              "url": "https://www.scmp.com/week-asia/economics/article/3375096/india-missed-bus-manufacturing-1980s-can-it-now-catch-china",
+              "date": "2026-11-19T11:05:45.000Z",
+              "kind": "feature",
+              "summary": "Indian External Affairs Minister Subrahmanyam Jaishankar’s recent statement that his country “missed the bus” on building up its manufacturing and industrial base in the 1980s, when China was forging ahead, has reignited debate over how India can catch up with its neighbour.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/19/d0122469-a35f-427f-8dba-e4a1241d748b_627059d1.jpg?itok=LVJNx8HM&v=1795086343"
+            }
+          ],
+          "thread": "twyua7i"
+        },
+        {
           "id": "sl230d3",
           "headline": "Trump claims US will have enough rare earths in 10 months; experts call it unrealistic",
           "url": "https://www.scmp.com/news/china/diplomacy/article/3374808/trump-claims-us-will-have-enough-rare-earths-10-months-experts-call-it-unrealistic",
@@ -76018,7 +76691,111 @@
               "image": "https://s.france24.com/media/display/e3717e5c-e3bc-11f1-b3ed-6d75ed565170/w:1024/p:16x9/AP26321662340752.jpg"
             }
           ],
-          "thread": "t4rp4vx"
+          "thread": "t4rp4vx",
+          "stats": {
+            "v": 2,
+            "at": "2026-11-19T11:58:03.630Z",
+            "series": [
+              {
+                "title": "India's total domestic coal production, by financial year",
+                "unit": "million tonnes",
+                "publisher": "Ministry of Coal, Government of India (via PIB)",
+                "why": "Rising domestic coal output shows how deeply India's power and industry rely on coal, which is the dependence a faster fossil fuel phase-out would challenge.",
+                "points": [
+                  {
+                    "period": "2019-20",
+                    "value": 730.874,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2042652&reg=48&lang=2",
+                    "source": "Domestic Coal Production"
+                  },
+                  {
+                    "period": "2020-21",
+                    "value": 716.083,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2042652&reg=48&lang=2",
+                    "source": "Domestic Coal Production"
+                  },
+                  {
+                    "period": "2021-22",
+                    "value": 778.21,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2042652&reg=48&lang=2",
+                    "source": "Domestic Coal Production"
+                  },
+                  {
+                    "period": "2022-23",
+                    "value": 893.191,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2042652&reg=48&lang=2",
+                    "source": "Domestic Coal Production"
+                  },
+                  {
+                    "period": "2023-24 (provisional)",
+                    "value": 997.828,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2042652&reg=48&lang=2",
+                    "source": "Domestic Coal Production"
+                  }
+                ],
+                "dropped": 0,
+                "sources": [
+                  {
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2042652&reg=48&lang=2",
+                    "title": "Domestic Coal Production",
+                    "domain": "pib.gov.in"
+                  }
+                ],
+                "domains": [
+                  "pib.gov.in"
+                ]
+              },
+              {
+                "title": "Coal imported by Indian power plants for blending",
+                "unit": "million tonnes",
+                "publisher": "Ministry of Coal, Government of India (via PIB)",
+                "why": "Imported coal used in power plants shows how exposed India's electricity supply is to fossil fuels, and so to any tightening of global phase-out commitments.",
+                "points": [
+                  {
+                    "period": "2019-20",
+                    "value": 23.75,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2042652&reg=48&lang=2",
+                    "source": "Domestic Coal Production"
+                  },
+                  {
+                    "period": "2020-21",
+                    "value": 10.39,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2042652&reg=48&lang=2",
+                    "source": "Domestic Coal Production"
+                  },
+                  {
+                    "period": "2021-22",
+                    "value": 8.11,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2042652&reg=48&lang=2",
+                    "source": "Domestic Coal Production"
+                  },
+                  {
+                    "period": "2022-23",
+                    "value": 35.1,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2042652&reg=48&lang=2",
+                    "source": "Domestic Coal Production"
+                  },
+                  {
+                    "period": "2023-24 (provisional)",
+                    "value": 23.93,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2042652&reg=48&lang=2",
+                    "source": "Domestic Coal Production"
+                  }
+                ],
+                "dropped": 0,
+                "sources": [
+                  {
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2042652&reg=48&lang=2",
+                    "title": "Domestic Coal Production",
+                    "domain": "pib.gov.in"
+                  }
+                ],
+                "domains": [
+                  "pib.gov.in"
+                ]
+              }
+            ]
+          }
         },
         {
           "id": "sx5c4b2",
@@ -80652,6 +81429,132 @@
       "name": "Policy & Governance",
       "items": [
         {
+          "id": "sy8iiop",
+          "headline": "APEC summit: What Trump, Xi and Putin want",
+          "url": "https://www.dw.com/en/apec-summit-what-trump-xi-and-putin-want/a-79970462",
+          "source": "dw",
+          "date": "2026-11-17T14:25:00.000Z",
+          "relevance": "medium",
+          "why": "",
+          "implications": [],
+          "place": {
+            "name": "Shenzhen",
+            "country": "China",
+            "lat": 22.54,
+            "lon": 114.06,
+            "involves": [
+              "United States",
+              "Russia"
+            ]
+          },
+          "reports": [
+            {
+              "source": "dw",
+              "headline": "APEC summit: What Trump, Xi and Putin want",
+              "url": "https://www.dw.com/en/apec-summit-what-trump-xi-and-putin-want/a-79970462",
+              "date": "2026-11-17T14:25:00.000Z",
+              "kind": "feature",
+              "summary": "Trump, Xi and Putin will hold their first trilateral meeting on the sidelines of APEC. With different priorities on trade, Ukraine, Iran and arms control, what does each leader hope to gain?",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://static.dw.com/image/78531577_6.jpg"
+            },
+            {
+              "source": "aljazeera",
+              "headline": "As Trump arrives in China, low expectations for breakthroughs in rivalry",
+              "url": "https://www.aljazeera.com/economy/2026/11/18/as-trump-arrives-in-china-low-expectations-for-breakthroughs-in-rivalry",
+              "date": "2026-11-18T09:30:01.000Z",
+              "kind": "feature",
+              "summary": "Analysts expect few concrete outcomes from talks between the leaders on the sidelines of the APEC summit.",
+              "summaryV": 3
+            },
+            {
+              "source": "scmp",
+              "headline": "A tarmac hug with Xi and a handshake with Putin, how Trump began his China visit",
+              "url": "https://www.scmp.com/news/china/diplomacy/article/3374951/tarmac-hug-xi-and-handshake-putin-how-trump-began-his-china-visit",
+              "date": "2026-11-18T14:12:20.000Z",
+              "kind": "hard",
+              "summary": "Handshakes, warm welcomes and carefully staged photo opportunities defined US President Donald Trump’s first day in Shenzhen on Wednesday, as China showcased its diplomatic priorities ahead of a planned three-way summit with Russia. Here are the key moments from the day.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/18/b4eb1a4d-ac48-4c49-aa61-bf65f66143d7_771a68f7.jpg?itok=W8qgkTzu&v=1795011075"
+            },
+            {
+              "source": "france24",
+              "headline": "Three leaders, three agendas: Who wants what from Xi-Trump-Putin summit?",
+              "url": "https://www.france24.com/en/asia-pacific/20261118-three-leaders-three-agendas-who-wants-what-from-xi-trump-putin-summit",
+              "date": "2026-11-18T14:52:08.000Z",
+              "kind": "feature",
+              "summary": "Be it curbing arms sales to Taiwan, bouncing back after a midterms shellacking, or the optics of a place at the table with the world's two superpowers, Xi Jinping, Donald Trump and Vladimir Putin are approaching their trilateral meeting in Shenzhen with starkly different aims and agendas.",
+              "summaryV": 3,
+              "image": "https://s.france24.com/media/display/846f8b30-e35b-11f1-9492-c5c0357b2a0c/w:1024/p:16x9/AP26316475308509.jpg"
+            },
+            {
+              "source": "africanews",
+              "headline": "Trump, Putin, and Xi meet ahead of historic three-way talks in China",
+              "url": "http://www.africanews.com/2026/11/18/trump-putin-and-xi-meet-ahead-of-historic-three-way-talks-in-china/",
+              "date": "2026-11-18T15:33:22.000Z",
+              "kind": "hard",
+              "summary": "A full agenda has not been made public, but it is believed talks with include the wars in Ukraine and Iran, nuclear proliferation, trade tensions, and AI.",
+              "summaryV": 3
+            },
+            {
+              "source": "bbc",
+              "headline": "Trump shakes hands with Putin and Xi ahead of historic talks in China",
+              "url": "https://www.bbc.co.uk/news/articles/ck9d75x5wwwwo",
+              "date": "2026-11-18T16:10:44.000Z",
+              "kind": "hard",
+              "summary": "The three leaders will meet together for the first time on Thursday during a closely-watched summit.",
+              "summaryV": 3,
+              "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/a9fb/live/b2707bf0-e349-11f1-99aa-0f40b013ad11.jpg",
+              "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/a9fb/live/b2707bf0-e349-11f1-99aa-0f40b013ad11.jpg"
+            },
+            {
+              "source": "mercopress",
+              "headline": "Xi and Putin reaffirm their alliance on the eve of the first three-way summit with Trump",
+              "url": "https://en.mercopress.com/2026/11/18/xi-and-putin-reaffirm-their-alliance-on-the-eve-of-the-first-three-way-summit-with-trump",
+              "date": "2026-11-18T17:25:00.000Z",
+              "kind": "hard",
+              "summary": "Chinese President Xi Jinping and Russian President Vladimir Putin reaffirmed their strategic alliance in Shenzhen on Wednesday, hours before Xi personally greeted Donald Trump at the airport, on the eve of the first three-way meeting between the heads of state of China, Russia and the United States, to be held on…",
+              "summaryV": 3,
+              "image": "https://en.mercopress.com/data/cache/noticias/112147/100x80/79980749-605.jpg"
+            },
+            {
+              "source": "abc",
+              "headline": "The ambitions behind Trump, Xi and Putin's unprecedented meeting",
+              "url": "https://www.abc.net.au/news/2026-11-19/what-trump-putin-xi-want-when-they-meet/107390546",
+              "date": "2026-11-18T18:41:53.000Z",
+              "kind": "feature",
+              "summary": "Presidents Donald Trump, Xi Jinping and Vladimir Putin are about to sit down together for the first time. So what should we expect from this historic meeting?",
+              "summaryV": 3,
+              "image": "https://live-production.wcms.abc-cdn.net.au/7422255e8eccdee8d8f1c03708d9962c?impolicy=wcms_crop_resize&cropH=450&cropW=800&xPos=0&yPos=75&width=862&height=485"
+            },
+            {
+              "source": "france24",
+              "headline": "APEC summit: AI and tech competition between US and China",
+              "url": "https://www.france24.com/en/beijing-summit-ai-and-tech-competition-between-us-and-china",
+              "date": "2026-11-19T07:45:52.000Z",
+              "kind": "feature",
+              "summary": "Chinese President Xi Jinping is welcoming US President Donald Trump and Russia’s Vladimir Putin on Thursday for the first-ever three-way summit between the leaders.",
+              "summaryV": 3,
+              "image": "https://s.france24.com/media/display/aa305392-e3ea-11f1-b104-1ba7ddfab527/w:1024/p:16x9/EN-20261119-060110-060719-CS.jpg"
+            },
+            {
+              "source": "france24",
+              "headline": "APEC Summit: Lots of gloss, little real progress?",
+              "url": "https://www.france24.com/en/apec-summit-lots-of-gloss-little-real-progress",
+              "date": "2026-11-19T10:47:03.000Z",
+              "kind": "feature",
+              "summary": "Xi Jinping, Donald Trump and Vladimir Putin are holding their first-ever trilateral meeting in Shenzhen, on the sidelines of the APEC forum. It is a historic moment in more ways than one, with the leaders of the world’s three most powerful countries around the same table.",
+              "summaryV": 3,
+              "image": "https://s.france24.com/media/display/997c2f9a-e3fd-11f1-ad0f-c5c0357b2a0c/w:1024/p:16x9/EN-20261119-100153-100636-CS.jpg"
+            }
+          ],
+          "finChecked": true,
+          "image": "https://static.dw.com/image/78531577_6.jpg",
+          "thread": "t1ipacnb"
+        },
+        {
           "id": "snjzfh3",
           "headline": "Live: Trump to talk about Ukraine during meeting with Xi and Putin",
           "url": "https://www.france24.com/en/europe/20261116-live-600-ukrainian-drones-target-moscow-strike-crimea-bridge-halts-traffic",
@@ -81008,6 +81911,63 @@
               "kind": "hard",
               "summary": "President Trump, Chinese President Xi Jinping and Russian President Vladimir Putin are expected to hold a rare face-to-face meeting in China.",
               "summaryV": 3
+            },
+            {
+              "source": "abc",
+              "headline": "Live: Putin says Russia, China and US have 'joint responsibility' for peace",
+              "url": "https://www.abc.net.au/news/2026-11-19/trump-xi-putin-meeting-live-blog-apec-summit/107394202",
+              "date": "2026-11-19T04:29:39.000Z",
+              "kind": "hard",
+              "summary": "An historic meeting of the leaders of the US, China and Russia is underway on the sidelines of the Asia-Pacific Economic Cooperation summit in Shenzhen as trade tensions and wars continue to simmer. Follow live.",
+              "summaryV": 3,
+              "image": "https://live-production.wcms.abc-cdn.net.au/bdf71b46777e3f35213a2714d9a9dc31?impolicy=wcms_crop_resize&cropH=2250&cropW=4000&xPos=0&yPos=0&width=862&height=485"
+            },
+            {
+              "source": "africanews",
+              "headline": "Trump holds one-on-ones with Putin and Xi ahead of trilateral discussions",
+              "url": "http://www.africanews.com/2026/11/19/trump-holds-one-on-ones-with-putin-and-xi-ahead-of-trilateral-discussions/",
+              "date": "2026-11-19T08:10:24.000Z",
+              "kind": "hard",
+              "summary": "The three powerful men are expected to discuss the wars in Ukraine and Iran, nuclear proliferation, trade tensions, and developments in artificial intelligence.",
+              "summaryV": 3
+            },
+            {
+              "source": "scmp",
+              "headline": "Xi invokes WWII alliance, Trump raises nuclear cuts in 3-way talks with Putin",
+              "url": "https://www.scmp.com/news/china/diplomacy/article/3375055/xi-trump-and-putin-meet-landmark-trilateral-talks-apec",
+              "date": "2026-11-19T08:28:54.000Z",
+              "kind": "breaking",
+              "summary": "Chinese President Xi Jinping, US President Donald Trump and Russian President Vladimir Putin began a historic trilateral meeting on Thursday afternoon, marking the first-ever three-way summit between the leaders of the world’s major nuclear powers.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/19/666882e4-1127-45cd-ae64-6c65a18a8ced_0e03e758.jpg?itok=ayNfHUOU&v=1795079307"
+            },
+            {
+              "source": "africanews",
+              "headline": "China: Trump calls Putin his \"friend\" as leaders meet in Shenzhen",
+              "url": "http://www.africanews.com/2026/11/19/china-trump-calls-putin-his-friend-as-leaders-meet-amid-in-shenzhen/",
+              "date": "2026-11-19T10:03:47.000Z",
+              "kind": "hard",
+              "summary": "Donald Trump greeted Vladimir Putin as his friend during a meeting in Shenzhen. Their 40-minute encounter came ahead of trilateral talks with Chinese President Xi Jinping.",
+              "summaryV": 3
+            },
+            {
+              "source": "cnbc",
+              "headline": "Trump says U.S., China, Russia ‘uniquely positioned’ to discuss reducing nuclear weapons at historic meeting",
+              "url": "https://www.cnbc.com/2026/11/19/trump-xi-putin-trilateral-meeting-china.html",
+              "date": "2026-11-19T10:38:01.000Z",
+              "kind": "hard",
+              "summary": "The leaders of the U.S., China and Russia met in Shenzhen on Thursday for a rare trilateral gathering.",
+              "summaryV": 3
+            },
+            {
+              "source": "france24",
+              "headline": "Xi, Trump, Putin: historic summit ends, outcome unclear",
+              "url": "https://www.france24.com/en/xi-trump-putin-historic-summit-ends-outcome-unclear",
+              "date": "2026-11-19T10:42:44.000Z",
+              "kind": "breaking",
+              "summary": "The unprecedented trilateral summit between Xi Jinping, Donald Trump and Vladimir Putin ended on Thursday in Shenzhen after about an hour and 20 minutes. No details have emerged yet, but the three leaders talking face to face is already an event.",
+              "summaryV": 3,
+              "image": "https://s.france24.com/media/display/7fdd47ee-e403-11f1-b15f-7908c4e1a3c7/w:1024/p:16x9/EN-20261119-110128-110945-CS.jpg"
             }
           ],
           "finChecked": true,
@@ -81018,6 +81978,459 @@
             "at": "2026-11-16T19:44:47.100Z",
             "series": []
           }
+        },
+        {
+          "id": "sv7p8ok",
+          "headline": "Trump meets Putin and Xi for trilateral US, Russia, China talks at APEC",
+          "url": "https://www.aljazeera.com/news/2026/11/19/trump-meets-putin-and-xi-ahead-of-us-russia-china-trilateral-talks",
+          "source": "aljazeera",
+          "date": "2026-11-19T08:32:10.000Z",
+          "relevance": "medium",
+          "why": "US President Donald Trump met Russian President Vladimir Putin and Chinese President Xi Jinping in separate meetings, calling each a 'friend', ahead of rare three-way talks at APEC in China. The outcome could shape the trade and diplomatic setting India works in.",
+          "implications": [
+            "India is not reported to be part of the talks. Any understanding among the three powers on trade, sanctions or security would therefore be something New Delhi has to respond to, not shape.",
+            "A visible warming between the three could change how each of them treats India in trade and energy dealings, though the reports give no sign yet of any concrete agreement."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-19T11:56:57.811Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "The reports describe only meetings and friendly language, with no trade, sanctions or energy measure announced. Any effect on India would come indirectly through its relations with the three powers."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Diplomatic understandings usually take months to become changes in tariffs, sanctions or energy purchases, and none has yet been reported."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single Al Jazeera report written before the three-way talks, so the content and outcome of those talks are still unknown."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Large exporters",
+                "direction": "unclear",
+                "what": "export trading conditions",
+                "effect": "Any shift in US-China trade relations could change the competition and demand Indian exporters face in global markets, but nothing concrete has been reported.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "energy supply terms",
+                "effect": "If the talks touched on sanctions or Russian energy, that could change the terms on which India buys oil, which feeds into domestic fuel costs.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Official statements or readouts from the three-way US, Russia and China talks at APEC",
+                "why": "They would show whether the talks produced any concrete decision on trade, sanctions or security that could affect India.",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "India's official reaction to the meetings and their outcome",
+                "why": "It would indicate how New Delhi reads the shift in great-power relations and whether it plans any policy response.",
+                "when": "",
+                "where": "Ministry of External Affairs, India"
+              }
+            ],
+            "context": [
+              "India keeps working relationships with the US, Russia and China at once, buying Russian oil and defence equipment, trading heavily with the US and China, and sharing a disputed border with China."
+            ],
+            "terms": [
+              {
+                "term": "APEC",
+                "meaning": "Asia-Pacific Economic Cooperation is a forum of Pacific Rim economies that discusses trade and investment, and India is not one of its members."
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Trump meets Putin and Xi",
+                    "detail": "Trump held separate meetings with Putin and Xi at APEC in China and called each a 'friend'. These meetings came ahead of three-way talks.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Rare three-way talks follow",
+                    "detail": "The talks among the US, Russia and China are described as rare. Their agenda and results have not been reported, so any decisions on trade or security are still unknown.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "India faces a changed backdrop",
+                    "detail": "If the talks led to understandings on trade, sanctions or energy, they could change the conditions under which India trades and conducts diplomacy with all three.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The talks end with no agreement or only symbolic statements, leaving trade, sanctions and energy arrangements affecting India unchanged."
+              }
+            }
+          },
+          "place": {
+            "name": "Shenzhen",
+            "country": "China",
+            "lat": 22.54,
+            "lon": 114.06,
+            "involves": [
+              "United States",
+              "Russia"
+            ]
+          },
+          "reports": [
+            {
+              "source": "aljazeera",
+              "headline": "Trump meets Putin and Xi for trilateral US, Russia, China talks at APEC",
+              "url": "https://www.aljazeera.com/news/2026/11/19/trump-meets-putin-and-xi-ahead-of-us-russia-china-trilateral-talks",
+              "date": "2026-11-19T08:32:10.000Z",
+              "kind": "hard",
+              "summary": "US president calls both Putin and Xi a 'friend' in separate meetings ahead of rare three-way talks in China.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/GettyImages-2305839919-1795078098.jpg?resize=1920%2C1440"
+            },
+            {
+              "source": "nyt",
+              "headline": "How to Decode the Xi-Trump Hug",
+              "url": "https://www.nytimes.com/2026/11/18/world/asia/xi-trump-hug-shenzhen.html",
+              "date": "2026-11-19T08:32:47.000Z",
+              "kind": "feature",
+              "summary": "The welcome China’s leader, Xi Jinping, offered President Trump appeared to reflect a desire for a measure of stability at a time of growing disagreements.",
+              "summaryV": 3,
+              "image": "https://static01.nyt.com/images/2026/11/19/multimedia/19trump-summits-hugging-topart-jmkw/19trump-summits-hugging-topart-jmkw-mediumSquareAt3X.jpg"
+            },
+            {
+              "source": "france24",
+              "headline": "Nuclear arms at the center of the Shenzhen trilateral meeting",
+              "url": "https://www.france24.com/en/nuclear-arms-at-the-center-of-the-schenzhen-trilateral-meeting",
+              "date": "2026-11-19T08:36:29.000Z",
+              "kind": "feature",
+              "summary": "Nuclear weapons are at the top of Donald Trump’s agenda at the trilateral summit in Beijing. The US president wants the United States, Russia and China to reduce their nuclear stockpiles, and FRANCE 24’s Philip Turle expects him to push hard for a three-way agreement on the issue.",
+              "summaryV": 3,
+              "image": "https://s.france24.com/media/display/ca689c6e-e3ef-11f1-82ff-1ba7ddfab527/w:1024/p:16x9/EN-20261119-080626-081405-CS.jpg"
+            },
+            {
+              "source": "france24",
+              "headline": "Xi Jinping, Donald Trump and Vladimir Putin begin unprecedented summit in China",
+              "url": "https://www.france24.com/en/xi-jinping-donald-trump-and-vladimir-putin-begin-unprecedented-summit-in-china",
+              "date": "2026-11-19T09:07:17.000Z",
+              "kind": "hard",
+              "summary": "Xi Jinping, Donald Trump and Vladimir Putin opened their first trilateral talks in Shenzhen on the sidelines of the APEC forum, a meeting analysts expect to offer more symbolism than breakthroughs and that critics fear could carve the world into spheres of influence.",
+              "summaryV": 3,
+              "image": "https://s.france24.com/media/display/5f550b2c-e3f6-11f1-aad1-ff16da94d1fe/w:1024/p:16x9/EN-20261119-093449-094417-CS.jpg"
+            },
+            {
+              "source": "scmp",
+              "headline": "Who’s who in Shenzhen: the priorities revealed by Xi-Trump-Putin summit rosters",
+              "url": "https://www.scmp.com/news/china/diplomacy/article/3375069/whos-who-shenzhen-priorities-revealed-xi-trump-putin-summit-rosters",
+              "date": "2026-11-19T09:21:05.000Z",
+              "kind": "feature",
+              "summary": "In high-stakes summitry, seating charts and delegation rosters often speak louder than boilerplate communiques.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/19/2b55df5c-07bc-49d1-91e8-c6d5f80e829f_d45e635a.jpg?itok=HZ_EN6S2&v=1795080912"
+            },
+            {
+              "source": "scmp",
+              "headline": "Xi-Trump-Putin trilateral breaks historic ground",
+              "url": "https://www.scmp.com/plus/economy/china-economy/article/3375070/xi-trump-putin-trilateral-breaks-historic-ground",
+              "date": "2026-11-19T09:22:16.000Z",
+              "kind": "hard",
+              "summary": "President Xi Jinping highlighted the “pioneering significance” of the first trilateral meeting between the leaders of China, the United States and Russia, as Donald Trump pushed for talks on nuclear weapons. “When major countries live in harmony, the world enjoys peace,” Xi said at the start of the meeting in Shenzhen.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/19/4d4ffd0b-bdf2-4a7b-9034-d441d4f898b2_4b63c507.jpg?itok=KAiG6lQB&v=1795080133"
+            },
+            {
+              "source": "abc",
+              "headline": "Leaders agree to Ukraine talks after Albanese urges Putin to end war 'now'",
+              "url": "https://www.abc.net.au/news/2026-11-19/albanese-tells-putin-to-end-ukraine-war-now/107406348",
+              "date": "2026-11-19T09:36:33.000Z",
+              "kind": "hard",
+              "summary": "Prime Minister Anthony Albanese directly tells Vladimir Putin to end his war with Ukraine \"now\" ahead of a highly anticipated meeting between the Russian President, Donald Trump and Xi Jinping.",
+              "summaryV": 3,
+              "image": "https://live-production.wcms.abc-cdn.net.au/5718247632880706a2eaf87e5847a4f8?impolicy=wcms_crop_resize&cropH=1688&cropW=3000&xPos=0&yPos=0&width=862&height=485"
+            },
+            {
+              "source": "npr",
+              "headline": "Trump, Xi and Putin meet as global alliances hang in the balance",
+              "url": "https://www.npr.org/2026/11/18/nx-s1-6040432/trump-xi-and-putin-shenzhen-china-russia-usa",
+              "date": "2026-11-19T09:44:40.000Z",
+              "kind": "hard",
+              "summary": "President Trump, Xi and Putin have met in Shenzhen for a historic trilateral meeting, with Ukraine, Iran and nuclear disarmament on the agenda.",
+              "summaryV": 3,
+              "image": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/4147x2765+0+0/resize/4147x2765!/quality/85/format/webp/?url=https%3A%2F%2Fnpr-production-npr.s3.us-east-1.amazonaws.com%2Fbrightspot%2F42%2F55%2Fab53a66d41cea788e3772c0daf20%2Fap26323327946792.jpg"
+            }
+          ],
+          "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/GettyImages-2305839919-1795078098.jpg?resize=1920%2C1440",
+          "finChecked": true,
+          "thread": "t1ipacnb"
+        },
+        {
+          "id": "s1k16vf0",
+          "headline": "Why is Pete Hegseth strengthening US military ties with Venezuela?",
+          "url": "https://www.aljazeera.com/news/2026/11/19/why-is-pete-hegseth-strengthening-us-military-ties-with-venezuela",
+          "source": "aljazeera",
+          "date": "2026-11-19T07:52:30.000Z",
+          "relevance": "medium",
+          "why": "",
+          "implications": [],
+          "place": {
+            "name": "Caracas",
+            "country": "Venezuela",
+            "lat": 10.48,
+            "lon": -66.9,
+            "involves": [
+              "United States"
+            ]
+          },
+          "reports": [
+            {
+              "source": "aljazeera",
+              "headline": "Why is Pete Hegseth strengthening US military ties with Venezuela?",
+              "url": "https://www.aljazeera.com/news/2026/11/19/why-is-pete-hegseth-strengthening-us-military-ties-with-venezuela",
+              "date": "2026-11-19T07:52:30.000Z",
+              "kind": "feature",
+              "summary": "Hegseth's new military deal with Venezuela raises questions about US influence, regional security and Maduro's removal.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/afp_6afe78ebd6d9-1795061995.jpg?resize=1920%2C1440"
+            }
+          ],
+          "finChecked": true,
+          "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/afp_6afe78ebd6d9-1795061995.jpg?resize=1920%2C1440",
+          "thread": "t1q27ee0"
+        },
+        {
+          "id": "s1nvinbu",
+          "headline": "Violent protests and killings in Bangladesh ahead of exiled Sheikh Hasina’s planned return",
+          "url": "https://www.theguardian.com/world/2026/nov/19/bangladesh-violent-protest-sheikh-hasina-planned-return",
+          "source": "guardian",
+          "date": "2026-11-19T06:58:33.000Z",
+          "relevance": "medium",
+          "image": "https://i.guim.co.uk/img/media/3f69b15ea7c8c18c019e40efbed19bad36e75bf3/28_0_3330_2664/master/3330.jpg?width=700&quality=85&auto=format&fit=max&s=32f5a108d5b095bc8a22b87968d41896",
+          "why": "Violent protests by supporters of exiled former prime minister Sheikh Hasina shut down parts of Bangladesh on Thursday. Prolonged unrest in a neighbour could affect India's cross-border trade, travel and border security.",
+          "implications": [
+            "Shutdowns and arson in Bangladesh could interrupt road and port movement of goods, which could affect Indian traders and transporters who depend on cross-border trade.",
+            "Continued violence could raise security concerns for Indian states along the border and for Indians living or working in Bangladesh."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-19T11:55:25.642Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The channel is the India-Bangladesh relationship, through border trade and security. The reports describe unrest inside Bangladesh and name no direct effect on India, so the level stays at medium."
+            },
+            "horizon": {
+              "value": "now",
+              "reason": "The protests and shutdown are under way on Thursday, so any disruption to cross-border movement would appear within days."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This is an early report from a single outlet, The Guardian, and the full scale of the violence and the Awami League's claims have not been independently confirmed."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Importers & traders",
+                "direction": "down",
+                "what": "cross-border trade flow",
+                "effect": "Shutdowns and violence in Bangladesh could delay shipments and transport between the two countries, raising costs for traders who rely on that route.",
+                "basis": "inferred"
+              },
+              {
+                "group": "A named state or region",
+                "direction": "unclear",
+                "what": "border security and movement",
+                "effect": "Indian states bordering Bangladesh, such as West Bengal and Tripura, could face tighter border security or disrupted movement if the unrest continues or spreads.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Whether the Awami League's nationwide protests and shutdowns continue or spread beyond Thursday",
+                "why": "Continued disruption would raise the chance of lasting effects on trade, transport and border security.",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "Any government decision on Sheikh Hasina's request for a passport and her planned return",
+                "why": "The dispute over her return is the trigger for the protests, so a change could ease or inflame the unrest.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "Bangladesh shares a long land border with India, and the two countries trade extensively by road, rail and port. Political instability there therefore matters for India's eastern and north-eastern states."
+            ],
+            "terms": [
+              {
+                "term": "Awami League",
+                "meaning": "A Bangladeshi political party whose supporters are protesting in support of former prime minister Sheikh Hasina."
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Protests and violence erupt",
+                    "detail": "Supporters of Sheikh Hasina staged protests that caused clashes, bomb blasts and arson, and parts of Bangladesh were shut down on Thursday.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Dispute over Hasina's return",
+                    "detail": "The Awami League called the nationwide protest after the government rejected Hasina's request for a passport, ahead of her planned return from exile.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Neighbour's instability reaches India",
+                    "detail": "Prolonged shutdowns and violence could disrupt border trade and transport and raise security concerns in India's border states.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The effect would not reach India if the unrest ends quickly and goods, vehicles and people continue to cross the border normally."
+              }
+            }
+          },
+          "place": {
+            "name": "Dhaka",
+            "country": "Bangladesh",
+            "lat": 23.81,
+            "lon": 90.41,
+            "involves": [
+              "India"
+            ]
+          },
+          "reports": [
+            {
+              "source": "guardian",
+              "headline": "Violent protests and killings in Bangladesh ahead of exiled Sheikh Hasina’s planned return",
+              "url": "https://www.theguardian.com/world/2026/nov/19/bangladesh-violent-protest-sheikh-hasina-planned-return",
+              "date": "2026-11-19T06:58:33.000Z",
+              "kind": "breaking",
+              "summary": "Awami League party called for ⁠nationwide protest on Thursday after the government rejected Hasina’s request for passport",
+              "summaryV": 3,
+              "lede": "Parts of Bangladesh were shut down Thursday as protests by supporters of former prime minister Sheikh Hasina sparked clashes, bomb blasts and arson attacks, with the ancestral home ⁠of former leader Muhammad Yunus set ablaze in the violence.",
+              "image": "https://i.guim.co.uk/img/media/3f69b15ea7c8c18c019e40efbed19bad36e75bf3/28_0_3330_2664/master/3330.jpg?width=700&quality=85&auto=format&fit=max&s=32f5a108d5b095bc8a22b87968d41896"
+            }
+          ],
+          "finChecked": true,
+          "thread": "t19o6y8z"
+        },
+        {
+          "id": "s12ghfyi",
+          "headline": "Xi tells Trump to ‘do the right thing’ on Taiwan; urges two sides to manage differences",
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3375023/talks-xi-get-under-way-trump-asks-china-do-more-us-farmers",
+          "source": "scmp",
+          "date": "2026-11-19T06:24:25.000Z",
+          "relevance": "medium",
+          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/19/b473bd26-35fa-4826-9984-d15560b2f8a8_3581ade5.jpg?itok=d5FUd1-x&v=1795070630",
+          "why": "Chinese President Xi Jinping has urged US President Donald Trump to \"do the right thing\" on Taiwan and to manage differences between the two powers. Any change in US-China tension could reach India through trade and supply chains.",
+          "implications": [
+            "Indian importers of electronics and components could face higher costs or delays if US-China friction over Taiwan disrupts regional supply chains and shipping.",
+            "Calmer US-China ties would reduce the risk of sudden trade restrictions that can shift orders and investment between China and India."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-19T11:55:25.641Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "low",
+              "reason": "The reports describe only a diplomatic exchange between the two leaders and name no trade measure or disruption, so any effect on India would be indirect and would come through supply chains."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "No concrete measure has been announced, so any effect on trade or supply chains would emerge gradually as US-China relations develop."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "The account rests on a single outlet, the South China Morning Post, reporting Xi's own remarks; the US response and the setting of the exchange are not given."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "supply-chain stability",
+                "effect": "Indian firms that buy electronic parts and inputs from East Asia could see costs or delivery times change if US-China tension over Taiwan rises or eases.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Any official US or Chinese statement responding to Xi's call to manage differences over Taiwan",
+                "why": "It would show whether both sides intend to lower tension or whether friction is likely to continue.",
+                "when": "",
+                "where": "White House; China's Ministry of Foreign Affairs"
+              }
+            ],
+            "context": [
+              "China claims Taiwan as its territory, while the United States maintains unofficial ties with Taiwan. Taiwan is also a leading maker of advanced semiconductors, which is why tension over it matters to global industry."
+            ],
+            "terms": [],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Xi presses Trump on Taiwan",
+                    "detail": "Xi Jinping urged Donald Trump to \"do the right thing\" on Taiwan, which Beijing treats as a core sensitive issue in relations with Washington.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Both sides urged to manage differences",
+                    "detail": "Xi called on the two powers to manage their differences so that tensions stay in check. This suggests that Taiwan remains a live source of friction between them.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Trade and supply chains could be affected",
+                    "detail": "If tensions are contained, trade and technology supply chains that India depends on stay stable. If they rise, input costs and shipping risks for Indian importers could increase.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The effect would not reach India if the US and China keep Taiwan tensions contained and neither side imposes new trade, technology or shipping restrictions."
+              }
+            }
+          },
+          "place": {
+            "name": "Shenzhen",
+            "country": "China",
+            "lat": 22.54,
+            "lon": 114.06,
+            "involves": [
+              "United States"
+            ]
+          },
+          "reports": [
+            {
+              "source": "scmp",
+              "headline": "Xi tells Trump to ‘do the right thing’ on Taiwan; urges two sides to manage differences",
+              "url": "https://www.scmp.com/news/china/diplomacy/article/3375023/talks-xi-get-under-way-trump-asks-china-do-more-us-farmers",
+              "date": "2026-11-19T06:24:25.000Z",
+              "kind": "hard",
+              "summary": "Xi Jinping has urged his American counterpart, Donald Trump, to “do the right thing” on Taiwan, and called for the two powers to manage their differences to keep tensions in check.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/19/b473bd26-35fa-4826-9984-d15560b2f8a8_3581ade5.jpg?itok=d5FUd1-x&v=1795070630"
+            }
+          ],
+          "finChecked": true,
+          "thread": "tny4upw"
         },
         {
           "id": "s2ueh44",
@@ -81186,113 +82599,12 @@
             }
           ],
           "finChecked": true,
-          "thread": "t1mn19v5"
-        },
-        {
-          "id": "sy8iiop",
-          "headline": "APEC summit: What Trump, Xi and Putin want",
-          "url": "https://www.dw.com/en/apec-summit-what-trump-xi-and-putin-want/a-79970462",
-          "source": "dw",
-          "date": "2026-11-17T14:25:00.000Z",
-          "relevance": "medium",
-          "why": "",
-          "implications": [],
-          "place": {
-            "name": "Shenzhen",
-            "country": "China",
-            "lat": 22.54,
-            "lon": 114.06,
-            "involves": [
-              "United States",
-              "Russia"
-            ]
-          },
-          "reports": [
-            {
-              "source": "dw",
-              "headline": "APEC summit: What Trump, Xi and Putin want",
-              "url": "https://www.dw.com/en/apec-summit-what-trump-xi-and-putin-want/a-79970462",
-              "date": "2026-11-17T14:25:00.000Z",
-              "kind": "feature",
-              "summary": "Trump, Xi and Putin will hold their first trilateral meeting on the sidelines of APEC. With different priorities on trade, Ukraine, Iran and arms control, what does each leader hope to gain?",
-              "summaryV": 3,
-              "ogTried": true,
-              "descTried": true,
-              "image": "https://static.dw.com/image/78531577_6.jpg"
-            },
-            {
-              "source": "aljazeera",
-              "headline": "As Trump arrives in China, low expectations for breakthroughs in rivalry",
-              "url": "https://www.aljazeera.com/economy/2026/11/18/as-trump-arrives-in-china-low-expectations-for-breakthroughs-in-rivalry",
-              "date": "2026-11-18T09:30:01.000Z",
-              "kind": "feature",
-              "summary": "Analysts expect few concrete outcomes from talks between the leaders on the sidelines of the APEC summit.",
-              "summaryV": 3
-            },
-            {
-              "source": "scmp",
-              "headline": "A tarmac hug with Xi and a handshake with Putin, how Trump began his China visit",
-              "url": "https://www.scmp.com/news/china/diplomacy/article/3374951/tarmac-hug-xi-and-handshake-putin-how-trump-began-his-china-visit",
-              "date": "2026-11-18T14:12:20.000Z",
-              "kind": "hard",
-              "summary": "Handshakes, warm welcomes and carefully staged photo opportunities defined US President Donald Trump’s first day in Shenzhen on Wednesday, as China showcased its diplomatic priorities ahead of a planned three-way summit with Russia. Here are the key moments from the day.",
-              "summaryV": 3,
-              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/18/b4eb1a4d-ac48-4c49-aa61-bf65f66143d7_771a68f7.jpg?itok=W8qgkTzu&v=1795011075"
-            },
-            {
-              "source": "france24",
-              "headline": "Three leaders, three agendas: Who wants what from Xi-Trump-Putin summit?",
-              "url": "https://www.france24.com/en/asia-pacific/20261118-three-leaders-three-agendas-who-wants-what-from-xi-trump-putin-summit",
-              "date": "2026-11-18T14:52:08.000Z",
-              "kind": "feature",
-              "summary": "Be it curbing arms sales to Taiwan, bouncing back after a midterms shellacking, or the optics of a place at the table with the world's two superpowers, Xi Jinping, Donald Trump and Vladimir Putin are approaching their trilateral meeting in Shenzhen with starkly different aims and agendas.",
-              "summaryV": 3,
-              "image": "https://s.france24.com/media/display/846f8b30-e35b-11f1-9492-c5c0357b2a0c/w:1024/p:16x9/AP26316475308509.jpg"
-            },
-            {
-              "source": "africanews",
-              "headline": "Trump, Putin, and Xi meet ahead of historic three-way talks in China",
-              "url": "http://www.africanews.com/2026/11/18/trump-putin-and-xi-meet-ahead-of-historic-three-way-talks-in-china/",
-              "date": "2026-11-18T15:33:22.000Z",
-              "kind": "hard",
-              "summary": "A full agenda has not been made public, but it is believed talks with include the wars in Ukraine and Iran, nuclear proliferation, trade tensions, and AI.",
-              "summaryV": 3
-            },
-            {
-              "source": "bbc",
-              "headline": "Trump shakes hands with Putin and Xi ahead of historic talks in China",
-              "url": "https://www.bbc.co.uk/news/articles/ck9d75x5wwwwo",
-              "date": "2026-11-18T16:10:44.000Z",
-              "kind": "hard",
-              "summary": "The three leaders will meet together for the first time on Thursday during a closely-watched summit.",
-              "summaryV": 3,
-              "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/a9fb/live/b2707bf0-e349-11f1-99aa-0f40b013ad11.jpg",
-              "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/a9fb/live/b2707bf0-e349-11f1-99aa-0f40b013ad11.jpg"
-            },
-            {
-              "source": "mercopress",
-              "headline": "Xi and Putin reaffirm their alliance on the eve of the first three-way summit with Trump",
-              "url": "https://en.mercopress.com/2026/11/18/xi-and-putin-reaffirm-their-alliance-on-the-eve-of-the-first-three-way-summit-with-trump",
-              "date": "2026-11-18T17:25:00.000Z",
-              "kind": "hard",
-              "summary": "Chinese President Xi Jinping and Russian President Vladimir Putin reaffirmed their strategic alliance in Shenzhen on Wednesday, hours before Xi personally greeted Donald Trump at the airport, on the eve of the first three-way meeting between the heads of state of China, Russia and the United States, to be held on…",
-              "summaryV": 3,
-              "image": "https://en.mercopress.com/data/cache/noticias/112147/100x80/79980749-605.jpg"
-            },
-            {
-              "source": "abc",
-              "headline": "The ambitions behind Trump, Xi and Putin's unprecedented meeting",
-              "url": "https://www.abc.net.au/news/2026-11-19/what-trump-putin-xi-want-when-they-meet/107390546",
-              "date": "2026-11-18T18:41:53.000Z",
-              "kind": "feature",
-              "summary": "Presidents Donald Trump, Xi Jinping and Vladimir Putin are about to sit down together for the first time. So what should we expect from this historic meeting?",
-              "summaryV": 3,
-              "image": "https://live-production.wcms.abc-cdn.net.au/7422255e8eccdee8d8f1c03708d9962c?impolicy=wcms_crop_resize&cropH=450&cropW=800&xPos=0&yPos=75&width=862&height=485"
-            }
-          ],
-          "finChecked": true,
-          "image": "https://static.dw.com/image/78531577_6.jpg",
-          "thread": "t1ipacnb"
+          "thread": "t1mn19v5",
+          "stats": {
+            "v": 2,
+            "at": "2026-11-19T11:58:19.976Z",
+            "series": []
+          }
         },
         {
           "id": "s4xx4aw",
@@ -96468,14 +97780,14 @@
   "source": "BBC News & The Guardian & NPR & Al Jazeera & MercoPress & ABC News & The New York Times & CNBC & CBS News & DW & France 24 & Africanews & South China Morning Post & The Hindu & Mint & The Indian Express",
   "lastRun": {
     "filter": {
-      "judged": 126,
-      "kept": 14,
+      "judged": 174,
+      "kept": 29,
       "guarded": 0
     },
     "health": {
       "day": "2026-11-19",
-      "newStories24h": 17,
-      "keepRate2d": 0.101
+      "newStories24h": 21,
+      "keepRate2d": 0.114
     },
     "wars": {
       "linked": 0,
@@ -96483,53 +97795,54 @@
       "active": 7
     },
     "places": {
-      "labelled": 0,
-      "none": 0,
+      "labelled": 1,
+      "none": 1,
       "waiting": 0
     },
     "skipped": {
-      "since": "2026-11-18T20:51:33.308Z",
+      "since": "2026-11-19T02:45:19.422Z",
       "counts": {
-        "section": 13,
-        "live_blog": 5,
+        "section": 26,
+        "live_blog": 11,
+        "podcast_quiz_gallery": 2,
         "stock_tips_tickers": 1,
-        "video_audio": 8
+        "video_audio": 1
       },
       "examples": {
         "section": [
-          "Why has Waymo pulled all its driverless cars from US freeways?",
-          "Catherine visits Mumbai maternity hospital on the last day of royal trip",
-          "Who are the investors ready to jump on Anthropic?",
-          "'More fun being chased': GTA6 co-creator reflects on franchise's evolution – video",
-          "Hegseth unveils new US-Venezuela military deal"
+          "Indian driver wins $1.3m in life-changing lottery prize",
+          "Hannah Lillith Assadi wins US National book award for ‘visionary’ novel Paradiso 17",
+          "When tech workers have to quit their jobs to raise the alarm, it’s time to worry | Isabelle Ferreras",
+          "The Altruists review – two of TV’s best actors light up this chaotic crypto tale",
+          "Outages, spies, and trillion-dollar IPOs: is this our AI future? – Stateside with Kai and Carter"
         ],
         "live_blog": [
-          "Trump downplays US outages and Nvidia security concerns in remarks before China summit – live",
-          "Iran war live: Saudi-led coalition strikes Yemen; ships on fire in Hormuz",
-          "Trump, Xi and Putin Shake Hands as Leaders Gather in China",
-          "India is not in the room in Shenzhen, but it’s watching closely.",
-          "Here’s the latest."
+          "Tusk appears to mock Trump’s Putin comment as Ukraine’s allies meet in Berlin – Europe live",
+          "Badenoch says using amputee athletes to justify cutting disability benefits was ‘message of hope’ – UK politics live",
+          "Hakeem Jeffries on brink of Senate history as he tells Democrats to ‘fight Maga, not each other’ – US politics live",
+          "Trump downplays US outages and Nvidia security concerns in remarks before China summit – as it happened",
+          "Cop31 live: ‘Lean in and move faster,’ climate summit told as deal remains elusive"
+        ],
+        "podcast_quiz_gallery": [
+          "Meet and greet with Will and Kate in India – in pictures",
+          "APEC final day in photos: Trump, Xi and Putin shake hands; Takaichi kept at a distance"
         ],
         "stock_tips_tickers": [
-          "Anthropic sets share price at $83 for stock market debut, above expected range"
+          "Anthropic to float on the stock market today as it raises $81bn in record IPO – business live"
         ],
         "video_audio": [
-          "Watch: Christine Lagarde Wants to Fight Fake News",
-          "Watch: Elon Musk Says He’s a Political Moderate, ‘Not MAGA’",
-          "Watch: Robinhood’s C.E.O. Says He Shouldn’t Decide What You Can Trade",
-          "Watch: Hailey Bieber Says Social Media Has Affected Her Mental Health",
-          "Watch: Palmer Luckey Warns of Falling Behind in A.I. Race"
+          "Watch: OpenAI’s Top Executives Talk Rogue Agents and A.I. Security"
         ]
       }
     },
     "finance": {
-      "moved": 1,
-      "checked": 2
+      "moved": 0,
+      "checked": 6
     },
-    "analysed": 126,
-    "added": 4,
-    "merged": 8,
-    "rejected": 114,
+    "analysed": 174,
+    "added": 11,
+    "merged": 18,
+    "rejected": 145,
     "failedBatches": 0,
     "feeds": {
       "bbc": {
@@ -96540,7 +97853,7 @@
       "guardian": {
         "feedsOk": 7,
         "feedsFailed": 0,
-        "items": 195
+        "items": 191
       },
       "npr": {
         "feedsOk": 4,
@@ -96550,7 +97863,7 @@
       "aljazeera": {
         "feedsOk": 1,
         "feedsFailed": 0,
-        "items": 16
+        "items": 14
       },
       "mercopress": {
         "feedsOk": 3,
@@ -96565,12 +97878,12 @@
       "nyt": {
         "feedsOk": 5,
         "feedsFailed": 0,
-        "items": 168
+        "items": 173
       },
       "cnbc": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 90
+        "items": 89
       },
       "cbs": {
         "feedsOk": 2,
@@ -96585,7 +97898,7 @@
       "france24": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 75
+        "items": 74
       },
       "africanews": {
         "feedsOk": 1,
@@ -96595,22 +97908,22 @@
       "scmp": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 143
+        "items": 144
       }
     },
     "shareImages": {
-      "tried": 2,
-      "found": 2,
+      "tried": 6,
+      "found": 6,
       "summaries": 0
     },
     "threads": {
-      "assigned": 4,
-      "created": 1,
+      "assigned": 11,
+      "created": 5,
       "failedBatches": 0
     },
     "summaries": {
-      "written": 3,
-      "due": 3
+      "written": 0,
+      "due": 6
     },
     "kinds": {
       "labelled": 0,
@@ -96618,75 +97931,76 @@
       "failedBatches": 0
     },
     "frames": {
-      "done": 3,
-      "waiting": 1,
-      "failedBatches": 0
+      "done": 0,
+      "waiting": 6,
+      "failedBatches": 0,
+      "budgetStopped": true
     },
     "stats": {
-      "searched": 2,
-      "found": 0,
+      "searched": 3,
+      "found": 1,
       "reused": 1,
       "none": 1,
       "failed": 0,
-      "proposed": 14,
-      "droppedPoints": 14,
-      "pagesFetched": 0,
+      "proposed": 16,
+      "droppedPoints": 6,
+      "pagesFetched": 1,
       "samples": [
         {
-          "headline": "EU governments approve trade deal with Indonesia to offset Trump tariffs",
-          "result": "no figure found on an official page",
-          "proposed": 14,
-          "checked": 0,
-          "pagesFetched": 0
+          "headline": "‘Too early’ to determine impact of US blockade on Iran, with Tehran defiant",
+          "result": "reused saved series"
         },
         {
-          "headline": "Kuwait reports drone attacks as Iran, US trade attacks on Qeshm and Bahrain",
-          "result": "reused saved series"
+          "headline": "COP31 deal draft foreshadows difficult route to consensus",
+          "result": "chart",
+          "proposed": 10,
+          "checked": 10,
+          "pagesFetched": 1
+        },
+        {
+          "headline": "South China Sea code of conduct: can Beijing and Asean meet 2026 deadline?",
+          "result": "no figure found on an official page",
+          "proposed": 6,
+          "checked": 0,
+          "pagesFetched": 0
         }
       ]
     },
     "models": {
       "filter": {
         "model": "claude-haiku-5-5",
-        "calls": 13,
-        "inputTokens": 59296,
-        "outputTokens": 23022,
-        "cost": 0.0175
+        "calls": 18,
+        "inputTokens": 76416,
+        "outputTokens": 31923,
+        "cost": 0.0236
       },
       "analysis_quick": {
         "model": "claude-sonnet-5-5",
-        "calls": 3,
-        "inputTokens": 8802,
-        "outputTokens": 4736,
-        "cost": 0.065
+        "calls": 5,
+        "inputTokens": 15476,
+        "outputTokens": 15628,
+        "cost": 0.1872
       },
       "stats": {
         "model": "claude-sonnet-5-5",
-        "calls": 1,
-        "inputTokens": 168977,
-        "outputTokens": 1155,
-        "searches": 2,
-        "fetches": 2,
-        "cost": 0.3695
-      },
-      "analysis": {
-        "model": "claude-opus-5-5",
         "calls": 2,
-        "inputTokens": 9064,
-        "outputTokens": 15251,
-        "cost": 0.3412
+        "inputTokens": 129252,
+        "outputTokens": 1759,
+        "searches": 3,
+        "fetches": 3,
+        "cost": 0.3061
       },
       "threads": {
         "model": "claude-sonnet-5-5",
-        "calls": 4,
-        "inputTokens": 12736,
-        "outputTokens": 2370,
-        "cost": 0.0492
+        "calls": 1,
+        "inputTokens": 10121,
+        "outputTokens": 317,
+        "cost": 0.0234
       }
     },
     "spend": {
-      "thisDesk": 0.8424,
-      "today": 3.3028,
+      "thisDesk": 0.5403,
+      "today": 3.9819,
       "cap": 6
     }
   },
