@@ -2,12 +2,206 @@
   "schema": 4,
   "region": "India",
   "since": "2026-10-02",
-  "updatedAt": "2026-11-21T11:28:58.142Z",
+  "updatedAt": "2026-11-21T19:34:27.818Z",
   "sectors": [
     {
       "id": "energy",
       "name": "Energy",
       "items": [
+        {
+          "id": "s99kos4",
+          "headline": "Tankers hit in Strait of Hormuz as Iran tightens grip on shipping",
+          "url": "https://www.aljazeera.com/news/2026/11/21/tankers-hit-in-strait-of-hormuz-as-iran-tightens-grip-on-shipping",
+          "source": "aljazeera",
+          "date": "2026-11-21T15:01:18.000Z",
+          "relevance": "high",
+          "why": "A British maritime agency reports two incidents involving tankers near Oman, and Iran says a tanker caught fire because of a naval mine. Because India imports most of its crude oil, trouble in the Strait of Hormuz could raise its energy costs.",
+          "implications": [
+            "Attacks or mine incidents can raise war-risk insurance and freight costs for tankers using the strait, which would raise the delivered cost of crude and gas for Indian buyers.",
+            "If shipowners avoid the strait or slow their voyages, cargoes bound for Indian refineries could arrive late, which would push India to look for supplies elsewhere."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-21T19:31:22.642Z",
+            "tier": "quick",
+            "primary": "disruption_map",
+            "complement": null,
+            "features": [
+              "disruption",
+              "armed_conflict",
+              "fast_moving"
+            ],
+            "exposure": {
+              "level": "high",
+              "reason": "India depends on imported crude and gas, and Gulf shipments pass through this strait. Higher shipping costs or delays could reach fuel and LPG (liquefied petroleum gas) prices, which touch every household."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Insurance and freight costs can react within days, but crude cargoes take weeks to arrive, and any effect on retail fuel prices would come later still."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "This rests on one outlet citing a British maritime agency and an Iranian statement; the cause of the incidents is unconfirmed and the early report may change."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "up",
+                "what": "risk to fuel prices",
+                "effect": "If crude and gas become costlier or scarcer because of shipping disruption, pump prices and LPG costs could come under upward pressure.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Importers & traders",
+                "direction": "up",
+                "what": "shipping and insurance costs",
+                "effect": "Higher war-risk insurance and freight charges on cargoes through the Gulf could raise the landed cost of imports for Indian traders.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Further incident reports or shipping advisories covering tankers near Oman and the Strait of Hormuz",
+                "why": "They would show whether the incidents are isolated or whether traffic through the strait is being restricted.",
+                "when": "",
+                "where": "British maritime agency advisories"
+              },
+              {
+                "what": "Any Iranian announcement of new rules or controls on shipping through the strait",
+                "why": "It would show whether Iran is formally restricting traffic, which would raise the risk to Indian energy supplies.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "A large share of the world's seaborne oil and liquefied natural gas passes through the Strait of Hormuz, so incidents there tend to move global energy prices quickly.",
+              "India imports most of its crude oil, and a significant part of it comes from Gulf producers."
+            ],
+            "terms": [
+              {
+                "term": "Strait of Hormuz",
+                "meaning": "A narrow waterway between Iran and Oman that links Gulf oil and gas producers to the open sea and carries a large share of global energy shipments."
+              }
+            ],
+            "frameworks": {
+              "disruption_map": {
+                "node": {
+                  "name": "Strait of Hormuz",
+                  "type": "strait",
+                  "status": "unknown",
+                  "as_of": "21 Nov 2026"
+                },
+                "cause": {
+                  "text": "Iran says a tanker caught fire because of a naval mine, while a British maritime agency reports two incidents near Oman whose cause it has not confirmed.",
+                  "status": "claimed"
+                },
+                "flows": [
+                  {
+                    "flow": "crude",
+                    "india_link": "India imports most of its crude oil, and a large part of the Gulf supply to Indian refineries sails through this strait.",
+                    "basis": "inferred"
+                  },
+                  {
+                    "flow": "LNG",
+                    "india_link": "Liquefied natural gas shipped from Gulf producers passes through the strait and supplies Indian power, fertiliser and city gas users.",
+                    "basis": "inferred"
+                  }
+                ],
+                "alternatives": [],
+                "duration": "not reported"
+              }
+            }
+          },
+          "place": {
+            "name": "Strait of Hormuz",
+            "country": "Iran",
+            "lat": 26.6,
+            "lon": 56.3,
+            "involves": [
+              "Oman"
+            ]
+          },
+          "reports": [
+            {
+              "source": "aljazeera",
+              "headline": "Tankers hit in Strait of Hormuz as Iran tightens grip on shipping",
+              "url": "https://www.aljazeera.com/news/2026/11/21/tankers-hit-in-strait-of-hormuz-as-iran-tightens-grip-on-shipping",
+              "date": "2026-11-21T15:01:18.000Z",
+              "kind": "breaking",
+              "summary": "British maritime agency reports two incidents near Oman, while Iran says a tanker caught fire due to naval mine.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/AFP__20261013__D3722EZ__v1__HighRes__UaeIranUsIsraelWarHormuzShipping-1795270231.jpg?resize=1920%2C1440"
+            }
+          ],
+          "stats": {
+            "v": 2,
+            "at": "2026-11-21T19:31:49.057Z",
+            "series": [
+              {
+                "title": "Brent crude spot price, daily",
+                "unit": "US$ per barrel",
+                "publisher": "U.S. Energy Information Administration",
+                "points": [
+                  {
+                    "period": "29 Sep 2026",
+                    "value": 113.96,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "30 Sep 2026",
+                    "value": 115.91,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "1 Oct 2026",
+                    "value": 114.82,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "2 Oct 2026",
+                    "value": 135.51,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "5 Oct 2026",
+                    "value": 125.51,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "6 Oct 2026",
+                    "value": 125.44,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "title": "Spot Prices for Crude Oil and Petroleum Products",
+                    "domain": "eia.gov"
+                  }
+                ],
+                "domains": [
+                  "eia.gov"
+                ],
+                "dropped": 0,
+                "why": "The Brent crude spot price is the benchmark for the oil whose shipping through the Strait of Hormuz is threatened, and it is the series that would show any cost effect from the tanker attacks.",
+                "reused": true,
+                "checkedAt": "2026-10-13T23:11:10.422Z"
+              }
+            ]
+          },
+          "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/AFP__20261013__D3722EZ__v1__HighRes__UaeIranUsIsraelWarHormuzShipping-1795270231.jpg?resize=1920%2C1440",
+          "thread": "t2ogxay"
+        },
         {
           "id": "sz6ug3y",
           "headline": "Yemen's Houthis target Riyadh after Saudi coalition's 'special operation'",
@@ -16,64 +210,93 @@
           "date": "2026-11-20T18:36:15.000Z",
           "relevance": "medium",
           "image": "https://s.france24.com/media/display/43dab966-e511-11f1-b7af-1bac47ab2f5d/w:1024/p:16x9/44975f13e4cedc724dc3005a9fa1d30c73841d8b.jpg",
-          "why": "Yemen's Houthi rebels launched fresh strikes on Riyadh after Saudi-led coalition air raids on Yemen. The fighting could affect Indians in Saudi Arabia and, if it spreads to oil sites, the crude supplies India relies on.",
+          "why": "Yemen's Houthis fired missiles at Riyadh after a Saudi-led coalition 'special operation'. This keeps the Saudi capital under attack, which raises risks for India's crude supplies from Saudi Arabia and for the large Indian community living there.",
           "implications": [
-            "Repeated strikes on the Saudi capital raise the risk of airport closures and flight disruption, which could affect Indians who live in, work in or travel to Saudi Arabia.",
-            "If attacks again reach Saudi oil facilities, supply worries could lift global crude prices, which matter to India because it imports most of the oil it uses."
+            "The coalition says it intercepted three ballistic missiles, but no damage or casualties have been reported, so the immediate physical impact of this round remains unclear.",
+            "Repeated strikes on the Saudi capital could keep traders adding a risk premium to crude prices, which may raise the cost of the oil Indian refiners buy.",
+            "Indian workers and their families in Riyadh may face renewed safety concerns, because earlier strikes in this conflict closed the city's main airport and caused deaths.",
+            "Each Houthi strike now follows a coalition raid, which points to a cycle of reprisals rather than isolated incidents."
           ],
           "analysis": {
             "v": 3,
-            "at": "2026-11-21T11:26:24.825Z",
-            "tier": "quick",
+            "at": "2026-11-21T19:34:11.150Z",
+            "tier": "standard",
             "primary": "escalation",
             "complement": null,
             "features": [
-              "armed_conflict"
+              "armed_conflict",
+              "fast_moving",
+              "pending_outcome"
             ],
             "exposure": {
-              "level": "medium",
-              "reason": "The channels are the safety and travel of Indians in Saudi Arabia and possible effects on crude supply. The report describes no damage to oil sites or harm to Indians, so the exposure stays at medium."
+              "level": "high",
+              "reason": "Missile attacks on Riyadh affect the safety of the many Indians living in Saudi Arabia and threaten a top source of India's crude oil imports."
             },
             "horizon": {
-              "value": "weeks",
-              "reason": "Flight disruption could come quickly, but any fuel price effect would depend on whether attacks reach oil infrastructure and how markets react over the following weeks."
+              "value": "now",
+              "reason": "Safety and travel concerns for Indians in Riyadh arise as soon as missiles are fired, while any effect on oil prices would follow market reactions."
             },
             "confidence": {
-              "level": "low",
-              "reason": "This rests on a single outlet, France 24, with no named official source, and the scale of damage and casualties from the latest strikes is unconfirmed."
+              "level": "medium",
+              "reason": "France 24 and the South China Morning Post report the strikes, but the interception figure comes only from the coalition and damage has not been reported."
             },
-            "outlets": 1,
+            "outlets": 2,
             "affected": [
               {
                 "group": "Gulf & overseas workers and families",
-                "direction": "unclear",
-                "what": "safety and travel in Saudi Arabia",
-                "effect": "Missile strikes on Riyadh could threaten Indian workers living there and disrupt flights that families use to travel or send money home.",
+                "direction": "down",
+                "what": "personal safety in Riyadh",
+                "effect": "Indians living in Riyadh could face greater danger and disruption as Houthi missiles keep targeting the city, which may also worry their families in India.",
                 "basis": "inferred"
               },
               {
                 "group": "Fuel & LPG users",
-                "direction": "unclear",
-                "what": "possible crude price pressure",
-                "effect": "If Saudi oil infrastructure is hit, higher global crude prices could raise refiners' costs and eventually feed through to petrol, diesel and LPG prices in India.",
+                "direction": "up",
+                "what": "fuel price pressure",
+                "effect": "If attacks on Saudi Arabia push up crude prices, refiners' higher costs could eventually feed through to petrol, diesel and cooking gas prices in India.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Travellers & pilgrims",
+                "direction": "down",
+                "what": "flight reliability to Saudi Arabia",
+                "effect": "Further strikes on Riyadh could disrupt flights between India and Saudi Arabia, as earlier attacks in this war closed the city's main airport.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "Any new closure of Saudi airports or reported damage to Saudi oil facilities after further Houthi strikes",
-                "why": "It would show whether the fighting is starting to disrupt Indian travel and global crude supply.",
+                "what": "Saudi or coalition statements reporting damage or casualties from the strikes on Riyadh",
+                "why": "Reported damage or deaths would show whether this round hit its targets or was fully intercepted.",
                 "when": "",
-                "where": "Ministry of External Affairs advisories for Indians in Saudi Arabia"
+                "where": "Saudi-led coalition statements"
+              },
+              {
+                "what": "Travel or safety advisories for Indians in Saudi Arabia issued by the Indian embassy",
+                "why": "An advisory would signal that Indian officials judge the risk to Indian residents and travellers to have risen.",
+                "when": "",
+                "where": "Embassy of India, Riyadh"
+              },
+              {
+                "what": "Reports of Houthi strikes hitting Saudi oil facilities or closing Riyadh's airport again",
+                "why": "Such hits would directly threaten India's oil supplies and air links with Saudi Arabia.",
+                "when": "",
+                "where": ""
               }
             ],
             "context": [
-              "The Houthis are an armed group that controls much of northern Yemen and has long fought a Saudi-led coalition. Saudi Arabia is a major oil supplier to India and home to a very large Indian workforce."
+              "Saudi Arabia is one of India's largest suppliers of crude oil, and India imports most of the oil it consumes, so threats to Saudi stability tend to affect Indian fuel costs.",
+              "Saudi Arabia hosts one of the largest Indian expatriate communities in the Gulf, and their earnings form an important part of the remittances sent home to Indian households.",
+              "Yemen borders the southern Red Sea, a shipping route that carries much of India's trade with Europe."
             ],
             "terms": [
               {
                 "term": "Saudi-led coalition",
-                "meaning": "A group of countries led by Saudi Arabia that carries out air operations in Yemen against the Houthis."
+                "meaning": "A military alliance headed by Saudi Arabia that has been fighting the Houthi rebels in Yemen's civil war."
+              },
+              {
+                "term": "ballistic missiles",
+                "meaning": "Rockets that are launched on a high, arching path towards a target and can travel long distances quickly."
               }
             ],
             "frameworks": {
@@ -82,16 +305,16 @@
                 "rung": 6,
                 "current_rung": 6,
                 "previous_rung": null,
-                "development": "The Houthis launched new strikes on Riyadh after Saudi-led coalition air raids on Yemen, continuing the cross-border attacks on Saudi territory.",
-                "evidence": "Both sides are trading air raids and missile strikes, but the report describes no full-scale invasion or declared all-out war. The war therefore stays at the rung set in October.",
+                "development": "The Houthis launched a new round of missile strikes on Riyadh in reprisal for a Saudi-led coalition 'special operation', and the coalition says it intercepted three ballistic missiles.",
+                "evidence": "Strikes on the Saudi capital continue the attacks on Saudi cities and infrastructure that put the war at rung 6 in October. No new action at a higher level and no ceasefire has been reported.",
                 "next_signals": [
                   {
                     "rung": 7,
-                    "signal": "Large ground offensives by coalition or Houthi forces begin alongside continuous air and missile campaigns across both countries."
+                    "signal": "Saudi or coalition ground forces launch a large-scale offensive into Yemen, or other states join the fighting with their own forces."
                   },
                   {
-                    "rung": 4,
-                    "signal": "A truce takes effect and Houthi missile fire on Saudi cities and coalition air raids on Yemen both stop."
+                    "rung": 5,
+                    "signal": "The Houthis halt attacks on Saudi territory and infrastructure while exchanges of strikes continue inside Yemen."
                   }
                 ],
                 "india_channels": [
@@ -103,7 +326,15 @@
                 "applied": "none",
                 "from": 6
               }
-            }
+            },
+            "reading": [
+              {
+                "headline": "Are Houthis using Russian satellites as Saudi Arabia fends off strikes?",
+                "url": "https://www.aljazeera.com/news/2026/10/31/are-houthis-using-russian-satellites-as-saudi-arabia-faces-hits",
+                "source": "aljazeera",
+                "date": "2026-10-31T08:08:30.000Z"
+              }
+            ]
           },
           "conflict": "w1f5pudc",
           "place": {
@@ -44923,6 +45154,167 @@
       "name": "Economy & Trade",
       "items": [
         {
+          "id": "s20moy5",
+          "headline": "EU governments approve trade deal with Indonesia to offset Trump tariffs",
+          "url": "https://www.aljazeera.com/economy/2026/11/19/eu-governments-approve-trade-deal-with-indonesia-to-offset-trump-tariffs",
+          "source": "aljazeera",
+          "date": "2026-11-19T00:11:40.000Z",
+          "relevance": "medium",
+          "why": "The EU and Indonesia signed a trade deal that removes import duties on more than 90 percent of products and is expected to take effect early next year. Indonesian goods may gain a tariff edge over competing Indian exports in Europe.",
+          "implications": [
+            "Indian exporters in sectors where Indonesia also sells to Europe could find Indonesian rivals paying lower EU tariffs, which may squeeze Indian margins or market share.",
+            "Duty-free access to Europe may draw new investment into Indonesia, as firms looking for an Asian base to supply the EU could weigh it against locations such as India.",
+            "The EU says it is diversifying trade ties amid Trump tariffs and wider economic tensions, which suggests Brussels could remain open to similar agreements with other Asian partners."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-21T19:34:11.150Z",
+            "tier": "standard",
+            "primary": "policy_tracker",
+            "complement": null,
+            "features": [
+              "policy_stage",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The channel is competition in the EU market, where Indonesian goods may gain a tariff advantage over Indian exports. This touches particular export industries rather than household essentials, so exposure is medium."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "The deal is expected to enter into force early next year, after which tariff advantages for Indonesian goods could begin to affect Indian exporters."
+            },
+            "confidence": {
+              "level": "high",
+              "reason": "Al Jazeera, the South China Morning Post and DW agree that EU governments approved the deal and both sides formally signed it in Brussels."
+            },
+            "outlets": 3,
+            "affected": [
+              {
+                "group": "Large exporters",
+                "direction": "down",
+                "what": "EU market competitiveness",
+                "effect": "Large Indian exporters competing with Indonesian suppliers could face rivals with lower EU import duties, which may make Indian goods relatively costlier for European buyers.",
+                "basis": "inferred"
+              },
+              {
+                "group": "MSME exporters",
+                "direction": "down",
+                "what": "EU price competitiveness",
+                "effect": "Smaller Indian exporters with thin margins may find it harder to match Indonesian prices in Europe once Indonesian goods enter with reduced duties.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "The EU–Indonesia trade agreement formally entering into force",
+                "why": "It would mark when Indonesian goods begin receiving lower EU tariffs that Indian exporters may have to compete against.",
+                "when": "early next year",
+                "where": "European Commission"
+              }
+            ],
+            "context": [
+              "The EU is one of India's largest trading partners, and Indian firms sell substantial volumes of clothing, textiles, chemicals and engineering goods there.",
+              "India has pursued its own free trade agreement with the EU for years, so each deal Brussels signs with an Asian competitor raises the stakes of India securing comparable access.",
+              "Trade agreements usually phase in tariff cuts and require exporters to prove where goods were made, so their effect on competitors tends to build gradually."
+            ],
+            "terms": [],
+            "frameworks": {
+              "policy_tracker": {
+                "instrument": {
+                  "name": "EU–Indonesia trade agreement",
+                  "issuer": "European Union and Indonesia",
+                  "jurisdiction": "European Union and Indonesia"
+                },
+                "stages": [
+                  {
+                    "stage": "announced",
+                    "date": "2025",
+                    "status": "done"
+                  },
+                  {
+                    "stage": "adopted",
+                    "date": "21 Nov 2026",
+                    "status": "done"
+                  },
+                  {
+                    "stage": "in_force",
+                    "date": "Early 2027",
+                    "status": "next"
+                  }
+                ],
+                "obligations": [
+                  {
+                    "who": "European Union and Indonesia",
+                    "what": "Both sides must remove import duties on more than 90 percent of products under the agreement, opening their markets to each other's goods.",
+                    "from": "Early 2027"
+                  }
+                ],
+                "applies_to_india": "no",
+                "india_note": "The agreement does not bind India, but Indian exporters selling into the EU may face Indonesian competitors with lower tariffs once it takes effect."
+              }
+            },
+            "reading": [
+              {
+                "headline": "EU, ASEAN pursue deeper trade ties, but hurdles remain as businesses struggle with informal barriers",
+                "url": "https://www.dw.com/en/eu-asean-pursue-deeper-trade-ties-but-hurdles-remain-as-businesses-struggle-with-informal-barriers/a-79971350",
+                "source": "dw",
+                "date": "2026-11-17T14:24:00.000Z"
+              }
+            ]
+          },
+          "place": {
+            "name": "Brussels",
+            "country": "Belgium",
+            "lat": 50.85,
+            "lon": 4.35,
+            "involves": [
+              "Indonesia"
+            ]
+          },
+          "reports": [
+            {
+              "source": "aljazeera",
+              "headline": "EU governments approve trade deal with Indonesia to offset Trump tariffs",
+              "url": "https://www.aljazeera.com/economy/2026/11/19/eu-governments-approve-trade-deal-with-indonesia-to-offset-trump-tariffs",
+              "date": "2026-11-19T00:11:40.000Z",
+              "kind": "hard",
+              "summary": "The deal, initially concluded in 2025, will see both sides remove import duties on more than 90 percent of products.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/2025-02-12T074119Z_1802006394_RC2RSCAYO210_RTRMADP_3_TOTW-TRADE-1795042196.jpg?resize=1920%2C1440"
+            },
+            {
+              "source": "scmp",
+              "headline": "Indonesia, EU sign ‘ambitious’ trade deal",
+              "url": "https://www.scmp.com/news/asia/southeast-asia/article/3375341/indonesia-eu-sign-ambitious-trade-deal",
+              "date": "2026-11-21T13:46:13.000Z",
+              "kind": "hard",
+              "summary": "The EU and Indonesia officially signed a trade deal to open up their markets in Brussels on Saturday, paving the way for the accord to come into force early next year.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/21/a19afd8c-8876-4faf-9e3b-4dfc160e9ae0_6a2c5432.jpg?itok=9PZLccGM&v=1795268772"
+            },
+            {
+              "source": "dw",
+              "headline": "EU and Indonesia sign trade deal",
+              "url": "https://www.dw.com/en/eu-and-indonesia-sign-trade-deal/a-80010099",
+              "date": "2026-11-21T15:21:00.000Z",
+              "kind": "hard",
+              "summary": "A deal covering 730 million people promises lower tariffs and new investment opportunities as the European Union seeks to diversify trade ties amid growing global economic tensions.",
+              "summaryV": 3
+            }
+          ],
+          "finChecked": true,
+          "stats": {
+            "v": 2,
+            "at": "2026-11-19T02:42:40.919Z",
+            "series": []
+          },
+          "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/2025-02-12T074119Z_1802006394_RC2RSCAYO210_RTRMADP_3_TOTW-TRADE-1795042196.jpg?resize=1920%2C1440",
+          "thread": "t1iry49x"
+        },
+        {
           "id": "s96kmr7",
           "headline": "Live: Burnham hails 'landmark' EU-UK deal on trade, youth mobility as 'good day' for Europe",
           "url": "https://www.france24.com/en/europe/20261120-eu-and-uk-set-to-sign-deals-on-trade-energy-youth-mobility-at-brussels-summit",
@@ -46485,126 +46877,6 @@
           ],
           "finChecked": true,
           "thread": "t1tc0guw"
-        },
-        {
-          "id": "s20moy5",
-          "headline": "EU governments approve trade deal with Indonesia to offset Trump tariffs",
-          "url": "https://www.aljazeera.com/economy/2026/11/19/eu-governments-approve-trade-deal-with-indonesia-to-offset-trump-tariffs",
-          "source": "aljazeera",
-          "date": "2026-11-19T00:11:40.000Z",
-          "relevance": "medium",
-          "why": "European Union governments have approved a trade deal with Indonesia, first concluded in 2025, under which both sides remove import duties on more than 90 percent of products. Indian exporters competing in European markets could face a rival with cheaper access.",
-          "implications": [
-            "Indonesian goods that compete with Indian products in European shops could become cheaper for European buyers once duties fall, which could erode the price advantage of Indian suppliers.",
-            "The deal is described as a way to offset United States tariffs, which suggests the European Union is widening its network of trade partners as American market access becomes less certain."
-          ],
-          "analysis": {
-            "v": 3,
-            "at": "2026-11-19T02:41:18.543Z",
-            "tier": "quick",
-            "primary": "trade_flow",
-            "complement": null,
-            "features": [
-              "trade_flow"
-            ],
-            "exposure": {
-              "level": "medium",
-              "reason": "The channel is competition in the European market for Indian exporters of goods that Indonesia also sells. It affects particular industries rather than a household essential, so the exposure is medium."
-            },
-            "horizon": {
-              "value": "years",
-              "reason": "The date the deal takes effect has not been reported, and any shift in buyers' sourcing usually builds up gradually after duties fall."
-            },
-            "confidence": {
-              "level": "low",
-              "reason": "This rests on a single outlet, Al Jazeera, with no named official quoted, and the entry-into-force date and product coverage are not confirmed."
-            },
-            "outlets": 1,
-            "affected": [
-              {
-                "group": "MSME exporters",
-                "direction": "down",
-                "what": "European market competitiveness",
-                "effect": "Small Indian exporters of goods that Indonesia also sells could lose ground in Europe if Indonesian products enter duty-free while Indian goods still pay duties.",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "The date on which the European Union and Indonesia deal formally enters into force and duty cuts begin",
-                "why": "It would show when Indonesian exporters start to gain a tariff advantage over Indian rivals in Europe.",
-                "when": "",
-                "where": "European Commission"
-              }
-            ],
-            "context": [
-              "Countries with a trade agreement with the European Union usually pay lower or no import duties, while exporters without one pay the standard rate. This gives agreement partners an edge on price.",
-              "India and Indonesia both export labour-intensive goods such as textiles and footwear, so Indian exporters often compete directly with Indonesian ones in the same overseas markets."
-            ],
-            "terms": [],
-            "frameworks": {
-              "trade_flow": {
-                "good": "Goods in general: both sides will remove import duties on more than 90 percent of products",
-                "actors": [
-                  {
-                    "country": "European Union",
-                    "role": "importer",
-                    "is_india": false
-                  },
-                  {
-                    "country": "Indonesia",
-                    "role": "exporter",
-                    "is_india": false
-                  },
-                  {
-                    "country": "United States",
-                    "role": "third_party",
-                    "is_india": false
-                  }
-                ],
-                "change": {
-                  "type": "deal",
-                  "effective": ""
-                },
-                "india_position": {
-                  "role": "rival_exporter",
-                  "note": "India is not a party to this deal but sells many similar goods to Europe. Indian exporters could face tougher price competition if Indonesian goods enter duty-free while Indian goods still pay duties."
-                },
-                "volumes": []
-              }
-            }
-          },
-          "place": {
-            "name": "Brussels",
-            "country": "Belgium",
-            "lat": 50.85,
-            "lon": 4.35,
-            "involves": [
-              "Indonesia"
-            ]
-          },
-          "reports": [
-            {
-              "source": "aljazeera",
-              "headline": "EU governments approve trade deal with Indonesia to offset Trump tariffs",
-              "url": "https://www.aljazeera.com/economy/2026/11/19/eu-governments-approve-trade-deal-with-indonesia-to-offset-trump-tariffs",
-              "date": "2026-11-19T00:11:40.000Z",
-              "kind": "hard",
-              "summary": "The deal, initially concluded in 2025, will see both sides remove import duties on more than 90 percent of products.",
-              "summaryV": 3,
-              "ogTried": true,
-              "descTried": true,
-              "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/2025-02-12T074119Z_1802006394_RC2RSCAYO210_RTRMADP_3_TOTW-TRADE-1795042196.jpg?resize=1920%2C1440"
-            }
-          ],
-          "finChecked": true,
-          "stats": {
-            "v": 2,
-            "at": "2026-11-19T02:42:40.919Z",
-            "series": []
-          },
-          "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/2025-02-12T074119Z_1802006394_RC2RSCAYO210_RTRMADP_3_TOTW-TRADE-1795042196.jpg?resize=1920%2C1440",
-          "thread": "t1iry49x"
         },
         {
           "id": "sp8oduk",
@@ -71293,6 +71565,116 @@
       "name": "Technology",
       "items": [
         {
+          "id": "srvvs5g",
+          "headline": "India’s opposition stages protests against Meta over account removals",
+          "url": "https://www.aljazeera.com/news/2026/11/21/indias-opposition-stages-protests-against-meta-over-account-removals",
+          "source": "aljazeera",
+          "date": "2026-11-21T16:14:01.000Z",
+          "relevance": "medium",
+          "why": "The Indian Youth Congress has staged protests against Meta over the removal of accounts and given the company a seven-day ultimatum to lift all restrictions. The dispute puts a major social media platform in conflict with an Indian opposition party.",
+          "implications": [
+            "A public dispute between an opposition party and a foreign platform could draw in the government or regulators, who set the rules Meta must follow in India.",
+            "How Meta responds could shape how political groups and ordinary users view the fairness of account removals on its platforms in India."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-21T19:31:22.645Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "The reports describe a political protest and a deadline but no direct channel to prices, jobs or trade. Any wider effect would depend on how many accounts are affected and who they belong to."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "The seven-day ultimatum sets a short deadline, and any regulatory or company response would follow over the next few weeks."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single outlet's short report, and the number of accounts removed, the reasons and Meta's response have not been reported."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "MSME exporters",
+                "direction": "unclear",
+                "what": "access to online customers",
+                "effect": "If removed accounts include business pages, small firms that use Meta platforms to reach customers could lose that access, though the reports do not say whether they are affected.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Expiry of the seven-day ultimatum and any response or statement from Meta",
+                "why": "It would show whether Meta restores accounts or the dispute escalates into further protests.",
+                "when": "seven days after the ultimatum was issue",
+                "where": ""
+              }
+            ],
+            "context": [
+              "India is one of the largest markets for Meta's services, including Facebook, Instagram and WhatsApp.",
+              "Platforms enforce their own community standards while also following Indian law, so disputes over account removals can become political."
+            ],
+            "terms": [
+              {
+                "term": "Indian Youth Congress",
+                "meaning": "The youth wing of the Indian National Congress, a leading opposition party."
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Opposition protests over account removals",
+                    "detail": "The Indian Youth Congress has staged protests against Meta over the removal of accounts and issued a seven-day ultimatum.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Demand to lift all restrictions",
+                    "detail": "The group is urging Meta to lift all restrictions, which sets a short deadline and puts public pressure on the company.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Possible escalation or review",
+                    "detail": "If Meta does not respond, the dispute could escalate and draw in regulators or the government, who set the rules for platforms operating in India.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "Meta restores the accounts or explains the removals to the satisfaction of the protesters before the deadline, so the dispute ends without wider consequences."
+              }
+            }
+          },
+          "place": {
+            "name": "New Delhi",
+            "country": "India",
+            "lat": 28.61,
+            "lon": 77.21,
+            "involves": [
+              "United States"
+            ]
+          },
+          "reports": [
+            {
+              "source": "aljazeera",
+              "headline": "India’s opposition stages protests against Meta over account removals",
+              "url": "https://www.aljazeera.com/news/2026/11/21/indias-opposition-stages-protests-against-meta-over-account-removals",
+              "date": "2026-11-21T16:14:01.000Z",
+              "kind": "hard",
+              "summary": "Indian Youth Congress issues a seven-day 'ultimatum' to the US technology giant, urging it to lift all restrictions.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/reuters_6b01aa96-1795271318.jpg?resize=1200%2C675"
+            }
+          ],
+          "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/reuters_6b01aa96-1795271318.jpg?resize=1200%2C675",
+          "thread": "t1u5d619"
+        },
+        {
           "id": "sd00emc",
           "headline": "Trump Threatens to Bar U.S. Tech Firms From Building Data Centers Abroad",
           "url": "https://www.nytimes.com/2026/11/20/us/politics/trump-data-centers-ban.html",
@@ -80769,16 +81151,16 @@
           "date": "2026-11-20T15:34:06.000Z",
           "relevance": "medium",
           "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/20/26a0c531-be78-4c7e-baff-8d18a9e6ee90_bc91bf94.jpg?itok=H3lMNF-q&v=1795188831",
-          "why": "The COP31 climate talks in Antalya, Turkey, went into overtime as nearly 200 countries split over fossil fuels and climate finance. The final text could shape international pressure on India's coal use and the money available for its energy transition.",
+          "why": "COP31 talks in Antalya, Turkey, overran their deadline as nearly 200 countries deadlocked over fossil fuels, climate finance and warming targets. The outcome could shape pressure on India's coal-heavy energy use and its access to climate finance.",
           "implications": [
-            "The draft deal is silent on fossil fuels, which would ease near-term pressure on coal-dependent economies such as India but weaken collective action on the warming that harms Indian farmers and cities.",
-            "The European Union warns that COP31 risks becoming a 'fossil summit', so it may push for stronger language that developing coal users could resist.",
-            "African negotiators are demanding concrete climate-justice measures, a stance close to India's long-standing call for developed countries to provide more climate finance to poorer nations.",
-            "If climate finance commitments remain weak, India could have to fund more of its renewable energy and adaptation spending from domestic budgets or costlier private capital."
+            "Because the draft deal is silent on fossil fuels, India could face little new formal pressure on coal from this summit, although the European Union (EU) is pushing for stronger language.",
+            "The EU has warned that COP31 risks becoming a 'fossil summit', which signals that wealthy blocs may keep pressing large coal users such as India in future rounds even if this text stays weak.",
+            "Unresolved climate finance matters to India because developing countries rely on money from richer nations for clean energy and adaptation, and a weak finance outcome could slow such flows.",
+            "African negotiators are demanding concrete climate-justice measures, and if developing countries push jointly on finance, India's long-standing call for richer nations to pay more could gain support."
           ],
           "analysis": {
             "v": 3,
-            "at": "2026-11-21T02:36:18.041Z",
+            "at": "2026-11-21T19:34:11.149Z",
             "tier": "deep",
             "primary": "impact_chain",
             "complement": "scenarios",
@@ -80787,112 +81169,118 @@
             ],
             "exposure": {
               "level": "medium",
-              "reason": "The outcome reaches India through its international climate commitments and access to climate finance. It shapes policy obligations and funding rather than directly changing household prices."
+              "reason": "The effect reaches India through the commitments it accepts on fossil fuels and the climate finance it can access. These shape policy over time rather than household costs immediately, so exposure is medium."
             },
             "horizon": {
               "value": "years",
-              "reason": "Summit decisions shape national climate plans and finance flows that are implemented over several years rather than immediately."
+              "reason": "Any COP31 decision works through national climate plans and finance flows, which usually take more than a year to change policy on the ground."
             },
             "confidence": {
               "level": "high",
-              "reason": "The South China Morning Post, Africanews, The Guardian and Al Jazeera agree the talks ran into overtime with fossil fuels unresolved, while the final text is not yet known."
+              "reason": "Outlets including the BBC, The Guardian, Al Jazeera and France 24 agree the talks are deadlocked and cite on-record EU and African positions; the final outcome remains unknown."
             },
-            "outlets": 4,
+            "outlets": 6,
             "affected": [
-              {
-                "group": "Government finances",
-                "direction": "unclear",
-                "what": "climate finance inflows",
-                "effect": "The scale of finance agreed could change how much of India's clean-energy and adaptation spending must be funded from its own budget.",
-                "basis": "inferred"
-              },
               {
                 "group": "Power consumers",
                 "direction": "unclear",
-                "what": "pace of coal transition",
-                "effect": "Fossil fuel language in the final deal could influence how quickly India shifts power generation away from coal, with possible long-term effects on electricity costs.",
+                "what": "coal power policy pressure",
+                "effect": "Any fossil fuel commitment in the final deal could, over time, influence how India plans coal-fired generation, which supplies much of its electricity.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Government finances",
+                "direction": "unclear",
+                "what": "access to climate finance",
+                "effect": "The scale of climate finance agreed could affect how much outside money the Indian government can draw on for clean energy and adaptation projects.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "Whether the final COP31 decision text includes any language on fossil fuels",
-                "why": "It would show how much international pressure coal-reliant countries such as India face to cut fossil fuel use.",
+                "what": "Adoption of a final COP31 decision text by the nearly 200 negotiating countries",
+                "why": "It would show whether the talks ended in agreement and what commitments India has accepted.",
                 "when": "",
                 "where": "UN Framework Convention on Climate Change (UNFCCC)"
               },
               {
-                "what": "Climate finance commitments in the final COP31 agreement",
-                "why": "It would indicate how much external funding developing countries, including India, can expect for their energy transition and adaptation.",
+                "what": "Whether the final text adds any reference to fossil fuels",
+                "why": "It would indicate how much new international pressure India may face over its coal use.",
                 "when": "",
                 "where": "UN Framework Convention on Climate Change (UNFCCC)"
+              },
+              {
+                "what": "Any climate finance commitments agreed for developing countries",
+                "why": "They would show whether money for clean energy and adaptation in countries such as India is likely to grow.",
+                "when": "",
+                "where": ""
               }
             ],
             "context": [
-              "India relies on coal for most of its electricity and has argued at past climate summits that developed countries, which emitted more historically, should cut faster and pay more.",
-              "UN climate conferences decide by consensus, so a single text must satisfy almost every country, and talks frequently run past their scheduled close.",
-              "At earlier summits India pressed for coal 'phase-down' rather than 'phase-out' language and has consistently linked its climate commitments to the finance and technology it receives."
+              "UN climate summits decide by consensus, so a single bloc can stall an agreement, and final texts often emerge only after talks run past their scheduled close.",
+              "India generates most of its electricity from coal and has long argued that richer countries, which emitted more historically, should cut emissions faster and provide finance to developing nations.",
+              "The world is widely seen as overshooting the Paris Agreement's more ambitious warming limit, which raises pressure on negotiators to strengthen national commitments."
             ],
             "terms": [
               {
                 "term": "COP31",
-                "meaning": "The 31st Conference of the Parties, the annual United Nations summit where governments negotiate global action on climate change."
+                "meaning": "The 31st Conference of the Parties, the annual United Nations summit where governments negotiate under the global climate treaty."
+              },
+              {
+                "term": "AGN",
+                "meaning": "The African Group of Negotiators on Climate Change, the bloc that represents African countries jointly in UN climate talks."
               },
               {
                 "term": "climate finance",
-                "meaning": "Money, often from richer countries, to help developing nations cut emissions and adapt to the effects of climate change."
-              },
-              {
-                "term": "African Group of Negotiators on Climate Change (AGN)",
-                "meaning": "A bloc that represents African countries jointly in UN climate negotiations."
+                "meaning": "Money that richer countries and institutions provide to help developing countries cut emissions and adapt to climate change."
               }
             ],
             "frameworks": {
               "impact_chain": {
                 "chain": [
                   {
-                    "step": "COP31 talks run into overtime",
-                    "detail": "Negotiators from nearly 200 countries in Antalya could not bridge divisions over fossil fuels and climate finance by the summit's official deadline on 20 November.",
-                    "basis": "reported"
-                  },
-                  {
                     "step": "Draft deal omits fossil fuels",
-                    "detail": "The draft text is silent on fossil fuels. The EU warns of a 'fossil summit', while African negotiators demand concrete climate-justice measures and civil society groups denounce the outcome.",
+                    "detail": "The draft COP31 agreement made no mention of fossil fuels. The EU warned of a 'fossil summit', and civil society groups called it the 'worst Cop ever'.",
                     "basis": "reported"
                   },
                   {
-                    "step": "Final text sets global pressure",
-                    "detail": "Whatever wording survives could set the level of international pressure on coal-reliant economies and the finance on offer to developing countries, including India.",
+                    "step": "Talks deadlock and overrun",
+                    "detail": "Negotiators from nearly 200 countries remained divided over fossil fuels, climate finance and warming targets, pushing the summit past its scheduled close on Friday 20 November.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Final text sets global expectations",
+                    "detail": "Whatever wording is finally adopted could define how strongly countries are expected to move away from fossil fuels and how much finance richer nations provide.",
                     "basis": "inferred"
                   },
                   {
-                    "step": "India's transition path adjusts",
-                    "detail": "India's climate plans, coal policy and funding for renewable energy and adaptation could be shaped by these outcomes over the coming years.",
+                    "step": "India adjusts plans and finance",
+                    "detail": "India may then face changed pressure on its coal-reliant power sector and a larger or smaller pool of international finance for clean energy and adaptation.",
                     "basis": "inferred"
                   }
                 ],
-                "breaks_if": "The effect on India would be limited if the final deal makes no new commitments on fossil fuels or finance, leaving existing national plans unchanged."
+                "breaks_if": "The effect would not reach India if the final agreement adds no new fossil fuel or finance commitments that bear on developing countries."
               },
               "scenarios": {
-                "question": "Will the final COP31 agreement address fossil fuels and climate finance, or will the deadlock end in a weak deal?",
+                "question": "Will COP31 end with an agreement, and will that agreement address fossil fuels and climate finance?",
                 "scenarios": [
                   {
                     "name": "Deal silent on fossil fuels",
-                    "what": "Countries adopt a text close to the draft, which says nothing on fossil fuels and leaves finance divisions largely unresolved.",
-                    "signal": "The final decision text is adopted without any reference to fossil fuels.",
-                    "india_effect": "India could face little new pressure on coal, but a weak global outcome may do less to curb the warming that affects Indian agriculture and health."
+                    "what": "Countries adopt a text close to the earlier draft, which made no mention of fossil fuels, and close the summit without new energy commitments.",
+                    "signal": "The final text released at the summit, like the earlier draft, contains no reference to fossil fuels.",
+                    "india_effect": "India may face little new formal pressure on coal from this summit, although criticism from the EU and civil society groups could carry into later talks."
                   },
                   {
-                    "name": "Fossil language added",
-                    "what": "Pressure from the EU and others leads to wording on fossil fuels being inserted into the final agreement.",
-                    "signal": "A revised draft circulated during overtime includes a reference to transitioning away from fossil fuels.",
-                    "india_effect": "India may come under stronger expectations to plan a shift away from coal, making the finance it receives more important to its position."
+                    "name": "Fossil fuel language added",
+                    "what": "Under pressure from the EU and others, negotiators insert wording on fossil fuels into the final agreement before it is adopted.",
+                    "signal": "Revised drafts include explicit references to fossil fuels, and the EU stops warning of a 'fossil summit'.",
+                    "india_effect": ""
                   },
                   {
-                    "name": "Prolonged deadlock",
-                    "what": "Divisions over fossil fuels and climate finance persist, and the talks end with a minimal text or are pushed to later meetings.",
-                    "signal": "Negotiations extend well beyond the deadline with no consensus text adopted.",
-                    "india_effect": "Uncertainty over climate finance could persist, which may delay funding India and other developing countries seek for clean energy and adaptation."
+                    "name": "No agreement reached",
+                    "what": "Deep divisions over fossil fuels, climate finance and warming targets prevent consensus, and the summit ends without a new global deal.",
+                    "signal": "Talks keep overrunning without any text that all countries are willing to accept.",
+                    "india_effect": "A breakdown could leave climate finance questions for developing countries, including India, unresolved and push the disputes into later rounds of negotiation."
                   }
                 ]
               }
@@ -80971,6 +81359,26 @@
               "summaryV": 3,
               "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/5253/live/c9ca5500-e579-11f1-a5f6-b3028adf2d6d.jpg",
               "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/5253/live/c9ca5500-e579-11f1-a5f6-b3028adf2d6d.jpg"
+            },
+            {
+              "source": "france24",
+              "headline": "Countries race to secure Cop31 deal",
+              "url": "https://www.france24.com/en/countries-race-to-secure-cop31-deal",
+              "date": "2026-11-21T15:52:00.000Z",
+              "kind": "hard",
+              "summary": "COP31 climate talks have overrun their schedule as countries race to agree on a new global climate deal, following criticism of an earlier draft that made no mention of fossil fuels.",
+              "summaryV": 3,
+              "image": "https://s.france24.com/media/display/6d4f505c-e5c2-11f1-a7da-1bac47ab2f5d/w:1024/p:16x9/EN-20261121-140732-141202-CS.jpg"
+            },
+            {
+              "source": "france24",
+              "headline": "COP31: Deep divisions persist over energy, finance and science",
+              "url": "https://www.france24.com/en/cop31-deep-divisions-persist-over-energy-finance-and-science",
+              "date": "2026-11-21T17:26:47.000Z",
+              "kind": "hard",
+              "summary": "COP31 climate talks in Turkey have gone into overtime, with deep divisions over fossil fuels, climate finance and global warming targets delaying an agreement.",
+              "summaryV": 3,
+              "image": "https://s.france24.com/media/display/2e281d9c-e5d0-11f1-9a79-6b451f569414/w:1024/p:16x9/EN-20261121-171141-171326-CS.jpg"
             }
           ],
           "thread": "t4rp4vx",
@@ -81031,6 +81439,61 @@
               }
             ]
           }
+        },
+        {
+          "id": "sjf7muc",
+          "headline": "Strait of Hormuz: Athlete swims through war zone to expose war's environmental toll",
+          "url": "http://www.africanews.com/2026/11/21/strait-of-hormuz-athlete-swims-through-war-zone-to-expose-wars-environmental-toll/",
+          "source": "africanews",
+          "date": "2026-11-21T12:18:46.000Z",
+          "relevance": "medium",
+          "why": "",
+          "implications": [],
+          "place": {
+            "name": "Strait of Hormuz",
+            "country": "Iran",
+            "lat": 26.6,
+            "lon": 56.3,
+            "involves": [
+              "United States"
+            ]
+          },
+          "reports": [
+            {
+              "source": "africanews",
+              "headline": "Strait of Hormuz: Athlete swims through war zone to expose war's environmental toll",
+              "url": "http://www.africanews.com/2026/11/21/strait-of-hormuz-athlete-swims-through-war-zone-to-expose-wars-environmental-toll/",
+              "date": "2026-11-21T12:18:46.000Z",
+              "kind": "soft",
+              "summary": "British endurance swimmer Lewis Pugh completed a 15-kilometre swim through the Strait of Hormuz over three days in November 2026, braving explosions and burning tankers nearby. His three-day challenge aimed to expose the environmental damage caused by the war with Iran.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true
+            },
+            {
+              "source": "france24",
+              "headline": "Endurance athlete swims in Hormuz Strait",
+              "url": "https://www.france24.com/en/endurance-athlete-swims-in-hormuz-strait",
+              "date": "2026-11-21T16:02:59.000Z",
+              "kind": "soft",
+              "summary": "The Strait of Hormuz remains largely blocked, with Iran attacking vessels attempting to cross it.",
+              "summaryV": 3,
+              "image": "https://s.france24.com/media/display/00399db4-e5c3-11f1-8eee-1bac47ab2f5d/w:1024/p:16x9/EN-20261121-141231-141431-CS.jpg"
+            },
+            {
+              "source": "bbc",
+              "headline": "Hormuz swim highlights environmental cost of war",
+              "url": "https://www.bbc.co.uk/news/articles/c95y1gr27xplo",
+              "date": "2026-11-21T16:12:31.000Z",
+              "kind": "feature",
+              "summary": "Ocean campaigner Lewis Pugh completes Hormuz challenge and warns of lasting environmental damage.",
+              "summaryV": 3,
+              "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/af51/live/b6455810-e5c2-11f1-a188-ff49e70cc466.jpg",
+              "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/af51/live/b6455810-e5c2-11f1-a188-ff49e70cc466.jpg"
+            }
+          ],
+          "image": "https://s.france24.com/media/display/00399db4-e5c3-11f1-8eee-1bac47ab2f5d/w:1024/p:16x9/EN-20261121-141231-141431-CS.jpg",
+          "thread": "t2ogxay"
         },
         {
           "id": "srm3slp",
@@ -86122,72 +86585,83 @@
           "source": "aljazeera",
           "date": "2026-11-21T08:48:54.000Z",
           "relevance": "medium",
-          "why": "Illicit alcohol has killed 11 people and poisoned 180 in Manipur, a state in northeast India. The chief minister has ordered an investigation and promised arrests, so the effect is on public health and law enforcement in the state.",
+          "why": "At least 11 people have died and more than 180 have been hospitalised in Manipur after drinking suspected tainted alcohol. Chief Minister Yumnam Khemchand Singh has ordered a probe and said those responsible will be arrested and punished.",
           "implications": [
-            "The 180 people poisoned may need hospital treatment, which could strain local health services in the affected areas.",
-            "The investigation could lead to action against sellers and makers of illicit liquor, and may expose gaps in how the state polices unlicensed alcohol."
+            "With more than 180 people in hospital, local health services in Manipur face heavy strain, and serious cases could add to the death toll.",
+            "The probe ordered by the chief minister could lead to arrests of those who made or sold the liquor and to a wider crackdown on illicit supply in the state.",
+            "People who buy cheap unlicensed liquor are usually most exposed to such poisonings, so the burden may fall heavily on low-income households in the affected areas."
           ],
           "analysis": {
             "v": 3,
-            "at": "2026-11-21T11:27:45.979Z",
-            "tier": "quick",
+            "at": "2026-11-21T19:34:11.150Z",
+            "tier": "standard",
             "primary": "impact_chain",
             "complement": null,
             "features": [],
             "exposure": {
-              "level": "medium",
-              "reason": "The harm falls on residents of one state through unregulated alcohol, and the reports describe no wider effect on household essentials or on other regions."
+              "level": "high",
+              "reason": "The incident directly endangers the lives and safety of people in Manipur, with 11 dead and more than 180 in hospital, which makes exposure high even though it is confined to one state."
             },
             "horizon": {
               "value": "now",
-              "reason": "The deaths and poisonings have already happened, and the chief minister has ordered the probe immediately."
+              "reason": "The deaths and hospitalisations have already occurred, and the chief minister has already ordered a probe."
             },
             "confidence": {
               "level": "medium",
-              "reason": "The account rests on one outlet, Al Jazeera, citing the chief minister's statement; the cause of the poisoning and the people responsible have not been confirmed."
+              "reason": "Al Jazeera and the South China Morning Post report the toll and cite the chief minister's statement; the source of the contamination is unconfirmed."
             },
-            "outlets": 1,
-            "affected": [
-              {
-                "group": "A named state or region",
-                "direction": "down",
-                "what": "public health and safety in Manipur",
-                "effect": "Residents of Manipur face deaths and illness from poisoned alcohol, and the state government faces pressure to investigate and prosecute those responsible.",
-                "basis": "reported"
-              }
-            ],
+            "outlets": 2,
+            "affected": [],
             "watch": [
               {
-                "what": "Arrests or findings from the Manipur government's investigation into who supplied the illicit alcohol",
-                "why": "It would show whether the chief minister's promise of arrests and punishment is carried out.",
+                "what": "Findings of the probe ordered by Manipur's chief minister",
+                "why": "They would show where the tainted liquor came from and who was responsible.",
                 "when": "",
-                "where": "Manipur government and Chief Minister's office"
+                "where": "Government of Manipur"
+              },
+              {
+                "what": "Arrests of people accused of making or selling the liquor",
+                "why": "Arrests would show whether the chief minister's promise of punishment is being carried out.",
+                "when": "",
+                "where": "Manipur Police"
+              },
+              {
+                "what": "Updates to the number of deaths and people hospitalised",
+                "why": "Changes in the toll would show how severe the poisoning ultimately is.",
+                "when": "",
+                "where": "Government of Manipur"
               }
             ],
             "context": [
-              "Alcohol regulation is largely a matter for Indian state governments. Illicit liquor is made outside licensed channels without safety checks, which is why contamination can poison many people at once."
+              "In India, alcohol is regulated by state governments, which set excise rules and are responsible for policing illegal brewing and sale.",
+              "Mass poisonings from illicit liquor recur in several Indian states and are often traced to methanol, a toxic industrial alcohol, in cheap brews. The cause in this case has not been reported."
             ],
             "terms": [],
             "frameworks": {
               "impact_chain": {
                 "chain": [
                   {
-                    "step": "Illicit alcohol poisons many people",
-                    "detail": "Illicit alcohol has killed 11 people and poisoned 180 in Manipur. The scale of the poisoning is what has prompted the state government to act.",
+                    "step": "Victims drink suspected tainted liquor",
+                    "detail": "People in Manipur fell ill after drinking alcohol suspected of being tainted, according to a statement from the chief minister.",
                     "basis": "reported"
                   },
                   {
-                    "step": "Chief minister orders a probe",
-                    "detail": "Manipur's chief minister has ordered an investigation and said those responsible will be arrested and punished. This sets up possible action against suppliers of the liquor.",
+                    "step": "Deaths and mass hospitalisation",
+                    "detail": "At least 11 people have died and more than 180 have been hospitalised, putting heavy pressure on hospitals in the state.",
                     "basis": "reported"
                   },
                   {
-                    "step": "Health and enforcement response may follow",
-                    "detail": "Hospitals may have to treat many of the 180 poisoned people, and the state may step up checks on illicit liquor sellers in the affected areas.",
+                    "step": "Chief minister orders probe",
+                    "detail": "Chief Minister Yumnam Khemchand Singh has ordered an investigation and said those responsible will be arrested and punished.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Possible crackdown on illicit liquor",
+                    "detail": "The probe could prompt police and excise officials to act against illegal liquor makers and sellers across Manipur.",
                     "basis": "inferred"
                   }
                 ],
-                "breaks_if": "The effect stays confined to those already poisoned if the investigation quickly traces the source and the contaminated supply is removed from sale."
+                "breaks_if": "Further harm could be contained if the probe finds the contaminated liquor came from a single source that has already been removed from circulation."
               }
             }
           },
@@ -86209,6 +86683,16 @@
               "ogTried": true,
               "descTried": true,
               "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/afp_6b01488a4ebf-1795246218.jpg?resize=1920%2C1440"
+            },
+            {
+              "source": "scmp",
+              "headline": "In India, tainted alcohol leaves 11 dead, over 180 hospitalised",
+              "url": "https://www.scmp.com/news/asia/south-asia/article/3375332/india-tainted-alcohol-leaves-11-dead-over-180-hospitalised",
+              "date": "2026-11-21T11:36:40.000Z",
+              "kind": "hard",
+              "summary": "At least 11 people have died and more than 180 have been hospitalised after drinking suspected tainted alcohol in India’s northeastern state of Manipur. The victims fell ill after consuming the liquor, Chief Minister Yumnam Khemchand Singh said in a statement on Friday.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/21/b6ae5070-152b-4031-8a59-d09022883f35_c6f4a798.jpg?itok=A5RI2Ynl&v=1795260989"
             }
           ],
           "finChecked": true,
@@ -103939,14 +104423,14 @@
   "source": "BBC News & The Guardian & NPR & Al Jazeera & MercoPress & ABC News & The New York Times & CNBC & CBS News & DW & France 24 & Africanews & South China Morning Post & The Hindu & Mint & The Indian Express",
   "lastRun": {
     "filter": {
-      "judged": 111,
-      "kept": 14,
-      "guarded": 0
+      "judged": 112,
+      "kept": 11,
+      "guarded": 1
     },
     "health": {
       "day": "2026-11-21",
-      "newStories24h": 20,
-      "keepRate2d": 0.142
+      "newStories24h": 14,
+      "keepRate2d": 0.135
     },
     "wars": {
       "linked": 0,
@@ -103955,47 +104439,48 @@
     },
     "places": {
       "labelled": 0,
-      "none": 1,
+      "none": 0,
       "waiting": 0
     },
     "skipped": {
-      "since": "2026-11-21T02:36:41.560Z",
+      "since": "2026-11-21T11:28:58.142Z",
       "counts": {
-        "section": 21,
-        "live_blog": 1
+        "section": 23,
+        "live_blog": 2
       },
       "examples": {
         "section": [
-          "Black Friday deals for liquid Brazilian butt lifts criticised over safety fears",
-          "I hated life as a Neet. But now I’ve found a job, life is just as precarious | Emilija Morrison",
-          "Migrants caravan in Mexico walks towards US border",
-          "Deadly fire engulfs power station in southern Iraq",
-          "Usman Khawaja and David Warner taken off air over Australia’s Sandpapergate"
+          "I’m a priest. Silicon Valley’s search for the ‘soul’ of AI is deeply troubling | Rev Kevin Deal",
+          "Deadly attack in Kyiv as Russia launches barrage against Ukraine",
+          "Could Brexit be reversed?",
+          "Trump says he wants ‘permanent’ deal to stop Iran getting nuclear weapons",
+          "UK police drag man from protest over ‘Pallet Sign Acton’ shirt"
         ],
         "live_blog": [
-          "Cop31 live: world urged to avoid one of ‘most disappointing Cops ever’ as talks stretch past deadline"
+          "Cop31 live: world urged to avoid one of ‘most disappointing Cops ever’ as talks stretch past deadline",
+          "Newcastle United vs Arsenal LIVE: Premier League"
         ]
       }
     },
     "finance": {
       "moved": 0,
-      "checked": 1
+      "checked": 0
     },
-    "analysed": 111,
-    "added": 6,
+    "analysed": 112,
+    "added": 3,
     "merged": 7,
-    "rejected": 98,
+    "rejected": 102,
     "failedBatches": 0,
     "feeds": {
       "bbc": {
         "feedsOk": 6,
         "feedsFailed": 0,
-        "items": 163
+        "items": 165
       },
       "guardian": {
         "feedsOk": 7,
         "feedsFailed": 0,
-        "items": 193
+        "items": 200
       },
       "npr": {
         "feedsOk": 4,
@@ -104005,7 +104490,7 @@
       "aljazeera": {
         "feedsOk": 1,
         "feedsFailed": 0,
-        "items": 9
+        "items": 11
       },
       "mercopress": {
         "feedsOk": 3,
@@ -104020,7 +104505,7 @@
       "nyt": {
         "feedsOk": 5,
         "feedsFailed": 0,
-        "items": 181
+        "items": 183
       },
       "cnbc": {
         "feedsOk": 3,
@@ -104030,17 +104515,17 @@
       "cbs": {
         "feedsOk": 2,
         "feedsFailed": 0,
-        "items": 43
+        "items": 41
       },
       "dw": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 32
+        "items": 31
       },
       "france24": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 77
+        "items": 80
       },
       "africanews": {
         "feedsOk": 1,
@@ -104050,21 +104535,21 @@
       "scmp": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 143
+        "items": 142
       }
     },
     "shareImages": {
       "tried": 3,
-      "found": 3,
+      "found": 2,
       "summaries": 0
     },
     "threads": {
-      "assigned": 6,
-      "created": 3,
+      "assigned": 3,
+      "created": 1,
       "failedBatches": 0
     },
     "summaries": {
-      "written": 0,
+      "written": 3,
       "due": 3
     },
     "kinds": {
@@ -104073,73 +104558,59 @@
       "failedBatches": 0
     },
     "frames": {
-      "done": 0,
-      "waiting": 1,
-      "failedBatches": 0,
-      "budgetStopped": true
+      "done": 4,
+      "waiting": 0,
+      "failedBatches": 0
     },
     "stats": {
-      "searched": 3,
+      "searched": 1,
       "found": 0,
-      "reused": 2,
-      "none": 1,
+      "reused": 1,
+      "none": 0,
       "failed": 0,
-      "proposed": 2,
+      "proposed": 0,
       "droppedPoints": 0,
-      "pagesFetched": 2,
+      "pagesFetched": 0,
       "samples": [
         {
-          "headline": "Iran says it downed US drones over Hormuz as bid to end war remains stalled",
+          "headline": "Tankers hit in Strait of Hormuz as Iran tightens grip on shipping",
           "result": "reused saved series"
-        },
-        {
-          "headline": "COP31 climate talks go into overtime as nations quarrel over fossil fuels",
-          "result": "reused saved series"
-        },
-        {
-          "headline": "Trump Threatens to Bar U.S. Tech Firms From Building Data Centers Abroad",
-          "result": "too few checked figures",
-          "proposed": 2,
-          "checked": 2,
-          "pagesFetched": 2
         }
       ]
     },
     "models": {
       "filter": {
         "model": "claude-haiku-5-5",
-        "calls": 15,
-        "inputTokens": 56256,
-        "outputTokens": 19566,
-        "cost": 0.0156
+        "calls": 9,
+        "inputTokens": 44978,
+        "outputTokens": 20524,
+        "cost": 0.0148
       },
       "analysis_quick": {
         "model": "claude-sonnet-5-5",
-        "calls": 4,
-        "inputTokens": 12674,
-        "outputTokens": 12514,
-        "cost": 0.1506
+        "calls": 2,
+        "inputTokens": 6259,
+        "outputTokens": 5004,
+        "cost": 0.0626
       },
-      "stats": {
-        "model": "claude-sonnet-5-5",
-        "calls": 1,
-        "inputTokens": 92622,
-        "outputTokens": 1154,
-        "searches": 2,
-        "fetches": 2,
-        "cost": 0.2168
+      "analysis": {
+        "model": "claude-opus-5-5",
+        "calls": 2,
+        "inputTokens": 8958,
+        "outputTokens": 15055,
+        "cost": 0.337
       },
       "threads": {
         "model": "claude-sonnet-5-5",
-        "calls": 1,
-        "inputTokens": 9541,
-        "outputTokens": 174,
-        "cost": 0.0208
+        "calls": 4,
+        "inputTokens": 15492,
+        "outputTokens": 1808,
+        "cost": 0.0491
       }
     },
     "spend": {
-      "thisDesk": 0.4035,
-      "today": 4.3726,
+      "thisDesk": 0.4633,
+      "today": 0.4633,
       "cap": 6
     }
   },
