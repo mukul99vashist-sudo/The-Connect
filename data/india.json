@@ -2,12 +2,364 @@
   "schema": 4,
   "region": "India",
   "since": "2026-10-02",
-  "updatedAt": "2026-11-24T02:27:51.551Z",
+  "updatedAt": "2026-11-24T14:06:03.681Z",
   "sectors": [
     {
       "id": "energy",
       "name": "Energy",
       "items": [
+        {
+          "id": "s99kos4",
+          "headline": "Tankers hit in Strait of Hormuz as Iran tightens grip on shipping",
+          "url": "https://www.aljazeera.com/news/2026/11/21/tankers-hit-in-strait-of-hormuz-as-iran-tightens-grip-on-shipping",
+          "source": "aljazeera",
+          "date": "2026-11-21T15:01:18.000Z",
+          "relevance": "high",
+          "why": "Several oil tankers have caught fire after what Iran says were naval mine strikes in the Strait of Hormuz, and oil traffic there is reported down 40 percent. India could face costlier crude, because much of its oil passes through this route.",
+          "implications": [
+            "Fewer tankers moving through the strait could tighten the oil supply available to Asian buyers, which may raise the price Indian refiners pay for each cargo.",
+            "Mine strikes have continued despite a United States naval escort, which suggests that military protection alone may not restore normal tanker traffic quickly.",
+            "Shipowners facing mine risk could charge more for freight and war-risk insurance, and those costs may be added to the landed price of crude and gas reaching Indian ports.",
+            "Wider United States Treasury sanctions on Iran could add to market nervousness, keeping oil prices volatile while the attacks continue."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-24T14:05:35.636Z",
+            "tier": "standard",
+            "primary": "disruption_map",
+            "complement": null,
+            "features": [
+              "disruption",
+              "armed_conflict",
+              "fast_moving"
+            ],
+            "exposure": {
+              "level": "high",
+              "reason": "Crude oil is India's largest import and much of it transits Hormuz, so disruption there reaches refiners' costs and potentially the petrol, diesel and cooking gas households buy."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Oil prices react quickly, but costlier cargoes take several weeks to reach Indian refiners and to show up in fuel pricing decisions."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "Al Jazeera and CNBC report the incidents, and a British maritime agency confirmed two of them, but the mine explanation is Iran's claim and remains unverified."
+            },
+            "outlets": 2,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "up",
+                "what": "fuel and cooking gas costs",
+                "effect": "Costlier crude and gas imports could push up petrol, diesel and cooking gas prices if oil companies or the government pass higher costs on to consumers.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Government finances",
+                "direction": "down",
+                "what": "oil import bill",
+                "effect": "A higher oil import bill could widen India's trade deficit and may add pressure for fuel subsidies or tax cuts to cushion consumers.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Importers & traders",
+                "direction": "up",
+                "what": "freight and insurance costs",
+                "effect": "Shipping lines serving Gulf ports could raise freight and war-risk insurance charges, which would increase costs for Indian firms trading with the region.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Further tanker incidents reported by the British maritime agency near Oman and Hormuz",
+                "why": "More incidents would show whether attacks are intensifying despite the United States escort.",
+                "when": "",
+                "where": "British maritime agency advisories"
+              },
+              {
+                "what": "Changes in the volume of oil tanker traffic through the Strait of Hormuz",
+                "why": "A further fall from the reported 40 percent drop would point to tighter supply for Asian importers, including India.",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "Additional United States Treasury sanctions on Iran's financial networks",
+                "why": "Wider sanctions could signal further escalation and keep oil markets volatile.",
+                "when": "",
+                "where": "US Department of the Treasury"
+              }
+            ],
+            "context": [
+              "India imports most of the crude oil it uses, and a large share comes from Gulf producers whose shipments pass through the Strait of Hormuz.",
+              "India also buys liquefied natural gas from Qatar, which must leave the Gulf through the same narrow strait.",
+              "Attacks on commercial shipping typically raise freight and insurance costs even when traffic does not stop entirely, because owners demand higher payment for the added danger to crews and vessels."
+            ],
+            "terms": [
+              {
+                "term": "Strait of Hormuz",
+                "meaning": "The narrow sea passage between Iran and Oman through which tankers carrying Gulf oil and gas reach world markets."
+              },
+              {
+                "term": "naval mine",
+                "meaning": "An explosive device placed in the water that detonates when a ship touches it or passes close by."
+              }
+            ],
+            "frameworks": {
+              "disruption_map": {
+                "node": {
+                  "name": "Strait of Hormuz",
+                  "type": "strait",
+                  "status": "unknown",
+                  "as_of": "24 Nov 2026"
+                },
+                "cause": {
+                  "text": "Iran says the tankers caught fire after hitting naval mines, while Al Jazeera describes the rising incidents as Iranian attacks on tankers.",
+                  "status": "claimed"
+                },
+                "flows": [
+                  {
+                    "flow": "crude",
+                    "india_link": "Gulf crude bound for Indian refineries passes through Hormuz, so reduced tanker traffic could tighten supply and raise costs for refiners and fuel consumers.",
+                    "basis": "reported"
+                  },
+                  {
+                    "flow": "LNG",
+                    "india_link": "Qatar's liquefied natural gas shipments to India pass through the strait, so disruption could affect supplies to power plants, fertiliser makers and city gas networks.",
+                    "basis": "inferred"
+                  }
+                ],
+                "alternatives": [],
+                "duration": "not reported"
+              }
+            },
+            "reading": [
+              {
+                "headline": "‘No war, no peace’: Can Iran break the deadlock with the US?",
+                "url": "https://www.aljazeera.com/news/2026/11/12/no-war-no-peace-can-iran-break-the-deadlock-with-the-us",
+                "source": "aljazeera",
+                "date": "2026-11-12T14:27:54.000Z"
+              },
+              {
+                "headline": "Strait of Hormuz still a source of leverage for Iran",
+                "url": "https://www.dw.com/en/strait-of-hormuz-still-a-source-of-leverage-for-iran/a-79901647",
+                "source": "dw",
+                "date": "2026-11-09T14:49:00.000Z"
+              }
+            ]
+          },
+          "place": {
+            "name": "Strait of Hormuz",
+            "country": "Iran",
+            "lat": 26.6,
+            "lon": 56.3,
+            "involves": [
+              "Oman"
+            ]
+          },
+          "reports": [
+            {
+              "source": "aljazeera",
+              "headline": "Tankers hit in Strait of Hormuz as Iran tightens grip on shipping",
+              "url": "https://www.aljazeera.com/news/2026/11/21/tankers-hit-in-strait-of-hormuz-as-iran-tightens-grip-on-shipping",
+              "date": "2026-11-21T15:01:18.000Z",
+              "kind": "breaking",
+              "summary": "British maritime agency reports two incidents near Oman, while Iran says a tanker caught fire due to naval mine.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/AFP__20261013__D3722EZ__v1__HighRes__UaeIranUsIsraelWarHormuzShipping-1795270231.jpg?resize=1920%2C1440"
+            },
+            {
+              "source": "cnbc",
+              "headline": "Iran says three tankers hit mines in Hormuz despite U.S. escort, as Treasury widens sanctions",
+              "url": "https://www.cnbc.com/2026/11/24/iran-trump-hormuz-crude-.html",
+              "date": "2026-11-24T05:05:08.000Z",
+              "kind": "hard",
+              "summary": "Iran said three oil tankers caught fire after hitting naval mines in the Strait of Hormuz, as the U.S. escalates sanctions aimed at cutting off Tehran's financial lifelines.",
+              "summaryV": 3
+            },
+            {
+              "source": "aljazeera",
+              "headline": "Hormuz oil traffic is down 40 percent: Are Iran’s tanker attacks working?",
+              "url": "https://www.aljazeera.com/news/2026/11/24/hormuz-oil-traffic-is-down-40-percent-are-irans-tanker-attacks-working",
+              "date": "2026-11-24T13:32:24.000Z",
+              "kind": "feature",
+              "summary": "Attacks on tankers have increased, impacting the flow of oil through the Strait of Hormuz.",
+              "summaryV": 3
+            }
+          ],
+          "stats": {
+            "v": 2,
+            "at": "2026-11-21T19:31:49.057Z",
+            "series": [
+              {
+                "title": "Brent crude spot price, daily",
+                "unit": "US$ per barrel",
+                "publisher": "U.S. Energy Information Administration",
+                "points": [
+                  {
+                    "period": "29 Sep 2026",
+                    "value": 113.96,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "30 Sep 2026",
+                    "value": 115.91,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "1 Oct 2026",
+                    "value": 114.82,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "2 Oct 2026",
+                    "value": 135.51,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "5 Oct 2026",
+                    "value": 125.51,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "6 Oct 2026",
+                    "value": 125.44,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "title": "Spot Prices for Crude Oil and Petroleum Products",
+                    "domain": "eia.gov"
+                  }
+                ],
+                "domains": [
+                  "eia.gov"
+                ],
+                "dropped": 0,
+                "why": "The Brent crude spot price is the benchmark for the oil whose shipping through the Strait of Hormuz is threatened, and it is the series that would show any cost effect from the tanker attacks.",
+                "reused": true,
+                "checkedAt": "2026-10-13T23:11:10.422Z"
+              }
+            ]
+          },
+          "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/AFP__20261013__D3722EZ__v1__HighRes__UaeIranUsIsraelWarHormuzShipping-1795270231.jpg?resize=1920%2C1440",
+          "thread": "t2ogxay"
+        },
+        {
+          "id": "s1xk6m9e",
+          "headline": "Iraq orders takeover of oilfields in areas under Kurdish control",
+          "url": "https://www.aljazeera.com/news/2026/11/24/iraq-orders-takeover-of-oilfields-in-areas-under-kurdish-control",
+          "source": "aljazeera",
+          "date": "2026-11-24T11:19:04.000Z",
+          "relevance": "medium",
+          "why": "Iraq's prime minister has ordered the federal government to take over oilfields in Kurdish-controlled areas and seize all crossings in the Kurdish region. India, a heavy crude importer, could be affected if Iraqi supply is disrupted.",
+          "implications": [
+            "The order follows an oil smuggling inquiry, so Baghdad appears to be tightening control over who sells and moves crude from the north. This could change how that oil is exported.",
+            "If the Kurdish authorities resist, the dispute could interrupt oil flows from the region. That would remove supply from a market where India buys crude and compete with other buyers for the remainder.",
+            "Nothing in the reports says exports have stopped, so any effect on India depends on whether the order is carried out and how the Kurdish region responds."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-24T14:01:44.964Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "medium",
+              "reason": "India's crude imports reach households through petrol, diesel and LPG prices. However, the reports show no supply disruption yet, so the channel is a possible tightening of Iraqi supply rather than a confirmed one."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Any effect depends on whether the takeover is carried out and whether oil flows change, and crude price shifts take time to reach Indian fuel prices."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "This rests on a single outlet, Al Jazeera, reporting the prime minister's orders; implementation and the Kurdish response are not yet reported."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "crude supply and fuel prices",
+                "effect": "If the dispute cuts Iraqi crude output or exports, global prices could rise and raise import costs for Indian refiners, which can feed into fuel prices.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Whether Iraqi federal authorities actually take over the oilfields and crossings in the Kurdish region",
+                "why": "It would show whether the order leads to real changes in control of oil production and exports.",
+                "when": "",
+                "where": "Iraq's Ministry of Oil"
+              },
+              {
+                "what": "Any response from the Kurdish regional authorities to the takeover order",
+                "why": "Resistance would raise the chance of disruption to oil flows from northern Iraq.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "India imports most of the crude oil it uses, and Iraq is one of its larger suppliers. Baghdad and the Kurdish region have long disputed who controls oil fields and exports in the north."
+            ],
+            "terms": [],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Baghdad orders oilfield takeover",
+                    "detail": "Prime Minister Ali al-Zaidi has ordered the government to take over oilfields in areas under Kurdish control, following an inquiry into oil smuggling.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Crossings in Kurdish region to be seized",
+                    "detail": "He has also ordered the government to seize all crossings in the Kurdish region. This could affect how oil and other goods move out of the area.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Crude supply to India could tighten",
+                    "detail": "If the moves disrupt northern Iraqi output or exports, global crude supply could tighten and raise prices. India, which imports most of its crude, could then face higher import costs.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The takeover proceeds without interrupting oil output or exports from the Kurdish region, so crude supply and prices are unaffected."
+              }
+            }
+          },
+          "place": {
+            "name": "Baghdad",
+            "country": "Iraq",
+            "lat": 33.31,
+            "lon": 44.36
+          },
+          "reports": [
+            {
+              "source": "aljazeera",
+              "headline": "Iraq orders takeover of oilfields in areas under Kurdish control",
+              "url": "https://www.aljazeera.com/news/2026/11/24/iraq-orders-takeover-of-oilfields-in-areas-under-kurdish-control",
+              "date": "2026-11-24T11:19:04.000Z",
+              "kind": "hard",
+              "summary": "PM Ali al-Zaidi also orders his government to seize all crossings in the Kurdish region after an oil smuggling inquiry.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://www.aljazeera.com/wp-content/uploads/2026/07/reuters_6a5d64f3-1784505587.jpg?resize=1920%2C1440"
+            }
+          ],
+          "image": "https://www.aljazeera.com/wp-content/uploads/2026/07/reuters_6a5d64f3-1784505587.jpg?resize=1920%2C1440",
+          "thread": "t1ayj461"
+        },
         {
           "id": "s14ubk7c",
           "headline": "Iran says it will use ‘all available means’ to counter US blockade",
@@ -1183,200 +1535,6 @@
             ]
           },
           "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/2026-05-30T015143Z_1023573013_RC2IALAJ80XV_RTRMADP_3_USA-MILITARY-PUERTO-RICO-1795245920.jpg?resize=1920%2C1440",
-          "thread": "t2ogxay"
-        },
-        {
-          "id": "s99kos4",
-          "headline": "Tankers hit in Strait of Hormuz as Iran tightens grip on shipping",
-          "url": "https://www.aljazeera.com/news/2026/11/21/tankers-hit-in-strait-of-hormuz-as-iran-tightens-grip-on-shipping",
-          "source": "aljazeera",
-          "date": "2026-11-21T15:01:18.000Z",
-          "relevance": "high",
-          "why": "A British maritime agency reports two incidents involving tankers near Oman, and Iran says a tanker caught fire because of a naval mine. Because India imports most of its crude oil, trouble in the Strait of Hormuz could raise its energy costs.",
-          "implications": [
-            "Attacks or mine incidents can raise war-risk insurance and freight costs for tankers using the strait, which would raise the delivered cost of crude and gas for Indian buyers.",
-            "If shipowners avoid the strait or slow their voyages, cargoes bound for Indian refineries could arrive late, which would push India to look for supplies elsewhere."
-          ],
-          "analysis": {
-            "v": 3,
-            "at": "2026-11-21T19:31:22.642Z",
-            "tier": "quick",
-            "primary": "disruption_map",
-            "complement": null,
-            "features": [
-              "disruption",
-              "armed_conflict",
-              "fast_moving"
-            ],
-            "exposure": {
-              "level": "high",
-              "reason": "India depends on imported crude and gas, and Gulf shipments pass through this strait. Higher shipping costs or delays could reach fuel and LPG (liquefied petroleum gas) prices, which touch every household."
-            },
-            "horizon": {
-              "value": "weeks",
-              "reason": "Insurance and freight costs can react within days, but crude cargoes take weeks to arrive, and any effect on retail fuel prices would come later still."
-            },
-            "confidence": {
-              "level": "medium",
-              "reason": "This rests on one outlet citing a British maritime agency and an Iranian statement; the cause of the incidents is unconfirmed and the early report may change."
-            },
-            "outlets": 1,
-            "affected": [
-              {
-                "group": "Fuel & LPG users",
-                "direction": "up",
-                "what": "risk to fuel prices",
-                "effect": "If crude and gas become costlier or scarcer because of shipping disruption, pump prices and LPG costs could come under upward pressure.",
-                "basis": "inferred"
-              },
-              {
-                "group": "Importers & traders",
-                "direction": "up",
-                "what": "shipping and insurance costs",
-                "effect": "Higher war-risk insurance and freight charges on cargoes through the Gulf could raise the landed cost of imports for Indian traders.",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "Further incident reports or shipping advisories covering tankers near Oman and the Strait of Hormuz",
-                "why": "They would show whether the incidents are isolated or whether traffic through the strait is being restricted.",
-                "when": "",
-                "where": "British maritime agency advisories"
-              },
-              {
-                "what": "Any Iranian announcement of new rules or controls on shipping through the strait",
-                "why": "It would show whether Iran is formally restricting traffic, which would raise the risk to Indian energy supplies.",
-                "when": "",
-                "where": ""
-              }
-            ],
-            "context": [
-              "A large share of the world's seaborne oil and liquefied natural gas passes through the Strait of Hormuz, so incidents there tend to move global energy prices quickly.",
-              "India imports most of its crude oil, and a significant part of it comes from Gulf producers."
-            ],
-            "terms": [
-              {
-                "term": "Strait of Hormuz",
-                "meaning": "A narrow waterway between Iran and Oman that links Gulf oil and gas producers to the open sea and carries a large share of global energy shipments."
-              }
-            ],
-            "frameworks": {
-              "disruption_map": {
-                "node": {
-                  "name": "Strait of Hormuz",
-                  "type": "strait",
-                  "status": "unknown",
-                  "as_of": "21 Nov 2026"
-                },
-                "cause": {
-                  "text": "Iran says a tanker caught fire because of a naval mine, while a British maritime agency reports two incidents near Oman whose cause it has not confirmed.",
-                  "status": "claimed"
-                },
-                "flows": [
-                  {
-                    "flow": "crude",
-                    "india_link": "India imports most of its crude oil, and a large part of the Gulf supply to Indian refineries sails through this strait.",
-                    "basis": "inferred"
-                  },
-                  {
-                    "flow": "LNG",
-                    "india_link": "Liquefied natural gas shipped from Gulf producers passes through the strait and supplies Indian power, fertiliser and city gas users.",
-                    "basis": "inferred"
-                  }
-                ],
-                "alternatives": [],
-                "duration": "not reported"
-              }
-            }
-          },
-          "place": {
-            "name": "Strait of Hormuz",
-            "country": "Iran",
-            "lat": 26.6,
-            "lon": 56.3,
-            "involves": [
-              "Oman"
-            ]
-          },
-          "reports": [
-            {
-              "source": "aljazeera",
-              "headline": "Tankers hit in Strait of Hormuz as Iran tightens grip on shipping",
-              "url": "https://www.aljazeera.com/news/2026/11/21/tankers-hit-in-strait-of-hormuz-as-iran-tightens-grip-on-shipping",
-              "date": "2026-11-21T15:01:18.000Z",
-              "kind": "breaking",
-              "summary": "British maritime agency reports two incidents near Oman, while Iran says a tanker caught fire due to naval mine.",
-              "summaryV": 3,
-              "ogTried": true,
-              "descTried": true,
-              "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/AFP__20261013__D3722EZ__v1__HighRes__UaeIranUsIsraelWarHormuzShipping-1795270231.jpg?resize=1920%2C1440"
-            }
-          ],
-          "stats": {
-            "v": 2,
-            "at": "2026-11-21T19:31:49.057Z",
-            "series": [
-              {
-                "title": "Brent crude spot price, daily",
-                "unit": "US$ per barrel",
-                "publisher": "U.S. Energy Information Administration",
-                "points": [
-                  {
-                    "period": "29 Sep 2026",
-                    "value": 113.96,
-                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
-                    "source": "Spot Prices for Crude Oil and Petroleum Products"
-                  },
-                  {
-                    "period": "30 Sep 2026",
-                    "value": 115.91,
-                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
-                    "source": "Spot Prices for Crude Oil and Petroleum Products"
-                  },
-                  {
-                    "period": "1 Oct 2026",
-                    "value": 114.82,
-                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
-                    "source": "Spot Prices for Crude Oil and Petroleum Products"
-                  },
-                  {
-                    "period": "2 Oct 2026",
-                    "value": 135.51,
-                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
-                    "source": "Spot Prices for Crude Oil and Petroleum Products"
-                  },
-                  {
-                    "period": "5 Oct 2026",
-                    "value": 125.51,
-                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
-                    "source": "Spot Prices for Crude Oil and Petroleum Products"
-                  },
-                  {
-                    "period": "6 Oct 2026",
-                    "value": 125.44,
-                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
-                    "source": "Spot Prices for Crude Oil and Petroleum Products"
-                  }
-                ],
-                "sources": [
-                  {
-                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
-                    "title": "Spot Prices for Crude Oil and Petroleum Products",
-                    "domain": "eia.gov"
-                  }
-                ],
-                "domains": [
-                  "eia.gov"
-                ],
-                "dropped": 0,
-                "why": "The Brent crude spot price is the benchmark for the oil whose shipping through the Strait of Hormuz is threatened, and it is the series that would show any cost effect from the tanker attacks.",
-                "reused": true,
-                "checkedAt": "2026-10-13T23:11:10.422Z"
-              }
-            ]
-          },
-          "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/AFP__20261013__D3722EZ__v1__HighRes__UaeIranUsIsraelWarHormuzShipping-1795270231.jpg?resize=1920%2C1440",
           "thread": "t2ogxay"
         },
         {
@@ -45733,6 +45891,314 @@
       "name": "Economy & Trade",
       "items": [
         {
+          "id": "sm4f6uh",
+          "headline": "China approves 2-month suspension extension for select US export restrictions",
+          "url": "https://www.scmp.com/economy/global-economy/article/3375609/china-approves-2-month-extension-select-us-export-restrictions",
+          "source": "scmp",
+          "date": "2026-11-24T09:01:45.000Z",
+          "relevance": "medium",
+          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/24/74e8fc1d-4bc5-46a8-b4ec-9b8b7761d2bb_a154909e.jpg?itok=iq2Iu2X6&v=1795510905",
+          "why": "China has extended by two months its suspension of some export restrictions to the United States, keeping curbs on critical minerals and other materials eased. Indian industries that import such materials from China could be indirectly affected.",
+          "implications": [
+            "A temporary easing keeps supplies of these materials flowing to the US, which may ease global competition for them, though it lasts only as long as the extension.",
+            "Indian manufacturers that rely on Chinese minerals could face renewed tightness if the suspension lapses and the restrictions return."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-24T14:00:46.258Z",
+            "tier": "quick",
+            "primary": "trade_flow",
+            "complement": null,
+            "features": [
+              "trade_flow",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The channel is Indian manufacturers' dependence on imported critical materials from China, which affects specific industries rather than household essentials. The reports do not mention India directly."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "The two-month extension sets the window, and any effect on Indian supply would appear only if the suspension lapses or is changed."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single outlet, the South China Morning Post, and the summary names no official source or the exact materials covered."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Manufacturing workers",
+                "direction": "unclear",
+                "what": "input material availability",
+                "effect": "Indian factories using imported critical minerals could be affected if Chinese export curbs tighten again after the suspension ends.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "critical mineral import supply",
+                "effect": "Traders who source critical materials from China may see supply conditions shift if the suspension is renewed or allowed to lapse.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Whether China renews, lets lapse or reinstates the suspended export restrictions when the two months end",
+                "why": "It would show whether the easing of critical mineral curbs is lasting or temporary.",
+                "when": "in two months",
+                "where": ""
+              }
+            ],
+            "context": [
+              "China dominates the mining and processing of many critical minerals, including rare earths. Indian automobile, electronics and clean-energy makers rely heavily on imports of these inputs, so Chinese export policy affects them."
+            ],
+            "terms": [
+              {
+                "term": "critical minerals",
+                "meaning": "Minerals such as rare earths that are essential to electronics, vehicles and clean-energy equipment, and whose supply is concentrated in a few countries."
+              }
+            ],
+            "frameworks": {
+              "trade_flow": {
+                "good": "Critical minerals and other materials",
+                "actors": [
+                  {
+                    "country": "China",
+                    "role": "exporter",
+                    "is_india": false
+                  },
+                  {
+                    "country": "United States",
+                    "role": "importer",
+                    "is_india": false
+                  }
+                ],
+                "change": {
+                  "type": "other",
+                  "effective": ""
+                },
+                "india_position": {
+                  "role": "competing_buyer",
+                  "note": "India is not named in the reports. As a buyer of Chinese critical materials, it could be affected if curbs return, while the extension may keep supply conditions steadier for now."
+                },
+                "volumes": []
+              }
+            }
+          },
+          "place": {
+            "name": "Beijing",
+            "country": "China",
+            "lat": 39.9,
+            "lon": 116.4,
+            "involves": [
+              "United States"
+            ]
+          },
+          "reports": [
+            {
+              "source": "scmp",
+              "headline": "China approves 2-month suspension extension for select US export restrictions",
+              "url": "https://www.scmp.com/economy/global-economy/article/3375609/china-approves-2-month-extension-select-us-export-restrictions",
+              "date": "2026-11-24T09:01:45.000Z",
+              "kind": "hard",
+              "summary": "China has extended the suspension of some export restrictions to the United States by two months, maintaining a temporary easing of curbs on the shipment of critical minerals and other materials amid a broader cooling of tensions between the world’s two largest economies.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/24/74e8fc1d-4bc5-46a8-b4ec-9b8b7761d2bb_a154909e.jpg?itok=iq2Iu2X6&v=1795510905"
+            }
+          ],
+          "finChecked": true,
+          "stats": {
+            "v": 2,
+            "at": "2026-11-24T14:04:20.305Z",
+            "series": [
+              {
+                "title": "India's rare earth magnet imports from China (HS 85051190)",
+                "unit": "US$ million",
+                "publisher": "Press Information Bureau (Ministry of Heavy Industries, DGCIS data)",
+                "points": [
+                  {
+                    "period": "2022-23",
+                    "value": 88.42,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2151394",
+                    "source": "DISRUPTION IN THE SUPPLY OF RARE EARTH MAGNETS"
+                  },
+                  {
+                    "period": "2023-24",
+                    "value": 90.8,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2151394",
+                    "source": "DISRUPTION IN THE SUPPLY OF RARE EARTH MAGNETS"
+                  },
+                  {
+                    "period": "2024-25",
+                    "value": 110.68,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2151394",
+                    "source": "DISRUPTION IN THE SUPPLY OF RARE EARTH MAGNETS"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2151394",
+                    "title": "DISRUPTION IN THE SUPPLY OF RARE EARTH MAGNETS",
+                    "domain": "pib.gov.in"
+                  }
+                ],
+                "domains": [
+                  "pib.gov.in"
+                ],
+                "dropped": 0,
+                "why": "Both series track India's imports of rare earth magnets from China, the critical-mineral flow that Indian importers would be exposed to if China's export curbs on such materials are eased or tightened",
+                "reused": true,
+                "checkedAt": "2026-11-14T01:31:59.913Z"
+              },
+              {
+                "title": "India's import dependency on China, rare earth magnets",
+                "unit": "% of India's imports (by value)",
+                "publisher": "Press Information Bureau (Ministry of Heavy Industries, DGCIS data)",
+                "points": [
+                  {
+                    "period": "2022-23",
+                    "value": 70.9,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2151394",
+                    "source": "DISRUPTION IN THE SUPPLY OF RARE EARTH MAGNETS"
+                  },
+                  {
+                    "period": "2023-24",
+                    "value": 72.8,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2151394",
+                    "source": "DISRUPTION IN THE SUPPLY OF RARE EARTH MAGNETS"
+                  },
+                  {
+                    "period": "2024-25",
+                    "value": 81.3,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2151394",
+                    "source": "DISRUPTION IN THE SUPPLY OF RARE EARTH MAGNETS"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2151394",
+                    "title": "DISRUPTION IN THE SUPPLY OF RARE EARTH MAGNETS",
+                    "domain": "pib.gov.in"
+                  }
+                ],
+                "domains": [
+                  "pib.gov.in"
+                ],
+                "dropped": 0,
+                "why": "Both series track India's imports of rare earth magnets from China, the critical-mineral flow that Indian importers would be exposed to if China's export curbs on such materials are eased or tightened",
+                "reused": true,
+                "checkedAt": "2026-11-14T01:31:59.913Z"
+              }
+            ]
+          },
+          "thread": "t1tc0guw"
+        },
+        {
+          "id": "s1vas831",
+          "headline": "China has changed tactics but is still thwarting India's rise, a U.S. panel says",
+          "url": "https://www.cnbc.com/2026/11/24/us-china-thwarting-india-growth.html",
+          "source": "cnbc",
+          "date": "2026-11-24T04:27:38.000Z",
+          "relevance": "medium",
+          "why": "A US panel says China has changed tactics but is still thwarting India's rise, focusing increasingly on containing India economically rather than through military action. This could shape India's trade and supply-chain exposure to China.",
+          "implications": [
+            "A shift towards economic pressure means the contest with China may be played out through trade, supply chains and investment, which would reach Indian businesses more directly than border tensions do.",
+            "Indian manufacturers that rely on Chinese inputs could be most exposed if economic tools are used to slow India's growth, though the summary gives no specific measures."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-24T13:58:59.395Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "medium",
+              "reason": "The channel is India's trade and supply-chain dependence on China, which touches several industries and the bilateral relationship; no household essential is named in the report."
+            },
+            "horizon": {
+              "value": "years",
+              "reason": "The panel describes a long-running strategic competition, and no specific measure with a near-term date is reported."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "This rests on a single outlet, CNBC, reporting the assessment of a US panel; the specific tactics and evidence behind the finding are not given."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "exposure to Chinese trade pressure",
+                "effect": "Indian firms that depend on Chinese inputs could face supply or cost pressure if China uses economic tools to contain India.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Specific Chinese trade or investment measures that affect Indian industries",
+                "why": "They would show whether the described economic containment is turning into concrete pressure on Indian businesses.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "India and China share a disputed border and a large trade relationship. India imports many industrial inputs from China, including electronics components and pharmaceutical ingredients, which gives Beijing potential economic leverage."
+            ],
+            "terms": [],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "US panel assesses China's approach",
+                    "detail": "A US panel says China is increasingly focused on containing India economically rather than through military actions, while still thwarting India's rise.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "China's pressure continues in a new form",
+                    "detail": "The headline says China has changed tactics but is still working against India's rise. The contest therefore continues, with economic means taking a larger role.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Indian businesses may feel economic pressure",
+                    "detail": "Industries that depend on Chinese inputs, markets or investment could face higher costs or supply risks if economic tools are used, though no specific measure is reported.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "China does not apply concrete trade or investment restrictions against India, or Indian firms reduce their dependence on Chinese inputs enough to blunt any economic pressure."
+              }
+            }
+          },
+          "place": {
+            "name": "Washington",
+            "country": "United States",
+            "lat": 38.9,
+            "lon": -77,
+            "involves": [
+              "China",
+              "India"
+            ]
+          },
+          "reports": [
+            {
+              "source": "cnbc",
+              "headline": "China has changed tactics but is still thwarting India's rise, a U.S. panel says",
+              "url": "https://www.cnbc.com/2026/11/24/us-china-thwarting-india-growth.html",
+              "date": "2026-11-24T04:27:38.000Z",
+              "kind": "hard",
+              "summary": "China is increasingly focused on containing India economically rather than through military actions.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://image.cnbcfm.com/api/v1/image/108558031-1795489293086-gettyimages-2198835438-damawall-china-india.jpeg?v=1795489335&w=1920&h=1080"
+            }
+          ],
+          "finChecked": true,
+          "image": "https://image.cnbcfm.com/api/v1/image/108558031-1795489293086-gettyimages-2198835438-damawall-china-india.jpeg?v=1795489335&w=1920&h=1080",
+          "thread": "t1kmfmq0"
+        },
+        {
           "id": "s1es15g4",
           "headline": "Zelensky urges four-way peace talks with Russia, Europe and US 'as soon as possible'",
           "url": "https://www.france24.com/en/europe/20261124-zelensky-urges-four-way-peace-talks-with-russia-europe-and-us-as-soon-as-possible",
@@ -63612,6 +64078,422 @@
       "name": "Finance",
       "items": [
         {
+          "id": "s99eux2",
+          "headline": "Fed's John Williams indicates higher interest rates likely 'over time' to address inflation",
+          "url": "https://www.cnbc.com/2026/11/23/john-williams-fed-inflation-rate-hikes.html",
+          "source": "cnbc",
+          "date": "2026-11-24T13:33:26.000Z",
+          "relevance": "medium",
+          "why": "John Williams, an influential US Federal Reserve official, indicated that interest rates are likely to rise over time to address inflation, which he expects to move closer to 2% in 2027. This could affect the rupee and foreign flows into India.",
+          "implications": [
+            "His remarks signal a direction for policy rather than announce a decision, so any effect on India depends on whether the Federal Reserve actually raises rates.",
+            "Higher US rates tend to make dollar assets more attractive, which may draw money away from emerging markets such as India and put pressure on the rupee."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-24T14:03:51.814Z",
+            "tier": "quick",
+            "primary": "pass_through",
+            "complement": null,
+            "features": [
+              "price_move"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The effect would reach India indirectly through foreign investment flows and the rupee, which can affect import costs and borrowing conditions. The Reserve Bank of India's own decisions stand between the Fed and Indian loan rates."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Williams spoke of rate rises 'over time' and of inflation nearing target in 2027, so any effect on Indian borrowing conditions would build gradually."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "This rests on one outlet, CNBC, reporting remarks by a named Federal Reserve official; no rate decision or timetable for increases has been announced."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Borrowers",
+                "direction": "unclear",
+                "what": "loan interest rates",
+                "effect": "Indian loan rates would change only if the rupee and capital outflows led the Reserve Bank of India to alter its policy, which is not certain.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Importers & traders",
+                "direction": "up",
+                "what": "import costs",
+                "effect": "If higher US rates weaken the rupee, imports priced in dollars may become more expensive for Indian importers.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "The Federal Reserve's next interest-rate decision and its accompanying statement",
+                "why": "It would show whether Williams's signal of higher rates over time becomes actual policy.",
+                "when": "",
+                "where": "US Federal Reserve"
+              },
+              {
+                "what": "The Reserve Bank of India's next monetary policy statement",
+                "why": "It would show whether Indian policymakers are responding to US rate expectations or to domestic conditions.",
+                "when": "",
+                "where": "Reserve Bank of India"
+              }
+            ],
+            "context": [
+              "The Federal Reserve's rate decisions influence returns on dollar assets worldwide. India's Reserve Bank of India sets its own repo rate based mainly on domestic inflation and growth, and many floating-rate loans in India are linked to that rate."
+            ],
+            "terms": [
+              {
+                "term": "Fed",
+                "meaning": "The Federal Reserve, the central bank of the United States, whose interest-rate decisions influence borrowing costs and currency movements around the world."
+              }
+            ],
+            "frameworks": {
+              "pass_through": {
+                "driver": {
+                  "variable": "US Federal Reserve policy interest rate",
+                  "direction": "up",
+                  "size": ""
+                },
+                "product": "loan EMIs",
+                "rungs": [
+                  {
+                    "stage": "Fed signal → US yields and dollar returns",
+                    "pass": "likely",
+                    "damper": "Williams spoke only of higher rates 'over time', and no decision has been announced, so markets may adjust gradually and could change their view with new data.",
+                    "lag": "weeks"
+                  },
+                  {
+                    "stage": "Higher dollar returns → foreign flows and rupee",
+                    "pass": "partial",
+                    "damper": "Foreign investors also weigh India's growth prospects, and the Reserve Bank of India can act in currency markets to smooth sharp rupee moves.",
+                    "lag": "weeks"
+                  },
+                  {
+                    "stage": "Rupee and flows → Reserve Bank of India policy and lending rates",
+                    "pass": "unclear",
+                    "damper": "The Reserve Bank of India sets the repo rate mainly on domestic inflation and growth, and banks then adjust floating-rate loans linked to it.",
+                    "lag": "months"
+                  }
+                ],
+                "end_user": {
+                  "group": "Borrowers",
+                  "effect": "Borrowers with floating-rate loans may notice a change in monthly instalments only if the Reserve Bank of India alters its policy rate, which would take months and is not assured."
+                }
+              }
+            }
+          },
+          "place": {
+            "name": "Washington",
+            "country": "United States",
+            "lat": 38.9,
+            "lon": -77
+          },
+          "reports": [
+            {
+              "source": "cnbc",
+              "headline": "Fed's John Williams indicates higher interest rates likely 'over time' to address inflation",
+              "url": "https://www.cnbc.com/2026/11/23/john-williams-fed-inflation-rate-hikes.html",
+              "date": "2026-11-24T13:33:26.000Z",
+              "kind": "hard",
+              "summary": "The influential central banker expressed confidence that inflation will get closer to the Fed's 2% target in 2027.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://image.cnbcfm.com/api/v1/image/108229868-1763741665578-108229868-1763730430401-gettyimages-2233025951-WILLIAMS_ECNY.jpeg?v=1772548607&w=1920&h=1080"
+            }
+          ],
+          "stats": {
+            "v": 2,
+            "at": "2026-11-24T14:03:55.420Z",
+            "series": [
+              {
+                "title": "US Fed target federal funds rate range after each change",
+                "unit": "% (target range)",
+                "publisher": "Board of Governors of the Federal Reserve System",
+                "points": [
+                  {
+                    "period": "Dec 15, 2022",
+                    "value": 4.25,
+                    "url": "https://www.federalreserve.gov/monetarypolicy/openmarket.htm",
+                    "source": "Open Market Operations"
+                  },
+                  {
+                    "period": "Feb 2, 2023",
+                    "value": 4.5,
+                    "url": "https://www.federalreserve.gov/monetarypolicy/openmarket.htm",
+                    "source": "Open Market Operations"
+                  },
+                  {
+                    "period": "Mar 23, 2023",
+                    "value": 4.75,
+                    "url": "https://www.federalreserve.gov/monetarypolicy/openmarket.htm",
+                    "source": "Open Market Operations"
+                  },
+                  {
+                    "period": "May 4, 2023",
+                    "value": 5,
+                    "url": "https://www.federalreserve.gov/monetarypolicy/openmarket.htm",
+                    "source": "Open Market Operations"
+                  },
+                  {
+                    "period": "Jul 27, 2023",
+                    "value": 5.25,
+                    "url": "https://www.federalreserve.gov/monetarypolicy/openmarket.htm",
+                    "source": "Open Market Operations"
+                  },
+                  {
+                    "period": "Sep 19, 2024",
+                    "value": 4.75,
+                    "url": "https://www.federalreserve.gov/monetarypolicy/openmarket.htm",
+                    "source": "Open Market Operations"
+                  },
+                  {
+                    "period": "Nov 8, 2024",
+                    "value": 4.5,
+                    "url": "https://www.federalreserve.gov/monetarypolicy/openmarket.htm",
+                    "source": "Open Market Operations"
+                  },
+                  {
+                    "period": "Dec 19, 2024",
+                    "value": 4.25,
+                    "url": "https://www.federalreserve.gov/monetarypolicy/openmarket.htm",
+                    "source": "Open Market Operations"
+                  },
+                  {
+                    "period": "Sep 18, 2025",
+                    "value": 4,
+                    "url": "https://www.federalreserve.gov/monetarypolicy/openmarket.htm",
+                    "source": "Open Market Operations"
+                  },
+                  {
+                    "period": "Oct 30, 2025",
+                    "value": 3.75,
+                    "url": "https://www.federalreserve.gov/monetarypolicy/openmarket.htm",
+                    "source": "Open Market Operations"
+                  },
+                  {
+                    "period": "Dec 11, 2025",
+                    "value": 3.5,
+                    "url": "https://www.federalreserve.gov/monetarypolicy/openmarket.htm",
+                    "source": "Open Market Operations"
+                  },
+                  {
+                    "period": "Sep 17, 2026",
+                    "value": 3.75,
+                    "url": "https://www.federalreserve.gov/monetarypolicy/openmarket.htm",
+                    "source": "Open Market Operations"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.federalreserve.gov/monetarypolicy/openmarket.htm",
+                    "title": "Open Market Operations",
+                    "domain": "federalreserve.gov"
+                  }
+                ],
+                "domains": [
+                  "federalreserve.gov"
+                ],
+                "dropped": 0,
+                "why": "The Federal Reserve's policy rate path is the central subject of the story, and monthly net foreign portfolio investment into India is the foreign-flow channel the story says could be affected.",
+                "reused": true,
+                "checkedAt": "2026-10-28T13:16:32.547Z"
+              },
+              {
+                "title": "India net FPI investment, monthly",
+                "unit": "US$ million",
+                "publisher": "Reserve Bank of India",
+                "points": [
+                  {
+                    "period": "Jun 2025",
+                    "value": 2726,
+                    "url": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=24416",
+                    "source": "RBI Bulletin | Official Website of Reserve Bank of India"
+                  },
+                  {
+                    "period": "May 2026",
+                    "value": -4485,
+                    "url": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=24416",
+                    "source": "RBI Bulletin | Official Website of Reserve Bank of India"
+                  },
+                  {
+                    "period": "Jun 2026",
+                    "value": 2691,
+                    "url": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=24416",
+                    "source": "RBI Bulletin | Official Website of Reserve Bank of India"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=24416",
+                    "title": "RBI Bulletin | Official Website of Reserve Bank of India",
+                    "domain": "rbi.org.in"
+                  }
+                ],
+                "domains": [
+                  "rbi.org.in"
+                ],
+                "dropped": 0,
+                "why": "The Federal Reserve's policy rate path is the central subject of the story, and monthly net foreign portfolio investment into India is the foreign-flow channel the story says could be affected.",
+                "reused": true,
+                "checkedAt": "2026-11-21T02:34:10.629Z"
+              }
+            ]
+          },
+          "image": "https://image.cnbcfm.com/api/v1/image/108229868-1763741665578-108229868-1763730430401-gettyimages-2233025951-WILLIAMS_ECNY.jpeg?v=1772548607&w=1920&h=1080",
+          "thread": "tpnacn3"
+        },
+        {
+          "id": "s9zu16s",
+          "headline": "Stock Markets Slip as Nvidia and A.I. Stocks Erase Some of Monday’s Rally",
+          "url": "https://www.nytimes.com/2026/11/24/business/stocks-sp500-huang-nvidia.html",
+          "source": "nyt",
+          "date": "2026-11-24T13:14:53.000Z",
+          "relevance": "medium",
+          "image": "https://static01.nyt.com/images/2026/11/24/multimedia/24biz-markets-zjwk/24biz-markets-zjwk-mediumSquareAt3X.jpg",
+          "why": "US share prices slipped on Tuesday, giving back part of Monday's rally, after days of swings tied to developments at Nvidia and the record-breaking trading debut of Anthropic. Global technology sentiment can spill over to Indian markets.",
+          "implications": [
+            "Sharp swings in artificial intelligence shares can change how global investors view risk, which may influence how much money foreign funds place in Indian equities.",
+            "Indian information technology firms earn much of their revenue in the US, so a lasting change in American technology sentiment could matter for that sector."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-24T14:03:51.813Z",
+            "tier": "quick",
+            "primary": "market_move",
+            "complement": null,
+            "features": [
+              "market_move"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "The only link is indirect, through global investor sentiment and foreign fund flows. Nothing in the story points to a direct effect on Indian households, prices or a specific Indian industry."
+            },
+            "horizon": {
+              "value": "now",
+              "reason": "Market sentiment can pass to other countries within a few trading sessions, so any spillover would appear quickly rather than building over months."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single outlet, The New York Times, with no exchange data or official source quoted, and the nature of the Nvidia developments is not detailed."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Equity & mutual fund investors",
+                "direction": "unclear",
+                "what": "market sentiment",
+                "effect": "Indian share prices may take cues from the US technology swings if global investors change how much risk they are willing to hold.",
+                "basis": "inferred"
+              },
+              {
+                "group": "IT & services workers",
+                "direction": "unclear",
+                "what": "sector sentiment",
+                "effect": "Changes in US technology sentiment could shape the mood around Indian technology services firms, which depend heavily on American clients.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Whether US technology shares continue to swing sharply over the coming trading sessions",
+                "why": "It would show whether the volatility is fading or whether global investor caution could keep reaching other markets.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "Indian share markets often take cues from Wall Street, especially when technology shares move sharply, because global funds adjust their holdings across many countries at the same time."
+            ],
+            "terms": [],
+            "frameworks": {
+              "market_move": {
+                "moved": {
+                  "what": "US stock markets, led by Nvidia and other artificial intelligence shares",
+                  "kind": "share index",
+                  "direction": "down",
+                  "size": "",
+                  "period": "on Tuesday, after Monday's rally"
+                },
+                "cause": {
+                  "text": "The New York Times links the recent swings to the drama at Nvidia and the record-breaking trading debut of Anthropic. Artificial intelligence shares gave back part of Monday's gains.",
+                  "status": "reported",
+                  "by": "The New York Times"
+                },
+                "duration": "multi_day",
+                "channels": [
+                  {
+                    "channel": "foreign investment flows",
+                    "india_link": "Repeated swings in global technology shares can make foreign investors more cautious about risk, which may affect how much money they put into Indian shares.",
+                    "basis": "inferred"
+                  }
+                ],
+                "not_settled": "The size of the fall and the exact nature of the drama at Nvidia have not been reported."
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "nyt",
+              "headline": "Stock Markets Slip as Nvidia and A.I. Stocks Erase Some of Monday’s Rally",
+              "url": "https://www.nytimes.com/2026/11/24/business/stocks-sp500-huang-nvidia.html",
+              "date": "2026-11-24T13:14:53.000Z",
+              "kind": "hard",
+              "summary": "Markets have veered wildly for days, pushed and pulled by the drama at Nvidia and the record-breaking trading debut of Anthropic.",
+              "summaryV": 3,
+              "image": "https://static01.nyt.com/images/2026/11/24/multimedia/24biz-markets-zjwk/24biz-markets-zjwk-mediumSquareAt3X.jpg"
+            }
+          ],
+          "stats": {
+            "v": 2,
+            "at": "2026-11-24T14:04:09.135Z",
+            "series": [
+              {
+                "title": "India net FPI flows, selected months",
+                "unit": "US$ million",
+                "publisher": "Reserve Bank of India",
+                "why": "Monthly swings in foreign investor buying and selling of Indian securities are the channel through which global tech-driven market moves can reach Indian markets.",
+                "points": [
+                  {
+                    "period": "Jun 2025",
+                    "value": 2726,
+                    "url": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=24416",
+                    "source": "RBI Bulletin | Official Website of Reserve Bank of India"
+                  },
+                  {
+                    "period": "May 2026",
+                    "value": -4485,
+                    "url": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=24416",
+                    "source": "RBI Bulletin | Official Website of Reserve Bank of India"
+                  },
+                  {
+                    "period": "Jun 2026",
+                    "value": 2691,
+                    "url": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=24416",
+                    "source": "RBI Bulletin | Official Website of Reserve Bank of India"
+                  }
+                ],
+                "dropped": 0,
+                "sources": [
+                  {
+                    "url": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=24416",
+                    "title": "RBI Bulletin | Official Website of Reserve Bank of India",
+                    "domain": "rbi.org.in"
+                  }
+                ],
+                "domains": [
+                  "rbi.org.in"
+                ]
+              }
+            ]
+          },
+          "placeTried": true,
+          "thread": "t1nkczxr"
+        },
+        {
           "id": "s1676nic",
           "headline": "US escalates sanctions on Iran, targets ‘shadow banking’ networks",
           "url": "https://www.aljazeera.com/news/2026/11/23/us-escalates-sanctions-on-iran-targets-shadow-banking-networks",
@@ -72977,6 +73859,236 @@
       "name": "Technology",
       "items": [
         {
+          "id": "s1yrq9aw",
+          "headline": "Dutch minister heads to China as Nvidia saga revives US push for tougher ASML curbs",
+          "url": "https://www.scmp.com/economy/policy/article/3375565/dutch-minister-heads-china-nvidia-saga-revives-us-push-tougher-asml-curbs",
+          "source": "scmp",
+          "date": "2026-11-24T09:00:06.000Z",
+          "relevance": "medium",
+          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/24/0ece5f42-8383-4429-901e-358943e4afc3_9a50f2ae.jpg?itok=eLZalXcG&v=1795496143",
+          "why": "Dutch Foreign Minister Tom Berendsen visits China this week while the US pushes for tougher limits on ASML's sales to China. The outcome could shape global chip-equipment supply, which matters indirectly to India.",
+          "implications": [
+            "Tighter limits on ASML equipment would narrow the supply of advanced chip-making tools in China and could shift how scarce tools are allocated among other buyers worldwide.",
+            "India's emerging semiconductor plants depend on imported equipment, so changes in global availability or prices could eventually matter to them."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-24T14:00:46.258Z",
+            "tier": "quick",
+            "primary": "trade_flow",
+            "complement": null,
+            "features": [
+              "trade_flow",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "India is not a party to the dispute, and no direct channel to Indian prices, exports or jobs is described; any effect would run through global chip-equipment supply."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Export-control decisions between the US, the Netherlands and China usually take months to settle, and any effect on India would follow later."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single outlet, the South China Morning Post, citing analysts; no US or Dutch decision on new curbs has been reported."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Manufacturing workers",
+                "direction": "unclear",
+                "what": "chip equipment supply",
+                "effect": "Changes in global access to ASML machines could affect how easily new chip and electronics factories in India obtain equipment.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Outcome of Foreign Minister Berendsen's visit to China and any US decision on tougher ASML limits",
+                "why": "It would show whether the Netherlands can resist new curbs on chip-equipment sales to China.",
+                "when": "this week",
+                "where": ""
+              }
+            ],
+            "context": [
+              "ASML is a Dutch company that makes lithography machines, which chipmakers need to print circuits. Governments, especially the US, treat such equipment as strategic, and Dutch export licences are central to this trade."
+            ],
+            "terms": [
+              {
+                "term": "ASML",
+                "meaning": "A Dutch company that makes the advanced lithography machines used by chipmakers to print circuits on silicon wafers."
+              }
+            ],
+            "frameworks": {
+              "trade_flow": {
+                "good": "Advanced chip-making equipment (ASML lithography machines)",
+                "actors": [
+                  {
+                    "country": "Netherlands",
+                    "role": "exporter",
+                    "is_india": false
+                  },
+                  {
+                    "country": "China",
+                    "role": "importer",
+                    "is_india": false
+                  },
+                  {
+                    "country": "United States",
+                    "role": "third_party",
+                    "is_india": false
+                  }
+                ],
+                "change": {
+                  "type": "other",
+                  "effective": ""
+                },
+                "india_position": {
+                  "role": "not_involved",
+                  "note": "India is not part of this trade. Tighter curbs on sales to China could change who competes for scarce equipment, which may matter to India's planned chip plants, but the reports describe no such effect."
+                },
+                "volumes": []
+              }
+            }
+          },
+          "place": {
+            "name": "Beijing",
+            "country": "China",
+            "lat": 39.9,
+            "lon": 116.4,
+            "involves": [
+              "Netherlands",
+              "United States"
+            ]
+          },
+          "reports": [
+            {
+              "source": "scmp",
+              "headline": "Dutch minister heads to China as Nvidia saga revives US push for tougher ASML curbs",
+              "url": "https://www.scmp.com/economy/policy/article/3375565/dutch-minister-heads-china-nvidia-saga-revives-us-push-tougher-asml-curbs",
+              "date": "2026-11-24T09:00:06.000Z",
+              "kind": "hard",
+              "summary": "Dutch Foreign Minister Tom Berendsen’s visit to China this week comes amid a shifting dynamic in the Netherlands’ efforts to fend off further US restrictions on ASML sales to Beijing following the Nvidia saga, analysts say, with some suggesting it could strengthen the Dutch case against the proposed measures despite…",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/24/0ece5f42-8383-4429-901e-358943e4afc3_9a50f2ae.jpg?itok=eLZalXcG&v=1795496143"
+            }
+          ],
+          "stats": {
+            "v": 2,
+            "at": "2026-11-24T14:04:29.853Z",
+            "series": []
+          },
+          "thread": "tjdsk7n"
+        },
+        {
+          "id": "sgyrkir",
+          "headline": "PM Wong vows to stop firms ‘exploiting’ Singapore for AI chip re-routing",
+          "url": "https://www.scmp.com/news/asia/southeast-asia/article/3375560/pm-wong-vows-stop-firms-exploiting-singapore-ai-chip-re-routing",
+          "source": "scmp",
+          "date": "2026-11-24T04:06:52.000Z",
+          "relevance": "medium",
+          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/24/24d20acd-e916-44f9-9ce3-f66af6e23fb4_1edfec8a.jpg?itok=Jfx4XlkB&v=1795493210",
+          "why": "Singapore's Prime Minister Lawrence Wong said his government is working with the US to stop companies exploiting Singapore to divert US microchips to other destinations. India, which imports most of its chips, could see tighter scrutiny of such shipments.",
+          "implications": [
+            "Singapore is a major trading and shipping hub, so stricter checks on chip transshipment could add paperwork and delays for any buyer whose hardware passes through it.",
+            "Indian firms building AI and data-centre capacity depend on imported advanced chips, so closer policing of this trade route could make sourcing more complicated."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-24T13:58:59.392Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "No direct Indian link is reported. Any effect would come indirectly, through Indian buyers of AI hardware that is shipped via Singapore, so the exposure is limited and uncertain."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Enforcement arrangements between Singapore and the US must still be worked out and applied before they could change how shipments reach Indian buyers."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "This rests on a single outlet, the South China Morning Post, quoting the Prime Minister on record; the specific enforcement measures have not been reported."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "chip shipment scrutiny",
+                "effect": "Indian firms that buy AI hardware routed through Singapore could face more checks and possible delays if enforcement tightens.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Announcement of specific US and Singapore enforcement steps on chip transshipment",
+                "why": "It would show whether the checks are aimed only at diversion or also affect legitimate shipments to buyers such as Indian firms.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "The US restricts exports of advanced AI chips to certain destinations. Transshipment through third countries is a known way of getting around such limits, which is why hubs such as Singapore come under pressure to police it."
+            ],
+            "terms": [
+              {
+                "term": "chip re-routing",
+                "meaning": "Sending chips through an intermediate country so they can reach a final destination that would not be allowed to buy them directly."
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Singapore pledges action with the US",
+                    "detail": "Prime Minister Lawrence Wong said Singapore is working with the US to stop companies exploiting the country when they divert US microchips elsewhere.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Chips are diverted to other destinations",
+                    "detail": "The concern is that US microchips are being sent on from Singapore to other destinations. Tackling this means closer control over how chips move through the city-state.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Indian buyers may face closer scrutiny",
+                    "detail": "Indian companies importing AI hardware through Singapore could face more documentation or delays as controls tighten, though no such effect has been reported.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The new checks target only illicit diversion and leave legitimate shipments to Indian buyers unaffected, or Indian firms source chips through channels that do not pass through Singapore."
+              }
+            }
+          },
+          "place": {
+            "name": "Singapore",
+            "country": "Singapore",
+            "lat": 1.35,
+            "lon": 103.82,
+            "involves": [
+              "United States"
+            ]
+          },
+          "reports": [
+            {
+              "source": "scmp",
+              "headline": "PM Wong vows to stop firms ‘exploiting’ Singapore for AI chip re-routing",
+              "url": "https://www.scmp.com/news/asia/southeast-asia/article/3375560/pm-wong-vows-stop-firms-exploiting-singapore-ai-chip-re-routing",
+              "date": "2026-11-24T04:06:52.000Z",
+              "kind": "hard",
+              "summary": "Singapore is working with the US to stop companies “exploiting” the country as they divert US microchips to other destinations, Prime Minister Lawrence Wong said on Tuesday.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/24/24d20acd-e916-44f9-9ce3-f66af6e23fb4_1edfec8a.jpg?itok=Jfx4XlkB&v=1795493210"
+            }
+          ],
+          "thread": "tjdsk7n"
+        },
+        {
           "id": "s1akznn5",
           "headline": "US to blacklist Asian AI firm Megaspeed after Nvidia scandal",
           "url": "https://www.bbc.co.uk/news/articles/cv98xpg5dg5zo",
@@ -80375,6 +81487,296 @@
       "name": "Manufacturing",
       "items": [
         {
+          "id": "s19nhe4x",
+          "headline": "Chinese cobalt firms race to beat DR Congo’s export ban on key battery material",
+          "url": "https://www.scmp.com/economy/global-economy/article/3375611/chinese-cobalt-firms-race-beat-dr-congos-export-ban-key-battery-material",
+          "source": "scmp",
+          "date": "2026-11-24T12:00:05.000Z",
+          "relevance": "medium",
+          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/24/779ae042-cb25-4fae-b246-52a529ce0aba_2356a641.jpg?itok=G4-rl-tJ&v=1795511375",
+          "why": "The Democratic Republic of Congo, which holds the world's largest cobalt reserves, will suspend cobalt exports from 30 November until further notice. Indian battery makers, who rely on imported cobalt, could face tighter supply and higher costs.",
+          "implications": [
+            "Chinese firms with assets in Congo are speeding up shipments over the coming week, so supply may look normal briefly and then tighten once the suspension takes effect.",
+            "If the suspension lasts, buyers worldwide may compete harder for the cobalt that is already outside Congo. That could raise prices for Indian makers of batteries and electric vehicles."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-24T14:02:21.307Z",
+            "tier": "quick",
+            "primary": "trade_flow",
+            "complement": null,
+            "features": [
+              "trade_flow",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The effect would reach India mainly through the import cost of battery materials for one industry, namely battery and electric vehicle manufacturing. The reports do not describe any direct effect on household essentials."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Chinese firms are shipping ahead of the deadline, so stocks in the supply chain may delay any squeeze on Indian buyers by some months."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single outlet, the South China Morning Post, with no quoted Congolese official, and the duration of the suspension and its exact scope are unconfirmed."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Importers & traders",
+                "direction": "up",
+                "what": "cobalt import costs",
+                "effect": "Indian buyers of cobalt and battery materials may pay more if the suspension reduces global supply and buyers compete for the available metal.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Manufacturing workers",
+                "direction": "unclear",
+                "what": "battery sector production",
+                "effect": "Battery and electric vehicle makers in India could see higher input costs or supply delays, which may affect production plans if the suspension is prolonged.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "The start of the Congolese cobalt export suspension on 30 November",
+                "why": "It would show whether the ban takes effect as announced and whether shipments already en route are allowed to leave.",
+                "when": "2026-11-30",
+                "where": ""
+              },
+              {
+                "what": "Any Congolese announcement on when the cobalt export suspension will end",
+                "why": "The length of the suspension largely determines whether global cobalt prices and Indian import costs are affected.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "India has very little domestic cobalt production and depends on imports of the metal and of refined or battery-grade material, so supply disruptions abroad usually reach Indian manufacturers through import prices."
+            ],
+            "terms": [
+              {
+                "term": "cobalt",
+                "meaning": "A metal used in the cathodes of many rechargeable lithium-ion batteries, including those in electric vehicles and electronic devices."
+              }
+            ],
+            "frameworks": {
+              "trade_flow": {
+                "good": "Cobalt, a critical battery metal",
+                "actors": [
+                  {
+                    "country": "Democratic Republic of Congo",
+                    "role": "exporter",
+                    "is_india": false
+                  },
+                  {
+                    "country": "China",
+                    "role": "importer",
+                    "is_india": false
+                  }
+                ],
+                "change": {
+                  "type": "ban",
+                  "effective": "2026-11-30"
+                },
+                "india_position": {
+                  "role": "competing_buyer",
+                  "note": "India does not appear in the reports, but as an importer of cobalt it could end up competing with other buyers for supply outside Congo. Indian battery makers could face higher prices if the suspension is prolonged."
+                },
+                "volumes": []
+              }
+            }
+          },
+          "place": {
+            "name": "Kinshasa",
+            "country": "DR Congo",
+            "lat": -4.32,
+            "lon": 15.31,
+            "involves": [
+              "China"
+            ]
+          },
+          "reports": [
+            {
+              "source": "scmp",
+              "headline": "Chinese cobalt firms race to beat DR Congo’s export ban on key battery material",
+              "url": "https://www.scmp.com/economy/global-economy/article/3375611/chinese-cobalt-firms-race-beat-dr-congos-export-ban-key-battery-material",
+              "date": "2026-11-24T12:00:05.000Z",
+              "kind": "hard",
+              "summary": "The Democratic Republic of Congo, home to the world’s largest cobalt reserves, will suspend exports of the critical battery metal from November 30 until further notice, prompting Chinese operators with assets in the country to accelerate shipments over the coming week.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/24/779ae042-cb25-4fae-b246-52a529ce0aba_2356a641.jpg?itok=G4-rl-tJ&v=1795511375"
+            }
+          ],
+          "stats": {
+            "v": 2,
+            "at": "2026-11-24T14:04:17.902Z",
+            "series": []
+          },
+          "thread": "t1ovsajj"
+        },
+        {
+          "id": "snjnhqq",
+          "headline": "Chinese drug stocks sink as US lawmakers threaten curbs on cross-border collaboration",
+          "url": "https://www.scmp.com/business/markets/article/3375599/chinese-drug-stocks-sink-us-lawmakers-threaten-cross-border-collaboration",
+          "source": "scmp",
+          "date": "2026-11-24T08:16:34.000Z",
+          "relevance": "medium",
+          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/24/48790ea4-4580-4d04-8413-3bd956fc3051_2e23784a.jpg?itok=H9BqdEeJ&v=1795508192",
+          "why": "Chinese healthcare shares fell on Tuesday after US lawmakers warned of a 'dangerous dependence' on China in drugs and urged limits on cross-border collaboration. Indian drugmakers, closely tied to both countries' supply chains, could be affected.",
+          "implications": [
+            "Any US curbs on working with Chinese drug firms could change where American companies place research and manufacturing contracts, which may open or close opportunities for Indian suppliers.",
+            "Indian drugmakers that rely on Chinese inputs could face disruption if the rhetoric hardens into rules that complicate supply chains between the two countries."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-24T13:59:53.838Z",
+            "tier": "quick",
+            "primary": "market_move",
+            "complement": null,
+            "features": [
+              "market_move"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "The reports describe only a fall in Chinese shares and lawmakers' warnings. Any effect on India would come indirectly through pharmaceutical supply chains and outsourcing, and no such mechanism is yet reported."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Lawmakers have so far only threatened curbs, and any rules would take time to be drafted, passed and to change company contracts."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single outlet, the South China Morning Post, and reports lawmakers' warnings rather than any adopted measure."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Large exporters",
+                "direction": "unclear",
+                "what": "pharmaceutical supply chains",
+                "effect": "Indian drug exporters could see changes in input supply from China or in US outsourcing orders if Washington restricts cross-border collaboration, though the direction is not yet clear.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "A formal US bill or regulatory proposal restricting collaboration between American and Chinese drug companies",
+                "why": "It would show whether lawmakers' warnings are turning into binding rules that could reshape pharmaceutical supply chains.",
+                "when": "",
+                "where": "US Congress"
+              }
+            ],
+            "context": [
+              "India is a major supplier of generic medicines to the United States, while many Indian manufacturers depend on China for key ingredients. Tighter US–China ties in pharmaceuticals therefore reach Indian firms from both directions."
+            ],
+            "terms": [],
+            "frameworks": {
+              "market_move": {
+                "moved": {
+                  "what": "Chinese healthcare stocks",
+                  "kind": "sector shares",
+                  "direction": "down",
+                  "size": "",
+                  "period": "on Tuesday"
+                },
+                "cause": {
+                  "text": "Shares fell as US lawmakers intensified warnings about the American drug industry's 'dangerous dependence' on China and urged restrictions on cross-border collaboration.",
+                  "status": "reported",
+                  "by": "South China Morning Post"
+                },
+                "duration": "one_day",
+                "channels": [
+                  {
+                    "channel": "other",
+                    "india_link": "Indian pharmaceutical firms compete with and buy from Chinese counterparts, so tighter US–China curbs could shift supply and outsourcing flows that Indian companies depend on.",
+                    "basis": "inferred"
+                  }
+                ],
+                "not_settled": "The size of the fall and whether any actual US restrictions will follow have not been reported."
+              }
+            }
+          },
+          "place": {
+            "name": "Washington",
+            "country": "United States",
+            "lat": 38.9,
+            "lon": -77,
+            "involves": [
+              "China"
+            ]
+          },
+          "reports": [
+            {
+              "source": "scmp",
+              "headline": "Chinese drug stocks sink as US lawmakers threaten curbs on cross-border collaboration",
+              "url": "https://www.scmp.com/business/markets/article/3375599/chinese-drug-stocks-sink-us-lawmakers-threaten-cross-border-collaboration",
+              "date": "2026-11-24T08:16:34.000Z",
+              "kind": "hard",
+              "summary": "Chinese healthcare stocks fell on Tuesday amid intensifying threats from Washington, where lawmakers warned about the US drug industry’s “dangerous dependence” on China and urged restrictions on cross-border collaboration.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/24/48790ea4-4580-4d04-8413-3bd956fc3051_2e23784a.jpg?itok=H9BqdEeJ&v=1795508192"
+            }
+          ],
+          "stats": {
+            "v": 2,
+            "at": "2026-11-24T14:04:41.190Z",
+            "series": [
+              {
+                "title": "India's total imports of APIs and drug intermediates",
+                "unit": "₹ crore",
+                "publisher": "Ministry of Chemicals and Fertilizers (Department of Pharmaceuticals), via PIB",
+                "why": "This is the overall import bill that the China figures sit within, so a reader can see how concentrated India's sourcing is.",
+                "points": [
+                  {
+                    "period": "2020-21",
+                    "value": 27361,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2237413&reg=48&lang=2",
+                    "source": "Self reliance in APIs"
+                  },
+                  {
+                    "period": "2021-22",
+                    "value": 30783,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2237413&reg=48&lang=2",
+                    "source": "Self reliance in APIs"
+                  },
+                  {
+                    "period": "2022-23",
+                    "value": 33251,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2237413&reg=48&lang=2",
+                    "source": "Self reliance in APIs"
+                  },
+                  {
+                    "period": "2023-24",
+                    "value": 35422,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2237413&reg=48&lang=2",
+                    "source": "Self reliance in APIs"
+                  },
+                  {
+                    "period": "2024-25",
+                    "value": 36124,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2237413&reg=48&lang=2",
+                    "source": "Self reliance in APIs"
+                  }
+                ],
+                "dropped": 0,
+                "sources": [
+                  {
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2237413&reg=48&lang=2",
+                    "title": "Self reliance in APIs",
+                    "domain": "pib.gov.in"
+                  }
+                ],
+                "domains": [
+                  "pib.gov.in"
+                ]
+              }
+            ]
+          },
+          "thread": "tsbrp6k"
+        },
+        {
           "id": "s1v9tse8",
           "headline": "Investors gives a thumbs down to Tata Steel-APL Apollo $1.67 billion deal, plunging shares",
           "url": "https://www.cnbc.com/2026/11/23/tata-steel-acquisition-deal-apl-india.html",
@@ -83593,6 +84995,16 @@
               "summary": "In tonight's edition, the COP31 climate summit in Turkey has failed to reach an agreement, exposing deep divisions over fossil fuels and climate finance. Also, DR Congo's Félix Tshisekedi and Kenya's William Ruto agree to restore relations and boost regional cooperation.",
               "summaryV": 3,
               "image": "https://s.france24.com/media/display/3dc8e0cc-e78a-11f1-960c-6b451f569414/w:1024/p:16x9/DN00001640-VOD-00013441-01.jpg"
+            },
+            {
+              "source": "france24",
+              "headline": "Collapse of COP31: 'This deal was a bad deal and better no deal than a bad deal'",
+              "url": "https://www.france24.com/en/tv-shows/spotlight/20261124-collapse-of-cop31-this-deal-was-a-bad-deal-and-better-no-deal-than-a-bad-deal",
+              "date": "2026-11-24T06:51:34.000Z",
+              "kind": "hard",
+              "summary": "François Picard is joined by Ireland's former environment minister Eamon Ryan following the collapse of COP31 in Antalya, Turkey. \"Political science trumps climate science still,\" Ryan reacted.",
+              "summaryV": 3,
+              "image": "https://s.france24.com/media/display/c6bb18bc-e7f0-11f1-a395-81da3ab2acbb/w:1024/p:16x9/capture-09fd3d34.jpg"
             }
           ],
           "thread": "t4rp4vx",
@@ -88890,6 +90302,402 @@
       "name": "Policy & Governance",
       "items": [
         {
+          "id": "snj1a3o",
+          "headline": "UK sanctions Yemen’s Houthi group and four of its top officials",
+          "url": "https://www.aljazeera.com/news/2026/11/24/uk-sanctions-yemens-houthi-group-four-senior-officials",
+          "source": "aljazeera",
+          "date": "2026-11-24T12:55:55.000Z",
+          "relevance": "medium",
+          "why": "The United Kingdom has imposed sanctions on Yemen's Houthi group and four of its top officials. India is exposed mainly through the wider Yemen war, which threatens Saudi Arabia, where many Indians live and work, and Gulf energy supplies.",
+          "implications": [
+            "The sanctions add diplomatic pressure on the Houthis but do not by themselves change the military situation, which is shaped by the group's strikes on Saudi Arabia.",
+            "The move shows that Western governments are siding openly with Saudi Arabia, which the UK calls a partner. This could harden positions on both sides and make talks harder."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-24T14:02:53.878Z",
+            "tier": "quick",
+            "primary": "escalation",
+            "complement": null,
+            "features": [
+              "armed_conflict"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "The sanctions themselves have no direct channel to Indian households or trade. Any effect would come indirectly through the Yemen war's impact on Saudi Arabia, Gulf energy supplies and Indians living there."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Sanctions act slowly and indirectly, so any effect on the war or on Gulf risks for India would take months to show."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "This rests on one outlet, Al Jazeera, quoting Foreign Secretary Ed Miliband on the record. The specific measures and the names of the four officials are not given."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Gulf & overseas workers and families",
+                "direction": "unclear",
+                "what": "safety in Saudi Arabia",
+                "effect": "Indians working in Saudi Arabia could be affected if the war continues to threaten Saudi cities, though these sanctions do not directly change that risk.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Further sanctions on the Houthis announced by the UK or its allies",
+                "why": "More coordinated measures would show how far Western governments are willing to go in backing Saudi Arabia.",
+                "when": "",
+                "where": "UK Foreign, Commonwealth and Development Office"
+              },
+              {
+                "what": "Any new Houthi strikes on Saudi airports or oil facilities",
+                "why": "New attacks would show whether the sanctions are changing Houthi behaviour and whether the risk to Gulf energy and air travel is growing.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "Sanctions on armed groups usually mean frozen assets and travel bans on named people. They tend to have limited effect on a group's fighting ability but signal political alignment."
+            ],
+            "terms": [],
+            "frameworks": {
+              "escalation": {
+                "move": "none",
+                "rung": 6,
+                "current_rung": 6,
+                "previous_rung": null,
+                "development": "The United Kingdom has added sanctions on the Houthi group and four of its senior officials, citing attacks on its partners and on civilians.",
+                "evidence": "Sanctions are a diplomatic measure at a lower rung. No new attack or deployment is reported, so the war stays at rung 6, set by the Houthi strikes on Riyadh.",
+                "next_signals": [
+                  {
+                    "rung": 7,
+                    "signal": "A large-scale ground offensive or open war between the Houthis and the Saudi-led coalition across the border would show a move to full-scale war."
+                  },
+                  {
+                    "rung": 5,
+                    "signal": "A halt in Houthi missile strikes on Saudi cities and the reopening of King Khalid International Airport would suggest the fighting is easing."
+                  }
+                ],
+                "india_channels": [
+                  "oil",
+                  "diaspora safety",
+                  "shipping"
+                ],
+                "conflict": "w1f5pudc",
+                "applied": "none",
+                "from": 6
+              }
+            }
+          },
+          "conflict": "w1f5pudc",
+          "place": {
+            "name": "London",
+            "country": "United Kingdom",
+            "lat": 51.5,
+            "lon": -0.12,
+            "involves": [
+              "Yemen"
+            ]
+          },
+          "reports": [
+            {
+              "source": "aljazeera",
+              "headline": "UK sanctions Yemen’s Houthi group and four of its top officials",
+              "url": "https://www.aljazeera.com/news/2026/11/24/uk-sanctions-yemens-houthi-group-four-senior-officials",
+              "date": "2026-11-24T12:55:55.000Z",
+              "kind": "hard",
+              "summary": "Group must be held accountable for 'targeting our partners and innocent civilians', says Foreign Secretary Ed Miliband.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/epa_6b058574b0bc-1795523956.jpg?resize=1920%2C1440"
+            }
+          ],
+          "finChecked": true,
+          "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/epa_6b058574b0bc-1795523956.jpg?resize=1920%2C1440",
+          "thread": "t1j5n1me"
+        },
+        {
+          "id": "s165ke4l",
+          "headline": "China warns against turning Horn of Africa into geopolitical battleground",
+          "url": "http://www.africanews.com/2026/11/23/china-warns-against-turning-horn-of-africa-into-geopolitical-battleground/",
+          "source": "africanews",
+          "date": "2026-11-23T12:04:55.000Z",
+          "relevance": "medium",
+          "why": "China has sent envoys to Ethiopia, Djibouti, Egypt and Eritrea to head off a new Horn of Africa war. A conflict there could threaten the Red Sea shipping route that carries much of India's trade with Europe.",
+          "implications": [
+            "China's mediation suggests that major powers see a real risk of fighting among Horn of Africa states, which would endanger ships near the Bab el-Mandeb strait.",
+            "Djibouti sits beside a key shipping chokepoint, so instability involving it could raise insurance and freight costs for vessels sailing between Asia and Europe.",
+            "Rising Middle East tensions are reported to be spilling into the Horn of Africa, which could compound shipping risks already linked to the Gulf region."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-24T14:05:35.636Z",
+            "tier": "standard",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "India would be affected only indirectly, through possible disruption to Red Sea shipping if tensions turned into conflict, and no fighting has been reported."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Any effect on India depends on whether diplomatic efforts fail and tensions escalate into conflict, which would take time to unfold."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "Africanews and Al Jazeera both report China's diplomatic push, but the scale of the regional tensions and their direction remain unclear."
+            },
+            "outlets": 2,
+            "affected": [
+              {
+                "group": "Large exporters",
+                "direction": "unclear",
+                "what": "shipping costs to Europe",
+                "effect": "If conflict disrupted Red Sea traffic, Indian exporters shipping to Europe could face longer routes and higher freight and insurance costs.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "freight and delivery times",
+                "effect": "Indian firms importing goods from Europe could face delays and higher shipping charges if vessels avoided waters near the Horn of Africa.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Further Chinese envoy visits or mediation talks with Ethiopia, Djibouti, Egypt and Eritrea",
+                "why": "Continued diplomacy would show whether tensions are easing or still require outside intervention.",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "Any military escalation involving Egypt, Ethiopia, Eritrea or Djibouti",
+                "why": "Fighting would raise the risk to shipping near the Bab el-Mandeb strait and the Red Sea.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "Ships sailing between India and Europe usually pass through the Bab el-Mandeb strait and the Red Sea to reach the Suez Canal, which runs alongside the Horn of Africa.",
+              "Djibouti hosts military bases of several foreign powers, including China's first overseas base, which gives Beijing a direct stake in regional stability.",
+              "Egypt and Ethiopia have long disputed Ethiopia's large dam on the Nile, and Ethiopia and Eritrea have a history of war."
+            ],
+            "terms": [
+              {
+                "term": "Horn of Africa",
+                "meaning": "The north-eastern tip of Africa, including Ethiopia, Eritrea, Djibouti and Somalia, which borders the southern entrance to the Red Sea."
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "China steps up regional diplomacy",
+                    "detail": "Chinese envoys visited Ethiopia, Djibouti, Egypt and Eritrea this month and warned against turning the Horn of Africa into a geopolitical battleground.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Middle East tensions spread to region",
+                    "detail": "Tensions in the Middle East are threatening peace in the Horn of Africa, adding to frictions involving Egypt, Ethiopia, Eritrea and Djibouti.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Conflict could threaten Red Sea shipping",
+                    "detail": "If tensions turned into fighting, ships passing the Bab el-Mandeb strait near Djibouti and Eritrea could face danger, and many might reroute around southern Africa.",
+                    "basis": "inferred"
+                  },
+                  {
+                    "step": "Indian trade costs could rise",
+                    "detail": "Longer voyages and higher insurance premiums could raise freight costs and delay deliveries for Indian exporters and importers trading with Europe.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The effect would not reach India if diplomacy by China and others prevents armed conflict and shipping through the Red Sea continues normally."
+              }
+            }
+          },
+          "place": {
+            "name": "Horn of Africa",
+            "country": "Djibouti",
+            "lat": 11.59,
+            "lon": 43.15,
+            "involves": [
+              "China",
+              "Ethiopia",
+              "Eritrea"
+            ]
+          },
+          "reports": [
+            {
+              "source": "africanews",
+              "headline": "China warns against turning Horn of Africa into geopolitical battleground",
+              "url": "http://www.africanews.com/2026/11/23/china-warns-against-turning-horn-of-africa-into-geopolitical-battleground/",
+              "date": "2026-11-23T12:04:55.000Z",
+              "kind": "hard",
+              "summary": "With tensions in the Middle East threatening peace in the Horn of Africa, China is warning against turning the region into a geopolitical battleground. Chinese envoys have visited Ethiopia, Djibouti, Egypt and Eritrea this month.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://images.euronews.com/articles/stories/10/00/40/12/1024x538_cmsv2_31ec8d60-668f-5f5e-913b-278c6f6bdfaf-10004012.jpg"
+            },
+            {
+              "source": "aljazeera",
+              "headline": "China walks ‘thin line’ in push to prevent another Horn of Africa war",
+              "url": "https://www.aljazeera.com/news/2026/11/24/china-walks-thin-line-in-push-to-prevent-another-horn-of-africa-war",
+              "date": "2026-11-24T12:18:44.000Z",
+              "kind": "feature",
+              "summary": "Beijing has escalated diplomatic efforts to ease tensions involving Egypt, Ethiopia, Eritrea and Djibouti.",
+              "summaryV": 3
+            }
+          ],
+          "finChecked": true,
+          "image": "https://images.euronews.com/articles/stories/10/00/40/12/1024x538_cmsv2_31ec8d60-668f-5f5e-913b-278c6f6bdfaf-10004012.jpg",
+          "thread": "t1xek3gy"
+        },
+        {
+          "id": "s47b9kg",
+          "headline": "Why Japan is taking its missile drills to Indian soil",
+          "url": "https://www.scmp.com/week-asia/politics/article/3375590/why-japan-taking-its-missile-drills-indian-soil",
+          "source": "scmp",
+          "date": "2026-11-24T09:00:10.000Z",
+          "relevance": "medium",
+          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/24/63b94285-aab6-497f-bd6a-2147e5059e04_f76248ba.jpg?itok=3x2xXyQI&v=1795504198",
+          "why": "",
+          "implications": [],
+          "place": {
+            "name": "India",
+            "country": "India",
+            "lat": 20.6,
+            "lon": 79,
+            "involves": [
+              "Japan"
+            ]
+          },
+          "reports": [
+            {
+              "source": "scmp",
+              "headline": "Why Japan is taking its missile drills to Indian soil",
+              "url": "https://www.scmp.com/week-asia/politics/article/3375590/why-japan-taking-its-missile-drills-indian-soil",
+              "date": "2026-11-24T09:00:10.000Z",
+              "kind": "feature",
+              "summary": "India’s decision to allow Japanese forces to conduct live-fire missile drills at its firing ranges signals a new level of cooperation between their militaries, analysts have said, as shared concerns over China push the two countries towards closer defence ties.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/24/63b94285-aab6-497f-bd6a-2147e5059e04_f76248ba.jpg?itok=3x2xXyQI&v=1795504198"
+            }
+          ],
+          "finChecked": true,
+          "thread": "t731rxg"
+        },
+        {
+          "id": "sf1csx6",
+          "headline": "Leader of India’s Cockroach movement says he was stopped from boarding flight to UK",
+          "url": "https://www.theguardian.com/world/2026/nov/24/leader-india-coackroach-movement-says-stopped-from-boarding-flight-to-uk",
+          "source": "guardian",
+          "date": "2026-11-24T08:24:26.000Z",
+          "relevance": "medium",
+          "image": "https://i.guim.co.uk/img/media/9f22a19d170e05a9273e32830ab1c24735bb14bb/282_0_4240_3392/master/4240.jpg?width=700&quality=85&auto=format&fit=max&s=b74e3956b360dcf5ef7a6a460e886e4c",
+          "why": "Saurav Das, a leader of India's youth-led Cockroach movement, says he was prevented from leaving Delhi to fly to the UK for talks on the group's protests. He blames the government; the claim is his own.",
+          "implications": [
+            "If travel curbs on protest figures were confirmed, they could raise questions about how freely Indian activists can speak to audiences abroad, including students at foreign universities.",
+            "The reason for the stop has not been reported, so it is unclear whether a legal order, an airline decision or another cause lay behind it."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-24T14:00:46.258Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "low",
+              "reason": "The story concerns one activist's travel and has no direct channel to household costs, trade or the safety of Indians generally, so exposure for most people is low."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "The date of the planned UK talks has not been reported, and any official response or legal challenge would take some time to emerge."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "The account rests on one outlet, The Guardian, and on Das's own claim; no government explanation has been reported and the cause of the stop is unconfirmed."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Travellers & pilgrims",
+                "direction": "unclear",
+                "what": "freedom to travel abroad",
+                "effect": "If activists can be stopped at Delhi airport before flights, it could affect how freely some Indians travel abroad to speak or study.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Any official statement explaining why Saurav Das was stopped from boarding his flight",
+                "why": "It would show whether a legal order or another reason lay behind the stop, and whether it could apply to others.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "Indian immigration officers can stop a passenger at an airport if they act on a legal order, such as a lookout circular, and such restrictions can usually be challenged in court."
+            ],
+            "terms": [],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Das says he was stopped at Delhi",
+                    "detail": "Saurav Das, a leader of the Cockroach movement, says he was prevented from leaving Delhi to fly to the UK, and he calls the government a 'coward government'.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "UK university talks were planned",
+                    "detail": "He was due to speak at UK universities about the movement's protests, so the stop keeps him from that audience abroad.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Attention to the movement may grow",
+                    "detail": "The episode could draw more attention to the movement and prompt debate in India and abroad about restrictions on activists' travel.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The effect would fade if authorities give a routine, unrelated reason for the stop, or if Das is soon able to travel and give his talks."
+              }
+            }
+          },
+          "place": {
+            "name": "New Delhi",
+            "country": "India",
+            "lat": 28.6,
+            "lon": 77.2,
+            "involves": [
+              "United Kingdom"
+            ]
+          },
+          "reports": [
+            {
+              "source": "guardian",
+              "headline": "Leader of India’s Cockroach movement says he was stopped from boarding flight to UK",
+              "url": "https://www.theguardian.com/world/2026/nov/24/leader-india-coackroach-movement-says-stopped-from-boarding-flight-to-uk",
+              "date": "2026-11-24T08:24:26.000Z",
+              "kind": "hard",
+              "summary": "Saurav Das was due to give talks at UK universities on protest movement but says ‘coward government’ prevented him flying",
+              "summaryV": 3,
+              "lede": "A leader of India’s youth-led Cockroach movement has said he was prevented from leaving Delhi to fly to the UK to give talks on the viral group’s protests.",
+              "image": "https://i.guim.co.uk/img/media/9f22a19d170e05a9273e32830ab1c24735bb14bb/282_0_4240_3392/master/4240.jpg?width=700&quality=85&auto=format&fit=max&s=b74e3956b360dcf5ef7a6a460e886e4c"
+            }
+          ],
+          "finChecked": true,
+          "thread": "t8k3qfd"
+        },
+        {
           "id": "s1ktcu2x",
           "headline": "Israel leadership rivals clash over Iran threat ahead of coalition talks",
           "url": "https://www.scmp.com/news/world/middle-east/article/3375535/israel-leadership-rivals-clash-over-iran-threat-ahead-coalition-talks",
@@ -89166,117 +90974,6 @@
           ],
           "finChecked": true,
           "thread": "t10padb1"
-        },
-        {
-          "id": "s165ke4l",
-          "headline": "China warns against turning Horn of Africa into geopolitical battleground",
-          "url": "http://www.africanews.com/2026/11/23/china-warns-against-turning-horn-of-africa-into-geopolitical-battleground/",
-          "source": "africanews",
-          "date": "2026-11-23T12:04:55.000Z",
-          "relevance": "medium",
-          "why": "China has warned against turning the Horn of Africa into a geopolitical battleground as Middle East tensions threaten regional peace, and Chinese envoys have visited four countries this month. India's link is indirect, through nearby sea routes.",
-          "implications": [
-            "Instability in countries near the Red Sea and Gulf of Aden could raise risks for commercial ships, which may affect Indian importers and exporters who rely on these sea lanes.",
-            "Greater great-power attention to the region could add to competition for influence along the Indian Ocean rim, where India also has security and trade interests."
-          ],
-          "analysis": {
-            "v": 3,
-            "at": "2026-11-23T14:35:54.665Z",
-            "tier": "quick",
-            "primary": "impact_chain",
-            "complement": null,
-            "features": [],
-            "exposure": {
-              "level": "low",
-              "reason": "The reports describe diplomatic warnings and visits, not any disruption to shipping or trade. Any effect on India would come indirectly through sea-route risk and is not described."
-            },
-            "horizon": {
-              "value": "months",
-              "reason": "The story concerns diplomacy and regional tension, and any effect on shipping or trade would depend on how the situation develops over time."
-            },
-            "confidence": {
-              "level": "low",
-              "reason": "The account rests on a single outlet, Africanews, with no on-record official quoted, and its link to India is not established."
-            },
-            "outlets": 1,
-            "affected": [
-              {
-                "group": "Importers & traders",
-                "direction": "unclear",
-                "what": "sea-route risk",
-                "effect": "If tensions near the Red Sea and Gulf of Aden disrupt shipping, Indian traders using these routes could face delays or higher freight costs.",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "Further Chinese diplomatic visits or statements on the Horn of Africa and Middle East tensions",
-                "why": "They would show whether great-power involvement in the region is deepening.",
-                "when": "",
-                "where": ""
-              }
-            ],
-            "context": [
-              "India's sea trade with Europe and parts of Africa commonly passes near the Red Sea and Gulf of Aden, so disruption there can raise shipping times and costs.",
-              "China and India both seek influence in the wider Indian Ocean region through diplomacy, ports and trade links."
-            ],
-            "terms": [
-              {
-                "term": "Horn of Africa",
-                "meaning": "The peninsula in north-east Africa that includes Ethiopia, Eritrea and Djibouti and lies close to the Red Sea."
-              }
-            ],
-            "frameworks": {
-              "impact_chain": {
-                "chain": [
-                  {
-                    "step": "Middle East tensions reach the Horn",
-                    "detail": "Tensions in the Middle East are threatening peace in the Horn of Africa, and China is warning against making the region a geopolitical battleground.",
-                    "basis": "reported"
-                  },
-                  {
-                    "step": "Chinese envoys visit four countries",
-                    "detail": "Chinese envoys have visited Ethiopia, Djibouti, Egypt and Eritrea this month, showing active diplomatic engagement in the region.",
-                    "basis": "reported"
-                  },
-                  {
-                    "step": "Possible sea-route risk for India",
-                    "detail": "If instability spreads to waters near these countries, shipping on routes used by Indian trade could face delays or higher costs.",
-                    "basis": "inferred"
-                  }
-                ],
-                "breaks_if": "Regional tensions stay diplomatic and do not disrupt shipping lanes or ports, so Indian trade routes are unaffected."
-              }
-            }
-          },
-          "place": {
-            "name": "Horn of Africa",
-            "country": "Djibouti",
-            "lat": 11.59,
-            "lon": 43.15,
-            "involves": [
-              "China",
-              "Ethiopia",
-              "Eritrea"
-            ]
-          },
-          "reports": [
-            {
-              "source": "africanews",
-              "headline": "China warns against turning Horn of Africa into geopolitical battleground",
-              "url": "http://www.africanews.com/2026/11/23/china-warns-against-turning-horn-of-africa-into-geopolitical-battleground/",
-              "date": "2026-11-23T12:04:55.000Z",
-              "kind": "hard",
-              "summary": "With tensions in the Middle East threatening peace in the Horn of Africa, China is warning against turning the region into a geopolitical battleground. Chinese envoys have visited Ethiopia, Djibouti, Egypt and Eritrea this month.",
-              "summaryV": 3,
-              "ogTried": true,
-              "descTried": true,
-              "image": "https://images.euronews.com/articles/stories/10/00/40/12/1024x538_cmsv2_31ec8d60-668f-5f5e-913b-278c6f6bdfaf-10004012.jpg"
-            }
-          ],
-          "finChecked": true,
-          "image": "https://images.euronews.com/articles/stories/10/00/40/12/1024x538_cmsv2_31ec8d60-668f-5f5e-913b-278c6f6bdfaf-10004012.jpg",
-          "thread": "t1xek3gy"
         },
         {
           "id": "s1n9kavo",
@@ -107426,19 +109123,19 @@
   "source": "BBC News & The Guardian & NPR & Al Jazeera & MercoPress & ABC News & The New York Times & CNBC & CBS News & DW & France 24 & Africanews & South China Morning Post & The Hindu & Mint & The Indian Express",
   "lastRun": {
     "filter": {
-      "judged": 203,
-      "kept": 14,
+      "judged": 224,
+      "kept": 20,
       "guarded": 0
     },
     "health": {
       "day": "2026-11-24",
-      "newStories24h": 16,
-      "keepRate2d": 0.095
+      "newStories24h": 17,
+      "keepRate2d": 0.093
     },
     "wars": {
       "linked": 0,
       "seeded": 0,
-      "active": 8
+      "active": 9
     },
     "places": {
       "labelled": 0,
@@ -107446,51 +109143,55 @@
       "waiting": 0
     },
     "skipped": {
-      "since": "2026-11-23T14:41:40.742Z",
+      "since": "2026-11-24T02:27:51.551Z",
       "counts": {
-        "section": 31,
-        "live_blog": 5,
+        "video_audio": 1,
+        "section": 26,
+        "live_blog": 7,
         "podcast_quiz_gallery": 1
       },
       "examples": {
+        "video_audio": [
+          "Watch: Moment troops raid home and capture Mexican drug lord"
+        ],
         "section": [
-          "'Biggest U-turn in economic history': Experts react to Jensen Huang's return to Nvidia",
-          "A comeback for the ages: Trump's influence on Huang's return to Nvidia",
-          "Nvidia reinstates CEO after affair with alleged spy",
-          "Cop31 collapses: why did climate talks fall apart? - The Latest",
-          "Ben Jennings on the failure of Cop31 – cartoon"
+          "'I cried for hours after losing UK university place'",
+          "Council tax and stamp duty: both are a disaster zone. Scrap them and start from scratch | Polly Toynbee",
+          "'I'm going to be a better CEO': Jensen Huang rejoins Nvidia after Trump intervention – video",
+          "Singapore investigated Alice Huang but found no basis for prosecution, prime minister says – video",
+          "A year of deadly floods and fires – and yet Cop31 still collapsed. When will our leaders grasp the scale of this crisis?"
         ],
         "live_blog": [
-          "Australian politics live: Greens secure ‘multibillion dollar fines’ for big tech in digital duty of care; ANZ predicts R",
-          "EU sanctions package intended to ‘keep pressure’ on Russia and ‘strike harder’ at its ability to fund Ukraine war – as i",
-          "Burnham says it would be ‘unthinkable’ for the UK to rejoin the EU without a referendum – as it happened",
-          "Republican lawmakers break with Trump over alleged Nvidia chip smuggling after Jensen Huang’s reinstatement – live",
-          "Iran war live: Iran says three ships catch fire after hitting Hormuz mines"
+          "‘State-sanctioned theft’: Australian news outlets demand content is protected from AI scraping – as it happened",
+          "Italy expresses concern to Ukraine over Libya ship attacks – Europe live",
+          "World Chess Championship 2026 Game 1: Gukesh Dommaraju v Javokhir Sindarov – live",
+          "Nvidia shares fall in premarket trading as Jensen Huang’s return sparks US political backlash – business live",
+          "Farage suggests he wouldn’t work with Tories on campaign against rejoining EU and ‘will never trust them again’ – UK pol"
         ],
         "podcast_quiz_gallery": [
-          "What tactics will Burnham use to sell his EU plans? – podcast"
+          "Myanmar has been found guilty of genocide. Should Israel be worried? – podcast"
         ]
       }
     },
     "finance": {
-      "moved": 1,
-      "checked": 3
+      "moved": 0,
+      "checked": 5
     },
-    "analysed": 203,
-    "added": 5,
-    "merged": 9,
-    "rejected": 189,
+    "analysed": 224,
+    "added": 12,
+    "merged": 4,
+    "rejected": 208,
     "failedBatches": 0,
     "feeds": {
       "bbc": {
         "feedsOk": 6,
         "feedsFailed": 0,
-        "items": 175
+        "items": 168
       },
       "guardian": {
         "feedsOk": 7,
         "feedsFailed": 0,
-        "items": 195
+        "items": 196
       },
       "npr": {
         "feedsOk": 4,
@@ -107500,7 +109201,7 @@
       "aljazeera": {
         "feedsOk": 1,
         "feedsFailed": 0,
-        "items": 17
+        "items": 20
       },
       "mercopress": {
         "feedsOk": 3,
@@ -107515,7 +109216,7 @@
       "nyt": {
         "feedsOk": 5,
         "feedsFailed": 0,
-        "items": 200
+        "items": 202
       },
       "cnbc": {
         "feedsOk": 3,
@@ -107525,17 +109226,17 @@
       "cbs": {
         "feedsOk": 2,
         "feedsFailed": 0,
-        "items": 35
+        "items": 36
       },
       "dw": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 31
+        "items": 33
       },
       "france24": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 74
+        "items": 65
       },
       "africanews": {
         "feedsOk": 1,
@@ -107545,22 +109246,22 @@
       "scmp": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 143
+        "items": 145
       }
     },
     "shareImages": {
-      "tried": 1,
-      "found": 1,
+      "tried": 4,
+      "found": 4,
       "summaries": 0
     },
     "threads": {
-      "assigned": 5,
-      "created": 2,
+      "assigned": 12,
+      "created": 5,
       "failedBatches": 0
     },
     "summaries": {
-      "written": 3,
-      "due": 3
+      "written": 6,
+      "due": 6
     },
     "kinds": {
       "labelled": 0,
@@ -107573,74 +109274,95 @@
       "failedBatches": 0
     },
     "stats": {
-      "searched": 3,
-      "found": 1,
-      "reused": 1,
-      "none": 1,
+      "searched": 6,
+      "found": 2,
+      "reused": 2,
+      "none": 2,
       "failed": 0,
-      "proposed": 3,
+      "proposed": 10,
       "droppedPoints": 0,
-      "pagesFetched": 2,
+      "pagesFetched": 3,
       "samples": [
         {
-          "headline": "US to blacklist Asian AI firm Megaspeed after Nvidia scandal",
-          "result": "chart",
-          "proposed": 3,
-          "checked": 3,
-          "pagesFetched": 2
-        },
-        {
-          "headline": "An early breakdown in the polar vortex is threatening already depleted gas stock",
+          "headline": "Fed's John Williams indicates higher interest rates likely 'over time' to addres",
           "result": "reused saved series"
         },
         {
-          "headline": "Iran says it will use ‘all available means’ to counter US blockade",
-          "result": "no saved series; search kept for data and in-depth stories"
+          "headline": "Stock Markets Slip as Nvidia and A.I. Stocks Erase Some of Monday’s Rally",
+          "result": "chart",
+          "proposed": 5,
+          "checked": 5,
+          "pagesFetched": 1
+        },
+        {
+          "headline": "Chinese cobalt firms race to beat DR Congo’s export ban on key battery material",
+          "result": "nothing",
+          "proposed": 0,
+          "checked": 0,
+          "pagesFetched": 0
+        },
+        {
+          "headline": "China approves 2-month suspension extension for select US export restrictions",
+          "result": "reused saved series"
+        },
+        {
+          "headline": "Dutch minister heads to China as Nvidia saga revives US push for tougher ASML cu",
+          "result": "none",
+          "proposed": 0,
+          "checked": 0,
+          "pagesFetched": 1
+        },
+        {
+          "headline": "Chinese drug stocks sink as US lawmakers threaten curbs on cross-border collabor",
+          "result": "chart",
+          "proposed": 5,
+          "checked": 5,
+          "pagesFetched": 1
         }
       ]
     },
     "models": {
       "filter": {
         "model": "claude-haiku-5-5",
-        "calls": 19,
-        "inputTokens": 74331,
-        "outputTokens": 34726,
-        "cost": 0.0248
+        "calls": 29,
+        "inputTokens": 95603,
+        "outputTokens": 37902,
+        "cost": 0.0284
       },
       "analysis_quick": {
         "model": "claude-sonnet-5-5",
-        "calls": 3,
-        "inputTokens": 9410,
-        "outputTokens": 9832,
-        "cost": 0.1171
+        "calls": 9,
+        "inputTokens": 29406,
+        "outputTokens": 24650,
+        "cost": 0.3051
       },
       "stats": {
         "model": "claude-sonnet-5-5",
-        "calls": 1,
-        "inputTokens": 105463,
-        "outputTokens": 1172,
-        "searches": 2,
-        "fetches": 2,
-        "cost": 0.2426
+        "calls": 4,
+        "inputTokens": 285522,
+        "outputTokens": 4292,
+        "searches": 10,
+        "fetches": 4,
+        "cost": 0.714
       },
       "analysis": {
         "model": "claude-opus-5-5",
         "calls": 1,
-        "inputTokens": 4930,
-        "outputTokens": 7248,
-        "cost": 0.1647
+        "inputTokens": 3994,
+        "outputTokens": 5472,
+        "cost": 0.1254
       },
       "threads": {
         "model": "claude-sonnet-5-5",
-        "calls": 4,
-        "inputTokens": 16722,
-        "outputTokens": 2217,
-        "cost": 0.0557
+        "calls": 7,
+        "inputTokens": 23764,
+        "outputTokens": 3626,
+        "cost": 0.0838
       }
     },
     "spend": {
-      "thisDesk": 0.6049,
-      "today": 0.6049,
+      "thisDesk": 1.257,
+      "today": 2.8813,
       "cap": 6
     }
   },
