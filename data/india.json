@@ -2,119 +2,228 @@
   "schema": 4,
   "region": "India",
   "since": "2026-10-02",
-  "updatedAt": "2026-11-26T03:43:09.867Z",
+  "updatedAt": "2026-11-26T17:13:19.494Z",
   "sectors": [
     {
       "id": "energy",
       "name": "Energy",
       "items": [
         {
-          "id": "si45fyo",
-          "headline": "Lukoil to Sell Foreign Assets, but Not to Kushner and Witkoff Associates",
-          "url": "https://www.nytimes.com/2026/11/25/us/politics/lukoil-deal.html",
-          "source": "nyt",
-          "date": "2026-11-25T19:11:09.000Z",
-          "relevance": "medium",
-          "image": "https://static01.nyt.com/images/2026/11/25/multimedia/25dc-lukoil-fjvh/25dc-lukoil-fjvh-mediumSquareAt3X.jpg",
-          "why": "Lukoil, the Russian energy company, will sell valuable foreign properties to an American-led consortium rather than to partners linked to two Trump envoys. India's exposure is indirect, through Russian oil supply chains.",
+          "id": "sycmqlj",
+          "headline": "Two Italians killed in Iranian drone strike on Kuwait",
+          "url": "https://www.abc.net.au/news/2026-11-27/italians-killed-in-kuwait-attack-iran/107432996",
+          "source": "abc",
+          "date": "2026-11-26T15:19:02.000Z",
+          "relevance": "high",
+          "image": "https://live-production.wcms.abc-cdn.net.au/6c8a595e4ccc8edff9d690d824d16936?impolicy=wcms_crop_resize&cropH=2813&cropW=5000&xPos=0&yPos=0&width=862&height=485",
+          "why": "Iranian drones reportedly killed two Italians in Kuwait, and two ships were also targeted in the Strait of Hormuz. India's oil and gas imports and its Gulf diaspora depend on the safety of that region.",
           "implications": [
-            "A change in who owns Lukoil's overseas assets could alter how Russian-linked oil is traded and financed, which may matter to Indian refiners that buy crude from Russian suppliers.",
-            "The reported withdrawal of Middle Eastern business contacts because of political winds suggests the sale is shaped by politics as well as price, so its final terms could still change."
+            "Repeated attacks on ships can raise insurance and freight costs for tankers using the strait, which could add to the price India pays for imported crude oil and gas.",
+            "Kuwait hosts a large Indian workforce, so strikes on its territory raise safety concerns for Indian workers and for families who depend on their remittances."
           ],
           "analysis": {
             "v": 3,
-            "at": "2026-11-25T19:32:09.815Z",
+            "at": "2026-11-26T17:10:34.177Z",
             "tier": "quick",
-            "primary": "winners_losers",
+            "primary": "disruption_map",
             "complement": null,
             "features": [
-              "allocation",
-              "pending_outcome"
+              "disruption",
+              "armed_conflict",
+              "fast_moving"
             ],
             "exposure": {
-              "level": "low",
-              "reason": "The story concerns who buys Lukoil's foreign assets. No change in crude supply, prices or Indian purchases is reported, so any effect on India would come indirectly through Russian oil trade."
+              "level": "high",
+              "reason": "Crude oil and LNG imports reach India through the Strait of Hormuz, and many Indians live and work in Kuwait and nearby Gulf states, so both energy supply and personal safety are involved."
             },
             "horizon": {
-              "value": "months",
-              "reason": "Asset sales between companies take time to complete, so any change in oil trading arrangements would reach Indian buyers only gradually."
+              "value": "weeks",
+              "reason": "Any effect on fuel costs would depend on whether the attacks continue and disrupt shipping or raise prices over the coming weeks."
             },
             "confidence": {
               "level": "low",
-              "reason": "This rests on a single outlet, The New York Times, with no named official source in the summary, and the deal's terms and completion are not detailed."
+              "reason": "This rests on a single early ABC News report with no named official source, and the full details of the ship attacks are unconfirmed."
             },
             "outlets": 1,
             "affected": [
               {
-                "group": "Importers & traders",
+                "group": "Fuel & LPG users",
                 "direction": "unclear",
-                "what": "Russian crude trading arrangements",
-                "effect": "Indian refiners and traders that buy Russian-linked crude could see changes in who they deal with if new owners alter how Lukoil's assets operate.",
+                "what": "fuel and gas prices",
+                "effect": "If attacks disrupt tanker traffic through Hormuz, import costs for crude and gas could rise, which may eventually feed through to petrol, diesel and cooking gas prices.",
                 "basis": "inferred"
               },
               {
-                "group": "Fuel & LPG users",
+                "group": "Gulf & overseas workers and families",
                 "direction": "unclear",
-                "what": "possible fuel cost pressure",
-                "effect": "Petrol and diesel prices could be affected only if the sale changed crude availability or costs for Indian refiners, which the story does not report.",
+                "what": "safety and remittances",
+                "effect": "Indian workers in Kuwait and neighbouring states could face security risks, and any disruption to their work could affect the money they send home.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "Announcement of the final members and terms of the American-led consortium buying Lukoil's foreign assets",
-                "why": "It would show who will control these assets and whether Russian oil trading arrangements are likely to change.",
+                "what": "Further attacks on ships transiting the Strait of Hormuz or on targets in Kuwait and other Gulf states",
+                "why": "Repeated attacks would show whether shipping and Gulf residents face a sustained threat rather than an isolated episode.",
                 "when": "",
                 "where": ""
+              },
+              {
+                "what": "Any travel or safety advisory for Indian nationals in Kuwait and the wider Gulf region",
+                "why": "An advisory would signal how seriously the Indian government views the risk to its citizens in the region.",
+                "when": "",
+                "where": "Ministry of External Affairs"
               }
             ],
             "context": [
-              "India imports most of the crude oil it uses, and Russian crude has become an important source for Indian refiners in recent years.",
-              "Ownership changes at sanctioned or politically sensitive energy companies can affect shipping, insurance and payment arrangements, which are the routes through which Indian buyers feel them."
+              "India imports most of its crude oil, and a large share of that oil and of its liquefied natural gas (LNG) passes through the Strait of Hormuz, so Gulf security directly affects its energy supply."
             ],
-            "terms": [],
+            "terms": [
+              {
+                "term": "Strait of Hormuz",
+                "meaning": "A narrow waterway between Iran and Oman that links the Gulf to the open sea and carries a large share of the world's oil shipments."
+              }
+            ],
             "frameworks": {
-              "winners_losers": {
-                "groups": [
+              "disruption_map": {
+                "node": {
+                  "name": "Strait of Hormuz",
+                  "type": "strait",
+                  "status": "unknown",
+                  "as_of": "26 Nov 2026"
+                },
+                "cause": {
+                  "text": "Iranian drone strikes were reported across the region over 24 hours, including two attacks on ships transiting the strait; the attacker in the ship attacks is not specified.",
+                  "status": "claimed"
+                },
+                "flows": [
                   {
-                    "group": "Importers & traders",
-                    "direction": "unclear",
-                    "directness": "indirect",
-                    "mechanism": "Indian refiners that buy Russian-linked crude could face different counterparties or conditions if the new owners change how Lukoil's foreign assets are run. The direction of any change is not reported."
+                    "flow": "crude",
+                    "india_link": "India imports most of its crude oil, and a large share of Gulf supplies to Indian refiners travels through this strait, so shipping risk here could affect fuel costs.",
+                    "basis": "inferred"
                   },
                   {
-                    "group": "Fuel & LPG users",
-                    "direction": "unclear",
-                    "directness": "indirect",
-                    "mechanism": "Household fuel prices would be affected only if the sale altered crude costs for Indian refiners. No such effect is reported."
+                    "flow": "LNG",
+                    "india_link": "Gas shipped from Gulf producers to India also passes through the strait, so disruption could affect supplies for power, fertiliser and city gas users.",
+                    "basis": "inferred"
+                  },
+                  {
+                    "flow": "workers",
+                    "india_link": "Many Indians work in Kuwait and other Gulf states, and the attack on Kuwait raises concerns for their safety and for the remittances their families rely on.",
+                    "basis": "inferred"
                   }
                 ],
-                "not_affected": "Indian retail fuel prices are not directly changed by an ownership transfer of assets abroad, because the story reports no change in crude supply or pricing."
+                "alternatives": [],
+                "duration": "not reported"
               }
             }
           },
           "place": {
-            "name": "Moscow",
-            "country": "Russia",
-            "lat": 55.75,
-            "lon": 37.62,
+            "name": "Kuwait",
+            "country": "Kuwait",
+            "lat": 29.4,
+            "lon": 47.98,
             "involves": [
-              "United States"
+              "Iran",
+              "Italy"
             ]
           },
           "reports": [
             {
-              "source": "nyt",
-              "headline": "Lukoil to Sell Foreign Assets, but Not to Kushner and Witkoff Associates",
-              "url": "https://www.nytimes.com/2026/11/25/us/politics/lukoil-deal.html",
-              "date": "2026-11-25T19:11:09.000Z",
-              "kind": "hard",
-              "summary": "Valuable properties belonging to the Russian energy giant will be sold to an American-led consortium. But Middle Eastern business contacts of the two Trump envoys pulled out because of political winds.",
+              "source": "abc",
+              "headline": "Two Italians killed in Iranian drone strike on Kuwait",
+              "url": "https://www.abc.net.au/news/2026-11-27/italians-killed-in-kuwait-attack-iran/107432996",
+              "date": "2026-11-26T15:19:02.000Z",
+              "kind": "breaking",
+              "summary": "The attack was one of several reported across the region over 24 hours, including two targeting ships transiting through the Strait of Hormuz.",
               "summaryV": 3,
-              "image": "https://static01.nyt.com/images/2026/11/25/multimedia/25dc-lukoil-fjvh/25dc-lukoil-fjvh-mediumSquareAt3X.jpg"
+              "image": "https://live-production.wcms.abc-cdn.net.au/6c8a595e4ccc8edff9d690d824d16936?impolicy=wcms_crop_resize&cropH=2813&cropW=5000&xPos=0&yPos=0&width=862&height=485"
+            },
+            {
+              "source": "aljazeera",
+              "headline": "Two Italians killed by ‘drone strike debris’ in Kuwait",
+              "url": "https://www.aljazeera.com/news/2026/11/26/two-italians-killed-after-iranian-drones-strike-facility-says-kuwait",
+              "date": "2026-11-26T16:32:31.000Z",
+              "kind": "breaking",
+              "summary": "The Italians were technicians working at an air-defence surveillance station.",
+              "summaryV": 3
+            },
+            {
+              "source": "bbc",
+              "headline": "Italy says two citizens killed in Iranian strike in Kuwait",
+              "url": "https://www.bbc.co.uk/news/articles/c39w9y5dx4k5o",
+              "date": "2026-11-26T16:39:30.000Z",
+              "kind": "hard",
+              "summary": "The pair were technicians for German company Rheinmetall, according to Italy's foreign ministry.",
+              "summaryV": 3,
+              "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/4cbd/live/babaff60-e9ac-11f1-a094-5fdc692f3e33.png",
+              "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/4cbd/live/babaff60-e9ac-11f1-a094-5fdc692f3e33.png"
             }
           ],
-          "thread": "t19u5pz0"
+          "stats": {
+            "v": 2,
+            "at": "2026-11-26T17:12:24.497Z",
+            "series": [
+              {
+                "title": "Brent crude spot price, daily",
+                "unit": "US$ per barrel",
+                "publisher": "U.S. Energy Information Administration",
+                "points": [
+                  {
+                    "period": "29 Sep 2026",
+                    "value": 113.96,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "30 Sep 2026",
+                    "value": 115.91,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "1 Oct 2026",
+                    "value": 114.82,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "2 Oct 2026",
+                    "value": 135.51,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "5 Oct 2026",
+                    "value": 125.51,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  },
+                  {
+                    "period": "6 Oct 2026",
+                    "value": 125.44,
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "source": "Spot Prices for Crude Oil and Petroleum Products"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
+                    "title": "Spot Prices for Crude Oil and Petroleum Products",
+                    "domain": "eia.gov"
+                  }
+                ],
+                "domains": [
+                  "eia.gov"
+                ],
+                "dropped": 0,
+                "why": "The daily Brent crude spot price is the market measure most directly reflecting the disruption to Gulf oil supply through Hormuz that the story describes, though it tracks price rather than physical f",
+                "reused": true,
+                "checkedAt": "2026-10-13T23:11:10.422Z"
+              }
+            ]
+          },
+          "thread": "t2ogxay"
         },
         {
           "id": "s1xk6m9e",
@@ -255,10 +364,301 @@
               "kind": "hard",
               "summary": "The ruling comes a day after Kurdish authorities accused Baghdad of an 'assault' on the region's constitutional rights.",
               "summaryV": 3
+            },
+            {
+              "source": "aljazeera",
+              "headline": "How an oil feud is deepening rift between Baghdad and Iraq’s Kurdish region",
+              "url": "https://www.aljazeera.com/news/2026/11/26/how-an-oil-feud-is-deepening-rift-between-baghdad-and-iraqs-kurdish-region",
+              "date": "2026-11-26T14:10:00.000Z",
+              "kind": "feature",
+              "summary": "Prime Minister al-Zaidi's move to take control of border crossings and oilfields has drawn a sharp response from Erbil.",
+              "summaryV": 3
+            },
+            {
+              "source": "dw",
+              "headline": "Protests in Iraqi Kurdistan at plans for government in Baghdad to take over oil, border crossings",
+              "url": "https://www.dw.com/en/protests-in-iraqi-kurdistan-at-plans-for-government-in-baghdad-to-take-over-oil-border-crossings/a-80065994",
+              "date": "2026-11-26T16:13:00.000Z",
+              "kind": "hard",
+              "summary": "Thousands have gathered in the capital of northern Iraq's semiautonomous Kurdish region, waving flags and voicing opposition to plans for the federal government to take control of oil operations and border crossings.",
+              "summaryV": 3
             }
           ],
           "image": "https://www.aljazeera.com/wp-content/uploads/2026/07/reuters_6a5d64f3-1784505587.jpg?resize=1920%2C1440",
           "thread": "t1ayj461"
+        },
+        {
+          "id": "s131t3bx",
+          "headline": "Trump, NATO chief caution Russia as attacks on Ukraine’s energy infrastructure intensify",
+          "url": "https://www.cnbc.com/2026/11/26/trump-nato-rutte-russia-ukraine-war.html",
+          "source": "cnbc",
+          "date": "2026-11-26T16:12:47.000Z",
+          "relevance": "medium",
+          "why": "US President Donald Trump and NATO chief Mark Rutte warned Russia against widening the war as attacks on Ukraine's energy infrastructure intensify. Continued energy strikes could affect global oil and fuel markets, which matter to India as a large crude importer.",
+          "implications": [
+            "Intensifying attacks on energy facilities could disrupt fuel and power supply in the region, which may raise uncertainty in global oil markets that Indian refiners and importers buy from.",
+            "The warnings are statements rather than new measures, so any effect on India would depend on whether they are followed by sanctions or other concrete steps."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-26T17:11:12.015Z",
+            "tier": "quick",
+            "primary": "escalation",
+            "complement": null,
+            "features": [
+              "armed_conflict",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The channel is global oil prices and Russian crude trade, which can reach Indian fuel costs. The level is medium because the story reports only warnings and no direct disruption to supply to India."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "The story reports only warnings, so any effect on oil prices or trade would depend on later developments and would take time to reach Indian consumers."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "This rests on a single outlet, CNBC, quoting Trump and Rutte on the record; the scale of the intensified attacks is not detailed beyond the headline."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "fuel price pressure",
+                "effect": "If attacks on energy infrastructure tighten global oil supply or raise prices, Indian refiners' costs could rise, which may feed through to petrol and diesel prices over time.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Government finances",
+                "direction": "unclear",
+                "what": "oil import bill",
+                "effect": "Higher global crude prices could increase India's import bill and subsidy or tax pressures, though the story reports no price movement.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Further Russian or Ukrainian strikes on each other's power and oil facilities, or any widening to other countries",
+                "why": "It would show whether the war stays at its current level or moves toward full-scale war.",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "Any concrete US or NATO measures against Russia following these warnings",
+                "why": "It would show whether the statements turn into actions that could affect Russian oil exports and global prices.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "India imports most of the crude oil it uses and has bought Russian crude in large volumes in recent years, so developments affecting Russian energy exports or global oil prices reach Indian refiners and fuel prices."
+            ],
+            "terms": [
+              {
+                "term": "NATO",
+                "meaning": "The North Atlantic Treaty Organization is a military alliance of European and North American countries, led day to day by its secretary general."
+              }
+            ],
+            "frameworks": {
+              "escalation": {
+                "move": "none",
+                "rung": 6,
+                "current_rung": 6,
+                "previous_rung": null,
+                "development": "Trump and NATO chief Mark Rutte warned Russia against expanding the war and called for a rapid peaceful resolution, while attacks on Ukraine's energy infrastructure were reported to be intensifying.",
+                "evidence": "The warnings and calls for peace are rhetoric and cannot lower the war's level. No new action above strikes on critical infrastructure is described, so the war stays at rung 6.",
+                "next_signals": [
+                  {
+                    "rung": 7,
+                    "signal": "Russia or Ukraine launches large-scale offensive operations across the front, or NATO member forces become directly engaged in the fighting."
+                  },
+                  {
+                    "rung": 5,
+                    "signal": "Attacks on power and oil infrastructure stop and strikes fall back to military targets, with fighting reported to have eased."
+                  }
+                ],
+                "india_channels": [
+                  "oil",
+                  "trade"
+                ],
+                "conflict": "wzti51f",
+                "applied": "none",
+                "from": 6
+              }
+            }
+          },
+          "conflict": "wzti51f",
+          "place": {
+            "name": "Kyiv",
+            "country": "Ukraine",
+            "lat": 50.45,
+            "lon": 30.52,
+            "involves": [
+              "Russia",
+              "United States"
+            ]
+          },
+          "reports": [
+            {
+              "source": "cnbc",
+              "headline": "Trump, NATO chief caution Russia as attacks on Ukraine’s energy infrastructure intensify",
+              "url": "https://www.cnbc.com/2026/11/26/trump-nato-rutte-russia-ukraine-war.html",
+              "date": "2026-11-26T16:12:47.000Z",
+              "kind": "hard",
+              "summary": "Trump and NATO chief Mark Rutte urged Russia to avoid actions that could expand the war and called for a rapid peaceful resolution.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://image.cnbcfm.com/api/v1/image/108559824-1795686703593-gettyimages-2283165053-ah809023_cxnkwed9.jpeg?v=1795686767&w=1920&h=1080"
+            }
+          ],
+          "image": "https://image.cnbcfm.com/api/v1/image/108559824-1795686703593-gettyimages-2283165053-ah809023_cxnkwed9.jpeg?v=1795686767&w=1920&h=1080",
+          "thread": "t1ibmsov"
+        },
+        {
+          "id": "s1b0jnrf",
+          "headline": "Can Trump continue with Iran war despite funding restrictions?",
+          "url": "https://www.aljazeera.com/news/2026/11/26/can-trump-continue-with-iran-war-despite-funding-restrictions",
+          "source": "aljazeera",
+          "date": "2026-11-26T14:17:21.000Z",
+          "relevance": "medium",
+          "why": "",
+          "implications": [],
+          "place": {
+            "name": "Washington",
+            "country": "United States",
+            "lat": 38.9,
+            "lon": -77,
+            "involves": [
+              "Iran"
+            ]
+          },
+          "reports": [
+            {
+              "source": "aljazeera",
+              "headline": "Can Trump continue with Iran war despite funding restrictions?",
+              "url": "https://www.aljazeera.com/news/2026/11/26/can-trump-continue-with-iran-war-despite-funding-restrictions",
+              "date": "2026-11-26T14:17:21.000Z",
+              "kind": "feature",
+              "summary": "A Congress budget bill could serve as a pressure tactic on Trump to end the war but could also trigger a shutdown.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/reuters_6b04df4d-1795481421.jpg?resize=1920%2C1440"
+            }
+          ],
+          "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/reuters_6b04df4d-1795481421.jpg?resize=1920%2C1440",
+          "thread": "t24250t"
+        },
+        {
+          "id": "si45fyo",
+          "headline": "Lukoil to Sell Foreign Assets, but Not to Kushner and Witkoff Associates",
+          "url": "https://www.nytimes.com/2026/11/25/us/politics/lukoil-deal.html",
+          "source": "nyt",
+          "date": "2026-11-25T19:11:09.000Z",
+          "relevance": "medium",
+          "image": "https://static01.nyt.com/images/2026/11/25/multimedia/25dc-lukoil-fjvh/25dc-lukoil-fjvh-mediumSquareAt3X.jpg",
+          "why": "Lukoil, the Russian energy company, will sell valuable foreign properties to an American-led consortium rather than to partners linked to two Trump envoys. India's exposure is indirect, through Russian oil supply chains.",
+          "implications": [
+            "A change in who owns Lukoil's overseas assets could alter how Russian-linked oil is traded and financed, which may matter to Indian refiners that buy crude from Russian suppliers.",
+            "The reported withdrawal of Middle Eastern business contacts because of political winds suggests the sale is shaped by politics as well as price, so its final terms could still change."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-25T19:32:09.815Z",
+            "tier": "quick",
+            "primary": "winners_losers",
+            "complement": null,
+            "features": [
+              "allocation",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "The story concerns who buys Lukoil's foreign assets. No change in crude supply, prices or Indian purchases is reported, so any effect on India would come indirectly through Russian oil trade."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Asset sales between companies take time to complete, so any change in oil trading arrangements would reach Indian buyers only gradually."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single outlet, The New York Times, with no named official source in the summary, and the deal's terms and completion are not detailed."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "Russian crude trading arrangements",
+                "effect": "Indian refiners and traders that buy Russian-linked crude could see changes in who they deal with if new owners alter how Lukoil's assets operate.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "possible fuel cost pressure",
+                "effect": "Petrol and diesel prices could be affected only if the sale changed crude availability or costs for Indian refiners, which the story does not report.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Announcement of the final members and terms of the American-led consortium buying Lukoil's foreign assets",
+                "why": "It would show who will control these assets and whether Russian oil trading arrangements are likely to change.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "India imports most of the crude oil it uses, and Russian crude has become an important source for Indian refiners in recent years.",
+              "Ownership changes at sanctioned or politically sensitive energy companies can affect shipping, insurance and payment arrangements, which are the routes through which Indian buyers feel them."
+            ],
+            "terms": [],
+            "frameworks": {
+              "winners_losers": {
+                "groups": [
+                  {
+                    "group": "Importers & traders",
+                    "direction": "unclear",
+                    "directness": "indirect",
+                    "mechanism": "Indian refiners that buy Russian-linked crude could face different counterparties or conditions if the new owners change how Lukoil's foreign assets are run. The direction of any change is not reported."
+                  },
+                  {
+                    "group": "Fuel & LPG users",
+                    "direction": "unclear",
+                    "directness": "indirect",
+                    "mechanism": "Household fuel prices would be affected only if the sale altered crude costs for Indian refiners. No such effect is reported."
+                  }
+                ],
+                "not_affected": "Indian retail fuel prices are not directly changed by an ownership transfer of assets abroad, because the story reports no change in crude supply or pricing."
+              }
+            }
+          },
+          "place": {
+            "name": "Moscow",
+            "country": "Russia",
+            "lat": 55.75,
+            "lon": 37.62,
+            "involves": [
+              "United States"
+            ]
+          },
+          "reports": [
+            {
+              "source": "nyt",
+              "headline": "Lukoil to Sell Foreign Assets, but Not to Kushner and Witkoff Associates",
+              "url": "https://www.nytimes.com/2026/11/25/us/politics/lukoil-deal.html",
+              "date": "2026-11-25T19:11:09.000Z",
+              "kind": "hard",
+              "summary": "Valuable properties belonging to the Russian energy giant will be sold to an American-led consortium. But Middle Eastern business contacts of the two Trump envoys pulled out because of political winds.",
+              "summaryV": 3,
+              "image": "https://static01.nyt.com/images/2026/11/25/multimedia/25dc-lukoil-fjvh/25dc-lukoil-fjvh-mediumSquareAt3X.jpg"
+            }
+          ],
+          "thread": "t19u5pz0"
         },
         {
           "id": "s11pa5yb",
@@ -38232,6 +38632,77 @@
       "name": "Logistics & Shipping",
       "items": [
         {
+          "id": "spujm6p",
+          "headline": "Russia-Ukraine war extends to the Baltic and the Mediterranean",
+          "url": "https://www.dw.com/en/russia-ukraine-war-extends-to-the-baltic-and-the-mediterranean/a-80054604",
+          "source": "dw",
+          "date": "2026-11-26T09:27:00.000Z",
+          "relevance": "medium",
+          "why": "",
+          "implications": [],
+          "place": {
+            "name": "Baltic Sea",
+            "country": "Russia",
+            "lat": 59,
+            "lon": 20,
+            "involves": [
+              "Ukraine"
+            ]
+          },
+          "reports": [
+            {
+              "source": "dw",
+              "headline": "Russia-Ukraine war extends to the Baltic and the Mediterranean",
+              "url": "https://www.dw.com/en/russia-ukraine-war-extends-to-the-baltic-and-the-mediterranean/a-80054604",
+              "date": "2026-11-26T09:27:00.000Z",
+              "kind": "feature",
+              "summary": "By attacking Russian vessels around the world, Kyiv is trying to up the pressure on Moscow and also sending out signals to its Western allies. What is the impact on global maritime trade?",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://static.dw.com/image/80042297_6.jpg"
+            },
+            {
+              "source": "aljazeera",
+              "headline": "Why is Italy angry with Ukraine for striking Russian ships off Libya?",
+              "url": "https://www.aljazeera.com/news/2026/11/26/why-is-italy-angry-with-ukraine-for-striking-russian-ships-off-libya",
+              "date": "2026-11-26T15:02:50.000Z",
+              "kind": "feature",
+              "summary": "Analysts say Rome fears instability in Libya could hurt its energy interests and efforts to curb irregular migration.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/ap_6b082eb4eac41-1795698356.jpg?resize=1920%2C1440"
+            },
+            {
+              "source": "africanews",
+              "headline": "Italy's Meloni concerned after Ukraine attack on Russian ship in Libya",
+              "url": "http://www.africanews.com/2026/11/26/italys-meloni-concerned-after-ukraine-attack-on-russian-ship-in-libya/",
+              "date": "2026-11-26T15:42:06.000Z",
+              "kind": "hard",
+              "summary": "Italian Prime Minister Giorgia Meloni spoke in Brussels ahead of a European Union leaders’ meeting convened to discuss the bloc’s next long-term budget and a new loan to help Ukraine meet its economic and military needs",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://images.euronews.com/articles/stories/10/00/97/29/1024x538_cmsv2_2c749a13-5049-56b7-b1f9-436aa4cc96c8-10009729.jpg"
+            },
+            {
+              "source": "cbs",
+              "headline": "Could the Black Sea pull the U.S. into war in Europe?",
+              "url": "https://www.cbsnews.com/news/black-sea-incidents-nato-russia-ukraine-war/",
+              "date": "2026-11-26T16:18:46.000Z",
+              "kind": "feature",
+              "summary": "The Russia-Ukraine war is spilling into the Black Sea, where violent incidents have surged, running right up to NATO's doorstep.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://assets3.cbsnewsstatic.com/hub/i/r/2026/11/26/fbdf7f7f-67cf-4834-8935-5e0d44573bc9/thumbnail/1200x630/f7e9d7a105a00acc1cbac6a437ffd0e6/martin-odonnell.png"
+            }
+          ],
+          "image": "https://static.dw.com/image/80042297_6.jpg",
+          "thread": "t14axxk2"
+        },
+        {
           "id": "s1m7srsd",
           "headline": "Houthis target Saudi Arabia’s Red Sea ports as strikes escalate",
           "url": "https://www.aljazeera.com/news/2026/11/25/houthis-target-saudi-arabias-red-sea-ports-as-strikes-escalate",
@@ -47227,6 +47698,55 @@
               "summary": "Major US trading partners and companies on the economic front lines decried US President Donald Trump’s latest tariff salvo on Wednesday, even as they expressed resignation, as his playbook has become more predictable and better telegraphed with repeated use.",
               "summaryV": 3,
               "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/26/bb4152f4-c89a-4eab-9ec1-3ddffeaaebf2_8a96e2ab.jpg?itok=zsbqFKwD&v=1795649422"
+            },
+            {
+              "source": "cnbc",
+              "headline": "How Trump’s latest tariff moves hand India an edge over rival Asian exporters",
+              "url": "https://www.cnbc.com/2026/11/26/trump-us-tariff-india-trade.html",
+              "date": "2026-11-26T04:12:18.000Z",
+              "kind": "hard",
+              "summary": "Proposed tariffs of 18% on Bangladesh, Cambodia, Thailand, and 20% on China and Vietnam, subject to their respective trade deals, offer India a competitive advantage.",
+              "summaryV": 3
+            },
+            {
+              "source": "scmp",
+              "headline": "Singapore rebuts US tariffs logic on pensions scheme, as Southeast Asia hits back",
+              "url": "https://www.scmp.com/week-asia/politics/article/3375874/singapore-challenges-us-tariff-logic-free-trade-pact-faces-20-levy",
+              "date": "2026-11-26T05:49:14.000Z",
+              "kind": "hard",
+              "summary": "Southeast Asian countries targeted in the United States’ latest economic salvo have denied allegations of structural excess capacity after Washington on Wednesday floated fresh tariffs on its trade partners.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/26/8877a2a4-cc5e-446d-909e-ac4ab4ddb6f7_fdbfe4f8.jpg?itok=H_GhKSXd&v=1795672147"
+            },
+            {
+              "source": "guardian",
+              "headline": "China reserves right to take ‘necessary measures’ after Trump’s new tariff proposals",
+              "url": "https://www.theguardian.com/us-news/2026/nov/26/brazil-china-react-to-new-trump-tariffs-threat",
+              "date": "2026-11-26T12:00:22.000Z",
+              "kind": "hard",
+              "summary": "Beijing says new levies amount to ‘political manipulation’, while Brazil ‘will not yield to this type of threat’",
+              "summaryV": 3,
+              "lede": "Trump proposing new tariffs on 14 partners including China and EU",
+              "image": "https://i.guim.co.uk/img/media/2368ea981f5660064edcacf6ff595f03bb38028d/139_0_1390_1112/master/1390.jpg?width=700&quality=85&auto=format&fit=max&s=c8856eb91cd7b62e4baaaad80646a733"
+            },
+            {
+              "source": "cnbc",
+              "headline": "U.S. tariff-hike threats pile pressure on partners to sign trade deals",
+              "url": "https://www.cnbc.com/2026/11/26/us-tariffs-hike-trade-agreement.html",
+              "date": "2026-11-26T12:46:55.000Z",
+              "kind": "hard",
+              "summary": "The U.S. planned a fresh tariff salvo on 14 trading partners, while offering some countries lower rates if they secure trade deals with Washington.",
+              "summaryV": 3
+            },
+            {
+              "source": "nyt",
+              "headline": "Trump’s Latest Tariffs Revive Focus on Pressuring China",
+              "url": "https://www.nytimes.com/2026/11/26/business/trump-tariffs-asia.html",
+              "date": "2026-11-26T17:03:31.000Z",
+              "kind": "hard",
+              "summary": "President Trump sent a message to trading partners across Asia, many of which depend on trade and investment from both the United States and China, that he is ready to escalate tariffs.",
+              "summaryV": 3,
+              "image": "https://static01.nyt.com/images/2026/11/26/multimedia/26Biz-Asia-Tariffs-01-fzkq/26Biz-Asia-Tariffs-01-fzkq-mediumSquareAt3X.jpg"
             }
           ],
           "finChecked": true,
@@ -47298,6 +47818,117 @@
               }
             ]
           }
+        },
+        {
+          "id": "s13msqoe",
+          "headline": "Modi questions corporate India on jobs and wages. Will business leaders do more?",
+          "url": "https://www.scmp.com/week-asia/economics/article/3375959/modi-questions-corporate-india-jobs-and-wages-will-business-leaders-do-more",
+          "source": "scmp",
+          "date": "2026-11-26T13:55:39.000Z",
+          "relevance": "medium",
+          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/26/675b9446-4517-42bd-8c29-14889eefa02c_e80cf50c.jpg?itok=4NuOI9l3&v=1795701335",
+          "why": "Prime Minister Narendra Modi has said that Indian companies are not creating more jobs or raising wages even after receiving government tax breaks. This has set off a debate about whether business leaders will respond.",
+          "implications": [
+            "The remarks put public pressure on large employers, because tax concessions are meant to be repaid through hiring and better pay. Workers could feel the result only if firms change their decisions.",
+            "The criticism may also signal that the government wants more from the tax relief it has already given. Any such shift in policy stance has not yet been reported."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-26T17:10:00.993Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "medium",
+              "reason": "The channel is employer hiring and wage decisions, which could affect salaried workers and job seekers. No binding rule or new measure has been reported, so the effect depends on voluntary corporate responses."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Hiring plans and wage increases are normally set in annual cycles, and no new policy or deadline has been reported, so any effect would take time to appear."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "This rests on a single outlet, the South China Morning Post, reporting the Prime Minister's observation; the reaction of companies and any follow-up by the government are not yet known."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Salaried workers",
+                "direction": "unclear",
+                "what": "hiring and wage growth",
+                "effect": "If companies respond to the criticism, more jobs and faster pay rises could follow. If they do not, wage growth would continue as before.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Government finances",
+                "direction": "unclear",
+                "what": "value of tax breaks",
+                "effect": "Tax breaks reduce the revenue the government collects, so its criticism suggests it is questioning whether that cost is delivering jobs and wages.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Statements or hiring and wage announcements from major Indian business groups in response to the Prime Minister's remarks",
+                "why": "They would show whether corporate India is willing to change its behaviour or is treating the criticism as rhetoric.",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "Any government move to link tax breaks to job creation or wage growth",
+                "why": "It would show whether the criticism is turning into policy.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "Governments often cut taxes on companies in the hope that the savings will be spent on expansion, hiring and wages. Firms, however, decide on hiring mainly according to demand and expected profits."
+            ],
+            "terms": [],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Prime Minister criticises corporate hiring",
+                    "detail": "Narendra Modi observed that Indian companies are not creating more jobs or raising wages, even though the government has given them tax breaks.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Debate over business leaders' response",
+                    "detail": "The remark has prompted discussion on whether business leaders should heed his call and do more for their workers, which puts public pressure on large employers.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Possible change in hiring and pay",
+                    "detail": "If firms respond to the pressure, they could add jobs or raise pay, which would reach salaried workers and job seekers over the following months.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "Companies decide that demand and profit conditions do not justify more hiring or higher pay and treat the remarks as rhetoric, in which case nothing would change for workers."
+              }
+            }
+          },
+          "place": {
+            "name": "New Delhi",
+            "country": "India",
+            "lat": 28.6,
+            "lon": 77.2
+          },
+          "reports": [
+            {
+              "source": "scmp",
+              "headline": "Modi questions corporate India on jobs and wages. Will business leaders do more?",
+              "url": "https://www.scmp.com/week-asia/economics/article/3375959/modi-questions-corporate-india-jobs-and-wages-will-business-leaders-do-more",
+              "date": "2026-11-26T13:55:39.000Z",
+              "kind": "hard",
+              "summary": "Prime Minister Narendra Modi’s observation that Indian companies were failing to create more jobs and raise wages despite government tax breaks has prompted a debate on whether business leaders should heed his call and do more for their workers.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/26/675b9446-4517-42bd-8c29-14889eefa02c_e80cf50c.jpg?itok=4NuOI9l3&v=1795701335"
+            }
+          ],
+          "finChecked": true,
+          "thread": "t1ebxnec"
         },
         {
           "id": "s13v2wbb",
@@ -47395,10 +48026,143 @@
               "summary": "Indonesia’s newly signed trade deal with the European Union could unlock billions of dollars in additional exports, but analysts and industry insiders say high production costs, regulatory challenges and stiff regional competition could limit its economic benefits.",
               "summaryV": 3,
               "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/25/fb390d24-ff00-41af-ae1a-8aa4233c1f23_a5be904e.jpg?itok=hP_C4AqP&v=1795604057"
+            },
+            {
+              "source": "dw",
+              "headline": "EU-Indonesia trade deal opens new markets, but challenges remain",
+              "url": "https://www.dw.com/en/eu-indonesia-trade-deal-opens-new-markets-but-challenges-remain/a-80059568",
+              "date": "2026-11-26T13:41:00.000Z",
+              "kind": "feature",
+              "summary": "The agreement offers new export and investment opportunities for Jakarta and Brussels. But can Indonesia turn Europe's growing interest in its markets and critical minerals into sustainable gains at home?",
+              "summaryV": 3
             }
           ],
           "finChecked": true,
           "thread": "t1iry49x"
+        },
+        {
+          "id": "s1yh5n8v",
+          "headline": "Could EU delisting of Chinese firm pave way for wider sanctions relief?",
+          "url": "https://www.scmp.com/economy/policy/article/3375920/could-eu-delisting-chinese-firm-pave-way-wider-sanctions-relief",
+          "source": "scmp",
+          "date": "2026-11-26T10:00:23.000Z",
+          "relevance": "medium",
+          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/26/66ac1d2a-fe30-4b3e-9f52-27318a5f8644_8589232c.jpg?itok=usP946So&v=1795685946",
+          "why": "The European Union has removed the Chinese home textiles maker Yusha Group from its sanctions blacklist, and Beijing hopes more Chinese firms will follow. India's home textile exporters compete with Chinese suppliers in European markets.",
+          "implications": [
+            "If more Chinese firms are delisted, they could trade with European buyers more easily. That could sharpen competition for Indian home textile exporters who sell to the same customers.",
+            "China is also reviewing applications from European companies seeking relief from its export controls. This suggests both sides are bargaining over restrictions, and the outcome could shape the wider trading climate."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-26T17:08:17.665Z",
+            "tier": "quick",
+            "primary": "trade_flow",
+            "complement": null,
+            "features": [
+              "trade_flow",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "The only channel is possible competition from Chinese home textile makers in European markets. A single delisting is a small change, so the reach into India is indirect."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "No further delistings or dates have been announced, and any change in competition would show only as buyers place new orders."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "This rests on one outlet, the South China Morning Post, citing Beijing's stated position; the reasons for the delisting and any further steps are unconfirmed."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "MSME exporters",
+                "direction": "unclear",
+                "what": "competition in home textiles",
+                "effect": "Indian home textile exporters could face stronger Chinese competition in European markets if more Chinese firms are removed from the blacklist, though the scale is unknown.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Further removals of Chinese companies from the European Union's sanctions list",
+                "why": "More delistings would show whether Beijing's request is being met and how far competition for Indian exporters could widen.",
+                "when": "",
+                "where": "Official Journal of the European Union"
+              },
+              {
+                "what": "China's decisions on applications from European companies seeking relief from its export-control restrictions",
+                "why": "Approvals would indicate whether the two sides are moving towards a wider easing of trade restrictions.",
+                "when": "",
+                "where": "Ministry of Commerce of China"
+              }
+            ],
+            "context": [
+              "Sanctions listings usually bar a firm from certain dealings with the listing economy, so a removal can restore access to buyers and finance. India is a major home textile exporter, and European buyers often source from both India and China."
+            ],
+            "terms": [
+              {
+                "term": "export-control restrictions",
+                "meaning": "Government rules that limit or require licences for the sale of particular goods or materials to other countries."
+              }
+            ],
+            "frameworks": {
+              "trade_flow": {
+                "good": "Home textiles from Chinese manufacturers",
+                "actors": [
+                  {
+                    "country": "China",
+                    "role": "exporter",
+                    "is_india": false
+                  },
+                  {
+                    "country": "European Union",
+                    "role": "importer",
+                    "is_india": false
+                  },
+                  {
+                    "country": "India",
+                    "role": "third_party",
+                    "is_india": true
+                  }
+                ],
+                "change": {
+                  "type": "other",
+                  "effective": ""
+                },
+                "india_position": {
+                  "role": "rival_exporter",
+                  "note": "India competes with China as a supplier of home textiles to European buyers. Wider sanctions relief for Chinese firms could, in some cases, increase competition for Indian sellers, though the reports give no trade volumes."
+                },
+                "volumes": []
+              }
+            }
+          },
+          "place": {
+            "name": "Brussels",
+            "country": "Belgium",
+            "lat": 50.85,
+            "lon": 4.35,
+            "involves": [
+              "China"
+            ]
+          },
+          "reports": [
+            {
+              "source": "scmp",
+              "headline": "Could EU delisting of Chinese firm pave way for wider sanctions relief?",
+              "url": "https://www.scmp.com/economy/policy/article/3375920/could-eu-delisting-chinese-firm-pave-way-wider-sanctions-relief",
+              "date": "2026-11-26T10:00:23.000Z",
+              "kind": "hard",
+              "summary": "After the European Union lifted sanctions on Chinese home textiles maker Yusha Group, Beijing says it hopes the bloc will remove more domestic firms from its blacklist, as it reviews applications from EU companies seeking relief from its own export-control restrictions.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/26/66ac1d2a-fe30-4b3e-9f52-27318a5f8644_8589232c.jpg?itok=usP946So&v=1795685946"
+            }
+          ],
+          "finChecked": true,
+          "thread": "tgfs32m"
         },
         {
           "id": "s1xcnehx",
@@ -65875,6 +66639,131 @@
       "name": "Finance",
       "items": [
         {
+          "id": "siqpa65",
+          "headline": "Falling knife or bottom-fishing? Gold investors seek answers from Fed and PBOC",
+          "url": "https://www.scmp.com/business/commodities/article/3375873/falling-knife-or-bottom-fishing-gold-investors-seek-answers-fed-and-pboc",
+          "source": "scmp",
+          "date": "2026-11-26T05:35:57.000Z",
+          "relevance": "medium",
+          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/26/18d6529e-48ab-41fa-912b-8360c8206019_b8a37685.jpg?itok=s-wIj17w&v=1795671350",
+          "why": "Analysts warn that gold could fall further because a US Federal Reserve rate increase looms and equity investors are selling gold to cover stock losses. India imports most of its gold, so a lower world price would feed into Indian prices.",
+          "implications": [
+            "A rate increase makes interest-bearing assets more attractive relative to gold, which pays no interest, and that can weigh on the metal's international price.",
+            "Investors forced to meet margin calls may sell gold to raise cash, which adds selling pressure even when their view on gold itself has not changed."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-26T17:07:15.642Z",
+            "tier": "quick",
+            "primary": "pass_through",
+            "complement": null,
+            "features": [
+              "price_move",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "high",
+              "reason": "Gold is one of India's largest imports and a common household store of value. A fall in the world price would reach importers, jewellers and families holding gold, though the price direction is only an analyst view."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "The timing depends on when the Federal Reserve acts and how quickly forced selling eases, after which import costs and jewellery prices adjust within days to weeks."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single outlet, the South China Morning Post, and on analysts' views; the Fed decision and the size of China's official buying are unconfirmed."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "gold import costs",
+                "effect": "A lower world gold price would reduce the cost of imported gold for traders, although duties and the rupee exchange rate also shape the final landed cost.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Depositors & savers",
+                "direction": "down",
+                "what": "value of household gold",
+                "effect": "Households that hold gold as savings could see its market value fall if the international price declines further, as analysts warn it may.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "The Federal Reserve's interest rate decision and any signal of a rate increase",
+                "why": "A confirmed increase would test the analysts' view that gold faces further downside pressure.",
+                "when": "",
+                "where": "US Federal Reserve"
+              },
+              {
+                "what": "Further gold purchases by China's central bank",
+                "why": "Sustained official buying is the factor the analysts say could temper the fall in gold.",
+                "when": "",
+                "where": "People's Bank of China"
+              }
+            ],
+            "context": [
+              "India imports almost all the gold it uses, so domestic prices follow the international price, the rupee exchange rate and Indian import duties and taxes. Gold is also a traditional household savings asset."
+            ],
+            "terms": [
+              {
+                "term": "margin calls",
+                "meaning": "Demands from a broker for investors to put up more cash or collateral after their investments lose value, which can force them to sell other holdings."
+              }
+            ],
+            "frameworks": {
+              "pass_through": {
+                "driver": {
+                  "variable": "International gold price",
+                  "direction": "down",
+                  "size": ""
+                },
+                "product": "other",
+                "rungs": [
+                  {
+                    "stage": "World gold price to India's import cost",
+                    "pass": "likely",
+                    "damper": "Gold is priced globally, but the rupee exchange rate changes how much a given dollar price costs importers in rupees.",
+                    "lag": "days"
+                  },
+                  {
+                    "stage": "Import cost to wholesale and jeweller prices",
+                    "pass": "partial",
+                    "damper": "Import duty, GST and local premiums or discounts sit between the landed cost and the price jewellers charge.",
+                    "lag": "days"
+                  },
+                  {
+                    "stage": "Jeweller prices to household purchases",
+                    "pass": "unclear",
+                    "damper": "Household buying depends on weddings, festivals and expectations about future prices, not only on the current price.",
+                    "lag": "weeks"
+                  }
+                ],
+                "end_user": {
+                  "group": "Depositors & savers",
+                  "effect": "Families buying or holding gold jewellery and coins may notice lower local prices within days if the world price falls, though duties and the rupee could soften the change."
+                }
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "scmp",
+              "headline": "Falling knife or bottom-fishing? Gold investors seek answers from Fed and PBOC",
+              "url": "https://www.scmp.com/business/commodities/article/3375873/falling-knife-or-bottom-fishing-gold-investors-seek-answers-fed-and-pboc",
+              "date": "2026-11-26T05:35:57.000Z",
+              "kind": "hard",
+              "summary": "Gold may face more downside risks, analysts say, as a Federal Reserve interest rate increase looms and stock investors unwind holdings of the metal to meet margin calls from equity losses, despite the tempering effects of a China-led sovereign buying wave.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/26/18d6529e-48ab-41fa-912b-8360c8206019_b8a37685.jpg?itok=s-wIj17w&v=1795671350"
+            }
+          ],
+          "placeTried": true,
+          "thread": "t1mv1xb"
+        },
+        {
           "id": "s1vfs57t",
           "headline": "Nvidia leads tech sell-off as Huang comeback rally fizzles and AI concerns return",
           "url": "https://www.cnbc.com/2026/11/25/nvidia-ai-stock-tech-selloff.html",
@@ -76936,6 +77825,439 @@
       "id": "technology",
       "name": "Technology",
       "items": [
+        {
+          "id": "s1twnyyn",
+          "headline": "Nvidia chip buyers told to rule out Chinese renters to purchase GPUs, sources say",
+          "url": "https://www.cnbc.com/2026/11/26/neoclouds-nvidia-china-ai.html",
+          "source": "cnbc",
+          "date": "2026-11-26T17:04:54.000Z",
+          "relevance": "medium",
+          "why": "Buyers of Nvidia graphics chips are reportedly being told to rule out Chinese companies that rent out computing power. The U.S. says a new Bureau of Industry and Security rule closes loopholes. Indian buyers of these chips could face extra checks.",
+          "implications": [
+            "Companies that buy Nvidia chips and then rent out computing capacity, including cloud and data-centre operators, may have to screen their customers for Chinese links before buying.",
+            "Extra screening could add paperwork and delay chip purchases for any buyer outside the United States, including Indian firms building artificial intelligence capacity."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-26T17:11:39.384Z",
+            "tier": "quick",
+            "primary": "trade_flow",
+            "complement": null,
+            "features": [
+              "trade_flow"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "The reports do not mention India. Any effect would be indirect, through Indian data-centre and cloud firms that buy Nvidia chips and may face extra compliance checks."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "No effective date has been reported, and buyers would need time to adjust their customer checks and contracts."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "The buyer instruction rests on anonymous sources in a single CNBC report. Only the rule's purpose is on record, from U.S. Trade Representative Jamieson Greer, and the rule's text is not given."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "GPU purchase compliance checks",
+                "effect": "Indian firms importing Nvidia chips for cloud or AI services could face additional customer screening, which may slow or complicate purchases.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Publication of the full text and effective date of the new Bureau of Industry and Security rule",
+                "why": "It would show exactly which rental arrangements are barred and what checks buyers outside the United States must carry out.",
+                "when": "",
+                "where": "U.S. Bureau of Industry and Security"
+              }
+            ],
+            "context": [
+              "The United States restricts exports of advanced computing chips to China. Renting remote access to chips already located outside China has been a way for Chinese firms to use hardware they could not buy directly.",
+              "India has no large domestic supply of advanced AI chips and relies on imports. Indian cloud and AI firms therefore depend on U.S. export rules."
+            ],
+            "terms": [
+              {
+                "term": "BIS",
+                "meaning": "The Bureau of Industry and Security is the U.S. Commerce Department agency that writes and enforces export controls on sensitive technology, including advanced computer chips."
+              }
+            ],
+            "frameworks": {
+              "trade_flow": {
+                "good": "Nvidia graphics processing chips (GPUs) and access to computing power rented from them",
+                "actors": [
+                  {
+                    "country": "United States",
+                    "role": "exporter",
+                    "is_india": false
+                  },
+                  {
+                    "country": "China",
+                    "role": "importer",
+                    "is_india": false
+                  }
+                ],
+                "change": {
+                  "type": "other",
+                  "effective": ""
+                },
+                "india_position": {
+                  "role": "not_involved",
+                  "note": "Indian buyers of Nvidia chips could face extra customer checks if the rule applies to purchases outside the United States, though this has not been reported."
+                },
+                "volumes": []
+              }
+            }
+          },
+          "place": {
+            "name": "Washington",
+            "country": "United States",
+            "lat": 38.9,
+            "lon": -77.04,
+            "involves": [
+              "China"
+            ]
+          },
+          "reports": [
+            {
+              "source": "cnbc",
+              "headline": "Nvidia chip buyers told to rule out Chinese renters to purchase GPUs, sources say",
+              "url": "https://www.cnbc.com/2026/11/26/neoclouds-nvidia-china-ai.html",
+              "date": "2026-11-26T17:04:54.000Z",
+              "kind": "hard",
+              "summary": "A new BIS rule was intended to close \"loopholes,\" U.S. Trade Representative Jamieson Greer told CNBC's \"Squawk Box\" on Wednesday.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://image.cnbcfm.com/api/v1/image/108553116-1794927200152-gettyimages-2305495249-vcg111682705669.jpeg?v=1794927260&w=1920&h=1080"
+            }
+          ],
+          "stats": {
+            "v": 2,
+            "at": "2026-11-26T17:12:21.122Z",
+            "series": [
+              {
+                "title": "US goods exports to India, by year",
+                "unit": "US$ million",
+                "publisher": "U.S. Census Bureau",
+                "why": "This is the official record of US goods shipped to India, the trade channel that US export-control rules on advanced chips would affect for Indian buyers.",
+                "points": [
+                  {
+                    "period": "2019",
+                    "value": 34222.8,
+                    "url": "https://www.census.gov/foreign-trade/balance/c5330.html",
+                    "source": "International Trade"
+                  },
+                  {
+                    "period": "2020",
+                    "value": 27081.7,
+                    "url": "https://www.census.gov/foreign-trade/balance/c5330.html",
+                    "source": "International Trade"
+                  },
+                  {
+                    "period": "2021",
+                    "value": 39817.4,
+                    "url": "https://www.census.gov/foreign-trade/balance/c5330.html",
+                    "source": "International Trade"
+                  },
+                  {
+                    "period": "2022",
+                    "value": 46819.2,
+                    "url": "https://www.census.gov/foreign-trade/balance/c5330.html",
+                    "source": "International Trade"
+                  },
+                  {
+                    "period": "2023",
+                    "value": 40555.5,
+                    "url": "https://www.census.gov/foreign-trade/balance/c5330.html",
+                    "source": "International Trade"
+                  },
+                  {
+                    "period": "2024",
+                    "value": 41581.2,
+                    "url": "https://www.census.gov/foreign-trade/balance/c5330.html",
+                    "source": "International Trade"
+                  },
+                  {
+                    "period": "2025",
+                    "value": 45354.3,
+                    "url": "https://www.census.gov/foreign-trade/balance/c5330.html",
+                    "source": "International Trade"
+                  }
+                ],
+                "dropped": 0,
+                "sources": [
+                  {
+                    "url": "https://www.census.gov/foreign-trade/balance/c5330.html",
+                    "title": "International Trade",
+                    "domain": "census.gov"
+                  }
+                ],
+                "domains": [
+                  "census.gov"
+                ]
+              }
+            ]
+          },
+          "image": "https://image.cnbcfm.com/api/v1/image/108553116-1794927200152-gettyimages-2305495249-vcg111682705669.jpeg?v=1794927260&w=1920&h=1080",
+          "thread": "tjdsk7n"
+        },
+        {
+          "id": "s4zhpoo",
+          "headline": "Nvidia Halts Sales to Southeast Asia as U.S. Tightens China Restrictions",
+          "url": "https://www.nytimes.com/2026/11/26/business/nvidia-southeast-asia-sales.html",
+          "source": "nyt",
+          "date": "2026-11-26T12:04:01.000Z",
+          "relevance": "medium",
+          "why": "Nvidia has halted sales of advanced artificial intelligence chips to four Southeast Asian countries after a new U.S. rule required licences for firms there to buy them. India is not named, but it also depends on imported chips.",
+          "implications": [
+            "The licence requirement is linked to the wider U.S. tightening of restrictions on China, so it may be meant to stop chips reaching Chinese buyers through third countries.",
+            "If similar licence requirements were later applied to other regions, Indian firms building AI data centres or services could face delays or higher costs in getting chips. Nothing reported says this is planned."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-26T17:09:24.375Z",
+            "tier": "quick",
+            "primary": "trade_flow",
+            "complement": null,
+            "features": [
+              "trade_flow",
+              "allocation"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "India is not among the four countries affected, and no direct channel to Indian buyers or sellers is reported. Any effect would be indirect, through global chip availability or future extensions of the rule."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Any effect on India would depend on whether the rule is widened or shifts global chip supply, which would take time to show."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single outlet's summary; the four countries, the rule's start date and any official statement are not given."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "IT & services workers",
+                "direction": "unclear",
+                "what": "AI infrastructure chip access",
+                "effect": "Indian technology firms that rely on imported AI chips could see supply conditions change if the licence approach spreads beyond Southeast Asia, though no such step is reported.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Any extension of the U.S. chip licence requirement to other countries, including India",
+                "why": "It would show whether Indian buyers of advanced chips face new approval steps or delays.",
+                "when": "",
+                "where": "U.S. Department of Commerce, Bureau of Industry and Security"
+              }
+            ],
+            "context": [
+              "The United States has for some years used export licences to limit China's access to advanced computing chips, and it has tightened these rules in stages. India does not make such chips at scale and relies on imports."
+            ],
+            "terms": [
+              {
+                "term": "advanced A.I. chips",
+                "meaning": "High-performance processors used to train and run artificial intelligence systems, which are the products now subject to U.S. export licensing."
+              }
+            ],
+            "frameworks": {
+              "trade_flow": {
+                "good": "Advanced artificial intelligence chips",
+                "actors": [
+                  {
+                    "country": "United States",
+                    "role": "exporter",
+                    "is_india": false
+                  },
+                  {
+                    "country": "Four Southeast Asian countries (not named in the report)",
+                    "role": "importer",
+                    "is_india": false
+                  },
+                  {
+                    "country": "China",
+                    "role": "third_party",
+                    "is_india": false
+                  }
+                ],
+                "change": {
+                  "type": "stop",
+                  "effective": ""
+                },
+                "india_position": {
+                  "role": "not_involved",
+                  "note": "India is not among the four countries affected by the halt. Indian buyers of AI chips could be affected only if similar licensing were extended to them or if global supply tightened, neither of which is reported."
+                },
+                "volumes": []
+              }
+            }
+          },
+          "place": {
+            "name": "Washington",
+            "country": "United States",
+            "lat": 38.9,
+            "lon": -77,
+            "involves": [
+              "China"
+            ]
+          },
+          "reports": [
+            {
+              "source": "nyt",
+              "headline": "Nvidia Halts Sales to Southeast Asia as U.S. Tightens China Restrictions",
+              "url": "https://www.nytimes.com/2026/11/26/business/nvidia-southeast-asia-sales.html",
+              "date": "2026-11-26T12:04:01.000Z",
+              "kind": "hard",
+              "summary": "The shipping halt, which hit four countries, follows a new U.S. rule that would require licenses for companies in the countries to buy advanced A.I. chips.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true
+            }
+          ],
+          "stats": {
+            "v": 2,
+            "at": "2026-11-26T17:12:38.977Z",
+            "series": []
+          },
+          "thread": "tjdsk7n"
+        },
+        {
+          "id": "s12kqp0x",
+          "headline": "How Chinese companies circumvent chips sanctions in Southeast Asia",
+          "url": "https://www.dw.com/en/how-chinese-companies-circumvent-chips-sanctions-in-southeast-asia/a-80041002",
+          "source": "dw",
+          "date": "2026-11-26T06:11:00.000Z",
+          "relevance": "medium",
+          "why": "",
+          "implications": [],
+          "reports": [
+            {
+              "source": "dw",
+              "headline": "How Chinese companies circumvent chips sanctions in Southeast Asia",
+              "url": "https://www.dw.com/en/how-chinese-companies-circumvent-chips-sanctions-in-southeast-asia/a-80041002",
+              "date": "2026-11-26T06:11:00.000Z",
+              "kind": "feature",
+              "summary": "High-tech AI chips are hard to get in China because of US restrictions. To get around this, Chinese companies often use offshore computing capacity, particularly in Southeast Asia. The US is also trying to stop it.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://static.dw.com/image/79998705_6.jpg"
+            }
+          ],
+          "placeTried": true,
+          "image": "https://static.dw.com/image/79998705_6.jpg",
+          "thread": "tjdsk7n"
+        },
+        {
+          "id": "sd05tlc",
+          "headline": "Chinese AI trade turns cautious after Wall Street volatility, Anthropic’s rocky debut",
+          "url": "https://www.scmp.com/business/china-business/article/3375856/chinese-ai-trade-turns-cautious-after-wall-street-volatility-anthropics-rocky-debut",
+          "source": "scmp",
+          "date": "2026-11-26T06:00:07.000Z",
+          "relevance": "medium",
+          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/26/83acbff9-8074-44ed-84b3-4a5fe114e5bd_46c9b034.jpg?itok=mZEIzTra&v=1795666438",
+          "why": "Chinese investors are becoming cautious about artificial intelligence shares after a sharp technology sell-off and renewed doubts on Wall Street about the AI rally. This could affect global technology sentiment that Indian markets also respond to.",
+          "implications": [
+            "A short-lived US rebound followed by renewed selling suggests investors remain unsure whether AI company valuations are justified, which can make global funds more careful with technology shares.",
+            "Indian technology and services firms are not named, so any effect on them would come indirectly through global sentiment and foreign investor flows."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-26T17:07:15.644Z",
+            "tier": "quick",
+            "primary": "market_move",
+            "complement": null,
+            "features": [
+              "market_move",
+              "fast_moving"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "The story concerns Chinese and US technology shares, and nothing in it describes a direct channel to Indian households or businesses beyond general market sentiment."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Shifts in global investor sentiment usually show up in capital flows and share prices over days to weeks, not immediately in household finances."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on one outlet, the South China Morning Post, with no named official source, and the cause of the sell-off is described only as coinciding with Wall Street doubts."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Equity & mutual fund investors",
+                "direction": "unclear",
+                "what": "technology share sentiment",
+                "effect": "Funds and investors with exposure to global or technology shares could see price swings if worries over the AI rally continue to spread across markets.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Whether US technology shares recover or fall again in coming sessions",
+                "why": "It would show whether doubts over the AI rally are fading or deepening.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "Indian share markets are influenced by global risk appetite, and foreign portfolio investors can move money between markets when sentiment toward a sector such as technology changes."
+            ],
+            "terms": [
+              {
+                "term": "AI trade",
+                "meaning": "Investment in shares of companies expected to benefit from artificial intelligence, such as chipmakers, software firms and data-centre suppliers."
+              }
+            ],
+            "frameworks": {
+              "market_move": {
+                "moved": {
+                  "what": "Chinese technology and AI-related shares",
+                  "kind": "sector shares",
+                  "direction": "down",
+                  "size": "",
+                  "period": "in the latest sell-off"
+                },
+                "cause": {
+                  "text": "The sell-off coincides with renewed questions on Wall Street about whether the AI-driven rally is sustainable, after a US rebound that lasted barely a day.",
+                  "status": "reported",
+                  "by": "South China Morning Post"
+                },
+                "duration": "unclear",
+                "channels": [
+                  {
+                    "channel": "foreign investment flows",
+                    "india_link": "If global investors turn cautious on technology shares, they may shift money between markets, which could affect foreign inflows into Indian shares.",
+                    "basis": "inferred"
+                  }
+                ],
+                "not_settled": "It is not clear how long the caution will last or whether the sell-off will spread to other markets."
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "scmp",
+              "headline": "Chinese AI trade turns cautious after Wall Street volatility, Anthropic’s rocky debut",
+              "url": "https://www.scmp.com/business/china-business/article/3375856/chinese-ai-trade-turns-cautious-after-wall-street-volatility-anthropics-rocky-debut",
+              "date": "2026-11-26T06:00:07.000Z",
+              "kind": "hard",
+              "summary": "Chinese investors are showing growing signs of caution towards the artificial intelligence trade, as a sharp sell-off in technology stocks coincides with renewed questions on Wall Street over the sustainability of the AI-driven rally, following a dramatic rebound in US stocks that lasted barely a day before being…",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/26/83acbff9-8074-44ed-84b3-4a5fe114e5bd_46c9b034.jpg?itok=mZEIzTra&v=1795666438"
+            }
+          ],
+          "placeTried": true,
+          "thread": "t1nkczxr"
+        },
         {
           "id": "s1akznn5",
           "headline": "US to blacklist Asian AI firm Megaspeed after Nvidia scandal",
@@ -93435,6 +94757,161 @@
       "name": "Agriculture & Food",
       "items": [
         {
+          "id": "sz6jmsi",
+          "headline": "China’s appetite for Russian farm goods grows despite thaw in US trade ties",
+          "url": "https://www.scmp.com/economy/policy/article/3375878/chinas-appetite-russian-farm-goods-grows-despite-thaw-us-trade-ties",
+          "source": "scmp",
+          "date": "2026-11-26T11:00:11.000Z",
+          "relevance": "medium",
+          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/26/b9430ed9-7d37-4968-a7e7-ef46e6d03170_2e9b9a72.jpg?itok=TZc8wc_s&v=1795674019",
+          "why": "China is buying more Russian farm goods, including vegetable oil and seafood, even as the United States and China try to steady their own farm trade. This could shift competition for the supplies and markets that India also depends on.",
+          "implications": [
+            "If Russian vegetable oil is increasingly directed to Chinese buyers, less may be available for other importers such as India, which could affect the price and availability of edible oils.",
+            "Russian seafood gaining ground in China could crowd out other exporters to that market, including Indian seafood exporters, if buyers favour cheaper or politically closer suppliers."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-26T17:08:46.740Z",
+            "tier": "quick",
+            "primary": "trade_flow",
+            "complement": null,
+            "features": [
+              "trade_flow",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "The effect on India would be indirect, through competition for Russian vegetable oil and for the Chinese seafood market. The reports describe no direct change to Indian supplies, prices or exports."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Changes in trade patterns build gradually through contracts and shipping seasons, so any effect on Indian import costs or exports would appear over several months."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single South China Morning Post report with no named official source, and it gives no volumes or detail on which products or buyers are involved."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Food shoppers",
+                "direction": "unclear",
+                "what": "edible oil prices",
+                "effect": "If Russian vegetable oil is drawn toward China, supplies for other buyers could tighten, which may affect edible oil prices that Indian households pay.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "edible oil sourcing",
+                "effect": "Indian importers of vegetable oil may face stronger competition from Chinese buyers for Russian cargoes, which could change their sourcing costs.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Progress in US and Chinese efforts to stabilise their farm trade relationship",
+                "why": "A recovery in Chinese purchases from the United States could ease the pull on Russian supplies and reduce competition for other buyers.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "India imports a large share of the edible oil it consumes, and sunflower oil from the Black Sea region has long been one of its sources, so shifts in who buys Russian oil matter to Indian importers."
+            ],
+            "terms": [],
+            "frameworks": {
+              "trade_flow": {
+                "good": "Russian agricultural goods, including vegetable oil and seafood",
+                "actors": [
+                  {
+                    "country": "Russia",
+                    "role": "exporter",
+                    "is_india": false
+                  },
+                  {
+                    "country": "China",
+                    "role": "importer",
+                    "is_india": false
+                  },
+                  {
+                    "country": "United States",
+                    "role": "third_party",
+                    "is_india": false
+                  }
+                ],
+                "change": {
+                  "type": "increase",
+                  "effective": ""
+                },
+                "india_position": {
+                  "role": "competing_buyer",
+                  "note": "India also buys vegetable oil from the Black Sea region, so stronger Chinese demand for Russian oil could mean tighter supply for Indian importers. In seafood, India could face more competition in the Chinese market."
+                },
+                "volumes": []
+              }
+            }
+          },
+          "place": {
+            "name": "China",
+            "country": "China",
+            "lat": 35.9,
+            "lon": 104.2,
+            "involves": [
+              "Russia",
+              "United States"
+            ]
+          },
+          "reports": [
+            {
+              "source": "scmp",
+              "headline": "China’s appetite for Russian farm goods grows despite thaw in US trade ties",
+              "url": "https://www.scmp.com/economy/policy/article/3375878/chinas-appetite-russian-farm-goods-grows-despite-thaw-us-trade-ties",
+              "date": "2026-11-26T11:00:11.000Z",
+              "kind": "hard",
+              "summary": "From vegetable oil to seafood, Russia’s agricultural exports to China are hitting new milestones, even as US and Chinese officials move to stabilise a farm trade relationship increasingly overshadowed by geopolitics.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/26/b9430ed9-7d37-4968-a7e7-ef46e6d03170_2e9b9a72.jpg?itok=TZc8wc_s&v=1795674019"
+            }
+          ],
+          "stats": {
+            "v": 2,
+            "at": "2026-11-26T17:13:12.394Z",
+            "series": []
+          },
+          "thread": "t8r9r3g"
+        },
+        {
+          "id": "s1y8neb8",
+          "headline": "Southeast Asia’s rice farmers are being squeezed. Your wallet could be next",
+          "url": "https://www.scmp.com/week-asia/economics/article/3375805/southeast-asias-rice-farmers-are-being-squeezed-your-wallet-could-be-next",
+          "source": "scmp",
+          "date": "2026-11-26T05:30:05.000Z",
+          "relevance": "medium",
+          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/25/5d0602bd-f986-44be-b640-489b7a948133_9e922527.jpg?itok=woVoxGHh&v=1795619943",
+          "why": "",
+          "implications": [],
+          "place": {
+            "name": "Sekinchan",
+            "country": "Malaysia",
+            "lat": 3.49,
+            "lon": 101.1
+          },
+          "reports": [
+            {
+              "source": "scmp",
+              "headline": "Southeast Asia’s rice farmers are being squeezed. Your wallet could be next",
+              "url": "https://www.scmp.com/week-asia/economics/article/3375805/southeast-asias-rice-farmers-are-being-squeezed-your-wallet-could-be-next",
+              "date": "2026-11-26T05:30:05.000Z",
+              "kind": "feature",
+              "summary": "For more than three decades, Andrew Lim has watched rice farmers in the Malaysian agricultural town of Sekinchan rely on familiar weather patterns to know when to plant their crops.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/25/5d0602bd-f986-44be-b640-489b7a948133_9e922527.jpg?itok=woVoxGHh&v=1795619943"
+            }
+          ],
+          "thread": "t1tg8q0s"
+        },
+        {
           "id": "s1hn2ywx",
           "headline": "India to test all bottled water brands after Bisleri sample found unsafe",
           "url": "https://www.scmp.com/news/asia/south-asia/article/3375438/india-test-all-bottled-water-brands-after-bisleri-sample-found-unsafe",
@@ -94326,6 +95803,238 @@
       "name": "Policy & Governance",
       "items": [
         {
+          "id": "snj1a3o",
+          "headline": "UK sanctions Yemen’s Houthi group and four of its top officials",
+          "url": "https://www.aljazeera.com/news/2026/11/24/uk-sanctions-yemens-houthi-group-four-senior-officials",
+          "source": "aljazeera",
+          "date": "2026-11-24T12:55:55.000Z",
+          "relevance": "medium",
+          "why": "The United Kingdom has imposed sanctions on Yemen's Houthi group and four of its top officials. India is exposed mainly through the wider Yemen war, which threatens Saudi Arabia, where many Indians live and work, and Gulf energy supplies.",
+          "implications": [
+            "The sanctions add diplomatic pressure on the Houthis but do not by themselves change the military situation, which is shaped by the group's strikes on Saudi Arabia.",
+            "The move shows that Western governments are siding openly with Saudi Arabia, which the UK calls a partner. This could harden positions on both sides and make talks harder."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-24T14:02:53.878Z",
+            "tier": "quick",
+            "primary": "escalation",
+            "complement": null,
+            "features": [
+              "armed_conflict"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "The sanctions themselves have no direct channel to Indian households or trade. Any effect would come indirectly through the Yemen war's impact on Saudi Arabia, Gulf energy supplies and Indians living there."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Sanctions act slowly and indirectly, so any effect on the war or on Gulf risks for India would take months to show."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "This rests on one outlet, Al Jazeera, quoting Foreign Secretary Ed Miliband on the record. The specific measures and the names of the four officials are not given."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Gulf & overseas workers and families",
+                "direction": "unclear",
+                "what": "safety in Saudi Arabia",
+                "effect": "Indians working in Saudi Arabia could be affected if the war continues to threaten Saudi cities, though these sanctions do not directly change that risk.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Further sanctions on the Houthis announced by the UK or its allies",
+                "why": "More coordinated measures would show how far Western governments are willing to go in backing Saudi Arabia.",
+                "when": "",
+                "where": "UK Foreign, Commonwealth and Development Office"
+              },
+              {
+                "what": "Any new Houthi strikes on Saudi airports or oil facilities",
+                "why": "New attacks would show whether the sanctions are changing Houthi behaviour and whether the risk to Gulf energy and air travel is growing.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "Sanctions on armed groups usually mean frozen assets and travel bans on named people. They tend to have limited effect on a group's fighting ability but signal political alignment."
+            ],
+            "terms": [],
+            "frameworks": {
+              "escalation": {
+                "move": "none",
+                "rung": 6,
+                "current_rung": 6,
+                "previous_rung": null,
+                "development": "The United Kingdom has added sanctions on the Houthi group and four of its senior officials, citing attacks on its partners and on civilians.",
+                "evidence": "Sanctions are a diplomatic measure at a lower rung. No new attack or deployment is reported, so the war stays at rung 6, set by the Houthi strikes on Riyadh.",
+                "next_signals": [
+                  {
+                    "rung": 7,
+                    "signal": "A large-scale ground offensive or open war between the Houthis and the Saudi-led coalition across the border would show a move to full-scale war."
+                  },
+                  {
+                    "rung": 5,
+                    "signal": "A halt in Houthi missile strikes on Saudi cities and the reopening of King Khalid International Airport would suggest the fighting is easing."
+                  }
+                ],
+                "india_channels": [
+                  "oil",
+                  "diaspora safety",
+                  "shipping"
+                ],
+                "conflict": "w1f5pudc",
+                "applied": "none",
+                "from": 6
+              }
+            }
+          },
+          "conflict": "w1f5pudc",
+          "place": {
+            "name": "London",
+            "country": "United Kingdom",
+            "lat": 51.5,
+            "lon": -0.12,
+            "involves": [
+              "Yemen"
+            ]
+          },
+          "reports": [
+            {
+              "source": "aljazeera",
+              "headline": "UK sanctions Yemen’s Houthi group and four of its top officials",
+              "url": "https://www.aljazeera.com/news/2026/11/24/uk-sanctions-yemens-houthi-group-four-senior-officials",
+              "date": "2026-11-24T12:55:55.000Z",
+              "kind": "hard",
+              "summary": "Group must be held accountable for 'targeting our partners and innocent civilians', says Foreign Secretary Ed Miliband.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/epa_6b058574b0bc-1795523956.jpg?resize=1920%2C1440"
+            },
+            {
+              "source": "aljazeera",
+              "headline": "‘Symbolic’: Why did UK sanction Yemen’s Houthis amid attacks on Saudi?",
+              "url": "https://www.aljazeera.com/news/2026/11/26/symbolic-why-did-uk-sanction-yemens-houthis-amid-attacks-on-saudi",
+              "date": "2026-11-26T12:10:49.000Z",
+              "kind": "feature",
+              "summary": "UK sanctions Iran-backed group and its leaders, accusing them of undermining stability in the Middle East.",
+              "summaryV": 3
+            }
+          ],
+          "finChecked": true,
+          "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/epa_6b058574b0bc-1795523956.jpg?resize=1920%2C1440",
+          "thread": "t1j5n1me"
+        },
+        {
+          "id": "szdcr91",
+          "headline": "Two screenings of Pakistani TV show cancelled in India after backlash",
+          "url": "https://www.bbc.co.uk/news/articles/cky97x7delz9o",
+          "source": "bbc",
+          "date": "2026-11-26T08:30:12.000Z",
+          "relevance": "medium",
+          "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f5ab/live/48278a90-e95c-11f1-b8ee-3d27ee38d605.jpg",
+          "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/f5ab/live/48278a90-e95c-11f1-b8ee-3d27ee38d605.jpg",
+          "why": "Two screenings in India of the Pakistani television show Dar-e-Nijaat were cancelled after a backlash, BBC News reports. The show's popularity with Indian audiences has turned it into a political row.",
+          "implications": [
+            "Venues and organisers in India may become more cautious about hosting Pakistani content if public pressure continues, which could limit how far the show's popularity can be turned into live or public events.",
+            "The row shows that cultural content from Pakistan can quickly become a political issue in India, which may affect how Indian distributors and event organisers judge the risk of such projects."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-26T17:07:43.163Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "low",
+              "reason": "The reports describe cancelled screenings and a political row, but name no channel to household costs, trade, jobs or travel, so any wider effect on India is indirect."
+            },
+            "horizon": {
+              "value": "now",
+              "reason": "The cancellations have already happened and the political row is under way, so any further effect on screenings would show up within days."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single BBC News report with a short summary, and no named official, organiser or political source is cited for the reasons behind the cancellations."
+            },
+            "outlets": 1,
+            "affected": [],
+            "watch": [
+              {
+                "what": "Whether further screenings or public showings of Dar-e-Nijaat in India are cancelled or go ahead",
+                "why": "It would show whether the backlash is limited to two events or is spreading more widely.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "Cultural exchange between India and Pakistan has often been affected by the political relationship between the two countries, and public screenings or performances can become targets of protest when relations are tense."
+            ],
+            "terms": [],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Pakistani show gains Indian audience",
+                    "detail": "Dar-e-Nijaat, a Pakistani television show, has become a sensation in India. That popularity led to screenings being organised in the country.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Backlash prompts cancellations",
+                    "detail": "A political backlash followed, and two screenings of the show in India were cancelled. This turned a popular entertainment story into a political row.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Organisers may become more cautious",
+                    "detail": "Event organisers and venues could treat Pakistani content as a political risk after these cancellations, which may reduce public showings of such content in India.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The effect would stop spreading if the two cancellations remain isolated and other screenings and viewing of the show continue without protest."
+              }
+            }
+          },
+          "reports": [
+            {
+              "source": "bbc",
+              "headline": "Two screenings of Pakistani TV show cancelled in India after backlash",
+              "url": "https://www.bbc.co.uk/news/articles/cky97x7delz9o",
+              "date": "2026-11-26T08:30:12.000Z",
+              "kind": "hard",
+              "summary": "The show, Dar-e-Nijaat, has become a sensation in India but is now embroiled in a political row.",
+              "summaryV": 3,
+              "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f5ab/live/48278a90-e95c-11f1-b8ee-3d27ee38d605.jpg",
+              "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/f5ab/live/48278a90-e95c-11f1-b8ee-3d27ee38d605.jpg"
+            },
+            {
+              "source": "scmp",
+              "headline": "India asks Netflix to keep Pakistani Urdu drama off local screens",
+              "url": "https://www.scmp.com/news/asia/south-asia/article/3375924/modis-government-urges-netflix-keep-pakistani-urdu-drama-indian-screens",
+              "date": "2026-11-26T10:03:08.000Z",
+              "kind": "hard",
+              "summary": "Prime Minister Narendra Modi’s government has asked ⁠global streaming ⁠giant Netflix not to air ⁠a Pakistani series in India, media reported on Thursday, after a prominent film workers’ union wrote to Modi asking for a ban.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/26/de05b2d6-39ce-49c5-a471-d0b8d0e4e000_fab32367.jpg?itok=SNF_IBUM&v=1795687384"
+            }
+          ],
+          "finChecked": true,
+          "place": {
+            "name": "New Delhi",
+            "country": "India",
+            "lat": 28.61,
+            "lon": 77.21,
+            "involves": [
+              "Pakistan"
+            ]
+          },
+          "thread": "t17r311r"
+        },
+        {
           "id": "s12zc15e",
           "headline": "How an Iranian Ally Gained the Upper Hand in Yemen’s War",
           "url": "https://www.nytimes.com/2026/11/25/world/middleeast/yemen-houthis-war-government-losses.html",
@@ -94947,124 +96656,6 @@
             "series": [],
             "reuseOnly": true
           }
-        },
-        {
-          "id": "snj1a3o",
-          "headline": "UK sanctions Yemen’s Houthi group and four of its top officials",
-          "url": "https://www.aljazeera.com/news/2026/11/24/uk-sanctions-yemens-houthi-group-four-senior-officials",
-          "source": "aljazeera",
-          "date": "2026-11-24T12:55:55.000Z",
-          "relevance": "medium",
-          "why": "The United Kingdom has imposed sanctions on Yemen's Houthi group and four of its top officials. India is exposed mainly through the wider Yemen war, which threatens Saudi Arabia, where many Indians live and work, and Gulf energy supplies.",
-          "implications": [
-            "The sanctions add diplomatic pressure on the Houthis but do not by themselves change the military situation, which is shaped by the group's strikes on Saudi Arabia.",
-            "The move shows that Western governments are siding openly with Saudi Arabia, which the UK calls a partner. This could harden positions on both sides and make talks harder."
-          ],
-          "analysis": {
-            "v": 3,
-            "at": "2026-11-24T14:02:53.878Z",
-            "tier": "quick",
-            "primary": "escalation",
-            "complement": null,
-            "features": [
-              "armed_conflict"
-            ],
-            "exposure": {
-              "level": "low",
-              "reason": "The sanctions themselves have no direct channel to Indian households or trade. Any effect would come indirectly through the Yemen war's impact on Saudi Arabia, Gulf energy supplies and Indians living there."
-            },
-            "horizon": {
-              "value": "months",
-              "reason": "Sanctions act slowly and indirectly, so any effect on the war or on Gulf risks for India would take months to show."
-            },
-            "confidence": {
-              "level": "medium",
-              "reason": "This rests on one outlet, Al Jazeera, quoting Foreign Secretary Ed Miliband on the record. The specific measures and the names of the four officials are not given."
-            },
-            "outlets": 1,
-            "affected": [
-              {
-                "group": "Gulf & overseas workers and families",
-                "direction": "unclear",
-                "what": "safety in Saudi Arabia",
-                "effect": "Indians working in Saudi Arabia could be affected if the war continues to threaten Saudi cities, though these sanctions do not directly change that risk.",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "Further sanctions on the Houthis announced by the UK or its allies",
-                "why": "More coordinated measures would show how far Western governments are willing to go in backing Saudi Arabia.",
-                "when": "",
-                "where": "UK Foreign, Commonwealth and Development Office"
-              },
-              {
-                "what": "Any new Houthi strikes on Saudi airports or oil facilities",
-                "why": "New attacks would show whether the sanctions are changing Houthi behaviour and whether the risk to Gulf energy and air travel is growing.",
-                "when": "",
-                "where": ""
-              }
-            ],
-            "context": [
-              "Sanctions on armed groups usually mean frozen assets and travel bans on named people. They tend to have limited effect on a group's fighting ability but signal political alignment."
-            ],
-            "terms": [],
-            "frameworks": {
-              "escalation": {
-                "move": "none",
-                "rung": 6,
-                "current_rung": 6,
-                "previous_rung": null,
-                "development": "The United Kingdom has added sanctions on the Houthi group and four of its senior officials, citing attacks on its partners and on civilians.",
-                "evidence": "Sanctions are a diplomatic measure at a lower rung. No new attack or deployment is reported, so the war stays at rung 6, set by the Houthi strikes on Riyadh.",
-                "next_signals": [
-                  {
-                    "rung": 7,
-                    "signal": "A large-scale ground offensive or open war between the Houthis and the Saudi-led coalition across the border would show a move to full-scale war."
-                  },
-                  {
-                    "rung": 5,
-                    "signal": "A halt in Houthi missile strikes on Saudi cities and the reopening of King Khalid International Airport would suggest the fighting is easing."
-                  }
-                ],
-                "india_channels": [
-                  "oil",
-                  "diaspora safety",
-                  "shipping"
-                ],
-                "conflict": "w1f5pudc",
-                "applied": "none",
-                "from": 6
-              }
-            }
-          },
-          "conflict": "w1f5pudc",
-          "place": {
-            "name": "London",
-            "country": "United Kingdom",
-            "lat": 51.5,
-            "lon": -0.12,
-            "involves": [
-              "Yemen"
-            ]
-          },
-          "reports": [
-            {
-              "source": "aljazeera",
-              "headline": "UK sanctions Yemen’s Houthi group and four of its top officials",
-              "url": "https://www.aljazeera.com/news/2026/11/24/uk-sanctions-yemens-houthi-group-four-senior-officials",
-              "date": "2026-11-24T12:55:55.000Z",
-              "kind": "hard",
-              "summary": "Group must be held accountable for 'targeting our partners and innocent civilians', says Foreign Secretary Ed Miliband.",
-              "summaryV": 3,
-              "ogTried": true,
-              "descTried": true,
-              "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/epa_6b058574b0bc-1795523956.jpg?resize=1920%2C1440"
-            }
-          ],
-          "finChecked": true,
-          "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/epa_6b058574b0bc-1795523956.jpg?resize=1920%2C1440",
-          "thread": "t1j5n1me"
         },
         {
           "id": "s165ke4l",
@@ -113558,13 +115149,13 @@
   "source": "BBC News & The Guardian & NPR & Al Jazeera & MercoPress & ABC News & The New York Times & CNBC & CBS News & DW & France 24 & Africanews & South China Morning Post & The Hindu & Mint & The Indian Express",
   "lastRun": {
     "filter": {
-      "judged": 138,
-      "kept": 13,
-      "guarded": 0
+      "judged": 260,
+      "kept": 29,
+      "guarded": 2
     },
     "health": {
       "day": "2026-11-26",
-      "newStories24h": 20,
+      "newStories24h": 21,
       "keepRate2d": 0.11
     },
     "wars": {
@@ -113573,54 +115164,63 @@
       "active": 9
     },
     "places": {
-      "labelled": 0,
-      "none": 0,
+      "labelled": 1,
+      "none": 3,
       "waiting": 0
     },
     "skipped": {
-      "since": "2026-11-25T19:36:31.767Z",
+      "since": "2026-11-26T03:43:09.867Z",
       "counts": {
-        "section": 29,
-        "live_blog": 3,
-        "podcast_quiz_gallery": 1
+        "video_audio": 2,
+        "section": 37,
+        "live_blog": 2,
+        "podcast_quiz_gallery": 2,
+        "stock_tips_tickers": 1
       },
       "examples": {
+        "video_audio": [
+          "Watch: BBC confronts German man suspected of supplying migrant gangs with small boats",
+          "Watch: Alaskan flying team airdrops Thanksgiving turkeys to remote communities"
+        ],
         "section": [
-          "What we know about Trump's Thanksgiving tariffs",
-          "Moment Nasa spacecraft hit asteroid - and what happened next",
-          "What UK season changes mean for you",
-          "Images from Earth's asteroid defence test reveal new crater",
-          "Patrick Radden Keefe’s London Falling named Waterstones book of the year"
+          "Politics and peek-a-boo in Australian parliament as senator brings baby to work",
+          "Deadly fire erupts near Cairo killing dozens of people",
+          "Fireball steals the show during Thanksgiving drone display in Indiana",
+          "I still send WhatsApp messages to my husband who died in the fire",
+          "Amanda Seyfried needed ‘five-factor authentication’ to read You Can See Everything script but still ‘told everyone’"
         ],
         "live_blog": [
-          "Australian politics live: Liberals ‘tossing up whether to leave or remain’, Albanese says; Coalition warns energy prices",
-          "Chris Van Hollen picks up more support for Senate majority leader role ahead of Democrats vote next week – as it happene",
-          "Iran war live: Explosion rocks Sanaa; missiles intercepted over Riyadh"
+          "Trump says he wants Putin to ‘pull back all military aggression’ in Europe – as it happened",
+          "Mandelson tried to influence Starmer’s cabinet reshuffle, new documents reveal – UK politics live"
         ],
         "podcast_quiz_gallery": [
-          "Spain’s election: the end of a leftwing icon? - podcast"
+          "The dhow builders crafting giant historic ships in India – in pictures",
+          "Rosebank rebellion: are resignations next? – podcast"
+        ],
+        "stock_tips_tickers": [
+          "Norse Atlantic suspends all flights, warns it may file for bankruptcy after share price collapse"
         ]
       }
     },
     "finance": {
       "moved": 0,
-      "checked": 0
+      "checked": 3
     },
-    "analysed": 138,
-    "added": 3,
-    "merged": 10,
-    "rejected": 125,
+    "analysed": 260,
+    "added": 14,
+    "merged": 15,
+    "rejected": 231,
     "failedBatches": 0,
     "feeds": {
       "bbc": {
         "feedsOk": 6,
         "feedsFailed": 0,
-        "items": 159
+        "items": 165
       },
       "guardian": {
         "feedsOk": 7,
         "feedsFailed": 0,
-        "items": 191
+        "items": 193
       },
       "npr": {
         "feedsOk": 4,
@@ -113630,7 +115230,7 @@
       "aljazeera": {
         "feedsOk": 1,
         "feedsFailed": 0,
-        "items": 11
+        "items": 15
       },
       "mercopress": {
         "feedsOk": 3,
@@ -113645,27 +115245,27 @@
       "nyt": {
         "feedsOk": 5,
         "feedsFailed": 0,
-        "items": 194
+        "items": 197
       },
       "cnbc": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 90
+        "items": 89
       },
       "cbs": {
         "feedsOk": 2,
         "feedsFailed": 0,
-        "items": 45
+        "items": 44
       },
       "dw": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 32
+        "items": 33
       },
       "france24": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 73
+        "items": 70
       },
       "africanews": {
         "feedsOk": 1,
@@ -113675,22 +115275,22 @@
       "scmp": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 147
+        "items": 144
       }
     },
     "shareImages": {
-      "tried": 2,
-      "found": 2,
+      "tried": 9,
+      "found": 8,
       "summaries": 0
     },
     "threads": {
-      "assigned": 3,
-      "created": 1,
+      "assigned": 14,
+      "created": 4,
       "failedBatches": 0
     },
     "summaries": {
-      "written": 2,
-      "due": 2
+      "written": 0,
+      "due": 8
     },
     "kinds": {
       "labelled": 0,
@@ -113698,82 +115298,85 @@
       "failedBatches": 0
     },
     "frames": {
-      "done": 3,
-      "waiting": 0,
-      "failedBatches": 0
+      "done": 0,
+      "waiting": 5,
+      "failedBatches": 0,
+      "budgetStopped": true
     },
     "stats": {
-      "searched": 3,
+      "searched": 7,
       "found": 1,
       "reused": 1,
-      "none": 1,
+      "none": 2,
       "failed": 0,
       "proposed": 7,
       "droppedPoints": 0,
-      "pagesFetched": 3,
+      "pagesFetched": 2,
       "samples": [
         {
-          "headline": "AI turmoil spurs risk-off mode as China government bond yield slides to record l",
-          "result": "none",
-          "proposed": 0,
-          "checked": 0,
-          "pagesFetched": 2
-        },
-        {
-          "headline": "Houthis target Saudi Arabia’s Red Sea ports as strikes escalate",
-          "result": "reused saved series"
-        },
-        {
-          "headline": "US preparing to unveil plan for new tariffs on global trading partners",
+          "headline": "Nvidia chip buyers told to rule out Chinese renters to purchase GPUs, sources sa",
           "result": "chart",
           "proposed": 7,
           "checked": 7,
+          "pagesFetched": 1,
+          "selfFetched": 1
+        },
+        {
+          "headline": "Two Italians killed in Iranian drone strike on Kuwait",
+          "result": "reused saved series"
+        },
+        {
+          "headline": "Nvidia Halts Sales to Southeast Asia as U.S. Tightens China Restrictions",
+          "result": "none",
+          "proposed": 0,
+          "checked": 0,
           "pagesFetched": 1
+        },
+        {
+          "headline": "China’s appetite for Russian farm goods grows despite thaw in US trade ties",
+          "result": "none",
+          "proposed": 0,
+          "checked": 0,
+          "pagesFetched": 0
         }
-      ]
+      ],
+      "budgetStopped": true
     },
     "models": {
       "filter": {
         "model": "claude-haiku-5-5",
-        "calls": 11,
-        "inputTokens": 56001,
-        "outputTokens": 20421,
-        "cost": 0.0158
+        "calls": 27,
+        "inputTokens": 107665,
+        "outputTokens": 41699,
+        "cost": 0.0313
       },
       "analysis_quick": {
         "model": "claude-sonnet-5-5",
-        "calls": 1,
-        "inputTokens": 3699,
-        "outputTokens": 4567,
-        "cost": 0.0531
+        "calls": 9,
+        "inputTokens": 27534,
+        "outputTokens": 20751,
+        "cost": 0.2626
       },
       "stats": {
         "model": "claude-sonnet-5-5",
-        "calls": 2,
-        "inputTokens": 179386,
-        "outputTokens": 1900,
-        "searches": 4,
-        "fetches": 4,
-        "cost": 0.4178
-      },
-      "analysis": {
-        "model": "claude-opus-5-5",
-        "calls": 1,
-        "inputTokens": 5451,
-        "outputTokens": 7981,
-        "cost": 0.1814
+        "calls": 3,
+        "inputTokens": 521869,
+        "outputTokens": 4048,
+        "searches": 7,
+        "fetches": 7,
+        "cost": 1.1542
       },
       "threads": {
         "model": "claude-sonnet-5-5",
-        "calls": 3,
-        "inputTokens": 11619,
-        "outputTokens": 1493,
-        "cost": 0.0382
+        "calls": 1,
+        "inputTokens": 10618,
+        "outputTokens": 391,
+        "cost": 0.0251
       }
     },
     "spend": {
-      "thisDesk": 0.7062,
-      "today": 3.4606,
+      "thisDesk": 1.4736,
+      "today": 5.4195,
       "cap": 6
     }
   },
