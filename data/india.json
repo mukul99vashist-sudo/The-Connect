@@ -2,7 +2,7 @@
   "schema": 4,
   "region": "India",
   "since": "2026-10-02",
-  "updatedAt": "2026-11-25T19:36:31.767Z",
+  "updatedAt": "2026-11-26T03:43:09.867Z",
   "sectors": [
     {
       "id": "energy",
@@ -38232,6 +38232,201 @@
       "name": "Logistics & Shipping",
       "items": [
         {
+          "id": "s1m7srsd",
+          "headline": "Houthis target Saudi Arabia’s Red Sea ports as strikes escalate",
+          "url": "https://www.aljazeera.com/news/2026/11/25/houthis-target-saudi-arabias-red-sea-ports-as-strikes-escalate",
+          "source": "aljazeera",
+          "date": "2026-11-25T23:33:39.000Z",
+          "relevance": "medium",
+          "why": "Al Jazeera reports that the Houthis are targeting Saudi Arabia's Red Sea ports as strikes escalate. If port operations or shipping are disrupted, trade and Gulf-linked supply chains that Indian businesses use could be affected.",
+          "implications": [
+            "Attacks on Red Sea ports could raise war-risk insurance and freight costs for ships calling there, which may increase costs for Indian importers and exporters using the route.",
+            "Indian families with relatives working in Saudi Arabia may face safety concerns if the strikes widen, although the early report gives no details of any such effect."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-26T03:40:39.881Z",
+            "tier": "quick",
+            "primary": "disruption_map",
+            "complement": null,
+            "features": [
+              "disruption",
+              "armed_conflict",
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The channel is shipping and Gulf trade through Saudi Red Sea ports, which could affect Indian importers, exporters and energy supplies. No closure or damage has been reported, so the level stays at medium."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Any effect on freight costs, insurance or cargo schedules would depend on whether the attacks continue and whether port operations are actually disrupted."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This is an early report from a single outlet, Al Jazeera, with no official confirmation of damage, port status or the targets hit."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Importers & traders",
+                "direction": "unclear",
+                "what": "shipping risk and costs",
+                "effect": "Cargo moving to or from Saudi Red Sea ports could face delays or higher insurance and freight costs if attacks continue.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "Gulf energy supply risk",
+                "effect": "India imports most of its crude oil, including from Saudi Arabia, so sustained disruption to Saudi export infrastructure could eventually affect fuel supply and prices.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Gulf & overseas workers and families",
+                "direction": "unclear",
+                "what": "safety concerns in Saudi Arabia",
+                "effect": "Indian workers in Saudi Arabia and their families may worry about safety if missile strikes spread, although the report does not describe any harm to them.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Saudi or port authorities confirming damage to, or suspension of operations at, Red Sea ports",
+                "why": "It would show whether the attacks are physically disrupting trade rather than only being intercepted.",
+                "when": "",
+                "where": ""
+              },
+              {
+                "what": "Shipping companies or insurers changing Red Sea routes or raising war-risk charges",
+                "why": "It would show whether the escalation is starting to raise costs for cargo bound for or leaving India.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "Saudi Arabia is one of India's main crude oil suppliers, and the Red Sea is a major sea route between Asia and Europe.",
+              "Shipping lines and insurers tend to react quickly to attacks near busy sea lanes, even before any port is formally closed."
+            ],
+            "terms": [
+              {
+                "term": "Houthis",
+                "meaning": "A Yemen-based armed group that controls Sanaa and much of northern Yemen and has fired missiles at Saudi Arabia."
+              }
+            ],
+            "frameworks": {
+              "disruption_map": {
+                "node": {
+                  "name": "Saudi Arabia's Red Sea ports",
+                  "type": "port",
+                  "status": "unknown",
+                  "as_of": "25 Nov 2026"
+                },
+                "cause": {
+                  "text": "Al Jazeera reports that the Houthis are targeting Saudi Arabia's Red Sea ports, while Saudi air defences intercepted ballistic missiles aimed at Riyadh and an explosion was reported in Sanaa.",
+                  "status": "claimed"
+                },
+                "flows": [
+                  {
+                    "flow": "cargo",
+                    "india_link": "Indian importers and exporters use Red Sea shipping lanes for trade with the Gulf and Europe, so port disruption or higher risk costs could affect them.",
+                    "basis": "inferred"
+                  },
+                  {
+                    "flow": "crude",
+                    "india_link": "India imports most of its crude oil, and Saudi Arabia is one of its main suppliers, so damage to Saudi export facilities could tighten supply for Indian refiners.",
+                    "basis": "inferred"
+                  }
+                ],
+                "alternatives": [],
+                "duration": "not reported"
+              }
+            }
+          },
+          "place": {
+            "name": "Red Sea",
+            "country": "Saudi Arabia",
+            "lat": 20,
+            "lon": 38.5,
+            "involves": [
+              "Yemen"
+            ]
+          },
+          "reports": [
+            {
+              "source": "aljazeera",
+              "headline": "Houthis target Saudi Arabia’s Red Sea ports as strikes escalate",
+              "url": "https://www.aljazeera.com/news/2026/11/25/houthis-target-saudi-arabias-red-sea-ports-as-strikes-escalate",
+              "date": "2026-11-25T23:33:39.000Z",
+              "kind": "breaking",
+              "summary": "Explosion reported in Sanaa after Saudi air defenses intercept ballistic missiles targeting Riyadh.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/afp_6b075e56efe1-1795645014.jpg?resize=1920%2C1440"
+            }
+          ],
+          "stats": {
+            "v": 2,
+            "at": "2026-11-26T03:41:27.976Z",
+            "series": [
+              {
+                "title": "Oil flows through Bab el-Mandeb Strait",
+                "unit": "million barrels per day",
+                "publisher": "U.S. Energy Information Administration",
+                "points": [
+                  {
+                    "period": "2020",
+                    "value": 5.7,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2021",
+                    "value": 6,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2022",
+                    "value": 8,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2023",
+                    "value": 9.3,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  },
+                  {
+                    "period": "2024",
+                    "value": 4.1,
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "source": "eia.gov"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
+                    "title": "eia.gov",
+                    "domain": "eia.gov"
+                  }
+                ],
+                "domains": [
+                  "eia.gov"
+                ],
+                "dropped": 1,
+                "why": "Oil flows through the Bab el-Mandeb Strait measure the same Red Sea shipping flow that Houthi attacks on Saudi ports would disrupt.",
+                "reused": true,
+                "checkedAt": "2026-11-02T06:29:40.927Z"
+              }
+            ]
+          },
+          "image": "https://www.aljazeera.com/wp-content/uploads/2026/11/afp_6b075e56efe1-1795645014.jpg?resize=1920%2C1440",
+          "thread": "tq5ix5r"
+        },
+        {
           "id": "shybz51",
           "headline": "Saudi-led coalition intercepts Houthi attacks after Hodeidah strike",
           "url": "https://www.aljazeera.com/news/2026/11/25/saudi-led-coalition-intercepts-houthi-attacks-after-hodeidah-strike",
@@ -46690,16 +46885,16 @@
           "relevance": "medium",
           "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/511d/live/da29c130-e860-11f1-a330-6153c8fb2fad.jpg",
           "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/511d/live/da29c130-e860-11f1-a330-6153c8fb2fad.jpg",
-          "why": "The US has proposed new tariffs on 14 economies, including China, the EU, Japan and Vietnam, which it accuses of subsidising overproduction. India has not been named among them, but Indian exporters could feel indirect effects through changed competition in the US market.",
+          "why": "The United States has proposed new tariffs on 14 economies, including an extra 20% on Chinese goods. India's inclusion has not been reported, but higher US import taxes on rivals could shift trade flows that matter to Indian exporters.",
           "implications": [
-            "If Chinese goods face an additional 20% US tariff, American buyers could look for other suppliers, which may create openings for Indian exporters in products where India competes with China or Vietnam.",
-            "Goods that become harder to sell in the US could be redirected to other markets, which may increase import competition for Indian manufacturers in their home market.",
-            "The fall in US stock markets after the announcement could weigh on global investor sentiment, and this may spill over into Indian share markets.",
-            "The measures are only proposals and face legal obstacles and scrutiny from an incoming Democratic-led Congress, so their final scope and timing remain uncertain."
+            "If Chinese goods become about 40% dearer at the US border, American buyers may look for other suppliers, which could open room for Indian exporters in some product lines.",
+            "Chinese producers facing higher US barriers could redirect surplus goods to other markets, including India, which may put pressure on Indian manufacturers competing with cheaper imports.",
+            "The European Union rejects the premise of the tariffs and expects last year's deal with Washington to hold, so a wider trade dispute could follow and unsettle global demand.",
+            "US stocks fell after the announcement, and sharp swings in global markets can spill into Indian share markets through foreign investor selling."
           ],
           "analysis": {
             "v": 3,
-            "at": "2026-11-25T19:35:55.023Z",
+            "at": "2026-11-26T03:42:57.278Z",
             "tier": "deep",
             "primary": "trade_flow",
             "complement": "scenarios",
@@ -46709,78 +46904,78 @@
             ],
             "exposure": {
               "level": "medium",
-              "reason": "India has not been named among the targeted economies, so the main channel is indirect: changes in how Indian exporters compete with Chinese and other suppliers in the US market."
+              "reason": "The effect reaches India indirectly, through competition in the US market and possible diversion of Chinese goods. Whether India is among the 14 economies has not been reported."
             },
             "horizon": {
               "value": "months",
-              "reason": "The tariffs are still proposals, and their timing depends on the US administration finalising them and on legal and congressional challenges."
+              "reason": "The tariffs are described as proposed, and no date for them to take effect has been reported."
             },
             "confidence": {
               "level": "high",
-              "reason": "Many outlets, including The New York Times, CNBC and CBS News, report the proposal; the 20% China rate rests on an official's statement, and effective dates are unreported."
+              "reason": "CBS News, The Guardian, France 24, Al Jazeera and the South China Morning Post agree, and the EU has responded on record. The full country list and start date are unreported."
             },
-            "outlets": 9,
+            "outlets": 10,
             "affected": [
               {
                 "group": "Large exporters",
-                "direction": "up",
-                "what": "relative competitiveness in US market",
-                "effect": "Indian exporters competing with Chinese or Vietnamese goods in the US could gain a price advantage if those rivals face higher US tariffs.",
+                "direction": "mixed",
+                "what": "competitiveness in US market",
+                "effect": "Indian exporters could gain US orders if rival goods become dearer, but they could lose if India is also among the targeted economies.",
                 "basis": "inferred"
               },
               {
                 "group": "Manufacturing workers",
-                "direction": "down",
-                "what": "competition from redirected imports",
-                "effect": "Indian factories could face more competition if goods that become harder to sell in the US are redirected to India at lower prices.",
+                "direction": "unclear",
+                "what": "competition from diverted imports",
+                "effect": "Cheaper Chinese goods redirected from the US could compete with Indian factories, which may affect output and jobs in exposed industries.",
                 "basis": "inferred"
               },
               {
                 "group": "Equity & mutual fund investors",
                 "direction": "unclear",
-                "what": "market sentiment",
-                "effect": "The fall in US stocks after the announcement could affect global investor sentiment, which may influence Indian share prices.",
+                "what": "market volatility",
+                "effect": "US stocks fell on the news, and global market turbulence could spill into Indian share prices through foreign investor flows.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "Publication of the full list of 14 economies and the final tariff rates",
-                "why": "It would show whether India is targeted and how large the tariff gap with competing suppliers will be.",
+                "what": "Publication of the full list of 14 economies and the tariff rates for each",
+                "why": "It would show whether India is directly targeted or only affected through shifts in trade.",
                 "when": "",
                 "where": "Office of the United States Trade Representative"
               },
               {
-                "what": "China's official response to the proposed additional 20% tariff",
-                "why": "Retaliation or negotiation would indicate whether US-China trade tensions are resuming after the Shenzhen summit.",
+                "what": "US response to the EU demand that last year's trade deal be honoured",
+                "why": "It would indicate whether the tariffs are applied broadly or softened for partners with existing deals.",
                 "when": "",
-                "where": "China's Ministry of Commerce"
+                "where": "European Commission"
               },
               {
-                "what": "Court rulings or congressional action on the administration's tariffs",
-                "why": "These would show whether the proposed tariffs can actually take effect.",
+                "what": "Announcement of a date on which the proposed tariffs take effect",
+                "why": "It would set when trade diversion effects could begin to reach Indian exporters and manufacturers.",
                 "when": "",
-                "where": ""
+                "where": "Office of the United States Trade Representative"
               }
             ],
             "context": [
-              "The United States is one of India's largest export markets, buying goods such as textiles, pharmaceuticals, engineering products, and gems and jewellery.",
-              "When the US raises tariffs on one supplier country, importers often switch orders to suppliers in countries that face lower duties, a process known as trade diversion.",
-              "The Office of the US Trade Representative investigates foreign trade practices and can recommend tariffs under US trade law, which the administration can then impose."
+              "The United States is one of India's largest export markets, so changes in US tariffs on competing countries can alter the price position of Indian goods there.",
+              "When one large economy is shut out of a market by tariffs, its exporters often redirect goods to other countries, a pattern known as trade diversion.",
+              "Opposition Democrats in Congress have signalled that rolling back the president's tariffs is one of their priorities, which adds political uncertainty to US trade policy."
             ],
             "terms": [
               {
                 "term": "United States Trade Representative",
-                "meaning": "The US government office that leads trade negotiations and investigates foreign trade practices it considers unfair."
+                "meaning": "The US government office that negotiates trade agreements and runs investigations that can lead to tariffs on foreign goods."
               },
               {
-                "term": "midterms",
-                "meaning": "US congressional elections held halfway through a president's four-year term."
+                "term": "excess production",
+                "meaning": "The charge that a country produces more goods than its own market can absorb and sells the surplus abroad at low prices."
               }
             ],
             "frameworks": {
               "trade_flow": {
-                "good": "Goods exported to the US from 14 economies, including China, the EU, Japan, Taiwan, Brazil and Vietnam",
+                "good": "Goods imported into the United States from China, the European Union and other major economies",
                 "actors": [
                   {
                     "country": "United States",
@@ -46798,14 +46993,9 @@
                     "is_india": false
                   },
                   {
-                    "country": "Japan",
-                    "role": "exporter",
-                    "is_india": false
-                  },
-                  {
-                    "country": "Taiwan",
-                    "role": "exporter",
-                    "is_india": false
+                    "country": "India",
+                    "role": "third_party",
+                    "is_india": true
                   }
                 ],
                 "change": {
@@ -46814,24 +47004,24 @@
                 },
                 "india_position": {
                   "role": "rival_exporter",
-                  "note": "India has not been named among the targeted economies and sells many of the same goods to the US as China and Vietnam. If the tariffs take effect, Indian exporters could become more price-competitive in the US, though redirected goods could compete with Indian products elsewhere."
+                  "note": "India competes with China and Europe as a supplier to the US market, though its inclusion in this proposal has not been reported. Higher tariffs on rivals could help some Indian sellers, while diverted Chinese goods could pressure Indian producers."
                 },
                 "volumes": []
               },
               "scenarios": {
-                "question": "Will the proposed US tariffs on 14 economies, including an additional 20% on China, take effect as announced?",
+                "question": "Will the proposed US tariffs on 14 economies take effect as announced, or be adjusted for partners such as the EU?",
                 "scenarios": [
                   {
                     "name": "Tariffs imposed as proposed",
-                    "what": "The US administration finalises duties on the 14 economies, including the additional 20% tariff on Chinese goods.",
-                    "signal": "The US Trade Representative publishes final rates and effective dates for the named economies.",
-                    "india_effect": "Indian exporters competing with the targeted countries could gain a price advantage in the US, while Indian manufacturers could face more redirected imports at home."
+                    "what": "The United States applies the additional 20% on Chinese goods and the higher levies on other economies without major changes.",
+                    "signal": "The US Trade Representative issues final tariff schedules and an effective date matching the proposal.",
+                    "india_effect": "Indian exporters could find openings in the US where rivals face higher taxes. India could also see more diverted Chinese goods entering its market."
                   },
                   {
-                    "name": "Blocked or delayed",
-                    "what": "Legal challenges or the incoming Democratic-led Congress hold up or narrow the tariffs, leaving current trade terms largely unchanged.",
-                    "signal": "Courts rule against the measures, or Congress moves legislation to restrict the administration's tariffs.",
-                    "india_effect": "Any relative advantage for Indian exporters would be smaller or delayed, and conditions facing India in the US market could stay close to current levels."
+                    "name": "EU deal honoured",
+                    "what": "Washington keeps to the trade deal struck with Brussels last year, as the EU expects, and softens or drops the new levies on European goods.",
+                    "signal": "US and EU officials announce that European exports will be treated under the existing deal.",
+                    "india_effect": "Competition for Indian exporters from European goods in the US may change little. The tariff burden would fall more heavily on China and the other economies named."
                   }
                 ]
               }
@@ -46976,10 +47166,138 @@
               "kind": "hard",
               "summary": "The new levies come after an eight-month investigation launched by the United States Trade Representative.",
               "summaryV": 3
+            },
+            {
+              "source": "guardian",
+              "headline": "Trump proposing new tariffs on 14 partners including China and EU",
+              "url": "https://www.theguardian.com/us-news/2026/nov/25/trump-new-china-tariffs-europe",
+              "date": "2026-11-25T14:59:44.000Z",
+              "kind": "hard",
+              "summary": "Administration is suggesting an added 20% tax on Chinese imports, which would bring the total to about 40%",
+              "summaryV": 3,
+              "lede": "US politics live – latest updates",
+              "image": "https://i.guim.co.uk/img/media/1e62345f75c4b03ed8949417f520577e19e7e89d/914_0_5738_4593/master/5738.jpg?width=700&quality=85&auto=format&fit=max&s=b4dd1e40070bbc5681e890db233d690a"
+            },
+            {
+              "source": "france24",
+              "headline": "US unveils proposed tariffs on major partners, including EU and China",
+              "url": "https://www.france24.com/en/us-unveils-proposed-tariffs-on-major-partners-including-eu-and-china",
+              "date": "2026-11-25T19:15:03.000Z",
+              "kind": "hard",
+              "summary": "The United States on Wednesday unveiled proposed tariffs on 14 economies including the European Union and China, after a months-long probe into alleged excess production -- the latest move by US President Donald Trump to remake Washington's trade relationships.",
+              "summaryV": 3,
+              "image": "https://s.france24.com/media/display/204bc0b6-e904-11f1-8964-81da3ab2acbb/w:1024/p:16x9/EN-20261125-200200-200343-CS.jpg"
+            },
+            {
+              "source": "france24",
+              "headline": "EU says 'strongly' rejects premise of new US tariffs",
+              "url": "https://www.france24.com/en/eu-says-strongly-rejects-premise-of-new-us-tariffs",
+              "date": "2026-11-25T19:48:32.000Z",
+              "kind": "hard",
+              "summary": "The EU said Wednesday that it rejected the premise of new tariffs on its exports proposed by the United States and expected Washington to stick by a deal struck with Brussels last year.",
+              "summaryV": 3,
+              "image": "https://s.france24.com/media/display/d88720f4-e908-11f1-ab85-81da3ab2acbb/w:1024/p:16x9/EN-20261125-203356-203840-CS.jpg"
+            },
+            {
+              "source": "france24",
+              "headline": "New US tariffs: 'Trump lashing out really indiscriminately', expert says",
+              "url": "https://www.france24.com/en/new-us-tariffs-trump-lashing-out-really-indiscriminately-expert-says",
+              "date": "2026-11-25T22:11:57.000Z",
+              "kind": "hard",
+              "summary": "The United States on Wednesday unveiled proposed tariffs on 14 economies including the European Union and China, after a months-long probe into alleged excess production.",
+              "summaryV": 3,
+              "image": "https://s.france24.com/media/display/6fca69cc-e91c-11f1-99e8-81da3ab2acbb/w:1024/p:16x9/EN-20261125-223111-224208-CS.jpg"
+            },
+            {
+              "source": "france24",
+              "headline": "New US tariffs: 'Trump lashing out really indiscriminately', expert says",
+              "url": "https://www.france24.com/en/tv-shows/a-propos/20261125-new-us-tariffs-trump-lashing-out-really-indiscriminately-expert-says",
+              "date": "2026-11-25T22:13:28.000Z",
+              "kind": "hard",
+              "summary": "The United States on Wednesday unveiled proposed tariffs on 14 economies including the European Union and China, after a months-long probe into alleged excess production.",
+              "summaryV": 3,
+              "image": "https://s.france24.com/media/display/6fca69cc-e91c-11f1-99e8-81da3ab2acbb/w:1024/p:16x9/EN-20261125-223111-224208-CS.jpg"
+            },
+            {
+              "source": "scmp",
+              "headline": "US trading partners’ patience wears thin as Trump slaps on new tariffs",
+              "url": "https://www.scmp.com/news/us/economy-trade-business/article/3375819/us-trading-partners-patience-wears-thin-trump-slaps-new-tariffs",
+              "date": "2026-11-25T23:30:23.000Z",
+              "kind": "hard",
+              "summary": "Major US trading partners and companies on the economic front lines decried US President Donald Trump’s latest tariff salvo on Wednesday, even as they expressed resignation, as his playbook has become more predictable and better telegraphed with repeated use.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/26/bb4152f4-c89a-4eab-9ec1-3ddffeaaebf2_8a96e2ab.jpg?itok=zsbqFKwD&v=1795649422"
             }
           ],
           "finChecked": true,
-          "thread": "topaoh5"
+          "thread": "topaoh5",
+          "stats": {
+            "v": 2,
+            "at": "2026-11-26T03:41:39.663Z",
+            "series": [
+              {
+                "title": "US goods imports from India, by year",
+                "unit": "US$ million",
+                "publisher": "U.S. Census Bureau",
+                "why": "This series shows how much Indian-made goods the US market has taken in over time, which is the exposure Indian exporters have if tariffs on rival suppliers change their competitive position.",
+                "points": [
+                  {
+                    "period": "2019",
+                    "value": 57879,
+                    "url": "https://www.census.gov/foreign-trade/balance/c5330.html",
+                    "source": "International Trade"
+                  },
+                  {
+                    "period": "2020",
+                    "value": 51254.6,
+                    "url": "https://www.census.gov/foreign-trade/balance/c5330.html",
+                    "source": "International Trade"
+                  },
+                  {
+                    "period": "2021",
+                    "value": 73308.2,
+                    "url": "https://www.census.gov/foreign-trade/balance/c5330.html",
+                    "source": "International Trade"
+                  },
+                  {
+                    "period": "2022",
+                    "value": 85517.4,
+                    "url": "https://www.census.gov/foreign-trade/balance/c5330.html",
+                    "source": "International Trade"
+                  },
+                  {
+                    "period": "2023",
+                    "value": 83543.6,
+                    "url": "https://www.census.gov/foreign-trade/balance/c5330.html",
+                    "source": "International Trade"
+                  },
+                  {
+                    "period": "2024",
+                    "value": 87284.8,
+                    "url": "https://www.census.gov/foreign-trade/balance/c5330.html",
+                    "source": "International Trade"
+                  },
+                  {
+                    "period": "2025",
+                    "value": 103776.3,
+                    "url": "https://www.census.gov/foreign-trade/balance/c5330.html",
+                    "source": "International Trade"
+                  }
+                ],
+                "dropped": 0,
+                "sources": [
+                  {
+                    "url": "https://www.census.gov/foreign-trade/balance/c5330.html",
+                    "title": "International Trade",
+                    "domain": "census.gov"
+                  }
+                ],
+                "domains": [
+                  "census.gov"
+                ]
+              }
+            ]
+          }
         },
         {
           "id": "s13v2wbb",
@@ -65654,6 +65972,16 @@
               "ogTried": true,
               "descTried": true,
               "image": "https://image.cnbcfm.com/api/v1/image/108549914-1794489742468-108549914-1794487406211-gettyimages-2299714527-UK_HUANG.jpg?v=1795450267&w=1920&h=1080"
+            },
+            {
+              "source": "nyt",
+              "headline": "Trump Rejoiced in the Market’s Nvidia Surge. It Didn’t Last Long.",
+              "url": "https://www.nytimes.com/2026/11/25/us/politics/trump-nvidia-stock-market.html",
+              "date": "2026-11-26T01:53:20.000Z",
+              "kind": "feature",
+              "summary": "The retreat of the stock market in recent days shows how President Trump’s push to reinstall the company’s chief executive has collided with the realities of his other policies.",
+              "summaryV": 3,
+              "image": "https://static01.nyt.com/images/2026/11/25/multimedia/25dc-trump-econ-zmgl/25dc-trump-econ-zmgl-mediumSquareAt3X-v2.jpg"
             }
           ],
           "stats": {
@@ -65718,6 +66046,119 @@
           "thread": "t1nkczxr"
         },
         {
+          "id": "s1t5xso0",
+          "headline": "AI turmoil spurs risk-off mode as China government bond yield slides to record low",
+          "url": "https://www.scmp.com/business/china-business/article/3375721/ai-turmoil-spurs-risk-mode-china-government-bond-yield-slides-record-low",
+          "source": "scmp",
+          "date": "2026-11-26T00:00:13.000Z",
+          "relevance": "medium",
+          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/25/8a824cae-5509-41a8-8092-a4ea27b8ee67_7e7bd7ef.jpg?itok=4yzZdZNK&v=1795590426",
+          "why": "South China Morning Post reports that China's benchmark longer-dated government bond yield fell to a record low as investors sought safety amid volatility in artificial intelligence shares. Such risk aversion can influence global investment flows, including into India.",
+          "implications": [
+            "A fall in bond yields means bond prices have risen, which shows investors are paying more for safe assets and are less willing to hold riskier ones.",
+            "If global risk aversion lasts, foreign investors may reassess emerging-market holdings, which could affect Indian share and bond markets. The report itself describes only conditions in China."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-26T03:40:39.883Z",
+            "tier": "quick",
+            "primary": "market_move",
+            "complement": null,
+            "features": [
+              "market_move"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "The move is in Chinese bonds and the report names no direct channel to India. Any effect would be indirect, through global investor sentiment and foreign investment flows."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Any spillover would appear gradually in foreign investment flows and market sentiment, rather than through an immediate change affecting Indian households."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single outlet, South China Morning Post, with no named official or exchange source, and the link to India is not reported."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Equity & mutual fund investors",
+                "direction": "unclear",
+                "what": "market sentiment",
+                "effect": "If global caution over artificial intelligence shares spreads, it could change foreign investor flows into Indian shares, which may affect market values held through mutual funds.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Whether the volatility in artificial intelligence shares spreads to other major markets, including India's",
+                "why": "It would show whether the risk aversion seen in China is becoming a wider global pattern that could affect Indian markets.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "When investors turn cautious, they usually move money from growth-oriented shares into government bonds and dividend-paying shares.",
+              "India is exposed to such global mood swings because foreign investors hold a large share of Indian equities and their buying and selling can move markets."
+            ],
+            "terms": [
+              {
+                "term": "risk-off mode",
+                "meaning": "A period when investors avoid riskier assets such as growth shares and move money into safer ones such as government bonds."
+              }
+            ],
+            "frameworks": {
+              "market_move": {
+                "moved": {
+                  "what": "China's benchmark longer-dated government bond yield",
+                  "kind": "bond yields",
+                  "direction": "down",
+                  "size": "",
+                  "period": "in recent trading"
+                },
+                "cause": {
+                  "text": "Investors moved into defensive positions and dividend-paying shares as volatility in the artificial intelligence trade sparked widespread risk aversion, which pushed the benchmark yield to a record low.",
+                  "status": "reported",
+                  "by": "South China Morning Post, describing investor behaviour"
+                },
+                "duration": "record",
+                "channels": [
+                  {
+                    "channel": "foreign investment flows",
+                    "india_link": "Global risk aversion could change how foreign investors allocate money across emerging markets, which may affect flows into Indian shares and bonds.",
+                    "basis": "inferred"
+                  }
+                ],
+                "not_settled": "It is not reported how long the risk-off mood will last or whether it will affect markets outside China."
+              }
+            }
+          },
+          "place": {
+            "name": "Shanghai",
+            "country": "China",
+            "lat": 31.2,
+            "lon": 121.5
+          },
+          "reports": [
+            {
+              "source": "scmp",
+              "headline": "AI turmoil spurs risk-off mode as China government bond yield slides to record low",
+              "url": "https://www.scmp.com/business/china-business/article/3375721/ai-turmoil-spurs-risk-mode-china-government-bond-yield-slides-record-low",
+              "date": "2026-11-26T00:00:13.000Z",
+              "kind": "hard",
+              "summary": "Investors are hunkering down for defensive positions, driving down the yield on the benchmark longer-dated Chinese government bond to a record low and loading up on dividend stocks, as the volatility of the artificial intelligence trade sparked widespread risk aversion.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/25/8a824cae-5509-41a8-8092-a4ea27b8ee67_7e7bd7ef.jpg?itok=4yzZdZNK&v=1795590426"
+            }
+          ],
+          "stats": {
+            "v": 2,
+            "at": "2026-11-26T03:41:25.578Z",
+            "series": []
+          },
+          "thread": "t1q7ikio"
+        },
+        {
           "id": "s1vly3ym",
           "headline": "Another Hot Inflation Reading Keeps Fed on Track to Raise Rates Again",
           "url": "https://www.nytimes.com/2026/11/25/business/economy/inflation-pce-interest-rates.html",
@@ -65725,15 +66166,17 @@
           "date": "2026-11-25T19:13:30.000Z",
           "relevance": "medium",
           "image": "https://static01.nyt.com/images/2026/11/25/multimedia/25dc-inflation-gvjc/25dc-inflation-gvjc-mediumSquareAt3X.jpg",
-          "why": "Another hot US inflation reading keeps the Federal Reserve on track to raise interest rates again next month. Higher US rates can reach India through currency movements and foreign investment flows.",
+          "why": "US inflation remains high, partly because of an artificial intelligence boom, and the Federal Reserve is widely expected to raise interest rates next month. Higher US rates can draw money away from India and weigh on the rupee.",
           "implications": [
-            "Higher US interest rates make dollar assets more attractive, which can draw money away from emerging markets such as India and put pressure on the rupee.",
-            "A weaker rupee raises the rupee cost of imports and of dollar payments, which affects importers and families paying for education or travel abroad."
+            "When US interest rates rise, global investors may move money from emerging markets such as India into US assets, which could pressure Indian share prices and the rupee.",
+            "A weaker rupee could make imports such as crude oil dearer, which may add to price pressures in India.",
+            "The Reserve Bank of India could take US rate moves into account when setting its own policy, which may affect loan and deposit rates for Indian households.",
+            "Strong US growth driven by artificial intelligence spending could support demand for Indian technology services, even as the boom unsettles US stock markets."
           ],
           "analysis": {
             "v": 3,
-            "at": "2026-11-25T19:32:09.816Z",
-            "tier": "quick",
+            "at": "2026-11-26T03:42:57.279Z",
+            "tier": "standard",
             "primary": "decoder",
             "complement": null,
             "features": [
@@ -65743,70 +66186,102 @@
             ],
             "exposure": {
               "level": "medium",
-              "reason": "The channel is the rupee and foreign investment flows, which touch markets and importers broadly. The reports describe no direct effect on Indian households, so the exposure is medium."
+              "reason": "The effect reaches India indirectly, through foreign investment flows, the rupee exchange rate and possible influence on Reserve Bank of India policy."
             },
             "horizon": {
               "value": "weeks",
-              "reason": "The rate decision is expected next month, and markets and the rupee may begin adjusting in the weeks before it."
+              "reason": "The Federal Reserve is expected to decide on rates next month, and markets often move ahead of that decision."
             },
             "confidence": {
-              "level": "low",
-              "reason": "This rests on a single outlet, The New York Times, which says only that a rise is widely expected, with no figures or named Federal Reserve official."
+              "level": "medium",
+              "reason": "The New York Times and NPR agree inflation is hot, but no figure is reported and the expected rate rise is not yet confirmed."
             },
-            "outlets": 1,
+            "outlets": 2,
             "affected": [
               {
                 "group": "Equity & mutual fund investors",
-                "direction": "unclear",
-                "what": "foreign investment flows",
-                "effect": "Higher US rates could prompt foreign investors to move money out of Indian shares, which may add to volatility in market values.",
+                "direction": "down",
+                "what": "foreign investor outflows",
+                "effect": "Higher US rates could draw foreign money out of Indian shares, which may weigh on market prices.",
                 "basis": "inferred"
               },
               {
-                "group": "Importers & traders",
-                "direction": "down",
-                "what": "rupee cost of imports",
-                "effect": "If higher US rates weaken the rupee, Indian importers may pay more in rupees for goods priced in dollars.",
+                "group": "Students abroad",
+                "direction": "up",
+                "what": "cost of dollar expenses",
+                "effect": "If the rupee weakens against the dollar, families paying US tuition and living costs could need more rupees.",
+                "basis": "inferred"
+              },
+              {
+                "group": "IT & services workers",
+                "direction": "mixed",
+                "what": "US client demand",
+                "effect": "Strong US growth from the artificial intelligence boom could support demand for Indian technology services, while market turbulence may make clients cautious.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "The Federal Reserve's interest rate decision at its next policy meeting",
-                "why": "It would confirm whether the expected rate rise happens and how firmly the Fed signals further increases.",
-                "when": "December 2026",
-                "where": "Federal Reserve"
+                "what": "The Federal Reserve's interest-rate decision at its meeting next month",
+                "why": "A rate rise would confirm tighter US policy that can pull capital away from India and pressure the rupee.",
+                "when": "next month",
+                "where": "US Federal Reserve"
+              },
+              {
+                "what": "Movement of the rupee against the US dollar ahead of the Fed decision",
+                "why": "It would show whether expectations of higher US rates are already reaching Indian markets.",
+                "when": "",
+                "where": "Reserve Bank of India"
               }
             ],
             "context": [
-              "The Federal Reserve sets US interest rates, and its decisions influence global borrowing costs and the flow of capital between countries.",
-              "The Reserve Bank of India sets its own rates, but it watches US policy because large capital outflows can unsettle the rupee and Indian markets."
+              "Changes in US interest rates influence global capital flows because many investors compare returns across countries and move money towards higher, safer yields.",
+              "India imports most of its crude oil and pays in dollars, so a weaker rupee raises the cost of fuel imports.",
+              "Indian information technology firms earn a large share of their revenue from US clients, so US economic conditions affect their business."
             ],
             "terms": [
               {
                 "term": "Federal Reserve",
-                "meaning": "The Federal Reserve is the central bank of the United States, and it sets the country's main policy interest rate."
+                "meaning": "The central bank of the United States, which sets US interest rates to manage inflation and employment."
               }
             ],
             "frameworks": {
               "decoder": {
-                "kind": "decision",
-                "headline": null,
+                "kind": "release",
+                "headline": {
+                  "label": "US inflation reading",
+                  "value": null,
+                  "unit": "",
+                  "period": "",
+                  "previous": null,
+                  "previousLabel": "",
+                  "from": "The New York Times"
+                },
                 "comparisons": [],
                 "drivers": [
                   {
-                    "name": "Persistent hot inflation readings",
+                    "name": "Artificial intelligence boom",
                     "direction": "up",
-                    "how": "Another hot inflation reading has kept the Federal Reserve on track to raise interest rates again, according to The New York Times."
+                    "how": "The artificial intelligence boom helped the US economy grow rapidly in the summer and early autumn, and it is also fuelling higher inflation."
                   }
                 ],
-                "decision": {
-                  "action": "hike",
-                  "size": "Not reported",
-                  "stance": "The Federal Reserve is widely expected to raise rates next month after another hot inflation reading. No decision has yet been announced, and the size of the expected increase is not given."
-                }
+                "decision": null
               }
-            }
+            },
+            "reading": [
+              {
+                "headline": "Inflation isn't going away. Here's what that means for interest rates.",
+                "url": "https://www.cbsnews.com/news/interest-rates-federal-reserve-inflation/",
+                "source": "cbs",
+                "date": "2026-11-13T20:19:31.000Z"
+              },
+              {
+                "headline": "The Fed Has to Raise Rates. How Fast to Go Has Officials Divided.",
+                "url": "https://www.nytimes.com/2026/11/11/business/fed-interest-rates-inflation.html",
+                "source": "nyt",
+                "date": "2026-11-11T13:40:22.000Z"
+              }
+            ]
           },
           "place": {
             "name": "Washington",
@@ -65824,6 +66299,15 @@
               "summary": "The Federal Reserve is widely expected to raise interest rates next month.",
               "summaryV": 3,
               "image": "https://static01.nyt.com/images/2026/11/25/multimedia/25dc-inflation-gvjc/25dc-inflation-gvjc-mediumSquareAt3X.jpg"
+            },
+            {
+              "source": "npr",
+              "headline": "Inflation is still hot, fueled in part by the AI boom",
+              "url": "https://www.npr.org/2026/11/25/nx-s1-6053958/inflation-is-still-hot-fueled-in-part-by-the-ai-boom",
+              "date": "2026-11-25T22:04:36.000Z",
+              "kind": "hard",
+              "summary": "The U.S. economy grew at a rapid clip during the summer and early fall, due in part to the artificial intelligence boom. That boom is also fueling higher inflation and rattling the stock market.",
+              "summaryV": 3
             }
           ],
           "stats": {
@@ -76453,6 +76937,339 @@
       "name": "Technology",
       "items": [
         {
+          "id": "s1akznn5",
+          "headline": "US to blacklist Asian AI firm Megaspeed after Nvidia scandal",
+          "url": "https://www.bbc.co.uk/news/articles/cv98xpg5dg5zo",
+          "source": "bbc",
+          "date": "2026-11-23T23:16:08.000Z",
+          "relevance": "medium",
+          "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/4a66/live/7c413f70-e78a-11f1-a5c2-c57ab9df3111.jpg",
+          "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/4a66/live/7c413f70-e78a-11f1-a5c2-c57ab9df3111.jpg",
+          "why": "The US Commerce Department has added Singapore-based Megaspeed, its subsidiaries in Thailand and Malaysia, and six other entities to its trade blacklist. The reason is concern that advanced AI chips were diverted to China. India is affected only indirectly, through tighter scrutiny of Asian chip supply routes.",
+          "implications": [
+            "Megaspeed has subsidiaries in Thailand and Malaysia, so the action reaches beyond one firm into Southeast Asian distribution networks that serve buyers across the wider region.",
+            "Chip suppliers may respond by running stricter checks on any Asian customer seeking advanced computing products, which could slow purchases by Indian firms building data centres or AI services.",
+            "The listing followed weeks of disagreement among senior US officials, which suggests that Washington's export-control decisions can be contested and slow to settle.",
+            "The case is tied to a scandal involving Nvidia, the leading AI chip designer, so the company's sales practices in Asia may face closer official attention."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-24T02:27:33.132Z",
+            "tier": "deep",
+            "primary": "impact_chain",
+            "complement": "winners_losers",
+            "features": [],
+            "exposure": {
+              "level": "low",
+              "reason": "No Indian company is named in the action. The only channel is a possible tightening of checks on advanced chip sales across Asia, which could indirectly affect Indian buyers."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "Any effect on Indian buyers depends on suppliers gradually changing their customer checks, which would take months rather than days."
+            },
+            "confidence": {
+              "level": "high",
+              "reason": "Five outlets, including BBC, The New York Times and CNBC, agree, backed by an official US Commerce Department notice; the underlying spying allegations remain unproven."
+            },
+            "outlets": 5,
+            "affected": [
+              {
+                "group": "Importers & traders",
+                "direction": "up",
+                "what": "checks on advanced chip purchases",
+                "effect": "Indian firms that source advanced chips through Asian distributors could face more paperwork and verification as suppliers try to avoid breaching US export rules.",
+                "basis": "inferred"
+              },
+              {
+                "group": "IT & services workers",
+                "direction": "unclear",
+                "what": "access to AI computing hardware",
+                "effect": "Indian AI and data-centre projects could see slower hardware deliveries if chip sales across Asia face tighter scrutiny, though no such delay has been reported.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Further US Commerce Department additions of Asian chip distributors to the entity list",
+                "why": "More listings would show whether Washington is widening its scrutiny of chip supply routes that also serve Indian buyers.",
+                "when": "",
+                "where": "US Commerce Department, Bureau of Industry and Security"
+              },
+              {
+                "what": "Changes by Nvidia or other chip suppliers to how they vet Asian customers",
+                "why": "Stricter vetting would signal that the action is reaching ordinary buyers, including Indian firms, beyond the blacklisted companies.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "Being placed on the US entity list generally means American firms need a government licence to supply the listed company, and such licences are usually hard to obtain.",
+              "The United States has for several years restricted exports of its most advanced AI chips to China, and it watches for chips reaching China through third countries.",
+              "India relies on imports for advanced semiconductors and is trying to build domestic chip manufacturing and AI computing capacity, so access to high-end chips matters to its technology plans."
+            ],
+            "terms": [
+              {
+                "term": "entity list",
+                "meaning": "A US government trade blacklist of foreign companies that American suppliers cannot sell certain goods or technology to without a special licence."
+              },
+              {
+                "term": "export control list",
+                "meaning": "Rules under which a government restricts which sensitive goods, such as advanced chips, may be sold abroad and to whom."
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "US blacklists Megaspeed and six others",
+                    "detail": "The US Commerce Department added Singapore-based Megaspeed, its Thai and Malaysian subsidiaries, and six other entities to its export control list after weeks of debate among senior officials.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Concern over chips diverted to China",
+                    "detail": "Washington acted over concern that advanced computing products, including AI chips, were being funnelled to China through intermediaries. This turns attention to how chips move through Southeast Asian hubs.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Suppliers may tighten checks across Asia",
+                    "detail": "Chip makers and distributors may examine Asian customers more closely to avoid penalties. That could raise compliance demands on all regional buyers, not only those suspected of diversion.",
+                    "basis": "inferred"
+                  },
+                  {
+                    "step": "Indian chip buyers could face delays",
+                    "detail": "Indian firms building data centres and AI services could face longer verification and slower deliveries of advanced chips if supplier scrutiny widens.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The effect would not reach India if suppliers confine extra scrutiny to the listed firms and Indian buyers continue to obtain advanced chips through established channels without new checks."
+              },
+              "winners_losers": {
+                "groups": [
+                  {
+                    "group": "Importers & traders",
+                    "direction": "lose",
+                    "directness": "indirect",
+                    "mechanism": "The US move against an Asian chip intermediary may lead suppliers to demand more documentation from regional buyers. That could add cost and time for Indian firms importing advanced computing hardware."
+                  },
+                  {
+                    "group": "IT & services workers",
+                    "direction": "unclear",
+                    "directness": "indirect",
+                    "mechanism": "Indian AI and data-centre projects rely on imported advanced chips. Any slowdown in chip access caused by tighter US scrutiny of Asian supply routes could affect project timelines, though none has been reported."
+                  }
+                ],
+                "not_affected": "Indian households buying ordinary phones and laptops are unlikely to be affected, because the action targets the diversion of advanced AI computing products, not everyday consumer electronics."
+              }
+            }
+          },
+          "place": {
+            "name": "Washington",
+            "country": "United States",
+            "lat": 38.9,
+            "lon": -77,
+            "involves": [
+              "China",
+              "Singapore"
+            ]
+          },
+          "reports": [
+            {
+              "source": "bbc",
+              "headline": "US to blacklist Asian AI firm Megaspeed after Nvidia scandal",
+              "url": "https://www.bbc.co.uk/news/articles/cv98xpg5dg5zo",
+              "date": "2026-11-23T23:16:08.000Z",
+              "kind": "hard",
+              "summary": "Megaspeed has been accused of funneling AI chips to China after a former executive's affair with Jensen Huang became public.",
+              "summaryV": 3,
+              "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/4a66/live/7c413f70-e78a-11f1-a5c2-c57ab9df3111.jpg",
+              "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/4a66/live/7c413f70-e78a-11f1-a5c2-c57ab9df3111.jpg"
+            },
+            {
+              "source": "nyt",
+              "headline": "Trump Administration Imposes Sanctions on Megaspeed, Singaporean Firm at Center of Nvidia Scandal",
+              "url": "https://www.nytimes.com/2026/11/23/business/trump-administration-megaspeed-trade-blacklist-nvidia.html",
+              "date": "2026-11-23T23:18:58.000Z",
+              "kind": "hard",
+              "summary": "The administration added Megaspeed to the entity list, a trade blacklist, after weeks of sparring among top officials on the decision.",
+              "summaryV": 3,
+              "image": "https://static01.nyt.com/images/2026/11/23/multimedia/23nvidia-megaspeed-wltb/23nvidia-megaspeed-wltb-mediumSquareAt3X.jpg"
+            },
+            {
+              "source": "aljazeera",
+              "headline": "US adds Megaspeed, firm at centre of Nvidia scandal, to export control list",
+              "url": "https://www.aljazeera.com/economy/2026/11/24/us-adds-megaspeed-firm-at-centre-of-nvidia-scandal-to-export-control-list",
+              "date": "2026-11-24T00:52:47.000Z",
+              "kind": "hard",
+              "summary": "Bureau of Security and Industry adds Singapore-based firm and six other entities to export control list.",
+              "summaryV": 3
+            },
+            {
+              "source": "guardian",
+              "headline": "US adds Megaspeed, AI firm at center of Nvidia scandal, to trade blacklist",
+              "url": "https://www.theguardian.com/us-news/2026/nov/23/megaspeed-us-trade-blacklist-nvidia",
+              "date": "2026-11-24T01:47:15.000Z",
+              "kind": "hard",
+              "summary": "Singapore-based company entangled in scandal over alleged spy Alice Huang’s affair with Jensen Huang",
+              "summaryV": 3,
+              "lede": "The US commerce department published an official notice on Monday adding the Singapore-based company Megaspeed, and its subsidiaries in Thailand and Malaysia, to a trade blacklist.",
+              "image": "https://i.guim.co.uk/img/media/c0617e3a04f0554259687e37ed2a80796ad3a623/0_0_3750_3000/master/3750.jpg?width=700&quality=85&auto=format&fit=max&s=14f3a6b32afa405362da5efbeadbc5e3"
+            },
+            {
+              "source": "cnbc",
+              "headline": "U.S. adds Megaspeed to trade blacklist over export control concerns amid Nvidia controversy",
+              "url": "https://www.cnbc.com/2026/11/24/us-adds-megaspeed-to-trade-blacklist-over-export-control-concerns-.html",
+              "date": "2026-11-24T01:56:28.000Z",
+              "kind": "hard",
+              "summary": "The U.S. has added Megaspeed and six other companies to its trade blacklist over concerns about the potential diversion of advanced computing products.",
+              "summaryV": 3
+            },
+            {
+              "source": "cbs",
+              "headline": "U.S.-based firms helping China access Nvidia's most advanced chips",
+              "url": "https://www.cbsnews.com/news/nvidia-china-ai-chips-computing-sales/",
+              "date": "2026-11-25T23:10:00.000Z",
+              "kind": "investigative",
+              "summary": "It's not just Megaspeed. A CBS News investigation reveals that at least two California-based Nvidia customers have Chinese ownership — giving the U.S. adversary potential access to Nvidia's most advanced technology.",
+              "summaryV": 3
+            }
+          ],
+          "stats": {
+            "v": 2,
+            "at": "2026-11-24T02:26:13.364Z",
+            "series": [
+              {
+                "title": "India's imports of electronic components, by year",
+                "unit": "INR crore",
+                "publisher": "Ministry of Electronics & IT (data from DGCIS)",
+                "why": "This series shows how much India relies on imported electronic components, the kind of hardware that tighter US scrutiny of Asian chip shipments could make costlier or slower to get.",
+                "points": [
+                  {
+                    "period": "2019-20",
+                    "value": 115557,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1881410",
+                    "source": "Production of Electronic Goods"
+                  },
+                  {
+                    "period": "2020-21",
+                    "value": 112927,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1881410",
+                    "source": "Production of Electronic Goods"
+                  },
+                  {
+                    "period": "2021-22",
+                    "value": 193745,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1881410",
+                    "source": "Production of Electronic Goods"
+                  }
+                ],
+                "dropped": 0,
+                "sources": [
+                  {
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1881410",
+                    "title": "Production of Electronic Goods",
+                    "domain": "pib.gov.in"
+                  }
+                ],
+                "domains": [
+                  "pib.gov.in"
+                ]
+              }
+            ]
+          },
+          "thread": "tjdsk7n"
+        },
+        {
+          "id": "s12qm14v",
+          "headline": "How Jensen Huang’s Nvidia return could deepen US rift over China chip curbs",
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3375631/how-jensen-huangs-nvidia-return-could-deepen-us-rift-over-china-chip-curbs",
+          "source": "scmp",
+          "date": "2026-11-24T14:00:06.000Z",
+          "relevance": "medium",
+          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/24/d67adf04-1e00-4c5e-98d2-ba34002cf3ad_aa390131.jpg?itok=ViYDITwj&v=1795517881",
+          "why": "",
+          "implications": [],
+          "place": {
+            "name": "Washington",
+            "country": "United States",
+            "lat": 38.9,
+            "lon": -77,
+            "involves": [
+              "China"
+            ]
+          },
+          "reports": [
+            {
+              "source": "scmp",
+              "headline": "How Jensen Huang’s Nvidia return could deepen US rift over China chip curbs",
+              "url": "https://www.scmp.com/news/china/diplomacy/article/3375631/how-jensen-huangs-nvidia-return-could-deepen-us-rift-over-china-chip-curbs",
+              "date": "2026-11-24T14:00:06.000Z",
+              "kind": "feature",
+              "summary": "Jensen Huang’s return as Nvidia CEO could complicate Washington’s China policy, widening the gap between a White House keen to steady ties with Beijing and an incoming Democratic-led Congress poised to tighten chip curbs.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/24/d67adf04-1e00-4c5e-98d2-ba34002cf3ad_aa390131.jpg?itok=ViYDITwj&v=1795517881"
+            },
+            {
+              "source": "cnbc",
+              "headline": "Jensen Huang to face DC grilling the same day Nvidia releases new products at GTC",
+              "url": "https://www.cnbc.com/2026/11/24/jensen-huang-nvidia-congress-gtc.html",
+              "date": "2026-11-24T17:51:45.000Z",
+              "kind": "hard",
+              "summary": "Jensen Huang is back as CEO of Nvidia and immediately faces the challenge of leading the chip giant and defending himself in Washington.",
+              "summaryV": 3
+            },
+            {
+              "source": "abc",
+              "headline": "Republican China hawks challenge Trump over Huang's Nvidia return",
+              "url": "https://www.abc.net.au/news/2026-11-25/republicans-challenge-trump-over-huang-nvidia-return/107423590",
+              "date": "2026-11-24T19:14:55.000Z",
+              "kind": "hard",
+              "summary": "Donald Trump claims credit for Jensen Huang's return to the AI giant, but the controversy sees Republicans join forces with Democrats to demand an investigation into the administration's ties to the company.",
+              "summaryV": 3,
+              "image": "https://live-production.wcms.abc-cdn.net.au/77e89bca8e6231add2251af7fa92e69f?impolicy=wcms_crop_resize&cropH=1915&cropW=3405&xPos=0&yPos=177&width=862&height=485"
+            },
+            {
+              "source": "nyt",
+              "headline": "National Security vs. the Stock Market",
+              "url": "https://www.nytimes.com/2026/11/24/world/nvidia-trump-stocks-china-books.html",
+              "date": "2026-11-24T20:56:04.000Z",
+              "kind": "feature",
+              "summary": "President Trump swept aside concerns about possible espionage when he lobbied Nvidia’s board to reinstate Jensen Huang as chief executive.",
+              "summaryV": 3,
+              "image": "https://static01.nyt.com/images/2026/11/25/multimedia/25int-theworld-nvidia-trump-01-alt-fphm-promo/25int-theworld-nvidia-trump-01-alt-fphm-promo-mediumSquareAt3X.jpg"
+            },
+            {
+              "source": "scmp",
+              "headline": "Jensen Huang’s return steadies Nvidia, but China curbs, US scrutiny show no sign of easing",
+              "url": "https://www.scmp.com/tech/big-tech/article/3375632/jensen-huangs-return-steadies-nvidia-china-curbs-us-scrutiny-show-no-sign-easing",
+              "date": "2026-11-25T03:00:17.000Z",
+              "kind": "hard",
+              "summary": "Jensen Huang’s return as Nvidia’s CEO may steady the chipmaker’s leadership and calm jitters across the global artificial intelligence supply chain, but it is unlikely to ease US export restrictions on China as national security scrutiny in Washington intensifies, analysts say.",
+              "summaryV": 3,
+              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/24/148dbe71-21f2-4956-a193-c11e9c8c6c21_49b8f085.jpg?itok=v46lBZdN&v=1795517972"
+            },
+            {
+              "source": "abc",
+              "headline": "As Nvidia's 'king' returns, reports of a chip 'underworld' to China emerge",
+              "url": "https://www.abc.net.au/news/2026-11-25/nvidia-megaspeed-jensen-huang-alice-huang-scandal-explained/107421600",
+              "date": "2026-11-25T03:43:00.000Z",
+              "kind": "investigative",
+              "summary": "Jensen Huang's return to Nvidia has been celebrated in China and Taiwan, while Western media probes how US chips may have circumvented export rules to get to Chinese customers.",
+              "summaryV": 3,
+              "image": "https://live-production.wcms.abc-cdn.net.au/4fbf262ad5ee76d928e631143d2a6186?impolicy=wcms_crop_resize&cropH=1688&cropW=3000&xPos=0&yPos=156&width=862&height=485"
+            },
+            {
+              "source": "npr",
+              "headline": "How Jensen Huang's return as NVIDIA's CEO is going over in China",
+              "url": "https://www.npr.org/2026/11/25/nx-s1-6053915/how-jensen-huangs-return-as-nvidias-ceo-is-going-over-in-china",
+              "date": "2026-11-25T23:01:09.000Z",
+              "kind": "hard",
+              "summary": "In China, Jensen Huang's return as Nvidia CEO is being met with a mixed reaction – as Beijing weighs whether it wants the US company's chips at all.",
+              "summaryV": 3
+            }
+          ],
+          "thread": "tjdsk7n"
+        },
+        {
           "id": "s84wbhu",
           "headline": "Nvidia sellers seek new buyers as U.S. curbs China AI chip access, sources tell CNBC",
           "url": "https://www.cnbc.com/2026/11/25/nvidia-china-ai-chip-remote-access.html",
@@ -77011,165 +77828,102 @@
           "thread": "tnpjqny"
         },
         {
-          "id": "s12qm14v",
-          "headline": "How Jensen Huang’s Nvidia return could deepen US rift over China chip curbs",
-          "url": "https://www.scmp.com/news/china/diplomacy/article/3375631/how-jensen-huangs-nvidia-return-could-deepen-us-rift-over-china-chip-curbs",
-          "source": "scmp",
-          "date": "2026-11-24T14:00:06.000Z",
-          "relevance": "medium",
-          "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/24/d67adf04-1e00-4c5e-98d2-ba34002cf3ad_aa390131.jpg?itok=ViYDITwj&v=1795517881",
-          "why": "",
-          "implications": [],
-          "place": {
-            "name": "Washington",
-            "country": "United States",
-            "lat": 38.9,
-            "lon": -77,
-            "involves": [
-              "China"
-            ]
-          },
-          "reports": [
-            {
-              "source": "scmp",
-              "headline": "How Jensen Huang’s Nvidia return could deepen US rift over China chip curbs",
-              "url": "https://www.scmp.com/news/china/diplomacy/article/3375631/how-jensen-huangs-nvidia-return-could-deepen-us-rift-over-china-chip-curbs",
-              "date": "2026-11-24T14:00:06.000Z",
-              "kind": "feature",
-              "summary": "Jensen Huang’s return as Nvidia CEO could complicate Washington’s China policy, widening the gap between a White House keen to steady ties with Beijing and an incoming Democratic-led Congress poised to tighten chip curbs.",
-              "summaryV": 3,
-              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/24/d67adf04-1e00-4c5e-98d2-ba34002cf3ad_aa390131.jpg?itok=ViYDITwj&v=1795517881"
-            },
-            {
-              "source": "cnbc",
-              "headline": "Jensen Huang to face DC grilling the same day Nvidia releases new products at GTC",
-              "url": "https://www.cnbc.com/2026/11/24/jensen-huang-nvidia-congress-gtc.html",
-              "date": "2026-11-24T17:51:45.000Z",
-              "kind": "hard",
-              "summary": "Jensen Huang is back as CEO of Nvidia and immediately faces the challenge of leading the chip giant and defending himself in Washington.",
-              "summaryV": 3
-            },
-            {
-              "source": "abc",
-              "headline": "Republican China hawks challenge Trump over Huang's Nvidia return",
-              "url": "https://www.abc.net.au/news/2026-11-25/republicans-challenge-trump-over-huang-nvidia-return/107423590",
-              "date": "2026-11-24T19:14:55.000Z",
-              "kind": "hard",
-              "summary": "Donald Trump claims credit for Jensen Huang's return to the AI giant, but the controversy sees Republicans join forces with Democrats to demand an investigation into the administration's ties to the company.",
-              "summaryV": 3,
-              "image": "https://live-production.wcms.abc-cdn.net.au/77e89bca8e6231add2251af7fa92e69f?impolicy=wcms_crop_resize&cropH=1915&cropW=3405&xPos=0&yPos=177&width=862&height=485"
-            },
-            {
-              "source": "nyt",
-              "headline": "National Security vs. the Stock Market",
-              "url": "https://www.nytimes.com/2026/11/24/world/nvidia-trump-stocks-china-books.html",
-              "date": "2026-11-24T20:56:04.000Z",
-              "kind": "feature",
-              "summary": "President Trump swept aside concerns about possible espionage when he lobbied Nvidia’s board to reinstate Jensen Huang as chief executive.",
-              "summaryV": 3,
-              "image": "https://static01.nyt.com/images/2026/11/25/multimedia/25int-theworld-nvidia-trump-01-alt-fphm-promo/25int-theworld-nvidia-trump-01-alt-fphm-promo-mediumSquareAt3X.jpg"
-            },
-            {
-              "source": "scmp",
-              "headline": "Jensen Huang’s return steadies Nvidia, but China curbs, US scrutiny show no sign of easing",
-              "url": "https://www.scmp.com/tech/big-tech/article/3375632/jensen-huangs-return-steadies-nvidia-china-curbs-us-scrutiny-show-no-sign-easing",
-              "date": "2026-11-25T03:00:17.000Z",
-              "kind": "hard",
-              "summary": "Jensen Huang’s return as Nvidia’s CEO may steady the chipmaker’s leadership and calm jitters across the global artificial intelligence supply chain, but it is unlikely to ease US export restrictions on China as national security scrutiny in Washington intensifies, analysts say.",
-              "summaryV": 3,
-              "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/24/148dbe71-21f2-4956-a193-c11e9c8c6c21_49b8f085.jpg?itok=v46lBZdN&v=1795517972"
-            },
-            {
-              "source": "abc",
-              "headline": "As Nvidia's 'king' returns, reports of a chip 'underworld' to China emerge",
-              "url": "https://www.abc.net.au/news/2026-11-25/nvidia-megaspeed-jensen-huang-alice-huang-scandal-explained/107421600",
-              "date": "2026-11-25T03:43:00.000Z",
-              "kind": "investigative",
-              "summary": "Jensen Huang's return to Nvidia has been celebrated in China and Taiwan, while Western media probes how US chips may have circumvented export rules to get to Chinese customers.",
-              "summaryV": 3,
-              "image": "https://live-production.wcms.abc-cdn.net.au/4fbf262ad5ee76d928e631143d2a6186?impolicy=wcms_crop_resize&cropH=1688&cropW=3000&xPos=0&yPos=156&width=862&height=485"
-            }
-          ],
-          "thread": "tjdsk7n"
-        },
-        {
           "id": "s1nryr3v",
           "headline": "U.S. jury convicts Huawei in a criminal trial over fraud and trade secrets",
           "url": "https://www.cnbc.com/2026/11/25/huawei-fraud-trade-trial.html",
           "source": "cnbc",
           "date": "2026-11-25T02:43:33.000Z",
           "relevance": "medium",
-          "why": "A U.S. jury has convicted Chinese telecom maker Huawei of bank fraud, money laundering and conspiracy to steal trade secrets. India already keeps Huawei out of key networks, so any effect is indirect and works through policy attitudes.",
+          "why": "A US jury convicted Huawei on 10 of 12 criminal counts, including bank fraud, money laundering and trade secret theft conspiracy. India's direct exposure is limited, but the verdict may reinforce scrutiny of the Chinese firm by governments and banks.",
           "implications": [
-            "The verdict could strengthen the case in India and other countries for continuing to restrict Chinese suppliers in sensitive telecom and digital infrastructure.",
-            "Indian telecom operators and equipment buyers could face more caution from Western partners and lenders about links to Chinese vendors, though the reports do not describe any such step."
+            "The charges include deceiving banks about Huawei's business in Iran, so banks worldwide, including Indian lenders, may face closer questions about sanctions compliance when dealing with the company.",
+            "The conviction could strengthen arguments in India for keeping Chinese telecom equipment out of sensitive networks, supporting policies that already favour approved vendors.",
+            "Indian companies that buy Huawei devices or components could face closer checks from partners concerned about legal or reputational risk."
           ],
           "analysis": {
             "v": 3,
-            "at": "2026-11-25T08:52:48.850Z",
-            "tier": "quick",
+            "at": "2026-11-26T03:42:57.279Z",
+            "tier": "standard",
             "primary": "impact_chain",
             "complement": null,
             "features": [],
             "exposure": {
               "level": "low",
-              "reason": "The reports describe a U.S. court verdict with no direct link to India. Any channel runs only through telecom vendor policy and U.S.–China tech tensions, which affect a narrow set of buyers."
+              "reason": "The verdict reaches India only indirectly, through bank compliance and telecom vendor policy, and India already restricts Huawei in its 5G network."
             },
             "horizon": {
-              "value": "years",
-              "reason": "Legal follow-up in the United States and any change in Indian telecom procurement or policy attitudes would unfold slowly."
+              "value": "months",
+              "reason": "Any effect depends on sentencing, penalties and policy responses, none of which have been scheduled in the reports."
             },
             "confidence": {
-              "level": "low",
-              "reason": "This rests on a single CNBC summary with no named official source, and details of the charges, penalties and any appeal are not given."
+              "level": "medium",
+              "reason": "CNBC and The Guardian report the verdict, with the US attorney general on record; penalties and Huawei's response have not been reported."
             },
-            "outlets": 1,
+            "outlets": 2,
             "affected": [
+              {
+                "group": "IT & services workers",
+                "direction": "unclear",
+                "what": "Huawei business links",
+                "effect": "Indian technology firms and staff working with Huawei could face more caution from partners if the verdict raises legal or reputational concerns.",
+                "basis": "inferred"
+              },
               {
                 "group": "Importers & traders",
                 "direction": "unclear",
-                "what": "telecom equipment sourcing",
-                "effect": "Firms that buy or supply network equipment may face tighter scrutiny of Chinese-linked products, although India already restricts Huawei and no new Indian rule is reported.",
+                "what": "compliance checks on Huawei goods",
+                "effect": "Traders importing Huawei products could face closer checks from banks wary of the bank fraud and Iran-related findings.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "Announcement of sentencing, penalties or an appeal by Huawei following the jury verdict",
-                "why": "It would show how severe the consequences are and how strongly the United States presses other countries on Chinese vendors.",
+                "what": "Sentencing and penalties imposed on Huawei by the US court",
+                "why": "The size of penalties would show how heavily the verdict weighs on Huawei's global business and partners.",
                 "when": "",
-                "where": "U.S. Department of Justice"
+                "where": "US Department of Justice"
+              },
+              {
+                "what": "Any statement by Indian authorities on Huawei or trusted telecom vendors",
+                "why": "It would show whether the verdict changes India's approach to Chinese telecom equipment.",
+                "when": "",
+                "where": "Department of Telecommunications"
               }
             ],
             "context": [
-              "Rivalry between the United States and China over technology shapes how Indian firms choose suppliers and where global manufacturers choose to build."
+              "US cases against Chinese technology firms often lead allied governments and companies to review their dealings with those firms because of security and sanctions concerns."
             ],
             "terms": [
               {
                 "term": "trade secret theft conspiracy",
-                "meaning": "An agreement between people or entities to take a competitor's confidential business or technical information without permission, which is a crime under U.S. law."
+                "meaning": "A criminal charge that a company agreed with others to steal confidential business information, such as technology designs, from competitors."
               }
             ],
             "frameworks": {
               "impact_chain": {
                 "chain": [
                   {
-                    "step": "U.S. jury convicts Huawei",
-                    "detail": "A U.S. jury found Huawei guilty of bank fraud, money laundering and conspiracy to steal trade secrets in a criminal trial.",
+                    "step": "US jury convicts Huawei",
+                    "detail": "A US jury found Huawei guilty on 10 of 12 counts, including bank fraud, money laundering and trade secret theft conspiracy. The US attorney general said no company is above the law.",
                     "basis": "reported"
                   },
                   {
-                    "step": "Fraud and theft findings damage trust",
-                    "detail": "A criminal conviction on fraud and trade secret charges adds to Western doubts about Huawei, which may influence how governments and companies view Chinese telecom suppliers.",
+                    "step": "Iran dealings and banks in focus",
+                    "detail": "Huawei was found to have deceived banks about its business in Iran. This puts the spotlight on how banks check customers for sanctions risk.",
                     "basis": "reported"
                   },
                   {
-                    "step": "Indian caution toward Chinese vendors",
-                    "detail": "The verdict could reinforce India's existing reluctance to let Chinese suppliers into sensitive telecom networks, with little change in practice because Huawei is already excluded.",
+                    "step": "Partners may tighten scrutiny",
+                    "detail": "Banks and companies worldwide could become more cautious about dealing with Huawei. Governments may cite the verdict to justify limits on Chinese telecom equipment.",
+                    "basis": "inferred"
+                  },
+                  {
+                    "step": "Indian firms may review links",
+                    "detail": "Indian banks, traders and technology firms with Huawei ties could face closer compliance checks. Existing Indian curbs on Huawei in telecom networks may be reinforced.",
                     "basis": "inferred"
                   }
                 ],
-                "breaks_if": "Indian policymakers and telecom operators treat the verdict as a purely U.S. legal matter, leaving India's existing vendor rules and supplier choices unchanged."
+                "breaks_if": "The effect would stop short of India if the conviction is overturned on appeal or if penalties remain confined to Huawei's US operations."
               }
             }
           },
@@ -77571,239 +78325,6 @@
               "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/24/24d20acd-e916-44f9-9ce3-f66af6e23fb4_1edfec8a.jpg?itok=Jfx4XlkB&v=1795493210"
             }
           ],
-          "thread": "tjdsk7n"
-        },
-        {
-          "id": "s1akznn5",
-          "headline": "US to blacklist Asian AI firm Megaspeed after Nvidia scandal",
-          "url": "https://www.bbc.co.uk/news/articles/cv98xpg5dg5zo",
-          "source": "bbc",
-          "date": "2026-11-23T23:16:08.000Z",
-          "relevance": "medium",
-          "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/4a66/live/7c413f70-e78a-11f1-a5c2-c57ab9df3111.jpg",
-          "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/4a66/live/7c413f70-e78a-11f1-a5c2-c57ab9df3111.jpg",
-          "why": "The US Commerce Department has added Singapore-based Megaspeed, its subsidiaries in Thailand and Malaysia, and six other entities to its trade blacklist. The reason is concern that advanced AI chips were diverted to China. India is affected only indirectly, through tighter scrutiny of Asian chip supply routes.",
-          "implications": [
-            "Megaspeed has subsidiaries in Thailand and Malaysia, so the action reaches beyond one firm into Southeast Asian distribution networks that serve buyers across the wider region.",
-            "Chip suppliers may respond by running stricter checks on any Asian customer seeking advanced computing products, which could slow purchases by Indian firms building data centres or AI services.",
-            "The listing followed weeks of disagreement among senior US officials, which suggests that Washington's export-control decisions can be contested and slow to settle.",
-            "The case is tied to a scandal involving Nvidia, the leading AI chip designer, so the company's sales practices in Asia may face closer official attention."
-          ],
-          "analysis": {
-            "v": 3,
-            "at": "2026-11-24T02:27:33.132Z",
-            "tier": "deep",
-            "primary": "impact_chain",
-            "complement": "winners_losers",
-            "features": [],
-            "exposure": {
-              "level": "low",
-              "reason": "No Indian company is named in the action. The only channel is a possible tightening of checks on advanced chip sales across Asia, which could indirectly affect Indian buyers."
-            },
-            "horizon": {
-              "value": "months",
-              "reason": "Any effect on Indian buyers depends on suppliers gradually changing their customer checks, which would take months rather than days."
-            },
-            "confidence": {
-              "level": "high",
-              "reason": "Five outlets, including BBC, The New York Times and CNBC, agree, backed by an official US Commerce Department notice; the underlying spying allegations remain unproven."
-            },
-            "outlets": 5,
-            "affected": [
-              {
-                "group": "Importers & traders",
-                "direction": "up",
-                "what": "checks on advanced chip purchases",
-                "effect": "Indian firms that source advanced chips through Asian distributors could face more paperwork and verification as suppliers try to avoid breaching US export rules.",
-                "basis": "inferred"
-              },
-              {
-                "group": "IT & services workers",
-                "direction": "unclear",
-                "what": "access to AI computing hardware",
-                "effect": "Indian AI and data-centre projects could see slower hardware deliveries if chip sales across Asia face tighter scrutiny, though no such delay has been reported.",
-                "basis": "inferred"
-              }
-            ],
-            "watch": [
-              {
-                "what": "Further US Commerce Department additions of Asian chip distributors to the entity list",
-                "why": "More listings would show whether Washington is widening its scrutiny of chip supply routes that also serve Indian buyers.",
-                "when": "",
-                "where": "US Commerce Department, Bureau of Industry and Security"
-              },
-              {
-                "what": "Changes by Nvidia or other chip suppliers to how they vet Asian customers",
-                "why": "Stricter vetting would signal that the action is reaching ordinary buyers, including Indian firms, beyond the blacklisted companies.",
-                "when": "",
-                "where": ""
-              }
-            ],
-            "context": [
-              "Being placed on the US entity list generally means American firms need a government licence to supply the listed company, and such licences are usually hard to obtain.",
-              "The United States has for several years restricted exports of its most advanced AI chips to China, and it watches for chips reaching China through third countries.",
-              "India relies on imports for advanced semiconductors and is trying to build domestic chip manufacturing and AI computing capacity, so access to high-end chips matters to its technology plans."
-            ],
-            "terms": [
-              {
-                "term": "entity list",
-                "meaning": "A US government trade blacklist of foreign companies that American suppliers cannot sell certain goods or technology to without a special licence."
-              },
-              {
-                "term": "export control list",
-                "meaning": "Rules under which a government restricts which sensitive goods, such as advanced chips, may be sold abroad and to whom."
-              }
-            ],
-            "frameworks": {
-              "impact_chain": {
-                "chain": [
-                  {
-                    "step": "US blacklists Megaspeed and six others",
-                    "detail": "The US Commerce Department added Singapore-based Megaspeed, its Thai and Malaysian subsidiaries, and six other entities to its export control list after weeks of debate among senior officials.",
-                    "basis": "reported"
-                  },
-                  {
-                    "step": "Concern over chips diverted to China",
-                    "detail": "Washington acted over concern that advanced computing products, including AI chips, were being funnelled to China through intermediaries. This turns attention to how chips move through Southeast Asian hubs.",
-                    "basis": "reported"
-                  },
-                  {
-                    "step": "Suppliers may tighten checks across Asia",
-                    "detail": "Chip makers and distributors may examine Asian customers more closely to avoid penalties. That could raise compliance demands on all regional buyers, not only those suspected of diversion.",
-                    "basis": "inferred"
-                  },
-                  {
-                    "step": "Indian chip buyers could face delays",
-                    "detail": "Indian firms building data centres and AI services could face longer verification and slower deliveries of advanced chips if supplier scrutiny widens.",
-                    "basis": "inferred"
-                  }
-                ],
-                "breaks_if": "The effect would not reach India if suppliers confine extra scrutiny to the listed firms and Indian buyers continue to obtain advanced chips through established channels without new checks."
-              },
-              "winners_losers": {
-                "groups": [
-                  {
-                    "group": "Importers & traders",
-                    "direction": "lose",
-                    "directness": "indirect",
-                    "mechanism": "The US move against an Asian chip intermediary may lead suppliers to demand more documentation from regional buyers. That could add cost and time for Indian firms importing advanced computing hardware."
-                  },
-                  {
-                    "group": "IT & services workers",
-                    "direction": "unclear",
-                    "directness": "indirect",
-                    "mechanism": "Indian AI and data-centre projects rely on imported advanced chips. Any slowdown in chip access caused by tighter US scrutiny of Asian supply routes could affect project timelines, though none has been reported."
-                  }
-                ],
-                "not_affected": "Indian households buying ordinary phones and laptops are unlikely to be affected, because the action targets the diversion of advanced AI computing products, not everyday consumer electronics."
-              }
-            }
-          },
-          "place": {
-            "name": "Washington",
-            "country": "United States",
-            "lat": 38.9,
-            "lon": -77,
-            "involves": [
-              "China",
-              "Singapore"
-            ]
-          },
-          "reports": [
-            {
-              "source": "bbc",
-              "headline": "US to blacklist Asian AI firm Megaspeed after Nvidia scandal",
-              "url": "https://www.bbc.co.uk/news/articles/cv98xpg5dg5zo",
-              "date": "2026-11-23T23:16:08.000Z",
-              "kind": "hard",
-              "summary": "Megaspeed has been accused of funneling AI chips to China after a former executive's affair with Jensen Huang became public.",
-              "summaryV": 3,
-              "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/4a66/live/7c413f70-e78a-11f1-a5c2-c57ab9df3111.jpg",
-              "imageLarge": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/4a66/live/7c413f70-e78a-11f1-a5c2-c57ab9df3111.jpg"
-            },
-            {
-              "source": "nyt",
-              "headline": "Trump Administration Imposes Sanctions on Megaspeed, Singaporean Firm at Center of Nvidia Scandal",
-              "url": "https://www.nytimes.com/2026/11/23/business/trump-administration-megaspeed-trade-blacklist-nvidia.html",
-              "date": "2026-11-23T23:18:58.000Z",
-              "kind": "hard",
-              "summary": "The administration added Megaspeed to the entity list, a trade blacklist, after weeks of sparring among top officials on the decision.",
-              "summaryV": 3,
-              "image": "https://static01.nyt.com/images/2026/11/23/multimedia/23nvidia-megaspeed-wltb/23nvidia-megaspeed-wltb-mediumSquareAt3X.jpg"
-            },
-            {
-              "source": "aljazeera",
-              "headline": "US adds Megaspeed, firm at centre of Nvidia scandal, to export control list",
-              "url": "https://www.aljazeera.com/economy/2026/11/24/us-adds-megaspeed-firm-at-centre-of-nvidia-scandal-to-export-control-list",
-              "date": "2026-11-24T00:52:47.000Z",
-              "kind": "hard",
-              "summary": "Bureau of Security and Industry adds Singapore-based firm and six other entities to export control list.",
-              "summaryV": 3
-            },
-            {
-              "source": "guardian",
-              "headline": "US adds Megaspeed, AI firm at center of Nvidia scandal, to trade blacklist",
-              "url": "https://www.theguardian.com/us-news/2026/nov/23/megaspeed-us-trade-blacklist-nvidia",
-              "date": "2026-11-24T01:47:15.000Z",
-              "kind": "hard",
-              "summary": "Singapore-based company entangled in scandal over alleged spy Alice Huang’s affair with Jensen Huang",
-              "summaryV": 3,
-              "lede": "The US commerce department published an official notice on Monday adding the Singapore-based company Megaspeed, and its subsidiaries in Thailand and Malaysia, to a trade blacklist.",
-              "image": "https://i.guim.co.uk/img/media/c0617e3a04f0554259687e37ed2a80796ad3a623/0_0_3750_3000/master/3750.jpg?width=700&quality=85&auto=format&fit=max&s=14f3a6b32afa405362da5efbeadbc5e3"
-            },
-            {
-              "source": "cnbc",
-              "headline": "U.S. adds Megaspeed to trade blacklist over export control concerns amid Nvidia controversy",
-              "url": "https://www.cnbc.com/2026/11/24/us-adds-megaspeed-to-trade-blacklist-over-export-control-concerns-.html",
-              "date": "2026-11-24T01:56:28.000Z",
-              "kind": "hard",
-              "summary": "The U.S. has added Megaspeed and six other companies to its trade blacklist over concerns about the potential diversion of advanced computing products.",
-              "summaryV": 3
-            }
-          ],
-          "stats": {
-            "v": 2,
-            "at": "2026-11-24T02:26:13.364Z",
-            "series": [
-              {
-                "title": "India's imports of electronic components, by year",
-                "unit": "INR crore",
-                "publisher": "Ministry of Electronics & IT (data from DGCIS)",
-                "why": "This series shows how much India relies on imported electronic components, the kind of hardware that tighter US scrutiny of Asian chip shipments could make costlier or slower to get.",
-                "points": [
-                  {
-                    "period": "2019-20",
-                    "value": 115557,
-                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1881410",
-                    "source": "Production of Electronic Goods"
-                  },
-                  {
-                    "period": "2020-21",
-                    "value": 112927,
-                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1881410",
-                    "source": "Production of Electronic Goods"
-                  },
-                  {
-                    "period": "2021-22",
-                    "value": 193745,
-                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1881410",
-                    "source": "Production of Electronic Goods"
-                  }
-                ],
-                "dropped": 0,
-                "sources": [
-                  {
-                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1881410",
-                    "title": "Production of Electronic Goods",
-                    "domain": "pib.gov.in"
-                  }
-                ],
-                "domains": [
-                  "pib.gov.in"
-                ]
-              }
-            ]
-          },
           "thread": "tjdsk7n"
         },
         {
@@ -84802,6 +85323,38 @@
       "id": "manufacturing",
       "name": "Manufacturing",
       "items": [
+        {
+          "id": "s1tpgctp",
+          "headline": "Inside India newsletter: Roaring economy, foreign investors’ return and now record auto sales",
+          "url": "https://www.cnbc.com/2026/11/26/india-auto-slaes-economy-suzuki-hyundai-toyota.html",
+          "source": "cnbc",
+          "date": "2026-11-26T00:12:16.000Z",
+          "relevance": "medium",
+          "why": "",
+          "implications": [],
+          "place": {
+            "name": "India",
+            "country": "India",
+            "lat": 20.6,
+            "lon": 78.9
+          },
+          "reports": [
+            {
+              "source": "cnbc",
+              "headline": "Inside India newsletter: Roaring economy, foreign investors’ return and now record auto sales",
+              "url": "https://www.cnbc.com/2026/11/26/india-auto-slaes-economy-suzuki-hyundai-toyota.html",
+              "date": "2026-11-26T00:12:16.000Z",
+              "kind": "feature",
+              "summary": "Automakers in India are poised to sell over 30 million vehicles in the financial year ending March 2027.",
+              "summaryV": 3,
+              "ogTried": true,
+              "descTried": true,
+              "image": "https://image.cnbcfm.com/api/v1/image/108559044-1795587106908-gettyimages-2291429429-INDIA_MARUTI_SUZUKI.jpeg?v=1795587125&w=1920&h=1080"
+            }
+          ],
+          "image": "https://image.cnbcfm.com/api/v1/image/108559044-1795587106908-gettyimages-2291429429-INDIA_MARUTI_SUZUKI.jpeg?v=1795587125&w=1920&h=1080",
+          "thread": "tnk9gph"
+        },
         {
           "id": "s1abqala",
           "headline": "Bangladesh garment workers win 36% pay rise after weeks of protest",
@@ -113005,14 +113558,14 @@
   "source": "BBC News & The Guardian & NPR & Al Jazeera & MercoPress & ABC News & The New York Times & CNBC & CBS News & DW & France 24 & Africanews & South China Morning Post & The Hindu & Mint & The Indian Express",
   "lastRun": {
     "filter": {
-      "judged": 231,
-      "kept": 35,
+      "judged": 138,
+      "kept": 13,
       "guarded": 0
     },
     "health": {
-      "day": "2026-11-25",
-      "newStories24h": 22,
-      "keepRate2d": 0.099
+      "day": "2026-11-26",
+      "newStories24h": 20,
+      "keepRate2d": 0.11
     },
     "wars": {
       "linked": 0,
@@ -113021,51 +113574,53 @@
     },
     "places": {
       "labelled": 0,
-      "none": 3,
+      "none": 0,
       "waiting": 0
     },
     "skipped": {
-      "since": "2026-11-25T08:55:59.431Z",
+      "since": "2026-11-25T19:36:31.767Z",
       "counts": {
-        "section": 42,
-        "live_blog": 6
+        "section": 29,
+        "live_blog": 3,
+        "podcast_quiz_gallery": 1
       },
       "examples": {
         "section": [
-          "Martin Lewis' tips on staying warm this winter",
-          "Scots react to news of rising energy prices",
-          "Why has Poundland collapsed and what happens next?",
-          "Interest rate affect on Guernsey's housing market",
-          "Why has China sent the first Pakistani astronaut to space?"
+          "What we know about Trump's Thanksgiving tariffs",
+          "Moment Nasa spacecraft hit asteroid - and what happened next",
+          "What UK season changes mean for you",
+          "Images from Earth's asteroid defence test reveal new crater",
+          "Patrick Radden Keefe’s London Falling named Waterstones book of the year"
         ],
         "live_blog": [
-          "‘Russia wants more than Ukraine,’ Germany’s Merz warns – as it happened",
-          "UK politics: Burnham dismisses Badenoch’s criticism over influencer and declines to apologise for ‘vile video’ – as it h",
-          "‘I am leaving with my freedom’: Kilmar Ábrego García lands in Spain after choosing to leave US - live",
-          "US Army calls Iowa lead detonation a ‘huge success’ and says threat of spontaneous explosions has been ‘eliminated’ – as",
-          "US proposes new tariffs on 14 trading partners, including China, Japan and the EU – as it happened"
+          "Australian politics live: Liberals ‘tossing up whether to leave or remain’, Albanese says; Coalition warns energy prices",
+          "Chris Van Hollen picks up more support for Senate majority leader role ahead of Democrats vote next week – as it happene",
+          "Iran war live: Explosion rocks Sanaa; missiles intercepted over Riyadh"
+        ],
+        "podcast_quiz_gallery": [
+          "Spain’s election: the end of a leftwing icon? - podcast"
         ]
       }
     },
     "finance": {
       "moved": 0,
-      "checked": 4
+      "checked": 0
     },
-    "analysed": 231,
-    "added": 14,
-    "merged": 21,
-    "rejected": 196,
+    "analysed": 138,
+    "added": 3,
+    "merged": 10,
+    "rejected": 125,
     "failedBatches": 0,
     "feeds": {
       "bbc": {
         "feedsOk": 6,
         "feedsFailed": 0,
-        "items": 163
+        "items": 159
       },
       "guardian": {
         "feedsOk": 7,
         "feedsFailed": 0,
-        "items": 194
+        "items": 191
       },
       "npr": {
         "feedsOk": 4,
@@ -113075,7 +113630,7 @@
       "aljazeera": {
         "feedsOk": 1,
         "feedsFailed": 0,
-        "items": 14
+        "items": 11
       },
       "mercopress": {
         "feedsOk": 3,
@@ -113090,7 +113645,7 @@
       "nyt": {
         "feedsOk": 5,
         "feedsFailed": 0,
-        "items": 198
+        "items": 194
       },
       "cnbc": {
         "feedsOk": 3,
@@ -113110,7 +113665,7 @@
       "france24": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 64
+        "items": 73
       },
       "africanews": {
         "feedsOk": 1,
@@ -113120,22 +113675,22 @@
       "scmp": {
         "feedsOk": 3,
         "feedsFailed": 0,
-        "items": 148
+        "items": 147
       }
     },
     "shareImages": {
-      "tried": 6,
-      "found": 6,
+      "tried": 2,
+      "found": 2,
       "summaries": 0
     },
     "threads": {
-      "assigned": 14,
-      "created": 3,
+      "assigned": 3,
+      "created": 1,
       "failedBatches": 0
     },
     "summaries": {
-      "written": 8,
-      "due": 8
+      "written": 2,
+      "due": 2
     },
     "kinds": {
       "labelled": 0,
@@ -113143,102 +113698,82 @@
       "failedBatches": 0
     },
     "frames": {
-      "done": 4,
-      "waiting": 1,
+      "done": 3,
+      "waiting": 0,
       "failedBatches": 0
     },
     "stats": {
-      "searched": 8,
-      "found": 0,
-      "reused": 5,
-      "none": 3,
+      "searched": 3,
+      "found": 1,
+      "reused": 1,
+      "none": 1,
       "failed": 0,
-      "proposed": 12,
-      "droppedPoints": 8,
-      "pagesFetched": 2,
+      "proposed": 7,
+      "droppedPoints": 0,
+      "pagesFetched": 3,
       "samples": [
         {
-          "headline": "Nvidia leads tech sell-off as Huang comeback rally fizzles and AI concerns retur",
-          "result": "reused saved series"
-        },
-        {
-          "headline": "Another Hot Inflation Reading Keeps Fed on Track to Raise Rates Again",
-          "result": "reused saved series"
-        },
-        {
-          "headline": "Futures sink further into the red as tech worries resurge",
-          "result": "too few checked figures",
-          "proposed": 4,
-          "checked": 4,
-          "pagesFetched": 1
-        },
-        {
-          "headline": "Nvidia sellers seek new buyers as U.S. curbs China AI chip access, sources tell ",
-          "result": "reused saved series"
-        },
-        {
-          "headline": "Stock Sell-Off Continues as Investors Fret About A.I., Tariffs and Inflation",
-          "result": "reused saved series"
-        },
-        {
-          "headline": "Fed’s preferred inflation gauge accelerated to 3.8% in October, raising the 2027",
-          "result": "reused saved series"
-        },
-        {
-          "headline": "EU’s quantum sovereignty push shuts out China but welcomes US firms",
-          "result": "no figure found on an official page",
-          "proposed": 8,
+          "headline": "AI turmoil spurs risk-off mode as China government bond yield slides to record l",
+          "result": "none",
+          "proposed": 0,
           "checked": 0,
-          "pagesFetched": 1
+          "pagesFetched": 2
         },
         {
-          "headline": "Houthi Attack on Skyscraper in Saudi Capital Wounds 11, Officials Say",
-          "result": "no saved series; search kept for data and in-depth stories"
+          "headline": "Houthis target Saudi Arabia’s Red Sea ports as strikes escalate",
+          "result": "reused saved series"
+        },
+        {
+          "headline": "US preparing to unveil plan for new tariffs on global trading partners",
+          "result": "chart",
+          "proposed": 7,
+          "checked": 7,
+          "pagesFetched": 1
         }
       ]
     },
     "models": {
       "filter": {
         "model": "claude-haiku-5-5",
-        "calls": 31,
-        "inputTokens": 110852,
-        "outputTokens": 42613,
-        "cost": 0.0323
+        "calls": 11,
+        "inputTokens": 56001,
+        "outputTokens": 20421,
+        "cost": 0.0158
       },
       "analysis_quick": {
         "model": "claude-sonnet-5-5",
-        "calls": 8,
-        "inputTokens": 25778,
-        "outputTokens": 23479,
-        "cost": 0.2864
+        "calls": 1,
+        "inputTokens": 3699,
+        "outputTokens": 4567,
+        "cost": 0.0531
       },
       "stats": {
         "model": "claude-sonnet-5-5",
         "calls": 2,
-        "inputTokens": 203916,
-        "outputTokens": 2390,
+        "inputTokens": 179386,
+        "outputTokens": 1900,
         "searches": 4,
-        "fetches": 3,
-        "cost": 0.4717
+        "fetches": 4,
+        "cost": 0.4178
       },
       "analysis": {
         "model": "claude-opus-5-5",
-        "calls": 2,
-        "inputTokens": 9410,
-        "outputTokens": 16792,
-        "cost": 0.3735
+        "calls": 1,
+        "inputTokens": 5451,
+        "outputTokens": 7981,
+        "cost": 0.1814
       },
       "threads": {
         "model": "claude-sonnet-5-5",
-        "calls": 9,
-        "inputTokens": 24082,
-        "outputTokens": 4294,
-        "cost": 0.0911
+        "calls": 3,
+        "inputTokens": 11619,
+        "outputTokens": 1493,
+        "cost": 0.0382
       }
     },
     "spend": {
-      "thisDesk": 1.2551,
-      "today": 1.2551,
+      "thisDesk": 0.7062,
+      "today": 3.4606,
       "cap": 6
     }
   },
