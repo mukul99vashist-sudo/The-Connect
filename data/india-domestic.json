@@ -2,12 +2,295 @@
   "schema": 4,
   "region": "India",
   "since": "2026-10-02",
-  "updatedAt": "2026-11-26T17:18:15.131Z",
+  "updatedAt": "2026-11-27T02:01:17.210Z",
   "sectors": [
     {
       "id": "energy",
       "name": "Energy",
       "items": [
+        {
+          "id": "s11y63g0",
+          "headline": "Petrol, diesel prices today, November 27: Check fuel rates in Delhi, Mumbai, Bengaluru and other cities",
+          "url": "https://www.livemint.com/news/india/petrol-diesel-prices-today-november-27-check-fuel-rates-in-delhi-mumbai-bengaluru-and-other-cities-11795741797218.html",
+          "source": "mint",
+          "date": "2026-11-27T01:18:43.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2026/11/27/1600x900/logo/fuel_prices_1795742076955_uEmZ_1795742083275_9zcY_8f02f155-5661-46e0-b093-f99846f6173a_nI3i.png",
+          "why": "Petrol and diesel prices were largely unchanged across major Indian cities on 27 November, though Noida saw an increase. Crude oil rose on Middle East tensions, which could eventually put pressure on Indian pump prices.",
+          "implications": [
+            "Because most cities showed no change, the crude rise has not yet reached the pump in major cities. Any later effect depends on how long crude stays higher.",
+            "The Noida increase shows that local prices can move even when larger cities are steady. Drivers and transporters in different cities may therefore pay different amounts for the same fuel."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-27T01:57:25.446Z",
+            "tier": "quick",
+            "primary": "pass_through",
+            "complement": null,
+            "features": [
+              "price_move"
+            ],
+            "exposure": {
+              "level": "high",
+              "reason": "Petrol and diesel are household and transport essentials, and India depends heavily on imported crude. Higher global crude prices can raise costs for drivers and businesses, though the pump price has so far held steady in most cities."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "Pump prices were steady on the day, so any effect of higher crude would depend on how long the rise lasts and on retail pricing decisions."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single Mint daily price roundup with no named official source, and the cause and size of the crude rise are not detailed."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "petrol and diesel prices",
+                "effect": "Prices were largely steady on the day, but sustained higher crude could raise the cost of supplying fuel and eventually put upward pressure on pump prices.",
+                "basis": "inferred"
+              },
+              {
+                "group": "A named state or region",
+                "direction": "up",
+                "what": "Noida fuel prices",
+                "effect": "Noida recorded an increase in both petrol and diesel prices on 27 November, unlike most major cities, where prices were largely unchanged.",
+                "basis": "reported"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Daily petrol and diesel price revisions in major cities over the coming days",
+                "why": "They would show whether higher crude is starting to reach pump prices beyond Noida.",
+                "when": "daily",
+                "where": "Indian Oil Corporation retail price listings"
+              },
+              {
+                "what": "Whether Middle East tensions lead to actual disruption of crude supplies",
+                "why": "Real supply disruption would signal a more lasting rise in crude prices than a reaction to tension alone.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "India imports most of the crude oil it uses, so global price swings and supply worries affect its fuel costs. Retail prices are also shaped by taxes and by pricing decisions made by oil marketing companies."
+            ],
+            "terms": [],
+            "frameworks": {
+              "pass_through": {
+                "driver": {
+                  "variable": "Global crude oil price",
+                  "direction": "up",
+                  "size": ""
+                },
+                "product": "petrol & diesel",
+                "rungs": [
+                  {
+                    "stage": "Global crude price to refiners' import cost",
+                    "pass": "likely",
+                    "damper": "India imports most of its crude, so higher global prices raise refiners' costs, but cargoes bought earlier and crude held in inventory delay the full effect.",
+                    "lag": "weeks"
+                  },
+                  {
+                    "stage": "Refiners' cost to retail pricing decisions",
+                    "pass": "partial",
+                    "damper": "Oil marketing companies decide when to revise pump prices and can absorb some cost increases for a time, so a crude rise does not automatically change retail prices.",
+                    "lag": "weeks"
+                  },
+                  {
+                    "stage": "Base fuel price to the price at the pump",
+                    "pass": "partial",
+                    "damper": "Central and state taxes are a large part of the final price, so a change in the base cost shows up only in part and can differ between cities.",
+                    "lag": "days"
+                  }
+                ],
+                "end_user": {
+                  "group": "Fuel & LPG users",
+                  "effect": "Drivers and transporters in most major cities saw no change on 27 November. If crude stays higher, they may notice price revisions in the following weeks, though the timing and size are not known."
+                }
+              }
+            }
+          },
+          "place": {
+            "name": "New Delhi",
+            "country": "India",
+            "lat": 28.61,
+            "lon": 77.21
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "Petrol, diesel prices today, November 27: Check fuel rates in Delhi, Mumbai, Bengaluru and other cities",
+              "url": "https://www.livemint.com/news/india/petrol-diesel-prices-today-november-27-check-fuel-rates-in-delhi-mumbai-bengaluru-and-other-cities-11795741797218.html",
+              "date": "2026-11-27T01:18:43.000Z",
+              "kind": "hard",
+              "summary": "Petrol and diesel prices remained largely stable across major Indian cities on November 27, with Noida recording a hike in both fuels. Meanwhile, crude oil prices rose amid escalating Middle East tensions and concerns over supply disruptions.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/11/27/1600x900/logo/fuel_prices_1795742076955_uEmZ_1795742083275_9zcY_8f02f155-5661-46e0-b093-f99846f6173a_nI3i.png"
+            }
+          ],
+          "stats": {
+            "v": 2,
+            "at": "2026-11-27T01:57:30.216Z",
+            "series": [
+              {
+                "title": "Diesel retail price in Delhi, selected months",
+                "unit": "Rs per litre",
+                "publisher": "Petroleum Planning and Analysis Cell (PPAC), via Ministry of Petroleum & Natural",
+                "points": [
+                  {
+                    "period": "Jun 2022",
+                    "value": 89.62,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2283118&reg=48&lang=2",
+                    "source": "Ethanol Blended Petrol Programme- Q&A"
+                  },
+                  {
+                    "period": "Mar 2026",
+                    "value": 87.67,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2283118&reg=48&lang=2",
+                    "source": "Ethanol Blended Petrol Programme- Q&A"
+                  },
+                  {
+                    "period": "May 2026",
+                    "value": 87.67,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2283118&reg=48&lang=2",
+                    "source": "Ethanol Blended Petrol Programme- Q&A"
+                  },
+                  {
+                    "period": "Jun 2026",
+                    "value": 95.2,
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2283118&reg=48&lang=2",
+                    "source": "Ethanol Blended Petrol Programme- Q&A"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2283118&reg=48&lang=2",
+                    "title": "Ethanol Blended Petrol Programme- Q&A",
+                    "domain": "pib.gov.in"
+                  }
+                ],
+                "domains": [
+                  "pib.gov.in"
+                ],
+                "dropped": 0,
+                "why": "The Delhi diesel retail price series directly tracks the pump prices in India that the story reports on, though it covers only one city and only selected months.",
+                "reused": true,
+                "checkedAt": "2026-11-13T20:08:49.062Z"
+              }
+            ]
+          },
+          "thread": "t1qd7rgj"
+        },
+        {
+          "id": "s1h71kbm",
+          "headline": "TAPI pipeline reaches Afghanistan: What is the $10-bn project, and can Central Asian gas reach India via Pakistan?",
+          "url": "https://www.livemint.com/news/world/tapi-pipeline-reaches-afghanistan-what-is-the-10-bn-project-and-can-central-asian-gas-reach-india-via-pakistan-11795707549785.html",
+          "source": "mint",
+          "date": "2026-11-26T17:04:07.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2026/11/26/1600x900/logo/TAPI_Pipeline_Route_and_Construction_1795709021677_N3zV_1795709029426_5Put_819be759-f0ff-48db-976e-ed59ab52b27b_kQUk.png",
+          "why": "The Turkmenistan–Afghanistan–Pakistan–India (TAPI) gas pipeline has moved closer to Herat in Afghanistan, and Turkmenistan expects the latest section to be finished by the end of 2026. Gas reaching India still depends on crossing Pakistan.",
+          "implications": [
+            "Gas would reach India only if the whole route through Afghanistan and Pakistan is completed, so the Herat section alone does not bring any supply to Indian users.",
+            "If the project is ever completed, it could give India a pipeline source of Central Asian gas, in addition to its existing imports."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-27T01:57:00.563Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "The channel is a possible future natural gas import route. No gas flows to India yet, and security, financing and geopolitical hurdles remain, so any effect on households is distant."
+            },
+            "horizon": {
+              "value": "years",
+              "reason": "Only one section is due by the end of 2026, and the rest of the route through Pakistan to India still faces major hurdles."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "This rests on a single Mint report relaying Turkmenistan's expectation on completion; no independent confirmation or Indian official statement is reported."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Fuel & LPG users",
+                "direction": "unclear",
+                "what": "future gas supply options",
+                "effect": "Pipeline gas from Central Asia could eventually add to India's gas supply, but only if the route through Afghanistan and Pakistan is completed and operating.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Completion of the pipeline section to Herat in Afghanistan, which Turkmenistan expects by the end of 2026",
+                "why": "It would show whether construction is keeping to schedule despite security and financing concerns.",
+                "when": "end of 2026",
+                "where": ""
+              }
+            ],
+            "context": [
+              "India imports a large share of the natural gas it consumes, so new supply routes matter for energy security, though cross-border pipelines through politically sensitive regions have historically been slow to build."
+            ],
+            "terms": [
+              {
+                "term": "TAPI",
+                "meaning": "A planned gas pipeline running from Turkmenistan through Afghanistan and Pakistan to India, named after the four countries."
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Pipeline nears Herat",
+                    "detail": "The TAPI pipeline has moved closer to Herat in Afghanistan, and Turkmenistan expects the latest section to be completed by the end of 2026.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Hurdles on the wider route",
+                    "detail": "The $10-billion project must still cross Afghanistan and Pakistan, and security risks, financing gaps and geopolitical tensions remain major obstacles to completing it.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Possible gas supply for India",
+                    "detail": "If these hurdles are overcome, Central Asian gas could reach India through Pakistan, adding a pipeline option to India's gas imports.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "Security, financing or geopolitical problems stop the pipeline from being completed through Afghanistan and Pakistan, in which case no gas would reach India."
+              }
+            }
+          },
+          "place": {
+            "name": "Herat",
+            "country": "Afghanistan",
+            "lat": 34.35,
+            "lon": 62.2,
+            "involves": [
+              "Turkmenistan",
+              "Pakistan"
+            ]
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "TAPI pipeline reaches Afghanistan: What is the $10-bn project, and can Central Asian gas reach India via Pakistan?",
+              "url": "https://www.livemint.com/news/world/tapi-pipeline-reaches-afghanistan-what-is-the-10-bn-project-and-can-central-asian-gas-reach-india-via-pakistan-11795707549785.html",
+              "date": "2026-11-26T17:04:07.000Z",
+              "kind": "hard",
+              "summary": "The TAPI gas pipeline moved closer to Herat in Afghanistan, with Turkmenistan expecting the latest section to be completed by 2026-end. The $10-billion project could bring Central Asian gas to India via Afghanistan and Pakistan, but security, financing and geopolitical tensions remain major hurdles.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/11/26/1600x900/logo/TAPI_Pipeline_Route_and_Construction_1795709021677_N3zV_1795709029426_5Put_819be759-f0ff-48db-976e-ed59ab52b27b_kQUk.png"
+            }
+          ],
+          "thread": "tm2ouao"
+        },
         {
           "id": "s19yvnlj",
           "headline": "Centre plans setting up distributed energy resource management systems for discoms",
@@ -23245,6 +23528,41 @@
       "name": "Economy & Trade",
       "items": [
         {
+          "id": "s5ifok4",
+          "headline": "What is China+1 strategy? How Trump’s tariffs threaten US push to reduce dependence on Beijing | Explained",
+          "url": "https://www.livemint.com/news/world/what-is-china-1-strategy-how-trump-s-tariffs-threaten-us-push-to-reduce-dependence-on-beijing-explained-11795712712859.html",
+          "source": "mint",
+          "date": "2026-11-26T17:37:23.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2026/11/26/1600x900/logo/USA-TRUMP-TARIFFS-20_1795713770943_QVg8_1795713778863_QFcm_3edfe589-57c6-4521-ad2f-f6699fd05a9b_NHKr.JPG",
+          "why": "",
+          "implications": [],
+          "place": {
+            "name": "Washington",
+            "country": "United States",
+            "lat": 38.91,
+            "lon": -77.04,
+            "involves": [
+              "China",
+              "India"
+            ]
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "What is China+1 strategy? How Trump’s tariffs threaten US push to reduce dependence on Beijing | Explained",
+              "url": "https://www.livemint.com/news/world/what-is-china-1-strategy-how-trump-s-tariffs-threaten-us-push-to-reduce-dependence-on-beijing-explained-11795712712859.html",
+              "date": "2026-11-26T17:37:23.000Z",
+              "kind": "feature",
+              "summary": "China+1 strategy allows companies to retain operations in China while expanding manufacturing to countries such as India and Vietnam. However, Trump's tariffs could complicate diversification, pressure Beijing's trade partners and create opportunities as well as challenges for Indian exporters.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/11/26/1600x900/logo/USA-TRUMP-TARIFFS-20_1795713770943_QVg8_1795713778863_QFcm_3edfe589-57c6-4521-ad2f-f6699fd05a9b_NHKr.JPG"
+            }
+          ],
+          "finChecked": true,
+          "thread": "t9rlf50"
+        },
+        {
           "id": "s1kycsv9",
           "headline": "US prepares fresh tariff hikes on China and India over industrial subsidies; announcement expected this week",
           "url": "https://www.livemint.com/economy/us-prepares-fresh-tariff-hikes-on-china-india-and-other-countries-what-we-know-11795539309152.html",
@@ -23252,17 +23570,19 @@
           "date": "2026-11-24T17:02:03.000Z",
           "relevance": "medium",
           "image": "https://www.livemint.com/lm-img/img/2026/11/24/1600x900/logo/tariff_1795542528106_SmdH_1795542528523_5WzM_27cb4af8-8ff2-4c1a-b271-6b6022edb438_y5aq.png",
-          "why": "The US Trade Representative has proposed extra tariffs on Indian goods of 25%, falling to 17% if India and the US sign a trade deal. The proposal follows a probe into alleged excess industrial capacity. India rejects the allegation.",
+          "why": "The US Trade Representative has proposed extra tariffs of up to 25% on Indian goods after a Section 301 investigation, falling to 17% if a trade deal is signed. This threatens exporters selling to India's largest export market.",
           "implications": [
-            "The US is India's largest export market, with goods shipments worth over $87 billion in the fiscal year through March 2026. Extra duties could therefore squeeze Indian exporters' orders and margins.",
-            "The lower 17% rate applies only if both sides sign the proposed trade deal. This links the final tariff to the pace and outcome of the negotiations."
+            "The rates are not final and must pass a public consultation and a hearing, so exporters and their US buyers could face months of uncertainty when pricing new contracts.",
+            "Indian trade bodies warn that even the 17% deal rate may give Indian goods little advantage over Asian rivals competing for the same US orders.",
+            "The rupee fell 20 paise to 92.40 against the US dollar in early trade after the announcement, which raises the rupee cost of dollar-priced imports.",
+            "Experts quoted by The Hindu argue the proposal returns India's tariff framework to where talks began. New Delhi has rejected the overcapacity charge but says it remains committed to a deal."
           ],
           "analysis": {
             "v": 3,
-            "at": "2026-11-25T19:46:18.185Z",
-            "tier": "quick",
+            "at": "2026-11-27T02:00:36.519Z",
+            "tier": "deep",
             "primary": "trade_flow",
-            "complement": null,
+            "complement": "scenarios",
             "features": [
               "trade_flow",
               "policy_stage",
@@ -23271,59 +23591,78 @@
             ],
             "exposure": {
               "level": "high",
-              "reason": "The proposed duties could apply to most Indian goods sold to the United States, the largest export market. The channel is lower export competitiveness, though the rates are not yet final."
+              "reason": "The US is India's largest export market, so extra tariffs reach exporters directly. The rupee's fall also raises the cost of imports, which makes exposure high."
             },
             "horizon": {
               "value": "months",
-              "reason": "The rates must still go through public consultation and a hearing, and implementation could be pushed to January 2027."
+              "reason": "The rates must first pass a public consultation and a hearing, and implementation could be pushed to January 2027."
             },
             "confidence": {
               "level": "medium",
-              "reason": "All reports come from Mint, which cites the US Trade Representative and India's response, so the proposal is sourced officially but the final rates and timing are unconfirmed."
+              "reason": "Mint and The Hindu report the proposed rates from the US Trade Representative on record, but the rates are not final and depend on consultation and a possible deal."
             },
-            "outlets": 1,
+            "outlets": 2,
             "affected": [
               {
                 "group": "Large exporters",
                 "direction": "down",
-                "what": "export competitiveness in the US",
-                "effect": "Higher US duties on Indian goods could raise landed prices for American buyers and reduce the orders and margins of Indian exporters.",
-                "basis": "inferred"
+                "what": "US tariff costs",
+                "effect": "Indian firms selling goods to the US could face an extra tariff of 17% or 25%, which makes their products dearer than those of some rivals.",
+                "basis": "reported"
               },
               {
                 "group": "MSME exporters",
                 "direction": "down",
-                "what": "US order volumes",
-                "effect": "Smaller exporters with thin margins and heavy reliance on US buyers could find it harder to absorb an extra duty of up to 25%.",
+                "what": "price competitiveness in US",
+                "effect": "Smaller exporters with thin margins may find it harder to absorb or pass on an extra US duty, which could cost them orders.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Importers & traders",
+                "direction": "up",
+                "what": "import costs",
+                "effect": "A weaker rupee against the US dollar could raise the rupee cost of goods that Indian importers buy in dollars.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "The public consultation and hearing on the proposed tariff rates",
-                "why": "These steps decide whether the proposed rates are confirmed, changed or dropped.",
+                "what": "The public consultation and hearing on the proposed Section 301 tariffs",
+                "why": "It would show whether the proposed 17% and 25% rates are confirmed, changed or delayed.",
                 "when": "",
                 "where": "Office of the US Trade Representative"
               },
               {
-                "what": "Whether India and the US sign the proposed bilateral trade deal",
-                "why": "The deal determines whether the lower 17% rate or the 25% rate would apply.",
+                "what": "Signing of the India–US bilateral trade deal that would bring the tariff down to 17%",
+                "why": "It would decide whether Indian goods face the lower rate rather than the full 25%.",
                 "when": "",
                 "where": "Ministry of Commerce and Industry"
+              },
+              {
+                "what": "The start of implementation of the new tariffs",
+                "why": "It would mark when Indian exporters actually begin paying the higher US charges.",
+                "when": "January 2027",
+                "where": "Office of the US Trade Representative"
               }
             ],
             "context": [
-              "Section 301 investigations are the usual US legal route for imposing tariffs on countries accused of unfair trade practices. Proposed duties normally go through public comment before they are finalised and can change."
+              "Section 301 of the US Trade Act lets the US Trade Representative investigate foreign trade practices it considers unfair and respond with tariffs or other restrictions.",
+              "A US tariff is paid by the American importer, so it raises the price of Indian goods for US buyers and can push them towards suppliers in other countries.",
+              "India imports most of its crude oil and pays for it in dollars, so a weaker rupee tends to raise import bills and can feed into domestic fuel and input costs."
             ],
             "terms": [
               {
                 "term": "Section 301",
-                "meaning": "A provision of the US Trade Act of 1974 that lets Washington investigate foreign trade practices it considers unfair and respond with tariffs."
+                "meaning": "A provision of US trade law that lets the US Trade Representative act, including through tariffs, against foreign trade practices it judges unfair."
+              },
+              {
+                "term": "structural excess capacity",
+                "meaning": "The US claim that a country's industries are built to produce far more than demand requires, pushing surplus goods cheaply into world markets."
               }
             ],
             "frameworks": {
               "trade_flow": {
-                "good": "Indian goods broadly, covering most imported goods",
+                "good": "Indian goods exported to the United States",
                 "actors": [
                   {
                     "country": "United States",
@@ -23337,24 +23676,58 @@
                   },
                   {
                     "country": "China",
-                    "role": "exporter",
+                    "role": "third_party",
+                    "is_india": false
+                  },
+                  {
+                    "country": "European Union",
+                    "role": "third_party",
                     "is_india": false
                   }
                 ],
                 "change": {
                   "type": "tariff",
-                  "effective": "Not final; implementation could be pushed to January 2027"
+                  "effective": ""
                 },
                 "india_position": {
                   "role": "supplier",
-                  "note": "India supplies a large volume of goods to the US, its biggest export market, and is among the economies named in the proposal. Indian sellers could face higher duties, while US buyers may face costlier Indian goods."
+                  "note": "India supplies the US, its largest export market, with more than $87 billion of goods a year. Extra tariffs of 17% or 25% could make Indian goods dearer for US buyers, depending on what rivals face."
                 },
                 "volumes": [
                   {
                     "value": 87,
-                    "unit": "billion US dollars (Indian goods exports to the US, stated…",
+                    "unit": "US$ billion of Indian goods exports to the US (over)",
                     "period": "fiscal year through March 2026",
                     "from": "Mint"
+                  },
+                  {
+                    "value": 49.47,
+                    "unit": "US$ billion of total Indian merchandise exports",
+                    "period": "October 2026",
+                    "from": "Mint"
+                  }
+                ]
+              },
+              "scenarios": {
+                "question": "Will India and the US sign a trade deal that caps the new tariff at 17%, or will the 25% rate apply?",
+                "scenarios": [
+                  {
+                    "name": "Deal signed, 17% rate",
+                    "what": "India and the US sign the proposed bilateral trade deal, and the extra tariff on Indian goods is set at 17% rather than 25%.",
+                    "signal": "Both governments announce that the bilateral trade deal has been concluded or signed.",
+                    "india_effect": "Indian exporters would face a lower charge than at 25%, which The Hindu describes as a slight edge over Asian competitors. Trade bodies warn the edge may be small."
+                  },
+                  {
+                    "name": "No deal, 25% rate",
+                    "what": "No deal is signed, and the US applies the full 25% extra tariff, the second-highest among the 14 economies targeted.",
+                    "signal": "The US Trade Representative finalises the Section 301 action at 25% for India without a signed trade agreement.",
+                    "india_effect": "Indian goods could become noticeably dearer for US buyers, which could cost exporters orders and add pressure on the rupee."
+                  },
+                  {
+                    "name": "Rates revised after consultation",
+                    "what": "The proposed rates, which are not final, are changed or delayed after the public consultation and hearing. Implementation could move to January 2027.",
+                    "signal": "The US Trade Representative publishes revised rates or a new implementation timetable after the hearing.",
+                    "india_effect": "Exporters could gain time to adjust. However, uncertainty over the final rate may weigh on new US orders while the process runs."
                   }
                 ]
               }
@@ -23793,7 +24166,145 @@
             }
           ],
           "finChecked": true,
-          "thread": "t9rlf50"
+          "thread": "t9rlf50",
+          "stats": {
+            "v": 2,
+            "at": "2026-11-27T01:57:49.579Z",
+            "series": [
+              {
+                "title": "US goods imports from India, monthly",
+                "unit": "US$ million",
+                "publisher": "U.S. Census Bureau",
+                "points": [
+                  {
+                    "period": "Jan 2026",
+                    "value": 7867.9,
+                    "url": "https://www.census.gov/foreign-trade/balance/c5330.html",
+                    "source": "International Trade"
+                  },
+                  {
+                    "period": "Feb 2026",
+                    "value": 6778.7,
+                    "url": "https://www.census.gov/foreign-trade/balance/c5330.html",
+                    "source": "International Trade"
+                  },
+                  {
+                    "period": "Mar 2026",
+                    "value": 8364.5,
+                    "url": "https://www.census.gov/foreign-trade/balance/c5330.html",
+                    "source": "International Trade"
+                  },
+                  {
+                    "period": "Apr 2026",
+                    "value": 8260.1,
+                    "url": "https://www.census.gov/foreign-trade/balance/c5330.html",
+                    "source": "International Trade"
+                  },
+                  {
+                    "period": "May 2026",
+                    "value": 9136.4,
+                    "url": "https://www.census.gov/foreign-trade/balance/c5330.html",
+                    "source": "International Trade"
+                  },
+                  {
+                    "period": "Jun 2026",
+                    "value": 8887.3,
+                    "url": "https://www.census.gov/foreign-trade/balance/c5330.html",
+                    "source": "International Trade"
+                  },
+                  {
+                    "period": "Jul 2026",
+                    "value": 9581.5,
+                    "url": "https://www.census.gov/foreign-trade/balance/c5330.html",
+                    "source": "International Trade"
+                  },
+                  {
+                    "period": "Aug 2026",
+                    "value": 9165.1,
+                    "url": "https://www.census.gov/foreign-trade/balance/c5330.html",
+                    "source": "International Trade"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.census.gov/foreign-trade/balance/c5330.html",
+                    "title": "International Trade",
+                    "domain": "census.gov"
+                  }
+                ],
+                "domains": [
+                  "census.gov"
+                ],
+                "dropped": 0,
+                "why": "Both series measure the value of US goods imports from India, the same trade flow the tariffs would hit as Indian exporters sell into the US market.",
+                "reused": true,
+                "checkedAt": "2026-11-02T19:25:40.333Z"
+              },
+              {
+                "title": "US goods imports from India, annual total",
+                "unit": "US$ million",
+                "publisher": "U.S. Census Bureau",
+                "points": [
+                  {
+                    "period": "2019",
+                    "value": 57879,
+                    "url": "https://www.census.gov/foreign-trade/balance/c5330.html",
+                    "source": "International Trade"
+                  },
+                  {
+                    "period": "2020",
+                    "value": 51254.6,
+                    "url": "https://www.census.gov/foreign-trade/balance/c5330.html",
+                    "source": "International Trade"
+                  },
+                  {
+                    "period": "2021",
+                    "value": 73308.2,
+                    "url": "https://www.census.gov/foreign-trade/balance/c5330.html",
+                    "source": "International Trade"
+                  },
+                  {
+                    "period": "2022",
+                    "value": 85517.4,
+                    "url": "https://www.census.gov/foreign-trade/balance/c5330.html",
+                    "source": "International Trade"
+                  },
+                  {
+                    "period": "2023",
+                    "value": 83543.6,
+                    "url": "https://www.census.gov/foreign-trade/balance/c5330.html",
+                    "source": "International Trade"
+                  },
+                  {
+                    "period": "2024",
+                    "value": 87284.8,
+                    "url": "https://www.census.gov/foreign-trade/balance/c5330.html",
+                    "source": "International Trade"
+                  },
+                  {
+                    "period": "2025",
+                    "value": 103776.3,
+                    "url": "https://www.census.gov/foreign-trade/balance/c5330.html",
+                    "source": "International Trade"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.census.gov/foreign-trade/balance/c5330.html",
+                    "title": "International Trade",
+                    "domain": "census.gov"
+                  }
+                ],
+                "domains": [
+                  "census.gov"
+                ],
+                "dropped": 0,
+                "why": "Both series measure the value of US goods imports from India, the same trade flow the tariffs would hit as Indian exporters sell into the US market.",
+                "reused": true,
+                "checkedAt": "2026-11-02T19:25:40.333Z"
+              }
+            ]
+          }
         },
         {
           "id": "ssk93tg",
@@ -47504,6 +48015,115 @@
       "name": "Finance",
       "items": [
         {
+          "id": "s1cea84x",
+          "headline": "Large stressed firms yield better recoveries under IBC, but delays persist",
+          "url": "https://www.livemint.com/news/india/large-stressed-assets-better-recoveries-ibc-delays-persist-prolonged-resolution-timelines-creditors-11795707348362.html",
+          "source": "mint",
+          "date": "2026-11-26T16:51:21.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2026/11/26/1600x900/logo/Insolvency-and-Bankruptcy-Board-of-India--IBBI--re_1694107995259_1795711715782_dfNj_16682dc4-2b6f-4431-ae5a-8a6acc68a042_ks5I.jpg",
+          "why": "Creditors recovered 31.1% of claims in large stressed-company cases under the insolvency code, marginally above the overall rate of 30.2%. Long resolution timelines continue to erode asset value.",
+          "implications": [
+            "Recoveries of about 30% mean lenders, many of them banks, still absorb losses of roughly two-thirds of the claims admitted in insolvency cases.",
+            "Delays reduce what stressed assets are worth by the time of resolution, so faster timelines could matter more for recoveries than the size of the borrower."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-27T01:57:00.563Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "medium",
+              "reason": "The channel is lenders' recoveries on bad loans, which affects banks and the wider credit system rather than a household essential directly, so exposure is medium."
+            },
+            "horizon": {
+              "value": "years",
+              "reason": "Insolvency timelines and recovery rates change slowly, so any shift in lending conditions would build up over a long period."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single outlet, Mint, and the summary names no official source or the period covered by the recovery figures."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Government finances",
+                "direction": "unclear",
+                "what": "losses at public sector lenders",
+                "effect": "Low recoveries on large defaults can leave state-owned banks with losses, which may affect the support they need from the government.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Borrowers",
+                "direction": "unclear",
+                "what": "lending conditions",
+                "effect": "If lenders keep losing much of what they are owed, they may price loans more cautiously, which could affect borrowing costs for firms and households.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Updated figures on recovery rates and resolution timelines for large insolvency cases",
+                "why": "They would show whether delays are shrinking and whether recoveries are improving for lenders.",
+                "when": "",
+                "where": "Insolvency and Bankruptcy Board of India"
+              }
+            ],
+            "context": [
+              "The Insolvency and Bankruptcy Code is India's law for resolving stressed companies, under which creditors either approve a resolution plan or the firm is liquidated. The recovery rate is the share of admitted claims that creditors get back."
+            ],
+            "terms": [
+              {
+                "term": "IBC",
+                "meaning": "The Insolvency and Bankruptcy Code is India's law for resolving companies that cannot repay their debts, through a resolution plan or liquidation."
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Large cases recover slightly more",
+                    "detail": "Creditors recovered 31.1% of claims in large cases, marginally above the overall rate of 30.2%, so size alone does not lift recoveries much.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Delays erode asset value",
+                    "detail": "Prolonged resolution timelines reduce the value of the stressed assets, which limits how much creditors can recover even in large cases.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Lenders absorb larger losses",
+                    "detail": "Lower recoveries leave banks and other lenders with bigger losses, which may weigh on their profits and on how freely and cheaply they lend.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The effect would weaken if resolution timelines shorten enough to preserve asset values, or if lenders have already provided fully for these losses."
+              }
+            }
+          },
+          "place": {
+            "name": "New Delhi",
+            "country": "India",
+            "lat": 28.61,
+            "lon": 77.21
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "Large stressed firms yield better recoveries under IBC, but delays persist",
+              "url": "https://www.livemint.com/news/india/large-stressed-assets-better-recoveries-ibc-delays-persist-prolonged-resolution-timelines-creditors-11795707348362.html",
+              "date": "2026-11-26T16:51:21.000Z",
+              "kind": "hard",
+              "summary": "Creditors recovered 31.1% of claims in large cases, marginally above the overall rate of 30.2%, as prolonged resolution timelines erode asset value.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/11/26/1600x900/logo/Insolvency-and-Bankruptcy-Board-of-India--IBBI--re_1694107995259_1795711715782_dfNj_16682dc4-2b6f-4431-ae5a-8a6acc68a042_ks5I.jpg"
+            }
+          ],
+          "thread": "t1w400e7"
+        },
+        {
           "id": "s6ab11e",
           "headline": "Banks’ deposit woes return as liquidity tightens, credit growth stays strong",
           "url": "https://www.livemint.com/industry/banking/banks-deposit-woes-return-as-liquidity-tightens-credit-growth-stays-strong-11795692420345.html",
@@ -47727,7 +48347,91 @@
               "image": "https://th-i.thgim.com/public/incoming/cpxclq/article71746217.ece/alternates/LANDSCAPE_1200/iStock-1323542329%2010.jpg"
             }
           ],
-          "thread": "t1dc6sy9"
+          "thread": "t1dc6sy9",
+          "stats": {
+            "v": 2,
+            "at": "2026-11-27T01:57:31.592Z",
+            "series": [
+              {
+                "title": "India net FPI investment, monthly",
+                "unit": "US$ million",
+                "publisher": "Reserve Bank of India",
+                "points": [
+                  {
+                    "period": "Jun 2025",
+                    "value": 2726,
+                    "url": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=24416",
+                    "source": "RBI Bulletin | Official Website of Reserve Bank of India"
+                  },
+                  {
+                    "period": "May 2026",
+                    "value": -4485,
+                    "url": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=24416",
+                    "source": "RBI Bulletin | Official Website of Reserve Bank of India"
+                  },
+                  {
+                    "period": "Jun 2026",
+                    "value": 2691,
+                    "url": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=24416",
+                    "source": "RBI Bulletin | Official Website of Reserve Bank of India"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=24416",
+                    "title": "RBI Bulletin | Official Website of Reserve Bank of India",
+                    "domain": "rbi.org.in"
+                  }
+                ],
+                "domains": [
+                  "rbi.org.in"
+                ],
+                "dropped": 0,
+                "why": "Both series track monthly net foreign portfolio investment flows into India, the same foreign fund inflows the story cites as the driver of the rise in Indian share indices.",
+                "reused": true,
+                "checkedAt": "2026-11-21T02:34:10.629Z"
+              },
+              {
+                "title": "Net FPI investment in India, monthly",
+                "unit": "US$ million",
+                "publisher": "Reserve Bank of India",
+                "points": [
+                  {
+                    "period": "Jun 2025",
+                    "value": 2726,
+                    "url": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=24416",
+                    "source": "RBI Bulletin | Official Website of Reserve Bank of India"
+                  },
+                  {
+                    "period": "May 2026",
+                    "value": -4485,
+                    "url": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=24416",
+                    "source": "RBI Bulletin | Official Website of Reserve Bank of India"
+                  },
+                  {
+                    "period": "Jun 2026",
+                    "value": 2691,
+                    "url": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=24416",
+                    "source": "RBI Bulletin | Official Website of Reserve Bank of India"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=24416",
+                    "title": "RBI Bulletin | Official Website of Reserve Bank of India",
+                    "domain": "rbi.org.in"
+                  }
+                ],
+                "domains": [
+                  "rbi.org.in"
+                ],
+                "dropped": 0,
+                "why": "Both series track monthly net foreign portfolio investment flows into India, the same foreign fund inflows the story cites as the driver of the rise in Indian share indices.",
+                "reused": true,
+                "checkedAt": "2026-11-06T19:48:42.760Z"
+              }
+            ]
+          }
         },
         {
           "id": "s1bl2b73",
@@ -47851,7 +48555,139 @@
               "image": "https://th-i.thgim.com/public/news/international/7ipu83/article71746098.ece/alternates/LANDSCAPE_1200/Rupee.jpg"
             }
           ],
-          "thread": "t5sqh80"
+          "thread": "t5sqh80",
+          "stats": {
+            "v": 2,
+            "at": "2026-11-27T01:57:33.846Z",
+            "series": [
+              {
+                "title": "Indian rupees per U.S. dollar, annual average",
+                "unit": "Indian rupees per U.S. dollar",
+                "publisher": "Board of Governors of the Federal Reserve System (G.5A)",
+                "points": [
+                  {
+                    "period": "2022",
+                    "value": 78.5792,
+                    "url": "https://www.federalreserve.gov/releases/g5a/current/",
+                    "source": "Federal Reserve Board - Foreign Exchange Rates - G.5A - January 05, 2026"
+                  },
+                  {
+                    "period": "2023",
+                    "value": 82.5708,
+                    "url": "https://www.federalreserve.gov/releases/g5a/current/",
+                    "source": "Federal Reserve Board - Foreign Exchange Rates - G.5A - January 05, 2026"
+                  },
+                  {
+                    "period": "2024",
+                    "value": 83.6566,
+                    "url": "https://www.federalreserve.gov/releases/g5a/current/",
+                    "source": "Federal Reserve Board - Foreign Exchange Rates - G.5A - January 05, 2026"
+                  },
+                  {
+                    "period": "2025",
+                    "value": 87.1468,
+                    "url": "https://www.federalreserve.gov/releases/g5a/current/",
+                    "source": "Federal Reserve Board - Foreign Exchange Rates - G.5A - January 05, 2026"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.federalreserve.gov/releases/g5a/current/",
+                    "title": "Federal Reserve Board - Foreign Exchange Rates - G.5A - January 05, 2026",
+                    "domain": "federalreserve.gov"
+                  }
+                ],
+                "domains": [
+                  "federalreserve.gov"
+                ],
+                "dropped": 0,
+                "why": "The annual average rupee-to-dollar exchange rate tracks the same currency pair the story reports on, and the Brent crude monthly average tracks the oil price the story highlights as affecting India's ",
+                "reused": true,
+                "checkedAt": "2026-10-31T19:32:17.897Z"
+              },
+              {
+                "title": "Brent crude oil spot price, monthly average",
+                "unit": "US$ per barrel",
+                "publisher": "U.S. Energy Information Administration",
+                "points": [
+                  {
+                    "period": "Oct 2025",
+                    "value": 64.54,
+                    "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=pet&s=rbrte&f=m",
+                    "source": "Europe Brent Spot Price FOB  (Dollars per Barrel)"
+                  },
+                  {
+                    "period": "Nov 2025",
+                    "value": 63.8,
+                    "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=pet&s=rbrte&f=m",
+                    "source": "Europe Brent Spot Price FOB  (Dollars per Barrel)"
+                  },
+                  {
+                    "period": "Dec 2025",
+                    "value": 62.54,
+                    "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=pet&s=rbrte&f=m",
+                    "source": "Europe Brent Spot Price FOB  (Dollars per Barrel)"
+                  },
+                  {
+                    "period": "Jan 2026",
+                    "value": 66.6,
+                    "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=pet&s=rbrte&f=m",
+                    "source": "Europe Brent Spot Price FOB  (Dollars per Barrel)"
+                  },
+                  {
+                    "period": "Feb 2026",
+                    "value": 70.89,
+                    "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=pet&s=rbrte&f=m",
+                    "source": "Europe Brent Spot Price FOB  (Dollars per Barrel)"
+                  },
+                  {
+                    "period": "Mar 2026",
+                    "value": 103.13,
+                    "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=pet&s=rbrte&f=m",
+                    "source": "Europe Brent Spot Price FOB  (Dollars per Barrel)"
+                  },
+                  {
+                    "period": "Apr 2026",
+                    "value": 117.29,
+                    "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=pet&s=rbrte&f=m",
+                    "source": "Europe Brent Spot Price FOB  (Dollars per Barrel)"
+                  },
+                  {
+                    "period": "May 2026",
+                    "value": 107.14,
+                    "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=pet&s=rbrte&f=m",
+                    "source": "Europe Brent Spot Price FOB  (Dollars per Barrel)"
+                  },
+                  {
+                    "period": "Jun 2026",
+                    "value": 85.4,
+                    "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=pet&s=rbrte&f=m",
+                    "source": "Europe Brent Spot Price FOB  (Dollars per Barrel)"
+                  },
+                  {
+                    "period": "Jul 2026",
+                    "value": 83.76,
+                    "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=pet&s=rbrte&f=m",
+                    "source": "Europe Brent Spot Price FOB  (Dollars per Barrel)"
+                  }
+                ],
+                "sources": [
+                  {
+                    "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=pet&s=rbrte&f=m",
+                    "title": "Europe Brent Spot Price FOB  (Dollars per Barrel)",
+                    "domain": "eia.gov"
+                  }
+                ],
+                "domains": [
+                  "eia.gov"
+                ],
+                "dropped": 0,
+                "why": "The annual average rupee-to-dollar exchange rate tracks the same currency pair the story reports on, and the Brent crude monthly average tracks the oil price the story highlights as affecting India's ",
+                "reused": true,
+                "checkedAt": "2026-11-20T13:53:22.927Z"
+              }
+            ]
+          }
         },
         {
           "id": "s1cqhaw0",
@@ -47861,29 +48697,32 @@
           "date": "2026-11-25T00:30:03.000Z",
           "relevance": "medium",
           "image": "https://www.livemint.com/lm-img/img/2026/11/25/1600x900/logo/Shapoor_Mistry_Noel_Tata_1795579780378_ujho_1795579780500_gObU_32a8e791-826b-4138-8f86-0a686107ceaf_uW5J.jpeg",
-          "why": "Mint reports, based on Right to Information (RTI) records, that Shapoor Mistry wrote twice to the government about a Tata Sons listing, and that RBI's top officials and Tata leaders have met 16 times since 2022.",
+          "why": "Tata Sons' board is due to discuss a plan to list the group's holding company on 30 November. At the same time, its two largest shareholder trusts are in court over the chairman's casting vote and reappointment, which could affect how the plan proceeds.",
           "implications": [
-            "The number of meetings suggests that whether Tata Sons should list on stock exchanges has been an active regulatory question for several years, not a passing one.",
-            "If Tata Sons were ever listed, investors in the wider Tata group could see changes in disclosure and in how the holding company is valued."
+            "Mint reports that the agenda sets a draft prospectus within 90 days of shareholder approval and a listing within the following 90 days, so any listing would come well after the board discussion.",
+            "The court case could decide whether a casting vote may be used at the 30 November meeting, so the dispute over governance may shape how the listing plan is handled."
           ],
           "analysis": {
             "v": 3,
-            "at": "2026-11-25T08:57:43.635Z",
+            "at": "2026-11-27T02:00:36.521Z",
             "tier": "quick",
-            "primary": "impact_chain",
+            "primary": "timeline",
             "complement": null,
-            "features": [],
+            "features": [
+              "fast_moving",
+              "pending_outcome"
+            ],
             "exposure": {
-              "level": "low",
-              "reason": "The reports describe correspondence and meetings, not a decision, so no direct channel to households is shown. Any effect would reach investors in Tata group companies only indirectly."
+              "level": "medium",
+              "reason": "The channel is the share market and one very large business group. A listing would create a new, widely held company, but nothing reaches household essentials such as fuel or loans."
             },
             "horizon": {
               "value": "months",
-              "reason": "No decision or deadline has been reported, so any change would depend on future regulatory action that has no stated timeline."
+              "reason": "The plan is only at board-discussion stage, and the reported 90-day steps after shareholder approval put any listing several months away."
             },
             "confidence": {
-              "level": "medium",
-              "reason": "The findings rest on a single Mint investigation drawing on RTI records; no other outlet or on-record official comment is cited in the summary."
+              "level": "low",
+              "reason": "All four reports come from Mint, which relies on RTI (Right to Information) records, a board agenda and a court filing; no on-record statement from the Tata group, the RBI or the court has been given."
             },
             "outlets": 1,
             "affected": [
@@ -47891,47 +48730,84 @@
                 "group": "Equity & mutual fund investors",
                 "direction": "unclear",
                 "what": "access to Tata Sons shares",
-                "effect": "A listing, if it ever happened, could give public investors direct access to Tata Sons and bring new disclosure requirements, though no decision has been reported.",
+                "effect": "A listing could let investors buy shares in the holding company directly, but the plan is unapproved and the court case and board dispute could delay or change it.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "Any official statement or decision from the RBI or the government on whether Tata Sons must list",
-                "why": "It would show whether the repeated contacts have produced a regulatory outcome.",
+                "what": "Outcome of the Tata Sons board meeting where the IPO plan and the casting-vote dispute are expected to arise",
+                "why": "It would show whether the listing plan advances to shareholder approval or stalls amid the governance dispute.",
+                "when": "2026-11-30",
+                "where": ""
+              },
+              {
+                "what": "Any court order on the Tata trusts' request to stop a casting vote being used at the meeting",
+                "why": "It would indicate how far the court allows the chairman's vote to decide contested questions before the meeting.",
                 "when": "",
-                "where": "Reserve Bank of India"
+                "where": ""
               }
             ],
             "context": [
-              "Tata Sons is the holding company that controls the Tata group. The RBI applies stricter rules, which can include stock exchange listing, to the largest non-bank lenders, and that is the usual background to such discussions."
+              "Tata Sons is the unlisted holding company of the Tata group and holds stakes in many listed Tata companies. Its shareholders include charitable trusts and a minority industrial family.",
+              "The Reserve Bank of India's scale-based rules for large non-bank lenders include listing expectations, which is why its dealings with Tata Sons matter to any listing."
             ],
             "terms": [
               {
-                "term": "RTI",
-                "meaning": "The Right to Information Act lets citizens request records from public authorities, and journalists often use it to obtain details of official meetings and correspondence."
+                "term": "casting vote",
+                "meaning": "An extra vote given to a meeting's chairman to decide the outcome when the votes for and against a proposal are tied."
               }
             ],
             "frameworks": {
-              "impact_chain": {
-                "chain": [
+              "timeline": {
+                "entries": [
                   {
-                    "step": "Letters and meetings documented",
-                    "detail": "Mint reports that RTI records show Shapoor Mistry wrote twice to the government on a Tata Sons listing, and that RBI's top officials and Tata leaders have held 16 meetings since 2022.",
-                    "basis": "reported"
+                    "when": "Since 2022",
+                    "what": "Mint reports, based on RTI records, that the RBI's top officials and Tata leaders have held 16 meetings.",
+                    "actor": "RBI officials and Tata leaders",
+                    "outlet": "Mint",
+                    "type": "action",
+                    "verification": "confirmed"
                   },
                   {
-                    "step": "Listing stays a live regulatory issue",
-                    "detail": "Repeated contact between the regulator, the government and the parties suggests the question is still open and could shape how the RBI treats Tata Sons.",
-                    "basis": "inferred"
+                    "when": "25 Nov 2026",
+                    "what": "Mint reports that Shapoor Mistry wrote twice to the government on the matter of a Tata Sons listing.",
+                    "actor": "Shapoor Mistry",
+                    "outlet": "Mint",
+                    "type": "action",
+                    "verification": "confirmed"
                   },
                   {
-                    "step": "Possible change for investors",
-                    "detail": "If the regulator and the government reach a decision, it could alter how openly Tata Sons is disclosed and whether public investors can hold it directly.",
-                    "basis": "inferred"
+                    "when": "25 Nov 2026",
+                    "what": "Mint reports that the board agenda now includes an IPO plan, with a draft prospectus due within 90 days of shareholder approval and listing within the following 90 days.",
+                    "actor": "Tata Sons board",
+                    "outlet": "Mint",
+                    "type": "action",
+                    "verification": "claimed"
+                  },
+                  {
+                    "when": "26 Nov 2026",
+                    "what": "Noel Tata sought priority for governance issues he raised at the 30 November meeting. He reiterated opposition to N Chandrasekaran's reappointment and asked for the meeting to be recorded.",
+                    "actor": "Noel Tata",
+                    "outlet": "Mint",
+                    "type": "claim",
+                    "verification": "claimed"
+                  },
+                  {
+                    "when": "26 Nov 2026",
+                    "what": "The two Tata trusts sued to strip the chairman of his casting vote and challenged Chandrasekaran's reappointment, asking the court to stop any casting vote at the 30 November meeting.",
+                    "actor": "Tata trusts",
+                    "outlet": "Mint",
+                    "type": "action",
+                    "verification": "claimed"
                   }
                 ],
-                "breaks_if": "The RBI and the government leave Tata Sons' status unchanged, so no listing requirement or exemption is decided and nothing changes for investors."
+                "current_status": "As of 26 November 2026, the Tata Sons board is due to discuss the IPO plan on 30 November. The trusts' lawsuit over the casting vote and the chairman's reappointment is pending.",
+                "open_questions": [
+                  "Will the court restrict the use of a casting vote at the 30 November board meeting?",
+                  "Will the board approve the IPO plan and send it for shareholder approval?",
+                  "What did the two letters from Shapoor Mistry ask the government to do?"
+                ]
               }
             }
           },
@@ -66022,6 +66898,207 @@
       "id": "technology",
       "name": "Technology",
       "items": [
+        {
+          "id": "s104kcek",
+          "headline": "India's smartphone market set for first annual revenue decline in 2026 as chip costs surge",
+          "url": "https://www.livemint.com/industry/india-smartphone-sales-market-in-2026-11795667015685.html",
+          "source": "mint",
+          "date": "2026-11-27T00:31:11.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2026/11/26/1600x900/logo/3-0-21078159-iStock-1071770928-0_1679823649460_1795711929966_2ets_06eccfb4-e63b-4793-b997-e3f6ef1798e9_2S0V.jpg",
+          "why": "India's smartphone market is set for its first annual revenue decline in 2026 because rising chip prices are pushing up manufacturing costs. Handset makers must either absorb the cost or pass it on to buyers.",
+          "implications": [
+            "If makers absorb the higher chip costs, their margins shrink, which could reduce how much they spend on new models and marketing.",
+            "If makers pass the costs on, buyers could face higher handset prices, which may push some to delay upgrades."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-27T01:57:00.564Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [],
+            "exposure": {
+              "level": "medium",
+              "reason": "The channel is the cost of imported chips for handset makers, which affects one industry and the prices of a widely used consumer product. It does not touch a household essential."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "The decline is forecast for the whole of 2026, and price changes depend on when makers choose to pass on costs."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single Mint report of a forecast; the source of the forecast and how makers will respond are not detailed."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Manufacturing workers",
+                "direction": "unclear",
+                "what": "handset maker margins",
+                "effect": "Squeezed margins at handset makers could affect production and hiring decisions in phone manufacturing, though no such change has been reported.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Whether handset makers raise phone prices or accept lower margins as chip costs climb",
+                "why": "It would show whether the cost increase reaches buyers or is absorbed by manufacturers.",
+                "when": "",
+                "where": ""
+              }
+            ],
+            "context": [
+              "India's smartphone industry relies heavily on imported components, including chips, so global component price swings feed directly into what it costs to make phones sold in the country."
+            ],
+            "terms": [],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Chip prices climb",
+                    "detail": "The price of chips used in smartphones is rising, which pushes up the cost of making handsets.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Makers face a choice",
+                    "detail": "Handset makers must either absorb the extra expense and accept smaller margins, or pass it on to buyers through higher prices.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Market revenue falls",
+                    "detail": "India's smartphone market is set to record its first annual revenue decline in 2026 as a result of these pressures.",
+                    "basis": "reported"
+                  }
+                ],
+                "breaks_if": "Chip prices ease or handset makers absorb the higher costs without raising prices or cutting output, so the market's revenue does not decline."
+              }
+            }
+          },
+          "place": {
+            "name": "New Delhi",
+            "country": "India",
+            "lat": 28.61,
+            "lon": 77.21
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "India's smartphone market set for first annual revenue decline in 2026 as chip costs surge",
+              "url": "https://www.livemint.com/industry/india-smartphone-sales-market-in-2026-11795667015685.html",
+              "date": "2026-11-27T00:31:11.000Z",
+              "kind": "hard",
+              "summary": "As chip prices climb, so do manufacturing costs, leaving handset makers with an unappealing choice: swallow the extra expense and see margins shrink, or pass it on to buyers.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/11/26/1600x900/logo/3-0-21078159-iStock-1071770928-0_1679823649460_1795711929966_2ets_06eccfb4-e63b-4793-b997-e3f6ef1798e9_2S0V.jpg"
+            }
+          ],
+          "thread": "tszx6gw"
+        },
+        {
+          "id": "s1a86wgr",
+          "headline": "Airtel, Jio push back against Trai ask for prime spots to display low-price plans",
+          "url": "https://www.livemint.com/news/trai-jio-airtel-recharge-plans-11795678686881.html",
+          "source": "mint",
+          "date": "2026-11-27T00:20:31.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2026/11/26/1600x900/logo/India-s-service--telecom--computer-software---hard_1686156708193_1795699898596_4nMB_d3264d34-c6ef-4b68-b31f-9e638be89bf6_uw18.jpg",
+          "why": "The telecom regulator Trai noted that low-cost mobile vouchers are not displayed prominently and are hard to find and subscribe to. Airtel and Jio are pushing back against its ask for prime display spots.",
+          "implications": [
+            "Mobile users who want cheaper plans could find them harder to locate if operators keep them away from prominent places on their apps and websites.",
+            "If the regulator presses its demand, operators may have to change how plans are presented, which could shift which plans customers choose."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-27T01:57:00.563Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The effect reaches mobile subscribers through the way two large operators display cheaper plans. It concerns one industry and its regulator rather than a household essential such as fuel or food."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "The dispute between Trai and the operators has to be settled first, and no deadline for any change has been reported."
+            },
+            "confidence": {
+              "level": "medium",
+              "reason": "This rests on one Mint report that cites Trai's observation; the operators' detailed arguments and any final regulatory decision are not reported."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Salaried workers",
+                "direction": "unclear",
+                "what": "ease of finding cheap plans",
+                "effect": "Households that pay for mobile plans, including salaried workers on tight budgets, may find low-price vouchers easier or harder to locate depending on how this dispute ends.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "Any further direction from Trai to Airtel and Jio on how low-price plans must be displayed",
+                "why": "It would show whether the regulator insists on prominent placement of cheaper plans despite the operators' objections.",
+                "when": "",
+                "where": "Telecom Regulatory Authority of India (Trai)"
+              }
+            ],
+            "context": [
+              "Telecom operators sell most plans through their apps and websites, where the order and placement of offers strongly influences what customers see and buy. Trai regulates tariffs and consumer protection in the sector."
+            ],
+            "terms": [
+              {
+                "term": "Trai",
+                "meaning": "The Telecom Regulatory Authority of India, the body that regulates telecom services and tariffs in India."
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Trai flags hidden cheap plans",
+                    "detail": "Trai noted that low-cost vouchers were not displayed prominently or easily accessible, and that consumers had difficulty locating and subscribing to them.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Operators resist",
+                    "detail": "Airtel and Jio are pushing back against Trai's ask that low-price plans be given prime spots on their platforms.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Consumer access depends on outcome",
+                    "detail": "How the dispute is resolved could decide whether cheaper plans become easier for subscribers to find, which may affect what many households pay for mobile services.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "Trai drops its demand or the operators already make the cheaper plans easy to find, leaving the way plans are displayed to subscribers unchanged."
+              }
+            }
+          },
+          "place": {
+            "name": "New Delhi",
+            "country": "India",
+            "lat": 28.61,
+            "lon": 77.21
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "Airtel, Jio push back against Trai ask for prime spots to display low-price plans",
+              "url": "https://www.livemint.com/news/trai-jio-airtel-recharge-plans-11795678686881.html",
+              "date": "2026-11-27T00:20:31.000Z",
+              "kind": "hard",
+              "summary": "Trai noted that these low-cost vouchers were neither displayed prominently, nor were they easily accessible and consumers were facing difficulty in locating and subscribing to these plans.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/11/26/1600x900/logo/India-s-service--telecom--computer-software---hard_1686156708193_1795699898596_4nMB_d3264d34-c6ef-4b68-b31f-9e638be89bf6_uw18.jpg"
+            }
+          ],
+          "thread": "t1bevmsi"
+        },
         {
           "id": "s1m7brrh",
           "headline": "C-DAC targets indigenous 32,000-core GPU by mid-2028, seeks private partners; to put pressure on rival chip prices",
@@ -97101,7 +98178,12 @@
               "image": "https://www.livemint.com/lm-img/img/2026/11/26/1600x900/logo/Below-normal-rains-have-hit-the-kharif-sowing-oper_1688573000406_1795688761958_OAVI_750c8bbf-5b08-4ac6-a7e5-b275545cbde5_4vEu.jpg"
             }
           ],
-          "thread": "t2slfbc"
+          "thread": "t2slfbc",
+          "stats": {
+            "v": 2,
+            "at": "2026-11-27T01:57:47.624Z",
+            "series": []
+          }
         },
         {
           "id": "senx6sr",
@@ -97335,123 +98417,147 @@
           "date": "2026-11-23T11:28:50.000Z",
           "relevance": "medium",
           "image": "https://www.livemint.com/lm-img/img/2026/11/23/1600x900/logo/Bisleri_Bottle_with_FSSAI_Unsafe_Warning_1795364839943_rfOp_1795364840084_B2It_da1d0b88-92b5-440e-8485-430ac6e84128_Ntbh_1795431902644_fHPo_2ce1357b-8858-4df0-b277-56188311f89b_eVoD.png",
-          "why": "India's food regulator, the Food Safety and Standards Authority of India (FSSAI), has moved to prosecute Bisleri after a water sample failed a lab test. It has also launched a nationwide drive to test packaged drinking water across brands.",
+          "why": "India's food regulator, the Food Safety and Standards Authority of India (FSSAI), has ordered states to step up inspections and sampling of packaged and mineral water after a Bisleri sample failed a lab test. Scrutiny now extends to brands such as PepsiCo and Coca-Cola.",
           "implications": [
-            "The FSSAI's chief executive has said the nationwide lab testing will take one to two months, so other packaged water brands could face findings or action once results arrive.",
-            "Bisleri says the failed sample traces to a single September 2025 batch from its Goa plant, one of 143 plants, which would limit the problem to one batch if confirmed.",
-            "PepsiCo faces questions over how it labels energy drinks and Red Bull over sugar content, which signals that scrutiny extends beyond water to the wider beverage industry.",
-            "A survey cited by Mint finds that just 1% of Indian households rely on bottled water, so the direct household impact may be narrower than the brands' visibility suggests."
+            "Bisleri faces prosecution. The company says the case traces to one batch made in September 2025 at its Goa plant, one of 143 plants in its network.",
+            "FSSAI's chief executive has said lab tests in the nationwide drive will take one to two months, so any findings against other brands may emerge only then.",
+            "The direct reach to homes is narrow, because a survey finds only 1% of Indian households rely on bottled water, though offices, travellers and eateries may use it more.",
+            "Scrutiny also extends beyond water, with PepsiCo questioned over energy drink labelling and Red Bull over sugar content, which signals tougher oversight across the beverage sector."
           ],
           "analysis": {
             "v": 3,
-            "at": "2026-11-25T19:46:18.186Z",
-            "tier": "standard",
+            "at": "2026-11-27T02:00:36.520Z",
+            "tier": "deep",
             "primary": "conflicting",
-            "complement": null,
+            "complement": "impact_chain",
             "features": [
               "fast_moving",
               "pending_outcome"
             ],
             "exposure": {
               "level": "medium",
-              "reason": "The action reaches India through regulatory enforcement on one industry, packaged beverages. Bottled water is a staple for only a small share of households, which keeps exposure at medium rather than high."
+              "reason": "The channel is regulatory compliance for one industry, packaged water and beverages. Only 1% of households rely on bottled water, which limits direct consumer reach, so exposure is medium."
             },
             "horizon": {
-              "value": "months",
-              "reason": "The FSSAI says lab tests in its nationwide packaged water drive will take one to two months, and prosecution proceedings usually take longer."
+              "value": "weeks",
+              "reason": "FSSAI's chief executive has said lab testing in the nationwide drive will take one to two months, which sets when results and any further action emerge."
             },
             "confidence": {
               "level": "high",
-              "reason": "Mint, The Indian Express and The Hindu agree that a Bisleri sample failed testing, and the FSSAI chief executive is on record. Details of the PepsiCo and Red Bull scrutiny come from Mint."
+              "reason": "Mint, The Indian Express and The Hindu agree, with FSSAI's chief executive on record. The outcomes of the Bisleri prosecution and the wider tests are not yet known."
             },
             "outlets": 3,
             "affected": [
               {
                 "group": "Food shoppers",
-                "direction": "mixed",
-                "what": "packaged water quality checks",
-                "effect": "Buyers of packaged drinking water may gain from wider testing across brands, but they face uncertainty about product safety until the nationwide lab results are known.",
-                "basis": "inferred"
+                "direction": "unclear",
+                "what": "safety checks on packaged water",
+                "effect": "Brands of packaged and mineral water sold to shoppers will face more state inspections and sampling, aimed at catching unsafe products.",
+                "basis": "reported"
               },
               {
-                "group": "Food shoppers",
+                "group": "Travellers & pilgrims",
                 "direction": "unclear",
-                "what": "beverage labelling and sugar",
-                "effect": "Consumers of energy drinks could see labelling changes if the regulator's questions to PepsiCo and its scrutiny of Red Bull's sugar content lead to corrective action.",
+                "what": "bottled water quality checks",
+                "effect": "Travellers who depend on bottled water could gain from tighter checks, though the effect depends on what the nationwide tests find.",
                 "basis": "inferred"
               }
             ],
             "watch": [
               {
-                "what": "Results of the FSSAI's nationwide lab tests on packaged drinking water brands",
-                "why": "The results will show whether the failed sample was an isolated Bisleri batch or part of a wider quality problem in the industry.",
+                "what": "Results of FSSAI's pan-India lab tests on packaged drinking water",
+                "why": "They would show whether problems are limited to one Bisleri batch or extend to other brands.",
                 "when": "1-2 months",
                 "where": "Food Safety and Standards Authority of India"
               },
               {
-                "what": "Progress of the prosecution against Bisleri International over the unsafe water sample",
-                "why": "The outcome will indicate how firmly the regulator intends to penalise large brands for samples that fail testing.",
+                "what": "Progress of the prosecution against Bisleri International",
+                "why": "It would show how strictly the regulator is pursuing an unsafe sample from an older batch.",
                 "when": "",
                 "where": ""
               },
               {
-                "what": "Any FSSAI action on PepsiCo energy drink labelling or Red Bull sugar content",
-                "why": "Formal action would confirm that the tougher oversight extends from packaged water to energy and sugary drinks.",
+                "what": "Outcome of FSSAI scrutiny of PepsiCo energy drink labelling and Red Bull sugar content",
+                "why": "It would indicate whether tougher enforcement is spreading across the wider beverage sector.",
                 "when": "",
                 "where": "Food Safety and Standards Authority of India"
               }
             ],
             "context": [
-              "Food businesses in India must hold an FSSAI licence. The regulator can collect product samples, test them in notified laboratories and begin prosecution when a sample is found unsafe under the Food Safety and Standards Act.",
-              "Most Indian households draw drinking water from piped supply, groundwater or home filtration. Packaged water is used more in cities, while travelling, and in offices, hotels and restaurants."
+              "FSSAI sets food safety standards nationally, but routine inspections, sampling and prosecutions are largely carried out by state food safety officials.",
+              "Packaged drinking water in India must carry mandatory quality certification from the Bureau of Indian Standards in addition to food safety licensing.",
+              "Most Indian households draw drinking water from piped supply, wells or home purifiers rather than buying it in bottles."
             ],
             "terms": [
               {
                 "term": "FSSAI",
-                "meaning": "The Food Safety and Standards Authority of India is the national regulator that sets food safety standards, licenses food businesses and enforces food safety law."
+                "meaning": "The Food Safety and Standards Authority of India, the national regulator that sets and enforces standards for food and drinks."
+              },
+              {
+                "term": "risk-based sampling",
+                "meaning": "An inspection method that directs testing at the products, plants or brands judged most likely to have safety problems."
               }
             ],
             "frameworks": {
               "conflicting": {
                 "disputed": {
-                  "item": "Scope and timing of the unsafe Bisleri sample",
-                  "unit": "batch and production date"
+                  "item": "How recent and widespread the unsafe Bisleri sample is",
+                  "unit": "production batch and time period"
                 },
                 "accounts": [
                   {
                     "outlet": "Mint",
-                    "value": "Bisleri faces prosecution after a water sample was found unsafe",
+                    "value": "A Bisleri water sample was found unsafe, and the company faces prosecution.",
                     "origin": "FSSAI enforcement action",
                     "time": "23 Nov 2026"
                   },
                   {
                     "outlet": "The Indian Express",
-                    "value": "The matter goes back about 14 months, to a batch made in September 2025 at its Goa plant, one of 143 in its network",
+                    "value": "The matter goes back about 14 months, to a batch made in September 2025 at its Goa plant, one of 143 in its network.",
                     "origin": "Bisleri International Pvt Ltd",
                     "time": "23 Nov 2026"
-                  },
-                  {
-                    "outlet": "The Hindu",
-                    "value": "A sample of Bisleri packaged drinking water failed the lab test, prompting the regulator to widen its scrutiny",
-                    "origin": "FSSAI chief executive",
-                    "time": "25 Nov 2026"
                   }
                 ],
                 "agreed": [
-                  "A sample of Bisleri packaged drinking water failed an FSSAI laboratory test.",
-                  "The FSSAI has taken enforcement action against Bisleri International and has widened its scrutiny of packaged drinking water."
+                  "A sample of Bisleri packaged drinking water failed a laboratory test.",
+                  "FSSAI has taken enforcement action against Bisleri International."
                 ],
                 "explanations": [
                   {
                     "type": "different source",
-                    "note": "The regulator presents the failed sample as grounds for prosecution and wider testing, while Bisleri frames it as a single old batch from one of its many plants."
+                    "note": "The regulator's action stresses that the sample was unsafe, while the company stresses that the problem relates to one batch at one plant."
                   },
                   {
                     "type": "different time",
-                    "note": "Bisleri points to a batch produced in September 2025, while the enforcement action and the nationwide drive are taking place about 14 months later."
+                    "note": "The failed sample comes from a batch made in September 2025, while the enforcement action and public attention came in November 2026."
                   }
                 ],
                 "status": "unresolved"
+              },
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Bisleri sample fails lab test",
+                    "detail": "A sample of Bisleri packaged drinking water was found unsafe, and the company faces prosecution. This prompted the regulator to widen its scrutiny beyond one firm.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "FSSAI orders states to intensify checks",
+                    "detail": "The regulator ordered states to step up inspections and risk-based sampling of packaged and mineral water across India. This brings brands such as PepsiCo and Coca-Cola under closer checks.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Lab results arrive over one to two months",
+                    "detail": "FSSAI's chief executive said the lab tests will take one to two months. Their results will decide whether other brands face enforcement action.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Bottlers face compliance pressure",
+                    "detail": "Bottlers could face higher testing and compliance costs. Any failed samples may lead to recalls or prosecutions that affect what reaches shop shelves.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "If the nationwide samples pass the lab tests, the drive could end without further action against brands or any change for consumers."
               }
             }
           },
@@ -105708,6 +106814,232 @@
       "name": "Policy & Governance",
       "items": [
         {
+          "id": "sgv4w8v",
+          "headline": "Centre seeks three-day special sitting of Parliament from 30 November",
+          "url": "https://www.livemint.com/news/centre-seeks-three-day-special-sitting-of-parliament-from-30-november-11795704288485.html",
+          "source": "mint",
+          "date": "2026-11-26T16:08:56.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2026/11/26/1600x900/logo/ANI-20230526147-0_1685243351009_1795708956437_WpTU_9c4ec480-f611-4c8f-856b-8d1e304bb751_oeE3.jpg",
+          "why": "The Centre has asked for a special three-day sitting of Parliament, with the Lok Sabha meeting on 30 November and the Rajya Sabha on 2 December. There is talk of women's quota and delimitation bills.",
+          "implications": [
+            "The agenda beyond essential business has not been confirmed, so any legislation on women's reservation or delimitation remains talk rather than a listed item.",
+            "If such bills were taken up, they could affect how parliamentary seats are reserved or distributed among states, which would matter for state-level political representation."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-27T01:57:00.563Z",
+            "tier": "quick",
+            "primary": "impact_chain",
+            "complement": null,
+            "features": [
+              "pending_outcome"
+            ],
+            "exposure": {
+              "level": "low",
+              "reason": "The reports describe a parliamentary sitting and speculation about bills, with no direct channel to household costs, trade or the safety of Indians at this stage."
+            },
+            "horizon": {
+              "value": "weeks",
+              "reason": "The sitting begins within days, but any effect on people would depend on bills being introduced and passed, which has not been reported."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single outlet, Mint, and the possible bills are described only as talk, with no official confirmation of the agenda."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "A named state or region",
+                "direction": "unclear",
+                "what": "parliamentary representation",
+                "effect": "If delimitation legislation were taken up, the number or reservation of seats could change for some states, though no bill has been confirmed.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "The Lok Sabha meeting on 30 November and the list of business for the sitting",
+                "why": "It would show whether women's quota or delimitation bills are actually listed.",
+                "when": "2026-11-30",
+                "where": "Lok Sabha Secretariat"
+              },
+              {
+                "what": "The Rajya Sabha reconvening on 2 December",
+                "why": "It would show whether any bill passed by the Lok Sabha is taken up in the upper house.",
+                "when": "2026-12-02",
+                "where": "Rajya Sabha Secretariat"
+              }
+            ],
+            "context": [
+              "Delimitation is the redrawing of constituency boundaries to reflect population, and it has long been politically sensitive among states. Proposals to reserve legislative seats for women have also been debated in India for many years."
+            ],
+            "terms": [
+              {
+                "term": "delimitation",
+                "meaning": "Delimitation is the process of redrawing the boundaries of parliamentary and assembly constituencies, and it can change how many seats each region holds."
+              }
+            ],
+            "frameworks": {
+              "impact_chain": {
+                "chain": [
+                  {
+                    "step": "Special sitting requested",
+                    "detail": "The Centre has asked the Lok Sabha to meet on 30 November and the Rajya Sabha to reconvene on 2 December to take up essential business.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Talk of women's quota and delimitation bills",
+                    "detail": "The sitting comes amid talk that bills on women's reservation and delimitation could be brought forward, although the agenda has not been confirmed.",
+                    "basis": "reported"
+                  },
+                  {
+                    "step": "Possible change in seat distribution",
+                    "detail": "If such bills were passed, they could alter how legislative seats are reserved or distributed, which may shift political representation for some states and groups.",
+                    "basis": "inferred"
+                  }
+                ],
+                "breaks_if": "The effect would not reach India's states and voters if the sitting deals only with other essential business or if the bills are not introduced or passed."
+              }
+            }
+          },
+          "place": {
+            "name": "New Delhi",
+            "country": "India",
+            "lat": 28.61,
+            "lon": 77.21
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "Centre seeks three-day special sitting of Parliament from 30 November",
+              "url": "https://www.livemint.com/news/centre-seeks-three-day-special-sitting-of-parliament-from-30-november-11795704288485.html",
+              "date": "2026-11-26T16:08:56.000Z",
+              "kind": "hard",
+              "summary": "The Lok Sabha has been requested to meet on 30 November, while the Rajya Sabha will reconvene on 2 December to take up essential business amid talk of women's quota and delimitation bills.",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/11/26/1600x900/logo/ANI-20230526147-0_1685243351009_1795708956437_WpTU_9c4ec480-f611-4c8f-856b-8d1e304bb751_oeE3.jpg"
+            }
+          ],
+          "finChecked": true,
+          "thread": "te3s91o"
+        },
+        {
+          "id": "s95561z",
+          "headline": "Road ministry proposes tighter rules for highway contractors",
+          "url": "https://www.livemint.com/industry/infrastructure/highway-projects-india-epc-contracts-bidder-eligibility-11795704489074.html",
+          "source": "mint",
+          "date": "2026-11-26T16:04:03.000Z",
+          "relevance": "medium",
+          "image": "https://www.livemint.com/lm-img/img/2026/11/26/1600x900/logo/PTI08-16-2025-000380B-0_1755397960289_1755398010405_1795708848137_kYtm_addf9fbc-f15c-4635-9c96-9fe00ef7b916_dN25.jpg",
+          "why": "The road ministry has proposed tighter rules for highway contractors, aiming to curb delays and strengthen accountability. If adopted, the rules would change which firms can win highway projects in India.",
+          "implications": [
+            "Contractors without strong finances or a proven record of finishing projects could find it harder to win highway awards if the rules are adopted as proposed.",
+            "Fewer delays could limit cost overruns on public projects and shorten the wait for new roads, but that depends on how the final rules are written and enforced."
+          ],
+          "analysis": {
+            "v": 3,
+            "at": "2026-11-27T01:57:00.562Z",
+            "tier": "quick",
+            "primary": "policy_tracker",
+            "complement": null,
+            "features": [
+              "policy_stage"
+            ],
+            "exposure": {
+              "level": "medium",
+              "reason": "The proposal mainly affects firms bidding for highway contracts, which is one industry, and it reaches road users only indirectly through project delivery. No household essential is touched directly."
+            },
+            "horizon": {
+              "value": "months",
+              "reason": "The rules are only proposed, so they must be finalised before they apply to new highway awards."
+            },
+            "confidence": {
+              "level": "low",
+              "reason": "This rests on a single outlet, Mint, and the reported summary does not set out the detailed provisions or name an official source."
+            },
+            "outlets": 1,
+            "affected": [
+              {
+                "group": "Manufacturing workers",
+                "direction": "unclear",
+                "what": "contractor eligibility for highway work",
+                "effect": "Construction firms and their workforces may see fewer or different contract opportunities if only contractors meeting stricter financial and track-record tests are awarded projects.",
+                "basis": "inferred"
+              },
+              {
+                "group": "Government finances",
+                "direction": "mixed",
+                "what": "project delays and costs",
+                "effect": "Better-qualified contractors could reduce delays and cost overruns on highway projects, which may ease pressure on public spending on roads.",
+                "basis": "inferred"
+              }
+            ],
+            "watch": [
+              {
+                "what": "The road ministry finalising and notifying the proposed contractor rules",
+                "why": "It would show whether the stricter eligibility and accountability tests become binding on future highway awards.",
+                "when": "",
+                "where": "Ministry of Road Transport and Highways"
+              }
+            ],
+            "context": [
+              "Highway projects in India are generally awarded through competitive bidding run by agencies under the road ministry, and delays usually raise project costs and postpone benefits for road users."
+            ],
+            "terms": [],
+            "frameworks": {
+              "policy_tracker": {
+                "instrument": {
+                  "name": "Proposed rules for highway contractors",
+                  "issuer": "Ministry of Road Transport and Highways",
+                  "jurisdiction": "India"
+                },
+                "stages": [
+                  {
+                    "stage": "draft",
+                    "date": "2026-11-26",
+                    "status": "current"
+                  },
+                  {
+                    "stage": "adopted",
+                    "date": "",
+                    "status": "next"
+                  }
+                ],
+                "obligations": [
+                  {
+                    "who": "Highway contractors bidding for projects",
+                    "what": "They would need to show the financial strength, technical expertise and execution track record to deliver projects on time in order to be awarded highway work.",
+                    "from": ""
+                  }
+                ],
+                "applies_to_india": "yes",
+                "india_note": "The proposal would change who can win highway contracts and is meant to curb delays on projects. It matters for construction firms, lenders to them and the public agencies that award the work."
+              }
+            }
+          },
+          "place": {
+            "name": "New Delhi",
+            "country": "India",
+            "lat": 28.61,
+            "lon": 77.21
+          },
+          "reports": [
+            {
+              "source": "mint",
+              "headline": "Road ministry proposes tighter rules for highway contractors",
+              "url": "https://www.livemint.com/industry/infrastructure/highway-projects-india-epc-contracts-bidder-eligibility-11795704489074.html",
+              "date": "2026-11-26T16:04:03.000Z",
+              "kind": "hard",
+              "summary": "The proposed rules seek to curb delays, strengthen accountability and ensure that highway projects are awarded to contractors with the financial strength, technical expertise and execution track record to deliver projects on time",
+              "summaryV": 3,
+              "image": "https://www.livemint.com/lm-img/img/2026/11/26/1600x900/logo/PTI08-16-2025-000380B-0_1755397960289_1755398010405_1795708848137_kYtm_addf9fbc-f15c-4635-9c96-9fe00ef7b916_dN25.jpg"
+            }
+          ],
+          "finChecked": true,
+          "thread": "t1vpcm22"
+        },
+        {
           "id": "s16q3yyf",
           "headline": "Health ministry mandates insurance, bans fees for autism stem cell trials; sets 90-day approval deadline",
           "url": "https://www.livemint.com/news/india/health-ministry-mandates-insurance-fee-ban-and-90-day-clearance-rules-for-autism-stem-cell-trials-11795687902584.html",
@@ -105812,64 +107144,62 @@
           "date": "2026-11-25T19:04:27.000Z",
           "relevance": "medium",
           "image": "https://images.indianexpress.com/2026/11/MEA-randhir_20260319202117_20260417235346_20260606002232_20260724231826_20260826232231_20260908224740_20261028220015_20261125190357.jpg",
-          "why": "India and China held military-level talks in Arunachal Pradesh, with the stated aim of keeping peace along the Line of Actual Control (LAC). The outcome has not been reported, and the face-off continues.",
+          "why": "Indian and Chinese military officials held high-level talks in the Arunachal sector on rules of engagement, avoiding friction and keeping communication open along the Line of Actual Control (LAC). The talks aim to keep a tense border stable.",
           "implications": [
-            "Military-level talks are a channel for local commanders to settle disputes on the ground, which can lower the chance of an incident at the border turning into a wider confrontation.",
-            "Any understanding reached could affect the wider India–China relationship, including trade and investment questions that Indian businesses watch, though no such link has been reported."
+            "The talks focus on agreeing engagement rules and communication channels, which aim to reduce the risk that a local face-off between troops turns into a clash.",
+            "The Ministry of External Affairs (MEA) spokesperson also addressed a report claiming that China-sourced satellite data may have helped Pakistan track Indian troop movements during Operation Sindoor.",
+            "If that claim were borne out, it could complicate trust between New Delhi and Beijing even as military commanders work on border management."
           ],
           "analysis": {
             "v": 3,
-            "at": "2026-11-25T19:44:30.482Z",
-            "tier": "quick",
+            "at": "2026-11-27T02:00:36.521Z",
+            "tier": "standard",
             "primary": "escalation",
             "complement": null,
             "features": [
-              "armed_conflict",
-              "pending_outcome"
+              "armed_conflict"
             ],
             "exposure": {
               "level": "medium",
-              "reason": "The channel is the India–China bilateral relationship and security in border areas such as Arunachal Pradesh. No direct effect on household essentials has been reported, so the level is medium."
+              "reason": "The channel is the India–China relationship and border security. The talks reported change no prices or trade flows, so exposure is medium rather than high."
             },
             "horizon": {
               "value": "months",
-              "reason": "Border talks usually proceed over several rounds, so any visible change in border arrangements or bilateral ties would take months rather than days."
+              "reason": "Military talks on engagement rules and communication shape border management gradually rather than producing an immediate change for people in India."
             },
             "confidence": {
-              "level": "low",
-              "reason": "This rests on one headline from The Indian Express with no summary, so who attended, what was discussed and whether anything was agreed remain unconfirmed."
+              "level": "medium",
+              "reason": "The Indian Express and The Hindu report the talks, with the MEA spokesperson on record. Any agreed outcome and the satellite data claim remain unconfirmed."
             },
-            "outlets": 1,
-            "affected": [
-              {
-                "group": "A named state or region",
-                "direction": "unclear",
-                "what": "border-area security",
-                "effect": "Arunachal Pradesh, where the talks were held, could see steadier border conditions if they reduce friction, but no outcome has been reported.",
-                "basis": "inferred"
-              }
-            ],
+            "outlets": 2,
+            "affected": [],
             "watch": [
               {
-                "what": "An official statement from India or China describing what the military-level talks agreed",
-                "why": "It would show whether the talks produced any concrete step towards easing the face-off.",
+                "what": "Further India–China military talks or an announcement of agreed engagement rules",
+                "why": "It would show whether the talks are producing concrete arrangements to reduce friction on the border.",
                 "when": "",
                 "where": "Ministry of External Affairs"
               },
               {
-                "what": "Announcement of a further round of military or diplomatic talks on the border",
-                "why": "It would indicate whether both sides are continuing a structured process to manage the standoff.",
+                "what": "Official statements on the claim that China-sourced satellite data aided Pakistan",
+                "why": "They would show whether the claim strains relations alongside the border talks.",
                 "when": "",
-                "where": ""
+                "where": "Ministry of External Affairs"
               }
             ],
             "context": [
-              "India and China have an undemarcated border in several sectors, and the two armies have long used regular commander-level meetings to manage patrolling disputes and prevent clashes."
+              "India and China share a long border that has never been agreed. The Line of Actual Control marks the areas each side holds, not a settled boundary.",
+              "Military commanders from both countries have held repeated rounds of talks alongside diplomatic channels to manage face-offs and pull back troops at friction points.",
+              "China is one of India's largest trading partners and a major supplier of electronics and industrial inputs, so border tension can affect wider economic ties."
             ],
             "terms": [
               {
                 "term": "LAC",
-                "meaning": "The Line of Actual Control is the de facto boundary between Indian-held and Chinese-held territory, which the two countries do not fully agree on."
+                "meaning": "The Line of Actual Control, the de facto line separating areas held by India and China along their disputed border."
+              },
+              {
+                "term": "Operation Sindoor",
+                "meaning": "The name India gave to its military strikes on targets in Pakistan."
               }
             ],
             "frameworks": {
@@ -105878,16 +107208,16 @@
                 "rung": 3,
                 "current_rung": 3,
                 "previous_rung": null,
-                "development": "Indian and Chinese military officials held talks in Arunachal Pradesh aimed at peace along the Line of Actual Control, while the face-off continues.",
-                "evidence": "Talks do not lower the rung on their own. No withdrawal, truce or end to the face-off has been reported, so the standoff stays at mobilisation and posturing.",
+                "development": "India and China held high-level military talks in the Arunachal sector on engagement rules, avoiding friction and keeping communication open along the Line of Actual Control.",
+                "evidence": "The talks are a diplomatic step, not a ceasefire, withdrawal or attack. The standoff therefore stays at mobilisation and posturing.",
                 "next_signals": [
                   {
                     "rung": 4,
-                    "signal": "A reported exchange of fire or a physical clash between Indian and Chinese troops along the Line of Actual Control would show a move to limited attacks."
+                    "signal": "Either side reports a clash, firing or an attack on troops along the Line of Actual Control."
                   },
                   {
                     "rung": 2,
-                    "signal": "An announced pullback of troops from the face-off points, confirmed by both governments, would show de-escalation to diplomatic management."
+                    "signal": "Both sides report pulling troops back from face-off points, leaving the dispute to diplomatic measures."
                   }
                 ],
                 "india_channels": [
@@ -132861,14 +134191,14 @@
   "source": "BBC News & The Guardian & NPR & Al Jazeera & MercoPress & ABC News & The New York Times & CNBC & CBS News & DW & France 24 & Africanews & South China Morning Post & The Hindu & Mint & The Indian Express",
   "lastRun": {
     "filter": {
-      "judged": 75,
-      "kept": 24,
+      "judged": 27,
+      "kept": 8,
       "guarded": 0
     },
     "health": {
-      "day": "2026-11-26",
-      "newStories24h": 27,
-      "keepRate2d": 0.162
+      "day": "2026-11-27",
+      "newStories24h": 25,
+      "keepRate2d": 0.245
     },
     "wars": {
       "linked": 0,
@@ -132881,30 +134211,24 @@
       "waiting": 0
     },
     "skipped": {
-      "since": "2026-11-26T03:45:31.688Z",
-      "counts": {
-        "video_audio": 2
-      },
-      "examples": {
-        "video_audio": [
-          "Watch: Vijay promised women’s safety. Did his government deliver? | Focus Tamil Nadu",
-          "Watch: Wipro walk-in interview in Hyderabad draws long queue, sparks debate on India's job market"
-        ]
-      }
+      "since": "2026-11-26T17:18:15.131Z",
+      "counts": {},
+      "examples": {}
     },
     "finance": {
       "moved": 0,
-      "checked": 4
+      "checked": 3
     },
-    "analysed": 147,
-    "added": 16,
-    "merged": 8,
+    "analysed": 27,
+    "added": 8,
+    "merged": 0,
+    "rejected": 19,
     "failedBatches": 0,
     "feeds": {
       "thehindu": {
-        "feedsOk": 6,
-        "feedsFailed": 0,
-        "items": 350
+        "feedsOk": 0,
+        "feedsFailed": 6,
+        "items": 0
       },
       "mint": {
         "feedsOk": 6,
@@ -132918,18 +134242,18 @@
       }
     },
     "shareImages": {
-      "tried": 1,
+      "tried": 0,
       "found": 0,
-      "summaries": 1
+      "summaries": 0
     },
     "threads": {
-      "assigned": 16,
-      "created": 8,
+      "assigned": 8,
+      "created": 5,
       "failedBatches": 0
     },
     "summaries": {
-      "written": 0,
-      "due": 8
+      "written": 10,
+      "due": 10
     },
     "kinds": {
       "labelled": 0,
@@ -132937,51 +134261,88 @@
       "failedBatches": 0
     },
     "frames": {
-      "done": 0,
-      "waiting": 4,
-      "failedBatches": 0,
-      "budgetStopped": true
+      "done": 4,
+      "waiting": 0,
+      "failedBatches": 0
     },
     "stats": {
-      "searched": 4,
+      "searched": 5,
       "found": 0,
-      "reused": 0,
-      "none": 0,
+      "reused": 4,
+      "none": 1,
       "failed": 0,
-      "proposed": 0,
-      "droppedPoints": 0,
+      "proposed": 12,
+      "droppedPoints": 12,
       "pagesFetched": 0,
-      "samples": [],
-      "budgetStopped": true
+      "samples": [
+        {
+          "headline": "Petrol, diesel prices today, November 27: Check fuel rates in Delhi, Mumbai, Ben",
+          "result": "reused saved series"
+        },
+        {
+          "headline": "Stock markets climb in early trade on foreign fund inflows, buying in IT shares",
+          "result": "reused saved series"
+        },
+        {
+          "headline": "Rupee weakens 24 paise to settle at 92.44 against U.S. dollar",
+          "result": "reused saved series"
+        },
+        {
+          "headline": "India's 2026-27 kharif foodgrain output seen lower in first estimate, though abo",
+          "result": "no figure found on an official page",
+          "proposed": 12,
+          "checked": 0,
+          "pagesFetched": 0
+        },
+        {
+          "headline": "Trump tariffs: How much duty does India face now, and how it compares with 13 ot",
+          "result": "reused saved series"
+        }
+      ]
     },
     "models": {
       "filter": {
         "model": "claude-haiku-5-5",
-        "calls": 7,
-        "inputTokens": 31275,
-        "outputTokens": 17025,
-        "cost": 0.0116
+        "calls": 11,
+        "inputTokens": 42095,
+        "outputTokens": 9304,
+        "cost": 0.009
       },
       "analysis_quick": {
         "model": "claude-sonnet-5-5",
-        "calls": 5,
-        "inputTokens": 17475,
-        "outputTokens": 30082,
-        "cost": 0.3358
+        "calls": 4,
+        "inputTokens": 13025,
+        "outputTokens": 17890,
+        "cost": 0.205
+      },
+      "stats": {
+        "model": "claude-sonnet-5-5",
+        "calls": 1,
+        "inputTokens": 63334,
+        "outputTokens": 771,
+        "searches": 2,
+        "fetches": 1,
+        "cost": 0.1544
+      },
+      "analysis": {
+        "model": "claude-opus-5-5",
+        "calls": 1,
+        "inputTokens": 6282,
+        "outputTokens": 15453,
+        "cost": 0.3342
       },
       "threads": {
         "model": "claude-sonnet-5-5",
-        "calls": 1,
-        "inputTokens": 11250,
-        "outputTokens": 455,
-        "cost": 0.0271
+        "calls": 11,
+        "inputTokens": 20249,
+        "outputTokens": 5148,
+        "cost": 0.0918
       }
     },
     "spend": {
-      "thisDesk": 0.3745,
-      "today": 5.794,
-      "cap": 6,
-      "stopped": true
+      "thisDesk": 0.7944,
+      "today": 2.0202,
+      "cap": 6
     }
   },
   "recentDays": 60
